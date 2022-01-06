@@ -1,0 +1,248 @@
+<html xmlns:x="urn:schemas-microsoft-com:office:excel">
+	<head>
+		<meta http-equiv="Content-Type" content="charset=windows-1252" />
+		<!--[if gte mso 9]>
+		<xml>
+			<x:ExcelWorkbook>
+				<x:ExcelWorksheets>
+					<x:ExcelWorksheet>
+						<x:Name>matrix</x:Name>
+						<x:WorksheetOptions>
+							<x:Print>
+								<x:ValidPrinterInfo/>
+							</x:Print>
+						</x:WorksheetOptions>
+					</x:ExcelWorksheet>
+				</x:ExcelWorksheets>
+			</x:ExcelWorkbook>
+		</xml>
+		<![endif]-->
+	</head>
+	<body>
+		<style>
+			.stub1 {
+				mso-style-parent:style0;
+				mso-number-format:\@;
+				vertical-align:middle;
+			}
+			.headfirst {
+				mso-style-parent:style0;
+				mso-number-format:\@;
+			}
+			.headlast {
+				mso-style-parent:style0;
+				mso-number-format:\@;
+			}
+			.headmid {
+				mso-style-parent:style0;
+				mso-number-format:\@;
+			}
+			.title
+				mso-style-parent:style0;
+				text-align:left;
+			}
+		</style>
+<table class="pxtable" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<th colspan="4">Series, Per capita measure, Chain volume, Actual, Total (Annual-Mar)</th>
+	</tr>
+	<tr>
+		<td class="headfirst" colspan="1" rowspan="2">&nbsp;</td>
+		<th class="headfirst" colspan="1">Gross Domestic Product - production measure</th>
+		<th class="headfirst" colspan="1">Disposable Income - gross</th>
+		<th class="headfirst" colspan="1">Adjusted Disposable Income</th>
+	</tr>
+	<tr>
+		<th class="headlast" colspan="1">Per Capita in New Zealand dollars</th>
+		<th class="headlast" colspan="1">Per Capita in New Zealand dollars</th>
+		<th class="headlast" colspan="1">Per Capita in New Zealand dollars</th>
+	</tr>
+	<tr>
+		<td class="stub1">1992</td>
+		<td style="white-space: nowrap;">31,772</td>
+		<td style="white-space: nowrap;">28,957</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">1993</td>
+		<td style="white-space: nowrap;">31,788</td>
+		<td style="white-space: nowrap;">29,088</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">1994</td>
+		<td style="white-space: nowrap;">33,415</td>
+		<td style="white-space: nowrap;">30,520</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">1995</td>
+		<td style="white-space: nowrap;">34,650</td>
+		<td style="white-space: nowrap;">31,848</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">1996</td>
+		<td style="white-space: nowrap;">35,733</td>
+		<td style="white-space: nowrap;">32,879</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">1997</td>
+		<td style="white-space: nowrap;">36,465</td>
+		<td style="white-space: nowrap;">33,342</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">1998</td>
+		<td style="white-space: nowrap;">36,773</td>
+		<td style="white-space: nowrap;">33,936</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">1999</td>
+		<td style="white-space: nowrap;">36,778</td>
+		<td style="white-space: nowrap;">34,131</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2000</td>
+		<td style="white-space: nowrap;">38,570</td>
+		<td style="white-space: nowrap;">35,351</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2001</td>
+		<td style="white-space: nowrap;">39,459</td>
+		<td style="white-space: nowrap;">36,536</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2002</td>
+		<td style="white-space: nowrap;">40,469</td>
+		<td style="white-space: nowrap;">37,989</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2003</td>
+		<td style="white-space: nowrap;">41,609</td>
+		<td style="white-space: nowrap;">38,681</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2004</td>
+		<td style="white-space: nowrap;">42,697</td>
+		<td style="white-space: nowrap;">40,414</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2005</td>
+		<td style="white-space: nowrap;">43,806</td>
+		<td style="white-space: nowrap;">41,526</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2006</td>
+		<td style="white-space: nowrap;">44,751</td>
+		<td style="white-space: nowrap;">41,897</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2007</td>
+		<td style="white-space: nowrap;">45,506</td>
+		<td style="white-space: nowrap;">42,601</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2008</td>
+		<td style="white-space: nowrap;">46,456</td>
+		<td style="white-space: nowrap;">44,130</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2009</td>
+		<td style="white-space: nowrap;">45,556</td>
+		<td style="white-space: nowrap;">43,352</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2010</td>
+		<td style="white-space: nowrap;">45,000</td>
+		<td style="white-space: nowrap;">43,325</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2011</td>
+		<td style="white-space: nowrap;">45,216</td>
+		<td style="white-space: nowrap;">43,920</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2012</td>
+		<td style="white-space: nowrap;">45,922</td>
+		<td style="white-space: nowrap;">44,967</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2013</td>
+		<td style="white-space: nowrap;">46,685</td>
+		<td style="white-space: nowrap;">45,237</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2014</td>
+		<td style="white-space: nowrap;">47,472</td>
+		<td style="white-space: nowrap;">47,515</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2015</td>
+		<td style="white-space: nowrap;">48,411</td>
+		<td style="white-space: nowrap;">48,339</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2016</td>
+		<td style="white-space: nowrap;">49,181</td>
+		<td style="white-space: nowrap;">49,069</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2017</td>
+		<td style="white-space: nowrap;">49,915</td>
+		<td style="white-space: nowrap;">50,138</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2018</td>
+		<td style="white-space: nowrap;">50,680</td>
+		<td style="white-space: nowrap;">51,186</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2019</td>
+		<td style="white-space: nowrap;">51,484</td>
+		<td style="white-space: nowrap;">51,795</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2020</td>
+		<td style="white-space: nowrap;">51,663</td>
+		<td style="white-space: nowrap;">52,804</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="stub1">2021</td>
+		<td style="white-space: nowrap;">50,163</td>
+		<td style="white-space: nowrap;">51,397</td>
+		<td style="white-space: nowrap;">..</td>
+	</tr>
+	<tr>
+		<td class="footnote" colspan="4">
+			<a id="information">
+				<b>Table information:</b>
+			</a>
+			<br />Units:<br />$, Magnitude = Millions<br /><br /><a id="footnotes"><b>Footnotes:</b></a><br />Chain-volume series expressed in 2009/10 prices.<br /> <br />Symbols:<br />.. figure not available<br />C: Confidential<br />E: Early Estimate<br />P: Provisional<br />R: Revised<br />S: Suppressed<br /><br />Status flags are not displayed<br /><br />Table reference: <br />SNE120AA<br /><br />Last updated:<br />16 December 2021 10:45am<br /><br />Source: Statistics New Zealand<br />Contact: Information Centre<br />Telephone: 0508 525 525<br />Email:<a href="mailto:info@stats.govt.nz">info@stats.govt.nz</a><br /><br /><br /></td>
+	</tr>
+</table>	</body>
+</html>
