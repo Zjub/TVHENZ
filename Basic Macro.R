@@ -58,6 +58,11 @@ g2
 
 plot_grid(g1,g2,labels="AUTO")
 
+png(file="C:/Data/g2.png",
+    width=600, height=350)
+plot_grid(g1,g2,labels="AUTO")
+dev.off()
+
 GDPdata1$GDPrpc[nrow(GDPdata1)]/GDPdata1$GDPrpc[1]-1
 
 ##########
@@ -67,6 +72,11 @@ g3 <- ggplot(GDPdata1, aes(x=Year, y=GDPrpc,colour="Real GDP PC")) + geom_line(s
 g3 <- g3 + ggtitle("Chain linked GDP and NDP, per capita") + labs(y="NZ Dollars", x = "Year") + scale_y_continuous(labels=scales::dollar_format())
 
 g3
+
+png(file="C:/Data/g3.png",
+    width=600, height=350)
+g3
+dev.off()
 
 GDPdata1$NGDPrpc[nrow(GDPdata1)]/GDPdata1$NGDPrpc[1]-1
 
@@ -123,6 +133,11 @@ g4 <- g4 + ggtitle("Nominal income measures (experimental)") + labs(y="NZ Dollar
 
 g4
 
+png(file="C:/Data/g4.png",
+    width=600, height=350)
+g4
+dev.off()
+
 # Longer term real per capita from INFOSHARE
 
 GDPdata3 <- read.csv("GDPandGNDI.csv")
@@ -136,6 +151,11 @@ g5 <- ggplot(graphdata2, aes(Year,value)) + geom_line(aes(colour = variable))
 g5 <- g5 + ggtitle("Real Per Capita income measures") + labs(y="NZ Dollars", x = "Year") + scale_y_continuous(labels=scales::dollar_format())
 
 g5
+
+png(file="C:/Data/g5.png",
+    width=600, height=350)
+g5
+dev.off()
 
 GDPdata3$GDP[nrow(GDPdata3)]/GDPdata3$GDP[1] - 1
 
