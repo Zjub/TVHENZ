@@ -2,6 +2,7 @@
 # Data collected on 6th of February 2022. Indicies without a Dec 2021 figure used Sep 2021.
 
 rm(list=ls()) # Clear prior memory
+#https://twitter.com/JohnHelveston/status/1491430617111674882/photo/1
 
 library(tidyverse)
 library(readxl)
@@ -46,6 +47,10 @@ CPItotal <- CPIdat %>% mutate(Twoperline = cumprod(c(CPIdat[CPIdat$date == "1996
 g1 <- ggplotly(ggplot(CPItotal,aes(date,Data_value,colour="CPI data")) + geom_line(size = 1.5) + geom_smooth(aes(colour="Trendline"),se=FALSE,linetype = "dashed") + geom_line(aes(date,Twoperline,colour="2% since 1995"),size=1.1) + ggtitle("CPI vs trend") + labs(y="Index value", x = "Year") + theme_minimal())
 g1
 
+ggsave("g1.jpeg", width = 20, height = 10, units = 'cm')
+g1
+dev.off()
+
 ## CPI comparisons
 
 CPIcomp <- CPIdata %>% filter(Series_title_1 == "All groups") %>% filter(as.numeric(substr(Period,6,7)) == 12) %>% filter(Period >= 1975.12) %>% mutate(episode = ifelse(Period <= 1984.12,1,ifelse(Period >= 2009.12 & Period <= 2018.12,2,ifelse(Period >= 2019.12,3,0)))) %>% mutate(episodename = ifelse(episode == 1,"1975-1984",ifelse(episode == 2, "2009-2018", ifelse(episode == 3, "2019-Now","")))) %>% mutate(index = ifelse(episode > 0,1,0)) %>% filter(index > 0) %>% mutate(YearInx = as.character(c(rep(seq(0,9,1),2),0,1,2))) %>% mutate(Value = ifelse(episode == 1, Data_value/Data_value[1],ifelse(episode == 2, Data_value/Data_value[11],ifelse(episode == 3, Data_value/Data_value[21],0)))) %>% mutate(Twoper = c(rep(cumprod(c(1,rep(1.02,9))),2),cumprod(c(1,rep(1.02,2)))))
@@ -67,7 +72,7 @@ TrimweightQ <- read.csv(file="TrimweightQ2.csv",head=TRUE)[2:85,]
 colnames(TrimweightQ) <- c("Period","Trim5","Trim10","Trim10T","Trim10NT","Trim15","Trim20","Trim25","Trim30","QW10th","QW25th","QW50th","QW50thT","QW50thNT","QW75th","QW90th")
 TrimweightQ <- TrimweightQ %>% mutate(Year = as.numeric(substr(Period,1,4)), Quarter = as.numeric(substr(Period,6,6)))
 
-Trimweight <- TrimweightQ %>% transmute(Period = Period, Quarter = Quarter, Trim10index = cumprod(1+as.numeric(TrimweightQ$Trim10)/100),Trim30index = cumprod(1+as.numeric(TrimweightQ$Trim30)/100),WMedindex = cumprod(1+as.numeric(TrimweightQ$QW50th)/100)) %>% filter(Quarter == 4) %>% select("Period","Trim10index","Trim30index","WMedindex") %>% melt(id.var="Period") %>% arrange(Period, variable) %>% group_by(variable) %>% mutate(growth = (value - lag(value))/lag(value))
+Trimweight <- TrimweightQ %>% transmute(Period = Period, Quarter = Quarter, Trim10index = cumprod(1+as.numeric(TrimweightQ$Trim10)/100),Trim30index = cumprod(1+as.numeric(TrimweightQ$Trim30)/100),"Weighted Median" = cumprod(1+as.numeric(TrimweightQ$QW50th)/100)) %>% filter(Quarter == 4) %>% select("Period","Trim10index","Trim30index","Weighted Median") %>% melt(id.var="Period") %>% arrange(Period, variable) %>% group_by(variable) %>% mutate(growth = (value - lag(value))/lag(value))
 Trimweight$value <- as.numeric(Trimweight$value)
 
 # Have to import the non-standard measures manually - a copy will be saved in the GitHub folder.
@@ -100,12 +105,15 @@ RBNZinf$value <- as.numeric(RBNZinf$value)
 # Combine the series
 
 Core <- rbind(Trimweight,Exinf,RBNZinf) %>% mutate(Year = as.numeric(substr(Period,1,4))) %>% filter(Year >= 2000)
+Core2 <- Core %>% filter(variable %in% c("Weighted Median", "CPI", "Factor model", "Sectoral factor model"))
+colnames(Core2) <- c("Period","Inflation","value","growth","Year")
+
 
 
 g3 <- ggplotly(ggplot(Core,aes(Year,growth,colour=variable)) + geom_line(aes(size=variable)) + scale_size_manual(values = c(rep(0.25,5), 1,rep(0.25,2))) + scale_y_continuous(labels = scales::percent) + ggtitle("Core inflation measures") + labs(y="Annual growth", x = "Year") + theme_minimal() + theme(legend.position = "bottom")  + geom_hline(yintercept = 0.03, color = "red",linetype="dashed"))  # Different measures of "core" inflation!
 g3
 
-g3short <- ggplot(Core,aes(Year,growth,colour=variable)) + geom_line(aes(size=variable)) + scale_size_manual(values = c(rep(0.25,5), 1,rep(0.25,2))) + scale_y_continuous(labels = scales::percent) + ggtitle("Core inflation measures") + labs(y="Annual growth", x = "Year") + theme_minimal() + theme(legend.position = "bottom")  + geom_hline(yintercept = 0.03, color = "red",linetype="dashed")  # Different measures of "core" inflation!
+g3short <- ggplot(Core2,aes(Year,growth,colour=Inflation)) + geom_line(size = 1.1) + scale_size_manual(values = c(rep(0.25,5), 1,rep(0.25,2))) + scale_y_continuous(labels = scales::percent) + ggtitle("Inflation measures") + labs(y="Annual growth", x = "Year") + theme_minimal() + theme(legend.position = "bottom")  + geom_hline(yintercept = 0.03, color = "red",linetype="dashed")  # Different measures of "core" inflation!
 g3short
 
 # + scale_color_viridis(discrete = TRUE, option = "D") # Colourblind colours - preferable with fewer variables
@@ -207,10 +215,10 @@ Cont <- as.numeric(Contmatch$value[match(CPIgrowth2021ten$Series_title_1,Contmat
 CPI2021twenty <- cbind(CPIgrowth2021ten,Cont) %>% drop_na() # Dropping those without 10 year growth rates, and without estimated contributions
 colnames(CPI2021twenty)[13] <-"IndexContribution"
 
-g10 <- ggplotly(ggplot(CPI2021twenty,aes(avg10growth,growth,colour=Category,group=Series_title_1))+ geom_point(aes(size=IndexContribution)) + scale_y_continuous(labels = scales::percent) + ggtitle("Level 3 price changes (by Level 1 group)") + labs(y="Annual growth (2021)", x = "Avg annual growth (1999-2019)") + theme_minimal() + theme(legend.position = "bottom") + geom_hline(yintercept = 0, color = "black") + geom_vline(xintercept = 0, color = "black") + geom_hline(yintercept = 0.03, color = "red",linetype="dashed") + geom_vline(xintercept = 0.03, color = "red",linetype="dashed"))  # Size is the 2021 contribution to the total change
+g10 <- ggplotly(ggplot(CPI2021twenty,aes(avg10growth,growth,colour=Category,group=Series_title_1))+ geom_point(aes(size=IndexContribution)) + scale_y_continuous(labels = scales::percent) + scale_x_continuous(labels = scales::percent) + ggtitle("Level 3 price changes (by Level 1 group)") + labs(y="Annual growth (2021)", x = "Avg annual growth (1999-2019)") + theme_minimal() + theme(legend.position = "bottom") + geom_hline(yintercept = 0, color = "black") + geom_vline(xintercept = 0, color = "black") + geom_hline(yintercept = 0.03, color = "red",linetype="dashed") + geom_vline(xintercept = 0.03, color = "red",linetype="dashed"))  # Size is the 2021 contribution to the total change
 g10
 
-g10short <- ggplot(CPI2021twenty,aes(avg10growth,growth,colour=Category,group=Series_title_1))+ geom_point(aes(size=IndexContribution)) + scale_y_continuous(labels = scales::percent) + ggtitle("Level 3 price changes (by Level 1 group)") + labs(y="Annual growth (2021)", x = "Avg annual growth (1999-2019)") + theme_minimal() + geom_hline(yintercept = 0, color = "black") + geom_vline(xintercept = 0, color = "black") + geom_abline(intercept=0,color="red",linetype="dashed")   # Size is the 2021 contribution to the total change
+g10short <- ggplot(CPI2021twenty,aes(avg10growth,growth,colour=Category,group=Series_title_1))+ geom_point(aes(size=IndexContribution)) + scale_y_continuous(labels = scales::percent) + scale_x_continuous(labels = scales::percent) + ggtitle("Level 3 price changes (by Level 1 group)") + labs(y="Annual growth (2021)", x = "Avg annual growth (1999-2019)") + theme_minimal() + geom_hline(yintercept = 0, color = "black") + geom_vline(xintercept = 0, color = "black") + geom_abline(intercept=0,color="red",linetype="dashed")   # Size is the 2021 contribution to the total change
 
 g10short 
 
@@ -366,18 +374,23 @@ I16<-g14 # Comparison to other inflation measures
 #g14short
 #dev.off()
 
-ggsave("S1.png", width = 20, height = 10, units = 'cm')
+ggsave("S1j.jpeg", width = 20, height = 10, units = 'cm')
 g3short
 dev.off()
 
-ggsave("S2.png", width = 25, height = 10, units = 'cm')
+ggsave("S2j.jpeg", width = 20, height = 10, units = 'cm')
 g10short +
   annotate("text", x = 0.055, y = 0.3, label = "Petrol",size=3.5,colour="deeppink") +
   annotate("text", x = -0.04, y = 0.68, label = "International air travel", size = 3.5,colour="deeppink") +
   annotate("text", x = 0.01, y = 0.18, label = "Purchase of housing", size = 3.5,colour="deepskyblue3")
 dev.off()
 
-ggsave("S3.png", width = 25, height = 10, units = 'cm')
+ggsave("S3j.jpeg", width = 25, height = 10, units = 'cm')
 g14short
+dev.off()
+
+
+ggsave("Sallj.jpeg", width = 40, height = 40, units = 'cm')
+ggarrange(g3short,g10short,g14short,ncol=1,nrow=3,legend="none")
 dev.off()
 
