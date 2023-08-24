@@ -1,0 +1,14 @@
+name: EMTRs
+title: EMTRs
+username:
+account: nolannz
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8759997
+bundleId: 7083526
+url: https://nolannz.shinyapps.io/EMTRs/
+when: 1681369591.71547
+lastSyncTime: 1681369591.71547
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: apptest.R

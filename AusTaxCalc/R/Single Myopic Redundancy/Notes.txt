@@ -1,0 +1,3 @@
+1) We assume that the superwithdrawals do not reduce access to JSP.  This may not happen under current settings:
+
+Asset test applied to super funds if "you’re over Age Pension age or you receive payment from it." https://www.servicesaustralia.gov.au/asset-types?context=51411#a3
