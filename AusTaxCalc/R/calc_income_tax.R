@@ -1,27 +1,12 @@
-# Note, additional information compared to base calculator - so add to initial data file for run
-LITO_thresh_1 <- 37500
-LITO_thresh_2 <- 45000
-LITO_gross <- 700
-LITO_rate_1 <- 0.005
-LITO_rate_2 <- 0.015
-LMITO_on <- 1
-LMITO_thresh_1 <- 37000
-LMITO_thresh_2 <- 48000
-LMITO_thresh_3 <- 90000
-LMITO_gross <- 255
-LMITO_inc_rate <- 0.075
-LMITO_max <- 1080
-LMITO_dec_rate <- 0.03
-BRL_on <- 1
-BRL_thresh <- 180000
-BRL_rate <- 0.02
-BTO_thresh <- 6000
-BTO_rate <- 0.15
+## Calculating of the gross benefit payment ----
+# Last update: 25/08/2023
+# Updated by: Matt Nolan
+# Initial author: Matt Nolan
 
-# Function for calculating income tax
+# Function for calculating income tax ----
 # Includes Low Income Tax Credit, Low and Middle Income Tax Credit, Temporary Budget Repair Levy, and Beneficiary Tax offset.
 
-calc_income_tax <- function(gross_income,work_income,LITO_thresh_1,LITO_thresh_2,LITO_gross,LITO_rate_1,LITO_rate_2) {
+calc_income_tax <- function(gross_income,work_income) {
   tax_nc <- 0
   tempinc <- gross_income
   for (i in length(tax_brackets):2) {

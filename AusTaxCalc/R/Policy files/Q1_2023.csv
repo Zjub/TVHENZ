@@ -1,0 +1,76 @@
+function,Parameter,Value,period,Desc
+calc_income_tax,tax_free,18200,year,Tax-free threshold
+calc_income_tax,tax_threshold_1,45000,year,First-tax threshold
+calc_income_tax,tax_threshold_2,120000,year,Second-tax threshold
+calc_income_tax,tax_threshold_3,180000,year,Third-tax threshold
+calc_income_tax,tax_rate_1,0.19,year,First-tax rate
+calc_income_tax,tax_rate_2,0.325,year,Second-tax rate
+calc_income_tax,tax_rate_3,0.37,year,Third-tax rate
+calc_income_tax,tax_rate_4,0.45,year,Top-tax rate
+calc_income_tax,LITO_on,1,year,Low Income Tax Offset
+calc_income_tax,LITO_thresh_1,37500,year,X
+calc_income_tax,LITO_thresh_2,45000,year,X
+calc_income_tax,LITO_gross,700,year,X
+calc_income_tax,LITO_rate_1,0.005,year,X
+calc_income_tax,LITO_rate_2,0.015,year,X
+calc_income_tax,LMITO_on,0,year,X
+calc_income_tax,LMITO_thresh_1,37000,year,X
+calc_income_tax,LMITO_thresh_2,48000,year,X
+calc_income_tax,LMITO_thresh_3,90000,year,X
+calc_income_tax,LMITO_gross,255,year,X
+calc_income_tax,LMITO_inc_rate,0.075,year,X
+calc_income_tax,LMITO_max,1080,year,X
+calc_income_tax,LMITO_dec_rate,0.03,year,X
+calc_income_tax,BRL_on,1,year,X
+calc_income_tax,BRL_thresh,180000,year,X
+calc_income_tax,BRL_rate,0.02,year,X
+calc_income_tax,BTO_thresh,6000,year,X
+calc_income_tax,BTO_rate,0.15,year,X
+calc_rent_assistance,rent_max_single_la,337.84,fortnight,X
+calc_rent_assistance,rent_min_single_la,135.4,fortnight,X
+calc_rent_assistance,rent_max_single_share,271.6,fortnight,X
+calc_rent_assistance,rent_min_single_share,135.4,fortnight,X
+calc_rent_assistance,rent_max_couple,409.6,fortnight,X
+calc_rent_assistance,rent_min_couple,219.2,fortnight,X
+calc_rent_assistance,rent_max_single_dep1,415.62,fortnight,X
+calc_rent_assistance,rent_min_single_dep1,177.8,fortnight,X
+calc_rent_assistance,rent_max_couple_dep1,500.6,fortnight,X
+calc_rent_assistance,rent_min_couple_dep1,262.78,fortnight,X
+calc_rent_assistance,rent_max_single_dep3,446.23,fortnight,X
+calc_rent_assistance,rent_min_single_dep3,177.8,fortnight,X
+calc_rent_assistance,rent_max_couple_dep3,531.21,fortnight,X
+calc_rent_assistance,rent_min_couple_dep3,262.78,fortnight,X
+calc_rent_assistance,ra_rate,0.75,fortnight,X
+calc_energy_supp,energy_partnered,7.9,fortnight,X
+calc_energy_supp,energy_single,8.8,fortnight,X
+calc_energy_supp,energy_over60,9.5,fortnight,X
+calc_energy_supp,energy_single_dep,9,fortnight,X
+calc_main_benefit,JSP_S_ND_pay,668.4,fortnight,X
+calc_main_benefit,JSP_S_D_pay,720.4,fortnight,X
+calc_main_benefit,JSP_C_ND_pay,562.8,fortnight,X
+calc_main_benefit,JSP_C_D_pay,612.6,fortnight,X
+calc_main_benefit,JSP_S_ND_arate_1,0.5,fortnight,X
+calc_main_benefit,JSP_S_ND_arate_2,0.6,fortnight,X
+calc_main_benefit,JSP_S_ND_athresh_1,150,fortnight,X
+calc_main_benefit,JSP_S_ND_athresh_2,256,fortnight,X
+calc_main_benefit,PP_S_pay,889.2,fortnight,X
+calc_main_benefit,PP_C_pay,608.7,fortnight,X
+calc_main_benefit,PP_S_athresh_base,202.6,fortnight,X
+calc_main_benefit,PP_S_athresh_mult,24.6,fortnight,X
+calc_main_benefit,PP_S_arate,0.4,fortnight,X
+calc_family_benefit,fam_base_threshold,103368,year,X
+calc_family_benefit,fam_max_threshold,58108,year,X
+calc_family_benefit,fam_basic_pay,63.56,fortnight,X
+calc_family_benefit,fam_base_rate,0.1,year,X
+calc_family_benefit,firm_max_rate,0.2,year,X
+calc_family_benefit,fam_a_highATI_rate,0.3,year,X
+calc_family_benefit,fam_b_threshold,104432,year,X
+calc_family_benefit,fam_be_low_thresh,6059,year,X
+calc_family_benefit,super_cont_rate,0.15,year,X
+calc_family_benefit,fam_a_young_pay,197.96,fortnight,X
+calc_family_benefit,fam_a_old_pay,257.46,fortnight,X
+calc_family_benefit,fam_b_young_pay,168.28,fortnight,X
+calc_family_benefit,fam_b_old_pay,117.46,fortnight,X
+calc_benefit_abated,partner_thresh,1196,fortnight,X
+calc_benefit_abated,partner_thresh_dep,1201,fortnight,X
+calc_benefit_abated,partner_abate,0.6,fortnight,X

@@ -1,6 +1,15 @@
-# Function calculating main benefit
+## Calculating main benefit ----
+# Last update: 25/08/2023
+# Updated by: Matt Nolan
+# Initial author: Matt Nolan
+
+# Function calculating main benefit ----
 
 calc_main_benefit <- function(Numb_dep,partnered,Main_carer_dep) {
+  PPeligible <- ifelse((young_child <= 6 | (young_child <= 8 & partnered == 0)) & Main_carer_dep == 1,1,0)
+  
+  PP_S_athresh <- PP_S_athresh_base + PP_S_athresh_mult*(Numb_dep - 1)
+  
   JSP_pay <- 0
   PP_pay <- 0
   if (PPeligible == 1){

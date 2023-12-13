@@ -272,7 +272,7 @@ calculate_EMTR <- function(wage = 25,hour_interest = 20, max_hours = 60, partner
   
   fam_base_threshold <- 103368
   fam_max_threshold <- 58108
-  fam_basic_rate <- 63.56
+  fam_basic_pay <- 63.56
   fam_b_threshold <- 104432
   fam_b_low_thresh <- 6059
   super_cont_rate <- 0.15 # The employer contribution is included in the test for family assistance
@@ -288,10 +288,10 @@ calculate_EMTR <- function(wage = 25,hour_interest = 20, max_hours = 60, partner
     numb_child_19 <- length(child_age[child_age <20 & child_age > 12])
     fam_a <- 197.96*numb_child_12 + 257.46*numb_child_19
     if (ATI < fam_base_threshold & Numb_dep > 0){
-      net_fam_a <- max((fam_a*26 - max((ATI-fam_max_threshold),0)*0.2 - max((ATI - fam_base_threshold),0)*0.1)/26,fam_basic_rate*(numb_child_19+numb_child_12))
+      net_fam_a <- max((fam_a*26 - max((ATI-fam_max_threshold),0)*0.2 - max((ATI - fam_base_threshold),0)*0.1)/26,fam_basic_pay*(numb_child_19+numb_child_12))
     }
     else if (Numb_dep > 0) {
-      net_fam_a <- max(max((fam_a*26 - max((ATI-fam_max_threshold),0)*0.2 - max((ATI - fam_base_threshold),0)*0.1)/26,(fam_basic_rate*(numb_child_19+numb_child_12)*26 - 0.3*(ATI - fam_base_threshold))/26),0)
+      net_fam_a <- max(max((fam_a*26 - max((ATI-fam_max_threshold),0)*0.2 - max((ATI - fam_base_threshold),0)*0.1)/26,(fam_basic_pay*(numb_child_19+numb_child_12)*26 - 0.3*(ATI - fam_base_threshold))/26),0)
     }
     else {
       net_fam_a = 0

@@ -1,5 +1,9 @@
-# Calculates the family benefit received.
+## Calculating of the family benefit received ----
+# Last update: 25/08/2023
+# Updated by: Matt Nolan
+# Initial author: Matt Nolan
 
+## Function ----
 calc_family_benefit <- function(child_age,gross_fam_income,work_income,taxable_benefit){
   # Note, the LITSO is not counted in the super information.
   super_contributions = super_cont_rate*(work_income + partner_earnings)
@@ -11,10 +15,10 @@ calc_family_benefit <- function(child_age,gross_fam_income,work_income,taxable_b
   numb_child_19 <- length(child_age[child_age <20 & child_age > 12])
   fam_a <- 197.96*numb_child_12 + 257.46*numb_child_19
   if (ATI < fam_base_threshold & Numb_dep > 0){
-    net_fam_a <- max((fam_a*26 - max((ATI-fam_max_threshold),0)*0.2 - max((ATI - fam_base_threshold),0)*0.1)/26,fam_basic_rate*(numb_child_19+numb_child_12))
+    net_fam_a <- max((fam_a*26 - max((ATI-fam_max_threshold),0)*0.2 - max((ATI - fam_base_threshold),0)*0.1)/26,fam_basic_pay*(numb_child_19+numb_child_12))
   }
   else if (Numb_dep > 0) {
-    net_fam_a <- max(max((fam_a*26 - max((ATI-fam_max_threshold),0)*0.2 - max((ATI - fam_base_threshold),0)*0.1)/26,(fam_basic_rate*(numb_child_19+numb_child_12)*26 - 0.3*(ATI - fam_base_threshold))/26),0)
+    net_fam_a <- max(max((fam_a*26 - max((ATI-fam_max_threshold),0)*0.2 - max((ATI - fam_base_threshold),0)*0.1)/26,(fam_basic_pay*(numb_child_19+numb_child_12)*26 - 0.3*(ATI - fam_base_threshold))/26),0)
   }
   else {
     net_fam_a = 0

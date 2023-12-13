@@ -1,14 +1,10 @@
-# Additional calls to be pulled out of the function.
-
-ben_eligibility <- 1
-energy_partnered <- 7.90
-energy_single <- 8.80
-energy_over60 <- 9.50
-energy_single_dep <- 9.50
+## Calculating of the energy supplement ----
+# Last update: 25/08/2023
+# Updated by: Matt Nolan
+# Initial author: Matt Nolan
 
 
-# Function calculating the energy supplement
-
+## Function ----
 calc_energy_supp <- function(ben_eligibility,partnered,Have_dep,over_60){
   # This needs to be updated to include the family benefit amounts
   energy_supp = 0

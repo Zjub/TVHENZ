@@ -1,6 +1,10 @@
+## Calculating the abated benefit received ----
+# Last update: 25/08/2023
+# Updated by: Matt Nolan
+# Initial author: Matt Nolan
 
-# Calculating the abated benefit received
 
+## Function ----
 calc_benefit_abated <- function(work_income,partner_earnings) {
   # Abate down based on partner income first.
   taxable_benefit = calc_benefit_gross()[["taxable_benefit"]]
