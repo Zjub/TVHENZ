@@ -1,0 +1,12 @@
+name: Stage3alternatives
+title: Stage3alternatives
+username: nolannz
+account: nolannz
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11001160
+bundleId: 8173796
+url: https://nolannz.shinyapps.io/Stage3alternatives/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
