@@ -6,7 +6,7 @@ b <- 0.5
 delta <- 0.95
 decline_rate <- 0.1 # Wage decline rate
 C <- 0.2
-mc = 0.4
+mc <- 0.4
 
 # Adjusted cost function
 c_e <- function(e) {

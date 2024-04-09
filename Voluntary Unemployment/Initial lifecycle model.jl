@@ -45,7 +45,12 @@ zgrid = [0.5, 0.85, 1, 1.15, 1.5]
 Nz = length(zgrid)
 
 # Markov chain probability transition matrix
-Gamma_z = [0.80 0.10 0.075 0.025 0; 0.025 0.90 0.05 0.025 0; 0 0.025 0.95 0.025 0; 0 0.025 0.05 0.90 0.025; 0 0.025 0.075 0.10 0.80]
+Gamma_z = [0.80 0.10 0.075 0.025 0; 
+           0.025 0.90 0.05 0.025 0; 
+           0 0.025 0.95 0.025 0; 
+           0 0.025 0.05 0.905 0.025;  # Changed value from James's code as it wasn't reading as a probabilty (due to summing to less than 1)
+           0 0.025 0.075 0.10 0.80]
+
 
 # Create expectations matrix
 E = kron(Gamma_z, I(Na))
@@ -79,13 +84,6 @@ VR_j[:,jj] .= psi * log.(a)
 scale = -1e+10
 VW_j[:,jj] .= max.(VW_j[:,jj], scale)
 VR_j[:,jj] .= max.(VR_j[:,jj], scale)
-
-# Solve for all previous ages: j = J-1, ..., 1
-for jj in J:-1:1
-    # RETIRED PROBLEM
-    # Implementation of golden section search and interpolation
-    # working and retired problems are omitted for brevity, but follow a similar pattern
-end
 
 ## Optimisation
 # Define utility and bequest functions
