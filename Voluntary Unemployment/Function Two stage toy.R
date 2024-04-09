@@ -1,3 +1,9 @@
+# Date created: 9/04/2024
+# Initial author: Matt Nolan
+# Date last updated: 9/04/2024
+# Last edit: Matt Nolan
+
+
 # Define parameters
 L <- 0.5 # Probability of losing a job between periods 1 and 2
 w1 <- 1 # Wage of first period job
