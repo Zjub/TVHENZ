@@ -1,3 +1,8 @@
+# Created date: 23 March 2024
+# Created by: Matt Nolan
+# Last update: 9 April 2024
+# Last edit: Matt Nolan
+
 # Define parameters
 L <- 0.5 # Probability of losing a job between periods 1 and 2
 w1 <- 1 # Wage of first period job
@@ -29,8 +34,8 @@ V_leave <- numeric(length(e_values))
 
 for (i in 1:length(e_values)) {
   e <- e_values[i]
-  V_stay[i] <- w1 + (1 - L) * w2 + L * e * w2 - c_e(e,"stay")
-  V_leave[i] <- b + e * w2 - c_e(e,"leave")*cost_leave
+  V_stay[i] <- w1 + (1 - L) * w2 + L * (e * w2 + (1-e) * b) - c_e(e,"stay")
+  V_leave[i] <- b + e * w2 + (1-e) * b - c_e(e,"leave")*cost_leave
 }
 
 # Plot V_stay(e) and V_leave(e)
