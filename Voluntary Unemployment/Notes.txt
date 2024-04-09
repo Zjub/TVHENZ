@@ -1,0 +1,6 @@
+This folder contains a number of files related to different toy models:
+
+1) IH toy.R - this is a two-stage model of choice for voluntary, involuntary, and J2J states.
+2) Two stage toy.R - this is a partially completed infinite horizon model (just the structure, not the appropriate value functions and solution method).
+3) Initial lifecycle model.jl - this is a toy lifecycle model in Julia
+4) toy_vol_unemp.jl - this is an extension of the lifecycle model to switch from retirement choice to the voluntary v J2J choice.
