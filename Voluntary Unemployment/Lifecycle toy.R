@@ -12,7 +12,7 @@ C <- 0.1
 c <- 0.25
 N <- 10
 cost_leave <- 1
-depreciation <- 0.1 # Wage decline through time
+depreciation <- 0.5 # Wage decline through time
 
 # Probability of job loss in each period, could be a vector of probabilities
 L <- rep(0.2, N) # Example: Constant probability; can be replaced with a varying vector
