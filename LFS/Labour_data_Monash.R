@@ -21,8 +21,6 @@ library(zoo)
 library(Hmisc)
 library(seasonal)
 
-Sys.setenv(GITHUB_PAT = "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")
-
 remotes::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
 
 setwd("C:/MN personal planning/LFS/Plots")
