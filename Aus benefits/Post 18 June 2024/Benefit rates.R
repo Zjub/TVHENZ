@@ -105,10 +105,20 @@ ggplot(graph_dt,aes(x=Date,y=value,colour=variable)) + geom_line() + scale_y_con
 
 save_e61("Long-term benefits.png",chart_type = "PPT",res=2)
 
-
 ggplot(graph_dt[Date > as.Date("2011-12-30")],aes(x=Date,y=value,colour=variable)) + geom_line() + scale_y_continuous_e61(labels=scales::dollar_format(),limits=c(100,700,100)) + labs_e61(title = "Single Working-Age Adult Unemployment Benefit",subtitle = "Weekly Gross Payment",y="") + theme_e61_alt() + plot_label("Weekly Payment",x=as.Date("2012-03-01"),y=310,colour=palette_e61(3)[1],size=4.5) + plot_label("Real Payment (CPI)",x=as.Date("2012-03-01"),y=350,colour=palette_e61(3)[2],size=4.5) + plot_label("Real Payment (LCI)",x=as.Date("2012-03-01"),y=390,colour=palette_e61(3)[3],size=4.5) + scale_x_date(date_breaks = "2 years", date_labels = "%Y") + theme(legend.position = "none")
 
 save_e61("Real benefits.png",chart_type = "PPT",res=2)
+
+# Add a plot using pre-COVID averages
+pre_COVID_benefit <- mean(dt[Date < as.Date("2020-01-01")]$Real_Rate)
+
+dt2 <- dt[,':=' (pre_COVID = pre_COVID_benefit)][,.(Date,Real_Rate,pre_COVID)]
+
+graph_dt2 <- melt(dt2,id="Date")
+
+ggplot(graph_dt2,aes(x=Date,y=value,colour=variable,linetype=variable)) + geom_line() + scale_y_continuous_e61(labels=scales::dollar_format(),limits=c(100,700,100)) + labs_e61(title = "Single Working-Age Adult Unemployment Benefit",subtitle = "Weekly Gross Payment (CPI adjusted)",y="") + theme_e61_alt() + plot_label("Real JSP Rate",x=as.Date("1990-03-01"),y=330,colour=palette_e61(3)[1],size=4.5) + plot_label("Pre-COVID Average",x=as.Date("1990-03-01"),y=370,colour=palette_e61(3)[2],size=4.5) + theme(legend.position = "none")
+
+save_e61("Real benefits only.png",chart_type = "PPT",res=2)
 
 ### Gross replacement rates ----
 # Create percent of full-time and percent of average replacement rates
