@@ -1,0 +1,506 @@
+---
+title: "June 2024 Labour Market Update"
+author: "Matt Nolan"
+date: "2024-06-13"
+output:
+  beamer_presentation:
+    incremental: true
+  ioslides_presentation:
+    incremental: true
+---
+
+<!-- Initial date: 12/06/2024 -->
+<!--  Author: Matt Nolan -->
+<!--  Last edit: 12/06/2024 -->
+<!--  Purpose: Generate a presentation that goes through important labour market indicators -->
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+### Read libraries ----
+library(readabs)
+library(data.table)
+library(tidyverse) 
+library(ggplot2)
+library(knitr)
+library(readrba)
+library(Hmisc)
+library(mFilter)
+library(viridis)
+library(gridExtra)
+library(seasonal)
+#library(tinytex) # used when constructing a PDF version, specifically when using beamer for academic presentations
+
+### Set global values ----
+last_month <- as.Date("2024-05-01") # Sets a "latest date" used for graphs.
+
+### Construct data of interest
+## Base labour market aggregates (quarterly number unemployed, employed, and the unemployment rate) ----
+LS <- read_abs(cat_no = "6202.0") 
+
+LS_mini <- LS %>% filter(series_type == "Seasonally Adjusted") %>% filter(table_title == "Table 1. Labour force status by Sex, Australia - Trend, Seasonally adjusted and Original") %>% filter(series == "Employed total ;  Persons ;" | series == "Unemployed total ;  Persons ;"  | series == "Unemployment rate ;  Persons ;") %>% select("date","series","value")
+
+LS2 <- pivot_wider(LS_mini,id_cols = "date",names_from = "series",values_from = "value")
+colnames(LS2) <- c("date","Employed","Unemployed","UR_ABS")
+
+LS2 <- LS2 %>% mutate(UR_Derived = Unemployed/(Employed + Unemployed),QUnemp = frollmean(Unemployed,n=3,fill=NA,align="right"),QEmp =frollmean(Employed,n=3,fill=NA,align="right"),UR = UR_ABS) 
+
+LSQ <- LS2[seq(5,nrow(LS2),3),] %>% select(date,QUnemp,QEmp,UR)
+
+
+## Labour market tightness: Use the ABS data - this is quarterly ----
+
+vac_full <- read_abs(cat_no = "6354.0")
+
+vac <- vac_full %>% filter(series == "Job Vacancies ;  Australia ;") %>% filter(grepl('TABLE 1',table_title)) %>% filter(series_type == "Seasonally Adjusted")
+
+vac$date <- vac$date %m+% months(1) -14
+
+vac <- vac %>% select(date,value)
+colnames(vac) <- c("date","vacancy")
+
+# Need to impute the data that was not collected for August 2008 to August 2009 based on a regression of the log difference in vacancies against the change in the unemployment rate from pre-May 2008. 
+
+vacdf <- left_join(vac,LSQ,by="date") %>% select(date,vacancy,QUnemp) %>% mutate(time = seq(1,nrow(vac),by=1))
+
+vac_imp <- aregImpute(~vacancy + QUnemp + time,data=vacdf %>% filter(date <= "2020-01-01"))
+
+vacdf[is.na(vacdf$vacancy),]$vacancy <- vac_imp$imputed$vacancy[nrow(vac_imp$imputed$vacancy),]
+
+plot(vacdf$vacancy)
+plot(vacdf$QUnemp)
+
+vu <- left_join(vacdf,LSQ, by="date")
+
+v <- vacdf %>% transmute(date=date,v=vacancy,Unemp=QUnemp)
+setDT(v)
+v <- melt(v,id = "date")
+
+vu <- vu %>% transmute(date=date,vu = vacancy/(QUnemp.x*1000))
+setDT(vu)
+
+average_vu_pc <- mean(vu[date > as.Date("1999-12-01") & date < as.Date("2020-01-01")]$vu, na.rm = TRUE) * 1000 # Average tightness ratio between 2000 and 2019. Look at pre-COVID, given the COVID specific patterns.
+
+## Add industry vacancy data - only use from 2013 onwards ----
+
+vac_ind <- vac_full %>% filter(startsWith(table_title, "TABLE 4") & !startsWith(series, "Standard Error")) %>% mutate(industry = str_extract(series, ";\\s*(.*?)\\s*;")) %>% mutate(industry = str_trim(str_remove_all(industry, ";"))) %>% select(date,value,industry)
+setDT(vac_ind)
+setkey(vac_ind,industry,date)
+
+vac_ind[,annual_vac := frollmean(value,12,fill=NA,align="right")]
+
+#ggplot(vac_ind[industry %in% unique(vac_ind$industry)[c(9,17)]],aes(x=date,y=annual_vac,colour=industry)) + geom_line() # Illustrates an issue with the pre 2013 data (18 even more so).
+# temp <- vac_ind[industry != "Total All Industries",.(value = sum(value),industry = "total_implied",annual_vac = sum(annual_vac,na.rm = TRUE)),by=date]
+# vac_ind <- rbind(vac_ind,temp)
+# ggplot(vac_ind[date > as.Date("2012-12-30")],aes(x=date,y=annual_vac,colour=industry)) + geom_line()
+
+vac_ind <- vac_ind[date > as.Date("2012-12-30")]
+
+vac_ind[,agg_ind := fcase(industry %in% c("Mining","Construction","Manufacturing","Electricity, Gas, Water and Waste Services","Transport, Postal and Warehousing","Wholesale Trade"),"Primary and Secondary",
+                          industry %in% c("Retail Trade","Accommodation and Food Services","Rental, Hiring and Real Estate Services" ),"Sales",
+                          industry %in% c("Administrative and Support Services","Financial and Insurance Services" ,"Professional, Scientific and Technical Services","Information Media and Telecommunications"),"Private Services",
+                          industry %in% c("Education and Training","Health Care and Social Assistance","Public Administration and Safety"),"Public Services",
+                          industry %in% c("Arts and Recreation Services","Other Services"),"Other Services",
+                          industry %in% c("Total All Industries","total_implied"),"Total",
+                          default = NA)]
+
+vac_ind[,agg_total := sum(value),by=.(agg_ind,date)]
+vac_ind[,agg_ann_total := sum(annual_vac),by=.(agg_ind,date)]
+
+ggplot(vac_ind[date > as.Date("2012-12-30") & !industry %in% c("Total All Industries","total_implied"  )],aes(x=date,y=annual_vac,colour=industry)) + geom_line()
+
+ggplot(vac_ind[date > as.Date("2012-12-30") & !agg_ind %in% c("Total")],aes(x=date,y=agg_ann_total,colour=agg_ind)) + geom_line()
+ggplot(vac_ind[date > as.Date("2012-12-30") & !agg_ind %in% c("Total")],aes(x=date,y=agg_total,colour=agg_ind)) + geom_line()
+
+# Make industry vacancy rates
+
+LS_ind <- read_abs(cat_no = "6291.0.55.001") %>% filter(table_title == "Table 04. Employed persons by Industry division of main job (ANZSIC) - Trend, Seasonally adjusted, and Original") %>% filter(series_type == "Original")
+setDT(LS_ind)
+
+LS_ind <- LS_ind[series != "Employed total ;"][, industry := str_remove(series, " ;  Employed total ;")][industry != "Agriculture, Forestry and Fishing"]
+
+LS_ind[,agg_ind := fcase(industry %in% c("Mining","Construction","Manufacturing","Electricity, Gas, Water and Waste Services","Transport, Postal and Warehousing","Wholesale Trade"),"Primary and Secondary",
+                         industry %in% c("Retail Trade","Accommodation and Food Services","Rental, Hiring and Real Estate Services" ),"Sales",
+                         industry %in% c("Administrative and Support Services","Financial and Insurance Services" ,"Professional, Scientific and Technical Services","Information Media and Telecommunications"),"Private Services",
+                         industry %in% c("Education and Training","Health Care and Social Assistance","Public Administration and Safety"),"Public Services",
+                         industry %in% c("Arts and Recreation Services","Other Services"),"Other Services",
+                         industry %in% c("Total All Industries","total_implied"),"Total",
+                         default = NA)]
+
+LS_ind <- LS_ind[date > as.Date("2012-12-30"),.(date,value,industry,agg_ind)][,date := date + 14][,agg_emp := sum(value),by=.(date,agg_ind)]
+
+ind_vac_emp <- vac_ind[LS_ind,on=.(date,industry)]
+
+# Note. This overstates the vacancy rate, as it doesn't include the jobs of multiple job holders. Instead of employment we would want to use filled jobs.
+vac_rate_ind <- ind_vac_emp[,.(vac_rate = agg_total/(agg_emp+agg_total)),by=.(date,agg_ind)]
+
+### Construct alternative vacancy rate with labour accounts measures (filled jobs, total jobs, etc) [preferred measure for industry level] ----
+
+labour_acc_full <- read_abs(cat_no = "6150.0.55.003")
+setDT(labour_acc_full)
+unique(labour_acc_full$table_title)
+
+labour_acc_full[, industry := str_match(table_title, "Table \\d+\\. (.*?) - Trend, Seasonally Adjusted and Original")[, 2]]
+labour_acc_full <- labour_acc_full[!is.na(industry)]
+
+# These accounts include values for Agriculture
+labour_acc_full[,agg_ind := fcase(industry %in% c("Agriculture, Forestry and Fishing (A)","Mining (B)","Construction (E)","Manufacturing (C)","Electricity, Gas, Water and Waste Services (D)","Transport, Postal and Warehousing (I)","Wholesale Trade (F)"),"Primary and Secondary",
+                                  industry %in% c("Retail Trade (G)","Accommodation and Food Services (H)","Rental, Hiring and Real Estate Services (L)"),"Sales",
+                                  industry %in% c("Administrative and Support Services (N)","Financial and Insurance Services (K)" ,"Professional, Scientific and Technical Services (M)","Information Media and Telecommunications (J)"),"Private Services",
+                                  industry %in% c("Education and Training (P)","Health Care and Social Assistance (Q)","Public Administration and Safety (O)"),"Public Services",
+                                  industry %in% c("Arts and Recreation Services (R)","Other Services (S)"),"Other Services",
+                                  industry %in% c("Total All Industries"),"Total",
+                                  default = NA)]
+
+labour_acc <- labour_acc_full[!is.na(agg_ind)]
+
+unique(labour_acc[table_title == "Table 1. Total All Industries - Trend, Seasonally Adjusted and Original" & series_type=="Original" & date > as.Date("2012-12-30") & startsWith(series,"Jobs")]$series)
+
+ggplot(labour_acc[table_title == "Table 1. Total All Industries - Trend, Seasonally Adjusted and Original" & series_type=="Seasonally Adjusted" & date > as.Date("2012-12-30") & startsWith(series,"Jobs; Proportion of vacant jobs ;")],aes(x=date,y=value,colour = agg_ind)) + geom_line() + theme_classic()
+
+ggplot(labour_acc[table_title == "Table 1. Total All Industries - Trend, Seasonally Adjusted and Original" & series_type=="Seasonally Adjusted" & date > as.Date("1999-12-30") & startsWith(series,"Jobs; Proportion of vacant jobs ;")],aes(x=date,y=value,colour = agg_ind)) + geom_line() + theme_classic()
+
+
+labour_acc <- labour_acc[(startsWith(series,"Jobs; Total jobs") | startsWith(series,"Jobs; Job vacancies")) & unit == "000" & date > "2012-12-30" & series_type == "Seasonally Adjusted",.(date,industry,agg_ind,value,series)]
+
+labour_acc[, series2 := str_extract(series, "^[^;]+;[^;]+")]
+
+labour_acc <- dcast(labour_acc,date+industry+agg_ind~series2)
+
+labour_acc[,vac_rate := `Jobs; Job vacancies `/`Jobs; Total jobs `][,agg_vac_rate := sum(`Jobs; Job vacancies `)/sum(`Jobs; Total jobs `),by=.(date,agg_ind)]
+
+## Multiple job holding rate. ----
+
+mult_job <- labour_acc_full[series == "Persons; Rate of multiple job holding (proportion of employed persons) ;  Australia ;  Total all industries ;" & series_type == "Seasonally Adjusted"][,.(date,mult_job_rate = value)] 
+
+ggplot(mult_job,aes(x=date,y=mult_job_rate)) + geom_line()
+
+## Participation rates ----
+
+LS_part <- LS %>% filter(series_type == "Seasonally Adjusted") %>% filter(table_title == "Table 1. Labour force status by Sex, Australia - Trend, Seasonally adjusted and Original")  %>% filter(series == "Participation rate ;  Persons ;") %>% select("date","series","value")
+setDT(LS_part)
+
+avg_PR <- mean(LS_part[date > as.Date("2004-12-30") & date < as.Date("2020-01-01")]$value)
+
+LS_part[,avg_PR := avg_PR][,dPR := value - avg_PR]
+
+ggplot(LS_part[date > as.Date("2012-12-30")],aes(x=date,y=value)) + geom_line() + geom_hline(yintercept = avg_PR,colour="red",linetype="dashed")
+
+
+### Earnings ----
+
+# By industry (COE and COE per job) - decided to exclude for time.
+
+# By WPI
+wpi <- read_abs("6345.0")
+setDT(wpi)
+
+wpi_SA <- wpi[series_type == "Seasonally Adjusted" & data_type == "INDEX"][, series2 := sapply(str_split(series, ";\\s+"), function(x) x[4])]
+
+ggplot(wpi_SA[],aes(x=date,y=value,colour=series2)) + geom_line()
+
+unique(wpi[str_detect(series, regex("year", ignore_case = TRUE)) & 
+             str_detect(series, regex("Total", ignore_case = TRUE)) & 
+             str_detect(series, regex("All industries", ignore_case = TRUE)) &
+             str_detect(series, regex("Australia", ignore_case = TRUE)) &
+             str_detect(series, regex("Private and Public", ignore_case = TRUE)) &
+             series_type == "Original" & 
+             data_type == "PERCENT" & 
+             date > as.Date("2012-12-30")]$series)
+
+ann_wpi_growth <- wpi[series %in% c("Percentage Change from Corresponding Quarter of Previous Year ;  Total hourly rates of pay excluding bonuses ;  Australia ;  Private and Public ;  All industries ;","Percentage Change from Corresponding Quarter of Previous Year ;  Total hourly rates of pay excluding bonuses ;  Australia ;  Public ;  All industries ;","Percentage Change from Corresponding Quarter of Previous Year ;  Total hourly rates of pay excluding bonuses ;  Australia ;  Private ;  All industries ;") & series_type == "Original" & 
+      data_type == "PERCENT" & 
+      date > as.Date("2012-12-30") & table_no == "634501"]
+
+ann_wpi_growth <- ann_wpi_growth[, series2 := sapply(str_split(series, ";\\s+"), function(x) x[4])][,.(date,value,series2)]
+
+cpi <- read_abs(cat_no = "6401.0")
+setDT(cpi)
+
+cpi_growth <- cpi[table_title == "TABLES 1 and 2. CPI: All Groups, Index Numbers and Percentage Changes" & unit == "Percent" & series == "Percentage Change from Corresponding Quarter of Previous Year ;  All groups CPI ;  Australia ;" & date > as.Date("2012-12-30")][,.(date,cpi_value = value)]
+
+cpi_growth <- cpi_growth[ann_wpi_growth[series2 == "Private and Public "],on=.(date)][,RW := value - cpi_value]
+
+ggplot(cpi_growth,aes(x=date,y=RW)) + geom_line() + geom_hline(yintercept = 0)
+
+# Add average RW growth 2004 - 2019. For this get December 2019 WPI and CPI, and December 2004 WPI and CPI, and calculate annualised growth.
+
+cpi_for_avg <- cpi[(date == "2004-12-01" | date == "2019-12-01") & table_title == "TABLES 1 and 2. CPI: All Groups, Index Numbers and Percentage Changes" & series == "Index Numbers ;  All groups CPI ;  Australia ;"][,.(date,cpi_value = value)]
+setDT(cpi_for_avg)
+
+wpi_for_avg <- wpi[series == "Quarterly Index ;  Total hourly rates of pay excluding bonuses ;  Australia ;  Private and Public ;  All industries ;" & (date == "2004-12-01" | date == "2019-12-01") & series_type == "Original" & table_title == "Table 1. Total Hourly Rates of Pay Excluding Bonuses: Sector, Original, Seasonally Adjusted and Trend"][,.(date,wpi_value = value)]
+setDT(wpi_for_avg)
+
+avg_RW <- cpi_for_avg[wpi_for_avg,on=.(date)][,RW := wpi_value/cpi_value]
+
+avg_RW_growth <- (avg_RW$RW[2]/avg_RW$RW[1])^(1/15)-1
+
+cpi_growth[,dRW := RW - avg_RW_growth*100]
+
+ggplot(cpi_growth,aes(x=date,y=dRW)) + geom_line() + geom_hline(yintercept = 0)
+
+### Flow data ----
+## EU, UE, J2Js
+
+dfgf <- read_lfs_grossflows(weights = "previous")
+setDT(dfgf)
+dfgf[,year := year(date)][,month := month(date)]
+
+# March quarters
+#gf <- dfgf[month < 4] %>% group_by(year,lfs_current,lfs_previous) %>% summarise(number = sum(persons))
+
+#ggplot(gf %>% filter(year > "1999" & lfs_current == "Unemployed" & (lfs_previous == "Employed full-time" | lfs_previous == "Employed part-time")), aes(x=year,y=number,colour=lfs_previous)) + geom_line() # EU
+
+#ggplot(gf %>% filter(year > "1999" & lfs_previous == "Unemployed" & (lfs_current == "Employed full-time" | lfs_current == "Employed part-time")), aes(x=year,y=number,colour=lfs_current)) + geom_line() #UE
+
+# Add a quarter indicator and seasonally adjust to make quarterly series
+dfgf <- dfgf %>%
+  mutate(quarter = ceiling(month / 3))
+
+gf <- dfgf %>%
+  group_by(year, quarter, lfs_current, lfs_previous) %>%
+  summarise(number = sum(persons), .groups = 'drop') %>% filter(lfs_current == "Unemployed" & (lfs_previous == "Employed full-time" | lfs_previous == "Employed part-time"))
+
+gf <- gf %>%
+  mutate(date = as.Date(paste(year, (quarter - 1) * 3 + 1, 1, sep = "-")))
+
+gf <- gf %>%
+  group_by(lfs_current, lfs_previous) %>%
+  mutate(number_sa = {
+    ts_data <- ts(number, start = c(min(year), min(quarter)), frequency = 4)
+    final(seas(ts_data))
+  }) %>%
+  ungroup()
+setDT(gf)
+
+ggplot(gf[date < as.Date("2024-04-01")],aes(x=date,y=number_sa,colour=lfs_previous)) + geom_line()
+
+# Annual mobility indicators - only up to February 2023 so did not include
+#PJSM <- read_abs(cat_no = "6223.0")
+
+
+### Productivity ----
+
+GDP <- read_abs(cat_no = "5206.0") %>% filter(series_type == "Seasonally Adjusted") %>% filter(series == "Gross domestic product: Chain volume measures ;") %>% filter(table_title == "Table 1. Key National Accounts Aggregates") %>% select("date","series","value")
+
+Hours <- read_abs(cat_no = "5206.0") %>% filter(series_type == "Seasonally Adjusted") %>% filter(series == "Hours worked: Index ;") %>% filter(grepl('Table 1',table_title)) %>% drop_na %>% filter(unit == "Index Numbers") %>% select("date","value")
+
+colnames(Hours) <- c("date","Hours")
+
+LP <- left_join(LSQ,GDP,by="date") %>% mutate(Labour_Prod = value/QEmp) %>% select(date,Labour_Prod) %>% drop_na
+LP$Labour_Prod <- LP$Labour_Prod/LP[LP$date == "1980-03-01",]$Labour_Prod
+
+LP_hour <- left_join(Hours,GDP,by="date")%>% mutate(Hour_Labour_Prod = value/Hours) %>% select(date,Hour_Labour_Prod) %>% drop_na
+LP_hour$Hour_Labour_Prod <- LP_hour$Hour_Labour_Prod/LP_hour[LP_hour$date == "1980-03-01",]$Hour_Labour_Prod
+
+hp_lp_result <- hpfilter(LP$Labour_Prod, freq = 1600)
+
+LP$Trend <- hp_lp_result$trend
+
+hp_lph_result <- hpfilter(LP_hour$Hour_Labour_Prod, freq = 1600)
+
+LP_hour$Hour_Trend <- hp_lph_result$trend
+
+LP_full <- left_join(LP,LP_hour,by="date")
+
+LP_full <- LP_full %>% pivot_longer(!date)
+
+ggplot(LP_full,aes(x=date,y=value[,1],colour=name)) + geom_line() #+ plot_label("Hourly Productivity",y=1.8,x="1985-03-01",colour=palette_e61(4)[2]) + plot_label("Output per employee",y=1.6,x="1985-03-01",colour=palette_e61(4)[3]) + labs_e61(title = "Labour Productivity", subtitle = "Index, 1980 = 1, HP smoothing parameter = 1600",y="",x="") + scale_y_continuous_e61(limits = c(0.9,2,0.2),y_top = FALSE)
+
+# LP growth
+
+setDT(LP)
+LP$Trend <- data.table(LP$Trend)
+LP[,lag_Trend := shift(Trend,4)][,LP_trend_growth := Trend/lag_Trend - 1]
+LP[,lag_LP := shift(Labour_Prod,4)][,LP_growth := Labour_Prod/lag_LP - 1]
+
+ggplot(LP[date > as.Date("2012-12-30")],aes(x=date,y=LP_trend_growth)) + geom_line()
+ggplot(LP[date > as.Date("2012-12-30")],aes(x=date,y=LP_growth)) + geom_line()
+
+ggplot(melt(LP[date > as.Date("2012-12-30"),.(date,LP_growth,LP_trend_growth)],id="date"),aes(x=date,y=value,colour=variable)) + geom_line()
+
+### Unemployment rate ----
+# 
+# UR <- LSQ %>% select(date,UR)
+# setDT(UR)
+
+UR <- LS %>% filter(series_type == "Seasonally Adjusted" | series_type == "Trend") %>% filter(table_title == "Table 1. Labour force status by Sex, Australia - Trend, Seasonally adjusted and Original")  %>% filter(series == "Unemployment rate ;  Persons ;") %>% select("date","series_type","value")
+setDT(UR)
+
+avg_UR <- mean(UR[date > as.Date("2004-12-30") & date < as.Date("2020-01-01")]$value)
+
+```
+
+# Current Australian Labour Market
+
+## Outline
+
+Goal of this presentation is to understand the current state of the (post-COVID) Australian labour market.  Key takeaways:
+
+- Labour market remains tight - but signs of weakness are appearing.
+- However, there are significant wage and productivity puzzles.
+
+These two facts suggest that labour market search flows are likely to cool - but the outlook for wages remain uncertain.
+
+
+## Labour market is softening - but remains tight
+
+```{r URPR, echo = FALSE}
+
+UR_plot <- ggplot(UR[date > as.Date("2012-12-30")], aes(x = date, y = value, colour = series_type)) +
+  geom_line(linewidth = 1) +
+  geom_hline(yintercept = avg_UR, linetype = "dashed", color = "black") +
+  labs(
+    title = "Unemployment rate",
+    subtitle = "Monthly, seasonally adjusted",
+    y="",
+    x="",
+    caption = "ABS"
+  ) +
+  theme_classic() +
+  scale_colour_manual(values = c("Seasonally Adjusted"="red","Trend"="blue")) +
+  theme(legend.position = "none") +
+  annotate("text", x = as.Date("2013-01-01"), y = 7.2, label = "Seasonally Adjusted", color = "red", hjust = 0) +
+  annotate("text", x = as.Date("2013-01-01"), y = 7.2 - 0.5, label = "Trend", color = "blue", hjust = 0) +
+  annotate("text", x = as.Date("2013-01-01"), y = avg_UR - 0.5, label = "2005-2019 UR Average", color = "black", hjust = 0) + scale_y_continuous(labels = scales::percent_format(scale = 1),limits = c(3,8))
+
+
+PR_plot <- ggplot(LS_part[date > as.Date("2012-12-30")],aes(x=date,y=value,colour=series)) + geom_line(linewidth = 1) + geom_hline(yintercept = avg_PR,linetype = "dashed") + 
+  theme_classic() +
+  theme(legend.position = "none") +
+  scale_colour_manual(values = c("Participation rate ;  Persons ;" = "red")) +
+  annotate("text", x = as.Date("2013-01-01"), y = avg_PR + 1.2, label = "2005-2019 PR Average", color = "black", hjust = 0) +
+  annotate("text", x = as.Date("2013-01-01"), y = avg_PR + 1.7, label = "Participation Rate", color = "red", hjust = 0) +
+  scale_y_continuous(labels = scales::percent_format(scale = 1),limits = c(62,68)) +
+  labs(title = "Participation Rate",subtitle = "Monthly, seasonally adjusted",y="",x="",caption="ABS")
+
+#grid.arrange(UR_plot, PR_plot, tight_plot, tight_plot, ncol = 2, nrow = 2) # Will add participation, J2J, UR
+grid.arrange(UR_plot, PR_plot, ncol = 2, nrow = 1) 
+
+
+```
+
+## Labour market is softening - but remains tight
+
+```{r tightness, echo = FALSE}
+
+flow_plot <- ggplot(gf[date < as.Date("2024-04-01") & date > as.Date("2012-12-30")],aes(x=date,y=number_sa,colour=lfs_previous)) + geom_line(linewidth = 1) +
+  theme_classic() +
+  scale_colour_manual(values = c("Employed full-time" = "red","Employed part-time" = "blue")) +
+  theme(legend.position = "none") + labs(title = "Transition to Unemployment",subtitle="Quarterly (000s), seasonally adjusted",y="",x="",caption="ABS") +
+  annotate("text", x = as.Date("2013-01-01"), y = 180, label = "From full-time", color = "red", hjust = 0) +
+  annotate("text", x = as.Date("2013-01-01"), y = 210, label = "From part-time", color = "blue", hjust = 0)
+  
+
+tight_plot <- ggplot(vu[date > as.Date("1999-12-01")],aes(x=date,y=vu*1000)) + geom_line(linewidth = 1,colour="red") + theme_classic() + labs(
+  title = "'Tightness' highly elevated",
+  subtitle = "Vacancies per unemployed person",
+  y="",
+  x="",
+  caption = c("ABS")
+) + geom_hline(yintercept = average_vu_pc, linetype = "dashed", color = "black") +
+  theme(legend.position = "none") +
+  annotate("text", x = as.Date("2000-01-01"), y = 0.6, label = "V/U ratio", color = "red", hjust = 0) +
+  annotate("text", x = as.Date("2000-01-01"), y = 0.5, label = "2000-2019 average", color = "black", hjust = 0)
+  
+
+grid.arrange(flow_plot, tight_plot, ncol = 2, nrow = 1) 
+
+
+```
+
+## Firm demand the main driver
+
+```{r vacancy-unemployment,echo=FALSE}
+vu_plot <- ggplot(v[date > as.Date("1999-12-01")],aes(x=date,y=value,colour=variable)) + geom_line(linewidth=1) + theme_classic() + labs(
+  title = "Vacancies and the unemployed",
+  subtitle = "Vacancy and unemployment numbers (000s)",
+  y="",x="",
+  caption = c("ABS"),
+  footnote = "Job Vacancies Survey"
+) +  scale_colour_manual(values = c("v" = "red","Unemp" = "blue")) + theme(legend.position = "none") +
+  annotate("text", x = as.Date("2000-01-01"), y = 300, label = "Vacancies", color = "red", hjust = 0) +
+  annotate("text", x = as.Date("2000-01-01"), y = 800, label = "Unemployed", color = "blue", hjust = 0) 
+  
+
+v_ind_plot <- ggplot(labour_acc,aes(x=date,y=agg_vac_rate,colour=agg_ind,linetype=agg_ind,linewidth = agg_ind)) + geom_line()+ theme_classic() + labs(
+  title = "Vacancy Rate by Industry",
+  subtitle = "Vacancies divided by desired jobs",
+  y="",
+  caption = c("ABS"),
+  footnote = "Based on experimental Labour Accounts. Similar trends hold using the general vacancy and employment data."
+) + scale_y_continuous(labels = scales::percent_format()) + #scale_colour_viridis(discrete = TRUE,option="D")
+  scale_colour_manual(values = c("Total"="black","Sales" = "green","Private Services"="blue","Primary and Secondary" = "cyan1","Other Services" = "pink","Public Services"="red")) +
+  scale_linetype_manual(values = c("Total"=1,"Sales" = 1,"Private Services"=2,"Primary and Secondary" = 2,"Other Services" = 2,"Public Services"=1)) +
+  scale_linewidth_manual(values = c("Total"=1,"Sales" = 0.2,"Private Services"=0.2,"Primary and Secondary" = 0.2,"Other Services" = 0.2,"Public Services"=0.2)) + theme(legend.position = "none") +
+  annotate("text", x = as.Date("2013-01-01"), y = 0.04, label = "Private Services", color = "blue", hjust = 0) +
+  annotate("text", x = as.Date("2013-01-01"), y = 0.038, label = "Sales", color = "green", hjust = 0) +
+  annotate("text", x = as.Date("2013-01-01"), y = 0.036, label = "Other Services", color = "pink", hjust = 0) +
+  annotate("text", x = as.Date("2013-01-01"), y = 0.034, label = "Primary and Secondary", color = "cyan1", hjust = 0) +
+  annotate("text", x = as.Date("2013-01-01"), y = 0.032, label = "Public Services", color = "red", hjust = 0) +
+  annotate("text", x = as.Date("2013-01-01"), y = 0.030, label = "Total", color = "black", hjust = 0) 
+  
+
+grid.arrange(vu_plot, v_ind_plot, ncol = 2, nrow = 1)
+
+```
+
+## But why have firms been listing vacancies with weak productivity?
+
+```{r J2J,echo=FALSE}
+
+ggplot(melt(labour_acc[industry == "Total All Industries" & date > as.Date("2012-12-30")][,.(date,vac_rate)][LP[date > as.Date("2012-12-30"),.(date,LP_growth,LP_trend_growth)],on=.(date)],id="date"),aes(x=date,y=value,colour=variable,linetype=variable)) + geom_line() + theme_classic() +theme(legend.position = "none") +
+  labs(title = "Labour Productivity and Vacancy Rates",subtitle="Quarterly value",x="",y="",caption="ABS") +
+  scale_colour_manual(values=c("vac_rate"="red","LP_trend_growth"="blue","LP_growth"="aquamarine2")) +
+  scale_linetype_manual(values =c("vac_rate"=1,"LP_trend_growth"=1,"LP_growth"=2)) +
+  annotate("text", x = as.Date("2013-01-01"), y = -0.005, label = "Vacancy Rate", color = "red", hjust = 0) +
+  annotate("text", x = as.Date("2013-01-01"), y = -0.015, label = "Labour Productivity Growth", color = "aquamarine2", hjust = 0) +
+  annotate("text", x = as.Date("2013-01-01"), y = 0.035, label = "Trend Labour Productivity Growth", color = "blue", hjust = 0) + scale_y_continuous(labels=scales::percent_format()) + geom_hline(yintercept = 0)
+
+
+
+```
+
+
+## And why are households so willing to work with lower real wages?
+
+```{r puzzles,echo=FALSE}
+
+graph8_dt <- LS_part[date > as.Date("2012-12-30"),.(date,dPR)][cpi_growth,on=.(date)][,.(date,dPR,dRW)]
+
+ggplot(melt(graph8_dt,id = "date"),aes(x=date,y=value,colour=variable))+geom_line(linewidth=1) + geom_hline(yintercept = 0) + theme_classic() + labs(title="Worker outcomes relative to pre-COVID average",subtitle="Difference from 2005-2019 average",y="",x="",caption="ABS") +theme(legend.position = "none") +
+  scale_colour_manual(values=c("dPR"="red","dRW"="blue")) + 
+  annotate("text", x = as.Date("2013-01-01"), y = 1, label = "Participation Rate", color = "red", hjust = 0) +
+  annotate("text", x = as.Date("2013-01-01"), y = -2, label = "Real Wage Growth", color = "blue", hjust = 0) +
+  scale_y_continuous(labels = scales::percent_format(scale = 1),limits = c(-6,2))
+  
+
+
+#ggplot(mult_job,aes(x=date,y=mult_job_rate)) + geom_line()
+
+
+```
+
+
+# Explaining these puzzles
+
+
+## Potential explanations 
+
+Three sets of explanations. All suggest that labour market turnover is set to cool. However, have opposite implications for measured wages.
+
+- **Reallocation**: Change in job requirements post-COVID - wages will rise as job tenure rises.
+- **Amenities**: Households willing to trade wages for flexibility - no pressure on wages.
+- **Cost of living**: Rising prices encouraging people to work - "money illusion" will pass leading to wage gains.
+
+
+# Summing up
+
+## Summary
+
+There are signs the labour market is cooling, with search behaviour declining by firms while a rising number of individuals are finding themselves out of work.
+
+But in historic terms the labour market is still very tight.
+
+Labour market turnover will continue to cool, but the outlook for wages remains uncertain.
