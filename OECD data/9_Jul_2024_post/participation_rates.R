@@ -462,3 +462,57 @@ save_e61("plot4.png",res=2,auto_scale = FALSE)
 #        x = "Time",
 #        y = "Outcome Difference",
 #        color = "Series")
+
+## Add dependence information
+
+data_url <- "https://sdmx.oecd.org/public/rest/data/OECD.ELS.SPD,DSD_PAG@DF_PAG,/JPN+USA+NZL+LUX+KOR+AUS.A.OAWAR....?startPeriod=2002&endPeriod=2022"
+
+response <- GET(data_url)
+
+if (response$status_code == 200) {
+  # Parse the JSON content
+  raw_content <- content(response, "text")
+  data2 <- fromJSON(raw_content, flatten = TRUE)
+} else {
+  stop("Failed to fetch data from the OECD API")
+}
+
+# Print the structure of the response
+str(data2)
+
+data2$dataSets
+
+data2$structure$dimensions$series
+
+# Extract the data we are after as "result"
+data_sets2 <- data2$dataSets
+result_dependence <- data.frame()
+
+for (var_name in names(data_sets2)) {
+  if (grepl("series", var_name) && grepl("observations", var_name)) {
+    series_index <- sub("series\\.(\\d+):.*", "\\1", var_name)
+    obs_number <- sub(".*\\.observations\\.(\\d+)", "\\1", var_name)
+    series_id <- sub("series\\.\\d+:(.*)\\.observations\\.\\d+", "\\1", var_name)
+    observations <- data_sets2[[var_name]]
+    value <- observations[[1]][1]
+    time <- as.numeric(obs_number)
+    result_dependence <- rbind(result_dependence, data.frame(Series = as.numeric(series_index), Time = time, Value = value, SeriesID = series_id))
+  }
+}
+
+result_dependence
+
+setDT(result_dependence)
+
+time_id2 <- as.data.table(data2$structure[[3]]$observation$values)[,Time := 0:3][,.(Time,year = id)]
+
+result_dependence <- time_id2[result_dependence,on=.(Time)]
+
+country_id2 <- data.table(country = data2$structure$dimensions$series$values[[1]]$name,Series = 0:5)
+result_dependence <- country_id2[result_dependence,on=.(Series)]
+
+result_plot <- result_dependence[year %in% c(2002,2022)]
+
+ggplot(result_dependence[year %in% c(2002,2022)],aes(x=country,y=Value/100,fill=year)) + geom_col(position="dodge") + scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,0.62,0.1),y_top=FALSE) + labs_e61(title = "Old age dependency ratio",subtitle = "Population over 65 relative to WAP",y="",x="",)+theme_e61_alt() + coord_flip()
+
+save_e61("plot4.png",res=2,auto_scale = FALSE)
