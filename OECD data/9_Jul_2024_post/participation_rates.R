@@ -51,7 +51,6 @@ if (response$status_code == 200) {
   stop("Failed to fetch data from the OECD API")
 }
 
-# Print the structure of the response
 str(data)
 
 data$dataSets
