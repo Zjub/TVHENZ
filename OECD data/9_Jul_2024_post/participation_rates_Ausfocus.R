@@ -321,72 +321,87 @@ syn_data <- dep_ratio_OECD[syn_data,on=.(Unit,Time)]
 ## New SC exercise
 # Set treatment year
 
-treat_year <- 2014
+plots <- list()
 
-pre_treatment_period <- seq(1990,treat_year,by=1)
-post_treatment_period <- seq(treat_year + 1,2023,by=1)
+years <- c(2000,2008,2014)
 
-treated_unit <- 23 # The number referring to "Australia"
+for(i in 1:3){
+  
+  treat_year <- years[i]
+  
+  pre_treatment_period <- seq(1990,treat_year,by=1)
+  post_treatment_period <- seq(treat_year + 1,2023,by=1)
+  
+  treated_unit <- 23 # The number referring to "Australia"
+  
+  dataprep.out <- dataprep(
+    foo = syn_data,
+    predictors = c("Outcome", "DR"),  # Change here is to include "DR" as a predictor
+    predictors.op = "mean",
+    time.predictors.prior = pre_treatment_period,
+    special.predictors = list(
+      list("Outcome", pre_treatment_period, "mean"),
+      list("DR", pre_treatment_period, "mean")  # Also need to include "DR" to special predictors
+    ),
+    dependent = "Outcome",
+    unit.variable = "Series",
+    time.variable = "Time",
+    treatment.identifier = treated_unit,
+    controls.identifier = setdiff(unique(syn_data$Series), treated_unit),
+    time.optimize.ssr = pre_treatment_period,
+    time.plot = c(pre_treatment_period, post_treatment_period)
+  )
+  
+  synth.out <- synth(dataprep.out)
+  
+  synth.tab <- synth.tab(dataprep.res = dataprep.out, synth.res = synth.out)
+  print(synth.tab)
+  
+  weights <- synth.tab$tab.w
+  setDT(weights)
+  weights[w.weights == max(synth.tab$tab.w$w.weights)]$unit.names
+  
+  weights[order(w.weights)]
+  
+  syn_data[Series == weights[w.weights == max(synth.tab$tab.w$w.weights)]$unit.names]
+  
+  # Ensure synth.out$solution.w is a numeric vector
+  Y0plot_numeric <- as.matrix(dataprep.out$Y0plot)
+  solution_w_numeric <- as.numeric(synth.out$solution.w)
+  
+  # Perform the matrix multiplication
+  synthetic <- Y0plot_numeric %*% solution_w_numeric
+  
+  # Extract treated unit data
+  treated <- as.numeric(dataprep.out$Y1plot)
+  
+  path.plot(synth.res = synth.out,
+            dataprep.res = dataprep.out,
+            Ylab = "",
+            Xlab = "year",
+            Ylim = c(70,82),
+            Legend = c("US LFP","Synthetic US"),
+            Legend.position = "bottomright"
+  )
+  
+  
+  plot_data <- data.frame(
+    Time = as.numeric(rownames(Y0plot_numeric)),
+    Treated = treated,
+    Synthetic = synthetic
+  )
+  setDT(plot_data)
+  
+  
+  syn_data[is.na(DR)]
+  
+  ggplot(country_id[weights,on=.(Series=unit.names)][order(-w.weights)],aes(x=country,y=w.weights)) + geom_col() + coord_flip() + labs_e61(title = "Weights of varying nations",y="",x="") + scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,0.06,0.02)) + theme_e61_alt()
+  
+  graph_withcontrols <- data.table::melt(plot_data,id.vars = "Time")
+  
+  p <- ggplot(graph_withcontrols,aes(x=Time,y=value,colour=variable)) + geom_line() + labs_e61(title = "Synthetic Australia",subtitle=paste0("Treatment year = ",years[i]),sources = c("ABS","e61"),y="%") + scale_y_continuous_e61(labels=scales::percent_format(scale=1),limits=c(70,82,2)) + geom_vline(xintercept = treat_year,linetype="dashed")
+  
+  plots[[i]] <- p
+}
 
-dataprep.out <- dataprep(
-  foo = syn_data,
-  predictors = c("Outcome", "DR"),  # Change here is to include "DR" as a predictor
-  predictors.op = "mean",
-  time.predictors.prior = pre_treatment_period,
-  special.predictors = list(
-    list("Outcome", pre_treatment_period, "mean"),
-    list("DR", pre_treatment_period, "mean")  # Also need to include "DR" to special predictors
-  ),
-  dependent = "Outcome",
-  unit.variable = "Series",
-  time.variable = "Time",
-  treatment.identifier = treated_unit,
-  controls.identifier = setdiff(unique(syn_data$Series), treated_unit),
-  time.optimize.ssr = pre_treatment_period,
-  time.plot = c(pre_treatment_period, post_treatment_period)
-)
-
-synth.out <- synth(dataprep.out)
-
-synth.tab <- synth.tab(dataprep.res = dataprep.out, synth.res = synth.out)
-print(synth.tab)
-
-weights <- synth.tab$tab.w
-setDT(weights)
-weights[w.weights == max(synth.tab$tab.w$w.weights)]$unit.names
-
-weights[order(w.weights)]
-
-syn_data[Series == weights[w.weights == max(synth.tab$tab.w$w.weights)]$unit.names]
-
-# Ensure synth.out$solution.w is a numeric vector
-Y0plot_numeric <- as.matrix(dataprep.out$Y0plot)
-solution_w_numeric <- as.numeric(synth.out$solution.w)
-
-# Perform the matrix multiplication
-synthetic <- Y0plot_numeric %*% solution_w_numeric
-
-# Extract treated unit data
-treated <- as.numeric(dataprep.out$Y1plot)
-
-path.plot(synth.res = synth.out,
-          dataprep.res = dataprep.out,
-          Ylab = "",
-          Xlab = "year",
-          Ylim = c(70,82),
-          Legend = c("Aussie LFP","Synthetic Aus"),
-          Legend.position = "bottomright"
-)
-
-
-plot_data <- data.frame(
-  Time = as.numeric(rownames(Y0plot_numeric)),
-  Treated = treated,
-  Synthetic = synthetic
-)
-
-
-syn_data[is.na(DR)]
-
-ggplot(country_id[weights,on=.(Series=unit.names)][order(-w.weights)],aes(x=country,y=w.weights)) + geom_col() + coord_flip() + labs_e61(title = "Weights of varying nations",y="",x="") + scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,0.06,0.02)) + theme_e61_alt()
-
+save_e61(plotlist = plots,"SC_Aussie.svg")
