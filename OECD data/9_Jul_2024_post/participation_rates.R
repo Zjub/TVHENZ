@@ -222,7 +222,7 @@ syn_data <- rbind(syn_data,replacement)
 pre_treatment_period <- seq(1990,2008,by=1)
 post_treatment_period <- seq(2009,2023,by=1)
 
-treated_unit <- 21 # The number referring to "United States"
+treated_unit <- 22 # The number referring to "United States"
 
 dataprep.out <- dataprep(
   foo = syn_data,
@@ -515,3 +515,114 @@ result_plot <- result_dependence[year %in% c(2002,2022)]
 ggplot(result_dependence[year %in% c(2002,2022)],aes(x=country,y=Value/100,fill=year)) + geom_col(position="dodge") + scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,0.62,0.1),y_top=FALSE) + labs_e61(title = "Old age dependency ratio",subtitle = "Population over 65 relative to WAP",y="",x="",)+theme_e61_alt() + coord_flip()
 
 save_e61("plot4.png",res=2,auto_scale = FALSE)
+
+############### 30 July: Add version conditional on dependency ratio for Zach
+
+
+## Our world in data makes up for the gaps in the OECD data.  The website is here: https://ourworldindata.org/age-structure
+
+dep_ratio <- fread("age-dependency-ratio-of-working-age-population.csv")
+setDT(dep_ratio)
+
+countries <- unique(syn_data$Unit)
+
+length(countries)
+
+length(unique(dep_ratio[V1 %in% countries]$V1)) # One country will be missed - South Korea
+
+length(unique(dep_ratio[V1 %in% c(countries,"South Korea")]$V1))
+
+dep_ratio_OECD <- dep_ratio[V1 %in% c(countries,"South Korea")]
+colnames(dep_ratio_OECD) <- c("Unit","Code","Time","DR")
+dep_ratio_OECD[Unit == "South Korea",Unit := "Korea"]
+
+# Merge dependency ratios with our main dataset
+syn_data <- dep_ratio_OECD[syn_data,on=.(Unit,Time)]
+
+## New SC exercise
+# Set treatment year
+
+plots <- list()
+
+years <- c(2000,2008,2014)
+
+for(i in 1:3){
+  
+  treat_year <- years[i]
+  
+  pre_treatment_period <- seq(1990,treat_year,by=1)
+  post_treatment_period <- seq(treat_year + 1,2023,by=1)
+  
+  treated_unit <- 22 # The number referring to "Australia"
+  
+  dataprep.out <- dataprep(
+    foo = syn_data,
+    predictors = c("Outcome", "DR"),  # Change here is to include "DR" as a predictor
+    predictors.op = "mean",
+    time.predictors.prior = pre_treatment_period,
+    special.predictors = list(
+      list("Outcome", pre_treatment_period, "mean"),
+      list("DR", pre_treatment_period, "mean")  # Also need to include "DR" to special predictors
+    ),
+    dependent = "Outcome",
+    unit.variable = "Series",
+    time.variable = "Time",
+    treatment.identifier = treated_unit,
+    controls.identifier = setdiff(unique(syn_data$Series), treated_unit),
+    time.optimize.ssr = pre_treatment_period,
+    time.plot = c(pre_treatment_period, post_treatment_period)
+  )
+  
+  synth.out <- synth(dataprep.out)
+  
+  synth.tab <- synth.tab(dataprep.res = dataprep.out, synth.res = synth.out)
+  print(synth.tab)
+  
+  weights <- synth.tab$tab.w
+  setDT(weights)
+  weights[w.weights == max(synth.tab$tab.w$w.weights)]$unit.names
+  
+  weights[order(w.weights)]
+  
+  syn_data[Series == weights[w.weights == max(synth.tab$tab.w$w.weights)]$unit.names]
+  
+  # Ensure synth.out$solution.w is a numeric vector
+  Y0plot_numeric <- as.matrix(dataprep.out$Y0plot)
+  solution_w_numeric <- as.numeric(synth.out$solution.w)
+  
+  # Perform the matrix multiplication
+  synthetic <- Y0plot_numeric %*% solution_w_numeric
+  
+  # Extract treated unit data
+  treated <- as.numeric(dataprep.out$Y1plot)
+  
+  path.plot(synth.res = synth.out,
+            dataprep.res = dataprep.out,
+            Ylab = "",
+            Xlab = "year",
+            Ylim = c(70,82),
+            Legend = c("US LFP","Synthetic US"),
+            Legend.position = "bottomright"
+  )
+  
+  
+  plot_data <- data.frame(
+    Time = as.numeric(rownames(Y0plot_numeric)),
+    Treated = treated,
+    Synthetic = synthetic
+  )
+  setDT(plot_data)
+  
+  
+  syn_data[is.na(DR)]
+  
+  ggplot(country_id[weights,on=.(Series=unit.names)][order(-w.weights)],aes(x=country,y=w.weights)) + geom_col() + coord_flip() + labs_e61(title = "Weights of varying nations",y="",x="") + scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,0.06,0.02)) + theme_e61_alt()
+  
+  graph_withcontrols <- data.table::melt(plot_data,id.vars = "Time")
+  
+  p <- ggplot(graph_withcontrols,aes(x=Time,y=value,colour=variable)) + geom_line() + labs_e61(title = "Synthetic United States",subtitle=paste0("Treatment year = ",years[i]),sources = c("ABS","e61"),y="%") + scale_y_continuous_e61(labels=scales::percent_format(scale=1),limits=c(70,82,2)) + geom_vline(xintercept = treat_year,linetype="dashed")
+
+  plots[[i]] <- p
+}
+
+save_e61(plotlist = plots,"SC_US.svg")

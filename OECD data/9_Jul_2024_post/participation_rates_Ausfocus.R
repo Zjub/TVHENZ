@@ -387,3 +387,6 @@ plot_data <- data.frame(
 
 
 syn_data[is.na(DR)]
+
+ggplot(country_id[weights,on=.(Series=unit.names)][order(-w.weights)],aes(x=country,y=w.weights)) + geom_col() + coord_flip() + labs_e61(title = "Weights of varying nations",y="",x="") + scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,0.06,0.02)) + theme_e61_alt()
+
