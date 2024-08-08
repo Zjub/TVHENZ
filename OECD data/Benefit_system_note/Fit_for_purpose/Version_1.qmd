@@ -1,0 +1,142 @@
+---
+title: "Is the Australian Benefit System fit for purpose?"
+format: 
+  html:
+    css: styles.css
+editor: visual 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
+------------------------------------------------------------------------
+
+```{r}
+#| echo: false
+
+library(cli)
+library(tidyverse)
+library(data.table)
+library(theme61)
+library(tidyr)
+library(readxl)
+library(gghighlight)
+library(readabs)
+library(OECD)
+library(jsonlite)
+library(httr)
+library(Synth)
+library(knitr)
+```
+
+## Summary
+
+XXX\.
+
+## Introduction
+
+The social safety net in Australia has remained unchanged in terms of its broad principles since its inception in the 1947 Social Security Act (cite). In broad terms the social security system intends to XXX
+
+Two areas of reform over the past thirty years have been with regards to an increased emphasis on work through mutual obligations and the growth in private employment services, alongside a desire for increased system simplicity following the two McClure reports (cite).
+
+In order to evaluate whether a significantly different system would be preferable, this document outlines the hypothetical design of varying income support systems, the policy differences these systems involve, and the international difference in these systems.
+
+We can then use Australian and international evidence to form a view on the trade-offs inherent in a significant reform to the Australian safety net - and where more work is necessary.
+
+## Hypothetical design
+
+### Insurance or a minimum floor
+
+XXX \[UI v UA v UBI\]
+
+```{r}
+#| echo: false
+
+data <- data.frame(
+  Column1 = c("Value 1", "Value 4", "Value 7"),
+  Column2 = c("Value 2", "Value 5", "Value 8"),
+  Column3 = c("Value 3", "Value 6", "Value 9")
+)
+
+# Generate the table
+kable(data, caption = "Example Table Using R")
+```
+
+#### The income unit
+
+XXX
+
+### The Iron Triangle
+
+XXX
+
+### Rationale for varying systems
+
+XXX
+
+## International system comparison
+
+### Differences in replacement rates
+
+XXX
+
+### Differences in non-take-up conditions
+
+XXX
+
+### Differences in coverage
+
+XXX
+
+### Differences in outcomes
+
+#### Job finding and unemployment
+
+XX
+
+#### Wage scarring
+
+XX
+
+![Test](Inv_vol_ES.png){alt="Test" width="300"}
+
+## Evidence on system choices
+
+### The implications of mutual obligations
+
+XXX
+
+### The implications of the payment rate
+
+XXX
+
+### The implications of benefit exhaustion/tapering
+
+XXX
+
+### The effect of a UBI
+
+A UBI differs from the Australian system in the following ways:
+
+-   XXX
+
+-   XXX
+
+-   XXX
+
+:
+
+```{r}
+#| echo: false
+1 + 1
+```
+
+XXX
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).

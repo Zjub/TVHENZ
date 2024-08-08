@@ -1,0 +1,14 @@
+
+/*body {
+    background-color: rgba(144, 238, 144, 0.5); /* Light green color with 50% opacity */
+/*} */
+
+
+body {
+    background-color: #f8f8f8; /* Off-white color */
+}
+
+.center{
+  margin: 0!important;
+  height: 30px;
+}
