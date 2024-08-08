@@ -63,9 +63,13 @@ data <- data.frame(
 kable(data, caption = "Example Table Using R")
 ```
 
+In terms of the **minimum income standard** this reflects in the necessary income that is required to meet this standard. The nature of the life event (i.e. disability, temporary illness, redundancy, or voluntary unemployment) and the structure of the family
+
+In terms of **insurance** this reflects in XXX
+
 #### The income unit
 
-XXX
+The income unit reflects a set of individuals who share resources, and so may be able to consume more than sum of their private incomes would suggest. The primary sharing that is often considered is intra-household sharing, or what is termed **economies of scale in the household**.
 
 ### The Iron Triangle
 
