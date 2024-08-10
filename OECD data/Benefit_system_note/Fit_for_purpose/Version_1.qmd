@@ -3,7 +3,26 @@ title: "Is the Australian Benefit System fit for purpose?"
 format: 
   html:
     css: styles.css
-editor: visual 
+    toc: true
+    number-sections: true
+    self-contained: true
+  pdf:
+    toc: true
+    number-sections: true
+  epub:
+    toc: true
+    number-sections: true
+site:
+  toc: true
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+    right:
+      - text: Download
+        href: download.pdf
+editor: visual
+bibliography: references.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -30,11 +49,11 @@ library(Synth)
 library(knitr)
 ```
 
-## Summary
+# Summary
 
 XXX\.
 
-## Introduction
+# Introduction
 
 The social safety net in Australia has remained unchanged in terms of its broad principles since its inception in the 1947 Social Security Act (cite). In broad terms the social security system intends to XXX
 
@@ -44,9 +63,17 @@ In order to evaluate whether a significantly different system would be preferabl
 
 We can then use Australian and international evidence to form a view on the trade-offs inherent in a significant reform to the Australian safety net - and where more work is necessary.
 
-## Hypothetical design
+# Hypothetical design
 
-### Insurance or a minimum floor
+## Insurance or a flat payment
+
+The Australian social security system was based on a similar principle to systems implements in the United Kingdom and New Zealand at the same time. Following the Beveridge Report's indication for the need for **social insurance** to prevent hardship and encourage participation following World War II, Australia introduced the Social Security Act.
+
+This act established a **flat rate** and **non-contributory** payment, with the rate paid varying due to the nature of the hardship experienced. This also took responsibility for such schemes largely away from individual States and thereby standardised treatment across Australia.
+
+The element of unemployment benefits that reflects a flat rate, non-contributory, payment is typically called **unemployment assistance** [@oecd2024]. XXX
+
+Although this sounds similar to a **universal basic income** there are key distinctions.
 
 XXX \[UI v UA v UBI\]
 
@@ -54,9 +81,10 @@ XXX \[UI v UA v UBI\]
 #| echo: false
 
 data <- data.frame(
-  Column1 = c("Value 1", "Value 4", "Value 7"),
-  Column2 = c("Value 2", "Value 5", "Value 8"),
-  Column3 = c("Value 3", "Value 6", "Value 9")
+  Treatment = c("Payment relative to income", "Employee contributions", "Individual Means testing","Family based Means testing","Job Search obligations"),
+  `Unemployment Assistance` = c("Flat Rate", "None", "Value 8", "Value 8", "Value 8"),
+  `Univeral Basic Income` = c("Flat Rate", "None", "Value 9", "Value 8", "Value 8"),
+  `Unemployment Insurance` = c("Value 3", "Value 6", "Value 9", "Value 8", "Value 8")
 )
 
 # Generate the table
@@ -67,59 +95,67 @@ In terms of the **minimum income standard** this reflects in the necessary incom
 
 In terms of **insurance** this reflects in XXX
 
-#### The income unit
+### The income unit
 
 The income unit reflects a set of individuals who share resources, and so may be able to consume more than sum of their private incomes would suggest. The primary sharing that is often considered is intra-household sharing, or what is termed **economies of scale in the household**.
 
-### The Iron Triangle
+## The Iron Triangle
 
 XXX
 
-### Rationale for varying systems
+## Rationale for varying systems
 
 XXX
 
-## International system comparison
+# International system comparison
 
-### Differences in replacement rates
+For comparing XX
 
-XXX
+## Differences in fiscal expenditure and poverty rates
 
-### Differences in non-take-up conditions
-
-XXX
-
-### Differences in coverage
+As noted above, the key advantage of the Australian social support system is **targeting efficiency** - or that it reduces poverty at the lowest fiscal cost.
 
 XXX
 
-### Differences in outcomes
+## Differences in replacement rates
 
-#### Job finding and unemployment
+XXX
+
+## Differences in non-take-up conditions
+
+XXX
+
+## Differences in coverage
+
+XXX
+
+## Differences in outcomes
+
+### Job finding and unemployment
 
 XX
 
-#### Wage scarring
+### Wage scarring
 
 XX
 
-![Test](Inv_vol_ES.png){alt="Test" width="300"}
+![Test](Inv_vol_ES.png){width="300"}
 
-## Evidence on system choices
+# Evidence on system choices
 
-### The implications of mutual obligations
-
-XXX
-
-### The implications of the payment rate
+## The implications of mutual obligations
 
 XXX
 
-### The implications of benefit exhaustion/tapering
+## The implications of the payment rate
 
 XXX
 
-### The effect of a UBI
+## The implications of benefit exhaustion/tapering
+
+XXX
+
+## The effect of a UBI
 
 A UBI differs from the Australian system in the following ways:
 
@@ -128,19 +164,3 @@ A UBI differs from the Australian system in the following ways:
 -   XXX
 
 -   XXX
-
-:
-
-```{r}
-#| echo: false
-1 + 1
-```
-
-XXX
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).

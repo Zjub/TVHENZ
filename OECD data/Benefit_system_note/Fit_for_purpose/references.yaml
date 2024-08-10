@@ -1,0 +1,13 @@
+- id: oecd2024
+  author:
+    - family: OECD
+      given: 
+  issued:
+    year: 2024
+  title: Income Support, Redistribution, and Work Incentives
+  URL: https://www.oecd.org/en/topics/income-support-redistribution-and-work-incentives.html
+  accessed:
+    year: 2024
+    month: 8
+    day: 8
+  type: webpage
