@@ -81,10 +81,10 @@ XXX \[UI v UA v UBI\]
 #| echo: false
 
 data <- data.frame(
-  Treatment = c("Payment relative to income", "Employee contributions", "Individual Means testing","Family based Means testing","Job Search obligations"),
-  `Unemployment Assistance` = c("Flat Rate", "None", "Value 8", "Value 8", "Value 8"),
-  `Univeral Basic Income` = c("Flat Rate", "None", "Value 9", "Value 8", "Value 8"),
-  `Unemployment Insurance` = c("Value 3", "Value 6", "Value 9", "Value 8", "Value 8")
+  Treatment = c("Payment relative to income", "Employee contributions", "Individual Means testing","Family based Means testing","Job Search obligations","Time limitations"),
+  `Unemployment Assistance` = c("Flat Rate", "None", "Value 8", "Value 8", "Value 8","Limited"),
+  `Univeral Basic Income` = c("Flat Rate", "None", "Value 9", "Value 8", "Value 8","None"),
+  `Unemployment Insurance` = c("Relative to prio Income", "Levy", "Value 9", "Value 8", "Value 8","Between X and X")
 )
 
 # Generate the table
