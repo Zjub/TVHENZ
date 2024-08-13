@@ -1,0 +1,15 @@
+---
+title: "Introduction"
+---
+
+# Introduction
+
+The social safety net in Australia has remained unchanged in terms of its broad principles since its inception in the 1947 Social Security Act (cite). In broad terms the social security system intends to XXX
+
+Two areas of reform over the past thirty years have been with regards to an increased emphasis on work through mutual obligations and the growth in private employment services, alongside a desire for increased system simplicity following the two McClure reports (cite).
+
+In order to evaluate whether a significantly different system would be preferable, this document outlines the hypothetical design of varying income support systems, the policy differences these systems involve, and the international difference in these systems.
+
+We can then use Australian and international evidence to form a view on the trade-offs inherent in a significant reform to the Australian safety net - and where more work is necessary.
+
+The focus of this note is predominantly on **job loss risk**, rather than the other lifecycle risks that a social safety net supports individuals through. However, a similar approach can be taken to also consider these risks and the appropriate design of these payments.

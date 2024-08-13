@@ -1,0 +1,7 @@
+---
+title: "Summary"
+---
+
+# Summary
+
+This section provides a summary of the document.

@@ -1,0 +1,135 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Is the Australian Benefit System fit for purpose?",
+    "section": "",
+    "text": "Is the Australian Benefit System fit for purpose?\nWelcome to this outline of income support for job seekers in Australia. Please navigate to the chapters below:\n\nSummary\nIntroduction\nHypothetical Design\nInternational Comparisons\nEvidence on Policy Choices\nReferences"
+  },
+  {
+    "objectID": "01-summary.html",
+    "href": "01-summary.html",
+    "title": "1  Summary",
+    "section": "",
+    "text": "2 Summary\nThis section provides a summary of the document."
+  },
+  {
+    "objectID": "02-introduction.html",
+    "href": "02-introduction.html",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "3 Introduction\nThe social safety net in Australia has remained unchanged in terms of its broad principles since its inception in the 1947 Social Security Act (cite). In broad terms the social security system intends to XXX\nTwo areas of reform over the past thirty years have been with regards to an increased emphasis on work through mutual obligations and the growth in private employment services, alongside a desire for increased system simplicity following the two McClure reports (cite).\nIn order to evaluate whether a significantly different system would be preferable, this document outlines the hypothetical design of varying income support systems, the policy differences these systems involve, and the international difference in these systems.\nWe can then use Australian and international evidence to form a view on the trade-offs inherent in a significant reform to the Australian safety net - and where more work is necessary.\nThe focus of this note is predominantly on job loss risk, rather than the other lifecycle risks that a social safety net supports individuals through. However, a similar approach can be taken to also consider these risks and the appropriate design of these payments."
+  },
+  {
+    "objectID": "03-hypothetical.html",
+    "href": "03-hypothetical.html",
+    "title": "3  Hypothetical Design",
+    "section": "",
+    "text": "4 Hypothetical design"
+  },
+  {
+    "objectID": "03-hypothetical.html#insurance-or-a-flat-payment",
+    "href": "03-hypothetical.html#insurance-or-a-flat-payment",
+    "title": "3  Hypothetical Design",
+    "section": "4.1 Insurance or a flat payment",
+    "text": "4.1 Insurance or a flat payment\nThe Australian social security system was based on a similar principle to systems implements in the United Kingdom and New Zealand at the same time. Following the Beveridge Report’s indication for the need for social insurance to prevent hardship and encourage participation following World War II, Australia introduced the Social Security Act.\nThis act established a flat rate and non-contributory payment, with the rate paid varying due to the nature of the hardship experienced. This also took responsibility for such schemes largely away from individual States and thereby standardised treatment across Australia.\nThe element of unemployment benefits that reflects a flat rate, non-contributory, payment is typically called unemployment assistance (UA) (OECD 2024). XXX\nAlthough this sounds similar to a universal basic income (UBI) there are key distinctions:\n\nA UBI is paid to every individual, while UA is contingent on family structure and income.\nA UBI is not directly abated at an individuals income increases - as a result for the same tax scale effective marginal tax rates are much lower for UBI recipients.\nCommonly, a UBI does not involve mutual obligations or a specific requirement for job search while UA generally does.\n\nAnother element of any social support system is unemployment insurance (UI). The insurance element of a social support system differs from the assistance element in terms of the payment (typically linked to income prior to the event) and the funding mechanism (typically involves a contribution from the individual prior to the event which determines their eligibility).\n\n\n\nExample Table Using R\n\n\n\n\n\n\n\n\nTreatment\nUnemployment.Assistance\nUniveral.Basic.Income\nUnemployment.Insurance\n\n\n\n\nPayment relative to income\nFlat Rate\nFlat Rate\nRelative to prio Income\n\n\nEmployee contributions\nNone\nNone\nLevy\n\n\nIndividual Means testing\nValue 8\nValue 9\nValue 9\n\n\nFamily based Means testing\nValue 8\nValue 8\nValue 8\n\n\nJob Search obligations\nValue 8\nValue 8\nValue 8\n\n\nTime limitations\nLimited\nNone\nBetween X and X\n\n\n\n\n\n\n4.1.1 Broad rationale for distinction in payments\nThe reason why such policies are considered as distinct, even though they form part of the same social safety net, is that the policy objectives of each part of the system differ. A UA/UBI payment reflects a minimum income standard related to views around poverty. A UI system reflects an insurance motive where individuals can pool ex-ante risk relating to a shock.\nIn terms of the minimum income standard this reflects in the necessary income that is required to meet this standard. The nature of the life event (i.e. disability, temporary illness, redundancy, or voluntary unemployment) and the structure of the family\nIn terms of insurance this reflects in XXX\nIn this note we are focused solely on job loss risk. Such an event is deemed to be temporary and therefore XXX\n\n\n4.1.2 The income unit\nThe income unit reflects a set of individuals who share resources, and so may be able to consume more than sum of their private incomes would suggest. The primary sharing that is often considered is intra-household sharing, or what is termed economies of scale in the household."
+  },
+  {
+    "objectID": "03-hypothetical.html#the-iron-triangle",
+    "href": "03-hypothetical.html#the-iron-triangle",
+    "title": "3  Hypothetical Design",
+    "section": "4.2 The Iron Triangle",
+    "text": "4.2 The Iron Triangle\nThe key policy framework used to evaluate the trade-offs inherent in setting benefit payment and abatement rates is the Iron Triangle of Welfare (cite Henry Tax Review, McClure Report, Welfare Working Group report, and Blundell Keynes Lecture 2021).\n\n\n\n\n\nIn terms of objectives, the Iron Triangle is predicated on providing a minimum income standard without “discouraging self-sufficiency” - an objective that is often termed limited disincentives to work.\nTargeting efficiency XXX\n[Fiscal cost]\n[Poverty rates]\n[Venn diagrams]"
+  },
+  {
+    "objectID": "03-hypothetical.html#rationale-for-varying-systems",
+    "href": "03-hypothetical.html#rationale-for-varying-systems",
+    "title": "3  Hypothetical Design",
+    "section": "4.3 Rationale for varying systems",
+    "text": "4.3 Rationale for varying systems\nAbove we noted that the distinguishing policy rationale for the unemployment assistance (UA) attribute of a support system and the unemployment insurance (UI) attribute was a minimum income standard as opposed to lifetime income insurance. In this section we will be a bit more specific with this distinction.\n\n#| echo: false\n\ndata &lt;- data.frame(\n  `Policy Aim` = c(\"Welfare-to-work\", \"Income Adequacy\", \"Fiscal Cost\",\"XXX\",\"XXX\",\"XXX\"),\n  `Unemployment Assistance` = c(\"Flat Rate\", \"None\", \"Value 8\", \"Value 8\", \"Value 8\",\"Limited\"),\n  `Univeral Basic Income` = c(\"Flat Rate\", \"None\", \"Value 9\", \"Value 8\", \"Value 8\",\"None\"),\n  `Unemployment Insurance` = c(\"Relative to prio Income\", \"Levy\", \"Value 9\", \"Value 8\", \"Value 8\",\"Between X and X\")\n)\n\n# Generate the table\nkable(data, caption = \"Example Table Using R\")\n\n\nExample Table Using R\n\n\n\n\n\n\n\n\nPolicy.Aim\nUnemployment.Assistance\nUniveral.Basic.Income\nUnemployment.Insurance\n\n\n\n\nWelfare-to-work\nFlat Rate\nFlat Rate\nRelative to prio Income\n\n\nIncome Adequacy\nNone\nNone\nLevy\n\n\nFiscal Cost\nValue 8\nValue 9\nValue 9\n\n\nXXX\nValue 8\nValue 8\nValue 8\n\n\nXXX\nValue 8\nValue 8\nValue 8\n\n\nXXX\nLimited\nNone\nBetween X and X\n\n\n\n\n\n\n\n\n\nOECD. 2024. “Income Support, Redistribution, and Work Incentives.” https://www.oecd.org/en/topics/income-support-redistribution-and-work-incentives.html."
+  },
+  {
+    "objectID": "04-international.html",
+    "href": "04-international.html",
+    "title": "4  International Comparisons",
+    "section": "",
+    "text": "5 International system comparison\nFor comparing XX\nXXX\nHowever, a focus on only the income based social support services misses important differences between Australia and the rest of the world.\nIn Australia labour market settings (employee protections, minimum and award wages) and the roll of case managed employment services is a more distinctive part of the safety net than across most of the OECD. [wage earners welfare state]\n[plot of minimum wage/average vs OECD, plot of intensity of restrictions]"
+  },
+  {
+    "objectID": "04-international.html#differences-in-fiscal-expenditure-and-poverty-rates",
+    "href": "04-international.html#differences-in-fiscal-expenditure-and-poverty-rates",
+    "title": "4  International Comparisons",
+    "section": "5.1 Differences in fiscal expenditure and poverty rates",
+    "text": "5.1 Differences in fiscal expenditure and poverty rates\nAs noted above, the key advantage of the Australian social support system is targeting efficiency - or that it reduces poverty at the lowest fiscal cost.\nXXX"
+  },
+  {
+    "objectID": "04-international.html#differences-in-replacement-rates",
+    "href": "04-international.html#differences-in-replacement-rates",
+    "title": "4  International Comparisons",
+    "section": "5.2 Differences in replacement rates",
+    "text": "5.2 Differences in replacement rates\nXXX"
+  },
+  {
+    "objectID": "04-international.html#differences-in-non-take-up-conditions",
+    "href": "04-international.html#differences-in-non-take-up-conditions",
+    "title": "4  International Comparisons",
+    "section": "5.3 Differences in non-take-up conditions",
+    "text": "5.3 Differences in non-take-up conditions\nXXX"
+  },
+  {
+    "objectID": "04-international.html#differences-in-coverage",
+    "href": "04-international.html#differences-in-coverage",
+    "title": "4  International Comparisons",
+    "section": "5.4 Differences in coverage",
+    "text": "5.4 Differences in coverage\nXXX"
+  },
+  {
+    "objectID": "04-international.html#differences-in-outcomes",
+    "href": "04-international.html#differences-in-outcomes",
+    "title": "4  International Comparisons",
+    "section": "5.5 Differences in outcomes",
+    "text": "5.5 Differences in outcomes\n\n5.5.1 Job finding and unemployment\nXX\n\n\n5.5.2 Wage scarring\nXX\n\n\n\nTest"
+  },
+  {
+    "objectID": "05-evidence.html",
+    "href": "05-evidence.html",
+    "title": "5  Evidence on Policy Choices",
+    "section": "",
+    "text": "6 Evidence on system choices"
+  },
+  {
+    "objectID": "05-evidence.html#the-implications-of-mutual-obligations",
+    "href": "05-evidence.html#the-implications-of-mutual-obligations",
+    "title": "5  Evidence on Policy Choices",
+    "section": "6.1 The implications of mutual obligations",
+    "text": "6.1 The implications of mutual obligations\nXXX"
+  },
+  {
+    "objectID": "05-evidence.html#the-implications-of-the-payment-rate",
+    "href": "05-evidence.html#the-implications-of-the-payment-rate",
+    "title": "5  Evidence on Policy Choices",
+    "section": "6.2 The implications of the payment rate",
+    "text": "6.2 The implications of the payment rate\nXXX"
+  },
+  {
+    "objectID": "05-evidence.html#the-implications-of-benefit-exhaustiontapering",
+    "href": "05-evidence.html#the-implications-of-benefit-exhaustiontapering",
+    "title": "5  Evidence on Policy Choices",
+    "section": "6.3 The implications of benefit exhaustion/tapering",
+    "text": "6.3 The implications of benefit exhaustion/tapering\nXXX"
+  },
+  {
+    "objectID": "05-evidence.html#the-effect-of-a-ubi",
+    "href": "05-evidence.html#the-effect-of-a-ubi",
+    "title": "5  Evidence on Policy Choices",
+    "section": "6.4 The effect of a UBI",
+    "text": "6.4 The effect of a UBI\nA UBI differs from the Australian system in the following ways:\n\nXXX\nXXX\nXXX"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "OECD. 2024. “Income Support, Redistribution,\nand Work Incentives.” https://www.oecd.org/en/topics/income-support-redistribution-and-work-incentives.html."
+  }
+]

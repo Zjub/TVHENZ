@@ -1,41 +1,8 @@
 ---
-title: "Is the Australian Benefit System fit for purpose?"
-format: 
-  html:
-    book: true
-    toc: true
-    number-sections: true
-    self-contained: true
-    css: styles.css
-  pdf:
-    toc: true
-    number-sections: true
-  epub:
-    toc: true
-    number-sections: true
-site:
-  toc: true
-  navbar:
-    left:
-      - text: Home
-        href: index.qmd
-    right:
-      - text: Download
-        href: download.pdf
-editor: visual
-bibliography: references.bib
+title: "Hypothetical Design"
 ---
 
-
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
-```
-
-------------------------------------------------------------------------
-
 ```{r}
-#| echo: false
 
 library(cli)
 library(tidyverse)
@@ -52,21 +19,11 @@ library(Synth)
 library(knitr)
 ```
 
-# Summary
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
 
-XXX\.
-
-# Introduction
-
-The social safety net in Australia has remained unchanged in terms of its broad principles since its inception in the 1947 Social Security Act (cite). In broad terms the social security system intends to XXX
-
-Two areas of reform over the past thirty years have been with regards to an increased emphasis on work through mutual obligations and the growth in private employment services, alongside a desire for increased system simplicity following the two McClure reports (cite).
-
-In order to evaluate whether a significantly different system would be preferable, this document outlines the hypothetical design of varying income support systems, the policy differences these systems involve, and the international difference in these systems.
-
-We can then use Australian and international evidence to form a view on the trade-offs inherent in a significant reform to the Australian safety net - and where more work is necessary.
-
-The focus of this note is predominantly on **job loss risk**, rather than the other lifecycle risks that a social safety net supports individuals through. However, a similar approach can be taken to also consider these risks and the appropriate design of these payments.
+------------------------------------------------------------------------
 
 # Hypothetical design
 
@@ -118,7 +75,30 @@ The income unit reflects a set of individuals who share resources, and so may be
 
 ## The Iron Triangle
 
-XXX
+The key policy framework used to evaluate the trade-offs inherent in setting benefit payment and abatement rates is the **Iron Triangle of Welfare** (cite Henry Tax Review, McClure Report, Welfare Working Group report, and Blundell Keynes Lecture 2021).
+
+```{r}
+#| echo: false
+
+# Define the vertices of the Iron Triangle
+triangle_data <- data.frame(
+  x = c(0, 1, 0.5),
+  y = c(0, 0, sqrt(3)/2),
+  label = c("Adequate Income", "Limited Fiscal Cost", "Work Incentives")
+)
+
+ggplot(triangle_data, aes(x = x, y = y)) +
+  geom_polygon(fill = "lightblue", color = "black") +
+  geom_text(aes(label = label, vjust = ifelse(label == "Work Incentives", -1, 2.5)), 
+            hjust = 0.5, size = 8) +
+  theme_void() +
+  coord_fixed() +
+  xlim(-0.5, 1.5) + 
+  ylim(-0.5, 1.2)    
+
+```
+
+In terms of objectives, the Iron Triangle is predicated on providing a minimum income standard without "discouraging self-sufficiency" - an objective that is often termed limited disincentives to work.
 
 Targeting efficiency XXX
 
@@ -146,69 +126,3 @@ data <- data.frame(
 # Generate the table
 kable(data, caption = "Example Table Using R")
 ```
-
-# International system comparison
-
-For comparing XX
-
-XXX
-
-However, a focus on only the income based social support services misses important differences between Australia and the rest of the world.
-
-In Australia labour market settings (employee protections, minimum and award wages) and the roll of case managed employment services is a more distinctive part of the safety net than across most of the OECD. \[wage earners welfare state\]
-
-\[plot of minimum wage/average vs OECD, plot of intensity of restrictions\]
-
-## Differences in fiscal expenditure and poverty rates
-
-As noted above, the key advantage of the Australian social support system is **targeting efficiency** - or that it reduces poverty at the lowest fiscal cost.
-
-XXX
-
-## Differences in replacement rates
-
-XXX
-
-## Differences in non-take-up conditions
-
-XXX
-
-## Differences in coverage
-
-XXX
-
-## Differences in outcomes
-
-### Job finding and unemployment
-
-XX
-
-### Wage scarring
-
-XX
-
-![Test](Inv_vol_ES.png){width="300"}
-
-# Evidence on system choices
-
-## The implications of mutual obligations
-
-XXX
-
-## The implications of the payment rate
-
-XXX
-
-## The implications of benefit exhaustion/tapering
-
-XXX
-
-## The effect of a UBI
-
-A UBI differs from the Australian system in the following ways:
-
--   XXX
-
--   XXX
-
--   XXX

@@ -1,0 +1,45 @@
+---
+title: "International Comparisons"
+---
+
+# International system comparison
+
+For comparing XX
+
+XXX
+
+However, a focus on only the income based social support services misses important differences between Australia and the rest of the world.
+
+In Australia labour market settings (employee protections, minimum and award wages) and the roll of case managed employment services is a more distinctive part of the safety net than across most of the OECD. \[wage earners welfare state\]
+
+\[plot of minimum wage/average vs OECD, plot of intensity of restrictions\]
+
+## Differences in fiscal expenditure and poverty rates
+
+As noted above, the key advantage of the Australian social support system is **targeting efficiency** - or that it reduces poverty at the lowest fiscal cost.
+
+XXX
+
+## Differences in replacement rates
+
+XXX
+
+## Differences in non-take-up conditions
+
+XXX
+
+## Differences in coverage
+
+XXX
+
+## Differences in outcomes
+
+### Job finding and unemployment
+
+XX
+
+### Wage scarring
+
+XX
+
+![Test](Inv_vol_ES.png){width="300"}

@@ -26,8 +26,6 @@ editor: visual
 bibliography: references.bib
 ---
 
-
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 ```

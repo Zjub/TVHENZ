@@ -1,0 +1,31 @@
+project:
+  type: book
+
+book:
+  title: "Is the Australian Benefit System fit for purpose?"
+  author: "Matt Nolan"
+  date: "13/08/2024"
+  chapters:
+    - index.qmd
+    - 01-summary.qmd
+    - 02-introduction.qmd
+    - 03-hypothetical.qmd
+    - 04-international.qmd
+    - 05-evidence.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    toc: true  # Ensure the table of contents is enabled
+    number-sections: true
+  pdf:
+    documentclass: scrreprt
+    toc: true
+    number-sections: true
+
+editor: visual
+
+

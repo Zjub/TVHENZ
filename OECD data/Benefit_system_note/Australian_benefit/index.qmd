@@ -1,0 +1,10 @@
+# Is the Australian Benefit System fit for purpose? {.unnumbered}
+
+Welcome to this outline of income support for job seekers in Australia. Please navigate to the chapters below:
+
+-   [Summary](01-summary.qmd)
+-   [Introduction](02-introduction.qmd)
+-   [Hypothetical Design](03-hypothetical.qmd)
+-   [International Comparisons](04-international.qmd)
+-   [Evidence on Policy Choices](05-evidence.qmd)
+-   [References](references.qmd)
