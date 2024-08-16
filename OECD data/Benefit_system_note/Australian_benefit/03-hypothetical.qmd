@@ -56,6 +56,24 @@ data <- data.frame(
 
 # Generate the table
 kable(data, caption = "Example Table Using R")
+
+## Waiting until the assistance and UI counts per country and back online for the OECD: https://www.oecd.org/en/data/datasets/social-benefit-recipients-socr-database.html
+# data_url <- ""
+# 
+# response <- GET(data_url)
+# 
+# if (response$status_code == 200) {
+#   # Parse the JSON content
+#   raw_content <- content(response, "text")
+#   data <- fromJSON(raw_content, flatten = TRUE)
+# } else {
+#   stop("Failed to fetch data from the OECD API")
+# }
+# 
+# data_sets <- data$dataSets
+# result <- data.frame()
+
+
 ```
 
 ### Broad rationale for distinction in payments
