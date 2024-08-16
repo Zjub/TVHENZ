@@ -1,0 +1,24 @@
+---
+title: "Insurance"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo= FALSE) 
+```
+
+```{r}
+
+library(cli)
+library(tidyverse)
+library(data.table)
+library(theme61)
+library(tidyr)
+library(readxl)
+library(gghighlight)
+library(readabs)
+library(OECD)
+library(jsonlite)
+library(httr)
+library(Synth)
+library(knitr)
+```

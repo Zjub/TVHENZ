@@ -2,6 +2,10 @@
 title: "Hypothetical Design"
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo= FALSE) 
+```
+
 ```{r}
 
 library(cli)
@@ -19,21 +23,17 @@ library(Synth)
 library(knitr)
 ```
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
-```
-
 ------------------------------------------------------------------------
 
 # Hypothetical design
 
 ## Insurance or a flat payment
 
-The Australian social security system was based on a similar principle to systems implements in the United Kingdom and New Zealand at the same time. Following the Beveridge Report's indication for the need for **social insurance** to prevent hardship and encourage participation following World War II, Australia introduced the Social Security Act.
+The Australian social security system was based on a similar principle to systems implemented in the United Kingdom and New Zealand through the 1930s and 1940s. Following the 1942 Beveridge Report's indication for the need for cradle to the grave **social insurance** to prevent hardship and encourage participation following World War II, Australia introduced the Social Security Act 1947.
 
 This act established a **flat rate** and **non-contributory** payment, with the rate paid varying due to the nature of the hardship experienced. This also took responsibility for such schemes largely away from individual States and thereby standardised treatment across Australia.
 
-The element of unemployment benefits that reflects a flat rate, non-contributory, payment is typically called **unemployment assistance** (UA) [@oecd2024]. XXX
+The element of unemployment benefits that reflects a flat rate, non-contributory, payment is typically called **unemployment assistance** (UA) [@oecd2024a][@oecd2024b]. XXX
 
 Although this sounds similar to a **universal basic income** (UBI) there are key distinctions:
 
@@ -46,13 +46,12 @@ Although this sounds similar to a **universal basic income** (UBI) there are key
 Another element of any social support system is **unemployment insurance** (UI). The insurance element of a social support system differs from the assistance element in terms of the payment (typically linked to income prior to the event) and the funding mechanism (typically involves a contribution from the individual prior to the event which determines their eligibility).
 
 ```{r}
-#| echo: false
 
 data <- data.frame(
   Treatment = c("Payment relative to income", "Employee contributions", "Individual Means testing","Family based Means testing","Job Search obligations","Time limitations"),
-  `Unemployment Assistance` = c("Flat Rate", "None", "Value 8", "Value 8", "Value 8","Limited"),
-  `Univeral Basic Income` = c("Flat Rate", "None", "Value 9", "Value 8", "Value 8","None"),
-  `Unemployment Insurance` = c("Relative to prio Income", "Levy", "Value 9", "Value 8", "Value 8","Between X and X")
+  `Unemployment Assistance` = c("Flat Rate", "Income Tax", "Value 8", "Value 8", "Value 8","Limited"),
+  `Univeral Basic Income` = c("Flat Rate", "Income Tax", "Value 9", "Value 8", "Value 8","None"),
+  `Unemployment Insurance` = c("Relative to prior Income", "Levy", "Value 9", "Value 8", "Value 8","Between X and X")
 )
 
 # Generate the table
@@ -65,48 +64,23 @@ The reason why such policies are considered as distinct, even though they form p
 
 In terms of the **minimum income standard** this reflects in the necessary income that is required to meet this standard. The nature of the life event (i.e. disability, temporary illness, redundancy, or voluntary unemployment) and the structure of the family
 
-In terms of **insurance** this reflects in XXX
+In terms of **insurance** this reflects in a tool where individuals contribute to a scheme that will compensate them if some ex-ante risk is realised. This combines a **shifting of income through time** and **pooling of risk** among individuals.
 
 In this note we are focused solely on ***job loss risk***. Such an event is deemed to be **temporary** and therefore XXX
 
-### The income unit
+### The income and the income unit
 
-The income unit reflects a set of individuals who share resources, and so may be able to consume more than sum of their private incomes would suggest. The primary sharing that is often considered is intra-household sharing, or what is termed **economies of scale in the household**.
+The definition of **income** and how it can be measured and considered is outlined in [@Canberra2011]. The relevant income measure reflects individual well-being through their "ability to acquire the goods and services they need to satisfy their needs".
 
-## The Iron Triangle
+In this way, the definition of income used to assess eligibility distinguishes itself from a purely flow income concept (i.e. Haig-Simons income - of the concept of potential income without lowering a stock of assets), as the stock of assets an individual has allows them to satisfy these needs.
 
-The key policy framework used to evaluate the trade-offs inherent in setting benefit payment and abatement rates is the **Iron Triangle of Welfare** (cite Henry Tax Review, McClure Report, Welfare Working Group report, and Blundell Keynes Lecture 2021).
+**The income unit** reflects a set of individuals who share resources, and so may be able to consume more than sum of their private incomes would suggest. The primary sharing that is often considered is intra-household sharing, or what is termed **economies of scale in the household**.
 
-```{r}
-#| echo: false
+XXX
 
-# Define the vertices of the Iron Triangle
-triangle_data <- data.frame(
-  x = c(0, 1, 0.5),
-  y = c(0, 0, sqrt(3)/2),
-  label = c("Adequate Income", "Limited Fiscal Cost", "Work Incentives")
-)
+The **personal income tax system** alone reflects a view of the **ability to pay** out of flow income at the individual level. It is the application of the benefit system that then reflects a broader view regarding peoples ability to meet a minimum standard.
 
-ggplot(triangle_data, aes(x = x, y = y)) +
-  geom_polygon(fill = "lightblue", color = "black") +
-  geom_text(aes(label = label, vjust = ifelse(label == "Work Incentives", -1, 2.5)), 
-            hjust = 0.5, size = 8) +
-  theme_void() +
-  coord_fixed() +
-  xlim(-0.5, 1.5) + 
-  ylim(-0.5, 1.2)    
-
-```
-
-In terms of objectives, the Iron Triangle is predicated on providing a minimum income standard without "discouraging self-sufficiency" - an objective that is often termed limited disincentives to work.
-
-Targeting efficiency XXX
-
-\[Fiscal cost\]
-
-\[Poverty rates\]
-
-\[Venn diagrams\]
+Within this context, social policy settings that are focused on this **minimum standard** will apply rules about assets and family structure which reflect these views.
 
 ## Rationale for varying systems
 
@@ -114,15 +88,45 @@ Above we noted that the distinguishing policy rationale for the unemployment ass
 
 ```{r}
 
-#| echo: false
-
 data <- data.frame(
   `Policy Aim` = c("Welfare-to-work", "Income Adequacy", "Fiscal Cost","XXX","XXX","XXX"),
   `Unemployment Assistance` = c("Flat Rate", "None", "Value 8", "Value 8", "Value 8","Limited"),
   `Univeral Basic Income` = c("Flat Rate", "None", "Value 9", "Value 8", "Value 8","None"),
-  `Unemployment Insurance` = c("Relative to prio Income", "Levy", "Value 9", "Value 8", "Value 8","Between X and X")
+  `Unemployment Insurance` = c("Relative to prior Income", "Levy", "Value 9", "Value 8", "Value 8","Between X and X")
 )
 
 # Generate the table
 kable(data, caption = "Example Table Using R")
 ```
+
+A UA system can be seen as a *Robin Hood* type redistributive tool to alleviate poverty. Such a scheme can thereby be evaluated through its effectiveness at reducing poverty rates. As it is *redistributive* there is a long history of debating the conditionality of such support - both in terms of varying payments and eligibility criteria for reasons associated with not working, means testing of receipt, and mutual obligations required to continue receipt of payments. These reflect a determination of who society wishes to give the transfer too, and what obligations individuals have to meet to continue receiving it. The key distinction of a UBI is therefore the removal of such conditionality.
+
+A UI system on the other hand aims to satisfy a *Piggy Bank* function - helping individuals shift resources through time and across states of the world [@Barr2001]. This function XXX
+
+This description of a UI system hides two significantly different smoothing functions - self-insurance and social insurance.
+
+A traditional UI system is an example of a **social insurance** vehicle. All labour income earners contribute to a mandatory insurance scheme (to mitigate adverse selection), and then if the individual ex-post experiences job loss they can claim from this scheme on the basis of their prior earnings. Such a scheme has the advantage of allowing the efficient ex-ante **pooling of job loss risk** but suffers from **moral hazard concerns** if individuals remain on the benefit for longer, or orchestrate an exit from a job, solely to claim the payment.
+
+An alternative to this that would not suffer from the same concerns around moral hazard is a **self-insurance** or **savings** scheme. In a similar vein to compulsory superannuation, if individuals are undersaving for job loss risk for personal reasons (i.e. excessive discounting, wrong expectations about job loss risk) a compulsory savings vehicle forces the individual to insure themselves against this risk. However, without the benefit of risk pooling such schemes would end up providing weaker insurance for those who realise a job loss and excessive savings for those who do not.
+
+In Australia, there is no clear UI element to the income support system. As a result, if market failures were pervasive in the market for job loss insurance then the introduction of such a policy could help to solve this. This could allow for more efficient levels of personal savings, better job matching, and lower welfare costs associated with job loss. However, this has to be seen in conjunction with the large compulsory retirement savings program - which is already forcing individuals to self-insure against the final job ending event in retirement.
+
+### Rational for varying payment systems and rates
+
+XXX
+
+### Rational for varying revenue raising systems
+
+A key distinction between the funding of an UA and a UI system comes from the decision to fund it from general tax revenue, or to apply a hypothecated revenue raising device (such as a levy).
+
+The Australian tax system is predicated on a broad-based low rate system. As a result, spending initiatives are generally separated from revenue raising initatives - with the idea that revenue should be raised in the most efficient way possible to meet government expenditure goals.
+
+A levy differs from funding from general taxation in three key ways:
+
+1.  A levy funds UI directly from labour income, lowering the tax burden on capital - but also generating the incentive to redefine labour income to capital income (i.e. self-employment income).
+
+2.  A levy makes the scheme more **salient** by associating the payment with an expected benefit - thereby reducing distortions to labour supply.
+
+3.  Pre-funding of a levy can be used to build up a social asset to fund a UI scheme, shifting the revenue risk clearly off the government budget.
+
+(including OECD levy rates)

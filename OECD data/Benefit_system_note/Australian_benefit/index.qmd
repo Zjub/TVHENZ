@@ -3,8 +3,9 @@
 Welcome to this outline of income support for job seekers in Australia. Please navigate to the chapters below:
 
 -   [Summary](01-summary.qmd)
+-   [Release Note](01b-RN.qmd)
 -   [Introduction](02-introduction.qmd)
 -   [Hypothetical Design](03-hypothetical.qmd)
--   [International Comparisons](04-international.qmd)
--   [Evidence on Policy Choices](05-evidence.qmd)
+-   [The Iron Triangle](06-iron.qmd)
+-   [Insurance](07-insurance.qmd)
 -   [References](references.qmd)

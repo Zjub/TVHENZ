@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Is the Australian Benefit System fit for purpose? - 3&nbsp; Hypothetical Design</title>
+<title>Is the Australian Benefit System fit for purpose? - 4&nbsp; Hypothetical Design</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,44 +20,11 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -83,7 +50,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./04-international.html" rel="next">
+<link href="./06-iron.html" rel="next">
 <link href="./02-introduction.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -100,7 +67,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -109,6 +82,7 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -124,12 +98,12 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-hypothetical.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Hypothetical Design</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-hypothetical.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Hypothetical Design</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -139,7 +113,7 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Is the Australian Benefit System fit for purpose?</a> 
@@ -166,26 +140,32 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./01b-RN.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Release Note</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./02-introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-hypothetical.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Hypothetical Design</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Hypothetical Design</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-international.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">International Comparisons</span></span></a>
+  <a href="./06-iron.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Assistance, Poverty, and the Iron Triangle</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05-evidence.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Evidence on Policy Choices</span></span></a>
+  <a href="./07-insurance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Insurance</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -197,22 +177,25 @@ div.csl-indent {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#hypothetical-design" id="toc-hypothetical-design" class="nav-link active" data-scroll-target="#hypothetical-design"><span class="header-section-number">4</span> Hypothetical design</a>
+  <li><a href="#hypothetical-design" id="toc-hypothetical-design" class="nav-link active" data-scroll-target="#hypothetical-design"><span class="header-section-number">5</span> Hypothetical design</a>
   <ul class="collapse">
-  <li><a href="#insurance-or-a-flat-payment" id="toc-insurance-or-a-flat-payment" class="nav-link" data-scroll-target="#insurance-or-a-flat-payment"><span class="header-section-number">4.1</span> Insurance or a flat payment</a>
+  <li><a href="#insurance-or-a-flat-payment" id="toc-insurance-or-a-flat-payment" class="nav-link" data-scroll-target="#insurance-or-a-flat-payment"><span class="header-section-number">5.1</span> Insurance or a flat payment</a>
   <ul class="collapse">
-  <li><a href="#broad-rationale-for-distinction-in-payments" id="toc-broad-rationale-for-distinction-in-payments" class="nav-link" data-scroll-target="#broad-rationale-for-distinction-in-payments"><span class="header-section-number">4.1.1</span> Broad rationale for distinction in payments</a></li>
-  <li><a href="#the-income-unit" id="toc-the-income-unit" class="nav-link" data-scroll-target="#the-income-unit"><span class="header-section-number">4.1.2</span> The income unit</a></li>
+  <li><a href="#broad-rationale-for-distinction-in-payments" id="toc-broad-rationale-for-distinction-in-payments" class="nav-link" data-scroll-target="#broad-rationale-for-distinction-in-payments"><span class="header-section-number">5.1.1</span> Broad rationale for distinction in payments</a></li>
+  <li><a href="#the-income-and-the-income-unit" id="toc-the-income-and-the-income-unit" class="nav-link" data-scroll-target="#the-income-and-the-income-unit"><span class="header-section-number">5.1.2</span> The income and the income unit</a></li>
   </ul></li>
-  <li><a href="#the-iron-triangle" id="toc-the-iron-triangle" class="nav-link" data-scroll-target="#the-iron-triangle"><span class="header-section-number">4.2</span> The Iron Triangle</a></li>
-  <li><a href="#rationale-for-varying-systems" id="toc-rationale-for-varying-systems" class="nav-link" data-scroll-target="#rationale-for-varying-systems"><span class="header-section-number">4.3</span> Rationale for varying systems</a></li>
+  <li><a href="#rationale-for-varying-systems" id="toc-rationale-for-varying-systems" class="nav-link" data-scroll-target="#rationale-for-varying-systems"><span class="header-section-number">5.2</span> Rationale for varying systems</a>
+  <ul class="collapse">
+  <li><a href="#rational-for-varying-payment-systems-and-rates" id="toc-rational-for-varying-payment-systems-and-rates" class="nav-link" data-scroll-target="#rational-for-varying-payment-systems-and-rates"><span class="header-section-number">5.2.1</span> Rational for varying payment systems and rates</a></li>
+  <li><a href="#rational-for-varying-revenue-raising-systems" id="toc-rational-for-varying-revenue-raising-systems" class="nav-link" data-scroll-target="#rational-for-varying-revenue-raising-systems"><span class="header-section-number">5.2.2</span> Rational for varying revenue raising systems</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -222,7 +205,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Hypothetical Design</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Hypothetical Design</span></h1>
 </div>
 
 
@@ -235,87 +218,18 @@ div.csl-indent {
   </div>
   
 
+
 </header>
 
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cli)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.4     ✔ readr     2.1.5
-✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.5.1     ✔ tibble    3.2.1
-✔ lubridate 1.9.3     ✔ tidyr     1.3.1
-✔ purrr     1.0.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'data.table'
 
-The following objects are masked from 'package:lubridate':
-
-    hour, isoweek, mday, minute, month, quarter, second, wday, week,
-    yday, year
-
-The following objects are masked from 'package:dplyr':
-
-    between, first, last
-
-The following object is masked from 'package:purrr':
-
-    transpose</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(theme61)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'theme61'
-
-The following objects are masked from 'package:ggplot2':
-
-    ggplot, ggsave, labs</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gghighlight)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readabs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Environment variable 'R_READABS_PATH' is unset. Downloaded files will be saved in a temporary directory.
-You can set 'R_READABS_PATH' at any time. To set it for the rest of this session, use
-    Sys.setenv(R_READABS_PATH = &lt;path&gt;)</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(OECD)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(jsonlite)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'jsonlite'
-
-The following object is masked from 'package:purrr':
-
-    flatten</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(httr)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(Synth)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>##
-## Synth Package: Implements Synthetic Control Methods.
-
-## See https://web.stanford.edu/~jhain/synthpage.html for additional information.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 <hr>
-<section id="hypothetical-design" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Hypothetical design</h1>
-<section id="insurance-or-a-flat-payment" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="insurance-or-a-flat-payment"><span class="header-section-number">4.1</span> Insurance or a flat payment</h2>
-<p>The Australian social security system was based on a similar principle to systems implements in the United Kingdom and New Zealand at the same time. Following the Beveridge Report’s indication for the need for <strong>social insurance</strong> to prevent hardship and encourage participation following World War II, Australia introduced the Social Security Act.</p>
+<section id="hypothetical-design" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Hypothetical design</h1>
+<section id="insurance-or-a-flat-payment" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="insurance-or-a-flat-payment"><span class="header-section-number">5.1</span> Insurance or a flat payment</h2>
+<p>The Australian social security system was based on a similar principle to systems implemented in the United Kingdom and New Zealand through the 1930s and 1940s. Following the 1942 Beveridge Report’s indication for the need for cradle to the grave <strong>social insurance</strong> to prevent hardship and encourage participation following World War II, Australia introduced the Social Security Act 1947.</p>
 <p>This act established a <strong>flat rate</strong> and <strong>non-contributory</strong> payment, with the rate paid varying due to the nature of the hardship experienced. This also took responsibility for such schemes largely away from individual States and thereby standardised treatment across Australia.</p>
-<p>The element of unemployment benefits that reflects a flat rate, non-contributory, payment is typically called <strong>unemployment assistance</strong> (UA) <span class="citation" data-cites="oecd2024">(<a href="references.html#ref-oecd2024" role="doc-biblioref">OECD 2024</a>)</span>. XXX</p>
+<p>The element of unemployment benefits that reflects a flat rate, non-contributory, payment is typically called <strong>unemployment assistance</strong> (UA) [<span class="citation" data-cites="oecd2024a">OECD (<a href="references.html#ref-oecd2024a" role="doc-biblioref">2024a</a>)</span>]<span class="citation" data-cites="oecd2024b">(<a href="references.html#ref-oecd2024b" role="doc-biblioref">OECD 2024b</a>)</span>. XXX</p>
 <p>Although this sounds similar to a <strong>universal basic income</strong> (UBI) there are key distinctions:</p>
 <ol type="1">
 <li><p>A UBI is paid to every individual, while UA is contingent on family structure and income.</p></li>
@@ -325,13 +239,13 @@ The following object is masked from 'package:purrr':
 <p>Another element of any social support system is <strong>unemployment insurance</strong> (UI). The insurance element of a social support system differs from the assistance element in terms of the payment (typically linked to income prior to the event) and the funding mechanism (typically involves a contribution from the individual prior to the event which determines their eligibility).</p>
 <div class="cell">
 <div class="cell-output-display">
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <caption>Example Table Using R</caption>
 <colgroup>
 <col style="width: 27%">
 <col style="width: 24%">
 <col style="width: 22%">
-<col style="width: 24%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -346,12 +260,12 @@ The following object is masked from 'package:purrr':
 <td style="text-align: left;">Payment relative to income</td>
 <td style="text-align: left;">Flat Rate</td>
 <td style="text-align: left;">Flat Rate</td>
-<td style="text-align: left;">Relative to prio Income</td>
+<td style="text-align: left;">Relative to prior Income</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Employee contributions</td>
-<td style="text-align: left;">None</td>
-<td style="text-align: left;">None</td>
+<td style="text-align: left;">Income Tax</td>
+<td style="text-align: left;">Income Tax</td>
 <td style="text-align: left;">Levy</td>
 </tr>
 <tr class="odd">
@@ -382,55 +296,35 @@ The following object is masked from 'package:purrr':
 </table>
 </div>
 </div>
-<section id="broad-rationale-for-distinction-in-payments" class="level3" data-number="4.1.1">
-<h3 data-number="4.1.1" class="anchored" data-anchor-id="broad-rationale-for-distinction-in-payments"><span class="header-section-number">4.1.1</span> Broad rationale for distinction in payments</h3>
+<section id="broad-rationale-for-distinction-in-payments" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="broad-rationale-for-distinction-in-payments"><span class="header-section-number">5.1.1</span> Broad rationale for distinction in payments</h3>
 <p>The reason why such policies are considered as distinct, even though they form part of the same social safety net, is that the policy objectives of each part of the system differ. A UA/UBI payment reflects a <strong>minimum income standard</strong> related to views around poverty. A UI system reflects an <strong>insurance</strong> motive where individuals can pool ex-ante risk relating to a shock.</p>
 <p>In terms of the <strong>minimum income standard</strong> this reflects in the necessary income that is required to meet this standard. The nature of the life event (i.e.&nbsp;disability, temporary illness, redundancy, or voluntary unemployment) and the structure of the family</p>
-<p>In terms of <strong>insurance</strong> this reflects in XXX</p>
+<p>In terms of <strong>insurance</strong> this reflects in a tool where individuals contribute to a scheme that will compensate them if some ex-ante risk is realised. This combines a <strong>shifting of income through time</strong> and <strong>pooling of risk</strong> among individuals.</p>
 <p>In this note we are focused solely on <strong><em>job loss risk</em></strong>. Such an event is deemed to be <strong>temporary</strong> and therefore XXX</p>
 </section>
-<section id="the-income-unit" class="level3" data-number="4.1.2">
-<h3 data-number="4.1.2" class="anchored" data-anchor-id="the-income-unit"><span class="header-section-number">4.1.2</span> The income unit</h3>
-<p>The income unit reflects a set of individuals who share resources, and so may be able to consume more than sum of their private incomes would suggest. The primary sharing that is often considered is intra-household sharing, or what is termed <strong>economies of scale in the household</strong>.</p>
+<section id="the-income-and-the-income-unit" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="the-income-and-the-income-unit"><span class="header-section-number">5.1.2</span> The income and the income unit</h3>
+<p>The definition of <strong>income</strong> and how it can be measured and considered is outlined in <span class="citation" data-cites="Canberra2011">(<a href="references.html#ref-Canberra2011" role="doc-biblioref">United Nations 2011</a>)</span>. The relevant income measure reflects individual well-being through their “ability to acquire the goods and services they need to satisfy their needs”.</p>
+<p>In this way, the definition of income used to assess eligibility distinguishes itself from a purely flow income concept (i.e.&nbsp;Haig-Simons income - of the concept of potential income without lowering a stock of assets), as the stock of assets an individual has allows them to satisfy these needs.</p>
+<p><strong>The income unit</strong> reflects a set of individuals who share resources, and so may be able to consume more than sum of their private incomes would suggest. The primary sharing that is often considered is intra-household sharing, or what is termed <strong>economies of scale in the household</strong>.</p>
+<p>XXX</p>
+<p>The <strong>personal income tax system</strong> alone reflects a view of the <strong>ability to pay</strong> out of flow income at the individual level. It is the application of the benefit system that then reflects a broader view regarding peoples ability to meet a minimum standard.</p>
+<p>Within this context, social policy settings that are focused on this <strong>minimum standard</strong> will apply rules about assets and family structure which reflect these views.</p>
 </section>
 </section>
-<section id="the-iron-triangle" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="the-iron-triangle"><span class="header-section-number">4.2</span> The Iron Triangle</h2>
-<p>The key policy framework used to evaluate the trade-offs inherent in setting benefit payment and abatement rates is the <strong>Iron Triangle of Welfare</strong> (cite Henry Tax Review, McClure Report, Welfare Working Group report, and Blundell Keynes Lecture 2021).</p>
-<div class="cell">
-<div class="cell-output-display">
-<p><img src="03-hypothetical_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<p>In terms of objectives, the Iron Triangle is predicated on providing a minimum income standard without “discouraging self-sufficiency” - an objective that is often termed limited disincentives to work.</p>
-<p>Targeting efficiency XXX</p>
-<p>[Fiscal cost]</p>
-<p>[Poverty rates]</p>
-<p>[Venn diagrams]</p>
-</section>
-<section id="rationale-for-varying-systems" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="rationale-for-varying-systems"><span class="header-section-number">4.3</span> Rationale for varying systems</h2>
+<section id="rationale-for-varying-systems" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="rationale-for-varying-systems"><span class="header-section-number">5.2</span> Rationale for varying systems</h2>
 <p>Above we noted that the distinguishing policy rationale for the unemployment assistance (UA) attribute of a support system and the unemployment insurance (UI) attribute was a <strong>minimum income standard</strong> as opposed to <strong>lifetime income insurance</strong>. In this section we will be a bit more specific with this distinction.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">Policy Aim</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Welfare-to-work"</span>, <span class="st">"Income Adequacy"</span>, <span class="st">"Fiscal Cost"</span>,<span class="st">"XXX"</span>,<span class="st">"XXX"</span>,<span class="st">"XXX"</span>),</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">Unemployment Assistance</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Flat Rate"</span>, <span class="st">"None"</span>, <span class="st">"Value 8"</span>, <span class="st">"Value 8"</span>, <span class="st">"Value 8"</span>,<span class="st">"Limited"</span>),</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">Univeral Basic Income</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Flat Rate"</span>, <span class="st">"None"</span>, <span class="st">"Value 9"</span>, <span class="st">"Value 8"</span>, <span class="st">"Value 8"</span>,<span class="st">"None"</span>),</span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">Unemployment Insurance</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Relative to prio Income"</span>, <span class="st">"Levy"</span>, <span class="st">"Value 9"</span>, <span class="st">"Value 8"</span>, <span class="st">"Value 8"</span>,<span class="st">"Between X and X"</span>)</span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the table</span></span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(data, <span class="at">caption =</span> <span class="st">"Example Table Using R"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <caption>Example Table Using R</caption>
 <colgroup>
 <col style="width: 18%">
 <col style="width: 27%">
 <col style="width: 25%">
-<col style="width: 27%">
+<col style="width: 28%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -445,7 +339,7 @@ The following object is masked from 'package:purrr':
 <td style="text-align: left;">Welfare-to-work</td>
 <td style="text-align: left;">Flat Rate</td>
 <td style="text-align: left;">Flat Rate</td>
-<td style="text-align: left;">Relative to prio Income</td>
+<td style="text-align: left;">Relative to prior Income</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Income Adequacy</td>
@@ -481,13 +375,41 @@ The following object is masked from 'package:purrr':
 </table>
 </div>
 </div>
+<p>A UA system can be seen as a <em>Robin Hood</em> type redistributive tool to alleviate poverty. Such a scheme can thereby be evaluated through its effectiveness at reducing poverty rates. As it is <em>redistributive</em> there is a long history of debating the conditionality of such support - both in terms of varying payments and eligibility criteria for reasons associated with not working, means testing of receipt, and mutual obligations required to continue receipt of payments. These reflect a determination of who society wishes to give the transfer too, and what obligations individuals have to meet to continue receiving it. The key distinction of a UBI is therefore the removal of such conditionality.</p>
+<p>A UI system on the other hand aims to satisfy a <em>Piggy Bank</em> function - helping individuals shift resources through time and across states of the world <span class="citation" data-cites="Barr2001">(<a href="references.html#ref-Barr2001" role="doc-biblioref"><strong>Barr2001?</strong></a>)</span>. This function XXX</p>
+<p>This description of a UI system hides two significantly different smoothing functions - self-insurance and social insurance.</p>
+<p>A traditional UI system is an example of a <strong>social insurance</strong> vehicle. All labour income earners contribute to a mandatory insurance scheme (to mitigate adverse selection), and then if the individual ex-post experiences job loss they can claim from this scheme on the basis of their prior earnings. Such a scheme has the advantage of allowing the efficient ex-ante <strong>pooling of job loss risk</strong>&nbsp;but suffers from <strong>moral hazard concerns</strong> if individuals remain on the benefit for longer, or orchestrate an exit from a job, solely to claim the payment.</p>
+<p>An alternative to this that would not suffer from the same concerns around moral hazard is a <strong>self-insurance</strong> or <strong>savings</strong> scheme. In a similar vein to compulsory superannuation, if individuals are undersaving for job loss risk for personal reasons (i.e.&nbsp;excessive discounting, wrong expectations about job loss risk) a compulsory savings vehicle forces the individual to insure themselves against this risk. However, without the benefit of risk pooling such schemes would end up providing weaker insurance for those who realise a job loss and excessive savings for those who do not.</p>
+<p>In Australia, there is no clear UI element to the income support system. As a result, if market failures were pervasive in the market for job loss insurance then the introduction of such a policy could help to solve this. This could allow for more efficient levels of personal savings, better job matching, and lower welfare costs associated with job loss. However, this has to be seen in conjunction with the large compulsory retirement savings program - which is already forcing individuals to self-insure against the final job ending event in retirement.</p>
+<section id="rational-for-varying-payment-systems-and-rates" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="rational-for-varying-payment-systems-and-rates"><span class="header-section-number">5.2.1</span> Rational for varying payment systems and rates</h3>
+<p>XXX</p>
+</section>
+<section id="rational-for-varying-revenue-raising-systems" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="rational-for-varying-revenue-raising-systems"><span class="header-section-number">5.2.2</span> Rational for varying revenue raising systems</h3>
+<p>A key distinction between the funding of an UA and a UI system comes from the decision to fund it from general tax revenue, or to apply a hypothecated revenue raising device (such as a levy).</p>
+<p>The Australian tax system is predicated on a broad-based low rate system. As a result, spending initiatives are generally separated from revenue raising initatives - with the idea that revenue should be raised in the most efficient way possible to meet government expenditure goals.</p>
+<p>A levy differs from funding from general taxation in three key ways:</p>
+<ol type="1">
+<li><p>A levy funds UI directly from labour income, lowering the tax burden on capital - but also generating the incentive to redefine labour income to capital income (i.e.&nbsp;self-employment income).</p></li>
+<li><p>A levy makes the scheme more <strong>salient</strong> by associating the payment with an expected benefit - thereby reducing distortions to labour supply.</p></li>
+<li><p>Pre-funding of a levy can be used to build up a social asset to fund a UI scheme, shifting the revenue risk clearly off the government budget.</p></li>
+</ol>
+<p>(including OECD levy rates)</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-oecd2024" class="csl-entry" role="listitem">
-OECD. 2024. <span>“<span class="nocase">Income Support, Redistribution, and Work Incentives</span>.”</span> <a href="https://www.oecd.org/en/topics/income-support-redistribution-and-work-incentives.html">https://www.oecd.org/en/topics/income-support-redistribution-and-work-incentives.html</a>.
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-oecd2024a" class="csl-entry" role="listitem">
+OECD. 2024a. <span>“<span class="nocase">Income Support, Redistribution, and Work Incentives</span>.”</span> <a href="https://www.oecd.org/en/topics/income-support-redistribution-and-work-incentives.html">https://www.oecd.org/en/topics/income-support-redistribution-and-work-incentives.html</a>.
+</div>
+<div id="ref-oecd2024b" class="csl-entry" role="listitem">
+———. 2024b. <span>“<span class="nocase">The OECD Tax-Benefit Database: Description of policy rules of Australia</span>.”</span> <a href="https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/incomes-support-redistribution-and-work-incentives/TaxBEN-Australia-latest.pdf">https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/incomes-support-redistribution-and-work-incentives/TaxBEN-Australia-latest.pdf</a>.
+</div>
+<div id="ref-Canberra2011" class="csl-entry" role="listitem">
+United Nations. 2011. <span>“<span class="nocase">Canberra Group Handbook on Household Income Statistics: Second Edition</span>.”</span> <a href="https://unece.org/fileadmin/DAM/stats/groups/cgh/Canbera_Handbook_2011_WEB.pdf">https://unece.org/fileadmin/DAM/stats/groups/cgh/Canbera_Handbook_2011_WEB.pdf</a>.
 </div>
 </div>
+</section>
 </section>
 </section>
 
@@ -571,10 +493,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -584,8 +523,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -597,7 +545,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -641,6 +712,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -666,6 +738,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -727,17 +825,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./02-introduction.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="./02-introduction.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./04-international.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">International Comparisons</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./06-iron.html" class="pagination-link" aria-label="Assistance, Poverty, and the Iron Triangle">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Assistance, Poverty, and the Iron Triangle</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 
