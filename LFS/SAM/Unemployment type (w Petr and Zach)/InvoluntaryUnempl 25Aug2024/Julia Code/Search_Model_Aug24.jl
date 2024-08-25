@@ -22,8 +22,7 @@ par[:pH] = 1.5              # worker productivity, high (calibrate to match pre-
 par[:zH] = par[:pH]         # firm productivity, high
 par[:a] = 10                # strength of mismatch (calibrate s.t. mismatched jobs separate)
 
-# Vacancy posting costs (need calibrating)
-# Uncomment and modify as needed based on your specific model
+# Vacancy posting costs (need calibrating) [note commented out in base code at present]
 # par[:kappaL] = 1          # low type vacancy posting (to target LM tightness)
 # par[:kappaH] = 1.2        # high-type vacancy posting (to target pi_H^v=pi_H^u)
 
@@ -255,3 +254,32 @@ ylabel!("percent")
 xlabel!("years")
 title!("voluntary-involuntary")
 display(current())  # Display the fourth plot
+
+
+#### Save plots
+#======================================================#
+p1 = plot(0:par[:T]-1, (w_vol ./ w_vol[1] .- 1) * 100, label="voluntary", lw=2, color=:black)
+plot!(0:par[:T]-1, (w_invol ./ w_invol[1] .- 1) * 100, label="involuntary", lw=2, linestyle=:dash, color=:red)
+ylabel!("percent")
+xlabel!("months")
+title!("scars")
+
+p2 = plot(0:par[:T]-2, (w_vol[2:end] ./ w_invol[2:end] .- 1) * 100, lw=2)
+ylabel!("percent")
+xlabel!("months")
+title!("voluntary-involuntary")
+
+p3 = plot(0:(Int(par[:T])-1)//12-1, (w_vol_a ./ w_vol[1] .- 1) * 100, label="voluntary", lw=2, color=:black)
+plot!(0:(Int(par[:T])-1)//12-1, (w_invol_a ./ w_invol[1] .- 1) * 100, label="involuntary", lw=2, linestyle=:dash, color=:red)
+ylabel!("percent")
+xlabel!("years")
+title!("scars")
+
+p4 = plot(0:(Int(par[:T])-1)//12-1, (w_vol_a ./ w_invol_a .- 1) * 100, lw=2)
+ylabel!("percent")
+xlabel!("years")
+title!("voluntary-involuntary")
+
+# Combine into a 2x2 grid and save as a single PNG file
+combined_plot = plot(p1, p2, p3, p4, layout = @layout [a b; c d])
+savefig(combined_plot, "combined_plots.png")  # Save the combined grid as "combined_plots.png"
