@@ -1,0 +1,46 @@
+
+\documentclass[12pt,a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts, amsmath, amsthm,mathtools}
+\usepackage{graphicx}
+\usepackage{caption}
+% \usepackage{undertilde}
+\usepackage{bbm}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{natbib}
+\usepackage{appendix}
+\usepackage{setspace}
+\usepackage{soul}
+\usepackage[utf8]{inputenc}
+\usepackage{marginnote}
+\usepackage[margin=1in]{geometry}
+%\usepackage[top=1.5cm, bottom=1.5cm, outer=2cm, inner=2cm, heightrounded, marginparwidth=4.0cm, marginparsep=.5cm]{geometry}
+\usepackage[normalem]{ulem}
+\usepackage{titletoc}
+\usepackage{enumerate}
+\usepackage{comment}
+\usepackage{xr}
+\usepackage{colortbl}
+%\usepackage{ntheorem}
+\usepackage[unicode=true]{hyperref}
+\onehalfspacing
+%\setstretch{1.2}
+
+\begin{document}
+	
+What about estimating the following?
+\begin{equation}
+y_{i,t} = \alpha + \sum_g D^g \left( \sum_{a} \delta_a^g D^a\right) + \Lambda X_{i,t} + \epsilon_{i,t},
+\end{equation} 	
+
+\noindent where $y_{i,t}$ is some outcome variable (e.g. hours, job satisfaction tenure etc.), $g$ indicate groups of individuals (voluntary separators, involuntary separators, J2J and remainers as you've defined them), $D^g$ are the associated group dummies, $D^a$ are age dummies and $X_{i,t}$ are control variables (probably most importantly education, occupation, gender and anything else really that the data has and could help explain the LHS variable). 
+
+Then, the coefficients of interest are the estimated life-cycle profiles $\delta_a^g$'s for different groups. I think that without controlling for anything (i.e. no $X_{i,t}$), you should simply recover what you have. In some sense, we could use this to tease out where some of the effects are coming from. For instance, thinking about wages - ``unconditionally'' there seems to be this penalty of separating. However, perhaps individuals don't differ in regards to their wages once we take into account tenure (and that even voluntary separators ``restart'' their tenure). 
+
+
+
+\end{document} 

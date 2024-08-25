@@ -1,0 +1,16 @@
+,DES,15-24,24-34,35-64
+1,"Lost job: retrenched, made redundant, employer went out of business, or no work was available",23.1283686,27.6094483,32.0640902
+2,"Unsatisfactory work arrangements, pay or hours",14.6354046,14.2879163,10.5212665
+3,Job ended: temporary or seasonal job,16.0004994,20.2908563,23.3487829
+4,Left or lost last job for other reasons,9.4218534,12.8806258,9.7933476
+5,"Self-employed: business closed down for economic reasons - went broke, liquidated, no work, no supply or no demand",0.5866898,1.2084874,3.185889
+6,Holiday job or returned to studies,5.6215847,2.6328691,0.7457914
+7,Own ill health or injury,2.0744143,3.2095923,3.3741748
+8,"Family reasons: got married, had children, looked after others, holiday, moved location or spouse transferred",0.6513809,1.2452015,1.1826268
+9,More than one reason: left last job,0.5103977,0.8878679,0.5716734
+10,To obtain a better job or conditions or just wanted a change,1.9994106,2.7536101,1.4151827
+11,More than one reason: lost last job for economic reasons (retrenched),0.3648624,0.4779332,0.5518999
+12,More than one reason: lost last job for non-economic reasons only,0.4437805,0.4601138,0.3639623
+13,Self-employed: business closed down or sold for non-economic reasons,NA,NA,0.2645824
+14,Dismissed,0.5911345,0.912272,0.4763633
+,.-1 no reason given or not asked (DERIVED),23.9702186,11.143206,12.1403668

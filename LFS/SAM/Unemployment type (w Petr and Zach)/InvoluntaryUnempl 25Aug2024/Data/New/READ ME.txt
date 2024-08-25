@@ -1,0 +1,39 @@
+File descriptions
+Author: Zach Hayward
+date:5/08/2024
+
+STOCK_BY_AGE_CLEARED- 
+
+This further breaks down the EU variable into EU_inv- As above but using the range              1110 <=REASLLJ<=1231
+EU_j2j- if they indicate that they left last employer because they were unsatisfied with work conditions and pay. 2014 or 2016
+and EU_vol- they left for some other voluntary reason. We use the range 2017<=REASLLJ<=2021
+EMP UNEMP and NILF variables are weighted stocks.
+
+This file also breaks down by age.
+
+
+STOCK_FLOW_BY_TYPE_v2.csv
+
+This is as above., However, we also don't aggregate by age in this one. 
+
+STOCK_FLOW_BY_TYPE.csv
+- This is sort of the aggregation of the so called "strict" and loose definitions of unemployment. In the sense that instead of having a separate J2J series  I aggregated the J2J reasons and the broad voluntary. 
+For more information I have included a key of the reasons that are in the data and the range above. 
+
+CODE	DEF
+1110	Lost job: retrenched, made redundant, employer went out of business, or no work was available
+1120	Self-employed: business closed down for economic reasons - went broke, liquidated, no work, no supply or no demand
+1130	More than one reason: lost last job for economic reasons (retrenched)
+1211	Dismissed
+1212	Job ended: temporary or seasonal job
+1213	Own ill health or injury
+1231	More than one reason: lost last job for non-economic reasons only
+2014	Unsatisfactory work arrangements, pay or hours
+2015	Holiday job or returned to studies
+2016	To obtain a better job or conditions or just wanted a change
+2017	Retired
+2018	Family reasons: got married, had children, looked after others, holiday, moved location or spouse transferred
+2019	To start own or new business
+2021	Self-employed: business closed down or sold for non-economic reasons
+2022	Left or lost last job for other reasons
+2032	More than one reason: left last job
