@@ -29,9 +29,11 @@ library(knitr)
 
 ## Insurance or a flat payment
 
-The Australian social security system was based on a similar principle to systems implemented in the United Kingdom and New Zealand through the 1930s and 1940s. Following the 1942 Beveridge Report's indication for the need for cradle to the grave **social insurance** to prevent hardship and encourage participation following World War II, Australia introduced the Social Security Act 1947.
+The Australian social security system was based on a similar principle to systems implemented in the United Kingdom and New Zealand through the 1930s and 1940s. Following the 1942 Beveridge Report's recommendation of a cradle to the grave **social insurance** to prevent hardship and encourage participation following World War II, Australia introduced the Social Security Act 1947.
 
-This act established a **flat rate** and **non-contributory** payment, with the rate paid varying due to the nature of the hardship experienced. This also took responsibility for such schemes largely away from individual States and thereby standardised treatment across Australia.
+The policy changes post-WWII were much broader than just transfer payments - with a series of other changes related to healthcare, education, and labour market regulation. Australia and New Zealand's Social Security Act's and following transfer system designed were predicated on the unique choices they made with regards to these broader policy settings [@castles1994].
+
+The Social Security act established a **flat rate** and **non-contributory** payment, with the rate paid varying due to the nature of the hardship experienced. This also took responsibility for such schemes largely away from individual States and thereby standardised treatment across Australia.
 
 The element of unemployment benefits that reflects a flat rate, non-contributory, payment is typically called **unemployment assistance** (UA) [@oecd2024a][@oecd2024b]. XXX
 
@@ -90,7 +92,7 @@ In this note we are focused solely on ***job loss risk***. Such an event is deem
 
 The definition of **income** and how it can be measured and considered is outlined in [@Canberra2011]. The relevant income measure reflects individual well-being through their "ability to acquire the goods and services they need to satisfy their needs".
 
-In this way, the definition of income used to assess eligibility distinguishes itself from a purely flow income concept (i.e. Haig-Simons income - of the concept of potential income without lowering a stock of assets), as the stock of assets an individual has allows them to satisfy these needs.
+In this way, the definition of income used to assess eligibility distinguishes itself from a purely flow income concept (i.e. Haig-Simons income - of the concept of potential income without lowering a stock of assets [@simons1938] [@haig1921], as the stock of assets an individual has allows them to satisfy these needs.
 
 **The income unit** reflects a set of individuals who share resources, and so may be able to consume more than sum of their private incomes would suggest. The primary sharing that is often considered is intra-household sharing, or what is termed **economies of scale in the household**.
 
@@ -98,7 +100,9 @@ XXX
 
 The **personal income tax system** alone reflects a view of the **ability to pay** out of flow income at the individual level. It is the application of the benefit system that then reflects a broader view regarding peoples ability to meet a minimum standard.
 
-Within this context, social policy settings that are focused on this **minimum standard** will apply rules about assets and family structure which reflect these views.
+Within this context, social policy settings that are focused on this **minimum standard** will apply rules about assets and family structure which reflect these views - and create a distinction between how a dollar of market income is treated as opposed to a dollar of transfer income:
+
+\[table comparing tax and benefit treatment\]
 
 ## Rationale for varying systems
 
@@ -130,6 +134,14 @@ An alternative to this that would not suffer from the same concerns around moral
 In Australia, there is no clear UI element to the income support system. As a result, if market failures were pervasive in the market for job loss insurance then the introduction of such a policy could help to solve this. This could allow for more efficient levels of personal savings, better job matching, and lower welfare costs associated with job loss. However, this has to be seen in conjunction with the large compulsory retirement savings program - which is already forcing individuals to self-insure against the final job ending event in retirement.
 
 ### Rational for varying payment systems and rates
+
+There are three key factors behind the determination of payment rates:
+
+1.  The *length* of eligibility and receipt,
+
+2.  The generosity of the payment - both relative to prior income and relative to average earnings,
+
+3.  Means testing and the form of income a payment is abated against.
 
 XXX
 

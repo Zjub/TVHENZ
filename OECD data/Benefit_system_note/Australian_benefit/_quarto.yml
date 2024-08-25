@@ -15,6 +15,7 @@ book:
     #- 05-evidence.qmd
     - 06-iron.qmd
     - 07-insurance.qmd
+    - 08-policy.qmd
     - references.qmd
 
 bibliography: references.bib
