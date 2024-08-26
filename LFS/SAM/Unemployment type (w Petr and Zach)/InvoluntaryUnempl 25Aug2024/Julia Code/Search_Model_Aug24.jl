@@ -4,6 +4,10 @@ using Random
 using Plots
 using Statistics
 
+include("get_piH_new.jl")
+include("get_kappas.jl")
+include("get_prods.jl")
+
 # 0. Parameters/targets
 #==========================================================================#
 
