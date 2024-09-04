@@ -19,6 +19,8 @@ library(theme61)
 library(gsynth)
 library(Synth)
 library(SCtools)
+library(rvest)
+library(zoo)
 
 SCdata <- read_csv("SCdata.csv")[,1:8]
 
@@ -71,15 +73,23 @@ date <- seq.Date(as.Date("2006-07-01"),as.Date("2018-06-01"),by="month")
 graphdf <- data.frame(date = date,actual = actual_21[,1],synthetic = synthetic_21[,1]) %>% pivot_longer(!date,names_to = "variable",values_to = "value")
 
 ggplot(graphdf,aes(x=date,y=value/1000,colour=variable)) + geom_line() + 
-  labs_e61(title = "21 year olds receiving UB",subtitle = "Monthly recipient number (000s)",y="",x="",sources = c("ABS","e61")) + 
+  labs_e61(subtitle = "Monthly recipient number (000s)",y="",x="") + 
   scale_colour_manual(values = c(palette_e61(n=2)[1],palette_e61(n=2)[2])) + 
   scale_x_date(date_breaks = "2 years",date_labels = "%Y",limits=c(as.Date("2006-07-01"),as.Date("2017-12-01")),expand=c(0,0)) + 
   geom_vline(xintercept = as.Date("2012-07-01")) + 
-  annotate("text",label="Synthetic",x=as.Date("2014-07-01"),y=22,colour=e61_palette(n=2)[2],size=4) + 
-  annotate("text",label="Actual",x=as.Date("2014-07-01"),y=13,colour=e61_palette(n=2)[1],size=4)
+  plot_label(c("Actual 21 year olds","Synthetic 21 year olds"),x=c(as.Date("2007-01-01"),as.Date("2007-01-01")),y=c(12,14))
 
 
-#save_e61("SC_21.png",height=9,width=12)
+save_e61("SC_UB21.pdf",pad_width = 1)
+
+ggplot(graphdf,aes(x=date,y=value/1000,colour=variable)) + geom_line() + 
+  labs_e61(title = "Unemployment receipt for the young",subtitle = "Monthly recipient number (000s)",y="",x="",sources = c("ABS","e61")) + 
+  scale_colour_manual(values = c(palette_e61(n=2)[1],palette_e61(n=2)[2])) + 
+  scale_x_date(date_breaks = "2 years",date_labels = "%Y",limits=c(as.Date("2006-07-01"),as.Date("2017-12-01")),expand=c(0,0)) + 
+  geom_vline(xintercept = as.Date("2012-07-01")) + 
+  plot_label(c("Actual 21 year olds","Synthetic 21 year olds"),x=c(as.Date("2007-01-01"),as.Date("2007-01-01")),y=c(12,14))
+
+save_e61("SC_UB21.png",pad_width = 1,res=2)
 
 
 # Below is only in SCtools now - which isn't working https://bcastanho.github.io/install_sctools
@@ -205,10 +215,114 @@ cond_earnings_dt <- melt(job_trans_dt[,.(age,year,avg_labour_inc_curr,avg_labour
 ggplot(cond_earnings_dt[age %in% c(19,20,21,22,23)],aes(x=year,y=value/1000,colour=as.factor(age))) + geom_line() +
   facet_wrap(~variable) +
   theme_e61(legend = "bottom") +
-  scale_y_continuous_e61(limits = c(4,))
+  scale_y_continuous_e61(limits = c(4,14,2)) +
+  geom_vline(xintercept = 2012,linetype="dotted")
   
 
 
 #### Add some of the aggregate labour force data ----
+
+LS <- read_abs(cat_no = "6202.0") 
+setDT(LS)
+
+LS <- LS[series_type == "Seasonally Adjusted" | series_type == "Trend" ][grep("^Table (13|17|18)\\.", table_title)][series == "Unemployment rate ;  Persons ;"]
+
+LS <- LS[, age_range := sub(".*status for ([0-9-]+) year olds.*", "\\1", table_title)][,.(date,series_type,age_range,value)]
+
+ggplot(LS,aes(x=date,y=value,colour=age_range)) + geom_line() + theme_e61(legend = "bottom")
+
+ggplot(LS[date >= as.Date("2010-01-01")], aes(x = date, y = value/100, colour = age_range, linetype = series_type)) +
+  geom_line() +
+  theme_e61(legend = "bottom") +
+  scale_linetype_manual(values = c("Seasonally Adjusted" = "dashed", "Trend" = "solid")) +
+  scale_x_date(date_breaks = "2 year", date_labels = "%Y") + 
+  labs_e61(title = "Unemployment rates", subtitle ="Monthly, percent of labour force", y="",sources = c("ABS")) +
+  scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,0.25,0.05)) +
+  plot_label(label = c("15-19","15-24","15-64"),x=c(as.Date("2022-01-01"),as.Date("2022-01-01"),as.Date("2022-01-01")),y=c(0.23,0.21,0.19))
+
+ggplot(LS[date >= as.Date("2010-01-01")], aes(x = date, y = value/100, colour = age_range, linetype = series_type)) +
+  geom_line() +
+  scale_linetype_manual(values = c("Seasonally Adjusted" = "dashed", "Trend" = "solid")) +
+  scale_x_date(date_breaks = "2 year", date_labels = "%Y") + 
+  labs_e61(subtitle ="Monthly, percent of labour force", y="") +
+  scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,0.25,0.05)) +
+  plot_label(label = c("15-19","15-24","15-64"),x=c(as.Date("2022-01-01"),as.Date("2022-01-01"),as.Date("2022-01-01")),y=c(0.23,0.21,0.19))
+
+
+save_e61("Unemployment_Rates.pdf")
+
+ggplot(LS[date >= as.Date("2017-01-01")], aes(x = date, y = value/100, colour = age_range, linetype = series_type)) +
+  geom_line() +
+  scale_linetype_manual(values = c("Seasonally Adjusted" = "dashed", "Trend" = "solid")) +
+  scale_x_date(date_breaks = "2 year", date_labels = "%Y") + 
+  labs_e61(title="Youth Unemployment rising",subtitle ="Monthly, percent of labour force", y="",x="",sources = c("ABS","e61")) +
+  scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,0.25,0.05)) +
+  plot_label(label = c("15-19","15-24","15-64"),x=c(as.Date("2022-01-01"),as.Date("2022-01-01"),as.Date("2022-01-01")),y=c(0.23,0.21,0.19))
+
+save_e61("Unemployment_Rates.png",res=2)
+
+# Contribution
+
+LS2 <- read_abs(cat_no = "6202.0") 
+setDT(LS2)
+
+LS2 <- LS2[series_type == "Seasonally Adjusted" | series_type == "Trend" ][grep("^Table (13|17|18)\\.", table_title)]
+
+
+### Add in payment rate plots
+
+legislation_url <- "https://guides.dss.gov.au/social-security-guide/5/2/1/20"
+webpage <- read_html(legislation_url)
+
+tables <- webpage %>% html_nodes("table") %>% html_table()
+
+# Table 6 (3 on the site) is youth allowance with columns for both at home and not at home rates.  Table 9 is the UB (6 on the site).
+
+YA <- tables[[6]]
+setDT(YA)
+
+YA <- YA[4:nrow(YA)][!30]
+
+YA[, home_pay := as.numeric(gsub("[^0-9.]", "", `At home ($ pw)`))][,away_pay := as.numeric(`Away from home ($ pw)`)]
+
+YA[30:.N,":=" (home_pay = home_pay/2, away_pay = away_pay/2)]
+YA[, Date := as.Date(Date, format = "%d/%m/%Y")]
+
+JSP <- tables[[9]]
+setDT(JSP)
+
+JSP <- JSP[9:.N][!59]
+JSP[, JSP_pay := as.numeric(gsub("[^0-9.]", "", `Rate ($ pw)`))]
+JSP[59:.N, JSP_pay := JSP_pay/2]
+JSP[, Date := as.Date(Date, format = "%d/%m/%Y")]
+
+all <- merge(YA[,.(Date,home_pay,away_pay)],JSP[,.(Date,JSP_pay)],by="Date",all=TRUE)
+
+all[, JSP_pay := na.locf(JSP_pay, na.rm = FALSE)]
+all[, away_pay := na.locf(away_pay, na.rm = FALSE)]
+all[, home_pay := na.locf(home_pay, na.rm = FALSE)]
+
+ggplot(all[Date >= as.Date("2010-01-01")], aes(x = Date)) +
+  geom_line(aes(y = JSP_pay), colour = palette_e61(n=3)[1]) +
+  geom_line(aes(y = away_pay), colour = palette_e61(n=3)[2]) +
+  geom_line(aes(y = home_pay), colour = palette_e61(n=3)[3]) +
+  labs_e61(subtitle = "Weekly Payment rates*",y="") + # Start is to point out this excludes the COVID Supplement
+  scale_y_continuous_e61(labels=scales::dollar_format(),limits=c(100,400,50)) + 
+  plot_label(c("JSP","YA away from home","YA at home"),y=c(370,340,310),x=c(as.Date("2010-01-01"),as.Date("2010-01-01"),as.Date("2010-01-01"))) +
+  scale_x_date(date_breaks = "2 year", date_labels = "%Y")
+
+save_e61("Payment_rates.pdf")
+
+ggplot(all[Date >= as.Date("2010-01-01")], aes(x = Date)) +
+  geom_line(aes(y = JSP_pay), colour = palette_e61(n=3)[1]) +
+  geom_line(aes(y = away_pay), colour = palette_e61(n=3)[2]) +
+  geom_line(aes(y = home_pay), colour = palette_e61(n=3)[3]) +
+  labs_e61(title = "Youth payments are lower",subtitle = "Weekly Payment rates*",y="",x="",sources = c("e61","Social Security Act")) + # Start is to point out this excludes the COVID Supplement
+  scale_y_continuous_e61(labels=scales::dollar_format(),limits=c(100,400,50)) + 
+  plot_label(c("JSP","YA away from home","YA at home"),y=c(370,340,310),x=c(as.Date("2010-01-01"),as.Date("2010-01-01"),as.Date("2010-01-01"))) +
+  scale_x_date(date_breaks = "2 year", date_labels = "%Y")
+
+save_e61("Payment_rates.png",res=2)
+
 
 
