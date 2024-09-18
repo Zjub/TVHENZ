@@ -21,9 +21,9 @@ library(zoo)
 library(Hmisc)
 library(seasonal)
 
-remotes::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
+#remotes::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
 
-setwd("C:/MN personal planning/LFS/Plots")
+#setwd("C:/MN personal planning/LFS/Plots")
 
 # HPfilter number
 
@@ -378,3 +378,8 @@ WPI[,dates := seq.Date(as.Date("2004-03-01"),as.Date("2024-03-01"),by="3 months"
 ggplot(WPI,aes(x=dates,y=RWG/100)) + geom_line() + geom_hline(yintercept = 0) + scale_y_continuous_e61(label=scales::percent_format(),limits=c(-0.04,0.02,0.01)) + labs_e61(title="Real Wage growth",subtitle = "Quality adjusted WPI minus CPI, annual",y="",x="")
 
 save_e61("WPI.png",chart_type = "PPT",res=2,pad_width = 1,auto_scale = FALSE)
+
+## Compare WPI to productivity growth
+
+
+

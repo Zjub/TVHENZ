@@ -14,9 +14,9 @@ include("get_prods.jl")
 # Standard choices
 par = Dict(
     :beta => 0.996,          # discount factor (monthly frequency)
-    :mu => 0.5,              # elasticity of matching function (estimate)
+    :mu => 0.5,              # elasticity of matching function (estimate) # 0.5
     :eta => 0.5,             # bargaining power (Hosios condition)
-    :b => 0.53               # Australian replacement rate
+    :b => 0              # Australian replacement rate # 0.53
 )
 
 # Production parameters (some are normalizations, others need calibrating)
@@ -104,7 +104,7 @@ wLL = par[:eta] * (par[:yLL] + par[:kappaL] * par[:theta] - par[:piH] * par[:fac
 wLH = par[:eta] * (par[:yLH] + par[:kappaH] * par[:theta] + (1 - par[:piH]) * par[:factor]) + (1 - par[:eta]) * par[:b]
 wHL = par[:eta] * (par[:yHL] + par[:kappaL] * par[:theta] - (1 - par[:piH]) * par[:factor]) + (1 - par[:eta]) * par[:b]
 
-# Separating?
+# Separating
 JHL = par[:yHL] - wHL
 JLH = par[:yLH] - wLH
 
@@ -121,7 +121,7 @@ w_remain = (1 - par[:delta]) / remain * (par[:eHH] * wHH + par[:eLL] * wLL)
 w_all_seps = par[:volsh] * w_vol_seps + (1 - par[:volsh]) * w_invol_seps
 w_all = (par[:eHH] * wHH + par[:eLL] * wLL + par[:eHL] * wHL + par[:eLH] * wLH) / (1 - par[:u])
 
-println("separation? (job value of HL and LH), replacement rate, voluntary wage penalty (-13.2% in data) and separation wage penalty (-16.3% in data)")
+println("separation (job value of HL and LH), replacement rate, voluntary wage penalty (-13.2% in data) and separation wage penalty (-16.3% in data)")
 println([JHL, JLH, par[:b] / w_all_seps, log(w_vol_seps) - log(w_invol_seps), log(w_all_seps) - log(w_remain)])
 
 # Simulate separations and wage scars

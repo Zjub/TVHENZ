@@ -1,4 +1,5 @@
 ### Using different synthetic control estimates based on the aggregated cleared data from datalab.
+### Update - this data is wrong based on more recent pulls. Will included updated cleared data soon.
 # Last author: Matt Nolan
 # Date data cleared: 29/06/2023
 # Last edit: 02/09/2024
@@ -185,6 +186,13 @@ ggplot(SC_time,aes(x=year,y=value,colour=as.factor(age))) + geom_line() +
   facet_wrap(~ variable) + 
   geom_vline(xintercept = 2012,linetype="dotted")
 
+ggplot(SC_time[variable == "threemSR" & age == 21],aes(x=year,y=value)) + geom_line() +
+  scale_y_continuous_e61(limits = c(0.1,0.8,0.2),labels=scales::percent_format(),y_top=FALSE) +
+  labs_e61(y="",x="Entry FY",title = "Survival Rate on Unemployment Benefit",subtitle = "Three-month survival, 21 year olds") +
+  geom_vline(xintercept = 2012,linetype="dotted") +
+  scale_x_continuous(breaks=seq(2006,2018,by=2))
+
+save_e61("3msurv_Rates.png",res=2,pad_width = 1)
 
 #### Exit and Job Transition plots ----
 
@@ -202,6 +210,35 @@ job_trans_dt <- read.csv("JobTrans.csv")
 setDT(job_trans_dt)
 
 emp_prob_dt <- melt(job_trans_dt[,.(age,year,prop_work_curr,prop_work_fut)],id.vars = c("age","year"))
+
+ggplot(emp_prob_dt[age %in% c(19,20,21,22,23) & variable == "prop_work_fut"],
+       aes(x = year, y = value, colour = as.factor(age), linetype = as.factor(age), size = as.factor(age))) +
+  geom_line() +
+  labs_e61(title = "Work probabilities recipients",
+           subtitle = "Recorded in PAYG in the next FY",
+           y = "", x = "Receipt FY") +
+  scale_y_continuous_e61(limits = c(0.2, 0.6, 0.1), labels = scales::percent_format()) +
+  geom_vline(xintercept = 2012, linetype = "dotted") +
+  scale_x_continuous(breaks = seq(2006, 2018, by = 2)) +
+  scale_colour_manual(values = c(palette_e61(5)[1], 
+                                 palette_e61(5)[2], 
+                                 palette_e61(5)[3], 
+                                 palette_e61(5)[4], 
+                                 palette_e61(5)[5])) +
+  scale_linetype_manual(values = c("dashed", "dashed", "solid", "dashed", "dashed")) +
+  scale_size_manual(values = c(0.2, 0.2, 0.75, 0.2, 0.2)) +  # Larger size for the third line
+  plab(label = c("19","20","21"),
+                                     x = rep(2015,times=),
+                                     y=seq(0.54,0.48,by=-0.03))  + 
+  plab(label = "Age",x=2015.7,y=0.58,colour="black",size = 4) +
+  plab(label = c("22","23"),
+       x=rep(2017,times=2),
+       y=seq(0.54,0.51,by=-0.03),
+       colour = c(palette_e61(5)[4],palette_e61(5)[5]))
+
+save_e61("work_probs.png",res=2,pad_width = 1)
+
+
 
 ggplot(emp_prob_dt[age %in% c(19,20,21,22,23)],aes(x=year,y=value,colour=as.factor(age))) + geom_line() +
   facet_wrap(~variable) +
@@ -266,8 +303,13 @@ save_e61("Unemployment_Rates.png",res=2)
 LS2 <- read_abs(cat_no = "6202.0") 
 setDT(LS2)
 
-LS2 <- LS2[series_type == "Seasonally Adjusted" | series_type == "Trend" ][grep("^Table (13|17|18)\\.", table_title)]
+LS2 <- LS2[series_type == "Seasonally Adjusted" | series_type == "Trend" ][grep("^Table (13|17|18)\\.", table_title)][series == "Unemployed total ;  Persons ;"]
 
+LS2 <- LS2[, age_range := sub(".*status for ([0-9-]+) year olds.*", "\\1", table_title)][,.(date,series_type,age_range,value)]
+
+difference <- dcast(LS2[date %in% c(as.Date("2022-07-01"),as.Date("2024-07-01")) & series_type == "Seasonally Adjusted"], series_type + age_range ~ date, value.var = "value")[,diff := `2024-07-01` - `2022-07-01`]
+
+difference$diff[2]/difference$diff[3]
 
 ### Add in payment rate plots
 
