@@ -265,17 +265,17 @@ if MakePlots == 1
     xlims!(0, 1)
 
     # Income distribution histogram
-    p5 = histogram(ysim[:, Tsim], bins=ygrid, color=[0.0, 0.5, 0.5], edgecolor=:blue, label="", grid=true)
+    p5 = histogram(ysim[:, Tsim], bins=ygrid, edgecolor=:blue, label="", grid=true)
     title!("Income distribution")
     
     # Asset distribution histogram
-    p6 = histogram(asim[:, Tsim], bins=0:0.05:2, color=[0.7, 0.7, 0.7], edgecolor=:black, label="", grid=true)
+    p6 = histogram(asim[:, Tsim], bins=0:0.05:2, edgecolor=:black, label="", grid=true)
     title!("Asset distribution")
 
     # Mean asset convergence
-    p7 = plot(1:Tsim, mean(asim, dims=1), label="", linewidth=1.5, color="black", grid=true)
-    title!("Mean Asset Convergence")
-    ylabel!("Time Period")
+    #p7 = plot(1:Tsim, mean(asim, dims=1), label="", linewidth=1.5, grid=true)
+    #title!("Mean Asset Convergence")
+    #ylabel!("Time Period")
 
     # Display all the plots in a grid layout
     plot(p1, p2, p3, p4, layout=(2, 2))
@@ -283,7 +283,7 @@ if MakePlots == 1
     # Combine into a 2x2 grid and save as a single PNG file
     combined_plot = plot(p1, p2, p3, p4, layout = @layout [a b; c d])
     savefig(combined_plot, "combined_plots.png")  # Save the combined grid as "combined_plots.png"
-    combined_plot2 = plot(p1, p2, p3, p4,p5,p6,p7 layout = @layout [a b; c d; e f; g])
+    combined_plot2 = plot(p1, p2, p3, p4,p5,p6, layout = @layout [a b; c d; e f])
     savefig(combined_plot2, "combined_plots2.png")  # Save the combined grid as "combined_plots.png"
 
     # Asset distribution statistics

@@ -87,13 +87,13 @@ while iter <= max_iter && cdiff>tol_iter
     conlast = con;
     
     emuc = u1(conlast)*ydist; 
-    muc1 = beta.*R.*emuc; 
-    con1 = u1inv(muc1);
+    muc1 = beta.*R.*emuc; % MU of consumption today based on future emuc/assets
+    con1 = u1inv(muc1); % current consumption determined by assets tomorrow
     
     % loop over income
     for iy = 1:ny
         
-        ass1(:,iy) = (con1 + agrid -ygrid(iy))./R;
+        ass1(:,iy) = (con1 + agrid -ygrid(iy))./R; % assets today based on the asset grid of all asset choices for tomorrow
         
         % loop over current period assets
         for ia  = 1:na 
