@@ -8,7 +8,7 @@ library(tidyverse)
 library(gtsummary)
 library(zoo)
 library(ggplot2)
-library(theme61)
+library(theme61) # comment out of non-e61 employee
 library(fixest)
 library(skimr)
 library(modelsummary)
@@ -20,19 +20,19 @@ set.seed(123)
 gamma <- 1.5  # Intercept for inflation (replaces c)
 alpha <- 2    # Intercept for output
 bG <- 0.5     # Sensitivity of output to fiscal policy
-bB <- 0.3     # Sensitivity of output to monetary policy
-dG <- 0.4     # Sensitivity of inflation to fiscal policy
-dB <- 0.6     # Sensitivity of inflation to monetary policy
+bB <- 0.5     # Sensitivity of output to monetary policy
+dG <- 0.5     # Sensitivity of inflation to fiscal policy
+dB <- 0.5     # Sensitivity of inflation to monetary policy
 
 # New separate weights for inflation in the loss functions
-mu_G <- 0.7  # Government's weight on inflation
+mu_G <- 0.9  # Government's weight on inflation
 mu_B <- 0.9  # Central bank's weight on inflation
 
 # Target inflation and output
 pi_G_star <- 2
-pi_B_star <- 1.5
+pi_B_star <- 2
 y_G_star <- 3
-y_B_star <- 2
+y_B_star <- 3
 
 # Precommitment costs
 cost_G_precommit <- 0.5
