@@ -10,7 +10,7 @@ library(tidyverse)
 library(gtsummary)
 library(zoo)
 library(ggplot2)
-library(theme61) # comment out of non-e61 employee
+#library(theme61) # comment out of non-e61 employee
 library(fixest)
 library(skimr)
 library(modelsummary)
@@ -20,8 +20,8 @@ library(nleqslv)
 set.seed(123)
 
 # Parameters for the model
-gamma <- 1.5  # Intercept for inflation [setting this below alpha creates a trade-off where inflation is lower than output]
-alpha <- 1.5    # Intercept for output
+gamma <- 1.5  # Intercept for inflation [setting this below pi_start creates a situation where people want higher inflation]
+alpha <- 2.5    # Intercept for output
 bG <- 0.5     # Sensitivity of output to fiscal policy
 bB <- 0.5     # Sensitivity of output to monetary policy
 dG <- 0.5     # Sensitivity of inflation to fiscal policy
@@ -51,7 +51,7 @@ beta_B_star <- 0 # Central bank's preferred m
 # Government's best response to monetary policy choice by the central bank
 BR_G <- function(m) {
   numerator <- -(bG * (1 - mu_G) * (y_G_star - alpha + bB*m) + dG * mu_G * (pi_G_star - gamma + dB*m) - theta_G_star*eG*beta_G_star) 
-  denominator <- ((bG^2) * (1 - mu_G) + (dG^2) * mu_G + theta_G_star*eG)
+  denominator <- ((bG^2) * (1 - mu_G) + (dG^2) * mu_G + theta_G_star*(eG)^2)
   f_star <- numerator / denominator
   return(f_star)
 }
@@ -59,7 +59,7 @@ BR_G <- function(m) {
 # Central bank's best response to fiscal policy choice by the government
 BR_B <- function(f) {
   numerator <- -(bB * (1 - mu_B) * (y_B_star - alpha + bG*f) + dB * mu_B * (pi_B_star - gamma + dG*f) - theta_B_star*eB*beta_B_star) 
-  denominator <- ((bB^2) * (1 - mu_B) + (dB^2) * mu_B + theta_B_star*eB)
+  denominator <- ((bB^2) * (1 - mu_B) + (dB^2) * mu_B + theta_B_star*(eB)^2)
   m_star <- numerator / denominator
   return(m_star)
 }
