@@ -1,3 +1,10 @@
+## Two-choice game to show link for dynamic game. Solved largely numerically, switch to an anaytical solution using Julia.
+# Last edit: 3/10/2024
+# Author: Matt Nolan
+
+## Issues
+# Losses don't look correct, investigate code further
+
 gc()
 rm(list=ls())
 library(haven)
@@ -22,8 +29,8 @@ bG <- 0.5     # Sensitivity of output to fiscal policy
 bB <- 0.5     # Sensitivity of output to monetary policy
 dG <- 0.5     # Sensitivity of inflation to fiscal policy
 dB <- 0.5     # Sensitivity of inflation to monetary policy
-eG <- 0.1     # Penalty factor on change in fiscal policy
-eB <- 0.1     # Penalty factor on change in monetary policy
+eG <- 0.5     # Penalty factor on change in fiscal policy
+eB <- 0.5     # Penalty factor on change in monetary policy
 
 # Weights for inflation in the loss functions
 mu_G <- 0  # Government's weight on inflation
@@ -44,15 +51,15 @@ beta_B_star <- 0  # Central bank's preferred monetary policy
 # Adjustment cost parameters
 lambda_G <- 0.5  # Penalty factor for changes in fiscal policy
 lambda_B <- 0.5  # Penalty factor for changes in monetary policy
+delta <- 0.9     # Discount factor (only used for optimisation, not for reported graphs)
 
 # Stage 2: Best response functions for f2 and m2 with adjustment costs
-
 # Government's best response for f2, given m2 and f1
 BR_G_stage2 <- function(m2, f1) {
-  numerator <- bG * (1 - mu_G) * (y_G_star - alpha + bB * m2) + 
-    dG * mu_G * (pi_G_star - gamma + dB * m2) + 
-    theta_G_star * beta_G_star + 
-    lambda_G * f1
+  numerator <- -(bG * (1 - mu_G) * (y_G_star - alpha + bB * m2) + 
+    dG * mu_G * (pi_G_star - gamma + dB * m2) - 
+    theta_G_star * beta_G_star * eG - 
+    lambda_G * f1)
   
   denominator <- bG^2 * (1 - mu_G) + dG^2 * mu_G + theta_G_star + lambda_G
   f2_star <- numerator / denominator
@@ -61,10 +68,10 @@ BR_G_stage2 <- function(m2, f1) {
 
 # Central bank's best response for m2, given f2 and m1
 BR_B_stage2 <- function(f2, m1) {
-  numerator <- bB * (1 - mu_B) * (y_B_star - alpha + bG * f2) + 
-    dB * mu_B * (pi_B_star - gamma + dG * f2) + 
-    theta_B_star * beta_B_star + 
-    lambda_B * m1
+  numerator <- -(bB * (1 - mu_B) * (y_B_star - alpha + bG * f2) + 
+    dB * mu_B * (pi_B_star - gamma + dG * f2) - 
+    theta_B_star * beta_B_star * eB - 
+    lambda_B * m1)
   
   denominator <- bB^2 * (1 - mu_B) + dB^2 * mu_B + theta_B_star + lambda_B
   m2_star <- numerator / denominator
@@ -109,7 +116,7 @@ BR_G_stage1 <- function(m1) {
       theta_G_star * (beta_G_star - eG*f2_guess)^2 +
       lambda_G * (f2_guess - f1)^2  # Adjustment cost
     
-    return(L_G_stage1 + L_G_stage2)
+    return(L_G_stage1 + delta*L_G_stage2)
   }
   
   # Find f1 that minimizes total loss
@@ -155,7 +162,7 @@ BR_B_stage1 <- function(f1) {
       theta_B_star * (beta_B_star - eB*m2)^2 +
       lambda_B * (m2 - m1)^2  # Adjustment cost
     
-    return(L_B_stage1 + L_B_stage2)
+    return(L_B_stage1 + delta*L_B_stage2)
   }
   
   # Find m1 that minimizes total loss
@@ -177,7 +184,7 @@ effective_loss_G_dynamic <- function(f1, m1, f2, m2) {
     theta_G_star * (beta_G_star - eG*f2)^2 +
     lambda_G * (f2 - f1)^2  # Adjustment cost for fiscal policy
   
-  return(list(total_loss = L_G_stage1 + L_G_stage2, stage1_loss = L_G_stage1, stage2_loss = L_G_stage2))
+  return(list(total_loss = L_G_stage1 + delta*L_G_stage2, stage1_loss = L_G_stage1, stage2_loss = L_G_stage2)) # Not discounting stage2 loss alone
 }
 
 # Dynamic loss function for the central bank, considering both stages and adjustment costs
@@ -193,7 +200,7 @@ effective_loss_B_dynamic <- function(m1, f1, m2, f2) {
     theta_B_star * (beta_B_star - eB*m2)^2 +
     lambda_B * (m2 - m1)^2  # Adjustment cost for monetary policy
   
-  return(list(total_loss = L_B_stage1 + L_B_stage2, stage1_loss = L_B_stage1, stage2_loss = L_B_stage2))
+  return(list(total_loss = L_B_stage1 + delta*L_B_stage2, stage1_loss = L_B_stage1, stage2_loss = L_B_stage2)) # Not discounting stage2 loss alone
 }
 
 
@@ -454,4 +461,4 @@ ggplot(results_long, aes(x = Stage, y = Value, fill = Outcome_Type)) +
   geom_bar(stat = "identity", position = "dodge", width = 0.6) +
   labs(title = "Output and Inflation (Nash vs Cooperative vs Static Nash)", 
        y = "Outcome Value", x = "Stage") +
-  theme_minimal()
+  theme_minimal() + geom_hline(yintercept = 2,linetype="dashed")
