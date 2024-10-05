@@ -21,7 +21,7 @@ set.seed(123)
 
 # Parameters for the model
 gamma <- 1.5  # Intercept for inflation [setting this below pi_start creates a situation where people want higher inflation]
-alpha <- 2.0    # Intercept for output
+alpha <- 1.5    # Intercept for output
 bG <- 0.5     # Sensitivity of output to fiscal policy
 bB <- 0.5     # Sensitivity of output to monetary policy
 dG <- 0.5     # Sensitivity of inflation to fiscal policy
@@ -218,6 +218,15 @@ f_cooperative <- cooperative_opt$f
 m_cooperative <- cooperative_opt$m
 cooperative_outcomes <- compute_inflation_output(f_cooperative, m_cooperative)
 
+# Individual losses
+utility_individual <- function(f, m) {
+  uG <- -(mu_G * (pi_G_star - (gamma - dG * f - dB * m))^2 + (1 - mu_G) * (y_G_star - (alpha - bG * f - bB * m))^2 + theta_G_star*(beta_G_star - eG*f)^2)
+  uB <- -(mu_B * (pi_B_star - (gamma - dG * f - dB * m))^2 + (1 - mu_B) * (y_B_star - (alpha - bG * f - bB * m))^2 + theta_B_star*(beta_B_star - eB*m)^2)
+  return(list(uG,uB))
+}
+
+utility_individual(-1,0)[[2]]
+
 # Compare outcomes for all scenarios
 outcomes_df <- data.frame(
   Scenario = c("Nash", "Government Precommits", "Central Bank Precommits", "Both Precommit", "Cooperative"),
@@ -225,7 +234,8 @@ outcomes_df <- data.frame(
   Monetary_Policy = c(nash_result$monetary, precommit_result_gov$monetary, precommit_result_cb$monetary, precommit_result_both_independent$monetary, m_cooperative),
   Output = c(nash_outcomes$output, precommit_outcomes_gov$output, precommit_outcomes_cb$output, precommit_outcomes_both_independent$output, cooperative_outcomes$output),
   Inflation = c(nash_outcomes$inflation, precommit_outcomes_gov$inflation, precommit_outcomes_cb$inflation, precommit_outcomes_both_independent$inflation, cooperative_outcomes$inflation),
-  Total_Utility = c(utility(nash_result$fiscal,nash_result$monetary),utility(precommit_result_gov$fiscal,precommit_result_gov$monetary),utility(precommit_result_cb$fiscal,precommit_result_cb$monetary),utility(precommit_result_both_independent$fiscal,precommit_result_both_independent$monetary),utility(f_cooperative,m_cooperative))
+  Fiscal_Utility = c(utility_individual(nash_result$fiscal,nash_result$monetary)[[1]],utility_individual(precommit_result_gov$fiscal,precommit_result_gov$monetary)[[1]],utility_individual(precommit_result_cb$fiscal,precommit_result_cb$monetary)[[1]],utility_individual(precommit_result_both_independent$fiscal,precommit_result_both_independent$monetary)[[1]],utility(f_cooperative,m_cooperative)/2),
+  Monetary_Utility = c(utility_individual(nash_result$fiscal,nash_result$monetary)[[2]],utility_individual(precommit_result_gov$fiscal,precommit_result_gov$monetary)[[2]],utility_individual(precommit_result_cb$fiscal,precommit_result_cb$monetary)[[2]],utility_individual(precommit_result_both_independent$fiscal,precommit_result_both_independent$monetary)[[2]],utility(f_cooperative,m_cooperative)/2)
 )
 
 # Reshape fiscal and monetary policy data for graphs
@@ -242,9 +252,13 @@ ggplot(policy_df_long, aes(x = Scenario, y = Value, fill = Policy_Type)) +
 
 #save_e61("Relative_Looseness.png", pad_width = 1, res = 2)
 
-ggplot(policy_df_long, aes(x = Scenario, y = Total_Utility, fill = Policy_Type)) +
+loss_df_long <- outcomes_df %>%
+  pivot_longer(cols = c(Fiscal_Utility, Monetary_Utility), 
+               names_to = "Policy_Type", values_to = "Value")
+
+ggplot(loss_df_long, aes(x = Scenario, y = Value, fill = Policy_Type)) +
   geom_bar(stat = "identity", position = "dodge", width = 0.6) +
-  labs(title = "Loss Across Scenarios", 
+  labs(title = "Fiscal and Monetary Policy Loss Scenarios", 
        y = "Policy Looseness", x = "Scenario") +
   theme_minimal()
 
@@ -258,7 +272,9 @@ ggplot(outcome_df_long, aes(x = Scenario, y = Value, fill = Outcome_Type)) +
   geom_bar(stat = "identity", position = "dodge", width = 0.6) +
   labs(title = "Output and Inflation Across Scenarios", 
        y = "Outcome Values", x = "Scenario") +
-  theme_minimal() + geom_hline(yintercept = pi_B_star,linetype = "dashed")
+  theme_minimal() + 
+  geom_hline(yintercept = pi_B_star, linetype = "dashed") +  
+  coord_cartesian(ylim = c(min(outcome_df_long$Value) - 0.5, max(outcome_df_long$Value) + 0.2))
 
 #save_e61("Outcomes.png", pad_width = 1, res = 2)
 

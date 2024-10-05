@@ -1,4 +1,4 @@
-## Two-choice game to show link for dynamic game. Solved largely numerically, switch to an anaytical solution using Julia.
+## Two-choice game to show link for dynamic game. Solved largely numerically, switch to an anaytical solution using Julia
 # Last edit: 3/10/2024
 # Author: Matt Nolan
 

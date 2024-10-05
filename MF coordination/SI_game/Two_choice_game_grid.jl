@@ -1,3 +1,7 @@
+#using Pkg
+#Pkg.add("SymPy")
+#Pkg.add("NLsolve")
+
 using SymPy
 using NLsolve
 
@@ -184,8 +188,8 @@ function cb_loss(f1_val, m1_val, params)
 end
 
 # Step 5: Set up a grid for f1 and m1
-f1_grid = range(-10, 10, length=1000)
-m1_grid = range(-10, 10, length=1000)
+f1_grid = range(-10, 10, length=100)
+m1_grid = range(-10, 10, length=100)
 
 # Parameters for the loss functions
 params_gov = [
@@ -237,11 +241,11 @@ params_cb = [
 ]
 
 # Step 6: Evaluate the loss functions on the grid
-loss_gov_grid = zeros(1000, 1000)
-loss_cb_grid = zeros(1000, 1000)
+loss_gov_grid = zeros(100, 100)
+loss_cb_grid = zeros(100, 100)
 
-for i in 1:1000
-    for j in 1:1000
+for i in 1:100
+    for j in 1:100
         f1_val = f1_grid[i]
         m1_val = m1_grid[j]
         loss_gov_grid[i, j] = gov_loss(f1_val, m1_val, params_gov)
