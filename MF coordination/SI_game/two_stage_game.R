@@ -21,7 +21,7 @@ set.seed(123)
 
 # Parameters for the model
 gamma <- 1.5  # Intercept for inflation [setting this below pi_start creates a situation where people want higher inflation]
-alpha <- 1.5    # Intercept for output
+alpha <- 2.0    # Intercept for output
 bG <- 0.5     # Sensitivity of output to fiscal policy
 bB <- 0.5     # Sensitivity of output to monetary policy
 dG <- 0.5     # Sensitivity of inflation to fiscal policy
@@ -248,9 +248,11 @@ ggplot(policy_df_long, aes(x = Scenario, y = Value, fill = Policy_Type)) +
   geom_bar(stat = "identity", position = "dodge", width = 0.6) +
   labs(title = "Fiscal and Monetary Policy Across Scenarios", 
        y = "Policy Looseness", x = "Scenario") +
-  theme_minimal()
+  theme_minimal() +
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 9)) +
+  theme(axis.text.x = element_text(size = 8))
 
-#save_e61("Relative_Looseness.png", pad_width = 1, res = 2)
+ggsave("Relative_Looseness.jpg")
 
 loss_df_long <- outcomes_df %>%
   pivot_longer(cols = c(Fiscal_Utility, Monetary_Utility), 
@@ -260,7 +262,11 @@ ggplot(loss_df_long, aes(x = Scenario, y = Value, fill = Policy_Type)) +
   geom_bar(stat = "identity", position = "dodge", width = 0.6) +
   labs(title = "Fiscal and Monetary Policy Loss Scenarios", 
        y = "Policy Looseness", x = "Scenario") +
-  theme_minimal()
+  theme_minimal() +
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 9)) +
+  theme(axis.text.x = element_text(size = 8))
+
+ggsave("loss.jpg")
 
 # Reshape output and inflation data for graphs
 outcome_df_long <- outcomes_df %>%
@@ -274,7 +280,9 @@ ggplot(outcome_df_long, aes(x = Scenario, y = Value, fill = Outcome_Type)) +
        y = "Outcome Values", x = "Scenario") +
   theme_minimal() + 
   geom_hline(yintercept = pi_B_star, linetype = "dashed") +  
-  coord_cartesian(ylim = c(min(outcome_df_long$Value) - 0.5, max(outcome_df_long$Value) + 0.2))
+  coord_cartesian(ylim = c(min(outcome_df_long$Value) - 0.5, max(outcome_df_long$Value) + 0.2)) +
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 9)) +
+  theme(axis.text.x = element_text(size = 8))
 
-#save_e61("Outcomes.png", pad_width = 1, res = 2)
+ggsave("Outcomes.jpg")
 
