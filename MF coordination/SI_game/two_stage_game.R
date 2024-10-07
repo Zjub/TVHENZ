@@ -247,12 +247,12 @@ policy_df_long <- outcomes_df %>%
 ggplot(policy_df_long, aes(x = Scenario, y = Value, fill = Policy_Type)) +
   geom_bar(stat = "identity", position = "dodge", width = 0.6) +
   labs(title = "Fiscal and Monetary Policy Across Scenarios", 
-       y = "Policy Looseness", x = "Scenario") +
+       y = "Policy tightness", x = "Scenario") +
   theme_minimal() +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 9)) +
   theme(axis.text.x = element_text(size = 8))
 
-ggsave("Relative_Looseness.jpg")
+ggsave("Relative_tightness.jpg")
 
 loss_df_long <- outcomes_df %>%
   pivot_longer(cols = c(Fiscal_Utility, Monetary_Utility), 
@@ -261,7 +261,7 @@ loss_df_long <- outcomes_df %>%
 ggplot(loss_df_long, aes(x = Scenario, y = Value, fill = Policy_Type)) +
   geom_bar(stat = "identity", position = "dodge", width = 0.6) +
   labs(title = "Fiscal and Monetary Policy Loss Scenarios", 
-       y = "Policy Looseness", x = "Scenario") +
+       y = "Policy tightness", x = "Scenario") +
   theme_minimal() +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 9)) +
   theme(axis.text.x = element_text(size = 8))
