@@ -1,5 +1,6 @@
 ### Attempt at writing up the game in dynamic form - it has been a while so this might be rough.
-## Using Euler equation iteration
+## Using Euler equation time iteration, moving from policy being 0,0 to the steady state. 
+## This does not work when we set up the loss functions properly. Lets try an alternative approach. 
 
 #using Pkg
 #Pkg.add("SymPy")
@@ -23,7 +24,7 @@ using StatsPlots
 # Parameters
 params_gov = [
     1.5,   # gamma - intercept of inflation
-    2.0,   # alpha - intercept of output
+    2.0,   # alpha - intercept of output # Set at 1.5 for a demand shock, 2.5 for supply shock, and 2.0 to chat about policy asymmetry.
     0.5,   # bG - sensitivity of output to fiscal policy
     0.5,   # bB - sensitivity of output to monetary policy
     0.5,   # dG
@@ -50,6 +51,7 @@ params_cb = params_gov  # Same parameters for the central bank
 T_length = 15
 
 # Step 2: Define loss functions with adjustment costs
+# Version for describing the Nash Eqm where the intertemporal effect through adjustment costs are ignored
 L_G_t = mu_G * (pi_G_star - (gamma - dG * f_t - dB * m_t))^2 +
         (1 - mu_G) * (y_G_star - (alpha - bG * f_t - bB * m_t))^2 +
         lambda_G * (f_t - f_tminus1)^2 + theta_G_star * (beta_G_star - eG * f_t)^2
@@ -58,9 +60,21 @@ L_B_t = mu_B * (pi_B_star - (gamma - dG * f_t - dB * m_t))^2 +
         (1 - mu_B) * (y_B_star - (alpha - bG * f_t - bB * m_t))^2 +
         lambda_B * (m_t - m_tminus1)^2  + theta_B_star * (beta_B_star - eB * m_t)^2
 
+IT_L_G_t = mu_G * (pi_G_star - (gamma - dG * f_t - dB * m_t))^2 +
+        (1 - mu_G) * (y_G_star - (alpha - bG * f_t - bB * m_t))^2 +
+        lambda_G * (f_t - f_tminus1)^2 + theta_G_star * (beta_G_star - eG * f_t)^2 + 
+        delta * (mu_G * (pi_G_star - (gamma - dG * f_tplus1 - dB * m_tplus1))^2 + 
+                 (1 - mu_G) * (y_G_star - (alpha - bG * f_tplus1 - bB * m_tplus1))^2 + lambda_G * (f_tplus1 - f_t)^2 + theta_G_star * (beta_G_star - eG * f_tplus1)^2)
+
+IT_L_B_t = mu_B * (pi_B_star - (gamma - dG * f_t - dB * m_t))^2 +
+        (1 - mu_B) * (y_B_star - (alpha - bG * f_t - bB * m_t))^2 +
+        lambda_B * (m_t - m_tminus1)^2 + theta_B_star * (beta_B_star - eB * m_t)^2 +
+        delta * (mu_B * (pi_B_star - (gamma - dG * f_tplus1 - dB * m_tplus1))^2 + 
+                 (1 - mu_B) * (y_B_star - (alpha - bG * f_tplus1 - bB * m_tplus1))^2 + lambda_B * (m_tplus1 - m_t)^2 + theta_B_star * (beta_B_star - eB * m_tplus1)^2)
+
 # Step 3: Derive the Euler equations (FOC for f_t and m_t)
-Euler_G = diff(L_G_t, f_t)
-Euler_B = diff(L_B_t, m_t)
+Euler_G = diff(IT_L_G_t, f_t)
+Euler_B = diff(IT_L_B_t, m_t)
 
 println("Government Euler Equation: $Euler_G")
 println("Central Bank Euler Equation: $Euler_B")
@@ -186,3 +200,82 @@ savefig(joinpath(script_dir, "output_inflation_over_time.png"))  # Save this plo
 plot(2:T_length, gov_losses, label="Government Loss", xlabel="Time", ylabel="Loss Value", title="Government and Central Bank Losses Over Time")
 plot!(2:T_length, cb_losses, label="Central Bank Loss")
 savefig(joinpath(script_dir, "losses_over_time.png"))  # Save this plot
+
+######## Add cooperative game and comparison
+## Have to adjust below to include a forward looking component
+
+# Step 1: Define the total loss for the cooperative solution
+Total_Loss = L_G_t + L_B_t
+
+# Step 2: Simulate the cooperative solution by minimizing the total loss
+function simulate_cooperative(params, T; f_init=0.0, m_init=0.0)
+    f_vals = [f_init]
+    m_vals = [m_init]
+
+    # Unpack parameters
+    gamma_val, alpha_val, bG_val, bB_val, dG_val, dB_val, eG_val, eB_val, theta_G_star_val, theta_B_star_val, mu_G_val, mu_B_val, delta_val, lambda_G_val, lambda_B_val, pi_G_star_val, pi_B_star_val, y_G_star_val, y_B_star_val, beta_G_star_val, beta_B_star_val = params
+
+    for t in 2:T
+        # The total loss function now takes a single vector as an argument
+        function total_loss_fun(v)
+            f, m = v  # Unpack the vector into f and m
+
+            full_vals = Dict(
+                f_t => f, m_t => m,  # Use f and m as the current decision variables
+                f_tminus1 => f_vals[t-1], m_tminus1 => m_vals[t-1],  # Previous period values
+                gamma => gamma_val, alpha => alpha_val, bG => bG_val, bB => bB_val,
+                dG => dG_val, dB => dB_val, eG => eG_val, eB => eB_val,
+                theta_G_star => theta_G_star_val, theta_B_star => theta_B_star_val,
+                mu_G => mu_G_val, mu_B => mu_B_val, delta => delta_val,
+                lambda_G => lambda_G_val, lambda_B => lambda_B_val,
+                pi_G_star => pi_G_star_val, pi_B_star => pi_B_star_val,
+                y_G_star => y_G_star_val, y_B_star => y_B_star_val,
+                beta_G_star => beta_G_star_val, beta_B_star => beta_B_star_val
+            )
+
+            # Return the total loss after substitution
+            return float(subs(Total_Loss, full_vals))  
+        end
+
+        # Minimize the total loss with respect to f and m
+        # The decision variables are packed in a vector: [f, m]
+        res = optimize(total_loss_fun, [f_vals[t-1], m_vals[t-1]], BFGS())  # Optimize for f and m
+        f_new, m_new = Optim.minimizer(res)  # Extract the optimal f and m
+        
+        # Append the new values to the time series
+        push!(f_vals, f_new)
+        push!(m_vals, m_new)
+    end
+
+    return f_vals, m_vals
+end
+
+
+
+# Step 3: Run the simulation for cooperative solutions
+f_vals_coop, m_vals_coop = simulate_cooperative(params_gov, T_length; f_init=0.0, m_init=0.0)
+
+# Step 4: Plot the results (comparing non-cooperative and cooperative choices)
+plot(1:T_length, f_vals, label="Non-Cooperative (f)", xlabel="Time", ylabel="Policy Values", title="Government and Central Bank Policies Over Time")
+plot!(1:T_length, m_vals, label="Non-Cooperative (m)")
+plot!(1:T_length, f_vals_coop, linestyle=:dash, label="Cooperative (f)")
+plot!(1:T_length, m_vals_coop, linestyle=:dash, label="Cooperative (m)")
+savefig(joinpath(script_dir, "policies_withcoop_over_time.png"))  # Save this plot
+
+# Step 5: Plot the losses for both non-cooperative and cooperative solutions
+gov_losses_coop, cb_losses_coop = calculate_losses(f_vals_coop, m_vals_coop, params_gov)
+
+plot(2:T_length, gov_losses, label="Non-Cooperative Gov Loss", xlabel="Time", ylabel="Loss Value", title="Government and Central Bank Losses Over Time")
+plot!(2:T_length, cb_losses, label="Non-Cooperative CB Loss")
+plot!(2:T_length, gov_losses_coop, linestyle=:dash, label="Cooperative Gov Loss")
+plot!(2:T_length, cb_losses_coop, linestyle=:dash, label="Cooperative CB Loss")
+savefig(joinpath(script_dir, "output_inflation_withcoop_over_time.png"))  # Save this plot
+
+# Step 6: Plot output and inflation for both non-cooperative and cooperative solutions
+y_vals_coop, pi_vals_coop = calculate_output_inflation(f_vals_coop, m_vals_coop, params_gov)
+
+plot(1:T_length, y_vals, label="Non-Cooperative Output", xlabel="Time", ylabel="Values", title="Output and Inflation Over Time")
+plot!(1:T_length, pi_vals, label="Non-Cooperative Inflation")
+plot!(1:T_length, y_vals_coop, linestyle=:dash, label="Cooperative Output")
+plot!(1:T_length, pi_vals_coop, linestyle=:dash, label="Cooperative Inflation")
+savefig(joinpath(script_dir, "losses_withcoop_over_time.png")) # Save plot
