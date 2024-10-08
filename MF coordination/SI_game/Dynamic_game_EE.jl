@@ -1,13 +1,13 @@
 ### Attempt at writing up the game in dynamic form - it has been a while so this might be rough.
 ## Using Euler equation iteration
 
-# using Pkg
-# Pkg.add("SymPy")
-# Pkg.add("NLsolve")
-# Pkg.add("Optim")
-# Pkg.add("Plots")
-# Pkg.add("DataFrames")
-# Pkg.add("StatsPlots")
+#using Pkg
+#Pkg.add("SymPy")
+#Pkg.add("NLsolve")
+#Pkg.add("Optim")
+#Pkg.add("Plots")
+#Pkg.add("DataFrames")
+#Pkg.add("StatsPlots")
 
 using SymPy
 using Optim
@@ -47,14 +47,16 @@ params_gov = [
 
 params_cb = params_gov  # Same parameters for the central bank
 
+T_length = 15
+
 # Step 2: Define loss functions with adjustment costs
 L_G_t = mu_G * (pi_G_star - (gamma - dG * f_t - dB * m_t))^2 +
         (1 - mu_G) * (y_G_star - (alpha - bG * f_t - bB * m_t))^2 +
-        lambda_G * (f_t - f_tminus1)^2
+        lambda_G * (f_t - f_tminus1)^2 + theta_G_star * (beta_G_star - eG * f_t)^2
 
 L_B_t = mu_B * (pi_B_star - (gamma - dG * f_t - dB * m_t))^2 +
         (1 - mu_B) * (y_B_star - (alpha - bG * f_t - bB * m_t))^2 +
-        lambda_B * (m_t - m_tminus1)^2
+        lambda_B * (m_t - m_tminus1)^2  + theta_B_star * (beta_B_star - eB * m_t)^2
 
 # Step 3: Derive the Euler equations (FOC for f_t and m_t)
 Euler_G = diff(L_G_t, f_t)
@@ -106,9 +108,81 @@ function simulate_euler(params, T; f_init=0.0, m_init=0.0)
     return f_vals, m_vals
 end
 
-# Step 5: Run the simulation
-f_vals, m_vals = simulate_euler(params_gov, 50; f_init=0.0, m_init=0.0)
+# Calculate Output and Inflation at each time step
+function calculate_output_inflation(f_vals, m_vals, params)
+    alpha_val, bG_val, bB_val, gamma_val, dG_val, dB_val = params[2], params[3], params[4], params[1], params[5], params[6]
+    
+    y_vals = []
+    pi_vals = []
+    
+    for (f, m) in zip(f_vals, m_vals)
+        # Output (y_t)
+        y_t = alpha_val - bG_val * f - bB_val * m
+        # Inflation (pi_t)
+        pi_t = gamma_val - dG_val * f - dB_val * m
+        push!(y_vals, y_t)
+        push!(pi_vals, pi_t)
+    end
+    
+    return y_vals, pi_vals
+end
 
-# Step 6: Plot the results
-plot(1:50, f_vals, label="Government Policy (f)", xlabel="Time", ylabel="Policy Values", title="Government and Central Bank Policies Over Time")
-plot!(1:50, m_vals, label="Central Bank Policy (m)")
+# Calculate Loss for government and central bank at each time step
+function calculate_losses(f_vals, m_vals, params)
+    # Unpack parameters
+    gamma_val, alpha_val, bG_val, bB_val, dG_val, dB_val, eG_val, eB_val, theta_G_star_val, theta_B_star_val, mu_G_val, mu_B_val, delta_val, lambda_G_val, lambda_B_val, pi_G_star_val, pi_B_star_val, y_G_star_val, y_B_star_val, beta_G_star_val, beta_B_star_val = params
+    
+    gov_losses = []
+    cb_losses = []
+    
+    for t in 2:length(f_vals)
+        f_t, m_t = f_vals[t], m_vals[t]
+        f_tminus1, m_tminus1 = f_vals[t-1], m_vals[t-1]
+
+        # Government loss (L_G_t)
+        gov_loss_t = mu_G_val * (pi_G_star_val - (gamma_val - dG_val * f_t - dB_val * m_t))^2 +
+                     (1 - mu_G_val) * (y_G_star_val - (alpha_val - bG_val * f_t - bB_val * m_t))^2 +
+                     lambda_G_val * (f_t - f_tminus1)^2 +
+                     theta_G_star_val * (beta_G_star_val - eG_val * f_t)^2
+
+        # Central bank loss (L_B_t)
+        cb_loss_t = mu_B_val * (pi_B_star_val - (gamma_val - dG_val * f_t - dB_val * m_t))^2 +
+                    (1 - mu_B_val) * (y_B_star_val - (alpha_val - bG_val * f_t - bB_val * m_t))^2 +
+                    lambda_B_val * (m_t - m_tminus1)^2 +
+                    theta_B_star_val * (beta_B_star_val - eB_val * m_t)^2
+
+        push!(gov_losses, gov_loss_t)
+        push!(cb_losses, cb_loss_t)
+    end
+    
+    return gov_losses, cb_losses
+end
+
+# Step 5: Run the simulation
+f_vals, m_vals = simulate_euler(params_gov, T_length; f_init=0.0, m_init=0.0)
+
+# Step 6: Calculate output and inflation
+y_vals, pi_vals = calculate_output_inflation(f_vals, m_vals, params_gov)
+
+# Step 7: Calculate losses for government and central bank
+gov_losses, cb_losses = calculate_losses(f_vals, m_vals, params_gov)
+
+# Step 8: Plot the results
+# These plots start at 0 and then transition to the steady state - so interpreting it as transition after a shock when starting from intercept as target
+# Define the directory where the script is located
+script_dir = @__DIR__
+
+# Plot 1: Policies over time
+plot(1:T_length, f_vals, label="Government Policy (f)", xlabel="Time", ylabel="Policy Values", title="Government and Central Bank Policies Over Time")
+plot!(1:T_length, m_vals, label="Central Bank Policy (m)")
+savefig(joinpath(script_dir, "policies_over_time.png"))  # Save this plot
+
+# Plot 2: Output and Inflation over time
+plot(1:T_length, y_vals, label="Output (y)", xlabel="Time", ylabel="Values", title="Output and Inflation Over Time")
+plot!(1:T_length, pi_vals, label="Inflation (π)")
+savefig(joinpath(script_dir, "output_inflation_over_time.png"))  # Save this plot
+
+# Plot 3: Losses over time
+plot(2:T_length, gov_losses, label="Government Loss", xlabel="Time", ylabel="Loss Value", title="Government and Central Bank Losses Over Time")
+plot!(2:T_length, cb_losses, label="Central Bank Loss")
+savefig(joinpath(script_dir, "losses_over_time.png"))  # Save this plot
