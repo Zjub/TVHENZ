@@ -23,7 +23,7 @@ using StatsPlots
 # Parameters for the loss functions
 params_gov = [
     1.5,   # gamma - intercept of inflation
-    2.5,   # alpha - intercept of output
+    1.5,   # alpha - intercept of output
     0.5,   # bG - sensitivity of output to fiscal policy
     0.5,   # bB - sensitivity of output to monetary policy
     0.5,   # dG - sensitivity of inflation to fiscal policy
