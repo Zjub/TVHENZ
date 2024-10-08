@@ -1,12 +1,18 @@
+## "Two-choice" game to show that a pre-commitment motive may lead to changes from the static NE.
+
 # using Pkg
 # Pkg.add("SymPy")
 # Pkg.add("NLsolve")
 # Pkg.add("Optim")
 # Pkg.add("Plots")
+# Pkg.add("DataFrames")
+# Pkg.add("StatsPlots") # Should think about just setting up tidy at this stage.
 
 using SymPy
 using Optim
 using Plots
+using DataFrames
+using StatsPlots
 
 # Step 1: Define symbolic variables for the game
 @syms f1 m1 f2 m2
@@ -17,20 +23,20 @@ using Plots
 # Parameters for the loss functions
 params_gov = [
     1.5,   # gamma - intercept of inflation
-    2.0,   # alpha - intercept of output
+    2.5,   # alpha - intercept of output
     0.5,   # bG - sensitivity of output to fiscal policy
     0.5,   # bB - sensitivity of output to monetary policy
-    0.5,   # dG
-    0.5,   # dB
-    0.5,   # eG
+    0.5,   # dG - sensitivity of inflation to fiscal policy
+    0.5,   # dB - sensitivity of information to monetary policy
+    0.5,   # eG - 
     0.5,   # eB
     0.5,   # theta_G_star
     0.5,   # theta_B_star
     0.0,   # mu_G
     1.0,   # mu_B
-    0.9,   # delta
-    0.5,   # lambda_G
-    0.5,   # lambda_B
+    0.5,   # delta
+    0.2,   # lambda_G - cost of adjusting f2 from f1
+    0.2,   # lambda_B - cost of adjusting m2 from m1
     2.0,   # pi_G_star
     2.0,   # pi_B_star
     2.0,   # y_G_star
@@ -154,7 +160,6 @@ function cb_loss(f1_val, m1_val, params)
     return float(L_B_stage1_result + delta_val * L_B_stage2_result), f2_val, m2_val
 end
 
-
 # Step 6: Iterative best-response algorithm
 function iterative_best_response(params_gov, params_cb; tol=1e-6, max_iters=1000)
     f1_val, m1_val = 0.0, 0.0  # Initial guesses
@@ -206,6 +211,10 @@ println("Nash equilibrium found:")
 println("Government: f1 = $f1_star, f2 = $f2_star_gov")
 println("Central Bank: m1 = $m1_star, m2 = $m2_star_cb")
 
+# Manually calculate the final losses with the optimal choices
+final_gov_loss = gov_loss(f1_star, m1_star, params_gov)[1]
+final_cb_loss = cb_loss(f1_star, m1_star, params_cb)[1]
+
 # Step 10: Plot the results
 policy_choices = ["Stage 1", "Stage 2"]
 
@@ -218,17 +227,58 @@ cb_policy_values = [m1_star, m2_star_cb]
 # Plotting policy decisions over two stages
 bar(policy_choices, gov_policy_values, label="Government", xlabel="Stage", ylabel="Policy Values", title="Government and Central Bank Choices", bar_width=0.3, legend=:topleft)
 bar!(policy_choices, cb_policy_values, label="Central Bank", bar_width=0.3)
-bar(policy_choices, cb_policy_values, label="Central Bank", xlabel="Stage", ylabel="Policy Values", title="Central Bank Choices", bar_width=0.3, legend=:topleft)
 
-# Plot for loss comparison between Government and Central Bank
-bar(["Government", "Central Bank"], [gov_losses[end], cb_losses[end]],
+# Manually calculated loss comparison between Government and Central Bank
+bar(["Government", "Central Bank"], [final_gov_loss, final_cb_loss],
     title="Loss Comparison", ylabel="Loss Value", legend=false)
 
 # Output and inflation comparison
 output_choices = ["Output", "Inflation"]
 
-gov_output_inflation = [y_G_star, pi_G_star]
-cb_output_inflation = [y_B_star, pi_B_star]
+# Calculate output and inflation for both periods
+# Period 1: Output and Inflation
+output_1 = params_gov[2] - params_gov[3] * f1_star - params_gov[4] * m1_star  # alpha - bG * f1 - bB * m1
+inflation_1 = params_gov[1] - params_gov[5] * f1_star - params_gov[6] * m1_star  # gamma - dG * f1 - dB * m1
 
-bar(output_choices, gov_output_inflation, label="Government", xlabel="Economic Indicators", ylabel="Values", title="Output and Inflation Comparison", bar_width=0.3, legend=:topleft)
-bar!(output_choices, cb_output_inflation, label="Central Bank", bar_width=0.3)
+# Period 2: Output and Inflation
+output_2 = params_gov[2] - params_gov[3] * f2_star_gov - params_gov[4] * m2_star_cb  # alpha - bG * f2 - bB * m2
+inflation_2 = params_gov[1] - params_gov[5] * f2_star_gov - params_gov[6] * m2_star_cb  # gamma - dG * f2 - dB * m2
+
+# Store the values for plotting
+output_values = [output_1, output_2]
+inflation_values = [inflation_1, inflation_2]
+
+# Plot for output and inflation comparison across both periods
+periods = ["Period 1", "Period 2"]
+
+# Output plot - this one sucks
+#bar(periods, output_values, label="Output", xlabel="Periods", ylabel="Values", title="Output Comparison Across Periods", bar_width=0.3, legend=:topleft)
+#bar!(periods, inflation_values, label="Inflation", bar_width=0.3, ylabel="Values", title="Inflation Comparison Across Periods")
+
+# Combine data into a DataFrame
+df = DataFrame(
+    Period = ["Period 1", "Period 2"],
+    Output = [output_1, output_2],
+    Inflation = [inflation_1, inflation_2]
+)
+
+# Create the grouped bar plot
+p = groupedbar(Matrix(df[:, [:Output, :Inflation]]),
+    xlabel = "Periods",
+    ylabel = "Values",
+    title = "Output and Inflation Comparison Across Periods",
+    legend = :topleft,
+    bar_position = :dodge,
+    bar_width = 0.7,
+    size = (800, 600),
+    ylims = (1, 3),  # Set y-axis range
+    label = ["Output" "Inflation"]  # Add labels for the legend
+)
+
+# Add a dashed line at y=2
+hline!([2], line = :dash, color = :black, label = "Reference")
+
+# Display the plot
+display(p)
+
+df

@@ -21,7 +21,7 @@ set.seed(123)
 
 # Parameters for the model
 gamma <- 1.5  # Intercept for inflation [setting this below pi_start creates a situation where people want higher inflation]
-alpha <- 2.0    # Intercept for output
+alpha <- 1.5    # Intercept for output
 bG <- 0.5     # Sensitivity of output to fiscal policy
 bB <- 0.5     # Sensitivity of output to monetary policy
 dG <- 0.5     # Sensitivity of inflation to fiscal policy
