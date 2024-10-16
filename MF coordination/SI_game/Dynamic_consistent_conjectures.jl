@@ -1,3 +1,6 @@
+### This is not right because we are dropping the "time" element. [Also feel a bit uncomfortable having symmetric conditions so the two conjectures - have to think about if this provides collaborative outcome.]
+
+
 #using Pkg
 #Pkg.add("SymPy")
 #Pkg.add("NLsolve")
@@ -11,7 +14,7 @@ using NLsolve
 using Plots
 
 # Step 1: Define symbolic variables
-@syms f_t f_tplus1 f_tminus1 m_t m_tplus1 m_tminus1 α_f β_f α_m β_m
+@syms f_t f_tplus1 f_tminus1 m_t m_tplus1 m_tminus1 ω_f ψ_f ω_m ψ_m
 @syms gamma alpha bG bB dG dB eG eB theta_G_star theta_B_star
 @syms mu_G mu_B delta lambda_G lambda_B pi_G_star pi_B_star y_G_star y_B_star beta_G_star beta_B_star
 
@@ -43,28 +46,28 @@ params_gov = [
 # Assign parameter values
 gamma_val, alpha_val, bG_val, bB_val, dG_val, dB_val, eG_val, eB_val, theta_G_star_val, theta_B_star_val, mu_G_val, mu_B_val, delta_val, lambda_G_val, lambda_B_val, pi_G_star_val, pi_B_star_val, y_G_star_val, y_B_star_val, beta_G_star_val, beta_B_star_val = params_gov
 
-# Step 3: Define Loss Functions with Conjectures
+# Step 3: Define Loss Functions
 L_G_t = mu_G * (pi_G_star - (gamma - dG * f_t - dB * m_t))^2 +
         (1 - mu_G) * (y_G_star - (alpha - bG * f_t - bB * m_t))^2 +
-        lambda_G * (f_t - f_tminus1)^2 +
-        delta * (mu_G * (pi_G_star - (gamma - dG * f_tplus1 - dB * m_tplus1))^2 +
-                 (1 - mu_G) * (y_G_star - (alpha - bG * f_tplus1 - bB * m_tplus1))^2 +
-                 lambda_G * (f_tplus1 - f_t)^2)
+        lambda_G * (f_t - f_tminus1)^2 
 
 L_B_t = mu_B * (pi_B_star - (gamma - dG * f_t - dB * m_t))^2 +
         (1 - mu_B) * (y_B_star - (alpha - bG * f_t - bB * m_t))^2 +
-        lambda_B * (m_t - m_tminus1)^2 +
-        delta * (mu_B * (pi_B_star - (gamma - dG * f_tplus1 - dB * m_tplus1))^2 +
-                 (1 - mu_B) * (y_B_star - (alpha - bG * f_tplus1 - bB * m_tplus1))^2 +
-                 lambda_B * (m_tplus1 - m_t)^2)
+        lambda_B * (m_t - m_tminus1)^2 
 
-# Step 4: Derive Euler Equations (FOCs for f_t and m_t)
-Euler_G = diff(L_G_t, f_t)
-Euler_B = diff(L_B_t, m_t)
+#static_loss_G = 
 
-# Step 5: Substitute the conjectures into the Euler equations
-conjecture_f = α_f + β_f * m_t
-conjecture_m = α_m + β_m * f_t
+#static_loss_B = 
+
+# Step 4: Substitute the conjectures into the Euler equations
+conjecture_f = ω_f * f_t + ψ_f * m_t
+conjecture_m = ω_m * f_t + ψ_m * m_t
+
+# Step 5: Derive Euler Equations [have dropped time subscripts off this]
+Euler_G = diff(L_G_t, f_t) + delta*(diff(conjecture_m,f_t)*diff(L_G_t, m_t) + diff(L_G_t,f_tminus1)) + ((diff(conjecture_m,f_t)*diff(conjecture_m,m_t))/diff(conjecture_m,f_t))*(delta*diff(L_G_t, f_t)+delta^2*diff(L_G_t, f_tminus1))
+
+Euler_B = diff(L_B_t, m_t) + delta*(diff(conjecture_f,m_t)*diff(L_B_t, f_t) + diff(L_B_t,m_tminus1)) + ((diff(conjecture_f,m_t)*diff(conjecture_f,f_t))/diff(conjecture_f,m_t))*(delta*diff(L_B_t, m_t)+delta^2*diff(L_B_t, m_tminus1))
+
 
 Euler_G_sub = subs(Euler_G, Dict(f_tplus1 => conjecture_f, m_tplus1 => conjecture_m))
 Euler_B_sub = subs(Euler_B, Dict(f_tplus1 => conjecture_f, m_tplus1 => conjecture_m))
@@ -80,7 +83,7 @@ function solve_conjectures_and_policies(params, tol=1e-6, max_iters=1000)
     m_tminus1_val = 0.0
 
     # Initial guess for conjecture parameters
-    α_f_val, β_f_val, α_m_val, β_m_val = 0.0, 0.0, 0.0, 0.0
+    ω_f_val, ψ_f_val, ω_m_val, ψ_m_val = 0.0, 0.0, 0.0, 0.0
     f_t_val, m_t_val = 0.0, 0.0  # Initial guesses for policies
 
     # Unpack parameter values for substitution
@@ -96,7 +99,7 @@ function solve_conjectures_and_policies(params, tol=1e-6, max_iters=1000)
         subst_dict = Dict(
             f_tminus1 => f_tminus1_val,
             m_tminus1 => m_tminus1_val,
-            α_f => α_f_val, β_f => β_f_val, α_m => α_m_val, β_m => β_m_val,
+            ω_f => ω_f_val, ψ_f => ψ_f_val, ω_m => ω_m_val, ψ_m => ψ_m_val,
             f_t => f_t,  # Keep f_t as a variable
             m_t => m_t,  # Keep m_t as a variable
             gamma => gamma_val, alpha => alpha_val, bG => bG_val, bB => bB_val,
@@ -124,28 +127,23 @@ function solve_conjectures_and_policies(params, tol=1e-6, max_iters=1000)
         
         # Step 2: Update the conjecture parameters separately
         # Update α_f and β_f based on how f_t responds to m_t
-        α_f_val_new = α_f_val + 0.1 * (f_t_val_new - α_f_val)  # Update α_f based on f_t
-        β_f_val_new = β_f_val + 0.1 * (f_t_val_new / m_t_val_new - β_f_val)  # Adjust β_f based on the ratio f_t / m_t
-
-        # Update α_m and β_m based on how m_t responds to f_t
-        α_m_val_new = α_m_val + 0.1 * (m_t_val_new - α_m_val)  # Update α_m based on m_t
-        β_m_val_new = β_m_val + 0.1 * (m_t_val_new / f_t_val_new - β_m_val)  # Adjust β_m based on the ratio m_t / f_t
+        ω_f_val_new = ω_f_val + 0.1 * (f_t_val_new - ω_f_val)
+        ψ_f_val_new = ψ_f_val + 0.1 * (m_t_val_new - ψ_f_val)
+        ω_m_val_new = ω_m_val + 0.1 * (f_t_val_new - ω_m_val)
+        ψ_m_val_new = ψ_m_val + 0.1 * (m_t_val_new - ψ_m_val)
         
         # Step 3: Check convergence of the conjectures and policies
-        if abs(α_f_val_new - α_f_val) < tol && abs(β_f_val_new - β_f_val) < tol &&
-           abs(α_m_val_new - α_m_val) < tol && abs(β_m_val_new - β_m_val) < tol &&
-           abs(f_t_val_new - f_t_val) < tol && abs(m_t_val_new - m_t_val) < tol
-            converged = true
-        end
-        
-        # Update the values for the next iteration
-        α_f_val, β_f_val = α_f_val_new, β_f_val_new
-        α_m_val, β_m_val = α_m_val_new, β_m_val_new
-        f_t_val, m_t_val = f_t_val_new, m_t_val_new
-        
-        # Update f_tminus1 and m_tminus1 for the next iteration
-        f_tminus1_val, m_tminus1_val = f_t_val, m_t_val
-    end
+        if abs(ω_f_val_new - ω_f_val) < tol && abs(ψ_f_val_new - ψ_f_val) < tol &&
+            abs(ω_m_val_new - ω_m_val) < tol && abs(ψ_m_val_new - ψ_m_val) < tol &&
+            abs(f_t_val_new - f_t_val) < tol && abs(m_t_val_new - m_t_val) < tol
+             converged = true
+         end
+         
+         # Update the values for the next iteration
+         ω_f_val, ψ_f_val = ω_f_val_new, ψ_f_val_new
+         ω_m_val, ψ_m_val = ω_m_val_new, ψ_m_val_new
+         f_t_val, m_t_val = f_t_val_new, m_t_val_new
+     end
     
     if converged
         println("Converged after $iter iterations.")
@@ -153,7 +151,7 @@ function solve_conjectures_and_policies(params, tol=1e-6, max_iters=1000)
         println("Did not converge after $max_iters iterations.")
     end
     
-    return (α_f_val, β_f_val, α_m_val, β_m_val), (f_t_val, m_t_val)
+    return (ω_f_val, ψ_f_val, ω_m_val, ψ_m_val), (f_t_val, m_t_val)
 end
 
 # Step 7: Run the consistent conjecture solution
@@ -165,12 +163,12 @@ println("Solution for α_m: ", conjecture_vals[3])
 println("Solution for β_m: ", conjecture_vals[4])
 
 # Step 7: Run the consistent conjecture solution
-(α_f_val, β_f_val, α_m_val, β_m_val), (f_t_val, m_t_val) = solve_conjectures_and_policies(params_gov)
+(ω_f_val, ψ_f_val, ω_m_val, ψ_m_val), (f_t_val, m_t_val) = solve_conjectures_and_policies(params_gov)
 
-println("Solution for α_f: ", α_f_val)
-println("Solution for β_f: ", β_f_val)
-println("Solution for α_m: ", α_m_val)
-println("Solution for β_m: ", β_m_val)
+println("Solution for α_f: ", ω_f_val)
+println("Solution for β_f: ", ψ_f_val)
+println("Solution for α_m: ", ω_m_val)
+println("Solution for β_m: ", ψ_m_val)
 println("Solution for f_t: ", f_t_val)
 println("Solution for m_t: ", m_t_val)
 
@@ -180,12 +178,40 @@ f_vals = [f_t_val]
 m_vals = [m_t_val]
 
 for t in 2:T
-    f_new = α_f_val + β_f_val * m_vals[t-1]
-    m_new = α_m_val + β_m_val * f_vals[t-1]
+    f_new = ω_f_val* f_vals[t-1] + ψ_f_val * m_vals[t-1]
+    m_new = ω_m_val* f_vals[t-1] + ψ_m_val * m_vals[t-1]
     push!(f_vals, f_new)
     push!(m_vals, m_new)
+
+    # Compute losses at each time step
+    L_G_val = subs(L_G_t, Dict(f_t => f_new, m_t => m_new, f_tminus1 => f_vals[t-1], m_tminus1 => m_vals[t-1],gamma => gamma_val, alpha => alpha_val, bG => bG_val, bB => bB_val,
+    dG => dG_val, dB => dB_val, eG => eG_val, eB => eB_val,
+    theta_G_star => theta_G_star_val, theta_B_star => theta_B_star_val,
+    mu_G => mu_G_val, mu_B => mu_B_val, delta => delta_val,
+    lambda_G => lambda_G_val, lambda_B => lambda_B_val,
+    pi_G_star => pi_G_star_val, pi_B_star => pi_B_star_val,
+    y_G_star => y_G_star_val, y_B_star => y_B_star_val,
+    beta_G_star => beta_G_star_val, beta_B_star => beta_B_star_val))
+    
+    L_B_val = subs(L_B_t, Dict(f_t => f_new, m_t => m_new, f_tminus1 => f_vals[t-1], m_tminus1 => m_vals[t-1],gamma => gamma_val, alpha => alpha_val, bG => bG_val, bB => bB_val,
+    dG => dG_val, dB => dB_val, eG => eG_val, eB => eB_val,
+    theta_G_star => theta_G_star_val, theta_B_star => theta_B_star_val,
+    mu_G => mu_G_val, mu_B => mu_B_val, delta => delta_val,
+    lambda_G => lambda_G_val, lambda_B => lambda_B_val,
+    pi_G_star => pi_G_star_val, pi_B_star => pi_B_star_val,
+    y_G_star => y_G_star_val, y_B_star => y_B_star_val,
+    beta_G_star => beta_G_star_val, beta_B_star => beta_B_star_val))
+
+    print(L_G_val)
+
+    push!(loss_gov_vals, float(L_G_val))
+    push!(loss_cb_vals, float(L_B_val))
 end
 
 # Plot policy decisions
 plot(1:T, f_vals, label="Government Policy (f)", xlabel="Time", ylabel="Policy Values", title="Government and Central Bank Policies Over Time")
 plot!(1:T, m_vals, label="Central Bank Policy (m)")
+
+# Plot losses
+plot(1:T, loss_gov_vals, label="Government Loss", xlabel="Time", ylabel="Loss Values", title="Government and Central Bank Losses Over Time")
+plot!(1:T, loss_cb_vals, label="Central Bank Loss")
