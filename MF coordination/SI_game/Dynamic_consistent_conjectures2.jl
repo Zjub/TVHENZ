@@ -44,6 +44,17 @@ params_gov = [
     0.0    # beta_B_star
 ]
 
+param_subs = Dict(
+    gamma => params_gov[1], alpha => params_gov[2], bG => params_gov[3], bB => params_gov[4], 
+    dG => params_gov[5], dB => params_gov[6], eG => params_gov[7], eB => params_gov[8], 
+    theta_G_star => params_gov[9], theta_B_star => params_gov[10], 
+    mu_G => params_gov[11], mu_B => params_gov[12], delta => params_gov[13], 
+    lambda_G => params_gov[14], lambda_B => params_gov[15], 
+    pi_G_star => params_gov[16], pi_B_star => params_gov[17], 
+    y_G_star => params_gov[18], y_B_star => params_gov[19], 
+    beta_G_star => params_gov[20], beta_B_star => params_gov[21]
+)
+
 # Step 2: Define time functions for losses and conjectures
 
 L_G = Sym[0 for _ in 1:n]  # Loss functions for government
@@ -75,15 +86,58 @@ Euler_G_subs = subs(Euler_G, Dict(f[4] => conjecture_f[4], m[4] => conjecture_m[
 Euler_G_subs = subs(Euler_G_subs, Dict(f[3] => conjecture_f[3], m[3] => conjecture_m[3]))
 Euler_G_subs = subs(Euler_G_subs, Dict(f[2] => conjecture_f[2], m[2] => conjecture_m[2]))
 
-Euler_G_solve = solve(Euler_G_subs,f[1]) # Choice of f_1 as a function of m_1 and unknown four conjecture parameters
-
 Euler_B_subs = subs(Euler_B, Dict(f[4] => conjecture_f[4], m[4] => conjecture_m[4]))
 Euler_B_subs = subs(Euler_B_subs, Dict(f[3] => conjecture_f[3], m[3] => conjecture_m[3]))
 Euler_B_subs = subs(Euler_B_subs, Dict(f[2] => conjecture_f[2], m[2] => conjecture_m[2]))
 
-Euler_B_solve = solve(Euler_B_subs,m[1]) # Choice of m_1 as a function of f_1 and unknown four conjecture parameters
+# Substitute params into Euler equations
+Euler_G_subs = subs(Euler_G_subs, param_subs)
+Euler_B_subs = subs(Euler_B_subs, param_subs)
+
+Euler_G_solve = solve(Euler_G_subs, f[1]) # Choice of f_1 as a function of m_1 and unknown four conjecture parameters
+Euler_B_solve = solve(Euler_B_subs, m[1]) # Choice of m_1 as a function of f_1 and unknown four conjecture parameters
+
+# Define system of equations based on Euler equations and conjectures
+f1_eq = Euler_G_solve[1]  # Euler equation for f1, already substituted with params_gov
+m1_eq = Euler_B_solve[1]  # Euler equation for m1, already substituted with params_gov
+
+### Change the conjecture to make the A, B terms converge to the conjectured coefficients - work this out post lecture
+## Also, reduce conjectures so we keep f2(f1,m1) to take the conjectured form - we have transformed everythign to f1(m1) etc
+
+
+
+
+
+
+
+[Trying to NSOLVE]
+# Initial guess for conjecture parameters
+initial_guess = [1.0, 1.0, 1.0, 1.0]  # [ω_f, ψ_f, ω_m, ψ_m]
+
+# Use nsolve to solve the system of equations numerically
+solution = nsolve([f1_eq, m1_eq], [ω_f, ψ_f, ω_m, ψ_m], initial_guess)
+
+println("Solution for conjecture parameters:")
+println("ω_f: ", solution[1])
+println("ψ_f: ", solution[2])
+println("ω_m: ", solution[3])
+println("ψ_m: ", solution[4])
 
 ## In steady state MPE the conjecture based on the values of f and m and the parameters will equal the observed value.  We can solve by starting with an initial value of the other persons choice and initial unknown parameters, and calculate the individuals choice and the conjectured values of f and m.  If the choices are not equal to the conjectured values, then we reiterate.
+#=
+# Initialize the parameters
+global f1_guess = 1.0
+global m1_guess = 1.0
+global ω_f_guess = 1.0
+global ω_m_guess = 1.0
+global ψ_f_guess = 1.0
+global ψ_m_guess = 1.0
+
+global tolerance = 1e-5
+global max_iter = 100
+global iter_count = 0
+global converged = false
+
 
 # Initialize the parameters
 global f1_guess = 1.0
@@ -94,17 +148,25 @@ global ψ_f_guess = 1.0
 global ψ_m_guess = 1.0
 
 global tolerance = 1e-5
-global max_iter = 10000
+global max_iter = 100
 global iter_count = 0
 global converged = false
 
+# Set an initial step size for updates
+global step_size = 0.01
+
+# Initialize variables to track the previous error
+global prev_f1_error = Inf
+global prev_m1_error = Inf
 
 # Step 3: Implement the fixed-point iteration manually
 while !converged && iter_count < max_iter
     global iter_count += 1  # Ensure iter_count is incremented as a global variable
     println("Iteration: $iter_count")
+    
+    # Substitution dictionaries for the parameters
     full_vals_B = Dict(
-        f[1] => f1_guess, ω_f => ω_f_guess,ω_m => ω_m_guess,ψ_f => ψ_f_guess, ψ_m => ψ_m_guess,
+        f[1] => f1_guess, ω_f => ω_f_guess, ω_m => ω_m_guess, ψ_f => ψ_f_guess, ψ_m => ψ_m_guess,
         gamma => params_gov[1], alpha => params_gov[2], bG => params_gov[3], bB => params_gov[4], 
         dG => params_gov[5], dB => params_gov[6], eG => params_gov[7], eB => params_gov[8], 
         theta_G_star => params_gov[9], theta_B_star => params_gov[10], 
@@ -116,7 +178,7 @@ while !converged && iter_count < max_iter
     )
 
     full_vals_G = Dict(
-        m[1] => m1_guess,ω_f => ω_f_guess,ω_m => ω_m_guess,ψ_f => ψ_f_guess,ψ_m => ψ_m_guess,
+        m[1] => m1_guess, ω_f => ω_f_guess, ω_m => ω_m_guess, ψ_f => ψ_f_guess, ψ_m => ψ_m_guess,
         gamma => params_gov[1], alpha => params_gov[2], bG => params_gov[3], bB => params_gov[4], 
         dG => params_gov[5], dB => params_gov[6], eG => params_gov[7], eB => params_gov[8], 
         theta_G_star => params_gov[9], theta_B_star => params_gov[10], 
@@ -137,29 +199,45 @@ while !converged && iter_count < max_iter
     global conjectured_f1 = ω_f_guess * f1_guess + ψ_f_guess * m1_guess
     global conjectured_m1 = ω_m_guess * f1_guess + ψ_m_guess * m1_guess
 
+    # Compute the current error
+    global f1_error = abs(new_f1 - conjectured_f1)
+    global m1_error = abs(new_m1 - conjectured_m1)
+
     # Adjust the conjecture parameters if f1 and m1 do not match the optimal values
-    if abs(new_f1 - conjectured_f1) > tolerance
-        global ω_f_guess += 0.1 * (new_f1 - conjectured_f1) / f1_guess  # Adjust ω_f
-        global ψ_f_guess += 0.1 * (new_f1 - conjectured_f1) / m1_guess  # Adjust ψ_f
+    if f1_error > prev_f1_error
+        # Reverse the direction of updates
+        global ω_f_guess -= step_size
+        global ψ_f_guess -= step_size
+    else
+        # Continue updating in the same direction
+        global ω_f_guess += step_size
+        global ψ_f_guess += step_size
     end
 
-    if abs(new_m1 - conjectured_m1) > tolerance
-        global ω_m_guess += 0.1 * (new_m1 - conjectured_m1) / f1_guess  # Adjust ω_m
-        global ψ_m_guess += 0.1 * (new_m1 - conjectured_m1) / m1_guess  # Adjust ψ_m
+    if m1_error > prev_m1_error
+        # Reverse the direction of updates
+        global ω_m_guess -= step_size
+        global ψ_m_guess -= step_size
+    else
+        # Continue updating in the same direction
+        global ω_m_guess += step_size
+        global ψ_m_guess += step_size
     end
 
     # Check for convergence (if changes are smaller than the tolerance)
-    if abs(new_m1 - m1_guess) < tolerance && abs(new_f1 - f1_guess) < tolerance
+    if f1_error < tolerance && m1_error < tolerance
         global converged = true
         println("Converged after $iter_count iterations")
     end
 
-    # Update the guesses
+    # Update the guesses and previous errors
     global f1_guess = new_f1
     global m1_guess = new_m1
+    global prev_f1_error = f1_error
+    global prev_m1_error = m1_error
 
     # Print current guesses for inspection
-    println("f1: $f1_guess, m1: $m1_guess, ω_f: $ω_f_guess, ω_m: $ω_m_guess, ψ_f: $ψ_f_guess, ψ_m: $ψ_m_guess")
+    println("f1: $f1_guess, m1: $m1_guess, ω_f: $ω_f_guess, ω_m: $ω_m_guess, ψ_f: $ψ_f_guess, ψ_m: $ψ_m_guess, f1_error: $f1_error, m1_error: $m1_error")
 end
 
 if !converged
@@ -170,3 +248,4 @@ end
 println("Final f1: $f1_guess, Final m1: $m1_guess")
 println("Final ω_f: $ω_f_guess, Final ω_m: $ω_m_guess")
 println("Final ψ_f: $ψ_f_guess, Final ψ_m: $ψ_m_guess")
+=#
