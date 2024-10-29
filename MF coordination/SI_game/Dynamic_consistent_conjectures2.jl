@@ -78,9 +78,9 @@ for t in 2:4
     conjecture_m[t] = ω_m * f[t-1] + ψ_m * m[t-1]
 end
 
-Euler_G = diff(L_G[2],f[2]) + delta*(diff(conjecture_m[3],f[2])*diff(L_G[3],m[3]) + diff(L_G[4],f[3])) - (diff(conjecture_m[3],f[2])*diff(conjecture_m[4],m[3])/diff(conjecture_m[4],f[3]))*(delta*diff(L_G[3],f[3]) + delta^2*diff(L_G[4],f[3]))
+Euler_G = diff(L_G[2],f[2]) + delta*(diff(conjecture_m[3],f[2])*diff(L_G[3],m[3]) + diff(L_G[3],f[2])) - (diff(conjecture_m[3],f[2])*diff(conjecture_m[4],m[3])/diff(conjecture_m[4],f[3]))*(delta*diff(L_G[3],f[3]) + delta^2*diff(L_G[4],f[3]))
 
-Euler_B = diff(L_B[2],m[2]) + delta*(diff(conjecture_f[3],m[2])*diff(L_B[3],f[3]) + diff(L_B[4],m[3])) - (diff(conjecture_f[3],m[2])*diff(conjecture_f[4],f[3])/diff(conjecture_f[4],m[3]))*(delta*diff(L_B[3],m[3]) + delta^2*diff(L_B[4],m[3]))
+Euler_B = diff(L_B[2],m[2]) + delta*(diff(conjecture_f[3],m[2])*diff(L_B[3],f[3]) + diff(L_B[3],m[2])) - (diff(conjecture_f[3],m[2])*diff(conjecture_f[4],f[3])/diff(conjecture_f[4],m[3]))*(delta*diff(L_B[3],m[3]) + delta^2*diff(L_B[4],m[3]))
 
 Euler_G_subs = subs(Euler_G, Dict(f[4] => conjecture_f[4], m[4] => conjecture_m[4]))
 Euler_G_subs = subs(Euler_G_subs, Dict(f[3] => conjecture_f[3], m[3] => conjecture_m[3]))
@@ -102,15 +102,24 @@ f1_eq = Euler_G_solve[1]  # Euler equation for f1, already substituted with para
 m1_eq = Euler_B_solve[1]  # Euler equation for m1, already substituted with params_gov
 
 ### Change the conjecture to make the A, B terms converge to the conjectured coefficients - work this out post lecture
-## Also, reduce conjectures so we keep f2(f1,m1) to take the conjectured form - we have transformed everythign to f1(m1) etc
+
+#=
+## Direct solution - extremely slow
+# Define the equations f1_eq and m1_eq symbolically
+eq1 = f1_eq - (ω_f * f[1] + ψ_f * m[1])
+eq2 = m1_eq - (ω_m * f[1] + ψ_m * m[1])
+
+# Attempt to solve the system symbolically
+solution = solve([eq1, eq2], [ω_f, ψ_f, ω_m, ψ_m])
+
+println("Symbolic solution: ", solution)
+=#
 
 
 
 
-
-
-
-[Trying to NSOLVE]
+#=
+## NSolve solution
 # Initial guess for conjecture parameters
 initial_guess = [1.0, 1.0, 1.0, 1.0]  # [ω_f, ψ_f, ω_m, ψ_m]
 
@@ -122,9 +131,11 @@ println("ω_f: ", solution[1])
 println("ψ_f: ", solution[2])
 println("ω_m: ", solution[3])
 println("ψ_m: ", solution[4])
-
-## In steady state MPE the conjecture based on the values of f and m and the parameters will equal the observed value.  We can solve by starting with an initial value of the other persons choice and initial unknown parameters, and calculate the individuals choice and the conjectured values of f and m.  If the choices are not equal to the conjectured values, then we reiterate.
+=#
 #=
+## Manual fixed point solution
+# In steady state MPE the conjecture based on the values of f and m and the parameters will equal the observed value.  We can solve by starting with an initial value of the other persons choice and initial unknown parameters, and calculate the individuals choice and the conjectured values of f and m.  If the choices are not equal to the conjectured values, then we reiterate.
+
 # Initialize the parameters
 global f1_guess = 1.0
 global m1_guess = 1.0
@@ -248,4 +259,5 @@ end
 println("Final f1: $f1_guess, Final m1: $m1_guess")
 println("Final ω_f: $ω_f_guess, Final ω_m: $ω_m_guess")
 println("Final ψ_f: $ψ_f_guess, Final ψ_m: $ψ_m_guess")
+
 =#
