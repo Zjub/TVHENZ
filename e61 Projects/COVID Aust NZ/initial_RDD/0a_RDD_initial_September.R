@@ -1,4 +1,4 @@
-# Script to pull together initial RDD based on aggregate exit rates
+# Script to pull together initial RDD based on aggregate exit rates - doing for the second discontinuity
 # Author: Matt Nolan
 # Date made: 31/10/2024
 # Last update: 31/10/2024
@@ -17,14 +17,21 @@ prop_JSP_matched_dt <- read_excel("PSM_spec2.xlsx") # Placebo including "non-per
 #prop_JSP_matched_dt <- insert main # Main results JSP
 setDT(prop_JSP_matched_dt)
 
-treated_actual <- as.IDate("2020-03-22")
-treated <- as.IDate("2020-03-19")
+
+# treated_actual <- as.IDate("2020-07-21")
+# treated <- as.IDate("2020-07-16")
+treated_actual <- as.IDate("2020-06-23")
+treated <- as.IDate("2020-06-18")
+
+
 poly <- 1
 bin_l <- 9
 bin_r <- 36
-start <- as.IDate("2020-01-16") 
-#end <- as.IDate("2020-07-21") # Before the announcement
-end <- as.IDate("2020-06-23") # Before it is announced that there would be an announcement
+
+
+start <- as.IDate("2020-04-02") 
+end <- as.IDate("2020-11-26") 
+
 
 prop_JSP_matched_dt[,date := as.IDate(date)]
 
@@ -111,8 +118,14 @@ diff_data <- prop_JSP_matched_dt[nz == 0][prop_JSP_matched_dt[nz == 1],on=.(date
 generate_plot <- function(data, cutoff, treatment_day = treated_actual, treatment_date = treated, bin_left = bin_l, bin_right = bin_r, periods_drop = 0){
   date_diff <- as.numeric(treatment_day - treatment_date)
   
-  rdplot_all <- rdplot(data$prop,
-                       data$event_time,
+  temp <- data
+  
+  if (periods_drop > 0){
+    temp <- temp[event_time <= 0 | event_time > periods_drop*7]
+  }
+  
+  rdplot_all <- rdplot(temp$prop,
+                       temp$event_time,
                        c = treatment_day - treatment_date,
                        p = 1,
                        nbins = c(bin_left, bin_right - periods_drop),
@@ -120,7 +133,7 @@ generate_plot <- function(data, cutoff, treatment_day = treated_actual, treatmen
   
   rd_all_plotline <- as.data.table(rdplot_all$vars_poly)
   
-  print(rd_all_plotline[rdplot_x >= 0 & rdplot_x <= 7])
+  print(rd_all_plotline[rdplot_x >= -7 & rdplot_x <= 7])
   
   rd_all_plotline[rdplot_x == 1, rdplot_y := NA]
   
@@ -134,7 +147,7 @@ generate_plot <- function(data, cutoff, treatment_day = treated_actual, treatmen
     geom_line(aes(y = all_line)) +
     geom_vline(xintercept = date_diff, linetype = "dashed") + labs_e61(title = "Difference in Job Finding Rates (Aussie - NZ)",y="") +
     scale_y_continuous_e61(labels=scales::percent_format(),limits=c(-0.1,0.02,by=0.02)) +
-    plab("1.4ppt drop in relative Australian JFR",x=14,y=-0.01) + add_baseline()
+    plab("XXppt drop in relative Australian JFR",x=14,y=-0.01) + add_baseline()
   
   return(plot)
 }
@@ -145,5 +158,9 @@ diff_rdd
 
 prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
 
-7.3/8.7
-6.9/8.7
+# 7.3/8.7
+# 6.9/8.7
+
+diff_rdd_drop2 <- generate_plot(diff_data,periods_drop = 2)
+
+diff_rdd_drop2
