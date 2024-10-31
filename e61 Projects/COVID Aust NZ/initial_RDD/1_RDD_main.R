@@ -13,18 +13,34 @@ library(readxl)
 rm(list=ls())
 
 #prop_JSP_matched_dt <- read_excel("PSM_spec1.xlsx") # The "simplifed" matching model for placebo.
-prop_JSP_matched_dt <- read_excel("PSM_spec2.xlsx") # Placebo including "non-personal" variables.
-#prop_JSP_matched_dt <- insert main # Main results JSP
-setDT(prop_JSP_matched_dt)
-
-treated_actual <- as.IDate("2020-03-22")
-treated <- as.IDate("2020-03-19")
+#prop_JSP_matched_dt <- read_excel("PSM_spec2.xlsx") # Placebo including "non-personal" variables.
 poly <- 1
 bin_l <- 9
 bin_r <- 36
-start <- as.IDate("2020-01-16") 
-#end <- as.IDate("2020-07-21") # Before the announcement
-end <- as.IDate("2020-06-23") # Before it is announced that there would be an announcement
+treatment_number <- 1 # 1 for the March announcement, anything else for the September
+
+if (treatment_number == 1){
+  prop_JSP_matched_dt <- read.csv("JFR_by_group 1 .csv")  # Main results JSP
+  setDT(prop_JSP_matched_dt)
+  
+  treated_actual <- as.IDate("2020-03-22")
+  treated <- as.IDate("2020-03-19")
+  start <- as.IDate("2020-01-16") 
+  #end <- as.IDate("2020-07-21") # Before the announcement
+  end <- as.IDate("2020-06-23") # Before it is announced that there would be an announcement
+} else {
+  prop_JSP_matched_dt <- read.csv("JFR_by_group 2 .csv")  # Main results JSP
+  setDT(prop_JSP_matched_dt)
+  
+  # treated_actual <- as.IDate("2020-07-21")
+  # treated <- as.IDate("2020-07-16")
+  treated_actual <- as.IDate("2020-06-23")
+  treated <- as.IDate("2020-06-18")
+
+  start <- as.IDate("2020-04-02") 
+  end <- as.IDate("2020-11-26") 
+  
+}
 
 prop_JSP_matched_dt[,date := as.IDate(date)]
 
@@ -133,10 +149,11 @@ generate_plot <- function(data, cutoff, treatment_day = treated_actual, treatmen
     geom_point(aes(y = all_dot)) +
     geom_line(aes(y = all_line)) +
     geom_vline(xintercept = date_diff, linetype = "dashed") + labs_e61(title = "Difference in Job Finding Rates (Aussie - NZ)",y="",
-                                                                       sources = c("ABS","e61")) +
+                                                                       sources = c("ABS","e61"),
+                                                                       footnotes = c("Job Finding Rate is the proportion of those out of work who find a job in the week.","Matching on firm and personal characteristics: Occupation, region, prior earnings, spouse and their prior earnings, and industry.")) +
     scale_y_continuous_e61(labels=scales::percent_format(),limits=c(-0.06,0.01,by=0.01)) +
     scale_x_continuous() +
-    plab("1.8ppt decline",x=14,y=-0.015) + add_baseline()
+    plab("XXXppt (XX%) decline",x=14,y=-0.015) + add_baseline()
   
   return(plot)
 }
@@ -145,9 +162,11 @@ diff_rdd <- generate_plot(diff_data)
 
 diff_rdd
 
-#save_e61("JFR.png",res=2,auto_scale = FALSE,pad_width = 1)
+save_e61(paste0("JFR",treatment_number,".png"),res=2,auto_scale = FALSE,pad_width = 1)
 
 prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
 
-7.3/8.7
-6.9/8.7
+(prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))] - 0.017)/prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
+0.017/prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
+
+
