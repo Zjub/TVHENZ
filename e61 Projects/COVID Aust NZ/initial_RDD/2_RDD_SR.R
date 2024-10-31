@@ -1,4 +1,4 @@
-# Script to pull together initial RDD based on aggregate exit rates
+# Script to pull together initial RDD based on aggregate separation rates
 # Author: Matt Nolan
 # Date made: 31/10/2024
 # Last update: 31/10/2024
@@ -20,7 +20,7 @@ bin_r <- 36
 treatment_number <- 2 # 1 for the March announcement, anything else for the September
 
 if (treatment_number == 1){
-  prop_JSP_matched_dt <- read.csv("JFR_by_group 1 .csv")  # Main results JSP
+  prop_JSP_matched_dt <- read.csv("SR_by_group 1 .csv")  # Main results JSP
   setDT(prop_JSP_matched_dt)
   
   treated_actual <- as.IDate("2020-03-22")
@@ -29,7 +29,7 @@ if (treatment_number == 1){
   #end <- as.IDate("2020-07-21") # Before the announcement
   end <- as.IDate("2020-06-23") # Before it is announced that there would be an announcement
 } else {
-  prop_JSP_matched_dt <- read.csv("JFR_by_group 2 .csv")  # Main results JSP
+  prop_JSP_matched_dt <- read.csv("SR_by_group 2 .csv")  # Main results JSP
   setDT(prop_JSP_matched_dt)
   
   # treated_actual <- as.IDate("2020-07-21")
@@ -59,21 +59,14 @@ rdplotting <- function(prop_JSP_matched, treatment_day, treatment_date, polynomi
                       c = date_diff,
                       p = polynomial,
                       nbins = c(bin_left, bin_right - periods_drop),
-                      title = "NZ Job Finding Rate RD")
-  
-  # if (periods_drop == 0){
-  #   save_e61("test_nz.png",res=2,pad_width = 1)
-  # }
+                      title = "NZ Separation Rate RD")
   
   rdplot_aus <- rdplot(temp[nz == 0]$prop,
                        temp[nz == 0]$event_time,
                        c = treatment_day - treatment_date,
                        p = polynomial,
                        nbins = c(bin_left, bin_right - periods_drop),
-                       title = "Aus Job Finding Rate RD")
-  # if (periods_drop == 0){
-  #   save_e61("test_aus.png",res=2,pad_width = 1)
-  # }
+                       title = "Aus Separation Rate RD")
   
   # Combine the elements
   rd_nz_plotline <- as.data.table(rdplot_nz$vars_poly)
@@ -88,12 +81,7 @@ rdplotting <- function(prop_JSP_matched, treatment_day, treatment_date, polynomi
   ggplot(nz_plot_data, aes(x=rdplot_x)) +
     geom_point(aes(y=nz_dot)) +
     geom_line(aes(y=nz_line)) +
-    geom_vline(xintercept = date_diff, linetype = "dashed") + scale_y_continuous_e61(limits=c(0,0.15,0.03),labels=scales::percent_format())+
-    labs_e61(title = "New Zealand JFR",y="",sources = c("ABS","e61"))
-  
-  if (periods_drop == 0){
-    save_e61("test_nz.png",res=2,pad_width = 1,auto_scale = FALSE)
-  }
+    geom_vline(xintercept = date_diff, linetype = "dashed")
   
   rd_aus_plotline <- as.data.table(rdplot_aus$vars_poly)
   
@@ -107,12 +95,7 @@ rdplotting <- function(prop_JSP_matched, treatment_day, treatment_date, polynomi
   ggplot(aus_plot_data, aes(x=rdplot_x)) +
     geom_point(aes(y=aus_dot)) +
     geom_line(aes(y=aus_line)) +
-    geom_vline(xintercept = date_diff, linetype = "dashed") + scale_y_continuous_e61(limits=c(0,0.15,0.03),labels=scales::percent_format())+
-    labs_e61(title = "Australia JFR",y="",sources = c("ABS","e61"))
-  
-  if (periods_drop == 0){
-    save_e61("test_aus.png",res=2,pad_width = 1,auto_scale = FALSE)
-  }
+    geom_vline(xintercept = date_diff, linetype = "dashed")
   
   all_data <- merge(aus_plot_data, nz_plot_data, by="rdplot_x", all=TRUE)
   
@@ -122,7 +105,7 @@ rdplotting <- function(prop_JSP_matched, treatment_day, treatment_date, polynomi
     geom_line(aes(y=aus_line, colour = "Aus")) +
     geom_line(aes(y=nz_line, colour = "NZ")) +
     geom_vline(xintercept = date_diff, linetype = "dashed") +
-    labs(title = "Job Finding Rates, optimal bandwidth")
+    labs(title = "Separation Rates, optimal bandwidth")
   
   return(list(all_data, plot_result))
 }
@@ -141,7 +124,7 @@ rd_res_drop
 
 diff_data <- prop_JSP_matched_dt[nz == 0][prop_JSP_matched_dt[nz == 1],on=.(date)][,.(date,event_time,prop=prop - i.prop)]
 
-generate_plot <- function(data_set, cutoff, treatment_day = treated_actual, treatment_date = treated, bin_left = bin_l, bin_right = bin_r, periods_drop = 0){
+generate_plot <- function(data, cutoff, treatment_day = treated_actual, treatment_date = treated, bin_left = bin_l, bin_right = bin_r, periods_drop = 0){
   date_diff <- as.numeric(treatment_day - treatment_date)
   temp <- data_set
   
@@ -154,7 +137,7 @@ generate_plot <- function(data_set, cutoff, treatment_day = treated_actual, trea
                        c = treatment_day - treatment_date,
                        p = 1,
                        nbins = c(bin_left, bin_right - periods_drop),
-                       title = "Diff Job Finding Rate RD")
+                       title = "Diff Separation Rate RD")
   
   rd_all_plotline <- as.data.table(rdplot_all$vars_poly)
   
@@ -170,12 +153,12 @@ generate_plot <- function(data_set, cutoff, treatment_day = treated_actual, trea
   plot <- ggplot(all_plot_data, aes(x = rdplot_x)) +
     geom_point(aes(y = all_dot)) +
     geom_line(aes(y = all_line)) +
-    geom_vline(xintercept = date_diff, linetype = "dashed") + labs_e61(title = "Difference in Job Finding Rates (Aussie - NZ)",y="",
+    geom_vline(xintercept = date_diff, linetype = "dashed") + labs_e61(title = "Difference in Separation Rates (Aussie - NZ)",y="",
                                                                        sources = c("ABS","e61"),
-                                                                       footnotes = c("Job Finding Rate is the proportion of those out of work who find a job in the week.","Matching on firm and personal characteristics: Occupation, region, prior earnings, spouse and their prior earnings, and industry.")) +
-    scale_y_continuous_e61(labels=scales::percent_format(),limits=c(-0.06,0.01,by=0.01)) +
+                                                                       footnotes = c("Separation Rate is the proportion of those in work who persistently leave a job in the week.","Matching on firm and personal characteristics: Occupation, region, prior earnings, spouse and their prior earnings, and industry.")) +
+    scale_y_continuous_e61(labels=scales::percent_format(),limits=c(-0.02,0.1,by=0.02)) +
     scale_x_continuous() +
-    plab("0.5ppt (6%) decline",x=14,y=-0.005) + add_baseline()
+    plab("1.3ppt (26%) increase",x=14,y=-0.005) + add_baseline()
   
   return(plot)
 }
@@ -184,20 +167,11 @@ diff_rdd <- generate_plot(diff_data)
 
 diff_rdd
 
-save_e61(paste0("JFR",treatment_number,".png"),res=2,auto_scale = FALSE,pad_width = 1)
+save_e61(paste0("SR",treatment_number,".png"),res=2,auto_scale = FALSE,pad_width = 1)
 
 prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
 
-(prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))] - 0.017)/prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
-0.017/prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
+(prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))] - 0.05)/prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
+0.05/prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
 
-
-(0.5/1.7)*0.19
-
-diff_rdd_add2 <- generate_plot(data_set = diff_data,periods_drop = 2)
-
-diff_rdd_add2
-
-save_e61(paste0("JFR",treatment_number,"2period_drop.png"),res=2,auto_scale = FALSE,pad_width = 1)
-
-0.015/prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
+1.3/5
