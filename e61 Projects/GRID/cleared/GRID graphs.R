@@ -365,7 +365,19 @@ ggplot(volatility_summary[gender != "All genders"],aes(x=date,y=p9010_res_1yr_lo
   labs_e61(title = "90/10 ratio of residualized earnings",y = "", x = "Date",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings growth, residualized"),source = c("ABS","e61", "GRID"))
 
 save_e61("Fig4_90_10.png",res=2,pad_width = 1,auto_scale = FALSE)
-  
+
+ggplot(volatility_summary[gender != "All genders"],aes(x=date,y=p9050_res_1yr_log_chg,colour=gender)) + geom_line() + 
+  plab(c("Women","Men"),x=c(as.Date("2004-01-01"),as.Date("2004-01-01")),y=c(0.83,0.77)) +
+  scale_y_continuous_e61() + geom_rect(data = shading_periods_plots, aes(xmin = start, xmax = end, ymin = -Inf, ymax = Inf), 
+                                                            fill = "grey", alpha = 0.5, inherit.aes = FALSE) +
+  labs_e61(title = "90/50 ratio of residualized earnings",y = "", x = "Date",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings growth, residualized"),source = c("ABS","e61", "GRID"))
+
+ggplot(volatility_summary[gender != "All genders"],aes(x=date,y=p5010_res_1yr_log_chg,colour=gender)) + geom_line() + 
+  plab(c("Women","Men"),x=c(as.Date("2004-01-01"),as.Date("2004-01-01")),y=c(0.83,0.77)) +
+  scale_y_continuous_e61() + geom_rect(data = shading_periods_plots, aes(xmin = start, xmax = end, ymin = -Inf, ymax = Inf), 
+                                                            fill = "grey", alpha = 0.5, inherit.aes = FALSE) +
+  labs_e61(title = "50/10 ratio of residualized earnings",y = "", x = "Date",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings growth, residualized"),source = c("ABS","e61", "GRID"))
+
 ggplot(volatility_summary[gender != "All genders"],aes(x=date,y=kelley_res_1yr_log_chg,colour=gender)) + geom_line() + 
   plab(c("Women","Men"),x=c(as.Date("2004-01-01"),as.Date("2004-01-01")),y=c(-0.07,0.13)) +
   scale_y_continuous_e61(limits = c(-0.2,0.2,0.05)) + geom_rect(data = shading_periods_plots, aes(xmin = start, xmax = end, ymin = -Inf, ymax = Inf), 
@@ -409,6 +421,18 @@ ggplot(fig_5_data[gender == "Female" & rank_permanent_inc != 100 & age != "25-55
 
 save_e61("Fig5_female.png",res=2,pad_width = 1,auto_scale = FALSE)
 
+
+ggplot(fig_5_data[gender == "Male" & rank_permanent_inc != 100 & age != "25-55"],aes(x=rank_permanent_inc,y=p9010_res_1yr_log_chg_by_skill,colour=age)) + geom_line() +
+  geom_point(data = fig_5_data[gender == "Male" & rank_permanent_inc == 100 & age != "25-55"],aes(x = rank_permanent_inc, y = p9050_res_1yr_log_chg_by_skill, colour = age)) +
+  plab(c("25-34","35-44","45-55"),x=c(50,50,50),y=c(1.24,1.12,1)) +
+  scale_y_continuous_e61(limits = c(0.0,1.8,0.3)) +
+  labs_e61(title = "Men Permanent Income growth dispersion (90-50 ratio)",y = "", x = "Rank",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings growth, permanent income"),source = c("ABS","e61", "GRID"))
+
+ggplot(fig_5_data[gender == "Male" & rank_permanent_inc != 100 & age != "25-55"],aes(x=rank_permanent_inc,y=p5010_res_1yr_log_chg_by_skill,colour=age)) + geom_line() +
+  geom_point(data = fig_5_data[gender == "Male" & rank_permanent_inc == 100 & age != "25-55"],aes(x = rank_permanent_inc, y = p9010_res_1yr_log_chg_by_skill, colour = age)) +
+  plab(c("25-34","35-44","45-55"),x=c(50,50,50),y=c(1.24,1.12,1)) +
+  scale_y_continuous_e61(limits = c(0.0,1.8,0.3)) +
+  labs_e61(title = "Men Permanent Income growth dispersion (50-10 ratio)",y = "", x = "Rank",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings growth, permanent income"),source = c("ABS","e61", "GRID"))
 
 ############## Figure 7
 
@@ -518,15 +542,23 @@ ggplot(fig_9_result[gender == "Female" & pct_year_t_log_earnings != 100],aes(x=p
 
 save_e61("Fig9_female.png",res=2,pad_width = 1,auto_scale = FALSE)
 
+rank_rank_slopes <- fig_9_result %>%
+  group_by(age,gender) %>%
+  do(model = lm(avg_five_year_ahead ~ pct_year_t_log_earnings, data = .)) %>%
+  summarise(age,gender,
+            rank_rank_slope = coef(model)["pct_year_t_log_earnings"])
+
+
+rank_rank_slopes
 
 ##### See if we can make some count data
 
 ggplot(fig_2_percentiles_log_inc,aes(x=date,y=nobs_log_inc/1000000,colour=gender)) + geom_line() + 
-  plab(label = c("p10","p25","p50","p75","p90"),y=c(0.22,0.27,0.32,0.37,0.42),x=c(as.Date("2002-01-01"),as.Date("2002-01-01"),as.Date("2002-01-01"),as.Date("2002-01-01"),as.Date("2002-01-01"))) +
+  plab(label = c("Women","Men"),y=c(4.2,4.7),x=c(as.Date("2003-01-01"),as.Date("2003-01-01"))) +
   scale_y_continuous_e61(limits = c(2,5,0.5)) + 
   geom_rect(data = shading_periods_plots, aes(xmin = start, xmax = end, ymin = -Inf, ymax = Inf), 
             fill = "grey", alpha = 0.5, inherit.aes = FALSE) +
-  labs_e61(title = "Count of individuals",y = "", x = "Date",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY counts"),source = c("ABS","e61", "GRID"))
+  labs_e61(title = "Count of individuals",y = "Million", x = "Date",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY counts"),source = c("ABS","e61", "GRID"))
 
 save_e61("Count.png",res=2,pad_width = 1,auto_scale = FALSE)
 
@@ -537,7 +569,7 @@ ggplot(inc_data,aes(x=date,y=value,colour=variable)) + geom_line() + facet_wrap(
   scale_y_continuous_e61(limits = c(9,13,1)) + 
   geom_rect(data = shading_periods_plots, aes(xmin = start, xmax = end, ymin = -Inf, ymax = Inf), 
             fill = "grey", alpha = 0.5, inherit.aes = FALSE) +
-  labs_e61(title = "Log Incomes",y = "", x = "Date",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY counts"),source = c("ABS","e61", "GRID"))
+  labs_e61(title = "Log Real Earnings",y = "", x = "Date",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY counts"),source = c("ABS","e61", "GRID"))
 
 save_e61("Log_income.png",res=2,pad_width = 1,auto_scale = FALSE)
 
