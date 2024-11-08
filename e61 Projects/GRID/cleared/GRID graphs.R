@@ -156,11 +156,31 @@ ggplot(AWE[series %in% c("Earnings; Persons; Full Time; Adult; Ordinary time ear
 OECD_earnings <- read_csv("OECD_earnings.csv")
 setDT(OECD_earnings)
 
+OECD_earnings[,date := as.Date(paste0(TIME_PERIOD,"-07-01"))]
 
-
-
+ggplot(OECD_earnings[TIME_PERIOD >= 2002],aes(x=date,y=OBS_VALUE/1000)) + geom_line() +
+  geom_rect(data = shading_periods, aes(xmin = start, xmax = end, ymin = -Inf, ymax = Inf), 
+            fill = "grey", alpha = 0.5, inherit.aes = FALSE) +
+  scale_y_continuous_e61(limits = c(50,75,5)) +
+  labs_e61(title = "Average FTE Annual Earnings",y = "($000s)", x = "Date",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","Annual FTE wages, $USD, 2023 PPP"),source = c("OECD","e61")) #+ theme_e61(legend = "bottom")
 
 save_e61("Earnings.png",res=2,pad_width = 1,auto_scale = FALSE)
+
+## Terms of trade
+
+IIP <- read_abs(cat_no = "5302.0")
+setDT(IIP)
+
+TOT <- IIP[series == "Terms of Trade ;  Goods and Services ;" & series_type == "Seasonally Adjusted"]
+
+ggplot(TOT[date >= as.Date("2002-01-01")],aes(x=date,y=value)) + geom_line()+
+  geom_rect(data = shading_periods, aes(xmin = start, xmax = end, ymin = -Inf, ymax = Inf), 
+            fill = "grey", alpha = 0.5, inherit.aes = FALSE) +
+  scale_y_continuous_e61(limits = c(40,120,20)) +
+  labs_e61(title = "Terms of trade",y = "", x = "Date",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","Terms of Trade index"),source = c("ABS","e61")) #+ theme_e61(legend = "bottom")
+
+save_e61("TOT.png",res=2,pad_width = 1,auto_scale = FALSE)
+
 
 ################# Figure 2
 
