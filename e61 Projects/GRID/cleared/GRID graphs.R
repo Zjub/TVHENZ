@@ -323,7 +323,7 @@ ggplot(cohorts_f3[gender == "Male"],aes(x=date,y=p9010_log_inc,colour=as.factor(
             linetype = "dashed",linewidth=0.5) +
   geom_rect(data = shading_periods_plots, aes(xmin = start, xmax = end, ymin = -Inf, ymax = Inf), 
             fill = "grey", alpha = 0.5, inherit.aes = FALSE) +
-  labs_e61(title = "Men's earnings 90/10 by cohort",y = "", x = "Date",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings, difference from initial log value by percentile"),source = c("ABS","e61", "GRID")) +
+  labs_e61(title = "Men's earnings 90/10 by cohort",y = "", x = "Date",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings, 90/10 ratio of log earnings"),source = c("ABS","e61", "GRID")) +
   scale_y_continuous_e61(limits = c(1.4,2.2,by=0.2)) +
   scale_color_manual(values = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5])) +
   plab(c("1978 birth cohort","1983 birth cohort","1988 birth cohort","25 year olds","35 year olds"),x=c(as.Date("2011-01-01"),as.Date("2011-01-01"),as.Date("2011-01-01"),as.Date("2011-01-01"),as.Date("2011-01-01")),y=c(1.57,1.52,1.47,2.05,1.65))
@@ -336,7 +336,7 @@ ggplot(cohorts_f3[gender == "Female"],aes(x=date,y=p9010_log_inc,colour=as.facto
             linetype = "dashed",linewidth=0.5) +
   geom_rect(data = shading_periods_plots, aes(xmin = start, xmax = end, ymin = -Inf, ymax = Inf), 
             fill = "grey", alpha = 0.5, inherit.aes = FALSE) +
-  labs_e61(title = "Women's earnings 90/10 by cohort",y = "", x = "Date",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings, difference from initial log value by percentile"),source = c("ABS","e61", "GRID")) +
+  labs_e61(title = "Women's earnings 90/10 by cohort",y = "", x = "Date",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings, 90/10 ratio of log earnings"),source = c("ABS","e61", "GRID")) +
   scale_y_continuous_e61(limits = c(1.4,2.2,by=0.2)) +
   scale_color_manual(values = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5])) +
   plab(c("1978 birth cohort","1983 birth cohort","1988 birth cohort","25 year olds","35 year olds"),x=c(as.Date("2011-01-01"),as.Date("2011-01-01"),as.Date("2011-01-01"),as.Date("2011-01-01"),as.Date("2011-01-01")),y=c(1.67,1.62,1.57,1.77,2.12))
@@ -395,17 +395,17 @@ fig_5_data <- fig_5_p9010_1yr_growth[year == 9999 & gender != "All genders"]
 
 ggplot(fig_5_data[gender == "Male" & rank_permanent_inc != 100 & age != "25-55"],aes(x=rank_permanent_inc,y=p9010_res_1yr_log_chg_by_skill,colour=age)) + geom_line() +
   geom_point(data = fig_5_data[gender == "Male" & rank_permanent_inc == 100 & age != "25-55"],aes(x = rank_permanent_inc, y = p9010_res_1yr_log_chg_by_skill, colour = age)) +
-  plab(c("25-34","35-44","45-54"),x=c(50,50,50),y=c(1.24,1.12,1)) +
+  plab(c("25-34","35-44","45-55"),x=c(50,50,50),y=c(1.24,1.12,1)) +
   scale_y_continuous_e61(limits = c(0.0,1.8,0.3)) +
-  labs_e61(title = "Men Permanent Income growth dispersion (90-10 ratio)",y = "", x = "Rank",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings growth, permanet income"),source = c("ABS","e61", "GRID"))
+  labs_e61(title = "Men Permanent Income growth dispersion (90-10 ratio)",y = "", x = "Rank",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings growth, permanent income"),source = c("ABS","e61", "GRID"))
 
 save_e61("Fig5_male.png",res=2,pad_width = 1,auto_scale = FALSE)
   
 ggplot(fig_5_data[gender == "Female" & rank_permanent_inc != 100 & age != "25-55"],aes(x=rank_permanent_inc,y=p9010_res_1yr_log_chg_by_skill,colour=age)) + geom_line() +
   geom_point(data = fig_5_data[gender == "Male" & rank_permanent_inc == 100 & age != "25-55"],aes(x = rank_permanent_inc, y = p9010_res_1yr_log_chg_by_skill, colour = age)) +
-  plab(c("25-34","35-44","45-54"),x=c(50,50,50),y=c(1.24,1.12,1)) +
+  plab(c("25-34","35-44","45-55"),x=c(50,50,50),y=c(1.24,1.12,1)) +
   scale_y_continuous_e61(limits = c(0.0,1.8,0.3)) +
-  labs_e61(title = "Women Permanent Income growth dispersion (90-10 ratio)",y = "", x = "Rank",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings growth, permanet income"),source = c("ABS","e61", "GRID"))
+  labs_e61(title = "Women Permanent Income growth dispersion (90-10 ratio)",y = "", x = "Rank",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings growth, permanent income"),source = c("ABS","e61", "GRID"))
 
 save_e61("Fig5_female.png",res=2,pad_width = 1,auto_scale = FALSE)
 
@@ -419,7 +419,7 @@ fig_7_data <- fig_7_skewness_by_perm_income[year == 9999 & gender != "All gender
 
 ggplot(fig_7_data[gender == "Male" & rank_permanent_inc != 100 & age != "25-55"],aes(x=rank_permanent_inc,y=skew_res_1yr_log_chg_by_skill,colour=age)) + geom_line() +
   geom_point(data = fig_7_data[gender == "Male" & rank_permanent_inc == 100 & age != "25-55"],aes(x = rank_permanent_inc, y = skew_res_1yr_log_chg_by_skill, colour = age)) +
-  plab(c("25-34","35-44","45-54"),x=c(20,20,20),y=c(-0.8,-1.2,-1.6)) +
+  plab(c("25-34","35-44","45-55"),x=c(20,20,20),y=c(-0.8,-1.2,-1.6)) +
   scale_y_continuous_e61(limits = c(-2.5,1,0.5)) +
   labs_e61(title = "Men Permanent Income skewness",y = "", x = "Rank",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings growth, log growth of residualized earnings"),source = c("ABS","e61", "GRID")) + add_baseline()
 
@@ -428,7 +428,7 @@ save_e61("Fig7_male.png",res=2,pad_width = 1,auto_scale = FALSE)
 
 ggplot(fig_7_data[gender == "Female" & rank_permanent_inc != 100 & age != "25-55"],aes(x=rank_permanent_inc,y=skew_res_1yr_log_chg_by_skill,colour=age)) + geom_line() +
   geom_point(data = fig_7_data[gender == "Female" & rank_permanent_inc == 100 & age != "25-55"],aes(x = rank_permanent_inc, y = skew_res_1yr_log_chg_by_skill, colour = age)) +
-  plab(c("25-34","35-44","45-54"),x=c(20,20,20),y=c(-0.8,-1.2,-1.6)) +
+  plab(c("25-34","35-44","45-55"),x=c(20,20,20),y=c(-0.8,-1.2,-1.6)) +
   scale_y_continuous_e61(limits = c(-2.5,1,0.5)) +
   labs_e61(title = "Women Permanent Income skewness",y = "", x = "Rank",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings growth, log growth of residualized earnings"),source = c("ABS","e61", "GRID")) + add_baseline()
 
@@ -444,7 +444,7 @@ fig_8_data <- fig_7_8_skew_kurt_by_perm_income[year == 9999 & gender != "All gen
 
 ggplot(fig_8_data[gender == "Male" & rank_permanent_inc != 100 & age != "25-55"],aes(x=rank_permanent_inc,y=kurt_res_1yr_log_chg_by_skill,colour=age)) + geom_line() +
   geom_point(data = fig_8_data[gender == "Male" & rank_permanent_inc == 100 & age != "25-55"],aes(x = rank_permanent_inc, y = kurt_res_1yr_log_chg_by_skill, colour = age)) +
-  plab(c("25-34","35-44","45-54"),x=c(70,70,70),y=c(6,11,16)) +
+  plab(c("25-34","35-44","45-55"),x=c(70,70,70),y=c(6,11,16)) +
   scale_y_continuous_e61(limits = c(0,40,5)) +
   labs_e61(title = "Men Permanent Income Kurtosis",y = "", x = "Rank",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings growth, log growth of residualized earnings"),source = c("ABS","e61", "GRID")) + add_baseline()
 
@@ -452,7 +452,7 @@ save_e61("Fig8_male.png",res=2,pad_width = 1,auto_scale = FALSE)
 
 ggplot(fig_8_data[gender == "Female" & rank_permanent_inc != 100 & age != "25-55"],aes(x=rank_permanent_inc,y=kurt_res_1yr_log_chg_by_skill,colour=age)) + geom_line() +
   geom_point(data = fig_8_data[gender == "Female" & rank_permanent_inc == 100 & age != "25-55"],aes(x = rank_permanent_inc, y = kurt_res_1yr_log_chg_by_skill, colour = age)) +
-  plab(c("25-34","35-44","45-54"),x=c(10,10,10),y=c(16,21,26)) +
+  plab(c("25-34","35-44","45-55"),x=c(10,10,10),y=c(16,21,26)) +
   scale_y_continuous_e61(limits = c(0,40,5)) +
   labs_e61(title = "Women Permanent Income Kurtosis",y = "", x = "Rank",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings growth, log growth of residualized earnings"),source = c("ABS","e61", "GRID")) + add_baseline()
 
@@ -481,7 +481,7 @@ fig_9_result <- fig_9_rank_rank_mobility[, .(
 
 ggplot(fig_9_result[gender == "Male" & pct_year_t_log_earnings != 100],aes(x=pct_year_t_log_earnings,y=avg_one_year_ahead,colour=age)) + geom_line() +
   geom_point(data = fig_9_result[gender == "Male" & pct_year_t_log_earnings == 100],aes(x = pct_year_t_log_earnings, y = avg_one_year_ahead, colour = age)) +
-  plab(c("25-34","35-44","45-54"),x=c(70,70,70),y=c(6,11,16)) +
+  plab(c("25-34","35-44","45-55"),x=c(70,70,70),y=c(6,11,16)) +
   geom_abline(slope = 1, intercept = 0, linetype = "dashed") +
   scale_y_continuous_e61(limits = c(-20,100,20)) +
   scale_x_continuous_e61(limits = c(0,100,20)) +
@@ -489,7 +489,7 @@ ggplot(fig_9_result[gender == "Male" & pct_year_t_log_earnings != 100],aes(x=pct
 
 ggplot(fig_9_result[gender == "Male" & pct_year_t_log_earnings != 100],aes(x=pct_year_t_log_earnings,y=weighted_avg_one_year_ahead,colour=age)) + geom_line() +
   geom_point(data = fig_9_result[gender == "Male" & pct_year_t_log_earnings == 100],aes(x = pct_year_t_log_earnings, y = weighted_avg_one_year_ahead, colour = age)) +
-  plab(c("25-34","35-44","45-54"),x=c(70,70,70),y=c(6,11,16)) +
+  plab(c("25-34","35-44","45-55"),x=c(70,70,70),y=c(6,11,16)) +
   geom_abline(slope = 1, intercept = 0, linetype = "dashed") +
   scale_y_continuous_e61(limits = c(-20,100,20)) +
   scale_x_continuous_e61(limits = c(0,100,20)) +
@@ -500,7 +500,7 @@ ggplot(fig_9_result[gender == "Male" & pct_year_t_log_earnings != 100],aes(x=pct
 
 ggplot(fig_9_result[gender == "Male" & pct_year_t_log_earnings != 100],aes(x=pct_year_t_log_earnings,y=avg_five_year_ahead,colour=age)) + geom_line() +
   geom_point(data = fig_9_result[gender == "Male" & pct_year_t_log_earnings == 100],aes(x = pct_year_t_log_earnings, y = avg_five_year_ahead, colour = age)) +
-  plab(c("25-34","35-44","45-54"),x=c(70,70,70),y=c(16,31,46)) +
+  plab(c("25-34","35-44","45-55"),x=c(70,70,70),y=c(16,31,46)) +
   geom_abline(slope = 1, intercept = 0, linetype = "dashed") +
   scale_y_continuous_e61(limits = c(-20,100,20)) +
   scale_x_continuous(expand = c(0, 0)) +
@@ -510,10 +510,38 @@ save_e61("Fig9_male.png",res=2,pad_width = 1,auto_scale = FALSE)
 
 ggplot(fig_9_result[gender == "Female" & pct_year_t_log_earnings != 100],aes(x=pct_year_t_log_earnings,y=avg_five_year_ahead,colour=age)) + geom_line() +
   geom_point(data = fig_9_result[gender == "Female" & pct_year_t_log_earnings == 100],aes(x = pct_year_t_log_earnings, y = avg_five_year_ahead, colour = age)) +
-  plab(c("25-34","35-44","45-54"),x=c(70,70,70),y=c(16,31,46)) +
+  plab(c("25-34","35-44","45-55"),x=c(70,70,70),y=c(16,31,46)) +
   geom_abline(slope = 1, intercept = 0, linetype = "dashed") +
   scale_y_continuous_e61(limits = c(-20,100,20)) +
   scale_x_continuous(expand = c(0, 0)) +
   labs_e61(title = "Women 5-year Mobility",y = "", x = "Rank",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY labour earnings growth, average rank of permanent income (2002-2017)"),source = c("ABS","e61", "GRID")) + add_baseline()
 
 save_e61("Fig9_female.png",res=2,pad_width = 1,auto_scale = FALSE)
+
+
+##### See if we can make some count data
+
+ggplot(fig_2_percentiles_log_inc,aes(x=date,y=nobs_log_inc/1000000,colour=gender)) + geom_line() + 
+  plab(label = c("p10","p25","p50","p75","p90"),y=c(0.22,0.27,0.32,0.37,0.42),x=c(as.Date("2002-01-01"),as.Date("2002-01-01"),as.Date("2002-01-01"),as.Date("2002-01-01"),as.Date("2002-01-01"))) +
+  scale_y_continuous_e61(limits = c(2,5,0.5)) + 
+  geom_rect(data = shading_periods_plots, aes(xmin = start, xmax = end, ymin = -Inf, ymax = Inf), 
+            fill = "grey", alpha = 0.5, inherit.aes = FALSE) +
+  labs_e61(title = "Count of individuals",y = "", x = "Date",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY counts"),source = c("ABS","e61", "GRID"))
+
+save_e61("Count.png",res=2,pad_width = 1,auto_scale = FALSE)
+
+inc_data <- melt(fig_2_percentiles_log_inc[,.(date,gender,p10_log_inc,p25_log_inc,p50_log_inc,p75_log_inc,p90_log_inc)], id.vars = c("date","gender"))
+
+ggplot(inc_data,aes(x=date,y=value,colour=variable)) + geom_line() + facet_wrap(~gender) + geom_line() + 
+  plab(label = c("p10","p25","p50","p75","p90"),y=c(11.6,11.9,12.1,12.3,12.5),x=c(as.Date("2002-01-01"),as.Date("2002-01-01"),as.Date("2002-01-01"),as.Date("2002-01-01"),as.Date("2002-01-01")),facet_name = "gender",facet_value = "Female") +
+  scale_y_continuous_e61(limits = c(9,13,1)) + 
+  geom_rect(data = shading_periods_plots, aes(xmin = start, xmax = end, ymin = -Inf, ymax = Inf), 
+            fill = "grey", alpha = 0.5, inherit.aes = FALSE) +
+  labs_e61(title = "Log Incomes",y = "", x = "Date",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","FY counts"),source = c("ABS","e61", "GRID"))
+
+save_e61("Log_income.png",res=2,pad_width = 1,auto_scale = FALSE)
+
+
+
+
+
