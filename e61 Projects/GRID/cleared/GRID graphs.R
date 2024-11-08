@@ -149,6 +149,17 @@ ggplot(AWE[series %in% c("Earnings; Persons; Full Time; Adult; Ordinary time ear
             fill = "grey", alpha = 0.5, inherit.aes = FALSE) +
   labs_e61(title = "Annual Earnings",y = "($000s)", x = "Date",footnotes = c("Recession defined as period with two quarters of negative GDP per capita growth with GDP per capita below its prior peak","Seasonally adjusted, annualised weekly earnings"),source = c("ABS","e61")) #+ theme_e61(legend = "bottom")
 
+# Adjust by CPI
+
+# Just use OECD data instead, as can't find the long time series
+
+OECD_earnings <- read_csv("OECD_earnings.csv")
+setDT(OECD_earnings)
+
+
+
+
+
 save_e61("Earnings.png",res=2,pad_width = 1,auto_scale = FALSE)
 
 ################# Figure 2
