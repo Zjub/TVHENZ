@@ -141,6 +141,8 @@ rd_res_drop
 
 diff_data <- prop_JSP_matched_dt[nz == 0][prop_JSP_matched_dt[nz == 1],on=.(date)][,.(date,event_time,prop=prop - i.prop)]
 
+diff_data_avg <- mean(diff_data$prop)
+
 generate_plot <- function(data_set, cutoff, treatment_day = treated_actual, treatment_date = treated, bin_left = bin_l, bin_right = bin_r, periods_drop = 0){
   date_diff <- as.numeric(treatment_day - treatment_date)
   temp <- data_set
@@ -175,6 +177,7 @@ generate_plot <- function(data_set, cutoff, treatment_day = treated_actual, trea
                                                                        footnotes = c("Job Finding Rate is the proportion of those out of work who find a job in the week.","Matching on firm and personal characteristics: Occupation, region, prior earnings, spouse and their prior earnings, and industry.")) +
     scale_y_continuous_e61(labels=scales::percent_format(),limits=c(-0.06,0.01,by=0.01)) +
     scale_x_continuous() +
+    geom_hline(yintercept = diff_data_avg,linetype = "dashed",colour="red") +
     plab("1.7ppt (19%) decline",x=14,y=-0.005) + add_baseline() # The version 1 with no periods dropped
     #plab("1.5ppt (17%) decline",x=14,y=-0.005) + add_baseline() # The version 1 dropping a fortnight
     #plab("0.5ppt (6%) decline",x=14,y=-0.005) + add_baseline() # The version 2 
