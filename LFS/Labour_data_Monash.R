@@ -5,8 +5,6 @@
 
 rm(list=ls())
 
-.libPaths(new = 'C:/Rpackage')
-
 library(remotes)
 library(tidyverse)
 library(data.table)
