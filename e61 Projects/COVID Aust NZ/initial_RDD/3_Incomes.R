@@ -13,7 +13,7 @@ library(rdrobust)
 library(readxl)
 
 
-Income <- read.csv("income_mean_balance 1_safe .csv")
+Income <- read.csv("initial_RDD/income_mean_balance 1_safe .csv")
 setDT(Income)
 
 Income <- Income[, !c("X", "variable"), with = FALSE]
@@ -35,5 +35,14 @@ ggplot(Income[year != 19],aes(x=year,y=income_index,fill=as.factor(nz))) + geom_
   scale_y_continuous_e61(limits = c(0,1.5,0.3)) +
   labs_e61(title = "Earnings relative to FY19",subtitle="For employed individuals",y="",sources=c("ABS","e61")) + geom_hline(yintercept = 1,linetype = "dashed") +
   plab(c("Australia","NZ"),x=c(1,1),y=c(1.4,1.25))
+
+save_e61("Incomes.png",res=2,pad_width = 1)
+
+
+ggplot(Income[year != 19],aes(x=year,y=income_index,fill=as.factor(nz))) + geom_col(position="dodge") +
+  scale_y_continuous_e61(limits = c(0,1.5,0.3)) +
+  labs_e61(subtitle="For employed individuals",y="",sources=c("ABS","e61")) + geom_hline(yintercept = 1,linetype = "dashed") +
+  plab(c("Australia","NZ"),x=c(1,1),y=c(1.4,1.25))
+
 
 save_e61("Incomes.png",res=2,pad_width = 1)
