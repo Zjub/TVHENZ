@@ -1,14 +1,18 @@
 ## Set up the file to follow actual time and solve
+## Note issue - I haven't put a "constant" in the conjectures.  Need to do that.
 
-# using Pkg
-# Pkg.add("SymPy")
-# Pkg.add("NLsolve")
-# Pkg.add("Optim")
-# Pkg.add("Plots")
-# Pkg.add("DataFrames")
-# Pkg.add("StatsPlots")
+#using Pkg
+#Pkg.add("SymPy")
+#Pkg.add("NLsolve")
+#Pkg.add("Optim")
+#Pkg.add("Plots")
+#Pkg.add("DataFrames")
+#Pkg.add("StatsPlots")
+#Pkg.add("LinearAlgebra")
+#Pkg.add("ForwardDiff")
 
-using SymPy, NLsolve, Optim, Plots
+using SymPy, NLsolve, Optim, Plots, LinearAlgebra, ForwardDiff
+
 
 # Step 1: Define symbolic variables
 @syms ω_f ψ_f ω_m ψ_m
@@ -27,8 +31,8 @@ params_gov = [
     0.5,   # bB - sensitivity of output to monetary policy
     0.5,   # dG
     0.5,   # dB
-    0.5,   # eG
-    0.5,   # eB
+    0.0,   # eG
+    0.0,   # eB
     0.5,   # theta_G_star
     0.5,   # theta_B_star
     0.0,   # mu_G
@@ -72,10 +76,10 @@ for t in 2:4
         lambda_B * (m[t] - m[t-1])^2 + theta_B_star * (beta_B_star - eB * m[t])^2 
 
     # Conjecture for fiscal policy at time t based on previous period (t-1)
-    conjecture_f[t] = ω_f * f[t-1] + ψ_f * m[t-1]
+    conjecture_f[t] = ω_f * f[t-1] + ψ_f * m[t-1] + c_f
 
     # Conjecture for monetary policy at time t based on previous period (t-1)
-    conjecture_m[t] = ω_m * f[t-1] + ψ_m * m[t-1]
+    conjecture_m[t] = ω_m * f[t-1] + ψ_m * m[t-1] + c_m
 end
 
 Euler_G = diff(L_G[2],f[2]) + delta*(diff(conjecture_m[3],f[2])*diff(L_G[3],m[3]) + diff(L_G[3],f[2])) - (diff(conjecture_m[3],f[2])*diff(conjecture_m[4],m[3])/diff(conjecture_m[4],f[3]))*(delta*diff(L_G[3],f[3]) + delta^2*diff(L_G[4],f[3]))
@@ -97,167 +101,145 @@ Euler_B_subs = subs(Euler_B_subs, param_subs)
 Euler_G_solve = solve(Euler_G_subs, f[1]) # Choice of f_1 as a function of m_1 and unknown four conjecture parameters
 Euler_B_solve = solve(Euler_B_subs, m[1]) # Choice of m_1 as a function of f_1 and unknown four conjecture parameters
 
+if f[1] in free_symbols(Euler_G_solve)
+    error("Substitution failed to resolve dependencies. Check equations.")
+end
+
 # Define system of equations based on Euler equations and conjectures
 f1_eq = Euler_G_solve[1]  # Euler equation for f1, already substituted with params_gov
 m1_eq = Euler_B_solve[1]  # Euler equation for m1, already substituted with params_gov
 
-### Change the conjecture to make the A, B terms converge to the conjectured coefficients - work this out post lecture
+# Substitute m1 into f1_eq to eliminate m1
+f1_resolved = solve(subs(f1_eq, Dict(:m_1 => m1_eq)),f[1])
 
-#=
-## Direct solution - extremely slow
-# Define the equations f1_eq and m1_eq symbolically
-eq1 = f1_eq - (ω_f * f[1] + ψ_f * m[1])
-eq2 = m1_eq - (ω_m * f[1] + ψ_m * m[1])
-
-# Attempt to solve the system symbolically
-solution = solve([eq1, eq2], [ω_f, ψ_f, ω_m, ψ_m])
-
-println("Symbolic solution: ", solution)
-=#
-
-
-
-
-#=
-## NSolve solution
-# Initial guess for conjecture parameters
-initial_guess = [1.0, 1.0, 1.0, 1.0]  # [ω_f, ψ_f, ω_m, ψ_m]
-
-# Use nsolve to solve the system of equations numerically
-solution = nsolve([f1_eq, m1_eq], [ω_f, ψ_f, ω_m, ψ_m], initial_guess)
-
-println("Solution for conjecture parameters:")
-println("ω_f: ", solution[1])
-println("ψ_f: ", solution[2])
-println("ω_m: ", solution[3])
-println("ψ_m: ", solution[4])
-=#
-#=
-## Manual fixed point solution
-# In steady state MPE the conjecture based on the values of f and m and the parameters will equal the observed value.  We can solve by starting with an initial value of the other persons choice and initial unknown parameters, and calculate the individuals choice and the conjectured values of f and m.  If the choices are not equal to the conjectured values, then we reiterate.
-
-# Initialize the parameters
-global f1_guess = 1.0
-global m1_guess = 1.0
-global ω_f_guess = 1.0
-global ω_m_guess = 1.0
-global ψ_f_guess = 1.0
-global ψ_m_guess = 1.0
-
-global tolerance = 1e-5
-global max_iter = 100
-global iter_count = 0
-global converged = false
-
-
-# Initialize the parameters
-global f1_guess = 1.0
-global m1_guess = 1.0
-global ω_f_guess = 1.0
-global ω_m_guess = 1.0
-global ψ_f_guess = 1.0
-global ψ_m_guess = 1.0
-
-global tolerance = 1e-5
-global max_iter = 100
-global iter_count = 0
-global converged = false
-
-# Set an initial step size for updates
-global step_size = 0.01
-
-# Initialize variables to track the previous error
-global prev_f1_error = Inf
-global prev_m1_error = Inf
-
-# Step 3: Implement the fixed-point iteration manually
-while !converged && iter_count < max_iter
-    global iter_count += 1  # Ensure iter_count is incremented as a global variable
-    println("Iteration: $iter_count")
-    
-    # Substitution dictionaries for the parameters
-    full_vals_B = Dict(
-        f[1] => f1_guess, ω_f => ω_f_guess, ω_m => ω_m_guess, ψ_f => ψ_f_guess, ψ_m => ψ_m_guess,
-        gamma => params_gov[1], alpha => params_gov[2], bG => params_gov[3], bB => params_gov[4], 
-        dG => params_gov[5], dB => params_gov[6], eG => params_gov[7], eB => params_gov[8], 
-        theta_G_star => params_gov[9], theta_B_star => params_gov[10], 
-        mu_G => params_gov[11], mu_B => params_gov[12], delta => params_gov[13], 
-        lambda_G => params_gov[14], lambda_B => params_gov[15],
-        pi_G_star => params_gov[16], pi_B_star => params_gov[17], 
-        y_G_star => params_gov[18], y_B_star => params_gov[19], 
-        beta_G_star => params_gov[20], beta_B_star => params_gov[21]
-    )
-
-    full_vals_G = Dict(
-        m[1] => m1_guess, ω_f => ω_f_guess, ω_m => ω_m_guess, ψ_f => ψ_f_guess, ψ_m => ψ_m_guess,
-        gamma => params_gov[1], alpha => params_gov[2], bG => params_gov[3], bB => params_gov[4], 
-        dG => params_gov[5], dB => params_gov[6], eG => params_gov[7], eB => params_gov[8], 
-        theta_G_star => params_gov[9], theta_B_star => params_gov[10], 
-        mu_G => params_gov[11], mu_B => params_gov[12], delta => params_gov[13], 
-        lambda_G => params_gov[14], lambda_B => params_gov[15],
-        pi_G_star => params_gov[16], pi_B_star => params_gov[17], 
-        y_G_star => params_gov[18], y_B_star => params_gov[19], 
-        beta_G_star => params_gov[20], beta_B_star => params_gov[21]
-    )
-
-    # Compute new values for m1 based on f1 using Euler_B_solve
-    global new_m1 = subs(Euler_B_solve[1], full_vals_B)  # Substitute f1 into Euler_B_solve and evaluate numerically
-    
-    # Compute new values for f1 based on m1 using Euler_G_solve
-    global new_f1 = (subs(Euler_G_solve[1], full_vals_G))  # Substitute m1 into Euler_G_solve and evaluate numerically
-
-    # Now check the conjecture f1 = ω_f * f1 + ψ_f * m1
-    global conjectured_f1 = ω_f_guess * f1_guess + ψ_f_guess * m1_guess
-    global conjectured_m1 = ω_m_guess * f1_guess + ψ_m_guess * m1_guess
-
-    # Compute the current error
-    global f1_error = abs(new_f1 - conjectured_f1)
-    global m1_error = abs(new_m1 - conjectured_m1)
-
-    # Adjust the conjecture parameters if f1 and m1 do not match the optimal values
-    if f1_error > prev_f1_error
-        # Reverse the direction of updates
-        global ω_f_guess -= step_size
-        global ψ_f_guess -= step_size
-    else
-        # Continue updating in the same direction
-        global ω_f_guess += step_size
-        global ψ_f_guess += step_size
-    end
-
-    if m1_error > prev_m1_error
-        # Reverse the direction of updates
-        global ω_m_guess -= step_size
-        global ψ_m_guess -= step_size
-    else
-        # Continue updating in the same direction
-        global ω_m_guess += step_size
-        global ψ_m_guess += step_size
-    end
-
-    # Check for convergence (if changes are smaller than the tolerance)
-    if f1_error < tolerance && m1_error < tolerance
-        global converged = true
-        println("Converged after $iter_count iterations")
-    end
-
-    # Update the guesses and previous errors
-    global f1_guess = new_f1
-    global m1_guess = new_m1
-    global prev_f1_error = f1_error
-    global prev_m1_error = m1_error
-
-    # Print current guesses for inspection
-    println("f1: $f1_guess, m1: $m1_guess, ω_f: $ω_f_guess, ω_m: $ω_m_guess, ψ_f: $ψ_f_guess, ψ_m: $ψ_m_guess, f1_error: $f1_error, m1_error: $m1_error")
+if f[1] in free_symbols(f1_resolved) || m[1] in free_symbols(f1_resolved)
+    error("Substitution failed to resolve dependencies. Check equations.")
 end
 
-if !converged
-    println("Failed to converge after $max_iter iterations")
+# Substitute f1 into m1_eq to eliminate f1
+m1_resolved = solve(subs(m1_eq, Dict(:f_1 => f1_eq)),m[1])
+
+
+
+## We have f1 and m1 as a function of four unknowns. Use this to solve forward to create three equations, and solve for parameters from there.
+
+function residuals(x::Vector{Float64}, f1_resolved, m1_resolved)
+    # Extract coefficients
+    ω_f, ψ_f, ω_m, ψ_m, c_f, c_m = x[1:6]
+
+    # Create substitution dictionary
+    substitutions = Dict(:ω_f => ω_f, :ψ_f => ψ_f, :ω_m => ω_m, :ψ_m => ψ_m, :c_f => c_f, :c_m => c_m)
+
+    if typeof(f1_resolved) <: Vector
+        println("Warning: f1_resolved is a vector. Selecting the first solution.")
+        f1_resolved = first(f1_resolved)
+    end
+
+    if typeof(m1_resolved) <: Vector
+        println("Warning: m1_resolved is a vector. Selecting the first solution.")
+        m1_resolved = first(m1_resolved)
+    end
+
+    # Check if f1_resolved and m1_resolved are vectors or single expressions
+    f1 = typeof(f1_resolved) <: Vector ? subs.(f1_resolved, Ref(substitutions)) : subs(f1_resolved, substitutions)
+    m1 = typeof(m1_resolved) <: Vector ? subs.(m1_resolved, Ref(substitutions)) : subs(m1_resolved, substitutions)
+
+    # Convert final solutions to numeric
+    f1 = float(f1)
+    m1 = float(m1)
+
+    # Compute realized values of f2 and m2
+    f2 = ω_f * f1 + ψ_f * m1 + c_f
+    m2 = ω_m * f1 + ψ_m * m1 + c_m
+
+    # Residuals for conjecture consistency
+    R = [
+        f1 - (ω_f * f1 + ψ_f * m1 + c_f),
+        m1 - (ω_m * f1 + ψ_m * m1 + c_m),
+        f2 - (ω_f * f2 + ψ_f * m2 + c_f),
+        m2 - (ω_m * f2 + ψ_m * m2 + c_m)
+    ]
+
+    return R
 end
 
-# Output the final solution
-println("Final f1: $f1_guess, Final m1: $m1_guess")
-println("Final ω_f: $ω_f_guess, Final ω_m: $ω_m_guess")
-println("Final ψ_f: $ψ_f_guess, Final ψ_m: $ψ_m_guess")
+function solve_equilibrium(f1_resolved, m1_resolved)
+    # Initial guesses for the coefficients
+    initial_guess = [0.1, 0.1, 0.1, 0.1,0.5,0.5]  # [ω_f, ψ_f, ω_m, ψ_m,c_f,c_m]
 
-=#
+    # Solve using nlsolve
+    result = nlsolve(x -> residuals(x, f1_resolved, m1_resolved), initial_guess)
+
+    if result.f_converged
+        # Extract solutions
+        ω_f, ψ_f, ω_m, ψ_m,c_f,c_m = result.zero
+
+        # Create substitution dictionary for final values
+        substitutions = Dict(:ω_f => ω_f, :ψ_f => ψ_f, :ω_m => ω_m, :ψ_m => ψ_m, :c_f => c_f, :c_m => c_m)
+
+        if typeof(f1_resolved) <: Vector
+            println("Warning: f1_resolved is a vector. Selecting the first solution.")
+            f1_resolved = first(f1_resolved)
+        end
+
+        if typeof(m1_resolved) <: Vector
+            println("Warning: m1_resolved is a vector. Selecting the first solution.")
+            m1_resolved = first(m1_resolved)
+        end
+
+        # Substitute solutions into f1 and m1 for final values
+        f1 = typeof(f1_resolved) <: Vector ? subs.(f1_resolved, Ref(substitutions)) : subs(f1_resolved, substitutions)
+        m1 = typeof(m1_resolved) <: Vector ? subs.(m1_resolved, Ref(substitutions)) : subs(m1_resolved, substitutions)
+
+        f1 = float(f1)
+        m1 = float(m1)
+
+        # Calculate inflation, output, and losses (with substitutions applied)
+        inflation_G = subs(gamma - dG * f1 - dB * m1, param_subs)
+        output_G = subs(alpha - bG * f1 - bB * m1, param_subs)
+
+        inflation_B = inflation_G  # Same inflation function for both
+        output_B = output_G        # Same output function for both
+
+        loss_G = subs(
+            mu_G * (pi_G_star - inflation_G)^2 +
+            (1 - mu_G) * (y_G_star - output_G)^2 +
+            lambda_G * (f1)^2,
+            param_subs
+        )
+        loss_B = subs(
+            mu_B * (pi_B_star - inflation_B)^2 +
+            (1 - mu_B) * (y_B_star - output_B)^2 +
+            lambda_B * (m1)^2,
+            param_subs
+        )
+
+        # Convert losses to numeric
+        inflation_G = float(inflation_G)
+        output_G = float(output_G)
+        loss_G = float(loss_G)
+
+        inflation_B = float(inflation_B)
+        output_B = float(output_B)
+        loss_B = float(loss_B)
+
+        println("Converged: true")
+        println("Solution: ω_f = $ω_f, ψ_f = $ψ_f, ω_m = $ω_m, ψ_m = $ψ_m")
+        println("Equilibrium Policies: f1 = $f1, m1 = $m1")
+        println("Inflation (Gov): $inflation_G, Output (Gov): $output_G, Loss (Gov): $loss_G")
+        println("Inflation (Monetary): $inflation_B, Output (Monetary): $output_B, Loss (Monetary): $loss_B")
+
+        return ω_f, ψ_f, ω_m, ψ_m, f1, m1, inflation_G, output_G, loss_G, inflation_B, output_B, loss_B
+    else
+        println("Converged: false")
+        error("Solver did not converge")
+    end
+end
+
+# Solve for equilibrium and print results
+ω_f, ψ_f, ω_m, ψ_m,c_f,c_m f1, m1, inflation_G, output_G, loss_G, inflation_B, output_B, loss_B = solve_equilibrium(f1_resolved, m1_resolved)
+
+println("Equilibrium Coefficients: ω_f = $ω_f, ψ_f = $ψ_f, ω_m = $ω_m, ψ_m = $ψ_m")
+println("Equilibrium Policies: f1 = $f1, m1 = $m1")
+println("Inflation (Gov): $inflation_G, Output (Gov): $output_G, Loss (Gov): $loss_G")
+println("Inflation (Monetary): $inflation_B, Output (Monetary): $output_B, Loss (Monetary): $loss_B")

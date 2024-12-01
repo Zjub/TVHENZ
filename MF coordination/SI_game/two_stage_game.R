@@ -12,8 +12,8 @@ library(zoo)
 library(ggplot2)
 #library(theme61) # comment out of non-e61 employee
 library(fixest)
-library(skimr)
-library(modelsummary)
+#library(skimr)
+#library(modelsummary)
 library(optimx)
 library(nleqslv)
 
@@ -21,19 +21,19 @@ set.seed(123)
 
 # Parameters for the model
 gamma <- 1.5  # Intercept for inflation [setting this below pi_start creates a situation where people want higher inflation]
-alpha <- 1.5    # Intercept for output
+alpha <- 2.5    # Intercept for output
 bG <- 0.5     # Sensitivity of output to fiscal policy
 bB <- 0.5     # Sensitivity of output to monetary policy
 dG <- 0.5     # Sensitivity of inflation to fiscal policy
 dB <- 0.5     # Sensitivity of inflation to monetary policy
-eG <- 0.5     # Penalty factor on change in fiscal policy
-eB <- 0.5     # Penalty factor on change in monetary policy
+eG <- 1     # Penalty factor on change in fiscal policy
+eB <- 1     # Penalty factor on change in monetary policy
 
 # New separate weights for inflation in the loss functions
 mu_G <- 0  # Government's weight on inflation
 mu_B <- 1  # Central bank's weight on inflation
-theta_G_star <- 0.5 # Government's weight on instrument
-theta_B_star <- 0.5 # Central bank's weight on instrument
+theta_G_star <- 0.25 # Government's weight on instrument
+theta_B_star <- 0.25 # Central bank's weight on instrument
 
 # Target inflation and output and instrument
 pi_G_star <- 2 # Government's target inflation

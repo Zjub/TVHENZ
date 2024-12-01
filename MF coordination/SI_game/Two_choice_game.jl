@@ -28,10 +28,10 @@ params_gov = [
     0.5,   # bB - sensitivity of output to monetary policy
     0.5,   # dG - sensitivity of inflation to fiscal policy
     0.5,   # dB - sensitivity of information to monetary policy
-    0.5,   # eG - 
-    0.5,   # eB
-    0.5,   # theta_G_star
-    0.5,   # theta_B_star
+    1.0,   # eG - 
+    1.0,   # eB
+    0.25,   # theta_G_star
+    0.25,   # theta_B_star
     0.0,   # mu_G
     1.0,   # mu_B
     0.5,   # delta
