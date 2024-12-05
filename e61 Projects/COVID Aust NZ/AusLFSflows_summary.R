@@ -327,7 +327,7 @@ EE + annotate(x=4,y=+Inf,label="Payment Introduced",vjust=2,geom="label") + anno
 
 # ggplot(EEtrandf,aes(x=Month,y=Transition,colour=Year)) + geom_line() + geom_vline(xintercept = 4,colour="red",linetype = "dashed") + geom_vline(xintercept = 9,colour="blue",linetype = "dashed") + labs(
 #   title = "Monthly transition from employed FT to employed PT",
-#   caption = "ABS Labour Force Survey Gross Monthly Flows.
+#   footnote = "ABS Labour Force Survey Gross Monthly Flows.
 # Source: ABS, e61.",
 # )  + theme_e61(base_family = "Quattrocento Sans", legend = "bottom") + scale_x_continuous(breaks = unique(UEtrandf$month)) + scale_y_continuous(labels=scales::percent_format(scale=100,suffix="%",sec.axis = dup_axis())) + scale_colour_e61(n=3)
 
@@ -335,11 +335,13 @@ EE + annotate(x=4,y=+Inf,label="Payment Introduced",vjust=2,geom="label") + anno
 
 colnames(EFTOtrandf) <- c("Month","Transition","Year")
 
-EFTO <- ggplot(EFTOtrandf %>% filter(Year != 2021),aes(x=Month,y=Transition,colour=Year)) + geom_line() + geom_vline(xintercept = 4,colour="red",linetype = "dashed") + geom_vline(xintercept = 9,colour="blue",linetype = "dashed") + labs(
+EFTO <- ggplot(EFTOtrandf %>% filter(Year != 2021),aes(x=Month,y=Transition,colour=Year)) + geom_line() + 
+  geom_vline(xintercept = 4,colour="red",linetype = "dashed") + geom_vline(xintercept = 9,colour="blue",linetype = "dashed") + labs_e61(
   title = "Monthly transition from employed FT to other status",
-  caption = "ABS Labour Force Survey Gross Monthly Flows.
-Source: ABS, e61.",
-)  + theme_e61(base_family = "Quattrocento Sans", legend = "bottom") + scale_x_continuous(breaks = unique(EUtrandf$Month)) + scale_y_continuous(limits = c(0.04,0.08),labels=scales::percent_format(scale=100,suffix="%",sec.axis = dup_axis())) + scale_colour_e61(n=2)
+  source = c("ABS", "e61"),
+)  + 
+  scale_x_continuous(breaks = c(1:12)) + 
+  scale_y_continuous(limits = c(0.04,0.08),labels=scales::percent_format(scale=100,suffix="%",sec.axis = dup_axis()))
 
 EFTO + annotate(x=4,y=+Inf,label="Payment Introduced",vjust=2,geom="label") + annotate(x=9,y=+Inf,label="Payment Reduced",vjust=2,geom="label")
 
@@ -347,11 +349,13 @@ EFTO + annotate(x=4,y=+Inf,label="Payment Introduced",vjust=2,geom="label") + an
 
 colnames(EUtrandf) <- c("Month","Transition","Year")
 
-EU <- ggplot(EUtrandf %>% filter(Year != 2021),aes(x=Month,y=Transition,colour=Year)) + geom_line() + geom_vline(xintercept = 4,colour="red",linetype = "dashed") + geom_vline(xintercept = 9,colour="blue",linetype = "dashed") + labs(
+EU <- ggplot(EUtrandf %>% filter(Year != 2021),aes(x=Month,y=Transition,colour=Year)) + geom_line() + geom_vline(xintercept = 4,colour="red",linetype = "dashed") + 
+  geom_vline(xintercept = 9,colour="blue",linetype = "dashed") + labs_e61(
   title = "Monthly transition from employed to unemployed",
-  caption = "ABS Labour Force Survey Gross Monthly Flows.
-Source: ABS, e61.",
-)  + theme_e61(base_family = "Quattrocento Sans", legend = "bottom") + scale_x_continuous(breaks = unique(EUtrandf$Month)) + scale_y_continuous(limits = c(0.005,0.02),labels=scales::percent_format(scale=100,suffix="%",sec.axis = dup_axis())) + scale_colour_e61(n=2)
+  sources = c("ABS", "e61"),
+)  + 
+  scale_x_continuous(breaks = c(1:12)) + 
+  scale_y_continuous(limits = c(0.005,0.02),labels=scales::percent_format(scale=100,suffix="%",sec.axis = dup_axis())) 
 
 EU + annotate(x=4,y=+Inf,label="Payment Introduced",vjust=2,geom="label") + annotate(x=9,y=+Inf,label="Payment Reduced",vjust=2,geom="label")
 
@@ -359,14 +363,39 @@ EU + annotate(x=4,y=+Inf,label="Payment Introduced",vjust=2,geom="label") + anno
 
 colnames(UEtrandf) <- c("Month","Transition","Year")
 
-UE <- ggplot(UEtrandf %>% filter(Year != 2021),aes(x=Month,y=Transition,colour=Year)) + geom_line() + geom_vline(xintercept = 4,colour="red",linetype = "dashed") + geom_vline(xintercept = 9,colour="blue",linetype = "dashed") + labs_e61(
-  title = "Monthly transition from unemployed to employed",
-  subtitle = "Percentage per month",
-  y="",
-  footnotes = "ABS Labour Force Survey Gross Monthly Flows.",
-  sources = c("ABS","e61"),
-)  + scale_x_continuous(breaks = 1:12) + scale_y_continuous_e61(limits=c(0.08,0.26),labels=scales::percent_format(scale=100,suffix="%",sec.axis = dup_axis())) + plab(c("2020","2006-2019"),x=c(5,5),y=c(0.13,0.11))
+UE <- ggplot(UEtrandf %>% filter(year.x != 2021),aes(x=month,y=Transition,colour=year.x)) + geom_line() + geom_vline(xintercept = 4,colour="red",linetype = "dashed") + 
+  geom_vline(xintercept = 9,colour="blue",linetype = "dashed") + 
+  labs_e61(
+    title = "Monthly transition from unemployed to employed",
+    subtitle = "Percentage per month",
+    y="",
+    footnotes = "ABS Labour Force Survey Gross Monthly Flows.",
+    sources = c("ABS","e61"),
+  )  + 
+  scale_x_continuous(breaks = 1:12) + 
+  scale_y_continuous_e61(limits=c(0.08,0.26),labels=scales::percent_format(scale=100,suffix="%",sec.axis = dup_axis())) + 
+  plab(c("2020","2006-2019"),x=c(5,5),y=c(0.13,0.11))
 
 UE + annotate(x=4,y=+Inf,label="Payment Introduced",vjust=2,geom="label") + annotate(x=9,y=0.24,label="Payment Reduced",vjust=2,geom="label") 
 
 save_e61(filename = 'plots/U2E.png',res=2,auto_scale = FALSE)
+
+### This gives the outline of flow data = specific plot for research note below ----
+
+unique(UEtrandf$year.x)
+
+ggplot(UEtrandf %>% filter(year.x != 2021),aes(x=month,y=TUErate,colour=year.x)) + geom_line() + 
+  geom_vline(xintercept = 4,colour="red",linetype = "dashed") + 
+  geom_vline(xintercept = 9,colour="blue",linetype = "dashed") + 
+  labs_e61(
+    subtitle = "Percentage per month",
+    y="",
+    x= "Month of year",
+    sources = c("ABS","e61"),
+  )  + 
+  scale_x_continuous(breaks = 1:12) + 
+  scale_y_continuous_e61(limits=c(0.00,0.25,0.05),labels=scales::percent_format(scale=100,suffix="%")) + 
+  plab(c("2020","2006-2019"),x=c(5,5),y=c(0.21,0.19))
+
+save_e61("agg_JFR.pdf")
+
