@@ -70,6 +70,8 @@ ggplot(plot_data, aes(x = date, y = log(value))) +
   theme_minimal() + geom_vline(xintercept = as.Date("2020-01-01"), linetype = "dotted")
 
 
+write.csv(plot_data,"NGDP_plot_data.csv")
+
 ### Next we want nominal government consumption to NGDP
 
 filtered_a <- a %>%
@@ -90,6 +92,10 @@ ggplot(melt(exp[,.(date,Consumption_ratio,Government_ratio)],id.vars = "date")[d
   geom_line() +
   scale_y_continuous(labels=scales::percent_format(),limits=c(0.15,0.3,0.05)) + 
   labs(title = "Government expenditure to NGDP") + theme_minimal() + geom_vline(xintercept = as.Date("2020-01-01"), linetype = "dotted")
+
+cons_data_export <- melt(exp[,.(date,Consumption_ratio,Government_ratio)],id.vars = "date")[date >= as.Date("1994-01-01")]
+
+write.csv(cons_data_export,"government_spending.csv")
 
 
 #### Now add CPI outcomes
@@ -124,6 +130,9 @@ ggplot(CPI, aes(x = date, y = value)) +
        x = "Date",
        y = "CPI Value") +
   theme_minimal()
+
+write.csv(CPI,"CPI.csv")
+
 CPI_full <- b[series == "Index Numbers ;  All groups CPI ;  Australia ;" ][,.(date,value,type="CPI")]
 CPI_growth <- CPI_full[,.(date,value = (value/shift(value,4) - 1)*100,type)]
 
@@ -160,3 +169,4 @@ setDT(rates)
 ggplot(rates[date >= as.Date("1994-01-01")],aes(x=date,y=value/100)) + geom_line() + scale_y_continuous(labels=scales::percent_format()) +
   labs(y="",title="Cash Rate") + theme_minimal()
 
+write.csv(rates[date >= as.Date("1994-01-01")],"cash_rate.csv")
