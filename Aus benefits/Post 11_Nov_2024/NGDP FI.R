@@ -70,7 +70,9 @@ ggplot(plot_data, aes(x = date, y = log(value))) +
   theme_minimal() + geom_vline(xintercept = as.Date("2020-01-01"), linetype = "dotted")
 
 
-write.csv(plot_data,"NGDP_plot_data.csv")
+export_plot_data <- full_dates[plot_data,on=.(date)]
+
+write.csv(export_plot_data,"NGDP_plot_data.csv")
 
 ### Next we want nominal government consumption to NGDP
 
