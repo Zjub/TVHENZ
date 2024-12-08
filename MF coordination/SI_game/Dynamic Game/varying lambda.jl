@@ -27,7 +27,7 @@ set_G = 0
 # Parameters
 params_gov = [
     1.5,   # gamma - intercept of inflation
-    1.5,   # alpha - intercept of output
+    2.5,   # alpha - intercept of output
     0.5,   # bG - sensitivity of output to fiscal policy
     0.5,   # bB - sensitivity of output to monetary policy
     0.5,   # dG - sensitivity of inflation to fiscal policy
@@ -106,6 +106,7 @@ cases = [
 results = []
 lambdas = 0:0.1:0.5
 
+# Inside the loop, compute L_G_value
 for λ in lambdas
     param_subs[lambda] = λ
 
@@ -124,15 +125,12 @@ for λ in lambdas
         return [Float64(subs(eq, subs_values)) for eq in equations]
     end
 
-    # Objective function for least squares
     function objective(x)
         sum(residual^2 for residual in residuals(x))  # Minimize the sum of squared residuals
     end
 
-    # Initial guesses for the unknowns
     initial_guess = [0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
 
-    # Solve using Optim for least squares
     result = optimize(objective, initial_guess, BFGS())
 
     solution = Optim.minimizer(result)
@@ -145,26 +143,33 @@ for λ in lambdas
         m_values[t] = solution[4] * f_values[t-1] + solution[5] * m_values[t-1] + solution[6]
     end
 
-    # Compute inflation, output, and loss L_B for the monetary authority
     inflation = params_gov[1] - params_gov[5] * f_values[n] - params_gov[6] * m_values[n]
     output = params_gov[2] - params_gov[3] * f_values[n] - params_gov[4] * m_values[n]
+    
     L_B_value = params_gov[12] * (params_gov[15] - inflation)^2 +
                 (1 - params_gov[12]) * (params_gov[17] - output)^2 +
                 λ * (m_values[n] - m_values[n-1])^2 +
                 params_gov[10] * (params_gov[20] - params_gov[8] * m_values[n])^2
 
-    push!(results, (λ, f_values[n], m_values[n], inflation, output, L_B_value))
+    L_G_value = params_gov[11] * (params_gov[14] - inflation)^2 +
+                (1 - params_gov[11]) * (params_gov[16] - output)^2 +
+                λ * (f_values[n] - f_values[n-1])^2 +
+                params_gov[9] * (params_gov[19] - params_gov[7] * f_values[n])^2
+
+    total_loss = L_B_value + L_G_value
+
+    push!(results, (λ, f_values[n], m_values[n], inflation, output, L_B_value, L_G_value, total_loss))
 end
 
-# Convert results to DataFrame for easy plotting
-using DataFrames
+# Update DataFrame
 df = DataFrame(λ = [r[1] for r in results], 
                f_100 = [r[2] for r in results], 
                m_100 = [r[3] for r in results], 
                inflation_100 = [r[4] for r in results], 
                output_100 = [r[5] for r in results], 
-               L_B_100 = [r[6] for r in results])
-
+               L_B_100 = [r[6] for r in results],
+               L_G_100 = [r[7] for r in results],
+               total_loss = [r[8] for r in results])
 
 # Generate plots
 plot(df.λ, df.f_100, label="f_100", xlabel="λ", ylabel="Value", title="f vs λ")
@@ -172,8 +177,21 @@ plot(df.λ, df.m_100, label="m_100", xlabel="λ", ylabel="Value", title="m vs λ
 plot(df.λ, df.inflation_100, label="Inflation_100", xlabel="λ", ylabel="Value", title="inflation vs λ")
 plot(df.λ, df.output_100, label="Output_100", xlabel="λ", ylabel="Value", title="output vs λ")
 
+plot(df.λ, df.inflation_100, label="Inflation_100", xlabel="λ", ylabel="Value", title="inflation and output vs λ")
+plot!(df.λ, df.output_100, label="Output_100")
+
 # Comparing choices
-plot(df.λ, df.f_100, label="f_100", xlabel="λ", ylabel="Value", title="f and m vs λ")
-plot!(df.λ, df.m_100, label="m_100")
+p = plot(df.λ, df.f_100, xlabel="λ", ylabel="Value", title="f and m vs λ", label="", legend=:none)
+plot!(df.λ, df.m_100, label="", legend=:none)
+
+# Add label to above
+annotate!(p, df.λ[4], 0.5, text("f", :left, 10, :blue))
+annotate!(p, df.λ[4], -0.5, text("m", :right, 10, :red))
 
 plot(df.λ, df.L_B_100, label="L_B_100", xlabel="λ", ylabel="Monetary Authority Loss", title="Loss of Monetary Authority vs λ")
+
+plot(df.λ, df.L_B_100, label="L_B_100", xlabel="λ", ylabel="Monetary Authority Loss", title="Loss of Monetary and Fiscal Authority vs λ")
+plot!(df.λ, df.L_G_100, label="L_G_100")
+
+# Add plot for total loss
+plot(df.λ, df.total_loss, label="Total Loss", xlabel="λ", ylabel="Total Loss", title="Total Loss vs λ")

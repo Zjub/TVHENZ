@@ -21,7 +21,7 @@ set.seed(123)
 
 # Parameters for the model
 gamma <- 1.5  # Intercept for inflation [setting this below pi_start creates a situation where people want higher inflation]
-alpha <- 1.5    # Intercept for output
+alpha <- 2.5    # Intercept for output
 bG <- 0.5     # Sensitivity of output to fiscal policy
 bB <- 0.5     # Sensitivity of output to monetary policy
 dG <- 0.5     # Sensitivity of inflation to fiscal policy
@@ -237,9 +237,15 @@ outcomes_df <- data.frame(
   Fiscal_Utility = c(utility_individual(nash_result$fiscal,nash_result$monetary)[[1]],utility_individual(precommit_result_gov$fiscal,precommit_result_gov$monetary)[[1]],utility_individual(precommit_result_cb$fiscal,precommit_result_cb$monetary)[[1]],utility_individual(precommit_result_both_independent$fiscal,precommit_result_both_independent$monetary)[[1]],utility(f_cooperative,m_cooperative)/2),
   Monetary_Utility = c(utility_individual(nash_result$fiscal,nash_result$monetary)[[2]],utility_individual(precommit_result_gov$fiscal,precommit_result_gov$monetary)[[2]],utility_individual(precommit_result_cb$fiscal,precommit_result_cb$monetary)[[2]],utility_individual(precommit_result_both_independent$fiscal,precommit_result_both_independent$monetary)[[2]],utility(f_cooperative,m_cooperative)/2)
 )
+setDT(outcomes_df)
+
+outcomes_df$Scenario <- factor(
+  outcomes_df$Scenario,
+  levels = c("Cooperative", "Nash", "Central Bank Precommits", "Government Precommits","Both Precommit")
+)
 
 # Reshape fiscal and monetary policy data for graphs
-policy_df_long <- outcomes_df %>%
+policy_df_long <- outcomes_df[Scenario != "Both Precommit"] %>%
   pivot_longer(cols = c(Fiscal_Policy, Monetary_Policy), 
                names_to = "Policy_Type", values_to = "Value")
 
@@ -254,7 +260,7 @@ ggplot(policy_df_long, aes(x = Scenario, y = Value, fill = Policy_Type)) +
 
 ggsave("Relative_tightness.jpg")
 
-loss_df_long <- outcomes_df %>%
+loss_df_long <- outcomes_df[Scenario != "Both Precommit"] %>%
   pivot_longer(cols = c(Fiscal_Utility, Monetary_Utility), 
                names_to = "Policy_Type", values_to = "Value")
 
@@ -269,7 +275,7 @@ ggplot(loss_df_long, aes(x = Scenario, y = Value, fill = Policy_Type)) +
 ggsave("loss.jpg")
 
 # Reshape output and inflation data for graphs
-outcome_df_long <- outcomes_df %>%
+outcome_df_long <- outcomes_df[Scenario != "Both Precommit"] %>%
   pivot_longer(cols = c(Output, Inflation), 
                names_to = "Outcome_Type", values_to = "Value")
 

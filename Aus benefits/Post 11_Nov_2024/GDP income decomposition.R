@@ -9,6 +9,7 @@ library(data.table)
 library(vars)       # For VAR models
 library(tseries)    # For stationarity tests
 library(ggplot2)
+library(readabs)
 
 # Load and prepare GDP data
 a <- read_abs("5206.0")
@@ -243,7 +244,8 @@ ggplot(
     size = 1
   ) +
   #theme_e61(legend = "bottom") +
-  plab(c("Operating Surplus","Compensation of Employees","Mixed Income","Discrepency","Tax-Subsidies"),x=rep("2014-03-01",times=5),y=c(0.17,0.13,0.08,-0.03,-0.08))
+  plab(c("Operating Surplus","Compensation of Employees","Mixed Income","Discrepency","Tax-Subsidies"),x=rep("2014-03-01",times=5),y=c(0.17,0.13,0.08,-0.03,-0.08)) +
+  geom_hline(yintercept = 0)
 
 save_e61("GDP income decomp.png",res=2,pad_width = 1)
 
