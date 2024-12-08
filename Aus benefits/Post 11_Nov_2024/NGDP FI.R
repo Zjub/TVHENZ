@@ -70,7 +70,7 @@ ggplot(plot_data, aes(x = date, y = log(value))) +
   theme_minimal() + geom_vline(xintercept = as.Date("2020-01-01"), linetype = "dotted")
 
 
-export_plot_data <- full_dates[plot_data,on=.(date)]
+export_plot_data <- full_dates[plot_data,on=.(date)][,log_value := log(value)]
 
 write.csv(export_plot_data,"NGDP_plot_data.csv")
 
@@ -98,6 +98,7 @@ ggplot(melt(exp[,.(date,Consumption_ratio,Government_ratio)],id.vars = "date")[d
 cons_data_export <- melt(exp[,.(date,Consumption_ratio,Government_ratio)],id.vars = "date")[date >= as.Date("1994-01-01")]
 
 write.csv(cons_data_export,"government_spending.csv")
+write.csv(exp,"government_spending_wide.csv")
 
 
 #### Now add CPI outcomes
