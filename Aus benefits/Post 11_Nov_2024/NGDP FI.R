@@ -95,6 +95,8 @@ ggplot(melt(exp[,.(date,Consumption_ratio,Government_ratio)],id.vars = "date")[d
   scale_y_continuous(labels=scales::percent_format(),limits=c(0.15,0.3,0.05)) + 
   labs(title = "Government expenditure to NGDP") + theme_minimal() + geom_vline(xintercept = as.Date("2020-01-01"), linetype = "dotted")
 
+ggsave("Gov_spending.jpg")
+
 cons_data_export <- melt(exp[,.(date,Consumption_ratio,Government_ratio)],id.vars = "date")[date >= as.Date("1994-01-01")]
 
 write.csv(cons_data_export,"government_spending.csv")

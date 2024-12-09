@@ -17,7 +17,7 @@ rm(list=ls())
 poly <- 1
 bin_l <- 9
 bin_r <- 36
-treatment_number <- 1 # 1 for the March announcement, anything else for the September
+treatment_number <- 2 # 1 for the March announcement, 2 for for the September
 
 if (treatment_number == 1){
   prop_JSP_matched_dt <- read.csv("JFR_by_group 1 .csv")  # Main results JSP
@@ -139,48 +139,71 @@ rd_res_drop
 
 ### Estimate model on differences
 
-diff_data <- prop_JSP_matched_dt[nz == 0][prop_JSP_matched_dt[nz == 1],on=.(date)][,.(date,event_time,prop=prop - i.prop)]
+diff_data <- prop_JSP_matched_dt[nz == 0][prop_JSP_matched_dt[nz == 1],on=.(date)][,.(date,event_time,prop=prop - i.prop,aus_JFR = prop)]
 
 diff_data_avg <- mean(diff_data$prop)
 
+## The Generate Plot function that will estimate the RDD and generate the graphs of interest
 generate_plot <- function(data_set, cutoff, treatment_day = treated_actual, treatment_date = treated, bin_left = bin_l, bin_right = bin_r, periods_drop = 0){
   date_diff <- as.numeric(treatment_day - treatment_date)
   temp <- data_set
   
   if (periods_drop > 0){
-    temp <- temp[event_time <= 0 | event_time > periods_drop*7]
+    temp <- temp[event_time <= 0 | event_time > periods_drop * 7]
   }
   
   rdplot_all <- rdplot(temp$prop,
                        temp$event_time,
-                       c = treatment_day - treatment_date,
+                       c = date_diff,
                        p = 1,
                        nbins = c(bin_left, bin_right - periods_drop),
                        title = "Diff Job Finding Rate RD")
   
   rd_all_plotline <- as.data.table(rdplot_all$vars_poly)
-  
-  print(rd_all_plotline[rdplot_x >= 0 & rdplot_x <= 7])
-  
   rd_all_plotline[rdplot_x == 1, rdplot_y := NA]
-  
   rd_all_plotline[, all_line := rdplot_y][, rdplot_y := NULL]
   
   rd_all_plotdata <- as.data.table(rdplot_all$vars_bins)[, .(rdplot_x = rdplot_mean_x, all_dot = rdplot_mean_y)]
   all_plot_data <- merge(rd_all_plotdata, rd_all_plotline, by = "rdplot_x", all = TRUE)
   
+  print(all_plot_data)
+  
+  print(all_plot_data[rdplot_x == treatment_day - treatment_date])
+  
+  # Calculate Effect
+  effect <- all_plot_data[rdplot_x == treatment_day - treatment_date,.(all_line)][1] - all_plot_data[rdplot_x == treatment_day - treatment_date,.(all_line)][2]
+  
+  print(effect)
+  
+  # Average Job Finding Rate before Treatment
+  avg_job_find_rate <- mean(temp[event_time < date_diff, aus_JFR], na.rm = TRUE) # The average JFR for Australians prior to treatment
+  avg_job_find_rate_full <- mean(temp$prop, na.rm = TRUE) # The average difference over the entire horizon
+  
+  print(avg_job_find_rate)
+  
+  # Percentage Change
+  percentage_change <- effect / avg_job_find_rate * 100
+  
+  # Update Plot Label
+  effect_label <- sprintf("%.1fppt (%.0f%%) decline", effect * 100, percentage_change)
+  
+  print(effect_label)
+  
+  y_min <- round(min(all_plot_data$all_dot, na.rm = TRUE) - 0.01, 2)
+  y_max <- round(max(all_plot_data$all_dot, na.rm = TRUE) + 0.01, 2)
+  
   plot <- ggplot(all_plot_data, aes(x = rdplot_x)) +
     geom_point(aes(y = all_dot)) +
     geom_line(aes(y = all_line)) +
-    geom_vline(xintercept = date_diff, linetype = "dashed") + labs_e61(title = "Difference in Job Finding Rates (Aussie - NZ)",y="",
-                                                                       sources = c("ABS","e61"),
-                                                                       footnotes = c("Job Finding Rate is the proportion of those out of work who find a job in the week.","Matching on firm and personal characteristics: Occupation, region, prior earnings, spouse and their prior earnings, and industry.")) +
-    scale_y_continuous_e61(labels=scales::percent_format(),limits=c(-0.06,0.01,by=0.01)) +
+    geom_vline(xintercept = date_diff, linetype = "dashed") +
+    labs_e61(title = "Difference in Job Finding Rates (Aussie - NZ)", y = "",
+             sources = c("ABS", "e61"),
+             footnotes = c("Job Finding Rate is the proportion of those out of work who find a job in the week.",
+                           "Matching on firm and personal characteristics: Occupation, region, prior earnings, spouse and their prior earnings, and industry.")) +
+    scale_y_continuous_e61(labels = scales::percent_format(), limits = c(y_min, y_max, by = 0.01)) +
     scale_x_continuous() +
-    geom_hline(yintercept = diff_data_avg,linetype = "dashed",colour="red") +
-    plab("1.7ppt (19%) decline",x=14,y=-0.005) + add_baseline() # The version 1 with no periods dropped
-    #plab("1.5ppt (17%) decline",x=14,y=-0.005) + add_baseline() # The version 1 dropping a fortnight
-    #plab("0.5ppt (6%) decline",x=14,y=-0.005) + add_baseline() # The version 2 
+    geom_hline(yintercept = avg_job_find_rate_full, linetype = "dashed", colour = "red") +
+    plab(effect_label, x = 10, y = y_min + 0.005) + add_baseline()
   
   return(plot)
 }
@@ -191,18 +214,19 @@ diff_rdd
 
 save_e61(paste0("JFR",treatment_number,".png"),res=2,auto_scale = FALSE,pad_width = 1)
 
-prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
-
-(prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))] - 0.017)/prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
-0.017/prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
-
-
-(0.5/1.7)*0.19
-
+# prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
+# 
+# (prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))] - 0.017)/prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
+# 0.017/prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
+# 
+# 
+# (0.5/1.7)*0.19
+# 
 diff_rdd_add2 <- generate_plot(data_set = diff_data,periods_drop = 2)
 
 diff_rdd_add2
 
 save_e61(paste0("JFR",treatment_number,"2period_drop.png"),res=2,auto_scale = FALSE,pad_width = 1)
 
-0.015/prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
+# 0.015/prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
+

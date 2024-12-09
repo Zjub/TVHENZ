@@ -394,8 +394,8 @@ ggplot(UEtrandf %>% filter(year.x != 2021),aes(x=month,y=TUErate,colour=year.x))
     sources = c("ABS","e61"),
   )  + 
   scale_x_continuous(breaks = 1:12) + 
-  scale_y_continuous_e61(limits=c(0.00,0.25,0.05),labels=scales::percent_format(scale=100,suffix="%")) + 
-  plab(c("2020","2006-2019"),x=c(5,5),y=c(0.21,0.19))
+  scale_y_continuous_e61(limits=c(0.00,0.27,0.05),labels=scales::percent_format(scale=100,suffix="%")) + 
+  plab(c("2020","2006-2019"),x=c(5,5),y=c(0.08,0.19)) + annotate(x=4,y=+Inf,label="Payment Introduced",vjust=2,geom="label") + annotate(x=9,y=0.06,label="Payment Extended",vjust=2,geom="label")
 
-save_e61("agg_JFR.pdf")
+save_e61("agg_JFR.pdf",pad_width = 1)
 

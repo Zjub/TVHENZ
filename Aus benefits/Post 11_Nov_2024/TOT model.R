@@ -9,6 +9,7 @@ library(data.table)
 library(vars)       # For VAR models
 library(tseries)    # For stationarity tests
 library(ggplot2)
+library(theme61)
 
 # Load and prepare GDP data
 a <- read_abs("5206.0")
@@ -52,7 +53,9 @@ ggplot(data_dt[date >= as.Date("2014-03-01")],aes(x=date,y=scaled_value,colour=s
 
 save_e61("GDP Income measures.png",res=2,pad_width = 1)
 
+growth_post <- data_dt[date == as.Date("2014-03-01")][,.(series,date,value)][data_dt[date == as.Date("2024-09-01"),.(series,date,value)],on=.(series)][,':=' (growth = i.value/value, ann_growth = (i.value/value)^(1/10.5) - 1)]
 
+data_dt[series == "GDP per hour worked: Index ;"][150:179]
 
 
 # Calculate log differences to ensure stationarity
