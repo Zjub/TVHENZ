@@ -190,8 +190,8 @@ annotate!(p, df.λ[4], -0.5, text("m", :right, 10, :red))
 
 plot(df.λ, df.L_B_100, label="L_B_100", xlabel="λ", ylabel="Monetary Authority Loss", title="Loss of Monetary Authority vs λ")
 
-plot(df.λ, df.L_B_100, label="L_B_100", xlabel="λ", ylabel="Monetary Authority Loss", title="Loss of Monetary and Fiscal Authority vs λ")
-plot!(df.λ, df.L_G_100, label="L_G_100")
+plot(df.λ, df.L_G_100, label="L_G_100", xlabel="λ", ylabel="Authority Loss", title="Loss of Monetary and Fiscal Authority vs λ")
+plot!(df.λ, df.L_B_100, label="L_B_100")
 
 # Add plot for total loss
 plot(df.λ, df.total_loss, label="Total Loss", xlabel="λ", ylabel="Total Loss", title="Total Loss vs λ")
