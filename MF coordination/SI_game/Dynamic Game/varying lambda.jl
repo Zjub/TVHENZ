@@ -27,7 +27,7 @@ set_G = 0
 # Parameters
 params_gov = [
     1.5,   # gamma - intercept of inflation
-    2.5,   # alpha - intercept of output
+    1.5,   # alpha - intercept of output
     0.5,   # bG - sensitivity of output to fiscal policy
     0.5,   # bB - sensitivity of output to monetary policy
     0.5,   # dG - sensitivity of inflation to fiscal policy
@@ -171,27 +171,43 @@ df = DataFrame(λ = [r[1] for r in results],
                L_G_100 = [r[7] for r in results],
                total_loss = [r[8] for r in results])
 
-# Generate plots
-plot(df.λ, df.f_100, label="f_100", xlabel="λ", ylabel="Value", title="f vs λ")
-plot(df.λ, df.m_100, label="m_100", xlabel="λ", ylabel="Value", title="m vs λ")
-plot(df.λ, df.inflation_100, label="Inflation_100", xlabel="λ", ylabel="Value", title="inflation vs λ")
-plot(df.λ, df.output_100, label="Output_100", xlabel="λ", ylabel="Value", title="output vs λ")
 
-plot(df.λ, df.inflation_100, label="Inflation_100", xlabel="λ", ylabel="Value", title="inflation and output vs λ")
-plot!(df.λ, df.output_100, label="Output_100")
+## Set up plots
+# Define the folder path relative to the script's directory
+script_dir = @__DIR__
+folder_path = joinpath(script_dir, "plots")
+mkpath(folder_path)  # Create the folder if it doesn't exist
 
-# Comparing choices
-p = plot(df.λ, df.f_100, xlabel="λ", ylabel="Value", title="f and m vs λ", label="", legend=:none)
-plot!(df.λ, df.m_100, label="", legend=:none)
+# Generate and save plots
+p1 = plot(df.λ, df.f_100, label="f", xlabel="λ", ylabel="Value", title="f vs λ")
+savefig(p1, joinpath(folder_path, "f_vs_lambda.png"))
 
-# Add label to above
-annotate!(p, df.λ[4], 0.5, text("f", :left, 10, :blue))
-annotate!(p, df.λ[4], -0.5, text("m", :right, 10, :red))
+p2 = plot(df.λ, df.m_100, label="m", xlabel="λ", ylabel="Value", title="m vs λ")
+savefig(p2, joinpath(folder_path, "m_vs_lambda.png"))
 
-plot(df.λ, df.L_B_100, label="L_B_100", xlabel="λ", ylabel="Monetary Authority Loss", title="Loss of Monetary Authority vs λ")
+p3 = plot(df.λ, df.inflation_100, label="Inflation", xlabel="λ", ylabel="Value", title="inflation vs λ")
+savefig(p3, joinpath(folder_path, "inflation_vs_lambda.png"))
 
-plot(df.λ, df.L_G_100, label="L_G_100", xlabel="λ", ylabel="Authority Loss", title="Loss of Monetary and Fiscal Authority vs λ")
-plot!(df.λ, df.L_B_100, label="L_B_100")
+p4 = plot(df.λ, df.output_100, label="Output", xlabel="λ", ylabel="Value", title="output vs λ")
+savefig(p4, joinpath(folder_path, "output_vs_lambda.png"))
 
-# Add plot for total loss
-plot(df.λ, df.total_loss, label="Total Loss", xlabel="λ", ylabel="Total Loss", title="Total Loss vs λ")
+p5 = plot(df.λ, df.output_100, label="Output", xlabel="λ", ylabel="Value", title="inflation and output vs λ")
+plot!(p5, df.λ, df.inflation_100, label="Inflation")
+savefig(p5, joinpath(folder_path, "inflation_and_output_vs_lambda.png"))
+
+# Comparing choices (add the legend none for the supply shocks)
+p6 = plot(df.λ, df.m_100, xlabel="λ", ylabel="Value", title="f and m vs λ", label="m") # , legend=:none
+plot!(p6, df.λ, df.f_100, label="f") # , legend=:none
+annotate!(p6, df.λ[4], 0.5, text("f", :left, 10, :red))
+annotate!(p6, df.λ[4], -0.5, text("m", :right, 10, :blue))
+savefig(p6, joinpath(folder_path, "f_and_m_vs_lambda.png"))
+
+p7 = plot(df.λ, df.L_B_100, label="Loss Bank", xlabel="λ", ylabel="Monetary Authority Loss", title="Loss of Monetary Authority vs λ")
+savefig(p7, joinpath(folder_path, "monetary_loss_vs_lambda.png"))
+
+p8 = plot(df.λ, df.L_B_100, label="Loss Bank", xlabel="λ", ylabel="Authority Loss", title="Loss of Monetary and Fiscal Authority vs λ")
+plot!(p8, df.λ, df.L_G_100, label="Loss Fiscal")
+savefig(p8, joinpath(folder_path, "loss_fiscal_and_monetary_vs_lambda.png"))
+
+p9 = plot(df.λ, df.total_loss, label="Total Loss", xlabel="λ", ylabel="Total Loss", title="Total Loss vs λ")
+savefig(p9, joinpath(folder_path, "total_loss_vs_lambda.png"))
