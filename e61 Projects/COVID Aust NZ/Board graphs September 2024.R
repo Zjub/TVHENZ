@@ -10,6 +10,8 @@ library(theme61)
 
 rm(list=ls())
 
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
 data_loc <- "Cleared data/2021-097_o_0216_cleared"
 file_list <- list.files(data_loc, pattern = "*.csv", full.names = TRUE)
 
@@ -62,4 +64,10 @@ ggplot(df,aes(x=time,y=diff*100,colour = category)) +
 save_e61("Survival_diff.png",res=2,pad_width = 1)
 
 
+ggplot(df,aes(x=time,y=diff*100,colour = category)) + 
+  geom_line() + 
+  plot_label(label = c("Pre-COVID Supplement","Before extension","After extension"),x=c(60,60,60),y=c(-0.7,-1.2,-1.7),colour = c(palette_e61(3)[3],palette_e61(3)[2],palette_e61(3)[1])) +
+  scale_y_continuous_e61(limits=c(-6,0.00,by=1)) +
+  labs_e61(subtitle = "Difference between Australians and New Zealanders*",footnotes = c("For those who were not employed for at least 30 days.","The groups reflect the date of entry into joblessness relative to the annoucement date of the policy."),sources = c("ABS","e61"),y="%",x="Days from job exit")
 
+save_e61("Survival_diff.pdf",res=2,pad_width = 1)

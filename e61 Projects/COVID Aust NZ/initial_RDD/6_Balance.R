@@ -21,6 +21,9 @@ ggplot(age_balance,aes(x=age_bin,y=result_data,fill=as.factor(nz))) + geom_col(p
 
 save_e61("Age.pdf", pad_width = 1)
 
+sum(age_balance$result_data)/2
+sum(age_balance$matched_data)/2
+
 ggplot(age_balance,aes(x=age_bin,y=matched_data,fill=as.factor(nz))) + geom_col(position="dodge") +
   scale_y_continuous_e61(limits = c(0,30000,6000)) + plab(c("Australian","New Zealander"),x=c("35-44","35-44"),y=c(27000,23000)) +
   labs_e61(,subtitle = "Full Matched dataset",y="",x="",sources=c("ABS","e61")) # title = "Age distribution"

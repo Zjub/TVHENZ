@@ -17,10 +17,10 @@ rm(list=ls())
 poly <- 1
 bin_l <- 9
 bin_r <- 36
-treatment_number <- 2 # 1 for the March announcement, anything else for the September
+treatment_number <- 1 # 1 for the March announcement, anything else for the September
 
 if (treatment_number == 1){
-  prop_JSP_matched_dt <- read.csv("SR_by_group 1 .csv")  # Main results JSP
+  prop_JSP_matched_dt <- read.csv("SR_noJSP_by_group 1 .csv")  # Main results JSP
   setDT(prop_JSP_matched_dt)
   
   treated_actual <- as.IDate("2020-03-22")
@@ -29,7 +29,7 @@ if (treatment_number == 1){
   #end <- as.IDate("2020-07-21") # Before the announcement
   end <- as.IDate("2020-06-23") # Before it is announced that there would be an announcement
 } else {
-  prop_JSP_matched_dt <- read.csv("SR_by_group 2 .csv")  # Main results JSP
+  prop_JSP_matched_dt <- read.csv("SR_noJSP_by_group 2 .csv")  # Main results JSP
   setDT(prop_JSP_matched_dt)
   
   # treated_actual <- as.IDate("2020-07-21")
@@ -37,8 +37,7 @@ if (treatment_number == 1){
   treated_actual <- as.IDate("2020-06-23")
   treated <- as.IDate("2020-06-18")
 
-  #start <- as.IDate("2020-04-02") 
-  start <- as.IDate("2020-04-30") 
+  start <- as.IDate("2020-04-02") 
   end <- as.IDate("2020-11-26") 
   
 }
@@ -123,7 +122,6 @@ rd_res_drop
 
 ### Estimate model on differences
 
-
 diff_data <- prop_JSP_matched_dt[nz == 0][prop_JSP_matched_dt[nz == 1],on=.(date)][,.(date,event_time,prop=prop - i.prop,aus_JFR = prop)]
 
 diff_data_avg <- mean(diff_data$prop)
@@ -166,10 +164,10 @@ generate_plot <- function(data, cutoff, treatment_day = treated_actual, treatmen
   print(avg_job_find_rate)
   
   # Percentage Change
-  percentage_change <- -effect / avg_job_find_rate * 100
+  percentage_change <- effect / avg_job_find_rate * 100
   
   # Update Plot Label
-  effect_label <- sprintf("%.1fppt (%.0f%%) increase", -effect * 100, percentage_change)
+  effect_label <- sprintf("%.1fppt (%.0f%%) decline", effect * 100, percentage_change)
   
   print(effect_label)
   
@@ -180,10 +178,10 @@ generate_plot <- function(data, cutoff, treatment_day = treated_actual, treatmen
     geom_point(aes(y = all_dot)) +
     geom_line(aes(y = all_line)) +
     geom_vline(xintercept = date_diff, linetype = "dashed") +
-    labs_e61(title = "Difference in Separation Rates (Aussie - NZ)",y="",
-             sources = c("ABS","e61"),
-             footnotes = c("Separation Rate is the proportion of those in work who persistently leave a job in the week.","Matching on firm and personal characteristics: Occupation, region, prior earnings, spouse and their prior earnings, and industry.")) +
-    scale_y_continuous_e61(labels = scales::percent_format(), limits = c(y_min, y_max, by = 0.02)) +
+    labs_e61(title = "Difference in Separation Rates (Aussie - NZ) - no JSP",y="",
+                                                                       sources = c("ABS","e61"),
+                                                                       footnotes = c("Separation Rate is the proportion of those in work who persistently leave a job in the week.","Matching on firm and personal characteristics: Occupation, region, prior earnings, spouse and their prior earnings, and industry.")) +
+    scale_y_continuous_e61(labels = scales::percent_format(), limits = c(y_min, y_max, by = 0.01)) +
     scale_x_continuous() +
     geom_hline(yintercept = avg_job_find_rate_full, linetype = "dashed", colour = "red") +
     plab(effect_label, x = 10, y = y_min + 0.01) + add_baseline()
@@ -195,10 +193,12 @@ diff_rdd <- generate_plot(diff_data)
 
 diff_rdd
 
-save_e61(paste0("SR",treatment_number,".png"),res=2,auto_scale = FALSE,pad_width = 1)
+save_e61(paste0("SR",treatment_number,"_noJSP.png"),res=2,auto_scale = FALSE,pad_width = 1)
 
 diff_rdd_add2 <- generate_plot(data = diff_data,periods_drop = 2)
 
 diff_rdd_add2
 
-save_e61(paste0("SR",treatment_number,"_2period_drop.png"),res=2,auto_scale = FALSE,pad_width = 1)
+save_e61(paste0("SR",treatment_number,"_noJSP_2period_drop.png"),res=2,auto_scale = FALSE,pad_width = 1)
+
+

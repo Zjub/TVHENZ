@@ -83,6 +83,7 @@ sum(NZ_Arrival_dist$N)
 ### Add some more annex stuff on HILDA wages
 
 wage <- read_excel("HIDLA JobSeeker Prev Wage Income.xlsx")
+setDT(wage)
 
 # Calculate the weighted average of wages for each group
 result <- wage[, .(

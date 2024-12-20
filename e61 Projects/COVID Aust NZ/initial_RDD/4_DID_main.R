@@ -15,7 +15,7 @@ bin_r <- 36
 treatment_number <- 1 # 1 for the March announcement, anything else for the September
 
 if (treatment_number == 1){
-  prop_JSP_matched_dt <- read.csv("initial_RDD/JFR_by_group 1 .csv")  # Main results JSP
+  prop_JSP_matched_dt <- read.csv("JFR_by_group 1 .csv")  # Main results JSP
   setDT(prop_JSP_matched_dt)
   
   treated_actual <- as.IDate("2020-03-22")
@@ -24,7 +24,7 @@ if (treatment_number == 1){
   #end <- as.IDate("2020-07-21") # Before the announcement
   end <- as.IDate("2020-06-23") # Before it is announced that there would be an announcement
 } else {
-  prop_JSP_matched_dt <- read.csv("initial_RDD/JFR_by_group 2 .csv")  # Main results JSP
+  prop_JSP_matched_dt <- read.csv("JFR_by_group 2 .csv")  # Main results JSP
   setDT(prop_JSP_matched_dt)
   
   # treated_actual <- as.IDate("2020-07-21")
@@ -110,7 +110,7 @@ ggplot(diff_data,aes(x=date,y=prop)) + geom_line() +
 
 ### Do second one down here
 
-prop_JSP_matched_dt2 <- read.csv("initial_RDD/JFR_by_group 2 .csv")  # Main results JSP
+prop_JSP_matched_dt2 <- read.csv("JFR_by_group 2 .csv")  # Main results JSP
 setDT(prop_JSP_matched_dt2)
 
 # treated_actual <- as.IDate("2020-07-21")
@@ -154,7 +154,7 @@ ggplot(prop_JSP_matched_dt2,aes(x=date,y=prop,colour=as.factor(nz))) + geom_line
   labs_e61(subtitle = "By citizenship in Australia, matched",y="",
            sources = c("ABS","e61"),
            footnotes = c("Proportion of those out of work finding employment, weekly","Dotted lines refer to the average for the group, in the pre-period. Dashed is the post-period.")) +
-  plab(c("Announcement"),x=c(as.IDate("2020-04-23")),y=c(0.025),colour=c("black")) +
+  plab(c("Announcement"),x=c(as.IDate("2020-07-14")),y=c(0.025),colour=c("black")) +
   #plab(c("Announcement","Payment Increase"),x=c(as.IDate("2020-02-01"),as.IDate("2020-05-01")),y=c(0.05,0.13),colour=c("black","black")) +
   plab(c("Australian","New Zealander"),x=c(as.IDate("2020-04-01"),as.IDate("2020-04-01")),y=c(0.125,0.145),colour=c(palette_e61(2)[2],palette_e61(2)[1])) +
   geom_segment(data = pre_announce_avg2, aes(x = start, xend = as.IDate("2020-06-25"), y = average, yend = average, colour = as.factor(nz)), linetype = "dotted",size = 1) +
