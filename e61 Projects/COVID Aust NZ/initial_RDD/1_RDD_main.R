@@ -17,7 +17,7 @@ rm(list=ls())
 poly <- 1
 bin_l <- 9
 bin_r <- 36
-treatment_number <- 2 # 1 for the March announcement, 2 for for the September
+treatment_number <- 1 # 1 for the March announcement, 2 for for the September
 
 if (treatment_number == 1){
   prop_JSP_matched_dt <- read.csv("JFR_by_group 1 .csv")  # Main results JSP
@@ -230,3 +230,57 @@ save_e61(paste0("JFR",treatment_number,"2period_drop.png"),res=2,auto_scale = FA
 
 # 0.015/prop_JSP_matched_dt[date < "2020-03-01" & nz == 0,.(mean(prop))]
 
+generate_plot_fixedtrend <- function(data_set, cutoff, treatment_day = treated_actual, treatment_date = treated, bin_left = bin_l, bin_right = bin_r, periods_drop = 0) {
+  date_diff <- as.numeric(treatment_day - treatment_date)
+  temp <- data_set
+  
+  # Exclude periods near the cutoff if specified
+  if (periods_drop > 0) {
+    temp <- temp[event_time <= 0 | event_time > periods_drop * 7]
+  }
+  
+  # Add indicator for pre- and post-cutoff
+  temp[, post := as.numeric(event_time >= date_diff)]
+  
+  # Fit the "fixed trend" model with a discontinuity at the cutoff
+  model <- lm(prop ~ event_time + post, data = temp)  
+  fitted_pre <- predict(model, newdata = temp[event_time < date_diff])
+  fitted_post <- predict(model, newdata = temp[event_time >= date_diff])
+  
+  # Assign fitted values back to the main table
+  temp[event_time < date_diff, fitted := fitted_pre]
+  temp[event_time >= date_diff, fitted := fitted_post]
+  
+  effect <- -coef(model)["post"]
+  
+  avg_job_find_rate <- mean(temp[event_time < date_diff, aus_JFR], na.rm = TRUE)
+  avg_job_find_rate_full <- mean(temp$prop, na.rm = TRUE)
+  
+  percentage_change <- effect / avg_job_find_rate * 100
+  
+  effect_label <- sprintf("%.1fppt (%.0f%%) decline", effect * 100, percentage_change)
+  
+  y_min <- round(min(temp$prop, na.rm = TRUE) - 0.01, 2)
+  y_max <- round(max(temp$prop, na.rm = TRUE) + 0.01, 2)
+  
+  # Generate plot with original label structure
+  plot <- ggplot(temp, aes(x = event_time, y = prop)) +
+    geom_point() +  # Scatter points
+    geom_line(data = temp[event_time < date_diff], aes(y = fitted_pre)) +  # Fitted line pre-treatment
+    geom_line(data = temp[event_time >= date_diff], aes(y = fitted_post)) +  # Fitted line post-treatment
+    geom_vline(xintercept = date_diff, linetype = "dashed", color = "black") +  # Policy cutoff
+    labs_e61(title = "Difference in Job Finding Rates (Aussie - NZ)", y = "",
+             sources = c("ABS", "e61"),
+             footnotes = c("Job Finding Rate is the proportion of those out of work who find a job in the week.",
+                           "Matching on firm and personal characteristics: Occupation, region, prior earnings, spouse and their prior earnings, and industry.")) +
+    scale_y_continuous_e61(labels = scales::percent_format(), limits = c(y_min, y_max, by = 0.01)) +
+    scale_x_continuous() +
+    plab(effect_label, x = 10, y = y_min + 0.005) + add_baseline()
+  
+  return(plot)
+}
+
+diff_rdd_ft <- generate_plot_fixedtrend(diff_data)
+diff_rdd_ft
+
+save_e61("JFR_FT.pdf")
