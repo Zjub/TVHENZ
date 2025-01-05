@@ -95,7 +95,7 @@ b <- ggplot(prop_JSP_matched_dt2,aes(x=date,y=prop,colour=as.factor(nz))) + geom
   #geom_vline(xintercept = as.IDate("2020-04-20"),linetype="dashed") +
   scale_y_continuous_e61(limits = c(0,0.16,0.04),labels = scales::percent_format()) +
   scale_colour_manual(values = c(palette_e61(2)[2],palette_e61(2)[1])) +
-  labs_e61(title = "non-Victoria",
+  labs_e61(title = "Non-Victoria",
            subtitle = "By citizenship in Australia, matched",y="",
            sources = c("ABS","e61"),
            footnotes = c("Proportion of those out of work finding employment, weekly","Dotted lines refer to the average for the group, in the pre-period. Dashed is the post-period.")) +
