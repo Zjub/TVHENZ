@@ -17,8 +17,21 @@ ggplot(Age_RR[Age != "65+"],aes(x=Year,y=Median,colour=Age)) + geom_line() +
   labs_e61(title = "Age-based Replacement Rates")
 
 ggplot(Age_RR[Age != "65+"],aes(x=Year,y=Median,fill=Age)) + geom_col(position = "dodge") +
-  labs_e61(title = "Age Net Replacement Rates*",subtitle="Benefit replacement of median weekly earnings",y="",sources=c("ABS","e61"),footnotes = "Net core JobSeeker payment relative to net median labour earnings by age group.") + 
+  labs_e61(title = "Age Net Replacement Rates*",subtitle="Benefit replacement of median weekly earnings",y="",sources=c("ABS","e61"),footnotes = "Net JobSeeker payment relative to net median labour earnings by age group.") + 
   scale_y_continuous_e61(limits = c(0,1,0.2),labels=scales::percent_format()) +
   plab(label = c("24 and Under","25 to 34","35 to 44","45 to 54","55 to 64","Total"),x=rep(2018,times=6),y=c(0.85,0.78,0.71,0.64,0.57,0.51))
 
 save_e61("Age_RR.png",res=2,pad_width = 1)
+
+MW_RR <- read_csv("MW_RR.csv")
+setDT(MW_RR)
+
+MW_RR[,year := 2000 + as.numeric(year)]
+
+ggplot(melt(MW_RR,id.vars = "year"),aes(x=year,y=value,colour=variable)) + geom_line() +
+  scale_y_continuous_e61(limits = c(0,1,0.2),labels=scales::percent_format()) +
+  labs_e61(title = "Full-time Net Replacement Rates",subtitle = "Full-time (38hrs) for the full year",y="",x="") +
+  plab(c("Minimum Wage","Average Wage"),x=c(2008,2008),y=c(0.76,0.68)) +
+  scale_x_continuous(breaks = seq(min(MW_RR$year), max(MW_RR$year), by = 3))
+
+save_e61("MW_RR.png",res=2,pad_width = 1)
