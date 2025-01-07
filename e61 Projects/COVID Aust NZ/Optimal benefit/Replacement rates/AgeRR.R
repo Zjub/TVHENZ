@@ -21,7 +21,7 @@ ggplot(Age_RR[Age != "65+"],aes(x=Year,y=Median,fill=Age)) + geom_col(position =
   scale_y_continuous_e61(limits = c(0,1,0.2),labels=scales::percent_format()) +
   plab(label = c("24 and Under","25 to 34","35 to 44","45 to 54","55 to 64","Total"),x=rep(2018,times=6),y=c(0.85,0.78,0.71,0.64,0.57,0.51))
 
-save_e61("Age_RR.png",res=2,pad_width = 1)
+save_e61("Age_RR_time.png",res=2,pad_width = 1)
 
 MW_RR <- read_csv("MW_RR.csv")
 setDT(MW_RR)
@@ -34,4 +34,4 @@ ggplot(melt(MW_RR,id.vars = "year"),aes(x=year,y=value,colour=variable)) + geom_
   plab(c("Minimum Wage","Average Wage"),x=c(2008,2008),y=c(0.76,0.68)) +
   scale_x_continuous(breaks = seq(min(MW_RR$year), max(MW_RR$year), by = 3))
 
-save_e61("MW_RR.png",res=2,pad_width = 1)
+save_e61("MW_RR_time.png",res=2,pad_width = 1)
