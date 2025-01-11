@@ -13,8 +13,8 @@ library(Hmisc)
 library(flextable)
 
 # Replace with dataset
-#RR_dt <- read_csv("C:/Users/OEM/Downloads/RRs_csv.csv")
-RR_dt <- read_csv("C:/Users/MattNolan/Downloads/RR_csv.csv")
+#RR_dt <- read_csv("C:/Users/OEM/Downloads/RRs_csv 1.csv")
+RR_dt <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 1.csv")
 setDT(RR_dt)
 
 # Set restrictions
@@ -289,13 +289,26 @@ RR_dt[, group2 := factor(group, levels = 1:5, labels = c(
 weighted_kids <- RR_dt[,.(pop = sum(SIHPSWT)),by=.(kid_group,group2)]
 
 ggplot(weighted_kids,aes(x=kid_group,y=pop/1000,fill=as.factor(group2))) + geom_col(position="dodge") +
-  labs_e61(title = "Replacement Rate by Number of Children",y="",x="Dependents")
+  labs_e61(title = "Replacement Rate by Number of Children",subtitle = "All workers",y="",x="Dependents",sources = c("ABS","e61")) +
+  plab(c("Ineligible","0-25%","25-50%","50-75%","75%+"),x=rep(2,times=5),y=c(1450,1350,1250,1150,1050),colour=c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+
+save_e61("RR_children.png",res=2,pad_width = 1)
+
+#weighted_kids[, group2b := factor(group2, levels = c(levels(factor(group2)), " "))]
 
 # Make this proportional
 ggplot(weighted_kids,aes(x=group2,y=pop/1000,fill=kid_group)) + geom_col(position="fill") +
-  labs_e61(title = "Replacement Rate by Number of Children",y="",x="")
+  labs_e61(title = "Replacement Rate by Number of Children",subtitle = "All workers",y="",x="",sources = c("ABS","e61")) +
+  plab(c("No children","One child","Two or more children"),x=c(6.2,6.2,6.2),y=c(0.77,0.52,0.02)) + 
+  coord_flip() +   scale_x_discrete(
+    limits = c(levels(weighted_kids$group2), " ")  # Add an empty category
+  ) + format_flip() +
+  scale_y_continuous(labels = scales::percent_format())
 
 
+# + theme(axis.text.x = element_text(angle = 0, size = 12),axis.ticks.length = unit(0.5, "cm")) + scale_x_discrete(labels = function(x) ifelse(seq_along(x) %% 2 == 0, paste0("\n", x), x))
+
+save_e61("RR_children_share.png",res=2,pad_width = 1,auto_scale = FALSE)
 
 
 
@@ -432,6 +445,30 @@ ggplot(normalized_densities_age_FT, aes(x = x, y = y, colour = as.factor(group))
   scale_x_continuous_e61(limits = c(15,55,5))
 
 save_e61("AGE_RR_FT.png",res=2,pad_width = 1)
+
+weighted_kids_FT <- RR_dt[hours >= 32,.(pop = sum(SIHPSWT)),by=.(kid_group,group2)]
+
+ggplot(weighted_kids_FT,aes(x=kid_group,y=pop/1000,fill=as.factor(group2))) + geom_col(position="dodge") +
+  labs_e61(title = "Replacement Rate by Number of Children",subtitle = "FT workers",y="",x="Dependents",sources = c("ABS","e61")) +
+  plab(c("Ineligible","0-25%","25-50%","50-75%","75%+"),x=rep(2,times=5),y=c(1450,1350,1250,1150,1050),colour=c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+  
+  save_e61("RR_children_FT.png",res=2,pad_width = 1)
+
+#weighted_kids[, group2b := factor(group2, levels = c(levels(factor(group2)), " "))]
+
+# Make this proportional
+ggplot(weighted_kids_FT,aes(x=group2,y=pop/1000,fill=kid_group)) + geom_col(position="fill") +
+  labs_e61(title = "Replacement Rate by Number of Children",subtitle = "FT workers",y="",x="",sources = c("ABS","e61")) +
+  plab(c("No children","One child","Two or more children"),x=c(6.2,6.2,6.2),y=c(0.77,0.52,0.02)) + 
+  coord_flip() +   scale_x_discrete(
+    limits = c(levels(weighted_kids$group2), " ")  # Add an empty category
+  ) + format_flip() +
+  scale_y_continuous(labels = scales::percent_format())
+
+
+# + theme(axis.text.x = element_text(angle = 0, size = 12),axis.ticks.length = unit(0.5, "cm")) + scale_x_discrete(labels = function(x) ifelse(seq_along(x) %% 2 == 0, paste0("\n", x), x))
+
+save_e61("RR_children_share_FT.png",res=2,pad_width = 1,auto_scale = FALSE)
 
 
 ### Example
