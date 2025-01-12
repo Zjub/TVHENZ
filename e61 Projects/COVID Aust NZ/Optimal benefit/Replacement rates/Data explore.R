@@ -2,7 +2,7 @@
 ## Data not stored centrally for security - will need a synthetic version for final paper.
 # Author: Matt Nolan
 # Date made: 31/12/2024
-# Last update: 7/1/2025
+# Last update: 11/1/2025
 
 
 library(tidyverse)
@@ -13,8 +13,8 @@ library(Hmisc)
 library(flextable)
 
 # Replace with dataset
-#RR_dt <- read_csv("C:/Users/OEM/Downloads/RRs_csv 1.csv")
-RR_dt <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 1.csv")
+RR_dt <- read_csv("C:/Users/OEM/Downloads/RRs_csv 1.csv")
+#RR_dt <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 1.csv")
 setDT(RR_dt)
 
 # Set restrictions
