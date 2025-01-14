@@ -57,3 +57,9 @@ b <- ggplot(DOM_data,aes(x=Weekly_Earnings,y=value/1000,colour=variable)) + geom
   labs_e61(subtitle = "Reported earnings of JSP recipients",y="(000s)",x="Weekly Earnings",sources = c("ABS","e61"))
 
 save_e61(a,b,filename = "Bunching.pdf")
+
+c <- ggplot(STP_data,aes(x=Weekly_Earnings,y=value/1000,colour=variable)) + geom_line() + geom_vline(xintercept = 75,linetype = "dashed") +
+  scale_y_continuous_e61(limits = c(0,12,2)) +
+  labs_e61(title = "No response to benefit abatement",subtitle = "Tax records of JSP recipients",y="(000s)",x="Weekly Earnings",sources = c("ABS","e61")) + plab(x=80,y=5,label="Abatement threshold",colour="black")
+
+save_e61(c,filename = "Bunching.png",res=2)

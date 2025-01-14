@@ -5,8 +5,6 @@
 rm(list=ls())
 gc()
 
-.libPaths(new = 'C:/Rpackage')
-
 #library(devtools)
 
 # devtools::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
@@ -104,4 +102,56 @@ ggplot(melt(c[,.(actual = mean(total_EU_rate),CF = sum(counter_ER_fixed_rate),CF
 colnames(c)
 
 
+gf_EU[,.(EU_total = sum(EU)),by=.(date)][, .(EU_12_month_rolling_mean = frollmean(EU_total, n = 12, align = "right"))]
 
+### Add Employment Services data
+
+es_data <- read_csv("employment_services_data.csv")
+setDT(es_data)
+colnames(es_data) <- c("Date","Mainstream","Disability")
+
+es_data[is.na(Disability)]$Disability <- 0
+
+es_data[,total := Mainstream + Disability]
+
+pop <- read_abs(cat_no = "3101.0")
+setDT(pop)
+
+unique(pop$series)
+
+es_data$pop <- pop[series == "Estimated Resident Population ;  Persons ;  Australia ;" & month(date) == 6 & date >= as.Date("2005-06-01") & date <= as.Date("2022-07-01")]$value
+
+es_data[,prop := total/pop]
+
+pop[, age := as.numeric(gsub(".*;\\s*Persons\\s*;\\s*(\\d+)\\s*;", "\\1", series))]
+
+unique(pop$age)
+
+pop[!is.na(age) & age >= 15 & age <= 64 & month(date) == 6 & date >= as.Date("2005-06-01") & date <= as.Date("2022-07-01")]
+
+wa_pop <- pop[table_no == 3101059 & !is.na(age) & age >= 15 & month(date) == 6 & date >= as.Date("2005-06-01") & date <= as.Date("2022-07-01"),.(wa_pop = sum(value)),by=.(date)]
+
+es_data <- cbind(es_data,wa_pop)
+
+es_data[,wa_prop := total/wa_pop]
+
+lfs <- read_abs(cat_no = "6202.0")
+setDT(lfs)
+unique(lfs$series)
+
+filtered_lfs <- lfs[grepl("15-64 years", series)]
+unique(filtered_lfs$series)
+
+UR_data <- filtered_lfs[series == "Unemployment rate ;  Persons ;  15-64 years ;" & series_type == "Seasonally Adjusted" & date >= as.Date("2004-07-01"),.(date,value)][,survey_year := fifelse(month(date) >= 7,year(date)+1,year(date))]
+
+es_data <- cbind(es_data,UR_data[,.(UR = mean(value)/100),by=.(survey_year)][survey_year <= 2022])
+
+melt(es_data[,.(date,wa_prop,UR)],id.vars = "date")
+
+ggplot(melt(es_data[,.(date,wa_prop,UR)],id.vars = "date"),aes(x=date,y=value,colour=variable)) + geom_line() +
+  labs_e61(title = "Employment Services are increasingly important",subtitle = "June year average, working age population",y="",x="") +
+  plab(c("Unemployment Rate","Employment Service use"),x=c(as.Date("2005-07-01"),as.Date("2005-07-01")),y=c(0.075,0.065)) +
+  scale_y_continuous_e61(labels = scales::percent_format(),limits = c(0.03,0.09,0.01)) +
+  scale_x_date(date_breaks = "2 years", date_labels = "%Y")
+
+save_e61("ES_rate.png",res=2)
