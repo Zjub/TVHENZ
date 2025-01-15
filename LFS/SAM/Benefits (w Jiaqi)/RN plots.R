@@ -175,3 +175,94 @@ plot_data_UR[3,3]
 
 (plot_data_UR[2,3] - plot_data_UR[1,3])*100
 (plot_data_UR[3,3] - plot_data_UR[2,3])*100
+
+#### Add the longer form data
+
+avgstats_b <- read_csv("avgstats_b.csv")
+setDT(avgstats_b)
+
+colnames(avgstats_b)
+
+avgstats_b[,":=" (JFR_PC = `Job-Finding Rate`/shift(`Job-Finding Rate`) - 1,ben_change =(b-0.2)/(b-0.21) - 1)][,implied_elasticity := JFR_PC/ben_change]
+
+ggplot(avgstats_b,aes(x=(b-0.2),y=`Job-Finding Rate`)) + geom_line() +
+  labs_e61(title = "Job-Finding Rate",y="",x="Replacement Rates") +
+  scale_y_continuous_e61(limits = c(0.3,0.42,0.02))
+
+save_e61("JFR_time_series.pdf")
+
+ggplot(avgstats_b,aes(x=(b-0.2),y=`Separation Rate`)) + geom_line() +
+  labs_e61(title = "Separation Rate",y="",x="Replacement Rates") +
+  scale_y_continuous_e61(limits = c(0.00,0.04,0.01))
+
+save_e61("SR_time_series.pdf")
+
+ggplot(avgstats_b,aes(x=(b-0.2),y=`Unemployment`)) + geom_line() +
+  labs_e61(title = "Unemployment Rate",y="",x="Replacement Rates") +
+  scale_y_continuous_e61(limits = c(0.00,0.1,0.02))
+
+save_e61("UR_time_series.pdf")
+
+ggplot(avgstats_b,aes(x=(b-0.2),y=implied_elasticity*(-1))) + geom_line() +
+  labs_e61(title = "Job-Finding Elasticity",subtitle = "% response relative to benefit change",y="",x="Replacement Rates") +
+  scale_y_continuous_e61(limits = c(0.00,0.8,0.1))
+
+save_e61("JFR_elasticity_time_series.pdf")
+
+ggplot(avgstats_b,aes(x=(b-0.2),y=`J2J Transition Rate`)) + geom_line() +
+  labs_e61(title = "Job-to-Job Rate",y="",x="Replacement Rates") +
+  scale_y_continuous_e61(limits = c(0.00,0.04,0.01))
+
+save_e61("J2J_time_series.pdf")
+
+
+a <- avgstats_b[b %in% c(0.5,0.53,0.61,0.7)]
+
+ggplot(a, aes(x = as.factor((b - 0.2) * 100), y = `Job-Finding Rate`, fill = as.factor(b))) + 
+  geom_col() +
+  scale_x_discrete() +
+  #labs_e61(title = "Job-Finding Rate", y = "") +
+  labs_e61(subtitle = "Quarterly Rate", y = "") +
+  scale_y_continuous_e61(labels = scales::percent_format(), limits = c(0, 0.5, 0.1)) +
+  scale_fill_manual(values = c(palette_e61(4)[1], palette_e61(4)[2], palette_e61(4)[3], palette_e61(4)[4]))
+
+save_e61("JFR_policy.pdf")
+
+
+ggplot(a,aes(x=as.factor((b-0.2)*100),y=implied_elasticity*(-1),fill=as.factor(b))) + geom_col() +
+  scale_x_discrete() +
+  #labs_e61(title = "Job-Finding Rate Elasticity",subtitle = "% response relative to benefit change",y="") +
+  labs_e61(\subtitle = "% response relative to benefit change",y="") +
+  scale_y_continuous_e61(limits=c(0,0.7,0.1)) +
+  scale_fill_manual(values = c(palette_e61(4)[1], palette_e61(4)[2], palette_e61(4)[3], palette_e61(4)[4]))
+
+save_e61("JFR_elasticity_policy.pdf")
+
+ggplot(a,aes(x=as.factor((b-0.2)*100),y=`Separation Rate`,fill=as.factor(b))) + geom_col() +
+  scale_x_discrete() +
+  #labs_e61(title = "Separation Rate",y="") +
+  labs_e61(subtitle = "Quarterly Rate",y="") +
+  scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,0.03,0.005)) +
+  scale_fill_manual(values = c(palette_e61(4)[1], palette_e61(4)[2], palette_e61(4)[3], palette_e61(4)[4]))
+
+save_e61("SR_policy.pdf")
+
+ggplot(a,aes(x=as.factor((b-0.2)*100),y=`Unemployment`,fill=as.factor(b))) + geom_col() +
+  scale_x_discrete() +
+  #labs_e61(title = "Unemployment Rate",y="") +
+  labs_e61(subtitle = "Quarterly Rate",y="") +
+  scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,0.07,0.01)) +
+  scale_fill_manual(values = c(palette_e61(4)[1], palette_e61(4)[2], palette_e61(4)[3], palette_e61(4)[4]))
+
+save_e61("UR_policy.pdf")
+
+ggplot(a,aes(x=as.factor((b-0.2)*100),y=`J2J Transition Rate`,fill=as.factor(b))) + geom_col() +
+  scale_x_discrete() +
+  #labs_e61(title = "Job-to-Job Rate",y="") +
+  labs_e61(subtitle = "Quarterly Rate",y="") +
+  scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,0.04,0.005)) +
+  scale_fill_manual(values = c(palette_e61(4)[1], palette_e61(4)[2], palette_e61(4)[3], palette_e61(4)[4]))
+
+save_e61("J2J_policy.pdf")
+
+

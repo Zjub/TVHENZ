@@ -150,8 +150,8 @@ melt(es_data[,.(date,wa_prop,UR)],id.vars = "date")
 
 ggplot(melt(es_data[,.(date,wa_prop,UR)],id.vars = "date"),aes(x=date,y=value,colour=variable)) + geom_line() +
   labs_e61(title = "Employment Services are increasingly important",subtitle = "June year average, working age population",y="",x="") +
-  plab(c("Unemployment Rate","Employment Service use"),x=c(as.Date("2005-07-01"),as.Date("2005-07-01")),y=c(0.075,0.065)) +
+  plab(c("Employment Service use","Unemployment Rate"),x=c(as.Date("2005-07-01"),as.Date("2005-07-01")),y=c(0.075,0.065)) +
   scale_y_continuous_e61(labels = scales::percent_format(),limits = c(0.03,0.09,0.01)) +
-  scale_x_date(date_breaks = "2 years", date_labels = "%Y")
+  scale_x_date(date_breaks = "3 years", date_labels = "%Y")
 
-save_e61("ES_rate.png",res=2)
+save_e61("ES_rate.png",res=2,pad_width = 1)
