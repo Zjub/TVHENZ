@@ -96,6 +96,13 @@ prop_JSP_matched_dt[,pre_post := fifelse(event_time <= 0,0,1)]
 # Just use a regression to estimate the difference. In datalab will need to do a full TWFE estimate.
 feols(data = prop_JSP_matched_dt[date < as.IDate("2020-07-01")],prop ~ aus + pre_post + aus:pre_post)
 
+# Do with the "month post JK dropped" - or dummies for them
+
+prop_JSP_matched_dt[,":=" (JK_month = fifelse(date >= as.Date("2020-04-02") & date <= as.Date("2020-04-30"),1,0),late_JK = fifelse(date > as.Date("2020-04-30"),1,0))]
+
+feols(data = prop_JSP_matched_dt[date < as.IDate("2020-07-01")],prop ~ aus + pre_post + aus:pre_post + JK_month + aus:JK_month)
+
+feols(data = prop_JSP_matched_dt[date < as.IDate("2020-07-01")],prop ~ aus + pre_post + aus:pre_post + JK_month + aus:JK_month + late_JK  + aus:late_JK)
 
 diff_data <- prop_JSP_matched_dt[nz == 0][prop_JSP_matched_dt[nz == 1],on=.(date)][,.(date,event_time,prop=prop - i.prop)]
 

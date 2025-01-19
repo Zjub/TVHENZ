@@ -1,14 +1,16 @@
 ### Read libraries ----
-library(readabs)
+library(remotes)
+library(tidyverse)
 library(data.table)
-library(tidyverse) 
-library(ggplot2)
-library(knitr)
-library(readrba)
-library(Hmisc)
+library(collapse)
+library(readabs)
+library(readr)
+library(readxl)
+library(theme61)
+library(lubridate)
 library(mFilter)
-library(viridis)
-library(gridExtra)
+library(zoo)
+library(Hmisc)
 library(seasonal)
 
 
@@ -19,6 +21,15 @@ GDP <- read_abs(cat_no = "5206.0") %>% filter(series_type == "Seasonally Adjuste
 Hours <- read_abs(cat_no = "5206.0") %>% filter(series_type == "Seasonally Adjusted") %>% filter(series == "Hours worked: Index ;") %>% filter(grepl('Table 1',table_title)) %>% drop_na %>% filter(unit == "Index Numbers") %>% select("date","value")
 
 colnames(Hours) <- c("date","Hours")
+
+LS <- read_abs(cat_no = "6202.0") %>% filter(series_type == "Seasonally Adjusted") %>% filter(table_title == "Table 1. Labour force status by Sex, Australia - Trend, Seasonally adjusted and Original") %>% filter(series == "Employed total ;  Persons ;" | series == "Unemployed total ;  Persons ;"  | series == "Unemployment rate ;  Persons ;") %>% select("date","series","value")
+
+LS2 <- pivot_wider(LS,id_cols = "date",names_from = "series",values_from = "value")
+colnames(LS2) <- c("date","Employed","Unemployed","UR_ABS")
+
+LS2 <- LS2 %>% mutate(UR_Derived = Unemployed/(Employed + Unemployed),QUnemp = rollmean(Unemployed,k=3,fill=NA,align="right"),QEmp =rollmean(Employed,k=3,fill=NA,align="right"),UR = UR_ABS) 
+
+LSQ <- LS2[seq(5,nrow(LS2),3),] %>% select(date,QUnemp,QEmp,UR)
 
 LP <- left_join(LSQ,GDP,by="date") %>% mutate(Labour_Prod = value/QEmp) %>% select(date,Labour_Prod) %>% drop_na
 LP$Labour_Prod <- LP$Labour_Prod/LP[LP$date == "1980-03-01",]$Labour_Prod
@@ -58,7 +69,7 @@ ggplot(melt(LP[date > as.Date("2012-12-30"),.(date,LP_growth,LP_trend_growth)],i
   plot_label(c("Trend","Quarterly"),x=c(as.Date("2016-03-01"),as.Date("2016-03-01")),y=c(0.025,0.035))
 
 
-save_e61("C:/Users/MattNolan/GitHub/TVHENZ/LFS/LM_summary/Newsletter4.png",res=2)
+save_e61("Newsletter4.png",res=2)
 
 
 #### Real wages
@@ -96,4 +107,16 @@ ggplot(cpi_growth,aes(x=date,y=RW/100)) + geom_line() + geom_hline(yintercept = 
   labs_e61(title = "Real Wage Growth",subtitle = "WPI divided by CPI",y="") +
   scale_y_continuous_e61(limits = c(-0.05,0.03,0.01),labels = scales::percent_format())
 
-save_e61("C:/Users/MattNolan/GitHub/TVHENZ/LFS/LM_summary/Newsletter5.png",res=2,)
+save_e61("Newsletter5.png",res=2)
+
+unique(wpi$series)
+
+wpi_value <- wpi[series %in% c("Quarterly Index ;  Total hourly rates of pay excluding bonuses ;  Australia ;  Private and Public ;  All industries ;" ) & series_type %in% c("Seasonally Adjusted")][,.(date,wpi =value)]
+cpi_value <- cpi[table_title == "TABLES 1 and 2. CPI: All Groups, Index Numbers and Percentage Changes" & unit == "Index Numbers" & series == "Index Numbers ;  All groups CPI ;  Australia ;"][,.(date,cpi = value)]
+
+price_values <- cpi_value[wpi_value,on=.(date)][,Real_Wage := wpi/cpi]
+
+price_values[nrow(price_values),.(Real_Wage)]/max(price_values$Real_Wage) - 1
+price_values[nrow(price_values),.(Real_Wage)]/price_values[date == as.Date("2019-12-01"),.(Real_Wage)] - 1
+
+price_values[Real_Wage == max(Real_Wage)]

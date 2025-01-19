@@ -152,6 +152,13 @@ ggplot(vu,aes(x=date,y=vu*1000)) + geom_line()+ geom_vline(xintercept = as.Date(
   sources = c("ABS, e61"),
 ) + scale_y_continuous_e61(limits=c(0,0.95,0.25),y_top=FALSE)
 
+ggplot(vu,aes(x=date,y=vu*1000)) + geom_line() + labs_e61(
+  title = "Tightness measures",
+  subtitle = "Vacancies per unemployed person",
+  y="",
+  sources = c("ABS, e61"),
+) + scale_y_continuous_e61(limits=c(0,0.95,0.25),y_top=FALSE)
+
 save_e61("TightnessCrisis.png",res=2,pad_width = 1,chart_type = "PPT",auto_scale = FALSE)
 
 ggplot()

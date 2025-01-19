@@ -2,8 +2,6 @@
 
 rm(list=ls())
 
-.libPaths(new = 'C:/Rpackage')
-
 library(tidyverse)
 library(data.table)
 library(collapse)
@@ -22,7 +20,7 @@ hpf <- 1600 # 100000
 
 #### Set periodisation for moments
 
-datestart = "2004-03-01"
+datestart = "2006-01-01"
 dateend = "2019-12-01"
 dateendtrend = "2019-12-01"
 
@@ -123,10 +121,17 @@ Employed <- dfgf %>% filter((lfs_current == "Employed full-time" | lfs_current =
 # JFR is the proportion of previously unemployed who become employed as a percent of previously unemployed
 
 JFRm <- data.frame(date = pUnemployed$date,JFR = UnTrans$URout/pUnemployed$number) %>% mutate(JFRQ =rollmean(JFR,k=3,fill=NA,align="right"))
+setDT(JFRm)
+
+mean(JFRm[date >= datestart & date <= dateend]$JFR) # The monthly average for the paper
+
 
 # SR is the proportion of the previously employed who become unemployed
 
 SRm <- data.frame(date = pEmployed$date,JFR = EmpTrans$URin/pEmployed$number) %>% mutate(SRQ =rollmean(JFR,k=3,fill=NA,align="right"))
+setDT(SRm)
+
+mean(SRm[date >= datestart & date <= dateend]$JFR) # The monthly average for the paper
 
 JFR <- JFRm[seq(3,nrow(JFRm),3),] %>% select(date,JFRQ)
 
@@ -166,11 +171,11 @@ ggplot(vu,aes(x=date,y=vu*1000)) + geom_line()+ geom_vline(xintercept = as.Date(
   title = "Tightness measures",
   subtitle = "Vacancies per unemployed person",
   y="",
-  caption = "ABS National Accounts.
+  source = "ABS National Accounts.
 Source: ABS, e61.",
 )  + theme_e61(base_family = "Quattrocento Sans", legend = "bottom")
 
-save_e61(filename = 'C:/MN personal planning/Income_Support/plots/TightnessCrisis.svg')
+#save_e61(filename = 'C:/MN personal planning/Income_Support/plots/TightnessCrisis.svg')
 
 
 ### The core figures now need to be logged and then HP filtered, prior to the summary statistics being constructed.
@@ -186,6 +191,9 @@ library(seasonal)
 # Add "dateendtrend" here as we only want to do the filtered series up to 2019 - so that the swings during COVID don't mess up trend estimates.
 
 URS <- tibble(date = UR$date,URS = UR$UR) %>% mutate(lURS = log(URS)) %>% drop_na %>% filter(date <= dateendtrend) %>% mutate(lURS_HP = hpfilter(lURS,freq=hpf,type="lambda")$cycle) 
+setDT(URS)
+
+mean(URS[date >= datestart & date <= dateend]$URS) # The monthly average for the paper
 
 JFRS <- tibble(date = JFR$date, JFRS = seas(ts(JFR$JFRQ,start=c(2003,1),end=c(2022,4),freq=4))$series$s11) %>% filter(date <= dateendtrend)  %>% mutate(lJFRS = log(JFRS)) %>% drop_na %>% mutate(lJFRS_HP = hpfilter(lJFRS,freq=hpf,type="lambda")$cycle)
 

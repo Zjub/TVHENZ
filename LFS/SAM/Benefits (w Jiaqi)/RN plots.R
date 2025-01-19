@@ -187,33 +187,33 @@ avgstats_b[,":=" (JFR_PC = `Job-Finding Rate`/shift(`Job-Finding Rate`) - 1,ben_
 
 ggplot(avgstats_b,aes(x=(b-0.2),y=`Job-Finding Rate`)) + geom_line() +
   labs_e61(title = "Job-Finding Rate",y="",x="Replacement Rates") +
-  scale_y_continuous_e61(limits = c(0.3,0.42,0.02))
+  scale_y_continuous_e61(limits = c(0.3,0.42,0.02),labels=scales::percent_format())
 
-save_e61("JFR_time_series.pdf")
+save_e61("JFR_time_series.pdf",pad_width = 1)
 
 ggplot(avgstats_b,aes(x=(b-0.2),y=`Separation Rate`)) + geom_line() +
   labs_e61(title = "Separation Rate",y="",x="Replacement Rates") +
-  scale_y_continuous_e61(limits = c(0.00,0.04,0.01))
+  scale_y_continuous_e61(limits = c(0.00,0.04,0.01),labels=scales::percent_format())
 
-save_e61("SR_time_series.pdf")
+save_e61("SR_time_series.pdf",pad_width = 1)
 
 ggplot(avgstats_b,aes(x=(b-0.2),y=`Unemployment`)) + geom_line() +
   labs_e61(title = "Unemployment Rate",y="",x="Replacement Rates") +
-  scale_y_continuous_e61(limits = c(0.00,0.1,0.02))
+  scale_y_continuous_e61(limits = c(0.00,0.1,0.02),labels=scales::percent_format())
 
-save_e61("UR_time_series.pdf")
+save_e61("UR_time_series.pdf",pad_width = 1)
 
 ggplot(avgstats_b,aes(x=(b-0.2),y=implied_elasticity*(-1))) + geom_line() +
-  labs_e61(title = "Job-Finding Elasticity",subtitle = "% response relative to benefit change",y="",x="Replacement Rates") +
-  scale_y_continuous_e61(limits = c(0.00,0.8,0.1))
+  labs_e61(title = "Job-Finding Elasticity",subtitle = "% decline relative to benefit change",y="",x="Replacement Rates") +
+  scale_y_continuous_e61(limits = c(0.00,0.8,0.1),labels=scales::percent_format())
 
-save_e61("JFR_elasticity_time_series.pdf")
+save_e61("JFR_elasticity_time_series.pdf",pad_width = 1)
 
 ggplot(avgstats_b,aes(x=(b-0.2),y=`J2J Transition Rate`)) + geom_line() +
   labs_e61(title = "Job-to-Job Rate",y="",x="Replacement Rates") +
-  scale_y_continuous_e61(limits = c(0.00,0.04,0.01))
+  scale_y_continuous_e61(limits = c(0.00,0.04,0.01),labels=scales::percent_format())
 
-save_e61("J2J_time_series.pdf")
+save_e61("J2J_time_series.pdf",pad_width = 1)
 
 
 a <- avgstats_b[b %in% c(0.5,0.53,0.61,0.7)]
@@ -226,17 +226,17 @@ ggplot(a, aes(x = as.factor((b - 0.2) * 100), y = `Job-Finding Rate`, fill = as.
   scale_y_continuous_e61(labels = scales::percent_format(), limits = c(0, 0.5, 0.1)) +
   scale_fill_manual(values = c(palette_e61(4)[1], palette_e61(4)[2], palette_e61(4)[3], palette_e61(4)[4]))
 
-save_e61("JFR_policy.pdf")
+save_e61("JFR_policy.pdf",pad_width = 1)
 
 
 ggplot(a,aes(x=as.factor((b-0.2)*100),y=implied_elasticity*(-1),fill=as.factor(b))) + geom_col() +
   scale_x_discrete() +
   #labs_e61(title = "Job-Finding Rate Elasticity",subtitle = "% response relative to benefit change",y="") +
-  labs_e61(\subtitle = "% response relative to benefit change",y="") +
+  labs_e61(subtitle = "% response relative to benefit change",y="") +
   scale_y_continuous_e61(limits=c(0,0.7,0.1)) +
   scale_fill_manual(values = c(palette_e61(4)[1], palette_e61(4)[2], palette_e61(4)[3], palette_e61(4)[4]))
 
-save_e61("JFR_elasticity_policy.pdf")
+save_e61("JFR_elasticity_policy.pdf",pad_width = 1)
 
 ggplot(a,aes(x=as.factor((b-0.2)*100),y=`Separation Rate`,fill=as.factor(b))) + geom_col() +
   scale_x_discrete() +
@@ -245,7 +245,7 @@ ggplot(a,aes(x=as.factor((b-0.2)*100),y=`Separation Rate`,fill=as.factor(b))) + 
   scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,0.03,0.005)) +
   scale_fill_manual(values = c(palette_e61(4)[1], palette_e61(4)[2], palette_e61(4)[3], palette_e61(4)[4]))
 
-save_e61("SR_policy.pdf")
+save_e61("SR_policy.pdf",pad_width = 1)
 
 ggplot(a,aes(x=as.factor((b-0.2)*100),y=`Unemployment`,fill=as.factor(b))) + geom_col() +
   scale_x_discrete() +
@@ -254,7 +254,7 @@ ggplot(a,aes(x=as.factor((b-0.2)*100),y=`Unemployment`,fill=as.factor(b))) + geo
   scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,0.07,0.01)) +
   scale_fill_manual(values = c(palette_e61(4)[1], palette_e61(4)[2], palette_e61(4)[3], palette_e61(4)[4]))
 
-save_e61("UR_policy.pdf")
+save_e61("UR_policy.pdf",pad_width = 1)
 
 ggplot(a,aes(x=as.factor((b-0.2)*100),y=`J2J Transition Rate`,fill=as.factor(b))) + geom_col() +
   scale_x_discrete() +
@@ -263,6 +263,46 @@ ggplot(a,aes(x=as.factor((b-0.2)*100),y=`J2J Transition Rate`,fill=as.factor(b))
   scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,0.04,0.005)) +
   scale_fill_manual(values = c(palette_e61(4)[1], palette_e61(4)[2], palette_e61(4)[3], palette_e61(4)[4]))
 
-save_e61("J2J_policy.pdf")
+save_e61("J2J_policy.pdf",pad_width = 1)
 
+0.3910432/0.3987658 -1
+0.3685505/0.3987658 -1
+0.3388891/0.3685505 - 1
+
+50/41-1
+
+0.04120393/0.04043685 -1
+
+
+a
+
+### Unrelated SEEK LM mismatch information
+
+# Load required library
+library(ggplot2)
+
+# Create the data frame
+Seek_data <- data.frame(
+  Quarter = seq(as.Date("2016-10-01"), as.Date("2023-10-01"), by = "quarter"),
+  Mismatch = c(
+    26.5, 26.7, 26.9, 27.1, 27.3, 27.6, 27.9, 28.2, 28.5, 28.8, 29.2, 29.6, 30.0,
+    29.4, 28.8, 28.2, 27.6, 27.0, 26.5, 26.2, 26.0, 26.5, 27.1, 27.8, 28.5, 29.2, 30.0, 30.9, 31.7
+  )
+)
+
+# Plot the data
+ggplot(Seek_data, aes(x = Quarter, y = Mismatch)) +
+  geom_line() +
+  labs_e61(
+    title = "SEEK Labour Market Mismatch Indicator",
+    subtitle = "Quarterly",
+    y = "%",
+    x = "",
+    footnotes = "SEEK trend estimate.",
+    sources = c("SEEK")
+  ) +
+  scale_y_continuous_e61(limits = c(25, 32,1)) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y")
+
+save_e61("SEEK_mismatch.png",res=2)
 
