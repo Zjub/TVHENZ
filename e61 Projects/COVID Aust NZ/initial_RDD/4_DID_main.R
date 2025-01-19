@@ -43,6 +43,8 @@ prop_JSP_matched_dt[,aus := fifelse(nz == 1,0,1)]
 pre_announce_avg <- prop_JSP_matched_dt[date <= as.IDate("2020-03-19"),.(average = mean(prop)),by=.(nz)]
 post_announce_avg <- prop_JSP_matched_dt[date > as.IDate("2020-03-19"),.(average = mean(prop)),by=.(nz)]
 
+post_announce_avg - pre_announce_avg
+
 ggplot(prop_JSP_matched_dt,aes(x=date,y=prop,colour=as.factor(nz))) + geom_line() + 
   geom_vline(xintercept = as.IDate("2020-03-19"),linetype="dashed") +
   geom_vline(xintercept = as.IDate("2020-04-20"),linetype="dashed") +
@@ -55,6 +57,27 @@ ggplot(prop_JSP_matched_dt,aes(x=date,y=prop,colour=as.factor(nz))) + geom_line(
   geom_segment(data = post_announce_avg, aes(x = as.IDate("2020-03-19"), xend = end, y = average, yend = average, colour = as.factor(nz)), linetype = "dashed")
 
 post_announce_avg_xJul <- prop_JSP_matched_dt[date > as.IDate("2020-03-19") & date < as.IDate("2020-07-01"),.(average = mean(prop)),by=.(nz)]
+
+## Data to send
+
+temp <- prop_JSP_matched_dt[date >= as.Date("2020-01-30"),.(date,nz,prop)]
+
+temp[, nz := fifelse(nz == 1, "NZ", "Aus")]
+
+temp <- dcast(temp, date ~ nz, value.var = "prop")
+
+send_data <- temp[,":=" (NZ_pre = pre_announce_avg[nz == 1]$average, 
+                                        AUS_pre = pre_announce_avg[nz == 0]$average, 
+                                        NZ_post = post_announce_avg[nz == 1]$average, 
+                                        AUS_post = post_announce_avg[nz == 0]$average
+)]
+
+# Add NAs to prevent miss used graph
+
+send_data[date > as.Date("2020-03-19"), c("NZ_pre", "AUS_pre") := lapply(.SD, function(x) NA), .SDcols = c("NZ_pre", "AUS_pre")]
+send_data[date < as.Date("2020-03-19"), c("NZ_post", "AUS_post") := lapply(.SD, function(x) NA), .SDcols = c("NZ_post", "AUS_post")]
+
+write.csv(send_data,"e61_COVID_LS_data.csv")
 
 # As our second announcement is in July lets cut this back (that early July outlier is worth abstracting from - as it only increases our estimates)
 ggplot(prop_JSP_matched_dt[date < as.IDate("2020-07-01")],aes(x=date,y=prop,colour=as.factor(nz))) + geom_line() + 
