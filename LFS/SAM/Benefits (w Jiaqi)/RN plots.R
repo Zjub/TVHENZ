@@ -229,6 +229,20 @@ ggplot(a, aes(x = as.factor((b - 0.2) * 100), y = `Job-Finding Rate`, fill = as.
 save_e61("JFR_policy.pdf",pad_width = 1)
 
 
+ggplot(a, aes(x = as.factor((b - 0.2) * 100), y = `Job-Finding Rate`, fill = as.factor(b))) + 
+  geom_col() +
+  scale_x_discrete() +
+  labs_e61(title = "Job-Finding Rate", y = "",subtitle = "Quarterly Rate",x="Replacement Rate") +
+  #labs_e61(subtitle = "Quarterly Rate", y = "") +
+  scale_y_continuous_e61(labels = scales::percent_format(), limits = c(0, 0.5, 0.1)) +
+  scale_fill_manual(values = c(palette_e61(4)[1], palette_e61(4)[2], palette_e61(4)[3], palette_e61(4)[4]))
+
+save_e61("JFR_policy.png",res=2,pad_width = 1)
+
+
+
+
+
 ggplot(a,aes(x=as.factor((b-0.2)*100),y=implied_elasticity*(-1),fill=as.factor(b))) + geom_col() +
   scale_x_discrete() +
   #labs_e61(title = "Job-Finding Rate Elasticity",subtitle = "% response relative to benefit change",y="") +
@@ -246,6 +260,16 @@ ggplot(a,aes(x=as.factor((b-0.2)*100),y=`Separation Rate`,fill=as.factor(b))) + 
   scale_fill_manual(values = c(palette_e61(4)[1], palette_e61(4)[2], palette_e61(4)[3], palette_e61(4)[4]))
 
 save_e61("SR_policy.pdf",pad_width = 1)
+
+ggplot(a,aes(x=as.factor((b-0.2)*100),y=`Separation Rate`,fill=as.factor(b))) + geom_col() +
+  scale_x_discrete() +
+  labs_e61(title = "Separation Rate",y="",subtitle = "Quarterly Rate",x="Replacement Rate") +
+  #labs_e61(subtitle = "Quarterly Rate",y="") +
+  scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,0.03,0.005)) +
+  scale_fill_manual(values = c(palette_e61(4)[1], palette_e61(4)[2], palette_e61(4)[3], palette_e61(4)[4]))
+
+save_e61("SR_policy.png",pad_width = 1,res=2)
+
 
 ggplot(a,aes(x=as.factor((b-0.2)*100),y=`Unemployment`,fill=as.factor(b))) + geom_col() +
   scale_x_discrete() +
