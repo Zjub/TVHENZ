@@ -61,5 +61,14 @@ xh_ben <- melt(NZ_AUS_compare[,.(Apr_year,NZ_PPP_xhouse,AUS_PPP_xhouse)],id.vars
 
 ggplot(full_ben,aes(x=as.numeric(Apr_year),y=value,fill=variable)) + geom_col(position = "dodge")
   
-ggplot(xh_ben,aes(x=as.numeric(Apr_year),y=value,fill=variable)) + geom_col(position = "dodge") +
-  labs_e61(title = "Relative benefit payment",subtitle = "Excluding Housing Assistance*",footnote = c("The maximum rate of housing assistance in New Zealand is higher than in New Zealand by the difference between the two payments. However, the rate is only paid is limited geographic zones. For most NZ recipients a rate similar to the CRA is provided."))
+ggplot(xh_ben[Apr_year>= 2019],aes(x=as.numeric(Apr_year),y=value,fill=variable)) + geom_col(position = "dodge") +
+  labs_e61(title = "Relative benefit payment",subtitle = "Fortnightly PPP adjusted, Excluding Housing Assistance*",
+           footnotes = c("The maximum rate of housing assistance in New Zealand is higher than in New Zealand by the difference between the two payments. However, the rate is only paid is limited geographic zones. For most NZ recipients a rate similar to the CRA is provided."),
+           x="",
+           y="",
+           sources = c("e61","Service Australia","MSD")) +
+  scale_y_continuous_e61(labels = scales::dollar_format(),limits = c(0,1200,300)) +
+  plab(c("New Zealand","Australia"),x=c(2021,2021),y=c(800,1000)) +
+  scale_x_continuous(breaks = seq(min(xh_ben$Apr_year), max(xh_ben$Apr_year), by = 1))
+
+save_e61("rel_benefits.png",pad_width = 1,res=2)
