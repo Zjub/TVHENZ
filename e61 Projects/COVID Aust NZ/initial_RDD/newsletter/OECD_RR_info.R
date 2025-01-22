@@ -1,7 +1,7 @@
 # Quick info on replacement rates for the newsletter
 # Author: Matt Nolan
 # Date made: 20/01/2025
-# Last update: 20/01/2025
+# Last update: 22/01/2025
 
 library(tidyverse)
 library(data.table)
@@ -76,12 +76,13 @@ impute_factor <- RR_dt[REF_AREA == "NZL" & TIME_PERIOD == 2020,.(RR)]/RR_dt[REF_
 NZ_21 <- RR_xh_dt[REF_AREA == "NZL" & TIME_PERIOD == 2021,.(RR)]
 
 RR_xh_dt[REF_AREA == "NZL" & TIME_PERIOD == 2020]$RR <- as.integer(NZ_21*impute_factor)
+RR_xh_dt[,REF_AREA := factor(REF_AREA,levels = c("NZL","AUS"))]
 
 ggplot(RR_xh_dt[TIME_PERIOD >= 2014],aes(x=TIME_PERIOD,y=RR,colour=REF_AREA)) + geom_line() +
   scale_y_continuous_e61(limits = c(18,34,by=3),y_top = TRUE) +
-  labs_e61(title = "Income Replacement Rate","Relative to Average Wage, Single ex Housing Assistance",y="%",footnotes = c("NZ 2020 figure imputed.")) +
+  labs_e61(title = "Income Replacement Rate","Relative to Average Wage, Single ex Housing Assistance",y="%",footnotes = c("NZ 2020 figure imputed.","Excludes Coronavirus Supplement")) +
   scale_x_continuous(breaks = seq(min(RR_dt$TIME_PERIOD), max(RR_dt$TIME_PERIOD), by = 2)) +
-  plab(c("Australia","New Zealand"),y=c(25.5,29.5),x=c(2017,2017))
+  plab(c("New Zealand","Australia"),y=c(31,28),x=c(2017,2017))
 
 save_e61("RR_NZ_AUS_xhousing_impute2020.png",res=2,pad_width = 1)
 
@@ -97,7 +98,7 @@ ggplot(full_ben,aes(x=as.numeric(Apr_year),y=value,fill=variable)) + geom_col(po
 
 ggplot(full_ben[Apr_year>= 2019],aes(x=as.numeric(Apr_year),y=value,fill=variable)) + geom_col(position = "dodge") +
   labs_e61(title = "Relative benefit payment",subtitle = "Fortnightly PPP adjusted, Including maximum Housing Assistance*",
-           footnotes = c("The maximum rate of housing assistance in New Zealand is higher than in New Zealand by the difference between the two payments. However, the rate is only paid is limited geographic zones. For most NZ recipients a rate similar to the CRA is provided."),
+           footnotes = c("The maximum rate of housing assistance in New Zealand is higher than in New Zealand by the difference between the two payments. However, the rate is only paid in limited geographic zones. For most NZ recipients a rate similar to the CRA is provided."),
            x="",
            y="",
            sources = c("e61","Service Australia","MSD")) +
@@ -110,7 +111,7 @@ save_e61("rel_benefits.png",pad_width = 1,res=2)
   
 ggplot(xh_ben[Apr_year>= 2019],aes(x=as.numeric(Apr_year),y=value,fill=variable)) + geom_col(position = "dodge") +
   labs_e61(title = "Relative benefit payment",subtitle = "Fortnightly PPP adjusted, Excluding Housing Assistance*",
-           footnotes = c("The maximum rate of housing assistance in New Zealand is higher than in New Zealand by the difference between the two payments. However, the rate is only paid is limited geographic zones. For most NZ recipients a rate similar to the CRA is provided."),
+           footnotes = c("The maximum rate of housing assistance in New Zealand is higher than in New Zealand by the difference between the two payments. However, the rate is only paid in limited geographic zones. For most NZ recipients a rate similar to the CRA is provided."),
            x="",
            y="",
            sources = c("e61","Service Australia","MSD")) +
@@ -119,3 +120,18 @@ ggplot(xh_ben[Apr_year>= 2019],aes(x=as.numeric(Apr_year),y=value,fill=variable)
   scale_x_continuous(breaks = seq(min(xh_ben$Apr_year), max(xh_ben$Apr_year), by = 1))
 
 save_e61("rel_benefits_xhousing.png",pad_width = 1,res=2)
+
+
+xh_xCS_ben <- melt(NZ_AUS_compare[,.(Apr_year,NZ_PPP_xhouse,AUS_PPP_xh_xCS)],id.vars = "Apr_year")
+
+ggplot(xh_xCS_ben[Apr_year>= 2019],aes(x=as.numeric(Apr_year),y=value,fill=variable)) + geom_col(position = "dodge") +
+  labs_e61(title = "Relative benefit payment",subtitle = "Fortnightly PPP adjusted, Excluding Housing Assistance and Coronavirus Support*",
+           footnotes = c("The maximum rate of housing assistance in New Zealand is higher than in New Zealand by the difference between the two payments. However, the rate is only paid in limited geographic zones. For most NZ recipients a rate similar to the CRA is provided."),
+           x="",
+           y="",
+           sources = c("e61","Service Australia","MSD")) +
+  scale_y_continuous_e61(labels = scales::dollar_format(),limits = c(0,800,200)) +
+  plab(c("New Zealand","Australia"),x=c(2021,2021),y=c(550,700)) +
+  scale_x_continuous(breaks = seq(min(xh_ben$Apr_year), max(xh_ben$Apr_year), by = 1))
+
+save_e61("rel_benefits_xhousing_xCS.png",pad_width = 1,res=2)
