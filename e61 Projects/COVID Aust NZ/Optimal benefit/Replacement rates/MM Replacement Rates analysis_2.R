@@ -1,4 +1,4 @@
-## Last update:  24/01/2025
+## Last update:  25/01/2025
 ## Author:  Matt Maltman
 ## Last update person:  Matt Nolan (adding FT versions of plots, and adjusting some stuff to DT)
 # Note: Refine the code down a bit to make the datasets being used clear and transparent - to avoid using the wrong data accidentally.
@@ -9,6 +9,7 @@ library(theme61)
 library(readr)
 library(tidyverse)
 library(data.table)
+
 ##################
 
 
@@ -72,7 +73,9 @@ library(data.table)
 
 # START HERE IF YOU HAVE DONE THE ABOVE
 
-Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 2.csv")
+#Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 2.csv") # Work version
+Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 2.csv") # Home version
+
 setDT(Rep_rates_df)
 
 hour_limit <- 30
@@ -338,9 +341,6 @@ save_e61(paste0("RR_recipient_hour_min",hour_limit,".svg"), RR3)
 ############### Replacement rates by Characteristics #####################################
 ################ #########################################################################
 #########################################################################################
-##########################################################################################
-library(data.table)
-library(ggplot2)
 
 # Combine 1 and 2 dependents into one category and rename categories
 Rep_rates_df_subset[, Numb_dep_cat := fifelse(Numb_dep >= 3, "3+", 
@@ -401,6 +401,12 @@ FamilyPanel <- ggplot(Rep_rates_df_subset, aes(x = net_RR * 100, weight = normal
 save_e61(paste0("FamilyPanel_hour_min",hour_limit,".svg"), FamilyPanel, 
          footnotes = "The red dashed line represents the mean replacement rate,
          and the purple dashed line represents the median replacement rate for that category.")
+
+save_e61(paste0("FamilyPanel_hour_min",hour_limit,".pdf"), FamilyPanel, 
+         footnotes = "The red dashed line represents the mean replacement rate,
+         and the purple dashed line represents the median replacement rate for that category.")
+
+
 ################################################################################################################################3
 
 # Ensure Numb_dep is categorized as 1, 2, 3, and 4+
@@ -705,6 +711,8 @@ AGEECPanel <- ggplot(Rep_rates_df_subset, aes(x = net_RR * 100, weight = normali
 save_e61(paste0("AgeGroups_hour_min",hour_limit,".svg"), AGEECPanel, 
          footnotes = "The red dashed line is the median replacement rate, and the purple dashed line is the mean replacement rate for that category.")
 
+save_e61(paste0("AgeGroups_hour_min",hour_limit,".pdf"), AGEECPanel, 
+         footnotes = "The red dashed line is the median replacement rate, and the purple dashed line is the mean replacement rate for that category.")
 
 
 #######################################################################################################
@@ -1188,14 +1196,19 @@ Rep_rates_df_subset <- Rep_rates_df_subset %>%
   ungroup()
 
 
-# Calculate the proportion below 0 for each eligibility_status
-facet_annotations <- Rep_rates_df_subset %>%
-  group_by(eligibility_status) %>%
-  summarize(
-    proportion_below_zero = sum((poverty_gap < 0) * normalized_weight) / sum(normalized_weight) * 100
-  ) %>%
-  ungroup()
+# Calculate the proportion below 0 for each eligibility_status - replace with datatable code
+# facet_annotations <- Rep_rates_df_subset %>%
+#   group_by(eligibility_status) %>%
+#   summarize(
+#     proportion_below_zero = sum((poverty_gap < 0) * normalized_weight) / sum(normalized_weight) * 100
+#   ) %>%
+#   ungroup()
 
+setDT(Rep_rates_df_subset)
+
+facet_annotations <- Rep_rates_df_subset[, .(
+  proportion_below_zero = sum((poverty_gap < 0) * normalized_weight) / sum(normalized_weight) * 100
+), by = .(eligibility_status)]
 
 Rep_rates_df_subset$amount_of_liquid <- ifelse(Rep_rates_df_subset$weeks_of_liquid_assets > 5, 1, 0)
 
@@ -1232,13 +1245,15 @@ save_e61(paste0("Poverty_gap2_hour_min",hour_limit,".svg"), poverty_gap_plot2)
 
 
 
-# Calculate the overall proportion below 0
-overall_proportion <- Rep_rates_df_subset %>%
-  summarize(
-    proportion_below_zero = sum((poverty_gap < 0) * normalized_weight) / sum(normalized_weight) * 100
-  ) %>%
-  pull(proportion_below_zero)
+# Calculate the overall proportion below 0 - replace tidyverse with datatable code
+# overall_proportion <- Rep_rates_df_subset %>%
+#   summarize(
+#     proportion_below_zero = sum((poverty_gap < 0) * normalized_weight) / sum(normalized_weight) * 100
+#   ) %>%
+#   pull(proportion_below_zero)
 
+
+overall_proportion <- Rep_rates_df_subset[, sum((poverty_gap < 0) * normalized_weight) / sum(normalized_weight) * 100]
 
 Rep_rates_df_subset <- Rep_rates_df_subset %>%
   mutate(normalized_weight = SIHPSWT / sum(SIHPSWT)) %>%
@@ -1298,12 +1313,20 @@ low_liquid_assets <- low_liquid_assets %>%
   mutate(normalized_weight = SIHPSWT / sum(SIHPSWT)) %>%
   ungroup()
 
-facet_annotations <- low_liquid_assets %>%
-  group_by(eligibility_status) %>%
-  summarize(
-    proportion_below_zero = sum((poverty_gap < 0) * normalized_weight) / sum(normalized_weight) * 100
-  ) %>%
-  ungroup()
+setDT(low_liquid_assets)
+
+# Replace with data table code
+# facet_annotations <- low_liquid_assets %>%
+#   group_by(eligibility_status) %>%
+#   summarize(
+#     proportion_below_zero = sum((poverty_gap < 0) * normalized_weight) / sum(normalized_weight) * 100
+#   ) %>%
+#   ungroup()
+
+facet_annotations <- low_liquid_assets[, .(
+  proportion_below_zero = sum((poverty_gap < 0) * normalized_weight) / sum(normalized_weight) * 100
+), by = .(eligibility_status)]
+
 
 # Create the single-panel chart
 poverty_gap_plot_single2 <- ggplot(low_liquid_assets, aes(x = poverty_gap, weight = normalized_weight * 100,

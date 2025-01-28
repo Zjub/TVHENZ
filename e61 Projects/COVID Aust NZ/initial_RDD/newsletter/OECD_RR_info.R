@@ -80,11 +80,15 @@ RR_xh_dt[,REF_AREA := factor(REF_AREA,levels = c("NZL","AUS"))]
 
 ggplot(RR_xh_dt[TIME_PERIOD >= 2014],aes(x=TIME_PERIOD,y=RR,colour=REF_AREA)) + geom_line() +
   scale_y_continuous_e61(limits = c(18,34,by=3),y_top = TRUE) +
-  labs_e61(title = "Income Replacement Rate","Relative to Average Wage, Single ex Housing Assistance",y="%",footnotes = c("NZ 2020 figure imputed.","Excludes Coronavirus Supplement")) +
+  labs_e61(title = "Income Replacement Rate","Relative to Average Wage, Single ex Housing Assistance",y="%",footnotes = c("NZ 2020 figure imputed.","Excludes Coronavirus Supplement"),sources = c("e61","OECD")) +
   scale_x_continuous(breaks = seq(min(RR_dt$TIME_PERIOD), max(RR_dt$TIME_PERIOD), by = 2)) +
   plab(c("New Zealand","Australia"),y=c(31,28),x=c(2017,2017))
 
+save_e61("RR_NZ_AUS_xhousing_impute2020.svg")
+
 save_e61("RR_NZ_AUS_xhousing_impute2020.png",res=2,pad_width = 1)
+
+
 
 ### Do the absolute comparisons with actual PPPs and benefit rates over time - the implied graph looks great, but given the income data isn't consistent this isn't going to be accurate, meaning we have the wrong denominator from this data. We can pull the information from Australia easily, the NZ data will need to be manually entered.
 
@@ -133,5 +137,7 @@ ggplot(xh_xCS_ben[Apr_year>= 2019],aes(x=as.numeric(Apr_year),y=value,fill=varia
   scale_y_continuous_e61(labels = scales::dollar_format(),limits = c(0,800,200)) +
   plab(c("New Zealand","Australia"),x=c(2021,2021),y=c(550,700)) +
   scale_x_continuous(breaks = seq(min(xh_ben$Apr_year), max(xh_ben$Apr_year), by = 1))
+
+save_e61("rel_benefits_xhousing_xCS.svg")
 
 save_e61("rel_benefits_xhousing_xCS.png",pad_width = 1,res=2)
