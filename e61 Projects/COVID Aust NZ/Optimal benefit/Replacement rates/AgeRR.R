@@ -35,3 +35,11 @@ ggplot(melt(MW_RR,id.vars = "year"),aes(x=year,y=value,colour=variable)) + geom_
   scale_x_continuous(breaks = seq(min(MW_RR$year), max(MW_RR$year), by = 3))
 
 save_e61("MW_RR_time.png",res=2,pad_width = 1)
+
+ggplot(melt(MW_RR,id.vars = "year"),aes(x=year,y=value,colour=variable)) + geom_line() +
+  scale_y_continuous_e61(limits = c(0,1,0.2),labels=scales::percent_format()) +
+  labs_e61(subtitle = "Full-time (38hrs) for the full year",y="",x="",sources = c("ABS","e61")) +
+  plab(c("Minimum Wage","Average Wage"),x=c(2008,2008),y=c(0.76,0.68)) +
+  scale_x_continuous(breaks = seq(min(MW_RR$year), max(MW_RR$year), by = 3))
+
+save_e61("MW_RR_time.pdf")
