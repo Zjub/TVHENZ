@@ -73,8 +73,8 @@ library(data.table)
 
 # START HERE IF YOU HAVE DONE THE ABOVE
 
-#Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 2.csv") # Work version
-Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 2.csv") # Home version
+Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 2.csv") # Work version
+#Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 2.csv") # Home version
 
 setDT(Rep_rates_df)
 
@@ -1128,7 +1128,11 @@ Rep_rates_df_subset$hhincome <- Rep_rates_df_subset$hours0_net_income + Rep_rate
 
 Rep_rates_df_subset$hhincome <- ifelse(Rep_rates_df_subset$hhincome < 0, 0, Rep_rates_df_subset$hhincome)
 
-Rep_rates_df_subset$poverty_gap <- Rep_rates_df_subset$hhincome - Rep_rates_df_subset$Including_Housing
+# This is the poverty rate when using the "including housing" line for everyone.
+#Rep_rates_df_subset$poverty_gap <- Rep_rates_df_subset$hhincome - Rep_rates_df_subset$Including_Housing
+
+# Poverty gap with variable line
+Rep_rates_df_subset[,poverty_gap := fifelse(Home_owner == 1,hhincome - Other_than_Housing,hhincome - Including_Housing)]
 
 
 Rep_rates_df_subset <- Rep_rates_df_subset %>%
