@@ -73,12 +73,12 @@ library(data.table)
 
 # START HERE IF YOU HAVE DONE THE ABOVE
 
-Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 2.csv") # Work version
-#Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 2.csv") # Home version
+#Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 2.csv") # Work version
+Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
 
 setDT(Rep_rates_df)
 
-hour_limit <- 30
+hour_limit <- 5
 
 ############################################################################################
 
@@ -1084,12 +1084,28 @@ poverty_lines <- data.frame(
     "Single parent plus 3", "Single parent plus 4"
   ),
   Including_Housing = c(
-    818.92, 984.38, 1149.85, 1315.31, 1480.77,
-    612.18, 785.92, 951.27, 1116.73, 1282.19
+    819.31, 984.85, 1150.39, 1315.93, 1481.47,
+    612.47, 786.29, 951.72, 1117.26, 1282.80
   ),
   Other_than_Housing = c(
-    598.96, 744.53, 890.10, 1035.67, 1179.63,
-    411.99, 565.84, 711.41, 856.98, 1002.55
+    599.24, 744.88, 890.52, 1036.16, 1180.18,
+    412.18, 566.11, 711.75, 857.38, 1003.02
+  )
+)
+## Adjust below to non-work line from MI: https://melbourneinstitute.unimelb.edu.au/__data/assets/pdf_file/0006/4961229/Poverty-Lines-Australia-March-Quarter-2024.pdf
+poverty_lines_nonwork <- data.frame(
+  Income_Unit = c(
+    "Couple", "Couple plus 1", "Couple plus 2", "Couple plus 3", "Couple plus 4",
+    "Single person", "Single parent plus 1", "Single parent plus 2",
+    "Single parent plus 3", "Single parent plus 4"
+  ),
+  Including_Housing_nonwork = c(
+    703.46, 869.00, 1034.54, 1200.09, 1365.63,
+    496.62, 670.33, 835.87, 1001.41, 1166.95
+  ),
+  Other_than_Housing_nonwork = c(
+    483.28, 629.03, 774.67, 920.31, 1064.34,
+    296.34, 450.26, 595.90, 741.54, 887.18
   )
 )
 
@@ -1119,6 +1135,10 @@ Rep_rates_df_subset <- Rep_rates_df_subset %>%
 Rep_rates_df_subset <- Rep_rates_df_subset %>%
   left_join(poverty_lines, by = "Income_Unit")
 
+Rep_rates_df_subset <- Rep_rates_df_subset %>%
+  left_join(poverty_lines_nonwork, by = "Income_Unit")
+
+
 Rep_rates_df_subset$hours0_wk_partner_earnings <- ifelse(is.na(Rep_rates_df_subset$hours0_wk_partner_earnings),
                                                          Rep_rates_df_subset$hours0_gross_income_partner - Rep_rates_df_subset$hours0_income_tax_partner  + 
                                                            Rep_rates_df_subset$hours0_RA_partner + Rep_rates_df_subset$hours0_ES_partner,
@@ -1128,11 +1148,15 @@ Rep_rates_df_subset$hhincome <- Rep_rates_df_subset$hours0_net_income + Rep_rate
 
 Rep_rates_df_subset$hhincome <- ifelse(Rep_rates_df_subset$hhincome < 0, 0, Rep_rates_df_subset$hhincome)
 
+### Poverty definition
 # This is the poverty rate when using the "including housing" line for everyone.
 #Rep_rates_df_subset$poverty_gap <- Rep_rates_df_subset$hhincome - Rep_rates_df_subset$Including_Housing
 
-# Poverty gap with variable line
-Rep_rates_df_subset[,poverty_gap := fifelse(Home_owner == 1,hhincome - Other_than_Housing,hhincome - Including_Housing)]
+# Poverty gap with variable line - attribute half of the mortgage to principle repayments, but also don't attribute more of a cost than the same imputed value
+Rep_rates_df_subset[,poverty_gap := fifelse(Home_owner == 1,hhincome - min(Weekly_Mortgage_Repayments*0.5, (Including_Housing - Other_than_Housing)) - Other_than_Housing,hhincome - Including_Housing)]
+
+# If we assume that the primary recipient is "not in workforce" - MI assumes they are actively searching for work so use higher line.
+# Rep_rates_df_subset[,poverty_gap := fifelse(current_work_income_partner > 1,hhincome - Including_Housing,hhincome - Including_Housing_nonwork)]
 
 
 Rep_rates_df_subset <- Rep_rates_df_subset %>%
@@ -1558,7 +1582,7 @@ Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
                    "Failed \nAsset test", 
                    "JSP Singles + \nRA recipients \nmove out \nof poverty", 
                    "JSP Singles \nmove out \nof poverty"), 
-                   c(20,20,20, 120, 222), c(5, 17, 27, 29, 29),
+                   c(20,20,20, 120, 222), c(5, 13, 21, 24, 24),
                    c("white", "white", "white", "black", "black"), size = 3) + geom_vline(xintercept = 114, 
                                                                                          linetype = "dashed") + 
     geom_vline(xintercept = 219, linetype = "dashed")
@@ -1629,7 +1653,7 @@ Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
       fill = "Group"
     )  + scale_y_continuous_e61(limits = c(0,25,5))
 
-
+print(povertyhyp)
 
   save_e61(paste0("povertyhyp_hour_min",hour_limit,".pdf"), povertyhyp, plot2, 
            footnotes = "`On Benefit' Includes both those on JSP and the Parenting Payment, including those also on FTB.
@@ -1639,3 +1663,91 @@ Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
     Note that only those eligible for the JSP or PP recieve the hypothetical increase here, so the `Failed Assets Test`
       Category is unchanged over the period" )
 
+  
+  
+################ Create single and partnered versions
+
+  # Function to compute results based on partnered status
+  compute_results <- function(subset_data) {
+    subset_data[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
+    
+    results <- data.table(
+      i = integer(),
+      group = character(),
+      weighted_sum = numeric()
+    )
+    
+    for (i in 0:265) {
+      adjusted_data <- subset_data %>%
+        mutate(adjusted_poverty_gap = if_else(hours0_taxable_benefit > 0, poverty_gap + i, poverty_gap))
+      
+      group_results <- adjusted_data %>%
+        mutate(group = case_when(
+          Asset_test_flag == 1 ~ "Asset Test Failed",
+          Asset_test_flag == 0 & weeks_of_liquid_assets > 5 ~ "Asset Test Passed & >5 Weeks Liquid Assets",
+          Asset_test_flag == 0 & weeks_of_liquid_assets < 5 & eligibility_status %in% c("Benefit Eligible", "Benefit + FTB Eligible") ~ "Asset Test Passed & <5 Weeks Liquid Assets & Eligible",
+          TRUE ~ "Other"
+        )) %>%
+        group_by(group) %>%
+        summarise(
+          weighted_sum = sum((adjusted_poverty_gap <= 0) * normalized_weight, na.rm = TRUE),
+          .groups = "drop"
+        ) %>%
+        mutate(i = i)
+      
+      results <- bind_rows(results, group_results)
+    }
+    
+    results[, group := factor(group, levels = c(
+      "Asset Test Failed",
+      "Other",
+      "Asset Test Passed & >5 Weeks Liquid Assets",
+      "Asset Test Passed & <5 Weeks Liquid Assets & Eligible"
+    ))]
+    
+    return(results)
+  }
+  
+  # Compute results for partnered and single individuals
+results_couple <- compute_results(Rep_rates_df_subset[partnered == 1])
+results_single <- compute_results(Rep_rates_df_subset[partnered == 0])
+
+# Create the stacked line chart
+povertyhyp_couple <- ggplot(results_couple, aes(x = i, y = weighted_sum * 100, fill = group)) +
+  geom_area(alpha = 0.8, color = "black") +
+  labs_e61(
+    subtitle = paste("A. Post Job Loss Poverty Head Count"),
+    x = "Increase in Weekly Benefits ($)",
+    y = "%",
+    fill = "Group"
+  ) + plot_label(c("On Benefit* with \nfew liquid assets", 
+                   " On Benefit* \nwith >5 weeks \nliquid assets", 
+                   "Failed \nAsset test", 
+                   "JSP Singles + \nRA recipients \nmove out \nof poverty", 
+                   "JSP Singles \nmove out \nof poverty"), 
+                 c(20,20,20, 120, 222), c(1, 2, 6, 9, 9),
+                 c("white", "white", "white", "black", "black"), size = 3) + geom_vline(xintercept = 114, 
+                                                                                        linetype = "dashed") + 
+  geom_vline(xintercept = 219, linetype = "dashed") + 
+  scale_y_continuous_e61(limits = c(0,90,20))
+
+povertyhyp_single <- ggplot(results_single, aes(x = i, y = weighted_sum * 100, fill = group)) +
+  geom_area(alpha = 0.8, color = "black") +
+  labs_e61(
+    subtitle = paste("A. Post Job Loss Poverty Head Count"),
+    x = "Increase in Weekly Benefits ($)",
+    y = "%",
+    fill = "Group"
+  ) + plot_label(c("On Benefit* with \nfew liquid assets", 
+                   " On Benefit* \nwith >5 weeks \nliquid assets", 
+                   "Failed \nAsset test", 
+                   "JSP Singles + \nRA recipients \nmove out \nof poverty", 
+                   "JSP Singles \nmove out \nof poverty"), 
+                 c(20,20,20, 120, 222), c(15, 45, 62, 70, 70),
+                 c("white", "white", "white", "black", "black"), size = 3) + geom_vline(xintercept = 114, 
+                                                                                        linetype = "dashed") + 
+  geom_vline(xintercept = 219, linetype = "dashed") +
+  scale_y_continuous_e61(limits = c(0,90,20))
+
+povertyhyp_single
+povertyhyp_couple

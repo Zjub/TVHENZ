@@ -1,0 +1,30 @@
+INFO [2025-01-30 16:47:22] $x
+INFO [2025-01-30 16:47:22] list(`Asset Test` = which(Rep_rates_df_subset$Asset_test_flag == 
+INFO [2025-01-30 16:47:22]     1), `Partner Test` = which(Rep_rates_df_subset$partner_test_flag == 
+INFO [2025-01-30 16:47:22]     1), `Income Test (from non-work income)` = which(Rep_rates_df_subset$nonworkincome_income_test == 
+INFO [2025-01-30 16:47:22]     1))
+INFO [2025-01-30 16:47:22] 
+INFO [2025-01-30 16:47:22] $filename
+INFO [2025-01-30 16:47:22] NULL
+INFO [2025-01-30 16:47:22] 
+INFO [2025-01-30 16:47:22] $fill
+INFO [2025-01-30 16:47:22] c("#ED7F00", "#008080", "#6A5ACD")
+INFO [2025-01-30 16:47:22] 
+INFO [2025-01-30 16:47:22] $alpha
+INFO [2025-01-30 16:47:22] [1] 0.5
+INFO [2025-01-30 16:47:22] 
+INFO [2025-01-30 16:47:22] $cat.col
+INFO [2025-01-30 16:47:22] c("#ED7F00", "#008080", "#6A5ACD")
+INFO [2025-01-30 16:47:22] 
+INFO [2025-01-30 16:47:22] $cex
+INFO [2025-01-30 16:47:22] [1] 0
+INFO [2025-01-30 16:47:22] 
+INFO [2025-01-30 16:47:22] $cat.cex
+INFO [2025-01-30 16:47:22] [1] 1.2
+INFO [2025-01-30 16:47:22] 
+INFO [2025-01-30 16:47:22] $lwd
+INFO [2025-01-30 16:47:22] [1] 2
+INFO [2025-01-30 16:47:22] 
+INFO [2025-01-30 16:47:22] $main
+INFO [2025-01-30 16:47:22] [1] "Job Seeker and Parenting Payment Eligibility Tests"
+INFO [2025-01-30 16:47:22] 
