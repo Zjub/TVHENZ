@@ -73,8 +73,8 @@ library(data.table)
 
 # START HERE IF YOU HAVE DONE THE ABOVE
 
-#Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 2.csv") # Work version
-Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
+Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
+#Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
 
 setDT(Rep_rates_df)
 
@@ -314,7 +314,7 @@ mean_net_RR_3 <- sum(Rep_rates_df_subset_filtered$net_RR * Rep_rates_df_subset_f
   sum(Rep_rates_df_subset_filtered$SIHPSWT)
 
 mean_net_RR_3
-
+max(Rep_rates_df_subset_filtered$net_RR)
 
 
 # Calculate the weighted median
@@ -908,7 +908,7 @@ print(summary_stats_full_time)
 ##########################################################################################
 
 # Subset data
-Rep_rates_df_subset <- subset(Rep_rates_df, hours > 5) # This should be unnecessary - check code above.
+#Rep_rates_df_subset <- subset(Rep_rates_df, hours > 5) # This should be unnecessary - check code above.
 Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
 
 # Create the new factor variable
@@ -1073,9 +1073,16 @@ grid.text(label = paste0("Eligible: ", round(proportions[["Outside Venn"]], 2), 
 ## POVERTY ANALYSIS ########################################################################
 ############################################################################################
 #############################################################################################
-##############################################################################################3
+##############################################################################################
 
-Rep_rates_df_subset <- subset(Rep_rates_df, Rep_rates_df$hours > 5)
+### Add in the "household" weights - were we halve the weight for partnered individuals, as they are recorded twice in the data.
+## As we don't have partner hours this is a bit messy. Just have to use current_work_income_partner and set greater that 5*hour_limit
+
+Rep_rates_df_subset[,hhld_wgt := fifelse(partnered == 1 & current_work_income_partner > 20*hour_limit,SIHPSWT/2,SIHPSWT)]
+
+Rep_rates_df_subset[,.(hhld_wgt,SIHPSWT)]
+
+#Rep_rates_df_subset <- subset(Rep_rates_df, Rep_rates_df$hours > 5)
 # Create the dataframe
 poverty_lines <- data.frame(
   Income_Unit = c(
@@ -1148,15 +1155,22 @@ Rep_rates_df_subset$hhincome <- Rep_rates_df_subset$hours0_net_income + Rep_rate
 
 Rep_rates_df_subset$hhincome <- ifelse(Rep_rates_df_subset$hhincome < 0, 0, Rep_rates_df_subset$hhincome)
 
-### Poverty definition
+### Poverty definition -----  XXXXXXXXXXXXX
 # This is the poverty rate when using the "including housing" line for everyone.
 #Rep_rates_df_subset$poverty_gap <- Rep_rates_df_subset$hhincome - Rep_rates_df_subset$Including_Housing
 
 # Poverty gap with variable line - attribute half of the mortgage to principle repayments, but also don't attribute more of a cost than the same imputed value
 Rep_rates_df_subset[,poverty_gap := fifelse(Home_owner == 1,hhincome - min(Weekly_Mortgage_Repayments*0.5, (Including_Housing - Other_than_Housing)) - Other_than_Housing,hhincome - Including_Housing)]
 
+# Excluding mortgage line
+#Rep_rates_df_subset[,poverty_gap := fifelse(Home_owner == 1,hhincome - Other_than_Housing,hhincome - Including_Housing)]
+
 # If we assume that the primary recipient is "not in workforce" - MI assumes they are actively searching for work so use higher line.
-# Rep_rates_df_subset[,poverty_gap := fifelse(current_work_income_partner > 1,hhincome - Including_Housing,hhincome - Including_Housing_nonwork)]
+#Rep_rates_df_subset[,poverty_gap := fifelse(current_work_income_partner > 1,hhincome - Including_Housing,hhincome - Including_Housing_nonwork)]
+
+
+##############################
+
 
 
 Rep_rates_df_subset <- Rep_rates_df_subset %>%
@@ -1171,13 +1185,13 @@ Rep_rates_df_subset <- Rep_rates_df_subset %>%
 # Normalize weights within each category of weeks_of_liquid_assets
 Rep_rates_df_subset <- Rep_rates_df_subset %>%
   group_by(liquid_assets_category) %>%
-  mutate(normalized_weight = SIHPSWT / sum(SIHPSWT)) %>%
+  mutate(normalized_weight_hhld_la = hhld_wgt / sum(hhld_wgt)) %>%
   ungroup()
 
 subset <- subset(Rep_rates_df_subset, !is.na(Rep_rates_df_subset$poverty_gap))
 
 # Plot the distribution
-poverty_gap_plot <- ggplot(subset, aes(x = poverty_gap, weight = normalized_weight, col = as.factor(liquid_assets_category))) +
+poverty_gap_plot <- ggplot(subset, aes(x = poverty_gap, weight = normalized_weight_hhld_la, col = as.factor(liquid_assets_category))) +
   geom_density(alpha = 0.1) +  
   labs(
     title = "Distribution of Poverty Gap by Weeks of Liquid Assets",
@@ -1186,7 +1200,7 @@ poverty_gap_plot <- ggplot(subset, aes(x = poverty_gap, weight = normalized_weig
   ) + xlim(-1500,1500)
 
 
-poverty_gap_plot <- ggplot(Rep_rates_df_subset, aes(x = poverty_gap, weight = normalized_weight * 100,
+poverty_gap_plot <- ggplot(Rep_rates_df_subset, aes(x = poverty_gap, weight = normalized_weight_hhld_la * 100,
                                                     fill = as.factor(liquid_assets_category))) +
   geom_histogram(binwidth = 100, alpha = 0.8, color = "black") +  # Adjust binwidth as needed
   facet_wrap(~as.factor(liquid_assets_category), scales = "free_y", ncol = 3) +  # Facet by weeks_of_liquid_assets
@@ -1220,7 +1234,7 @@ Rep_rates_df_subset[, eligibility_status := factor(eligibility_status,
 
 Rep_rates_df_subset <- Rep_rates_df_subset %>%
   group_by(eligibility_status) %>%
-  mutate(normalized_weight = SIHPSWT / sum(SIHPSWT)) %>%
+  mutate(normalized_weight_hhld_es = hhld_wgt / sum(hhld_wgt)) %>%
   ungroup()
 
 
@@ -1235,13 +1249,13 @@ Rep_rates_df_subset <- Rep_rates_df_subset %>%
 setDT(Rep_rates_df_subset)
 
 facet_annotations <- Rep_rates_df_subset[, .(
-  proportion_below_zero = sum((poverty_gap < 0) * normalized_weight) / sum(normalized_weight) * 100
+  proportion_below_zero = sum((poverty_gap < 0) * normalized_weight_hhld_es) / sum(normalized_weight_hhld_es) * 100
 ), by = .(eligibility_status)]
 
 Rep_rates_df_subset$amount_of_liquid <- ifelse(Rep_rates_df_subset$weeks_of_liquid_assets > 5, 1, 0)
 
 # Add annotations to the plot
-poverty_gap_plot2 <- ggplot(Rep_rates_df_subset, aes(x = poverty_gap, weight = normalized_weight * 100,
+poverty_gap_plot2 <- ggplot(Rep_rates_df_subset, aes(x = poverty_gap, weight = normalized_weight_hhld_es * 100,
                                                 fill = as.factor(amount_of_liquid))) +
   geom_histogram(binwidth = 100, alpha = 0.8, color = "black") +  # Adjust binwidth as needed
   facet_wrap(~as.factor(eligibility_status), scales = "free_y", ncol = 2) +  # Facet by weeks_of_liquid_assets
@@ -1281,26 +1295,21 @@ save_e61(paste0("Poverty_gap2_hour_min",hour_limit,".svg"), poverty_gap_plot2)
 #   pull(proportion_below_zero)
 
 
-overall_proportion <- Rep_rates_df_subset[, sum((poverty_gap < 0) * normalized_weight) / sum(normalized_weight) * 100]
+overall_proportion <- Rep_rates_df_subset[, sum((poverty_gap < 0) * normalized_weight_hhld_es) / sum(normalized_weight_hhld_es) * 100]
 
 Rep_rates_df_subset <- Rep_rates_df_subset %>%
-  mutate(normalized_weight = SIHPSWT / sum(SIHPSWT)) %>%
+  mutate(normalized_weight_hhld = hhld_wgt / sum(hhld_wgt)) %>%
   ungroup()
-
-library(data.table)
-
-# Convert to data.table
-Rep_rates_df_subset <- as.data.table(Rep_rates_df_subset)
 
 # Calculate the value
 total_normalized_weight <- Rep_rates_df_subset[amount_of_liquid == 0 & poverty_gap < 0, 
-                                          sum(normalized_weight * 100, na.rm = TRUE)]
+                                          sum(normalized_weight_hhld * 100, na.rm = TRUE)]
 total_normalized_weight
 
 
 
 # Create the single-panel chart
-poverty_gap_plot_single <- ggplot(Rep_rates_df_subset, aes(x = poverty_gap, weight = normalized_weight * 100,
+poverty_gap_plot_single <- ggplot(Rep_rates_df_subset, aes(x = poverty_gap, weight = normalized_weight_hhld * 100,
                                                            fill = as.factor(amount_of_liquid))) +
   geom_histogram(binwidth = 100, alpha = 0.8, color = "black", position = "stack") +  # Stacked histogram +  # Single color for all bars
   labs(
@@ -1338,7 +1347,7 @@ save_e61(paste0("Poverty_gap_overall_hour_min",hour_limit,".pdf"), poverty_gap_p
 low_liquid_assets <- subset(Rep_rates_df_subset, Rep_rates_df_subset$weeks_of_liquid_assets < 5)
 
 low_liquid_assets <- low_liquid_assets %>%
-  mutate(normalized_weight = SIHPSWT / sum(SIHPSWT)) %>%
+  mutate(normalized_weight_hhld = hhld_wgt / sum(hhld_wgt)) %>%
   ungroup()
 
 setDT(low_liquid_assets)
@@ -1352,12 +1361,12 @@ setDT(low_liquid_assets)
 #   ungroup()
 
 facet_annotations <- low_liquid_assets[, .(
-  proportion_below_zero = sum((poverty_gap < 0) * normalized_weight) / sum(normalized_weight) * 100
+  proportion_below_zero = sum((poverty_gap < 0) * normalized_weight_hhld) / sum(normalized_weight_hhld) * 100
 ), by = .(eligibility_status)]
 
 
 # Create the single-panel chart
-poverty_gap_plot_single2 <- ggplot(low_liquid_assets, aes(x = poverty_gap, weight = normalized_weight * 100,
+poverty_gap_plot_single2 <- ggplot(low_liquid_assets, aes(x = poverty_gap, weight = normalized_weight_hhld * 100,
                                                           fill = as.factor(eligibility_status))) +
   geom_histogram(binwidth = 100, alpha = 0.8, color = "black", position = "stack") +  # Stacked histogram +  # Single color for all bars
   labs(
@@ -1405,12 +1414,9 @@ save_e61(paste0("Poverty_gap_overall2_hour_min",hour_limit,".pdf"), poverty_gap_
 #############################################################################################
 setDT(Rep_rates_df_subset)
 # Normalize weights
-Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
+# Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
 ##############################################################################################
 ################################################################################################
-
-# Convert to data.table
-Rep_rates_df_subset <- as.data.table(Rep_rates_df_subset)
 
 # Create a new categorical variable for poverty with three categories
 Rep_rates_df_subset[, poverty := fcase(
@@ -1420,15 +1426,15 @@ Rep_rates_df_subset[, poverty := fcase(
 )]
 
 # Calculate normalized_weight for everyone
-Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
+# Rep_rates_df_subset[, normalized_weight_hhld := hhld_wgt / sum(hhld_wgt)]
 
 # Calculate the weighted median for each poverty category
 weighted_medians <- Rep_rates_df_subset[, .(
-  weighted_median = quantile(net_RR, probs = 0.5, type = 7, na.rm = TRUE, weights = normalized_weight)
+  weighted_median = quantile(net_RR, probs = 0.5, type = 7, na.rm = TRUE, weights = normalized_weight_hhld)
 ), by = poverty]
 
 # Create the histogram
-histogram_plot <- ggplot(Rep_rates_df_subset, aes(x = net_RR * 100, weight = normalized_weight * 100, fill = poverty)) +
+histogram_plot <- ggplot(Rep_rates_df_subset, aes(x = net_RR * 100, weight = normalized_weight_hhld * 100, fill = poverty)) +
   geom_histogram(binwidth = 5, position = "stack", color = "black", alpha = 0.8) +
   geom_vline(data = weighted_medians, aes(xintercept = weighted_median * 100, color = poverty),
              linetype = "dashed", size = 1) +
@@ -1466,12 +1472,10 @@ histogram_plot <- ggplot(Rep_rates_df_subset, aes(x = net_RR * 100, weight = nor
 
 #########################################################################################
 
-# Convert to data.table
-Rep_rates_df_subset <- as.data.table(Rep_rates_df_subset)
 
-Rep_rates_df_subset <- Rep_rates_df_subset %>%
-  mutate(normalized_weight = SIHPSWT / sum(SIHPSWT)) %>%
-  ungroup() # Why do we keep reconstructing the same weights?
+# Rep_rates_df_subset <- Rep_rates_df_subset %>%
+#   mutate(normalized_weight = SIHPSWT / sum(SIHPSWT)) %>%
+#   ungroup() # Why do we keep reconstructing the same weights - if we are doing it for different groups we should create new variables to minimise accidental errors.
 
 # Calculate the proportions
 proportions <- data.table(
@@ -1482,13 +1486,13 @@ proportions <- data.table(
     "& Main \npayment is \nJobSeeker"
   ),
   proportion = c(
-    Rep_rates_df_subset[poverty_gap < 0, sum(normalized_weight)] / sum(Rep_rates_df_subset$normalized_weight) * 100,
+    Rep_rates_df_subset[poverty_gap < 0, sum(normalized_weight_hhld)] / sum(Rep_rates_df_subset$normalized_weight_hhld) * 100,
     Rep_rates_df_subset[poverty_gap < 0 & Asset_test_flag == 0,
-                        sum(normalized_weight)] / sum(Rep_rates_df_subset$normalized_weight) * 100,
+                        sum(normalized_weight_hhld)] / sum(Rep_rates_df_subset$normalized_weight_hhld) * 100,
     Rep_rates_df_subset[poverty_gap < 0 & weeks_of_liquid_assets < 5 & Asset_test_flag == 0,
-                        sum(normalized_weight) ] / sum(Rep_rates_df_subset$normalized_weight) * 100,
+                        sum(normalized_weight_hhld) ] / sum(Rep_rates_df_subset$normalized_weight_hhld) * 100,
     Rep_rates_df_subset[poverty_gap < 0 & weeks_of_liquid_assets < 5 & eligibility_status == "Benefit Eligible" & Asset_test_flag == 0,
-                        sum(normalized_weight)] / sum(Rep_rates_df_subset$normalized_weight) * 100
+                        sum(normalized_weight_hhld)] / sum(Rep_rates_df_subset$normalized_weight_hhld) * 100
   )
 )
 
@@ -1508,7 +1512,7 @@ bar_chart <- ggplot(proportions, aes(x = category, y = proportion, fill = catego
     x = "",
     y = "%",
     fill = "Category"
-  ) + scale_y_continuous_e61(limits = c(0, 40, 10))
+  ) + scale_y_continuous_e61(limits = c(0, 45, 10),y_top = FALSE)
 
 # Print the plot
 print(bar_chart)
@@ -1524,8 +1528,8 @@ save_e61(paste0("Poverty2Panel_hour_min",hour_limit,".pdf"), bar_chart,  histogr
 ###############################################################
 
 
-  # Normalize weights
-Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
+#   # Normalize weights
+# Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
   
   # Initialize a data frame to store results
   results <- data.table(
@@ -1551,7 +1555,7 @@ Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
       )) %>%
       group_by(group) %>%
       summarise(
-        weighted_sum = sum((adjusted_poverty_gap <= 0) * normalized_weight, na.rm = TRUE),
+        weighted_sum = sum((adjusted_poverty_gap <= 0) * normalized_weight_hhld, na.rm = TRUE),
         .groups = "drop"
       ) %>%
       mutate(i = i)
@@ -1590,8 +1594,8 @@ Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
 ##################################################################################################################
 
 
-  # Normalize weights
-Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
+#   # Normalize weights
+# Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
   
   # Define the poverty line (set a valid value)
   poverty_line <- abs(min(Rep_rates_df_subset$poverty_gap, na.rm = TRUE))  # Use the absolute minimum poverty gap
@@ -1624,7 +1628,7 @@ Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
       ) %>%
       group_by(group) %>%
       summarise(
-        pgi = sum(gap_normalized * normalized_weight, na.rm = TRUE) / sum(normalized_weight, na.rm = TRUE),
+        pgi = sum(gap_normalized * normalized_weight_hhld, na.rm = TRUE) / sum(normalized_weight_hhld, na.rm = TRUE),
         .groups = "drop"
       ) %>%
       mutate(i = i)
@@ -1669,7 +1673,7 @@ print(povertyhyp)
 
   # Function to compute results based on partnered status
   compute_results <- function(subset_data) {
-    subset_data[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
+    subset_data[, normalized_weight_hhld := hhld_wgt / sum(hhld_wgt)]
     
     results <- data.table(
       i = integer(),
@@ -1690,7 +1694,7 @@ print(povertyhyp)
         )) %>%
         group_by(group) %>%
         summarise(
-          weighted_sum = sum((adjusted_poverty_gap <= 0) * normalized_weight, na.rm = TRUE),
+          weighted_sum = sum((adjusted_poverty_gap <= 0) * normalized_weight_hhld, na.rm = TRUE),
           .groups = "drop"
         ) %>%
         mutate(i = i)
@@ -1711,43 +1715,141 @@ print(povertyhyp)
   # Compute results for partnered and single individuals
 results_couple <- compute_results(Rep_rates_df_subset[partnered == 1])
 results_single <- compute_results(Rep_rates_df_subset[partnered == 0])
+results_single_dep <- compute_results(Rep_rates_df_subset[partnered == 0 & Numb_dep > 0])
+results_single_nodep <- compute_results(Rep_rates_df_subset[partnered == 0 & Numb_dep == 0])
+
+results_single_nodep_home <- compute_results(Rep_rates_df_subset[partnered == 0 & Numb_dep == 0 & Home_owner == 1])
+results_single_nodep_nohome <- compute_results(Rep_rates_df_subset[partnered == 0 & Numb_dep == 0 & Home_owner == 0])
+
+Rep_rates_df_subset[partnered == 0 & Numb_dep == 0][,.N,by=.(Home_owner)]
 
 # Create the stacked line chart
 povertyhyp_couple <- ggplot(results_couple, aes(x = i, y = weighted_sum * 100, fill = group)) +
   geom_area(alpha = 0.8, color = "black") +
   labs_e61(
-    subtitle = paste("A. Post Job Loss Poverty Head Count"),
+    subtitle = paste("B. Couple Post Job Loss Poverty Head Count"),
     x = "Increase in Weekly Benefits ($)",
     y = "%",
     fill = "Group"
-  ) + plot_label(c("On Benefit* with \nfew liquid assets", 
-                   " On Benefit* \nwith >5 weeks \nliquid assets", 
-                   "Failed \nAsset test", 
-                   "JSP Singles + \nRA recipients \nmove out \nof poverty", 
-                   "JSP Singles \nmove out \nof poverty"), 
-                 c(20,20,20, 120, 222), c(1, 2, 6, 9, 9),
-                 c("white", "white", "white", "black", "black"), size = 3) + geom_vline(xintercept = 114, 
-                                                                                        linetype = "dashed") + 
-  geom_vline(xintercept = 219, linetype = "dashed") + 
-  scale_y_continuous_e61(limits = c(0,90,20))
+  ) +
+  scale_y_continuous_e61(limits = c(0,100,20),sec_axis = FALSE)
 
 povertyhyp_single <- ggplot(results_single, aes(x = i, y = weighted_sum * 100, fill = group)) +
   geom_area(alpha = 0.8, color = "black") +
   labs_e61(
-    subtitle = paste("A. Post Job Loss Poverty Head Count"),
+    subtitle = paste("A. Single Post Job Loss Poverty Head Count"),
     x = "Increase in Weekly Benefits ($)",
     y = "%",
     fill = "Group"
   ) + plot_label(c("On Benefit* with \nfew liquid assets", 
                    " On Benefit* \nwith >5 weeks \nliquid assets", 
                    "Failed \nAsset test", 
-                   "JSP Singles + \nRA recipients \nmove out \nof poverty", 
-                   "JSP Singles \nmove out \nof poverty"), 
-                 c(20,20,20, 120, 222), c(15, 45, 62, 70, 70),
+                   "JSP + \nRA recipients \nmove out \nof poverty", 
+                   "JSP \nmove out \nof poverty"), 
+                 c(21,21,21, 120, 222), c(15, 41, 62, 75, 75),
                  c("white", "white", "white", "black", "black"), size = 3) + geom_vline(xintercept = 114, 
                                                                                         linetype = "dashed") + 
   geom_vline(xintercept = 219, linetype = "dashed") +
-  scale_y_continuous_e61(limits = c(0,90,20))
+  scale_y_continuous_e61(limits = c(0,100,20),sec_axis = FALSE)
+
+povertyhyp_single_dep <- ggplot(results_single_dep, aes(x = i, y = weighted_sum * 100, fill = group)) +
+  geom_area(alpha = 0.8, color = "black") +
+  labs_e61(
+    subtitle = paste("A. Single with Kids Post Job Loss Poverty Head Count"),
+    x = "Increase in Weekly Benefits ($)",
+    y = "%",
+    fill = "Group"
+  ) + plot_label(c("On Benefit* with \nfew liquid assets", 
+                   " On Benefit* \nwith >5 weeks \nliquid assets", 
+                   "Failed \nAsset test", 
+                   "JSP + \nRA recipients \nmove out \nof poverty", 
+                   "JSP \nmove out \nof poverty"), 
+                 c(21,21,21, 120, 222), c(15, 41, 62, 75, 75),
+                 c("white", "white", "white", "black", "black"), size = 3) + geom_vline(xintercept = 114, 
+                                                                                        linetype = "dashed") + 
+  geom_vline(xintercept = 219, linetype = "dashed") +
+  scale_y_continuous_e61(limits = c(0,100,20),sec_axis = FALSE)
+
+povertyhyp_single_nodep <- ggplot(results_single_nodep, aes(x = i, y = weighted_sum * 100, fill = group)) +
+  geom_area(alpha = 0.8, color = "black") +
+  labs_e61(
+    subtitle = paste("A. Single no Kids Post Job Loss Poverty Head Count"),
+    x = "Increase in Weekly Benefits ($)",
+    y = "%",
+    fill = "Group"
+  ) + plot_label(c("On Benefit* with \nfew liquid assets", 
+                   " On Benefit* \nwith >5 weeks \nliquid assets", 
+                   "Failed \nAsset test", 
+                   "JSP + \nRA recipients \nmove out \nof poverty", 
+                   "JSP \nmove out \nof poverty"), 
+                 c(21,21,21, 120, 222), c(15, 41, 62, 75, 75),
+                 c("white", "white", "white", "black", "black"), size = 3) + geom_vline(xintercept = 114, 
+                                                                                        linetype = "dashed") + 
+  geom_vline(xintercept = 219, linetype = "dashed") +
+  scale_y_continuous_e61(limits = c(0,100,20),sec_axis = FALSE)
+
+povertyhyp_single_nodep_home <- ggplot(results_single_nodep_home, aes(x = i, y = weighted_sum * 100, fill = group)) +
+  geom_area(alpha = 0.8, color = "black") +
+  labs_e61(
+    subtitle = paste("A. Single no Kids with home Post Job Loss Poverty Head Count"),
+    x = "Increase in Weekly Benefits ($)",
+    y = "%",
+    fill = "Group"
+  ) + plot_label(c("On Benefit* with \nfew liquid assets", 
+                   " On Benefit* \nwith >5 weeks \nliquid assets", 
+                   "Failed \nAsset test", 
+                   "JSP + \nRA recipients \nmove out \nof poverty", 
+                   "JSP \nmove out \nof poverty"), 
+                 c(21,21,21, 120, 222), c(15, 41, 62, 75, 75),
+                 c("white", "white", "white", "black", "black"), size = 3) + geom_vline(xintercept = 114, 
+                                                                                        linetype = "dashed") + 
+  geom_vline(xintercept = 219, linetype = "dashed") +
+  scale_y_continuous_e61(limits = c(0,100,20),sec_axis = FALSE)
+
+povertyhyp_single_nodep_nohome <- ggplot(results_single_nodep_nohome, aes(x = i, y = weighted_sum * 100, fill = group)) +
+  geom_area(alpha = 0.8, color = "black") +
+  labs_e61(
+    subtitle = paste("A. Single no Kids with nohome Post Job Loss Poverty Head Count"),
+    x = "Increase in Weekly Benefits ($)",
+    y = "%",
+    fill = "Group"
+  ) + plot_label(c("On Benefit* with \nfew liquid assets", 
+                   " On Benefit* \nwith >5 weeks \nliquid assets", 
+                   "Failed \nAsset test", 
+                   "JSP + \nRA recipients \nmove out \nof poverty", 
+                   "JSP \nmove out \nof poverty"), 
+                 c(21,21,21, 120, 222), c(15, 41, 62, 75, 75),
+                 c("white", "white", "white", "black", "black"), size = 3) + geom_vline(xintercept = 114, 
+                                                                                        linetype = "dashed") + 
+  geom_vline(xintercept = 219, linetype = "dashed") +
+  scale_y_continuous_e61(limits = c(0,100,20),sec_axis = FALSE)
+
 
 povertyhyp_single
 povertyhyp_couple
+povertyhyp_single_dep
+povertyhyp_single_nodep
+povertyhyp_single_nodep_home
+povertyhyp_single_nodep_nohome
+
+min(Rep_rates_df_subset$hours)
+
+sum(results_single_nodep[i==0]$weighted_sum)
+
+sum(results_single_nodep[i==0]$weighted_sum) - results_single_nodep[i==0 & group == "Asset Test Failed"]$weighted_sum
+
+save_e61(paste0("povertyfamtype_hour_nomort_min",hour_limit,".pdf"), povertyhyp_single, povertyhyp_couple, 
+         footnotes = "`On Benefit' Includes both those on JSP and the Parenting Payment, including those also on FTB.
+      Poverty defined by the Henderson Poverty Line, at a household level. Experiment is how many households
+    would be in poverty if one member of the household lost their job. Therefore, each partnered household where both members
+    are working are included twice here; once for each person losing their job.
+    Note that only those eligible for the JSP or PP recieve the hypothetical increase here, so the `Failed Assets Test`
+      Category is unchanged over the period" )
+
+# save_e61(paste0("povertyfamtype_hour_min",hour_limit,".pdf"), povertyhyp_single, povertyhyp_couple, 
+#          footnotes = "`On Benefit' Includes both those on JSP and the Parenting Payment, including those also on FTB.
+#       Poverty defined by the Henderson Poverty Line, at a household level. Experiment is how many households
+#     would be in poverty if one member of the household lost their job. Therefore, each partnered household where both members
+#     are working are included twice here; once for each person losing their job.
+#     Note that only those eligible for the JSP or PP recieve the hypothetical increase here, so the `Failed Assets Test`
+#       Category is unchanged over the period" )

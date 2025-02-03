@@ -2,7 +2,7 @@
 ## Data not stored centrally for security - will need a synthetic version for final paper.
 # Author: Matt Nolan
 # Date made: 31/12/2024
-# Last update: 11/1/2025
+# Last update: 3/2/2025
 
 
 library(tidyverse)
@@ -11,15 +11,19 @@ library(theme61)
 library(readxl)
 library(Hmisc)
 library(flextable)
+library(officer)
+library(webshot2)
+
+#webshot2::install_phantomjs()
 
 # Replace with dataset
-RR_dt <- read_csv("C:/Users/OEM/Downloads/RRs_csv 1.csv")
-#RR_dt <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 1.csv")
+#RR_dt <- read_csv("C:/Users/OEM/Downloads/RRs_csv 1.csv")
+RR_dt <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv")
 setDT(RR_dt)
 
 # Set restrictions
 
-RR_dt <- RR_dt[AGEEC > 21 & AGEEC < 54 & hours >= 5]
+RR_dt <- RR_dt[AGEEC > 21 & AGEEC < 54 & hours > 5] # Note, the core note used hours greater than 5, not greater than or equal to.
 
 RR_dt[,":=" (net_inc_ratio = hours0_net_income/current_net_income,grs_inc_ratio = hours0_gross_income/current_gross_income)]
 
@@ -132,7 +136,7 @@ table_all_formated <- flextable(table_all) %>%
     age = "Age (Years)",
     hours_worked = "Hours Worked",
     kids = "Number of Kids",
-    hhld_eq_ginc = "Household Gross Equivalent Income ($)",
+    hhld_eq_ginc = "Equivalised Gross Income ($)",
     L_Asset = "Liquid Assets ($)",
     N = "Sample Size",
     pop = "Population"
@@ -144,7 +148,7 @@ table_all_formated <- flextable(table_all) %>%
   colformat_double(j = "hours_worked", digits = 1) %>%  
   colformat_double(j = "kids", digits = 1) %>%  
   colformat_double(j = "hhld_eq_ginc", digits = 2) %>%  
-  colformat_double(j = "L_Asset", digits = 2) %>%  
+  colformat_double(j = "L_Asset", digits = 0) %>%  
   colformat_double(j = "N", digits = 0) %>%  
   colformat_double(j = "pop", digits = 0) %>%  
   autofit() %>%  
@@ -158,8 +162,266 @@ table_all_formated <- flextable(table_all) %>%
 
 table_all_formated
 
+############# Tables to export ----
 
-## Densities
+## Single without Children
+
+table_all_sing <- RR_dt[partnered == 0 & Numb_dep == 0, .(
+  income = weighted.mean(current_gross_income, weights = SIHPSWT, na.rm = TRUE),
+  cap_inc = weighted.mean(NonWageIncome, weights = SIHPSWT, na.rm = TRUE),
+  existing_benefits = weighted.mean(current_taxable_benefit, weights = SIHPSWT, na.rm = TRUE),
+  age = weighted.mean(AGEEC, weights = SIHPSWT, na.rm = TRUE),
+  hours_worked = weighted.mean(hours, weights = SIHPSWT, na.rm = TRUE),
+  #kids = weighted.mean(Numb_dep, weights = SIHPSWT, na.rm = TRUE),
+  hhld_eq_ginc = weighted.mean(eqv_hhld_gross_inc, weights = SIHPSWT, na.rm = TRUE),
+  L_Asset = weighted.mean(LiquidAssets_Household, weights = SIHPSWT, na.rm = TRUE),
+  #.N,
+  pop = sum(SIHPSWT)
+), by = .(group)][order(group)]
+
+table_all_sing[, group := factor(group, levels = 1:5, labels = c(
+  "Ineligible",
+  ">0% - <25% RR",
+  ">=25% - <50% RR",
+  ">=50% - <75% RR",
+  "75%+ RR"
+))]
+
+table_all_sing_formated <- flextable(table_all_sing) %>%
+  set_header_labels(
+    group = "Group",
+    income = "Prior Income ($)",
+    cap_inc = "Capital Income ($)",
+    existing_benefits = "Benefits ($)",
+    age = "Age (Years)",
+    hours_worked = "Prior Hours Worked",
+    #kids = "Number of Kids",
+    hhld_eq_ginc = "Equivalised Gross Income ($)",
+    L_Asset = "Liquid Assets ($)",
+    #N = "Sample Size",
+    pop = "Population"
+  ) %>%
+  colformat_double(j = "income", digits = 2) %>%  
+  colformat_double(j = "cap_inc", digits = 2) %>%  
+  colformat_double(j = "existing_benefits", digits = 2) %>%  
+  colformat_double(j = "age", digits = 1) %>%  
+  colformat_double(j = "hours_worked", digits = 1) %>%  
+  #colformat_double(j = "kids", digits = 1) %>%  
+  colformat_double(j = "hhld_eq_ginc", digits = 2) %>%  
+  colformat_double(j = "L_Asset", digits = 0) %>%  
+  #colformat_double(j = "N", digits = 0) %>%  
+  colformat_double(j = "pop", digits = 0) %>%  
+  autofit() %>%  
+  bold(part = "header") %>%
+  theme_vanilla() %>%
+  add_header_lines("Replacement Rate Groups (Single no Dependents)") %>%  # Adds a large, customizable title
+  fontsize(i = 1, part = "header", size = 16) %>%  # Increases font size for the first line of the header
+  bold(i = 1, part = "header") %>%  # Make the title bold
+  align(i = 1, part = "header", align = "center") %>%  # Center the title
+  autofit()
+
+table_all_sing_formated
+
+# Save the flextable to an HTML file
+save_as_html(table_all_sing_formated, path = "table_all_sing.html")
+
+# Convert the HTML to an image
+webshot("table_all_sing.html", file = "table_all_sing.png", zoom = 2, vwidth = 1200, vheight = 800)
+
+## Single with Children
+
+table_all_sing_dep <- RR_dt[partnered == 0 & Numb_dep > 0, .(
+  income = weighted.mean(current_gross_income, weights = SIHPSWT, na.rm = TRUE),
+  cap_inc = weighted.mean(NonWageIncome, weights = SIHPSWT, na.rm = TRUE),
+  existing_benefits = weighted.mean(current_taxable_benefit, weights = SIHPSWT, na.rm = TRUE),
+  age = weighted.mean(AGEEC, weights = SIHPSWT, na.rm = TRUE),
+  hours_worked = weighted.mean(hours, weights = SIHPSWT, na.rm = TRUE),
+  kids = weighted.mean(Numb_dep, weights = SIHPSWT, na.rm = TRUE),
+  hhld_eq_ginc = weighted.mean(eqv_hhld_gross_inc, weights = SIHPSWT, na.rm = TRUE),
+  L_Asset = weighted.mean(LiquidAssets_Household, weights = SIHPSWT, na.rm = TRUE),
+  #.N,
+  pop = sum(SIHPSWT)
+), by = .(group)][order(group)]
+
+table_all_sing_dep[, group := factor(group, levels = 1:5, labels = c(
+  "Ineligible",
+  ">0% - <25% RR",
+  ">=25% - <50% RR",
+  ">=50% - <75% RR",
+  "75%+ RR"
+))]
+
+table_all_sing_dep_formated <- flextable(table_all_sing_dep) %>%
+  set_header_labels(
+    group = "Group",
+    income = "Prior Income ($)",
+    cap_inc = "Capital Income ($)",
+    existing_benefits = "Benefits ($)",
+    age = "Age (Years)",
+    hours_worked = "Prior Hours Worked",
+    kids = "Number of Kids",
+    hhld_eq_ginc = "Equivalised Gross Income ($)",
+    L_Asset = "Liquid Assets ($)",
+    #N = "Sample Size",
+    pop = "Population"
+  ) %>%
+  colformat_double(j = "income", digits = 2) %>%  
+  colformat_double(j = "cap_inc", digits = 2) %>%  
+  colformat_double(j = "existing_benefits", digits = 2) %>%  
+  colformat_double(j = "age", digits = 1) %>%  
+  colformat_double(j = "hours_worked", digits = 1) %>%  
+  colformat_double(j = "kids", digits = 1) %>%  
+  colformat_double(j = "hhld_eq_ginc", digits = 2) %>%  
+  colformat_double(j = "L_Asset", digits = 0) %>%  
+  #colformat_double(j = "N", digits = 0) %>%  
+  colformat_double(j = "pop", digits = 0) %>%  
+  autofit() %>%  
+  bold(part = "header") %>%
+  theme_vanilla() %>%
+  add_header_lines("Replacement Rate Groups (Single with Dependents)") %>%  # Adds a large, customizable title
+  fontsize(i = 1, part = "header", size = 16) %>%  # Increases font size for the first line of the header
+  bold(i = 1, part = "header") %>%  # Make the title bold
+  align(i = 1, part = "header", align = "center") %>%  # Center the title
+  autofit()
+
+table_all_sing_dep_formated
+
+# Save the flextable to an HTML file
+save_as_html(table_all_sing_dep_formated, path = "table_all_sing_dep.html")
+
+# Convert the HTML to an image
+webshot("table_all_sing_dep.html", file = "table_all_sing_dep.png", zoom = 2, vwidth = 1200, vheight = 800)
+
+## Couple no children
+
+table_all_coup <- RR_dt[partnered == 1 & Numb_dep == 0, .(
+  income = weighted.mean(current_gross_income, weights = SIHPSWT, na.rm = TRUE),
+  cap_inc = weighted.mean(NonWageIncome, weights = SIHPSWT, na.rm = TRUE),
+  existing_benefits = weighted.mean(current_taxable_benefit, weights = SIHPSWT, na.rm = TRUE),
+  age = weighted.mean(AGEEC, weights = SIHPSWT, na.rm = TRUE),
+  hours_worked = weighted.mean(hours, weights = SIHPSWT, na.rm = TRUE),
+  #kids = weighted.mean(Numb_dep, weights = SIHPSWT, na.rm = TRUE),
+  hhld_eq_ginc = weighted.mean(eqv_hhld_gross_inc, weights = SIHPSWT, na.rm = TRUE),
+  L_Asset = weighted.mean(LiquidAssets_Household, weights = SIHPSWT, na.rm = TRUE),
+  #.N,
+  pop = sum(SIHPSWT)
+), by = .(group)][order(group)]
+
+table_all_coup[, group := factor(group, levels = 1:5, labels = c(
+  "Ineligible",
+  ">0% - <25% RR",
+  ">=25% - <50% RR",
+  ">=50% - <75% RR",
+  "75%+ RR"
+))]
+
+table_all_coup_formated <- flextable(table_all_coup) %>%
+  set_header_labels(
+    group = "Group",
+    income = "Prior Income ($)",
+    cap_inc = "Capital Income ($)",
+    existing_benefits = "Benefits ($)",
+    age = "Age (Years)",
+    hours_worked = "Prior Hours Worked",
+    #kids = "Number of Kids",
+    hhld_eq_ginc = "Equivalised Gross Income ($)",
+    L_Asset = "Liquid Assets ($)",
+    #N = "Sample Size",
+    pop = "Population"
+  ) %>%
+  colformat_double(j = "income", digits = 2) %>%  
+  colformat_double(j = "cap_inc", digits = 2) %>%  
+  colformat_double(j = "existing_benefits", digits = 2) %>%  
+  colformat_double(j = "age", digits = 1) %>%  
+  colformat_double(j = "hours_worked", digits = 1) %>%  
+  #colformat_double(j = "kids", digits = 1) %>%  
+  colformat_double(j = "hhld_eq_ginc", digits = 2) %>%  
+  colformat_double(j = "L_Asset", digits = 0) %>%  
+  #colformat_double(j = "N", digits = 0) %>%  
+  colformat_double(j = "pop", digits = 0) %>%  
+  autofit() %>%  
+  bold(part = "header") %>%
+  theme_vanilla() %>%
+  add_header_lines("Replacement Rate Groups (Couple no Dependents)") %>%  # Adds a large, customizable title
+  fontsize(i = 1, part = "header", size = 16) %>%  # Increases font size for the first line of the header
+  bold(i = 1, part = "header") %>%  # Make the title bold
+  align(i = 1, part = "header", align = "center") %>%  # Center the title
+  autofit()
+
+table_all_coup_formated
+
+# Save the flextable to an HTML file
+save_as_html(table_all_coup_formated, path = "table_all_coup.html")
+
+# Convert the HTML to an image
+webshot("table_all_coup.html", file = "table_all_coup.png", zoom = 2, vwidth = 1200, vheight = 800)
+
+## Couple with Children
+
+table_all_coup_dep <- RR_dt[partnered == 1 & Numb_dep > 0, .(
+  income = weighted.mean(current_gross_income, weights = SIHPSWT, na.rm = TRUE),
+  cap_inc = weighted.mean(NonWageIncome, weights = SIHPSWT, na.rm = TRUE),
+  existing_benefits = weighted.mean(current_taxable_benefit, weights = SIHPSWT, na.rm = TRUE),
+  age = weighted.mean(AGEEC, weights = SIHPSWT, na.rm = TRUE),
+  hours_worked = weighted.mean(hours, weights = SIHPSWT, na.rm = TRUE),
+  kids = weighted.mean(Numb_dep, weights = SIHPSWT, na.rm = TRUE),
+  hhld_eq_ginc = weighted.mean(eqv_hhld_gross_inc, weights = SIHPSWT, na.rm = TRUE),
+  L_Asset = weighted.mean(LiquidAssets_Household, weights = SIHPSWT, na.rm = TRUE),
+  #.N,
+  pop = sum(SIHPSWT)
+), by = .(group)][order(group)]
+
+table_all_coup_dep[, group := factor(group, levels = 1:5, labels = c(
+  "Ineligible",
+  ">0% - <25% RR",
+  ">=25% - <50% RR",
+  ">=50% - <75% RR",
+  "75%+ RR"
+))]
+
+table_all_coup_dep_formated <- flextable(table_all_coup_dep) %>%
+  set_header_labels(
+    group = "Group",
+    income = "Prior Income ($)",
+    cap_inc = "Capital Income ($)",
+    existing_benefits = "Benefits ($)",
+    age = "Age (Years)",
+    hours_worked = "Prior Hours Worked",
+    kids = "Number of Kids",
+    hhld_eq_ginc = "Equivalised Gross Income ($)",
+    L_Asset = "Liquid Assets ($)",
+    #N = "Sample Size",
+    pop = "Population"
+  ) %>%
+  colformat_double(j = "income", digits = 2) %>%  
+  colformat_double(j = "cap_inc", digits = 2) %>%  
+  colformat_double(j = "existing_benefits", digits = 2) %>%  
+  colformat_double(j = "age", digits = 1) %>%  
+  colformat_double(j = "hours_worked", digits = 1) %>%  
+  colformat_double(j = "kids", digits = 1) %>%  
+  colformat_double(j = "hhld_eq_ginc", digits = 2) %>%  
+  colformat_double(j = "L_Asset", digits = 0) %>%  
+  #colformat_double(j = "N", digits = 0) %>%  
+  colformat_double(j = "pop", digits = 0) %>%  
+  autofit() %>%  
+  bold(part = "header") %>%
+  theme_vanilla() %>%
+  add_header_lines("Replacement Rate Groups (Couple with Dependents)") %>%  # Adds a large, customizable title
+  fontsize(i = 1, part = "header", size = 16) %>%  # Increases font size for the first line of the header
+  bold(i = 1, part = "header") %>%  # Make the title bold
+  align(i = 1, part = "header", align = "center") %>%  # Center the title
+  autofit()
+
+table_all_coup_dep_formated
+
+# Save the flextable to an HTML file
+save_as_html(table_all_coup_dep_formated, path = "table_all_coup_dep.html")
+
+# Convert the HTML to an image
+webshot("table_all_coup_dep.html", file = "table_all_coup_dep.png", zoom = 2, vwidth = 1200, vheight = 800)
+
+
+############## Densities ----
 
 RR_dt[,log_eq := log(eqv_hhld_gross_inc)]
 RR_dt[,kid_group := fcase(Numb_dep == 0,"None",
@@ -317,9 +579,9 @@ save_e61("RR_children_share.png",res=2,pad_width = 1,auto_scale = FALSE)
 ## FT
 
 # Summary stats "full time workers"
-RR_dt[hours >= 32,.(income = mean(current_gross_income),cap_inc = mean(NonWageIncome),existing_benefits = mean(current_taxable_benefit),age=mean(AGEEC),hours_worked = mean(hours),kids = mean(Numb_dep),hhld_eq_ginc = mean(eqv_hhld_gross_inc),L_Asset = mean(LiquidAssets_Household),.N),by=.(group)][order(group)]
+RR_dt[hours > 30,.(income = mean(current_gross_income),cap_inc = mean(NonWageIncome),existing_benefits = mean(current_taxable_benefit),age=mean(AGEEC),hours_worked = mean(hours),kids = mean(Numb_dep),hhld_eq_ginc = mean(eqv_hhld_gross_inc),L_Asset = mean(LiquidAssets_Household),.N),by=.(group)][order(group)]
 
-table_FT <- RR_dt[hours >= 32, .(
+table_FT <- RR_dt[hours > 30, .(
   income = weighted.mean(current_gross_income, weights = SIHPSWT, na.rm = TRUE),
   cap_inc = weighted.mean(NonWageIncome, weights = SIHPSWT, na.rm = TRUE),
   existing_benefits = weighted.mean(current_taxable_benefit, weights = SIHPSWT, na.rm = TRUE),
@@ -349,7 +611,7 @@ table_FT_formated <- flextable(table_FT) %>%
     age = "Age (Years)",
     hours_worked = "Hours Worked",
     kids = "Number of Kids",
-    hhld_eq_ginc = "Household Gross Equivalent Income ($)",
+    hhld_eq_ginc = "Equivalised Gross Income ($)",
     L_Asset = "Liquid Assets ($)",
     N = "Sample Size",
     pop = "Population"
@@ -361,7 +623,7 @@ table_FT_formated <- flextable(table_FT) %>%
   colformat_double(j = "hours_worked", digits = 1) %>%  
   colformat_double(j = "kids", digits = 1) %>%  
   colformat_double(j = "hhld_eq_ginc", digits = 2) %>%  
-  colformat_double(j = "L_Asset", digits = 2) %>%  
+  colformat_double(j = "L_Asset", digits = 0) %>%  
   colformat_double(j = "N", digits = 0) %>%  
   colformat_double(j = "pop", digits = 0) %>%  
   autofit() %>%  
@@ -376,14 +638,14 @@ table_FT_formated <- flextable(table_FT) %>%
 table_FT_formated
 
 # Unweighted household income
-ggplot(RR_dt[hours >= 32],aes(x=log(eqv_hhld_gross_inc),colour=as.factor(group))) + geom_density() +
+ggplot(RR_dt[hours > 30],aes(x=log(eqv_hhld_gross_inc),colour=as.factor(group))) + geom_density() +
   scale_colour_manual(values = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5])) +
   scale_y_continuous_e61(limits=c(0,2,0.4)) + 
   labs_e61(title="Density of household income by replacement rate*",subtitle = "FT workers, log income",y="",x="",footnotes = c("Equivalised gross income, using the modified OECD equivalence scale")) +
   plab(c("Ineligible","0-25%","25-50%","50-75%","75%+"),x=rep(3.8,times=5),y=c(1.66,1.56,1.46,1.36,1.26),colour=c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
 
 #Weighted household income
-ggplot(RR_dt[hours >= 32],aes(x=log(eqv_hhld_gross_inc),colour=as.factor(group))) + 
+ggplot(RR_dt[hours > 30],aes(x=log(eqv_hhld_gross_inc),colour=as.factor(group))) + 
   #stat_density(aes(weight = SIHPSWT,fill=as.factor(group)), geom = "area", alpha = 0.4) +
   stat_density(aes(weight = SIHPSWT,fill=as.factor(group)), geom = "line", alpha = 0.4) +
   scale_colour_manual(values = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5])) +
@@ -394,7 +656,7 @@ ggplot(RR_dt[hours >= 32],aes(x=log(eqv_hhld_gross_inc),colour=as.factor(group))
 
 # Normalised densities
 
-normalized_densities_FT_HI <- RR_dt[hours >= 32 & !is.na(log_eq)][, {
+normalized_densities_FT_HI <- RR_dt[hours > 30 & !is.na(log_eq)][, {
   d <- density(log_eq, weights = SIHPSWT)
   list(x = d$x, y = d$y / max(d$y))
 }, by = group]
@@ -421,7 +683,7 @@ ggplot(normalized_densities_FT_HI, aes(x = x, y = y, colour = as.factor(group)))
 save_e61("HHLD_inc_RR_FT.png",res=2,pad_width = 1)
 
 # normalised age
-normalized_densities_age_FT <- RR_dt[hours >= 32, {
+normalized_densities_age_FT <- RR_dt[hours > 30, {
   d <- density(AGEEC, weights = SIHPSWT)
   list(x = d$x, y = d$y / max(d$y))
 }, by = group]
@@ -446,7 +708,7 @@ ggplot(normalized_densities_age_FT, aes(x = x, y = y, colour = as.factor(group))
 
 save_e61("AGE_RR_FT.png",res=2,pad_width = 1)
 
-weighted_kids_FT <- RR_dt[hours >= 32,.(pop = sum(SIHPSWT)),by=.(kid_group,group2)]
+weighted_kids_FT <- RR_dt[hours > 30,.(pop = sum(SIHPSWT)),by=.(kid_group,group2)]
 
 ggplot(weighted_kids_FT,aes(x=kid_group,y=pop/1000,fill=as.factor(group2))) + geom_col(position="dodge") +
   labs_e61(title = "Replacement Rate by Number of Children",subtitle = "FT workers",y="",x="Dependents",sources = c("ABS","e61")) +
