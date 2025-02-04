@@ -1,4 +1,4 @@
-## Last update:  25/01/2025
+## Last update:  4/02/2025
 ## Author:  Matt Maltman
 ## Last update person:  Matt Nolan (adding FT versions of plots, and adjusting some stuff to DT)
 # Note: Refine the code down a bit to make the datasets being used clear and transparent - to avoid using the wrong data accidentally.
@@ -78,7 +78,7 @@ Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work ve
 
 setDT(Rep_rates_df)
 
-hour_limit <- 5
+hour_limit <- 30
 
 ############################################################################################
 
@@ -1211,7 +1211,6 @@ poverty_gap_plot <- ggplot(Rep_rates_df_subset, aes(x = poverty_gap, weight = no
     fill = "Weeks of Liquid Assets"
   ) + scale_x_continuous_e61(limits = c(-1500,2000,500)) + geom_vline(xintercept = 0, linetype = "dashed")
 
-
 setDT(Rep_rates_df_subset)
 
 # Create the new factor variable
@@ -1352,6 +1351,8 @@ low_liquid_assets <- low_liquid_assets %>%
 
 setDT(low_liquid_assets)
 
+low_liquid_assets[,.(median_la = quantile(net_RR, probs = 0.5, type = 7, na.rm = TRUE, weights = normalized_weight_hhld))]
+
 # Replace with data table code
 # facet_annotations <- low_liquid_assets %>%
 #   group_by(eligibility_status) %>%
@@ -1425,11 +1426,19 @@ Rep_rates_df_subset[, poverty := fcase(
   poverty_gap >= 0, "Not in Poverty"
 )]
 
+summary(Rep_rates_df_subset[amount_of_liquid == 0]$weeks_of_liquid_assets)
+
 # Calculate normalized_weight for everyone
 # Rep_rates_df_subset[, normalized_weight_hhld := hhld_wgt / sum(hhld_wgt)]
 
 # Calculate the weighted median for each poverty category
 weighted_medians <- Rep_rates_df_subset[, .(
+  weighted_median = quantile(net_RR, probs = 0.5, type = 7, na.rm = TRUE, weights = normalized_weight_hhld)
+), by = poverty]
+
+Rep_rates_df_subset[poverty_gap < 0 & amount_of_liquid == 1 & net_RR >= 0.5,sum(normalized_weight_hhld)]/Rep_rates_df_subset[poverty_gap < 0 & amount_of_liquid == 1,sum(normalized_weight_hhld)]
+
+weighted_medians_taxable_receipt <- Rep_rates_df_subset[hours0_taxable_benefit > 0, .(
   weighted_median = quantile(net_RR, probs = 0.5, type = 7, na.rm = TRUE, weights = normalized_weight_hhld)
 ), by = poverty]
 
@@ -1516,6 +1525,7 @@ bar_chart <- ggplot(proportions, aes(x = category, y = proportion, fill = catego
 
 # Print the plot
 print(bar_chart)
+print(histogram_plot)
 
 # Moved this from above as plot not available until this point
 save_e61(paste0("Poverty2Panel_hour_min",hour_limit,".pdf"), bar_chart,  histogram_plot,
@@ -1586,13 +1596,22 @@ save_e61(paste0("Poverty2Panel_hour_min",hour_limit,".pdf"), bar_chart,  histogr
                    "Failed \nAsset test", 
                    "JSP Singles + \nRA recipients \nmove out \nof poverty", 
                    "JSP Singles \nmove out \nof poverty"), 
-                   c(20,20,20, 120, 222), c(5, 13, 21, 24, 24),
+                   c(22,22,22, 120, 222), c(7, 18, 30, 34, 34),
                    c("white", "white", "white", "black", "black"), size = 3) + geom_vline(xintercept = 114, 
                                                                                          linetype = "dashed") + 
     geom_vline(xintercept = 219, linetype = "dashed")
 ########################################################################################################
 ##################################################################################################################
 
+  print(povertyhyp)
+  
+  save_e61(paste0("povertytotalstack_hour_min",hour_limit,".pdf"), povertyhyp, 
+           footnotes = "`On Benefit' Includes both those on JSP and the Parenting Payment, including those also on FTB.
+      Poverty defined by the Henderson Poverty Line, at a household level. Experiment is how many households
+    would be in poverty if one member of the household lost their job. Therefore, each partnered household where both members
+    are working are included twice here; once for each person losing their job.
+    Note that only those eligible for the JSP or PP recieve the hypothetical increase here, so the `Failed Assets Test`
+      Category is unchanged over the period" )
 
 #   # Normalize weights
 # Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
@@ -1712,11 +1731,16 @@ print(povertyhyp)
     return(results)
   }
   
+  
+results[i == 0]
+
   # Compute results for partnered and single individuals
 results_couple <- compute_results(Rep_rates_df_subset[partnered == 1])
 results_single <- compute_results(Rep_rates_df_subset[partnered == 0])
 results_single_dep <- compute_results(Rep_rates_df_subset[partnered == 0 & Numb_dep > 0])
 results_single_nodep <- compute_results(Rep_rates_df_subset[partnered == 0 & Numb_dep == 0])
+results_couple_dep <- compute_results(Rep_rates_df_subset[partnered == 1 & Numb_dep > 0])
+results_couple_nodep <- compute_results(Rep_rates_df_subset[partnered == 1 & Numb_dep == 0])
 
 results_single_nodep_home <- compute_results(Rep_rates_df_subset[partnered == 0 & Numb_dep == 0 & Home_owner == 1])
 results_single_nodep_nohome <- compute_results(Rep_rates_df_subset[partnered == 0 & Numb_dep == 0 & Home_owner == 0])
@@ -1853,3 +1877,26 @@ save_e61(paste0("povertyfamtype_hour_nomort_min",hour_limit,".pdf"), povertyhyp_
 #     are working are included twice here; once for each person losing their job.
 #     Note that only those eligible for the JSP or PP recieve the hypothetical increase here, so the `Failed Assets Test`
 #       Category is unchanged over the period" )
+
+
+single_nodep_initial <- results_single_nodep[i == 0][,type := "Single No Children"]
+single_dep_initial <- results_single_dep[i == 0][,type := "Single with Children"]
+couple_nodep_initial <- results_couple_nodep[i == 0][,type := "Couple No Children"]
+couple_dep_initial <- results_couple_dep[i == 0][,type := "Couple with Children"]
+
+poverty_family_type <- rbind(single_nodep_initial,single_dep_initial,couple_nodep_initial,couple_dep_initial)
+
+ggplot(poverty_family_type,aes(x=type,y=weighted_sum*100,fill=group)) + geom_col(colour = "black") +
+  scale_y_continuous_e61(limits=c(0,100,25)) +
+  labs_e61(subtitle = "Proportion of total family type",y="%",
+           sources = c("ABS","e61")) +
+  plot_label(c("On Benefit* with \nfew liquid assets", 
+                 " On Benefit* \nwith >5 weeks \nliquid assets", 
+                 "Failed \nAsset test"), 
+               c(1.5,1.5,1.5), c(25, 50, 75),
+               c(palette_e61(4)[4], palette_e61(4)[3],palette_e61(4)[1]), size = 3) +
+  coord_flip()
+
+save_e61(paste0("poverty_family_hour",hour_limit,".pdf"))
+
+
