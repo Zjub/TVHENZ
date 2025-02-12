@@ -26,7 +26,7 @@ save_e61("Age_RR_time.png",res=2,pad_width = 1)
 MW_RR <- read_csv("MW_RR.csv")
 setDT(MW_RR)
 
-MW_RR[,year := 2000 + as.numeric(year)]
+MW_RR[,year := fifelse(year < 30, 2000 + as.numeric(year),1900 +as.numeric(year))]
 
 ggplot(melt(MW_RR,id.vars = "year"),aes(x=year,y=value,colour=variable)) + geom_line() +
   scale_y_continuous_e61(limits = c(0,1,0.2),labels=scales::percent_format()) +
@@ -43,3 +43,27 @@ ggplot(melt(MW_RR,id.vars = "year"),aes(x=year,y=value,colour=variable)) + geom_
   scale_x_continuous(breaks = seq(min(MW_RR$year), max(MW_RR$year), by = 3))
 
 save_e61("MW_RR_time.pdf")
+
+### 
+
+ggplot(MW_RR,aes(x=year,y=MW)) + geom_line() +
+  scale_y_continuous_e61(limits = c(0,1,0.2),labels=scales::percent_format()) +
+  labs_e61(title = "Minimum Wage Net Replacement Rates",subtitle = "Full-time (38hrs) for the full year",y="",x="") +
+  scale_x_continuous(breaks = seq(min(MW_RR$year), max(MW_RR$year), by = 3))
+
+EIAC <- MW_RR[year == 2024]$MW*(1.25) 
+
+ACOSS <- MW_RR[year == 2024]$MW*(1.47) 
+
+ggplot(MW_RR, aes(x = year, y = MW)) + 
+  geom_line() +
+  geom_point(aes(x = 2024, y = EIAC), color = "red", size = 3) +  # EIAC point
+  geom_point(aes(x = 2024, y = ACOSS), color = "blue", size = 3) +  # ACOSS point
+  scale_y_continuous(limits = c(0, 1), labels = scales::percent_format()) +
+  labs(title = "Minimum Wage Net Replacement Rates",
+       subtitle = "Single, full-time (38hrs) for the full year",
+       y = "", x = "") +
+  plab(c("EIAC (64%)","ACOSS (75%)"),x=c(2008,2008),y=c(0.60,0.71),colour=c("red","blue")) +
+  scale_x_continuous(breaks = seq(min(MW_RR$year), max(MW_RR$year), by = 4))
+
+save_e61("MW_RR_only.png",res=2,pad_width = 1,auto_scale = FALSE)
