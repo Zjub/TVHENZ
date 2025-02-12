@@ -1,4 +1,4 @@
-## Last update:  4/02/2025
+## Last update:  13/02/2025
 ## Author:  Matt Maltman
 ## Last update person:  Matt Nolan (adding FT versions of plots, and adjusting some stuff to DT)
 # Note: Refine the code down a bit to make the datasets being used clear and transparent - to avoid using the wrong data accidentally.
@@ -78,7 +78,7 @@ Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work ve
 
 setDT(Rep_rates_df)
 
-hour_limit <- 30
+hour_limit <- 5
 
 ############################################################################################
 
@@ -394,8 +394,10 @@ FamilyPanel <- ggplot(Rep_rates_df_subset, aes(x = net_RR * 100, weight = normal
   geom_vline(data = facet_summary, aes(xintercept = weighted_mean * 100), 
              color = "purple", linetype = "dashed", size = 1) +
   geom_vline(data = facet_summary, aes(xintercept = weighted_median * 100), 
-             color = e61_orangedark, linetype = "dashed", size = 1)
+             color = e61_orangedark, linetype = "dashed", size = 1) +
+  plab(x=c(30,30),y=c(45,35),label = c("Mean","Median"),colour=c(e61_orangedark,"purple"),facet_name = "interaction_cat",facet_value = "Partnered, 1-2 dependents")
 
+FamilyPanel
 
 # Save the plot
 save_e61(paste0("FamilyPanel_hour_min",hour_limit,".svg"), FamilyPanel, 
@@ -1900,3 +1902,16 @@ ggplot(poverty_family_type,aes(x=type,y=weighted_sum*100,fill=group)) + geom_col
 save_e61(paste0("poverty_family_hour",hour_limit,".pdf"))
 
 
+ggplot(poverty_family_type,aes(x=type,y=weighted_sum*100,fill=group)) + geom_col(colour = "black") +
+  scale_y_continuous_e61(limits=c(0,100,25)) +
+  labs_e61(title = "Poverty after job loss",
+           subtitle = "Proportion of total family type",y="%",
+           sources = c("ABS","e61")) +
+  plot_label(c("On Benefit* with \nfew liquid assets", 
+               " On Benefit* \nwith >5 weeks \nliquid assets", 
+               "Failed \nAsset test"), 
+             c(1.5,1.5,1.5), c(25, 50, 75),
+             c(palette_e61(4)[4], palette_e61(4)[3],palette_e61(4)[1]), size = 3) +
+  coord_flip()
+
+save_e61(paste0("poverty_family_hour",hour_limit,".png"),res=2,pad_width = 1)
