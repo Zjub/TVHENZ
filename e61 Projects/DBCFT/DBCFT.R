@@ -54,6 +54,7 @@ ggplot(Tax_take, aes(y = prop, x = 1, fill = Type, alpha = Type != "Risk")) +
   scale_x_continuous(limits=c(0.5,2.2,1))
 
 save_e61("Rev_risk.png",res=2,auto_scale = FALSE)
+save_e61("Rev_risk.svg",auto_scale = FALSE)
 
 
 OECD_trade <- read_excel("OECD trade.xls", 
@@ -81,7 +82,4 @@ ggplot(OECD_trade,aes(x=Date,y=TB_ratio*100,colour=REF_AREA)) + geom_line() +
   plab(c("Australia","China","United Kingdom","United States"),x=rep(as.Date("2010-01-01"),times=4),y=c(15,25,-25,-35))
   
 save_e61("Mer_trade.png",res=2)
-
-save_e61("Mer_trade.jpg",res=2)
-
 save_e61("Mer_trade.svg")
