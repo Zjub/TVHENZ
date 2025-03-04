@@ -110,13 +110,83 @@ ggplot(cpi_growth,aes(x=date,y=RW/100)) + geom_line() + geom_hline(yintercept = 
 save_e61("Newsletter5.png",res=2)
 
 unique(wpi$series)
+unique(cpi$table_title)
 
-wpi_value <- wpi[series %in% c("Quarterly Index ;  Total hourly rates of pay excluding bonuses ;  Australia ;  Private and Public ;  All industries ;" ) & series_type %in% c("Seasonally Adjusted")][,.(date,wpi =value)]
+## Quarterly
+# wpi_value <- wpi[series %in% c("Quarterly Index ;  Total hourly rates of pay excluding bonuses ;  Australia ;  Private and Public ;  All industries ;" ) & series_type %in% c("Seasonally Adjusted")][,.(date,wpi =value)]
+# cpi_value <- cpi[table_title == "TABLES 1 and 2. CPI: All Groups, Index Numbers and Percentage Changes" & unit == "Index Numbers" & series == "Index Numbers ;  All groups CPI ;  Australia ;"][,.(date,cpi = value)]
+
+## Annual
+wpi_value <- wpi[series %in% c("Financial Year Index ;  Total hourly rates of pay including bonuses ;  Australia ;  Private and Public ;  All industries ;" )][,.(date,wpi =value)]
+wpi_value <-unique(wpi_value)
 cpi_value <- cpi[table_title == "TABLES 1 and 2. CPI: All Groups, Index Numbers and Percentage Changes" & unit == "Index Numbers" & series == "Index Numbers ;  All groups CPI ;  Australia ;"][,.(date,cpi = value)]
+
+cpi_value[, year := year(date)]
+cpi_value[, quarter := quarter(date)]
+
+cpi_annual <- cpi_value[quarter %in% c(3, 4, 1, 2),
+                        .(cpi_avg = mean(cpi, na.rm = TRUE)),
+                        by = year]
+
+cpi_annual <- cpi_annual[year %in% cpi_value[quarter == 2, unique(year)]]
+cpi_annual[, date := as.Date(paste0(year, "-06-01"))]
+setorder(cpi_annual, date)
+cpi_annual <- cpi_annual[, .(date, cpi_avg)]
+
+cpi_annual
 
 price_values <- cpi_value[wpi_value,on=.(date)][,Real_Wage := wpi/cpi]
 
 price_values[nrow(price_values),.(Real_Wage)]/max(price_values$Real_Wage) - 1
-price_values[nrow(price_values),.(Real_Wage)]/price_values[date == as.Date("2019-12-01"),.(Real_Wage)] - 1
+#price_values[nrow(price_values),.(Real_Wage)]/price_values[date == as.Date("2019-12-01"),.(Real_Wage)] - 1
+price_values[nrow(price_values),.(Real_Wage)]/price_values[date == as.Date("2019-06-01"),.(Real_Wage)] - 1
 
 price_values[Real_Wage == max(Real_Wage)]
+
+#price_values$MA12 <- rollmean(price_values$Real_Wage, k = 12, fill = NA, align = "center")
+#ggplot(price_values, aes(x = date, y = Real_Wage)) +
+#  geom_line() +
+#  geom_line(aes(y = MA12), color = "orange", size = 1)
+
+ggplot(price_values,aes(x=date,y=Real_Wage)) + geom_line() + scale_x_date(date_breaks = "4 year", date_labels = "%Y") +
+  scale_y_continuous_e61(limits = c(0.9,1.2,0.05)) +
+  labs_e61(title = "Wage Price Index","September 1997 = 1",y="",x="")
+
+#save_e61("WPI_full.png",res=2)
+
+
+### Average weekly earnings
+
+AWE <- read_abs(cat_no = "6302.0")
+
+
+### Nat accounts income per hours
+
+NAcc <- read_abs("5204.0")
+setDT(NAcc)
+
+NAcc_subset <- NAcc[table_title %like% "16"]
+
+NAcc_subset <- NAcc_subset[series %like% "Compensation of employees per hour: Current prices ;"][,.(date,COE = value)]
+
+price2 <- NAcc_subset[price_values,on=.(date)][,Real_COE := COE/cpi]
+
+ref_2012 <- price2[date == "2012-06-01", .(Real_COE_ref = Real_COE, Real_Wage_ref = Real_Wage)]
+
+price2[, `:=`(
+  Real_COE = Real_COE / ref_2012$Real_COE_ref,
+  Real_Wage = Real_Wage / ref_2012$Real_Wage_ref
+)]
+
+ggplot(melt(price2[,.(date,Real_Wage,Real_COE)],id.vars = "date"),aes(x=date,y=value,colour=variable)) + geom_line() +
+  scale_x_date(date_breaks = "4 year", date_labels = "%Y") +
+  scale_y_continuous_e61(limits = c(0.7,1.2,0.1)) +
+  labs_e61(title = "Wage Measures","June 2012 = 1",y="",x="") +
+  geom_hline(yintercept = 1) +
+  plab(c("WPI","COE per hour"),x=rep(as.Date("2001-06-01")),y=c(1.07,1.12))
+
+save_e61("WPI_COE.png",res=2)
+
+(44/42.5 - 1) - (cpi_value[date %in% c(as.Date("2023-06-01"))]$cpi/cpi_value[date %in% c(as.Date("2021-06-01"))]$cpi - 1) # Real wage change EEH
+
+
