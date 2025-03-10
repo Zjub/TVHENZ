@@ -1,4 +1,4 @@
-## Last update:  13/02/2025
+## Last update:  10/03/2025
 ## Author:  Matt Maltman
 ## Last update person:  Matt Nolan (adding FT versions of plots, and adjusting some stuff to DT)
 # Note: Refine the code down a bit to make the datasets being used clear and transparent - to avoid using the wrong data accidentally.
@@ -82,7 +82,7 @@ Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work ve
 
 setDT(Rep_rates_df)
 
-hour_limit <- 5
+hour_limit <- 30
 
 ############################################################################################
 
@@ -1007,6 +1007,28 @@ RR1_no_ineligible <- ggplot(Rep_rates_df_subset_no_ineligible, aes(x = net_RR * 
 
 # Save the second plot
 save_e61(paste0("Distribution_xineligible_hour_min",hour_limit,".pdf"), RR1_no_ineligible, IncomeGroupPanel)
+
+ggplot(Rep_rates_df_subset_no_ineligible, aes(x = net_RR * 100,
+                                              weight = normalized_weight * 100,
+                                              fill = eligibility_status)) +
+  geom_histogram(binwidth = 2, position = "stack") +
+  scale_fill_manual(
+    values = c(
+      "Benefit Eligible" = "#ED7F00", 
+      "FTB Eligible" = "#008080", 
+      "Benefit + FTB Eligible" = "#10485E"
+    )
+  ) +
+  labs_e61(
+    subtitle = "Distribution of Replacement Rates for eligible recipients*",
+    x = "Replacement Rate (%)",
+    y = "%",
+    fill = "Eligibility Status", footnotes = "Eligible recipients are those who recieve either taxable benefits or FTB."
+  ) + plot_label(c("Benefit \n(JSP or PP)\n Only", "FTB Only", "Both"),
+                 c(23, 5, 70), c(1.9, 0.7, 0.7), c("white", "white", "#10485E" )) +
+  scale_y_continuous_e61(limits=c(0,3.5,0.5))
+
+save_e61(paste0("Distribution_xineligible_only_hour_min",hour_limit,".pdf"))
 
 #################################################################################################
 ### VENN DIAGRAM 
