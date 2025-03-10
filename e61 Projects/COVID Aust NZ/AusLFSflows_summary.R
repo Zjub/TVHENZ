@@ -19,7 +19,7 @@ library(seasonal)
 
 ### Set last month of the data analysed.
 
-endmonth <- 10 ## Note "12" refers to last month of data, so needs to be updated
+endmonth <- 12 ## Note "12" refers to last month of data, so needs to be updated
 years_data <- 18
 
 ### Transitions
@@ -361,12 +361,12 @@ EU + annotate(x=4,y=+Inf,label="Payment Introduced",vjust=2,geom="label") + anno
 
 # Unemp - Emp
 
-colnames(UEtrandf) <- c("Month","Transition","Year")
+#colnames(UEtrandf) <- c("Month","Transition","Year")
 
-UE <- ggplot(UEtrandf %>% filter(year.x != 2021),aes(x=month,y=Transition,colour=year.x)) + geom_line() + geom_vline(xintercept = 4,colour="red",linetype = "dashed") + 
+UE <- ggplot(UEtrandf %>% filter(year.x != 2021),aes(x=month,y=TUErate,colour=year.x)) + geom_line() + geom_vline(xintercept = 4,colour="red",linetype = "dashed") + 
   geom_vline(xintercept = 9,colour="blue",linetype = "dashed") + 
   labs_e61(
-    title = "Monthly transition from unemployed to employed",
+    title = "Job-Finding Rates",
     subtitle = "Percentage per month",
     y="",
     footnotes = "ABS Labour Force Survey Gross Monthly Flows.",
@@ -378,7 +378,7 @@ UE <- ggplot(UEtrandf %>% filter(year.x != 2021),aes(x=month,y=Transition,colour
 
 UE + annotate(x=4,y=+Inf,label="Payment Introduced",vjust=2,geom="label") + annotate(x=9,y=0.24,label="Payment Reduced",vjust=2,geom="label") 
 
-save_e61(filename = 'plots/U2E.png',res=2,auto_scale = FALSE)
+save_e61(filename = 'U2E.png',res=2,auto_scale = FALSE)
 
 ### This gives the outline of flow data = specific plot for research note below ----
 

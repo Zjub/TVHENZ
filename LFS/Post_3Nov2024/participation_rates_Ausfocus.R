@@ -184,6 +184,13 @@ replacement[Unit == "United States"]$Series <- syn_data[Unit == "United States"]
 syn_data <- syn_data[!is.na(Series)]
 
 syn_data <- rbind(syn_data,replacement)
+setDT(syn_data)
+
+syn_data[Time == 2023]
+
+#ggplot(syn_data,aes(x=Time,y=Outcome,colour=Unit)) + geom_line()
+
+
 
 ### Undertake synthetic control exercise.
 # Set treatment year
@@ -224,6 +231,7 @@ weights[w.weights == max(synth.tab$tab.w$w.weights)]$unit.names
 weights[order(w.weights)]
 
 syn_data[Series == weights[w.weights == max(synth.tab$tab.w$w.weights)]$unit.names]
+
 
 # Ensure synth.out$solution.w is a numeric vector
 Y0plot_numeric <- as.matrix(dataprep.out$Y0plot)

@@ -58,7 +58,8 @@ prop_ES_matched <- prop_ES_matched[,":=" (prop = estimate/(-estimate + wageinc_t
 ggplot(prop_ES_matched,aes(x=t,y=prop*100)) + geom_point() +
   geom_errorbar(aes(ymin = lci*100,ymax = hci*100),width =0.2,colour = palette_e61(3)[1]) +
   geom_line() +
-  labs_e61(title = "Global Financial Crisis Wage Scars","Matched sample*",y="(%)",x="Year from Job Loss",
+  labs_e61(#title = "Global Financial Crisis Wage Scars","Matched sample*",
+           y="(%)",x="Year from Job Loss",
            sources = c("ABS","e61"),
            footnotes = c("Control sample matched to treated units using 1:1 Propensity Score Matching. Propensities calculated using wage income in 2006 and 2007, age, gender, and the number of employees at the initial firm.")) +
   add_baseline() +
@@ -67,7 +68,7 @@ ggplot(prop_ES_matched,aes(x=t,y=prop*100)) + geom_point() +
 save_e61("Wage_scar.png",res=2)
 
 save_e61("Wage_scar.svg")
-Ge
+
 ### Reemployed group
 
 GFC_1yrloss_earnings <- read_csv("Data/FY2009_avg_1yr_stayend.csv")
@@ -142,7 +143,9 @@ graph_dt2 <- rbind(dt_5yr,dt_1yr,dt_noyr)
 ggplot(graph_dt2,aes(x=t,y=prop*100,colour=variable,group=variable)) + geom_point() +
   geom_errorbar(aes(ymin = lci*100,ymax = hci*100),width =0.2,linetype="dashed") +
   geom_line() +
-  labs_e61(title = "Global Financial Crisis Wage Scars","Matched sample*",y="(%)",x="Year from Job Loss",
+  labs_e61(#title = "Global Financial Crisis Wage Scars",
+           subtitle = "Matched sample*",
+           y="(%)",x="Year from Job Loss",
            sources = c("ABS","e61"),
            footnotes = c("Control sample matched to treated units using 1:1 Propensity Score Matching. Propensities calculated using wage income in 2006 and 2007, age, gender, and the number of employees at the initial firm.")) +
   add_baseline() +
@@ -152,4 +155,5 @@ ggplot(graph_dt2,aes(x=t,y=prop*100,colour=variable,group=variable)) + geom_poin
   geom_vline(xintercept = -1,linetype = "dashed")
 
 save_e61("Wage_reemp2.png",res=2)
+save_e61("Wage_reemp2.svg")
 
