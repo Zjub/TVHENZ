@@ -9,6 +9,10 @@ library(theme61)
 library(readr)
 library(tidyverse)
 library(data.table)
+library(readxl)
+
+rm(list=ls())
+gc()
 
 ##################
 
