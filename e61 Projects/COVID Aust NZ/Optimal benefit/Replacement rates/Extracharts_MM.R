@@ -244,6 +244,32 @@ ggplot(dt_LR_RRs[!is.na(difference)], aes(x = country, y = difference)) +
   geom_col() +
   coord_flip() +
   labs(x = "Country", y = "Difference (2023 - 2003)") 
+
+add_row <- data.table(
+  country = "Australia (EIAC)",
+  `2003` = NA_real_,  # Ensure NA is stored as a numeric value
+  `2023` = 29 * 1.33,
+  difference = NA_real_
+)
+
+add_row2 <- data.table(
+  country = "Australia (ACOSS)",
+  `2003` = NA_real_,  # Ensure NA is stored as a numeric value
+  `2023` = 29 * 1.47,
+  difference = NA_real_
+)
+
+
+dt_LR_RRs <- rbind(dt_LR_RRs,add_row,add_row2)
+
+dt_LR_RRs <- dt_LR_RRs[order(`2023`)]
+dt_LR_RRs[, country := factor(country, levels = country)]
+
+ggplot(dt_LR_RRs, aes(x = country, y = `2023`, fill = country %in% c("Australia", "Australia (EIAC)", "Australia (ACOSS)"))) + 
+  geom_col() +
+  coord_flip() +
+  scale_fill_manual(values = c("TRUE" = "gold", "FALSE" = "grey")) +
+  labs(x = "Country", y = "",subtitle="2023 Replacement Rate (Two-years unemployed)") 
   
 
 

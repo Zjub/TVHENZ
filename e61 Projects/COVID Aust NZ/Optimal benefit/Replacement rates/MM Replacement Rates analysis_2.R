@@ -1174,10 +1174,7 @@ Rep_rates_df_subset <- Rep_rates_df_subset %>%
   left_join(poverty_lines_nonwork, by = "Income_Unit")
 
 
-Rep_rates_df_subset$hours0_wk_partner_earnings <- ifelse(is.na(Rep_rates_df_subset$hours0_wk_partner_earnings),
-                                                         Rep_rates_df_subset$hours0_gross_income_partner - Rep_rates_df_subset$hours0_income_tax_partner  + 
-                                                           Rep_rates_df_subset$hours0_RA_partner + Rep_rates_df_subset$hours0_ES_partner,
-                                                         Rep_rates_df_subset$hours0_wk_partner_earnings )
+Rep_rates_df_subset$hours0_wk_partner_earnings <- ifelse(is.na(Rep_rates_df_subset$hours0_wk_partner_earnings), Rep_rates_df_subset$hours0_gross_income_partner - Rep_rates_df_subset$hours0_income_tax_partner + Rep_rates_df_subset$hours0_RA_partner + Rep_rates_df_subset$hours0_ES_partner, Rep_rates_df_subset$hours0_wk_partner_earnings )
 
 Rep_rates_df_subset$hhincome <- Rep_rates_df_subset$hours0_net_income + Rep_rates_df_subset$NonWageIncome + Rep_rates_df_subset$hours0_wk_partner_earnings
 
