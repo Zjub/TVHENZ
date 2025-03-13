@@ -16,6 +16,8 @@ library(Hmisc)
 rm(list=ls())
 gc()
 
+liquid_thresh = 5 # Only applied at the bottom for now - check to apply more widely
+
 ## Use the dataset with flags from Matthew M
 Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
 #Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
@@ -75,12 +77,11 @@ Rep_rates_df[,":=" (grs_RR_household = (hours0_gross_income + hours0_wk_partner_
 
 
 # Clean the Data - This should already be done for some of this in the tax Calc stuff
-
-Rep_rates_df <- subset(Rep_rates_df, Rep_rates_df$AGEEC > 21)
-
-Rep_rates_df <- subset(Rep_rates_df, Rep_rates_df$AGEEC < 55)
-
 Rep_rates_df <- subset(Rep_rates_df, wage > 15)
+
+# Check age (restrictions applied later - checking they aren't in the base dataset) - the population here is 22 to 54. So calculations are based on the median income for that age group. That is ok but just make this clear in the write-up (as OECD standard is full population which should reduce this line: https://www.oecd.org/en/data/indicators/poverty-rate.html)  XXXX
+min(Rep_rates_df$AGEEC)
+max(Rep_rates_df$AGEEC)
 
 
 # Drop those with Negative incomes 
@@ -112,7 +113,11 @@ Rep_rates_df[,eq_hhinc_pre := hhincome_pre/eq_scale]
 Rep_rates_df[, weighted_median_50 := wtd.quantile(eq_hhinc_pre, weights = hhld_size * hhld_wgt, probs = 0.5, na.rm = TRUE)*0.5] 
 Rep_rates_df[, weighted_median_60 := wtd.quantile(eq_hhinc_pre, weights = hhld_size * hhld_wgt, probs = 0.5, na.rm = TRUE)*0.6] 
 
-# Subset data to remove those working less than the fixed hours. 
+# Subset data to remove those working less than the fixed hours. Also do age restrictions here
+Rep_rates_df <- subset(Rep_rates_df, Rep_rates_df$AGEEC > 21)
+
+Rep_rates_df <- subset(Rep_rates_df, Rep_rates_df$AGEEC < 55)
+
 Rep_rates_df_subset <- subset(Rep_rates_df, Rep_rates_df$hours > hour_limit)
 
 ## Create liquid asset categories
@@ -230,6 +235,7 @@ Rep_rates_df_subset[, liquid_assets_category := cut(weeks_of_liquid_assets,
 
 # Normalize weights within each category of weeks_of_liquid_assets
 Rep_rates_df_subset[, normalized_weight_hhld_la := hhld_wgt / sum(hhld_wgt), by = .(liquid_assets_category)]
+Rep_rates_df_subset[, normalized_weight_eqind_la := hhld_wgt*hhld_size / sum(hhld_wgt*hhld_size), by = .(liquid_assets_category)]
 
 nrow(Rep_rates_df_subset)
 
@@ -238,7 +244,7 @@ subset <- Rep_rates_df_subset[!is.na(henderson_BHC)]
 nrow(Rep_rates_df_subset)
 
 # Plot the distribution
-ggplot(subset, aes(x = henderson_BHC, weight = normalized_weight_hhld_la, col = as.factor(liquid_assets_category))) +
+ggplot(subset, aes(x = henderson_BHC, weight = normalized_weight_eqind_la, col = as.factor(liquid_assets_category))) +
   geom_density(alpha = 0.1) +  
   labs(
     title = "Distribution of Poverty Gap by Weeks of Liquid Assets",
@@ -355,16 +361,46 @@ single_child_amt <- 675.18 - 433.68
 couple_amt <- 660.25
 couple_child_amt <- (940.37 - 660.25)/2 # Averaged the two child amounts, and will just add this per child - as it isn't clear why the child cost increases for the second child in the piece.
 
+single_amt + single_child_amt
+
+couple_amt + couple_child_amt
+
+# Q4 2024 estimates from EIAC. Use core + renting line at this stage - the discretionary spending and purchase amounts are not of interest, and as we don't differentiate owners and renters in other lines we will leave as is here (following standard OECD lines). Also don't define by gender at this stage.
+
+single_amt_24 <- 657
+single_child_amt_24 <- 1137.5 - 958
+couple_amt_24 <- 839
+couple_child_amt_24 <- (1341 - 1164)/2
+
+single_amt_24 + single_child_amt_24
+
+couple_amt_24 + couple_child_amt_24
+
+
 # Absolute line basis
 ben_inflate <- 139.2/108 # From https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/selected-living-cost-indexes-australia/latest-release#data-downloads
 
 # Relative line basis
-#ben_inflate <- 818.92/704.67 # Use 2016 v 2024 Henderson lines for their inflation 
+ben_inflate_relative <- 818.92/704.67 # Use 2016 v 2024 Henderson lines for their inflation [not this is the couple not child only]
+
+612.18 /526.77 # Single
+785.92/676.27 # Single 1 kid.  Looks like the line increases proportionally.
 
 Rep_rates_df_subset[,BS_line := fifelse(partnered == 0,(single_amt + single_child_amt*Numb_dep)*ben_inflate,
-                                        couple_amt + couple_child_amt*Numb_dep)*ben_inflate]
+                                        (couple_amt + couple_child_amt*Numb_dep)*ben_inflate)]
+
+Rep_rates_df_subset[,BS_line_rel := fifelse(partnered == 0,(single_amt + single_child_amt*Numb_dep)*ben_inflate_relative,
+                                        (couple_amt + couple_child_amt*Numb_dep)*ben_inflate_relative)]
+
+Rep_rates_df_subset[,BS_line_24 := fifelse(partnered == 0,(single_amt_24 + single_child_amt_24*Numb_dep),
+                                        (couple_amt_24 + couple_child_amt_24*Numb_dep))]
+
+
+Rep_rates_df_subset[IU_agg == "Single + Dep"]
 
 Rep_rates_df_subset[,BS_BHC := fifelse(Home_owner == 1,hhincome - BS_line,hhincome -BS_line)] # Negative means below the poverty line
+Rep_rates_df_subset[,BS_BHC_rel := fifelse(Home_owner == 1,hhincome - BS_line_rel,hhincome -BS_line_rel)]
+Rep_rates_df_subset[,BS_BHC_24 := fifelse(Home_owner == 1,hhincome - BS_line_24,hhincome -BS_line_24)]
 
 ggplot(Rep_rates_df_subset, aes(x = BS_BHC, weight = normalized_weight_eqind_fam,colour = IU_agg)) +
   geom_density(alpha = 0.1) +  
@@ -388,6 +424,164 @@ ggplot(Rep_rates_df_subset[,.(diff = Including_Housing - BS_line,id = seq(1:nrow
   scale_y_continuous_e61(limits = c(-1500,max(Rep_rates_df_subset$diff_HL_BSL),500)) +
   theme_e61(legend = "bottom") + add_baseline()
 
+ggplot(Rep_rates_df_subset, aes(x = BS_BHC, weight = normalized_weight_eqind_fam,colour = IU_agg)) +
+  geom_density(alpha = 0.1) +  
+  labs(
+    title = "Distribution of Poverty Gap for employed by Family Type",
+    subtitle = "Budget Standard line, household income (ind weighting)",
+    x = "Poverty Gap",
+    y = "Weighted Count"
+  ) + xlim(-1500,1500) + theme_e61(legend = "bottom") + geom_vline(xintercept = 0,linetype = "dashed")
+
+group_count <- Rep_rates_df_subset[,.(total = sum(hhld_wgt*hhld_size)),by=.(IU_agg)]
+hend_count <- Rep_rates_df_subset[henderson_BHC <= 0,.(N = sum(hhld_wgt*hhld_size)),by=.(IU_agg)]
+med_count <- Rep_rates_df_subset[wm_50_BHC <= 0,.(N = sum(hhld_wgt*hhld_size)),by=.(IU_agg)]
+BS_count <- Rep_rates_df_subset[BS_BHC <= 0,.(N = sum(hhld_wgt*hhld_size)),by=.(IU_agg)]
+BS_rel_count <- Rep_rates_df_subset[BS_BHC_rel <= 0,.(N = sum(hhld_wgt*hhld_size)),by=.(IU_agg)]
+BS_24_count <- Rep_rates_df_subset[BS_BHC_24 <= 0,.(N = sum(hhld_wgt*hhld_size)),by=.(IU_agg)]
+
+hend_count <- group_count[hend_count,on=.(IU_agg)][,PR := N/total][order(IU_agg)]
+med_count <- group_count[med_count,on=.(IU_agg)][,PR := N/total][order(IU_agg)]
+BS_count <- group_count[BS_count,on=.(IU_agg)][,PR := N/total][order(IU_agg)]
+BS_rel_count <- group_count[BS_rel_count,on=.(IU_agg)][,PR := N/total][order(IU_agg)]
+BS_24_count <- group_count[BS_24_count,on=.(IU_agg)][,PR := N/total][order(IU_agg)]
+
+PR <- melt(data.table(cat = hend_count$IU_agg, hend = hend_count$PR, med = med_count$PR, BS = BS_count$PR,BS_rel = BS_rel_count$PR,BS_24 = BS_24_count$PR),id.vars = "cat")
+
+ggplot(PR,aes(x=cat,y=value,fill=variable)) + geom_col(position = "dodge") +
+  theme_e61(legend = "bottom") +
+  labs_e61("Job loss Poverty Rates via different lines",y="") +
+  scale_y_continuous_e61(limits = c(0,1,0.2))
+
+unique(Rep_rates_df_subset[,.(IU_agg,Including_Housing,weighted_median_50,BS_line,Numb_dep)])
+
+ggplot(melt(unique(Rep_rates_df_subset[Numb_dep < 2,.(IU_agg,Henderson = Including_Housing,Med = weighted_median_50*eq_scale,BS_2016 = BS_line,BS_rel_2016 = BS_line_rel,BS_2024 = BS_line_24)]),id.var = "IU_agg"),aes(x=IU_agg,y=value,fill=variable)) + geom_col(position = "dodge") + theme_e61(legend = "bottom") +
+  labs(title = "Household poverty level ($weekly)",subtitle = "Dependents = 1 child",y="") +
+  scale_y_continuous_e61(limits = c(0,1200,200))
+
+Rep_rates_df_subset$eq_scale
+
+Rep_rates_df_subset[IU_agg == "Single + Dep"]
+
+### Now lets pull some information about the individuals in poverty
+# We are going to focus on two - median income and budget standards. Key distinction is that median income gives the highest required income for couples, while budget standards has the highest standard for single individuals.
+
+## Budget standard description (BS_line_24, BS_BHC_24)
+
+summary_BS <- Rep_rates_df_subset[,.(Home_owner,liquid = weeks_of_liquid_assets > liquid_thresh,net_RR,poverty_BS = BS_BHC_24 <= 0,eligible = eligibility_status != "Ineligible",IU_agg,weight = hhld_wgt*hhld_size)]
+
+ggplot(summary_BS,aes(x=net_RR,y=poverty_BS,colour = IU_agg)) + geom_point() + theme_e61(legend = "bottom")
+
+RR_pov_BS <- summary_BS[, .(
+  Poverty_Proportion = weighted.mean(poverty_BS, weight),
+  net_RR_Ineligible = weighted.mean(net_RR, weight)), by = .(IU_agg)]
+  
+ggplot(melt(RR_pov_BS,id.vars = "IU_agg"),aes(x=IU_agg,y=value,fill=variable)) + geom_col(position = "dodge")
+
+ggplot(summary_BS, aes(x = IU_agg, y = net_RR, fill = IU_agg)) + 
+  geom_boxplot(outlier.shape = NA) +  # Hides extreme outliers for better visibility
+  geom_jitter(aes(color = IU_agg), width = 0.2, alpha = 0.3) +  # Adds scatter for individual points
+  labs(title = "Distribution of net_RR by IU_agg",
+       x = "IU_agg",
+       y = "Net RR") +
+  theme_e61(legend = "bottom")
 
 
-                           
+# More analysis
+
+summary_BS[, .(
+  Poverty_Proportion = weighted.mean(poverty_BS, weight),
+  Home_Owner_Proportion_In_Poverty = weighted.mean(Home_owner, weight, na.rm = TRUE),
+  Liquid_Proportion_In_Poverty = weighted.mean(liquid, weight, na.rm = TRUE),
+  Home_Owner_And_Liquid_Proportion_In_Poverty = weighted.mean(Home_owner & liquid, weight, na.rm = TRUE),
+  Ineligible_Proportion_In_Poverty = weighted.mean(!eligible, weight, na.rm = TRUE)
+), by = .(IU_agg)]
+
+poverty_summary_BS <- summary_BS[, .(
+  Total_Poverty_Proportion = weighted.mean(poverty_BS, weight), # Total poverty proportion in the population
+  Ineligible_Poverty = weighted.mean(!eligible & poverty_BS, weight),
+  Eligible_HomeOwner_Liquid = weighted.mean(eligible & Home_owner & liquid & poverty_BS, weight),
+  Eligible_HomeOwner_NotLiquid = weighted.mean(eligible & Home_owner & !liquid & poverty_BS, weight),
+  Eligible_NotHomeOwner_Liquid = weighted.mean(eligible & !Home_owner & liquid & poverty_BS, weight),
+  Eligible_NotHomeOwner_NotLiquid = weighted.mean(eligible & !Home_owner & !liquid & poverty_BS, weight)
+), by = .(IU_agg)]
+
+poverty_long_BS <- melt(poverty_summary_BS, 
+                     id.vars = c("IU_agg", "Total_Poverty_Proportion"), 
+                     variable.name = "Category", 
+                     value.name = "Proportion")
+
+ggplot(poverty_long_BS, aes(x = IU_agg, y = Proportion*100, fill = Category)) +
+  geom_bar(stat = "identity") +
+  #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
+  labs_e61(title = "Composition of Poverty by Family Type - Budget Standard line",
+       x = "",
+       y = "%",
+       fill = "Poverty Category") + coord_flip() +
+  scale_y_continuous_e61(limits = c(0,100,25)) +
+  #theme_e61(legend = "bottom") + 
+  format_flip() +
+  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.5,1,2,1.5),y= c(30,30,30,55,55),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+
+net_RR_summary_BS <- summary_BS[, .(
+  net_RR_Ineligible = weighted.mean(net_RR[!eligible & poverty_BS], weight[!eligible & poverty_BS], na.rm = TRUE),
+  net_RR_HomeOwner_Liquid = weighted.mean(net_RR[eligible & Home_owner & liquid & poverty_BS], 
+                                          weight[eligible & Home_owner & liquid & poverty_BS], na.rm = TRUE),
+  net_RR_HomeOwner_NotLiquid = weighted.mean(net_RR[eligible & Home_owner & !liquid & poverty_BS], 
+                                             weight[eligible & Home_owner & !liquid & poverty_BS], na.rm = TRUE),
+  net_RR_NotHomeOwner_Liquid = weighted.mean(net_RR[eligible & !Home_owner & liquid & poverty_BS], 
+                                             weight[eligible & !Home_owner & liquid & poverty_BS], na.rm = TRUE),
+  net_RR_NotHomeOwner_NotLiquid = weighted.mean(net_RR[eligible & !Home_owner & !liquid & poverty_BS], 
+                                                weight[eligible & !Home_owner & !liquid & poverty_BS], na.rm = TRUE),
+  net_RR_NotInPoverty = weighted.mean(net_RR[poverty_BS == FALSE], weight[poverty_BS == FALSE], na.rm = TRUE)
+), by = .(IU_agg)]
+
+net_RR_summary_BS[,net_RR_Ineligible := NULL] # Delete after checking this is zero
+
+net_RR_long_BS <- melt(net_RR_summary_BS, 
+                        id.vars = c("IU_agg"), 
+                        variable.name = "Category", 
+                        value.name = "Proportion")
+
+ggplot(net_RR_long_BS,aes(x=IU_agg,y=Proportion,fill=Category)) + geom_col(position = "dodge") +
+  theme_e61(legend = "bottom") + coord_flip() +
+  scale_y_continuous_e61(limits=c(0,0.8,0.2))
+  
+## Median income line (BS_line_24, BS_BHC_24)
+
+summary_med <- Rep_rates_df_subset[,.(Home_owner,liquid = weeks_of_liquid_assets > liquid_thresh,net_RR,poverty_med = wm_50_BHC <= 0,eligible = eligibility_status != "Ineligible",IU_agg,weight = hhld_wgt*hhld_size)]
+
+summary_med[, .(
+  Poverty_Proportion = weighted.mean(poverty_med, weight),
+  Home_Owner_Proportion_In_Poverty = weighted.mean(Home_owner, weight, na.rm = TRUE),
+  Liquid_Proportion_In_Poverty = weighted.mean(liquid, weight, na.rm = TRUE),
+  Home_Owner_And_Liquid_Proportion_In_Poverty = weighted.mean(Home_owner & liquid, weight, na.rm = TRUE),
+  Ineligible_Proportion_In_Poverty = weighted.mean(!eligible, weight, na.rm = TRUE)
+), by = .(IU_agg)]
+
+poverty_summary_med <- summary_med[, .(
+  Total_Poverty_Proportion = weighted.mean(poverty_med, weight), # Total poverty proportion in the population
+  Ineligible_Poverty = weighted.mean(!eligible & poverty_med, weight),
+  Eligible_HomeOwner_Liquid = weighted.mean(eligible & Home_owner & liquid & poverty_med, weight),
+  Eligible_HomeOwner_NotLiquid = weighted.mean(eligible & Home_owner & !liquid & poverty_med, weight),
+  Eligible_NotHomeOwner_Liquid = weighted.mean(eligible & !Home_owner & liquid & poverty_med, weight),
+  Eligible_NotHomeOwner_NotLiquid = weighted.mean(eligible & !Home_owner & !liquid & poverty_med, weight)
+), by = .(IU_agg)]
+
+poverty_long_med <- melt(poverty_summary_med, 
+                        id.vars = c("IU_agg", "Total_Poverty_Proportion"), 
+                        variable.name = "Category", 
+                        value.name = "Proportion")
+
+ggplot(poverty_long_med, aes(x = IU_agg, y = Proportion*100, fill = Category)) +
+  geom_bar(stat = "identity") +
+  #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
+  labs_e61(title = "Composition of Poverty by Family Type - Median Income line",
+           x = "",
+           y = "%",
+           fill = "Poverty Category") + coord_flip() +
+  scale_y_continuous_e61(limits = c(0,100,25)) +
+  #theme_e61(legend = "bottom") + 
+  format_flip() +
+  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.5,1,2,1.5),y= c(55,55,55,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+
