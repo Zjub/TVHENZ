@@ -46,3 +46,5 @@ dt2[,age_band := factor(AgeBnd,levels = c("0 to 8","9 to 14","15 to 18","19 to 2
 ggplot(dt2[AgeBnd != "ALL" & DsbltyGrpNm != "ALL"],aes(x=age_band,y=cost/1000000,fill = DsbltyGrpNm)) + geom_col() +
   labs_e61(title = "NDIS cost by age group",subtitle = "In December 2024",y="$m",x="Age Band") + theme_e61(legend = "bottom")
 
+
+dt2[AgeBnd == "ALL" & DsbltyGrpNm == "Autism"]$cost/dt2[AgeBnd == "ALL" & DsbltyGrpNm == "ALL"]$cost
