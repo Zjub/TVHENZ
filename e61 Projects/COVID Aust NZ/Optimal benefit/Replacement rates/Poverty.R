@@ -16,7 +16,13 @@ library(Hmisc)
 rm(list=ls())
 gc()
 
+### Assumptions
+
 liquid_thresh = 5 # Only applied at the bottom for now - check to apply more widely
+
+IR_house_single <- 0 # A random figure for "imputed rent" at household level
+IR_house_couple <- 0 # A random figure for "imputed rent" at household level
+IR <- 0 # A random figure for "imputed rent" at equivalised level
 
 ## Use the dataset with flags from Matthew M
 Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
@@ -224,7 +230,9 @@ Rep_rates_df_subset <- henderson_poverty_lines[Rep_rates_df_subset,on=.(Income_U
 
 #Rep_rates_df_subset[,poverty_gap := fifelse(Home_owner == 1,hhincome - min(Weekly_Mortgage_Repayments*0.5, (Including_Housing - Other_than_Housing)) - Other_than_Housing,hhincome - Including_Housing)]
 
-Rep_rates_df_subset[,henderson_BHC := fifelse(Home_owner == 1,hhincome - Including_Housing,hhincome - Including_Housing)] # Negative means below the poverty line
+Rep_rates_df_subset[,henderson_BHC := fifelse(Home_owner == 1,
+                                              fifelse(partnered == 1, hhincome - Including_Housing + IR_house_couple,
+                                                      hhincome - Including_Housing + IR_house_single),hhincome - Including_Housing)] # Negative means below the poverty line
 
 Rep_rates_df_subset[, liquid_assets_category := cut(weeks_of_liquid_assets,
                                                     breaks = liquid_assets_thresholds,
@@ -266,8 +274,6 @@ colnames(Rep_rates_df_subset)
 
 #Rep_rates_df_subset[, weighted_median_50 := wtd.quantile(eq_hhinc, weights = hhld_size * hhld_wgt, probs = 0.5, na.rm = TRUE)] # This is the distribution of post-income - so this will be wrong, it just gives us the distribution around the median of our sample
 #Rep_rates_df_subset[, weighted_median_60 := wtd.quantile(eq_hhinc, weights = hhld_size * hhld_wgt, probs = 0.6, na.rm = TRUE)] # This is the distribution of post-income - so this will be wrong, it just gives us the distribution around the median of our sample
-
-IR <- 000 # A random figure for "imputed rent"
 
 Rep_rates_df_subset[,wm_50_BHC := fifelse(Home_owner == 1,eq_hhinc - weighted_median_50 + IR,eq_hhinc - weighted_median_50)]
 Rep_rates_df_subset[,wm_60_BHC := fifelse(Home_owner == 1,eq_hhinc - weighted_median_60 + IR,eq_hhinc - weighted_median_60)]
@@ -398,9 +404,18 @@ Rep_rates_df_subset[,BS_line_24 := fifelse(partnered == 0,(single_amt_24 + singl
 
 Rep_rates_df_subset[IU_agg == "Single + Dep"]
 
-Rep_rates_df_subset[,BS_BHC := fifelse(Home_owner == 1,hhincome - BS_line,hhincome -BS_line)] # Negative means below the poverty line
-Rep_rates_df_subset[,BS_BHC_rel := fifelse(Home_owner == 1,hhincome - BS_line_rel,hhincome -BS_line_rel)]
-Rep_rates_df_subset[,BS_BHC_24 := fifelse(Home_owner == 1,hhincome - BS_line_24,hhincome -BS_line_24)]
+Rep_rates_df_subset[,BS_BHC := fifelse(Home_owner == 1,
+                                       fifelse(partnered == 1,hhincome - BS_line + IR_house_couple,
+                                               hhincome - BS_line + IR_house_single)
+                                       ,hhincome -BS_line)] # Negative means below the poverty line
+Rep_rates_df_subset[,BS_BHC_rel := fifelse(Home_owner == 1,
+                                           fifelse(partnered == 1,hhincome - BS_line_rel + IR_house_couple,
+                                                   hhincome - BS_line_rel + IR_house_single)
+                                           ,hhincome -BS_line_rel)]
+Rep_rates_df_subset[,BS_BHC_24 := fifelse(Home_owner == 1,
+                                          fifelse(partnered == 1,hhincome - BS_line_24 + IR_house_couple,
+                                                  hhincome - BS_line_24 + IR_house_single)
+                                          ,hhincome -BS_line_24)]
 
 ggplot(Rep_rates_df_subset, aes(x = BS_BHC, weight = normalized_weight_eqind_fam,colour = IU_agg)) +
   geom_density(alpha = 0.1) +  
