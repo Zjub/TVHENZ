@@ -55,11 +55,19 @@ Rep_rates_df$current_net_income <- ifelse(is.na(Rep_rates_df$current_net_income)
                                             Rep_rates_df$current_ES  - Rep_rates_df$current_IT, 
                                           Rep_rates_df$current_net_income)
 
+Rep_rates_df[is.na(current_net_income_partner)] # These are partners with negative income
+
+Rep_rates_df <- Rep_rates_df[!is.na(current_net_income_partner)]
+
 Rep_rates_df$hours0_net_income <- ifelse(is.na(Rep_rates_df$hours0_net_income), 
                                          Rep_rates_df$hours0_gross_income + Rep_rates_df$hours0_net_fam_a + 
                                            Rep_rates_df$hours0_net_fam_b + Rep_rates_df$hours0_RA + 
                                            Rep_rates_df$hours0_ES - Rep_rates_df$hours0_IT, 
                                          Rep_rates_df$hours0_net_income)
+
+Rep_rates_df[,IU_agg := fifelse(partnered == 1 & Numb_dep == 0,"Couple",
+                                       fifelse(partnered == 1 & Numb_dep > 0, "Couple + Dep",
+                                               fifelse(partnered == 0 & Numb_dep == 0, "Single", "Single + Dep")))]
 
 ## Calculate Replacement Rates! 
 
@@ -119,7 +127,37 @@ Rep_rates_df[,eq_hhinc_pre := hhincome_pre/eq_scale]
 Rep_rates_df[, weighted_median_50 := wtd.quantile(eq_hhinc_pre, weights = hhld_size * hhld_wgt, probs = 0.5, na.rm = TRUE)*0.5] 
 Rep_rates_df[, weighted_median_60 := wtd.quantile(eq_hhinc_pre, weights = hhld_size * hhld_wgt, probs = 0.5, na.rm = TRUE)*0.6] 
 
-# Subset data to remove those working less than the fixed hours. Also do age restrictions here
+## Before subsetting, create AHC measures ----
+# First generate the AHC incomes - by removing CRA, and subtracting housing costs. HCs are defined as rent or mortgage payments - so rates and insurance payments currently excluded.
+
+Rep_rates_df[,Rent := fifelse(is.na(Rent),0,Rent)]
+
+Rep_rates_df[,current_AHC := hhincome_pre - Rent - Weekly_Mortgage_Repayments]# - current_RA - current_RA_partner: rent assistance is in the income where appropriate, so already net of rent
+Rep_rates_df[,hours0_AHC := hhincome - Rent - Weekly_Mortgage_Repayments]#  - hours0_RA - hours0_RA_partner: So changes in RA are implicitly captured in changes in the net rent paid here for the poverty line.
+
+# AHC_check <- melt(Rep_rates_df_subset[,.(id = seq(1:nrow(Rep_rates_df_subset)),IU_agg,hhincome,hours0_AHC)],id.vars = c("IU_agg", "id"))
+# 
+# ggplot(AHC_check,aes(x=log(value),colour=variable)) + geom_density() + theme_e61(legend = "bottom")
+# 
+# AHC_check[variable == "hours0_AHC" & value < 0,.N]/AHC_check[variable == "hours0_AHC",.N] # 11% go negative in AHC terms after job loss
+# 
+# AHC_check2 <- melt(Rep_rates_df_subset[,.(id = seq(1:nrow(Rep_rates_df_subset)),IU_agg,hhincome_pre,current_AHC)],id.vars = c("IU_agg", "id")) # Check current AHC income
+# 
+# ggplot(AHC_check2,aes(x=log(value),colour=variable)) + geom_density() + theme_e61(legend = "bottom")
+# 
+# AHC_check2[variable == "current_AHC" & value < 0,.N]/AHC_check2[variable == "current_AHC",.N] # 0.4% are negative in a AHC sense prior to job loss.
+
+# Now calculate the median income line for this income metric. First, the new scale.
+
+Rep_rates_df[,AHC_eq_scale := 1 + 0.724*partnered + 0.35*Numb_dep] # New scale based on this (https://www.stats.govt.nz/assets/Uploads/Methods/Measuring-child-poverty-Equivalence-scale/measuring-child-poverty-equivalence-scale.pdf) due to the lower economies of scale in non-housing expenditures.
+
+Rep_rates_df[,":=" (eq_current_AHC = current_AHC/AHC_eq_scale,eq_hours0_AHC = hours0_AHC/AHC_eq_scale)]
+
+# Now calculate 50% of the median of eq_current_AHC
+
+Rep_rates_df[, AHC_weighted_median_50 := wtd.quantile(eq_current_AHC, weights = hhld_size * hhld_wgt, probs = 0.5, na.rm = TRUE)*0.5] 
+
+### Subset data to remove those working less than the fixed hours. Also do age restrictions here ----
 Rep_rates_df <- subset(Rep_rates_df, Rep_rates_df$AGEEC > 21)
 
 Rep_rates_df <- subset(Rep_rates_df, Rep_rates_df$AGEEC < 55)
@@ -321,9 +359,7 @@ ggplot(Rep_rates_df_subset, aes(x = wm_50_BHC, weight = normalized_weight_eqind_
   ) + xlim(-1500,1500) + theme_e61(legend = "bottom") + geom_vline(xintercept = 0,linetype = "dashed")
 
 # Now look at the distribution by family type
-Rep_rates_df_subset[,IU_agg := fifelse(partnered == 1 & Numb_dep == 0,"Couple",
-                                       fifelse(partnered == 1 & Numb_dep > 0, "Couple + Dep",
-                                               fifelse(partnered == 0 & Numb_dep == 0, "Single", "Single + Dep")))]
+
 
 #Rep_rates_df_subset[, normalized_weight_eqind_fam := hhld_wgt*hhld_size / sum(hhld_wgt*hhld_size), by = .(Income_Unit)]
 Rep_rates_df_subset[, normalized_weight_eqind_fam := hhld_wgt*hhld_size / sum(hhld_wgt*hhld_size), by = .(IU_agg)]
@@ -592,6 +628,105 @@ ggplot(poverty_long_med, aes(x = IU_agg, y = Proportion*100, fill = Category)) +
   geom_bar(stat = "identity") +
   #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
   labs_e61(title = "Composition of Poverty by Family Type - Median Income line",
+           x = "",
+           y = "%",
+           fill = "Poverty Category") + coord_flip() +
+  scale_y_continuous_e61(limits = c(0,100,25)) +
+  #theme_e61(legend = "bottom") + 
+  format_flip() +
+  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.5,1,2,1.5),y= c(55,55,55,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+
+
+###### Create AHC rates ----
+# Just need to complete generating AHC measures above.
+
+Rep_rates_df_subset[,wm_50_AHC := eq_hours0_AHC - AHC_weighted_median_50]
+Rep_rates_df_subset[,pre_wm_50_AHC := eq_current_AHC - AHC_weighted_median_50]
+# 
+# ggplot(Rep_rates_df_subset, aes(x = wm_50_AHC, weight = hhld_size * hhld_wgt)) +
+#   geom_density(alpha = 0.1) +  
+#   labs(
+#     title = "Distribution of Poverty Gap (AHC)",
+#     x = "Poverty Gap",
+#     y = "Weighted Count"
+#   ) + xlim(-1500,1500) + theme_e61(legend = "bottom")
+
+
+#BHC poverty
+Rep_rates_df_subset[, {
+  w <- hhld_size * hhld_wgt  # Individual weights
+  prop_weighted <- sum(w * (wm_50_BHC < 0), na.rm = TRUE) / sum(w, na.rm = TRUE)
+  .(weighted_proportion = prop_weighted)
+}]
+
+Rep_rates_df_subset[, {
+  w <- hhld_size * hhld_wgt  # Individual weights
+  prop_weighted <- sum(w * (pre_wm_50_BHC < 0), na.rm = TRUE) / sum(w, na.rm = TRUE)
+  .(weighted_proportion = prop_weighted)
+}]
+
+
+#AHC poverty
+Rep_rates_df_subset[, {
+  w <- hhld_size * hhld_wgt  # Individual weights
+  prop_weighted <- sum(w * (wm_50_AHC < 0), na.rm = TRUE) / sum(w, na.rm = TRUE)
+  .(weighted_proportion = prop_weighted)
+}]
+
+Rep_rates_df_subset[, {
+  w <- hhld_size * hhld_wgt  # Individual weights
+  prop_weighted <- sum(w * (pre_wm_50_AHC < 0), na.rm = TRUE) / sum(w, na.rm = TRUE)
+  .(weighted_proportion = prop_weighted)
+}]
+
+
+# ggplot(Rep_rates_df_subset, aes(x = wm_50_AHC, weight = normalized_weight_eqind_fam,colour = IU_agg)) +
+#   geom_density(alpha = 0.1) +  
+#   labs(
+#     title = "Distribution of Poverty Gap by Family Type (AHC)",
+#     subtitle = "Median income (50%) line, equivalised individual income",
+#     x = "Poverty Gap",
+#     y = "Weighted Count"
+#   ) + xlim(-1500,1500) + theme_e61(legend = "bottom") + geom_vline(xintercept = 0,linetype = "dashed")
+# 
+# ggplot(Rep_rates_df_subset, aes(x = pre_wm_50_AHC, weight = normalized_weight_eqind_fam,colour = IU_agg)) +
+#   geom_density(alpha = 0.1) +  
+#   labs(
+#     title = "Distribution of Poverty Gap for employed by Family Type (AHC)",
+#     subtitle = "Median income (50%) line, equivalised individual income",
+#     x = "Poverty Gap",
+#     y = "Weighted Count"
+#   ) + xlim(-1500,1500) + theme_e61(legend = "bottom") + geom_vline(xintercept = 0,linetype = "dashed")
+
+# The AHC medians
+summary_med_AHC <- Rep_rates_df_subset[,.(Home_owner,liquid = weeks_of_liquid_assets > liquid_thresh,net_RR,poverty_med = wm_50_AHC <= 0,eligible = eligibility_status != "Ineligible",IU_agg,weight = hhld_wgt*hhld_size)]
+
+summary_med_AHC[, .(
+  Poverty_Proportion = weighted.mean(poverty_med, weight),
+  Home_Owner_Proportion_In_Poverty = weighted.mean(Home_owner, weight, na.rm = TRUE),
+  Liquid_Proportion_In_Poverty = weighted.mean(liquid, weight, na.rm = TRUE),
+  Home_Owner_And_Liquid_Proportion_In_Poverty = weighted.mean(Home_owner & liquid, weight, na.rm = TRUE),
+  Ineligible_Proportion_In_Poverty = weighted.mean(!eligible, weight, na.rm = TRUE)
+), by = .(IU_agg)]
+
+poverty_summary_med_AHC <- summary_med_AHC[, .(
+  Total_Poverty_Proportion = weighted.mean(poverty_med, weight), # Total poverty proportion in the population
+  Ineligible_Poverty = weighted.mean(!eligible & poverty_med, weight),
+  Eligible_HomeOwner_Liquid = weighted.mean(eligible & Home_owner & liquid & poverty_med, weight),
+  Eligible_HomeOwner_NotLiquid = weighted.mean(eligible & Home_owner & !liquid & poverty_med, weight),
+  Eligible_NotHomeOwner_Liquid = weighted.mean(eligible & !Home_owner & liquid & poverty_med, weight),
+  Eligible_NotHomeOwner_NotLiquid = weighted.mean(eligible & !Home_owner & !liquid & poverty_med, weight)
+), by = .(IU_agg)]
+
+poverty_long_med_AHC <- melt(poverty_summary_med_AHC, 
+                        id.vars = c("IU_agg", "Total_Poverty_Proportion"), 
+                        variable.name = "Category", 
+                        value.name = "Proportion")
+
+ggplot(poverty_long_med_AHC, aes(x = IU_agg, y = Proportion*100, fill = Category)) +
+  geom_bar(stat = "identity") +
+  #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
+  labs_e61(title = "Composition of Poverty by Family Type - Median Income line (AHC)",
            x = "",
            y = "%",
            fill = "Poverty Category") + coord_flip() +
