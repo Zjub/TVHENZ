@@ -25,11 +25,9 @@ IR_house_couple <- 0 # A random figure for "imputed rent" at household level
 IR <- 0 # A random figure for "imputed rent" at equivalised level
 
 ## Use the dataset with flags from Matthew M
-Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
-#Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
+#Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
+Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
 
-Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
-#Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
 
 setDT(Rep_rates_df)
 
@@ -627,14 +625,33 @@ poverty_long_med <- melt(poverty_summary_med,
 ggplot(poverty_long_med, aes(x = IU_agg, y = Proportion*100, fill = Category)) +
   geom_bar(stat = "identity") +
   #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
-  labs_e61(title = "Composition of Poverty by Family Type - Median Income line",
+  labs_e61(#title = "Composition of Poverty by Family Type - Median Income line",
+           subtitle = "Before Housing Costs",
            x = "",
            y = "%",
            fill = "Poverty Category") + coord_flip() +
   scale_y_continuous_e61(limits = c(0,100,25)) +
   #theme_e61(legend = "bottom") + 
   format_flip() +
-  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.5,1,2,1.5),y= c(55,55,55,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.7,1.4,1.1,0.8),y= c(55,55,55,55,55),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+
+save_e61("Med_poverty_BHC.pdf",pad_width = 1)
+
+
+ggplot(poverty_long_med, aes(x = IU_agg, y = Proportion*100, fill = Category)) +
+  geom_bar(stat = "identity") +
+  #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
+  labs_e61(title = "Composition of Poverty by Family Type - Median Income line",
+           subtitle = "Before Housing Costs",
+           x = "",
+           y = "%",
+           fill = "Poverty Category") + coord_flip() +
+  scale_y_continuous_e61(limits = c(0,100,25)) +
+  #theme_e61(legend = "bottom") + 
+  format_flip() +
+  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.7,1.4,1.1,0.8),y= c(55,55,55,55,55),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+
+save_e61("Med_poverty_BHC.png",pad_width = 1,res=2)
 
 
 ###### Create AHC rates ----
@@ -726,12 +743,29 @@ poverty_long_med_AHC <- melt(poverty_summary_med_AHC,
 ggplot(poverty_long_med_AHC, aes(x = IU_agg, y = Proportion*100, fill = Category)) +
   geom_bar(stat = "identity") +
   #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
-  labs_e61(title = "Composition of Poverty by Family Type - Median Income line (AHC)",
+  labs_e61(#title = "Composition of Poverty by Family Type - Median Income line (AHC)",
+           subtitle = "After Housing Costs",
            x = "",
            y = "%",
            fill = "Poverty Category") + coord_flip() +
   scale_y_continuous_e61(limits = c(0,100,25)) +
   #theme_e61(legend = "bottom") + 
   format_flip() +
-  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.5,1,2,1.5),y= c(55,55,55,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.7,1.4,1.1,0.8),y= c(58,58,58,58,58),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
 
+save_e61("Med_poverty_AHC.pdf",pad_width = 1)
+
+ggplot(poverty_long_med_AHC, aes(x = IU_agg, y = Proportion*100, fill = Category)) +
+  geom_bar(stat = "identity") +
+  #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
+  labs_e61(title = "Composition of Poverty by Family Type - Median Income line (AHC)",
+    subtitle = "After Housing Costs",
+    x = "",
+    y = "%",
+    fill = "Poverty Category") + coord_flip() +
+  scale_y_continuous_e61(limits = c(0,100,25)) +
+  #theme_e61(legend = "bottom") + 
+  format_flip() +
+  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.7,1.4,1.1,0.8),y= c(58,58,58,58,58),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+
+save_e61("Med_poverty_AHC.png",pad_width = 1,res=2)
