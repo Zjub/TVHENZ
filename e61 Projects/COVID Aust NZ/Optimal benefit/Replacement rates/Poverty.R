@@ -18,18 +18,19 @@ gc()
 
 ### Assumptions
 
-liquid_thresh = 5 # Only applied at the bottom for now - check to apply more widely
+liquid_thresh = 13 # Only applied at the bottom for now - check to apply more widely
 
 IR_house_single <- 0 # A random figure for "imputed rent" at household level
 IR_house_couple <- 0 # A random figure for "imputed rent" at household level
 IR <- 0 # A random figure for "imputed rent" at equivalised level
 
 ## Use the dataset with flags from Matthew M
-#Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
-Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
-
+Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
+#Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
 
 setDT(Rep_rates_df)
+
+min(Rep_rates_df$hours)
 
 hour_limit <- 30 # Two versions used - 30 for FT, 5 for the general.
 
@@ -154,6 +155,9 @@ Rep_rates_df[,":=" (eq_current_AHC = current_AHC/AHC_eq_scale,eq_hours0_AHC = ho
 # Now calculate 50% of the median of eq_current_AHC
 
 Rep_rates_df[, AHC_weighted_median_50 := wtd.quantile(eq_current_AHC, weights = hhld_size * hhld_wgt, probs = 0.5, na.rm = TRUE)*0.5] 
+
+Rep_rates_df[,wm_50_AHC := eq_hours0_AHC - AHC_weighted_median_50]
+Rep_rates_df[,pre_wm_50_AHC := eq_current_AHC - AHC_weighted_median_50]
 
 ### Subset data to remove those working less than the fixed hours. Also do age restrictions here ----
 Rep_rates_df <- subset(Rep_rates_df, Rep_rates_df$AGEEC > 21)
@@ -485,29 +489,64 @@ ggplot(Rep_rates_df_subset, aes(x = BS_BHC, weight = normalized_weight_eqind_fam
 group_count <- Rep_rates_df_subset[,.(total = sum(hhld_wgt*hhld_size)),by=.(IU_agg)]
 hend_count <- Rep_rates_df_subset[henderson_BHC <= 0,.(N = sum(hhld_wgt*hhld_size)),by=.(IU_agg)]
 med_count <- Rep_rates_df_subset[wm_50_BHC <= 0,.(N = sum(hhld_wgt*hhld_size)),by=.(IU_agg)]
+AHC_med_count <- Rep_rates_df_subset[wm_50_AHC <= 0,.(N = sum(hhld_wgt*hhld_size)),by=.(IU_agg)]
 BS_count <- Rep_rates_df_subset[BS_BHC <= 0,.(N = sum(hhld_wgt*hhld_size)),by=.(IU_agg)]
 BS_rel_count <- Rep_rates_df_subset[BS_BHC_rel <= 0,.(N = sum(hhld_wgt*hhld_size)),by=.(IU_agg)]
 BS_24_count <- Rep_rates_df_subset[BS_BHC_24 <= 0,.(N = sum(hhld_wgt*hhld_size)),by=.(IU_agg)]
 
 hend_count <- group_count[hend_count,on=.(IU_agg)][,PR := N/total][order(IU_agg)]
 med_count <- group_count[med_count,on=.(IU_agg)][,PR := N/total][order(IU_agg)]
+AHC_med_count <- group_count[AHC_med_count,on=.(IU_agg)][,PR := N/total][order(IU_agg)]
 BS_count <- group_count[BS_count,on=.(IU_agg)][,PR := N/total][order(IU_agg)]
 BS_rel_count <- group_count[BS_rel_count,on=.(IU_agg)][,PR := N/total][order(IU_agg)]
 BS_24_count <- group_count[BS_24_count,on=.(IU_agg)][,PR := N/total][order(IU_agg)]
 
-PR <- melt(data.table(cat = hend_count$IU_agg, hend = hend_count$PR, med = med_count$PR, BS = BS_count$PR,BS_rel = BS_rel_count$PR,BS_24 = BS_24_count$PR),id.vars = "cat")
+PR <- melt(data.table(cat = hend_count$IU_agg, hend = hend_count$PR, med = med_count$PR, AHC_med = AHC_med_count$PR, BS = BS_count$PR,BS_rel = BS_rel_count$PR,BS_24 = BS_24_count$PR),id.vars = "cat")
 
-ggplot(PR,aes(x=cat,y=value,fill=variable)) + geom_col(position = "dodge") +
+ggplot(PR,aes(x=cat,y=value*100,fill=variable)) + geom_col(position = "dodge") +
   theme_e61(legend = "bottom") +
   labs_e61("Job loss Poverty Rates via different lines",y="") +
-  scale_y_continuous_e61(limits = c(0,1,0.2))
+  scale_y_continuous_e61(limits = c(0,100,20)) +
+  plab(label = c("Henderson","Median (50pc)","After Housing Costs","Budget Standard (2016 real)","Budget Standard (2016 relative)","Budget Standard (2024)"),y=c(95,87,79,71,63,55),x=c(0.5,0.5,0.5,0.5,0.5,0.5))
+
+ggplot(PR,aes(x=cat,y=value*100,fill=variable)) + geom_col(position = "dodge") +
+  labs_e61(subtitle = "Dependent = 1 child",y="",
+           sources = c("ABS","e61","UNSW SPRC"),
+           footnotes = c("Standards defined using employed population in the ABS Survey of Income and Housing (2020), inflated up to 2024 levels")) +
+  scale_y_continuous_e61(limits = c(0,100,20)) +
+  plab(label = c("Henderson","Median (50pc)","After Housing Costs","Budget (2016 real)","Budget (2016 relative)","Budget (2024)"),y=c(95,87,79,71,63,55),x=c(0.5,0.5,0.5,0.5,0.5,0.5))
+
+save_e61("Poverty/Poverty_comparison.pdf")
+
 
 unique(Rep_rates_df_subset[,.(IU_agg,Including_Housing,weighted_median_50,BS_line,Numb_dep)])
 
-ggplot(melt(unique(Rep_rates_df_subset[Numb_dep < 2,.(IU_agg,Henderson = Including_Housing,Med = weighted_median_50*eq_scale,BS_2016 = BS_line,BS_rel_2016 = BS_line_rel,BS_2024 = BS_line_24)]),id.var = "IU_agg"),aes(x=IU_agg,y=value,fill=variable)) + geom_col(position = "dodge") + theme_e61(legend = "bottom") +
-  labs(title = "Household poverty level ($weekly)",subtitle = "Dependents = 1 child",y="") +
-  scale_y_continuous_e61(limits = c(0,1200,200))
+ggplot(melt(unique(Rep_rates_df_subset[Numb_dep < 2,.(IU_agg,Henderson = Including_Housing,Med = weighted_median_50*eq_scale,AHC_Med = AHC_weighted_median_50*eq_scale,BS_2016 = BS_line,BS_rel_2016 = BS_line_rel,BS_2024 = BS_line_24)]),id.var = "IU_agg"),aes(x=IU_agg,y=value,fill=variable)) + geom_col(position = "dodge") + 
+  labs(title = "Household poverty line ($weekly)",subtitle = "Dependents = 1 child",y="") +
+  scale_y_continuous_e61(limits = c(0,1200,200),labels = scales::dollar_format()) +
+  plab(label = c("Henderson","Median (50pc)","After Housing Costs","Budget Standard (2016 real)","Budget Standard (2016 relative)","Budget Standard (2024)"),y=c(1150,1090,1030,970,910,850),x=c(2.7,2.7,2.7,2.7,2.7,2.7))
 
+line_data <- melt(unique(Rep_rates_df_subset[Numb_dep < 2,.(IU_agg,Henderson = Including_Housing,Med = weighted_median_50*eq_scale,AHC_Med = AHC_weighted_median_50*eq_scale,BS_2016 = BS_line,BS_rel_2016 = BS_line_rel,BS_2024 = BS_line_24)]),id.var = "IU_agg")
+line_data[,IU_agg := factor(IU_agg,levels = c("Single","Single + Dep","Couple","Couple + Dep"))]
+
+ggplot(line_data,aes(x=IU_agg,y=value,fill=variable)) + geom_col(position = "dodge") + 
+  labs(subtitle = "Dependents = 1 child",y="",
+       sources = c("ABS","e61","UNSW SPRC"),
+       footnotes = c("Standards defined using employed population in the ABS Survey of Income and Housing (2020), inflated up to 2024 levels")) +
+  scale_y_continuous_e61(limits = c(0,1600,200),labels = scales::dollar_format()) +
+  plab(label = c("Henderson","Median (50pc)","After Housing Costs","Budget Standard (2016 real)","Budget Standard (2016 relative)","Budget Standard (2024)"),y=c(1550,1450,1350,1250,1150,1050),x=c(0.7,0.7,0.7,0.7,0.7,0.7)) + 
+  scale_x_discrete(labels = function(x) {
+    # Alternate label positioning
+    ifelse(seq_along(x) %% 2 == 0, paste0("\n", x), x)
+  })
+
+save_e61("Poverty/Poverty_line_comparison.pdf")
+
+line_data[IU_agg == "Single" & variable == "AHC_Med"]$value/line_data[IU_agg == "Single" & variable == "Med"]$value
+line_data[IU_agg == "Couple" & variable == "AHC_Med"]$value/line_data[IU_agg == "Couple" & variable == "Med"]$value
+
+line_data[IU_agg == "Single" & variable == "AHC_Med"]$value - line_data[IU_agg == "Single" & variable == "Med"]$value
+                  
 Rep_rates_df_subset$eq_scale
 
 Rep_rates_df_subset[IU_agg == "Single + Dep"]
@@ -625,40 +664,94 @@ poverty_long_med <- melt(poverty_summary_med,
 ggplot(poverty_long_med, aes(x = IU_agg, y = Proportion*100, fill = Category)) +
   geom_bar(stat = "identity") +
   #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
-  labs_e61(#title = "Composition of Poverty by Family Type - Median Income line",
-           subtitle = "Before Housing Costs",
+  labs_e61(title = "Composition of Poverty by Family Type - Median Income line",
            x = "",
            y = "%",
            fill = "Poverty Category") + coord_flip() +
   scale_y_continuous_e61(limits = c(0,100,25)) +
   #theme_e61(legend = "bottom") + 
   format_flip() +
-  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.7,1.4,1.1,0.8),y= c(55,55,55,55,55),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.5,1,2,1.5),y= c(55,55,55,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
 
-save_e61("Med_poverty_BHC.pdf",pad_width = 1)
+# Make RR plots:
+
+# Create bins for net_RR
+summary_med[, net_RR_binned := cut(pmax(net_RR, 0), 
+                                   breaks = seq(0, 1, by = 0.1), 
+                                   include.lowest = TRUE, right = FALSE)]
+
+# Compute weighted proportions by net_RR bins
+poverty_summary_med_bins <- summary_med[, .(
+  Total_Poverty_Proportion = weighted.mean(poverty_med, weight), # Total poverty proportion in the population
+  Ineligible_Poverty = weighted.mean(!eligible & poverty_med, weight),
+  Eligible_HomeOwner_Liquid = weighted.mean(eligible & Home_owner & liquid & poverty_med, weight),
+  Eligible_HomeOwner_NotLiquid = weighted.mean(eligible & Home_owner & !liquid & poverty_med, weight),
+  Eligible_NotHomeOwner_Liquid = weighted.mean(eligible & !Home_owner & liquid & poverty_med, weight),
+  Eligible_NotHomeOwner_NotLiquid = weighted.mean(eligible & !Home_owner & !liquid & poverty_med, weight)
+), by = .(net_RR_binned)]
+
+# Convert to long format
+poverty_long_med_bins <- melt(poverty_summary_med_bins, 
+                              id.vars = c("net_RR_binned", "Total_Poverty_Proportion"), 
+                              variable.name = "Category", 
+                              value.name = "Proportion")
+
+poverty_long_med_bins
 
 
-ggplot(poverty_long_med, aes(x = IU_agg, y = Proportion*100, fill = Category)) +
+ggplot(poverty_long_med_bins[net_RR_binned != "[0.8,0.9)"], aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
   geom_bar(stat = "identity") +
   #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
-  labs_e61(title = "Composition of Poverty by Family Type - Median Income line",
-           subtitle = "Before Housing Costs",
+  labs_e61(title = "Composition of Poverty by Replacement Rate - Median Income line",
            x = "",
            y = "%",
            fill = "Poverty Category") + coord_flip() +
   scale_y_continuous_e61(limits = c(0,100,25)) +
   #theme_e61(legend = "bottom") + 
   format_flip() +
-  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.7,1.4,1.1,0.8),y= c(55,55,55,55,55),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.5,1,2,1.5),y= c(55,55,55,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
 
-save_e61("Med_poverty_BHC.png",pad_width = 1,res=2)
+## RR counts - this is a check.  The ineligible points (not in poverty ineligble) suggest something worth understanding further here.
+# Compute population density by net_RR_binned, eligibility, and poverty status
+population_density <- summary_med[, .(
+  In_Poverty_Eligible = sum(weight[poverty_med & eligible], na.rm = TRUE),
+  In_Poverty_Ineligible = sum(weight[poverty_med & !eligible], na.rm = TRUE),
+  Not_In_Poverty_Eligible = sum(weight[!poverty_med & eligible], na.rm = TRUE),
+  Not_In_Poverty_Ineligible = sum(weight[!poverty_med & !eligible], na.rm = TRUE)
+), by = .(net_RR_binned)]
 
+# Convert to long format for ggplot
+population_density_long <- melt(population_density, 
+                                id.vars = "net_RR_binned", 
+                                variable.name = "Category", 
+                                value.name = "Population")
+
+population_density_long[,Category := factor(Category,levels = c("Not_In_Poverty_Eligible","Not_In_Poverty_Ineligible","In_Poverty_Eligible","In_Poverty_Ineligible"))]
+
+population_density_long[,label_bin :=sub(".*,([^]]*)\\)", "\\1", net_RR_binned)]
+
+# Plot the stacked bar chart for population distribution
+ggplot(population_density_long, aes(x = as.numeric(label_bin)*100, y = Population/1000000, fill = Category)) +
+  geom_bar(stat = "identity", position = "stack") +
+  labs_e61(title = "Population Density by Net Replacement Rate and Eligibility",
+           subtitle = "Median BHC poverty line",
+           x = "",
+           y = "Millions",
+           fill = "Poverty & Eligibility Status") + 
+  coord_flip() +
+  scale_y_continuous_e61(limits = c(0,4,1)) +
+  scale_x_continuous_e61(limits=c(0,100,10)) +
+  format_flip() + theme_e61() +
+  plab(label = c("Eligible - Not in Poverty","Ineligible - Not in Poverty","Eligible - In Poverty","Ineligible - In Poverty"),y=c(2,2,2,2),x=c(65,55,85,75))
+
+max(summary_med[poverty_med == FALSE & eligible == FALSE]$net_RR)
+
+population_density_long[label_bin == 0.1,.(count = sum(Population))]$count/population_density_long[,.(count = sum(Population))]$count
 
 ###### Create AHC rates ----
 # Just need to complete generating AHC measures above.
 
-Rep_rates_df_subset[,wm_50_AHC := eq_hours0_AHC - AHC_weighted_median_50]
-Rep_rates_df_subset[,pre_wm_50_AHC := eq_current_AHC - AHC_weighted_median_50]
+
 # 
 # ggplot(Rep_rates_df_subset, aes(x = wm_50_AHC, weight = hhld_size * hhld_wgt)) +
 #   geom_density(alpha = 0.1) +  
@@ -743,29 +836,113 @@ poverty_long_med_AHC <- melt(poverty_summary_med_AHC,
 ggplot(poverty_long_med_AHC, aes(x = IU_agg, y = Proportion*100, fill = Category)) +
   geom_bar(stat = "identity") +
   #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
-  labs_e61(#title = "Composition of Poverty by Family Type - Median Income line (AHC)",
-           subtitle = "After Housing Costs",
+  labs_e61(title = "Composition of Poverty by Family Type - Median Income line (AHC)",
            x = "",
            y = "%",
            fill = "Poverty Category") + coord_flip() +
   scale_y_continuous_e61(limits = c(0,100,25)) +
   #theme_e61(legend = "bottom") + 
   format_flip() +
-  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.7,1.4,1.1,0.8),y= c(58,58,58,58,58),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.5,1,2,1.5),y= c(55,55,55,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
 
-save_e61("Med_poverty_AHC.pdf",pad_width = 1)
+# Make RR plots for AHC:
 
-ggplot(poverty_long_med_AHC, aes(x = IU_agg, y = Proportion*100, fill = Category)) +
+# Create bins for net_RR
+summary_med_AHC[, net_RR_binned := cut(pmax(net_RR, 0), 
+                                   breaks = seq(0, 1, by = 0.1), 
+                                   include.lowest = TRUE, right = FALSE)]
+
+# Compute weighted proportions by net_RR bins
+poverty_summary_med_bins_AHC <- summary_med_AHC[, .(
+  Total_Poverty_Proportion = weighted.mean(poverty_med, weight), # Total poverty proportion in the population
+  Ineligible_Poverty = weighted.mean(!eligible & poverty_med, weight),
+  Eligible_HomeOwner_Liquid = weighted.mean(eligible & Home_owner & liquid & poverty_med, weight),
+  Eligible_HomeOwner_NotLiquid = weighted.mean(eligible & Home_owner & !liquid & poverty_med, weight),
+  Eligible_NotHomeOwner_Liquid = weighted.mean(eligible & !Home_owner & liquid & poverty_med, weight),
+  Eligible_NotHomeOwner_NotLiquid = weighted.mean(eligible & !Home_owner & !liquid & poverty_med, weight)
+), by = .(net_RR_binned)]
+
+# Convert to long format
+poverty_long_med_bins_AHC <- melt(poverty_summary_med_bins_AHC, 
+                              id.vars = c("net_RR_binned", "Total_Poverty_Proportion"), 
+                              variable.name = "Category", 
+                              value.name = "Proportion")
+
+poverty_long_med_bins_AHC
+
+poverty_long_med_bins_AHC <- poverty_long_med_bins_AHC[net_RR_binned != "[0.8,0.9)"]
+
+ggplot(poverty_long_med_bins_AHC[net_RR_binned != "[0.8,1]"], aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
   geom_bar(stat = "identity") +
   #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
-  labs_e61(title = "Composition of Poverty by Family Type - Median Income line (AHC)",
-    subtitle = "After Housing Costs",
-    x = "",
-    y = "%",
-    fill = "Poverty Category") + coord_flip() +
+  labs_e61(title = "Composition of Poverty by Replacement Rate - Median Income line (AHC)",
+           x = "",
+           y = "%",
+           fill = "Poverty Category") + coord_flip() +
   scale_y_continuous_e61(limits = c(0,100,25)) +
   #theme_e61(legend = "bottom") + 
   format_flip() +
-  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.7,1.4,1.1,0.8),y= c(58,58,58,58,58),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(3.5,3,2.5,2,1.5),y= c(80,80,80,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
 
-save_e61("Med_poverty_AHC.png",pad_width = 1,res=2)
+## RR counts - this is a check.  The ineligible points (not in poverty ineligble) suggest something worth understanding further here.
+# Compute population density by net_RR_binned, eligibility, and poverty status
+population_density_AHC <- summary_med_AHC[, .(
+  In_Poverty_Eligible = sum(weight[poverty_med & eligible], na.rm = TRUE),
+  In_Poverty_Ineligible = sum(weight[poverty_med & !eligible], na.rm = TRUE),
+  Not_In_Poverty_Eligible = sum(weight[!poverty_med & eligible], na.rm = TRUE),
+  Not_In_Poverty_Ineligible = sum(weight[!poverty_med & !eligible], na.rm = TRUE)
+), by = .(net_RR_binned)]
+
+# Convert to long format for ggplot
+population_density_long_AHC <- melt(population_density_AHC, 
+                                id.vars = "net_RR_binned", 
+                                variable.name = "Category", 
+                                value.name = "Population")
+
+population_density_long_AHC[,Category := factor(Category,levels = c("Not_In_Poverty_Eligible","Not_In_Poverty_Ineligible","In_Poverty_Eligible","In_Poverty_Ineligible"))]
+
+population_density_long_AHC[,label_bin :=sub(".*,([^]]*)\\)", "\\1", net_RR_binned)]
+
+# Plot the stacked bar chart for population distribution
+ggplot(population_density_long_AHC, aes(x = as.numeric(label_bin)*100, y = Population/1000000, fill = Category)) +
+  geom_bar(stat = "identity", position = "stack") +
+  labs_e61(title = "Population Density by Net Replacement Rate and Eligibility (AHC)",
+           subtitle = "Median BHC poverty line",
+           x = "",
+           y = "Millions",
+           fill = "Poverty & Eligibility Status") + 
+  coord_flip() +
+  scale_y_continuous_e61(limits = c(0,4,1)) +
+  scale_x_continuous_e61(limits=c(0,100,10)) +
+  format_flip() + theme_e61() +
+  plab(label = c("Eligible - Not in Poverty","Ineligible - Not in Poverty","Eligible - In Poverty","Ineligible - In Poverty"),y=c(2,2,2,2),x=c(65,55,85,75))
+
+max(summary_med_AHC[poverty_med == FALSE & eligible == FALSE]$net_RR)
+
+population_density_long_AHC[label_bin == 0.1,.(count = sum(Population))]$count/population_density_long_AHC[,.(count = sum(Population))]$count
+
+##### Visualise comparisons
+
+ggplot(poverty_long_med_bins_AHC[net_RR_binned != "[0.8,1]"], aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
+  geom_bar(stat = "identity") +
+  #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
+  labs_e61(title = "Composition of Poverty by Replacement Rate - Median Income line (AHC)",
+           x = "",
+           y = "%",
+           fill = "Poverty Category") + coord_flip() +
+  scale_y_continuous_e61(limits = c(0,100,25)) +
+  #theme_e61(legend = "bottom") + 
+  format_flip() +
+  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(3.5,3,2.5,2,1.5),y= c(80,80,80,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+
+ggplot(poverty_long_med_bins[net_RR_binned != "[0.8,0.9)"], aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
+  geom_bar(stat = "identity") +
+  #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
+  labs_e61(title = "Composition of Poverty by Replacement Rate - Median Income line",
+           x = "",
+           y = "%",
+           fill = "Poverty Category") + coord_flip() +
+  scale_y_continuous_e61(limits = c(0,100,25)) +
+  #theme_e61(legend = "bottom") + 
+  format_flip() +
+  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.5,1,2,1.5),y= c(55,55,55,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
