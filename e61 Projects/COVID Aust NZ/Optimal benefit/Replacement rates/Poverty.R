@@ -923,26 +923,64 @@ population_density_long_AHC[label_bin == 0.1,.(count = sum(Population))]$count/p
 
 ##### Visualise comparisons
 
-ggplot(poverty_long_med_bins_AHC[net_RR_binned != "[0.8,1]"], aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
+AHC_RR_pov <- ggplot(poverty_long_med_bins_AHC[net_RR_binned != "[0.8,1]"], aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
   geom_bar(stat = "identity") +
   #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
-  labs_e61(title = "Composition of Poverty by Replacement Rate - Median Income line (AHC)",
+  labs_e61(#title = "Composition of Poverty by Replacement Rate - Median Income line (AHC)",
+           subtitle = "After Housing Costs",
            x = "",
            y = "%",
            fill = "Poverty Category") + coord_flip() +
   scale_y_continuous_e61(limits = c(0,100,25)) +
   #theme_e61(legend = "bottom") + 
-  format_flip() +
-  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(3.5,3,2.5,2,1.5),y= c(80,80,80,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+  format_flip() #+
+  #plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(3.5,3,2.5,2,1.5),y= c(80,80,80,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
 
-ggplot(poverty_long_med_bins[net_RR_binned != "[0.8,0.9)"], aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
+BHC_RR_pov <- ggplot(poverty_long_med_bins[net_RR_binned != "[0.8,0.9)"], aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
   geom_bar(stat = "identity") +
   #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
-  labs_e61(title = "Composition of Poverty by Replacement Rate - Median Income line",
+  labs_e61(#title = "Composition of Poverty by Replacement Rate - Median Income line",
+           subtitle = "Before Housing Costs",
            x = "",
            y = "%",
            fill = "Poverty Category") + coord_flip() +
   scale_y_continuous_e61(limits = c(0,100,25)) +
   #theme_e61(legend = "bottom") + 
   format_flip() +
-  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.5,1,2,1.5),y= c(55,55,55,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(3,2,1,7.5,6.5),y= c(55,55,55,55,55),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+
+save_e61(paste0("RR_Poverty",hour_limit,".pdf"), BHC_RR_pov,  AHC_RR_pov,
+         footnotes = c("Poverty defined relative to half the Median Income of the employed population. Experiment asks what proportion of households fall into this measure of poverty after job loss.","Housing costs reflect the full gross rent or mortgage paid. Other housing expenses are excluded."), 
+         sources = c("e61", "ABS"))
+
+# Family type
+
+BHC_FT <- ggplot(poverty_long_med, aes(x = IU_agg, y = Proportion*100, fill = Category)) +
+  geom_bar(stat = "identity") +
+  #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
+  labs_e61(#title = "Composition of Poverty by Family Type - Median Income line",
+           subtitle = "Before Housing Costs",
+           x = "",
+           y = "%",
+           fill = "Poverty Category") + coord_flip() +
+  scale_y_continuous_e61(limits = c(0,100,25)) +
+  #theme_e61(legend = "bottom") + 
+  format_flip() +
+  plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.5,1,4.3,3.8),y= c(55,55,55,55,55),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+
+AHC_FT <- ggplot(poverty_long_med_AHC, aes(x = IU_agg, y = Proportion*100, fill = Category)) +
+  geom_bar(stat = "identity") +
+  #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
+  labs_e61(#title = "Composition of Poverty by Family Type - Median Income line (AHC)",
+           subtitle = "After Housing Costs",
+           x = "",
+           y = "%",
+           fill = "Poverty Category") + coord_flip() +
+  scale_y_continuous_e61(limits = c(0,100,25)) +
+  #theme_e61(legend = "bottom") + 
+  format_flip() #+
+  #plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.5,1,2,1.5),y= c(55,55,55,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+
+save_e61(paste0("FT_Poverty",hour_limit,".pdf"), BHC_FT,  AHC_FT,
+         footnotes = c("Poverty defined relative to half the Median Income of the employed population. Experiment asks what proportion of households fall into this measure of poverty after job loss.","Housing costs reflect the full gross rent or mortgage paid. Other housing expenses are excluded."), 
+         sources = c("e61", "ABS"))
