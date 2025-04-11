@@ -361,7 +361,7 @@ summary_med_AHC <- Rep_rates_df_subset[,.(Home_owner,liquid = weeks_of_liquid_as
 
 summary_med_AHC
 
-compute_results <- function(subset_data, income = "AHC") {
+compute_results <- function(subset_data, income = "AHC",loop = 700) {
   # Determine variable suffix based on income type
   suffix <- if (income == "AHC") "_AHC" else ""
   suffix2 <- if (income == "AHC") "_AHC" else "_BHC"
@@ -400,7 +400,7 @@ compute_results <- function(subset_data, income = "AHC") {
   )
   
   # Loop over benefit adjustments
-  for (i in 0:700) {
+  for (i in 0:loop) {
     adjusted_data <- copy(subset_data)
     #adjusted_data[, adjusted_poverty_gap := ifelse(hours0_taxable_benefit > 0, poverty_gap + i/get(eq_var), poverty_gap)] # Adjusting so that the increase is $1, which is a lower equivalised amount for larger families
     adjusted_data[, adjusted_poverty_gap := ifelse(hours0_taxable_benefit + hours0_net_fam_a_income + hours0_net_fam_b_income > 0, poverty_gap + i, poverty_gap)]
@@ -641,3 +641,32 @@ ggplot(NoChild_sole_BHC_poverty_noRAreceipt, aes(x = i, y = poverty_rate * 100, 
 Rep_rates_df_subset[Numb_dep == 0 & partnered == 0 & actual_gap_BHC < -300 & group != "Ineligible"]
 
 Rep_rates_df_subset[Numb_dep > 0 & partnered == 0 & actual_gap_BHC < -600 & group != "Ineligible"]
+
+# For abstract
+
+NoChild_sole_BHC_poverty_illiquid <- compute_results(Rep_rates_df_subset[Numb_dep == 0 & partnered == 0 & hours0_RA > 0 & group == "Eligible: Neither"],income="BHC",loop=300)
+
+NoChild_sole_BHC_poverty_illiquid[poverty_rate >0.40]
+NoChild_sole_BHC_poverty_illiquid[89:95]
+
+Total_BHC_poverty_illiquid <- compute_results(Rep_rates_df_subset[group != "Ineligible"],income="BHC",loop=300)
+Total_BHC_poverty_illiquid[i %in% seq(89,95,by=1)][,.(poverty = sum(poverty_rate)),by="i"]
+
+BHC_poverty_illiquid_RA <- compute_results(Rep_rates_df_subset[hours0_RA > 0 & group == "Eligible: Neither"],income="BHC",loop=300)
+
+BHC_poverty_illiquid_RA[i %in% seq(89,95,by=1)][,.(poverty = sum(poverty_rate)),by="i"]
+
+AHC_poverty_illiquid_RA <- compute_results(Rep_rates_df_subset[hours0_RA > 0 & group == "Eligible: Neither"],income="AHC",loop=500)
+
+target <- AHC_poverty_illiquid_RA[i==0]$poverty_rate - BHC_poverty_illiquid_RA[i==0]$poverty_rate + BHC_poverty_illiquid_RA[i==91]$poverty_rate
+
+AHC_poverty_illiquid_RA[poverty_rate <= target]
+
+91/389
+
+303/389
+
+### Construct distribution of replacement rates for submission as well.
+
+
+
