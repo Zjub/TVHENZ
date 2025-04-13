@@ -9,7 +9,13 @@ library(readr)
 library(tidyverse)
 library(data.table)
 
-Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version original
+work_home <- "home"
+
+if (work_home == "work"){
+  Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version original
+} else {
+  Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version original
+}
 
 setDT(Rep_rates_df)
 
@@ -147,7 +153,14 @@ print(RR3)
 initial_dist <- Rep_rates_df_subset_filtered[,.(net_RR,normalized_weight2)]
 
 ### New distribution
-Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_JSP_increase_csv.csv") # Work version scenario
+
+if (work_home == "work"){
+  Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_JSP_increase_csv.csv") # Work version scenario
+} else {
+  Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_JSP_increase_csv.csv") # Home version scenario
+}
+
+
 
 
 setDT(Rep_rates_df)
@@ -293,3 +306,14 @@ ggplot(combined_dist, aes(x = net_RR * 100, weight = normalized_weight2, fill = 
   scale_y_continuous_e61(limits = c(0,3,0.5))
 
 save_e61(paste0("Reform_RR_hours",hour_limit,".pdf"))
+
+
+combined_dist[net_RR >= 0.5,.(sum(normalized_weight2)),by=.(source)]
+
+combined_dist[net_RR >= 0.70,.(sum(normalized_weight2)),by=.(source)]
+
+combined_dist[net_RR == 0,.(sum(normalized_weight2)),by=.(source)]
+
+combined_dist[,.(sum(normalized_weight2)),by=.(source)]
+
+
