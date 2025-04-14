@@ -27,8 +27,8 @@ IR_house_couple <- 0 # A random figure for "imputed rent" at household level
 IR <- 0 # A random figure for "imputed rent" at equivalised level
 
 ## Use the dataset with flags from Matthew M
-#Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
-Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
+Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
+#Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
 
 setDT(Rep_rates_df)
 
@@ -657,7 +657,7 @@ BHC_poverty_illiquid_RA[i %in% seq(89,95,by=1)][,.(poverty = sum(poverty_rate)),
 
 AHC_poverty_illiquid_RA <- compute_results(Rep_rates_df_subset[hours0_RA > 0 & group == "Eligible: Neither"],income="AHC",loop=500)
 
-target <- AHC_poverty_illiquid_RA[i==0]$poverty_rate - BHC_poverty_illiquid_RA[i==0]$poverty_rate + BHC_poverty_illiquid_RA[i==91]$poverty_rate
+target <- AHC_poverty_illiquid_RA[i==0]$poverty_rate - BHC_poverty_illiquid_RA[i==0]$poverty_rate + BHC_poverty_illiquid_RA[i==114]$poverty_rate
 
 AHC_poverty_illiquid_RA[poverty_rate <= target]
 
@@ -665,7 +665,7 @@ AHC_poverty_illiquid_RA[poverty_rate <= target]
 
 114/389
 
-303/389
+328/389
 
 ### Construct distribution of replacement rates for submission as well.
 
