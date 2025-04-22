@@ -118,7 +118,8 @@ Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
 
 
 # Filter rows where net_RR > 0
-Rep_rates_df_subset_filtered <- Rep_rates_df_subset[hours0_taxable_benefit > 0]
+Rep_rates_df_subset_filtered <- Rep_rates_df_subset[hours0_taxable_benefit > 0] # Only JSP/PPP
+#Rep_rates_df_subset_filtered <- Rep_rates_df_subset[net_RR > 0] # All positive RRs
 Rep_rates_df_subset_filtered[, normalized_weight2 := SIHPSWT / sum(SIHPSWT) * 100]
 # Calculate the weighted mean
 mean_net_RR_3 <- sum(Rep_rates_df_subset_filtered$net_RR * Rep_rates_df_subset_filtered$SIHPSWT) / 
@@ -241,16 +242,18 @@ setDT(Rep_rates_df)
 ####                             #########################################################
 ####                            ##########################################################
 
-################# Subset data to remove those working less than 5 hours. 
+################# Subset data to remove those working less than the limit hours. 
 Rep_rates_df_subset <- subset(Rep_rates_df, Rep_rates_df$hours > hour_limit)
 
 #### Throughout, we use "normalized_weight", which says the proportion of the population 
 ### The individual represents. 
 Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
 
+Rep_rates_df_subset
 
 # Filter rows where net_RR > 0
-Rep_rates_df_subset_filtered <- Rep_rates_df_subset[hours0_taxable_benefit > 0]
+Rep_rates_df_subset_filtered <- Rep_rates_df_subset[hours0_taxable_benefit > 0] # Only JSP/PPP
+#Rep_rates_df_subset_filtered <- Rep_rates_df_subset[net_RR > 0] # All positive RRs
 Rep_rates_df_subset_filtered[, normalized_weight2 := SIHPSWT / sum(SIHPSWT) * 100]
 # Calculate the weighted mean
 mean_net_RR_3 <- sum(Rep_rates_df_subset_filtered$net_RR * Rep_rates_df_subset_filtered$SIHPSWT) / 
@@ -294,6 +297,19 @@ new_dist[, source := "New"]
 # Combine datasets
 combined_dist <- rbind(initial_dist, new_dist)
 
+sorted_data_initial <- combined_dist[source == "Initial"][order(net_RR)]
+cumulative_weights_initial <- cumsum(sorted_data_initial$normalized_weight2 / 100)
+median_index_initial <- which(cumulative_weights_initial >= 0.5)[1]
+median_net_initial <- sorted_data_initial$net_RR[median_index]
+
+sorted_data_new <- combined_dist[source == "New"][order(net_RR)]
+cumulative_weights_new <- cumsum(sorted_data_new$normalized_weight2 / 100)
+median_index_new <- which(cumulative_weights_new >= 0.5)[1]
+median_net_new <- sorted_data_new$net_RR[median_index]
+
+median_net_initial
+median_net_new
+
 # Plot overlayed histograms
 ggplot(combined_dist, aes(x = net_RR * 100, weight = normalized_weight2, fill = source)) +
   geom_histogram(binwidth = 1, position = "identity", alpha = 0.5) +
@@ -301,11 +317,13 @@ ggplot(combined_dist, aes(x = net_RR * 100, weight = normalized_weight2, fill = 
        x = "",
        y = "",
        fill = "Dataset") +
-  scale_fill_manual(values = c("Initial" = palette_e61(3)[1], "New" = palette_e61(3)[3])) +
+  scale_fill_manual(values = c("Initial" = palette_e61(3)[2], "New" = palette_e61(3)[3])) +
   plab(c("Current","Increased"),x=c(0,72),y=c(2.2,2.2),colour=c(palette_e61(3)[1],palette_e61(3)[3])) +
-  scale_y_continuous_e61(limits = c(0,3,0.5))
+  scale_y_continuous_e61(limits = c(0,3,0.5)) +
+  geom_vline(xintercept = median_net_initial*100,linetype="solid",colour=palette_e61(3)[2],size=1) +
+  geom_vline(xintercept = median_net_new*100,linetype="solid",colour=palette_e61(3)[3],size=1)
 
-save_e61(paste0("Reform_RR_hours",hour_limit,".pdf"))
+save_e61(paste0("Reform_RR_hours",hour_limit,".pdf"),footnotes = "Distribution of Replacement Rates for those eligible for either JSP or PPP after job loss.")
 
 
 combined_dist[net_RR >= 0.5,.(sum(normalized_weight2)),by=.(source)]

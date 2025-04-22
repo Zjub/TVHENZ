@@ -1,4 +1,4 @@
-## Last update:  10/03/2025
+## Last update:  22/04/2025
 ## Author:  Matt Maltman
 ## Last update person:  Matt Nolan (adding FT versions of plots, and adjusting some stuff to DT)
 # Note: Refine the code down a bit to make the datasets being used clear and transparent - to avoid using the wrong data accidentally.
@@ -77,8 +77,8 @@ gc()
 
 # START HERE IF YOU HAVE DONE THE ABOVE
 
-Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
-#Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
+#Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
+Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
 
 setDT(Rep_rates_df)
 
@@ -672,7 +672,7 @@ heatmap_plot <- ggplot(heatmap_data, aes(
 
 
 # Save the plot
-save_e61(paste0("heatmap_hour_min",hour_limit,".svg"),  heatmap_plot, dim = list(width = 15, height = 10))
+save_e61(paste0("heatmap_hour_min",hour_limit,".pdf"),  heatmap_plot, dim = list(width = 15, height = 10))
 
 
 ########################################################################################################
@@ -1699,7 +1699,7 @@ save_e61(paste0("Poverty2Panel_hour_min",hour_limit,".pdf"), bar_chart,  histogr
       x = "Increase in Weekly Benefits ($)",
       y = "%",
       fill = "Group"
-    )  + scale_y_continuous_e61(limits = c(0,25,5))
+    )  + scale_y_continuous_e61(limits = c(0,30,5))
 
 print(povertyhyp)
 

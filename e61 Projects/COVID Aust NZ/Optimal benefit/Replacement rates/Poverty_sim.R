@@ -1,4 +1,4 @@
-## Last update:  1/04/2025
+## Last update:  22/04/2025
 ## Author:  Matt Nolan
 ## Last update person:  Matt Nolan 
 # A simulation of poverty rates using our median income lines only (BHC and AHC)
@@ -27,8 +27,8 @@ IR_house_couple <- 0 # A random figure for "imputed rent" at household level
 IR <- 0 # A random figure for "imputed rent" at equivalised level
 
 ## Use the dataset with flags from Matthew M
-Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
-#Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
+#Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
+Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
 
 setDT(Rep_rates_df)
 
@@ -259,11 +259,11 @@ ggplot(Rep_rates_df_subset, aes(x = wm_50_AHC, weight = hhld_size * hhld_wgt)) +
   geom_vline(xintercept = 0, linetype = "dashed")
 
 
-# Reshape to long format
+## Total CDFs
 dt_long <- melt(
   Rep_rates_df_subset,
-  #measure.vars = c("wm_50_BHC", "wm_50_AHC"),
-  measure.vars = c("actual_gap_BHC","actual_gap_AHC"),
+  measure.vars = c("wm_50_BHC", "wm_50_AHC"), # Use this to make "equivalised" gap
+  #measure.vars = c("actual_gap_BHC","actual_gap_AHC"), # Use this to make actual poverty $ gap
   variable.name = "Measure",
   value.name = "PovertyGap"
 )
@@ -285,6 +285,40 @@ ggplot(dt_long, aes(x = PovertyGap, color = Measure, weight = hhld_size * hhld_w
   geom_vline(xintercept = 0, linetype = "dashed") +
   geom_hline(yintercept = 0.2, linetype = "dashed", colour = "red") +
   plab(label = c("20% in poverty","AHC = $340 increase","BHC = $110 increase"),x=c(100,-400,-200),y=c(0.1,0.9,0.7),colour=c("red",palette_e61(2)[2],palette_e61(2)[1])) 
+
+dt_long_actual <- melt(
+  Rep_rates_df_subset,
+  #measure.vars = c("wm_50_BHC", "wm_50_AHC"), # Use this to make "equivalised" gap
+  measure.vars = c("actual_gap_BHC","actual_gap_AHC"), # Use this to make actual poverty $ gap
+  variable.name = "Measure",
+  value.name = "PovertyGap"
+)
+
+# Plot combined CDF
+ggplot(dt_long_actual, aes(x = PovertyGap, color = Measure, weight = hhld_size * hhld_wgt)) +
+  stat_ecdf(geom = "step") +
+  labs_e61(
+    #title = "Cumulative Distribution of Poverty Gap Income Concept",
+    subtitle = "Poverty Gap, Household Income",
+    x = "Weekly Poverty Gap",
+    y = "",
+    color = "Measure"
+  ) +
+  coord_cartesian(xlim = c(-500, 500)) +
+  scale_y_continuous_e61(labels=scales::percent_format(),y_top = TRUE,limits=c(0,1,0.25)) +
+  scale_x_continuous_e61(labels=scales::dollar_format()) +
+  #geom_vline(xintercept = -340, linetype = "dashed",colour = palette_e61(2)[2]) +
+  #geom_vline(xintercept = -110, linetype = "dashed", colour = palette_e61(2)[1]) +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  geom_hline(yintercept = 0.2, linetype = "dashed", colour = "red") +
+  #plab(label = c("20% in poverty","AHC = $340 increase","BHC = $110 increase"),x=c(100,-400,-200),y=c(0.1,0.9,0.7),colour=c("red",palette_e61(2)[2],palette_e61(2)[1]))
+  plab(label = c("20% in poverty","AHC","BHC"),x=c(100,-220,-220),y=c(0.1,0.6,0.3),colour=c("red",palette_e61(2)[2],palette_e61(2)[1]))
+
+
+
+save_e61("CDF_poverty.pdf",pad_width = 1)
+
+
 
 dt_long_single <- melt(
   Rep_rates_df_subset[partnered == 0],
@@ -667,7 +701,106 @@ AHC_poverty_illiquid_RA[poverty_rate <= target]
 
 328/389
 
-### Construct distribution of replacement rates for submission as well.
+### Construct poverty plots for note
+
+
+Single_BHC_poverty <- compute_results(Rep_rates_df_subset[partnered == 0],income="BHC",loop = 300)
+
+single_plot <- ggplot(Single_BHC_poverty, aes(x = i, y = poverty_rate * 100, fill = group)) +
+  geom_area(alpha = 0.8, color = "black") +
+  labs_e61(
+    subtitle = paste("Single BHC Post Job Loss Poverty Head Count"),
+    x = "Increase in Weekly Benefits ($)",
+    y = "%",
+    fill = "Group"
+  ) +
+  scale_y_continuous_e61(limits = c(0,100,20),sec_axis = FALSE)+
+  plab(label = c(
+    "Ineligible",
+    "Homeowner & Liquid",
+    "Homeowner Only",
+    "Liquid Only",
+    "Illiquid"
+  ), y = c(95,85,75,65,55),x=c(rep(150,times=4),175)) + geom_vline(xintercept = 114,linetype="dashed")
+
+
+Couple_BHC_poverty <- compute_results(Rep_rates_df_subset[partnered == 1],income="BHC",loop = 300)
+
+couple_plot <- ggplot(Couple_BHC_poverty, aes(x = i, y = poverty_rate * 100, fill = group)) +
+  geom_area(alpha = 0.8, color = "black") +
+  labs_e61(
+    subtitle = paste("Coupled BHC Post Job Loss Poverty Head Count"),
+    x = "Increase in Weekly Benefits ($)",
+    y = "%",
+    fill = "Group"
+  ) +
+  scale_y_continuous_e61(limits = c(0,100,20),sec_axis = FALSE)+
+  plab(label = c(
+    "Ineligible",
+    "Homeowner & Liquid",
+    "Homeowner Only",
+    "Liquid Only",
+    "Illiquid"
+  ), y = c(95,85,75,65,55),x=c(rep(150,times=4),150)) + geom_vline(xintercept = 114,linetype="dashed")
 
 
 
+save_e61(paste0("povsim_hour_min",hour_limit,".pdf"), single_plot, couple_plot, 
+         footnotes = "Experiment is how many households
+    would be in poverty if one member of the household lost their job. Note that only those eligible for the JSP or PP recieve the hypothetical increase here, so the `Failed Assets Test`
+      Category is unchanged over the period" )
+
+
+## Make totals
+
+AHC_poverty <- compute_results(Rep_rates_df_subset,loop = 300)
+
+AHC_poverty[,.(poverty_rate = sum(poverty_rate)),by=.(i)]
+
+AHC_plot <- ggplot(AHC_poverty, aes(x = i, y = poverty_rate * 100, fill = group)) +
+  geom_area(alpha = 0.8, color = "black") +
+  labs_e61(
+    subtitle = paste("AHC Post Job Loss Poverty Head Count"),
+    x = "Increase in Weekly Benefits ($)",
+    y = "%",
+    fill = "Group"
+  ) +
+  scale_y_continuous_e61(limits = c(0,100,20),sec_axis = FALSE) +
+  #plab(label = c(
+  #  "Ineligible",
+  #  "Homeowner & Liquid",
+  #  "Homeowner Only",
+  #  "Liquid Only",
+  #  "Illiquid"
+  #), y = c(95,85,75,65,70),x=c(rep(150,times=4),60)) + 
+  geom_vline(xintercept = 114,linetype="dashed")
+
+BHC_poverty <- compute_results(Rep_rates_df_subset,income="BHC",loop = 300)
+
+BHC_poverty[,.(poverty_rate = sum(poverty_rate)),by=.(i)]
+
+BHC_plot <- ggplot(BHC_poverty, aes(x = i, y = poverty_rate * 100, fill = group)) +
+  geom_area(alpha = 0.8, color = "black") +
+  labs_e61(
+    subtitle = paste("BHC Post Job Loss Poverty Head Count"),
+    x = "Increase in Weekly Benefits ($)",
+    y = "%",
+    fill = "Group"
+  ) +
+  scale_y_continuous_e61(limits = c(0,100,20),sec_axis = FALSE)+
+  plab(label = c(
+    "Ineligible",
+    "Homeowner & Liquid",
+    "Homeowner Only",
+    "Liquid Only",
+    "Illiquid"
+  ), y = c(95,85,75,65,55),x=c(rep(150,times=4),150)) + geom_vline(xintercept = 114,linetype="dashed")
+
+save_e61(paste0("povsimAHC_hour_min",hour_limit,".pdf"), BHC_plot, AHC_plot, 
+         footnotes = "Experiment is how many households
+    would be in poverty if one member of the household lost their job. Note that only those eligible for the JSP or PP recieve the hypothetical increase here, so the `Failed Assets Test`
+      Category is unchanged over the period" )
+
+
+
+Rep_rates_df_subset[net_RR == 0,(sum(normalized_weight_total))]/Rep_rates_df_subset[,(sum(normalized_weight_total))]
