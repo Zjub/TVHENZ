@@ -18,7 +18,7 @@ gc()
 
 ### Assumptions
 
-liquid_thresh = 5 # Only applied at the bottom for now - check to apply more widely
+liquid_thresh = 30 # Only applied at the bottom for now - check to apply more widely
 
 IR_house_single <- 0 # A random figure for "imputed rent" at household level
 IR_house_couple <- 0 # A random figure for "imputed rent" at household level

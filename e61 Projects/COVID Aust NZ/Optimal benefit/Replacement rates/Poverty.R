@@ -18,6 +18,8 @@ gc()
 
 ### Assumptions
 
+work_home <- "work"
+
 liquid_thresh = 13 # Only applied at the bottom for now - check to apply more widely
 
 IR_house_single <- 0 # A random figure for "imputed rent" at household level
@@ -25,8 +27,11 @@ IR_house_couple <- 0 # A random figure for "imputed rent" at household level
 IR <- 0 # A random figure for "imputed rent" at equivalised level
 
 ## Use the dataset with flags from Matthew M
-Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
-#Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
+if (work_home == "work"){
+  Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version original
+} else {
+  Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version original
+}
 
 setDT(Rep_rates_df)
 
@@ -743,6 +748,29 @@ ggplot(population_density_long, aes(x = as.numeric(label_bin)*100, y = Populatio
   scale_x_continuous_e61(limits=c(0,100,10)) +
   format_flip() + theme_e61() +
   plab(label = c("Eligible - Not in Poverty","Ineligible - Not in Poverty","Eligible - In Poverty","Ineligible - In Poverty"),y=c(2,2,2,2),x=c(65,55,85,75))
+
+ggplot(population_density_long, aes(x = net_RR_binned, y = Population/1000000, fill = Category)) +
+  geom_bar(stat = "identity", position = "stack") +
+  labs_e61(#title = "Population Density by Net Replacement Rate and Eligibility",
+           subtitle = "Median BHC poverty line",
+           x = "",
+           y = "Millions",
+           fill = "Poverty & Eligibility Status") + 
+  coord_flip() +
+  scale_y_continuous_e61(limits = c(0,4,1)) +
+  format_flip() + theme_e61() +
+  plab(label = c("Eligible - Not in Poverty","Ineligible - Not in Poverty","Eligible - In Poverty","Ineligible - In Poverty"),y=c(2.05,2.05,2.05,2.05),x=c(3.5,4.5,5.5,6.5))
+
+save_e61(paste0("Poverty_size",hour_limit,".pdf"),
+         footnotes = c("Poverty defined relative to half the Median Income of the employed population. Experiment asks what proportion of households fall into this measure of poverty after job loss.","Housing costs reflect the full gross rent or mortgage paid. Other housing expenses are excluded."), 
+         sources = c("e61", "ABS"),pad_width = 1)
+
+# Stats for the note
+population_density_long[Category == "In_Poverty_Ineligible",.(sum(Population))]/population_density_long[Category %in% c("In_Poverty_Ineligible","Not_In_Poverty_Ineligible"),.(sum(Population))] # Proportion of ineligible population that would be below the poverty line.
+
+population_density_long[Category == "In_Poverty_Eligible",.(sum(Population))]/population_density_long[Category %in% c("In_Poverty_Eligible","Not_In_Poverty_Eligible"),.(sum(Population))] # Proportion of eligible population that would be below the poverty line.
+
+population_density_long[Category == "In_Poverty_Ineligible",.(sum(Population))]/population_density_long[Category %in% c("In_Poverty_Eligible","In_Poverty_Ineligible"),.(sum(Population))] # Proportion of poverty population that are ineligible.
 
 max(summary_med[poverty_med == FALSE & eligible == FALSE]$net_RR)
 

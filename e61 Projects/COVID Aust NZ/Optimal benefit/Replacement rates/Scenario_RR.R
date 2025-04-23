@@ -1,4 +1,4 @@
-## Last update:  4/02/2025
+## Last update:  23/04/2025
 ## Last update person:  Matt Nolan 
 # Constructing RR plots for the higher payment scenario
 
@@ -9,7 +9,7 @@ library(readr)
 library(tidyverse)
 library(data.table)
 
-work_home <- "home"
+work_home <- "work"
 
 if (work_home == "work"){
   Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version original

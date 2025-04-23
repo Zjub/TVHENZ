@@ -1,4 +1,4 @@
-## Last update:  22/04/2025
+## Last update:  23/04/2025
 ## Author:  Matt Nolan
 ## Last update person:  Matt Nolan 
 # A simulation of poverty rates using our median income lines only (BHC and AHC)
@@ -16,7 +16,11 @@ library(Hmisc)
 rm(list=ls())
 gc()
 
+
+
 ### Assumptions
+
+work_home <- "work"
 
 liquid_thresh = 13 # Only applied at the bottom for now - check to apply more widely
 
@@ -27,8 +31,11 @@ IR_house_couple <- 0 # A random figure for "imputed rent" at household level
 IR <- 0 # A random figure for "imputed rent" at equivalised level
 
 ## Use the dataset with flags from Matthew M
-#Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
-Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
+if (work_home == "work"){
+  Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version original
+} else {
+  Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version original
+}
 
 setDT(Rep_rates_df)
 
@@ -804,3 +811,36 @@ save_e61(paste0("povsimAHC_hour_min",hour_limit,".pdf"), BHC_plot, AHC_plot,
 
 
 Rep_rates_df_subset[net_RR == 0,(sum(normalized_weight_total))]/Rep_rates_df_subset[,(sum(normalized_weight_total))]
+
+### Poverty rate comparisons for the note
+
+BHC_poverty[i==114 & group == "Eligible: Neither",.(poverty_rate)]/BHC_poverty[i==0 & group == "Eligible: Neither",.(poverty_rate)] -1
+
+BHC_poverty[i==114 & group == "Eligible: Neither",.(poverty_rate)]
+BHC_poverty[i==0 & group == "Eligible: Neither",.(poverty_rate)]
+
+AHC_poverty[i==114 & group == "Eligible: Neither",.(poverty_rate)]/AHC_poverty[i==0 & group == "Eligible: Neither",.(poverty_rate)] - 1
+
+AHC_poverty[i==114 & group == "Eligible: Neither",.(poverty_rate)]
+
+BHC_poverty[i==114,.(sum(poverty_rate))]
+BHC_poverty[i==0,.(sum(poverty_rate))]
+
+BHC_poverty[i==114,.(sum(poverty_rate))]/BHC_poverty[i==0,.(sum(poverty_rate))]-1
+
+AHC_poverty[i==114,.(sum(poverty_rate))]
+AHC_poverty[i==0,.(sum(poverty_rate))]
+
+AHC_poverty[i==114,.(sum(poverty_rate))]/AHC_poverty[i==0,.(sum(poverty_rate))]-1
+
+# Single BHC
+
+Single_BHC_poverty[i==114 & group == "Eligible: Neither",.(poverty_rate)]/Single_BHC_poverty[i==0 & group == "Eligible: Neither",.(poverty_rate)] -1
+
+Single_BHC_poverty[i==114 & group == "Eligible: Neither",.(poverty_rate)]
+Single_BHC_poverty[i==0 & group == "Eligible: Neither",.(poverty_rate)]
+
+Single_BHC_poverty[i==114,.(sum(poverty_rate))]
+Single_BHC_poverty[i==0,.(sum(poverty_rate))]
+
+Single_BHC_poverty[i==114,.(sum(poverty_rate))]/BHC_poverty[i==0,.(sum(poverty_rate))]-1
