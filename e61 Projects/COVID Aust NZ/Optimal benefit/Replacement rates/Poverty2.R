@@ -91,6 +91,15 @@ Rep_rates_df[,":=" (grs_RR_household = (hours0_gross_income + hours0_wk_partner_
 # Clean the Data - This should already be done for some of this in the tax Calc stuff
 Rep_rates_df <- subset(Rep_rates_df, wage > 15)
 
+# Drop those with Negative incomes 
+
+Rep_rates_df <- subset(Rep_rates_df, Rep_rates_df$current_net_income >= 0)
+Rep_rates_df <- subset(Rep_rates_df , Rep_rates_df$hours0_net_income >= 0)
+Rep_rates_df <- subset(Rep_rates_df , Rep_rates_df$NonWageIncome >= 0)
+Rep_rates_df[is.na(current_wk_partner_earnings), current_net_income_partner := 0] # Only replacing for those without partner earnings with partner - so may be some still there.
+Rep_rates_df[is.na(current_wk_partner_earnings), current_wk_partner_earnings := 0]
+
+
 # Check age (restrictions applied later - checking they aren't in the base dataset) - the population here is 22 to 54. So calculations are based on the median income for that age group. That is ok but just make this clear in the write-up (as OECD standard is full population which should reduce this line: https://www.oecd.org/en/data/indicators/poverty-rate.html)  XXXX
 min(Rep_rates_df$AGEEC)
 max(Rep_rates_df$AGEEC)

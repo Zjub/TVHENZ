@@ -18,7 +18,7 @@ gc()
 
 ### Assumptions
 
-work_home <- "work"
+work_home <- "home"
 
 liquid_thresh = 13 # Only applied at the bottom for now - check to apply more widely
 

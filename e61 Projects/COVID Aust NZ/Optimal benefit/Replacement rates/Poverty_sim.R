@@ -20,7 +20,7 @@ gc()
 
 ### Assumptions
 
-work_home <- "work"
+work_home <- "home"
 
 liquid_thresh = 13 # Only applied at the bottom for now - check to apply more widely
 
@@ -111,6 +111,8 @@ max(Rep_rates_df$AGEEC)
 Rep_rates_df <- subset(Rep_rates_df, Rep_rates_df$current_net_income >= 0)
 Rep_rates_df <- subset(Rep_rates_df , Rep_rates_df$hours0_net_income >= 0)
 Rep_rates_df <- subset(Rep_rates_df , Rep_rates_df$NonWageIncome >= 0)
+Rep_rates_df[is.na(current_wk_partner_earnings), current_net_income_partner := 0] # Only replacing for those without partner earnings with partner - so may be some still there.
+Rep_rates_df[is.na(current_wk_partner_earnings), current_wk_partner_earnings := 0]
 
 setDT(Rep_rates_df)
 

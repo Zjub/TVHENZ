@@ -150,12 +150,14 @@ Rep_rates_df <- subset(Rep_rates_df, Rep_rates_df$AGEEC < 55)
 Rep_rates_df <- subset(Rep_rates_df, wage > 15)
 
 
-####### Drop those with Negative incomes 
+# Drop those with Negative incomes 
 
 Rep_rates_df <- subset(Rep_rates_df, Rep_rates_df$current_net_income >= 0)
 Rep_rates_df <- subset(Rep_rates_df , Rep_rates_df$hours0_net_income >= 0)
+Rep_rates_df <- subset(Rep_rates_df , Rep_rates_df$NonWageIncome >= 0)
+Rep_rates_df[is.na(current_wk_partner_earnings), current_wk_partner_earnings := 0]
 
-setDT(Rep_rates_df)
+
 ##########################################
 
 #### AGGREGATE REPLACEMENT RATES #########################################################
