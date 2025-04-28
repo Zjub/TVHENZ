@@ -136,8 +136,10 @@ ggplot(result[debt_type == 1 & !id %in% c("JPN","GRC")], aes(x = year, y = Value
            subtitle = "General Government, % of GDP",
            y = "(%)",
            x = "",
-           sources = c("ABS","e61"),
+           sources = c("OECD","e61"),
            footnotes = "Excluding Japan and Greece, who had rates in excess of 200%")
+
+save_e61("Net_debt.png",res = 2)
 
 ## General and central government comparisons
 #
@@ -245,3 +247,74 @@ ggplot(result2_LFP[year >= 2000], aes(x = as.numeric(year), y = change/100, grou
   scale_y_continuous_e61(labels=scales::percent_format(1),limits=c(-0.1,0.2,0.05))
 
 result2_LFP[year == 2023][order(change)]
+
+
+### Historic tax receipts and forecasts
+
+
+Budget_forecast <- read_excel("Historical budget forecasts - 2024-25 Budget.xlsx",
+                                                         sheet = "Table 2", skip = 2)
+
+unique(Budget_forecast$Unit)
+
+tax_data <- Budget_forecast %>%
+  filter(Aggregate == "Tax receipts")
+
+tax_data_long <- tax_data %>%
+  pivot_longer(
+    cols = `1998-99`:`2027-28`,   # all your year columns
+    names_to = "year",
+    values_to = "value"
+  )
+
+setDT(tax_data_long)
+
+tax_data_long$`Budget update`
+
+tax_data_long[, year_end := as.integer(
+  ifelse(
+    as.integer(substr(year, 6, 7)) < 50,
+    2000 + as.integer(substr(year, 6, 7)),
+    1900 + as.integer(substr(year, 6, 7))
+  )
+)]
+
+tax_data_long[, Series := fifelse(`Budget update` == "Historical actuals", "Historical", "Projection")]
+
+b <- tax_data_long[!is.na(value)]
+
+b <- b[!`Budget update` %in%c("2006-07 Budget","2007-08 Budget","2008-09 Budget")]
+
+ggplot(b[year_end >= 2010 & Unit == "% of GDP" & Accounting == "Cash"],aes(x=year_end,y=value, group = `Budget update`, colour = Series)) + geom_line() + scale_colour_manual(values = c(
+  "Historical" = "blue",    # or whatever color you want
+  "Projection" = "grey70"
+))
+
+ggplot(b[year_end >= 2010 & year_end <= 2023 & Unit != "% of GDP" & Accounting == "Cash"],aes(x=year_end,y=value/1000, group = `Budget update`, colour = Series)) + geom_line() + scale_colour_manual(values = c(
+  "Historical" = "blue",    # or whatever color you want
+  "Projection" = "grey70"
+)) + scale_y_continuous_e61(limits = c(200,700,100)) +
+  labs_e61(y= "",x="",title = "One off tax take surprise")
+
+save_e61("Tax_projection_level.png",res=2)
+
+ggplot(b[year_end >= 2010 & year_end <= 2023 & Unit == "% of GDP" & Accounting == "Cash"],aes(x=year_end,y=value, group = `Budget update`, colour = Series)) + geom_line() + scale_colour_manual(values = c(
+  "Historical" = "blue",    # or whatever color you want
+  "Projection" = "grey70"
+)) + scale_y_continuous_e61() +
+  labs_e61(y= "",x="",title = "One off tax take surprise")
+
+
+ggplot(b[year_end >= 2010 & Unit == "% of GDP" & Accounting != "Cash"],aes(x=year_end,y=value, group = `Budget update`, colour = Series)) + geom_line() + scale_colour_manual(values = c(
+  "Historical" = "blue",    # or whatever color you want
+  "Projection" = "grey70"
+))
+
+
+ggplot(b[year_end >= 2010 & Unit != "% of GDP" & Accounting != "Cash"],aes(x=year_end,y=value, group = `Budget update`, colour = Series)) + geom_line() + scale_colour_manual(values = c(
+  "Historical" = "blue",    # or whatever color you want
+  "Projection" = "grey70"
+))
+
+
+b[year_end == 2010]
