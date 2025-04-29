@@ -19,6 +19,8 @@ library(Synth)
 rm(list=ls())
 gc()
 
+## OECD debt comparisons
+
 data_url <- "https://sdmx.oecd.org/public/rest/data/OECD.SDD.NAD,DSD_FIN_DASH@DF_FIN_DASH_S13,/A.AUS+AUT+BEL+CAN+CHL+COL+CZE+DNK+EST+FIN+FRA+DEU+GRC+HUN+ISL+IRL+ISR+ITA+JPN+KOR+LVA+LTU+LUX+MEX+NLD+NZL+NOR+POL+PRT+SVK+SVN+ESP+SWE+CHE+TUR+GBR+USA.LES13_FD4+LES1311_FD4.?startPeriod=1996&endPeriod=2023"
 
 # Send the GET request
@@ -129,17 +131,19 @@ ggplot(result[debt_type == 1 & !id %in% c("JPN","GRC")], aes(x = year, y = Value
     alpha = ifelse(id == "AUS", 1, 0.4)
   )) +
   scale_y_continuous_e61(y_top = FALSE,limits = c(0,180,40)) +
-  scale_colour_manual(values = c("AUS" = "darkgreen", "Other" = "grey")) +
+  scale_colour_manual(values = c("AUS" = palette_e61(2)[2], "Other" = "grey")) +
   scale_size_manual(values = c("AUS" = 1, "Other" = 0.2)) +
   scale_alpha_identity() +
   labs_e61(title = "Net debt burden",
            subtitle = "General Government, % of GDP",
-           y = "(%)",
+           y = "%",
            x = "",
            sources = c("OECD","e61"),
-           footnotes = "Excluding Japan and Greece, who had rates in excess of 200%")
+           footnotes = c("Excluding Japan and Greece, who had rates in excess of 200%","General Government includes both Federal, State, and Local governments across countries"))
 
 save_e61("Net_debt.png",res = 2)
+
+result[debt_type == 1 & year == 2023][order(Value)]
 
 ## General and central government comparisons
 #
@@ -248,8 +252,81 @@ ggplot(result2_LFP[year >= 2000], aes(x = as.numeric(year), y = change/100, grou
 
 result2_LFP[year == 2023][order(change)]
 
+### OECD consolidated expenditure and revenue
 
-### Historic tax receipts and forecasts
+data_url <- "https://sdmx.oecd.org/public/rest/data/OECD.GOV.GIP,DSD_GOV@DF_GOV_PF_YU,1.0/A.AUS.GE+GR.PT_B1GQ...?startPeriod=2007&endPeriod=2023&dimensionAtObservation=AllDimensions"
+
+# Send the GET request
+response <- GET(data_url)
+
+# Check if the request was successful (important due to site changes)
+if (response$status_code == 200) {
+  # Parse the JSON content
+  raw_content <- content(response, "text")
+  data <- fromJSON(raw_content, flatten = TRUE)
+} else {
+  stop("Failed to fetch data from the OECD API")
+}
+
+# If successful we extract the data we are after as "result"
+data_sets <- data$dataSets # Third number determines spending or revenue, eighth number the time period
+result_flows <- data.frame()
+
+for (var_name in names(data_sets)) {
+  if (grepl("observations", var_name)) {
+    obs_code <- sub(".*\\.observations\\.(\\d+)", "\\1", var_name)
+    observations <- data_sets[[var_name]]
+    value <- observations[[1]][1]
+    indicators <- as.numeric(strsplit(sub("observations\\.", "", obs_code), ":")[[1]])
+    result_flows <- rbind(result_flows, data.frame(Time = indicators[8], type = indicators[3], Value = value, Series = obs_code))
+  }
+}
+
+setDT(result_flows)
+
+result_flows
+
+data$structure
+
+
+result_flows[, year := fcase(Time == 0, 2013,
+                              Time == 1, 2014,
+                              Time == 2, 2008,
+                              Time == 3, 2009,
+                              Time == 4, 2010,
+                              Time == 5, 2011,
+                              Time == 6, 2015,
+                              Time == 7, 2016,
+                              Time == 8, 2017,
+                              Time == 9, 2018,
+                              Time == 10, 2019,
+                              Time == 11, 2020,
+                              Time == 12, 2021,
+                              Time == 13, 2022,
+                              Time == 14, 2023,
+                              Time == 15, 2007,
+                              Time == 16, 2012,
+                              default = NA)]
+
+
+result_flows[,type_char := fifelse(type == 0, "Expenditure","Revenue")]
+
+ggplot(result_flows,aes(x=year,y=Value,colour=type_char)) + geom_line() +
+  labs_e61(title = "General Government Spending remains high",
+           subtitle = "Share of GDP",
+           y = "%",
+           x = "",
+           sources = c("OECD,e61")) +
+  scale_y_continuous_e61(limits = c(30,45,3)) +
+  plab(c("Revenue","Expenditure"),x=c(2008,2008),y=c(43,40.5))
+
+save_e61("General_govt_x_R.png",res=2)
+
+
+
+
+
+### Historic tax receipts and forecasts - from PBO
 
 
 Budget_forecast <- read_excel("Historical budget forecasts - 2024-25 Budget.xlsx",
