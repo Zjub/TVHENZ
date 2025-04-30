@@ -120,6 +120,7 @@ age_pop <- pop[,.(number = sum(value)),by=.(date,age_group)][order(date,age_grou
 
 
 pop_shares <- total_pop[age_pop,on=.(date)][, prop := number/total]
+pop_shares[, year := format(date, "%Y")]
 
 pop_shares[year %in% c(2024,2019,2014) & age_group == "75+"]
 
@@ -528,7 +529,7 @@ setDT(plot_log_long)
 ggplot(plot_log_long[!type %in% "actual_total_log_pc"], aes(x = year, y = log_spending_pc, colour = type)) +
   geom_line() +
   geom_vline(xintercept = training_year + 0.5 + 5, linetype = "dashed") +
-  labs(title = "Total Government Spending",
+  labs(title = "Federal Government Spending",
        subtitle = "Real value, 2012 prices (in logs)",
        footnotes = c(paste0("Model estimates trend government spending on subcategory as function of time and demographic structure. Model estimated on data before ",training_year),"Trend estimate based on an HP filter."),
        x = "Year",
@@ -537,3 +538,97 @@ ggplot(plot_log_long[!type %in% "actual_total_log_pc"], aes(x = year, y = log_sp
   plab(c("Demographically adjusted trend","Trend spending"),x=c(1975,1975),y=c(15.3,16.7))
 
 save_e61("Dem_adj_spend.png",res=2)
+
+dem_adj_plot <- ggplot(plot_log_long[!type %in% "actual_total_log_pc" & year >= 2000], aes(x = year, y = log_spending_pc, colour = type)) +
+  geom_line() +
+  geom_vline(xintercept = training_year + 0.5 + 5, linetype = "dashed") +
+  labs(title = "Federal Government Spending",
+       subtitle = "Real value, 2012 prices (in logs)",
+       #footnotes = c(paste0("Model estimates trend government spending on subcategory as function of time and demographic structure. Model estimated on data before ",training_year),"Trend estimate based on an HP filter."),
+       x = "",
+       y = "") +
+  scale_y_continuous_e61(limits = c(16,17,0.2)) +
+  plab(c("Demographically adjusted trend","Trend spending"),x=c(2000.5,2000.5),y=c(16.1,16.7))
+
+## Add other plot
+
+### OECD consolidated expenditure and revenue
+
+data_url <- "https://sdmx.oecd.org/public/rest/data/OECD.GOV.GIP,DSD_GOV@DF_GOV_PF_YU,1.0/A.AUS.GE+GR.PT_B1GQ...?startPeriod=2007&endPeriod=2023&dimensionAtObservation=AllDimensions"
+
+# Send the GET request
+response <- GET(data_url)
+
+# Check if the request was successful (important due to site changes)
+if (response$status_code == 200) {
+  # Parse the JSON content
+  raw_content <- content(response, "text")
+  data <- fromJSON(raw_content, flatten = TRUE)
+} else {
+  stop("Failed to fetch data from the OECD API")
+}
+
+# If successful we extract the data we are after as "result"
+data_sets <- data$dataSets # Third number determines spending or revenue, eighth number the time period
+result_flows <- data.frame()
+
+for (var_name in names(data_sets)) {
+  if (grepl("observations", var_name)) {
+    obs_code <- sub(".*\\.observations\\.(\\d+)", "\\1", var_name)
+    observations <- data_sets[[var_name]]
+    value <- observations[[1]][1]
+    indicators <- as.numeric(strsplit(sub("observations\\.", "", obs_code), ":")[[1]])
+    result_flows <- rbind(result_flows, data.frame(Time = indicators[8], type = indicators[3], Value = value, Series = obs_code))
+  }
+}
+
+setDT(result_flows)
+
+result_flows
+
+data$structure
+
+
+result_flows[, year := fcase(Time == 0, 2013,
+                             Time == 1, 2014,
+                             Time == 2, 2008,
+                             Time == 3, 2009,
+                             Time == 4, 2010,
+                             Time == 5, 2011,
+                             Time == 6, 2015,
+                             Time == 7, 2016,
+                             Time == 8, 2017,
+                             Time == 9, 2018,
+                             Time == 10, 2019,
+                             Time == 11, 2020,
+                             Time == 12, 2021,
+                             Time == 13, 2022,
+                             Time == 14, 2023,
+                             Time == 15, 2007,
+                             Time == 16, 2012,
+                             default = NA)]
+
+
+result_flows[,type_char := fifelse(type == 0, "Expenditure","Revenue")]
+
+ggplot(result_flows,aes(x=year,y=Value,colour=type_char)) + geom_line() +
+  labs_e61(title = "General Government Spending remains high",
+           subtitle = "Share of GDP",
+           y = "%",
+           x = "",
+           sources = c("OECD,e61")) +
+  scale_y_continuous_e61(limits = c(30,45,3)) +
+  plab(c("Expenditure","Revenue"),x=c(2008,2008),y=c(43,40.5))
+
+Govt_spend_plot <- ggplot(result_flows[year >= 2000],aes(x=year,y=Value,colour=type_char)) + geom_line() +
+  labs_e61(title = "General Government Accounts",
+           subtitle = "Share of GDP",
+           y = "%",
+           x = "") +
+           #sources = c("OECD,e61")) +
+  scale_y_continuous_e61(limits = c(30,45,3)) +
+  plab(c("Expenditure","Revenue"),x=c(2008,2008),y=c(43,40.5))
+
+save_e61("plot2.png",Govt_spend_plot,dem_adj_plot,footnotes = c("Model (on right) estimates trend real spending on subcategories as a function of time and demographic structure. Model estimated prior to 2014."),sources = c("ABS","e61","OECD"),res=2)
+
+save_e61("plot2_2May2025.svg",Govt_spend_plot,dem_adj_plot,footnotes = c("Model (on right) estimates trend real spending on subcategories as a function of time and demographic structure. Model estimated prior to 2014."),sources = c("ABS","e61","OECD"),res=2)

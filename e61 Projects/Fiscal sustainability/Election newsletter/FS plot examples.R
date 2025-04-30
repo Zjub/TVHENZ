@@ -142,6 +142,7 @@ ggplot(result[debt_type == 1 & !id %in% c("JPN","GRC")], aes(x = year, y = Value
            footnotes = c("Excluding Japan and Greece, who had rates in excess of 200%","General Government includes both Federal, State, and Local governments across countries"))
 
 save_e61("Net_debt.png",res = 2)
+save_e61("Net_debt.svg",res = 2)
 
 result[debt_type == 1 & year == 2023][order(Value)]
 
