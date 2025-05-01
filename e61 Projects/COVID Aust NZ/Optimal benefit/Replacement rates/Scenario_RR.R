@@ -389,7 +389,7 @@ median_net_new
 
 # Plot overlayed histograms
 ggplot(combined_dist, aes(x = net_RR * 100, weight = normalized_weight2, fill = source)) +
-  geom_histogram(binwidth = 1, position = "identity", alpha = 0.5) +
+  geom_histogram(binwidth = 1, position = "identity", alpha = 0.2) +
   labs_e61(subtitle = "Replacement Rate Distributions",
        x = "",
        y = "",
@@ -402,6 +402,22 @@ ggplot(combined_dist, aes(x = net_RR * 100, weight = normalized_weight2, fill = 
 
 save_e61(paste0("Reform_RR_hours",hour_limit,".pdf"),footnotes = "Distribution of Replacement Rates for those eligible for either JSP or PPP after job loss.")
 
+ggplot(combined_dist, aes(x = net_RR * 100, weight = normalized_weight2, fill = source)) +
+  geom_density(aes(y = ..density.. * 100), position = "identity", alpha = 0.4, colour = NA) +
+  labs_e61(subtitle = "Replacement Rate Distributions",
+           x = "",
+           y = "",
+           fill = "Dataset",
+           sources = c("ABS","e61")) +
+  scale_fill_manual(values = c("Initial" = palette_e61(3)[2], "New" = palette_e61(3)[3])) +
+  plab(c("Current","Increased"), x = c(5, 65), y = c(2.2, 2.2), colour = c(palette_e61(3)[1], palette_e61(3)[3])) +
+  scale_y_continuous_e61(limits = c(0.0,3,0.5)) +
+  scale_x_continuous(expand = c(0, 0)) +
+  geom_vline(xintercept = median_net_initial * 100, linetype = "solid", colour = palette_e61(3)[2], size = 1) +
+  geom_vline(xintercept = median_net_new * 100, linetype = "solid", colour = palette_e61(3)[3], size = 1)
+
+save_e61(paste0("Reform_RR_hours_KD",hour_limit,".pdf"),footnotes = "Distribution of Replacement Rates for those eligible for either JSP or PPP after job loss.")
+save_e61(paste0("Reform_RR_hours_KD",hour_limit,".png"),footnotes = "Distribution of Replacement Rates for those eligible for either JSP or PPP after job loss.",res=2,pad_width = 1)
 
 combined_dist[net_RR >= 0.5,.(sum(normalized_weight2)),by=.(source)]
 

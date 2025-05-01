@@ -703,8 +703,18 @@ poverty_long_med_bins <- melt(poverty_summary_med_bins,
 
 poverty_long_med_bins
 
+poverty_long_med_bins[,net_RR_binned := fcase(net_RR_binned == "[0,0.1)","0-10%",
+                                              net_RR_binned == "[0.1,0.2)","10-20%",
+                                              net_RR_binned == "[0.2,0.3)","20-30%",
+                                              net_RR_binned == "[0.3,0.4)","30-40%",
+                                              net_RR_binned == "[0.4,0.5)","40-50%",
+                                              net_RR_binned == "[0.5,0.6)","50-60%",
+                                              net_RR_binned == "[0.6,0.7)","60-70%",
+                                              net_RR_binned == "[0.7,0.8)","70-80%",
+                                              net_RR_binned == "[0.8,0.9)","80-90%",
+                                              default = NA)]
 
-ggplot(poverty_long_med_bins[net_RR_binned != "[0.8,0.9)"], aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
+ggplot(poverty_long_med_bins[net_RR_binned != "80-90%"], aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
   geom_bar(stat = "identity") +
   #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
   labs_e61(title = "Composition of Poverty by Replacement Rate - Median Income line",
@@ -735,31 +745,31 @@ population_density_long[,Category := factor(Category,levels = c("Not_In_Poverty_
 
 population_density_long[,label_bin :=sub(".*,([^]]*)\\)", "\\1", net_RR_binned)]
 
-# Plot the stacked bar chart for population distribution
-ggplot(population_density_long, aes(x = as.numeric(label_bin)*100, y = Population/1000000, fill = Category)) +
-  geom_bar(stat = "identity", position = "stack") +
-  labs_e61(title = "Population Density by Net Replacement Rate and Eligibility",
-           subtitle = "Median BHC poverty line",
-           x = "",
-           y = "Millions",
-           fill = "Poverty & Eligibility Status") + 
-  coord_flip() +
-  scale_y_continuous_e61(limits = c(0,4,1)) +
-  scale_x_continuous_e61(limits=c(0,100,10)) +
-  format_flip() + theme_e61() +
-  plab(label = c("Eligible - Not in Poverty","Ineligible - Not in Poverty","Eligible - In Poverty","Ineligible - In Poverty"),y=c(2,2,2,2),x=c(65,55,85,75))
+population_density_long[,net_RR_binned := fcase(net_RR_binned == "[0,0.1)","0-10%",
+                                              net_RR_binned == "[0.1,0.2)","10-20%",
+                                              net_RR_binned == "[0.2,0.3)","20-30%",
+                                              net_RR_binned == "[0.3,0.4)","30-40%",
+                                              net_RR_binned == "[0.4,0.5)","40-50%",
+                                              net_RR_binned == "[0.5,0.6)","50-60%",
+                                              net_RR_binned == "[0.6,0.7)","60-70%",
+                                              net_RR_binned == "[0.7,0.8)","70-80%",
+                                              net_RR_binned == "[0.8,0.9)","80-90%",
+                                              default = NA)]
 
+
+# Plot the stacked bar chart for population distribution
 ggplot(population_density_long, aes(x = net_RR_binned, y = Population/1000000, fill = Category)) +
   geom_bar(stat = "identity", position = "stack") +
   labs_e61(#title = "Population Density by Net Replacement Rate and Eligibility",
-           subtitle = "Median BHC poverty line",
+           subtitle = "Replacement Rate range, median BHC poverty line",
            x = "",
            y = "Millions",
            fill = "Poverty & Eligibility Status") + 
   coord_flip() +
   scale_y_continuous_e61(limits = c(0,4,1)) +
   format_flip() + theme_e61() +
-  plab(label = c("Eligible - Not in Poverty","Ineligible - Not in Poverty","Eligible - In Poverty","Ineligible - In Poverty"),y=c(2.05,2.05,2.05,2.05),x=c(3.5,4.5,5.5,6.5))
+  plab(label = c("Eligible - Not in Poverty","Ineligible - Not in Poverty","Eligible - In Poverty","Ineligible - In Poverty"),y=c(2.05,2.05,2.05,2.05),x=c(6.5,5.5,8.5,7.5))
+
 
 save_e61(paste0("Poverty_size",hour_limit,".pdf"),
          footnotes = c("Poverty defined relative to half the Median Income of the employed population. Experiment asks what proportion of households fall into this measure of poverty after job loss.","Housing costs reflect the full gross rent or mortgage paid. Other housing expenses are excluded."), 
@@ -896,11 +906,23 @@ poverty_long_med_bins_AHC <- melt(poverty_summary_med_bins_AHC,
                               variable.name = "Category", 
                               value.name = "Proportion")
 
+
+poverty_long_med_bins_AHC[,net_RR_binned := fcase(net_RR_binned == "[0,0.1)","0-10%",
+                                              net_RR_binned == "[0.1,0.2)","10-20%",
+                                              net_RR_binned == "[0.2,0.3)","20-30%",
+                                              net_RR_binned == "[0.3,0.4)","30-40%",
+                                              net_RR_binned == "[0.4,0.5)","40-50%",
+                                              net_RR_binned == "[0.5,0.6)","50-60%",
+                                              net_RR_binned == "[0.6,0.7)","60-70%",
+                                              net_RR_binned == "[0.7,0.8)","70-80%",
+                                              net_RR_binned == "[0.8,0.9)","80-90%",
+                                              default = NA)]
+
 poverty_long_med_bins_AHC
 
-poverty_long_med_bins_AHC <- poverty_long_med_bins_AHC[net_RR_binned != "[0.8,0.9)"]
+poverty_long_med_bins_AHC <- poverty_long_med_bins_AHC[net_RR_binned != "80-90%"]
 
-ggplot(poverty_long_med_bins_AHC[net_RR_binned != "[0.8,1]"], aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
+ggplot(poverty_long_med_bins_AHC, aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
   geom_bar(stat = "identity") +
   #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
   labs_e61(title = "Composition of Poverty by Replacement Rate - Median Income line (AHC)",
@@ -951,7 +973,7 @@ population_density_long_AHC[label_bin == 0.1,.(count = sum(Population))]$count/p
 
 ##### Visualise comparisons
 
-AHC_RR_pov <- ggplot(poverty_long_med_bins_AHC[net_RR_binned != "[0.8,1]"], aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
+AHC_RR_pov <- ggplot(poverty_long_med_bins_AHC[net_RR_binned != "80-90%"], aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
   geom_bar(stat = "identity") +
   #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
   labs_e61(#title = "Composition of Poverty by Replacement Rate - Median Income line (AHC)",
@@ -964,7 +986,7 @@ AHC_RR_pov <- ggplot(poverty_long_med_bins_AHC[net_RR_binned != "[0.8,1]"], aes(
   format_flip() #+
   #plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(3.5,3,2.5,2,1.5),y= c(80,80,80,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
 
-BHC_RR_pov <- ggplot(poverty_long_med_bins[net_RR_binned != "[0.8,0.9)"], aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
+BHC_RR_pov <- ggplot(poverty_long_med_bins[net_RR_binned != "80-90%"], aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
   geom_bar(stat = "identity") +
   #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
   labs_e61(#title = "Composition of Poverty by Replacement Rate - Median Income line",
@@ -978,8 +1000,8 @@ BHC_RR_pov <- ggplot(poverty_long_med_bins[net_RR_binned != "[0.8,0.9)"], aes(x 
   plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(3,2,1,7.5,6.5),y= c(55,55,55,55,55),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
 
 save_e61(paste0("RR_Poverty",hour_limit,".pdf"), BHC_RR_pov,  AHC_RR_pov,
-         footnotes = c("Poverty defined relative to half the Median Income of the employed population. Experiment asks what proportion of households fall into this measure of poverty after job loss.","Housing costs reflect the full gross rent or mortgage paid. Other housing expenses are excluded."), 
-         sources = c("e61", "ABS"))
+         footnotes = c("Y-axis shows replacement rate groups. X-axis reflects the share of that group in poverty.","Poverty defined relative to half the Median Income of the employed population. Experiment asks what proportion of households fall into this measure of poverty after job loss.","Housing costs reflect the full gross rent or mortgage paid. Other housing expenses are excluded."), 
+         sources = c("e61", "ABS"), pad_width = 2)
 
 # Family type
 

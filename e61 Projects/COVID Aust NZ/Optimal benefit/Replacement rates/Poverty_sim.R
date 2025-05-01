@@ -724,6 +724,7 @@ single_plot <- ggplot(Single_BHC_poverty, aes(x = i, y = poverty_rate * 100, fil
     fill = "Group"
   ) +
   scale_y_continuous_e61(limits = c(0,100,20),sec_axis = FALSE)+
+  scale_x_continuous(expand = c(0, 0)) +
   plab(label = c(
     "Ineligible",
     "Homeowner & Liquid",
@@ -744,6 +745,7 @@ couple_plot <- ggplot(Couple_BHC_poverty, aes(x = i, y = poverty_rate * 100, fil
     fill = "Group"
   ) +
   scale_y_continuous_e61(limits = c(0,100,20),sec_axis = FALSE)+
+  scale_x_continuous(expand = c(0, 0)) +
   plab(label = c(
     "Ineligible",
     "Homeowner & Liquid",
@@ -775,6 +777,7 @@ AHC_plot <- ggplot(AHC_poverty, aes(x = i, y = poverty_rate * 100, fill = group)
     fill = "Group"
   ) +
   scale_y_continuous_e61(limits = c(0,100,20),sec_axis = FALSE) +
+  scale_x_continuous(expand = c(0, 0)) +
   #plab(label = c(
   #  "Ineligible",
   #  "Homeowner & Liquid",
@@ -797,6 +800,7 @@ BHC_plot <- ggplot(BHC_poverty, aes(x = i, y = poverty_rate * 100, fill = group)
     fill = "Group"
   ) +
   scale_y_continuous_e61(limits = c(0,100,20),sec_axis = FALSE)+
+  scale_x_continuous(expand = c(0, 0)) +
   plab(label = c(
     "Ineligible",
     "Homeowner & Liquid",
