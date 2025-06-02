@@ -1030,6 +1030,28 @@ ggplot(Rep_rates_df_subset_no_ineligible, aes(x = net_RR * 100,
                  c(23, 5, 70), c(1.9, 0.7, 0.7), c("white", "white", "#10485E" )) +
   scale_y_continuous_e61(limits=c(0,3.5,0.5))
 
+if (hour_limit == 5){
+  print(ggplot(Rep_rates_df_subset_no_ineligible, aes(x = net_RR * 100,
+                                                      weight = normalized_weight * 100,
+                                                      fill = eligibility_status)) +
+          geom_histogram(binwidth = 2, position = "stack") +
+          scale_fill_manual(
+            values = c(
+              "Benefit Eligible" = "#ED7F00", 
+              "FTB Eligible" = "#008080", 
+              "Benefit + FTB Eligible" = "#10485E"fds
+            )
+          ) +
+          labs_e61(
+            subtitle = "Distribution of Replacement Rates for eligible recipients*",
+            x = "Replacement Rate (%)",
+            y = "%",
+            fill = "Eligibility Status", footnotes = "Eligible recipients are those who recieve either taxable benefits or FTB."
+          ) + plot_label(c("Benefit Only", "FTB Only", "Both"),
+                         c(23, 5, 75), c(1.7, 0.7, 0.7), c("white", "white", "#10485E" )) +
+          scale_y_continuous_e61(limits=c(0,3.5,0.5)))
+}
+
 save_e61(paste0("Distribution_xineligible_only_hour_min",hour_limit,".pdf"))
 
 #################################################################################################

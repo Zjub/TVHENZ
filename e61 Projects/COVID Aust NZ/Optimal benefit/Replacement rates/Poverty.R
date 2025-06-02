@@ -37,7 +37,7 @@ setDT(Rep_rates_df)
 
 min(Rep_rates_df$hours)
 
-hour_limit <- 30 # Two versions used - 30 for FT, 5 for the general.
+hour_limit <- 5 # Two versions used - 30 for FT, 5 for the general.
 
 #### Data setup ----
 
@@ -766,7 +766,7 @@ ggplot(population_density_long, aes(x = net_RR_binned, y = Population/1000000, f
            y = "Millions",
            fill = "Poverty & Eligibility Status") + 
   coord_flip() +
-  scale_y_continuous_e61(limits = c(0,4,1)) +
+  scale_y_continuous_e61(limits = c(0,5,1)) +
   format_flip() + theme_e61() +
   plab(label = c("Eligible - Not in Poverty","Ineligible - Not in Poverty","Eligible - In Poverty","Ineligible - In Poverty"),y=c(2.05,2.05,2.05,2.05),x=c(6.5,5.5,8.5,7.5))
 
@@ -962,7 +962,7 @@ ggplot(population_density_long_AHC, aes(x = as.numeric(label_bin)*100, y = Popul
            y = "Millions",
            fill = "Poverty & Eligibility Status") + 
   coord_flip() +
-  scale_y_continuous_e61(limits = c(0,4,1)) +
+  scale_y_continuous_e61(limits = c(0,5,1)) +
   scale_x_continuous_e61(limits=c(0,100,10)) +
   format_flip() + theme_e61() +
   plab(label = c("Eligible - Not in Poverty","Ineligible - Not in Poverty","Eligible - In Poverty","Ineligible - In Poverty"),y=c(2,2,2,2),x=c(65,55,85,75))

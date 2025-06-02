@@ -21,7 +21,7 @@ filter_group <- "JSP" # Three potential groups:  JSP, pos_RR, and ALL.  JSP is o
 
 setDT(Rep_rates_df)
 
-hour_limit <- 30
+hour_limit <- 5
 
 ### Data cleaning ----
 
