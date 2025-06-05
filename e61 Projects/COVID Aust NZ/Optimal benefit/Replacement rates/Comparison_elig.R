@@ -109,6 +109,10 @@ Rep_rates_df$hhincome_pre <- ifelse(Rep_rates_df$hhincome_pre < 0, 0, Rep_rates_
 
 Rep_rates_df[,eq_hhinc_pre := hhincome_pre/eq_scale]
 
+################# Subset data to remove those working less than X hours. 
+Rep_rates_df_subset <- subset(Rep_rates_df, Rep_rates_df$hours > hour_limit)
+
+
 ## Create quantiles
 ## Unweighted
 #Rep_rates_df[, quantile_current_net_income := cut(
@@ -128,30 +132,30 @@ Rep_rates_df[,eq_hhinc_pre := hhincome_pre/eq_scale]
 # 
 # breaks_eq_net_income <- quantile(Rep_rates_df$eq_hhinc_pre, probs = seq(0, 1, by = 0.2), na.rm = TRUE)
 
-# Weighted
+# Weighted 
 breaks_current_net_income <- wtd.quantile(
-  Rep_rates_df$current_net_income,
+  Rep_rates_df_subset$current_net_income,
   weights = Rep_rates_df$SIHPSWT,
   probs = seq(0, 1, by = 0.2),
   na.rm = TRUE
 )
 
 breaks_eq_net_income <- wtd.quantile(
-  Rep_rates_df$eq_hhinc_pre,
+  Rep_rates_df_subset$eq_hhinc_pre,
   weights = Rep_rates_df$SIHPSWT,
   probs = seq(0, 1, by = 0.2),
   na.rm = TRUE
 )
 
 # Step 2: Now apply these breaks
-Rep_rates_df[, quantile_current_net_income := cut(
+Rep_rates_df_subset[, quantile_current_net_income := cut(
   current_net_income,
   breaks = breaks_current_net_income,
   include.lowest = TRUE,
   labels = FALSE
 )]
 
-Rep_rates_df[, quantile_eq_hhinc_pre := cut(
+Rep_rates_df_subset[, quantile_eq_hhinc_pre := cut(
   eq_hhinc_pre,
   breaks = breaks_eq_net_income,
   include.lowest = TRUE,
@@ -165,8 +169,6 @@ Rep_rates_df[, quantile_eq_hhinc_pre := cut(
 ####                             #########################################################
 ####                            ##########################################################
 
-################# Subset data to remove those working less than 5 hours. 
-Rep_rates_df_subset <- subset(Rep_rates_df, Rep_rates_df$hours > hour_limit)
 
 #### Throughout, we use "normalized_weight", which says the proportion of the population 
 ### The individual represents. 
@@ -273,8 +275,7 @@ ggplot(long_dist, aes(x = as.factor(quantile_current_net_income), y = net_RR*100
     x = "",
     y = "%",
     color = "Sample",
-    sources = c("e61", "ABS"),
-    footnotes = c("Replacement Rates following Job Loss, after one-year. Income quantiles defined for all Full Time workers.")
+    sources = c("e61", "ABS")
   ) +
   scale_x_discrete(labels = income_labels_curr) +
   scale_y_continuous_e61(limits = c(0,100,20)) + 
@@ -282,7 +283,8 @@ ggplot(long_dist, aes(x = as.factor(quantile_current_net_income), y = net_RR*100
   coord_flip()
 
 
-save_e61("Box_PI_RR.pdf",pad_width = 1)
+save_e61("Box_PI_RR.pdf",pad_width = 1,
+         footnotes = c("Replacement Rates following Job Loss, after one-year. Income quantiles defined for all Full Time workers."))
 
 
 box_CI <- ggplot(long_dist, aes(x = as.factor(quantile_current_net_income), y = net_RR*100, weight = normalized_weight2, color = source)) +
@@ -360,7 +362,7 @@ box_CI_weight <- ggplot(weighted_box_current, aes(x = as.factor(quantile_current
   plab(label = c("All", "Eligible"), y = c(82, 82), x = c(3.5, 4.5)) +
   coord_flip() 
 
-box_EI_weight <- ggplot(weighted_box_eq, aes(x = as.factor(quantile_eq_hhinc_pre), color = source, fill = source)) +
+box_EI_weight <- ggplot(weighted_box_eq[!is.na(quantile_eq_hhinc_pre)], aes(x = as.factor(quantile_eq_hhinc_pre), color = source, fill = source)) + # Removing a single observation that isn't computing
   geom_boxplot(
     aes(
       ymin = ymin * 100,
@@ -387,4 +389,8 @@ box_EI_weight <- ggplot(weighted_box_eq, aes(x = as.factor(quantile_eq_hhinc_pre
   coord_flip() 
 
 
-save_e61("Box_incomes_RR_weighted.pdf",box_CI_weight,box_EI_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. Income quantiles defined for all Full Time workers."),sources = c("ABS","e61"),pad_width = 1)
+if(hour_limit >= 30){
+  save_e61("Box_incomes_RR_weighted.pdf",box_CI_weight,box_EI_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. Income quantiles defined for all Full Time workers."),sources = c("ABS","e61"),pad_width = 1)
+} else{
+  save_e61(paste0("Box_incomes_RR_weighted_",hour_limit,".pdf"),box_CI_weight,box_EI_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. Income quantiles defined for all workers."),sources = c("ABS","e61"),pad_width = 1)
+}
