@@ -131,3 +131,8 @@ error_long <- melt(forecast_error[,.(FY,Receipt_Error,Payment_Error)],id.vars = 
 
 ggplot(error_long,aes(x=FY,y=value,fill=Type)) + geom_col(position="dodge")
 
+
+## Revenue scenario
+
+
+
