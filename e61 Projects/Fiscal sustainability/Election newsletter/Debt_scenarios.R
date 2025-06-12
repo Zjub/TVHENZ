@@ -30,14 +30,14 @@ debt_long_rev <- melt(debt_dt[,.(Year,Forecast,Mig_Prod_TOT,Mig_Prod,Mig)], id.v
 
 debt_long_rev$Type <- factor(debt_long_rev$Type,levels = c("Forecast","Mig","Mig_Prod","Mig_Prod_TOT"))
 
-ggplot(debt_long_rev,aes(x=Year,y=value,colour=Type)) + geom_line() +
-  scale_y_continuous_e61(limits = c(30,70)) +
-  plab(c("Forecast","Lower Net Migration","+ Lower Productivity","+ TOT shock"),x=c(2024,2024,2024,2024),y=c(66,62,58,54)) +
-  labs_e61(#title = "Gross debt projections",
-           #subtitle = "% of GDP",
-           y="% GDP",
-           x="",
-           sources = c("PBO","e61"))
+# ggplot(debt_long_rev,aes(x=Year,y=value,colour=Type)) + geom_line() +
+#   scale_y_continuous_e61(limits = c(30,70)) +
+#   plab(c("Forecast","Lower Net Migration","+ Lower Productivity","+ TOT shock"),x=c(2024,2024,2024,2024),y=c(66,62,58,54)) +
+#   labs_e61(#title = "Gross debt projections",
+#            #subtitle = "% of GDP",
+#            y="% GDP",
+#            x="",
+#            sources = c("PBO","e61"))
 
 ggplot(debt_long_rev,aes(x=Year,y=value,colour=Type)) + geom_line() +
   scale_y_continuous_e61(limits = c(30,70)) +
@@ -47,19 +47,20 @@ ggplot(debt_long_rev,aes(x=Year,y=value,colour=Type)) + geom_line() +
     y="%",
     x="",
     sources = c("PBO","e61"),
-    footnotes = c("Scenario reduces net migration and productivity, alongside lower real wage growth to match. Terms of trade shock reflects a 45% decline in key export prices."))
+    footnotes = c("Scenario reduces net migration by 35k and halves productivity growth to 0.6%pa, alongside lower real wage growth to match. Terms of trade shock reflects a 45% decline in key export prices."))
 
 save_e61("Projections_debt_rev.png",res=2)
 
 ggplot(debt_long_rev,aes(x=Year,y=value,colour=Type)) + geom_line() +
   scale_y_continuous_e61(limits = c(30,70)) +
+  scale_x_continuous_e61(limits = c(2024,2036,3),expand_left = 0.05,expand_right = 0.05,hide_first_last = FALSE) +
   plab(c("Forecast","Lower Net Migration","+ Lower Productivity","+ Lower Export Prices"),x=c(2024,2024,2024,2024),y=c(66,62,58,54)) +
   labs_e61(#title = "Gross debt projections (Revenue shocks)",
            subtitle = "% of nominal GDP",
            y="%",
            x="",
            sources = c("PBO","e61"),
-           footnotes = c("Scenario reduces net migration and productivity, alongside lower real wage growth to match. Terms of trade shock reflects a 45% decline in key export prices."))
+           footnotes = c("Annual net migration declines by 35,000.","Productivity decline reduces trend growth from 1.2% to 0.6%.","Export price decline is a 45% drop from projections, to 2016 levels."))
 
 save_e61("Projections_debt_rev.pdf")
 
@@ -72,6 +73,7 @@ debt_long_exp <- melt(debt_dt[,.(Year,Forecast,Defence,Defence_NDIS,Defence_inte
 
 ggplot(debt_long_exp,aes(x=Year,y=value,colour=Type)) + geom_line() +
   scale_y_continuous_e61(limits = c(30,70)) +
+  scale_x_continuous_e61(limits = c(2024,2036,3),expand_left = 0.05,expand_right = 0.05,hide_first_last = FALSE) +
   plab(c("Forecast","Defence spending","+ NDIS","+ Interest increase"),x=c(2024,2024,2024,2024),y=c(66,62,58,55)) +
   labs_e61(#title = "Gross debt projections (expenditure shock)",
     subtitle = "% of nominal GDP",
@@ -92,6 +94,7 @@ debt_long <- melt(debt_dt[,.(Year,Forecast,Mig_Prod_TOT,Defence_interest_NDIS,Ex
 
 ggplot(debt_long,aes(x=Year,y=value,colour=Type)) + geom_line() +
   scale_y_continuous_e61(limits = c(30,90)) +
+  scale_x_continuous_e61(limits = c(2024,2036,3),expand_left = 0.05,expand_right = 0.05,hide_first_last = FALSE) +
   plab(c("Forecast","Revenue Only Shock","Expenditure Only Shock","Both shocks"),x=c(2024,2024,2024,2024),y=c(82,77,72,67)) +
   labs_e61(#title = "Gross debt projections",
            subtitle = "% of nominal GDP",
@@ -111,13 +114,13 @@ setDT(PBO_dt)
 
 PBO_long <- melt(PBO_dt[,.(FY,Baseline,B_BC,B_total)],id.vars = "FY",variable.name = "Type",value.name = "value")
 
-ggplot(PBO_long,aes(x=FY,y=value,colour=Type)) + geom_line() + geom_hline(yintercept = 0) +
+ggplot(PBO_long,aes(x=FY+2000,y=value,colour=Type)) + geom_line() + geom_hline(yintercept = 0) +
   labs_e61(subtitle = "Deficit % GDP, Financial Year",y="%",x="",
            footnotes = c("Underlying Cash Balance as a % of Nominal GDP."),
            sources = c("PBO")) +
   scale_y_continuous_e61(limits = c(-4,1,1)) +
-  scale_x_continuous_e61(expand_left = 0,expand_right = 0,limits=c(24,35,1)) +
-  plab(c("Baseline","Remove Bracket Creep","+ Spending Allowances"),x=c(25.8,29.2,25),y=c(-0.4,-1.4,-3.5))
+  scale_x_continuous_e61(expand_left = 0.05,expand_right = 0.05,limits=c(2024,2035,2),hide_first_last = FALSE) +
+  plab(c("Baseline","Remove Bracket Creep","+ Spending Allowances"),x=c(2025.8,2029.2,2025),y=c(-0.4,-1.4,-3.5))
 
 save_e61("Bracket_creep_deficit.pdf")
 save_e61("Bracket_creep_deficit.png",res=2)
@@ -131,7 +134,7 @@ setDT(forecast_error)
 
 colnames(forecast_error) <- c("FY","UCB","Receipt_Error","Payment_Error")
 
-forecast_error[, FY := (str_extract(FY, "\\d{2}$"))]
+forecast_error[, FY := as.character(as.numeric((str_extract(FY, "\\d{2}$")))+2000)]
 
 error_long <- melt(forecast_error[,.(FY,Receipt_Error)],id.vars = "FY",variable.name = "Type",value.name = "value")
 
@@ -139,7 +142,7 @@ error_long[, highlight := ifelse(FY %in% tail(sort(unique(FY)), 4), "Last4", "Ot
 
 ggplot(error_long,aes(x=FY,y=value,fill=highlight)) + geom_col(position="dodge") +
   scale_fill_manual(values = c("Last4" = palette_e61(2)[2], "Other" = palette_e61(2)[1])) +
-  plab(c("Pre-COVID","Post-COVID"),x=c("05","05"),y=c(3.5,2.5)) +
+  plab(c("Pre-COVID","Post-COVID"),x=c("2005","2005"),y=c(3.5,2.5)) +
   scale_y_continuous_e61(limits = c(-2,6,2)) +
   geom_hline(yintercept = 0) +
   labs_e61(subtitle = "% of GDP",
@@ -148,7 +151,7 @@ ggplot(error_long,aes(x=FY,y=value,fill=highlight)) + geom_col(position="dodge")
            sources = c("Treasury","Budget 2025")
            ) +
   scale_x_discrete(
-    breaks = function(x) x[seq(1, length(x), by = 2)]
+    breaks = function(x) x[seq(1, length(x), by = 3)]
   )
 
 save_e61("Receipt_error.pdf")
@@ -166,8 +169,8 @@ Rev_gap[, FY := as.numeric(str_extract(FY, "\\d{2}$"))]
 
 Rev_gap_long <- melt(Rev_gap[,.(FY,Exports,Compounding)],id.vars = "FY",variable.name = "Type",value.name = "value")
 
-ggplot(Rev_gap_long,aes(x=FY,y=value/1000,colour=Type)) + geom_line()+
-  scale_x_continuous_e61(limits = c(24,36,1),expand_left = FALSE) +
+ggplot(Rev_gap_long,aes(x=FY+2000,y=value/1000,colour=Type)) + geom_line()+
+  scale_x_continuous_e61(limits = c(2024,2036,3),expand_left = 0.05,expand_right = 0.05,hide_first_last = FALSE) +
    scale_y_continuous_e61(limits = c(-150,25,25)) +
   geom_hline(yintercept = 0) +
   labs_e61(subtitle = "Revenue decline attributed to a shock",
@@ -175,7 +178,7 @@ ggplot(Rev_gap_long,aes(x=FY,y=value/1000,colour=Type)) + geom_line()+
            x = "",
            sources = c("PBO","e61"),
            footnotes = c("Export price decline is a 45% drop from projections, to 2016 levels.","Productivity decline reduces trend growth from 1.2% to 0.6%.","Annual net migration declines by 35,000.")) +
-  plab(c("Lower Export Prices","Lower Productivity + Migration"),x=c(24.2,24.2),y=c(-62,-87))
+  plab(c("Lower Export Prices","Lower Productivity + Migration"),x=c(2024.2,2024.2),y=c(-62,-87))
 
 save_e61("Revenue_drivers.pdf")
 save_e61("Revenue_drivers.png",res=2)
@@ -190,11 +193,12 @@ core <- mean(Expense_wcore[FY < 20]$Core)
 total <- mean(Expense_wcore[FY < 20]$Total)
 
 
-ggplot(melt(Expense_wcore,id.vars = "FY",variable.name = "Type",value.name = "value"),aes(x=as.numeric(FY),y=value*100,colour=Type)) + geom_line() +
+ggplot(melt(Expense_wcore,id.vars = "FY",variable.name = "Type",value.name = "value"),aes(x=as.numeric(FY)+2000,y=value*100,colour=Type)) + geom_line() +
   scale_y_continuous_e61(limits = c(18,33,4),y_top = FALSE) +
-  scale_x_continuous_e61(limits = c(10,28,by=2),hide_first_last = FALSE,expand_left = 0,expand_right = 0) +
+  scale_x_continuous_e61(limits = c(2010,2028,by=3),hide_first_last = FALSE,expand_left = 0.05,expand_right = 0.05) +
   geom_hline(yintercept = core * 100, linetype = "dashed", colour = palette_e61(2)[2], linewidth = 0.8) +
-  geom_hline(yintercept = total * 100, linetype = "dashed", colour = palette_e61(2)[1], linewidth = 0.8) + geom_vline(xintercept = 25,linetype = "dashed") +
+  geom_hline(yintercept = total * 100, linetype = "dashed", colour = palette_e61(2)[1], linewidth = 0.8) +
+  geom_vline(xintercept = 2025,linetype = "dashed") +
   labs_e61(subtitle = "Spending as a % of GDP",
            y= "%",
            x="",
@@ -261,7 +265,47 @@ ggplot(Age_long,aes(x=AgeGroup,y=value*100,fill=Type)) + geom_col(position = "do
            y = "%",
            x="",
            sources = c("ABS","e61"),
-           footnotes = c("Population reflects both citizens and non-citizens in 2024. Migrants reflect new arrivals in 2024."))
+           footnotes = c("Population reflects both citizens and non-citizens in 2024. Migrants reflect new arrivals in 2024.")) +
+  plab(c("Migrants","Australian Population"),x=c(4.2,4.2),y=c(27,22))
 
 save_e61("Migrant.pdf")
 save_e61("Migrant.png",res=2)
+
+
+## Fiscal things (habits)
+
+pay_ngdp <- read_excel("Expenditure plots.xlsx",
+                                sheet = "Sheet1", range = "A1:D27")
+setDT(pay_ngdp)
+
+colnames(pay_ngdp) <- c("FY","Payments","NGDP","GDPD")
+
+# Change things to real
+pay_ngdp[,RPayments := Payments/GDPD]
+pay_ngdp[,RGDP := NGDP/GDPD]
+
+base_year <- "2000"
+base_row <- pay_ngdp[FY == base_year]
+pay_ngdp[, `:=`(
+  Payments_norm = RPayments / base_row$RPayments,
+  RGDP_norm = RGDP / base_row$RGDP
+)]
+
+pay_ngdp[, Year := as.integer(FY)]
+trend_data <- pay_ngdp[Year <= 2014 & Year != 2009]
+trend_model <- lm(log(RGDP_norm) ~ Year, data = trend_data)
+pay_ngdp[, RGDP_trend := exp(predict(trend_model, newdata = .SD))]
+
+ggplot(pay_ngdp, aes(x = Year)) +
+  geom_line(aes(y = Payments_norm, color = "Payments")) +
+  geom_line(aes(y = RGDP_norm, color = "NGDP")) +
+  geom_line(aes(y = RGDP_trend, color = "Pre-2014 NGDP Trend"), linetype = "dashed") +
+  scale_color_manual(values = c("Payments" = palette_e61(3)[1], "NGDP" = palette_e61(3)[2], "Pre-2014 NGDP Trend" = "black")) +
+  labs(y = "Indexed to FY2000 = 1", x = "Financial Year", color = "Series") +
+  plab(c("Real Govt Payments","GDP","2000-2014 GDP trend"),x=c(2000.5,2000.5,2000.5),y=c(2.2,1.85,1.7),colour = c(palette_e61(3)[1],palette_e61(3)[2],"black")) +
+  labs_e61(subtitle = "Deflated by GDPD, indexed to 1 in FY99/20",
+           y="",
+           x="") +
+  scale_y_continuous_e61(limits = c(1,2.4,0.5),y_top=FALSE)
+
+save_e61("Habit.pdf")
