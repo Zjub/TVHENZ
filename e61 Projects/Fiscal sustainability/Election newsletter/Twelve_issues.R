@@ -34,7 +34,7 @@ ggplot(MEB, aes(x = Tax, y = MEB)) +
   coord_flip() +
   format_flip() +
   labs_e61(subtitle = "Marginal Excess Burden (cents per dollar raised)",
-           y="",
+           y="%",
            x="",
            sources = c("KPMG Econtech","PBO"),
            footnotes = c("Estimates from KPMG (2010) report for the Australia's Future Tax System Review.","Updated Stamp Duty Estimates used by PBO come from Cao et al (2015)")) +
@@ -65,7 +65,7 @@ colnames(METR) <- c("Asset","First","Second","Third","Fourth","Fifth")
 
 METR <- METR[!Asset %in% c("Superannuation (Div. 293)")]
 
-METR$Asset[5] <- "Consession Super"
+METR$Asset[5] <- "Concession Super"
 
 # Melt your METR data
 melted <- melt(METR, id.vars = "Asset", variable.name = "Type", value.name = "value")
@@ -151,6 +151,7 @@ ggplot(Creep,aes(x=percentile,y=diff*100)) + geom_line() + geom_hline(yintercept
            x="",
            sources = c("ATO","e61"),
            footnotes = c("Blue line show the percentage point difference between the tax rate on taxable income for a percentile in 2022 relative to 2012. Orange line is the average change.")) +
-  scale_y_continuous_e61(limits = c(-1,4,1))
+  scale_y_continuous_e61(limits = c(-1,4,1)) +
+  plab(c("Increase in Tax Rate","Population Average"),x=c(1,1),y=c(3.2,2.7),colour = c(palette_e61(3)[2],palette_e61(3)[3]))
 
 save_e61("Drag.pdf")

@@ -222,7 +222,7 @@ ggplot(Five_year, aes(x = FY, y = Ratio*100)) +
   geom_col() +
   coord_cartesian(ylim = c(22, 28)) +
   scale_y_continuous_e61(breaks = seq(22, 28, by = 1)[-length(seq(22, 28, by = 1))]) +
-  labs_e61(subtitle = "Five year Expenditure % GDP, to FY",
+  labs_e61(subtitle = "Five year expenditure % GDP, to FY",
            y= "%",
            x="",
            sources = c("PBO","e61"))
