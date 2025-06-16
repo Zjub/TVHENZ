@@ -9,7 +9,7 @@ library(readr)
 library(tidyverse)
 library(data.table)
 
-work_home <- "work"
+work_home <- "home"
 
 if (work_home == "work"){
   Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version original
@@ -427,11 +427,6 @@ combined_dist[net_RR == 0,.(sum(normalized_weight2)),by=.(source)]
 
 combined_dist[,.(sum(normalized_weight2)),by=.(source)]
 
-#### Add family based cuts for comparison
-
-
-XXX
-
 
 ## Income and RR graphs
 # Step 2: Reshape to long format
@@ -477,4 +472,7 @@ initial_dist[is.na(quantile_eq_hhinc_pre)]
 Rep_rates_df[is.na(eq_hhinc_pre)]
 
 
+#### Info on those with change in RR
 
+
+XXX

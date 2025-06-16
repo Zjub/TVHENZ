@@ -10,7 +10,7 @@ library(tidyverse)
 library(data.table)
 library(Hmisc)
 
-work_home <- "work"
+work_home <- "home"
 
 if (work_home == "work"){
   Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version original
@@ -19,6 +19,7 @@ if (work_home == "work"){
 }
 
 filter_group <- "JSP" # Three potential groups:  JSP, pos_RR, and ALL.  JSP is only those with taxable benefits, pos_RR is all individuals with a positive replacement rate, ALL is everyone including zeros.
+remove_PPonly <- FALSE # Removes individuals whose net_RR is coming from changes in FTB only.
 
 setDT(Rep_rates_df)
 
@@ -94,27 +95,42 @@ Rep_rates_df[is.na(current_wk_partner_earnings), current_net_income_partner := 0
 Rep_rates_df[is.na(current_wk_partner_earnings), current_wk_partner_earnings := 0]
 
 # First create a variety of categories to consider the data
+# Complex
+# Rep_rates_df_subset[, fam_interaction_cat := paste0(
+#   fifelse(partnered == 0, "Single", "Partnered"), 
+#   ", ", 
+#   fifelse(Numb_dep == "0", "no dependents", 
+#           fifelse(Numb_dep == 1, "1 dependent", 
+#                   fifelse(Numb_dep == 2, "2 dependents",
+#                           "3+ dependents")))
+# )]
+# 
+# # Manually order the interaction_cat column
+# fam_interaction_order <- c("Single, no dependents",
+#                        "Single, 1 dependent", 
+#                        "Single, 2 dependents", 
+#                        "Single, 3+ dependents",
+#                        "Partnered, no dependents",
+#                        "Partnered, 1 dependent",
+#                        "Partnered, 2 dependents",
+#                        "Partnered, 3+ dependents"
+# )
+# Rep_rates_df_subset[, fam_interaction_cat := factor(fam_interaction_cat, levels = fam_interaction_order)]
 
+# Simple
 Rep_rates_df_subset[, fam_interaction_cat := paste0(
   fifelse(partnered == 0, "Single", "Partnered"), 
   ", ", 
-  fifelse(Numb_dep == "0", "no dependents", 
-          fifelse(Numb_dep == 1, "1 dependent", 
-                  fifelse(Numb_dep == 2, "2 dependents",
-                          "3+ dependents")))
-)]
+  fifelse(Numb_dep == "0", "no dependents", "with dependents"))]
 
 # Manually order the interaction_cat column
 fam_interaction_order <- c("Single, no dependents",
-                       "Single, 1 dependent", 
-                       "Single, 2 dependents", 
-                       "Single, 3+ dependents",
-                       "Partnered, no dependents",
-                       "Partnered, 1 dependent",
-                       "Partnered, 2 dependents",
-                       "Partnered, 3+ dependents"
+                           "Single, with dependents", 
+                           "Partnered, no dependents",
+                           "Partnered, with dependents"
 )
 Rep_rates_df_subset[, fam_interaction_cat := factor(fam_interaction_cat, levels = fam_interaction_order)]
+
 
 # Construct earnings measures 
 
@@ -245,6 +261,9 @@ Rep_rates_df_subset[, quantile_eq_TA_hhld := cut(
 #### Throughout, we use "normalized_weight", which says the proportion of the population 
 ### The individual represents. 
 Rep_rates_df_subset[, normalized_weight := SIHPSWT / sum(SIHPSWT)]
+
+# Cross check run - remove the FTB only individuals.
+if(remove_PPonly == TRUE) {Rep_rates_df_subset <- Rep_rates_df_subset[!(hours0_taxable_benefit == 0 & net_RR > 0)]} # Only run to check if the higher RRs in the "all" situation are due to changes in FTB for some individuals.
 
 ### Start calculations here ----
 
@@ -396,7 +415,7 @@ weighted_box_current <- long_dist[, .(
   lower = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.25),  # Q1
   middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
   upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
-  ymax = wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
+  ymax = max(net_RR)#wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
 ), by = .(quantile_current_net_income, source)]
 
 weighted_box_eq <- long_dist[, .(
@@ -404,7 +423,7 @@ weighted_box_eq <- long_dist[, .(
   lower = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.25),  # Q1
   middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
   upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
-  ymax = wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
+  ymax = max(net_RR)#wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
 ), by = .(quantile_eq_hhinc_pre, source)]
 
 
@@ -476,7 +495,7 @@ weighted_box_fam <- long_dist[, .(
   lower = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.25),  # Q1
   middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
   upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
-  ymax = wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
+  ymax = max(net_RR)#wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
 ), by = .(fam_interaction_order, source)]
 
 box_fam_weight <- ggplot(weighted_box_fam, aes(x = as.factor(fam_interaction_order), color = source, fill = source)) +
@@ -493,19 +512,26 @@ box_fam_weight <- ggplot(weighted_box_fam, aes(x = as.factor(fam_interaction_ord
     width = 0.5,
     alpha = 0.3  # slight transparency if you want
   ) +
-  labs(
+  labs_e61(
     subtitle = "By Family Type",
     x = "",
     y = "%",
     color = "Sample",
-    fill = "Sample"
+    fill = "Sample",footnotes = c("Replacement Rates following Job Loss, after one-year. For all Full Time workers."),sources = c("ABS","e61")
   ) +
   scale_x_discrete(labels = fam_interaction_order) +
   scale_y_continuous_e61(limits = c(0, 100, 20)) +
-  plab(label = c("All", "Eligible"), y = c(82, 82), x = c(3.5, 4.5)) +
+  plab(label = c("All", "Eligible"), y = c(82, 82), x = c(2.5, 3.5)) +
   coord_flip() 
 
 box_fam_weight
+
+if(hour_limit >= 30){
+  save_e61("Box_fam_RR_weighted.pdf",box_fam_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. For all Full Time workers."),sources = c("ABS","e61"),pad_width = 2)
+} else{
+  save_e61(paste0("Box_fam_RR_weighted_",hour_limit,".pdf"),box_fam_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. For all workers."),sources = c("ABS","e61"),pad_width = 2)
+}
+
 
 ## Personal liquidity
 
@@ -524,7 +550,7 @@ weighted_box_LA <- long_dist[, .(
   lower = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.25),  # Q1
   middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
   upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
-  ymax = wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
+  ymax = max(net_RR)#wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
 ), by = .(quantile_LA_person, source)]
 
 box_LA_weight <- ggplot(weighted_box_LA, aes(x = as.factor(quantile_LA_person), color = source, fill = source)) +
@@ -542,7 +568,7 @@ box_LA_weight <- ggplot(weighted_box_LA, aes(x = as.factor(quantile_LA_person), 
     alpha = 0.3  # slight transparency if you want
   ) +
   labs_e61(
-    subtitle = "By Liquid Assets",
+    subtitle = "By personal Liquid Assets",
     x = "",
     y = "%",
     color = "Sample",
@@ -553,7 +579,6 @@ box_LA_weight <- ggplot(weighted_box_LA, aes(x = as.factor(quantile_LA_person), 
   plab(label = c("All", "Eligible"), y = c(82, 82), x = c(3.5, 4.5)) +
   coord_flip() 
 
-box_LA_weight
 
 
 ## Household net worth
@@ -573,7 +598,7 @@ weighted_box_TA <- long_dist[, .(
   lower = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.25),  # Q1
   middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
   upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
-  ymax = wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
+  ymax = max(net_RR)#wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
 ), by = .(quantile_TA_hhld, source)]
 
 box_TA_weight <- ggplot(weighted_box_TA, aes(x = as.factor(quantile_TA_hhld), color = source, fill = source)) +
@@ -604,6 +629,8 @@ box_TA_weight <- ggplot(weighted_box_TA, aes(x = as.factor(quantile_TA_hhld), co
 
 box_TA_weight
 
+
+
 # Eq household assets
 
 eq_asset_labels <- c(
@@ -621,7 +648,7 @@ weighted_box_eq_TA <- long_dist[, .(
   lower = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.25),  # Q1
   middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
   upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
-  ymax = wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
+  ymax = max(net_RR) #wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
 ), by = .(quantile_eq_TA_hhld, source)]
 
 box_eq_TA_weight <- ggplot(weighted_box_eq_TA, aes(x = as.factor(quantile_eq_TA_hhld), color = source, fill = source)) +
@@ -651,3 +678,10 @@ box_eq_TA_weight <- ggplot(weighted_box_eq_TA, aes(x = as.factor(quantile_eq_TA_
   coord_flip() 
 
 box_eq_TA_weight
+
+if(hour_limit >= 30){
+  save_e61("Box_asset_RR_weighted.pdf",box_LA_weight,box_eq_TA_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. Asset quantiles defined for all Full Time workers."),sources = c("ABS","e61"),pad_width = 1)
+} else{
+  save_e61(paste0("Box_asset_RR_weighted_",hour_limit,".pdf"),box_LA_weight,box_eq_TA_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. Asset quantiles defined for all workers."),sources = c("ABS","e61"),pad_width = 1)
+}
+
