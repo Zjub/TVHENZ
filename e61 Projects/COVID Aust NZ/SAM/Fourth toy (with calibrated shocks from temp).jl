@@ -1,20 +1,26 @@
+#using Pkg
+#Pkg.add("LaTeXStrings")
+
 using Parameters, Plots, LaTeXStrings
 
 # -----------------------------
 # 1. Model Definition
 # -----------------------------
 @with_kw struct ModelParams
-    β::Float64
-    s::Float64
+    β::Float64      # Discount factor
+    s::Float64      # Separation rate - exogenous
     μ::Float64
-    α::Float64
-    φ::Float64
-    c::Float64
-    y::Float64
-    b_e::Float64
-    b_i::Float64
-    ξ::Float64
+    α::Float64      # Matching elasticity wrt unemployment
+    φ::Float64      # Worker's bargaining power
+    c::Float64      # Vacancy posting cost
+    y::Float64      # Productivity
+    b_e::Float64    # Benefit for eligible
+    b_i::Float64    # Benefit for ineligible
+    ξ::Float64  
+    l_u::Float64    # Value of leisure in unemployment  
 end
+
+# f and q represent the job finding rate and vacancy filling rate.
 
 function matching_rates(θ, p::ModelParams)
     f = p.μ * θ^(1 - p.α)
@@ -22,6 +28,7 @@ function matching_rates(θ, p::ModelParams)
     return (f = min(f, 1.0), q = min(q, 1.0))
 end
 
+# The Nash Wage is a function of the reservvation wage = b̄
 function nash_wage(y, b̄, φ)
     return φ * y + (1 - φ) * b̄
 end
@@ -35,6 +42,7 @@ function solve_tightness(p::ModelParams, w)
     return ((p.β * p.μ * J) / p.c)^(1 / p.α)
 end
 
+# The Nash Wage is determined as a weighted sum of benefit payments - think we should attempt something different. XX 
 function steady_state(p::ModelParams, π::Float64)
     b̄ = π * p.b_e + (1 - π) * p.b_i
     w = nash_wage(p.y, b̄, p.φ)
@@ -96,24 +104,28 @@ end
 # -----------------------------
 # 2. Parameter Setup
 # -----------------------------
+# Add 0.15 to represent value of leisure
+
+l = 0.15
+
 p_base = ModelParams(
-    β = 0.99, s = 0.1, μ = 0.5, α = 0.5,
+    β = 0.99, s = 0.1, μ = 0.5, α = 0.5, l_u = l,
     φ = 0.5, c = 1.0, y = 1.0,
-    b_e = 0.28, b_i = 0.0,
+    b_e = 0.28 + l, b_i = 0.0 + l,
     ξ = 1.0
 )
 
 p_shock = ModelParams(
-    β = 0.99, s = 0.1, μ = 0.4, α = 0.5,
+    β = 0.99, s = 0.1, μ = 0.4, α = 0.5, l_u = l,
     φ = 0.5, c = 1.0, y = 0.9,
-    b_e = 0.56, b_i = 0.0,
+    b_e = 0.56 + l, b_i = 0.0 + l,
     ξ = 0.536
 )
 
 p_counter = ModelParams(
-    β = 0.99, s = 0.1, μ = 0.4, α = 0.5,
+    β = 0.99, s = 0.1, μ = 0.4, α = 0.5, l_u = l,
     φ = 0.5, c = 1.0, y = 0.9,
-    b_e = 0.28, b_i = 0.0,
+    b_e = 0.28 + l, b_i = 0.0 + l,
     ξ = 1.0
 )
 
@@ -170,9 +182,9 @@ res_full = simulate(p_base, p_shock, T, π0, 2:6)
 
 # 3. Demand-only shock (μ↓, y↓, b_e baseline, ξ = 1)
 p_demandonly = ModelParams(
-    β = 0.99, s = 0.1, μ = 0.4, α = 0.5,
+    β = 0.99, s = 0.1, μ = 0.4, α = 0.5, l_u = l,
     φ = 0.5, c = 1.0, y = 0.9,
-    b_e = 0.28, b_i = 0.0,
+    b_e = 0.28 + l, b_i = 0.0 + l,
     ξ = 0.644
 )
 res_demandonly = simulate(p_base, p_demandonly, T, π0, 2:6)

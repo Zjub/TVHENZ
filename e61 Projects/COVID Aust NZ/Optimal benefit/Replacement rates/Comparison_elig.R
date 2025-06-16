@@ -1,4 +1,4 @@
-## Last update:  27/04/2025
+## Last update:  16/06/2025
 ## Last update person:  Matt Nolan 
 # A script to compare the box plot for "all" and a given group.
 
@@ -10,7 +10,7 @@ library(tidyverse)
 library(data.table)
 library(Hmisc)
 
-work_home <- "home"
+work_home <- "work"
 
 if (work_home == "work"){
   Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version original
@@ -93,6 +93,29 @@ Rep_rates_df <- subset(Rep_rates_df , Rep_rates_df$NonWageIncome >= 0)
 Rep_rates_df[is.na(current_wk_partner_earnings), current_net_income_partner := 0] # Only replacing for those without partner earnings with partner - so may be some still there.
 Rep_rates_df[is.na(current_wk_partner_earnings), current_wk_partner_earnings := 0]
 
+# First create a variety of categories to consider the data
+
+Rep_rates_df_subset[, fam_interaction_cat := paste0(
+  fifelse(partnered == 0, "Single", "Partnered"), 
+  ", ", 
+  fifelse(Numb_dep == "0", "no dependents", 
+          fifelse(Numb_dep == 1, "1 dependent", 
+                  fifelse(Numb_dep == 2, "2 dependents",
+                          "3+ dependents")))
+)]
+
+# Manually order the interaction_cat column
+fam_interaction_order <- c("Single, no dependents",
+                       "Single, 1 dependent", 
+                       "Single, 2 dependents", 
+                       "Single, 3+ dependents",
+                       "Partnered, no dependents",
+                       "Partnered, 1 dependent",
+                       "Partnered, 2 dependents",
+                       "Partnered, 3+ dependents"
+)
+Rep_rates_df_subset[, fam_interaction_cat := factor(fam_interaction_cat, levels = fam_interaction_order)]
+
 # Construct earnings measures 
 
 Rep_rates_df$hours0_wk_partner_earnings <- ifelse(is.na(Rep_rates_df$hours0_wk_partner_earnings), Rep_rates_df$hours0_gross_income_partner - Rep_rates_df$hours0_income_tax_partner + Rep_rates_df$hours0_RA_partner + Rep_rates_df$hours0_ES_partner, Rep_rates_df$hours0_wk_partner_earnings )
@@ -108,6 +131,11 @@ Rep_rates_df[,hhincome_pre := current_net_income + NonWageIncome + current_wk_pa
 Rep_rates_df$hhincome_pre <- ifelse(Rep_rates_df$hhincome_pre < 0, 0, Rep_rates_df$hhincome_pre)
 
 Rep_rates_df[,eq_hhinc_pre := hhincome_pre/eq_scale]
+
+# And total assets
+
+Rep_rates_df[,total_assets :=LiquidAssets_Household + Illiquid_Assets]
+Rep_rates_df[,eq_total_assets :=total_assets/eq_scale]
 
 ################# Subset data to remove those working less than X hours. 
 Rep_rates_df_subset <- subset(Rep_rates_df, Rep_rates_df$hours > hour_limit)
@@ -147,6 +175,29 @@ breaks_eq_net_income <- wtd.quantile(
   na.rm = TRUE
 )
 
+breaks_liq_personal <- wtd.quantile(
+  Rep_rates_df_subset$Liquid_Assets_Person,
+  weights = Rep_rates_df$SIHPSWT,
+  probs = seq(0, 1, by = 0.2),
+  na.rm = TRUE
+)
+
+breaks_hhld_assets<- wtd.quantile(
+  Rep_rates_df_subset$total_assets,
+  weights = Rep_rates_df$SIHPSWT,
+  probs = seq(0, 1, by = 0.2),
+  na.rm = TRUE
+)
+
+breaks_eq_hhld_assets<- wtd.quantile(
+  Rep_rates_df_subset$eq_total_assets,
+  weights = Rep_rates_df$SIHPSWT,
+  probs = seq(0, 1, by = 0.2),
+  na.rm = TRUE
+)
+
+### Remember to change below initial and all to look at these categories - rather than the raw variables
+
 # Step 2: Now apply these breaks
 Rep_rates_df_subset[, quantile_current_net_income := cut(
   current_net_income,
@@ -158,6 +209,27 @@ Rep_rates_df_subset[, quantile_current_net_income := cut(
 Rep_rates_df_subset[, quantile_eq_hhinc_pre := cut(
   eq_hhinc_pre,
   breaks = breaks_eq_net_income,
+  include.lowest = TRUE,
+  labels = FALSE
+)]
+
+Rep_rates_df_subset[, quantile_LA_person := cut(
+  Liquid_Assets_Person,
+  breaks = breaks_liq_personal,
+  include.lowest = TRUE,
+  labels = FALSE
+)]
+
+Rep_rates_df_subset[, quantile_TA_hhld := cut(
+  total_assets,
+  breaks = breaks_hhld_assets,
+  include.lowest = TRUE,
+  labels = FALSE
+)]
+
+Rep_rates_df_subset[, quantile_eq_TA_hhld := cut(
+  eq_total_assets,
+  breaks = breaks_hhld_assets,
   include.lowest = TRUE,
   labels = FALSE
 )]
@@ -204,7 +276,7 @@ mean_net_RR_3 <- sum(Rep_rates_df_subset_filtered$net_RR * Rep_rates_df_subset_f
   sum(Rep_rates_df_subset_filtered$SIHPSWT)
 
 
-initial_dist <- Rep_rates_df_subset_filtered[,.(net_RR,normalized_weight2,current_net_income,eq_hhinc_pre,quantile_current_net_income,quantile_eq_hhinc_pre)]
+initial_dist <- Rep_rates_df_subset_filtered[,.(net_RR,normalized_weight2,current_net_income,eq_hhinc_pre,quantile_current_net_income,quantile_eq_hhinc_pre,fam_interaction_order,quantile_LA_person,quantile_TA_hhld,quantile_eq_TA_hhld)]
 
 ### Create all distribution
 
@@ -212,7 +284,7 @@ Rep_rates_df_subset_filtered_all <- Rep_rates_df_subset
 
 Rep_rates_df_subset_filtered_all[, normalized_weight2 := SIHPSWT / sum(SIHPSWT) * 100]
 
-all_dist <- Rep_rates_df_subset_filtered_all[,.(net_RR,normalized_weight2,current_net_income,eq_hhinc_pre,quantile_current_net_income,quantile_eq_hhinc_pre)]
+all_dist <- Rep_rates_df_subset_filtered_all[,.(net_RR,normalized_weight2,current_net_income,eq_hhinc_pre,quantile_current_net_income,quantile_eq_hhinc_pre,fam_interaction_order,quantile_LA_person,quantile_TA_hhld,quantile_eq_TA_hhld)]
 
 # Step 1: Add a source column
 initial_dist[, source := "Eligible"]
@@ -394,3 +466,188 @@ if(hour_limit >= 30){
 } else{
   save_e61(paste0("Box_incomes_RR_weighted_",hour_limit,".pdf"),box_CI_weight,box_EI_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. Income quantiles defined for all workers."),sources = c("ABS","e61"),pad_width = 1)
 }
+
+## Similar thing for assets, liquidity, and family types
+
+## Family types
+
+weighted_box_fam <- long_dist[, .(
+  ymin = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.0),   # min
+  lower = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.25),  # Q1
+  middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
+  upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
+  ymax = wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
+), by = .(fam_interaction_order, source)]
+
+box_fam_weight <- ggplot(weighted_box_fam, aes(x = as.factor(fam_interaction_order), color = source, fill = source)) +
+  geom_boxplot(
+    aes(
+      ymin = ymin * 100,
+      lower = lower * 100,
+      middle = middle * 100,
+      upper = upper * 100,
+      ymax = ymax * 100
+    ),
+    stat = "identity",
+    position = position_dodge(width = 0.6),
+    width = 0.5,
+    alpha = 0.3  # slight transparency if you want
+  ) +
+  labs(
+    subtitle = "By Family Type",
+    x = "",
+    y = "%",
+    color = "Sample",
+    fill = "Sample"
+  ) +
+  scale_x_discrete(labels = fam_interaction_order) +
+  scale_y_continuous_e61(limits = c(0, 100, 20)) +
+  plab(label = c("All", "Eligible"), y = c(82, 82), x = c(3.5, 4.5)) +
+  coord_flip() 
+
+box_fam_weight
+
+## Personal liquidity
+
+liquid_labels <- c(
+  paste0("< $", format(round(breaks_liq_personal[2]), big.mark = ",")),
+  paste0("$", format(round(breaks_liq_personal[2]), big.mark = ","),
+         "–$", format(round(breaks_liq_personal[3]), big.mark = ",")),
+  paste0("$", format(round(breaks_liq_personal[3]), big.mark = ","),
+         "–$", format(round(breaks_liq_personal[4]), big.mark = ",")),
+  paste0("$", format(round(breaks_liq_personal[4]), big.mark = ","),
+         "–$", format(round(breaks_liq_personal[5]), big.mark = ",")),
+  paste0("> $", format(round(breaks_liq_personal[5]), big.mark = ",")))
+
+weighted_box_LA <- long_dist[, .(
+  ymin = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.0),   # min
+  lower = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.25),  # Q1
+  middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
+  upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
+  ymax = wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
+), by = .(quantile_LA_person, source)]
+
+box_LA_weight <- ggplot(weighted_box_LA, aes(x = as.factor(quantile_LA_person), color = source, fill = source)) +
+  geom_boxplot(
+    aes(
+      ymin = ymin * 100,
+      lower = lower * 100,
+      middle = middle * 100,
+      upper = upper * 100,
+      ymax = ymax * 100
+    ),
+    stat = "identity",
+    position = position_dodge(width = 0.6),
+    width = 0.5,
+    alpha = 0.3  # slight transparency if you want
+  ) +
+  labs_e61(
+    subtitle = "By Liquid Assets",
+    x = "",
+    y = "%",
+    color = "Sample",
+    fill = "Sample"
+  ) +
+  scale_x_discrete(labels = liquid_labels) +
+  scale_y_continuous_e61(limits = c(0, 100, 20)) +
+  plab(label = c("All", "Eligible"), y = c(82, 82), x = c(3.5, 4.5)) +
+  coord_flip() 
+
+box_LA_weight
+
+
+## Household net worth
+
+asset_labels <- c(
+  paste0("< $", format(round(breaks_hhld_assets[2]), big.mark = ",")),
+  paste0("$", format(round(breaks_hhld_assets[2]), big.mark = ","),
+         "–$", format(round(breaks_hhld_assets[3]), big.mark = ",")),
+  paste0("$", format(round(breaks_hhld_assets[3]), big.mark = ","),
+         "–$", format(round(breaks_hhld_assets[4]), big.mark = ",")),
+  paste0("$", format(round(breaks_hhld_assets[4]), big.mark = ","),
+         "–$", format(round(breaks_hhld_assets[5]), big.mark = ",")),
+  paste0("> $", format(round(breaks_hhld_assets[5]), big.mark = ",")))
+
+weighted_box_TA <- long_dist[, .(
+  ymin = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.0),   # min
+  lower = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.25),  # Q1
+  middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
+  upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
+  ymax = wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
+), by = .(quantile_TA_hhld, source)]
+
+box_TA_weight <- ggplot(weighted_box_TA, aes(x = as.factor(quantile_TA_hhld), color = source, fill = source)) +
+  geom_boxplot(
+    aes(
+      ymin = ymin * 100,
+      lower = lower * 100,
+      middle = middle * 100,
+      upper = upper * 100,
+      ymax = ymax * 100
+    ),
+    stat = "identity",
+    position = position_dodge(width = 0.6),
+    width = 0.5,
+    alpha = 0.3  # slight transparency if you want
+  ) +
+  labs_e61(
+    subtitle = "By Total Household Assets",
+    x = "",
+    y = "%",
+    color = "Sample",
+    fill = "Sample"
+  ) +
+  scale_x_discrete(labels = asset_labels) +
+  scale_y_continuous_e61(limits = c(0, 100, 20)) +
+  plab(label = c("All", "Eligible"), y = c(82, 82), x = c(3.5, 4.5)) +
+  coord_flip() 
+
+box_TA_weight
+
+# Eq household assets
+
+eq_asset_labels <- c(
+  paste0("< $", format(round(breaks_eq_hhld_assets[2]), big.mark = ",")),
+  paste0("$", format(round(breaks_eq_hhld_assets[2]), big.mark = ","),
+         "–$", format(round(breaks_eq_hhld_assets[3]), big.mark = ",")),
+  paste0("$", format(round(breaks_eq_hhld_assets[3]), big.mark = ","),
+         "–$", format(round(breaks_eq_hhld_assets[4]), big.mark = ",")),
+  paste0("$", format(round(breaks_eq_hhld_assets[4]), big.mark = ","),
+         "–$", format(round(breaks_eq_hhld_assets[5]), big.mark = ",")),
+  paste0("> $", format(round(breaks_eq_hhld_assets[5]), big.mark = ",")))
+
+weighted_box_eq_TA <- long_dist[, .(
+  ymin = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.0),   # min
+  lower = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.25),  # Q1
+  middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
+  upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
+  ymax = wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
+), by = .(quantile_eq_TA_hhld, source)]
+
+box_eq_TA_weight <- ggplot(weighted_box_eq_TA, aes(x = as.factor(quantile_eq_TA_hhld), color = source, fill = source)) +
+  geom_boxplot(
+    aes(
+      ymin = ymin * 100,
+      lower = lower * 100,
+      middle = middle * 100,
+      upper = upper * 100,
+      ymax = ymax * 100
+    ),
+    stat = "identity",
+    position = position_dodge(width = 0.6),
+    width = 0.5,
+    alpha = 0.3  # slight transparency if you want
+  ) +
+  labs_e61(
+    subtitle = "By Total Household Assets (equivalised)",
+    x = "",
+    y = "%",
+    color = "Sample",
+    fill = "Sample"
+  ) +
+  scale_x_discrete(labels = eq_asset_labels) +
+  scale_y_continuous_e61(limits = c(0, 100, 20)) +
+  plab(label = c("All", "Eligible"), y = c(82, 82), x = c(3.5, 4.5)) +
+  coord_flip() 
+
+box_eq_TA_weight

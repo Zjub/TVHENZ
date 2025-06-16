@@ -1,4 +1,4 @@
-## Last update:  27/04/2025
+## Last update:  16/06/2025
 ## Last update person:  Matt Nolan 
 # Constructing RR plots for the higher payment scenario
 
@@ -9,7 +9,7 @@ library(readr)
 library(tidyverse)
 library(data.table)
 
-work_home <- "home"
+work_home <- "work"
 
 if (work_home == "work"){
   Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version original
@@ -427,6 +427,11 @@ combined_dist[net_RR == 0,.(sum(normalized_weight2)),by=.(source)]
 
 combined_dist[,.(sum(normalized_weight2)),by=.(source)]
 
+#### Add family based cuts for comparison
+
+
+XXX
+
 
 ## Income and RR graphs
 # Step 2: Reshape to long format
@@ -470,3 +475,6 @@ ggplot(long_dist[income_measure == "Current Net Income"], aes(x = as.factor(inco
 initial_dist[is.na(quantile_eq_hhinc_pre)]
 
 Rep_rates_df[is.na(eq_hhinc_pre)]
+
+
+
