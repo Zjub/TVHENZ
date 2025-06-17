@@ -1,4 +1,4 @@
-## Last update:  16/06/2025
+## Last update:  17/06/2025
 ## Last update person:  Matt Nolan 
 # A script to compare the box plot for "all" and a given group.
 
@@ -10,7 +10,7 @@ library(tidyverse)
 library(data.table)
 library(Hmisc)
 
-work_home <- "home"
+work_home <- "work"
 
 if (work_home == "work"){
   Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version original
@@ -355,7 +355,7 @@ ggplot(long_dist, aes(x = as.factor(quantile_eq_hhinc_pre), y = net_RR*100, weig
   plab(label = c("All","Eligible"),y=c(82,82),x=c(4,5)) +
   coord_flip()
 
-save_e61("Box_EI_RR.pdf",pad_width = 1)
+save_e61(paste0("Box_EI_RR_",hour_limit,".pdf"),pad_width = 1)
 
 
 ggplot(long_dist, aes(x = as.factor(quantile_current_net_income), y = net_RR*100, weight = normalized_weight2, color = source)) +
@@ -374,7 +374,7 @@ ggplot(long_dist, aes(x = as.factor(quantile_current_net_income), y = net_RR*100
   coord_flip()
 
 
-save_e61("Box_PI_RR.pdf",pad_width = 1,
+save_e61(paste0("Box_PI_RR",hour_limit,".pdf"),pad_width = 1,
          footnotes = c("Replacement Rates following Job Loss, after one-year. Income quantiles defined for all Full Time workers."))
 
 
@@ -406,7 +406,7 @@ box_EI <- ggplot(long_dist, aes(x = as.factor(quantile_eq_hhinc_pre), y = net_RR
   plab(label = c("All","Eligible"),y=c(82,82),x=c(3.5,4.5)) +
   coord_flip()
 
-save_e61("Box_incomes_RR.pdf",box_CI,box_EI,footnotes = c("Replacement Rates following Job Loss, after one-year. Income quantiles defined for all Full Time workers."),sources = c("ABS","e61"),pad_width = 1)
+save_e61(paste0("Box_incomes_RR_",hour_limit,".pdf"),box_CI,box_EI,footnotes = c("Replacement Rates following Job Loss, after one-year. Income quantiles defined for all Full Time workers."),sources = c("ABS","e61"),pad_width = 1)
 
 ## The above are unweighted.  We can make weighting without the dots in the following way
 
@@ -481,7 +481,7 @@ box_EI_weight <- ggplot(weighted_box_eq[!is.na(quantile_eq_hhinc_pre)], aes(x = 
 
 
 if(hour_limit >= 30){
-  save_e61("Box_incomes_RR_weighted.pdf",box_CI_weight,box_EI_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. Income quantiles defined for all Full Time workers."),sources = c("ABS","e61"),pad_width = 1)
+  save_e61(paste0("Box_income_RR_weighted_",hour_limit,".pdf"),box_CI_weight,box_EI_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. Income quantiles defined for all Full Time workers."),sources = c("ABS","e61"),pad_width = 1)
 } else{
   save_e61(paste0("Box_incomes_RR_weighted_",hour_limit,".pdf"),box_CI_weight,box_EI_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. Income quantiles defined for all workers."),sources = c("ABS","e61"),pad_width = 1)
 }
@@ -527,7 +527,7 @@ box_fam_weight <- ggplot(weighted_box_fam, aes(x = as.factor(fam_interaction_ord
 box_fam_weight
 
 if(hour_limit >= 30){
-  save_e61("Box_fam_RR_weighted.pdf",box_fam_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. For all Full Time workers."),sources = c("ABS","e61"),pad_width = 2)
+  save_e61(paste0("Box_fam_RR_weighted_",hour_limit,".pdf"),box_fam_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. For all Full Time workers."),sources = c("ABS","e61"),pad_width = 2)
 } else{
   save_e61(paste0("Box_fam_RR_weighted_",hour_limit,".pdf"),box_fam_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. For all workers."),sources = c("ABS","e61"),pad_width = 2)
 }
@@ -680,7 +680,7 @@ box_eq_TA_weight <- ggplot(weighted_box_eq_TA, aes(x = as.factor(quantile_eq_TA_
 box_eq_TA_weight
 
 if(hour_limit >= 30){
-  save_e61("Box_asset_RR_weighted.pdf",box_LA_weight,box_eq_TA_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. Asset quantiles defined for all Full Time workers."),sources = c("ABS","e61"),pad_width = 1)
+  save_e61(paste0("Box_asset_RR_weighted_",hour_limit,".pdf"),box_LA_weight,box_eq_TA_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. Asset quantiles defined for all Full Time workers."),sources = c("ABS","e61"),pad_width = 1)
 } else{
   save_e61(paste0("Box_asset_RR_weighted_",hour_limit,".pdf"),box_LA_weight,box_eq_TA_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. Asset quantiles defined for all workers."),sources = c("ABS","e61"),pad_width = 1)
 }

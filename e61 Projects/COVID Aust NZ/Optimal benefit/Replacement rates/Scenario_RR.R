@@ -1,4 +1,4 @@
-## Last update:  16/06/2025
+## Last update:  17/06/2025
 ## Last update person:  Matt Nolan 
 # Constructing RR plots for the higher payment scenario
 
@@ -8,8 +8,9 @@ library(theme61)
 library(readr)
 library(tidyverse)
 library(data.table)
+library(Hmisc)
 
-work_home <- "home"
+work_home <- "work"
 
 if (work_home == "work"){
   Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version original
@@ -21,7 +22,7 @@ filter_group <- "JSP" # Three potential groups:  JSP, pos_RR, and ALL.  JSP is o
 
 setDT(Rep_rates_df)
 
-hour_limit <- 5
+hour_limit <- 30
 
 ### Data cleaning ----
 
@@ -126,6 +127,19 @@ Rep_rates_df[, quantile_eq_hhinc_pre := cut(
 
 breaks_eq_net_income <- quantile(Rep_rates_df$eq_hhinc_pre, probs = seq(0, 1, by = 0.2), na.rm = TRUE)
 
+# Family indicator for subgrouping
+Rep_rates_df[, fam_interaction_cat := paste0(
+  fifelse(partnered == 0, "Single", "Partnered"), 
+  ", ", 
+  fifelse(Numb_dep == "0", "no dependents", "with dependents"))]
+
+# Manually order the interaction_cat column
+fam_interaction_order <- c("Single, no dependents",
+                           "Single, with dependents", 
+                           "Partnered, no dependents",
+                           "Partnered, with dependents"
+)
+Rep_rates_df[, fam_interaction_cat := factor(fam_interaction_cat, levels = fam_interaction_order)]
 
 ##########################################
 
@@ -195,7 +209,7 @@ RR3 <- ggplot(Rep_rates_df_subset_filtered, aes(x = net_RR * 100, weight = norma
 
 print(RR3)
 
-initial_dist <- Rep_rates_df_subset_filtered[,.(net_RR,normalized_weight2,current_net_income,eq_hhinc_pre,quantile_current_net_income,quantile_eq_hhinc_pre)]
+initial_dist <- Rep_rates_df_subset_filtered[,.(net_RR,normalized_weight2,current_net_income,eq_hhinc_pre,quantile_current_net_income,quantile_eq_hhinc_pre,fam_interaction_cat)]
 
 ### New distribution
 
@@ -306,6 +320,19 @@ Rep_rates_df[, quantile_eq_hhinc_pre := cut(
   include.lowest = TRUE, labels = FALSE
 )]
 
+# Family indicator for subgrouping
+Rep_rates_df[, fam_interaction_cat := paste0(
+  fifelse(partnered == 0, "Single", "Partnered"), 
+  ", ", 
+  fifelse(Numb_dep == "0", "no dependents", "with dependents"))]
+
+# Manually order the interaction_cat column
+fam_interaction_order <- c("Single, no dependents",
+                           "Single, with dependents", 
+                           "Partnered, no dependents",
+                           "Partnered, with dependents"
+)
+Rep_rates_df[, fam_interaction_cat := factor(fam_interaction_cat, levels = fam_interaction_order)]
 
 ##########################################
 
@@ -362,7 +389,7 @@ RR3 <- ggplot(Rep_rates_df_subset_filtered, aes(x = net_RR * 100, weight = norma
 
 print(RR3)
 
-new_dist <- Rep_rates_df_subset_filtered[,.(net_RR,normalized_weight2,current_net_income,eq_hhinc_pre,quantile_current_net_income,quantile_eq_hhinc_pre)]
+new_dist <- Rep_rates_df_subset_filtered[,.(net_RR,normalized_weight2,current_net_income,eq_hhinc_pre,quantile_current_net_income,quantile_eq_hhinc_pre,fam_interaction_cat)]
 
 ### Compare the two distributions
 
@@ -475,4 +502,37 @@ Rep_rates_df[is.na(eq_hhinc_pre)]
 #### Info on those with change in RR
 
 
-XXX
+net_RR_fam <- combined_dist[net_RR >= 0.5,.(num_over = sum(normalized_weight2)),by=.(source,fam_interaction_cat)]
+net_RR_fam_75 <- combined_dist[net_RR >= 0.75,.(num_over = sum(normalized_weight2)),by=.(source,fam_interaction_cat)]
+net_RR_fam_full <- combined_dist[,.(total =sum(normalized_weight2)),by=.(source,fam_interaction_cat)]
+
+net_RR_scenario_fam <- net_RR_fam[net_RR_fam_full,on=.(source,fam_interaction_cat)][,.(source,fam_interaction_cat,prop = num_over/total)]
+net_RR_scenario_fam_75 <- net_RR_fam_75[net_RR_fam_full,on=.(source,fam_interaction_cat)][,.(source,fam_interaction_cat,prop = num_over/total)]
+
+fam_over_50 <- ggplot(net_RR_scenario_fam, aes(x=fam_interaction_cat,y=prop*100,fill = source)) + geom_col(position = "dodge") +
+  coord_flip() + format_flip() +
+  scale_y_continuous_e61(limits = c(0,100,20)) +
+  scale_fill_manual(values = c(palette_e61(3)[2],palette_e61(3)[3])) +
+  labs_e61(subtitle = "Share over 50%",
+           y= "%",
+           x = "") + 
+  plab(c("Current","Increased"),y=c(65,65),x=c(3,3.5),colour = c(palette_e61(3)[2],palette_e61(3)[3]))
+
+
+median_RR_fam <- combined_dist[,.(weighted_avg = wtd.quantile(
+  net_RR,
+  weights = normalized_weight2,
+  probs = 0.5,
+  na.rm = TRUE
+)),by=.(source,fam_interaction_cat)]
+
+fam_median <- ggplot(median_RR_fam,aes(x=fam_interaction_cat,y=weighted_avg*100, fill = source)) +geom_col(position = "dodge") + 
+  coord_flip() + format_flip() +
+  scale_y_continuous_e61(limits = c(0,100,20)) +
+  labs_e61(subtitle = "Median replacement rate",
+           y= "%",
+           x = "") +
+  scale_fill_manual(values = c(palette_e61(3)[2],palette_e61(3)[3]))
+  
+
+save_e61(paste0("Family_RR_scenario_",hour_limit,".pdf"),fam_median,fam_over_50,sources = c("ABS","e61"),footnotes = c("Weighted values, eligible individuals only."),pad_width = 1,auto_scale = FALSE)

@@ -1,4 +1,4 @@
-## Last update:  5/05/2025
+## Last update:  17/06/2025
 ## Last update person:  Matt Nolan 
 # Making the alternative liquidity scenarios in a separate script
 
@@ -12,7 +12,7 @@ library(readxl)
 library(Hmisc)
 library(gganimate)
 
-work_home <- "home"
+work_home <- "work"
 
 if (work_home == "work"){
   Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version original
@@ -271,17 +271,20 @@ for (i in c(1,5,13)){
   BHC_plot <- ggplot(poverty_long_med_bins[net_RR_binned != "80-90%"], aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
     geom_bar(stat = "identity") +
     #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
-    labs_e61(title = "Composition of Poverty by Replacement Rate - Median Income line",
+    labs_e61(subtitle = "Composition of Poverty by Replacement Rate - Median Income line",
              x = "",
              y = "%",
              fill = "Poverty Category",
-             footnotes = c(paste0("Sufficient liquid assets equal ",i," weeks"))) + coord_flip() +
+             footnotes = c(paste0("Sufficient liquid assets equal ",i," weeks")),
+             sources = c("e61","ABS")) + coord_flip() +
     scale_y_continuous_e61(limits = c(0,100,25)) +
     #theme_e61(legend = "bottom") + 
     format_flip() +
-    plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.5,1,2,1.5),y= c(55,55,55,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+    #plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.5,1,2,1.5),y= c(55,55,55,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+    plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(2,1.5,1,3,2.5),y= c(55,55,55,55,55),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
   
   print(BHC_plot)
+  save_e61(paste0("Pov_RR_BHC_",hour_limit,"_liq",i,".pdf"),pad_width = 1)
   
   ## AHC
   
@@ -343,17 +346,20 @@ for (i in c(1,5,13)){
   AHC_plot <- ggplot(poverty_long_med_bins_AHC, aes(x = net_RR_binned, y = Proportion*100, fill = Category)) +
     geom_bar(stat = "identity") +
     #geom_hline(aes(yintercept = Total_Poverty_Proportion), linetype = "dashed", color = "black") +
-    labs_e61(title = "Composition of Poverty by Replacement Rate - Median Income line (AHC)",
+    labs_e61(subtitle = "Composition of Poverty by Replacement Rate - Median Income line (AHC)",
              x = "",
              y = "%",
              fill = "Poverty Category",
-             footnotes = c(paste0("Sufficient liquid assets equal ",i," weeks"))) + coord_flip() +
+             footnotes = c(paste0("Sufficient liquid assets equal ",i," weeks")),
+             sources = c("e61","ABS")) + coord_flip() +
     scale_y_continuous_e61(limits = c(0,100,25)) +
     #theme_e61(legend = "bottom") + 
-    format_flip() +
-    plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(3.5,3,2.5,2,1.5),y= c(80,80,80,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
+    format_flip()
+    #plab(label = c("Ineligible","House & Liquid","Home Owner","Liquid renter","Illiquid renter"),x = c(3.5,3,2.5,2,1.5),y= c(80,80,80,80,80),colour = c(palette_e61(5)[1],palette_e61(5)[2],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5]))
   
   print(AHC_plot)
+  save_e61(paste0("Pov_RR_AHC_",hour_limit,"_liq",i,".pdf"),pad_width = 1)
+  save_e61(paste0("Pov_RR_",hour_limit,"_liq",i,".pdf"),BHC_plot,AHC_plot,pad_width = 2)
 }
 
 
