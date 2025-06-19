@@ -1,4 +1,4 @@
-## Last update:  17/06/2025
+## Last update:  19/06/2025
 ## Last update person:  Matt Nolan 
 # A script to compare the box plot for "all" and a given group.
 
@@ -10,7 +10,7 @@ library(tidyverse)
 library(data.table)
 library(Hmisc)
 
-work_home <- "work"
+work_home <- "home"
 
 if (work_home == "work"){
   Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version original
@@ -118,18 +118,40 @@ Rep_rates_df[is.na(current_wk_partner_earnings), current_wk_partner_earnings := 
 # Rep_rates_df_subset[, fam_interaction_cat := factor(fam_interaction_cat, levels = fam_interaction_order)]
 
 # Simple
-Rep_rates_df_subset[, fam_interaction_cat := paste0(
-  fifelse(partnered == 0, "Single", "Partnered"), 
-  ", ", 
-  fifelse(Numb_dep == "0", "no dependents", "with dependents"))]
+# Rep_rates_df_subset[, fam_interaction_cat := paste0(
+#   fifelse(partnered == 0, "Single", "Partnered"), 
+#   ", ", 
+#   fifelse(Numb_dep == 0, "no dependents", "with dependents"))]
+# 
+#
+Rep_rates_df[, fam_interaction_cat := fifelse(partnered == 0 & Numb_dep == 0,"Single, no dependents",
+                                                     fifelse(partnered == 0 & Numb_dep != 0 , "Single, with dependents",
+                                                             fifelse(partnered == 1 & Numb_dep == 0, "Partnered, no dependents",
+                                                                     "Partnered, with dependents")))]
+
+table(Rep_rates_df$partnered)
+table(Rep_rates_df$Numb_dep)
+Rep_rates_df[is.na(Numb_dep)]
+
 
 # Manually order the interaction_cat column
 fam_interaction_order <- c("Single, no dependents",
-                           "Single, with dependents", 
+                           "Single, with dependents",
                            "Partnered, no dependents",
                            "Partnered, with dependents"
 )
-Rep_rates_df_subset[, fam_interaction_cat := factor(fam_interaction_cat, levels = fam_interaction_order)]
+
+Rep_rates_df[, fam_interaction_cat := factor(fam_interaction_cat, levels = fam_interaction_order)]
+
+## Text is broken, replace with numbers
+# Rep_rates_df_subset[, fam_interaction_cat := fifelse(partnered == 0 & Numb_dep == 0, 1,
+#                                                      fifelse(partnered == 0 & Numb_dep != 0 , 2,
+#                                                              fifelse(partnered == 1 & Numb_dep == 0, 3,
+#                                                                      4)))]
+
+
+Rep_rates_df[partnered == 0,.(partnered,Numb_dep,fam_interaction_cat)]
+unique(Rep_rates_df[partnered == 0,.(partnered,Numb_dep,fam_interaction_cat)]$fam_interaction_cat)
 
 
 # Construct earnings measures 
@@ -295,7 +317,7 @@ mean_net_RR_3 <- sum(Rep_rates_df_subset_filtered$net_RR * Rep_rates_df_subset_f
   sum(Rep_rates_df_subset_filtered$SIHPSWT)
 
 
-initial_dist <- Rep_rates_df_subset_filtered[,.(net_RR,normalized_weight2,current_net_income,eq_hhinc_pre,quantile_current_net_income,quantile_eq_hhinc_pre,fam_interaction_order,quantile_LA_person,quantile_TA_hhld,quantile_eq_TA_hhld)]
+initial_dist <- Rep_rates_df_subset_filtered[,.(net_RR,normalized_weight2,current_net_income,eq_hhinc_pre,quantile_current_net_income,quantile_eq_hhinc_pre,fam_interaction_cat,quantile_LA_person,quantile_TA_hhld,quantile_eq_TA_hhld,hhld_size,partnered,Numb_dep)]
 
 ### Create all distribution
 
@@ -303,7 +325,7 @@ Rep_rates_df_subset_filtered_all <- Rep_rates_df_subset
 
 Rep_rates_df_subset_filtered_all[, normalized_weight2 := SIHPSWT / sum(SIHPSWT) * 100]
 
-all_dist <- Rep_rates_df_subset_filtered_all[,.(net_RR,normalized_weight2,current_net_income,eq_hhinc_pre,quantile_current_net_income,quantile_eq_hhinc_pre,fam_interaction_order,quantile_LA_person,quantile_TA_hhld,quantile_eq_TA_hhld)]
+all_dist <- Rep_rates_df_subset_filtered_all[,.(net_RR,normalized_weight2,current_net_income,eq_hhinc_pre,quantile_current_net_income,quantile_eq_hhinc_pre,fam_interaction_cat,quantile_LA_person,quantile_TA_hhld,quantile_eq_TA_hhld,hhld_size,partnered,Numb_dep)]
 
 # Step 1: Add a source column
 initial_dist[, source := "Eligible"]
@@ -496,9 +518,9 @@ weighted_box_fam <- long_dist[, .(
   middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
   upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
   ymax = max(net_RR)#wtd.quantile(net_RR, weights = normalized_weight2, probs = 1.0)     # max
-), by = .(fam_interaction_order, source)]
+), by = .(fam_interaction_cat, source)]
 
-box_fam_weight <- ggplot(weighted_box_fam, aes(x = as.factor(fam_interaction_order), color = source, fill = source)) +
+box_fam_weight <- ggplot(weighted_box_fam, aes(x = as.factor(fam_interaction_cat), color = source, fill = source)) +
   geom_boxplot(
     aes(
       ymin = ymin * 100,
@@ -531,6 +553,8 @@ if(hour_limit >= 30){
 } else{
   save_e61(paste0("Box_fam_RR_weighted_",hour_limit,".pdf"),box_fam_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. For all workers."),sources = c("ABS","e61"),pad_width = 2)
 }
+
+save_e61(paste0("Box_fam_RR_weighted_",hour_limit,".png"),box_fam_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. For all Full Time workers."),sources = c("ABS","e61"),pad_width = 2,res=2)
 
 
 ## Personal liquidity
@@ -684,4 +708,9 @@ if(hour_limit >= 30){
 } else{
   save_e61(paste0("Box_asset_RR_weighted_",hour_limit,".pdf"),box_LA_weight,box_eq_TA_weight,footnotes = c("Replacement Rates following Job Loss, after one-year. Asset quantiles defined for all workers."),sources = c("ABS","e61"),pad_width = 1)
 }
+
+## Bruce questions about low replacement rates for single individuals
+
+
+initial_dist[fam_interaction_cat == "Single, no dependents"]
 
