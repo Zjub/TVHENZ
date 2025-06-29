@@ -10,7 +10,7 @@ library(tidyverse)
 library(data.table)
 library(Hmisc)
 
-work_home <- "home"
+work_home <- "work"
 
 if (work_home == "work"){
   Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version original
@@ -317,7 +317,7 @@ mean_net_RR_3 <- sum(Rep_rates_df_subset_filtered$net_RR * Rep_rates_df_subset_f
   sum(Rep_rates_df_subset_filtered$SIHPSWT)
 
 
-initial_dist <- Rep_rates_df_subset_filtered[,.(net_RR,normalized_weight2,current_net_income,eq_hhinc_pre,quantile_current_net_income,quantile_eq_hhinc_pre,fam_interaction_cat,quantile_LA_person,quantile_TA_hhld,quantile_eq_TA_hhld,hhld_size,partnered,Numb_dep)]
+initial_dist <- Rep_rates_df_subset_filtered[,.(net_RR,normalized_weight2,current_net_income,eq_hhinc_pre,quantile_current_net_income,quantile_eq_hhinc_pre,fam_interaction_cat,quantile_LA_person,quantile_TA_hhld,quantile_eq_TA_hhld,hhld_size,partnered,Numb_dep,SIHPSWT)]
 
 ### Create all distribution
 
@@ -325,7 +325,7 @@ Rep_rates_df_subset_filtered_all <- Rep_rates_df_subset
 
 Rep_rates_df_subset_filtered_all[, normalized_weight2 := SIHPSWT / sum(SIHPSWT) * 100]
 
-all_dist <- Rep_rates_df_subset_filtered_all[,.(net_RR,normalized_weight2,current_net_income,eq_hhinc_pre,quantile_current_net_income,quantile_eq_hhinc_pre,fam_interaction_cat,quantile_LA_person,quantile_TA_hhld,quantile_eq_TA_hhld,hhld_size,partnered,Numb_dep)]
+all_dist <- Rep_rates_df_subset_filtered_all[,.(net_RR,normalized_weight2,current_net_income,eq_hhinc_pre,quantile_current_net_income,quantile_eq_hhinc_pre,fam_interaction_cat,quantile_LA_person,quantile_TA_hhld,quantile_eq_TA_hhld,hhld_size,partnered,Numb_dep,SIHPSWT)]
 
 # Step 1: Add a source column
 initial_dist[, source := "Eligible"]
@@ -433,7 +433,7 @@ save_e61(paste0("Box_incomes_RR_",hour_limit,".pdf"),box_CI,box_EI,footnotes = c
 ## The above are unweighted.  We can make weighting without the dots in the following way
 
 weighted_box_current <- long_dist[, .(
-  ymin = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.0),   # min
+  ymin = min(net_RR), #wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.0),   # min
   lower = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.25),  # Q1
   middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
   upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
@@ -441,7 +441,7 @@ weighted_box_current <- long_dist[, .(
 ), by = .(quantile_current_net_income, source)]
 
 weighted_box_eq <- long_dist[, .(
-  ymin = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.0),   # min
+  ymin = min(net_RR), #wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.0),   # min
   lower = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.25),  # Q1
   middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
   upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
@@ -513,7 +513,7 @@ if(hour_limit >= 30){
 ## Family types
 
 weighted_box_fam <- long_dist[, .(
-  ymin = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.0),   # min
+  ymin = min(net_RR), #wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.0),   # min
   lower = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.25),  # Q1
   middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
   upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
@@ -570,7 +570,7 @@ liquid_labels <- c(
   paste0("> $", format(round(breaks_liq_personal[5]), big.mark = ",")))
 
 weighted_box_LA <- long_dist[, .(
-  ymin = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.0),   # min
+  ymin = min(net_RR), #wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.0),   # min
   lower = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.25),  # Q1
   middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
   upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
@@ -618,7 +618,7 @@ asset_labels <- c(
   paste0("> $", format(round(breaks_hhld_assets[5]), big.mark = ",")))
 
 weighted_box_TA <- long_dist[, .(
-  ymin = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.0),   # min
+  ymin = min(net_RR), #wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.0),   # min
   lower = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.25),  # Q1
   middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
   upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
@@ -668,7 +668,7 @@ eq_asset_labels <- c(
   paste0("> $", format(round(breaks_eq_hhld_assets[5]), big.mark = ",")))
 
 weighted_box_eq_TA <- long_dist[, .(
-  ymin = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.0),   # min
+  ymin = min(net_RR), #wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.0),   # min
   lower = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.25),  # Q1
   middle = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.5),  # median
   upper = wtd.quantile(net_RR, weights = normalized_weight2, probs = 0.75),  # Q3
@@ -713,5 +713,12 @@ if(hour_limit >= 30){
 
 unique(initial_dist$fam_interaction_cat)
 
+min(all_dist[fam_interaction_cat == "Single, with dependents"]$net_RR)
+
+sum(initial_dist$SIHPSWT)/sum(all_dist$SIHPSWT) # weighted proportion that are "eligible"
+
+<<<<<<< Updated upstream
 initial_dist[fam_interaction_cat == "Single, no dependents",.(mean(net_RR)),by=.(quantile_current_net_income)][order(quantile_current_net_income)]
+=======
+>>>>>>> Stashed changes
 
