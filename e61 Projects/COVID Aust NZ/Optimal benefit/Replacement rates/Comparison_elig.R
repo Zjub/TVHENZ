@@ -711,6 +711,7 @@ if(hour_limit >= 30){
 
 ## Bruce questions about low replacement rates for single individuals
 
+unique(initial_dist$fam_interaction_cat)
 
 initial_dist[fam_interaction_cat == "Single, no dependents",.(mean(net_RR)),by=.(quantile_current_net_income)][order(quantile_current_net_income)]
 

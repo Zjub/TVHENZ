@@ -435,7 +435,8 @@ ggplot(combined_dist, aes(x = net_RR * 100, weight = normalized_weight2, fill = 
            x = "",
            y = "",
            fill = "Dataset",
-           sources = c("ABS","e61")) +
+           sources = c("ABS","e61"),
+           footnotes = c("Weighted distribution of Replacement Rates for those eligible for either JSP or PP after job loss.","Solid verticle lines represent median replacement rate.")) +
   scale_fill_manual(values = c("Initial" = palette_e61(3)[2], "New" = palette_e61(3)[3])) +
   plab(c("Current","Increased"), x = c(5, 65), y = c(2.2, 2.2), colour = c(palette_e61(3)[1], palette_e61(3)[3])) +
   scale_y_continuous_e61(limits = c(0.0,3,0.5)) +
@@ -443,8 +444,8 @@ ggplot(combined_dist, aes(x = net_RR * 100, weight = normalized_weight2, fill = 
   geom_vline(xintercept = median_net_initial * 100, linetype = "solid", colour = palette_e61(3)[2], size = 1) +
   geom_vline(xintercept = median_net_new * 100, linetype = "solid", colour = palette_e61(3)[3], size = 1)
 
-save_e61(paste0("Reform_RR_hours_KD",hour_limit,".pdf"),footnotes = "Distribution of Replacement Rates for those eligible for either JSP or PPP after job loss.")
-save_e61(paste0("Reform_RR_hours_KD",hour_limit,".png"),footnotes = "Distribution of Replacement Rates for those eligible for either JSP or PPP after job loss.",res=2,pad_width = 1)
+save_e61(paste0("Reform_RR_hours_KD",hour_limit,".pdf"))
+save_e61(paste0("Reform_RR_hours_KD",hour_limit,".png"),footnotes = c("Distribution of Replacement Rates for those eligible for either JSP or PP after job loss.","Solid verticle lines represent median replacement rate."),res=2,pad_width = 1)
 
 combined_dist[net_RR >= 0.5,.(sum(normalized_weight2)),by=.(source)]
 
