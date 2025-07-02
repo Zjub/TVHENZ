@@ -1,7 +1,10 @@
+#install.packages("remotes")
+#remotes::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
+
 # Load required libraries
 library(dplyr)
 library(ggplot2)
-#library(theme61)
+library(theme61)
 library(readr)
 library(tidyverse)
 library(data.table)
@@ -11,10 +14,10 @@ library(Hmisc)
 tax_function <- function(income) {
   tax <- case_when(
     income <= 18200 ~ 0,
-    income <= 45000 ~ (income - 18200) * 0.16,
-    income <= 135000 ~ (45000-18200)*0.16 + (income - 45000) * 0.30,
-    income <= 190000 ~ (45000-18200)*0.16 + (135000 - 45000) * 0.30 + (income - 135000) * 0.37,
-    TRUE ~ (45000-18200)*0.16 + (135000 - 45000) * 0.30 + (190000 - 135000) * 0.37 + (income - 190000) * 0.45
+    income <= 45000 ~ (income - 18200) * 0.16 + max(0,(income - 27222)*0.02),
+    income <= 135000 ~ (45000-18200)*0.16 + (income - 45000) * 0.30 + (income - 27222)*0.02,
+    income <= 190000 ~ (45000-18200)*0.16 + (135000 - 45000) * 0.30 + (income - 135000) * 0.37 + (income - 27222)*0.02,
+    TRUE ~ (45000-18200)*0.16 + (135000 - 45000) * 0.30 + (190000 - 135000) * 0.37 + (income - 190000) * 0.45 + (income - 27222)*0.02
   )
   return(tax)
 }
@@ -57,10 +60,9 @@ ggplot(df, aes(x = income)) +
   geom_text(data = annotate_points, aes(x = income, y = etr,
                                         label = paste0(round(etr * 100, 1), "%")),
             vjust = -1.2, size = 3.5) +
-  scale_color_manual(values = c("Nominal" = "blue", "Deflated" = "red")) +
+  scale_color_manual(values = c("Nominal" = palette_e61(3)[1], "Deflated" = palette_e61(3)[3])) +
   scale_shape_manual(values = c("Nominal" = 16, "Deflated" = 17)) +
-  labs(title = "Effective Tax Rates by Gross Income",
-       subtitle = "Dashed lines at Avg Earnings in FY25 and FY35 (RHS); Deflated line assumes 2.5% inflation for 10 years",
-       x = "Gross Income ($)", y = "Effective Tax Rate",
-       color = "Tax Scale", shape = "Tax Scale") +
-  theme_classic()
+  labs_e61(title = "Effective Tax Rates by Gross Income",
+       footnotes = c("Dashed lines at Avg Earnings in FY25 and FY35 (RHS)","Deflated line assumes 2.5% inflation for 10 years"),
+       x = "Gross Income (FY25$)", y = "Effective Tax Rate",
+       color = "Tax Scale", shape = "Tax Scale") 
