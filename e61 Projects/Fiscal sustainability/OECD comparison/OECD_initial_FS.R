@@ -214,16 +214,28 @@ OECD_age_wide[is.na(prop_75_plus)]
 # Set up synth
 
 OECD_forsynth2 <- OECD_forsynth[OECD_age_wide,on=.(country,year)]
+OECD_forsynth2[year >= year_data &year <= 2022][is.na(value)]
+
+OECD_forsynth2 <- OECD_forsynth2[country %in% country_set] # As we have the Irish population they show back up here, so just need to boot them out
 
 OECD_forsynth2[is.na(prop_65_74)]
 OECD_forsynth2[is.na(prop_75_plus)]
 
-dim(OECD_forsynth[year >= year_data])
-dim(OECD_forsynth2[year >= year_data]) # There is the issue
+dim(OECD_forsynth[year >= year_data &year <= 2022])
+dim(OECD_forsynth2[year >= year_data &year <= 2022])
+
+length(unique(OECD_forsynth$country))
+length(unique(OECD_forsynth2$country))
+
+OECD_forsynth[year >= year_data & year <= 2022,.N,by=.(country)]
+OECD_forsynth2[year >= year_data & year <= 2022,.N,by=.(country)]
+
+OECD_forsynth[year >= year_data,.N,by=.(country)]
+OECD_forsynth2[year >= year_data,.N,by=.(country)]
 
 is.na(OECD_forsynth2[,mean(prop_75_plus),by=.(country,year)]$V1)
 
-# Solve the missing observation issues in the morning
+
 
 synth_result2 <- OECD_forsynth2 %>%
   filter(year >= year_data, year <= 2022) %>%
@@ -246,6 +258,21 @@ synth_result2 <- OECD_forsynth2 %>%
 
 
 plot_trends(synth_result2)
+
+save_e61("SC_temp_age.png",res=2)
+
+donor_weights2 <- grab_unit_weights(synth_result2)
+donor_weights2 %>%
+  arrange(desc(weight)) %>%
+  print(n = Inf)
+
+ggplot(donor_weights2, aes(x = reorder(unit, weight), y = weight)) +
+  geom_col(fill = palette_e61(3)[1]) +
+  coord_flip() +
+  labs(x = "Donor Country", y = "Weight", 
+       title = "Weights of Donor Countries in Synthetic Australia (age adj)")
+
+
 
 
 
