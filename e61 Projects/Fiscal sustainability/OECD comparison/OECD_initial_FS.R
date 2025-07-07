@@ -32,6 +32,9 @@ setnames(OECD_exp_GDP, c("...1", "...2"), c("country", "level"))
 
 # Collapse by country
 OECD_dt <- OECD_exp_GDP[, lapply(.SD, sum,na.rm=TRUE), by = country, .SDcols = patterns("^\\d{4}$")]
+setDT(OECD_dt)
+
+OECD_dt[,.(country,`2022`)][order(`2022`)]
 
 
 OECD_long_dt <- melt(OECD_dt,id.vars = "country",variable.name = "year",value.name="value")[value > 0]
@@ -196,6 +199,8 @@ OECD_total_pop <- OECD_pop[,.(total = sum(OBS_VALUE)),by=.(`Reference area`,TIME
 OECD_pop_prop <- OECD_total_pop[OECD_age_pop,on=.(`Reference area`,TIME_PERIOD)][,prop := number/total]
 colnames(OECD_pop_prop) <- c("country","year","total_pop","age_group","number_pop","prop_pop")
 
+
+OECD_pop_prop[year == 2022 & age_group %in% c(6,7)][,.(prop_pop = sum(prop_pop)),by=.(country)][order(prop_pop)]
 
 ## Include proportions 65-74 and 75+ into the SC
 OECD_age_wide <- OECD_pop_prop[age_group %in% c(6, 7)]
