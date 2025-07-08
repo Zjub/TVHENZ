@@ -1,7 +1,7 @@
 # Topic: Looking at consolidated amounts by function
 # Author: Matt Nolan
 # Created: 5/7/2025
-# Last edit: 7/7/2025
+# Last edit: 8/7/2025
 # Last editor: Matt Nolan
 
 #remotes::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
@@ -213,7 +213,19 @@ ggplot(
   geom_col() +
   coord_flip()
 
+## And make comparison graphs
 
+ggplot(toGDP[Government_level == "Total" & Country == "Australia"],aes(x=as.numeric(as.character(Year)),y=value,colour=COFOG_Area)) + geom_line() + theme_e61(legend = "bottom")
+
+toGDP[Government_level == "Total" & Country == "Australia" & !COFOG_Area == "Total"]
+
+toGDP[Government_level == "Total" & Country == "Australia" & COFOG_Area == "Total"]
+
+cons_share <- toGDP[Government_level == "Total" & Country == "Australia" & COFOG_Area == "Total"][,.(Year,value)][toGDP[Government_level == "Total" & Country == "Australia" & !COFOG_Area == "Total"],on=.(Year)][,share := i.value/value][,Year := as.numeric(as.character(Year))]
+
+ggplot(cons_share[Year >= 2008],aes(x=Year,y=share*100,colour=COFOG_Area)) + geom_line() + theme_e61(legend = "bottom") + labs_e61(title = "Consolidated spending share",y="%")
+
+cons_share[COFOG_Area == "Economic Affairs"]
 
 ## Share comparisons
 
@@ -247,8 +259,150 @@ toG <- toG[, .(value = if (all(is.na(value))) NA_real_ else sum(value, na.rm=TRU
 toG[, Aus_flag := fifelse(Country == "Australia", "Australia", "Other")]
 
 
+toGDP[Year == "2022" & COFOG_Area == "Total"]
+
+### Work out contributions ----
+
+dollar_spend <- table22_consolidated_cofog_expenditure_spent_by_approach <- read_excel("table22-consolidated-cofog-expenditure-spent-by-approach.xlsx", sheet = "COFOGexp", skip = 1)
+setDT(dollar_spend)
+
+Aus_spend <- dollar_spend[Country == "Australia"][,":=" (`COFOG Code` = NULL,ISO=NULL,`Government level code` = NULL, `1995` = NULL, `1996` = NULL, `1997` = NULL,Country = NULL)][`Government level` != "Social Security Funds"]
+
+colnames(Aus_spend)[1] <- "COFOG_Area"
+colnames(Aus_spend)[2] <- "Government_level"
+
+Aus_spend[, Government_level := fifelse(Government_level %in% c("Local", "State"), 
+                                      "Non-Federal", "Federal")]
+
+Aus_spend_long <- melt(Aus_spend,id.vars = c("COFOG_Area","Government_level"),variable.name = "Year",value.name = "value")
+
+Aus_spend_long <- Aus_spend_long[, .(value = sum(value)), 
+                   by = .(COFOG_Area, Government_level, Year)][,Year := as.numeric(as.character(Year))]
+
+Aus_spend_long_total <- Aus_spend_long[, .(value = sum(value)), 
+                                       by = .(COFOG_Area, Year)]
+
+a<-ggplot(Aus_spend_long[Government_level == "Federal" & !COFOG_Area == "Total"],aes(x=Year,y=value,colour=COFOG_Area)) + geom_line() + theme_e61(legend = "bottom")
+
+b<-ggplot(Aus_spend_long_total[!COFOG_Area == "Total"],aes(x=Year,y=value,colour=COFOG_Area)) + geom_line() + theme_e61(legend = "bottom")
+
+#save_e61(a,b,filename ="spending_nominal_incconsolidated.png",res=2)
+
+# Contributions plot - Federal
+
+total_federal_spend <- Aus_spend_long[Government_level == "Federal" & !COFOG_Area == "Total"][, .(total_value = sum(value)), by = Year]
+
+federal_spend <- merge(Aus_spend_long[Government_level == "Federal" & !COFOG_Area == "Total"], total_federal_spend, by = "Year")
+federal_spend[, share := value / total_value]
+
+shares_2012_2022 <- federal_spend[Year %in% c(2012, 2022),
+                            .(share_2012 = share[Year == 2012],
+                              share_2022 = share[Year == 2022]),
+                            by = COFOG_Area]
+
+# Contribution to total growth
+# (change in spending for area / total spending change) from 2012 to 2022
+growth_fed <- federal_spend[Year %in% c(2012, 2022),
+                  dcast(.SD, COFOG_Area ~ Year, value.var = "value")]
+
+growth_fed[, total_change := `2022` - `2012`]
+
+total_change_federal_spend <- total_federal_spend[Year == 2022, total_value] -
+  total_federal_spend[Year == 2012, total_value]
+
+growth_fed[, contribution := total_change / total_change_federal_spend]
+
+# Merge results
+federal_summary <- merge(shares_2012_2022, growth_fed[, .(COFOG_Area, contribution)], by = "COFOG_Area")
+
+ggplot(melt(federal_summary,id.vars = "COFOG_Area",variable.name = "variable",value.name = "value"),aes(x=COFOG_Area,y=value,fill=variable)) + geom_col(position = "dodge") + coord_flip() +
+  plab(c("2012 share","2022 share","Contribution"),y=c(0.2,0.2,0.2),x=c(3.5,4.5,5.5))
+
+# Contributions plot - State
+
+total_consolidated_spend <- Aus_spend_long_total[!COFOG_Area == "Total"][, .(total_value = sum(value)), by = Year]
+
+consolidated_spend <- merge(Aus_spend_long_total[!COFOG_Area == "Total"], total_consolidated_spend, by = "Year")
+consolidated_spend[, share := value / total_value]
+
+consolidated_shares_2012_2022 <- consolidated_spend[Year %in% c(2012, 2022),
+                                  .(share_2012 = share[Year == 2012],
+                                    share_2022 = share[Year == 2022]),
+                                  by = COFOG_Area]
+
+# Contribution to total growth
+# (change in spending for area / total spending change) from 2012 to 2022
+growth_consolidated <- consolidated_spend[Year %in% c(2012, 2022),
+                            dcast(.SD, COFOG_Area ~ Year, value.var = "value")]
+
+growth_consolidated[, total_change := `2022` - `2012`]
+
+total_change_consolidated_spend <- total_consolidated_spend[Year == 2022, total_value] -
+  total_consolidated_spend[Year == 2012, total_value]
+
+growth_consolidated[, contribution := total_change / total_change_consolidated_spend]
+
+# Merge results
+consolidated_summary <- merge(consolidated_shares_2012_2022, growth_consolidated[, .(COFOG_Area, contribution)], by = "COFOG_Area")
+
+ggplot(melt(consolidated_summary,id.vars = "COFOG_Area",variable.name = "variable",value.name = "value"),aes(x=COFOG_Area,y=value,fill=variable)) + geom_col(position = "dodge") + coord_flip() +
+  plab(c("2012 share","2022 share","Contribution"),y=c(0.2,0.2,0.2),x=c(3.5,4.5,5.5)) + 
+  labs_e61(title = "Consolidated Government Expenditure")
+
+save_e61("Consolidated_shares_contribution.png",res=2)
+
+contributions_both <-growth_consolidated[,.(COFOG_Area,cons_contribution = contribution)][growth_fed[,.(COFOG_Area,contribution)],on=.(COFOG_Area)]
+
+ggplot(melt(contributions_both,id.vars = "COFOG_Area"),aes(x=COFOG_Area,y=value*100,fill=variable)) + geom_col(position="dodge") + coord_flip() +
+  labs_e61(title = "Contribution to Expenditure growth 2012-2022",
+           y="%") +
+  plab(c("Consolidated","Federal"),x=c(3.5,4.5),y=c(20,20)) +
+  scale_y_continuous_e61(limits = c(0,50,10))
+
+save_e61("Budget_growth_cont.png",res=2)
+
+a
+
+b
 
 
+### Generate Figure 8 from internal report, but with consolidated spending.
 
+## Fiscal things (habits)
 
+pay_ngdp <- read_excel("Expenditure plots.xlsx",
+                       sheet = "Sheet1", range = "A1:D27")
+setDT(pay_ngdp)
 
+colnames(pay_ngdp) <- c("FY","Payments","NGDP","GDPD")
+
+# Change things to real
+pay_ngdp[,RPayments := Payments/GDPD]
+pay_ngdp[,RGDP := NGDP/GDPD]
+
+base_year <- "2000"
+base_row <- pay_ngdp[FY == base_year]
+pay_ngdp[, `:=`(
+  Payments_norm = RPayments / base_row$RPayments,
+  RGDP_norm = RGDP / base_row$RGDP
+)]
+
+pay_ngdp[, Year := as.integer(FY)]
+trend_data <- pay_ngdp[Year <= 2014 & Year != 2009]
+trend_model <- lm(log(RGDP_norm) ~ Year, data = trend_data)
+pay_ngdp[, RGDP_trend := exp(predict(trend_model, newdata = .SD))]
+
+## Prior plot
+# ggplot(pay_ngdp, aes(x = Year)) +
+#   geom_line(aes(y = Payments_norm, color = "Payments")) +
+#   geom_line(aes(y = RGDP_norm, color = "NGDP")) +
+#   geom_line(aes(y = RGDP_trend, color = "Pre-2014 NGDP Trend"), linetype = "dashed") +
+#   scale_color_manual(values = c("Payments" = palette_e61(3)[1], "NGDP" = palette_e61(3)[2], "Pre-2014 NGDP Trend" = "black")) +
+#   plab(c("Real Govt Payments","GDP","2000-2014 GDP trend"),x=c(2000.5,2000.5,2000.5),y=c(2.2,1.85,1.7),colour = c(palette_e61(3)[1],palette_e61(3)[2],"black")) +
+#   labs_e61(subtitle = "Deflated by GDPD, indexed to 1 in FY99/20",
+#            y="",
+#            x="")
+
+# Now include the information we have in this script
+
+Aus_spend_long_total[COFOG_Area == "Total"]
