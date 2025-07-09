@@ -1,7 +1,7 @@
 # Topic: Looking at consolidated amounts by function
 # Author: Matt Nolan
 # Created: 5/7/2025
-# Last edit: 8/7/2025
+# Last edit: 9/7/2025
 # Last editor: Matt Nolan
 
 #remotes::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
@@ -15,6 +15,7 @@ library(tidyverse)
 library(data.table)
 library(Hmisc)
 library(tidysynth)
+library(readabs)
 
 
 
@@ -406,3 +407,44 @@ pay_ngdp[, RGDP_trend := exp(predict(trend_model, newdata = .SD))]
 # Now include the information we have in this script
 
 Aus_spend_long_total[COFOG_Area == "Total"]
+
+# Pull in population numbers
+
+#LS_full <- read_abs(cat_no = "6291.0.55.001") %>% filter(table_title ==  "Table 01. Labour force status by Age, Social marital status, and Sex" )
+pop_full <- read_abs(cat_no = "3101.0")
+setDT(pop_full)
+
+unique(pop_full$series)
+
+# The annual data reflects fiscal years
+pop <- pop_full[startsWith(series, "Estimated Resident Population ;  Persons ;") & table_no == 3101059]
+
+unique(pop$series)
+
+pop_long <- pop[,.(pop = sum(value)/1000000),by=.(date)][,Year := year(date)]
+
+pop_long <- pop_long[Aus_spend_long_total[COFOG_Area == "Total"],on=.(Year)][,nom_pc_spend := value/pop]
+
+ggplot(pop_long,aes(x=Year,y=nom_pc_spend)) + geom_col()
+
+# Deflate
+
+cpi <- read_abs(cat_no = "6401.0")
+setDT(cpi)
+
+cpi <- cpi[startsWith(series, "Index Numbers ;  All groups CPI ;  Aust") & table_no == 640101]
+
+max(cpi[,.N,by=.(date)]$N)
+
+cpi[, Year := year(date) + (month(date) >= 7)]
+cpi_annual <- cpi[, .(cpi_avg = mean(value, na.rm = TRUE)), by = Year]
+
+pop_real <- cpi_annual[pop_long,on=.(Year)][,real_pc_spend := nom_pc_spend*100/cpi_avg]
+
+
+ggplot(pop_real,aes(x=Year,y=real_pc_spend/1000)) + geom_col() +
+  labs_e61(title = "Real Consolidated Expenditure per person",
+           y="$(000s)")
+
+
+save_e61("Real_consolidated_PC.png",res=2)
