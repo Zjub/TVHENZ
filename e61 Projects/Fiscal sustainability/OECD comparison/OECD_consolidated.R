@@ -4,6 +4,8 @@
 # Last edit: 9/7/2025
 # Last editor: Matt Nolan
 
+rm(list=ls())
+
 #remotes::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
 
 library(dplyr)
@@ -16,6 +18,8 @@ library(data.table)
 library(Hmisc)
 library(tidysynth)
 library(readabs)
+
+
 
 
 
