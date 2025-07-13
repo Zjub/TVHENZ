@@ -12,8 +12,8 @@ library(Hmisc)
 
 # Options
 
-levy = TRUE # Include the medicare levy
-surcharge = TRUE # Include the medicare surcharge
+levy = FALSE # Include the medicare levy
+surcharge = FALSE # Include the medicare surcharge
 
 # Define the tax function
 
@@ -177,4 +177,7 @@ ggplot(df, aes(x = income/1000)) +
        colour=c(palette_e61(3)[1],palette_e61(3)[3],"blue","red","black"),
     size = 2)
 
-save_e61(paste0("Bracket_creep_",save_vec,".png"),res=2)
+save_e61(paste0("Bracket_creep_",save_vec,".png"),res=2,save_data = TRUE)
+
+
+

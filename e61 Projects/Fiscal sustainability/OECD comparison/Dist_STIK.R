@@ -46,7 +46,22 @@ STIK_per_person[, (pop_cols) := NULL]
 STIK_per_person
 
 ## Create graphs
-
+# Age
 age_dt <- STIK_per_person[,.(Year,Measure,`15-24`,`25-34`,`35-44`, `45-54`, `55-64`, `65 and over`)]
 
 age_dt_long <- melt(age_dt,id.vars = c("Year","Measure"))
+
+ggplot(age_dt_long[Measure == "Health"],aes(x=Year,y=value,fill=variable)) + geom_col(position = "dodge") + 
+  coord_flip() + theme_e61(legend = "bottom")
+
+# Income
+
+colnames(STIK_per_person)
+
+income_dt <-STIK_per_person[,.(Year,Measure,`Lowest (EDHI)`,`Second (EDHI)`,`Third (EDHI)`,`Fourth (EDHI)`,`Highest (EDHI)`)]
+
+income_dt_long <- melt(income_dt,id.vars = c("Year","Measure"))
+
+ggplot(income_dt_long[Measure == "Health"],aes(x=Year,y=value,fill=variable)) + geom_col(position = "dodge") + 
+  coord_flip() + theme_e61(legend = "bottom")
+  
