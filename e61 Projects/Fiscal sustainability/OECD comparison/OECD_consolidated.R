@@ -20,9 +20,6 @@ library(tidysynth)
 library(readabs)
 
 
-
-
-
 Consol_toG <- read_excel("table22-consolidated-cofog-expenditure-spent-by-approach.xlsx", 
                                                                        sheet = "COFOGexp_%oftotal", skip = 1)
 
@@ -134,17 +131,19 @@ ggplot(toGDP[COFOG_Area == "Defence" & Government_level == "Total"],
 unique(toGDP$COFOG_Area)
 
 split_plot_data <- toGDP[COFOG_Area == "Total" & Government_level != "Total" & Year == "2022"]
+total_order <- split_plot_data[, .(total_value = sum(value, na.rm=TRUE)), by = Country][order(total_value)]$Country
 split_plot_data[, Country := factor(Country, 
-                              levels = split_plot_data[Government_level == "Federal"][order(value)]$Country)]
+                              levels = total_order)]
 split_plot_data[, Government_level := factor(Government_level, 
                                        levels = c("Non-Federal","Federal"))]
 
-## France is far too small in this plot
-ggplot(split_plot_data, aes(x = Country, y = value, fill = Government_level)) +
+## Overall plot
+ggplot(split_plot_data, aes(x = Country, y = value*100, fill = Government_level)) +
   geom_col() +
   coord_flip() +
   labs_e61(title = "Role of consolidation",
-           footnotes = c("Dark blue is spending by Federal Govt % GDP. Light blue is additional spending attributed to non-Federal entities."))
+           footnotes = c("Dark blue is spending by Federal Govt % GDP. Light blue is additional spending attributed to non-Federal entities."),
+           y="%")
 
 save_e61("Consolidation_cc.png",res=2)
 
@@ -452,3 +451,41 @@ ggplot(pop_real,aes(x=Year,y=real_pc_spend/1000)) + geom_col() +
 
 
 save_e61("Real_consolidated_PC.png",res=2)
+
+## Consolidated borrowing
+
+borrow_dt <- read_excel("table18_balances_gdp.xlsx", 
+                        sheet = "balances_%_gdp", skip = 1)
+setDT(borrow_dt)
+
+colnames(borrow_dt)[2] <- "Country"
+
+ggplot(borrow_dt[!is.na(`2023`)][,.(Country, `2023`)][,.(borrowing =sum(`2023`,na.rm=TRUE)),by=.(Country)],aes(x=Country,y=borrowing)) + geom_col() + coord_flip()
+
+borrow_dt[Country == "Australia"]
+
+
+### GFS information
+
+GFS_ABS <- read_excel("GFS_ABS.xlsx", sheet = "For_plot", 
+                      skip = 17)
+setDT(GFS_ABS)
+
+
+GFS_dt <- GFS_ABS[,.(Expense,nom_change = `2024`-`2015`)]
+
+GFS_ABS_real <- melt(GFS_ABS,id.vars="Expense",variable.name = "Year")[,Year := as.integer(as.character(Year))]
+
+GFS_ABS_real <- GFS_ABS_real[cpi_annual,on=.(Year)][!is.na(value)][,real_spend := value/cpi_avg]
+
+GFS_ABS_real <- GFS_ABS_real[Year == 2024][GFS_ABS_real[Year == 2015],on=.(Expense)][,.(Expense,real_spend,i.real_spend)][,real_diff := real_spend - i.real_spend]
+
+ggplot(GFS_ABS_real[,.(Expense,real_prop = real_diff/sum(real_diff))],aes(x=1,y=real_prop*100,fill=Expense)) + geom_col() +
+  theme_e61(legend = "right") +
+  labs_e61(title = "Share of real expense growth",
+           y = "%") +
+  scale_y_continuous_e61(limits = c(0,100,20))
+
+save_e61("Real_expense_growth_GFS.png",res=2)
+
+

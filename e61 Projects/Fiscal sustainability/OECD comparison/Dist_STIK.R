@@ -64,4 +64,40 @@ income_dt_long <- melt(income_dt,id.vars = c("Year","Measure"))
 
 ggplot(income_dt_long[Measure == "Health"],aes(x=Year,y=value,fill=variable)) + geom_col(position = "dodge") + 
   coord_flip() + theme_e61(legend = "bottom")
-  
+
+prop_income_dt <- income_dt_long[, .(
+  total_spend = sum(value, na.rm=TRUE),
+  highest_spend = sum(value[variable == "Highest (EDHI)"], na.rm=TRUE)
+), by = .(Year, Measure)]
+
+prop_income_dt[, top_income_share := highest_spend / total_spend]
+
+ggplot(prop_income_dt[Measure == "Health"],aes(x=Year,y=top_income_share)) + geom_col(position = "dodge") + 
+  coord_flip()
+
+ggplot(prop_income_dt[Measure == "Education"],aes(x=Year,y=top_income_share)) + geom_col(position = "dodge") + 
+  coord_flip()
+
+ggplot(prop_income_dt[Measure == "Other"],aes(x=Year,y=top_income_share)) + geom_col(position = "dodge") + 
+  coord_flip()
+
+prop_income_dt$Measure <- factor(prop_income_dt$Measure, levels = c("Gross Disposable Income","Private Final Consumption","Other","Education", "Health"))
+
+ggplot(prop_income_dt[Measure %in% c("Health","Education","Other")],aes(x=Year,y=top_income_share,fill=Measure)) + geom_col() + 
+  coord_flip()
+
+
+prop_income_dt_full <- income_dt_long[!Measure %in% c("Gross Disposable Income","Private Final Consumption")][, .(
+  total_spend = sum(value, na.rm=TRUE),
+  highest_spend = sum(value[variable == "Highest (EDHI)"], na.rm=TRUE)
+), by = .(Year, Measure)]
+
+prop_income_dt_full[, top_income_share := highest_spend / total_spend]
+
+ggplot(prop_income_dt_full,aes(x=Year,y=top_income_share)) + geom_col(position = "dodge")
+
+ggplot(prop_income_dt_full, aes(x = Year, y = top_income_share)) +
+  geom_col(position = "dodge") +
+  coord_cartesian(ylim = c(0.1, 0.2)) +  # Show y-axis from 10% to 100%
+  scale_y_continuous(labels = scales::percent) +
+  theme_e61()
