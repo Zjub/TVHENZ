@@ -97,10 +97,9 @@ ggplot(Consolidated_info[!is.na(Payments_norm_con)], aes(x = Year)) +
   geom_line(aes(y = RGDP_norm, color = "NGDP")) +
   geom_line(aes(y = RGDP_trend, color = "Pre-2014 NGDP Trend"), linetype = "dashed") +
   scale_color_manual(values = c("Payments" = palette_e61(3)[1], "NGDP" = palette_e61(3)[2], "Pre-2014 NGDP Trend" = "black")) +
-  labs(title = "Spending follows old GDP trends",
-    y = "Indexed to FY2000 = 1", x = "Financial Year", color = "Series") +
   plab(c("Real Govt Payments","GDP","2000-2014 GDP trend"),x=c(2000.5,2000.5,2000.5),y=c(2.1,1.85,1.7),colour = c(palette_e61(3)[1],palette_e61(3)[2],"black")) +
-  labs_e61(subtitle = "Deflated by GDPD, indexed to 1 in FY99/20",
+  labs_e61(title = "Spending follows old GDP trends",
+           subtitle = "Deflated by GDPD, indexed to 1 in FY99/20",
            y="",
            x="") +
   scale_y_continuous_e61(limits = c(1,2.2,0.5))

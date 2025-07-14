@@ -1,4 +1,5 @@
-## Last update:  28/04/2025
+## Initial:  28/04/2025
+## Last update:  14/07/2025 - new graph theme
 ## Author:  Matt Nolan
 ## Last update person:  Matt Nolan
 # Basic demographic trends used to project spending under status quo
@@ -563,6 +564,20 @@ ggplot(plot_log_long[!type %in% "actual_total_log_pc" & year >= 2000], aes(x = y
   plab(c("Demographically adjusted trend","Trend spending"),x=c(2000.5,2000.5),y=c(16.1,16.7))
 
 save_e61("Dem_adj_forMK.pdf")
+
+ggplot(plot_log_long[!type %in% "actual_total_log_pc" & year >= 2000], aes(x = year, y = log_spending_pc, colour = type)) +
+  geom_line() +
+  geom_vline(xintercept = training_year + 0.5 + 5, linetype = "dashed") +
+  labs(title = "Federal Government Spending",
+    subtitle = "Real value, 2012 prices (in logs)",
+    footnotes = c(paste0("Model estimates trend government spending on subcategory as function of time and demographic structure. Model estimated on data before ",training_year),"Trend estimate based on an HP filter."),
+    x = "",
+    y = "",
+    sources = c("e61","ABS")) +
+  scale_y_continuous_e61(limits = c(16,17,0.2)) +
+  plab(c("Demographically adjusted trend","Trend spending"),x=c(2000.5,2000.5),y=c(16.1,16.7))
+
+save_e61("Dem_adj_forMK.png",res=2)
 
 ## Add other plot
 

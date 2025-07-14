@@ -138,12 +138,13 @@ split_plot_data[, Government_level := factor(Government_level,
                                        levels = c("Non-Federal","Federal"))]
 
 ## Overall plot
-ggplot(split_plot_data, aes(x = Country, y = value*100, fill = Government_level)) +
+ggplot(split_plot_data[!Country %in% c("Italy","Czech Republic","Hungary","Slovenia","Spain","Iceland","Estonia")], aes(x = Country, y = value*100, fill = Government_level)) +
   geom_col() +
   coord_flip() +
   labs_e61(title = "Role of consolidation",
+           subtitle = "",
            footnotes = c("Dark blue is spending by Federal Govt % GDP. Light blue is additional spending attributed to non-Federal entities."),
-           y="%")
+           y="")
 
 save_e61("Consolidation_cc.png",res=2)
 
@@ -452,6 +453,10 @@ ggplot(pop_real,aes(x=Year,y=real_pc_spend/1000)) + geom_col() +
 
 save_e61("Real_consolidated_PC.png",res=2)
 
+
+# Find consolidated plots for short-termism in "Fiscal habits"
+
+
 ## Consolidated borrowing
 
 borrow_dt <- read_excel("table18_balances_gdp.xlsx", 
@@ -460,7 +465,24 @@ setDT(borrow_dt)
 
 colnames(borrow_dt)[2] <- "Country"
 
-ggplot(borrow_dt[!is.na(`2023`)][,.(Country, `2023`)][,.(borrowing =sum(`2023`,na.rm=TRUE)),by=.(Country)],aes(x=Country,y=borrowing)) + geom_col() + coord_flip()
+borrowing_data <- borrow_dt[Country %in% split_plot_data$Country & !Country %in% c("Italy","Czech Republic","Hungary","Slovenia","Spain","Iceland","Estonia")][!is.na(`2023`)][,.(Country, `2023`)][,.(borrowing =sum(`2023`,na.rm=TRUE)),by=.(Country)]
+
+borrowing_data[, Country := factor(Country, levels = borrowing_data[order(-borrowing)]$Country)]
+borrowing_data[, highlight := ifelse(Country == "Australia", "Australia", "Other")]
+
+# Plot with custom colors
+ggplot(borrowing_data, aes(x = Country, y = borrowing, fill = highlight)) +
+  geom_col() +
+  coord_flip() +
+  scale_fill_manual(values = c("Australia" = "gold", "Other" = palette_e61(3)[2])) +
+  labs_e61(
+    title = "Consolidated Government Borrowing",
+    subtitle = "% of GDP, 2023",
+    sources = c("OECD", "e61")
+  ) +
+  scale_y_continuous_e61(limits =c(-10,20,5))
+
+save_e61("Borrowing_consolidate.png",res=2)
 
 borrow_dt[Country == "Australia"]
 
@@ -484,8 +506,13 @@ ggplot(GFS_ABS_real[,.(Expense,real_prop = real_diff/sum(real_diff))],aes(x=1,y=
   theme_e61(legend = "right") +
   labs_e61(title = "Share of real expense growth",
            y = "%") +
-  scale_y_continuous_e61(limits = c(0,100,20))
+  scale_y_continuous_e61(limits = c(0,100,20))+
+  theme(
+    legend.text = element_text(size = 5),      # Smaller legend text
+    axis.text.x = element_blank(),             # Remove x-axis numbers
+    axis.ticks.x = element_blank()             # Optional: remove x-axis ticks too
+  )
 
-save_e61("Real_expense_growth_GFS.png",res=2)
+save_e61("Real_expense_growth_GFS.png",res=2,auto_scale = FALSE)
 
 

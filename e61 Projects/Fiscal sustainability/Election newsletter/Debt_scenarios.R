@@ -83,6 +83,17 @@ ggplot(debt_long_exp,aes(x=Year,y=value,colour=Type)) + geom_line() +
     footnotes = c("Defence spending increased from 2.2% of GDP to 3.2%.","NDIS spending grows at 10%pa rather than 8%pa.","Ten-year goverment bond rate rises to 5.5%pa from a 4.5%pa projection."))
 
 save_e61("Projections_debt_exp.pdf")
+
+ggplot(debt_long_exp,aes(x=Year,y=value,colour=Type)) + geom_line() +
+  scale_y_continuous_e61(limits = c(30,70)) +
+  scale_x_continuous_e61(limits = c(2024,2036,3),expand_left = 0.05,expand_right = 0.05,hide_first_last = FALSE) +
+  plab(c("Forecast","Defence spending","+ NDIS","+ Interest increase"),x=c(2024,2024,2024,2024),y=c(66,62,58,55)) +
+  labs_e61(title = "Gross debt projections (expenditure shock)",
+    subtitle = "% of nominal GDP",
+    x="",
+    sources = c("PBO","e61"),
+    footnotes = c("Defence spending increased from 2.2% of GDP to 3.2%.","NDIS spending grows at 10%pa rather than 8%pa.","Ten-year goverment bond rate rises to 5.5%pa from a 4.5%pa projection."))
+
 save_e61("Projections_debt_exp.png",res=2)
 
 ## Overall
@@ -194,7 +205,7 @@ total <- mean(Expense_wcore[FY < 20]$Total)
 
 
 ggplot(melt(Expense_wcore,id.vars = "FY",variable.name = "Type",value.name = "value"),aes(x=as.numeric(FY)+2000,y=value*100,colour=Type)) + geom_line() +
-  scale_y_continuous_e61(limits = c(18,33,4),y_top = FALSE) +
+  scale_y_continuous_e61(limits = c(18,33,4)) +
   scale_x_continuous_e61(limits = c(2010,2028,by=3),hide_first_last = FALSE,expand_left = 0.05,expand_right = 0.05) +
   geom_hline(yintercept = core * 100, linetype = "dashed", colour = palette_e61(2)[2], linewidth = 0.8) +
   geom_hline(yintercept = total * 100, linetype = "dashed", colour = palette_e61(2)[1], linewidth = 0.8) +
@@ -223,11 +234,20 @@ ggplot(Five_year, aes(x = FY, y = Ratio*100)) +
   coord_cartesian(ylim = c(22, 28)) +
   scale_y_continuous_e61(breaks = seq(22, 28, by = 1)[-length(seq(22, 28, by = 1))]) +
   labs_e61(subtitle = "Five year expenditure % GDP, to FY",
-           y= "%",
            x="",
            sources = c("PBO","e61"))
 
 save_e61("Expenses_5y.pdf",auto_scale = FALSE)
+
+ggplot(Five_year, aes(x = FY, y = Ratio*100)) +
+  geom_col() +
+  coord_cartesian(ylim = c(22, 28)) +
+  scale_y_continuous_e61(breaks = seq(22, 28, by = 1)[-length(seq(22, 28, by = 1))]) +
+  labs_e61(title = "Federal Expenditure",
+    subtitle = "Five year expenditure % GDP, to FY",
+           x="",
+           sources = c("PBO","e61"))
+
 save_e61("Expenses_5y.png",res=2,auto_scale = FALSE)
 
 ## Migrant flows
@@ -306,6 +326,21 @@ ggplot(pay_ngdp, aes(x = Year)) +
   labs_e61(subtitle = "Deflated by GDPD, indexed to 1 in FY99/20",
            y="",
            x="") +
-  scale_y_continuous_e61(limits = c(1,2.4,0.5),y_top=FALSE)
+  scale_y_continuous_e61(limits = c(1,2.4,0.5))
 
 save_e61("Habit.pdf")
+
+ggplot(pay_ngdp, aes(x = Year)) +
+  geom_line(aes(y = Payments_norm, color = "Payments")) +
+  geom_line(aes(y = RGDP_norm, color = "NGDP")) +
+  geom_line(aes(y = RGDP_trend, color = "Pre-2014 NGDP Trend"), linetype = "dashed") +
+  scale_color_manual(values = c("Payments" = palette_e61(3)[1], "NGDP" = palette_e61(3)[2], "Pre-2014 NGDP Trend" = "black")) +
+  labs(y = "Indexed to FY2000 = 1", x = "Financial Year", color = "Series") +
+  plab(c("Real Govt Payments","GDP","2000-2014 GDP trend"),x=c(2000.5,2000.5,2000.5),y=c(2.2,1.85,1.7),colour = c(palette_e61(3)[1],palette_e61(3)[2],"black")) +
+  labs_e61(title = "Expenditure rises with old GDP trends",
+    ,subtitle = "Deflated by GDPD, indexed to 1 in FY99/20",
+           y="",
+           x="") +
+  scale_y_continuous_e61(limits = c(1,2.4,0.5))
+
+save_e61("Habit.png",res=2)

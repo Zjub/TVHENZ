@@ -378,8 +378,24 @@ ggplot(subcategories_plot_long, aes(x = year, y = spending_dollars / 1e9, color 
        subtitle = paste0("Dashed line shows ", training_year, " - model estimated on data before"),
        x = "Year",
        y = "Spending ($ Billion)",
+       color = "Legend") 
+
+# Plot each subcategory (Actual vs Predicted) - for slides XXXX
+ggplot(subcategories_plot_long, aes(x = year, y = log(spending_dollars), color = type)) +
+  geom_line(size = 1) +
+  facet_wrap(~category, scales = "free_y") +
+  geom_vline(xintercept = training_year + 0.5, linetype = "dashed") +
+  labs_e61(title = "Actual vs Predicted Spending by Category",
+       subtitle = paste0("Dashed line shows ", training_year, " - model estimated pre-2014"),
+       x = "Year",
+       y = "Spending (in logs)",
        color = "Legend") +
-  theme_minimal()
+  plab(c("Actual","Predicted"),x=c(1990,1990),y=c(28.3,29.7),colour = c(palette_e61(3)[1],palette_e61(3)[2]),facet_name = "category",facet_value = "Education")
+
+save_e61("Example_demo_adj.png",res=2)
+
+
+
 
 # Check population shares
 ggplot(pop_shares, aes(x = date, y = prop, color = age_group)) +
