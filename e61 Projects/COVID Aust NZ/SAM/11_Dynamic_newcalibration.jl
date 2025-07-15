@@ -13,10 +13,10 @@ p_R  = 0.5
 y_pre = 2.0
 y_post = 2.0
 b_R_pre = 0.28
-b_R_post = 1.2 * b_R_pre
+b_R_post = 1 * b_R_pre
 b_N = 0.0
 l_u_R_pre, l_u_N_pre = 0.1, 0.1
-l_u_R_post, l_u_N_post = 0.3, 0.1
+l_u_R_post, l_u_N_post = 0.1, 0.1
 c_vac = 0.21
 wge = 0.8
 
@@ -129,8 +129,8 @@ function compute_value_path(γ_pre, μ_pre, γ_post, μ_post,
 end
 
 function calibrate_grid_static(y, b_R, l_u_R, l_u_N, f_N_target, f_R_target)
-    γ_vals = range(0.001, stop=1.0, length=30)
-    μ_vals = range(0.05, stop=1.5, length=30)
+    γ_vals = range(0.001, stop=1.0, length=100)
+    μ_vals = range(0.05, stop=1.5, length=100)
     residuals = fill(Inf, length(γ_vals), length(μ_vals))
     best_γ, best_μ, min_residual = NaN, NaN, Inf
 
@@ -162,8 +162,7 @@ function calibrate_grid(y_pre, b_R_pre, y_post, b_R_post,
     μ_vals = range(0.05, stop=1.5, length=30)
 
     # Step 1: Pre-COVID calibration
-    γ_pre, μ_pre, _, _, _ = calibrate_grid_static(y_pre, b_R_pre, l_u_R_pre, l_u_N_pre,
-                                                 f_N_target_pre, f_R_target_pre)
+    γ_pre, μ_pre, _, _, _ = calibrate_grid_static(y_pre, b_R_pre, l_u_R_pre, l_u_N_pre,f_N_target_pre, f_R_target_pre)
 
     # Step 2: Post-COVID dynamic calibration
     best_γ_post, best_μ_post, min_residual_post = NaN, NaN, Inf
@@ -195,4 +194,60 @@ function calibrate_grid(y_pre, b_R_pre, y_post, b_R_post,
     println("   γ_pre=$(γ_pre), μ_pre=$(μ_pre)")
     println("   γ_post=$(best_γ_post), μ_post=$(best_μ_post)")
     return γ_pre, μ_pre, best_γ_post, best_μ_post, γ_vals, μ_vals
+end
+
+# Compare Steady States for Pre-COVID, Post-COVID, and Benefit-Only Scenarios
+function compare_steady_states()
+    println("\n📌 Steady State Comparison Table:")
+
+    # Pre-COVID full calibration
+    f_N_pre, f_R_pre, s_N_pre, s_R_pre, W_N_pre, W_R_pre, U_N_pre, U_R_pre, θ_pre, w_pre =
+        job_finding_rates(γ_pre, μ_pre, y_pre, b_R_pre,l_u_R_pre,l_u_N_pre)
+
+    # Post-COVID full calibration
+    f_N_post, f_R_post, s_N_post, s_R_post, W_N_post, W_R_post, U_N_post, U_R_post, θ_post, w_post =
+        job_finding_rates(γ_post, μ_post, y_post, b_R_post,l_u_R_post,l_u_N_post)
+
+    # Benefit-only shock: keep γ, μ at pre-COVID levels
+    f_N_benefit, f_R_benefit, s_N_benefit, s_R_benefit, W_N_benefit, W_R_benefit, U_N_benefit, U_R_benefit, θ_benefit, w_benefit =
+        job_finding_rates(γ_pre, μ_pre, y_post, b_R_post,l_u_R_pre,l_u_N_pre)
+
+    # Print formatted table
+    println("| Metric    | Pre-COVID | Post-COVID | Benefit Only |")
+    println("|-----------|------------|------------|--------------|")
+    @printf("| f_N       | %.4f     | %.4f     | %.4f        |\n", f_N_pre, f_N_post, f_N_benefit)
+    @printf("| f_R       | %.4f     | %.4f     | %.4f        |\n", f_R_pre, f_R_post, f_R_benefit)
+    @printf("| s_N       | %.4f     | %.4f     | %.4f        |\n", s_N_pre, s_N_post, s_N_benefit)
+    @printf("| s_R       | %.4f     | %.4f     | %.4f        |\n", s_R_pre, s_R_post, s_R_benefit)
+    @printf("| W_N       | %.4f     | %.4f     | %.4f        |\n", W_N_pre, W_N_post, W_N_benefit)
+    @printf("| W_R       | %.4f     | %.4f     | %.4f        |\n", W_R_pre, W_R_post, W_R_benefit)
+    @printf("| U_N       | %.4f     | %.4f     | %.4f        |\n", U_N_pre, U_N_post, U_N_benefit)
+    @printf("| U_R       | %.4f     | %.4f     | %.4f        |\n", U_R_pre, U_R_post, U_R_benefit)
+    @printf("| θ         | %.4f     | %.4f     | %.4f        |\n", θ_pre, θ_post, θ_benefit)
+    @printf("| w         | %.4f     | %.4f     | %.4f        |\n", w_pre, w_post, w_benefit)
+    println()
+end
+
+function average_job_finding_rates(f_N::Vector, f_R::Vector)
+    # Periods
+    pre_period = 1:(shock_start-1)
+    shock_period = shock_start:shock_end
+    post_period = (shock_end+1):T
+
+    # Average job finding rates (%)
+    avg_f_N_pre = mean(f_N[pre_period]) * 100
+    avg_f_R_pre = mean(f_R[pre_period]) * 100
+
+    avg_f_N_shock = mean(f_N[shock_period]) * 100
+    avg_f_R_shock = mean(f_R[shock_period]) * 100
+
+    avg_f_N_post = mean(f_N[post_period]) * 100
+    avg_f_R_post = mean(f_R[post_period]) * 100
+
+    println("\n📊 Average Job-Finding Rates (in %):")
+    println("| Period     | f_N   | f_R   |")
+    println("|------------|-------|-------|")
+    @printf("| Pre-shock  | %5.2f | %5.2f |\n", avg_f_N_pre, avg_f_R_pre)
+    @printf("| Shock      | %5.2f | %5.2f |\n", avg_f_N_shock, avg_f_R_shock)
+    @printf("| Post-shock | %5.2f | %5.2f |\n", avg_f_N_post, avg_f_R_post)
 end
