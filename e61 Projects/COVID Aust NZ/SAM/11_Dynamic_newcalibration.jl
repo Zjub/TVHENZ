@@ -5,20 +5,20 @@
 using Printf, Plots, CairoMakie, Statistics
 
 # Parameters
-β    = 0.99
-δ    = 0.02
-p_R  = 0.5
-α    = 0.5
-φ    = 0.5
-y_pre = 2.0
-y_post = 2.0
-b_R_pre = 0.28
-b_R_post = 1 * b_R_pre
-b_N = 0.0
-l_u_R_pre, l_u_N_pre = 0.1, 0.1
-l_u_R_post, l_u_N_post = 0.1, 0.1
-c_vac = 0.21
-wge = 0.8
+β    = 0.99 # Discount rate
+δ    = 0.01 # Set to 1% in order to provide sensible unemployment numbers 
+p_R  = 0.5 # Proportion of population who are recipients
+α    = 0.5 # Match elasticity
+φ    = 0.5 # Bargaining power (for Nash Bargaining)
+y_pre = 1.0 # Normalised output
+y_post = 1.0 # COVID output
+b_R_pre = 0.28 # Replacement rate
+b_R_post = 2 * b_R_pre # COVID RR
+b_N = 0.0 # Non-recipient RR
+l_u_R_pre, l_u_N_pre = 0.1, 0.1 # Value of leisure outside of COVID
+l_u_R_post, l_u_N_post = 0.2, 0.1 # Value of leisure during COVID
+c_vac = 1 # 0.21 a literature backed number, but I believe that is monthly rather than weekly, so multiply by 4.2
+wge = 0.8 # Exogenous wage
 
 f_N_target_pre = 0.10
 f_R_target_pre = 0.0866
@@ -54,6 +54,9 @@ function solve_tightness(μ, y, b̄)
     w = nash_wage(y, b̄)
     J = firm_surplus(y, w)
     θ = ((β * μ * J) / c_vac)^(1 / α)
+    if isnan(θ) || isinf(θ)
+        @warn "θ unstable: μ=$μ, y=$y, b̄=$b̄"
+    end
     return θ, w
 end
 
@@ -95,24 +98,32 @@ function compute_value_path(γ_pre, μ_pre, γ_post, μ_post,
 
     value_path = Vector{ValueTuple}(undef, T+1)
 
+    # Terminal condition: assume pre-COVID steady state at T+1
     _, _, _, _, W_N_ss, W_R_ss, U_N_ss, U_R_ss, _, _ =
         job_finding_rates(γ_pre, μ_pre, y_pre, b_R_pre, l_u_R_pre, l_u_N_pre)
     value_path[T+1] = ValueTuple(W_R_ss, U_R_ss, W_N_ss, U_N_ss)
 
     for t in T:-1:1
         V_next = value_path[t+1]
+
+        # Set parameters for each period
         if t >= shock_end+1
+            # Post-COVID reverse shock (dynamic re-adjustment)
             γ_t, μ_t, y_t, b_R_t = γ_pre, μ_pre, y_pre, b_R_pre
             l_u_R_t, l_u_N_t = l_u_R_pre, l_u_N_pre
         elseif t >= shock_start
+            # During-COVID forward shock
             γ_t, μ_t, y_t, b_R_t = γ_post, μ_post, y_post, b_R_post
             l_u_R_t, l_u_N_t = l_u_R_post, l_u_N_post
         else
+            # Pre-COVID myopia (agents assume SS persists)
             γ_t, μ_t, y_t, b_R_t = γ_pre, μ_pre, y_pre, b_R_pre
             l_u_R_t, l_u_N_t = l_u_R_pre, l_u_N_pre
+            V_next = ValueTuple(W_R_ss, U_R_ss, W_N_ss, U_N_ss)  # Myopic
         end
 
-        b̄ = p_R*b_R_t + (1 - p_R)*b_N + (p_R*l_u_R_t + (1-p_R)*l_u_N_t)
+        # Tightness and Bellman updates
+        b̄ = p_R*b_R_t + (1 - p_R)*b_N + (p_R*l_u_R_t + (1 - p_R)*l_u_N_t)
         θ, w_t = solve_tightness(μ_t, y_t, b̄)
         p_contact = matching_rates(θ, μ_t).f
 
@@ -127,6 +138,9 @@ function compute_value_path(γ_pre, μ_pre, γ_post, μ_post,
 
     return value_path
 end
+
+
+
 
 function calibrate_grid_static(y, b_R, l_u_R, l_u_N, f_N_target, f_R_target)
     γ_vals = range(0.001, stop=1.0, length=100)
@@ -153,6 +167,38 @@ function calibrate_grid_static(y, b_R, l_u_R, l_u_N, f_N_target, f_R_target)
 
     return best_γ, best_μ, residuals, γ_vals, μ_vals
 end
+
+function simulate_job_finding_rates(value_path,
+                                    γ_pre, μ_pre, γ_post, μ_post,
+                                    y_pre, y_post, b_R_pre, b_R_post,
+                                    l_u_R_pre, l_u_R_post, l_u_N_pre, l_u_N_post)
+    f_N = zeros(T)
+    f_R = zeros(T)
+
+    for t in 1:T
+        V_t = value_path[t]
+
+        if shock_start <= t <= shock_end
+            γ_t, μ_t, y_t, b_R_t = γ_post, μ_post, y_post, b_R_post
+            l_u_R_t, l_u_N_t = l_u_R_post, l_u_N_post
+        else
+            γ_t, μ_t, y_t, b_R_t = γ_pre, μ_pre, y_pre, b_R_pre
+            l_u_R_t, l_u_N_t = l_u_R_pre, l_u_N_pre
+        end
+
+        b̄ = p_R * b_R_t + (1 - p_R)*b_N + (p_R * l_u_R_t + (1 - p_R) * l_u_N_t)
+        θ, _ = solve_tightness(μ_t, y_t, b̄)
+        p_contact = matching_rates(θ, μ_t).f
+
+        s_N_t = β * p_contact * (V_t.W_N - V_t.U_N) / γ_t
+        s_R_t = β * p_contact * (V_t.W_R - V_t.U_R) / γ_t
+        f_N[t] = min(s_N_t * p_contact, 0.999)
+        f_R[t] = min(s_R_t * p_contact, 0.999)
+    end
+
+    return f_N, f_R
+end
+
 
 function calibrate_grid(y_pre, b_R_pre, y_post, b_R_post,
                         f_N_target_pre, f_R_target_pre,
@@ -251,3 +297,4 @@ function average_job_finding_rates(f_N::Vector, f_R::Vector)
     @printf("| Shock      | %5.2f | %5.2f |\n", avg_f_N_shock, avg_f_R_shock)
     @printf("| Post-shock | %5.2f | %5.2f |\n", avg_f_N_post, avg_f_R_post)
 end
+

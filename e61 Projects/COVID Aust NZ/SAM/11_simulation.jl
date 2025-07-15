@@ -1,5 +1,5 @@
 # 11_simulation.jl
-# Forward simulation with variable leisure, dynamic calibration, and extended outputs
+# Forward simulation with variable leisure, dynamic calibration, and extended outputs - also include appropriate transition dynamics post shock (steady state prior to shock)
 
 include("11_Dynamic_newcalibration.jl")  # Make sure to update the path
 
@@ -21,10 +21,10 @@ value_path = compute_value_path(
 )
 value_path_benefit_only = compute_value_path(
     γ_pre, μ_pre, γ_pre, μ_pre, # keep labor market params constant
-    y_pre, y_post,             # y changes during shock
+    y_pre, y_pre,             # y stays the same
     b_R_pre, b_R_post,         # benefit changes during shock
-    l_u_R_pre, l_u_R_post,     # leisure changes during shock
-    l_u_N_pre, l_u_N_post
+    l_u_R_pre, l_u_R_pre,     # leisure stays the same
+    l_u_N_pre, l_u_N_pre
 )
 
 # Forward simulation arrays
@@ -38,7 +38,10 @@ for t in 1:T
     if shock_start <= t <= shock_end
         γ_t, μ_t, y_t, b_R_t = γ_post, μ_post, y_post, b_R_post
         l_u_R_t, l_u_N_t = l_u_R_post, l_u_N_post
-    else
+    elseif shock_end > T
+        γ_t, μ_t, y_t, b_R_t = γ_pre, μ_pre, y_pre, b_R_pre
+        l_u_R_t, l_u_N_t = l_u_R_pre, l_u_N_pre
+    else # The pre-period
         γ_t, μ_t, y_t, b_R_t = γ_pre, μ_pre, y_pre, b_R_pre
         l_u_R_t, l_u_N_t = l_u_R_pre, l_u_N_pre
     end
@@ -144,3 +147,5 @@ average_surpluses(W_U_N_benefit_only, W_U_R_benefit_only)
 
 # 📌 Steady States
 compare_steady_states()
+
+
