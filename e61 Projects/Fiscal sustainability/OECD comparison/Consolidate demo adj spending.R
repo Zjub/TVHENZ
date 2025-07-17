@@ -1,9 +1,12 @@
-## Last update:  28/04/2025
+## Last update:  18/07/2025
 ## Author:  Matt Nolan
 ## Last update person:  Matt Nolan
 # Basic demographic trends used to project spending under status quo
 
-##### This is the old file - update when we get to this!
+##### This is the old file from newsletter with a single adjustment for McKinnon reporting - update when we get to this!
+# Restrict number of years
+# Change to incorporate additional time series modelling.
+# Pull in OECD data with demographics
 
 
 library(cli)
@@ -356,7 +359,6 @@ subcategories_plot <- final_data[, .(year,
                                      social_predicted = social_pred_total,
                                      other_predicted = other_pred_total)]
 
-# Melt to long format for easy ggplot
 subcategories_plot_long <- melt(subcategories_plot,
                                 id.vars = "year",
                                 variable.name = "series",
@@ -380,7 +382,7 @@ ggplot(subcategories_plot_long, aes(x = year, y = spending_dollars / 1e9, color 
        y = "Spending ($ Billion)",
        color = "Legend") 
 
-# Plot each subcategory (Actual vs Predicted) - for slides XXXX
+# Plot each subcategory (Actual vs Predicted) - for slides
 ggplot(subcategories_plot_long, aes(x = year, y = log(spending_dollars), color = type)) +
   geom_line(size = 1) +
   facet_wrap(~category, scales = "free_y") +
@@ -434,13 +436,13 @@ names(health_coefs_raw)    <- gsub("`", "", names(health_coefs_raw))
 names(social_coefs_raw)    <- gsub("`", "", names(social_coefs_raw))
 names(other_coefs_raw)     <- gsub("`", "", names(other_coefs_raw))
 
-# Step 3: Extract only the age group coefficients
+# Extract only the age group coefficients
 education_coefs_age <- education_coefs_raw[age_groups]
 health_coefs_age    <- health_coefs_raw[age_groups]
 social_coefs_age    <- social_coefs_raw[age_groups]
 other_coefs_age     <- other_coefs_raw[age_groups]
 
-# Step 4: Calculate delta (change in pop shares from baseline)
+# Calculate delta (change in pop shares from baseline)
 
 # Calculate delta for each age group
 for (ag in age_groups) {
@@ -470,8 +472,6 @@ for (ag in age_groups) {
   final_data[, paste0("other_contrib_", ag) := other_coefs_age[[ag]] * get(paste0("delta_", ag))]
 }
 
-# Step 6: Aggregate total contributions
-
 for (ag in age_groups) {
   final_data[, paste0("total_contrib_", ag) :=
                get(paste0("education_contrib_", ag)) +
@@ -480,7 +480,7 @@ for (ag in age_groups) {
                get(paste0("other_contrib_", ag))]
 }
 
-# Step 7: Stack into long format
+# Stack into long format
 
 # Education
 education_long <- melt(final_data, id.vars = "year",
@@ -522,10 +522,9 @@ total_long <- melt(final_data, id.vars = "year",
 total_long[, age_group := gsub("total_contrib_", "", age_group)]
 total_long[, category := "Total Spending"]
 
-# Step 8: Combine all
 all_contributions <- rbindlist(list(education_long, health_long, social_long, other_long, total_long))
 
-# Step 9: Plot Decomposition
+# Plot Decomposition
 
 ggplot(all_contributions, aes(x = year, y = contribution, fill = age_group)) +
   geom_area(alpha = 0.85) +
