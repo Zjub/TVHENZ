@@ -1,6 +1,8 @@
 # 11_simulation.jl
 # Forward simulation with variable leisure, dynamic calibration, and extended outputs - also include appropriate transition dynamics post shock (steady state prior to shock)
 
+using Plots
+
 include("11_Dynamic_newcalibration.jl")  # Make sure to update the path
 
 println("\n🔧 Calibrating parameters...")
@@ -102,31 +104,82 @@ for t in 1:T
     E_benefit_only[t+1] = 1.0 - u_N_benefit_only[t+1] - u_R_benefit_only[t+1]
 end
 
-# 📈 Plots: Unemployment and Job Finding Rates
-Plots.plot(0:T, u_N .* 100, label="u_N Full Shock", lw=2)
-Plots.plot!(0:T, u_N_benefit_only .* 100, label="u_N Benefit Only", ls=:dash)
-Plots.plot!(0:T, u_R .* 100, label="u_R Full Shock", lw=2)
-Plots.plot!(0:T, u_R_benefit_only .* 100, label="u_R Benefit Only", ls=:dash)
-Plots.xlabel!("Month"); Plots.ylabel!("Unemployment Rate (%)")
-Plots.title!("Unemployment Dynamics: Full Shock vs Benefit Only")
-display(current())
+# 📈 Plot 1: Unemployment and Job Finding Rates
+plt1 = plot(0:T, u_N .* 100, label="u_N Full Shock", lw=2)
+plot!(plt1, 0:T, u_N_benefit_only .* 100, label="u_N Benefit Only", ls=:dash)
+plot!(plt1, 0:T, u_R .* 100, label="u_R Full Shock", lw=2)
+plot!(plt1, 0:T, u_R_benefit_only .* 100, label="u_R Benefit Only", ls=:dash)
+xlabel!("Week"); ylabel!("Unemployment Rate (%)")
+title!("Unemployment Dynamics: Full Shock vs Benefit Only")
+display(plt1)
+savefig(plt1, "unemployment_dynamics.png")
 
-Plots.plot(1:T, f_N .* 100, label="f_N Full Shock", lw=2)
-Plots.plot!(1:T, f_N_benefit_only .* 100, label="f_N Benefit Only", ls=:dash)
-Plots.plot!(1:T, f_R .* 100, label="f_R Full Shock", lw=2)
-Plots.plot!(1:T, f_R_benefit_only .* 100, label="f_R Benefit Only", ls=:dash)
-Plots.xlabel!("Month"); Plots.ylabel!("Job-Finding Rate (%)")
-Plots.title!("Job-Finding Rates: Full Shock vs Benefit Only")
-display(current())
+# 📈 Plot 2: Job-Finding Rates
+plt2 = plot(1:T, f_N .* 100, label="f_N Full Shock", lw=2)
+plot!(plt2, 1:T, f_N_benefit_only .* 100, label="f_N Benefit Only", ls=:dash)
+plot!(plt2, 1:T, f_R .* 100, label="f_R Full Shock", lw=2)
+plot!(plt2, 1:T, f_R_benefit_only .* 100, label="f_R Benefit Only", ls=:dash)
+xlabel!("Week"); ylabel!("Job-Finding Rate (%)")
+title!("Job-Finding Rates: Full Shock vs Benefit Only")
+display(plt2)
+savefig(plt2, "job_finding_rates.png")
 
-# 📈 Plots: Search Efforts
-Plots.plot(1:T, s_N, label="s_N Full Shock", lw=2)
-Plots.plot!(1:T, s_N_benefit_only, label="s_N Benefit Only", ls=:dash)
-Plots.plot!(1:T, s_R, label="s_R Full Shock", lw=2)
-Plots.plot!(1:T, s_R_benefit_only, label="s_R Benefit Only", ls=:dash)
-Plots.xlabel!("Month"); Plots.ylabel!("Search Effort")
-Plots.title!("Search Effort: Full Shock vs Benefit Only")
-display(current())
+# 📈 Plot 3: Search Efforts
+plt3 = plot(1:T, s_N, label="s_N Full Shock", lw=2)
+plot!(plt3, 1:T, s_N_benefit_only, label="s_N Benefit Only", ls=:dash)
+plot!(plt3, 1:T, s_R, label="s_R Full Shock", lw=2)
+plot!(plt3, 1:T, s_R_benefit_only, label="s_R Benefit Only", ls=:dash)
+xlabel!("Week"); ylabel!("Search Effort")
+title!("Search Effort: Full Shock vs Benefit Only")
+display(plt3)
+savefig(plt3, "search_effort.png")
+
+# 📈 Plot 4: Difference in Search Effort (s_R - s_N)
+Δs_full = s_R .- s_N
+Δs_benefit_only = s_R_benefit_only .- s_N_benefit_only
+
+plt4 = plot(1:T, Δs_full, label="Full Shock", lw=2, color=:blue)
+plot!(plt4, 1:T, Δs_benefit_only, label="Benefit Only", ls=:dash, lw=2, color=:red)
+xlabel!("Week"); ylabel!("Difference in Search Effort")
+title!("Difference in Search Effort (s_R - s_N)")
+display(plt4)
+savefig(plt4, "search_effort_difference.png")
+
+# 📈 Plot 5: Difference in Job-Finding Rates (f_R - f_N)
+Δf_full = f_R .- f_N
+Δf_benefit_only = f_R_benefit_only .- f_N_benefit_only
+
+plt5 = plot(1:T, Δf_full .* 100, label="Full Shock", lw=2, color=:blue)
+plot!(plt5, 1:T, Δf_benefit_only .* 100, label="Benefit Only", ls=:dash, lw=2, color=:red)
+xlabel!("Week"); ylabel!("Difference in Job-Finding Rate (p.p.)")
+title!("Difference in Job-Finding Rates (f_R - f_N)")
+display(plt5)
+savefig(plt5, "job_finding_difference.png")
+
+# 📈 Plot 6: Difference-in-Differences for Search Effort
+Δs_DiD_full = Δs_full .- Δs_full[1]  # Subtract initial difference
+Δs_DiD_benefit_only = Δs_benefit_only .- Δs_benefit_only[1]
+
+plt6 = plot(1:T, Δs_DiD_full, label="Full Shock", lw=2, color=:blue)
+plot!(plt6, 1:T, Δs_DiD_benefit_only, label="Benefit Only", ls=:dash, lw=2, color=:red)
+xlabel!("Month")
+ylabel!("Difference-in-Differences (s_R - s_N)")
+title!("Difference-in-Differences: Search Effort")
+display(plt6)
+savefig(plt6, "did_search_effort.png")
+
+# 📈 Plot 7: Difference-in-Differences for Job-Finding Rates
+Δf_DiD_full = Δf_full .- Δf_full[1]
+Δf_DiD_benefit_only = Δf_benefit_only .- Δf_benefit_only[1]
+
+plt7 = plot(1:T, Δf_DiD_full .* 100, label="Full Shock", lw=2, color=:blue)
+plot!(plt7, 1:T, Δf_DiD_benefit_only .* 100, label="Benefit Only", ls=:dash, lw=2, color=:red)
+xlabel!("Month")
+ylabel!("Difference-in-Differences (p.p.)")
+title!("Difference-in-Differences: Job-Finding Rates")
+display(plt7)
+savefig(plt7, "did_job_finding_rates.png")
+
 
 # 📊 Table: Average Job-Finding Rates
 average_job_finding_rates(f_N, f_R)
@@ -148,4 +201,14 @@ average_surpluses(W_U_N_benefit_only, W_U_R_benefit_only)
 # 📌 Steady States
 compare_steady_states()
 
+using DataFrames, CSV
 
+# Create DataFrame
+did_job_finding_df = DataFrame(
+    Month = 1:T,
+    DiD_Full_Shock = Δf_DiD_full .* 100,          # Convert to percentage points
+    DiD_Benefit_Only = Δf_DiD_benefit_only .* 100
+)
+
+# Save as CSV
+CSV.write("did_job_finding_rates.csv", did_job_finding_df)

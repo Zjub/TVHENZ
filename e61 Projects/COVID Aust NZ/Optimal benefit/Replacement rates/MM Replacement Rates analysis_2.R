@@ -1003,7 +1003,7 @@ RR1_no_ineligible <- ggplot(Rep_rates_df_subset_no_ineligible, aes(x = net_RR * 
     subtitle = "A. Distribution of Replacement Rates for eligible recipients*",
     x = "Replacement Rate (%)",
     y = "%",
-    fill = "Eligibility Status", footnotes = "Eligible recipients are those who recieve either taxable benefits or FTB."
+    fill = "Eligibility Status", footnotes = "Eligible recipients are those who would receive either taxable benefits or FTB."
   ) + plot_label(c("Benefit \n(JSP or PP)\n Only", "FTB Only", "Both"),
                  c(30, 5, 80), c(1.5, 0.5, 0.4), c("white", "white", "#10485E" ))
 
@@ -1025,7 +1025,7 @@ ggplot(Rep_rates_df_subset_no_ineligible, aes(x = net_RR * 100,
     subtitle = "Distribution of Replacement Rates for eligible recipients*",
     x = "Replacement Rate (%)",
     y = "%",
-    fill = "Eligibility Status", footnotes = "Eligible recipients are those who recieve either taxable benefits or FTB."
+    fill = "Eligibility Status", footnotes = "Eligible recipients are those who would receive either taxable benefits or FTB."
   ) + plot_label(c("Benefit \n(JSP or PP)\n Only", "FTB Only", "Both"),
                  c(23, 5, 70), c(1.9, 0.7, 0.7), c("white", "white", "#10485E" )) +
   scale_y_continuous_e61(limits=c(0,3.5,0.5))
@@ -1039,14 +1039,14 @@ if (hour_limit == 5){
             values = c(
               "Benefit Eligible" = "#ED7F00", 
               "FTB Eligible" = "#008080", 
-              "Benefit + FTB Eligible" = "#10485E"fds
+              "Benefit + FTB Eligible" = "#10485E"
             )
           ) +
           labs_e61(
             subtitle = "Distribution of Replacement Rates for eligible recipients*",
             x = "Replacement Rate (%)",
             y = "%",
-            fill = "Eligibility Status", footnotes = "Eligible recipients are those who recieve either taxable benefits or FTB."
+            fill = "Eligibility Status", footnotes = "Eligible recipients are those who would receive either taxable benefits or FTB."
           ) + plot_label(c("Benefit Only", "FTB Only", "Both"),
                          c(23, 5, 75), c(1.7, 0.7, 0.7), c("white", "white", "#10485E" )) +
           scale_y_continuous_e61(limits=c(0,3.5,0.5)))
@@ -1570,7 +1570,7 @@ bar_chart <- ggplot(proportions, aes(x = category, y = proportion, fill = catego
     x = "",
     y = "%",
     fill = "Category"
-  ) + scale_y_continuous_e61(limits = c(0, 45, 10),y_top = FALSE)
+  ) + scale_y_continuous_e61(limits = c(0, 45, 10))
 
 # Print the plot
 print(bar_chart)
@@ -1659,7 +1659,7 @@ save_e61(paste0("Poverty2Panel_hour_min",hour_limit,".pdf"), bar_chart,  histogr
       Poverty defined by the Henderson Poverty Line, at a household level. Experiment is how many households
     would be in poverty if one member of the household lost their job. Therefore, each partnered household where both members
     are working are included twice here; once for each person losing their job.
-    Note that only those eligible for the JSP or PP recieve the hypothetical increase here, so the `Failed Assets Test`
+    Note that only those eligible for the JSP or PP receive the hypothetical increase here, so the `Failed Assets Test`
       Category is unchanged over the period" )
 
 #   # Normalize weights
@@ -1732,7 +1732,7 @@ print(povertyhyp)
       Poverty defined by the Henderson Poverty Line, at a household level. Experiment is how many households
     would be in poverty if one member of the household lost their job. Therefore, each partnered household where both members
     are working are included twice here; once for each person losing their job.
-    Note that only those eligible for the JSP or PP recieve the hypothetical increase here, so the `Failed Assets Test`
+    Note that only those eligible for the JSP or PP receive the hypothetical increase here, so the `Failed Assets Test`
       Category is unchanged over the period" )
 
   
@@ -1916,7 +1916,7 @@ save_e61(paste0("povertyfamtype_hour_nomort_min",hour_limit,".pdf"), povertyhyp_
       Poverty defined by the Henderson Poverty Line, at a household level. Experiment is how many households
     would be in poverty if one member of the household lost their job. Therefore, each partnered household where both members
     are working are included twice here; once for each person losing their job.
-    Note that only those eligible for the JSP or PP recieve the hypothetical increase here, so the `Failed Assets Test`
+    Note that only those eligible for the JSP or PP receive the hypothetical increase here, so the `Failed Assets Test`
       Category is unchanged over the period" )
 
 # save_e61(paste0("povertyfamtype_hour_min",hour_limit,".pdf"), povertyhyp_single, povertyhyp_couple, 
@@ -1924,7 +1924,7 @@ save_e61(paste0("povertyfamtype_hour_nomort_min",hour_limit,".pdf"), povertyhyp_
 #       Poverty defined by the Henderson Poverty Line, at a household level. Experiment is how many households
 #     would be in poverty if one member of the household lost their job. Therefore, each partnered household where both members
 #     are working are included twice here; once for each person losing their job.
-#     Note that only those eligible for the JSP or PP recieve the hypothetical increase here, so the `Failed Assets Test`
+#     Note that only those eligible for the JSP or PP receive the hypothetical increase here, so the `Failed Assets Test`
 #       Category is unchanged over the period" )
 
 

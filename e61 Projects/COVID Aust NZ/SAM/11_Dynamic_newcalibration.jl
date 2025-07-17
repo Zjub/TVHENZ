@@ -2,7 +2,7 @@
 # Full model: parameterized, modular, variable leisure support - new calibration to accurately capture dyanmic nature of shock (calibrated on average observed change)
 # Nash Bargaining still not fully included.
 
-using Printf, Plots, CairoMakie, Statistics
+using Printf, Plots, Statistics # CairoMakie, 
 
 # Parameters
 β    = 0.99 # Discount rate
@@ -10,23 +10,26 @@ using Printf, Plots, CairoMakie, Statistics
 p_R  = 0.5 # Proportion of population who are recipients
 α    = 0.5 # Match elasticity
 φ    = 0.5 # Bargaining power (for Nash Bargaining)
+wge = 0.55 # Exogenous wage
 y_pre = 1.0 # Normalised output
 y_post = 1.0 # COVID output
-b_R_pre = 0.28 # Replacement rate
+b_R_pre = 0.28 * wge # Replacement rate - will need to adjust when incorporating Nash Bargaining
 b_R_post = 2 * b_R_pre # COVID RR
 b_N = 0.0 # Non-recipient RR
-l_u_R_pre, l_u_N_pre = 0.1, 0.1 # Value of leisure outside of COVID
-l_u_R_post, l_u_N_post = 0.2, 0.1 # Value of leisure during COVID
-c_vac = 1 # 0.21 a literature backed number, but I believe that is monthly rather than weekly, so multiply by 4.2
-wge = 0.8 # Exogenous wage
+leisure_shock = 3 # The size of the leisure shock for non-recipients (each is equal to 10% of wages, with 1 the base - so 1 is a 0% shock, 2 is a 10% shock.)
+l_u_R_pre, l_u_N_pre = 0.1* wge, 0.1* wge # Value of leisure outside of COVID
+l_u_R_post, l_u_N_post = 0.1* wge * leisure_shock, 0.1* wge # Value of leisure during COVID
+c_vac = 1 # 0.21 a literature backed number, so potentially adjust
+
 
 f_N_target_pre = 0.10
 f_R_target_pre = 0.0866
 f_N_target_post = 0.0821
 f_R_target_post = 0.0312
 
-T = 30
-shock_start, shock_end = 7, 13
+T = 60
+shock_start, shock_end = 12, 36
+grid_size = 500
 
 struct ValueTuple
     W_R::Float64; U_R::Float64; W_N::Float64; U_N::Float64
@@ -143,8 +146,9 @@ end
 
 
 function calibrate_grid_static(y, b_R, l_u_R, l_u_N, f_N_target, f_R_target)
-    γ_vals = range(0.001, stop=1.0, length=100)
-    μ_vals = range(0.05, stop=1.5, length=100)
+    γ_vals = range(0.001, stop=1.0, length=grid_size)
+    μ_vals = range(0.001, stop=1.0, length=grid_size)
+    #μ_vals = range(0.05, stop=1.5, length=grid_size)
     residuals = fill(Inf, length(γ_vals), length(μ_vals))
     best_γ, best_μ, min_residual = NaN, NaN, Inf
 
@@ -204,8 +208,9 @@ function calibrate_grid(y_pre, b_R_pre, y_post, b_R_post,
                         f_N_target_pre, f_R_target_pre,
                         f_N_target_post, f_R_target_post,
                         l_u_R_pre, l_u_R_post, l_u_N_pre, l_u_N_post)
-    γ_vals = range(0.001, stop=1.0, length=30)
-    μ_vals = range(0.05, stop=1.5, length=30)
+    γ_vals = range(0.001, stop=1.0, length=grid_size)
+    #μ_vals = range(0.05, stop=1.5, length=grid_size)
+    μ_vals = range(0.001, stop=1.0, length=grid_size)
 
     # Step 1: Pre-COVID calibration
     γ_pre, μ_pre, _, _, _ = calibrate_grid_static(y_pre, b_R_pre, l_u_R_pre, l_u_N_pre,f_N_target_pre, f_R_target_pre)
