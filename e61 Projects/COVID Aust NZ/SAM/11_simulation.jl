@@ -29,7 +29,15 @@ value_path_benefit_only = compute_value_path(
     l_u_N_pre, l_u_N_pre
 )
 
-# Forward simulation arrays
+value_path_covid_only = compute_value_path(
+    γ_pre, μ_pre, γ_post, μ_post, # labour market changes
+    y_pre, y_post,             # y changes
+    b_R_pre, b_R_pre,         # benefit stays the same
+    l_u_R_pre, l_u_R_post,     # leisure changes
+    l_u_N_pre, l_u_N_post
+)
+
+# Forward simulation arrays for main scenario
 u_N, u_R, E = zeros(T+1), zeros(T+1), zeros(T+1)
 s_N, s_R, f_N, f_R = zeros(T), zeros(T), zeros(T), zeros(T)
 W_U_N, W_U_R = zeros(T), zeros(T)  # Surpluses W - U
@@ -68,7 +76,7 @@ for t in 1:T
     E[t+1] = 1.0 - u_N[t+1] - u_R[t+1]
 end
 
-# Forward simulation for benefit-only scenario (similarly extended)
+# Forward simulation for benefit-only scenario
 u_N_benefit_only, u_R_benefit_only, E_benefit_only = zeros(T+1), zeros(T+1), zeros(T+1)
 s_N_benefit_only, s_R_benefit_only, f_N_benefit_only, f_R_benefit_only = zeros(T), zeros(T), zeros(T), zeros(T)
 W_U_N_benefit_only, W_U_R_benefit_only = zeros(T), zeros(T)
@@ -103,6 +111,46 @@ for t in 1:T
     u_R_benefit_only[t+1] = max(u_R_benefit_only[t] + p_R*sep - hires_R, 0.0)
     E_benefit_only[t+1] = 1.0 - u_N_benefit_only[t+1] - u_R_benefit_only[t+1]
 end
+
+# Forward simulation for COVID-only scenario
+u_N_covid_only, u_R_covid_only, E_covid_only = zeros(T+1), zeros(T+1), zeros(T+1)
+s_N_covid_only, s_R_covid_only, f_N_covid_only, f_R_covid_only = zeros(T), zeros(T), zeros(T), zeros(T)
+W_U_N_covid_only, W_U_R_covid_only = zeros(T), zeros(T)
+u_N_covid_only[1], u_R_covid_only[1], E_covid_only[1] = 0.05, 0.02, 1.0 - 0.05 - 0.02
+
+for t in 1:T
+    V_t = value_path_covid_only[t]
+
+    if shock_start <= t <= shock_end
+        γ_t, μ_t, y_t = γ_post, μ_post, y_post
+        b_R_t = b_R_pre               # benefit unchanged
+        l_u_R_t, l_u_N_t = l_u_R_post, l_u_N_post
+    else
+        γ_t, μ_t, y_t = γ_pre, μ_pre, y_pre
+        b_R_t = b_R_pre               # benefit unchanged
+        l_u_R_t, l_u_N_t = l_u_R_pre, l_u_N_pre
+    end
+
+    b̄ = p_R*b_R_t + (1-p_R)*b_N + (p_R*l_u_R_t + (1-p_R)*l_u_N_t)
+    θ, w_t = solve_tightness(μ_t, y_t, b̄)
+    p_contact = matching_rates(θ, μ_t).f
+
+    s_N_covid_only[t] = β * p_contact * (V_t.W_N - V_t.U_N) / γ_t
+    s_R_covid_only[t] = β * p_contact * (V_t.W_R - V_t.U_R) / γ_t
+    f_N_covid_only[t] = min(s_N_covid_only[t] * p_contact, 0.999)
+    f_R_covid_only[t] = min(s_R_covid_only[t] * p_contact, 0.999)
+
+    W_U_N_covid_only[t] = V_t.W_N - V_t.U_N
+    W_U_R_covid_only[t] = V_t.W_R - V_t.U_R
+
+    sep = δ * E_covid_only[t]
+    hires_N, hires_R = f_N_covid_only[t]*u_N_covid_only[t], f_R_covid_only[t]*u_R_covid_only[t]
+    u_N_covid_only[t+1] = max(u_N_covid_only[t] + (1-p_R)*sep - hires_N, 0.0)
+    u_R_covid_only[t+1] = max(u_R_covid_only[t] + p_R*sep - hires_R, 0.0)
+    E_covid_only[t+1] = 1.0 - u_N_covid_only[t+1] - u_R_covid_only[t+1]
+end
+
+## Benefit Only plots
 
 # 📈 Plot 1: Unemployment and Job Finding Rates
 plt1 = plot(0:T, u_N .* 100, label="u_N Full Shock", lw=2)
@@ -212,3 +260,108 @@ did_job_finding_df = DataFrame(
 
 # Save as CSV
 CSV.write("did_job_finding_rates.csv", did_job_finding_df)
+
+## COVID only plots
+
+# 📊 Plot 1: Unemployment Rates (u_N and u_R)
+plt1 = plot(0:T, u_N .* 100, label="u_N Full Shock", lw=2)
+plot!(plt1, 0:T, u_N_benefit_only .* 100, label="u_N Benefit Only", ls=:dash, lw=2)
+plot!(plt1, 0:T, u_N_covid_only .* 100, label="u_N COVID Only", ls=:dot, lw=2)
+plot!(plt1, 0:T, u_R .* 100, label="u_R Full Shock", lw=2)
+plot!(plt1, 0:T, u_R_benefit_only .* 100, label="u_R Benefit Only", ls=:dash, lw=2)
+plot!(plt1, 0:T, u_R_covid_only .* 100, label="u_R COVID Only", ls=:dot, lw=2)
+xlabel!("Week"); ylabel!("Unemployment Rate (%)")
+title!("Unemployment Dynamics: Full Shock vs Benefit Only vs COVID Only")
+display(plt1)
+savefig(plt1, "unemployment_dynamics_all.png")
+
+
+# 📊 Plot 2: Job-Finding Rates (f_N and f_R)
+plt2 = plot(1:T, f_N .* 100, label="f_N Full Shock", lw=2)
+plot!(plt2, 1:T, f_N_benefit_only .* 100, label="f_N Benefit Only", ls=:dash, lw=2)
+plot!(plt2, 1:T, f_N_covid_only .* 100, label="f_N COVID Only", ls=:dot, lw=2)
+plot!(plt2, 1:T, f_R .* 100, label="f_R Full Shock", lw=2)
+plot!(plt2, 1:T, f_R_benefit_only .* 100, label="f_R Benefit Only", ls=:dash, lw=2)
+plot!(plt2, 1:T, f_R_covid_only .* 100, label="f_R COVID Only", ls=:dot, lw=2)
+xlabel!("Week"); ylabel!("Job-Finding Rate (%)")
+title!("Job-Finding Rates: Full Shock vs Benefit Only vs COVID Only")
+display(plt2)
+savefig(plt2, "job_finding_rates_all.png")
+
+
+# 📊 Plot 3: Search Efforts (s_N and s_R)
+plt3 = plot(1:T, s_N, label="s_N Full Shock", lw=2)
+plot!(plt3, 1:T, s_N_benefit_only, label="s_N Benefit Only", ls=:dash, lw=2)
+plot!(plt3, 1:T, s_N_covid_only, label="s_N COVID Only", ls=:dot, lw=2)
+plot!(plt3, 1:T, s_R, label="s_R Full Shock", lw=2)
+plot!(plt3, 1:T, s_R_benefit_only, label="s_R Benefit Only", ls=:dash, lw=2)
+plot!(plt3, 1:T, s_R_covid_only, label="s_R COVID Only", ls=:dot, lw=2)
+xlabel!("Week"); ylabel!("Search Effort")
+title!("Search Effort: Full Shock vs Benefit Only vs COVID Only")
+display(plt3)
+savefig(plt3, "search_effort_all.png")
+
+
+# 📊 Plot 4: Difference in Search Effort (s_R - s_N)
+Δs_full = s_R .- s_N
+Δs_benefit_only = s_R_benefit_only .- s_N_benefit_only
+Δs_covid_only = s_R_covid_only .- s_N_covid_only
+
+plt4 = plot(1:T, Δs_full, label="Full Shock", lw=2, color=:blue)
+plot!(plt4, 1:T, Δs_benefit_only, label="Benefit Only", ls=:dash, lw=2, color=:red)
+plot!(plt4, 1:T, Δs_covid_only, label="COVID Only", ls=:dot, lw=2, color=:green)
+xlabel!("Week"); ylabel!("Difference in Search Effort")
+title!("Difference in Search Effort (s_R - s_N)")
+display(plt4)
+savefig(plt4, "search_effort_difference_all.png")
+
+
+# 📊 Plot 5: Difference in Job-Finding Rates (f_R - f_N)
+Δf_full = f_R .- f_N
+Δf_benefit_only = f_R_benefit_only .- f_N_benefit_only
+Δf_covid_only = f_R_covid_only .- f_N_covid_only
+
+plt5 = plot(1:T, Δf_full .* 100, label="Full Shock", lw=2, color=:blue)
+plot!(plt5, 1:T, Δf_benefit_only .* 100, label="Benefit Only", ls=:dash, lw=2, color=:red)
+plot!(plt5, 1:T, Δf_covid_only .* 100, label="COVID Only", ls=:dot, lw=2, color=:green)
+xlabel!("Week"); ylabel!("Difference in Job-Finding Rate (p.p.)")
+title!("Difference in Job-Finding Rates (f_R - f_N)")
+display(plt5)
+savefig(plt5, "job_finding_difference_all.png")
+
+
+# 📊 Plot 6: Difference-in-Differences for Search Effort
+Δs_DiD_full = Δs_full .- Δs_full[1]
+Δs_DiD_benefit_only = Δs_benefit_only .- Δs_benefit_only[1]
+Δs_DiD_covid_only = Δs_covid_only .- Δs_covid_only[1]
+
+plt6 = plot(1:T, Δs_DiD_full, label="Full Shock", lw=2, color=:blue)
+plot!(plt6, 1:T, Δs_DiD_benefit_only, label="Benefit Only", ls=:dash, lw=2, color=:red)
+plot!(plt6, 1:T, Δs_DiD_covid_only, label="COVID Only", ls=:dot, lw=2, color=:green)
+xlabel!("Week"); ylabel!("Difference-in-Differences (s_R - s_N)")
+title!("Difference-in-Differences: Search Effort")
+display(plt6)
+savefig(plt6, "did_search_effort_all.png")
+
+
+# 📊 Plot 7: Difference-in-Differences for Job-Finding Rates
+Δf_DiD_full = Δf_full .- Δf_full[1]
+Δf_DiD_benefit_only = Δf_benefit_only .- Δf_benefit_only[1]
+Δf_DiD_covid_only = Δf_covid_only .- Δf_covid_only[1]
+
+plt7 = plot(1:T, Δf_DiD_full .* 100, label="Full Shock", lw=2, color=:blue)
+plot!(plt7, 1:T, Δf_DiD_benefit_only .* 100, label="Benefit Only", ls=:dash, lw=2, color=:red)
+plot!(plt7, 1:T, Δf_DiD_covid_only .* 100, label="COVID Only", ls=:dot, lw=2, color=:green)
+xlabel!("Week"); ylabel!("Difference-in-Differences (p.p.)")
+title!("Difference-in-Differences: Job-Finding Rates")
+display(plt7)
+savefig(plt7, "did_job_finding_rates_all.png")
+
+
+# 📊 Table: Average W-U Surpluses for all scenarios
+println("\n📊 Average W-U Surpluses (Full Shock):")
+average_surpluses(W_U_N, W_U_R)
+println("\n📊 Average W-U Surpluses (Benefit Only):")
+average_surpluses(W_U_N_benefit_only, W_U_R_benefit_only)
+println("\n📊 Average W-U Surpluses (COVID Only):")
+average_surpluses(W_U_N_covid_only, W_U_R_covid_only)
