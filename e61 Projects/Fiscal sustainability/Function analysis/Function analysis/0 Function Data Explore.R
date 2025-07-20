@@ -24,21 +24,27 @@ gc()
 
 ## Import data ----
 
-work = TRUE
+work = FALSE
 
 if (work == TRUE){
   consolidate_dt <- read_csv("C:/Users/MattNolan/Git/TVHENZ/e61 Projects/Fiscal sustainability/Function analysis/Data/abs_gfs_data_clean.csv")
-} else{print("Na bro")}
+} else{
+  consolidate_dt <- read_csv("~/GitHub/TVHENZ/e61 Projects/Fiscal sustainability/Function analysis/Data/abs_gfs_data_clean.csv")
+}
 
 
 setDT(consolidate_dt)
 
-head(consolidate_dt)
+colnames(consolidate_dt)
 
-unique(consolidate_dt$sector_desc)
+unique(consolidate_dt$cofog_group_name)
+unique(consolidate_dt$etf_subclass_name)
+unique(consolidate_dt$etf_class_name)
+unique(consolidate_dt$etf_type_name)
 
 ### Defence and interest ----
 
+consolidated_expenses_dt <- consolidate_dt[etf_type_name == "Revenue and expenses"]
 
 
 ### Assets by function ----
