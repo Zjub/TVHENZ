@@ -14,7 +14,7 @@ library(Hmisc)
 
 # Options
 
-levy = FALSE # Include the medicare levy
+levy = TRUE # Include the medicare levy
 surcharge = FALSE # Include the medicare surcharge
 
 ## Define the tax function
@@ -71,3 +71,4 @@ ggplot(long_data,aes(x=incomes/1000,y=value*100,colour=variable)) + geom_line() 
   plab(c("Labour earnings","Long-term Capital Gains"),x=c(1,1),y=c(24,28))
 
 save_e61("ETR_scenario.png",res=2)
+save_e61("ETR_scenario.pdf")
