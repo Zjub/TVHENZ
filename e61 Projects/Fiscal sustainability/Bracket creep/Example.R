@@ -18,7 +18,7 @@ surcharge = FALSE # Include the medicare surcharge
 # Define the tax function
 
 tax_function <- function(income, include_levy = TRUE, include_surcharge = TRUE) {
-  
+
   # --- Medicare Levy phase-in and full ---
   medicare_levy <- if (include_levy) {
     ifelse(
@@ -31,35 +31,35 @@ tax_function <- function(income, include_levy = TRUE, include_surcharge = TRUE) 
   } else {
     0
   }
-  
-  # --- Medicare Levy Surcharge (MLS) ---
+
+  # --- Medicare Levy Surcharge (MLS) --- Note: Surcharge income base is wrong, so do not use for now
   mls_rate <- if (include_surcharge) case_when(
     income <= 101000 ~ 0,
     income <= 118000 ~ 0.01,
     income <= 158000 ~ 0.0125,
     TRUE ~ 0.015
   ) else 0
-  
+
   mls_surcharge <- income * mls_rate
-  
+
   # --- Base tax brackets ---
   base_tax <- case_when(
     income <= 18200 ~ 0,
     income <= 45000 ~ (income - 18200) * 0.16,
-    income <= 135000 ~ (45000 - 18200) * 0.16 + 
+    income <= 135000 ~ (45000 - 18200) * 0.16 +
       (income - 45000) * 0.30,
-    income <= 190000 ~ (45000 - 18200) * 0.16 + 
-      (135000 - 45000) * 0.30 + 
+    income <= 190000 ~ (45000 - 18200) * 0.16 +
+      (135000 - 45000) * 0.30 +
       (income - 135000) * 0.37,
-    TRUE             ~ (45000 - 18200) * 0.16 + 
-      (135000 - 45000) * 0.30 + 
-      (190000 - 135000) * 0.37 + 
+    TRUE             ~ (45000 - 18200) * 0.16 +
+      (135000 - 45000) * 0.30 +
+      (190000 - 135000) * 0.37 +
       (income - 190000) * 0.45
   )
-  
+
   # --- Total tax ---
   total_tax <- base_tax + medicare_levy + mls_surcharge
-  
+
   return(total_tax)
 }
 
@@ -106,7 +106,7 @@ annotate_points <- annotate_points %>%
   mutate(vjust = ifelse(income == 100000 & type == "Nominal", 2.5, -2.5))
 
 footnotes_vec <- c(
-  "Markers for Avg Earnings in FY25 (red), FY35 (black) and extra (blue)", 
+  "Markers for Avg Earnings in FY25 (red), FY35 (black) and extra (blue)",
   "Deflated line assumes 2.5% inflation for 10 years"
 )
 
@@ -145,19 +145,19 @@ if (levy && surcharge) {
 ggplot(df, aes(x = income/1000)) +
   geom_line(aes(y = etr_nominal*100, colour = "Nominal")) +
   geom_line(aes(y = etr_deflated*100, colour = "Deflated")) +
-  geom_point(data = annotate_points, 
-             aes(x = income/1000, y = etr*100, shape = type, colour = point_color), 
+  geom_point(data = annotate_points,
+             aes(x = income/1000, y = etr*100, shape = type, colour = point_color),
              size = 2.5) +
-  geom_text(data = annotate_points, 
-            aes(x = income / 1000, y = etr * 100, 
+  geom_text(data = annotate_points,
+            aes(x = income / 1000, y = etr * 100,
                 label = paste0(round(etr * 100, 1), "%"),
                 colour = point_color,
                 vjust = vjust),
             size = 2) +
   scale_colour_manual(values = c(
-    "Nominal" = palette_e61(3)[1], 
+    "Nominal" = palette_e61(3)[1],
     "Deflated" = palette_e61(3)[3],
-    "red" = "red", 
+    "red" = "red",
     "black" = "black",
     "blue" = "blue"  # Add more if needed
   )) +
@@ -165,11 +165,11 @@ ggplot(df, aes(x = income/1000)) +
   labs_e61(
     title = title_vec,
     footnotes = footnotes_vec,
-    x = "Gross Taxable Income (FY25$)", 
+    x = "Gross Taxable Income (FY25$)",
     y = "%",
-    colour = "Tax Scale", 
+    colour = "Tax Scale",
     shape = "Tax Scale"
-  ) + 
+  ) +
   plab(#c("Effective tax rates in FY25","Effective tax rates in FY35","Average FY25 worker in FY25","Average FY25 worker in FY35","Average FY35 worker in FY35"),
     c("Effective tax rates in FY25","Effective tax rates in FY35","FY25 worker in FY25","FY25 worker in FY35","FY35 worker in FY35"),
        x=c(1,1,100,100,100),
