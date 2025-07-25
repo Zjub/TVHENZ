@@ -55,7 +55,6 @@ tax_function <- function(income, include_levy = FALSE) {
   return(total_tax)
 }
 
-
 ## Define effective tax rate function - non_income refers to income earned that is not taxed (i.e. CGT discount)
 etr_function <- function(income,non_income) {
   tax_function(income, include_levy = levy) / (income + non_income)
