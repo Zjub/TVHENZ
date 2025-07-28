@@ -1,6 +1,6 @@
-## Last update:  22/04/2025
+## Last update:  28/07/2025
 ## Author:  Matt Maltman
-## Last update person:  Matt Nolan (adding FT versions of plots, and adjusting some stuff to DT)
+## Last update person:  Matt Nolan (adding FT versions of plots, and adjusting some stuff to DT). More recently changing graph format for new theme61
 # Note: Refine the code down a bit to make the datasets being used clear and transparent - to avoid using the wrong data accidentally.
 
 library(dplyr)
@@ -13,6 +13,8 @@ library(readxl)
 
 rm(list=ls())
 gc()
+
+work = TRUE
 
 ##################
 
@@ -77,8 +79,11 @@ gc()
 
 # START HERE IF YOU HAVE DONE THE ABOVE
 
-#Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
-Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
+if (work == TRUE){
+  Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
+} else {
+  Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
+}
 
 setDT(Rep_rates_df)
 
@@ -1716,18 +1721,18 @@ save_e61(paste0("Poverty2Panel_hour_min",hour_limit,".pdf"), bar_chart,  histogr
   ))]
   
   # Create the stacked line chart
-  plot2 <- ggplot(results, aes(x = i, y = pgi * 100, fill = group)) +
+  plot_povJL <- ggplot(results, aes(x = i, y = pgi * 100, fill = group)) +
     geom_area(alpha = 0.8, color = "black") +
     labs(
       subtitle = paste("B. Post Job Loss Poverty Gap Index"),
       x = "Increase in Weekly Benefits ($)",
       y = "%",
       fill = "Group"
-    )  + scale_y_continuous_e61(limits = c(0,30,5))
+    )  + scale_y_continuous_e61(limits = c(0,40,5))
 
 print(povertyhyp)
 
-  save_e61(paste0("povertyhyp_hour_min",hour_limit,".pdf"), povertyhyp, plot2, 
+  save_e61(paste0("povertyhyp_hour_min",hour_limit,".pdf"), povertyhyp, plot_povJL, 
            footnotes = "`On Benefit' Includes both those on JSP and the Parenting Payment, including those also on FTB.
       Poverty defined by the Henderson Poverty Line, at a household level. Experiment is how many households
     would be in poverty if one member of the household lost their job. Therefore, each partnered household where both members

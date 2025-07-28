@@ -717,8 +717,9 @@ min(all_dist[fam_interaction_cat == "Single, with dependents"]$net_RR)
 
 sum(initial_dist$SIHPSWT)/sum(all_dist$SIHPSWT) # weighted proportion that are "eligible"
 
-<<<<<<< Updated upstream
-initial_dist[fam_interaction_cat == "Single, no dependents",.(mean(net_RR)),by=.(quantile_current_net_income)][order(quantile_current_net_income)]
-=======
->>>>>>> Stashed changes
+## From a github merging error
+# <<<<<<< Updated upstream
+# initial_dist[fam_interaction_cat == "Single, no dependents",.(mean(net_RR)),by=.(quantile_current_net_income)][order(quantile_current_net_income)]
+# =======
+# >>>>>>> Stashed changes
 

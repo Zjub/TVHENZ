@@ -333,7 +333,7 @@ setDT(Rep_rates_df_subset)
 Rep_rates_df_subset[, partnered := factor(partnered, levels = c(0, 1), labels = c("Single", "Partnered"))]
 
 # Plot
-plot2 <- ggplot(Rep_rates_df_subset, aes(x = Numb_dep_cat, y = net_RR * 100, fill = partnered)) +
+plot_RRchild <- ggplot(Rep_rates_df_subset[net_RR >= 0], aes(x = Numb_dep_cat, y = net_RR * 100, fill = partnered)) +
   geom_boxplot(position = position_dodge(width = 0.8), alpha = 0.6, outlier.shape = NA) +
   labs_e61(subtitle = "Replacement Rates by Family Status",
            x = "Number of Dependent Children",
@@ -344,5 +344,5 @@ plot2 <- ggplot(Rep_rates_df_subset, aes(x = Numb_dep_cat, y = net_RR * 100, fil
   scale_y_continuous_e61(limits = c(0, 100, 25))
 
 
-save_e61("Boxplotfamily.pdf", plot2)
+save_e61("Boxplotfamily.pdf", plot_RRchild)
 

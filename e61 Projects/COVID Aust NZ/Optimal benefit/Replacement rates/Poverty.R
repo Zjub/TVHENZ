@@ -18,7 +18,7 @@ gc()
 
 ### Assumptions
 
-work_home <- "home"
+work_home <- "work"
 
 liquid_thresh = 13 # Only applied at the bottom for now - check to apply more widely
 
@@ -37,7 +37,7 @@ setDT(Rep_rates_df)
 
 min(Rep_rates_df$hours)
 
-hour_limit <- 5 # Two versions used - 30 for FT, 5 for the general.
+hour_limit <- 30 # Two versions used - 30 for FT, 5 for the general.
 
 #### Data setup ----
 

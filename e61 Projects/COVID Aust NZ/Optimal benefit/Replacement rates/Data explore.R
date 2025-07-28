@@ -14,6 +14,9 @@ library(flextable)
 library(officer)
 library(webshot2)
 
+rm(list=ls())
+gc()
+
 #webshot2::install_phantomjs()
 
 # Replace with dataset

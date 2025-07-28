@@ -25,9 +25,14 @@ IR_house_couple <- 0 # A random figure for "imputed rent" at household level
 IR <- 0 # A random figure for "imputed rent" at equivalised level
 
 ## Use the dataset with flags from Matthew M
-Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version
-#Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version
 
+work_home <- "work"
+
+if (work_home == "work"){
+  Rep_rates_df <- read_csv("C:/Users/MattNolan/Downloads/RRs_csv 3.csv") # Work version original
+} else {
+  Rep_rates_df <- read_csv("C:/Users/OEM/Downloads/RRs_csv 3.csv") # Home version original
+}
 
 setDT(Rep_rates_df)
 

@@ -16,11 +16,9 @@ library(Hmisc)
 rm(list=ls())
 gc()
 
-
-
 ### Assumptions
 
-work_home <- "home"
+work_home <- "work"
 
 liquid_thresh = 13 # Only applied at the bottom for now - check to apply more widely
 
@@ -288,7 +286,7 @@ ggplot(dt_long, aes(x = PovertyGap, color = Measure, weight = hhld_size * hhld_w
     color = "Measure"
   ) +
   coord_cartesian(xlim = c(-500, 500)) +
-  scale_y_continuous_e61(labels=scales::percent_format(),y_top = TRUE) +
+  scale_y_continuous_e61(labels=scales::percent_format()) +
   geom_vline(xintercept = -340, linetype = "dashed",colour = palette_e61(2)[2]) +
   geom_vline(xintercept = -110, linetype = "dashed", colour = palette_e61(2)[1]) +
   geom_vline(xintercept = 0, linetype = "dashed") +
@@ -314,7 +312,7 @@ ggplot(dt_long_actual, aes(x = PovertyGap, color = Measure, weight = hhld_size *
     color = "Measure"
   ) +
   coord_cartesian(xlim = c(-500, 500)) +
-  scale_y_continuous_e61(labels=scales::percent_format(),y_top = TRUE,limits=c(0,1,0.25)) +
+  scale_y_continuous_e61(labels=scales::percent_format(),limits=c(0,1,0.25)) +
   scale_x_continuous_e61(labels=scales::dollar_format()) +
   #geom_vline(xintercept = -340, linetype = "dashed",colour = palette_e61(2)[2]) +
   #geom_vline(xintercept = -110, linetype = "dashed", colour = palette_e61(2)[1]) +
@@ -348,7 +346,7 @@ ggplot(dt_long_single, aes(x = PovertyGap, color = Measure, weight = hhld_size *
     color = "Measure"
   ) +
   coord_cartesian(xlim = c(-500, 500)) +
-  scale_y_continuous_e61(labels=scales::percent_format(),y_top = TRUE) +
+  scale_y_continuous_e61(labels=scales::percent_format()) +
   geom_vline(xintercept = -340, linetype = "dashed",colour = palette_e61(2)[2]) +
   geom_vline(xintercept = -110, linetype = "dashed", colour = palette_e61(2)[1]) +
   geom_vline(xintercept = 0, linetype = "dashed") +
@@ -376,7 +374,7 @@ ggplot(dt_long_couple, aes(x = PovertyGap, color = Measure, weight = hhld_size *
     color = "Measure"
   ) +
   coord_cartesian(xlim = c(-500, 500)) +
-  scale_y_continuous_e61(labels=scales::percent_format(),y_top = TRUE) +
+  scale_y_continuous_e61(labels=scales::percent_format()) +
   geom_vline(xintercept = -340, linetype = "dashed",colour = palette_e61(2)[2]) +
   geom_vline(xintercept = -110, linetype = "dashed", colour = palette_e61(2)[1]) +
   geom_vline(xintercept = 0, linetype = "dashed") +

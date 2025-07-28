@@ -10,6 +10,9 @@ library(theme61)
 library(readxl)
 library(readr)
 
+rm(list=ls())
+gc()
+
 Age_RR <- read_csv("Age_RR.csv")
 setDT(Age_RR)
 

@@ -587,6 +587,7 @@ animated_plot <- ggplot(poverty_combined[net_RR_binned != "80-90%"],
 
 # Save or display the animation
 #animate(animated_plot, nframes = 100, fps = 10, width = 800, height = 600)
+# Broken in new theme61
 
 anim <- animate(animated_plot, 
                 nframes = 100, 
