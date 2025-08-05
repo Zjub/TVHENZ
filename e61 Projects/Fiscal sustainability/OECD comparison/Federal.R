@@ -38,3 +38,15 @@ ggplot(Fed_spend_dt_long[Year >= 2008],aes(x=Year,y=value*100,colour=Category)) 
   theme_e61(legend = "bottom") + geom_vline(xintercept = 2024) +
   labs_e61(title = "Share of Expenditure",
            y="%")
+
+## Add Federal Revenue plots
+
+cash_rev <- read_excel("PBO Historical fiscal data - 2025-26 Budget update.xlsx",sheet = "Table 6")
+setDT(cash_rev)
+NGDP <- read_excel("PBO Historical fiscal data - 2025-26 Budget update.xlsx",sheet = "Table 1")
+setDT(NGDP)
+
+
+
+
+
