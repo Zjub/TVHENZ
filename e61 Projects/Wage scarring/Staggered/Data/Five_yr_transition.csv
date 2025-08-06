@@ -1,0 +1,7 @@
+to_industry,PubS_df,Primary_df,PriS_df,Sec_df,Sales_df
+Public,8724,36,727,326,103
+Missing_NE,849,84,776,808,208
+Primary,10,189,59,128,10
+Private,769,167,3644,1036,246
+Secondary,121,110,592,2471,126
+Sales,74,11,249,255,487
