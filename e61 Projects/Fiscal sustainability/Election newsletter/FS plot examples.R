@@ -1,7 +1,9 @@
 ## Last update:  28/04/2025
 ## Author:  Matt Nolan
 ## Last update person:  Matt Nolan
-# Fiscal sustainability plots from OECD
+#Fiscal sustainability plots from OECD
+# Additional check 10/8/2025 - OECD links broken again!
+
 
 library(cli)
 library(tidyverse)
@@ -54,6 +56,8 @@ for (var_name in names(data_sets)) {
 
 setDT(result)
 
+nrow(result)
+
 names(data[[2]])
 
 data[[3]]$dimensions$series$values[[2]] # This is the country index
@@ -98,7 +102,7 @@ ggplot(result[debt_type == 0], aes(x = year, y = Value, group = id)) +
     size = ifelse(id == "AUS", "AUS", "Other"),
     alpha = ifelse(id == "AUS", 1, 0.4)
   )) +
-  scale_y_continuous_e61(y_top = FALSE,limits = c(0,310,40)) +
+  scale_y_continuous_e61(limits = c(0,310,40)) +
   scale_colour_manual(values = c("AUS" = "darkgreen", "Other" = "grey")) +
   scale_size_manual(values = c("AUS" = 1, "Other" = 0.2)) +
   scale_alpha_identity() +
@@ -114,7 +118,7 @@ ggplot(result[debt_type == 1], aes(x = year, y = Value, group = id)) +
     size = ifelse(id == "AUS", "AUS", "Other"),
     alpha = ifelse(id == "AUS", 1, 0.4)
   )) +
-  scale_y_continuous_e61(y_top = FALSE,limits = c(0,270,40)) +
+  scale_y_continuous_e61(limits = c(0,270,40)) +
   scale_colour_manual(values = c("AUS" = "darkgreen", "Other" = "grey")) +
   scale_size_manual(values = c("AUS" = 1, "Other" = 0.2)) +
   scale_alpha_identity() +
@@ -130,7 +134,7 @@ ggplot(result[debt_type == 1 & !id %in% c("JPN","GRC")], aes(x = year, y = Value
     size = ifelse(id == "AUS", "AUS", "Other"),
     alpha = ifelse(id == "AUS", 1, 0.4)
   )) +
-  scale_y_continuous_e61(y_top = FALSE,limits = c(0,180,40)) +
+  scale_y_continuous_e61(limits = c(0,180,40)) +
   scale_colour_manual(values = c("AUS" = palette_e61(2)[2], "Other" = "grey")) +
   scale_size_manual(values = c("AUS" = 1, "Other" = 0.2)) +
   scale_alpha_identity() +

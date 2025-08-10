@@ -70,6 +70,17 @@ breaks_seq <- unique(tax_dt$variable)[seq(1, length(unique(tax_dt$variable)), by
 ggplot(tax_dt,aes(x=variable,y=tax_GDP*100,colour=Category,group=Category)) + geom_line() +
   scale_y_continuous_e61(limits=c(0,20,4)) +
   scale_x_discrete(breaks = breaks_seq) +
+  labs_e61(title = "Revenue as a % GDP",
+           sources = c("PBO"),
+           y = "%",
+           x = "") +
+  plab(c("GST","Income tax"),x=c(1,1),y=c(9,11))
+
+save_e61("Rev_history.png",res=2)
+
+ggplot(tax_dt,aes(x=variable,y=tax_GDP*100,colour=Category,group=Category)) + geom_line() +
+  scale_y_continuous_e61(limits=c(0,20,4)) +
+  scale_x_discrete(breaks = breaks_seq) +
   labs_e61(subtitle = "Revenue as a % GDP",
            sources = c("PBO"),
            y = "%",
@@ -84,7 +95,7 @@ data_TJwLC <- read_csv("data-TJwLC.csv")
 setDT(data_TJwLC)
 colnames(data_TJwLC) <- c("country","VAT_share_tax")
 
-data_TJwLC[, country := factor(country, levels = country[order(VRR)])]
+data_TJwLC[, country := factor(country, levels = country[order(VAT_share_tax)])]
 
 ggplot(data_TJwLC,aes(x=country,y=VAT_share_tax)) + geom_col() + coord_flip()
 
@@ -95,6 +106,18 @@ setDT(VRR)
 VRR[, Country := factor(Country, levels = Country[order(VRR)])]
 
 VRR <- VRR[!Country %in% c("Estonia","Latvia","Hungary","Lithuania","Slovenia","Slovak Republic","Iceland","Costa Rica","Colombia","Belgium","Korea","Czechia","Portugal","Netherlands","Israel","Greece")]
+
+ggplot(VRR, aes(x = Country, y = VRR, 
+                fill = Country == "Australia")) +
+  geom_col() +
+  scale_fill_manual(values = c("FALSE" = palette_e61(2)[2], "TRUE" = "gold")) +
+  coord_flip() + 
+  scale_y_continuous_e61(limits = c(0,1,0.25)) +
+  labs_e61(title = "VAT revenue ratio (VRR) in 2022",
+           sources = c("OECD"),
+           footnotes = c("VRR refers to the ratio of the revenue raised from the VAT/GST system relative to a flat rate applied to final consumption."))
+
+save_e61("VRR.png",res=2)
 
 ggplot(VRR, aes(x = Country, y = VRR, 
                 fill = Country == "Australia")) +

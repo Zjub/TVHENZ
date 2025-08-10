@@ -486,6 +486,28 @@ save_e61("Borrowing_consolidate.png",res=2)
 
 borrow_dt[Country == "Australia"]
 
+# Consolidated debt
+
+OECD_debt <- read_csv("OECD.GOV.GIP,DSD_GOV@DF_GOV_PF_YU,+A..GGD.PT_B1GQ....csv")
+setDT(OECD_debt)
+
+colnames(OECD_debt)
+
+OECD_debt_2023 <- OECD_debt[
+  `Reference area` %in% borrowing_data$Country & TIME_PERIOD == 2023
+][order(OBS_VALUE)]
+
+OECD_debt_2023[, `Reference area` := factor(`Reference area`, levels = `Reference area`)]
+
+OECD_debt_2023[, colour_flag := ifelse(`Reference area` == "Australia", "Australia", "Other")]
+
+ggplot(OECD_debt_2023, aes(x = `Reference area`, y = OBS_VALUE, fill = colour_flag)) +
+  geom_col() +
+  coord_flip() +
+  scale_fill_manual(values = c("Australia" = "gold", "Other" = palette_e61(2)[2])) +
+  labs_e61(x = NULL, y = "% GDP",title = "General Government Gross Debt")
+
+save_e61("GG_gross_debt_OECD.png",res=2)
 
 ### GFS information
 
@@ -505,13 +527,15 @@ GFS_ABS_real <- GFS_ABS_real[Year == 2024][GFS_ABS_real[Year == 2015],on=.(Expen
 ggplot(GFS_ABS_real[,.(Expense,real_prop = real_diff/sum(real_diff))],aes(x=1,y=real_prop*100,fill=Expense)) + geom_col() +
   theme_e61(legend = "right") +
   labs_e61(title = "Share of real expense growth",
+           subtitle = "2015-2024",
            y = "%") +
   scale_y_continuous_e61(limits = c(0,100,20))+
   theme(
     legend.text = element_text(size = 5),      # Smaller legend text
     axis.text.x = element_blank(),             # Remove x-axis numbers
     axis.ticks.x = element_blank()             # Optional: remove x-axis ticks too
-  )
+  ) +
+  scale_x_continuous_e61()
 
 save_e61("Real_expense_growth_GFS.png",res=2,auto_scale = FALSE)
 

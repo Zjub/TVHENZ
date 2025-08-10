@@ -617,24 +617,25 @@ result_flows
 
 data$structure
 
+#2017, 2012, 2013, 2014, 2007, 2008, 2009, 2020, 2021, 2022, 2023, 2018, 2019, 2015, 2016, 2010, 2011
 
-result_flows[, year := fcase(Time == 0, 2013,
-                             Time == 1, 2014,
-                             Time == 2, 2008,
-                             Time == 3, 2009,
-                             Time == 4, 2010,
-                             Time == 5, 2011,
-                             Time == 6, 2015,
-                             Time == 7, 2016,
-                             Time == 8, 2017,
-                             Time == 9, 2018,
-                             Time == 10, 2019,
-                             Time == 11, 2020,
-                             Time == 12, 2021,
-                             Time == 13, 2022,
-                             Time == 14, 2023,
-                             Time == 15, 2007,
-                             Time == 16, 2012,
+result_flows[, year := fcase(Time == 0, 2017,
+                             Time == 1, 2012,
+                             Time == 2, 2013,
+                             Time == 3, 2014,
+                             Time == 4, 2007,
+                             Time == 5, 2008,
+                             Time == 6, 2009,
+                             Time == 7, 2020,
+                             Time == 8, 2021,
+                             Time == 9, 2022,
+                             Time == 10, 2023,
+                             Time == 11, 2018,
+                             Time == 12, 2019,
+                             Time == 13, 2015,
+                             Time == 14, 2016,
+                             Time == 15, 2010,
+                             Time == 16, 2011,
                              default = NA)]
 
 
@@ -649,6 +650,9 @@ ggplot(result_flows,aes(x=year,y=Value,colour=type_char)) + geom_line() +
   scale_y_continuous_e61(limits = c(30,45,3)) +
   plab(c("Expenditure","Revenue"),x=c(2008,2008),y=c(43,40.5))
 
+save_e61("General_exp_rev.png",res=2)
+
+
 Govt_spend_plot <- ggplot(result_flows[year >= 2000],aes(x=year,y=Value,colour=type_char)) + geom_line() +
   labs_e61(title = "General Government Accounts",
            subtitle = "Share of GDP",
@@ -657,6 +661,8 @@ Govt_spend_plot <- ggplot(result_flows[year >= 2000],aes(x=year,y=Value,colour=t
            #sources = c("OECD,e61")) +
   scale_y_continuous_e61(limits = c(30,45,3)) +
   plab(c("Expenditure","Revenue"),x=c(2008,2008),y=c(43,40.5))
+
+
 
 save_e61("plot2.png",Govt_spend_plot,dem_adj_plot,footnotes = c("Model (on right) estimates trend real spending on subcategories as a function of time and demographic structure. Model estimated prior to 2014."),sources = c("ABS","e61","OECD"),res=2)
 
