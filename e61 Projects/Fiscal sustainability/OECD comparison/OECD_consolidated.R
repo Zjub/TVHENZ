@@ -1,7 +1,7 @@
 # Topic: Looking at consolidated amounts by function
 # Author: Matt Nolan
 # Created: 5/7/2025
-# Last edit: 9/7/2025
+# Last edit: 13/8/2025
 # Last editor: Matt Nolan
 
 rm(list=ls())
@@ -162,11 +162,36 @@ ggplot(split_plot_data2,aes(x=Year,y=value*100,fill=Government_level)) +
   geom_col(position = "dodge") +
   labs_e61(title = "Consolidated spending",
            subtitle = "Activity attributed to authority who \"spent\" funds.",
-           y="%")
+           y="%") +
+  plab(c("Non-Federal","Federal"),x=c(1,1),y=c(23,28)) +
+  scale_y_continuous_e61(limits=c(0,30,5))
+
+# Include changes as % GDP
+base_year <- 2002L
+
+if (!(base_year %in% split_plot_data2$Year)) {
+  warning("1998 not in data; using earliest year instead.")
+  base_year <- min(split_plot_data2$Year)
+}
+
+base_dt <- split_plot_data2[Year == base_year, .(base = value), by = Government_level]
+change_dt <- merge(split_plot_data2, base_dt, by = "Government_level", all.x = TRUE)
+change_dt[, change_pp := (value - base) * 100]  # percentage points of GDP
+
+ggplot(change_dt, aes(x = Year, y = change_pp, fill = Government_level)) +
+  geom_col(position = "dodge") +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  labs_e61(
+    title = paste0("Change in spending vs ",base_year," baseline"),
+    subtitle = paste0("Δ (% of GDP) relative to ", base_year),
+    y = "Percentage points of GDP"
+  ) +
+  scale_y_continuous_e61() +
+  plab(c("Non-Federal","Federal"),x=c(1,1),y=c(3,5))
 
 
 
-## Do for all types
+##### Do for all types
 
 areas <- unique(toGDP$COFOG_Area)
 
@@ -539,4 +564,67 @@ ggplot(GFS_ABS_real[,.(Expense,real_prop = real_diff/sum(real_diff))],aes(x=1,y=
 
 save_e61("Real_expense_growth_GFS.png",res=2,auto_scale = FALSE)
 
+
+### Additional plots based on 2025 government at a glance: https://www.oecd.org/en/data/datasets/oecd-government-at-a-glance-database.html
+# This doesn't look like it is as careful an exercise, so replicate using table 4 as that goes to 2023
+
+totals_dt <- table4_gov_exp_gdp <- read_excel("table4_gov_exp-gdp.xlsx", 
+                                               sheet = "exp_%_gpd", skip = 1)
+
+setDT(totals_dt)
+
+colnames(totals_dt)[1] <- "cc"
+colnames(totals_dt)[2] <- "Country"
+colnames(totals_dt)[3] <- "Level"
+
+totals_dt <- totals_dt[,":=" (cc = NULL)]
+
+ggplot(melt(totals_dt[Country == "Australia"],id.vars = c("Country","Level"))[Level %in% c("Central","State")],aes(x=as.numeric(variable)+1971,y=value,colour=Level)) + geom_line() +
+  scale_y_continuous_e61(limits = c(0,28,7))
+
+# Long form with an explicit Year
+long_totals <- melt(
+  totals_dt[Country == "Australia"],
+  id.vars = c("Country","Level"),
+  variable.name = "year_var",
+  value.name = "value"
+)
+long_totals[, Year := as.integer(as.numeric(year_var) + 1971)]
+
+# Keep Central/State only
+long_totals <- long_totals[Level %in% c("Central","State")]
+
+# 1998 baseline per Level
+base_year <- 2002
+if (!(base_year %in% long_totals$Year)) {
+  warning("1998 not in data; using earliest available year.")
+  base_year <- min(long_totals$Year)
+}
+base_dt <- long_totals[Year == base_year, .(base = value), by = Level]
+
+# Merge baseline and compute change (pp of GDP)
+change_totals <- merge(long_totals, base_dt, by = "Level", all.x = TRUE)
+change_totals[, change_pp := value - base]  # already in % of GDP units
+change_totals[,Level := factor(Level,levels = c("Central","State"))]
+
+# Plot: change vs baseline
+ggplot(change_totals, aes(x = Year, y = change_pp, colour = Level)) +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_line(size = 1) +
+  labs_e61(
+    title = "Change in consolidated spending vs 1998 baseline",
+    subtitle = paste0("Δ (percentage points of GDP) relative to ", base_year),
+    y = "Percentage points of GDP"
+  )
+
+ggplot(change_totals[Year >= 1998], aes(x = Year, y = change_pp, fill = Level)) +
+  geom_col(position = "dodge") +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  labs_e61(
+    title = paste0("Change in spending vs ",base_year," baseline"),
+    subtitle = paste0("Δ (% of GDP) relative to ", base_year),
+    y = "Percentage points of GDP"
+  ) +
+  scale_y_continuous_e61() +
+  plab(c("Non-Federal","Federal"),x=c(1998,1998),y=c(3,5))
 
