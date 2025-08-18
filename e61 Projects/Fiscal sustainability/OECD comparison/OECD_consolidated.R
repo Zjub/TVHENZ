@@ -605,7 +605,7 @@ base_dt <- long_totals[Year == base_year, .(base = value), by = Level]
 # Merge baseline and compute change (pp of GDP)
 change_totals <- merge(long_totals, base_dt, by = "Level", all.x = TRUE)
 change_totals[, change_pp := value - base]  # already in % of GDP units
-change_totals[,Level := factor(Level,levels = c("Central","State"))]
+change_totals[,Level := factor(Level,levels = c("State","Central"))]
 
 # Plot: change vs baseline
 ggplot(change_totals, aes(x = Year, y = change_pp, colour = Level)) +

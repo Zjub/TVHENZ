@@ -26,6 +26,7 @@ library(pheatmap)
 library(gridExtra)
 library(TSclust)
 library(dtwclust)
+library(moments)
 
 rm(list=ls())
 gc()
@@ -159,3 +160,39 @@ grid.arrange(plot_scaled, plot_growth, ncol = 1)
 plot_nominal
 plot_scaled
 plot_growth
+
+### Broaden out the clustering
+
+# Scale by category - rather than year (note I dont't think the year clustering makes sense)
+scaled2 <- t(scale(t(wide_exp_dt), center = TRUE, scale = TRUE))
+
+ts_mat <- as.matrix(scaled2)  # rows = series, cols = years
+
+# Function to compute features for one series
+get_features <- function(x) {
+  c(
+    mean     = mean(x, na.rm = TRUE),
+    sd       = sd(x, na.rm = TRUE),
+    skew     = moments::skewness(x, na.rm = TRUE),
+    kurtosis = moments::kurtosis(x, na.rm = TRUE),
+    acf1     = acf(x, plot = FALSE, lag.max = 1)$acf[2],
+    slope    = coef(lm(x ~ seq_along(x)))[2]  # trend slope
+  )
+}
+
+# Compute features for all series
+
+feature_mat <- t(apply(ts_mat, 1, get_features))
+
+## Cluster on these features
+# Standard distance
+dist_feat <- dist(scale(feature_mat), method = "euclidean")
+
+## Pearson
+# corr_mat <- cor(t(feature_mat), method = "pearson")
+# dist_feat <- as.dist(1 - corr_mat)
+
+hc_feat <- hclust(dist_feat, method = "ward.D2")
+
+fviz_dend(hc_feat, k = 7, horiz = TRUE, rect = TRUE, rect_fill = TRUE,
+          main = "Clustering on time series feature vectors")
