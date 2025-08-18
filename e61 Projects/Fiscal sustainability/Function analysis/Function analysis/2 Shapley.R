@@ -499,7 +499,7 @@ if (nrow(panel)) {
   panel_m <- melt(panel,
                   id.vars = c("y0","y1","dln_Gpc"),
                   measure.vars = c("dln_GDPpc","dln_Age","dln_Policy"),
-                  variable.name = "component", value.name = "dln_contrib")dx
+                  variable.name = "component", value.name = "dln_contrib")
   panel_m[, year := y1]
   
   ggplot(panel_m, aes(x = year, y = dln_contrib, fill = component)) +
