@@ -417,7 +417,8 @@ shapley3 <- function(f0, f1) {
 # ---- 5) Main: Decompositions (four bins + panel) ----
 make_decompositions <- function(freq = c("FY","CY"), use_real = TRUE) {
   freq <- match.arg(freq)
-  dt <- build_spend_pc(freq, use_real, table_hint = "59")
+  data <- build_spend_pc(freq, use_real, table_hint = "59")
+  dt <- data$dt
   dt <- dt[complete.cases(year, spend_pc, gdp_pc, `0_14`,`15_34`,`35_54`,`55_64`,`65p`)]
   setorder(dt, year)
   
