@@ -196,3 +196,5 @@ hc_feat <- hclust(dist_feat, method = "ward.D2")
 
 fviz_dend(hc_feat, k = 7, horiz = TRUE, rect = TRUE, rect_fill = TRUE,
           main = "Clustering on time series feature vectors")
+
+
