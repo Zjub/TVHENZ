@@ -81,6 +81,9 @@ ggplot(Aus_toG[COFOG_Area == "Social Protection"],aes(x=Year, y=value,fill = as.
 ggplot(Aus_toGDP[COFOG_Area == "Social Protection"],aes(x=as.numeric(Year), y=value,colour = as.factor(Government_level))) + geom_line() +
   theme_e61(legend = "bottom")
 
+ggplot(Aus_toGDP[COFOG_Area == "Economic Affairs"],aes(x=Year, y=value*100,fill = as.factor(Government_level))) + geom_col() +
+  theme_e61(legend = "bottom") + labs_e61(title = "Economic Affairs ") 
+
 
 
 ## Make international comparison data ----
@@ -187,8 +190,10 @@ ggplot(change_dt, aes(x = Year, y = change_pp, fill = Government_level)) +
     y = "Percentage points of GDP"
   ) +
   scale_y_continuous_e61() +
-  plab(c("Non-Federal","Federal"),x=c(1,1),y=c(3,5))
+  plab(c("Non-Federal","Federal"),x=c(1,1),y=c(3,5)) + 
+  scale_x_discrete(breaks = function(x) x[seq(1, length(x), by = 3)])
 
+save_e61("change_baselineshare.png",res=2)
 
 
 ##### Do for all types
@@ -197,12 +202,13 @@ areas <- unique(toGDP$COFOG_Area)
 
 plots <- lapply(areas, function(area) {
   p <- ggplot(toGDP[COFOG_Area == area & Government_level == "Total"], 
-              aes(x = as.numeric(Year), y = value, 
+              aes(x = Year, y = value*100, 
                   group = Country, colour = Aus_flag, size = Aus_flag)) +
     geom_line() +
-    scale_colour_manual(values = c("Australia" = palette_e61(3)[1], "Anglo" = palette_e61(3)[3], "Other" = "lightgrey")) +
-    scale_size_manual(values = c("Australia" = 1.2, "Anglo" = 0.5, "Other" = 0.5)) +
-    labs_e61(colour = "Country", size = "Country", title = area,subtitle = "%GDP")
+    scale_colour_manual(values = c("Australia" = "gold", "Anglo" = "lightgrey", "Other" = "lightgrey")) +
+    scale_size_manual(values = c("Australia" = 1.2, "Anglo" = 0.2, "Other" = 0.2)) +
+    labs_e61(colour = "Country", size = "Country", title = area,subtitle = "%GDP") +
+    scale_x_discrete(breaks = function(x) x[seq(1, length(x), by = 3)])
   
   save_e61(filename = paste0("Consolidated Spending in ",area,".png"),plot = p,res=2)
   

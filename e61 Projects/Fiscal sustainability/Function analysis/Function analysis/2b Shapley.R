@@ -12,17 +12,20 @@ suppressPackageStartupMessages({
   library(lubridate)
   library(ggplot2)
   library(fixest)
+  library(theme61)
 })
 
 rm(list = ls()); invisible(gc())
 
 # -------------------- User prefs --------------------
 freq            <- "FY"                 # "FY" or "CY"
-measure         <- "GFCE"              # "GFCE" or "GFCE_plus_GFCF"
+measure         <- "GFCE_plus_GFCF"              # "GFCE" or "GFCE_plus_GFCF"
 share_basis     <- "nominal"           # "nominal" (standard for shares) or "real"
 conditional_sv  <- TRUE                # TRUE = conditional (full Shapley); FALSE = β·Δs
 abs_check_local <- TRUE                # use cached ABS files (fast after first run)
-features <- c("0_14","15_34","35_54","55_64","65p","tot") # The set of variables included in this run
+#features <- c("0_14","15_34","35_54","55_64","65p","tot") # The set of variables included in this run
+features <- c("0_14","15_34","35_54","55_64","65p","tot",
+              "rp_g","dln_pop") # ,"dln_pop""unemp",
 
 # -------------------- Helpers --------------------
 # AU FY ends in June: add 6m and take year
@@ -282,6 +285,7 @@ build_share_dataset <- function(freq = c("FY","CY"),
   dt  <- merge(na, erp, by = "year", all = FALSE)
   if (!nrow(dt)) stop("No overlapping years between 5206.0 and 3101.0.")
   
+  # Construct spend/GDP according to chosen basis/measure
   gov_level <- if (measure == "GFCE") {
     if (share_basis == "nominal") dt$gfce_nom else dt$gfce_real
   } else {
@@ -293,24 +297,42 @@ build_share_dataset <- function(freq = c("FY","CY"),
   if (anyNA(gov_level) || anyNA(gdp_level)) {
     stop("Missing series for chosen share_basis/measure in 5206.0 pull.")
   }
-  
   dt[, gov_gdp := gov_level / gdp_level]
   
-  need_cols <- c("year", "gov_gdp", "0_14","15_34","35_54","55_64","65p")
+  # ----- NEW: drivers that need levels -----
+  # Relative price of GFCE vs GDP (Baumol/deflator ratio), standardised
+  dt[, p_gfce := gfce_nom / gfce_real]
+  dt[, p_gdp  := gdp_nom  / gdp_real]
+  dt[, rp_g   := as.numeric(scale(p_gfce / p_gdp, center = TRUE, scale = TRUE))]
+  
+  # Population growth (scale effect)
+  # pop_total comes from get_erp_total_and_shares()
+  if (!"pop_total" %in% names(dt)) stop("pop_total not found (ERP merge failed).")
+  setorder(dt, year)
+  dt[, dln_pop := c(NA_real_, diff(log(pop_total)))]
+  
+  # Keep required columns (don’t drop what we just created)
+  need_cols <- c("year", "gov_gdp",
+                 "0_14","15_34","35_54","55_64","65p",
+                 "pop_total", "rp_g", "dln_pop",
+                 # keep these in case you need them downstream
+                 "gfce_nom","gfce_real","gdp_nom","gdp_real")
   miss <- setdiff(need_cols, names(dt))
-  if (length(miss)) stop("Missing columns: ", paste(miss, collapse=", "))
+  if (length(miss)) stop("Missing columns: ", paste(miss, collapse = ", "))
   
   dt <- dt[, ..need_cols]
+  # First year will have NA dln_pop; complete.cases() will drop it (ok for your pipeline)
   dt <- dt[complete.cases(dt)]
   setorder(dt, year)
-  dt
   
   # Age-share sanity
   dt[, age_sum := `0_14` + `15_34` + `35_54` + `55_64` + `65p`]
   if (any(abs(dt$age_sum - 1) > 0.03)) warning("Some years' age shares deviate from 1 by >3%.")
+  dt[, age_sum := NULL]
   
   dt[]
 }
+
 
 # -------------------- Shapley utilities --------------------
 .all_perms <- function(v) if (length(v)==1L) list(v) else {
@@ -529,6 +551,37 @@ tot_a   <- get_terms_of_trade(freq = freq, check_local = abs_check_local)
 share_dt <- build_share_dataset(freq, measure, share_basis, check_local = abs_check_local)
 share_dt <- merge(share_dt, tot_a, by = "year", all.x = TRUE)
 share_dt[, tot := as.numeric(scale(tot_index, center = TRUE, scale = TRUE))] # Standardise TOT so it is on a similar scale to other variables
+
+# --- (i) Cycle: Unemployment rate (example placeholder series) ---
+# If you have an ABS pull for unemployment, annualise the rate:
+dt_unemp <- as.data.table(read_abs("6202.0", tables = "1", check_local = abs_check_local))
+unemp_a <- annualise(dt_unemp, out_name = "unemp", mode = "mean", freq = freq)
+# For now, we are ignoring unemployment
+# if (exists("unemp_a")) {
+#   share_dt <- merge(share_dt, unemp_a, by = "year", all.x = TRUE)
+# }
+
+# --- (ii) Relative price of GFCE vs GDP (Baumol effect) ---
+share_dt[, p_gfce := gfce_nom / gfce_real]
+share_dt[, p_gdp  := gdp_nom  / gdp_real]
+share_dt[, rp_g   := as.numeric(scale(p_gfce / p_gdp, center = TRUE, scale = TRUE))]
+
+# --- (iii) Population growth (scale) ---
+# pop_total is built inside get_erp_total_and_shares and merged into share_dt
+share_dt[, dln_pop := c(0.032, diff(log(pop_total)))] # Set the 1971 value manually
+
+
+bad_counts <- sapply(share_dt[, ..features], function(x) sum(!is.finite(x)))
+bad_counts
+
+# Peek at rows with any problems across y + features
+need <- c("gov_gdp", features)
+share_dt[!complete.cases(share_dt[, ..need]),
+         .(year, across_missing = paste(names(.SD)[colSums(!is.finite(as.matrix(.SD)))>0], collapse=", ")),
+         .SDcols = need]
+
+
+
 message("   Years: ", paste(range(share_dt$year), collapse = " – "), "  (n=", nrow(share_dt), ")")
 
 # Diagnostics: how much of spend/GDP variation do age shares explain?
@@ -554,29 +607,231 @@ if (nrow(panel)) {
   message("Panel: median |unexplained| = ", sprintf("%.4f", median(abs(panel$unexplained), na.rm = TRUE)))
 }
 
-# Print a small summary
-if (nrow(four_bin)) {
-  print(four_bin[, .(Segment = paste0(y0,"→",y1),
-                     d_actual, d_hat, unexplained,
-                     `0_14`,`15_34`,`35_54`,`55_64`,`65p`, `tot`)])
+# ===================== Dynamic table + plots driven by `features` =====================
+
+# Choose measures to show from what's actually present in each table
+four_measures  <- if (exists("four_bin"))  intersect(features, names(four_bin)) else character(0)
+panel_measures <- if (exists("panel"))     intersect(features, names(panel))    else character(0)
+
+# Label helper for R^2 (ok if `am` doesn't exist)
+lab_r2 <- tryCatch({
+  if (exists("am") && is.list(am) && is.finite(am$r2)) sprintf("R²(age-only)=%.3f", am$r2) else ""
+}, error = function(e) "")
+
+# -------------------- Compact summary table (four-bin) --------------------
+if (exists("four_bin") && nrow(four_bin)) {
+  tmp <- copy(four_bin)[, Segment := paste0(y0, "→", y1)]
+  cols_order <- c("Segment", "d_actual", "d_hat", "unexplained", four_measures)
+  # Only keep columns that exist (for safety)
+  cols_order <- intersect(cols_order, names(tmp))
+  print(tmp[, ..cols_order])
 }
 
-# Optional: a quick plot for panel contributions (explained part only)
-if (nrow(panel)) {
-  panel_m <- melt(panel,
-                  id.vars = c("y0","y1","d_actual","d_hat","unexplained"),
-                  measure.vars = c("0_14","15_34","35_54","55_64","65p","tot"),
-                  variable.name = "age_group", value.name = "contrib")
+# -------------------- Panel plot: explained contributions (dynamic) --------------------
+if (exists("panel") && nrow(panel) && length(panel_measures)) {
+  panel_m <- melt(
+    panel,
+    id.vars       = c("y0","y1","d_actual","d_hat","unexplained"),
+    measure.vars  = panel_measures,
+    variable.name = "driver",
+    value.name    = "contrib"
+  )
   panel_m[, year := y1]
-  p <- ggplot(panel_m, aes(x = year, y = contrib, fill = age_group)) +
+  
+  p <- ggplot(panel_m, aes(x = year, y = contrib, fill = driver)) +
     geom_col() +
-    geom_line(aes(y = d_actual, x = year, group = 1), inherit.aes = FALSE) +
-    geom_point(aes(y = d_actual, x=year), inherit.aes = FALSE) +
-    labs(title = "Regression-based Shapley of Δ(spend/GDP): explained age-group contributions",
-         subtitle = paste0("Unexplained (residual) not stacked; R²(age-only) = ", sprintf("%.3f", am$r2)),
-         x = "Year", y = "Δ share (level points)") 
-  print(p) + theme_e61(legend = "bottom")
+    geom_line(
+      data = unique(panel_m[, .(year, d_actual)]),
+      aes(y = d_actual, x = year, group = 1),
+      inherit.aes = FALSE
+    ) +
+    geom_point(
+      data = unique(panel_m[, .(year, d_actual)]),
+      aes(y = d_actual, x = year),
+      inherit.aes = FALSE
+    ) +
+    labs(
+      title = "Regression-based Shapley of Δ(spend/GDP): explained contributions",
+      subtitle = paste0("Unexplained (residual) not stacked. ", lab_r2),
+      x = "Year", y = "Δ share (level points)", fill = "Driver"
+    ) +
+    theme_e61(legend = "bottom")
+  print(p)
 }
+
+# -------------------- Four-bin (binned period) plot: explained (dynamic) --------------
+if (exists("four_bin") && nrow(four_bin) && length(four_measures)) {
+  four_m <- melt(
+    four_bin,
+    id.vars       = c("y0","y1","d_actual","d_hat","unexplained"),
+    measure.vars  = four_measures,
+    variable.name = "driver",
+    value.name    = "contrib"
+  )
+  
+  # Pretty segment labels and ordering
+  four_m[, Segment := paste0(y0, "–", y1)]
+  seg_levels <- four_bin[, paste0(y0, "–", y1)]
+  four_m[, Segment := factor(Segment, levels = seg_levels)]
+  
+  p4 <- ggplot(four_m, aes(x = Segment, y = contrib, fill = driver)) +
+    # Explained contributions (stacked)
+    geom_col() +
+    # Predicted total explained change (diamond)
+    geom_point(
+      data = unique(four_m[, .(Segment, d_hat)]),
+      aes(y = d_hat, x = Segment),
+      inherit.aes = FALSE,
+      shape = 23, size = 3, stroke = 0.6
+    ) +
+    # Actual change (solid dot)
+    geom_point(
+      data = unique(four_m[, .(Segment, d_actual)]),
+      aes(y = d_actual, x = Segment),
+      inherit.aes = FALSE,
+      shape = 16, size = 2.8
+    ) +
+    geom_hline(yintercept = 0, linewidth = 0.4) +
+    coord_flip() +
+    labs(
+      title = "Regression-based Shapley of Δ(spend/GDP): binned periods",
+      subtitle = paste0(
+        "Stacks show explained contributions by driver; ● actual Δ, ◇ predicted Δ.  ",
+        "Residual = actual − predicted.  ", lab_r2
+      ),
+      x = NULL, y = "Δ share (level points)", fill = "Driver"
+    ) +
+    theme_e61(legend = "bottom")
+  print(p4)
+}
+# =====================================================================================
+
+# # -------------------- Collapsed Four-bin plot: 65+ / Other ages / Economic effects / Residual ----
+# if (exists("four_bin") && nrow(four_bin)) {
+#   # Melt everything in features that is actually present
+#   measure_vars <- intersect(features, names(four_bin))
+#   four_m <- melt(
+#     four_bin,
+#     id.vars       = c("y0","y1","d_actual","d_hat","unexplained"),
+#     measure.vars  = measure_vars,
+#     variable.name = "driver",
+#     value.name    = "contrib"
+#   )
+#   
+#   # Collapse into groups
+#   age_bins <- c("0_14","15_34","35_54","55_64")
+#   four_m[, group := fcase(
+#     driver == "65p",              "65+",
+#     driver %in% age_bins,         "Other ages",
+#     default =                     "Economic effects"
+#   )]
+#   
+#   # Aggregate explained contributions within groups
+#   four_g <- four_m[, .(contrib = sum(contrib, na.rm = TRUE)),
+#                    by = .(y0, y1, d_actual, d_hat, unexplained, group)]
+#   
+#   # Add Residual as another category so stacks = d_actual (explained + residual)
+#   residual_dt <- unique(four_m[, .(y0, y1, d_actual, d_hat, unexplained)])
+#   residual_dt[, `:=`(group = "Residual", contrib = unexplained)]
+#   four_g <- rbind(four_g, residual_dt[, .(y0, y1, d_actual, d_hat, unexplained, group, contrib)], use.names = TRUE)
+#   
+#   # Optional filter (keep your adjustment)
+#   four_g <- four_g[y0 != 1972]
+#   
+#   # Segment labels & ordering
+#   four_g[, Segment := paste0(y0, "–", y1)]
+#   seg_levels <- four_bin[y0 != 1972, paste0(y0, "–", y1)]
+#   four_g[, Segment := factor(Segment, levels = seg_levels)]
+#   
+#   # Tidy legend order
+#   four_g[, group := factor(group, levels = c("65+","Other ages","Economic effects","Residual"))]
+#   
+#   p4c <- ggplot(four_g, aes(x = Segment, y = contrib, fill = group)) +
+#     geom_col() +
+#     geom_hline(yintercept = 0, linewidth = 0.4) +
+#     coord_flip() +
+#     labs(
+#       title = "Regression-based Shapley of Δ(spend/GDP): binned periods",
+#       subtitle = "Collapsed into 65+, Other ages, Economic effects, and Residual\n(Stack sums to actual Δ)",
+#       x = NULL, y = "Δ share (level points)", fill = "Component"
+#     ) +
+#     theme_e61(legend = "bottom")
+#   
+#   print(p4c)
+# }
+
+# -------------------- Collapsed Four-bin plot with Residual on extremes --------------------
+if (exists("four_bin") && nrow(four_bin)) {
+  measure_vars <- intersect(features, names(four_bin))
+  four_m <- melt(
+    four_bin,
+    id.vars       = c("y0","y1","d_actual","d_hat","unexplained"),
+    measure.vars  = measure_vars,
+    variable.name = "driver",
+    value.name    = "contrib"
+  )
+  
+  # Collapse into groups
+  age_bins <- c("0_14","15_34","35_54","55_64")
+  four_m[, group := fcase(
+    driver == "65p",              "65+",
+    driver %in% age_bins,         "Other ages",
+    default =                     "Economic effects"
+  )]
+  
+  # Aggregate explained contributions within groups
+  four_g <- four_m[, .(contrib = sum(contrib, na.rm = TRUE)),
+                   by = .(y0, y1, d_actual, d_hat, unexplained, group)]
+  
+  # Add Residual
+  residual_dt <- unique(four_m[, .(y0, y1, d_actual, d_hat, unexplained)])
+  residual_dt[, `:=`(group = "Residual", contrib = unexplained)]
+  four_g <- rbind(four_g, residual_dt[, .(y0, y1, d_actual, d_hat, unexplained, group, contrib)], use.names = TRUE)
+  
+  # Optional filter
+  four_g <- four_g[y0 != 1972]
+  
+  # Segment labels & ordering
+  four_g[, Segment := paste0(y0, "–", y1)]
+  seg_levels <- four_bin[y0 != 1972, paste0(y0, "–", y1)]
+  four_g[, Segment := factor(Segment, levels = seg_levels)]
+  
+  # ----- Key: force Residual to extremes -----
+  four_g[, stack_order := {
+    if (all(contrib[group=="Residual"] <= 0)) {
+      factor(group, levels = c("Residual","65+","Other ages","Economic effects"))
+    } else {
+      factor(group, levels = c("65+","Other ages","Economic effects","Residual"))
+    }
+  }, by = Segment]
+  
+  # Build the plot
+  p4c <- ggplot(four_g, aes(x = Segment, y = contrib, fill = stack_order)) +
+    geom_col() +
+    # Big solid dot = actual Δ
+    geom_point(
+      data = unique(four_g[, .(Segment, d_actual)]),
+      aes(x = Segment, y = d_actual),
+      inherit.aes = FALSE,
+      shape = 16, size = 5, color = "black"
+    ) +
+    geom_hline(yintercept = 0, linewidth = 0.4) +
+    coord_flip() +
+    labs_e61(
+      title = "Demographic trends dominate lift in spending",
+      subtitle = "Regression-based Shapley of Δ(spend/GDP)",
+      x = NULL, y = "Δ share (level points)", fill = "Component",
+      footnotes = c(paste0("Black dot reflects the change in ",measure," to GDP."),"Effects represent association between the change in the category and changes in spending to GDP.","Economic Effects reflect variation explained by changes in population, relative government costs, and terms of trade."),
+      sources = c("e61","ABS")
+    ) +
+    plab(c("Residual","65+","Other ages","Economic effects***"),y=c(0.07,0.07,0.07,0.07),x=c(0.7,1.2,1.7,2.2)) +
+    theme_e61(legend = "bottom")
+  
+  print(p4c)
+}
+
+save_e61(paste0("Shapley_",measure,".png"),res=2)
+
 
 # Counterfactual example: hold age structure fixed at earliest year
 b0 <- min(share_dt$year)
