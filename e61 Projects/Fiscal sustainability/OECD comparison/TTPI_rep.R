@@ -49,6 +49,7 @@ ggplot(dt[year %in% c(1996,2006,2016,2021)],
     colour = "Year"
   ) + theme_e61(legend = "bottom")
 
+
 # --- plot ---
 ggplot(dt[year %in% c(1996,2006,2016,2021)],
        aes(x = age, y = net_trans_real, colour = factor(year), group = year)) +
@@ -79,10 +80,10 @@ gdp_ipd
 
 dt <- dt[cpi,on=.(year)][gdp_ipd,on=.(year)][!is.na(net_trans)]
 
-dt[,net_trans_GDPD := net_trans_real*cpi_ann/GDPD]
+dt[,net_trans_GDPD_PC := net_trans_real*cpi_ann/GDPD]
 
 ggplot(dt[year %in% c(1996,2006,2016,2021)],
-       aes(x = age, y = net_trans_GDPD, colour = factor(year), group = year)) +
+       aes(x = age, y = net_trans_GDPD_PC, colour = factor(year), group = year)) +
   geom_line() +
   labs_e61(
     title = "Deflated by GDPD",
@@ -91,3 +92,59 @@ ggplot(dt[year %in% c(1996,2006,2016,2021)],
   ) + theme_e61(legend = "bottom")
 
 # Use GDI deflator
+
+
+### Create 4 year blocks
+
+dt_group <- dt[,.(net_trans = weighted.mean(net_trans,population),net_trans_real = weighted.mean(net_trans,population),net_trans_GDPD_PC=weighted.mean(net_trans_GDPD_PC,population)),by=.(grouped_year,age)]
+
+dt_group_unweight <- dt[,.(net_trans = mean(net_trans),net_trans_real = mean(net_trans),net_trans_GDPD_PC=mean(net_trans_GDPD_PC),pop=mean(population)),by=.(grouped_year,age)]
+
+
+ggplot(dt_group_unweight[grouped_year %in% c("1993/1994-1997/1998","2018/2019-2022/2023")],aes(x=age,y=net_trans,colour=grouped_year)) + geom_line() +theme_e61(legend = "bottom")
+
+ggplot(dt_group[grouped_year %in% c("1993/1994-1997/1998","2018/2019-2022/2023")],aes(x=age,y=net_trans,colour=grouped_year)) + geom_line() +theme_e61(legend = "bottom") + labs_e61(title = "TTPI plot")
+
+ggplot(dt_group[grouped_year %in% c("1993/1994-1997/1998","2018/2019-2022/2023")],aes(x=age,y=net_trans_GDPD_PC,colour=grouped_year)) + geom_line() +theme_e61(legend = "bottom") + labs_e61(title = "Deflated by NGDP_PC")
+
+ggplot(dt_group,aes(x=age,y=net_trans_GDPD_PC,colour=grouped_year)) + geom_line() +theme_e61(legend = "bottom")
+
+ggplot(dt_group_unweight,aes(x=age,y=pop,colour=grouped_year)) + geom_line()  +theme_e61(legend = "bottom")
+
+sel_years <- c("1993/1994-1997/1998","2018/2019-2022/2023")
+
+diff_dt <- melt(
+  dt_group[grouped_year %in% sel_years],
+  id.vars = c("age","grouped_year"),
+  measure.vars = c("net_trans","net_trans_GDPD_PC"),
+  variable.name = "measure",
+  value.name   = "value"
+)[
+  , dcast(.SD, age + measure ~ grouped_year, value.var = "value")
+][
+  , diff := `2018/2019-2022/2023` - `1993/1994-1997/1998`
+][]
+
+ggplot(diff_dt[age >= 20 & age <= 80], aes(x = age, y = diff, colour = measure)) +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_line(size = 1) +
+  labs(
+    x = "Age",
+    y = "Difference (late − early)",
+    colour = "Measure",
+    title = "Difference in Net Transfers by Age"
+  ) +
+  theme_e61(legend = "bottom")
+
+ggplot(diff_dt[age >= 20 & age <= 80], 
+       aes(x = age, y = diff, colour = measure)) +
+  geom_hline(yintercept = 0) +
+  geom_smooth(method = "loess", se = FALSE, span = 0.2, size = 1) +
+  labs(
+    x = "Age",
+    y = "Difference (2019/23 − 1994/98)",
+    colour = "Measure",
+    title = "Difference in Net Transfers by Age (Smoothed)"
+  ) +
+  theme_e61(legend = "bottom") + 
+  geom_vline(xintercept = 65,linetype="dotted")
