@@ -254,3 +254,5 @@ ggplot(diff_dt2[age >= 20 & age <= 90],
 
 save_e61("IG_compact_comparison2.svg",auto_scale = FALSE)
 save_e61("IG_compact_comparison2.png",res=2,auto_scale = FALSE)
+
+### Do the same exercise on "final income" as that is the key plot in the TPPI report. The above is looking at both of the sides
