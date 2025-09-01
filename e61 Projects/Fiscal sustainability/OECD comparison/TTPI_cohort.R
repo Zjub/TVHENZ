@@ -293,4 +293,153 @@ ggplot(ext_band, aes(x = age_mid, y = cum_net_hs,
   theme_e61(legend = "right") +
   scale_y_continuous_e61()
 
-       
+
+#########################################
+
+# ---------------- Params ----------------
+birth_start  <- 1943L
+birth_end    <- 1988L
+year_end_inp <- 2019L   # stop before COVID
+age_min      <- 20L
+age_max      <- 75L
+span_loess   <- 0.30
+
+# ---------------- Prep ----------------
+DT <- as.data.table(dt)
+DT[, net_hs := (Haig_simon_income + net_trans) / 1000]
+DT <- DT[year <= year_end_inp & is.finite(net_hs)]
+DT[, age := as.integer(age)]
+DT[, birth_year := as.integer(year - age)]
+DT <- DT[birth_year >= birth_start & birth_year <= birth_end]
+DT[, cohort5_low := birth_year - ((birth_year - birth_start) %% 5L)]
+DT[, cohort5_lab := paste0(cohort5_low, "-", cohort5_low + 4L)]
+DT[, cohort5_mid := cohort5_low + 2L]
+
+# ---------------- 1) Age FE with year FE -> age deltas ----------------
+age_fe_dt <- tryCatch({
+  stopifnot(requireNamespace("fixest"))
+  fe <- fixest::feols(net_hs ~ 1 | age + year, data = DT)
+  a  <- fixest::fixef(fe)$age
+  data.table(age = as.integer(names(a)), alpha_age = as.numeric(a))
+}, error = function(e) {
+  # fallback: demean by year, average by age
+  yr <- DT[, .(ybar = mean(net_hs, na.rm = TRUE)), by = year]
+  tmp <- merge(DT, yr, by = "year", all.x = TRUE)
+  tmp[, neutral := net_hs - ybar]
+  tmp[, .(alpha_age = mean(neutral, na.rm = TRUE)), by = age][order(age)]
+})
+setorder(age_fe_dt, age)
+age_fe_dt[, d_alpha := alpha_age - shift(alpha_age)]
+if (is.na(age_fe_dt$d_alpha[1])) age_fe_dt$d_alpha[1] <- 0
+# continuous age-delta function (constant beyond endpoints)
+g_at <- function(a) as.numeric(approx(age_fe_dt$age, age_fe_dt$d_alpha,
+                                      xout = a, rule = 2)$y)
+
+# ---------------- 2) Smooth each 5-yr cohort in ORIGINAL units ----------------
+cohort_year <- DT[, .(net_hs = mean(net_hs, na.rm = TRUE)),
+                  by = .(cohort5_low, cohort5_lab, cohort5_mid, year)]
+smooth_list <- lapply(unique(cohort_year$cohort5_low), function(cl) {
+  d <- cohort_year[cohort5_low == cl][order(year)]
+  if (nrow(d) >= 5 && uniqueN(d$year) >= 4) {
+    fit <- loess(net_hs ~ year, data = d, span = span_loess, degree = 1,
+                 na.action = na.exclude)
+    d[, net_obs := as.numeric(predict(fit, newdata = data.frame(year = year)))]
+  } else {
+    d[, net_obs := net_hs]
+  }
+  d[, age := as.integer(year - cohort5_mid)]
+  d[, .(cohort5_low, cohort5_lab, cohort5_mid, age, net_obs)][age >= age_min & age <= age_max]
+})
+obs_smooth <- rbindlist(smooth_list, use.names = TRUE, fill = TRUE)
+setorder(obs_smooth, cohort5_low, age)
+
+# ---------------- 3) Fill missing ages using Δα (keep original units) --------
+# --- FILLER: keep original units; separate sources ---
+fill_one <- function(d, a_min = age_min, a_max = age_max) {
+  d <- copy(d)[order(age)]
+  if (!nrow(d)) return(NULL)
+  
+  ages <- seq(a_min, a_max, 1L)
+  v <- setNames(rep(NA_real_, length(ages)), as.character(ages))
+  v[as.character(d$age)] <- d$net_obs  # observed anchor (original units)
+  
+  A0 <- min(d$age); B0 <- max(d$age)
+  
+  # back-cast only if needed
+  if (A0 > a_min) {
+    for (a in seq(from = A0 - 1L, to = a_min, by = -1L)) {
+      v[as.character(a)] <- v[as.character(a + 1L)] - g_at(a + 1L)  # use Δα at a+1
+    }
+  }
+  # forward only if needed
+  if (B0 < a_max) {
+    for (a in seq(from = B0 + 1L, to = a_max, by = 1L)) {
+      v[as.character(a)] <- v[as.character(a - 1L)] + g_at(a)       # use Δα at a
+    }
+  }
+  
+  out <- data.table(
+    cohort5_low = d$cohort5_low[1],
+    cohort5_lab = d$cohort5_lab[1],
+    age         = ages,
+    net_filled  = as.numeric(v)
+  )
+  out[, source := fifelse(age < A0, "Back-cast",
+                          fifelse(age > B0, "Forecast", "Observed"))]
+  out[]
+}
+
+# rebuild filled_dt with separate sources
+filled_dt <- rbindlist(
+  lapply(unique(obs_smooth$cohort5_low), function(cl) {
+    fill_one(obs_smooth[cohort5_low == cl, .(cohort5_low, cohort5_lab, age, net_obs)])
+  }),
+  use.names = TRUE, fill = TRUE
+)
+
+
+# ---------------- 4) Simple plots ----------------
+# LEVELS
+ggplot() +
+  geom_line(
+    data = filled_dt[source == "Observed"],
+    aes(x = age, y = net_filled, colour = cohort5_lab, group = cohort5_lab),
+    linewidth = 0.9
+  ) +
+  geom_line(
+    data = filled_dt[source == "Back-cast"],
+    aes(x = age, y = net_filled, colour = cohort5_lab, group = cohort5_lab, linetype = source),
+    linewidth = 0.9
+  ) +
+  geom_line(
+    data = filled_dt[source == "Forecast"],
+    aes(x = age, y = net_filled, colour = cohort5_lab, group = cohort5_lab, linetype = source),
+    linewidth = 0.9
+  ) +
+  scale_linetype_manual(values = c("Back-cast" = "dashed", "Forecast" = "dotted")) +
+  labs(title = "Net HS income by age (filled using age Δ with year FE)",
+       x = "Age", y = "Thousands ($000)", colour = "5-year cohort", linetype = "") +
+  theme_minimal()
+
+# CUMULATIVE (optional)
+filled_dt[, cum := cumsum(net_filled), by = cohort5_low]
+ggplot() +
+  geom_line(
+    data = filled_dt[source == "Observed"],
+    aes(x = age, y = cum, colour = cohort5_lab, group = cohort5_lab),
+    linewidth = 1
+  ) +
+  geom_line(
+    data = filled_dt[source == "Back-cast"],
+    aes(x = age, y = cum, colour = cohort5_lab, group = cohort5_lab, linetype = source),
+    linewidth = 1
+  ) +
+  geom_line(
+    data = filled_dt[source == "Forecast"],
+    aes(x = age, y = cum, colour = cohort5_lab, group = cohort5_lab, linetype = source),
+    linewidth = 1
+  ) +
+  scale_linetype_manual(values = c("Back-cast" = "dashed", "Forecast" = "dotted")) +
+  labs(title = "Cumulative net HS income by age (filled; original units)",
+       x = "Age", y = "Cumulative thousands ($000)", colour = "5-year cohort", linetype = "") +
+  theme_minimal()
