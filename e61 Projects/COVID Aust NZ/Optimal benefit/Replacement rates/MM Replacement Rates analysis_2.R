@@ -1030,6 +1030,7 @@ ggplot(Rep_rates_df_subset_no_ineligible, aes(x = net_RR * 100,
     subtitle = "Distribution of Replacement Rates for eligible recipients*",
     x = "Replacement Rate (%)",
     y = "%",
+    sources = c("e61","ABS"),
     fill = "Eligibility Status", footnotes = "Eligible recipients are those who would receive either taxable benefits or FTB."
   ) + plot_label(c("Benefit \n(JSP or PP)\n Only", "FTB Only", "Both"),
                  c(23, 5, 70), c(1.9, 0.7, 0.7), c("white", "white", "#10485E" )) +
@@ -1051,6 +1052,7 @@ if (hour_limit == 5){
             subtitle = "Distribution of Replacement Rates for eligible recipients*",
             x = "Replacement Rate (%)",
             y = "%",
+            sources = c("e61","ABS"),
             fill = "Eligibility Status", footnotes = "Eligible recipients are those who would receive either taxable benefits or FTB."
           ) + plot_label(c("Benefit Only", "FTB Only", "Both"),
                          c(23, 5, 75), c(1.7, 0.7, 0.7), c("white", "white", "#10485E" )) +

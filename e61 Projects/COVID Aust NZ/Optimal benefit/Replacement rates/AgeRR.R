@@ -76,9 +76,10 @@ ggplot(MW_RR, aes(x = year, y = MW)) +
   #geom_point(aes(x = 2024, y = EIAC), color = "red", size = 3) +  # EIAC point
   #geom_point(aes(x = 2024, y = ACOSS), color = "blue", size = 3) +  # ACOSS point
   scale_y_continuous(limits = c(0, 1), labels = scales::percent_format()) +
-  labs(#title = "Minimum Wage Net Replacement Rates",
+  labs_e61(#title = "Minimum Wage Net Replacement Rates",
        subtitle = "Single, full-time (38hrs) for the full year",
-       y = "", x = "") +
+       y = "", x = "",
+       sources = c("e61","ABS")) +
   #plab(c("EIAC (64%)","ACOSS (75%)"),x=c(2008,2008),y=c(0.60,0.71),colour=c("red","blue")) +
   scale_x_continuous(breaks = seq(min(MW_RR$year), max(MW_RR$year), by = 4))
 
