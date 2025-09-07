@@ -24,6 +24,9 @@ share_basis     <- "nominal"           # "nominal" (standard for shares) or "rea
 conditional_sv  <- TRUE                # TRUE = conditional (full Shapley); FALSE = β·Δs
 abs_check_local <- TRUE                # use cached ABS files (fast after first run)
 #features <- c("0_14","15_34","35_54","55_64","65p","tot") # The set of variables included in this run
+start_year      <- 1980    # <-- choose your sample start
+final_year_opt  <- 2019      # optional end year, set to e.g. 2018 or NA to use all
+baseline_year   <- 2005      # optional: force a baseline year; NA = first year of filtered sample
 features <- c("0_14","15_34","35_54","55_64","65p","tot",
               "rp_g","dln_pop") # ,"dln_pop""unemp",
 
@@ -580,9 +583,19 @@ share_dt[!complete.cases(share_dt[, ..need]),
          .(year, across_missing = paste(names(.SD)[colSums(!is.finite(as.matrix(.SD)))>0], collapse=", ")),
          .SDcols = need]
 
-
-
 message("   Years: ", paste(range(share_dt$year), collapse = " – "), "  (n=", nrow(share_dt), ")")
+
+# ── Apply sample window ─────────────────────────────────────────────────────────
+if (is.finite(start_year))   share_dt <- share_dt[year >= start_year]
+if (is.finite(final_year_opt)) share_dt <- share_dt[year <= final_year_opt]
+stopifnot(nrow(share_dt) >= 2L)
+
+# Baseline year for counterfactuals and labels:
+if (!is.finite(baseline_year)) baseline_year <- min(share_dt$year)
+if (!(baseline_year %in% share_dt$year)) {
+  warning("baseline_year not in sample; snapping to first available.")
+  baseline_year <- min(share_dt$year)
+}
 
 # Diagnostics: how much of spend/GDP variation do age shares explain?
 am <- age_model_r2(share_dt)
@@ -849,4 +862,97 @@ message("Done.")
 
 
 
+######### Add counterfactual paths
+counterfactual_paths_by_block <- function(dt,
+                                          features,
+                                          blocks,
+                                          baseline_year,
+                                          y_col = "gov_gdp") {
+  stopifnot(baseline_year %in% dt$year)
+  # 1) Fit full model (no intercept)
+  Xdf <- as.data.frame(dt[, ..features]); for (j in seq_along(Xdf)) Xdf[[j]] <- as.numeric(Xdf[[j]])
+  Xi  <- as.matrix(Xdf)
+  yi  <- as.numeric(dt[[y_col]])
+  b   <- as.numeric(coef(lm.fit(x = Xi, y = yi)))
+  names(b) <- colnames(Xi)
+  
+  # 2) Actual fitted path (for reference)
+  yhat_full <- as.vector(Xi %*% b)
+  
+  # 3) Build counterfactual for each block
+  base_row <- dt[year == baseline_year, ..features]
+  out <- data.table(year = dt$year,
+                    y_actual = yi,
+                    yhat_full = yhat_full)
+  
+  for (nm in names(blocks)) {
+    blk <- intersect(blocks[[nm]], features)
+    if (!length(blk)) next
+    Xcf <- Xi
+    # Set all columns in the block to their baseline values
+    for (col in blk) {
+      Xcf[, col] <- as.numeric(base_row[[col]])
+    }
+    out[[paste0("yhat_cf_", nm)]] <- as.vector(Xcf %*% b)
+    out[[paste0("impact_", nm)]]  <- out$yhat_full - out[[paste0("yhat_cf_", nm)]]
+  }
+  
+  # 4) Optional: "no changes at all" (everything at baseline)
+  X0 <- Xi
+  for (col in features) X0[, col] <- as.numeric(base_row[[col]])
+  out[["yhat_cf_AllFixed"]] <- as.vector(X0 %*% b)
+  
+  out[]
+}
 
+# -------------------- Quick plot for counterfactuals --------------------
+plot_counterfactuals <- function(cf_dt,
+                                 blocks_to_show = NULL,
+                                 title = "Counterfactual paths (holding blocks fixed at baseline)") {
+  if (is.null(blocks_to_show)) {
+    blocks_to_show <- gsub("^yhat_cf_", "", grep("^yhat_cf_", names(cf_dt), value = TRUE))
+  }
+  keep <- c("year", "y_actual", "yhat_full",
+            paste0("yhat_cf_", blocks_to_show))
+  long <- melt(cf_dt[, ..keep],
+               id.vars = "year",
+               variable.name = "series",
+               value.name = "value")
+  long[, series := factor(series,
+                          levels = c("y_actual", "yhat_full",
+                                     paste0("yhat_cf_", blocks_to_show)),
+                          labels = c("Actual", "Fitted",
+                                     paste0("CF: hold ", blocks_to_show, " at baseline")))]
+  ggplot(long, aes(year, value, colour = series)) +
+    geom_line(size = 1) +
+    geom_hline(yintercept = 0, linetype = "dashed") +
+    scale_y_continuous(labels = scales::percent_format(accuracy = 0.1)) +
+    labs(title = title, x = NULL, y = "Spend / GDP") +
+    theme_e61(legend = "bottom")
+}
+
+# Define blocks (edit as you like)
+blocks <- list(
+  Demography = c("0_14","15_34","35_54","55_64","65p"),
+  RelPrices  = c("rp_g"),
+  PopGrowth  = c("dln_pop"),
+  ToT        = intersect("tot", names(share_dt))
+)
+
+cf_paths <- counterfactual_paths_by_block(
+  dt       = share_dt,
+  features = features,
+  blocks   = blocks,
+  baseline_year = baseline_year,
+  y_col    = "gov_gdp"
+)
+
+print(plot_counterfactuals(
+  cf_dt = cf_paths,
+  blocks_to_show = names(blocks),
+  title = sprintf("Counterfactual spend/GDP (baseline %s; sample %s–%s)",
+                  baseline_year, min(share_dt$year), max(share_dt$year))
+))
+
+# Save the table if useful
+fwrite(cf_paths, "counterfactual_paths_generalgov.csv")

@@ -440,6 +440,6 @@ ggplot() +
     linewidth = 1
   ) +
   scale_linetype_manual(values = c("Back-cast" = "dashed", "Forecast" = "dotted")) +
-  labs(title = "Cumulative net HS income by age (filled; original units)",
+  labs_e61(title = "Cumulative net HS income by age (filled; original units)",
        x = "Age", y = "Cumulative thousands ($000)", colour = "5-year cohort", linetype = "") +
-  theme_minimal()
+  theme_e61(legend = "bottom")
