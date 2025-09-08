@@ -19,7 +19,7 @@ rm(list = ls()); invisible(gc())
 
 # -------------------- User prefs --------------------
 freq            <- "FY"                 # "FY" or "CY"
-measure         <- "GFCE_plus_GFCF"              # "GFCE" or "GFCE_plus_GFCF"
+measure         <- "GFCE"              # "GFCE" or "GFCE_plus_GFCF"
 share_basis     <- "nominal"           # "nominal" (standard for shares) or "real"
 conditional_sv  <- TRUE                # TRUE = conditional (full Shapley); FALSE = β·Δs
 abs_check_local <- TRUE                # use cached ABS files (fast after first run)
