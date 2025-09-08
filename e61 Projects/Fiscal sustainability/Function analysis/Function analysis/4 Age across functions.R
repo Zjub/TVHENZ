@@ -279,7 +279,7 @@ run_one_function <- function(dt_fun, age_feats = features_age, conditional = TRU
   if (isTRUE(add_time_trend)) {
     dtX[, t  := year - min(year)]
     dtX[, t2 := t^2]
-    feats <- c(feats, "t", "t2")
+    feats <- c(feats, "t") #, "t2")
   }
   
   # (a) panel year-to-year
@@ -324,7 +324,7 @@ panel_by_fun <- rbindlist(lapply(res_list, `[[`, "panel"), use.names = TRUE, fil
 four_by_fun  <- rbindlist(lapply(res_list, `[[`, "four"),  use.names = TRUE, fill = TRUE)
 
 # Aggregate contributions across functions → total
-feature_all <- c(features_age, if (add_time_trend) c("t","t2"))
+feature_all <- c(features_age, if (add_time_trend) c("t")) #,"t2"
 agg_keep    <- c("y0","y1","d_actual","d_hat","unexplained", feature_all)
 
 panel_total <- panel_by_fun[, lapply(.SD, sum, na.rm = TRUE), .SDcols = agg_keep, by = .(y0, y1)]
