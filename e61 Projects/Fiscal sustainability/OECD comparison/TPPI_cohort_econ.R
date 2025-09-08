@@ -252,5 +252,7 @@ for (i in 1:10){
          x="Age", y="Cumulative thousands ($000)", colour="5-year cohort") + theme_e61(legend = "bottom")
   
   print(plot)
+  
+  save_e61(paste0("Cohort_income_",20*i,"ppt.png"),plot=plot,res=2)
 }
 
