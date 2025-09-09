@@ -2,7 +2,7 @@
 ## Regression-based Shapley for Govt Spending as % of GDP (AU, ABS)
 ## Decompose changes in spend/GDP into age-group contributions
 ## Last update: 09/09/2025 
-## GFCE shares drop sharply post COVID - check we are capturing right consumption measure
+## Incorporate broader government spending with GFCE
 ## ======================================================================
 
 # -------------------- Packages --------------------
@@ -19,21 +19,27 @@ rm(list = ls()); invisible(gc())
 
 # -------------------- User prefs --------------------
 freq            <- "FY"                 # "FY" or "CY"
-measure         <- "GFCE"               # "GFCE" or "GFCE_plus_GFCF"
+# measure options now include GFCE_plus_transfers:
+#   "GFCE" | "GFCE_plus_GFCF" | "GFCE_plus_transfers" - plus transfer excludes GFCF
+measure         <- "GFCE_plus_transfers"               
+# when measure == "GFCE_plus_transfers", choose transfers basket:
+#   "cash" | "cash_plus_subsidies" | "cash_plus_subsidies_plus_currgrants"
+transfers_set   <- "cash"               
 share_basis     <- "nominal"            # "nominal" (standard) or "real"
 conditional_sv  <- TRUE                 # TRUE = conditional (full Shapley); FALSE = β·Δs
 abs_check_local <- TRUE                 # use cached ABS files (fast after first run)
 start_year      <- 1980                 # sample start
-final_year_opt  <- NA                 # optional end; NA to use all available
-baseline_year   <- 2005                 # NA -> first available in sample
+final_year_opt  <- NA                   # optional end; NA to use all available
+baseline_year   <- 2002                 # NA -> first available in sample
 features <- c("0_14","15_34","35_54","55_64","65p","tot","rp_g","dln_pop")
 
 # -------------------- Helpers --------------------
 fy_end_year <- function(date) { d <- as.Date(date); year(d %m+% months(6)) }
 
-# Annualise: FLOWS -> sum, RATES/LEVELS -> mean (we’ll use sum here for flows)
 annualise <- function(dt, out_name, mode = c("mean","sum"), freq = c("FY","CY")) {
   mode <- match.arg(mode); freq <- match.arg(freq)
+  dt <- as.data.table(copy(dt))                    # <- ensure data.table
+  if (!"date" %in% names(dt)) stop("annualise(): 'date' column missing")
   if (!inherits(dt$date, "Date")) dt[, date := as.Date(date)]
   tmp <- if (freq == "FY") {
     if (mode == "mean") dt[, .(val = mean(value, na.rm = TRUE)), by = .(year = fy_end_year(date))]
@@ -42,93 +48,204 @@ annualise <- function(dt, out_name, mode = c("mean","sum"), freq = c("FY","CY"))
     if (mode == "mean") dt[, .(val = mean(value, na.rm = TRUE)), by = .(year = year(date))]
     else                dt[, .(val = sum(value,  na.rm = TRUE)), by = .(year = year(date))]
   }
-  setnames(tmp, "val", out_name)[order(year)]
+  setnames(tmp, "val", out_name)
+  setorder(tmp, year)
+  tmp
 }
 
-prefer_sa <- function(DT) {
-  if (!nrow(DT)) return(DT)
-  has_series_type <- "series_type" %in% names(DT)
-  sa <- DT[grepl("Seasonally adjusted", if (has_series_type) series_type else .__txt, TRUE)]
-  if (nrow(sa)) return(sa)
-  tr <- DT[grepl("\\bTrend\\b",          if (has_series_type) series_type else .__txt, TRUE)]
-  if (nrow(tr)) return(tr)
-  DT[grepl("\\bOriginal\\b",             if (has_series_type) series_type else .__txt, TRUE)]
+### Key thing is to go through and understand if we are picking up the right categories in below - GFCE from the expenditure accounts, then subsides and social benefits received
+
+# ---------- Quick presence check for ABS 5206.0 series names ----------
+abs_presence_check <- function(dataset,
+                               patterns,
+                               cols = c("series","table_title","unit","data_type","series_type"),
+                               exact = FALSE) {
+  DT <- data.table::as.data.table(dataset)
+
+  # Make sure the text cols exist and are character
+  cols <- intersect(cols, names(DT))
+  if (!length(cols)) stop("None of the candidate text columns are present in the dataset.")
+  for (cc in cols) if (!is.character(DT[[cc]])) data.table::set(DT, j = cc, value = as.character(DT[[cc]]))
+
+  # Some ABS pulls lack series_type; keep code robust
+  if (!"series_type" %in% names(DT)) data.table::set(DT, j = "series_type", value = "")
+
+  # Build a combined text field across metadata for regex searching
+  DT[, txt_all := do.call(paste, c(.SD, list(sep = " | "))), .SDcols = cols]
+
+  # Ensure patterns is a named list
+  if (!is.list(patterns)) patterns <- as.list(patterns)
+  if (is.null(names(patterns)) || any(!nzchar(names(patterns)))) {
+    names(patterns) <- paste0("pat", seq_along(patterns))
+  }
+
+  # Helper for one pattern
+  one <- function(label, pat) {
+    if (isTRUE(exact) && "series" %in% names(DT)) {
+      idx <- tolower(trimws(DT$series)) == tolower(trimws(pat))
+    } else {
+      rx  <- if (grepl("^\\(\\?i\\)", pat)) pat else paste0("(?i)", pat)
+      idx <- grepl(rx, DT$txt_all, perl = TRUE)
+    }
+    data.table::data.table(
+      target    = label,              # <- not 'key'
+      pattern   = pat,
+      found     = any(idx),
+      n_match   = sum(idx),
+      samples   = if (any(idx) && "series" %in% names(DT))
+        paste(utils::head(unique(DT[idx, series]), 3), collapse = " || ")
+      else ""
+    )
+  }
+
+  res <- data.table::rbindlist(
+    lapply(names(patterns), function(nm) one(nm, patterns[[nm]])),
+    use.names = TRUE, fill = TRUE
+  )
+  data.table::setorder(res, -found, target)
+  res[]
 }
 
-# -------------------- ABS 5206.0: GFCE, GFCF, GDP --------------------
-get_gfce_gdp <- function(freq = c("FY","CY"), check_local = TRUE, verbose = TRUE) {
+# ---------------- Example usage ----------------
+data_check <- read_abs("5206.0", check_local = TRUE)
+
+must_have <- list(
+  gdp_nom   = "\\b(gross\\s+domestic\\s+product|gdp)\\b.*(current\\s*prices|\\bcp\\b)",
+  gdp_real  = "\\b(gross\\s+domestic\\s+product|gdp)\\b.*(chain\\s*volume|volume\\s*measures|cvm)",
+  gfce_nom  = "^\\s*general\\s+government\\s*;\\s*final\\s+consumption\\s+expenditure\\s*;.*(current\\s*prices|\\bcp\\b)",
+  gfce_real = "^\\s*general\\s+government\\s*;\\s*final\\s+consumption\\s+expenditure\\s*;.*(chain|volume)",
+  gfcf_nom  = "^\\s*general\\s+government\\s*;\\s*gross\\s+fixed\\s+capital\\s+formation\\s*;.*(current\\s*prices|\\bcp\\b)",
+  gfcf_real = "^\\s*general\\s+government\\s*;\\s*gross\\s+fixed\\s+capital\\s+formation\\s*;.*(chain|volume)",
+
+  # Transfers (PAYABLE/PAID only — ignore *receivable*)
+  cash_sa_pay = "general\\s+government\\s*;.*social\\s+benefits.*social\\s+assistance",
+  cash_wc_pay = "general\\s+government\\s*;.*social\\s+benefits.*workers'?\\s*compensation",
+  subsidies   = "general\\s+government\\s*;.*\\bsubsidies\\b",
+  curr_grants = "general\\s+government\\s*;.*current\\s+(grants|transfers)"
+)
+
+chk <- abs_presence_check(data_check, patterns = must_have)
+print(chk)
+
+if (any(!chk$found)) {
+  warning(sprintf("Missing %d expected series: %s",
+                  sum(!chk$found), paste(chk$target[!chk$found], collapse = ", ")))
+}
+# 
+# XXXXXXXXXXXXXX # Line break to stop code if I am dumb - there are missing series to fix
+# 
+# sum(grepl("(?i)social benefits", as.character(data_check$series)))
+# unique(data_check$series[grepl("(?i)social benefits", data_check$series)])[1:5]
+
+##################################################################
+
+## Code for pulling spending data
+get_spend_gdp <- function(freq = c("FY","CY"),
+                          check_local = TRUE,
+                          verbose = TRUE,
+                          spend_measure = c("GFCE","GFCE_plus_GFCF","GFCE_plus_transfers"),
+                          transfers_set = c("cash","cash_plus_subsidies","cash_plus_subsidies_plus_currgrants")) {
   freq <- match.arg(freq)
+  spend_measure <- match.arg(spend_measure)
+  transfers_set <- match.arg(transfers_set)
+  
   na <- as.data.table(read_abs("5206.0", check_local = check_local))
   if (!nrow(na)) stop("read_abs('5206.0') returned 0 rows.")
   if (!inherits(na$date, "Date")) na[, date := as.Date(date)]
   
-  # Build combined text field across available metadata columns
   txt_cols <- intersect(c("series","table_title","unit","data_type","series_type"), names(na))
   if (!length(txt_cols)) txt_cols <- "series"
   for (cc in txt_cols) if (!is.character(na[[cc]])) set(na, j = cc, value = as.character(na[[cc]]))
-  na[, .__txt := do.call(paste, c(.SD, list(sep = " | "))), .SDcols = txt_cols]
+  if (!"series_type" %in% names(na)) na[, series_type := ""]
+  na[, txt_all := do.call(paste, c(.SD, list(sep = " | "))), .SDcols = txt_cols]
   
   prefer_sa <- function(DT) {
     if (!nrow(DT)) return(DT)
-    has_series_type <- "series_type" %in% names(DT)
-    sa <- DT[grepl("Seasonally adjusted", if (has_series_type) series_type else .__txt, TRUE)]
+    sa <- DT[grepl("Seasonally adjusted", series_type, TRUE)]
     if (nrow(sa)) return(sa)
-    tr <- DT[grepl("\\bTrend\\b",          if (has_series_type) series_type else .__txt, TRUE)]
+    tr <- DT[grepl("\\bTrend\\b", series_type, TRUE)]
     if (nrow(tr)) return(tr)
-    DT[grepl("\\bOriginal\\b",             if (has_series_type) series_type else .__txt, TRUE)]
+    DT[grepl("\\bOriginal\\b", txt_all, TRUE)]
   }
   
-  # --- Identifiers / guards ---
-  is_gen_gov_total <- function(s) {
-    grepl("^\\s*General\\s+government\\s*;\\s*", s, TRUE) &&
-      !grepl("National|State and local", s, TRUE)
+  ann_sum <- function(DT, out_name) {
+    if (!nrow(DT)) {
+      dt0 <- data.table(year = integer(), val = numeric())
+      setnames(dt0, "val", out_name)
+      return(dt0)
+    }
+    annualise(DT, out_name = out_name, mode = "sum", freq = freq)
   }
+  
+  # --- guards & matchers ---
+  is_gen_gov_total <- function(s) grepl("^\\s*General\\s+government\\s*;\\s*", s, TRUE) & !grepl("National|State and local", s, TRUE)
   is_gfce   <- function(s) grepl("Final\\s+consumption\\s+expenditure\\s*;", s, TRUE)
   is_gfcf   <- function(s) grepl("Gross\\s+fixed\\s+capital\\s+formation\\s*;", s, TRUE)
   is_badvar <- function(s) grepl("Percentage\\s+changes|Index", s, TRUE)
-  
   is_nom    <- function(s) grepl("Current\\s*prices?|\\bCP\\b", s, TRUE)
   is_real   <- function(s) grepl("Chain\\s*volume|Chain-?volume|Volume\\s*measures|\\bCVM\\b|\\bvolume\\b", s, TRUE)
-  
-  # guard units
   is_dollar_m <- function(s) grepl("\\$\\s*m|\\$m", s, TRUE)
   is_pc_cap   <- function(s) grepl("per\\s+capita|proportion\\s+of\\s+gdp|%\\s*of\\s*gdp", s, TRUE)
-  
   is_gdp <- function(s) grepl("\\bGross\\s+domestic\\s+product\\b|\\bGDP\\b", s, TRUE)
   
-  # --- Filter slices ---
+  is_cash_sa <- function(s)
+    grepl("(?i)^\\s*secondary\\s+income\\s+receivable\\s*[-–—]\\s*social\\s+benefits\\s+receivable\\s*[-–—]\\s*social\\s+assistance\\s+benefits\\s*;?\\s*$",
+          s, perl = TRUE)
+  is_cash_wc <- function(s)
+    grepl("(?i)^\\s*secondary\\s+income\\s+receivable\\s*[-–—]\\s*social\\s+benefits\\s+receivable\\s*[-–—]\\s*workers'?\\s*compensation\\s*;?\\s*$",
+          s, perl = TRUE)
+  is_subsidies    <- function(s) grepl("\\bsubsidies\\b", s, TRUE)
+  is_curr_grants  <- function(s) grepl("current\\s+(grants|transfers)", s, TRUE)
+  
   rows_gen_total <- vapply(na$series, is_gen_gov_total, logical(1))
   rows_not_bad   <- !vapply(na$series, is_badvar, logical(1))
   gg <- na[rows_gen_total & rows_not_bad]
   
+  # GFCE / GFCF
   gg_gfce <- gg[vapply(series, is_gfce, logical(1))]
   gg_gfcf <- gg[vapply(series, is_gfcf, logical(1))]
+  gfce_nom_q  <- gg_gfce[vapply(txt_all, is_nom, 1)  & vapply(txt_all, is_dollar_m, 1) & !vapply(txt_all, is_pc_cap, 1)]
+  gfce_real_q <- gg_gfce[vapply(txt_all, is_real, 1) & vapply(txt_all, is_dollar_m, 1) & !vapply(txt_all, is_pc_cap, 1)]
+  gfcf_nom_q  <- gg_gfcf[vapply(txt_all, is_nom, 1)  & vapply(txt_all, is_dollar_m, 1) & !vapply(txt_all, is_pc_cap, 1)]
+  gfcf_real_q <- gg_gfcf[vapply(txt_all, is_real, 1) & vapply(txt_all, is_dollar_m, 1) & !vapply(txt_all, is_pc_cap, 1)]
   
-  # Basis + unit filters
-  gfce_nom_q  <- gg_gfce[vapply(.__txt, is_nom, 1)  & vapply(.__txt, is_dollar_m, 1) & !vapply(.__txt, is_pc_cap, 1)]
-  gfce_real_q <- gg_gfce[vapply(.__txt, is_real, 1) & vapply(.__txt, is_dollar_m, 1) & !vapply(.__txt, is_pc_cap, 1)]
-  gfcf_nom_q  <- gg_gfcf[vapply(.__txt, is_nom, 1)  & vapply(.__txt, is_dollar_m, 1) & !vapply(.__txt, is_pc_cap, 1)]
-  gfcf_real_q <- gg_gfcf[vapply(.__txt, is_real, 1) & vapply(.__txt, is_dollar_m, 1) & !vapply(.__txt, is_pc_cap, 1)]
-  
-  # GDP (economy-wide), price basis + unit guard
+  # GDP
   gdp_nom_q  <- prefer_sa(na[ vapply(na$series, is_gdp, 1) &
-                                vapply(na$.__txt, is_nom, 1)   &
-                                vapply(na$.__txt, is_dollar_m, 1) &
-                                !vapply(na$.__txt, is_pc_cap, 1) ])
+                                vapply(na$txt_all, is_nom, 1) &
+                                vapply(na$txt_all, is_dollar_m, 1) &
+                                !vapply(na$txt_all, is_pc_cap, 1) ])
   gdp_real_q <- prefer_sa(na[ vapply(na$series, is_gdp, 1) &
-                                vapply(na$.__txt, is_real, 1)  &
-                                vapply(na$.__txt, is_dollar_m, 1) &
-                                !vapply(na$.__txt, is_pc_cap, 1) ])
+                                vapply(na$txt_all, is_real, 1) &
+                                vapply(na$txt_all, is_dollar_m, 1) &
+                                !vapply(na$txt_all, is_pc_cap, 1) ])
   
-  if (!nrow(gg_gfce)) stop("Could not find General government total GFCE rows (check labels).")
-  if (!nrow(gg_gfcf)) stop("Could not find General government total GFCF rows (check labels).")
-  if (!nrow(gdp_nom_q) && !nrow(gdp_real_q)) stop("Could not find GDP rows (check labels).")
+  # --- Transfers (PAYABLE) ---
+  cash_sa_pay_q <- gg[
+    vapply(txt_all, function(s) is_cash_sa(s), 1) &
+      vapply(txt_all, is_dollar_m, 1) & !vapply(txt_all, is_pc_cap, 1)
+  ]
+  cash_wc_pay_q <- gg[
+    vapply(txt_all, function(s) is_cash_wc(s), 1) &
+      vapply(txt_all, is_dollar_m, 1) & !vapply(txt_all, is_pc_cap, 1)
+  ]
+  # subs_pay_q <- gg[
+  #   vapply(txt_all, function(s) is_subsidies(s) && is_payable(s), 1) &
+  #     vapply(txt_all, is_dollar_m, 1) & !vapply(txt_all, is_pc_cap, 1)
+  # ]
+  # cgr_pay_q <- gg[
+  #   vapply(txt_all, function(s) is_curr_grants(s) && is_payable(s), 1) &
+  #     vapply(txt_all, is_dollar_m, 1) & !vapply(txt_all, is_pc_cap, 1)
+  # ]
   
-  # --- Annualise (flows -> sum) ---
-  ann_sum <- function(DT, out_name) {
-    if (!nrow(DT)) return(data.table(year = integer(), (out_name) := numeric()))
-    annualise(DT, out_name = out_name, mode = "sum", freq = freq)
-  }
+  cash_sa_pay_q <- prefer_sa(cash_sa_pay_q)
+  cash_wc_pay_q <- prefer_sa(cash_wc_pay_q)
+  # subs_pay_q    <- prefer_sa(subs_pay_q)
+  # cgr_pay_q     <- prefer_sa(cgr_pay_q)
+  
+  if (!nrow(cash_sa_pay_q)) message("Note: no 'Social assistance benefits (payable)' found — cash benefits may be understated.")
+  if (!nrow(cash_wc_pay_q)) message("Note: no 'Workers' compensation (payable)' found — cash benefits may be understated.")
+  
+  # --- Annualise all flows ---
   gfce_nom_a   <- ann_sum(gfce_nom_q,  "gfce_nom")
   gfce_real_a  <- ann_sum(gfce_real_q, "gfce_real")
   gfcf_nom_a   <- ann_sum(gfcf_nom_q,  "gfcf_nom")
@@ -136,33 +253,78 @@ get_gfce_gdp <- function(freq = c("FY","CY"), check_local = TRUE, verbose = TRUE
   gdp_nom_a    <- ann_sum(gdp_nom_q,   "gdp_nom")
   gdp_real_a   <- ann_sum(gdp_real_q,  "gdp_real")
   
+  sa_nom_a  <- ann_sum(cash_sa_pay_q, "sa_nom")
+  wc_nom_a  <- ann_sum(cash_wc_pay_q, "wc_nom")
+  # subs_a    <- ann_sum(subs_pay_q,    "trans_subs_nom")
+  # cgr_a     <- ann_sum(cgr_pay_q,     "trans_cgr_nom")
+  
+  # Combine nominal cash benefits (social assistance + workers' comp)
+  cash_a <- merge(sa_nom_a, wc_nom_a, by = "year", all = TRUE)
+  if (!nrow(cash_a)) cash_a <- data.table(year = integer(), sa_nom = numeric(), wc_nom = numeric())
+  cash_a[, trans_cash_nom := rowSums(cbind(sa_nom, wc_nom), na.rm = TRUE)]
+  cash_a[, `:=`(sa_nom = NULL, wc_nom = NULL)]
+  
   out <- Reduce(function(x, y) merge(x, y, by = "year", all = TRUE),
-                list(gfce_nom_a, gfce_real_a, gfcf_nom_a, gfcf_real_a, gdp_nom_a, gdp_real_a))
+                list(gdp_nom_a, gdp_real_a,
+                     gfce_nom_a, gfce_real_a,
+                     gfcf_nom_a, gfcf_real_a,
+                     cash_a, subs_a, cgr_a))
   setorder(out, year)
+  
+  # Compose transfers basket
+  out[, transfers_nom := fifelse(
+    transfers_set == "cash",                            trans_cash_nom,
+    fifelse(transfers_set == "cash_plus_subsidies",     rowSums(cbind(trans_cash_nom, trans_subs_nom), na.rm = TRUE),
+            rowSums(cbind(trans_cash_nom, trans_subs_nom, trans_cgr_nom), na.rm = TRUE))
+  )]
+  
+  # Build spend aggregates
+  out[, `:=`(
+    gov_spend_nom = fifelse(
+      spend_measure == "GFCE",                    gfce_nom,
+      fifelse(spend_measure == "GFCE_plus_GFCF",  gfce_nom + gfcf_nom,
+              gfce_nom + transfers_nom)          # GFCE + transfers (no investment)
+    ),
+    gov_spend_real = fifelse(
+      spend_measure == "GFCE",                    gfce_real,
+      fifelse(spend_measure == "GFCE_plus_GFCF",  gfcf_real + gfce_real, NA_real_)
+    )
+  )]
+  
+  # Shares
+  out[, gov_gdp_nom  := gov_spend_nom / gdp_nom]
+  out[, gov_gdp_real := ifelse(is.finite(gov_spend_real) & is.finite(gdp_real),
+                               gov_spend_real / gdp_real, NA_real_)]
   
   if (isTRUE(verbose)) {
     yr <- function(d) if (nrow(d)) paste(range(d$year, na.rm = TRUE), collapse = " – ") else "∅"
-    message(
-      "Year ranges — ",
-      paste(
-        paste0("GFCE_nom:",  yr(gfce_nom_a)),
-        paste0("GFCE_real:", yr(gfce_real_a)),
-        paste0("GFCF_nom:",  yr(gfcf_nom_a)),
-        paste0("GFCF_real:", yr(gfcf_real_a)),
-        paste0("GDP_nom:",   yr(gdp_nom_a)),
-        paste0("GDP_real:",  yr(gdp_real_a)),
-        sep = " | "
-      )
-    )
+    message("Year ranges — ",
+            paste(
+              paste0("GDP_nom:",   yr(gdp_nom_a)),
+              paste0("GDP_real:",  yr(gdp_real_a)),
+              paste0("GFCE_nom:",  yr(gfce_nom_a)),
+              paste0("GFCE_real:", yr(gfce_real_a)),
+              paste0("GFCF_nom:",  yr(gfcf_nom_a)),
+              paste0("GFCF_real:", yr(gfcf_real_a)),
+              paste0("Cash benefits (nom):", yr(cash_a)),
+              paste0("Subsidies (nom):",     yr(subs_a)),
+              paste0("Curr grants (nom):",   yr(cgr_a)),
+              sep = " | "))
+    message("Transfers set = ", transfers_set,
+            "  |  spend_measure = ", spend_measure)
   }
   
-  # quick meta peek to confirm we didn’t grab per-capita/proportion series
-  message("Selected series/unit samples:")
-  print(unique(gfce_nom_q[, .(series, unit)])[1:5])
-  print(unique(gdp_nom_q[,  .(series, unit)])[1:5])
-  
-  out
+  out[]
 }
+
+#### Check the core data by downloading - want to check we've selected sensible datasets
+
+data_check <- get_spend_gdp(freq = "FY", check_local = TRUE, verbose = TRUE,
+              spend_measure = measure, transfers_set = transfers_set)
+
+data_check
+
+####
 
 # -------------------- ABS 3101.0 Table 59: ERP & age shares --------------------
 get_erp_total_and_shares <- function(freq = c("FY","CY"),
@@ -181,7 +343,7 @@ get_erp_total_and_shares <- function(freq = c("FY","CY"),
   parse_age_bounds <- function(x) {
     x <- tolower(x); nums <- regmatches(x, gregexpr("\\d+", x))[[1]]
     if (!length(nums)) return(c(NA_integer_, NA_integer_))
-    lo <- as.integer(nums[1]); hi <- if (grepl("over|and over|\\+", x)) 120L else lo
+    lo <- as.integer(nums[1]); hi <- if (grepl("over|and over|\\+", x)) 120L else as.integer(nums[length(nums)])
     c(lo, hi)
   }
   bounds <- do.call(rbind, lapply(erp_raw[[age_text_col]], parse_age_bounds))
@@ -221,7 +383,7 @@ get_erp_total_and_shares <- function(freq = c("FY","CY"),
   merge(erp_tot_a, shares_w, by = "year", all = TRUE)[order(year)]
 }
 
-# Terms of trade (annual mean of index)
+# -------------------- Terms of trade (annual mean of index) --------------------
 get_terms_of_trade <- function(freq = c("FY","CY"), check_local = TRUE) {
   freq <- match.arg(freq)
   bo <- as.data.table(read_abs("5302.0", check_local = check_local))
@@ -250,124 +412,39 @@ get_terms_of_trade <- function(freq = c("FY","CY"), check_local = TRUE) {
   annualise(tot_q, out_name = "tot_index", mode = "mean", freq = freq)[order(year)]
 }
 
-###################################
-## Specific data check to make sure things are working
-get_gfce_gdp_exact <- function() {
-  na <- as.data.table(read_abs("5206.0", check_local = abs_check_local))
-  if (!nrow(na)) stop("read_abs('5206.0') returned 0 rows.")
-  if (!inherits(na$date, "Date")) na[, date := as.Date(date)]
-  
-  # Build a catch-all text field
-  txt_cols <- intersect(c("series","table_title","unit","data_type","series_type"), names(na))
-  if (!length(txt_cols)) txt_cols <- "series"
-  for (cc in txt_cols) if (!is.character(na[[cc]])) set(na, j = cc, value = as.character(na[[cc]]))
-  na[, .__txt := do.call(paste, c(.SD, list(sep = " | "))), .SDcols = txt_cols]
-  
-  # Predicates
-  is_gen_gov_total <- function(s) {
-    grepl("^\\s*General\\s+government\\s*;\\s*", s, TRUE) &&
-      !grepl("National|State and local", s, TRUE)
-  }
-  is_gfce   <- function(s) grepl("Final\\s+consumption\\s+expenditure\\s*;", s, TRUE)
-  is_gdp    <- function(s) grepl("\\bGross\\s+domestic\\s+product\\b|\\bGDP\\b", s, TRUE)
-  is_badvar <- function(s) grepl("Percentage\\s+changes|Index", s, TRUE)
-  
-  is_nom    <- function(s) grepl("Current\\s*prices?|\\bCP\\b", s, TRUE)
-  is_dollar_m <- function(s) grepl("\\$\\s*m|\\$m", s, TRUE)
-  is_pc_cap   <- function(s) grepl("per\\s+capita|proportion\\s+of\\s+gdp|%\\s*of\\s*gdp", s, TRUE)
-  
-  # Filter blocks
-  rows_not_bad   <- !vapply(na$series, is_badvar, logical(1))
-  gg             <- na[rows_not_bad]
-  
-  gfce_nom_q <- gg[
-    vapply(series, is_gen_gov_total, 1) &
-      vapply(series, is_gfce, 1) &
-      vapply(.__txt, is_nom, 1) &
-      vapply(.__txt, is_dollar_m, 1) &
-      !vapply(.__txt, is_pc_cap, 1)
-  ]
-  gfce_nom_q <- prefer_sa(gfce_nom_q)
-  
-  gdp_nom_q <- gg[
-    vapply(series, is_gdp, 1) &
-      vapply(.__txt, is_nom, 1) &
-      vapply(.__txt, is_dollar_m, 1) &
-      !vapply(.__txt, is_pc_cap, 1)
-  ]
-  gdp_nom_q <- prefer_sa(gdp_nom_q)
-  
-  # Sanity checks and metadata peek
-  gfce_meta <- unique(gfce_nom_q[, .(series, table_title, unit, series_type)])[order(series)]
-  gdp_meta  <- unique(gdp_nom_q[,  .(series, table_title, unit, series_type)])[order(series)]
-  
-  message("\nSelected GFCE series (nominal $m):")
-  print(gfce_meta)
-  
-  message("\nSelected GDP series (nominal $m):")
-  print(gdp_meta)
-  
-  if (nrow(gfce_meta) != 1L) {
-    stop("Expected exactly 1 GFCE nominal series, got ", nrow(gfce_meta),
-         ". Inspect the printed metadata and tighten filters if needed.")
-  }
-  if (nrow(gdp_meta) != 1L) {
-    stop("Expected exactly 1 GDP nominal series, got ", nrow(gdp_meta),
-         ". Inspect the printed metadata and tighten filters if needed.")
-  }
-  
-  # Annualise to FY (flows -> sum)
-  gfce_nom_a <- annualise(gfce_nom_q, "gfce_nom", freq = "FY")
-  gdp_nom_a  <- annualise(gdp_nom_q,  "gdp_nom",  freq = "FY")
-  
-  out <- merge(gfce_nom_a, gdp_nom_a, by = "year", all = TRUE)[order(year)]
-  out <- out[year >= start_year]
-  if (!is.na(final_year_opt)) out <- out[year <= final_year_opt]
-  
-  out[, gfce_share_pc := 100 * (gfce_nom / gdp_nom)]
-  
-  # Optional: write to disk for auditing
-  # fwrite(out, "gfce_gdp_FY_nominal.csv")
-  
-  out
-}
-
-# --------- Run it ----------
-gfce_gdp_FY_nominal <- get_gfce_gdp_exact()
-gfce_gdp_FY_nominal[]
-
-
-####################################
-
-# -------------------- Build dataset --------------------
+# -------------------- Build dataset (now supports transfers) --------------------
 build_share_dataset <- function(freq = c("FY","CY"),
-                                measure = c("GFCE","GFCE_plus_GFCF"),
+                                measure = c("GFCE","GFCE_plus_GFCF","GFCE_plus_transfers"),
                                 share_basis = c("nominal","real"),
+                                transfers_set = c("cash","cash_plus_subsidies","cash_plus_subsidies_plus_currgrants"),
                                 check_local = TRUE) {
-  freq        <- match.arg(freq)
-  measure     <- match.arg(measure)
-  share_basis <- match.arg(share_basis)
+  freq          <- match.arg(freq)
+  measure       <- match.arg(measure)
+  share_basis   <- match.arg(share_basis)
+  transfers_set <- match.arg(transfers_set)
   
-  na  <- get_gfce_gdp(freq = freq, check_local = check_local)
-  erp <- get_erp_total_and_shares(freq = freq, check_local = check_local)
-  dt  <- merge(na, erp, by = "year", all = FALSE)
-  if (!nrow(dt)) stop("No overlapping years between 5206.0 and 3101.0.")
+  na   <- get_spend_gdp(freq = freq, check_local = check_local, verbose = TRUE,
+                        spend_measure = measure, transfers_set = transfers_set)
+  erp  <- get_erp_total_and_shares(freq = freq, check_local = check_local)
+  dt   <- merge(na, erp, by = "year", all = FALSE)
+  if (!nrow(dt)) stop("No overlapping years between 5206.0 pulls and 3101.0.")
   
-  # Construct spend/GDP according to chosen basis/measure
-  gov_level <- if (measure == "GFCE") {
-    if (share_basis == "nominal") dt$gfce_nom else dt$gfce_real
+  # Construct spend/GDP according to chosen basis & measure
+  if (share_basis == "nominal") {
+    if (!"gov_spend_nom" %in% names(dt) || !"gdp_nom" %in% names(dt))
+      stop("Missing nominal spend/GDP.")
+    dt[, gov_gdp := gov_spend_nom / gdp_nom]
   } else {
-    gf <- if (share_basis == "nominal") dt$gfce_nom else dt$gfce_real
-    gc <- if (share_basis == "nominal") dt$gfcf_nom else dt$gfcf_real
-    gf + gc
+    if (!is.finite(match(measure, c("GFCE","GFCE_plus_GFCF"))))
+      stop("Real-basis shares require spend_measure = 'GFCE' or 'GFCE_plus_GFCF'.")
+    if (!"gov_spend_real" %in% names(dt) || !"gdp_real" %in% names(dt))
+      stop("Missing real spend/GDP.")
+    dt[, gov_gdp := gov_spend_real / gdp_real]
   }
-  gdp_level <- if (share_basis == "nominal") dt$gdp_nom else dt$gdp_real
-  if (anyNA(gov_level) || anyNA(gdp_level)) {
-    stop("Missing series for chosen share_basis/measure in 5206.0 pull.")
-  }
-  dt[, gov_gdp := gov_level / gdp_level]
   
-  # Relative price (deflator ratio), standardised
+  # Relative price (Baumol proxy) — keep using GFCE vs GDP deflators
+  if (!all(c("gfce_nom","gfce_real","gdp_nom","gdp_real") %in% names(dt)))
+    stop("GFCE/GDP nominal & real needed to compute rp_g.")
   dt[, p_gfce := gfce_nom / gfce_real]
   dt[, p_gdp  := gdp_nom  / gdp_real]
   dt[, rp_g   := as.numeric(scale(p_gfce / p_gdp, center = TRUE, scale = TRUE))]
@@ -394,13 +471,11 @@ build_share_dataset <- function(freq = c("FY","CY"),
   if (any(abs(dt$age_sum - 1) > 0.03)) warning("Some years' age shares deviate from 1 by >3%.")
   dt[, age_sum := NULL]
   
-  # --- sanity check on levels (GFCE share should be well below 40%) ---
-  if (any(dt$gdp_nom <= 0, na.rm = TRUE) || any(dt$gfce_nom < 0, na.rm = TRUE)) {
-    stop("Non-positive GDP or negative GFCE detected in annualised data.")
-  }
-  ratio_chk <- dt$gfce_nom / dt$gdp_nom
-  if (max(ratio_chk, na.rm = TRUE) > 0.4) {
-    stop(sprintf("GFCE/GDP looks too large (max %.1f%%). Check unit filters.", 100*max(ratio_chk, na.rm = TRUE)))
+  # Sanity on spend/GDP (broad measure can be higher than GFCE)
+  ratio_chk <- dt$gov_gdp
+  if (max(ratio_chk, na.rm = TRUE) > 0.8 || min(ratio_chk, na.rm = TRUE) < 0.01) {
+    warning(sprintf("Spend/GDP share outside expected range (min %.1f%%, max %.1f%%). Check filters.",
+                    100*min(ratio_chk, na.rm = TRUE), 100*max(ratio_chk, na.rm = TRUE)))
   }
   
   dt[]
@@ -572,15 +647,11 @@ counterfactual_age_path <- function(dt, baseline_year,
 }
 
 # ==================== RUN ====================
-message("▶ Building dataset (", freq, ", measure=", measure, ", basis=", share_basis, ") …")
+message("▶ Building dataset (", freq, ", measure=", measure, ", basis=", share_basis, ", transfers=", transfers_set, ") …")
 tot_a    <- get_terms_of_trade(freq = freq, check_local = abs_check_local)
-share_dt <- build_share_dataset(freq, measure, share_basis, check_local = abs_check_local)
+share_dt <- build_share_dataset(freq, measure, share_basis, transfers_set, check_local = abs_check_local)
 share_dt <- merge(share_dt, tot_a, by = "year", all.x = TRUE)
 share_dt[, tot := as.numeric(scale(tot_index, center = TRUE, scale = TRUE))]
-
-# (Optional) unemployment pull if you want it later
-# dt_unemp <- as.data.table(read_abs("6202.0", tables = "1", check_local = abs_check_local))
-# unemp_a  <- annualise(dt_unemp, out_name = "unemp", mode = "mean", freq = freq)
 
 # Recompute rp_g (already in build_share_dataset, but harmless)
 share_dt[, p_gfce := gfce_nom / gfce_real]
@@ -600,7 +671,7 @@ message(sprintf("▶ Age-only model R^2 = %.3f", am$r2))
 
 # Shapley
 message("▶ Computing Shapley contributions …")
-sv_res   <- run_shapley_blocks(share_dt, conditional = TRUE, features = features)
+sv_res   <- run_shapley_blocks(share_dt, conditional = conditional_sv, features = features)
 four_bin <- sv_res$four_bin
 panel    <- sv_res$panel
 
@@ -660,11 +731,9 @@ if (exists("four_bin") && nrow(four_bin)) {
 }
 
 # ---- Collapsed four-bin plot: Residual + 65+ + Other ages + Economic effects ----
-
 if (exists("four_bin") && nrow(four_bin)) {
   measure_vars <- intersect(features, names(four_bin))
   
-  # Long form and collapse into 3 explainer groups + residual
   four_m <- melt(
     four_bin,
     id.vars       = c("y0","y1","d_actual","d_hat","unexplained"),
@@ -680,34 +749,28 @@ if (exists("four_bin") && nrow(four_bin)) {
     default =                     "Economic effects"
   )]
   
-  # Aggregate explained contributions within groups
   four_g <- four_m[, .(contrib = sum(contrib, na.rm = TRUE)),
                    by = .(y0, y1, d_actual, d_hat, unexplained, group)]
   
-  # Add Residual so stacks = d_actual (explained + residual)
   residual_dt <- unique(four_m[, .(y0, y1, d_actual, d_hat, unexplained)])
   residual_dt[, `:=`(group = "Residual", contrib = unexplained)]
   four_g <- rbind(four_g, residual_dt[, .(y0, y1, d_actual, d_hat, unexplained, group, contrib)],
                   use.names = TRUE)
   
-  # Segment labels & ordering
   four_g[, Segment := paste0(y0, "–", y1)]
   seg_levels <- four_bin[, paste0(y0, "–", y1)]
   four_g[, Segment := factor(Segment, levels = seg_levels)]
   
-  # Tidy legend/order (Residual at the edge of the stack)
   four_g[, group := factor(group, levels = c("Residual","65+","Other ages","Economic effects"))]
   
   p4c <- ggplot(four_g, aes(x = Segment, y = contrib, fill = group)) +
     geom_col(width = 0.85) +
-    # Black dot = actual Δ(spend/GDP)
     geom_point(
       data = unique(four_g[, .(Segment, d_actual)]),
       aes(y = d_actual, x = Segment),
       inherit.aes = FALSE,
       shape = 16, size = 4, colour = "black"
     ) +
-    # This becomes a vertical zero-line after coord_flip()
     geom_hline(yintercept = 0, linewidth = 0.5) +
     coord_flip() +
     labs_e61(
@@ -715,24 +778,14 @@ if (exists("four_bin") && nrow(four_bin)) {
       subtitle  = "Regression-based Shapley of Δ(spend/GDP)\nΔ share (level points)",
       x = NULL, y = NULL, fill = NULL,
       footnotes = c(
-        "Black dot reflects the change in GFCE to GDP.",
+        paste0("Black dot reflects the change in ", measure, " to GDP."),
         "Effects represent association between the change in the category and changes in spending to GDP.",
         "Economic Effects reflect variation explained by changes in population, relative government costs, and terms of trade."
       ),
       sources   = c("ABS","e61")
-    ) #+
-    #theme_e61(legend = "bottom")
-  
-  
-  p4c <- p4c +
-    plab(c("Residual","65+","Other ages","Economic effects***"),
-         x = c(0.7, 1.2, 1.7, 2.2),  # row positions (1..n with small offsets)
-         y = c(0.03, 0.03, 0.03, 0.03)) # value axis position
-
+    )
   print(p4c)
-  #save_e61("Shapley_collapsed.png", plot = p4c, res = 2)
 }
-
 
 # Counterfactual paths by block (optional)
 counterfactual_paths_by_block <- function(dt, features, blocks, baseline_year, y_col = "gov_gdp") {
@@ -791,45 +844,28 @@ message("Done.")
 
 
 
-##### Add hacky thing for the years I want
+##### Optional: your manual segmented ranges (unchanged) #####
 
-# ---------- 1) Define the ranges you want ----------
-# Make sure your sample (start_year/final_year_opt) covers these.
 manual_bounds <- data.table(
   label = c("1985–1997", "1998–2010", "2011–2019", "2020–2022"),
   y0    = c(1985,        1998,        2011,        2020),
   y1    = c(1997,        2010,        2019,        2022)
 )
 
-# ---------- 2) Compute Shapley for these ranges ----------
-# Uses shapley_regression_pair_general() and the 'features' you already set.
 run_shapley_for_ranges <- function(dt, bounds_dt, features, conditional = TRUE, snap = TRUE) {
   stopifnot(all(c("y0","y1") %in% names(bounds_dt)))
   yrs <- sort(unique(dt$year))
-  
   snap_year <- function(y, dir = c("down","up")) {
     dir <- match.arg(dir)
-    if (dir == "down") {
-      cand <- yrs[yrs <= y]; if (length(cand)) max(cand) else NA_integer_
-    } else {
-      cand <- yrs[yrs >= y]; if (length(cand)) min(cand) else NA_integer_
-    }
+    if (dir == "down") { cand <- yrs[yrs <= y]; if (length(cand)) max(cand) else NA_integer_ }
+    else               { cand <- yrs[yrs >= y]; if (length(cand)) min(cand) else NA_integer_ }
   }
-  
   rbindlist(lapply(1:nrow(bounds_dt), function(i){
     y0 <- bounds_dt$y0[i]; y1 <- bounds_dt$y1[i]
     lab <- if ("label" %in% names(bounds_dt) && !is.na(bounds_dt$label[i]))
       bounds_dt$label[i] else sprintf("%d–%d", y0, y1)
-    
-    if (snap) {
-      y0a <- snap_year(y0, "down")
-      y1a <- snap_year(y1, "up")
-    } else {
-      y0a <- y0; y1a <- y1
-    }
-    
+    if (snap) { y0a <- snap_year(y0, "down"); y1a <- snap_year(y1, "up") } else { y0a <- y0; y1a <- y1 }
     if (!is.finite(y0a) || !is.finite(y1a) || y1a <= y0a) return(NULL)
-    
     sh <- shapley_regression_pair_general(dt, y0a, y1a, features = features, conditional = conditional)
     data.table(Segment = lab, y0 = y0a, y1 = y1a,
                d_actual = sh$d_actual, d_hat = sh$d_hat, unexplained = sh$unexplained,
@@ -839,11 +875,9 @@ run_shapley_for_ranges <- function(dt, bounds_dt, features, conditional = TRUE, 
 
 manual_res <- run_shapley_for_ranges(share_dt, manual_bounds, features, conditional = conditional_sv)
 
-# ---------- 3) Collapsed stacked plot (Residual + 65+ + Other ages + Economic effects) ----------
 plot_collapsed_shapley <- function(res_dt, features, measure_label = measure) {
   stopifnot(nrow(res_dt) > 0)
   measure_vars <- intersect(features, names(res_dt))
-  
   four_m <- melt(
     res_dt,
     id.vars       = c("Segment","y0","y1","d_actual","d_hat","unexplained"),
@@ -851,27 +885,19 @@ plot_collapsed_shapley <- function(res_dt, features, measure_label = measure) {
     variable.name = "driver",
     value.name    = "contrib"
   )
-  
   age_bins <- c("0_14","15_34","35_54","55_64")
   four_m[, group := fcase(
     driver == "65p",              "65+",
     driver %in% age_bins,         "Other ages",
     default =                     "Economic effects"
   )]
-  
   four_g <- four_m[, .(contrib = sum(contrib, na.rm = TRUE)),
                    by = .(Segment, y0, y1, d_actual, d_hat, unexplained, group)]
-  
-  # Add residual so stacks = actual Δ
   residual_dt <- unique(four_m[, .(Segment, y0, y1, d_actual, d_hat, unexplained)])
   residual_dt[, `:=`(group = "Residual", contrib = unexplained)]
   four_g <- rbind(four_g, residual_dt[, .(Segment, y0, y1, d_actual, d_hat, unexplained, group, contrib)],
                   use.names = TRUE)
-  
-  # Keep your order
   four_g[, Segment := factor(Segment, levels = manual_bounds$label)]
-  
-  # Optional: force Residual to extremes per segment (negative left, positive right)
   four_g[, stack_order := {
     if (all(contrib[group=="Residual"] <= 0)) {
       factor(group, levels = c("Residual","65+","Other ages","Economic effects"))
@@ -879,7 +905,6 @@ plot_collapsed_shapley <- function(res_dt, features, measure_label = measure) {
       factor(group, levels = c("65+","Other ages","Economic effects","Residual"))
     }
   }, by = Segment]
-  
   ggplot(four_g, aes(x = Segment, y = contrib, fill = stack_order)) +
     geom_col(width = 0.85) +
     geom_point(
@@ -906,5 +931,4 @@ plot_collapsed_shapley <- function(res_dt, features, measure_label = measure) {
 
 p_manual <- plot_collapsed_shapley(manual_res, features)
 print(p_manual)
-save_e61("Shapley_collapsed_manual.png", plot = p_manual, res = 2)
-
+# save_e61("Shapley_collapsed_manual.png", plot = p_manual, res = 2)

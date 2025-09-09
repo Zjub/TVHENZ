@@ -3,7 +3,7 @@
 ## Decompose changes in spend/GDP into age-group contributions
 ## with diagnostics so we don't attribute all changes to ageing.
 ## Last update: 19/08/2025
-## Note: This version has a typo somewhere in it - I suspect I need more subseting on the national accounts figures.
+## Note: This version has a typo somewhere in it - I suspect I need more subseting on the national accounts figures (think consumption is double counted) ## Note this is the current version
 ## ======================================================================
 
 # -------------------- Packages --------------------
@@ -48,6 +48,8 @@ pick_pref <- function(dq) {
 
 annualise <- function(dt, out_name, mode = c("mean","sum"), freq = c("FY","CY")) {
   mode <- match.arg(mode); freq <- match.arg(freq)
+  dt <- as.data.table(copy(dt))                    # <- ensure data.table
+  if (!"date" %in% names(dt)) stop("annualise(): 'date' column missing")
   if (!inherits(dt$date, "Date")) dt[, date := as.Date(date)]
   tmp <- if (freq == "FY") {
     if (mode == "mean") dt[, .(val = mean(value, na.rm = TRUE)), by = .(year = fy_end_year(date))]
@@ -56,7 +58,9 @@ annualise <- function(dt, out_name, mode = c("mean","sum"), freq = c("FY","CY"))
     if (mode == "mean") dt[, .(val = mean(value, na.rm = TRUE)), by = .(year = year(date))]
     else                dt[, .(val = sum(value,  na.rm = TRUE)), by = .(year = year(date))]
   }
-  setnames(tmp, "val", out_name)[order(year)]
+  setnames(tmp, "val", out_name)
+  setorder(tmp, year)
+  tmp
 }
 
 # -------------------- ABS 5206.0: GFCE, GFCF, GDP --------------------
@@ -76,15 +80,20 @@ get_gfce_gdp <- function(freq = c("FY","CY"), check_local = TRUE, verbose = TRUE
     names(na)
   )
   if (!length(txt_cols)) txt_cols <- "series"
-  # Coerce to character to avoid factor/NA weirdness, then paste
   for (cc in txt_cols) if (!is.character(na[[cc]])) set(na, j = cc, value = as.character(na[[cc]]))
   na[, .__txt := do.call(paste, c(.SD, list(sep = " | "))), .SDcols = txt_cols]
+  
+  # ---- NEW filters ----
+  is_table_1_or_3 <- function(tt) grepl("^\\s*Table\\s*(1|3)\\b", tt, ignore.case = TRUE)
+  is_revisions    <- function(s)  grepl("Revisions", s, ignore.case = TRUE)
+  rows_ok_tables  <- vapply(na$table_title, is_table_1_or_3, logical(1))
+  rows_no_rev     <- !vapply(na$series,      is_revisions,   logical(1))
+  na_filt         <- na[rows_ok_tables & rows_no_rev]
   
   # ---- Helpers ----
   prefer_sa <- function(DT) {
     if (!nrow(DT)) return(DT)
     has_series_type <- "series_type" %in% names(DT)
-    # Use series_type if present, else fallback to combined text
     sa <- DT[grepl("Seasonally adjusted", if (has_series_type) series_type else .__txt, ignore.case = TRUE)]
     if (nrow(sa)) return(sa)
     tr <- DT[grepl("\\bTrend\\b",          if (has_series_type) series_type else .__txt, ignore.case = TRUE)]
@@ -113,10 +122,10 @@ get_gfce_gdp <- function(freq = c("FY","CY"), check_local = TRUE, verbose = TRUE
   
   is_gdp <- function(s) grepl("\\bGross\\s+domestic\\s+product\\b|\\bGDP\\b", s, ignore.case = TRUE)
   
-  # ---- Filter slices ----
-  rows_gen_total <- vapply(na$series, is_gen_gov_total, logical(1))
-  rows_not_bad   <- !vapply(na$series, is_bad_var,    logical(1))
-  gg <- na[rows_gen_total & rows_not_bad]
+  # ---- Filter slices (use na_filt) ----
+  rows_gen_total <- vapply(na_filt$series, is_gen_gov_total, logical(1))
+  rows_not_bad   <- !vapply(na_filt$series, is_bad_var,      logical(1))
+  gg <- na_filt[rows_gen_total & rows_not_bad]
   
   gg_gfce <- gg[vapply(series, is_gfce, logical(1))]
   gg_gfcf <- gg[vapply(series, is_gfcf, logical(1))]
@@ -133,11 +142,11 @@ get_gfce_gdp <- function(freq = c("FY","CY"), check_local = TRUE, verbose = TRUE
   gfcf_nom_q  <- prefer_sa(gfcf_nom_q)
   gfcf_real_q <- prefer_sa(gfcf_real_q)
   
-  # GDP (clear wording for price basis)
-  gdp_nom_q  <- prefer_sa(na[ vapply(na$series, is_gdp,  logical(1)) &
-                                vapply(na$.__txt, is_nom,  logical(1)) ])
-  gdp_real_q <- prefer_sa(na[ vapply(na$series, is_gdp,  logical(1)) &
-                                vapply(na$.__txt, is_real, logical(1)) ])
+  # GDP (use na_filt with extra filters)
+  gdp_nom_q  <- prefer_sa(na_filt[ vapply(na_filt$series, is_gdp,  logical(1)) &
+                                     vapply(na_filt$.__txt,  is_nom,  logical(1)) ])
+  gdp_real_q <- prefer_sa(na_filt[ vapply(na_filt$series, is_gdp,  logical(1)) &
+                                     vapply(na_filt$.__txt,  is_real, logical(1)) ])
   
   # Diagnostics if subjects totally missing
   if (!nrow(gg_gfce)) stop("Could not find General government total GFCE rows (check labels).")
