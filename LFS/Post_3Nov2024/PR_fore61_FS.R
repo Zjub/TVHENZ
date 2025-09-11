@@ -1,3 +1,18 @@
+## Participation rate shift-share for Fiscal e61 project.
+# Initial creation: 10/11/2024
+# Last edit: 10/11/2024
+
+library(tidyverse)
+library(data.table)
+library(theme61)
+library(readabs)
+library(seasonal)
+
+rm(list = ls())
+
+LFS <- read_abs(cat_no = "6202.0") 
+setDT(LFS)
+
 ## Participation rate shift-share: gender and age
 # Initial creation: 10/11/2024
 # Last edit: 11/09/2025 - update for theme61
@@ -10,14 +25,23 @@ library(seasonal)
 
 rm(list = ls())
 
+## End date
+
+end_date <- "2024-06-01"
+
+
+## Set up data
+
 LFS <- read_abs(cat_no = "6202.0") 
 setDT(LFS)
+
+
 ## Gender
 
 LFS_gender <- LFS %>% filter(series_type == "Seasonally Adjusted") %>% filter(table_title == "Table 1. Labour force status by Sex, Australia - Trend, Seasonally adjusted and Original")  %>% filter(series == "Participation rate ;  Persons ;" | series == "Participation rate ;  > Males ;"  | series == "Participation rate ;  > Females ;") %>% select("date","series","value")
 
 avg_gender_1990 <- LFS_gender[date >= as.Date("1990-01-01") & date <= as.Date("1990-12-31"),
-                       .(avg_value = mean(value/100)), by = series]
+                              .(avg_value = mean(value/100)), by = series]
 
 ggplot(LFS_gender[date >= as.Date("1990-01-01")],aes(x=date,y=value/100,colour=series)) + geom_line() + 
   scale_y_continuous_e61(limits=c(0.40,0.85,0.10),labels=scales::percent_format()) + 
@@ -47,11 +71,11 @@ unique(LFS_gender_share[series_type == "Seasonally Adjusted"]$series)
 LFS_gender_share <- LFS_gender_share[series_type == "Original"][,.(date,series,value)]
 
 LFS_gender_share[, measure := ifelse(grepl("Labour force total", series), "Labour_Force", 
-                             ifelse(grepl("Civilian population", series), "Population", NA))]
+                                     ifelse(grepl("Civilian population", series), "Population", NA))]
 
 LFS_gender_share[, gender := ifelse(grepl("Persons", series), "Total", 
-                            ifelse(grepl("Males", series), "Male", 
-                                   ifelse(grepl("Females", series), "Female", NA)))]
+                                    ifelse(grepl("Males", series), "Male", 
+                                           ifelse(grepl("Females", series), "Female", NA)))]
 
 
 list_of_adjusted_gender <- list()
@@ -147,17 +171,17 @@ LFS_plot_data2 <- LFS_hypothetical[, .(
 )]
 
 LFS_plot_data2 <- melt(LFS_plot_data2, id.vars = c("date", "date_baseline"), 
-                      variable.name = "scenario", value.name = "participation_rate")
+                       variable.name = "scenario", value.name = "participation_rate")
 
 
 ggplot(LFS_plot_data2[date >= as.Date("1990-01-01")], aes(x = date, y = participation_rate, color = scenario)) +
   geom_line() +
   facet_wrap(~ date_baseline, scales = "free_y") +
   labs_e61(title = "Total Participation Rate Scenarios with Fixed Female or Male PR",
-       subtitle = "Actual vs Hypothetical Scenarios with Fixed Female or Male Participation Rates",
-       x = "Date",
-       y = "",
-       colour = "Scenario") + scale_y_continuous_e61(labels=scales::percent_format(),limits = c(0.5,0.8,0.1),sec_axis = FALSE) + theme_e61(legend = "bottom")
+           subtitle = "Actual vs Hypothetical Scenarios with Fixed Female or Male Participation Rates",
+           x = "Date",
+           y = "",
+           colour = "Scenario") + scale_y_continuous_e61(labels=scales::percent_format(),limits = c(0.5,0.8,0.1),sec_axis = FALSE) + theme_e61(legend = "bottom")
 
 save_e61("rate_by_gender.png",res=2,pad_width = 3,auto_scale = FALSE,sources="ABS")
 
@@ -210,7 +234,7 @@ for (age_group in age_groups) {
 age_PR_dt <- rbindlist(list_of_tables, idcol = "age_group")
 
 avg_age_1990 <- age_PR_dt[date >= as.Date("1990-01-01") & date <= as.Date("1990-12-31"),
-                              .(avg_value = mean(value_sa)), by = age_group]
+                          .(avg_value = mean(value_sa)), by = age_group]
 
 ggplot(age_PR_dt[date >= as.Date("1990-01-01")],aes(x=date,y=value_sa,colour=age_group)) + geom_line() +
   labs_e61(title = "Labour Force Participation by Age",y="",source = "ABS") +
@@ -356,11 +380,11 @@ ggplot(plot_data_age[date >= as.Date("1990-01-01")], aes(x = date, y = participa
   geom_line() +
   facet_wrap(~ baseline_date, scales = "free_y") +
   labs_e61(title = "Total Participation Rate Scenarios by Age Group",
-       subtitle = "Actual vs Hypothetical Scenarios with Fixed Age Group Participation Rates or Population Shares",
-       x = "Date",
-       y = "",
-       colour = "Scenario",
-       sources = "ABS") +
+           subtitle = "Actual vs Hypothetical Scenarios with Fixed Age Group Participation Rates or Population Shares",
+           x = "Date",
+           y = "",
+           colour = "Scenario",
+           sources = "ABS") +
   scale_y_continuous_e61(labels = scales::percent_format(),limits = c(0.5,0.8,0.1),sec_axis = FALSE) + theme_e61(legend = "bottom")
 
 
@@ -383,35 +407,35 @@ for (age in unique(age_hypothetical$age_group)) {
 
 
 plot_data_age2 <- age_hypothetical[, c("date", "baseline_date", "total_participation_rate", 
-                                      grep("hypothetical_rate_fixed_", names(age_hypothetical), value = TRUE)), with = FALSE]
+                                       grep("hypothetical_rate_fixed_", names(age_hypothetical), value = TRUE)), with = FALSE]
 
 # Reshape for plotting
 plot_data_age2 <- melt(plot_data_age2, id.vars = c("date", "baseline_date"), 
-                      variable.name = "scenario", value.name = "participation_rate")
+                       variable.name = "scenario", value.name = "participation_rate")
 
 ggplot(plot_data_age2[date >= as.Date("1990-01-01") & baseline_date %in% c(as.Date("1990-06-01"))], aes(x = date, y = participation_rate, colour = scenario,size=scenario)) +
   geom_line() +
   facet_wrap(~ baseline_date, scales = "free_y") +
   labs_e61(title = "Total Participation Rate Scenarios by Age Group",
-       subtitle = "Actual vs Hypothetical Scenarios with Fixed Age Group Participation Rates",
-       x = "Date",
-       y = "",
-       colour = "Scenario",
-       sources = "ABS") +
+           subtitle = "Actual vs Hypothetical Scenarios with Fixed Age Group Participation Rates",
+           x = "Date",
+           y = "",
+           colour = "Scenario",
+           sources = "ABS") +
   scale_y_continuous_e61(labels=scales::percent_format(),limits = c(0.55,0.7,0.05)) + 
   scale_size_manual(values = c(1,rep(0.5,times=6))) +
   plab(c("Total","15-24","25-34","35-44","45-54","55-64","65+"),x=rep(as.Date("1995-01-01"),times=7),y=c(0.68,0.67,0.66,0.59,0.58,0.57,0.56))
-  #scale_linetype_manual(values = c("solid",rep("solid",times=6)))
+#scale_linetype_manual(values = c("solid",rep("solid",times=6)))
 
 save_e61("Fixed_agegroup_PR.png",res=2,pad_width = 1,auto_scale = FALSE)
 
 ############# Finally, a bar plot with the "contribution shares for the change since 1990 and another since 2019.
 
 baseline_1990 <- merged_age_data[date == as.Date("1990-06-01")]
-current_2024 <- merged_age_data[date == as.Date("2024-06-01")]
+current_2024 <- merged_age_data[date == as.Date(end_date)]
 
 actual_1990 <- merged_age_data[date == as.Date("1990-06-01"), sum(participation_rate * (value_sa_pop / sum(value_sa_pop)))]
-actual_2024 <- merged_age_data[date == as.Date("2024-06-01"), sum(participation_rate * (value_sa_pop / sum(value_sa_pop)))]
+actual_2024 <- merged_age_data[date == as.Date(end_date), sum(participation_rate * (value_sa_pop / sum(value_sa_pop)))]
 
 total_change <- actual_2024 - actual_1990 # This is the PR change that forms the base of the contribution
 
@@ -423,7 +447,7 @@ contribution_data <- data.table(age_group = gsub("hypothetical_rate_fixed_", "",
 
 # Calculate the contribution of each age group’s changes in participation rate or population share
 contribution_data[, Participation := sapply(hypothetical_columns, function(col) {
-  hypothetical_rate <- unique(age_hypothetical[date == as.Date("2024-06-01") & baseline_date == as.Date("1990-06-01"), get(col)])
+  hypothetical_rate <- unique(age_hypothetical[date == as.Date(end_date) & baseline_date == as.Date("1990-06-01"), get(col)])
   actual_2024 - hypothetical_rate  # Difference from actual total participation rate in 2024
 })]
 
@@ -454,7 +478,7 @@ age_hypothetical_share[, pop_share := value_sa_pop / sum(value_sa_pop), by = .(d
 # 
 # age_hypothetical_share[,pop_share := value_sa_pop / sum(value_sa_pop),by=.(date,baseline_date)]
 
-age_hypothetical_share[date == as.Date("2024-06-01") & baseline_date == as.Date("1990-06-01")]
+age_hypothetical_share[date == as.Date(end_date) & baseline_date == as.Date("1990-06-01")]
 
 # Note: keeping the "rate" name the same is confusing - but this is population share.
 for (age in unique(age_hypothetical_share$age_group)) {
@@ -473,11 +497,11 @@ for (age in unique(age_hypothetical_share$age_group)) {
                          by = .(date, baseline_date)]
 }
 
-age_hypothetical_share[date == as.Date("2024-06-01") & baseline_date == as.Date("1990-06-01")]
+age_hypothetical_share[date == as.Date(end_date) & baseline_date == as.Date("1990-06-01")]
 
 
 contribution_data[, Population := sapply(hypothetical_columns, function(col) {
-  hypothetical_rate <- unique(age_hypothetical_share[date == as.Date("2024-06-01") & baseline_date == as.Date("1990-06-01"), get(col)])
+  hypothetical_rate <- unique(age_hypothetical_share[date == as.Date(end_date) & baseline_date == as.Date("1990-06-01"), get(col)])
   actual_2024 - hypothetical_rate  # Difference from actual total participation rate in 2024
 })]
 
@@ -487,11 +511,15 @@ plot_data <- melt(contribution_data, id.vars = "age_group",
 
 ggplot(plot_data, aes(x = age_group, y = contribution*100, fill = component)) +
   geom_bar(stat = "identity",position="dodge") +
-  labs(title = "Decomposition of Change in PR by Age Group (June 1990 to June 2024)",
+  labs(title = "Decomposition of Change in PR by Age Group (June 1990 to June 2025)",
        subtitle = "",
        x = "Age Group",
        y = "PPT",
        fill = "Component") + theme_e61(legend = "bottom") +
   scale_y_continuous_e61(limits = c(-5,5,1)) + coord_flip()
 
-save_e61("Share_decomp.png",res=2,pad_width = 1,auto_scale = FALSE)
+save_e61("Share_decomp_2025.png",res=2,pad_width = 1,auto_scale = FALSE)
+
+#### As well as this above plot, we want to also use the new PRs and the 2065 population shares to map out the change in participation if group participation rates don't keep rising.
+
+

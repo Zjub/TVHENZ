@@ -26,7 +26,7 @@ conditional_sv  <- TRUE                # TRUE = conditional (full Shapley); FALS
 abs_check_local <- TRUE                # use cached ABS files (fast after first run)
 #features <- c("0_14","15_34","35_54","55_64","65p","tot") # The set of variables included in this run
 start_year      <- 1980    # <-- choose your sample start
-final_year_opt  <- 2019      # optional end year, set to e.g. 2018 or NA to use all
+final_year_opt  <- NA      # optional end year, set to e.g. 2018 or NA to use all
 baseline_year   <- 2005      # optional: force a baseline year; NA = first year of filtered sample
 features <- c("0_14","15_34","35_54","55_64","65p","tot",
               "rp_g","dln_pop") # ,"dln_pop""unemp",
@@ -63,6 +63,152 @@ annualise <- function(dt, out_name, mode = c("mean","sum"), freq = c("FY","CY"))
   tmp
 }
 
+# ---- Helpers ----
+prefer_sa <- function(DT) {
+  if (!nrow(DT)) return(DT)
+  has_series_type <- "series_type" %in% names(DT)
+  txt <- if (has_series_type) DT$series_type else DT$.__txt
+  sa <- DT[grepl("Seasonally adjusted", txt, TRUE)]
+  if (nrow(sa)) return(sa)
+  tr <- DT[grepl("\\bTrend\\b", txt, TRUE)]
+  if (nrow(tr)) return(tr)
+  DT[grepl("\\bOriginal\\b", txt, TRUE)]
+}
+
+# Dedup by date/value to avoid double counting across tables
+dedup_by_date_value <- function(DT) {
+  if (!nrow(DT)) return(DT)
+  unique(DT[, .(date, value)])[order(date)]
+}
+
+ann <- function(DT, out_name) {
+  if (!inherits(DT, "data.table")) DT <- as.data.table(DT)
+  if (!nrow(DT)) { tmp <- data.table(year = integer(), val = numeric()); setnames(tmp, "val", out_name); return(tmp) }
+  # NOTE: for flows you may prefer mode = "sum"
+  annualise(DT, out_name = out_name, mode = "mean", freq = freq)
+}
+
+
+################### Tester function ----
+## This function is used to check we are selecting unique and sensible series 
+#
+# preview_gfce_gdp_selection <- function(check_local = TRUE, max_show = 50) {
+#   library(data.table)
+#   library(readabs)
+#   
+#   # ---- Load & prep (same as your function) ----
+#   na <- as.data.table(read_abs("5206.0", check_local = check_local))
+#   if (!nrow(na)) stop("read_abs('5206.0') returned 0 rows.")
+#   if (!inherits(na$date, "Date")) na[, date := as.Date(date)]
+#   unit_guard <- grepl("\\$\\s*Million(s)?\\b", na$unit, ignore.case = TRUE)
+#   na <- na[unit_guard]
+#   
+#   txt_cols <- intersect(c("series","table_title","unit","data_type","series_type"), names(na))
+#   if (!length(txt_cols)) txt_cols <- "series"
+#   for (cc in txt_cols) if (!is.character(na[[cc]])) set(na, j = cc, value = as.character(na[[cc]]))
+#   na[, .__txt := do.call(paste, c(.SD, list(sep = " | "))), .SDcols = txt_cols]
+#   
+#   # ---- Same split rules as your function ----
+#   is_tbl13 <- function(tt) grepl("^\\s*Table\\s*(3)\\b", tt, TRUE)
+#   is_tbl24 <- function(tt) grepl("^\\s*Table\\s*(2)\\b",    tt, TRUE)  # IPD choice
+#   is_rev   <- function(s)  grepl("Revisions", s, TRUE)
+#   
+#   na_nom  <- na[ is_tbl13(table_title) & !is_rev(series) ]
+#   na_real <- na[ is_tbl24(table_title) & !is_rev(series) ]
+#   
+#   # ---- Helpers (same behaviour) ----
+#   prefer_sa <- function(DT) {
+#     if (!nrow(DT)) return(DT)
+#     has_series_type <- "series_type" %in% names(DT)
+#     txt <- if (has_series_type) DT$series_type else DT$.__txt
+#     sa <- DT[grepl("Seasonally adjusted", txt, TRUE)]
+#     if (nrow(sa)) return(sa)
+#     tr <- DT[grepl("\\bTrend\\b", txt, TRUE)]
+#     if (nrow(tr)) return(tr)
+#     DT[grepl("\\bOriginal\\b", txt, TRUE)]
+#   }
+#   dedup_by_date_value <- function(DT) {
+#     if (!nrow(DT)) return(DT)
+#     unique(DT[, .(date, value, series, unit, data_type, series_type, table_title)])[order(date)]
+#   }
+#   
+#   # ---- Selectors (exactly as in your loop) ----
+#   is_gen_gov_total <- function(s) grepl("^\\s*General\\s+government\\s*;\\s*", s, TRUE) &&
+#     !grepl("National|State and local", s, TRUE)
+#   is_gfce    <- function(s) grepl("Final\\s+consumption\\s+expenditure\\s*;", s, TRUE)
+#   is_gfcf    <- function(s) grepl("Gross\\s+fixed\\s+capital\\s+formation\\s*;", s, TRUE)
+#   is_bad_var <- function(s) grepl("Percentage\\s+changes|Index", s, TRUE)
+#   
+#   is_nom  <- function(s) grepl("Current\\s*prices?", s, TRUE) || grepl("\\bCP\\b", s, TRUE)
+#   is_real <- function(s) grepl("Chain\\s*volume|Volume\\s*chain|Chain-?volume|Volume\\s*measures", s, TRUE) ||
+#     grepl("\\bCVM\\b|\\bvolume\\b", s, TRUE)
+#   is_gdp  <- function(s) grepl("\\bGross\\s+domestic\\s+product\\b|\\bGDP\\b", s, TRUE)
+#   
+#   # ---- Apply the same filters up to selection (no annualising) ----
+#   rows_gen_total_nom <- vapply(na_nom$series,  is_gen_gov_total, 1L)
+#   rows_not_bad_nom   <- !vapply(na_nom$series, is_bad_var,       1L)
+#   gg_nom  <- na_nom[rows_gen_total_nom & rows_not_bad_nom]
+#   
+#   rows_gen_total_real <- vapply(na_real$series,  is_gen_gov_total, 1L)
+#   rows_not_bad_real   <- !vapply(na_real$series, is_bad_var,       1L)
+#   gg_real <- na_real[rows_gen_total_real & rows_not_bad_real]
+#   
+#   gfce_nom_q  <- gg_nom [ vapply(gg_nom$.__txt,  is_nom,  1L) & vapply(gg_nom$series,  is_gfce, 1L) ]
+#   gfcf_nom_q  <- gg_nom [ vapply(gg_nom$.__txt,  is_nom,  1L) & vapply(gg_nom$series,  is_gfcf, 1L) ]
+#   gfce_real_q <- gg_real[ vapply(gg_real$.__txt, is_real, 1L) & vapply(gg_real$series, is_gfce, 1L) ]
+#   gfcf_real_q <- gg_real[ vapply(gg_real$.__txt, is_real, 1L) & vapply(gg_real$series, is_gfcf, 1L) ]
+#   
+#   gdp_nom_q  <- na_nom [ vapply(na_nom$series,  is_gdp, 1L) & vapply(na_nom$.__txt,  is_nom,  1L) ]
+#   gdp_real_q <- na_real[ vapply(na_real$series, is_gdp, 1L) & vapply(na_real$.__txt, is_real, 1L) ]
+#   
+#   # Respect your prefer_sa + dedup steps
+#   gfce_nom_q  <- dedup_by_date_value(prefer_sa(gfce_nom_q))
+#   gfcf_nom_q  <- dedup_by_date_value(prefer_sa(gfcf_nom_q))
+#   gfce_real_q <- dedup_by_date_value(prefer_sa(gfce_real_q))
+#   gfcf_real_q <- dedup_by_date_value(prefer_sa(gfcf_real_q))
+#   gdp_nom_q   <- dedup_by_date_value(prefer_sa(gdp_nom_q))
+#   gdp_real_q  <- dedup_by_date_value(prefer_sa(gdp_real_q))
+#   
+#   # ---- Return the unique series lists (what you wanted) ----
+#   uniq <- function(DT) unique(DT[, .(series, unit, data_type, series_type, table_title)])
+#   res <- list(
+#     GFCE_nom  = uniq(gfce_nom_q),
+#     GFCE_real = uniq(gfce_real_q),
+#     GFCF_nom  = uniq(gfcf_nom_q),
+#     GFCF_real = uniq(gfcf_real_q),
+#     GDP_nom   = uniq(gdp_nom_q),
+#     GDP_real  = uniq(gdp_real_q)
+#   )
+#   
+#   # quick printed summary
+#   cat("\nSelected unique series counts:\n")
+#   print(data.table(
+#     slice = names(res),
+#     n_series = vapply(res, nrow, integer(1))
+#   ))
+#   
+#   # show a few entries from each slice
+#   for (nm in names(res)) {
+#     cat("\n---", nm, "(showing up to", max_show, ") ---\n")
+#     print(head(res[[nm]][order(series)], max_show))
+#   }
+#   
+#   invisible(res)
+# }
+# 
+# sel <- preview_gfce_gdp_selection(check_local = TRUE)
+# # See exactly which series will be used:
+# sel$GFCE_nom
+# sel$GDP_nom
+# 
+# # Just counts:
+# sapply(sel, nrow)
+# 
+# 
+# #base_data[base_data$table_title == "Table 3. Expenditure on Gross Domestic Product (GDP), Current prices"]$series
+########
+
+
 # -------------------- ABS 5206.0: GFCE, GFCF, GDP --------------------
 # Pulls General government totals (excludes National/State & local),
 # GFCE + GFCF (both bases where available), and GDP (nominal & chain volume).
@@ -73,85 +219,62 @@ get_gfce_gdp <- function(freq = c("FY","CY"), check_local = TRUE, verbose = TRUE
   na <- as.data.table(read_abs("5206.0", check_local = check_local))
   if (!nrow(na)) stop("read_abs('5206.0') returned 0 rows.")
   if (!inherits(na$date, "Date")) na[, date := as.Date(date)]
+  unit_guard <- grepl("\\$\\s*Million(s)?\\b", na$unit, ignore.case = TRUE)
+  na <- na[unit_guard]
   
   # Build combined text field across available metadata columns
-  txt_cols <- intersect(
-    c("series","table_title","unit","data_type","series_type"),
-    names(na)
-  )
+  txt_cols <- intersect(c("series","table_title","unit","data_type","series_type"), names(na))
   if (!length(txt_cols)) txt_cols <- "series"
   for (cc in txt_cols) if (!is.character(na[[cc]])) set(na, j = cc, value = as.character(na[[cc]]))
   na[, .__txt := do.call(paste, c(.SD, list(sep = " | "))), .SDcols = txt_cols]
   
-  # ---- NEW filters ----
-  is_table_1_or_3 <- function(tt) grepl("^\\s*Table\\s*(1|3)\\b", tt, ignore.case = TRUE)
-  is_revisions    <- function(s)  grepl("Revisions", s, ignore.case = TRUE)
-  rows_ok_tables  <- vapply(na$table_title, is_table_1_or_3, logical(1))
-  rows_no_rev     <- !vapply(na$series,      is_revisions,   logical(1))
-  na_filt         <- na[rows_ok_tables & rows_no_rev]
+  # ---- Split filters: nominal (Tables 1/3) vs real (Tables 2/4), exclude Revisions ----
+  is_tbl13 <- function(tt) grepl("^\\s*Table\\s*(3)\\b", tt, TRUE) # Table 1 unnecessary
+  is_tbl24 <- function(tt) grepl("^\\s*Table\\s*(2)\\b", tt, TRUE) # Choose IPD instead of chain-price indexes
+  is_rev   <- function(s)  grepl("Revisions", s, TRUE)
   
-  # ---- Helpers ----
-  prefer_sa <- function(DT) {
-    if (!nrow(DT)) return(DT)
-    has_series_type <- "series_type" %in% names(DT)
-    sa <- DT[grepl("Seasonally adjusted", if (has_series_type) series_type else .__txt, ignore.case = TRUE)]
-    if (nrow(sa)) return(sa)
-    tr <- DT[grepl("\\bTrend\\b",          if (has_series_type) series_type else .__txt, ignore.case = TRUE)]
-    if (nrow(tr)) return(tr)
-    DT[grepl("\\bOriginal\\b",             if (has_series_type) series_type else .__txt, ignore.case = TRUE)]
-  }
+  na_nom  <- na[ is_tbl13(table_title) & !is_rev(series) ]
+  na_real <- na[ is_tbl24(table_title) & !is_rev(series) ]
   
-  ann <- function(DT, out_name) {
-    if (!nrow(DT)) return(data.table(year = integer(), (out_name) := numeric()))
-    annualise(DT, out_name = out_name, mode = "mean", freq = freq)
-  }
+  # ---- Selectors ----
+  is_gen_gov_total <- function(s) grepl("^\\s*General\\s+government\\s*;\\s*", s, TRUE) &&
+    !grepl("National|State and local", s, TRUE)
+  is_gfce    <- function(s) grepl("Final\\s+consumption\\s+expenditure\\s*;", s, TRUE)
+  is_gfcf    <- function(s) grepl("Gross\\s+fixed\\s+capital\\s+formation\\s*;", s, TRUE)
+  is_bad_var <- function(s) grepl("Percentage\\s+changes|Index", s, TRUE)
   
-  # ---- Selectors (your working logic) ----
-  is_gen_gov_total <- function(s) {
-    grepl("^\\s*General\\s+government\\s*;\\s*", s, ignore.case = TRUE) &&
-      !grepl("National|State and local", s, ignore.case = TRUE)
-  }
-  is_gfce <- function(s) grepl("Final\\s+consumption\\s+expenditure\\s*;", s, ignore.case = TRUE)
-  is_gfcf <- function(s) grepl("Gross\\s+fixed\\s+capital\\s+formation\\s*;", s, ignore.case = TRUE)
-  is_bad_var <- function(s) grepl("Percentage\\s+changes|Index", s, ignore.case = TRUE)
+  is_nom  <- function(s) grepl("Current\\s*prices?", s, TRUE) || grepl("\\bCP\\b", s, TRUE)
+  is_real <- function(s) grepl("Chain\\s*volume|Volume\\s*chain|Chain-?volume|Volume\\s*measures", s, TRUE) ||
+    grepl("\\bCVM\\b|\\bvolume\\b", s, TRUE)
+  is_gdp  <- function(s) grepl("\\bGross\\s+domestic\\s+product\\b|\\bGDP\\b", s, TRUE)
   
-  is_nom  <- function(s) grepl("Current\\s*prices?", s, ignore.case = TRUE) ||
-    grepl("\\bCP\\b", s, ignore.case = TRUE)
-  is_real <- function(s) grepl("Chain\\s*volume|Volume\\s*chain|Chain-?volume|Volume\\s*measures", s, ignore.case = TRUE) ||
-    grepl("\\bCVM\\b|\\bvolume\\b", s, ignore.case = TRUE)
+  # ---- Filter slices (nominal vs real) ----
+  # Nominal (Tables 1/3)
+  rows_gen_total_nom <- vapply(na_nom$series,  is_gen_gov_total, 1L)
+  rows_not_bad_nom   <- !vapply(na_nom$series, is_bad_var,       1L)
+  gg_nom  <- na_nom[rows_gen_total_nom & rows_not_bad_nom]
   
-  is_gdp <- function(s) grepl("\\bGross\\s+domestic\\s+product\\b|\\bGDP\\b", s, ignore.case = TRUE)
+  # Real (Tables 2/4)
+  rows_gen_total_real <- vapply(na_real$series,  is_gen_gov_total, 1L)
+  rows_not_bad_real   <- !vapply(na_real$series, is_bad_var,       1L)
+  gg_real <- na_real[rows_gen_total_real & rows_not_bad_real]
   
-  # ---- Filter slices (use na_filt) ----
-  rows_gen_total <- vapply(na_filt$series, is_gen_gov_total, logical(1))
-  rows_not_bad   <- !vapply(na_filt$series, is_bad_var,      logical(1))
-  gg <- na_filt[rows_gen_total & rows_not_bad]
+  # Basis splits
+  gfce_nom_q  <- gg_nom [ vapply(gg_nom$.__txt,  is_nom,  1L) & vapply(gg_nom$series,  is_gfce, 1L) ] |> prefer_sa() |> dedup_by_date_value()
+  gfcf_nom_q  <- gg_nom [ vapply(gg_nom$.__txt,  is_nom,  1L) & vapply(gg_nom$series,  is_gfcf, 1L) ] |> prefer_sa() |> dedup_by_date_value()
   
-  gg_gfce <- gg[vapply(series, is_gfce, logical(1))]
-  gg_gfcf <- gg[vapply(series, is_gfcf, logical(1))]
+  gfce_real_q <- gg_real[ vapply(gg_real$.__txt, is_real, 1L) & vapply(gg_real$series, is_gfce, 1L) ] |> prefer_sa() |> dedup_by_date_value()
+  gfcf_real_q <- gg_real[ vapply(gg_real$.__txt, is_real, 1L) & vapply(gg_real$series, is_gfcf, 1L) ] |> prefer_sa() |> dedup_by_date_value()
   
-  # Basis splits (search in the combined text)
-  gfce_nom_q  <- gg_gfce[ vapply(.__txt, is_nom,  logical(1)) ]
-  gfce_real_q <- gg_gfce[ vapply(.__txt, is_real, logical(1)) ]
-  gfcf_nom_q  <- gg_gfcf[ vapply(.__txt, is_nom,  logical(1)) ]
-  gfcf_real_q <- gg_gfcf[ vapply(.__txt, is_real, logical(1)) ]
-  
-  # Prefer SA → Trend → Original
-  gfce_nom_q  <- prefer_sa(gfce_nom_q)
-  gfce_real_q <- prefer_sa(gfce_real_q)
-  gfcf_nom_q  <- prefer_sa(gfcf_nom_q)
-  gfcf_real_q <- prefer_sa(gfcf_real_q)
-  
-  # GDP (use na_filt with extra filters)
-  gdp_nom_q  <- prefer_sa(na_filt[ vapply(na_filt$series, is_gdp,  logical(1)) &
-                                     vapply(na_filt$.__txt,  is_nom,  logical(1)) ])
-  gdp_real_q <- prefer_sa(na_filt[ vapply(na_filt$series, is_gdp,  logical(1)) &
-                                     vapply(na_filt$.__txt,  is_real, logical(1)) ])
+  # GDP: nominal from 1/3, real from 2/4 (headline, dedup)
+  gdp_nom_q  <- na_nom [ vapply(na_nom$series,  is_gdp, 1L) & vapply(na_nom$.__txt,  is_nom,  1L) ] |> prefer_sa() |> dedup_by_date_value()
+  gdp_real_q <- na_real[ vapply(na_real$series, is_gdp, 1L) & vapply(na_real$.__txt, is_real, 1L) ] |> prefer_sa() |> dedup_by_date_value()
   
   # Diagnostics if subjects totally missing
-  if (!nrow(gg_gfce)) stop("Could not find General government total GFCE rows (check labels).")
-  if (!nrow(gg_gfcf)) stop("Could not find General government total GFCF rows (check labels).")
-  if (!nrow(gdp_nom_q) && !nrow(gdp_real_q)) stop("Could not find GDP rows (check labels).")
+  if (!nrow(gfce_nom_q) && !nrow(gfce_real_q) && !nrow(gfcf_nom_q) && !nrow(gfcf_real_q))
+    stop("No General government GFCE/GFCF rows after filters (Tables 1/3 for nominals, 2/4 for reals).")
+  if (!nrow(gdp_nom_q) && !nrow(gdp_real_q))
+    stop("No GDP rows after filters.")
   
   # ---- Annualise ----
   gfce_nom_a   <- ann(gfce_nom_q,   "gfce_nom")
@@ -183,6 +306,7 @@ get_gfce_gdp <- function(freq = c("FY","CY"), check_local = TRUE, verbose = TRUE
   
   out
 }
+
 
 
 # -------------------- ABS 3101.0 Table 59: ERP & age shares --------------------
@@ -829,7 +953,7 @@ if (exists("four_bin") && nrow(four_bin)) {
   }, by = Segment]
   
   # Build the plot
-  p4c <- ggplot(four_g, aes(x = Segment, y = contrib, fill = stack_order)) +
+  p4c <- ggplot(four_g, aes(x = Segment, y = contrib*100, fill = stack_order)) +
     geom_col() +
     # Big solid dot = actual Δ
     geom_point(
@@ -847,7 +971,7 @@ if (exists("four_bin") && nrow(four_bin)) {
       footnotes = c(paste0("Black dot reflects the change in ",measure," to GDP."),"Effects represent association between the change in the category and changes in spending to GDP.","Economic Effects reflect variation explained by changes in population, relative government costs, and terms of trade."),
       sources = c("e61","ABS")
     ) +
-    plab(c("Residual","65+","Other ages","Economic effects***"),y=c(0.07,0.07,0.07,0.07),x=c(0.7,1.2,1.7,2.2)) +
+    plab(c("Residual","65+","Other ages","Economic effects***"),y=rep(2,3),x=c(0.7,1.2,1.7,2.2)) +
     theme_e61(legend = "bottom")
   
   print(p4c)
@@ -918,7 +1042,8 @@ counterfactual_paths_by_block <- function(dt,
 # -------------------- Quick plot for counterfactuals --------------------
 plot_counterfactuals <- function(cf_dt,
                                  blocks_to_show = NULL,
-                                 title = "Counterfactual paths (holding blocks fixed at baseline)") {
+                                 title = "Counterfactual paths (holding blocks fixed at baseline)",
+                                 footnotes = "NA") {
   if (is.null(blocks_to_show)) {
     blocks_to_show <- gsub("^yhat_cf_", "", grep("^yhat_cf_", names(cf_dt), value = TRUE))
   }
@@ -933,12 +1058,13 @@ plot_counterfactuals <- function(cf_dt,
                                      paste0("yhat_cf_", blocks_to_show)),
                           labels = c("Actual", "Fitted",
                                      paste0("CF: hold ", blocks_to_show, " at baseline")))]
-  ggplot(long, aes(year, value, colour = series)) +
-    geom_line(size = 1) +
-    geom_hline(yintercept = 0, linetype = "dashed") +
-    scale_y_continuous(labels = scales::percent_format(accuracy = 0.1)) +
-    labs(title = title, x = NULL, y = "Spend / GDP") +
-    theme_e61(legend = "bottom")
+  ggplot(long[series %in% c("Actual","CF: hold Demography at baseline")], aes(year, value*100, colour = series)) +
+    geom_line() +
+    geom_hline(yintercept = 0) +
+    scale_y_continuous_e61() +
+    labs_e61(title = title, footnotes = footnotes, x = NULL, y = "Percent of GDP",sources = c("ABS","e61")) +
+    plab(c("GFCE/GDP","Demographic Adjusted"),x=c(1980,1980),y=c(21,16))
+    #theme_e61(legend = "bottom") 
 }
 
 # Define blocks (edit as you like)
@@ -960,9 +1086,108 @@ cf_paths <- counterfactual_paths_by_block(
 print(plot_counterfactuals(
   cf_dt = cf_paths,
   blocks_to_show = names(blocks),
-  title = sprintf("Counterfactual spend/GDP (baseline %s; sample %s–%s)",
-                  baseline_year, min(share_dt$year), max(share_dt$year))
+  title = "Counterfactual Government Consumption to GDP",
+  footnotes = c(sprintf("Comparison includes a baseline %s and sample period %s–%s)",
+                  baseline_year, min(share_dt$year), max(share_dt$year)))
 ))
+
+save_e61("Demographic_Adjusted_GFCE.png",res=2)
 
 # Save the table if useful
 fwrite(cf_paths, "counterfactual_paths_generalgov.csv")
+
+# ===================== Helpers: manual Shapley by custom ranges =====================
+nearest_year <- function(target, years) years[which.min(abs(years - target))]
+
+normalise_segments <- function(ranges, years) {
+  # ranges: list(c(y0,y1), c(y0,y1), ...)
+  stopifnot(is.list(ranges), length(ranges) >= 1L)
+  segs <- rbindlist(lapply(ranges, function(r) {
+    stopifnot(length(r) == 2L)
+    y0 <- nearest_year(min(r), years)
+    y1 <- nearest_year(max(r), years)
+    data.table(y0 = y0, y1 = y1)
+  }))
+  segs <- unique(segs[y0 < y1])  # drop dup / invalid
+  if (!nrow(segs)) stop("No valid segments after snapping to available years.")
+  segs[]
+}
+
+shapley_by_segments <- function(dt, segments, features, conditional = TRUE) {
+  # segments: data.table with y0, y1 (inclusive ends)
+  setorder(dt, year)
+  # compute once per segment
+  rbindlist(lapply(1:nrow(segments), function(i) {
+    y0 <- segments$y0[i]; y1 <- segments$y1[i]
+    sh <- shapley_regression_pair_general(
+      dt, y0 = y0, y1 = y1, features = features, conditional = conditional
+    )
+    data.table(y0 = y0, y1 = y1,
+               d_actual = sh$d_actual, d_hat = sh$d_hat, unexplained = sh$unexplained,
+               t(sh$contrib))
+  }), use.names = TRUE, fill = TRUE)
+}
+# ================================================================================
+
+
+# # ======================== RUN (manual ranges) ====================================
+# # 1) Define your custom year ranges (edit these)
+# custom_ranges <- list(
+#   c(1985, 1997),
+#   c(1998, 2010),
+#   c(2011, 2024)
+# )
+# 
+# # 2) Snap ranges to available sample years and compute Shapley
+# seg_tbl <- normalise_segments(custom_ranges, years = unique(share_dt$year))
+# manual_res <- shapley_by_segments(
+#   dt = share_dt,
+#   segments = seg_tbl,
+#   features = features,
+#   conditional = TRUE  # or use `conditional_sv`
+# )
+# 
+# # 3) Plot (same visual language as your four-bin explained plot)
+# if (nrow(manual_res)) {
+#   manual_measures <- intersect(features, names(manual_res))
+#   mlong <- melt(
+#     manual_res,
+#     id.vars       = c("y0","y1","d_actual","d_hat","unexplained"),
+#     measure.vars  = manual_measures,
+#     variable.name = "driver",
+#     value.name    = "contrib"
+#   )
+#   mlong[, Segment := paste0(y0, "–", y1)]
+#   # keep order as supplied
+#   mlong[, Segment := factor(Segment, levels = paste0(seg_tbl$y0, "–", seg_tbl$y1))]
+#   
+#   p_manual <- ggplot(mlong, aes(x = Segment, y = contrib, fill = driver)) +
+#     geom_col() +
+#     # predicted total explained change (◇)
+#     geom_point(
+#       data = unique(mlong[, .(Segment, d_hat)]),
+#       aes(y = d_hat, x = Segment),
+#       inherit.aes = FALSE,
+#       shape = 23, size = 3, stroke = 0.6
+#     ) +
+#     # actual total change (●)
+#     geom_point(
+#       data = unique(mlong[, .(Segment, d_actual)]),
+#       aes(y = d_actual, x = Segment),
+#       inherit.aes = FALSE,
+#       shape = 16, size = 2.8
+#     ) +
+#     geom_hline(yintercept = 0, linewidth = 0.4) +
+#     coord_flip() +
+#     labs_e61(
+#       title = "Regression-based Shapley by manual periods",
+#       subtitle = "Stacks = explained contribution by driver; ● actual Δ, ◇ predicted Δ",
+#       x = NULL, y = "Δ share (level points)", fill = "Driver"
+#     ) +
+#     theme_e61(legend = "bottom")
+#   
+#   print(p_manual)
+#   # Optional: save
+#   save_e61("Shapley_manual_periods.png", p_manual,res=2)
+# }
+# # ================================================================================
