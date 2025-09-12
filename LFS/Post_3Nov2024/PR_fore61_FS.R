@@ -13,27 +13,9 @@ rm(list = ls())
 LFS <- read_abs(cat_no = "6202.0") 
 setDT(LFS)
 
-## Participation rate shift-share: gender and age
-# Initial creation: 10/11/2024
-# Last edit: 11/09/2025 - update for theme61
-
-library(tidyverse)
-library(data.table)
-library(theme61)
-library(readabs)
-library(seasonal)
-
-rm(list = ls())
-
 ## End date
 
 end_date <- "2024-06-01"
-
-
-## Set up data
-
-LFS <- read_abs(cat_no = "6202.0") 
-setDT(LFS)
 
 
 ## Gender
@@ -522,4 +504,39 @@ save_e61("Share_decomp_2025.png",res=2,pad_width = 1,auto_scale = FALSE)
 
 #### As well as this above plot, we want to also use the new PRs and the 2065 population shares to map out the change in participation if group participation rates don't keep rising.
 
+ABS_pop_proj <- read_csv("ABS_pop_proj_2022.csv")
+setDT(ABS_pop_proj)
 
+ABS_2065 <- ABS_pop_proj[]
+
+ABS_2065[,age_group := fcase(AGE %in% c("A15","A20"),"15-24",
+                             AGE %in% c("A25","A30"),"25-34",
+                             AGE %in% c("A35","A40"),"35-44",
+                             AGE %in% c("A45","A50"),"45-54",
+                             AGE %in% c("A55","A60"),"55-64",
+                             default = "65 years and over")]
+
+age_pop_2065 <- ABS_2065[,.(population = sum(OBS_VALUE)),by=.(TIME_PERIOD,age_group)]
+total_pop_2065 <- ABS_2065[,.(total_population = sum(OBS_VALUE)),by=.(TIME_PERIOD)]
+
+age_pop_2065 <- total_pop_2065[age_pop_2065,on=.(TIME_PERIOD)]
+age_pop_2065[,prop_wap := population/total_population]
+
+# Combine with current rates
+
+PR_forsim <- merged_age_data[date =="2025-06-01",.(age_group,participation_rate)]
+PR_forsim <- PR_forsim[age_pop_2065[TIME_PERIOD >= 2025],on=.(age_group)]
+PR_forsim[,participation_rate2 := fifelse(age_group == "65 years and over",participation_rate*(1+(TIME_PERIOD - 2025)/(2071-2025)),participation_rate)]
+
+PR_forsim <- PR_forsim[,.(PR = sum(participation_rate*prop_wap),PR_high = sum(participation_rate2*prop_wap)),by=.(TIME_PERIOD)]
+
+PR_forsim <- melt(PR_forsim,id.vars = "TIME_PERIOD")
+
+ggplot(PR_forsim,aes(x=TIME_PERIOD,y=value*100,colour=variable)) + geom_line() +
+  plab(c("At current trends","Doubling in participation among over 65s"),x=c(2025,2025),y=c(63.5,67.5)) +
+  labs_e61(title = "Older workers needed to maintain labour force",y="%",x="",
+           sources = c("ABS","e61"),
+           footnotes = c("In high participation scenario over 65 participation rate rises from 16% to 32% between 2025 and 2071.","ABS population projections used, based on the medium scenarios.")) +
+  scale_y_continuous_e61(limits=c(60,70,2))
+
+save_e61("Fiscal_participation_plot.png",res=2)
