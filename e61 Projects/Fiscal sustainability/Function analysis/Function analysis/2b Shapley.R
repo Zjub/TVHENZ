@@ -958,7 +958,7 @@ if (exists("four_bin") && nrow(four_bin)) {
     # Big solid dot = actual Δ
     geom_point(
       data = unique(four_g[, .(Segment, d_actual)]),
-      aes(x = Segment, y = d_actual),
+      aes(x = Segment, y = d_actual*100),
       inherit.aes = FALSE,
       shape = 16, size = 5, color = "black"
     ) +
@@ -971,8 +971,7 @@ if (exists("four_bin") && nrow(four_bin)) {
       footnotes = c(paste0("Black dot reflects the change in ",measure," to GDP."),"Effects represent association between the change in the category and changes in spending to GDP.","Economic Effects reflect variation explained by changes in population, relative government costs, and terms of trade."),
       sources = c("e61","ABS")
     ) +
-    plab(c("Residual","65+","Other ages","Economic effects***"),y=rep(2,3),x=c(0.7,1.2,1.7,2.2)) +
-    theme_e61(legend = "bottom")
+    plab(c("65+","Other ages","Economic effects***","Residual"),y=rep(2,4),x=c(2.2,1.7,1.2,0.7))
   
   print(p4c)
 }

@@ -1,7 +1,7 @@
 # Topic: Initial play with SC methods on E/GDP
 # Author: Matt Nolan
 # Created: 3/7/2025
-# Last edit: 13/8/2025
+# Last edit: 14/9/2025 # Adding the low v high exercise
 # Last editor: Matt Nolan
 
 #remotes::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
@@ -54,6 +54,77 @@ length(country_set)
 OECD_forsynth <- OECD_long_dt[country %in% country_set]
 OECD_forsynth[, index := value / value[year == year_data], by = country]
 
+## Classify into "high" and "low" countries to show "catchup"
+ggplot(OECD_forsynth[country %in% c("Australia","United States","Norway") & year >= year_data],aes(x=year,y=index,colour=country)) + geom_line()+
+  theme_e61(legend = "bottom")
+
+dt <- data.table::copy(OECD_forsynth)
+setDT(dt)
+
+# --- 1) Classify countries using 1990–1999 average 'value' (exclude Australia) ----
+min_years <- 5  # require at least 5 years of 1990s data to classify (tweak if needed)
+
+class_base <- dt[country != "Australia" & year %between% c(1990, 1999)]
+class_stats <- class_base[
+  , .(value_mean_90s = mean(value, na.rm = TRUE),
+      n_years = sum(!is.na(value))),
+  by = country
+][n_years >= min_years]
+
+q1 <- quantile(class_stats$value_mean_90s, 0.25, na.rm = TRUE)
+q3 <- quantile(class_stats$value_mean_90s, 0.75, na.rm = TRUE)
+
+class_stats[, tier := fifelse(value_mean_90s <= q1, "low",
+                              fifelse(value_mean_90s >= q3, "high", NA_character_))]
+classified <- class_stats[!is.na(tier)]
+
+high_countries <- classified[tier == "high", country]
+low_countries  <- classified[tier == "low",  country]
+
+# --- 2) Print country lists and their average 1999+ 'index' -----------------------
+period_99p <- dt[year >= 1999]
+
+avg_index_by_group <- function(countries) {
+  period_99p[country %in% countries, mean(index, na.rm = TRUE)]
+}
+
+avg_high_index <- avg_index_by_group(high_countries)
+avg_low_index  <- avg_index_by_group(low_countries)
+avg_aus_index  <- period_99p[country == "Australia", mean(index, na.rm = TRUE)]
+
+cat("High spenders (top quartile, 1990s):\n  ",
+    paste(sort(high_countries), collapse = ", "), "\n",
+    "Average index (1999+): ", round(avg_high_index, 3), "\n\n", sep = "")
+
+cat("Low spenders (bottom quartile, 1990s):\n  ",
+    paste(sort(low_countries), collapse = ", "), "\n",
+    "Average index (1999+): ", round(avg_low_index, 3), "\n\n", sep = "")
+
+cat("Australia average index (1999+): ", round(avg_aus_index, 3), "\n\n", sep = "")
+
+# --- 3) Build 1999+ time series for plot: mean 'index' by year --------------------
+series_high <- period_99p[country %in% high_countries,
+                          .(index = mean(index, na.rm = TRUE)), by = year][, series := "High"]
+series_low  <- period_99p[country %in% low_countries,
+                          .(index = mean(index, na.rm = TRUE)), by = year][, series := "Low"]
+series_aus  <- period_99p[country == "Australia",
+                          .(index = mean(index, na.rm = TRUE)), by = year][, series := "Australia"]
+
+plot_df <- rbindlist(list(series_high, series_low, series_aus), use.names = TRUE)
+setorder(plot_df, series, year)
+
+# --- 4) Plot ----------------------------------------------------------------------
+p_comp <- ggplot(plot_df, aes(year, index, colour = series)) +
+  geom_line() +
+  labs_e61(title = "Low spending countries catchup",
+       x = NULL, y = "1999 = 1", sources = c("e61","OECD")) +
+  plab(c("Australia","Low Spenders","High Spenders"),y=c(1.21,1.17,1.13),x = c(1999,1999,1999))
+
+print(p_comp)
+
+save_e61("Cross_country_spend.png",res=2)
+
+### SC exercise
 synth_result <- OECD_forsynth %>%
   filter(year >= year_data, year <= 2022) %>%
   synthetic_control(outcome = index, #value is value, index is set relative to the starting year - purpose is to remove initial level difference, but still estimate in levels

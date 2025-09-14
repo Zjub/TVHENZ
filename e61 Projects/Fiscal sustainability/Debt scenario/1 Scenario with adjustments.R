@@ -201,12 +201,19 @@ make_transient_growth_from_rshock <- function(r_add, g_base,
 # Budget semi-elasticity on a *temporary* output gap (so PB returns to baseline).
 # 1% lower GDP level → PB worsens by ~0.3pp of GDP; split 85% receipts, 15% primary.
 apply_fiscal_pass_through_transient <- function(rec_base, prim_base, gap,
-                                                semi_pb_per_1pct = 0.003,  # 0.3pp/GDP per 1% gap
+                                                semi_pb_per_1pct = 0.003,  # ≈0.3pp per 1% GDP gap
                                                 share_revenue = 0.85) {
-  rec_change  <- -share_revenue       * semi_pb_per_1pct * (gap * 100)  # receipts ↓
-  prim_change <- +(1 - share_revenue) * semi_pb_per_1pct * (gap * 100)  # primary ↑
-  list(receipts = rec_base + rec_change,
-       primary  = prim_base + prim_change)
+  # ΔPB (% of GDP) for a level gap (gap is in decimals, e.g. -0.02 = -2%)
+  dPB <- semi_pb_per_1pct * (gap * 100)  # negative when gap < 0
+  
+  # Allocate: receipts take share_revenue of ΔPB; spending takes the rest with opposite sign
+  rec_change  <- share_revenue * dPB           # gap<0 → receipts ↓
+  prim_change <- -(1 - share_revenue) * dPB    # gap<0 → primary spend ↑
+  
+  list(
+    receipts = rec_base + rec_change,
+    primary  = prim_base + prim_change
+  )
 }
 
 
@@ -288,43 +295,43 @@ rate_gdp_fiscal <- make_scenario(
 
 ## Testing new version of scenarios 3 and 4 with less persistent revenue shocks
 # (3) Add GDP effect ON TOP of (2): same r_add & φ, *transient* GDP response
-g_dyn <- make_transient_growth_from_rshock(
-  r_add = r_add_prior,
-  g_base = g_base,
-  target_cum_drop = 0.035,       # 150bp → ~3.5% lower level at year 3 (RBA MARTIN scaling)
-  neg_weights = c(0.5, 0.3, 0.2) # shape of the 3-year hump (then rebound)
-)
-
-rate_gdp <- make_scenario(
-  years = proj_years,
-  g_path = g_dyn$g_path,                  # transient growth deviations
-  r_star_path = r_star,
-  receipts_gdp = rec_base,                # PB components unchanged in (3)
-  primary_spend_gdp = prim_base,
-  phi = phi,                              # keep debt sensitivity ON, like (2)
-  r_add = r_add_prior,
-  sfa_rule = "hist_tail_avg", hist_sfa = hist$sfa_gdp
-)[, scenario := "IR shock: +150bp + transient GDP effect (built on 2)"]
-
-# (4) Now add *transient* fiscal pass-through based on the temporary level gap
-fp_dyn <- apply_fiscal_pass_through_transient(
-  rec_base = rec_base,
-  prim_base = prim_base,
-  gap = g_dyn$gap,            # temporary level gap that *returns to zero*
-  semi_pb_per_1pct = 0.003,
-  share_revenue = 0.85
-)
-
-rate_gdp_fiscal <- make_scenario(
-  years = proj_years,
-  g_path = g_dyn$g_path,
-  r_star_path = r_star,
-  receipts_gdp = fp_dyn$receipts,         # receipts ↓ while gap < 0, then revert
-  primary_spend_gdp = fp_dyn$primary,     # primary ↑ while gap < 0, then revert
-  phi = phi,                              # keep φ ON
-  r_add = r_add_prior,
-  sfa_rule = "hist_tail_avg", hist_sfa = hist$sfa_gdp
-)[, scenario := "IR shock: +150bp + transient GDP & fiscal pass-through (built on 3)"]
+# g_dyn <- make_transient_growth_from_rshock(
+#   r_add = r_add_prior,
+#   g_base = g_base,
+#   target_cum_drop = 0.035,       # 150bp → ~3.5% lower level at year 3 (RBA MARTIN scaling)
+#   neg_weights = c(0.5, 0.3, 0.2) # shape of the 3-year hump (then rebound)
+# )
+# 
+# rate_gdp <- make_scenario(
+#   years = proj_years,
+#   g_path = g_dyn$g_path,                  # transient growth deviations
+#   r_star_path = r_star,
+#   receipts_gdp = rec_base,                # PB components unchanged in (3)
+#   primary_spend_gdp = prim_base,
+#   phi = phi,                              # keep debt sensitivity ON, like (2)
+#   r_add = r_add_prior,
+#   sfa_rule = "hist_tail_avg", hist_sfa = hist$sfa_gdp
+# )[, scenario := "IR shock: +150bp + transient GDP effect (built on 2)"]
+# 
+# # (4) Now add *transient* fiscal pass-through based on the temporary level gap
+# fp_dyn <- apply_fiscal_pass_through_transient(
+#   rec_base = rec_base,
+#   prim_base = prim_base,
+#   gap = g_dyn$gap,            # temporary level gap that *returns to zero*
+#   semi_pb_per_1pct = 0.003,
+#   share_revenue = 0.85
+# )
+# 
+# rate_gdp_fiscal <- make_scenario(
+#   years = proj_years,
+#   g_path = g_dyn$g_path,
+#   r_star_path = r_star,
+#   receipts_gdp = fp_dyn$receipts,         # receipts ↓ while gap < 0, then revert
+#   primary_spend_gdp = fp_dyn$primary,     # primary ↑ while gap < 0, then revert
+#   phi = phi,                              # keep φ ON
+#   r_add = r_add_prior,
+#   sfa_rule = "hist_tail_avg", hist_sfa = hist$sfa_gdp
+# )[, scenario := "IR shock: +150bp + transient GDP & fiscal pass-through (built on 3)"]
 
 
 # Bind & simulate

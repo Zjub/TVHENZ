@@ -623,14 +623,18 @@ ggplot(change_totals, aes(x = Year, y = change_pp, colour = Level)) +
     y = "Percentage points of GDP"
   )
 
-ggplot(change_totals[Year >= 1998], aes(x = Year, y = change_pp, fill = Level)) +
+ggplot(change_totals[Year >= 1998 & Year <= 2023], aes(x = Year, y = change_pp, fill = Level)) +
   geom_col(position = "dodge") +
-  geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_hline(yintercept = 0) +
   labs_e61(
     title = paste0("Change in spending vs ",base_year," baseline"),
     subtitle = paste0("Δ (% of GDP) relative to ", base_year),
-    y = "Percentage points of GDP"
+    y = "Percentage points of GDP",
+    sources = c("e61","OECD"),
+    footnotes = c("Spending shares based on the government level where final expenditure occurred.")
   ) +
   scale_y_continuous_e61() +
-  plab(c("Non-Federal","Federal"),x=c(1998,1998),y=c(3,5))
+  plab(c("Non-Federal","Federal"),x=c(1998,1998),y=c(3.5,5))
 
+
+save_e61("Spending_change_level.png",res=2)
