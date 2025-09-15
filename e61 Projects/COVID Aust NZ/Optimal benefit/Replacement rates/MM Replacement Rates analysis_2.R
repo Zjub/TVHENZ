@@ -1061,6 +1061,8 @@ if (hour_limit == 5){
 
 save_e61(paste0("Distribution_xineligible_only_hour_min",hour_limit,".pdf"))
 
+save_e61(paste0("Distribution_xineligible_only_hour_min",hour_limit,".png"),res=2)
+
 #################################################################################################
 ### VENN DIAGRAM 
 

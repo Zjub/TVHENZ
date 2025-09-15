@@ -56,7 +56,7 @@ colnames(Aus_toGDP)[2] <- "Government_level"
 Aus_toGDP[, Government_level := fifelse(Government_level %in% c("Local", "State"), 
                                       "Non-Federal", "Federal")]
 
-Aus_toGDP <- Aus_toGDP[, .(value = sum(value)), 
+Aus_toGDP <- Aus_toGDP[, .(value = sum(value,na.rm=TRUE)), 
                    by = .(COFOG_Area, Government_level, Year)]
 
 Aus_toGDP
@@ -389,17 +389,27 @@ save_e61("Consolidated_shares_contribution.png",res=2)
 
 contributions_both <-growth_consolidated[,.(COFOG_Area,cons_contribution = contribution)][growth_fed[,.(COFOG_Area,contribution)],on=.(COFOG_Area)]
 
-ggplot(melt(contributions_both,id.vars = "COFOG_Area"),aes(x=COFOG_Area,y=value*100,fill=variable)) + geom_col(position="dodge") + coord_flip() +
-  labs_e61(title = "Contribution to Expenditure growth 2012-2022",
+cont_growth_plot <- ggplot(melt(contributions_both,id.vars = "COFOG_Area"),aes(x=COFOG_Area,y=value*100,fill=variable)) + geom_col(position="dodge") + coord_flip() +
+  labs_e61(subtitle = "Contribution growth 2012-2022",
            y="%") +
   plab(c("Consolidated","Federal"),x=c(3.5,4.5),y=c(20,20)) +
   scale_y_continuous_e61(limits = c(0,50,10))
 
+cont_growth_plot
+
 save_e61("Budget_growth_cont.png",res=2)
 
-a
+cont_level <- consolidated_summary[,.(COFOG_Area,cons_share = share_2022)][federal_summary[,.(COFOG_Area,Fed_share = share_2022)],on=.(COFOG_Area)]
 
-b
+cont_level_plot <- ggplot(melt(cont_level,id.vars = "COFOG_Area"),aes(x=COFOG_Area,y=value*100,fill=variable)) + geom_col(position="dodge") + coord_flip() +
+  labs_e61(subtitle = "2022 Expenditure",
+           y="%") +
+  plab(c("Consolidated","Federal"),x=c(3.5,4.5),y=c(20,20)) +
+  scale_y_continuous_e61(limits = c(0,50,10))
+
+cont_level_plot
+
+save_e61("Fed_Consolidate_compare.png",cont_level_plot,cont_growth_plot,res=2)
 
 
 ### Generate Figure 8 from internal report, but with consolidated spending.
@@ -627,9 +637,9 @@ ggplot(change_totals[Year >= 1998 & Year <= 2023], aes(x = Year, y = change_pp, 
   geom_col(position = "dodge") +
   geom_hline(yintercept = 0) +
   labs_e61(
-    title = paste0("Change in spending vs ",base_year," baseline"),
+    title = "State spending takes over as driver of growth",
     subtitle = paste0("Δ (% of GDP) relative to ", base_year),
-    y = "Percentage points of GDP",
+    y = "",
     sources = c("e61","OECD"),
     footnotes = c("Spending shares based on the government level where final expenditure occurred.")
   ) +
@@ -638,3 +648,9 @@ ggplot(change_totals[Year >= 1998 & Year <= 2023], aes(x = Year, y = change_pp, 
 
 
 save_e61("Spending_change_level.png",res=2)
+
+change_totals[year_var %in% c(2008,2009,2010,2023)]
+
+
+
+

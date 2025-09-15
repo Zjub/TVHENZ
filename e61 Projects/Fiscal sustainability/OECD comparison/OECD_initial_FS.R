@@ -118,11 +118,12 @@ p_comp <- ggplot(plot_df, aes(year, index, colour = series)) +
   geom_line() +
   labs_e61(title = "Low spending countries catchup",
        x = NULL, y = "1999 = 1", sources = c("e61","OECD")) +
-  plab(c("Australia","Low Spenders","High Spenders"),y=c(1.21,1.17,1.13),x = c(1999,1999,1999))
+  plab(c("Australia","High Spenders","Low Spenders"),y=c(1.22,1.12,1.17),x = c(1999,1999,1999)) +
+  scale_y_continuous_e61(limits=c(0.9,1.3,0.1))
 
 print(p_comp)
 
-save_e61("Cross_country_spend.png",res=2)
+save_e61("Cross_country_spend.png",res=2,auto_scale = FALSE)
 
 ### SC exercise
 synth_result <- OECD_forsynth %>%
@@ -348,6 +349,33 @@ ggplot(donor_weights2, aes(x = reorder(unit, weight), y = weight)) +
   labs(x = "Donor Country", y = "Weight", 
        title = "Weights of Donor Countries in Synthetic Australia (age adj)")
 
+
+## Make own plot
+# 1) Extract the series that plot_trends() uses
+trend_df <- tidysynth::grab_synthetic_control(synth_result2, placebo = FALSE) %>%
+  transmute(year = time_unit,
+            Observed  = real_y,
+            Synthetic = synth_y)
+
+# 2) Long form for ggplot
+trend_long <- trend_df %>%
+  pivot_longer(c(Observed, Synthetic), names_to = "series", values_to = "value")
+
+# 3) Your custom plot
+ggplot(trend_long, aes(x = year, y = value, linetype = series)) +
+  geom_vline(xintercept = 2007, linetype = "dashed") +
+  geom_line(size = 1) +
+  labs(title = "Australia: Actual vs Synthetic",
+       x = "Year", y = "Index", linetype = "") +
+  theme_e61(legend = "bottom")  # or theme_minimal(), etc.
+
+# 4) (Optional) Gap plot (Actual − Synthetic)
+gap_df <- trend_df %>% mutate(gap = Observed - Synthetic)
+ggplot(gap_df, aes(x = year, y = gap)) +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_line(size = 1) +
+  labs(title = "Synthetic Control Gap", x = "Year", y = "Observed − Synthetic") +
+  theme_e61(legend = "bottom")
 
 
 

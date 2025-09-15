@@ -2,8 +2,8 @@
 ## Regression-based Shapley for Govt Spending as % of GDP (AU, ABS)
 ## Decompose changes in spend/GDP into age-group contributions
 ## with diagnostics so we don't attribute all changes to ageing.
-## Last update: 19/08/2025
-## Note: This version has a typo somewhere in it - I suspect I need more subseting on the national accounts figures (think consumption is double counted) ## Note this is the current version
+## Last update: 15/09/2025
+## Note: This is the fixed and final version
 ## ======================================================================
 
 # -------------------- Packages --------------------

@@ -378,6 +378,7 @@ ggplot(long_dist, aes(x = as.factor(quantile_eq_hhinc_pre), y = net_RR*100, weig
   coord_flip()
 
 save_e61(paste0("Box_EI_RR_",hour_limit,".pdf"),pad_width = 1)
+save_e61(paste0("Box_EI_RR_",hour_limit,".png"),pad_width = 1,res=2)
 
 
 ggplot(long_dist, aes(x = as.factor(quantile_current_net_income), y = net_RR*100, weight = normalized_weight2, color = source)) +
