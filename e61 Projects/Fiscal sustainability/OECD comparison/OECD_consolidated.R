@@ -651,6 +651,6 @@ save_e61("Spending_change_level.png",res=2)
 
 change_totals[year_var %in% c(2008,2009,2010,2023)]
 
-
+ggplot(long_totals[Year >= 2000],aes(x=Year,y=value,colour=Level)) + geom_line()
 
 

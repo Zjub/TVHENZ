@@ -7,6 +7,7 @@ library(data.table)
 library(vars)       # For VAR models
 library(tseries)    # For stationarity tests
 library(ggplot2)
+library(readabs)
 
 # Load and prepare GDP data
 a <- read_abs("5206.0")
