@@ -81,6 +81,10 @@ ggplot(exp_dt,aes(x=fin_year,y=real/1000,fill=cofog_group_name)) + geom_col(posi
 
 cost_defence <- consolidated_expenses_dt[,.(nominal = sum(gov_expenses_mn,na.rm=TRUE),real = sum(gov_expenses_mn,na.rm=TRUE)),by=.(fin_year,etf_class_name)]
 
+ggplot(cost_defence,aes(x=fin_year,y=nominal,fill=etf_class_name)) + geom_col() + theme_e61(legend = "bottom")
+
+ggplot(cost_defence,aes(x=fin_year,y=nominal,fill=etf_class_name)) + geom_col(position = "fill") + theme_e61(legend = "bottom")
+
 cost_defence[,agg_expense := fcase(etf_class_name %in% c("Capital transfer expenses","Current transfer expenses"),"Transfers",
                                  default = "Capital and labour expenses")]
 
