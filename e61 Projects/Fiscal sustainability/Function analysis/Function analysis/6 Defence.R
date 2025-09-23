@@ -1,4 +1,5 @@
-## Last update:  15/09/2025
+## First:  15/09/2025
+## Last update:  23/09/2025
 ## Author:  Matt Nolan
 ## Last update person:  Matt Nolan
 # Creating defence plots for report.
@@ -32,7 +33,7 @@ gc()
 
 ## Import data ----
 
-work = TRUE
+work = FALSE
 
 if (work == TRUE){
   consolidate_dt <- read_csv("C:/Users/MattNolan/Git/TVHENZ/e61 Projects/Fiscal sustainability/Function analysis/Data/abs_gfs_data_clean.csv")
@@ -93,5 +94,35 @@ cost_defence2 <- cost_defence[,.(nominal = sum(nominal,na.rm=TRUE),real = sum(re
 ggplot(cost_defence2,aes(x=fin_year,y=nominal,fill=agg_expense)) + geom_col() + theme_e61(legend = "bottom")
 
 
+## Look at defence as % of GDP from this measure - and then what it would look like excluding superannuation
+
+
+
+## Our world in data data
+
+if (work == TRUE){
+  sipri_dt <- read_csv("C:/Users/MattNolan/Git/TVHENZ/e61 Projects/Fiscal sustainability/Function analysis/Data/military-spending-as-a-share-of-gdp-sipri.csv")
+} else{
+  sipri_dt <- read_csv("~/GitHub/TVHENZ/e61 Projects/Fiscal sustainability/Function analysis/Data/military-spending-as-a-share-of-gdp-sipri.csv")
+}
+
+setDT(sipri_dt)
+
+unique(sipri_dt$Code)
+
+sipri_dt[Code == "CHN"]
+
+AUS_defence <- sipri_dt[Code %in% c("AUS","USA","GBR","CHN")]
+colnames(AUS_defence) <- c("Country","Code","Year","value","region")
+
+ggplot(AUS_defence[Year >= 1990],aes(x=Year,y=value,colour=Code)) + geom_line() +
+  scale_y_continuous_e61(limits = c(0,8,2)) +
+  labs_e61(title = "Defence spending",
+           y = "% GDP",
+           sources = c("SIPRI","e61"),
+           footnotes = c("Defence characterisation based on NATO definitions.")) +
+  plab(c("Australia","China","United Kingdom","United States"),x=rep(1995,4),y=c(5.5,4.5,6.5,7.5))
+
+save_e61("SIPRI_defence.png",res=2)
 
 
