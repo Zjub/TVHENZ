@@ -144,7 +144,7 @@ split_plot_data[, Government_level := factor(Government_level,
 ggplot(split_plot_data[!Country %in% c("Italy","Czech Republic","Hungary","Slovenia","Spain","Iceland","Estonia")], aes(x = Country, y = value*100, fill = Government_level)) +
   geom_col() +
   coord_flip() +
-  labs_e61(title = "Role of consolidation",
+  labs_e61(title = "Expenditure: Cross-country (2022)",
            subtitle = "",
            footnotes = c("Dark blue is spending by Federal Govt % GDP. Light blue is additional spending attributed to non-Federal entities."),
            y="")
