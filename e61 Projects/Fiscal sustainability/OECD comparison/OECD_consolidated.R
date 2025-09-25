@@ -143,11 +143,17 @@ split_plot_data[, Government_level := factor(Government_level,
 ## Overall plot
 ggplot(split_plot_data[!Country %in% c("Italy","Czech Republic","Hungary","Slovenia","Spain","Iceland","Estonia")], aes(x = Country, y = value*100, fill = Government_level)) +
   geom_col() +
+  geom_col(
+    data = split_plot_data[Country == "Australia"],
+    aes(x = Country, y = value*100, group = Government_level),
+    fill = NA, colour = "gold", linewidth = 2, inherit.aes = TRUE
+  ) +
   coord_flip() +
   labs_e61(title = "Expenditure: Cross-country (2022)",
+           y = "% NGDP",
            subtitle = "",
-           footnotes = c("Dark blue is spending by Federal Govt % GDP. Light blue is additional spending attributed to non-Federal entities."),
-           y="")
+           footnotes = c("Dark blue is spending by Federal Govt % GDP. Light blue is additional spending attributed to non-Federal entities.")) +
+  plab(c("Non-Federal","Federal"),x=c(1.5,3.5),y=c(40,40))
 
 save_e61("Consolidation_cc.png",res=2)
 

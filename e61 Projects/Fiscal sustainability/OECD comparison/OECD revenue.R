@@ -118,13 +118,28 @@ total_rev_int[, country := factor(country,
                                     levels = total_order)]
 total_rev_int[, level := factor(level,levels = c("Central","State","Local"))]
 
-## Overall plot
-ggplot(total_rev_int[!country %in% c("Italy","Czech Republic","Hungary","Slovenia","Spain","Iceland","Estonia")], aes(x = country, y = value, fill = level)) +
-  geom_col() +
-  coord_flip() +
-  labs_e61(title = "Rev: Cross-country (2022)",
-           subtitle = "",
-           footnotes = c("Dark blue is spending by Federal Govt % GDP. Light blue is additional spending attributed to non-Federal entities."),
-           y="")
+total_rev_int[level == "Central", level := "Federal"]
 
-# save_e61("Consolidation_cc_rev.png",res=2)
+total_rev_int[level %in% c("State", "Local"), level := "Non-Federal"]
+
+total_rev_int <- total_rev_int[, .(value = sum(value, na.rm = TRUE)), 
+                                by = .(country, level)]
+
+total_rev_int[, level := factor(level, levels = c("Non-Federal","Federal"))]
+
+## Overall plot
+ggplot(total_rev_int[country %in% c("France","Finland","Austria","Greece","Belgium","Sweden","United Kingdom","Denmark","Luxembourg","Portugal","Slovak Republic","Netherlands","United States","Norway","Australia","Israel","Lithuania","Switzerland","Ireland")], aes(x = country, y = value, fill = level)) +
+  geom_col() +
+  geom_col(
+    data = total_rev_int[country == "Australia"],
+    aes(x = country, y = value, group = level),
+    fill = NA, color = "gold", linewidth = 2, inherit.aes = TRUE
+  ) +
+  coord_flip() +
+  labs_e61(title = "Revenue: Cross-country (2022)",
+           y = "% NGDP",
+           subtitle = "",
+           footnotes = c("Dark blue is spending by Federal Govt % GDP. Light blue is additional spending attributed to non-Federal entities.")) +
+  plab(c("Non-Federal","Federal"),x=c(1.5,3.5),y=c(40,40))
+
+save_e61("Consolidation_cc_rev.png",res=2)

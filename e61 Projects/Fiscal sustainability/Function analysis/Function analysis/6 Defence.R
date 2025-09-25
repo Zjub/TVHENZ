@@ -126,3 +126,6 @@ ggplot(AUS_defence[Year >= 1990],aes(x=Year,y=value,colour=Code)) + geom_line() 
 save_e61("SIPRI_defence.png",res=2)
 
 
+### Non-employee
+
+consolidated_expenses_dt[etf_class_name == "Non-employee expenses"]

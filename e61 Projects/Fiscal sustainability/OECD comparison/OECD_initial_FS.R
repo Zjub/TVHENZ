@@ -21,6 +21,7 @@ library(tidysynth)
 
 year_data <- 1999 # Find countries available from a given year.
 outliers <- c("Ireland") # Remove countries
+shift_au <- "HALF"   # "NONE", "FORWARD", or "HALF" - Australia's FY ends half way through the given year, so none keeps the data as is, forward shifts it forward a full year, the half splits the years and averages.
 
 ### Initial exercise ----
 
@@ -36,10 +37,33 @@ setDT(OECD_dt)
 
 OECD_dt[,.(country,`2022`)][order(`2022`)]
 
-
 OECD_long_dt <- melt(OECD_dt,id.vars = "country",variable.name = "year",value.name="value")[value > 0]
 OECD_long_dt$year <-as.numeric(as.character(OECD_long_dt$year))
 OECD_long_dt$group <- ifelse(OECD_long_dt$country == "Australia", "Australia", "Other")
+
+
+## Choose whether to shift Australia forward a year or not to deal with differential FY
+
+if (identical(shift_au, "FORWARD")) {
+  # Treat AU FY(t-1/t) as calendar year t  --> shift AU +1 year
+  OECD_long_dt[country == "Australia", year := year + 1L]
+  # Optional: trim any AU years now beyond others' max
+  max_year <- OECD_long_dt[country != "Australia", max(year, na.rm = TRUE)]
+  OECD_long_dt <- OECD_long_dt[!(country == "Australia" & year > max_year)]
+  
+} else if (identical(shift_au, "HALF")) {
+  # Calendar-year AU(Y) = 0.5*FY(Y) + 0.5*FY(Y+1)
+  OECD_long_dt[country == "Australia",
+               value := 0.5*value + 0.5*shift(value, type = "lag"),
+               by = country]
+  # Drop trailing AU year that lacks a lead
+  OECD_long_dt <- OECD_long_dt[!(country == "Australia" & is.na(value))]
+  # (Years stay the same; values are blended)
+}
+
+
+##
+
 
 ggplot(OECD_long_dt[year > 1996], aes(x = year, y = value, colour = group, group = country)) +
   geom_line() +
@@ -351,25 +375,30 @@ ggplot(donor_weights2, aes(x = reorder(unit, weight), y = weight)) +
 
 
 ## Make own plot
-# 1) Extract the series that plot_trends() uses
 trend_df <- tidysynth::grab_synthetic_control(synth_result2, placebo = FALSE) %>%
   transmute(year = time_unit,
             Observed  = real_y,
             Synthetic = synth_y)
 
-# 2) Long form for ggplot
 trend_long <- trend_df %>%
   pivot_longer(c(Observed, Synthetic), names_to = "series", values_to = "value")
 
-# 3) Your custom plot
-ggplot(trend_long, aes(x = year, y = value, linetype = series)) +
+# Plot of the levels
+ggplot(trend_long, aes(x = year, y = value, colour = series)) +
   geom_vline(xintercept = 2007, linetype = "dashed") +
-  geom_line(size = 1) +
-  labs(title = "Australia: Actual vs Synthetic",
-       x = "Year", y = "Index", linetype = "") +
-  theme_e61(legend = "bottom")  # or theme_minimal(), etc.
+  geom_line() +
+  labs_e61(title = "Australia: Actual vs Synthetic",
+       x = "Year", y = "Expenditure/GDP Index", linetype = "",
+       sources = c("OECD","e61"),
+       footnotes = c("An index of nominal government expenditure to nominal GDP, relative to its 1999 level.",
+                     "Australia's Fiscal Year ends in June rather than December. For this reason the Australian data is averaged across consecutive years.")) +
+  geom_hline(yintercept = 1)  +
+  plab(c("Synthetic","Observed"),x=c(2000,2000),y=c(1.07,1.13)) +
+  scale_y_continuous_e61(limits = c(0.9,1.3,0.1))
 
-# 4) (Optional) Gap plot (Actual − Synthetic)
+save_e61("SC_Australia.png",res=2)
+
+# Gap plot (Actual − Synthetic)
 gap_df <- trend_df %>% mutate(gap = Observed - Synthetic)
 ggplot(gap_df, aes(x = year, y = gap)) +
   geom_hline(yintercept = 0, linetype = "dashed") +
