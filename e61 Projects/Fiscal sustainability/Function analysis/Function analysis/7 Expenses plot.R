@@ -143,11 +143,15 @@ ggplot(exp_NEE_shares,aes(x=fin_year,y=share,fill=etf_subclass_name)) +
 
 save_e61("Consolidated_expenses_non-EE.png",res=2)
 
-exp_NEE_shares[fin_year %in% c(1999,2024)]
+cont_data_NEE <- exp_NEE_shares[fin_year %in% c(1999,2024)]
 
 ## Work out payment if the share hadn't changed, and what that would mean for the change in share for the total (i.e. is this all due to payments for household services?)
 
-XXX
+cont_data_NEE
+
+exp_shares_broad[fin_year %in% c(1999,2024)]
+
+XXX [Calculate share changes] 
 
 
 exp_EE_dt <- consolidated_expenses_dt[etf_class_name == "Other employee expenses"][,.(nominal = sum(gov_expenses_mn,na.rm=TRUE),real = sum(gov_expenses_mn_real_1112,na.rm=TRUE)),by=.(etf_subclass_name,fin_year)]

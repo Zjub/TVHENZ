@@ -74,6 +74,8 @@ ggplot(dt[year >= 2002],aes(x=year,y=Revenue,colour=level)) + geom_line() +
 
 save_e61("Revenue_split.png",res=2)
 
+dt[year == 2014]
+
 dt[,gap := Expenses - Revenue]
 
 ggplot(dt[year >= 1972],aes(x=year,y=gap,colour=level)) + geom_line() + 
