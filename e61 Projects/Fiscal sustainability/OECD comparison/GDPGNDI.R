@@ -54,6 +54,13 @@ ggplot(dt[date >= as.Date("2000-01-01")],aes(x=date,y=index,colour=series)) + ge
 
 save_e61("RNNDIvGDP.png",res=2,auto_scale = FALSE) 
 
+dt[date %in% c("2025-06-01"),.(index25 = index,series)]
+
+compare_dt <- dt[date %in% c("2025-06-01"),.(index25 = index,series)][dt[date %in% c("2019-12-01"),.(index19 = index,series)],on=.(series)]
+compare_dt[,":=" (growth = index25/index19-1,annualised = (index25/index19)^(1/5.5)-1)]
+
+compare_dt
+
 data_dt2 <- a[
   date >= as.Date("1979-01-01") & 
     series %in% c(

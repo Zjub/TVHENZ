@@ -160,4 +160,5 @@ print(p_g10)
 
 
 #### Add the participation and GDP plots here - they are currently saved with the other work I've done that used them.
+# GDP, NNDI - this has already been saved in a separate file in the OECD folder.
 

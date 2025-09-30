@@ -77,13 +77,13 @@ ggplot(melt(wide[cofog_div_name != "Total",.(cofog_div_name,contribution = contr
 save_e61("ABS_contribution_growth.png",res=2)
 
 ## Check the post 1999 figure
-# 
-# dt2 <- consolidated_expenses_dt[fin_year %in% c(1999,2024)][,.(nom_spend = sum(gov_expenses_mn,na.rm = TRUE)),by=.(cofog_div_name,fin_year)]
-# 
-# totals2 <- dt2[, .(nom_spend = sum(nom_spend)), by = fin_year][
-#   , cofog_div_name := "Total"]
-# 
-# dt2 <- rbind(dt2, totals2)
+
+dt2 <- consolidated_expenses_dt[fin_year %in% c(1999,2002,2024)][,.(nom_spend = sum(gov_expenses_mn,na.rm = TRUE)),by=.(cofog_div_name,fin_year)]
+
+totals2 <- dt2[, .(nom_spend = sum(nom_spend)), by = fin_year][
+  , cofog_div_name := "Total"]
+
+dt2 <- rbind(dt2, totals2)
 # 
 # wide2 <- dcast(dt2, cofog_div_name ~ fin_year, value.var = "nom_spend")
 # colnames(wide2) <- c("cofog_div_name","a2014","a2024")
@@ -94,6 +94,51 @@ save_e61("ABS_contribution_growth.png",res=2)
 # wide2[,size := a2024/wide2[cofog_div_name == "Total"]$a2024]
 # 
 # wide2
+
+# Manually make a %GDP
+
+GDP <- read_abs("5206.0")
+setDT(GDP)
+
+GDP <- GDP[table_no == "5206001_key_aggregates"]
+
+unique(GDP$series)
+
+# Filter for the required series: GDP, Terms of Trade, and RNGDI
+GDP_dt <- GDP[
+  date >= as.Date("1980-01-01") & 
+    series %in% c(
+      "Gross domestic product: Current prices ;"
+    ) & 
+    series_type == "Original"
+]
+
+GDP_dt <- GDP_dt[,.(date,month = as.numeric(month(date)),year = as.numeric(year(date)),value)]
+GDP_dt[,fin_year := fcase(month < 7, year - 1,
+                          default = year)]
+
+GDP_dt[,.N,by=.(fin_year)]
+
+GDP_dt[fin_year == 2023]
+GDP_dt[fin_year == 2024]
+
+GDP_fin_year <- GDP_dt[,.(GDP = sum(value)),by=.(fin_year)]
+
+
+dt2_GDP <- GDP_fin_year[dt2,on=.(fin_year)][,prop := nom_spend/GDP]
+
+dt2_GDP
+
+wideGDP <- dcast(dt2_GDP, cofog_div_name ~ fin_year, value.var = "prop")
+colnames(wideGDP) <- c("cofog_div_name","p1999","p2002","p2024")
+
+wideGDP[,change := p2024 - p2002]
+
+wideGDP[,contribution := change/wideGDP[cofog_div_name == "Total"]$change]
+wideGDP[,size := p2024/wideGDP[cofog_div_name == "Total"]$p2024]
+
+wideGDP
+
 
 ## Suspect that people have added transactions in non-financial assets into expenses.
 # 
