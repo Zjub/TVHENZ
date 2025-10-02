@@ -1,3 +1,5 @@
+## Main example file for the ETR of bracket creep
+
 #install.packages("remotes")
 #remotes::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
 
@@ -81,6 +83,8 @@ df <- tibble(
   etr_nominal = etr_function(income),
   etr_deflated = etr_function(income * deflator)
 )
+
+setDT(df)
 
 real_income_growth <- 0.11
 avg_earnings_25 <- 100000
@@ -178,6 +182,19 @@ ggplot(df, aes(x = income/1000)) +
     size = 2)
 
 save_e61(paste0("Bracket_creep_",save_vec,".png"),res=2,save_data = TRUE)
+
+
+df[,diff := etr_deflated - etr_nominal]
+df[,diff_doll := diff*income]
+
+
+ggplot(df,aes(x=income/1000,y=diff)) + geom_line()
+
+ggplot(df,aes(x=income/1000,y=diff_doll)) + geom_line()
+
+# change_dt <- melt(df[,.(income,diff,diff_doll)],id.vars = "income")
+#
+# ggplot(change_dt,aes(x=income/1000,y=value)) + geom_line() + facet_wrap(~variable)
 
 
 

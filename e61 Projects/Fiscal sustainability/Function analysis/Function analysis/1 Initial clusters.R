@@ -197,4 +197,67 @@ hc_feat <- hclust(dist_feat, method = "ward.D2")
 fviz_dend(hc_feat, k = 7, horiz = TRUE, rect = TRUE, rect_fill = TRUE,
           main = "Clustering on time series feature vectors")
 
+##### Ask ChatGPT to help with suggestions to make this more readable.
+# --- A) Classic dendrogram (features-based) ---
+plot_feat_classic <- fviz_dend(
+  hc_feat, k = 7, horiz = TRUE, rect = TRUE, rect_fill = TRUE,
+  main = "Hierarchical clustering (feature vectors)",
+  hang = -1, cex = 0.6, lwd = 0.4
+)
 
+# --- B) Circular dendrogram (same clusters, different layout) ---
+plot_feat_circular <- fviz_dend(
+  hc_feat, k = 7, type = "circular", rect = TRUE, rect_fill = TRUE,
+  main = "Circular dendrogram (feature vectors)",
+  cex = 0.6, lwd = 0.4
+)
+
+# --- C) Cluster heatmap ---
+# Use the wide matrix (rows = categories, cols = years). Scale by row to emphasise patterns.
+mat_for_heatmap <- as.matrix(wide_exp_dt)
+mat_for_heatmap <- t(scale(t(mat_for_heatmap)))  # scale within each category
+
+# Row clustering: use the features-based tree (hc_feat) for consistency
+# Column clustering: build a sensible year dendrogram (correlation/ward)
+hc_cols <- hclust(as.dist(1 - cor(mat_for_heatmap, use = "pairwise.complete.obs")), method = "ward.D2")
+
+pheatmap(
+  mat_for_heatmap,
+  cluster_rows = hc_feat,
+  cluster_cols = hc_cols,
+  cutree_rows  = 7,           # show row cluster bands
+  show_rownames = TRUE,
+  show_colnames = TRUE,
+  color = colorRampPalette(c("#16396B", "white", "#B81D13"))(101),
+  border_color = NA,
+  main = "Cluster heatmap (rows: categories, cols: years)"
+)
+
+# --- D) PCA scatter coloured by cluster (features space) ---
+# Use the same feature matrix used to build hc_feat
+feat_df <- as.data.frame(scale(feature_mat))       # scale features for PCA
+pca_res <- FactoMineR::PCA(feat_df, graph = FALSE) # PCA on features
+
+pc_dt <- data.table(
+  name    = rownames(feat_df),
+  PC1     = pca_res$ind$coord[, 1],
+  PC2     = pca_res$ind$coord[, 2],
+  cluster = factor(cutree(hc_feat, k = 5))
+)
+
+plot_pca <- ggplot(pc_dt, aes(PC1, PC2, colour = cluster)) +
+  geom_point(size = 2, alpha = 0.9) +
+  ggrepel::geom_text_repel(aes(label = name), size = 1.2, show.legend = FALSE) +
+  labs_e61(
+    title = "Hierarchical clusters",
+    x = "PC1", #sprintf("PC1 (%.1f%%)", 100 * pca_res$eig[1, 2]),
+    y = "PC2", #sprintf("PC2 (%.1f%%)", 100 * pca_res$eig[2, 2])
+    sources = c("ABS","e61"),
+    footnotes = c("Figure shows the first two principal components of time-series features for each expenditure category, with points coloured by their hierarchical cluster membership. Labels indicate expenditure categories. This visual is for illustration only: clusters were estimated on the full feature set, not just the two dimensions shown here.")
+  )
+
+# --- E) Arrange a compact gallery for the report (optional) ---
+gridExtra::grid.arrange(plot_feat_classic, plot_feat_circular, ncol = 2)
+print(plot_pca)   # heatmap prints itself
+
+save_e61("PCA_cluster_forreport.png",res=2)

@@ -162,3 +162,20 @@ print(p_g10)
 #### Add the participation and GDP plots here - they are currently saved with the other work I've done that used them.
 # GDP, NNDI - this has already been saved in a separate file in the OECD folder.
 
+
+### Income tax plot
+
+Income_tax <- read_excel("Income_tax.xlsx")
+setDT(Income_tax)
+
+ggplot(melt(Income_tax[year >= 1971,.(year,Ratio_cash_total,Ratio_cash_per)],id.vars = "year"),aes(x=year,y=value*100,colour=variable)) + 
+  geom_line() + 
+  geom_vline(xintercept = 2025,linetype = "dashed") +
+  plab(c("Total","Personal"),x=c(1970,1970),y=c(17,15.5)) +
+  labs_e61(title = "Record high income tax",
+           y = "% NGDP",
+           x= "",
+           sources = c("PBO","e61"),
+           footnotes = c("Tax receipts from cash accounts."))
+
+save_e61("Income_tax_GDP.png",res=2,auto_scale = FALSE)
