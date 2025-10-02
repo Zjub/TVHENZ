@@ -20,6 +20,13 @@ library(Hmisc)
 library(tidysynth)
 library(readabs)
 
+### Conditions
+
+shift_au <- "HALF"   # "NONE", "FORWARD", or "HALF" - Australia's FY ends half way through the given year, so none keeps the data as is, forward shifts it forward a full year, the half splits the years and averages.
+
+
+### Data
+
 
 Consol_toG <- read_excel("table22-consolidated-cofog-expenditure-spent-by-approach.xlsx", 
                          sheet = "COFOGexp_%oftotal", skip = 1)
@@ -57,4 +64,99 @@ save_e61("Economic_affairs_type.png",res=2)
 
 EA_dt <- Consol_toGDP[`COFOG Area` == "Economic Affairs"][,':=' (ISO = NULL, `COFOG Code` = NULL, `Government level code` = NULL,`1995` = NULL,`1996` = NULL,`1997` = NULL)]
 
-melt(EA_dt,id.vars = c("Country",colnames(EA_dt[3])),variable.name = "Year",value.name = "value")
+EA_CC_dt <- melt(EA_dt,id.vars = c("Country",colnames(EA_dt[,2]),colnames(EA_dt[,3])),variable.name = "Year",value.name = "value")
+
+EA_CC_dt[,Year := as.numeric(Year)+1997]
+
+EA_CC_dt <- EA_CC_dt[,.(value = sum(value,na.rm=TRUE)),by=.(Country,Year)]
+
+if (identical(shift_au, "FORWARD")) {
+  # Treat AU FY(t-1/t) as calendar year t  --> shift AU +1 year
+  EA_CC_dt[Country == "Australia", year := year + 1L]
+  # Optional: trim any AU years now beyond others' max
+  max_year <- EA_CC_dt[Country != "Australia", max(year, na.rm = TRUE)]
+  EA_CC_dt <- EA_CC_dt[!(Country == "Australia" & year > max_year)]
+  
+} else if (identical(shift_au, "HALF")) {
+  # Calendar-year AU(Y) = 0.5*FY(Y) + 0.5*FY(Y+1)
+  EA_CC_dt[Country == "Australia",
+               value := 0.5*value + 0.5*shift(value, type = "lag"),
+               by = Country]
+  # Drop trailing AU year that lacks a lead
+  EA_CC_dt <- EA_CC_dt[!(Country == "Australia" & is.na(value))]
+  # (Years stay the same; values are blended)
+}
+
+
+ggplot(EA_CC_dt,aes(x=Year,y=value,group=Country))+geom_line()
+
+# Generate average based on position in 1999 quartiles.
+
+min_years <- 5  # require at least 5 years of 1990s data to classify (tweak if needed)
+
+class_base <- EA_CC_dt[Country != "Australia" & Year %between% c(1998, 2008)]
+class_stats <- class_base[
+  , .(value_mean_90s = mean(value, na.rm = TRUE),
+      n_years = sum(!is.na(value))),
+  by = Country
+][n_years >= min_years]
+
+q1 <- quantile(class_stats$value_mean_90s, 0.25, na.rm = TRUE)
+q3 <- quantile(class_stats$value_mean_90s, 0.75, na.rm = TRUE)
+
+class_stats[, tier := fifelse(value_mean_90s <= q1, "low",
+                              fifelse(value_mean_90s >= q3, "high", NA_character_))]
+classified <- class_stats[!is.na(tier)]
+
+high_countries <- classified[tier == "high", Country]
+low_countries  <- classified[tier == "low",  Country]
+
+period_99p <- EA_CC_dt[Year >= 1999]
+
+avg_index_by_group <- function(countries) {
+  period_99p[Country %in% countries, mean(index, na.rm = TRUE)]
+}
+
+avg_high_index <- avg_index_by_group(high_countries)
+avg_low_index  <- avg_index_by_group(low_countries)
+avg_aus_index  <- period_99p[Country == "Australia", mean(index, na.rm = TRUE)]
+
+cat("High spenders (top quartile, 1990s):\n  ",
+    paste(sort(high_countries), collapse = ", "), "\n",
+    "Average index (1999+): ", round(avg_high_index, 3), "\n\n", sep = "")
+
+cat("Low spenders (bottom quartile, 1990s):\n  ",
+    paste(sort(low_countries), collapse = ", "), "\n",
+    "Average index (1999+): ", round(avg_low_index, 3), "\n\n", sep = "")
+
+cat("Australia average index (1999+): ", round(avg_aus_index, 3), "\n\n", sep = "")
+
+# --- 3) Build 1999+ time series for plot: mean 'index' by year --------------------
+series_high <- period_99p[Country %in% high_countries,
+                          .(index = mean(value, na.rm = TRUE)), by = Year][, series := "High"]
+series_low  <- period_99p[Country %in% low_countries,
+                          .(index = mean(value, na.rm = TRUE)), by = Year][, series := "Low"]
+series_aus  <- period_99p[Country == "Australia",
+                          .(index = mean(value, na.rm = TRUE)), by = Year][, series := "Australia"]
+
+plot_df <- rbindlist(list(series_high, series_low, series_aus), use.names = TRUE)
+setorder(plot_df, series, Year)
+
+# --- 4) Plot ----------------------------------------------------------------------
+p_comp <- ggplot(plot_df, aes(Year, index*100, colour = series)) +
+  # shaded areas first so lines plot on top
+  annotate("rect", xmin = 2008.5, xmax = 2010.5, ymin = -Inf, ymax = Inf,
+           alpha = 0.2, fill = "grey") +
+  annotate("rect", xmin = 2019.5, xmax = 2021.5, ymin = -Inf, ymax = Inf,
+           alpha = 0.2, fill = "grey") +
+  geom_line() +
+  labs_e61(title = "Economic Affairs across countries",
+           x = NULL, y = "% NGDP", sources = c("e61","OECD"),
+           footnotes = c("High and low spending countries are based on the top and bottom quartile of spenders on this function in the decade to 2008.","As Australia has a different financial year all values are an average of two consecutive years.")) +
+  plab(c("Australia","High","Low"),x=c(1999,1999,1999),y=c(5.2,7,3.2))
+
+print(p_comp)
+
+
+
+

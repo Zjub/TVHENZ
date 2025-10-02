@@ -33,7 +33,7 @@ gc()
 
 ## Import data ----
 
-work = FALSE
+work = TRUE
 
 if (work == TRUE){
   consolidate_dt <- read_csv("C:/Users/MattNolan/Git/TVHENZ/e61 Projects/Fiscal sustainability/Function analysis/Data/abs_gfs_data_clean.csv")
@@ -87,18 +87,60 @@ ggplot(cost_defence,aes(x=fin_year,y=nominal,fill=etf_class_name)) + geom_col() 
 ggplot(cost_defence,aes(x=fin_year,y=nominal,fill=etf_class_name)) + geom_col(position = "fill") + theme_e61(legend = "bottom")
 
 cost_defence[,agg_expense := fcase(etf_class_name %in% c("Capital transfer expenses","Current transfer expenses"),"Transfers",
+                                   etf_class_name %in% c("Other employee expenses","Superannuation expenses"), "Labour expenses",
+                                   etf_class_name %in% c("Depreciation","Non-employee expenses"),etf_class_name,
                                  default = "Capital and labour expenses")]
 
-cost_defence2 <- cost_defence[,.(nominal = sum(nominal,na.rm=TRUE),real = sum(real,na.rm=TRUE)),by=.(fin_year,agg_expense)]
+cost_defence[,agg_expense := factor(agg_expense,levels = c("Transfers","Depreciation","Non-employee expenses","Labour expenses"))]
 
-ggplot(cost_defence2,aes(x=fin_year,y=nominal,fill=agg_expense)) + geom_col() + theme_e61(legend = "bottom")
+cost_defence2 <- cost_defence[, .(
+  nominal = sum(nominal, na.rm = TRUE),
+  real    = sum(real, na.rm = TRUE)
+), by = .(fin_year, agg_expense)]
 
+cost_defence2[, total_nominal := sum(nominal), by = fin_year]
+cost_defence2[, share_nominal := nominal / total_nominal]
+
+ggplot(cost_defence2, aes(x = fin_year, y = share_nominal*100, fill = agg_expense)) +
+  geom_col() +
+  labs_e61(title = "Defence expenses", y = "Share of total", x = NULL) +
+  plab(c("Transfers","Depreciation","Non-employee","Employee"),y=c(120,110,120,110),x=c(1999,1999,2010,2010)) +
+  scale_y_continuous_e61(limits = c(0,125,25),add_space = TRUE)
+
+save_e61("Defence_exp.png",res=2,auto_scale = FALSE)
 
 ## Look at defence as % of GDP from this measure - and then what it would look like excluding superannuation
 
+GDP <- read_abs("5206.0")
+setDT(GDP)
+
+GDP <- GDP[table_no == "5206001_key_aggregates"]
+
+unique(GDP$series)
+
+# Filter for the required series: GDP, Terms of Trade, and RNGDI
+GDP_dt <- GDP[
+  date >= as.Date("1980-01-01") & 
+    series %in% c(
+      "Gross domestic product: Current prices ;"
+    ) & 
+    series_type == "Original"
+]
+
+GDP_dt <- GDP_dt[,.(date,month = as.numeric(month(date)),year = as.numeric(year(date)),value)]
+GDP_dt[,fin_year := fcase(month < 7, year - 1,
+                          default = year)]
+
+GDP_dt[,.N,by=.(fin_year)]
+
+GDP_fin_year <- GDP_dt[,.(GDP = sum(value)),by=.(fin_year)]
+
+def_GDP <- GDP_fin_year[exp_dt[cofog_group_code == "029"],on=.(fin_year)][,prop := nominal/GDP]
+
+cost_defence2[agg_expense == "Non-employee expenses"]
 
 
-## Our world in data data
+##### Our world in data data
 
 if (work == TRUE){
   sipri_dt <- read_csv("C:/Users/MattNolan/Git/TVHENZ/e61 Projects/Fiscal sustainability/Function analysis/Data/military-spending-as-a-share-of-gdp-sipri.csv")

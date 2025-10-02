@@ -119,11 +119,7 @@ GDP_dt[,fin_year := fcase(month < 7, year - 1,
 
 GDP_dt[,.N,by=.(fin_year)]
 
-GDP_dt[fin_year == 2023]
-GDP_dt[fin_year == 2024]
-
 GDP_fin_year <- GDP_dt[,.(GDP = sum(value)),by=.(fin_year)]
-
 
 dt2_GDP <- GDP_fin_year[dt2,on=.(fin_year)][,prop := nom_spend/GDP]
 
@@ -132,7 +128,7 @@ dt2_GDP
 wideGDP <- dcast(dt2_GDP, cofog_div_name ~ fin_year, value.var = "prop")
 colnames(wideGDP) <- c("cofog_div_name","p1999","p2002","p2024")
 
-wideGDP[,change := p2024 - p2002]
+wideGDP[,change := p2024 - p1999]
 
 wideGDP[,contribution := change/wideGDP[cofog_div_name == "Total"]$change]
 wideGDP[,size := p2024/wideGDP[cofog_div_name == "Total"]$p2024]
