@@ -139,6 +139,7 @@ def_GDP <- GDP_fin_year[exp_dt[cofog_group_code == "029"],on=.(fin_year)][,prop 
 
 cost_defence2[agg_expense == "Non-employee expenses"]
 
+(def_GDP[fin_year == 2024]$nominal-10000)/(def_GDP[fin_year == 2024]$GDP)
 
 ##### Our world in data data
 

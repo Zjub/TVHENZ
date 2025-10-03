@@ -145,9 +145,9 @@ setorder(plot_df, series, Year)
 # --- 4) Plot ----------------------------------------------------------------------
 p_comp <- ggplot(plot_df, aes(Year, index*100, colour = series)) +
   # shaded areas first so lines plot on top
-  annotate("rect", xmin = 2008.5, xmax = 2010.5, ymin = -Inf, ymax = Inf,
+  annotate("rect", xmin = 2008.5, xmax = 2010.5, ymin = 2, ymax = 9,
            alpha = 0.2, fill = "grey") +
-  annotate("rect", xmin = 2019.5, xmax = 2021.5, ymin = -Inf, ymax = Inf,
+  annotate("rect", xmin = 2019.5, xmax = 2021.5, ymin = 2, ymax = 9,
            alpha = 0.2, fill = "grey") +
   geom_line() +
   labs_e61(title = "Economic Affairs across countries",
@@ -157,6 +157,6 @@ p_comp <- ggplot(plot_df, aes(Year, index*100, colour = series)) +
 
 print(p_comp)
 
-
+save_e61("CC_Econ_affairs.png",res=2,auto_scale = FALSE)
 
 

@@ -17,6 +17,8 @@ library(Hmisc)
 library(tidysynth)
 library(readabs)
 
+rm(list=ls())
+
 
 ## Conditions
 
@@ -128,6 +130,12 @@ total_rev_int <- total_rev_int[, .(value = sum(value, na.rm = TRUE)),
                                 by = .(country, level)]
 
 total_rev_int[, level := factor(level, levels = c("Non-Federal","Federal"))]
+
+## Ranking place
+
+ranking_dt <- total_rev_int[,.(value = sum(value)),by=.(country)]
+
+ranking_dt[order(value)]
 
 ## Overall plot
 ggplot(total_rev_int[country %in% c("France","Finland","Austria","Greece","Belgium","Sweden","United Kingdom","Denmark","Luxembourg","Portugal","Slovak Republic","Netherlands","United States","Norway","Australia","Israel","Lithuania","Switzerland","Ireland")], aes(x = country, y = value, fill = level)) +

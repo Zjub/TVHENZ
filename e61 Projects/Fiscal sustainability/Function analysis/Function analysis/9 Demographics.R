@@ -179,3 +179,5 @@ ggplot(melt(Income_tax[year >= 1971,.(year,Ratio_cash_total,Ratio_cash_per)],id.
            footnotes = c("Tax receipts from cash accounts."))
 
 save_e61("Income_tax_GDP.png",res=2,auto_scale = FALSE)
+
+

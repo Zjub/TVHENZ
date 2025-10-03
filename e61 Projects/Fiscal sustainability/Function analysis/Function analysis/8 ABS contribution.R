@@ -34,6 +34,7 @@ gc()
 ## Import data ----
 
 work = TRUE
+comp_year <- 1999
 
 if (work == TRUE){
   consolidate_dt <- read_csv("C:/Users/MattNolan/Git/TVHENZ/e61 Projects/Fiscal sustainability/Function analysis/Data/abs_gfs_data_clean.csv")
@@ -43,11 +44,11 @@ if (work == TRUE){
 
 setDT(consolidate_dt)
 
-unique(consolidate_dt$etf_type_name)
-
 consolidated_expenses_dt <- consolidate_dt[etf_type_name == "Revenue and expenses"]
 
-dt <- consolidated_expenses_dt[fin_year %in% c(2014,2024)][,.(nom_spend = sum(gov_expenses_mn,na.rm = TRUE)),by=.(cofog_div_name,fin_year)]
+unique(consolidated_expenses_dt$cofog_group_name)
+
+dt <- consolidated_expenses_dt[fin_year %in% c(comp_year,2024)][,.(nom_spend = sum(gov_expenses_mn,na.rm = TRUE)),by=.(cofog_div_name,fin_year)]
 
 totals <- dt[, .(nom_spend = sum(nom_spend)), by = fin_year][
   , cofog_div_name := "Total"]
@@ -55,26 +56,27 @@ totals <- dt[, .(nom_spend = sum(nom_spend)), by = fin_year][
 dt <- rbind(dt, totals)
 
 wide <- dcast(dt, cofog_div_name ~ fin_year, value.var = "nom_spend")
-colnames(wide) <- c("cofog_div_name","a2014","a2024")
+colnames(wide) <- c("cofog_div_name",paste0("a",comp_year),"a2024")
 
 
-wide[,change := a2024 - a2014]
+wide[,change := a2024 - get(paste0("a",comp_year))]
 
 wide[,contribution := change/wide[cofog_div_name == "Total"]$change]
-wide[,size := a2014/wide[cofog_div_name == "Total"]$a2014]
+wide[, size := get(paste0("a", comp_year)) /
+       wide[cofog_div_name == "Total", get(paste0("a", comp_year))]]
 
 wide
 
 ggplot(melt(wide[cofog_div_name != "Total",.(cofog_div_name,contribution = contribution*100,size = size*100)],id.vars = "cofog_div_name"),aes(x=cofog_div_name,y=value,fill=variable)) + geom_col(position = "dodge") + 
   coord_flip() +
   scale_y_continuous_e61(limits = c(0,50,10)) + 
-  plab(c("Contribution to growth","Size in 2014"),y=c(20,20),x=c(1.5,2.5)) +
+  plab(c(paste0("Contribution to growth in ",comp_year),"Size in "),y=c(20,20),x=c(1.5,2.5)) +
   labs_e61(title = "Contributions to spending growth",
            y="%",
            x="",
            sources = c("e61","ABS"))
 
-save_e61("ABS_contribution_growth.png",res=2)
+save_e61(paste0("ABS_contribution_growth_",comp_year,".png"),res=2)
 
 ## Check the post 1999 figure
 
@@ -114,8 +116,8 @@ GDP_dt <- GDP[
 ]
 
 GDP_dt <- GDP_dt[,.(date,month = as.numeric(month(date)),year = as.numeric(year(date)),value)]
-GDP_dt[,fin_year := fcase(month < 7, year - 1,
-                          default = year)]
+GDP_dt[,fin_year := fcase(month < 7, year,
+                          default = year + 1)]
 
 GDP_dt[,.N,by=.(fin_year)]
 
@@ -132,8 +134,10 @@ wideGDP[,change := p2024 - p1999]
 
 wideGDP[,contribution := change/wideGDP[cofog_div_name == "Total"]$change]
 wideGDP[,size := p2024/wideGDP[cofog_div_name == "Total"]$p2024]
+wideGDP[,size_99 := p1999/wideGDP[cofog_div_name == "Total"]$p1999]
 
-wideGDP
+wide[order(contribution)]
+wideGDP[order(contribution)]
 
 
 ## Suspect that people have added transactions in non-financial assets into expenses.
@@ -152,3 +156,53 @@ wideGDP
 # wide_check[,contribution := change/wide_check[cofog_div_name == "Total"]$change]
 # 
 # wide_check
+
+# --- Shapley-style decomposition of Δ(total/GDP) across functions ---
+# Build a tidy table with endpoints for each function
+# Build endpoints (exclude "Total" row)
+endpts <- merge(
+  dt2[fin_year == 1999, .(cofog_div_name, a0 = nom_spend)],
+  dt2[fin_year == 2024, .(cofog_div_name, a1 = nom_spend)],
+  by = "cofog_div_name", all = TRUE
+)[cofog_div_name != "Total"]
+
+# Treat missing categories as zeros
+endpts[is.na(a0), a0 := 0]
+endpts[is.na(a1), a1 := 0]
+
+G0 <- GDP_fin_year[fin_year == 1999, GDP]
+G1 <- GDP_fin_year[fin_year == 2024, GDP]
+dG <- G1 - G0
+
+endpts[, `:=`(da = a1 - a0,
+              abar = 0.5*(a0 + a1))]
+
+# Exact Shapley contribution for each function
+endpts[, shapley_contrib :=
+         0.5*(da/G0 + da/G1) - abar * (dG/(G0*G1))]
+
+# Sanity check: sums EXACTLY to Δ(A/G)
+delta_ratio_total <- endpts[, sum(shapley_contrib)]
+A0 <- endpts[, sum(a0)]
+A1 <- endpts[, sum(a1)]
+delta_ratio_check <- (A1/G1) - (A0/G0)
+
+stopifnot(all.equal(delta_ratio_total, delta_ratio_check, tolerance = 1e-12))
+
+# Percent contributions
+endpts[, contribution := shapley_contrib / delta_ratio_total]
+endpts[order(-contribution)]
+
+sum(endpts$shapley_contrib)
+
+unique(consolidate_dt$cofog_group_name)
+
+consolidate_dt[cofog_group_name == "100 Sickness and disability"]
+
+### DSP
+
+DSP_cost <- data.table(fin_year=c(2015,2025),DSP_value=c(16.3,23.3))
+
+DSP_cost <- GDP_fin_year[DSP_cost,on=.(fin_year)]
+
+DSP_cost[,ratio := DSP_value/(GDP/1000)]

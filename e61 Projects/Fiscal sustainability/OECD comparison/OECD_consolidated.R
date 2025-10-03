@@ -140,6 +140,13 @@ split_plot_data[, Country := factor(Country,
 split_plot_data[, Government_level := factor(Government_level, 
                                        levels = c("Non-Federal","Federal"))]
 
+
+## Ranking place
+
+ranking_dt <- split_plot_data[,.(value = sum(value)),by=.(Country)]
+
+ranking_dt[order(value)]
+
 ## Overall plot
 ggplot(split_plot_data[!Country %in% c("Italy","Czech Republic","Hungary","Slovenia","Spain","Iceland","Estonia")], aes(x = Country, y = value*100, fill = Government_level)) +
   geom_col() +
@@ -408,14 +415,17 @@ save_e61("Budget_growth_cont.png",res=2)
 cont_level <- consolidated_summary[,.(COFOG_Area,cons_share = share_2022)][federal_summary[,.(COFOG_Area,Fed_share = share_2022)],on=.(COFOG_Area)]
 
 cont_level_plot <- ggplot(melt(cont_level,id.vars = "COFOG_Area"),aes(x=COFOG_Area,y=value*100,fill=variable)) + geom_col(position="dodge") + coord_flip() +
-  labs_e61(subtitle = "2022 Expenditure",
-           y="%") +
+  labs_e61(title = "Relative size of functions by Government level",
+    subtitle = "2022 Expenditure",
+           y="%",
+    sources = c("e61","OECD")) +
   plab(c("Consolidated","Federal"),x=c(3.5,4.5),y=c(20,20)) +
   scale_y_continuous_e61(limits = c(0,50,10))
 
 cont_level_plot
+save_e61("Rel_size_function.png",res=2)
 
-save_e61("Fed_Consolidate_compare.png",cont_level_plot,cont_growth_plot,res=2)
+#save_e61("Fed_Consolidate_compare.png",cont_level_plot,cont_growth_plot,res=2)
 
 
 ### Generate Figure 8 from internal report, but with consolidated spending.
@@ -552,9 +562,16 @@ ggplot(OECD_debt_2023, aes(x = `Reference area`, y = OBS_VALUE, fill = colour_fl
   geom_col() +
   coord_flip() +
   scale_fill_manual(values = c("Australia" = "gold", "Other" = palette_e61(2)[2])) +
-  labs_e61(x = NULL, y = "% GDP",title = "General Government Gross Debt")
+  labs_e61(x = NULL, y = "% GDP",title = "General Government Gross Debt (2023)",
+           sources = c("e61","OECD"))
 
 save_e61("GG_gross_debt_OECD.png",res=2)
+
+## Ranking
+
+OECD_debt_rank <- OECD_debt[TIME_PERIOD == 2023][,.(`Reference area`,OBS_VALUE)]
+
+OECD_debt_rank[order(OBS_VALUE)]
 
 ### GFS information
 
