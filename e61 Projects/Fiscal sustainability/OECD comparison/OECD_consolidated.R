@@ -19,6 +19,8 @@ library(Hmisc)
 library(tidysynth)
 library(readabs)
 
+base_year <- 1999
+
 
 Consol_toG <- read_excel("table22-consolidated-cofog-expenditure-spent-by-approach.xlsx", 
                                                                        sheet = "COFOGexp_%oftotal", skip = 1)
@@ -58,6 +60,9 @@ Aus_toGDP[, Government_level := fifelse(Government_level %in% c("Local", "State"
 
 Aus_toGDP <- Aus_toGDP[, .(value = sum(value,na.rm=TRUE)), 
                    by = .(COFOG_Area, Government_level, Year)]
+
+
+Aus_toGDP[,Year := as.numeric(Year) + 1998] # This involves pushing all years forward one year - to match how we talk about fiscal years as the "end of" a given year. The OECD version appears to use the start year as the way of denoting
 
 Aus_toGDP
 
@@ -183,7 +188,7 @@ ggplot(split_plot_data2,aes(x=Year,y=value*100,fill=Government_level)) +
   scale_y_continuous_e61(limits=c(0,30,5))
 
 # Include changes as % GDP
-base_year <- 2002L
+
 
 if (!(base_year %in% split_plot_data2$Year)) {
   warning("1998 not in data; using earliest year instead.")
@@ -431,28 +436,28 @@ save_e61("Rel_size_function.png",res=2)
 ### Generate Figure 8 from internal report, but with consolidated spending.
 
 ## Fiscal things (habits)
-
-pay_ngdp <- read_excel("Expenditure plots.xlsx",
-                       sheet = "Sheet1", range = "A1:D27")
-setDT(pay_ngdp)
-
-colnames(pay_ngdp) <- c("FY","Payments","NGDP","GDPD")
-
-# Change things to real
-pay_ngdp[,RPayments := Payments/GDPD]
-pay_ngdp[,RGDP := NGDP/GDPD]
-
-base_year <- "2000"
-base_row <- pay_ngdp[FY == base_year]
-pay_ngdp[, `:=`(
-  Payments_norm = RPayments / base_row$RPayments,
-  RGDP_norm = RGDP / base_row$RGDP
-)]
-
-pay_ngdp[, Year := as.integer(FY)]
-trend_data <- pay_ngdp[Year <= 2014 & Year != 2009]
-trend_model <- lm(log(RGDP_norm) ~ Year, data = trend_data)
-pay_ngdp[, RGDP_trend := exp(predict(trend_model, newdata = .SD))]
+# 
+# pay_ngdp <- read_excel("Expenditure plots.xlsx",
+#                        sheet = "Sheet1", range = "A1:D27")
+# setDT(pay_ngdp)
+# 
+# colnames(pay_ngdp) <- c("FY","Payments","NGDP","GDPD")
+# 
+# # Change things to real
+# pay_ngdp[,RPayments := Payments/GDPD]
+# pay_ngdp[,RGDP := NGDP/GDPD]
+# 
+# base_year <- "1999" ### Note hard-coding of base year
+# base_row <- pay_ngdp[FY == base_year]
+# pay_ngdp[, `:=`(
+#   Payments_norm = RPayments / base_row$RPayments,
+#   RGDP_norm = RGDP / base_row$RGDP
+# )]
+# 
+# pay_ngdp[, Year := as.integer(FY)]
+# trend_data <- pay_ngdp[Year <= 2014 & Year != 2009]
+# trend_model <- lm(log(RGDP_norm) ~ Year, data = trend_data)
+# pay_ngdp[, RGDP_trend := exp(predict(trend_model, newdata = .SD))]
 
 ## Prior plot
 # ggplot(pay_ngdp, aes(x = Year)) +
@@ -632,13 +637,25 @@ long_totals <- melt(
   variable.name = "year_var",
   value.name = "value"
 )
-long_totals[, Year := as.integer(as.numeric(year_var) + 1971)]
+long_totals[, Year := as.integer(as.numeric(year_var) + 1972)] # Pushing all the years one forward due to mid-year FY
 
 # Keep Central/State only
 long_totals <- long_totals[Level %in% c("Federal","Non-Federal")]
 
+long_totals[,.(sum(value)),by=.(Year)]
+
+ggplot(long_totals[Year >= 1999],aes(x=Year,y=value,colour=Level)) + geom_line() +
+  labs_e61(
+    title = "Expenditure by Government level",
+    y = "% NGDP",
+    sources = c("e61","OECD"),
+    footnotes = c("Spending shares based on OECD standard consolidation.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries.")
+  ) + scale_y_continuous_e61(limits = c(15,27.5,2.5)) +
+  plab(c("Federal","Non-Federal"),x=c(1999,1999),y=c(21.5,18))
+
+save_e61("Spending_type_level.png",res=2,auto_scale = FALSE)
+
 # 1998 baseline per Level
-base_year <- 2002
 if (!(base_year %in% long_totals$Year)) {
   warning("1998 not in data; using earliest available year.")
   base_year <- min(long_totals$Year)
@@ -655,20 +672,20 @@ ggplot(change_totals, aes(x = Year, y = change_pp, colour = Level)) +
   geom_hline(yintercept = 0, linetype = "dashed") +
   geom_line(size = 1) +
   labs_e61(
-    title = "Change in consolidated spending vs 1998 baseline",
+    title = "Change in consolidated spending vs 1999 baseline",
     subtitle = paste0("Δ (percentage points of GDP) relative to ", base_year),
     y = "Percentage points of GDP"
-  )
+  ) + theme_e61(legend = "bottom")
 
-ggplot(change_totals[Year >= 1998 & Year <= 2023], aes(x = Year, y = change_pp, fill = Level)) +
+ggplot(change_totals[Year >= 1999 & Year <= 2023], aes(x = Year, y = change_pp, fill = Level)) +
   geom_col(position = "dodge") +
   geom_hline(yintercept = 0) +
   labs_e61(
     title = "State spending takes over as driver of growth",
-    subtitle = paste0("Δ (% of GDP) relative to ", base_year),
+    subtitle = paste0("Change (% of GDP) relative to ", base_year),
     y = "",
     sources = c("e61","OECD"),
-    footnotes = c("Spending shares based on the government level where final expenditure occurred.")
+    footnotes = c("Spending shares based on OECD standard consolidation.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries.")
   ) +
   scale_y_continuous_e61() +
   plab(c("Non-Federal","Federal"),x=c(1998,1998),y=c(3.5,5)) + theme_e61(legend = "bottom")
@@ -681,60 +698,60 @@ change_totals[year_var %in% c(2008,2009,2010,2023)]
 ggplot(long_totals[Year >= 2000],aes(x=Year,y=value,colour=Level)) + geom_line()
 
 ##### Compare the base (long_totals) and "spent by" (split_plot_data2) amounts
-
-colnames(long_totals) <- c("Country","Level","year_var","base_value","Year")
-colnames(split_plot_data2) <- c("Country","COFOG","Level","Year","spend_value","Aus_flag")
-
-split_plot_data2[,Year := as.numeric(Year) + 1997]
-
-shared_data <- long_totals[split_plot_data2,on=.(Year,Level)]
-
-shared_data <- shared_data[,.(Level,Year,base_value,spent_value = spend_value*100)]
-
-shared_data <- melt(shared_data,id.vars = c("Level","Year"))
-
-ggplot(shared_data[Level == "Non-Federal"],aes(x=Year,y=value,colour=variable)) + geom_line() + theme_e61(legend = "bottom") + labs_e61(title = "Non-Federal")
-
-ggplot(shared_data[Level == "Federal"],aes(x=Year,y=value,colour=variable)) + geom_line() + theme_e61(legend = "bottom") + labs_e61(title = "Federal")
-
-ggplot(shared_data[,.(values = sum(value)),by=.(Year,variable)],aes(x=Year,y=values,colour=variable)) + geom_line() + labs_e61("Compare totals") + theme_e61(legend = "bottom") 
-
-# Add "funded by" as a cross-check to what is happening here
-
-Funded_toGDP <- read_excel("table23-consolidated-cofog-expenditure-funded-by-approach.xlsx", 
-                           sheet = "COFOGexp_%GDP", skip = 1)
-setDT(Funded_toGDP)
-
-Funded_toGDP
-
-Aus_toGDP_fund <- Funded_toGDP[Country == "Australia" & `Government level` != "Social Security Funds"][,':=' (Country = NULL,ISO = NULL, `COFOG Code` = NULL, `Government level code` = NULL,`1995` = NULL,`1996` = NULL,`1997` = NULL)]
-
-Aus_toGDP_fund <- melt(Aus_toGDP_fund, id.vars = c(colnames(Aus_toGDP_fund)[1],colnames(Aus_toGDP_fund)[2]),variable.name = "Year",value.name = "value")
-
-colnames(Aus_toGDP_fund)[1] <- "COFOG_Area"
-colnames(Aus_toGDP_fund)[2] <- "Government_level"
-
-Aus_toGDP_fund[, Government_level := fifelse(Government_level %in% c("Local", "State"), 
-                                      "Non-Federal", "Federal")]
-
-Aus_toGDP_fund <- Aus_toGDP_fund[, .(value = sum(value)), 
-                   by = .(COFOG_Area, Government_level, Year)]
-
-ggplot(Aus_toGDP_fund[COFOG_Area == "Total"],aes(x=as.numeric(Year),y=value,colour=Government_level)) + geom_line()
-
-Aus_toGDP_fund <- Aus_toGDP_fund[COFOG_Area == "Total"][,Year := as.numeric(Year) + 1997][,funded := value][,value := NULL][,Level := Government_level][,Government_level := NULL]
-
-shared_data2 <- long_totals[split_plot_data2,on=.(Year,Level)][Aus_toGDP_fund,on=.(Year,Level)]
-
-shared_data2 <- shared_data2[,.(Level,Year,base_value,spent_value = spend_value*100,fund_value = funded*100)]
-
-shared_data2 <- melt(shared_data2,id.vars = c("Level","Year"))
-
-ggplot(shared_data2[Level == "Non-Federal"],aes(x=Year,y=value,colour=variable)) + geom_line() + theme_e61(legend = "bottom") + labs_e61(title = "Non-Federal")
-
-ggplot(shared_data2[Level == "Federal"],aes(x=Year,y=value,colour=variable)) + geom_line() + theme_e61(legend = "bottom") + labs_e61(title = "Federal")
-
-ggplot(shared_data2[,.(values = sum(value)),by=.(Year,variable)],aes(x=Year,y=values,colour=variable)) + geom_line() + labs_e61("Compare totals") + theme_e61(legend = "bottom") 
+# 
+# colnames(long_totals) <- c("Country","Level","year_var","base_value","Year")
+# colnames(split_plot_data2) <- c("Country","COFOG","Level","Year","spend_value","Aus_flag")
+# 
+# split_plot_data2[,Year := as.numeric(Year) + 1997]
+# 
+# shared_data <- long_totals[split_plot_data2,on=.(Year,Level)]
+# 
+# shared_data <- shared_data[,.(Level,Year,base_value,spent_value = spend_value*100)]
+# 
+# shared_data <- melt(shared_data,id.vars = c("Level","Year"))
+# 
+# ggplot(shared_data[Level == "Non-Federal"],aes(x=Year,y=value,colour=variable)) + geom_line() + theme_e61(legend = "bottom") + labs_e61(title = "Non-Federal")
+# 
+# ggplot(shared_data[Level == "Federal"],aes(x=Year,y=value,colour=variable)) + geom_line() + theme_e61(legend = "bottom") + labs_e61(title = "Federal")
+# 
+# ggplot(shared_data[,.(values = sum(value)),by=.(Year,variable)],aes(x=Year,y=values,colour=variable)) + geom_line() + labs_e61("Compare totals") + theme_e61(legend = "bottom") 
+# 
+# # Add "funded by" as a cross-check to what is happening here
+# 
+# Funded_toGDP <- read_excel("table23-consolidated-cofog-expenditure-funded-by-approach.xlsx", 
+#                            sheet = "COFOGexp_%GDP", skip = 1)
+# setDT(Funded_toGDP)
+# 
+# Funded_toGDP
+# 
+# Aus_toGDP_fund <- Funded_toGDP[Country == "Australia" & `Government level` != "Social Security Funds"][,':=' (Country = NULL,ISO = NULL, `COFOG Code` = NULL, `Government level code` = NULL,`1995` = NULL,`1996` = NULL,`1997` = NULL)]
+# 
+# Aus_toGDP_fund <- melt(Aus_toGDP_fund, id.vars = c(colnames(Aus_toGDP_fund)[1],colnames(Aus_toGDP_fund)[2]),variable.name = "Year",value.name = "value")
+# 
+# colnames(Aus_toGDP_fund)[1] <- "COFOG_Area"
+# colnames(Aus_toGDP_fund)[2] <- "Government_level"
+# 
+# Aus_toGDP_fund[, Government_level := fifelse(Government_level %in% c("Local", "State"), 
+#                                       "Non-Federal", "Federal")]
+# 
+# Aus_toGDP_fund <- Aus_toGDP_fund[, .(value = sum(value)), 
+#                    by = .(COFOG_Area, Government_level, Year)]
+# 
+# ggplot(Aus_toGDP_fund[COFOG_Area == "Total"],aes(x=as.numeric(Year),y=value,colour=Government_level)) + geom_line()
+# 
+# Aus_toGDP_fund <- Aus_toGDP_fund[COFOG_Area == "Total"][,Year := as.numeric(Year) + 1997][,funded := value][,value := NULL][,Level := Government_level][,Government_level := NULL]
+# 
+# shared_data2 <- long_totals[split_plot_data2,on=.(Year,Level)][Aus_toGDP_fund,on=.(Year,Level)]
+# 
+# shared_data2 <- shared_data2[,.(Level,Year,base_value,spent_value = spend_value*100,fund_value = funded*100)]
+# 
+# shared_data2 <- melt(shared_data2,id.vars = c("Level","Year"))
+# 
+# ggplot(shared_data2[Level == "Non-Federal"],aes(x=Year,y=value,colour=variable)) + geom_line() + theme_e61(legend = "bottom") + labs_e61(title = "Non-Federal")
+# 
+# ggplot(shared_data2[Level == "Federal"],aes(x=Year,y=value,colour=variable)) + geom_line() + theme_e61(legend = "bottom") + labs_e61(title = "Federal")
+# 
+# ggplot(shared_data2[,.(values = sum(value)),by=.(Year,variable)],aes(x=Year,y=values,colour=variable)) + geom_line() + labs_e61("Compare totals") + theme_e61(legend = "bottom") 
 
 
 

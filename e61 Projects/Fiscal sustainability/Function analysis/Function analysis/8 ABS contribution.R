@@ -33,7 +33,7 @@ gc()
 
 ## Import data ----
 
-work = TRUE
+work = FALSE
 comp_year <- 1999
 
 if (work == TRUE){
