@@ -64,7 +64,8 @@ Aus_toGDP <- Aus_toGDP[, .(value = sum(value,na.rm=TRUE)),
 
 Aus_toGDP[,Year := as.numeric(Year) + 1998] # This involves pushing all years forward one year - to match how we talk about fiscal years as the "end of" a given year. The OECD version appears to use the start year as the way of denoting
 
-Aus_toGDP
+Aus_toGDP[COFOG_Area == "Total"][,.(sum(value)),by=.(Year)]
+
 
 
 ## Make Australia plots ----
@@ -240,11 +241,12 @@ names(plots) <- areas
 plots
 
 toGDP[Aus_flag == "Anglo" & COFOG_Area == "Health" & Year == "2022" & Government_level == "Total"]
+toGDP[Aus_flag == "Australia" & COFOG_Area == "Total" & Government_level == "Total"]
 
 
 # Double check the totals
 
-totals_ext <- table4_gov_exp_gdp <- read_excel("table4_gov_exp-gdp.xlsx", 
+totals_ext <- read_excel("table4_gov_exp-gdp.xlsx", 
                                                sheet = "exp_%_gpd", skip = 1)
 
 setDT(totals_ext)

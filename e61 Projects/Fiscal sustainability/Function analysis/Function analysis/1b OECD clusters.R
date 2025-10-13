@@ -69,6 +69,8 @@ Consol_toGDP_long <- melt(
 Consol_toGDP <- Consol_toGDP_long[, .(share_gdp = sum(Value, na.rm = TRUE)),
               by = .(Country, cofog_group = `COFOG Area`, Year)][cofog_group != "Total"]
 
+Consol_toGDP
+
 ###############
 # dt_AUS: Australia, nominal spending by COFOG Area, yearly
 dt_AUS <- copy(dt[Country == "Australia"])

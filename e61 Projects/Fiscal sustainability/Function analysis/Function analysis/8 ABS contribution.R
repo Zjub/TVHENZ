@@ -34,6 +34,7 @@ gc()
 ## Import data ----
 
 work = FALSE
+expense_only = FALSE
 comp_year <- 1999
 
 if (work == TRUE){
@@ -42,9 +43,15 @@ if (work == TRUE){
   consolidate_dt <- read_csv("~/GitHub/TVHENZ/e61 Projects/Fiscal sustainability/Function analysis/Data/abs_gfs_data_clean.csv")
 }
 
-setDT(consolidate_dt)
+unique(consolidate_dt$etf_type_name)
 
-consolidated_expenses_dt <- consolidate_dt[etf_type_name == "Revenue and expenses"]
+if (expense_only == TRUE){
+  consolidated_expenses_dt <- consolidate_dt[etf_type_name == "Revenue and expenses"]
+} else {
+  consolidated_expenses_dt <- consolidate_dt
+}
+
+setDT(consolidated_expenses_dt)
 
 unique(consolidated_expenses_dt$cofog_group_name)
 
@@ -206,3 +213,27 @@ DSP_cost <- data.table(fin_year=c(2015,2025),DSP_value=c(16.3,23.3))
 DSP_cost <- GDP_fin_year[DSP_cost,on=.(fin_year)]
 
 DSP_cost[,ratio := DSP_value/(GDP/1000)]
+
+
+wideGDP[order(contribution)]
+
+### Understand more about non-financial assets
+# 
+# GFS_dt <- read_abs(cat_no = "5512.0")
+
+
+total_exp_nfa <- consolidated_expenses_dt[etf_type_name == "Transactions in non-financial assets"][,.(nom_spend = sum(gov_nfa_mn,na.rm=TRUE)),by=.(fin_year)]
+
+total_expNFA_prop <- GDP_fin_year[total_exp_nfa,on=.(fin_year)][,prop := nom_spend/GDP]
+
+ggplot(total_expNFA_prop,aes(x=fin_year,y=prop)) + geom_line()
+
+## Now I want to add both types of expenses together.
+
+total_all <- consolidated_expenses_dt[,.(nom_spend = sum(gov_nfa_mn,na.rm=TRUE) + sum(gov_expenses_mn,na.rm=TRUE)),by=.(fin_year)]
+
+total_all_prop <- GDP_fin_year[total_all,on=.(fin_year)][,prop := nom_spend/GDP]
+
+ggplot(total_all_prop,aes(x=fin_year,y=prop)) + geom_line()
+
+
