@@ -180,4 +180,24 @@ ggplot(melt(Income_tax[year >= 1971,.(year,Ratio_cash_total,Ratio_cash_per)],id.
 
 save_e61("Income_tax_GDP.png",res=2,auto_scale = FALSE)
 
+## Add plot of demographic adjustment based on Matt M's look into aged care and family benefits
 
+Dem_adj_SP <- read_excel("Dem_adj_SP.xlsx")
+setDT(Dem_adj_SP)
+
+ggplot(Dem_adj_SP,aes(x=Year,y=Family)) + geom_line() +
+  geom_hline(yintercept = 1) + 
+  scale_y_continuous_e61(limits = c(0.9,1.4)) +
+  labs_e61(title = "Payments stable")
+
+
+ggplot(melt(Dem_adj_SP,id.vars = "Year"),aes(x=Year,y=value,colour=variable)) + geom_line() +
+  geom_hline(yintercept = 1) + 
+  scale_y_continuous_e61(limits = c(0.8,1.6)) +
+  labs_e61(title = "Aged care spending not just about ageing",
+           y= "Relative to age adjusted GDP share",
+           sources = c("ABS","e61"),
+           footnotes = c("Plot illustrates the ratio of spending compared to a counterfactual where spending by demographic group remained fixed as a % of GDP.")) +
+  plab(c("Aged Care","Family Support"),x=c(2011,1999),y=c(0.9,1.3))
+
+save_e61("Dem_socialpay.png",res=2)

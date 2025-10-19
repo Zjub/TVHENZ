@@ -541,7 +541,7 @@ ggplot(borrowing_data, aes(x = Country, y = borrowing, fill = highlight)) +
   scale_fill_manual(values = c("Australia" = "gold", "Other" = palette_e61(3)[2])) +
   labs_e61(
     title = "Consolidated Government Borrowing",
-    subtitle = "% of GDP, 2023",
+    subtitle = "% of NGDP, 2023",
     sources = c("OECD", "e61")
   ) +
   scale_y_continuous_e61(limits =c(-10,20,5))
@@ -574,11 +574,27 @@ ggplot(OECD_debt_2023, aes(x = `Reference area`, y = OBS_VALUE, fill = colour_fl
 
 save_e61("GG_gross_debt_OECD.png",res=2)
 
+# Check ranking each year
+
+OECD_debt2 <- OECD_debt[
+  #`Reference area` %in% borrowing_data$Country
+][,.(REF_AREA,TIME_PERIOD,OBS_VALUE)]
+
+OECD_debt2[, `:=`(
+  rank = frank(-OBS_VALUE, ties.method = "min"),  # descending: highest debt = rank 1
+  n_countries = .N
+), by = TIME_PERIOD]
+
+aus_rank <- OECD_debt2[REF_AREA == "AUS", .(TIME_PERIOD, OBS_VALUE, rank, n_countries)][order(TIME_PERIOD)]
+
+aus_rank
+
 ## Ranking
 
 OECD_debt_rank <- OECD_debt[TIME_PERIOD == 2023][,.(`Reference area`,OBS_VALUE)]
 
 OECD_debt_rank[order(OBS_VALUE)]
+
 
 ### GFS information
 

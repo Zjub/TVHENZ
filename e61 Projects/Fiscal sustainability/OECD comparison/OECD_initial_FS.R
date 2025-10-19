@@ -102,6 +102,8 @@ class_stats[, tier := fifelse(value_mean_90s <= q1, "low",
                               fifelse(value_mean_90s >= q3, "high", NA_character_))]
 classified <- class_stats[!is.na(tier)]
 
+class_stats[order(tier)]
+
 high_countries <- classified[tier == "high", country]
 low_countries  <- classified[tier == "low",  country]
 
@@ -146,6 +148,8 @@ p_comp <- ggplot(plot_df, aes(year, index, colour = series)) +
   scale_y_continuous_e61(limits=c(0.9,1.3,0.1))
 
 print(p_comp)
+
+plot_df
 
 save_e61("Cross_country_spend.png",res=2,auto_scale = FALSE)
 
@@ -387,11 +391,11 @@ trend_long <- trend_df %>%
 ggplot(trend_long, aes(x = year, y = value, colour = series)) +
   geom_vline(xintercept = 2007, linetype = "dashed") +
   geom_line() +
-  labs_e61(title = "Australia: Actual vs Synthetic",
+  labs_e61(title = "Australian Fiscal Expenditure remains high",
        x = "Year", y = "Expenditure/GDP Index", linetype = "",
        sources = c("OECD","e61"),
        footnotes = c("An index of nominal government expenditure to nominal GDP, relative to its 1999 level.",
-                     "Australia's Fiscal Year ends in June rather than December. For this reason the Australian data is averaged across consecutive years.")) +
+                     "Australia's Fiscal Year ends in June rather than December. For this reason the Australian data is averaged across consecutive years.","Five main donor countries are United States, Israel, Norway, Iceland, and New Zealand. Weights are provided in Appendix A.")) +
   geom_hline(yintercept = 1)  +
   plab(c("Synthetic","Observed"),x=c(2000,2000),y=c(1.07,1.13)) +
   scale_y_continuous_e61(limits = c(0.9,1.3,0.1))

@@ -14,7 +14,7 @@ library(Hmisc)
 
 # Options
 
-levy = FALSE # Include the medicare levy
+levy = TRUE # Include the medicare levy
 surcharge = FALSE # Include the medicare surcharge
 
 # Define the tax function
@@ -72,7 +72,7 @@ etr_function <- function(income) {
 }
 
 # Create income sequence
-incomes <- seq(1000, 200000, by = 1000)
+incomes <- seq(1000, 400000, by = 1000)
 
 # Define deflator (1 + 0.025)^10
 deflator <- (1 + 0.286)

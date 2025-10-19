@@ -86,6 +86,8 @@ ggplot(dt[year >= 1972],aes(x=year,y=gap,colour=level)) + geom_line() +
 
 total_rev <- dt[,.(rev = sum(Revenue,na.rm=TRUE)),by=.(year)]
 
+dt[year %in% c(2019,2023)]
+
 # Implied by OECD statistics
 ggplot(total_rev[year >= 2002],aes(x=year,y=rev)) + geom_line()
 

@@ -1,4 +1,5 @@
-## Last update:  13/08/2025
+## Created:  1/08/2025
+## Last update:  16/10/2025
 ## Author:  Matt Nolan
 ## Last update person:  Matt Nolan
 # Looking at the initial consolidated data to consider i) defence and interest, ii) capital spending, iii) clustering.
@@ -261,3 +262,73 @@ gridExtra::grid.arrange(plot_feat_classic, plot_feat_circular, ncol = 2)
 print(plot_pca)   # heatmap prints itself
 
 save_e61("PCA_cluster_forreport.png",res=2)
+
+
+## Use these clusters to describe the trajectory of each cluster.
+
+k_clusters <- 5
+cluster_vec <- factor(cutree(hc_feat, k = k_clusters))
+names(cluster_vec) <- names(cluster_vec)  # ensure names exist
+
+# 2) Align matrix rows to the cluster vector
+stopifnot(all(names(cluster_vec) %in% rownames(wide_exp_dt)))
+mat_aligned <- as.matrix(wide_exp_dt[names(cluster_vec), , drop = FALSE])
+
+# 3) Pick base year (default to "1999"; fallback to first column if absent)
+base_year <- "1999"
+if (!base_year %in% colnames(mat_aligned)) base_year <- colnames(mat_aligned)[1]
+
+# Guard against zero/NA baseline (avoid division by zero)
+baseline <- as.numeric(mat_aligned[, base_year])
+baseline[baseline <= 0] <- NA
+
+# 4) Normalise each category so that base_year == 1
+norm_mat <- sweep(mat_aligned, 1, baseline, "/")
+
+# 5) Long form + attach cluster labels
+traj_dt <- as.data.table(norm_mat, keep.rownames = "name")
+traj_dt <- melt(traj_dt, id.vars = "name", variable.name = "year", value.name = "norm")
+traj_dt[, year := as.integer(as.character(year))]
+traj_dt[, cluster := cluster_vec[name]]
+
+# 6) Unweighted cluster averages (and optional IQR for ribbons)
+cluster_mean <- traj_dt[
+  , .(
+    avg = mean(norm, na.rm = TRUE),
+    p25 = suppressWarnings(quantile(norm, 0.25, na.rm = TRUE)),
+    p75 = suppressWarnings(quantile(norm, 0.75, na.rm = TRUE))
+  ),
+  by = .(cluster, year)
+]
+
+# 7) Plot: cluster-mean trajectories with optional IQR ribbons
+plot_cluster_means <- ggplot(cluster_mean, aes(year, avg, colour = cluster, group = cluster)) +
+  geom_ribbon(aes(ymin = p25, ymax = p75, fill = cluster), alpha = 0.15, colour = NA, show.legend = FALSE) +
+  geom_line() +
+  labs_e61(
+    title = "Spending paths for different clusters",
+    y = "Average spending in cluster 1999 = 1",
+    x = "Year", 
+    sources = c("ABS","e61"),
+    footnotes = c("Each function is normalised to 1 in 1999, line represents the unweighted average of expenses within each cluster. The shaded regions represent the range of values within the cluster.")
+  ) +
+  plab(c("Infrastructure and hospitals","Public order and old age","Cyclical social protection","Youth and medical investments","Housing transfers"),x=rep(1999,5),y=c(8.5,7.5,6.5,5.5,4.5)) +
+  scale_y_continuous_e61(limits=c(0,9,3))
+
+print(plot_cluster_means)
+
+save_e61("Cluster_growth.png",res=2)
+
+# 8) (Optional) Small multiples: grey individual lines + black cluster mean
+plot_small_multiples <- ggplot() +
+  geom_line(data = traj_dt, aes(year, norm, group = name), colour = "grey80", alpha = 0.6) +
+  geom_line(data = cluster_mean, aes(year, avg), colour = "black", size = 1) +
+  facet_wrap(~ cluster) +
+  labs(
+    title = sprintf("Within-cluster trajectories (base = %s = 1)", base_year),
+    x = "Year", y = "Normalised level (category base = 1)"
+  ) 
+
+
+
+

@@ -230,10 +230,29 @@ ggplot(total_expNFA_prop,aes(x=fin_year,y=prop)) + geom_line()
 
 ## Now I want to add both types of expenses together.
 
-total_all <- consolidated_expenses_dt[,.(nom_spend = sum(gov_nfa_mn,na.rm=TRUE) + sum(gov_expenses_mn,na.rm=TRUE)),by=.(fin_year)]
+total_all <- consolidated_expenses_dt[,.(nom_spend_total = sum(gov_nfa_mn,na.rm=TRUE) + sum(gov_expenses_mn,na.rm=TRUE),nom_spend_exp = sum(gov_expenses_mn,na.rm=TRUE), nom_spend_cap = sum(gov_nfa_mn,na.rm=TRUE)),by=.(fin_year)]
 
-total_all_prop <- GDP_fin_year[total_all,on=.(fin_year)][,prop := nom_spend/GDP]
+total_all <- melt(total_all,id.vars = "fin_year")
 
-ggplot(total_all_prop,aes(x=fin_year,y=prop)) + geom_line()
+total_all_prop <- GDP_fin_year[total_all,on=.(fin_year)][,prop := value/GDP]
+
+ggplot(total_all_prop,aes(x=fin_year,y=prop,colour=variable)) + geom_line()
+
+
+ggplot(total_all_prop[variable != "nom_spend_cap"],aes(x=fin_year,y=prop*100,colour=variable)) + geom_line() +
+  scale_y_continuous_e61(limits = c(32,48,4)) +
+  labs_e61(title = "Consolidated government expenditure",
+           y = "% NGDP",
+           sources = c("ABS","e61"),
+           footnotes = c("Expenditure includes current expenses and net acquisition of non-financial assets")) + 
+  plab(c("Total expenditure","Current expenses"),x=c(2008,2010),y=c(41,33))
+
+save_e61("Base_spending_plot.png",res=2)
+
+(total_all_prop[variable == "nom_spend_exp" & fin_year == 2024]$prop - total_all_prop[variable == "nom_spend_exp" & fin_year == 2004]$prop)/(total_all_prop[variable == "nom_spend_total" & fin_year == 2024]$prop - total_all_prop[variable == "nom_spend_total" & fin_year == 2004]$prop)
+
+## And the front matter plot
+
+
 
 
