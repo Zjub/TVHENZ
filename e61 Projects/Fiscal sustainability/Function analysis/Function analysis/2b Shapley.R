@@ -1131,69 +1131,194 @@ shapley_by_segments <- function(dt, segments, features, conditional = TRUE) {
 
 # ================================================================================
 ### Adding an additional projection based on expected future demographic pressures
+# Import projections of population and economic variables
+# ---- Fit once on historical data, using your current features ----
+b_full <- coef_full(share_dt, features)            # uses your helper above
+Xi_hist <- as.matrix(as.data.frame(share_dt[, ..features]))
+yhat_hist <- as.vector(Xi_hist %*% b_full)
+
+# Keep the standardisation params used implicitly in training
+std_vars <- intersect(c("rp_g","tot"), features)   # vars you z-scored earlier
+train_mu  <- sapply(std_vars, \(v) mean(share_dt[[v]], na.rm = TRUE))
+train_sig <- sapply(std_vars, \(v)  sd(share_dt[[v]],   na.rm = TRUE))
+
+# ---- Read projections from Excel ----
+# Expecting columns: year + your `features` (case sensitive).
+proj_path  <- "feature_forecasts_to_2060.xlsx"     # << change if needed
+proj_sheet <- "Projections"
+
+proj_raw <- as.data.table(readxl::read_excel(proj_path, sheet = proj_sheet))
+setnames(proj_raw, tolower(names(proj_raw)))       # make lower-case friendly
+
+# ===================== PROJECTIONS: read, align, predict, plot =====================
+
+# Normalise column names to match features exactly
+# (keep a simple map if your Excel headers are slightly different)
+name_map <- c(
+  "year"   = "year",
+  "0_14"   = "0_14",
+  "15_34"  = "15_34",
+  "35_54"  = "35_54",
+  "55_64"  = "55_64",
+  "65p"    = "65p",
+  "rp_g"   = "rp_g",
+  "rp_g_z" = "rp_g_z",
+  "dln_pop"= "dln_pop",
+  "pop_total" = "pop_total",
+  "tot"    = "tot",
+  "tot_z"  = "tot_z"
+)
+# Keep only columns we know about (don’t fail if extras are present)
+keep_cols <- intersect(names(proj_raw), names(name_map))
+setnames(proj_raw, keep_cols, name_map[keep_cols])
+
+# ---- If dln_pop is missing but pop_total is present, compute it
+if (!"dln_pop" %in% names(proj_raw) && "pop_total" %in% names(proj_raw)) {
+  setorder(proj_raw, year)
+  proj_raw[, dln_pop := c(NA_real_, diff(log(pop_total)))]
+  proj_raw <- proj_raw[!is.na(dln_pop)]
+}
+
+# ---- Build a clean projection table with exactly the features you need
+# Prefer *_z columns if provided, otherwise standardise raw using training mu/sd
+proj <- copy(proj_raw)
+for (v in std_vars) {
+  vz  <- paste0(v, "_z")
+  if (vz %in% names(proj)) {
+    # Use the provided z-score
+    proj[[v]] <- as.numeric(proj[[vz]])
+  } else if (v %in% names(proj)) {
+    # Standardise raw using training mean/sd to stay on the training scale
+    proj[[v]] <- as.numeric((proj[[v]] - train_mu[[v]]) / train_sig[[v]])
+  } else {
+    stop("Projection file is missing required column for standardised variable: ", v,
+         " (neither '", v, "' nor '", v, "_z' found).")
+  }
+}
+
+# Guard: age shares should sum to ~1; if not, softly re-normalise
+age_vars <- intersect(c("0_14","15_34","35_54","55_64","65p"), features)
+if (length(age_vars)) {
+  proj[, age_sum := rowSums(.SD), .SDcols = age_vars]
+  if (any(abs(proj$age_sum - 1) > 0.03, na.rm = TRUE)) {
+    warning("Some projection rows have age shares not summing to 1 (>|0.03|). Renormalising.")
+    proj[, (age_vars) := lapply(.SD, \(x) x / age_sum), .SDcols = age_vars]
+  }
+  proj[, age_sum := NULL]
+}
+
+# Keep only projection years beyond the historical max
+last_hist_year <- max(share_dt$year, na.rm = TRUE)
+proj <- proj[year > last_hist_year]
+stopifnot(nrow(proj) > 0)
+
+# Make sure every feature exists; fail loudly if not
+missing_feats <- setdiff(features, names(proj))
+if (length(missing_feats)) {
+  stop("Projection file missing required feature columns: ",
+       paste(missing_feats, collapse = ", "))
+}
+
+# ---- Handle scenarios (optional): detect suffixes like _s1, _s2, etc.
+# If your file has scenario-specific columns, e.g. rp_g_s1, tot_s2, etc.,
+# list them as sets where *all* features share the same suffix.
+get_scenarios <- function(DT, feats) {
+  # Find suffixes by pattern feature_suffix where suffix starts with "_s"
+  cols <- names(DT)
+  suf_map <- list()
+  for (c in cols) {
+    for (f in feats) {
+      if (startsWith(c, paste0(f, "_s"))) {
+        suf <- sub(paste0("^", f), "", c)  # e.g. "_s1"
+        suf_map[[suf]] <- unique(c(suf_map[[suf]], f))
+      }
+    }
+  }
+  # Keep only suffixes that cover all features
+  sufs <- names(suf_map)
+  sufs[ vapply(sufs, \(s) setequal(suf_map[[s]], feats), logical(1)) ]
+}
+
+scenario_suffixes <- get_scenarios(proj, features)
+
+predict_with <- function(DT, feat_names) {
+  Xi <- as.matrix(as.data.frame(DT[, ..feat_names]))
+  as.vector(Xi %*% b_full)
+}
+
+# ---- Build long table of historical + fitted + projections
+hist_dt <- data.table(
+  year       = share_dt$year,
+  y_actual   = share_dt$gov_gdp,
+  yhat_full  = yhat_hist,
+  series     = "Historical"
+)
+
+# Base (single) projection from columns exactly named as features
+base_proj <- copy(proj[, c("year", features), with = FALSE])
+base_proj[, yhat_proj := predict_with(base_proj, features)]
+base_proj[, series := "Projection (base)"]
+
+proj_all <- base_proj[, .(year, yhat_proj, series)]
+
+# Add scenarios if detected: create per-scenario matrices and predict
+if (length(scenario_suffixes)) {
+  for (suf in scenario_suffixes) {
+    cols_needed <- paste0(features, suf)
+    Xi <- as.matrix(as.data.frame(proj[, ..cols_needed]))
+    colnames(Xi) <- features  # align names to coefficients
+    yhat_s <- as.vector(Xi %*% b_full)
+    proj_all <- rbind(
+      proj_all,
+      data.table(year = proj$year, yhat_proj = yhat_s, series = paste0("Projection ", suf)),
+      use.names = TRUE
+    )
+  }
+}
+
+# ---- Combine and plot
+plot_dt <- merge(hist_dt, unique(proj_all[, .(series)]), by = character(), all = TRUE)
+plot_dt <- rbind(
+  hist_dt[, .(year, series = "Historical", value = y_actual)],
+  hist_dt[, .(year, series = "Fitted (in-sample)", value = yhat_full)],
+  proj_all[, .(year, series, value = yhat_proj)],
+  use.names = TRUE
+)
+
+# If multiple projection series exist, compute a band
+band_dt <- NULL
+proj_series <- unique(proj_all$series)
+if (length(proj_series) > 1L) {
+  band_dt <- dcast(proj_all, year ~ series, value.var = "yhat_proj")
+  band_dt[, ymin := do.call(pmin, c(.SD, list(na.rm = TRUE))), .SDcols = proj_series]
+  band_dt[, ymax := do.call(pmax, c(.SD, list(na.rm = TRUE))), .SDcols = proj_series]
+}
+
+# ---- Plot (percent of GDP)
+p_proj <- ggplot() +
+  { if (!is.null(band_dt)) 
+    geom_ribbon(data = band_dt, aes(x = year, ymin = ymin*100, ymax = ymax*100),
+                alpha = 0.15) } +
+  geom_line(data = plot_dt[series %in% c("Historical","Fitted (in-sample)")],
+            aes(year, value*100, linetype = series), linewidth = 0.9) +
+  geom_line(data = plot_dt[grepl("^Projection", series)],
+            aes(year, value*100, colour = series), linewidth = 1) +
+  labs_e61(
+    title     = paste0("Government ", measure, " as % of GDP: history, fit, and projections"),
+    subtitle  = paste0("Model: no-intercept OLS on features = {", paste(features, collapse=", "), "}.",
+                       if (length(std_vars)) paste0(" Standardised: ", paste(std_vars, collapse=", "), ".")),
+    x = NULL, y = "% of GDP",
+    sources   = c("ABS", "e61", "Author projections")
+  ) +
+  theme_e61(legend = "bottom")
+
+print(p_proj)
+save_e61("GFCE_to_GDP_projection.png", res = 2)
+
+# ---- Save projected numbers
+fwrite(plot_dt, "gfce_to_gdp_history_fit_projection.csv")
+if (!is.null(band_dt)) fwrite(band_dt[, .(year, ymin, ymax)], "gfce_to_gdp_projection_band.csv")
 
 
 
-
-
-# # ======================== RUN (manual ranges) ====================================
-# # 1) Define your custom year ranges (edit these)
-# custom_ranges <- list(
-#   c(1985, 1997),
-#   c(1998, 2010),
-#   c(2011, 2024)
-# )
-# 
-# # 2) Snap ranges to available sample years and compute Shapley
-# seg_tbl <- normalise_segments(custom_ranges, years = unique(share_dt$year))
-# manual_res <- shapley_by_segments(
-#   dt = share_dt,
-#   segments = seg_tbl,
-#   features = features,
-#   conditional = TRUE  # or use `conditional_sv`
-# )
-# 
-# # 3) Plot (same visual language as your four-bin explained plot)
-# if (nrow(manual_res)) {
-#   manual_measures <- intersect(features, names(manual_res))
-#   mlong <- melt(
-#     manual_res,
-#     id.vars       = c("y0","y1","d_actual","d_hat","unexplained"),
-#     measure.vars  = manual_measures,
-#     variable.name = "driver",
-#     value.name    = "contrib"
-#   )
-#   mlong[, Segment := paste0(y0, "–", y1)]
-#   # keep order as supplied
-#   mlong[, Segment := factor(Segment, levels = paste0(seg_tbl$y0, "–", seg_tbl$y1))]
-#   
-#   p_manual <- ggplot(mlong, aes(x = Segment, y = contrib, fill = driver)) +
-#     geom_col() +
-#     # predicted total explained change (◇)
-#     geom_point(
-#       data = unique(mlong[, .(Segment, d_hat)]),
-#       aes(y = d_hat, x = Segment),
-#       inherit.aes = FALSE,
-#       shape = 23, size = 3, stroke = 0.6
-#     ) +
-#     # actual total change (●)
-#     geom_point(
-#       data = unique(mlong[, .(Segment, d_actual)]),
-#       aes(y = d_actual, x = Segment),
-#       inherit.aes = FALSE,
-#       shape = 16, size = 2.8
-#     ) +
-#     geom_hline(yintercept = 0, linewidth = 0.4) +
-#     coord_flip() +
-#     labs_e61(
-#       title = "Regression-based Shapley by manual periods",
-#       subtitle = "Stacks = explained contribution by driver; ● actual Δ, ◇ predicted Δ",
-#       x = NULL, y = "Δ share (level points)", fill = "Driver"
-#     ) +
-#     theme_e61(legend = "bottom")
-#   
-#   print(p_manual)
-#   # Optional: save
-#   save_e61("Shapley_manual_periods.png", p_manual,res=2)
-# }
-# # ================================================================================
+# ================================================================================

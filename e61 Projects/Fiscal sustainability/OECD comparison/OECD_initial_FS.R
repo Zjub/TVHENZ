@@ -387,6 +387,9 @@ trend_df <- tidysynth::grab_synthetic_control(synth_result2, placebo = FALSE) %>
 trend_long <- trend_df %>%
   pivot_longer(c(Observed, Synthetic), names_to = "series", values_to = "value")
 
+
+setDT(trend_long)
+
 # Plot of the levels
 ggplot(trend_long, aes(x = year, y = value, colour = series)) +
   geom_vline(xintercept = 2007, linetype = "dashed") +

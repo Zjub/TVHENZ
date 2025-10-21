@@ -201,3 +201,39 @@ ggplot(melt(Dem_adj_SP,id.vars = "Year"),aes(x=Year,y=value,colour=variable)) + 
   plab(c("Aged Care","Family Support"),x=c(2011,1999),y=c(0.9,1.3))
 
 save_e61("Dem_socialpay.png",res=2)
+
+
+### Add a plot of the consolidated deficits
+
+PBO_NOB_dt <- read_excel("PBO National Fiscal Outlook 2025.xlsx", 
+                         sheet = "plots")
+
+
+setDT(PBO_NOB_dt)
+
+# This is consolidated fiscal balance and NOB. What actually want state, central, national for fiscal balance.
+ggplot(melt(PBO_NOB_dt,id.vars = "year"),aes(x=year,y=value,colour=variable)) + geom_line() + geom_line() +
+  labs_e61(title = "Persistent Fiscal Imbalance",
+           sources =c("PBO","Budget FBO 2026","e61"),
+           footnotes = c("Uses the 2025 National Fiscal Outlook by the PBO, with estimates updated for the 2026 Final Budget Outcomes"))
+
+PBO_FB_dt <- read_excel("PBO National Fiscal Outlook 2025.xlsx", 
+                         sheet = "plots_2")
+
+
+setDT(PBO_FB_dt)
+
+
+ggplot(melt(PBO_FB_dt,id.vars = "year"),aes(x=year,y=value,colour=variable)) + geom_line() + geom_line() +
+  labs_e61(title = "Persistent Fiscal Imbalance",
+           y = "Fiscal balance, % NGDP",
+           sources =c("PBO","Budget FBO 2026","e61"),
+           footnotes = c("Uses the 2025 National Fiscal Outlook by the PBO, updated with Budget 2026 estimates.","Plot to the right of the dashed line reflect Budget/PBO estimates.")) + # , with estimates updated for the 2026 Final Budget Outcome - checked and this isn't in FBO, which is more cut down.
+  geom_hline(yintercept = 0) +
+  plab(c("States","Federal","National"),y=c(-3,-5,-7),x=c(2003,2003,2003)) + 
+  geom_vline(xintercept = 2024,linetype = "dashed") +
+  scale_y_continuous_e61(limits = c(-12,4,4)) +
+  scale_x_continuous_e61(limits = c(2003,2028,5))
+  
+
+save_e61("FB.png",res=2)
