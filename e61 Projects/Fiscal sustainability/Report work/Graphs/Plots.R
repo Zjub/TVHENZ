@@ -1,7 +1,7 @@
 # Topic: Takes background data and produces plots
 # Author: Matt Nolan
 # Created: 19/10/2025
-# Last edit: 19/10/2025
+# Last edit: 20/10/2025
 # Last editor: Matt Nolan
 
 
@@ -19,6 +19,25 @@ library(data.table)
 library(Hmisc)
 library(tidysynth)
 library(readabs)
+
+## Figure 1: Government spending
+
+f1_dt <- read_excel("Graph_data.xlsx", 
+                    sheet = "Figure_1")
+
+setDT(f1_dt)
+
+ggplot(f1_dt,aes(x=fin_year,y=prop*100,colour=variable)) + geom_line() +
+  scale_y_continuous_e61(limits = c(32,48,4)) +
+  labs_e61(title = "Consolidated government expenditure",
+           y = "% NGDP",
+           sources = c("ABS","e61"),
+           footnotes = c("Expenditure includes current expenses and net acquisition of non-financial assets")) + 
+  plab(c("Current expenses","Total expenditure"),x=c(2010,2008),y=c(33,41))
+
+save_e61("Figure_1.png",res=2)
+
+
 
 ## Figure 2: Net debt
 
@@ -40,6 +59,72 @@ save_e61("Figure_2.png",res=2)
 
 
 
+## Figure 3: General Government Debt across OECD
+
+f3_dt <- read_excel("Graph_data.xlsx", 
+                    sheet = "Figure_3")
+
+setDT(f3_dt)
+
+f3_dt[, `Reference area` := factor(`Reference area`, levels = `Reference area`)]
+
+ggplot(f3_dt, aes(x = `Reference area`, y = OBS_VALUE, fill = colour_flag)) +
+  geom_col() +
+  coord_flip() +
+  scale_fill_manual(values = c("Australia" = "gold", "Other" = palette_e61(2)[2])) +
+  labs_e61(x = NULL, y = "% GDP",title = "General Government Gross Debt (2023)",
+           sources = c("e61","OECD"))
+
+save_e61("Figure_3.png",res=2)
+
+
+
+## Figure 4a: Expenditure by government level
+
+f4a_dt <- read_excel("Graph_data.xlsx", 
+                    sheet = "Figure_4a")
+
+setDT(f4a_dt)
+f4a_dt[,Level := factor(Level,levels = c("Non-Federal","Federal"))]
+
+ggplot(f4a_dt,aes(x=Year,y=value,colour=Level)) + geom_line() +
+  labs_e61(
+    title = "Expenditure by Government level",
+    y = "% NGDP",
+    sources = c("e61","OECD"),
+    footnotes = c("Spending shares based on OECD standard consolidation.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries.")
+  ) + scale_y_continuous_e61(limits = c(15,27.5,2.5)) +
+  plab(c("Non-Federal","Federal"),x=c(1999,1999),y=c(18,21.5))
+
+save_e61("Figure_4a.png",res=2)
+
+
+
+## Figure 4b: Contribution growth by government level
+
+f4b_dt <- read_excel("Graph_data.xlsx", 
+                     sheet = "Figure_4b")
+
+setDT(f4b_dt)
+f4b_dt[,Level := factor(Level,levels = c("Non-Federal","Federal"))]
+
+ggplot(f4b_dt, aes(x = Year, y = change_pp, fill = Level)) +
+  geom_col(position = "dodge") +
+  geom_hline(yintercept = 0) +
+  labs_e61(
+    title = "Government Levels contribution to spending growth",
+    subtitle = paste0("Change (% of GDP) relative to 1999"),
+    y = "",
+    sources = c("e61","OECD"),
+    footnotes = c("Spending shares based on OECD standard consolidation.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries.")
+  ) +
+  scale_y_continuous_e61() +
+  plab(c("Non-Federal","Federal"),x=c(1998,1998),y=c(3.5,5))
+
+save_e61("Figure_4b.png",res=2)
+
+
+
 ## Figure 5: Untied data ratio
 
 f5_dt <- read_excel("Graph_data.xlsx", 
@@ -48,7 +133,7 @@ f5_dt <- read_excel("Graph_data.xlsx",
 setDT(f5_dt)
 
 ggplot(f5_dt,aes(x=Year,y=Untied_Ratio*100)) + geom_line() + scale_y_continuous_e61(limits = c(0,80,20)) +
-  labs_e61(title = "Federal share of general funding for states.",
+  labs_e61(title = "Share of Federal funding that is untied.",
            y= "% of total funding",
            sources = c("Budget Papers 3","e61"),
            footnotes = c("General funding includes both GST revenue and general revenue assistance at the state and local level."))
@@ -57,7 +142,23 @@ save_e61("Figure_5.png",res=2)
 
 
 
-# Figure 8: Low vs high
+## Figure 6: Revenue by level
+
+f6_dt <- read_excel("Graph_data.xlsx", 
+                    sheet = "Figure_6")
+
+setDT(f6_dt)
+
+ggplot(f6_dt,aes(x=year,y=Revenue,colour=level)) + geom_line() + 
+  labs_e61(title = "Revenue by Government level",
+           y= "% NGDP",
+           sources = c("OECD","e61")) +
+  scale_y_continuous_e61(limits=c(10,26,4)) +
+  plab(c("Federal","Non-Federal"),x=c(2009,2009),y=c(21,13))
+
+
+
+## Figure 8: Low vs high
 
 
 f8_dt <- read_excel("Graph_data.xlsx", 
@@ -75,6 +176,7 @@ ggplot(f8_dt, aes(year, index, colour = series)) +
   scale_y_continuous_e61(limits=c(0.9,1.3,0.1))
 
 save_e61("Figure_8.png",res=2)
+
 
 
 # Figure 9: Synthetic control exercise aggregate
@@ -99,3 +201,6 @@ ggplot(f9_dt, aes(x = year, y = value, colour = series)) +
   scale_y_continuous_e61(limits = c(0.9,1.3,0.1))
 
 save_e61("Figure_9.png",res=2)
+
+
+

@@ -33,7 +33,7 @@ gc()
 
 ## Import data ----
 
-work = FALSE
+work = TRUE
 expense_only = FALSE
 comp_year <- 1999
 

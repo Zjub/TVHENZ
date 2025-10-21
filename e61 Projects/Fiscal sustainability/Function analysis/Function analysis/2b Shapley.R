@@ -2,7 +2,7 @@
 ## Regression-based Shapley for Govt Spending as % of GDP (AU, ABS)
 ## Decompose changes in spend/GDP into age-group contributions
 ## with diagnostics so we don't attribute all changes to ageing.
-## Last update: 15/09/2025
+## Last update: 20/10/2025 (to add in projections)
 ## Note: This is the fixed and final version!!!!
 ## ======================================================================
 
@@ -14,6 +14,7 @@ suppressPackageStartupMessages({
   library(ggplot2)
   library(fixest)
   library(theme61)
+  library(readxl)
 })
 
 rm(list = ls()); invisible(gc())
@@ -1127,6 +1128,12 @@ shapley_by_segments <- function(dt, segments, features, conditional = TRUE) {
   }), use.names = TRUE, fill = TRUE)
 }
 # ================================================================================
+
+# ================================================================================
+### Adding an additional projection based on expected future demographic pressures
+
+
+
 
 
 # # ======================== RUN (manual ranges) ====================================

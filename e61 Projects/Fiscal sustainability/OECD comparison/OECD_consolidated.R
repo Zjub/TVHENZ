@@ -572,6 +572,8 @@ ggplot(OECD_debt_2023, aes(x = `Reference area`, y = OBS_VALUE, fill = colour_fl
   labs_e61(x = NULL, y = "% GDP",title = "General Government Gross Debt (2023)",
            sources = c("e61","OECD"))
 
+OECD_debt_2023[,.(`Reference area`, OBS_VALUE, colour_flag)]
+
 save_e61("GG_gross_debt_OECD.png",res=2)
 
 # Check ranking each year
