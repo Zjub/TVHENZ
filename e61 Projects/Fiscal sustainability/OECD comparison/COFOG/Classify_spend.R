@@ -50,3 +50,9 @@ ggplot(dt_type,aes(x=fin_year,y=prop,fill=as.factor(Type))) + geom_col() +
   labs_e61(title = "Purpose of spending")
 
 save_e61("Purpose.png",res=2)
+
+dt_type[,Type2 := ifelse(Type == 5,1,Type)]
+
+dt_type2 <- dt_type[,.(prop = sum(prop)),by=.(Type2,fin_year)]
+
+fwrite(dt_type2, "type_outcome.csv")

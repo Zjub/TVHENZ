@@ -75,6 +75,7 @@ projection <- read_csv("Projected population, Australia.csv")
 setDT(projection)
 
 projection <- projection[,.(year=YEAR,proj_pop = `Medium series`/1000000)]
+projection <- projection[year >= 2023] # drop 2022 projection
 
 pop[,month := month(date)]
 June_pop <- pop[month == 6,.(year = year(date),pop = pop)]
@@ -205,7 +206,7 @@ save_e61("Dem_socialpay.png",res=2)
 
 ### Add a plot of the consolidated deficits
 
-PBO_NOB_dt <- read_excel("PBO National Fiscal Outlook 2025.xlsx", 
+PBO_NOB_dt <- read_excel("PBO National Fiscal Outlook 2025 edit.xlsx", 
                          sheet = "plots")
 
 
@@ -217,7 +218,7 @@ ggplot(melt(PBO_NOB_dt,id.vars = "year"),aes(x=year,y=value,colour=variable)) + 
            sources =c("PBO","Budget FBO 2026","e61"),
            footnotes = c("Uses the 2025 National Fiscal Outlook by the PBO, with estimates updated for the 2026 Final Budget Outcomes"))
 
-PBO_FB_dt <- read_excel("PBO National Fiscal Outlook 2025.xlsx", 
+PBO_FB_dt <- read_excel("PBO National Fiscal Outlook 2025 edit.xlsx", 
                          sheet = "plots_2")
 
 
@@ -227,7 +228,7 @@ setDT(PBO_FB_dt)
 ggplot(melt(PBO_FB_dt,id.vars = "year"),aes(x=year,y=value,colour=variable)) + geom_line() + geom_line() +
   labs_e61(title = "Persistent Fiscal Imbalance",
            y = "Fiscal balance, % NGDP",
-           sources =c("PBO","Budget FBO 2026","e61"),
+           sources =c("PBO","Budget 2026","e61"),
            footnotes = c("Uses the 2025 National Fiscal Outlook by the PBO, updated with Budget 2026 estimates.","Plot to the right of the dashed line reflect Budget/PBO estimates.")) + # , with estimates updated for the 2026 Final Budget Outcome - checked and this isn't in FBO, which is more cut down.
   geom_hline(yintercept = 0) +
   plab(c("States","Federal","National"),y=c(-3,-5,-7),x=c(2003,2003,2003)) + 

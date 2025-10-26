@@ -246,6 +246,8 @@ pc_dt <- data.table(
   cluster = factor(cutree(hc_feat, k = 5))
 )
 
+fwrite(pc_dt, "cluster_result.csv")
+
 plot_pca <- ggplot(pc_dt, aes(PC1, PC2, colour = cluster)) +
   geom_point(size = 2, alpha = 0.9) +
   ggrepel::geom_text_repel(aes(label = name), size = 1.2, show.legend = FALSE) +
@@ -258,10 +260,11 @@ plot_pca <- ggplot(pc_dt, aes(PC1, PC2, colour = cluster)) +
   )
 
 # --- E) Arrange a compact gallery for the report (optional) ---
-gridExtra::grid.arrange(plot_feat_classic, plot_feat_circular, ncol = 2)
+#gridExtra::grid.arrange(plot_feat_classic, plot_feat_circular, ncol = 2)
 print(plot_pca)   # heatmap prints itself
 
 save_e61("PCA_cluster_forreport.png",res=2)
+save_e61("PCA_cluster_forreport.svg")
 
 
 ## Use these clusters to describe the trajectory of each cluster.
@@ -317,17 +320,20 @@ plot_cluster_means <- ggplot(cluster_mean, aes(year, avg, colour = cluster, grou
 
 print(plot_cluster_means)
 
-save_e61("Cluster_growth.png",res=2)
+fwrite(cluster_mean,"cluster_time.csv")
 
-# 8) (Optional) Small multiples: grey individual lines + black cluster mean
-plot_small_multiples <- ggplot() +
-  geom_line(data = traj_dt, aes(year, norm, group = name), colour = "grey80", alpha = 0.6) +
-  geom_line(data = cluster_mean, aes(year, avg), colour = "black", size = 1) +
-  facet_wrap(~ cluster) +
-  labs(
-    title = sprintf("Within-cluster trajectories (base = %s = 1)", base_year),
-    x = "Year", y = "Normalised level (category base = 1)"
-  ) 
+save_e61("Cluster_growth.png",res=2)
+save_e61("Cluster_growth.svg")
+
+# # 8) (Optional) Small multiples: grey individual lines + black cluster mean
+# plot_small_multiples <- ggplot() +
+#   geom_line(data = traj_dt, aes(year, norm, group = name), colour = "grey80", alpha = 0.6) +
+#   geom_line(data = cluster_mean, aes(year, avg), colour = "black", size = 1) +
+#   facet_wrap(~ cluster) +
+#   labs(
+#     title = sprintf("Within-cluster trajectories (base = %s = 1)", base_year),
+#     x = "Year", y = "Normalised level (category base = 1)"
+#   ) 
 
 
 

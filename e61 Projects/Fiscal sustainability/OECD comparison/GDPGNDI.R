@@ -54,6 +54,8 @@ ggplot(dt[date >= as.Date("2000-01-01")],aes(x=date,y=index,colour=series)) + ge
 
 save_e61("RNNDIvGDP.png",res=2,auto_scale = FALSE) 
 
+fwrite(dt[date >= as.Date("2000-01-01"),.(series,date,index)],"GDPNNDI.csv")
+
 dt[date %in% c("2025-06-01"),.(index25 = index,series)]
 
 compare_dt <- dt[date %in% c("2025-06-01"),.(index25 = index,series)][dt[date %in% c("2019-12-01"),.(index19 = index,series)],on=.(series)]

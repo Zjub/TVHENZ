@@ -108,6 +108,8 @@ exp_shares_broad <- copy(exp_broad_dt)[
   , share := fifelse(total > 0, value / total, NA_real_)
 ]
 
+setDT(exp_shares_broad)
+
 ggplot(exp_shares_broad,aes(x=fin_year,y=share,fill=etf_broad)) + 
   geom_col() + 
   labs_e61(title = "Total expenses",
@@ -117,6 +119,8 @@ ggplot(exp_shares_broad,aes(x=fin_year,y=share,fill=etf_broad)) +
   plab(c("Depreciation","Interest","Employee","Non-employee","Transfers"),x=c(1999,1999,2008,2008,2018),y=c(1.1,1.2,1.1,1.2,1.2))
 
 save_e61("Consolidated_expenses.png",res=2)
+
+fwrite(exp_shares_broad, "expense1.csv")
 
 exp_shares_broad[etf_broad == "Non-employee expenses"]
 exp_shares_broad[etf_broad == "Employees"]
