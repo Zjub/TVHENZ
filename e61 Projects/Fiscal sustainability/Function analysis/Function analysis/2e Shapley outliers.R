@@ -25,7 +25,7 @@ freq            <- "FY"                 # "FY" or "CY"
 measure         <- "Expenditure"              # "GFCE" or "GFCE_plus_GFCF" or "Expenditure"
 share_basis     <- "nominal"           # "nominal" (standard for shares) or "real"
 conditional_sv  <- TRUE                # TRUE = conditional (full Shapley); FALSE = β·Δs
-abs_check_local <- FALSE                # use cached ABS files (fast after first run)
+abs_check_local <- TRUE                # use cached ABS files (fast after first run)
 #features <- c("0_14","15_34","35_54","55_64","65p","tot") # The set of variables included in this run
 start_year      <- 1980    # <-- choose your sample start
 final_year_opt  <- NA      # optional end year, set to e.g. 2018 or NA to use all. 
@@ -34,7 +34,7 @@ features <- c("0_14","15_34","35_54","55_64","65p","tot",
               "rp_g","unemp") # ,"dln_pop""unemp",
 outlier_years <- c(2020, 2021)   # Years we remove from estimation for being outliers
 govt_level    <- "total"        # Either total, or just "Federal".
-level <- "Consolidated" # This is the name for saving files - change to be consistent with above
+level <- "Consolidated" # This is the name for saving files - change to be consistent with above (Federal or Consolidated)
 
 # -------------------- Helpers --------------------
 # AU FY ends in June: add 6m and take year
@@ -267,10 +267,13 @@ get_gfce_gdp <- function(freq = c("FY","CY"),
   # Add new line to identify Federal when needed
   is_gen_gov_total <- function(s) {
     if (govt_level == "Federal") {
-      grepl("^\\s*General\\s+government\\s*;\\s*National", s, TRUE)
+      # Match "General government - National" or "General government; National"
+      grepl("^\\s*General\\s+government\\s*[-;]\\s*National", s, ignore.case = TRUE) &&
+        !grepl("Defence|Non[-\\s]?defence", s, ignore.case = TRUE)
     } else {
-      grepl("^\\s*General\\s+government\\s*;\\s*", s, TRUE) &&
-        !grepl("National|State and local", s, TRUE)
+      # Match "General government ;" but exclude National and State/local
+      grepl("^\\s*General\\s+government\\s*[-;]\\s*", s, ignore.case = TRUE) &&
+        !grepl("National|State and local", s, ignore.case = TRUE)
     }
   }
   
@@ -1389,8 +1392,8 @@ ggplot(plot_dt[series != "Fitted (in-sample)"],aes(x=year,y=value*100,colour=ser
   plab(c("Historical","Projection"),x=c(1980,2030),y=c(41,36))
 
 
-save_e61(paste0("GFCE_to_GDP_projection_", measure, ".png"), res = 2)
-save_e61(paste0("GFCE_to_GDP_projection_", measure, ".svg"))
+save_e61(paste0("GFCE_to_GDP_projection_", measure,"_",level, ".png"), res = 2)
+save_e61(paste0("GFCE_to_GDP_projection_", measure,"_",level, ".svg"))
 
 
 # Save projected numbers
