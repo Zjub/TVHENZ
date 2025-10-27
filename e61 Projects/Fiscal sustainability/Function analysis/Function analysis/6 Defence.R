@@ -103,11 +103,13 @@ cost_defence2[, share_nominal := nominal / total_nominal]
 
 ggplot(cost_defence2, aes(x = fin_year, y = share_nominal*100, fill = agg_expense)) +
   geom_col() +
-  labs_e61(title = "Defence expenses", y = "Share of total", x = NULL) +
+  labs_e61(title = "Defence expenses", y = "Share of total", x = "",
+           sources = c("ABS","e61")) +
   plab(c("Transfers","Depreciation","Non-employee","Employee"),y=c(120,110,120,110),x=c(1999,1999,2010,2010)) +
   scale_y_continuous_e61(limits = c(0,125,25),add_space = TRUE)
 
 save_e61("Defence_exp.png",res=2,auto_scale = FALSE)
+save_e61("Defence_exp.svg",auto_scale = FALSE)
 
 ## Look at defence as % of GDP from this measure - and then what it would look like excluding superannuation
 
@@ -167,6 +169,7 @@ ggplot(AUS_defence[Year >= 1990],aes(x=Year,y=value,colour=Code)) + geom_line() 
   plab(c("Australia","China","United Kingdom","United States"),x=rep(1995,4),y=c(5.5,4.5,6.5,7.5))
 
 save_e61("SIPRI_defence.png",res=2)
+save_e61("SIPRI_defence.svg")
 
 
 ### Non-employee

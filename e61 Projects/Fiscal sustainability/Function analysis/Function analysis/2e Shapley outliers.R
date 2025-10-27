@@ -33,7 +33,8 @@ baseline_year   <- 1999      # optional: force a baseline year; NA = first year 
 features <- c("0_14","15_34","35_54","55_64","65p","tot",
               "rp_g","unemp") # ,"dln_pop""unemp",
 outlier_years <- c(2020, 2021)   # Years we remove from estimation for being outliers
-govt_level    <- "total"        # Either total, or just "Federal" - not currently operational. Only requires a change to one line, but will need to change all the saves.
+govt_level    <- "total"        # Either total, or just "Federal".
+level <- "Consolidated" # This is the name for saving files - change to be consistent with above
 
 # -------------------- Helpers --------------------
 # AU FY ends in June: add 6m and take year
@@ -230,8 +231,12 @@ check[table_no =="5206017_gen_govt_income_account" & series == "Total income pay
 # -------------------- ABS 5206.0: GFCE, GFCF, GDP --------------------
 # Pulls General government totals (excludes National/State & local),
 # GFCE + GFCF (both bases where available), and GDP (nominal & chain volume).
-get_gfce_gdp <- function(freq = c("FY","CY"), check_local = TRUE, verbose = TRUE) {
-  freq <- match.arg(freq)
+get_gfce_gdp <- function(freq = c("FY","CY"),
+                         govt_level = c("total","Federal"),
+                         check_local = TRUE,
+                         verbose = TRUE) {
+  freq       <- match.arg(freq)
+  govt_level <- match.arg(govt_level)
   
   # ---- Load & prep ----
   na <- as.data.table(read_abs("5206.0", check_local = check_local))
@@ -256,8 +261,19 @@ get_gfce_gdp <- function(freq = c("FY","CY"), check_local = TRUE, verbose = TRUE
   is_rev   <- function(s)  grepl("Revisions", s, TRUE)
   
   #
-  is_gen_gov_total <- function(s) grepl("^\\s*General\\s+government\\s*;\\s*", s, TRUE) &&
-    !grepl("National|State and local", s, TRUE)
+  # is_gen_gov_total <- function(s) grepl("^\\s*General\\s+government\\s*;\\s*", s, TRUE) &&
+  #   !grepl("National|State and local", s, TRUE)
+  
+  # Add new line to identify Federal when needed
+  is_gen_gov_total <- function(s) {
+    if (govt_level == "Federal") {
+      grepl("^\\s*General\\s+government\\s*;\\s*National", s, TRUE)
+    } else {
+      grepl("^\\s*General\\s+government\\s*;\\s*", s, TRUE) &&
+        !grepl("National|State and local", s, TRUE)
+    }
+  }
+  
   is_gfce    <- function(s) grepl("Final\\s+consumption\\s+expenditure\\s*;", s, TRUE)
   is_gfcf    <- function(s) grepl("Gross\\s+fixed\\s+capital\\s+formation\\s*;", s, TRUE)
   is_bad_var <- function(s) grepl("Percentage\\s+changes|Index", s, TRUE)
@@ -453,14 +469,16 @@ get_terms_of_trade <- function(freq = c("FY","CY"), check_local = TRUE) {
 
 # -------------------- Build dataset: spend/GDP and age shares --------------------
 build_share_dataset <- function(freq = c("FY","CY"),
-                                measure = c("GFCE","GFCE_plus_GFCF","Expenditures"),
+                                measure = c("GFCE","GFCE_plus_GFCF","Expenditure"),
+                                govt_level = c("total","Federal"),
                                 share_basis = c("nominal","real"),
                                 check_local = TRUE) {
   freq        <- match.arg(freq)
   measure     <- match.arg(measure)
+  govt_level     <- match.arg(govt_level)
   share_basis <- match.arg(share_basis)
   
-  na  <- get_gfce_gdp(freq = freq, check_local = check_local)
+  na  <- get_gfce_gdp(freq = freq, check_local = check_local,govt_level = govt_level)
   erp <- get_erp_total_and_shares(freq = freq, check_local = check_local)
   dt  <- merge(na, erp, by = "year", all = FALSE)
   if (!nrow(dt)) stop("No overlapping years between 5206.0 and 3101.0.")
@@ -474,7 +492,7 @@ build_share_dataset <- function(freq = c("FY","CY"),
     "GFCE_plus_GFCF" = {
       if (share_basis == "nominal") dt$gfce_nom + dt$gfcf_nom else dt$gfce_real + dt$gfcf_real
     },
-    "Expenditures" = {
+    "Expenditure" = {
       # Transfers only available in nominal from Table 17
       if (share_basis == "real") {
         stop("Transfers (‘Total income payable ;’) are only available in nominal terms. ",
@@ -752,7 +770,7 @@ dt_unemp <- as.data.table(read_abs("6202.0", tables = "1", check_local = abs_che
 dt_unemp <- dt_unemp[series == "Unemployment rate ;  Persons ;" & series_type == "Seasonally Adjusted"]
 unemp_a <- annualise(dt_unemp, out_name = "unemp", mode = "mean", freq = freq)
 
-share_dt <- build_share_dataset(freq, measure, share_basis, check_local = abs_check_local)
+share_dt <- build_share_dataset(freq, measure, govt_level = govt_level,share_basis, check_local = abs_check_local)
 share_dt <- merge(share_dt, tot_a, by = "year", all.x = TRUE)
 share_dt[, tot := as.numeric(scale(tot_index, center = TRUE, scale = TRUE))] # Standardise TOT so it is on a similar scale to other variables
 if (exists("unemp_a")) {
@@ -1045,8 +1063,8 @@ if (exists("four_bin") && nrow(four_bin)) {
   print(p4c)
 }
 
-save_e61(paste0("Shapley_",measure,".png"),res=2)
-save_e61(paste0("Shapley_",measure,".svg"))
+save_e61(paste0("Shapley_",measure,"_",level,".png"),res=2)
+save_e61(paste0("Shapley_",measure,"_",level,".svg"))
 
 # Counterfactual example: hold age structure fixed at earliest year
 b0 <- min(dt_est$year)
@@ -1055,10 +1073,10 @@ message("▶ Counterfactual vs actual (age fixed at ", b0, "): showing first few
 print(head(cf))
 
 # Save key outputs
-fwrite(share_dt, paste0("age_share_input_",measure,".csv"))
-if (nrow(four_bin)) fwrite(four_bin, paste0("shapley_age_fourbin_",measure,".csv"))
-if (nrow(panel))    fwrite(panel,    paste0("shapley_age_panel_",measure,".csv"))
-fwrite(cf,          paste0("age_counterfactual_path_",measure,".csv"))
+fwrite(share_dt, paste0("age_share_input_",measure,"_",level,".csv"))
+if (nrow(four_bin)) fwrite(four_bin, paste0("shapley_age_fourbin_",measure,"_",level,".csv"))
+if (nrow(panel))    fwrite(panel,    paste0("shapley_age_panel_",measure,"_",level,".csv"))
+fwrite(cf,          paste0("age_counterfactual_path_",measure,"_",level,".csv"))
 
 message("Done.")
 
@@ -1160,11 +1178,11 @@ print(plot_counterfactuals(
                         baseline_year, min(share_dt$year), max(share_dt$year)),"Government spending estimated from National Accounts data as GFCE + GFCF + Total income payable. This includes interest and current transfers to households and firms.")
 ))
 
-save_e61(paste0("Demographic_Adjusted_",measure,".png"),res=2)
-save_e61(paste0("Demographic_Adjusted_",measure,".svg"))
+save_e61(paste0("Demographic_Adjusted_",measure,"_",level,".png"),res=2)
+save_e61(paste0("Demographic_Adjusted_",measure,"_",level,".svg"))
 
 # Save the table if useful
-fwrite(cf_paths, paste0("counterfactual_paths_generalgov_",measure,".csv"))
+fwrite(cf_paths, paste0("counterfactual_paths_generalgov_",measure,"_",level,".csv"))
 
 # ===================== Helpers: manual Shapley by custom ranges =====================
 nearest_year <- function(target, years) years[which.min(abs(years - target))]
@@ -1376,7 +1394,7 @@ save_e61(paste0("GFCE_to_GDP_projection_", measure, ".svg"))
 
 
 # Save projected numbers
-fwrite(plot_dt, paste0("gfce_to_gdp_history_fit_projection_",measure,".csv"))
+fwrite(plot_dt, paste0("gfce_to_gdp_history_fit_projection_",measure,"_",level,".csv"))
 
 plot_dt
 

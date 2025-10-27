@@ -101,7 +101,9 @@ ggplot(Consolidated_info[!is.na(Payments_norm_con)], aes(x = Year)) +
   labs_e61(title = "Spending follows old GDP trends",
            subtitle = "Deflated by GDPD, indexed to 1 in FY99/20",
            y="",
-           x="") +
+           x="",
+           sources = c("ABS","e61")) +
   scale_y_continuous_e61(limits = c(1,2.2,0.5))
 
 save_e61("Cons_spending_GDP.png",res=2)
+save_e61("Cons_spending_GDP.svg")

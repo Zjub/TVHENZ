@@ -41,6 +41,7 @@ ggplot(debt_long_rev,aes(x=Year,y=value*100,colour=Type)) + geom_line() +
            footnotes = c("Scenario reduces net migration by 80k and halves productivity growth to 0.6%pa, alongside lower real wage growth to match. Terms of trade shock reflects a 45% decline in key export prices to 2016 levels."))
 
 save_e61("Projections_debt_rev.png",res=2)
+save_e61("Projections_debt_rev.svg")
 
 ggplot(debt_long_rev,aes(x=Year,y=value*100,colour=Type)) + geom_line() +
   scale_y_continuous_e61(limits = c(30,70)) +
@@ -51,7 +52,7 @@ ggplot(debt_long_rev,aes(x=Year,y=value*100,colour=Type)) + geom_line() +
            sources = c("PBO Build Your Own Budget 25/26","e61"),
            footnotes = c("Scenario reduces net migration by 80k and halves productivity growth to 0.6%pa, alongside lower real wage growth to match. Terms of trade shock reflects a 45% decline in key export prices to 2016 levels."))
 
-save_e61("Projections_debt_rev.svg")
+
 
 debt_long_exp <- melt(debt_dt[,.(Year,Baseline,Defence,Def_NDIS,Def_NDIS_Inter)], id.vars = "Year",
                       variable.name = "Type",
@@ -70,5 +71,6 @@ ggplot(debt_long_exp,aes(x=Year,y=value*100,colour=Type)) + geom_line() +
            footnotes = c("Defence spending increased from 2.2% of GDP to 3.0% over five years.","NDIS spending grows at 10%pa rather than 8%pa.","Ten-year goverment bond rate rises to 5.5%pa from a 4.5%pa projection."))
 
 save_e61("Projections_debt_exp.png",res=2)
+save_e61("Projections_debt_exp.svg")
 
 

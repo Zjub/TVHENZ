@@ -92,9 +92,10 @@ ggplot(exp_dt2,aes(x=fin_year,y=real/1000,fill=agg_group)) +
   labs_e61(title = "Economic Affairs",
            sources = c("ABS","e61"),
            y="$m (2012 prices)") +
-  plab(c("General","Primary Industries (ex Mining)","Mining and heavy industries","Other"),x=rep(1999,4),y=c(90,80,70,60))
+  plab(c("General","Primary Industries (ex Mining)","Mining and heavy industries","Other"),x=rep(1999,4),y=c(85,75,65,55))
 
 save_e61("Economic_affairs_type.png",res=2)
+save_e61("Economic_affairs_type.svg")
 
 ### Understand more about general
 
@@ -114,10 +115,11 @@ g_dt <- general_dt2[,.(nom_total = sum(nominal)),by=.(fin_year)][general_dt2,on=
 ggplot(g_dt,aes(x=fin_year,y=prop_nom_total*100,fill=agg_expense)) + geom_col() + 
   theme_e61(legend = "bottom") +
   labs_e61(title = "Economic Activity expenses",
-           y = "% share of annual spending") +
+           y = "% share of annual spending",
+           sources = c("ABS","e61")) +
   scale_y_continuous_e61()
 
 save_e61("Economic_activity_expenses.png",res=2,auto_scale = FALSE)
-
+save_e61("Economic_activity_expenses.svg",auto_scale = FALSE)
 
 

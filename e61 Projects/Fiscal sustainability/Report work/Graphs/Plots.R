@@ -173,12 +173,14 @@ f7_dt <- read_excel("Graph_data.xlsx",
 
 setDT(f7_dt)
 
+f7_dt[,level := factor(level,levels = c("State","Federal"))]
+
 ggplot(f7_dt,aes(x=year,y=Revenue,colour=level)) + geom_line() + 
   labs_e61(title = "Revenue by Government level",
            y= "% NGDP",
            sources = c("OECD","e61")) +
   scale_y_continuous_e61(limits=c(10,26,4)) +
-  plab(c("Federal","Non-Federal"),x=c(2009,2009),y=c(21,13))
+  plab(c("Non-Federal","Federal"),x=c(2009,2009),y=c(13,21))
 
 save_e61("Figure_7.png",res=2)
 save_e61("Report_graph/Figure_7.svg")
@@ -211,6 +213,9 @@ ggplot(f8a_dt, aes(x = Country, y = value*100, fill = Government_level)) +
            sources = c("e61","OECD"),
            footnotes = c("Dark blue is spending by Federal Govt % GDP. Light blue is additional spending attributed to non-Federal entities.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries.")) +
   plab(c("Non-Federal","Federal"),x=c(1.5,3.5),y=c(40,40))
+
+save_e61("Figure_8a.png",res=2)
+save_e61("Report_graph/Figure_8a.svg")
 
 
 ## Figure 8b: Cross-country revenue
@@ -516,17 +521,201 @@ save_e61("Report_graph/Figure_22.svg",auto_scale = FALSE)
 
 # Figure 24: Shapley
 
+four_bin <- read_excel("Graph_data.xlsx", 
+                       sheet = "Figure_24")
+
+setDT(four_bin)
+
+features <- c("0_14","15_34","35_54","55_64","65p","tot",
+              "rp_g","unemp")
+measure         <- "GFCE"
+
+
+
+if (exists("four_bin") && nrow(four_bin)) {
+  measure_vars <- intersect(features, names(four_bin))
+  four_m <- melt(
+    four_bin,
+    id.vars       = c("y0","y1","d_actual","d_hat","unexplained"),
+    measure.vars  = measure_vars,
+    variable.name = "driver",
+    value.name    = "contrib"
+  )
+  
+  # Collapse into groups
+  age_bins <- c("0_14","15_34","35_54","55_64")
+  four_m[, group := fcase(
+    driver == "65p",              "65+",
+    driver %in% age_bins,         "Other ages",
+    default =                     "Economic effects"
+  )]
+  
+  # Aggregate explained contributions within groups
+  four_g <- four_m[, .(contrib = sum(contrib, na.rm = TRUE)),
+                   by = .(y0, y1, d_actual, d_hat, unexplained, group)]
+  
+  # Add Residual
+  residual_dt <- unique(four_m[, .(y0, y1, d_actual, d_hat, unexplained)])
+  residual_dt[, `:=`(group = "Residual", contrib = unexplained)]
+  four_g <- rbind(four_g, residual_dt[, .(y0, y1, d_actual, d_hat, unexplained, group, contrib)], use.names = TRUE)
+  
+  # Optional filter
+  four_g <- four_g[y0 != 1972]
+  
+  # Segment labels & ordering
+  four_g[, Segment := paste0(y0, "–", y1)]
+  seg_levels <- four_bin[y0 != 1972, paste0(y0, "–", y1)]
+  four_g[, Segment := factor(Segment, levels = seg_levels)]
+  
+  # ----- Key: force Residual to extremes -----
+  four_g[, stack_order := {
+    if (all(contrib[group=="Residual"] <= 0)) {
+      factor(group, levels = c("Residual","65+","Other ages","Economic effects"))
+    } else {
+      factor(group, levels = c("65+","Other ages","Economic effects","Residual"))
+    }
+  }, by = Segment]
+  
+  # Build the plot
+  p4c <- ggplot(four_g, aes(x = Segment, y = contrib*100, fill = stack_order)) +
+    geom_col() +
+    # Big solid dot = actual Δ
+    geom_point(
+      data = unique(four_g[, .(Segment, d_actual)]),
+      aes(x = Segment, y = d_actual*100),
+      inherit.aes = FALSE,
+      shape = 16, size = 5, color = "black"
+    ) +
+    geom_hline(yintercept = 0, linewidth = 0.4) +
+    coord_flip() +
+    labs_e61(
+      title = "Demographic trends dominate lift in spending",
+      x = NULL, y = "Contribution (level points)", fill = "Component",
+      footnotes = c("Regression based Shapely decomposition, explained in Appendix A.",paste0("Black dot reflects the change in ",measure," to GDP."),"Effects represent association between the change in the category and changes in spending to GDP.","Economic Effects reflect variation explained by changes in unemployment, relative government costs, and terms of trade."),
+      sources = c("e61","ABS")
+    ) +
+    plab(c("65+","Other ages","Economic effects***","Residual"),y=rep(3,4),x=c(2.2,1.7,1.2,0.7))
+  
+  print(p4c)
+}
+
+save_e61("Figure_24.png",res=2)
+save_e61("Report_graph/Figure_24.svg",auto_scale = FALSE)
 
 # Figure 25: Shapley counterfactual
 
 
 # Figure 26: Shapley projection
 
+# Figure 27a: Revenue risks
 
+# Figure 27b: Expenditure risks
+
+# Figure 28: Bond market shock projection
+
+### Health
+# Figure 28: 
+
+
+### Social
+# Figure 32
+f32_dt <- read_excel("Graph_data.xlsx", 
+                        sheet = "Figure_32")
+
+
+ggplot(f32_dt, aes(x = Year, y = Total)) +
+  geom_line() +
+  labs(
+    title = "Consolidated Social Protection Expenditure",
+    subtitle = "% of GDP",
+    sources = c("ABS", "e61")
+  ) + scale_y_continuous_e61(limits = c(0, 15, 5))
+
+save_e61("Figure_32.png", res=2, chart_type = "wide")
+save_e61("Report_graph/Figure_32.svg", chart_type = "wide")
+
+
+### Figure 33
+
+
+f33_dt <- read_excel("Graph_data.xlsx", 
+                   sheet = "Figure_33")
+
+# Define Anglo countries and custom colors
+anglos <- c("Australia", "Canada", "New Zealand", "United Kingdom", "United States")
+anglo_colors <- c(
+  "Australia" = "gold",
+  "Canada" = e61_teallight,
+  "New Zealand" = e61_orangedark,
+  "United Kingdom" = e61_coraldark,
+  "United States" = e61_bluedark
+)
+
+# Reshape and flag Anglo countries
+f33_dt <- f33_dt %>%
+  pivot_longer(-Year, names_to = "Country", values_to = "Value") %>%
+  mutate(
+    Anglo = Country %in% anglos,
+    Year = as.numeric(Year)
+  )
+
+# Plot
+ggplot(f33_dt, aes(x = Year, y = Value, group = Country)) +
+  geom_line(data = filter(f33_dt, !Anglo),
+            color = "lightgrey") +
+  geom_line(data = filter(f33_dt, Anglo),
+            aes(color = Country), size = 1.1) +
+  scale_color_manual(values = anglo_colors) +
+  labs_e61(title = "Social Expenditures by Country",
+           x = "", y = "Share of GDP (%)", footnotes = "Social Expenditure includes Expenditure on the Elderly, 
+       Families, Unemployment, Disability/Incapacity, and a small `other' category", 
+           color = "Anglo Countries", sources = c("OECD Social Expenditure Database", "e61")) + 
+  plot_label(c("Aus", "Can", "NZ", "UK", 
+               "US"), 
+             c(2018.5, 2005, 2010, 2010, 2005), 
+             c(3, 5, 5, 20, 12), 
+             c("gold", e61_teallight, e61_orangedark, e61_coraldark, e61_bluedark), size = 4) + 
+  xlim(2002, 2021)
+
+save_e61("Figure_33.png", res = 2, chart_type = "wide", dim = list(width = 13))
+save_e61("Report_graph/Figure_33.svg", chart_type = "wide", dim = list(width = 13))
+
+
+## Figure 34
+
+f34_dt <- read_excel("Graph_data.xlsx", 
+                 sheet = "Figure_34")
+
+setDT(f34_dt)
+
+f34_dt <- melt(f34_dt,id.vars = "Year")
+
+
+# Plot
+ggplot(f34_dt, aes(x = Year, y = value, color = variable)) +
+  geom_line() +
+  labs(
+    title = "Social Protection Expenditure by Type",
+    subtitle = "% of GDP",
+    sources = c("e61", "ABS"),
+    color = NULL
+  ) + plot_label(c("Age", "Disability",  "Family", "Other", "Unemployment"), 
+                 c(2020, 2020, 2007, 2020, 2012), 
+                 c(4.8, 3.2, 3, 1.7, 1.6),
+                 colour = c(palette_e61(5)[2],palette_e61(5)[1],palette_e61(5)[3],palette_e61(5)[4],palette_e61(5)[5])) + scale_y_continuous_e61(limits = c(0, 5, 1))
+
+save_e61("Figure_34.png", res=2, chart_type = "wide", dim = list(width = 14))
+save_e61("Report_graph/Figure_34.svg", chart_type = "wide", dim = list(width = 14))
 
 # Figure 35:
 
-ggplot(melt(Dem_adj_SP,id.vars = "Year"),aes(x=Year,y=value,colour=variable)) + geom_line() +
+f35_dt <- read_excel("Graph_data.xlsx", 
+                     sheet = "Figure_35")
+
+setDT(f35_dt)
+
+
+ggplot(melt(f35_dt,id.vars = "Year"),aes(x=Year,y=value,colour=variable)) + geom_line() +
   geom_hline(yintercept = 1) + 
   scale_y_continuous_e61(limits = c(0.8,1.6)) +
   labs_e61(title = "Aged care spending not just about ageing",
@@ -534,6 +723,150 @@ ggplot(melt(Dem_adj_SP,id.vars = "Year"),aes(x=Year,y=value,colour=variable)) + 
            sources = c("ABS","e61"),
            footnotes = c("Plot illustrates the ratio of spending compared to a counterfactual where spending by demographic group remained fixed as a % of GDP.")) +
   plab(c("Aged Care","Family Support"),x=c(2011,1999),y=c(0.9,1.3))
+
+save_e61("Figure_35.png", res=2, chart_type = "wide", dim = list(width = 14))
+save_e61("Report_graph/Figure_35.svg", chart_type = "wide", dim = list(width = 14))
+
+
+# Figure 36
+
+f36_dt <- read_excel("Graph_data.xlsx", 
+                 sheet = "Figure_36")
+
+setDT(f36_dt)
+
+f36_dt <- melt(f36_dt,id.vars = "Year")
+
+# Plot
+ggplot(f36_dt, aes(x = Year, y = value, color = variable)) +
+  geom_line() +
+  labs_e61(
+    title = "Types of Social Protection Support",
+    subtitle = "% of GDP",
+    color = NULL, 
+    footnotes = c("In-Kind includes Social benefits to households in goods and services, and Use of goods and services.","Other reflects the costs of administration."), 
+    sources = c("ABS", "e61"),
+  ) + plot_label(c( "In-kind", "Cash payments", "Other"), c(2020, 2015, 2020), 
+                 c(4.2, 7.5, 2))
+
+save_e61("Figure_36.png", res=2, chart_type = "wide", dim = list(width = 13))
+save_e61("Figure_36.svg", chart_type = "wide", dim = list(width = 13))
+
+
+# Figure 37a
+
+f37a_dt <- read_excel("Graph_data.xlsx", 
+                 sheet = "Figure_37_a")
+
+f37a_dt <- f37a_dt %>% mutate(Category = factor(Category, levels = unique(Category)))
+
+# net sum (positives + negatives) per Category
+totals <- f37a_dt %>%
+  group_by(Category) %>%
+  summarise(Net = sum(ChangeSince2000), .groups = "drop")
+
+setDT(f37a_dt)
+setDT(totals)
+
+
+ggplot(f37a_dt[Category != "Other"], aes(x = Category, y = ChangeSince2000, fill = Type)) +
+  geom_col() +
+  geom_hline(yintercept = 0, colour = "black") +
+  # dot for net total — don't inherit the global 'fill = Type'
+  geom_point(data = totals[Category != "Other"],
+             aes(x = Category, y = Net),
+             inherit.aes = FALSE,
+             size = 1, colour = "black") +
+  labs_e61(
+    title = "Change in Social Protection Expenditure, Since 2000",
+    y = "Change in ppt of GDP",
+    footnotes = c("In-Kind includes Social benefits to households in goods and services, and Use of goods and services.","Other reflects the costs of administration."),
+    sources = c("ABS","e61"),
+  ) + scale_y_continuous_e61(limits = c(-1.5, 2, 0.5)) +
+  plab(c("In-kind","Cash","Other"),x=c(3,3,3),y=c(1.8,1.3,0.8))
+
+save_e61("Figure_37a.png", res = 2, chart_type = "wide")
+save_e61("Figure_37a.svg", chart_type = "wide")
+
+
+### Figure 37b
+
+f37b_dt <- read_excel("Graph_data.xlsx", 
+                 sheet = "Figure_37_b")
+
+setDT(f37b_dt)
+
+f37b_dt[,Category := factor(Category,levels = c("NDIS","Aged Care","Other Cash","JSP","Family","Pension","Total"))]
+
+# compute starts/ends for floating bars (exclude Total while accumulating)
+parts <- f37b_dt %>%
+  filter(Category != "Total") %>%
+  mutate(
+    start = c(0, head(cumsum(Projected_Change), -1)),
+    end   = start + Projected_Change
+  )
+
+# build the Total bar explicitly from 0 → sum(parts)
+total_val <- sum(parts$Projected_Change)
+total_row <- f37b_dt %>% filter(Category == "Total") %>%
+  transmute(Category, Change = total_val, Projected_Change,
+            start = 0, end = total_val)
+
+wf <- bind_rows(parts, total_row) %>%
+  mutate(id = row_number())  # numeric x for geom_rect
+
+setDT(wf)
+
+wf[,colour := fifelse(Category == "Total", "blue",fifelse(Projected_Change < 0,"forestgreen","darkred"))]
+
+# plot
+ggplot(wf) +
+  geom_rect(aes(xmin = id - 0.45, xmax = id + 0.45,
+                ymin = pmin(start, end), ymax = pmax(start, end),
+                fill = colour)) +
+  scale_fill_identity() +  
+  geom_hline(yintercept = 0) +
+  scale_x_continuous(breaks = wf$id, labels = wf$Category, expand = c(0.01, 0.01)) +
+  labs_e61(title = "Projected Change In Social Protection Payments to 2063",
+       x = NULL, y = "Change in Share of GDP (ppt)",
+       sources = c("Treasury IGR 2023"))
+
+# Compute label positions
+labs_dt <- wf[, .(id, Category)]
+labs_dt[, y := -0.05]                     # base offset below axis
+labs_dt[seq(2, .N, 2), y := -0.3]       # lower every second label
+
+ggplot(wf) +
+  geom_rect(aes(xmin = id - 0.45, xmax = id + 0.45,
+                ymin = pmin(start, end), ymax = pmax(start, end),
+                fill = colour)) +
+  scale_fill_identity() +
+  geom_hline(yintercept = 0) +
+  # hide built-in x labels
+  scale_x_continuous(breaks = NULL, expand = c(0.01, 0.01)) +
+  geom_text(data = labs_dt, aes(x = id, y = y, label = Category), vjust = 1, size = 3.5) +
+  labs_e61(
+    title = "Projected Change In Social Protection Payments to 2063",
+    x = "",
+    y = "Change in Share of GDP (ppt)",
+    footnotes = c("Other cash reflects working age payments not included in other categories."),
+    sources = c("Treasury IGR 2023")
+  ) +
+  theme_e61(legend = "none")
+
+
+save_e61("Figure_37b.png",res=2)
+save_e61("Figure_37b.svg")
+
+
+### Economic affairs
+
+# Figure 38: Economic affairs outline
+
+
+
+
+
 
 
 
