@@ -33,8 +33,8 @@ baseline_year   <- 1999      # optional: force a baseline year; NA = first year 
 features <- c("0_14","15_34","35_54","55_64","65p","tot",
               "rp_g","unemp") # ,"dln_pop""unemp",
 outlier_years <- c(2020, 2021)   # Years we remove from estimation for being outliers
-govt_level    <- "total"        # Either total, or just "Federal".
-level <- "Consolidated" # This is the name for saving files - change to be consistent with above (Federal or Consolidated)
+govt_level    <- "State"        # Either total, or just "Federal", or "State".
+level <- "State" # This is the name for saving files - change to be consistent with above (Federal, State, or Consolidated)
 
 # -------------------- Helpers --------------------
 # AU FY ends in June: add 6m and take year
@@ -232,7 +232,7 @@ check[table_no =="5206017_gen_govt_income_account" & series == "Total income pay
 # Pulls General government totals (excludes National/State & local),
 # GFCE + GFCF (both bases where available), and GDP (nominal & chain volume).
 get_gfce_gdp <- function(freq = c("FY","CY"),
-                         govt_level = c("total","Federal"),
+                         govt_level = c("total","Federal","State"),
                          check_local = TRUE,
                          verbose = TRUE) {
   freq       <- match.arg(freq)
@@ -267,11 +267,16 @@ get_gfce_gdp <- function(freq = c("FY","CY"),
   # Add new line to identify Federal when needed
   is_gen_gov_total <- function(s) {
     if (govt_level == "Federal") {
-      # Match "General government - National" or "General government; National"
+      # Federal: National totals, excluding Defence / Non-defence
       grepl("^\\s*General\\s+government\\s*[-;]\\s*National", s, ignore.case = TRUE) &&
         !grepl("Defence|Non[-\\s]?defence", s, ignore.case = TRUE)
+      
+    } else if (govt_level == "State") {
+      # State: Only "State and local"
+      grepl("^\\s*General\\s+government\\s*[-;]\\s*State\\s+and\\s+local", s, ignore.case = TRUE)
+      
     } else {
-      # Match "General government ;" but exclude National and State/local
+      # Total: General government (all levels) excluding National and State/local
       grepl("^\\s*General\\s+government\\s*[-;]\\s*", s, ignore.case = TRUE) &&
         !grepl("National|State and local", s, ignore.case = TRUE)
     }
@@ -333,7 +338,7 @@ get_gfce_gdp <- function(freq = c("FY","CY"),
   gfcf_real_a  <- ann(gfcf_real_q,  "gfcf_real")
   gdp_nom_a    <- ann(gdp_nom_q,    "gdp_nom")
   gdp_real_a   <- ann(gdp_real_q,   "gdp_real")
-  tip_nom_a    <- if (nrow(tip_q)) ann(tip_q, "total_income_payable_nom") else data.table(year=integer(), total_income_payable_nom=double())
+  tip_nom_a    <- if (nrow(tip_q) & govt_level != "State") ann(tip_q, "total_income_payable_nom") else data.table(year=integer(), total_income_payable_nom=double()) # Do not count this information if we are looking at the Non-Federal data.
   
   out <- Reduce(function(x, y) merge(x, y, by = "year", all = TRUE),
                 list(gfce_nom_a, gfce_real_a, gfcf_nom_a, gfcf_real_a, gdp_nom_a, gdp_real_a, tip_nom_a))
@@ -473,7 +478,7 @@ get_terms_of_trade <- function(freq = c("FY","CY"), check_local = TRUE) {
 # -------------------- Build dataset: spend/GDP and age shares --------------------
 build_share_dataset <- function(freq = c("FY","CY"),
                                 measure = c("GFCE","GFCE_plus_GFCF","Expenditure"),
-                                govt_level = c("total","Federal"),
+                                govt_level = c("total","Federal","State"),
                                 share_basis = c("nominal","real"),
                                 check_local = TRUE) {
   freq        <- match.arg(freq)
@@ -496,18 +501,18 @@ build_share_dataset <- function(freq = c("FY","CY"),
       if (share_basis == "nominal") dt$gfce_nom + dt$gfcf_nom else dt$gfce_real + dt$gfcf_real
     },
     "Expenditure" = {
-      # Transfers only available in nominal from Table 17
-      if (share_basis == "real") {
-        stop("Transfers (‘Total income payable ;’) are only available in nominal terms. ",
-             "Select share_basis = 'nominal' or choose a different measure.")
+      # TIP is only available for General government (total). Not split by State/National.
+      if (share_basis == "real")
+        stop("Transfers (‘Total income payable ;’) are nominal-only. Use share_basis='nominal' or a different measure.")
+      tip <- if (govt_level == "State") {
+        0  # no TIP split available for State+Local in 5206, so set to zero for State (attribute all to Federal level)
+      } else {
+        if (!"total_income_payable_nom" %in% names(dt))
+          stop("Column 'total_income_payable_nom' not found. Use updated get_gfce_gdp() that pulls Table 17.")
+        dt$total_income_payable_nom
       }
-      if (!"total_income_payable_nom" %in% names(dt)) {
-        stop("Column 'total_income_payable_nom' not found. ",
-             "Ensure get_gfce_gdp() is the updated version that adds Table 17 ‘Total income payable ;’.")
-      }
-      dt$gfce_nom + dt$gfcf_nom + dt$total_income_payable_nom
+      dt$gfce_nom + dt$gfcf_nom + tip
     },
-    
     stop("Unhandled measure: ", measure)
   )
   
