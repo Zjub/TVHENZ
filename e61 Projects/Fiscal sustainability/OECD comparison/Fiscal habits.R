@@ -102,8 +102,11 @@ ggplot(Consolidated_info[!is.na(Payments_norm_con)], aes(x = Year)) +
            subtitle = "Deflated by GDPD, indexed to 1 in FY99/20",
            y="",
            x="",
-           sources = c("ABS","e61")) +
+           sources = c("OECD","e61")) +
   scale_y_continuous_e61(limits = c(1,2.2,0.5))
 
 save_e61("Cons_spending_GDP.png",res=2)
 save_e61("Cons_spending_GDP.svg")
+
+
+Consolidated_info[!is.na(Payments_norm_con) & Year %in% c(2000,2014,2022)]

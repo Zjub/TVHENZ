@@ -30,7 +30,7 @@ setDT(f1_dt)
 ggplot(f1_dt,aes(x=fin_year,y=prop*100,colour=variable)) + geom_line() +
   scale_y_continuous_e61(limits = c(32,48,4)) +
   labs_e61(title = "Consolidated government expenditure",
-           y = "% NGDP",
+           y = "% GDP",
            sources = c("ABS","e61"),
            footnotes = c("Expenditure includes current expenses and net acquisition of non-financial assets")) + 
   plab(c("Current expenses","Total expenditure"),x=c(2010,2008),y=c(33,41))
@@ -46,11 +46,11 @@ f2_dt <- read_excel("Graph_data.xlsx",
 
 setDT(f2_dt)
 
-f2_dt[,variable := factor(variable,levels = c("Commonwealth","States","National"))]
+f2_dt[,variable := factor(variable,levels = c("States","Commonwealth","National"))]
 
 ggplot(f2_dt,aes(x=year,y=value,colour=variable)) + geom_line() + geom_line() +
   labs_e61(title = "Persistent Fiscal Imbalance",
-           y = "Fiscal balance, % NGDP",
+           y = "Fiscal balance, % GDP",
            sources =c("PBO","Budget 2026","e61"),
            footnotes = c("Uses the 2025 National Fiscal Outlook by the PBO, updated with Budget 2026 estimates.","Plot to the right of the dashed line reflect Budget/PBO estimates.")) + # , with estimates updated for the 2026 Final Budget Outcome - checked and this isn't in FBO, which is more cut down.
   geom_hline(yintercept = 0) +
@@ -72,9 +72,9 @@ setDT(f3_dt)
 ggplot(melt(f3_dt,id.vars = "Year"),aes(x=Year,y=value,colour =variable)) + geom_line() +
   scale_y_continuous_e61(limits = c(-10,40,10)) + geom_hline(yintercept = 0) +
   labs_e61(title = "Net debt projected to keep rising",
-           y = "% NGDP",
+           y = "% GDP",
            sources = c("PBO","e61"),
-           footnotes = c("Actuals and projections come from the 2024/25 National Fiscal Outlook")) +
+           footnotes = c("Actuals and projections come from the 2024/25 National Fiscal Outlook","Plot to the right of the dashed line reflect Budget/PBO estimates.")) +
   geom_vline(xintercept = 2023,linetype = "dashed") +
   plab(c("State","Federal","National"),x=c(2013,2005,2005),y=c(-5,25,35))
 
@@ -113,7 +113,7 @@ f5a_dt[,Level := factor(Level,levels = c("Non-Federal","Federal"))]
 ggplot(f5a_dt,aes(x=Year,y=value,colour=Level)) + geom_line() +
   labs_e61(
     title = "Expenditure by Government level",
-    y = "% NGDP",
+    y = "% GDP",
     sources = c("e61","OECD"),
     footnotes = c("Spending shares based on OECD standard consolidation.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries.")
   ) + scale_y_continuous_e61(limits = c(15,27.5,2.5)) +
@@ -121,8 +121,6 @@ ggplot(f5a_dt,aes(x=Year,y=value,colour=Level)) + geom_line() +
 
 save_e61("Figure_5a.png",res=2)
 save_e61("Report_graph/Figure_5a.svg")
-
-
 
 ## Figure 5b: Contribution growth by government level
 
@@ -148,6 +146,30 @@ ggplot(f5b_dt, aes(x = Year, y = change_pp, fill = Level)) +
 save_e61("Figure_5b.png",res=2)
 save_e61("Report_graph/Figure_5b.svg")
 
+
+## New Figure 5:
+
+p5a <- ggplot(f5a_dt,aes(x=Year,y=value,colour=Level)) + geom_line() +
+  labs_e61(
+    title = "A. Expenditure by Government level",
+    y = "% GDP"
+  ) + scale_y_continuous_e61(limits = c(15,27.5,2.5)) +
+  plab(c("Non-Federal","Federal"),x=c(1999,1999),y=c(18,21.5))
+
+p5b <- ggplot(f5b_dt, aes(x = Year, y = change_pp, fill = Level)) +
+  geom_col(position = "dodge") +
+  geom_hline(yintercept = 0) +
+  labs_e61(
+    title = "B. Contribution to growth",
+    subtitle = paste0("Change (% of GDP) relative to 1999"),
+    y = "") +
+  scale_y_continuous_e61() +
+  plab(c("Non-Federal","Federal"),x=c(1998,1998),y=c(3.5,5))
+
+save_e61("Figure_5.png",p5a,p5b,res=2,sources = c("e61","OECD"), title = "Consolidated Expenditure",
+         footnotes = c("Spending shares based on OECD standard consolidation.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries."))
+save_e61("Figure_5.svg",p5a,p5b,sources = c("e61","OECD"), title = "Consolidated Expenditure",
+         footnotes = c("Spending shares based on OECD standard consolidation.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries."))
 
 ## Figure 6: Untied data ratio
 
@@ -177,7 +199,7 @@ f7_dt[,level := factor(level,levels = c("State","Federal"))]
 
 ggplot(f7_dt,aes(x=year,y=Revenue,colour=level)) + geom_line() + 
   labs_e61(title = "Revenue by Government level",
-           y= "% NGDP",
+           y= "% GDP",
            sources = c("OECD","e61")) +
   scale_y_continuous_e61(limits=c(10,26,4)) +
   plab(c("Non-Federal","Federal"),x=c(2009,2009),y=c(13,21))
@@ -208,7 +230,7 @@ ggplot(f8a_dt, aes(x = Country, y = value*100, fill = Government_level)) +
   ) +
   coord_flip() +
   labs_e61(title = "Expenditure: Cross-country (2022)",
-           y = "% NGDP",
+           y = "% GDP",
            subtitle = "",
            sources = c("e61","OECD"),
            footnotes = c("Dark blue is spending by Federal Govt % GDP. Light blue is additional spending attributed to non-Federal entities.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries.")) +
@@ -241,7 +263,7 @@ ggplot(f8b_dt, aes(x = country, y = value, fill = level)) +
   ) +
   coord_flip() +
   labs_e61(title = "Revenue: Cross-country (2022)",
-           y = "% NGDP",
+           y = "% GDP",
            subtitle = "",
            sources = c("e61","OECD"),
            footnotes = c("Dark blue is spending by Federal Govt % GDP. Light blue is additional spending attributed to non-Federal entities.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries.")) +
@@ -249,6 +271,42 @@ ggplot(f8b_dt, aes(x = country, y = value, fill = level)) +
 
 save_e61("Figure_8b.png",res=2)
 save_e61("Report_graph/Figure_8b.svg")
+
+## New Figure 8:
+
+p8a <- ggplot(f8a_dt, aes(x = Country, y = value*100, fill = Government_level)) +
+  geom_col() +
+  geom_col(
+    data = f8a_dt[Country == "Australia"],
+    aes(x = Country, y = value*100, group = Government_level),
+    fill = NA, colour = "gold", linewidth = 1, inherit.aes = TRUE
+  ) +
+  coord_flip() +
+  labs_e61(title = "A. Expenditure",
+           y = "% GDP",
+           subtitle = "") +
+  plab(c("Non-Federal","Federal"),x=c(1.5,3.5),y=c(40,40))+
+  theme(axis.text.y = element_text(size = 6))
+
+p8b <- ggplot(f8b_dt, aes(x = country, y = value, fill = level)) +
+  geom_col() +
+  geom_col(
+    data = f8b_dt[country == "Australia"],
+    aes(x = country, y = value, group = level),
+    fill = NA, color = "gold", linewidth = 1, inherit.aes = TRUE
+  ) +
+  coord_flip() +
+  labs_e61(title = "B. Revenue",
+           y = "% GDP",
+           subtitle = ""
+           ) +
+  plab(c("Non-Federal","Federal"),x=c(1.5,3.5),y=c(40,40))+
+  theme(axis.text.y = element_text(size = 6))
+
+save_e61("Figure_8.png",p8a,p8b,res=2,sources = c("e61","OECD"), title = "Cross-country comparison (2022)",
+         footnotes = c("Dark blue is spending by Federal Govt % GDP. Light blue is additional spending attributed to non-Federal entities.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries."))
+save_e61("Figure_8.svg",p8a,p8b,sources = c("e61","OECD"), title = "Consolidated Expenditure",
+         footnotes = c("Dark blue is spending by Federal Govt % GDP. Light blue is additional spending attributed to non-Federal entities.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries."))
 
 
 ## Figure 9: Low vs high
@@ -517,6 +575,35 @@ save_e61("Report_graph/Figure_22.svg",auto_scale = FALSE)
 
 # Figure 23: Stickiness
 
+f23_dt <- read_excel("Graph_data.xlsx", 
+                     sheet = "Figure_23")
+
+setDT(f23_dt)
+
+ggplot(f23_dt, aes(x = fin_year)) +
+  geom_line(aes(y = Payments_norm, color = "Payments")) +
+  geom_line(aes(y = RGDP_norm, color = "NGDP")) +
+  geom_line(aes(y = RGDP_trend, color = "Pre-2014 NGDP Trend"), linetype = "dashed") +
+  scale_color_manual(values = c("Payments" = palette_e61(3)[1], "NGDP" = palette_e61(3)[2], "Pre-2014 NGDP Trend" = "black")) +
+  labs(y = "Indexed to FY2000 = 1", x = "Financial Year", color = "Series") +
+  plab(c("Real Govt Payments","GDP","2000-2014 GDP trend"),x=c(2000.5,2000.5,2000.5),y=c(2.1,1.85,1.7),colour = c(palette_e61(3)[1],palette_e61(3)[2],"black")) +
+  labs_e61(title = "Spending follows old GDP trends",
+           subtitle = "Deflated by GDPD, indexed to 1 in FY99/20",
+           y="",
+           x="",
+           sources = c("ABS","e61")) +
+  scale_y_continuous_e61(limits = c(1,2.2,0.5))
+
+save_e61("Figure_23.png",res=2)
+save_e61("Report_graph/Figure_23.svg",auto_scale = FALSE)
+
+f23_dt[fin_year %in% c(2000,2011,2024)]
+
+(1.382947/1)^(1/11)-1
+(1.385045/1)^(1/11)-1
+
+(1.997286/1.382947)^(1/13)-1
+(1.908311/1.385045)^(1/13)-1
 
 
 # Figure 24: Shapley
