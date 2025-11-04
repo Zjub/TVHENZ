@@ -316,21 +316,23 @@ p_hist_proj_debt <- ggplot(plot_df3, aes(year, b*100, colour = scenario, group =
   geom_vline(xintercept = last_hist_year + 0.5, linetype = "dotted") +
   geom_vline(xintercept = 2024, linetype = "dotted") +
   labs_e61(
-    title    = "Gross debt-to-GDP — interest rate shock",
+    title    = "Bond market shock scenario",
     x = NULL, y = "Gross Debt / GDP",
     sources  = c("e61","ABS","PBO"),
     footnotes = c("The full shock reflects an external debt crisis in the US that drives up domestic bond rates - generating an economic response. It includes an estimated GDP response, combined with automatic changes to government expenditure and revenue. No policy response is included.","Shock shown involves a three year 150bp increase in the 10-year bond rate in 2030, with a persistent 50bp change in later years.")
   ) +
-  plab(c("150bp higher interest rates","External bond market shock","Base Scenario"),
-       x = c(1980,1980,1980), y = c(45,55,35))
+  plab(c("Mechanical interest change","External bond market shock","Base Scenario"),
+       x = c(1971,1971,1971), y = c(45,55,35))
 
 print(p_hist_proj_debt)
 
 save_e61("Updated_Interest_rate_shock.png",res=2)
+save_e61("Updated_Interest_rate_shock.svg")
 
 plot_df3[year %in% c(2025,2055)]
 
 # Final dataset
-out[year == 2059]
+out[year == 2055]
+
 
 

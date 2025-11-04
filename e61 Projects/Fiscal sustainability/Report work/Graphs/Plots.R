@@ -380,7 +380,7 @@ setDT(f12_dt)
 ggplot(f12_dt,aes(x=cofog_div_name,y=value,fill=variable)) + geom_col(position = "dodge") + 
   coord_flip() +
   scale_y_continuous_e61(limits = c(0,50,10)) + 
-  plab(c("Contribution to growth","Size in 2024*"),y=c(20,20),x=c(1.5,3.5)) +
+  plab(c("Contribution to growth","Size in 1999*"),y=c(20,20),x=c(1.5,3.5)) +
   labs_e61(title = "Health drives growth since 1999",
            y="%",
            x="",
@@ -678,7 +678,7 @@ if (exists("four_bin") && nrow(four_bin)) {
     labs_e61(
       title = "Demographic trends dominate lift in spending",
       x = NULL, y = "Contribution (level points)", fill = "Component",
-      footnotes = c("Regression based Shapely decomposition, explained in Appendix A.",paste0("Black dot reflects the change in ",measure," to GDP."),"Effects represent association between the change in the category and changes in spending to GDP.","Economic Effects reflect variation explained by changes in unemployment, relative government costs, and terms of trade."),
+      footnotes = c("Regression based Shapely decomposition, explained in the Online Appendix.",paste0("Black dot reflects the change in ",measure," to GDP."),"Effects represent association between the change in the category and changes in spending to GDP.","Economic Effects reflect variation explained by changes in unemployment, relative government costs, and terms of trade."),
       sources = c("e61","ABS")
     ) +
     plab(c("65+","Other ages","Economic effects***","Residual"),y=rep(3,4),x=c(2.2,1.7,1.2,0.7))
@@ -921,7 +921,7 @@ ggplot(wf) +
 # Compute label positions
 labs_dt <- wf[, .(id, Category)]
 labs_dt[, y := -0.05]                     # base offset below axis
-labs_dt[seq(2, .N, 2), y := -0.3]       # lower every second label
+labs_dt[seq(2, .N, 2), y := -0.5]       # lower every second label
 
 ggplot(wf) +
   geom_rect(aes(xmin = id - 0.45, xmax = id + 0.45,
@@ -944,6 +944,46 @@ ggplot(wf) +
 
 save_e61("Figure_37b.png",res=2)
 save_e61("Figure_37b.svg")
+
+## 37 full
+
+plot_37a <- ggplot(f37a_dt[Category != "Other"], aes(x = Category, y = ChangeSince2000, fill = Type)) +
+  geom_col() +
+  geom_hline(yintercept = 0, colour = "black") +
+  # dot for net total — don't inherit the global 'fill = Type'
+  geom_point(data = totals[Category != "Other"],
+             aes(x = Category, y = Net),
+             inherit.aes = FALSE,
+             size = 1, colour = "black") +
+  labs_e61(
+    title = "A. Historical, Since 2000",
+    y = "Change in ppt of GDP",
+    footnotes = c("In-Kind includes Social benefits to households in goods and services, and Use of goods and services.","Other reflects the costs of administration."),
+    sources = c("ABS","e61"),
+  ) + scale_y_continuous_e61(limits = c(-1.5, 2, 0.5)) +
+  plab(c("In-kind","Cash","Other"),x=c(3,3,3),y=c(1.8,1.3,0.8))
+
+plot_37b <- ggplot(wf) +
+  geom_rect(aes(xmin = id - 0.45, xmax = id + 0.45,
+                ymin = pmin(start, end), ymax = pmax(start, end),
+                fill = colour)) +
+  scale_fill_identity() +
+  geom_hline(yintercept = 0) +
+  # hide built-in x labels
+  scale_x_continuous(breaks = NULL, expand = c(0.01, 0.01)) +
+  geom_text(data = labs_dt, aes(x = id, y = y, label = Category), vjust = 1, size = 3.5) +
+  labs_e61(
+    title = "B. Projected to 2063",
+    x = "",
+    y = "Change in Share of GDP (ppt)",
+    footnotes = c("Other cash reflects working age payments not included in other categories."),
+    sources = c("Treasury IGR 2023")
+  ) +
+  scale_y_continuous_e61(limits = c(-1,3,1))
+
+
+save_e61("Figure_37.png",plot_37a,plot_37b,res=2,title = "Change in Social Protection Payments")
+save_e61("Figure_37.svg",plot_37a,plot_37b,title = "Change in Social Protection Payments")
 
 
 ### Economic affairs

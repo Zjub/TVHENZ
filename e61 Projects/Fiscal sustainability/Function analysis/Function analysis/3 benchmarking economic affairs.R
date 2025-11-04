@@ -32,7 +32,7 @@ gc()
 
 ## Import data ----
 
-work = TRUE
+work = FALSE
 
 if (work == TRUE){
   consolidate_dt <- read_csv("C:/Users/MattNolan/Git/TVHENZ/e61 Projects/Fiscal sustainability/Function analysis/Data/abs_gfs_data_clean.csv")
@@ -70,7 +70,7 @@ summary(consolidated_expenses_dt)
 consolidated_expenses_dt[gov_expenses_mn < 0]
 
 ggplot(exp_dt,aes(x=fin_year,y=real/1000,fill=cofog_group_name)) + 
-  geom_col() + theme_e61(legend = "bottom") +
+  geom_col() + 
   labs_e61(title = "Economic Affairs",
            sources = c("ABS","e61"),
            y="$m (2012 prices)") +
@@ -113,7 +113,6 @@ ggplot(general_dt2,aes(x=fin_year,y=nominal,fill=agg_expense)) + geom_col() + th
 g_dt <- general_dt2[,.(nom_total = sum(nominal)),by=.(fin_year)][general_dt2,on=.(fin_year)][,prop_nom_total := nominal/nom_total]
 
 ggplot(g_dt,aes(x=fin_year,y=prop_nom_total*100,fill=agg_expense)) + geom_col() + 
-  theme_e61(legend = "bottom") +
   labs_e61(title = "Economic Activity expenses",
            y = "% share of annual spending",
            sources = c("ABS","e61")) +
@@ -122,4 +121,17 @@ ggplot(g_dt,aes(x=fin_year,y=prop_nom_total*100,fill=agg_expense)) + geom_col() 
 save_e61("Economic_activity_expenses.png",res=2,auto_scale = FALSE)
 save_e61("Economic_activity_expenses.svg",auto_scale = FALSE)
 
+plot_1 <- ggplot(exp_dt2,aes(x=fin_year,y=real/1000,fill=agg_group)) + 
+  geom_col() + 
+  labs_e61(title = "A. Sub-function",
+           y="$m (2012 prices)") +
+  plab(c("General","Primary Industries (ex Mining)","Mining and heavy industries","Other"),x=rep(1999,4),y=c(85,75,65,55))
 
+
+plot_2 <- ggplot(g_dt,aes(x=fin_year,y=prop_nom_total*100,fill=agg_expense)) + geom_col() +
+  labs_e61(title = "B. Expenses",
+           y = "% share of annual spending") +
+  scale_y_continuous_e61()
+
+save_e61("Econ_activity.png",plot_1,plot_2,res=2,sources = c("ABS","e61"),title = "Economic Affairs",auto_scale = FALSE)
+save_e61("Econ_activity.svg",plot_1,plot_2,sources = c("ABS","e61"),title = "Economic Affairs",auto_scale = FALSE)
