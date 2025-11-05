@@ -31,6 +31,10 @@ pop <- pop_dt[series == "Estimated Resident Population ;  Persons ;  Australia ;
 
 ggplot(pop,aes(x=date,y=pop)) + geom_line()
 
+pop_dt_selected <- pop_dt[str_detect(series, "Persons\\s*;\\s*((1[89])|([2-9][0-9])|100 and over)\\s*;") & table_no == "3101059"]
+
+pop_adult <- pop_dt_selected[,.(pop = sum(value)),by=.(date)]
+
 # ---------- 1) Year-ended growth (quarterly) ----------
 setorder(pop, date)
 pop[, yoy := (pop / shift(pop, 4) - 1) * 100]   # % y/y

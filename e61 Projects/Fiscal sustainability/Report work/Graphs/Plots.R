@@ -991,9 +991,37 @@ save_e61("Figure_37.svg",plot_37a,plot_37b,title = "Change in Social Protection 
 # Figure 38: Economic affairs outline
 
 
+## Short Figure six (combines 36 and 37a into a two-panel)
+
+plot_36 <- ggplot(f36_dt, aes(x = Year, y = value, color = variable)) +
+  geom_line() +
+  labs_e61(
+    title = "Types of support",
+    subtitle = "% of GDP",
+    color = NULL, 
+    ) + plot_label(c( "In-kind", "Cash payments", "Other"), c(2018, 2013, 2018), 
+                 c(4.2, 7.5, 2))
 
 
+plot_37a2 <- ggplot(f37a_dt[Category != "Other"], aes(x = Category, y = ChangeSince2000, fill = Type)) +
+  geom_col() +
+  geom_hline(yintercept = 0, colour = "black") +
+  # dot for net total — don't inherit the global 'fill = Type'
+  geom_point(data = totals[Category != "Other"],
+             aes(x = Category, y = Net),
+             inherit.aes = FALSE,
+             size = 1, colour = "black") +
+  labs_e61(
+    title = "Change since 2000",
+    y = "Change in ppt of GDP"
+  ) + scale_y_continuous_e61(limits = c(-1.5, 2, 0.5)) +
+  plab(c("In-kind","Cash","Other"),x=c(3,3,3),y=c(1.8,1.3,0.8))
 
 
+save_e61("Short_Figure_6.png",plot_36,plot_37a2,res=2,title ="Social Protection Expenditure", 
+         sources = c("ABS", "e61"),
+         footnotes = c("In-Kind includes Social benefits to households in goods and services, and Use of goods and services.","Other reflects the costs of administration."))
 
-
+save_e61("Report_graph/Short_Figure_6.svg",plot_36,plot_37a2,res=2,title ="Social Protection Expenditure", 
+         sources = c("ABS", "e61"),
+         footnotes = c("In-Kind includes Social benefits to households in goods and services, and Use of goods and services.","Other reflects the costs of administration."))
