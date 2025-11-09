@@ -345,7 +345,7 @@ ggplot(f10_dt, aes(x = year, y = value, colour = series)) +
            x = "Year", y = "Expenditure/GDP Index", linetype = "",
            sources = c("OECD","e61"),
            footnotes = c("An index of nominal government expenditure to nominal GDP, relative to its 1999 level.",
-                         "Australia's Fiscal Year ends in June rather than December. For this reason the Australian data is averaged across consecutive years.","Five main donor countries are United States, Israel, Norway, Iceland, and New Zealand. Weights are provided in Appendix A.")) +
+                         "Australia's Fiscal Year ends in June rather than December. For this reason the Australian data is averaged across consecutive years.","Five main donor countries are United States, Israel, Norway, Iceland, and New Zealand. Weights are provided in the Online Appendix.")) +
   geom_hline(yintercept = 1)  +
   plab(c("Observed","Synthetic"),x=c(2000,2000),y=c(1.13,1.07)) +
   scale_y_continuous_e61(limits = c(0.9,1.3,0.1))

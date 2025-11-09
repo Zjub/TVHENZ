@@ -73,4 +73,28 @@ ggplot(debt_long_exp,aes(x=Year,y=value*100,colour=Type)) + geom_line() +
 save_e61("Projections_debt_exp.png",res=2)
 save_e61("Projections_debt_exp.svg")
 
+exp_plot <- ggplot(debt_long_exp,aes(x=Year,y=value*100,colour=Type)) + geom_line() +
+  scale_y_continuous_e61(limits = c(30,70)) +
+  scale_x_continuous_e61(limits = c(2024,2036,3),expand_left = 0.05,expand_right = 0.05,hide_first_last = FALSE) +
+  plab(c("Forecast","Defence spending","+ NDIS","+ Interest increase"),x=c(2024,2024,2024,2024),y=c(66,62,58,55)) +
+  labs_e61(title = "Expenditure shock",
+           y = "% of nominal GDP",
+           x="",
+           footnotes = c("Defence spending increased from 2.2% of GDP to 3.0% over five years.","NDIS spending grows at 10%pa rather than 8%pa.","Ten-year goverment bond rate rises to 5.5%pa from a 4.5%pa projection."))
+
+
+rev_plot <- ggplot(debt_long_rev,aes(x=Year,y=value*100,colour=Type)) + geom_line() +
+  scale_y_continuous_e61(limits = c(30,70)) +
+  plab(c("Forecast","Lower Net Migration","+ Lower Productivity","+ Lower Export Prices"),x=c(2024,2024,2024,2024),y=c(66,62,58,54)) +
+  labs_e61(title = "Revenue shocks",
+           y = "% of nominal GDP",
+           x="",
+           footnotes = c("Scenario reduces net migration by 80k and halves productivity growth to 0.6%pa, alongside lower real wage growth to match. Terms of trade shock reflects a 45% decline in key export prices to 2016 levels."))
+
+save_e61("Shocks_plot.png",exp_plot,rev_plot,res=2,title = "Gross debt projections",sources = c("PBO Build Your Own Budget 25/26","e61"))
+save_e61("Shocks_plot.svg",exp_plot,rev_plot,title = "Gross debt projections",sources = c("PBO Build Your Own Budget 25/26","e61"))
+
+
+
+
 
