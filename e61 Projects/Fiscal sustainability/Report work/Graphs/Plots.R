@@ -1,7 +1,7 @@
 # Topic: Takes background data and produces plots
 # Author: Matt Nolan
 # Created: 19/10/2025
-# Last edit: 26/10/2025
+# Last edit: 14/11/2025
 # Last editor: Matt Nolan
 
 
@@ -81,6 +81,19 @@ ggplot(melt(f3_dt,id.vars = "Year"),aes(x=Year,y=value,colour =variable)) + geom
 save_e61("Figure_3.png",res=2)
 save_e61("Report_graph/Figure_3.svg")
 
+ggplot(melt(f3_dt,id.vars = "Year"),aes(x=Year,y=value,colour =variable)) + geom_line() +
+  scale_y_continuous_e61(limits = c(-10,40,10)) + geom_hline(yintercept = 0) +
+  labs_e61(title = "Net debt projected to keep rising",
+           y = "% GDP",
+           sources =c("PBO","Budget 2026","e61"),
+           footnotes = c("Actuals and projections come from the 2024/25 National Fiscal Outlook","Plot to the right of the dashed line reflect Budget/PBO estimates.")) +
+  geom_vline(xintercept = 2023,linetype = "dashed") +
+  plab(c("State","Federal","National"),x=c(2013,2005,2005),y=c(-5,25,35)) +
+  scale_x_continuous_e61(limits = c(2003,2028,5))
+
+save_e61("new_Figure_3.png",res=2)
+save_e61("Report_graph/new_Figure_3.svg")
+
 
 ## Figure 4: General Government Debt across OECD
 
@@ -100,6 +113,16 @@ ggplot(f4_dt, aes(x = `Reference area`, y = OBS_VALUE, fill = colour_flag)) +
 
 save_e61("Figure_4.png",res=2)
 save_e61("Report_graph/Figure_4.svg")
+
+ggplot(f4_dt, aes(x = `Reference area`, y = OBS_VALUE, fill = colour_flag)) +
+  geom_col(width = 0.7) +
+  coord_flip() +
+  format_flip() +
+  scale_fill_manual(values = c("Australia" = "gold", "Other" = palette_e61(2)[2])) +
+  labs_e61(x = NULL, y = "% GDP",title = "General government gross debt (2023)",
+           sources = c("e61","OECD"))
+
+save_e61("Report_graph/new_Figure_4.svg")
 
 
 ## Figure 5a: Expenditure by government level
@@ -168,7 +191,7 @@ p5b <- ggplot(f5b_dt, aes(x = Year, y = change_pp, fill = Level)) +
 
 save_e61("Figure_5.png",p5a,p5b,res=2,sources = c("e61","OECD"), title = "Consolidated Expenditure",
          footnotes = c("Spending shares based on OECD standard consolidation.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries."))
-save_e61("Figure_5.svg",p5a,p5b,sources = c("e61","OECD"), title = "Consolidated Expenditure",
+save_e61("Report_graph/Figure_5.svg",p5a,p5b,sources = c("e61","OECD"), title = "Consolidated Expenditure",
          footnotes = c("Spending shares based on OECD standard consolidation.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries."))
 
 ## Figure 6: Untied data ratio
@@ -239,7 +262,6 @@ ggplot(f8a_dt, aes(x = Country, y = value*100, fill = Government_level)) +
 save_e61("Figure_8a.png",res=2)
 save_e61("Report_graph/Figure_8a.svg")
 
-
 ## Figure 8b: Cross-country revenue
 
 f8b_dt <- read_excel("Graph_data.xlsx", 
@@ -305,7 +327,43 @@ p8b <- ggplot(f8b_dt, aes(x = country, y = value, fill = level)) +
 
 save_e61("Figure_8.png",p8a,p8b,res=2,sources = c("e61","OECD"), title = "Cross-country comparison (2022)",
          footnotes = c("Dark blue is spending by Federal Govt % GDP. Light blue is additional spending attributed to non-Federal entities.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries."))
-save_e61("Figure_8.svg",p8a,p8b,sources = c("e61","OECD"), title = "Consolidated Expenditure",
+save_e61("Report_graph/Figure_8.svg",p8a,p8b,sources = c("e61","OECD"), title = "Consolidated Expenditure",
+         footnotes = c("Dark blue is spending by Federal Govt % GDP. Light blue is additional spending attributed to non-Federal entities.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries."))
+
+p8a_new <- ggplot(f8a_dt, aes(x = Country, y = value*100, fill = Government_level)) +
+  geom_col(width = 0.7) +
+  geom_col(width = 0.7,
+    data = f8a_dt[Country == "Australia"],
+    aes(x = Country, y = value*100, group = Government_level),
+    fill = NA, colour = "gold", linewidth = 1, inherit.aes = TRUE
+  ) +
+  coord_flip() +
+  format_flip() +
+  labs_e61(title = "A. Expenditure",
+           y = "% GDP",
+           subtitle = "") +
+  plab(c("Non-Federal","Federal"),x=c(1.5,3.5),y=c(41,41))+
+  theme(axis.text.y = element_text(size = 6))
+
+p8a_new 
+
+p8b_new <- ggplot(f8b_dt, aes(x = country, y = value, fill = level)) +
+  geom_col(width = 0.7) +
+  geom_col(width = 0.7,
+    data = f8b_dt[country == "Australia"],
+    aes(x = country, y = value, group = level),
+    fill = NA, color = "gold", linewidth = 1, inherit.aes = TRUE
+  ) +
+  coord_flip() +
+  format_flip() +
+  labs_e61(title = "B. Revenue",
+           y = "% GDP",
+           subtitle = ""
+  ) +
+  plab(c("Non-Federal","Federal"),x=c(1.5,3.5),y=c(41,41))+
+  theme(axis.text.y = element_text(size = 6))
+
+save_e61("Report_graph/new_Figure_8.svg",p8a_new,p8b_new,sources = c("e61","OECD"), title = "International consolidated accounts",
          footnotes = c("Dark blue is spending by Federal Govt % GDP. Light blue is additional spending attributed to non-Federal entities.","FY has been shifted forward by one relative to OECD reporting - due to the Australian financial year starting six months later than other countries."))
 
 
@@ -353,6 +411,20 @@ ggplot(f10_dt, aes(x = year, y = value, colour = series)) +
 save_e61("Figure_10.png",res=2)
 save_e61("Report_graph/Figure_10.svg")
 
+ggplot(f10_dt, aes(x = year, y = value, colour = series)) +
+  geom_vline(xintercept = 2007, linetype = "dashed") +
+  geom_line() +
+  labs_e61(title = "Australian fiscal expenditure remains high",
+           x = "Year", y = "Expenditure/GDP Index", linetype = "",
+           sources = c("OECD","e61"),
+           footnotes = c("An index of nominal government expenditure to nominal GDP, relative to its 1999 level.",
+                         "Australia's Fiscal Year ends in June rather than December. For this reason the Australian data is averaged across consecutive years.","Five main donor countries are United States, Israel, Norway, Iceland, and New Zealand. Weights are provided in the Online Appendix.")) +
+  geom_hline(yintercept = 1)  +
+  plab(c("Observed","Synthetic"),x=c(2000,2000),y=c(1.13,1.07)) +
+  scale_y_continuous_e61(limits = c(0.9,1.3,0.1))
+
+save_e61("Report_graph/new_Figure_10.svg")
+
 # Figure 11: OECD relative size
 
 f11_dt <- read_excel("Graph_data.xlsx", 
@@ -369,6 +441,8 @@ ggplot(f11_dt,aes(x=COFOG_Area,y=value*100,fill=variable)) + geom_col(position="
 
 save_e61("Figure_11.png",res=2)
 save_e61("Report_graph/Figure_11.svg")
+
+
 
 
 # Figure 12: ABS contributions COFOG
@@ -410,6 +484,16 @@ ggplot(f13_dt,aes(x=fin_year,y=share,fill=etf_broad)) +
 save_e61("Figure_13.png",res=2)
 save_e61("Report_graph/Figure_13.svg",auto_scale = FALSE)
 
+ggplot(f13_dt,aes(x=fin_year,y=share*100,fill=etf_broad)) + 
+  geom_area() + 
+  labs_e61(title = "Total expenses",
+           sources = c("ABS","e61"),
+           y="Proportion of total expenditure") +
+  scale_y_continuous_e61(limits = c(0,120,25),expand_top = 0.05)+
+  plab(c("Depreciation","Interest","Employee","Non-employee","Transfers"),x=c(1999,1999,2008,2008,2018),y=c(110,120,110,120,120))
+
+save_e61("Report_graph/new_Figure_13.svg",auto_scale = FALSE)
+
 
 # Figure 14: Type of spending
 
@@ -430,11 +514,23 @@ ggplot(f14_dt,aes(x=fin_year,y=prop,fill=as.factor(Type2))) + geom_col() +
 save_e61("Figure_14.png",res=2)
 save_e61("Report_graph/Figure_14.svg",auto_scale = FALSE)
 
+ggplot(f14_dt,aes(x=fin_year,y=prop*100,fill=as.factor(Type2))) + geom_area() +
+  scale_y_continuous_e61(limits = c(0,120,25),expand_top = 0.05)+
+  plab(c("Other + Admin","Public Goods","Transfers","Direct Payment"),x=c(1999,1999,2012,2012),y=c(110,120,110,120)) +
+  labs_e61(title = "Purpose of spending",
+           y = "Proportion of total",
+           sources = c("ABS","e61"),
+           footnotes = c("The classification of functions into purpose is given in Online Appendix."))
+
+save_e61("Report_graph/new_Figure_14.svg",auto_scale = FALSE)
+
 # Figure 15: Cluster
 
 f15_dt <- read_excel("Graph_data.xlsx", 
                      sheet = "Figure_15")
 setDT(f15_dt)
+
+f15_dt[,cluster := as.factor(cluster)]
 
 ggplot(f15_dt, aes(PC1, PC2, colour = cluster)) +
   geom_point(size = 2, alpha = 0.9) +
@@ -448,7 +544,21 @@ ggplot(f15_dt, aes(PC1, PC2, colour = cluster)) +
   ) + scale_y_continuous_e61(limits = c(-3,2,1)) + theme_e61()
 
 # Code for this is not doing the colours correctly. Take directly from main file
-#save_e61("Figure_15.png",res=2)
+save_e61("Figure_15.png",res=2)
+save_e61("Report_graph/Figure_15.svg",res=2)
+
+ggplot(f15_dt, aes(PC1, PC2, colour = cluster)) +
+  geom_point(size = 2, alpha = 0.9) +
+  ggrepel::geom_text_repel(aes(label = name), size = 1.2, show.legend = FALSE) +
+  labs_e61(
+    title = "Hierarchical clusters",
+    x = "", #sprintf("PC1 (%.1f%%)", 100 * pca_res$eig[1, 2]),
+    y = "", #sprintf("PC2 (%.1f%%)", 100 * pca_res$eig[2, 2])
+    sources = c("ABS","e61"),
+    footnotes = c("Figure shows the first two principal components (PCs) of time-series features for each expenditure category, with the first PC on the x-axis and the second on the y-axis.", "Points are coloured by their hierarchical cluster membership. Labels indicate expenditure categories. This visual is for illustration only: clusters were estimated on the full feature set, not just the two dimensions shown here.")
+  ) + scale_y_continuous_e61(limits = c(-3,2,1))
+
+save_e61("Report_graph/new_Figure_15.svg",res=2)
 
 # Figure 16: Cluster time series
 
@@ -518,6 +628,17 @@ ggplot(f19_dt, aes(x = age_group, y = contribution*100, fill = component)) +
 save_e61("Figure_19.png",res=2)
 save_e61("Report_graph/Figure_19.svg",auto_scale = FALSE)
 
+ggplot(f19_dt, aes(x = age_group, y = contribution*100, fill = component)) +
+  geom_bar(stat = "identity",position="dodge") +
+  labs(title = "Drivers of the change in participation rates",
+       subtitle = "Percentage point contribution between June 1990 to June 2025",
+       fill = "Component",
+       sources = c("ABS","e61"),
+       footnotes = c("Population refers to the change in participation that would be expected due to the change in the population share in that age group at 1990 participation rates. Participation reflects the contribution of the change in participation rates for that age group between 1990 and 2025.")) + 
+  scale_y_continuous_e61(limits = c(-5,5,1)) + coord_flip() + format_flip() + geom_hline(yintercept = 0) +
+  plab(c("Participation","Population"),x=c(1,2),y=c(-3.95,-3.95))
+
+save_e61("Report_graph/new_Figure_19.svg",auto_scale = FALSE)
 
 # Figure 20: Participation projection
 
@@ -553,6 +674,13 @@ ggplot(f21_dt,aes(x=decade,y=CAGR*100)) + geom_col() +
 save_e61("Figure_21.png",res=2)
 save_e61("Report_graph/Figure_21.svg",auto_scale = FALSE)
 
+ggplot(f21_dt,aes(x=decade,y=CAGR*100)) + geom_col() +
+  labs_e61(title = "Decade productivity growth",
+           subtitle="Average annual growth",
+           footnotes = c("The 2020s decade is only a partial decade.","Labour productivity definded as GDP per hour worked."),
+           sources = c("ABS","e61")) + geom_hline(yintercept = 0)
+
+save_e61("Report_graph/new_Figure_21.svg",auto_scale = FALSE)
 
 # Figure 22: GDP v RNNDI
 
@@ -604,6 +732,22 @@ f23_dt[fin_year %in% c(2000,2011,2024)]
 
 (1.997286/1.382947)^(1/13)-1
 (1.908311/1.385045)^(1/13)-1
+
+ggplot(f23_dt, aes(x = fin_year)) +
+  geom_line(aes(y = Payments_norm, color = "Payments")) +
+  geom_line(aes(y = RGDP_norm, color = "NGDP")) +
+  geom_line(aes(y = RGDP_trend, color = "Pre-2014 NGDP Trend"), linetype = "dashed") +
+  scale_color_manual(values = c("Payments" = palette_e61(3)[1], "NGDP" = palette_e61(3)[2], "Pre-2014 NGDP Trend" = "black")) +
+  labs(y = "Indexed to FY2000 = 1", x = "Financial Year", color = "Series") +
+  plab(c("Real Govt Payments","GDP","2000-2014 GDP trend"),x=c(2000.5,2000.5,2000.5),y=c(2.1,1.85,1.7),colour = c(palette_e61(3)[1],palette_e61(3)[2],"black")) +
+  labs_e61(title = "Spending follows old GDP trends",
+           subtitle = "Deflated by GDPD, indexed to 1 in FY99/00",
+           y="",
+           x="",
+           sources = c("ABS","e61")) +
+  scale_y_continuous_e61(limits = c(1,2.2,0.5))
+
+save_e61("Report_graph/new_Figure_23.svg",auto_scale = FALSE)
 
 
 # Figure 24: Shapley
@@ -837,7 +981,7 @@ ggplot(f36_dt, aes(x = Year, y = value, color = variable)) +
                  c(4.2, 7.5, 2))
 
 save_e61("Figure_36.png", res=2, chart_type = "wide", dim = list(width = 13))
-save_e61("Figure_36.svg", chart_type = "wide", dim = list(width = 13))
+save_e61("Report_graph/Figure_36.svg", chart_type = "wide", dim = list(width = 13))
 
 
 # Figure 37a
@@ -873,7 +1017,7 @@ ggplot(f37a_dt[Category != "Other"], aes(x = Category, y = ChangeSince2000, fill
   plab(c("In-kind","Cash","Other"),x=c(3,3,3),y=c(1.8,1.3,0.8))
 
 save_e61("Figure_37a.png", res = 2, chart_type = "wide")
-save_e61("Figure_37a.svg", chart_type = "wide")
+save_e61("Report_graph/Figure_37a.svg", chart_type = "wide")
 
 
 ### Figure 37b
@@ -943,7 +1087,7 @@ ggplot(wf) +
 
 
 save_e61("Figure_37b.png",res=2)
-save_e61("Figure_37b.svg")
+save_e61("Report_graph/Figure_37b.svg")
 
 ## 37 full
 
@@ -983,8 +1127,27 @@ plot_37b <- ggplot(wf) +
 
 
 save_e61("Figure_37.png",plot_37a,plot_37b,res=2,title = "Change in Social Protection Payments")
-save_e61("Figure_37.svg",plot_37a,plot_37b,title = "Change in Social Protection Payments")
+save_e61("Report_graph/Figure_37.svg",plot_37a,plot_37b,title = "Change in Social Protection Payments")
 
+new_plot_37b <- ggplot(wf) +
+  geom_rect(aes(xmin = id - 0.45, xmax = id + 0.45,
+                ymin = pmin(start, end), ymax = pmax(start, end),
+                fill = colour)) +
+  scale_fill_identity() +
+  geom_hline(yintercept = 0) +
+  # hide built-in x labels
+  scale_x_continuous(breaks = NULL, expand = c(0.01, 0.01)) +
+  geom_text(data = labs_dt, aes(x = id, y = y, label = Category), vjust = 1, size = 3.00) +
+  labs_e61(
+    title = "B. Projected to 2063",
+    x = "",
+    y = "Change in Share of GDP (ppt)",
+    footnotes = c("Other cash reflects working age payments not included in other categories."),
+    sources = c("Treasury IGR 2023")
+  ) +
+  scale_y_continuous_e61(limits = c(-1,3,1))
+
+save_e61("Report_graph/new_Figure_37.svg",plot_37a,new_plot_37b,title = "Change in Social Protection Payments")
 
 ### Economic affairs
 

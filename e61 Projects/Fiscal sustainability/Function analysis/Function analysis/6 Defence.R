@@ -103,10 +103,20 @@ cost_defence2[, share_nominal := nominal / total_nominal]
 
 ggplot(cost_defence2, aes(x = fin_year, y = share_nominal*100, fill = agg_expense)) +
   geom_col() +
-  labs_e61(title = "Defence expenses", y = "Share of total", x = "",
+  labs_e61(title = "Defence expenses", subtitle = "Share of total", x = "",
            sources = c("ABS","e61")) +
   plab(c("Transfers","Depreciation","Non-employee","Employee"),y=c(120,110,120,110),x=c(1999,1999,2010,2010)) +
-  scale_y_continuous_e61(limits = c(0,125,25),add_space = TRUE)
+  ggplot2::scale_y_continuous(limits = c(0,125),
+                         breaks = seq(0, 100, 25),sec.axis = dup_axis())
+
+
+ggplot(cost_defence2, aes(x = fin_year, y = share_nominal*100, fill = agg_expense)) +
+  geom_area() +
+  labs_e61(title = "Defence expenses", subtitle = "Share of total", x = "",
+           sources = c("ABS","e61")) +
+  plab(c("Transfers","Depreciation","Non-employee","Employee"),y=c(120,110,120,110),x=c(1999,1999,2010,2010)) +
+  ggplot2::scale_y_continuous(limits = c(0,125),
+                              breaks = seq(0, 100, 25),sec.axis = dup_axis())
 
 save_e61("Defence_exp.png",res=2,auto_scale = FALSE)
 save_e61("Defence_exp.svg",auto_scale = FALSE)

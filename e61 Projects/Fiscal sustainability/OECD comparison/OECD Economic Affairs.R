@@ -55,14 +55,14 @@ as.numeric(Aus_toGDP$Year) + 1997
 Aus_toGDP[,Government_level := factor(Government_level,levels=c("Federal","Non-Federal"))]
 
 ggplot(Aus_toGDP[COFOG_Area == "Economic Affairs"],aes(x=as.numeric(Year)+1997, y=value*100,fill = as.factor(Government_level))) + scale_fill_manual(values = c(palette_e61(2)[2],palette_e61(2)[1])) +
-  geom_col() +
+  geom_area() +
   labs_e61(title = "Economic Affairs ",y="% GDP",
            sources = c("ABS","e61")) +
   scale_x_continuous_e61(limits=c(1997,2023,4),expand_left = 0.02,expand_right = 0.02,hide_first_last = FALSE) +
   plab(c("Federal","Non-Federal"),y=c(8.5,6.5),x=c(1998,1998), colour = c(palette_e61(2)[2],palette_e61(2)[1]))
 
-save_e61("Economic_affairs_type.png",res=2)
-save_e61("Economic_affairs_type.svg")
+save_e61("Economic_affairs_type_OECD.png",res=2)
+save_e61("Economic_affairs_type_OECD.svg")
 
 ### Cross country comparison
 
