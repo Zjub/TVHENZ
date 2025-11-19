@@ -17,6 +17,8 @@ library(Hmisc)
 
 levy = TRUE # Include the medicare levy
 surcharge = FALSE # Include the medicare surcharge
+regularity = 20 # How often a capital gain occurs over the 60 periods.
+
 
 ## Define the tax function
 # Income refers to taxable income
@@ -66,7 +68,7 @@ income_target <- 100000
 income_target_tag <- fifelse(income_target == 100000, "100k",
                              fifelse(income_target == 1000000,"1m",NA))
 incomes_stable <- rep(income_target,times=60)
-incomes_unstable <- rep(c(0,0,0,income_target*4),times=15)
+incomes_unstable <- rep(c(rep(0,times = regularity-1),income_target*regularity),times=60/regularity)
 time <- seq(1,60,by=1)
 
 long_data <- melt(data.table(time,ETR_stable = etr_function(incomes_stable,0),ETR_unstable =etr_function(incomes_unstable,0),ETR_unstable_discount =etr_function(incomes_unstable/2,incomes_unstable/2)),id.vars = "time")
@@ -81,6 +83,7 @@ ggplot(long_tax_paid,aes(x=time,y=value,colour=variable)) + geom_line() +
   labs_e61(title = "Effective tax rates",y="%",x="$(000's)") +
   plab(c("Stable","Variable","Discounted Variable"),x=c(1,1,1),y=c(20,24,28))
 
+# Adjust footnote to read in regularity
 ggplot(long_tax_paid[,.(value = sum(value)/1000000),by=.(variable)],aes(x=variable,y=value))+
   geom_col() +
   labs_e61(title = paste0("Hypothetical Tax Paid ($",as.character(income_target_tag)," earner)"),
@@ -92,22 +95,53 @@ ggplot(long_tax_paid[,.(value = sum(value)/1000000),by=.(variable)],aes(x=variab
 save_e61(paste0("Volatile_tax_",income_target_tag,".pdf"))
 
 ## Example where there is 2.5% inflation and 2.5% real return over 10 years.
+#
+# initial_income <- 1000
+# end_income <- initial_income*(1.05)^10
+# price_level <- 1*(1.025)^10
+#
+# real_income <- end_income/price_level
+#
+# real_income
+#
+# (end_income-initial_income)*0.8
+#
+# amount_tax_end <- (end_income-initial_income)*0.2
+#
+# (1 + ((real_income - initial_income - amount_tax_end)/1000))^(1/10)
+#
+# ((1 + ((real_income - initial_income - amount_tax_end)/1000))^(1/10)-1)/0.025
+#
+# (1000*(1.05)-1000)*0.1/(1000*(1.05)-1000)
 
-initial_income <- 1000
-end_income <- initial_income*(1.05)^10
-price_level <- 1*(1.025)^10
+## ---------------------------------------------------------
+## Present value of tax paid under each income pattern
+## ---------------------------------------------------------
 
-real_income <- end_income/price_level
+# Discount rate
+disc_rate <- 0.03   # 3% annual discount rate
 
-real_income
+# Create discount factors for each of the 60 periods
+df <- 1 / (1 + disc_rate)^(time - 1)
 
-(end_income-initial_income)*0.8
+pv_data <- cbind(long_tax_paid, df)
 
-amount_tax_end <- (end_income-initial_income)*0.2
+# Compute PV for each tax stream
+pv_results <- pv_data[, .(PV_tax = sum(value * df)), by = variable]
 
-(1 + ((real_income - initial_income - amount_tax_end)/1000))^(1/10)
+print(pv_results)
 
-((1 + ((real_income - initial_income - amount_tax_end)/1000))^(1/10)-1)/0.025
+pv_results[, .(
+  variable,
+  PV_millions = round(PV_tax / 1e6, 3)
+)]
 
-(1000*(1.05)-1000)*0.1/(1000*(1.05)-1000)
-
+ggplot(pv_results, aes(x = variable, y = PV_tax/1e6, fill = variable)) +
+  geom_col() +
+  labs_e61(
+    title = "Tax paid by way earned",
+    x = "",
+    y = "$m",
+    sources = c("e61"),
+    footnotes = c("PV over 60 years of tax payments.",paste0("Present Value of Tax Paid (discount rate = ", disc_rate*100, "%)"),"Volatile earner receives $2m every 20 years. Stable earner receives $100,000 each year.")
+  )
