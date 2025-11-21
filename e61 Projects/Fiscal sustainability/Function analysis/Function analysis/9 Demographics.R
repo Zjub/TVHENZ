@@ -51,6 +51,40 @@ p_yoy <- ggplot(pop, aes(x = date, y = yoy)) +
 
 print(p_yoy)
 
+### Add some ratios for presenting
+
+# ---- Total population ----
+pop_total <- pop_dt[series == "Estimated Resident Population ;  Persons ;  Australia ;",
+                    .(date = date, pop_total = value)]
+
+# ---- Under 15 ----
+pop_under15 <- pop_dt[
+  str_detect(series, "Persons\\s*;\\s*([0-9]|1[0-4])\\s*;") & table_no == "3101059",
+  .(pop_under15 = sum(value)), by = date
+]
+
+# ---- Over 65 ----
+pop_over65 <- pop_dt[
+  str_detect(series, "Persons\\s*;\\s*(6[5-9]|[7-9][0-9]|100 and over)\\s*;") & table_no == "3101059",
+  .(pop_over65 = sum(value)), by = date
+]
+
+# ---- Over 75 ----
+pop_over75 <- pop_dt[
+  str_detect(series, "Persons\\s*;\\s*(7[5-9]|[8-9][0-9]|100 and over)\\s*;") & table_no == "3101059",
+  .(pop_over75 = sum(value)), by = date
+]
+
+# ---- Merge with total ----
+pop_demo <- pop_total[pop_under15,on=.(date)][pop_over65,on=.(date)][pop_over75,on=.(date)]
+
+# ---- Compute ratios ----
+pop_demo[, dependency_ratio := (pop_under15 + pop_over65) / pop_total]
+pop_demo[, share_over65 := pop_over65 / pop_total]
+pop_demo[, share_over75 := pop_over75 / pop_total]
+
+####
+
 # ---------- 3) Annual (Dec) y/y and decade averages ----------
 # Use December observations for calendar-year y/y growth
 annual_dec <- pop[month(date) == 12L & !is.na(yoy),
@@ -242,3 +276,58 @@ ggplot(melt(PBO_FB_dt,id.vars = "year"),aes(x=year,y=value,colour=variable)) + g
   
 
 save_e61("FB.png",res=2)
+
+#### Detailed projected pop
+
+pop_detailed <-read_abs(cat_no = "3222.0")
+setDT(pop_detailed)
+
+proj_dt <- pop_detailed[
+  table_no == "3222_table_b9" &
+    str_detect(series, "^Projected persons ;\\s*Persons\\s*;")
+]
+
+proj_dt[, age := str_split_fixed(series, ";", 5)[,3] |> str_trim()]
+
+proj_dt[age == "100 and over", age := "100"]
+proj_dt[, age := as.numeric(age)]
+
+proj_total <- proj_dt[, .(pop_total = sum(value)), by = date]
+proj_under15 <- proj_dt[age < 15, .(pop_under15 = sum(value)), by = date]
+proj_over65 <- proj_dt[age >= 65, .(pop_over65 = sum(value)), by = date]
+proj_over75 <- proj_dt[age >= 75, .(pop_over75 = sum(value)), by = date]
+
+proj_demo <- proj_total[proj_under15,on=.(date)][proj_over65,on=.(date)][proj_over75,on=.(date)]
+
+
+proj_demo[, share_over65 := pop_over65 / pop_total]
+proj_demo[, share_over75 := pop_over75 / pop_total]
+proj_demo[, dependency_ratio := (pop_under15 + pop_over65) / pop_total]
+
+pop_demo[,type := "actual"]
+proj_demo[,type := "projection"]
+
+age_ratios <- rbind(pop_demo,proj_demo)
+age_ratios[,type := factor(type,levels = c("projection","actual"))]
+
+ggplot(age_ratios,aes(x=date,y=share_over65,colour=type)) + geom_line()
+
+ggplot(age_ratios[date > "1980-06-01"],aes(x=date,y=1/dependency_ratio,colour=type)) + geom_line() + geom_line(size = 0.75) +
+  labs_e61(title = "Share of working age individuals dropping",
+           subtitle = "Number of working age people per dependent",
+           footnotes = c("Dependent refers to individuals aged below 15 and over 64"),
+           sources = c("e61","ABS medium projections")) +
+  scale_y_continuous_e61(limits = c(2.5,3.1,0.2)) +
+  plab(c("Projected","Actual"),x=c(as.Date("2040-01-01"),as.Date("1990-01-01")),y=c(2.8,2.8))
+
+save_e61("Dep_ratio.svg")
+
+ggplot(age_ratios[date > "1980-06-01"],aes(x=date,y=share_over75*100,colour=type)) + geom_line(size = 0.75) +
+  labs_e61(title = "Ageing is firmly underway",
+           subtitle = "% of Australian population aged over 75",
+           sources = c("e61","ABS medium projections")) +
+  scale_y_continuous_e61(limits = c(0,15,3)) +
+  geom_vline(xintercept = as.Date("2020-01-01"),linetype = "dashed")+
+  plab(c("Projected","Actual"),x=c(as.Date("2040-01-01"),as.Date("1990-01-01")),y=c(7.5,7.5))
+
+save_e61("age75_ratio.svg")
