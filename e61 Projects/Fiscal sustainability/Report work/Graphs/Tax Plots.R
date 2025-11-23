@@ -59,3 +59,22 @@ ggplot(tax10_dt[percentile < 998], aes(x = percentile/10)) +
   plab(c("Median","p90","p10"),x=c(80,60,60),y=c(32,25,5),colour = c(palette_e61(2)[2],palette_e61(2)[1],palette_e61(2)[1]))
 
 save_e61("10yr Income distribution.svg")
+
+
+## Federal gross debt
+
+Fed_gross_dt <- read_excel("2025-26 Medium-Term Budget Outlook - Beyond the Budget - Data.xlsx", 
+                                                                         sheet = "Fed_gross_graph")
+
+setDT(Fed_gross_dt)
+
+ggplot(Fed_gross_dt,aes(x=year,y=Gross_debt)) + geom_line() + geom_vline(xintercept =  2025,linetype="dashed") +
+  labs_e61(title = "Federal Gross Debt",subtitle = "Percentage of GDP",y = "",x = "",
+           sources = c("e61","PBO Medium Term Outlook")) +
+  scale_y_continuous_e61(limits = c(0,40,10))
+
+
+
+
+
+
