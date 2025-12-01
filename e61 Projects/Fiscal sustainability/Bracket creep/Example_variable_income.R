@@ -17,7 +17,8 @@ library(Hmisc)
 
 levy = TRUE # Include the medicare levy
 surcharge = FALSE # Include the medicare surcharge
-regularity = 20 # How often a capital gain occurs over the 60 periods.
+regularity = 10 # How often a capital gain occurs over the 60 periods.
+income_target <- 100000 # The annual equivalent
 
 
 ## Define the tax function
@@ -64,7 +65,7 @@ etr_function <- function(income,non_income) {
 }
 
 # Create income sequence
-income_target <- 100000
+
 income_target_tag <- fifelse(income_target == 100000, "100k",
                              fifelse(income_target == 1000000,"1m",NA))
 incomes_stable <- rep(income_target,times=60)
@@ -90,9 +91,9 @@ ggplot(long_tax_paid[,.(value = sum(value)/1000000),by=.(variable)],aes(x=variab
        y= "$m",
        x="",
        sources = c("e61"),
-       footnotes = c("These are actual tax paid sums, not PV values. The earnings occur over 60 years, with the stable earner receiving this amount each year. The volatile earner receives four times the annual amount every four years, and nothing in other years."))
+       footnotes = c(paste0("These are actual tax paid sums, not PV values. The earnings occur over 60 years, with the stable earner receiving this amount each year. The volatile earner receives ", regularity," times the annual amount every ", regularity," years, and nothing in other years.")))
 
-save_e61(paste0("Volatile_tax_",income_target_tag,".pdf"))
+save_e61(paste0("Volatile_tax_",income_target_tag,"_reg",regularity,".pdf"))
 
 ## Example where there is 2.5% inflation and 2.5% real return over 10 years.
 #
