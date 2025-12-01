@@ -1192,6 +1192,80 @@ save_e61(paste0("Demographic_Adjusted_",measure,"_",level,".svg"))
 # Save the table if useful
 fwrite(cf_paths, paste0("counterfactual_paths_generalgov_",measure,"_",level,".csv"))
 
+####################
+## Added later example where policy is fixed and demographics change.
+
+# 1. Define age vs policy variables ------------------------------------------
+age_groups  <- c("0_14","15_34","35_54","55_64","65p")
+policy_vars <- setdiff(features, age_groups)   # everything else treated as "policy"
+
+# Safety check: which variables are in each bucket?
+message("Age groups:   ", paste(age_groups,  collapse = ", "))
+message("Policy vars:  ", paste(policy_vars, collapse = ", "))
+
+# 2. Build counterfactual paths with POLICY held at baseline -----------------
+#    (i.e. only demography is allowed to follow its actual path)
+policy_blocks <- list(
+  Policy = policy_vars
+)
+
+cf_paths_policy <- counterfactual_paths_by_block(
+  dt            = share_dt,
+  features      = features,
+  blocks        = policy_blocks,
+  baseline_year = baseline_year,
+  y_col         = "gov_gdp"
+)
+
+# 3. Long format for plotting: Actual vs "demography-only (policy fixed)" ----
+library(data.table)
+library(ggplot2)
+
+cf_policy_long <- melt(
+  cf_paths_policy[, .(year, y_actual, yhat_full, yhat_cf_Policy)],
+  id.vars       = "year",
+  variable.name = "series",
+  value.name    = "value"
+)
+
+cf_policy_long[, series := factor(
+  series,
+  levels = c("y_actual", "yhat_full", "yhat_cf_Policy"),
+  labels = c("Actual",
+             "Fitted (all drivers)",
+             "Demography-only (policy fixed at baseline)")
+)]
+
+# 4. Plot: show Actual vs demography-only (policy fixed) ---------------------
+p_demo_only <- ggplot(
+  cf_policy_long[series %in% c("Actual", "Demography-only (policy fixed at baseline)")],
+  aes(x = year, y = value * 100, colour = series)
+) +
+  geom_line(linewidth = 0.9) +
+  scale_y_continuous_e61() +
+  labs_e61(
+    title     = "Government expenditure to GDP: demography-only counterfactual",
+    subtitle  = sprintf("Non-demographic drivers held at %s values; only age structure changes", baseline_year),
+    x         = NULL,
+    y         = "Per cent of GDP",
+    sources   = c("ABS", "e61"),
+    footnotes = c(
+      "Counterfactual constructed from a reduced-form regression of spending on age shares and economic drivers.",
+      "Coefficients (policy rule) are fixed over time; non-demographic drivers are fixed at their baseline-year level."
+    )
+  ) +
+  theme_e61(legend = "bottom")
+
+print(p_demo_only)
+
+# Optional: save the figure using your helper
+save_e61(paste0("Demography_only_counterfactual_", measure, "_", level, ".png"), res = 2)
+save_e61(paste0("Demography_only_counterfactual_", measure, "_", level, ".svg"))
+
+
+
+################
+
 # ===================== Helpers: manual Shapley by custom ranges =====================
 nearest_year <- function(target, years) years[which.min(abs(years - target))]
 
