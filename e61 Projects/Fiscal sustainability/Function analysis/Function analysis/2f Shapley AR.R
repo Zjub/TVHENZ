@@ -1511,4 +1511,47 @@ ggplot(contrib_all[series=="Projection"], aes(year, contrib*100, fill=driver)) +
 
 round(cor(share_dt[, .( `0_14`,`15_34`,`35_54`,`55_64`,`65p`)]),2)
 
+#### Add in new demographic counterfactual that doesn't drop residuals
+
+# --- Age-adjusted ACTUAL series (spikes preserved) -----------------------
+age_groups <- c("0_14","15_34","35_54","55_64","65p")
+
+# Use same sample & features as in your Shapley (e.g. dt_est)
+b_full <- coef_full(dt_est, features)
+b_age  <- b_full[age_groups]
+
+baseline_year <- 1999  # or whatever you've set
+
+# Helper to compute age contribution relative to baseline
+age_contrib_term <- function(dt, baseline_year, age_groups, b_age) {
+  a0 <- as.numeric(dt[year == baseline_year, ..age_groups])
+  mat <- as.matrix(dt[, ..age_groups])
+  # contribution b_a' (a_t - a0)
+  as.vector(mat %*% b_age - rep(sum(a0 * b_age), nrow(dt)))
+}
+
+share_dt[, age_contrib := age_contrib_term(share_dt, baseline_year, age_groups, b_age)]
+
+# Actual minus demographic effect
+share_dt[, gov_gdp_age_adj := gov_gdp - age_contrib]
+
+# Plot: actual vs "age-adjusted actual"
+library(ggplot2)
+
+ggplot(share_dt, aes(x = year)) +
+  geom_line(aes(y = gov_gdp * 100, colour = "Actual")) +
+  geom_line(aes(y = gov_gdp_age_adj * 100, colour = "Demographic adjusted")) +
+  scale_y_continuous_e61() +
+  labs_e61(
+    title     = "Counterfactual Government Expenditure to GDP",
+    subtitle  = sprintf("Age structure held at %s; shocks and other drivers unchanged", baseline_year),
+    x         = NULL,
+    y         = "Per cent of GDP",
+    sources   = c("ABS","e61"),
+    footnotes = c(
+      "Demographic adjustment subtracts the estimated contribution of changes in age structure relative to the baseline year.",
+      "All residual shocks (e.g. GFC, COVID policy responses) remain in the series."
+    )
+  ) +
+  theme_e61(legend = "bottom")
 
