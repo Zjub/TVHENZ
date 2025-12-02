@@ -5,6 +5,7 @@ library(dplyr)
 library(ggplot2)
 library(theme61)
 library(data.table)
+library(readxl)
 
 # --- Options you can adjust ---
 levy      <- TRUE   # Include the medicare levy
@@ -234,3 +235,29 @@ save_e61("ETR_comparison_regularity_CGT.svg",title = "Overall effective tax rate
 #     y     = "Effective tax rate (%)",
 #     sources = c("e61")
 #   ) + theme_e61(legend = "bottom")
+
+
+
+### Check some of the related data
+
+taxpercentiles <- read_excel("taxpercentiles.xlsx")
+setDT(taxpercentiles)
+
+taxpercentiles[,":=" (tax_share = total_tax/sum(total_tax),income_share = total_income/sum(total_income))]
+
+share_dt <- melt(taxpercentiles[,.(percentile,tax_share,income_share)],id.vars = "percentile")
+
+ggplot(share_dt,aes(x=percentile,y=value,colour=variable)) + geom_line()
+
+# shapley <- read_csv("Shapley.csv")
+# setDT(shapley)
+#
+# shapley[,Type := fifelse(variable %in% c("medicare","TAX_OFSTS_TOTL_AMT"),"no_HI","HI")]
+#
+# shapley[,.(sum(share)),by=.(percentile, Type)][Type == "HI"]
+# shapley[variable == "Relevant_D"][order(percentile)]
+# shapley[variable == "CG"][order(percentile)]
+
+
+
+
