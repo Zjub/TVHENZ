@@ -18,6 +18,7 @@ horizon   <- 60     # Number of periods
 income_targets <- seq(00000,200000,by=500)
 #regularities   <- c(2, 5, 10, 20)                   # e.g. how often CG happens
 regularities   <- seq(1,20,1)
+discount = 0.5
 
 # -----------------------------
 # 1. Tax function (unchanged)
@@ -57,7 +58,8 @@ tax_function <- function(income, include_levy = FALSE) {
 simulate_pattern <- function(income_target, regularity,
                              levy = TRUE,
                              disc_rate = 0.03,
-                             horizon = 60) {
+                             horizon = 60,
+                             discount = 0.5) {
 
   time <- 1:horizon
 
@@ -68,9 +70,9 @@ simulate_pattern <- function(income_target, regularity,
   pattern_vol <- c(rep(0, regularity - 1), income_target * regularity)
   incomes_volatile <- rep(pattern_vol, length.out = horizon)
 
-  # Volatile with discount: half taxable, half untaxed
-  taxable_disc    <- incomes_volatile / 2
-  non_taxable_disc <- incomes_volatile / 2
+  # Volatile with discount
+  non_taxable_disc <- incomes_volatile / (1/discount)
+  taxable_disc    <- incomes_volatile - non_taxable_disc
 
   # Taxes
   tax_stable         <- tax_function(incomes_stable, include_levy = levy)
@@ -149,7 +151,8 @@ all_results <- rbindlist(
           regularity    = reg,
           levy          = levy,
           disc_rate     = disc_rate,
-          horizon       = horizon
+          horizon       = horizon,
+          discount      = discount
         )
       })
     )
