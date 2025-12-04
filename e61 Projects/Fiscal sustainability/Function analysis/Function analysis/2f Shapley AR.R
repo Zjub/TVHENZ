@@ -33,8 +33,8 @@ baseline_year   <- 1999      # optional: force a baseline year; NA = first year 
 features <- c("0_14","15_34","35_54","55_64","65p","tot",
               "rp_g","unemp") # ,"dln_pop""unemp",
 outlier_years <- c(2020, 2021)   # Years we remove from estimation for being outliers
-govt_level    <- "State"        # Either total, or just "Federal", or "State".
-level <- "State" # This is the name for saving files - change to be consistent with above (Federal, State, or Consolidated)
+govt_level    <- "total"        # Either total, or just "Federal", or "State".
+level <- "Consolidated" # This is the name for saving files - change to be consistent with above (Federal, State, or Consolidated)
 
 # -------------------- Helpers --------------------
 # AU FY ends in June: add 6m and take year
