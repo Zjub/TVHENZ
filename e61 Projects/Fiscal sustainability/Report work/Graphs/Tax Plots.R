@@ -33,12 +33,14 @@ ggplot(tax_dt[percentilex < 999], aes(x = percentilex/10)) +
     title = "Distribution of Tax Rates",
     subtitle = "At each income percentile\nMedian, and p90–p10 %",
     x = "Taxable Income Percentile",
-    y = NULL
+    y = NULL,
+    source = c("ABS","e61")
   ) +
   scale_y_continuous(limits = c(0, 50)) +
   plab(c("Median","p90","p10"),x=c(80,60,60),y=c(42,25,12),colour = c(palette_e61(2)[2],palette_e61(2)[1],palette_e61(2)[1]))
 
 save_e61("Taxable income distribution.svg")
+save_e61("Taxable income distribution.pdf")
 
 tax10_dt <- read_excel("taxpercentilesdecadeallyears.xlsx")
 setDT(tax10_dt)
@@ -53,13 +55,14 @@ ggplot(tax10_dt[mean_income >= 0 & percentile <= 998], aes(x = percentile/10)) +
     title = "Distribution of Tax Rates",
     subtitle = "Earnings 2011/12-2021/22",
     x = "Income Percentile",
-    y = NULL
+    y = NULL,
+    source = c("ABS","e61")
   ) +
   scale_y_continuous(limits = c(0, 50)) +
   plab(c("Median","p90","p10"),x=c(80,60,60),y=c(32,25,5),colour = c(palette_e61(2)[2],palette_e61(2)[1],palette_e61(2)[1]))
 
 save_e61("10yr Income distribution.svg")
-
+save_e61("10yr Income distribution.pdf")
 
 tax10_dt[percentile == 500]
 
@@ -87,7 +90,8 @@ ggplot(tax10_dt[mean_income >= 0 & percentile <= 998], aes(x = log(mean_income/1
     title = "Distribution of Tax Rates",
     subtitle = "Earnings 2011/12-2021/22",
     x = "Log Incomee",
-    y = NULL
+    y = NULL,
+    source = c("ABS","e61")
   ) +
   scale_y_continuous(limits = c(0, 90)) #+
   #plab(c("Median","p90","p10"),x=c(80,60,60),y=c(32,25,5),colour = c(palette_e61(2)[2],palette_e61(2)[1],palette_e61(2)[1]))
@@ -100,7 +104,7 @@ ggplot(tax10_dt[mean_income >= 0 & percentile <= 998], aes(x = (mean_income/1000
   labs_e61(
     title = "Distribution of Tax Rates by Income",
     subtitle = "Earnings 2011/12-2021/22",
-    x = "Income",
+    x = "Income ($000s)",
     source = c("ABS","e61")
   ) +
   scale_y_continuous(limits = c(0, 50)) +
@@ -119,11 +123,12 @@ setDT(tax1_dt)
 tax1_dt[,cg_share := total_CG/total_income]
 tax10_dt[,cg_share := total_CG/total_income]
 
-ggplot(tax10_dt[mean_income >= 0 & percentile <= 998 & percentile >= 200 ],aes(x= mean_income/1000,y=cg_share*100)) + geom_line() + 
-  labs_e61(title = "Capital gains income share",
+ggplot(tax10_dt[mean_income >= 0 & percentile <= 998 & percentile >= 200 ],aes(x= mean_income/1000/10,y=cg_share*100)) + geom_line() + 
+  labs_e61(title = "By dollars earned",
+           subtitle = "Capital Gains Share of Total Income",
            x= "Income (000s)",
            sources = c("ABS","e61"))+
-  scale_x_continuous_e61(c(0,5600,1000))
+  scale_x_continuous_e61(c(0,560,100))
 
 save_e61("10yr Cap Gain Share Income.svg")
 save_e61("10yr Cap Gain Share Income.pdf")
@@ -139,11 +144,12 @@ tax_plot_dt <- rbindlist(list(
 
 ggplot(tax_plot_dt[total_income >=0 & percentile >= 200 & percentile <= 998], aes(x = percentile/10, y = cg_share*100, colour = dataset)) +
   geom_line() +
-  labs( title = "Capital gains income share by income period",
+  labs( title = "By earning percentile",
     x = "Income Percentile",
     subtitle = "Capital Gains Share of Total Income",
     source = c("ABS","e61")
-  ) + theme_e61(legend = "bottom")
+  ) +
+  plab(c("1-year ETR","10-year ETR"),x=c(20,20),y=c(13,8))
 
 save_e61("10yr Cap Gain Share Compare.svg")
 save_e61("10yr Cap Gain Share Compare.pdf")
@@ -166,6 +172,7 @@ ggplot(tax1_dt[percentile < 999], aes(x = percentile/10)) +
   plab(c("Median","p90","p10"),x=c(80,60,60),y=c(42,25,12),colour = c(palette_e61(2)[2],palette_e61(2)[1],palette_e61(2)[1]))
 
 save_e61("1yr income distribution.svg")
+save_e61("1yr income distribution.pdf")
 
 ggplot(tax1_dt[percentile < 999], aes(x = mean_income/1000)) +
   geom_ribbon(aes(ymin = p10*100, ymax = p90*100), alpha = 0.4) +
@@ -183,3 +190,4 @@ ggplot(tax1_dt[percentile < 999], aes(x = mean_income/1000)) +
   plab(c("Median","p90","p10"),x=c(80,80,200),y=c(45,35,12),colour = c(palette_e61(2)[2],palette_e61(2)[1],palette_e61(2)[1]))
 
 save_e61("1yr income dollar distribution.svg")
+save_e61("1yr income dollar distribution.pdf")
