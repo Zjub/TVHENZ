@@ -7,6 +7,7 @@
 
 rm(list=ls())
 
+options(pkgType = "win.binary")
 #remotes::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
 
 library(dplyr)
@@ -62,6 +63,29 @@ ggplot(f2_dt,aes(x=year,y=value,colour=variable)) + geom_line() + geom_line() +
 save_e61("Figure_2.png",res=2)
 save_e61("Report_graph/Figure_2.svg")
 
+## Update Figure 2: Fiscal balance - also Figure 1 in short report
+
+f2_dt <- read_excel("Graph_data.xlsx", 
+                    sheet = "Figure_2 (Feb version)")
+
+setDT(f2_dt)
+
+f2_dt[,variable := factor(variable,levels = c("States","Commonwealth","National"))]
+
+ggplot(f2_dt,aes(x=year,y=value,colour=variable)) + geom_line() + geom_line() +
+  labs_e61(title = "Persistent Fiscal Imbalance",
+           y = "Fiscal balance, % GDP",
+           sources =c("PBO","Budget 2026","e61"),
+           footnotes = c("Uses the 2026 National Fiscal Outlook by the PBO.","Plot to the right of the dashed line reflect Budget/PBO estimates.")) + # , with estimates updated for the 2026 Final Budget Outcome - checked and this isn't in FBO, which is more cut down.
+  geom_hline(yintercept = 0) +
+  plab(c("States","Federal","National"),y=c(-3,-6,-9),x=c(2003,2003,2003)) + 
+  geom_vline(xintercept = 2025,linetype = "dashed") +
+  scale_y_continuous_e61(limits = c(-12,4,4)) +
+  scale_x_continuous_e61(limits = c(2003,2029,5))
+
+save_e61("Figure_2_new.png",res=2)
+save_e61("Report_graph/Figure_2_new.svg",auto_scale = FALSE)
+
 ## Figure 3: Net debt
 
 f3_dt <- read_excel("Graph_data.xlsx", 
@@ -93,6 +117,38 @@ ggplot(melt(f3_dt,id.vars = "Year"),aes(x=Year,y=value,colour =variable)) + geom
 
 save_e61("new_Figure_3.png",res=2)
 save_e61("Report_graph/new_Figure_3.svg")
+
+## Update Figure 3: Net debt
+
+f3_dt <- read_excel("Graph_data.xlsx", 
+                    sheet = "Figure_3 (Feb version)")
+
+setDT(f3_dt)
+
+ggplot(melt(f3_dt,id.vars = "Year"),aes(x=Year,y=value,colour =variable)) + geom_line() +
+  scale_y_continuous_e61(limits = c(-10,40,10)) + geom_hline(yintercept = 0) +
+  labs_e61(title = "Net debt projected to keep rising",
+           y = "% GDP",
+           sources = c("PBO","e61"),
+           footnotes = c("Actuals and projections come from the 2024/25 National Fiscal Outlook","Plot to the right of the dashed line reflect Budget/PBO estimates.")) +
+  geom_vline(xintercept = 2025,linetype = "dashed") +
+  plab(c("State","Federal","National"),x=c(2013,2005,2005),y=c(-5,25,35))
+
+save_e61("Figure_3_new.png",res=2)
+save_e61("Report_graph/Figure_3_new.svg")
+
+ggplot(melt(f3_dt,id.vars = "Year"),aes(x=Year,y=value,colour =variable)) + geom_line() +
+  scale_y_continuous_e61(limits = c(-10,40,10)) + geom_hline(yintercept = 0) +
+  labs_e61(title = "Net debt projected to keep rising",
+           y = "% GDP",
+           sources =c("PBO","Budget 2026","e61"),
+           footnotes = c("Actuals and projections come from the 2026 National Fiscal Outlook","Plot to the right of the dashed line reflect Budget/PBO estimates.")) +
+  geom_vline(xintercept = 2025,linetype = "dashed") +
+  plab(c("State","Federal","National"),x=c(2013,2005,2005),y=c(-5,25,35)) +
+  scale_x_continuous_e61(limits = c(2003,2029,5))
+
+save_e61("new_Figure_3_new.png",res=2)
+save_e61("Report_graph/new_Figure_3_new.svg")
 
 
 ## Figure 4: General Government Debt across OECD

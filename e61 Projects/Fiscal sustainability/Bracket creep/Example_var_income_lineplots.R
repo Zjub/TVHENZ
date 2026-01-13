@@ -1,5 +1,7 @@
 # Extend out the variable income example for CGT to allow us to look at a variety of income levels and realisation events.
 
+#remotes::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
+
 # --- Libraries ---
 library(dplyr)
 library(ggplot2)
