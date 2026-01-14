@@ -1244,3 +1244,28 @@ save_e61("Short_Figure_6.png",plot_36,plot_37a2,res=2,title ="Social Protection 
 save_e61("Report_graph/Short_Figure_6.svg",plot_36,plot_37a2,res=2,title ="Social Protection Expenditure", 
          sources = c("ABS", "e61"),
          footnotes = c("In-Kind includes Social benefits to households in goods and services, and Use of goods and services.","Other reflects the costs of administration."))
+
+### Add plots for slides
+
+# Slide 3, interest
+
+s1_dt <- read_excel("Graph_data.xlsx", 
+                    sheet = "3 Interest_plot (Feb version)")
+
+setDT(s1_dt)
+
+s1_dt <- melt(s1_dt,id.vars = "Year")
+
+ggplot(s1_dt,aes(x=Year,y=value,colour=variable)) + geom_line() +
+  #scale_y_continuous_e61(limits = c(32,48,4)) +
+  labs_e61(title = "Interest expenditure",
+           y = "% GDP",
+           sources = c("PBO","e61"),
+           footnotes = c("Public debt interest from the 2026 National Fiscal Outlook by the PBO")) + 
+  plab(c("State","Federal","National"),x=c(2003,2003,2003),y=c(1.2,1.7,2.2)) +
+  scale_x_continuous_e61(limits = c(2003,2029,5)) +
+  geom_vline(xintercept = 2025,linetype = "dashed")
+
+
+
+
