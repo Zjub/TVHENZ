@@ -3,6 +3,7 @@
 # Created: 19/10/2025
 # Last edit: 14/11/2025
 # Last editor: Matt Nolan
+## Double check the plots are edited, consistent, as had backup issues
 
 
 rm(list=ls())
@@ -1245,6 +1246,7 @@ save_e61("Report_graph/Short_Figure_6.svg",plot_36,plot_37a2,res=2,title ="Socia
          sources = c("ABS", "e61"),
          footnotes = c("In-Kind includes Social benefits to households in goods and services, and Use of goods and services.","Other reflects the costs of administration."))
 
+<<<<<<< Updated upstream
 ### Add plots for slides
 
 # Slide 3, interest
@@ -1265,6 +1267,27 @@ ggplot(s1_dt,aes(x=Year,y=value,colour=variable)) + geom_line() +
   plab(c("State","Federal","National"),x=c(2003,2003,2003),y=c(1.2,1.7,2.2)) +
   scale_x_continuous_e61(limits = c(2003,2029,5)) +
   geom_vline(xintercept = 2025,linetype = "dashed")
+=======
+
+##### Additional plots
+## Tax
+
+tax_dt <- read_excel("Graph_data.xlsx", 
+                      sheet = "Tax_plot")
+setDT(tax_dt)
+
+ggplot(melt(tax_dt,id.vars = "year"),aes(x=year,y=value*100,colour=variable)) + geom_line() + geom_vline(xintercept = 2025,linetype = "dashed") +
+  scale_y_continuous_e61(limits = c(0,25,5)) +
+  labs_e61(title = "Income tax burdens to rise",
+           y = "% GDP",
+           sources = c("e61","PBO"),
+           footnotes = c("Until 2000, cash accounting concepts are used. Post 2000 income tax is accrual based.","Projections sourced from PBO Medium Term Budget Outlook, with an allowance for non-individual or corporate income tax.","Total income tax includes individual, corporate, fringe benefit, resource rent, and superannuation taxes."))
+
+save_e61("Income_tax.png",res=2)
+save_e61("Income_tax.svg")
+
+## Interest
+>>>>>>> Stashed changes
 
 
 

@@ -2,6 +2,10 @@
 
 #remotes::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
 
+# dir.create("C:/Rlibs", showWarnings = FALSE)
+# .libPaths(c("C:/Rlibs", .libPaths()))
+# install.packages("xfun")
+
 # --- Libraries ---
 library(dplyr)
 library(ggplot2)
@@ -196,7 +200,7 @@ ggplot(all_results[regularity == 10],
   plab(c("Regular Wages","Irregular Gains","Discounted Irregular Gains"),x=c(50,50,80),y=c(5,35,15))
 
 save_e61("ETR_comparison_income_CGT.pdf")
-
+save_e61("ETR_comparison_income_CGT.png",res=2,title = "Overall effective tax rate by regularity")
 
 ggplot(all_results[income_target/1000 == 100],
        aes(x = regularity, y = ETR_overall * 100, colour = pattern)) +
@@ -213,6 +217,7 @@ ggplot(all_results[income_target/1000 == 100],
 
 save_e61("ETR_comparison_regularity_CGT.pdf")
 save_e61("ETR_comparison_regularity_CGT.svg",title = "Overall effective tax rate by regularity")
+
 
 
 # (B) PV of tax vs income_target, coloured by pattern, faceted by regularity

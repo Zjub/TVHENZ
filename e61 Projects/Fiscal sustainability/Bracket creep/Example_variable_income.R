@@ -18,7 +18,10 @@ library(Hmisc)
 levy = TRUE # Include the medicare levy
 surcharge = FALSE # Include the medicare surcharge
 regularity = 10 # How often a capital gain occurs over the 60 periods.
+<<<<<<< Updated upstream
 income_target <- 100000 # The annual equivalent
+=======
+>>>>>>> Stashed changes
 
 
 ## Define the tax function
@@ -144,5 +147,37 @@ ggplot(pv_results, aes(x = variable, y = PV_tax/1e6, fill = variable)) +
     x = "",
     y = "$m",
     sources = c("e61"),
-    footnotes = c("PV over 60 years of tax payments.",paste0("Present Value of Tax Paid (discount rate = ", disc_rate*100, "%)"),"Volatile earner receives $2m every 20 years. Stable earner receives $100,000 each year.")
+    footnotes = c("PV over 60 years of tax payments.",paste0("Present Value of Tax Paid (discount rate = ", disc_rate*100, "%)"),"Volatile earner receives $1m every 10 years. Stable earner receives $100,000 each year.")
   )
+
+save_e61("Volatile_PV.svg")
+save_e61("Volatile_PV.pdf")
+
+
+pv_plot <- ggplot(pv_results, aes(x = variable, y = PV_tax/1e6, fill = variable)) +
+  geom_col() +
+  labs_e61(
+    title = "Tax paid by way earned",
+    x = "",
+    y = "$m",
+    sources = c("e61"),
+    footnotes = c("PV over 60 years of tax payments.",paste0("Present Value of Tax Paid (discount rate = ", disc_rate*100, "%)"),"Volatile earner receives $1m every 10 years. Stable earner receives $100,000 each year.")
+  )
+
+
+etr_plot <- ggplot(long_tax_paid[,.(value = sum(value)/60000),by=.(variable)],aes(x=variable,y=value,fill=variable))+
+  geom_col() +
+  labs_e61(title = paste0("Hypothetical ETR ($",as.character(income_target_tag)," earner)"),
+           y= "%",
+           x="",
+           sources = c("e61"),
+           footnotes = c("This is the ratio of lifetime tax paid and income received, not PV values. The earnings occur over 60 years, with the stable earner receiving this amount each year. The volatile earner receives ten times the annual amount every ten years, and nothing in other years."))
+
+
+save_e61("volatile_etr_pv.pdf",etr_plot,pv_plot)
+
+long_tax_paid[,.(value = sum(value)/60000),by=.(variable)]
+
+
+pv_results[variable == "Volatile"]$PV_tax/pv_results[variable == "Stable"]$PV_tax-1
+pv_results[variable == "Volatile with discount"]$PV_tax/pv_results[variable == "Stable"]$PV_tax-1

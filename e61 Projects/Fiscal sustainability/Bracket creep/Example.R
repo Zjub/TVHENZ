@@ -14,8 +14,9 @@ library(Hmisc)
 
 # Options
 
-levy = TRUE # Include the medicare levy
+levy = FALSE # Include the medicare levy
 surcharge = FALSE # Include the medicare surcharge
+second_rate = 0.16
 
 # Define the tax function
 
@@ -47,13 +48,13 @@ tax_function <- function(income, include_levy = TRUE, include_surcharge = TRUE) 
   # --- Base tax brackets ---
   base_tax <- case_when(
     income <= 18200 ~ 0,
-    income <= 45000 ~ (income - 18200) * 0.16,
-    income <= 135000 ~ (45000 - 18200) * 0.16 +
+    income <= 45000 ~ (income - 18200) * second_rate,
+    income <= 135000 ~ (45000 - 18200) * second_rate +
       (income - 45000) * 0.30,
-    income <= 190000 ~ (45000 - 18200) * 0.16 +
+    income <= 190000 ~ (45000 - 18200) * second_rate +
       (135000 - 45000) * 0.30 +
       (income - 135000) * 0.37,
-    TRUE             ~ (45000 - 18200) * 0.16 +
+    TRUE             ~ (45000 - 18200) * second_rate +
       (135000 - 45000) * 0.30 +
       (190000 - 135000) * 0.37 +
       (income - 190000) * 0.45
@@ -72,7 +73,7 @@ etr_function <- function(income) {
 }
 
 # Create income sequence
-incomes <- seq(1000, 400000, by = 1000)
+incomes <- seq(1000, 200000, by = 500)
 
 # Define deflator (1 + 0.025)^10
 deflator <- (1 + 0.286)
@@ -181,7 +182,8 @@ ggplot(df, aes(x = income/1000)) +
        colour=c(palette_e61(3)[1],palette_e61(3)[3],"blue","red","black"),
     size = 2)
 
-save_e61(paste0("Bracket_creep_",save_vec,".png"),res=2,save_data = TRUE)
+#save_e61(paste0("Bracket_creep_",save_vec,".png"),res=2,save_data = TRUE)
+#save_e61(paste0("Bracket_creep_",save_vec,".svg"))
 
 
 df[,diff := etr_deflated - etr_nominal]
