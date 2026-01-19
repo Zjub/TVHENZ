@@ -43,7 +43,7 @@ colnames(Aus_toG)[2] <- "Government_level"
 Aus_toG[, Government_level := fifelse(Government_level %in% c("Local", "State"), 
                                       "Non-Federal", "Federal")]
 
-Aus_toG <- Aus_toG[, .(value = sum(value)), 
+Aus_toG <- Aus_toG[, .(value = sum(value,na.rm = TRUE)), 
                    by = .(COFOG_Area, Government_level, Year)]
 
 Aus_toG
@@ -496,23 +496,23 @@ pop_long <- pop_long[Aus_spend_long_total[COFOG_Area == "Total"],on=.(Year)][,no
 ggplot(pop_long,aes(x=Year,y=nom_pc_spend)) + geom_col()
 
 # Deflate
-
-cpi <- read_abs(cat_no = "6401.0")
-setDT(cpi)
-
-cpi <- cpi[startsWith(series, "Index Numbers ;  All groups CPI ;  Aust") & table_no == 640101]
-
-max(cpi[,.N,by=.(date)]$N)
-
-cpi[, Year := year(date) + (month(date) >= 7)]
-cpi_annual <- cpi[, .(cpi_avg = mean(value, na.rm = TRUE)), by = Year]
-
-pop_real <- cpi_annual[pop_long,on=.(Year)][,real_pc_spend := nom_pc_spend*100/cpi_avg]
-
-
-ggplot(pop_real,aes(x=Year,y=real_pc_spend/1000)) + geom_col() +
-  labs_e61(title = "Real Consolidated Expenditure per person",
-           y="$(000s)")
+### Jan 2025 update - ABS broke the CPI data after the monthly data was released.
+# cpi <- read_abs(cat_no = "6401.0")
+# setDT(cpi)
+# 
+# cpi <- cpi[startsWith(series, "Index Numbers ;  All groups CPI ;  Aust") & table_no == 640101]
+# 
+# max(cpi[,.N,by=.(date)]$N)
+# 
+# cpi[, Year := year(date) + (month(date) >= 7)]
+# cpi_annual <- cpi[, .(cpi_avg = mean(value, na.rm = TRUE)), by = Year]
+# 
+# pop_real <- cpi_annual[pop_long,on=.(Year)][,real_pc_spend := nom_pc_spend*100/cpi_avg]
+# 
+# 
+# ggplot(pop_real,aes(x=Year,y=real_pc_spend/1000)) + geom_col() +
+#   labs_e61(title = "Real Consolidated Expenditure per person",
+#            y="$(000s)")
 
 
 #save_e61("Real_consolidated_PC.png",res=2)
@@ -597,6 +597,19 @@ OECD_debt_rank <- OECD_debt[TIME_PERIOD == 2023][,.(`Reference area`,OBS_VALUE)]
 
 OECD_debt_rank[order(OBS_VALUE)]
 
+### IMF country comparisons
+
+IMF_govt_debt <- read_csv("IMF_govt_debt.csv")
+setDT(IMF_govt_debt)
+
+ggplot(melt(IMF_govt_debt[COUNTRY != "New Zealand"],id.vars = c("COUNTRY","Type")),aes(x=as.numeric(variable) +1979,y=value,colour=COUNTRY)) +geom_line() +facet_wrap(~Type) +
+  theme_e61(legend = "bottom")
+
+ggplot(melt(IMF_govt_debt[COUNTRY != "New Zealand"],id.vars = c("COUNTRY","Type"))[Type == "Net"],aes(x=as.numeric(variable) +1979,y=value,colour=COUNTRY)) +geom_line() +
+  labs_e61(title = "Net debt by country") + geom_hline(yintercept = 0) +
+  plab(c("Australia","France","Japan","UK","USA"),x=rep(1980,times=5),y=c(65,135,165,85,115))
+
+save_e61("Cross_country_time_series_debt.svg")
 
 ### GFS information
 
@@ -827,9 +840,8 @@ flow_dt <- flow_dt[exp_proj,on=.(year)][,exp_gap := Expenses - Consolidated*100]
 
 flow_dt
 
+####### Added OECD plots 
 
-library(data.table)
-library(ggplot2)
 
 ##------------------------------------------------------##
 ## Function to project debt for a given revenue rule    ##
