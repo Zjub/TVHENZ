@@ -181,6 +181,25 @@ ggplot(f4_dt, aes(x = `Reference area`, y = OBS_VALUE, fill = colour_flag)) +
 
 save_e61("Report_graph/new_Figure_4.svg")
 
+# Updated OECD numbers
+
+f4_dt <- read_excel("Graph_data.xlsx", 
+                    sheet = "Figure_4 (Feb version)")
+
+setDT(f4_dt)
+
+f4_dt[, `Reference area` := factor(`Reference area`, levels = `Reference area`)]
+
+ggplot(f4_dt, aes(x = `Reference area`, y = OBS_VALUE, fill = colour_flag)) +
+  geom_col(width = 0.7) +
+  coord_flip() +
+  format_flip() +
+  scale_fill_manual(values = c("Australia" = "gold", "Other" = palette_e61(2)[2])) +
+  labs_e61(x = NULL, y = "% GDP",title = "General government gross debt (2023)",
+           sources = c("e61","OECD"))
+
+save_e61("Report_graph/new_Figure_4_new.svg")
+
 
 ## Figure 5a: Expenditure by government level
 

@@ -18,10 +18,8 @@ library(Hmisc)
 levy = TRUE # Include the medicare levy
 surcharge = FALSE # Include the medicare surcharge
 regularity = 10 # How often a capital gain occurs over the 60 periods.
-<<<<<<< Updated upstream
+
 income_target <- 100000 # The annual equivalent
-=======
->>>>>>> Stashed changes
 
 
 ## Define the tax function
@@ -148,8 +146,9 @@ ggplot(pv_results, aes(x = variable, y = PV_tax/1e6, fill = variable)) +
     y = "$m",
     sources = c("e61"),
     footnotes = c("PV over 60 years of tax payments.",paste0("Present Value of Tax Paid (discount rate = ", disc_rate*100, "%)"),"Volatile earner receives $1m every 10 years. Stable earner receives $100,000 each year.")
-  )
+  ) + scale_y_continuous_e61(limits = c(0,1.5,0.5))
 
+save_e61("Volatile_PV.png",res=2)
 save_e61("Volatile_PV.svg")
 save_e61("Volatile_PV.pdf")
 

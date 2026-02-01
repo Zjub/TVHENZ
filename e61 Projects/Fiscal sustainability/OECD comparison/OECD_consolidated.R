@@ -552,7 +552,8 @@ borrow_dt[Country == "Australia"]
 
 # Consolidated debt
 
-OECD_debt <- read_csv("OECD.GOV.GIP,DSD_GOV@DF_GOV_PF_YU,+A..GGD.PT_B1GQ....csv")
+#OECD_debt <- read_csv("OECD.GOV.GIP,DSD_GOV@DF_GOV_PF_YU,+A..GGD.PT_B1GQ....csv")
+OECD_debt <- read_csv("Updated OECD gross general debt.csv")
 setDT(OECD_debt)
 
 colnames(OECD_debt)
@@ -574,6 +575,8 @@ ggplot(OECD_debt_2023, aes(x = `Reference area`, y = OBS_VALUE, fill = colour_fl
 
 OECD_debt_2023[,.(`Reference area`, OBS_VALUE, colour_flag)]
 
+
+
 save_e61("GG_gross_debt_OECD.png",res=2)
 
 # Check ranking each year
@@ -581,6 +584,8 @@ save_e61("GG_gross_debt_OECD.png",res=2)
 OECD_debt2 <- OECD_debt[
   #`Reference area` %in% borrowing_data$Country
 ][,.(REF_AREA,TIME_PERIOD,OBS_VALUE)]
+
+OECD_debt2 <- OECD_debt2[!`REF_AREA` %in% c("EUOECD","OECD","OECD_REP")]
 
 OECD_debt2[, `:=`(
   rank = frank(-OBS_VALUE, ties.method = "min"),  # descending: highest debt = rank 1
@@ -590,6 +595,14 @@ OECD_debt2[, `:=`(
 aus_rank <- OECD_debt2[REF_AREA == "AUS", .(TIME_PERIOD, OBS_VALUE, rank, n_countries)][order(TIME_PERIOD)]
 
 aus_rank
+
+all_rank <- OECD_debt2[, .(REF_AREA,TIME_PERIOD, OBS_VALUE, rank, n_countries)][order(TIME_PERIOD)]
+
+change_thing <- all_rank[TIME_PERIOD == 2023][all_rank[TIME_PERIOD == 2007],on=.(REF_AREA)][,change := OBS_VALUE - i.OBS_VALUE][,prop_change := (OBS_VALUE - i.OBS_VALUE)/i.OBS_VALUE]
+
+change_thing[!is.na(change)][order(-change)][,.(REF_AREA,change,prop_change)]
+
+unique(OECD_debt2[,.(REF_AREA)])
 
 ## Ranking
 

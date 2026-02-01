@@ -23,7 +23,7 @@ horizon   <- 60     # Number of periods
 #income_targets <- c(50000, 100000, 150000, 200000)  # adjust as you like
 income_targets <- seq(00000,200000,by=500)
 #regularities   <- c(2, 5, 10, 20)                   # e.g. how often CG happens
-regularities   <- seq(1,20,1)
+regularities   <- seq(1,10,1)
 discount = 0.5
 
 # -----------------------------
@@ -187,11 +187,26 @@ ggplot(all_results,
 
 all_results[total_tax == 0,ETR_overall := 0]
 
+# ggplot(all_results[regularity == 10],
+#        aes(x = income_target / 1000, y = ETR_overall * 100, colour = pattern)) +
+#   geom_line() +
+#   labs_e61(
+#     #title = "Overall effective tax rate by average income",
+#     x     = "Average annual income ($'000)",
+#     subtitle     = "Effective tax rate (%)",
+#     sources   = c("e61"),
+#     footnotes = c("ETR is total tax over 60 years divided by total income over 60 years.",paste0("Capital gain is realised every ","10 ","years. No real income growth occurs."))
+#   ) +
+#   plab(c("Regular Wages","Irregular Gains","Discounted Irregular Gains"),x=c(50,50,80),y=c(5,35,15))
+#
+# save_e61("ETR_comparison_income_CGT.pdf")
+# save_e61("ETR_comparison_income_CGT.png",res=2,title = "Overall effective tax rate by regularity")
+
 ggplot(all_results[regularity == 10],
        aes(x = income_target / 1000, y = ETR_overall * 100, colour = pattern)) +
   geom_line() +
   labs_e61(
-    #title = "Overall effective tax rate by average income",
+    title = "Overall effective tax rate by average income",
     x     = "Average annual income ($'000)",
     subtitle     = "Effective tax rate (%)",
     sources   = c("e61"),
@@ -199,14 +214,31 @@ ggplot(all_results[regularity == 10],
   ) +
   plab(c("Regular Wages","Irregular Gains","Discounted Irregular Gains"),x=c(50,50,80),y=c(5,35,15))
 
-save_e61("ETR_comparison_income_CGT.pdf")
-save_e61("ETR_comparison_income_CGT.png",res=2,title = "Overall effective tax rate by regularity")
+save_e61("2 Overall effective tax rate by income.pdf")
+save_e61("2 Overall effective tax rate by income.svg")
+save_e61("2 Overall effective tax rate by income.png",res=2)
+
+# ggplot(all_results[income_target/1000 == 100],
+#        aes(x = regularity, y = ETR_overall * 100, colour = pattern)) +
+#   geom_line() +
+#   labs_e61(
+#     #title = "Overall effective tax rate by regularity",
+#     x     = "Years before each realisation",
+#     subtitle     = "Effective tax rate (%)",
+#     sources   = c("e61"),
+#     footnotes = c("ETR is total tax over 60 years divided by total income over 60 years.",paste0("Average annual income is $100,000 in all cases. No real income growth occurs."))
+#   ) +
+#   plab(c("Regular Wages","Irregular Gains","Discounted Irregular Gains"),x=c(5,5,8),y=c(25,33,15))
+#
+#
+# save_e61("ETR_comparison_regularity_CGT.pdf")
+# save_e61("ETR_comparison_regularity_CGT.svg",title = "Overall effective tax rate by regularity")
 
 ggplot(all_results[income_target/1000 == 100],
        aes(x = regularity, y = ETR_overall * 100, colour = pattern)) +
   geom_line() +
   labs_e61(
-    #title = "Overall effective tax rate by regularity",
+    title = "Overall effective tax rate by regularity",
     x     = "Years before each realisation",
     subtitle     = "Effective tax rate (%)",
     sources   = c("e61"),
@@ -214,10 +246,9 @@ ggplot(all_results[income_target/1000 == 100],
   ) +
   plab(c("Regular Wages","Irregular Gains","Discounted Irregular Gains"),x=c(5,5,8),y=c(25,33,15))
 
-
 save_e61("ETR_comparison_regularity_CGT.pdf")
-save_e61("ETR_comparison_regularity_CGT.svg",title = "Overall effective tax rate by regularity")
-
+save_e61("ETR_comparison_regularity_CGT.svg")
+save_e61("ETR_comparison_regularity_CGT.png",res=2)
 
 
 # (B) PV of tax vs income_target, coloured by pattern, faceted by regularity
@@ -269,5 +300,33 @@ ggplot(share_dt,aes(x=percentile,y=value,colour=variable)) + geom_line()
 # shapley[variable == "CG"][order(percentile)]
 
 
+### For newsletter
+
+tax10_dt <- read_excel("taxpercentilesdecadeallyears.xlsx")
+setDT(tax10_dt)
+tax10_dt[,p10 := fifelse(p10 <0,0,p10)]
+
+tax1_dt <- read_excel("taxpercentiles 1.xlsx")
+setDT(tax1_dt)
+
+tax1_dt[,cg_share := total_CG/total_income]
+tax10_dt[,cg_share := total_CG/total_income]
+
+tax1_dt[, dataset := "1-year ETR"]
+tax10_dt[, dataset := "10-year ETR"]
+
+tax_plot_dt <- rbindlist(list(
+  tax1_dt[, .(percentile = percentile, cg_share, total_income, dataset)],
+  tax10_dt[, .(percentile, cg_share, total_income,dataset)]
+))
+
+ggplot(tax_plot_dt[total_income >=0 & percentile >= 200 & percentile <= 998], aes(x = percentile/10, y = cg_share*100, colour = dataset)) +
+  geom_line() +
+  labs( title = "By earning percentile",
+        x = "Income Percentile",
+        subtitle = "Capital Gains Share of Total Income",
+        source = c("ABS","e61")
+  ) +
+  plab(c("1-year ETR","10-year ETR"),x=c(20,20),y=c(13,8))
 
 

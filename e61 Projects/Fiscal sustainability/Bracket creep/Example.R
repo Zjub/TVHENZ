@@ -199,4 +199,4 @@ ggplot(df,aes(x=income/1000,y=diff_doll)) + geom_line()
 # ggplot(change_dt,aes(x=income/1000,y=value)) + geom_line() + facet_wrap(~variable)
 
 
-
+### Add a scenario where the current change in policy that is legislated is introduced.
