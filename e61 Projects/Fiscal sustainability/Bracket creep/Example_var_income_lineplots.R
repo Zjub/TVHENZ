@@ -191,7 +191,7 @@ ggplot(all_results[regularity == 10],
        aes(x = income_target / 1000, y = ETR_overall * 100, colour = pattern)) +
   geom_line() +
   labs_e61(
-    #title = "Overall effective tax rate by average income",
+    title = "Overall effective tax rate by average income",
     x     = "Average annual income ($'000)",
     subtitle     = "Effective tax rate (%)",
     sources   = c("e61"),

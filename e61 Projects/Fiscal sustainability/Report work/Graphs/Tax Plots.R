@@ -63,7 +63,7 @@ ggplot(tax10_dt[mean_income >= 0 & percentile <= 998], aes(x = percentile/10)) +
 
 save_e61("10yr Income distribution.svg")
 save_e61("10yr Income distribution.pdf")
-<<<<<<< Updated upstream
+#<<<<<<< Updated upstream
 
 tax10_dt[percentile == 500]
 
@@ -154,6 +154,7 @@ ggplot(tax_plot_dt[total_income >=0 & percentile >= 200 & percentile <= 998], ae
 
 save_e61("10yr Cap Gain Share Compare.svg")
 save_e61("10yr Cap Gain Share Compare.pdf")
+save_e61("10yr Cap Gain Share Compare.png",res=2)
 
 ## The 1 years
 
@@ -192,5 +193,5 @@ ggplot(tax1_dt[percentile < 999], aes(x = mean_income/1000)) +
 
 save_e61("1yr income dollar distribution.svg")
 save_e61("1yr income dollar distribution.pdf")
-=======
->>>>>>> Stashed changes
+#=======
+#>>>>>>> Stashed changes

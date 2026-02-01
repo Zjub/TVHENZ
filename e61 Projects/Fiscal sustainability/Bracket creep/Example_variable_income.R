@@ -18,10 +18,10 @@ library(Hmisc)
 levy = TRUE # Include the medicare levy
 surcharge = FALSE # Include the medicare surcharge
 regularity = 10 # How often a capital gain occurs over the 60 periods.
-<<<<<<< Updated upstream
+#<<<<<<< Updated upstream
 income_target <- 100000 # The annual equivalent
-=======
->>>>>>> Stashed changes
+#=======
+#>>>>>>> Stashed changes
 
 
 ## Define the tax function
@@ -97,6 +97,7 @@ ggplot(long_tax_paid[,.(value = sum(value)/1000000),by=.(variable)],aes(x=variab
        footnotes = c(paste0("These are actual tax paid sums, not PV values. The earnings occur over 60 years, with the stable earner receiving this amount each year. The volatile earner receives ", regularity," times the annual amount every ", regularity," years, and nothing in other years.")))
 
 save_e61(paste0("Volatile_tax_",income_target_tag,"_reg",regularity,".pdf"))
+save_e61(paste0("Volatile_tax_",income_target_tag,"_reg",regularity,".png"),res=2)
 
 ## Example where there is 2.5% inflation and 2.5% real return over 10 years.
 #
