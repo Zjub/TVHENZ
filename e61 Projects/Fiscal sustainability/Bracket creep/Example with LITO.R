@@ -1,4 +1,5 @@
 ## Main example file for the ETR of bracket creep
+## LITO is included in this version
 
 #install.packages("remotes")
 #remotes::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
@@ -22,13 +23,23 @@ second_rate = 0.16
 
 tax_function <- function(income, include_levy = TRUE, include_surcharge = TRUE) {
 
+  # --- LITO (Low Income Tax Offset) ---
+  # Applies to income tax payable (base tax), not Medicare levy / MLS.
+  lito <- dplyr::case_when(
+    income <= 37500 ~ 700,
+    income <= 45000 ~ 700 - 0.05 * (income - 37500),
+    income <= 66667 ~ 325 - 0.015 * (income - 45000),
+    TRUE            ~ 0
+  )
+
+  # Guardrails (numerical safety)
+  lito <- pmax(0, lito)
+
   # --- Medicare Levy phase-in and full ---
   medicare_levy <- if (include_levy) {
     ifelse(
       income <= 45000,
-      # Phase-in below ~45k
       pmax(0, pmin((income - 27222) * 0.1, income * 0.02)),
-      # Full 2% above ~45k
       income * 0.02
     )
   } else {
@@ -36,17 +47,17 @@ tax_function <- function(income, include_levy = TRUE, include_surcharge = TRUE) 
   }
 
   # --- Medicare Levy Surcharge (MLS) --- Note: Surcharge income base is wrong, so do not use for now
-  mls_rate <- if (include_surcharge) case_when(
+  mls_rate <- if (include_surcharge) dplyr::case_when(
     income <= 101000 ~ 0,
     income <= 118000 ~ 0.01,
     income <= 158000 ~ 0.0125,
-    TRUE ~ 0.015
+    TRUE             ~ 0.015
   ) else 0
 
   mls_surcharge <- income * mls_rate
 
   # --- Base tax brackets ---
-  base_tax <- case_when(
+  base_tax <- dplyr::case_when(
     income <= 18200 ~ 0,
     income <= 45000 ~ (income - 18200) * second_rate,
     income <= 135000 ~ (45000 - 18200) * second_rate +
@@ -60,9 +71,11 @@ tax_function <- function(income, include_levy = TRUE, include_surcharge = TRUE) 
       (income - 190000) * 0.45
   )
 
-  # --- Total tax ---
-  total_tax <- base_tax + medicare_levy + mls_surcharge
+  # --- Apply LITO to base tax only (non-refundable) ---
+  income_tax_after_offsets <- pmax(0, base_tax - lito)
 
+  # --- Total tax ---
+  total_tax <- income_tax_after_offsets + medicare_levy + mls_surcharge
   return(total_tax)
 }
 
@@ -200,7 +213,7 @@ ggplot(df,aes(x=income/1000,y=diff*100)) + geom_line() +
     shape = "Tax Scale"
   )
 
-ggplot(df,aes(x=income/1000,y=diff_doll)) + geom_line()
+#ggplot(df,aes(x=income/1000,y=diff_doll)) + geom_line()
 
 save_e61(paste0("Bracket_creep_change",".png"),res=2)
 

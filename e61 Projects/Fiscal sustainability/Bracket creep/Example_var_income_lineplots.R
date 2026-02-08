@@ -1,4 +1,5 @@
-# Extend out the variable income example for CGT to allow us to look at a variety of income levels and realisation events.
+## Extend out the variable income example for CGT to allow us to look at a variety of income levels and realisation events.
+## LITO is excluded in this version
 
 #remotes::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
 

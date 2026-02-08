@@ -1,5 +1,6 @@
 #install.packages("remotes")
 #remotes::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
+## LITO is excluded in this version
 
 ## Create ETR schedules for stable vs variable income
 
