@@ -15,13 +15,12 @@ library(Hmisc)
 
 # Options
 
-levy = FALSE # Include the medicare levy
+levy = TRUE # Include the medicare levy
 surcharge = FALSE # Include the medicare surcharge
-second_rate = 0.16
 
 # Define the tax function
 
-tax_function <- function(income, include_levy = TRUE, include_surcharge = TRUE) {
+tax_function <- function(income, include_levy = TRUE, include_surcharge = TRUE,second_rate = 0.16) {
 
   # --- LITO (Low Income Tax Offset) ---
   # Applies to income tax payable (base tax), not Medicare levy / MLS.
@@ -81,8 +80,8 @@ tax_function <- function(income, include_levy = TRUE, include_surcharge = TRUE) 
 
 
 # Define effective tax rate function
-etr_function <- function(income) {
-  tax_function(income, include_levy = levy, include_surcharge = surcharge) / income
+etr_function <- function(income,second_rate=0.16) {
+  tax_function(income, include_levy = levy, include_surcharge = surcharge,second_rate=second_rate) / income
 }
 
 # Create income sequence
@@ -95,7 +94,7 @@ deflator <- (1 + 0.286)
 df <- tibble(
   income = incomes,
   etr_nominal = etr_function(income),
-  etr_deflated = etr_function(income * deflator)
+  etr_deflated = etr_function(income * deflator,second_rate = 0.14)
 )
 
 setDT(df)
@@ -108,8 +107,8 @@ annotate_points <- tibble(
   income = c(avg_earnings_25, avg_earnings_25, avg_earnings_25*(1+real_income_growth)),
   etr = c(
     etr_function(avg_earnings_25),
-    etr_function(avg_earnings_25 * deflator),
-    etr_function(avg_earnings_25*(1+real_income_growth) * deflator)
+    etr_function(avg_earnings_25 * deflator,second_rate = 0.14),
+    etr_function(avg_earnings_25*(1+real_income_growth) * deflator,second_rate = 0.14)
   ),
   type = c("Nominal", "Deflated", "Deflated")
 )
@@ -198,6 +197,43 @@ ggplot(df, aes(x = income/1000)) +
 save_e61(paste0("Bracket_creep_",save_vec,".png"),res=2,save_data = TRUE)
 save_e61(paste0("Bracket_creep_",save_vec,".svg"))
 
+ggplot(df, aes(x = income/1000)) +
+  geom_line(aes(y = etr_nominal*100, colour = "Nominal")) +
+  geom_line(aes(y = etr_deflated*100, colour = "Deflated")) +
+  geom_point(data = annotate_points,
+             aes(x = income/1000, y = etr*100, shape = type, colour = point_color),
+             size = 2.5) +
+  geom_text(data = annotate_points,
+            aes(x = income / 1000, y = etr * 100,
+                label = paste0(round(etr * 100, 1), "%"),
+                colour = point_color,
+                vjust = vjust),
+            size = 2) +
+  scale_colour_manual(values = c(
+    "Nominal" = palette_e61(3)[1],
+    "Deflated" = palette_e61(3)[3],
+    "red" = "red",
+    "black" = "black",
+    "blue" = "blue"  # Add more if needed
+  )) +
+  scale_shape_manual(values = c("Nominal" = 16, "Deflated" = 17)) +
+  labs_e61(
+    #title = title_vec,
+    footnotes = footnotes_vec,
+    x = "Gross Taxable Income (FY25$)",
+    y = "%",
+    colour = "Tax Scale",
+    shape = "Tax Scale"
+  ) +
+  plab(#c("Effective tax rates in FY25","Effective tax rates in FY35","Average FY25 worker in FY25","Average FY25 worker in FY35","Average FY35 worker in FY35"),
+    c("Effective tax rates in FY25","Effective tax rates in FY35","FY25 worker in FY25","FY25 worker in FY35","FY35 worker in FY35"),
+    x=c(1,1,100,100,100),
+    y=c(0.28*100,0.33*100,0.16*100,0.13*100,0.10*100),
+    colour=c(palette_e61(3)[1],palette_e61(3)[3],"blue","red","black"),
+    size = 2)
+
+save_e61(paste0("Bracket_creep_",save_vec,".pdf"))
+
 
 df[,diff := etr_deflated - etr_nominal]
 df[,diff_doll := diff*income]
@@ -216,6 +252,7 @@ ggplot(df,aes(x=income/1000,y=diff*100)) + geom_line() +
 #ggplot(df,aes(x=income/1000,y=diff_doll)) + geom_line()
 
 save_e61(paste0("Bracket_creep_change",".png"),res=2)
+save_e61(paste0("Bracket_creep_change",".pdf"))
 
 # change_dt <- melt(df[,.(income,diff,diff_doll)],id.vars = "income")
 #

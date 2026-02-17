@@ -199,7 +199,7 @@ bal_inc   <- pmin(seq_along(proj_years) / 2, 1) * 0.0085
 rec_base  <- rep(receipts_last, length(proj_years)) + bal_inc
 prim_base <- rep(primary_last,  length(proj_years))
 
-# Rate shock path: +150bp for 3y, then 0 (your requirement)
+# Rate shock path: +150bp for 3y, then 0.005
 r_add_prior <- c(rep(0.015, 3), rep(0.005, length(proj_years) - 3))
 
 ## ---------------- Canonical names ----------------
