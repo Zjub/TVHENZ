@@ -182,8 +182,9 @@ donor_weights %>%
 ggplot(donor_weights, aes(x = reorder(unit, weight), y = weight)) +
   geom_col(fill = palette_e61(3)[1]) +
   coord_flip() +
-  labs(x = "Donor Country", y = "Weight", 
-       title = "Weights of Donor Countries in Synthetic Australia")
+  labs(x = "Donor Country", y = "Weight of Donor Countries in Synthetic Australia", 
+       title = "Weights for Aggregate Benchmark")
+
 
 synth_df <- synth_result %>% grab_synthetic_control()
 
@@ -374,8 +375,10 @@ donor_weights2 %>%
 ggplot(donor_weights2, aes(x = reorder(unit, weight), y = weight)) +
   geom_col(fill = palette_e61(3)[1]) +
   coord_flip() +
-  labs(x = "Donor Country", y = "Weight", 
-       title = "Weights of Donor Countries in Synthetic Australia (age adj)")
+  labs(x = "Donor Country", y = "Weights of Donor Countries in Synthetic Australia (age adj)", 
+       title = "Weights for Aggregate Benchmark")
+
+save_e61("Donor.pdf")
 
 
 ## Make own plot
