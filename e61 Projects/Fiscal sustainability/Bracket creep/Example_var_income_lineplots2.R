@@ -22,7 +22,7 @@ horizon   <- 60     # Number of periods
 
 # Vectors over which you'll loop
 #income_targets <- c(50000, 100000, 150000, 200000)  # adjust as you like
-income_targets <- seq(00000,200000,by=500)
+income_targets <- seq(00000,300000,by=500)
 #regularities   <- c(2, 5, 10, 20)                   # e.g. how often CG happens
 regularities   <- seq(1,10,1)
 discount = 0.5
@@ -307,6 +307,9 @@ save_e61("ETR_comparison_regularity_CGT_LITO.png",res=2)
 #     sources = c("e61")
 #   ) + theme_e61(legend = "bottom")
 
+all_results[regularity == 4]
+
+all_results[regularity == 10 & income_target == 100000]
 
 
 

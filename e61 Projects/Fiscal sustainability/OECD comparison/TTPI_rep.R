@@ -1,12 +1,18 @@
 # Topic: Replicate TTPI plot and deflate by income growth
 # Author: Matt Nolan
 # Created: 25/8/2025
-# Last edit: 25/8/2025
+# Last edit: 1/3/2026
 # Last editor: Matt Nolan
 
+# Library management --------------------------------------------
+
+# ## Update packages 
+.libPaths()
+update.packages(lib.loc = .libPaths()[1], ask = FALSE, checkBuilt = TRUE)
+
+# Libraries
 library(dplyr)
 library(ggplot2)
-library(theme61)
 library(readr)
 library(readxl)
 library(tidyverse)
@@ -14,6 +20,9 @@ library(data.table)
 library(Hmisc)
 library(tidysynth)
 library(readabs)
+library(theme61)
+
+# ------------------------------------------------
 
 dt <- read_excel("TTPI main table results.xlsx")
 setDT(dt)
@@ -62,14 +71,13 @@ ggplot(dt[year %in% c(1996,2006,2016,2021)],
 
 
 ## Switch the deflator - inflate up by CPI and deflate by GDPD.
-cpi_raw <- read_abs(cat_no = "6401.0", tables = "1")
+# Table 1 (the old reference) has been changed to monthly
+cpi_raw <- read_abs(cat_no = "6401.0", tables = "17")
 setDT(cpi_raw)
 
 cpi_au <- cpi_raw[grepl("Index Numbers ;  All groups CPI ;  Australia ;", series, ignore.case = TRUE)]
 
 cpi_au[,year := year(date)]
-
-
 
 gdp[,base := g_93]
 
@@ -85,19 +93,23 @@ ipd_raw <- read_abs(cat_no = "5206.0", tables = "5")
 setDT(ipd_raw)
 
 gdp_ipd <- ipd_raw[series == "GROSS DOMESTIC PRODUCT ;"][,year := year(date)][,.(GDPD = mean(value)/100),by=.(year)]
+gdpd_base_year <- if (2023 %in% gdp_ipd$year) 2023 else max(gdp_ipd$year, na.rm = TRUE)
+gdpd_base <- gdp_ipd[year == gdpd_base_year]$GDPD
+gdp_ipd[,GDPD_index := GDPD/gdpd_base]
 
 gdp_ipd
 
 dt <- dt[cpi,on=.(year)][gdp_ipd,on=.(year)][!is.na(net_trans)]
 
-dt[,net_trans_GDPD_PC := net_trans_real*cpi_value/GDPD]
+dt[,ngdp_pc_index := gdp_index*GDPD_index]
+dt[,net_trans_GDPD_PC := net_trans*cpi_value/ngdp_pc_index]
 
 ggplot(dt[year %in% c(1996,2006,2016,2021)],
        aes(x = age, y = net_trans_GDPD_PC, colour = factor(year), group = year)) +
   geom_line() +
   labs_e61(
-    title = "Deflated by GDPD",
-    y = "Net transfers (1993 $ nominal GDP-pc deflated)",
+    title = "Deflated by NGDP per capita",
+    y = "Net transfers (2023$ rebased by NGDP-pc growth)",
     colour = "Year"
   ) + theme_e61(legend = "bottom")
 
@@ -106,7 +118,7 @@ ggplot(dt[year %in% c(1996,2006,2016,2021)],
 
 ### Create 4 year blocks
 
-dt_group <- dt[,.(net_trans = weighted.mean(net_trans,population),net_trans_real = weighted.mean(net_trans,population),net_trans_GDPD_PC=weighted.mean(net_trans_GDPD_PC,population)),by=.(grouped_year,age)]
+dt_group <- dt[,.(net_trans = weighted.mean(net_trans,population),net_trans_real = weighted.mean(net_trans_real,population),net_trans_GDPD_PC=weighted.mean(net_trans_GDPD_PC,population)),by=.(grouped_year,age)]
 
 dt_group_unweight <- dt[,.(net_trans = mean(net_trans),net_trans_real = mean(net_trans),net_trans_GDPD_PC=mean(net_trans_GDPD_PC),pop=mean(population)),by=.(grouped_year,age)]
 
@@ -206,16 +218,17 @@ ggplot(dt_norm[year %in% c(1996,2006,2016,2021)],
 # This highlights that HS income has risen much strongly across the distribution than nominal GDP. As a result, lets also replicate transfers relative to HS income per person.
 
 dt[,avg_HS := weighted.mean(Haig_simon_income,population),by=.(year)]
-
-HS_base <- unique(dt[year==2021,.(avg_HS)])
-dt[,net_trans_HS := net_trans*HS_base$avg_HS/avg_HS]
+dt[,avg_HS_nom := avg_HS*cpi_value]
+hs_base_year <- if (2023 %in% dt$year) 2023 else max(dt$year, na.rm = TRUE)
+hs_base <- unique(dt[year == hs_base_year,.(avg_HS_nom)])$avg_HS_nom
+dt[,net_trans_HS := net_trans*cpi_value*hs_base/avg_HS_nom]
 
 ggplot(dt[year %in% c(1996,2006,2016,2021)],
        aes(x = age, y = net_trans_HS, colour = factor(year), group = year)) +
   geom_line() +
   labs_e61(
     title = "Deflated by HS income",
-    y = "Net transfers (2023$ relative to HS income)",
+    y = "Net transfers (2023$ rebased by HS-income growth)",
     colour = "Year"
   ) + theme_e61(legend = "bottom")
 
