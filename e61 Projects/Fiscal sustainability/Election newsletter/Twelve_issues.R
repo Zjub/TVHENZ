@@ -16,6 +16,8 @@ library(Synth)
 library(mFilter)
 library(ggtext)
 
+sessionInfo()
+
 rm(list=ls())
 gc()
 
@@ -33,7 +35,8 @@ ggplot(MEB, aes(x = Tax, y = MEB)) +
   geom_col() +
   coord_flip() +
   format_flip() +
-  labs_e61(subtitle = "Marginal Excess Burden (cents per dollar raised)",
+  labs_e61(#title = "State taxes are relatively inefficient",
+    subtitle = "Marginal Excess Burden (cents per dollar raised)",
            y="%",
            x="",
            sources = c("KPMG Econtech","PBO"),
@@ -41,6 +44,21 @@ ggplot(MEB, aes(x = Tax, y = MEB)) +
   scale_y_continuous_e61(limits = c(0,100,20))
 
 save_e61("MEB.pdf",pad_width = 2)
+
+ggplot(MEB, aes(x = Tax, y = MEB)) +
+  geom_col() +
+  coord_flip() +
+  format_flip() +
+  labs_e61(title = "State taxes are relatively inefficient",
+           subtitle = "Marginal Excess Burden (cents per dollar raised)",
+           y="%",
+           x="",
+           sources = c("KPMG Econtech","PBO"),
+           footnotes = c("Estimates from KPMG (2010) report for the Australia's Future Tax System Review.","Updated Stamp Duty Estimates used by PBO come from Cao et al (2015)")) +
+  scale_y_continuous_e61(limits = c(0,100,20))
+
+save_e61("MEB.png",pad_width = 2,res=2)
+save_e61("MEB.svg",pad_width = 2)
 
 ## METR
 
@@ -80,7 +98,7 @@ melted[, Asset_f := factor(Asset, levels = assets)]
 # Plot with staggered labels
 ggplot(melted, aes(x = Asset_f, y = value * 100, fill = Type)) +
   geom_col(position = "dodge") +
-  scale_y_continuous_e61(limits = c(-60, 100, 20)) +
+  #scale_y_continuous_e61(limits = c(-60, 100, 20)) +
   scale_x_discrete(labels = staggered_labels) +
   labs_e61(
     subtitle = "Marginal Effective Tax Rate",
@@ -96,7 +114,27 @@ ggplot(melted, aes(x = Asset_f, y = value * 100, fill = Type)) +
   )
 
 save_e61("METR.pdf")
+
+
+ggplot(melted, aes(x = Asset_f, y = value * 100, fill = Type)) +
+  geom_col(position = "dodge") +
+  #scale_y_continuous_e61(limits = c(-60, 100, 20)) +
+  scale_x_discrete(labels = staggered_labels) +
+  labs_e61(title = "Inconsistent taxation of savings",
+    subtitle = "Marginal Effective Tax Rate",
+    y = "%",
+    x = "",
+    sources = c("Varela, Breunig, and Sobeck (2020), Table 3.1"),
+    footnotes = c("Tax rates used across brackets are: 0%, 21%, 34.5%, 39%, and 47%")
+  ) +
+  plab(c("Tax-free treshold","Second bracket","Third bracket","Top bracket"),y=c(85,75,65,55),x=c(2,2,2,2)) +
+  theme(
+    axis.text.x = element_text(margin = margin(t = 10)),
+    axis.ticks.length.x = unit(5, "pt")
+  )
+
 save_e61("METR.png",res=2)
+save_e61("METR.svg")
 
 
 ## Asset ETRs
@@ -155,3 +193,19 @@ ggplot(Creep,aes(x=percentile,y=diff*100)) + geom_line() + geom_hline(yintercept
   plab(c("Increase in Tax Rate","Population Average"),x=c(1,1),y=c(3.2,2.7),colour = c(palette_e61(3)[2],palette_e61(3)[3]))
 
 save_e61("Drag.pdf")
+
+####### Insert age tax rate plot
+
+ATRSbygeneration <- read_csv("ATRSbygeneration.csv")
+setDT(ATRSbygeneration)
+
+ggplot(ATRSbygeneration,aes(x=AGE_FY_START,y=median*100,colour=YOB_group)) + geom_line() +
+  plab(c("65-66","81-82","56-57","74-75","90-91","97-98"),x=c(55,37,61,46,29,20),y=c(21,23,13,23,21,17)) +
+  labs_e61(title = "Tax rates rise for the young",
+           subtitle = "Median tax rate by birth cohort and age",
+           y = "%",
+           x= "Age",
+           sources = c("ABS","e61"))
+
+save_e61("Tax-age.png",res=2)
+save_e61("Tax-age.svg")

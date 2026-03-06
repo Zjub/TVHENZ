@@ -191,6 +191,7 @@ ggplot(tax1_dt[percentile < 999], aes(x = mean_income/1000)) +
   scale_y_continuous(limits = c(0, 50)) +
   plab(c("Median","p90","p10"),x=c(80,80,200),y=c(45,35,12),colour = c(palette_e61(2)[2],palette_e61(2)[1],palette_e61(2)[1]))
 
+save_e61("1yr income dollar distribution.png",res=2)
 save_e61("1yr income dollar distribution.svg")
 save_e61("1yr income dollar distribution.pdf")
 
