@@ -85,7 +85,7 @@ etr_function <- function(income,second_rate=0.16) {
 }
 
 # Create income sequence
-incomes <- seq(1000, 200000, by = 500)
+incomes <- seq(1000, 400000, by = 500)
 
 # Define deflator (1 + 0.025)^10
 deflator <- (1 + 0.286)
@@ -100,7 +100,7 @@ df <- tibble(
 setDT(df)
 
 real_income_growth <- 0.11
-avg_earnings_25 <- 100000
+avg_earnings_25 <- 75000
 
 # Create reference points to annotate
 annotate_points <- tibble(
