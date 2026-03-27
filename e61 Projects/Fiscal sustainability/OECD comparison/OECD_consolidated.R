@@ -807,8 +807,10 @@ ggplot(OECD_debt[
   `Reference area` == "Australia"
 ],aes(x= TIME_PERIOD, y= OBS_VALUE)) + geom_line()
 
-exp_proj <- Graph_data <- read_excel("~/GitHub/TVHENZ/e61 Projects/Fiscal sustainability/Report work/Graphs/Graph_data.xlsx", 
-                                     sheet = "Figure_26")
+#exp_proj <- Graph_data <- read_excel("~/GitHub/TVHENZ/e61 Projects/Fiscal sustainability/Report work/Graphs/Graph_data.xlsx", 
+#                                     sheet = "Figure_26")
+
+exp_proj <- read_excel("C:/Users/MattNolan/Git/TVHENZ/e61 Projects/Fiscal sustainability/Report work/Graphs/Graph_data.xlsx",sheet = "Figure_26")
 
 setDT(exp_proj)
 

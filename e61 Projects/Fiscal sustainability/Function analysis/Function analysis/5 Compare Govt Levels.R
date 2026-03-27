@@ -33,7 +33,7 @@ gc()
 
 ## Import data ----
 
-work = FALSE
+work = TRUE
 
 if (work == TRUE){
   consolidate_dt <- read_csv("C:/Users/MattNolan/Git/TVHENZ/e61 Projects/Fiscal sustainability/Function analysis/Data/abs_gfs_data_clean.csv")

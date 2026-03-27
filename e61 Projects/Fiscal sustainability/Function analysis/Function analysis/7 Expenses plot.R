@@ -65,7 +65,7 @@ ggplot(consolidated_expenses_dt,aes(x=fin_year,y=gov_expenses_mn,fill=etf_class_
 
 ggplot(consolidated_expenses_dt,aes(x=fin_year,y=gov_expenses_mn_real_1112/1000,fill=etf_class_name)) + geom_col()
 
-ggplot(consolidated_expenses_dt,aes(x=fin_year,y=gov_expenses_mn_real_1112,fill=etf_class_name)) + geom_col(position = "fill") + theme_e61(legend = "bottom")
+ggplot(consolidated_expenses_dt,aes(x=fin_year,y=gov_expenses_mn_real_1112,fill=etf_class_name)) + geom_col(position = "fill") + theme_e61(legend = "bottom") #+ scale_y_continuous_e61(limits = c(-10000,70000,10000))
 
 summary(consolidated_expenses_dt)
 
