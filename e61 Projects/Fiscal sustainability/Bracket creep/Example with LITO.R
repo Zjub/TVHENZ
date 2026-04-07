@@ -15,12 +15,17 @@ library(Hmisc)
 
 # Options
 
-levy = TRUE # Include the medicare levy
+levy = FALSE # Include the medicare levy
 surcharge = FALSE # Include the medicare surcharge
+real_income_growth <- 0.11
+avg_earnings_25 <- 100000
+second_rate_future <- 0.14
+initial_scale <- "24-25" # Switch to 23-24 to check the role of Stage 3 tax cuts - note the lack of LMITO makes this a bit misleading, as the 23-24 cuts are largely bedding in prior LMITO settings
+future_scale <- "24-25"
 
 # Define the tax function
 
-tax_function <- function(income, include_levy = TRUE, include_surcharge = TRUE,second_rate = 0.16) {
+tax_function <- function(income, include_levy = levy, include_surcharge = surcharge,second_rate = 0.16,tax_scale = future_scale) {
 
   # --- LITO (Low Income Tax Offset) ---
   # Applies to income tax payable (base tax), not Medicare levy / MLS.
@@ -56,19 +61,37 @@ tax_function <- function(income, include_levy = TRUE, include_surcharge = TRUE,s
   mls_surcharge <- income * mls_rate
 
   # --- Base tax brackets ---
+
+  if(tax_scale == "23-24"){
+  # 2023/24 scale
   base_tax <- dplyr::case_when(
     income <= 18200 ~ 0,
-    income <= 45000 ~ (income - 18200) * second_rate,
-    income <= 135000 ~ (45000 - 18200) * second_rate +
-      (income - 45000) * 0.30,
-    income <= 190000 ~ (45000 - 18200) * second_rate +
-      (135000 - 45000) * 0.30 +
+    income <= 45000 ~ (income - 18200) * 0.19,
+    income <= 135000 ~ (45000 - 18200) * 0.19 +
+      (income - 45000) * 0.325,
+    income <= 180000 ~ (45000 - 18200) * 0.19 +
+      (135000 - 45000) * 0.325 +
       (income - 135000) * 0.37,
-    TRUE             ~ (45000 - 18200) * second_rate +
-      (135000 - 45000) * 0.30 +
-      (190000 - 135000) * 0.37 +
-      (income - 190000) * 0.45
+    TRUE             ~ (45000 - 18200) * 0.19 +
+      (135000 - 45000) * 0.325 +
+      (180000 - 135000) * 0.37 +
+      (income - 180000) * 0.45
   )
+  } else {
+    base_tax <- dplyr::case_when(
+      income <= 18200 ~ 0,
+      income <= 45000 ~ (income - 18200) * second_rate,
+      income <= 135000 ~ (45000 - 18200) * second_rate +
+        (income - 45000) * 0.30,
+      income <= 190000 ~ (45000 - 18200) * second_rate +
+        (135000 - 45000) * 0.30 +
+        (income - 135000) * 0.37,
+      TRUE             ~ (45000 - 18200) * second_rate +
+        (135000 - 45000) * 0.30 +
+        (190000 - 135000) * 0.37 +
+        (income - 190000) * 0.45
+    )
+  }
 
   # --- Apply LITO to base tax only (non-refundable) ---
   income_tax_after_offsets <- pmax(0, base_tax - lito)
@@ -80,12 +103,12 @@ tax_function <- function(income, include_levy = TRUE, include_surcharge = TRUE,s
 
 
 # Define effective tax rate function
-etr_function <- function(income,second_rate=0.16) {
-  tax_function(income, include_levy = levy, include_surcharge = surcharge,second_rate=second_rate) / income
+etr_function <- function(income,second_rate=0.16,tax_scale = future_scale) {
+  tax_function(income, include_levy = levy, include_surcharge = surcharge,second_rate=second_rate,tax_scale = tax_scale) / income
 }
 
 # Create income sequence
-incomes <- seq(1000, 400000, by = 500)
+incomes <- seq(1000, 600000, by = 500)
 
 # Define deflator (1 + 0.025)^10
 deflator <- (1 + 0.286)
@@ -93,22 +116,21 @@ deflator <- (1 + 0.286)
 # Create main data frame
 df <- tibble(
   income = incomes,
-  etr_nominal = etr_function(income),
-  etr_deflated = etr_function(income * deflator,second_rate = 0.14)
+  etr_nominal = etr_function(income,tax_scale = initial_scale),
+  etr_deflated = etr_function(income * deflator,second_rate = second_rate_future)
 )
 
 setDT(df)
 
-real_income_growth <- 0.11
-avg_earnings_25 <- 75000
+
 
 # Create reference points to annotate
 annotate_points <- tibble(
   income = c(avg_earnings_25, avg_earnings_25, avg_earnings_25*(1+real_income_growth)),
   etr = c(
-    etr_function(avg_earnings_25),
-    etr_function(avg_earnings_25 * deflator,second_rate = 0.14),
-    etr_function(avg_earnings_25*(1+real_income_growth) * deflator,second_rate = 0.14)
+    etr_function(avg_earnings_25,tax_scale = initial_scale),
+    etr_function(avg_earnings_25 * deflator,second_rate = second_rate_future),
+    etr_function(avg_earnings_25*(1+real_income_growth) * deflator,second_rate = second_rate_future)
   ),
   type = c("Nominal", "Deflated", "Deflated")
 )
@@ -194,8 +216,8 @@ ggplot(df, aes(x = income/1000)) +
        colour=c(palette_e61(3)[1],palette_e61(3)[3],"blue","red","black"),
     size = 2)
 
-save_e61(paste0("Bracket_creep_",save_vec,".png"),res=2,save_data = TRUE)
-save_e61(paste0("Bracket_creep_",save_vec,".svg"))
+# save_e61(paste0("Bracket_creep_",save_vec,".png"),res=2,save_data = TRUE)
+# save_e61(paste0("Bracket_creep_",save_vec,".svg"))
 
 ggplot(df, aes(x = income/1000)) +
   geom_line(aes(y = etr_nominal*100, colour = "Nominal")) +
@@ -232,7 +254,7 @@ ggplot(df, aes(x = income/1000)) +
     colour=c(palette_e61(3)[1],palette_e61(3)[3],"blue","red","black"),
     size = 2)
 
-save_e61(paste0("Bracket_creep_",save_vec,".pdf"))
+# save_e61(paste0("Bracket_creep_",save_vec,".pdf"))
 
 
 df[,diff := etr_deflated - etr_nominal]
@@ -249,10 +271,21 @@ ggplot(df,aes(x=income/1000,y=diff*100)) + geom_line() +
     shape = "Tax Scale"
   )
 
+# Extra plot for 23-24
+# ggplot(df,aes(x=income/1000,y=diff*100)) + geom_line() + geom_hline(yintercept = 0) +
+#   labs_e61(
+#     title = "Simulated change in tax rates 2024-2035",
+#     footnotes = footnotes_vec[3],
+#     x = "Gross Taxable Income (FY25$)",
+#     y = "%",
+#     colour = "Tax Scale",
+#     shape = "Tax Scale"
+#   )
+
 #ggplot(df,aes(x=income/1000,y=diff_doll)) + geom_line()
 
-save_e61(paste0("Bracket_creep_change",".png"),res=2)
-save_e61(paste0("Bracket_creep_change",".pdf"))
+# save_e61(paste0("Bracket_creep_change",".png"),res=2)
+# save_e61(paste0("Bracket_creep_change",".pdf"))
 
 # change_dt <- melt(df[,.(income,diff,diff_doll)],id.vars = "income")
 #
