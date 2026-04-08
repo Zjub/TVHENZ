@@ -4,6 +4,8 @@
 #install.packages("remotes")
 #remotes::install_github("e61-institute/theme61", dependencies = TRUE, upgrade = "always")
 
+## Note script isn't automated - so when you change dates make sure it is saving the correct plots.
+
 # Load required libraries
 library(dplyr)
 library(ggplot2)
@@ -20,7 +22,7 @@ surcharge = FALSE # Include the medicare surcharge
 real_income_growth <- 0.11
 avg_earnings_25 <- 100000
 second_rate_future <- 0.14
-initial_scale <- "24-25" # Switch to 23-24 to check the role of Stage 3 tax cuts - note the lack of LMITO makes this a bit misleading, as the 23-24 cuts are largely bedding in prior LMITO settings
+initial_scale <- "23-24" # Switch to 23-24 to check the role of Stage 3 tax cuts - note the lack of LMITO makes this a bit misleading, as the 23-24 cuts are largely bedding in prior LMITO settings
 future_scale <- "24-25"
 
 # Define the tax function
@@ -272,20 +274,20 @@ ggplot(df,aes(x=income/1000,y=diff*100)) + geom_line() +
   )
 
 # Extra plot for 23-24
-# ggplot(df,aes(x=income/1000,y=diff*100)) + geom_line() + geom_hline(yintercept = 0) +
-#   labs_e61(
-#     title = "Simulated change in tax rates 2024-2035",
-#     footnotes = footnotes_vec[3],
-#     x = "Gross Taxable Income (FY25$)",
-#     y = "%",
-#     colour = "Tax Scale",
-#     shape = "Tax Scale"
-#   )
+ggplot(df,aes(x=income/1000,y=diff*100)) + geom_line() + geom_hline(yintercept = 0) +
+  labs_e61(
+    #title = "Simulated change in tax rates 2024-2035",
+    footnotes = footnotes_vec[3],
+    x = "Gross Taxable Income (2025/26$)",
+    y = "%",
+    colour = "Tax Scale",
+    shape = "Tax Scale"
+  )
 
 #ggplot(df,aes(x=income/1000,y=diff_doll)) + geom_line()
 
-# save_e61(paste0("Bracket_creep_change",".png"),res=2)
-# save_e61(paste0("Bracket_creep_change",".pdf"))
+save_e61(paste0("Bracket_creep_change_24",".png"),res=2)
+save_e61(paste0("Bracket_creep_change_24",".pdf"))
 
 # change_dt <- melt(df[,.(income,diff,diff_doll)],id.vars = "income")
 #

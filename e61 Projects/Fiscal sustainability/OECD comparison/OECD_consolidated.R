@@ -625,35 +625,35 @@ ggplot(melt(IMF_govt_debt[COUNTRY != "New Zealand"],id.vars = c("COUNTRY","Type"
 save_e61("Cross_country_time_series_debt.svg")
 
 ### GFS information
-
-GFS_ABS <- read_excel("GFS_ABS.xlsx", sheet = "For_plot", 
-                      skip = 17)
-setDT(GFS_ABS)
-
-
-GFS_dt <- GFS_ABS[,.(Expense,nom_change = `2024`-`2015`)]
-
-GFS_ABS_real <- melt(GFS_ABS,id.vars="Expense",variable.name = "Year")[,Year := as.integer(as.character(Year))]
-
-GFS_ABS_real <- GFS_ABS_real[cpi_annual,on=.(Year)][!is.na(value)][,real_spend := value/cpi_avg]
-
-GFS_ABS_real <- GFS_ABS_real[Year == 2024][GFS_ABS_real[Year == 2015],on=.(Expense)][,.(Expense,real_spend,i.real_spend)][,real_diff := real_spend - i.real_spend]
-
-ggplot(GFS_ABS_real[,.(Expense,real_prop = real_diff/sum(real_diff))],aes(x=1,y=real_prop*100,fill=Expense)) + geom_col() +
-  theme_e61(legend = "right") +
-  labs_e61(title = "Share of real expense growth",
-           subtitle = "2015-2024",
-           y = "%") +
-  scale_y_continuous_e61(limits = c(0,100,20))+
-  theme(
-    legend.text = element_text(size = 5),      # Smaller legend text
-    axis.text.x = element_blank(),             # Remove x-axis numbers
-    axis.ticks.x = element_blank()             # Optional: remove x-axis ticks too
-  ) +
-  scale_x_continuous_e61()
-
-save_e61("Real_expense_growth_GFS.png",res=2,auto_scale = FALSE)
-
+# 
+# GFS_ABS <- read_excel("GFS_ABS.xlsx", sheet = "For_plot", 
+#                       skip = 17)
+# setDT(GFS_ABS)
+# 
+# 
+# GFS_dt <- GFS_ABS[,.(Expense,nom_change = `2024`-`2015`)]
+# 
+# GFS_ABS_real <- melt(GFS_ABS,id.vars="Expense",variable.name = "Year")[,Year := as.integer(as.character(Year))]
+# 
+# GFS_ABS_real <- GFS_ABS_real[cpi_annual,on=.(Year)][!is.na(value)][,real_spend := value/cpi_avg]
+# 
+# GFS_ABS_real <- GFS_ABS_real[Year == 2024][GFS_ABS_real[Year == 2015],on=.(Expense)][,.(Expense,real_spend,i.real_spend)][,real_diff := real_spend - i.real_spend]
+# 
+# ggplot(GFS_ABS_real[,.(Expense,real_prop = real_diff/sum(real_diff))],aes(x=1,y=real_prop*100,fill=Expense)) + geom_col() +
+#   theme_e61(legend = "right") +
+#   labs_e61(title = "Share of real expense growth",
+#            subtitle = "2015-2024",
+#            y = "%") +
+#   scale_y_continuous_e61(limits = c(0,100,20))+
+#   theme(
+#     legend.text = element_text(size = 5),      # Smaller legend text
+#     axis.text.x = element_blank(),             # Remove x-axis numbers
+#     axis.ticks.x = element_blank()             # Optional: remove x-axis ticks too
+#   ) +
+#   scale_x_continuous_e61()
+# 
+# save_e61("Real_expense_growth_GFS.png",res=2,auto_scale = FALSE)
+# 
 
 ### Additional plots based on 2025 government at a glance: https://www.oecd.org/en/data/datasets/oecd-government-at-a-glance-database.html
 # This doesn't look like it is as careful an exercise, so replicate using table 4 as that goes to 2023
@@ -807,10 +807,9 @@ ggplot(OECD_debt[
   `Reference area` == "Australia"
 ],aes(x= TIME_PERIOD, y= OBS_VALUE)) + geom_line()
 
-#exp_proj <- Graph_data <- read_excel("~/GitHub/TVHENZ/e61 Projects/Fiscal sustainability/Report work/Graphs/Graph_data.xlsx", 
-#                                     sheet = "Figure_26")
+exp_proj <- Graph_data <- read_excel("~/GitHub/TVHENZ/e61 Projects/Fiscal sustainability/Report work/Graphs/Graph_data.xlsx", sheet = "Figure_26")
 
-exp_proj <- read_excel("C:/Users/MattNolan/Git/TVHENZ/e61 Projects/Fiscal sustainability/Report work/Graphs/Graph_data.xlsx",sheet = "Figure_26")
+#exp_proj <- read_excel("C:/Users/MattNolan/Git/TVHENZ/e61 Projects/Fiscal sustainability/Report work/Graphs/Graph_data.xlsx",sheet = "Figure_26")
 
 setDT(exp_proj)
 
@@ -974,3 +973,15 @@ ggplot(debt_both, aes(x = year, y = debt, colour = scenario)) +
   plab(c("Bracket Creep","No Bracket Creep"),x=c(2030,2030),y=c(40,100))
 
 save_e61("Debt_projections_creep.svg")
+
+ggplot(debt_both, aes(x = year, y = debt, colour = scenario)) +
+  geom_line() +
+  labs(#title = "Consolidated debt projections",
+       x = "Year",
+       y = "Gross debt (% of GDP)",
+       sources = c("ABS","OECD","e61"),
+       footnotes = c("Bracket Creep is a two-percentage point increase in tax to GDP over 20 years.")) +
+  geom_vline(xintercept = 2024,linetype = "dashed") +
+  plab(c("Bracket Creep","No Bracket Creep"),x=c(2030,2030),y=c(40,100))
+
+save_e61("Debt_projections_creep.pdf")
