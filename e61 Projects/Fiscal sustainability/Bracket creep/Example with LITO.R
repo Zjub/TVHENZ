@@ -19,10 +19,10 @@ library(Hmisc)
 
 levy = FALSE # Include the medicare levy
 surcharge = FALSE # Include the medicare surcharge
-real_income_growth <- 0.11
+real_income_growth <- 0.12
 avg_earnings_25 <- 100000
-second_rate_future <- 0.14
-initial_scale <- "23-24" # Switch to 23-24 to check the role of Stage 3 tax cuts - note the lack of LMITO makes this a bit misleading, as the 23-24 cuts are largely bedding in prior LMITO settings
+second_rate_future <- 0.16
+initial_scale <- "24-25" # Switch to 23-24 to check the role of Stage 3 tax cuts - note the lack of LMITO makes this a bit misleading, as the 23-24 cuts are largely bedding in prior LMITO settings
 future_scale <- "24-25"
 
 # Define the tax function
@@ -218,8 +218,8 @@ ggplot(df, aes(x = income/1000)) +
        colour=c(palette_e61(3)[1],palette_e61(3)[3],"blue","red","black"),
     size = 2)
 
-# save_e61(paste0("Bracket_creep_",save_vec,".png"),res=2,save_data = TRUE)
-# save_e61(paste0("Bracket_creep_",save_vec,".svg"))
+#save_e61(paste0("Bracket_creep_",save_vec,".png"),res=2,save_data = TRUE)
+#save_e61(paste0("Bracket_creep_",save_vec,".svg"))
 
 ggplot(df, aes(x = income/1000)) +
   geom_line(aes(y = etr_nominal*100, colour = "Nominal")) +
@@ -256,7 +256,7 @@ ggplot(df, aes(x = income/1000)) +
     colour=c(palette_e61(3)[1],palette_e61(3)[3],"blue","red","black"),
     size = 2)
 
-# save_e61(paste0("Bracket_creep_",save_vec,".pdf"))
+#save_e61(paste0("Bracket_creep_",save_vec,".pdf"))
 
 
 df[,diff := etr_deflated - etr_nominal]
@@ -286,8 +286,8 @@ ggplot(df,aes(x=income/1000,y=diff*100)) + geom_line() + geom_hline(yintercept =
 
 #ggplot(df,aes(x=income/1000,y=diff_doll)) + geom_line()
 
-save_e61(paste0("Bracket_creep_change_24",".png"),res=2)
-save_e61(paste0("Bracket_creep_change_24",".pdf"))
+# save_e61(paste0("Bracket_creep_change_24",".png"),res=2)
+#save_e61(paste0("Bracket_creep_change_24",".pdf"))
 
 # change_dt <- melt(df[,.(income,diff,diff_doll)],id.vars = "income")
 #
