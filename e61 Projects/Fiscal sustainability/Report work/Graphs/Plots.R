@@ -1,7 +1,7 @@
 # Topic: Takes background data and produces plots
 # Author: Matt Nolan
 # Created: 19/10/2025
-# Last edit: 14/11/2025
+# Last edit: 16/04/2026
 # Last editor: Matt Nolan
 ## Double check the plots are edited, consistent, as had backup issues
 
@@ -1058,7 +1058,8 @@ ggplot(f36_dt, aes(x = Year, y = value, color = variable)) +
 
 save_e61("Figure_36.png", res=2, chart_type = "wide", dim = list(width = 13))
 save_e61("Report_graph/Figure_36.svg", chart_type = "wide", dim = list(width = 13))
-
+save_e61("SP_type.pdf", chart_type = "wide", dim = list(width = 13))
+save_e61("SP_type.svg", chart_type = "wide", dim = list(width = 13))
 
 # Figure 37a
 
@@ -1164,6 +1165,7 @@ ggplot(wf) +
 
 save_e61("Figure_37b.png",res=2)
 save_e61("Report_graph/Figure_37b.svg")
+save_e61("Figure_37b.pdf")
 
 ## 37 full
 
@@ -1330,5 +1332,56 @@ save_e61("Slide 3.svg")
 
 
 
+## Add Bracket Creep plot
 
+BC_data <- read_excel("Graph_data.xlsx", 
+                               sheet = "PBO_BC")
 
+setDT(BC_data)
+
+ggplot(melt(BC_data,id.vars = "year"),aes(x=year,y=value,colour=variable)) + geom_line() +
+  geom_vline(xintercept = 2024,linetype = "dashed") +
+  scale_x_continuous_e61(limits = c(2006,2036,5)) +
+  plab(c("Projected","No Bracket Creep"),x=c(2026,2025),y=c(29,23)) +
+  labs_e61(title = "Average Personal Tax Rate",
+           subtitle = "%",
+           sources = c("PBO Medium Term Fiscal Outlook 2025/26","e61"))
+
+save_e61("PBO_BC_avgtax.svg")
+save_e61("PBO_BC_avgtax.pdf")
+
+### Add plot 26
+
+f_26 <- read_excel("Graph_data.xlsx", 
+                      sheet = "Figure_26")
+
+setDT(f_26)
+
+f_26 <- f_26[year <= 2060,.(year,series, Consolidated)]
+
+ggplot() +
+  geom_line(
+    data = f_26[series %in% c("Historical","Fitted (in-sample)")],
+    aes(year, Consolidated*100, colour = "Historical / Fitted"),
+    linewidth = 0.9
+  ) +
+  geom_line(
+    data = f_26[grepl("^Projection", series)],
+    aes(year, Consolidated*100, colour = "Projection"),
+    linewidth = 1
+  ) +
+  scale_colour_manual(
+    values = c(
+      "Historical / Fitted" = palette_e61(2)[2],
+      "Projection"         = palette_e61(2)[1]
+    )
+  ) +
+  labs_e61(
+    title     = "Government expenditure",
+    x = NULL, y = "% of GDP",
+    sources   = c("ABS", "e61")
+  ) + plab(c("Historical","Projection"),x=c(1980,2030),y=c(42,33),colour=c(palette_e61(2)[2],palette_e61(2)[1]))
+
+save_e61("Figure_26.svg")
+save_e61("Figure_26.pdf")
+save_e61("Figure_26.png",res=2)

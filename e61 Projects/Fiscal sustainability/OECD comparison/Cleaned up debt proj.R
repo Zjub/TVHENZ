@@ -18,6 +18,7 @@ library(data.table)
 library(Hmisc)
 library(tidysynth)
 library(readabs)
+library(writexl)
 
 ### Prior code
 
@@ -324,6 +325,9 @@ ggplot(graph_proj_all,aes(x=year,y=value,colour=variable)) + geom_line()+
 
 save_e61("All_debt_projection.svg")
 
+write_xlsx(graph_proj_all, "graph_proj_all.xlsx")
 
 
+graph_proj_all[year > 2029 & year <2040]
 
+graph_proj_all[year > 2025 & year <2040]

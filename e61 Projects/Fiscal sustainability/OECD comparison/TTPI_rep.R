@@ -46,7 +46,8 @@ gdp[,gdp_index := gdp_pc/base]
 
 dt <- gdp[dt,on=.(year)]
 
-# deflate
+# TTPI values are already expressed in FY2023 dollars, so this rebases them
+# by real GDP per-capita growth rather than converting nominal to real.
 dt[, net_trans_real := net_trans / gdp_index]
 
 ggplot(dt[year %in% c(1996,2006,2016,2021)],
@@ -54,7 +55,7 @@ ggplot(dt[year %in% c(1996,2006,2016,2021)],
   geom_line() +
   labs_e61(
     title = "TTPI plot",
-    y = "Net transfers (real)",
+    y = "Net transfers (FY2023$)",
     colour = "Year"
   ) + theme_e61(legend = "bottom")
 
@@ -65,7 +66,7 @@ ggplot(dt[year %in% c(1996,2006,2016,2021)],
   geom_line() +
   labs_e61(
     title = "Relative to real GDP",
-    y = "Net transfers (1993 $ GDP-pc deflated)",
+    y = "Net transfers (2023$ rebased by real GDP-pc growth)",
     colour = "Year"
   ) + theme_e61(legend = "bottom")
 
@@ -120,7 +121,7 @@ ggplot(dt[year %in% c(1996,2006,2016,2021)],
 
 dt_group <- dt[,.(net_trans = weighted.mean(net_trans,population),net_trans_real = weighted.mean(net_trans_real,population),net_trans_GDPD_PC=weighted.mean(net_trans_GDPD_PC,population)),by=.(grouped_year,age)]
 
-dt_group_unweight <- dt[,.(net_trans = mean(net_trans),net_trans_real = mean(net_trans),net_trans_GDPD_PC=mean(net_trans_GDPD_PC),pop=mean(population)),by=.(grouped_year,age)]
+dt_group_unweight <- dt[,.(net_trans = mean(net_trans),net_trans_real = mean(net_trans_real),net_trans_GDPD_PC=mean(net_trans_GDPD_PC),pop=mean(population)),by=.(grouped_year,age)]
 
 
 ggplot(dt_group_unweight[grouped_year %in% c("1993/1994-1997/1998","2018/2019-2022/2023")],aes(x=age,y=net_trans,colour=grouped_year)) + geom_line() +theme_e61(legend = "bottom")
@@ -180,14 +181,15 @@ save_e61("IG_compact_comparison.svg",auto_scale = FALSE)
 
 #### Add income 
 
-dt[,adj_HS_inc := Haig_simon_income*cpi_value/(GDPD*gdp_index)]
+dt[,adj_HS_inc_old := Haig_simon_income*cpi_value/(GDPD*gdp_index)]
+dt[,adj_HS_inc := Haig_simon_income*cpi_value/(GDPD_index*gdp_index)]
 
 ggplot(dt[year %in% c(1996,2006,2016,2021)],
        aes(x = age, y = Haig_simon_income, colour = factor(year), group = year)) +
   geom_line() +
   labs_e61(
     title = "TTPI plot",
-    y = "HS inc (real)",
+    y = "HS income (FY2023$)",
     colour = "Year"
   ) + theme_e61(legend = "bottom")
 
@@ -196,9 +198,38 @@ ggplot(dt[year %in% c(1996,2006,2016,2021)],
   geom_line() +
   labs_e61(
     title = "TTPI plot",
-    y = "HS inc (GDP adj)",
+    y = "HS income (2023$ rebased by NGDP-pc growth)",
     colour = "Year"
   ) + theme_e61(legend = "bottom")
+
+hs_fix_compare <- melt(
+  dt[year %in% c(1996,2006,2016,2021),
+     .(
+       age,
+       year,
+       `Previous formula` = adj_HS_inc_old,
+       `Corrected formula` = adj_HS_inc
+     )],
+  id.vars = c("age","year"),
+  variable.name = "formula",
+  value.name = "value"
+)
+
+ggplot(hs_fix_compare,
+       aes(x = age, y = value, colour = formula, linetype = formula)) +
+  geom_line() +
+  facet_wrap(~year) +
+  labs_e61(
+    title = "Effect of correcting HS-income rebasing",
+    subtitle = "Previous formula used the GDP deflator level instead of the 2023-rebased GDP deflator index",
+    x = "Age",
+    y = "HS income (2023$ rebased by NGDP-pc growth)",
+    colour = "Formula",
+    linetype = "Formula"
+  ) +
+  theme_e61(legend = "bottom")
+
+save_e61("HS_inc_TTPI_fix_compare.png", res = 2, auto_scale = FALSE)
 
 dt_norm <- dt[, .(
   age,
@@ -256,16 +287,34 @@ ggplot(diff_dt2[age >= 20 & age <= 90],
     x = "Age",
     y = "$(000)",
     colour = "Measure",
-    title = "Change in fiscal transfers by Age",
+    title = "Change in fiscal transfers by age",
     subtitle = "Intergenerational compact by transfer concept",
     sources = c("Varela, Breunig, and Smith (2025)","TTPI","e61"),
     footnotes = c("Smoothed via LOESS regression using a span of 0.2.","Difference reflects the change between 1994/98 and 2019/23, in FY2023 prices.")
   ) +
   geom_vline(xintercept = 65,linetype="dotted",colour = palette_e61(4)[4]) +
-  plab(c("Real Transfers","Relative to HS income","Relative to national income","Retirement Age"),x=c(20,20,20,36),y=c(22,17,12,27)) +
+  plab(c("Real Transfers","Relative to Haig-Simons income","Relative to national income","Retirement Age"),x=c(20,20,20,66),y=c(27,17,-12,-25)) +
+  scale_y_continuous_e61(limits = c(-40,30,10))
+
+ggplot(diff_dt2[age >= 20 & age <= 90], 
+       aes(x = age, y = diff/1000, colour = measure)) +
+  geom_hline(yintercept = 0) +
+  geom_smooth(method = "loess", se = FALSE, span = 0.2, size = 1) +
+  labs_e61(
+    x = "Age",
+    y = "$(000)",
+    colour = "Measure",
+    title = "Change in fiscal transfers by age",
+    subtitle = "Intergenerational compact by transfer concept",
+    sources = c("Varela, Breunig, and Smith (2025)","TTPI","e61"),
+    footnotes = c("Smoothed via LOESS regression using a span of 0.2.","Difference reflects the change between 1994/98 and 2019/23, in FY2023 prices.")
+  ) +
+  geom_vline(xintercept = 65,linetype="dotted",colour = palette_e61(4)[4]) +
+  plab(c("Real Transfers","In Haig-Simons income","In national income","Retirement Age"),x=c(20,20,20,66),y=c(27,17,-12,-25)) +
   scale_y_continuous_e61(limits = c(-40,30,10))
 
 save_e61("IG_compact_comparison2.svg",auto_scale = FALSE)
 save_e61("IG_compact_comparison2.png",res=2,auto_scale = FALSE)
+save_e61("IG_compact_comparison2.pdf",auto_scale = FALSE)
 
 ### Do the same exercise on "final income" as that is the key plot in the TPPI report. The above is looking at both of the sides
