@@ -21,9 +21,11 @@ levy = FALSE # Include the medicare levy
 surcharge = FALSE # Include the medicare surcharge
 real_income_growth <- 0.12
 avg_earnings_25 <- 100000
-second_rate_future <- 0.16
+second_rate_future <- 0.14
 initial_scale <- "24-25" # Switch to 23-24 to check the role of Stage 3 tax cuts - note the lack of LMITO makes this a bit misleading, as the 23-24 cuts are largely bedding in prior LMITO settings
 future_scale <- "24-25"
+max_inc <- 200000 # Change this for different graphs
+deflator_type <- "CPI" # Use CPI is doing an inflation base, use "Income" to do the income distribution comparisons
 
 # Define the tax function
 
@@ -110,10 +112,14 @@ etr_function <- function(income,second_rate=0.16,tax_scale = future_scale) {
 }
 
 # Create income sequence
-incomes <- seq(1000, 600000, by = 500)
+incomes <- seq(1000, max_inc, by = 500)
 
 # Define deflator (1 + 0.025)^10
-deflator <- (1 + 0.286)
+if (deflator_type == "CPI"){
+  deflator <- (1 + 0.025)^(10) #(1 + 0.286)
+} else {
+  deflator <- (1 + 0.037)^(10) # Use for Figure 2 - the "difference" between the distributions
+  }
 
 # Create main data frame
 df <- tibble(
@@ -284,9 +290,12 @@ ggplot(df,aes(x=income/1000,y=diff*100)) + geom_line() + geom_hline(yintercept =
     shape = "Tax Scale"
   )
 
+
+df[diff < df[income == 100000]$diff & income > 200000]
+
 #ggplot(df,aes(x=income/1000,y=diff_doll)) + geom_line()
 
-# save_e61(paste0("Bracket_creep_change_24",".png"),res=2)
+#save_e61(paste0("Bracket_creep_change_24",".png"),res=2)
 #save_e61(paste0("Bracket_creep_change_24",".pdf"))
 
 # change_dt <- melt(df[,.(income,diff,diff_doll)],id.vars = "income")

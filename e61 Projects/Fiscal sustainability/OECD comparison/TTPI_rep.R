@@ -7,8 +7,8 @@
 # Library management --------------------------------------------
 
 # ## Update packages 
-.libPaths()
-update.packages(lib.loc = .libPaths()[1], ask = FALSE, checkBuilt = TRUE)
+#.libPaths()
+#update.packages(lib.loc = .libPaths()[1], ask = FALSE, checkBuilt = TRUE)
 
 # Libraries
 library(dplyr)
@@ -305,7 +305,7 @@ ggplot(diff_dt2[age >= 20 & age <= 90],
     y = "$(000)",
     colour = "Measure",
     title = "Change in fiscal transfers by age",
-    subtitle = "Intergenerational compact by transfer concept",
+    subtitle = "Change is between 1994/98 and 2019/23",
     sources = c("Varela, Breunig, and Smith (2025)","TTPI","e61"),
     footnotes = c("Smoothed via LOESS regression using a span of 0.2.","Difference reflects the change between 1994/98 and 2019/23, in FY2023 prices.")
   ) +
