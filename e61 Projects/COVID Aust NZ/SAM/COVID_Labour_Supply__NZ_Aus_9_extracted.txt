@@ -1,0 +1,1883 @@
+
+
+===== PAGE 1 =====
+WorkinprogressDo notcite
+Labour Market Effects of the COVID Supplement
+Erin Clarke ∗, Matt Nolan †, Ali Vergili ‡
+April 30, 2026
+PRELIMINARY AND INCOMPLETE. PLEASE DO NOT CIRCULATE.
+Abstract
+This paper examines the labour supply effects of the JobSeeker Coronavirus
+Supplement introduced by the Australian Government in 2020, a COVID-19
+policy measure that almost doubled the primary unemployment benefit. To
+isolate the policy’s labour market impact, we use a natural comparison group:
+New Zealand citizens in Australia who faced identical conditions but were ineli-
+gible for the unemployment benefit.Using a difference-in-differences approach,
+we find that the Supplement reduced job-finding rates among recipients by
+19% and increased job separations by 64%. We find no subsequent increase
+in labour earnings among recipients. To interpret these results, we develop a
+search-and-matching model with heterogeneity in benefit eligibility, estimat-
+ing that most of the labour supply response stemmed from pandemic-related
+shocks that increased work disutility rather than benefit generosity. Our find-
+ings suggest that even in a severe downturn, more generous unemployment
+benefits dampen job search incentives. However, this trade-off may be mit-
+igated (and even yield net social benefits) when public health risks justify
+reduced labour force participation.
+∗e61 Institute, e-mail: erin.clarke@e61.in
+†e61 Institute, e-mail: matt.nolan@e61.in
+‡e61 Institute, e-mail: ali.vergili@e61.in
+1
+
+===== PAGE 2 =====
+WorkinprogressDo notcite
+1 Introduction
+The COVID-19 pandemic triggered unprecedented economic disruption globally,
+prompting governments to implement exceptional fiscal responses to support house-
+holds and businesses. A key element of these responses was the expansion of unem-
+ployment insurance benefits, which raised important questions about the trade-offs
+between providing income support and maintaining labour market incentives. While
+enhanced benefits cushioned income shocks during a period of severe health risk and
+economic uncertainty, they may have also influenced labour supply decisions in ways
+that merit careful empirical investigation.
+This paper examines the labour market effects of Australia’s temporary expan-
+sion of unemployment benefits during the COVID-19 pandemic. Specifically, we
+study the introduction of the JobSeeker Coronavirus Supplement, a near-doubling
+of unemployment benefits that increased the standard payment by AU$550 per fort-
+night (approximately US$375) beginning in April 2020. Using a novel identification
+strategy that leverages a natural experiment arising from differential eligibility rules
+for Australian and New Zealand citizens residing in Australia, we identify the causal
+effects of this benefit enhancement on labour market dynamics during the pandemic.
+Our findings provide compelling evidence that even during a severe economic
+downturn with significant health risks, unemployment benefit generosity substan-
+tially influences labour market behaviour. Using matched administrative data, we
+find that the introduction of the Coronavirus Supplement reduced job-finding rates
+by 19% and increased job separations by 64% among benefit-eligible workers relative
+to similar ineligible workers. These effects correspond to an extensive margin labour
+supply elasticity of -0.21, suggesting that a 10% increase in unemployment benefits
+leads to approximately a 2.1% reduction in job-finding rates. Importantly, we find
+no evidence that the additional time spent unemployed translated into better job
+matches, as measured by future earnings outcomes for benefit recipients.
+Our research contributes to a substantial literature on the labour market effects
+of unemployment insurance generosity. The theoretical foundations of job search
+2
+
+===== PAGE 3 =====
+WorkinprogressDo notcite
+models ( McCall, 1970; Mortensen, 1970; Diamond, 1982; Pissarides, 2000) estab-
+lish that higher unemployment benefits may increase reservation wages and reduce
+search intensity, potentially lengthening unemployment durations. Empirical work
+has generally confirmed these predictions, with most studies finding elasticities of un-
+employment duration with respect to benefit levels ranging from 0.3 to 0.6 ( Schmieder
+and Von Wachter, 2016). These effects operate through two main channels: reduced
+job-finding rates as workers search less intensively or become more selective ( Mari-
+nescu and Skandalis , 2021), and potentially increased separation rates as the value
+of unemployment rises relative to employment ( Hayward et al. , 2025).
+However, the applicability of these findings to severe economic downturns – par-
+ticularly those accompanied by public health emergencies – remains an open ques-
+tion. Several studies of the COVID-19 period in the United States found limited
+disincentive effects from expanded benefits ( Marinescu et al. , 2021), though others
+documented non-trivial responses ( Ganong et al. , 2024). In the Australian context,
+this appeared to be confirmed by public data at the time, as the rate of job finding
+during 2020 was similar to previous years, suggesting increased benefits did not influ-
+ence labour supply behaviour ( Borland, 2020). The unique nature of the pandemic,
+with its combination of severe health risks and mandated economic shutdowns, may
+have fundamentally altered the relationship between benefit generosity and labour
+supply decisions in ways that warrant careful investigation.
+The Australian context offers distinct advantages for studying these questions.
+First, unlike many other developed economies, Australia’s unemployment benefit sys-
+tem provides flat-rate payments rather than wage-related benefits, creating substan-
+tial variation in replacement rates across recipients. Second, Australia implemented
+one of the most generous benefit expansions globally during the pandemic, with the
+Coronavirus Supplement nearly doubling the base unemployment payment. Third,
+and most importantly for our identification strategy, Australia’s unique social secu-
+rity arrangements for New Zealand citizens living in Australia creates a compelling
+natural experiment: New Zealanders on special category visas were ineligible for the
+JobSeeker Payment (and hence the Coronavirus Supplement) despite facing identi-
+3
+
+===== PAGE 4 =====
+WorkinprogressDo notcite
+cal labour market conditions and pandemic-related health risks as their Australian
+counterparts.
+Our empirical approach combines propensity score matching with difference-in-
+differences estimation to compare labour market outcomes between Australian citi-
+zens receiving the JobSeeker Payment and similar New Zealand citizens residing in
+Australia. This methodology allows us to isolate the causal effect of benefit generos-
+ity while controlling for contemporaneous labour market shocks that affected both
+groups similarly. To further disentangle the mechanisms driving our results, we
+exploit policy variation in the reimposition of mutual obligation requirements (job
+search conditions) across Australian states to separate the effects of benefit levels
+from conditionality requirements.
+This paper makes several contributions to the literature. First, we provide clean
+causal estimates of the labour supply effects of unemployment benefit generosity
+during a major economic and health crisis. Our findings suggest that even during
+periods of severely constrained labour demand and heightened health risks, ben-
+efit generosity significantly influences labour supply decisions. Second, our unique
+identification strategy, which leverages differential eligibility rules between otherwise
+similar populations experiencing identical local labour market conditions, addresses
+key identification challenges that have plagued previous studies. Third, we contribute
+to the sparse literature on the effects of unemployment benefits on job separations,
+an important but understudied margin of labour supply response. Finally, we pro-
+vide evidence on whether longer unemployment durations during the pandemic led
+to improved job matches, informing the debate on the potential productivity benefits
+of more generous unemployment insurance.
+While our difference-in-differences approach provides strong causal evidence, it
+relies on the parallel trends assumption – that in the absence of the treatment, out-
+comes for Australian and New Zealand citizens would have evolved similarly over
+time. Although our matching procedure addresses observable differences, individ-
+uals in different eligibility groups may still be affected differentially by unobserved
+shocks, particularly during a complex crisis like the pandemic. For example, ineli-
+4
+
+===== PAGE 5 =====
+WorkinprogressDo notcite
+gible workers may have heightened incentives to find employment precisely because
+they lack access to benefits, while benefit-eligible workers may respond differently
+to health risks given their income cushion. The direction of any resulting bias is
+theoretically ambiguous. To address this concern, we develop a structural search
+and matching model that formalises how these differential responses might bias our
+reduced-form estimates. This model allows us to quantify the labour supply elas-
+ticities accounting for potential heterogeneity in search behaviour between the two
+groups and provides a framework for assessing the generalisability of our findings
+beyond the pandemic context.
+Our model indicates that the increase in the disutility of work was the primary
+driver of lower job-finding activity for both eligible and ineligible individuals. How-
+ever, even in the absence of labour demand shocks our model finds that a higher ben-
+efit would reduce job-finding rates by 1.1ppts (down from 1.75ppts in our difference-
+in-difference exercise).
+Our findings add nuance to the ongoing policy debate about optimal unemploy-
+ment insurance design during economic crises. While the labour supply effects we
+document might be considered undesirable in normal economic conditions, they may
+have been welfare-enhancing during the pandemic by reducing workplace contacts
+and virus transmission. However, our results also suggest that policymakers face
+meaningful trade-offs between income support and labour market attachment even
+during severe downturns, highlighting the importance of carefully calibrating benefit
+levels and duration to specific economic conditions.
+The remainder of this paper is organised as follows. Section 2 provides insti-
+tutional background on Australia’s benefit system, the COVID-19 policy response,
+and the unique situation of New Zealand citizens in Australia. Section 3 describes
+our data sources and sample construction. Section 4 outlines our empirical method-
+ology. Section 5 presents our main results on job-finding and separation rates and
+explores heterogeneous effects across demographic groups and geographic areas. Sec-
+tion 6 provides robustness checks strengthening our findings. Section 7 develops a
+structural search model to interpret our reduced-form findings and evaluate their
+5
+
+===== PAGE 6 =====
+WorkinprogressDo notcite
+generalisability. Section 8 concludes with policy implications.
+2 Institutional Setting
+This section outlines the institutional setting relevant to our analysis. We begin
+with a brief overview of Australia’s benefit system in Section 2.1. Section 2.2 then
+provides a detailed account of changes to the primary unemployment benefit during
+the COVID-19 pandemic, alongside other key COVID policy responses discussed in
+Section 2.3. Finally, Section 2.4 explains why the design of Australia’s benefit system
+makes New Zealanders a strong control group for our analysis.
+2.1 Australia’s Benefit System
+For individuals who experience temporary job loss, Australia has a three-tier income
+support system: a primary payment (i.e. the JobSeeker Payment), a second tier
+of means tested family payments (i.e. Family Tax Benefit A), and a third tier of
+supplements (i.e. Energy Supplement, Commonwealth Rent Assistance). 1
+As shown in Clarke and Nolan (2023), in Australia approximately a third of
+unemployed individuals receive the JobSeeker payment and nearly half receive some
+form of income support. As these payments are means and asset tested, exclusions
+are usually based on the individual being deemed to have suﬀicient assets or a partner
+with suﬀicient earnings to support the household.
+During COVID both the payment rate and these exclusion criteria were adjusted
+due to the nature of the crisis. We describe this in greater detail below.
+2.2 Changes to Income Support during 2020
+In response to the economic challenges presented by the COVID-19 pandemic, the
+Australian government implemented several temporary income support measures
+1For more permanent incapacity, the Disability Support Pension and Workers Compensation
+systems provide a higher level of financial assistance to reflect the lost opportunity to work.
+6
+
+===== PAGE 7 =====
+WorkinprogressDo notcite
+in 2020. These measures aimed to support individuals and businesses affected by
+widespread economic disruptions, particularly those who experienced job losses or
+reduced work hours. Together, these programs formed a comprehensive social pro-
+tection response, offering immediate financial relief in an effort to reduce the broader
+economic impact of the pandemic on both individuals and businesses in Australia.
+The main income support programs introduced or adjusted were the JobSeeker Pay-
+ment, Coronavirus Supplement, JobKeeper Payment, Economic Support Payment
+and Early Release of Superannuation. Each is detailed below.
+2.2.1 JobSeeker Payment
+The JobSeeker Payment (known as NewStart up until the 20th of March 2020) is
+Australia’s main unemployment benefit. It provides financial support to individuals
+aged 22 to age pension age who are actively seeking employment or unable to work
+due to illness or disability. To access the payment, you must meet certain eligibility
+criteria, including an Income Test, Asset Tests, partnership status, parenthood status
+and Mutual Obligations requirements.
+Prior to the pandemic, the base fortnightly rate for a single adult without depen-
+dents was AUD$565.70. However, in anticipation of increased unemployment due to
+COVID-19, the JobSeeker Payment was expanded by including a temporary Coro-
+navirus Supplement, significantly increasing recipients’ total income. At the same
+time, Mutual Obligations requirements and the Assets Tests were lifted, the income
+test became less stringent, and some administrative changes were made such that
+more people could access the payment more easily while easing the administrative
+burden on Services Australia 2.
+2The administrative changes included: Claimants were no longer required to verify their identity
+in-person; Partnered claimants were no longer required to have their partner confirm the relation-
+ship; Claimants of Rent Assistance not required to complete a Rent Certificate or provide a formal
+tenancy agreement; Claimants were not required to show their bank account balances; Claimants
+were not required to provide an Employment Separation Certificate; amongst others
+7
+
+===== PAGE 8 =====
+WorkinprogressDo notcite
+2.2.2 The Coronavirus Supplement
+The Coronavirus Supplement was introduced as a temporary addition to existing
+welfare payments, including the JobSeeker Payment, to mitigate the income shocks
+caused by the pandemic 3. From March 27, 2020, to September 24, 2020, eligible
+recipients received an additional AUD 550 per fortnight, effectively doubling their
+income support. As the pandemic’s economic effects persisted, the supplement was
+extended but gradually reduced: from September 25, 2020, to December 31, 2020, it
+provided AUD 250 per fortnight; from January 1, 2021, to March 31, 2021, it further
+decreased to AUD 150 per fortnight before being phased out altogether. The full
+timeline of the Coronavirus Supplement is outlined in Table 1 below.
+Date Coronavirus supplement changes and related an-
+nouncements
+22-Mar-2020 Announcement of $550 per fortnight Coronavirus Sup-
+plement
+27-Apr-2020 Coronavirus Supplement Begins
+22-Jun-2020 Major lockdowns and first mention of an extension of
+Coronavirus Supplement
+21-Jul-2020 Announcement: Coronavirus Supplement first extension
+at reduced rate of $250 per fortnight during extension
+period oﬀicially announced
+25-Sep-2020 First extension of Coronavirus Supplement in effect
+10-Nov-2020 Announcement: Coronavirus Supplement second exten-
+sion at a reduced rate of $150 per fortnight
+01-Jan-2021 Second extension of Coronavirus Supplement in effect
+31-Mar-2021 Coronavirus Supplement ends
+Table 1: Timeline of Coronavirus Supplement
+3Other income support recipients eligible for the Coronavirus supplement included recipients of:
+Youth Allowance student, Youth Allowance job seeker, Parenting Payment Partnered, Parenting
+Payment Single, Sickness Allowance, Austudy, ABSTUDY living allowance, Widow Allowance,
+Partner Allowance, Farm Household Allowance, Special Benefit, Veterans’ student payments
+8
+
+===== PAGE 9 =====
+WorkinprogressDo notcite
+2.3 Other relevant government support
+2.3.1 JobKeeper program
+The JobKeeper Payment was a wage subsidy designed to support businesses directly
+impacted by COVID-19 restrictions. It’s main goals were to: Support business and
+job survival while health restrictions were in place; Preserve employer-employee re-
+lationships to protect valuable organisational and intangible capital, and; Provide
+income support to businesses and workers. Between March 30, 2020, and September
+27, 2020, eligible employers received AUD 1,500 per fortnight per retained employee.
+After this period, payments became dependent on the number of hours worked by
+employees. From September 28, 2020, full-time employees received AUD 1,200 per
+fortnight, while part-time employees (20 hours or fewer per week) received AUD
+750. In January 2021, these rates were reduced again until the program concluded
+in March 2021.
+2.3.2 Economic Support Payment
+The Economic Support Payment provided additional lump-sum payments to Aus-
+tralians already receiving certain government benefits, including the Age Pension,
+JobSeeker Payment, and Disability Support Pension. These payments were designed
+to offer additional financial assistance to more vulnerable households. Eligible indi-
+viduals received two rounds of AUD 750 payments in April and July 2020, followed
+by a third AUD 250 payment in December 2020 and a fourth in early 2021. Impor-
+tantly, from the second round of the payment, income support recipients who were
+receiving the Coronavirus Supplement were not eligible for the ESP.
+2.3.3 Early Release of Superannuation
+In addition to direct payments, the Australian government implemented the Early
+Release of Superannuation scheme, which allowed individuals facing financial hard-
+ship due to COVID-19 to access their retirement savings early. The scheme permitted
+eligible individuals to withdraw up to $10,000 from their superannuation accounts
+9
+
+===== PAGE 10 =====
+WorkinprogressDo notcite
+by June 30, 2020, and an additional $10,000 between July 1 and December 31, 2020.
+While this program provided immediate liquidity for those in need, it had potential
+long-term implications for retirement savings, as early withdrawals could diminish
+the compounding growth of individuals’ superannuation balances.
+2.4 New Zealanders in Australia
+The identification in this micronote depends on the use of New Zealanders as a
+control group.
+The relationship between Australia and New Zealand is unique. In the 1900
+Commonwealth of Australia Act, New Zealand was included as one of the States
+(Commonwealth of Australia , 1900), and due to this in the Australian Constitution
+New Zealanders are also given special protections.
+In Australia, New Zealanders are given a special visa on arrival (Special Cate-
+gory Visa - subclass 444) and are free to work permanently in Australia. The visa
+is cancelled and renewed as New Zealanders leave and return from Australia. New
+Zealanders also have access to Medicare and the Family Tax Benefit. However, New
+Zealanders are not eligible for transfer payments (either the JobSeeker payment
+or payments for services like the National Disability Insurance Scheme). Time lim-
+ited eligibility is given after 10 years, with a New Zealander able to receive up to
+six months of JobSeeker payments. Prior to 2001, New Zealanders were effectively
+treated as Australian citizens with full access to these payments.
+During COVID some support systems could be received by New Zealanders even
+though other non-citizens were ineligible - namely full Medicare access, Early Release
+of Superannuation, the JobKeeper program, and one-off payments associated with
+the Family Tax Benefit.
+In normal economic times a New Zealander who leaves or loses their job would be
+able to travel back to New Zealand and receive the New Zealand JobSeeker payment
+after a stand-down period. However, during COVID it was extremely diﬀicult to
+move to New Zealand - with both the New Zealand and Australian borders shut,
+10
+
+===== PAGE 11 =====
+WorkinprogressDo notcite
+limited flights, and compulsory quarantine periods in facilities that had a backlog of
+bookings.
+For our analysis we focus on New Zealanders who stayed in Australia over 2020
+who had been in the country for less than 10 years, and were still on the Subclass
+444 Special Category visa by March 2021.
+Although roughly 250,000 people hold these visas in Australia ( Department of
+Home Affairs , 2021), our analysis concentrates only on those who (i) were ineligible
+for benefit payments and (ii) experienced a spell of unemployment in 2020. This
+yields a sample of about 80,000 New Zealanders – 23,000 who are matched with
+Australian JSP recipients and 57,000 who are not.
+3 Data
+3.1 Data Sources
+Our analysis draws on administrative microdata from several Australian government
+sources, integrated through the Australian Bureau of Statistics (ABS) Multi-Agency
+Data Integration Project (MADIP) and Business Longitudinal Analysis Data Envi-
+ronment (BLADE).4 The core of our dataset comes from Single Touch Payroll (STP)
+records, which provide weekly employment and wage information for individuals em-
+ployed by STP-participating enterprises throughout 2020. We link these records
+with:
+• Home Affairs Visa data to identify New Zealand citizens on Special Category
+visas (subclass 444)
+• Department of Social Services’ Data Over Multiple Individual Occurrences
+(DOMINO) to identify JobSeeker Payment recipients
+4In 2023 the Australian Statistician announced that the Multi-Agency Data Integration Project
+(MADIP) would be renamed the Person Level Integrated Data Asset (PLIDA). Earlier documents
+and projects therefore still refer to the resource as “MADIP. ”
+11
+
+===== PAGE 12 =====
+WorkinprogressDo notcite
+• Australian Taxation Oﬀice (ATO) Personal Income Tax records for demo-
+graphic information, family status, and occupational data
+• Business tax return information (BLADE) to identify industry classifications
+3.2 Sample Construction
+From this integrated dataset, we identify two primary groups:
+1. Treatment group: Australian citizens who received the JobSeeker Payment
+at any point during 2020
+2. Control group : New Zealand citizens on Special Category visas (subclass
+444) who had been in Australia for less than 10 years (to ensure ineligibility
+for JSP) and remained in Australia throughout 2020
+To focus our analysis on individuals with comparable labour market attachment,
+we restrict our sample to those who experienced at least four consecutive weeks out
+of work during 2020. We further exclude individuals who transitioned to businesses
+that only appeared in the STP data after June 2020 to avoid compositional changes
+in our sample due to the progressive adoption of STP reporting.
+Our initial dataset includes 3,252,076 Australians and 80,005 New Zealanders
+who experienced time out of work during 2020. After implementing our matching
+procedure (described in Section 4), our final analytical sample consists of 22,873
+Australian JSP recipients matched with 22,859 comparable New Zealand citizens
+(See Table 2).
+3.3 Outcome Measures
+We focus on two primary labour market outcomes to assess the impact of the Coro-
+navirus Supplement:
+12
+
+===== PAGE 13 =====
+WorkinprogressDo notcite
+Table 2: Sample Composition: Australians and New Zealanders
+Matched
+(JSP)
+Matched
+(non-JSP)
+Matched
+(total)
+Initial
+individuals
+Australians 22,873 57,132 80,005 3,252,076
+New Zealanders 22,859 57,146 80,005 80,005
+Source: Authors’ calculations using ABS PLIDA and BLADE data. The initial sample includes
+Australians and New Zealanders who experienced time out of work during 2020.
+3.3.1 Job-Finding Rate
+The job-finding rate (JFR) captures the probability that an individual who is out of
+work in a given week finds employment in the following week. Formally, for week t:
+JF Rt = Enew
+t
+Ut− 1
+, (1)
+where:
+• Enew
+t is the number of individuals who are employed in week t but were not
+employed in week t− 1;
+• Ut− 1 is the number of individuals not employed in week t− 1.
+For our analysis, we classify individuals as out of work if they have no employment
+income recorded in the STP data for at least four consecutive weeks. This approach
+allows us to focus on more substantive labour market transitions rather than short-
+term fluctuations in employment status.
+3.3.2 Separation Rate
+The separation rate (SR) measures the probability that an employed individual exits
+employment in a given week. For our sample of individuals who experience at least
+one spell out of work during 2020, the separation rate for week t is defined as:
+SRt = U new
+t
+Et− 1
+, (2)
+13
+
+===== PAGE 14 =====
+WorkinprogressDo notcite
+where:
+• U new
+t is the number of individuals who are unemployed in week t but were
+employed in week t− 1;
+• Et− 1 is the number of individuals employed in week t− 1.
+It is important to note that our separation rate differs from standard aggregate
+measures as we restrict our analysis to individuals who experience unemployment
+at some point during 2020, excluding those continuously employed throughout the
+year. While this approach yields higher absolute separation rates than population-
+wide measures, it provides a more relevant comparison for our research question by
+focusing on individuals with potentially fragile labour market attachment.
+4 Empirical Methodology
+We exploit the unique policy environment created during the COVID-19 pandemic
+to identify the causal effect of unemployment benefit increases on labour market out-
+comes. Our research design leverages a compelling institutional feature of Australia’s
+social security system: New Zealand citizens living in Australia (on Special Cate-
+gory Visas) were ineligible for the JobSeeker Payment despite facing identical labour
+market conditions and pandemic-related health risks as Australian citizens. When
+the Australian government introduced the Coronavirus Supplement – a temporary
+AU$550 per fortnight increase to the JobSeeker Payment announced on March 22,
+2020 – this policy created a natural experiment with a well-defined treatment group
+(Australian JSP recipients) and control group (comparable New Zealand citizens in
+Australia).
+This identification strategy allows us to address a key challenge in the unemploy-
+ment insurance literature: disentangling the causal impact of benefit changes from
+concurrent macroeconomic shocks. During economic downturns, governments typi-
+cally increase benefit generosity precisely when labour market conditions deteriorate,
+making it diﬀicult to isolate the labour supply effects of benefits from demand-side
+14
+
+===== PAGE 15 =====
+WorkinprogressDo notcite
+factors. Our approach circumvents this issue because both treatment and control
+groups experienced the same macroeconomic conditions but differed only in their
+eligibility for the benefits.
+Our empirical approach proceeds in two main steps. First, we use propensity score
+matching to create comparable groups of Australian JSP recipients and New Zealand
+citizens based on observable characteristics including geographic location, age, in-
+dustry, occupation, partnership status, and income. Second, we apply difference-
+in-differences and regression discontinuity designs to estimate the causal effect of
+the Coronavirus Supplement on job-finding and separation rates. This approach al-
+lows us to isolate the labour supply effects of benefit changes from contemporaneous
+demand-side shocks, as both groups faced similar labour market conditions but only
+Australians were eligible for the JSP and COVID Supplement.
+4.1 Matching Procedure
+Despite our natural experiment setting, New Zealanders and Australians may dif-
+fer on observable characteristics that could influence labour market outcomes. To
+address this potential confounding, we implement a nearest-neighbour propensity
+score matching procedure to create comparable treatment and control groups. We
+match individuals based on characteristics relevant to both JSP eligibility and labour
+market outcomes, including:
+• Geographic location (Statistical Area Level 4 and State)
+• Age (in 10-year bins)
+• Industry (1-digit ANZSIC code)
+• Occupation (1- and 2-digit ANZSCO codes)
+• Partnership status
+• Income ventile
+• Partner’s income ventile (where applicable)
+15
+
+===== PAGE 16 =====
+WorkinprogressDo notcite
+The matching model employs a probit specification to estimate the propensity of
+being a New Zealand citizen based on these observable characteristics. Specifically,
+we estimate:
+P (N Zi = 1|Xi) = Φ( β0 + β1Locationi + β2Agei + β3Industryi + β4Occupationi
++β5Partnershipi + β6Incomei + β7PartnerIncomei)
+(3)
+where Φ is the cumulative distribution function of the standard normal distri-
+bution, and N Zi is an indicator for New Zealand citizenship. We then match each
+New Zealander with the most similar Australian based on propensity scores using
+a 1:1 nearest-neighbour approach without replacement. This procedure yields our
+matched sample used in the DiD analysis in Section 4.2.
+We evaluate the quality of matches through balance tests across all covariates, as
+illustrated in Figures in Appendix Section A.1, which demonstrate that our matched
+samples are generally well-balanced on key characteristics including age, industry,
+occupation, and geographic distribution. However, due to the large disparity in sam-
+ple sizes between New Zealanders (80,005) and Australians (3,252,076) in our initial
+dataset and our use of one-to-one matching, our final analytical sample is more rep-
+resentative of the New Zealand population in Australia than the broader Australian
+population. This results in certain regions being over-represented in our matched
+sample compared to the overall Australian population – for instance, Queensland
+and Western Australia have higher representation while New South Wales, South
+Australia, Tasmania, and the ACT have lower representation (as shown in Figure
+A.10). While this approach prioritises internal validity for our causal estimates over
+representativeness, it ensures our comparison groups are similar on observable char-
+acteristics that might influence labour market outcomes.
+4.2 Difference-in-Differences
+Our primary empirical approach employs a difference-in-differences (DiD) framework
+to estimate the causal effect of the Coronavirus Supplement on labour market out-
+16
+
+===== PAGE 17 =====
+WorkinprogressDo notcite
+comes. Let Ygt represent the outcome of interest (job-finding rate or separation rate)
+for group g ∈ AU S, N Z at time t ∈ P re, P ost . The DiD specification is given by:
+Ygt = α + β1Dg + β2Tt + β3(Dg × Tt) + εgt (4)
+where:
+• Dg is an indicator equal to 1 for Australians and 0 for New Zealanders
+• Tt is an indicator equal to 1 for the post-announcement period and 0 for the
+pre-announcement period
+• β3 captures the DiD estimate of interest – the differential change in outcomes
+for Australians relative to New Zealanders following the policy announcement
+• εgt is the error term
+The coeﬀicient β3 identifies the causal effect of the Coronavirus Supplement under
+the parallel trends assumption, which posits that in the absence of the policy inter-
+vention, the change in outcomes over time would have been the same for Australians
+and New Zealanders.
+We define the treatment date as 22 March 2020, when the Coronavirus Supple-
+ment was announced, rather than its implementation date (27 April 2020). This
+choice reflects the forward-looking nature of job search decisions, whereby individu-
+als adjust their behaviour based on expected future benefit levels as soon as policy
+changes are announced.
+The validity of our DiD estimates relies on the key assumption: parallel trends
+which assumption requires that, in the absence of the Coronavirus Supplement,
+labour market outcomes for Australians and New Zealanders would have evolved
+similarly over time. Visual inspection of the pre-treatment trends in job-finding and
+separation rates (see Figures 1 and 2) suggests broadly parallel movements prior
+to the policy announcement, providing initial support for this assumption. Further-
+more, both groups were subject to identical macroeconomic conditions, public health
+17
+
+===== PAGE 18 =====
+WorkinprogressDo notcite
+restrictions, and labour market regulations during the study period, strengthening
+the plausibility of the parallel trends assumption.
+In order to assume that any differential change in outcomes between the two
+groups following the policy announcement can be attributed to the policy itself, we
+also need to assume that no other concurrent shocks differentially affected the two
+groups.
+This is partially dealt with through matching on observables. However, the
+COVID Supplement was introduced at the same time as nationwide lockdowns took
+place and the health risks of COVID became salient. In the absence of the payment
+change this shock will have had differential effects on both groups. We discuss this
+further in the structural model in Section 7.
+5 Empirical Results
+This section presents the results of our analysis. We begin by outlining the main
+findings on the effect of the Supplement on job-finding rates and separation rates in
+Sections 5.1 and 5.2, respectively. Next, in Section 5.3 we describe our approach to
+disentangling the labour supply effects of relaxed mutual obligations requirements
+from those of the Supplement. Finally, we present heterogeneity analyses in section
+5.4 to assess whether certain groups were more or less responsive to the Supplement.
+5.1 Job Finding Rate
+Table 3 below presents the regression results for the difference-in-difference analysis,
+using Equation 4 with job-finding rates as the outcome variable. The intercept
+captures the average job-finding rate for New Zealanders in Australia prior to the
+March policy announcement. The coeﬀicient on Australian indicates the baseline
+difference, showing that Australians had a lower job-finding rate than New Zealanders
+before the announcement. The Post period coeﬀicient estimates the change in job-
+finding rates for New Zealanders following the announcement, while the combined
+18
+
+===== PAGE 19 =====
+WorkinprogressDo notcite
+effect of Post period and the interaction term Aus × Post reflects how much lower
+the job-finding rate for Australians was.
+The coeﬀicient on the interaction term Aus × Post term isolates the effect of
+the Supplement on Australians relative to New Zealanders, and thus captures the
+estimated treatment effect. The 1.7 p.p. drop in the job-finding rate for Australians
+is statistically significant at the 5% level. This effect corresponds to an increase in
+average time spent out of work by recipients of approximately one week.
+Table 3: Effect of COVID Supplement on Job-Finding Rate
+Variable Estimate Std. Error t value p-value
+Intercept 0.1002∗∗∗ 0.0044 22.67 < 2. 2 × 10− 16
+Australian − 0.0134∗∗ 0.0063 − 2.14 0.0380
+Post period − 0.0179∗∗∗ 0.0058 − 3.09 0.0035
+Aus × Post − 0.0171∗∗ 0.0082 − 2.08 0.0430
+Observations 48
+RMSE 0.0134
+Adj. R 2 0.619
+Notes: Significance levels: ∗∗∗ 0.01, ∗∗ 0.05, ∗ 0.1. Standard errors are IID.
+Figure 1 below provides a graphical representation of these findings, illustrating
+the weekly job-finding rates for New Zealanders (light blue solid line) and Australians
+(teal solid line) in the months surrounding the policy announcement. The dotted
+lines indicate each group’s average job-finding rate during the pre-announcement
+period, while the dashed lines represent the post-announcement averages.
+Although New Zealanders typically exhibit higher job-finding rates than Aus-
+tralians, both groups followed parallel trends prior to the announcement date. Fol-
+lowing the announcement of the Supplement, the gap widened sharply and persisted
+over time. Given that both groups were subject to similar regional labour market
+and health shocks, we infer that this widening disparity was primarily driven by the
+announcement of the Supplement and other JobSeeker benefit changes.
+19
+
+===== PAGE 20 =====
+WorkinprogressDo notcite
+Figure 1: Job-finding rates*
+5.2 Separation Rate
+Table 4 represents the results from the same difference-in-differences specification
+(Equation 4), this time with separation rates as the outcome variable. The intercept
+captures the average separation rate for New Zealanders in Australia prior to the
+announcement, while the Australian coeﬀicient reflects the baseline difference for
+Australians. The Post period term estimates the change in separation rates for
+New Zealanders following the announcement, and the interaction term Aus × Post
+captures the additional change experienced by Australians.
+The coeﬀicient on the interaction term provides our estimate of the treatment
+effect – namely, the differential change in Separation Rates for Australians relative to
+New Zealanders. This gives us an estimate of the effect of the March announcement
+on the separation rate. We find a 3.7 p.p. increase in the Separation Rate for
+Australians following the announcement. This effect is statistically significant and
+indicates a substantial rise in job separations associated with the policy change.
+Figure 2 above displays the trends in separation rates for Australians and New
+Zealanders around the time of the announcement. In the pre-announcement pe-
+20
+
+===== PAGE 21 =====
+WorkinprogressDo notcite
+Table 4: Effect of COVID Supplement on Separation Rate
+Variable Estimate Std. Error t value p-value
+Intercept 0.0480∗∗∗ 0.0076 6.33 1. 09 × 10− 7
+Australian 0.0004 0.0107 0.04 0.9705
+Post period 0.0070 0.0099 0.70 0.4852
+Aus × Post 0.0372 ∗∗ 0.0140 2.65 0.0111
+Observations 48
+RMSE 0.0230
+Adj. R 2 0.369
+Notes: Significance levels: ∗∗∗ 0.01, ∗∗ 0.05, ∗ 0.1. Standard errors are IID.
+Figure 2: Separation rates*
+riod, both groups exhibited nearly identical separation rates, supporting the parallel
+trends assumption. After the Supplement was announced, separation rates rose for
+both groups, but the increase was notably steeper for Australians. New Zealanders’
+separation rates soon returned to pre-announcement levels and fell below them in
+subsequent weeks, while those of Australians remained elevated. As both groups
+were exposed to comparable labour market and health conditions, the sustained gap
+in separation rates is likely attributable to the Supplement and related changes to
+21
+
+===== PAGE 22 =====
+WorkinprogressDo notcite
+JobSeeker policy.
+5.3 Disentangling Benefit Rates from Mutual Obligations
+To distinguish between the effects of benefit payment rates and mutual obligation
+requirements, we exploit a quasi-experimental setting created by the differential rein-
+troduction of mutual obligations across Australian states in July 2020. Prior research
+has shown that such requirements reduce the time individuals spend out of work,
+education, or training while receiving unemployment benefits ( Borland and Tseng ,
+2007; Breunig et al. , 2003). The COVID-19 pandemic provides a unique opportunity
+to re-examine these effects, as the temporary suspension and subsequent phased re-
+turn of mutual obligations allow us to separately identify their influence on labour
+supply decisions.
+Following the announcement of the Coronavirus Supplement extension on July
+21, 2020 (at a reduced rate of $250 per fortnight), mutual obligation requirements
+were reimposed in all states except Victoria, which remained under lockdown due to
+a COVID-19 outbreak. This policy variation allows us to examine whether mutual
+obligations were a key driver of labour supply responses. We implement our baseline
+difference-in-differences model separately for Victoria and for the rest of Australia,
+using the July announcement as the cutoff date:
+Y V IC
+gt = αV IC + βV IC
+1 Dg + βV IC
+2 Tt + βV IC
+3 (Dg × Tt) + εV IC
+gt (5)
+Y oth
+gt = αoth + βoth
+1 Dg + βoth
+2 Tt + βoth
+3 (Dg × Tt) + εoth
+gt (6)
+If mutual obligation requirements were the primary driver of labour supply responses,
+we would expect to observe different DiD coeﬀicients ( βV IC
+3 ̸= βoth
+3 ), as these re-
+quirements were only reimposed outside Victoria. Conversely, if the labour market
+response was primarily driven by benefit payment levels, which changed uniformly
+across all states, we would expect similar coeﬀicients across both models. This ap-
+proach provides insights into whether the labour supply effects we observe are primar-
+ily driven by changes in benefit payments or by the imposition of mutual obligation
+22
+
+===== PAGE 23 =====
+WorkinprogressDo notcite
+requirements.
+Table 5 represents the effect of the July announcement on Job-Finding Rates
+for Victoria and the rest of Australia respectively, during the July announcement
+(which is dated to the lockdown on the 25th of June). Both show that there is no
+statistically significant difference between the response of the Australian and New
+Zealand groups to the announcement.
+Figure 3: Job-Finding Rates*
+In Victoria, Job-Finding Rates were relatively unchanged before and after the
+announcement, while over the rest of Australia, Job-Finding Rates rose by 1.7p.p.
+over the following period. However, this increase occurred for both Australian and
+New Zealand citizens in Australia. This indicates that the unique economic condi-
+tions in Victoria were leading to differing labour market conditions than in the rest
+of the country.
+However, as there is no difference in the response between Australians and New
+Zealanders these results indicate that the lack of a labour supply response to the
+announcement was not due to the reintroduction of mutual obligations - as those
+obligations were not reimposed in Victoria.
+23
+
+===== PAGE 24 =====
+WorkinprogressDo notcite
+Table 5: Impact of July Announcements on Job Finding Rate
+Victoria Non-Victoria
+Intercept 0.0928∗∗∗ 0.0797∗∗∗
+(0.0049) (0.0037)
+Australian − 0.0361∗∗∗ − 0.0307∗∗∗
+(0.0069) (0.0052)
+Post period − 0.0045 0.0172 ∗∗∗
+(0.0061) (0.0047)
+Aus × Post 0.0006 − 0.0017
+(0.0087) (0.0066)
+Observations 70 70
+RMSE 0.0171 0.0130
+Adj. R 2 0.505 0.637
+Notes: Significance levels: ∗∗∗ 0.001, ∗∗ 0.01, ∗ 0.05.
+Standard errors in parentheses are IID.
+5.4 Heterogeneity
+To deepen our understanding of the labour market response to the Coronavirus
+Supplement, we examine heterogeneous effects across various demographic and geo-
+graphic dimensions. This analysis helps identify which subgroups were most respon-
+sive to the benefit increase, providing insights into the distributional impacts of the
+policy and the mechanisms driving our main findings.
+5.4.1 Family Structure and Dependency Status
+Table 6 presents estimates of the effect of the Coronavirus Supplement on job-finding
+rates by family status. The interaction coeﬀicient (Aus × Post), which captures
+the differential effect of the Supplement on Australians relative to New Zealanders,
+shows statistically significant negative effects across all groups. The point estimates
+are remarkably consistent, ranging from -1.6 to -2.3 percentage points, suggesting
+that the disincentive effects of higher benefits were broadly similar across family
+structures.
+24
+
+===== PAGE 25 =====
+WorkinprogressDo notcite
+Figure 4: Job-finding rates by dependent status
+Notably, individuals with dependents exhibit a somewhat larger response com-
+pared to those without dependents. This pattern is consistent with Figure 4, which
+shows a more pronounced divergence in job-finding rates for individuals with depen-
+dents following the policy announcement. This heightened sensitivity may reflect the
+greater relative value of benefit income for households with dependents, especially
+during a period of heightened health concerns when the risks of workplace exposure
+may have been particularly salient for parents.
+No substantial differences emerge between couples and singles, as also depicted
+in Figure 5, suggesting that partnership status per se did not significantly moderate
+the labour supply response to the benefit increase.
+5.4.2 Age and Income
+Table 7 reveals important heterogeneity in the response to the Coronavirus Sup-
+plement across age groups and income levels. The effect is statistically significant
+across all age categories, with point estimates suggesting a slightly larger effect for
+older workers (-2 percentage point) compared to young (-1.7 percentage point) and
+middle-aged workers (-1.7 percentage point). This is consistent with findings by
+Michelacci and Ruffo (2015), who argue that younger workers are less responsive
+25
+
+===== PAGE 26 =====
+WorkinprogressDo notcite
+Table 6: Effect of COVID Supplement on Job Finding Rates: Family status
+Couples Singles with Dependent no Dependent
+Constant 0.1168 ∗∗∗ 0.0969∗∗∗ 0.1193∗∗∗ 0.0964∗∗∗
+(0.0055) (0.0043) (0.0054) (0.0043)
+Australian -0.0137 ∗ -0.0127∗∗ -0.0119 -0.0132∗∗
+(0.0078) (0.0061) (0.0077) (0.0061)
+Post -0.0216∗∗∗ -0.0172∗∗∗ -0.0230∗∗∗ -0.0169∗∗∗
+(0.0072) (0.0056) (0.0071) (0.0056)
+Aus × Post -0.0182 ∗ -0.0174∗∗ -0.0233∗∗ -0.0163∗∗
+(0.0102) (0.0079) (0.0101) (0.0080)
+R2 0.58970 0.64946 0.64235 0.63668
+Observations 48 48 48 48
+Table 7: Effect of COVID Supplement on Job Finding Rates: Age and Household
+Income Analysis
+Young Mid age Older Low inc Mid inc High inc
+Constant 0.0974 ∗∗∗ 0.1066∗∗∗ 0.0976∗∗∗ 0.1145∗∗∗ 0.1270∗∗∗ 0.1311∗∗∗
+(0.0044) (0.0049) (0.0054) (0.0048) (0.0069) (0.0091)
+Australian -0.0115 ∗ -0.0161∗∗ -0.0121 -0.0218 ∗∗∗ 0.0153 0.0355 ∗∗∗
+(0.0062) (0.0069) (0.0076) (0.0068) (0.0098) (0.0129)
+Post -0.0171∗∗∗ -0.0207∗∗∗ -0.0137∗ -0.0176∗∗∗ -0.0271∗∗∗ -0.0252∗∗
+(0.0057) (0.0064) (0.0070) (0.0063) (0.0091) (0.0120)
+Aus × Post -0.0170 ∗∗ -0.0171∗ -0.0202∗∗ -0.0237∗∗ -0.0425∗∗∗ -0.0604∗∗∗
+(0.0081) (0.0091) (0.0100) (0.0089) (0.0128) (0.0169)
+R2 0.624 0.644 0.535 0.727 0.615 0.559
+Obs. 48 48 48 48 48 48
+26
+
+===== PAGE 27 =====
+WorkinprogressDo notcite
+Figure 5: Job-finding rates by marital status
+to unemployment benefits than older workers because they are motivated to find
+jobs to accumulate valuable human capital regardless of benefit levels. However, we
+note that as Figure 6 pre-trends are slightly different between age groups for the
+older sample, suggesting some caution in interpreting these results. The somewhat
+stronger response among older workers may also reflect the unique health consider-
+ations during the pandemic, which posed greater risks to older individuals.
+The most striking heterogeneity appears across income groups. As shown in Fig-
+ure 7, the low-income group demonstrates the most consistent and reliable response,
+with stable pre-treatment trends followed by a pronounced decline in job-finding
+rates after the policy announcement. The middle-income group exhibits a similar
+but more modest reduction in job-finding rates. In contrast, while the high-income
+group shows the largest aggregate effect, these estimates warrant significant caution
+due to considerable pre-treatment volatility and dispersion in job-finding rates. 5 The
+robust response observed among lower-income workers aligns with theoretical pre-
+dictions, given that Australia’s flat-rate benefit system provides higher replacement
+rates for this demographic.
+5The seemingly stronger responses in higher income brackets likely reflect pre-existing patterns
+rather than genuine treatment effects, highlighting the critical importance of trend stability in
+difference-in-differences analysis.
+27
+
+===== PAGE 28 =====
+WorkinprogressDo notcite
+Figure 6: Job-finding rates by age groups
+Several mechanisms may explain the observed responses across income groups,
+particularly the robust effect for low-income workers. Low-income households typi-
+cally have limited savings and restricted access to credit, making them more reliant
+on immediate employment income or government support. When unemployment
+benefits increased substantially through the Coronavirus Supplement, this group
+faced a more meaningful change in their relative returns to employment versus un-
+employment. Additionally, low-income workers were more likely to be employed in
+service occupations with limited remote work options, creating a starker choice be-
+tween in-person work with health risks or unemployment with enhanced benefits.
+The temporarily relaxed asset tests associated with the Supplement may have also
+expanded eligibility among this group, who might otherwise have been disqualified
+28
+
+===== PAGE 29 =====
+WorkinprogressDo notcite
+Figure 7: Job-finding rates by income groups
+even with modest assets. These factors collectively contribute to the clearer, more
+pronounced response observed in the low-income group.
+5.4.3 Geographic Variation
+Table 8 examines geographic heterogeneity in the response to the Coronavirus Sup-
+plement. We find a statistically significant negative effect in urban areas, while the
+effect in rural areas is smaller and not statistically significant. This urban-rural di-
+vide, also apparent in Figure 8, may reflect differences in labour market conditions,
+with urban areas experiencing more severe disruptions due to lockdown measures
+and concentration of service industries particularly affected by the pandemic.
+29
+
+===== PAGE 30 =====
+WorkinprogressDo notcite
+Table 8: Effect of COVID Supplement on Job Finding Rates: Regional Analysis
+Urban Rural NSW VIC QLD Other
+Constant 0.1007 ∗∗∗ 0.0997∗∗∗ 0.0981∗∗∗ 0.1104∗∗∗ 0.0931∗∗∗ 0.1029∗∗∗
+(0.0044) (0.0052) (0.0051) (0.0051) (0.0046) (0.0048)
+Australian -0.0119 ∗ -0.0163∗∗ -0.0066 -0.0041 -0.0170 ∗∗ -0.0178∗∗
+(0.0063) (0.0074) (0.0072) (0.0072) (0.0065) (0.0067)
+Post -0.0171∗∗∗ -0.0191∗∗∗ -0.0187∗∗∗ -0.0190∗∗∗ -0.0127∗∗ -0.0180∗∗∗
+(0.0058) (0.0068) (0.0066) (0.0066) (0.0060) (0.0062)
+Aus × Post -0.0201 ∗∗ -0.0116 -0.0226 ∗∗ -0.0293∗∗∗ -0.0140 -0.0154 ∗
+(0.0082) (0.0096) (0.0094) (0.0094) (0.0085) (0.0088)
+R2 0.657 0.541 0.595 0.651 0.578 0.630
+Obs. 48 48 48 48 48 48
+Notes: NSW includes ACT; QLD includes NT; Other includes SA, TAS, and W A.
+Looking at state-level variation, we observe the largest effects in Victoria (-2.9
+percentage points) and New South Wales (-2.3 percentage points), Australia’s most
+populous states containing the major cities of Melbourne and Sydney, respectively.
+These regions implemented some of the strictest lockdown measures during the pan-
+demic, particularly Victoria, which experienced a severe second wave of COVID-19
+infections. The effect is smaller and not statistically significant in Queensland, while
+other states and territories show an intermediate effect.
+This geographic pattern suggests an interaction between benefit generosity and
+the severity of pandemic-related disruptions. The larger response in areas with
+stricter lockdowns is consistent with the notion that the labour supply effects of
+unemployment benefits may be amplified when work opportunities are limited or
+perceived health risks are elevated. It also highlights the potential public health
+benefits of reduced labour supply during a pandemic, as the strongest responses
+occurred in areas with the most significant outbreaks.
+30
+
+===== PAGE 31 =====
+WorkinprogressDo notcite
+Figure 8: Job-finding rates by residence
+5.4.4 Implications of Heterogeneous Effects
+The patterns of heterogeneity documented above offer several insights. First, the rel-
+atively uniform effects across family structures suggest that the basic labour supply
+mechanisms operated similarly across diverse household types. Second, the strong
+income gradient in responsiveness indicates that lower-income individuals were more
+responsive to the Supplement, suggesting that liquidity constraints and income inse-
+curity played a central role in shaping labour supply decisions during the pandemic.
+Finally, the geographic variation highlights the interaction between benefit policy
+and local pandemic conditions.
+Collectively, these findings underscore the nuanced ways in which unemployment
+benefit policy operates during a crisis. The Coronavirus Supplement appears to have
+enabled workers – particularly those at higher risk due to age or location –to reduce
+labour supply during a period when such reductions may have been socially beneficial
+for public health reasons.
+31
+
+===== PAGE 32 =====
+WorkinprogressDo notcite
+Figure 9: Job-finding rates by state groups
+6 Robustness Checks
+To validate our identification strategy and assess the robustness of our findings, we
+conduct several additional analyses that strengthen our causal interpretation and
+rule out alternative explanations.
+6.1 Regression Discontinuity Approaches
+To complement our DiD analysis, we implement a regression discontinuity design
+(RDD) that focuses on the sharp change in policy at the announcement date. A
+32
+
+===== PAGE 33 =====
+WorkinprogressDo notcite
+standard RDD approach models the outcome as:
+Ygt = α + τ Dt + β1(Xt) + β2(Xt × Dt) + εgt (7)
+where Dt is an indicator for the post-policy period, Xt represents time relative to the
+policy announcement, and we allow for differential linear trends before and after the
+announcement by including the interaction term (Xt × Dt). However, a key iden-
+tification challenge in this context is that multiple events occurred simultaneously
+at our threshold date – the announcement of the Coronavirus Supplement coincided
+with rising COVID-19 uncertainty, the introduction of lockdowns, and other pol-
+icy interventions. This confounding would undermine a standard RDD approach.
+To address this challenge, we exploit the fact that most of these concurrent shocks
+– business employment intentions, pandemic fears, lockdown restrictions – affected
+both New Zealanders and Australians in Australia equally, while only Australians
+gained access to the enhanced benefits. We therefore extend our analysis to a regres-
+sion discontinuity difference-in-differences (RD-DiD) framework, which estimates the
+difference in discontinuities between Australians and New Zealanders at the policy
+announcement date:
+Ygt =α + β1Dg + β2Dt + β3(Xt) + β4(Xt × Dt)+ (8)
+β5(Dg × Dt) + β6(Dg × Xt) + β7(Dg × Xt × Dt) + εgt (9)
+This specification offers several advantages over our baseline DiD approach. First, it
+allows for differential time trends between the two groups, accounting for potentially
+divergent trajectories. Second, it permits these trends to differ before and after the
+policy change, which is particularly important given the temporary nature of the
+Coronavirus Supplement. Since the present value of remaining on benefits would
+decline as the expected end date approached, we would anticipate the treatment
+effect to attenuate over time – a dynamic that our RD-DiD specification can capture
+through the three-way interaction term β7. In this model, β5 captures the immediate
+discontinuous effect at the announcement date, providing an alternative estimate of
+33
+
+===== PAGE 34 =====
+WorkinprogressDo notcite
+the treatment effect that is robust to differential trends. Figure 10 presents the
+RD-DiD results for job-finding rates, showing the difference between Australians
+and New Zealanders around the policy announcement date. The negative jump at
+the threshold indicates a substantial reduction in job-finding rates for Australians
+relative to New Zealanders immediately following the announcement. This pattern
+is evident both in the full RDD sample (Panel A) and when excluding observations
+in the fortnight immediately following the announcement (Panel B) to account for
+potential anticipation effects or implementation lags. Similarly, Figure 11 displays
+the RD-DiD results for separation rates, with a noticeable positive jump in the
+difference at the threshold, suggesting increased separations among Australians at
+the policy announcement.
+(a) Full RDD specification
+ (b) Excluding fortnight post-announcement
+Figure 10: RDD Estimates of Job-Finding Rates around the First Announcement
+6.2 Placebo Tests
+We implement two key placebo tests to rule out potential confounding factors and
+alternative explanations for our findings:
+34
+
+===== PAGE 35 =====
+WorkinprogressDo notcite
+(a) Full RDD specification
+ (b) Excluding fortnight post-announcement
+Figure 11: RDD Estimates of Separation Rates around the First Announcement
+6.2.1 2022 Placebo
+To verify that our results are not driven by seasonal patterns or recurring differences
+between Australians and New Zealanders, we replicate our main analysis using data
+from 2022, when no pandemic-related policy changes occurred. As shown in Figure
+12, job-finding rates for Australians and New Zealanders in 2022 follow nearly iden-
+tical patterns across the calendar period corresponding to our 2020 treatment date,
+with no significant differential changes. Formal DiD estimates from this placebo
+exercise yield coeﬀicients close to zero and statistically insignificant (Table 9, Panel
+A), confirming that our main findings are not explained by seasonal or recurring
+patterns.
+6.2.2 Non-JSP Recipients
+To ensure our results capture the effect of the Coronavirus Supplement rather than
+inherent differences between Australians and New Zealanders in response to the
+pandemic, we conduct a second placebo test comparing Australians who did not
+receive the JobSeeker Payment with their matched New Zealand counterparts. Figure
+35
+
+===== PAGE 36 =====
+WorkinprogressDo notcite
+Table 9: Placebo Regression Results
+Panel A: 2022 Analysis
+Job Finding Rate Separation Rate
+Intercept 0.0989∗∗∗ 0.0645∗∗∗
+(0.0045) (0.0031)
+Australian − 0.0124∗ 0.0171∗∗∗
+(0.0064) (0.0044)
+Post period 0.0059 − 0.0023
+(0.0057) (0.0039)
+Aus × Post − 0.0023 − 0.0076
+(0.0081) (0.0055)
+Observations 48 48
+RMSE 0.0129 0.0117
+Adj. R 2 0.191 0.341
+Panel B: Not eligible for JobSeeker Payment
+Job Finding Rate Separation Rate
+Intercept 0.0948∗∗∗ 0.0480∗∗∗
+(0.0071) (0.0054)
+Australian 0.0033 0.0025
+(0.0101) (0.0077)
+Post period − 0.0138 0.0060
+(0.0095) (0.0071)
+Aus × Post − 0.0011 − 0.0036
+(0.0132) (0.0100)
+Observations 48 48
+RMSE 0.0216 0.0164
+Adj. R 2 0.039 − 0.048
+Notes: Significance levels: ∗∗∗ 0.001, ∗∗ 0.01, ∗ 0.05, · 0.1. Standard
+errors in parentheses are IID.
+36
+
+===== PAGE 37 =====
+WorkinprogressDo notcite
+(a) Job-Finding Rate
+ (b) Separation Rate
+Figure 12: Placebo Test Using 2022 Data
+13 shows that job-finding rates for these two groups evolved similarly before and
+after the policy announcement. The DiD coeﬀicient from this placebo test is close
+to zero and not statistically significant (Table 9, Panel B), indicating that our main
+effects are specific to JSP recipients and not reflective of broader nationality-based
+differences in labour market responses.
+(a) Job-Finding Rate
+ (b) Separation Rate
+Figure 13: Placebo Test Using non-JSP Recipients
+37
+
+===== PAGE 38 =====
+WorkinprogressDo notcite
+6.3 Accounting for JobKeeper
+A key challenge in isolating the causal effect of the Coronavirus Supplement is dis-
+entangling its impact from other concurrent policy interventions. Most notably, the
+JobKeeper wage subsidy program was introduced shortly after the Supplement an-
+nouncement (on March 30, 2020) and may have influenced observed separation rates.
+While both Australians and New Zealanders had access to JobKeeper, its interac-
+tion with the Coronavirus Supplement for Australians may have produced compound
+effects on labour market decisions.
+To address this potential confounding, we augment our baseline specification by
+including a dummy variable ( JK month) for the first month of the JobKeeper program,
+when its labour market effects were most pronounced ( Bradshaw et al. , 2023). We
+also include an interaction between this variable and Australian citizenship to capture
+differential responses to JobKeeper between the two groups. The augmented model
+is:
+Ygt = α + β1Dg + β2Tt + β3JK month + β4(Dg × Tt) + β5(Dg × JK month) + εgt (10)
+Table 10 presents the results from this specification for separation rates. The
+coeﬀicient on JobKeeper month ( β3 = 0 . 0306) indicates a substantial increase in
+separation rates during the first month of the program, consistent with increased
+labour market churning during this period. The Australian×JobKeeper interaction
+(β5 = 0. 0314) reveals that Australians experienced even higher separation rates dur-
+ing this period, potentially reflecting their strategic labour market decisions when
+covered by both policies.
+Most importantly, after accounting for these JobKeeper effects, the estimated
+impact of the Coronavirus Supplement on separation rates (Australian×Post coef-
+ficient, β4) decreases to 2.6 percentage points (from 3.7 percentage points in our
+baseline specification). This 30% reduction in the estimated effect suggests that
+38
+
+===== PAGE 39 =====
+WorkinprogressDo notcite
+approximately one-third of the initial separation rate response we attributed to the
+Coronavirus Supplement may have been influenced by JobKeeper-induced labour
+market adjustments.
+Table 10: Impact of Coronavirus Supplement on Separation Rates Controlling for
+JobKeeper
+Variable Estimate Std. Error t value p-value
+Intercept 0.0480∗∗∗ 0.0049 9.87 1. 64 × 10− 12
+Australian 0.0004 0.0069 0.06 0.9541
+Post period − 0.0039 0.0071 − 0.56 0.5808
+JK month 0.0306 ∗∗∗ 0.0086 3.56 0.0009
+Aus × Post 0.0260 ∗∗ 0.0100 2.60 0.0128
+Aus × JK 0.0314∗∗ 0.0121 2.59 0.0132
+Observations 48
+Notes: Dependent variable is the weekly separation rate. Significance levels: ∗∗∗ 0.001, ∗∗ 0.01, ∗
+0.05. Standard errors are IID. ”Post period” indicates observations after the Coronavirus Supple-
+ment announcement. ”JK month” indicates the first month of JobKeeper program implementation.
+The remaining effect of 2.6 percentage points still represents a substantial 54%
+increase in separation rates attributable to the Coronavirus Supplement, confirming
+that the benefit enhancement significantly influenced labour market transitions even
+after accounting for JobKeeper effects. Nevertheless, this adjusted estimate should
+be interpreted with some caution, as New Zealanders may have responded differently
+to JobKeeper due to their ineligibility for other benefit programs. Future research in-
+corporating detailed JobKeeper take-up data could further refine our understanding
+of these interaction effects.
+This analysis demonstrates the importance of accounting for policy interaction
+effects when evaluating labour market responses during the pandemic, particularly
+when multiple interventions were implemented in close succession. Our findings sug-
+gest that while the Coronavirus Supplement had significant effects on separation
+decisions, these effects were somewhat attenuated when controlling for complemen-
+tary policy measures.
+39
+
+===== PAGE 40 =====
+WorkinprogressDo notcite
+6.4 Addressing Selection Concerns
+A potential threat to our identification strategy is selection bias related to New
+Zealanders’ migration decisions during the pandemic. If New Zealanders with par-
+ticular labour market characteristics disproportionately left Australia during our
+study period, this could create compositional changes in our control group that bias
+our estimates. To address this concern, we examine the distribution of arrival dates
+for New Zealanders in our sample and analyse aggregate departure patterns during
+2020.
+Figure 14a displays the distribution of arrival dates for New Zealanders in our
+sample, showing a relatively stable pattern of arrivals prior to the pandemic with no
+evidence of sudden compositional shifts. More importantly, Figure 14b presents data
+on aggregate departures of New Zealanders to New Zealand during our study period.
+We observe that departures remained at very low levels throughout 2020, with only
+minimal outflows even after the policy announcement. This pattern is unsurprising
+given the severe travel restrictions, limited flights, and mandatory quarantine re-
+quirements that made returning to New Zealand exceptionally diﬀicult during this
+period.
+(a) Arrival date distribution of New
+Zealanders
+ (b) Departures to New Zealand∗
+Figure 14: Migration patterns of New Zealanders in Australia
+40
+
+===== PAGE 41 =====
+WorkinprogressDo notcite
+The minimal outmigration during our study period strongly suggests that selec-
+tion bias due to differential migration patterns is unlikely to substantially affect our
+estimates. This, combined with our matched sample approach and placebo tests,
+provides further confidence in the robustness of our findings.
+Collectively, these robustness checks corroborate our main findings through al-
+ternative empirical approaches, rule out seasonal patterns and nationality-based dif-
+ferences as explanations, and address potential selection concerns. The consistency
+of results across different specifications and tests strengthens our causal interpre-
+tation of the relationship between the Coronavirus Supplement and labour market
+outcomes.
+41
+
+===== PAGE 42 =====
+WorkinprogressDo notcite
+7 Structural model
+In our empirical analysis we compare two groups of individuals, one who is eligible
+for the JSP and one that is ineligible due to citizenship.
+We are interested in understanding the response of the first group to a temporary
+increase in the JSP rate, and use ineligible individuals as a control group. This
+assumes that these two groups would have reacted in a similar way in the absence
+of the payment rate increase.
+However, absent the payment change, the fact that one group would receive
+income support while another doesn’t may generate a bias in two countervailing
+ways:
+• Due to the lack of social insurance, the ineligible group will always search
+more intensely to re-enter employment. As this shock reduces labour demand,
+this difference in search intensity will translate into a smaller difference in job-
+finding rates – leading to a downward bias in the estimate of the disincentive
+effect.
+• Alternatively, if the eligible group has greater capacity to avoid hazardous work
+(due to income support), and the pandemic increased the disutility of work,
+their lower job-finding rate might upwardly bias the estimate of the disincentive
+effect.
+To understand the nature of these biases, the mechanisms behind the observed
+changes in behaviour during COVID, and the generalisability of our estimated labour
+supply response, we construct a search and matching model. Specifically, we use
+a stylised Diamond–Mortensen–Pissarides (DMP) search-and-matching framework
+augmented with endogenous search effort and concave disutility of search effort .
+During the COVID-19 pandemic, a range of factors increased the perceived costs
+of labour market participation. Empirical evidence points to heightened health con-
+cerns (Brinca et al. , 2021), caregiving constraints due to school closures, and changes
+in work-life preferences ( McDermott and Hansen , 2021). These effects are consistent
+42
+
+===== PAGE 43 =====
+WorkinprogressDo notcite
+with macroeconomic models incorporating preference shifters, where the utility from
+leisure rises (or equivalently, the disutility of work increases) in response to pandemic
+risks.
+In our model, this is captured via two parameters: the search disutility param-
+eter and non-employment utility. An increase in search disutility reflects reduced
+willingness or ability to engage in active job search—due to psychological costs,
+logistical barriers, or elevated health risks. Meanwhile, a rise in non-employment
+utility captures the increased relative value of staying out of work, whether from
+safety considerations or shifts in household preferences. Together, these parameters
+allow us to quantify how much of the observed decline in job-finding rates stems from
+pandemic-related preference changes rather than benefit generosity alone.
+Furthermore, we allow the change in non-employment utility to vary by type, to
+investigate the role of differential preferences in driving our observed results.
+7.1 Model Setup
+Time is discrete and infinite, indexed in weeks t = 0 , 1, 2, . . . . There is a unit
+measure of workers, comprised of two types: a fraction π are eligible to receive
+an unemployment benefit following job loss (type e) and the remaining 1 − π are
+ineligible (type i). All workers are risk-neutral and identical in productivity. Firms
+do not and cannot discriminate between these two types of workers. Firms and
+workers meet through a frictional labour market with search and matching frictions
+as described below.
+Each employed worker produces a fixed output y per period. Wages are exoge-
+nous (no Nash bargaining), reflecting short-run wage rigidity. For simplicity we
+assume all workers earn the same wage w, set to a constant fraction of output based
+on the labour income share in Australia (e.g. w = 0 . 55 y). Unemployed workers re-
+ceive income that depends on type: type e individuals are eligible for a benefit, while
+type i receive no benefit. Specifically, let bj(t) denote the per-period unemployment
+43
+
+===== PAGE 44 =====
+WorkinprogressDo notcite
+benefit for type j ∈ {e, i }. We set
+bi(t) = 0 , b e(t) = rt w ,
+where rt is the replacement rate (a policy-determined fraction of the wage). In the
+pre-pandemic steady state, rt equals the normal JobSeeker replacement rate; during
+the COVID-19 supplement period, rt is temporarily higher (doubled), reflecting the
+supplemental payment.
+Unemployed individuals also derive utility from non-work (leisure or home pro-
+duction). Let lj(t) denote the value of leisure (or the disutility of employment)
+for type j at time t. This captures any non-monetary utility an unemployed person
+enjoys by not working (e.g. more leisure time, or avoidance of health risk). We allow
+lj(t) to differ by group and to vary over time. In particular, during the pandemic
+shock, lj(t) may increase above its baseline value (to represent higher disutility of
+work due to infection risk, caregiving duties during lockdowns, etc.). We do not
+restrict the increase to be identical for both groups; in fact, benefit-eligible work-
+ers might experience a larger rise in l (given unobserved reasons why they may be
+more averse to work risks during COVID). This heterogeneity in lj(t) will be key to
+understanding differential labour supply responses.
+All agents discount future payoffs at factor β ∈ (0, 1) per week. Jobs end ex-
+ogenously at a separation probability δ each period (e.g. layoffs or exogenous quits
+occur with probability δ). There is no on-the-job search or recall of jobs in this
+model; separated workers become unemployed and must search for a new job.
+7.2 Preferences and Job Search
+Unemployed workers optimally choose how much search effort to exert in each period.
+Let sj(t) ∈ [0, 1] denote the search effort of a type- j unemployed in period t, where
+sj = 1 represents full job search intensity and sj = 0 means the individual effectively
+withdraws from search (remaining unemployed). Higher search effort increases the
+probability of finding a job (detailed below) but incurs a utility cost. We assume a
+44
+
+===== PAGE 45 =====
+WorkinprogressDo notcite
+convex disutility of search given by:
+Cost(s) = κ s 1+γ
+1 + γ ,
+with κ > 0 and γ > 1. This functional form (adapted from Shimer, 2004) ensures
+that search effort has diminishing returns and that an interior optimum exists for the
+search intensity. Intuitively, κ scales the overall discomfort from searching (e.g. how
+costly job search activities are), and γ governs the convexity (how sharply marginal
+cost rises with effort).
+We now formalise workers’ dynamic optimisation. Let Uj(t) be the value (ex-
+pected discounted utility) of being unemployed of type j at time t, and Wj(t) the
+value of being employed for a type- j worker at time t. These value functions satisfy
+Bellman equations. An unemployed type- j worker at time t enjoys the current ben-
+efit and leisure utility, minus search costs, and anticipates either finding a job (with
+probability pj(t)) or remaining unemployed. Thus:
+Uj(t) = bj(t) + lj(t) − κ [sj(t)] 1+γ
+1 + γ
++ β
+(
+pj(t) Wj(t + 1) +
+[
+1 − pj(t)
+]
+Uj(t + 1)
+)
+,
+(11)
+where pj(t) is the job-finding probability (endogenously determined by effort and
+market conditions, as defined in the next subsection). In other words, an unemployed
+worker of type j receives income bj(t) and utility lj(t) from not working in period
+t, incurs disutility from search effort sj(t), and then looks ahead to t + 1 : with
+probability pj(t) she finds a job and obtains Wj(t + 1), and with probability 1 − pj(t)
+she remains unemployed with value Uj(t + 1).
+For an employed worker, the Bellman equation is simpler since there is no choice
+to be made while working - since separations are exogenous only. A type- j employed
+worker earns wage w(t) in period t (we allow for the possibility that w could vary
+over time or with policy, though in our baseline w is constant). The job may end
+45
+
+===== PAGE 46 =====
+WorkinprogressDo notcite
+with probability δ, in which case the worker is unemployed next period with value
+Uj(t + 1); if the job continues (with probability 1 − δ), the worker remains employed
+and retains value Wj(t + 1). Thus:
+Wj(t) = w(t) + β
+[
+(1 − δ) Wj(t + 1) + δ Uj(t + 1)
+]
+. (12)
+We assume that while employed, the worker does not search for other jobs.
+Optimal Search Effort. In each period of unemployment, a worker chooses sj(t)
+to maximise the right-hand side of ( 11). The first-order condition (FOC) for optimal
+search effort equates the marginal cost of effort to the expected marginal benefit in
+terms of improved job-finding prospects:
+κ [sj(t)] γ = β f
+(
+θ(t)
+) [
+Wj(t + 1) − Uj(t + 1)
+]
+, (13)
+where f (θ) is the job contact rate per unit of search effort (to be defined shortly).
+Intuitively, the left side κ[sj]γ is the marginal disutility of increasing search effort,
+and the right side is the marginal gain: a higher chance of finding a job (proportional
+to f (θ)) times the value improvement Wj − Uj if employed rather than unemployed
+next period. This condition implicitly defines the worker’s optimal search intensity
+sj(t) given the future value differential Wj(t + 1) − Uj(t + 1) and market tightness
+θ(t). Because the cost of effort is convex ( γ > 1), an interior solution 0 < s j(t) < 1
+will typically satisfy ( 13). In general, eligible workers may choose lower effort than
+ineligible workers if either the benefit be or higher leisure value le makes Ue closer to
+We, reducing the incentive to search.
+7.3 Firms, Vacancies, and Matching Technology
+On the firm side, jobs are created by posting vacancies. Each vacancy incurs a flow
+cost c per period. Firms are assumed to enter freely, posting vacancies until expected
+profits are driven to zero in equilibrium. Because wages are rigid and exogenous in
+our model, firms’ incentive to post vacancies depends on the expected surplus of a
+46
+
+===== PAGE 47 =====
+WorkinprogressDo notcite
+filled job, which in turn depends on y − w and the expected duration of a job. We
+do not model firm value functions explicitly here; instead, we impose the usual free-
+entry condition that in equilibrium the cost of posting a vacancy equals the expected
+payoff of filling it. This condition will pin down market tightness θ(t) (the ratio of
+vacancies to job searchers) in each period (see below).
+Unemployed workers and vacancies are matched via a constant-returns-to-scale
+matching function. Let U nj(t) and Emj(t) denote the number of unemployed and
+employed workers of type j at time t (with U ne + Eme = π and U ni + Emi = 1 − π,
+since π is the population share of type e). We define effective unemployment U neff(t)
+as the total search effort supplied by all job seekers:
+U neff(t) = (1 − π) U ni(t) si(t) + π U ne(t) se(t) .
+This aggregates unemployed workers of both types, weighted by their search intensity,
+into an effective number of searchers. The matching function in period t is
+M (t) = µ
+[
+U neff(t)
+] α [
+V (t)
+] 1− α
+,
+where V (t) is the number of vacancies, µ > 0 is the matching eﬀiciency parameter,
+and α ∈ (0, 1) is the elasticity of matches with respect to job seekers. Market
+tightness is defined in terms of effective searchers as
+θ(t) = V (t)
+U neff(t) .
+This θ measures the ratio of vacancies to effective search effort. Given this setup, we
+can define the job finding and filling probabilities.
+First, consider an unemployed individual who supplies one unit of search effort
+(s = 1). The probability that this unit of effort meets a vacancy in period t is
+f
+(
+θ(t)
+)
+≡ M (t)
+U neff(t) = µ θ(t) 1− α .
+47
+
+===== PAGE 48 =====
+WorkinprogressDo notcite
+We refer to f (θ) as the meeting rate per unit effort . If a worker supplies sj units of
+effort, their total job-finding probability is
+pj(t) = sj(t) f
+(
+θ(t)
+)
+= sj(t) µ θ(t) 1− α , j ∈ {e, i } . (14)
+This captures the idea that putting in more effort proportionally raises one’s
+chance of finding a job. Notice that if eligible workers exert less effort than ineligible
+(say se < s i), then pe will be lower: indeed from ( 14) we have pe/p i = se/s i when
+facing the same tightness θ(t).
+On the firm side, the vacancy filling probability (the chance a posted vacancy
+meets some worker) is
+q(t) = M (t)
+V (t) = µ θ(t)− α . (15)
+This is decreasing in tightness: when there are many vacancies per job seeker (high
+θ), firms have a harder time filling jobs. Using q(t), the free-entry condition can be
+expressed as
+c = q(t)
+[
+y − w(t) + β(1 − δ) J(t + 1)
+]
+,
+where J(t) is the asset value of a filled job to the firm. J(t) itself satisfies J(t) = y −
+w(t)+ β(1− δ) J(t+1) (the present value of current profit y − w plus the continuation
+value if the job doesn’t separate). In steady state this condition simplifies to the
+familiar c = q
+r+δ (y− w) (with r the discount rate), but in our dynamic setting it holds
+period-by-period with expectations over the job’s future profits. We solve for V (t)
+(and thus θ(t)) in each period such that this condition is satisfied. Intuitively, vacancy
+posting adjusts until firms are indifferent, ensuring labour market equilibrium.
+Wages are assumed to remain fixed at the exogenously specified level w(t) through-
+out the analysis (i.e. we do not allow wages to renegotiate in response to the shock).
+This wage rigidity isolates the employment effects of changing search behaviour and
+benefit policy, without confounding from wage adjustments. It is also consistent
+with the short-run nature of the shock, during which nominal wages in Australia did
+48
+
+===== PAGE 49 =====
+WorkinprogressDo notcite
+not dramatically adjust. 6
+7.4 Evolution of Unemployment and Employment
+The stocks of employed and unemployed workers evolve over time through hiring and
+separation flows. Let uj(t) = U nj(t)/ (population of type j) denote the unemploy-
+ment rate for group j at time t. Given the separation probability δ and job-finding
+probability pj(t), the law of motion for uj is:
+uj(t + 1) =
+(
+1 − pj(t)
+)
+uj(t) + δ
+[
+1 − uj(t)
+]
+, j ∈ {e, i } . (16)
+The first term (1 − pj)uj are those unemployed who fail to find jobs and remain
+unemployed next period; the second term δ(1 − uj) are those employed who exoge-
+nously lose their jobs and become unemployed. Equation ( 16) applies to each group
+separately. In the long run with a constant environment, unemployment converges
+to a steady state u∗
+j = δ
+δ+p∗
+j
+for each group j. We calibrate the model such that the
+initial pre-shock steady-state unemployment rates match observed averages for eli-
+gible and ineligible workers. In steady state, eligible individuals may have a slightly
+higher u∗
+e than u∗
+i if their equilibrium search effort is lower due to the availability of
+benefits.
+7.5 Solution Method and Simulation of the COVID Shock
+We now describe how we implement the temporary COVID shock in the model and
+solve for the transition path. The pandemic shock is introduced as an unanticipated,
+temporary change in certain model parameters, lasting for T periods (weeks) before a
+return to normal conditions. In particular, during the shock we incorporate two key
+changes observed in 2020: (i) an increase in the benefit level for eligible workers ( rt
+rises, nearly doubling be), and (ii) an increase in the disutility of work (equivalently, a
+rise in the utility of non-employment lj) for the recipient groups, capturing pandemic-
+6In reality, some wage subsidies (e.g. JobKeeper) and wage freezes were in effect, but our model
+abstracts from these for simplicity - especially as they were more relevant for the separation margin.
+49
+
+===== PAGE 50 =====
+WorkinprogressDo notcite
+related factors such as health risks and caregiving responsibilities. We allow the
+increase in lj to differ between eligible and ineligible workers, reflecting the possibility
+that benefit recipients could afford to reduce search more in response to the pandemic
+(e.g. they have a financial cushion to avoid hazardous jobs).
+We also calibrate the model on the average pre-COVID and COVID job-finding
+rates for our groups, using the marginal cost of search parameter ( γ) and the match
+eﬀiciency parameter ( µ) to match these targets. The change in γ and µ between
+these periods also reflects labour demand and supply factors that took place during
+COVID - with the increase search cost itself an estimate of the heightened risk of
+transmission from work for both agents.
+The shock is assumed to begin unexpectedly (agents do not anticipate it while
+making decisions before time 0), but once it starts, agents know its total duration
+T and anticipate the timing of recovery. At the end of the shock ( t = T ), the
+replacement rate rt and leisure values lj(t) revert to their baseline (pre-pandemic)
+levels, and remain at those steady-state values thereafter.
+We solve the model by backward induction over the finite horizon of the shock,
+followed by forward simulation of the labour market outcomes:
+1. Pre-shock steady state ( t < 0): Before the pandemic ( t < 0), the economy
+is in a steady state with constant parameters (r, l e, l i, µ, . . . ) at their baseline
+values. Workers optimise under the assumption that these conditions will con-
+tinue indefinitely (no knowledge of the coming shock). Thus, the pre-shock
+value functions Uj(− 1), W j(− 1) correspond to a stationary equilibrium solu-
+tion of ( 11)–(12) with constant p∗
+j , and unemployment is at u∗
+j = δ/ (δ + p∗
+j ).
+We initialise the simulation at t = 0 with unemployment rates ue(0) and ui(0)
+equal to these steady-state values (or we can use actual data for early 2020,
+which were very close to steady-state levels).
+2. Shock onset ( t = 0): At t = 0, an unanticipated shock hits. The replacement
+rate for eligibles jumps from r to a higher value (due to the Coronavirus Supple-
+ment), increasing be(t). Simultaneously, we impose a surge in the leisure-value
+50
+
+===== PAGE 51 =====
+WorkinprogressDo notcite
+parameters le(t) and li(t) to represent the pandemic-related rise in non-work
+utility (and work disutility). These changes affect the economy starting at
+t = 0 . Agents did not anticipate them, so their sj(− 1) were chosen for the
+old environment; effectively, the shock causes a surprise discrete change in
+incentives at t = 0 . We assume the shock’s end date is known: the agents
+understand that after T periods, rt and lj(t) will revert to normal. In our cal-
+ibration, T corresponds to the duration of the main supplement (e.g. T = 26
+weeks for the April–Sept 2020 period of the AU$550/fortnight supplement).
+For simplicity, we treat the entire shock as one phase of length T after which
+conditions fully normalise.
+3. Backward solution of value functions ( t = T, T − 1, . . . , 0): Given the
+anticipated end of the shock at t = T , we solve the workers’ dynamic pro-
+gramming problem backwards over t = 0 to T . At the terminal time t = T ,
+the economy has returned to the steady-state environment; thus, we set Uj(T )
+and Wj(T ) equal to the steady-state values corresponding to the baseline pa-
+rameters (this is the terminal condition for the backward induction). We then
+iterate backwards: for each t = T − 1, T − 2, . . . , 0, we use the Bellman equations
+(11)–(12) to compute Uj(t) and Wj(t) for each group j, given the next-period
+values Uj(t + 1), W j(t + 1). In this backward recursion, the time- t parameters
+bj(t), l j(t), w (t), µ (t), etc. are treated as known (for 0 ≤ t < T , these reflect
+the shock values; for t ≥ T , baseline values). At each step we also solve the
+FOC ( 13) to obtain the optimal search effort sj(t) for each group. Because
+the shock is anticipated in this backward step, the value functions incorpo-
+rate forward-looking behaviour during 0 ≤ t < T (for example, as the end of
+the supplement approaches, agents know benefits will drop and may increase
+search effort in advance).
+4. Forward simulation of transition path ( t = 0 to t = T ): Using the deci-
+sion rules solved above, we next simulate the evolution of unemployment and
+employment through the shock period. We start from the initial unemploy-
+51
+
+===== PAGE 52 =====
+WorkinprogressDo notcite
+ment stocks ue(0), u i(0) at t = 0 (pre-shock steady state values). Then for
+each period t = 0 , 1, 2, . . . , T − 1, we update unemployment using the law of
+motion ( 16). In particular, given uj(t) and the job-finding probabilities pj(t)
+(which are determined by sj(t) and θ(t) from our backward solution), we com-
+pute uj(t + 1) for each group. Meanwhile, we solve for vacancy posting (market
+tightness) in each period using the free-entry condition described above, ensur-
+ing consistency between pj(t) and q(t). Stepping forward in this manner yields
+the transition path of the economy from t = 0 up to t = T and beyond. After
+t = T , the shock has ended; in the absence of further shocks, the economy will
+gradually converge back to the original steady state. In our simulations we
+confirm that uj(t) and other variables indeed trend back toward u∗
+j for t > T .
+5. Calibration and key assumptions: We calibrate the model’s parameters
+to match salient moments from the data, both before and during the COVID
+shock. In the pre-shock steady state, we choose parameters (such as δ, κ, γ,
+and baseline lj values) so that the model reproduces the observed average job-
+finding rates and unemployment rates for eligible and ineligible workers prior
+to the supplement. During the shock, we calibrate the size of the gamma in-
+crease (i.e. the pandemic-related utility shock) such that the model generates
+a decline in job-finding consistent with our empirical estimates. We also set
+the increase in be to match the actual policy (the doubling of benefits), and we
+allow for a temporary drop in matching eﬀiciency µ(t) to capture the overall
+deterioration of labour market conditions during the pandemic. The myopia
+assumption (no anticipation of the shock) is built into our solution as described
+above; this reflects the reality that the pandemic’s onset was sudden and unex-
+pected. Meanwhile, assuming agents know the shock duration T once it begins
+is an approximation that allows them to gradually adjust their behaviour as the
+end of the supplement approaches (in reality, policymakers extended and ta-
+pered the supplement over time, but we impose a fixed horizon for tractability).
+Finally, by keeping wages fixed (no bargaining), we attribute all labour mar-
+ket adjustment to quantities (employment, unemployment, and search effort)
+52
+
+===== PAGE 53 =====
+WorkinprogressDo notcite
+rather than price adjustments. This captures the short-run rigidity observed
+in wages and focuses our analysis on the labour supply channel.
+As a result of the above simulation, we obtain the dynamic paths for each group’s
+job-finding rate, unemployment rate, and other variables through the shock.
+7.6 Structural Model Results
+This section presents the calibration outcomes and simulation results from the search-
+and-matching model with dual agent types and variable leisure shocks. The model
+parameters and calibration targets are summarised in Table 11. Calibration perfor-
+mance is reported in Table 12, and the simulation outcomes are provided in Table 13.
+7.6.1 Model parameters
+Table 11 lists the key parameter values for the baseline scenario, alongside their
+economic interpretations. The parameters include discount and separation rates,
+elasticities, replacement rates, and leisure valuations. The COVID-19 shock is mod-
+elled as a temporary change in replacement rates, leisure values, matched eﬀiciency,
+and job search costs over a defined shock period.
+Table 11: Baseline Parameter Values and Descriptions
+Parameter Value Description
+β 0.99 Discount factor (weekly)
+δ 0.01 Exogenous Separation rate (weekly)
+pe 0.5 Share of population receiving benefits
+α 0.5 Matching elasticity
+wge 0.55 Exogenous wage (output, y, normalised to 1)
+bpre
+e 0.28 Replacement rate (pre-COVID)
+bpost
+e 0.56 Replacement rate (during COVID)
+lpre
+u,e 0.1 Leisure value for recipients (pre-COVID, % wage)
+lpost
+u,e 0.2 Leisure value for recipients (during COVID, % wage)
+cvac 1 Vacancy posting cost (normalised)
+53
+
+===== PAGE 54 =====
+WorkinprogressDo notcite
+The value of leisure for non-recipients is held constant at 0. 1 before and during the
+shock period. As the COVID health shock is both represented through a higher value
+of leisure and an increase in job search costs, the shock to recipients leisure reflects
+a relatively larger shock to our recipient group (i.e. due to greater risk aversion, or
+greater non-work options). This reflects a key mechanism that may bias our estimate
+of the labour supply result, hence understanding the size of the relative leisure effect
+that would explain the empirical finding helps understand this bias.
+7.6.2 Calibration results
+The model is calibrated to match pre-COVID and shock-period job-finding rates
+(JFR) for recipients ( fe) and non-recipients ( fi). Table 12 shows the calibrated
+values of γ (search effort cost parameter) and µ (matching eﬀiciency) for the pre-
+COVID and COVID periods, as well as the residual norm.
+Table 12: Calibration Results: Pre-COVID and COVID Periods
+Period γ µ Residual Norm
+Pre-COVID 0.6077 0.0851 0.0071
+COVID Shock 0.9780 0.0899 0.0000
+The pre-COVID calibration fits the observed JFRs with a small residual norm,
+while the dynamic calibration ensures that the model replicates the average observed
+JFRs during the shock period.
+The calibration suggests that, in order to match the changes in job-finding rates
+observed in the data, it appears jobs search costs rose considerably during the COVID
+period, while overall match eﬀiciency was largely unchanged.
+The matching of job-finding rates, and implied surpluses ( W − U ), are summarised
+in Table 13. The pre-COVID period shows higher JFRs for both groups, while the
+shock period leads to a notable decline in fe (3.77%) and fi (8.46%). Post-COVID,
+the economy gradually returns to the pre-COVID steady state.
+54
+
+===== PAGE 55 =====
+WorkinprogressDo notcite
+Table 13: Simulation Results: A verage Job-Finding Rates and Surpluses (with Cal-
+ibration Targets)
+Period fi (%) Target fi (%) fe (%) Target fe (%) W − Ui W − Ue
+Pre-shock 11.75 10.00 8.09 8.66 2.7447 1.8908
+Shock 8.19 8.21 2.79 3.12 2.5635 0.8732
+Post-shock 11.75 10.00 8.09 8.66 2.7447 1.8908
+7.6.3 Simulation results
+Given the above model we can simulate counterfactual paths where policy, or eco-
+nomic shocks, differed. In this instance the main question is how much an increase
+in benefit payments would have reduced job-finding rates for recipients absent the
+COVID shock.
+The empirical approach earlier reflects a view that we can look at the change
+in the difference between the two job-finding rates to approximate the contribution
+of benefits – due to both groups experiencing the same set of health and labour
+market shocks. This difference is reflected in the structural model as the change in
+the difference between the average job-finding rates for the two groups.
+However, the true difference that is attributable to the policy change would be
+the difference in the absence of the COVID shock. The structural approach allows
+us to keep other factors unchanged (the value of leisure, cost of search, and match
+eﬀiciency) and isolate the effect of benefit payments.
+To understand this we compare a full shock , which reflects all the shocks in
+the COVID period, to a benefit only shock where all parameters are held at their
+pre-COVID level except for the benefit payment.
+Our main scenario which assumes a differential non-work leisure benefit for eli-
+gible recipients provides the following results.
+This tells us that the change in job-finding rates would have been larger in the
+circumstance where only the benefit rate increased. Specifically, the full shock sug-
+55
+
+===== PAGE 56 =====
+WorkinprogressDo notcite
+Table 14: Change in Recipient vs Non-Recipient Job-Finding Rate Gap
+Period Full Shock Gap ( fe − fi) Benefit Only Gap ( fe − fi) Bias
+Pre-shock -3.66% -3.66% 0.00%
+Shock -5.40% -6.65% -1.25%
+Post-shock -3.66% -3.66% 0.00%
+gests a 1.74ppt decline in job-finding rates during COVID based on our empirical
+approach above – but the benefit only scenario suggests a 2.99pt decline. As a result,
+our empirical approach understates the labour supply elasticity from an increase in
+benefit payments by about 78%.
+At face value this seems counter-intuitive, as COVID involved more shocks that
+will have each reduced labour supply. Furthermore, as the leisure shock was larger
+from recipients this would suggest a smaller labour supply response.
+However, the nature of the COVID shock also influences the way search effort
+translates into job-finding behaviour. As a result, the COVID shock can in turn
+reduce the labour supply effect associated with the benefit.
+As will be shown later, the nature and size of this bias will depend on the degree
+of difference in how the health shock impacts on both groups.
+To further understand these results we can consider the full transition path as-
+sociated with the shock, both in terms of job-finding rates and implied search effort.
+56
+
+===== PAGE 57 =====
+WorkinprogressDo notcite
+Figure 15: Job-Finding rate scenarios
+Figure 16: Job-Finding rate difference-in-difference (SAM)
+Even with anticipation, the job-finding rate trajectories are relatively flat during
+57
+
+===== PAGE 58 =====
+WorkinprogressDo notcite
+Figure 17: Unemployment rate projections
+the COVID period – due to the more limited job opportunities and expensive search
+during that period. This mirrors the relatively flat job-finding rate trends observed
+in the empirical exercise.
+However, this also suggests that the estimated effect should start to close once the
+payment is expected to be reduced. In our current empirical estimates no such closure
+occurs during 2020, which may reflect individuals anticipating a longer pandemic
+with continuing government support. Further empirical analysis of 2021 could help
+to identify if this was the case.
+7.6.4 Sensitivity to differential leisure
+A reason why we observe differential labour supply responses among New Zealanders
+and Australian’s could be differential preferences for work safety after the shock. This
+may be due to innate risk aversion, more limited extended family networks to put
+at risk, or selection towards individuals who have a preference for work through
+migration.
+58
+
+===== PAGE 59 =====
+WorkinprogressDo notcite
+Importantly, these differences may have been exacerbated by the COVID pan-
+demic and would be unobservable - undermining identification through matching.
+We can use the structural approach to understand more about how much this
+differential preference for non-work during COVID mattered. The main results shown
+above applied a 10% of wage non-work premium for eligible individuals. However,
+we can also recalibrate the model to assume that the relative premium is zero or
+20%. These results are given below.
+Figure 18: Unemployment rate projections
+Surprisingly, our estimate of the benefit effect increases as the differential value
+of leisure rises – even though the proportion of the increase in leisure value that is
+due to a higher benefit is lower as the relative value of leisure rises.
+However, this is driven by the combination of two factors.
+• At 20% of wages the income replacement rate is 76% when outside of employ-
+ment, compared to 66% in the prior case. As a result, the value associated
+with a new match declines relatively sharply as leisure rises.
+59
+
+===== PAGE 60 =====
+WorkinprogressDo notcite
+• The calibrated search costs rise substantially in order to match the calibration
+targets, sharply curtailing search effort.
+Further work on the sensitivity of these results to alternative specifications will
+be important in teasing out the full role of leisure shocks in determining job-finding
+rate outcomes.
+Altogether, this does suggest the the empirical estimates given in this paper
+provide relatively conservative labour supply estimates from a large benefit rate
+change.
+60
+
+===== PAGE 61 =====
+WorkinprogressDo notcite
+8 Conclusion
+This study provides new evidence on how a large, temporary increase in unem-
+ployment benefits influenced labour market behaviour during the COVID-19 pan-
+demic, leveraging New Zealanders residing in Australia as a control group to isolate
+the effects of increased unemployment benefits on job-finding and separation rates.
+Our findings indicate a significant 19% decline in job-finding rates and a 64% in-
+crease in separation rates among Australians, emphasising the disincentive effects of
+higher benefit levels. These results are consistent with international evidence and
+underscore the policy trade-offs between providing financial support and maintaining
+labour market incentives.
+Structural analysis confirms these results – and suggests that higher benefit pay-
+ments would tend to have a larger labour supply effect in normal economic circum-
+stances.
+However, importantly both approaches show that most of this decline in job-
+finding during COVID was not due to the policy alone. By accounting for pandemic-
+specific factors, such as elevated health risks and limited job opportunities. The
+search-and-matching model suggests that the pure policy effect was smaller (between
+1.7 and 3ppts) than the 5ppt drop in job-finding rates, with the majority of the impact
+stemming from broader pandemic conditions. This highlights the value of structural
+models in distinguishing policy effects from confounding shocks – though such models
+necessarily rest on assumptions and cannot fully disentangle all behavioural drivers
+without richer data.
+These results are consistent with the broader analysis of the behavioural im-
+plications of COVID supports in Australia. ( Sainsbury et al. , 2022) estimate the
+labour supply responses to the early superannuation withdrawal scheme, finding
+larger labour supply effects. Both estimates suggest that, even during a period of
+restricted labour demand like the COVID pandemic, temporary changes to benefit
+support systems can influence labour market behaviour.
+61
+
+===== PAGE 62 =====
+WorkinprogressDo notcite
+From a policy perspective, the findings reveal a clear trade-off. While the Sup-
+plement provided essential income support during a public health emergency, it also
+reduced labour market attachment without delivering clear gains in job match qual-
+ity or future earnings. However, the fact that there were labour market responses
+during a pandemic does not suggest the policies were poorly designed or poorly tar-
+geted. In fact, higher levels of income support that enable individuals to opt out
+of work may be desirable when faced with a pandemic - given that COVID is a
+communicable disease and a reduction in human contact mitigates it’s transmission.
+Crucially, the disincentive effects of generous benefits appear to have been muted,
+and perhaps socially beneficial in the pandemic context, where reduced workplace
+contact may have supported public health goals. These results imply that optimal
+unemployment insurance design may vary with context: in normal times, such large
+drops in job-finding would be undesirable; in a pandemic, they may be welfare-
+enhancing.
+Overall, our findings demonstrate that even in periods of weak labour demand,
+unemployment benefits influence behaviour. But the context in which policies are
+introduced fundamentally shapes both their costs and benefits. Well-targeted, con-
+ditional, and time-sensitive benefit expansions may help strike the right balance
+between protection and incentives in future crises.
+62
+
+===== PAGE 63 =====
+WorkinprogressDo notcite
+References
+Jeff Borland. Labour market snapshot #71: Would a rise in jobseeker affect incen-
+tives for paid work?, November 2020.
+Jeff Borland and Yi-Ping Tseng. Does a Minimum Job Search Requirement Re-
+duce Time on Unemployment Payments? Evidence from the Jobseeker Diary in
+Australia. ILR Review , 60(3):357–378, April 2007.
+Natasha Bradshaw, Nathan Deutscher, and Lachlan Vass. The employment effects
+of JobKeeper receipt. Technical Report 2023-04, Australian Treasury, December
+2023.
+Robert Breunig, Deborah A. Cobb-Clark, Yvonne Dunlop, and Marion Terrill. Assist-
+ing the Long-Term Unemployed: Results from a Randomised Trial. The Economic
+Record, 79(244):84–102, March 2003.
+Pedro Brinca, Joao B. Duarte, and Miguel Faria-e Castro. Measuring labor supply
+and demand shocks during covid-19. European Economic Review , 139:103901,
+2021. doi: 10.1016/j.euroecorev.2021.103901. URL https://doi.org/10.1016/
+j.euroecorev.2021.1.
+Erin Clarke and Matt Nolan. Income Support Gaps: When JobSeekers don’t seek
+jobs. 2023(6), 2023.
+Commonwealth of Australia. Constitution act, 1900. s 6.
+Department of Home Affairs. Freedom of Information Request: F A 21/11/01225,
+Document Released. Technical report, Australian Government, Department of
+Home Affairs, 2021. Accessed: 2024-06-15.
+Peter A. Diamond. Aggregate Demand Management in Search Equilibrium. The
+Journal of Political Economy , 90(5):881–894, 1982.
+Peter Ganong, Fiona Greig, Pascal Noel, Daniel M. Sullivan, and Joseph Vavra.
+Spending and job-finding impacts of expanded unemployment benefits: Evidence
+63
+
+===== PAGE 64 =====
+WorkinprogressDo notcite
+from administrative micro data. American Economic Review , 114(9):2898–2939,
+2024.
+Zachary Hayward, Matt Nolan, and Petr Sedláček. Voluntary Unemployment.
+(20068), 2025. URL https://cepr.org/publications/dp20068. CEPR Discus-
+sion Paper No. 20068.
+Ioana Marinescu and Dimitris Skandalis. Unemployment Insurance and Job Search
+Behavior. Quarterly Journal of Economics , 136:887–931, 2021.
+Ioana Marinescu, Dimitris Skandalis, and Daniel Zhao. The impact of the Fed-
+eral Pandemic Unemployment Compensation on job search and vacancy creation.
+Journal of Public Economics , 200:104471, 2021.
+John J. McCall. Economics of Information and Job Search. The Quarterly Journal
+of Economics, 84(1):113–126, 1970.
+Grant R McDermott and Benjamin Hansen. Labor reallocation and remote work dur-
+ing covid-19: Real-time evidence from github. Technical report, National Bureau
+of Economic Research, 2021.
+Claudio Michelacci and Hernán Ruffo. Optimal life cycle unemployment insurance.
+American Economic Review, 105(2):816–859, 2015.
+Dale T. Mortensen. Job Search, the Duration of Unemployment, and the Phillips
+Curve. The American Economic Review , 60(5):847–862, 1970.
+Christopher A. Pissarides. Equilibrium Unemployment Theory . MIT Press, Cam-
+bridge, MA, 2nd edition edition, 2000. ISBN 9780262161879.
+Tristram Sainsbury, Timothy Watson, and Robert V Breunig. COVID-19 private
+pension withdrawals and unemployment tenures. IZA Discussion Papers , 2022.
+Johannes F Schmieder and Till Von Wachter. The effects of unemployment insurance
+benefits: New evidence and interpretation. Annual Review of Economics , 8(1):
+547–581, 2016.
+64
+
+===== PAGE 65 =====
+WorkinprogressDo notcite
+Robert Shimer. Search intensity. Mimeo, 2004.
+65
+
+===== PAGE 66 =====
+WorkinprogressDo notcite
+A Appendix
+A.1 Balance Statistics
+Figure A1: Age Distribution
+(a) JSP dataset*
+ (b) Total matched*
+66
+
+===== PAGE 67 =====
+WorkinprogressDo notcite
+Figure A2: Age Distribution by sample*
+Figure A3: Industry Distribution
+(a) JSP dataset*
+ (b) Total matched*
+67
+
+===== PAGE 68 =====
+WorkinprogressDo notcite
+Figure A4: Industry Distribution by sample*
+̲
+Figure A5: Occupation Distribution
+(a) JSP dataset*
+ (b) Total matched*
+68
+
+===== PAGE 69 =====
+WorkinprogressDo notcite
+Figure A6: Occupation Distribution by sample*
+Figure A7: Region Distribution
+(a) JSP dataset*
+ (b) Total matched*
+69
+
+===== PAGE 70 =====
+WorkinprogressDo notcite
+Figure A8: Region Distribution by sample*
+Figure A9: Prior Income Distribution
+(a) JSP dataset*
+ (b) Total matched*
+70
+
+===== PAGE 71 =====
+WorkinprogressDo notcite
+Figure A10: Spouse Income Distribution
+(a) JSP dataset*
+ (b) Total matched*
+71
