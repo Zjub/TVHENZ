@@ -1,0 +1,2 @@
+model,model_form,model_variant,no_intercept,include_mean,reference_age_group,level_features,model_features,outcome,p,d,q,aic,sigma2,n_estimation_years,excluded_years,cointegration_test,cointegration_p_value,cointegration_conclusion
+ARIMAX,diff,diff_intercept_ref_35_54,FALSE,TRUE,35_54,"0_14, 15_34, 55_64, 65p, tot, rp_g, unemp","d_0_14, d_15_34, d_55_64, d_65p, d_tot, d_rp_g, d_unemp",d_gov_gdp,2,0,2,-298.412384278958,2.07967230996974e-05,42,"2020, 2021",Engle-Granger residual ADF,0.285602963666514,no strong evidence of cointegration
