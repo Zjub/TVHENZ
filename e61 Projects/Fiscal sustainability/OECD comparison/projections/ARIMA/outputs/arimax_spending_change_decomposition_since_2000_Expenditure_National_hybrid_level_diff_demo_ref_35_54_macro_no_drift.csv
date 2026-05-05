@@ -1,0 +1,415 @@
+year,model_series,includes_constant,driver,contribution,driver_label
+2000,Fitted (in-sample),FALSE,demographic_level,0,Demographic level component
+2001,Fitted (in-sample),FALSE,demographic_level,-0.00161128736992061,Demographic level component
+2002,Fitted (in-sample),FALSE,demographic_level,-0.00350338474968098,Demographic level component
+2003,Fitted (in-sample),FALSE,demographic_level,-0.00489384113518515,Demographic level component
+2004,Fitted (in-sample),FALSE,demographic_level,-0.00627602981942682,Demographic level component
+2005,Fitted (in-sample),FALSE,demographic_level,-0.00735777297386003,Demographic level component
+2006,Fitted (in-sample),FALSE,demographic_level,-0.00862556315234359,Demographic level component
+2007,Fitted (in-sample),FALSE,demographic_level,-0.00859294195707955,Demographic level component
+2008,Fitted (in-sample),FALSE,demographic_level,-0.00764031692125,Demographic level component
+2009,Fitted (in-sample),FALSE,demographic_level,-0.00491082977443042,Demographic level component
+2010,Fitted (in-sample),FALSE,demographic_level,-0.00336211820053128,Demographic level component
+2011,Fitted (in-sample),FALSE,demographic_level,-0.00221270898420012,Demographic level component
+2012,Fitted (in-sample),FALSE,demographic_level,0.00111736748896007,Demographic level component
+2013,Fitted (in-sample),FALSE,demographic_level,0.00358910059590262,Demographic level component
+2014,Fitted (in-sample),FALSE,demographic_level,0.00549733385511359,Demographic level component
+2015,Fitted (in-sample),FALSE,demographic_level,0.0073077501461421,Demographic level component
+2016,Fitted (in-sample),FALSE,demographic_level,0.00869134307421521,Demographic level component
+2017,Fitted (in-sample),FALSE,demographic_level,0.0097476169630385,Demographic level component
+2018,Fitted (in-sample),FALSE,demographic_level,0.0107850611500032,Demographic level component
+2019,Fitted (in-sample),FALSE,demographic_level,0.0116733903838738,Demographic level component
+2023,Fitted (in-sample),FALSE,demographic_level,0.0197364006953497,Demographic level component
+2024,Fitted (in-sample),FALSE,demographic_level,0.0251679802384918,Demographic level component
+2025,Fitted (in-sample),FALSE,demographic_level,0.0287510189287032,Demographic level component
+2026,Projection (base),FALSE,demographic_level,0.0307765247307132,Demographic level component
+2027,Projection (base),FALSE,demographic_level,0.0337548864706243,Demographic level component
+2028,Projection (base),FALSE,demographic_level,0.036924847268561,Demographic level component
+2029,Projection (base),FALSE,demographic_level,0.0397340607572901,Demographic level component
+2030,Projection (base),FALSE,demographic_level,0.0418828430405633,Demographic level component
+2031,Projection (base),FALSE,demographic_level,0.0440761462963777,Demographic level component
+2032,Projection (base),FALSE,demographic_level,0.0460227268198301,Demographic level component
+2033,Projection (base),FALSE,demographic_level,0.04801896436371,Demographic level component
+2034,Projection (base),FALSE,demographic_level,0.0500970916298291,Demographic level component
+2035,Projection (base),FALSE,demographic_level,0.0515217409216307,Demographic level component
+2036,Projection (base),FALSE,demographic_level,0.0535289177032123,Demographic level component
+2037,Projection (base),FALSE,demographic_level,0.0554730936104826,Demographic level component
+2038,Projection (base),FALSE,demographic_level,0.056040504062211,Demographic level component
+2039,Projection (base),FALSE,demographic_level,0.0558089318891357,Demographic level component
+2040,Projection (base),FALSE,demographic_level,0.0548811896994497,Demographic level component
+2041,Projection (base),FALSE,demographic_level,0.0533664911925456,Demographic level component
+2042,Projection (base),FALSE,demographic_level,0.0514262535065542,Demographic level component
+2043,Projection (base),FALSE,demographic_level,0.0493853460929732,Demographic level component
+2044,Projection (base),FALSE,demographic_level,0.0475904807906662,Demographic level component
+2045,Projection (base),FALSE,demographic_level,0.045881040425624,Demographic level component
+2046,Projection (base),FALSE,demographic_level,0.0449086367393388,Demographic level component
+2047,Projection (base),FALSE,demographic_level,0.0443544866687451,Demographic level component
+2048,Projection (base),FALSE,demographic_level,0.0442720834853716,Demographic level component
+2049,Projection (base),FALSE,demographic_level,0.0443302546136186,Demographic level component
+2050,Projection (base),FALSE,demographic_level,0.0446201299438145,Demographic level component
+2051,Projection (base),FALSE,demographic_level,0.045111281770416,Demographic level component
+2052,Projection (base),FALSE,demographic_level,0.0459206458592853,Demographic level component
+2053,Projection (base),FALSE,demographic_level,0.0470648183174458,Demographic level component
+2054,Projection (base),FALSE,demographic_level,0.0483803846211153,Demographic level component
+2055,Projection (base),FALSE,demographic_level,0.0499313425211529,Demographic level component
+2056,Projection (base),FALSE,demographic_level,0.0514698531812272,Demographic level component
+2057,Projection (base),FALSE,demographic_level,0.0528064086093224,Demographic level component
+2058,Projection (base),FALSE,demographic_level,0.054279661597508,Demographic level component
+2059,Projection (base),FALSE,demographic_level,0.055574846047069,Demographic level component
+2060,Projection (base),FALSE,demographic_level,0.0567717968449309,Demographic level component
+2061,Projection (base),FALSE,demographic_level,0.0575068954497873,Demographic level component
+2062,Projection (base),FALSE,demographic_level,0.057799645930363,Demographic level component
+2063,Projection (base),FALSE,demographic_level,0.0578121248799813,Demographic level component
+2064,Projection (base),FALSE,demographic_level,0.057902799050638,Demographic level component
+2065,Projection (base),FALSE,demographic_level,0.058277408294923,Demographic level component
+2066,Projection (base),FALSE,demographic_level,0.0586215242640938,Demographic level component
+2067,Projection (base),FALSE,demographic_level,0.0585705727250502,Demographic level component
+2068,Projection (base),FALSE,demographic_level,0.0585976639810182,Demographic level component
+2069,Projection (base),FALSE,demographic_level,0.0589587380335273,Demographic level component
+2070,Projection (base),FALSE,demographic_level,0.0595676975735536,Demographic level component
+2071,Projection (base),FALSE,demographic_level,0.0603603043928929,Demographic level component
+2000,Fitted (in-sample),FALSE,d_tot,0,Change in terms of trade
+2001,Fitted (in-sample),FALSE,d_tot,0.000588615735675745,Change in terms of trade
+2002,Fitted (in-sample),FALSE,d_tot,0.00101536214404066,Change in terms of trade
+2003,Fitted (in-sample),FALSE,d_tot,0.00147153933918936,Change in terms of trade
+2004,Fitted (in-sample),FALSE,d_tot,0.00373770992154097,Change in terms of trade
+2005,Fitted (in-sample),FALSE,d_tot,0.00707810422150082,Change in terms of trade
+2006,Fitted (in-sample),FALSE,d_tot,0.0110218296505283,Change in terms of trade
+2007,Fitted (in-sample),FALSE,d_tot,0.0140090545090827,Change in terms of trade
+2008,Fitted (in-sample),FALSE,d_tot,0.0164812405989208,Change in terms of trade
+2009,Fitted (in-sample),FALSE,d_tot,0.0198363502922726,Change in terms of trade
+2010,Fitted (in-sample),FALSE,d_tot,0.0179527799381102,Change in terms of trade
+2011,Fitted (in-sample),FALSE,d_tot,0.027944532051206,Change in terms of trade
+2012,Fitted (in-sample),FALSE,d_tot,0.0280622551983411,Change in terms of trade
+2013,Fitted (in-sample),FALSE,d_tot,0.0226617058235162,Change in terms of trade
+2014,Fitted (in-sample),FALSE,d_tot,0.0207339892891781,Change in terms of trade
+2015,Fitted (in-sample),FALSE,d_tot,0.0153775860945288,Change in terms of trade
+2016,Fitted (in-sample),FALSE,d_tot,0.0108452449298256,Change in terms of trade
+2017,Fitted (in-sample),FALSE,d_tot,0.0166431099262317,Change in terms of trade
+2018,Fitted (in-sample),FALSE,d_tot,0.017570179709921,Change in terms of trade
+2019,Fitted (in-sample),FALSE,d_tot,0.0202925274874213,Change in terms of trade
+2023,Fitted (in-sample),FALSE,d_tot,0.0202042351270699,Change in terms of trade
+2024,Fitted (in-sample),FALSE,d_tot,0.0162605096980424,Change in terms of trade
+2025,Fitted (in-sample),FALSE,d_tot,0.01383246978838,Change in terms of trade
+2026,Projection (base),FALSE,d_tot,0.00798960452899714,Change in terms of trade
+2027,Projection (base),FALSE,d_tot,0.00798960452899714,Change in terms of trade
+2028,Projection (base),FALSE,d_tot,0.00764564054811463,Change in terms of trade
+2029,Projection (base),FALSE,d_tot,0.00715770307237701,Change in terms of trade
+2030,Projection (base),FALSE,d_tot,0.00667464497139676,Change in terms of trade
+2031,Projection (base),FALSE,d_tot,0.00619641745142632,Change in terms of trade
+2032,Projection (base),FALSE,d_tot,0.00572297220665558,Change in terms of trade
+2033,Projection (base),FALSE,d_tot,0.00525426141433255,Change in terms of trade
+2034,Projection (base),FALSE,d_tot,0.00479023772993276,Change in terms of trade
+2035,Projection (base),FALSE,d_tot,0.00433085428237695,Change in terms of trade
+2036,Projection (base),FALSE,d_tot,0.0038760646692967,Change in terms of trade
+2037,Projection (base),FALSE,d_tot,0.00342582295234726,Change in terms of trade
+2038,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2039,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2040,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2041,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2042,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2043,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2044,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2045,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2046,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2047,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2048,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2049,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2050,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2051,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2052,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2053,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2054,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2055,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2056,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2057,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2058,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2059,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2060,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2061,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2062,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2063,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2064,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2065,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2066,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2067,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2068,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2069,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2070,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2071,Projection (base),FALSE,d_tot,0.00298008365256731,Change in terms of trade
+2000,Fitted (in-sample),FALSE,d_rp_g,0,Change in relative govt prices
+2001,Fitted (in-sample),FALSE,d_rp_g,-0.000114244720230205,Change in relative govt prices
+2002,Fitted (in-sample),FALSE,d_rp_g,-0.000976396793817873,Change in relative govt prices
+2003,Fitted (in-sample),FALSE,d_rp_g,0.000883769240609286,Change in relative govt prices
+2004,Fitted (in-sample),FALSE,d_rp_g,-0.0022785164318775,Change in relative govt prices
+2005,Fitted (in-sample),FALSE,d_rp_g,0.000131573807619482,Change in relative govt prices
+2006,Fitted (in-sample),FALSE,d_rp_g,-0.00297509920232631,Change in relative govt prices
+2007,Fitted (in-sample),FALSE,d_rp_g,-0.00315872043375626,Change in relative govt prices
+2008,Fitted (in-sample),FALSE,d_rp_g,-0.00304434199927783,Change in relative govt prices
+2009,Fitted (in-sample),FALSE,d_rp_g,-0.00459353556177044,Change in relative govt prices
+2010,Fitted (in-sample),FALSE,d_rp_g,0.0056979921174868,Change in relative govt prices
+2011,Fitted (in-sample),FALSE,d_rp_g,-0.000240150740461811,Change in relative govt prices
+2012,Fitted (in-sample),FALSE,d_rp_g,0.00564827679936411,Change in relative govt prices
+2013,Fitted (in-sample),FALSE,d_rp_g,0.0116691649028364,Change in relative govt prices
+2014,Fitted (in-sample),FALSE,d_rp_g,0.0135681783074625,Change in relative govt prices
+2015,Fitted (in-sample),FALSE,d_rp_g,0.0223233896005947,Change in relative govt prices
+2016,Fitted (in-sample),FALSE,d_rp_g,0.0304113180202069,Change in relative govt prices
+2017,Fitted (in-sample),FALSE,d_rp_g,0.0198620667977843,Change in relative govt prices
+2018,Fitted (in-sample),FALSE,d_rp_g,0.0184840009242831,Change in relative govt prices
+2019,Fitted (in-sample),FALSE,d_rp_g,0.0147216751547105,Change in relative govt prices
+2023,Fitted (in-sample),FALSE,d_rp_g,0.00866357550240773,Change in relative govt prices
+2024,Fitted (in-sample),FALSE,d_rp_g,0.0160242909093496,Change in relative govt prices
+2025,Fitted (in-sample),FALSE,d_rp_g,0.0198957748450661,Change in relative govt prices
+2026,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2027,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2028,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2029,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2030,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2031,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2032,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2033,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2034,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2035,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2036,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2037,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2038,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2039,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2040,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2041,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2042,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2043,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2044,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2045,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2046,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2047,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2048,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2049,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2050,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2051,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2052,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2053,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2054,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2055,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2056,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2057,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2058,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2059,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2060,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2061,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2062,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2063,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2064,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2065,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2066,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2067,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2068,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2069,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2070,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2071,Projection (base),FALSE,d_rp_g,0.0168722242104402,Change in relative govt prices
+2000,Fitted (in-sample),FALSE,d_unemp,0,Change in unemployment
+2001,Fitted (in-sample),FALSE,d_unemp,-0.00214335157531383,Change in unemployment
+2002,Fitted (in-sample),FALSE,d_unemp,0.000841850238372865,Change in unemployment
+2003,Fitted (in-sample),FALSE,d_unemp,-0.00386404593775042,Change in unemployment
+2004,Fitted (in-sample),FALSE,d_unemp,-0.0078091471780348,Change in unemployment
+2005,Fitted (in-sample),FALSE,d_unemp,-0.0114953681914614,Change in unemployment
+2006,Fitted (in-sample),FALSE,d_unemp,-0.0132955978249774,Change in unemployment
+2007,Fitted (in-sample),FALSE,d_unemp,-0.0169257326961467,Change in unemployment
+2008,Fitted (in-sample),FALSE,d_unemp,-0.019175140733518,Change in unemployment
+2009,Fitted (in-sample),FALSE,d_unemp,-0.0137114604414557,Change in unemployment
+2010,Fitted (in-sample),FALSE,d_unemp,-0.00927705414501527,Change in unemployment
+2011,Fitted (in-sample),FALSE,d_unemp,-0.0127359529115898,Change in unemployment
+2012,Fitted (in-sample),FALSE,d_unemp,-0.0116975628279843,Change in unemployment
+2013,Fitted (in-sample),FALSE,d_unemp,-0.00950213066320556,Change in unemployment
+2014,Fitted (in-sample),FALSE,d_unemp,-0.00618328560901966,Change in unemployment
+2015,Fitted (in-sample),FALSE,d_unemp,-0.00367117572044272,Change in unemployment
+2016,Fitted (in-sample),FALSE,d_unemp,-0.00598147570293834,Change in unemployment
+2017,Fitted (in-sample),FALSE,d_unemp,-0.00740271990253103,Change in unemployment
+2018,Fitted (in-sample),FALSE,d_unemp,-0.00897789600891228,Change in unemployment
+2019,Fitted (in-sample),FALSE,d_unemp,-0.0120320494772063,Change in unemployment
+2023,Fitted (in-sample),FALSE,d_unemp,-0.0180304406139907,Change in unemployment
+2024,Fitted (in-sample),FALSE,d_unemp,-0.0154928131410689,Change in unemployment
+2025,Fitted (in-sample),FALSE,d_unemp,-0.0137447719936383,Change in unemployment
+2026,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2027,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2028,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2029,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2030,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2031,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2032,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2033,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2034,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2035,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2036,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2037,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2038,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2039,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2040,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2041,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2042,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2043,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2044,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2045,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2046,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2047,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2048,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2049,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2050,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2051,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2052,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2053,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2054,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2055,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2056,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2057,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2058,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2059,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2060,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2061,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2062,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2063,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2064,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2065,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2066,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2067,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2068,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2069,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2070,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2071,Projection (base),FALSE,d_unemp,-0.0104572070772573,Change in unemployment
+2000,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2001,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2002,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2003,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2004,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2005,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2006,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2007,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2008,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2009,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2010,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2011,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2012,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2013,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2014,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2015,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2016,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2017,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2018,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2019,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2023,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2024,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2025,Fitted (in-sample),FALSE,constant_component,0,Macro drift
+2026,Projection (base),FALSE,constant_component,0,Macro drift
+2027,Projection (base),FALSE,constant_component,0,Macro drift
+2028,Projection (base),FALSE,constant_component,0,Macro drift
+2029,Projection (base),FALSE,constant_component,0,Macro drift
+2030,Projection (base),FALSE,constant_component,0,Macro drift
+2031,Projection (base),FALSE,constant_component,0,Macro drift
+2032,Projection (base),FALSE,constant_component,0,Macro drift
+2033,Projection (base),FALSE,constant_component,0,Macro drift
+2034,Projection (base),FALSE,constant_component,0,Macro drift
+2035,Projection (base),FALSE,constant_component,0,Macro drift
+2036,Projection (base),FALSE,constant_component,0,Macro drift
+2037,Projection (base),FALSE,constant_component,0,Macro drift
+2038,Projection (base),FALSE,constant_component,0,Macro drift
+2039,Projection (base),FALSE,constant_component,0,Macro drift
+2040,Projection (base),FALSE,constant_component,0,Macro drift
+2041,Projection (base),FALSE,constant_component,0,Macro drift
+2042,Projection (base),FALSE,constant_component,0,Macro drift
+2043,Projection (base),FALSE,constant_component,0,Macro drift
+2044,Projection (base),FALSE,constant_component,0,Macro drift
+2045,Projection (base),FALSE,constant_component,0,Macro drift
+2046,Projection (base),FALSE,constant_component,0,Macro drift
+2047,Projection (base),FALSE,constant_component,0,Macro drift
+2048,Projection (base),FALSE,constant_component,0,Macro drift
+2049,Projection (base),FALSE,constant_component,0,Macro drift
+2050,Projection (base),FALSE,constant_component,0,Macro drift
+2051,Projection (base),FALSE,constant_component,0,Macro drift
+2052,Projection (base),FALSE,constant_component,0,Macro drift
+2053,Projection (base),FALSE,constant_component,0,Macro drift
+2054,Projection (base),FALSE,constant_component,0,Macro drift
+2055,Projection (base),FALSE,constant_component,0,Macro drift
+2056,Projection (base),FALSE,constant_component,0,Macro drift
+2057,Projection (base),FALSE,constant_component,0,Macro drift
+2058,Projection (base),FALSE,constant_component,0,Macro drift
+2059,Projection (base),FALSE,constant_component,0,Macro drift
+2060,Projection (base),FALSE,constant_component,0,Macro drift
+2061,Projection (base),FALSE,constant_component,0,Macro drift
+2062,Projection (base),FALSE,constant_component,0,Macro drift
+2063,Projection (base),FALSE,constant_component,0,Macro drift
+2064,Projection (base),FALSE,constant_component,0,Macro drift
+2065,Projection (base),FALSE,constant_component,0,Macro drift
+2066,Projection (base),FALSE,constant_component,0,Macro drift
+2067,Projection (base),FALSE,constant_component,0,Macro drift
+2068,Projection (base),FALSE,constant_component,0,Macro drift
+2069,Projection (base),FALSE,constant_component,0,Macro drift
+2070,Projection (base),FALSE,constant_component,0,Macro drift
+2071,Projection (base),FALSE,constant_component,0,Macro drift
+2000,Fitted (in-sample),FALSE,arima_component,0,ARIMA dynamics
+2001,Fitted (in-sample),FALSE,arima_component,0.00251280409734155,ARIMA dynamics
+2002,Fitted (in-sample),FALSE,arima_component,0.00445271900364969,ARIMA dynamics
+2003,Fitted (in-sample),FALSE,arima_component,-0.00129136827545971,ARIMA dynamics
+2004,Fitted (in-sample),FALSE,arima_component,0.00187893189468013,ARIMA dynamics
+2005,Fitted (in-sample),FALSE,arima_component,0.00933703828934164,ARIMA dynamics
+2006,Fitted (in-sample),FALSE,arima_component,0.00106976118826358,ARIMA dynamics
+2007,Fitted (in-sample),FALSE,arima_component,-0.00259281076381737,ARIMA dynamics
+2008,Fitted (in-sample),FALSE,arima_component,-0.000714187383101694,ARIMA dynamics
+2009,Fitted (in-sample),FALSE,arima_component,0.000835906676940812,ARIMA dynamics
+2010,Fitted (in-sample),FALSE,arima_component,0.0107121384574717,ARIMA dynamics
+2011,Fitted (in-sample),FALSE,arima_component,-0.00504493192511733,ARIMA dynamics
+2012,Fitted (in-sample),FALSE,arima_component,-0.0183268408558214,ARIMA dynamics
+2013,Fitted (in-sample),FALSE,arima_component,-0.0185654717673055,ARIMA dynamics
+2014,Fitted (in-sample),FALSE,arima_component,-0.027381365550071,ARIMA dynamics
+2015,Fitted (in-sample),FALSE,arima_component,-0.0362189787213041,ARIMA dynamics
+2016,Fitted (in-sample),FALSE,arima_component,-0.0420832741592532,ARIMA dynamics
+2017,Fitted (in-sample),FALSE,arima_component,-0.0316442519729339,ARIMA dynamics
+2018,Fitted (in-sample),FALSE,arima_component,-0.0298343004417744,ARIMA dynamics
+2019,Fitted (in-sample),FALSE,arima_component,-0.0361772468906939,ARIMA dynamics
+2023,Fitted (in-sample),FALSE,arima_component,-0.00522173008498885,ARIMA dynamics
+2024,Fitted (in-sample),FALSE,arima_component,-0.0204218656814408,ARIMA dynamics
+2025,Fitted (in-sample),FALSE,arima_component,-0.0119210420129795,ARIMA dynamics
+2026,Projection (base),FALSE,arima_component,-0.00726926052964626,ARIMA dynamics
+2027,Projection (base),FALSE,arima_component,-0.00781436686768881,ARIMA dynamics
+2028,Projection (base),FALSE,arima_component,-0.0110649823310292,ARIMA dynamics
+2029,Projection (base),FALSE,arima_component,-0.0116308134398088,ARIMA dynamics
+2030,Projection (base),FALSE,arima_component,-0.00916521263967603,ARIMA dynamics
+2031,Projection (base),FALSE,arima_component,-0.00794033042247282,ARIMA dynamics
+2032,Projection (base),FALSE,arima_component,-0.00956357202797871,ARIMA dynamics
+2033,Projection (base),FALSE,arima_component,-0.0110625431662557,ARIMA dynamics
+2034,Projection (base),FALSE,arima_component,-0.0102087916906169,ARIMA dynamics
+2035,Projection (base),FALSE,arima_component,-0.00872590829422915,ARIMA dynamics
+2036,Projection (base),FALSE,arima_component,-0.00895942576477296,ARIMA dynamics
+2037,Projection (base),FALSE,arima_component,-0.0102367645957196,ARIMA dynamics
+2038,Projection (base),FALSE,arima_component,-0.0104434146575564,ARIMA dynamics
+2039,Projection (base),FALSE,arima_component,-0.00946967913155425,ARIMA dynamics
+2040,Projection (base),FALSE,arima_component,-0.00899959910729045,ARIMA dynamics
+2041,Projection (base),FALSE,arima_component,-0.00964490235823204,ARIMA dynamics
+2042,Projection (base),FALSE,arima_component,-0.010227104466293,ARIMA dynamics
+2043,Projection (base),FALSE,arima_component,-0.00988345320236413,ARIMA dynamics
+2044,Projection (base),FALSE,arima_component,-0.00930375920131884,ARIMA dynamics
+2045,Projection (base),FALSE,arima_component,-0.00940309040542677,ARIMA dynamics
+2046,Projection (base),FALSE,arima_component,-0.0099049283568123,ARIMA dynamics
+2047,Projection (base),FALSE,arima_component,-0.00997995164581546,ARIMA dynamics
+2048,Projection (base),FALSE,arima_component,-0.00959547954965991,ARIMA dynamics
+2049,Projection (base),FALSE,arima_component,-0.00941521102140715,ARIMA dynamics
+2050,Projection (base),FALSE,arima_component,-0.00967166093940582,ARIMA dynamics
+2051,Projection (base),FALSE,arima_component,-0.00989771512724254,ARIMA dynamics
+2052,Projection (base),FALSE,arima_component,-0.00975949418494134,ARIMA dynamics
+2053,Projection (base),FALSE,arima_component,-0.00953292739997543,ARIMA dynamics
+2054,Projection (base),FALSE,arima_component,-0.00957492582073546,ARIMA dynamics
+2055,Projection (base),FALSE,arima_component,-0.00977204902884723,ARIMA dynamics
+2056,Projection (base),FALSE,arima_component,-0.00979909634423039,ARIMA dynamics
+2057,Projection (base),FALSE,arima_component,-0.00964732312981555,ARIMA dynamics
+2058,Projection (base),FALSE,arima_component,-0.00957824789875059,ARIMA dynamics
+2059,Projection (base),FALSE,arima_component,-0.00968013108596913,ARIMA dynamics
+2060,Projection (base),FALSE,arima_component,-0.0097678728259705,ARIMA dynamics
+2061,Projection (base),FALSE,arima_component,-0.00971231895116206,ARIMA dynamics
+2062,Projection (base),FALSE,arima_component,-0.00962378734892441,ARIMA dynamics
+2063,Projection (base),FALSE,arima_component,-0.00964145260127072,ARIMA dynamics
+2064,Projection (base),FALSE,arima_component,-0.00971886826737886,ARIMA dynamics
+2065,Projection (base),FALSE,arima_component,-0.00972853876057852,ARIMA dynamics
+2066,Projection (base),FALSE,arima_component,-0.0096686379326458,ARIMA dynamics
+2067,Projection (base),FALSE,arima_component,-0.0096421918485374,ARIMA dynamics
+2068,Projection (base),FALSE,arima_component,-0.00968265566011625,ARIMA dynamics
+2069,Projection (base),FALSE,arima_component,-0.00971670049808818,ARIMA dynamics
+2070,Projection (base),FALSE,arima_component,-0.0096943877271404,ARIMA dynamics
+2071,Projection (base),FALSE,arima_component,-0.00965980143432524,ARIMA dynamics

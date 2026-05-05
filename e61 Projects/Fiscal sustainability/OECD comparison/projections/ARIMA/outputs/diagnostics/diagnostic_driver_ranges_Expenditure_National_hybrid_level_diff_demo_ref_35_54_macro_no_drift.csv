@@ -1,0 +1,4 @@
+feature,historical_min,historical_max,projection_min,projection_max,projection_below_history,projection_above_history
+d_tot,-0.503196396384736,0.930981888679116,-0.544409195995604,0,TRUE,FALSE
+d_rp_g,-0.721767039445902,0.682273704324144,-0.200445371764933,0,FALSE,FALSE
+d_unemp,-1.60929195833333,2.80017493333333,0,0.407530658333334,FALSE,FALSE

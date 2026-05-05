@@ -4,6 +4,10 @@
 workflow but uses a basic ARIMA time-series model with the same explanatory
 variables as external regressors.
 
+`spending_projection_hybrid_level_diff_paths.R` is a separate hybrid workflow.
+It keeps demographics in levels and puts macro/cyclical drivers in annual
+differences.
+
 Run from the `projections` project root with:
 
 ```powershell
@@ -44,6 +48,29 @@ Model form option:
 The output file names include the selected model form, for example
 `Expenditure_National_level_intercept_ref_35_54`.
 
+Hybrid level/difference script:
+
+- Run `spending_projection_hybrid_level_diff_paths.R` to estimate the hybrid
+  model.
+- The demographic component is estimated in levels:
+  `gov_gdp ~ age shares`, with `35_54` omitted as the reference age group.
+- The macro component is estimated in differences. The dependent variable is
+  the part of annual spending/GDP change left after the demographic level
+  component has moved.
+- The macro difference ARIMAX has no drift by default, so there is no
+  unexplained annual change that mechanically cumulates through the projection.
+- The output file names include
+  `Expenditure_National_hybrid_level_diff_demo_ref_35_54_macro_no_drift`.
+- The hybrid script also writes a second demographic decomposition plot that
+  splits the demographic component into the included age groups, with `35_54`
+  treated as the omitted reference group.
+- The hybrid script writes extra out-of-sample level forecast plots:
+  rolling projection paths against actual spending/GDP, forecast errors by
+  horizon, and actual-versus-forecast scatter plots.
+- The hybrid script also writes leverage diagnostics. These identify ordinary
+  non-outlier years that have unusual regressor values or that move the
+  estimated parameters/projection when removed one at a time.
+
 Age-share/intercept option:
 
 - The default is `no_intercept <- FALSE`.
@@ -51,6 +78,10 @@ Age-share/intercept option:
   `35_54` as the reference age group.
 - To reproduce the Shapley-style specification, set `no_intercept <- TRUE`.
   This includes all five age groups and excludes the intercept.
+- For `model_form <- "diff"` and `model_form <- "ECM"`, `no_intercept <- TRUE`
+  means no annual drift term. The script still drops one differenced age-share
+  column, using `reference_age_group`, because all five differenced age shares
+  sum exactly to zero and cannot be estimated together.
 
 Main output:
 
@@ -108,3 +139,15 @@ looks stationary. The folder also includes:
 - historical versus projection driver-range checks
 - rolling holdout forecasts and a forecast plot
 - model-sensitivity results for alternative regressor sets
+
+Hybrid leverage diagnostics:
+
+- `hybrid_leverage_demographic_ols_*.csv` reports hat values, Cook's distance,
+  studentized residuals, and flags for demographic-level regression influence.
+- `hybrid_leverage_leave_one_year_out_summary_*.csv` re-estimates the full
+  hybrid model after dropping each non-outlier year in turn, then reports the
+  change in regressor parameters and the final projection.
+- `hybrid_leverage_leave_one_year_out_coefficients_*.csv` gives the underlying
+  coefficient-by-coefficient comparison for those refits.
+- The corresponding plots show Cook's distance, leverage versus residual size,
+  final-projection sensitivity, and parameter sensitivity.

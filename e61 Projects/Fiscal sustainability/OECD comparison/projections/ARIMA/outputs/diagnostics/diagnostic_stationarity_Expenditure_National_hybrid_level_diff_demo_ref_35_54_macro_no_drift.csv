@@ -1,0 +1,9 @@
+variable,test,statistic,p_value,note
+macro_residual_change,ADF,-4.44121340827106,0.01,""
+macro_residual_change,KPSS,0.111728395149199,0.1,""
+d_tot,ADF,-3.70087237279273,0.03703833547227,""
+d_tot,KPSS,0.102201120478868,0.1,""
+d_rp_g,ADF,-4.70642311705282,0.01,""
+d_rp_g,KPSS,0.0553161823608566,0.1,""
+d_unemp,ADF,-3.31178050959073,0.0835256415085638,""
+d_unemp,KPSS,0.114458701709772,0.1,""

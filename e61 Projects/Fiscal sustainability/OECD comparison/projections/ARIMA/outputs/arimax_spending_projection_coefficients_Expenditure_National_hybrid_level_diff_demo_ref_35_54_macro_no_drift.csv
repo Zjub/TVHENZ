@@ -1,0 +1,13 @@
+component,term,estimate
+demographic_level,(Intercept),0.115664188207803
+demographic_level,0_14,-0.272004005266322
+demographic_level,15_34,0.836174838612488
+demographic_level,55_64,-0.574198297012215
+demographic_level,65p,0.805797162420101
+macro_difference_arimax,ar1,0.31032311338159
+macro_difference_arimax,ar2,-0.812520367679284
+macro_difference_arimax,ma1,0.00721970768424635
+macro_difference_arimax,ma2,0.999965697612929
+macro_difference_arimax,d_tot,0.0107324881768346
+macro_difference_arimax,d_rp_g,0.0150841628719254
+macro_difference_arimax,d_unemp,0.00806703704164507

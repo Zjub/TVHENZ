@@ -1,10 +1,14 @@
-# Topic: Spending projections from an ARIMAX driver model
+# Topic: Spending projections from a hybrid level/difference driver model
 # Author: Matt Nolan
 # Created: 4/5/2026
 #
-# This mirrors the Shapley spending projection workflow, but replaces the
-# no-intercept OLS projection model with a basic ARIMA model using the same
-# explanatory variables as external regressors.
+# This mirrors the ARIMAX projection workflow but separates the drivers into:
+#
+# 1. A slow-moving demographic level component, estimated from age shares.
+# 2. A short-run macro/cyclical component, estimated in annual differences.
+#
+# The final spending/GDP projection is the final observed level plus the
+# cumulative sum of projected annual changes from these two components.
 
 rm(list = ls())
 
@@ -47,36 +51,23 @@ govt_level <- "total"          # "total", "Federal", or "State"
 level <- "National"
 decomposition_base_year <- 2000
 
-# Projection model form.
-#
-# "level" keeps the current ARIMAX-in-levels specification:
-#   spending_share_t ~ age shares_t + macro drivers_t + ARIMA errors
-#
-# "diff" estimates annual changes and then cumulates the forecast changes from
-# the final observed spending/GDP value:
-#   d(spending_share_t) ~ d(age shares_t) + d(macro drivers_t) + ARIMA errors
-#
-# "ECM" first estimates a long-run level relationship, then estimates annual
-# changes with the lagged long-run gap included as an error-correction term:
-#   d(spending_share_t) ~ d(drivers_t) + lag(long_run_gap_t) + ARIMA errors
-#
-# The ECM option is only a sensible forecasting model if the cointegration
-# diagnostic supports a stationary long-run gap. The script saves that test in
-# outputs/diagnostics so this can be checked before relying on the ECM path.
-model_form <- "diff"
-model_form <- match.arg(model_form, c("level", "ECM", "diff"))
+# Hybrid model form. This script deliberately fixes the model form to a
+# demographic level component plus macro differences. Keep the pure level,
+# difference, and ECM variants in spending_projection_arima_paths.R.
+model_form <- "hybrid_level_diff"
 
 # Age shares sum to one. That creates a specification choice.
 #
-# TRUE reproduces the Shapley-style coding: include every age group and omit the
-# intercept. This treats age groups symmetrically and is useful when the model is
-# mainly a decomposition device.
+# The demographic level component uses an intercept and drops one age group as
+# the reference category. That avoids the age-share adding-up problem while
+# keeping the demographic component in levels.
 #
-# FALSE uses the more standard regression/ARIMAX coding: include an intercept
-# and drop one age group as the reference category. The coefficients on included
-# age groups are then interpreted relative to the omitted group.
-no_intercept <- TRUE # Set to true when using difference or ECM approaches - as otherwise projections are sensitive to misspecification of the drift term.
+# The macro difference component has no intercept by default. That avoids an
+# unexplained annual drift term that would cumulate indefinitely in the long-run
+# projection.
+no_intercept <- FALSE
 reference_age_group <- "35_54"
+macro_diff_include_drift <- FALSE
 
 age_features_all <- c(
   "0_14",
@@ -92,32 +83,24 @@ economic_features <- c(
   "unemp"
 )
 
-features <- if (isTRUE(no_intercept)) {
-  age_features_all
-} else {
-  setdiff(age_features_all, reference_age_group)
-}
+demographic_level_features <- setdiff(age_features_all, reference_age_group)
+macro_diff_features <- paste0("d_", economic_features)
+features <- c(demographic_level_features, economic_features)
+include_mean <- macro_diff_include_drift
 
-features <- c(features, economic_features)
-include_mean <- !isTRUE(no_intercept)
+model_variant <- paste0(
+  model_form,
+  "_demo_ref_",
+  reference_age_group,
+  if (isTRUE(macro_diff_include_drift)) "_macro_drift" else "_macro_no_drift"
+)
 
-model_variant <- if (isTRUE(no_intercept) && model_form == "level") {
-  "no_intercept_all_ages"
-} else if (isTRUE(no_intercept)) {
-  paste0("no_drift_ref_d_", reference_age_group)
-} else {
-  paste0("intercept_ref_", reference_age_group)
-}
-
-model_variant <- paste(model_form, model_variant, sep = "_")
-
-specification_note <- if (isTRUE(no_intercept) && model_form == "level") {
-  "no intercept, all age groups"
-} else if (isTRUE(no_intercept)) {
-  paste0("no drift, differenced reference age group = ", reference_age_group)
-} else {
-  paste0("intercept, reference age group = ", reference_age_group)
-}
+specification_note <- paste0(
+  "demographics in levels with ",
+  reference_age_group,
+  " as reference; macro drivers in differences",
+  if (isTRUE(macro_diff_include_drift)) " with drift" else " without drift"
+)
 
 # -------------------- Paths --------------------
 
@@ -1193,6 +1176,1034 @@ build_transformed_decomposition <- function(model_dt, projection_model_dt,
   )
 }
 
+prepare_hybrid_model_inputs <- function(share_dt, dt_est_level, proj,
+                                        demographic_features,
+                                        economic_features,
+                                        include_mean,
+                                        extra_excluded_years = integer()) {
+  # These additional exclusions are used only by the leverage diagnostics. The
+  # baseline model still excludes only the outlier years set at the top of the
+  # script. For the macro difference equation, dropping year t also drops the
+  # t+1 annual change because that observation depends mechanically on t.
+  extra_excluded_years <- as.integer(extra_excluded_years)
+  excluded_years <- sort(unique(c(outlier_years, extra_excluded_years)))
+  dt_est_level <- dt_est_level[!(year %in% extra_excluded_years)]
+
+  demographic_fit <- estimate_long_run_relationship(
+    dt = dt_est_level,
+    features = demographic_features,
+    include_mean = TRUE
+  )
+
+  hist_model_dt <- copy(share_dt)
+  hist_model_dt[, demographic_level := as.numeric(predict(demographic_fit, newdata = as.data.frame(hist_model_dt)))]
+  hist_model_dt <- add_model_differences(hist_model_dt, economic_features)
+  hist_model_dt[, d_demographic_level := demographic_level - shift(demographic_level)]
+  hist_model_dt[, macro_residual_change := d_gov_gdp - d_demographic_level]
+
+  macro_features <- paste0("d_", economic_features)
+
+  need <- c(
+    "year",
+    "previous_year",
+    "lag_gov_gdp",
+    "d_gov_gdp",
+    "demographic_level",
+    "d_demographic_level",
+    "macro_residual_change",
+    macro_features
+  )
+
+  estimation_dt <- hist_model_dt[
+    !(year %in% excluded_years) &
+      !(previous_year %in% excluded_years) &
+      consecutive_year == TRUE,
+    ..need
+  ]
+  estimation_dt <- estimation_dt[complete.cases(estimation_dt)]
+
+  proj_model_dt <- copy(proj)
+  proj_model_dt[, demographic_level := as.numeric(predict(demographic_fit, newdata = as.data.frame(proj_model_dt)))]
+
+  last_hist <- hist_model_dt[year == max(year, na.rm = TRUE)]
+  demo_combined <- rbindlist(
+    list(
+      last_hist[, .(year, demographic_level)],
+      proj_model_dt[, .(year, demographic_level)]
+    ),
+    use.names = TRUE
+  )
+  setorder(demo_combined, year)
+  demo_combined[, d_demographic_level := demographic_level - shift(demographic_level)]
+
+  macro_projection_dt <- prepare_projection_difference_drivers(
+    share_dt = share_dt,
+    proj = proj,
+    features = economic_features
+  )
+
+  projection_dt <- merge(
+    proj_model_dt,
+    demo_combined[, .(year, d_demographic_level)],
+    by = "year",
+    all.x = TRUE
+  )
+  projection_dt <- merge(
+    projection_dt,
+    macro_projection_dt[, c("year", macro_features), with = FALSE],
+    by = "year",
+    all.x = TRUE
+  )
+  projection_dt <- projection_dt[complete.cases(projection_dt[, c("d_demographic_level", macro_features), with = FALSE])]
+
+  list(
+    demographic_fit = demographic_fit,
+    estimation_dt = estimation_dt,
+    projection_dt = projection_dt,
+    y_col = "macro_residual_change",
+    x_features = macro_features,
+    include_mean = include_mean
+  )
+}
+
+build_hybrid_level_paths <- function(share_dt, dt_est_model, projection_dt,
+                                     proj, arimax_fit, y_est, macro_features) {
+  fitted_macro_delta <- arimax_fitted_values(y_est, arimax_fit)
+
+  fitted_dt <- data.table(
+    year = dt_est_model$year,
+    series = "Fitted (in-sample)",
+    value = dt_est_model$lag_gov_gdp + dt_est_model$d_demographic_level + fitted_macro_delta
+  )
+
+  forecast_macro_delta <- forecast_arimax(arimax_fit, make_xreg(projection_dt, macro_features))
+  projection_model_dt <- copy(projection_dt)
+  projection_model_dt[, macro_component_delta := forecast_macro_delta]
+  projection_model_dt[, total_delta := d_demographic_level + macro_component_delta]
+
+  last_hist_value <- share_dt[year == max(year, na.rm = TRUE), gov_gdp][[1]]
+
+  base_proj <- copy(proj[, c("year", age_features_all, economic_features), with = FALSE])
+  base_proj <- merge(
+    base_proj,
+    projection_model_dt[, .(year, d_demographic_level, macro_component_delta, total_delta)],
+    by = "year",
+    all.x = TRUE
+  )
+  base_proj[, value := last_hist_value + cumsum(total_delta)]
+  base_proj[, series := "Projection (base)"]
+
+  list(
+    fitted_dt = fitted_dt,
+    base_proj = base_proj,
+    projection_model_dt = projection_model_dt
+  )
+}
+
+build_hybrid_decomposition <- function(model_dt, projection_model_dt,
+                                       hist_dt, fitted_dt, base_proj,
+                                       macro_features, arimax_fit,
+                                       base_year, include_mean = FALSE) {
+  beta <- coef(arimax_fit)[macro_features]
+
+  if (anyNA(beta)) {
+    missing_beta <- macro_features[is.na(beta)]
+    stop(
+      "Could not find ARIMAX coefficients for: ",
+      paste(missing_beta, collapse = ", "),
+      call. = FALSE
+    )
+  }
+
+  hist_contrib_dt <- copy(model_dt)
+  hist_contrib_dt[, macro_component_delta := arimax_fitted_values(macro_residual_change, arimax_fit)]
+
+  projection_contrib_dt <- copy(projection_model_dt)
+
+  contribution_path <- rbindlist(
+    list(
+      hist_contrib_dt[, c("year", "d_demographic_level", "macro_component_delta", macro_features), with = FALSE],
+      projection_contrib_dt[, c("year", "d_demographic_level", "macro_component_delta", macro_features), with = FALSE]
+    ),
+    use.names = TRUE,
+    fill = TRUE
+  )
+  setorder(contribution_path, year)
+
+  model_path <- rbindlist(
+    list(
+      fitted_dt[, .(year, model_value = value, model_series = "Fitted (in-sample)")],
+      base_proj[, .(year, model_value = value, model_series = "Projection (base)")]
+    ),
+    use.names = TRUE
+  )
+  setorder(model_path, year)
+
+  if (!base_year %in% model_path$year) {
+    stop("Decomposition base year is not available in the fitted model path.", call. = FALSE)
+  }
+
+  decomp_dt <- merge(model_path, contribution_path, by = "year", all.x = TRUE)
+  decomp_dt <- decomp_dt[year >= base_year]
+  base_model <- model_path[year == base_year, model_value][[1]]
+
+  decomp_dt[year <= base_year, d_demographic_level := 0]
+  decomp_dt[, contrib_demographic_level := cumsum(fifelse(is.na(d_demographic_level), 0, d_demographic_level))]
+
+  macro_contrib_cols <- paste0("contrib_", macro_features)
+  for (feature in macro_features) {
+    decomp_dt[, paste0("contrib_", feature) := as.numeric(get(feature)) * as.numeric(beta[[feature]])]
+    decomp_dt[year <= base_year, paste0("contrib_", feature) := 0]
+  }
+  for (contrib_col in macro_contrib_cols) {
+    decomp_dt[, (contrib_col) := cumsum(fifelse(is.na(get(contrib_col)), 0, get(contrib_col)))]
+  }
+
+  intercept_name <- intersect(c("intercept", "mean"), names(coef(arimax_fit)))
+  if (isTRUE(include_mean) && length(intercept_name)) {
+    intercept_value <- as.numeric(coef(arimax_fit)[intercept_name[[1]]])
+    decomp_dt[, constant_component := intercept_value * seq(0, .N - 1L)]
+  } else {
+    decomp_dt[, constant_component := 0]
+  }
+
+  decomp_dt[, regression_component := contrib_demographic_level + rowSums(.SD), .SDcols = macro_contrib_cols]
+  decomp_dt[, model_change := model_value - base_model]
+  decomp_dt[, arima_component := model_change - regression_component - constant_component]
+  decomp_dt[, includes_constant := include_mean]
+
+  decomp_long <- melt(
+    decomp_dt[
+      ,
+      c(
+        "year",
+        "model_series",
+        "includes_constant",
+        "contrib_demographic_level",
+        macro_contrib_cols,
+        "constant_component",
+        "arima_component"
+      ),
+      with = FALSE
+    ],
+    id.vars = c("year", "model_series", "includes_constant"),
+    variable.name = "driver",
+    value.name = "contribution"
+  )
+
+  decomp_long[, driver := sub("^contrib_", "", driver)]
+
+  driver_labels <- c(
+    "demographic_level" = "Demographic level component",
+    "d_tot" = "Change in terms of trade",
+    "d_rp_g" = "Change in relative govt prices",
+    "d_unemp" = "Change in unemployment",
+    "constant_component" = "Macro drift",
+    "arima_component" = "ARIMA dynamics"
+  )
+
+  decomp_long[, driver_label := driver_labels[driver]]
+  decomp_long[is.na(driver_label), driver_label := driver]
+
+  decomp_totals <- decomp_dt[
+    ,
+    .(
+      year,
+      model_series,
+      includes_constant,
+      model_change,
+      regression_component,
+      constant_component,
+      arima_component
+    )
+  ]
+
+  actual_base <- hist_dt[year == base_year, value][[1]]
+  actual_change <- hist_dt[
+    year >= base_year,
+    .(year, actual_change = value - actual_base)
+  ]
+
+  list(
+    long = decomp_long,
+    totals = decomp_totals,
+    actual = actual_change
+  )
+}
+
+get_lm_coefficient <- function(lm_fit, feature) {
+  coefs <- coef(lm_fit)
+  candidate_names <- c(feature, paste0("`", feature, "`"))
+  matched_name <- intersect(candidate_names, names(coefs))
+
+  if (!length(matched_name)) {
+    stop("Could not find demographic coefficient for: ", feature, call. = FALSE)
+  }
+
+  as.numeric(coefs[[matched_name[[1]]]])
+}
+
+build_hybrid_age_decomposition <- function(share_dt, proj, demographic_fit,
+                                           demographic_features, base_year,
+                                           reference_age_group,
+                                           included_years = NULL) {
+  hist_diff_dt <- add_model_differences(share_dt, demographic_features)
+  projection_diff_dt <- prepare_projection_difference_drivers(
+    share_dt = share_dt,
+    proj = proj,
+    features = demographic_features
+  )
+
+  diff_features <- paste0("d_", demographic_features)
+
+  driver_dt <- rbindlist(
+    list(
+      hist_diff_dt[, c("year", diff_features), with = FALSE],
+      projection_diff_dt[, c("year", diff_features), with = FALSE]
+    ),
+    use.names = TRUE,
+    fill = TRUE
+  )
+  setorder(driver_dt, year)
+
+  if (!is.null(included_years)) {
+    driver_dt <- driver_dt[year %in% included_years]
+  }
+
+  if (!base_year %in% driver_dt$year) {
+    stop("Age decomposition base year is not available in the driver data.", call. = FALSE)
+  }
+
+  decomp_dt <- driver_dt[year >= base_year]
+
+  age_labels <- c(
+    "0_14" = "Age 0-14",
+    "15_34" = "Age 15-34",
+    "35_54" = "Age 35-54",
+    "55_64" = "Age 55-64",
+    "65p" = "Age 65+"
+  )
+
+  contrib_cols <- paste0("contrib_", demographic_features)
+
+  for (feature in demographic_features) {
+    beta <- get_lm_coefficient(demographic_fit, feature)
+    diff_feature <- paste0("d_", feature)
+    decomp_dt[
+      ,
+      paste0("contrib_", feature) :=
+        as.numeric(get(diff_feature)) * beta
+    ]
+    decomp_dt[year <= base_year, paste0("contrib_", feature) := 0]
+  }
+
+  for (contrib_col in contrib_cols) {
+    decomp_dt[, (contrib_col) := cumsum(fifelse(is.na(get(contrib_col)), 0, get(contrib_col)))]
+  }
+
+  decomp_dt[, demographic_component := rowSums(.SD), .SDcols = contrib_cols]
+  decomp_dt[, model_series := fifelse(year <= max(share_dt$year, na.rm = TRUE), "Historical drivers", "Projection drivers")]
+  decomp_dt[, reference_age_group := reference_age_group]
+
+  decomp_long <- melt(
+    decomp_dt[
+      ,
+      c("year", "model_series", "reference_age_group", contrib_cols),
+      with = FALSE
+    ],
+    id.vars = c("year", "model_series", "reference_age_group"),
+    variable.name = "driver",
+    value.name = "contribution"
+  )
+
+  decomp_long[, driver := sub("^contrib_", "", driver)]
+  decomp_long[, driver_label := age_labels[driver]]
+  decomp_long[is.na(driver_label), driver_label := driver]
+
+  decomp_totals <- decomp_dt[
+    ,
+    .(year, model_series, reference_age_group, demographic_component)
+  ]
+
+  list(
+    long = decomp_long,
+    totals = decomp_totals
+  )
+}
+
+hybrid_rolling_level_forecasts <- function(share_dt, demographic_features,
+                                           economic_features, include_mean,
+                                           min_origin = 2010,
+                                           horizon = 5) {
+  max_year <- max(share_dt$year, na.rm = TRUE)
+  origins <- min_origin:(max_year - 1L)
+  macro_features <- paste0("d_", economic_features)
+
+  out <- rbindlist(lapply(origins, function(origin_year) {
+    train_level <- share_dt[year <= origin_year & !(year %in% outlier_years)]
+    test <- share_dt[year > origin_year][1:horizon]
+    test <- test[!is.na(year)]
+
+    if (nrow(train_level) < 20 || !nrow(test)) {
+      return(NULL)
+    }
+
+    demographic_fit <- tryCatch(
+      estimate_long_run_relationship(
+        dt = train_level,
+        features = demographic_features,
+        include_mean = TRUE
+      ),
+      error = function(e) NULL
+    )
+
+    if (is.null(demographic_fit)) {
+      return(NULL)
+    }
+
+    train_for_macro <- copy(share_dt[year <= origin_year])
+    train_for_macro[, demographic_level := as.numeric(predict(demographic_fit, newdata = as.data.frame(train_for_macro)))]
+    train_for_macro <- add_model_differences(train_for_macro, economic_features)
+    train_for_macro[, d_demographic_level := demographic_level - shift(demographic_level)]
+    train_for_macro[, macro_residual_change := d_gov_gdp - d_demographic_level]
+
+    macro_dt <- train_for_macro[
+      !(year %in% outlier_years) &
+        !(previous_year %in% outlier_years) &
+        consecutive_year == TRUE
+    ]
+    macro_dt <- macro_dt[complete.cases(macro_dt[, c("macro_residual_change", macro_features), with = FALSE])]
+
+    if (nrow(macro_dt) < 20) {
+      return(NULL)
+    }
+
+    fit_result <- tryCatch(
+      fit_arimax_grid(
+        y = macro_dt$macro_residual_change,
+        xreg = make_xreg(macro_dt, macro_features),
+        include_mean = include_mean,
+        d_grid = 0
+      ),
+      error = function(e) NULL
+    )
+
+    if (is.null(fit_result)) {
+      return(NULL)
+    }
+
+    driver_window <- rbindlist(
+      list(
+        share_dt[year == origin_year],
+        test
+      ),
+      use.names = TRUE,
+      fill = TRUE
+    )
+    setorder(driver_window, year)
+    driver_window[, demographic_level := as.numeric(predict(demographic_fit, newdata = as.data.frame(driver_window)))]
+    driver_window <- add_model_differences(driver_window, economic_features)
+    driver_window[, d_demographic_level := demographic_level - shift(demographic_level)]
+
+    forecast_driver_dt <- driver_window[year %in% test$year]
+    forecast_driver_dt <- forecast_driver_dt[
+      complete.cases(forecast_driver_dt[, c("d_demographic_level", macro_features), with = FALSE])
+    ]
+
+    if (!nrow(forecast_driver_dt)) {
+      return(NULL)
+    }
+
+    macro_forecast <- tryCatch(
+      forecast_arimax(fit_result$fit, make_xreg(forecast_driver_dt, macro_features)),
+      error = function(e) rep(NA_real_, nrow(forecast_driver_dt))
+    )
+
+    last_actual <- share_dt[year == origin_year, gov_gdp][[1]]
+    total_delta <- forecast_driver_dt$d_demographic_level + macro_forecast
+    level_forecast <- last_actual + cumsum(total_delta)
+
+    data.table(
+      origin_year = origin_year,
+      forecast_year = forecast_driver_dt$year,
+      horizon = seq_len(nrow(forecast_driver_dt)),
+      actual = forecast_driver_dt$gov_gdp,
+      forecast = level_forecast,
+      error = level_forecast - forecast_driver_dt$gov_gdp,
+      demographic_delta = forecast_driver_dt$d_demographic_level,
+      macro_delta = macro_forecast,
+      p = fit_result$order[[1]],
+      d = fit_result$order[[2]],
+      q = fit_result$order[[3]],
+      aic = fit_result$fit$aic,
+      includes_outlier_year = forecast_driver_dt$year %in% outlier_years
+    )
+  }), use.names = TRUE, fill = TRUE)
+
+  if (!nrow(out)) {
+    return(data.table())
+  }
+
+  out[, abs_error := abs(error)]
+  out[, squared_error := error^2]
+  out
+}
+
+write_hybrid_out_of_sample_outputs <- function(output_dir, output_stub,
+                                               share_dt, oos_dt) {
+  if (!nrow(oos_dt)) {
+    warning("No hybrid out-of-sample forecasts were available to plot.")
+    return(invisible(NULL))
+  }
+
+  oos_summary <- oos_dt[
+    ,
+    .(
+      n = .N,
+      mean_error = mean(error, na.rm = TRUE),
+      mean_abs_error = mean(abs_error, na.rm = TRUE),
+      rmse = sqrt(mean(squared_error, na.rm = TRUE)),
+      min_error = min(error, na.rm = TRUE),
+      max_error = max(error, na.rm = TRUE)
+    ),
+    by = horizon
+  ]
+
+  fwrite(
+    oos_dt,
+    file.path(output_dir, paste0("hybrid_out_of_sample_level_forecasts_", output_stub, ".csv"))
+  )
+  fwrite(
+    oos_summary,
+    file.path(output_dir, paste0("hybrid_out_of_sample_level_forecast_summary_", output_stub, ".csv"))
+  )
+
+  oos_paths_plot <- ggplot() +
+    geom_line(
+      data = share_dt,
+      aes(x = year, y = gov_gdp * 100),
+      colour = "black",
+      linewidth = 0.9
+    ) +
+    geom_line(
+      data = oos_dt,
+      aes(x = forecast_year, y = forecast * 100, group = origin_year),
+      colour = "#C14953",
+      alpha = 0.35,
+      linewidth = 0.7
+    ) +
+    geom_point(
+      data = oos_dt[includes_outlier_year == TRUE],
+      aes(x = forecast_year, y = actual * 100),
+      colour = "#A23E48",
+      size = 1.3,
+      alpha = 0.8
+    ) +
+    labs(
+      title = "Hybrid model out-of-sample level forecasts",
+      subtitle = "Black line is actual spending/GDP; red lines are rolling holdout projections",
+      x = NULL,
+      y = "% of GDP",
+      caption = "Points mark forecast years excluded from model estimation."
+    ) +
+    theme_minimal(base_size = 11) +
+    theme(
+      panel.grid.minor = element_blank(),
+      plot.caption = element_text(hjust = 0)
+    )
+
+  ggplot2::ggsave(
+    file.path(output_dir, paste0("hybrid_out_of_sample_level_forecast_paths_", output_stub, ".png")),
+    oos_paths_plot,
+    width = 8.5,
+    height = 6,
+    units = "in",
+    dpi = 300
+  )
+  ggplot2::ggsave(
+    file.path(output_dir, paste0("hybrid_out_of_sample_level_forecast_paths_", output_stub, ".svg")),
+    oos_paths_plot,
+    width = 8.5,
+    height = 6,
+    units = "in"
+  )
+
+  oos_error_plot <- ggplot(oos_dt, aes(x = factor(horizon), y = error * 100)) +
+    geom_hline(yintercept = 0, colour = "grey35", linewidth = 0.5) +
+    geom_boxplot(fill = "#D8E6F3", colour = "#2E5E8C", outlier.alpha = 0.35) +
+    geom_point(
+      aes(colour = includes_outlier_year),
+      position = position_jitter(width = 0.12, height = 0),
+      alpha = 0.55,
+      size = 1.6
+    ) +
+    scale_colour_manual(
+      values = c("FALSE" = "grey35", "TRUE" = "#A23E48"),
+      labels = c("FALSE" = "Regular year", "TRUE" = "Excluded outlier year")
+    ) +
+    labs(
+      title = "Hybrid model out-of-sample forecast errors",
+      subtitle = "Forecast minus actual, by projection horizon",
+      x = "Forecast horizon",
+      y = "Percentage points of GDP",
+      colour = NULL
+    ) +
+    theme_minimal(base_size = 11) +
+    theme(
+      legend.position = "bottom",
+      panel.grid.minor = element_blank()
+    )
+
+  ggplot2::ggsave(
+    file.path(output_dir, paste0("hybrid_out_of_sample_level_forecast_errors_", output_stub, ".png")),
+    oos_error_plot,
+    width = 8.5,
+    height = 6,
+    units = "in",
+    dpi = 300
+  )
+  ggplot2::ggsave(
+    file.path(output_dir, paste0("hybrid_out_of_sample_level_forecast_errors_", output_stub, ".svg")),
+    oos_error_plot,
+    width = 8.5,
+    height = 6,
+    units = "in"
+  )
+
+  axis_limits <- range(c(oos_dt$actual, oos_dt$forecast), na.rm = TRUE) * 100
+
+  oos_scatter_plot <- ggplot(oos_dt, aes(x = actual * 100, y = forecast * 100)) +
+    geom_abline(slope = 1, intercept = 0, colour = "grey35", linewidth = 0.6) +
+    geom_point(aes(colour = factor(horizon), shape = includes_outlier_year), alpha = 0.75, size = 2) +
+    coord_equal(xlim = axis_limits, ylim = axis_limits) +
+    labs(
+      title = "Hybrid model actual versus forecast",
+      subtitle = "Rolling holdout forecasts of spending/GDP levels",
+      x = "Actual % of GDP",
+      y = "Forecast % of GDP",
+      colour = "Horizon",
+      shape = "Excluded outlier year"
+    ) +
+    theme_minimal(base_size = 11) +
+    theme(
+      legend.position = "bottom",
+      panel.grid.minor = element_blank()
+    )
+
+  ggplot2::ggsave(
+    file.path(output_dir, paste0("hybrid_out_of_sample_actual_vs_forecast_", output_stub, ".png")),
+    oos_scatter_plot,
+    width = 7,
+    height = 6.5,
+    units = "in",
+    dpi = 300
+  )
+  ggplot2::ggsave(
+    file.path(output_dir, paste0("hybrid_out_of_sample_actual_vs_forecast_", output_stub, ".svg")),
+    oos_scatter_plot,
+    width = 7,
+    height = 6.5,
+    units = "in"
+  )
+
+  invisible(list(forecasts = oos_dt, summary = oos_summary))
+}
+
+collect_hybrid_coefficients <- function(demographic_fit, arimax_fit) {
+  # Keep demographic and macro/time-series parameters in one tidy table so the
+  # leave-one-year-out diagnostic can compare each refit with the baseline.
+  demographic_coef <- data.table(
+    component = "demographic_level",
+    term = names(coef(demographic_fit)),
+    estimate = as.numeric(coef(demographic_fit))
+  )
+
+  macro_coef <- data.table(
+    component = "macro_difference_arimax",
+    term = names(coef(arimax_fit)),
+    estimate = as.numeric(coef(arimax_fit))
+  )
+
+  out <- rbindlist(list(demographic_coef, macro_coef), use.names = TRUE, fill = TRUE)
+  out[, term := gsub("`", "", term, fixed = TRUE)]
+  out
+}
+
+build_demographic_ols_leverage <- function(demographic_fit, dt_est_level) {
+  # Hat values identify years with unusual regressor combinations. Cook's
+  # distance identifies years that materially move the fitted level relationship.
+  # Studentized residuals are included so leverage can be separated from plain
+  # residual outliers.
+  model_rows <- as.integer(rownames(model.frame(demographic_fit)))
+  n <- length(model_rows)
+  k <- length(coef(demographic_fit))
+
+  out <- data.table(
+    year = dt_est_level$year[model_rows],
+    fitted_value = as.numeric(fitted(demographic_fit)),
+    residual = as.numeric(resid(demographic_fit)),
+    hat_value = as.numeric(hatvalues(demographic_fit)),
+    cooks_distance = as.numeric(cooks.distance(demographic_fit)),
+    studentized_residual = as.numeric(tryCatch(
+      rstudent(demographic_fit),
+      error = function(e) rep(NA_real_, n)
+    ))
+  )
+
+  out[, leverage_threshold := 2 * k / n]
+  out[, cooks_threshold := 4 / n]
+  out[, high_leverage := hat_value > leverage_threshold]
+  out[, high_cooks_distance := cooks_distance > cooks_threshold]
+  out[, large_studentized_residual := abs(studentized_residual) > 2]
+  out[, leverage_without_large_residual := high_leverage & !large_studentized_residual]
+  out[, influential_without_large_residual := high_cooks_distance & !large_studentized_residual]
+  out[]
+}
+
+build_hybrid_leave_one_year_out_leverage <- function(share_dt, dt_est_level, proj,
+                                                     baseline_model_inputs,
+                                                     baseline_arimax_fit,
+                                                     baseline_level_paths,
+                                                     demographic_features,
+                                                     economic_features,
+                                                     include_mean) {
+  # This is the main parameter-stability check. Each non-outlier historical year
+  # is removed in turn, then the complete hybrid model is re-estimated. A year
+  # is influential if removing it changes the explanatory coefficients or the
+  # final projection materially, even when that year is not a residual outlier.
+  macro_features <- paste0("d_", economic_features)
+  regressor_terms <- c("(Intercept)", "intercept", demographic_features, macro_features)
+
+  baseline_coefficients <- collect_hybrid_coefficients(
+    demographic_fit = baseline_model_inputs$demographic_fit,
+    arimax_fit = baseline_arimax_fit
+  )
+  baseline_coefficients[, is_regressor_parameter := term %in% regressor_terms]
+
+  baseline_base_proj <- baseline_level_paths$base_proj
+  final_projection_year <- max(baseline_base_proj$year, na.rm = TRUE)
+  baseline_final_projection <- baseline_base_proj[year == final_projection_year, value][[1]]
+
+  refits <- lapply(sort(unique(dt_est_level$year)), function(year_removed) {
+    refit <- tryCatch({
+      refit_inputs <- prepare_hybrid_model_inputs(
+        share_dt = share_dt,
+        dt_est_level = dt_est_level,
+        proj = proj,
+        demographic_features = demographic_features,
+        economic_features = economic_features,
+        include_mean = include_mean,
+        extra_excluded_years = year_removed
+      )
+
+      if (nrow(refit_inputs$estimation_dt) < 10) {
+        stop("Too few observations after excluding this year.", call. = FALSE)
+      }
+
+      y_refit <- as.numeric(refit_inputs$estimation_dt[[refit_inputs$y_col]])
+      arimax_refit <- fit_arimax_grid(
+        y = y_refit,
+        xreg = make_xreg(refit_inputs$estimation_dt, refit_inputs$x_features),
+        include_mean = include_mean,
+        d_grid = 0
+      )
+
+      level_paths_refit <- build_hybrid_level_paths(
+        share_dt = share_dt,
+        dt_est_model = refit_inputs$estimation_dt,
+        projection_dt = refit_inputs$projection_dt,
+        proj = proj,
+        arimax_fit = arimax_refit$fit,
+        y_est = y_refit,
+        macro_features = refit_inputs$x_features
+      )
+
+      refit_coefficients <- collect_hybrid_coefficients(
+        demographic_fit = refit_inputs$demographic_fit,
+        arimax_fit = arimax_refit$fit
+      )
+      refit_coefficients[, is_regressor_parameter := term %in% regressor_terms]
+
+      coefficient_comparison <- merge(
+        baseline_coefficients,
+        refit_coefficients,
+        by = c("component", "term", "is_regressor_parameter"),
+        all = TRUE,
+        suffixes = c("_baseline", "_leave_one_out")
+      )
+      coefficient_comparison[, year_removed := year_removed]
+      coefficient_comparison[
+        ,
+        change := fifelse(
+          is.na(estimate_baseline) | is.na(estimate_leave_one_out),
+          NA_real_,
+          estimate_leave_one_out - estimate_baseline
+        )
+      ]
+      coefficient_comparison[, abs_change := abs(change)]
+      coefficient_comparison[
+        ,
+        relative_abs_change := abs_change / pmax(abs(estimate_baseline), 1e-6)
+      ]
+
+      final_projection <- level_paths_refit$base_proj[year == final_projection_year, value][[1]]
+
+      summary_row <- data.table(
+        year_removed = year_removed,
+        status = "estimated",
+        p = arimax_refit$order[[1]],
+        d = arimax_refit$order[[2]],
+        q = arimax_refit$order[[3]],
+        aic = arimax_refit$fit$aic,
+        n_macro_estimation_years = length(y_refit),
+        final_projection_year = final_projection_year,
+        baseline_final_projection = baseline_final_projection,
+        leave_one_out_final_projection = final_projection,
+        final_projection_change = final_projection - baseline_final_projection,
+        abs_final_projection_change = abs(final_projection - baseline_final_projection),
+        max_abs_regressor_parameter_change = coefficient_comparison[
+          is_regressor_parameter == TRUE,
+          max(abs_change, na.rm = TRUE)
+        ],
+        max_relative_regressor_parameter_change = coefficient_comparison[
+          is_regressor_parameter == TRUE,
+          max(relative_abs_change, na.rm = TRUE)
+        ],
+        max_abs_any_parameter_change = coefficient_comparison[
+          ,
+          max(abs_change, na.rm = TRUE)
+        ],
+        error = NA_character_
+      )
+
+      list(summary = summary_row, coefficients = coefficient_comparison)
+    }, error = function(e) {
+      list(
+        summary = data.table(
+          year_removed = year_removed,
+          status = "failed",
+          p = NA_integer_,
+          d = NA_integer_,
+          q = NA_integer_,
+          aic = NA_real_,
+          n_macro_estimation_years = NA_integer_,
+          final_projection_year = final_projection_year,
+          baseline_final_projection = baseline_final_projection,
+          leave_one_out_final_projection = NA_real_,
+          final_projection_change = NA_real_,
+          abs_final_projection_change = NA_real_,
+          max_abs_regressor_parameter_change = NA_real_,
+          max_relative_regressor_parameter_change = NA_real_,
+          max_abs_any_parameter_change = NA_real_,
+          error = conditionMessage(e)
+        ),
+        coefficients = data.table()
+      )
+    })
+
+    refit
+  })
+
+  list(
+    summary = rbindlist(lapply(refits, `[[`, "summary"), use.names = TRUE, fill = TRUE),
+    coefficients = rbindlist(lapply(refits, `[[`, "coefficients"), use.names = TRUE, fill = TRUE)
+  )
+}
+
+write_hybrid_leverage_outputs <- function(output_dir, output_stub,
+                                          demographic_leverage,
+                                          leave_one_out_leverage) {
+  dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
+
+  fwrite(
+    demographic_leverage,
+    file.path(output_dir, paste0("hybrid_leverage_demographic_ols_", output_stub, ".csv"))
+  )
+  fwrite(
+    leave_one_out_leverage$summary,
+    file.path(output_dir, paste0("hybrid_leverage_leave_one_year_out_summary_", output_stub, ".csv"))
+  )
+  fwrite(
+    leave_one_out_leverage$coefficients,
+    file.path(output_dir, paste0("hybrid_leverage_leave_one_year_out_coefficients_", output_stub, ".csv"))
+  )
+
+  cooks_plot <- ggplot(
+    demographic_leverage,
+    aes(x = year, y = cooks_distance, fill = influential_without_large_residual)
+  ) +
+    geom_col(width = 0.75, colour = "white", linewidth = 0.15) +
+    geom_hline(aes(yintercept = cooks_threshold), colour = "#A23E48", linetype = "dashed") +
+    scale_fill_manual(
+      values = c("FALSE" = "#8DB7D9", "TRUE" = "#C14953"),
+      labels = c("FALSE" = "Below threshold or large residual", "TRUE" = "Influential without large residual")
+    ) +
+    labs(
+      title = "Demographic level regression influence",
+      subtitle = "Cook's distance; dashed line is the 4/n rule-of-thumb threshold",
+      x = NULL,
+      y = "Cook's distance",
+      fill = NULL
+    ) +
+    theme_minimal(base_size = 11) +
+    theme(
+      legend.position = "bottom",
+      panel.grid.minor = element_blank()
+    )
+
+  ggplot2::ggsave(
+    file.path(output_dir, paste0("hybrid_leverage_demographic_cooks_distance_", output_stub, ".png")),
+    cooks_plot,
+    width = 8.5,
+    height = 5.5,
+    units = "in",
+    dpi = 300
+  )
+  ggplot2::ggsave(
+    file.path(output_dir, paste0("hybrid_leverage_demographic_cooks_distance_", output_stub, ".svg")),
+    cooks_plot,
+    width = 8.5,
+    height = 5.5,
+    units = "in"
+  )
+
+  hat_plot <- ggplot(
+    demographic_leverage,
+    aes(x = hat_value, y = abs(studentized_residual), colour = leverage_without_large_residual)
+  ) +
+    geom_vline(aes(xintercept = leverage_threshold), colour = "#A23E48", linetype = "dashed") +
+    geom_hline(yintercept = 2, colour = "grey35", linetype = "dotted") +
+    geom_point(size = 2.4, alpha = 0.85) +
+    geom_text(
+      data = demographic_leverage[high_leverage == TRUE | high_cooks_distance == TRUE],
+      aes(label = year),
+      nudge_y = 0.12,
+      size = 3,
+      check_overlap = TRUE,
+      show.legend = FALSE
+    ) +
+    scale_colour_manual(
+      values = c("FALSE" = "#2E5E8C", "TRUE" = "#C14953"),
+      labels = c("FALSE" = "Other estimated year", "TRUE" = "High leverage without large residual")
+    ) +
+    labs(
+      title = "Leverage versus residual size",
+      subtitle = "High leverage years can matter even when residuals are not large",
+      x = "Hat value",
+      y = "Absolute studentized residual",
+      colour = NULL
+    ) +
+    theme_minimal(base_size = 11) +
+    theme(
+      legend.position = "bottom",
+      panel.grid.minor = element_blank()
+    )
+
+  ggplot2::ggsave(
+    file.path(output_dir, paste0("hybrid_leverage_hat_vs_residual_", output_stub, ".png")),
+    hat_plot,
+    width = 7.5,
+    height = 6,
+    units = "in",
+    dpi = 300
+  )
+  ggplot2::ggsave(
+    file.path(output_dir, paste0("hybrid_leverage_hat_vs_residual_", output_stub, ".svg")),
+    hat_plot,
+    width = 7.5,
+    height = 6,
+    units = "in"
+  )
+
+  loo_summary <- leave_one_out_leverage$summary[status == "estimated"]
+
+  if (nrow(loo_summary)) {
+    top_projection <- loo_summary[
+      order(-abs_final_projection_change)
+    ][seq_len(min(8, .N))]
+
+    projection_change_plot <- ggplot(
+      loo_summary,
+      aes(x = year_removed, y = final_projection_change * 100)
+    ) +
+      geom_hline(yintercept = 0, colour = "grey35", linewidth = 0.45) +
+      geom_line(colour = "#2E5E8C", linewidth = 0.7) +
+      geom_point(colour = "#2E5E8C", size = 1.9) +
+      geom_point(
+        data = top_projection,
+        colour = "#C14953",
+        size = 2.6
+      ) +
+      geom_text(
+        data = top_projection,
+        aes(label = year_removed),
+        nudge_y = 0.035,
+        size = 3,
+        check_overlap = TRUE
+      ) +
+      labs(
+        title = "Leave-one-year-out projection sensitivity",
+        subtitle = "Change in the final projection after re-estimating the full hybrid model",
+        x = "Year removed from estimation",
+        y = "Percentage points of GDP"
+      ) +
+      theme_minimal(base_size = 11) +
+      theme(panel.grid.minor = element_blank())
+
+    ggplot2::ggsave(
+      file.path(output_dir, paste0("hybrid_leverage_leave_one_year_out_projection_change_", output_stub, ".png")),
+      projection_change_plot,
+      width = 8.5,
+      height = 5.5,
+      units = "in",
+      dpi = 300
+    )
+    ggplot2::ggsave(
+      file.path(output_dir, paste0("hybrid_leverage_leave_one_year_out_projection_change_", output_stub, ".svg")),
+      projection_change_plot,
+      width = 8.5,
+      height = 5.5,
+      units = "in"
+    )
+
+    parameter_change_plot <- ggplot(
+      loo_summary,
+      aes(x = year_removed, y = max_relative_regressor_parameter_change * 100)
+    ) +
+      geom_line(colour = "#2E5E8C", linewidth = 0.7) +
+      geom_point(colour = "#2E5E8C", size = 1.9) +
+      labs(
+        title = "Leave-one-year-out parameter sensitivity",
+        subtitle = "Largest relative change among demographic and macro regressor coefficients",
+        x = "Year removed from estimation",
+        y = "Largest relative coefficient change (%)"
+      ) +
+      theme_minimal(base_size = 11) +
+      theme(panel.grid.minor = element_blank())
+
+    ggplot2::ggsave(
+      file.path(output_dir, paste0("hybrid_leverage_leave_one_year_out_parameter_change_", output_stub, ".png")),
+      parameter_change_plot,
+      width = 8.5,
+      height = 5.5,
+      units = "in",
+      dpi = 300
+    )
+    ggplot2::ggsave(
+      file.path(output_dir, paste0("hybrid_leverage_leave_one_year_out_parameter_change_", output_stub, ".svg")),
+      parameter_change_plot,
+      width = 8.5,
+      height = 5.5,
+      units = "in"
+    )
+  }
+
+  invisible(list(
+    demographic_leverage = demographic_leverage,
+    leave_one_out_leverage = leave_one_out_leverage
+  ))
+}
+
 calculate_vif <- function(dt, features) {
   # VIFs diagnose whether the regressors are close to linear combinations of
   # each other. This is especially important for age shares, which move slowly
@@ -1887,20 +2898,17 @@ if (nrow(dt_est_level) < 10) {
 proj <- prepare_projection_drivers(share_dt)
 cointegration <- cointegration_diagnostics(
   dt = dt_est_level,
-  features = features,
-  include_mean = include_mean
+  features = c(demographic_level_features, economic_features),
+  include_mean = TRUE
 )
 
-model_inputs <- build_model_inputs(
+model_inputs <- prepare_hybrid_model_inputs(
   share_dt = share_dt,
   dt_est_level = dt_est_level,
   proj = proj,
-  features = features,
-  model_form = model_form,
-  include_mean = include_mean,
-  cointegration = cointegration,
-  age_features_all = age_features_all,
-  reference_age_group = reference_age_group
+  demographic_features = demographic_level_features,
+  economic_features = economic_features,
+  include_mean = include_mean
 )
 
 dt_est <- model_inputs$estimation_dt
@@ -1914,7 +2922,7 @@ if (nrow(dt_est) < 10) {
 y_est <- as.numeric(dt_est[[y_col]])
 xreg_est <- make_xreg(dt_est, model_features)
 
-arima_d_grid <- if (model_form == "level") 0:1 else 0
+arima_d_grid <- 0
 
 arimax_result <- fit_arimax_grid(
   y = y_est,
@@ -1931,14 +2939,14 @@ hist_dt <- data.table(
   value = share_dt$gov_gdp
 )
 
-level_paths <- build_level_paths(
-  model_form = model_form,
+level_paths <- build_hybrid_level_paths(
   share_dt = share_dt,
   dt_est_model = dt_est,
+  projection_dt = model_inputs$projection_dt,
   proj = proj,
-  model_inputs = model_inputs,
   arimax_fit = arimax_fit,
-  y_est = y_est
+  y_est = y_est,
+  macro_features = model_features
 )
 
 fitted_dt <- level_paths$fitted_dt
@@ -1959,21 +2967,23 @@ debt_path_input <- plot_dt[
   .(year, series, Consolidated = value)
 ]
 
-model_coefficients <- data.table(
-  term = names(coef(arimax_fit)),
-  estimate = as.numeric(coef(arimax_fit))
+model_coefficients <- collect_hybrid_coefficients(
+  demographic_fit = model_inputs$demographic_fit,
+  arimax_fit = arimax_fit
 )
 
 model_summary <- data.table(
-  model = "ARIMAX",
+  model = "Hybrid demographic-level/macro-difference ARIMAX",
   model_form = model_form,
   model_variant = model_variant,
   no_intercept = no_intercept,
+  macro_diff_include_drift = macro_diff_include_drift,
   include_mean = include_mean,
-  reference_age_group = if (isTRUE(no_intercept) && model_form == "level") NA_character_ else reference_age_group,
+  reference_age_group = reference_age_group,
   specification_note = specification_note,
-  level_features = paste(features, collapse = ", "),
-  model_features = paste(model_features, collapse = ", "),
+  demographic_level_features = paste(demographic_level_features, collapse = ", "),
+  macro_difference_features = paste(model_features, collapse = ", "),
+  model_features = paste(c("d_demographic_level", model_features), collapse = ", "),
   outcome = y_col,
   p = arimax_order[[1]],
   d = arimax_order[[2]],
@@ -1987,31 +2997,27 @@ model_summary <- data.table(
   cointegration_conclusion = cointegration$test$conclusion[[1]]
 )
 
-decomposition <- if (model_form == "level") {
-  build_arimax_decomposition(
-    share_dt = share_dt,
-    hist_dt = hist_dt,
-    fitted_dt = fitted_dt,
-    proj = proj,
-    base_proj = base_proj,
-    features = features,
-    arimax_fit = arimax_fit,
-    base_year = decomposition_base_year,
-    include_mean = include_mean
-  )
-} else {
-  build_transformed_decomposition(
-    model_dt = dt_est,
-    projection_model_dt = projection_model_dt,
-    hist_dt = hist_dt,
-    fitted_dt = fitted_dt,
-    base_proj = base_proj,
-    model_features = model_features,
-    arimax_fit = arimax_fit,
-    base_year = decomposition_base_year,
-    include_mean = include_mean
-  )
-}
+decomposition <- build_hybrid_decomposition(
+  model_dt = dt_est,
+  projection_model_dt = projection_model_dt,
+  hist_dt = hist_dt,
+  fitted_dt = fitted_dt,
+  base_proj = base_proj,
+  macro_features = model_features,
+  arimax_fit = arimax_fit,
+  base_year = decomposition_base_year,
+  include_mean = include_mean
+)
+
+age_decomposition <- build_hybrid_age_decomposition(
+  share_dt = share_dt,
+  proj = proj,
+  demographic_fit = model_inputs$demographic_fit,
+  demographic_features = demographic_level_features,
+  base_year = decomposition_base_year,
+  reference_age_group = reference_age_group,
+  included_years = c(dt_est$year, proj$year)
+)
 
 output_stub <- paste0(measure, "_", level, "_", model_variant)
 diagnostics_dir <- file.path(output_dir, "diagnostics")
@@ -2074,6 +3080,32 @@ fwrite(
     )
   )
 )
+fwrite(
+  age_decomposition$long,
+  file.path(
+    output_dir,
+    paste0(
+      "arimax_spending_demographic_age_decomposition_since_",
+      decomposition_base_year,
+      "_",
+      output_stub,
+      ".csv"
+    )
+  )
+)
+fwrite(
+  age_decomposition$totals,
+  file.path(
+    output_dir,
+    paste0(
+      "arimax_spending_demographic_age_decomposition_totals_since_",
+      decomposition_base_year,
+      "_",
+      output_stub,
+      ".csv"
+    )
+  )
+)
 
 diagnostics <- write_diagnostics(
   diagnostics_dir = diagnostics_dir,
@@ -2090,6 +3122,46 @@ diagnostics <- write_diagnostics(
   y_col = y_col,
   d_grid = arima_d_grid,
   cointegration = cointegration
+)
+
+demographic_leverage <- build_demographic_ols_leverage(
+  demographic_fit = model_inputs$demographic_fit,
+  dt_est_level = dt_est_level
+)
+
+hybrid_leave_one_out_leverage <- build_hybrid_leave_one_year_out_leverage(
+  share_dt = share_dt,
+  dt_est_level = dt_est_level,
+  proj = proj,
+  baseline_model_inputs = model_inputs,
+  baseline_arimax_fit = arimax_fit,
+  baseline_level_paths = level_paths,
+  demographic_features = demographic_level_features,
+  economic_features = economic_features,
+  include_mean = include_mean
+)
+
+hybrid_leverage_outputs <- write_hybrid_leverage_outputs(
+  output_dir = diagnostics_dir,
+  output_stub = output_stub,
+  demographic_leverage = demographic_leverage,
+  leave_one_out_leverage = hybrid_leave_one_out_leverage
+)
+
+hybrid_oos <- hybrid_rolling_level_forecasts(
+  share_dt = share_dt,
+  demographic_features = demographic_level_features,
+  economic_features = economic_features,
+  include_mean = include_mean,
+  min_origin = 2010,
+  horizon = 5
+)
+
+hybrid_oos_outputs <- write_hybrid_out_of_sample_outputs(
+  output_dir = output_dir,
+  output_stub = output_stub,
+  share_dt = share_dt,
+  oos_dt = hybrid_oos
 )
 
 projection_plot <- ggplot(plot_dt, aes(x = year, y = value * 100, colour = series)) +
@@ -2210,6 +3282,73 @@ ggplot2::ggsave(
     )
   ),
   decomposition_plot,
+  width = 9,
+  height = 6.5,
+  units = "in"
+)
+
+age_decomposition_plot <- ggplot(
+  age_decomposition$long,
+  aes(x = year, y = contribution * 100, fill = driver_label)
+) +
+  geom_col(width = 0.85) +
+  geom_line(
+    data = age_decomposition$totals,
+    aes(x = year, y = demographic_component * 100, group = 1),
+    inherit.aes = FALSE,
+    linewidth = 0.9,
+    colour = "black"
+  ) +
+  geom_vline(xintercept = max(share_dt$year), linetype = "dotted", colour = "grey45") +
+  labs(
+    title = paste0("Age-group drivers of the demographic component since ", decomposition_base_year),
+    subtitle = paste0(
+      "Bars split the demographic level component by included age-share terms; solid line is the total demographic component. ",
+      reference_age_group,
+      " is the omitted reference age group."
+    ),
+    x = NULL,
+    y = "Percentage points of GDP",
+    fill = NULL,
+    caption = "Sources: ABS, e61 projections."
+  ) +
+  theme_minimal(base_size = 11) +
+  theme(
+    legend.position = "bottom",
+    panel.grid.minor = element_blank(),
+    plot.caption = element_text(hjust = 0)
+  )
+
+ggplot2::ggsave(
+  file.path(
+    output_dir,
+    paste0(
+      "arimax_spending_demographic_age_decomposition_since_",
+      decomposition_base_year,
+      "_",
+      output_stub,
+      ".png"
+    )
+  ),
+  age_decomposition_plot,
+  width = 9,
+  height = 6.5,
+  units = "in",
+  dpi = 300
+)
+
+ggplot2::ggsave(
+  file.path(
+    output_dir,
+    paste0(
+      "arimax_spending_demographic_age_decomposition_since_",
+      decomposition_base_year,
+      "_",
+      output_stub,
+      ".svg"
+    )
+  ),
+  age_decomposition_plot,
   width = 9,
   height = 6.5,
   units = "in"
