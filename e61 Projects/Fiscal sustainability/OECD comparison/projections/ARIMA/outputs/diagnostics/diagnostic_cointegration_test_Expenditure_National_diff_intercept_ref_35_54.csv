@@ -1,2 +1,0 @@
-test,statistic,p_value,conclusion,note
-Engle-Granger residual ADF,-2.72796691377839,0.285602963666514,no strong evidence of cointegration,"This is an Engle-Granger residual ADF diagnostic. The p-value uses the tseries ADF approximation, so treat it as a guide rather than a formal critical value."

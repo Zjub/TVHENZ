@@ -1,0 +1,339 @@
+measure,oecd_measure_label
+BSII,Balance of primary income (balance of payments basis)
+BSIID,Balance of primary income in USD (balance of payments basis)
+BSIIQ,Balance of primary income as a percent of GDP
+CAPOG,Net capital outlays of the government
+CB,Current account balance
+CBD,Current account balance in USD
+CBGDPR,Current account balance as a percentage of GDP
+CBR,"Current account balance, residual item"
+CBRD,"Current account balance in USD, residual item"
+CFKG,General government consumption of fixed capital
+CG,"Government final consumption expenditure, nominal value, GDP expenditure approach"
+CGAA,"General government final consumption expenditure, nominal value, appropriation account"
+CGFL,Central government gross financial liabilities
+CGFLQ,Central government gross financial liabilities as a percentage of GDP
+CGFLQ_DESK,"Central government gross financial liabilities as a percentage of GDP, specific definition"
+CGFL_DESK,"Central government gross financial liabilities, specific definition"
+CGINTP_DESK,"Gross central government interest payments, specific definition"
+CGINTR_DESK,"Gross central government interest receipts, specific definition"
+CGV,"Government final consumption expenditure, volume"
+CGV_ANNPCT,"Government final consumption expenditure, volume, growth"
+CLF,Employment coefficient
+CLFS,Trend employment coefficient
+CNINTP_DESK,"Net general government interest payments, specific definition"
+CO2,"Gross CO2 emissions, million tonnes"
+CP,"Private final consumption expenditure, nominal value, GDP expenditure approach"
+CPAA,"Private final consumption expenditure, nominal value, appropriation account"
+CPI,Consumer price index
+CPIDR,Indicator of competitiveness based on relative consumer prices
+CPIF,Consumer price index with fixed interest rates
+CPIH,"Consumer price index, harmonised"
+CPIH_YTYPCT,Harmonised headline inflation
+CPI_YTYPCT,Headline inflation
+CPV,"Private final consumption expenditure, volume"
+CPV_ANNPCT,"Private final consumption expenditure, volume, growth"
+CQ_FBGSV,"Net exports, contributions to changes in real GDP"
+CQ_ISKV,"Change in inventories, contributions to changes in real GDP"
+CTGSVD,"Contribution to world trade growth, goods and services (in USD, OECD reference year prices)"
+ECSA,"Employment, country specific"
+EE,"Dependent employment, total economy"
+EFFLABS,Trend labour efficiency
+EG,General government employment
+ENE,Energy and GHG emissions
+EQPF,Adjustment for the change in net equity of households in pension fund reserves
+ER1574,"Employment rate, supply definition, as a percentage of population aged 15-74"
+ERS1574,"Trend employment rate, as a percentage of population aged 15-74"
+ES,Total self-employed
+ET,Total employment (labour force survey basis)
+ETPT,Potential employment of total economy
+ET_ANNPCT,"Total employment, growth"
+ET_NA,Total employment (national accounts basis)
+EXCH,"Exchange rate, USD per national currency"
+EXCHEB,"Nominal effective exchange rate, chain-linked, overall weights"
+EXCHER,"Real effective exchange rate, constant trade weights"
+EXCHUD,"Exchange rate, national currency per USD"
+EXP,Expenditure and GDP
+EXT,"External sectors, trade and payments"
+FBGS,"Net exports of goods and services, nominal value (national accounts basis)"
+FBGSD,"Net exports of goods and services, nominal value in USD (national accounts basis)"
+FBGSQ,Net exports of goods and services as a percent of GDP
+FDD,"Final domestic expenditure, nominal value"
+FDDV,"Final domestic expenditure, volume"
+FDDV_ANNPCT,"Final domestic expenditure, volume, growth"
+GAP,Output gap as a percentage of potential GDP
+GAPER,"Employment rate gap, percentage points"
+GDP,"Gross domestic product, nominal value, market prices"
+GDPML,"Mainland gross domestic product , nominal value, market prices"
+GDPMLV,"Mainland gross domestic product, volume, market prices"
+GDPOFS,"Offshore gross domestic product, nominal value, market prices"
+GDPOFSV,"Offshore gross domestic product, volume, market prices"
+GDPTR,"Potential output, nominal value"
+GDPV,"Gross domestic product, volume, market prices"
+GDPVCSA,"Gross domestic product, volume, country specific"
+GDPVD,"Gross domestic product, volume in USD, at constant purchasing power parities"
+GDPVD_CAP,"Gross domestic product per capita, volume in USD, at constant purchasing power parities"
+GDPVTR,Potential output volume
+GDPVTRD,"Potential gross domestic product, volume, USD at 2021 Purchasing Power Parities"
+GDPVTRD_CAP,"Potential gross domestic product per capita, volume, USD at 2021 Purchasing Power Parities"
+GDPVTR_ANNPCT,"Potential output, volume, growth"
+GDPV_ANNPCT,"Gross domestic product, volume, growth"
+GDPV_CAP,"Gross domestic product per capita, volume"
+GDPV_USD,"Gross domestic product, volume in USD, constant exchange rates"
+GDP_ANNPCT,"Gross domestic product, nominal value, growth"
+GDP_USD,"Gross domestic product, nominal value in USD, constant exchange rates"
+GFAR,General government gross financial assets as a percentage of GDP
+GGFL,General government gross financial liabilities
+GGFLM,"Gross public debt, Maastricht criterion"
+GGFLMQ,"Gross public debt, Maastricht criterion as a percentage of GDP"
+GGFLQ,General government gross financial liabilities as a percentage of GDP
+GGFLQ_DESK,"General government gross financial liabilities as a percentage of GDP, specific definition"
+GGFL_DESK,"General government gross financial liabilities, specific definition"
+GGINTP,Gross general government interest payments
+GGINTP_DESK,"Gross general government interest payments, specific definition"
+GGINTR,Gross general government interest receipts
+GGINTR_DESK,"Gross general government interest receipts, specific defintion"
+GNFL,General government net financial liabilities
+GNFLQ,General government net financial liabilities as a percentage of GDP
+GNINTP,Net general government interest payments
+GNINTP_DESK,"Net general government interest payments, specific definition"
+GNINTQ,Net general government interest payments as a percentage of GDP
+GNP,"Gross national product, nominal value, market prices"
+GNPV,"Gross national product, volume, market prices"
+GOV,Government accounts
+HOU,Household sector accounts
+HRS,"Hours worked per worker, total economy"
+IBGV,"Private non-residential and government fixed capital formation, volume"
+IBV,"Private non-residential gross fixed capital formation, volume"
+ICSA,"Fixed investment, country specific, volume"
+IFU3,Ratio of potential to actual real GDP of the total economy
+IGAA,"General government fixed capital formation, nominal value, appropriation account"
+IGV,"Government gross fixed capital formation, volume"
+IHV,"Gross fixed capital formation, housing, volume"
+IOBV,"Gross fixed capital formation of private non-residential industry excluding shipping and oil, volume"
+IOILV,"Gross fixed capital formation of the oil industry, volume"
+IRCB,Central bank key interest rate
+IRL,Long-term interest rate on government bonds
+IRS,Short-term interest rate
+ISHV,"Gross fixed capital formation of the shipping industry, volume"
+IT,"Gross fixed capital formation, total, nominal value"
+ITISK,"Gross capital formation, total, nominal value"
+ITISKV,"Gross capital formation, total, volume"
+ITV,"Gross fixed capital formation, total, volume"
+ITV_ANNPCT,"Gross fixed capital formation, total, volume, growth"
+KTPV,"Productive capital stock, volume"
+KTPV_ANNPCT,"Productive capital stock, volume, growth"
+KTPV_AV,"Productive capital stock, volume, annual average"
+KTPV_AV_ANNPCT,"Productive capital stock, volume, annual average, growth"
+LAB,Labour markets
+LF,Labour force
+LFPR1574,"Labour force participation rate, as a percentage of population aged 15-74"
+MFDDV,"Modified final domestic expenditure, volume"
+MFDDVTR,"Potential output, modified final domestic expenditure, volume"
+MGS,"Imports of goods and services, nominal value (national accounts basis)"
+MGSD,"Imports of goods and services, nominal value in USD (national accounts basis)"
+MGSV,"Imports of goods and services, volume (national accounts basis)"
+MGSVD,"Imports of goods and services, volume in USD (national accounts basis)"
+MGSV_ANNPCT,"Imports of goods and services, volume, growth (national accounts basis)"
+MON,Monetary data
+MPEN,"Import penetration, goods and services"
+MSHA,Share of value imports of goods and services in world imports in USD
+NLG,General government net lending
+NLGA,Cyclically-adjusted general government net lending
+NLGC,Central government net lending
+NLGCQ,Central government net lending as a percentage of GDP
+NLGCQ_DESK,"Central government net lending as a percentage of GDP, specific defintion"
+NLGCX,Central government primary balance
+NLGCXQ,Central government primary balance as a percentage of GDP
+NLGCX_DESK,"Central government primary balance, specific definition"
+NLGC_DESK,"Central government net lending, specific definition"
+NLGML,"General government net lending, mainland"
+NLGMLQ,"General government net lending, mainland, as a percentage of mainland GDP"
+NLGQ,General government net lending as a percentage of GDP
+NLGQA,Cyclically-adjusted general government net lending as a percentage of potential GDP
+NLGQU,Underlying general government net lending as a percentage of potential GDP
+NLGQ_DESK,"General government net lending as a percentage of GDP, specific definition"
+NLGU,Underlying general government net lending
+NLGX,General government primary balance
+NLGXA,Cyclically-adjusted general government primary balance
+NLGXQ,General government primary balance as a percentage of GDP
+NLGXQA,Cyclically-adjusted general government primary balance as a percentage of potential GDP
+NLGXQU,Underlying general government primary balance as a percentage of potential GDP
+NLGXU,Underlying general government primary balance
+NLGX_DESK,"General government primary balance, specific definition"
+NLG_DESK,"General government net lending, specific definition"
+NOO,Net one-offs of general government
+NOOQ,Net one-offs of general government as a percentage of potential GDP
+NTR,Balance of secondary income (balance of payments basis)
+NTRD,Balance of secondary income in USD (balance of payments basis)
+NTRQ,Balance of secondary income as a percent of GDP
+OIL,Oil and commodities
+OILCON,"Oil market conditions, demand"
+OILSUP,"Oil market conditions, supply"
+OILXNT,"Oil market conditions, trade"
+PCG,"Government final consumption expenditure, deflator"
+PCORE,Core inflation index
+PCOREH,"Core inflation index, harmonised"
+PCOREH_YTYPCT,Harmonised core inflation
+PCORE_YTYPCT,Core inflation
+PCP,"Private final consumption expenditure, deflator"
+PCP_YTYPCT,"Private final consumption expenditure, deflator, growth"
+PDTY,"Labour productivity, total economy"
+PFDD,"Final domestic expenditure, deflator"
+PGDP,"Gross domestic product, market prices, deflator"
+PGDPML,"Mainland gross domestic product, market prices, deflator"
+PGDPOFS,"Offshore gross domestic product, market prices, deflator"
+PGDP_ANNPCT,"Gross domestic product, market prices, deflator, growth"
+PGNP,"Gross national product, market prices, deflator"
+PIGAA,"General government fixed capital formation, deflator, based on appropriation account"
+PIT,"Gross total fixed capital formation, deflator"
+PITISK,"Gross capital formation, deflator"
+PMGS,"Imports of goods and services, deflator (national accounts basis)"
+PMGSD,"Imports of goods and services in USD, deflator (national accounts basis)"
+PMGSX,Price of non-commodity imports of goods and services
+PMNW,Price of commodity imports
+PMSH,Shadow price of goods and services imports
+PMSHX,Shadow price of non-commodity goods and services imports
+POP,Total population
+POP1574,"Working-age population, age 15-74"
+POPS,Trend total population
+POPS1574,"Trend working-age population, age 15-74"
+POPS_1574,Trend working-age population (15 to 74)
+PPP,"Purchasing power parity, national currency per USD"
+PRI,Prices and deflators
+PSBR,Public sector borrowing requirement
+PSBRQ,Public sector borrowing requirement as a percentage of GDP
+PTDD,"Total domestic expenditure, deflator"
+PXC,Competitors' price of goods and services exports
+PXCX,Competitors' price of non-commodity goods and services exports
+PXGS,"Exports of goods and services, deflator (national accounts basis)"
+PXGSD,"Exports of goods and services in USD, deflator (national accounts basis)"
+PXGSX,Price of non-commodity exports of goods and services
+PXNW,Price of commodity exports
+RATE_GGINTP,"Implicit interest rate paid on gross government financial liabilities, %"
+RFSH,Share of outstanding marketable debt to refinance within coming period
+RPMGS,Relative price of imported goods and services
+RPXGS,Relative price of exported goods and services
+RSCRP,Productive capital stock scrapping rate
+R_GDPVWDS,Ratio of GDPV (sa) to GDPV (adjusted for working days and seasonal correction)
+SAVG,Net general government saving
+SAVGML,"Net general government saving, mainland"
+SAVH,Net saving of households and non-profit institutions serving households
+SAVH_G,Gross saving of households and non-profit institutions serving households
+SEL,Selected variables:  ready-made growth rates
+SHARE_COAL,"Share of coal in total primary energy supply, fraction between 0 and 1"
+SHARE_GAS,"Share of gas in total primary energy supply, fraction between 0 and 1"
+SHARE_HYDRO,"Share of hydro in total primary energy supply, fraction between 0 and 1"
+SHARE_NUCLEAR,"Share of nuclear in total primary energy supply, fraction between 0 and 1"
+SHARE_OIL,"Share of oil in total primary energy supply, fraction between 0 and 1"
+SHARE_ORENEW,"Share of other renewables in total primary energy supply, fraction between 0 and 1"
+SHARE_SOLAR,"Share of solar in total primary energy supply, fraction between 0 and 1"
+SHARE_WIND,"Share of wind in total primary energy supply, fraction between 0 and 1"
+SHTGSVD,"Share of country's trade in world trade (volume, in USD at OECD reference year prices)"
+SRATIO,Net saving ratio of households and non-profit institutions serving households
+SRATIO_G,Gross saving ratio of households and non-profit institutions serving households
+SSPG,Social security benefits paid by general government
+SSRG,Social security contributions received by general government
+SSRGA,Cyclically-adjusted social security contributions received by general government
+SUP,Supply block
+TAXQ,Taxes and social security contributions received by general government as a percentage of GDP
+TDD,"Total domestic expenditure, nominal value"
+TDDV,"Total domestic expenditure, volume"
+TDDV_ANNPCT,"Total domestic expenditure, volume, growth"
+TES,"Total primary energy supply, terajoules"
+TEV,"Total expenditure, volume"
+TEVD,"Total expenditure, volume in USD"
+TGSVD,"Goods and services trade, volume in USD"
+TGSVD_ANNPCT,"Goods and services trade, volume in USD, growth"
+TIND,Taxes on production and imports
+TINDA,Cyclically-adjusted taxes on production and imports
+TINDML,"Taxes on production and imports, mainland"
+TINDOFS,"Taxes on production and imports, offshore"
+TKPG,Capital transfers paid and other capital payments
+TKTRG,Capital tax and transfers receipts
+TOCR,Other current receipts of general government
+TOCRML,"Other current receipts of general government, mainland"
+TOCROFS,"Other current receipts of general government, offshore"
+TRPESH,Employees and self-employed contributions to social security
+TRPTSH,Total employers social contributions
+TTRADE,"Terms of trade, goods and services"
+TY,Total direct taxes received by general government
+TYA,Cyclically-adjusted total direct taxes received by general government
+TYB,Direct taxes on business
+TYBA,Cyclically-adjusted direct taxes on business
+TYBML,"Direct taxes on business, mainland"
+TYBOFS,"Direct taxes on business, offshore"
+TYH,Direct taxes on households
+TYHA,Cyclically-adjusted direct taxes on households
+TYML,"Total direct taxes received by general government, mainland"
+ULC,Unit labour cost in total economy
+ULCDR,Indicator of competitiveness based on relative unit labour costs in total economy
+UN,"Unemployment, level"
+UNR,Unemployment rate
+WAGE,"Wages, total economy"
+WPBRENT,"Crude oil price, FOB, USD per barrel, spot Brent"
+WPHAMD,"Agricultural raw materials, world price,  (USD basis)"
+WPHD,"Primary commodities excluding energy, world price,  (USD basis)"
+WPHFBD,"Food and tropical beverages, world price,  (USD basis)"
+WPHFD,"Food, world price,  (USD basis)"
+WPHMMD,"Minerals, ores and metals, world price,  (USD basis)"
+WPHTBD,"Tropical beverages, world price,  (USD basis)"
+WPI,Wholesale price
+WPOIL,"OECD crude oil import price, CIF, USD per barrel"
+WRT,"Wage rate, total economy"
+WSSH,Compensation of employees received by households
+WSSS,"Compensation of employees, total economy"
+WSST,"Compensation rate, total economy"
+XGS,"Exports of goods and services, nominal value (national accounts basis)"
+XGSD,"Exports of goods and services, nominal value in USD (national accounts basis)"
+XGSV,"Exports of goods and services, volume (national accounts basis)"
+XGSVD,"Exports of goods and services, volume in USD (national accounts basis)"
+XGSV_ANNPCT,"Exports of goods and services, volume, growth (national accounts basis)"
+XMKT,"Export market for goods and services, volume in USD"
+XPERF,"Export performance for goods and services, volume"
+XPERF_ANNPCT,"Export performance for goods and services, volume, growth"
+XSHA,Share of value exports of goods and services in world exports in USD
+YDH,Net disposable income of households and non-profit institutions serving households
+YDH_G,Gross disposable income of household and non-profit institutions serving households
+YDRH,Real net disposable income of households and non-profit institutions serving households
+YDRH_G,Real gross disposable income of households and non-profit institutions serving households
+YPEPG,Property income paid by general government
+YPEPGX,"Property income paid by general government, excluding interest payments"
+YPERG,Property income received by general government
+YPERGML,"Property income received by general government, mainland"
+YPERGOFS,"Property income received by general government, offshore"
+YPERGX,"Property income received by general government, excluding interest receipts"
+YPG,Current disbursements of general government
+YPGA,Cyclically-adjusted current disbursements of general government
+YPGCT,Total disbursements of central government
+YPGCT_DESK,"Total disbursements of central government, specific definition"
+YPGQ,Current disbursements of general government as a percentage of GDP
+YPGQA,Cyclically-adjusted current disbursements of general government as a percentage of potential GDP
+YPGT,Total disbursements of general government
+YPGTQ,Total disbursements of general government as a percentage of GDP
+YPGTX,Total disbursements of general government excluding gross interest payments
+YPGT_DESK,"Total disbursements of general government, specific definition"
+YPGX,Current disbursements of general government excluding gross interest payments
+YPGXA,Cyclically-adjusted current disbursements of general government excluding gross interest payments
+YPGXQA,"Cyclically-adjusted current disbursements of general government excluding gross interest payments, as a percentage of potential GDP"
+YPH,Current disbursements of households and non-profit institutions serving households
+YPOTG,Other current outlays of general government
+YPOTH,Other current income payable by households and non-profit institutions serving households
+YRG,Current receipts of general government
+YRGA,Cyclically-adjusted current receipts of general government
+YRGCT,Total receipts of central government
+YRGCT_DESK,"Total receipts of central government, specific definition"
+YRGML,"Current receipts mainland, general government"
+YRGOFS,"Current receipts offshore, general government"
+YRGQ,Current receipts of general government as a percentage of GDP
+YRGQA,Cyclically-adjusted current receipts of general government as a percentage of potential GDP
+YRGT,Total receipts of general government
+YRGTML,"Total receipts, mainland, general government"
+YRGTQ,Total receipts of general government as a percentage of GDP
+YRGT_DESK,"Total receipts of general government, specific definition"
+YRGX,Current receipts of general government excluding gross interest receipts
+YRH,Net current receipts of households and non-profit institutions serving households
+YRH_G,Gross current receipts of households and non-profit institutions serving households
+YROTH,Other current income received by households and non-profit institutions serving households
+YSE,Net self-employment income received by households
+YSE_G,Gross self-employment income received by households

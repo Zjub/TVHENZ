@@ -1,0 +1,7 @@
+model_name,status,features,p,d,q,aic,first_projection_year,first_projection_value,final_projection_year,final_projection_value
+full,ok,"d_tot, d_rp_g, d_unemp",2,0,2,-291.005025919864,2026,-0.00178638436390294,2071,3.45862928151923e-05
+economic_only,ok,"d_tot, d_rp_g, d_unemp",2,0,2,-291.005025919864,2026,-0.00178638436390294,2071,3.45862928151923e-05
+no_terms_of_trade,ok,"d_rp_g, d_unemp",2,0,2,-288.920640991891,2026,0.00473260542116699,2071,3.87727093369993e-05
+no_relative_prices,ok,"d_tot, d_unemp",2,0,2,-281.025742064602,2026,0.0087068393074807,2071,0.000611039192400886
+no_unemployment,ok,"d_tot, d_rp_g",0,0,0,-273.492843245369,2026,-0.00656562089615319,2071,0
+no_error_correction,ok,"d_tot, d_rp_g, d_unemp",2,0,2,-291.005025919864,2026,-0.00178638436390294,2071,3.45862928151923e-05

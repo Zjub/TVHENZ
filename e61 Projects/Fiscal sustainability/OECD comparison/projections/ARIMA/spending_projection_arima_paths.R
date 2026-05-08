@@ -75,7 +75,7 @@ model_form <- match.arg(model_form, c("level", "ECM", "diff"))
 # FALSE uses the more standard regression/ARIMAX coding: include an intercept
 # and drop one age group as the reference category. The coefficients on included
 # age groups are then interpreted relative to the omitted group.
-no_intercept <- FALSE
+no_intercept <- TRUE # Set to true when using difference or ECM approaches - as otherwise projections are sensitive to misspecification of the drift term.
 reference_age_group <- "35_54"
 
 age_features_all <- c(
@@ -101,13 +101,23 @@ features <- if (isTRUE(no_intercept)) {
 features <- c(features, economic_features)
 include_mean <- !isTRUE(no_intercept)
 
-model_variant <- if (isTRUE(no_intercept)) {
+model_variant <- if (isTRUE(no_intercept) && model_form == "level") {
   "no_intercept_all_ages"
+} else if (isTRUE(no_intercept)) {
+  paste0("no_drift_ref_d_", reference_age_group)
 } else {
   paste0("intercept_ref_", reference_age_group)
 }
 
 model_variant <- paste(model_form, model_variant, sep = "_")
+
+specification_note <- if (isTRUE(no_intercept) && model_form == "level") {
+  "no intercept, all age groups"
+} else if (isTRUE(no_intercept)) {
+  paste0("no drift, differenced reference age group = ", reference_age_group)
+} else {
+  paste0("intercept, reference age group = ", reference_age_group)
+}
 
 # -------------------- Paths --------------------
 
@@ -782,7 +792,8 @@ prepare_projection_difference_drivers <- function(share_dt, proj, features) {
 }
 
 build_model_inputs <- function(share_dt, dt_est_level, proj, features,
-                               model_form, include_mean, cointegration) {
+                               model_form, include_mean, cointegration,
+                               age_features_all, reference_age_group) {
   if (model_form == "level") {
     return(list(
       estimation_dt = copy(dt_est_level),
@@ -794,6 +805,19 @@ build_model_inputs <- function(share_dt, dt_est_level, proj, features,
   }
 
   diff_features <- paste0("d_", features)
+
+  # Differenced age shares are exactly collinear when all age groups are
+  # included: because the level shares sum to one, the first differences sum to
+  # zero. Dropping one differenced age group is an identification choice, not a
+  # drift term. This lets no_intercept = TRUE mean "no annual drift" for the
+  # diff/ECM models while keeping the design matrix estimable.
+  diff_age_features <- paste0("d_", intersect(features, age_features_all))
+  reference_diff_age <- paste0("d_", reference_age_group)
+
+  if (length(diff_age_features) == length(age_features_all) && reference_diff_age %in% diff_features) {
+    diff_features <- setdiff(diff_features, reference_diff_age)
+  }
+
   diff_dt <- add_model_differences(share_dt, features)
   diff_proj <- prepare_projection_difference_drivers(share_dt, proj, features)
 
@@ -1874,7 +1898,9 @@ model_inputs <- build_model_inputs(
   features = features,
   model_form = model_form,
   include_mean = include_mean,
-  cointegration = cointegration
+  cointegration = cointegration,
+  age_features_all = age_features_all,
+  reference_age_group = reference_age_group
 )
 
 dt_est <- model_inputs$estimation_dt
@@ -1944,7 +1970,8 @@ model_summary <- data.table(
   model_variant = model_variant,
   no_intercept = no_intercept,
   include_mean = include_mean,
-  reference_age_group = if (isTRUE(no_intercept)) NA_character_ else reference_age_group,
+  reference_age_group = if (isTRUE(no_intercept) && model_form == "level") NA_character_ else reference_age_group,
+  specification_note = specification_note,
   level_features = paste(features, collapse = ", "),
   model_features = paste(model_features, collapse = ", "),
   outcome = y_col,
@@ -2080,11 +2107,7 @@ projection_plot <- ggplot(plot_dt, aes(x = year, y = value * 100, colour = serie
       "ARIMAX(",
       paste(arimax_order, collapse = ", "),
       "), ",
-      if (isTRUE(no_intercept)) {
-        "no intercept, all age groups"
-      } else {
-        paste0("intercept, reference age group = ", reference_age_group)
-      },
+      specification_note,
       "; outlier years excluded: ",
       paste(outlier_years, collapse = ", ")
     ),
@@ -2142,11 +2165,8 @@ decomposition_plot <- ggplot(
     title = paste0("Drivers of change in government ", measure, " since ", decomposition_base_year),
     subtitle = paste0(
       "Bars decompose the ARIMAX fitted/projection change; solid line is total model change; dashed line is actual historical change. ",
-      if (isTRUE(no_intercept)) {
-        "No intercept; all age groups included."
-      } else {
-        paste0("Intercept included; ", reference_age_group, " is the omitted age group.")
-      }
+      specification_note,
+      "."
     ),
     x = NULL,
     y = "Percentage points of GDP",
