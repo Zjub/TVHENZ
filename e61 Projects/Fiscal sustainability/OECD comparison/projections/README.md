@@ -10,3 +10,11 @@ Run from the project root with:
 ```
 
 The script reads from `data/` and writes charts and CSVs to `outputs/`.
+
+Subfolders:
+
+- `Shapley/`: spending projection paths built from the Shapley-style
+  demographic/economic exercise.
+- `ARIMA/`: ARIMAX and hybrid level/difference spending projection approaches.
+- `OECD_long_run_scenario/`: Australia workflow for the OECD Economic Outlook
+  117 long-run economic scenarios.

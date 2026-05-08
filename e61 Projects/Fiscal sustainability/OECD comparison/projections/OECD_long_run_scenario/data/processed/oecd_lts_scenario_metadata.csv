@@ -1,0 +1,7 @@
+scenario,oecd_scenario_label
+BAU1,"Business-as-usual energy transition, median climate climate damage curve, no carbon mitigation costs"
+BAU2,"Business-as-usual energy transition, high damage curve, no carbon mitigation costs"
+ET1,"Accelerated energy transition, median climate damage curve, slow reduction in carbon mitigation costs"
+ET2,"Accelerated energy transition, median climate damage curve, fast reduction in carbon mitigation costs"
+ET3,"Accelerated energy transition, high climate damage curve, slow reduction in carbon mitigation costs"
+ET4,"Accelerated energy transition, high climate damage curve, fast reduction in carbon mitigation costs"
