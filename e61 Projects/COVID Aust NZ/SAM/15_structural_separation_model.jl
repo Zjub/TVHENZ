@@ -1,9 +1,10 @@
-# 14_joint_margin_structural_model.jl
+# 15_structural_separation_model.jl
 #
 # Two-agent search-and-matching model that jointly disciplines job finding and
-# separations. This is intended as the first publishability upgrade from 13_:
-# keep the two-agent framework, but force the model to speak to both empirical
-# DiD margins in the paper.
+# separations. This version replaces the direct additive separation response in
+# 14_ with a more structural match-continuation threshold. Separations have a
+# common/background destruction component and an endogenous component generated
+# by the mass of latent match qualities below a surplus threshold.
 
 using CSV
 using DataFrames
@@ -25,9 +26,6 @@ Base.@kwdef struct ModelSpec
     offer_dispersion::Float64 = 0.35
     separation_threshold::Float64 = 0.32
     separation_dispersion::Float64 = 0.08
-    # Maps a COVID work-disutility flow shock into separations. This is not
-    # chosen to fit AUS post job finding in the restricted calibration below.
-    sep_health_sensitivity::Float64 = 0.5
     search_curvature::Float64 = 7.0
     max_search::Float64 = 50.0
     probability_cap::Float64 = 0.999
@@ -58,6 +56,7 @@ Base.@kwdef struct Environment
     b_N::Float64 = 0.0
     health_R::Float64
     health_N::Float64
+    common_sep_shock::Float64 = 0.0
 end
 
 Base.@kwdef struct SeparationParams
@@ -117,10 +116,10 @@ function sep_shape(flow_surplus::Float64, spec::ModelSpec)
                     spec.separation_dispersion)
 end
 
-function separation_rate(flow_surplus::Float64, health::Float64,
+function separation_rate(flow_surplus::Float64, common_sep_shock::Float64,
                          sep::SeparationParams, spec::ModelSpec)
-    return clamp(sep.base + sep.amp * sep_shape(flow_surplus, spec) +
-                 spec.sep_health_sensitivity * health,
+    return clamp(sep.base + common_sep_shock +
+                 sep.amp * sep_shape(flow_surplus, spec),
                  0.0, spec.probability_cap)
 end
 
@@ -188,8 +187,8 @@ function bellman_update(env::Environment, next::ValueState,
     fs_N = flow_surplus_N(env, spec)
     accept_R = accept_prob(fs_R, spec)
     accept_N = accept_prob(fs_N, spec)
-    sep_R = separation_rate(fs_R, env.health_R, sep, spec)
-    sep_N = separation_rate(fs_N, env.health_N, sep, spec)
+    sep_R = separation_rate(fs_R, env.common_sep_shock, sep, spec)
+    sep_N = separation_rate(fs_N, env.common_sep_shock, sep, spec)
 
     value_surplus_R = next.W_R - next.U_R
     value_surplus_N = next.W_N - next.U_N
@@ -338,13 +337,15 @@ end
 
 function shock_environment(mu::Float64, kappa::Float64, spec::ModelSpec;
                            b_R::Float64, health_R::Float64,
-                           health_N::Float64)
+                           health_N::Float64,
+                           common_sep_shock::Float64 = 0.0)
     return Environment(
         mu = mu,
         kappa = kappa,
         b_R = b_R,
         health_R = health_R,
         health_N = health_N,
+        common_sep_shock = common_sep_shock,
     )
 end
 
@@ -355,7 +356,7 @@ function fit_pre_separation(spec::ModelSpec, targets::Targets)
     amp = (targets.sep_R_pre - targets.sep_N_pre) / (g_R - g_N)
     base = targets.sep_N_pre - amp * g_N
 
-    if amp < 0.0 || base < 0.0
+    if amp < 0.0 || amp > 1.0 || base < 0.0 || base > 1.0
         error("Pre-period separation moments imply invalid separation parameters.")
     end
 
@@ -421,39 +422,54 @@ end
 function group_separation(env::Environment, sep::SeparationParams,
                           spec::ModelSpec, group::Symbol)
     if group == :R
-        return separation_rate(flow_surplus_R(env, spec),
-                               env.health_R, sep, spec)
+        return separation_rate(flow_surplus_R(env, spec), env.common_sep_shock,
+                               sep, spec)
     elseif group == :N
-        return separation_rate(flow_surplus_N(env, spec),
-                               env.health_N, sep, spec)
+        return separation_rate(flow_surplus_N(env, spec), env.common_sep_shock,
+                               sep, spec)
     else
         error("group must be :R or :N")
     end
 end
 
+function fit_common_sep_shock(target_sep_N::Float64,
+                              mu::Float64, kappa::Float64,
+                              sep::SeparationParams, spec::ModelSpec)
+    env = shock_environment(mu, kappa, spec;
+                            b_R = benefit_post(spec),
+                            health_R = 0.0,
+                            health_N = 0.0)
+    raw_gap = target_sep_N - group_separation(env, sep, spec, :N)
+    return max(raw_gap, 0.0)
+end
+
 function fit_health_for_sep(group::Symbol, target_sep::Float64,
                             mu::Float64, kappa::Float64,
                             b_R::Float64, fixed_health_other::Float64,
+                            common_sep_shock::Float64,
                             sep::SeparationParams, spec::ModelSpec)
     objective(h) = begin
         env = group == :R ?
             shock_environment(mu, kappa, spec;
                               b_R = b_R,
                               health_R = h,
-                              health_N = fixed_health_other) :
+                              health_N = fixed_health_other,
+                              common_sep_shock = common_sep_shock) :
             shock_environment(mu, kappa, spec;
                               b_R = b_R,
                               health_R = fixed_health_other,
-                              health_N = h)
+                              health_N = h,
+                              common_sep_shock = common_sep_shock)
         (group_separation(env, sep, spec, group) - target_sep)^2
     end
 
-    opt = optimize(objective, 0.0, 0.6)
+    opt = optimize(objective, 0.0, 2.0)
     return Optim.minimizer(opt)
 end
 
 function post_fit_objective(x, pre_env::Environment,
                             health_R::Float64, health_N::Float64,
+                            common_sep_shock::Float64,
                             sep::SeparationParams,
                             spec::ModelSpec, targets::Targets)
     mu, kappa = exp(x[1]), exp(x[2])
@@ -464,7 +480,8 @@ function post_fit_objective(x, pre_env::Environment,
     shock_env = shock_environment(mu, kappa, spec;
                                   b_R = benefit_post(spec),
                                   health_R = health_R,
-                                  health_N = health_N)
+                                  health_N = health_N,
+                                  common_sep_shock = common_sep_shock)
     means = shock_means(simulate_path(pre_env, shock_env, sep, spec))
     return (means.find_N - targets.f_N_post)^2 +
            (means.find_R - targets.f_R_post)^2
@@ -472,14 +489,17 @@ end
 
 function calibrate_post(pre_calib, sep::SeparationParams,
                         spec::ModelSpec, targets::Targets)
-    # Health/work-disutility shifters are pinned down by separation cells.
-    health_N = fit_health_for_sep(:N, targets.sep_N_post,
-                                  pre_calib.mu, pre_calib.kappa,
-                                  benefit_post(spec), 0.0,
-                                  sep, spec)
+    # The NZ separation increase disciplines a common/background destruction
+    # component. The Australian residual separation increase then disciplines a
+    # work-continuation wedge through the match-quality threshold.
+    health_N = 0.0
+    common_sep_shock = fit_common_sep_shock(targets.sep_N_post,
+                                           pre_calib.mu, pre_calib.kappa,
+                                           sep, spec)
     health_R = fit_health_for_sep(:R, targets.sep_R_post,
                                   pre_calib.mu, pre_calib.kappa,
                                   benefit_post(spec), health_N,
+                                  common_sep_shock,
                                   sep, spec)
 
     starts = [[log(pre_calib.mu), log(pre_calib.kappa)],
@@ -493,6 +513,7 @@ function calibrate_post(pre_calib, sep::SeparationParams,
     for start in starts
         opt = optimize(x -> post_fit_objective(x, pre_calib.env,
                                                health_R, health_N,
+                                               common_sep_shock,
                                                sep, spec, targets),
                        start, NelderMead(),
                        Optim.Options(iterations = 900))
@@ -506,7 +527,8 @@ function calibrate_post(pre_calib, sep::SeparationParams,
     env = shock_environment(mu, kappa, spec;
                             b_R = benefit_post(spec),
                             health_R = health_R,
-                            health_N = health_N)
+                            health_N = health_N,
+                            common_sep_shock = common_sep_shock)
     means = shock_means(simulate_path(pre_calib.env, env, sep, spec))
 
     return (
@@ -515,6 +537,7 @@ function calibrate_post(pre_calib, sep::SeparationParams,
         kappa = kappa,
         health_R = health_R,
         health_N = health_N,
+        common_sep_shock = common_sep_shock,
         loss = best_loss,
         find_R = means.find_R,
         find_N = means.find_N,
@@ -548,12 +571,15 @@ function build_decomposition(pre_calib, post_calib,
     common_covid_env = shock_environment(post_calib.mu, post_calib.kappa, spec;
                                          b_R = benefit_pre(spec),
                                          health_R = post_calib.health_N,
-                                         health_N = post_calib.health_N)
+                                         health_N = post_calib.health_N,
+                                         common_sep_shock =
+                                             post_calib.common_sep_shock)
     differential_covid_env =
         shock_environment(post_calib.mu, post_calib.kappa, spec;
                           b_R = benefit_pre(spec),
                           health_R = post_calib.health_R,
-                          health_N = post_calib.health_N)
+                          health_N = post_calib.health_N,
+                          common_sep_shock = post_calib.common_sep_shock)
     full_env = post_calib.env
 
     scenario_rows = [
@@ -635,7 +661,9 @@ function replacement_rate_validation(pre_calib, post_calib,
         full_env = shock_environment(post_calib.mu, post_calib.kappa, spec;
                                      b_R = g.post_rr * spec.wage,
                                      health_R = post_calib.health_R,
-                                     health_N = post_calib.health_N)
+                                     health_N = post_calib.health_N,
+                                     common_sep_shock =
+                                         post_calib.common_sep_shock)
         benefit_only_env =
             shock_environment(pre_calib.mu, pre_calib.kappa, spec;
                               b_R = g.post_rr * spec.wage,
@@ -717,17 +745,22 @@ function build_summary(pre_calib, post_calib,
         (moment = "differential_health_pct_wage", data = NaN,
          model = 100.0 * (post_calib.health_R - post_calib.health_N) / spec.wage,
          gap = NaN),
+        (moment = "common_sep_shock", data = NaN,
+         model = post_calib.common_sep_shock, gap = NaN),
         (moment = "search_curvature", data = NaN,
          model = spec.search_curvature, gap = NaN),
-        (moment = "sep_health_sensitivity", data = NaN,
-         model = spec.sep_health_sensitivity, gap = NaN),
+        (moment = "separation_threshold", data = NaN,
+         model = spec.separation_threshold, gap = NaN),
+        (moment = "separation_dispersion", data = NaN,
+         model = spec.separation_dispersion, gap = NaN),
         (moment = "sep_base", data = NaN, model = sep.base, gap = NaN),
         (moment = "sep_amp", data = NaN, model = sep.amp, gap = NaN),
     ])
 end
 
 function spec_with_upper_params(base::ModelSpec, eta::Float64,
-                                sep_health_sensitivity::Float64)
+                                separation_threshold::Float64,
+                                separation_dispersion::Float64)
     return ModelSpec(
         beta = base.beta,
         firm_delta = base.firm_delta,
@@ -740,9 +773,8 @@ function spec_with_upper_params(base::ModelSpec, eta::Float64,
         leisure_value = base.leisure_value,
         offer_threshold = base.offer_threshold,
         offer_dispersion = base.offer_dispersion,
-        separation_threshold = base.separation_threshold,
-        separation_dispersion = base.separation_dispersion,
-        sep_health_sensitivity = sep_health_sensitivity,
+        separation_threshold = separation_threshold,
+        separation_dispersion = separation_dispersion,
         search_curvature = eta,
         max_search = base.max_search,
         probability_cap = base.probability_cap,
@@ -754,11 +786,13 @@ function spec_with_upper_params(base::ModelSpec, eta::Float64,
 end
 
 function calibration_for_upper_params(eta::Float64,
-                                      sep_health_sensitivity::Float64,
+                                      separation_threshold::Float64,
+                                      separation_dispersion::Float64,
                                       base_spec::ModelSpec,
                                       targets::Targets)
     spec = spec_with_upper_params(base_spec, eta,
-                                  sep_health_sensitivity)
+                                  separation_threshold,
+                                  separation_dispersion)
     sep = fit_pre_separation(spec, targets)
     pre_calib = calibrate_pre(sep, spec, targets)
     post_calib = calibrate_post(pre_calib, sep, spec, targets)
@@ -766,11 +800,13 @@ function calibration_for_upper_params(eta::Float64,
 end
 
 function upper_fit_row(eta::Float64,
-                       sep_health_sensitivity::Float64,
+                       separation_threshold::Float64,
+                       separation_dispersion::Float64,
                        base_spec::ModelSpec,
                        targets::Targets)
     spec, sep, pre_calib, post_calib =
-        calibration_for_upper_params(eta, sep_health_sensitivity,
+        calibration_for_upper_params(eta, separation_threshold,
+                                     separation_dispersion,
                                      base_spec, targets)
 
     data_pre_gap = 100.0 * (targets.f_R_pre - targets.f_N_pre)
@@ -791,7 +827,8 @@ function upper_fit_row(eta::Float64,
 
     return (
         search_curvature = eta,
-        sep_health_sensitivity = sep_health_sensitivity,
+        separation_threshold = separation_threshold,
+        separation_dispersion = separation_dispersion,
         loss = loss,
         gap_loss = gap_loss,
         level_loss = level_loss,
@@ -822,8 +859,9 @@ end
 
 function calibrate_upper_parameters(base_spec::ModelSpec,
                                     targets::Targets)
-    curvature_grid = [20.0, 30.0, 40.0, 50.0, 60.0, 80.0, 100.0, 150.0]
-    sep_sensitivity_grid = [0.35, 0.45, 0.50, 0.60, 0.75]
+    curvature_grid = [40.0, 60.0, 80.0, 100.0, 150.0]
+    separation_threshold_grid = [-0.20, -0.10, 0.05, 0.10, 0.20, 0.32]
+    separation_dispersion_grid = [0.04, 0.08, 0.16, 0.32]
 
     rows = NamedTuple[]
     best_row = nothing
@@ -832,9 +870,10 @@ function calibrate_upper_parameters(base_spec::ModelSpec,
     best_pre = nothing
     best_post = nothing
 
-    for eta in curvature_grid, sep_sens in sep_sensitivity_grid
+    for eta in curvature_grid, threshold in separation_threshold_grid,
+        dispersion in separation_dispersion_grid
         row, spec, sep, pre_calib, post_calib =
-            upper_fit_row(eta, sep_sens, base_spec, targets)
+            upper_fit_row(eta, threshold, dispersion, base_spec, targets)
         push!(rows, row)
 
         if best_row === nothing || row.loss < best_row.loss
@@ -852,6 +891,7 @@ end
 
 function calibrate_post_from_N(pre_calib, health_R::Float64,
                                health_N::Float64,
+                               common_sep_shock::Float64,
                                sep::SeparationParams,
                                spec::ModelSpec, targets::Targets)
     # Restricted post calibration: the common COVID market shock is disciplined
@@ -865,7 +905,8 @@ function calibrate_post_from_N(pre_calib, health_R::Float64,
         shock_env = shock_environment(mu, pre_calib.kappa, spec;
                                       b_R = benefit_post(spec),
                                       health_R = health_R,
-                                      health_N = health_N)
+                                      health_N = health_N,
+                                      common_sep_shock = common_sep_shock)
         means = shock_means(simulate_path(pre_calib.env, shock_env,
                                           sep, spec))
         return (means.find_N - targets.f_N_post)^2
@@ -876,7 +917,8 @@ function calibrate_post_from_N(pre_calib, health_R::Float64,
     env = shock_environment(mu, pre_calib.kappa, spec;
                             b_R = benefit_post(spec),
                             health_R = health_R,
-                            health_N = health_N)
+                            health_N = health_N,
+                            common_sep_shock = common_sep_shock)
     means = shock_means(simulate_path(pre_calib.env, env, sep, spec))
 
     return (
@@ -885,6 +927,7 @@ function calibrate_post_from_N(pre_calib, health_R::Float64,
         kappa = pre_calib.kappa,
         health_R = health_R,
         health_N = health_N,
+        common_sep_shock = common_sep_shock,
         loss = Optim.minimum(opt),
         find_R = means.find_R,
         find_N = means.find_N,
@@ -900,24 +943,27 @@ function calibrate_post_from_N(pre_calib, health_R::Float64,
 end
 
 function restricted_fit_row(eta::Float64,
-                            sep_health_sensitivity::Float64,
+                            separation_threshold::Float64,
+                            separation_dispersion::Float64,
                             base_spec::ModelSpec,
                             targets::Targets)
     spec = spec_with_upper_params(base_spec, eta,
-                                  sep_health_sensitivity)
+                                  separation_threshold,
+                                  separation_dispersion)
     sep = fit_pre_separation(spec, targets)
     pre_calib = calibrate_pre(sep, spec, targets)
 
-    health_N = fit_health_for_sep(:N, targets.sep_N_post,
-                                  pre_calib.mu, pre_calib.kappa,
-                                  benefit_post(spec), 0.0,
-                                  sep, spec)
+    health_N = 0.0
+    common_sep_shock = fit_common_sep_shock(targets.sep_N_post,
+                                           pre_calib.mu, pre_calib.kappa,
+                                           sep, spec)
     health_R = fit_health_for_sep(:R, targets.sep_R_post,
                                   pre_calib.mu, pre_calib.kappa,
                                   benefit_post(spec), health_N,
+                                  common_sep_shock,
                                   sep, spec)
     post_calib = calibrate_post_from_N(pre_calib, health_R, health_N,
-                                       sep, spec, targets)
+                                       common_sep_shock, sep, spec, targets)
 
     data_pre_gap = 100.0 * (targets.f_R_pre - targets.f_N_pre)
     model_pre_gap = 100.0 * (pre_calib.find_R - pre_calib.find_N)
@@ -929,14 +975,17 @@ function restricted_fit_row(eta::Float64,
         100.0 * ((pre_calib.find_N - targets.f_N_pre)^2 +
                  (pre_calib.find_R - targets.f_R_pre)^2 +
                  (post_calib.find_N - targets.f_N_post)^2) +
-        (model_pre_gap - data_pre_gap)^2
+        (model_pre_gap - data_pre_gap)^2 +
+        10_000.0 * ((post_calib.sep_N - targets.sep_N_post)^2 +
+                    (post_calib.sep_R - targets.sep_R_post)^2)
 
     aus_post_prediction_gap_pp =
         100.0 * (post_calib.find_R - targets.f_R_post)
 
     return (
         search_curvature = eta,
-        sep_health_sensitivity = sep_health_sensitivity,
+        separation_threshold = separation_threshold,
+        separation_dispersion = separation_dispersion,
         fitted_loss = fitted_loss,
         heldout_AUS_post_jfr_gap_pp = aus_post_prediction_gap_pp,
         jfr_pre_gap_data_pp = data_pre_gap,
@@ -957,6 +1006,7 @@ function restricted_fit_row(eta::Float64,
         health_R = post_calib.health_R,
         differential_health_pct_wage =
             100.0 * (post_calib.health_R - post_calib.health_N) / spec.wage,
+        common_sep_shock = post_calib.common_sep_shock,
         mu_pre = pre_calib.mu,
         kappa_common = pre_calib.kappa,
         mu_post = post_calib.mu,
@@ -965,9 +1015,9 @@ end
 
 function calibrate_restricted_model(base_spec::ModelSpec,
                                     targets::Targets)
-    curvature_grid = [5.0, 7.0, 10.0, 15.0, 25.0, 40.0, 60.0,
-                      80.0, 100.0, 150.0]
-    sep_sensitivity_grid = [0.35, 0.45, 0.50, 0.60, 0.75]
+    curvature_grid = [40.0, 60.0, 80.0, 100.0, 150.0]
+    separation_threshold_grid = [-0.20, -0.10, 0.05, 0.10, 0.20, 0.32]
+    separation_dispersion_grid = [0.04, 0.08, 0.16, 0.32]
 
     rows = NamedTuple[]
     best_row = nothing
@@ -976,18 +1026,28 @@ function calibrate_restricted_model(base_spec::ModelSpec,
     best_pre = nothing
     best_post = nothing
 
-    for eta in curvature_grid, sep_sens in sep_sensitivity_grid
-        row, spec, sep, pre_calib, post_calib =
-            restricted_fit_row(eta, sep_sens, base_spec, targets)
+    for eta in curvature_grid, threshold in separation_threshold_grid,
+        dispersion in separation_dispersion_grid
+        local row, spec, sep, pre_calib, post_calib
+        try
+            row, spec, sep, pre_calib, post_calib =
+                restricted_fit_row(eta, threshold, dispersion,
+                                   base_spec, targets)
+        catch err
+            continue
+        end
         push!(rows, row)
 
         candidate_score =
             row.fitted_loss +
-            1e-8 * abs(sep_sens - base_spec.sep_health_sensitivity)
+            1e-8 * abs(threshold - base_spec.separation_threshold) +
+            1e-8 * abs(dispersion - base_spec.separation_dispersion)
         best_score = best_row === nothing ? Inf :
             best_row.fitted_loss +
-            1e-8 * abs(best_row.sep_health_sensitivity -
-                       base_spec.sep_health_sensitivity)
+            1e-8 * abs(best_row.separation_threshold -
+                       base_spec.separation_threshold) +
+            1e-8 * abs(best_row.separation_dispersion -
+                       base_spec.separation_dispersion)
 
         if candidate_score < best_score
             best_row = row
@@ -1003,8 +1063,8 @@ function calibrate_restricted_model(base_spec::ModelSpec,
 end
 
 function print_results(summary::DataFrame, decomp::DataFrame)
-    println("\n14_ joint-margin calibration")
-    println("----------------------------")
+    println("\n15_ structural-separation calibration")
+    println("-------------------------------------")
     for r in eachrow(summary)
         if isfinite(r.data)
             @printf("%-16s data=%8.4f  model=%8.4f  gap=% .4e\n",
@@ -1036,11 +1096,11 @@ function run_model()
     rr_validation = replacement_rate_validation(pre_calib, post_calib,
                                                 sep, spec)
 
-    CSV.write("14_joint_margin_summary.csv", summary)
-    CSV.write("14_joint_margin_decomposition.csv", decomp)
-    CSV.write("14_joint_margin_scenarios.csv", scenarios)
-    CSV.write("14_joint_margin_restricted_grid.csv", restricted_grid)
-    CSV.write("14_replacement_rate_gradient_validation.csv",
+    CSV.write("15_structural_separation_summary.csv", summary)
+    CSV.write("15_structural_separation_decomposition.csv", decomp)
+    CSV.write("15_structural_separation_scenarios.csv", scenarios)
+    CSV.write("15_structural_separation_restricted_grid.csv", restricted_grid)
+    CSV.write("15_replacement_rate_gradient_validation.csv",
               rr_validation)
 
     print_results(summary, decomp)
@@ -1058,11 +1118,11 @@ function run_model()
     end
 
     println("\nSaved:")
-    println("  14_joint_margin_summary.csv")
-    println("  14_joint_margin_decomposition.csv")
-    println("  14_joint_margin_scenarios.csv")
-    println("  14_joint_margin_restricted_grid.csv")
-    println("  14_replacement_rate_gradient_validation.csv")
+    println("  15_structural_separation_summary.csv")
+    println("  15_structural_separation_decomposition.csv")
+    println("  15_structural_separation_scenarios.csv")
+    println("  15_structural_separation_restricted_grid.csv")
+    println("  15_replacement_rate_gradient_validation.csv")
 
     return summary, decomp, scenarios, restricted_grid, rr_validation
 end

@@ -1,0 +1,288 @@
+\clearpage
+
+\section{Structural model}\label{sec:structure}
+
+The reduced-form estimates above identify the differential change in labour-market outcomes for Australian JobSeeker recipients relative to otherwise similar New Zealand citizens after the announcement of the Coronavirus Supplement. This is the relevant treatment effect for the policy environment in 2020. However, it is not mechanically equal to a normal-times unemployment-benefit elasticity. The announcement occurred at the same time as a large COVID labour-market shock, and benefit eligibility may have altered how workers responded to that shock.
+
+This section develops a structural search-and-matching model to interpret the reduced-form estimates. The model has two goals. First, it provides an accounting framework for separating the contribution of the benefit increase from pandemic-related changes in the value of work and the matching environment. Second, it evaluates whether the observed response is consistent with the nonlinear effect of replacement rates on job-finding behaviour. This second point is important because the control group has no entitlement to the Australian unemployment benefit. We therefore do not assume that the COVID shock has the same behavioural effect on Australians and New Zealanders. Instead, New Zealanders discipline the common post-COVID labour-market environment, and the model maps that environment through different replacement rates and outside options.
+
+The key identifying structure is as follows. New Zealand outcomes are used to infer the common component of the COVID labour-market shock: lower matching efficiency and the common change in work disutility. Separation rates discipline the work-disutility component, since a fall in the value of employment relative to non-employment should raise separations as well as reduce job finding. The Australian post-COVID job-finding rate is then treated as a held-out validation moment, conditional on using Australian separations to discipline the differential work-disutility shock. The model therefore asks whether the observed Australian job-finding response can be predicted from (i) pre-existing benefit eligibility, (ii) the Supplement, (iii) common COVID market conditions inferred from New Zealanders, and (iv) differential work-disutility inferred from separations.
+
+\subsection{Economic environment}
+
+Time is discrete and indexed by weeks. There are two worker types, $j \in \{R,N\}$. Type $R$ workers are eligible for JobSeeker and the Coronavirus Supplement, corresponding to the Australian treatment group. Type $N$ workers are ineligible for Australian unemployment benefits, corresponding to the New Zealand comparison group. Workers are risk-neutral and discount future payoffs by $\beta$.
+
+Each employed worker produces output $y$ and receives an exogenous wage $w$. Wages are held fixed in the baseline model, reflecting short-run wage rigidity and allowing the model to focus on quantities: search effort, job finding, acceptance, and separations. Unemployed workers receive a flow outside option
+\begin{equation}
+    z_j(t) = b_j(t) + \ell ,
+\end{equation}
+where $b_j(t)$ is unemployment benefit income and $\ell$ is non-work utility common to both groups outside the COVID work-disutility shock. New Zealanders receive no Australian unemployment benefit, so $b_N(t)=0$. Eligible Australians receive
+\begin{equation}
+    b_R^{pre} = r^{pre} w, \qquad b_R^{post} = r^{post} w,
+\end{equation}
+where $r^{post}>r^{pre}$ reflects the Coronavirus Supplement.
+
+COVID may also reduce the value of employment through health risk, caregiving constraints, workplace exposure, or other factors that raise the relative value of non-work. We represent this broad work-disutility shock by $h_j(t)$, which reduces the flow value of employment. The term $h_j(t)$ should not be interpreted as a literal biological health-risk estimate. It is a composite work-disutility shock capturing health risk, caregiving constraints, lockdown exposure, ability to wait, and other unobserved factors affecting the value of employment during the pandemic.
+
+\subsection{Search, acceptance, and separations}
+
+An unemployed worker chooses search effort $s_j(t) \geq 0$. Search effort is an index, not a probability. Following the multiple-application logic in \citeauthor{Shimer2004} (2004), search maps concavely into an offer probability. Let $m(t)$ denote the contact rate per unit of search effort. The probability of receiving an offer is
+\begin{equation}
+    o_j(t) = 1-\exp[-m(t)s_j(t)].
+\end{equation}
+
+Workers do not accept all offers. Let the flow surplus from employment relative to non-employment be
+\begin{equation}
+    \Delta_j(t) = w - h_j(t) - z_j(t).
+\end{equation}
+The probability that an offer is acceptable is
+\begin{equation}
+    a_j(t) =
+    \Lambda\left(
+    \frac{\Delta_j(t)-\tau_a}{\sigma_a}
+    \right),
+\end{equation}
+where $\Lambda(\cdot)$ is the logistic function, $\tau_a$ is an acceptance threshold, and $\sigma_a$ governs dispersion in offer quality or reservation behaviour. The job-finding probability is therefore
+\begin{equation}
+    p_j(t) = a_j(t)\left(1-\exp[-m(t)s_j(t)]\right).
+    \label{eq:model_jfr}
+\end{equation}
+This acceptance margin is included to allow changes in the outside option to affect both search intensity and selectivity. It is not separately calibrated to an offer-acceptance or reservation-wage moment in the current implementation, so the results should be interpreted as capturing a combined search-and-acceptance response.
+
+Search effort is chosen optimally. The cost of search is
+\begin{equation}
+    C(s_j) = \frac{\kappa s_j^{1+\eta}}{1+\eta},
+\end{equation}
+where $\kappa$ is the level of search costs and $\eta$ governs search curvature. The first-order condition is
+\begin{equation}
+    \kappa s_j(t)^\eta
+    =
+    \beta a_j(t)m(t)\exp[-m(t)s_j(t)]
+    \left[W_j(t+1)-U_j(t+1)\right],
+    \label{eq:search_foc_14}
+\end{equation}
+where $W_j(t)$ and $U_j(t)$ are the values of employment and unemployment.
+
+Separations are endogenous. The separation probability rises when the flow surplus from work is low and when COVID work disutility is high:
+\begin{equation}
+    \delta_j(t)
+    =
+    \delta_0
+    +
+    \delta_1
+    \Lambda\left(
+    \frac{\tau_s-\Delta_j(t)}{\sigma_s}
+    \right)
+    +
+    \psi h_j(t).
+    \label{eq:sep_14}
+\end{equation}
+Here $\delta_0$ is the baseline separation component, $\delta_1$ governs sensitivity to low work surplus, and $\psi$ maps the COVID work-disutility shock into separations. This separation margin is central: the empirical separation DiD provides information about the otherwise latent work-disutility shock.
+
+The value functions are
+\begin{align}
+    U_j(t)
+    &=
+    z_j(t)
+    -
+    \frac{\kappa s_j(t)^{1+\eta}}{1+\eta}
+    +
+    \beta\left[
+        p_j(t) W_j(t+1)
+        +
+        (1-p_j(t))U_j(t+1)
+    \right],
+    \label{eq:U_14}
+    \\
+    W_j(t)
+    &=
+    w-h_j(t)
+    +
+    \beta\left[
+        (1-\delta_j(t))W_j(t+1)
+        +
+        \delta_j(t)U_j(t+1)
+    \right].
+    \label{eq:W_14}
+\end{align}
+
+\subsection{Matching and the common COVID market shock}
+
+Firms post vacancies in a common labour market. Matches are generated by a constant-returns matching function with matching efficiency $\mu(t)$ and matching elasticity $\alpha$. With wages fixed, free entry pins down market tightness and therefore the contact rate $m(t)$. In the implementation, changes in $\mu(t)$ capture the common deterioration in labour-market matching conditions during COVID.
+
+The important identifying assumption is separability between the common market environment and benefit-mediated behavioural responses. New Zealanders discipline the common post-COVID matching environment because they face the same aggregate labour market but have no Australian unemployment benefit entitlement. This does not impose the same behavioural response on Australians. The same contact rate $m(t)$ affects Australians differently because their outside option is higher both before COVID and especially during the Supplement period.
+
+\subsection{Solution and timing}
+
+The model is solved as a pre-COVID steady state followed by an unanticipated finite COVID shock. Prior to the shock, agents behave as if the pre-COVID environment will persist. Once the COVID shock arrives, agents observe the new benefit, matching, and work-disutility environment and solve forward-looking value functions over the shock horizon. The terminal condition is a return to the pre-COVID environment. This timing preserves the surprise nature of the March 2020 policy and pandemic shock while allowing workers to respond dynamically once the shock is realised.
+
+\subsection{Calibration strategy}
+
+Table~\ref{tab:model_calibration_strategy_14} summarises the calibration. The restricted calibration deliberately holds the post-COVID search-cost parameter fixed at its pre-COVID value, $\kappa^{post}=\kappa^{pre}$. This prevents the model from using an unrestricted post search-cost shock to fit both groups mechanically. Instead, the common post-COVID matching shock is calibrated from New Zealand post-COVID job finding, while Australian post-COVID job finding is held out as a validation moment conditional on the separation-implied work-disutility shock.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Calibration strategy}
+    \label{tab:model_calibration_strategy_14}
+    \begin{tabular}{lll}
+        \toprule
+        Parameter or block & Moment used & Interpretation \\
+        \midrule
+        $\delta_0$ & $SR_N^{pre}$ & Baseline separation rate \\
+        $\delta_1$ & $SR_R^{pre}-SR_N^{pre}$ & Pre-COVID separation gap \\
+        $\mu^{pre}$ & $JFR_N^{pre},JFR_R^{pre}$ & Pre-COVID matching environment \\
+        $\kappa$ & $JFR_N^{pre},JFR_R^{pre}$ & Common search-cost level \\
+        $\kappa^{post}$ & Restricted to $\kappa^{pre}$ & No free post search-cost shock \\
+        $h_N$ & $SR_N^{post}$ & Common COVID work-disutility component \\
+        $h_R$ & $SR_R^{post}$ & Differential Australian work-disutility component \\
+        $\mu^{post}$ & $JFR_N^{post}$ & Common post-COVID matching shock \\
+        $JFR_R^{post}$ & Held out & Validation moment \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+The search curvature $\eta$ and separation-work-disutility sensitivity $\psi$ are evaluated over a grid. The benchmark reported below uses $\eta=100$ and $\psi=0.5$. The parameter $\psi$ is weakly identified by the fitted moments once Australian post-COVID job finding is held out, so the benchmark should be interpreted alongside the sensitivity grid rather than as a unique structural estimate.
+
+\subsection{Benchmark calibration}
+
+Table~\ref{tab:model_parameters_14} reports the benchmark parameter values. The implied differential COVID work-disutility shock is 13.3 percent of the wage. Again, this should be interpreted as a composite work-disutility wedge, not a direct health-risk estimate. The benchmark search curvature is high, which is a sign that the representative-agent model is using a relatively inelastic search response to reconcile the baseline benefit-eligibility gap with the COVID-period gap. For this reason, the sensitivity analysis below is central to the interpretation.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Benchmark calibrated values}
+    \label{tab:model_parameters_14}
+    \begin{tabular}{lll}
+        \toprule
+        Parameter & Value & Description \\
+        \midrule
+        $\beta$ & 0.99 & Weekly discount factor \\
+        $\alpha$ & 0.42 & Matching elasticity \\
+        $w$ & 0.55 & Wage, normalised by output \\
+        $r^{pre}$ & 0.28 & Pre-COVID replacement rate \\
+        $r^{post}/r^{pre}$ & 2.00 & Supplement multiplier \\
+        $\mu^{pre}$ & 0.0739 & Pre-COVID matching efficiency \\
+        $\mu^{post}$ & 0.0681 & Post-COVID matching efficiency \\
+        $\kappa$ & 0.3473 & Common search-cost level \\
+        $\eta$ & 100.0 & Search curvature \\
+        $h_N$ & 0.0140 & NZ COVID work-disutility shock \\
+        $h_R$ & 0.0872 & AUS COVID work-disutility shock \\
+        $(h_R-h_N)/w$ & 13.3\% & Differential shock as share of wage \\
+        $\psi$ & 0.50 & Separation sensitivity to work disutility \\
+        $\delta_0$ & 0.0479 & Baseline separation component \\
+        $\delta_1$ & 0.0012 & Work-surplus separation component \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Table~\ref{tab:model_fit_14} reports the fit. The model closely matches the pre-period job-finding rates, the New Zealand post-COVID job-finding rate used to discipline the common COVID market shock, and the separation moments used to infer work disutility. Conditional on the separation-implied Australian work-disutility shock, the held-out Australian post-COVID job-finding rate is predicted to be 5.22 percent, compared with 5.18 percent in the data.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Calibration fit and held-out prediction}
+    \label{tab:model_fit_14}
+    \begin{tabular}{lccc}
+        \toprule
+        Moment & Data & Model & Status \\
+        \midrule
+        $JFR_N^{pre}$ & 10.02\% & 10.02\% & Calibrated \\
+        $JFR_R^{pre}$ & 8.68\% & 8.68\% & Calibrated \\
+        $JFR_N^{post}$ & 8.23\% & 8.23\% & Calibrated \\
+        $JFR_R^{post}$ & 5.18\% & 5.22\% & Held out conditional on $SR_R^{post}$ \\
+        $SR_N^{pre}$ & 4.80\% & 4.80\% & Calibrated \\
+        $SR_R^{pre}$ & 4.84\% & 4.84\% & Calibrated \\
+        $SR_N^{post}$ & 5.50\% & 5.50\% & Calibrated \\
+        $SR_R^{post}$ & 9.26\% & 9.26\% & Calibrated \\
+        \midrule
+        JFR DiD & -1.71 p.p. & -1.66 p.p. & Implied \\
+        Separation DiD & 3.72 p.p. & 3.72 p.p. & Implied \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Sensitivity of the held-out prediction}
+
+The benchmark is intentionally restricted, but two parameters remain important for interpretation: the search curvature $\eta$ and the separation-work-disutility sensitivity $\psi$. Table~\ref{tab:model_sensitivity_14} reports sensitivity from the calibration grid. The fitted loss summarises the fit to the moments used in calibration and excludes the held-out Australian post-COVID job-finding rate. Panel A varies $\psi$ while holding $\eta=100$ fixed. Lower values of $\psi$ require a larger differential work-disutility shock to match the Australian separation response, and therefore imply a larger decline in Australian job finding. Panel B varies $\eta$ while holding $\psi=0.5$ fixed. Lower curvature values make search more responsive to replacement-rate differences and generate a larger predicted Australian job-finding decline.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Sensitivity of held-out Australian job-finding prediction}
+    \label{tab:model_sensitivity_14}
+    \small
+    \begin{tabular}{lcccc}
+        \toprule
+        Specification & Diff. $h$ (\% wage) & Model JFR DiD & Held-out gap & Fitted loss \\
+        \midrule
+        \multicolumn{5}{l}{\textit{Panel A: Varying $\psi$, holding $\eta=100$}} \\
+        $\psi=0.35$ & 19.0 & -1.95 p.p. & -0.24 p.p. & 0.000009 \\
+        $\psi=0.45$ & 14.8 & -1.74 p.p. & -0.03 p.p. & 0.000009 \\
+        $\psi=0.50$ & 13.3 & -1.66 p.p. & 0.04 p.p. & 0.000009 \\
+        $\psi=0.60$ & 11.1 & -1.55 p.p. & 0.16 p.p. & 0.000009 \\
+        $\psi=0.75$ & 8.9 & -1.44 p.p. & 0.27 p.p. & 0.000009 \\
+        \midrule
+        \multicolumn{5}{l}{\textit{Panel B: Varying $\eta$, holding $\psi=0.5$}} \\
+        $\eta=25$ & 13.3 & -1.78 p.p. & -0.18 p.p. & 0.012207 \\
+        $\eta=40$ & 13.3 & -1.72 p.p. & -0.07 p.p. & 0.003270 \\
+        $\eta=60$ & 13.3 & -1.69 p.p. & -0.01 p.p. & 0.000756 \\
+        $\eta=80$ & 13.3 & -1.67 p.p. & 0.02 p.p. & 0.000149 \\
+        $\eta=100$ & 13.3 & -1.66 p.p. & 0.04 p.p. & 0.000009 \\
+        $\eta=150$ & 13.3 & -1.65 p.p. & 0.07 p.p. & 0.000083 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+The sensitivity analysis is informative in two ways. First, the predicted Australian post-COVID job-finding rate is close to the data across a broad range of high-curvature specifications. This suggests that the held-out validation is not driven by a single knife-edge parameter choice. Second, the separation-work-disutility mapping is not separately identified by the current moments. The fitted loss is almost unchanged as $\psi$ varies, while the implied differential work-disutility shock ranges from 8.9 to 19.0 percent of the wage and the model-implied JFR DiD ranges from -1.44 to -1.95 percentage points. The decomposition should therefore be read as a range of plausible translations rather than a point estimate of a primitive health or preference shock.
+
+\subsection{Decomposition}
+
+The calibrated model can be used to decompose the reduced-form job-finding and separation DiDs into several counterfactual components. Table~\ref{tab:model_decomp_14} compares the full model with three counterfactuals. The benefit-only scenario raises Australian benefits while holding COVID matching and work-disutility shocks at their pre-COVID values. The common-COVID scenario applies the common post-COVID market and work-disutility shock without the Supplement. The differential-COVID scenario additionally allows the Australian work-disutility shock inferred from separations, but keeps benefits at their pre-COVID level.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Model decomposition of DiD effects}
+    \label{tab:model_decomp_14}
+    \begin{tabular}{lcc}
+        \toprule
+        Scenario & Job-finding DiD & Separation DiD \\
+        \midrule
+        Data & -1.71 p.p. & 3.72 p.p. \\
+        Benefit only & -1.50 p.p. & 0.05 p.p. \\
+        Common COVID only & 0.21 p.p. & 0.00 p.p. \\
+        Differential COVID only & -0.39 p.p. & 3.69 p.p. \\
+        Full model & -1.66 p.p. & 3.72 p.p. \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+The decomposition suggests that most of the job-finding DiD can be rationalised by the benefit channel, while the large separation DiD primarily identifies a differential COVID work-disutility shock. In the benchmark, the benefit-only effect on job finding is -1.50 percentage points, close to the reduced-form job-finding DiD of -1.71 percentage points. The differential COVID component contributes an additional decline in Australian job finding, but its main role is to explain the large separation response.
+
+This interpretation differs from a simple reading of the reduced-form DiD. The DiD captures the effect of benefit eligibility during the pandemic policy environment. The structural model uses the separation margin and the New Zealand comparison group to translate that object into a benefit component and a pandemic work-disutility component.
+
+\subsection{Replacement-rate gradient validation}
+
+A central prediction of the model is that the response to a flat-rate benefit increase should be larger for workers with higher replacement rates. This provides an additional validation exercise. Holding the aggregate calibration fixed, we vary only the Australian pre- and post-COVID replacement rates and compare the model-implied job-finding DiD with the empirical replacement-rate gradient reported in the heterogeneity analysis above. This exercise is not used to estimate the benchmark model.
+
+% XXX Replace the assumed replacement-rate group means in this table with empirical group means before using in the paper.
+\begin{table}[htbp]
+    \centering
+    \caption{Replacement-rate gradient validation}
+    \label{tab:rr_validation_14}
+    \begin{tabular}{lcccc}
+        \toprule
+        Group & Assumed pre RR & Assumed post RR & Data DiD & Model DiD \\
+        \midrule
+        Low RR & 0.14 & 0.28 & -2.37 p.p. & -1.08 p.p. \\
+        Mid RR & 0.28 & 0.56 & -4.25 p.p. & -1.66 p.p. \\
+        High RR & 0.45 & 0.90 & -6.04 p.p. & -4.49 p.p. \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+The model predicts the correct monotonic pattern: higher replacement rates generate larger reductions in job finding. However, using placeholder replacement-rate group means, the model underpredicts the steepness of the empirical gradient, particularly between the low- and middle-replacement-rate groups. Once empirical group-specific replacement rates are available, this exercise will provide a sharper test of whether the model's nonlinear replacement-rate mechanism is quantitatively strong enough. If the model continues to underpredict the gradient, this would point toward omitted heterogeneity in liquidity constraints, wealth, occupation exposure, or search costs across the replacement-rate distribution.
+
+\subsection{Discussion and interpretation}
+
+The structural model should be interpreted as a disciplined translation exercise rather than a fully identified estimate of all behavioural primitives. Its strength is that it uses separate moments for separate mechanisms: New Zealand job finding identifies the common COVID matching environment, separations identify work disutility, and Australian post-COVID job finding is left as a validation target conditional on the separation-implied work-disutility shock. This structure directly addresses the concern that the same COVID shock may have different behavioural implications for workers at different replacement rates.
+
+Several caveats remain. First, the work-disutility shocks $h_R$ and $h_N$ are composite residual objects. They capture health risk and caregiving constraints, but may also include job instability, employer-side separations, JobKeeper interactions, and other pandemic-specific factors. Second, the separation sensitivity parameter $\psi$ is weakly identified by the current set of moments. Results should therefore be reported over a plausible sensitivity range rather than as a single point estimate. Third, the benchmark search curvature is high, suggesting that the representative-agent model may be standing in for unmodelled heterogeneity. The replacement-rate gradient provides an important diagnostic for this issue.
+
+Overall, the model supports the interpretation that the Coronavirus Supplement reduced job finding among eligible Australians, and that this response was economically meaningful even during a period of weak labour demand and elevated health risk. At the same time, the separation evidence indicates that pandemic-specific work-disutility shocks were important, particularly for explaining the rise in separations. The reduced-form DiD should therefore be interpreted as a pandemic-regime treatment effect, while the structural model provides a way to translate that effect into benefit and COVID components under explicit assumptions.
