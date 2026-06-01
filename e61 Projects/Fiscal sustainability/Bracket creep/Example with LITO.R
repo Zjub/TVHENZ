@@ -304,3 +304,58 @@ df[diff < df[income == 100000]$diff & income > 200000]
 
 
 ### Add a scenario where the current change in policy that is legislated is introduced.
+
+
+
+## Add in plots for Budget wash up on ETRs for the example.
+
+plot_df <- data.frame(
+  income_type = c("Wages", "Capital Gains"),
+  rate = c(0.286, 0.345),
+  colour_group = c("Wages", "Capital Gains")
+)
+
+ggplot(plot_df, aes(x = income_type, y = rate*100, fill = colour_group)) +
+  geom_col(width = 0.6) +
+  geom_label(
+    aes(
+      y = (rate + 0.065)*100,
+      label = paste0(round(rate * 100, 1), "%")
+    ),
+    colour = "white",
+    fontface = "bold",
+    size = 4,
+    label.padding = unit(0.35, "lines"),
+    label.size = 0.8
+  ) +
+  scale_y_continuous_e61(
+    limits = c(0, 50,10),
+  ) +
+  scale_fill_manual(
+    values = c(
+      "Wages" = "grey35",
+      "Capital Gains" = "#2E86C1"
+    )
+  ) +
+  labs_e61(
+    title = "Real tax rates",
+    x = NULL,
+    y = "%",
+    fill = NULL,
+    sources = c("e61 Capital Income Tax Calculator"),
+    footnotes = c("Compares two individuals who receive $1.8 million dollars over 10 years. The 'capital gains' individual receives $80,000 of wages each year, and makes a $1 million capital gain in the final year. The 'wage' worker earns $180,000 per year. ","Assumes a single individual without children.")
+  ) +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    panel.background = element_blank(),
+    panel.grid.major.y = element_line(colour = "grey85"),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.line.x = element_line(colour = "black"),
+    axis.ticks.x = element_blank(),
+    legend.position = "none"
+  )
+
+save_e61("Post_budget_tax.png",res=2)
+save_e61("Post_budget_tax.svg")
+save_e61("Post_budget_tax.pdf")
