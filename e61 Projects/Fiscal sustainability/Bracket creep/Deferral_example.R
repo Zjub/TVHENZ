@@ -26,6 +26,12 @@ failure_prob <- 0.50
 risk_aversion <- 1 # Is a low level of risk aversion, but currently breaking on the values estimated for Australian households (1.3-1.5).
 background_wealth <- 100000 # Set to only a year of income - this income is not at risk
 
+# The no-tax indifference calibration can imply absurdly large success
+# payoffs when the failure probability is very high. Values above this
+# success/safe-work multiple are treated as outside the useful range.
+# Set to Inf to allow the model to plot those extreme values.
+max_required_success_multiple <- 1000
+
 # If use_flat_tax == TRUE, the flat tax rate is set equal to the
 # marginal Australian tax rate applying at this reference income.
 # With annual_labour_income = 100000, this is 30%.
@@ -138,39 +144,50 @@ certainty_equivalent <- function(outcomes, probs, gamma) {
 find_success_payoff <- function(safe_incremental_wealth,
                                 failure_prob,
                                 background_wealth,
-                                risk_aversion) {
+                                risk_aversion,
+                                max_required_success_multiple = Inf) {
 
   target_total_wealth <- background_wealth + safe_incremental_wealth
 
-  objective <- function(success_payoff) {
-    ce <- certainty_equivalent(
-      outcomes = c(
-        background_wealth,
-        background_wealth + success_payoff
-      ),
-      probs = c(failure_prob, 1 - failure_prob),
-      gamma = risk_aversion
-    )
-
-    ce - target_total_wealth
-  }
-
-  lower <- 0
-  upper <- max(safe_incremental_wealth * 2, 1)
-
-  max_iter <- 100
-  iter <- 0
-
-  while (objective(upper) < 0 && iter < max_iter) {
-    upper <- upper * 2
-    iter <- iter + 1
-  }
-
-  if (iter == max_iter) {
+  if (failure_prob < 0 || failure_prob >= 1) {
     return(NA_real_)
   }
 
-  uniroot(objective, lower = lower, upper = upper)$root
+  success_prob <- 1 - failure_prob
+
+  if (risk_aversion == 1) {
+    log_success_total_wealth <-
+      (log(target_total_wealth) -
+         failure_prob * log(background_wealth)) / success_prob
+
+    if (log_success_total_wealth > log(.Machine$double.xmax)) {
+      return(NA_real_)
+    }
+
+    success_payoff <- exp(log_success_total_wealth) - background_wealth
+  } else {
+    curvature <- 1 - risk_aversion
+
+    required_success_power <-
+      (target_total_wealth^curvature -
+         failure_prob * background_wealth^curvature) / success_prob
+
+    if (!is.finite(required_success_power) || required_success_power <= 0) {
+      return(NA_real_)
+    }
+
+    success_payoff <- required_success_power^(1 / curvature) -
+      background_wealth
+  }
+
+  required_success_multiple <- success_payoff / safe_incremental_wealth
+
+  if (!is.finite(success_payoff) ||
+      required_success_multiple > max_required_success_multiple) {
+    return(NA_real_)
+  }
+
+  success_payoff
 }
 
 # ============================================================
@@ -288,6 +305,7 @@ simulate_risky_indifference_case <- function(T_max,
                                              failure_prob,
                                              background_wealth,
                                              risk_aversion,
+                                             max_required_success_multiple = Inf,
                                              sale_year_other_income = 0) {
 
   out <- vector("list", T_max)
@@ -320,7 +338,8 @@ simulate_risky_indifference_case <- function(T_max,
       safe_incremental_wealth = safe_work_no_tax,
       failure_prob = failure_prob,
       background_wealth = background_wealth,
-      risk_aversion = risk_aversion
+      risk_aversion = risk_aversion,
+      max_required_success_multiple = max_required_success_multiple
     )
 
     if (is.na(success_payoff_no_tax)) {
@@ -437,6 +456,7 @@ risky <- simulate_risky_indifference_case(
   failure_prob = failure_prob,
   background_wealth = background_wealth,
   risk_aversion = risk_aversion,
+  max_required_success_multiple = max_required_success_multiple,
   sale_year_other_income = sale_year_other_income
 )
 
@@ -663,6 +683,7 @@ run_model_for_tax_system <- function(use_flat_tax_input) {
     failure_prob = failure_prob,
     background_wealth = background_wealth,
     risk_aversion = risk_aversion,
+    max_required_success_multiple = max_required_success_multiple,
     sale_year_other_income = sale_year_other_income
   )
 
@@ -916,6 +937,7 @@ simulate_risky_indifference_case_with_averaging <- function(T_max,
                                                             failure_prob,
                                                             background_wealth,
                                                             risk_aversion,
+                                                            max_required_success_multiple = Inf,
                                                             sale_year_other_income = 0,
                                                             averaging_base_income_per_year = 0,
                                                             apply_interest_to_averaged_tax = FALSE) {
@@ -946,7 +968,8 @@ simulate_risky_indifference_case_with_averaging <- function(T_max,
       safe_incremental_wealth = safe_work_no_tax,
       failure_prob = failure_prob,
       background_wealth = background_wealth,
-      risk_aversion = risk_aversion
+      risk_aversion = risk_aversion,
+      max_required_success_multiple = max_required_success_multiple
     )
 
     if (is.na(success_payoff_no_tax)) {
@@ -957,12 +980,17 @@ simulate_risky_indifference_case_with_averaging <- function(T_max,
         business_success_no_tax = NA_real_,
         business_expected_no_tax = NA_real_,
         business_ce_no_tax = NA_real_,
+        normal_success_tax = NA_real_,
         business_success_after_normal_tax = NA_real_,
+        business_expected_after_normal_tax = NA_real_,
         business_ce_after_normal_tax = NA_real_,
+        averaged_success_tax = NA_real_,
         business_success_after_averaging_tax = NA_real_,
+        business_expected_after_averaging_tax = NA_real_,
         business_ce_after_averaging_tax = NA_real_,
         normal_tax_induced_gap = NA_real_,
         averaging_tax_induced_gap = NA_real_,
+        averaging_tax_saving_success_state = NA_real_,
         averaging_change_in_gap = NA_real_
       )
       next
@@ -1117,6 +1145,7 @@ run_averaging_model_for_tax_system <- function(use_flat_tax_input) {
     failure_prob = failure_prob,
     background_wealth = background_wealth,
     risk_aversion = risk_aversion,
+    max_required_success_multiple = max_required_success_multiple,
     sale_year_other_income = sale_year_other_income,
     averaging_base_income_per_year = averaging_base_income_per_year,
     apply_interest_to_averaged_tax = apply_interest_to_averaged_tax
