@@ -22,7 +22,8 @@ risk_free_return <- 0.05
 T_max <- 10
 focus_T <- 10
 
-failure_prob <- 0.9
+failure_prob <- 0.50
+same_income_prob <- 0.40
 risk_aversion <- 1
 background_wealth <- 100000
 
@@ -191,18 +192,30 @@ certainty_equivalent <- function(outcomes, probs, gamma) {
 
 find_success_payoff <- function(safe_incremental_wealth,
                                 failure_prob,
+                                same_income_prob = 0,
                                 background_wealth,
                                 risk_aversion) {
 
+  if (failure_prob < 0 || same_income_prob < 0 ||
+      failure_prob + same_income_prob >= 1) {
+    stop(
+      "failure_prob and same_income_prob must be non-negative, ",
+      "and their sum must be less than 1."
+    )
+  }
+
   target_total_wealth <- background_wealth + safe_incremental_wealth
+  same_payoff <- safe_incremental_wealth
+  success_prob <- 1 - failure_prob - same_income_prob
 
   objective <- function(success_payoff) {
     ce <- certainty_equivalent(
       outcomes = c(
         background_wealth,
+        background_wealth + same_payoff,
         background_wealth + success_payoff
       ),
-      probs = c(failure_prob, 1 - failure_prob),
+      probs = c(failure_prob, same_income_prob, success_prob),
       gamma = risk_aversion
     )
 
@@ -467,6 +480,7 @@ simulate_risky_indifference_case <- function(T_max,
                                              flat_tax_rate,
                                              company_tax_rate,
                                              failure_prob,
+                                             same_income_prob = 0,
                                              background_wealth,
                                              risk_aversion,
                                              sale_year_other_income = 0,
@@ -497,9 +511,12 @@ simulate_risky_indifference_case <- function(T_max,
     success_payoff_no_tax <- find_success_payoff(
       safe_incremental_wealth = safe_work_no_tax,
       failure_prob = failure_prob,
+      same_income_prob = same_income_prob,
       background_wealth = background_wealth,
       risk_aversion = risk_aversion
     )
+
+    success_prob <- 1 - failure_prob - same_income_prob
 
     if (is.na(success_payoff_no_tax)) {
       out[[T]] <- data.table(
@@ -507,12 +524,17 @@ simulate_risky_indifference_case <- function(T_max,
         safe_work_no_tax = safe_work_no_tax,
         safe_work_after_tax = safe_work_after_tax,
         business_failure_no_tax = 0,
+        business_same_no_tax = safe_work_no_tax,
         business_success_no_tax = NA_real_,
         business_expected_no_tax = NA_real_,
         business_ce_no_tax = NA_real_,
+        business_same_after_capital_gain_tax = NA_real_,
         business_success_after_capital_gain_tax = NA_real_,
         business_ce_after_capital_gain_tax = NA_real_,
+        company_cash_same_state = NA_real_,
         company_cash_success_state = NA_real_,
+        franking_credit_same_state = NA_real_,
+        business_same_after_imputation = NA_real_,
         business_success_after_imputation = NA_real_,
         business_ce_after_imputation = NA_real_,
         capital_gain_tax_induced_gap = NA_real_,
@@ -523,13 +545,15 @@ simulate_risky_indifference_case <- function(T_max,
     }
 
     failure_payoff_no_tax <- 0
+    same_payoff_no_tax <- safe_work_no_tax
 
     ce_business_no_tax_total <- certainty_equivalent(
       outcomes = c(
         background_wealth + failure_payoff_no_tax,
+        background_wealth + same_payoff_no_tax,
         background_wealth + success_payoff_no_tax
       ),
-      probs = c(failure_prob, 1 - failure_prob),
+      probs = c(failure_prob, same_income_prob, success_prob),
       gamma = risk_aversion
     )
 
@@ -538,9 +562,17 @@ simulate_risky_indifference_case <- function(T_max,
 
     expected_business_no_tax <-
       failure_prob * failure_payoff_no_tax +
-      (1 - failure_prob) * success_payoff_no_tax
+      same_income_prob * same_payoff_no_tax +
+      success_prob * success_payoff_no_tax
 
     # Pure capital-gain treatment: no tax until success-state sale.
+    same_capital_gain_tax <- tax_on_increment(
+      base_income = sale_year_other_income,
+      increment = same_payoff_no_tax,
+      use_flat_tax = use_flat_tax,
+      flat_tax_rate = flat_tax_rate
+    )
+
     success_capital_gain_tax <- tax_on_increment(
       base_income = sale_year_other_income,
       increment = success_payoff_no_tax,
@@ -552,13 +584,16 @@ simulate_risky_indifference_case <- function(T_max,
       success_capital_gain_tax
 
     business_failure_after_tax <- 0
+    business_same_after_capital_gain_tax <- same_payoff_no_tax -
+      same_capital_gain_tax
 
     ce_business_after_capital_gain_tax_total <- certainty_equivalent(
       outcomes = c(
         background_wealth + business_failure_after_tax,
+        background_wealth + business_same_after_capital_gain_tax,
         background_wealth + business_success_after_capital_gain_tax
       ),
-      probs = c(failure_prob, 1 - failure_prob),
+      probs = c(failure_prob, same_income_prob, success_prob),
       gamma = risk_aversion
     )
 
@@ -567,11 +602,23 @@ simulate_risky_indifference_case <- function(T_max,
 
     expected_business_after_capital_gain_tax <-
       failure_prob * business_failure_after_tax +
-      (1 - failure_prob) * business_success_after_capital_gain_tax
+      same_income_prob * business_same_after_capital_gain_tax +
+      success_prob * business_success_after_capital_gain_tax
 
     # Imputation treatment. Scale annual business profits so that, absent
     # tax, the success-state terminal payoff equals success_payoff_no_tax.
     success_multiple <- success_payoff_no_tax / safe_work_no_tax
+
+    same_imputation <- simulate_imputation_business(
+      T = T,
+      annual_business_profit = annual_labour_income,
+      risk_free_return = risk_free_return,
+      company_tax_rate = company_tax_rate,
+      use_flat_tax = use_flat_tax,
+      flat_tax_rate = flat_tax_rate,
+      sale_year_other_income = sale_year_other_income,
+      franking_credits_refundable = franking_credits_refundable
+    )
 
     success_imputation <- simulate_imputation_business(
       T = T,
@@ -584,15 +631,19 @@ simulate_risky_indifference_case <- function(T_max,
       franking_credits_refundable = franking_credits_refundable
     )
 
+    business_same_after_imputation <-
+      same_imputation$after_personal_tax_distribution
+
     business_success_after_imputation <-
       success_imputation$after_personal_tax_distribution
 
     ce_business_after_imputation_total <- certainty_equivalent(
       outcomes = c(
         background_wealth + business_failure_after_tax,
+        background_wealth + business_same_after_imputation,
         background_wealth + business_success_after_imputation
       ),
-      probs = c(failure_prob, 1 - failure_prob),
+      probs = c(failure_prob, same_income_prob, success_prob),
       gamma = risk_aversion
     )
 
@@ -601,20 +652,28 @@ simulate_risky_indifference_case <- function(T_max,
 
     expected_business_after_imputation <-
       failure_prob * business_failure_after_tax +
-      (1 - failure_prob) * business_success_after_imputation
+      same_income_prob * business_same_after_imputation +
+      success_prob * business_success_after_imputation
 
     out[[T]] <- data.table(
       year = T,
 
       safe_work_no_tax = safe_work_no_tax,
       safe_work_after_tax = safe_work_after_tax,
+      failure_prob = failure_prob,
+      same_income_prob = same_income_prob,
+      success_prob = success_prob,
 
       business_failure_no_tax = failure_payoff_no_tax,
+      business_same_no_tax = same_payoff_no_tax,
       business_success_no_tax = success_payoff_no_tax,
       business_expected_no_tax = expected_business_no_tax,
       business_ce_no_tax = ce_business_no_tax_incremental,
 
+      same_capital_gain_tax = same_capital_gain_tax,
       success_capital_gain_tax = success_capital_gain_tax,
+      business_same_after_capital_gain_tax =
+        business_same_after_capital_gain_tax,
       business_success_after_capital_gain_tax =
         business_success_after_capital_gain_tax,
       business_expected_after_capital_gain_tax =
@@ -624,6 +683,13 @@ simulate_risky_indifference_case <- function(T_max,
       capital_gain_tax_induced_gap =
         business_ce_after_capital_gain_tax - safe_work_after_tax,
 
+      company_tax_paid_same_state = same_imputation$total_company_tax,
+      company_cash_same_state = same_imputation$company_cash,
+      franking_credit_same_state = same_imputation$franking_credit,
+      grossed_up_dividend_same_state =
+        same_imputation$grossed_up_dividend,
+      net_shareholder_topup_tax_same_state =
+        same_imputation$net_shareholder_tax,
       company_tax_paid_success_state = success_imputation$total_company_tax,
       company_cash_success_state = success_imputation$company_cash,
       franking_credit_success_state = success_imputation$franking_credit,
@@ -631,6 +697,8 @@ simulate_risky_indifference_case <- function(T_max,
         success_imputation$grossed_up_dividend,
       net_shareholder_topup_tax_success_state =
         success_imputation$net_shareholder_tax,
+      business_same_after_imputation =
+        business_same_after_imputation,
       business_success_after_imputation =
         business_success_after_imputation,
       business_expected_after_imputation =
@@ -679,6 +747,7 @@ risky <- simulate_risky_indifference_case(
   flat_tax_rate = flat_tax_rate,
   company_tax_rate = company_tax_rate,
   failure_prob = failure_prob,
+  same_income_prob = same_income_prob,
   background_wealth = background_wealth,
   risk_aversion = risk_aversion,
   sale_year_other_income = sale_year_other_income,
@@ -775,6 +844,7 @@ pretax_plot_data <- melt(
     "safe_work_no_tax",
     "business_ce_no_tax",
     "business_expected_no_tax",
+    "business_same_no_tax",
     "business_success_no_tax",
     "business_failure_no_tax"
   ),
@@ -792,9 +862,13 @@ pretax_plot_data[, scenario := fifelse(
       scenario == "business_expected_no_tax",
       "Risky business: expected value, no tax",
       fifelse(
+        scenario == "business_same_no_tax",
+        "Risky business: same-as-safe payoff, no tax",
+        fifelse(
         scenario == "business_success_no_tax",
         "Risky business: success payoff, no tax",
         "Risky business: failure payoff, no tax"
+        )
       )
     )
   )
@@ -810,6 +884,9 @@ p_pretax <- ggplot(
     title = "Case 2: Risky business calibrated to no-tax indifference",
     subtitle = paste0(
       "Failure probability = ", percent(failure_prob),
+      ", same-as-safe probability = ", percent(same_income_prob),
+      ", success probability = ",
+      percent(1 - failure_prob - same_income_prob),
       ", risk aversion = ", risk_aversion,
       ", background wealth = ", dollar(background_wealth)
     ),
@@ -927,6 +1004,11 @@ summary_table <- merge(
   risky[year == focus_T, .(
     year,
     safe_work_after_tax,
+    failure_prob,
+    same_income_prob,
+    success_prob,
+    risky_business_same_payoff_no_tax = business_same_no_tax,
+    risky_business_success_payoff_no_tax = business_success_no_tax,
     risky_business_ce_capital_gain = business_ce_after_capital_gain_tax,
     risky_business_ce_imputation = business_ce_after_imputation,
     capital_gain_tax_induced_gap,
@@ -969,6 +1051,7 @@ run_model_for_tax_system <- function(use_flat_tax_input) {
     flat_tax_rate = flat_tax_rate,
     company_tax_rate = company_tax_rate,
     failure_prob = failure_prob,
+    same_income_prob = same_income_prob,
     background_wealth = background_wealth,
     risk_aversion = risk_aversion,
     sale_year_other_income = sale_year_other_income,
@@ -1081,6 +1164,11 @@ comparison_table <- merge(
   comparison_risky[year == focus_T, .(
     tax_system,
     safe_work_after_tax,
+    failure_prob,
+    same_income_prob,
+    success_prob,
+    risky_business_same_payoff_no_tax = business_same_no_tax,
+    risky_business_success_payoff_no_tax = business_success_no_tax,
     risky_business_ce_capital_gain = business_ce_after_capital_gain_tax,
     risky_business_ce_imputation = business_ce_after_imputation,
     risky_business_capital_gain_gap = capital_gain_tax_induced_gap,
@@ -1269,6 +1357,7 @@ simulate_risky_indifference_case_with_averaging <- function(T_max,
                                                             flat_tax_rate,
                                                             company_tax_rate,
                                                             failure_prob,
+                                                            same_income_prob = 0,
                                                             background_wealth,
                                                             risk_aversion,
                                                             sale_year_other_income = 0,
@@ -1289,6 +1378,7 @@ simulate_risky_indifference_case_with_averaging <- function(T_max,
       flat_tax_rate = flat_tax_rate,
       company_tax_rate = company_tax_rate,
       failure_prob = failure_prob,
+      same_income_prob = same_income_prob,
       background_wealth = background_wealth,
       risk_aversion = risk_aversion,
       sale_year_other_income = sale_year_other_income,
@@ -1308,6 +1398,18 @@ simulate_risky_indifference_case_with_averaging <- function(T_max,
       next
     }
 
+    success_prob <- 1 - failure_prob - same_income_prob
+
+    averaged_same_tax <- tax_on_averaged_increment(
+      total_increment = base_case$business_same_no_tax,
+      T = T,
+      base_income_per_year = averaging_base_income_per_year,
+      use_flat_tax = use_flat_tax,
+      flat_tax_rate = flat_tax_rate,
+      apply_interest_to_averaged_tax = apply_interest_to_averaged_tax,
+      risk_free_return = risk_free_return
+    )
+
     averaged_success_tax <- tax_on_averaged_increment(
       total_increment = base_case$business_success_no_tax,
       T = T,
@@ -1322,13 +1424,16 @@ simulate_risky_indifference_case_with_averaging <- function(T_max,
       base_case$business_success_no_tax - averaged_success_tax
 
     business_failure_after_tax <- 0
+    business_same_after_averaging_tax <-
+      base_case$business_same_no_tax - averaged_same_tax
 
     ce_business_after_averaging_tax_total <- certainty_equivalent(
       outcomes = c(
         background_wealth + business_failure_after_tax,
+        background_wealth + business_same_after_averaging_tax,
         background_wealth + business_success_after_averaging_tax
       ),
-      probs = c(failure_prob, 1 - failure_prob),
+      probs = c(failure_prob, same_income_prob, success_prob),
       gamma = risk_aversion
     )
 
@@ -1340,6 +1445,18 @@ simulate_risky_indifference_case_with_averaging <- function(T_max,
       franking_credit_capitalisation_rate *
         base_case$franking_credit_success_state
 
+    corporate_share_sale_same_proceeds <-
+      base_case$company_cash_same_state +
+      franking_credit_capitalisation_rate *
+        base_case$franking_credit_same_state
+
+    corporate_share_sale_same_tax <- tax_on_increment(
+      base_income = sale_year_other_income,
+      increment = corporate_share_sale_same_proceeds,
+      use_flat_tax = use_flat_tax,
+      flat_tax_rate = flat_tax_rate
+    )
+
     corporate_share_sale_success_tax <- tax_on_increment(
       base_income = sale_year_other_income,
       increment = corporate_share_sale_success_proceeds,
@@ -1349,6 +1466,19 @@ simulate_risky_indifference_case_with_averaging <- function(T_max,
 
     business_success_after_corporate_share_sale <-
       corporate_share_sale_success_proceeds - corporate_share_sale_success_tax
+
+    business_same_after_corporate_share_sale <-
+      corporate_share_sale_same_proceeds - corporate_share_sale_same_tax
+
+    corporate_share_sale_averaged_same_tax <- tax_on_averaged_increment(
+      total_increment = corporate_share_sale_same_proceeds,
+      T = T,
+      base_income_per_year = averaging_base_income_per_year,
+      use_flat_tax = use_flat_tax,
+      flat_tax_rate = flat_tax_rate,
+      apply_interest_to_averaged_tax = apply_interest_to_averaged_tax,
+      risk_free_return = risk_free_return
+    )
 
     corporate_share_sale_averaged_success_tax <- tax_on_averaged_increment(
       total_increment = corporate_share_sale_success_proceeds,
@@ -1364,12 +1494,17 @@ simulate_risky_indifference_case_with_averaging <- function(T_max,
       corporate_share_sale_success_proceeds -
       corporate_share_sale_averaged_success_tax
 
+    business_same_after_corporate_share_sale_averaging <-
+      corporate_share_sale_same_proceeds -
+      corporate_share_sale_averaged_same_tax
+
     ce_business_after_corporate_share_sale_total <- certainty_equivalent(
       outcomes = c(
         background_wealth + business_failure_after_tax,
+        background_wealth + business_same_after_corporate_share_sale,
         background_wealth + business_success_after_corporate_share_sale
       ),
-      probs = c(failure_prob, 1 - failure_prob),
+      probs = c(failure_prob, same_income_prob, success_prob),
       gamma = risk_aversion
     )
 
@@ -1381,9 +1516,11 @@ simulate_risky_indifference_case_with_averaging <- function(T_max,
         outcomes = c(
           background_wealth + business_failure_after_tax,
           background_wealth +
+            business_same_after_corporate_share_sale_averaging,
+          background_wealth +
             business_success_after_corporate_share_sale_averaging
         ),
-        probs = c(failure_prob, 1 - failure_prob),
+        probs = c(failure_prob, same_income_prob, success_prob),
         gamma = risk_aversion
       )
 
@@ -1394,14 +1531,20 @@ simulate_risky_indifference_case_with_averaging <- function(T_max,
     out[[T]] <- data.table(
       year = T,
       safe_work_after_tax = base_case$safe_work_after_tax,
+      failure_prob = failure_prob,
+      same_income_prob = same_income_prob,
+      success_prob = success_prob,
+      business_same_no_tax = base_case$business_same_no_tax,
       business_success_no_tax = base_case$business_success_no_tax,
 
+      normal_same_tax = base_case$same_capital_gain_tax,
       normal_success_tax = base_case$success_capital_gain_tax,
       business_ce_after_normal_tax =
         base_case$business_ce_after_capital_gain_tax,
       normal_tax_induced_gap =
         base_case$capital_gain_tax_induced_gap,
 
+      averaged_same_tax = averaged_same_tax,
       averaged_success_tax = averaged_success_tax,
       business_ce_after_averaging_tax =
         business_ce_after_averaging_tax,
@@ -1410,10 +1553,16 @@ simulate_risky_indifference_case_with_averaging <- function(T_max,
 
       company_tax_paid_success_state =
         base_case$company_tax_paid_success_state,
+      company_cash_same_state =
+        base_case$company_cash_same_state,
       company_cash_success_state =
         base_case$company_cash_success_state,
+      franking_credit_same_state =
+        base_case$franking_credit_same_state,
       franking_credit_success_state =
         base_case$franking_credit_success_state,
+      net_shareholder_topup_tax_same_state =
+        base_case$net_shareholder_topup_tax_same_state,
       net_shareholder_topup_tax_success_state =
         base_case$net_shareholder_topup_tax_success_state,
       business_ce_after_imputation =
@@ -1428,8 +1577,15 @@ simulate_risky_indifference_case_with_averaging <- function(T_max,
       franking_credit_capitalised_success_state =
         franking_credit_capitalisation_rate *
         base_case$franking_credit_success_state,
+      franking_credit_capitalised_same_state =
+        franking_credit_capitalisation_rate *
+        base_case$franking_credit_same_state,
+      corporate_share_sale_same_proceeds =
+        corporate_share_sale_same_proceeds,
       corporate_share_sale_success_proceeds =
         corporate_share_sale_success_proceeds,
+      corporate_share_sale_same_tax =
+        corporate_share_sale_same_tax,
       corporate_share_sale_success_tax =
         corporate_share_sale_success_tax,
       business_ce_after_corporate_share_sale =
@@ -1438,6 +1594,8 @@ simulate_risky_indifference_case_with_averaging <- function(T_max,
         business_ce_after_corporate_share_sale -
         base_case$safe_work_after_tax,
 
+      corporate_share_sale_averaged_same_tax =
+        corporate_share_sale_averaged_same_tax,
       corporate_share_sale_averaged_success_tax =
         corporate_share_sale_averaged_success_tax,
       business_ce_after_corporate_share_sale_averaging =
@@ -1478,6 +1636,7 @@ run_averaging_model_for_tax_system <- function(use_flat_tax_input) {
     flat_tax_rate = flat_tax_rate,
     company_tax_rate = company_tax_rate,
     failure_prob = failure_prob,
+    same_income_prob = same_income_prob,
     background_wealth = background_wealth,
     risk_aversion = risk_aversion,
     sale_year_other_income = sale_year_other_income,
@@ -1625,13 +1784,23 @@ averaging_summary_table <- comparison_risky_avg[year == focus_T, .(
   tax_system,
   year,
   safe_work_after_tax,
+  failure_prob,
+  same_income_prob,
+  success_prob,
+  business_same_no_tax,
   business_success_no_tax,
+  normal_same_tax,
   normal_success_tax,
+  averaged_same_tax,
   averaged_success_tax,
+  company_cash_same_state,
   company_tax_paid_success_state,
   company_cash_success_state,
+  franking_credit_same_state,
   franking_credit_success_state,
+  franking_credit_capitalised_same_state,
   franking_credit_capitalised_success_state,
+  net_shareholder_topup_tax_same_state,
   net_shareholder_topup_tax_success_state,
   business_ce_after_normal_tax,
   business_ce_after_averaging_tax,
