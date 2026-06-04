@@ -1,0 +1,5 @@
+"income_type","timing","total_real_income","tax_paid","effective_tax_rate"
+"Wages earned each year","Annual income",1e+06,207880,0.20788
+"Real capital income earned each year","Annual income",1e+06,207880,0.20788
+"Real capital gain realised in final year","One-year realisation",1e+06,416138,0.416138
+"Real capital gain averaged over 10 years","Averaged gain",1e+06,207880,0.20788

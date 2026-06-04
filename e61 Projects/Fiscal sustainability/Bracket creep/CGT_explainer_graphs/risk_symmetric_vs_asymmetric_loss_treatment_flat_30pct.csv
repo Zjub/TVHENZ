@@ -1,0 +1,5 @@
+"policy","investment_scale","success_payoff","failure_payoff","expected_payoff"
+"No-tax benchmark",1,2e+05,-1e+05,50000
+"Symmetric tax, same investment",1,140000,-70000,35000
+"Symmetric tax, scaled up",1.42857142857143,2e+05,-1e+05,50000
+"Asymmetric tax, scaled to match upside",1.42857142857143,2e+05,-142857.142857143,28571.4285714286

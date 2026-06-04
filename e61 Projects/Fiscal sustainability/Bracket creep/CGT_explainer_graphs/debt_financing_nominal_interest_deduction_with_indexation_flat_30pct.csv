@@ -1,0 +1,5 @@
+"component","amount","type"
+"Real capital gain taxed",25625.0000000001,"Taxable income"
+"Nominal interest deducted",-50624.9999999999,"Deduction"
+"Net taxable loss",-24999.9999999998,"Net tax base"
+"Tax saving at 30%",7499.99999999994,"Tax saving"

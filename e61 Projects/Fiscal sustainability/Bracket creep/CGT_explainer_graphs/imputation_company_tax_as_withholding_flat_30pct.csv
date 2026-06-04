@@ -1,0 +1,4 @@
+"scenario","tax_timing","company_tax_paid","franking_credits_capitalised_at_sale","exit_personal_cgt","share_sale_price","present_value_tax","final_after_tax_wealth"
+"Real return taxed personally each year","Annual personal tax",0,0,0,NA,134014.725426524,1410598.76062112
+"Company tax paid each year; credits capitalised at sale","Company tax plus capitalised credits",175970.897409052,175970.897409052,175970.897409052,1586569.65803017,134014.725426524,1410598.76062112
+"Untaxed asset, CGT paid only at exit","Deferred personal CGT",0,0,188668.388033233,1628894.62677744,115826.023937772,1440226.23874421

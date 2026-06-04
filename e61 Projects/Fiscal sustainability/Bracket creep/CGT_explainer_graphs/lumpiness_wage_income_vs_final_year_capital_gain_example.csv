@@ -1,0 +1,4 @@
+"scenario","total_income","tax_paid","effective_tax_rate"
+"$180k wages each year",1800000,479380,0.266322222222222
+"$80k wages plus $1m gain in final year",1800000,585230,0.325127777777778
+"$80k wages plus $1m gain averaged",1800000,479380,0.266322222222222

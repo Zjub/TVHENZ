@@ -1,0 +1,304 @@
+"annual_real_return","nominal_return","treatment","after_tax_real_gain"
+-0.0243902439024389,0,"50% discount; nominal losses recognised",-280084.544196357
+-0.0243902439024389,0,"Real gains taxed; nominal losses recognised",-280084.544196357
+-0.0243902439024389,0,"Real gains taxed; full loss offset",-196059.18093745
+-0.0234146341463415,0.001,"50% discount; nominal losses recognised",-271546.192017643
+-0.0234146341463415,0.001,"Real gains taxed; nominal losses recognised",-270039.423986105
+-0.0234146341463415,0.001,"Real gains taxed; full loss offset",-189027.596790274
+-0.0224390243902438,0.002,"50% discount; nominal losses recognised",-262930.725333491
+-0.0224390243902438,0.002,"Real gains taxed; nominal losses recognised",-259903.580828279
+-0.0224390243902438,0.002,"Real gains taxed; full loss offset",-181932.506579795
+-0.0214634146341464,0.003,"50% discount; nominal losses recognised",-254237.525685677
+-0.0214634146341464,0.003,"Real gains taxed; nominal losses recognised",-249676.287124968
+-0.0214634146341464,0.003,"Real gains taxed; full loss offset",-174773.400987478
+-0.0204878048780487,0.004,"50% discount; nominal losses recognised",-245465.970280283
+-0.0204878048780487,0.004,"Real gains taxed; nominal losses recognised",-239356.810177446
+-0.0204878048780487,0.004,"Real gains taxed; full loss offset",-167549.767124213
+-0.0195121951219512,0.005,"50% discount; nominal losses recognised",-236615.431961685
+-0.0195121951219512,0.005,"Real gains taxed; nominal losses recognised",-228944.412155567
+-0.0195121951219512,0.005,"Real gains taxed; full loss offset",-160261.088508897
+-0.0185365853658536,0.006,"50% discount; nominal losses recognised",-227685.27918638
+-0.0185365853658536,0.006,"Real gains taxed; nominal losses recognised",-218438.350066973
+-0.0185365853658536,0.006,"Real gains taxed; full loss offset",-152906.845046881
+-0.0175609756097561,0.007,"50% discount; nominal losses recognised",-218674.875996714
+-0.0175609756097561,0.007,"Real gains taxed; nominal losses recognised",-207837.875726188
+-0.0175609756097561,0.007,"Real gains taxed; full loss offset",-145486.513008332
+-0.0165853658536584,0.008,"50% discount; nominal losses recognised",-209583.581994444
+-0.0165853658536584,0.008,"Real gains taxed; nominal losses recognised",-197142.235723518
+-0.0165853658536584,0.008,"Real gains taxed; full loss offset",-137999.565006462
+-0.015609756097561,0.009,"50% discount; nominal losses recognised",-200410.75231421
+-0.015609756097561,0.009,"Real gains taxed; nominal losses recognised",-186350.671393831
+-0.015609756097561,0.009,"Real gains taxed; full loss offset",-130445.469975682
+-0.0146341463414633,0.01,"50% discount; nominal losses recognised",-191155.737596833
+-0.0146341463414633,0.01,"Real gains taxed; nominal losses recognised",-175462.418785152
+-0.0146341463414633,0.01,"Real gains taxed; full loss offset",-122823.693149606
+-0.0136585365853659,0.011,"50% discount; nominal losses recognised",-181817.883962514
+-0.0136585365853659,0.011,"Real gains taxed; nominal losses recognised",-164476.70862713
+-0.0136585365853659,0.011,"Real gains taxed; full loss offset",-115133.696038991
+-0.0126829268292682,0.012,"50% discount; nominal losses recognised",-172396.532983873
+-0.0126829268292682,0.012,"Real gains taxed; nominal losses recognised",-153392.766299317
+-0.0126829268292682,0.012,"Real gains taxed; full loss offset",-107374.936409522
+-0.0117073170731707,0.013,"50% discount; nominal losses recognised",-162891.02165888
+-0.0117073170731707,0.013,"Real gains taxed; nominal losses recognised",-142209.811799325
+-0.0117073170731707,0.013,"Real gains taxed; full loss offset",-99546.8682595275
+-0.0107317073170731,0.014,"50% discount; nominal losses recognised",-153300.682383625
+-0.0107317073170731,0.014,"Real gains taxed; nominal losses recognised",-130927.059710789
+-0.0107317073170731,0.014,"Real gains taxed; full loss offset",-91648.9417975526
+-0.00975609756097562,0.015,"50% discount; nominal losses recognised",-143624.84292498
+-0.00975609756097562,0.015,"Real gains taxed; nominal losses recognised",-119543.719171208
+-0.00975609756097562,0.015,"Real gains taxed; full loss offset",-83680.6034198453
+-0.00878048780487795,0.016,"50% discount; nominal losses recognised",-133862.826393099
+-0.00878048780487795,0.016,"Real gains taxed; nominal losses recognised",-108058.993839583
+-0.00878048780487795,0.016,"Real gains taxed; full loss offset",-75641.2956877079
+-0.00780487804878049,0.017,"50% discount; nominal losses recognised",-124013.95121381
+-0.00780487804878049,0.017,"Real gains taxed; nominal losses recognised",-96472.0818639486
+-0.00780487804878049,0.017,"Real gains taxed; full loss offset",-67530.457304764
+-0.00682926829268282,0.018,"50% discount; nominal losses recognised",-114077.531100839
+-0.00682926829268282,0.018,"Real gains taxed; nominal losses recognised",-84782.1758486889
+-0.00682926829268282,0.018,"Real gains taxed; full loss offset",-59347.5230940822
+-0.00585365853658537,0.019,"50% discount; nominal losses recognised",-104052.875027935
+-0.00585365853658537,0.019,"Real gains taxed; nominal losses recognised",-72988.4628217425
+-0.00585365853658537,0.019,"Real gains taxed; full loss offset",-51091.9239752198
+-0.0048780487804877,0.02,"50% discount; nominal losses recognised",-93939.2872008129
+-0.0048780487804877,0.02,"Real gains taxed; nominal losses recognised",-61090.1242015993
+-0.0048780487804877,0.02,"Real gains taxed; full loss offset",-42763.0869411195
+-0.00390243902439025,0.021,"50% discount; nominal losses recognised",-83736.0670290062
+-0.00390243902439025,0.021,"Real gains taxed; nominal losses recognised",-49086.3357641797
+-0.00390243902439025,0.021,"Real gains taxed; full loss offset",-34360.4350349258
+-0.00292682926829257,0.022,"50% discount; nominal losses recognised",-73442.5090975353
+-0.00292682926829257,0.022,"Real gains taxed; nominal losses recognised",-36976.267609508
+-0.00292682926829257,0.022,"Real gains taxed; full loss offset",-25883.3873266556
+-0.00195121951219512,0.023,"50% discount; nominal losses recognised",-63057.9031384778
+-0.00195121951219512,0.023,"Real gains taxed; nominal losses recognised",-24759.0841282639
+-0.00195121951219512,0.023,"Real gains taxed; full loss offset",-17331.3588897847
+-0.000975609756097451,0.024,"50% discount; nominal losses recognised",-52581.5340023612
+-0.000975609756097451,0.024,"Real gains taxed; nominal losses recognised",-12433.9439681268
+-0.000975609756097451,0.024,"Real gains taxed; full loss offset",-8703.76077768875
+0,0.025,"50% discount; nominal losses recognised",-42012.6816294535
+0,0.025,"Real gains taxed; nominal losses recognised",0
+0,0.025,"Real gains taxed; full loss offset",0
+0.000975609756097562,0.026,"50% discount; nominal losses recognised",-31350.6210208727
+0.000975609756097562,0.026,"Real gains taxed; nominal losses recognised",8780.52050118416
+0.000975609756097562,0.026,"Real gains taxed; full loss offset",8780.52050118416
+0.00195121951219512,0.027,"50% discount; nominal losses recognised",-20594.6222095968
+0.00195121951219512,0.027,"Real gains taxed; nominal losses recognised",17638.4018751761
+0.00195121951219512,0.027,"Real gains taxed; full loss offset",17638.4018751761
+0.00292682926829269,0.028,"50% discount; nominal losses recognised",-9743.95023129163
+0.00292682926829269,0.028,"Real gains taxed; nominal losses recognised",26574.2493867215
+0.00292682926829269,0.028,"Real gains taxed; full loss offset",26574.2493867215
+0.00390243902439025,0.029,"50% discount; nominal losses recognised",1202.13490496663
+0.00390243902439025,0.029,"Real gains taxed; nominal losses recognised",35588.6724401107
+0.00390243902439025,0.029,"Real gains taxed; full loss offset",35588.6724401107
+0.00487804878048781,0.03,"50% discount; nominal losses recognised",12244.3782461474
+0.00487804878048781,0.03,"Real gains taxed; nominal losses recognised",44682.284603436
+0.00487804878048781,0.03,"Real gains taxed; full loss offset",44682.284603436
+0.00585365853658537,0.031,"50% discount; nominal losses recognised",23383.529924829
+0.00585365853658537,0.031,"Real gains taxed; nominal losses recognised",53855.7036329385
+0.00585365853658537,0.031,"Real gains taxed; full loss offset",53855.7036329385
+0.00682926829268293,0.032,"50% discount; nominal losses recognised",34620.3451889433
+0.00682926829268293,0.032,"Real gains taxed; nominal losses recognised",63109.5514975032
+0.00682926829268293,0.032,"Real gains taxed; full loss offset",63109.5514975032
+0.00780487804878049,0.033,"50% discount; nominal losses recognised",45955.5844316278
+0.00780487804878049,0.033,"Real gains taxed; nominal losses recognised",72444.4544032434
+0.00780487804878049,0.033,"Real gains taxed; full loss offset",72444.4544032434
+0.00878048780487806,0.034,"50% discount; nominal losses recognised",57390.0132212589
+0.00878048780487806,0.034,"Real gains taxed; nominal losses recognised",81861.0428182337
+0.00878048780487806,0.034,"Real gains taxed; full loss offset",81861.0428182337
+0.00975609756097562,0.035,"50% discount; nominal losses recognised",68924.4023315962
+0.00975609756097562,0.035,"Real gains taxed; nominal losses recognised",91359.9514973351
+0.00975609756097562,0.035,"Real gains taxed; full loss offset",91359.951497335
+0.0107317073170732,0.036,"50% discount; nominal losses recognised",80559.5277721086
+0.0107317073170732,0.036,"Real gains taxed; nominal losses recognised",100941.819507169
+0.0107317073170732,0.036,"Real gains taxed; full loss offset",100941.819507169
+0.0117073170731707,0.037,"50% discount; nominal losses recognised",92296.1708184085
+0.0117073170731707,0.037,"Real gains taxed; nominal losses recognised",110607.29025118
+0.0117073170731707,0.037,"Real gains taxed; full loss offset",110607.29025118
+0.0126829268292683,0.038,"50% discount; nominal losses recognised",104135.118042876
+0.0126829268292683,0.038,"Real gains taxed; nominal losses recognised",120357.01149486
+0.0126829268292683,0.038,"Real gains taxed; full loss offset",120357.01149486
+0.0136585365853659,0.039,"50% discount; nominal losses recognised",116077.161345388
+0.0136585365853659,0.039,"Real gains taxed; nominal losses recognised",130191.635391046
+0.0136585365853659,0.039,"Real gains taxed; full loss offset",130191.635391046
+0.0146341463414634,0.04,"50% discount; nominal losses recognised",128123.097984236
+0.0146341463414634,0.04,"Real gains taxed; nominal losses recognised",140111.818505391
+0.0146341463414634,0.04,"Real gains taxed; full loss offset",140111.818505391
+0.015609756097561,0.041,"50% discount; nominal losses recognised",140273.730607157
+0.015609756097561,0.041,"Real gains taxed; nominal losses recognised",150118.221841915
+0.015609756097561,0.041,"Real gains taxed; full loss offset",150118.221841915
+0.0165853658536586,0.042,"50% discount; nominal losses recognised",152529.867282549
+0.0165853658536586,0.042,"Real gains taxed; nominal losses recognised",160211.510868708
+0.0165853658536586,0.042,"Real gains taxed; full loss offset",160211.510868708
+0.0175609756097561,0.043,"50% discount; nominal losses recognised",164892.3215308
+0.0175609756097561,0.043,"Real gains taxed; nominal losses recognised",170392.355543738
+0.0175609756097561,0.043,"Real gains taxed; full loss offset",170392.355543738
+0.0185365853658537,0.044,"50% discount; nominal losses recognised",177361.912355806
+0.0185365853658537,0.044,"Real gains taxed; nominal losses recognised",180661.430340802
+0.0185365853658537,0.044,"Real gains taxed; full loss offset",180661.430340802
+0.0195121951219512,0.045,"50% discount; nominal losses recognised",189939.464276605
+0.0195121951219512,0.045,"Real gains taxed; nominal losses recognised",191019.414275578
+0.0195121951219512,0.045,"Real gains taxed; full loss offset",191019.414275578
+0.0204878048780488,0.046,"50% discount; nominal losses recognised",202625.807359196
+0.0204878048780488,0.046,"Real gains taxed; nominal losses recognised",201466.990931829
+0.0204878048780488,0.046,"Real gains taxed; full loss offset",201466.990931829
+0.0214634146341464,0.047,"50% discount; nominal losses recognised",215421.777248476
+0.0214634146341464,0.047,"Real gains taxed; nominal losses recognised",212004.848487706
+0.0214634146341464,0.047,"Real gains taxed; full loss offset",212004.848487706
+0.0224390243902439,0.048,"50% discount; nominal losses recognised",228328.215200368
+0.0224390243902439,0.048,"Real gains taxed; nominal losses recognised",222633.679742206
+0.0224390243902439,0.048,"Real gains taxed; full loss offset",222633.679742206
+0.0234146341463415,0.049,"50% discount; nominal losses recognised",241345.968114066
+0.0234146341463415,0.049,"Real gains taxed; nominal losses recognised",233354.182141722
+0.0234146341463415,0.049,"Real gains taxed; full loss offset",233354.182141722
+0.024390243902439,0.05,"50% discount; nominal losses recognised",254475.888564469
+0.024390243902439,0.05,"Real gains taxed; nominal losses recognised",244167.05780676
+0.024390243902439,0.05,"Real gains taxed; full loss offset",244167.05780676
+0.0253658536585366,0.051,"50% discount; nominal losses recognised",267718.834834734
+0.0253658536585366,0.051,"Real gains taxed; nominal losses recognised",255073.013558743
+0.0253658536585366,0.051,"Real gains taxed; full loss offset",255073.013558743
+0.0263414634146342,0.052,"50% discount; nominal losses recognised",281075.670949024
+0.0263414634146342,0.052,"Real gains taxed; nominal losses recognised",266072.760946981
+0.0263414634146342,0.052,"Real gains taxed; full loss offset",266072.760946981
+0.0273170731707317,0.053,"50% discount; nominal losses recognised",294547.266705371
+0.0273170731707317,0.053,"Real gains taxed; nominal losses recognised",277167.016275738
+0.0273170731707317,0.053,"Real gains taxed; full loss offset",277167.016275738
+0.0282926829268293,0.054,"50% discount; nominal losses recognised",308134.497708738
+0.0282926829268293,0.054,"Real gains taxed; nominal losses recognised",288356.500631452
+0.0282926829268293,0.054,"Real gains taxed; full loss offset",288356.500631452
+0.0292682926829269,0.055,"50% discount; nominal losses recognised",321838.245404197
+0.0292682926829269,0.055,"Real gains taxed; nominal losses recognised",299641.939910065
+0.0292682926829269,0.055,"Real gains taxed; full loss offset",299641.939910065
+0.0302439024390244,0.056,"50% discount; nominal losses recognised",335659.397110303
+0.0302439024390244,0.056,"Real gains taxed; nominal losses recognised",311024.064844506
+0.0302439024390244,0.056,"Real gains taxed; full loss offset",311024.064844506
+0.031219512195122,0.057,"50% discount; nominal losses recognised",349598.846052591
+0.031219512195122,0.057,"Real gains taxed; nominal losses recognised",322503.611032272
+0.031219512195122,0.057,"Real gains taxed; full loss offset",322503.611032272
+0.0321951219512198,0.058,"50% discount; nominal losses recognised",363657.491397268
+0.0321951219512198,0.058,"Real gains taxed; nominal losses recognised",334081.318963183
+0.0321951219512198,0.058,"Real gains taxed; full loss offset",334081.318963183
+0.0331707317073171,0.059,"50% discount; nominal losses recognised",377836.238285029
+0.0331707317073171,0.059,"Real gains taxed; nominal losses recognised",345757.934047221
+0.0331707317073171,0.059,"Real gains taxed; full loss offset",345757.934047221
+0.0341463414634149,0.06,"50% discount; nominal losses recognised",392135.99786507
+0.0341463414634149,0.06,"Real gains taxed; nominal losses recognised",357534.206642549
+0.0341463414634149,0.06,"Real gains taxed; full loss offset",357534.206642549
+0.0351219512195122,0.061,"50% discount; nominal losses recognised",406557.687329221
+0.0351219512195122,0.061,"Real gains taxed; nominal losses recognised",369410.892083614
+0.0351219512195122,0.061,"Real gains taxed; full loss offset",369410.892083614
+0.03609756097561,0.062,"50% discount; nominal losses recognised",421102.229946288
+0.03609756097561,0.062,"Real gains taxed; nominal losses recognised",381388.750709434
+0.03609756097561,0.062,"Real gains taxed; full loss offset",381388.750709434
+0.0370731707317074,0.063,"50% discount; nominal losses recognised",435770.555096506
+0.0370731707317074,0.063,"Real gains taxed; nominal losses recognised",393468.547891967
+0.0370731707317074,0.063,"Real gains taxed; full loss offset",393468.547891966
+0.0380487804878051,0.064,"50% discount; nominal losses recognised",450563.598306207
+0.0380487804878051,0.064,"Real gains taxed; nominal losses recognised",405651.054064661
+0.0380487804878051,0.064,"Real gains taxed; full loss offset",405651.054064661
+0.0390243902439025,0.065,"50% discount; nominal losses recognised",465482.301282599
+0.0390243902439025,0.065,"Real gains taxed; nominal losses recognised",417937.044751102
+0.0390243902439025,0.065,"Real gains taxed; full loss offset",417937.044751102
+0.0400000000000003,0.066,"50% discount; nominal losses recognised",480527.611948762
+0.0400000000000003,0.066,"Real gains taxed; nominal losses recognised",430327.300593824
+0.0400000000000003,0.066,"Real gains taxed; full loss offset",430327.300593824
+0.0409756097560976,0.067,"50% discount; nominal losses recognised",495700.484478757
+0.0409756097560976,0.067,"Real gains taxed; nominal losses recognised",442822.607383232
+0.0409756097560976,0.067,"Real gains taxed; full loss offset",442822.607383232
+0.0419512195121954,0.068,"50% discount; nominal losses recognised",511001.879332949
+0.0419512195121954,0.068,"Real gains taxed; nominal losses recognised",455423.756086684
+0.0419512195121954,0.068,"Real gains taxed; full loss offset",455423.756086684
+0.0429268292682927,0.069,"50% discount; nominal losses recognised",526432.76329345
+0.0429268292682927,0.069,"Real gains taxed; nominal losses recognised",468131.542877685
+0.0429268292682927,0.069,"Real gains taxed; full loss offset",468131.542877685
+0.0439024390243905,0.07,"50% discount; nominal losses recognised",541994.109499775
+0.0439024390243905,0.07,"Real gains taxed; nominal losses recognised",480946.769165247
+0.0439024390243905,0.07,"Real gains taxed; full loss offset",480946.769165247
+0.0448780487804878,0.071,"50% discount; nominal losses recognised",557686.897484615
+0.0448780487804878,0.071,"Real gains taxed; nominal losses recognised",493870.24162335
+0.0448780487804878,0.071,"Real gains taxed; full loss offset",493870.24162335
+0.0458536585365856,0.072,"50% discount; nominal losses recognised",573512.113209831
+0.0458536585365856,0.072,"Real gains taxed; nominal losses recognised",506902.772220587
+0.0458536585365856,0.072,"Real gains taxed; full loss offset",506902.772220587
+0.046829268292683,0.073,"50% discount; nominal losses recognised",589470.749102565
+0.046829268292683,0.073,"Real gains taxed; nominal losses recognised",520045.178249897
+0.046829268292683,0.073,"Real gains taxed; full loss offset",520045.178249897
+0.0478048780487808,0.074,"50% discount; nominal losses recognised",605563.804091567
+0.0478048780487808,0.074,"Real gains taxed; nominal losses recognised",533298.282358488
+0.0478048780487808,0.074,"Real gains taxed; full loss offset",533298.282358487
+0.0487804878048781,0.075,"50% discount; nominal losses recognised",621792.283643648
+0.0487804878048781,0.075,"Real gains taxed; nominal losses recognised",546662.912577848
+0.0487804878048781,0.075,"Real gains taxed; full loss offset",546662.912577848
+0.0497560975609759,0.076,"50% discount; nominal losses recognised",638157.199800347
+0.0497560975609759,0.076,"Real gains taxed; nominal losses recognised",560139.902353953
+0.0497560975609759,0.076,"Real gains taxed; full loss offset",560139.902353953
+0.0507317073170732,0.077,"50% discount; nominal losses recognised",654659.571214721
+0.0507317073170732,0.077,"Real gains taxed; nominal losses recognised",573730.090577556
+0.0507317073170732,0.077,"Real gains taxed; full loss offset",573730.090577556
+0.051707317073171,0.078,"50% discount; nominal losses recognised",671300.423188365
+0.051707317073171,0.078,"Real gains taxed; nominal losses recognised",587434.321614674
+0.051707317073171,0.078,"Real gains taxed; full loss offset",587434.321614674
+0.0526829268292683,0.079,"50% discount; nominal losses recognised",688080.787708535
+0.0526829268292683,0.079,"Real gains taxed; nominal losses recognised",601253.445337167
+0.0526829268292683,0.079,"Real gains taxed; full loss offset",601253.445337167
+0.0536585365853661,0.08,"50% discount; nominal losses recognised",705001.703485513
+0.0536585365853661,0.08,"Real gains taxed; nominal losses recognised",615188.317153502
+0.0536585365853661,0.08,"Real gains taxed; full loss offset",615188.317153502
+0.0546341463414635,0.081,"50% discount; nominal losses recognised",722064.21599009
+0.0546341463414635,0.081,"Real gains taxed; nominal losses recognised",629239.798039624
+0.0546341463414635,0.081,"Real gains taxed; full loss offset",629239.798039624
+0.0556097560975612,0.082,"50% discount; nominal losses recognised",739269.377491265
+0.0556097560975612,0.082,"Real gains taxed; nominal losses recognised",643408.754570004
+0.0556097560975612,0.082,"Real gains taxed; full loss offset",643408.754570003
+0.0565853658536586,0.083,"50% discount; nominal losses recognised",756618.247094079
+0.0565853658536586,0.083,"Real gains taxed; nominal losses recognised",657696.058948792
+0.0565853658536586,0.083,"Real gains taxed; full loss offset",657696.058948792
+0.0575609756097564,0.084,"50% discount; nominal losses recognised",774111.890777673
+0.0575609756097564,0.084,"Real gains taxed; nominal losses recognised",672102.589041163
+0.0575609756097564,0.084,"Real gains taxed; full loss offset",672102.589041163
+0.0585365853658537,0.085,"50% discount; nominal losses recognised",791751.381433461
+0.0585365853658537,0.085,"Real gains taxed; nominal losses recognised",686629.228404753
+0.0585365853658537,0.085,"Real gains taxed; full loss offset",686629.228404753
+0.0595121951219515,0.086,"50% discount; nominal losses recognised",809537.798903553
+0.0595121951219515,0.086,"Real gains taxed; nominal losses recognised",701276.8663213
+0.0595121951219515,0.086,"Real gains taxed; full loss offset",701276.8663213
+0.0604878048780488,0.087,"50% discount; nominal losses recognised",827472.230019276
+0.0604878048780488,0.087,"Real gains taxed; nominal losses recognised",716046.397828365
+0.0604878048780488,0.087,"Real gains taxed; full loss offset",716046.397828365
+0.0614634146341466,0.088,"50% discount; nominal losses recognised",845555.768639949
+0.0614634146341466,0.088,"Real gains taxed; nominal losses recognised",730938.723751273
+0.0614634146341466,0.088,"Real gains taxed; full loss offset",730938.723751273
+0.062439024390244,0.089,"50% discount; nominal losses recognised",863789.51569177
+0.062439024390244,0.089,"Real gains taxed; nominal losses recognised",745954.750735126
+0.062439024390244,0.089,"Real gains taxed; full loss offset",745954.750735125
+0.0634146341463417,0.09,"50% discount; nominal losses recognised",882174.579206945
+0.0634146341463417,0.09,"Real gains taxed; nominal losses recognised",761095.391277034
+0.0634146341463417,0.09,"Real gains taxed; full loss offset",761095.391277034
+0.0643902439024391,0.091,"50% discount; nominal losses recognised",900712.074362929
+0.0643902439024391,0.091,"Real gains taxed; nominal losses recognised",776361.563758433
+0.0643902439024391,0.091,"Real gains taxed; full loss offset",776361.563758433
+0.0653658536585369,0.092,"50% discount; nominal losses recognised",919403.123521925
+0.0653658536585369,0.092,"Real gains taxed; nominal losses recognised",791754.192477606
+0.0653658536585369,0.092,"Real gains taxed; full loss offset",791754.192477606
+0.0663414634146342,0.093,"50% discount; nominal losses recognised",938248.856270484
+0.0663414634146342,0.093,"Real gains taxed; nominal losses recognised",807274.207682302
+0.0663414634146342,0.093,"Real gains taxed; full loss offset",807274.207682302
+0.067317073170732,0.094,"50% discount; nominal losses recognised",957250.409459362
+0.067317073170732,0.094,"Real gains taxed; nominal losses recognised",822922.545602554
+0.067317073170732,0.094,"Real gains taxed; full loss offset",822922.545602554
+0.0682926829268293,0.095,"50% discount; nominal losses recognised",976408.927243492
+0.0682926829268293,0.095,"Real gains taxed; nominal losses recognised",838700.148483602
+0.0682926829268293,0.095,"Real gains taxed; full loss offset",838700.148483602
+0.0692682926829271,0.096,"50% discount; nominal losses recognised",995725.561122206
+0.0692682926829271,0.096,"Real gains taxed; nominal losses recognised",854607.964619013
+0.0692682926829271,0.096,"Real gains taxed; full loss offset",854607.964619013
+0.0702439024390245,0.097,"50% discount; nominal losses recognised",1015201.46997957
+0.0702439024390245,0.097,"Real gains taxed; nominal losses recognised",870646.948383901
+0.0702439024390245,0.097,"Real gains taxed; full loss offset",870646.948383901
+0.0712195121951222,0.098,"50% discount; nominal losses recognised",1034837.82012498
+0.0712195121951222,0.098,"Real gains taxed; nominal losses recognised",886818.060268355
+0.0712195121951222,0.098,"Real gains taxed; full loss offset",886818.060268355
+0.0721951219512196,0.099,"50% discount; nominal losses recognised",1054635.78533386
+0.0721951219512196,0.099,"Real gains taxed; nominal losses recognised",903122.266910964
+0.0721951219512196,0.099,"Real gains taxed; full loss offset",903122.266910964
+0.0731707317073174,0.1,"50% discount; nominal losses recognised",1074596.54688865
+0.0731707317073174,0.1,"Real gains taxed; nominal losses recognised",919560.541132552
+0.0731707317073174,0.1,"Real gains taxed; full loss offset",919560.541132552

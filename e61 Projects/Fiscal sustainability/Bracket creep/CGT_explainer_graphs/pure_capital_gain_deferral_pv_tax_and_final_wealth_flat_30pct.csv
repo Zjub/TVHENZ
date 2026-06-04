@@ -1,0 +1,4 @@
+"scenario","tax_timing","present_value_tax","final_after_tax_wealth"
+"Real return taxed each year","Annual tax",134014.725426524,1410598.76062112
+"Real capital gain taxed at exit","Deferred tax at exit",115826.023937772,1440226.23874421
+"Real capital gain taxed at exit with 50% discount","Deferred tax at exit, 50% discount",57913.0119688861,1534560.43276083
