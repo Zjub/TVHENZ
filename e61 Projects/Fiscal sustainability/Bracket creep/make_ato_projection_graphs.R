@@ -8,7 +8,7 @@
 ##   projection_graphs/figure_4_real_income_gain_clawback.{png,pdf,csv}
 ##   projection_graphs/appendix_scenario_etr_change.{png,pdf,csv}
 
-required_packages <- c("dplyr", "ggplot2", "readr", "scales", "tidyr")
+required_packages <- c("dplyr", "ggplot2", "readr", "scales", "tidyr","theme61","data.table")
 missing_packages <- required_packages[!vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)]
 
 if (length(missing_packages) > 0) {
@@ -167,30 +167,42 @@ figure_3_data <- tax_results %>%
     year_label = pretty_fy(fy)
   )
 
+setDT(figure_3_data)
+
 figure_3_plot <- ggplot(
-  figure_3_data,
+  figure_3_data[fy != "FY2025_26" & percentile <= 0.99],
   aes(x = percentile_label, y = etr_change_pp, colour = year_label)
 ) +
-  geom_hline(yintercept = 0, colour = "grey65", linewidth = 0.4) +
+  geom_hline(yintercept = 0) +
   geom_line(linewidth = 0.9) +
-  scale_colour_manual(values = e61_palette[seq_along(unique(figure_3_data$year_label))]) +
+  #scale_colour_manual(values = e61_palette[seq_along(unique(figure_3_data$year_label))]) +
   scale_x_continuous(
     breaks = seq(0, 100, 10),
     limits = c(0, 100),
     expand = expansion(mult = c(0, 0.01))
   ) +
   scale_y_continuous(labels = label_number(suffix = " pp", accuracy = 0.5)) +
-  plot_labs(
-    title = "Change in effective tax rates across the income distribution",
-    x = "Taxable income percentile",
-    y = "Percentage point change from base year",
+  labs_e61(
+    title = "Bracket Creep across the income distribution",
+    x = "Earnings percentile",
+    y = "Percentage point change from 2025/26",
     colour = "Financial year",
-    sources = "ATO 1p results file",
-    footnotes = paste0("Base year is ", pretty_fy(base_year), ". Uses the baseline scenario.")
+    sources = c("ATO Individual Sample file","e61"),
+    footnotes = c("Uses the 2022/23 file. Earnings are inflated to 2025/26 level and the 2025/26 nominal tax system is applied to establish base line.","Assumes income growth of 3.7%pa, in line with PBO projections.")
   ) +
-  plot_theme()
+  plab(c("2027/28","2030/31","2034/35"),x=c(60,60,60),y=c(-0.5,1.5,3.5))
 
-save_outputs(figure_3_plot, "figure_3_etr_change_by_percentile", figure_3_data)
+figure_3_plot
+
+unique(figure_3_data$fy)
+
+unique(figure_3_data$percentile)
+
+figure_3_data[fy == "FY2034_35"]
+
+figure_3_data[fy == "FY2034_35" & percentile_label >= 99]
+
+save_e61(paste0("Bracket_creep_ATO1_F3","_newBudg.png"),res=2,save_data = TRUE,chart_type = "wide",dim = list(width = 15))
 
 figure_4_data <- base_rates %>%
   left_join(final_rates, by = "percentile") %>%
@@ -211,72 +223,69 @@ figure_4_plot <- ggplot(
   figure_4_data,
   aes(x = percentile_label, y = income_gain_clawback * 100)
 ) +
-  geom_hline(yintercept = 0, colour = "grey65", linewidth = 0.4) +
-  geom_line(colour = e61_palette[1], linewidth = 0.9, na.rm = TRUE) +
+  geom_hline(yintercept = 0) +
+  geom_line() +
   scale_x_continuous(
     breaks = seq(0, 100, 10),
     limits = c(0, 100),
     expand = expansion(mult = c(0, 0.01))
   ) +
   scale_y_continuous(labels = label_percent(scale = 1, accuracy = 1)) +
-  plot_labs(
+  labs_e61(
     title = "Share of real income gains lost to bracket creep",
-    x = "Taxable income percentile",
+    x = "Earnings percentile",
     y = "Share of real post-tax income gain",
     sources = "ATO 1p results file",
-    footnotes = paste0(
-      "Compares the baseline scenario with indexed brackets in ", pretty_fy(final_year),
-      ". Assumes real income growth of ", percent(real_income_growth_annual, accuracy = 0.1),
-      " per year from ", pretty_fy(base_year), " to ", pretty_fy(final_year), "."
-    )
-  ) +
-  plot_theme()
-
-save_outputs(figure_4_plot, "figure_4_real_income_gain_clawback", figure_4_data)
-
-scenario_labels <- c(
-  baseline = "Baseline",
-  high_inflation = "High inflation",
-  no_policy = "No policy change",
-  indexed_brackets = "Indexed brackets"
-)
-
-appendix_data <- tax_results %>%
-  filter(fy == final_year) %>%
-  left_join(base_rates, by = "percentile") %>%
-  pivot_longer(
-    cols = all_of(names(scenario_labels)),
-    names_to = "scenario",
-    values_to = "etr"
-  ) %>%
-  mutate(
-    scenario = factor(scenario_labels[scenario], levels = scenario_labels),
-    etr_change_pp = (etr - base_etr) * 100,
-    percentile_label = percentile * 100
+    footnotes = c("Uses the 2022/23 file. Earnings are inflated to 2025/26 level and the 2025/26 nominal tax system is applied to establish base line.","Assumes income growth of 3.7%pa, in line with PBO projections.")
   )
 
-appendix_plot <- ggplot(
-  appendix_data,
-  aes(x = percentile_label, y = etr_change_pp, colour = scenario)
-) +
-  geom_hline(yintercept = 0, colour = "grey65", linewidth = 0.4) +
-  geom_line(linewidth = 0.85) +
-  scale_colour_manual(values = e61_palette[seq_along(scenario_labels)]) +
-  scale_x_continuous(
-    breaks = seq(0, 100, 10),
-    limits = c(0, 100),
-    expand = expansion(mult = c(0, 0.01))
-  ) +
-  scale_y_continuous(labels = label_number(suffix = " pp", accuracy = 0.5)) +
-  plot_labs(
-    title = paste0("Effective tax rate changes by scenario in ", pretty_fy(final_year)),
-    x = "Taxable income percentile",
-    y = paste0("Percentage point change from ", pretty_fy(base_year)),
-    colour = NULL,
-    sources = "ATO 1p results file"
-  ) +
-  plot_theme()
+figure_4_plot
 
-save_outputs(appendix_plot, "appendix_scenario_etr_change", appendix_data)
+save_e61(paste0("Bracket_creep_ATO1_F4","_newBudg.png"),res=2,save_data = TRUE,chart_type = "wide",dim = list(width = 15))
 
-message("Projection graph outputs written to: ", normalizePath(output_dir))
+# scenario_labels <- c(
+#   baseline = "Baseline",
+#   high_inflation = "High inflation",
+#   no_policy = "No policy change",
+#   indexed_brackets = "Indexed brackets"
+# )
+#
+# appendix_data <- tax_results %>%
+#   filter(fy == final_year) %>%
+#   left_join(base_rates, by = "percentile") %>%
+#   pivot_longer(
+#     cols = all_of(names(scenario_labels)),
+#     names_to = "scenario",
+#     values_to = "etr"
+#   ) %>%
+#   mutate(
+#     scenario = factor(scenario_labels[scenario], levels = scenario_labels),
+#     etr_change_pp = (etr - base_etr) * 100,
+#     percentile_label = percentile * 100
+#   )
+#
+# appendix_plot <- ggplot(
+#   appendix_data,
+#   aes(x = percentile_label, y = etr_change_pp, colour = scenario)
+# ) +
+#   geom_hline(yintercept = 0, colour = "grey65", linewidth = 0.4) +
+#   geom_line(linewidth = 0.85) +
+#   scale_colour_manual(values = e61_palette[seq_along(scenario_labels)]) +
+#   scale_x_continuous(
+#     breaks = seq(0, 100, 10),
+#     limits = c(0, 100),
+#     expand = expansion(mult = c(0, 0.01))
+#   ) +
+#   scale_y_continuous(labels = label_number(suffix = " pp", accuracy = 0.5)) +
+#   plot_labs(
+#     title = paste0("Effective tax rate changes by scenario in ", pretty_fy(final_year)),
+#     x = "Earnings percentile",
+#     y = paste0("Percentage point change from ", pretty_fy(base_year)),
+#     colour = NULL,
+#     sources = "ATO 1p results file"
+#   ) +
+#   plot_theme()
+#
+# save_outputs(appendix_plot, "appendix_scenario_etr_change", appendix_data)
+#
+# message("Projection graph outputs written to: ", normalizePath(output_dir))
