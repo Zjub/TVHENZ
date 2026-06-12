@@ -178,6 +178,21 @@ df <- tibble(
 setDT(df)
 
 
+annual_inflator <- ifelse(inflator_type == "CPI", 1.025, 1.037)
+
+# One-year exercise: moving from FY28 to FY29 under the Budget 2026 tax scale.
+df_1year <- tibble(
+  income = incomes,
+  income_2028 = incomes * inflator_to_budget_year,
+  income_2029 = income_2028 * annual_inflator,
+  etr_2028 = etr_function(income_2028, tax_scale = initial_scale),
+  etr_2029 = etr_function(income_2029, tax_scale = future_scale)
+)
+
+setDT(df_1year)
+df_1year[, diff := etr_2029 - etr_2028]
+df_1year[, diff_doll := diff * income_2028]
+
 
 # Create reference points to annotate
 annotate_points <- tibble(
@@ -365,3 +380,23 @@ df[diff == max(diff)]
 df[income == 100000]
 
 df[income > 120000 & diff < 0.02082169]
+
+df[income == 19000]
+
+df[income == 45000]
+
+df[income == 190000]
+
+ggplot(df[income <= 200000],aes(x=income,y=diff_doll)) + geom_line()
+
+df[,check := income_future_year*etr_future_year - income_future_year*etr_budget_year]
+
+ggplot(df[income <= 200000],aes(x=income,y=check)) + geom_line()
+
+ggplot(df[income <= 200000],aes(x=income,y=diff)) + geom_line()
+
+ggplot(df[income <= 200000],aes(x=income,y=etr_future_year)) + geom_line()
+
+df_1year[income == 190000]
+
+
