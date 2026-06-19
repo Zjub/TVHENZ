@@ -8,7 +8,7 @@
 ##   projection_graphs/figure_4_real_income_gain_clawback.{png,pdf,csv}
 ##   projection_graphs/appendix_scenario_etr_change.{png,pdf,csv}
 
-required_packages <- c("dplyr", "ggplot2", "readr", "scales", "tidyr","theme61","data.table")
+required_packages <- c("dplyr", "ggplot2", "readr", "scales", "tidyr","theme61","data.table","readxl")
 missing_packages <- required_packages[!vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)]
 
 if (length(missing_packages) > 0) {
@@ -31,6 +31,7 @@ has_theme61 <- FALSE
 e61_palette <- fallback_palette
 
 data_path <- file.path("ATO 1p results", "tax_distribution_results.csv")
+data_path2 <- file.path("ATO 1p results", "tax_distribution_extended.xlsx")
 output_dir <- "projection_graphs"
 
 dir.create(output_dir, showWarnings = FALSE)
@@ -242,6 +243,24 @@ figure_4_plot <- ggplot(
 figure_4_plot
 
 save_e61(paste0("Bracket_creep_ATO1_F4","_newBudg.png"),res=2,save_data = TRUE,chart_type = "wide",dim = list(width = 15))
+
+setDT(figure_4_data)
+
+figure_4_data
+
+library(readxl)
+
+# tax_results2 <- read_excel(data_path2) %>%
+#   mutate(
+#     percentile = as.numeric(percentile),
+#     percentile_label = percentile * 100,
+#     fy_sort = as.integer(gsub("^FY([0-9]{4})_.*$", "\\1", fy))
+#   ) %>%
+#   arrange(fy_sort, percentile)
+
+tax_results2 <- read_excel("ATO 1p results/tax_distribution_extended.xlsx")
+
+setDT(tax_results2)
 
 # scenario_labels <- c(
 #   baseline = "Baseline",
