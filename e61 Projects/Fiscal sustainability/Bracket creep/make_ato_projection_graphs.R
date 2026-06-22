@@ -246,7 +246,9 @@ save_e61(paste0("Bracket_creep_ATO1_F4","_newBudg.png"),res=2,save_data = TRUE,c
 
 setDT(figure_4_data)
 
-figure_4_data
+mean(figure_4_data$income_gain_clawback)
+
+figure_4_data[percentile == 0.35]
 
 library(readxl)
 
@@ -261,6 +263,17 @@ library(readxl)
 tax_results2 <- read_excel("ATO 1p results/tax_distribution_extended.xlsx")
 
 setDT(tax_results2)
+
+figure_4_data[percentile == 0.470,]
+tax_results2[percentile == 0.350,]
+
+figure_3_data[fy == "FY2034_35" & etr_change_pp < 2 & percentile < 0.99] # Identify the percentiles where there is a smaller than 2ppt increase
+
+tax_results2[percentile == 0.146,]
+
+figure_3_data[fy == "FY2034_35" & etr_change_pp == max(figure_3_data$etr_change_pp)]
+
+tax_results2[percentile == 0.348,]
 
 # scenario_labels <- c(
 #   baseline = "Baseline",
