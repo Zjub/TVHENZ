@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='756.00pt' height='489.60pt' viewBox='0 0 756.00 489.60'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3NTYuMDB8MC4wMHw0ODkuNjA='>
+    <rect x='0.00' y='0.00' width='756.00' height='489.60' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3NTYuMDB8MC4wMHw0ODkuNjA=)'>
+<rect x='0.00' y='0.00' width='756.00' height='489.60' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMzMuMTN8NzUwLjUyfDM4Ljg1fDM5NS40NQ=='>
+    <rect x='33.13' y='38.85' width='717.39' height='356.60' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMzMuMTN8NzUwLjUyfDM4Ljg1fDM5NS40NQ==)'>
+<polyline points='33.13,371.07 750.52,371.07 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='33.13,302.99 750.52,302.99 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='33.13,234.91 750.52,234.91 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='33.13,166.83 750.52,166.83 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='33.13,98.75 750.52,98.75 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='145.27,395.45 145.27,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='304.34,395.45 304.34,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='463.40,395.45 463.40,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='622.47,395.45 622.47,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='81.64,296.02 97.55,322.57 113.46,343.57 129.36,353.07 145.27,351.25 161.18,350.54 177.08,352.15 192.99,350.68 208.90,349.01 224.80,348.69 240.71,346.87 256.62,344.71 272.52,342.55 288.43,340.39 304.34,338.24 320.24,336.08 336.15,333.92 352.06,331.76 367.96,329.60 383.87,327.45 399.78,325.29 415.68,323.13 431.59,320.97 447.50,318.81 463.40,316.66 479.31,314.50 495.22,312.34 511.12,310.18 527.03,308.02 542.94,305.87 558.84,303.71 574.75,301.55 590.66,299.39 606.56,297.23 622.47,295.08 638.38,292.92 654.28,290.76 670.19,288.60 686.10,286.44 702.01,284.29 717.91,282.13 ' style='stroke-width: 1.71; stroke: #009E73; stroke-linecap: butt;' />
+<polyline points='81.64,296.02 97.55,322.57 113.46,343.57 129.36,353.07 145.27,352.78 161.18,352.51 177.08,353.84 192.99,355.05 208.90,355.38 224.80,356.97 240.71,356.32 256.62,354.52 272.52,352.64 288.43,350.70 304.34,348.72 320.24,346.72 336.15,344.69 352.06,342.66 367.96,340.61 383.87,338.56 399.78,336.50 415.68,334.44 431.59,332.38 447.50,330.32 463.40,328.25 479.31,326.19 495.22,324.12 511.12,322.06 527.03,319.99 542.94,317.92 558.84,315.86 574.75,313.79 590.66,311.73 606.56,309.66 622.47,307.59 638.38,305.53 654.28,303.46 670.19,301.39 686.10,299.33 702.01,297.26 717.91,295.19 ' style='stroke-width: 1.71; stroke: #D55E00; stroke-linecap: butt;' />
+<polyline points='81.64,296.02 97.55,322.57 113.46,343.57 129.36,353.07 145.27,360.59 161.18,369.47 177.08,379.24 192.99,375.01 208.90,369.64 224.80,365.29 240.71,358.29 256.62,355.52 272.52,352.75 288.43,349.98 304.34,347.21 320.24,344.44 336.15,341.67 352.06,338.90 367.96,336.13 383.87,333.36 399.78,330.59 415.68,327.82 431.59,325.05 447.50,322.28 463.40,319.51 479.31,316.74 495.22,313.97 511.12,311.20 527.03,308.43 542.94,305.66 558.84,302.89 574.75,300.12 590.66,297.35 606.56,294.58 622.47,291.81 638.38,289.04 654.28,286.27 670.19,283.50 686.10,280.73 702.01,277.96 717.91,275.19 ' style='stroke-width: 1.71; stroke: #CC79A7; stroke-linecap: butt;' />
+<polyline points='81.64,296.02 97.55,322.57 113.46,343.57 129.36,353.07 145.27,349.25 161.18,346.23 177.08,345.04 192.99,347.25 208.90,348.97 224.80,351.35 240.71,352.09 256.62,348.81 272.52,345.52 288.43,342.23 304.34,338.94 320.24,335.66 336.15,332.37 352.06,329.08 367.96,325.80 383.87,322.51 399.78,319.22 415.68,315.93 431.59,312.65 447.50,309.36 463.40,306.07 479.31,302.79 495.22,299.50 511.12,296.21 527.03,292.92 542.94,289.64 558.84,286.35 574.75,283.06 590.66,279.78 606.56,276.49 622.47,273.20 638.38,269.91 654.28,266.63 670.19,263.34 686.10,260.05 702.01,256.77 717.91,253.48 ' style='stroke-width: 1.71; stroke: #0072B2; stroke-linecap: butt;' />
+<polyline points='81.64,296.02 97.55,322.57 113.46,343.57 129.36,353.07 145.27,353.07 161.18,353.07 177.08,353.07 192.99,353.07 208.90,353.07 224.80,353.07 240.71,353.07 256.62,353.07 272.52,353.07 288.43,353.07 304.34,353.07 320.24,353.07 336.15,353.07 352.06,353.07 367.96,353.07 383.87,353.07 399.78,353.07 415.68,353.07 431.59,353.07 447.50,353.07 463.40,353.07 479.31,353.07 495.22,353.07 511.12,353.07 527.03,353.07 542.94,353.07 558.84,353.07 574.75,353.07 590.66,353.07 606.56,353.07 622.47,353.07 638.38,353.07 654.28,353.07 670.19,353.07 686.10,353.07 702.01,353.07 717.91,353.07 ' style='stroke-width: 1.71; stroke: #E69F00; stroke-linecap: butt;' />
+<polyline points='65.74,295.20 81.64,297.81 97.55,327.17 113.46,355.45 129.36,366.03 145.27,359.64 161.18,353.54 177.08,347.43 192.99,341.18 208.90,334.62 224.80,327.96 240.71,322.81 256.62,318.25 272.52,312.74 288.43,306.98 304.34,300.99 320.24,294.75 336.15,288.27 352.06,281.54 367.96,274.57 383.87,267.35 399.78,259.88 415.68,252.16 431.59,244.18 447.50,235.95 463.40,227.46 479.31,218.71 495.22,209.70 511.12,200.42 527.03,190.89 542.94,181.08 558.84,171.01 574.75,160.66 590.66,150.05 606.56,139.15 622.47,127.99 638.38,116.54 654.28,104.81 670.19,92.80 686.10,80.51 702.01,67.93 717.91,55.06 ' style='stroke-width: 2.67; stroke-linecap: butt;' />
+<line x1='137.32' y1='395.45' x2='137.32' y2='38.85' style='stroke-width: 1.07; stroke: #737373; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw3NTYuMDB8MC4wMHw0ODkuNjA=)'>
+<text x='28.20' y='374.22' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>34</text>
+<text x='28.20' y='306.14' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>36</text>
+<text x='28.20' y='238.06' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>38</text>
+<text x='28.20' y='169.98' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>40</text>
+<text x='28.20' y='101.90' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>42</text>
+<text x='145.27' y='406.68' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2030</text>
+<text x='304.34' y='406.68' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2040</text>
+<text x='463.40' y='406.68' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2050</text>
+<text x='622.47' y='406.68' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2060</text>
+<text transform='translate(13.36,217.15) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='48.94px' lengthAdjust='spacingAndGlyphs'>% of GDP</text>
+<line x1='212.27' y1='433.61' x2='226.09' y2='433.61' style='stroke-width: 1.07; stroke: #009E73; stroke-linecap: butt;' />
+<line x1='212.27' y1='456.37' x2='226.09' y2='456.37' style='stroke-width: 1.07; stroke: #D55E00; stroke-linecap: butt;' />
+<line x1='325.40' y1='433.61' x2='339.22' y2='433.61' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<line x1='325.40' y1='456.37' x2='339.22' y2='456.37' style='stroke-width: 1.07; stroke: #CC79A7; stroke-linecap: butt;' />
+<line x1='463.62' y1='433.61' x2='477.45' y2='433.61' style='stroke-width: 1.07; stroke: #0072B2; stroke-linecap: butt;' />
+<line x1='463.62' y1='456.37' x2='477.45' y2='456.37' style='stroke-width: 1.07; stroke: #E69F00; stroke-linecap: butt;' />
+<text x='233.30' y='436.76' style='font-size: 8.80px; font-family: "Arial";' textLength='84.89px' lengthAdjust='spacingAndGlyphs'>ARIMAX (differences)</text>
+<text x='233.30' y='459.52' style='font-size: 8.80px; font-family: "Arial";' textLength='64.53px' lengthAdjust='spacingAndGlyphs'>ARIMAX (levels)</text>
+<text x='346.43' y='436.76' style='font-size: 8.80px; font-family: "Arial";' textLength='69.39px' lengthAdjust='spacingAndGlyphs'>Bottom-up central</text>
+<text x='346.43' y='459.52' style='font-size: 8.80px; font-family: "Arial";' textLength='109.98px' lengthAdjust='spacingAndGlyphs'>Hybrid demographics/macro</text>
+<text x='484.65' y='436.76' style='font-size: 8.80px; font-family: "Arial";' textLength='88.45px' lengthAdjust='spacingAndGlyphs'>Structural OLS (levels)</text>
+<text x='484.65' y='459.52' style='font-size: 8.80px; font-family: "Arial";' textLength='69.42px' lengthAdjust='spacingAndGlyphs'>Univariate ARIMA</text>
+<text x='5.48' y='31.05' style='font-size: 11.00px; font-family: "Arial";' textLength='590.98px' lengthAdjust='spacingAndGlyphs'>Primary spending is officially anchored through 2028-29; bottom-up total expenses then include endogenous debt interest</text>
+<text x='5.48' y='14.93' style='font-size: 13.20px; font-family: "Arial";' textLength='440.30px' lengthAdjust='spacingAndGlyphs'>Bottom-up and top-down spending projections on a common expense basis</text>
+<text x='33.13' y='482.27' style='font-size: 8.80px;fill: #595959; font-family: "Arial";' textLength='511.55px' lengthAdjust='spacingAndGlyphs'>Top-down paths project aggregate total expenses. The bottom-up path projects primary categories and adds modelled debt interest.</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='720.00pt' height='468.00pt' viewBox='0 0 720.00 468.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3MjAuMDB8MC4wMHw0NjguMDA='>
+    <rect x='0.00' y='0.00' width='720.00' height='468.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw0NjguMDA=)'>
+<rect x='0.00' y='-0.00000000000011' width='720.00' height='468.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMTMwLjY5fDcxNC41MnwzOC44NXw0MjIuODc='>
+    <rect x='130.69' y='38.85' width='583.83' height='384.02' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMTMwLjY5fDcxNC41MnwzOC44NXw0MjIuODc=)'>
+<polyline points='130.69,385.71 714.52,385.71 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='130.69,323.77 714.52,323.77 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='130.69,261.83 714.52,261.83 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='130.69,199.89 714.52,199.89 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='130.69,137.95 714.52,137.95 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='130.69,76.02 714.52,76.02 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='250.86,422.87 250.86,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='392.07,422.87 392.07,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='533.29,422.87 533.29,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='674.51,422.87 674.51,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<rect x='250.86' y='53.72' width='437.12' height='44.60' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #D55E00;' />
+<rect x='250.86' y='177.60' width='50.14' height='44.60' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #D55E00;' />
+<rect x='250.86' y='239.53' width='2.90' height='44.60' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #D55E00;' />
+<rect x='235.50' y='301.47' width='15.35' height='44.60' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #0072B2;' />
+<rect x='157.23' y='363.41' width='93.63' height='44.60' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #0072B2;' />
+<rect x='250.86' y='115.66' width='164.66' height='44.60' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #D55E00;' />
+<line x1='250.86' y1='422.87' x2='250.86' y2='38.85' style='stroke-width: 1.07; stroke: #404040; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw0NjguMDA=)'>
+<text x='125.76' y='388.86' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='54.75px' lengthAdjust='spacingAndGlyphs'>COVID period</text>
+<text x='125.76' y='326.92' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='59.16px' lengthAdjust='spacingAndGlyphs'>Unemployment</text>
+<text x='125.76' y='264.98' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='106.56px' lengthAdjust='spacingAndGlyphs'>Relative government prices</text>
+<text x='125.76' y='203.04' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='56.19px' lengthAdjust='spacingAndGlyphs'>Terms of trade</text>
+<text x='125.76' y='141.10' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='120.28px' lengthAdjust='spacingAndGlyphs'>Residual / unexplained change</text>
+<text x='125.76' y='79.17' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='50.36px' lengthAdjust='spacingAndGlyphs'>Demography</text>
+<text x='250.86' y='434.11' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='392.07' y='434.11' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>1</text>
+<text x='533.29' y='434.11' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>2</text>
+<text x='674.51' y='434.11' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>3</text>
+<text x='422.61' y='446.57' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='127.91px' lengthAdjust='spacingAndGlyphs'>Percentage points of GDP</text>
+<text x='5.48' y='31.05' style='font-size: 11.00px; font-family: "Arial";' textLength='581.70px' lengthAdjust='spacingAndGlyphs'>Factor contributions average incremental fitted effects over every ordering; the residual completes the observed change</text>
+<text x='5.48' y='14.93' style='font-size: 13.20px; font-family: "Arial";' textLength='364.09px' lengthAdjust='spacingAndGlyphs'>Shapley attribution of the spending-ratio change, 2000 to 2025</text>
+<text x='130.69' y='460.67' style='font-size: 8.80px;fill: #595959; font-family: "Arial";' textLength='409.33px' lengthAdjust='spacingAndGlyphs'>Attribution from re-fitted structural regressions. This is not a causal decomposition or a forecasting model.</text>
+</g>
+</g>
+</svg>

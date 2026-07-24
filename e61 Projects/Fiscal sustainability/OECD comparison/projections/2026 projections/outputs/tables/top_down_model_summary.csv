@@ -1,0 +1,6 @@
+model,specification,arima_order,aic,observations
+structural_ols,y ~ age_0_14 + age_15_34 + age_55_64 + age_65p + tot_z + rp_z +      unemployment + covid,,-278.170691792581,46
+arimax_level,Spending/GDP in levels with age and macro xreg,"1,0,0",-295.330549761235,46
+arimax_diff,Annual change in spending/GDP with differenced xreg; no drift,"0,0,0",-285.491911642048,45
+hybrid,Demographic level OLS plus macro difference ARIMAX; no drift,"0,0,1",-281.74813557327,45
+univariate_arima,Automatic univariate ARIMA benchmark,"0,0,2",-270.13423244286,46

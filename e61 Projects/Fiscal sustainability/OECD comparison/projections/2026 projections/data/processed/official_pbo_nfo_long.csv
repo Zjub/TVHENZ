@@ -1,0 +1,433 @@
+year,value,metric,unit,status
+2003,0.01446,net_operating_balance,ratio_gdp,Historical/estimate
+2004,0.01747,net_operating_balance,ratio_gdp,Historical/estimate
+2005,0.02249,net_operating_balance,ratio_gdp,Historical/estimate
+2006,0.02898,net_operating_balance,ratio_gdp,Historical/estimate
+2007,0.02611,net_operating_balance,ratio_gdp,Historical/estimate
+2008,0.02722,net_operating_balance,ratio_gdp,Historical/estimate
+2009,-0.01692,net_operating_balance,ratio_gdp,Historical/estimate
+2010,-0.03212,net_operating_balance,ratio_gdp,Historical/estimate
+2011,-0.0278,net_operating_balance,ratio_gdp,Historical/estimate
+2012,-0.02613,net_operating_balance,ratio_gdp,Historical/estimate
+2013,-0.01556,net_operating_balance,ratio_gdp,Historical/estimate
+2014,-0.01681,net_operating_balance,ratio_gdp,Historical/estimate
+2015,-0.01751,net_operating_balance,ratio_gdp,Historical/estimate
+2016,-0.01444,net_operating_balance,ratio_gdp,Historical/estimate
+2017,-0.00822,net_operating_balance,ratio_gdp,Historical/estimate
+2018,0.00494,net_operating_balance,ratio_gdp,Historical/estimate
+2019,0.00821,net_operating_balance,ratio_gdp,Historical/estimate
+2020,-0.05387,net_operating_balance,ratio_gdp,Historical/estimate
+2021,-0.07036,net_operating_balance,ratio_gdp,Historical/estimate
+2022,-0.01473,net_operating_balance,ratio_gdp,Historical/estimate
+2023,0.01515,net_operating_balance,ratio_gdp,Historical/estimate
+2024,0.00755,net_operating_balance,ratio_gdp,Historical/estimate
+2025,-0.02169,net_operating_balance,ratio_gdp,Historical/estimate
+2026,-0.01603,net_operating_balance,ratio_gdp,Official forecast
+2027,-0.0089,net_operating_balance,ratio_gdp,Official forecast
+2028,-0.00817,net_operating_balance,ratio_gdp,Official forecast
+2029,-0.00668,net_operating_balance,ratio_gdp,Official forecast
+2003,0.00917,fiscal_balance,ratio_gdp,Historical/estimate
+2004,0.01145,fiscal_balance,ratio_gdp,Historical/estimate
+2005,0.01503,fiscal_balance,ratio_gdp,Historical/estimate
+2006,0.01877,fiscal_balance,ratio_gdp,Historical/estimate
+2007,0.01409,fiscal_balance,ratio_gdp,Historical/estimate
+2008,0.01385,fiscal_balance,ratio_gdp,Historical/estimate
+2009,-0.03348,fiscal_balance,ratio_gdp,Historical/estimate
+2010,-0.05545,fiscal_balance,ratio_gdp,Historical/estimate
+2011,-0.04766,fiscal_balance,ratio_gdp,Historical/estimate
+2012,-0.04262,fiscal_balance,ratio_gdp,Historical/estimate
+2013,-0.02594,fiscal_balance,ratio_gdp,Historical/estimate
+2014,-0.02923,fiscal_balance,ratio_gdp,Historical/estimate
+2015,-0.02895,fiscal_balance,ratio_gdp,Historical/estimate
+2016,-0.02664,fiscal_balance,ratio_gdp,Historical/estimate
+2017,-0.0219,fiscal_balance,ratio_gdp,Historical/estimate
+2018,-0.01264,fiscal_balance,ratio_gdp,Historical/estimate
+2019,-0.01163,fiscal_balance,ratio_gdp,Historical/estimate
+2020,-0.07488,fiscal_balance,ratio_gdp,Historical/estimate
+2021,-0.09287,fiscal_balance,ratio_gdp,Historical/estimate
+2022,-0.03724,fiscal_balance,ratio_gdp,Historical/estimate
+2023,-0.0082,fiscal_balance,ratio_gdp,Historical/estimate
+2024,-0.01551,fiscal_balance,ratio_gdp,Historical/estimate
+2025,-0.04237,fiscal_balance,ratio_gdp,Historical/estimate
+2026,-0.02788,fiscal_balance,ratio_gdp,Official forecast
+2027,-0.0282,fiscal_balance,ratio_gdp,Official forecast
+2028,-0.02575,fiscal_balance,ratio_gdp,Official forecast
+2029,-0.0219,fiscal_balance,ratio_gdp,Official forecast
+2003,0.00529,net_capital_investment,ratio_gdp,Historical/estimate
+2004,0.00603,net_capital_investment,ratio_gdp,Historical/estimate
+2005,0.00747,net_capital_investment,ratio_gdp,Historical/estimate
+2006,0.01021,net_capital_investment,ratio_gdp,Historical/estimate
+2007,0.01202,net_capital_investment,ratio_gdp,Historical/estimate
+2008,0.01336,net_capital_investment,ratio_gdp,Historical/estimate
+2009,0.01657,net_capital_investment,ratio_gdp,Historical/estimate
+2010,0.02334,net_capital_investment,ratio_gdp,Historical/estimate
+2011,0.01986,net_capital_investment,ratio_gdp,Historical/estimate
+2012,0.01649,net_capital_investment,ratio_gdp,Historical/estimate
+2013,0.01038,net_capital_investment,ratio_gdp,Historical/estimate
+2014,0.01241,net_capital_investment,ratio_gdp,Historical/estimate
+2015,0.01144,net_capital_investment,ratio_gdp,Historical/estimate
+2016,0.01219,net_capital_investment,ratio_gdp,Historical/estimate
+2017,0.01368,net_capital_investment,ratio_gdp,Historical/estimate
+2018,0.01758,net_capital_investment,ratio_gdp,Historical/estimate
+2019,0.01983,net_capital_investment,ratio_gdp,Historical/estimate
+2020,0.02101,net_capital_investment,ratio_gdp,Historical/estimate
+2021,0.02252,net_capital_investment,ratio_gdp,Historical/estimate
+2022,0.02251,net_capital_investment,ratio_gdp,Historical/estimate
+2023,0.02335,net_capital_investment,ratio_gdp,Historical/estimate
+2024,0.02306,net_capital_investment,ratio_gdp,Historical/estimate
+2025,0.02067,net_capital_investment,ratio_gdp,Historical/estimate
+2026,0.01185,net_capital_investment,ratio_gdp,Official forecast
+2027,0.0193,net_capital_investment,ratio_gdp,Official forecast
+2028,0.01758,net_capital_investment,ratio_gdp,Official forecast
+2029,0.01522,net_capital_investment,ratio_gdp,Official forecast
+2003,0.34929,revenue,ratio_gdp,Historical/estimate
+2004,0.3524,revenue,ratio_gdp,Historical/estimate
+2005,0.35558,revenue,ratio_gdp,Historical/estimate
+2006,0.35633,revenue,ratio_gdp,Historical/estimate
+2007,0.34998,revenue,ratio_gdp,Historical/estimate
+2008,0.34889,revenue,ratio_gdp,Historical/estimate
+2009,0.32493,revenue,ratio_gdp,Historical/estimate
+2010,0.31413,revenue,ratio_gdp,Historical/estimate
+2011,0.30806,revenue,ratio_gdp,Historical/estimate
+2012,0.31466,revenue,ratio_gdp,Historical/estimate
+2013,0.32788,revenue,ratio_gdp,Historical/estimate
+2014,0.32788,revenue,ratio_gdp,Historical/estimate
+2015,0.3329,revenue,ratio_gdp,Historical/estimate
+2016,0.3387,revenue,ratio_gdp,Historical/estimate
+2017,0.33755,revenue,ratio_gdp,Historical/estimate
+2018,0.3479,revenue,ratio_gdp,Historical/estimate
+2019,0.34951,revenue,ratio_gdp,Historical/estimate
+2020,0.33842,revenue,ratio_gdp,Historical/estimate
+2021,0.34472,revenue,ratio_gdp,Historical/estimate
+2022,0.35364,revenue,ratio_gdp,Historical/estimate
+2023,0.3563,revenue,ratio_gdp,Historical/estimate
+2024,0.36202,revenue,ratio_gdp,Historical/estimate
+2025,0.3406,revenue,ratio_gdp,Historical/estimate
+2026,0.34602,revenue,ratio_gdp,Official forecast
+2027,0.34536,revenue,ratio_gdp,Official forecast
+2028,0.33991,revenue,ratio_gdp,Official forecast
+2029,0.33861,revenue,ratio_gdp,Official forecast
+2003,0.33483,expenses,ratio_gdp,Historical/estimate
+2004,0.33493,expenses,ratio_gdp,Historical/estimate
+2005,0.33308,expenses,ratio_gdp,Historical/estimate
+2006,0.32735,expenses,ratio_gdp,Historical/estimate
+2007,0.32387,expenses,ratio_gdp,Historical/estimate
+2008,0.32167,expenses,ratio_gdp,Historical/estimate
+2009,0.34185,expenses,ratio_gdp,Historical/estimate
+2010,0.34624,expenses,ratio_gdp,Historical/estimate
+2011,0.33586,expenses,ratio_gdp,Historical/estimate
+2012,0.34079,expenses,ratio_gdp,Historical/estimate
+2013,0.34344,expenses,ratio_gdp,Historical/estimate
+2014,0.3447,expenses,ratio_gdp,Historical/estimate
+2015,0.35041,expenses,ratio_gdp,Historical/estimate
+2016,0.35314,expenses,ratio_gdp,Historical/estimate
+2017,0.34577,expenses,ratio_gdp,Historical/estimate
+2018,0.34296,expenses,ratio_gdp,Historical/estimate
+2019,0.3413,expenses,ratio_gdp,Historical/estimate
+2020,0.39229,expenses,ratio_gdp,Historical/estimate
+2021,0.41508,expenses,ratio_gdp,Historical/estimate
+2022,0.36837,expenses,ratio_gdp,Historical/estimate
+2023,0.34116,expenses,ratio_gdp,Historical/estimate
+2024,0.35447,expenses,ratio_gdp,Historical/estimate
+2025,0.36229,expenses,ratio_gdp,Historical/estimate
+2026,0.36205,expenses,ratio_gdp,Official forecast
+2027,0.35425,expenses,ratio_gdp,Official forecast
+2028,0.34808,expenses,ratio_gdp,Official forecast
+2029,0.34529,expenses,ratio_gdp,Official forecast
+2003,0.02327,net_debt,ratio_gdp,Historical/estimate
+2004,0.00421,net_debt,ratio_gdp,Historical/estimate
+2005,-0.01623,net_debt,ratio_gdp,Historical/estimate
+2006,-0.04566,net_debt,ratio_gdp,Historical/estimate
+2007,-0.06482,net_debt,ratio_gdp,Historical/estimate
+2008,-0.06378,net_debt,ratio_gdp,Historical/estimate
+2009,-0.02932,net_debt,ratio_gdp,Historical/estimate
+2010,0.03018,net_debt,ratio_gdp,Historical/estimate
+2011,0.06187,net_debt,ratio_gdp,Historical/estimate
+2012,0.11223,net_debt,ratio_gdp,Historical/estimate
+2013,0.12486,net_debt,ratio_gdp,Historical/estimate
+2014,0.15288,net_debt,ratio_gdp,Historical/estimate
+2015,0.17268,net_debt,ratio_gdp,Historical/estimate
+2016,0.19953,net_debt,ratio_gdp,Historical/estimate
+2017,0.1945,net_debt,ratio_gdp,Historical/estimate
+2018,0.19882,net_debt,ratio_gdp,Historical/estimate
+2019,0.20417,net_debt,ratio_gdp,Historical/estimate
+2020,0.27832,net_debt,ratio_gdp,Historical/estimate
+2021,0.33424,net_debt,ratio_gdp,Historical/estimate
+2022,0.28849,net_debt,ratio_gdp,Historical/estimate
+2023,0.26024,net_debt,ratio_gdp,Historical/estimate
+2024,0.26657,net_debt,ratio_gdp,Historical/estimate
+2025,0.31732,net_debt,ratio_gdp,Historical/estimate
+2026,0.34811,net_debt,ratio_gdp,Official forecast
+2027,0.36859,net_debt,ratio_gdp,Official forecast
+2028,0.37294,net_debt,ratio_gdp,Official forecast
+2029,0.37877,net_debt,ratio_gdp,Official forecast
+2003,0.13573,gross_debt,ratio_gdp,Historical/estimate
+2004,0.11713,gross_debt,ratio_gdp,Historical/estimate
+2005,0.10922,gross_debt,ratio_gdp,Historical/estimate
+2006,0.0959,gross_debt,ratio_gdp,Historical/estimate
+2007,0.08852,gross_debt,ratio_gdp,Historical/estimate
+2008,0.0899,gross_debt,ratio_gdp,Historical/estimate
+2009,0.12934,gross_debt,ratio_gdp,Historical/estimate
+2010,0.18088,gross_debt,ratio_gdp,Historical/estimate
+2011,0.20718,gross_debt,ratio_gdp,Historical/estimate
+2012,0.252,gross_debt,ratio_gdp,Historical/estimate
+2013,0.27672,gross_debt,ratio_gdp,Historical/estimate
+2014,0.31142,gross_debt,ratio_gdp,Historical/estimate
+2015,0.34425,gross_debt,ratio_gdp,Historical/estimate
+2016,0.3817,gross_debt,ratio_gdp,Historical/estimate
+2017,0.39578,gross_debt,ratio_gdp,Historical/estimate
+2018,0.39751,gross_debt,ratio_gdp,Historical/estimate
+2019,0.40491,gross_debt,ratio_gdp,Historical/estimate
+2020,0.50896,gross_debt,ratio_gdp,Historical/estimate
+2021,0.56341,gross_debt,ratio_gdp,Historical/estimate
+2022,0.515,gross_debt,ratio_gdp,Historical/estimate
+2023,0.47456,gross_debt,ratio_gdp,Historical/estimate
+2024,0.48524,gross_debt,ratio_gdp,Historical/estimate
+2025,0.51851,gross_debt,ratio_gdp,Historical/estimate
+2026,0.55071,gross_debt,ratio_gdp,Official forecast
+2027,0.57012,gross_debt,ratio_gdp,Official forecast
+2028,0.5759,gross_debt,ratio_gdp,Official forecast
+2029,0.57544,gross_debt,ratio_gdp,Official forecast
+2003,0.00869,public_debt_interest,ratio_gdp,Historical/estimate
+2004,0.00731,public_debt_interest,ratio_gdp,Historical/estimate
+2005,0.00637,public_debt_interest,ratio_gdp,Historical/estimate
+2006,0.00684,public_debt_interest,ratio_gdp,Historical/estimate
+2007,0.00547,public_debt_interest,ratio_gdp,Historical/estimate
+2008,0.00511,public_debt_interest,ratio_gdp,Historical/estimate
+2009,0.00533,public_debt_interest,ratio_gdp,Historical/estimate
+2010,0.00737,public_debt_interest,ratio_gdp,Historical/estimate
+2011,0.00966,public_debt_interest,ratio_gdp,Historical/estimate
+2012,0.01078,public_debt_interest,ratio_gdp,Historical/estimate
+2013,0.01188,public_debt_interest,ratio_gdp,Historical/estimate
+2014,0.01314,public_debt_interest,ratio_gdp,Historical/estimate
+2015,0.01305,public_debt_interest,ratio_gdp,Historical/estimate
+2016,0.01339,public_debt_interest,ratio_gdp,Historical/estimate
+2017,0.01245,public_debt_interest,ratio_gdp,Historical/estimate
+2018,0.01266,public_debt_interest,ratio_gdp,Historical/estimate
+2019,0.01321,public_debt_interest,ratio_gdp,Historical/estimate
+2020,0.012,public_debt_interest,ratio_gdp,Historical/estimate
+2021,0.0119,public_debt_interest,ratio_gdp,Historical/estimate
+2022,0.01109,public_debt_interest,ratio_gdp,Historical/estimate
+2023,0.01141,public_debt_interest,ratio_gdp,Historical/estimate
+2024,0.01373,public_debt_interest,ratio_gdp,Historical/estimate
+2025,0.01512,public_debt_interest,ratio_gdp,Historical/estimate
+2026,0.01672,public_debt_interest,ratio_gdp,Official forecast
+2027,0.01808,public_debt_interest,ratio_gdp,Official forecast
+2028,0.02047,public_debt_interest,ratio_gdp,Official forecast
+2029,0.02075,public_debt_interest,ratio_gdp,Official forecast
+2003,11.607,net_operating_balance,billion_dollars,Historical/estimate
+2004,15.09,net_operating_balance,billion_dollars,Historical/estimate
+2005,20.806,net_operating_balance,billion_dollars,Historical/estimate
+2006,28.952,net_operating_balance,billion_dollars,Historical/estimate
+2007,28.413,net_operating_balance,billion_dollars,Historical/estimate
+2008,32.092,net_operating_balance,billion_dollars,Historical/estimate
+2009,-21.338,net_operating_balance,billion_dollars,Historical/estimate
+2010,-41.891,net_operating_balance,billion_dollars,Historical/estimate
+2011,-39.433,net_operating_balance,billion_dollars,Historical/estimate
+2012,-39.216,net_operating_balance,billion_dollars,Historical/estimate
+2013,-23.92,net_operating_balance,billion_dollars,Historical/estimate
+2014,-26.89,net_operating_balance,billion_dollars,Historical/estimate
+2015,-28.446,net_operating_balance,billion_dollars,Historical/estimate
+2016,-23.947,net_operating_balance,billion_dollars,Historical/estimate
+2017,-14.447,net_operating_balance,billion_dollars,Historical/estimate
+2018,9.1,net_operating_balance,billion_dollars,Historical/estimate
+2019,15.984,net_operating_balance,billion_dollars,Historical/estimate
+2020,-106.749,net_operating_balance,billion_dollars,Historical/estimate
+2021,-146.749,net_operating_balance,billion_dollars,Historical/estimate
+2022,-34.326,net_operating_balance,billion_dollars,Historical/estimate
+2023,38.891,net_operating_balance,billion_dollars,Historical/estimate
+2024,20.184,net_operating_balance,billion_dollars,Historical/estimate
+2025,-60.466,net_operating_balance,billion_dollars,Historical/estimate
+2026,-46.166,net_operating_balance,billion_dollars,Official forecast
+2027,-26.621,net_operating_balance,billion_dollars,Official forecast
+2028,-25.728,net_operating_balance,billion_dollars,Official forecast
+2029,-22.185,net_operating_balance,billion_dollars,Official forecast
+2003,7.358,fiscal_balance,billion_dollars,Historical/estimate
+2004,9.886,fiscal_balance,billion_dollars,Historical/estimate
+2005,13.9,fiscal_balance,billion_dollars,Historical/estimate
+2006,18.749,fiscal_balance,billion_dollars,Historical/estimate
+2007,15.329,fiscal_balance,billion_dollars,Historical/estimate
+2008,16.336,fiscal_balance,billion_dollars,Historical/estimate
+2009,-42.231,fiscal_balance,billion_dollars,Historical/estimate
+2010,-72.329,fiscal_balance,billion_dollars,Historical/estimate
+2011,-67.611,fiscal_balance,billion_dollars,Historical/estimate
+2012,-63.964,fiscal_balance,billion_dollars,Historical/estimate
+2013,-39.88,fiscal_balance,billion_dollars,Historical/estimate
+2014,-46.743,fiscal_balance,billion_dollars,Historical/estimate
+2015,-47.02,fiscal_balance,billion_dollars,Historical/estimate
+2016,-44.165,fiscal_balance,billion_dollars,Historical/estimate
+2017,-38.5,fiscal_balance,billion_dollars,Historical/estimate
+2018,-23.275,fiscal_balance,billion_dollars,Historical/estimate
+2019,-22.641,fiscal_balance,billion_dollars,Historical/estimate
+2020,-148.378,fiscal_balance,billion_dollars,Historical/estimate
+2021,-193.716,fiscal_balance,billion_dollars,Historical/estimate
+2022,-86.79,fiscal_balance,billion_dollars,Historical/estimate
+2023,-21.053,fiscal_balance,billion_dollars,Historical/estimate
+2024,-41.467,fiscal_balance,billion_dollars,Historical/estimate
+2025,-118.081,fiscal_balance,billion_dollars,Historical/estimate
+2026,-80.286,fiscal_balance,billion_dollars,Official forecast
+2027,-84.362,fiscal_balance,billion_dollars,Official forecast
+2028,-81.07,fiscal_balance,billion_dollars,Official forecast
+2029,-72.709,fiscal_balance,billion_dollars,Official forecast
+2003,4.249,net_capital_investment,billion_dollars,Historical/estimate
+2004,5.204,net_capital_investment,billion_dollars,Historical/estimate
+2005,6.906,net_capital_investment,billion_dollars,Historical/estimate
+2006,10.203,net_capital_investment,billion_dollars,Historical/estimate
+2007,13.084,net_capital_investment,billion_dollars,Historical/estimate
+2008,15.756,net_capital_investment,billion_dollars,Historical/estimate
+2009,20.893,net_capital_investment,billion_dollars,Historical/estimate
+2010,30.438,net_capital_investment,billion_dollars,Historical/estimate
+2011,28.178,net_capital_investment,billion_dollars,Historical/estimate
+2012,24.748,net_capital_investment,billion_dollars,Historical/estimate
+2013,15.96,net_capital_investment,billion_dollars,Historical/estimate
+2014,19.853,net_capital_investment,billion_dollars,Historical/estimate
+2015,18.574,net_capital_investment,billion_dollars,Historical/estimate
+2016,20.218,net_capital_investment,billion_dollars,Historical/estimate
+2017,24.053,net_capital_investment,billion_dollars,Historical/estimate
+2018,32.375,net_capital_investment,billion_dollars,Historical/estimate
+2019,38.625,net_capital_investment,billion_dollars,Historical/estimate
+2020,41.629,net_capital_investment,billion_dollars,Historical/estimate
+2021,46.967,net_capital_investment,billion_dollars,Historical/estimate
+2022,52.464,net_capital_investment,billion_dollars,Historical/estimate
+2023,59.944,net_capital_investment,billion_dollars,Historical/estimate
+2024,61.651,net_capital_investment,billion_dollars,Historical/estimate
+2025,57.615,net_capital_investment,billion_dollars,Historical/estimate
+2026,34.12,net_capital_investment,billion_dollars,Official forecast
+2027,57.741,net_capital_investment,billion_dollars,Official forecast
+2028,55.342,net_capital_investment,billion_dollars,Official forecast
+2029,50.524,net_capital_investment,billion_dollars,Official forecast
+2003,280.374,revenue,billion_dollars,Historical/estimate
+2004,304.343,revenue,billion_dollars,Historical/estimate
+2005,328.884,revenue,billion_dollars,Historical/estimate
+2006,355.94,revenue,billion_dollars,Historical/estimate
+2007,380.876,revenue,billion_dollars,Historical/estimate
+2008,411.395,revenue,billion_dollars,Historical/estimate
+2009,409.825,revenue,billion_dollars,Historical/estimate
+2010,409.74,revenue,billion_dollars,Historical/estimate
+2011,437.003,revenue,billion_dollars,Historical/estimate
+2012,472.223,revenue,billion_dollars,Historical/estimate
+2013,504.036,revenue,billion_dollars,Historical/estimate
+2014,524.397,revenue,billion_dollars,Historical/estimate
+2015,540.681,revenue,billion_dollars,Historical/estimate
+2016,561.528,revenue,billion_dollars,Historical/estimate
+2017,593.294,revenue,billion_dollars,Historical/estimate
+2018,640.845,revenue,billion_dollars,Historical/estimate
+2019,680.606,revenue,billion_dollars,Historical/estimate
+2020,670.643,revenue,billion_dollars,Historical/estimate
+2021,719.028,revenue,billion_dollars,Historical/estimate
+2022,824.094,revenue,billion_dollars,Historical/estimate
+2023,914.813,revenue,billion_dollars,Historical/estimate
+2024,967.781,revenue,billion_dollars,Historical/estimate
+2025,949.324,revenue,billion_dollars,Historical/estimate
+2026,996.287,revenue,billion_dollars,Official forecast
+2027,1033.272,revenue,billion_dollars,Official forecast
+2028,1070.105,revenue,billion_dollars,Official forecast
+2029,1123.955,revenue,billion_dollars,Official forecast
+2003,268.767,expenses,billion_dollars,Historical/estimate
+2004,289.253,expenses,billion_dollars,Historical/estimate
+2005,308.078,expenses,billion_dollars,Historical/estimate
+2006,326.988,expenses,billion_dollars,Historical/estimate
+2007,352.463,expenses,billion_dollars,Historical/estimate
+2008,379.303,expenses,billion_dollars,Historical/estimate
+2009,431.163,expenses,billion_dollars,Historical/estimate
+2010,451.631,expenses,billion_dollars,Historical/estimate
+2011,476.436,expenses,billion_dollars,Historical/estimate
+2012,511.439,expenses,billion_dollars,Historical/estimate
+2013,527.956,expenses,billion_dollars,Historical/estimate
+2014,551.287,expenses,billion_dollars,Historical/estimate
+2015,569.127,expenses,billion_dollars,Historical/estimate
+2016,585.475,expenses,billion_dollars,Historical/estimate
+2017,607.741,expenses,billion_dollars,Historical/estimate
+2018,631.745,expenses,billion_dollars,Historical/estimate
+2019,664.622,expenses,billion_dollars,Historical/estimate
+2020,777.392,expenses,billion_dollars,Historical/estimate
+2021,865.777,expenses,billion_dollars,Historical/estimate
+2022,858.42,expenses,billion_dollars,Historical/estimate
+2023,875.922,expenses,billion_dollars,Historical/estimate
+2024,947.597,expenses,billion_dollars,Historical/estimate
+2025,1009.79,expenses,billion_dollars,Historical/estimate
+2026,1042.453,expenses,billion_dollars,Official forecast
+2027,1059.893,expenses,billion_dollars,Official forecast
+2028,1095.833,expenses,billion_dollars,Official forecast
+2029,1146.139,expenses,billion_dollars,Official forecast
+2003,18.677,net_debt,billion_dollars,Historical/estimate
+2004,3.637,net_debt,billion_dollars,Historical/estimate
+2005,-15.016,net_debt,billion_dollars,Historical/estimate
+2006,-45.614,net_debt,billion_dollars,Historical/estimate
+2007,-70.547,net_debt,billion_dollars,Historical/estimate
+2008,-75.201,net_debt,billion_dollars,Historical/estimate
+2009,-36.981,net_debt,billion_dollars,Historical/estimate
+2010,39.365,net_debt,billion_dollars,Historical/estimate
+2011,87.764,net_debt,billion_dollars,Historical/estimate
+2012,168.426,net_debt,billion_dollars,Historical/estimate
+2013,191.951,net_debt,billion_dollars,Historical/estimate
+2014,244.507,net_debt,billion_dollars,Historical/estimate
+2015,280.453,net_debt,billion_dollars,Historical/estimate
+2016,330.8,net_debt,billion_dollars,Historical/estimate
+2017,341.86,net_debt,billion_dollars,Historical/estimate
+2018,366.241,net_debt,billion_dollars,Historical/estimate
+2019,397.584,net_debt,billion_dollars,Historical/estimate
+2020,551.534,net_debt,billion_dollars,Historical/estimate
+2021,697.162,net_debt,billion_dollars,Historical/estimate
+2022,672.269,net_debt,billion_dollars,Historical/estimate
+2023,668.175,net_debt,billion_dollars,Historical/estimate
+2024,712.611,net_debt,billion_dollars,Historical/estimate
+2025,884.444,net_debt,billion_dollars,Historical/estimate
+2026,1002.33,net_debt,billion_dollars,Official forecast
+2027,1102.789,net_debt,billion_dollars,Official forecast
+2028,1174.074,net_debt,billion_dollars,Official forecast
+2029,1257.286,net_debt,billion_dollars,Official forecast
+2003,108.95,gross_debt,billion_dollars,Historical/estimate
+2004,101.156,gross_debt,billion_dollars,Historical/estimate
+2005,101.025,gross_debt,billion_dollars,Historical/estimate
+2006,95.795,gross_debt,billion_dollars,Historical/estimate
+2007,96.339,gross_debt,billion_dollars,Historical/estimate
+2008,106.006,gross_debt,billion_dollars,Historical/estimate
+2009,163.13,gross_debt,billion_dollars,Historical/estimate
+2010,235.931,gross_debt,billion_dollars,Historical/estimate
+2011,293.898,gross_debt,billion_dollars,Historical/estimate
+2012,378.18,gross_debt,billion_dollars,Historical/estimate
+2013,425.388,gross_debt,billion_dollars,Historical/estimate
+2014,498.06,gross_debt,billion_dollars,Historical/estimate
+2015,559.123,gross_debt,billion_dollars,Historical/estimate
+2016,632.834,gross_debt,billion_dollars,Historical/estimate
+2017,695.641,gross_debt,billion_dollars,Historical/estimate
+2018,732.24,gross_debt,billion_dollars,Historical/estimate
+2019,788.49,gross_debt,billion_dollars,Historical/estimate
+2020,1008.584,gross_debt,billion_dollars,Historical/estimate
+2021,1175.181,gross_debt,billion_dollars,Historical/estimate
+2022,1200.113,gross_debt,billion_dollars,Historical/estimate
+2023,1218.428,gross_debt,billion_dollars,Historical/estimate
+2024,1297.174,gross_debt,billion_dollars,Historical/estimate
+2025,1445.202,gross_debt,billion_dollars,Historical/estimate
+2026,1585.665,gross_debt,billion_dollars,Official forecast
+2027,1705.732,gross_debt,billion_dollars,Official forecast
+2028,1813.063,gross_debt,billion_dollars,Official forecast
+2029,1910.105,gross_debt,billion_dollars,Official forecast
+2003,6.974,public_debt_interest,billion_dollars,Historical/estimate
+2004,6.317,public_debt_interest,billion_dollars,Historical/estimate
+2005,5.89,public_debt_interest,billion_dollars,Historical/estimate
+2006,6.837,public_debt_interest,billion_dollars,Historical/estimate
+2007,5.95,public_debt_interest,billion_dollars,Historical/estimate
+2008,6.028,public_debt_interest,billion_dollars,Historical/estimate
+2009,6.725,public_debt_interest,billion_dollars,Historical/estimate
+2010,9.608,public_debt_interest,billion_dollars,Historical/estimate
+2011,13.709,public_debt_interest,billion_dollars,Historical/estimate
+2012,16.175,public_debt_interest,billion_dollars,Historical/estimate
+2013,18.26,public_debt_interest,billion_dollars,Historical/estimate
+2014,21.015,public_debt_interest,billion_dollars,Historical/estimate
+2015,21.19,public_debt_interest,billion_dollars,Historical/estimate
+2016,22.192,public_debt_interest,billion_dollars,Historical/estimate
+2017,21.882,public_debt_interest,billion_dollars,Historical/estimate
+2018,23.314,public_debt_interest,billion_dollars,Historical/estimate
+2019,25.718,public_debt_interest,billion_dollars,Historical/estimate
+2020,23.776,public_debt_interest,billion_dollars,Historical/estimate
+2021,24.82,public_debt_interest,billion_dollars,Historical/estimate
+2022,25.838,public_debt_interest,billion_dollars,Historical/estimate
+2023,29.286,public_debt_interest,billion_dollars,Historical/estimate
+2024,36.698,public_debt_interest,billion_dollars,Historical/estimate
+2025,42.141,public_debt_interest,billion_dollars,Historical/estimate
+2026,48.144,public_debt_interest,billion_dollars,Official forecast
+2027,54.091,public_debt_interest,billion_dollars,Official forecast
+2028,64.45,public_debt_interest,billion_dollars,Official forecast
+2029,68.883,public_debt_interest,billion_dollars,Official forecast

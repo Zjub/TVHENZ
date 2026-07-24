@@ -1,0 +1,4 @@
+scenario,defence_target_gdp,defence_target_year,effective_interest_rate_long_run,net_capital_investment_gdp,post_forecast_revenue_increase,stock_flow_adjustment
+central,0.025,2035,0.044,0.015,0.012,0
+pressure,0.03,2035,0.052,0.018,0.006,0.0025
+restraint,0.022,2035,0.038,0.012,0.012,-0.001

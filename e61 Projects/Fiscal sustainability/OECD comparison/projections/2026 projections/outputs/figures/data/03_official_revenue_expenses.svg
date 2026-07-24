@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='648.00pt' height='432.00pt' viewBox='0 0 648.00 432.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw2NDguMDB8MC4wMHw0MzIuMDA='>
+    <rect x='0.00' y='0.00' width='648.00' height='432.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHw0MzIuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='648.00' height='432.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNDAuNDZ8NjQyLjUyfDM4Ljg1fDM2MC42MQ=='>
+    <rect x='40.46' y='38.85' width='602.07' height='321.76' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNDAuNDZ8NjQyLjUyfDM4Ljg1fDM2MC42MQ==)'>
+<polyline points='40.46,285.12 642.52,285.12 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='40.46,196.14 642.52,196.14 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='40.46,107.15 642.52,107.15 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='67.82,360.61 67.82,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='263.30,360.61 263.30,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='458.77,360.61 458.77,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='67.82,345.99 106.92,325.34 146.01,329.43 185.11,292.60 224.20,286.86 263.30,326.34 302.39,303.91 341.49,272.16 380.58,262.70 419.68,242.34 458.77,318.58 497.87,299.29 536.96,301.64 576.06,321.03 615.15,325.66 ' style='stroke-width: 1.92; stroke: #F8766D; stroke-linecap: butt;' />
+<polyline points='67.82,283.66 106.92,273.94 146.01,300.18 185.11,310.18 224.20,316.09 263.30,134.60 302.39,53.48 341.49,219.74 380.58,316.59 419.68,269.21 458.77,241.38 497.87,242.23 536.96,269.99 576.06,291.95 615.15,301.89 ' style='stroke-width: 1.92; stroke: #00BFC4; stroke-linecap: butt;' />
+<line x1='478.32' y1='360.61' x2='478.32' y2='38.85' style='stroke-width: 1.07; stroke: #737373; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHw0MzIuMDA=)'>
+<text x='35.52' y='288.27' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='17.11px' lengthAdjust='spacingAndGlyphs'>35.0</text>
+<text x='35.52' y='199.29' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='17.11px' lengthAdjust='spacingAndGlyphs'>37.5</text>
+<text x='35.52' y='110.30' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='17.11px' lengthAdjust='spacingAndGlyphs'>40.0</text>
+<text x='67.82' y='371.84' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2015</text>
+<text x='263.30' y='371.84' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2020</text>
+<text x='458.77' y='371.84' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2025</text>
+<text transform='translate(13.36,199.73) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='48.94px' lengthAdjust='spacingAndGlyphs'>% of GDP</text>
+<line x1='280.78' y1='398.77' x2='294.60' y2='398.77' style='stroke-width: 1.92; stroke: #F8766D; stroke-linecap: butt;' />
+<line x1='344.24' y1='398.77' x2='358.06' y2='398.77' style='stroke-width: 1.92; stroke: #00BFC4; stroke-linecap: butt;' />
+<text x='301.81' y='401.92' style='font-size: 8.80px; font-family: "Arial";' textLength='35.22px' lengthAdjust='spacingAndGlyphs'>Revenue</text>
+<text x='365.27' y='401.92' style='font-size: 8.80px; font-family: "Arial";' textLength='38.66px' lengthAdjust='spacingAndGlyphs'>Expenses</text>
+<text x='5.48' y='31.05' style='font-size: 11.00px; font-family: "Arial";' textLength='256.94px' lengthAdjust='spacingAndGlyphs'>Dashed line separates history/estimate from forecast</text>
+<text x='5.48' y='14.93' style='font-size: 13.20px; font-family: "Arial";' textLength='245.22px' lengthAdjust='spacingAndGlyphs'>Official consolidated national fiscal anchor</text>
+<text x='40.46' y='424.67' style='font-size: 8.80px;fill: #595959; font-family: "Arial";' textLength='181.36px' lengthAdjust='spacingAndGlyphs'>Source: PBO 2025-26 National Fiscal Outlook.</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,25 @@
+year,model,model_label,value,official_value,difference_pp,approach
+2026,structural_ols,Structural OLS (levels),0.372149425577011,0.36205,1.0099425577011,Top-down model-only
+2026,arimax_level,ARIMAX (levels),0.386034202924147,0.36205,2.3984202924147,Top-down model-only
+2026,arimax_diff,ARIMAX (differences),0.389380683860474,0.36205,2.7330683860474,Top-down model-only
+2026,hybrid,Hybrid demographics/macro,0.385655809142094,0.36205,2.3605809142094,Top-down model-only
+2026,univariate_arima,Univariate ARIMA,0.370710393454637,0.36205,0.866039345463704,Top-down model-only
+2027,structural_ols,Structural OLS (levels),0.37759674349701,0.35425,2.334674349701,Top-down model-only
+2027,arimax_level,ARIMAX (levels),0.38828841915903,0.35425,3.403841915903,Top-down model-only
+2027,arimax_diff,ARIMAX (differences),0.393733025323455,0.35425,3.9483025323455,Top-down model-only
+2027,hybrid,Hybrid demographics/macro,0.387026289602913,0.35425,3.2776289602913,Top-down model-only
+2027,univariate_arima,Univariate ARIMA,0.360984922375956,0.35425,0.673492237595597,Top-down model-only
+2028,structural_ols,Structural OLS (levels),0.381617717396979,0.34808,3.3537717396979,Top-down model-only
+2028,arimax_level,ARIMAX (levels),0.390460565472803,0.34808,4.2380565472803,Top-down model-only
+2028,arimax_diff,ARIMAX (differences),0.397119820772608,0.34808,4.9039820772608,Top-down model-only
+2028,hybrid,Hybrid demographics/macro,0.387620914064156,0.34808,3.9540914064156,Top-down model-only
+2028,univariate_arima,Univariate ARIMA,0.356866192822914,0.34808,0.878619282291399,Top-down model-only
+2029,structural_ols,Structural OLS (levels),0.383771759235937,0.34529,3.8481759235937,Top-down model-only
+2029,arimax_level,ARIMAX (levels),0.391484859759967,0.34529,4.6194859759967,Top-down model-only
+2029,arimax_diff,ARIMAX (differences),0.398785505016538,0.34529,5.3495505016538,Top-down model-only
+2029,hybrid,Hybrid demographics/macro,0.38646515783795,0.34529,4.117515783795,Top-down model-only
+2029,univariate_arima,Univariate ARIMA,0.356866192822914,0.34529,1.1576192822914,Top-down model-only
+2026,bottom_up_unanchored,Bottom-up model-only,0.376768309082548,0.36205,1.4718309082548,Bottom-up model-only
+2027,bottom_up_unanchored,Bottom-up model-only,0.381526942525115,0.35425,2.7276942525115,Bottom-up model-only
+2028,bottom_up_unanchored,Bottom-up model-only,0.386374380064009,0.34808,3.8294380064009,Bottom-up model-only
+2029,bottom_up_unanchored,Bottom-up model-only,0.389048541350669,0.34529,4.3758541350669,Bottom-up model-only

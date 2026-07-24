@@ -1,0 +1,39 @@
+model,model_label,component,term,estimate,conventional_se,robust_hc1_se,conventional_p_value,robust_hc1_p_value,standard_error_scope
+structural_ols,Structural OLS (levels),Structural equation,(Intercept),-0.0917715903598696,0.134385448046024,0.109074817925358,0.498924988884915,0.400144225219872,Coefficient uncertainty conditional on the specification
+structural_ols,Structural OLS (levels),Structural equation,age_0_14,-0.154378702438227,0.383792934342081,0.386198858329794,0.689818323661684,0.689348845825771,Coefficient uncertainty conditional on the specification
+structural_ols,Structural OLS (levels),Structural equation,age_15_34,0.764838517664709,0.238137349182596,0.287755154211792,0.00273050306439944,0.00786177945175763,Coefficient uncertainty conditional on the specification
+structural_ols,Structural OLS (levels),Structural equation,age_55_64,0.860026244637567,0.622103299152961,0.405609817780478,0.175122172996573,0.0339783127225639,Coefficient uncertainty conditional on the specification
+structural_ols,Structural OLS (levels),Structural equation,age_65p,0.853930189673801,0.292002596496282,0.280795055082828,0.00586195741183048,0.00235703408619707,Coefficient uncertainty conditional on the specification
+structural_ols,Structural OLS (levels),Structural equation,tot_z,-0.0038065277630898,0.00482264380835247,0.00330499765309947,0.434963878287192,0.249424227912737,Coefficient uncertainty conditional on the specification
+structural_ols,Structural OLS (levels),Structural equation,rp_z,-0.00381256239087919,0.00362694310855397,0.00222523853248392,0.29999418853158,0.0866523043313493,Coefficient uncertainty conditional on the specification
+structural_ols,Structural OLS (levels),Structural equation,unemployment,0.00830218223276076,0.00200223641193533,0.00151962011653336,0.000189034985290661,4.67291584166124e-08,Coefficient uncertainty conditional on the specification
+structural_ols,Structural OLS (levels),Structural equation,covid,0.0356968081185243,0.0087850451437544,0.00908891851655929,0.000241861550749098,8.58302554319134e-05,Coefficient uncertainty conditional on the specification
+arimax_level,ARIMAX (levels),Level ARIMAX,ar1,0.694968826485834,0.13082558626949,,1.08322603281943e-07,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+arimax_level,ARIMAX (levels),Level ARIMAX,age_0_14,-0.357583419453239,0.475928896440772,,0.452449323248031,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+arimax_level,ARIMAX (levels),Level ARIMAX,age_15_34,0.861110711503387,0.355172058281442,,0.0153299521251251,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+arimax_level,ARIMAX (levels),Level ARIMAX,age_55_64,0.0630389262683377,0.567243718279234,,0.911511677250651,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+arimax_level,ARIMAX (levels),Level ARIMAX,age_65p,0.900250389754183,0.296340922879979,,0.00238242866784659,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+arimax_level,ARIMAX (levels),Level ARIMAX,tot_z,-0.000454949351574973,0.00522672341041176,,0.930637383563608,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+arimax_level,ARIMAX (levels),Level ARIMAX,rp_z,0.00408632814312037,0.00373009036812356,,0.273295985109263,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+arimax_level,ARIMAX (levels),Level ARIMAX,unemployment,0.00765818050418971,0.00158545330730517,,1.36342435698686e-06,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+arimax_level,ARIMAX (levels),Level ARIMAX,covid,0.0326732370833371,0.00697677009351263,,2.82504325651589e-06,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+arimax_diff,ARIMAX (differences),Difference ARIMAX,age_0_14,-0.702707589301705,0.84708119986217,,0.406785657793115,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+arimax_diff,ARIMAX (differences),Difference ARIMAX,age_15_34,0.4787669129785,0.620177125544237,,0.440123813340923,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+arimax_diff,ARIMAX (differences),Difference ARIMAX,age_55_64,-0.0496322565388736,1.00668494421202,,0.960678091010652,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+arimax_diff,ARIMAX (differences),Difference ARIMAX,age_65p,0.644460791268179,0.976843003303543,,0.509421751828843,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+arimax_diff,ARIMAX (differences),Difference ARIMAX,tot_z,0.00284297932707053,0.00632595989499653,,0.653132533712047,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+arimax_diff,ARIMAX (differences),Difference ARIMAX,rp_z,0.00765595485316139,0.00388009584843787,,0.0484801269099142,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+arimax_diff,ARIMAX (differences),Difference ARIMAX,unemployment,0.00771266527837609,0.00160549408300875,,1.55588946076128e-06,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+arimax_diff,ARIMAX (differences),Difference ARIMAX,covid,0.030312729225362,0.00694594327242537,,1.27652375689733e-05,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+hybrid,Hybrid demographics/macro,Demographic level equation,(Intercept),-0.0155362357904082,0.109078722072997,0.127145663396288,0.887436901602681,0.902746632627027,Coefficient uncertainty conditional on the specification
+hybrid,Hybrid demographics/macro,Demographic level equation,age_0_14,0.423013072710891,0.477519751413421,0.67259257140376,0.380862264077535,0.529395442657226,Coefficient uncertainty conditional on the specification
+hybrid,Hybrid demographics/macro,Demographic level equation,age_15_34,0.573818179377853,0.319608635777978,0.327831647251833,0.079966861498845,0.0800589609082257,Coefficient uncertainty conditional on the specification
+hybrid,Hybrid demographics/macro,Demographic level equation,age_55_64,-0.567029424654984,0.345620024510995,0.252880241751478,0.108528096438698,0.0249429964376101,Coefficient uncertainty conditional on the specification
+hybrid,Hybrid demographics/macro,Demographic level equation,age_65p,1.32304504078075,0.313795154038432,0.389164469756207,0.000133360301280866,0.000674581803239264,Coefficient uncertainty conditional on the specification
+hybrid,Hybrid demographics/macro,Macro difference ARIMAX,ma1,0.516239597441478,0.129391725240386,,6.61452102132384e-05,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+hybrid,Hybrid demographics/macro,Macro difference ARIMAX,tot_z,0.0113905693044501,0.00710213166560792,,0.108752850085524,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+hybrid,Hybrid demographics/macro,Macro difference ARIMAX,rp_z,0.013511918509659,0.00432328972356518,,0.00177576164595145,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+hybrid,Hybrid demographics/macro,Macro difference ARIMAX,unemployment,0.00927296492112834,0.00196176014179466,,2.28018715250992e-06,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+univariate_arima,Univariate ARIMA,Univariate ARIMA,ma1,1.14955766533841,0.14441961043401,,1.72255395762734e-15,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+univariate_arima,Univariate ARIMA,Univariate ARIMA,ma2,0.554968384293898,0.128405107338431,,1.54612943959421e-05,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification
+univariate_arima,Univariate ARIMA,Univariate ARIMA,intercept,0.356866192822914,0.00453799398694085,,0,,ARIMA maximum-likelihood coefficient uncertainty conditional on the specification

@@ -1,0 +1,6 @@
+year,status,expenses_billion_dollars,expenses_ratio_gdp,fiscal_balance_billion_dollars,fiscal_balance_ratio_gdp,gross_debt_billion_dollars,gross_debt_ratio_gdp,net_capital_investment_billion_dollars,net_capital_investment_ratio_gdp,net_debt_billion_dollars,net_debt_ratio_gdp,net_operating_balance_billion_dollars,net_operating_balance_ratio_gdp,public_debt_interest_billion_dollars,public_debt_interest_ratio_gdp,revenue_billion_dollars,revenue_ratio_gdp,nominal_gdp_billion
+2025,Historical/estimate,1009.79,0.36229,-118.081,-0.04237,1445.202,0.51851,57.615,0.02067,884.444,0.31732,-60.466,-0.02169,42.141,0.01512,949.324,0.3406,2787.24226448425
+2026,Official forecast,1042.453,0.36205,-80.286,-0.02788,1585.665,0.55071,34.12,0.01185,1002.33,0.34811,-46.166,-0.01603,48.144,0.01672,996.287,0.34602,2879.30672559039
+2027,Official forecast,1059.893,0.35425,-84.362,-0.0282,1705.732,0.57012,57.741,0.0193,1102.789,0.36859,-26.621,-0.0089,54.091,0.01808,1033.272,0.34536,2991.93507410021
+2028,Official forecast,1095.833,0.34808,-81.07,-0.02575,1813.063,0.5759,55.342,0.01758,1174.074,0.37294,-25.728,-0.00817,64.45,0.02047,1070.105,0.33991,3148.22167317858
+2029,Official forecast,1146.139,0.34529,-72.709,-0.0219,1910.105,0.57544,50.524,0.01522,1257.286,0.37877,-22.185,-0.00668,68.883,0.02075,1123.955,0.33861,3319.35184917026
