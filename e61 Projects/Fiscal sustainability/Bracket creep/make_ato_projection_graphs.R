@@ -248,7 +248,7 @@ setDT(figure_4_data)
 
 mean(figure_4_data$income_gain_clawback)
 
-figure_4_data[percentile == 0.35]
+figure_4_data[percentile == 0.348]
 
 library(readxl)
 
@@ -274,6 +274,10 @@ tax_results2[percentile == 0.146,]
 figure_3_data[fy == "FY2034_35" & etr_change_pp == max(figure_3_data$etr_change_pp)]
 
 tax_results2[percentile == 0.348,]
+figure_4_data[percentile == 0.348]
+
+figure_4_data[income_gain_clawback == max(figure_4_data[percentile > 0.5]$income_gain_clawback)]
+tax_results2[percentile == 0.934,]
 
 # scenario_labels <- c(
 #   baseline = "Baseline",
