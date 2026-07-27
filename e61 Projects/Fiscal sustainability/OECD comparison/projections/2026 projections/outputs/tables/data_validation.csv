@@ -1,0 +1,6 @@
+check,passed,detail
+Historical population not doubled,TRUE,Latest population: 27.61 million
+Historical age shares sum to one,TRUE,Maximum absolute deviation: 0
+Projection age shares sum to one,TRUE,Maximum absolute deviation: 0
+No partial financial years in national accounts model data,TRUE,Latest complete merged financial year: 2025
+GFS purpose categories add to total expenses,TRUE,Difference ($m): 0

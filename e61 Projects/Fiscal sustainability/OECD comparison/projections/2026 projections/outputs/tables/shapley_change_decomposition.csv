@@ -1,0 +1,7 @@
+component,contribution,component_type,base_year,comparison_year,contribution_pp
+Demography,0.0309543706352412,Shapley factor,2000,2025,3.09543706352412
+Terms of trade,0.00355090305860087,Shapley factor,2000,2025,0.355090305860087
+Relative government prices,0.000205378941710034,Shapley factor,2000,2025,0.0205378941710034
+Unemployment,-0.00108728463509156,Shapley factor,2000,2025,-0.108728463509156
+COVID period,-0.00663020091744412,Shapley factor,2000,2025,-0.663020091744412
+Residual / unexplained change,0.0116598425633515,Residual,2000,2025,1.16598425633515

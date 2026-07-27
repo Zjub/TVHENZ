@@ -1,0 +1,7 @@
+model,model_label,approach,forecast_years,mean_difference_pp,mae_difference_pp,max_abs_difference_pp
+structural_ols,Structural OLS (levels),Top-down model-only,4,2.63664114267342,2.63664114267342,3.8481759235937
+arimax_level,ARIMAX (levels),Top-down model-only,4,3.66495118289868,3.66495118289868,4.6194859759967
+arimax_diff,ARIMAX (differences),Top-down model-only,4,4.23372587432687,4.23372587432687,5.3495505016538
+hybrid,Hybrid demographics/macro,Top-down model-only,4,3.42745426617783,3.42745426617783,4.117515783795
+univariate_arima,Univariate ARIMA,Top-down model-only,4,0.893942536910525,0.893942536910525,1.1576192822914
+bottom_up_unanchored,Bottom-up model-only,Bottom-up model-only,4,3.10120432555852,3.10120432555852,4.3758541350669

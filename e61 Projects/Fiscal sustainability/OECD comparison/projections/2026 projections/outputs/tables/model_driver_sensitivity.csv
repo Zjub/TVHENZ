@@ -1,0 +1,26 @@
+model,driver_scenario,endpoint_unanchored,endpoint_anchored,model_label,baseline_endpoint,endpoint_effect_pp
+arimax_diff,Baseline,0.419625508741188,0.36613000372465,ARIMAX (differences),0.36613000372465,0
+arimax_diff,Older population (+1 pp aged 65+),0.42607011665387,0.372574611637332,ARIMAX (differences),0.36613000372465,0.644460791268176
+arimax_diff,Unemployment +1 pp,0.427338174019565,0.373842669003027,ARIMAX (differences),0.36613000372465,0.771266527837611
+arimax_diff,Terms of trade +1 SD,0.422468488068259,0.368972983051721,ARIMAX (differences),0.36613000372465,0.284297932707045
+arimax_diff,Relative government prices +1 SD,0.42728146359435,0.373785958577812,ARIMAX (differences),0.36613000372465,0.76559548531614
+arimax_level,Baseline,0.408485998954609,0.362291139194642,ARIMAX (levels),0.362291139194642,0
+arimax_level,Older population (+1 pp aged 65+),0.41748850285215,0.371293643092184,ARIMAX (levels),0.362291139194642,0.900250389754187
+arimax_level,Unemployment +1 pp,0.416144179458798,0.369949319698832,ARIMAX (levels),0.362291139194642,0.765818050418976
+arimax_level,Terms of trade +1 SD,0.408031049603034,0.361836189843067,ARIMAX (levels),0.362291139194642,-0.0454949351574974
+arimax_level,Relative government prices +1 SD,0.412572327097729,0.366377467337762,ARIMAX (levels),0.362291139194642,0.408632814312038
+hybrid,Baseline,0.409342171178464,0.368167013340513,Hybrid demographics/macro,0.368167013340513,0
+hybrid,Older population (+1 pp aged 65+),0.422572621586271,0.381397463748321,Hybrid demographics/macro,0.368167013340513,1.32304504078075
+hybrid,Unemployment +1 pp,0.418615136099592,0.377439978261642,Hybrid demographics/macro,0.368167013340513,0.927296492112839
+hybrid,Terms of trade +1 SD,0.420732740482914,0.379557582644963,Hybrid demographics/macro,0.368167013340513,1.13905693044502
+hybrid,Relative government prices +1 SD,0.422854089688123,0.381678931850172,Hybrid demographics/macro,0.368167013340513,1.35119185096591
+structural_ols,Baseline,0.413027690536445,0.374545931300508,Structural OLS (levels),0.374545931300508,0
+structural_ols,Older population (+1 pp aged 65+),0.421566992433183,0.383085233197247,Structural OLS (levels),0.374545931300508,0.853930189673802
+structural_ols,Unemployment +1 pp,0.421329872769206,0.382848113533269,Structural OLS (levels),0.374545931300508,0.83021822327608
+structural_ols,Terms of trade +1 SD,0.409221162773355,0.370739403537419,Structural OLS (levels),0.374545931300508,-0.380652776308976
+structural_ols,Relative government prices +1 SD,0.409215128145566,0.370733368909629,Structural OLS (levels),0.374545931300508,-0.381256239087924
+univariate_arima,Baseline,0.356866192822914,0.34529,Univariate ARIMA,0.34529,0
+univariate_arima,Older population (+1 pp aged 65+),0.356866192822914,0.34529,Univariate ARIMA,0.34529,0
+univariate_arima,Unemployment +1 pp,0.356866192822914,0.34529,Univariate ARIMA,0.34529,0
+univariate_arima,Terms of trade +1 SD,0.356866192822914,0.34529,Univariate ARIMA,0.34529,0
+univariate_arima,Relative government prices +1 SD,0.356866192822914,0.34529,Univariate ARIMA,0.34529,0

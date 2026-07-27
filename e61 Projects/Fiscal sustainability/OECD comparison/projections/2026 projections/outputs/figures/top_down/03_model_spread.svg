@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='648.00pt' height='432.00pt' viewBox='0 0 648.00 432.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw2NDguMDB8MC4wMHw0MzIuMDA='>
+    <rect x='0.00' y='0.00' width='648.00' height='432.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHw0MzIuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='648.00' height='432.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjguMjR8NjQyLjUyfDM4Ljg1fDM5OS44MQ=='>
+    <rect x='28.24' y='38.85' width='614.28' height='360.96' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjguMjR8NjQyLjUyfDM4Ljg1fDM5OS44MQ==)'>
+<polyline points='28.24,383.40 642.52,383.40 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='28.24,271.24 642.52,271.24 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='28.24,159.08 642.52,159.08 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='28.24,46.91 642.52,46.91 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='112.00,399.81 112.00,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='251.61,399.81 251.61,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='391.22,399.81 391.22,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='530.83,399.81 530.83,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polygon points='56.16,383.40 70.12,383.40 84.08,383.40 98.04,383.40 112.00,346.06 125.96,306.84 139.92,270.70 153.89,291.93 167.85,315.29 181.81,328.70 195.77,345.76 209.73,347.78 223.69,348.75 237.65,341.64 251.61,334.53 265.57,326.04 279.53,315.21 293.50,304.38 307.46,293.54 321.42,282.71 335.38,271.88 349.34,261.05 363.30,250.22 377.26,239.39 391.22,228.56 405.18,217.73 419.14,206.90 433.11,196.06 447.07,185.23 461.03,174.40 474.99,163.57 488.95,152.74 502.91,141.91 516.87,131.08 530.83,120.25 544.79,109.41 558.75,98.58 572.72,87.75 586.68,76.92 600.64,66.09 614.60,55.26 614.60,383.40 600.64,383.40 586.68,383.40 572.72,383.40 558.75,383.40 544.79,383.40 530.83,383.40 516.87,383.40 502.91,383.40 488.95,383.40 474.99,383.40 461.03,383.40 447.07,383.40 433.11,383.40 419.14,383.40 405.18,383.40 391.22,383.40 377.26,383.40 363.30,383.40 349.34,383.40 335.38,383.40 321.42,383.40 307.46,383.40 293.50,383.40 279.53,383.40 265.57,383.40 251.61,383.40 237.65,383.40 223.69,383.40 209.73,383.40 195.77,383.40 181.81,383.40 167.85,383.40 153.89,383.40 139.92,383.40 125.96,383.40 112.00,383.40 98.04,383.40 84.08,383.40 70.12,383.40 56.16,383.40 ' style='stroke-width: 0.00; stroke: none; stroke-linecap: butt; fill: #56B4E9; fill-opacity: 0.70;' />
+<polyline points='56.16,383.40 70.12,383.40 84.08,383.40 98.04,383.40 112.00,346.06 125.96,306.84 139.92,270.70 153.89,291.93 167.85,315.29 181.81,328.70 195.77,345.76 209.73,347.78 223.69,348.75 237.65,341.64 251.61,334.53 265.57,326.04 279.53,315.21 293.50,304.38 307.46,293.54 321.42,282.71 335.38,271.88 349.34,261.05 363.30,250.22 377.26,239.39 391.22,228.56 405.18,217.73 419.14,206.90 433.11,196.06 447.07,185.23 461.03,174.40 474.99,163.57 488.95,152.74 502.91,141.91 516.87,131.08 530.83,120.25 544.79,109.41 558.75,98.58 572.72,87.75 586.68,76.92 600.64,66.09 614.60,55.26 ' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHw0MzIuMDA=)'>
+<text x='23.31' y='386.55' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='23.31' y='274.39' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>1</text>
+<text x='23.31' y='162.23' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>2</text>
+<text x='23.31' y='50.06' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>3</text>
+<text x='112.00' y='411.04' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2030</text>
+<text x='251.61' y='411.04' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2040</text>
+<text x='391.22' y='411.04' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2050</text>
+<text x='530.83' y='411.04' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2060</text>
+<text transform='translate(13.36,219.33) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='127.91px' lengthAdjust='spacingAndGlyphs'>Percentage points of GDP</text>
+<text x='5.48' y='31.05' style='font-size: 11.00px; font-family: "Arial";' textLength='296.25px' lengthAdjust='spacingAndGlyphs'>Range between the highest and lowest anchored model path</text>
+<text x='5.48' y='14.93' style='font-size: 13.20px; font-family: "Arial";' textLength='164.84px' lengthAdjust='spacingAndGlyphs'>Top-down model uncertainty</text>
+<text x='28.24' y='424.67' style='font-size: 8.80px;fill: #595959; font-family: "Arial";' textLength='222.38px' lengthAdjust='spacingAndGlyphs'>This is model spread, not a statistical confidence interval.</text>
+</g>
+</g>
+</svg>

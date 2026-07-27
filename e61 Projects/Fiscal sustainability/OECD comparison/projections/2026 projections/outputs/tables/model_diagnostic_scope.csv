@@ -1,0 +1,3 @@
+approach,model_fit,sensitivity,standard_errors
+Top-down estimated models,"In-sample level fit, residual autocorrelation and normality diagnostics; supplemented by rolling forecast errors",Alternative estimation windows and four controlled driver shocks,Coefficient standard errors and conditional model-only forecast intervals
+Bottom-up calibrated projection,No conventional in-sample statistical fit: categories are calibrated to GFS and scaled to the official forecast; raw forecast-period differences are reported,"Central, pressure and restraint assumption scenarios plus revenue sensitivities",Not applicable without estimated category equations; scenario spread is not a confidence interval

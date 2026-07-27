@@ -1,0 +1,2 @@
+base_year,comparison_year,observed_change_pp,full_model_fitted_change_pp,shapley_sum_pp,residual_change_pp,reconciled_change_pp,reconciliation_error_pp,coalitions_estimated,implied_orderings
+2000,2025,3.8653009646368,2.69931670830165,2.69931670830165,1.16598425633515,3.8653009646368,0,32,120

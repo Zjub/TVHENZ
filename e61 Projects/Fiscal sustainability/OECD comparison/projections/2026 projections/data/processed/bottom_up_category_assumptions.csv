@@ -1,0 +1,12 @@
+category,exposure,central_excess_cost,pressure_excess_cost,restraint_excess_cost
+General public services excl interest,total_population,0,0.0025,-0.0025
+Defence,gdp_target,,,
+Public order and safety,total_population,0.0025,0.005,0
+Economic affairs,total_population,0,0.0025,-0.0025
+Environmental Protection,total_population,0,0.0025,-0.0025
+Housing and community amenities,total_population,0,0.0025,-0.0025
+Health,health_age_weight,0.0075,0.0125,0.0025
+"Recreation, culture and religion",total_population,0,0.0025,-0.0025
+Education,education_age_weight,0.0025,0.005,0
+Social Protection,social_age_weight,0.0025,0.0075,0
+Transport,total_population,0,0.0025,-0.0025
