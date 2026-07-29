@@ -25,7 +25,7 @@ avg_earnings_base <- 100000
 initial_scale <- "27-28 Budget 2026" # Budget 2026 ongoing wage-income scale: 14% second rate plus WATO.
 future_scale <- "27-28 Budget 2026"
 pre_budget_2026_scale <- "24-25" # Treatment as at 2026, before Budget 2026-27 changes: 16% second rate and no WATO.
-max_inc <- 600000 # Change this for different graphs
+max_inc <- 200000 # Change this for different graphs
 inflator_type <- "CPI" # Use CPI if doing an inflation base, use "Income" to do the income distribution comparisons
 base_year_label <- "FY26"
 budget_year_label <- "FY28"
