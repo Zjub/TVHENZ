@@ -69,8 +69,7 @@
 <text x='325.98' y='437.92' style='font-size: 8.80px; font-family: "Arial";' textLength='109.98px' lengthAdjust='spacingAndGlyphs'>Hybrid demographics/macro</text>
 <text x='464.21' y='437.92' style='font-size: 8.80px; font-family: "Arial";' textLength='88.45px' lengthAdjust='spacingAndGlyphs'>Structural OLS (levels)</text>
 <text x='580.90' y='437.92' style='font-size: 8.80px; font-family: "Arial";' textLength='69.42px' lengthAdjust='spacingAndGlyphs'>Univariate ARIMA</text>
-<text x='5.48' y='31.05' style='font-size: 11.00px; font-family: "Arial";' textLength='395.84px' lengthAdjust='spacingAndGlyphs'>Divergence after 2028-29 is entirely due to model dynamics and projected drivers</text>
-<text x='5.48' y='14.93' style='font-size: 13.20px; font-family: "Arial";' textLength='366.03px' lengthAdjust='spacingAndGlyphs'>Top-down projections after the common official forecast anchor</text>
+<text x='5.48' y='14.93' style='font-size: 13.20px; font-family: "Arial";' textLength='246.14px' lengthAdjust='spacingAndGlyphs'>Top-down projections after PBO estimates</text>
 <text x='33.13' y='460.67' style='font-size: 8.80px;fill: #595959; font-family: "Arial";' textLength='228.31px' lengthAdjust='spacingAndGlyphs'>Source: e61 estimates using ABS history and PBO anchor.</text>
 </g>
 </g>
