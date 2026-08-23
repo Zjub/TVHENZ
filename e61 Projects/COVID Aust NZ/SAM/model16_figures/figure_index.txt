@@ -1,0 +1,14 @@
+Version-16 model figures
+========================
+fig16_01_regression_fit: model versus all 16 regression coefficients; data show 95% CIs.
+fig16_02_transition_cells: pre/post selected-sample rates; hollow circles are data and diamonds/lines are model.
+fig16_03_weekly_transitions: structural weekly job finding and separation for AB, A0 and one NZ agent.
+fig16_04_behavioural_margins: optimal search and offer acceptance in the combined specification.
+fig16_05_shapley_decomposition: order-invariant contributions to the main recipient DiD.
+fig16_06_channel_comparison: recalibrated combined, search-only and acceptance-only specifications.
+fig16_07_factorial_scenarios: all eight benefit/common/NZ-differential combinations; red dashed line is the data DiD.
+fig16_08_recipient_level_decomposition: benefit and common-shock contributions to the recipient's own pre-post level change, with model and data totals.
+fig16_09_level_vs_did_contributions: direct comparison of contributions to recipient levels and to the recipient-minus-NZ DiD.
+
+All rates and DiDs are for the selected empirical population, not the whole economy.
+The two NZ empirical panels are measurements of one structural NZ agent.

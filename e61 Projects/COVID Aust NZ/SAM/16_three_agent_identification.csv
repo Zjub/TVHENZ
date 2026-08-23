@@ -1,0 +1,10 @@
+object,treatment,source,interpretation
+AB structural agent,modelled,Australian JobSeeker recipients,homogeneous representative recipient in selected sample
+A0 structural agent,modelled,Australians not receiving JobSeeker,homogeneous untreated Australian/placebo group
+NZ structural agent,modelled once,both matched NZ panels,one homogeneous NZ type with one value function and post response
+NZ main measurement offset,measurement only,NZ panel matched to recipients,time-invariant level adjustment; no separate behaviour or shock
+NZ placebo measurement offset,measurement only,NZ panel matched to non-recipients,time-invariant level adjustment; no separate behaviour or shock
+common job-opportunity shock,estimated from selected sample,A0 and repeated NZ post changes,"public vacancy series is external validation, not a level target"
+common separation shock,estimated from selected sample,A0 and repeated NZ separation changes,public employer evidence is external validation
+NZ differential work cost,estimated/weakly disciplined,placebo Australian-NZ DiDs,"reduced-form health, family support, or risk-preference difference"
+Supplement mechanism,modelled,recipient main DiDs after common/NZ shocks,change in value of non-employment affects finding and continuation

@@ -1,0 +1,9 @@
+specification,test,null_hypothesis,statistic,p_value,reject_null_5pct
+Projection ECM as fitted,Breusch-Godfrey serial correlation (order 2),No residual serial correlation through lag 2,1.43569297587853,0.487801612309007,FALSE
+Projection ECM as fitted,Breusch-Pagan heteroskedasticity,Homoskedastic residuals,5.70993206876432,0.956075646477874,FALSE
+Projection ECM as fitted,Ramsey RESET functional form,No neglected nonlinear functional form,0.875162919608746,0.427886185414438,FALSE
+Projection ECM as fitted,Recursive CUSUM parameter stability,Stable regression parameters,0.917930472341409,0.0623137762489551,FALSE
+Canonical ARDL robustness specification,Breusch-Godfrey serial correlation (order 2),No residual serial correlation through lag 2,1.13736640217706,0.566270612495972,FALSE
+Canonical ARDL robustness specification,Breusch-Pagan heteroskedasticity,Homoskedastic residuals,5.97739565521758,0.980124942673669,FALSE
+Canonical ARDL robustness specification,Ramsey RESET functional form,No neglected nonlinear functional form,0.0808420154554464,0.778328827520211,FALSE
+Canonical ARDL robustness specification,Recursive CUSUM parameter stability,Stable regression parameters,,,

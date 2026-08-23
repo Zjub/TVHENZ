@@ -16,15 +16,14 @@
 #    This still forecasts annual changes in spending/GDP, but no longer assumes
 #    that every explanatory variable should enter in the same transformation.
 #    In particular:
-#      - age shares enter as annual changes;
+#      - the selected age shares enter as annual changes;
 #      - relative government prices enter as annual changes;
 #      - unemployment enters as current and lagged CHANGES. In a pure
 #        differenced model, putting the unemployment level directly on the RHS
 #        would imply repeated spending growth for every year unemployment stays
 #        high, producing an undesirable permanent drift;
 #      - the terms of trade enter as current and lagged annual changes;
-#      - COVID is represented by separate onset and unwind pulses rather than
-#        mechanically differencing a dummy and forcing a symmetric response.
+#      - COVID is represented by separate annual intervention indicators.
 #
 # 3. Adds `ardl_ecm`, an unrestricted error-correction model (ECM).
 #    The ECM separates:
@@ -61,29 +60,66 @@ suppressPackageStartupMessages({
 # Feature helpers
 # -----------------------------------------------------------------------------
 
-model_feature_frame <- function(dt) {
+active_age_groups <- function() {
+  if (exists("topdown_age_groups", inherits = TRUE)) {
+    get("topdown_age_groups", inherits = TRUE)
+  } else {
+    c("0_14", "15_34", "55_64", "65p")
+  }
+}
+
+
+covid_intervention_years <- function() {
+  if (exists("topdown_covid_years", inherits = TRUE)) {
+    as.integer(get("topdown_covid_years", inherits = TRUE))
+  } else {
+    2020:2022
+  }
+}
+
+
+age_level_terms <- function(suffix = "") {
+  paste0("age_", active_age_groups(), suffix)
+}
+
+
+covid_dummy_terms <- function() {
+  paste0("covid_fy", covid_intervention_years())
+}
+
+
+age_feature_frame <- function(dt) {
+  out <- lapply(active_age_groups(), function(group) as.numeric(dt[[group]]))
+  names(out) <- age_level_terms()
+  as.data.frame(out, check.names = FALSE)
+}
+
+
+covid_feature_frame <- function(dt) {
+  years <- as.numeric(dt$year)
+  out <- lapply(covid_intervention_years(), function(year) as.integer(years == year))
+  names(out) <- covid_dummy_terms()
+  as.data.frame(out, check.names = FALSE)
+}
+
+model_feature_frame <- function(dt, include_covid = TRUE) {
   # Full set of contemporaneous regressors used by the simple level models.
-  data.frame(
-    age_0_14 = as.numeric(dt[["0_14"]]),
-    age_15_34 = as.numeric(dt[["15_34"]]),
-    age_55_64 = as.numeric(dt[["55_64"]]),
-    age_65p = as.numeric(dt[["65p"]]),
+  out <- cbind(
+    age_feature_frame(dt),
+    data.frame(
     tot_z = as.numeric(dt$tot_z),
     rp_z = as.numeric(dt$rp_z),
-    unemployment = as.numeric(dt$unemployment),
-    covid = as.numeric(dt$covid)
+      unemployment = as.numeric(dt$unemployment)
+    )
   )
+  if (include_covid) out <- cbind(out, covid_feature_frame(dt))
+  out
 }
 
 
 demo_feature_frame <- function(dt) {
   # Retained as a convenience helper for diagnostics / alternative variants.
-  data.frame(
-    age_0_14 = as.numeric(dt[["0_14"]]),
-    age_15_34 = as.numeric(dt[["15_34"]]),
-    age_55_64 = as.numeric(dt[["55_64"]]),
-    age_65p = as.numeric(dt[["65p"]])
-  )
+  age_feature_frame(dt)
 }
 
 
@@ -94,12 +130,10 @@ structural_feature_frame <- function(dt) {
   # Relative government prices (`rp_z`) are included here, rather than in the
   # short-run macro block, because persistent changes in the cost of producing
   # government services can create a long-run pressure on nominal spending/GDP.
-  data.frame(
-    age_0_14 = as.numeric(dt[["0_14"]]),
-    age_15_34 = as.numeric(dt[["15_34"]]),
-    age_55_64 = as.numeric(dt[["55_64"]]),
-    age_65p = as.numeric(dt[["65p"]]),
-    rp_z = as.numeric(dt$rp_z)
+  cbind(
+    age_feature_frame(dt),
+    data.frame(rp_z = as.numeric(dt$rp_z)),
+    covid_feature_frame(dt)
   )
 }
 
@@ -189,12 +223,11 @@ build_topdown_table <- function(dt, include_y = TRUE) {
   out[, d_unemployment := unemployment - shift(unemployment)]
   out[, d_unemployment_l1 := shift(d_unemployment)]
 
-  # COVID interventions are split into positive and negative pulses.
-  # If covid goes 0 -> 1, onset = 1. If it goes 1 -> 0, unwind = 1.
-  # This avoids forcing the unwind coefficient to equal minus the onset effect.
-  out[, covid_change := covid - shift(covid)]
-  out[, covid_onset := pmax(covid_change, 0)]
-  out[, covid_unwind := pmax(-covid_change, 0)]
+  # Separate annual interventions absorb the spending changes recorded in each
+  # COVID-affected financial year without imposing a ramp or symmetric unwind.
+  for (covid_year in covid_intervention_years()) {
+    out[, (paste0("covid_fy", covid_year)) := as.integer(get("year") == covid_year)]
+  }
 
   if (include_y) {
     if (!"broad_expenditure_gdp" %in% names(dt)) {
@@ -264,9 +297,7 @@ extract_ecm_long_run <- function(ecm_fit) {
   }
 
   level_terms <- intersect(
-    c("(Intercept)",
-      "age_0_14_l1", "age_15_34_l1", "age_55_64_l1", "age_65p_l1",
-      "rp_z_l1", "unemployment_l1"),
+    c("(Intercept)", age_level_terms("_l1"), "rp_z_l1", "unemployment_l1"),
     names(b)
   )
 
@@ -389,10 +420,18 @@ fit_predict_topdown <- function(train, future) {
   # That is NOT our preferred economic specification; `dynamic_diff` below is
   # designed to show whether variable-specific transformations improve on it.
 
-  combined_x <- rbind(x[nrow(x), , drop = FALSE], x_future)
+  x_diff_base <- model_feature_frame(train, include_covid = FALSE)
+  x_diff_future_base <- model_feature_frame(future, include_covid = FALSE)
+  combined_x <- rbind(x_diff_base[nrow(x_diff_base), , drop = FALSE], x_diff_future_base)
   dx_future <- as.data.frame(apply(combined_x, 2, diff))
-  dx_train <- as.data.frame(apply(x, 2, diff))
+  dx_train <- as.data.frame(apply(x_diff_base, 2, diff))
+  dx_train <- cbind(dx_train, covid_feature_frame(train[-1L]))
+  dx_future <- cbind(dx_future, covid_feature_frame(future))
   dy <- diff(y)
+
+  keep_dx <- varying_columns(dx_train)
+  dx_train <- dx_train[, keep_dx, drop = FALSE]
+  dx_future <- dx_future[, names(dx_train), drop = FALSE]
 
   diff_fit <- safe_auto_arima(
     dy,
@@ -409,7 +448,7 @@ fit_predict_topdown <- function(train, future) {
 
   metadata$arimax_diff <- data.table(
     model = "arimax_diff",
-    specification = "Benchmark: annual change in spending/GDP with all xreg differenced; no drift",
+    specification = "Benchmark: annual change in spending/GDP with differenced drivers and FY2020-22 interventions; no drift",
     arima_order = paste(arimaorder(diff_fit)[1:3], collapse = ","),
     aic = AIC(diff_fit),
     aicc = diff_fit$aicc,
@@ -425,11 +464,11 @@ fit_predict_topdown <- function(train, future) {
   # 4. NEW: dynamic differenced model with variable-specific transformations
   # ---------------------------------------------------------------------------
   # Economic interpretation:
-  #   - demographics: changes matter for annual spending growth;
+  #   - selected demographics: changes matter for annual spending growth;
   #   - relative government prices: current change affects annual spending;
   #   - unemployment: current and lagged CHANGES matter;
   #   - terms of trade: current and lagged CHANGES matter;
-  #   - COVID: separate onset and unwind pulses;
+  #   - COVID: separate FY2020, FY2021 and FY2022 interventions;
   #   - remaining serial correlation is handled by stationary ARMA errors.
   #
   # We deliberately do not add lagged dy as an xreg here because ARMA errors
@@ -437,11 +476,11 @@ fit_predict_topdown <- function(train, future) {
   # in the ECM below, where recursive forecasting is economically important.
 
   dynamic_terms <- c(
-    "d_age_0_14", "d_age_15_34", "d_age_55_64", "d_age_65p",
+    paste0("d_", age_level_terms()),
     "d_rp_z",
     "d_unemployment", "d_unemployment_l1",
     "d_tot_z", "d_tot_z_l1",
-    "covid_onset", "covid_unwind"
+    covid_dummy_terms()
   )
 
   dyn_sample <- complete.cases(train_dyn[, c("dy", dynamic_terms), with = FALSE])
@@ -468,8 +507,8 @@ fit_predict_topdown <- function(train, future) {
   metadata$dynamic_diff <- data.table(
     model = "dynamic_diff",
     specification = paste(
-      "Change in spending/GDP with d(age shares), d(relative prices),",
-      "d(unemployment) + lag, d(TOT) + lag, COVID onset/unwind; ARMA errors"
+      "Change in spending/GDP with selected d(age shares), d(relative prices),",
+      "d(unemployment) + lag, d(TOT) + lag, FY2020-22 interventions; ARMA errors"
     ),
     arima_order = paste(arimaorder(dynamic_fit)[1:3], collapse = ","),
     aic = AIC(dynamic_fit),
@@ -484,8 +523,12 @@ fit_predict_topdown <- function(train, future) {
   # Long-run / structural component:
   #     age composition + relative government prices in levels.
   #
+  # The structural level equation also contains the FY2020-22 interventions.
+  # Their fitted first differences absorb the corresponding pandemic movements.
+  #
   # Short-run macro component:
-  #     unemployment changes, terms-of-trade changes and COVID interventions.
+  #     unemployment changes and terms-of-trade changes. COVID terms are not
+  #     repeated here because they already enter through the structural block.
   #
   # The hybrid still works in annual changes when combining the two components:
   # observed dy minus structural predicted dy is the macro residual change.
@@ -512,8 +555,7 @@ fit_predict_topdown <- function(train, future) {
 
   hybrid_macro_terms <- c(
     "d_unemployment", "d_unemployment_l1",
-    "d_tot_z", "d_tot_z_l1",
-    "covid_onset", "covid_unwind"
+    "d_tot_z", "d_tot_z_l1"
   )
 
   hybrid_sample <- complete.cases(
@@ -551,9 +593,8 @@ fit_predict_topdown <- function(train, future) {
   metadata$hybrid <- data.table(
     model = "hybrid",
     specification = paste(
-      "Structural level OLS using age shares + relative prices;",
-      "macro residual change uses d(unemployment) + lag, d(TOT) + lag,",
-      "COVID onset/unwind; ARMA errors"
+      "Structural level OLS using selected age shares + relative prices + FY2020-22 interventions;",
+      "macro residual change uses d(unemployment) + lag and d(TOT) + lag; ARMA errors"
     ),
     arima_order = paste(arimaorder(hybrid_macro_fit)[1:3], collapse = ","),
     aic = AIC(hybrid_macro_fit),
@@ -578,7 +619,7 @@ fit_predict_topdown <- function(train, future) {
   #
   # Dynamic / conditioning block:
   #   d(relative prices), lagged unemployment level + d(unemployment),
-  #   d(TOT) current + lag, lagged spending growth, and COVID onset/unwind.
+  #   d(TOT) current + lag, lagged spending growth, and annual COVID interventions.
   #
   # Unemployment is treated slightly differently from the structural variables:
   # it is plausibly stationary, so `unemployment_l1` is best thought of as a
@@ -592,13 +633,13 @@ fit_predict_topdown <- function(train, future) {
 
   ecm_terms <- c(
     "y_lag",
-    "age_0_14_l1", "age_15_34_l1", "age_55_64_l1", "age_65p_l1",
+    age_level_terms("_l1"),
     "rp_z_l1",
     "d_rp_z",
     "unemployment_l1", "d_unemployment",
     "d_tot_z", "d_tot_z_l1",
     "dy_lag",
-    "covid_onset", "covid_unwind"
+    covid_dummy_terms()
   )
 
   ecm_sample <- complete.cases(train_dyn[, c("dy", ecm_terms), with = FALSE])
@@ -634,22 +675,28 @@ fit_predict_topdown <- function(train, future) {
   )
 
   # ---------------------------------------------------------------------------
-  # 7. Univariate ARIMA benchmark
+  # 7. ARIMA benchmark with COVID interventions
   # ---------------------------------------------------------------------------
 
+  uni_x <- covid_feature_frame(train)
+  uni_future_x <- covid_feature_frame(future)
+  keep_uni <- varying_columns(uni_x)
+  uni_x <- uni_x[, keep_uni, drop = FALSE]
+  uni_future_x <- uni_future_x[, names(uni_x), drop = FALSE]
+
   uni_fit <- safe_auto_arima(
-    y,
+    y, as_xreg_matrix(uni_x),
     stationary = FALSE,
     include_mean = TRUE
   )
 
   results$univariate_arima <- as.numeric(
-    forecast(uni_fit, h = h)$mean
+    forecast(uni_fit, xreg = as_xreg_matrix(uni_future_x), h = h)$mean
   )
 
   metadata$univariate_arima <- data.table(
     model = "univariate_arima",
-    specification = "Automatic univariate ARIMA benchmark",
+    specification = "Automatic ARIMA benchmark with FY2020-22 interventions",
     arima_order = paste(arimaorder(uni_fit)[1:3], collapse = ","),
     aic = AIC(uni_fit),
     aicc = uni_fit$aicc,

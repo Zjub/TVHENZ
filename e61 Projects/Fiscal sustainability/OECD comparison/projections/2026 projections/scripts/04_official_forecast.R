@@ -1,8 +1,10 @@
 source(file.path("scripts", "00_config.R"))
 
-pbo_path <- file.path(raw_dir, "pbo_national_fiscal_outlook_2025_26.xlsx")
-pbo_ratio <- as.data.frame(readxl::read_excel(pbo_path, sheet = "B2", col_names = FALSE))
-pbo_dollar <- as.data.frame(readxl::read_excel(pbo_path, sheet = "B1", col_names = FALSE))
+pbo_path <- file.path(raw_dir, "pbo_national_fiscal_outlook_2026_27.xlsx")
+# The 2026-27 data pack replaces the old B1/B2 layout with Table 1 for
+# dollar values and Table 2 for percentages of GDP/GSP.
+pbo_ratio <- as.data.frame(readxl::read_excel(pbo_path, sheet = "Table 2", col_names = FALSE))
+pbo_dollar <- as.data.frame(readxl::read_excel(pbo_path, sheet = "Table 1", col_names = FALSE))
 
 metric_map <- data.table(
   metric = c("net_operating_balance", "fiscal_balance", "net_capital_investment", "revenue", "expenses", "net_debt", "gross_debt", "public_debt_interest"),
@@ -31,7 +33,7 @@ dollars <- rbindlist(lapply(seq_len(nrow(metric_map)), function(i) {
 }))
 
 pbo_long <- rbind(ratios, dollars, use.names = TRUE)
-pbo_long[, status := ifelse(year <= 2025, "Historical/estimate", "Official forecast")]
+pbo_long[, status := ifelse(year <= 2025, "Historical/actual", "Official forecast")]
 pbo_wide <- dcast(pbo_long, year + status ~ metric + unit, value.var = "value")
 
 if (all(c("expenses_billion_dollars", "expenses_ratio_gdp") %in% names(pbo_wide))) {

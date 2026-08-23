@@ -4,7 +4,7 @@ check_packages(c("curl", "readabs", "data.table", "jsonlite"))
 files <- c(
   gfs_annual = file.path(raw_dir, "abs_gfs_annual_2024_25.xlsx"),
   population_projection = file.path(raw_dir, "population_statement_2025_age_sex.xlsx"),
-  pbo_nfo = file.path(raw_dir, "pbo_national_fiscal_outlook_2025_26.xlsx"),
+  pbo_nfo = file.path(raw_dir, "pbo_national_fiscal_outlook_2026_27.xlsx"),
   budget_nominal_gdp = file.path(raw_dir, "budget_2026_27_nominal_gdp.xlsx"),
   budget_receipts_cash = file.path(raw_dir, "budget_2026_27_cash_receipts.csv"),
   budget_receipts_gdp = file.path(raw_dir, "budget_2026_27_receipts_gdp.csv"),

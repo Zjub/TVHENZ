@@ -1,5 +1,5 @@
 source(file.path("scripts", "00_config.R"))
-source(file.path("R", "model_functions.R"))
+source(file.path("R", "model_functions_2.R"))
 
 historical <- fread(file.path(processed_dir, "historical_top_down_model_data.csv"))
 future <- fread(file.path(processed_dir, "macro_scenario_assumptions.csv"))[scenario == "central"]
@@ -45,11 +45,30 @@ level_fitted <- as.numeric(fitted(fits$arimax_level))
 diff_change_fitted <- as.numeric(fitted(fits$arimax_diff))
 diff_level_fitted <- y[-length(y)] + diff_change_fitted
 
-demo_fitted <- as.numeric(fitted(fits$demographic_ols))
-demo_change <- diff(demo_fitted)
+train_dyn <- build_topdown_table(historical, include_y = TRUE)
+
+dynamic_terms <- colnames(fits$dynamic_diff$xreg)
+dynamic_rows <- complete.cases(train_dyn[, c("dy", dynamic_terms), with = FALSE])
+dynamic_change_fitted <- as.numeric(fitted(fits$dynamic_diff))
+dynamic_level_fitted <- train_dyn$y_lag[dynamic_rows] + dynamic_change_fitted
+
+hybrid_structural_history <- structural_feature_frame(historical)
+hybrid_structural_fitted <- as.numeric(predict(
+  fits$hybrid_structural_ols,
+  newdata = hybrid_structural_history
+))
+hybrid_structural_change <- c(NA_real_, diff(hybrid_structural_fitted))
+hybrid_macro_terms <- colnames(fits$hybrid_macro$xreg)
+hybrid_rows <- complete.cases(train_dyn[, c("dy", hybrid_macro_terms), with = FALSE])
 hybrid_macro_fitted <- as.numeric(fitted(fits$hybrid_macro))
-hybrid_change_fitted <- demo_change + hybrid_macro_fitted
-hybrid_level_fitted <- y[-length(y)] + hybrid_change_fitted
+hybrid_change_fitted <- hybrid_structural_change[hybrid_rows] + hybrid_macro_fitted
+hybrid_level_fitted <- train_dyn$y_lag[hybrid_rows] + hybrid_change_fitted
+
+ecm_terms <- setdiff(all.vars(formula(fits$ardl_ecm)), "dy")
+ecm_rows <- complete.cases(train_dyn[, c("dy", ecm_terms), with = FALSE])
+ecm_change_fitted <- as.numeric(fitted(fits$ardl_ecm))
+ecm_level_fitted <- train_dyn$y_lag[ecm_rows] + ecm_change_fitted
+
 univariate_fitted <- as.numeric(fitted(fits$univariate_arima))
 arma_fitdf <- function(fit) {
   order <- arimaorder(fit)
@@ -62,8 +81,15 @@ fit_diagnostics <- rbindlist(list(
              box_fitdf = arma_fitdf(fits$arimax_level)),
   metric_row("arimax_diff", y[-1L], diff_level_fitted, dy - diff_change_fitted, years[2L],
              box_fitdf = arma_fitdf(fits$arimax_diff)),
-  metric_row("hybrid", y[-1L], hybrid_level_fitted, dy - hybrid_change_fitted, years[2L],
+  metric_row("dynamic_diff", train_dyn$y[dynamic_rows], dynamic_level_fitted,
+             train_dyn$dy[dynamic_rows] - dynamic_change_fitted,
+             min(train_dyn$year[dynamic_rows]), box_fitdf = arma_fitdf(fits$dynamic_diff)),
+  metric_row("hybrid", train_dyn$y[hybrid_rows], hybrid_level_fitted,
+             train_dyn$dy[hybrid_rows] - hybrid_change_fitted,
+             min(train_dyn$year[hybrid_rows]),
              box_fitdf = arma_fitdf(fits$hybrid_macro)),
+  metric_row("ardl_ecm", train_dyn$y[ecm_rows], ecm_level_fitted,
+             residuals(fits$ardl_ecm), min(train_dyn$year[ecm_rows])),
   metric_row("univariate_arima", y, univariate_fitted, residuals(fits$univariate_arima), min(years),
              box_fitdf = arma_fitdf(fits$univariate_arima))
 ))
@@ -106,9 +132,11 @@ coefficient_uncertainty <- rbindlist(list(
   lm_coefficient_table(fits$structural_ols, "structural_ols", "Structural equation"),
   arima_coefficient_table(fits$arimax_level, "arimax_level", "Level ARIMAX"),
   arima_coefficient_table(fits$arimax_diff, "arimax_diff", "Difference ARIMAX"),
-  lm_coefficient_table(fits$demographic_ols, "hybrid", "Demographic level equation"),
+  arima_coefficient_table(fits$dynamic_diff, "dynamic_diff", "Dynamic difference ARIMAX"),
+  lm_coefficient_table(fits$hybrid_structural_ols, "hybrid", "Structural level equation"),
   arima_coefficient_table(fits$hybrid_macro, "hybrid", "Macro difference ARIMAX"),
-  arima_coefficient_table(fits$univariate_arima, "univariate_arima", "Univariate ARIMA")
+  lm_coefficient_table(fits$ardl_ecm, "ardl_ecm", "Error-correction equation"),
+  arima_coefficient_table(fits$univariate_arima, "univariate_arima", "ARIMA with COVID controls")
 ), fill = TRUE)
 
 # Conditional forecast intervals hold the supplied driver path fixed. ARIMA
@@ -148,38 +176,85 @@ level_sim <- replicate(n_sim, as.numeric(simulate(
 )))
 
 diff_columns <- colnames(fits$arimax_diff$xreg)
-diff_combined <- rbind(x_history_all[nrow(x_history_all), , drop = FALSE], x_future_all)
-diff_x <- as.data.frame(apply(diff_combined, 2L, diff))[, diff_columns, drop = FALSE]
+diff_history_base <- model_feature_frame(historical, include_covid = FALSE)
+diff_future_base <- model_feature_frame(future, include_covid = FALSE)
+diff_combined <- rbind(diff_history_base[nrow(diff_history_base), , drop = FALSE], diff_future_base)
+diff_x <- cbind(
+  as.data.frame(apply(diff_combined, 2L, diff)),
+  covid_feature_frame(future)
+)[, diff_columns, drop = FALSE]
 diff_sim_change <- replicate(n_sim, as.numeric(simulate(
   fits$arimax_diff, nsim = h, xreg = as.matrix(diff_x), future = TRUE
 )))
 diff_sim <- apply(diff_sim_change, 2L, cumsum) + tail(y, 1L)
 
-demo_future <- demo_feature_frame(future)
-demo_projected <- as.numeric(predict(fits$demographic_ols, newdata = demo_future))
-demo_future_change <- diff(c(tail(demo_fitted, 1L), demo_projected))
-macro_history <- macro_feature_frame(historical)
-macro_future <- macro_feature_frame(future)
-macro_diff <- as.data.frame(apply(rbind(macro_history[nrow(macro_history), , drop = FALSE], macro_future), 2L, diff))
-macro_diff <- macro_diff[, colnames(fits$hybrid_macro$xreg), drop = FALSE]
-hybrid_macro_sim <- replicate(n_sim, as.numeric(simulate(
-  fits$hybrid_macro, nsim = h, xreg = as.matrix(macro_diff), future = TRUE
-)))
-hybrid_sim <- apply(hybrid_macro_sim + demo_future_change, 2L, cumsum) + tail(y, 1L)
+future_dyn <- build_future_feature_table(historical, future)
 
+dynamic_x <- as.data.frame(future_dyn[, colnames(fits$dynamic_diff$xreg), with = FALSE])
+dynamic_sim_change <- replicate(n_sim, as.numeric(simulate(
+  fits$dynamic_diff, nsim = h, xreg = as.matrix(dynamic_x), future = TRUE
+)))
+dynamic_sim <- apply(dynamic_sim_change, 2L, cumsum) + tail(y, 1L)
+
+hybrid_structural_future <- structural_feature_frame(future)
+hybrid_structural_projected <- as.numeric(predict(
+  fits$hybrid_structural_ols,
+  newdata = hybrid_structural_future
+))
+hybrid_structural_future_change <- diff(c(
+  tail(hybrid_structural_fitted, 1L),
+  hybrid_structural_projected
+))
+hybrid_macro_x <- as.data.frame(future_dyn[, colnames(fits$hybrid_macro$xreg), with = FALSE])
+hybrid_macro_sim <- replicate(n_sim, as.numeric(simulate(
+  fits$hybrid_macro, nsim = h, xreg = as.matrix(hybrid_macro_x), future = TRUE
+)))
+hybrid_sim <- apply(
+  hybrid_macro_sim + hybrid_structural_future_change,
+  2L,
+  cumsum
+) + tail(y, 1L)
+
+simulate_ecm_path <- function() {
+  path <- numeric(h)
+  y_previous <- tail(train_dyn$y, 1L)
+  dy_previous <- tail(na.omit(train_dyn$dy), 1L)
+  innovations <- rnorm(h, mean = 0, sd = summary(fits$ardl_ecm)$sigma)
+
+  for (i in seq_len(h)) {
+    row <- as.data.frame(future_dyn[i])
+    row$y_lag <- y_previous
+    row$dy_lag <- dy_previous
+    dy_forecast <- as.numeric(predict(fits$ardl_ecm, newdata = row)) + innovations[i]
+    path[i] <- y_previous + dy_forecast
+    y_previous <- path[i]
+    dy_previous <- dy_forecast
+  }
+
+  path
+}
+ecm_sim <- replicate(n_sim, simulate_ecm_path())
+
+univariate_x <- covid_feature_frame(future)
+univariate_x <- univariate_x[, colnames(fits$univariate_arima$xreg), drop = FALSE]
 univariate_sim <- replicate(n_sim, as.numeric(simulate(
-  fits$univariate_arima, nsim = h, future = TRUE
+  fits$univariate_arima, nsim = h, xreg = as.matrix(univariate_x), future = TRUE
 )))
 
 forecast_uncertainty <- rbindlist(list(
   ols_interval,
   summarise_simulations(level_sim, "arimax_level"),
   summarise_simulations(diff_sim, "arimax_diff"),
+  summarise_simulations(dynamic_sim, "dynamic_diff"),
   summarise_simulations(hybrid_sim, "hybrid"),
+  summarise_simulations(ecm_sim, "ardl_ecm"),
   summarise_simulations(univariate_sim, "univariate_arima")
 ), fill = TRUE)
 
-anchor_value <- official[year == official_forecast_end, expenses_ratio_gdp]
+anchor_value <- official[
+  year == official_forecast_end,
+  expenses_ratio_gdp + net_capital_investment_ratio_gdp
+]
 
 fit_window_sensitivity <- function(label, train, future_data) {
   result <- fit_predict_topdown(train, future_data)$paths
@@ -282,15 +357,19 @@ model_selection_assessment[, `:=`(
     model == "structural_ols", "Transparent structural interpretation and Shapley attribution",
     model == "arimax_level", "Short-to-medium-run statistical and residual-dynamics cross-check",
     model == "arimax_diff", "Difference-based sensitivity check where permanent level relationships are doubtful",
-    model == "hybrid", "Preferred structurally informed top-down long-run cross-check",
-    model == "univariate_arima", "Near-term benchmark only"
+    model == "dynamic_diff", "Variable-specific difference-model cross-check",
+    model == "hybrid", "Structural/macro top-down long-run cross-check",
+    model == "ardl_ecm", "Experimental long-run adjustment sensitivity",
+    model == "univariate_arima", "Near-term COVID-adjusted benchmark only"
   ),
   selection_comment = fcase(
     model == "structural_ols", "Interpretable but residual autocorrelation and high estimation-window sensitivity weaken it as a standalone forecast.",
-    model == "arimax_level", "Best in-sample fit and well-behaved residual autocorrelation, but weaker rolling forecasts and material endpoint sensitivity caution against long-run primacy.",
+    model == "arimax_level", "Strong in-sample dynamic fit and well-behaved residual autocorrelation, but weaker rolling forecasts and material endpoint sensitivity caution against long-run primacy.",
     model == "arimax_diff", "Reasonable fit and residual behaviour, but accumulated changes create widening long-horizon uncertainty and high sample sensitivity.",
-    model == "hybrid", "Second-best five-year structural rolling performance and the smallest structural-model window sensitivity; retains explicit drivers, but its accumulated-error interval is wide.",
-    model == "univariate_arima", "Best short-horizon and official-period accuracy, but its flat path cannot respond to ageing, prices, unemployment or policy and is unsuitable as the central long-run projection."
+    model == "dynamic_diff", "Uses economically tailored transformations and intervention pulses; accumulated changes can still widen long-horizon uncertainty.",
+    model == "hybrid", "Separates slow-moving structural pressures from shorter-run macro impulses; accumulated-error uncertainty remains relevant.",
+    model == "ardl_ecm", "Separates long-run levels from short-run dynamics, but requires supporting integration, bounds, residual and stability tests before it can be treated as a valid long-run model.",
+    model == "univariate_arima", "Best short-horizon benchmark, but its flat path cannot respond to ageing, prices, unemployment or policy and is unsuitable as the central long-run projection."
   )
 )]
 
@@ -303,14 +382,14 @@ approach_recommendation <- data.table(
   recommended_approach = c(
     "Published PBO consolidated forecast",
     "Bottom-up purpose model with endogenous interest and explicit revenue scenarios",
-    "Hybrid demographic/macro model, reviewed against the structural-model ensemble",
-    "Univariate ARIMA",
+    "Dynamic-difference model, reviewed against the full structural-model ensemble",
+    "ARIMA with COVID controls",
     "Bottom-up scenarios plus the spread and sensitivities across all top-down specifications"
   ),
   rationale = c(
     "Contains current policy, budget measures, near-term macro judgement and consolidated fiscal information absent from parsimonious equations.",
     "Maps ageing, service demand, excess costs, defence, revenue and interest feedback into auditable category paths; its assumptions can be replaced directly as policy information improves.",
-    "Balances explicit long-run drivers with better five-year rolling performance and lower estimation-window sensitivity than the other structural models; it should not be used alone because its long-run interval is wide.",
+    "The dynamic-difference model has the strongest five-year rolling result among the driver-based models and the lowest tested endpoint-window sensitivity. The ECM remains an experimental sensitivity because a valid long-run level relationship must be established separately.",
     "Provides the strongest short-horizon statistical benchmark, but no structural response to demographic, economic or policy changes.",
     "No single model captures parameter, specification, policy and macro uncertainty; scenario and model spread are complementary diagnostics rather than probability intervals."
   )

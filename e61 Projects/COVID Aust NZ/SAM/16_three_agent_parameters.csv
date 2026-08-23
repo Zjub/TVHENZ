@@ -1,0 +1,17 @@
+parameter,value,status,evidence
+beta_weekly,0.9992152697058329,fixed,0.96 annual factor converted to weekly
+mu_pre,0.05245031616762816,estimated,selected-sample pre job-finding moments
+kappa,0.5520517206829253,estimated,selected-sample job-finding levels
+mu_post,0.04776790135858223,estimated,untreated Australian and repeated NZ post changes
+common_sep_shock,0.006673989454827066,estimated,untreated Australian and repeated NZ separations
+nz_work_cost_diff,-0.04226992905306097,estimated,non-recipient Australian-NZ placebo DiDs
+sep_base,0.04795869453087623,estimated,pre-period separation levels
+sep_amp,0.3766539502777931,estimated,recipient separation response conditional on common shock
+benefit_pre,0.15400000000000003,institutional,base replacement-rate normalisation
+benefit_post,0.30800000000000005,institutional,Coronavirus Supplement multiplier
+search_curvature,7.0,fixed/sensitivity,toy-model functional form
+offer_threshold,0.15,fixed/sensitivity,toy-model functional form
+offer_dispersion,0.35,fixed/sensitivity,toy-model functional form
+separation_threshold,0.1,fixed/sensitivity,version-15 preferred restricted specification
+separation_dispersion,0.04,fixed/sensitivity,version-15 preferred restricted specification
+weighted_loss,1.155596082069298,diagnostic,sum of squared standardised moment residuals

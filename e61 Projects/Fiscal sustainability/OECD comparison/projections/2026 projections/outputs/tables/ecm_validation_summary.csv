@@ -1,0 +1,11 @@
+criterion,result,assessment,implication
+No I(2) variables,1 I(2) warning(s); 1 additional inconclusive first-difference assessment(s),Concern,Bounds inference is invalid for I(2) variables; mixed unit-root results also signal low power and smooth demographic trends.
+Projection ECM bounds F-test,"F = 0.983; 5% bounds [3.193, 4.485]",No level relationship supported,The fitted lagged-level block does not establish the level relationship required for an ECM.
+Projection ECM bounds t-test,"t = -1.706; 5% bounds [-2.884, -4.066]",No level relationship supported,The adjustment term alone does not establish a level relationship under the appropriate non-standard distribution.
+Canonical ARDL bounds robustness,No level relationship supported; Inconclusive between I(0) and I(1) bounds,Inconclusive,Adding the omitted short-run age changes improves specification diagnostics but does not give decisive bounds evidence.
+Residual serial correlation,Breusch-Godfrey p = 0.4878,Pass,Unmodelled residual dynamics weaken coefficient and bounds inference.
+Functional form,RESET p = 0.4279,Pass,RESET rejection indicates the fitted conditional mean is incomplete or incorrectly parameterised.
+Parameter stability,Recursive CUSUM p = 0.0623,Pass,"CUSUM does not detect broad parameter instability, although power is limited in this short, highly parameterised sample."
+Dynamic stability,Maximum root modulus = 0.680,Pass,Conditional forecasts converge rather than explode when future drivers are held fixed.
+Long-run regressor collinearity,Maximum VIF = 19.7; condition number = 10.6,Concern,Highly correlated age shares make individual long-run coefficients unstable and difficult to interpret.
+Overall ECM suitability,Current ECM is not supported as the preferred projection model,Do not select as primary model,Retain the ECM only as an experimental sensitivity; use rolling performance and structural suitability to select the projection framework.

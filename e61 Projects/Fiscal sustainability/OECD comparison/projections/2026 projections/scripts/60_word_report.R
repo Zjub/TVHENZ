@@ -15,6 +15,7 @@ bottom_debt <- fread(file.path(table_dir, "debt_paths_bottom_up.csv"))
 top <- fread(file.path(table_dir, "top_down_projection_paths.csv"))
 top_debt <- fread(file.path(table_dir, "debt_paths_top_down.csv"))
 top_summary <- fread(file.path(table_dir, "top_down_model_summary.csv"))
+ecm_long_run <- fread(file.path(table_dir, "top_down_ecm_long_run.csv"))
 shapley <- fread(file.path(table_dir, "shapley_change_decomposition.csv"))
 shapley_check <- fread(file.path(table_dir, "shapley_reconciliation.csv"))
 rolling <- fread(file.path(table_dir, "forecast_check_rolling_summary.csv"))
@@ -27,6 +28,9 @@ driver_sensitivity <- fread(file.path(table_dir, "model_driver_sensitivity.csv")
 diagnostic_scope <- fread(file.path(table_dir, "model_diagnostic_scope.csv"))
 model_selection <- fread(file.path(table_dir, "model_selection_assessment.csv"))
 approach_recommendation <- fread(file.path(table_dir, "approach_recommendation.csv"))
+ecm_validation <- fread(file.path(table_dir, "ecm_validation_summary.csv"))
+ecm_bounds <- fread(file.path(table_dir, "ecm_bounds_tests.csv"))
+ecm_integration <- fread(file.path(table_dir, "ecm_integration_assessment.csv"))
 
 pct <- function(x, digits = 1) sprintf(paste0("%.", digits, "f%%"), 100 * x)
 pp <- function(x, digits = 2) sprintf(paste0("%.", digits, "f"), x)
@@ -75,7 +79,7 @@ script_table <- data.table(
     "01_download_data.R", "02_clean_data.R", "03_assumptions.R",
     "04_official_forecast.R", "10_bottom_up_projection.R",
     "20_top_down_projection.R", "21_shapley_attribution.R", "30_forecast_checks.R",
-    "31_model_diagnostics.R",
+    "31_model_diagnostics.R", "32_ecm_validation.R",
     "40_revenue_and_debt.R", "50_graphs.R", "60_word_report.R"
   ),
   Purpose = c(
@@ -84,10 +88,11 @@ script_table <- data.table(
     "Define macro, demographic, spending, revenue and financing scenarios.",
     "Extract the PBO consolidated forecast anchor.",
     "Project GFS purpose categories and aggregate primary expenses.",
-    "Estimate five aggregate time-series alternatives and anchor their changes.",
+    "Estimate seven aggregate time-series alternatives and anchor their changes.",
     "Average structural-factor contributions over every ordering for historical attribution.",
     "Run rolling historical tests and model-only checks over the official forecast.",
     "Test fit and residuals; calculate coefficient standard errors, conditional intervals and sensitivities.",
+    "Test ECM integration order, the finite-sample bounds relationship, residual specification, stability and collinearity.",
     "Apply revenue assumptions and the debt accumulation identities.",
     "Generate PNG and SVG figures grouped by analytical task.",
     "Assemble this methodology and results document."
@@ -151,20 +156,25 @@ official_key <- official_check[, .(
 model_explanation <- data.table(
   Model = c(
     "Structural OLS (levels)", "ARIMAX (levels)", "ARIMAX (differences)",
-    "Hybrid demographics/macro", "Univariate ARIMA"
+    "Dynamic differences", "Hybrid structural/macro",
+    "ARDL error-correction model", "ARIMA with COVID controls"
   ),
   Mechanism = c(
-    "Spending/GDP is a level function of age shares, terms of trade, relative government prices, unemployment and a COVID indicator.",
+    "Spending/GDP is a level function of the 0-14 and 65+ population shares, terms of trade, relative government prices and unemployment, with separate FY2020-22 indicators.",
     "The same level relationship is combined with autocorrelated errors selected by AICc.",
     "Annual changes in spending/GDP respond to annual changes in the drivers; projected changes are accumulated from the last observation.",
-    "Demographics determine a slowly moving level component; macro variables explain changes around it.",
-    "Spending/GDP is forecast only from its own history and is used as a deliberately simple benchmark."
+    "Annual changes use variable-specific dynamics and lags, with separate FY2020-22 annual-change indicators.",
+    "The selected age shares, relative government prices and FY2020-22 indicators determine a structural level component; macro changes explain movements around it.",
+    "Annual spending growth responds to disequilibrium in lagged spending and structural levels, short-run macro changes and separate FY2020-22 indicators.",
+    "Spending/GDP is forecast from its own history after absorbing FY2020-22 with separate indicators."
   ),
   `Why paths differ` = c(
     "Persistent changes in driver levels permanently alter the spending ratio and coefficient uncertainty can dominate far from the sample.",
     "Mean reversion in the ARIMA error pulls the path toward the fitted structural level.",
     "No deterministic drift is imposed, so stable future drivers make annual changes fade; early changes remain embedded in the level.",
-    "Ageing creates a gradual trend while temporary macro impulses fade, making it less cyclically aggressive than a full levels model.",
+    "Tailored transformations avoid treating every driver identically, but forecast errors still accumulate in the projected level.",
+    "Slow structural pressures create a gradual trend while temporary macro impulses fade.",
+    "The estimated speed of adjustment pulls spending toward an implied long-run relationship while retaining short-run dynamics.",
     "Without structural drivers it tends to revert toward its estimated historical process and can appear comparatively flat."
   )
 )
@@ -216,7 +226,7 @@ doc <- body_add_par(doc, "All ratios are shares of nominal GDP unless otherwise 
 doc <- add_heading(doc, "Executive summary")
 doc <- add_text(doc, paste0(
   "The workflow deliberately separates the short-run official forecast from the long-run projection. ",
-  "The PBO 2025-26 National Fiscal Outlook supplies the consolidated general-government anchor through ",
+  "The PBO 2026-27 National Fiscal Outlook supplies the consolidated general-government anchor through ",
   fy(official_forecast_end), ". Bottom-up and top-down models are also run without that anchor over the same years, ",
   "so their difference from the official forecast is visible rather than hidden."
 ))
@@ -227,10 +237,10 @@ doc <- add_bullets(doc, c(
          pct(restraint_end$net_debt_ratio), ", illustrating that these are conditional scenarios, not confidence bounds."),
   paste0("Holding revenue/GDP at the post-forecast level as a proxy for fully indexed personal-tax thresholds raises the central-spending debt endpoint to ",
          pct(indexed_endpoint), "."),
-  "The five top-down models behave differently because some model the spending ratio in levels, some model annual changes, and one contains no economic or demographic drivers.",
+  "The seven top-down models behave differently because some model the spending ratio in levels, some model annual changes, the ECM combines long-run levels with short-run changes, and one contains no economic or demographic drivers.",
   "The univariate benchmark performs best against the short official forecast in this vintage, but that largely reflects near-term mean reversion; it is not evidence that a driver-free model is the most informative long-run structural projection."
 ))
-doc <- add_text(doc, "Recommended hierarchy: retain the published consolidated forecast for the official forecast period; use the bottom-up purpose model as the central long-run fiscal projection; use the hybrid demographic/macro model as the principal top-down structural cross-check; retain the univariate ARIMA as a near-term statistical benchmark; and use the full scenario/model spread for uncertainty analysis.")
+doc <- add_text(doc, "Recommended hierarchy: retain the published consolidated forecast for the official forecast period; use the bottom-up purpose model as the central long-run fiscal projection; use the dynamic-difference specification as the primary driver-based top-down cross-check; retain the ARIMA with COVID controls as a near-term statistical benchmark; treat the current ARDL error-correction specification as experimental; and use the full scenario/model spread for uncertainty analysis.")
 doc <- add_figure(doc, "outputs/figures/revenue_debt/02_bottom_up_debt.png",
                   "Figure 1. Bottom-up net debt paths under the spending, revenue and financing scenarios.")
 
@@ -243,7 +253,7 @@ doc <- add_text(doc, "Raw downloads are cached. Set REFRESH_DATA=true before run
 doc <- add_heading(doc, "2. Data, vintages and accounting concepts")
 doc <- add_text(doc, paste0(
   "Historical aggregate spending and macro variables come primarily from ABS national accounts. Purpose-level spending uses the ABS Government Finance Statistics annual general-government table for ",
-  "all levels of government. Demographic projections use the Centre for Population 2025 Population Statement. The official forecast uses the PBO 2025-26 National Fiscal Outlook, with 2026-27 Budget files retained as supplementary Commonwealth inputs."
+  "all levels of government. Demographic projections use the Centre for Population 2025 Population Statement. The official forecast uses the PBO 2026-27 National Fiscal Outlook, which consolidates the 2026-27 Commonwealth, state and territory budgets."
 ))
 doc <- add_table(doc, source_table, font_size = 7.5)
 doc <- add_text(doc, "Concept bridge: the national-accounts top-down series is broad government final consumption plus public investment, whereas the PBO/GFS expense measure also reflects transfers and other operating expenses. The workflow does not equate these levels. It shows unanchored national-accounts model paths for diagnosis, then adds each model's post-forecast change to the PBO expense ratio at the join.")
@@ -296,9 +306,38 @@ model_fit_display <- top_summary[, .(
   Specification = specification,
   `ARIMA order` = fifelse(is.na(arima_order), "n/a", arima_order),
   AIC = round(aic, 1),
+  AICc = fifelse(is.na(aicc), "n/a", sprintf("%.1f", aicc)),
+  BIC = round(bic, 1),
   Observations = observations
 )]
 doc <- add_table(doc, model_fit_display, font_size = 7.5)
+doc <- add_text(doc, "Information criteria are reported within each specification. They should not be used to rank models with different dependent-variable transformations; rolling pseudo-out-of-sample errors provide the cross-model forecast comparison.")
+ecm_long_run_display <- ecm_long_run[, .(
+  Term = term,
+  `Implied long-run estimate` = pp(estimate, 4),
+  `Adjustment coefficient` = pp(adjustment, 4)
+)]
+doc <- add_text(doc, "The ECM adjustment coefficient is negative in this vintage, indicating dynamically convergent conditional forecasts. A negative coefficient is necessary but not sufficient evidence for a valid level relationship. The implied long-run coefficients below are diagnostics from the unrestricted ECM parameterisation, not a separate model.")
+doc <- add_table(doc, ecm_long_run_display, font_size = 8)
+doc <- add_heading(doc, "ECM validity checks", 2)
+doc <- add_text(doc, "The ARDL bounds approach permits a mixture of I(0) and I(1) regressors but not I(2) variables. ADF and KPSS tests are therefore used to assess integration order, followed by finite-sample Case III bounds F- and t-tests. Breusch-Godfrey, Breusch-Pagan, RESET and recursive CUSUM tests examine the fitted equation, while dynamic roots, estimation-window adjustment estimates and collinearity diagnostics assess forecast stability and identification.")
+ecm_validation_display <- ecm_validation[, .(
+  Criterion = criterion,
+  Result = result,
+  Assessment = assessment
+)]
+doc <- add_table(doc, ecm_validation_display, font_size = 7.5)
+current_bounds <- ecm_bounds[specification == "Projection ECM as fitted"]
+doc <- add_text(doc, paste0(
+  "For the projection ECM, the lagged-level F statistic is ",
+  pp(current_bounds[grepl("F-test", test), statistic], 3),
+  " against finite-sample 5 per cent bounds of ",
+  pp(current_bounds[grepl("F-test", test), lower_bound_I0_5pct], 3), " and ",
+  pp(current_bounds[grepl("F-test", test), upper_bound_I1_5pct], 3),
+  "; the adjustment t statistic is ",
+  pp(current_bounds[grepl("t-test", test), statistic], 3),
+  ". Both lie in the region that does not support a level relationship. The canonical ARDL robustness specification also fails to establish a level relationship. Integration tests do not cleanly rule out higher-order behaviour in the selected age shares, and the long-run age regressors remain collinear. Residual, functional-form, CUSUM and dynamic-root checks pass, but these do not establish the required long-run relationship."
+))
 doc <- add_figure(doc, "outputs/figures/top_down/01_anchored_long_run_models.png",
                   "Figure 7. Official forecast followed by each top-down model's projected change.")
 doc <- add_figure(doc, "outputs/figures/top_down/03_model_spread.png",
@@ -321,7 +360,7 @@ doc <- add_figure(doc, "outputs/figures/top_down/04_shapley_attribution.png",
 
 doc <- body_add_break(doc)
 doc <- add_heading(doc, "7. Forecast-period checks")
-doc <- add_text(doc, "Two checks are reported. First, rolling origins from 2009-10 to 2019-20 estimate each top-down model using only data then available and project one to five years ahead. Future explanatory variables are set to their realised values, so this is a conditional model check rather than a real-time forecast exercise. Second, all models are estimated on the full historical sample and run without the PBO anchor over 2025-26 to 2028-29; their paths are compared with the current official forecast.")
+doc <- add_text(doc, paste0("Two checks are reported. First, rolling origins from 2009-10 to 2019-20 estimate each top-down model using only data then available and project one to five years ahead. Future explanatory variables are set to their realised values, so this is a conditional model check rather than a real-time forecast exercise. Second, all models are estimated on the full historical sample and run without the PBO anchor over 2025-26 to ", fy(official_forecast_end), "; their paths are compared with the current official forecast."))
 doc <- add_table(doc, rolling_key, font_size = 8)
 doc <- add_table(doc, official_key, font_size = 8)
 doc <- add_figure(doc, "outputs/figures/forecast_checks/01_rmse_by_horizon.png",
@@ -353,7 +392,7 @@ doc <- add_table(doc, bottom_key, font_size = 8)
 doc <- add_table(doc, top_endpoint, font_size = 8)
 
 doc <- add_heading(doc, "11. Bottom-up/top-down comparison and statistical diagnostics")
-doc <- add_text(doc, "The comparison places the central bottom-up total-expense path and all five top-down total-expense paths on one chart. The bottom-up line adds endogenous debt interest to projected primary categories. The top-down equations project total expenses directly, so they do not have a separate interest feedback. The comparison is therefore economically informative, but the two approaches remain structurally different.")
+doc <- add_text(doc, "The comparison places the central bottom-up total-expense path and all seven top-down total-expense paths on one chart. The bottom-up line adds endogenous debt interest to projected primary categories. The top-down equations project total expenses directly, so they do not have a separate interest feedback. The comparison is therefore economically informative, but the two approaches remain structurally different.")
 doc <- add_figure(doc, "outputs/figures/model_comparison/01_bottom_up_vs_top_down.png",
                   "Figure 14. Central bottom-up total expenses compared with all anchored top-down estimates.")
 doc <- add_figure(doc, "outputs/figures/model_comparison/02_bottom_up_top_down_ranges.png",
@@ -365,8 +404,8 @@ setnames(recommendation_display, c("horizon_or_use", "recommended_approach", "ra
          c("Horizon or use", "Recommended approach", "Reason"))
 doc <- add_table(doc, recommendation_display, font_size = 7.5)
 doc <- add_text(doc, "The central recommendation is therefore a layered framework, not a mechanical choice of the equation with the highest in-sample R-squared. Official forecasts contain policy and budget information. Beyond that horizon, the bottom-up model is best suited to the fiscal-sustainability question because it identifies which services, demographic exposures, cost assumptions, revenue choices and interest feedbacks drive the debt path. Its weakness is that calibrated assumptions do not generate statistical standard errors, so those assumptions must be stress-tested and documented.")
-doc <- add_text(doc, "Among the top-down equations, the hybrid demographic/macro specification is the preferred long-run structural cross-check. It performs materially better than the other structural models at the five-year rolling horizon and is less sensitive to the estimation window, while retaining explicit demographic and economic responses. It is not recommended as the sole central projection because accumulated difference errors generate a wide long-run interval. The levels ARIMAX is the strongest in-sample statistical fit and useful as a short-to-medium-run check, but its poorer rolling performance and sample sensitivity make it less persuasive for a forty-year central path.")
-doc <- add_text(doc, "The univariate ARIMA is the best near-term statistical benchmark in this vintage, including against the official forecast period. That result reflects a comparatively flat, mean-reverting path. Because it cannot respond to ageing, relative prices, unemployment, policy or service-specific pressures, it should not be selected as the long-run fiscal model merely because its short-horizon errors are smaller.")
+doc <- add_text(doc, "Among the driver-based top-down equations, the dynamic-difference specification has the lowest five-year rolling RMSE and the smallest maximum endpoint shift across the tested estimation windows in this vintage. Its long-run innovation interval is wide because annual errors accumulate, so it remains a cross-check rather than a stand-alone central forecast. The ARDL bounds tests do not support the fitted long-run relationship despite acceptable residual and functional-form checks. The ECM should therefore remain an experimental sensitivity rather than the preferred projection equation.")
+doc <- add_text(doc, "The ARIMA with COVID controls is the best near-term statistical benchmark in this vintage. Its comparatively flat path cannot respond to ageing, relative prices, unemployment, policy or service-specific pressures, so it should not be selected as the long-run fiscal model merely because its short-horizon errors are smaller.")
 
 selection_display <- model_selection[, .(
   Model = model_label,
@@ -398,7 +437,7 @@ fit_display <- fit_diagnostics[, .(
   `Shapiro-Wilk p-value` = pp(shapiro_wilk_p_value, 3)
 )]
 doc <- add_table(doc, fit_display, font_size = 8)
-doc <- add_text(doc, "The levels ARIMAX has the lowest in-sample RMSE and highest in-sample R-squared. The structural OLS Ljung-Box result indicates residual serial correlation, supporting the ARIMAX cross-checks. Low Shapiro-Wilk p-values for some specifications warn against interpreting normal-theory intervals too literally. In-sample fit is not a model-selection rule: rolling forecast performance remains the more relevant short-horizon check.")
+doc <- add_text(doc, "The ARDL error-correction equation has the lowest in-sample RMSE and highest in-sample R-squared in this vintage, followed by the dynamic-difference and levels-ARIMAX specifications. The structural OLS Ljung-Box result indicates residual serial correlation, supporting models with explicit dynamics. Low Shapiro-Wilk p-values for some specifications warn against interpreting normal-theory intervals too literally. In-sample fit is not a model-selection rule: rolling forecast performance remains the more relevant short-horizon check.")
 doc <- add_figure(doc, "outputs/figures/diagnostics/01_in_sample_fit.png",
                   "Figure 16. In-sample fit on the broad spending/GDP level.")
 
@@ -418,7 +457,7 @@ interval_endpoint_display <- forecast_intervals[year == projection_end, .(
   `Upper 95%` = pct(upper_95)
 )]
 doc <- add_table(doc, interval_endpoint_display, font_size = 8)
-doc <- add_text(doc, "The forecast intervals are conditional model-only intervals. The economic and demographic paths are fixed. ARIMA intervals include simulated future innovations but keep estimated coefficients fixed; OLS uses a conventional prediction interval. These ranges should not be combined mechanically with bottom-up scenario ranges.")
+doc <- add_text(doc, "The forecast intervals are conditional model-only intervals. The economic and demographic paths are fixed. ARIMA intervals include simulated future innovations, the ECM recursively propagates simulated equation innovations, and all estimated coefficients are held fixed; structural OLS uses a conventional prediction interval. These ranges should not be combined mechanically with bottom-up scenario ranges.")
 doc <- add_figure(doc, "outputs/figures/diagnostics/04_conditional_forecast_intervals.png",
                   "Figure 17. Conditional model-only 95% intervals for each top-down model.", height = 5.0)
 
@@ -439,10 +478,10 @@ doc <- add_heading(doc, "12. Limitations and next development priorities")
 doc <- add_bullets(doc, c(
   "Only ten annual observations are available in the current GFS purpose table. The bottom-up category model is consequently calibrated, not econometrically estimated by category.",
   "The Centre for Population workbook publishes selected long-run years; intermediate annual age structures are interpolated. This is appropriate for smooth exposure paths but does not reproduce a full cohort-component model.",
-  "The official anchor is the PBO 2025-26 consolidated outlook. Later Commonwealth Budget numbers are useful supplementary inputs but do not by themselves replace a consolidated Commonwealth-plus-state forecast.",
+  "The official anchor is the PBO 2026-27 consolidated outlook. Individual Commonwealth or state budget numbers do not by themselves replace this consolidated national forecast.",
   "The national-accounts and GFS/PBO spending concepts differ. Anchoring changes at the join is transparent but does not create a detailed accounting bridge.",
   "Excess-cost, defence, revenue, investment, interest and stock-flow assumptions are illustrative. Policy-costed scenarios should replace them where available.",
-  "No stochastic confidence intervals are presented. Model spread is specification uncertainty, while pressure/restraint paths are assumption sensitivities; neither is a statistical probability interval.",
+  "Conditional model-only forecast intervals hold coefficients and driver paths fixed. Model spread is specification uncertainty, while pressure/restraint paths are assumption sensitivities; neither is a statistical probability interval.",
   "The next valuable extension is a modular revenue block with tax-specific bases and elasticities, followed by stochastic macro shocks and parameter uncertainty."
 ))
 

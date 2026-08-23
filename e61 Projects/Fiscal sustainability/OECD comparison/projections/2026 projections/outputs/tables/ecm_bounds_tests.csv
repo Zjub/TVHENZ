@@ -1,0 +1,5 @@
+specification,test,statistic,lower_bound_I0_5pct,upper_bound_I1_5pct,upper_bound_p_value,standard_test_p_value,decision_5pct,alpha,bounds_case,long_run_regressors,observations,finite_sample_simulations
+Projection ECM as fitted,Bounds F-test: joint lagged-level block,0.982850386556001,3.19292711989026,4.4848937578638,,0.444412670677768,No level relationship supported,0.05,"Case III: unrestricted intercept, no trend",4,44,20000
+Projection ECM as fitted,Bounds t-test: lagged dependent level,-1.70648197145912,-2.88442773693893,-4.0659336812336,,0.0982513901103554,No level relationship supported,0.05,"Case III: unrestricted intercept, no trend",4,44,20000
+Canonical ARDL robustness specification,Bounds F-test: joint lagged-level block,2.89215007431439,3.19292711989026,4.4848937578638,0.247099232272171,,No level relationship supported,0.05,"Case III: unrestricted intercept, no trend",4,44,20000
+Canonical ARDL robustness specification,Bounds t-test: lagged dependent level,-3.5583829991599,-2.88442773693893,-4.0659336812336,0.118670970464814,,Inconclusive between I(0) and I(1) bounds,0.05,"Case III: unrestricted intercept, no trend",4,44,20000

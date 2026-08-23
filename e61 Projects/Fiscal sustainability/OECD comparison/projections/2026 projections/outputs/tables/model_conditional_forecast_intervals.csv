@@ -1,206 +1,288 @@
 year,model,model_label,mean,standard_error,lower_95,upper_95,interval_scope
-2026,structural_ols,Structural OLS (levels),0.372149425577011,0.0129335044514477,0.346800222658285,0.397498628495737,Conditional model-only OLS prediction interval; fixed drivers
-2027,structural_ols,Structural OLS (levels),0.37759674349701,0.0138150278064832,0.350519786550884,0.404673700443137,Conditional model-only OLS prediction interval; fixed drivers
-2028,structural_ols,Structural OLS (levels),0.381617717396979,0.0148299969752187,0.352551457434712,0.410683977359245,Conditional model-only OLS prediction interval; fixed drivers
-2029,structural_ols,Structural OLS (levels),0.383771759235937,0.0158939929119561,0.352620105557968,0.414923412913906,Conditional model-only OLS prediction interval; fixed drivers
-2030,structural_ols,Structural OLS (levels),0.384892140510915,0.0169376876104766,0.351694882812991,0.41808939820884,Conditional model-only OLS prediction interval; fixed drivers
-2031,structural_ols,Structural OLS (levels),0.385779514751362,0.0180206211993081,0.350459746221679,0.421099283281045,Conditional model-only OLS prediction interval; fixed drivers
-2032,structural_ols,Structural OLS (levels),0.386130256310338,0.0190952452723607,0.348704263300552,0.423556249320123,Conditional model-only OLS prediction interval; fixed drivers
-2033,structural_ols,Structural OLS (levels),0.385480008351649,0.0190282339479752,0.348185355124215,0.422774661579082,Conditional model-only OLS prediction interval; fixed drivers
-2034,structural_ols,Structural OLS (levels),0.38497567256855,0.0190095045431038,0.347717728300116,0.422233616836984,Conditional model-only OLS prediction interval; fixed drivers
-2035,structural_ols,Structural OLS (levels),0.384276269756265,0.0190159791690042,0.347005635454253,0.421546904058277,Conditional model-only OLS prediction interval; fixed drivers
-2036,structural_ols,Structural OLS (levels),0.384057710616102,0.0191313204605654,0.346561011536699,0.421554409695504,Conditional model-only OLS prediction interval; fixed drivers
-2037,structural_ols,Structural OLS (levels),0.385023376613446,0.0194124218748846,0.346975728885975,0.423071024340918,Conditional model-only OLS prediction interval; fixed drivers
-2038,structural_ols,Structural OLS (levels),0.385989042610791,0.019705092090945,0.347367771800494,0.424610313421088,Conditional model-only OLS prediction interval; fixed drivers
-2039,structural_ols,Structural OLS (levels),0.386954708608136,0.0200088234625934,0.347738135248433,0.426171281967839,Conditional model-only OLS prediction interval; fixed drivers
-2040,structural_ols,Structural OLS (levels),0.387920374605482,0.0203231200651455,0.348087791224313,0.42775295798665,Conditional model-only OLS prediction interval; fixed drivers
-2041,structural_ols,Structural OLS (levels),0.388886040602826,0.0206474994318408,0.348417685345607,0.429354395860045,Conditional model-only OLS prediction interval; fixed drivers
-2042,structural_ols,Structural OLS (levels),0.38985170660017,0.0209814939214037,0.348728734172373,0.430974679027968,Conditional model-only OLS prediction interval; fixed drivers
-2043,structural_ols,Structural OLS (levels),0.390817372597516,0.0213246517519143,0.349021823180905,0.432612922014127,Conditional model-only OLS prediction interval; fixed drivers
-2044,structural_ols,Structural OLS (levels),0.39178303859486,0.0216765377375493,0.34929780531974,0.434268271869979,Conditional model-only OLS prediction interval; fixed drivers
-2045,structural_ols,Structural OLS (levels),0.392748704592205,0.0220367337646684,0.349557500076557,0.435939909107853,Conditional model-only OLS prediction interval; fixed drivers
-2046,structural_ols,Structural OLS (levels),0.393714370589551,0.0224048390425554,0.349801692986725,0.437627048192376,Conditional model-only OLS prediction interval; fixed drivers
-2047,structural_ols,Structural OLS (levels),0.394680036586894,0.0227804701622075,0.350031135518078,0.43932893765571,Conditional model-only OLS prediction interval; fixed drivers
-2048,structural_ols,Structural OLS (levels),0.39564570258424,0.0231632609940857,0.350246545271331,0.441044859897149,Conditional model-only OLS prediction interval; fixed drivers
-2049,structural_ols,Structural OLS (levels),0.396611368581584,0.0235528624529906,0.350448606440896,0.442774130722271,Conditional model-only OLS prediction interval; fixed drivers
-2050,structural_ols,Structural OLS (levels),0.397577034578929,0.0239489421553303,0.350637970486649,0.44451609867121,Conditional model-only OLS prediction interval; fixed drivers
-2051,structural_ols,Structural OLS (levels),0.398542700576274,0.0243511839911262,0.350815256972758,0.446270144179789,Conditional model-only OLS prediction interval; fixed drivers
-2052,structural_ols,Structural OLS (levels),0.399508366573618,0.024759287630311,0.35098105453534,0.448035678611895,Conditional model-only OLS prediction interval; fixed drivers
-2053,structural_ols,Structural OLS (levels),0.400474032570964,0.0251729679801919,0.351135921945808,0.44981214319612,Conditional model-only OLS prediction interval; fixed drivers
-2054,structural_ols,Structural OLS (levels),0.401439698568309,0.0255919546084999,0.351280389241665,0.451599007894952,Conditional model-only OLS prediction interval; fixed drivers
-2055,structural_ols,Structural OLS (levels),0.402405364565653,0.0260159911442127,0.351414958900883,0.453395770230423,Conditional model-only OLS prediction interval; fixed drivers
-2056,structural_ols,Structural OLS (levels),0.403371030562998,0.02644483466631,0.351540107039914,0.455201954086082,Conditional model-only OLS prediction interval; fixed drivers
-2057,structural_ols,Structural OLS (levels),0.404336696560342,0.0268782550888565,0.351656284618902,0.457017108501781,Conditional model-only OLS prediction interval; fixed drivers
-2058,structural_ols,Structural OLS (levels),0.405302362557687,0.0273160345492409,0.351763918640723,0.458840806474651,Conditional model-only OLS prediction interval; fixed drivers
-2059,structural_ols,Structural OLS (levels),0.406268028555032,0.0277579668050356,0.351863413333104,0.46067264377696,Conditional model-only OLS prediction interval; fixed drivers
-2060,structural_ols,Structural OLS (levels),0.407233694552377,0.0282038566438011,0.351955151305396,0.462512237799358,Conditional model-only OLS prediction interval; fixed drivers
-2061,structural_ols,Structural OLS (levels),0.408199360549722,0.0286535193091385,0.352039494673488,0.464359226425956,Conditional model-only OLS prediction interval; fixed drivers
-2062,structural_ols,Structural OLS (levels),0.409165026547067,0.0291067799454824,0.352116786147988,0.466213266946145,Conditional model-only OLS prediction interval; fixed drivers
-2063,structural_ols,Structural OLS (levels),0.410130692544411,0.0295634730634072,0.352187350082213,0.468074035006609,Conditional model-only OLS prediction interval; fixed drivers
-2064,structural_ols,Structural OLS (levels),0.411096358541756,0.0300234420266451,0.352251493477605,0.469941223605907,Conditional model-only OLS prediction interval; fixed drivers
-2065,structural_ols,Structural OLS (levels),0.412062024539101,0.0304865385615413,0.352309506945189,0.471814542133014,Conditional model-only OLS prediction interval; fixed drivers
-2066,structural_ols,Structural OLS (levels),0.413027690536445,0.0309526222892634,0.352361665622417,0.473693715450473,Conditional model-only OLS prediction interval; fixed drivers
-2026,arimax_level,ARIMAX (levels),0.385912953924715,0.00858024971575557,0.369331457462915,0.402025729562668,Conditional model-only interval; fixed economic and demographic drivers
-2027,arimax_level,ARIMAX (levels),0.388196463139915,0.0105830734730736,0.367719144736429,0.408653205867389,Conditional model-only interval; fixed economic and demographic drivers
-2028,arimax_level,ARIMAX (levels),0.390038284520077,0.011170833130095,0.367708560375584,0.412533167154348,Conditional model-only interval; fixed economic and demographic drivers
-2029,arimax_level,ARIMAX (levels),0.391115977317515,0.0113366280427298,0.368585006614401,0.412784325470683,Conditional model-only interval; fixed economic and demographic drivers
-2030,arimax_level,ARIMAX (levels),0.391192736418175,0.0113931852115654,0.368741545926611,0.413654274215768,Conditional model-only interval; fixed economic and demographic drivers
-2031,arimax_level,ARIMAX (levels),0.391678152993591,0.0114912321760221,0.368928615556635,0.415082280089776,Conditional model-only interval; fixed economic and demographic drivers
-2032,arimax_level,ARIMAX (levels),0.391307273771563,0.0117761754729799,0.367609074756964,0.413924635595613,Conditional model-only interval; fixed economic and demographic drivers
-2033,arimax_level,ARIMAX (levels),0.390800725654783,0.0117879293532245,0.36725883196141,0.414288496118337,Conditional model-only interval; fixed economic and demographic drivers
-2034,arimax_level,ARIMAX (levels),0.390558294818273,0.0119843947973229,0.367020569644149,0.414850881424405,Conditional model-only interval; fixed economic and demographic drivers
-2035,arimax_level,ARIMAX (levels),0.389987438814846,0.0120060613810251,0.366152005694306,0.413333044587007,Conditional model-only interval; fixed economic and demographic drivers
-2036,arimax_level,ARIMAX (levels),0.39030880533011,0.0118112620122559,0.367853111020447,0.413600412468636,Conditional model-only interval; fixed economic and demographic drivers
-2037,arimax_level,ARIMAX (levels),0.391039741981947,0.0119509803637728,0.367773362104749,0.414777952107776,Conditional model-only interval; fixed economic and demographic drivers
-2038,arimax_level,ARIMAX (levels),0.391766635639557,0.0122467023969903,0.367562350759779,0.415939672994716,Conditional model-only interval; fixed economic and demographic drivers
-2039,arimax_level,ARIMAX (levels),0.391959194830001,0.0122195627919332,0.368079599022743,0.416655149735798,Conditional model-only interval; fixed economic and demographic drivers
-2040,arimax_level,ARIMAX (levels),0.392594266316522,0.0120746692390481,0.368975869547072,0.415969003572181,Conditional model-only interval; fixed economic and demographic drivers
-2041,arimax_level,ARIMAX (levels),0.393154890065378,0.0120286933496914,0.368717762547329,0.417039118332747,Conditional model-only interval; fixed economic and demographic drivers
-2042,arimax_level,ARIMAX (levels),0.393910749766435,0.0120019096032618,0.370237536445174,0.417351769824018,Conditional model-only interval; fixed economic and demographic drivers
-2043,arimax_level,ARIMAX (levels),0.394416176025195,0.0120435911507896,0.37110771421161,0.418394955615014,Conditional model-only interval; fixed economic and demographic drivers
-2044,arimax_level,ARIMAX (levels),0.394846381688422,0.0118943738851335,0.37190024436991,0.417688763621685,Conditional model-only interval; fixed economic and demographic drivers
-2045,arimax_level,ARIMAX (levels),0.395222185558427,0.0118658126441972,0.372660143526187,0.41856038083402,Conditional model-only interval; fixed economic and demographic drivers
-2046,arimax_level,ARIMAX (levels),0.395814879650316,0.0120936211840911,0.372352380673532,0.420257610287534,Conditional model-only interval; fixed economic and demographic drivers
-2047,arimax_level,ARIMAX (levels),0.396660913504607,0.0119826342326107,0.373350498794559,0.420454476036472,Conditional model-only interval; fixed economic and demographic drivers
-2048,arimax_level,ARIMAX (levels),0.397711604564096,0.0121241593947624,0.374266273945655,0.421310391986438,Conditional model-only interval; fixed economic and demographic drivers
-2049,arimax_level,ARIMAX (levels),0.397985792090857,0.0121896080339801,0.374977972638592,0.421272144481861,Conditional model-only interval; fixed economic and demographic drivers
-2050,arimax_level,ARIMAX (levels),0.398660015503169,0.0122237948613892,0.374823021159151,0.422892226590511,Conditional model-only interval; fixed economic and demographic drivers
-2051,arimax_level,ARIMAX (levels),0.399159847288951,0.0120491578444714,0.376374415350023,0.423514433658851,Conditional model-only interval; fixed economic and demographic drivers
-2052,arimax_level,ARIMAX (levels),0.399790115956253,0.0121047333472986,0.376729493201994,0.423554623970463,Conditional model-only interval; fixed economic and demographic drivers
-2053,arimax_level,ARIMAX (levels),0.400253225953358,0.0122307635599931,0.376151813637964,0.42453602155655,Conditional model-only interval; fixed economic and demographic drivers
-2054,arimax_level,ARIMAX (levels),0.400999476689527,0.0123512748747428,0.377427587116141,0.42575561345112,Conditional model-only interval; fixed economic and demographic drivers
-2055,arimax_level,ARIMAX (levels),0.401607998129942,0.0124825728130104,0.377380432117694,0.42589209552142,Conditional model-only interval; fixed economic and demographic drivers
-2056,arimax_level,ARIMAX (levels),0.40219944388516,0.0122702015556982,0.378361828786117,0.426370274014602,Conditional model-only interval; fixed economic and demographic drivers
-2057,arimax_level,ARIMAX (levels),0.402496296520974,0.0119308192861089,0.379440351649035,0.42677140572052,Conditional model-only interval; fixed economic and demographic drivers
-2058,arimax_level,ARIMAX (levels),0.403148599321104,0.012020948114576,0.379632745568408,0.425858473206458,Conditional model-only interval; fixed economic and demographic drivers
-2059,arimax_level,ARIMAX (levels),0.403884846490467,0.012234906192259,0.380275937341566,0.427972679702685,Conditional model-only interval; fixed economic and demographic drivers
-2060,arimax_level,ARIMAX (levels),0.404811379337003,0.012081873763249,0.381679488365264,0.428853480422246,Conditional model-only interval; fixed economic and demographic drivers
-2061,arimax_level,ARIMAX (levels),0.405192632669175,0.0119777152678969,0.382397251382582,0.428772321198298,Conditional model-only interval; fixed economic and demographic drivers
-2062,arimax_level,ARIMAX (levels),0.405720433409863,0.0121067794369395,0.382013030672041,0.430136044608136,Conditional model-only interval; fixed economic and demographic drivers
-2063,arimax_level,ARIMAX (levels),0.406472782911957,0.0119004521845093,0.382224825742724,0.429262452852155,Conditional model-only interval; fixed economic and demographic drivers
-2064,arimax_level,ARIMAX (levels),0.407160265844002,0.0119009326841999,0.384935677438476,0.430422734840632,Conditional model-only interval; fixed economic and demographic drivers
-2065,arimax_level,ARIMAX (levels),0.408019875322845,0.0123430535874758,0.384303805692009,0.432283359356109,Conditional model-only interval; fixed economic and demographic drivers
-2066,arimax_level,ARIMAX (levels),0.408634218612147,0.0122222600440175,0.384019277019444,0.432259569048628,Conditional model-only interval; fixed economic and demographic drivers
-2026,arimax_diff,ARIMAX (differences),0.388905690938272,0.0090140588013022,0.371199879948037,0.406163446609352,Conditional model-only interval; fixed economic and demographic drivers
-2027,arimax_diff,ARIMAX (differences),0.392894775135451,0.0126834965351346,0.36754321651889,0.418635714325959,Conditional model-only interval; fixed economic and demographic drivers
-2028,arimax_diff,ARIMAX (differences),0.39624892072208,0.0156824275318564,0.365923795597697,0.428272911982015,Conditional model-only interval; fixed economic and demographic drivers
-2029,arimax_diff,ARIMAX (differences),0.398037644018184,0.0179291088107018,0.363037702602446,0.433867455703082,Conditional model-only interval; fixed economic and demographic drivers
-2030,arimax_diff,ARIMAX (differences),0.398783665347675,0.0201029066140985,0.35945875680324,0.440314422624239,Conditional model-only interval; fixed economic and demographic drivers
-2031,arimax_diff,ARIMAX (differences),0.399161737945792,0.0217386174624127,0.356211911998668,0.441808581099846,Conditional model-only interval; fixed economic and demographic drivers
-2032,arimax_diff,ARIMAX (differences),0.398650374956256,0.0234320162603786,0.3527998487481,0.443563898658724,Conditional model-only interval; fixed economic and demographic drivers
-2033,arimax_diff,ARIMAX (differences),0.399099485199542,0.0252041967591353,0.351539624903494,0.448400147181468,Conditional model-only interval; fixed economic and demographic drivers
-2034,arimax_diff,ARIMAX (differences),0.399524702304665,0.0268892324448521,0.348421963096508,0.452950339085531,Conditional model-only interval; fixed economic and demographic drivers
-2035,arimax_diff,ARIMAX (differences),0.399644919034887,0.0281941567217651,0.346878987656459,0.454931573115583,Conditional model-only interval; fixed economic and demographic drivers
-2036,arimax_diff,ARIMAX (differences),0.399855882018581,0.0300612950366741,0.340927512159913,0.458906433907315,Conditional model-only interval; fixed economic and demographic drivers
-2037,arimax_diff,ARIMAX (differences),0.400316636341285,0.031811877654026,0.339999212810915,0.461175053543435,Conditional model-only interval; fixed economic and demographic drivers
-2038,arimax_diff,ARIMAX (differences),0.400916745430204,0.0328159160498879,0.33862096802875,0.466400790614372,Conditional model-only interval; fixed economic and demographic drivers
-2039,arimax_diff,ARIMAX (differences),0.40158654561935,0.0335684613734773,0.337203956727596,0.465552884357421,Conditional model-only interval; fixed economic and demographic drivers
-2040,arimax_diff,ARIMAX (differences),0.40186327042531,0.0349933960403028,0.335047275603086,0.470218495991299,Conditional model-only interval; fixed economic and demographic drivers
-2041,arimax_diff,ARIMAX (differences),0.402450157076437,0.0363174185020571,0.333153314357658,0.472161276402668,Conditional model-only interval; fixed economic and demographic drivers
-2042,arimax_diff,ARIMAX (differences),0.403015139338257,0.0374706609331743,0.329161531577111,0.476474596570978,Conditional model-only interval; fixed economic and demographic drivers
-2043,arimax_diff,ARIMAX (differences),0.403423793213795,0.0385635431631999,0.328094753866348,0.47903771871836,Conditional model-only interval; fixed economic and demographic drivers
-2044,arimax_diff,ARIMAX (differences),0.404189101210686,0.0393695972910206,0.327975638841099,0.480671760471878,Conditional model-only interval; fixed economic and demographic drivers
-2045,arimax_diff,ARIMAX (differences),0.40517046025985,0.0405932122042525,0.325983122273218,0.486259254404556,Conditional model-only interval; fixed economic and demographic drivers
-2046,arimax_diff,ARIMAX (differences),0.405762213821173,0.0417650684073266,0.326149685497435,0.487797046214955,Conditional model-only interval; fixed economic and demographic drivers
-2047,arimax_diff,ARIMAX (differences),0.406534021774071,0.042552784692065,0.322764268071987,0.490522464373982,Conditional model-only interval; fixed economic and demographic drivers
-2048,arimax_diff,ARIMAX (differences),0.407200548121133,0.0435037215822146,0.323514245111406,0.492361705511444,Conditional model-only interval; fixed economic and demographic drivers
-2049,arimax_diff,ARIMAX (differences),0.408100326826942,0.0445836121321097,0.32218994314452,0.495107945860677,Conditional model-only interval; fixed economic and demographic drivers
-2050,arimax_diff,ARIMAX (differences),0.408557618944466,0.0455594957090628,0.319184265440944,0.498502529956203,Conditional model-only interval; fixed economic and demographic drivers
-2051,arimax_diff,ARIMAX (differences),0.409195217948261,0.0465118725081442,0.318997578198062,0.501626612127155,Conditional model-only interval; fixed economic and demographic drivers
-2052,arimax_diff,ARIMAX (differences),0.409728849930585,0.0476400876647839,0.321024829628752,0.505166560749563,Conditional model-only interval; fixed economic and demographic drivers
-2053,arimax_diff,ARIMAX (differences),0.410128200828846,0.0484427359325067,0.316171574283882,0.506834540011592,Conditional model-only interval; fixed economic and demographic drivers
-2054,arimax_diff,ARIMAX (differences),0.410571247304774,0.04926565013383,0.316836597154379,0.505928171812561,Conditional model-only interval; fixed economic and demographic drivers
-2055,arimax_diff,ARIMAX (differences),0.411218057083366,0.0501643117841719,0.31526312372578,0.50911380601328,Conditional model-only interval; fixed economic and demographic drivers
-2056,arimax_diff,ARIMAX (differences),0.411832767503,0.0513556942244132,0.314955975878279,0.511706799192675,Conditional model-only interval; fixed economic and demographic drivers
-2057,arimax_diff,ARIMAX (differences),0.412875323256857,0.0523012485002029,0.313275112619865,0.516640749437241,Conditional model-only interval; fixed economic and demographic drivers
-2058,arimax_diff,ARIMAX (differences),0.413445551077197,0.0532595204149366,0.313347942396562,0.518668073125899,Conditional model-only interval; fixed economic and demographic drivers
-2059,arimax_diff,ARIMAX (differences),0.41404396064878,0.0538689407220325,0.314838959892887,0.51957356026191,Conditional model-only interval; fixed economic and demographic drivers
-2060,arimax_diff,ARIMAX (differences),0.41468046445857,0.0545066412939491,0.310378037278673,0.52058985887046,Conditional model-only interval; fixed economic and demographic drivers
-2061,arimax_diff,ARIMAX (differences),0.41539476744916,0.0552292303435092,0.308953266604305,0.521813100679497,Conditional model-only interval; fixed economic and demographic drivers
-2062,arimax_diff,ARIMAX (differences),0.416271495691584,0.0562633733304393,0.307043620728618,0.523807424647986,Conditional model-only interval; fixed economic and demographic drivers
-2063,arimax_diff,ARIMAX (differences),0.416599064951002,0.0570955993533541,0.305401629982423,0.527608330578246,Conditional model-only interval; fixed economic and demographic drivers
-2064,arimax_diff,ARIMAX (differences),0.417257445060303,0.0575155526240432,0.305157746353716,0.529881111646566,Conditional model-only interval; fixed economic and demographic drivers
-2065,arimax_diff,ARIMAX (differences),0.418363601229002,0.0582237931327374,0.305447230846141,0.532544952716238,Conditional model-only interval; fixed economic and demographic drivers
-2066,arimax_diff,ARIMAX (differences),0.419462832192512,0.0587244550191304,0.30801968552575,0.534243690582599,Conditional model-only interval; fixed economic and demographic drivers
-2026,hybrid,Hybrid demographics/macro,0.385807652053908,0.00985404244501967,0.367033161834453,0.404925713032794,Conditional model-only interval; fixed economic and demographic drivers
-2027,hybrid,Hybrid demographics/macro,0.387344403121343,0.0179739390471281,0.35249897736773,0.423874756598672,Conditional model-only interval; fixed economic and demographic drivers
-2028,hybrid,Hybrid demographics/macro,0.387983851611278,0.0237316101141828,0.341683854187012,0.435234957122575,Conditional model-only interval; fixed economic and demographic drivers
-2029,hybrid,Hybrid demographics/macro,0.38700938849519,0.0284756832118598,0.330854424060367,0.44374627257296,Conditional model-only interval; fixed economic and demographic drivers
-2030,hybrid,Hybrid demographics/macro,0.385191914456565,0.0319187562034518,0.322218089437621,0.450042071021798,Conditional model-only interval; fixed economic and demographic drivers
-2031,hybrid,Hybrid demographics/macro,0.382969801112734,0.0353993079257702,0.315873136361781,0.452812249507132,Conditional model-only interval; fixed economic and demographic drivers
-2032,hybrid,Hybrid demographics/macro,0.380344808015,0.0385588372418471,0.306866502949814,0.459715150679379,Conditional model-only interval; fixed economic and demographic drivers
-2033,hybrid,Hybrid demographics/macro,0.381953649470161,0.0409980859969513,0.304310417402452,0.465278689098666,Conditional model-only interval; fixed economic and demographic drivers
-2034,hybrid,Hybrid demographics/macro,0.383776399335221,0.0430899897713312,0.300149635533656,0.469387451417911,Conditional model-only interval; fixed economic and demographic drivers
-2035,hybrid,Hybrid demographics/macro,0.385062623911095,0.0457674367419766,0.296881920468022,0.475532159219292,Conditional model-only interval; fixed economic and demographic drivers
-2036,hybrid,Hybrid demographics/macro,0.387052511038903,0.0481818190587137,0.291130314052118,0.482518680629569,Conditional model-only interval; fixed economic and demographic drivers
-2037,hybrid,Hybrid demographics/macro,0.388086102290649,0.0503509523559309,0.290483769213859,0.485976044091359,Conditional model-only interval; fixed economic and demographic drivers
-2038,hybrid,Hybrid demographics/macro,0.388967072488658,0.052120835456208,0.288160982802597,0.488480129931549,Conditional model-only interval; fixed economic and demographic drivers
-2039,hybrid,Hybrid demographics/macro,0.3898020644887,0.0544712631312109,0.28563089290323,0.494632109299307,Conditional model-only interval; fixed economic and demographic drivers
-2040,hybrid,Hybrid demographics/macro,0.390306459659472,0.0567353483841623,0.282886873642073,0.50117440745179,Conditional model-only interval; fixed economic and demographic drivers
-2041,hybrid,Hybrid demographics/macro,0.390736679148117,0.0588175005491606,0.277595758098914,0.505245106567813,Conditional model-only interval; fixed economic and demographic drivers
-2042,hybrid,Hybrid demographics/macro,0.391268267249916,0.0607445255763177,0.277412695961415,0.509691211941317,Conditional model-only interval; fixed economic and demographic drivers
-2043,hybrid,Hybrid demographics/macro,0.392278844601527,0.0628946668463181,0.272159373998023,0.512427992231477,Conditional model-only interval; fixed economic and demographic drivers
-2044,hybrid,Hybrid demographics/macro,0.393367809296926,0.0648872955293581,0.26958190279171,0.518175502821725,Conditional model-only interval; fixed economic and demographic drivers
-2045,hybrid,Hybrid demographics/macro,0.394191996769427,0.0665766643110702,0.26464422622889,0.523665748217898,Conditional model-only interval; fixed economic and demographic drivers
-2046,hybrid,Hybrid demographics/macro,0.395200765383929,0.0678957874747563,0.26084583449372,0.529463026235816,Conditional model-only interval; fixed economic and demographic drivers
-2047,hybrid,Hybrid demographics/macro,0.396282786957931,0.0696762585603433,0.259028136079228,0.533868723373056,Conditional model-only interval; fixed economic and demographic drivers
-2048,hybrid,Hybrid demographics/macro,0.39745678544453,0.0714365603027703,0.256877469881786,0.537170873737357,Conditional model-only interval; fixed economic and demographic drivers
-2049,hybrid,Hybrid demographics/macro,0.398678679826767,0.072880855357117,0.252972614218188,0.542549624158714,Conditional model-only interval; fixed economic and demographic drivers
-2050,hybrid,Hybrid demographics/macro,0.399747368491104,0.074149121222891,0.248949188713424,0.545497778147318,Conditional model-only interval; fixed economic and demographic drivers
-2051,hybrid,Hybrid demographics/macro,0.400439565322287,0.0758550214467774,0.244104797139891,0.546332645078214,Conditional model-only interval; fixed economic and demographic drivers
-2052,hybrid,Hybrid demographics/macro,0.401022537865156,0.0776494770592708,0.242758712460545,0.554958700642047,Conditional model-only interval; fixed economic and demographic drivers
-2053,hybrid,Hybrid demographics/macro,0.40187227650965,0.0793552192229224,0.243723461989603,0.557971918776917,Conditional model-only interval; fixed economic and demographic drivers
-2054,hybrid,Hybrid demographics/macro,0.402715751761744,0.0807695301540084,0.236288152066467,0.564670784069882,Conditional model-only interval; fixed economic and demographic drivers
-2055,hybrid,Hybrid demographics/macro,0.403425388422461,0.0820083248900082,0.234314347218246,0.570931848696288,Conditional model-only interval; fixed economic and demographic drivers
-2056,hybrid,Hybrid demographics/macro,0.403771521583753,0.0835620535714381,0.23541245168135,0.573720928335956,Conditional model-only interval; fixed economic and demographic drivers
-2057,hybrid,Hybrid demographics/macro,0.404180694913094,0.0851228389764527,0.236819522596925,0.575944939086498,Conditional model-only interval; fixed economic and demographic drivers
-2058,hybrid,Hybrid demographics/macro,0.404963261949039,0.0866127614447626,0.232573544831995,0.5765632115321,Conditional model-only interval; fixed economic and demographic drivers
-2059,hybrid,Hybrid demographics/macro,0.405931130688262,0.0880382513804928,0.230897297921896,0.578089245697344,Conditional model-only interval; fixed economic and demographic drivers
-2060,hybrid,Hybrid demographics/macro,0.406942081037265,0.0891719039141999,0.232641280921948,0.581710586301936,Conditional model-only interval; fixed economic and demographic drivers
-2061,hybrid,Hybrid demographics/macro,0.407801460715744,0.090770107356227,0.229600921547018,0.58823513155396,Conditional model-only interval; fixed economic and demographic drivers
-2062,hybrid,Hybrid demographics/macro,0.408510379224582,0.0920998850086807,0.227606553652708,0.591406055595473,Conditional model-only interval; fixed economic and demographic drivers
-2063,hybrid,Hybrid demographics/macro,0.409263821070518,0.0934203507504774,0.224978937780529,0.596169428134802,Conditional model-only interval; fixed economic and demographic drivers
-2064,hybrid,Hybrid demographics/macro,0.409836751320377,0.0947944250071128,0.222316383820075,0.594884809698535,Conditional model-only interval; fixed economic and demographic drivers
-2065,hybrid,Hybrid demographics/macro,0.410212938151945,0.0961781577648929,0.221077690489676,0.593433775095287,Conditional model-only interval; fixed economic and demographic drivers
-2066,hybrid,Hybrid demographics/macro,0.410874657082505,0.0976985578940832,0.216476660611557,0.601284797042133,Conditional model-only interval; fixed economic and demographic drivers
-2026,univariate_arima,Univariate ARIMA,0.370987428310531,0.0117821406946151,0.34720430759952,0.39338182693894,Conditional model-only interval; fixed economic and demographic drivers
-2027,univariate_arima,Univariate ARIMA,0.361485117872311,0.0184361055435601,0.325329296656865,0.398018629472062,Conditional model-only interval; fixed economic and demographic drivers
-2028,univariate_arima,Univariate ARIMA,0.357605832360037,0.019663724590588,0.319173127906831,0.397830126097239,Conditional model-only interval; fixed economic and demographic drivers
-2029,univariate_arima,Univariate ARIMA,0.357720130401496,0.0197738028499288,0.319661037204128,0.396673430629826,Conditional model-only interval; fixed economic and demographic drivers
-2030,univariate_arima,Univariate ARIMA,0.35717089009801,0.0197995855302146,0.317552606611774,0.39449574558784,Conditional model-only interval; fixed economic and demographic drivers
-2031,univariate_arima,Univariate ARIMA,0.356735663689961,0.0192747096672091,0.319731547025714,0.394735521120679,Conditional model-only interval; fixed economic and demographic drivers
-2032,univariate_arima,Univariate ARIMA,0.35675558127412,0.0194128772817327,0.317776458974431,0.395002346426874,Conditional model-only interval; fixed economic and demographic drivers
-2033,univariate_arima,Univariate ARIMA,0.356575666792009,0.0194363491508956,0.318214402657997,0.395659454440405,Conditional model-only interval; fixed economic and demographic drivers
-2034,univariate_arima,Univariate ARIMA,0.356363582343816,0.0193868716019085,0.318495807242969,0.394993336284896,Conditional model-only interval; fixed economic and demographic drivers
-2035,univariate_arima,Univariate ARIMA,0.356260627893509,0.0198905540347527,0.317498897272275,0.395382466969167,Conditional model-only interval; fixed economic and demographic drivers
-2036,univariate_arima,Univariate ARIMA,0.356856748806456,0.0201385342742962,0.316287370453268,0.396251341079056,Conditional model-only interval; fixed economic and demographic drivers
-2037,univariate_arima,Univariate ARIMA,0.357173082361045,0.0200294742579369,0.318808304346542,0.395273842200344,Conditional model-only interval; fixed economic and demographic drivers
-2038,univariate_arima,Univariate ARIMA,0.356801878109853,0.0194691740831824,0.31948645214368,0.393571521830459,Conditional model-only interval; fixed economic and demographic drivers
-2039,univariate_arima,Univariate ARIMA,0.356598925235562,0.0194389861019718,0.318736023909415,0.393417505006762,Conditional model-only interval; fixed economic and demographic drivers
-2040,univariate_arima,Univariate ARIMA,0.35698097057676,0.0192216742133488,0.319324354144718,0.394236026309028,Conditional model-only interval; fixed economic and demographic drivers
-2041,univariate_arima,Univariate ARIMA,0.357321272037587,0.0191339476576292,0.320178131495048,0.394544332506712,Conditional model-only interval; fixed economic and demographic drivers
-2042,univariate_arima,Univariate ARIMA,0.356856124599763,0.0193957323627626,0.318816035763598,0.395105045013987,Conditional model-only interval; fixed economic and demographic drivers
-2043,univariate_arima,Univariate ARIMA,0.356910244822107,0.0194620140179111,0.319357587212578,0.394445303221801,Conditional model-only interval; fixed economic and demographic drivers
-2044,univariate_arima,Univariate ARIMA,0.356970682159845,0.0194570636857911,0.318363584639282,0.394700222707282,Conditional model-only interval; fixed economic and demographic drivers
-2045,univariate_arima,Univariate ARIMA,0.356672877892241,0.0199301087895323,0.317858816432226,0.395164020907318,Conditional model-only interval; fixed economic and demographic drivers
-2046,univariate_arima,Univariate ARIMA,0.35648835199597,0.0193983320973265,0.317908673673756,0.394320379276199,Conditional model-only interval; fixed economic and demographic drivers
-2047,univariate_arima,Univariate ARIMA,0.356534204644883,0.0194683615283343,0.319640148939041,0.395685957317318,Conditional model-only interval; fixed economic and demographic drivers
-2048,univariate_arima,Univariate ARIMA,0.356905514254054,0.0194228521767167,0.319483439895508,0.395847858127229,Conditional model-only interval; fixed economic and demographic drivers
-2049,univariate_arima,Univariate ARIMA,0.3572769310313,0.019528342230554,0.319266971278512,0.396046937500519,Conditional model-only interval; fixed economic and demographic drivers
-2050,univariate_arima,Univariate ARIMA,0.357263148300923,0.0193140919486728,0.318514589239363,0.39529369611104,Conditional model-only interval; fixed economic and demographic drivers
-2051,univariate_arima,Univariate ARIMA,0.356985248793129,0.0191628356277106,0.319747754495303,0.393855090316615,Conditional model-only interval; fixed economic and demographic drivers
-2052,univariate_arima,Univariate ARIMA,0.356796926223796,0.0194620602344982,0.318127920491497,0.393977651743762,Conditional model-only interval; fixed economic and demographic drivers
-2053,univariate_arima,Univariate ARIMA,0.357094773314789,0.0196702803697078,0.318065512119772,0.393064288306409,Conditional model-only interval; fixed economic and demographic drivers
-2054,univariate_arima,Univariate ARIMA,0.356776848679039,0.0198836828862476,0.317055313184642,0.39534041451197,Conditional model-only interval; fixed economic and demographic drivers
-2055,univariate_arima,Univariate ARIMA,0.356784252652128,0.0193854774741096,0.318627273494122,0.393837416768687,Conditional model-only interval; fixed economic and demographic drivers
-2056,univariate_arima,Univariate ARIMA,0.357038375174112,0.0192837121126387,0.320882933568402,0.393433956752869,Conditional model-only interval; fixed economic and demographic drivers
-2057,univariate_arima,Univariate ARIMA,0.357440786401332,0.0196976898474849,0.31910887278421,0.395657927810724,Conditional model-only interval; fixed economic and demographic drivers
-2058,univariate_arima,Univariate ARIMA,0.356742583302879,0.0201560036349156,0.31774287939015,0.396505308687342,Conditional model-only interval; fixed economic and demographic drivers
-2059,univariate_arima,Univariate ARIMA,0.356180670526683,0.0196977913877046,0.317435722734023,0.395332796178334,Conditional model-only interval; fixed economic and demographic drivers
-2060,univariate_arima,Univariate ARIMA,0.356367947085375,0.0196748633907207,0.317514856644461,0.394378852448151,Conditional model-only interval; fixed economic and demographic drivers
-2061,univariate_arima,Univariate ARIMA,0.357136587384492,0.0199169791202893,0.317515122611723,0.395759363094186,Conditional model-only interval; fixed economic and demographic drivers
-2062,univariate_arima,Univariate ARIMA,0.357360390663449,0.0195391297038755,0.318941439322271,0.395492260911201,Conditional model-only interval; fixed economic and demographic drivers
-2063,univariate_arima,Univariate ARIMA,0.357379912318964,0.0192084829528783,0.320486757262957,0.394766755916552,Conditional model-only interval; fixed economic and demographic drivers
-2064,univariate_arima,Univariate ARIMA,0.357385025293438,0.0191382174305849,0.320995546336765,0.39505210177526,Conditional model-only interval; fixed economic and demographic drivers
-2065,univariate_arima,Univariate ARIMA,0.357190308708492,0.0192128341043015,0.320940079343282,0.396534572229361,Conditional model-only interval; fixed economic and demographic drivers
-2066,univariate_arima,Univariate ARIMA,0.357380155473926,0.0191999952053591,0.318613825324791,0.396513579757214,Conditional model-only interval; fixed economic and demographic drivers
+2026,structural_ols,Structural OLS (levels),0.361966324862483,0.0136730483050366,0.335167642625735,0.388765007099231,Conditional model-only OLS prediction interval; fixed drivers
+2027,structural_ols,Structural OLS (levels),0.362913972915624,0.0141821750514013,0.335117420592435,0.390710525238813,Conditional model-only OLS prediction interval; fixed drivers
+2028,structural_ols,Structural OLS (levels),0.363027192151714,0.014835112752165,0.33395090545088,0.392103478852549,Conditional model-only OLS prediction interval; fixed drivers
+2029,structural_ols,Structural OLS (levels),0.361888559710274,0.0156153047414175,0.331283124809478,0.39249399461107,Conditional model-only OLS prediction interval; fixed drivers
+2030,structural_ols,Structural OLS (levels),0.360648010200117,0.0164599507819393,0.328387099480214,0.39290892092002,Conditional model-only OLS prediction interval; fixed drivers
+2031,structural_ols,Structural OLS (levels),0.359192688266364,0.0173443145728439,0.325198456367057,0.393186920165671,Conditional model-only OLS prediction interval; fixed drivers
+2032,structural_ols,Structural OLS (levels),0.357888309146879,0.0182965565229614,0.322027717320774,0.393748900972985,Conditional model-only OLS prediction interval; fixed drivers
+2033,structural_ols,Structural OLS (levels),0.358804704978525,0.0185146043560209,0.322516747252715,0.395092662704334,Conditional model-only OLS prediction interval; fixed drivers
+2034,structural_ols,Structural OLS (levels),0.359949706414607,0.0187768139900027,0.323147827249794,0.396751585579421,Conditional model-only OLS prediction interval; fixed drivers
+2035,structural_ols,Structural OLS (levels),0.361194876766857,0.0190480326326909,0.323861418830439,0.398528334703275,Conditional model-only OLS prediction interval; fixed drivers
+2036,structural_ols,Structural OLS (levels),0.362807784349855,0.0194130099938533,0.324758983930386,0.400856584769323,Conditional model-only OLS prediction interval; fixed drivers
+2037,structural_ols,Structural OLS (levels),0.363662556381712,0.0196321687214078,0.325184212749339,0.402140900014085,Conditional model-only OLS prediction interval; fixed drivers
+2038,structural_ols,Structural OLS (levels),0.364517328413569,0.0198539973878672,0.325604208584197,0.403430448242941,Conditional model-only OLS prediction interval; fixed drivers
+2039,structural_ols,Structural OLS (levels),0.365372100445427,0.0200784075000062,0.326019144878496,0.404725056012358,Conditional model-only OLS prediction interval; fixed drivers
+2040,structural_ols,Structural OLS (levels),0.366226872477285,0.0203053134691987,0.326429189382859,0.40602455557171,Conditional model-only OLS prediction interval; fixed drivers
+2041,structural_ols,Structural OLS (levels),0.367081644509141,0.0205346325585771,0.326834504258567,0.407328784759716,Conditional model-only OLS prediction interval; fixed drivers
+2042,structural_ols,Structural OLS (levels),0.367936416541,0.0207662848250809,0.327235246191141,0.408637586890859,Conditional model-only OLS prediction interval; fixed drivers
+2043,structural_ols,Structural OLS (levels),0.368791188572857,0.0210001930573088,0.327631566512144,0.409950810633571,Conditional model-only OLS prediction interval; fixed drivers
+2044,structural_ols,Structural OLS (levels),0.369645960604714,0.0212362827100067,0.328023611327591,0.411268309881838,Conditional model-only OLS prediction interval; fixed drivers
+2045,structural_ols,Structural OLS (levels),0.370500732636572,0.0214744818359298,0.32841152165149,0.412589943621654,Conditional model-only OLS prediction interval; fixed drivers
+2046,structural_ols,Structural OLS (levels),0.37135550466843,0.0217147210157365,0.328795433543251,0.413915575793608,Conditional model-only OLS prediction interval; fixed drivers
+2047,structural_ols,Structural OLS (levels),0.372210276700287,0.0219569332865066,0.329175478247785,0.415245075152788,Conditional model-only OLS prediction interval; fixed drivers
+2048,structural_ols,Structural OLS (levels),0.373065048732144,0.0222010540693947,0.329551782337304,0.416578315126984,Conditional model-only OLS prediction interval; fixed drivers
+2049,structural_ols,Structural OLS (levels),0.373919820764002,0.0224470210968741,0.329924467853918,0.417915173674086,Conditional model-only OLS prediction interval; fixed drivers
+2050,structural_ols,Structural OLS (levels),0.37477459279586,0.0226947743399684,0.330293652452258,0.419255533139461,Conditional model-only OLS prediction interval; fixed drivers
+2051,structural_ols,Structural OLS (levels),0.375629364827717,0.0229442559358092,0.330659449541462,0.420599280113973,Conditional model-only OLS prediction interval; fixed drivers
+2052,structural_ols,Structural OLS (levels),0.376484136859574,0.0231954101158176,0.331021968425936,0.421946305293213,Conditional model-only OLS prediction interval; fixed drivers
+2053,structural_ols,Structural OLS (levels),0.377338908891432,0.023448183134761,0.331381314444401,0.423296503338463,Conditional model-only OLS prediction interval; fixed drivers
+2054,structural_ols,Structural OLS (levels),0.37819368092329,0.0237025232008927,0.331737589106815,0.424649772739764,Conditional model-only OLS prediction interval; fixed drivers
+2055,structural_ols,Structural OLS (levels),0.379048452955146,0.0239583804073575,0.332090890228816,0.426006015681477,Conditional model-only OLS prediction interval; fixed drivers
+2056,structural_ols,Structural OLS (levels),0.379903224987005,0.024215706665008,0.332441312063402,0.427365137910607,Conditional model-only OLS prediction interval; fixed drivers
+2057,structural_ols,Structural OLS (levels),0.380757997018862,0.0244744556367452,0.332788945429618,0.428727048608105,Conditional model-only OLS prediction interval; fixed drivers
+2058,structural_ols,Structural OLS (levels),0.381612769050719,0.0247345826734868,0.333133877838057,0.430091660263382,Conditional model-only OLS prediction interval; fixed drivers
+2059,structural_ols,Structural OLS (levels),0.382467541082577,0.0249960447518272,0.333476193613044,0.43145888855211,Conditional model-only OLS prediction interval; fixed drivers
+2060,structural_ols,Structural OLS (levels),0.383322313114434,0.0252588004134476,0.333815974011391,0.432828652217477,Conditional model-only OLS prediction interval; fixed drivers
+2061,structural_ols,Structural OLS (levels),0.384177085146292,0.0255228097063131,0.334153297337649,0.434200872954934,Conditional model-only OLS prediction interval; fixed drivers
+2062,structural_ols,Structural OLS (levels),0.385031857178149,0.0257880341276764,0.334488239055814,0.435575475300485,Conditional model-only OLS prediction interval; fixed drivers
+2063,structural_ols,Structural OLS (levels),0.385886629210007,0.0260544365689028,0.334820871897474,0.436952386522539,Conditional model-only OLS prediction interval; fixed drivers
+2064,structural_ols,Structural OLS (levels),0.386741401241864,0.0263219812621125,0.335151265966386,0.438331536517343,Conditional model-only OLS prediction interval; fixed drivers
+2065,structural_ols,Structural OLS (levels),0.387596173273722,0.0265906337286323,0.335479488839507,0.439712857707938,Conditional model-only OLS prediction interval; fixed drivers
+2066,structural_ols,Structural OLS (levels),0.388450945305579,0.0268603607292379,0.335805605664519,0.441096284946639,Conditional model-only OLS prediction interval; fixed drivers
+2026,arimax_level,ARIMAX (levels),0.384413739973849,0.00703475691408494,0.370818937870791,0.397624248243329,Conditional model-only interval; fixed economic and demographic drivers
+2027,arimax_level,ARIMAX (levels),0.382333050490649,0.0111586420379911,0.36097343645219,0.403869681099509,Conditional model-only interval; fixed economic and demographic drivers
+2028,arimax_level,ARIMAX (levels),0.378941272562852,0.0133761775628274,0.352320799873267,0.405675069068397,Conditional model-only interval; fixed economic and demographic drivers
+2029,arimax_level,ARIMAX (levels),0.375535998923361,0.0142247051348479,0.347204896399978,0.403413183839642,Conditional model-only interval; fixed economic and demographic drivers
+2030,arimax_level,ARIMAX (levels),0.373235835275433,0.0143377502281829,0.344561252055681,0.40072086760354,Conditional model-only interval; fixed economic and demographic drivers
+2031,arimax_level,ARIMAX (levels),0.372111450759173,0.0143513989811682,0.34328553566459,0.400357083469572,Conditional model-only interval; fixed economic and demographic drivers
+2032,arimax_level,ARIMAX (levels),0.371875140485612,0.0147250883247096,0.342183627714663,0.401242295898455,Conditional model-only interval; fixed economic and demographic drivers
+2033,arimax_level,ARIMAX (levels),0.372669770264291,0.0147882047896575,0.342255730709008,0.401331583217946,Conditional model-only interval; fixed economic and demographic drivers
+2034,arimax_level,ARIMAX (levels),0.373953344389689,0.0150231111081032,0.344566295299042,0.403160261344927,Conditional model-only interval; fixed economic and demographic drivers
+2035,arimax_level,ARIMAX (levels),0.375489233630045,0.0152071236425305,0.344846590886535,0.404894997015929,Conditional model-only interval; fixed economic and demographic drivers
+2036,arimax_level,ARIMAX (levels),0.377759246650455,0.0150676137311279,0.348510633027131,0.406876819383316,Conditional model-only interval; fixed economic and demographic drivers
+2037,arimax_level,ARIMAX (levels),0.3791995274507,0.0151081927349852,0.349518866510033,0.407418322608509,Conditional model-only interval; fixed economic and demographic drivers
+2038,arimax_level,ARIMAX (levels),0.380678484335741,0.0153853684778623,0.351527891897175,0.41038999658693,Conditional model-only interval; fixed economic and demographic drivers
+2039,arimax_level,ARIMAX (levels),0.3816972213357,0.0155262243969088,0.351261195630654,0.411893917170735,Conditional model-only interval; fixed economic and demographic drivers
+2040,arimax_level,ARIMAX (levels),0.382805172170121,0.0154449049846143,0.353054354709879,0.412578701252643,Conditional model-only interval; fixed economic and demographic drivers
+2041,arimax_level,ARIMAX (levels),0.383904186268998,0.015294318566888,0.353576781015337,0.414092486394268,Conditional model-only interval; fixed economic and demographic drivers
+2042,arimax_level,ARIMAX (levels),0.385156911458093,0.0151880021262543,0.355551645644485,0.415239180462372,Conditional model-only interval; fixed economic and demographic drivers
+2043,arimax_level,ARIMAX (levels),0.386284444363986,0.0150907309798779,0.358360419311812,0.415206653948671,Conditional model-only interval; fixed economic and demographic drivers
+2044,arimax_level,ARIMAX (levels),0.387274969014996,0.0149992194796948,0.358945274603048,0.416389865671826,Conditional model-only interval; fixed economic and demographic drivers
+2045,arimax_level,ARIMAX (levels),0.388149697192342,0.0150073962572528,0.359697448570892,0.417923868178076,Conditional model-only interval; fixed economic and demographic drivers
+2046,arimax_level,ARIMAX (levels),0.38915009479217,0.0151768988972551,0.360472359441796,0.418363082868285,Conditional model-only interval; fixed economic and demographic drivers
+2047,arimax_level,ARIMAX (levels),0.39043713636423,0.0150686060571585,0.361128490207884,0.420125276279659,Conditional model-only interval; fixed economic and demographic drivers
+2048,arimax_level,ARIMAX (levels),0.392044081337427,0.0152230891663759,0.362648633203426,0.423090172323127,Conditional model-only interval; fixed economic and demographic drivers
+2049,arimax_level,ARIMAX (levels),0.393166489705852,0.0152523806034151,0.363591292232156,0.422633336312137,Conditional model-only interval; fixed economic and demographic drivers
+2050,arimax_level,ARIMAX (levels),0.394332213209863,0.0152650248395395,0.364168927959974,0.423995377120867,Conditional model-only interval; fixed economic and demographic drivers
+2051,arimax_level,ARIMAX (levels),0.395385570733291,0.0152315162744804,0.365743966088542,0.42516700446248,Conditional model-only interval; fixed economic and demographic drivers
+2052,arimax_level,ARIMAX (levels),0.396489722937002,0.0151949220460569,0.368201403650336,0.425488702236886,Conditional model-only interval; fixed economic and demographic drivers
+2053,arimax_level,ARIMAX (levels),0.397492191852238,0.0153623839841524,0.367492100307756,0.428395238412787,Conditional model-only interval; fixed economic and demographic drivers
+2054,arimax_level,ARIMAX (levels),0.398676394250026,0.0155801845614648,0.368461680564326,0.429426893622714,Conditional model-only interval; fixed economic and demographic drivers
+2055,arimax_level,ARIMAX (levels),0.399851289827908,0.0158498940940952,0.369619981758526,0.430390928905702,Conditional model-only interval; fixed economic and demographic drivers
+2056,arimax_level,ARIMAX (levels),0.401002156976511,0.0155943378772759,0.371177277740031,0.431775673457749,Conditional model-only interval; fixed economic and demographic drivers
+2057,arimax_level,ARIMAX (levels),0.401895850886278,0.015124938621388,0.372131826583879,0.432652475501222,Conditional model-only interval; fixed economic and demographic drivers
+2058,arimax_level,ARIMAX (levels),0.402945184014597,0.0151375798583885,0.374230979863817,0.433613154600915,Conditional model-only interval; fixed economic and demographic drivers
+2059,arimax_level,ARIMAX (levels),0.404159917126119,0.0153096036274571,0.374091632393786,0.434096334635059,Conditional model-only interval; fixed economic and demographic drivers
+2060,arimax_level,ARIMAX (levels),0.405618607195501,0.0152637585330842,0.376020103449777,0.435456217129454,Conditional model-only interval; fixed economic and demographic drivers
+2061,arimax_level,ARIMAX (levels),0.406749312362007,0.0151131836264101,0.376625237578409,0.436277948284896,Conditional model-only interval; fixed economic and demographic drivers
+2062,arimax_level,ARIMAX (levels),0.40780704279574,0.0152225416022631,0.378839933304254,0.438763293169582,Conditional model-only interval; fixed economic and demographic drivers
+2063,arimax_level,ARIMAX (levels),0.40901555206979,0.0150791213792722,0.379299378849432,0.438506439170132,Conditional model-only interval; fixed economic and demographic drivers
+2064,arimax_level,ARIMAX (levels),0.410257915431541,0.0150449912421059,0.3816368905949,0.439984857780916,Conditional model-only interval; fixed economic and demographic drivers
+2065,arimax_level,ARIMAX (levels),0.411655668866513,0.0153684621598617,0.381153892751062,0.442058767968974,Conditional model-only interval; fixed economic and demographic drivers
+2066,arimax_level,ARIMAX (levels),0.412929517891168,0.0154374257850019,0.382010064898981,0.442937245293533,Conditional model-only interval; fixed economic and demographic drivers
+2026,arimax_diff,ARIMAX (differences),0.38357769742712,0.00723526487385463,0.369365871750738,0.397429885011085,Conditional model-only interval; fixed economic and demographic drivers
+2027,arimax_diff,ARIMAX (differences),0.382724655379421,0.010180592226119,0.362375859615034,0.403385993102024,Conditional model-only interval; fixed economic and demographic drivers
+2028,arimax_diff,ARIMAX (differences),0.381524730873007,0.0125877276329304,0.3571838299044,0.407229251354963,Conditional model-only interval; fixed economic and demographic drivers
+2029,arimax_diff,ARIMAX (differences),0.379519798489686,0.0143910589066546,0.35142658850578,0.408279115866573,Conditional model-only interval; fixed economic and demographic drivers
+2030,arimax_diff,ARIMAX (differences),0.377591366600608,0.0161358892030252,0.346026659099699,0.410926630540121,Conditional model-only interval; fixed economic and demographic drivers
+2031,arimax_diff,ARIMAX (differences),0.375770552866457,0.0174488162102111,0.341296252901994,0.410001659303075,Conditional model-only interval; fixed economic and demographic drivers
+2032,arimax_diff,ARIMAX (differences),0.373592995023775,0.0188080472858482,0.336790405975466,0.409643485437545,Conditional model-only interval; fixed economic and demographic drivers
+2033,arimax_diff,ARIMAX (differences),0.372942019435021,0.0202305136348509,0.334767408619778,0.412513909940559,Conditional model-only interval; fixed economic and demographic drivers
+2034,arimax_diff,ARIMAX (differences),0.372030033007896,0.0215830319372939,0.331011679111967,0.414912894289884,Conditional model-only interval; fixed economic and demographic drivers
+2035,arimax_diff,ARIMAX (differences),0.371079541200327,0.0226304483111948,0.328726202016051,0.415456174976582,Conditional model-only interval; fixed economic and demographic drivers
+2036,arimax_diff,ARIMAX (differences),0.369569076678383,0.024129133926884,0.322269366979314,0.416966857553805,Conditional model-only interval; fixed economic and demographic drivers
+2037,arimax_diff,ARIMAX (differences),0.368806966249142,0.0255342644235119,0.320392312498753,0.41765585640698,Conditional model-only interval; fixed economic and demographic drivers
+2038,arimax_diff,ARIMAX (differences),0.368156710941687,0.0263401703863765,0.318154102798384,0.420718428405798,Conditional model-only interval; fixed economic and demographic drivers
+2039,arimax_diff,ARIMAX (differences),0.367562394205368,0.0269442117916714,0.315884776589979,0.418905902605135,Conditional model-only interval; fixed economic and demographic drivers
+2040,arimax_diff,ARIMAX (differences),0.366652569818675,0.0280879562434971,0.313021743683055,0.42151888180796,Conditional model-only interval; fixed economic and demographic drivers
+2041,arimax_diff,ARIMAX (differences),0.365991701329987,0.0291507020521157,0.310369586692818,0.421946341087307,Conditional model-only interval; fixed economic and demographic drivers
+2042,arimax_diff,ARIMAX (differences),0.365313250965915,0.0300763687952365,0.306033582858529,0.424276548442026,Conditional model-only interval; fixed economic and demographic drivers
+2043,arimax_diff,ARIMAX (differences),0.364509321358033,0.0309535865485778,0.30404537671491,0.425201934002007,Conditional model-only interval; fixed economic and demographic drivers
+2044,arimax_diff,ARIMAX (differences),0.363991665347122,0.0316005775707136,0.302817825753591,0.425381579725265,Conditional model-only interval; fixed economic and demographic drivers
+2045,arimax_diff,ARIMAX (differences),0.363647425843015,0.0325827298060143,0.300086561906121,0.42873452110954,Conditional model-only interval; fixed economic and demographic drivers
+2046,arimax_diff,ARIMAX (differences),0.362990463850296,0.0335233371628341,0.299088314730048,0.428836910421683,Conditional model-only interval; fixed economic and demographic drivers
+2047,arimax_diff,ARIMAX (differences),0.362478025123231,0.0341556090495792,0.295239018831794,0.42989256522642,Conditional model-only interval; fixed economic and demographic drivers
+2048,arimax_diff,ARIMAX (differences),0.361881080590139,0.0349188923196593,0.294709057205783,0.430236917207703,Conditional model-only interval; fixed economic and demographic drivers
+2049,arimax_diff,ARIMAX (differences),0.361471359441673,0.0357856821127473,0.29251414548751,0.431309285245037,Conditional model-only interval; fixed economic and demographic drivers
+2050,arimax_diff,ARIMAX (differences),0.360706470023291,0.036568989202366,0.288969653177897,0.432902055782193,Conditional model-only interval; fixed economic and demographic drivers
+2051,arimax_diff,ARIMAX (differences),0.360086306539086,0.0373334282362087,0.287687864397248,0.434277704031118,Conditional model-only interval; fixed economic and demographic drivers
+2052,arimax_diff,ARIMAX (differences),0.359382692419041,0.0382390064749269,0.288183125563894,0.435987153511517,Conditional model-only interval; fixed economic and demographic drivers
+2053,arimax_diff,ARIMAX (differences),0.358571295641684,0.038883263734118,0.283155648296623,0.436194039667596,Conditional model-only interval; fixed economic and demographic drivers
+2054,arimax_diff,ARIMAX (differences),0.357794971752714,0.0395437877384844,0.282557496976287,0.434334588542248,Conditional model-only interval; fixed economic and demographic drivers
+2055,arimax_diff,ARIMAX (differences),0.357182201430328,0.0402651115300776,0.28016258417479,0.435759642419506,Conditional model-only interval; fixed economic and demographic drivers
+2056,arimax_diff,ARIMAX (differences),0.356543666092484,0.0412213919040152,0.27878410594486,0.436709004396041,Conditional model-only interval; fixed economic and demographic drivers
+2057,arimax_diff,ARIMAX (differences),0.356248547009891,0.0419803547407072,0.276302995140822,0.439537369471869,Conditional model-only interval; fixed economic and demographic drivers
+2058,arimax_diff,ARIMAX (differences),0.355574307069353,0.0427495255745243,0.275229511455281,0.440032688637419,Conditional model-only interval; fixed economic and demographic drivers
+2059,arimax_diff,ARIMAX (differences),0.354922687619688,0.0432386856120324,0.275294356686664,0.439627549443145,Conditional model-only interval; fixed economic and demographic drivers
+2060,arimax_diff,ARIMAX (differences),0.354301645062151,0.0437505452137645,0.270581790968957,0.439311354682513,Conditional model-only interval; fixed economic and demographic drivers
+2061,arimax_diff,ARIMAX (differences),0.353743049144076,0.0443305417817655,0.268306236587241,0.439161265879514,Conditional model-only interval; fixed economic and demographic drivers
+2062,arimax_diff,ARIMAX (differences),0.353314826207266,0.0451606116307438,0.265641490101319,0.439630097341639,Conditional model-only interval; fixed economic and demographic drivers
+2063,arimax_diff,ARIMAX (differences),0.35244581285767,0.045828609903601,0.263191580882318,0.441549007985392,Conditional model-only interval; fixed economic and demographic drivers
+2064,arimax_diff,ARIMAX (differences),0.351842329628833,0.0461656914797317,0.261863882594043,0.442241347072406,Conditional model-only interval; fixed economic and demographic drivers
+2065,arimax_diff,ARIMAX (differences),0.351598260340523,0.0467341709835547,0.260964299954526,0.443247576134369,Conditional model-only interval; fixed economic and demographic drivers
+2066,arimax_diff,ARIMAX (differences),0.351348632435952,0.0471360344992191,0.261897176406691,0.443479151129784,Conditional model-only interval; fixed economic and demographic drivers
+2026,dynamic_diff,Dynamic differences,0.384608557228822,0.00749024749435763,0.370337705534329,0.399140563676232,Conditional model-only interval; fixed economic and demographic drivers
+2027,dynamic_diff,Dynamic differences,0.385021902346238,0.010682510815821,0.364307487486082,0.406343285470589,Conditional model-only interval; fixed economic and demographic drivers
+2028,dynamic_diff,Dynamic differences,0.384803868532328,0.0132416866489036,0.359345586592705,0.410743094856449,Conditional model-only interval; fixed economic and demographic drivers
+2029,dynamic_diff,Dynamic differences,0.383839415644937,0.0154187472434741,0.3531983255312,0.414135709522183,Conditional model-only interval; fixed economic and demographic drivers
+2030,dynamic_diff,Dynamic differences,0.383037135835752,0.0168778415787778,0.349652734220517,0.416241211418024,Conditional model-only interval; fixed economic and demographic drivers
+2031,dynamic_diff,Dynamic differences,0.382338456056627,0.018700450281332,0.346480743332389,0.419635054533016,Conditional model-only interval; fixed economic and demographic drivers
+2032,dynamic_diff,Dynamic differences,0.381356764999051,0.0201251500417832,0.342568183072147,0.42281753197872,Conditional model-only interval; fixed economic and demographic drivers
+2033,dynamic_diff,Dynamic differences,0.382501461707055,0.0211986132211378,0.341197903582697,0.425466087373143,Conditional model-only interval; fixed economic and demographic drivers
+2034,dynamic_diff,Dynamic differences,0.381650763996484,0.0222532626201057,0.338984005729256,0.425606606901589,Conditional model-only interval; fixed economic and demographic drivers
+2035,dynamic_diff,Dynamic differences,0.380586625680507,0.0236963498996959,0.334608280281956,0.426880009028098,Conditional model-only interval; fixed economic and demographic drivers
+2036,dynamic_diff,Dynamic differences,0.379215639108259,0.0247713175749683,0.329746784093847,0.42768342506871,Conditional model-only interval; fixed economic and demographic drivers
+2037,dynamic_diff,Dynamic differences,0.37873485015243,0.0258453510047406,0.328618572945324,0.42872838824058,Conditional model-only interval; fixed economic and demographic drivers
+2038,dynamic_diff,Dynamic differences,0.378023375199628,0.0266377957547264,0.32714102807013,0.430210612915175,Conditional model-only interval; fixed economic and demographic drivers
+2039,dynamic_diff,Dynamic differences,0.377396040579021,0.0279970531174807,0.324324254749538,0.432193383654546,Conditional model-only interval; fixed economic and demographic drivers
+2040,dynamic_diff,Dynamic differences,0.376473976368527,0.0290005710157147,0.320751213842286,0.434684603239276,Conditional model-only interval; fixed economic and demographic drivers
+2041,dynamic_diff,Dynamic differences,0.375647680877938,0.0300672046253064,0.317400896355083,0.434604831571447,Conditional model-only interval; fixed economic and demographic drivers
+2042,dynamic_diff,Dynamic differences,0.374848998017597,0.0309535572257048,0.316889642913337,0.435266713462103,Conditional model-only interval; fixed economic and demographic drivers
+2043,dynamic_diff,Dynamic differences,0.374400149380341,0.0321102886229238,0.31223217231612,0.43644749154477,Conditional model-only interval; fixed economic and demographic drivers
+2044,dynamic_diff,Dynamic differences,0.373830286194685,0.0330437131946664,0.31090409654365,0.437138629749948,Conditional model-only interval; fixed economic and demographic drivers
+2045,dynamic_diff,Dynamic differences,0.373121633242888,0.0338297854255912,0.306849178914128,0.439175472061895,Conditional model-only interval; fixed economic and demographic drivers
+2046,dynamic_diff,Dynamic differences,0.372624932745966,0.0344181456446009,0.304118508576773,0.441364991523262,Conditional model-only interval; fixed economic and demographic drivers
+2047,dynamic_diff,Dynamic differences,0.372074494984753,0.0354606353231363,0.304000470268939,0.442129484404838,Conditional model-only interval; fixed economic and demographic drivers
+2048,dynamic_diff,Dynamic differences,0.371621711950365,0.0362657885187788,0.300132396554161,0.443796379679609,Conditional model-only interval; fixed economic and demographic drivers
+2049,dynamic_diff,Dynamic differences,0.371154922272072,0.0369432186764437,0.297059692142307,0.443823469730777,Conditional model-only interval; fixed economic and demographic drivers
+2050,dynamic_diff,Dynamic differences,0.370578908760402,0.0375441654816283,0.294340905675342,0.444005569583246,Conditional model-only interval; fixed economic and demographic drivers
+2051,dynamic_diff,Dynamic differences,0.369773102221248,0.0385209503286236,0.289790334746737,0.445399284522847,Conditional model-only interval; fixed economic and demographic drivers
+2052,dynamic_diff,Dynamic differences,0.369002900456414,0.0393882391844202,0.289144802514073,0.447179192048703,Conditional model-only interval; fixed economic and demographic drivers
+2053,dynamic_diff,Dynamic differences,0.368417092150143,0.0402222978571923,0.286910714799852,0.447040849725399,Conditional model-only interval; fixed economic and demographic drivers
+2054,dynamic_diff,Dynamic differences,0.367731331713829,0.0408692491109527,0.282896478975784,0.448691278097465,Conditional model-only interval; fixed economic and demographic drivers
+2055,dynamic_diff,Dynamic differences,0.366995437233272,0.0414649934887063,0.28246358750599,0.450082577769662,Conditional model-only interval; fixed economic and demographic drivers
+2056,dynamic_diff,Dynamic differences,0.366009117918952,0.0423331690774275,0.280846841570747,0.451076295276397,Conditional model-only interval; fixed economic and demographic drivers
+2057,dynamic_diff,Dynamic differences,0.365199995866168,0.0430680361425881,0.280172583846933,0.451347816972621,Conditional model-only interval; fixed economic and demographic drivers
+2058,dynamic_diff,Dynamic differences,0.364583221320004,0.043820996371419,0.275297802213056,0.452421659340024,Conditional model-only interval; fixed economic and demographic drivers
+2059,dynamic_diff,Dynamic differences,0.364008000768835,0.0445106477826654,0.276325805375141,0.451879223337265,Conditional model-only interval; fixed economic and demographic drivers
+2060,dynamic_diff,Dynamic differences,0.363444075561553,0.0450113206002321,0.274782837556319,0.452514621809999,Conditional model-only interval; fixed economic and demographic drivers
+2061,dynamic_diff,Dynamic differences,0.36275910746391,0.0459673351474549,0.272331127320927,0.453942961151601,Conditional model-only interval; fixed economic and demographic drivers
+2062,dynamic_diff,Dynamic differences,0.362022258065676,0.0464869175553216,0.27143161228223,0.453465360528386,Conditional model-only interval; fixed economic and demographic drivers
+2063,dynamic_diff,Dynamic differences,0.361346034895417,0.047219026819373,0.26784523731402,0.455069372704823,Conditional model-only interval; fixed economic and demographic drivers
+2064,dynamic_diff,Dynamic differences,0.360501303724013,0.0478767755205094,0.266890421839284,0.453110727190452,Conditional model-only interval; fixed economic and demographic drivers
+2065,dynamic_diff,Dynamic differences,0.359594014592906,0.0485850609861014,0.264033833392574,0.452024047235735,Conditional model-only interval; fixed economic and demographic drivers
+2066,dynamic_diff,Dynamic differences,0.358936058806773,0.0493824376691471,0.261604730262444,0.455452317881327,Conditional model-only interval; fixed economic and demographic drivers
+2026,hybrid,Hybrid structural/macro,0.385929888964836,0.00795300016303083,0.369876171071406,0.401046212946955,Conditional model-only interval; fixed economic and demographic drivers
+2027,hybrid,Hybrid structural/macro,0.387930631315981,0.0115780800105372,0.365743725416139,0.410759683389377,Conditional model-only interval; fixed economic and demographic drivers
+2028,hybrid,Hybrid structural/macro,0.389469155656025,0.014169095355892,0.361891240905197,0.41688062650628,Conditional model-only interval; fixed economic and demographic drivers
+2029,hybrid,Hybrid structural/macro,0.390097546419595,0.016505503661724,0.358073942937836,0.422764742010929,Conditional model-only interval; fixed economic and demographic drivers
+2030,hybrid,Hybrid structural/macro,0.390380231900286,0.0183324341960616,0.353968540463608,0.425703083814339,Conditional model-only interval; fixed economic and demographic drivers
+2031,hybrid,Hybrid structural/macro,0.390722329960976,0.0199054855662293,0.351720673653015,0.429701403256893,Conditional model-only interval; fixed economic and demographic drivers
+2032,hybrid,Hybrid structural/macro,0.391337360438062,0.0215502626888283,0.34912999003223,0.432595734660204,Conditional model-only interval; fixed economic and demographic drivers
+2033,hybrid,Hybrid structural/macro,0.390568392430299,0.0230193356624261,0.345257027214195,0.435417393145404,Conditional model-only interval; fixed economic and demographic drivers
+2034,hybrid,Hybrid structural/macro,0.391334639409177,0.0244214423759926,0.343360613561781,0.439107197864722,Conditional model-only interval; fixed economic and demographic drivers
+2035,hybrid,Hybrid structural/macro,0.392159175190255,0.0259771917285214,0.340373970246038,0.443280536857611,Conditional model-only interval; fixed economic and demographic drivers
+2036,hybrid,Hybrid structural/macro,0.39369058315905,0.0273438741886116,0.340064483369763,0.447230236708239,Conditional model-only interval; fixed economic and demographic drivers
+2037,hybrid,Hybrid structural/macro,0.394319784687101,0.0285652158859837,0.339449842827422,0.451128212128852,Conditional model-only interval; fixed economic and demographic drivers
+2038,hybrid,Hybrid structural/macro,0.39472561780221,0.0298041452047964,0.336753147411343,0.454266309699457,Conditional model-only interval; fixed economic and demographic drivers
+2039,hybrid,Hybrid structural/macro,0.395378047279038,0.0308810525067997,0.336056831563535,0.457001751737227,Conditional model-only interval; fixed economic and demographic drivers
+2040,hybrid,Hybrid structural/macro,0.396128844820264,0.0316732752737551,0.334946674349306,0.456846796362678,Conditional model-only interval; fixed economic and demographic drivers
+2041,hybrid,Hybrid structural/macro,0.396859414494821,0.0327503671455723,0.33359231997884,0.459163746102365,Conditional model-only interval; fixed economic and demographic drivers
+2042,hybrid,Hybrid structural/macro,0.397244669403254,0.0338975242875245,0.332312894511265,0.463487759115311,Conditional model-only interval; fixed economic and demographic drivers
+2043,hybrid,Hybrid structural/macro,0.398074640778135,0.034979092989816,0.330243377740309,0.464664456002117,Conditional model-only interval; fixed economic and demographic drivers
+2044,hybrid,Hybrid structural/macro,0.398625819194032,0.0360434759799528,0.330288702034686,0.467904516354237,Conditional model-only interval; fixed economic and demographic drivers
+2045,hybrid,Hybrid structural/macro,0.399049663338402,0.0370214415211107,0.327436175361298,0.469389732857421,Conditional model-only interval; fixed economic and demographic drivers
+2046,hybrid,Hybrid structural/macro,0.399650051004261,0.0379890694883659,0.326498766105478,0.472685771311435,Conditional model-only interval; fixed economic and demographic drivers
+2047,hybrid,Hybrid structural/macro,0.400149108959477,0.0386391322788097,0.323699976627275,0.474973335023577,Conditional model-only interval; fixed economic and demographic drivers
+2048,hybrid,Hybrid structural/macro,0.400917310913024,0.0393990718444323,0.321252215019582,0.475521617848783,Conditional model-only interval; fixed economic and demographic drivers
+2049,hybrid,Hybrid structural/macro,0.401683059170571,0.0402308528984439,0.320614460013729,0.479862858298657,Conditional model-only interval; fixed economic and demographic drivers
+2050,hybrid,Hybrid structural/macro,0.402292958275697,0.0412109595532572,0.32068150613317,0.482990464186409,Conditional model-only interval; fixed economic and demographic drivers
+2051,hybrid,Hybrid structural/macro,0.402895793222732,0.0418680280361717,0.318558740781833,0.486916201064279,Conditional model-only interval; fixed economic and demographic drivers
+2052,hybrid,Hybrid structural/macro,0.403466121562654,0.0424642056974535,0.317817728651884,0.487457967701573,Conditional model-only interval; fixed economic and demographic drivers
+2053,hybrid,Hybrid structural/macro,0.404278786688061,0.0436041744570054,0.31836238413015,0.489789895491922,Conditional model-only interval; fixed economic and demographic drivers
+2054,hybrid,Hybrid structural/macro,0.40461631122488,0.0444198657825939,0.316936758573158,0.492536233306948,Conditional model-only interval; fixed economic and demographic drivers
+2055,hybrid,Hybrid structural/macro,0.405370545729648,0.0448447909937077,0.316667948483853,0.491861472005514,Conditional model-only interval; fixed economic and demographic drivers
+2056,hybrid,Hybrid structural/macro,0.406080969994091,0.0457872070690689,0.317079024700436,0.494316085821791,Conditional model-only interval; fixed economic and demographic drivers
+2057,hybrid,Hybrid structural/macro,0.406882125261981,0.0467443303326093,0.313978567913658,0.496792180262608,Conditional model-only interval; fixed economic and demographic drivers
+2058,hybrid,Hybrid structural/macro,0.407132002945432,0.047229593951786,0.314889532867929,0.498701252582717,Conditional model-only interval; fixed economic and demographic drivers
+2059,hybrid,Hybrid structural/macro,0.407585959407169,0.047662979259209,0.314409550632783,0.498308396855689,Conditional model-only interval; fixed economic and demographic drivers
+2060,hybrid,Hybrid structural/macro,0.408237669729754,0.048601739460675,0.313686686211837,0.499295626134416,Conditional model-only interval; fixed economic and demographic drivers
+2061,hybrid,Hybrid structural/macro,0.409067629118543,0.049173085175614,0.313769161487332,0.502653693575239,Conditional model-only interval; fixed economic and demographic drivers
+2062,hybrid,Hybrid structural/macro,0.409734002048011,0.0499186032315171,0.309771243426262,0.503399159889494,Conditional model-only interval; fixed economic and demographic drivers
+2063,hybrid,Hybrid structural/macro,0.410502681658388,0.0506204725980479,0.314214389779686,0.508533131506154,Conditional model-only interval; fixed economic and demographic drivers
+2064,hybrid,Hybrid structural/macro,0.411247990434254,0.0510143956170129,0.312158836353818,0.507951570077009,Conditional model-only interval; fixed economic and demographic drivers
+2065,hybrid,Hybrid structural/macro,0.411831953751671,0.0515632259684605,0.312403065235168,0.509989593279859,Conditional model-only interval; fixed economic and demographic drivers
+2066,hybrid,Hybrid structural/macro,0.4127425105079,0.0522073009523349,0.310206572190846,0.510704351328428,Conditional model-only interval; fixed economic and demographic drivers
+2026,ardl_ecm,ARDL error-correction model,0.384609650303249,0.00747990875448424,0.370108650645269,0.399730598626186,Conditional model-only interval; fixed economic and demographic drivers
+2027,ardl_ecm,ARDL error-correction model,0.383647469449748,0.0106102023044319,0.363804575220517,0.404642669861914,Conditional model-only interval; fixed economic and demographic drivers
+2028,ardl_ecm,ARDL error-correction model,0.382662898205381,0.0117311910107869,0.360082019390958,0.405411592872665,Conditional model-only interval; fixed economic and demographic drivers
+2029,ardl_ecm,ARDL error-correction model,0.381600593688419,0.0121485909362493,0.357739390215203,0.404873077999127,Conditional model-only interval; fixed economic and demographic drivers
+2030,ardl_ecm,ARDL error-correction model,0.38088684209358,0.0120837094612098,0.358271275672155,0.404582272818062,Conditional model-only interval; fixed economic and demographic drivers
+2031,ardl_ecm,ARDL error-correction model,0.380608722884372,0.012135234073985,0.357551980173397,0.403970613037786,Conditional model-only interval; fixed economic and demographic drivers
+2032,ardl_ecm,ARDL error-correction model,0.380840075550049,0.0123791675258294,0.357209301214988,0.405697470023551,Conditional model-only interval; fixed economic and demographic drivers
+2033,ardl_ecm,ARDL error-correction model,0.38249235527717,0.012414165156342,0.35756328253426,0.406897903176742,Conditional model-only interval; fixed economic and demographic drivers
+2034,ardl_ecm,ARDL error-correction model,0.383600924740215,0.0123474179128647,0.359240044817239,0.40843501720419,Conditional model-only interval; fixed economic and demographic drivers
+2035,ardl_ecm,ARDL error-correction model,0.385455138280257,0.0124445658236482,0.36117722530176,0.409338387093562,Conditional model-only interval; fixed economic and demographic drivers
+2036,ardl_ecm,ARDL error-correction model,0.387256065242412,0.0124473122637384,0.36230539284114,0.411402446747069,Conditional model-only interval; fixed economic and demographic drivers
+2037,ardl_ecm,ARDL error-correction model,0.389529980318963,0.0124276797789537,0.365009203566967,0.413496144014563,Conditional model-only interval; fixed economic and demographic drivers
+2038,ardl_ecm,ARDL error-correction model,0.391547023538015,0.012308194999417,0.367237985370813,0.415424377026967,Conditional model-only interval; fixed economic and demographic drivers
+2039,ardl_ecm,ARDL error-correction model,0.393814214927601,0.0126907293308336,0.368336598608805,0.418765789228067,Conditional model-only interval; fixed economic and demographic drivers
+2040,ardl_ecm,ARDL error-correction model,0.395667552346733,0.0125638216622146,0.370690349357212,0.419534930062137,Conditional model-only interval; fixed economic and demographic drivers
+2041,ardl_ecm,ARDL error-correction model,0.397429087949577,0.012710958536184,0.373011836696101,0.421537529769478,Conditional model-only interval; fixed economic and demographic drivers
+2042,ardl_ecm,ARDL error-correction model,0.399306675176312,0.0127991780350599,0.374442782097837,0.424186463041721,Conditional model-only interval; fixed economic and demographic drivers
+2043,ardl_ecm,ARDL error-correction model,0.401455961743415,0.0126391677367635,0.377602049928703,0.426550684814962,Conditional model-only interval; fixed economic and demographic drivers
+2044,ardl_ecm,ARDL error-correction model,0.403299965488012,0.012771607996296,0.377992549140078,0.428501572564234,Conditional model-only interval; fixed economic and demographic drivers
+2045,ardl_ecm,ARDL error-correction model,0.40481834224846,0.0128797228051641,0.379663173743336,0.429835237263418,Conditional model-only interval; fixed economic and demographic drivers
+2046,ardl_ecm,ARDL error-correction model,0.406591378890065,0.0127733645027524,0.382039433876837,0.431591712017473,Conditional model-only interval; fixed economic and demographic drivers
+2047,ardl_ecm,ARDL error-correction model,0.408480161723691,0.0124489429978618,0.383544291251372,0.432797741973487,Conditional model-only interval; fixed economic and demographic drivers
+2048,ardl_ecm,ARDL error-correction model,0.410477438248298,0.0125827462213037,0.385346641671393,0.434194175000434,Conditional model-only interval; fixed economic and demographic drivers
+2049,ardl_ecm,ARDL error-correction model,0.412102728488377,0.0123559529362174,0.387621190069326,0.436822107091144,Conditional model-only interval; fixed economic and demographic drivers
+2050,ardl_ecm,ARDL error-correction model,0.413600546865285,0.0124395501279846,0.38963339230064,0.438510787632423,Conditional model-only interval; fixed economic and demographic drivers
+2051,ardl_ecm,ARDL error-correction model,0.415496520294204,0.0125195398382091,0.39093552353219,0.440653378106785,Conditional model-only interval; fixed economic and demographic drivers
+2052,ardl_ecm,ARDL error-correction model,0.417357807660969,0.0125670821040412,0.393392826846756,0.442522722029707,Conditional model-only interval; fixed economic and demographic drivers
+2053,ardl_ecm,ARDL error-correction model,0.41910238715355,0.0122196119399578,0.395414374205699,0.443411886625541,Conditional model-only interval; fixed economic and demographic drivers
+2054,ardl_ecm,ARDL error-correction model,0.420963073754599,0.0123727112399584,0.397197149495081,0.444822485802693,Conditional model-only interval; fixed economic and demographic drivers
+2055,ardl_ecm,ARDL error-correction model,0.422718137926099,0.0124904166701639,0.398328564706595,0.446528970091986,Conditional model-only interval; fixed economic and demographic drivers
+2056,ardl_ecm,ARDL error-correction model,0.42435184503658,0.0125742110694536,0.399714703030503,0.447502880426616,Conditional model-only interval; fixed economic and demographic drivers
+2057,ardl_ecm,ARDL error-correction model,0.425928871087938,0.0125011755072652,0.401924656347885,0.450931618685458,Conditional model-only interval; fixed economic and demographic drivers
+2058,ardl_ecm,ARDL error-correction model,0.42765171139076,0.0124818113202636,0.402924981927719,0.45179012652149,Conditional model-only interval; fixed economic and demographic drivers
+2059,ardl_ecm,ARDL error-correction model,0.429503200420023,0.0123709211964922,0.404927831406988,0.453320658475763,Conditional model-only interval; fixed economic and demographic drivers
+2060,ardl_ecm,ARDL error-correction model,0.431285281126256,0.012114524612858,0.407000510675097,0.455441130612722,Conditional model-only interval; fixed economic and demographic drivers
+2061,ardl_ecm,ARDL error-correction model,0.433145209295663,0.0123684627439726,0.409611755831732,0.458173641890283,Conditional model-only interval; fixed economic and demographic drivers
+2062,ardl_ecm,ARDL error-correction model,0.435126236972898,0.0125260327464865,0.411603747961195,0.459979420235441,Conditional model-only interval; fixed economic and demographic drivers
+2063,ardl_ecm,ARDL error-correction model,0.437035700823056,0.0126236598618794,0.412354303103327,0.462403258244892,Conditional model-only interval; fixed economic and demographic drivers
+2064,ardl_ecm,ARDL error-correction model,0.438830315252959,0.0126967622087454,0.414289432544149,0.463958143963596,Conditional model-only interval; fixed economic and demographic drivers
+2065,ardl_ecm,ARDL error-correction model,0.440493571538934,0.0125051020570081,0.416986913716411,0.465263603178714,Conditional model-only interval; fixed economic and demographic drivers
+2066,ardl_ecm,ARDL error-correction model,0.442195038116893,0.0124446823365287,0.41887716684153,0.467869739309861,Conditional model-only interval; fixed economic and demographic drivers
+2026,univariate_arima,ARIMA with COVID controls,0.381086925663593,0.00818022990443807,0.364812294714111,0.396515584483995,Conditional model-only interval; fixed economic and demographic drivers
+2027,univariate_arima,ARIMA with COVID controls,0.372932369730756,0.0122360899800391,0.349003163522482,0.395369462138834,Conditional model-only interval; fixed economic and demographic drivers
+2028,univariate_arima,ARIMA with COVID controls,0.364627424758486,0.0151519547567997,0.334629825958519,0.392545326650786,Conditional model-only interval; fixed economic and demographic drivers
+2029,univariate_arima,ARIMA with COVID controls,0.360099707684432,0.0164436478337118,0.327471001622817,0.391447722190423,Conditional model-only interval; fixed economic and demographic drivers
+2030,univariate_arima,ARIMA with COVID controls,0.357266762362005,0.0174050784242457,0.321348211478612,0.390032472618087,Conditional model-only interval; fixed economic and demographic drivers
+2031,univariate_arima,ARIMA with COVID controls,0.35581338623845,0.0175739356161061,0.32025583577141,0.389823885145657,Conditional model-only interval; fixed economic and demographic drivers
+2032,univariate_arima,ARIMA with COVID controls,0.355447728289721,0.0176066366174715,0.320161992096254,0.389060994891441,Conditional model-only interval; fixed economic and demographic drivers
+2033,univariate_arima,ARIMA with COVID controls,0.355235052546854,0.0175343344978975,0.320314361937695,0.390895373338704,Conditional model-only interval; fixed economic and demographic drivers
+2034,univariate_arima,ARIMA with COVID controls,0.355340194988544,0.0174006710217052,0.320717449919725,0.388622654325357,Conditional model-only interval; fixed economic and demographic drivers
+2035,univariate_arima,ARIMA with COVID controls,0.355113371435548,0.0171124116527463,0.31987160682891,0.388387884695405,Conditional model-only interval; fixed economic and demographic drivers
+2036,univariate_arima,ARIMA with COVID controls,0.354897684057126,0.0173753533808654,0.319200672341627,0.388788053350325,Conditional model-only interval; fixed economic and demographic drivers
+2037,univariate_arima,ARIMA with COVID controls,0.35484097374266,0.0172836573044195,0.319899491534609,0.386368797530709,Conditional model-only interval; fixed economic and demographic drivers
+2038,univariate_arima,ARIMA with COVID controls,0.354773540099445,0.0171989276021498,0.320165402283971,0.387769029463528,Conditional model-only interval; fixed economic and demographic drivers
+2039,univariate_arima,ARIMA with COVID controls,0.354539899903433,0.0169418891869559,0.322132292276835,0.388072912204869,Conditional model-only interval; fixed economic and demographic drivers
+2040,univariate_arima,ARIMA with COVID controls,0.354100150565765,0.01699628691318,0.320913860200277,0.388137075249948,Conditional model-only interval; fixed economic and demographic drivers
+2041,univariate_arima,ARIMA with COVID controls,0.353650821754991,0.017072852035139,0.319826496795786,0.386995609074515,Conditional model-only interval; fixed economic and demographic drivers
+2042,univariate_arima,ARIMA with COVID controls,0.353576743107775,0.0167964988316886,0.320236069430862,0.386129788465691,Conditional model-only interval; fixed economic and demographic drivers
+2043,univariate_arima,ARIMA with COVID controls,0.35354947082907,0.0169205607439977,0.32069690579649,0.385875165322731,Conditional model-only interval; fixed economic and demographic drivers
+2044,univariate_arima,ARIMA with COVID controls,0.353195712859278,0.01702240368599,0.319702520161569,0.386399989741592,Conditional model-only interval; fixed economic and demographic drivers
+2045,univariate_arima,ARIMA with COVID controls,0.353209607124163,0.0167143804167917,0.320943120429908,0.385692904697657,Conditional model-only interval; fixed economic and demographic drivers
+2046,univariate_arima,ARIMA with COVID controls,0.353591280927529,0.0166594811356061,0.321207651007017,0.38608419815013,Conditional model-only interval; fixed economic and demographic drivers
+2047,univariate_arima,ARIMA with COVID controls,0.353986852049449,0.0167081117187881,0.319864305862187,0.387484822811901,Conditional model-only interval; fixed economic and demographic drivers
+2048,univariate_arima,ARIMA with COVID controls,0.354390859476477,0.016693029574566,0.321357713137919,0.387279517697095,Conditional model-only interval; fixed economic and demographic drivers
+2049,univariate_arima,ARIMA with COVID controls,0.354640157068968,0.0168536437960473,0.321386909708974,0.388393899063873,Conditional model-only interval; fixed economic and demographic drivers
+2050,univariate_arima,ARIMA with COVID controls,0.35501282717949,0.0169809128766741,0.322117133977704,0.388379533473695,Conditional model-only interval; fixed economic and demographic drivers
+2051,univariate_arima,ARIMA with COVID controls,0.355300722002778,0.0171074914933477,0.322636585913578,0.388769229253511,Conditional model-only interval; fixed economic and demographic drivers
+2052,univariate_arima,ARIMA with COVID controls,0.355388727734535,0.0171287867143418,0.321827519172043,0.388517610704297,Conditional model-only interval; fixed economic and demographic drivers
+2053,univariate_arima,ARIMA with COVID controls,0.355473717889223,0.0172830363713482,0.322530471242986,0.390023312933479,Conditional model-only interval; fixed economic and demographic drivers
+2054,univariate_arima,ARIMA with COVID controls,0.355114782087226,0.0170374095047092,0.322583253927753,0.388505828165534,Conditional model-only interval; fixed economic and demographic drivers
+2055,univariate_arima,ARIMA with COVID controls,0.354702372222826,0.0172513981275262,0.32028845833705,0.388016652542209,Conditional model-only interval; fixed economic and demographic drivers
+2056,univariate_arima,ARIMA with COVID controls,0.35422974255423,0.0173863148053892,0.320312936777804,0.387536009053393,Conditional model-only interval; fixed economic and demographic drivers
+2057,univariate_arima,ARIMA with COVID controls,0.353997147596458,0.0171848954881798,0.32132595446587,0.389022756960032,Conditional model-only interval; fixed economic and demographic drivers
+2058,univariate_arima,ARIMA with COVID controls,0.354406034351227,0.0167487258263661,0.322183714819083,0.386863254523669,Conditional model-only interval; fixed economic and demographic drivers
+2059,univariate_arima,ARIMA with COVID controls,0.354587797304181,0.0165415068722357,0.322746014426121,0.387114332395617,Conditional model-only interval; fixed economic and demographic drivers
+2060,univariate_arima,ARIMA with COVID controls,0.354507536672451,0.0169151489451161,0.321742401518332,0.386676759172332,Conditional model-only interval; fixed economic and demographic drivers
+2061,univariate_arima,ARIMA with COVID controls,0.354728921490543,0.0171082545539259,0.32244785817959,0.388908453066,Conditional model-only interval; fixed economic and demographic drivers
+2062,univariate_arima,ARIMA with COVID controls,0.354884120491369,0.0168762236550121,0.322158149814389,0.388139964035578,Conditional model-only interval; fixed economic and demographic drivers
+2063,univariate_arima,ARIMA with COVID controls,0.35484195450485,0.0168160875902845,0.321993654167503,0.388758040327315,Conditional model-only interval; fixed economic and demographic drivers
+2064,univariate_arima,ARIMA with COVID controls,0.354456549541834,0.01660177153725,0.32168045646908,0.386587973553129,Conditional model-only interval; fixed economic and demographic drivers
+2065,univariate_arima,ARIMA with COVID controls,0.354356015905061,0.0162748528257282,0.321444948668998,0.385738338815858,Conditional model-only interval; fixed economic and demographic drivers
+2066,univariate_arima,ARIMA with COVID controls,0.354530874105351,0.0169105873870018,0.320643045538547,0.386678664905302,Conditional model-only interval; fixed economic and demographic drivers

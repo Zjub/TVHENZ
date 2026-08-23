@@ -1,5 +1,5 @@
 source(file.path("scripts", "00_config.R"))
-source(file.path("R", "model_functions.R"))
+source(file.path("R", "model_functions_2.R"))
 
 historical <- fread(file.path(processed_dir, "historical_top_down_model_data.csv"))
 official <- fread(file.path(processed_dir, "official_pbo_nfo_wide.csv"))
@@ -40,7 +40,10 @@ official_compare <- topdown_paths[
 ]
 official_compare <- merge(
   official_compare,
-  official[, .(year, official_value = expenses_ratio_gdp)],
+  official[, .(
+    year,
+    official_value = expenses_ratio_gdp + net_capital_investment_ratio_gdp
+  )],
   by = "year"
 )
 official_compare[, `:=`(

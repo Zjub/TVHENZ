@@ -1,0 +1,6 @@
+series,first_difference_adf_rejects_unit_root,first_difference_kpss_rejects_stationarity,integration_conclusion
+spending_gdp,TRUE,FALSE,First-difference stationarity supported by both tests; no I(2) warning
+age_0_14,FALSE,FALSE,Inconclusive: ADF and KPSS disagree on first-difference stationarity
+age_65p,FALSE,TRUE,I(2) warning: first-difference stationarity is rejected or not established by both tests
+relative_government_prices,TRUE,FALSE,First-difference stationarity supported by both tests; no I(2) warning
+unemployment,TRUE,FALSE,First-difference stationarity supported by both tests; no I(2) warning

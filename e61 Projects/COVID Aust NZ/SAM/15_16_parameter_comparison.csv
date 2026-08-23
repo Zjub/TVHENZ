@@ -1,0 +1,9 @@
+concept,model15,model16,note
+weekly discount factor,0.99,0.9992152697058329,Model 15 script default is 0.99; model 16 converts a 0.96 annual factor
+pre matching shifter,0.07393993489593625,0.05245031616762816,Not directly comparable because beta and three-agent calibration change
+common search cost,0.34734742911386646,0.5520517206829253,Scale depends on weekly discounting and channel specification
+post matching shifter,0.06771583749571872,0.04776790135858223,Version 16 is disciplined by untreated Australian and both NZ panels
+common separation shock,0.006999999999999999,0.006673989454827066,Version 16 uses a competing-risks form
+differential nonpecuniary work cost,0.03681896191221773,-0.04226992905306097,Signs/references differ: model 15 fits a recipient wedge; version 16 estimates an NZ differential from placebo DiDs
+separation base,0.04799128201097178,0.04795869453087623,Related but version 16 combines risks multiplicatively
+separation amplitude,0.16947149809500867,0.3766539502777931,Benefit-sensitive continuation mechanism

@@ -1,0 +1,17 @@
+outcome,empirical_panel,group,period,data,model15,model16,model15_gap,model16_gap,note
+finding,main,NZ,pre,0.1002,0.10021133405030382,0.0999449185682329,1.13340503038184e-5,-0.0002550814317670985,Version 16 has one NZ agent plus a main-panel measurement offset
+finding,main,AB,pre,0.0868,0.0867808133980439,0.08123287894905112,-1.9186601956100446e-5,-0.005567121050948878,AB is the version-16 recipient agent
+finding,main,NZ,post,0.0823,0.08229999956508058,0.08333504340552791,-4.349194199226858e-10,0.0010350434055279162,Version 16 has one NZ agent plus a main-panel measurement offset
+finding,main,AB,post,0.0518,0.05581084933381092,0.0488647205089602,0.00401084933381092,-0.002935279491039798,AB is the version-16 recipient agent
+separation,main,NZ,pre,0.048,0.048,0.04797807044389323,0.0,-2.1929556106768666e-5,Version 16 has one NZ agent plus a main-panel measurement offset
+separation,main,AB,pre,0.0484,0.0484,0.04886707881287966,0.0,0.00046707881287966213,AB is the version-16 recipient agent
+separation,main,NZ,post,0.055,0.05499999999999998,0.054319298202934345,-2.0816681711721685e-17,-0.0006807017970656554,Version 16 has one NZ agent plus a main-panel measurement offset
+separation,main,AB,post,0.09259999999999999,0.09260000000317158,0.09248166548367695,3.1715879922344925e-12,-0.0001183345163230376,AB is the version-16 recipient agent
+finding,placebo,A0,pre,0.09809999999999999,,0.09844650950989838,,0.00034650950989838225,New version-16 placebo discipline; not present in model 15
+finding,placebo,A0,post,0.08319999999999998,,0.07853138994309382,,-0.004668610056906164,New version-16 placebo discipline; not present in model 15
+finding,placebo,NZ,pre,0.0948,,0.0945449185682329,,-0.0002550814317670985,New version-16 placebo discipline; not present in model 15
+finding,placebo,NZ,post,0.08099999999999999,,0.07793504340552791,,-0.0030649565944720764,New version-16 placebo discipline; not present in model 15
+separation,placebo,A0,pre,0.0505,,0.04797807044389324,,-0.002521929556106764,New version-16 placebo discipline; not present in model 15
+separation,placebo,A0,post,0.0529,,0.0543318547625149,,0.0014318547625148947,New version-16 placebo discipline; not present in model 15
+separation,placebo,NZ,pre,0.048,,0.04797807044389323,,-2.1929556106768666e-5,New version-16 placebo discipline; not present in model 15
+separation,placebo,NZ,post,0.054,,0.054319298202934345,,0.0003192982029343455,New version-16 placebo discipline; not present in model 15

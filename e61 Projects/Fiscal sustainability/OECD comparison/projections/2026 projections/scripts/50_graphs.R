@@ -53,7 +53,7 @@ p3 <- ggplot(official_flows, aes(year, value * 100, colour = series)) +
   geom_line(linewidth = 0.9) +
   geom_vline(xintercept = 2025.5, linetype = "dashed", colour = "grey45") +
   labs(title = "Official consolidated national fiscal anchor", subtitle = "Dashed line separates history/estimate from forecast",
-       x = NULL, y = "% of GDP", colour = NULL, caption = "Source: PBO 2025-26 National Fiscal Outlook.") +
+       x = NULL, y = "% of GDP", colour = NULL, caption = "Source: PBO 2026-27 National Fiscal Outlook.") +
   theme_fiscal()
 save_plot_pair(p3, file.path(figure_dir, "data", "03_official_revenue_expenses"))
 
@@ -62,7 +62,7 @@ p4 <- ggplot(bottom_central, aes(year, share_gdp * 100, fill = category)) +
   geom_area(position = "stack", colour = NA) +
   geom_vline(xintercept = official_forecast_end + 0.5, linetype = "dashed", colour = "white") +
   labs(title = "Bottom-up primary spending by purpose: central scenario",
-       subtitle = "Official total primary spending is imposed through 2028-29; purpose drivers determine the later path",
+       subtitle = "Official total primary spending is imposed through 2029-30; purpose drivers determine the later path",
        x = NULL, y = "% of GDP", fill = NULL,
        caption = "Sources: ABS GFS purpose categories; PBO forecast anchor; Centre for Population; e61 assumptions. Debt interest is added in the debt module.") +
   theme_fiscal() + theme(legend.text = element_text(size = 8))
@@ -85,7 +85,7 @@ contrib[, change_pp := (share_gdp - base_share) * 100]
 p6 <- ggplot(contrib[year >= official_forecast_end], aes(year, change_pp, fill = category)) +
   geom_area(position = "stack") +
   geom_hline(yintercept = 0, colour = "grey30") +
-  labs(title = "Purpose contributions to the central primary-spending change since 2028-29",
+  labs(title = "Purpose contributions to the central primary-spending change since 2029-30",
        x = NULL, y = "Percentage points of GDP", fill = NULL,
        caption = "Contributions are changes in category shares, not causal Shapley estimates.") +
   theme_fiscal() + theme(legend.text = element_text(size = 8))
@@ -105,11 +105,11 @@ top_unanchored <- top[path_type == "Unanchored model projection" & year <= offic
 official_short <- official[year >= projection_start & year <= official_forecast_end]
 p8 <- ggplot(top_unanchored, aes(year, value * 100, colour = model_label)) +
   geom_line(linewidth = 0.9) + geom_point(size = 1.8) +
-  geom_line(data = official_short, aes(year, expenses_ratio_gdp * 100), inherit.aes = FALSE, colour = "black", linewidth = 1.2) +
-  geom_point(data = official_short, aes(year, expenses_ratio_gdp * 100), inherit.aes = FALSE, colour = "black", size = 2) +
+  geom_line(data = official_short, aes(year, (expenses_ratio_gdp + net_capital_investment_ratio_gdp) * 100), inherit.aes = FALSE, colour = "black", linewidth = 1.2) +
+  geom_point(data = official_short, aes(year, (expenses_ratio_gdp + net_capital_investment_ratio_gdp) * 100), inherit.aes = FALSE, colour = "black", size = 2) +
   scale_colour_manual(values = palette_models) +
   labs(title = "Model-only top-down paths during the official forecast period",
-       subtitle = "Black is the official consolidated expense forecast; coloured paths do not use that anchor",
+       subtitle = "Black is PBO expenses plus net capital investment; coloured paths do not use that anchor",
        x = NULL, y = "% of GDP", colour = NULL, caption = "This comparison separates projection mechanics from announced policy forecasts.") + theme_fiscal()
 save_plot_pair(p8, file.path(figure_dir, "top_down", "02_unanchored_forecast_comparison"), 10, 6.5)
 
@@ -158,7 +158,7 @@ p12 <- ggplot(revenue, aes(year, revenue_ratio * 100, colour = scenario)) +
   geom_vline(xintercept = official_forecast_end + 0.5, linetype = "dashed", colour = "grey45") +
   scale_colour_manual(values = palette_scenarios) +
   labs(title = "External revenue anchor and long-run revenue scenarios", x = NULL, y = "% of GDP", colour = NULL,
-       caption = "PBO consolidated revenue through 2028-29. Indexed thresholds are represented by holding revenue/GDP at the endpoint.") + theme_fiscal()
+       caption = "PBO consolidated revenue through 2029-30. Indexed thresholds are represented by holding revenue/GDP at the endpoint.") + theme_fiscal()
 save_plot_pair(p12, file.path(figure_dir, "revenue_debt", "01_revenue_scenarios"))
 
 debt_bottom[, scenario_label := fifelse(
@@ -199,7 +199,7 @@ p15 <- ggplot(comparison_paths, aes(year, value * 100, colour = model_label)) +
   scale_linewidth_manual(values = c(`TRUE` = 1.25, `FALSE` = 0.8), guide = "none") +
   labs(
     title = "Bottom-up and top-down spending projections on a common expense basis",
-    subtitle = "Primary spending is officially anchored through 2028-29; bottom-up total expenses then include endogenous debt interest",
+    subtitle = "Primary spending is officially anchored through 2029-30; bottom-up total expenses then include endogenous debt interest",
     x = NULL, y = "% of GDP", colour = NULL,
     caption = "Top-down paths project aggregate total expenses. The bottom-up path projects primary categories and adds modelled debt interest."
   ) + theme_fiscal()
@@ -244,7 +244,7 @@ p18 <- ggplot(driver_plot, aes(driver_scenario, model_label, fill = endpoint_eff
     title = "Economic-driver sensitivity of the 2065-66 spending projection",
     subtitle = "Cells show the change from each model's baseline endpoint",
     x = NULL, y = NULL, fill = "Percentage\npoints",
-    caption = "Shocks phase in from 2028-29 to 2034-35 and then persist. Other drivers are held fixed."
+    caption = "Shocks phase in from 2029-30 to 2034-35 and then persist. Other drivers are held fixed."
   ) + theme_fiscal() +
   theme(axis.text.x = element_text(angle = 25, hjust = 1))
 save_plot_pair(p18, file.path(figure_dir, "diagnostics", "02_driver_sensitivity"), 11, 6.5)

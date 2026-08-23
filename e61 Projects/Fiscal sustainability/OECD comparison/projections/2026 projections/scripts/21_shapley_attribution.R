@@ -1,10 +1,11 @@
 source(file.path("scripts", "00_config.R"))
+source(file.path("R", "model_functions_2.R"))
 
 historical <- fread(file.path(processed_dir, "historical_top_down_model_data.csv"))
-model_data <- historical[, .(
-  year, broad_expenditure_gdp,
-  age_0_14 = `0_14`, age_15_34 = `15_34`, age_55_64 = `55_64`, age_65p = `65p`,
-  tot_z, rp_z, unemployment, covid
+model_data <- as.data.table(model_feature_frame(historical))
+model_data[, `:=`(
+  year = historical$year,
+  broad_expenditure_gdp = historical$broad_expenditure_gdp
 )]
 
 base_year <- 2000L
@@ -12,11 +13,11 @@ comparison_year <- max(historical$year)
 stopifnot(base_year %in% historical$year, comparison_year > base_year)
 
 factor_columns <- list(
-  Demography = c("age_0_14", "age_15_34", "age_55_64", "age_65p"),
+  Demography = age_level_terms(),
   `Terms of trade` = "tot_z",
   `Relative government prices` = "rp_z",
   Unemployment = "unemployment",
-  `COVID period` = "covid"
+  `COVID period` = covid_dummy_terms()
 )
 factor_names <- names(factor_columns)
 n_factors <- length(factor_names)

@@ -7,14 +7,21 @@ script_order <- c(
   "scripts/02_clean_data.R",
   "scripts/03_assumptions.R",
   "scripts/04_official_forecast.R",
+  "scripts/05_download_bottom_up_drivers.R",
   "scripts/10_bottom_up_projection.R",
+  "scripts/11_bottom_up_data_enhanced.R",
   "scripts/20_top_down_projection.R",
   "scripts/21_shapley_attribution.R",
   "scripts/30_forecast_checks.R",
   "scripts/31_model_diagnostics.R",
+  "scripts/32_ecm_validation.R",
   "scripts/40_revenue_and_debt.R",
   "scripts/50_graphs.R",
-  "scripts/60_word_report.R"
+  "scripts/51_bottom_up_comparison_graphs.R",
+  "scripts/52_peer_review_figures.R",
+  "scripts/60_word_report.R",
+  "scripts/61_model_assessment_note.R",
+  "scripts/62_bottom_up_comparison_report.R"
 )
 
 args <- commandArgs(trailingOnly = FALSE)
