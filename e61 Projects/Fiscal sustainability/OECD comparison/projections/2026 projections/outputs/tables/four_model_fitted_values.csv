@@ -1,0 +1,185 @@
+year,model,actual,fitted,model_label
+1980,structural_ols,0.333103269138001,0.352080765556423,Structural OLS (old-Shapley comparison)
+1981,structural_ols,0.341854541406654,0.347238904984979,Structural OLS (old-Shapley comparison)
+1982,structural_ols,0.34194351027086,0.347380167238653,Structural OLS (old-Shapley comparison)
+1983,structural_ols,0.369170289130503,0.368375840319426,Structural OLS (old-Shapley comparison)
+1984,structural_ols,0.374219801166094,0.373802560452209,Structural OLS (old-Shapley comparison)
+1985,structural_ols,0.384885205434133,0.363464644805075,Structural OLS (old-Shapley comparison)
+1986,structural_ols,0.386757421004678,0.354983248764273,Structural OLS (old-Shapley comparison)
+1987,structural_ols,0.387112871425331,0.356380248715412,Structural OLS (old-Shapley comparison)
+1988,structural_ols,0.361389001685801,0.354818944836985,Structural OLS (old-Shapley comparison)
+1989,structural_ols,0.345975970765878,0.349272790208674,Structural OLS (old-Shapley comparison)
+1990,structural_ols,0.342681221503343,0.345183396748624,Structural OLS (old-Shapley comparison)
+1991,structural_ols,0.357308222125526,0.362014607770494,Structural OLS (old-Shapley comparison)
+1992,structural_ols,0.373256260951802,0.375821993932694,Structural OLS (old-Shapley comparison)
+1993,structural_ols,0.372161555856265,0.380938867897046,Structural OLS (old-Shapley comparison)
+1994,structural_ols,0.370458861335371,0.378124242577495,Structural OLS (old-Shapley comparison)
+1995,structural_ols,0.370609406969422,0.367005156812085,Structural OLS (old-Shapley comparison)
+1996,structural_ols,0.365259991470121,0.363642126466405,Structural OLS (old-Shapley comparison)
+1997,structural_ols,0.356153778449965,0.365376085249539,Structural OLS (old-Shapley comparison)
+1998,structural_ols,0.342296359017782,0.360075097559068,Structural OLS (old-Shapley comparison)
+1999,structural_ols,0.345408985029229,0.351730491137374,Structural OLS (old-Shapley comparison)
+2000,structural_ols,0.344757730483635,0.346753023062704,Structural OLS (old-Shapley comparison)
+2001,structural_ols,0.350668155529801,0.344847838356792,Structural OLS (old-Shapley comparison)
+2002,structural_ols,0.345335135363433,0.347606110898954,Structural OLS (old-Shapley comparison)
+2003,structural_ols,0.338893297616431,0.342238364275782,Structural OLS (old-Shapley comparison)
+2004,structural_ols,0.337763913273131,0.339637938114284,Structural OLS (old-Shapley comparison)
+2005,structural_ols,0.336883717718547,0.336802956826242,Structural OLS (old-Shapley comparison)
+2006,structural_ols,0.333935210831799,0.337061343173877,Structural OLS (old-Shapley comparison)
+2007,structural_ols,0.329632421017543,0.334983709246612,Structural OLS (old-Shapley comparison)
+2008,structural_ols,0.32922316457056,0.333606555851986,Structural OLS (old-Shapley comparison)
+2009,structural_ols,0.350492899653279,0.341074204447655,Structural OLS (old-Shapley comparison)
+2010,structural_ols,0.356366529110526,0.343853125396767,Structural OLS (old-Shapley comparison)
+2011,structural_ols,0.347158149042668,0.347842639808935,Structural OLS (old-Shapley comparison)
+2012,structural_ols,0.349874026949591,0.350333566246098,Structural OLS (old-Shapley comparison)
+2013,structural_ols,0.344430952357823,0.35094938305888,Structural OLS (old-Shapley comparison)
+2014,structural_ols,0.346132712717135,0.355019164458771,Structural OLS (old-Shapley comparison)
+2015,structural_ols,0.348893646518989,0.355350327306713,Structural OLS (old-Shapley comparison)
+2016,structural_ols,0.354659808866871,0.351619862929492,Structural OLS (old-Shapley comparison)
+2017,structural_ols,0.350056716497443,0.356428541944889,Structural OLS (old-Shapley comparison)
+2018,structural_ols,0.349966601492251,0.357137631044274,Structural OLS (old-Shapley comparison)
+2019,structural_ols,0.3489459716794,0.357686816900152,Structural OLS (old-Shapley comparison)
+2020,structural_ols,0.397665294079763,0.397665294079763,Structural OLS (old-Shapley comparison)
+2021,structural_ols,0.420022274506502,0.420022274506502,Structural OLS (old-Shapley comparison)
+2022,structural_ols,0.378859989972692,0.378859989972692,Structural OLS (old-Shapley comparison)
+2023,structural_ols,0.357918223925394,0.361416339837949,Structural OLS (old-Shapley comparison)
+2024,structural_ols,0.373326881738081,0.36015495820119,Structural OLS (old-Shapley comparison)
+2025,structural_ols,0.383410740130003,0.360618547799164,Structural OLS (old-Shapley comparison)
+1980,hybrid,0.333103269138001,,Hybrid spending-share model
+1981,hybrid,0.341854541406654,,Hybrid spending-share model
+1982,hybrid,0.34194351027086,0.338289001089353,Hybrid spending-share model
+1983,hybrid,0.369170289130503,0.357812974236744,Hybrid spending-share model
+1984,hybrid,0.374219801166094,0.369696621834327,Hybrid spending-share model
+1985,hybrid,0.384885205434133,0.366757502949803,Hybrid spending-share model
+1986,hybrid,0.386757421004678,0.387225091481615,Hybrid spending-share model
+1987,hybrid,0.387112871425331,0.388210863456308,Hybrid spending-share model
+1988,hybrid,0.361389001685801,0.377604324063363,Hybrid spending-share model
+1989,hybrid,0.345975970765878,0.345860361238976,Hybrid spending-share model
+1990,hybrid,0.342681221503343,0.338138814764243,Hybrid spending-share model
+1991,hybrid,0.357308222125526,0.354251326594551,Hybrid spending-share model
+1992,hybrid,0.373256260951802,0.36628535217716,Hybrid spending-share model
+1993,hybrid,0.372161555856265,0.374294055098172,Hybrid spending-share model
+1994,hybrid,0.370458861335371,0.366561586788697,Hybrid spending-share model
+1995,hybrid,0.370609406969422,0.362002965500081,Hybrid spending-share model
+1996,hybrid,0.365259991470121,0.368265008077436,Hybrid spending-share model
+1997,hybrid,0.356153778449965,0.360618822489665,Hybrid spending-share model
+1998,hybrid,0.342296359017782,0.345552972699196,Hybrid spending-share model
+1999,hybrid,0.345408985029229,0.329689364954991,Hybrid spending-share model
+2000,hybrid,0.344757730483635,0.342441502233948,Hybrid spending-share model
+2001,hybrid,0.350668155529801,0.345817329703422,Hybrid spending-share model
+2002,hybrid,0.345335135363433,0.349524552090959,Hybrid spending-share model
+2003,hybrid,0.338893297616431,0.338645668486462,Hybrid spending-share model
+2004,hybrid,0.337763913273131,0.329945527741462,Hybrid spending-share model
+2005,hybrid,0.336883717718547,0.334334630456687,Hybrid spending-share model
+2006,hybrid,0.333935210831799,0.334906251725492,Hybrid spending-share model
+2007,hybrid,0.329632421017543,0.329257158656771,Hybrid spending-share model
+2008,hybrid,0.32922316457056,0.325431594576059,Hybrid spending-share model
+2009,hybrid,0.350492899653279,0.332590776725431,Hybrid spending-share model
+2010,hybrid,0.356366529110526,0.362062043879225,Hybrid spending-share model
+2011,hybrid,0.347158149042668,0.350630421170075,Hybrid spending-share model
+2012,hybrid,0.349874026949591,0.347316767112903,Hybrid spending-share model
+2013,hybrid,0.344430952357823,0.353698540013664,Hybrid spending-share model
+2014,hybrid,0.346132712717135,0.340338666050872,Hybrid spending-share model
+2015,hybrid,0.348893646518989,0.349570382409183,Hybrid spending-share model
+2016,hybrid,0.354659808866871,0.347401409292867,Hybrid spending-share model
+2017,hybrid,0.350056716497443,0.353739973691934,Hybrid spending-share model
+2018,hybrid,0.349966601492251,0.34940258349076,Hybrid spending-share model
+2019,hybrid,0.3489459716794,0.347914834566503,Hybrid spending-share model
+2020,hybrid,0.397665294079763,0.394114957215145,Hybrid spending-share model
+2021,hybrid,0.420022274506502,0.417934783190582,Hybrid spending-share model
+2022,hybrid,0.378859989972692,0.36767461784745,Hybrid spending-share model
+2023,hybrid,0.357918223925394,0.366020185178534,Hybrid spending-share model
+2024,hybrid,0.373326881738081,0.359053017722042,Hybrid spending-share model
+2025,hybrid,0.383410740130003,0.379908473967575,Hybrid spending-share model
+1980,per_capita_income,0.333103269138001,,Real spending per capita (differences)
+1981,per_capita_income,0.341854541406654,0.339664297209154,Real spending per capita (differences)
+1982,per_capita_income,0.34194351027086,0.347833986145445,Real spending per capita (differences)
+1983,per_capita_income,0.369170289130503,0.360273126992056,Real spending per capita (differences)
+1984,per_capita_income,0.374219801166094,0.361301142212821,Real spending per capita (differences)
+1985,per_capita_income,0.384885205434133,0.374254879658945,Real spending per capita (differences)
+1986,per_capita_income,0.386757421004678,0.390185741960075,Real spending per capita (differences)
+1987,per_capita_income,0.387112871425331,0.389743471612591,Real spending per capita (differences)
+1988,per_capita_income,0.361389001685801,0.370472481615256,Real spending per capita (differences)
+1989,per_capita_income,0.345975970765878,0.351071596665083,Real spending per capita (differences)
+1990,per_capita_income,0.342681221503343,0.345022435684314,Real spending per capita (differences)
+1991,per_capita_income,0.357308222125526,0.35613210012852,Real spending per capita (differences)
+1992,per_capita_income,0.373256260951802,0.370835118453539,Real spending per capita (differences)
+1993,per_capita_income,0.372161555856265,0.36849643343686,Real spending per capita (differences)
+1994,per_capita_income,0.370458861335371,0.36464844426615,Real spending per capita (differences)
+1995,per_capita_income,0.370609406969422,0.359795673162808,Real spending per capita (differences)
+1996,per_capita_income,0.365259991470121,0.36429878380783,Real spending per capita (differences)
+1997,per_capita_income,0.356153778449965,0.36063977426235,Real spending per capita (differences)
+1998,per_capita_income,0.342296359017782,0.349167445855366,Real spending per capita (differences)
+1999,per_capita_income,0.345408985029229,0.342075672038318,Real spending per capita (differences)
+2000,per_capita_income,0.344757730483635,0.339643854619536,Real spending per capita (differences)
+2001,per_capita_income,0.350668155529801,0.346543805845099,Real spending per capita (differences)
+2002,per_capita_income,0.345335135363433,0.345670629156244,Real spending per capita (differences)
+2003,per_capita_income,0.338893297616431,0.345150943175732,Real spending per capita (differences)
+2004,per_capita_income,0.337763913273131,0.330988317349754,Real spending per capita (differences)
+2005,per_capita_income,0.336883717718547,0.338039904000867,Real spending per capita (differences)
+2006,per_capita_income,0.333935210831799,0.333717763789624,Real spending per capita (differences)
+2007,per_capita_income,0.329632421017543,0.331280231594128,Real spending per capita (differences)
+2008,per_capita_income,0.32922316457056,0.32767316843095,Real spending per capita (differences)
+2009,per_capita_income,0.350492899653279,0.331641759381945,Real spending per capita (differences)
+2010,per_capita_income,0.356366529110526,0.361261348432467,Real spending per capita (differences)
+2011,per_capita_income,0.347158149042668,0.352596519879715,Real spending per capita (differences)
+2012,per_capita_income,0.349874026949591,0.348397710650273,Real spending per capita (differences)
+2013,per_capita_income,0.344430952357823,0.354511508270305,Real spending per capita (differences)
+2014,per_capita_income,0.346132712717135,0.345272379538913,Real spending per capita (differences)
+2015,per_capita_income,0.348893646518989,0.353905574127686,Real spending per capita (differences)
+2016,per_capita_income,0.354659808866871,0.35411928634724,Real spending per capita (differences)
+2017,per_capita_income,0.350056716497443,0.346896272730644,Real spending per capita (differences)
+2018,per_capita_income,0.349966601492251,0.348336199214114,Real spending per capita (differences)
+2019,per_capita_income,0.3489459716794,0.3487612269131,Real spending per capita (differences)
+2020,per_capita_income,0.397665294079763,0.397665294079763,Real spending per capita (differences)
+2021,per_capita_income,0.420022274506502,0.420022274506502,Real spending per capita (differences)
+2022,per_capita_income,0.378859989972692,0.378859989972692,Real spending per capita (differences)
+2023,per_capita_income,0.357918223925394,0.377427502232959,Real spending per capita (differences)
+2024,per_capita_income,0.373326881738081,0.373517864061426,Real spending per capita (differences)
+2025,per_capita_income,0.383410740130003,0.384465306754319,Real spending per capita (differences)
+1980,univariate_arima,0.333103269138001,0.343654171861854,COVID-adjusted ARIMA benchmark
+1981,univariate_arima,0.341854541406654,0.337317720907365,COVID-adjusted ARIMA benchmark
+1982,univariate_arima,0.34194351027086,0.348168507551094,COVID-adjusted ARIMA benchmark
+1983,univariate_arima,0.369170289130503,0.346395897037146,COVID-adjusted ARIMA benchmark
+1984,univariate_arima,0.374219801166094,0.37400265718995,COVID-adjusted ARIMA benchmark
+1985,univariate_arima,0.384885205434133,0.375556329351343,COVID-adjusted ARIMA benchmark
+1986,univariate_arima,0.386757421004678,0.377044460956761,COVID-adjusted ARIMA benchmark
+1987,univariate_arima,0.387112871425331,0.382474339221015,COVID-adjusted ARIMA benchmark
+1988,univariate_arima,0.361389001685801,0.379637036611393,COVID-adjusted ARIMA benchmark
+1989,univariate_arima,0.345975970765878,0.348866339067663,COVID-adjusted ARIMA benchmark
+1990,univariate_arima,0.342681221503343,0.33963272154041,COVID-adjusted ARIMA benchmark
+1991,univariate_arima,0.357308222125526,0.348646487599714,COVID-adjusted ARIMA benchmark
+1992,univariate_arima,0.373256260951802,0.36288859436288,COVID-adjusted ARIMA benchmark
+1993,univariate_arima,0.372161555856265,0.375236128713255,COVID-adjusted ARIMA benchmark
+1994,univariate_arima,0.370458861335371,0.366943301461371,COVID-adjusted ARIMA benchmark
+1995,univariate_arima,0.370609406969422,0.363990388984398,COVID-adjusted ARIMA benchmark
+1996,univariate_arima,0.365259991470121,0.369061816935487,COVID-adjusted ARIMA benchmark
+1997,univariate_arima,0.356153778449965,0.360999900691195,COVID-adjusted ARIMA benchmark
+1998,univariate_arima,0.342296359017782,0.350586039093923,COVID-adjusted ARIMA benchmark
+1999,univariate_arima,0.345408985029229,0.340382768273979,COVID-adjusted ARIMA benchmark
+2000,univariate_arima,0.344757730483635,0.348896085750894,COVID-adjusted ARIMA benchmark
+2001,univariate_arima,0.350668155529801,0.348884178754138,COVID-adjusted ARIMA benchmark
+2002,univariate_arima,0.345335135363433,0.351625494103092,COVID-adjusted ARIMA benchmark
+2003,univariate_arima,0.338893297616431,0.346349636181546,COVID-adjusted ARIMA benchmark
+2004,univariate_arima,0.337763913273131,0.33839004648548,COVID-adjusted ARIMA benchmark
+2005,univariate_arima,0.336883717718547,0.341547733401284,COVID-adjusted ARIMA benchmark
+2006,univariate_arima,0.333935210831799,0.341662336841762,COVID-adjusted ARIMA benchmark
+2007,univariate_arima,0.329632421017543,0.336265859567606,COVID-adjusted ARIMA benchmark
+2008,univariate_arima,0.32922316457056,0.33320251868579,COVID-adjusted ARIMA benchmark
+2009,univariate_arima,0.350492899653279,0.335157151420317,COVID-adjusted ARIMA benchmark
+2010,univariate_arima,0.356366529110526,0.360153340952018,COVID-adjusted ARIMA benchmark
+2011,univariate_arima,0.347158149042668,0.360173315263153,COVID-adjusted ARIMA benchmark
+2012,univariate_arima,0.349874026949591,0.340537557882924,COVID-adjusted ARIMA benchmark
+2013,univariate_arima,0.344430952357823,0.351874686216512,COVID-adjusted ARIMA benchmark
+2014,univariate_arima,0.346132712717135,0.348603329269866,COVID-adjusted ARIMA benchmark
+2015,univariate_arima,0.348893646518989,0.344949569019368,COVID-adjusted ARIMA benchmark
+2016,univariate_arima,0.354659808866871,0.352788650300881,COVID-adjusted ARIMA benchmark
+2017,univariate_arima,0.350056716497443,0.3575731711069,COVID-adjusted ARIMA benchmark
+2018,univariate_arima,0.349966601492251,0.34818873267076,COVID-adjusted ARIMA benchmark
+2019,univariate_arima,0.3489459716794,0.349685518589994,COVID-adjusted ARIMA benchmark
+2020,univariate_arima,0.397665294079763,0.398967306657805,COVID-adjusted ARIMA benchmark
+2021,univariate_arima,0.420022274506502,0.422413387191127,COVID-adjusted ARIMA benchmark
+2022,univariate_arima,0.378859989972692,0.377900860893873,COVID-adjusted ARIMA benchmark
+2023,univariate_arima,0.357918223925394,0.351664185678672,COVID-adjusted ARIMA benchmark
+2024,univariate_arima,0.373326881738081,0.360740781760472,COVID-adjusted ARIMA benchmark
+2025,univariate_arima,0.383410740130003,0.375566911717025,COVID-adjusted ARIMA benchmark

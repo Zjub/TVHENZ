@@ -1,0 +1,51 @@
+model,model_label,demographic_specification,demographic_label,horizon,observations,rmse_pp,mae_pp,bias_pp
+structural_ols,Structural OLS (levels),age_shares,Separate 0-14 and 65+ shares,1,11,3.38856342796503,1.96933343329479,-1.62715572590592
+arimax_level,ARIMAX (levels),age_shares,Separate 0-14 and 65+ shares,1,11,3.1771636756554,1.75233239713442,-1.50368069062416
+arimax_diff,Differenced ARIMAX,age_shares,Separate 0-14 and 65+ shares,1,11,1.80103632342544,1.14030853115936,-0.783844899875879
+hybrid,Hybrid structural/macro,age_shares,Separate 0-14 and 65+ shares,1,11,3.20868065300115,1.65083417005911,-1.478592053009
+ardl_ecm,ARDL error-correction model,age_shares,Separate 0-14 and 65+ shares,1,11,1.8552579543652,1.11194785445075,-0.457322112214183
+structural_ols,Structural OLS (levels),age_shares,Separate 0-14 and 65+ shares,2,11,4.09947070064711,2.77356540131768,-2.36093790884077
+arimax_level,ARIMAX (levels),age_shares,Separate 0-14 and 65+ shares,2,11,3.93963609028591,2.65986429667885,-2.28296852439153
+arimax_diff,Differenced ARIMAX,age_shares,Separate 0-14 and 65+ shares,2,11,3.00011579574053,1.93896376066843,-1.53862588071017
+hybrid,Hybrid structural/macro,age_shares,Separate 0-14 and 65+ shares,2,11,3.76417914062107,2.48232176468926,-2.22492092255138
+ardl_ecm,ARDL error-correction model,age_shares,Separate 0-14 and 65+ shares,2,11,2.88086341351785,1.88928104202626,-0.754645577098577
+structural_ols,Structural OLS (levels),age_shares,Separate 0-14 and 65+ shares,3,11,4.63493219540035,3.40957568177099,-2.95351422770857
+arimax_level,ARIMAX (levels),age_shares,Separate 0-14 and 65+ shares,3,11,4.4393204884658,3.2932252416223,-2.86097445187121
+arimax_diff,Differenced ARIMAX,age_shares,Separate 0-14 and 65+ shares,3,11,3.8045287151855,2.84918591409929,-2.1249643073147
+hybrid,Hybrid structural/macro,age_shares,Separate 0-14 and 65+ shares,3,11,4.24634953610279,3.16124036564615,-2.83953566905832
+ardl_ecm,ARDL error-correction model,age_shares,Separate 0-14 and 65+ shares,3,11,3.39476475210609,2.46523018259703,-0.855318044639865
+structural_ols,Structural OLS (levels),age_shares,Separate 0-14 and 65+ shares,4,11,5.26387214293889,4.03963096228119,-3.67000784675835
+arimax_level,ARIMAX (levels),age_shares,Separate 0-14 and 65+ shares,4,11,5.03105038014703,3.87116572444321,-3.55487762549194
+arimax_diff,Differenced ARIMAX,age_shares,Separate 0-14 and 65+ shares,4,11,4.35086616154833,3.40566866606151,-2.76225769604377
+hybrid,Hybrid structural/macro,age_shares,Separate 0-14 and 65+ shares,4,11,4.89251869043516,3.73923084363609,-3.57027407661375
+ardl_ecm,ARDL error-correction model,age_shares,Separate 0-14 and 65+ shares,4,11,3.6827391581966,2.9758015745447,-1.04701164800155
+structural_ols,Structural OLS (levels),age_shares,Separate 0-14 and 65+ shares,5,11,5.92420064368217,4.72131306183035,-4.47227745588744
+arimax_level,ARIMAX (levels),age_shares,Separate 0-14 and 65+ shares,5,11,5.68562569341786,4.54498398300009,-4.3373829177844
+arimax_diff,Differenced ARIMAX,age_shares,Separate 0-14 and 65+ shares,5,11,4.96739803526813,3.92749582197064,-3.50724405775469
+hybrid,Hybrid structural/macro,age_shares,Separate 0-14 and 65+ shares,5,11,5.60473551360858,4.48714154157244,-4.37317989178704
+ardl_ecm,ARDL error-correction model,age_shares,Separate 0-14 and 65+ shares,5,11,3.94414240195177,3.40361491848934,-1.38023245650155
+structural_ols,Structural OLS (levels),expenditure_profile,Age-expenditure profile index,1,11,3.26549368200533,1.91455854054653,-1.62916242241315
+arimax_level,ARIMAX (levels),expenditure_profile,Age-expenditure profile index,1,11,3.10129570191704,1.76055139267229,-1.49776289624309
+arimax_diff,Differenced ARIMAX,expenditure_profile,Age-expenditure profile index,1,11,1.78906006273194,1.15284972619059,-0.741008507690144
+hybrid,Hybrid structural/macro,expenditure_profile,Age-expenditure profile index,1,11,3.14726327984726,1.67142749644027,-1.33028310861611
+ardl_ecm,ARDL error-correction model,expenditure_profile,Age-expenditure profile index,1,11,1.8552579543652,1.11194785445075,-0.457322112214183
+structural_ols,Structural OLS (levels),expenditure_profile,Age-expenditure profile index,2,11,3.91165724519513,2.69584160064758,-2.34803040299503
+arimax_level,ARIMAX (levels),expenditure_profile,Age-expenditure profile index,2,11,3.84360438656454,2.71131271445931,-2.26904403400164
+arimax_diff,Differenced ARIMAX,expenditure_profile,Age-expenditure profile index,2,11,2.96407092528803,1.94731253958898,-1.45903502260064
+hybrid,Hybrid structural/macro,expenditure_profile,Age-expenditure profile index,2,11,3.63950272618235,2.40075700245385,-2.0782043707931
+ardl_ecm,ARDL error-correction model,expenditure_profile,Age-expenditure profile index,2,11,2.88086341351785,1.88928104202626,-0.754645577098577
+structural_ols,Structural OLS (levels),expenditure_profile,Age-expenditure profile index,3,11,4.39659271228295,3.31901673073871,-2.92644490634854
+arimax_level,ARIMAX (levels),expenditure_profile,Age-expenditure profile index,3,11,4.34319471785586,3.34996562027077,-2.82269281846738
+arimax_diff,Differenced ARIMAX,expenditure_profile,Age-expenditure profile index,3,11,3.73448821157285,2.85061445117575,-2.01758656573681
+hybrid,Hybrid structural/macro,expenditure_profile,Age-expenditure profile index,3,11,4.04524042541297,2.96440982205635,-2.69102026014705
+ardl_ecm,ARDL error-correction model,expenditure_profile,Age-expenditure profile index,3,11,3.39476475210609,2.46523018259703,-0.855318044639865
+structural_ols,Structural OLS (levels),expenditure_profile,Age-expenditure profile index,4,11,4.98255976320577,3.92429423188128,-3.61415634136726
+arimax_level,ARIMAX (levels),expenditure_profile,Age-expenditure profile index,4,11,4.92165666094446,4.03263958689579,-3.47837512632468
+arimax_diff,Differenced ARIMAX,expenditure_profile,Age-expenditure profile index,4,11,4.24461079522521,3.4010055746395,-2.62133817248553
+hybrid,Hybrid structural/macro,expenditure_profile,Age-expenditure profile index,4,11,4.60669042562747,3.4692134173964,-3.35549105427535
+ardl_ecm,ARDL error-correction model,expenditure_profile,Age-expenditure profile index,4,11,3.6827391581966,2.9758015745447,-1.04701164800155
+structural_ols,Structural OLS (levels),expenditure_profile,Age-expenditure profile index,5,11,5.63376892904188,4.57589472179739,-4.38797966364281
+arimax_level,ARIMAX (levels),expenditure_profile,Age-expenditure profile index,5,11,5.58954583534371,4.77153167856351,-4.2182757510541
+arimax_diff,Differenced ARIMAX,expenditure_profile,Age-expenditure profile index,5,11,4.81976891672211,3.85103846422258,-3.33194764447084
+hybrid,Hybrid structural/macro,expenditure_profile,Age-expenditure profile index,5,11,5.23351440815182,4.14599674647044,-4.14599674647044
+ardl_ecm,ARDL error-correction model,expenditure_profile,Age-expenditure profile index,5,11,3.94414240195177,3.40361491848934,-1.38023245650155

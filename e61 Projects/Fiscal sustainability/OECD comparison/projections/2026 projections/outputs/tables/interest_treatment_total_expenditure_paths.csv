@@ -1,0 +1,411 @@
+year,model,model_label,value,series
+2026,structural_ols,Structural OLS (levels),0.387,Previous treatment: interest embedded
+2027,structural_ols,Structural OLS (levels),0.389,Previous treatment: interest embedded
+2028,structural_ols,Structural OLS (levels),0.384,Previous treatment: interest embedded
+2029,structural_ols,Structural OLS (levels),0.378,Previous treatment: interest embedded
+2030,structural_ols,Structural OLS (levels),0.371,Previous treatment: interest embedded
+2031,structural_ols,Structural OLS (levels),0.369544678066247,Previous treatment: interest embedded
+2032,structural_ols,Structural OLS (levels),0.368240298946762,Previous treatment: interest embedded
+2033,structural_ols,Structural OLS (levels),0.369156694778407,Previous treatment: interest embedded
+2034,structural_ols,Structural OLS (levels),0.37030169621449,Previous treatment: interest embedded
+2035,structural_ols,Structural OLS (levels),0.37154686656674,Previous treatment: interest embedded
+2036,structural_ols,Structural OLS (levels),0.373159774149738,Previous treatment: interest embedded
+2037,structural_ols,Structural OLS (levels),0.374014546181595,Previous treatment: interest embedded
+2038,structural_ols,Structural OLS (levels),0.374869318213452,Previous treatment: interest embedded
+2039,structural_ols,Structural OLS (levels),0.37572409024531,Previous treatment: interest embedded
+2040,structural_ols,Structural OLS (levels),0.376578862277168,Previous treatment: interest embedded
+2041,structural_ols,Structural OLS (levels),0.377433634309024,Previous treatment: interest embedded
+2042,structural_ols,Structural OLS (levels),0.378288406340883,Previous treatment: interest embedded
+2043,structural_ols,Structural OLS (levels),0.37914317837274,Previous treatment: interest embedded
+2044,structural_ols,Structural OLS (levels),0.379997950404597,Previous treatment: interest embedded
+2045,structural_ols,Structural OLS (levels),0.380852722436455,Previous treatment: interest embedded
+2046,structural_ols,Structural OLS (levels),0.381707494468313,Previous treatment: interest embedded
+2047,structural_ols,Structural OLS (levels),0.38256226650017,Previous treatment: interest embedded
+2048,structural_ols,Structural OLS (levels),0.383417038532027,Previous treatment: interest embedded
+2049,structural_ols,Structural OLS (levels),0.384271810563885,Previous treatment: interest embedded
+2050,structural_ols,Structural OLS (levels),0.385126582595742,Previous treatment: interest embedded
+2051,structural_ols,Structural OLS (levels),0.3859813546276,Previous treatment: interest embedded
+2052,structural_ols,Structural OLS (levels),0.386836126659457,Previous treatment: interest embedded
+2053,structural_ols,Structural OLS (levels),0.387690898691315,Previous treatment: interest embedded
+2054,structural_ols,Structural OLS (levels),0.388545670723173,Previous treatment: interest embedded
+2055,structural_ols,Structural OLS (levels),0.389400442755029,Previous treatment: interest embedded
+2056,structural_ols,Structural OLS (levels),0.390255214786888,Previous treatment: interest embedded
+2057,structural_ols,Structural OLS (levels),0.391109986818745,Previous treatment: interest embedded
+2058,structural_ols,Structural OLS (levels),0.391964758850602,Previous treatment: interest embedded
+2059,structural_ols,Structural OLS (levels),0.39281953088246,Previous treatment: interest embedded
+2060,structural_ols,Structural OLS (levels),0.393674302914317,Previous treatment: interest embedded
+2061,structural_ols,Structural OLS (levels),0.394529074946175,Previous treatment: interest embedded
+2062,structural_ols,Structural OLS (levels),0.395383846978032,Previous treatment: interest embedded
+2063,structural_ols,Structural OLS (levels),0.39623861900989,Previous treatment: interest embedded
+2064,structural_ols,Structural OLS (levels),0.397093391041747,Previous treatment: interest embedded
+2065,structural_ols,Structural OLS (levels),0.397948163073605,Previous treatment: interest embedded
+2066,structural_ols,Structural OLS (levels),0.398802935105462,Previous treatment: interest embedded
+2026,arimax_level,ARIMAX (levels),0.387,Previous treatment: interest embedded
+2027,arimax_level,ARIMAX (levels),0.389,Previous treatment: interest embedded
+2028,arimax_level,ARIMAX (levels),0.384,Previous treatment: interest embedded
+2029,arimax_level,ARIMAX (levels),0.378,Previous treatment: interest embedded
+2030,arimax_level,ARIMAX (levels),0.371,Previous treatment: interest embedded
+2031,arimax_level,ARIMAX (levels),0.369541762826605,Previous treatment: interest embedded
+2032,arimax_level,ARIMAX (levels),0.369098637914937,Previous treatment: interest embedded
+2033,arimax_level,ARIMAX (levels),0.369915310724275,Previous treatment: interest embedded
+2034,arimax_level,ARIMAX (levels),0.371348341053669,Previous treatment: interest embedded
+2035,arimax_level,ARIMAX (levels),0.373060547340611,Previous treatment: interest embedded
+2036,arimax_level,ARIMAX (levels),0.375315116469891,Previous treatment: interest embedded
+2037,arimax_level,ARIMAX (levels),0.376570630882983,Previous treatment: interest embedded
+2038,arimax_level,ARIMAX (levels),0.37780299965432,Previous treatment: interest embedded
+2039,arimax_level,ARIMAX (levels),0.379007368341039,Previous treatment: interest embedded
+2040,arimax_level,ARIMAX (levels),0.380187392496903,Previous treatment: interest embedded
+2041,arimax_level,ARIMAX (levels),0.381349593954222,Previous treatment: interest embedded
+2042,arimax_level,ARIMAX (levels),0.382500379853399,Previous treatment: interest embedded
+2043,arimax_level,ARIMAX (levels),0.383644800608256,Previous treatment: interest embedded
+2044,arimax_level,ARIMAX (levels),0.384786299631099,Previous treatment: interest embedded
+2045,arimax_level,ARIMAX (levels),0.385926935163348,Previous treatment: interest embedded
+2046,arimax_level,ARIMAX (levels),0.387067757231869,Previous treatment: interest embedded
+2047,arimax_level,ARIMAX (levels),0.388209173500737,Previous treatment: interest embedded
+2048,arimax_level,ARIMAX (levels),0.389351235719146,Previous treatment: interest embedded
+2049,arimax_level,ARIMAX (levels),0.390493833982382,Previous treatment: interest embedded
+2050,arimax_level,ARIMAX (levels),0.391636812199565,Previous treatment: interest embedded
+2051,arimax_level,ARIMAX (levels),0.392780026539831,Previous treatment: interest embedded
+2052,arimax_level,ARIMAX (levels),0.393923367740351,Previous treatment: interest embedded
+2053,arimax_level,ARIMAX (levels),0.39506676351911,Previous treatment: interest embedded
+2054,arimax_level,ARIMAX (levels),0.396210172049401,Previous treatment: interest embedded
+2055,arimax_level,ARIMAX (levels),0.397353572972133,Previous treatment: interest embedded
+2056,arimax_level,ARIMAX (levels),0.398496959197797,Previous treatment: interest embedded
+2057,arimax_level,ARIMAX (levels),0.399640330717279,Previous treatment: interest embedded
+2058,arimax_level,ARIMAX (levels),0.400783690529032,Previous treatment: interest embedded
+2059,arimax_level,ARIMAX (levels),0.401927042296095,Previous treatment: interest embedded
+2060,arimax_level,ARIMAX (levels),0.403070389215811,Previous treatment: interest embedded
+2061,arimax_level,ARIMAX (levels),0.404213733635087,Previous treatment: interest embedded
+2062,arimax_level,ARIMAX (levels),0.405357077060677,Previous treatment: interest embedded
+2063,arimax_level,ARIMAX (levels),0.406500420335076,Previous treatment: interest embedded
+2064,arimax_level,ARIMAX (levels),0.407643763846798,Previous treatment: interest embedded
+2065,arimax_level,ARIMAX (levels),0.408787107712321,Previous treatment: interest embedded
+2066,arimax_level,ARIMAX (levels),0.409930451908859,Previous treatment: interest embedded
+2026,arimax_diff,Differenced ARIMAX,0.387,Previous treatment: interest embedded
+2027,arimax_diff,Differenced ARIMAX,0.389,Previous treatment: interest embedded
+2028,arimax_diff,Differenced ARIMAX,0.384,Previous treatment: interest embedded
+2029,arimax_diff,Differenced ARIMAX,0.378,Previous treatment: interest embedded
+2030,arimax_diff,Differenced ARIMAX,0.371,Previous treatment: interest embedded
+2031,arimax_diff,Differenced ARIMAX,0.370123964176472,Previous treatment: interest embedded
+2032,arimax_diff,Differenced ARIMAX,0.369046547885807,Previous treatment: interest embedded
+2033,arimax_diff,Differenced ARIMAX,0.369962347619676,Previous treatment: interest embedded
+2034,arimax_diff,Differenced ARIMAX,0.369044271772521,Previous treatment: interest embedded
+2035,arimax_diff,Differenced ARIMAX,0.368008082796662,Previous treatment: interest embedded
+2036,arimax_diff,Differenced ARIMAX,0.366673374376631,Previous treatment: interest embedded
+2037,arimax_diff,Differenced ARIMAX,0.366006726808523,Previous treatment: interest embedded
+2038,arimax_diff,Differenced ARIMAX,0.365340079240416,Previous treatment: interest embedded
+2039,arimax_diff,Differenced ARIMAX,0.364673431672308,Previous treatment: interest embedded
+2040,arimax_diff,Differenced ARIMAX,0.3640067841042,Previous treatment: interest embedded
+2041,arimax_diff,Differenced ARIMAX,0.363340136536092,Previous treatment: interest embedded
+2042,arimax_diff,Differenced ARIMAX,0.362673488967984,Previous treatment: interest embedded
+2043,arimax_diff,Differenced ARIMAX,0.362006841399876,Previous treatment: interest embedded
+2044,arimax_diff,Differenced ARIMAX,0.361340193831768,Previous treatment: interest embedded
+2045,arimax_diff,Differenced ARIMAX,0.36067354626366,Previous treatment: interest embedded
+2046,arimax_diff,Differenced ARIMAX,0.360006898695553,Previous treatment: interest embedded
+2047,arimax_diff,Differenced ARIMAX,0.359340251127445,Previous treatment: interest embedded
+2048,arimax_diff,Differenced ARIMAX,0.358673603559337,Previous treatment: interest embedded
+2049,arimax_diff,Differenced ARIMAX,0.358006955991229,Previous treatment: interest embedded
+2050,arimax_diff,Differenced ARIMAX,0.357340308423121,Previous treatment: interest embedded
+2051,arimax_diff,Differenced ARIMAX,0.356673660855013,Previous treatment: interest embedded
+2052,arimax_diff,Differenced ARIMAX,0.356007013286906,Previous treatment: interest embedded
+2053,arimax_diff,Differenced ARIMAX,0.355340365718798,Previous treatment: interest embedded
+2054,arimax_diff,Differenced ARIMAX,0.35467371815069,Previous treatment: interest embedded
+2055,arimax_diff,Differenced ARIMAX,0.354007070582582,Previous treatment: interest embedded
+2056,arimax_diff,Differenced ARIMAX,0.353340423014474,Previous treatment: interest embedded
+2057,arimax_diff,Differenced ARIMAX,0.352673775446366,Previous treatment: interest embedded
+2058,arimax_diff,Differenced ARIMAX,0.352007127878258,Previous treatment: interest embedded
+2059,arimax_diff,Differenced ARIMAX,0.35134048031015,Previous treatment: interest embedded
+2060,arimax_diff,Differenced ARIMAX,0.350673832742043,Previous treatment: interest embedded
+2061,arimax_diff,Differenced ARIMAX,0.350007185173935,Previous treatment: interest embedded
+2062,arimax_diff,Differenced ARIMAX,0.349340537605827,Previous treatment: interest embedded
+2063,arimax_diff,Differenced ARIMAX,0.348673890037719,Previous treatment: interest embedded
+2064,arimax_diff,Differenced ARIMAX,0.348007242469611,Previous treatment: interest embedded
+2065,arimax_diff,Differenced ARIMAX,0.347340594901503,Previous treatment: interest embedded
+2066,arimax_diff,Differenced ARIMAX,0.346673947333396,Previous treatment: interest embedded
+2026,hybrid,Hybrid structural/macro,0.387,Previous treatment: interest embedded
+2027,hybrid,Hybrid structural/macro,0.389,Previous treatment: interest embedded
+2028,hybrid,Hybrid structural/macro,0.384,Previous treatment: interest embedded
+2029,hybrid,Hybrid structural/macro,0.378,Previous treatment: interest embedded
+2030,hybrid,Hybrid structural/macro,0.371,Previous treatment: interest embedded
+2031,hybrid,Hybrid structural/macro,0.371338873989275,Previous treatment: interest embedded
+2032,hybrid,Hybrid structural/macro,0.371930362247583,Previous treatment: interest embedded
+2033,hybrid,Hybrid structural/macro,0.371386353078689,Previous treatment: interest embedded
+2034,hybrid,Hybrid structural/macro,0.37224632652624,Previous treatment: interest embedded
+2035,hybrid,Hybrid structural/macro,0.373247032458886,Previous treatment: interest embedded
+2036,hybrid,Hybrid structural/macro,0.374530282219268,Previous treatment: interest embedded
+2037,hybrid,Hybrid structural/macro,0.37513983518902,Previous treatment: interest embedded
+2038,hybrid,Hybrid structural/macro,0.375749388158771,Previous treatment: interest embedded
+2039,hybrid,Hybrid structural/macro,0.376358941128522,Previous treatment: interest embedded
+2040,hybrid,Hybrid structural/macro,0.376968494098274,Previous treatment: interest embedded
+2041,hybrid,Hybrid structural/macro,0.377578047068024,Previous treatment: interest embedded
+2042,hybrid,Hybrid structural/macro,0.378187600037777,Previous treatment: interest embedded
+2043,hybrid,Hybrid structural/macro,0.378797153007528,Previous treatment: interest embedded
+2044,hybrid,Hybrid structural/macro,0.379406705977279,Previous treatment: interest embedded
+2045,hybrid,Hybrid structural/macro,0.380016258947031,Previous treatment: interest embedded
+2046,hybrid,Hybrid structural/macro,0.380625811916782,Previous treatment: interest embedded
+2047,hybrid,Hybrid structural/macro,0.381235364886533,Previous treatment: interest embedded
+2048,hybrid,Hybrid structural/macro,0.381844917856284,Previous treatment: interest embedded
+2049,hybrid,Hybrid structural/macro,0.382454470826036,Previous treatment: interest embedded
+2050,hybrid,Hybrid structural/macro,0.383064023795787,Previous treatment: interest embedded
+2051,hybrid,Hybrid structural/macro,0.383673576765539,Previous treatment: interest embedded
+2052,hybrid,Hybrid structural/macro,0.38428312973529,Previous treatment: interest embedded
+2053,hybrid,Hybrid structural/macro,0.384892682705041,Previous treatment: interest embedded
+2054,hybrid,Hybrid structural/macro,0.385502235674793,Previous treatment: interest embedded
+2055,hybrid,Hybrid structural/macro,0.386111788644544,Previous treatment: interest embedded
+2056,hybrid,Hybrid structural/macro,0.386721341614296,Previous treatment: interest embedded
+2057,hybrid,Hybrid structural/macro,0.387330894584047,Previous treatment: interest embedded
+2058,hybrid,Hybrid structural/macro,0.387940447553798,Previous treatment: interest embedded
+2059,hybrid,Hybrid structural/macro,0.38855000052355,Previous treatment: interest embedded
+2060,hybrid,Hybrid structural/macro,0.389159553493301,Previous treatment: interest embedded
+2061,hybrid,Hybrid structural/macro,0.389769106463052,Previous treatment: interest embedded
+2062,hybrid,Hybrid structural/macro,0.390378659432804,Previous treatment: interest embedded
+2063,hybrid,Hybrid structural/macro,0.390988212402555,Previous treatment: interest embedded
+2064,hybrid,Hybrid structural/macro,0.391597765372307,Previous treatment: interest embedded
+2065,hybrid,Hybrid structural/macro,0.392207318342058,Previous treatment: interest embedded
+2066,hybrid,Hybrid structural/macro,0.392816871311809,Previous treatment: interest embedded
+2026,ardl_ecm,ARDL error-correction model,0.387,Previous treatment: interest embedded
+2027,ardl_ecm,ARDL error-correction model,0.389,Previous treatment: interest embedded
+2028,ardl_ecm,ARDL error-correction model,0.384,Previous treatment: interest embedded
+2029,ardl_ecm,ARDL error-correction model,0.378,Previous treatment: interest embedded
+2030,ardl_ecm,ARDL error-correction model,0.371,Previous treatment: interest embedded
+2031,ardl_ecm,ARDL error-correction model,0.36748993108061,Previous treatment: interest embedded
+2032,ardl_ecm,ARDL error-correction model,0.364207871939874,Previous treatment: interest embedded
+2033,ardl_ecm,ARDL error-correction model,0.36171038751739,Previous treatment: interest embedded
+2034,ardl_ecm,ARDL error-correction model,0.359225955560426,Previous treatment: interest embedded
+2035,ardl_ecm,ARDL error-correction model,0.356756942723651,Previous treatment: interest embedded
+2036,ardl_ecm,ARDL error-correction model,0.35430233267878,Previous treatment: interest embedded
+2037,ardl_ecm,ARDL error-correction model,0.35150222778952,Previous treatment: interest embedded
+2038,ardl_ecm,ARDL error-correction model,0.348750025895135,Previous treatment: interest embedded
+2039,ardl_ecm,ARDL error-correction model,0.346042583882188,Previous treatment: interest embedded
+2040,ardl_ecm,ARDL error-correction model,0.343377006436298,Previous treatment: interest embedded
+2041,ardl_ecm,ARDL error-correction model,0.340750626637752,Previous treatment: interest embedded
+2042,ardl_ecm,ARDL error-correction model,0.338160988162149,Previous treatment: interest embedded
+2043,ardl_ecm,ARDL error-correction model,0.335605828938621,Previous treatment: interest embedded
+2044,ardl_ecm,ARDL error-correction model,0.3330830661337,Previous treatment: interest embedded
+2045,ardl_ecm,ARDL error-correction model,0.330590782342302,Previous treatment: interest embedded
+2046,ardl_ecm,ARDL error-correction model,0.328127212879311,Previous treatment: interest embedded
+2047,ardl_ecm,ARDL error-correction model,0.325690734075847,Previous treatment: interest embedded
+2048,ardl_ecm,ARDL error-correction model,0.323279852493821,Previous treatment: interest embedded
+2049,ardl_ecm,ARDL error-correction model,0.320893194980539,Previous treatment: interest embedded
+2050,ardl_ecm,ARDL error-correction model,0.31852949949284,Previous treatment: interest embedded
+2051,ardl_ecm,ARDL error-correction model,0.316187606626699,Previous treatment: interest embedded
+2052,ardl_ecm,ARDL error-correction model,0.31386645179427,Previous treatment: interest embedded
+2053,ardl_ecm,ARDL error-correction model,0.311565057995671,Previous treatment: interest embedded
+2054,ardl_ecm,ARDL error-correction model,0.309282529137521,Previous treatment: interest embedded
+2055,ardl_ecm,ARDL error-correction model,0.307018043854595,Previous treatment: interest embedded
+2056,ardl_ecm,ARDL error-correction model,0.304770849794723,Previous treatment: interest embedded
+2057,ardl_ecm,ARDL error-correction model,0.302540258330644,Previous treatment: interest embedded
+2058,ardl_ecm,ARDL error-correction model,0.300325639665529,Previous treatment: interest embedded
+2059,ardl_ecm,ARDL error-correction model,0.298126418301794,Previous treatment: interest embedded
+2060,ardl_ecm,ARDL error-correction model,0.295942068845344,Previous treatment: interest embedded
+2061,ardl_ecm,ARDL error-correction model,0.293772112119706,Previous treatment: interest embedded
+2062,ardl_ecm,ARDL error-correction model,0.291616111566619,Previous treatment: interest embedded
+2063,ardl_ecm,ARDL error-correction model,0.289473669911535,Previous treatment: interest embedded
+2064,ardl_ecm,ARDL error-correction model,0.287344426074231,Previous treatment: interest embedded
+2065,ardl_ecm,ARDL error-correction model,0.285228052306301,Previous treatment: interest embedded
+2066,ardl_ecm,ARDL error-correction model,0.28312425153877,Previous treatment: interest embedded
+2026,structural_ols,Structural OLS (levels),0.387,Preferred treatment: primary plus endogenous interest
+2027,structural_ols,Structural OLS (levels),0.389,Preferred treatment: primary plus endogenous interest
+2028,structural_ols,Structural OLS (levels),0.384,Preferred treatment: primary plus endogenous interest
+2029,structural_ols,Structural OLS (levels),0.378,Preferred treatment: primary plus endogenous interest
+2030,structural_ols,Structural OLS (levels),0.371,Preferred treatment: primary plus endogenous interest
+2031,structural_ols,Structural OLS (levels),0.370272189343357,Preferred treatment: primary plus endogenous interest
+2032,structural_ols,Structural OLS (levels),0.369320828960805,Preferred treatment: primary plus endogenous interest
+2033,structural_ols,Structural OLS (levels),0.369985058332983,Preferred treatment: primary plus endogenous interest
+2034,structural_ols,Structural OLS (levels),0.370714542355876,Preferred treatment: primary plus endogenous interest
+2035,structural_ols,Structural OLS (levels),0.371417937194509,Preferred treatment: primary plus endogenous interest
+2036,structural_ols,Structural OLS (levels),0.372293639775565,Preferred treatment: primary plus endogenous interest
+2037,structural_ols,Structural OLS (levels),0.372771533217348,Preferred treatment: primary plus endogenous interest
+2038,structural_ols,Structural OLS (levels),0.372889435977104,Preferred treatment: primary plus endogenous interest
+2039,structural_ols,Structural OLS (levels),0.37302904555912,Preferred treatment: primary plus endogenous interest
+2040,structural_ols,Structural OLS (levels),0.373190381536099,Preferred treatment: primary plus endogenous interest
+2041,structural_ols,Structural OLS (levels),0.373373463498394,Preferred treatment: primary plus endogenous interest
+2042,structural_ols,Structural OLS (levels),0.373578311054022,Preferred treatment: primary plus endogenous interest
+2043,structural_ols,Structural OLS (levels),0.373804943828681,Preferred treatment: primary plus endogenous interest
+2044,structural_ols,Structural OLS (levels),0.374053381465763,Preferred treatment: primary plus endogenous interest
+2045,structural_ols,Structural OLS (levels),0.374323643626376,Preferred treatment: primary plus endogenous interest
+2046,structural_ols,Structural OLS (levels),0.374615749989353,Preferred treatment: primary plus endogenous interest
+2047,structural_ols,Structural OLS (levels),0.374929720251271,Preferred treatment: primary plus endogenous interest
+2048,structural_ols,Structural OLS (levels),0.375265574126469,Preferred treatment: primary plus endogenous interest
+2049,structural_ols,Structural OLS (levels),0.375623331347061,Preferred treatment: primary plus endogenous interest
+2050,structural_ols,Structural OLS (levels),0.376003011662954,Preferred treatment: primary plus endogenous interest
+2051,structural_ols,Structural OLS (levels),0.376404634841861,Preferred treatment: primary plus endogenous interest
+2052,structural_ols,Structural OLS (levels),0.376828220669322,Preferred treatment: primary plus endogenous interest
+2053,structural_ols,Structural OLS (levels),0.377273788948716,Preferred treatment: primary plus endogenous interest
+2054,structural_ols,Structural OLS (levels),0.377741359501277,Preferred treatment: primary plus endogenous interest
+2055,structural_ols,Structural OLS (levels),0.378230952166115,Preferred treatment: primary plus endogenous interest
+2056,structural_ols,Structural OLS (levels),0.378742586800225,Preferred treatment: primary plus endogenous interest
+2057,structural_ols,Structural OLS (levels),0.379276283278509,Preferred treatment: primary plus endogenous interest
+2058,structural_ols,Structural OLS (levels),0.379832061493789,Preferred treatment: primary plus endogenous interest
+2059,structural_ols,Structural OLS (levels),0.380409941356825,Preferred treatment: primary plus endogenous interest
+2060,structural_ols,Structural OLS (levels),0.381009942796327,Preferred treatment: primary plus endogenous interest
+2061,structural_ols,Structural OLS (levels),0.38163208575898,Preferred treatment: primary plus endogenous interest
+2062,structural_ols,Structural OLS (levels),0.382276390209451,Preferred treatment: primary plus endogenous interest
+2063,structural_ols,Structural OLS (levels),0.382942876130408,Preferred treatment: primary plus endogenous interest
+2064,structural_ols,Structural OLS (levels),0.383631563522538,Preferred treatment: primary plus endogenous interest
+2065,structural_ols,Structural OLS (levels),0.384342472404565,Preferred treatment: primary plus endogenous interest
+2066,structural_ols,Structural OLS (levels),0.385075622813258,Preferred treatment: primary plus endogenous interest
+2026,arimax_level,ARIMAX (levels),0.387,Preferred treatment: primary plus endogenous interest
+2027,arimax_level,ARIMAX (levels),0.389,Preferred treatment: primary plus endogenous interest
+2028,arimax_level,ARIMAX (levels),0.384,Preferred treatment: primary plus endogenous interest
+2029,arimax_level,ARIMAX (levels),0.378,Preferred treatment: primary plus endogenous interest
+2030,arimax_level,ARIMAX (levels),0.371,Preferred treatment: primary plus endogenous interest
+2031,arimax_level,ARIMAX (levels),0.370214676727336,Preferred treatment: primary plus endogenous interest
+2032,arimax_level,ARIMAX (levels),0.369272286761851,Preferred treatment: primary plus endogenous interest
+2033,arimax_level,ARIMAX (levels),0.3693051250652,Preferred treatment: primary plus endogenous interest
+2034,arimax_level,ARIMAX (levels),0.369471767848024,Preferred treatment: primary plus endogenous interest
+2035,arimax_level,ARIMAX (levels),0.369637327742536,Preferred treatment: primary plus endogenous interest
+2036,arimax_level,ARIMAX (levels),0.37003804954127,Preferred treatment: primary plus endogenous interest
+2037,arimax_level,ARIMAX (levels),0.370161276991494,Preferred treatment: primary plus endogenous interest
+2038,arimax_level,ARIMAX (levels),0.369970825516138,Preferred treatment: primary plus endogenous interest
+2039,arimax_level,ARIMAX (levels),0.369838668847596,Preferred treatment: primary plus endogenous interest
+2040,arimax_level,ARIMAX (levels),0.369758560269309,Preferred treatment: primary plus endogenous interest
+2041,arimax_level,ARIMAX (levels),0.3697253802335,Preferred treatment: primary plus endogenous interest
+2042,arimax_level,ARIMAX (levels),0.369734933665531,Preferred treatment: primary plus endogenous interest
+2043,arimax_level,ARIMAX (levels),0.36978378371908,Preferred treatment: primary plus endogenous interest
+2044,arimax_level,ARIMAX (levels),0.369869115427177,Preferred treatment: primary plus endogenous interest
+2045,arimax_level,ARIMAX (levels),0.369988623872914,Preferred treatment: primary plus endogenous interest
+2046,arimax_level,ARIMAX (levels),0.370140422470452,Preferred treatment: primary plus endogenous interest
+2047,arimax_level,ARIMAX (levels),0.370322967739882,Preferred treatment: primary plus endogenous interest
+2048,arimax_level,ARIMAX (levels),0.370534997609859,Preferred treatment: primary plus endogenous interest
+2049,arimax_level,ARIMAX (levels),0.370775480815275,Preferred treatment: primary plus endogenous interest
+2050,arimax_level,ARIMAX (levels),0.371043575394779,Preferred treatment: primary plus endogenous interest
+2051,arimax_level,ARIMAX (levels),0.371338594651707,Preferred treatment: primary plus endogenous interest
+2052,arimax_level,ARIMAX (levels),0.371659979236254,Preferred treatment: primary plus endogenous interest
+2053,arimax_level,ARIMAX (levels),0.372007274248138,Preferred treatment: primary plus endogenous interest
+2054,arimax_level,ARIMAX (levels),0.37238011045689,Preferred treatment: primary plus endogenous interest
+2055,arimax_level,ARIMAX (levels),0.372778188899316,Preferred treatment: primary plus endogenous interest
+2056,arimax_level,ARIMAX (levels),0.373201268246796,Preferred treatment: primary plus endogenous interest
+2057,arimax_level,ARIMAX (levels),0.373649154444336,Preferred treatment: primary plus endogenous interest
+2058,arimax_level,ARIMAX (levels),0.374121692212834,Preferred treatment: primary plus endogenous interest
+2059,arimax_level,ARIMAX (levels),0.374618758079492,Preferred treatment: primary plus endogenous interest
+2060,arimax_level,ARIMAX (levels),0.375140254661587,Preferred treatment: primary plus endogenous interest
+2061,arimax_level,ARIMAX (levels),0.375686105978187,Preferred treatment: primary plus endogenous interest
+2062,arimax_level,ARIMAX (levels),0.376256253604963,Preferred treatment: primary plus endogenous interest
+2063,arimax_level,ARIMAX (levels),0.376850653520497,Preferred treatment: primary plus endogenous interest
+2064,arimax_level,ARIMAX (levels),0.377469273519712,Preferred treatment: primary plus endogenous interest
+2065,arimax_level,ARIMAX (levels),0.378112091092454,Preferred treatment: primary plus endogenous interest
+2066,arimax_level,ARIMAX (levels),0.378779091683569,Preferred treatment: primary plus endogenous interest
+2026,arimax_diff,Differenced ARIMAX,0.387,Preferred treatment: primary plus endogenous interest
+2027,arimax_diff,Differenced ARIMAX,0.389,Preferred treatment: primary plus endogenous interest
+2028,arimax_diff,Differenced ARIMAX,0.384,Preferred treatment: primary plus endogenous interest
+2029,arimax_diff,Differenced ARIMAX,0.378,Preferred treatment: primary plus endogenous interest
+2030,arimax_diff,Differenced ARIMAX,0.371,Preferred treatment: primary plus endogenous interest
+2031,arimax_diff,Differenced ARIMAX,0.369884248461287,Preferred treatment: primary plus endogenous interest
+2032,arimax_diff,Differenced ARIMAX,0.368507712557992,Preferred treatment: primary plus endogenous interest
+2033,arimax_diff,Differenced ARIMAX,0.369891163701235,Preferred treatment: primary plus endogenous interest
+2034,arimax_diff,Differenced ARIMAX,0.369273849617056,Preferred treatment: primary plus endogenous interest
+2035,arimax_diff,Differenced ARIMAX,0.36853064548709,Preferred treatment: primary plus endogenous interest
+2036,arimax_diff,Differenced ARIMAX,0.367475662885777,Preferred treatment: primary plus endogenous interest
+2037,arimax_diff,Differenced ARIMAX,0.366716840330322,Preferred treatment: primary plus endogenous interest
+2038,arimax_diff,Differenced ARIMAX,0.365557043495041,Preferred treatment: primary plus endogenous interest
+2039,arimax_diff,Differenced ARIMAX,0.364374880807253,Preferred treatment: primary plus endogenous interest
+2040,arimax_diff,Differenced ARIMAX,0.363170332100019,Preferred treatment: primary plus endogenous interest
+2041,arimax_diff,Differenced ARIMAX,0.361943377188211,Preferred treatment: primary plus endogenous interest
+2042,arimax_diff,Differenced ARIMAX,0.360693995868505,Preferred treatment: primary plus endogenous interest
+2043,arimax_diff,Differenced ARIMAX,0.359422167919355,Preferred treatment: primary plus endogenous interest
+2044,arimax_diff,Differenced ARIMAX,0.358127873100985,Preferred treatment: primary plus endogenous interest
+2045,arimax_diff,Differenced ARIMAX,0.356811091155367,Preferred treatment: primary plus endogenous interest
+2046,arimax_diff,Differenced ARIMAX,0.355471801806209,Preferred treatment: primary plus endogenous interest
+2047,arimax_diff,Differenced ARIMAX,0.354109984758934,Preferred treatment: primary plus endogenous interest
+2048,arimax_diff,Differenced ARIMAX,0.352725619700667,Preferred treatment: primary plus endogenous interest
+2049,arimax_diff,Differenced ARIMAX,0.351318686300217,Preferred treatment: primary plus endogenous interest
+2050,arimax_diff,Differenced ARIMAX,0.349889164208059,Preferred treatment: primary plus endogenous interest
+2051,arimax_diff,Differenced ARIMAX,0.348437033056321,Preferred treatment: primary plus endogenous interest
+2052,arimax_diff,Differenced ARIMAX,0.346962272458767,Preferred treatment: primary plus endogenous interest
+2053,arimax_diff,Differenced ARIMAX,0.345464862010776,Preferred treatment: primary plus endogenous interest
+2054,arimax_diff,Differenced ARIMAX,0.343944781289328,Preferred treatment: primary plus endogenous interest
+2055,arimax_diff,Differenced ARIMAX,0.342402009852993,Preferred treatment: primary plus endogenous interest
+2056,arimax_diff,Differenced ARIMAX,0.340836527241902,Preferred treatment: primary plus endogenous interest
+2057,arimax_diff,Differenced ARIMAX,0.339248312977745,Preferred treatment: primary plus endogenous interest
+2058,arimax_diff,Differenced ARIMAX,0.33763734656374,Preferred treatment: primary plus endogenous interest
+2059,arimax_diff,Differenced ARIMAX,0.336003607484631,Preferred treatment: primary plus endogenous interest
+2060,arimax_diff,Differenced ARIMAX,0.334347075206656,Preferred treatment: primary plus endogenous interest
+2061,arimax_diff,Differenced ARIMAX,0.332667729177544,Preferred treatment: primary plus endogenous interest
+2062,arimax_diff,Differenced ARIMAX,0.331484914412331,Preferred treatment: primary plus endogenous interest
+2063,arimax_diff,Differenced ARIMAX,0.330968463478364,Preferred treatment: primary plus endogenous interest
+2064,arimax_diff,Differenced ARIMAX,0.330452012544396,Preferred treatment: primary plus endogenous interest
+2065,arimax_diff,Differenced ARIMAX,0.329935561610428,Preferred treatment: primary plus endogenous interest
+2066,arimax_diff,Differenced ARIMAX,0.329419110676461,Preferred treatment: primary plus endogenous interest
+2026,hybrid,Hybrid structural/macro,0.387,Preferred treatment: primary plus endogenous interest
+2027,hybrid,Hybrid structural/macro,0.389,Preferred treatment: primary plus endogenous interest
+2028,hybrid,Hybrid structural/macro,0.384,Preferred treatment: primary plus endogenous interest
+2029,hybrid,Hybrid structural/macro,0.378,Preferred treatment: primary plus endogenous interest
+2030,hybrid,Hybrid structural/macro,0.371,Preferred treatment: primary plus endogenous interest
+2031,hybrid,Hybrid structural/macro,0.371056865973207,Preferred treatment: primary plus endogenous interest
+2032,hybrid,Hybrid structural/macro,0.370984496247158,Preferred treatment: primary plus endogenous interest
+2033,hybrid,Hybrid structural/macro,0.370608856733522,Preferred treatment: primary plus endogenous interest
+2034,hybrid,Hybrid structural/macro,0.371221843274009,Preferred treatment: primary plus endogenous interest
+2035,hybrid,Hybrid structural/macro,0.371830033091975,Preferred treatment: primary plus endogenous interest
+2036,hybrid,Hybrid structural/macro,0.372565420405497,Preferred treatment: primary plus endogenous interest
+2037,hybrid,Hybrid structural/macro,0.372927717250444,Preferred treatment: primary plus endogenous interest
+2038,hybrid,Hybrid structural/macro,0.372922809536423,Preferred treatment: primary plus endogenous interest
+2039,hybrid,Hybrid structural/macro,0.372934423781494,Preferred treatment: primary plus endogenous interest
+2040,hybrid,Hybrid structural/macro,0.372962574883252,Preferred treatment: primary plus endogenous interest
+2041,hybrid,Hybrid structural/macro,0.373007277752723,Preferred treatment: primary plus endogenous interest
+2042,hybrid,Hybrid structural/macro,0.373068547314379,Preferred treatment: primary plus endogenous interest
+2043,hybrid,Hybrid structural/macro,0.373146398506148,Preferred treatment: primary plus endogenous interest
+2044,hybrid,Hybrid structural/macro,0.373240846279431,Preferred treatment: primary plus endogenous interest
+2045,hybrid,Hybrid structural/macro,0.373351905599106,Preferred treatment: primary plus endogenous interest
+2046,hybrid,Hybrid structural/macro,0.373479591443546,Preferred treatment: primary plus endogenous interest
+2047,hybrid,Hybrid structural/macro,0.37362391880463,Preferred treatment: primary plus endogenous interest
+2048,hybrid,Hybrid structural/macro,0.373784902687756,Preferred treatment: primary plus endogenous interest
+2049,hybrid,Hybrid structural/macro,0.373962558111851,Preferred treatment: primary plus endogenous interest
+2050,hybrid,Hybrid structural/macro,0.374156900109386,Preferred treatment: primary plus endogenous interest
+2051,hybrid,Hybrid structural/macro,0.374367943726381,Preferred treatment: primary plus endogenous interest
+2052,hybrid,Hybrid structural/macro,0.37459570402243,Preferred treatment: primary plus endogenous interest
+2053,hybrid,Hybrid structural/macro,0.374840196070703,Preferred treatment: primary plus endogenous interest
+2054,hybrid,Hybrid structural/macro,0.375101434957959,Preferred treatment: primary plus endogenous interest
+2055,hybrid,Hybrid structural/macro,0.375379435784564,Preferred treatment: primary plus endogenous interest
+2056,hybrid,Hybrid structural/macro,0.3756742136645,Preferred treatment: primary plus endogenous interest
+2057,hybrid,Hybrid structural/macro,0.375985783725371,Preferred treatment: primary plus endogenous interest
+2058,hybrid,Hybrid structural/macro,0.37631416110843,Preferred treatment: primary plus endogenous interest
+2059,hybrid,Hybrid structural/macro,0.376659360968575,Preferred treatment: primary plus endogenous interest
+2060,hybrid,Hybrid structural/macro,0.377021398474375,Preferred treatment: primary plus endogenous interest
+2061,hybrid,Hybrid structural/macro,0.377400288808073,Preferred treatment: primary plus endogenous interest
+2062,hybrid,Hybrid structural/macro,0.3777960471656,Preferred treatment: primary plus endogenous interest
+2063,hybrid,Hybrid structural/macro,0.378208688756593,Preferred treatment: primary plus endogenous interest
+2064,hybrid,Hybrid structural/macro,0.378638228804401,Preferred treatment: primary plus endogenous interest
+2065,hybrid,Hybrid structural/macro,0.379084682546102,Preferred treatment: primary plus endogenous interest
+2066,hybrid,Hybrid structural/macro,0.379548065232507,Preferred treatment: primary plus endogenous interest
+2026,ardl_ecm,ARDL error-correction model,0.387,Preferred treatment: primary plus endogenous interest
+2027,ardl_ecm,ARDL error-correction model,0.389,Preferred treatment: primary plus endogenous interest
+2028,ardl_ecm,ARDL error-correction model,0.384,Preferred treatment: primary plus endogenous interest
+2029,ardl_ecm,ARDL error-correction model,0.378,Preferred treatment: primary plus endogenous interest
+2030,ardl_ecm,ARDL error-correction model,0.371,Preferred treatment: primary plus endogenous interest
+2031,ardl_ecm,ARDL error-correction model,0.368414444723503,Preferred treatment: primary plus endogenous interest
+2032,ardl_ecm,ARDL error-correction model,0.366022001778428,Preferred treatment: primary plus endogenous interest
+2033,ardl_ecm,ARDL error-correction model,0.364873380104015,Preferred treatment: primary plus endogenous interest
+2034,ardl_ecm,ARDL error-correction model,0.363685237773546,Preferred treatment: primary plus endogenous interest
+2035,ardl_ecm,ARDL error-correction model,0.36244620524908,Preferred treatment: primary plus endogenous interest
+2036,ardl_ecm,ARDL error-correction model,0.361143947068975,Preferred treatment: primary plus endogenous interest
+2037,ardl_ecm,ARDL error-correction model,0.359536530004595,Preferred treatment: primary plus endogenous interest
+2038,ardl_ecm,ARDL error-correction model,0.357590906649342,Preferred treatment: primary plus endogenous interest
+2039,ardl_ecm,ARDL error-correction model,0.35566557623068,Preferred treatment: primary plus endogenous interest
+2040,ardl_ecm,ARDL error-correction model,0.353752847659937,Preferred treatment: primary plus endogenous interest
+2041,ardl_ecm,ARDL error-correction model,0.351846230972482,Preferred treatment: primary plus endogenous interest
+2042,ardl_ecm,ARDL error-correction model,0.349940244921235,Preferred treatment: primary plus endogenous interest
+2043,ardl_ecm,ARDL error-correction model,0.348030256474237,Preferred treatment: primary plus endogenous interest
+2044,ardl_ecm,ARDL error-correction model,0.346112346636729,Preferred treatment: primary plus endogenous interest
+2045,ardl_ecm,ARDL error-correction model,0.344183198070994,Preferred treatment: primary plus endogenous interest
+2046,ardl_ecm,ARDL error-correction model,0.342240000821699,Preferred treatment: primary plus endogenous interest
+2047,ardl_ecm,ARDL error-correction model,0.340280373120726,Preferred treatment: primary plus endogenous interest
+2048,ardl_ecm,ARDL error-correction model,0.338302294780835,Preferred treatment: primary plus endogenous interest
+2049,ardl_ecm,ARDL error-correction model,0.336304051120245,Preferred treatment: primary plus endogenous interest
+2050,ardl_ecm,ARDL error-correction model,0.334284185712247,Preferred treatment: primary plus endogenous interest
+2051,ardl_ecm,ARDL error-correction model,0.33224146054143,Preferred treatment: primary plus endogenous interest
+2052,ardl_ecm,ARDL error-correction model,0.330174822384211,Preferred treatment: primary plus endogenous interest
+2053,ardl_ecm,ARDL error-correction model,0.328083374425922,Preferred treatment: primary plus endogenous interest
+2054,ardl_ecm,ARDL error-correction model,0.325966352287643,Preferred treatment: primary plus endogenous interest
+2055,ardl_ecm,ARDL error-correction model,0.324357143063779,Preferred treatment: primary plus endogenous interest
+2056,ardl_ecm,ARDL error-correction model,0.323696383608697,Preferred treatment: primary plus endogenous interest
+2057,ardl_ecm,ARDL error-correction model,0.323037598165414,Preferred treatment: primary plus endogenous interest
+2058,ardl_ecm,ARDL error-correction model,0.322380321595998,Preferred treatment: primary plus endogenous interest
+2059,ardl_ecm,ARDL error-correction model,0.32172416631105,Preferred treatment: primary plus endogenous interest
+2060,ardl_ecm,ARDL error-correction model,0.321068810252646,Preferred treatment: primary plus endogenous interest
+2061,ardl_ecm,ARDL error-correction model,0.320413986728513,Preferred treatment: primary plus endogenous interest
+2062,ardl_ecm,ARDL error-correction model,0.319759475811656,Preferred treatment: primary plus endogenous interest
+2063,ardl_ecm,ARDL error-correction model,0.31910509706393,Preferred treatment: primary plus endogenous interest
+2064,ardl_ecm,ARDL error-correction model,0.318450703379527,Preferred treatment: primary plus endogenous interest
+2065,ardl_ecm,ARDL error-correction model,0.317796175775911,Preferred treatment: primary plus endogenous interest
+2066,ardl_ecm,ARDL error-correction model,0.31714141898637,Preferred treatment: primary plus endogenous interest

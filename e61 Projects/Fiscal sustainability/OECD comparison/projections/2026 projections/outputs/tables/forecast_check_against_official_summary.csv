@@ -1,9 +1,7 @@
 model,model_label,approach,forecast_years,mean_difference_pp,mae_difference_pp,max_abs_difference_pp
-structural_ols,Structural OLS (levels),Top-down model-only,5,-1.97111880319576,1.97111880319576,2.6086027084376
-arimax_level,ARIMAX (levels),Top-down model-only,5,-0.25719680229468,0.368273544274481,0.653932840351801
-arimax_diff,ARIMAX (differences),Top-down model-only,5,-0.02556378048304,0.391227506443121,0.702151319552802
-dynamic_diff,Dynamic differences,Top-down model-only,5,0.21930723807436,0.485994423921521,1.1490888309153
-hybrid,Hybrid structural/macro,Top-down model-only,5,0.64740795950536,0.75285382229612,1.8783922421037
-ardl_ecm,ARDL error-correction model,Top-down model-only,5,0.0516579709090204,0.450759719871141,0.945855065331902
-univariate_arima,ARIMA with COVID controls,Top-down model-only,5,-1.47875376040948,1.47875376040948,1.9686025446664
+structural_ols,Structural OLS (levels),Top-down model-only,5,-1.45227383503248,1.45227383503248,2.3238871998906
+arimax_level,ARIMAX (levels),Top-down model-only,5,0.0753426837513016,0.628441446784661,1.2177807844677
+arimax_diff,Differenced ARIMAX,Top-down model-only,5,-0.0238601274254979,0.582931228929061,1.0153419828577
+hybrid,Hybrid structural/macro,Top-down model-only,5,0.509798921867501,0.83338176847058,1.8589659544634
+ardl_ecm,ARDL error-correction model,Top-down model-only,5,-1.27209638748604,1.27209638748604,1.8642520540011
 bottom_up_unanchored,Bottom-up model-only,Bottom-up model-only,5,1.65402280209288,1.76119629355572,3.5153983210737

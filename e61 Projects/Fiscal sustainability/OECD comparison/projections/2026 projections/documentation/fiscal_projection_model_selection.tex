@@ -1,634 +1,193 @@
 \documentclass[11pt,a4paper]{article}
-
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
 \usepackage[a4paper,margin=2.2cm]{geometry}
-\usepackage{amsmath,amssymb}
-\usepackage{booktabs,longtable,tabularx,array}
-\usepackage{graphicx,float,caption}
-\usepackage[dvipsnames]{xcolor}
-\usepackage{hyperref}
-\usepackage{enumitem}
-\usepackage{setspace}
-
-\hypersetup{colorlinks=true,linkcolor=NavyBlue,urlcolor=NavyBlue,citecolor=NavyBlue}
+\usepackage{amsmath,amssymb,booktabs,graphicx,float,hyperref,setspace}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
 \setstretch{1.08}
 \setlength{\parskip}{0.55em}
 \setlength{\parindent}{0pt}
-\newcommand{\pp}{percentage points}
-\newcommand{\GDP}{\mathrm{GDP}}
-\newcommand{\E}{\mathbb{E}}
 \newcommand{\ind}{\mathbb{1}}
-\newcommand{\model}[1]{\texttt{#1}}
-
 \title{Selecting a model for Australian government spending projections\\
 \large Technical note for internal peer review}
-\author{Draft generated from the 2026 fiscal projection workflow}
-\date{23 August 2026}
+\author{2026 fiscal projection workflow}
+\date{24 August 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-This note is intended to make the model-selection judgement easy to challenge.  It begins with six reported top-down specifications for Australian general-government spending, writes out their mathematical structure, compares their projections and rolling forecast errors, and documents why the proposed ARDL/error-correction model is not accepted as a valid long-run model.  The top-down equations use a parsimonious demographic block containing the 0--14 and 65+ population shares.  Separate indicators for 2019--20, 2020--21 and 2021--22 absorb the COVID-affected observations.  The recommended top-down choice is the \emph{differenced ARIMAX family}, with the dynamic specification used for the principal projection after a concept-aligned PBO anchor comprising expenses plus net capital investment.  A mechanically differenced restricted version remains an internal nested benchmark, but is not presented as a separate result because it is not an independent model.  A COVID-adjusted ARIMA is retained as a near-term statistical benchmark.  The second part compares the baseline and data-enhanced bottom-up approaches.  The final part places the models together while preserving important differences in expenditure concepts.
+This note compares five distinct top-down specifications: structural OLS, levels ARIMAX, differenced ARIMAX, a structural/macro hybrid and an ARDL error-correction model (ECM). The differenced ARIMAX is preferred. It combines economic drivers with the strongest rolling performance and relatively low estimation-window sensitivity. The revised ECM has the best in-sample fit, but exact finite-sample bounds tests do not establish cointegration; it is therefore retained only as a diagnostic sensitivity. Two bottom-up projections are then compared and all specifications are placed in a common framework.
 \end{abstract}
 
-\section{Top-down estimates and model selection}
+\section{Top-down estimates}
 
-\subsection{Decision in one paragraph}
+\subsection{Data and common treatment}
 
-The August 2026 PBO forecast of consolidated expenses plus net capital investment is used through 2029--30.  Beyond that point, the preferred \emph{driver-based top-down cross-check} is the differenced ARIMAX family, represented by its dynamic specification.  Among the reported models that can respond to demographic and economic drivers, it has the lowest five-year rolling RMSE (4.996 \pp\ of GDP) and the lowest maximum 2065--66 endpoint shift across the tested estimation windows (2.499 \pp).  The COVID-adjusted ARIMA has materially lower forecast errors, but its long-run path is essentially flat and cannot respond to ageing, relative government prices, unemployment, the terms of trade or policy.  It is therefore a near-term statistical benchmark, not the preferred structural cross-check.  The ARDL/ECM is rejected as the primary model because the required level relationship is not supported by the bounds tests, integration-order evidence is problematic, long-run coefficients remain collinear, and rolling forecast performance and endpoint stability are weak.
+Let $y_t=G_t^P/Y_t$, where $G_t^P$ is Australian general-government primary fiscal expenditure and $Y_t$ is nominal GDP. The National Accounts numerator comprises government final consumption expenditure, gross fixed capital formation and total income payable, less conventional ``other interest'' payable. Imputed interest on unfunded superannuation liabilities remains in the aggregate. All equations use annual financial-year observations from 1979--80 to 2024--25: 46 observations before model-specific lags.
 
-\subsection{Outcome, variables and common forecasting convention}
-
-Let
+The demographic block is limited to the population shares aged 0--14 and 65+. Aggregate population is excluded because the outcome is already scaled by aggregate GDP. Separate indicators are used for the three pandemic-affected observations:
 \[
- y_t = \frac{G_t}{Y_t},
+D_{j,t}=\ind\{t=j\},\qquad j\in\{2019\text{--}20,2020\text{--}21,2021\text{--}22\}.
 \]
-where $G_t$ is the broad general-government expenditure concept constructed from ABS National Accounts and $Y_t$ is nominal GDP \cite{absna}.  Both are annual financial-year observations.  The estimation sample is 1979--80 to 2024--25 ($T=46$ before lags).
+The indicators enter every specification in the transformation appropriate to its dependent variable.
 
-The common explanatory variables are
-\begin{align*}
- \mathbf a_t &= (a^{0\text{--}14}_t,a^{65+}_t)',\\
- z^{\mathrm{tot}}_t &= \text{standardised terms-of-trade index},\\
- z^{\mathrm{rp}}_t &= \text{standardised relative government-consumption price index},\\
- u_t &= \text{unemployment rate},\\
- D_{j,t} &= \ind\{t=j\},\qquad j\in\{2019\text{--}20,2020\text{--}21,2021\text{--}22\}.
-\end{align*}
-The omitted demographic category is the aggregate 15--64 population share, so the two reported age coefficients are interpreted relative to that group.  The projection paths condition on common future paths for demographics and macroeconomic drivers.  ``Conditional'' is important: neither the forecast intervals nor rolling tests include uncertainty about those driver paths.
+PBO consolidated expenses less public debt interest plus net capital investment provide the concept-aligned primary anchor through 2029--30. Thereafter each model supplies cumulative changes:
+\[
+\widetilde y^{(m)}_t=
+\begin{cases}
+y_t^{\mathrm{PBO,primary}},&t\leq2030,\\
+y_{2030}^{\mathrm{PBO,primary}}+(\widehat y_t^{(m)}-\widehat y_{2030}^{(m)}),&t>2030.
+\end{cases}
+\]
+Model-only paths from the latest National Accounts actual are also reported.
 
-Every displayed long-run top-down path is joined in 2029--30 to a concept-aligned PBO broad-spending proxy: consolidated expenses plus net capital investment \cite{pbo,pbotech}.  The model supplies growth after the anchor rather than overwriting the official near-term forecast.  This recognises that the official forecast contains budget measures, current policy and institutional information not present in these parsimonious equations.
+\subsection{Specification 1: structural OLS}
 
-The National Accounts outcome used for estimation is constructed as general-government final consumption expenditure plus gross fixed capital formation plus total income payable, divided by nominal GDP.  PBO consolidated expenses are an operating-statement measure; the PBO reports net capital investment separately and stresses the distinction between recurrent and capital spending \cite{pbo,pbotech}.  Comparing the National Accounts outcome only with PBO expenses therefore omits the separately reported capital component.  In the latest PBO data pack, whose ratios are published to one decimal place, the 2024--25 National Accounts ratio is 38.341\% of GDP, PBO expenses are 36.6\%, and PBO net capital investment is 2.1\%.  Expenses plus net capital investment equal 38.7\%, which is 0.359 \pp\ above the National Accounts measure.
-
-The raw 1.741 \pp\ difference between the National Accounts measure and PBO expenses in 2024--25 is therefore largely explained by capital investment.  Adding the full PBO net-capital item slightly over-corrects the gap.  The alignment is deliberately described as the closest available proxy rather than an exact accounting identity: the National Accounts variable contains \emph{gross} fixed capital formation, whereas the available PBO item is \emph{net} capital investment.  ABS documentation also identifies reconciliation adjustments for depreciation versus consumption of fixed capital, asset sales, FISIM and capitalised intangibles \cite{absgfsmethod,absgfsasna}.  The latest PBO vintage uses ABS GFS through 2024--25, incorporates local government in the national aggregates and uses 2026--27 budgets for 2025--26 to 2029--30; remaining differences can therefore reflect measurement concepts, consolidation, rounding, revisions and the GDP vintage rather than omitted capital alone \cite{pbotech}.
-
-The PBO-anchored path does not estimate a bridge between these concepts.  For model $m$, it applies the additive splice
+The old-Shapley-style comparison is
 \begin{equation}
- \widetilde y^{(m)}_t=
- \begin{cases}
- y^{\mathrm{PBO,broad}}_t, & t\leq 2030,\\
- y^{\mathrm{PBO,broad}}_{2030}
- +\left(\widehat y^{(m)}_t-\widehat y^{(m)}_{2030}\right), & t>2030.
- \end{cases}
- \label{eq:pbo_splice}
+y_t=\alpha+\boldsymbol\beta'\mathbf a_t+\gamma_T z_t^{\mathrm{tot}}
++\gamma_P z_t^{\mathrm{rp}}+\gamma_u u_t+\boldsymbol\delta'\mathbf D_t+\varepsilon_t,
 \end{equation}
-where $y^{\mathrm{PBO,broad}}_t$ is PBO expenses plus net capital investment.  Thus the concept-aligned PBO proxy determines the level through 2029--30 and the model determines only the subsequent change.  This treats the remaining join-year difference as an additive adjustment carried through the long run.  A separate model-only projection is reported below.  It starts from the latest National Accounts outturn and does not use the PBO spending path, although it retains the same future demographic and macroeconomic driver assumptions.
+where $\mathbf a_t=(a_t^{0\text{--}14},a_t^{65+})'$, $z^{\mathrm{tot}}$ is the standardised terms of trade, $z^{\mathrm{rp}}$ is the standardised relative government-consumption price and $u_t$ is unemployment. This transparent levels equation is useful for attribution; it is not assumed to identify a causal equilibrium.
 
-\subsection{Time periods and use of the historical data}
-\label{sec:sample}
+\subsection{Specification 2: levels ARIMAX}
 
-The raw National Accounts fiscal file runs from 1959--60 to 2024--25 (66 annual observations).  The top-down exercise does \emph{not} use the outcome-only observations before 1979--80.  The configuration sets a common estimation start of 1979--80 (labelled 1980 by financial-year end), and the model-ready dataset therefore contains 46 complete annual observations from 1979--80 to 2024--25.  There are no missing observations in the retained outcome, selected age shares, terms of trade, relative prices or unemployment.  All six reported top-down models use all observations in this common model-ready window, subject only to observations lost mechanically when first differences and lags are constructed.
+The same regressors enter a levels regression with stationary ARMA errors:
+\begin{align}
+y_t&=\alpha+\boldsymbol\beta'\mathbf a_t+\gamma_T z_t^{\mathrm{tot}}
++\gamma_P z_t^{\mathrm{rp}}+\gamma_u u_t+\boldsymbol\delta'\mathbf D_t+n_t,\\
+\Phi(L)n_t&=\Theta(L)\epsilon_t.
+\end{align}
+The selected error process is ARMA$(2,0)$. This model allows serially persistent deviations from the fitted level but does not itself prove that the levels are cointegrated.
 
-The deliberate common window ensures that models are compared using the same span of outcome and driver data.  It should not be described as ``all ABS history'': the expenditure series itself is available back to 1959--60, but 1959--60 to 1978--79 is excluded by the explicit 1980 estimation-start choice.  Extending the common driver dataset and testing an earlier start would be a useful robustness exercise rather than something already embodied in the current estimates.
+\subsection{Specification 3: differenced ARIMAX}
+
+The single reported differenced family is
+\begin{align}
+\Delta y_t={}&\boldsymbol\beta_a'\Delta\mathbf a_t+\beta_P\Delta z_t^{\mathrm{rp}}
++\theta_0\Delta u_t+\theta_1\Delta u_{t-1}\\
+&+\psi_0\Delta z_t^{\mathrm{tot}}+\psi_1\Delta z_{t-1}^{\mathrm{tot}}
++\boldsymbol\delta'\mathbf D_t+n_t,\\
+\Phi(L)n_t={}&\Theta(L)\epsilon_t.
+\end{align}
+This replaces the former duplication between a mechanically differenced ARIMAX and ``dynamic differences''. Changes in unemployment and the terms of trade are used so a permanently high level does not mechanically generate repeated spending growth. The selected residual process is white noise.
+
+\subsection{Specification 4: structural/macro hybrid}
+
+The slow-moving level is
+\begin{equation}
+y_t^S=\alpha+\boldsymbol\beta'\mathbf a_t+\gamma_Pz_t^{\mathrm{rp}}
++\boldsymbol\delta'\mathbf D_t+e_t^S.
+\end{equation}
+For $r_t=\Delta y_t-\Delta\widehat y_t^S$, the macro block is
+\begin{equation}
+r_t=\theta_0\Delta u_t+\theta_1\Delta u_{t-1}
++\psi_0\Delta z_t^{\mathrm{tot}}+\psi_1\Delta z_{t-1}^{\mathrm{tot}}+\eta_t.
+\end{equation}
+The projected change is $\Delta\widehat y_t^S+\widehat r_t$. Real GDP per capita is not forced into this equation.
+
+\subsection{Specification 5: augmented-Mann ARDL/ECM}
+
+The literature suggests two common Wagner-law formulations: log real expenditure against log real output, and the Mann/Musgrave form relating the log spending share to log real income per person. Because this exercise directly projects spending/GDP, the latter is the closer match. Define
+\[
+w_t=\log(G_t/Y_t),\qquad q_t=\log(\text{real GDP per capita}),\qquad
+p_t=\log(P_t^G/P_t^Y).
+\]
+The candidate long-run equation is
+\begin{equation}
+w_t=\alpha+\beta_q q_t+\beta_p p_t+e_t.
+\end{equation}
+The unrestricted ECM is
+\begin{align}
+\Delta w_t={}&c+\lambda w_{t-1}+\theta_q q_{t-1}+\theta_p p_{t-1}
++\rho\Delta w_{t-1}\\
+&+\sum_i\pi_i\Delta q_{t-i}+\sum_i\kappa_i\Delta p_{t-i}
++\sum_i\mu_i\Delta u_{t-i}+\sum_i\tau_i\Delta z_{t-i}^{\mathrm{tot}}
++\boldsymbol\delta'\mathbf D_t+\epsilon_t.
+\end{align}
+BIC selects between maximum lag orders one and two; it selects one in the current sample. Age shares are excluded from the cointegrating vector because earlier unit-root checks on these very smooth series were inconclusive and flagged a possible I(2) age-65 series. Unemployment and the terms of trade are short-run conditioning variables only.
+
+\subsection{Relative fit}
 
 \begin{table}[H]
 \centering
-\caption{Estimation, evaluation and projection periods}
-\label{tab:periods}
-\small
-\begin{tabularx}{\textwidth}{lXr}
-\toprule
-Stage or specification & Period & Effective observations\\
-\midrule
-Raw National Accounts fiscal history & 1959--60 to 2024--25 & 66\\
-Common top-down model-ready history & 1979--80 to 2024--25 & 46\\
-Structural OLS and levels ARIMAX & 1979--80 to 2024--25 & 46\\
-Differenced ARIMAX family (dynamic specification), hybrid and ARDL/ECM & 1981--82 to 2024--25 after required lags & 44\\
-ARIMA with COVID controls & 1979--80 to 2024--25 & 46\\
-Rolling forecast origins & 2009--10 to 2019--20; expanding samples beginning in 1979--80 & 11 origins\\
-Rolling forecast targets & One to five years ahead, spanning 2010--11 to 2024--25 & 11 per horizon\\
-Concept-aligned PBO anchor: expenses plus net capital investment & 2025--26 to 2029--30 & 5 years\\
-Model-driven long run & 2030--31 to 2065--66 & 36 years\\
-\bottomrule
-\end{tabularx}
-\end{table}
-
-Two additional estimation-window checks are reported alongside the full 1979--80 start: estimation beginning in 1989--90 and estimation ending in 2018--19.  The latter is especially informative about sensitivity to the COVID and post-COVID observations, although it also removes six recent observations and therefore is not a clean COVID-only experiment.
-
-\subsection{The six reported specifications}
-
-For the equations below, $L$ is the lag operator, $\Delta=1-L$, and $n_t$ denotes a stationary ARMA disturbance where relevant.  Automatic ARMA selection follows the approach of Hyndman and Khandakar \cite{hk} and is deliberately restricted to $p,q\leq2$ because the annual sample is short.
-
-\subsubsection{1. Structural OLS in levels}
-
-The transparent levels benchmark is
-\begin{equation}
-y_t=\alpha+\boldsymbol\beta_a'\mathbf a_t+
- \beta_{\mathrm{tot}}z^{\mathrm{tot}}_t+
- \beta_{\mathrm{rp}}z^{\mathrm{rp}}_t+
- \beta_u u_t+\sum_{j=2020}^{2022}\delta_jD_{j,t}+\varepsilon_t.
- \label{eq:ols}
-\end{equation}
-It is easy to interpret and is used for the Shapley attribution exercise.  It is not preferred as a standalone forecast because its residuals are autocorrelated (Ljung--Box $p=0.0012$) and its endpoint is sensitive to the estimation window.
-
-\subsubsection{2. Levels ARIMAX}
-
-The second model keeps the same level relationship but gives the residual a stationary ARMA process:
-\begin{align}
- y_t &= \alpha+\boldsymbol\beta'\mathbf x_t+n_t,\\
- \phi(L)n_t&=\theta(L)\varepsilon_t,
- \label{eq:level_arimax}
-\end{align}
-where $\mathbf x_t=(\mathbf a_t',z^{\mathrm{tot}}_t,z^{\mathrm{rp}}_t,u_t,D_{2020,t},D_{2021,t},D_{2022,t})'$.  The selected error process is ARMA$(2,0)$.  It has a strong in-sample dynamic fit but weaker rolling forecasts and a 7.829 \pp\ maximum endpoint shift.
-
-\subsubsection{3. Differenced ARIMAX family: dynamic specification (preferred driver-based cross-check)}
-
-The preferred model retains a differenced outcome but gives each driver a transformation suited to its economic role:
-\begin{align}
-\Delta y_t={}&
- \boldsymbol\beta_a'\Delta\mathbf a_t
- +\beta_{q}\Delta z^{\mathrm{rp}}_t
- +\beta_{u0}\Delta u_t+\beta_{u1}\Delta u_{t-1} \\
-&+\beta_{\tau0}\Delta z^{\mathrm{tot}}_t
- +\beta_{\tau1}\Delta z^{\mathrm{tot}}_{t-1}
- +\sum_{j=2020}^{2022}\delta_jD_{j,t}+n_t,\\
-\phi(L)n_t={}&\theta(L)\varepsilon_t,
-\label{eq:dynamic}
-\end{align}
-The three $D_{j,t}$ indicators absorb the annual spending changes in the COVID-affected financial years without imposing a common coefficient or an onset/unwind profile.  The selected residual is ARMA$(0,0)$.  Unemployment enters in changes: putting its level in a pure growth equation would add spending growth every year that unemployment remained high and create implausible drift.  Current and lagged terms-of-trade changes allow a budget or implementation delay.  Projected changes are accumulated from the observed endpoint, $\widehat y_{T+h}=y_T+\sum_{j=1}^{h}\widehat{\Delta y}_{T+j}$.
-
-The code retains a mechanically differenced ARIMAX for internal benchmarking.  It uses the same selected age shares and the same three annual intervention indicators.  It is treated as part of the differenced-ARIMAX family rather than presented as a separate colleague-facing result.
-
-\subsubsection{4. Hybrid structural/macro model}
-
-The hybrid first estimates a slow-moving structural level,
-\begin{equation}
- s_t=\alpha_s+\boldsymbol\beta_a'\mathbf a_t+\beta_q z^{\mathrm{rp}}_t
- +\sum_{j=2020}^{2022}\delta_jD_{j,t},
- \label{eq:hybrid_structural}
-\end{equation}
-then defines the unexplained annual change $r_t=\Delta y_t-\Delta\widehat s_t$ and estimates
-\begin{align}
-r_t={}&\gamma_{u0}\Delta u_t+\gamma_{u1}\Delta u_{t-1}
-+\gamma_{\tau0}\Delta z^{\mathrm{tot}}_t
-+\gamma_{\tau1}\Delta z^{\mathrm{tot}}_{t-1}+n_t.
-\label{eq:hybrid_macro}
-\end{align}
-The annual indicators are included in the structural level equation.  Their fitted first differences therefore absorb the pandemic-year movements when $r_t$ is constructed, and they are not repeated in the macro residual equation.  The forecast recombines $\Delta\widehat s_t$ and $\widehat r_t$ and accumulates them.  Its 2065--66 endpoint changes by up to 6.647 \pp\ across estimation windows, so it remains a secondary structural cross-check.
-
-\subsubsection{5. ARDL-style unrestricted ECM}
-
-The fitted error-correction equation is
-\begin{align}
-\Delta y_t={}&\alpha+\lambda y_{t-1}
-+\boldsymbol\theta_a'\mathbf a_{t-1}
-+\theta_q z^{\mathrm{rp}}_{t-1}
-+\delta_u u_{t-1}\\
-&+\gamma_q\Delta z^{\mathrm{rp}}_t
-+\gamma_u\Delta u_t
-+\gamma_{\tau0}\Delta z^{\mathrm{tot}}_t
-+\gamma_{\tau1}\Delta z^{\mathrm{tot}}_{t-1}\\
-&+\rho\Delta y_{t-1}+\sum_{j=2020}^{2022}\delta_jD_{j,t}+\varepsilon_t.
-\label{eq:ecm}
-\end{align}
-The fitted adjustment coefficient is $\widehat\lambda=-0.238$.  If a valid level relationship existed, the implied long-run coefficients would be $-\widehat\theta_j/\widehat\lambda$.  A negative $\widehat\lambda$ is necessary for convergence but is \emph{not} evidence of cointegration.  The non-standard bounds tests and integration-order requirements must also be satisfied; Section~\ref{sec:ardl_rejection} shows that they are not.
-
-\subsubsection{6. ARIMA benchmark with COVID controls}
-
-The statistical benchmark is an ARIMA with the three annual interventions,
-\begin{equation}
- \Phi(L)(1-L)^d\left(y_t-\sum_{j=2020}^{2022}\delta_jD_{j,t}\right)
- =c+\Theta(L)\varepsilon_t.
- \label{eq:arima}
-\end{equation}
-Automatic selection chooses ARIMA$(1,0,2)$.  It has the best rolling accuracy, but its anchored long-run forecast is essentially flat at 36.808\% of GDP.  That property is useful as a ``no-driver'' benchmark and unsuitable as the main long-run model.
-
-\subsection{Projected top-down paths}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.96\textwidth]{figures/top_down_reported_paths.png}
-\caption{Top-down projections after the common concept-aligned PBO anchor.  The spread is specification uncertainty, not a confidence interval.}
-\label{fig:top_paths}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.98\textwidth]{figures/top_down_anchor_comparison.png}
-\caption{Preferred dynamic projection with and without the PBO spending anchor.  The model-only path starts from the 2024--25 National Accounts outturn.  The spliced path uses the August 2026 PBO expenses plus net capital investment through 2029--30 and the same model's changes thereafter.  PBO operating expenses alone are shown to illustrate the source of the apparent level gap.}
-\label{fig:anchor_comparison}
-\end{figure}
-
-For the preferred dynamic specification, the model-only projection is 38.249\% of GDP in 2029--30, compared with the concept-aligned PBO level of 37.1\%.  Equation~\eqref{eq:pbo_splice} therefore applies a $-1.149$ \pp\ adjustment to the model-only path from the join onward.  The 2065--66 result is 35.816\% without the PBO spending anchor and 34.667\% with it.
-
-\begin{table}[H]
-\centering
-\caption{Level reconciliation for the preferred dynamic projection (per cent of GDP)}
-\label{tab:anchor_comparison}
-\small
-\begin{tabular}{lr}
-\toprule
-Quantity & Value\\
-\midrule
-Latest National Accounts outcome, 2024--25 & 38.341\\
-PBO expenses, 2024--25 & 36.600\\
-PBO net capital investment, 2024--25 & 2.100\\
-PBO expenses plus net capital investment, 2024--25 & 38.700\\
-PBO broad proxy minus National Accounts, 2024--25 (\pp) & 0.359\\
-Dynamic model-only level, 2029--30 & 38.249\\
-PBO expenses, 2029--30 & 35.600\\
-PBO net capital investment, 2029--30 & 1.500\\
-Concept-aligned PBO join level, 2029--30 & 37.100\\
-Additive splice adjustment from 2029--30 (\pp) & $-1.149$\\
-Dynamic model-only endpoint, 2065--66 & 35.816\\
-Concept-aligned PBO-spliced dynamic endpoint, 2065--66 & 34.667\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.98\textwidth]{figures/top_down_model_only_all.png}
-\caption{All reported top-down specifications without a PBO spending anchor.  Each line begins at the common 2024--25 National Accounts outturn and then follows the model's own projection.  The common future demographic and macroeconomic assumptions are retained.}
-\label{fig:model_only_all}
-\end{figure}
-
-\begin{table}[H]
-\centering
-\caption{Anchored top-down spending projections (per cent of GDP)}
-\label{tab:top_endpoints}
-\small
-\begin{tabular}{lrrr}
-\toprule
-Specification & 2039--40 & 2049--50 & 2065--66\\
-\midrule
-Structural OLS (levels)       & 37.66 & 38.51 & 39.88\\
-ARIMAX (levels)               & 38.02 & 39.16 & 40.99\\
-Differenced ARIMAX family (dynamic specification) & 36.40 & 35.73 & 34.67\\
-Hybrid structural/macro       & 37.70 & 38.31 & 39.28\\
-ARDL error-correction model   & 38.61 & 40.45 & 43.29\\
-COVID-adjusted ARIMA          & 36.81 & 36.81 & 36.81\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The endpoint dispersion is economically large.  It is not a reason to average the equations mechanically: several specifications impose different assumptions about levels, integration and persistence.  The ensemble is used to reveal model risk; selection still requires statistical validity and an intended policy role.
-
-\subsection{Rolling forecast evaluation}
-
-For each origin $o=2010,\ldots,2020$, each model is re-estimated using only data available through $o$.  Forecasts are produced for horizons $h=1,\ldots,5$ using the subsequently observed driver paths.  Thus this is a test of the spending equation conditional on drivers, not a fully real-time forecast exercise.  For model $m$,
-\begin{equation}
- \operatorname{RMSE}_{m,h}
- =100\sqrt{\frac{1}{N_h}\sum_o
- \left(\widehat y^{(m)}_{o+h\mid o}-y_{o+h}\right)^2}.
- \label{eq:rmse}
-\end{equation}
-There are 11 forecast origins at each reported horizon.  COVID observations are retained and handled by the intervention variables where applicable.
-
-\begin{table}[H]
-\centering
-\caption{Forecast and sensitivity evidence (percentage points of GDP)}
-\label{tab:rmse}
+\caption{Fit, rolling forecasts and projection stability}
 \small
 \begin{tabular}{lrrrrr}
 \toprule
-Specification & 1-year RMSE & 5-year RMSE & Mean RMSE & Official MAE & Max endpoint shift\\
+Model & In-sample & Average rolling & 1-year & 5-year & Max window\\
+ & RMSE & RMSE & RMSE & RMSE & shift\\
 \midrule
-Structural OLS (levels)       & 3.269 & 6.678 & 4.890 & 1.971 & 6.597\\
-ARIMAX (levels)               & 2.915 & 6.446 & 4.674 & 0.368 & 7.717\\
-\textbf{Differenced ARIMAX family (dynamic)} & \textbf{1.707} & \textbf{4.996} & \textbf{3.485} & 0.486 & \textbf{2.499}\\
-Hybrid structural/macro       & 3.084 & 6.131 & 4.445 & 0.753 & 6.312\\
-ARDL error-correction model   & 2.164 & 7.363 & 4.684 & 0.451 & 11.650\\
-COVID-adjusted ARIMA          & 2.631 & 2.935 & 2.774 & 1.479 & 0.397\\
+Structural OLS & 0.77 & 4.66 & 3.39 & 5.92 & 5.59\\
+Levels ARIMAX & 0.55 & 4.45 & 3.18 & 5.69 & 5.10\\
+Differenced ARIMAX & 0.59 & 3.58 & 1.80 & 4.97 & 1.39\\
+Hybrid & 0.62 & 4.34 & 3.21 & 5.60 & 5.38\\
+ARDL ECM & 0.52 & 3.15 & 1.86 & 3.94 & 1.45\\
 \bottomrule
 \end{tabular}
+\begin{flushleft}\footnotesize RMSE and window shifts are percentage points of GDP. Rolling forecasts use origins 2009--10 to 2019--20 and horizons one to five years, conditional on subsequently observed driver paths.\end{flushleft}
 \end{table}
+
+The ECM's forecast metrics are promising, but a long-run model cannot be selected on predictive fit alone: cointegration is a maintained requirement. Among the specifications that do not require a validated level equilibrium, the differenced ARIMAX has the lowest average rolling RMSE and much lower pre-COVID endpoint sensitivity than the three level-based alternatives.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{figures/top_down_selection_evidence.png}
-\caption{Forecast accuracy and estimation-window sensitivity used in selecting the top-down cross-check.  The dynamic specification of the differenced ARIMAX family is ringed in the RMSE panel and highlighted in green in the sensitivity panel.}
-\label{fig:selection}
+\includegraphics[width=.94\textwidth]{figures/five_model_rolling_rmse.png}
+\caption{Rolling conditional forecast RMSE.}
 \end{figure}
 
-The COVID-adjusted ARIMA is the statistical winner.  The relevant selection question, however, is which model should be used when the purpose is to condition long-run spending on ageing, relative prices and macroeconomic scenarios.  On that narrower comparison, the dynamic specification of the differenced ARIMAX family has the best five-year RMSE among the reported driver-based equations and the smallest tested endpoint-window sensitivity.  It also avoids asserting an unsupported cointegrating equilibrium.
+\subsection{Cointegration and ECM validation}
 
-\subsubsection*{Treatment of COVID-affected observations}
+ARDL bounds inference permits a mixture of I(0) and I(1) regressors but not I(2) variables \cite{pss}. ADF and KPSS tests on first differences give no I(2) warning for $w_t$, $q_t$ or $p_t$. Zivot--Andrews tests are also reported to allow one endogenous level/trend break.
 
-Separate indicators identify 2019--20, 2020--21 and 2021--22.  In the structural OLS, levels ARIMAX, hybrid structural equation and statistical ARIMA benchmark, these enter as level interventions.  In the dynamic differenced specification and ECM, they enter directly as annual-change interventions.  The hybrid includes them only in its structural level equation: their fitted first differences flow into the unexplained-change calculation, so a duplicate set is not included in the macro residual equation.
-
-To test whether the model ranking is simply an artefact of the pandemic forecast errors, pooled rolling RMSE was recalculated after removing COVID-affected target years.  The dynamic-difference model remains the best driver-based model in every comparison:
-
-\begin{table}[H]
-\centering
-\caption{Pooled rolling RMSE under alternative COVID evaluation samples (percentage points of GDP)}
-\label{tab:covid_rmse}
-\small
-\begin{tabular}{lr}
-\toprule
-Evaluation targets & Differenced ARIMAX family (dynamic specification)\\
-\midrule
-All target years & 3.666\\
-Exclude 2019--20 to 2021--22 & 1.742\\
-Exclude 2019--20 to 2022--23 & 1.491\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The hybrid, levels models and ECM also remain behind the dynamic specification when the affected target years are removed.  The COVID-adjusted ARIMA remains the best purely statistical benchmark.  Thus the driver-model selection ranking is not generated solely by forecast errors during the pandemic.
-
-The full-sample dynamic specification reaches 33.52\% of GDP in 2065--66.  Estimation ending in 2018--19 produces 32.59\%, a difference of 0.92 \pp; beginning estimation in 1989--90 produces 36.05\%, a difference of 2.53 \pp.  The corresponding hybrid endpoints are 38.28\%, 31.63\% and 40.64\%, respectively.  The hybrid therefore retains material level-relationship uncertainty despite the parsimonious demographic block and annual interventions.
-
-\subsection{Why the ARDL/ECM is rejected}
-\label{sec:ardl_rejection}
-
-The ECM is not rejected because its projected path is high, nor because the adjustment coefficient has an inconvenient sign.  It is rejected as the preferred specification because the conditions required to interpret equation~\eqref{eq:ecm} as an error-correction model are not established.
-
-\subsubsection*{1. Integration order is not cleanly admissible}
-
-ARDL bounds methods allow a mixture of $I(0)$ and $I(1)$ regressors, but not $I(2)$ variables \cite{pss}.  ADF and KPSS tests support first-difference stationarity for spending/GDP, relative government prices and unemployment.  The result for the 0--14 share is inconclusive, while the 65+ share produces an $I(2)$ warning because first-difference stationarity is not established.  These tests have low power against smooth demographic trends, but that uncertainty weakens rather than strengthens the case for bounds inference.
-
-\subsubsection*{2. The fitted level relationship fails both bounds tests}
-
-Finite-sample critical values were simulated using 20,000 replications for Case III (unrestricted intercept, no trend) and four long-run regressors: the two age shares, relative government prices and unemployment.
-
-\begin{table}[H]
-\centering
-\caption{Finite-sample bounds tests at the 5 per cent level}
-\label{tab:bounds}
-\small
-\begin{tabular}{llrrrl}
-\toprule
-Specification & Test & Statistic & $I(0)$ bound & $I(1)$ bound & Decision\\
-\midrule
-Fitted ECM & $F$ joint level block & 0.983 & 3.193 & 4.485 & No relationship\\
-Fitted ECM & $t$ on $y_{t-1}$ & $-1.706$ & $-2.884$ & $-4.066$ & No relationship\\
-Canonical ARDL robustness & $F$ joint level block & 2.892 & 3.193 & 4.485 & No relationship\\
-Canonical ARDL robustness & $t$ on $y_{t-1}$ & $-3.558$ & $-2.884$ & $-4.066$ & Inconclusive\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-For the $F$ test, evidence of a relationship requires a statistic above the $I(1)$ upper bound.  For the $t$ test, it requires a statistic more negative than the $I(1)$ bound.  The fitted ECM achieves neither.  The canonical ARDL robustness specification also fails the $F$ bound, while its $t$ statistic is inconclusive.
-
-\subsubsection*{3. Residual and functional-form checks do not establish a level relationship}
-
-\begin{table}[H]
-\centering
-\caption{Selected diagnostics for the fitted ECM}
-\label{tab:ecm_diagnostics}
-\small
-\begin{tabular}{lrrl}
-\toprule
-Test & Statistic & $p$-value & Assessment at 5\%\\
-\midrule
-Breusch--Godfrey serial correlation, order 2 & 1.436 & 0.4878 & Pass\\
-Breusch--Pagan heteroskedasticity             & 5.710 & 0.9561 & Pass\\
-Ramsey RESET functional form                  & 0.875 & 0.4279 & Pass\\
-Recursive CUSUM parameter stability           & 0.918 & 0.0623 & Pass\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The model is dynamically stable (maximum root modulus 0.680) and passes the reported residual, functional-form and CUSUM checks.  These results support the adequacy of the short-run equation, but they cannot supply the missing evidence of a long-run level relationship.  The bounds tests remain the governing diagnostic for interpreting the specification as an ECM.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.96\textwidth]{figures/ardl_rejection_evidence.png}
-\caption{The fitted ECM statistics lie in the no-level-relationship regions of both bounds tests.  Residual and stability checks pass, but do not establish cointegration.}
-\label{fig:ardl}
-\end{figure}
-
-\subsubsection*{4. Long-run coefficients are weakly identified}
-
-Age shares move together and sum to one.  With the aggregate 15--64 share omitted, the maximum VIF is 19.7 and the standardised design condition number is 10.6.  Individual implied long-run age effects remain too collinear to support a strong structural interpretation.
-
-\subsubsection*{5. Forecast performance and sample sensitivity do not rescue the model}
-
-The ECM has the highest five-year rolling RMSE of the six reported models and its 2065--66 endpoint changes by 11.650 \pp\ when the estimation window changes.  Its 43.29\% endpoint is retained in the ensemble as a sensitivity, but there is no statistical basis for labelling that path the estimated long-run equilibrium.
-
-\subsection{Selection conclusion and proposed use}
-
-The proposed hierarchy is:
-\begin{enumerate}[leftmargin=2em]
-\item use the August 2026 PBO consolidated expenses plus net capital investment through 2029--30 as the closest available bridge to the broad top-down outcome;
-\item describe the preferred top-down approach as the differenced ARIMAX family and use its dynamic specification as the principal projection;
-\item retain the ARIMA with COVID controls as the near-term statistical benchmark;
-\item show the complete top-down ensemble as specification uncertainty;
-\item retain the ECM as an experimental sensitivity, but do not use its implied long-run coefficients or endpoint as the central estimate.
-\end{enumerate}
-
-This is a choice of the best current cross-check, not a claim that the dynamic specification is a forty-year causal model.  Its forecast intervals widen substantially because annual changes are accumulated, it remains conditional on assumed driver paths, and its endpoint varies across estimation windows.  The estimation-through-2019 check is within 0.85 \pp\ of the full-sample endpoint, while the 1989--90 start shifts it by 2.50 \pp.
-
-\section{Comparison of the two bottom-up approaches}
-
-\subsection{Baseline: fixed demographic exposures and calibrated excess costs}
-
-Let $S_{c,t}$ denote nominal primary spending in category $c$, $E_{c,t}$ its demographic exposure, $\pi_t$ inflation and $g^{\mathrm{prod}}_t$ the common real-income/productivity allowance.  For non-defence categories,
-\begin{align}
-S_{c,t}&=S_{c,t-1}
-\left(\frac{E_{c,t}}{E_{c,t-1}}\right)
-\left(1+\pi_t+g^{\mathrm{prod}}_t+\kappa_{c,s}\right),
-\label{eq:bottom_base}\\
-g^{\mathrm{prod}}_t&=\max\{g^{\mathrm{nomGDP}}_t-\pi_t-g^{\mathrm{pop}}_t,0\}.
-\end{align}
-Here $\kappa_{c,s}$ is the category excess-cost rate in scenario $s$.  Exposure is total population or a fixed age-weighted population for health, education and social protection, using Centre for Population projections \cite{population}.  The base category levels are from ABS GFS \cite{absgfs}.  The central excess-cost assumptions are 0.75\% for health; 0.25\% for education, public order and social protection; and zero elsewhere.  These are transparent modelling judgements, not published estimates.  The exposure--price--intensity decomposition follows the broad logic used in Australian long-run fiscal projections \cite{igr}.
-
-Defence is exogenous:
-\begin{equation}
- S_{\mathrm{def},t}=Y_t d_{s,t},
-\end{equation}
-where $d_{s,t}$ transitions from the observed share to a scenario target by 2034--35.  Category totals are scaled to the official primary-spending path through 2029--30; the final scale factor is then held fixed.
-
-\subsection{Data-enhanced sensitivity}
-
-The second approach keeps the same demographic exposures and defence rule, but uses online ABS public-sector Wage Price Index (WPI) series \cite{abswpi} and the recent GFS purpose history.  For category $c$,
-\begin{align}
-e_{c,t}&=g(S_{c,t})-g(E_{c,t})-g(W^{\mathrm{all}}_t),\\
-p_{c,t}&=g(W^c_t)-g(W^{\mathrm{all}}_t),\\
-i_{c,t}&=g(S_{c,t})-g(E_{c,t})-g(W^c_t),\\
-e_{c,t}&=p_{c,t}+i_{c,t},
-\label{eq:enhanced_decomp}
-\end{align}
-where $g(x_t)=x_t/x_{t-1}-1$.  The enhanced central rate is
-\begin{equation}
- \kappa^{\mathrm{enh}}_c
- =0.65\kappa^{\mathrm{base}}_c
- +0.35\,\operatorname{clip}\!\left(
- \operatorname{median}_{t\in\mathcal T}e_{c,t},-0.02,0.02\right),
- \label{eq:shrink}
-\end{equation}
-where $\mathcal T$ contains six non-COVID annual changes.  Half of the departure from baseline is damped away by 2039--40.  The 35\% weight, cap and damping are conservative modelling choices reflecting the short, break-prone ten-year GFS panel.
-
-\begin{table}[H]
-\centering
-\caption{Central annual excess-cost assumptions (per cent)}
-\label{tab:excess_cost}
-\small
-\begin{tabular}{lrr}
-\toprule
-Category & Baseline & Data-enhanced initial rate\\
-\midrule
-General public services excluding interest & 0.000 & $-0.006$\\
-Public order and safety                     & 0.250 & 0.746\\
-Economic affairs                            & 0.000 & $-0.700$\\
-Environmental protection                    & 0.000 & 0.700\\
-Housing and community amenities             & 0.000 & $-0.113$\\
-Health                                      & 0.750 & 0.928\\
-Recreation, culture and religion            & 0.000 & 0.320\\
-Education                                   & 0.250 & 0.632\\
-Social protection                           & 0.250 & $-0.125$\\
-Transport                                   & 0.000 & 0.555\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.94\textwidth]{figures/bottom_up_central_paths.png}
-\caption{Central primary-spending projections under the baseline and data-enhanced bottom-up methods.}
-\label{fig:bottom_paths}
-\end{figure}
-
-\begin{table}[H]
-\centering
-\caption{Bottom-up primary spending in 2065--66 (per cent of GDP)}
-\label{tab:bottom_endpoints}
-\small
-\begin{tabular}{lrrr}
-\toprule
-Scenario & Baseline & Data-enhanced & Difference (\pp)\\
-\midrule
-Central   & 39.397 & 39.549 & 0.152\\
-Pressure  & 45.881 & 45.976 & 0.096\\
-Restraint & 35.440 & 35.544 & 0.104\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The aggregate central difference is small, but category offsets are material.  By 2065--66 the enhanced method raises education and health by about 0.44 and 0.43 \pp\ of GDP relative to baseline, while lowering social protection and economic affairs by about 1.08 and 0.23 \pp.  Given the short estimation history, the fixed-rate version should remain the central baseline and the enhanced model should be reported as evidence-informed model sensitivity.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\textwidth]{figures/bottom_up_category_differences.png}
-\caption{Category contributions to the data-enhanced minus baseline difference in 2065--66.}
-\label{fig:bottom_categories}
-\end{figure}
-
-\section{Placing all specifications together}
-
-\subsection{What can and cannot be compared directly}
-
-The top-down outcome is a broad National Accounts expenditure ratio with interest embedded.  The bottom-up category model projects primary spending and then adds endogenous debt interest in the debt module.  These concepts should not be silently overlaid.  Figure~\ref{fig:all_models} uses the baseline bottom-up \emph{total} expense ratio after adding endogenous interest, which is the closest workflow comparison with the top-down outcome.  The enhanced bottom-up result is currently a primary-spending sensitivity; its debt and interest feedback has not been rerun, so it is shown separately in Table~\ref{tab:all_endpoints} rather than as a directly comparable total-expense line.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{figures/all_reported_models.png}
-\caption{Baseline bottom-up central total expenses, including endogenous interest, compared with the anchored top-down specifications.  Conceptual differences remain and the graph should be read as triangulation rather than a horse race.}
-\label{fig:all_models}
-\end{figure}
-
-\begin{table}[H]
-\centering
-\caption{Selected endpoints across the workflow (per cent of GDP)}
-\label{tab:all_endpoints}
-\small
-\begin{tabularx}{\textwidth}{XrrX}
-\toprule
-Specification & 2039--40 & 2065--66 & Spending concept\\
-\midrule
-Structural OLS              & 37.66 & 39.88 & Top-down broad total\\
-Levels ARIMAX               & 38.02 & 40.99 & Top-down broad total\\
-\textbf{Differenced ARIMAX family (dynamic)}& \textbf{36.40} & \textbf{34.67} & Top-down broad total; preferred driver cross-check\\
-Hybrid                      & 37.70 & 39.28 & Top-down broad total; structural cross-check\\
-ARDL/ECM                    & 38.61 & 43.29 & Top-down broad total; rejected as primary\\
-COVID-adjusted ARIMA        & 36.81 & 36.81 & Top-down broad total; statistical benchmark\\
-Bottom-up baseline          & 35.16 & 39.40 & Primary spending only\\
-Bottom-up data-enhanced     & 35.20 & 39.55 & Primary spending only\\
-Bottom-up baseline + interest & 36.21 & 42.40 & Total expenses with endogenous interest\\
-\bottomrule
-\end{tabularx}
-\end{table}
-
-The working recommendation is therefore not to choose a single line from Figure~\ref{fig:all_models}.  The official forecast handles the near term; the bottom-up baseline is the central long-run fiscal-sustainability framework; the differenced ARIMAX family, represented by its dynamic specification, is the preferred driver-based aggregate cross-check; the COVID-adjusted ARIMA is the near-term statistical benchmark; and the remaining equations and bottom-up enhanced version define transparent specification sensitivities.
-
-\section{Questions for internal review}
-
-Colleagues can most usefully sense-check the following points:
-\begin{enumerate}[leftmargin=2em]
-\item Is PBO expenses plus net capital investment the right bridge for the broad National Accounts outcome, and should the remaining historical reconciliation be estimated explicitly?
-\item Are the two selected demographic shares and the variable-specific transformations in equation~\eqref{eq:dynamic} economically appropriate, particularly the use of changes in unemployment and relative prices?
-\item Should rolling forecasts be supplemented by genuinely real-time driver vintages, rather than conditioning on subsequently observed drivers?
-\item Are 2010--2020 origins representative enough, and are separate FY2020--22 interventions sufficient to isolate the pandemic observations?
-\item Is the 2029--30 PBO anchor the correct join point, and should model growth be blended gradually rather than joined immediately?
-\item Does the ARDL rejection logic omit any credible alternative lag order, deterministic case or smaller long-run block worth testing?
-\item For the bottom-up model, are the fixed age weights and baseline excess-cost assumptions reasonable, and which category should receive the next service-volume module?
-\item Should the enhanced bottom-up primary path be passed through the full debt-interest recursion before it is included in the combined comparison?
-\end{enumerate}
-
-\section{Reproducibility and limitations}
-
-All results in this note are generated from the project tables and scripts.  Key files are:
-\begin{itemize}[leftmargin=2em]
-\item \model{R/model\_functions\_2.R}: mathematical implementation of the six reported top-down specifications and the internal restricted differenced-ARIMAX benchmark;
-\item \model{scripts/30\_forecast\_checks.R}: rolling-origin forecasts;
-\item \model{scripts/31\_model\_diagnostics.R}: fit, interval and sensitivity diagnostics;
-\item \model{scripts/32\_ecm\_validation.R}: integration, finite-sample bounds, specification, stability and collinearity tests;
-\item \model{scripts/10\_bottom\_up\_projection.R}: baseline bottom-up method;
-\item \model{scripts/11\_bottom\_up\_data\_enhanced.R}: online-price/data-enhanced sensitivity;
-\item \model{outputs/tables/model\_selection\_assessment.csv}: consolidated top-down selection evidence;
-\item \model{outputs/tables/top\_down\_anchor\_comparison.csv}: National Accounts, PBO and model-only level reconciliation;
-\item \model{outputs/tables/ecm\_validation\_summary.csv}: ARDL/ECM decision evidence.
+With conventional interest excluded, the exact finite-sample Case III bounds results are:
+\begin{itemize}
+\item joint lagged-level F statistic $2.298$, below the 5 per cent I(0) bound $4.062$ (exact $p=0.438$);
+\item lagged-dependent-level t statistic $-1.560$, above the I(0) bound $-2.904$ (exact $p=0.675$); and
+\item augmented-ARDL F statistic for the lagged independent levels $1.557$ ($p=0.225$).
 \end{itemize}
+The first two tests support no cointegration and the third does not rule out a degenerate-regressor case. The estimated adjustment coefficient becomes more negative, $\widehat\lambda=-0.152$, but remains insignificant ($p=0.128$). Breusch--Godfrey, RESET, Breusch--Pagan and recursive CUSUM tests do not reject at 5 per cent, but satisfactory conditional residual checks cannot replace the missing level relationship. A one-break diagnostic for the candidate long-run regression selects 2018--19, which adds to the stability concern.
 
-The exercise remains conditional, not causal.  Model spread is not a probability interval; conditional forecast intervals omit driver and policy uncertainty; structural breaks are difficult to identify in a 46-year annual sample; and the bottom-up excess-cost estimates use only a ten-year consistent GFS purpose panel.  These limitations motivate triangulation rather than false precision.
+The ECM is therefore rejected as the primary long-run projection model. It remains in the comparison as a disciplined test of the economic hypothesis, not as evidence that the hypothesis holds.
 
-\begin{thebibliography}{99}
+\subsection{Preferred top-down approach}
 
-\bibitem{absna}
-Australian Bureau of Statistics (2026), \emph{Australian National Accounts: National Income, Expenditure and Product}.
-\url{https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product/latest-release}
+The preferred top-down model is the differenced ARIMAX. It includes the limited demographic block, relative prices and cyclical macro drivers without relying on an unsupported cointegrating relationship. Its PBO-anchored 2065--66 primary fiscal-expenditure endpoint is 32.94 per cent of GDP, compared with 31.71 for the rejected ECM, 36.27 for levels ARIMAX, 36.16 for the hybrid and 36.52 for structural OLS. Public debt interest is added separately from the projected debt stock and effective interest-rate assumptions when constructing total expenditure and debt paths.
 
-\bibitem{absgfs}
-Australian Bureau of Statistics (2026), \emph{Government Finance Statistics, Annual}.
-\url{https://www.abs.gov.au/statistics/economy/government/government-finance-statistics-annual/latest-release}
+\begin{figure}[H]
+\centering
+\includegraphics[width=.94\textwidth]{figures/five_model_paths_model_only.png}
+\caption{Model-only projections beginning from the latest National Accounts actual.}
+\end{figure}
 
-\bibitem{abswpi}
-Australian Bureau of Statistics (2026), \emph{Wage Price Index, Australia}, catalogue 6345.0, Table 5a.
-\url{https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/wage-price-index-australia/latest-release}
+\begin{figure}[H]
+\centering
+\includegraphics[width=.94\textwidth]{figures/five_model_paths_pbo_anchor.png}
+\caption{PBO expenses less public debt interest plus net capital investment through 2029--30, followed by model changes.}
+\end{figure}
 
-\bibitem{pbo}
-Parliamentary Budget Office (2026), \emph{2026--27 National Fiscal Outlook}, 19 August.
-\url{https://www.pbo.gov.au/publications-and-data/publications/2026-27-National-Fiscal-Outlook}
+\section{Literature background}
 
-\bibitem{pbotech}
-Parliamentary Budget Office (2026), \emph{2026--27 National Fiscal Outlook: Technical appendix}, 19 August.
-\url{https://www.pbo.gov.au/sites/default/files/2026-08/PBO\%202026-27\%20National\%20Fiscal\%20Outlook\%20-\%20Technical\%20appendix.pdf}
+The public-spending time-series literature provides a useful structure but not a universal specification. Akitoby et al. separate short-run expenditure dynamics from a long-run output relation and survey Wagner-type formulations \cite{akitoby}. Arpaia and Turrini use error-correction methods for government expenditure in European economies \cite{arpaia}. For a spending-share outcome, the Mann/Musgrave formulation motivates $w_t$ and $q_t$. Relative public-sector prices are included because labour-intensive public services can become more expensive relative to aggregate output prices \cite{price}.
 
-\bibitem{absgfsmethod}
-Australian Bureau of Statistics (2020), \emph{Government Finance Statistics, Australia methodology: Relationship to the Australian System of National Accounts}.
-\url{https://www.abs.gov.au/methodologies/government-finance-statistics-australia-methodology/mar-2020}
+Pesaran, Shin and Smith provide the ARDL bounds framework \cite{pss}. Sam, McNown and Goh show that the joint F test should be supplemented by tests of the lagged dependent and independent levels to exclude degenerate cases \cite{sam}. Published Australian Wagner-law evidence is mixed and period-dependent \cite{australia}. Consequently, cointegration and stability are treated as requirements for the ECM, not inferred from a high $R^2$ or low in-sample RMSE.
 
-\bibitem{absgfsasna}
-Australian Bureau of Statistics (2015), \emph{Australian System of Government Finance Statistics: Relationship to the Australian System of National Accounts}.
-\url{https://www.abs.gov.au/statistics/detailed-methodology-information/concepts-sources-methods/australian-system-government-finance-statistics-concepts-sources-and-methods/2015/17-relationships-other-statistical-systems/part-c-relationship-australian-system-national-accounts-asna}
+\section{Bottom-up approaches}
 
-\bibitem{population}
-Centre for Population (2025), \emph{2025 Population Statement}.
-\url{https://population.gov.au/publications/statements/2025-population-statement}
+The fixed demographic-rate baseline projects each function from its observed level using a transparent exposure rule. Defence follows an exogenous share-of-GDP policy path. Health, education and social protection respond to relevant age structure. Health also has central excess cost growth of 0.75 per cent per year above the common nominal cost base. This represents technology, intensity, wages and relative-price pressure not explained by demographics and general inflation. It is a scenario assumption informed by the Australian Intergenerational Report, PBO projections, OECD health-spending work and Productivity Commission evidence, not a precisely estimated structural coefficient.
 
-\bibitem{pss}
-Pesaran, M.~H., Shin, Y. and Smith, R.~J. (2001), ``Bounds testing approaches to the analysis of level relationships'', \emph{Journal of Applied Econometrics}, 16(3), 289--326.
-\url{https://doi.org/10.1002/jae.616}
+The data-enhanced sensitivity uses the same exposure and policy structure but adds public relative-price information and a shrunk historical category-intensity residual. The estimate is capped, shrunk toward the baseline and partly damped by 2040 to avoid extrapolating COVID disruption, classification changes or a short noisy history. The fixed-rate model remains the baseline because it is more transparent; the enhanced path tests sensitivity.
 
-\bibitem{hk}
-Hyndman, R.~J. and Khandakar, Y. (2008), ``Automatic time series forecasting: the forecast package for R'', \emph{Journal of Statistical Software}, 27(3), 1--22.
-\url{https://doi.org/10.18637/jss.v027.i03}
+\section{Using all specifications together}
 
-\bibitem{igr}
-Australian Treasury (2023), \emph{Intergenerational Report 2023: Australia's future to 2063}.
-\url{https://treasury.gov.au/sites/default/files/2023-08/p2023-435150.pdf}
+The PBO-anchored differenced ARIMAX is the preferred empirical top-down projection. Structural OLS supports old-Shapley attribution. Levels ARIMAX and the hybrid show the consequences of imposing slow-moving levels relationships. The ECM provides a formal long-run income test, but its current failure is informative and should remain visible. The fixed-rate bottom-up path explains functional spending pressures, while the data-enhanced bottom-up path tests relative-price and excess-cost assumptions. These paths should not be averaged mechanically: disagreement is model uncertainty.
 
-\bibitem{aihw}
-Australian Institute of Health and Welfare, \emph{Health Expenditure Database}.
-\url{https://www.aihw.gov.au/about-our-data/our-data-collections/health-expenditure-database}
-
-\bibitem{rogs}
-Productivity Commission, \emph{Report on Government Services}.
-\url{https://www.pc.gov.au/ongoing/report-on-government-services/}
-
+\begin{thebibliography}{9}
+\bibitem{akitoby} Akitoby, Clements, Gupta and Inchauste, \emph{Public Spending, Voracity, and Wagner's Law in Developing Countries}, IMF Working Paper 04/202, \url{https://www.imf.org/external/pubs/ft/wp/2004/wp04202.pdf}.
+\bibitem{arpaia} Arpaia and Turrini, \emph{Government Expenditure and Economic Growth in the EU}, \url{https://www.bancaditalia.it/pubblicazioni/altri-atti-convegni/2007-fiscal-policy/Arpaia_Turrini.pdf?language_id=1}.
+\bibitem{pss} Pesaran, Shin and Smith (2001), \emph{Bounds testing approaches to the analysis of level relationships}, \url{https://onlinelibrary.wiley.com/doi/pdf/10.1002/jae.616}.
+\bibitem{sam} Sam, McNown and Goh (2019), \emph{An augmented autoregressive distributed lag bounds test for cointegration}, \url{https://www.sciencedirect.com/science/article/pii/S0264999318307843}.
+\bibitem{australia} \emph{Wagner's law in Australia: a structural time series analysis}, \url{https://www.tandfonline.com/doi/full/10.1080/00036846.2016.1203063}.
+\bibitem{price} \emph{Government Spending and Relative Prices}, \url{https://journals.sagepub.com/doi/10.1177/1091142103031003002}.
 \end{thebibliography}
 
 \end{document}

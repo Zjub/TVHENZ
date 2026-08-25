@@ -1,31 +1,13 @@
-series,transformation,test,deterministic,null_hypothesis,statistic,critical_value_5pct,selected_lags,reject_null_5pct
-spending_gdp,level,Augmented Dickey-Fuller,intercept,Unit root,-1.94872453715003,-2.93,2,FALSE
-spending_gdp,level,Augmented Dickey-Fuller,intercept_and_trend,Unit root,-1.87489584249201,-3.5,2,FALSE
-spending_gdp,level,KPSS,intercept,Level stationarity,0.172157853520044,0.463,3,FALSE
-spending_gdp,level,KPSS,intercept_and_trend,Trend stationarity,0.175335861623717,0.146,3,TRUE
-spending_gdp,first_difference,Augmented Dickey-Fuller,intercept,Unit root,-6.6230695346279,-2.93,1,TRUE
-spending_gdp,first_difference,KPSS,intercept,Level stationarity,0.0801700050119412,0.463,3,FALSE
-age_0_14,level,Augmented Dickey-Fuller,intercept,Unit root,-1.40821145061836,-2.93,2,FALSE
-age_0_14,level,Augmented Dickey-Fuller,intercept_and_trend,Unit root,-4.24224485815285,-3.5,1,TRUE
-age_0_14,level,KPSS,intercept,Level stationarity,1.2088023387179,0.463,3,TRUE
-age_0_14,level,KPSS,intercept_and_trend,Trend stationarity,0.243971932615843,0.146,3,TRUE
-age_0_14,first_difference,Augmented Dickey-Fuller,intercept,Unit root,-2.66091815605082,-2.93,1,FALSE
-age_0_14,first_difference,KPSS,intercept,Level stationarity,0.436261905993539,0.463,3,FALSE
-age_65p,level,Augmented Dickey-Fuller,intercept,Unit root,2.05036084505881,-2.93,2,FALSE
-age_65p,level,Augmented Dickey-Fuller,intercept_and_trend,Unit root,0.221012572010265,-3.5,2,FALSE
-age_65p,level,KPSS,intercept,Level stationarity,1.2081273903359,0.463,3,TRUE
-age_65p,level,KPSS,intercept_and_trend,Trend stationarity,0.250045096897966,0.146,3,TRUE
-age_65p,first_difference,Augmented Dickey-Fuller,intercept,Unit root,-1.94536760287598,-2.93,2,FALSE
-age_65p,first_difference,KPSS,intercept,Level stationarity,0.537183422086037,0.463,3,TRUE
-relative_government_prices,level,Augmented Dickey-Fuller,intercept,Unit root,-2.30659443476417,-2.93,1,FALSE
-relative_government_prices,level,Augmented Dickey-Fuller,intercept_and_trend,Unit root,-2.81693390938725,-3.5,1,FALSE
-relative_government_prices,level,KPSS,intercept,Level stationarity,0.500748159077437,0.463,3,TRUE
-relative_government_prices,level,KPSS,intercept_and_trend,Trend stationarity,0.0854833491196918,0.146,3,FALSE
-relative_government_prices,first_difference,Augmented Dickey-Fuller,intercept,Unit root,-4.23367497463657,-2.93,1,TRUE
-relative_government_prices,first_difference,KPSS,intercept,Level stationarity,0.0800548228731348,0.463,3,FALSE
-unemployment,level,Augmented Dickey-Fuller,intercept,Unit root,-1.04489009451822,-2.93,2,FALSE
-unemployment,level,Augmented Dickey-Fuller,intercept_and_trend,Unit root,-2.02904734748274,-3.5,2,FALSE
-unemployment,level,KPSS,intercept,Level stationarity,0.779746310149415,0.463,3,TRUE
-unemployment,level,KPSS,intercept_and_trend,Trend stationarity,0.105399145372166,0.146,3,FALSE
-unemployment,first_difference,Augmented Dickey-Fuller,intercept,Unit root,-6.42453693038047,-2.93,1,TRUE
-unemployment,first_difference,KPSS,intercept,Level stationarity,0.121802137896368,0.463,3,FALSE
+series,test,statistic,critical_value_5pct,reject_null_5pct,break_year
+log_spending_share,ADF level with trend,-4.5780277693888,-3.5,TRUE,
+log_spending_share,ADF first difference,-6.81357435746452,-2.93,TRUE,
+log_spending_share,KPSS first difference,0.0496317152152433,0.463,FALSE,
+log_spending_share,Zivot-Andrews level/trend break,-5.80920637273859,,,2019
+log_real_gdp_per_capita,ADF level with trend,-0.73617519847392,-3.5,FALSE,
+log_real_gdp_per_capita,ADF first difference,-4.17337887021722,-2.93,TRUE,
+log_real_gdp_per_capita,KPSS first difference,0.365174737825972,0.463,FALSE,
+log_real_gdp_per_capita,Zivot-Andrews level/trend break,-3.69187282255704,,,2003
+log_relative_government_price,ADF level with trend,-2.87502164470498,-3.5,FALSE,
+log_relative_government_price,ADF first difference,-4.25478534662099,-2.93,TRUE,
+log_relative_government_price,KPSS first difference,0.0789784226036377,0.463,FALSE,
+log_relative_government_price,Zivot-Andrews level/trend break,-4.1779248396219,,,2014

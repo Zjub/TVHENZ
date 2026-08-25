@@ -93,28 +93,86 @@ central_revenue <- revenue_paths[scenario == "central", .(year, revenue_ratio)]
 top_join <- top[path_type == "Official forecast then model projection"]
 
 top_debt <- top_join[, {
-  dt <- data.table(year = year, total_expense_ratio = value)
+  dt <- data.table(year = year, modelled_expense_ratio = value)
   dt <- merge(dt, central_macro, by = "year")
   dt <- merge(dt, central_revenue, by = "year")
-  dt <- merge(dt, official[, .(year, official_nci = net_capital_investment_ratio_gdp)], by = "year", all.x = TRUE)
-  dt[, net_capital_investment_ratio := fifelse(!is.na(official_nci), official_nci, 0.015)]
+  dt <- merge(dt, official[, .(
+    year,
+    official_net_debt = net_debt_ratio_gdp,
+    official_gross_debt = gross_debt_ratio_gdp,
+    official_interest = public_debt_interest_ratio_gdp
+  )], by = "year", all.x = TRUE)
   dt[, nominal_gdp_growth := c(NA_real_, diff(log(nominal_gdp)))]
-  dt[, net_debt_ratio := NA_real_]
-  # Model projections begin in 2026, so use the 2025 official stock as opening debt.
+  dt[, `:=`(
+    net_debt_ratio = NA_real_, gross_debt_ratio = NA_real_, interest_ratio = NA_real_,
+    primary_fiscal_expense_ratio = NA_real_, total_expense_ratio = NA_real_
+  )]
+  excludes_pdi <- topdown_interest_treatment != "include_interest"
+  if (excludes_pdi) {
+    dt[, primary_fiscal_expense_ratio := modelled_expense_ratio]
+  } else {
+    dt[, total_expense_ratio := modelled_expense_ratio]
+  }
+
+  # The top-down target already contains capital investment, matching the PBO
+  # expenses-plus-net-capital anchor. Do not add capital investment again here.
+  # Use published debt and PDI through the official period, then allow debt and
+  # interest to evolve recursively from the modelled primary fiscal balance.
   opening <- official[year == 2025, net_debt_ratio_gdp]
+  opening_gross <- official[year == 2025, gross_debt_ratio_gdp]
+  gross_net_wedge <- official[year == official_forecast_end,
+                              gross_debt_ratio_gdp - net_debt_ratio_gdp]
+  implied_rate_2030 <- official[year == official_forecast_end,
+    public_debt_interest_ratio_gdp] /
+    (official[year == official_forecast_end - 1L, gross_debt_ratio_gdp] /
+       (1 + dt[year == official_forecast_end, nominal_gdp_growth]))
+  long_run_rate <- params[scenario == "central", effective_interest_rate_long_run]
+  dt[, effective_interest_rate := approx(
+    c(official_forecast_end, 2037L), c(implied_rate_2030, long_run_rate),
+    xout = year, rule = 2
+  )$y]
   for (i in seq_len(nrow(dt))) {
     g <- dt$nominal_gdp_growth[i]
     if (!is.finite(g)) g <- central_macro[year == dt$year[i], nominal_gdp] /
       (official[year == 2025, nominal_gdp_billion] * 1000) - 1
+    if (dt$year[i] <= official_forecast_end) {
+      dt$net_debt_ratio[i] <- dt$official_net_debt[i]
+      dt$gross_debt_ratio[i] <- dt$official_gross_debt[i]
+      dt$interest_ratio[i] <- dt$official_interest[i]
+      if (excludes_pdi) {
+        dt$total_expense_ratio[i] <-
+          dt$primary_fiscal_expense_ratio[i] + dt$interest_ratio[i]
+      }
+      opening <- dt$net_debt_ratio[i]
+      opening_gross <- dt$gross_debt_ratio[i]
+      next
+    }
     debt_open_current_gdp <- opening / (1 + g)
-    dt$net_debt_ratio[i] <- debt_open_current_gdp + dt$total_expense_ratio[i] +
-      dt$net_capital_investment_ratio[i] - dt$revenue_ratio[i]
+    if (excludes_pdi) {
+      gross_debt_open_current_gdp <- opening_gross / (1 + g)
+      dt$interest_ratio[i] <- dt$effective_interest_rate[i] *
+        max(gross_debt_open_current_gdp, 0)
+      dt$total_expense_ratio[i] <-
+        dt$primary_fiscal_expense_ratio[i] + dt$interest_ratio[i]
+    }
+    dt$net_debt_ratio[i] <- debt_open_current_gdp + dt$total_expense_ratio[i] -
+      dt$revenue_ratio[i] + params[scenario == "central", stock_flow_adjustment]
+    # Hold the official-period financial-asset wedge constant as a share of GDP
+    # so gross debt, rather than net debt, drives gross public debt interest.
+    dt$gross_debt_ratio[i] <- max(dt$net_debt_ratio[i] + gross_net_wedge, 0)
     opening <- dt$net_debt_ratio[i]
+    opening_gross <- dt$gross_debt_ratio[i]
   }
   dt
 }, by = .(model, model_label)]
 top_debt[, `:=`(
-  spending_approach = "Top-down total expenses (interest embedded; no debt-interest feedback)",
+  spending_approach = if (topdown_interest_treatment == "include_interest") {
+    "Top-down total fiscal expenditure (interest embedded)"
+  } else {
+    "Top-down primary fiscal expenditure with endogenous debt interest"
+  },
+  interest_treatment = topdown_interest_treatment,
+  interest_treatment_label = topdown_interest_treatment_label(),
   revenue_scenario = "central"
 )]
 

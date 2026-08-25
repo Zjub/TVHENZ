@@ -16,17 +16,21 @@ debt_bottom <- fread(file.path(table_dir, "debt_paths_bottom_up.csv"))
 debt_top <- fread(file.path(table_dir, "debt_paths_top_down.csv"))
 debt_official <- fread(file.path(table_dir, "debt_path_official_pbo.csv"))
 fit_diagnostics <- fread(file.path(table_dir, "model_fit_diagnostics.csv"))
-driver_sensitivity <- fread(file.path(table_dir, "model_driver_sensitivity.csv"))
-window_sensitivity <- fread(file.path(table_dir, "model_estimation_window_sensitivity.csv"))
-forecast_intervals <- fread(file.path(table_dir, "model_conditional_forecast_intervals.csv"))
+window_sensitivity <- fread(file.path(table_dir, "four_model_window_sensitivity.csv"))
+window_sensitivity[, endpoint_difference_from_full_sample_pp :=
+  endpoint_percent_gdp - endpoint_percent_gdp[window == "Full sample"], by = model]
+setnames(window_sensitivity, "window", "estimation_window")
 
-official_hist <- official[, .(year, expenses_ratio_gdp, revenue_ratio_gdp)]
+official_hist <- official[, .(
+  year, expenses_ratio_gdp, revenue_ratio_gdp,
+  topdown_value = official_topdown_expenditure(.SD)
+)]
 p1 <- ggplot() +
   geom_line(data = historical, aes(year, broad_expenditure_gdp * 100), colour = "#0072B2", linewidth = 0.9) +
-  geom_line(data = official_hist, aes(year, expenses_ratio_gdp * 100), colour = "#D55E00", linewidth = 0.8) +
+  geom_line(data = official_hist, aes(year, topdown_value * 100), colour = "#D55E00", linewidth = 0.8) +
   labs(
     title = "Two aggregate spending concepts used in the workflow",
-    subtitle = "National-accounts broad expenditure provides history; PBO consolidated expenses provide the forecast anchor",
+    subtitle = paste0("Configured treatment: ", topdown_interest_treatment_label()),
     x = NULL, y = "% of GDP",
     caption = "Sources: ABS National Accounts; Parliamentary Budget Office National Fiscal Outlook. Concepts differ; no level splice is hidden."
   ) + theme_fiscal()
@@ -103,19 +107,20 @@ save_plot_pair(p7, file.path(figure_dir, "top_down", "01_anchored_long_run_model
 
 top_unanchored <- top[path_type == "Unanchored model projection" & year <= official_forecast_end]
 official_short <- official[year >= projection_start & year <= official_forecast_end]
+official_short[, topdown_value := official_topdown_expenditure(.SD)]
 p8 <- ggplot(top_unanchored, aes(year, value * 100, colour = model_label)) +
   geom_line(linewidth = 0.9) + geom_point(size = 1.8) +
-  geom_line(data = official_short, aes(year, (expenses_ratio_gdp + net_capital_investment_ratio_gdp) * 100), inherit.aes = FALSE, colour = "black", linewidth = 1.2) +
-  geom_point(data = official_short, aes(year, (expenses_ratio_gdp + net_capital_investment_ratio_gdp) * 100), inherit.aes = FALSE, colour = "black", size = 2) +
+  geom_line(data = official_short, aes(year, topdown_value * 100), inherit.aes = FALSE, colour = "black", linewidth = 1.2) +
+  geom_point(data = official_short, aes(year, topdown_value * 100), inherit.aes = FALSE, colour = "black", size = 2) +
   scale_colour_manual(values = palette_models) +
   labs(title = "Model-only top-down paths during the official forecast period",
-       subtitle = "Black is PBO expenses plus net capital investment; coloured paths do not use that anchor",
+       subtitle = paste0("Black is the matching PBO concept: ", topdown_interest_treatment_label()),
        x = NULL, y = "% of GDP", colour = NULL, caption = "This comparison separates projection mechanics from announced policy forecasts.") + theme_fiscal()
 save_plot_pair(p8, file.path(figure_dir, "top_down", "02_unanchored_forecast_comparison"), 10, 6.5)
 
 spread <- dcast(top_anchor, year ~ model, value.var = "value")
 spread[, model_range_pp := (do.call(pmax, c(.SD, na.rm = TRUE)) - do.call(pmin, c(.SD, na.rm = TRUE))) * 100,
-       .SDcols = names(model_labels)]
+       .SDcols = reported_topdown_models]
 p9 <- ggplot(spread, aes(year, model_range_pp)) +
   geom_area(fill = "#56B4E9", alpha = 0.7) +
   labs(title = "Top-down model uncertainty", subtitle = "Range between the highest and lowest anchored model path",
@@ -178,17 +183,20 @@ p14 <- ggplot(debt_top, aes(year, net_debt_ratio * 100, colour = model_label)) +
   geom_line(linewidth = 0.9) +
   scale_colour_manual(values = palette_models) +
   labs(title = "Net debt sensitivity to the top-down spending model",
-       subtitle = "Revenue and capital investment are common; aggregate spending already embeds interest",
+       subtitle = "Top-down primary fiscal spending receives an endogenous debt-interest path",
        x = NULL, y = "% of GDP", colour = NULL,
-       caption = "Top-down debt paths do not include a separate debt-interest feedback and are best read as a model-comparison diagnostic.") + theme_fiscal()
+       caption = "Published PBO debt and interest are used through FY2029-30; subsequent interest responds to the preceding net-debt stock.") + theme_fiscal()
 save_plot_pair(p14, file.path(figure_dir, "revenue_debt", "03_top_down_debt_model_spread"), 10, 6.5)
 
 bottom_central_total <- debt_bottom[
   spending_model == "central" & revenue_scenario == "central",
   .(year, value = total_expense_ratio, model_label = "Bottom-up central")
 ]
+top_central_total <- debt_top[, .(
+  year, value = total_expense_ratio, model_label
+)]
 comparison_paths <- rbindlist(list(
-  top_anchor[, .(year, value, model_label)],
+  top_central_total,
   bottom_central_total
 ))
 comparison_colours <- c(palette_models, `Bottom-up central` = "#000000")
@@ -199,16 +207,16 @@ p15 <- ggplot(comparison_paths, aes(year, value * 100, colour = model_label)) +
   scale_linewidth_manual(values = c(`TRUE` = 1.25, `FALSE` = 0.8), guide = "none") +
   labs(
     title = "Bottom-up and top-down spending projections on a common expense basis",
-    subtitle = "Primary spending is officially anchored through 2029-30; bottom-up total expenses then include endogenous debt interest",
+    subtitle = "Both approaches add debt interest to primary spending after the official forecast period",
     x = NULL, y = "% of GDP", colour = NULL,
-    caption = "Top-down paths project aggregate total expenses. The bottom-up path projects primary categories and adds modelled debt interest."
+    caption = "Top-down primary fiscal expenditure includes capital investment; debt interest is added once in the debt module."
   ) + theme_fiscal()
 save_plot_pair(p15, file.path(figure_dir, "model_comparison", "01_bottom_up_vs_top_down"), 10.5, 6.8)
 
 bottom_range <- debt_bottom[revenue_scenario %in% c("central", "pressure", "restraint"), .(
   low = min(total_expense_ratio), high = max(total_expense_ratio)
 ), by = year]
-top_range <- top_anchor[, .(low = min(value), high = max(value)), by = year]
+top_range <- top_central_total[, .(low = min(value), high = max(value)), by = year]
 p16 <- ggplot() +
   geom_ribbon(data = bottom_range, aes(year, ymin = low * 100, ymax = high * 100, fill = "Bottom-up scenarios"), alpha = 0.25) +
   geom_ribbon(data = top_range, aes(year, ymin = low * 100, ymax = high * 100, fill = "Top-down models"), alpha = 0.35) +
@@ -235,20 +243,6 @@ p17 <- ggplot(fit_diagnostics, aes(reorder(model_label, rmse_pp), rmse_pp, fill 
   ) + theme_fiscal()
 save_plot_pair(p17, file.path(figure_dir, "diagnostics", "01_in_sample_fit"), 9.5, 6.2)
 
-driver_plot <- driver_sensitivity[driver_scenario != "Baseline"]
-p18 <- ggplot(driver_plot, aes(driver_scenario, model_label, fill = endpoint_effect_pp)) +
-  geom_tile(colour = "white") +
-  geom_text(aes(label = sprintf("%+.2f", endpoint_effect_pp)), size = 3.2) +
-  scale_fill_gradient2(low = "#0072B2", mid = "white", high = "#D55E00", midpoint = 0) +
-  labs(
-    title = "Economic-driver sensitivity of the 2065-66 spending projection",
-    subtitle = "Cells show the change from each model's baseline endpoint",
-    x = NULL, y = NULL, fill = "Percentage\npoints",
-    caption = "Shocks phase in from 2029-30 to 2034-35 and then persist. Other drivers are held fixed."
-  ) + theme_fiscal() +
-  theme(axis.text.x = element_text(angle = 25, hjust = 1))
-save_plot_pair(p18, file.path(figure_dir, "diagnostics", "02_driver_sensitivity"), 11, 6.5)
-
 p19 <- ggplot(window_sensitivity, aes(estimation_window, endpoint_difference_from_full_sample_pp,
                                       colour = model_label, group = model_label)) +
   geom_hline(yintercept = 0, colour = "grey35") +
@@ -261,17 +255,5 @@ p19 <- ggplot(window_sensitivity, aes(estimation_window, endpoint_difference_fro
     caption = "The pre-COVID test estimates through 2019 and then projects using observed 2020-25 drivers before the long-run assumptions."
   ) + theme_fiscal()
 save_plot_pair(p19, file.path(figure_dir, "diagnostics", "03_estimation_window_sensitivity"), 10.5, 6.5)
-
-p20 <- ggplot(forecast_intervals, aes(year, mean * 100)) +
-  geom_ribbon(aes(ymin = lower_95 * 100, ymax = upper_95 * 100), fill = "#56B4E9", alpha = 0.3) +
-  geom_line(colour = "#0072B2", linewidth = 0.8) +
-  facet_wrap(~ model_label, scales = "free_y", ncol = 2) +
-  labs(
-    title = "Conditional model-only 95% forecast intervals",
-    subtitle = "Economic and demographic paths are fixed; intervals do not include scenario or model-selection uncertainty",
-    x = NULL, y = "% of GDP",
-    caption = "ARIMA intervals include future innovation uncertainty but hold estimated parameters fixed. OLS uses a conventional prediction interval."
-  ) + theme_fiscal() + theme(legend.position = "none")
-save_plot_pair(p20, file.path(figure_dir, "diagnostics", "04_conditional_forecast_intervals"), 10.5, 8)
 
 message("Figure suite written to: ", figure_dir)

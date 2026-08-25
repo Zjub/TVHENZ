@@ -1,0 +1,821 @@
+year,model,value,interest_treatment,interest_treatment_label,demographic_specification,demographic_label,model_label,path_type
+2026,structural_ols,0.347761128001094,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2027,structural_ols,0.348492431796559,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2028,structural_ols,0.348601467470204,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2029,structural_ols,0.347761692168369,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2030,structural_ols,0.34676958881215,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2031,structural_ols,0.345627265146288,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2032,structural_ols,0.344471625206279,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2033,structural_ols,0.345036103097545,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2034,structural_ols,0.34570532367054,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2035,structural_ols,0.346385328417215,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2036,structural_ols,0.347275635865072,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2037,structural_ols,0.347798879833756,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2038,structural_ols,0.348322123802439,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2039,structural_ols,0.348845367771123,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2040,structural_ols,0.349368611739807,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2041,structural_ols,0.349891855708491,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2042,structural_ols,0.350415099677175,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2043,structural_ols,0.350938343645859,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2044,structural_ols,0.351461587614542,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2045,structural_ols,0.351984831583226,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2046,structural_ols,0.35250807555191,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2047,structural_ols,0.353031319520593,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2048,structural_ols,0.353554563489277,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2049,structural_ols,0.354077807457961,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2050,structural_ols,0.354601051426644,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2051,structural_ols,0.355124295395328,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2052,structural_ols,0.355647539364012,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2053,structural_ols,0.356170783332696,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2054,structural_ols,0.356694027301379,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2055,structural_ols,0.357217271270063,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2056,structural_ols,0.357740515238747,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2057,structural_ols,0.35826375920743,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2058,structural_ols,0.358787003176114,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2059,structural_ols,0.359310247144798,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2060,structural_ols,0.359833491113482,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2061,structural_ols,0.360356735082165,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2062,structural_ols,0.360879979050849,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2063,structural_ols,0.361403223019533,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2064,structural_ols,0.361926466988217,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2065,structural_ols,0.362449710956901,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2066,structural_ols,0.362972954925584,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Model only
+2026,arimax_level,0.36434916677435,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2027,arimax_level,0.364157621793802,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2028,arimax_level,0.363665742356014,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2029,arimax_level,0.362416795418722,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2030,arimax_level,0.361177807844677,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2031,arimax_level,0.359977971562794,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2032,arimax_level,0.358833558568011,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2033,arimax_level,0.358768517942251,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2034,arimax_level,0.358902264697825,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2035,arimax_level,0.359094533926574,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2036,arimax_level,0.359581679655959,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2037,arimax_level,0.3598411583471,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2038,arimax_level,0.360156072255127,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2039,arimax_level,0.360516452449045,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2040,arimax_level,0.360914122713587,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2041,arimax_level,0.361342377164627,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2042,arimax_level,0.361795715839113,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2043,arimax_level,0.362269627833929,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2044,arimax_level,0.362760413442961,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2045,arimax_level,0.363265038279315,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2046,arimax_level,0.36378101363076,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2047,arimax_level,0.364306298330903,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2048,arimax_level,0.36483921827689,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2049,arimax_level,0.365378400420266,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2050,arimax_level,0.365922718628273,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2051,arimax_level,0.366471249280932,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2052,arimax_level,0.367023234853109,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2053,arimax_level,0.367578054045634,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2054,arimax_level,0.368135197287745,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2055,arimax_level,0.368694246644935,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2056,arimax_level,0.369254859339984,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2057,arimax_level,0.369816754237392,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2058,arimax_level,0.370379700758343,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2059,arimax_level,0.370943509789071,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2060,arimax_level,0.371508026224195,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2061,arimax_level,0.37207312285098,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2062,arimax_level,0.372638695333392,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2063,arimax_level,0.373204658098176,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2064,arimax_level,0.373770940960742,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2065,arimax_level,0.374337486357814,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2066,arimax_level,0.374904247077735,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Model only
+2026,arimax_diff,0.364313238267616,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2027,arimax_diff,0.3637883581489,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2028,arimax_diff,0.36272861967462,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2029,arimax_diff,0.360823357709012,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2030,arimax_diff,0.359153419828577,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2031,arimax_diff,0.357623155280644,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2032,arimax_diff,0.356057560819822,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2033,arimax_diff,0.357373233801491,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2034,arimax_diff,0.356698172625754,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2035,arimax_diff,0.355989296186118,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2036,arimax_diff,0.355066058524062,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2037,arimax_diff,0.354549607590095,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2038,arimax_diff,0.354033156656128,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2039,arimax_diff,0.35351670572216,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2040,arimax_diff,0.353000254788193,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2041,arimax_diff,0.352483803854225,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2042,arimax_diff,0.351967352920258,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2043,arimax_diff,0.35145090198629,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2044,arimax_diff,0.350934451052323,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2045,arimax_diff,0.350418000118355,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2046,arimax_diff,0.349901549184388,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2047,arimax_diff,0.34938509825042,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2048,arimax_diff,0.348868647316453,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2049,arimax_diff,0.348352196382485,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2050,arimax_diff,0.347835745448518,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2051,arimax_diff,0.34731929451455,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2052,arimax_diff,0.346802843580583,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2053,arimax_diff,0.346286392646615,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2054,arimax_diff,0.345769941712648,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2055,arimax_diff,0.345253490778681,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2056,arimax_diff,0.344737039844713,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2057,arimax_diff,0.344220588910746,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2058,arimax_diff,0.343704137976778,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2059,arimax_diff,0.34318768704281,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2060,arimax_diff,0.342671236108843,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2061,arimax_diff,0.342154785174876,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2062,arimax_diff,0.341638334240908,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2063,arimax_diff,0.341121883306941,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2064,arimax_diff,0.340605432372973,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2065,arimax_diff,0.340088981439005,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2066,arimax_diff,0.339572530505038,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Model only
+2026,hybrid,0.366367490315056,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2027,hybrid,0.367542938519867,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2028,hybrid,0.36814677180015,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2029,hybrid,0.367843085913668,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2030,hybrid,0.367589659544634,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2031,hybrid,0.367232012508622,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2032,hybrid,0.366924576155541,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2033,hybrid,0.366383756967224,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2034,hybrid,0.366913875660823,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2035,hybrid,0.367481116963481,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2036,hybrid,0.368217718220633,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2037,hybrid,0.368618048140674,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2038,hybrid,0.369018378060715,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2039,hybrid,0.369418707980756,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2040,hybrid,0.369819037900798,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2041,hybrid,0.370219367820839,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2042,hybrid,0.37061969774088,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2043,hybrid,0.371020027660921,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2044,hybrid,0.371420357580962,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2045,hybrid,0.371820687501004,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2046,hybrid,0.372221017421045,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2047,hybrid,0.372621347341086,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2048,hybrid,0.373021677261127,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2049,hybrid,0.373422007181168,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2050,hybrid,0.37382233710121,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2051,hybrid,0.374222667021251,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2052,hybrid,0.374622996941292,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2053,hybrid,0.375023326861333,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2054,hybrid,0.375423656781374,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2055,hybrid,0.375823986701415,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2056,hybrid,0.376224316621457,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2057,hybrid,0.376624646541498,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2058,hybrid,0.377024976461539,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2059,hybrid,0.37742530638158,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2060,hybrid,0.377825636301621,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2061,hybrid,0.378225966221663,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2062,hybrid,0.378626296141704,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2063,hybrid,0.379026626061745,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2064,hybrid,0.379426955981786,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2065,hybrid,0.379827285901828,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2066,hybrid,0.380227615821868,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Model only
+2026,ardl_ecm,0.356294527767027,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2027,ardl_ecm,0.352357479459989,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2028,ardl_ecm,0.351638313020092,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2029,ardl_ecm,0.346941838961911,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2030,ardl_ecm,0.341163021416679,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2031,ardl_ecm,0.338162953130964,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2032,ardl_ecm,0.33563911990624,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2033,ardl_ecm,0.334520163750123,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2034,ardl_ecm,0.333472864771474,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2035,ardl_ecm,0.332487663010992,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2036,ardl_ecm,0.331554465140561,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2037,ardl_ecm,0.330434070220543,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2038,ardl_ecm,0.32939112458484,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2039,ardl_ecm,0.328413281013445,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2040,ardl_ecm,0.327490142582209,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2041,ardl_ecm,0.326612949630858,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2042,ardl_ecm,0.325774318684092,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2043,ardl_ecm,0.324968024228057,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2044,ardl_ecm,0.324188815964747,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2045,ardl_ecm,0.323432265529231,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2046,ardl_ecm,0.322694637741523,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2047,ardl_ecm,0.321972782337913,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2048,ardl_ecm,0.321264042832081,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2049,ardl_ecm,0.32056617972957,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2050,ardl_ecm,0.319877305787709,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2051,ardl_ecm,0.319195831397347,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2052,ardl_ecm,0.318520418479565,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2053,ardl_ecm,0.317849941552486,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2054,ardl_ecm,0.317183454840676,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2055,ardl_ecm,0.316520164480459,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2056,ardl_ecm,0.315859405025376,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2057,ardl_ecm,0.315200619582094,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2058,ardl_ecm,0.314543343012677,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2059,ardl_ecm,0.31388718772773,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2060,ardl_ecm,0.313231831669325,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2061,ardl_ecm,0.312577008145192,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2062,ardl_ecm,0.311922497228336,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2063,ardl_ecm,0.311268118480609,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2064,ardl_ecm,0.310613724796206,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2065,ardl_ecm,0.30995919719259,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2066,ardl_ecm,0.309304440403049,exclude_other_interest,Exclude conventional other interest,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Model only
+2026,structural_ols,0.347179459348569,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2027,structural_ols,0.347533789943173,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2028,structural_ols,0.34724053043442,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2029,structural_ols,0.346002821738805,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2030,structural_ols,0.344584846665916,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2031,structural_ols,0.343031208219744,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2032,structural_ols,0.3414731613395,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2033,structural_ols,0.341858368442005,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2034,structural_ols,0.342365727184775,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2035,structural_ols,0.342891769558134,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2036,structural_ols,0.34364932082535,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2037,structural_ols,0.344178938540118,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2038,structural_ols,0.344708556254886,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2039,structural_ols,0.345238173969655,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2040,structural_ols,0.345767791684424,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2041,structural_ols,0.346297409399192,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2042,structural_ols,0.346827027113961,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2043,structural_ols,0.34735664482873,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2044,structural_ols,0.347886262543498,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2045,structural_ols,0.348415880258267,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2046,structural_ols,0.348945497973036,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2047,structural_ols,0.349475115687804,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2048,structural_ols,0.350004733402573,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2049,structural_ols,0.350534351117341,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2050,structural_ols,0.35106396883211,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2051,structural_ols,0.351593586546878,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2052,structural_ols,0.352123204261646,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2053,structural_ols,0.352652821976416,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2054,structural_ols,0.353182439691184,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2055,structural_ols,0.353712057405952,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2056,structural_ols,0.354241675120722,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2057,structural_ols,0.354771292835489,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2058,structural_ols,0.355300910550258,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2059,structural_ols,0.355830528265027,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2060,structural_ols,0.356360145979795,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2061,structural_ols,0.356889763694564,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2062,structural_ols,0.357419381409333,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2063,structural_ols,0.357948999124102,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2064,structural_ols,0.35847861683887,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2065,structural_ols,0.359008234553639,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2066,structural_ols,0.359537852268407,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Model only
+2026,arimax_level,0.361568760050247,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2027,arimax_level,0.355838938720233,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2028,arimax_level,0.350075621893953,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2029,arimax_level,0.34471616028812,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2030,arimax_level,0.340539493947354,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2031,arimax_level,0.337232844851526,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2032,arimax_level,0.334547807388764,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2033,arimax_level,0.334397744153303,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2034,arimax_level,0.334534378642089,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2035,arimax_level,0.334791328677898,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2036,arimax_level,0.335248273163088,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2037,arimax_level,0.335581858638836,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2038,arimax_level,0.33592346864772,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2039,arimax_level,0.336266813817983,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2040,arimax_level,0.336609563734983,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2041,arimax_level,0.336951150410482,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2042,arimax_level,0.337291678403864,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2043,arimax_level,0.33763143223812,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2044,arimax_level,0.337970683364932,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2045,arimax_level,0.338309634468678,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2046,arimax_level,0.338648418908485,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2047,arimax_level,0.338987117093378,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2048,arimax_level,0.339325774108675,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2049,arimax_level,0.339664413516898,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2050,arimax_level,0.340003046699386,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2051,arimax_level,0.340341678609737,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2052,arimax_level,0.340680311060867,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2053,arimax_level,0.341018944476088,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2054,arimax_level,0.341357578754289,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2055,arimax_level,0.341696213658704,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2056,arimax_level,0.342034848967741,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2057,arimax_level,0.342373484517315,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2058,arimax_level,0.342712120200027,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2059,arimax_level,0.343050755951378,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2060,arimax_level,0.343389391735333,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2061,arimax_level,0.343728027533133,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2062,arimax_level,0.344066663335758,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2063,arimax_level,0.344405299139308,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2064,arimax_level,0.344743934942373,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2065,arimax_level,0.345082570744641,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2066,arimax_level,0.345421206546204,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Model only
+2026,arimax_diff,0.364041057849216,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2027,arimax_diff,0.363314311547257,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2028,arimax_diff,0.362117177340433,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2029,arimax_diff,0.360131651163012,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2030,arimax_diff,0.358473674552792,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2031,arimax_diff,0.356963462354858,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2032,arimax_diff,0.355458051818965,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2033,arimax_diff,0.356892654753401,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2034,arimax_diff,0.356340040111513,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2035,arimax_diff,0.355767075277628,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2036,arimax_diff,0.35494195118504,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2037,arimax_diff,0.35436509209282,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2038,arimax_diff,0.3537882330006,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2039,arimax_diff,0.353211373908379,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2040,arimax_diff,0.352634514816158,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2041,arimax_diff,0.352057655723939,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2042,arimax_diff,0.351480796631718,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2043,arimax_diff,0.350903937539497,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2044,arimax_diff,0.350327078447277,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2045,arimax_diff,0.349750219355057,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2046,arimax_diff,0.349173360262836,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2047,arimax_diff,0.348596501170616,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2048,arimax_diff,0.348019642078395,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2049,arimax_diff,0.347442782986175,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2050,arimax_diff,0.346865923893954,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2051,arimax_diff,0.346289064801734,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2052,arimax_diff,0.345712205709514,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2053,arimax_diff,0.345135346617293,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2054,arimax_diff,0.344558487525073,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2055,arimax_diff,0.343981628432853,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2056,arimax_diff,0.343404769340632,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2057,arimax_diff,0.342827910248412,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2058,arimax_diff,0.342251051156192,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2059,arimax_diff,0.341674192063971,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2060,arimax_diff,0.341097332971751,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2061,arimax_diff,0.34052047387953,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2062,arimax_diff,0.33994361478731,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2063,arimax_diff,0.339366755695089,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2064,arimax_diff,0.338789896602869,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2065,arimax_diff,0.338213037510648,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2066,arimax_diff,0.337636178418428,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Model only
+2026,hybrid,0.36654822883322,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2027,hybrid,0.367785494563954,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2028,hybrid,0.368412642711369,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2029,hybrid,0.368096865142685,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2030,hybrid,0.367774785167609,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2031,hybrid,0.36736431171,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2032,hybrid,0.366950965871801,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2033,hybrid,0.366199896859757,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2034,hybrid,0.36653047397193,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2035,hybrid,0.366873224680662,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2036,hybrid,0.367366818442094,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2037,hybrid,0.367711898717539,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2038,hybrid,0.368056978992982,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2039,hybrid,0.368402059268427,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2040,hybrid,0.368747139543871,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2041,hybrid,0.369092219819315,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2042,hybrid,0.369437300094759,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2043,hybrid,0.369782380370204,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2044,hybrid,0.370127460645647,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2045,hybrid,0.370472540921091,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2046,hybrid,0.370817621196536,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2047,hybrid,0.37116270147198,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2048,hybrid,0.371507781747424,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2049,hybrid,0.371852862022868,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2050,hybrid,0.372197942298312,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2051,hybrid,0.372543022573756,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2052,hybrid,0.3728881028492,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2053,hybrid,0.373233183124645,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2054,hybrid,0.373578263400088,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2055,hybrid,0.373923343675532,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2056,hybrid,0.374268423950977,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2057,hybrid,0.37461350422642,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2058,hybrid,0.374958584501865,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2059,hybrid,0.375303664777309,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2060,hybrid,0.375648745052753,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2061,hybrid,0.375993825328197,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2062,hybrid,0.376338905603641,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2063,hybrid,0.376683985879086,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2064,hybrid,0.377029066154529,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2065,hybrid,0.377374146429974,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2066,hybrid,0.377719226705417,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Model only
+2026,ardl_ecm,0.356294527767027,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2027,ardl_ecm,0.352357479459989,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2028,ardl_ecm,0.351638313020092,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2029,ardl_ecm,0.346941838961911,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2030,ardl_ecm,0.341163021416679,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2031,ardl_ecm,0.338162953130964,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2032,ardl_ecm,0.33563911990624,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2033,ardl_ecm,0.334520163750123,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2034,ardl_ecm,0.333472864771474,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2035,ardl_ecm,0.332487663010992,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2036,ardl_ecm,0.331554465140561,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2037,ardl_ecm,0.330434070220543,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2038,ardl_ecm,0.32939112458484,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2039,ardl_ecm,0.328413281013445,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2040,ardl_ecm,0.327490142582209,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2041,ardl_ecm,0.326612949630858,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2042,ardl_ecm,0.325774318684092,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2043,ardl_ecm,0.324968024228057,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2044,ardl_ecm,0.324188815964747,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2045,ardl_ecm,0.323432265529231,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2046,ardl_ecm,0.322694637741523,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2047,ardl_ecm,0.321972782337913,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2048,ardl_ecm,0.321264042832081,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2049,ardl_ecm,0.32056617972957,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2050,ardl_ecm,0.319877305787709,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2051,ardl_ecm,0.319195831397347,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2052,ardl_ecm,0.318520418479565,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2053,ardl_ecm,0.317849941552486,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2054,ardl_ecm,0.317183454840676,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2055,ardl_ecm,0.316520164480459,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2056,ardl_ecm,0.315859405025376,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2057,ardl_ecm,0.315200619582094,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2058,ardl_ecm,0.314543343012677,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2059,ardl_ecm,0.31388718772773,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2060,ardl_ecm,0.313231831669325,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2061,ardl_ecm,0.312577008145192,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2062,ardl_ecm,0.311922497228336,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2063,ardl_ecm,0.311268118480609,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2064,ardl_ecm,0.310613724796206,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2065,ardl_ecm,0.30995919719259,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2066,ardl_ecm,0.309304440403049,exclude_other_interest,Exclude conventional other interest,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Model only
+2026,structural_ols,0.371,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2027,structural_ols,0.371,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2028,structural_ols,0.364,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2029,structural_ols,0.357,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2030,structural_ols,0.349,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2031,structural_ols,0.347857676334138,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2032,structural_ols,0.346702036394129,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2033,structural_ols,0.347266514285395,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2034,structural_ols,0.34793573485839,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2035,structural_ols,0.348615739605065,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2036,structural_ols,0.349506047052922,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2037,structural_ols,0.350029291021606,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2038,structural_ols,0.350552534990289,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2039,structural_ols,0.351075778958973,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2040,structural_ols,0.351599022927657,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2041,structural_ols,0.352122266896341,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2042,structural_ols,0.352645510865025,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2043,structural_ols,0.353168754833709,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2044,structural_ols,0.353691998802392,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2045,structural_ols,0.354215242771076,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2046,structural_ols,0.35473848673976,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2047,structural_ols,0.355261730708443,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2048,structural_ols,0.355784974677127,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2049,structural_ols,0.35630821864581,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2050,structural_ols,0.356831462614494,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2051,structural_ols,0.357354706583178,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2052,structural_ols,0.357877950551862,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2053,structural_ols,0.358401194520546,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2054,structural_ols,0.358924438489229,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2055,structural_ols,0.359447682457913,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2056,structural_ols,0.359970926426597,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2057,structural_ols,0.36049417039528,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2058,structural_ols,0.361017414363964,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2059,structural_ols,0.361540658332648,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2060,structural_ols,0.362063902301331,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2061,structural_ols,0.362587146270015,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2062,structural_ols,0.363110390238699,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2063,structural_ols,0.363633634207383,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2064,structural_ols,0.364156878176067,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2065,structural_ols,0.364680122144751,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2066,structural_ols,0.365203366113434,,,age_shares,Separate 0-14 and 65+ shares,Structural OLS (levels),Common PBO anchor
+2026,arimax_level,0.371,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2027,arimax_level,0.371,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2028,arimax_level,0.364,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2029,arimax_level,0.357,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2030,arimax_level,0.349,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2031,arimax_level,0.347800163718117,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2032,arimax_level,0.346655750723334,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2033,arimax_level,0.346590710097574,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2034,arimax_level,0.346724456853148,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2035,arimax_level,0.346916726081896,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2036,arimax_level,0.347403871811282,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2037,arimax_level,0.347663350502423,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2038,arimax_level,0.347978264410449,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2039,arimax_level,0.348338644604367,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2040,arimax_level,0.348736314868909,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2041,arimax_level,0.34916456931995,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2042,arimax_level,0.349617907994436,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2043,arimax_level,0.350091819989251,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2044,arimax_level,0.350582605598284,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2045,arimax_level,0.351087230434638,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2046,arimax_level,0.351603205786083,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2047,arimax_level,0.352128490486225,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2048,arimax_level,0.352661410432213,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2049,arimax_level,0.353200592575589,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2050,arimax_level,0.353744910783596,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2051,arimax_level,0.354293441436255,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2052,arimax_level,0.354845427008432,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2053,arimax_level,0.355400246200957,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2054,arimax_level,0.355957389443067,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2055,arimax_level,0.356516438800258,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2056,arimax_level,0.357077051495306,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2057,arimax_level,0.357638946392715,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2058,arimax_level,0.358201892913666,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2059,arimax_level,0.358765701944394,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2060,arimax_level,0.359330218379518,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2061,arimax_level,0.359895315006303,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2062,arimax_level,0.360460887488715,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2063,arimax_level,0.361026850253499,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2064,arimax_level,0.361593133116065,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2065,arimax_level,0.362159678513137,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2066,arimax_level,0.362726439233058,,,age_shares,Separate 0-14 and 65+ shares,ARIMAX (levels),Common PBO anchor
+2026,arimax_diff,0.371,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2027,arimax_diff,0.371,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2028,arimax_diff,0.364,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2029,arimax_diff,0.357,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2030,arimax_diff,0.349,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2031,arimax_diff,0.347469735452068,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2032,arimax_diff,0.345904140991245,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2033,arimax_diff,0.347219813972914,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2034,arimax_diff,0.346544752797177,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2035,arimax_diff,0.345835876357541,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2036,arimax_diff,0.344912638695486,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2037,arimax_diff,0.344396187761518,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2038,arimax_diff,0.343879736827551,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2039,arimax_diff,0.343363285893583,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2040,arimax_diff,0.342846834959616,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2041,arimax_diff,0.342330384025648,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2042,arimax_diff,0.341813933091681,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2043,arimax_diff,0.341297482157713,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2044,arimax_diff,0.340781031223746,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2045,arimax_diff,0.340264580289778,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2046,arimax_diff,0.339748129355811,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2047,arimax_diff,0.339231678421843,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2048,arimax_diff,0.338715227487876,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2049,arimax_diff,0.338198776553909,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2050,arimax_diff,0.337682325619941,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2051,arimax_diff,0.337165874685973,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2052,arimax_diff,0.336649423752006,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2053,arimax_diff,0.336132972818039,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2054,arimax_diff,0.335616521884071,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2055,arimax_diff,0.335100070950104,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2056,arimax_diff,0.334583620016136,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2057,arimax_diff,0.334067169082169,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2058,arimax_diff,0.333550718148201,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2059,arimax_diff,0.333034267214234,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2060,arimax_diff,0.332517816280266,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2061,arimax_diff,0.332001365346299,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2062,arimax_diff,0.331484914412331,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2063,arimax_diff,0.330968463478364,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2064,arimax_diff,0.330452012544396,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2065,arimax_diff,0.329935561610428,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2066,arimax_diff,0.329419110676461,,,age_shares,Separate 0-14 and 65+ shares,Differenced ARIMAX,Common PBO anchor
+2026,hybrid,0.371,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2027,hybrid,0.371,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2028,hybrid,0.364,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2029,hybrid,0.357,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2030,hybrid,0.349,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2031,hybrid,0.348642352963988,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2032,hybrid,0.348334916610907,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2033,hybrid,0.34779409742259,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2034,hybrid,0.348324216116189,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2035,hybrid,0.348891457418848,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2036,hybrid,0.349628058675999,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2037,hybrid,0.35002838859604,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2038,hybrid,0.350428718516081,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2039,hybrid,0.350829048436122,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2040,hybrid,0.351229378356164,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2041,hybrid,0.351629708276205,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2042,hybrid,0.352030038196246,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2043,hybrid,0.352430368116287,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2044,hybrid,0.352830698036328,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2045,hybrid,0.35323102795637,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2046,hybrid,0.353631357876411,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2047,hybrid,0.354031687796452,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2048,hybrid,0.354432017716493,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2049,hybrid,0.354832347636534,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2050,hybrid,0.355232677556576,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2051,hybrid,0.355633007476617,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2052,hybrid,0.356033337396658,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2053,hybrid,0.356433667316699,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2054,hybrid,0.35683399723674,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2055,hybrid,0.357234327156781,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2056,hybrid,0.357634657076823,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2057,hybrid,0.358034986996864,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2058,hybrid,0.358435316916905,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2059,hybrid,0.358835646836946,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2060,hybrid,0.359235976756987,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2061,hybrid,0.359636306677029,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2062,hybrid,0.36003663659707,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2063,hybrid,0.360436966517111,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2064,hybrid,0.360837296437152,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2065,hybrid,0.361237626357194,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2066,hybrid,0.361637956277235,,,age_shares,Separate 0-14 and 65+ shares,Hybrid structural/macro,Common PBO anchor
+2026,ardl_ecm,0.371,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2027,ardl_ecm,0.371,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2028,ardl_ecm,0.364,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2029,ardl_ecm,0.357,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2030,ardl_ecm,0.349,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2031,ardl_ecm,0.345999931714284,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2032,ardl_ecm,0.343476098489561,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2033,ardl_ecm,0.342357142333444,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2034,ardl_ecm,0.341309843354795,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2035,ardl_ecm,0.340324641594313,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2036,ardl_ecm,0.339391443723882,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2037,ardl_ecm,0.338271048803864,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2038,ardl_ecm,0.337228103168161,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2039,ardl_ecm,0.336250259596766,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2040,ardl_ecm,0.33532712116553,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2041,ardl_ecm,0.334449928214179,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2042,ardl_ecm,0.333611297267412,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2043,ardl_ecm,0.332805002811377,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2044,ardl_ecm,0.332025794548068,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2045,ardl_ecm,0.331269244112552,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2046,ardl_ecm,0.330531616324844,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2047,ardl_ecm,0.329809760921234,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2048,ardl_ecm,0.329101021415402,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2049,ardl_ecm,0.328403158312891,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2050,ardl_ecm,0.32771428437103,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2051,ardl_ecm,0.327032809980668,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2052,ardl_ecm,0.326357397062885,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2053,ardl_ecm,0.325686920135807,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2054,ardl_ecm,0.325020433423997,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2055,ardl_ecm,0.324357143063779,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2056,ardl_ecm,0.323696383608697,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2057,ardl_ecm,0.323037598165414,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2058,ardl_ecm,0.322380321595998,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2059,ardl_ecm,0.32172416631105,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2060,ardl_ecm,0.321068810252646,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2061,ardl_ecm,0.320413986728513,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2062,ardl_ecm,0.319759475811656,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2063,ardl_ecm,0.31910509706393,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2064,ardl_ecm,0.318450703379527,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2065,ardl_ecm,0.317796175775911,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2066,ardl_ecm,0.31714141898637,,,age_shares,Separate 0-14 and 65+ shares,ARDL error-correction model,Common PBO anchor
+2026,structural_ols,0.371,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2027,structural_ols,0.371,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2028,structural_ols,0.364,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2029,structural_ols,0.357,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2030,structural_ols,0.349,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2031,structural_ols,0.347446361553829,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2032,structural_ols,0.345888314673585,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2033,structural_ols,0.346273521776089,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2034,structural_ols,0.346780880518859,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2035,structural_ols,0.347306922892218,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2036,structural_ols,0.348064474159434,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2037,structural_ols,0.348594091874203,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2038,structural_ols,0.349123709588971,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2039,structural_ols,0.34965332730374,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2040,structural_ols,0.350182945018509,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2041,structural_ols,0.350712562733276,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2042,structural_ols,0.351242180448046,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2043,structural_ols,0.351771798162815,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2044,structural_ols,0.352301415877582,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2045,structural_ols,0.352831033592351,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2046,structural_ols,0.35336065130712,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2047,structural_ols,0.353890269021888,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2048,structural_ols,0.354419886736657,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2049,structural_ols,0.354949504451425,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2050,structural_ols,0.355479122166195,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2051,structural_ols,0.356008739880963,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2052,structural_ols,0.356538357595731,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2053,structural_ols,0.3570679753105,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2054,structural_ols,0.357597593025268,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2055,structural_ols,0.358127210740037,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2056,structural_ols,0.358656828454806,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2057,structural_ols,0.359186446169574,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2058,structural_ols,0.359716063884343,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2059,structural_ols,0.360245681599111,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2060,structural_ols,0.36077529931388,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2061,structural_ols,0.361304917028648,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2062,structural_ols,0.361834534743417,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2063,structural_ols,0.362364152458186,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2064,structural_ols,0.362893770172954,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2065,structural_ols,0.363423387887723,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2066,structural_ols,0.363953005602491,,,expenditure_profile,Age-expenditure profile index,Structural OLS (levels),Common PBO anchor
+2026,arimax_level,0.371,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2027,arimax_level,0.371,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2028,arimax_level,0.364,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2029,arimax_level,0.357,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2030,arimax_level,0.349,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2031,arimax_level,0.345693350904172,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2032,arimax_level,0.343008313441411,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2033,arimax_level,0.34285825020595,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2034,arimax_level,0.342994884694735,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2035,arimax_level,0.343251834730544,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2036,arimax_level,0.343708779215735,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2037,arimax_level,0.344042364691482,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2038,arimax_level,0.344383974700367,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2039,arimax_level,0.344727319870629,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2040,arimax_level,0.345070069787629,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2041,arimax_level,0.345411656463129,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2042,arimax_level,0.34575218445651,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2043,arimax_level,0.346091938290767,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2044,arimax_level,0.346431189417578,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2045,arimax_level,0.346770140521325,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2046,arimax_level,0.347108924961132,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2047,arimax_level,0.347447623146024,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2048,arimax_level,0.347786280161322,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2049,arimax_level,0.348124919569544,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2050,arimax_level,0.348463552752032,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2051,arimax_level,0.348802184662383,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2052,arimax_level,0.349140817113513,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2053,arimax_level,0.349479450528735,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2054,arimax_level,0.349818084806936,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2055,arimax_level,0.350156719711351,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2056,arimax_level,0.350495355020388,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2057,arimax_level,0.350833990569962,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2058,arimax_level,0.351172626252674,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2059,arimax_level,0.351511262004024,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2060,arimax_level,0.351849897787979,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2061,arimax_level,0.35218853358578,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2062,arimax_level,0.352527169388405,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2063,arimax_level,0.352865805191954,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2064,arimax_level,0.353204440995019,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2065,arimax_level,0.353543076797287,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2066,arimax_level,0.353881712598851,,,expenditure_profile,Age-expenditure profile index,ARIMAX (levels),Common PBO anchor
+2026,arimax_diff,0.371,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2027,arimax_diff,0.371,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2028,arimax_diff,0.364,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2029,arimax_diff,0.357,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2030,arimax_diff,0.349,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2031,arimax_diff,0.347489787802066,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2032,arimax_diff,0.345984377266173,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2033,arimax_diff,0.34741898020061,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2034,arimax_diff,0.346866365558721,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2035,arimax_diff,0.346293400724836,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2036,arimax_diff,0.345468276632249,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2037,arimax_diff,0.344891417540028,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2038,arimax_diff,0.344314558447808,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2039,arimax_diff,0.343737699355587,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2040,arimax_diff,0.343160840263366,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2041,arimax_diff,0.342583981171147,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2042,arimax_diff,0.342007122078926,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2043,arimax_diff,0.341430262986705,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2044,arimax_diff,0.340853403894486,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2045,arimax_diff,0.340276544802265,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2046,arimax_diff,0.339699685710044,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2047,arimax_diff,0.339122826617824,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2048,arimax_diff,0.338545967525604,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2049,arimax_diff,0.337969108433384,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2050,arimax_diff,0.337392249341162,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2051,arimax_diff,0.336815390248942,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2052,arimax_diff,0.336238531156723,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2053,arimax_diff,0.335661672064501,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2054,arimax_diff,0.335084812972281,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2055,arimax_diff,0.334507953880061,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2056,arimax_diff,0.33393109478784,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2057,arimax_diff,0.333354235695621,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2058,arimax_diff,0.3327773766034,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2059,arimax_diff,0.332200517511179,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2060,arimax_diff,0.331623658418959,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2061,arimax_diff,0.331046799326739,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2062,arimax_diff,0.330469940234518,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2063,arimax_diff,0.329893081142297,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2064,arimax_diff,0.329316222050077,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2065,arimax_diff,0.328739362957856,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2066,arimax_diff,0.328162503865637,,,expenditure_profile,Age-expenditure profile index,Differenced ARIMAX,Common PBO anchor
+2026,hybrid,0.371,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2027,hybrid,0.371,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2028,hybrid,0.364,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2029,hybrid,0.357,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2030,hybrid,0.349,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2031,hybrid,0.348589526542391,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2032,hybrid,0.348176180704192,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2033,hybrid,0.347425111692147,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2034,hybrid,0.347755688804321,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2035,hybrid,0.348098439513053,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2036,hybrid,0.348592033274485,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2037,hybrid,0.34893711354993,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2038,hybrid,0.349282193825373,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2039,hybrid,0.349627274100818,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2040,hybrid,0.349972354376262,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2041,hybrid,0.350317434651706,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2042,hybrid,0.35066251492715,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2043,hybrid,0.351007595202594,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2044,hybrid,0.351352675478038,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2045,hybrid,0.351697755753482,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2046,hybrid,0.352042836028927,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2047,hybrid,0.35238791630437,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2048,hybrid,0.352732996579815,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2049,hybrid,0.353078076855259,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2050,hybrid,0.353423157130703,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2051,hybrid,0.353768237406147,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2052,hybrid,0.354113317681591,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2053,hybrid,0.354458397957035,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2054,hybrid,0.354803478232479,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2055,hybrid,0.355148558507923,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2056,hybrid,0.355493638783368,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2057,hybrid,0.355838719058811,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2058,hybrid,0.356183799334256,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2059,hybrid,0.3565288796097,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2060,hybrid,0.356873959885144,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2061,hybrid,0.357219040160588,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2062,hybrid,0.357564120436032,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2063,hybrid,0.357909200711476,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2064,hybrid,0.35825428098692,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2065,hybrid,0.358599361262365,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2066,hybrid,0.358944441537808,,,expenditure_profile,Age-expenditure profile index,Hybrid structural/macro,Common PBO anchor
+2026,ardl_ecm,0.371,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2027,ardl_ecm,0.371,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2028,ardl_ecm,0.364,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2029,ardl_ecm,0.357,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2030,ardl_ecm,0.349,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2031,ardl_ecm,0.345999931714284,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2032,ardl_ecm,0.343476098489561,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2033,ardl_ecm,0.342357142333444,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2034,ardl_ecm,0.341309843354795,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2035,ardl_ecm,0.340324641594313,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2036,ardl_ecm,0.339391443723882,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2037,ardl_ecm,0.338271048803864,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2038,ardl_ecm,0.337228103168161,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2039,ardl_ecm,0.336250259596766,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2040,ardl_ecm,0.33532712116553,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2041,ardl_ecm,0.334449928214179,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2042,ardl_ecm,0.333611297267412,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2043,ardl_ecm,0.332805002811377,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2044,ardl_ecm,0.332025794548068,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2045,ardl_ecm,0.331269244112552,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2046,ardl_ecm,0.330531616324844,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2047,ardl_ecm,0.329809760921234,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2048,ardl_ecm,0.329101021415402,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2049,ardl_ecm,0.328403158312891,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2050,ardl_ecm,0.32771428437103,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2051,ardl_ecm,0.327032809980668,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2052,ardl_ecm,0.326357397062885,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2053,ardl_ecm,0.325686920135807,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2054,ardl_ecm,0.325020433423997,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2055,ardl_ecm,0.324357143063779,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2056,ardl_ecm,0.323696383608697,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2057,ardl_ecm,0.323037598165414,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2058,ardl_ecm,0.322380321595998,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2059,ardl_ecm,0.32172416631105,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2060,ardl_ecm,0.321068810252646,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2061,ardl_ecm,0.320413986728513,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2062,ardl_ecm,0.319759475811656,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2063,ardl_ecm,0.31910509706393,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2064,ardl_ecm,0.318450703379527,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2065,ardl_ecm,0.317796175775911,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor
+2066,ardl_ecm,0.31714141898637,,,expenditure_profile,Age-expenditure profile index,ARDL error-correction model,Common PBO anchor

@@ -15,12 +15,12 @@ official <- fread(file.path(processed_dir, "official_pbo_nfo_wide.csv"))
 
 # The mechanically differenced ARIMAX remains an internal nested benchmark.
 # It is not presented as an independent model in the colleague-facing note;
-# the dynamic specification represents the differenced-ARIMAX family.
+# the dynamic specification is shown as one candidate within the differenced family.
 selection <- selection[model != "arimax_diff"]
 paths <- paths[model != "arimax_diff"]
-selection[model == "dynamic_diff", model_label := "Differenced ARIMAX (dynamic)"]
-paths[model == "dynamic_diff", model_label := "Differenced ARIMAX (dynamic)"]
-peer_palette <- c(palette_models, `Differenced ARIMAX (dynamic)` = "#56B4E9")
+selection[model == "dynamic_diff", model_label := "Dynamic differences"]
+paths[model == "dynamic_diff", model_label := "Dynamic differences"]
+peer_palette <- c(palette_models, `Dynamic differences` = "#56B4E9")
 
 model_order <- selection[order(rolling_rmse_5y_pp), model_label]
 rmse_long <- melt(
@@ -38,14 +38,10 @@ rmse_long[, model_label := factor(model_label, levels = rev(model_order))]
 p_rmse <- ggplot(rmse_long, aes(rmse_pp, model_label, colour = horizon)) +
   geom_line(aes(group = model_label), colour = "grey75", linewidth = 0.7) +
   geom_point(size = 2.8) +
-  geom_point(
-    data = rmse_long[model == "dynamic_diff"],
-    shape = 21, size = 4.4, stroke = 1.1, fill = "white"
-  ) +
   scale_colour_manual(values = c("1-year horizon" = "#0072B2", "5-year horizon" = "#D55E00")) +
   labs(
     title = "Rolling conditional forecast RMSE",
-    subtitle = "Open rings identify the selected driver-based cross-check",
+    subtitle = "Models are compared without selecting a preferred dynamic specification",
     x = "RMSE (percentage points of GDP)", y = NULL, colour = NULL
   ) + theme_fiscal() +
   theme(legend.position = "bottom", axis.text.y = element_text(size = 8.5))
@@ -60,7 +56,7 @@ endpoint <- merge(
   by = "model"
 )
 endpoint[, role := fcase(
-  model == "dynamic_diff", "Selected driver",
+  model == "dynamic_diff", "Dynamic candidate",
   model == "univariate_arima", "Statistical benchmark",
   model == "ardl_ecm", "Rejected ECM",
   default = "Other driver"
@@ -77,7 +73,7 @@ p_tradeoff <- ggplot(endpoint, aes(window_shift_pp, endpoint_pct, colour = role)
   geom_text(aes(label = model_label, hjust = label_hjust), size = 2.7,
             check_overlap = TRUE, nudge_y = 0.22, show.legend = FALSE) +
   scale_colour_manual(values = c(
-    "Selected driver" = "#009E73",
+    "Dynamic candidate" = "#009E73",
     "Statistical benchmark" = "#E69F00",
     "Rejected ECM" = "#CC3311",
     "Other driver" = "grey45"
@@ -94,7 +90,7 @@ p_tradeoff <- ggplot(endpoint, aes(window_shift_pp, endpoint_pct, colour = role)
 p_selection <- p_rmse + p_tradeoff +
   plot_layout(widths = c(1.05, 1)) +
   plot_annotation(
-    title = "Evidence used to select the top-down cross-check",
+    title = "Evidence for comparing the top-down specifications",
     caption = "Rolling origins 2010--2020 use subsequently observed driver paths. Endpoint sensitivity compares the full sample, a 1990 start, and estimation through 2019."
   )
 save_plot_pair(p_selection, file.path(peer_dir, "01_top_down_selection_evidence"), 12, 6.5)
@@ -106,13 +102,13 @@ p_paths <- ggplot(reported_paths, aes(year, value * 100, colour = model_label)) 
   scale_colour_manual(values = peer_palette) +
   labs(
     title = "Reported top-down projections after the PBO anchor",
-    subtitle = "The dynamic specification represents the differenced-ARIMAX family",
+    subtitle = "Population and real GDP per capita are included in every specification",
     x = NULL, y = "% of GDP", colour = NULL,
     caption = "The mechanically differenced nested benchmark is retained internally but not displayed as an independent model."
   ) + theme_fiscal() + theme(legend.text = element_text(size = 8))
 save_plot_pair(p_paths, file.path(peer_dir, "03_top_down_reported_paths"), 10, 6.5)
 
-# Preferred dynamic projection with and without the PBO spending anchor. The
+# Illustrative dynamic projection with and without the PBO spending anchor. The
 # model-only path begins at the latest National Accounts outturn and never uses
 # the PBO spending-ratio path. Both variants use the same future driver inputs.
 latest_year <- max(historical$year)
@@ -207,7 +203,7 @@ p_anchor_comparison <- ggplot(
     "PBO operating expenses only" = 0.8
   ), guide = "none") +
   labs(
-    title = "Preferred dynamic projection with and without the PBO spending anchor",
+    title = "Dynamic-difference projection with and without the PBO spending anchor",
     subtitle = "The model-only path starts from the latest National Accounts expenditure ratio",
     x = NULL, y = "% of GDP", colour = NULL,
     caption = paste0(
@@ -326,7 +322,7 @@ p_ardl <- (p_f | p_t) / p_tests +
     title = "Why the fitted ARDL/ECM is not accepted as a long-run model",
     caption = paste0(
       "Finite-sample 5% bounds use 20,000 simulations for Case III with ",
-      length(topdown_age_groups) + 2L,
+      length(topdown_age_groups) + length(topdown_scale_drivers) + 2L,
       " long-run regressors. Passing residual and stability checks does not establish the required level relationship."
     )
   )
@@ -355,6 +351,79 @@ p_all <- ggplot(combined, aes(year, value * 100, colour = model_label)) +
   ) + theme_fiscal() + theme(legend.text = element_text(size = 8))
 save_plot_pair(p_all, file.path(peer_dir, "04_all_reported_models"), 10.5, 7)
 
+# Population and real-income sensitivity.  The mechanically differenced nested
+# benchmark remains in the machine-readable tables but is omitted here, in line
+# with the colleague-facing presentation of the differenced family.
+scale_income <- fread(file.path(table_dir, "top_down_scale_income_model_comparison.csv"))[
+  model != "arimax_diff"
+]
+scale_income[model == "dynamic_diff", model_label := "Dynamic differences"]
+scale_income[, variant_label := factor(
+  variant_label,
+  levels = c(
+    "Current controls only", "Add population", "Add real GDP per capita",
+    "Add population and real GDP per capita"
+  )
+)]
+scale_order <- scale_income[variant == "real_gdp_per_capita_only"][
+  order(rolling_rmse_5y_pp), model_label
+]
+scale_income[, model_label := factor(model_label, levels = rev(scale_order))]
+
+fit_long <- melt(
+  scale_income,
+  id.vars = c("model", "model_label", "variant", "variant_label"),
+  measure.vars = c("in_sample_rmse_pp", "rolling_rmse_5y_pp"),
+  variable.name = "metric", value.name = "rmse_pp"
+)
+fit_long[, metric := fcase(
+  metric == "in_sample_rmse_pp", "In-sample level RMSE",
+  default = "Five-year rolling RMSE"
+)]
+p_scale_fit <- ggplot(
+  fit_long,
+  aes(rmse_pp, model_label, colour = variant_label, group = variant_label)
+) +
+  geom_point(size = 2.4, position = position_dodge(width = 0.55)) +
+  facet_wrap(~metric, scales = "free_x") +
+  scale_colour_manual(values = c(
+    "Current controls only" = "grey50",
+    "Add population" = "#0072B2",
+    "Add real GDP per capita" = "#D55E00",
+    "Add population and real GDP per capita" = "#009E73"
+  )) +
+  labs(
+    title = "How population and real GDP per capita affect model fit",
+    subtitle = "Lower RMSE is better; rolling forecasts use subsequently observed driver paths",
+    x = "RMSE (percentage points of GDP)", y = NULL, colour = NULL
+  ) + theme_fiscal() +
+  theme(legend.position = "bottom", legend.text = element_text(size = 7.5))
+save_plot_pair(p_scale_fit, file.path(peer_dir, "07_scale_income_fit"), 12, 7)
+
+endpoint_scale <- scale_income[, .(
+  model, model_label, variant, variant_label,
+  endpoint_pct = anchored_2066 * 100
+)]
+p_scale_endpoint <- ggplot(
+  endpoint_scale,
+  aes(endpoint_pct, model_label, colour = variant_label, group = variant_label)
+) +
+  geom_point(size = 2.4, position = position_dodge(width = 0.55)) +
+  scale_colour_manual(values = c(
+    "Current controls only" = "grey50",
+    "Add population" = "#0072B2",
+    "Add real GDP per capita" = "#D55E00",
+    "Add population and real GDP per capita" = "#009E73"
+  )) +
+  labs(
+    title = "Population and real income materially change long-run endpoints",
+    subtitle = paste0("PBO-anchored spending ratio in ", projection_end - 1L, "-", substr(projection_end, 3, 4)),
+    x = "Projected spending (% of GDP)", y = NULL, colour = NULL,
+    caption = "Endpoint dispersion is a specification diagnostic, not a probability interval."
+  ) + theme_fiscal() +
+  theme(legend.position = "bottom", legend.text = element_text(size = 7.5))
+save_plot_pair(p_scale_endpoint, file.path(peer_dir, "08_scale_income_endpoints"), 12, 7)
+
 # Export a flat figure folder matching the Overleaf project layout.
 overleaf_figure_dir <- file.path(documentation_dir, "figures")
 dir.create(overleaf_figure_dir, recursive = TRUE, showWarnings = FALSE)
@@ -364,6 +433,8 @@ figure_exports <- c(
   "top_down_reported_paths.png" = file.path(peer_dir, "03_top_down_reported_paths.png"),
   "top_down_anchor_comparison.png" = file.path(peer_dir, "05_top_down_anchor_comparison.png"),
   "top_down_model_only_all.png" = file.path(peer_dir, "06_top_down_model_only_all.png"),
+  "top_down_scale_income_fit.png" = file.path(peer_dir, "07_scale_income_fit.png"),
+  "top_down_scale_income_endpoints.png" = file.path(peer_dir, "08_scale_income_endpoints.png"),
   "all_reported_models.png" = file.path(peer_dir, "04_all_reported_models.png"),
   "bottom_up_central_paths.png" = file.path(figure_dir, "bottom_up_comparison", "01_central_paths.png"),
   "bottom_up_category_differences.png" = file.path(figure_dir, "bottom_up_comparison", "03_endpoint_category_differences.png")

@@ -1,0 +1,7 @@
+model,component,maximum_vif,condition_number,model_label
+structural_ols,level,14.1506664701613,9.03759030297706,Structural OLS (levels)
+arimax_level,level xreg,14.1506664701613,9.03759030297706,ARIMAX (levels)
+arimax_diff,difference xreg,3.04165456569567,3.68250486868165,Differenced ARIMAX
+hybrid,structural level,10.6908089907101,6.81367223928421,Hybrid structural/macro
+hybrid,macro changes,1.25156600289245,1.84626795104061,Hybrid structural/macro
+ardl_ecm,UECM,3.58253502622142,5.21161202214805,ARDL error-correction model

@@ -1,0 +1,9 @@
+model,model_label,path_type,Current fit: through FY2024-25,Pre-COVID fit: through FY2018-19,difference_pre_minus_current_pp
+ardl_ecm,ARDL error-correction model,Common PBO anchor,31.714141898637,33.162479421095,1.44833752245803
+ardl_ecm,ARDL error-correction model,Model only,30.9304440403049,30.4627556593359,-0.46768838096898
+arimax_level,ARIMAX (levels),Common PBO anchor,36.2726439233058,31.1695025185572,-5.1031414047486
+arimax_level,ARIMAX (levels),Model only,37.4904247077735,26.0591369599408,-11.4312877478327
+hybrid,Hybrid structural/macro,Common PBO anchor,36.1637956277235,30.7866785381442,-5.37711708957926
+hybrid,Hybrid structural/macro,Model only,38.0227615821869,26.0903695187713,-11.9323920634156
+structural_ols,Structural OLS (levels),Common PBO anchor,36.5203366113434,30.9334782555899,-5.58685835575354
+structural_ols,Structural OLS (levels),Model only,36.2972954925584,25.6183299178128,-10.6789655747456

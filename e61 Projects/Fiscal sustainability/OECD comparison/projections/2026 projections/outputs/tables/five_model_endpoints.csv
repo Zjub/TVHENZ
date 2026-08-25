@@ -1,0 +1,11 @@
+year,model,model_label,value,path_type,interest_treatment,interest_treatment_label,endpoint_percent_gdp
+2066,structural_ols,Structural OLS (levels),0.362972954925584,Unanchored model projection,exclude_other_interest,Exclude conventional other interest,36.2972954925584
+2066,arimax_level,ARIMAX (levels),0.374904247077735,Unanchored model projection,exclude_other_interest,Exclude conventional other interest,37.4904247077735
+2066,arimax_diff,Differenced ARIMAX,0.339572530505038,Unanchored model projection,exclude_other_interest,Exclude conventional other interest,33.9572530505038
+2066,hybrid,Hybrid structural/macro,0.380227615821868,Unanchored model projection,exclude_other_interest,Exclude conventional other interest,38.0227615821868
+2066,ardl_ecm,ARDL error-correction model,0.309304440403049,Unanchored model projection,exclude_other_interest,Exclude conventional other interest,30.9304440403049
+2066,structural_ols,Structural OLS (levels),0.365203366113434,Official forecast then model projection,"","",36.5203366113434
+2066,arimax_level,ARIMAX (levels),0.362726439233058,Official forecast then model projection,"","",36.2726439233058
+2066,arimax_diff,Differenced ARIMAX,0.329419110676461,Official forecast then model projection,"","",32.9419110676461
+2066,hybrid,Hybrid structural/macro,0.361637956277235,Official forecast then model projection,"","",36.1637956277235
+2066,ardl_ecm,ARDL error-correction model,0.31714141898637,Official forecast then model projection,"","",31.714141898637

@@ -1,0 +1,681 @@
+year,model,value,interest_treatment,interest_treatment_label,estimation_sample,model_label,path_type
+2026,structural_ols,0.347761128001094,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2027,structural_ols,0.348492431796559,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2028,structural_ols,0.348601467470204,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2029,structural_ols,0.347761692168369,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2030,structural_ols,0.34676958881215,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2031,structural_ols,0.345627265146288,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2032,structural_ols,0.344471625206279,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2033,structural_ols,0.345036103097545,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2034,structural_ols,0.34570532367054,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2035,structural_ols,0.346385328417215,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2036,structural_ols,0.347275635865072,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2037,structural_ols,0.347798879833756,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2038,structural_ols,0.348322123802439,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2039,structural_ols,0.348845367771123,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2040,structural_ols,0.349368611739807,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2041,structural_ols,0.349891855708491,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2042,structural_ols,0.350415099677175,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2043,structural_ols,0.350938343645859,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2044,structural_ols,0.351461587614542,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2045,structural_ols,0.351984831583226,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2046,structural_ols,0.35250807555191,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2047,structural_ols,0.353031319520593,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2048,structural_ols,0.353554563489277,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2049,structural_ols,0.354077807457961,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2050,structural_ols,0.354601051426644,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2051,structural_ols,0.355124295395328,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2052,structural_ols,0.355647539364012,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2053,structural_ols,0.356170783332696,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2054,structural_ols,0.356694027301379,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2055,structural_ols,0.357217271270063,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2056,structural_ols,0.357740515238747,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2057,structural_ols,0.35826375920743,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2058,structural_ols,0.358787003176114,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2059,structural_ols,0.359310247144798,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2060,structural_ols,0.359833491113482,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2061,structural_ols,0.360356735082165,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2062,structural_ols,0.360879979050849,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2063,structural_ols,0.361403223019533,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2064,structural_ols,0.361926466988217,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2065,structural_ols,0.362449710956901,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2066,structural_ols,0.362972954925584,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Structural OLS (levels),Model only
+2026,arimax_level,0.36434916677435,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2027,arimax_level,0.364157621793802,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2028,arimax_level,0.363665742356014,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2029,arimax_level,0.362416795418722,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2030,arimax_level,0.361177807844677,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2031,arimax_level,0.359977971562794,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2032,arimax_level,0.358833558568011,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2033,arimax_level,0.358768517942251,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2034,arimax_level,0.358902264697825,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2035,arimax_level,0.359094533926574,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2036,arimax_level,0.359581679655959,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2037,arimax_level,0.3598411583471,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2038,arimax_level,0.360156072255127,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2039,arimax_level,0.360516452449045,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2040,arimax_level,0.360914122713587,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2041,arimax_level,0.361342377164627,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2042,arimax_level,0.361795715839113,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2043,arimax_level,0.362269627833929,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2044,arimax_level,0.362760413442961,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2045,arimax_level,0.363265038279315,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2046,arimax_level,0.36378101363076,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2047,arimax_level,0.364306298330903,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2048,arimax_level,0.36483921827689,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2049,arimax_level,0.365378400420266,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2050,arimax_level,0.365922718628273,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2051,arimax_level,0.366471249280932,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2052,arimax_level,0.367023234853109,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2053,arimax_level,0.367578054045634,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2054,arimax_level,0.368135197287745,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2055,arimax_level,0.368694246644935,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2056,arimax_level,0.369254859339984,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2057,arimax_level,0.369816754237392,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2058,arimax_level,0.370379700758343,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2059,arimax_level,0.370943509789071,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2060,arimax_level,0.371508026224195,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2061,arimax_level,0.37207312285098,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2062,arimax_level,0.372638695333392,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2063,arimax_level,0.373204658098176,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2064,arimax_level,0.373770940960742,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2065,arimax_level,0.374337486357814,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2066,arimax_level,0.374904247077735,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARIMAX (levels),Model only
+2026,hybrid,0.366367490315056,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2027,hybrid,0.367542938519867,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2028,hybrid,0.36814677180015,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2029,hybrid,0.367843085913668,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2030,hybrid,0.367589659544634,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2031,hybrid,0.367232012508622,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2032,hybrid,0.366924576155541,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2033,hybrid,0.366383756967224,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2034,hybrid,0.366913875660823,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2035,hybrid,0.367481116963481,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2036,hybrid,0.368217718220633,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2037,hybrid,0.368618048140674,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2038,hybrid,0.369018378060715,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2039,hybrid,0.369418707980756,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2040,hybrid,0.369819037900798,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2041,hybrid,0.370219367820839,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2042,hybrid,0.37061969774088,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2043,hybrid,0.371020027660921,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2044,hybrid,0.371420357580962,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2045,hybrid,0.371820687501004,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2046,hybrid,0.372221017421045,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2047,hybrid,0.372621347341086,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2048,hybrid,0.373021677261127,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2049,hybrid,0.373422007181168,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2050,hybrid,0.37382233710121,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2051,hybrid,0.374222667021251,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2052,hybrid,0.374622996941292,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2053,hybrid,0.375023326861333,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2054,hybrid,0.375423656781374,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2055,hybrid,0.375823986701415,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2056,hybrid,0.376224316621457,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2057,hybrid,0.376624646541498,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2058,hybrid,0.377024976461539,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2059,hybrid,0.37742530638158,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2060,hybrid,0.377825636301621,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2061,hybrid,0.378225966221663,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2062,hybrid,0.378626296141704,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2063,hybrid,0.379026626061745,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2064,hybrid,0.379426955981786,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2065,hybrid,0.379827285901828,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2066,hybrid,0.380227615821868,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,Hybrid structural/macro,Model only
+2026,ardl_ecm,0.356294527767027,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2027,ardl_ecm,0.352357479459989,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2028,ardl_ecm,0.351638313020092,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2029,ardl_ecm,0.346941838961911,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2030,ardl_ecm,0.341163021416679,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2031,ardl_ecm,0.338162953130964,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2032,ardl_ecm,0.33563911990624,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2033,ardl_ecm,0.334520163750123,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2034,ardl_ecm,0.333472864771474,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2035,ardl_ecm,0.332487663010992,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2036,ardl_ecm,0.331554465140561,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2037,ardl_ecm,0.330434070220543,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2038,ardl_ecm,0.32939112458484,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2039,ardl_ecm,0.328413281013445,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2040,ardl_ecm,0.327490142582209,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2041,ardl_ecm,0.326612949630858,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2042,ardl_ecm,0.325774318684092,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2043,ardl_ecm,0.324968024228057,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2044,ardl_ecm,0.324188815964747,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2045,ardl_ecm,0.323432265529231,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2046,ardl_ecm,0.322694637741523,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2047,ardl_ecm,0.321972782337913,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2048,ardl_ecm,0.321264042832081,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2049,ardl_ecm,0.32056617972957,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2050,ardl_ecm,0.319877305787709,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2051,ardl_ecm,0.319195831397347,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2052,ardl_ecm,0.318520418479565,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2053,ardl_ecm,0.317849941552486,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2054,ardl_ecm,0.317183454840676,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2055,ardl_ecm,0.316520164480459,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2056,ardl_ecm,0.315859405025376,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2057,ardl_ecm,0.315200619582094,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2058,ardl_ecm,0.314543343012677,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2059,ardl_ecm,0.31388718772773,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2060,ardl_ecm,0.313231831669325,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2061,ardl_ecm,0.312577008145192,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2062,ardl_ecm,0.311922497228336,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2063,ardl_ecm,0.311268118480609,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2064,ardl_ecm,0.310613724796206,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2065,ardl_ecm,0.30995919719259,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2066,ardl_ecm,0.309304440403049,exclude_other_interest,Exclude conventional other interest,Current fit: through FY2024-25,ARDL error-correction model,Model only
+2020,structural_ols,0.330420780559642,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2021,structural_ols,0.325985995351246,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2022,structural_ols,0.302839304959364,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2023,structural_ols,0.294888337389101,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2024,structural_ols,0.30196050594917,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2025,structural_ols,0.304754102933182,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2026,structural_ols,0.304474821113984,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2027,structural_ols,0.303084016544183,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2028,structural_ols,0.301158085435652,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2029,structural_ols,0.298433609227115,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2030,structural_ols,0.29584851662223,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2031,structural_ols,0.293513489375349,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2032,structural_ols,0.291033110099673,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2033,structural_ols,0.289985679189529,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2034,structural_ols,0.28868617652751,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2035,structural_ols,0.2872851989481,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2036,structural_ols,0.285468046824803,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2037,structural_ols,0.284491888569914,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2038,structural_ols,0.283515730315025,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2039,structural_ols,0.282539572060136,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2040,structural_ols,0.281563413805246,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2041,structural_ols,0.280587255550358,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2042,structural_ols,0.279611097295468,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2043,structural_ols,0.278634939040578,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2044,structural_ols,0.27765878078569,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2045,structural_ols,0.276682622530801,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2046,structural_ols,0.275706464275911,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2047,structural_ols,0.274730306021023,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2048,structural_ols,0.273754147766133,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2049,structural_ols,0.272777989511244,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2050,structural_ols,0.271801831256355,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2051,structural_ols,0.270825673001465,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2052,structural_ols,0.269849514746577,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2053,structural_ols,0.268873356491687,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2054,structural_ols,0.267897198236798,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2055,structural_ols,0.266921039981909,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2056,structural_ols,0.265944881727019,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2057,structural_ols,0.264968723472131,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2058,structural_ols,0.263992565217241,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2059,structural_ols,0.263016406962352,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2060,structural_ols,0.262040248707464,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2061,structural_ols,0.261064090452574,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2062,structural_ols,0.260087932197685,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2063,structural_ols,0.259111773942796,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2064,structural_ols,0.258135615687906,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2065,structural_ols,0.257159457433017,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2066,structural_ols,0.256183299178128,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Model only
+2020,arimax_level,0.336413281486396,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2021,arimax_level,0.329052213413381,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2022,arimax_level,0.306484438066842,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2023,arimax_level,0.298374212753647,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2024,arimax_level,0.304928377492983,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2025,arimax_level,0.307528114739952,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2026,arimax_level,0.30716097441678,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2027,arimax_level,0.305676928821524,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2028,arimax_level,0.303616271305507,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2029,arimax_level,0.300693937567289,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2030,arimax_level,0.297896344413836,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2031,arimax_level,0.29532783577922,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2032,arimax_level,0.29262184481089,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2033,arimax_level,0.291659512127301,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2034,arimax_level,0.290464250275655,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2035,arimax_level,0.289173870731592,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2036,arimax_level,0.287500527688461,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2037,arimax_level,0.286603555752159,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2038,arimax_level,0.285706583815858,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2039,arimax_level,0.284809611879556,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2040,arimax_level,0.283912639943254,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2041,arimax_level,0.283015668006953,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2042,arimax_level,0.28211869607065,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2043,arimax_level,0.281221724134348,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2044,arimax_level,0.280324752198047,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2045,arimax_level,0.279427780261745,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2046,arimax_level,0.278530808325443,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2047,arimax_level,0.277633836389142,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2048,arimax_level,0.27673686445284,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2049,arimax_level,0.275839892516538,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2050,arimax_level,0.274942920580236,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2051,arimax_level,0.274045948643934,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2052,arimax_level,0.273148976707633,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2053,arimax_level,0.272252004771331,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2054,arimax_level,0.271355032835029,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2055,arimax_level,0.270458060898728,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2056,arimax_level,0.269561088962425,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2057,arimax_level,0.268664117026124,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2058,arimax_level,0.267767145089822,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2059,arimax_level,0.26687017315352,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2060,arimax_level,0.265973201217219,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2061,arimax_level,0.265076229280917,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2062,arimax_level,0.264179257344615,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2063,arimax_level,0.263282285408313,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2064,arimax_level,0.262385313472011,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2065,arimax_level,0.261488341535709,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2066,arimax_level,0.260591369599408,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Model only
+2020,hybrid,0.341405208256269,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2021,hybrid,0.337416507955835,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2022,hybrid,0.31188773134609,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2023,hybrid,0.304269030781434,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2024,hybrid,0.311654715477873,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2025,hybrid,0.314098087815089,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2026,hybrid,0.313045508337228,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2027,hybrid,0.310892662863214,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2028,hybrid,0.308294366045742,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2029,hybrid,0.304960494938813,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2030,hybrid,0.302036909806271,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2031,hybrid,0.299387938947566,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2032,hybrid,0.296660294732831,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2033,hybrid,0.296118812568961,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2034,hybrid,0.29478136445404,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2035,hybrid,0.293372839255646,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2036,hybrid,0.291539220649333,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2037,hybrid,0.290518036467278,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2038,hybrid,0.289496852285225,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2039,hybrid,0.288475668103171,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2040,hybrid,0.287454483921117,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2041,hybrid,0.286433299739063,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2042,hybrid,0.285412115557008,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2043,hybrid,0.284390931374954,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2044,hybrid,0.283369747192901,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2045,hybrid,0.282348563010846,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2046,hybrid,0.281327378828792,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2047,hybrid,0.280306194646739,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2048,hybrid,0.279285010464685,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2049,hybrid,0.278263826282631,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2050,hybrid,0.277242642100576,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2051,hybrid,0.276221457918522,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2052,hybrid,0.275200273736469,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2053,hybrid,0.274179089554414,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2054,hybrid,0.27315790537236,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2055,hybrid,0.272136721190307,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2056,hybrid,0.271115537008252,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2057,hybrid,0.270094352826199,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2058,hybrid,0.269073168644144,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2059,hybrid,0.26805198446209,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2060,hybrid,0.267030800280037,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2061,hybrid,0.266009616097983,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2062,hybrid,0.264988431915928,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2063,hybrid,0.263967247733874,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2064,hybrid,0.26294606355182,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2065,hybrid,0.261924879369766,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2066,hybrid,0.260903695187713,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Model only
+2020,ardl_ecm,0.346900614989959,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2021,ardl_ecm,0.342392133535793,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2022,ardl_ecm,0.322261325662172,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2023,ardl_ecm,0.314269092772076,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2024,ardl_ecm,0.321489602712574,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2025,ardl_ecm,0.325584102158111,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2026,ardl_ecm,0.323393931981102,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2027,ardl_ecm,0.323732118092828,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2028,ardl_ecm,0.326106380924333,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2029,ardl_ecm,0.32471544791403,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2030,ardl_ecm,0.322002762382409,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2031,ardl_ecm,0.321243670772033,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2032,ardl_ecm,0.320602546205329,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2033,ardl_ecm,0.32114893945291,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2034,ardl_ecm,0.321512171417627,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2035,ardl_ecm,0.321720906383187,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2036,ardl_ecm,0.321797893413421,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2037,ardl_ecm,0.321563948677243,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2038,ardl_ecm,0.321267167173553,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2039,ardl_ecm,0.320916849905732,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2040,ardl_ecm,0.320520885884504,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2041,ardl_ecm,0.320085964138344,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2042,ardl_ecm,0.319617754984292,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2043,ardl_ecm,0.319121064688392,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2044,ardl_ecm,0.318599967189685,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2045,ardl_ecm,0.318057916124173,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2046,ardl_ecm,0.317497839977591,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2047,ardl_ecm,0.316922222824385,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2048,ardl_ecm,0.316333172776943,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2049,ardl_ecm,0.315732479973448,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2050,ardl_ecm,0.315121665673208,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2051,ardl_ecm,0.31450202380174,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2052,ardl_ecm,0.313874656091584,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2053,ardl_ecm,0.313240501795352,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2054,ardl_ecm,0.312600362801773,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2055,ardl_ecm,0.311954924860645,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2056,ardl_ecm,0.311304775515803,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2057,ardl_ecm,0.31065041925415,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2058,ardl_ecm,0.309992290301204,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2059,ardl_ecm,0.30933076342765,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2060,ardl_ecm,0.308666163075378,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2061,ardl_ecm,0.307998771063931,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2062,ardl_ecm,0.307328833097993,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2063,ardl_ecm,0.306656564262429,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2064,ardl_ecm,0.305982153662453,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2065,ardl_ecm,0.305305768342085,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2066,ardl_ecm,0.304627556593359,exclude_other_interest,Exclude conventional other interest,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Model only
+2026,structural_ols,0.371,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2027,structural_ols,0.371,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2028,structural_ols,0.364,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2029,structural_ols,0.357,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2030,structural_ols,0.349,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2031,structural_ols,0.347857676334138,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2032,structural_ols,0.346702036394129,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2033,structural_ols,0.347266514285395,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2034,structural_ols,0.34793573485839,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2035,structural_ols,0.348615739605065,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2036,structural_ols,0.349506047052922,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2037,structural_ols,0.350029291021606,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2038,structural_ols,0.350552534990289,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2039,structural_ols,0.351075778958973,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2040,structural_ols,0.351599022927657,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2041,structural_ols,0.352122266896341,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2042,structural_ols,0.352645510865025,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2043,structural_ols,0.353168754833709,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2044,structural_ols,0.353691998802392,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2045,structural_ols,0.354215242771076,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2046,structural_ols,0.35473848673976,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2047,structural_ols,0.355261730708443,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2048,structural_ols,0.355784974677127,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2049,structural_ols,0.35630821864581,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2050,structural_ols,0.356831462614494,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2051,structural_ols,0.357354706583178,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2052,structural_ols,0.357877950551862,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2053,structural_ols,0.358401194520546,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2054,structural_ols,0.358924438489229,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2055,structural_ols,0.359447682457913,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2056,structural_ols,0.359970926426597,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2057,structural_ols,0.36049417039528,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2058,structural_ols,0.361017414363964,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2059,structural_ols,0.361540658332648,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2060,structural_ols,0.362063902301331,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2061,structural_ols,0.362587146270015,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2062,structural_ols,0.363110390238699,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2063,structural_ols,0.363633634207383,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2064,structural_ols,0.364156878176067,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2065,structural_ols,0.364680122144751,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2066,structural_ols,0.365203366113434,,,Current fit: through FY2024-25,Structural OLS (levels),Common PBO anchor
+2026,arimax_level,0.371,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2027,arimax_level,0.371,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2028,arimax_level,0.364,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2029,arimax_level,0.357,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2030,arimax_level,0.349,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2031,arimax_level,0.347800163718117,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2032,arimax_level,0.346655750723334,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2033,arimax_level,0.346590710097574,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2034,arimax_level,0.346724456853148,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2035,arimax_level,0.346916726081896,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2036,arimax_level,0.347403871811282,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2037,arimax_level,0.347663350502423,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2038,arimax_level,0.347978264410449,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2039,arimax_level,0.348338644604367,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2040,arimax_level,0.348736314868909,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2041,arimax_level,0.34916456931995,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2042,arimax_level,0.349617907994436,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2043,arimax_level,0.350091819989251,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2044,arimax_level,0.350582605598284,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2045,arimax_level,0.351087230434638,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2046,arimax_level,0.351603205786083,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2047,arimax_level,0.352128490486225,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2048,arimax_level,0.352661410432213,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2049,arimax_level,0.353200592575589,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2050,arimax_level,0.353744910783596,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2051,arimax_level,0.354293441436255,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2052,arimax_level,0.354845427008432,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2053,arimax_level,0.355400246200957,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2054,arimax_level,0.355957389443067,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2055,arimax_level,0.356516438800258,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2056,arimax_level,0.357077051495306,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2057,arimax_level,0.357638946392715,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2058,arimax_level,0.358201892913666,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2059,arimax_level,0.358765701944394,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2060,arimax_level,0.359330218379518,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2061,arimax_level,0.359895315006303,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2062,arimax_level,0.360460887488715,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2063,arimax_level,0.361026850253499,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2064,arimax_level,0.361593133116065,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2065,arimax_level,0.362159678513137,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2066,arimax_level,0.362726439233058,,,Current fit: through FY2024-25,ARIMAX (levels),Common PBO anchor
+2026,hybrid,0.371,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2027,hybrid,0.371,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2028,hybrid,0.364,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2029,hybrid,0.357,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2030,hybrid,0.349,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2031,hybrid,0.348642352963988,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2032,hybrid,0.348334916610907,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2033,hybrid,0.34779409742259,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2034,hybrid,0.348324216116189,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2035,hybrid,0.348891457418848,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2036,hybrid,0.349628058675999,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2037,hybrid,0.35002838859604,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2038,hybrid,0.350428718516081,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2039,hybrid,0.350829048436122,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2040,hybrid,0.351229378356164,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2041,hybrid,0.351629708276205,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2042,hybrid,0.352030038196246,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2043,hybrid,0.352430368116287,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2044,hybrid,0.352830698036328,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2045,hybrid,0.35323102795637,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2046,hybrid,0.353631357876411,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2047,hybrid,0.354031687796452,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2048,hybrid,0.354432017716493,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2049,hybrid,0.354832347636534,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2050,hybrid,0.355232677556576,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2051,hybrid,0.355633007476617,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2052,hybrid,0.356033337396658,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2053,hybrid,0.356433667316699,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2054,hybrid,0.35683399723674,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2055,hybrid,0.357234327156781,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2056,hybrid,0.357634657076823,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2057,hybrid,0.358034986996864,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2058,hybrid,0.358435316916905,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2059,hybrid,0.358835646836946,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2060,hybrid,0.359235976756987,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2061,hybrid,0.359636306677029,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2062,hybrid,0.36003663659707,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2063,hybrid,0.360436966517111,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2064,hybrid,0.360837296437152,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2065,hybrid,0.361237626357194,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2066,hybrid,0.361637956277235,,,Current fit: through FY2024-25,Hybrid structural/macro,Common PBO anchor
+2026,ardl_ecm,0.371,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2027,ardl_ecm,0.371,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2028,ardl_ecm,0.364,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2029,ardl_ecm,0.357,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2030,ardl_ecm,0.349,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2031,ardl_ecm,0.345999931714284,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2032,ardl_ecm,0.343476098489561,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2033,ardl_ecm,0.342357142333444,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2034,ardl_ecm,0.341309843354795,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2035,ardl_ecm,0.340324641594313,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2036,ardl_ecm,0.339391443723882,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2037,ardl_ecm,0.338271048803864,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2038,ardl_ecm,0.337228103168161,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2039,ardl_ecm,0.336250259596766,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2040,ardl_ecm,0.33532712116553,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2041,ardl_ecm,0.334449928214179,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2042,ardl_ecm,0.333611297267412,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2043,ardl_ecm,0.332805002811377,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2044,ardl_ecm,0.332025794548068,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2045,ardl_ecm,0.331269244112552,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2046,ardl_ecm,0.330531616324844,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2047,ardl_ecm,0.329809760921234,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2048,ardl_ecm,0.329101021415402,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2049,ardl_ecm,0.328403158312891,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2050,ardl_ecm,0.32771428437103,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2051,ardl_ecm,0.327032809980668,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2052,ardl_ecm,0.326357397062885,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2053,ardl_ecm,0.325686920135807,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2054,ardl_ecm,0.325020433423997,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2055,ardl_ecm,0.324357143063779,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2056,ardl_ecm,0.323696383608697,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2057,ardl_ecm,0.323037598165414,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2058,ardl_ecm,0.322380321595998,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2059,ardl_ecm,0.32172416631105,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2060,ardl_ecm,0.321068810252646,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2061,ardl_ecm,0.320413986728513,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2062,ardl_ecm,0.319759475811656,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2063,ardl_ecm,0.31910509706393,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2064,ardl_ecm,0.318450703379527,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2065,ardl_ecm,0.317796175775911,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2066,ardl_ecm,0.31714141898637,,,Current fit: through FY2024-25,ARDL error-correction model,Common PBO anchor
+2026,structural_ols,0.371,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2027,structural_ols,0.371,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2028,structural_ols,0.364,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2029,structural_ols,0.357,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2030,structural_ols,0.349,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2031,structural_ols,0.346664972753119,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2032,structural_ols,0.344184593477443,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2033,structural_ols,0.3431371625673,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2034,structural_ols,0.34183765990528,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2035,structural_ols,0.34043668232587,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2036,structural_ols,0.338619530202573,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2037,structural_ols,0.337643371947684,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2038,structural_ols,0.336667213692796,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2039,structural_ols,0.335691055437906,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2040,structural_ols,0.334714897183017,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2041,structural_ols,0.333738738928128,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2042,structural_ols,0.332762580673238,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2043,structural_ols,0.331786422418349,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2044,structural_ols,0.33081026416346,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2045,structural_ols,0.329834105908571,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2046,structural_ols,0.328857947653681,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2047,structural_ols,0.327881789398793,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2048,structural_ols,0.326905631143904,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2049,structural_ols,0.325929472889014,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2050,structural_ols,0.324953314634125,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2051,structural_ols,0.323977156379236,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2052,structural_ols,0.323000998124347,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2053,structural_ols,0.322024839869458,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2054,structural_ols,0.321048681614568,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2055,structural_ols,0.32007252335968,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2056,structural_ols,0.31909636510479,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2057,structural_ols,0.318120206849901,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2058,structural_ols,0.317144048595012,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2059,structural_ols,0.316167890340122,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2060,structural_ols,0.315191732085234,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2061,structural_ols,0.314215573830344,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2062,structural_ols,0.313239415575455,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2063,structural_ols,0.312263257320566,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2064,structural_ols,0.311287099065677,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2065,structural_ols,0.310310940810787,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2066,structural_ols,0.309334782555899,,,Pre-COVID fit: through FY2018-19,Structural OLS (levels),Common PBO anchor
+2026,arimax_level,0.371,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2027,arimax_level,0.371,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2028,arimax_level,0.364,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2029,arimax_level,0.357,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2030,arimax_level,0.349,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2031,arimax_level,0.346431491365384,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2032,arimax_level,0.343725500397054,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2033,arimax_level,0.342763167713465,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2034,arimax_level,0.341567905861819,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2035,arimax_level,0.340277526317756,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2036,arimax_level,0.338604183274625,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2037,arimax_level,0.337707211338323,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2038,arimax_level,0.336810239402022,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2039,arimax_level,0.33591326746572,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2040,arimax_level,0.335016295529418,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2041,arimax_level,0.334119323593117,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2042,arimax_level,0.333222351656814,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2043,arimax_level,0.332325379720512,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2044,arimax_level,0.331428407784211,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2045,arimax_level,0.330531435847909,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2046,arimax_level,0.329634463911607,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2047,arimax_level,0.328737491975306,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2048,arimax_level,0.327840520039004,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2049,arimax_level,0.326943548102702,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2050,arimax_level,0.3260465761664,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2051,arimax_level,0.325149604230098,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2052,arimax_level,0.324252632293797,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2053,arimax_level,0.323355660357495,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2054,arimax_level,0.322458688421193,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2055,arimax_level,0.321561716484892,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2056,arimax_level,0.320664744548589,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2057,arimax_level,0.319767772612288,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2058,arimax_level,0.318870800675986,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2059,arimax_level,0.317973828739684,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2060,arimax_level,0.317076856803383,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2061,arimax_level,0.316179884867081,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2062,arimax_level,0.315282912930779,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2063,arimax_level,0.314385940994477,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2064,arimax_level,0.313488969058175,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2065,arimax_level,0.312591997121873,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2066,arimax_level,0.311695025185572,,,Pre-COVID fit: through FY2018-19,ARIMAX (levels),Common PBO anchor
+2026,hybrid,0.371,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2027,hybrid,0.371,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2028,hybrid,0.364,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2029,hybrid,0.357,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2030,hybrid,0.349,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2031,hybrid,0.346351029141296,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2032,hybrid,0.343623384926561,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2033,hybrid,0.343081902762691,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2034,hybrid,0.341744454647769,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2035,hybrid,0.340335929449376,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2036,hybrid,0.338502310843062,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2037,hybrid,0.337481126661008,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2038,hybrid,0.336459942478954,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2039,hybrid,0.3354387582969,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2040,hybrid,0.334417574114846,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2041,hybrid,0.333396389932793,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2042,hybrid,0.332375205750738,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2043,hybrid,0.331354021568683,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2044,hybrid,0.33033283738663,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2045,hybrid,0.329311653204576,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2046,hybrid,0.328290469022522,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2047,hybrid,0.327269284840468,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2048,hybrid,0.326248100658414,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2049,hybrid,0.32522691647636,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2050,hybrid,0.324205732294306,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2051,hybrid,0.323184548112251,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2052,hybrid,0.322163363930198,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2053,hybrid,0.321142179748144,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2054,hybrid,0.32012099556609,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2055,hybrid,0.319099811384036,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2056,hybrid,0.318078627201981,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2057,hybrid,0.317057443019928,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2058,hybrid,0.316036258837874,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2059,hybrid,0.31501507465582,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2060,hybrid,0.313993890473766,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2061,hybrid,0.312972706291712,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2062,hybrid,0.311951522109658,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2063,hybrid,0.310930337927604,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2064,hybrid,0.30990915374555,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2065,hybrid,0.308887969563495,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2066,hybrid,0.307866785381442,,,Pre-COVID fit: through FY2018-19,Hybrid structural/macro,Common PBO anchor
+2026,ardl_ecm,0.371,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2027,ardl_ecm,0.371,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2028,ardl_ecm,0.364,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2029,ardl_ecm,0.357,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2030,ardl_ecm,0.349,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2031,ardl_ecm,0.348240908389624,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2032,ardl_ecm,0.34759978382292,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2033,ardl_ecm,0.348146177070501,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2034,ardl_ecm,0.348509409035218,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2035,ardl_ecm,0.348718144000778,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2036,ardl_ecm,0.348795131031012,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2037,ardl_ecm,0.348561186294834,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2038,ardl_ecm,0.348264404791144,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2039,ardl_ecm,0.347914087523323,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2040,ardl_ecm,0.347518123502095,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2041,ardl_ecm,0.347083201755935,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2042,ardl_ecm,0.346614992601883,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2043,ardl_ecm,0.346118302305982,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2044,ardl_ecm,0.345597204807276,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2045,ardl_ecm,0.345055153741764,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2046,ardl_ecm,0.344495077595182,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2047,ardl_ecm,0.343919460441976,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2048,ardl_ecm,0.343330410394534,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2049,ardl_ecm,0.342729717591039,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2050,ardl_ecm,0.342118903290799,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2051,ardl_ecm,0.341499261419331,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2052,ardl_ecm,0.340871893709175,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2053,ardl_ecm,0.340237739412943,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2054,ardl_ecm,0.339597600419364,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2055,ardl_ecm,0.338952162478236,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2056,ardl_ecm,0.338302013133394,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2057,ardl_ecm,0.337647656871741,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2058,ardl_ecm,0.336989527918795,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2059,ardl_ecm,0.33632800104524,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2060,ardl_ecm,0.335663400692969,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2061,ardl_ecm,0.334996008681522,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2062,ardl_ecm,0.334326070715584,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2063,ardl_ecm,0.33365380188002,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2064,ardl_ecm,0.332979391280044,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2065,ardl_ecm,0.332303005959676,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor
+2066,ardl_ecm,0.33162479421095,,,Pre-COVID fit: through FY2018-19,ARDL error-correction model,Common PBO anchor

@@ -1,0 +1,5 @@
+model,model_label,Model only from latest actual,"PBO through 2029-30, then model changes"
+hybrid,Hybrid spending-share model,34.9835447271374,33.0447181845178
+per_capita_income,Real spending per capita (differences),36.5348086536936,32.6696532028392
+structural_ols,Structural OLS (old-Shapley comparison),38.8450945305579,39.8802935105462
+univariate_arima,COVID-adjusted ARIMA benchmark,35.4480912729307,36.8080898503057

@@ -3,4 +3,6 @@ Historical population not doubled,TRUE,Latest population: 27.61 million
 Historical age shares sum to one,TRUE,Maximum absolute deviation: 0
 Projection age shares sum to one,TRUE,Maximum absolute deviation: 0
 No partial financial years in national accounts model data,TRUE,Latest complete merged financial year: 2025
+National Accounts interest components reconcile,TRUE,Maximum component gap ($m): 3
+Configured top-down interest treatment applied,TRUE,Treatment: Exclude conventional other interest
 GFS purpose categories add to total expenses,TRUE,Difference ($m): 0

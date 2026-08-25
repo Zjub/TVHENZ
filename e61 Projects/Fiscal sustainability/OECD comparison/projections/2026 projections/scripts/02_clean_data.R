@@ -27,7 +27,10 @@ historical[, `:=`(
   tot_z = zscore_with(tot_index, tot_center, tot_scale),
   rp_z = zscore_with(relative_gov_price, rp_center, rp_scale),
   covid = as.integer(year %in% 2020:2022),
+  log_population = log(pop_total),
+  log_real_gdp_per_capita = log(gdp_real / pop_total),
   population_growth = c(NA_real_, diff(log(pop_total))),
+  real_gdp_per_capita_growth = c(NA_real_, diff(log(gdp_real / pop_total))),
   source = "ABS national accounts and labour/demographic data"
 )]
 
@@ -108,6 +111,29 @@ write_validation(
   "No partial financial years in national accounts model data",
   max(historical$year) <= 2025,
   paste("Latest complete merged financial year:", max(historical$year)),
+  validation_file
+)
+write_validation(
+  "National Accounts interest components reconcile",
+  max(abs(
+    historical$interest_payable_total_nom -
+      historical$interest_payable_other_nom -
+      historical$interest_payable_unfunded_super_nom
+  ), na.rm = TRUE) <= 4,
+  paste(
+    "Maximum component gap ($m):",
+    round(max(abs(
+      historical$interest_payable_total_nom -
+        historical$interest_payable_other_nom -
+        historical$interest_payable_unfunded_super_nom
+    ), na.rm = TRUE), 2)
+  ),
+  validation_file
+)
+write_validation(
+  "Configured top-down interest treatment applied",
+  identical(unique(historical$topdown_interest_treatment), topdown_interest_treatment),
+  paste("Treatment:", topdown_interest_treatment_label()),
   validation_file
 )
 write_validation(

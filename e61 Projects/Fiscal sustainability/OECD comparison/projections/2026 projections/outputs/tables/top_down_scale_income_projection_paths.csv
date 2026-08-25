@@ -1,0 +1,1149 @@
+year,model,value,variant,variant_label,model_label
+2026,structural_ols,0.361966324862483,baseline,Current controls only,Structural OLS (levels)
+2027,structural_ols,0.362913972915624,baseline,Current controls only,Structural OLS (levels)
+2028,structural_ols,0.363027192151714,baseline,Current controls only,Structural OLS (levels)
+2029,structural_ols,0.361888559710274,baseline,Current controls only,Structural OLS (levels)
+2030,structural_ols,0.360648010200117,baseline,Current controls only,Structural OLS (levels)
+2031,structural_ols,0.359192688266364,baseline,Current controls only,Structural OLS (levels)
+2032,structural_ols,0.357888309146879,baseline,Current controls only,Structural OLS (levels)
+2033,structural_ols,0.358804704978525,baseline,Current controls only,Structural OLS (levels)
+2034,structural_ols,0.359949706414607,baseline,Current controls only,Structural OLS (levels)
+2035,structural_ols,0.361194876766857,baseline,Current controls only,Structural OLS (levels)
+2036,structural_ols,0.362807784349855,baseline,Current controls only,Structural OLS (levels)
+2037,structural_ols,0.363662556381712,baseline,Current controls only,Structural OLS (levels)
+2038,structural_ols,0.364517328413569,baseline,Current controls only,Structural OLS (levels)
+2039,structural_ols,0.365372100445427,baseline,Current controls only,Structural OLS (levels)
+2040,structural_ols,0.366226872477285,baseline,Current controls only,Structural OLS (levels)
+2041,structural_ols,0.367081644509141,baseline,Current controls only,Structural OLS (levels)
+2042,structural_ols,0.367936416541,baseline,Current controls only,Structural OLS (levels)
+2043,structural_ols,0.368791188572857,baseline,Current controls only,Structural OLS (levels)
+2044,structural_ols,0.369645960604714,baseline,Current controls only,Structural OLS (levels)
+2045,structural_ols,0.370500732636572,baseline,Current controls only,Structural OLS (levels)
+2046,structural_ols,0.37135550466843,baseline,Current controls only,Structural OLS (levels)
+2047,structural_ols,0.372210276700287,baseline,Current controls only,Structural OLS (levels)
+2048,structural_ols,0.373065048732144,baseline,Current controls only,Structural OLS (levels)
+2049,structural_ols,0.373919820764002,baseline,Current controls only,Structural OLS (levels)
+2050,structural_ols,0.37477459279586,baseline,Current controls only,Structural OLS (levels)
+2051,structural_ols,0.375629364827717,baseline,Current controls only,Structural OLS (levels)
+2052,structural_ols,0.376484136859574,baseline,Current controls only,Structural OLS (levels)
+2053,structural_ols,0.377338908891432,baseline,Current controls only,Structural OLS (levels)
+2054,structural_ols,0.37819368092329,baseline,Current controls only,Structural OLS (levels)
+2055,structural_ols,0.379048452955146,baseline,Current controls only,Structural OLS (levels)
+2056,structural_ols,0.379903224987005,baseline,Current controls only,Structural OLS (levels)
+2057,structural_ols,0.380757997018862,baseline,Current controls only,Structural OLS (levels)
+2058,structural_ols,0.381612769050719,baseline,Current controls only,Structural OLS (levels)
+2059,structural_ols,0.382467541082577,baseline,Current controls only,Structural OLS (levels)
+2060,structural_ols,0.383322313114434,baseline,Current controls only,Structural OLS (levels)
+2061,structural_ols,0.384177085146292,baseline,Current controls only,Structural OLS (levels)
+2062,structural_ols,0.385031857178149,baseline,Current controls only,Structural OLS (levels)
+2063,structural_ols,0.385886629210007,baseline,Current controls only,Structural OLS (levels)
+2064,structural_ols,0.386741401241864,baseline,Current controls only,Structural OLS (levels)
+2065,structural_ols,0.387596173273722,baseline,Current controls only,Structural OLS (levels)
+2066,structural_ols,0.388450945305579,baseline,Current controls only,Structural OLS (levels)
+2026,arimax_level,0.384513149345993,baseline,Current controls only,ARIMAX (levels)
+2027,arimax_level,0.382460671596482,baseline,Current controls only,ARIMAX (levels)
+2028,arimax_level,0.379348638770943,baseline,Current controls only,ARIMAX (levels)
+2029,arimax_level,0.376040781622353,baseline,Current controls only,ARIMAX (levels)
+2030,arimax_level,0.373776918549495,baseline,Current controls only,ARIMAX (levels)
+2031,arimax_level,0.372318681376099,baseline,Current controls only,ARIMAX (levels)
+2032,arimax_level,0.371875556464432,baseline,Current controls only,ARIMAX (levels)
+2033,arimax_level,0.37269222927377,baseline,Current controls only,ARIMAX (levels)
+2034,arimax_level,0.374125259603164,baseline,Current controls only,ARIMAX (levels)
+2035,arimax_level,0.375837465890105,baseline,Current controls only,ARIMAX (levels)
+2036,arimax_level,0.378092035019386,baseline,Current controls only,ARIMAX (levels)
+2037,arimax_level,0.379347549432478,baseline,Current controls only,ARIMAX (levels)
+2038,arimax_level,0.380579918203815,baseline,Current controls only,ARIMAX (levels)
+2039,arimax_level,0.381784286890534,baseline,Current controls only,ARIMAX (levels)
+2040,arimax_level,0.382964311046398,baseline,Current controls only,ARIMAX (levels)
+2041,arimax_level,0.384126512503717,baseline,Current controls only,ARIMAX (levels)
+2042,arimax_level,0.385277298402894,baseline,Current controls only,ARIMAX (levels)
+2043,arimax_level,0.386421719157751,baseline,Current controls only,ARIMAX (levels)
+2044,arimax_level,0.387563218180594,baseline,Current controls only,ARIMAX (levels)
+2045,arimax_level,0.388703853712842,baseline,Current controls only,ARIMAX (levels)
+2046,arimax_level,0.389844675781364,baseline,Current controls only,ARIMAX (levels)
+2047,arimax_level,0.390986092050231,baseline,Current controls only,ARIMAX (levels)
+2048,arimax_level,0.392128154268641,baseline,Current controls only,ARIMAX (levels)
+2049,arimax_level,0.393270752531877,baseline,Current controls only,ARIMAX (levels)
+2050,arimax_level,0.394413730749059,baseline,Current controls only,ARIMAX (levels)
+2051,arimax_level,0.395556945089326,baseline,Current controls only,ARIMAX (levels)
+2052,arimax_level,0.396700286289845,baseline,Current controls only,ARIMAX (levels)
+2053,arimax_level,0.397843682068605,baseline,Current controls only,ARIMAX (levels)
+2054,arimax_level,0.398987090598896,baseline,Current controls only,ARIMAX (levels)
+2055,arimax_level,0.400130491521628,baseline,Current controls only,ARIMAX (levels)
+2056,arimax_level,0.401273877747291,baseline,Current controls only,ARIMAX (levels)
+2057,arimax_level,0.402417249266774,baseline,Current controls only,ARIMAX (levels)
+2058,arimax_level,0.403560609078527,baseline,Current controls only,ARIMAX (levels)
+2059,arimax_level,0.40470396084559,baseline,Current controls only,ARIMAX (levels)
+2060,arimax_level,0.405847307765306,baseline,Current controls only,ARIMAX (levels)
+2061,arimax_level,0.406990652184582,baseline,Current controls only,ARIMAX (levels)
+2062,arimax_level,0.408133995610172,baseline,Current controls only,ARIMAX (levels)
+2063,arimax_level,0.409277338884571,baseline,Current controls only,ARIMAX (levels)
+2064,arimax_level,0.410420682396293,baseline,Current controls only,ARIMAX (levels)
+2065,arimax_level,0.411564026261816,baseline,Current controls only,ARIMAX (levels)
+2066,arimax_level,0.412707370458353,baseline,Current controls only,ARIMAX (levels)
+2026,arimax_diff,0.383958957376838,baseline,Current controls only,ARIMAX (differences)
+2027,arimax_diff,0.383397489035652,baseline,Current controls only,ARIMAX (differences)
+2028,arimax_diff,0.382223771414356,baseline,Current controls only,ARIMAX (differences)
+2029,arimax_diff,0.380120079953474,baseline,Current controls only,ARIMAX (differences)
+2030,arimax_diff,0.378021513195528,baseline,Current controls only,ARIMAX (differences)
+2031,arimax_diff,0.376065086204404,baseline,Current controls only,ARIMAX (differences)
+2032,arimax_diff,0.373917330275811,baseline,Current controls only,ARIMAX (differences)
+2033,arimax_diff,0.373252024560722,baseline,Current controls only,ARIMAX (differences)
+2034,arimax_diff,0.372393009035451,baseline,Current controls only,ARIMAX (differences)
+2035,arimax_diff,0.371422112962326,baseline,Current controls only,ARIMAX (differences)
+2036,arimax_diff,0.370171768996997,baseline,Current controls only,ARIMAX (differences)
+2037,arimax_diff,0.369548683601239,baseline,Current controls only,ARIMAX (differences)
+2038,arimax_diff,0.368925598205482,baseline,Current controls only,ARIMAX (differences)
+2039,arimax_diff,0.368302512809724,baseline,Current controls only,ARIMAX (differences)
+2040,arimax_diff,0.367679427413966,baseline,Current controls only,ARIMAX (differences)
+2041,arimax_diff,0.367056342018209,baseline,Current controls only,ARIMAX (differences)
+2042,arimax_diff,0.366433256622451,baseline,Current controls only,ARIMAX (differences)
+2043,arimax_diff,0.365810171226693,baseline,Current controls only,ARIMAX (differences)
+2044,arimax_diff,0.365187085830936,baseline,Current controls only,ARIMAX (differences)
+2045,arimax_diff,0.364564000435178,baseline,Current controls only,ARIMAX (differences)
+2046,arimax_diff,0.36394091503942,baseline,Current controls only,ARIMAX (differences)
+2047,arimax_diff,0.363317829643663,baseline,Current controls only,ARIMAX (differences)
+2048,arimax_diff,0.362694744247905,baseline,Current controls only,ARIMAX (differences)
+2049,arimax_diff,0.362071658852147,baseline,Current controls only,ARIMAX (differences)
+2050,arimax_diff,0.361448573456389,baseline,Current controls only,ARIMAX (differences)
+2051,arimax_diff,0.360825488060632,baseline,Current controls only,ARIMAX (differences)
+2052,arimax_diff,0.360202402664874,baseline,Current controls only,ARIMAX (differences)
+2053,arimax_diff,0.359579317269117,baseline,Current controls only,ARIMAX (differences)
+2054,arimax_diff,0.358956231873359,baseline,Current controls only,ARIMAX (differences)
+2055,arimax_diff,0.358333146477602,baseline,Current controls only,ARIMAX (differences)
+2056,arimax_diff,0.357710061081843,baseline,Current controls only,ARIMAX (differences)
+2057,arimax_diff,0.357086975686086,baseline,Current controls only,ARIMAX (differences)
+2058,arimax_diff,0.356463890290328,baseline,Current controls only,ARIMAX (differences)
+2059,arimax_diff,0.355840804894571,baseline,Current controls only,ARIMAX (differences)
+2060,arimax_diff,0.355217719498813,baseline,Current controls only,ARIMAX (differences)
+2061,arimax_diff,0.354594634103056,baseline,Current controls only,ARIMAX (differences)
+2062,arimax_diff,0.353971548707298,baseline,Current controls only,ARIMAX (differences)
+2063,arimax_diff,0.35334846331154,baseline,Current controls only,ARIMAX (differences)
+2064,arimax_diff,0.352725377915782,baseline,Current controls only,ARIMAX (differences)
+2065,arimax_diff,0.352102292520024,baseline,Current controls only,ARIMAX (differences)
+2066,arimax_diff,0.351479207124267,baseline,Current controls only,ARIMAX (differences)
+2026,dynamic_diff,0.384493138506395,baseline,Current controls only,Dynamic differences
+2027,dynamic_diff,0.384839681847426,baseline,Current controls only,Dynamic differences
+2028,dynamic_diff,0.384622062147951,baseline,Current controls only,Dynamic differences
+2029,dynamic_diff,0.383519591092793,baseline,Current controls only,Dynamic differences
+2030,dynamic_diff,0.382490888309153,baseline,Current controls only,Dynamic differences
+2031,dynamic_diff,0.381614852485625,baseline,Current controls only,Dynamic differences
+2032,dynamic_diff,0.38053743619496,baseline,Current controls only,Dynamic differences
+2033,dynamic_diff,0.381453235928829,baseline,Current controls only,Dynamic differences
+2034,dynamic_diff,0.380535160081674,baseline,Current controls only,Dynamic differences
+2035,dynamic_diff,0.379498971105815,baseline,Current controls only,Dynamic differences
+2036,dynamic_diff,0.378164262685784,baseline,Current controls only,Dynamic differences
+2037,dynamic_diff,0.377497615117676,baseline,Current controls only,Dynamic differences
+2038,dynamic_diff,0.376830967549569,baseline,Current controls only,Dynamic differences
+2039,dynamic_diff,0.376164319981461,baseline,Current controls only,Dynamic differences
+2040,dynamic_diff,0.375497672413353,baseline,Current controls only,Dynamic differences
+2041,dynamic_diff,0.374831024845246,baseline,Current controls only,Dynamic differences
+2042,dynamic_diff,0.374164377277137,baseline,Current controls only,Dynamic differences
+2043,dynamic_diff,0.373497729709029,baseline,Current controls only,Dynamic differences
+2044,dynamic_diff,0.372831082140922,baseline,Current controls only,Dynamic differences
+2045,dynamic_diff,0.372164434572814,baseline,Current controls only,Dynamic differences
+2046,dynamic_diff,0.371497787004706,baseline,Current controls only,Dynamic differences
+2047,dynamic_diff,0.370831139436598,baseline,Current controls only,Dynamic differences
+2048,dynamic_diff,0.37016449186849,baseline,Current controls only,Dynamic differences
+2049,dynamic_diff,0.369497844300382,baseline,Current controls only,Dynamic differences
+2050,dynamic_diff,0.368831196732274,baseline,Current controls only,Dynamic differences
+2051,dynamic_diff,0.368164549164166,baseline,Current controls only,Dynamic differences
+2052,dynamic_diff,0.367497901596059,baseline,Current controls only,Dynamic differences
+2053,dynamic_diff,0.366831254027951,baseline,Current controls only,Dynamic differences
+2054,dynamic_diff,0.366164606459843,baseline,Current controls only,Dynamic differences
+2055,dynamic_diff,0.365497958891735,baseline,Current controls only,Dynamic differences
+2056,dynamic_diff,0.364831311323627,baseline,Current controls only,Dynamic differences
+2057,dynamic_diff,0.364164663755519,baseline,Current controls only,Dynamic differences
+2058,dynamic_diff,0.363498016187411,baseline,Current controls only,Dynamic differences
+2059,dynamic_diff,0.362831368619303,baseline,Current controls only,Dynamic differences
+2060,dynamic_diff,0.362164721051196,baseline,Current controls only,Dynamic differences
+2061,dynamic_diff,0.361498073483088,baseline,Current controls only,Dynamic differences
+2062,dynamic_diff,0.36083142591498,baseline,Current controls only,Dynamic differences
+2063,dynamic_diff,0.360164778346872,baseline,Current controls only,Dynamic differences
+2064,dynamic_diff,0.359498130778764,baseline,Current controls only,Dynamic differences
+2065,dynamic_diff,0.358831483210656,baseline,Current controls only,Dynamic differences
+2066,dynamic_diff,0.358164835642549,baseline,Current controls only,Dynamic differences
+2026,hybrid,0.385742889150585,baseline,Current controls only,Hybrid structural/macro
+2027,hybrid,0.387620964279646,baseline,Current controls only,Hybrid structural/macro
+2028,hybrid,0.388905020508718,baseline,Current controls only,Hybrid structural/macro
+2029,hybrid,0.389317601615282,baseline,Current controls only,Hybrid structural/macro
+2030,hybrid,0.389783922421037,baseline,Current controls only,Hybrid structural/macro
+2031,hybrid,0.390122796410312,baseline,Current controls only,Hybrid structural/macro
+2032,hybrid,0.39071428466862,baseline,Current controls only,Hybrid structural/macro
+2033,hybrid,0.390170275499726,baseline,Current controls only,Hybrid structural/macro
+2034,hybrid,0.391030248947277,baseline,Current controls only,Hybrid structural/macro
+2035,hybrid,0.392030954879923,baseline,Current controls only,Hybrid structural/macro
+2036,hybrid,0.393314204640305,baseline,Current controls only,Hybrid structural/macro
+2037,hybrid,0.393923757610057,baseline,Current controls only,Hybrid structural/macro
+2038,hybrid,0.394533310579808,baseline,Current controls only,Hybrid structural/macro
+2039,hybrid,0.395142863549559,baseline,Current controls only,Hybrid structural/macro
+2040,hybrid,0.395752416519311,baseline,Current controls only,Hybrid structural/macro
+2041,hybrid,0.396361969489062,baseline,Current controls only,Hybrid structural/macro
+2042,hybrid,0.396971522458814,baseline,Current controls only,Hybrid structural/macro
+2043,hybrid,0.397581075428565,baseline,Current controls only,Hybrid structural/macro
+2044,hybrid,0.398190628398316,baseline,Current controls only,Hybrid structural/macro
+2045,hybrid,0.398800181368068,baseline,Current controls only,Hybrid structural/macro
+2046,hybrid,0.399409734337819,baseline,Current controls only,Hybrid structural/macro
+2047,hybrid,0.40001928730757,baseline,Current controls only,Hybrid structural/macro
+2048,hybrid,0.400628840277321,baseline,Current controls only,Hybrid structural/macro
+2049,hybrid,0.401238393247073,baseline,Current controls only,Hybrid structural/macro
+2050,hybrid,0.401847946216825,baseline,Current controls only,Hybrid structural/macro
+2051,hybrid,0.402457499186576,baseline,Current controls only,Hybrid structural/macro
+2052,hybrid,0.403067052156327,baseline,Current controls only,Hybrid structural/macro
+2053,hybrid,0.403676605126078,baseline,Current controls only,Hybrid structural/macro
+2054,hybrid,0.40428615809583,baseline,Current controls only,Hybrid structural/macro
+2055,hybrid,0.404895711065581,baseline,Current controls only,Hybrid structural/macro
+2056,hybrid,0.405505264035333,baseline,Current controls only,Hybrid structural/macro
+2057,hybrid,0.406114817005084,baseline,Current controls only,Hybrid structural/macro
+2058,hybrid,0.406724369974835,baseline,Current controls only,Hybrid structural/macro
+2059,hybrid,0.407333922944587,baseline,Current controls only,Hybrid structural/macro
+2060,hybrid,0.407943475914338,baseline,Current controls only,Hybrid structural/macro
+2061,hybrid,0.408553028884089,baseline,Current controls only,Hybrid structural/macro
+2062,hybrid,0.409162581853841,baseline,Current controls only,Hybrid structural/macro
+2063,hybrid,0.409772134823592,baseline,Current controls only,Hybrid structural/macro
+2064,hybrid,0.410381687793344,baseline,Current controls only,Hybrid structural/macro
+2065,hybrid,0.410991240763095,baseline,Current controls only,Hybrid structural/macro
+2066,hybrid,0.411600793732846,baseline,Current controls only,Hybrid structural/macro
+2026,ardl_ecm,0.384362726866342,baseline,Current controls only,ARDL error-correction model
+2027,ardl_ecm,0.383378540730945,baseline,Current controls only,ARDL error-correction model
+2028,ardl_ecm,0.38228118867866,baseline,Current controls only,ARDL error-correction model
+2029,ardl_ecm,0.381101891616185,baseline,Current controls only,ARDL error-correction model
+2030,ardl_ecm,0.380458550653319,baseline,Current controls only,ARDL error-correction model
+2031,ardl_ecm,0.3803225330034,baseline,Current controls only,ARDL error-correction model
+2032,ardl_ecm,0.380470383282279,baseline,Current controls only,ARDL error-correction model
+2033,ardl_ecm,0.382002877907887,baseline,Current controls only,ARDL error-correction model
+2034,ardl_ecm,0.383337455732552,baseline,Current controls only,ARDL error-correction model
+2035,ardl_ecm,0.384901041915699,baseline,Current controls only,ARDL error-correction model
+2036,ardl_ecm,0.386786572225133,baseline,Current controls only,ARDL error-correction model
+2037,ardl_ecm,0.389122464276628,baseline,Current controls only,ARDL error-correction model
+2038,ardl_ecm,0.391403787888672,baseline,Current controls only,ARDL error-correction model
+2039,ardl_ecm,0.393555384032557,baseline,Current controls only,ARDL error-correction model
+2040,ardl_ecm,0.395595024874404,baseline,Current controls only,ARDL error-correction model
+2041,ardl_ecm,0.397552474803086,baseline,Current controls only,ARDL error-correction model
+2042,ardl_ecm,0.399452503651692,baseline,Current controls only,ARDL error-correction model
+2043,ardl_ecm,0.401313110455974,baseline,Current controls only,ARDL error-correction model
+2044,ardl_ecm,0.403146825777534,baseline,Current controls only,ARDL error-correction model
+2045,ardl_ecm,0.404962241362494,baseline,Current controls only,ARDL error-correction model
+2046,ardl_ecm,0.406765215209359,baseline,Current controls only,ARDL error-correction model
+2047,ardl_ecm,0.408559732986607,baseline,Current controls only,ARDL error-correction model
+2048,ardl_ecm,0.410348504311093,baseline,Current controls only,ARDL error-correction model
+2049,ardl_ecm,0.412133370735861,baseline,Current controls only,ARDL error-correction model
+2050,ardl_ecm,0.413915583704592,baseline,Current controls only,ARDL error-correction model
+2051,ardl_ecm,0.415695993610454,baseline,Current controls only,ARDL error-correction model
+2052,ardl_ecm,0.417475178311498,baseline,Current controls only,ARDL error-correction model
+2053,ardl_ecm,0.419253530470667,baseline,Current controls only,ARDL error-correction model
+2054,ardl_ecm,0.421031316907515,baseline,Current controls only,ARDL error-correction model
+2055,ardl_ecm,0.422808718929228,baseline,Current controls only,ARDL error-correction model
+2056,ardl_ecm,0.424585859736236,baseline,Current controls only,ARDL error-correction model
+2057,ardl_ecm,0.426362823044717,baseline,Current controls only,ARDL error-correction model
+2058,ardl_ecm,0.42813966574082,baseline,Current controls only,ARDL error-correction model
+2059,ardl_ecm,0.429916426479365,baseline,Current controls only,ARDL error-correction model
+2060,ardl_ecm,0.431693131526765,baseline,Current controls only,ARDL error-correction model
+2061,ardl_ecm,0.433469798731366,baseline,Current controls only,ARDL error-correction model
+2062,ardl_ecm,0.435246440221329,baseline,Current controls only,ARDL error-correction model
+2063,ardl_ecm,0.437023064237889,baseline,Current controls only,ARDL error-correction model
+2064,ardl_ecm,0.438799676381061,baseline,Current controls only,ARDL error-correction model
+2065,ardl_ecm,0.440576280456124,baseline,Current controls only,ARDL error-correction model
+2066,ardl_ecm,0.44235287904881,baseline,Current controls only,ARDL error-correction model
+2026,univariate_arima,0.38098176677941,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2027,univariate_arima,0.372528059768225,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2028,univariate_arima,0.364313974553336,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2029,univariate_arima,0.359838496652305,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2030,univariate_arima,0.35740001422625,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2031,univariate_arima,0.356071397110119,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2032,univariate_arima,0.355347494644218,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2033,univariate_arima,0.354953073427018,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2034,univariate_arima,0.354738171414792,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2035,univariate_arima,0.354621081175107,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2036,univariate_arima,0.354557284079456,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2037,univariate_arima,0.354522523971146,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2038,univariate_arima,0.354503584784066,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2039,univariate_arima,0.354493265690579,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2040,univariate_arima,0.354487643290318,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2041,univariate_arima,0.354484579902556,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2042,univariate_arima,0.354482910803214,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2043,univariate_arima,0.354482001387616,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2044,univariate_arima,0.35448150588881,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2045,univariate_arima,0.354481235914261,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2046,univariate_arima,0.354481088817524,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2047,univariate_arima,0.354481008671266,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2048,univariate_arima,0.35448096500325,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2049,univariate_arima,0.354480941210552,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2050,univariate_arima,0.354480928247004,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2051,univariate_arima,0.354480921183762,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2052,univariate_arima,0.354480917335325,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2053,univariate_arima,0.354480915238489,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2054,univariate_arima,0.354480914096019,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2055,univariate_arima,0.35448091347354,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2056,univariate_arima,0.354480913134379,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2057,univariate_arima,0.354480912949587,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2058,univariate_arima,0.354480912848901,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2059,univariate_arima,0.354480912794043,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2060,univariate_arima,0.354480912764153,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2061,univariate_arima,0.354480912747867,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2062,univariate_arima,0.354480912738994,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2063,univariate_arima,0.354480912734159,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2064,univariate_arima,0.354480912731525,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2065,univariate_arima,0.354480912730089,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2066,univariate_arima,0.354480912729307,baseline,Current controls only,ARIMAX benchmark with real GDP per capita and COVID controls
+2026,structural_ols,0.372693700216642,population_only,Add population,Structural OLS (levels)
+2027,structural_ols,0.377195927925076,population_only,Add population,Structural OLS (levels)
+2028,structural_ols,0.379807115376332,population_only,Add population,Structural OLS (levels)
+2029,structural_ols,0.379011464114608,population_only,Add population,Structural OLS (levels)
+2030,structural_ols,0.374582496334149,population_only,Add population,Structural OLS (levels)
+2031,structural_ols,0.367844328154963,population_only,Add population,Structural OLS (levels)
+2032,structural_ols,0.359021281641668,population_only,Add population,Structural OLS (levels)
+2033,structural_ols,0.356319870082716,population_only,Add population,Structural OLS (levels)
+2034,structural_ols,0.354527579136859,population_only,Add population,Structural OLS (levels)
+2035,structural_ols,0.352136021168903,population_only,Add population,Structural OLS (levels)
+2036,structural_ols,0.352373292669585,population_only,Add population,Structural OLS (levels)
+2037,structural_ols,0.35062576684529,population_only,Add population,Structural OLS (levels)
+2038,structural_ols,0.348963410391381,population_only,Add population,Structural OLS (levels)
+2039,structural_ols,0.347384545805278,population_only,Add population,Structural OLS (levels)
+2040,structural_ols,0.345887544661617,population_only,Add population,Structural OLS (levels)
+2041,structural_ols,0.344470825716758,population_only,Add population,Structural OLS (levels)
+2042,structural_ols,0.343132853103159,population_only,Add population,Structural OLS (levels)
+2043,structural_ols,0.341872134609607,population_only,Add population,Structural OLS (levels)
+2044,structural_ols,0.340687220042396,population_only,Add population,Structural OLS (levels)
+2045,structural_ols,0.339576699662404,population_only,Add population,Structural OLS (levels)
+2046,structural_ols,0.338539202694067,population_only,Add population,Structural OLS (levels)
+2047,structural_ols,0.337573395903059,population_only,Add population,Structural OLS (levels)
+2048,structural_ols,0.336677982237271,population_only,Add population,Structural OLS (levels)
+2049,structural_ols,0.335851699529641,population_only,Add population,Structural OLS (levels)
+2050,structural_ols,0.335093319258329,population_only,Add population,Structural OLS (levels)
+2051,structural_ols,0.334401645360966,population_only,Add population,Structural OLS (levels)
+2052,structural_ols,0.333775513101715,population_only,Add population,Structural OLS (levels)
+2053,structural_ols,0.333213787986299,population_only,Add population,Structural OLS (levels)
+2054,structural_ols,0.332715364724146,population_only,Add population,Structural OLS (levels)
+2055,structural_ols,0.332279166234665,population_only,Add population,Structural OLS (levels)
+2056,structural_ols,0.331904142695491,population_only,Add population,Structural OLS (levels)
+2057,structural_ols,0.331589270629957,population_only,Add population,Structural OLS (levels)
+2058,structural_ols,0.331333552033211,population_only,Add population,Structural OLS (levels)
+2059,structural_ols,0.33113601353382,population_only,Add population,Structural OLS (levels)
+2060,structural_ols,0.330995705589784,population_only,Add population,Structural OLS (levels)
+2061,structural_ols,0.330911701716751,population_only,Add population,Structural OLS (levels)
+2062,structural_ols,0.330883097747753,population_only,Add population,Structural OLS (levels)
+2063,structural_ols,0.330909011121859,population_only,Add population,Structural OLS (levels)
+2064,structural_ols,0.330988580201488,population_only,Add population,Structural OLS (levels)
+2065,structural_ols,0.33112096361592,population_only,Add population,Structural OLS (levels)
+2066,structural_ols,0.331305339630951,population_only,Add population,Structural OLS (levels)
+2026,arimax_level,0.381396188243403,population_only,Add population,ARIMAX (levels)
+2027,arimax_level,0.378037450074444,population_only,Add population,ARIMAX (levels)
+2028,arimax_level,0.379058425349994,population_only,Add population,ARIMAX (levels)
+2029,arimax_level,0.379232843675451,population_only,Add population,ARIMAX (levels)
+2030,arimax_level,0.376126271662228,population_only,Add population,ARIMAX (levels)
+2031,arimax_level,0.3709379077871,population_only,Add population,ARIMAX (levels)
+2032,arimax_level,0.363861709995236,population_only,Add population,ARIMAX (levels)
+2033,arimax_level,0.361581342205724,population_only,Add population,ARIMAX (levels)
+2034,arimax_level,0.360114028197707,population_only,Add population,ARIMAX (levels)
+2035,arimax_level,0.358099619698036,population_only,Add population,ARIMAX (levels)
+2036,arimax_level,0.35844971798317,population_only,Add population,ARIMAX (levels)
+2037,arimax_level,0.357004860279199,population_only,Add population,ARIMAX (levels)
+2038,arimax_level,0.355635441679905,population_only,Add population,ARIMAX (levels)
+2039,arimax_level,0.354339976330788,population_only,Add population,ARIMAX (levels)
+2040,arimax_level,0.353117021847677,population_only,Add population,ARIMAX (levels)
+2041,arimax_level,0.351965177637801,population_only,Add population,ARIMAX (levels)
+2042,arimax_level,0.350883083300445,population_only,Add population,ARIMAX (levels)
+2043,arimax_level,0.349869417103664,population_only,Add population,ARIMAX (levels)
+2044,arimax_level,0.348922894532677,population_only,Add population,ARIMAX (levels)
+2045,arimax_level,0.348042266905514,population_only,Add population,ARIMAX (levels)
+2046,arimax_level,0.347226320052334,population_only,Add population,ARIMAX (levels)
+2047,arimax_level,0.346473873055588,population_only,Add population,ARIMAX (levels)
+2048,arimax_level,0.345783777046268,population_only,Add population,ARIMAX (levels)
+2049,arimax_level,0.345154914054945,population_only,Add population,ARIMAX (levels)
+2050,arimax_level,0.344586195913555,population_only,Add population,ARIMAX (levels)
+2051,arimax_level,0.344076563205171,population_only,Add population,ARIMAX (levels)
+2052,arimax_level,0.343624984260428,population_only,Add population,ARIMAX (levels)
+2053,arimax_level,0.343230454196569,population_only,Add population,ARIMAX (levels)
+2054,arimax_level,0.342891993998123,population_only,Add population,ARIMAX (levels)
+2055,arimax_level,0.342608649636722,population_only,Add population,ARIMAX (levels)
+2056,arimax_level,0.342379491228073,population_only,Add population,ARIMAX (levels)
+2057,arimax_level,0.342203612223702,population_only,Add population,ARIMAX (levels)
+2058,arimax_level,0.342080128636885,population_only,Add population,ARIMAX (levels)
+2059,arimax_level,0.342008178300045,population_only,Add population,ARIMAX (levels)
+2060,arimax_level,0.34198692015263,population_only,Add population,ARIMAX (levels)
+2061,arimax_level,0.342015533557472,population_only,Add population,ARIMAX (levels)
+2062,arimax_level,0.342093217645131,population_only,Add population,ARIMAX (levels)
+2063,arimax_level,0.342219190683789,population_only,Add population,ARIMAX (levels)
+2064,arimax_level,0.342392689474575,population_only,Add population,ARIMAX (levels)
+2065,arimax_level,0.342612968770062,population_only,Add population,ARIMAX (levels)
+2066,arimax_level,0.342879300715952,population_only,Add population,ARIMAX (levels)
+2026,arimax_diff,0.385708797733911,population_only,Add population,ARIMAX (differences)
+2027,arimax_diff,0.386822507450925,population_only,Add population,ARIMAX (differences)
+2028,arimax_diff,0.387069803710494,population_only,Add population,ARIMAX (differences)
+2029,arimax_diff,0.38587824671828,population_only,Add population,ARIMAX (differences)
+2030,arimax_diff,0.383888972595408,population_only,Add population,ARIMAX (differences)
+2031,arimax_diff,0.381557195927166,population_only,Add population,ARIMAX (differences)
+2032,arimax_diff,0.378537463333259,population_only,Add population,ARIMAX (differences)
+2033,arimax_diff,0.377227013202511,population_only,Add population,ARIMAX (differences)
+2034,arimax_diff,0.375886931656952,population_only,Add population,ARIMAX (differences)
+2035,arimax_diff,0.374280431339648,population_only,Add population,ARIMAX (differences)
+2036,arimax_diff,0.37292344916095,population_only,Add population,ARIMAX (differences)
+2037,arimax_diff,0.371862501984489,population_only,Add population,ARIMAX (differences)
+2038,arimax_diff,0.37081976629125,population_only,Add population,ARIMAX (differences)
+2039,arimax_diff,0.369794883386435,population_only,Add population,ARIMAX (differences)
+2040,arimax_diff,0.368787505069263,population_only,Add population,ARIMAX (differences)
+2041,arimax_diff,0.367797293227668,population_only,Add population,ARIMAX (differences)
+2042,arimax_diff,0.366823919452196,population_only,Add population,ARIMAX (differences)
+2043,arimax_diff,0.365867064668292,population_only,Add population,ARIMAX (differences)
+2044,arimax_diff,0.364926418785857,population_only,Add population,ARIMAX (differences)
+2045,arimax_diff,0.36400168036506,population_only,Add population,ARIMAX (differences)
+2046,arimax_diff,0.363092556297524,population_only,Add population,ARIMAX (differences)
+2047,arimax_diff,0.362198761502186,population_only,Add population,ARIMAX (differences)
+2048,arimax_diff,0.361320018634707,population_only,Add population,ARIMAX (differences)
+2049,arimax_diff,0.360456057810102,population_only,Add population,ARIMAX (differences)
+2050,arimax_diff,0.359606616337631,population_only,Add population,ARIMAX (differences)
+2051,arimax_diff,0.358771438467257,population_only,Add population,ARIMAX (differences)
+2052,arimax_diff,0.357950275147388,population_only,Add population,ARIMAX (differences)
+2053,arimax_diff,0.357142883792886,population_only,Add population,ARIMAX (differences)
+2054,arimax_diff,0.356349028063145,population_only,Add population,ARIMAX (differences)
+2055,arimax_diff,0.355568477649603,population_only,Add population,ARIMAX (differences)
+2056,arimax_diff,0.354801008072234,population_only,Add population,ARIMAX (differences)
+2057,arimax_diff,0.354046400484429,population_only,Add population,ARIMAX (differences)
+2058,arimax_diff,0.353304441486128,population_only,Add population,ARIMAX (differences)
+2059,arimax_diff,0.352574922944555,population_only,Add population,ARIMAX (differences)
+2060,arimax_diff,0.351857641822301,population_only,Add population,ARIMAX (differences)
+2061,arimax_diff,0.3511524000123,population_only,Add population,ARIMAX (differences)
+2062,arimax_diff,0.350459004179534,population_only,Add population,ARIMAX (differences)
+2063,arimax_diff,0.349777265608935,population_only,Add population,ARIMAX (differences)
+2064,arimax_diff,0.349107000059406,population_only,Add population,ARIMAX (differences)
+2065,arimax_diff,0.348448027623443,population_only,Add population,ARIMAX (differences)
+2066,arimax_diff,0.347800172592355,population_only,Add population,ARIMAX (differences)
+2026,dynamic_diff,0.385621787199291,population_only,Add population,Dynamic differences
+2027,dynamic_diff,0.386993099141536,population_only,Add population,Dynamic differences
+2028,dynamic_diff,0.387635893866275,population_only,Add population,Dynamic differences
+2029,dynamic_diff,0.387046341134298,population_only,Add population,Dynamic differences
+2030,dynamic_diff,0.386006294714203,population_only,Add population,Dynamic differences
+2031,dynamic_diff,0.384775741236204,population_only,Add population,Dynamic differences
+2032,dynamic_diff,0.383009889540528,population_only,Add population,Dynamic differences
+2033,dynamic_diff,0.383348669404393,population_only,Add population,Dynamic differences
+2034,dynamic_diff,0.382133534937159,population_only,Add population,Dynamic differences
+2035,dynamic_diff,0.380699292681797,population_only,Add population,Dynamic differences
+2036,dynamic_diff,0.379347760603084,population_only,Add population,Dynamic differences
+2037,dynamic_diff,0.378402816856636,population_only,Add population,Dynamic differences
+2038,dynamic_diff,0.377470564692442,population_only,Add population,Dynamic differences
+2039,dynamic_diff,0.376550754136106,population_only,Add population,Dynamic differences
+2040,dynamic_diff,0.375643142526512,population_only,Add population,Dynamic differences
+2041,dynamic_diff,0.374747494233367,population_only,Add population,Dynamic differences
+2042,dynamic_diff,0.373863580388132,population_only,Add population,Dynamic differences
+2043,dynamic_diff,0.372991178627754,population_only,Add population,Dynamic differences
+2044,dynamic_diff,0.372130072850453,population_only,Add population,Dynamic differences
+2045,dynamic_diff,0.371280052982815,population_only,Add population,Dynamic differences
+2046,dynamic_diff,0.370440914757619,population_only,Add population,Dynamic differences
+2047,dynamic_diff,0.36961245950188,population_only,Add population,Dynamic differences
+2048,dynamic_diff,0.368794493934332,population_only,Add population,Dynamic differences
+2049,dynamic_diff,0.367986829972136,population_only,Add population,Dynamic differences
+2050,dynamic_diff,0.367189284546121,population_only,Add population,Dynamic differences
+2051,dynamic_diff,0.366401679424093,population_only,Add population,Dynamic differences
+2052,dynamic_diff,0.365623841042002,population_only,Add population,Dynamic differences
+2053,dynamic_diff,0.36485560034227,population_only,Add population,Dynamic differences
+2054,dynamic_diff,0.364096792619135,population_only,Add population,Dynamic differences
+2055,dynamic_diff,0.363347257370565,population_only,Add population,Dynamic differences
+2056,dynamic_diff,0.362606838156434,population_only,Add population,Dynamic differences
+2057,dynamic_diff,0.361875382462547,population_only,Add population,Dynamic differences
+2058,dynamic_diff,0.361152741570405,population_only,Add population,Dynamic differences
+2059,dynamic_diff,0.360438770432281,population_only,Add population,Dynamic differences
+2060,dynamic_diff,0.359733327551411,population_only,Add population,Dynamic differences
+2061,dynamic_diff,0.359036274866983,population_only,Add population,Dynamic differences
+2062,dynamic_diff,0.358347477643829,population_only,Add population,Dynamic differences
+2063,dynamic_diff,0.357666804366421,population_only,Add population,Dynamic differences
+2064,dynamic_diff,0.356994126637143,population_only,Add population,Dynamic differences
+2065,dynamic_diff,0.356329319078459,population_only,Add population,Dynamic differences
+2066,dynamic_diff,0.355672259238987,population_only,Add population,Dynamic differences
+2026,hybrid,0.390089986282181,population_only,Add population,Hybrid structural/macro
+2027,hybrid,0.396163473570694,population_only,Add population,Hybrid structural/macro
+2028,hybrid,0.400986528755977,population_only,Add population,Hybrid structural/macro
+2029,hybrid,0.40351665374671,population_only,Add population,Hybrid structural/macro
+2030,hybrid,0.403875593542708,population_only,Add population,Hybrid structural/macro
+2031,hybrid,0.402663518669962,population_only,Add population,Hybrid structural/macro
+2032,hybrid,0.400245474575975,population_only,Add population,Hybrid structural/macro
+2033,hybrid,0.398759359702736,population_only,Add population,Hybrid structural/macro
+2034,hybrid,0.39849706515941,population_only,Add population,Hybrid structural/macro
+2035,hybrid,0.397920541927438,population_only,Add population,Hybrid structural/macro
+2036,hybrid,0.399206346910934,population_only,Add population,Hybrid structural/macro
+2037,hybrid,0.398772483066464,population_only,Add population,Hybrid structural/macro
+2038,hybrid,0.398390413149595,population_only,Add population,Hybrid structural/macro
+2039,hybrid,0.398059117023084,population_only,Add population,Hybrid structural/macro
+2040,hybrid,0.397777604394935,population_only,Add population,Hybrid structural/macro
+2041,hybrid,0.397544913665713,population_only,Add population,Hybrid structural/macro
+2042,hybrid,0.397360110830481,population_only,Add population,Hybrid structural/macro
+2043,hybrid,0.397222288432969,population_only,Add population,Hybrid structural/macro
+2044,hybrid,0.397130564568943,population_only,Add population,Hybrid structural/macro
+2045,hybrid,0.397084081935766,population_only,Add population,Hybrid structural/macro
+2046,hybrid,0.397082006925655,population_only,Add population,Hybrid structural/macro
+2047,hybrid,0.397123528760719,population_only,Add population,Hybrid structural/macro
+2048,hybrid,0.397207858666511,population_only,Add population,Hybrid structural/macro
+2049,hybrid,0.397334229083179,population_only,Add population,Hybrid structural/macro
+2050,hybrid,0.39750189291149,population_only,Add population,Hybrid structural/macro
+2051,hybrid,0.397710122791748,population_only,Add population,Hybrid structural/macro
+2052,hybrid,0.397958210414804,population_only,Add population,Hybrid structural/macro
+2053,hybrid,0.398245465862277,population_only,Add population,Hybrid structural/macro
+2054,hybrid,0.39857121697539,population_only,Add population,Hybrid structural/macro
+2055,hybrid,0.398934808750661,population_only,Add population,Hybrid structural/macro
+2056,hybrid,0.39933560276111,population_only,Add population,Hybrid structural/macro
+2057,hybrid,0.39977297660134,population_only,Add population,Hybrid structural/macro
+2058,hybrid,0.40024632335608,population_only,Add population,Hybrid structural/macro
+2059,hybrid,0.400755051090355,population_only,Add population,Hybrid structural/macro
+2060,hybrid,0.401298582360537,population_only,Add population,Hybrid structural/macro
+2061,hybrid,0.401876353745027,population_only,Add population,Hybrid structural/macro
+2062,hybrid,0.402487815394053,population_only,Add population,Hybrid structural/macro
+2063,hybrid,0.4031324305971,population_only,Add population,Hybrid structural/macro
+2064,hybrid,0.403809675367733,population_only,Add population,Hybrid structural/macro
+2065,hybrid,0.404519038044382,population_only,Add population,Hybrid structural/macro
+2066,hybrid,0.405260018906991,population_only,Add population,Hybrid structural/macro
+2026,ardl_ecm,0.379980486341148,population_only,Add population,ARDL error-correction model
+2027,ardl_ecm,0.374015817795681,population_only,Add population,ARDL error-correction model
+2028,ardl_ecm,0.369207392555578,population_only,Add population,ARDL error-correction model
+2029,ardl_ecm,0.36563182478465,population_only,Add population,ARDL error-correction model
+2030,ardl_ecm,0.36341998692836,population_only,Add population,ARDL error-correction model
+2031,ardl_ecm,0.362312488486537,population_only,Add population,ARDL error-correction model
+2032,ardl_ecm,0.361934433211278,population_only,Add population,ARDL error-correction model
+2033,ardl_ecm,0.363350831878711,population_only,Add population,ARDL error-correction model
+2034,ardl_ecm,0.36418935437292,population_only,Add population,ARDL error-correction model
+2035,ardl_ecm,0.365257699856821,population_only,Add population,ARDL error-correction model
+2036,ardl_ecm,0.366762739931294,population_only,Add population,ARDL error-correction model
+2037,ardl_ecm,0.367940226312575,population_only,Add population,ARDL error-correction model
+2038,ardl_ecm,0.369178616455685,population_only,Add population,ARDL error-correction model
+2039,ardl_ecm,0.370537950128924,population_only,Add population,ARDL error-correction model
+2040,ardl_ecm,0.371990677044944,population_only,Add population,ARDL error-correction model
+2041,ardl_ecm,0.373499339474494,population_only,Add population,ARDL error-correction model
+2042,ardl_ecm,0.375035977404653,population_only,Add population,ARDL error-correction model
+2043,ardl_ecm,0.376583286843545,population_only,Add population,ARDL error-correction model
+2044,ardl_ecm,0.378131579944163,population_only,Add population,ARDL error-correction model
+2045,ardl_ecm,0.379675797844267,population_only,Add population,ARDL error-correction model
+2046,ardl_ecm,0.381213454887958,population_only,Add population,ARDL error-correction model
+2047,ardl_ecm,0.382743412272966,population_only,Add population,ARDL error-correction model
+2048,ardl_ecm,0.38426520413707,population_only,Add population,ARDL error-correction model
+2049,ardl_ecm,0.385778687578489,population_only,Add population,ARDL error-correction model
+2050,ardl_ecm,0.387283868710261,population_only,Add population,ARDL error-correction model
+2051,ardl_ecm,0.388780819380797,population_only,Add population,ARDL error-correction model
+2052,ardl_ecm,0.39026963865544,population_only,Add population,ARDL error-correction model
+2053,ardl_ecm,0.391750435606478,population_only,Add population,ARDL error-correction model
+2054,ardl_ecm,0.393223321908061,population_only,Add population,ARDL error-correction model
+2055,ardl_ecm,0.394688408793711,population_only,Add population,ARDL error-correction model
+2056,ardl_ecm,0.39614580588615,population_only,Add population,ARDL error-correction model
+2057,ardl_ecm,0.397595620798472,population_only,Add population,ARDL error-correction model
+2058,ardl_ecm,0.399037959035772,population_only,Add population,ARDL error-correction model
+2059,ardl_ecm,0.400472924006053,population_only,Add population,ARDL error-correction model
+2060,ardl_ecm,0.40190061706562,population_only,Add population,ARDL error-correction model
+2061,ardl_ecm,0.403321137572619,population_only,Add population,ARDL error-correction model
+2062,ardl_ecm,0.404734582939537,population_only,Add population,ARDL error-correction model
+2063,ardl_ecm,0.406141048683602,population_only,Add population,ARDL error-correction model
+2064,ardl_ecm,0.407540628474239,population_only,Add population,ARDL error-correction model
+2065,ardl_ecm,0.408933414178784,population_only,Add population,ARDL error-correction model
+2066,ardl_ecm,0.410319495906041,population_only,Add population,ARDL error-correction model
+2026,univariate_arima,0.38324527421348,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2027,univariate_arima,0.377274824528826,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2028,univariate_arima,0.371206837296197,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2029,univariate_arima,0.367734556699371,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2030,univariate_arima,0.36579244180235,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2031,univariate_arima,0.364751881723021,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2032,univariate_arima,0.36424332931913,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2033,univariate_arima,0.364044350410859,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2034,univariate_arima,0.364025683317128,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2035,univariate_arima,0.364111891323993,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2036,univariate_arima,0.364258427224207,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2037,univariate_arima,0.364416086239475,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2038,univariate_arima,0.364593899524201,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2039,univariate_arima,0.364782767700285,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2040,univariate_arima,0.364977343541017,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2041,univariate_arima,0.365174490837177,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2042,univariate_arima,0.365372376089805,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2043,univariate_arima,0.365569933181965,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2044,univariate_arima,0.365766547878721,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2045,univariate_arima,0.365961871890294,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2046,univariate_arima,0.366155713297416,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2047,univariate_arima,0.366347971982904,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2048,univariate_arima,0.366538601588752,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2049,univariate_arima,0.366727587106417,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2050,univariate_arima,0.366914931680582,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2051,univariate_arima,0.367100648842725,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2052,univariate_arima,0.367284757944424,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2053,univariate_arima,0.367467281476134,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2054,univariate_arima,0.367648243496761,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2055,univariate_arima,0.367827668717528,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2056,univariate_arima,0.368005581971074,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2057,univariate_arima,0.368182007907248,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2058,univariate_arima,0.368356970822128,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2059,univariate_arima,0.368530494565247,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2060,univariate_arima,0.368702602492576,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2061,univariate_arima,0.368873317446195,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2062,univariate_arima,0.369042661749358,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2063,univariate_arima,0.369210657210398,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2064,univariate_arima,0.36937732513155,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2065,univariate_arima,0.369542686320428,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2066,univariate_arima,0.36970676110282,population_only,Add population,ARIMAX benchmark with real GDP per capita and COVID controls
+2026,structural_ols,0.380588645408285,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2027,structural_ols,0.387278744748712,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2028,structural_ols,0.397459210122963,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2029,structural_ols,0.400933581272076,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2030,structural_ols,0.399975015801166,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2031,structural_ols,0.401086429465903,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2032,structural_ols,0.400810709608419,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2033,structural_ols,0.40087988922174,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2034,structural_ols,0.400830496270915,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2035,structural_ols,0.400116621900576,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2036,structural_ols,0.399949661862159,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2037,structural_ols,0.399227669430576,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2038,structural_ols,0.398473290373161,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2039,structural_ols,0.397687162579449,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2040,structural_ols,0.396869905276733,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2041,structural_ols,0.396022119751004,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2042,structural_ols,0.395144390033454,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2043,structural_ols,0.394237283554412,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2044,structural_ols,0.393301351766597,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2045,structural_ols,0.392337130739432,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2046,structural_ols,0.391345141725937,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2047,structural_ols,0.390325891703747,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2048,structural_ols,0.389279873891709,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2049,structural_ols,0.388207568243245,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2050,structural_ols,0.387109441917875,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2051,structural_ols,0.385985949731911,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2052,structural_ols,0.384837534589508,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2053,structural_ols,0.383664627895065,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2054,structural_ols,0.382467649947918,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2055,structural_ols,0.381247010320254,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2056,structural_ols,0.380003108219075,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2057,structural_ols,0.378736332833031,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2058,structural_ols,0.377447063664869,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2059,structural_ols,0.376135670850187,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2060,structural_ols,0.374802515463207,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2061,structural_ols,0.373447949810159,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2062,structural_ols,0.372072317710879,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2063,structural_ols,0.370675954769209,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2064,structural_ols,0.369259188632714,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2065,structural_ols,0.367822339242182,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2066,structural_ols,0.366365719071473,real_gdp_per_capita_only,Add real GDP per capita,Structural OLS (levels)
+2026,arimax_level,0.384205963712431,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2027,arimax_level,0.388107057986445,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2028,arimax_level,0.39667385535395,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2029,arimax_level,0.399683697476532,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2030,arimax_level,0.398935801429098,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2031,arimax_level,0.400402356629762,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2032,arimax_level,0.400348694916178,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2033,arimax_level,0.400561619391689,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2034,arimax_level,0.400517788581224,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2035,arimax_level,0.399754113552837,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2036,arimax_level,0.399545111257163,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2037,arimax_level,0.398806228256807,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2038,arimax_level,0.398060919586241,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2039,arimax_level,0.397297734127416,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2040,arimax_level,0.396506199195247,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2041,arimax_level,0.395681034870762,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2042,arimax_level,0.394821698218815,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2043,arimax_level,0.393930137849797,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2044,arimax_level,0.393008756565602,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2045,arimax_level,0.392059342099436,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2046,arimax_level,0.391082871413139,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2047,arimax_level,0.390079771297768,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2048,arimax_level,0.389050260827972,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2049,arimax_level,0.387994581042678,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2050,arimax_level,0.386913077722346,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2051,arimax_level,0.385806186138798,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2052,arimax_level,0.384674380869737,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2053,arimax_level,0.38351813258725,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2054,arimax_level,0.382337886630866,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2055,arimax_level,0.381134060256218,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2056,arimax_level,0.379907049169564,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2057,arimax_level,0.378657235339637,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2058,arimax_level,0.377384992122608,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2059,arimax_level,0.376090686167657,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2060,arimax_level,0.374774677260609,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2061,arimax_level,0.373437317482687,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2062,arimax_level,0.372078950560763,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2063,arimax_level,0.370699911694525,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2064,arimax_level,0.369300527771597,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2065,arimax_level,0.367881117760963,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2066,arimax_level,0.366441993114524,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (levels)
+2026,arimax_diff,0.384538560843414,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2027,arimax_diff,0.387726432041575,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2028,arimax_diff,0.393333407920782,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2029,arimax_diff,0.393734355343237,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2030,arimax_diff,0.391089443784447,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2031,arimax_diff,0.390151676019528,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2032,arimax_diff,0.388305606735248,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2033,arimax_diff,0.387785399835125,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2034,arimax_diff,0.387107776434639,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2035,arimax_diff,0.385977668334774,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2036,arimax_diff,0.385057145753297,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2037,arimax_diff,0.38399463125649,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2038,arimax_diff,0.382908071988555,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2039,arimax_diff,0.381797941537195,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2040,arimax_diff,0.380664699634729,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2041,arimax_diff,0.379508792693331,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2042,arimax_diff,0.37833065431471,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2043,arimax_diff,0.377130705775615,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2044,arimax_diff,0.375909356490553,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2045,arimax_diff,0.374667004453021,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2046,arimax_diff,0.373404036656395,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2047,arimax_diff,0.372120829495586,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2048,arimax_diff,0.370817749150583,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2049,arimax_diff,0.369495151952741,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2050,arimax_diff,0.368153384734845,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2051,arimax_diff,0.366792785165729,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2052,arimax_diff,0.365413682070294,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2053,arimax_diff,0.364016395735688,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2054,arimax_diff,0.362601238204339,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2055,arimax_diff,0.361168513554528,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2056,arimax_diff,0.35971851816912,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2057,arimax_diff,0.358251540993068,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2058,arimax_diff,0.356767863780225,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2059,arimax_diff,0.355267761330005,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2060,arimax_diff,0.353751501714393,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2061,arimax_diff,0.352219346495757,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2062,arimax_diff,0.350671550935926,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2063,arimax_diff,0.349108364196934,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2064,arimax_diff,0.347530029533844,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2065,arimax_diff,0.345936784479984,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2066,arimax_diff,0.344328861025018,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX (differences)
+2026,dynamic_diff,0.385197618189747,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2027,dynamic_diff,0.38982231819039,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2028,dynamic_diff,0.39720807874693,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2029,dynamic_diff,0.398737361859362,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2030,dynamic_diff,0.396571902076647,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2031,dynamic_diff,0.396363367028751,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2032,dynamic_diff,0.395084333648099,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2033,dynamic_diff,0.39533191743723,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2034,dynamic_diff,0.394477809467146,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2035,dynamic_diff,0.393089303980777,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2036,dynamic_diff,0.391912765397161,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2037,dynamic_diff,0.390645647114642,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2038,dynamic_diff,0.389351099213947,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2039,dynamic_diff,0.388029661950996,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2040,dynamic_diff,0.38668185977586,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2041,dynamic_diff,0.385308201943355,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2042,dynamic_diff,0.383909183094469,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2043,dynamic_diff,0.382485283810208,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2044,dynamic_diff,0.381036971139461,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2045,dynamic_diff,0.37956469910234,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2046,dynamic_diff,0.378068909170317,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2047,dynamic_diff,0.376550030724427,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2048,dynamic_diff,0.3750084814928,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2049,dynamic_diff,0.373444667968513,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2050,dynamic_diff,0.371858985808934,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2051,dynamic_diff,0.370251820217446,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2052,dynamic_diff,0.368623546308516,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2053,dynamic_diff,0.366974529456974,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2054,dynamic_diff,0.3653051256323,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2055,dynamic_diff,0.36361568171869,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2056,dynamic_diff,0.361906535821622,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2057,dynamic_diff,0.360178017561607,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2058,dynamic_diff,0.358430448355745,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2059,dynamic_diff,0.356664141687702,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2060,dynamic_diff,0.354879403366675,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2061,dynamic_diff,0.353076531775872,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2062,dynamic_diff,0.351255818111014,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2063,dynamic_diff,0.349417546609345,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2064,dynamic_diff,0.347561994769596,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2065,dynamic_diff,0.345689433563301,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2066,dynamic_diff,0.343800127637931,real_gdp_per_capita_only,Add real GDP per capita,Dynamic differences
+2026,hybrid,0.387957553529365,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2027,hybrid,0.395298443375736,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2028,hybrid,0.405909523407134,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2029,hybrid,0.409676526515075,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2030,hybrid,0.40890827696888,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2031,hybrid,0.410129065166247,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2032,hybrid,0.409959295439488,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2033,hybrid,0.409209732992671,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2034,hybrid,0.409378234931855,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2035,hybrid,0.408886339932274,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2036,hybrid,0.409001453225831,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2037,hybrid,0.40846316316765,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2038,hybrid,0.407892922350262,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2039,hybrid,0.407291360078338,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2040,hybrid,0.406659087245469,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2041,hybrid,0.405996697045399,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2042,hybrid,0.405304765649299,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2043,hybrid,0.404583852850887,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2044,hybrid,0.403834502681307,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2045,hybrid,0.403057243995437,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2046,hybrid,0.402252591031153,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2047,hybrid,0.40142104394307,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2048,hybrid,0.400563089312182,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2049,hybrid,0.39967920063259,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2050,hybrid,0.398769838776673,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2051,hybrid,0.397835452439719,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2052,hybrid,0.39687647856518,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2053,hybrid,0.395893342751516,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2054,hybrid,0.394886459641577,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2055,hybrid,0.393856233295434,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2056,hybrid,0.392803057547469,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2057,hybrid,0.391727316348545,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2058,hybrid,0.390629384093971,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2059,hybrid,0.389509625937977,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2060,hybrid,0.388368398095365,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2061,hybrid,0.387206048130947,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2062,hybrid,0.386022915237353,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2063,hybrid,0.384819330501792,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2064,hybrid,0.383595617162273,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2065,hybrid,0.382352090853748,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2066,hybrid,0.38108905984473,real_gdp_per_capita_only,Add real GDP per capita,Hybrid structural/macro
+2026,ardl_ecm,0.377503125545867,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2027,ardl_ecm,0.375245310908448,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2028,ardl_ecm,0.380947204615168,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2029,ardl_ecm,0.380602195576928,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2030,ardl_ecm,0.37503903121974,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2031,ardl_ecm,0.373388944346589,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2032,ardl_ecm,0.373343718433612,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2033,ardl_ecm,0.373525747056164,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2034,ardl_ecm,0.374672381391702,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2035,ardl_ecm,0.376148167357549,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2036,ardl_ecm,0.37773931642744,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2037,ardl_ecm,0.379018713153996,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2038,ardl_ecm,0.380139681152752,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2039,ardl_ecm,0.381187894689072,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2040,ardl_ecm,0.382207454198007,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2041,ardl_ecm,0.383219099438228,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2042,ardl_ecm,0.384231473047609,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2043,ardl_ecm,0.385247483060718,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2044,ardl_ecm,0.386267615064518,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2045,ardl_ecm,0.387291512195778,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2046,ardl_ecm,0.388318648769504,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2047,ardl_ecm,0.389348568950884,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2048,ardl_ecm,0.390380938407181,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2049,ardl_ecm,0.391415528620499,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2050,ardl_ecm,0.392452185742647,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2051,ardl_ecm,0.39349080295612,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2052,ardl_ecm,0.394531300922373,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2053,ardl_ecm,0.395573615565616,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2054,ardl_ecm,0.396617691092144,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2055,ardl_ecm,0.397663476294904,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2056,ardl_ecm,0.39871092273702,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2057,ardl_ecm,0.399759983926376,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2058,ardl_ecm,0.400810614971041,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2059,ardl_ecm,0.401862772445498,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2060,ardl_ecm,0.402916414336335,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2061,ardl_ecm,0.403971500009817,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2062,ardl_ecm,0.405027990179816,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2063,ardl_ecm,0.406085846870485,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2064,ardl_ecm,0.407145033374058,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2065,ardl_ecm,0.408205514205745,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2066,ardl_ecm,0.409267255057683,real_gdp_per_capita_only,Add real GDP per capita,ARDL error-correction model
+2026,univariate_arima,0.37912207374024,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2027,univariate_arima,0.369074500917518,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2028,univariate_arima,0.359583897157306,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2029,univariate_arima,0.354237897466232,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2030,univariate_arima,0.351135851789714,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2031,univariate_arima,0.349504276255201,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2032,univariate_arima,0.348569752884534,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2033,univariate_arima,0.348006251494651,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2034,univariate_arima,0.347640020016354,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2035,univariate_arima,0.347378320981451,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2036,univariate_arima,0.34717123678636,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2037,univariate_arima,0.34697043056564,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2038,univariate_arima,0.346784449268188,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2039,univariate_arima,0.346605562963117,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2040,univariate_arima,0.346429633157541,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2041,univariate_arima,0.34625445150877,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2042,univariate_arima,0.346078846791848,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2043,univariate_arima,0.345902204853647,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2044,univariate_arima,0.345724210573406,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2045,univariate_arima,0.345544709165483,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2046,univariate_arima,0.345363631635609,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2047,univariate_arima,0.345180954723162,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2048,univariate_arima,0.344996679381299,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2049,univariate_arima,0.344810819221757,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2050,univariate_arima,0.344623394315777,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2051,univariate_arima,0.344434427873706,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2052,univariate_arima,0.344243944471589,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2053,univariate_arima,0.344051969108857,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2054,univariate_arima,0.343858526712329,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2055,univariate_arima,0.34366364187968,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2056,univariate_arima,0.343467338751229,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2057,univariate_arima,0.343269640950294,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2058,univariate_arima,0.343070571560042,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2059,univariate_arima,0.342870153119573,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2060,univariate_arima,0.342668407630022,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2061,univariate_arima,0.342465356565697,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2062,univariate_arima,0.342261020887628,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2063,univariate_arima,0.342055421058104,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2064,univariate_arima,0.341848577055463,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2065,univariate_arima,0.341640508388744,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2066,univariate_arima,0.34143123411201,real_gdp_per_capita_only,Add real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2026,structural_ols,0.383499328059794,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2027,structural_ols,0.391214833802665,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2028,structural_ols,0.401257489795553,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2029,structural_ols,0.404253157674447,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2030,structural_ols,0.401601630839054,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2031,structural_ols,0.399609206856977,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2032,structural_ols,0.395289522807465,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2033,structural_ols,0.39360385402262,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2034,structural_ols,0.392201790677577,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2035,structural_ols,0.389881489499365,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2036,structural_ols,0.389254721188268,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2037,structural_ols,0.387408131788875,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2038,structural_ols,0.385577915461146,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2039,structural_ols,0.383763749719803,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2040,structural_ols,0.381965321514165,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2041,structural_ols,0.380182326863915,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2042,structural_ols,0.378414470511866,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2043,structural_ols,0.37666146559336,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2044,structural_ols,0.374923033321246,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2045,structural_ols,0.373198902685441,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2046,structural_ols,0.371488810166215,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2047,structural_ols,0.369792499460895,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2048,structural_ols,0.368109721222451,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2049,structural_ols,0.366440232810215,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2050,structural_ols,0.364783798051582,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2051,structural_ols,0.363140187013901,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2052,structural_ols,0.361509175786861,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2053,structural_ols,0.359890546273788,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2054,structural_ols,0.358284085992149,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2055,structural_ols,0.356689587882546,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2056,structural_ols,0.355106850125793,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2057,structural_ols,0.353535675967362,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2058,structural_ols,0.351975873549489,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2059,structural_ols,0.350427255749963,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2060,structural_ols,0.348889640027614,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2061,structural_ols,0.347362848273846,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2062,structural_ols,0.345846706670431,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2063,structural_ols,0.34434104555267,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2064,structural_ols,0.342845699278251,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2065,structural_ols,0.341360506100928,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2066,structural_ols,0.339885308049473,population_and_real_gdp_per_capita,Add population and real GDP per capita,Structural OLS (levels)
+2026,arimax_level,0.384474285820933,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2027,arimax_level,0.389184717462626,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2028,arimax_level,0.39829474963176,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2029,arimax_level,0.401724565247272,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2030,arimax_level,0.400728926174672,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2031,arimax_level,0.401719781960556,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2032,arimax_level,0.401306051671909,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2033,arimax_level,0.401387477362352,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2034,arimax_level,0.401368869456175,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2035,arimax_level,0.400684187033016,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2036,arimax_level,0.400587377266555,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2037,arimax_level,0.399900560394421,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2038,arimax_level,0.399183068878117,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2039,arimax_level,0.398435506887853,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2040,arimax_level,0.397658460918094,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2041,arimax_level,0.396852500470399,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2042,arimax_level,0.396018178703628,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2043,arimax_level,0.395156033053309,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2044,arimax_level,0.394266585821953,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2045,arimax_level,0.393350344741945,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2046,arimax_level,0.392407803512473,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2047,arimax_level,0.391439442311951,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2048,arimax_level,0.3904457282873,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2049,arimax_level,0.389427116021241,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2050,arimax_level,0.388384047978888,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2051,arimax_level,0.387316954934614,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2052,arimax_level,0.386226256380326,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2053,arimax_level,0.385112360916058,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2054,arimax_level,0.383975666623803,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2055,arimax_level,0.38281656142545,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2056,arimax_level,0.381635423425616,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2057,arimax_level,0.380432621240146,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2058,arimax_level,0.379208514310979,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2059,arimax_level,0.377963453208066,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2060,arimax_level,0.376697779918971,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2061,arimax_level,0.375411828126749,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2062,arimax_level,0.374105923476658,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2063,arimax_level,0.372780383832265,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2064,arimax_level,0.371435519521437,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2065,arimax_level,0.370071633572647,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2066,arimax_level,0.368689021942151,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (levels)
+2026,arimax_diff,0.386376470965061,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2027,arimax_diff,0.391337054123367,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2028,arimax_diff,0.398462680890487,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2029,arimax_diff,0.399830786861096,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2030,arimax_diff,0.397298257495203,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2031,arimax_diff,0.395970979465649,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2032,arimax_diff,0.393211490917385,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2033,arimax_diff,0.392015154411155,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2034,arimax_diff,0.390833663165051,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2035,arimax_diff,0.389036173166554,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2036,arimax_diff,0.388005156581401,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2037,arimax_diff,0.386481524143314,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2038,arimax_diff,0.38495285051562,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2039,arimax_diff,0.383419234989998,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2040,arimax_diff,0.381880773953186,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2041,arimax_diff,0.380337560999295,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2042,arimax_diff,0.378789687036598,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2043,arimax_diff,0.377237240389314,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2044,arimax_diff,0.375680306894656,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2045,arimax_diff,0.374118969995337,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2046,arimax_diff,0.372553310827766,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2047,arimax_diff,0.370983408306353,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2048,arimax_diff,0.369409339203808,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2049,arimax_diff,0.367831178228005,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2050,arimax_diff,0.366248998095402,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2051,arimax_diff,0.364662869601091,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2052,arimax_diff,0.36307286168602,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2053,arimax_diff,0.361479041501095,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2054,arimax_diff,0.359881474468634,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2055,arimax_diff,0.358280224341215,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2056,arimax_diff,0.356675353258043,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2057,arimax_diff,0.35506692179885,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2058,arimax_diff,0.353454989035714,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2059,arimax_diff,0.351839612582652,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2060,arimax_diff,0.350220848643243,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2061,arimax_diff,0.348598752056232,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2062,arimax_diff,0.346973376339431,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2063,arimax_diff,0.345344773731751,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2064,arimax_diff,0.343712995233692,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2065,arimax_diff,0.342078090646103,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2066,arimax_diff,0.340440108607604,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX (differences)
+2026,dynamic_diff,0.385488566740096,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2027,dynamic_diff,0.390356715836804,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2028,dynamic_diff,0.397924036670198,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2029,dynamic_diff,0.399572378186135,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2030,dynamic_diff,0.397410427502721,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2031,dynamic_diff,0.397105441697231,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2032,dynamic_diff,0.395647641152896,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2033,dynamic_diff,0.3957482322561,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2034,dynamic_diff,0.39481612685955,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2035,dynamic_diff,0.393325600725958,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2036,dynamic_diff,0.392143764705912,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2037,dynamic_diff,0.390807336228951,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2038,dynamic_diff,0.389446951152147,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2039,dynamic_diff,0.388063081326579,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2040,dynamic_diff,0.386656184798739,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2041,dynamic_diff,0.385226706343827,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2042,dynamic_diff,0.383775077973553,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2043,dynamic_diff,0.382301719419856,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2044,dynamic_diff,0.380807038595935,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2045,dynamic_diff,0.379291432035864,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2046,dynamic_diff,0.377755285313921,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2047,dynamic_diff,0.3761989734448,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2048,dynamic_diff,0.374622861265714,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2049,dynamic_diff,0.373027303801365,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2050,dynamic_diff,0.371412646612721,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2051,dynamic_diff,0.369779226130388,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2052,dynamic_diff,0.368127369973487,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2053,dynamic_diff,0.366457397254681,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2054,dynamic_diff,0.364769618872149,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2055,dynamic_diff,0.363064337789126,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2056,dynamic_diff,0.361341849301658,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2057,dynamic_diff,0.359602441295145,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2058,dynamic_diff,0.357846394490258,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2059,dynamic_diff,0.356073982678731,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2060,dynamic_diff,0.354285472949541,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2061,dynamic_diff,0.352481125905916,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2062,dynamic_diff,0.350661195873649,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2063,dynamic_diff,0.348825931101106,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2064,dynamic_diff,0.346975573951344,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2065,dynamic_diff,0.34511036108666,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2066,dynamic_diff,0.343230523646028,population_and_real_gdp_per_capita,Add population and real GDP per capita,Dynamic differences
+2026,hybrid,0.387945392746968,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2027,hybrid,0.395277308434469,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2028,hybrid,0.405884738209709,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2029,hybrid,0.409647707859923,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2030,hybrid,0.408878778643114,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2031,hybrid,0.410105294448818,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2032,hybrid,0.409944584980713,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2033,hybrid,0.409197885967541,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2034,hybrid,0.40936942794543,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2035,hybrid,0.408881372783718,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2036,hybrid,0.408995507526073,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2037,hybrid,0.40845962446718,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2038,hybrid,0.407891597299624,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2039,hybrid,0.407292059136299,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2040,hybrid,0.406661624567609,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2041,hybrid,0.406000890377001,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2042,hybrid,0.405310436222333,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2043,hybrid,0.404590825284906,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2044,hybrid,0.40384260488806,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2045,hybrid,0.403066307087027,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2046,hybrid,0.402262449231586,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2047,hybrid,0.401431534503028,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2048,hybrid,0.400574052426884,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2049,hybrid,0.399690479362596,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2050,hybrid,0.398781278971503,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2051,hybrid,0.397846902664167,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2052,hybrid,0.396887790028195,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2053,hybrid,0.395904369237546,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2054,hybrid,0.394897057444277,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2055,hybrid,0.39386626115362,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2056,hybrid,0.392812376583239,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2057,hybrid,0.391735790007469,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2058,hybrid,0.390636878087266,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2059,hybrid,0.389516008186584,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2060,hybrid,0.388373538675853,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2061,hybrid,0.387209819223166,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2062,hybrid,0.386025191073772,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2063,hybrid,0.38481998731845,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2064,hybrid,0.383594533151276,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2065,hybrid,0.382349146117262,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2066,hybrid,0.381084136350403,population_and_real_gdp_per_capita,Add population and real GDP per capita,Hybrid structural/macro
+2026,ardl_ecm,0.374697473675315,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2027,ardl_ecm,0.368733766822559,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2028,ardl_ecm,0.371063353682123,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2029,ardl_ecm,0.368124893561839,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2030,ardl_ecm,0.360667632780709,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2031,ardl_ecm,0.35774175713088,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2032,ardl_ecm,0.357029465649181,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2033,ardl_ecm,0.357053422999001,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2034,ardl_ecm,0.357887465376398,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2035,ardl_ecm,0.359128665577206,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2036,ardl_ecm,0.360637985112836,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2037,ardl_ecm,0.361419044615436,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2038,ardl_ecm,0.362105430518287,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2039,ardl_ecm,0.362916777260896,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2040,ardl_ecm,0.363882613364446,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2041,ardl_ecm,0.364965913416432,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2042,ardl_ecm,0.366120131692335,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2043,ardl_ecm,0.36730936348334,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2044,ardl_ecm,0.3685113985783,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2045,ardl_ecm,0.36971466966735,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2046,ardl_ecm,0.370914226532456,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2047,ardl_ecm,0.372108584007014,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2048,ardl_ecm,0.373297753114533,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2049,ardl_ecm,0.374482205623023,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2050,ardl_ecm,0.375662424376903,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2051,ardl_ecm,0.37683876302828,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2052,ardl_ecm,0.378011440901359,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2053,ardl_ecm,0.379180580547759,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2054,ardl_ecm,0.380346247386662,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2055,ardl_ecm,0.381508478441891,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2056,ardl_ecm,0.382667299387049,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2057,ardl_ecm,0.383822733059725,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2058,ardl_ecm,0.384974802889852,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2059,ardl_ecm,0.386123533773123,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2060,ardl_ecm,0.387268951904651,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2061,ardl_ecm,0.388411084338089,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2062,ardl_ecm,0.389549958583464,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2063,ardl_ecm,0.390685602329012,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2064,ardl_ecm,0.391818043276819,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2065,ardl_ecm,0.392947309056965,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2066,ardl_ecm,0.394073427186449,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARDL error-correction model
+2026,univariate_arima,0.384377365178242,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2027,univariate_arima,0.386450470256217,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2028,univariate_arima,0.391018260893397,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2029,univariate_arima,0.391377669211526,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2030,univariate_arima,0.390208867657649,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2031,univariate_arima,0.391987187726217,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2032,univariate_arima,0.394233208394865,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2033,univariate_arima,0.396584450980935,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2034,univariate_arima,0.398832569401966,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2035,univariate_arima,0.400886870318968,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2036,univariate_arima,0.402728230755073,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2037,univariate_arima,0.403756289858536,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2038,univariate_arima,0.404681413286775,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2039,univariate_arima,0.405539962307869,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2040,univariate_arima,0.406354260683735,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2041,univariate_arima,0.407132596446846,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2042,univariate_arima,0.407873760792556,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2043,univariate_arima,0.408572425723811,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2044,univariate_arima,0.409223206484717,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2045,univariate_arima,0.409822738710488,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2046,univariate_arima,0.410370072519365,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2047,univariate_arima,0.410866082672542,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2048,univariate_arima,0.411312569396103,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2049,univariate_arima,0.411711493396311,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2050,univariate_arima,0.412064527299656,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2051,univariate_arima,0.412372913721925,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2052,univariate_arima,0.412637525617926,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2053,univariate_arima,0.412859010255642,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2054,univariate_arima,0.41303792932184,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2055,univariate_arima,0.413174851876425,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2056,univariate_arima,0.413270393396469,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2057,univariate_arima,0.413325214929407,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2058,univariate_arima,0.413340002406692,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2059,univariate_arima,0.41331544274362,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2060,univariate_arima,0.413252206220139,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2061,univariate_arima,0.41315093793295,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2062,univariate_arima,0.413012256792713,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2063,univariate_arima,0.412836758839178,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2064,univariate_arima,0.412625021826165,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2065,univariate_arima,0.412377609108562,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls
+2066,univariate_arima,0.412095072049986,population_and_real_gdp_per_capita,Add population and real GDP per capita,ARIMAX benchmark with real GDP per capita and COVID controls

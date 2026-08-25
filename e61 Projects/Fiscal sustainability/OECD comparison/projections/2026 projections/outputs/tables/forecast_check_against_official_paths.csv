@@ -1,39 +1,29 @@
 year,model,model_label,value,official_value,difference_pp,approach
-2026,structural_ols,Structural OLS (levels),0.361966324862483,0.387,-2.5033675137517,Top-down model-only
-2026,arimax_level,ARIMAX (levels),0.384513149345993,0.387,-0.2486850654007,Top-down model-only
-2026,arimax_diff,ARIMAX (differences),0.383958957376838,0.387,-0.304104262316202,Top-down model-only
-2026,dynamic_diff,Dynamic differences,0.384493138506395,0.387,-0.250686149360502,Top-down model-only
-2026,hybrid,Hybrid structural/macro,0.385742889150585,0.387,-0.125711084941499,Top-down model-only
-2026,ardl_ecm,ARDL error-correction model,0.384362726866342,0.387,-0.263727313365802,Top-down model-only
-2026,univariate_arima,ARIMA with COVID controls,0.38098176677941,0.387,-0.601823322059003,Top-down model-only
-2027,structural_ols,Structural OLS (levels),0.362913972915624,0.389,-2.6086027084376,Top-down model-only
-2027,arimax_level,ARIMAX (levels),0.382460671596482,0.389,-0.653932840351801,Top-down model-only
-2027,arimax_diff,ARIMAX (differences),0.383397489035652,0.389,-0.5602510964348,Top-down model-only
-2027,dynamic_diff,Dynamic differences,0.384839681847426,0.389,-0.416031815257401,Top-down model-only
-2027,hybrid,Hybrid structural/macro,0.387620964279646,0.389,-0.137903572035403,Top-down model-only
-2027,ardl_ecm,ARDL error-correction model,0.383378540730945,0.389,-0.5621459269055,Top-down model-only
-2027,univariate_arima,ARIMA with COVID controls,0.372528059768225,0.389,-1.6471940231775,Top-down model-only
-2028,structural_ols,Structural OLS (levels),0.363027192151714,0.384,-2.0972807848286,Top-down model-only
-2028,arimax_level,ARIMAX (levels),0.379348638770943,0.384,-0.465136122905702,Top-down model-only
-2028,arimax_diff,ARIMAX (differences),0.382223771414356,0.384,-0.177622858564402,Top-down model-only
-2028,dynamic_diff,Dynamic differences,0.384622062147951,0.384,0.0622062147951019,Top-down model-only
-2028,hybrid,Hybrid structural/macro,0.388905020508718,0.384,0.490502050871799,Top-down model-only
-2028,ardl_ecm,ARDL error-correction model,0.38228118867866,0.384,-0.171881132134,Top-down model-only
-2028,univariate_arima,ARIMA with COVID controls,0.364313974553336,0.384,-1.9686025446664,Top-down model-only
-2029,structural_ols,Structural OLS (levels),0.361888559710274,0.378,-1.6111440289726,Top-down model-only
-2029,arimax_level,ARIMAX (levels),0.376040781622353,0.378,-0.195921837764701,Top-down model-only
-2029,arimax_diff,ARIMAX (differences),0.380120079953474,0.378,0.212007995347402,Top-down model-only
-2029,dynamic_diff,Dynamic differences,0.383519591092793,0.378,0.551959109279299,Top-down model-only
-2029,hybrid,Hybrid structural/macro,0.389317601615282,0.378,1.1317601615282,Top-down model-only
-2029,ardl_ecm,ARDL error-correction model,0.381101891616185,0.378,0.310189161618502,Top-down model-only
-2029,univariate_arima,ARIMA with COVID controls,0.359838496652305,0.378,-1.8161503347695,Top-down model-only
-2030,structural_ols,Structural OLS (levels),0.360648010200117,0.371,-1.0351989799883,Top-down model-only
-2030,arimax_level,ARIMAX (levels),0.373776918549495,0.371,0.277691854949502,Top-down model-only
-2030,arimax_diff,ARIMAX (differences),0.378021513195528,0.371,0.702151319552802,Top-down model-only
-2030,dynamic_diff,Dynamic differences,0.382490888309153,0.371,1.1490888309153,Top-down model-only
-2030,hybrid,Hybrid structural/macro,0.389783922421037,0.371,1.8783922421037,Top-down model-only
-2030,ardl_ecm,ARDL error-correction model,0.380458550653319,0.371,0.945855065331902,Top-down model-only
-2030,univariate_arima,ARIMA with COVID controls,0.35740001422625,0.371,-1.359998577375,Top-down model-only
+2026,structural_ols,Structural OLS (levels),0.347761128001094,0.371,-2.3238871998906,Top-down model-only
+2026,arimax_level,ARIMAX (levels),0.36434916677435,0.371,-0.665083322565002,Top-down model-only
+2026,arimax_diff,Differenced ARIMAX,0.364313238267616,0.371,-0.668676173238397,Top-down model-only
+2026,hybrid,Hybrid structural/macro,0.366367490315056,0.371,-0.4632509684944,Top-down model-only
+2026,ardl_ecm,ARDL error-correction model,0.356294527767027,0.371,-1.4705472232973,Top-down model-only
+2027,structural_ols,Structural OLS (levels),0.348492431796559,0.371,-2.2507568203441,Top-down model-only
+2027,arimax_level,ARIMAX (levels),0.364157621793802,0.371,-0.684237820619799,Top-down model-only
+2027,arimax_diff,Differenced ARIMAX,0.3637883581489,0.371,-0.721164185110002,Top-down model-only
+2027,hybrid,Hybrid structural/macro,0.367542938519867,0.371,-0.345706148013297,Top-down model-only
+2027,ardl_ecm,ARDL error-correction model,0.352357479459989,0.371,-1.8642520540011,Top-down model-only
+2028,structural_ols,Structural OLS (levels),0.348601467470204,0.364,-1.5398532529796,Top-down model-only
+2028,arimax_level,ARIMAX (levels),0.363665742356014,0.364,-0.033425764398598,Top-down model-only
+2028,arimax_diff,Differenced ARIMAX,0.36272861967462,0.364,-0.127138032537999,Top-down model-only
+2028,hybrid,Hybrid structural/macro,0.36814677180015,0.364,0.414677180015,Top-down model-only
+2028,ardl_ecm,ARDL error-correction model,0.351638313020092,0.364,-1.2361686979908,Top-down model-only
+2029,structural_ols,Structural OLS (levels),0.347761692168369,0.357,-0.923830783163099,Top-down model-only
+2029,arimax_level,ARIMAX (levels),0.362416795418722,0.357,0.541679541872203,Top-down model-only
+2029,arimax_diff,Differenced ARIMAX,0.360823357709012,0.357,0.382335770901204,Top-down model-only
+2029,hybrid,Hybrid structural/macro,0.367843085913668,0.357,1.0843085913668,Top-down model-only
+2029,ardl_ecm,ARDL error-correction model,0.346941838961911,0.357,-1.0058161038089,Top-down model-only
+2030,structural_ols,Structural OLS (levels),0.34676958881215,0.349,-0.223041118785,Top-down model-only
+2030,arimax_level,ARIMAX (levels),0.361177807844677,0.349,1.2177807844677,Top-down model-only
+2030,arimax_diff,Differenced ARIMAX,0.359153419828577,0.349,1.0153419828577,Top-down model-only
+2030,hybrid,Hybrid structural/macro,0.367589659544634,0.349,1.8589659544634,Top-down model-only
+2030,ardl_ecm,ARDL error-correction model,0.341163021416679,0.349,-0.7836978583321,Top-down model-only
 2026,bottom_up_unanchored,Bottom-up model-only,0.372320662713429,0.375,-0.267933728657099,Bottom-up model-only
 2027,bottom_up_unanchored,Bottom-up model-only,0.376782569331731,0.37,0.678256933173105,Bottom-up model-only
 2028,bottom_up_unanchored,Bottom-up model-only,0.384543328877455,0.367,1.7543328877455,Bottom-up model-only

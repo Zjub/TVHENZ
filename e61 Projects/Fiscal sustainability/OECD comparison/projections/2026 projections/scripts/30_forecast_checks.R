@@ -42,7 +42,7 @@ official_compare <- merge(
   official_compare,
   official[, .(
     year,
-    official_value = expenses_ratio_gdp + net_capital_investment_ratio_gdp
+    official_value = official_topdown_expenditure(.SD)
   )],
   by = "year"
 )

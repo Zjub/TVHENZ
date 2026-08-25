@@ -1,0 +1,11 @@
+model,model_label,demographic_specification,demographic_label,average_rolling_rmse_pp,rolling_rmse_1y_pp,rolling_rmse_5y_pp,Common PBO anchor,Model only
+ardl_ecm,ARDL error-correction model,age_shares,Separate 0-14 and 65+ shares,3.1515535360275,1.8552579543652,3.94414240195177,31.714141898637,30.9304440403049
+ardl_ecm,ARDL error-correction model,expenditure_profile,Age-expenditure profile index,3.1515535360275,1.8552579543652,3.94414240195177,31.714141898637,30.9304440403049
+arimax_diff,Differenced ARIMAX,age_shares,Separate 0-14 and 65+ shares,3.58478900623359,1.80103632342544,4.96739803526813,32.9419110676461,33.9572530505038
+arimax_diff,Differenced ARIMAX,expenditure_profile,Age-expenditure profile index,3.51039978230803,1.78906006273194,4.81976891672211,32.8162503865637,33.7636178418429
+arimax_level,ARIMAX (levels),age_shares,Separate 0-14 and 65+ shares,4.4545592655944,3.1771636756554,5.68562569341786,36.2726439233058,37.4904247077735
+arimax_level,ARIMAX (levels),expenditure_profile,Age-expenditure profile index,4.35985946052512,3.10129570191704,5.58954583534371,35.3881712598851,34.5421206546204
+hybrid,Hybrid structural/macro,age_shares,Separate 0-14 and 65+ shares,4.34329270675375,3.20868065300115,5.60473551360858,36.1637956277235,38.0227615821869
+hybrid,Hybrid structural/macro,expenditure_profile,Age-expenditure profile index,4.13444225304437,3.14726327984726,5.23351440815182,35.8944441537808,37.7719226705418
+structural_ols,Structural OLS (levels),age_shares,Separate 0-14 and 65+ shares,4.66220782212671,3.38856342796503,5.92420064368217,36.5203366113434,36.2972954925584
+structural_ols,Structural OLS (levels),expenditure_profile,Age-expenditure profile index,4.43801446634621,3.26549368200533,5.63376892904188,36.3953005602491,35.9537852268407
