@@ -1,0 +1,329 @@
+year,model,value,model_label,path_type
+2026,structural_ols,0.361966324862483,Structural OLS (old-Shapley comparison),Model only from latest actual
+2027,structural_ols,0.362913972915624,Structural OLS (old-Shapley comparison),Model only from latest actual
+2028,structural_ols,0.363027192151714,Structural OLS (old-Shapley comparison),Model only from latest actual
+2029,structural_ols,0.361888559710274,Structural OLS (old-Shapley comparison),Model only from latest actual
+2030,structural_ols,0.360648010200117,Structural OLS (old-Shapley comparison),Model only from latest actual
+2031,structural_ols,0.359192688266364,Structural OLS (old-Shapley comparison),Model only from latest actual
+2032,structural_ols,0.357888309146879,Structural OLS (old-Shapley comparison),Model only from latest actual
+2033,structural_ols,0.358804704978525,Structural OLS (old-Shapley comparison),Model only from latest actual
+2034,structural_ols,0.359949706414607,Structural OLS (old-Shapley comparison),Model only from latest actual
+2035,structural_ols,0.361194876766857,Structural OLS (old-Shapley comparison),Model only from latest actual
+2036,structural_ols,0.362807784349855,Structural OLS (old-Shapley comparison),Model only from latest actual
+2037,structural_ols,0.363662556381712,Structural OLS (old-Shapley comparison),Model only from latest actual
+2038,structural_ols,0.364517328413569,Structural OLS (old-Shapley comparison),Model only from latest actual
+2039,structural_ols,0.365372100445427,Structural OLS (old-Shapley comparison),Model only from latest actual
+2040,structural_ols,0.366226872477285,Structural OLS (old-Shapley comparison),Model only from latest actual
+2041,structural_ols,0.367081644509141,Structural OLS (old-Shapley comparison),Model only from latest actual
+2042,structural_ols,0.367936416541,Structural OLS (old-Shapley comparison),Model only from latest actual
+2043,structural_ols,0.368791188572857,Structural OLS (old-Shapley comparison),Model only from latest actual
+2044,structural_ols,0.369645960604714,Structural OLS (old-Shapley comparison),Model only from latest actual
+2045,structural_ols,0.370500732636572,Structural OLS (old-Shapley comparison),Model only from latest actual
+2046,structural_ols,0.37135550466843,Structural OLS (old-Shapley comparison),Model only from latest actual
+2047,structural_ols,0.372210276700287,Structural OLS (old-Shapley comparison),Model only from latest actual
+2048,structural_ols,0.373065048732144,Structural OLS (old-Shapley comparison),Model only from latest actual
+2049,structural_ols,0.373919820764002,Structural OLS (old-Shapley comparison),Model only from latest actual
+2050,structural_ols,0.37477459279586,Structural OLS (old-Shapley comparison),Model only from latest actual
+2051,structural_ols,0.375629364827717,Structural OLS (old-Shapley comparison),Model only from latest actual
+2052,structural_ols,0.376484136859574,Structural OLS (old-Shapley comparison),Model only from latest actual
+2053,structural_ols,0.377338908891432,Structural OLS (old-Shapley comparison),Model only from latest actual
+2054,structural_ols,0.37819368092329,Structural OLS (old-Shapley comparison),Model only from latest actual
+2055,structural_ols,0.379048452955146,Structural OLS (old-Shapley comparison),Model only from latest actual
+2056,structural_ols,0.379903224987005,Structural OLS (old-Shapley comparison),Model only from latest actual
+2057,structural_ols,0.380757997018862,Structural OLS (old-Shapley comparison),Model only from latest actual
+2058,structural_ols,0.381612769050719,Structural OLS (old-Shapley comparison),Model only from latest actual
+2059,structural_ols,0.382467541082577,Structural OLS (old-Shapley comparison),Model only from latest actual
+2060,structural_ols,0.383322313114434,Structural OLS (old-Shapley comparison),Model only from latest actual
+2061,structural_ols,0.384177085146292,Structural OLS (old-Shapley comparison),Model only from latest actual
+2062,structural_ols,0.385031857178149,Structural OLS (old-Shapley comparison),Model only from latest actual
+2063,structural_ols,0.385886629210007,Structural OLS (old-Shapley comparison),Model only from latest actual
+2064,structural_ols,0.386741401241864,Structural OLS (old-Shapley comparison),Model only from latest actual
+2065,structural_ols,0.387596173273722,Structural OLS (old-Shapley comparison),Model only from latest actual
+2066,structural_ols,0.388450945305579,Structural OLS (old-Shapley comparison),Model only from latest actual
+2026,hybrid,0.386017643187852,Hybrid spending-share model,Model only from latest actual
+2027,hybrid,0.388885891567348,Hybrid spending-share model,Model only from latest actual
+2028,hybrid,0.392804261105606,Hybrid spending-share model,Model only from latest actual
+2029,hybrid,0.392504614886914,Hybrid spending-share model,Model only from latest actual
+2030,hybrid,0.390388265426197,Hybrid spending-share model,Model only from latest actual
+2031,hybrid,0.38975456341304,Hybrid spending-share model,Model only from latest actual
+2032,hybrid,0.389336272469762,Hybrid spending-share model,Model only from latest actual
+2033,hybrid,0.387582664255342,Hybrid spending-share model,Model only from latest actual
+2034,hybrid,0.387159550921087,Hybrid spending-share model,Model only from latest actual
+2035,hybrid,0.386837632367537,Hybrid spending-share model,Model only from latest actual
+2036,hybrid,0.386761969227016,Hybrid spending-share model,Model only from latest actual
+2037,hybrid,0.385768160980259,Hybrid spending-share model,Model only from latest actual
+2038,hybrid,0.384754689186759,Hybrid spending-share model,Model only from latest actual
+2039,hybrid,0.383722152951528,Hybrid spending-share model,Model only from latest actual
+2040,hybrid,0.382671020382305,Hybrid spending-share model,Model only from latest actual
+2041,hybrid,0.381601694438822,Hybrid spending-share model,Model only from latest actual
+2042,hybrid,0.380514543066054,Hybrid spending-share model,Model only from latest actual
+2043,hybrid,0.379409913089188,Hybrid spending-share model,Model only from latest actual
+2044,hybrid,0.37828813672102,Hybrid spending-share model,Model only from latest actual
+2045,hybrid,0.377149534703718,Hybrid spending-share model,Model only from latest actual
+2046,hybrid,0.375994417912897,Hybrid spending-share model,Model only from latest actual
+2047,hybrid,0.374823088255017,Hybrid spending-share model,Model only from latest actual
+2048,hybrid,0.373635839236172,Hybrid spending-share model,Model only from latest actual
+2049,hybrid,0.372432956374343,Hybrid spending-share model,Model only from latest actual
+2050,hybrid,0.371214717533811,Hybrid spending-share model,Model only from latest actual
+2051,hybrid,0.369981393217739,Hybrid spending-share model,Model only from latest actual
+2052,hybrid,0.368733246835665,Hybrid spending-share model,Model only from latest actual
+2053,hybrid,0.36747053495383,Hybrid spending-share model,Model only from latest actual
+2054,hybrid,0.366193507532209,Hybrid spending-share model,Model only from latest actual
+2055,hybrid,0.364902408150309,Hybrid spending-share model,Model only from latest actual
+2056,hybrid,0.363597474222908,Hybrid spending-share model,Model only from latest actual
+2057,hybrid,0.362278937206537,Hybrid spending-share model,Model only from latest actual
+2058,hybrid,0.360947022797294,Hybrid spending-share model,Model only from latest actual
+2059,hybrid,0.359601951120456,Hybrid spending-share model,Model only from latest actual
+2060,hybrid,0.358243936912344,Hybrid spending-share model,Model only from latest actual
+2061,hybrid,0.356873189694813,Hybrid spending-share model,Model only from latest actual
+2062,hybrid,0.355489913942728,Hybrid spending-share model,Model only from latest actual
+2063,hybrid,0.354094309244779,Hybrid spending-share model,Model only from latest actual
+2064,hybrid,0.352686570457932,Hybrid spending-share model,Model only from latest actual
+2065,hybrid,0.351266887855818,Hybrid spending-share model,Model only from latest actual
+2066,hybrid,0.349835447271374,Hybrid spending-share model,Model only from latest actual
+2026,per_capita_income,0.386841406676498,Real spending per capita (differences),Model only from latest actual
+2027,per_capita_income,0.394162805160221,Real spending per capita (differences),Model only from latest actual
+2028,per_capita_income,0.405814488219972,Real spending per capita (differences),Model only from latest actual
+2029,per_capita_income,0.410164580453943,Real spending per capita (differences),Model only from latest actual
+2030,per_capita_income,0.409651554508544,Real spending per capita (differences),Model only from latest actual
+2031,per_capita_income,0.411697944677285,Real spending per capita (differences),Model only from latest actual
+2032,per_capita_income,0.412399380510145,Real spending per capita (differences),Model only from latest actual
+2033,per_capita_income,0.412170886044206,Real spending per capita (differences),Model only from latest actual
+2034,per_capita_income,0.411838932183451,Real spending per capita (differences),Model only from latest actual
+2035,per_capita_income,0.410851649910513,Real spending per capita (differences),Model only from latest actual
+2036,per_capita_income,0.410435398646895,Real spending per capita (differences),Model only from latest actual
+2037,per_capita_income,0.409311565344304,Real spending per capita (differences),Model only from latest actual
+2038,per_capita_income,0.408152993480133,Real spending per capita (differences),Model only from latest actual
+2039,per_capita_income,0.406960738357084,Real spending per capita (differences),Model only from latest actual
+2040,per_capita_income,0.405735833323094,Real spending per capita (differences),Model only from latest actual
+2041,per_capita_income,0.404479290200481,Real spending per capita (differences),Model only from latest actual
+2042,per_capita_income,0.40319209970579,Real spending per capita (differences),Model only from latest actual
+2043,per_capita_income,0.401875231860523,Real spending per capita (differences),Model only from latest actual
+2044,per_capita_income,0.400529636393062,Real spending per capita (differences),Model only from latest actual
+2045,per_capita_income,0.399156243132071,Real spending per capita (differences),Model only from latest actual
+2046,per_capita_income,0.39775596239152,Real spending per capita (differences),Model only from latest actual
+2047,per_capita_income,0.396329685347614,Real spending per capita (differences),Model only from latest actual
+2048,per_capita_income,0.394878284407894,Real spending per capita (differences),Model only from latest actual
+2049,per_capita_income,0.393402613572601,Real spending per capita (differences),Model only from latest actual
+2050,per_capita_income,0.391903508788632,Real spending per capita (differences),Model only from latest actual
+2051,per_capita_income,0.390381788296191,Real spending per capita (differences),Model only from latest actual
+2052,per_capita_income,0.388838252968368,Real spending per capita (differences),Model only from latest actual
+2053,per_capita_income,0.387273686643829,Real spending per capita (differences),Model only from latest actual
+2054,per_capita_income,0.385688856452766,Real spending per capita (differences),Model only from latest actual
+2055,per_capita_income,0.384084513136296,Real spending per capita (differences),Model only from latest actual
+2056,per_capita_income,0.382461391359459,Real spending per capita (differences),Model only from latest actual
+2057,per_capita_income,0.380820210017986,Real spending per capita (differences),Model only from latest actual
+2058,per_capita_income,0.379161672538977,Real spending per capita (differences),Model only from latest actual
+2059,per_capita_income,0.37748646717563,Real spending per capita (differences),Model only from latest actual
+2060,per_capita_income,0.375795267296184,Real spending per capita (differences),Model only from latest actual
+2061,per_capita_income,0.374088731667193,Real spending per capita (differences),Model only from latest actual
+2062,per_capita_income,0.372367504731268,Real spending per capita (differences),Model only from latest actual
+2063,per_capita_income,0.370632216879421,Real spending per capita (differences),Model only from latest actual
+2064,per_capita_income,0.36888348471814,Real spending per capita (differences),Model only from latest actual
+2065,per_capita_income,0.367121911331276,Real spending per capita (differences),Model only from latest actual
+2066,per_capita_income,0.365348086536936,Real spending per capita (differences),Model only from latest actual
+2026,univariate_arima,0.38098176677941,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2027,univariate_arima,0.372528059768225,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2028,univariate_arima,0.364313974553336,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2029,univariate_arima,0.359838496652305,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2030,univariate_arima,0.35740001422625,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2031,univariate_arima,0.356071397110119,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2032,univariate_arima,0.355347494644218,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2033,univariate_arima,0.354953073427018,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2034,univariate_arima,0.354738171414792,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2035,univariate_arima,0.354621081175107,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2036,univariate_arima,0.354557284079456,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2037,univariate_arima,0.354522523971146,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2038,univariate_arima,0.354503584784066,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2039,univariate_arima,0.354493265690579,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2040,univariate_arima,0.354487643290318,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2041,univariate_arima,0.354484579902556,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2042,univariate_arima,0.354482910803214,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2043,univariate_arima,0.354482001387616,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2044,univariate_arima,0.35448150588881,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2045,univariate_arima,0.354481235914261,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2046,univariate_arima,0.354481088817524,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2047,univariate_arima,0.354481008671266,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2048,univariate_arima,0.35448096500325,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2049,univariate_arima,0.354480941210552,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2050,univariate_arima,0.354480928247004,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2051,univariate_arima,0.354480921183762,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2052,univariate_arima,0.354480917335325,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2053,univariate_arima,0.354480915238489,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2054,univariate_arima,0.354480914096019,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2055,univariate_arima,0.35448091347354,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2056,univariate_arima,0.354480913134379,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2057,univariate_arima,0.354480912949587,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2058,univariate_arima,0.354480912848901,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2059,univariate_arima,0.354480912794043,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2060,univariate_arima,0.354480912764153,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2061,univariate_arima,0.354480912747867,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2062,univariate_arima,0.354480912738994,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2063,univariate_arima,0.354480912734159,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2064,univariate_arima,0.354480912731525,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2065,univariate_arima,0.354480912730089,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2066,univariate_arima,0.354480912729307,COVID-adjusted ARIMA benchmark,Model only from latest actual
+2026,structural_ols,0.387,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2027,structural_ols,0.389,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2028,structural_ols,0.384,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2029,structural_ols,0.378,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2030,structural_ols,0.371,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2031,structural_ols,0.369544678066247,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2032,structural_ols,0.368240298946762,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2033,structural_ols,0.369156694778407,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2034,structural_ols,0.37030169621449,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2035,structural_ols,0.37154686656674,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2036,structural_ols,0.373159774149738,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2037,structural_ols,0.374014546181595,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2038,structural_ols,0.374869318213452,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2039,structural_ols,0.37572409024531,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2040,structural_ols,0.376578862277168,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2041,structural_ols,0.377433634309024,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2042,structural_ols,0.378288406340883,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2043,structural_ols,0.37914317837274,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2044,structural_ols,0.379997950404597,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2045,structural_ols,0.380852722436455,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2046,structural_ols,0.381707494468313,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2047,structural_ols,0.38256226650017,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2048,structural_ols,0.383417038532027,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2049,structural_ols,0.384271810563885,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2050,structural_ols,0.385126582595742,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2051,structural_ols,0.3859813546276,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2052,structural_ols,0.386836126659457,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2053,structural_ols,0.387690898691315,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2054,structural_ols,0.388545670723173,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2055,structural_ols,0.389400442755029,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2056,structural_ols,0.390255214786888,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2057,structural_ols,0.391109986818745,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2058,structural_ols,0.391964758850602,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2059,structural_ols,0.39281953088246,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2060,structural_ols,0.393674302914317,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2061,structural_ols,0.394529074946175,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2062,structural_ols,0.395383846978032,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2063,structural_ols,0.39623861900989,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2064,structural_ols,0.397093391041747,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2065,structural_ols,0.397948163073605,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2066,structural_ols,0.398802935105462,Structural OLS (old-Shapley comparison),"PBO through 2029-30, then model changes"
+2026,hybrid,0.387,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2027,hybrid,0.389,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2028,hybrid,0.384,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2029,hybrid,0.378,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2030,hybrid,0.371,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2031,hybrid,0.370366297986843,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2032,hybrid,0.369948007043565,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2033,hybrid,0.368194398829146,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2034,hybrid,0.36777128549489,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2035,hybrid,0.36744936694134,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2036,hybrid,0.36737370380082,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2037,hybrid,0.366379895554062,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2038,hybrid,0.365366423760562,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2039,hybrid,0.364333887525331,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2040,hybrid,0.363282754956109,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2041,hybrid,0.362213429012625,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2042,hybrid,0.361126277639857,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2043,hybrid,0.360021647662991,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2044,hybrid,0.358899871294823,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2045,hybrid,0.357761269277521,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2046,hybrid,0.3566061524867,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2047,hybrid,0.35543482282882,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2048,hybrid,0.354247573809975,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2049,hybrid,0.353044690948146,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2050,hybrid,0.351826452107614,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2051,hybrid,0.350593127791542,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2052,hybrid,0.349344981409468,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2053,hybrid,0.348082269527634,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2054,hybrid,0.346805242106013,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2055,hybrid,0.345514142724112,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2056,hybrid,0.344209208796711,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2057,hybrid,0.34289067178034,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2058,hybrid,0.341558757371097,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2059,hybrid,0.34021368569426,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2060,hybrid,0.338855671486147,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2061,hybrid,0.337484924268616,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2062,hybrid,0.336101648516531,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2063,hybrid,0.334706043818583,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2064,hybrid,0.333298305031735,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2065,hybrid,0.331878622429622,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2066,hybrid,0.330447181845178,Hybrid spending-share model,"PBO through 2029-30, then model changes"
+2026,per_capita_income,0.387,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2027,per_capita_income,0.389,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2028,per_capita_income,0.384,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2029,per_capita_income,0.378,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2030,per_capita_income,0.371,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2031,per_capita_income,0.373046390168741,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2032,per_capita_income,0.373747826001602,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2033,per_capita_income,0.373519331535663,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2034,per_capita_income,0.373187377674907,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2035,per_capita_income,0.37220009540197,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2036,per_capita_income,0.371783844138352,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2037,per_capita_income,0.37066001083576,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2038,per_capita_income,0.369501438971589,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2039,per_capita_income,0.36830918384854,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2040,per_capita_income,0.367084278814551,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2041,per_capita_income,0.365827735691937,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2042,per_capita_income,0.364540545197247,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2043,per_capita_income,0.363223677351979,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2044,per_capita_income,0.361878081884518,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2045,per_capita_income,0.360504688623527,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2046,per_capita_income,0.359104407882976,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2047,per_capita_income,0.35767813083907,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2048,per_capita_income,0.356226729899351,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2049,per_capita_income,0.354751059064058,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2050,per_capita_income,0.353251954280089,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2051,per_capita_income,0.351730233787648,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2052,per_capita_income,0.350186698459825,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2053,per_capita_income,0.348622132135286,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2054,per_capita_income,0.347037301944222,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2055,per_capita_income,0.345432958627752,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2056,per_capita_income,0.343809836850915,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2057,per_capita_income,0.342168655509443,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2058,per_capita_income,0.340510118030433,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2059,per_capita_income,0.338834912667086,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2060,per_capita_income,0.33714371278764,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2061,per_capita_income,0.33543717715865,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2062,per_capita_income,0.333715950222725,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2063,per_capita_income,0.331980662370877,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2064,per_capita_income,0.330231930209597,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2065,per_capita_income,0.328470356822732,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2066,per_capita_income,0.326696532028392,Real spending per capita (differences),"PBO through 2029-30, then model changes"
+2026,univariate_arima,0.387,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2027,univariate_arima,0.389,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2028,univariate_arima,0.384,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2029,univariate_arima,0.378,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2030,univariate_arima,0.371,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2031,univariate_arima,0.369671382883869,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2032,univariate_arima,0.368947480417968,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2033,univariate_arima,0.368553059200768,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2034,univariate_arima,0.368338157188542,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2035,univariate_arima,0.368221066948857,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2036,univariate_arima,0.368157269853206,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2037,univariate_arima,0.368122509744896,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2038,univariate_arima,0.368103570557816,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2039,univariate_arima,0.368093251464329,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2040,univariate_arima,0.368087629064068,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2041,univariate_arima,0.368084565676306,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2042,univariate_arima,0.368082896576964,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2043,univariate_arima,0.368081987161366,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2044,univariate_arima,0.36808149166256,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2045,univariate_arima,0.368081221688011,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2046,univariate_arima,0.368081074591274,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2047,univariate_arima,0.368080994445016,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2048,univariate_arima,0.368080950776999,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2049,univariate_arima,0.368080926984302,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2050,univariate_arima,0.368080914020754,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2051,univariate_arima,0.368080906957512,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2052,univariate_arima,0.368080903109075,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2053,univariate_arima,0.368080901012239,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2054,univariate_arima,0.368080899869769,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2055,univariate_arima,0.36808089924729,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2056,univariate_arima,0.368080898908129,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2057,univariate_arima,0.368080898723336,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2058,univariate_arima,0.368080898622651,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2059,univariate_arima,0.368080898567793,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2060,univariate_arima,0.368080898537903,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2061,univariate_arima,0.368080898521617,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2062,univariate_arima,0.368080898512744,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2063,univariate_arima,0.368080898507909,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2064,univariate_arima,0.368080898505275,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2065,univariate_arima,0.368080898503839,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"
+2066,univariate_arima,0.368080898503057,COVID-adjusted ARIMA benchmark,"PBO through 2029-30, then model changes"

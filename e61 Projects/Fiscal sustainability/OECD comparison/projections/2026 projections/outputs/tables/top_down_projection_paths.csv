@@ -1,626 +1,462 @@
-year,model,model_label,value,path_type
-1980,historical,Historical national-accounts concept,0.333103269138001,Historical
-1981,historical,Historical national-accounts concept,0.341854541406654,Historical
-1982,historical,Historical national-accounts concept,0.34194351027086,Historical
-1983,historical,Historical national-accounts concept,0.369170289130503,Historical
-1984,historical,Historical national-accounts concept,0.374219801166094,Historical
-1985,historical,Historical national-accounts concept,0.384885205434133,Historical
-1986,historical,Historical national-accounts concept,0.386757421004678,Historical
-1987,historical,Historical national-accounts concept,0.387112871425331,Historical
-1988,historical,Historical national-accounts concept,0.361389001685801,Historical
-1989,historical,Historical national-accounts concept,0.345975970765878,Historical
-1990,historical,Historical national-accounts concept,0.342681221503343,Historical
-1991,historical,Historical national-accounts concept,0.357308222125526,Historical
-1992,historical,Historical national-accounts concept,0.373256260951802,Historical
-1993,historical,Historical national-accounts concept,0.372161555856265,Historical
-1994,historical,Historical national-accounts concept,0.370458861335371,Historical
-1995,historical,Historical national-accounts concept,0.370609406969422,Historical
-1996,historical,Historical national-accounts concept,0.365259991470121,Historical
-1997,historical,Historical national-accounts concept,0.356153778449965,Historical
-1998,historical,Historical national-accounts concept,0.342296359017782,Historical
-1999,historical,Historical national-accounts concept,0.345408985029229,Historical
-2000,historical,Historical national-accounts concept,0.344757730483635,Historical
-2001,historical,Historical national-accounts concept,0.350668155529801,Historical
-2002,historical,Historical national-accounts concept,0.345335135363433,Historical
-2003,historical,Historical national-accounts concept,0.338893297616431,Historical
-2004,historical,Historical national-accounts concept,0.337763913273131,Historical
-2005,historical,Historical national-accounts concept,0.336883717718547,Historical
-2006,historical,Historical national-accounts concept,0.333935210831799,Historical
-2007,historical,Historical national-accounts concept,0.329632421017543,Historical
-2008,historical,Historical national-accounts concept,0.32922316457056,Historical
-2009,historical,Historical national-accounts concept,0.350492899653279,Historical
-2010,historical,Historical national-accounts concept,0.356366529110526,Historical
-2011,historical,Historical national-accounts concept,0.347158149042668,Historical
-2012,historical,Historical national-accounts concept,0.349874026949591,Historical
-2013,historical,Historical national-accounts concept,0.344430952357823,Historical
-2014,historical,Historical national-accounts concept,0.346132712717135,Historical
-2015,historical,Historical national-accounts concept,0.348893646518989,Historical
-2016,historical,Historical national-accounts concept,0.354659808866871,Historical
-2017,historical,Historical national-accounts concept,0.350056716497443,Historical
-2018,historical,Historical national-accounts concept,0.349966601492251,Historical
-2019,historical,Historical national-accounts concept,0.3489459716794,Historical
-2020,historical,Historical national-accounts concept,0.397665294079763,Historical
-2021,historical,Historical national-accounts concept,0.420022274506502,Historical
-2022,historical,Historical national-accounts concept,0.378859989972692,Historical
-2023,historical,Historical national-accounts concept,0.357918223925394,Historical
-2024,historical,Historical national-accounts concept,0.373326881738081,Historical
-2025,historical,Historical national-accounts concept,0.383410740130003,Historical
-2026,official,PBO expenses plus net capital investment,0.387,Official forecast
-2027,official,PBO expenses plus net capital investment,0.389,Official forecast
-2028,official,PBO expenses plus net capital investment,0.384,Official forecast
-2029,official,PBO expenses plus net capital investment,0.378,Official forecast
-2030,official,PBO expenses plus net capital investment,0.371,Official forecast
-2026,structural_ols,Structural OLS (levels),0.361966324862483,Unanchored model projection
-2027,structural_ols,Structural OLS (levels),0.362913972915624,Unanchored model projection
-2028,structural_ols,Structural OLS (levels),0.363027192151714,Unanchored model projection
-2029,structural_ols,Structural OLS (levels),0.361888559710274,Unanchored model projection
-2030,structural_ols,Structural OLS (levels),0.360648010200117,Unanchored model projection
-2031,structural_ols,Structural OLS (levels),0.359192688266364,Unanchored model projection
-2032,structural_ols,Structural OLS (levels),0.357888309146879,Unanchored model projection
-2033,structural_ols,Structural OLS (levels),0.358804704978525,Unanchored model projection
-2034,structural_ols,Structural OLS (levels),0.359949706414607,Unanchored model projection
-2035,structural_ols,Structural OLS (levels),0.361194876766857,Unanchored model projection
-2036,structural_ols,Structural OLS (levels),0.362807784349855,Unanchored model projection
-2037,structural_ols,Structural OLS (levels),0.363662556381712,Unanchored model projection
-2038,structural_ols,Structural OLS (levels),0.364517328413569,Unanchored model projection
-2039,structural_ols,Structural OLS (levels),0.365372100445427,Unanchored model projection
-2040,structural_ols,Structural OLS (levels),0.366226872477285,Unanchored model projection
-2041,structural_ols,Structural OLS (levels),0.367081644509141,Unanchored model projection
-2042,structural_ols,Structural OLS (levels),0.367936416541,Unanchored model projection
-2043,structural_ols,Structural OLS (levels),0.368791188572857,Unanchored model projection
-2044,structural_ols,Structural OLS (levels),0.369645960604714,Unanchored model projection
-2045,structural_ols,Structural OLS (levels),0.370500732636572,Unanchored model projection
-2046,structural_ols,Structural OLS (levels),0.37135550466843,Unanchored model projection
-2047,structural_ols,Structural OLS (levels),0.372210276700287,Unanchored model projection
-2048,structural_ols,Structural OLS (levels),0.373065048732144,Unanchored model projection
-2049,structural_ols,Structural OLS (levels),0.373919820764002,Unanchored model projection
-2050,structural_ols,Structural OLS (levels),0.37477459279586,Unanchored model projection
-2051,structural_ols,Structural OLS (levels),0.375629364827717,Unanchored model projection
-2052,structural_ols,Structural OLS (levels),0.376484136859574,Unanchored model projection
-2053,structural_ols,Structural OLS (levels),0.377338908891432,Unanchored model projection
-2054,structural_ols,Structural OLS (levels),0.37819368092329,Unanchored model projection
-2055,structural_ols,Structural OLS (levels),0.379048452955146,Unanchored model projection
-2056,structural_ols,Structural OLS (levels),0.379903224987005,Unanchored model projection
-2057,structural_ols,Structural OLS (levels),0.380757997018862,Unanchored model projection
-2058,structural_ols,Structural OLS (levels),0.381612769050719,Unanchored model projection
-2059,structural_ols,Structural OLS (levels),0.382467541082577,Unanchored model projection
-2060,structural_ols,Structural OLS (levels),0.383322313114434,Unanchored model projection
-2061,structural_ols,Structural OLS (levels),0.384177085146292,Unanchored model projection
-2062,structural_ols,Structural OLS (levels),0.385031857178149,Unanchored model projection
-2063,structural_ols,Structural OLS (levels),0.385886629210007,Unanchored model projection
-2064,structural_ols,Structural OLS (levels),0.386741401241864,Unanchored model projection
-2065,structural_ols,Structural OLS (levels),0.387596173273722,Unanchored model projection
-2066,structural_ols,Structural OLS (levels),0.388450945305579,Unanchored model projection
-2026,arimax_level,ARIMAX (levels),0.384513149345993,Unanchored model projection
-2027,arimax_level,ARIMAX (levels),0.382460671596482,Unanchored model projection
-2028,arimax_level,ARIMAX (levels),0.379348638770943,Unanchored model projection
-2029,arimax_level,ARIMAX (levels),0.376040781622353,Unanchored model projection
-2030,arimax_level,ARIMAX (levels),0.373776918549495,Unanchored model projection
-2031,arimax_level,ARIMAX (levels),0.372318681376099,Unanchored model projection
-2032,arimax_level,ARIMAX (levels),0.371875556464432,Unanchored model projection
-2033,arimax_level,ARIMAX (levels),0.37269222927377,Unanchored model projection
-2034,arimax_level,ARIMAX (levels),0.374125259603164,Unanchored model projection
-2035,arimax_level,ARIMAX (levels),0.375837465890105,Unanchored model projection
-2036,arimax_level,ARIMAX (levels),0.378092035019386,Unanchored model projection
-2037,arimax_level,ARIMAX (levels),0.379347549432478,Unanchored model projection
-2038,arimax_level,ARIMAX (levels),0.380579918203815,Unanchored model projection
-2039,arimax_level,ARIMAX (levels),0.381784286890534,Unanchored model projection
-2040,arimax_level,ARIMAX (levels),0.382964311046398,Unanchored model projection
-2041,arimax_level,ARIMAX (levels),0.384126512503717,Unanchored model projection
-2042,arimax_level,ARIMAX (levels),0.385277298402894,Unanchored model projection
-2043,arimax_level,ARIMAX (levels),0.386421719157751,Unanchored model projection
-2044,arimax_level,ARIMAX (levels),0.387563218180594,Unanchored model projection
-2045,arimax_level,ARIMAX (levels),0.388703853712842,Unanchored model projection
-2046,arimax_level,ARIMAX (levels),0.389844675781364,Unanchored model projection
-2047,arimax_level,ARIMAX (levels),0.390986092050231,Unanchored model projection
-2048,arimax_level,ARIMAX (levels),0.392128154268641,Unanchored model projection
-2049,arimax_level,ARIMAX (levels),0.393270752531877,Unanchored model projection
-2050,arimax_level,ARIMAX (levels),0.394413730749059,Unanchored model projection
-2051,arimax_level,ARIMAX (levels),0.395556945089326,Unanchored model projection
-2052,arimax_level,ARIMAX (levels),0.396700286289845,Unanchored model projection
-2053,arimax_level,ARIMAX (levels),0.397843682068605,Unanchored model projection
-2054,arimax_level,ARIMAX (levels),0.398987090598896,Unanchored model projection
-2055,arimax_level,ARIMAX (levels),0.400130491521628,Unanchored model projection
-2056,arimax_level,ARIMAX (levels),0.401273877747291,Unanchored model projection
-2057,arimax_level,ARIMAX (levels),0.402417249266774,Unanchored model projection
-2058,arimax_level,ARIMAX (levels),0.403560609078527,Unanchored model projection
-2059,arimax_level,ARIMAX (levels),0.40470396084559,Unanchored model projection
-2060,arimax_level,ARIMAX (levels),0.405847307765306,Unanchored model projection
-2061,arimax_level,ARIMAX (levels),0.406990652184582,Unanchored model projection
-2062,arimax_level,ARIMAX (levels),0.408133995610172,Unanchored model projection
-2063,arimax_level,ARIMAX (levels),0.409277338884571,Unanchored model projection
-2064,arimax_level,ARIMAX (levels),0.410420682396293,Unanchored model projection
-2065,arimax_level,ARIMAX (levels),0.411564026261816,Unanchored model projection
-2066,arimax_level,ARIMAX (levels),0.412707370458353,Unanchored model projection
-2026,arimax_diff,ARIMAX (differences),0.383958957376838,Unanchored model projection
-2027,arimax_diff,ARIMAX (differences),0.383397489035652,Unanchored model projection
-2028,arimax_diff,ARIMAX (differences),0.382223771414356,Unanchored model projection
-2029,arimax_diff,ARIMAX (differences),0.380120079953474,Unanchored model projection
-2030,arimax_diff,ARIMAX (differences),0.378021513195528,Unanchored model projection
-2031,arimax_diff,ARIMAX (differences),0.376065086204404,Unanchored model projection
-2032,arimax_diff,ARIMAX (differences),0.373917330275811,Unanchored model projection
-2033,arimax_diff,ARIMAX (differences),0.373252024560722,Unanchored model projection
-2034,arimax_diff,ARIMAX (differences),0.372393009035451,Unanchored model projection
-2035,arimax_diff,ARIMAX (differences),0.371422112962326,Unanchored model projection
-2036,arimax_diff,ARIMAX (differences),0.370171768996997,Unanchored model projection
-2037,arimax_diff,ARIMAX (differences),0.369548683601239,Unanchored model projection
-2038,arimax_diff,ARIMAX (differences),0.368925598205482,Unanchored model projection
-2039,arimax_diff,ARIMAX (differences),0.368302512809724,Unanchored model projection
-2040,arimax_diff,ARIMAX (differences),0.367679427413966,Unanchored model projection
-2041,arimax_diff,ARIMAX (differences),0.367056342018209,Unanchored model projection
-2042,arimax_diff,ARIMAX (differences),0.366433256622451,Unanchored model projection
-2043,arimax_diff,ARIMAX (differences),0.365810171226693,Unanchored model projection
-2044,arimax_diff,ARIMAX (differences),0.365187085830936,Unanchored model projection
-2045,arimax_diff,ARIMAX (differences),0.364564000435178,Unanchored model projection
-2046,arimax_diff,ARIMAX (differences),0.36394091503942,Unanchored model projection
-2047,arimax_diff,ARIMAX (differences),0.363317829643663,Unanchored model projection
-2048,arimax_diff,ARIMAX (differences),0.362694744247905,Unanchored model projection
-2049,arimax_diff,ARIMAX (differences),0.362071658852147,Unanchored model projection
-2050,arimax_diff,ARIMAX (differences),0.361448573456389,Unanchored model projection
-2051,arimax_diff,ARIMAX (differences),0.360825488060632,Unanchored model projection
-2052,arimax_diff,ARIMAX (differences),0.360202402664874,Unanchored model projection
-2053,arimax_diff,ARIMAX (differences),0.359579317269117,Unanchored model projection
-2054,arimax_diff,ARIMAX (differences),0.358956231873359,Unanchored model projection
-2055,arimax_diff,ARIMAX (differences),0.358333146477602,Unanchored model projection
-2056,arimax_diff,ARIMAX (differences),0.357710061081843,Unanchored model projection
-2057,arimax_diff,ARIMAX (differences),0.357086975686086,Unanchored model projection
-2058,arimax_diff,ARIMAX (differences),0.356463890290328,Unanchored model projection
-2059,arimax_diff,ARIMAX (differences),0.355840804894571,Unanchored model projection
-2060,arimax_diff,ARIMAX (differences),0.355217719498813,Unanchored model projection
-2061,arimax_diff,ARIMAX (differences),0.354594634103056,Unanchored model projection
-2062,arimax_diff,ARIMAX (differences),0.353971548707298,Unanchored model projection
-2063,arimax_diff,ARIMAX (differences),0.35334846331154,Unanchored model projection
-2064,arimax_diff,ARIMAX (differences),0.352725377915782,Unanchored model projection
-2065,arimax_diff,ARIMAX (differences),0.352102292520024,Unanchored model projection
-2066,arimax_diff,ARIMAX (differences),0.351479207124267,Unanchored model projection
-2026,dynamic_diff,Dynamic differences,0.384493138506395,Unanchored model projection
-2027,dynamic_diff,Dynamic differences,0.384839681847426,Unanchored model projection
-2028,dynamic_diff,Dynamic differences,0.384622062147951,Unanchored model projection
-2029,dynamic_diff,Dynamic differences,0.383519591092793,Unanchored model projection
-2030,dynamic_diff,Dynamic differences,0.382490888309153,Unanchored model projection
-2031,dynamic_diff,Dynamic differences,0.381614852485625,Unanchored model projection
-2032,dynamic_diff,Dynamic differences,0.38053743619496,Unanchored model projection
-2033,dynamic_diff,Dynamic differences,0.381453235928829,Unanchored model projection
-2034,dynamic_diff,Dynamic differences,0.380535160081674,Unanchored model projection
-2035,dynamic_diff,Dynamic differences,0.379498971105815,Unanchored model projection
-2036,dynamic_diff,Dynamic differences,0.378164262685784,Unanchored model projection
-2037,dynamic_diff,Dynamic differences,0.377497615117676,Unanchored model projection
-2038,dynamic_diff,Dynamic differences,0.376830967549569,Unanchored model projection
-2039,dynamic_diff,Dynamic differences,0.376164319981461,Unanchored model projection
-2040,dynamic_diff,Dynamic differences,0.375497672413353,Unanchored model projection
-2041,dynamic_diff,Dynamic differences,0.374831024845246,Unanchored model projection
-2042,dynamic_diff,Dynamic differences,0.374164377277137,Unanchored model projection
-2043,dynamic_diff,Dynamic differences,0.373497729709029,Unanchored model projection
-2044,dynamic_diff,Dynamic differences,0.372831082140922,Unanchored model projection
-2045,dynamic_diff,Dynamic differences,0.372164434572814,Unanchored model projection
-2046,dynamic_diff,Dynamic differences,0.371497787004706,Unanchored model projection
-2047,dynamic_diff,Dynamic differences,0.370831139436598,Unanchored model projection
-2048,dynamic_diff,Dynamic differences,0.37016449186849,Unanchored model projection
-2049,dynamic_diff,Dynamic differences,0.369497844300382,Unanchored model projection
-2050,dynamic_diff,Dynamic differences,0.368831196732274,Unanchored model projection
-2051,dynamic_diff,Dynamic differences,0.368164549164166,Unanchored model projection
-2052,dynamic_diff,Dynamic differences,0.367497901596059,Unanchored model projection
-2053,dynamic_diff,Dynamic differences,0.366831254027951,Unanchored model projection
-2054,dynamic_diff,Dynamic differences,0.366164606459843,Unanchored model projection
-2055,dynamic_diff,Dynamic differences,0.365497958891735,Unanchored model projection
-2056,dynamic_diff,Dynamic differences,0.364831311323627,Unanchored model projection
-2057,dynamic_diff,Dynamic differences,0.364164663755519,Unanchored model projection
-2058,dynamic_diff,Dynamic differences,0.363498016187411,Unanchored model projection
-2059,dynamic_diff,Dynamic differences,0.362831368619303,Unanchored model projection
-2060,dynamic_diff,Dynamic differences,0.362164721051196,Unanchored model projection
-2061,dynamic_diff,Dynamic differences,0.361498073483088,Unanchored model projection
-2062,dynamic_diff,Dynamic differences,0.36083142591498,Unanchored model projection
-2063,dynamic_diff,Dynamic differences,0.360164778346872,Unanchored model projection
-2064,dynamic_diff,Dynamic differences,0.359498130778764,Unanchored model projection
-2065,dynamic_diff,Dynamic differences,0.358831483210656,Unanchored model projection
-2066,dynamic_diff,Dynamic differences,0.358164835642549,Unanchored model projection
-2026,hybrid,Hybrid structural/macro,0.385742889150585,Unanchored model projection
-2027,hybrid,Hybrid structural/macro,0.387620964279646,Unanchored model projection
-2028,hybrid,Hybrid structural/macro,0.388905020508718,Unanchored model projection
-2029,hybrid,Hybrid structural/macro,0.389317601615282,Unanchored model projection
-2030,hybrid,Hybrid structural/macro,0.389783922421037,Unanchored model projection
-2031,hybrid,Hybrid structural/macro,0.390122796410312,Unanchored model projection
-2032,hybrid,Hybrid structural/macro,0.39071428466862,Unanchored model projection
-2033,hybrid,Hybrid structural/macro,0.390170275499726,Unanchored model projection
-2034,hybrid,Hybrid structural/macro,0.391030248947277,Unanchored model projection
-2035,hybrid,Hybrid structural/macro,0.392030954879923,Unanchored model projection
-2036,hybrid,Hybrid structural/macro,0.393314204640305,Unanchored model projection
-2037,hybrid,Hybrid structural/macro,0.393923757610057,Unanchored model projection
-2038,hybrid,Hybrid structural/macro,0.394533310579808,Unanchored model projection
-2039,hybrid,Hybrid structural/macro,0.395142863549559,Unanchored model projection
-2040,hybrid,Hybrid structural/macro,0.395752416519311,Unanchored model projection
-2041,hybrid,Hybrid structural/macro,0.396361969489062,Unanchored model projection
-2042,hybrid,Hybrid structural/macro,0.396971522458814,Unanchored model projection
-2043,hybrid,Hybrid structural/macro,0.397581075428565,Unanchored model projection
-2044,hybrid,Hybrid structural/macro,0.398190628398316,Unanchored model projection
-2045,hybrid,Hybrid structural/macro,0.398800181368068,Unanchored model projection
-2046,hybrid,Hybrid structural/macro,0.399409734337819,Unanchored model projection
-2047,hybrid,Hybrid structural/macro,0.40001928730757,Unanchored model projection
-2048,hybrid,Hybrid structural/macro,0.400628840277321,Unanchored model projection
-2049,hybrid,Hybrid structural/macro,0.401238393247073,Unanchored model projection
-2050,hybrid,Hybrid structural/macro,0.401847946216825,Unanchored model projection
-2051,hybrid,Hybrid structural/macro,0.402457499186576,Unanchored model projection
-2052,hybrid,Hybrid structural/macro,0.403067052156327,Unanchored model projection
-2053,hybrid,Hybrid structural/macro,0.403676605126078,Unanchored model projection
-2054,hybrid,Hybrid structural/macro,0.40428615809583,Unanchored model projection
-2055,hybrid,Hybrid structural/macro,0.404895711065581,Unanchored model projection
-2056,hybrid,Hybrid structural/macro,0.405505264035333,Unanchored model projection
-2057,hybrid,Hybrid structural/macro,0.406114817005084,Unanchored model projection
-2058,hybrid,Hybrid structural/macro,0.406724369974835,Unanchored model projection
-2059,hybrid,Hybrid structural/macro,0.407333922944587,Unanchored model projection
-2060,hybrid,Hybrid structural/macro,0.407943475914338,Unanchored model projection
-2061,hybrid,Hybrid structural/macro,0.408553028884089,Unanchored model projection
-2062,hybrid,Hybrid structural/macro,0.409162581853841,Unanchored model projection
-2063,hybrid,Hybrid structural/macro,0.409772134823592,Unanchored model projection
-2064,hybrid,Hybrid structural/macro,0.410381687793344,Unanchored model projection
-2065,hybrid,Hybrid structural/macro,0.410991240763095,Unanchored model projection
-2066,hybrid,Hybrid structural/macro,0.411600793732846,Unanchored model projection
-2026,ardl_ecm,ARDL error-correction model,0.384362726866342,Unanchored model projection
-2027,ardl_ecm,ARDL error-correction model,0.383378540730945,Unanchored model projection
-2028,ardl_ecm,ARDL error-correction model,0.38228118867866,Unanchored model projection
-2029,ardl_ecm,ARDL error-correction model,0.381101891616185,Unanchored model projection
-2030,ardl_ecm,ARDL error-correction model,0.380458550653319,Unanchored model projection
-2031,ardl_ecm,ARDL error-correction model,0.3803225330034,Unanchored model projection
-2032,ardl_ecm,ARDL error-correction model,0.380470383282279,Unanchored model projection
-2033,ardl_ecm,ARDL error-correction model,0.382002877907887,Unanchored model projection
-2034,ardl_ecm,ARDL error-correction model,0.383337455732552,Unanchored model projection
-2035,ardl_ecm,ARDL error-correction model,0.384901041915699,Unanchored model projection
-2036,ardl_ecm,ARDL error-correction model,0.386786572225133,Unanchored model projection
-2037,ardl_ecm,ARDL error-correction model,0.389122464276628,Unanchored model projection
-2038,ardl_ecm,ARDL error-correction model,0.391403787888672,Unanchored model projection
-2039,ardl_ecm,ARDL error-correction model,0.393555384032557,Unanchored model projection
-2040,ardl_ecm,ARDL error-correction model,0.395595024874404,Unanchored model projection
-2041,ardl_ecm,ARDL error-correction model,0.397552474803086,Unanchored model projection
-2042,ardl_ecm,ARDL error-correction model,0.399452503651692,Unanchored model projection
-2043,ardl_ecm,ARDL error-correction model,0.401313110455974,Unanchored model projection
-2044,ardl_ecm,ARDL error-correction model,0.403146825777534,Unanchored model projection
-2045,ardl_ecm,ARDL error-correction model,0.404962241362494,Unanchored model projection
-2046,ardl_ecm,ARDL error-correction model,0.406765215209359,Unanchored model projection
-2047,ardl_ecm,ARDL error-correction model,0.408559732986607,Unanchored model projection
-2048,ardl_ecm,ARDL error-correction model,0.410348504311093,Unanchored model projection
-2049,ardl_ecm,ARDL error-correction model,0.412133370735861,Unanchored model projection
-2050,ardl_ecm,ARDL error-correction model,0.413915583704592,Unanchored model projection
-2051,ardl_ecm,ARDL error-correction model,0.415695993610454,Unanchored model projection
-2052,ardl_ecm,ARDL error-correction model,0.417475178311498,Unanchored model projection
-2053,ardl_ecm,ARDL error-correction model,0.419253530470667,Unanchored model projection
-2054,ardl_ecm,ARDL error-correction model,0.421031316907515,Unanchored model projection
-2055,ardl_ecm,ARDL error-correction model,0.422808718929228,Unanchored model projection
-2056,ardl_ecm,ARDL error-correction model,0.424585859736236,Unanchored model projection
-2057,ardl_ecm,ARDL error-correction model,0.426362823044717,Unanchored model projection
-2058,ardl_ecm,ARDL error-correction model,0.42813966574082,Unanchored model projection
-2059,ardl_ecm,ARDL error-correction model,0.429916426479365,Unanchored model projection
-2060,ardl_ecm,ARDL error-correction model,0.431693131526765,Unanchored model projection
-2061,ardl_ecm,ARDL error-correction model,0.433469798731366,Unanchored model projection
-2062,ardl_ecm,ARDL error-correction model,0.435246440221329,Unanchored model projection
-2063,ardl_ecm,ARDL error-correction model,0.437023064237889,Unanchored model projection
-2064,ardl_ecm,ARDL error-correction model,0.438799676381061,Unanchored model projection
-2065,ardl_ecm,ARDL error-correction model,0.440576280456124,Unanchored model projection
-2066,ardl_ecm,ARDL error-correction model,0.44235287904881,Unanchored model projection
-2026,univariate_arima,ARIMA with COVID controls,0.38098176677941,Unanchored model projection
-2027,univariate_arima,ARIMA with COVID controls,0.372528059768225,Unanchored model projection
-2028,univariate_arima,ARIMA with COVID controls,0.364313974553336,Unanchored model projection
-2029,univariate_arima,ARIMA with COVID controls,0.359838496652305,Unanchored model projection
-2030,univariate_arima,ARIMA with COVID controls,0.35740001422625,Unanchored model projection
-2031,univariate_arima,ARIMA with COVID controls,0.356071397110119,Unanchored model projection
-2032,univariate_arima,ARIMA with COVID controls,0.355347494644218,Unanchored model projection
-2033,univariate_arima,ARIMA with COVID controls,0.354953073427018,Unanchored model projection
-2034,univariate_arima,ARIMA with COVID controls,0.354738171414792,Unanchored model projection
-2035,univariate_arima,ARIMA with COVID controls,0.354621081175107,Unanchored model projection
-2036,univariate_arima,ARIMA with COVID controls,0.354557284079456,Unanchored model projection
-2037,univariate_arima,ARIMA with COVID controls,0.354522523971146,Unanchored model projection
-2038,univariate_arima,ARIMA with COVID controls,0.354503584784066,Unanchored model projection
-2039,univariate_arima,ARIMA with COVID controls,0.354493265690579,Unanchored model projection
-2040,univariate_arima,ARIMA with COVID controls,0.354487643290318,Unanchored model projection
-2041,univariate_arima,ARIMA with COVID controls,0.354484579902556,Unanchored model projection
-2042,univariate_arima,ARIMA with COVID controls,0.354482910803214,Unanchored model projection
-2043,univariate_arima,ARIMA with COVID controls,0.354482001387616,Unanchored model projection
-2044,univariate_arima,ARIMA with COVID controls,0.35448150588881,Unanchored model projection
-2045,univariate_arima,ARIMA with COVID controls,0.354481235914261,Unanchored model projection
-2046,univariate_arima,ARIMA with COVID controls,0.354481088817524,Unanchored model projection
-2047,univariate_arima,ARIMA with COVID controls,0.354481008671266,Unanchored model projection
-2048,univariate_arima,ARIMA with COVID controls,0.35448096500325,Unanchored model projection
-2049,univariate_arima,ARIMA with COVID controls,0.354480941210552,Unanchored model projection
-2050,univariate_arima,ARIMA with COVID controls,0.354480928247004,Unanchored model projection
-2051,univariate_arima,ARIMA with COVID controls,0.354480921183762,Unanchored model projection
-2052,univariate_arima,ARIMA with COVID controls,0.354480917335325,Unanchored model projection
-2053,univariate_arima,ARIMA with COVID controls,0.354480915238489,Unanchored model projection
-2054,univariate_arima,ARIMA with COVID controls,0.354480914096019,Unanchored model projection
-2055,univariate_arima,ARIMA with COVID controls,0.35448091347354,Unanchored model projection
-2056,univariate_arima,ARIMA with COVID controls,0.354480913134379,Unanchored model projection
-2057,univariate_arima,ARIMA with COVID controls,0.354480912949587,Unanchored model projection
-2058,univariate_arima,ARIMA with COVID controls,0.354480912848901,Unanchored model projection
-2059,univariate_arima,ARIMA with COVID controls,0.354480912794043,Unanchored model projection
-2060,univariate_arima,ARIMA with COVID controls,0.354480912764153,Unanchored model projection
-2061,univariate_arima,ARIMA with COVID controls,0.354480912747867,Unanchored model projection
-2062,univariate_arima,ARIMA with COVID controls,0.354480912738994,Unanchored model projection
-2063,univariate_arima,ARIMA with COVID controls,0.354480912734159,Unanchored model projection
-2064,univariate_arima,ARIMA with COVID controls,0.354480912731525,Unanchored model projection
-2065,univariate_arima,ARIMA with COVID controls,0.354480912730089,Unanchored model projection
-2066,univariate_arima,ARIMA with COVID controls,0.354480912729307,Unanchored model projection
-2026,structural_ols,Structural OLS (levels),0.387,Official forecast then model projection
-2027,structural_ols,Structural OLS (levels),0.389,Official forecast then model projection
-2028,structural_ols,Structural OLS (levels),0.384,Official forecast then model projection
-2029,structural_ols,Structural OLS (levels),0.378,Official forecast then model projection
-2030,structural_ols,Structural OLS (levels),0.371,Official forecast then model projection
-2031,structural_ols,Structural OLS (levels),0.369544678066247,Official forecast then model projection
-2032,structural_ols,Structural OLS (levels),0.368240298946762,Official forecast then model projection
-2033,structural_ols,Structural OLS (levels),0.369156694778407,Official forecast then model projection
-2034,structural_ols,Structural OLS (levels),0.37030169621449,Official forecast then model projection
-2035,structural_ols,Structural OLS (levels),0.37154686656674,Official forecast then model projection
-2036,structural_ols,Structural OLS (levels),0.373159774149738,Official forecast then model projection
-2037,structural_ols,Structural OLS (levels),0.374014546181595,Official forecast then model projection
-2038,structural_ols,Structural OLS (levels),0.374869318213452,Official forecast then model projection
-2039,structural_ols,Structural OLS (levels),0.37572409024531,Official forecast then model projection
-2040,structural_ols,Structural OLS (levels),0.376578862277168,Official forecast then model projection
-2041,structural_ols,Structural OLS (levels),0.377433634309024,Official forecast then model projection
-2042,structural_ols,Structural OLS (levels),0.378288406340883,Official forecast then model projection
-2043,structural_ols,Structural OLS (levels),0.37914317837274,Official forecast then model projection
-2044,structural_ols,Structural OLS (levels),0.379997950404597,Official forecast then model projection
-2045,structural_ols,Structural OLS (levels),0.380852722436455,Official forecast then model projection
-2046,structural_ols,Structural OLS (levels),0.381707494468313,Official forecast then model projection
-2047,structural_ols,Structural OLS (levels),0.38256226650017,Official forecast then model projection
-2048,structural_ols,Structural OLS (levels),0.383417038532027,Official forecast then model projection
-2049,structural_ols,Structural OLS (levels),0.384271810563885,Official forecast then model projection
-2050,structural_ols,Structural OLS (levels),0.385126582595742,Official forecast then model projection
-2051,structural_ols,Structural OLS (levels),0.3859813546276,Official forecast then model projection
-2052,structural_ols,Structural OLS (levels),0.386836126659457,Official forecast then model projection
-2053,structural_ols,Structural OLS (levels),0.387690898691315,Official forecast then model projection
-2054,structural_ols,Structural OLS (levels),0.388545670723173,Official forecast then model projection
-2055,structural_ols,Structural OLS (levels),0.389400442755029,Official forecast then model projection
-2056,structural_ols,Structural OLS (levels),0.390255214786888,Official forecast then model projection
-2057,structural_ols,Structural OLS (levels),0.391109986818745,Official forecast then model projection
-2058,structural_ols,Structural OLS (levels),0.391964758850602,Official forecast then model projection
-2059,structural_ols,Structural OLS (levels),0.39281953088246,Official forecast then model projection
-2060,structural_ols,Structural OLS (levels),0.393674302914317,Official forecast then model projection
-2061,structural_ols,Structural OLS (levels),0.394529074946175,Official forecast then model projection
-2062,structural_ols,Structural OLS (levels),0.395383846978032,Official forecast then model projection
-2063,structural_ols,Structural OLS (levels),0.39623861900989,Official forecast then model projection
-2064,structural_ols,Structural OLS (levels),0.397093391041747,Official forecast then model projection
-2065,structural_ols,Structural OLS (levels),0.397948163073605,Official forecast then model projection
-2066,structural_ols,Structural OLS (levels),0.398802935105462,Official forecast then model projection
-2026,arimax_level,ARIMAX (levels),0.387,Official forecast then model projection
-2027,arimax_level,ARIMAX (levels),0.389,Official forecast then model projection
-2028,arimax_level,ARIMAX (levels),0.384,Official forecast then model projection
-2029,arimax_level,ARIMAX (levels),0.378,Official forecast then model projection
-2030,arimax_level,ARIMAX (levels),0.371,Official forecast then model projection
-2031,arimax_level,ARIMAX (levels),0.369541762826605,Official forecast then model projection
-2032,arimax_level,ARIMAX (levels),0.369098637914937,Official forecast then model projection
-2033,arimax_level,ARIMAX (levels),0.369915310724275,Official forecast then model projection
-2034,arimax_level,ARIMAX (levels),0.371348341053669,Official forecast then model projection
-2035,arimax_level,ARIMAX (levels),0.373060547340611,Official forecast then model projection
-2036,arimax_level,ARIMAX (levels),0.375315116469891,Official forecast then model projection
-2037,arimax_level,ARIMAX (levels),0.376570630882983,Official forecast then model projection
-2038,arimax_level,ARIMAX (levels),0.37780299965432,Official forecast then model projection
-2039,arimax_level,ARIMAX (levels),0.379007368341039,Official forecast then model projection
-2040,arimax_level,ARIMAX (levels),0.380187392496903,Official forecast then model projection
-2041,arimax_level,ARIMAX (levels),0.381349593954222,Official forecast then model projection
-2042,arimax_level,ARIMAX (levels),0.382500379853399,Official forecast then model projection
-2043,arimax_level,ARIMAX (levels),0.383644800608256,Official forecast then model projection
-2044,arimax_level,ARIMAX (levels),0.384786299631099,Official forecast then model projection
-2045,arimax_level,ARIMAX (levels),0.385926935163348,Official forecast then model projection
-2046,arimax_level,ARIMAX (levels),0.387067757231869,Official forecast then model projection
-2047,arimax_level,ARIMAX (levels),0.388209173500737,Official forecast then model projection
-2048,arimax_level,ARIMAX (levels),0.389351235719146,Official forecast then model projection
-2049,arimax_level,ARIMAX (levels),0.390493833982382,Official forecast then model projection
-2050,arimax_level,ARIMAX (levels),0.391636812199565,Official forecast then model projection
-2051,arimax_level,ARIMAX (levels),0.392780026539831,Official forecast then model projection
-2052,arimax_level,ARIMAX (levels),0.393923367740351,Official forecast then model projection
-2053,arimax_level,ARIMAX (levels),0.39506676351911,Official forecast then model projection
-2054,arimax_level,ARIMAX (levels),0.396210172049401,Official forecast then model projection
-2055,arimax_level,ARIMAX (levels),0.397353572972133,Official forecast then model projection
-2056,arimax_level,ARIMAX (levels),0.398496959197797,Official forecast then model projection
-2057,arimax_level,ARIMAX (levels),0.399640330717279,Official forecast then model projection
-2058,arimax_level,ARIMAX (levels),0.400783690529032,Official forecast then model projection
-2059,arimax_level,ARIMAX (levels),0.401927042296095,Official forecast then model projection
-2060,arimax_level,ARIMAX (levels),0.403070389215811,Official forecast then model projection
-2061,arimax_level,ARIMAX (levels),0.404213733635087,Official forecast then model projection
-2062,arimax_level,ARIMAX (levels),0.405357077060677,Official forecast then model projection
-2063,arimax_level,ARIMAX (levels),0.406500420335076,Official forecast then model projection
-2064,arimax_level,ARIMAX (levels),0.407643763846798,Official forecast then model projection
-2065,arimax_level,ARIMAX (levels),0.408787107712321,Official forecast then model projection
-2066,arimax_level,ARIMAX (levels),0.409930451908859,Official forecast then model projection
-2026,arimax_diff,ARIMAX (differences),0.387,Official forecast then model projection
-2027,arimax_diff,ARIMAX (differences),0.389,Official forecast then model projection
-2028,arimax_diff,ARIMAX (differences),0.384,Official forecast then model projection
-2029,arimax_diff,ARIMAX (differences),0.378,Official forecast then model projection
-2030,arimax_diff,ARIMAX (differences),0.371,Official forecast then model projection
-2031,arimax_diff,ARIMAX (differences),0.369043573008876,Official forecast then model projection
-2032,arimax_diff,ARIMAX (differences),0.366895817080284,Official forecast then model projection
-2033,arimax_diff,ARIMAX (differences),0.366230511365195,Official forecast then model projection
-2034,arimax_diff,ARIMAX (differences),0.365371495839923,Official forecast then model projection
-2035,arimax_diff,ARIMAX (differences),0.364400599766798,Official forecast then model projection
-2036,arimax_diff,ARIMAX (differences),0.363150255801469,Official forecast then model projection
-2037,arimax_diff,ARIMAX (differences),0.362527170405711,Official forecast then model projection
-2038,arimax_diff,ARIMAX (differences),0.361904085009954,Official forecast then model projection
-2039,arimax_diff,ARIMAX (differences),0.361280999614196,Official forecast then model projection
-2040,arimax_diff,ARIMAX (differences),0.360657914218438,Official forecast then model projection
-2041,arimax_diff,ARIMAX (differences),0.360034828822681,Official forecast then model projection
-2042,arimax_diff,ARIMAX (differences),0.359411743426923,Official forecast then model projection
-2043,arimax_diff,ARIMAX (differences),0.358788658031165,Official forecast then model projection
-2044,arimax_diff,ARIMAX (differences),0.358165572635408,Official forecast then model projection
-2045,arimax_diff,ARIMAX (differences),0.35754248723965,Official forecast then model projection
-2046,arimax_diff,ARIMAX (differences),0.356919401843892,Official forecast then model projection
-2047,arimax_diff,ARIMAX (differences),0.356296316448135,Official forecast then model projection
-2048,arimax_diff,ARIMAX (differences),0.355673231052377,Official forecast then model projection
-2049,arimax_diff,ARIMAX (differences),0.355050145656619,Official forecast then model projection
-2050,arimax_diff,ARIMAX (differences),0.354427060260862,Official forecast then model projection
-2051,arimax_diff,ARIMAX (differences),0.353803974865104,Official forecast then model projection
-2052,arimax_diff,ARIMAX (differences),0.353180889469347,Official forecast then model projection
-2053,arimax_diff,ARIMAX (differences),0.352557804073589,Official forecast then model projection
-2054,arimax_diff,ARIMAX (differences),0.351934718677831,Official forecast then model projection
-2055,arimax_diff,ARIMAX (differences),0.351311633282074,Official forecast then model projection
-2056,arimax_diff,ARIMAX (differences),0.350688547886315,Official forecast then model projection
-2057,arimax_diff,ARIMAX (differences),0.350065462490558,Official forecast then model projection
-2058,arimax_diff,ARIMAX (differences),0.349442377094801,Official forecast then model projection
-2059,arimax_diff,ARIMAX (differences),0.348819291699043,Official forecast then model projection
-2060,arimax_diff,ARIMAX (differences),0.348196206303286,Official forecast then model projection
-2061,arimax_diff,ARIMAX (differences),0.347573120907528,Official forecast then model projection
-2062,arimax_diff,ARIMAX (differences),0.34695003551177,Official forecast then model projection
-2063,arimax_diff,ARIMAX (differences),0.346326950116012,Official forecast then model projection
-2064,arimax_diff,ARIMAX (differences),0.345703864720254,Official forecast then model projection
-2065,arimax_diff,ARIMAX (differences),0.345080779324497,Official forecast then model projection
-2066,arimax_diff,ARIMAX (differences),0.344457693928739,Official forecast then model projection
-2026,dynamic_diff,Dynamic differences,0.387,Official forecast then model projection
-2027,dynamic_diff,Dynamic differences,0.389,Official forecast then model projection
-2028,dynamic_diff,Dynamic differences,0.384,Official forecast then model projection
-2029,dynamic_diff,Dynamic differences,0.378,Official forecast then model projection
-2030,dynamic_diff,Dynamic differences,0.371,Official forecast then model projection
-2031,dynamic_diff,Dynamic differences,0.370123964176472,Official forecast then model projection
-2032,dynamic_diff,Dynamic differences,0.369046547885807,Official forecast then model projection
-2033,dynamic_diff,Dynamic differences,0.369962347619676,Official forecast then model projection
-2034,dynamic_diff,Dynamic differences,0.369044271772521,Official forecast then model projection
-2035,dynamic_diff,Dynamic differences,0.368008082796662,Official forecast then model projection
-2036,dynamic_diff,Dynamic differences,0.366673374376631,Official forecast then model projection
-2037,dynamic_diff,Dynamic differences,0.366006726808523,Official forecast then model projection
-2038,dynamic_diff,Dynamic differences,0.365340079240416,Official forecast then model projection
-2039,dynamic_diff,Dynamic differences,0.364673431672308,Official forecast then model projection
-2040,dynamic_diff,Dynamic differences,0.3640067841042,Official forecast then model projection
-2041,dynamic_diff,Dynamic differences,0.363340136536092,Official forecast then model projection
-2042,dynamic_diff,Dynamic differences,0.362673488967984,Official forecast then model projection
-2043,dynamic_diff,Dynamic differences,0.362006841399876,Official forecast then model projection
-2044,dynamic_diff,Dynamic differences,0.361340193831768,Official forecast then model projection
-2045,dynamic_diff,Dynamic differences,0.36067354626366,Official forecast then model projection
-2046,dynamic_diff,Dynamic differences,0.360006898695553,Official forecast then model projection
-2047,dynamic_diff,Dynamic differences,0.359340251127445,Official forecast then model projection
-2048,dynamic_diff,Dynamic differences,0.358673603559337,Official forecast then model projection
-2049,dynamic_diff,Dynamic differences,0.358006955991229,Official forecast then model projection
-2050,dynamic_diff,Dynamic differences,0.357340308423121,Official forecast then model projection
-2051,dynamic_diff,Dynamic differences,0.356673660855013,Official forecast then model projection
-2052,dynamic_diff,Dynamic differences,0.356007013286906,Official forecast then model projection
-2053,dynamic_diff,Dynamic differences,0.355340365718798,Official forecast then model projection
-2054,dynamic_diff,Dynamic differences,0.35467371815069,Official forecast then model projection
-2055,dynamic_diff,Dynamic differences,0.354007070582582,Official forecast then model projection
-2056,dynamic_diff,Dynamic differences,0.353340423014474,Official forecast then model projection
-2057,dynamic_diff,Dynamic differences,0.352673775446366,Official forecast then model projection
-2058,dynamic_diff,Dynamic differences,0.352007127878258,Official forecast then model projection
-2059,dynamic_diff,Dynamic differences,0.35134048031015,Official forecast then model projection
-2060,dynamic_diff,Dynamic differences,0.350673832742043,Official forecast then model projection
-2061,dynamic_diff,Dynamic differences,0.350007185173935,Official forecast then model projection
-2062,dynamic_diff,Dynamic differences,0.349340537605827,Official forecast then model projection
-2063,dynamic_diff,Dynamic differences,0.348673890037719,Official forecast then model projection
-2064,dynamic_diff,Dynamic differences,0.348007242469611,Official forecast then model projection
-2065,dynamic_diff,Dynamic differences,0.347340594901503,Official forecast then model projection
-2066,dynamic_diff,Dynamic differences,0.346673947333396,Official forecast then model projection
-2026,hybrid,Hybrid structural/macro,0.387,Official forecast then model projection
-2027,hybrid,Hybrid structural/macro,0.389,Official forecast then model projection
-2028,hybrid,Hybrid structural/macro,0.384,Official forecast then model projection
-2029,hybrid,Hybrid structural/macro,0.378,Official forecast then model projection
-2030,hybrid,Hybrid structural/macro,0.371,Official forecast then model projection
-2031,hybrid,Hybrid structural/macro,0.371338873989275,Official forecast then model projection
-2032,hybrid,Hybrid structural/macro,0.371930362247583,Official forecast then model projection
-2033,hybrid,Hybrid structural/macro,0.371386353078689,Official forecast then model projection
-2034,hybrid,Hybrid structural/macro,0.37224632652624,Official forecast then model projection
-2035,hybrid,Hybrid structural/macro,0.373247032458886,Official forecast then model projection
-2036,hybrid,Hybrid structural/macro,0.374530282219268,Official forecast then model projection
-2037,hybrid,Hybrid structural/macro,0.37513983518902,Official forecast then model projection
-2038,hybrid,Hybrid structural/macro,0.375749388158771,Official forecast then model projection
-2039,hybrid,Hybrid structural/macro,0.376358941128522,Official forecast then model projection
-2040,hybrid,Hybrid structural/macro,0.376968494098274,Official forecast then model projection
-2041,hybrid,Hybrid structural/macro,0.377578047068024,Official forecast then model projection
-2042,hybrid,Hybrid structural/macro,0.378187600037777,Official forecast then model projection
-2043,hybrid,Hybrid structural/macro,0.378797153007528,Official forecast then model projection
-2044,hybrid,Hybrid structural/macro,0.379406705977279,Official forecast then model projection
-2045,hybrid,Hybrid structural/macro,0.380016258947031,Official forecast then model projection
-2046,hybrid,Hybrid structural/macro,0.380625811916782,Official forecast then model projection
-2047,hybrid,Hybrid structural/macro,0.381235364886533,Official forecast then model projection
-2048,hybrid,Hybrid structural/macro,0.381844917856284,Official forecast then model projection
-2049,hybrid,Hybrid structural/macro,0.382454470826036,Official forecast then model projection
-2050,hybrid,Hybrid structural/macro,0.383064023795787,Official forecast then model projection
-2051,hybrid,Hybrid structural/macro,0.383673576765539,Official forecast then model projection
-2052,hybrid,Hybrid structural/macro,0.38428312973529,Official forecast then model projection
-2053,hybrid,Hybrid structural/macro,0.384892682705041,Official forecast then model projection
-2054,hybrid,Hybrid structural/macro,0.385502235674793,Official forecast then model projection
-2055,hybrid,Hybrid structural/macro,0.386111788644544,Official forecast then model projection
-2056,hybrid,Hybrid structural/macro,0.386721341614296,Official forecast then model projection
-2057,hybrid,Hybrid structural/macro,0.387330894584047,Official forecast then model projection
-2058,hybrid,Hybrid structural/macro,0.387940447553798,Official forecast then model projection
-2059,hybrid,Hybrid structural/macro,0.38855000052355,Official forecast then model projection
-2060,hybrid,Hybrid structural/macro,0.389159553493301,Official forecast then model projection
-2061,hybrid,Hybrid structural/macro,0.389769106463052,Official forecast then model projection
-2062,hybrid,Hybrid structural/macro,0.390378659432804,Official forecast then model projection
-2063,hybrid,Hybrid structural/macro,0.390988212402555,Official forecast then model projection
-2064,hybrid,Hybrid structural/macro,0.391597765372307,Official forecast then model projection
-2065,hybrid,Hybrid structural/macro,0.392207318342058,Official forecast then model projection
-2066,hybrid,Hybrid structural/macro,0.392816871311809,Official forecast then model projection
-2026,ardl_ecm,ARDL error-correction model,0.387,Official forecast then model projection
-2027,ardl_ecm,ARDL error-correction model,0.389,Official forecast then model projection
-2028,ardl_ecm,ARDL error-correction model,0.384,Official forecast then model projection
-2029,ardl_ecm,ARDL error-correction model,0.378,Official forecast then model projection
-2030,ardl_ecm,ARDL error-correction model,0.371,Official forecast then model projection
-2031,ardl_ecm,ARDL error-correction model,0.370863982350082,Official forecast then model projection
-2032,ardl_ecm,ARDL error-correction model,0.37101183262896,Official forecast then model projection
-2033,ardl_ecm,ARDL error-correction model,0.372544327254569,Official forecast then model projection
-2034,ardl_ecm,ARDL error-correction model,0.373878905079233,Official forecast then model projection
-2035,ardl_ecm,ARDL error-correction model,0.37544249126238,Official forecast then model projection
-2036,ardl_ecm,ARDL error-correction model,0.377328021571814,Official forecast then model projection
-2037,ardl_ecm,ARDL error-correction model,0.379663913623309,Official forecast then model projection
-2038,ardl_ecm,ARDL error-correction model,0.381945237235353,Official forecast then model projection
-2039,ardl_ecm,ARDL error-correction model,0.384096833379239,Official forecast then model projection
-2040,ardl_ecm,ARDL error-correction model,0.386136474221085,Official forecast then model projection
-2041,ardl_ecm,ARDL error-correction model,0.388093924149767,Official forecast then model projection
-2042,ardl_ecm,ARDL error-correction model,0.389993952998373,Official forecast then model projection
-2043,ardl_ecm,ARDL error-correction model,0.391854559802656,Official forecast then model projection
-2044,ardl_ecm,ARDL error-correction model,0.393688275124215,Official forecast then model projection
-2045,ardl_ecm,ARDL error-correction model,0.395503690709175,Official forecast then model projection
-2046,ardl_ecm,ARDL error-correction model,0.39730666455604,Official forecast then model projection
-2047,ardl_ecm,ARDL error-correction model,0.399101182333288,Official forecast then model projection
-2048,ardl_ecm,ARDL error-correction model,0.400889953657774,Official forecast then model projection
-2049,ardl_ecm,ARDL error-correction model,0.402674820082542,Official forecast then model projection
-2050,ardl_ecm,ARDL error-correction model,0.404457033051274,Official forecast then model projection
-2051,ardl_ecm,ARDL error-correction model,0.406237442957135,Official forecast then model projection
-2052,ardl_ecm,ARDL error-correction model,0.40801662765818,Official forecast then model projection
-2053,ardl_ecm,ARDL error-correction model,0.409794979817348,Official forecast then model projection
-2054,ardl_ecm,ARDL error-correction model,0.411572766254196,Official forecast then model projection
-2055,ardl_ecm,ARDL error-correction model,0.413350168275909,Official forecast then model projection
-2056,ardl_ecm,ARDL error-correction model,0.415127309082917,Official forecast then model projection
-2057,ardl_ecm,ARDL error-correction model,0.416904272391399,Official forecast then model projection
-2058,ardl_ecm,ARDL error-correction model,0.418681115087501,Official forecast then model projection
-2059,ardl_ecm,ARDL error-correction model,0.420457875826046,Official forecast then model projection
-2060,ardl_ecm,ARDL error-correction model,0.422234580873447,Official forecast then model projection
-2061,ardl_ecm,ARDL error-correction model,0.424011248078047,Official forecast then model projection
-2062,ardl_ecm,ARDL error-correction model,0.42578788956801,Official forecast then model projection
-2063,ardl_ecm,ARDL error-correction model,0.42756451358457,Official forecast then model projection
-2064,ardl_ecm,ARDL error-correction model,0.429341125727742,Official forecast then model projection
-2065,ardl_ecm,ARDL error-correction model,0.431117729802805,Official forecast then model projection
-2066,ardl_ecm,ARDL error-correction model,0.432894328395491,Official forecast then model projection
-2026,univariate_arima,ARIMA with COVID controls,0.387,Official forecast then model projection
-2027,univariate_arima,ARIMA with COVID controls,0.389,Official forecast then model projection
-2028,univariate_arima,ARIMA with COVID controls,0.384,Official forecast then model projection
-2029,univariate_arima,ARIMA with COVID controls,0.378,Official forecast then model projection
-2030,univariate_arima,ARIMA with COVID controls,0.371,Official forecast then model projection
-2031,univariate_arima,ARIMA with COVID controls,0.369671382883869,Official forecast then model projection
-2032,univariate_arima,ARIMA with COVID controls,0.368947480417968,Official forecast then model projection
-2033,univariate_arima,ARIMA with COVID controls,0.368553059200768,Official forecast then model projection
-2034,univariate_arima,ARIMA with COVID controls,0.368338157188542,Official forecast then model projection
-2035,univariate_arima,ARIMA with COVID controls,0.368221066948857,Official forecast then model projection
-2036,univariate_arima,ARIMA with COVID controls,0.368157269853206,Official forecast then model projection
-2037,univariate_arima,ARIMA with COVID controls,0.368122509744896,Official forecast then model projection
-2038,univariate_arima,ARIMA with COVID controls,0.368103570557816,Official forecast then model projection
-2039,univariate_arima,ARIMA with COVID controls,0.368093251464329,Official forecast then model projection
-2040,univariate_arima,ARIMA with COVID controls,0.368087629064068,Official forecast then model projection
-2041,univariate_arima,ARIMA with COVID controls,0.368084565676306,Official forecast then model projection
-2042,univariate_arima,ARIMA with COVID controls,0.368082896576964,Official forecast then model projection
-2043,univariate_arima,ARIMA with COVID controls,0.368081987161366,Official forecast then model projection
-2044,univariate_arima,ARIMA with COVID controls,0.36808149166256,Official forecast then model projection
-2045,univariate_arima,ARIMA with COVID controls,0.368081221688011,Official forecast then model projection
-2046,univariate_arima,ARIMA with COVID controls,0.368081074591274,Official forecast then model projection
-2047,univariate_arima,ARIMA with COVID controls,0.368080994445016,Official forecast then model projection
-2048,univariate_arima,ARIMA with COVID controls,0.368080950776999,Official forecast then model projection
-2049,univariate_arima,ARIMA with COVID controls,0.368080926984302,Official forecast then model projection
-2050,univariate_arima,ARIMA with COVID controls,0.368080914020754,Official forecast then model projection
-2051,univariate_arima,ARIMA with COVID controls,0.368080906957512,Official forecast then model projection
-2052,univariate_arima,ARIMA with COVID controls,0.368080903109075,Official forecast then model projection
-2053,univariate_arima,ARIMA with COVID controls,0.368080901012239,Official forecast then model projection
-2054,univariate_arima,ARIMA with COVID controls,0.368080899869769,Official forecast then model projection
-2055,univariate_arima,ARIMA with COVID controls,0.36808089924729,Official forecast then model projection
-2056,univariate_arima,ARIMA with COVID controls,0.368080898908129,Official forecast then model projection
-2057,univariate_arima,ARIMA with COVID controls,0.368080898723336,Official forecast then model projection
-2058,univariate_arima,ARIMA with COVID controls,0.368080898622651,Official forecast then model projection
-2059,univariate_arima,ARIMA with COVID controls,0.368080898567793,Official forecast then model projection
-2060,univariate_arima,ARIMA with COVID controls,0.368080898537903,Official forecast then model projection
-2061,univariate_arima,ARIMA with COVID controls,0.368080898521617,Official forecast then model projection
-2062,univariate_arima,ARIMA with COVID controls,0.368080898512744,Official forecast then model projection
-2063,univariate_arima,ARIMA with COVID controls,0.368080898507909,Official forecast then model projection
-2064,univariate_arima,ARIMA with COVID controls,0.368080898505275,Official forecast then model projection
-2065,univariate_arima,ARIMA with COVID controls,0.368080898503839,Official forecast then model projection
-2066,univariate_arima,ARIMA with COVID controls,0.368080898503057,Official forecast then model projection
+year,model,model_label,value,path_type,interest_treatment,interest_treatment_label
+1980,historical,Historical national-accounts concept,0.314282533674719,Historical,exclude_other_interest,Exclude conventional other interest
+1981,historical,Historical national-accounts concept,0.321981180877047,Historical,exclude_other_interest,Exclude conventional other interest
+1982,historical,Historical national-accounts concept,0.321765360843483,Historical,exclude_other_interest,Exclude conventional other interest
+1983,historical,Historical national-accounts concept,0.346135629256176,Historical,exclude_other_interest,Exclude conventional other interest
+1984,historical,Historical national-accounts concept,0.348398490058305,Historical,exclude_other_interest,Exclude conventional other interest
+1985,historical,Historical national-accounts concept,0.35481339785977,Historical,exclude_other_interest,Exclude conventional other interest
+1986,historical,Historical national-accounts concept,0.353111194481238,Historical,exclude_other_interest,Exclude conventional other interest
+1987,historical,Historical national-accounts concept,0.352234222602202,Historical,exclude_other_interest,Exclude conventional other interest
+1988,historical,Historical national-accounts concept,0.329278797051694,Historical,exclude_other_interest,Exclude conventional other interest
+1989,historical,Historical national-accounts concept,0.313529456414483,Historical,exclude_other_interest,Exclude conventional other interest
+1990,historical,Historical national-accounts concept,0.314457837257625,Historical,exclude_other_interest,Exclude conventional other interest
+1991,historical,Historical national-accounts concept,0.332630546466873,Historical,exclude_other_interest,Exclude conventional other interest
+1992,historical,Historical national-accounts concept,0.350995361035053,Historical,exclude_other_interest,Exclude conventional other interest
+1993,historical,Historical national-accounts concept,0.351029729766181,Historical,exclude_other_interest,Exclude conventional other interest
+1994,historical,Historical national-accounts concept,0.349054038720506,Historical,exclude_other_interest,Exclude conventional other interest
+1995,historical,Historical national-accounts concept,0.342982796741621,Historical,exclude_other_interest,Exclude conventional other interest
+1996,historical,Historical national-accounts concept,0.340383693588626,Historical,exclude_other_interest,Exclude conventional other interest
+1997,historical,Historical national-accounts concept,0.335572627680193,Historical,exclude_other_interest,Exclude conventional other interest
+1998,historical,Historical national-accounts concept,0.327061812023709,Historical,exclude_other_interest,Exclude conventional other interest
+1999,historical,Historical national-accounts concept,0.33283494933809,Historical,exclude_other_interest,Exclude conventional other interest
+2000,historical,Historical national-accounts concept,0.332033497507267,Historical,exclude_other_interest,Exclude conventional other interest
+2001,historical,Historical national-accounts concept,0.340755090473814,Historical,exclude_other_interest,Exclude conventional other interest
+2002,historical,Historical national-accounts concept,0.336841924652616,Historical,exclude_other_interest,Exclude conventional other interest
+2003,historical,Historical national-accounts concept,0.331848026814999,Historical,exclude_other_interest,Exclude conventional other interest
+2004,historical,Historical national-accounts concept,0.331178145143487,Historical,exclude_other_interest,Exclude conventional other interest
+2005,historical,Historical national-accounts concept,0.33096688993233,Historical,exclude_other_interest,Exclude conventional other interest
+2006,historical,Historical national-accounts concept,0.328588183038633,Historical,exclude_other_interest,Exclude conventional other interest
+2007,historical,Historical national-accounts concept,0.324508714879261,Historical,exclude_other_interest,Exclude conventional other interest
+2008,historical,Historical national-accounts concept,0.323381864225715,Historical,exclude_other_interest,Exclude conventional other interest
+2009,historical,Historical national-accounts concept,0.345384537584586,Historical,exclude_other_interest,Exclude conventional other interest
+2010,historical,Historical national-accounts concept,0.348802343681278,Historical,exclude_other_interest,Exclude conventional other interest
+2011,historical,Historical national-accounts concept,0.337557068560976,Historical,exclude_other_interest,Exclude conventional other interest
+2012,historical,Historical national-accounts concept,0.340366551662246,Historical,exclude_other_interest,Exclude conventional other interest
+2013,historical,Historical national-accounts concept,0.335789108971806,Historical,exclude_other_interest,Exclude conventional other interest
+2014,historical,Historical national-accounts concept,0.336198082768878,Historical,exclude_other_interest,Exclude conventional other interest
+2015,historical,Historical national-accounts concept,0.339910313901345,Historical,exclude_other_interest,Exclude conventional other interest
+2016,historical,Historical national-accounts concept,0.34606272363207,Historical,exclude_other_interest,Exclude conventional other interest
+2017,historical,Historical national-accounts concept,0.341654398405476,Historical,exclude_other_interest,Exclude conventional other interest
+2018,historical,Historical national-accounts concept,0.3404240934401,Historical,exclude_other_interest,Exclude conventional other interest
+2019,historical,Historical national-accounts concept,0.340792684143503,Historical,exclude_other_interest,Exclude conventional other interest
+2020,historical,Historical national-accounts concept,0.393181241849007,Historical,exclude_other_interest,Exclude conventional other interest
+2021,historical,Historical national-accounts concept,0.415593685445313,Historical,exclude_other_interest,Exclude conventional other interest
+2022,historical,Historical national-accounts concept,0.370772320697757,Historical,exclude_other_interest,Exclude conventional other interest
+2023,historical,Historical national-accounts concept,0.343482881928863,Historical,exclude_other_interest,Exclude conventional other interest
+2024,historical,Historical national-accounts concept,0.354590643296671,Historical,exclude_other_interest,Exclude conventional other interest
+2025,historical,Historical national-accounts concept,0.364354044063882,Historical,exclude_other_interest,Exclude conventional other interest
+2026,official,PBO concept: Exclude conventional other interest,0.371,Official forecast,,
+2027,official,PBO concept: Exclude conventional other interest,0.371,Official forecast,,
+2028,official,PBO concept: Exclude conventional other interest,0.364,Official forecast,,
+2029,official,PBO concept: Exclude conventional other interest,0.357,Official forecast,,
+2030,official,PBO concept: Exclude conventional other interest,0.349,Official forecast,,
+2026,structural_ols,Structural OLS (levels),0.347761128001094,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2027,structural_ols,Structural OLS (levels),0.348492431796559,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2028,structural_ols,Structural OLS (levels),0.348601467470204,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2029,structural_ols,Structural OLS (levels),0.347761692168369,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2030,structural_ols,Structural OLS (levels),0.34676958881215,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2031,structural_ols,Structural OLS (levels),0.345627265146288,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2032,structural_ols,Structural OLS (levels),0.344471625206279,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2033,structural_ols,Structural OLS (levels),0.345036103097545,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2034,structural_ols,Structural OLS (levels),0.34570532367054,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2035,structural_ols,Structural OLS (levels),0.346385328417215,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2036,structural_ols,Structural OLS (levels),0.347275635865072,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2037,structural_ols,Structural OLS (levels),0.347798879833756,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2038,structural_ols,Structural OLS (levels),0.348322123802439,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2039,structural_ols,Structural OLS (levels),0.348845367771123,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2040,structural_ols,Structural OLS (levels),0.349368611739807,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2041,structural_ols,Structural OLS (levels),0.349891855708491,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2042,structural_ols,Structural OLS (levels),0.350415099677175,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2043,structural_ols,Structural OLS (levels),0.350938343645859,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2044,structural_ols,Structural OLS (levels),0.351461587614542,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2045,structural_ols,Structural OLS (levels),0.351984831583226,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2046,structural_ols,Structural OLS (levels),0.35250807555191,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2047,structural_ols,Structural OLS (levels),0.353031319520593,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2048,structural_ols,Structural OLS (levels),0.353554563489277,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2049,structural_ols,Structural OLS (levels),0.354077807457961,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2050,structural_ols,Structural OLS (levels),0.354601051426644,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2051,structural_ols,Structural OLS (levels),0.355124295395328,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2052,structural_ols,Structural OLS (levels),0.355647539364012,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2053,structural_ols,Structural OLS (levels),0.356170783332696,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2054,structural_ols,Structural OLS (levels),0.356694027301379,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2055,structural_ols,Structural OLS (levels),0.357217271270063,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2056,structural_ols,Structural OLS (levels),0.357740515238747,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2057,structural_ols,Structural OLS (levels),0.35826375920743,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2058,structural_ols,Structural OLS (levels),0.358787003176114,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2059,structural_ols,Structural OLS (levels),0.359310247144798,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2060,structural_ols,Structural OLS (levels),0.359833491113482,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2061,structural_ols,Structural OLS (levels),0.360356735082165,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2062,structural_ols,Structural OLS (levels),0.360879979050849,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2063,structural_ols,Structural OLS (levels),0.361403223019533,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2064,structural_ols,Structural OLS (levels),0.361926466988217,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2065,structural_ols,Structural OLS (levels),0.362449710956901,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2066,structural_ols,Structural OLS (levels),0.362972954925584,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2026,arimax_level,ARIMAX (levels),0.36434916677435,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2027,arimax_level,ARIMAX (levels),0.364157621793802,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2028,arimax_level,ARIMAX (levels),0.363665742356014,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2029,arimax_level,ARIMAX (levels),0.362416795418722,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2030,arimax_level,ARIMAX (levels),0.361177807844677,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2031,arimax_level,ARIMAX (levels),0.359977971562794,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2032,arimax_level,ARIMAX (levels),0.358833558568011,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2033,arimax_level,ARIMAX (levels),0.358768517942251,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2034,arimax_level,ARIMAX (levels),0.358902264697825,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2035,arimax_level,ARIMAX (levels),0.359094533926574,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2036,arimax_level,ARIMAX (levels),0.359581679655959,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2037,arimax_level,ARIMAX (levels),0.3598411583471,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2038,arimax_level,ARIMAX (levels),0.360156072255127,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2039,arimax_level,ARIMAX (levels),0.360516452449045,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2040,arimax_level,ARIMAX (levels),0.360914122713587,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2041,arimax_level,ARIMAX (levels),0.361342377164627,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2042,arimax_level,ARIMAX (levels),0.361795715839113,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2043,arimax_level,ARIMAX (levels),0.362269627833929,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2044,arimax_level,ARIMAX (levels),0.362760413442961,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2045,arimax_level,ARIMAX (levels),0.363265038279315,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2046,arimax_level,ARIMAX (levels),0.36378101363076,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2047,arimax_level,ARIMAX (levels),0.364306298330903,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2048,arimax_level,ARIMAX (levels),0.36483921827689,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2049,arimax_level,ARIMAX (levels),0.365378400420266,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2050,arimax_level,ARIMAX (levels),0.365922718628273,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2051,arimax_level,ARIMAX (levels),0.366471249280932,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2052,arimax_level,ARIMAX (levels),0.367023234853109,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2053,arimax_level,ARIMAX (levels),0.367578054045634,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2054,arimax_level,ARIMAX (levels),0.368135197287745,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2055,arimax_level,ARIMAX (levels),0.368694246644935,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2056,arimax_level,ARIMAX (levels),0.369254859339984,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2057,arimax_level,ARIMAX (levels),0.369816754237392,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2058,arimax_level,ARIMAX (levels),0.370379700758343,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2059,arimax_level,ARIMAX (levels),0.370943509789071,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2060,arimax_level,ARIMAX (levels),0.371508026224195,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2061,arimax_level,ARIMAX (levels),0.37207312285098,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2062,arimax_level,ARIMAX (levels),0.372638695333392,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2063,arimax_level,ARIMAX (levels),0.373204658098176,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2064,arimax_level,ARIMAX (levels),0.373770940960742,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2065,arimax_level,ARIMAX (levels),0.374337486357814,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2066,arimax_level,ARIMAX (levels),0.374904247077735,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2026,arimax_diff,Differenced ARIMAX,0.364313238267616,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2027,arimax_diff,Differenced ARIMAX,0.3637883581489,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2028,arimax_diff,Differenced ARIMAX,0.36272861967462,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2029,arimax_diff,Differenced ARIMAX,0.360823357709012,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2030,arimax_diff,Differenced ARIMAX,0.359153419828577,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2031,arimax_diff,Differenced ARIMAX,0.357623155280644,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2032,arimax_diff,Differenced ARIMAX,0.356057560819822,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2033,arimax_diff,Differenced ARIMAX,0.357373233801491,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2034,arimax_diff,Differenced ARIMAX,0.356698172625754,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2035,arimax_diff,Differenced ARIMAX,0.355989296186118,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2036,arimax_diff,Differenced ARIMAX,0.355066058524062,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2037,arimax_diff,Differenced ARIMAX,0.354549607590095,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2038,arimax_diff,Differenced ARIMAX,0.354033156656128,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2039,arimax_diff,Differenced ARIMAX,0.35351670572216,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2040,arimax_diff,Differenced ARIMAX,0.353000254788193,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2041,arimax_diff,Differenced ARIMAX,0.352483803854225,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2042,arimax_diff,Differenced ARIMAX,0.351967352920258,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2043,arimax_diff,Differenced ARIMAX,0.35145090198629,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2044,arimax_diff,Differenced ARIMAX,0.350934451052323,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2045,arimax_diff,Differenced ARIMAX,0.350418000118355,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2046,arimax_diff,Differenced ARIMAX,0.349901549184388,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2047,arimax_diff,Differenced ARIMAX,0.34938509825042,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2048,arimax_diff,Differenced ARIMAX,0.348868647316453,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2049,arimax_diff,Differenced ARIMAX,0.348352196382485,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2050,arimax_diff,Differenced ARIMAX,0.347835745448518,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2051,arimax_diff,Differenced ARIMAX,0.34731929451455,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2052,arimax_diff,Differenced ARIMAX,0.346802843580583,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2053,arimax_diff,Differenced ARIMAX,0.346286392646615,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2054,arimax_diff,Differenced ARIMAX,0.345769941712648,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2055,arimax_diff,Differenced ARIMAX,0.345253490778681,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2056,arimax_diff,Differenced ARIMAX,0.344737039844713,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2057,arimax_diff,Differenced ARIMAX,0.344220588910746,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2058,arimax_diff,Differenced ARIMAX,0.343704137976778,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2059,arimax_diff,Differenced ARIMAX,0.34318768704281,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2060,arimax_diff,Differenced ARIMAX,0.342671236108843,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2061,arimax_diff,Differenced ARIMAX,0.342154785174876,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2062,arimax_diff,Differenced ARIMAX,0.341638334240908,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2063,arimax_diff,Differenced ARIMAX,0.341121883306941,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2064,arimax_diff,Differenced ARIMAX,0.340605432372973,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2065,arimax_diff,Differenced ARIMAX,0.340088981439005,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2066,arimax_diff,Differenced ARIMAX,0.339572530505038,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2026,hybrid,Hybrid structural/macro,0.366367490315056,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2027,hybrid,Hybrid structural/macro,0.367542938519867,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2028,hybrid,Hybrid structural/macro,0.36814677180015,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2029,hybrid,Hybrid structural/macro,0.367843085913668,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2030,hybrid,Hybrid structural/macro,0.367589659544634,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2031,hybrid,Hybrid structural/macro,0.367232012508622,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2032,hybrid,Hybrid structural/macro,0.366924576155541,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2033,hybrid,Hybrid structural/macro,0.366383756967224,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2034,hybrid,Hybrid structural/macro,0.366913875660823,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2035,hybrid,Hybrid structural/macro,0.367481116963481,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2036,hybrid,Hybrid structural/macro,0.368217718220633,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2037,hybrid,Hybrid structural/macro,0.368618048140674,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2038,hybrid,Hybrid structural/macro,0.369018378060715,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2039,hybrid,Hybrid structural/macro,0.369418707980756,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2040,hybrid,Hybrid structural/macro,0.369819037900798,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2041,hybrid,Hybrid structural/macro,0.370219367820839,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2042,hybrid,Hybrid structural/macro,0.37061969774088,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2043,hybrid,Hybrid structural/macro,0.371020027660921,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2044,hybrid,Hybrid structural/macro,0.371420357580962,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2045,hybrid,Hybrid structural/macro,0.371820687501004,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2046,hybrid,Hybrid structural/macro,0.372221017421045,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2047,hybrid,Hybrid structural/macro,0.372621347341086,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2048,hybrid,Hybrid structural/macro,0.373021677261127,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2049,hybrid,Hybrid structural/macro,0.373422007181168,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2050,hybrid,Hybrid structural/macro,0.37382233710121,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2051,hybrid,Hybrid structural/macro,0.374222667021251,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2052,hybrid,Hybrid structural/macro,0.374622996941292,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2053,hybrid,Hybrid structural/macro,0.375023326861333,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2054,hybrid,Hybrid structural/macro,0.375423656781374,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2055,hybrid,Hybrid structural/macro,0.375823986701415,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2056,hybrid,Hybrid structural/macro,0.376224316621457,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2057,hybrid,Hybrid structural/macro,0.376624646541498,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2058,hybrid,Hybrid structural/macro,0.377024976461539,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2059,hybrid,Hybrid structural/macro,0.37742530638158,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2060,hybrid,Hybrid structural/macro,0.377825636301621,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2061,hybrid,Hybrid structural/macro,0.378225966221663,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2062,hybrid,Hybrid structural/macro,0.378626296141704,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2063,hybrid,Hybrid structural/macro,0.379026626061745,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2064,hybrid,Hybrid structural/macro,0.379426955981786,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2065,hybrid,Hybrid structural/macro,0.379827285901828,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2066,hybrid,Hybrid structural/macro,0.380227615821868,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2026,ardl_ecm,ARDL error-correction model,0.356294527767027,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2027,ardl_ecm,ARDL error-correction model,0.352357479459989,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2028,ardl_ecm,ARDL error-correction model,0.351638313020092,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2029,ardl_ecm,ARDL error-correction model,0.346941838961911,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2030,ardl_ecm,ARDL error-correction model,0.341163021416679,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2031,ardl_ecm,ARDL error-correction model,0.338162953130964,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2032,ardl_ecm,ARDL error-correction model,0.33563911990624,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2033,ardl_ecm,ARDL error-correction model,0.334520163750123,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2034,ardl_ecm,ARDL error-correction model,0.333472864771474,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2035,ardl_ecm,ARDL error-correction model,0.332487663010992,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2036,ardl_ecm,ARDL error-correction model,0.331554465140561,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2037,ardl_ecm,ARDL error-correction model,0.330434070220543,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2038,ardl_ecm,ARDL error-correction model,0.32939112458484,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2039,ardl_ecm,ARDL error-correction model,0.328413281013445,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2040,ardl_ecm,ARDL error-correction model,0.327490142582209,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2041,ardl_ecm,ARDL error-correction model,0.326612949630858,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2042,ardl_ecm,ARDL error-correction model,0.325774318684092,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2043,ardl_ecm,ARDL error-correction model,0.324968024228057,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2044,ardl_ecm,ARDL error-correction model,0.324188815964747,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2045,ardl_ecm,ARDL error-correction model,0.323432265529231,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2046,ardl_ecm,ARDL error-correction model,0.322694637741523,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2047,ardl_ecm,ARDL error-correction model,0.321972782337913,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2048,ardl_ecm,ARDL error-correction model,0.321264042832081,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2049,ardl_ecm,ARDL error-correction model,0.32056617972957,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2050,ardl_ecm,ARDL error-correction model,0.319877305787709,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2051,ardl_ecm,ARDL error-correction model,0.319195831397347,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2052,ardl_ecm,ARDL error-correction model,0.318520418479565,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2053,ardl_ecm,ARDL error-correction model,0.317849941552486,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2054,ardl_ecm,ARDL error-correction model,0.317183454840676,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2055,ardl_ecm,ARDL error-correction model,0.316520164480459,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2056,ardl_ecm,ARDL error-correction model,0.315859405025376,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2057,ardl_ecm,ARDL error-correction model,0.315200619582094,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2058,ardl_ecm,ARDL error-correction model,0.314543343012677,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2059,ardl_ecm,ARDL error-correction model,0.31388718772773,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2060,ardl_ecm,ARDL error-correction model,0.313231831669325,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2061,ardl_ecm,ARDL error-correction model,0.312577008145192,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2062,ardl_ecm,ARDL error-correction model,0.311922497228336,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2063,ardl_ecm,ARDL error-correction model,0.311268118480609,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2064,ardl_ecm,ARDL error-correction model,0.310613724796206,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2065,ardl_ecm,ARDL error-correction model,0.30995919719259,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2066,ardl_ecm,ARDL error-correction model,0.309304440403049,Unanchored model projection,exclude_other_interest,Exclude conventional other interest
+2026,structural_ols,Structural OLS (levels),0.371,Official forecast then model projection,,
+2027,structural_ols,Structural OLS (levels),0.371,Official forecast then model projection,,
+2028,structural_ols,Structural OLS (levels),0.364,Official forecast then model projection,,
+2029,structural_ols,Structural OLS (levels),0.357,Official forecast then model projection,,
+2030,structural_ols,Structural OLS (levels),0.349,Official forecast then model projection,,
+2031,structural_ols,Structural OLS (levels),0.347857676334138,Official forecast then model projection,,
+2032,structural_ols,Structural OLS (levels),0.346702036394129,Official forecast then model projection,,
+2033,structural_ols,Structural OLS (levels),0.347266514285395,Official forecast then model projection,,
+2034,structural_ols,Structural OLS (levels),0.34793573485839,Official forecast then model projection,,
+2035,structural_ols,Structural OLS (levels),0.348615739605065,Official forecast then model projection,,
+2036,structural_ols,Structural OLS (levels),0.349506047052922,Official forecast then model projection,,
+2037,structural_ols,Structural OLS (levels),0.350029291021606,Official forecast then model projection,,
+2038,structural_ols,Structural OLS (levels),0.350552534990289,Official forecast then model projection,,
+2039,structural_ols,Structural OLS (levels),0.351075778958973,Official forecast then model projection,,
+2040,structural_ols,Structural OLS (levels),0.351599022927657,Official forecast then model projection,,
+2041,structural_ols,Structural OLS (levels),0.352122266896341,Official forecast then model projection,,
+2042,structural_ols,Structural OLS (levels),0.352645510865025,Official forecast then model projection,,
+2043,structural_ols,Structural OLS (levels),0.353168754833709,Official forecast then model projection,,
+2044,structural_ols,Structural OLS (levels),0.353691998802392,Official forecast then model projection,,
+2045,structural_ols,Structural OLS (levels),0.354215242771076,Official forecast then model projection,,
+2046,structural_ols,Structural OLS (levels),0.35473848673976,Official forecast then model projection,,
+2047,structural_ols,Structural OLS (levels),0.355261730708443,Official forecast then model projection,,
+2048,structural_ols,Structural OLS (levels),0.355784974677127,Official forecast then model projection,,
+2049,structural_ols,Structural OLS (levels),0.35630821864581,Official forecast then model projection,,
+2050,structural_ols,Structural OLS (levels),0.356831462614494,Official forecast then model projection,,
+2051,structural_ols,Structural OLS (levels),0.357354706583178,Official forecast then model projection,,
+2052,structural_ols,Structural OLS (levels),0.357877950551862,Official forecast then model projection,,
+2053,structural_ols,Structural OLS (levels),0.358401194520546,Official forecast then model projection,,
+2054,structural_ols,Structural OLS (levels),0.358924438489229,Official forecast then model projection,,
+2055,structural_ols,Structural OLS (levels),0.359447682457913,Official forecast then model projection,,
+2056,structural_ols,Structural OLS (levels),0.359970926426597,Official forecast then model projection,,
+2057,structural_ols,Structural OLS (levels),0.36049417039528,Official forecast then model projection,,
+2058,structural_ols,Structural OLS (levels),0.361017414363964,Official forecast then model projection,,
+2059,structural_ols,Structural OLS (levels),0.361540658332648,Official forecast then model projection,,
+2060,structural_ols,Structural OLS (levels),0.362063902301331,Official forecast then model projection,,
+2061,structural_ols,Structural OLS (levels),0.362587146270015,Official forecast then model projection,,
+2062,structural_ols,Structural OLS (levels),0.363110390238699,Official forecast then model projection,,
+2063,structural_ols,Structural OLS (levels),0.363633634207383,Official forecast then model projection,,
+2064,structural_ols,Structural OLS (levels),0.364156878176067,Official forecast then model projection,,
+2065,structural_ols,Structural OLS (levels),0.364680122144751,Official forecast then model projection,,
+2066,structural_ols,Structural OLS (levels),0.365203366113434,Official forecast then model projection,,
+2026,arimax_level,ARIMAX (levels),0.371,Official forecast then model projection,,
+2027,arimax_level,ARIMAX (levels),0.371,Official forecast then model projection,,
+2028,arimax_level,ARIMAX (levels),0.364,Official forecast then model projection,,
+2029,arimax_level,ARIMAX (levels),0.357,Official forecast then model projection,,
+2030,arimax_level,ARIMAX (levels),0.349,Official forecast then model projection,,
+2031,arimax_level,ARIMAX (levels),0.347800163718117,Official forecast then model projection,,
+2032,arimax_level,ARIMAX (levels),0.346655750723334,Official forecast then model projection,,
+2033,arimax_level,ARIMAX (levels),0.346590710097574,Official forecast then model projection,,
+2034,arimax_level,ARIMAX (levels),0.346724456853148,Official forecast then model projection,,
+2035,arimax_level,ARIMAX (levels),0.346916726081896,Official forecast then model projection,,
+2036,arimax_level,ARIMAX (levels),0.347403871811282,Official forecast then model projection,,
+2037,arimax_level,ARIMAX (levels),0.347663350502423,Official forecast then model projection,,
+2038,arimax_level,ARIMAX (levels),0.347978264410449,Official forecast then model projection,,
+2039,arimax_level,ARIMAX (levels),0.348338644604367,Official forecast then model projection,,
+2040,arimax_level,ARIMAX (levels),0.348736314868909,Official forecast then model projection,,
+2041,arimax_level,ARIMAX (levels),0.34916456931995,Official forecast then model projection,,
+2042,arimax_level,ARIMAX (levels),0.349617907994436,Official forecast then model projection,,
+2043,arimax_level,ARIMAX (levels),0.350091819989251,Official forecast then model projection,,
+2044,arimax_level,ARIMAX (levels),0.350582605598284,Official forecast then model projection,,
+2045,arimax_level,ARIMAX (levels),0.351087230434638,Official forecast then model projection,,
+2046,arimax_level,ARIMAX (levels),0.351603205786083,Official forecast then model projection,,
+2047,arimax_level,ARIMAX (levels),0.352128490486225,Official forecast then model projection,,
+2048,arimax_level,ARIMAX (levels),0.352661410432213,Official forecast then model projection,,
+2049,arimax_level,ARIMAX (levels),0.353200592575589,Official forecast then model projection,,
+2050,arimax_level,ARIMAX (levels),0.353744910783596,Official forecast then model projection,,
+2051,arimax_level,ARIMAX (levels),0.354293441436255,Official forecast then model projection,,
+2052,arimax_level,ARIMAX (levels),0.354845427008432,Official forecast then model projection,,
+2053,arimax_level,ARIMAX (levels),0.355400246200957,Official forecast then model projection,,
+2054,arimax_level,ARIMAX (levels),0.355957389443067,Official forecast then model projection,,
+2055,arimax_level,ARIMAX (levels),0.356516438800258,Official forecast then model projection,,
+2056,arimax_level,ARIMAX (levels),0.357077051495306,Official forecast then model projection,,
+2057,arimax_level,ARIMAX (levels),0.357638946392715,Official forecast then model projection,,
+2058,arimax_level,ARIMAX (levels),0.358201892913666,Official forecast then model projection,,
+2059,arimax_level,ARIMAX (levels),0.358765701944394,Official forecast then model projection,,
+2060,arimax_level,ARIMAX (levels),0.359330218379518,Official forecast then model projection,,
+2061,arimax_level,ARIMAX (levels),0.359895315006303,Official forecast then model projection,,
+2062,arimax_level,ARIMAX (levels),0.360460887488715,Official forecast then model projection,,
+2063,arimax_level,ARIMAX (levels),0.361026850253499,Official forecast then model projection,,
+2064,arimax_level,ARIMAX (levels),0.361593133116065,Official forecast then model projection,,
+2065,arimax_level,ARIMAX (levels),0.362159678513137,Official forecast then model projection,,
+2066,arimax_level,ARIMAX (levels),0.362726439233058,Official forecast then model projection,,
+2026,arimax_diff,Differenced ARIMAX,0.371,Official forecast then model projection,,
+2027,arimax_diff,Differenced ARIMAX,0.371,Official forecast then model projection,,
+2028,arimax_diff,Differenced ARIMAX,0.364,Official forecast then model projection,,
+2029,arimax_diff,Differenced ARIMAX,0.357,Official forecast then model projection,,
+2030,arimax_diff,Differenced ARIMAX,0.349,Official forecast then model projection,,
+2031,arimax_diff,Differenced ARIMAX,0.347469735452068,Official forecast then model projection,,
+2032,arimax_diff,Differenced ARIMAX,0.345904140991245,Official forecast then model projection,,
+2033,arimax_diff,Differenced ARIMAX,0.347219813972914,Official forecast then model projection,,
+2034,arimax_diff,Differenced ARIMAX,0.346544752797177,Official forecast then model projection,,
+2035,arimax_diff,Differenced ARIMAX,0.345835876357541,Official forecast then model projection,,
+2036,arimax_diff,Differenced ARIMAX,0.344912638695486,Official forecast then model projection,,
+2037,arimax_diff,Differenced ARIMAX,0.344396187761518,Official forecast then model projection,,
+2038,arimax_diff,Differenced ARIMAX,0.343879736827551,Official forecast then model projection,,
+2039,arimax_diff,Differenced ARIMAX,0.343363285893583,Official forecast then model projection,,
+2040,arimax_diff,Differenced ARIMAX,0.342846834959616,Official forecast then model projection,,
+2041,arimax_diff,Differenced ARIMAX,0.342330384025648,Official forecast then model projection,,
+2042,arimax_diff,Differenced ARIMAX,0.341813933091681,Official forecast then model projection,,
+2043,arimax_diff,Differenced ARIMAX,0.341297482157713,Official forecast then model projection,,
+2044,arimax_diff,Differenced ARIMAX,0.340781031223746,Official forecast then model projection,,
+2045,arimax_diff,Differenced ARIMAX,0.340264580289778,Official forecast then model projection,,
+2046,arimax_diff,Differenced ARIMAX,0.339748129355811,Official forecast then model projection,,
+2047,arimax_diff,Differenced ARIMAX,0.339231678421843,Official forecast then model projection,,
+2048,arimax_diff,Differenced ARIMAX,0.338715227487876,Official forecast then model projection,,
+2049,arimax_diff,Differenced ARIMAX,0.338198776553909,Official forecast then model projection,,
+2050,arimax_diff,Differenced ARIMAX,0.337682325619941,Official forecast then model projection,,
+2051,arimax_diff,Differenced ARIMAX,0.337165874685973,Official forecast then model projection,,
+2052,arimax_diff,Differenced ARIMAX,0.336649423752006,Official forecast then model projection,,
+2053,arimax_diff,Differenced ARIMAX,0.336132972818039,Official forecast then model projection,,
+2054,arimax_diff,Differenced ARIMAX,0.335616521884071,Official forecast then model projection,,
+2055,arimax_diff,Differenced ARIMAX,0.335100070950104,Official forecast then model projection,,
+2056,arimax_diff,Differenced ARIMAX,0.334583620016136,Official forecast then model projection,,
+2057,arimax_diff,Differenced ARIMAX,0.334067169082169,Official forecast then model projection,,
+2058,arimax_diff,Differenced ARIMAX,0.333550718148201,Official forecast then model projection,,
+2059,arimax_diff,Differenced ARIMAX,0.333034267214234,Official forecast then model projection,,
+2060,arimax_diff,Differenced ARIMAX,0.332517816280266,Official forecast then model projection,,
+2061,arimax_diff,Differenced ARIMAX,0.332001365346299,Official forecast then model projection,,
+2062,arimax_diff,Differenced ARIMAX,0.331484914412331,Official forecast then model projection,,
+2063,arimax_diff,Differenced ARIMAX,0.330968463478364,Official forecast then model projection,,
+2064,arimax_diff,Differenced ARIMAX,0.330452012544396,Official forecast then model projection,,
+2065,arimax_diff,Differenced ARIMAX,0.329935561610428,Official forecast then model projection,,
+2066,arimax_diff,Differenced ARIMAX,0.329419110676461,Official forecast then model projection,,
+2026,hybrid,Hybrid structural/macro,0.371,Official forecast then model projection,,
+2027,hybrid,Hybrid structural/macro,0.371,Official forecast then model projection,,
+2028,hybrid,Hybrid structural/macro,0.364,Official forecast then model projection,,
+2029,hybrid,Hybrid structural/macro,0.357,Official forecast then model projection,,
+2030,hybrid,Hybrid structural/macro,0.349,Official forecast then model projection,,
+2031,hybrid,Hybrid structural/macro,0.348642352963988,Official forecast then model projection,,
+2032,hybrid,Hybrid structural/macro,0.348334916610907,Official forecast then model projection,,
+2033,hybrid,Hybrid structural/macro,0.34779409742259,Official forecast then model projection,,
+2034,hybrid,Hybrid structural/macro,0.348324216116189,Official forecast then model projection,,
+2035,hybrid,Hybrid structural/macro,0.348891457418848,Official forecast then model projection,,
+2036,hybrid,Hybrid structural/macro,0.349628058675999,Official forecast then model projection,,
+2037,hybrid,Hybrid structural/macro,0.35002838859604,Official forecast then model projection,,
+2038,hybrid,Hybrid structural/macro,0.350428718516081,Official forecast then model projection,,
+2039,hybrid,Hybrid structural/macro,0.350829048436122,Official forecast then model projection,,
+2040,hybrid,Hybrid structural/macro,0.351229378356164,Official forecast then model projection,,
+2041,hybrid,Hybrid structural/macro,0.351629708276205,Official forecast then model projection,,
+2042,hybrid,Hybrid structural/macro,0.352030038196246,Official forecast then model projection,,
+2043,hybrid,Hybrid structural/macro,0.352430368116287,Official forecast then model projection,,
+2044,hybrid,Hybrid structural/macro,0.352830698036328,Official forecast then model projection,,
+2045,hybrid,Hybrid structural/macro,0.35323102795637,Official forecast then model projection,,
+2046,hybrid,Hybrid structural/macro,0.353631357876411,Official forecast then model projection,,
+2047,hybrid,Hybrid structural/macro,0.354031687796452,Official forecast then model projection,,
+2048,hybrid,Hybrid structural/macro,0.354432017716493,Official forecast then model projection,,
+2049,hybrid,Hybrid structural/macro,0.354832347636534,Official forecast then model projection,,
+2050,hybrid,Hybrid structural/macro,0.355232677556576,Official forecast then model projection,,
+2051,hybrid,Hybrid structural/macro,0.355633007476617,Official forecast then model projection,,
+2052,hybrid,Hybrid structural/macro,0.356033337396658,Official forecast then model projection,,
+2053,hybrid,Hybrid structural/macro,0.356433667316699,Official forecast then model projection,,
+2054,hybrid,Hybrid structural/macro,0.35683399723674,Official forecast then model projection,,
+2055,hybrid,Hybrid structural/macro,0.357234327156781,Official forecast then model projection,,
+2056,hybrid,Hybrid structural/macro,0.357634657076823,Official forecast then model projection,,
+2057,hybrid,Hybrid structural/macro,0.358034986996864,Official forecast then model projection,,
+2058,hybrid,Hybrid structural/macro,0.358435316916905,Official forecast then model projection,,
+2059,hybrid,Hybrid structural/macro,0.358835646836946,Official forecast then model projection,,
+2060,hybrid,Hybrid structural/macro,0.359235976756987,Official forecast then model projection,,
+2061,hybrid,Hybrid structural/macro,0.359636306677029,Official forecast then model projection,,
+2062,hybrid,Hybrid structural/macro,0.36003663659707,Official forecast then model projection,,
+2063,hybrid,Hybrid structural/macro,0.360436966517111,Official forecast then model projection,,
+2064,hybrid,Hybrid structural/macro,0.360837296437152,Official forecast then model projection,,
+2065,hybrid,Hybrid structural/macro,0.361237626357194,Official forecast then model projection,,
+2066,hybrid,Hybrid structural/macro,0.361637956277235,Official forecast then model projection,,
+2026,ardl_ecm,ARDL error-correction model,0.371,Official forecast then model projection,,
+2027,ardl_ecm,ARDL error-correction model,0.371,Official forecast then model projection,,
+2028,ardl_ecm,ARDL error-correction model,0.364,Official forecast then model projection,,
+2029,ardl_ecm,ARDL error-correction model,0.357,Official forecast then model projection,,
+2030,ardl_ecm,ARDL error-correction model,0.349,Official forecast then model projection,,
+2031,ardl_ecm,ARDL error-correction model,0.345999931714284,Official forecast then model projection,,
+2032,ardl_ecm,ARDL error-correction model,0.343476098489561,Official forecast then model projection,,
+2033,ardl_ecm,ARDL error-correction model,0.342357142333444,Official forecast then model projection,,
+2034,ardl_ecm,ARDL error-correction model,0.341309843354795,Official forecast then model projection,,
+2035,ardl_ecm,ARDL error-correction model,0.340324641594313,Official forecast then model projection,,
+2036,ardl_ecm,ARDL error-correction model,0.339391443723882,Official forecast then model projection,,
+2037,ardl_ecm,ARDL error-correction model,0.338271048803864,Official forecast then model projection,,
+2038,ardl_ecm,ARDL error-correction model,0.337228103168161,Official forecast then model projection,,
+2039,ardl_ecm,ARDL error-correction model,0.336250259596766,Official forecast then model projection,,
+2040,ardl_ecm,ARDL error-correction model,0.33532712116553,Official forecast then model projection,,
+2041,ardl_ecm,ARDL error-correction model,0.334449928214179,Official forecast then model projection,,
+2042,ardl_ecm,ARDL error-correction model,0.333611297267412,Official forecast then model projection,,
+2043,ardl_ecm,ARDL error-correction model,0.332805002811377,Official forecast then model projection,,
+2044,ardl_ecm,ARDL error-correction model,0.332025794548068,Official forecast then model projection,,
+2045,ardl_ecm,ARDL error-correction model,0.331269244112552,Official forecast then model projection,,
+2046,ardl_ecm,ARDL error-correction model,0.330531616324844,Official forecast then model projection,,
+2047,ardl_ecm,ARDL error-correction model,0.329809760921234,Official forecast then model projection,,
+2048,ardl_ecm,ARDL error-correction model,0.329101021415402,Official forecast then model projection,,
+2049,ardl_ecm,ARDL error-correction model,0.328403158312891,Official forecast then model projection,,
+2050,ardl_ecm,ARDL error-correction model,0.32771428437103,Official forecast then model projection,,
+2051,ardl_ecm,ARDL error-correction model,0.327032809980668,Official forecast then model projection,,
+2052,ardl_ecm,ARDL error-correction model,0.326357397062885,Official forecast then model projection,,
+2053,ardl_ecm,ARDL error-correction model,0.325686920135807,Official forecast then model projection,,
+2054,ardl_ecm,ARDL error-correction model,0.325020433423997,Official forecast then model projection,,
+2055,ardl_ecm,ARDL error-correction model,0.324357143063779,Official forecast then model projection,,
+2056,ardl_ecm,ARDL error-correction model,0.323696383608697,Official forecast then model projection,,
+2057,ardl_ecm,ARDL error-correction model,0.323037598165414,Official forecast then model projection,,
+2058,ardl_ecm,ARDL error-correction model,0.322380321595998,Official forecast then model projection,,
+2059,ardl_ecm,ARDL error-correction model,0.32172416631105,Official forecast then model projection,,
+2060,ardl_ecm,ARDL error-correction model,0.321068810252646,Official forecast then model projection,,
+2061,ardl_ecm,ARDL error-correction model,0.320413986728513,Official forecast then model projection,,
+2062,ardl_ecm,ARDL error-correction model,0.319759475811656,Official forecast then model projection,,
+2063,ardl_ecm,ARDL error-correction model,0.31910509706393,Official forecast then model projection,,
+2064,ardl_ecm,ARDL error-correction model,0.318450703379527,Official forecast then model projection,,
+2065,ardl_ecm,ARDL error-correction model,0.317796175775911,Official forecast then model projection,,
+2066,ardl_ecm,ARDL error-correction model,0.31714141898637,Official forecast then model projection,,

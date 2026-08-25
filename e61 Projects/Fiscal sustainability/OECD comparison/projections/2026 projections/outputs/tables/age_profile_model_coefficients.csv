@@ -1,0 +1,13 @@
+demographic_specification,component,term,estimate
+age_shares,structural_ols,age_0_14,0.17416110083086
+age_shares,structural_ols,age_65p,0.45242712357114
+age_shares,arimax_level,age_0_14,-0.0438991051901937
+age_shares,arimax_level,age_65p,0.434462967117888
+age_shares,arimax_diff,d_age_0_14,-0.272461451451869
+age_shares,arimax_diff,d_age_65p,-0.470926243193933
+age_shares,hybrid_structural,age_0_14,0.258551145323765
+age_shares,hybrid_structural,age_65p,0.376517535523398
+expenditure_profile,structural_ols,age_expenditure_profile,0.478087478733424
+expenditure_profile,arimax_level,age_expenditure_profile,0.305687539292769
+expenditure_profile,arimax_diff,d_age_expenditure_profile,-0.520732409988619
+expenditure_profile,hybrid_structural,age_expenditure_profile,0.311504986044128

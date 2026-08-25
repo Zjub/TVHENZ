@@ -1,0 +1,154 @@
+interest_treatment,interest_treatment_label,component,term,estimate
+include_interest,Include all interest,structural_ols,(Intercept),0.0616842557416083
+include_interest,Include all interest,structural_ols,age_0_14,0.642780833723716
+include_interest,Include all interest,structural_ols,age_65p,0.825918638270669
+include_interest,Include all interest,structural_ols,tot_z,0.00453849531182004
+include_interest,Include all interest,structural_ols,rp_z,-0.00202265056420014
+include_interest,Include all interest,structural_ols,unemployment,0.00794735747752425
+include_interest,Include all interest,structural_ols,covid_fy2020,0.0332038940991429
+include_interest,Include all interest,structural_ols,covid_fy2021,0.0434675499507861
+include_interest,Include all interest,structural_ols,covid_fy2022,0.0106926411828643
+include_interest,Include all interest,arimax_level,ar1,1.22035591073895
+include_interest,Include all interest,arimax_level,ar2,-0.424509202069928
+include_interest,Include all interest,arimax_level,age_0_14,0.824504867052852
+include_interest,Include all interest,arimax_level,age_65p,1.09619967546114
+include_interest,Include all interest,arimax_level,tot_z,0.000972249859847486
+include_interest,Include all interest,arimax_level,rp_z,0.00496078353127491
+include_interest,Include all interest,arimax_level,unemployment,0.00639739645616062
+include_interest,Include all interest,arimax_level,covid_fy2020,0.0379697155934131
+include_interest,Include all interest,arimax_level,covid_fy2021,0.0490933048510369
+include_interest,Include all interest,arimax_level,covid_fy2022,0.0190578863495265
+include_interest,Include all interest,arimax_diff,d_age_0_14,-0.674868061490778
+include_interest,Include all interest,arimax_diff,d_age_65p,-0.686208484902445
+include_interest,Include all interest,arimax_diff,d_rp_z,0.0106486988485075
+include_interest,Include all interest,arimax_diff,d_unemployment,0.00619287107087038
+include_interest,Include all interest,arimax_diff,d_unemployment_l1,-0.000436376443397474
+include_interest,Include all interest,arimax_diff,d_tot_z,0.00622163272519057
+include_interest,Include all interest,arimax_diff,d_tot_z_l1,-0.00456083098961859
+include_interest,Include all interest,arimax_diff,covid_fy2020,0.0484487466279876
+include_interest,Include all interest,arimax_diff,covid_fy2021,0.0253850251256465
+include_interest,Include all interest,arimax_diff,covid_fy2022,-0.0156752985113616
+include_interest,Include all interest,hybrid_structural_ols,(Intercept),0.11202001503847
+include_interest,Include all interest,hybrid_structural_ols,age_0_14,0.759138035873255
+include_interest,Include all interest,hybrid_structural_ols,age_65p,0.661871356481001
+include_interest,Include all interest,hybrid_structural_ols,rp_z,-0.000939596108556895
+include_interest,Include all interest,hybrid_structural_ols,covid_fy2020,0.0380564120394732
+include_interest,Include all interest,hybrid_structural_ols,covid_fy2021,0.0571466780525355
+include_interest,Include all interest,hybrid_structural_ols,covid_fy2022,0.014420036147526
+include_interest,Include all interest,hybrid_macro,d_unemployment,0.00607270567901066
+include_interest,Include all interest,hybrid_macro,d_unemployment_l1,-2.05172594374438e-05
+include_interest,Include all interest,hybrid_macro,d_tot_z,-0.00471502712508356
+include_interest,Include all interest,hybrid_macro,d_tot_z_l1,0.00339019103053553
+include_interest,Include all interest,ardl_ecm,(Intercept),-0.163451923163803
+include_interest,Include all interest,ardl_ecm,w_lag,-0.0634326014277286
+include_interest,Include all interest,ardl_ecm,log_real_gdp_per_capita_l1,-0.0414774002536715
+include_interest,Include all interest,ardl_ecm,log_relative_gov_price_l1,0.160873442909731
+include_interest,Include all interest,ardl_ecm,d_log_real_gdp_per_capita,-0.958499200111014
+include_interest,Include all interest,ardl_ecm,d_log_relative_gov_price,0.937024917890839
+include_interest,Include all interest,ardl_ecm,d_unemployment,0.00229982084089347
+include_interest,Include all interest,ardl_ecm,d_tot_z,0.00735028116452409
+include_interest,Include all interest,ardl_ecm,covid_fy2020,0.106014015513822
+include_interest,Include all interest,ardl_ecm,covid_fy2021,0.082073256853353
+include_interest,Include all interest,ardl_ecm,covid_fy2022,-0.0328857626621787
+exclude_other_interest,Exclude conventional other interest,structural_ols,(Intercept),0.205548226588875
+exclude_other_interest,Exclude conventional other interest,structural_ols,age_0_14,0.17416110083086
+exclude_other_interest,Exclude conventional other interest,structural_ols,age_65p,0.45242712357114
+exclude_other_interest,Exclude conventional other interest,structural_ols,tot_z,0.00410636755698988
+exclude_other_interest,Exclude conventional other interest,structural_ols,rp_z,0.00168938841135457
+exclude_other_interest,Exclude conventional other interest,structural_ols,unemployment,0.0056927370067854
+exclude_other_interest,Exclude conventional other interest,structural_ols,covid_fy2020,0.041037181539653
+exclude_other_interest,Exclude conventional other interest,structural_ols,covid_fy2021,0.0568454619454979
+exclude_other_interest,Exclude conventional other interest,structural_ols,covid_fy2022,0.021616312723518
+exclude_other_interest,Exclude conventional other interest,arimax_level,ar1,0.820169712411578
+exclude_other_interest,Exclude conventional other interest,arimax_level,intercept,0.251991771575013
+exclude_other_interest,Exclude conventional other interest,arimax_level,age_0_14,-0.0438991051901937
+exclude_other_interest,Exclude conventional other interest,arimax_level,age_65p,0.434462967117888
+exclude_other_interest,Exclude conventional other interest,arimax_level,tot_z,0.00232605764747877
+exclude_other_interest,Exclude conventional other interest,arimax_level,rp_z,0.0058135435040268
+exclude_other_interest,Exclude conventional other interest,arimax_level,unemployment,0.00614846496949794
+exclude_other_interest,Exclude conventional other interest,arimax_level,covid_fy2020,0.042263951180942
+exclude_other_interest,Exclude conventional other interest,arimax_level,covid_fy2021,0.0566511450424857
+exclude_other_interest,Exclude conventional other interest,arimax_level,covid_fy2022,0.0244858299197739
+exclude_other_interest,Exclude conventional other interest,arimax_diff,d_age_0_14,-0.272461451451869
+exclude_other_interest,Exclude conventional other interest,arimax_diff,d_age_65p,-0.470926243193933
+exclude_other_interest,Exclude conventional other interest,arimax_diff,d_rp_z,0.0119808802261205
+exclude_other_interest,Exclude conventional other interest,arimax_diff,d_unemployment,0.0066439348408379
+exclude_other_interest,Exclude conventional other interest,arimax_diff,d_unemployment_l1,-0.000841424453252053
+exclude_other_interest,Exclude conventional other interest,arimax_diff,d_tot_z,0.00851049870257615
+exclude_other_interest,Exclude conventional other interest,arimax_diff,d_tot_z_l1,-0.00519481104497191
+exclude_other_interest,Exclude conventional other interest,arimax_diff,covid_fy2020,0.051456467871203
+exclude_other_interest,Exclude conventional other interest,arimax_diff,covid_fy2021,0.0242603162985357
+exclude_other_interest,Exclude conventional other interest,arimax_diff,covid_fy2022,-0.0174870173339848
+exclude_other_interest,Exclude conventional other interest,hybrid_structural_ols,(Intercept),0.236216123807027
+exclude_other_interest,Exclude conventional other interest,hybrid_structural_ols,age_0_14,0.258551145323765
+exclude_other_interest,Exclude conventional other interest,hybrid_structural_ols,age_65p,0.376517535523398
+exclude_other_interest,Exclude conventional other interest,hybrid_structural_ols,rp_z,0.0024070711736576
+exclude_other_interest,Exclude conventional other interest,hybrid_structural_ols,covid_fy2020,0.044262036397711
+exclude_other_interest,Exclude conventional other interest,hybrid_structural_ols,covid_fy2021,0.0666195778848771
+exclude_other_interest,Exclude conventional other interest,hybrid_structural_ols,covid_fy2022,0.0247047038721656
+exclude_other_interest,Exclude conventional other interest,hybrid_macro,d_unemployment,0.00630120668594588
+exclude_other_interest,Exclude conventional other interest,hybrid_macro,d_unemployment_l1,-0.000769456683870289
+exclude_other_interest,Exclude conventional other interest,hybrid_macro,d_tot_z,-0.00152497872317798
+exclude_other_interest,Exclude conventional other interest,hybrid_macro,d_tot_z_l1,0.00286605206940132
+exclude_other_interest,Exclude conventional other interest,ardl_ecm,(Intercept),-0.229625249455755
+exclude_other_interest,Exclude conventional other interest,ardl_ecm,w_lag,-0.151897930299035
+exclude_other_interest,Exclude conventional other interest,ardl_ecm,log_real_gdp_per_capita_l1,-0.0272226861502942
+exclude_other_interest,Exclude conventional other interest,ardl_ecm,log_relative_gov_price_l1,0.15470102488355
+exclude_other_interest,Exclude conventional other interest,ardl_ecm,d_log_real_gdp_per_capita,-0.640373036458585
+exclude_other_interest,Exclude conventional other interest,ardl_ecm,d_log_relative_gov_price,1.00384844096968
+exclude_other_interest,Exclude conventional other interest,ardl_ecm,d_unemployment,0.00813197440337381
+exclude_other_interest,Exclude conventional other interest,ardl_ecm,d_tot_z,0.0104599384911437
+exclude_other_interest,Exclude conventional other interest,ardl_ecm,covid_fy2020,0.12295984651772
+exclude_other_interest,Exclude conventional other interest,ardl_ecm,covid_fy2021,0.0899525820360498
+exclude_other_interest,Exclude conventional other interest,ardl_ecm,covid_fy2022,-0.0196602792118499
+exclude_total_interest,Exclude total interest payable,structural_ols,(Intercept),0.201194893820517
+exclude_total_interest,Exclude total interest payable,structural_ols,age_0_14,0.0866822615851679
+exclude_total_interest,Exclude total interest payable,structural_ols,age_65p,0.560602896909195
+exclude_total_interest,Exclude total interest payable,structural_ols,tot_z,0.00405762823358934
+exclude_total_interest,Exclude total interest payable,structural_ols,rp_z,0.00241095535543788
+exclude_total_interest,Exclude total interest payable,structural_ols,unemployment,0.00499725453682086
+exclude_total_interest,Exclude total interest payable,structural_ols,covid_fy2020,0.0402720231130011
+exclude_total_interest,Exclude total interest payable,structural_ols,covid_fy2021,0.0568777927466547
+exclude_total_interest,Exclude total interest payable,structural_ols,covid_fy2022,0.0218379388134456
+exclude_total_interest,Exclude total interest payable,arimax_level,ar1,1.08879953677955
+exclude_total_interest,Exclude total interest payable,arimax_level,ar2,-0.31082617156302
+exclude_total_interest,Exclude total interest payable,arimax_level,age_0_14,0.607448845765485
+exclude_total_interest,Exclude total interest payable,arimax_level,age_65p,1.20155682863518
+exclude_total_interest,Exclude total interest payable,arimax_level,tot_z,0.00311791638359494
+exclude_total_interest,Exclude total interest payable,arimax_level,rp_z,0.00574911822528926
+exclude_total_interest,Exclude total interest payable,arimax_level,unemployment,0.00668077862957423
+exclude_total_interest,Exclude total interest payable,arimax_level,covid_fy2020,0.0407416366103195
+exclude_total_interest,Exclude total interest payable,arimax_level,covid_fy2021,0.0521745201765983
+exclude_total_interest,Exclude total interest payable,arimax_level,covid_fy2022,0.021379662383267
+exclude_total_interest,Exclude total interest payable,arimax_diff,d_age_0_14,-0.235261944687185
+exclude_total_interest,Exclude total interest payable,arimax_diff,d_age_65p,-0.298613065844753
+exclude_total_interest,Exclude total interest payable,arimax_diff,d_rp_z,0.0119362970005991
+exclude_total_interest,Exclude total interest payable,arimax_diff,d_unemployment,0.0069154975864973
+exclude_total_interest,Exclude total interest payable,arimax_diff,d_unemployment_l1,-0.000791986609602895
+exclude_total_interest,Exclude total interest payable,arimax_diff,d_tot_z,0.00917398339825047
+exclude_total_interest,Exclude total interest payable,arimax_diff,d_tot_z_l1,-0.00531982438153279
+exclude_total_interest,Exclude total interest payable,arimax_diff,covid_fy2020,0.0507962738296003
+exclude_total_interest,Exclude total interest payable,arimax_diff,covid_fy2021,0.0233422650347695
+exclude_total_interest,Exclude total interest payable,arimax_diff,covid_fy2022,-0.0169113973224437
+exclude_total_interest,Exclude total interest payable,hybrid_structural_ols,(Intercept),0.225263248820362
+exclude_total_interest,Exclude total interest payable,hybrid_structural_ols,age_0_14,0.161314475816622
+exclude_total_interest,Exclude total interest payable,hybrid_structural_ols,age_65p,0.515993183318613
+exclude_total_interest,Exclude total interest payable,hybrid_structural_ols,rp_z,0.00301018719877379
+exclude_total_interest,Exclude total interest payable,hybrid_structural_ols,covid_fy2020,0.042969978235081
+exclude_total_interest,Exclude total interest payable,hybrid_structural_ols,covid_fy2021,0.0654449259842982
+exclude_total_interest,Exclude total interest payable,hybrid_structural_ols,covid_fy2022,0.024770579549009
+exclude_total_interest,Exclude total interest payable,hybrid_macro,d_unemployment,0.00652877759604368
+exclude_total_interest,Exclude total interest payable,hybrid_macro,d_unemployment_l1,-0.000751553139781969
+exclude_total_interest,Exclude total interest payable,hybrid_macro,d_tot_z,-0.000368046029219897
+exclude_total_interest,Exclude total interest payable,hybrid_macro,d_tot_z_l1,0.00249365556003327
+exclude_total_interest,Exclude total interest payable,ardl_ecm,(Intercept),-0.167927097732986
+exclude_total_interest,Exclude total interest payable,ardl_ecm,w_lag,-0.125780621371715
+exclude_total_interest,Exclude total interest payable,ardl_ecm,log_real_gdp_per_capita_l1,-0.0123483041876273
+exclude_total_interest,Exclude total interest payable,ardl_ecm,log_relative_gov_price_l1,0.133064352197295
+exclude_total_interest,Exclude total interest payable,ardl_ecm,d_log_real_gdp_per_capita,-0.524714480102516
+exclude_total_interest,Exclude total interest payable,ardl_ecm,d_log_relative_gov_price,1.04855350799328
+exclude_total_interest,Exclude total interest payable,ardl_ecm,d_unemployment,0.0121655784055808
+exclude_total_interest,Exclude total interest payable,ardl_ecm,d_tot_z,0.013865181110478
+exclude_total_interest,Exclude total interest payable,ardl_ecm,covid_fy2020,0.125494136621496
+exclude_total_interest,Exclude total interest payable,ardl_ecm,covid_fy2021,0.083359541961024
+exclude_total_interest,Exclude total interest payable,ardl_ecm,covid_fy2022,-0.0200437605120011

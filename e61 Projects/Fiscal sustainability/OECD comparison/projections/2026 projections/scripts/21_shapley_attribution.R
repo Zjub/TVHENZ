@@ -2,7 +2,7 @@ source(file.path("scripts", "00_config.R"))
 source(file.path("R", "model_functions_2.R"))
 
 historical <- fread(file.path(processed_dir, "historical_top_down_model_data.csv"))
-model_data <- as.data.table(model_feature_frame(historical))
+model_data <- as.data.table(model_feature_frame(historical, scale_drivers = character()))
 model_data[, `:=`(
   year = historical$year,
   broad_expenditure_gdp = historical$broad_expenditure_gdp

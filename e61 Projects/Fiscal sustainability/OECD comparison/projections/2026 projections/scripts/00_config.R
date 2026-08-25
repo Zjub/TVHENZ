@@ -37,6 +37,25 @@ topdown_age_groups <- switch(
 )
 topdown_covid_years <- 2020:2022
 
+# The reported baseline estimates separate youth and older-population shares.
+# `expenditure_profile` is an optional sensitivity that collapses the full age
+# distribution using category expenditure shares and lifecycle cost weights.
+topdown_demographic_specification <- "age_shares"
+topdown_demographic_options <- c("age_shares", "expenditure_profile")
+
+# Interest treatment for the aggregate top-down dependent variable. The
+# baseline removes conventional debt interest but retains the separately
+# identified imputed interest on unfunded superannuation liabilities. All
+# three variants remain available for matched sensitivity testing.
+topdown_interest_treatment <- "exclude_other_interest"
+topdown_interest_treatment_options <- c(
+  "exclude_total_interest", "exclude_other_interest", "include_interest"
+)
+
+# Aggregate population is excluded from the spending-share equations. Real GDP
+# per capita enters only the dedicated cointegration/ECM specification.
+topdown_scale_drivers <- character()
+
 refresh_data <- tolower(Sys.getenv("REFRESH_DATA", "false")) %in% c("true", "1", "yes")
 
 source_urls <- list(
@@ -52,24 +71,22 @@ source_urls <- list(
 model_labels <- c(
   structural_ols = "Structural OLS (levels)",
   arimax_level = "ARIMAX (levels)",
-  arimax_diff = "ARIMAX (differences)",
-  dynamic_diff = "Dynamic differences",
+  arimax_diff = "Differenced ARIMAX",
   hybrid = "Hybrid structural/macro",
-  ardl_ecm = "ARDL error-correction model",
-  univariate_arima = "ARIMA with COVID controls"
+  ardl_ecm = "ARDL error-correction model"
 )
 
 palette_models <- c(
   "Structural OLS (levels)" = "#0072B2",
   "ARIMAX (levels)" = "#D55E00",
-  "ARIMAX (differences)" = "#009E73",
-  "Dynamic differences" = "#56B4E9",
+  "Differenced ARIMAX" = "#009E73",
   "Hybrid structural/macro" = "#CC79A7",
   "ARDL error-correction model" = "#332288",
-  "ARIMA with COVID controls" = "#E69F00",
   "Official PBO forecast" = "#000000",
   "PBO expenses plus net capital investment" = "#000000"
 )
+
+reported_topdown_models <- names(model_labels)
 
 palette_scenarios <- c(
   central = "#0072B2",

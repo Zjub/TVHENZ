@@ -3,19 +3,11 @@
 # Updated version: adds variable-specific dynamics and an explicit ECM
 # -----------------------------------------------------------------------------
 #
-# Main changes from the earlier version
-# -------------------------------------
-# 1. Keeps the original benchmark models:
-#      - structural_ols
-#      - arimax_level
-#      - arimax_diff
-#      - hybrid
-#      - univariate_arima
-#
-# 2. Adds `dynamic_diff`.
-#    This still forecasts annual changes in spending/GDP, but no longer assumes
-#    that every explanatory variable should enter in the same transformation.
-#    In particular:
+# Reported model families
+# -----------------------
+# 1. Structural OLS in levels.
+# 2. Levels ARIMAX with stationary ARMA errors.
+# 3. A single differenced ARIMAX using variable-appropriate transformations:
 #      - the selected age shares enter as annual changes;
 #      - relative government prices enter as annual changes;
 #      - unemployment enters as current and lagged CHANGES. In a pure
@@ -25,24 +17,16 @@
 #      - the terms of trade enter as current and lagged annual changes;
 #      - COVID is represented by separate annual intervention indicators.
 #
-# 3. Adds `ardl_ecm`, an unrestricted error-correction model (ECM).
-#    The ECM separates:
-#      - a LONG-RUN relationship in the levels of spending/GDP, age shares and
-#        relative government prices; from
-#      - SHORT-RUN dynamics in unemployment, terms of trade, relative prices,
-#        lagged spending growth and COVID interventions.
+# 4. A hybrid structural-level/macro-change model.
+# 5. A parsimonious augmented-Mann ECM. Its candidate long-run vector is log
+#    spending/GDP, log real GDP per capita and the log relative government
+#    price; unemployment and terms of trade enter as short-run changes.
 #
 #    The coefficient on lagged spending (`y_lag`) is the adjustment parameter.
 #    For a stable error-correction mechanism it should normally be negative.
 #    Long-run coefficients are approximately -beta_level / beta_y_lag.
 #
-# 4. Changes the hybrid model so that relative government prices sit with the
-#    demographic variables in the structural level component. This reflects
-#    the idea that demographics and relative government costs are slow-moving
-#    structural pressures, while unemployment and terms-of-trade movements are
-#    shorter-run macro influences.
-#
-# 5. Adds metadata fields for AIC/AICc/BIC where available. These should NOT be
+# AIC/AICc/BIC are recorded where available. These should NOT be
 #    used to rank models that have different dependent-variable transformations
 #    (for example, a levels model versus a differenced model). Use rolling
 #    pseudo-out-of-sample forecast errors for cross-model comparison.
@@ -88,10 +72,152 @@ covid_dummy_terms <- function() {
 }
 
 
+scale_driver_columns <- c(
+  population = "log_population",
+  real_gdp_per_capita = "log_real_gdp_per_capita"
+)
+
+
+active_scale_drivers <- function(drivers = NULL) {
+  if (is.null(drivers)) {
+    drivers <- if (exists("topdown_scale_drivers", inherits = TRUE)) {
+      get("topdown_scale_drivers", inherits = TRUE)
+    } else {
+      character()
+    }
+  }
+  drivers <- unique(as.character(drivers))
+  unknown <- setdiff(drivers, names(scale_driver_columns))
+  if (length(unknown)) {
+    stop("Unknown top-down scale/income drivers: ", paste(unknown, collapse = ", "))
+  }
+  drivers
+}
+
+
+scale_level_terms <- function(suffix = "", drivers = NULL) {
+  selected <- active_scale_drivers(drivers)
+  if (!length(selected)) return(character())
+  paste0(unname(scale_driver_columns[selected]), suffix)
+}
+
+
+scale_difference_terms <- function(drivers = NULL) {
+  terms <- scale_level_terms(drivers = drivers)
+  if (!length(terms)) return(character())
+  paste0("d_", terms)
+}
+
+
+scale_feature_frame <- function(dt, drivers = NULL) {
+  terms <- scale_level_terms(drivers = drivers)
+  if (!length(terms)) return(data.frame(row.names = seq_len(nrow(dt))))
+  missing_terms <- setdiff(terms, names(dt))
+  if (length(missing_terms)) {
+    stop("Missing top-down scale/income variables: ", paste(missing_terms, collapse = ", "))
+  }
+  out <- lapply(terms, function(term) as.numeric(dt[[term]]))
+  names(out) <- terms
+  as.data.frame(out, check.names = FALSE)
+}
+
+
 age_feature_frame <- function(dt) {
   out <- lapply(active_age_groups(), function(group) as.numeric(dt[[group]]))
   names(out) <- age_level_terms()
   as.data.frame(out, check.names = FALSE)
+}
+
+
+active_demographic_specification <- function(specification = NULL) {
+  if (is.null(specification)) {
+    specification <- if (exists("topdown_demographic_specification", inherits = TRUE)) {
+      get("topdown_demographic_specification", inherits = TRUE)
+    } else "age_shares"
+  }
+  specification <- match.arg(specification, c("age_shares", "expenditure_profile"))
+  specification
+}
+
+
+age_profile_relative_weights <- function() {
+  # These grouped relativities are the transparent baseline judgements already
+  # used by the bottom-up model. They are not estimates from ABS microdata.
+  data.table(
+    exposure = rep(c("total_population", "health_age_weight",
+                     "education_age_weight", "social_age_weight"), each = 5L),
+    age_group = rep(c("0_14", "15_34", "35_54", "55_64", "65p"), 4L),
+    relative_weight = c(
+      rep(1, 5),
+      0.65, 0.75, 0.90, 1.30, 3.00,
+      1.00, 0.35, 0.05, 0.00, 0.00,
+      0.60, 0.50, 0.40, 0.80, 2.20
+    ),
+    weight_status = c(
+      rep("Flat allocation assumption", 5),
+      rep("Judgemental grouped proxy pending administrative age-cost data", 15)
+    )
+  )
+}
+
+
+age_profile_category_table <- function() {
+  purpose <- fread(file.path(processed_dir, "historical_gfs_expenses_by_purpose.csv"))
+  operating <- fread(file.path(processed_dir, "historical_gfs_operating_statement.csv"))
+  assumptions <- fread(file.path(processed_dir, "bottom_up_category_assumptions.csv"))
+  base_year <- 2025L
+  base <- purpose[year == base_year, .(category = item, base_expenditure = value)]
+  interest <- operating[year == base_year & item == "Interest expenses n.e.c.", value]
+  base[category == "General public services", `:=`(
+    category = "General public services excl interest",
+    base_expenditure = base_expenditure - interest
+  )]
+  base <- merge(base, assumptions[, .(category, exposure)], by = "category", all.x = TRUE)
+  base[exposure == "gdp_target", exposure := "total_population"]
+  base[, category_expenditure_weight := base_expenditure / sum(base_expenditure)]
+  profiles <- age_profile_relative_weights()
+  merge(base, profiles, by = "exposure", allow.cartesian = TRUE)
+}
+
+
+age_expenditure_profile_index <- function(dt) {
+  dt <- as.data.table(copy(dt))
+  age_groups <- c("0_14", "15_34", "35_54", "55_64", "65p")
+  missing <- setdiff(age_groups, names(dt))
+  if (length(missing)) stop("Missing age shares for expenditure profile: ", paste(missing, collapse = ", "))
+
+  base_population <- fread(file.path(processed_dir, "historical_age_shares.csv"))[
+    year == 2025L
+  ]
+  categories <- age_profile_category_table()
+  category_profiles <- dcast(
+    categories, category + exposure + category_expenditure_weight ~ age_group,
+    value.var = "relative_weight"
+  )
+  out <- rep(0, nrow(dt))
+  for (i in seq_len(nrow(category_profiles))) {
+    profile <- as.numeric(category_profiles[i, ..age_groups])
+    base_exposure <- sum(profile * as.numeric(base_population[1L, ..age_groups]))
+    current_exposure <- as.matrix(dt[, ..age_groups]) %*% profile
+    out <- out + category_profiles$category_expenditure_weight[i] *
+      as.numeric(current_exposure / base_exposure)
+  }
+  out
+}
+
+
+demographic_level_terms <- function(specification = NULL, suffix = "") {
+  specification <- active_demographic_specification(specification)
+  if (specification == "age_shares") age_level_terms(suffix) else {
+    paste0("age_expenditure_profile", suffix)
+  }
+}
+
+
+demographic_feature_frame <- function(dt, specification = NULL) {
+  specification <- active_demographic_specification(specification)
+  if (specification == "age_shares") return(age_feature_frame(dt))
+  data.frame(age_expenditure_profile = age_expenditure_profile_index(dt))
 }
 
 
@@ -102,15 +228,17 @@ covid_feature_frame <- function(dt) {
   as.data.frame(out, check.names = FALSE)
 }
 
-model_feature_frame <- function(dt, include_covid = TRUE) {
+model_feature_frame <- function(dt, include_covid = TRUE, scale_drivers = NULL,
+                                demographic_specification = NULL) {
   # Full set of contemporaneous regressors used by the simple level models.
   out <- cbind(
-    age_feature_frame(dt),
+    demographic_feature_frame(dt, demographic_specification),
     data.frame(
     tot_z = as.numeric(dt$tot_z),
     rp_z = as.numeric(dt$rp_z),
       unemployment = as.numeric(dt$unemployment)
-    )
+    ),
+    scale_feature_frame(dt, scale_drivers)
   )
   if (include_covid) out <- cbind(out, covid_feature_frame(dt))
   out
@@ -123,7 +251,8 @@ demo_feature_frame <- function(dt) {
 }
 
 
-structural_feature_frame <- function(dt) {
+structural_feature_frame <- function(dt, scale_drivers = NULL,
+                                     demographic_specification = NULL) {
   # Slow-moving variables that we are willing to interpret as structural
   # determinants of the long-run spending share.
   #
@@ -131,8 +260,9 @@ structural_feature_frame <- function(dt) {
   # short-run macro block, because persistent changes in the cost of producing
   # government services can create a long-run pressure on nominal spending/GDP.
   cbind(
-    age_feature_frame(dt),
+    demographic_feature_frame(dt, demographic_specification),
     data.frame(rp_z = as.numeric(dt$rp_z)),
+    scale_feature_frame(dt, scale_drivers),
     covid_feature_frame(dt)
   )
 }
@@ -181,7 +311,8 @@ as_xreg_matrix <- function(df) {
 # Dynamic feature construction
 # -----------------------------------------------------------------------------
 
-build_topdown_table <- function(dt, include_y = TRUE) {
+build_topdown_table <- function(dt, include_y = TRUE, scale_drivers = NULL,
+                                demographic_specification = NULL) {
   # Build one table containing both levels and the transformations needed by
   # `dynamic_diff` and `ardl_ecm`.
   #
@@ -202,9 +333,30 @@ build_topdown_table <- function(dt, include_y = TRUE) {
     unemployment = as.numeric(dt$unemployment),
     covid = as.numeric(dt$covid)
   )
+  out[, age_expenditure_profile := age_expenditure_profile_index(dt)]
+
+  # The relative-price index is available directly in history and is recovered
+  # from the standardised projection assumption out of sample.
+  standardisation <- fread(file.path(processed_dir, "standardisation_parameters.csv"))
+  rp <- standardisation[variable == "relative_gov_price"]
+  relative_price_from_z <- as.numeric(dt$rp_z) * rp$scale + rp$center
+  relative_price <- if ("relative_gov_price" %in% names(dt)) {
+    fifelse(is.finite(as.numeric(dt$relative_gov_price)),
+            as.numeric(dt$relative_gov_price), relative_price_from_z)
+  } else relative_price_from_z
+  out[, log_relative_gov_price := log(relative_price)]
+  if ("log_real_gdp_per_capita" %in% names(dt)) {
+    out[, log_real_gdp_per_capita := as.numeric(dt$log_real_gdp_per_capita)]
+  }
+
+  for (term in scale_level_terms(drivers = scale_drivers)) {
+    if (!term %in% names(dt)) stop("Missing top-down driver: ", term)
+    out[, (term) := as.numeric(dt[[term]])]
+  }
 
   # Annual changes in slow-moving structural variables.
-  for (v in c("age_0_14", "age_15_34", "age_55_64", "age_65p", "rp_z")) {
+  for (v in c("age_0_14", "age_15_34", "age_55_64", "age_65p",
+              "age_expenditure_profile", "rp_z")) {
     out[, (paste0("d_", v)) := get(v) - shift(get(v))]
     out[, (paste0(v, "_l1")) := shift(get(v))]
   }
@@ -228,6 +380,16 @@ build_topdown_table <- function(dt, include_y = TRUE) {
   for (covid_year in covid_intervention_years()) {
     out[, (paste0("covid_fy", covid_year)) := as.integer(get("year") == covid_year)]
   }
+  for (v in scale_level_terms(drivers = scale_drivers)) {
+    out[, (paste0("d_", v)) := get(v) - shift(get(v))]
+    out[, (paste0(v, "_l1")) := shift(get(v))]
+  }
+
+  for (v in intersect(c("log_relative_gov_price", "log_real_gdp_per_capita"), names(out))) {
+    out[, (paste0("d_", v)) := get(v) - shift(get(v))]
+    out[, (paste0(v, "_l1")) := shift(get(v))]
+    out[, (paste0("d_", v, "_l1")) := shift(get(paste0("d_", v)))]
+  }
 
   if (include_y) {
     if (!"broad_expenditure_gdp" %in% names(dt)) {
@@ -238,13 +400,18 @@ build_topdown_table <- function(dt, include_y = TRUE) {
     out[, y_lag := shift(y)]
     out[, dy := y - y_lag]
     out[, dy_lag := shift(dy)]
+    out[, w := log(y)]
+    out[, w_lag := shift(w)]
+    out[, dw := w - w_lag]
+    out[, dw_lag := shift(dw)]
   }
 
   out
 }
 
 
-build_future_feature_table <- function(train, future) {
+build_future_feature_table <- function(train, future, scale_drivers = NULL,
+                                       demographic_specification = NULL) {
   # Derive future changes and lags using the end of the historical sample.
   # For example, the first projected d_tot_z is future TOT minus the final
   # historical TOT, rather than future TOT minus an unavailable future lag.
@@ -264,7 +431,10 @@ build_future_feature_table <- function(train, future) {
   # first-differences required by the new dynamic models.
   seed <- tail(train, 2L)
   combined <- rbindlist(list(seed, future), fill = TRUE, use.names = TRUE)
-  derived <- build_topdown_table(combined, include_y = FALSE)
+  derived <- build_topdown_table(
+    combined, include_y = FALSE, scale_drivers = scale_drivers,
+    demographic_specification = demographic_specification
+  )
 
   derived[year %in% future$year]
 }
@@ -274,7 +444,7 @@ build_future_feature_table <- function(train, future) {
 # ECM helpers
 # -----------------------------------------------------------------------------
 
-extract_ecm_long_run <- function(ecm_fit) {
+extract_ecm_long_run <- function(ecm_fit, scale_drivers = NULL) {
   # Convert coefficients from the unrestricted ECM parameterisation into
   # implied long-run coefficients.
   #
@@ -297,7 +467,10 @@ extract_ecm_long_run <- function(ecm_fit) {
   }
 
   level_terms <- intersect(
-    c("(Intercept)", age_level_terms("_l1"), "rp_z_l1", "unemployment_l1"),
+    c(
+      "(Intercept)", age_level_terms("_l1"), "rp_z_l1",
+      scale_level_terms("_l1", scale_drivers), "unemployment_l1"
+    ),
     names(b)
   )
 
@@ -319,23 +492,23 @@ recursive_ecm_forecast <- function(ecm_fit, train_table, future_table) {
   h <- nrow(future_table)
   out <- numeric(h)
 
-  y_prev <- tail(train_table$y, 1L)
-  dy_prev <- tail(na.omit(train_table$dy), 1L)
+  w_prev <- tail(train_table$w, 1L)
+  dw_prev <- tail(na.omit(train_table$dw), 1L)
 
   # Terms with no historical variation are dropped before estimation.
 
   for (i in seq_len(h)) {
     row <- as.data.frame(future_table[i])
 
-    row$y_lag <- y_prev
-    row$dy_lag <- dy_prev
+    row$w_lag <- w_prev
+    row$dw_lag <- dw_prev
 
     # predict.lm matches regressors by name; extra columns in `row` are harmless.
-    dy_hat <- as.numeric(predict(ecm_fit, newdata = row))
+    dw_hat <- as.numeric(predict(ecm_fit, newdata = row))
 
-    out[i] <- y_prev + dy_hat
-    y_prev <- out[i]
-    dy_prev <- dy_hat
+    w_prev <- w_prev + dw_hat
+    out[i] <- exp(w_prev)
+    dw_prev <- dw_hat
   }
 
   out
@@ -346,11 +519,21 @@ recursive_ecm_forecast <- function(ecm_fit, train_table, future_table) {
 # Main fitting and projection function
 # -----------------------------------------------------------------------------
 
-fit_predict_topdown <- function(train, future) {
+fit_predict_topdown <- function(train, future, additional_drivers = NULL,
+                                demographic_specification = NULL,
+                                interest_treatment = NULL) {
   train <- as.data.table(copy(train))
   future <- as.data.table(copy(future))
+  interest_treatment <- active_topdown_interest_treatment(interest_treatment)
+  train <- apply_topdown_interest_treatment(train, interest_treatment)
   setorder(train, year)
   setorder(future, year)
+
+  scale_drivers <- active_scale_drivers(additional_drivers)
+  demographic_specification <- active_demographic_specification(demographic_specification)
+  driver_variant <- if (!length(scale_drivers)) "baseline" else {
+    paste(scale_drivers, collapse = "+")
+  }
 
   y <- as.numeric(train$broad_expenditure_gdp)
   h <- nrow(future)
@@ -364,8 +547,10 @@ fit_predict_topdown <- function(train, future) {
   # Simple descriptive benchmark: spending/GDP as a contemporaneous function
   # of age composition, TOT, relative prices, unemployment and COVID.
 
-  x <- model_feature_frame(train)
-  x_future <- model_feature_frame(future)
+  x <- model_feature_frame(train, scale_drivers = scale_drivers,
+                           demographic_specification = demographic_specification)
+  x_future <- model_feature_frame(future, scale_drivers = scale_drivers,
+                                  demographic_specification = demographic_specification)
 
   keep_x <- varying_columns(x)
   x <- x[, keep_x, drop = FALSE]
@@ -381,7 +566,9 @@ fit_predict_topdown <- function(train, future) {
     aic = AIC(ols_fit),
     aicc = NA_real_,
     bic = BIC(ols_fit),
-    observations = nobs(ols_fit)
+    observations = nobs(ols_fit),
+    driver_variant = driver_variant,
+    demographic_specification = demographic_specification
   )
 
   # ---------------------------------------------------------------------------
@@ -409,59 +596,28 @@ fit_predict_topdown <- function(train, future) {
     aic = AIC(level_fit),
     aicc = level_fit$aicc,
     bic = level_fit$bic,
-    observations = length(y)
+    observations = length(y),
+    driver_variant = driver_variant,
+    demographic_specification = demographic_specification
   )
 
   # ---------------------------------------------------------------------------
-  # 3. Original differenced ARIMAX benchmark
+  # 3. Differenced ARIMAX with variable-appropriate transformations
   # ---------------------------------------------------------------------------
-  # This is intentionally retained as the simple benchmark. It mechanically
-  # differences every original regressor, including unemployment and COVID.
-  # That is NOT our preferred economic specification; `dynamic_diff` below is
-  # designed to show whether variable-specific transformations improve on it.
-
-  x_diff_base <- model_feature_frame(train, include_covid = FALSE)
-  x_diff_future_base <- model_feature_frame(future, include_covid = FALSE)
-  combined_x <- rbind(x_diff_base[nrow(x_diff_base), , drop = FALSE], x_diff_future_base)
-  dx_future <- as.data.frame(apply(combined_x, 2, diff))
-  dx_train <- as.data.frame(apply(x_diff_base, 2, diff))
-  dx_train <- cbind(dx_train, covid_feature_frame(train[-1L]))
-  dx_future <- cbind(dx_future, covid_feature_frame(future))
-  dy <- diff(y)
-
-  keep_dx <- varying_columns(dx_train)
-  dx_train <- dx_train[, keep_dx, drop = FALSE]
-  dx_future <- dx_future[, names(dx_train), drop = FALSE]
-
-  diff_fit <- safe_auto_arima(
-    dy,
-    as_xreg_matrix(dx_train),
-    stationary = TRUE,
-    include_mean = FALSE
+  # Build aligned dynamic tables once for all change and ECM specifications.
+  train_dyn <- build_topdown_table(
+    train, include_y = TRUE, scale_drivers = scale_drivers,
+    demographic_specification = demographic_specification
   )
-
-  diff_forecast <- as.numeric(
-    forecast(diff_fit, xreg = as_xreg_matrix(dx_future), h = h)$mean
+  future_dyn <- build_future_feature_table(
+    train, future, scale_drivers = scale_drivers,
+    demographic_specification = demographic_specification
   )
-
-  results$arimax_diff <- y[length(y)] + cumsum(diff_forecast)
-
-  metadata$arimax_diff <- data.table(
-    model = "arimax_diff",
-    specification = "Benchmark: annual change in spending/GDP with differenced drivers and FY2020-22 interventions; no drift",
-    arima_order = paste(arimaorder(diff_fit)[1:3], collapse = ","),
-    aic = AIC(diff_fit),
-    aicc = diff_fit$aicc,
-    bic = diff_fit$bic,
-    observations = length(dy)
-  )
-
-  # Build the aligned dynamic tables once for the remaining models.
-  train_dyn <- build_topdown_table(train, include_y = TRUE)
-  future_dyn <- build_future_feature_table(train, future)
 
   # ---------------------------------------------------------------------------
-  # 4. NEW: dynamic differenced model with variable-specific transformations
+  # Age and relative-price changes represent gradual structural movement;
+  # current and lagged changes in unemployment and the terms of trade capture
+  # cyclical effects. Separate COVID-year indicators absorb exceptional years.
   # ---------------------------------------------------------------------------
   # Economic interpretation:
   #   - selected demographics: changes matter for annual spending growth;
@@ -476,7 +632,8 @@ fit_predict_topdown <- function(train, future) {
   # in the ECM below, where recursive forecasting is economically important.
 
   dynamic_terms <- c(
-    paste0("d_", age_level_terms()),
+    paste0("d_", demographic_level_terms(demographic_specification)),
+    scale_difference_terms(scale_drivers),
     "d_rp_z",
     "d_unemployment", "d_unemployment_l1",
     "d_tot_z", "d_tot_z_l1",
@@ -491,30 +648,32 @@ fit_predict_topdown <- function(train, future) {
   dyn_x <- dyn_x[, keep_dyn, drop = FALSE]
   dyn_future_x <- as.data.frame(future_dyn[, names(dyn_x), with = FALSE])
 
-  dynamic_fit <- safe_auto_arima(
+  diff_fit <- safe_auto_arima(
     dyn_y,
     as_xreg_matrix(dyn_x),
     stationary = TRUE,
     include_mean = FALSE
   )
 
-  dynamic_dy_forecast <- as.numeric(
-    forecast(dynamic_fit, xreg = as_xreg_matrix(dyn_future_x), h = h)$mean
+  diff_forecast <- as.numeric(
+    forecast(diff_fit, xreg = as_xreg_matrix(dyn_future_x), h = h)$mean
   )
 
-  results$dynamic_diff <- tail(y, 1L) + cumsum(dynamic_dy_forecast)
+  results$arimax_diff <- tail(y, 1L) + cumsum(diff_forecast)
 
-  metadata$dynamic_diff <- data.table(
-    model = "dynamic_diff",
+  metadata$arimax_diff <- data.table(
+    model = "arimax_diff",
     specification = paste(
-      "Change in spending/GDP with selected d(age shares), d(relative prices),",
+      "Change in spending/GDP with selected d(age shares), d(scale/income drivers), d(relative prices),",
       "d(unemployment) + lag, d(TOT) + lag, FY2020-22 interventions; ARMA errors"
     ),
-    arima_order = paste(arimaorder(dynamic_fit)[1:3], collapse = ","),
-    aic = AIC(dynamic_fit),
-    aicc = dynamic_fit$aicc,
-    bic = dynamic_fit$bic,
-    observations = length(dyn_y)
+    arima_order = paste(arimaorder(diff_fit)[1:3], collapse = ","),
+    aic = AIC(diff_fit),
+    aicc = diff_fit$aicc,
+    bic = diff_fit$bic,
+    observations = length(dyn_y),
+    driver_variant = driver_variant,
+    demographic_specification = demographic_specification
   )
 
   # ---------------------------------------------------------------------------
@@ -533,8 +692,12 @@ fit_predict_topdown <- function(train, future) {
   # The hybrid still works in annual changes when combining the two components:
   # observed dy minus structural predicted dy is the macro residual change.
 
-  structural <- structural_feature_frame(train)
-  structural_future <- structural_feature_frame(future)
+  structural <- structural_feature_frame(
+    train, scale_drivers, demographic_specification
+  )
+  structural_future <- structural_feature_frame(
+    future, scale_drivers, demographic_specification
+  )
 
   keep_structural <- varying_columns(structural)
   structural <- structural[, keep_structural, drop = FALSE]
@@ -593,18 +756,20 @@ fit_predict_topdown <- function(train, future) {
   metadata$hybrid <- data.table(
     model = "hybrid",
     specification = paste(
-      "Structural level OLS using selected age shares + relative prices + FY2020-22 interventions;",
+      "Structural level OLS using selected age shares + scale/income drivers + relative prices + FY2020-22 interventions;",
       "macro residual change uses d(unemployment) + lag and d(TOT) + lag; ARMA errors"
     ),
     arima_order = paste(arimaorder(hybrid_macro_fit)[1:3], collapse = ","),
     aic = AIC(hybrid_macro_fit),
     aicc = hybrid_macro_fit$aicc,
     bic = hybrid_macro_fit$bic,
-    observations = length(hybrid_macro_y)
+    observations = length(hybrid_macro_y),
+    driver_variant = driver_variant,
+    demographic_specification = demographic_specification
   )
 
   # ---------------------------------------------------------------------------
-  # 6. NEW: parsimonious unrestricted ECM / ARDL-style model
+  # 5. Parsimonious augmented-Mann unrestricted ECM / ARDL-style model
   # ---------------------------------------------------------------------------
   # The ECM is estimated directly as a regression for annual spending growth:
   #
@@ -631,29 +796,31 @@ fit_predict_topdown <- function(train, future) {
   # freedom. Adding both their level and change coefficients can overfit a short
   # annual sample. That is an easy robustness variant to add later if needed.
 
-  ecm_terms <- c(
-    "y_lag",
-    age_level_terms("_l1"),
-    "rp_z_l1",
-    "d_rp_z",
-    "unemployment_l1", "d_unemployment",
-    "d_tot_z", "d_tot_z_l1",
-    "dy_lag",
-    covid_dummy_terms()
+  # Long run: log spending/GDP, log real GDP per capita and log relative price.
+  # Age shares are deliberately omitted from the bounds vector because their
+  # smooth integration properties make the I(0)/I(1) bounds assumptions unsafe.
+  ecm_core <- c("w_lag", "log_real_gdp_per_capita_l1", "log_relative_gov_price_l1")
+  ecm_short_1 <- c(
+    "d_log_real_gdp_per_capita", "d_log_relative_gov_price",
+    "d_unemployment", "d_tot_z", covid_dummy_terms()
   )
-
-  ecm_sample <- complete.cases(train_dyn[, c("dy", ecm_terms), with = FALSE])
-  ecm_df <- as.data.frame(train_dyn[ecm_sample, c("dy", ecm_terms), with = FALSE])
-
-  # Drop terms with no historical variation. The dependent variable is kept.
-  ecm_keep <- varying_columns(ecm_df[, ecm_terms, drop = FALSE])
-  ecm_terms_kept <- ecm_terms[ecm_keep]
-
-  ecm_formula <- as.formula(
-    paste("dy ~", paste(ecm_terms_kept, collapse = " + "))
+  ecm_short_2 <- c(
+    "dw_lag", "d_log_real_gdp_per_capita_l1", "d_log_relative_gov_price_l1",
+    "d_unemployment_l1", "d_tot_z_l1"
   )
-
-  ecm_fit <- lm(ecm_formula, data = ecm_df)
+  fit_ecm_candidate <- function(order) {
+    terms <- c(ecm_core, ecm_short_1, if (order == 2L) ecm_short_2)
+    sample <- complete.cases(train_dyn[, c("dw", terms), with = FALSE])
+    df <- as.data.frame(train_dyn[sample, c("dw", terms), with = FALSE])
+    keep <- varying_columns(df[, terms, drop = FALSE])
+    terms <- terms[keep]
+    fit <- lm(reformulate(terms, response = "dw"), data = df)
+    list(fit = fit, order = order, sample = sample, bic = BIC(fit))
+  }
+  ecm_candidates <- lapply(1:2, fit_ecm_candidate)
+  ecm_selected <- ecm_candidates[[which.min(vapply(ecm_candidates, `[[`, numeric(1), "bic"))]]
+  ecm_fit <- ecm_selected$fit
+  ecm_formula <- formula(ecm_fit)
 
   results$ardl_ecm <- recursive_ecm_forecast(
     ecm_fit,
@@ -661,7 +828,7 @@ fit_predict_topdown <- function(train, future) {
     future_table = future_dyn
   )
 
-  ecm_adjustment <- unname(coef(ecm_fit)["y_lag"])
+  ecm_adjustment <- unname(coef(ecm_fit)["w_lag"])
 
   metadata$ardl_ecm <- data.table(
     model = "ardl_ecm",
@@ -671,37 +838,10 @@ fit_predict_topdown <- function(train, future) {
     aicc = NA_real_,
     bic = BIC(ecm_fit),
     observations = nobs(ecm_fit),
-    ecm_adjustment = ifelse(length(ecm_adjustment), ecm_adjustment, NA_real_)
-  )
-
-  # ---------------------------------------------------------------------------
-  # 7. ARIMA benchmark with COVID interventions
-  # ---------------------------------------------------------------------------
-
-  uni_x <- covid_feature_frame(train)
-  uni_future_x <- covid_feature_frame(future)
-  keep_uni <- varying_columns(uni_x)
-  uni_x <- uni_x[, keep_uni, drop = FALSE]
-  uni_future_x <- uni_future_x[, names(uni_x), drop = FALSE]
-
-  uni_fit <- safe_auto_arima(
-    y, as_xreg_matrix(uni_x),
-    stationary = FALSE,
-    include_mean = TRUE
-  )
-
-  results$univariate_arima <- as.numeric(
-    forecast(uni_fit, xreg = as_xreg_matrix(uni_future_x), h = h)$mean
-  )
-
-  metadata$univariate_arima <- data.table(
-    model = "univariate_arima",
-    specification = "Automatic ARIMA benchmark with FY2020-22 interventions",
-    arima_order = paste(arimaorder(uni_fit)[1:3], collapse = ","),
-    aic = AIC(uni_fit),
-    aicc = uni_fit$aicc,
-    bic = uni_fit$bic,
-    observations = length(y)
+    ecm_adjustment = ifelse(length(ecm_adjustment), ecm_adjustment, NA_real_),
+    selected_lag_order = ecm_selected$order,
+    driver_variant = driver_variant,
+    demographic_specification = demographic_specification
   )
 
   # ---------------------------------------------------------------------------
@@ -715,25 +855,33 @@ fit_predict_topdown <- function(train, future) {
       value = results[[model]]
     )
   }))
+  paths[, `:=`(
+    interest_treatment = interest_treatment,
+    interest_treatment_label = topdown_interest_treatment_label(interest_treatment)
+  )]
+  metadata_out <- rbindlist(metadata, fill = TRUE)
+  metadata_out[, `:=`(
+    interest_treatment = interest_treatment,
+    interest_treatment_label = topdown_interest_treatment_label(interest_treatment)
+  )]
 
   list(
     paths = paths,
-    metadata = rbindlist(metadata, fill = TRUE),
+    metadata = metadata_out,
     fits = list(
       structural_ols = ols_fit,
       arimax_level = level_fit,
       arimax_diff = diff_fit,
-      dynamic_diff = dynamic_fit,
       hybrid_structural_ols = hybrid_structural_fit,
       hybrid_macro = hybrid_macro_fit,
-      ardl_ecm = ecm_fit,
-      univariate_arima = uni_fit
+      ardl_ecm = ecm_fit
     ),
     diagnostics = list(
       # Useful first checks for the ECM:
       #   * ecm_adjustment should normally be negative;
       #   * long-run coefficients should be economically plausible and stable.
-      ecm_long_run = extract_ecm_long_run(ecm_fit)
+      ecm_lag_order = ecm_selected$order,
+      ecm_candidate_bic = vapply(ecm_candidates, `[[`, numeric(1), "bic")
     )
   )
 }

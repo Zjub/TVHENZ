@@ -124,21 +124,120 @@ extract_abs_national_accounts <- function(na_raw) {
   gdp_nom <- get_flow(is_nom_table & is_gdp, "gdp_nom")
   gdp_real <- get_flow(is_real_table & is_gdp, "gdp_real", TRUE)
 
-  tip <- prefer_sa(na[
-    table_no == "5206017_gen_govt_income_account" &
-      series == "Total income payable ;"
-  ])
-  tip <- annualise_complete(dedup_series(tip), "income_payable_nom", "sum", 4L)
+  get_income_flow <- function(series_name, output_name) {
+    x <- prefer_sa(na[
+      table_no == "5206017_gen_govt_income_account" & series == series_name
+    ])
+    annualise_complete(dedup_series(x), output_name, "sum", 4L)
+  }
+  tip <- get_income_flow("Total income payable ;", "income_payable_nom")
+  interest_total <- get_income_flow(
+    "Property income payable - Total interest ;", "interest_payable_total_nom"
+  )
+  interest_other <- get_income_flow(
+    "Property income payable - Interest - Other interest ;",
+    "interest_payable_other_nom"
+  )
+  interest_unfunded_super <- get_income_flow(
+    "Property income payable - Interest - On unfunded superannuation liabilities ;",
+    "interest_payable_unfunded_super_nom"
+  )
 
   out <- Reduce(function(x, y) merge(x, y, by = "year", all = TRUE),
-                list(gfce_nom, gfcf_nom, gfce_real, gdp_nom, gdp_real, tip))
+                list(
+                  gfce_nom, gfcf_nom, gfce_real, gdp_nom, gdp_real, tip,
+                  interest_total, interest_other, interest_unfunded_super
+                ))
   setorder(out, year)
   out[, `:=`(
-    broad_expenditure_nom = gfce_nom + gfcf_nom + income_payable_nom,
-    broad_expenditure_gdp = (gfce_nom + gfcf_nom + income_payable_nom) / gdp_nom,
+    broad_expenditure_including_interest_nom = gfce_nom + gfcf_nom + income_payable_nom,
+    broad_expenditure_excluding_other_interest_nom =
+      gfce_nom + gfcf_nom + income_payable_nom - interest_payable_other_nom,
+    broad_expenditure_excluding_total_interest_nom =
+      gfce_nom + gfcf_nom + income_payable_nom - interest_payable_total_nom,
     gov_consumption_price = gfce_nom / gfce_real,
     gdp_price = gdp_nom / gdp_real
   )]
+  out[, `:=`(
+    broad_expenditure_including_interest_gdp =
+      broad_expenditure_including_interest_nom / gdp_nom,
+    broad_expenditure_excluding_other_interest_gdp =
+      broad_expenditure_excluding_other_interest_nom / gdp_nom,
+    broad_expenditure_excluding_total_interest_gdp =
+      broad_expenditure_excluding_total_interest_nom / gdp_nom,
+    interest_payable_total_gdp = interest_payable_total_nom / gdp_nom,
+    interest_payable_other_gdp = interest_payable_other_nom / gdp_nom,
+    interest_payable_unfunded_super_gdp =
+      interest_payable_unfunded_super_nom / gdp_nom
+  )]
+  out <- apply_topdown_interest_treatment(out)
+  out
+}
+
+
+active_topdown_interest_treatment <- function(treatment = NULL) {
+  if (is.null(treatment)) {
+    treatment <- if (exists("topdown_interest_treatment", inherits = TRUE)) {
+      get("topdown_interest_treatment", inherits = TRUE)
+    } else "include_interest"
+  }
+  match.arg(
+    treatment,
+    c("exclude_total_interest", "exclude_other_interest", "include_interest")
+  )
+}
+
+
+topdown_interest_treatment_label <- function(treatment = NULL) {
+  treatment <- active_topdown_interest_treatment(treatment)
+  unname(c(
+    exclude_total_interest = "Exclude total interest payable",
+    exclude_other_interest = "Exclude conventional other interest",
+    include_interest = "Include all interest"
+  )[treatment])
+}
+
+
+topdown_interest_outcome_column <- function(treatment = NULL, nominal = FALSE) {
+  treatment <- active_topdown_interest_treatment(treatment)
+  stem <- c(
+    exclude_total_interest = "broad_expenditure_excluding_total_interest",
+    exclude_other_interest = "broad_expenditure_excluding_other_interest",
+    include_interest = "broad_expenditure_including_interest"
+  )[treatment]
+  paste0(unname(stem), if (nominal) "_nom" else "_gdp")
+}
+
+
+apply_topdown_interest_treatment <- function(dt, treatment = NULL) {
+  treatment <- active_topdown_interest_treatment(treatment)
+  out <- as.data.table(copy(dt))
+  ratio_column <- topdown_interest_outcome_column(treatment)
+  nominal_column <- topdown_interest_outcome_column(treatment, nominal = TRUE)
+  missing <- setdiff(c(ratio_column, nominal_column), names(out))
+  if (length(missing)) {
+    stop("Missing interest-treatment columns: ", paste(missing, collapse = ", "))
+  }
+  out[, `:=`(
+    broad_expenditure_gdp = get(ratio_column),
+    broad_expenditure_nom = get(nominal_column),
+    topdown_interest_treatment = treatment,
+    topdown_interest_treatment_label = topdown_interest_treatment_label(treatment)
+  )]
+  out
+}
+
+
+official_topdown_expenditure <- function(dt, treatment = NULL) {
+  treatment <- active_topdown_interest_treatment(treatment)
+  out <- as.numeric(dt$expenses_ratio_gdp + dt$net_capital_investment_ratio_gdp)
+  if (treatment != "include_interest") {
+    # PBO reports public debt interest but not the National Accounts imputation
+    # for unfunded-superannuation interest. This is exact for the preferred
+    # exclude-other-interest concept and only an anchor proxy for strict total
+    # interest exclusion.
+    out <- out - as.numeric(dt$public_debt_interest_ratio_gdp)
+  }
   out
 }
 

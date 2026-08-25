@@ -1,0 +1,16 @@
+window,model,model_label,endpoint_percent_gdp
+Full sample,ardl_ecm,ARDL error-correction model,30.9304440403049
+Starts 1990,ardl_ecm,ARDL error-correction model,31.7926240679276
+Estimated through 2019,ardl_ecm,ARDL error-correction model,30.4627556593359
+Full sample,arimax_diff,Differenced ARIMAX,33.9572530505038
+Starts 1990,arimax_diff,Differenced ARIMAX,34.9815898181705
+Estimated through 2019,arimax_diff,Differenced ARIMAX,28.4583016061133
+Full sample,arimax_level,ARIMAX (levels),37.4904247077735
+Starts 1990,arimax_level,ARIMAX (levels),40.5317412936128
+Estimated through 2019,arimax_level,ARIMAX (levels),26.0591369599408
+Full sample,hybrid,Hybrid structural/macro,38.0227615821869
+Starts 1990,hybrid,Hybrid structural/macro,39.4760001683232
+Estimated through 2019,hybrid,Hybrid structural/macro,26.0903695187713
+Full sample,structural_ols,Structural OLS (levels),36.2972954925584
+Starts 1990,structural_ols,Structural OLS (levels),40.4220707218891
+Estimated through 2019,structural_ols,Structural OLS (levels),25.6183299178128

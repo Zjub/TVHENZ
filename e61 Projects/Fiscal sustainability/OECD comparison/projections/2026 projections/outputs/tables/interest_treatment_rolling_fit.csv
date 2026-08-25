@@ -1,0 +1,76 @@
+model,model_label,interest_treatment,interest_treatment_label,horizon,observations,rolling_rmse_pp,rolling_mae_pp,rolling_bias_pp
+structural_ols,Structural OLS (levels),include_interest,Include all interest,1,11,3.26928433366623,2.32371532557106,-2.32371532557106
+arimax_level,ARIMAX (levels),include_interest,Include all interest,1,11,2.91489200387656,1.82040254967909,-1.82040254967909
+arimax_diff,Differenced ARIMAX,include_interest,Include all interest,1,11,1.70747789677004,1.07459184242241,-0.863974764610719
+hybrid,Hybrid structural/macro,include_interest,Include all interest,1,11,3.08428235774876,1.65411507058204,-1.62260961535584
+ardl_ecm,ARDL error-correction model,include_interest,Include all interest,1,11,1.78538955395629,1.08795209693382,-0.354638543223443
+structural_ols,Structural OLS (levels),include_interest,Include all interest,2,11,4.05336066914983,3.25759764755913,-3.25759764755913
+arimax_level,ARIMAX (levels),include_interest,Include all interest,2,11,3.87674781901011,3.04886638141169,-3.04886638141169
+arimax_diff,Differenced ARIMAX,include_interest,Include all interest,2,11,2.8479042458316,1.74748124578658,-1.64948232520101
+hybrid,Hybrid structural/macro,include_interest,Include all interest,2,11,3.62615932867417,2.59428725502142,-2.59428725502142
+ardl_ecm,ARDL error-correction model,include_interest,Include all interest,2,11,2.7379116701274,1.8813716996624,-0.565255101934345
+structural_ols,Structural OLS (levels),include_interest,Include all interest,3,11,4.76449611207334,4.08422369399551,-4.08422369399551
+arimax_level,ARIMAX (levels),include_interest,Include all interest,3,11,4.64155159423234,3.94218105033772,-3.94218105033772
+arimax_diff,Differenced ARIMAX,include_interest,Include all interest,3,11,3.62913168540859,2.57350133137197,-2.29577953305375
+hybrid,Hybrid structural/macro,include_interest,Include all interest,3,11,4.24024183839811,3.4590293634131,-3.4590293634131
+ardl_ecm,ARDL error-correction model,include_interest,Include all interest,3,11,3.28643185205505,2.58481942522061,-0.634955441844182
+structural_ols,Structural OLS (levels),include_interest,Include all interest,4,11,5.68449674562945,5.08590101191481,-5.08590101191481
+arimax_level,ARIMAX (levels),include_interest,Include all interest,4,11,5.49002731581798,4.92927053272835,-4.92927053272835
+arimax_diff,Differenced ARIMAX,include_interest,Include all interest,4,11,4.2469912372135,3.13615633191591,-3.06768055042696
+hybrid,Hybrid structural/macro,include_interest,Include all interest,4,11,5.14359530584307,4.49309051930079,-4.49309051930079
+ardl_ecm,ARDL error-correction model,include_interest,Include all interest,4,11,3.71207864662936,3.24079332077556,-0.853829499172159
+structural_ols,Structural OLS (levels),include_interest,Include all interest,5,11,6.67766325273072,6.15314290589705,-6.15314290589705
+arimax_level,ARIMAX (levels),include_interest,Include all interest,5,11,6.44570986879109,5.95062626251633,-5.95062626251633
+arimax_diff,Differenced ARIMAX,include_interest,Include all interest,5,11,4.99588323372772,3.9700741573073,-3.91720955540738
+hybrid,Hybrid structural/macro,include_interest,Include all interest,5,11,6.13069808336586,5.5928431556138,-5.5928431556138
+ardl_ecm,ARDL error-correction model,include_interest,Include all interest,5,11,4.14727832269112,3.87453754891797,-1.21463082272146
+structural_ols,Structural OLS (levels),exclude_other_interest,Exclude conventional other interest,1,11,3.38856342796503,1.96933343329479,-1.62715572590592
+arimax_level,ARIMAX (levels),exclude_other_interest,Exclude conventional other interest,1,11,3.1771636756554,1.75233239713442,-1.50368069062416
+arimax_diff,Differenced ARIMAX,exclude_other_interest,Exclude conventional other interest,1,11,1.80103632342544,1.14030853115936,-0.783844899875879
+hybrid,Hybrid structural/macro,exclude_other_interest,Exclude conventional other interest,1,11,3.20868065300115,1.65083417005911,-1.478592053009
+ardl_ecm,ARDL error-correction model,exclude_other_interest,Exclude conventional other interest,1,11,1.8552579543652,1.11194785445075,-0.457322112214183
+structural_ols,Structural OLS (levels),exclude_other_interest,Exclude conventional other interest,2,11,4.09947070064711,2.77356540131768,-2.36093790884077
+arimax_level,ARIMAX (levels),exclude_other_interest,Exclude conventional other interest,2,11,3.93963609028591,2.65986429667885,-2.28296852439153
+arimax_diff,Differenced ARIMAX,exclude_other_interest,Exclude conventional other interest,2,11,3.00011579574053,1.93896376066843,-1.53862588071017
+hybrid,Hybrid structural/macro,exclude_other_interest,Exclude conventional other interest,2,11,3.76417914062107,2.48232176468926,-2.22492092255138
+ardl_ecm,ARDL error-correction model,exclude_other_interest,Exclude conventional other interest,2,11,2.88086341351785,1.88928104202626,-0.754645577098577
+structural_ols,Structural OLS (levels),exclude_other_interest,Exclude conventional other interest,3,11,4.63493219540035,3.40957568177099,-2.95351422770857
+arimax_level,ARIMAX (levels),exclude_other_interest,Exclude conventional other interest,3,11,4.4393204884658,3.2932252416223,-2.86097445187121
+arimax_diff,Differenced ARIMAX,exclude_other_interest,Exclude conventional other interest,3,11,3.8045287151855,2.84918591409929,-2.1249643073147
+hybrid,Hybrid structural/macro,exclude_other_interest,Exclude conventional other interest,3,11,4.24634953610279,3.16124036564615,-2.83953566905832
+ardl_ecm,ARDL error-correction model,exclude_other_interest,Exclude conventional other interest,3,11,3.39476475210609,2.46523018259703,-0.855318044639865
+structural_ols,Structural OLS (levels),exclude_other_interest,Exclude conventional other interest,4,11,5.26387214293889,4.03963096228119,-3.67000784675835
+arimax_level,ARIMAX (levels),exclude_other_interest,Exclude conventional other interest,4,11,5.03105038014703,3.87116572444321,-3.55487762549194
+arimax_diff,Differenced ARIMAX,exclude_other_interest,Exclude conventional other interest,4,11,4.35086616154833,3.40566866606151,-2.76225769604377
+hybrid,Hybrid structural/macro,exclude_other_interest,Exclude conventional other interest,4,11,4.89251869043516,3.73923084363609,-3.57027407661375
+ardl_ecm,ARDL error-correction model,exclude_other_interest,Exclude conventional other interest,4,11,3.6827391581966,2.9758015745447,-1.04701164800155
+structural_ols,Structural OLS (levels),exclude_other_interest,Exclude conventional other interest,5,11,5.92420064368217,4.72131306183035,-4.47227745588744
+arimax_level,ARIMAX (levels),exclude_other_interest,Exclude conventional other interest,5,11,5.68562569341786,4.54498398300009,-4.3373829177844
+arimax_diff,Differenced ARIMAX,exclude_other_interest,Exclude conventional other interest,5,11,4.96739803526813,3.92749582197064,-3.50724405775469
+hybrid,Hybrid structural/macro,exclude_other_interest,Exclude conventional other interest,5,11,5.60473551360858,4.48714154157244,-4.37317989178704
+ardl_ecm,ARDL error-correction model,exclude_other_interest,Exclude conventional other interest,5,11,3.94414240195177,3.40361491848934,-1.38023245650155
+structural_ols,Structural OLS (levels),exclude_total_interest,Exclude total interest payable,1,11,3.36955125524373,2.08476507612779,-1.30362402600473
+arimax_level,ARIMAX (levels),exclude_total_interest,Exclude total interest payable,1,11,3.11663599606277,1.85112974801928,-1.2089391727893
+arimax_diff,Differenced ARIMAX,exclude_total_interest,Exclude total interest payable,1,11,1.79259226583691,1.14139936626644,-0.729938930591907
+hybrid,Hybrid structural/macro,exclude_total_interest,Exclude total interest payable,1,11,3.19445410134338,1.92219228406255,-1.07874764444263
+ardl_ecm,ARDL error-correction model,exclude_total_interest,Exclude total interest payable,1,11,1.80336887446248,1.12085225855393,-0.467474578866691
+structural_ols,Structural OLS (levels),exclude_total_interest,Exclude total interest payable,2,11,4.07358990188648,2.91707843618011,-1.93099446893432
+arimax_level,ARIMAX (levels),exclude_total_interest,Exclude total interest payable,2,11,3.83842209751179,2.71319819578443,-1.84132524107701
+arimax_diff,Differenced ARIMAX,exclude_total_interest,Exclude total interest payable,2,11,2.95826647587956,1.92683778133089,-1.46327901730905
+hybrid,Hybrid structural/macro,exclude_total_interest,Exclude total interest payable,2,11,3.76745428647577,2.71884194637235,-1.68455203460432
+ardl_ecm,ARDL error-correction model,exclude_total_interest,Exclude total interest payable,2,11,2.85617264006976,1.91112487514798,-0.796108625410386
+structural_ols,Structural OLS (levels),exclude_total_interest,Exclude total interest payable,3,11,4.58041062673783,3.5383047355092,-2.43005766845119
+arimax_level,ARIMAX (levels),exclude_total_interest,Exclude total interest payable,3,11,4.29692233277835,3.30424386884508,-2.2921788334866
+arimax_diff,Differenced ARIMAX,exclude_total_interest,Exclude total interest payable,3,11,3.73173383559346,2.82537632724597,-2.03900481596332
+hybrid,Hybrid structural/macro,exclude_total_interest,Exclude total interest payable,3,11,4.2844655845552,3.30459996378888,-2.22741629049139
+ardl_ecm,ARDL error-correction model,exclude_total_interest,Exclude total interest payable,3,11,3.40127857263567,2.51230306084502,-0.943363007897424
+structural_ols,Structural OLS (levels),exclude_total_interest,Exclude total interest payable,4,11,5.14769594141816,4.08746906309436,-3.05306778612535
+arimax_level,ARIMAX (levels),exclude_total_interest,Exclude total interest payable,4,11,4.81643313856475,3.8905368024377,-2.85613552546767
+arimax_diff,Differenced ARIMAX,exclude_total_interest,Exclude total interest payable,4,11,4.2712393221949,3.37332354908778,-2.65624296558222
+hybrid,Hybrid structural/macro,exclude_total_interest,Exclude total interest payable,4,11,4.90946029595386,3.842972642752,-2.85431736639786
+ardl_ecm,ARDL error-correction model,exclude_total_interest,Exclude total interest payable,4,11,3.72767298208129,3.02632089975761,-1.17327463524014
+structural_ols,Structural OLS (levels),exclude_total_interest,Exclude total interest payable,5,11,5.71562400950942,4.65933641549875,-3.76832482731352
+arimax_level,ARIMAX (levels),exclude_total_interest,Exclude total interest payable,5,11,5.37120703078436,4.42619386223798,-3.5351822740517
+arimax_diff,Differenced ARIMAX,exclude_total_interest,Exclude total interest payable,5,11,4.89302075136813,3.86976376711264,-3.39396908635163
+hybrid,Hybrid structural/macro,exclude_total_interest,Exclude total interest payable,5,11,5.44207273193323,4.37688810795201,-3.59258235710596
+ardl_ecm,ARDL error-correction model,exclude_total_interest,Exclude total interest payable,5,11,4.06255415436906,3.4988226582178,-1.54447541505901

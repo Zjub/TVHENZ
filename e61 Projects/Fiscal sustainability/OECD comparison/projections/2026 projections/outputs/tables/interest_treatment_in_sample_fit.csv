@@ -1,0 +1,16 @@
+model,in_sample_observations,in_sample_rmse_pp,in_sample_mae_pp,in_sample_r_squared,interest_treatment,interest_treatment_label
+structural_ols,46,1.03433676729206,0.712036764800087,0.70908179740856,include_interest,Include all interest
+arimax_level,46,0.630814086544043,0.494014906694493,0.891794400380526,include_interest,Include all interest
+arimax_diff,44,0.660005399068444,0.499136921312666,0.880744933815345,include_interest,Include all interest
+hybrid,44,0.770638369442211,0.560136915577262,0.837414010656213,include_interest,Include all interest
+ardl_ecm,45,0.571919978364238,0.412979672477771,0.909848548062589,include_interest,Include all interest
+structural_ols,46,0.768900301258291,0.56741021164161,0.823426916420023,exclude_other_interest,Exclude conventional other interest
+arimax_level,46,0.552756959609925,0.430513511261,0.908745796665652,exclude_other_interest,Exclude conventional other interest
+arimax_diff,44,0.589958041491215,0.435425533875894,0.892407369773775,exclude_other_interest,Exclude conventional other interest
+hybrid,44,0.620135624808884,0.466720816157996,0.881118675289015,exclude_other_interest,Exclude conventional other interest
+ardl_ecm,45,0.523945326940737,0.377321129599279,0.915655920816391,exclude_other_interest,Exclude conventional other interest
+structural_ols,46,0.760727105238769,0.56826159390398,0.866872553795217,exclude_total_interest,Exclude total interest payable
+arimax_level,46,0.526957089272686,0.399938964655691,0.936120674383166,exclude_total_interest,Exclude total interest payable
+arimax_diff,44,0.575357202463563,0.422230374546797,0.920897355865831,exclude_total_interest,Exclude total interest payable
+hybrid,44,0.605177666526299,0.475556837401319,0.912485165165017,exclude_total_interest,Exclude total interest payable
+ardl_ecm,45,0.531827631071746,0.381607991496023,0.933201494746994,exclude_total_interest,Exclude total interest payable

@@ -6,6 +6,8 @@ suppressPackageStartupMessages({
 })
 
 model_selection <- fread(file.path(table_dir, "model_selection_assessment.csv"))
+scale_income <- fread(file.path(table_dir, "top_down_scale_income_model_comparison.csv"))
+model_collinearity <- fread(file.path(table_dir, "model_collinearity_diagnostics.csv"))
 ecm_validation <- fread(file.path(table_dir, "ecm_validation_summary.csv"))
 category_assumptions <- fread(file.path(processed_dir, "bottom_up_category_assumptions.csv"))
 gfs_purpose <- fread(file.path(processed_dir, "historical_gfs_expenses_by_purpose.csv"))
@@ -75,13 +77,13 @@ add_source <- function(doc, number, title, url, use) {
 
 model_role <- function(model) {
   fcase(
-    model == "dynamic_diff", "Preferred driver-based top-down cross-check",
-    model == "univariate_arima", "Preferred near-term statistical benchmark",
+    model == "dynamic_diff", "Candidate change specification",
+    model == "univariate_arima", "Parsimonious statistical benchmark",
     model == "ardl_ecm", "Experimental sensitivity only",
     model == "arimax_diff", "Difference-model robustness check",
-    model == "arimax_level", "Levels/dynamics robustness check",
+    model == "arimax_level", "Candidate level specification",
     model == "structural_ols", "Transparent attribution benchmark",
-    model == "hybrid", "Structural/macro robustness check",
+    model == "hybrid", "Candidate hybrid specification",
     default = "Comparator"
   )
 }
@@ -239,7 +241,7 @@ doc <- read_docx()
 doc <- body_add_par(doc, "Government spending projection model assessment", style = "heading 1")
 doc <- body_add_par(
   doc,
-  "Preferred top-down model and a development path for the bottom-up framework",
+  "Open top-down model comparison and a development path for the bottom-up framework",
   style = "centered"
 )
 doc <- body_add_par(doc, paste("Prepared", format(Sys.Date(), "%d %B %Y")), style = "Normal")
@@ -253,36 +255,54 @@ doc <- add_heading(doc, "Executive conclusion")
 doc <- add_bullets(doc, c(
   "Use the published consolidated PBO forecast during the official forecast period.",
   "Use the bottom-up purpose model as the central long-run fiscal-sustainability framework, but treat its current calibrated category paths as scenarios rather than estimated forecasts.",
-  "Use the dynamic-difference model as the preferred driver-based top-down cross-check. It has the best five-year rolling performance among models with economic or demographic drivers and the lowest tested endpoint sensitivity to the estimation window.",
-  "Use the ARIMA with COVID controls as the near-term statistical benchmark only. Its forecast errors are smallest, but it cannot respond to ageing, relative prices, policy or service demand.",
-  "Do not select the current ECM as the preferred top-down model. Its finite-sample bounds tests do not support the fitted long-run relationship.",
+  "Keep model selection open. Population is removed from the headline equations; with real GDP per capita retained, levels ARIMAX has the lowest five-year RMSE, but severe level collinearity prevents a structural interpretation. Dynamic differences is less collinear but remains a long-run sensitivity.",
+  "Use the parsimonious real-income ARIMAX as a statistical benchmark only. Its income coefficient is insignificant and unstable, and it omits the richer ageing, price and labour-market channels.",
+  "Do not select the current projection ECM. Its bounds tests do not support its fitted long-run relationship, the canonical tests are inconclusive, its long-run regressors remain highly collinear and the CUSUM stability test fails.",
   "Defence should remain exogenous. Health, education and much of social spending should be rebuilt as service-specific exposure-volume-price models, with historical estimation of residual intensity where sufficient data exist."
 ))
 
-doc <- add_heading(doc, "1. Preferred top-down model")
+doc <- add_heading(doc, "1. Top-down model comparison")
 doc <- add_text(doc, paste0(
-  "No one equation is best for every use. The ARIMA with COVID controls has the lowest rolling RMSE, but it is deliberately driver-free outside the pandemic interventions. For long-horizon policy assessment, the preferred top-down equation is therefore the dynamic-difference specification: it retains demographic, relative-price, unemployment and terms-of-trade dynamics with separate FY2020-22 indicators, without imposing an unsupported long-run cointegrating relationship. It should be interpreted as a cross-check around the central bottom-up projection, not as a forty-year point forecast."
+  "Every headline top-down family now includes real GDP per capita but excludes total population. Population has no clear scale interpretation in a spending-to-GDP equation and was almost perfectly correlated with age composition, income and time. Levels ARIMAX has the lowest five-year rolling RMSE, but its level regressors remain severely collinear. Dynamic differences has acceptable VIFs and is statistically safer for short-run changes, but its accumulated forty-year path is not selected as a central estimate."
 ))
 doc <- add_table(doc, topdown_display, font_size = 7)
+scale_display <- scale_income[
+  model != "arimax_diff",
+  .(`Model` = model_label, `Driver variant` = variant_label,
+    `In-sample RMSE (pp)` = pp(in_sample_rmse_pp),
+    `5-year rolling RMSE (pp)` = pp(rolling_rmse_5y_pp),
+    `2065-66 anchored endpoint (%)` = pp(anchored_2066 * 100))
+]
+doc <- add_table(doc, scale_display, font_size = 6.3)
+collinearity_display <- model_collinearity[, .(
+  Model = model_label, Component = component,
+  `Maximum VIF` = pp(max(variance_inflation_factor), 2),
+  `Condition number` = pp(first(standardised_design_condition_number), 2),
+  Assessment = first(collinearity_assessment)
+), by = .(model, component)][, c("model", "component") := NULL]
+doc <- add_table(doc, collinearity_display, font_size = 6.3)
+doc <- add_figure(doc, "outputs/figures/peer_review/07_scale_income_fit.png",
+                  "Figure 1. Effect of adding population and real GDP per capita to each top-down family.",
+                  width = 6.5, height = 4.0)
 doc <- add_figure(
   doc,
   "outputs/figures/forecast_checks/01_rmse_by_horizon.png",
   "Figure 1. Rolling pseudo-out-of-sample RMSE by horizon."
 )
 doc <- add_text(doc, paste0(
-  "The dynamic-difference model's rolling RMSE is ",
+  "With GDP per capita but not population, the dynamic-difference model's rolling RMSE is ",
   pp(model_selection[model == "dynamic_diff", rolling_rmse_1y_pp]),
   " percentage points at one year and ",
   pp(model_selection[model == "dynamic_diff", rolling_rmse_5y_pp]),
   " percentage points at five years. Its maximum long-run endpoint shift across the tested estimation windows is ",
   pp(model_selection[model == "dynamic_diff", maximum_endpoint_window_shift_pp]),
-  " percentage points. Difference-model innovation uncertainty nevertheless accumulates over long horizons, so scenario and model spread remain essential."
+  " percentage points. Its sample sensitivity is not the lowest of the richer equations, and difference-model innovations accumulate over long horizons. Real GDP per capita is the principal fit improvement in most economic specifications, but its negative coefficient materially lowers long-run endpoints and may partly proxy for trend or policy regimes."
 ))
 
 doc <- add_heading(doc, "2. Why the ECM is not preferred")
 doc <- add_text(doc, "A negative error-correction coefficient is not by itself evidence of cointegration. The model must establish an admissible integration order and a statistically supported lagged-level relationship, while also passing residual, functional-form and stability checks.")
 doc <- add_table(doc, ecm_display, font_size = 7)
-doc <- add_text(doc, "The fitted ECM is dynamically stable and does not fail the recursive CUSUM test. However, both fitted-equation bounds statistics fall in the region that does not support a level relationship; the canonical ARDL robustness test is inconclusive; residual serial correlation and RESET tests reject at 5 per cent; and the long-run age-share regressors are highly collinear. The ECM should remain in the output set as an experimental sensitivity, not as the principal projection model.")
+doc <- add_text(doc, "The fitted projection ECM passes the reported residual and RESET checks but fails the recursive CUSUM stability test. Both of its bounds statistics reject a level relationship, while the canonical ARDL robustness statistics are inconclusive. Its five-year rolling RMSE is the highest and its long-run regressors remain severely collinear. It should not be used as a trusted projection model.")
 
 doc <- body_add_break(doc)
 doc <- add_heading(doc, "3. What the bottom-up model currently does")
@@ -363,7 +383,7 @@ for (i in seq_along(source_items)) {
 }
 
 doc <- add_heading(doc, "11. Recommended decision")
-doc <- add_text(doc, "For the current model vintage, retain the bottom-up purpose framework as the central long-run assessment because its assumptions and fiscal mechanisms are auditable. Label the category projections as calibrated scenarios. Use dynamic differences as the preferred top-down structural cross-check and the ARIMA with COVID controls as the near-term statistical benchmark. Do not promote the current ECM to preferred status.")
+doc <- add_text(doc, "For the current model vintage, retain the bottom-up purpose framework as the central long-run assessment because its assumptions and fiscal mechanisms are auditable. Label the category projections as calibrated scenarios. Use levels ARIMAX only as a conditional forecast comparison, dynamic differences as the least-collinear economic sensitivity, and the real-income ARIMAX as the statistical benchmark. Do not treat structural OLS, the hybrid level block or the current ECM as trusted long-run coefficient models. Develop a real-spending-per-capita income-elasticity specification before final top-down selection.")
 doc <- add_text(doc, "The highest-value next development is a health module that combines needs-weighted population, AIHW/RoGS service data and a health input-price index, followed by enrolment-based education and program-based social-protection modules. This improves the largest and most demographically exposed categories before investing effort in small or inherently discretionary purposes.")
 
 note_path <- file.path(documentation_dir, "model_assessment_and_bottom_up_development.docx")

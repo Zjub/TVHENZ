@@ -1,0 +1,1231 @@
+year,model,value,interest_treatment,interest_treatment_label,model_label,path_type
+2026,structural_ols,0.361966324862483,include_interest,Include all interest,Structural OLS (levels),Model only
+2027,structural_ols,0.362913972915624,include_interest,Include all interest,Structural OLS (levels),Model only
+2028,structural_ols,0.363027192151714,include_interest,Include all interest,Structural OLS (levels),Model only
+2029,structural_ols,0.361888559710274,include_interest,Include all interest,Structural OLS (levels),Model only
+2030,structural_ols,0.360648010200117,include_interest,Include all interest,Structural OLS (levels),Model only
+2031,structural_ols,0.359192688266364,include_interest,Include all interest,Structural OLS (levels),Model only
+2032,structural_ols,0.357888309146879,include_interest,Include all interest,Structural OLS (levels),Model only
+2033,structural_ols,0.358804704978525,include_interest,Include all interest,Structural OLS (levels),Model only
+2034,structural_ols,0.359949706414607,include_interest,Include all interest,Structural OLS (levels),Model only
+2035,structural_ols,0.361194876766857,include_interest,Include all interest,Structural OLS (levels),Model only
+2036,structural_ols,0.362807784349855,include_interest,Include all interest,Structural OLS (levels),Model only
+2037,structural_ols,0.363662556381712,include_interest,Include all interest,Structural OLS (levels),Model only
+2038,structural_ols,0.364517328413569,include_interest,Include all interest,Structural OLS (levels),Model only
+2039,structural_ols,0.365372100445427,include_interest,Include all interest,Structural OLS (levels),Model only
+2040,structural_ols,0.366226872477285,include_interest,Include all interest,Structural OLS (levels),Model only
+2041,structural_ols,0.367081644509141,include_interest,Include all interest,Structural OLS (levels),Model only
+2042,structural_ols,0.367936416541,include_interest,Include all interest,Structural OLS (levels),Model only
+2043,structural_ols,0.368791188572857,include_interest,Include all interest,Structural OLS (levels),Model only
+2044,structural_ols,0.369645960604714,include_interest,Include all interest,Structural OLS (levels),Model only
+2045,structural_ols,0.370500732636572,include_interest,Include all interest,Structural OLS (levels),Model only
+2046,structural_ols,0.37135550466843,include_interest,Include all interest,Structural OLS (levels),Model only
+2047,structural_ols,0.372210276700287,include_interest,Include all interest,Structural OLS (levels),Model only
+2048,structural_ols,0.373065048732144,include_interest,Include all interest,Structural OLS (levels),Model only
+2049,structural_ols,0.373919820764002,include_interest,Include all interest,Structural OLS (levels),Model only
+2050,structural_ols,0.37477459279586,include_interest,Include all interest,Structural OLS (levels),Model only
+2051,structural_ols,0.375629364827717,include_interest,Include all interest,Structural OLS (levels),Model only
+2052,structural_ols,0.376484136859574,include_interest,Include all interest,Structural OLS (levels),Model only
+2053,structural_ols,0.377338908891432,include_interest,Include all interest,Structural OLS (levels),Model only
+2054,structural_ols,0.37819368092329,include_interest,Include all interest,Structural OLS (levels),Model only
+2055,structural_ols,0.379048452955146,include_interest,Include all interest,Structural OLS (levels),Model only
+2056,structural_ols,0.379903224987005,include_interest,Include all interest,Structural OLS (levels),Model only
+2057,structural_ols,0.380757997018862,include_interest,Include all interest,Structural OLS (levels),Model only
+2058,structural_ols,0.381612769050719,include_interest,Include all interest,Structural OLS (levels),Model only
+2059,structural_ols,0.382467541082577,include_interest,Include all interest,Structural OLS (levels),Model only
+2060,structural_ols,0.383322313114434,include_interest,Include all interest,Structural OLS (levels),Model only
+2061,structural_ols,0.384177085146292,include_interest,Include all interest,Structural OLS (levels),Model only
+2062,structural_ols,0.385031857178149,include_interest,Include all interest,Structural OLS (levels),Model only
+2063,structural_ols,0.385886629210007,include_interest,Include all interest,Structural OLS (levels),Model only
+2064,structural_ols,0.386741401241864,include_interest,Include all interest,Structural OLS (levels),Model only
+2065,structural_ols,0.387596173273722,include_interest,Include all interest,Structural OLS (levels),Model only
+2066,structural_ols,0.388450945305579,include_interest,Include all interest,Structural OLS (levels),Model only
+2026,arimax_level,0.384513149345993,include_interest,Include all interest,ARIMAX (levels),Model only
+2027,arimax_level,0.382460671596482,include_interest,Include all interest,ARIMAX (levels),Model only
+2028,arimax_level,0.379348638770943,include_interest,Include all interest,ARIMAX (levels),Model only
+2029,arimax_level,0.376040781622353,include_interest,Include all interest,ARIMAX (levels),Model only
+2030,arimax_level,0.373776918549495,include_interest,Include all interest,ARIMAX (levels),Model only
+2031,arimax_level,0.372318681376099,include_interest,Include all interest,ARIMAX (levels),Model only
+2032,arimax_level,0.371875556464432,include_interest,Include all interest,ARIMAX (levels),Model only
+2033,arimax_level,0.37269222927377,include_interest,Include all interest,ARIMAX (levels),Model only
+2034,arimax_level,0.374125259603164,include_interest,Include all interest,ARIMAX (levels),Model only
+2035,arimax_level,0.375837465890105,include_interest,Include all interest,ARIMAX (levels),Model only
+2036,arimax_level,0.378092035019386,include_interest,Include all interest,ARIMAX (levels),Model only
+2037,arimax_level,0.379347549432478,include_interest,Include all interest,ARIMAX (levels),Model only
+2038,arimax_level,0.380579918203815,include_interest,Include all interest,ARIMAX (levels),Model only
+2039,arimax_level,0.381784286890534,include_interest,Include all interest,ARIMAX (levels),Model only
+2040,arimax_level,0.382964311046398,include_interest,Include all interest,ARIMAX (levels),Model only
+2041,arimax_level,0.384126512503717,include_interest,Include all interest,ARIMAX (levels),Model only
+2042,arimax_level,0.385277298402894,include_interest,Include all interest,ARIMAX (levels),Model only
+2043,arimax_level,0.386421719157751,include_interest,Include all interest,ARIMAX (levels),Model only
+2044,arimax_level,0.387563218180594,include_interest,Include all interest,ARIMAX (levels),Model only
+2045,arimax_level,0.388703853712842,include_interest,Include all interest,ARIMAX (levels),Model only
+2046,arimax_level,0.389844675781364,include_interest,Include all interest,ARIMAX (levels),Model only
+2047,arimax_level,0.390986092050231,include_interest,Include all interest,ARIMAX (levels),Model only
+2048,arimax_level,0.392128154268641,include_interest,Include all interest,ARIMAX (levels),Model only
+2049,arimax_level,0.393270752531877,include_interest,Include all interest,ARIMAX (levels),Model only
+2050,arimax_level,0.394413730749059,include_interest,Include all interest,ARIMAX (levels),Model only
+2051,arimax_level,0.395556945089326,include_interest,Include all interest,ARIMAX (levels),Model only
+2052,arimax_level,0.396700286289845,include_interest,Include all interest,ARIMAX (levels),Model only
+2053,arimax_level,0.397843682068605,include_interest,Include all interest,ARIMAX (levels),Model only
+2054,arimax_level,0.398987090598896,include_interest,Include all interest,ARIMAX (levels),Model only
+2055,arimax_level,0.400130491521628,include_interest,Include all interest,ARIMAX (levels),Model only
+2056,arimax_level,0.401273877747291,include_interest,Include all interest,ARIMAX (levels),Model only
+2057,arimax_level,0.402417249266774,include_interest,Include all interest,ARIMAX (levels),Model only
+2058,arimax_level,0.403560609078527,include_interest,Include all interest,ARIMAX (levels),Model only
+2059,arimax_level,0.40470396084559,include_interest,Include all interest,ARIMAX (levels),Model only
+2060,arimax_level,0.405847307765306,include_interest,Include all interest,ARIMAX (levels),Model only
+2061,arimax_level,0.406990652184582,include_interest,Include all interest,ARIMAX (levels),Model only
+2062,arimax_level,0.408133995610172,include_interest,Include all interest,ARIMAX (levels),Model only
+2063,arimax_level,0.409277338884571,include_interest,Include all interest,ARIMAX (levels),Model only
+2064,arimax_level,0.410420682396293,include_interest,Include all interest,ARIMAX (levels),Model only
+2065,arimax_level,0.411564026261816,include_interest,Include all interest,ARIMAX (levels),Model only
+2066,arimax_level,0.412707370458353,include_interest,Include all interest,ARIMAX (levels),Model only
+2026,arimax_diff,0.384493138506395,include_interest,Include all interest,Differenced ARIMAX,Model only
+2027,arimax_diff,0.384839681847426,include_interest,Include all interest,Differenced ARIMAX,Model only
+2028,arimax_diff,0.384622062147951,include_interest,Include all interest,Differenced ARIMAX,Model only
+2029,arimax_diff,0.383519591092793,include_interest,Include all interest,Differenced ARIMAX,Model only
+2030,arimax_diff,0.382490888309153,include_interest,Include all interest,Differenced ARIMAX,Model only
+2031,arimax_diff,0.381614852485625,include_interest,Include all interest,Differenced ARIMAX,Model only
+2032,arimax_diff,0.38053743619496,include_interest,Include all interest,Differenced ARIMAX,Model only
+2033,arimax_diff,0.381453235928829,include_interest,Include all interest,Differenced ARIMAX,Model only
+2034,arimax_diff,0.380535160081674,include_interest,Include all interest,Differenced ARIMAX,Model only
+2035,arimax_diff,0.379498971105815,include_interest,Include all interest,Differenced ARIMAX,Model only
+2036,arimax_diff,0.378164262685784,include_interest,Include all interest,Differenced ARIMAX,Model only
+2037,arimax_diff,0.377497615117676,include_interest,Include all interest,Differenced ARIMAX,Model only
+2038,arimax_diff,0.376830967549569,include_interest,Include all interest,Differenced ARIMAX,Model only
+2039,arimax_diff,0.376164319981461,include_interest,Include all interest,Differenced ARIMAX,Model only
+2040,arimax_diff,0.375497672413353,include_interest,Include all interest,Differenced ARIMAX,Model only
+2041,arimax_diff,0.374831024845246,include_interest,Include all interest,Differenced ARIMAX,Model only
+2042,arimax_diff,0.374164377277137,include_interest,Include all interest,Differenced ARIMAX,Model only
+2043,arimax_diff,0.373497729709029,include_interest,Include all interest,Differenced ARIMAX,Model only
+2044,arimax_diff,0.372831082140922,include_interest,Include all interest,Differenced ARIMAX,Model only
+2045,arimax_diff,0.372164434572814,include_interest,Include all interest,Differenced ARIMAX,Model only
+2046,arimax_diff,0.371497787004706,include_interest,Include all interest,Differenced ARIMAX,Model only
+2047,arimax_diff,0.370831139436598,include_interest,Include all interest,Differenced ARIMAX,Model only
+2048,arimax_diff,0.37016449186849,include_interest,Include all interest,Differenced ARIMAX,Model only
+2049,arimax_diff,0.369497844300382,include_interest,Include all interest,Differenced ARIMAX,Model only
+2050,arimax_diff,0.368831196732274,include_interest,Include all interest,Differenced ARIMAX,Model only
+2051,arimax_diff,0.368164549164166,include_interest,Include all interest,Differenced ARIMAX,Model only
+2052,arimax_diff,0.367497901596059,include_interest,Include all interest,Differenced ARIMAX,Model only
+2053,arimax_diff,0.366831254027951,include_interest,Include all interest,Differenced ARIMAX,Model only
+2054,arimax_diff,0.366164606459843,include_interest,Include all interest,Differenced ARIMAX,Model only
+2055,arimax_diff,0.365497958891735,include_interest,Include all interest,Differenced ARIMAX,Model only
+2056,arimax_diff,0.364831311323627,include_interest,Include all interest,Differenced ARIMAX,Model only
+2057,arimax_diff,0.364164663755519,include_interest,Include all interest,Differenced ARIMAX,Model only
+2058,arimax_diff,0.363498016187411,include_interest,Include all interest,Differenced ARIMAX,Model only
+2059,arimax_diff,0.362831368619303,include_interest,Include all interest,Differenced ARIMAX,Model only
+2060,arimax_diff,0.362164721051196,include_interest,Include all interest,Differenced ARIMAX,Model only
+2061,arimax_diff,0.361498073483088,include_interest,Include all interest,Differenced ARIMAX,Model only
+2062,arimax_diff,0.36083142591498,include_interest,Include all interest,Differenced ARIMAX,Model only
+2063,arimax_diff,0.360164778346872,include_interest,Include all interest,Differenced ARIMAX,Model only
+2064,arimax_diff,0.359498130778764,include_interest,Include all interest,Differenced ARIMAX,Model only
+2065,arimax_diff,0.358831483210656,include_interest,Include all interest,Differenced ARIMAX,Model only
+2066,arimax_diff,0.358164835642549,include_interest,Include all interest,Differenced ARIMAX,Model only
+2026,hybrid,0.385742889150585,include_interest,Include all interest,Hybrid structural/macro,Model only
+2027,hybrid,0.387620964279646,include_interest,Include all interest,Hybrid structural/macro,Model only
+2028,hybrid,0.388905020508718,include_interest,Include all interest,Hybrid structural/macro,Model only
+2029,hybrid,0.389317601615282,include_interest,Include all interest,Hybrid structural/macro,Model only
+2030,hybrid,0.389783922421037,include_interest,Include all interest,Hybrid structural/macro,Model only
+2031,hybrid,0.390122796410312,include_interest,Include all interest,Hybrid structural/macro,Model only
+2032,hybrid,0.39071428466862,include_interest,Include all interest,Hybrid structural/macro,Model only
+2033,hybrid,0.390170275499726,include_interest,Include all interest,Hybrid structural/macro,Model only
+2034,hybrid,0.391030248947277,include_interest,Include all interest,Hybrid structural/macro,Model only
+2035,hybrid,0.392030954879923,include_interest,Include all interest,Hybrid structural/macro,Model only
+2036,hybrid,0.393314204640305,include_interest,Include all interest,Hybrid structural/macro,Model only
+2037,hybrid,0.393923757610057,include_interest,Include all interest,Hybrid structural/macro,Model only
+2038,hybrid,0.394533310579808,include_interest,Include all interest,Hybrid structural/macro,Model only
+2039,hybrid,0.395142863549559,include_interest,Include all interest,Hybrid structural/macro,Model only
+2040,hybrid,0.395752416519311,include_interest,Include all interest,Hybrid structural/macro,Model only
+2041,hybrid,0.396361969489062,include_interest,Include all interest,Hybrid structural/macro,Model only
+2042,hybrid,0.396971522458814,include_interest,Include all interest,Hybrid structural/macro,Model only
+2043,hybrid,0.397581075428565,include_interest,Include all interest,Hybrid structural/macro,Model only
+2044,hybrid,0.398190628398316,include_interest,Include all interest,Hybrid structural/macro,Model only
+2045,hybrid,0.398800181368068,include_interest,Include all interest,Hybrid structural/macro,Model only
+2046,hybrid,0.399409734337819,include_interest,Include all interest,Hybrid structural/macro,Model only
+2047,hybrid,0.40001928730757,include_interest,Include all interest,Hybrid structural/macro,Model only
+2048,hybrid,0.400628840277321,include_interest,Include all interest,Hybrid structural/macro,Model only
+2049,hybrid,0.401238393247073,include_interest,Include all interest,Hybrid structural/macro,Model only
+2050,hybrid,0.401847946216825,include_interest,Include all interest,Hybrid structural/macro,Model only
+2051,hybrid,0.402457499186576,include_interest,Include all interest,Hybrid structural/macro,Model only
+2052,hybrid,0.403067052156327,include_interest,Include all interest,Hybrid structural/macro,Model only
+2053,hybrid,0.403676605126078,include_interest,Include all interest,Hybrid structural/macro,Model only
+2054,hybrid,0.40428615809583,include_interest,Include all interest,Hybrid structural/macro,Model only
+2055,hybrid,0.404895711065581,include_interest,Include all interest,Hybrid structural/macro,Model only
+2056,hybrid,0.405505264035333,include_interest,Include all interest,Hybrid structural/macro,Model only
+2057,hybrid,0.406114817005084,include_interest,Include all interest,Hybrid structural/macro,Model only
+2058,hybrid,0.406724369974835,include_interest,Include all interest,Hybrid structural/macro,Model only
+2059,hybrid,0.407333922944587,include_interest,Include all interest,Hybrid structural/macro,Model only
+2060,hybrid,0.407943475914338,include_interest,Include all interest,Hybrid structural/macro,Model only
+2061,hybrid,0.408553028884089,include_interest,Include all interest,Hybrid structural/macro,Model only
+2062,hybrid,0.409162581853841,include_interest,Include all interest,Hybrid structural/macro,Model only
+2063,hybrid,0.409772134823592,include_interest,Include all interest,Hybrid structural/macro,Model only
+2064,hybrid,0.410381687793344,include_interest,Include all interest,Hybrid structural/macro,Model only
+2065,hybrid,0.410991240763095,include_interest,Include all interest,Hybrid structural/macro,Model only
+2066,hybrid,0.411600793732846,include_interest,Include all interest,Hybrid structural/macro,Model only
+2026,ardl_ecm,0.375188772802121,include_interest,Include all interest,ARDL error-correction model,Model only
+2027,ardl_ecm,0.372364105095586,include_interest,Include all interest,ARDL error-correction model,Model only
+2028,ardl_ecm,0.374188821408535,include_interest,Include all interest,ARDL error-correction model,Model only
+2029,ardl_ecm,0.369898511722181,include_interest,Include all interest,ARDL error-correction model,Model only
+2030,ardl_ecm,0.362957114462902,include_interest,Include all interest,ARDL error-correction model,Model only
+2031,ardl_ecm,0.359447045543512,include_interest,Include all interest,ARDL error-correction model,Model only
+2032,ardl_ecm,0.356164986402777,include_interest,Include all interest,ARDL error-correction model,Model only
+2033,ardl_ecm,0.353667501980292,include_interest,Include all interest,ARDL error-correction model,Model only
+2034,ardl_ecm,0.351183070023328,include_interest,Include all interest,ARDL error-correction model,Model only
+2035,ardl_ecm,0.348714057186554,include_interest,Include all interest,ARDL error-correction model,Model only
+2036,ardl_ecm,0.346259447141683,include_interest,Include all interest,ARDL error-correction model,Model only
+2037,ardl_ecm,0.343459342252422,include_interest,Include all interest,ARDL error-correction model,Model only
+2038,ardl_ecm,0.340707140358037,include_interest,Include all interest,ARDL error-correction model,Model only
+2039,ardl_ecm,0.337999698345091,include_interest,Include all interest,ARDL error-correction model,Model only
+2040,ardl_ecm,0.335334120899201,include_interest,Include all interest,ARDL error-correction model,Model only
+2041,ardl_ecm,0.332707741100655,include_interest,Include all interest,ARDL error-correction model,Model only
+2042,ardl_ecm,0.330118102625051,include_interest,Include all interest,ARDL error-correction model,Model only
+2043,ardl_ecm,0.327562943401523,include_interest,Include all interest,ARDL error-correction model,Model only
+2044,ardl_ecm,0.325040180596602,include_interest,Include all interest,ARDL error-correction model,Model only
+2045,ardl_ecm,0.322547896805205,include_interest,Include all interest,ARDL error-correction model,Model only
+2046,ardl_ecm,0.320084327342213,include_interest,Include all interest,ARDL error-correction model,Model only
+2047,ardl_ecm,0.317647848538749,include_interest,Include all interest,ARDL error-correction model,Model only
+2048,ardl_ecm,0.315236966956723,include_interest,Include all interest,ARDL error-correction model,Model only
+2049,ardl_ecm,0.312850309443441,include_interest,Include all interest,ARDL error-correction model,Model only
+2050,ardl_ecm,0.310486613955743,include_interest,Include all interest,ARDL error-correction model,Model only
+2051,ardl_ecm,0.308144721089601,include_interest,Include all interest,ARDL error-correction model,Model only
+2052,ardl_ecm,0.305823566257173,include_interest,Include all interest,ARDL error-correction model,Model only
+2053,ardl_ecm,0.303522172458573,include_interest,Include all interest,ARDL error-correction model,Model only
+2054,ardl_ecm,0.301239643600423,include_interest,Include all interest,ARDL error-correction model,Model only
+2055,ardl_ecm,0.298975158317497,include_interest,Include all interest,ARDL error-correction model,Model only
+2056,ardl_ecm,0.296727964257625,include_interest,Include all interest,ARDL error-correction model,Model only
+2057,ardl_ecm,0.294497372793546,include_interest,Include all interest,ARDL error-correction model,Model only
+2058,ardl_ecm,0.292282754128431,include_interest,Include all interest,ARDL error-correction model,Model only
+2059,ardl_ecm,0.290083532764696,include_interest,Include all interest,ARDL error-correction model,Model only
+2060,ardl_ecm,0.287899183308246,include_interest,Include all interest,ARDL error-correction model,Model only
+2061,ardl_ecm,0.285729226582608,include_interest,Include all interest,ARDL error-correction model,Model only
+2062,ardl_ecm,0.283573226029521,include_interest,Include all interest,ARDL error-correction model,Model only
+2063,ardl_ecm,0.281430784374438,include_interest,Include all interest,ARDL error-correction model,Model only
+2064,ardl_ecm,0.279301540537133,include_interest,Include all interest,ARDL error-correction model,Model only
+2065,ardl_ecm,0.277185166769203,include_interest,Include all interest,ARDL error-correction model,Model only
+2066,ardl_ecm,0.275081366001672,include_interest,Include all interest,ARDL error-correction model,Model only
+2026,structural_ols,0.387,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2027,structural_ols,0.389,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2028,structural_ols,0.384,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2029,structural_ols,0.378,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2030,structural_ols,0.371,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2031,structural_ols,0.369544678066247,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2032,structural_ols,0.368240298946762,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2033,structural_ols,0.369156694778407,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2034,structural_ols,0.37030169621449,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2035,structural_ols,0.37154686656674,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2036,structural_ols,0.373159774149738,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2037,structural_ols,0.374014546181595,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2038,structural_ols,0.374869318213452,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2039,structural_ols,0.37572409024531,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2040,structural_ols,0.376578862277168,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2041,structural_ols,0.377433634309024,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2042,structural_ols,0.378288406340883,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2043,structural_ols,0.37914317837274,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2044,structural_ols,0.379997950404597,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2045,structural_ols,0.380852722436455,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2046,structural_ols,0.381707494468313,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2047,structural_ols,0.38256226650017,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2048,structural_ols,0.383417038532027,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2049,structural_ols,0.384271810563885,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2050,structural_ols,0.385126582595742,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2051,structural_ols,0.3859813546276,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2052,structural_ols,0.386836126659457,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2053,structural_ols,0.387690898691315,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2054,structural_ols,0.388545670723173,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2055,structural_ols,0.389400442755029,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2056,structural_ols,0.390255214786888,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2057,structural_ols,0.391109986818745,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2058,structural_ols,0.391964758850602,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2059,structural_ols,0.39281953088246,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2060,structural_ols,0.393674302914317,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2061,structural_ols,0.394529074946175,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2062,structural_ols,0.395383846978032,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2063,structural_ols,0.39623861900989,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2064,structural_ols,0.397093391041747,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2065,structural_ols,0.397948163073605,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2066,structural_ols,0.398802935105462,include_interest,Include all interest,Structural OLS (levels),Matching PBO anchor
+2026,arimax_level,0.387,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2027,arimax_level,0.389,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2028,arimax_level,0.384,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2029,arimax_level,0.378,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2030,arimax_level,0.371,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2031,arimax_level,0.369541762826605,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2032,arimax_level,0.369098637914937,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2033,arimax_level,0.369915310724275,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2034,arimax_level,0.371348341053669,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2035,arimax_level,0.373060547340611,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2036,arimax_level,0.375315116469891,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2037,arimax_level,0.376570630882983,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2038,arimax_level,0.37780299965432,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2039,arimax_level,0.379007368341039,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2040,arimax_level,0.380187392496903,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2041,arimax_level,0.381349593954222,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2042,arimax_level,0.382500379853399,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2043,arimax_level,0.383644800608256,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2044,arimax_level,0.384786299631099,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2045,arimax_level,0.385926935163348,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2046,arimax_level,0.387067757231869,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2047,arimax_level,0.388209173500737,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2048,arimax_level,0.389351235719146,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2049,arimax_level,0.390493833982382,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2050,arimax_level,0.391636812199565,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2051,arimax_level,0.392780026539831,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2052,arimax_level,0.393923367740351,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2053,arimax_level,0.39506676351911,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2054,arimax_level,0.396210172049401,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2055,arimax_level,0.397353572972133,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2056,arimax_level,0.398496959197797,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2057,arimax_level,0.399640330717279,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2058,arimax_level,0.400783690529032,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2059,arimax_level,0.401927042296095,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2060,arimax_level,0.403070389215811,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2061,arimax_level,0.404213733635087,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2062,arimax_level,0.405357077060677,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2063,arimax_level,0.406500420335076,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2064,arimax_level,0.407643763846798,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2065,arimax_level,0.408787107712321,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2066,arimax_level,0.409930451908859,include_interest,Include all interest,ARIMAX (levels),Matching PBO anchor
+2026,arimax_diff,0.387,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2027,arimax_diff,0.389,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2028,arimax_diff,0.384,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2029,arimax_diff,0.378,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2030,arimax_diff,0.371,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2031,arimax_diff,0.370123964176472,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2032,arimax_diff,0.369046547885807,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2033,arimax_diff,0.369962347619676,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2034,arimax_diff,0.369044271772521,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2035,arimax_diff,0.368008082796662,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2036,arimax_diff,0.366673374376631,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2037,arimax_diff,0.366006726808523,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2038,arimax_diff,0.365340079240416,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2039,arimax_diff,0.364673431672308,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2040,arimax_diff,0.3640067841042,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2041,arimax_diff,0.363340136536092,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2042,arimax_diff,0.362673488967984,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2043,arimax_diff,0.362006841399876,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2044,arimax_diff,0.361340193831768,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2045,arimax_diff,0.36067354626366,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2046,arimax_diff,0.360006898695553,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2047,arimax_diff,0.359340251127445,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2048,arimax_diff,0.358673603559337,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2049,arimax_diff,0.358006955991229,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2050,arimax_diff,0.357340308423121,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2051,arimax_diff,0.356673660855013,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2052,arimax_diff,0.356007013286906,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2053,arimax_diff,0.355340365718798,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2054,arimax_diff,0.35467371815069,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2055,arimax_diff,0.354007070582582,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2056,arimax_diff,0.353340423014474,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2057,arimax_diff,0.352673775446366,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2058,arimax_diff,0.352007127878258,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2059,arimax_diff,0.35134048031015,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2060,arimax_diff,0.350673832742043,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2061,arimax_diff,0.350007185173935,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2062,arimax_diff,0.349340537605827,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2063,arimax_diff,0.348673890037719,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2064,arimax_diff,0.348007242469611,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2065,arimax_diff,0.347340594901503,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2066,arimax_diff,0.346673947333396,include_interest,Include all interest,Differenced ARIMAX,Matching PBO anchor
+2026,hybrid,0.387,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2027,hybrid,0.389,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2028,hybrid,0.384,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2029,hybrid,0.378,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2030,hybrid,0.371,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2031,hybrid,0.371338873989275,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2032,hybrid,0.371930362247583,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2033,hybrid,0.371386353078689,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2034,hybrid,0.37224632652624,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2035,hybrid,0.373247032458886,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2036,hybrid,0.374530282219268,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2037,hybrid,0.37513983518902,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2038,hybrid,0.375749388158771,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2039,hybrid,0.376358941128522,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2040,hybrid,0.376968494098274,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2041,hybrid,0.377578047068024,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2042,hybrid,0.378187600037777,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2043,hybrid,0.378797153007528,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2044,hybrid,0.379406705977279,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2045,hybrid,0.380016258947031,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2046,hybrid,0.380625811916782,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2047,hybrid,0.381235364886533,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2048,hybrid,0.381844917856284,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2049,hybrid,0.382454470826036,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2050,hybrid,0.383064023795787,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2051,hybrid,0.383673576765539,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2052,hybrid,0.38428312973529,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2053,hybrid,0.384892682705041,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2054,hybrid,0.385502235674793,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2055,hybrid,0.386111788644544,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2056,hybrid,0.386721341614296,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2057,hybrid,0.387330894584047,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2058,hybrid,0.387940447553798,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2059,hybrid,0.38855000052355,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2060,hybrid,0.389159553493301,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2061,hybrid,0.389769106463052,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2062,hybrid,0.390378659432804,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2063,hybrid,0.390988212402555,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2064,hybrid,0.391597765372307,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2065,hybrid,0.392207318342058,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2066,hybrid,0.392816871311809,include_interest,Include all interest,Hybrid structural/macro,Matching PBO anchor
+2026,ardl_ecm,0.387,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2027,ardl_ecm,0.389,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2028,ardl_ecm,0.384,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2029,ardl_ecm,0.378,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2030,ardl_ecm,0.371,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2031,ardl_ecm,0.36748993108061,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2032,ardl_ecm,0.364207871939874,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2033,ardl_ecm,0.36171038751739,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2034,ardl_ecm,0.359225955560426,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2035,ardl_ecm,0.356756942723651,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2036,ardl_ecm,0.35430233267878,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2037,ardl_ecm,0.35150222778952,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2038,ardl_ecm,0.348750025895135,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2039,ardl_ecm,0.346042583882188,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2040,ardl_ecm,0.343377006436298,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2041,ardl_ecm,0.340750626637752,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2042,ardl_ecm,0.338160988162149,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2043,ardl_ecm,0.335605828938621,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2044,ardl_ecm,0.3330830661337,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2045,ardl_ecm,0.330590782342302,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2046,ardl_ecm,0.328127212879311,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2047,ardl_ecm,0.325690734075847,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2048,ardl_ecm,0.323279852493821,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2049,ardl_ecm,0.320893194980539,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2050,ardl_ecm,0.31852949949284,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2051,ardl_ecm,0.316187606626699,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2052,ardl_ecm,0.31386645179427,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2053,ardl_ecm,0.311565057995671,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2054,ardl_ecm,0.309282529137521,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2055,ardl_ecm,0.307018043854595,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2056,ardl_ecm,0.304770849794723,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2057,ardl_ecm,0.302540258330644,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2058,ardl_ecm,0.300325639665529,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2059,ardl_ecm,0.298126418301794,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2060,ardl_ecm,0.295942068845344,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2061,ardl_ecm,0.293772112119706,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2062,ardl_ecm,0.291616111566619,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2063,ardl_ecm,0.289473669911535,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2064,ardl_ecm,0.287344426074231,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2065,ardl_ecm,0.285228052306301,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2066,ardl_ecm,0.28312425153877,include_interest,Include all interest,ARDL error-correction model,Matching PBO anchor
+2026,structural_ols,0.347761128001094,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2027,structural_ols,0.348492431796559,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2028,structural_ols,0.348601467470204,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2029,structural_ols,0.347761692168369,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2030,structural_ols,0.34676958881215,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2031,structural_ols,0.345627265146288,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2032,structural_ols,0.344471625206279,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2033,structural_ols,0.345036103097545,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2034,structural_ols,0.34570532367054,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2035,structural_ols,0.346385328417215,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2036,structural_ols,0.347275635865072,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2037,structural_ols,0.347798879833756,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2038,structural_ols,0.348322123802439,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2039,structural_ols,0.348845367771123,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2040,structural_ols,0.349368611739807,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2041,structural_ols,0.349891855708491,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2042,structural_ols,0.350415099677175,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2043,structural_ols,0.350938343645859,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2044,structural_ols,0.351461587614542,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2045,structural_ols,0.351984831583226,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2046,structural_ols,0.35250807555191,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2047,structural_ols,0.353031319520593,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2048,structural_ols,0.353554563489277,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2049,structural_ols,0.354077807457961,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2050,structural_ols,0.354601051426644,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2051,structural_ols,0.355124295395328,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2052,structural_ols,0.355647539364012,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2053,structural_ols,0.356170783332696,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2054,structural_ols,0.356694027301379,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2055,structural_ols,0.357217271270063,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2056,structural_ols,0.357740515238747,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2057,structural_ols,0.35826375920743,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2058,structural_ols,0.358787003176114,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2059,structural_ols,0.359310247144798,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2060,structural_ols,0.359833491113482,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2061,structural_ols,0.360356735082165,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2062,structural_ols,0.360879979050849,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2063,structural_ols,0.361403223019533,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2064,structural_ols,0.361926466988217,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2065,structural_ols,0.362449710956901,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2066,structural_ols,0.362972954925584,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Model only
+2026,arimax_level,0.36434916677435,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2027,arimax_level,0.364157621793802,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2028,arimax_level,0.363665742356014,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2029,arimax_level,0.362416795418722,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2030,arimax_level,0.361177807844677,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2031,arimax_level,0.359977971562794,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2032,arimax_level,0.358833558568011,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2033,arimax_level,0.358768517942251,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2034,arimax_level,0.358902264697825,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2035,arimax_level,0.359094533926574,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2036,arimax_level,0.359581679655959,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2037,arimax_level,0.3598411583471,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2038,arimax_level,0.360156072255127,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2039,arimax_level,0.360516452449045,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2040,arimax_level,0.360914122713587,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2041,arimax_level,0.361342377164627,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2042,arimax_level,0.361795715839113,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2043,arimax_level,0.362269627833929,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2044,arimax_level,0.362760413442961,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2045,arimax_level,0.363265038279315,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2046,arimax_level,0.36378101363076,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2047,arimax_level,0.364306298330903,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2048,arimax_level,0.36483921827689,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2049,arimax_level,0.365378400420266,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2050,arimax_level,0.365922718628273,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2051,arimax_level,0.366471249280932,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2052,arimax_level,0.367023234853109,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2053,arimax_level,0.367578054045634,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2054,arimax_level,0.368135197287745,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2055,arimax_level,0.368694246644935,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2056,arimax_level,0.369254859339984,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2057,arimax_level,0.369816754237392,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2058,arimax_level,0.370379700758343,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2059,arimax_level,0.370943509789071,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2060,arimax_level,0.371508026224195,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2061,arimax_level,0.37207312285098,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2062,arimax_level,0.372638695333392,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2063,arimax_level,0.373204658098176,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2064,arimax_level,0.373770940960742,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2065,arimax_level,0.374337486357814,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2066,arimax_level,0.374904247077735,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Model only
+2026,arimax_diff,0.364313238267616,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2027,arimax_diff,0.3637883581489,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2028,arimax_diff,0.36272861967462,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2029,arimax_diff,0.360823357709012,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2030,arimax_diff,0.359153419828577,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2031,arimax_diff,0.357623155280644,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2032,arimax_diff,0.356057560819822,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2033,arimax_diff,0.357373233801491,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2034,arimax_diff,0.356698172625754,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2035,arimax_diff,0.355989296186118,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2036,arimax_diff,0.355066058524062,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2037,arimax_diff,0.354549607590095,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2038,arimax_diff,0.354033156656128,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2039,arimax_diff,0.35351670572216,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2040,arimax_diff,0.353000254788193,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2041,arimax_diff,0.352483803854225,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2042,arimax_diff,0.351967352920258,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2043,arimax_diff,0.35145090198629,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2044,arimax_diff,0.350934451052323,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2045,arimax_diff,0.350418000118355,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2046,arimax_diff,0.349901549184388,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2047,arimax_diff,0.34938509825042,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2048,arimax_diff,0.348868647316453,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2049,arimax_diff,0.348352196382485,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2050,arimax_diff,0.347835745448518,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2051,arimax_diff,0.34731929451455,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2052,arimax_diff,0.346802843580583,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2053,arimax_diff,0.346286392646615,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2054,arimax_diff,0.345769941712648,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2055,arimax_diff,0.345253490778681,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2056,arimax_diff,0.344737039844713,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2057,arimax_diff,0.344220588910746,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2058,arimax_diff,0.343704137976778,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2059,arimax_diff,0.34318768704281,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2060,arimax_diff,0.342671236108843,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2061,arimax_diff,0.342154785174876,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2062,arimax_diff,0.341638334240908,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2063,arimax_diff,0.341121883306941,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2064,arimax_diff,0.340605432372973,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2065,arimax_diff,0.340088981439005,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2066,arimax_diff,0.339572530505038,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Model only
+2026,hybrid,0.366367490315056,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2027,hybrid,0.367542938519867,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2028,hybrid,0.36814677180015,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2029,hybrid,0.367843085913668,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2030,hybrid,0.367589659544634,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2031,hybrid,0.367232012508622,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2032,hybrid,0.366924576155541,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2033,hybrid,0.366383756967224,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2034,hybrid,0.366913875660823,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2035,hybrid,0.367481116963481,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2036,hybrid,0.368217718220633,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2037,hybrid,0.368618048140674,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2038,hybrid,0.369018378060715,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2039,hybrid,0.369418707980756,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2040,hybrid,0.369819037900798,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2041,hybrid,0.370219367820839,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2042,hybrid,0.37061969774088,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2043,hybrid,0.371020027660921,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2044,hybrid,0.371420357580962,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2045,hybrid,0.371820687501004,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2046,hybrid,0.372221017421045,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2047,hybrid,0.372621347341086,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2048,hybrid,0.373021677261127,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2049,hybrid,0.373422007181168,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2050,hybrid,0.37382233710121,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2051,hybrid,0.374222667021251,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2052,hybrid,0.374622996941292,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2053,hybrid,0.375023326861333,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2054,hybrid,0.375423656781374,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2055,hybrid,0.375823986701415,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2056,hybrid,0.376224316621457,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2057,hybrid,0.376624646541498,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2058,hybrid,0.377024976461539,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2059,hybrid,0.37742530638158,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2060,hybrid,0.377825636301621,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2061,hybrid,0.378225966221663,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2062,hybrid,0.378626296141704,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2063,hybrid,0.379026626061745,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2064,hybrid,0.379426955981786,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2065,hybrid,0.379827285901828,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2066,hybrid,0.380227615821868,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Model only
+2026,ardl_ecm,0.356294527767027,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2027,ardl_ecm,0.352357479459989,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2028,ardl_ecm,0.351638313020092,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2029,ardl_ecm,0.346941838961911,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2030,ardl_ecm,0.341163021416679,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2031,ardl_ecm,0.338162953130964,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2032,ardl_ecm,0.33563911990624,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2033,ardl_ecm,0.334520163750123,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2034,ardl_ecm,0.333472864771474,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2035,ardl_ecm,0.332487663010992,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2036,ardl_ecm,0.331554465140561,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2037,ardl_ecm,0.330434070220543,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2038,ardl_ecm,0.32939112458484,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2039,ardl_ecm,0.328413281013445,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2040,ardl_ecm,0.327490142582209,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2041,ardl_ecm,0.326612949630858,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2042,ardl_ecm,0.325774318684092,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2043,ardl_ecm,0.324968024228057,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2044,ardl_ecm,0.324188815964747,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2045,ardl_ecm,0.323432265529231,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2046,ardl_ecm,0.322694637741523,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2047,ardl_ecm,0.321972782337913,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2048,ardl_ecm,0.321264042832081,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2049,ardl_ecm,0.32056617972957,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2050,ardl_ecm,0.319877305787709,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2051,ardl_ecm,0.319195831397347,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2052,ardl_ecm,0.318520418479565,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2053,ardl_ecm,0.317849941552486,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2054,ardl_ecm,0.317183454840676,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2055,ardl_ecm,0.316520164480459,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2056,ardl_ecm,0.315859405025376,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2057,ardl_ecm,0.315200619582094,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2058,ardl_ecm,0.314543343012677,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2059,ardl_ecm,0.31388718772773,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2060,ardl_ecm,0.313231831669325,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2061,ardl_ecm,0.312577008145192,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2062,ardl_ecm,0.311922497228336,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2063,ardl_ecm,0.311268118480609,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2064,ardl_ecm,0.310613724796206,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2065,ardl_ecm,0.30995919719259,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2066,ardl_ecm,0.309304440403049,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Model only
+2026,structural_ols,0.371,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2027,structural_ols,0.371,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2028,structural_ols,0.364,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2029,structural_ols,0.357,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2030,structural_ols,0.349,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2031,structural_ols,0.347857676334138,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2032,structural_ols,0.346702036394129,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2033,structural_ols,0.347266514285395,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2034,structural_ols,0.34793573485839,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2035,structural_ols,0.348615739605065,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2036,structural_ols,0.349506047052922,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2037,structural_ols,0.350029291021606,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2038,structural_ols,0.350552534990289,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2039,structural_ols,0.351075778958973,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2040,structural_ols,0.351599022927657,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2041,structural_ols,0.352122266896341,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2042,structural_ols,0.352645510865025,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2043,structural_ols,0.353168754833709,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2044,structural_ols,0.353691998802392,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2045,structural_ols,0.354215242771076,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2046,structural_ols,0.35473848673976,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2047,structural_ols,0.355261730708443,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2048,structural_ols,0.355784974677127,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2049,structural_ols,0.35630821864581,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2050,structural_ols,0.356831462614494,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2051,structural_ols,0.357354706583178,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2052,structural_ols,0.357877950551862,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2053,structural_ols,0.358401194520546,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2054,structural_ols,0.358924438489229,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2055,structural_ols,0.359447682457913,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2056,structural_ols,0.359970926426597,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2057,structural_ols,0.36049417039528,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2058,structural_ols,0.361017414363964,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2059,structural_ols,0.361540658332648,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2060,structural_ols,0.362063902301331,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2061,structural_ols,0.362587146270015,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2062,structural_ols,0.363110390238699,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2063,structural_ols,0.363633634207383,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2064,structural_ols,0.364156878176067,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2065,structural_ols,0.364680122144751,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2066,structural_ols,0.365203366113434,exclude_other_interest,Exclude conventional other interest,Structural OLS (levels),Matching PBO anchor
+2026,arimax_level,0.371,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2027,arimax_level,0.371,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2028,arimax_level,0.364,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2029,arimax_level,0.357,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2030,arimax_level,0.349,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2031,arimax_level,0.347800163718117,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2032,arimax_level,0.346655750723334,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2033,arimax_level,0.346590710097574,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2034,arimax_level,0.346724456853148,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2035,arimax_level,0.346916726081896,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2036,arimax_level,0.347403871811282,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2037,arimax_level,0.347663350502423,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2038,arimax_level,0.347978264410449,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2039,arimax_level,0.348338644604367,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2040,arimax_level,0.348736314868909,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2041,arimax_level,0.34916456931995,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2042,arimax_level,0.349617907994436,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2043,arimax_level,0.350091819989251,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2044,arimax_level,0.350582605598284,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2045,arimax_level,0.351087230434638,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2046,arimax_level,0.351603205786083,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2047,arimax_level,0.352128490486225,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2048,arimax_level,0.352661410432213,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2049,arimax_level,0.353200592575589,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2050,arimax_level,0.353744910783596,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2051,arimax_level,0.354293441436255,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2052,arimax_level,0.354845427008432,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2053,arimax_level,0.355400246200957,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2054,arimax_level,0.355957389443067,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2055,arimax_level,0.356516438800258,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2056,arimax_level,0.357077051495306,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2057,arimax_level,0.357638946392715,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2058,arimax_level,0.358201892913666,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2059,arimax_level,0.358765701944394,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2060,arimax_level,0.359330218379518,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2061,arimax_level,0.359895315006303,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2062,arimax_level,0.360460887488715,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2063,arimax_level,0.361026850253499,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2064,arimax_level,0.361593133116065,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2065,arimax_level,0.362159678513137,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2066,arimax_level,0.362726439233058,exclude_other_interest,Exclude conventional other interest,ARIMAX (levels),Matching PBO anchor
+2026,arimax_diff,0.371,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2027,arimax_diff,0.371,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2028,arimax_diff,0.364,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2029,arimax_diff,0.357,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2030,arimax_diff,0.349,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2031,arimax_diff,0.347469735452068,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2032,arimax_diff,0.345904140991245,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2033,arimax_diff,0.347219813972914,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2034,arimax_diff,0.346544752797177,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2035,arimax_diff,0.345835876357541,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2036,arimax_diff,0.344912638695486,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2037,arimax_diff,0.344396187761518,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2038,arimax_diff,0.343879736827551,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2039,arimax_diff,0.343363285893583,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2040,arimax_diff,0.342846834959616,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2041,arimax_diff,0.342330384025648,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2042,arimax_diff,0.341813933091681,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2043,arimax_diff,0.341297482157713,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2044,arimax_diff,0.340781031223746,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2045,arimax_diff,0.340264580289778,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2046,arimax_diff,0.339748129355811,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2047,arimax_diff,0.339231678421843,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2048,arimax_diff,0.338715227487876,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2049,arimax_diff,0.338198776553909,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2050,arimax_diff,0.337682325619941,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2051,arimax_diff,0.337165874685973,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2052,arimax_diff,0.336649423752006,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2053,arimax_diff,0.336132972818039,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2054,arimax_diff,0.335616521884071,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2055,arimax_diff,0.335100070950104,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2056,arimax_diff,0.334583620016136,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2057,arimax_diff,0.334067169082169,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2058,arimax_diff,0.333550718148201,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2059,arimax_diff,0.333034267214234,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2060,arimax_diff,0.332517816280266,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2061,arimax_diff,0.332001365346299,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2062,arimax_diff,0.331484914412331,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2063,arimax_diff,0.330968463478364,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2064,arimax_diff,0.330452012544396,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2065,arimax_diff,0.329935561610428,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2066,arimax_diff,0.329419110676461,exclude_other_interest,Exclude conventional other interest,Differenced ARIMAX,Matching PBO anchor
+2026,hybrid,0.371,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2027,hybrid,0.371,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2028,hybrid,0.364,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2029,hybrid,0.357,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2030,hybrid,0.349,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2031,hybrid,0.348642352963988,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2032,hybrid,0.348334916610907,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2033,hybrid,0.34779409742259,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2034,hybrid,0.348324216116189,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2035,hybrid,0.348891457418848,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2036,hybrid,0.349628058675999,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2037,hybrid,0.35002838859604,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2038,hybrid,0.350428718516081,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2039,hybrid,0.350829048436122,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2040,hybrid,0.351229378356164,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2041,hybrid,0.351629708276205,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2042,hybrid,0.352030038196246,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2043,hybrid,0.352430368116287,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2044,hybrid,0.352830698036328,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2045,hybrid,0.35323102795637,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2046,hybrid,0.353631357876411,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2047,hybrid,0.354031687796452,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2048,hybrid,0.354432017716493,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2049,hybrid,0.354832347636534,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2050,hybrid,0.355232677556576,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2051,hybrid,0.355633007476617,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2052,hybrid,0.356033337396658,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2053,hybrid,0.356433667316699,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2054,hybrid,0.35683399723674,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2055,hybrid,0.357234327156781,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2056,hybrid,0.357634657076823,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2057,hybrid,0.358034986996864,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2058,hybrid,0.358435316916905,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2059,hybrid,0.358835646836946,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2060,hybrid,0.359235976756987,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2061,hybrid,0.359636306677029,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2062,hybrid,0.36003663659707,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2063,hybrid,0.360436966517111,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2064,hybrid,0.360837296437152,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2065,hybrid,0.361237626357194,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2066,hybrid,0.361637956277235,exclude_other_interest,Exclude conventional other interest,Hybrid structural/macro,Matching PBO anchor
+2026,ardl_ecm,0.371,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2027,ardl_ecm,0.371,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2028,ardl_ecm,0.364,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2029,ardl_ecm,0.357,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2030,ardl_ecm,0.349,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2031,ardl_ecm,0.345999931714284,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2032,ardl_ecm,0.343476098489561,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2033,ardl_ecm,0.342357142333444,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2034,ardl_ecm,0.341309843354795,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2035,ardl_ecm,0.340324641594313,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2036,ardl_ecm,0.339391443723882,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2037,ardl_ecm,0.338271048803864,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2038,ardl_ecm,0.337228103168161,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2039,ardl_ecm,0.336250259596766,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2040,ardl_ecm,0.33532712116553,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2041,ardl_ecm,0.334449928214179,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2042,ardl_ecm,0.333611297267412,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2043,ardl_ecm,0.332805002811377,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2044,ardl_ecm,0.332025794548068,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2045,ardl_ecm,0.331269244112552,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2046,ardl_ecm,0.330531616324844,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2047,ardl_ecm,0.329809760921234,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2048,ardl_ecm,0.329101021415402,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2049,ardl_ecm,0.328403158312891,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2050,ardl_ecm,0.32771428437103,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2051,ardl_ecm,0.327032809980668,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2052,ardl_ecm,0.326357397062885,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2053,ardl_ecm,0.325686920135807,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2054,ardl_ecm,0.325020433423997,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2055,ardl_ecm,0.324357143063779,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2056,ardl_ecm,0.323696383608697,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2057,ardl_ecm,0.323037598165414,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2058,ardl_ecm,0.322380321595998,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2059,ardl_ecm,0.32172416631105,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2060,ardl_ecm,0.321068810252646,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2061,ardl_ecm,0.320413986728513,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2062,ardl_ecm,0.319759475811656,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2063,ardl_ecm,0.31910509706393,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2064,ardl_ecm,0.318450703379527,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2065,ardl_ecm,0.317796175775911,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2066,ardl_ecm,0.31714141898637,exclude_other_interest,Exclude conventional other interest,ARDL error-correction model,Matching PBO anchor
+2026,structural_ols,0.344467734989369,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2027,structural_ols,0.345644788969832,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2028,structural_ols,0.346233775631504,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2029,structural_ols,0.345910470188852,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2030,structural_ols,0.345328393088231,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2031,structural_ols,0.34453654377403,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2032,structural_ols,0.343658534184726,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2033,structural_ols,0.344403322277392,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2034,structural_ols,0.345263033239127,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2035,structural_ols,0.346104116452039,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2036,structural_ols,0.347212215810268,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2037,structural_ols,0.347900485276284,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2038,structural_ols,0.3485887547423,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2039,structural_ols,0.349277024208316,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2040,structural_ols,0.349965293674332,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2041,structural_ols,0.350653563140348,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2042,structural_ols,0.351341832606364,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2043,structural_ols,0.352030102072381,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2044,structural_ols,0.352718371538396,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2045,structural_ols,0.353406641004413,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2046,structural_ols,0.354094910470429,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2047,structural_ols,0.354783179936445,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2048,structural_ols,0.355471449402461,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2049,structural_ols,0.356159718868477,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2050,structural_ols,0.356847988334493,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2051,structural_ols,0.357536257800509,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2052,structural_ols,0.358224527266525,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2053,structural_ols,0.358912796732541,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2054,structural_ols,0.359601066198557,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2055,structural_ols,0.360289335664573,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2056,structural_ols,0.36097760513059,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2057,structural_ols,0.361665874596605,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2058,structural_ols,0.362354144062622,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2059,structural_ols,0.363042413528638,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2060,structural_ols,0.363730682994654,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2061,structural_ols,0.36441895246067,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2062,structural_ols,0.365107221926686,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2063,structural_ols,0.365795491392702,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2064,structural_ols,0.366483760858718,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2065,structural_ols,0.367172030324734,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2066,structural_ols,0.36786029979075,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Model only
+2026,arimax_level,0.362287583362983,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2027,arimax_level,0.362414344192941,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2028,arimax_level,0.36175384053644,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2029,arimax_level,0.36045849277522,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2030,arimax_level,0.359457565298765,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2031,arimax_level,0.358582924906025,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2032,arimax_level,0.358101269188051,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2033,arimax_level,0.359246967514336,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2034,arimax_level,0.360825023453314,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2035,arimax_level,0.362547007874254,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2036,arimax_level,0.364863994387044,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2037,arimax_level,0.36618975520725,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2038,arimax_level,0.367526868918853,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2039,arimax_level,0.368869225383273,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2040,arimax_level,0.370213761378761,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2041,arimax_level,0.37155904086188,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2042,arimax_level,0.372904452398691,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2043,arimax_level,0.374249776620085,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2044,arimax_level,0.37559496472675,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2045,arimax_level,0.376940031771679,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2046,arimax_level,0.378285009312665,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2047,arimax_level,0.379629927030955,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2048,arimax_level,0.380974807434491,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2049,arimax_level,0.382319665804198,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2050,arimax_level,0.383664511781886,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2051,arimax_level,0.385009351115838,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2052,arimax_level,0.386354187067858,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2053,arimax_level,0.38769902140268,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2054,arimax_level,0.38904385502789,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2055,arimax_level,0.39038868838314,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2056,arimax_level,0.391733521665029,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2057,arimax_level,0.393078354950947,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2058,arimax_level,0.394423188264058,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2059,arimax_level,0.395768021605525,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2060,arimax_level,0.39711285496941,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2061,arimax_level,0.398457688348894,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2062,arimax_level,0.399802521738392,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2063,arimax_level,0.401147355133944,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2064,arimax_level,0.402492188532977,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2065,arimax_level,0.403837021933918,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2066,arimax_level,0.405181855335851,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Model only
+2026,arimax_diff,0.3603062311672,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2027,arimax_diff,0.360104830968021,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2028,arimax_diff,0.359310805560009,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2029,arimax_diff,0.35757925601501,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2030,arimax_diff,0.356001800341318,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2031,arimax_diff,0.354501472196132,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2032,arimax_diff,0.352945025792622,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2033,arimax_diff,0.354527464766947,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2034,arimax_diff,0.354114162246945,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2035,arimax_diff,0.353663934107108,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2036,arimax_diff,0.353080892161083,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2037,arimax_diff,0.352772732111648,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2038,arimax_diff,0.352464572062213,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2039,arimax_diff,0.352156412012778,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2040,arimax_diff,0.351848251963343,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2041,arimax_diff,0.351540091913908,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2042,arimax_diff,0.351231931864473,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2043,arimax_diff,0.350923771815038,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2044,arimax_diff,0.350615611765603,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2045,arimax_diff,0.350307451716168,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2046,arimax_diff,0.349999291666733,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2047,arimax_diff,0.349691131617298,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2048,arimax_diff,0.349382971567863,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2049,arimax_diff,0.349074811518428,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2050,arimax_diff,0.348766651468992,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2051,arimax_diff,0.348458491419557,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2052,arimax_diff,0.348150331370122,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2053,arimax_diff,0.347842171320687,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2054,arimax_diff,0.347534011271252,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2055,arimax_diff,0.347225851221817,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2056,arimax_diff,0.346917691172382,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2057,arimax_diff,0.346609531122947,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2058,arimax_diff,0.346301371073512,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2059,arimax_diff,0.345993211024077,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2060,arimax_diff,0.345685050974642,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2061,arimax_diff,0.345376890925207,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2062,arimax_diff,0.345068730875772,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2063,arimax_diff,0.344760570826337,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2064,arimax_diff,0.344452410776901,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2065,arimax_diff,0.344144250727466,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2066,arimax_diff,0.343836090678031,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Model only
+2026,hybrid,0.362561216632775,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2027,hybrid,0.364195760577905,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2028,hybrid,0.365191165853313,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2029,hybrid,0.365161138169528,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2030,hybrid,0.365049876811054,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2031,hybrid,0.364760458864031,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2032,hybrid,0.364435721767912,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2033,hybrid,0.364252151440834,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2034,hybrid,0.365024206110536,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2035,hybrid,0.365799314815848,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2036,hybrid,0.366816132020526,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2037,hybrid,0.367424428038247,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2038,hybrid,0.368032724055967,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2039,hybrid,0.368641020073688,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2040,hybrid,0.369249316091408,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2041,hybrid,0.369857612109128,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2042,hybrid,0.370465908126849,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2043,hybrid,0.37107420414457,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2044,hybrid,0.37168250016229,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2045,hybrid,0.372290796180011,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2046,hybrid,0.372899092197731,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2047,hybrid,0.373507388215452,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2048,hybrid,0.374115684233172,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2049,hybrid,0.374723980250893,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2050,hybrid,0.375332276268613,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2051,hybrid,0.375940572286334,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2052,hybrid,0.376548868304054,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2053,hybrid,0.377157164321775,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2054,hybrid,0.377765460339496,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2055,hybrid,0.378373756357216,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2056,hybrid,0.378982052374936,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2057,hybrid,0.379590348392657,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2058,hybrid,0.380198644410377,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2059,hybrid,0.380806940428098,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2060,hybrid,0.381415236445818,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2061,hybrid,0.382023532463539,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2062,hybrid,0.382631828481259,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2063,hybrid,0.38324012449898,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2064,hybrid,0.3838484205167,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2065,hybrid,0.384456716534421,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2066,hybrid,0.385065012552141,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Model only
+2026,ardl_ecm,0.353525605480221,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2027,ardl_ecm,0.350027571891162,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2028,ardl_ecm,0.348921510412167,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2029,ardl_ecm,0.344316698675065,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2030,ardl_ecm,0.338865444949368,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2031,ardl_ecm,0.335708924103573,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2032,ardl_ecm,0.332996472133883,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2033,ardl_ecm,0.332122913827662,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2034,ardl_ecm,0.331300147350296,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2035,ardl_ecm,0.330523493724224,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2036,ardl_ecm,0.329787175531557,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2037,ardl_ecm,0.328898015121409,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2038,ardl_ecm,0.32807174450977,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2039,ardl_ecm,0.327300243797837,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2040,ardl_ecm,0.326576454551428,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2041,ardl_ecm,0.3258942373759,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2042,ardl_ecm,0.325248249448769,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2043,ardl_ecm,0.324633839021751,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2044,ardl_ecm,0.324046954393665,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2045,ardl_ecm,0.323484065256144,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2046,ardl_ecm,0.322942094643496,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2047,ardl_ecm,0.322418359990352,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2048,ardl_ecm,0.321910522026963,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2049,ardl_ecm,0.321416540430589,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2050,ardl_ecm,0.320934635309694,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2051,ardl_ecm,0.320463253730613,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2052,ardl_ecm,0.320001040608729,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2053,ardl_ecm,0.319546813381411,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2054,ardl_ecm,0.319099539960874,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2055,ardl_ecm,0.318658319534086,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2056,ardl_ecm,0.318222365835829,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2057,ardl_ecm,0.31779099257154,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2058,ardl_ecm,0.317363600709872,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2059,ardl_ecm,0.316939667402296,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2060,ardl_ecm,0.316518736319139,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2061,ardl_ecm,0.316100409219244,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2062,ardl_ecm,0.315684338594398,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2063,ardl_ecm,0.315270221250408,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2064,ardl_ecm,0.3148577927047,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2065,ardl_ecm,0.314446822295875,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2066,ardl_ecm,0.314037108914204,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Model only
+2026,structural_ols,0.371,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2027,structural_ols,0.371,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2028,structural_ols,0.364,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2029,structural_ols,0.357,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2030,structural_ols,0.349,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2031,structural_ols,0.348208150685799,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2032,structural_ols,0.347330141096495,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2033,structural_ols,0.348074929189162,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2034,structural_ols,0.348934640150896,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2035,structural_ols,0.349775723363809,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2036,structural_ols,0.350883822722037,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2037,structural_ols,0.351572092188053,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2038,structural_ols,0.352260361654069,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2039,structural_ols,0.352948631120085,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2040,structural_ols,0.353636900586101,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2041,structural_ols,0.354325170052117,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2042,structural_ols,0.355013439518133,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2043,structural_ols,0.35570170898415,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2044,structural_ols,0.356389978450165,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2045,structural_ols,0.357078247916182,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2046,structural_ols,0.357766517382198,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2047,structural_ols,0.358454786848214,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2048,structural_ols,0.35914305631423,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2049,structural_ols,0.359831325780246,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2050,structural_ols,0.360519595246262,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2051,structural_ols,0.361207864712278,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2052,structural_ols,0.361896134178294,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2053,structural_ols,0.36258440364431,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2054,structural_ols,0.363272673110327,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2055,structural_ols,0.363960942576342,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2056,structural_ols,0.364649212042359,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2057,structural_ols,0.365337481508375,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2058,structural_ols,0.366025750974391,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2059,structural_ols,0.366714020440407,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2060,structural_ols,0.367402289906423,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2061,structural_ols,0.368090559372439,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2062,structural_ols,0.368778828838455,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2063,structural_ols,0.369467098304471,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2064,structural_ols,0.370155367770487,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2065,structural_ols,0.370843637236504,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2066,structural_ols,0.371531906702519,exclude_total_interest,Exclude total interest payable,Structural OLS (levels),Matching PBO anchor
+2026,arimax_level,0.371,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2027,arimax_level,0.371,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2028,arimax_level,0.364,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2029,arimax_level,0.357,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2030,arimax_level,0.349,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2031,arimax_level,0.34812535960726,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2032,arimax_level,0.347643703889286,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2033,arimax_level,0.348789402215572,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2034,arimax_level,0.350367458154549,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2035,arimax_level,0.352089442575489,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2036,arimax_level,0.354406429088279,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2037,arimax_level,0.355732189908486,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2038,arimax_level,0.357069303620088,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2039,arimax_level,0.358411660084508,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2040,arimax_level,0.359756196079997,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2041,arimax_level,0.361101475563115,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2042,arimax_level,0.362446887099926,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2043,arimax_level,0.36379221132132,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2044,arimax_level,0.365137399427985,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2045,arimax_level,0.366482466472914,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2046,arimax_level,0.367827444013901,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2047,arimax_level,0.369172361732191,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2048,arimax_level,0.370517242135727,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2049,arimax_level,0.371862100505433,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2050,arimax_level,0.373206946483121,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2051,arimax_level,0.374551785817073,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2052,arimax_level,0.375896621769093,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2053,arimax_level,0.377241456103915,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2054,arimax_level,0.378586289729125,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2055,arimax_level,0.379931123084375,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2056,arimax_level,0.381275956366264,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2057,arimax_level,0.382620789652182,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2058,arimax_level,0.383965622965294,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2059,arimax_level,0.38531045630676,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2060,arimax_level,0.386655289670645,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2061,arimax_level,0.388000123050129,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2062,arimax_level,0.389344956439627,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2063,arimax_level,0.390689789835179,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2064,arimax_level,0.392034623234213,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2065,arimax_level,0.393379456635153,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2066,arimax_level,0.394724290037087,exclude_total_interest,Exclude total interest payable,ARIMAX (levels),Matching PBO anchor
+2026,arimax_diff,0.371,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2027,arimax_diff,0.371,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2028,arimax_diff,0.364,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2029,arimax_diff,0.357,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2030,arimax_diff,0.349,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2031,arimax_diff,0.347499671854813,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2032,arimax_diff,0.345943225451304,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2033,arimax_diff,0.347525664425629,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2034,arimax_diff,0.347112361905626,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2035,arimax_diff,0.34666213376579,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2036,arimax_diff,0.346079091819765,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2037,arimax_diff,0.34577093177033,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2038,arimax_diff,0.345462771720895,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2039,arimax_diff,0.34515461167146,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2040,arimax_diff,0.344846451622025,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2041,arimax_diff,0.34453829157259,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2042,arimax_diff,0.344230131523155,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2043,arimax_diff,0.343921971473719,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2044,arimax_diff,0.343613811424285,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2045,arimax_diff,0.34330565137485,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2046,arimax_diff,0.342997491325414,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2047,arimax_diff,0.342689331275979,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2048,arimax_diff,0.342381171226544,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2049,arimax_diff,0.342073011177109,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2050,arimax_diff,0.341764851127674,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2051,arimax_diff,0.341456691078239,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2052,arimax_diff,0.341148531028804,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2053,arimax_diff,0.340840370979369,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2054,arimax_diff,0.340532210929934,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2055,arimax_diff,0.340224050880499,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2056,arimax_diff,0.339915890831064,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2057,arimax_diff,0.339607730781629,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2058,arimax_diff,0.339299570732194,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2059,arimax_diff,0.338991410682759,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2060,arimax_diff,0.338683250633324,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2061,arimax_diff,0.338375090583889,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2062,arimax_diff,0.338066930534453,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2063,arimax_diff,0.337758770485018,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2064,arimax_diff,0.337450610435583,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2065,arimax_diff,0.337142450386148,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2066,arimax_diff,0.336834290336713,exclude_total_interest,Exclude total interest payable,Differenced ARIMAX,Matching PBO anchor
+2026,hybrid,0.371,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2027,hybrid,0.371,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2028,hybrid,0.364,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2029,hybrid,0.357,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2030,hybrid,0.349,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2031,hybrid,0.348710582052977,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2032,hybrid,0.348385844956858,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2033,hybrid,0.34820227462978,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2034,hybrid,0.348974329299483,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2035,hybrid,0.349749438004794,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2036,hybrid,0.350766255209473,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2037,hybrid,0.351374551227193,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2038,hybrid,0.351982847244913,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2039,hybrid,0.352591143262634,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2040,hybrid,0.353199439280355,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2041,hybrid,0.353807735298075,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2042,hybrid,0.354416031315796,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2043,hybrid,0.355024327333516,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2044,hybrid,0.355632623351236,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2045,hybrid,0.356240919368957,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2046,hybrid,0.356849215386678,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2047,hybrid,0.357457511404398,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2048,hybrid,0.358065807422119,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2049,hybrid,0.358674103439839,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2050,hybrid,0.35928239945756,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2051,hybrid,0.35989069547528,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2052,hybrid,0.360498991493,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2053,hybrid,0.361107287510721,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2054,hybrid,0.361715583528442,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2055,hybrid,0.362323879546162,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2056,hybrid,0.362932175563883,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2057,hybrid,0.363540471581603,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2058,hybrid,0.364148767599324,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2059,hybrid,0.364757063617044,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2060,hybrid,0.365365359634764,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2061,hybrid,0.365973655652485,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2062,hybrid,0.366581951670206,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2063,hybrid,0.367190247687926,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2064,hybrid,0.367798543705647,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2065,hybrid,0.368406839723367,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2066,hybrid,0.369015135741088,exclude_total_interest,Exclude total interest payable,Hybrid structural/macro,Matching PBO anchor
+2026,ardl_ecm,0.371,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2027,ardl_ecm,0.371,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2028,ardl_ecm,0.364,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2029,ardl_ecm,0.357,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2030,ardl_ecm,0.349,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2031,ardl_ecm,0.345843479154205,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2032,ardl_ecm,0.343131027184515,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2033,ardl_ecm,0.342257468878293,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2034,ardl_ecm,0.341434702400928,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2035,ardl_ecm,0.340658048774856,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2036,ardl_ecm,0.339921730582189,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2037,ardl_ecm,0.339032570172041,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2038,ardl_ecm,0.338206299560401,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2039,ardl_ecm,0.337434798848469,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2040,ardl_ecm,0.33671100960206,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2041,ardl_ecm,0.336028792426532,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2042,ardl_ecm,0.335382804499401,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2043,ardl_ecm,0.334768394072383,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2044,ardl_ecm,0.334181509444296,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2045,ardl_ecm,0.333618620306776,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2046,ardl_ecm,0.333076649694128,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2047,ardl_ecm,0.332552915040984,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2048,ardl_ecm,0.332045077077595,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2049,ardl_ecm,0.33155109548122,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2050,ardl_ecm,0.331069190360325,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2051,ardl_ecm,0.330597808781245,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2052,ardl_ecm,0.330135595659361,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2053,ardl_ecm,0.329681368432043,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2054,ardl_ecm,0.329234095011506,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2055,ardl_ecm,0.328792874584717,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2056,ardl_ecm,0.328356920886461,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2057,ardl_ecm,0.327925547622171,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2058,ardl_ecm,0.327498155760504,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2059,ardl_ecm,0.327074222452928,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2060,ardl_ecm,0.326653291369771,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2061,ardl_ecm,0.326234964269876,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2062,ardl_ecm,0.32581889364503,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2063,ardl_ecm,0.32540477630104,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2064,ardl_ecm,0.324992347755332,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2065,ardl_ecm,0.324581377346507,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor
+2066,ardl_ecm,0.324171663964835,exclude_total_interest,Exclude total interest payable,ARDL error-correction model,Matching PBO anchor

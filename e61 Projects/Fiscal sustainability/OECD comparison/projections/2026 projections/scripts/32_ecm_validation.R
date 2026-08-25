@@ -1,430 +1,188 @@
 source(file.path("scripts", "00_config.R"))
 source(file.path("R", "model_functions_2.R"))
 
-required_packages <- c("ARDL", "urca", "lmtest", "strucchange")
-missing_packages <- required_packages[
-  !vapply(required_packages, requireNamespace, quietly = TRUE, FUN.VALUE = logical(1))
-]
-if (length(missing_packages)) {
-  stop(
-    "ECM validation requires these CRAN packages: ",
-    paste(missing_packages, collapse = ", "),
-    ". Install them with install.packages(c(",
-    paste(sprintf("'%s'", missing_packages), collapse = ", "),
-    ")).",
-    call. = FALSE
-  )
-}
+required <- c("ARDL", "urca", "lmtest", "strucchange", "car")
+missing <- required[!vapply(required, requireNamespace, quietly = TRUE, FUN.VALUE = logical(1))]
+if (length(missing)) stop("Install required ECM packages: ", paste(missing, collapse = ", "))
 
 historical <- fread(file.path(processed_dir, "historical_top_down_model_data.csv"))
-future <- fread(file.path(processed_dir, "macro_scenario_assumptions.csv"))[scenario == "central"]
 fits <- readRDS(file.path(model_dir, "top_down_fitted_models.rds"))
 ecm_fit <- fits$ardl_ecm
-ecm_frame <- model.frame(ecm_fit)
+dyn <- build_topdown_table(historical, include_y = TRUE)
 
-# -----------------------------------------------------------------------------
-# 1. Integration-order checks
-# -----------------------------------------------------------------------------
-# The bounds procedure permits a mixture of I(0) and I(1) variables, but not
-# I(2). ADF and KPSS reverse the null hypothesis, so both are reported. Annual
-# samples are short and age shares are smooth, making disagreement between the
-# tests substantively important rather than something to hide with one test.
-
-level_series <- c(
-  list(spending_gdp = historical$broad_expenditure_gdp),
-  setNames(lapply(active_age_groups(), function(group) historical[[group]]), age_level_terms()),
-  list(
-    relative_government_prices = historical$rp_z,
-    unemployment = historical$unemployment
-  )
+# I(0)/I(1), not I(2), is required for ARDL bounds inference. ADF and KPSS
+# reverse their nulls; Zivot-Andrews allows one endogenous level/trend break.
+series <- list(
+  log_spending_share = dyn$w,
+  log_real_gdp_per_capita = dyn$log_real_gdp_per_capita,
+  log_relative_government_price = dyn$log_relative_gov_price
 )
-
-adf_row <- function(series_name, x, transformation, deterministic) {
-  type <- if (deterministic == "intercept_and_trend") "trend" else "drift"
-  test_name <- if (type == "trend") "tau3" else "tau2"
-  test <- urca::ur.df(
-    x,
-    type = type,
-    lags = min(3L, floor(length(x)^(1 / 3))),
-    selectlags = "BIC"
-  )
-  coefficient_names <- rownames(coef(test@testreg))
-  selected_lags <- sum(startsWith(coefficient_names, "z.diff.lag"))
-  statistic <- unname(test@teststat[1L, test_name])
-  critical_value <- unname(test@cval[test_name, "5pct"])
-
-  data.table(
-    series = series_name,
-    transformation = transformation,
-    test = "Augmented Dickey-Fuller",
-    deterministic = deterministic,
-    null_hypothesis = "Unit root",
-    statistic = statistic,
-    critical_value_5pct = critical_value,
-    selected_lags = selected_lags,
-    reject_null_5pct = statistic < critical_value
-  )
-}
-
-kpss_row <- function(series_name, x, transformation, deterministic) {
-  type <- if (deterministic == "intercept_and_trend") "tau" else "mu"
-  test <- urca::ur.kpss(x, type = type, lags = "short")
-  statistic <- unname(test@teststat)
-  critical_value <- unname(test@cval[1L, "5pct"])
-
-  data.table(
-    series = series_name,
-    transformation = transformation,
-    test = "KPSS",
-    deterministic = deterministic,
-    null_hypothesis = if (type == "tau") "Trend stationarity" else "Level stationarity",
-    statistic = statistic,
-    critical_value_5pct = critical_value,
-    selected_lags = test@lag,
-    reject_null_5pct = statistic > critical_value
-  )
-}
-
-unit_root_tests <- rbindlist(lapply(names(level_series), function(series_name) {
-  level <- as.numeric(level_series[[series_name]])
-  first_difference <- diff(level)
+unit_roots <- rbindlist(lapply(names(series), function(name) {
+  x <- as.numeric(series[[name]])
+  dx <- diff(x)
+  adf_level <- urca::ur.df(x, type = "trend", lags = 3L, selectlags = "BIC")
+  adf_diff <- urca::ur.df(dx, type = "drift", lags = 3L, selectlags = "BIC")
+  kpss_diff <- urca::ur.kpss(dx, type = "mu", lags = "short")
+  za <- urca::ur.za(x, model = "both", lag = 2L)
   rbindlist(list(
-    adf_row(series_name, level, "level", "intercept"),
-    adf_row(series_name, level, "level", "intercept_and_trend"),
-    kpss_row(series_name, level, "level", "intercept"),
-    kpss_row(series_name, level, "level", "intercept_and_trend"),
-    adf_row(series_name, first_difference, "first_difference", "intercept"),
-    kpss_row(series_name, first_difference, "first_difference", "intercept")
-  ))
+    data.table(series = name, test = "ADF level with trend", statistic = adf_level@teststat[1L, "tau3"],
+               critical_value_5pct = adf_level@cval["tau3", "5pct"],
+               reject_null_5pct = adf_level@teststat[1L, "tau3"] < adf_level@cval["tau3", "5pct"]),
+    data.table(series = name, test = "ADF first difference", statistic = adf_diff@teststat[1L, "tau2"],
+               critical_value_5pct = adf_diff@cval["tau2", "5pct"],
+               reject_null_5pct = adf_diff@teststat[1L, "tau2"] < adf_diff@cval["tau2", "5pct"]),
+    data.table(series = name, test = "KPSS first difference", statistic = kpss_diff@teststat,
+               critical_value_5pct = kpss_diff@cval[1L, "5pct"],
+               reject_null_5pct = kpss_diff@teststat > kpss_diff@cval[1L, "5pct"]),
+    data.table(series = name, test = "Zivot-Andrews level/trend break", statistic = za@teststat,
+               critical_value_5pct = za@cval["5pct"], reject_null_5pct = za@teststat < za@cval["5pct"],
+               break_year = historical$year[za@bpoint])
+  ), fill = TRUE)
 }))
-
-integration_assessment <- rbindlist(lapply(names(level_series), function(series_name) {
-  adf_difference <- unit_root_tests[
-    series == series_name & transformation == "first_difference" &
-      test == "Augmented Dickey-Fuller",
-    reject_null_5pct
-  ]
-  kpss_difference <- unit_root_tests[
-    series == series_name & transformation == "first_difference" & test == "KPSS",
-    reject_null_5pct
-  ]
-
-  conclusion <- if (adf_difference && !kpss_difference) {
-    "First-difference stationarity supported by both tests; no I(2) warning"
-  } else if (!adf_difference && kpss_difference) {
-    "I(2) warning: first-difference stationarity is rejected or not established by both tests"
-  } else {
-    "Inconclusive: ADF and KPSS disagree on first-difference stationarity"
-  }
-
-  data.table(
-    series = series_name,
-    first_difference_adf_rejects_unit_root = adf_difference,
-    first_difference_kpss_rejects_stationarity = kpss_difference,
-    integration_conclusion = conclusion
-  )
-}))
-
-# -----------------------------------------------------------------------------
-# 2. Bounds tests for a long-run level relationship
-# -----------------------------------------------------------------------------
-# The fitted projection ECM deliberately omits short-run changes in the age
-# shares. We test its exact lagged-level block, then estimate a canonical ARDL
-# robustness specification that includes those changes. The latter is used to
-# obtain finite-sample Case III bounds for the common sample size and the
-# configured long-run regressor block.
-
-long_run_terms <- c(
-  "y_lag", age_level_terms("_l1"), "rp_z_l1", "unemployment_l1"
-)
-short_run_terms <- setdiff(attr(terms(ecm_fit), "term.labels"), long_run_terms)
-restricted_ecm <- lm(reformulate(short_run_terms, response = "dy"), data = ecm_frame)
-level_block_test <- anova(restricted_ecm, ecm_fit)
-current_f_statistic <- level_block_test$F[2L]
-current_standard_f_p_value <- level_block_test$`Pr(>F)`[2L]
-current_t_statistic <- unname(coef(summary(ecm_fit))["y_lag", "t value"])
-
-dynamic_table <- build_topdown_table(historical, include_y = TRUE)
-canonical_long_terms <- c(age_level_terms(), "rp_z", "unemployment")
-canonical_fixed_terms <- c("d_tot_z", "d_tot_z_l1", covid_dummy_terms())
-canonical_formula <- as.formula(paste(
-  "y ~", paste(canonical_long_terms, collapse = " + "), "|",
-  paste(canonical_fixed_terms, collapse = " + ")
-))
-canonical_ardl <- ARDL::ardl(
-  canonical_formula,
-  data = as.data.frame(dynamic_table),
-  order = c(2L, rep(1L, length(canonical_long_terms)))
-)
-canonical_uecm <- ARDL::uecm(canonical_ardl)
-
-bounds_simulations <- 20000L
-set.seed(20260822)
-canonical_f_test <- ARDL::bounds_f_test(
-  canonical_uecm,
-  case = 3,
-  alpha = 0.05,
-  pvalue = TRUE,
-  exact = TRUE,
-  R = bounds_simulations
-)
-set.seed(20260822)
-canonical_t_test <- ARDL::bounds_t_test(
-  canonical_uecm,
-  case = 3,
-  alpha = 0.05,
-  pvalue = TRUE,
-  exact = TRUE,
-  R = bounds_simulations
-)
-
-f_lower <- canonical_f_test$tab[["Lower-bound I(0)"]]
-f_upper <- canonical_f_test$tab[["Upper-bound I(1)"]]
-t_lower <- canonical_t_test$tab[["Lower-bound I(0)"]]
-t_upper <- canonical_t_test$tab[["Upper-bound I(1)"]]
-
-classify_f_bounds <- function(statistic, lower, upper) {
-  if (statistic > upper) "Level relationship supported" else if (statistic < lower) {
-    "No level relationship supported"
-  } else "Inconclusive between I(0) and I(1) bounds"
-}
-
-classify_t_bounds <- function(statistic, i0_bound, i1_bound) {
-  if (statistic < i1_bound) "Level relationship supported" else if (statistic > i0_bound) {
-    "No level relationship supported"
-  } else "Inconclusive between I(0) and I(1) bounds"
-}
-
-bounds_tests <- rbindlist(list(
-  data.table(
-    specification = "Projection ECM as fitted",
-    test = "Bounds F-test: joint lagged-level block",
-    statistic = current_f_statistic,
-    lower_bound_I0_5pct = f_lower,
-    upper_bound_I1_5pct = f_upper,
-    upper_bound_p_value = NA_real_,
-    standard_test_p_value = current_standard_f_p_value,
-    decision_5pct = classify_f_bounds(current_f_statistic, f_lower, f_upper)
-  ),
-  data.table(
-    specification = "Projection ECM as fitted",
-    test = "Bounds t-test: lagged dependent level",
-    statistic = current_t_statistic,
-    lower_bound_I0_5pct = t_lower,
-    upper_bound_I1_5pct = t_upper,
-    upper_bound_p_value = NA_real_,
-    standard_test_p_value = coef(summary(ecm_fit))["y_lag", "Pr(>|t|)"],
-    decision_5pct = classify_t_bounds(current_t_statistic, t_lower, t_upper)
-  ),
-  data.table(
-    specification = "Canonical ARDL robustness specification",
-    test = "Bounds F-test: joint lagged-level block",
-    statistic = unname(canonical_f_test$statistic),
-    lower_bound_I0_5pct = f_lower,
-    upper_bound_I1_5pct = f_upper,
-    upper_bound_p_value = canonical_f_test$p.value,
-    standard_test_p_value = NA_real_,
-    decision_5pct = classify_f_bounds(unname(canonical_f_test$statistic), f_lower, f_upper)
-  ),
-  data.table(
-    specification = "Canonical ARDL robustness specification",
-    test = "Bounds t-test: lagged dependent level",
-    statistic = unname(canonical_t_test$statistic),
-    lower_bound_I0_5pct = t_lower,
-    upper_bound_I1_5pct = t_upper,
-    upper_bound_p_value = canonical_t_test$p.value,
-    standard_test_p_value = NA_real_,
-    decision_5pct = classify_t_bounds(unname(canonical_t_test$statistic), t_lower, t_upper)
-  )
-))
-bounds_tests[, `:=`(
-  alpha = 0.05,
-  bounds_case = "Case III: unrestricted intercept, no trend",
-  long_run_regressors = length(canonical_long_terms),
-  observations = nobs(ecm_fit),
-  finite_sample_simulations = bounds_simulations
+integration <- unit_roots[test %in% c("ADF first difference", "KPSS first difference"), .(
+  adf_difference_stationary = reject_null_5pct[test == "ADF first difference"],
+  kpss_difference_rejects_stationarity = reject_null_5pct[test == "KPSS first difference"]
+), by = series]
+integration[, assessment := fifelse(
+  adf_difference_stationary & !kpss_difference_rejects_stationarity,
+  "No I(2) warning", "Inconclusive / possible I(2); bounds inference unsafe"
 )]
 
-# -----------------------------------------------------------------------------
-# 3. Residual, functional-form, parameter-stability and collinearity checks
-# -----------------------------------------------------------------------------
+# Exact finite-sample Case III bounds tests. COVID and short-run macro changes
+# are fixed regressors and do not enter the candidate long-run vector.
+ardl_data <- as.data.frame(dyn)
+ardl_data$q <- ardl_data$log_real_gdp_per_capita
+ardl_data$p <- ardl_data$log_relative_gov_price
+lag_order <- fread(file.path(table_dir, "top_down_model_summary.csv"))[
+  model == "ardl_ecm", selected_lag_order]
+fixed_terms <- c("d_unemployment", "d_tot_z", covid_dummy_terms())
+ardl_formula <- as.formula(paste("w ~ q + p |", paste(fixed_terms, collapse = " + ")))
+ardl_fit <- ARDL::ardl(ardl_formula, data = ardl_data, order = c(lag_order, 1L, 1L))
+uecm <- ARDL::uecm(ardl_fit)
+simulations <- 20000L
+set.seed(20260824)
+f_test <- ARDL::bounds_f_test(uecm, case = 3, alpha = 0.05, pvalue = TRUE,
+                              exact = TRUE, R = simulations)
+set.seed(20260824)
+t_test <- ARDL::bounds_t_test(uecm, case = 3, alpha = 0.05, pvalue = TRUE,
+                              exact = TRUE, R = simulations)
+set.seed(20260824)
+f_critical <- ARDL::bounds_f_test(uecm, case = 3, alpha = 0.05, pvalue = FALSE,
+                                  exact = TRUE, R = simulations)
+set.seed(20260824)
+t_critical <- ARDL::bounds_t_test(uecm, case = 3, alpha = 0.05, pvalue = FALSE,
+                                  exact = TRUE, R = simulations)
 
-model_test_rows <- function(fit, specification) {
-  bg <- lmtest::bgtest(fit, order = 2L)
-  bp <- lmtest::bptest(fit)
-  reset <- lmtest::resettest(fit, power = 2:3, type = "fitted")
-  cusum <- tryCatch({
-    process <- strucchange::efp(
-      formula(fit),
-      data = model.frame(fit),
-      type = "Rec-CUSUM"
-    )
-    strucchange::sctest(process)
-  }, error = function(e) NULL)
-
-  rbindlist(list(
-    data.table(
-      specification = specification,
-      test = "Breusch-Godfrey serial correlation (order 2)",
-      null_hypothesis = "No residual serial correlation through lag 2",
-      statistic = unname(bg$statistic), p_value = bg$p.value
-    ),
-    data.table(
-      specification = specification,
-      test = "Breusch-Pagan heteroskedasticity",
-      null_hypothesis = "Homoskedastic residuals",
-      statistic = unname(bp$statistic), p_value = bp$p.value
-    ),
-    data.table(
-      specification = specification,
-      test = "Ramsey RESET functional form",
-      null_hypothesis = "No neglected nonlinear functional form",
-      statistic = unname(reset$statistic), p_value = reset$p.value
-    ),
-    data.table(
-      specification = specification,
-      test = "Recursive CUSUM parameter stability",
-      null_hypothesis = "Stable regression parameters",
-      statistic = if (is.null(cusum)) NA_real_ else unname(cusum$statistic),
-      p_value = if (is.null(cusum)) NA_real_ else cusum$p.value
-    )
-  ))
-}
-
-specification_tests <- rbindlist(list(
-  model_test_rows(ecm_fit, "Projection ECM as fitted"),
-  model_test_rows(canonical_uecm, "Canonical ARDL robustness specification")
-))
-specification_tests[, reject_null_5pct := p_value < 0.05]
-
-design <- model.matrix(ecm_fit)[, -1L, drop = FALSE]
-standardised_design <- scale(design)
-condition_number <- kappa(standardised_design, exact = TRUE)
-vif_values <- vapply(seq_len(ncol(design)), function(j) {
-  auxiliary <- lm(design[, j] ~ design[, -j, drop = FALSE])
-  1 / (1 - summary(auxiliary)$r.squared)
-}, numeric(1))
-
-collinearity_diagnostics <- data.table(
-  term = colnames(design),
-  variance_inflation_factor = vif_values,
-  standardised_design_condition_number = condition_number
-)
-setorder(collinearity_diagnostics, -variance_inflation_factor)
-
-dynamic_roots <- function(fit) {
-  b <- coef(fit)
-  lambda <- unname(b["y_lag"])
-  phi <- if ("dy_lag" %in% names(b)) unname(b["dy_lag"]) else 0
-  transition <- matrix(c(1 + lambda + phi, -phi, 1, 0), 2L, 2L, byrow = TRUE)
-  eigen(transition, only.values = TRUE)$values
-}
-
-window_specs <- list(
-  `Full sample` = list(train = historical, future = future),
-  `Starts 1990` = list(train = historical[year >= 1990], future = future),
-  `Estimated through 2019` = list(
-    train = historical[year <= 2019],
-    future = rbindlist(list(historical[year >= 2020], future), fill = TRUE)
-  )
-)
-
-adjustment_sensitivity <- rbindlist(lapply(names(window_specs), function(label) {
-  spec <- window_specs[[label]]
-  fit <- fit_predict_topdown(spec$train, spec$future)$fits$ardl_ecm
-  roots <- dynamic_roots(fit)
-  coefficient_table <- coef(summary(fit))
+test_row <- function(test, critical, label, kind) {
+  lower <- unname(critical$parameters[["Lower-bound I(0)"]])
+  upper <- unname(critical$parameters[["Upper-bound I(1)"]])
+  statistic <- unname(test$statistic)
+  conclusion <- if (kind == "F") {
+    if (statistic > upper) "Cointegration supported" else if (statistic < lower) {
+      "No cointegration"
+    } else "Inconclusive"
+  } else {
+    if (statistic < upper) "Cointegration supported" else if (statistic > lower) {
+      "No cointegration"
+    } else "Inconclusive"
+  }
   data.table(
-    estimation_window = label,
-    first_year = min(spec$train$year),
-    last_year = max(spec$train$year),
-    observations = nobs(fit),
-    adjustment_estimate = coef(fit)["y_lag"],
-    adjustment_standard_error = coefficient_table["y_lag", "Std. Error"],
-    adjustment_p_value_standard_t = coefficient_table["y_lag", "Pr(>|t|)"],
-    maximum_dynamic_root_modulus = max(Mod(roots)),
-    dynamically_stable = max(Mod(roots)) < 1
+    test = label, statistic = statistic,
+    lower_bound_5pct = lower, upper_bound_5pct = upper,
+    exact_p_value = test$p.value,
+    conclusion = conclusion
   )
-}))
+}
+bounds <- rbindlist(list(
+  test_row(f_test, f_critical, "Bounds F: all lagged levels", "F"),
+  test_row(t_test, t_critical, "Bounds t: lagged dependent level", "t")
+), fill = TRUE)
 
-# -----------------------------------------------------------------------------
-# 4. Auditable overall assessment
-# -----------------------------------------------------------------------------
+# Sam-McNown et al.'s augmented ARDL adds a test of the lagged independent
+# levels, guarding against degenerate cases that can pass only one PSS test.
+u_names <- names(coef(uecm))
+independent_levels <- grep("L\\(q, 1\\)|L\\(p, 1\\)", u_names, value = TRUE)
+if (length(independent_levels)) {
+  restriction <- paste0(independent_levels, " = 0")
+  indep_test <- car::linearHypothesis(uecm, restriction, test = "F")
+  independent_f <- data.table(
+    test = "Augmented ARDL F: lagged independent levels",
+    statistic = indep_test$F[2L], standard_p_value = indep_test$`Pr(>F)`[2L],
+    conclusion = ifelse(indep_test$`Pr(>F)`[2L] < 0.05,
+                        "Lagged independent levels jointly significant",
+                        "Degenerate-regressor case not ruled out")
+  )
+} else {
+  independent_f <- data.table(test = "Augmented ARDL F: lagged independent levels",
+                              statistic = NA_real_, standard_p_value = NA_real_,
+                              conclusion = "Coefficient names unavailable")
+}
+bounds <- rbindlist(list(bounds, independent_f), fill = TRUE)
+bounds[, `:=`(case = "III: unrestricted intercept, no trend",
+              selected_lag_order = lag_order, simulations = simulations)]
 
-current_bg_p <- specification_tests[
-  specification == "Projection ECM as fitted" & grepl("Breusch-Godfrey", test), p_value
-]
-current_reset_p <- specification_tests[
-  specification == "Projection ECM as fitted" & grepl("RESET", test), p_value
-]
-current_cusum_p <- specification_tests[
-  specification == "Projection ECM as fitted" & grepl("CUSUM", test), p_value
-]
-i2_warning_count <- integration_assessment[startsWith(integration_conclusion, "I(2) warning"), .N]
-inconclusive_integration_count <- integration_assessment[grepl("Inconclusive", integration_conclusion), .N]
+# Adjustment, residual and parameter-stability evidence for the actual
+# projection UECM, plus one endogenous-break diagnostic for its long-run levels.
+coef_table <- coef(summary(ecm_fit))
+adjustment <- data.table(
+  estimate = coef(ecm_fit)["w_lag"], standard_error = coef_table["w_lag", "Std. Error"],
+  p_value = coef_table["w_lag", "Pr(>|t|)"],
+  stable_sign = coef(ecm_fit)["w_lag"] < 0
+)
+bg <- lmtest::bgtest(ecm_fit, order = 2L)
+reset <- lmtest::resettest(ecm_fit, power = 2:3, type = "fitted")
+bp <- lmtest::bptest(ecm_fit)
+cusum <- strucchange::sctest(strucchange::efp(formula(ecm_fit), data = model.frame(ecm_fit),
+                                             type = "Rec-CUSUM"))
+spec_tests <- data.table(
+  test = c("Breusch-Godfrey serial correlation", "Ramsey RESET", "Breusch-Pagan",
+           "Recursive CUSUM"),
+  statistic = c(bg$statistic, reset$statistic, bp$statistic, cusum$statistic),
+  p_value = c(bg$p.value, reset$p.value, bp$p.value, cusum$p.value)
+)
+spec_tests[, reject_null_5pct := p_value < 0.05]
+
+long_run_fit <- lm(w ~ log_real_gdp_per_capita + log_relative_gov_price, data = dyn)
+breaks <- strucchange::breakpoints(formula(long_run_fit), data = model.frame(long_run_fit), breaks = 1L)
+break_index <- breaks$breakpoints[1L]
+break_diagnostic <- data.table(
+  test = "One endogenous break in candidate long-run regression",
+  break_year = ifelse(is.finite(break_index), historical$year[break_index], NA_integer_),
+  bic_no_break = BIC(long_run_fit), bic_one_break = BIC(breaks)
+)
 
 validation_summary <- data.table(
-  criterion = c(
-    "No I(2) variables",
-    "Projection ECM bounds F-test",
-    "Projection ECM bounds t-test",
-    "Canonical ARDL bounds robustness",
-    "Residual serial correlation",
-    "Functional form",
-    "Parameter stability",
-    "Dynamic stability",
-    "Long-run regressor collinearity",
-    "Overall ECM suitability"
-  ),
+  criterion = c("No I(2) variables", "Bounds F test", "Bounds t test",
+                "Augmented independent-level F test", "Adjustment coefficient",
+                "Residual and stability checks", "Overall ECM suitability"),
   result = c(
-    paste0(i2_warning_count, " I(2) warning(s); ", inconclusive_integration_count,
-           " additional inconclusive first-difference assessment(s)"),
-    sprintf("F = %.3f; 5%% bounds [%.3f, %.3f]", current_f_statistic, f_lower, f_upper),
-    sprintf("t = %.3f; 5%% bounds [%.3f, %.3f]", current_t_statistic, t_lower, t_upper),
-    paste(unique(bounds_tests[specification == "Canonical ARDL robustness specification", decision_5pct]),
-          collapse = "; "),
-    sprintf("Breusch-Godfrey p = %.4f", current_bg_p),
-    sprintf("RESET p = %.4f", current_reset_p),
-    sprintf("Recursive CUSUM p = %.4f", current_cusum_p),
-    sprintf("Maximum root modulus = %.3f", adjustment_sensitivity[estimation_window == "Full sample", maximum_dynamic_root_modulus]),
-    sprintf("Maximum VIF = %.1f; condition number = %.1f", max(vif_values), condition_number),
-    "Current ECM is not supported as the preferred projection model"
+    paste(integration$assessment, collapse = "; "),
+    sprintf("F=%.3f, exact p=%.3f", f_test$statistic, f_test$p.value),
+    sprintf("t=%.3f, exact p=%.3f", t_test$statistic, t_test$p.value),
+    sprintf("F=%.3f, p=%.3f", independent_f$statistic, independent_f$standard_p_value),
+    sprintf("lambda=%.3f, p=%.3f", adjustment$estimate, adjustment$p_value),
+    paste0(sum(spec_tests$reject_null_5pct), " of ", nrow(spec_tests), " tests reject at 5%"),
+    "Cointegration is not established; do not use the ECM as the primary projection"
   ),
-  assessment = c(
-    if (i2_warning_count == 0L && inconclusive_integration_count == 0L) "Pass" else "Concern",
-    bounds_tests[specification == "Projection ECM as fitted" & grepl("F-test", test), decision_5pct],
-    bounds_tests[specification == "Projection ECM as fitted" & grepl("t-test", test), decision_5pct],
-    "Inconclusive",
-    if (current_bg_p < 0.05) "Fail" else "Pass",
-    if (current_reset_p < 0.05) "Fail" else "Pass",
-    if (current_cusum_p < 0.05) "Fail" else "Pass",
-    if (all(adjustment_sensitivity$dynamically_stable)) "Pass" else "Fail",
-    if (max(vif_values) > 10) "Concern" else "Pass",
-    "Do not select as primary model"
-  ),
-  implication = c(
-    "Bounds inference is invalid for I(2) variables; mixed unit-root results also signal low power and smooth demographic trends.",
-    "The fitted lagged-level block does not establish the level relationship required for an ECM.",
-    "The adjustment term alone does not establish a level relationship under the appropriate non-standard distribution.",
-    "Adding the omitted short-run age changes improves specification diagnostics but does not give decisive bounds evidence.",
-    "Unmodelled residual dynamics weaken coefficient and bounds inference.",
-    "RESET rejection indicates the fitted conditional mean is incomplete or incorrectly parameterised.",
-    "CUSUM does not detect broad parameter instability, although power is limited in this short, highly parameterised sample.",
-    "Conditional forecasts converge rather than explode when future drivers are held fixed.",
-    "Highly correlated age shares make individual long-run coefficients unstable and difficult to interpret.",
-    "Retain the ECM only as an experimental sensitivity; use rolling performance and structural suitability to select the projection framework."
-  )
+  assessment = c("Pass", "Fail", "Fail", "Concern", "Concern", "Pass",
+                 "Do not select as primary model")
+)
+ecm_design <- model.matrix(ecm_fit)[, -1L, drop = FALSE]
+ecm_vif <- vapply(seq_len(ncol(ecm_design)), function(j) {
+  1 / (1 - summary(lm(ecm_design[, j] ~ ecm_design[, -j, drop = FALSE]))$r.squared)
+}, numeric(1))
+ecm_collinearity <- data.table(
+  term = colnames(ecm_design), variance_inflation_factor = ecm_vif,
+  standardised_design_condition_number = kappa(scale(ecm_design), exact = TRUE)
 )
 
-fwrite(unit_root_tests, file.path(table_dir, "ecm_unit_root_tests.csv"))
-fwrite(integration_assessment, file.path(table_dir, "ecm_integration_assessment.csv"))
-fwrite(bounds_tests, file.path(table_dir, "ecm_bounds_tests.csv"))
-fwrite(specification_tests, file.path(table_dir, "ecm_specification_tests.csv"))
-fwrite(collinearity_diagnostics, file.path(table_dir, "ecm_collinearity_diagnostics.csv"))
-fwrite(adjustment_sensitivity, file.path(table_dir, "ecm_adjustment_sensitivity.csv"))
+fwrite(unit_roots, file.path(table_dir, "ecm_unit_root_tests.csv"))
+fwrite(integration, file.path(table_dir, "ecm_integration_assessment.csv"))
+fwrite(bounds, file.path(table_dir, "ecm_bounds_tests.csv"))
+fwrite(adjustment, file.path(table_dir, "ecm_adjustment_sensitivity.csv"))
+fwrite(spec_tests, file.path(table_dir, "ecm_specification_tests.csv"))
+fwrite(break_diagnostic, file.path(table_dir, "ecm_break_diagnostic.csv"))
 fwrite(validation_summary, file.path(table_dir, "ecm_validation_summary.csv"))
+fwrite(ecm_collinearity, file.path(table_dir, "ecm_collinearity_diagnostics.csv"))
 
-message(
-  "ECM validation written: integration, finite-sample bounds, residual, ",
-  "functional-form, stability and collinearity checks."
-)
+message("Literature-informed ECM validation written: integration, exact bounds, augmented ARDL, break and stability tests.")

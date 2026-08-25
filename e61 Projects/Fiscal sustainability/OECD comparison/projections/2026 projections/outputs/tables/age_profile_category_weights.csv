@@ -1,0 +1,56 @@
+exposure,category,base_expenditure,category_expenditure_weight,age_group,relative_weight,weight_status
+education_age_weight,Education,148441,0.15099554258953,0_14,1,Judgemental grouped proxy pending administrative age-cost data
+education_age_weight,Education,148441,0.15099554258953,15_34,0.35,Judgemental grouped proxy pending administrative age-cost data
+education_age_weight,Education,148441,0.15099554258953,35_54,0.05,Judgemental grouped proxy pending administrative age-cost data
+education_age_weight,Education,148441,0.15099554258953,55_64,0,Judgemental grouped proxy pending administrative age-cost data
+education_age_weight,Education,148441,0.15099554258953,65p,0,Judgemental grouped proxy pending administrative age-cost data
+health_age_weight,Health,207743,0.211318079265005,0_14,0.65,Judgemental grouped proxy pending administrative age-cost data
+health_age_weight,Health,207743,0.211318079265005,15_34,0.75,Judgemental grouped proxy pending administrative age-cost data
+health_age_weight,Health,207743,0.211318079265005,35_54,0.9,Judgemental grouped proxy pending administrative age-cost data
+health_age_weight,Health,207743,0.211318079265005,55_64,1.3,Judgemental grouped proxy pending administrative age-cost data
+health_age_weight,Health,207743,0.211318079265005,65p,3,Judgemental grouped proxy pending administrative age-cost data
+social_age_weight,Social Protection,311746,0.317110881899984,0_14,0.6,Judgemental grouped proxy pending administrative age-cost data
+social_age_weight,Social Protection,311746,0.317110881899984,15_34,0.5,Judgemental grouped proxy pending administrative age-cost data
+social_age_weight,Social Protection,311746,0.317110881899984,35_54,0.4,Judgemental grouped proxy pending administrative age-cost data
+social_age_weight,Social Protection,311746,0.317110881899984,55_64,0.8,Judgemental grouped proxy pending administrative age-cost data
+social_age_weight,Social Protection,311746,0.317110881899984,65p,2.2,Judgemental grouped proxy pending administrative age-cost data
+total_population,Defence,50175,0.0510384688154193,0_14,1,Flat allocation assumption
+total_population,Defence,50175,0.0510384688154193,15_34,1,Flat allocation assumption
+total_population,Defence,50175,0.0510384688154193,35_54,1,Flat allocation assumption
+total_population,Defence,50175,0.0510384688154193,55_64,1,Flat allocation assumption
+total_population,Defence,50175,0.0510384688154193,65p,1,Flat allocation assumption
+total_population,Economic affairs,46365,0.0471629019756236,0_14,1,Flat allocation assumption
+total_population,Economic affairs,46365,0.0471629019756236,15_34,1,Flat allocation assumption
+total_population,Economic affairs,46365,0.0471629019756236,35_54,1,Flat allocation assumption
+total_population,Economic affairs,46365,0.0471629019756236,55_64,1,Flat allocation assumption
+total_population,Economic affairs,46365,0.0471629019756236,65p,1,Flat allocation assumption
+total_population,Environmental Protection,20777,0.0211345543911902,0_14,1,Flat allocation assumption
+total_population,Environmental Protection,20777,0.0211345543911902,15_34,1,Flat allocation assumption
+total_population,Environmental Protection,20777,0.0211345543911902,35_54,1,Flat allocation assumption
+total_population,Environmental Protection,20777,0.0211345543911902,55_64,1,Flat allocation assumption
+total_population,Environmental Protection,20777,0.0211345543911902,65p,1,Flat allocation assumption
+total_population,General public services excl interest,64031,0.0651329187188861,0_14,1,Flat allocation assumption
+total_population,General public services excl interest,64031,0.0651329187188861,15_34,1,Flat allocation assumption
+total_population,General public services excl interest,64031,0.0651329187188861,35_54,1,Flat allocation assumption
+total_population,General public services excl interest,64031,0.0651329187188861,55_64,1,Flat allocation assumption
+total_population,General public services excl interest,64031,0.0651329187188861,65p,1,Flat allocation assumption
+total_population,Housing and community amenities,13903,0.0141422587332491,0_14,1,Flat allocation assumption
+total_population,Housing and community amenities,13903,0.0141422587332491,15_34,1,Flat allocation assumption
+total_population,Housing and community amenities,13903,0.0141422587332491,35_54,1,Flat allocation assumption
+total_population,Housing and community amenities,13903,0.0141422587332491,55_64,1,Flat allocation assumption
+total_population,Housing and community amenities,13903,0.0141422587332491,65p,1,Flat allocation assumption
+total_population,Public order and safety,52774,0.0536821953814636,0_14,1,Flat allocation assumption
+total_population,Public order and safety,52774,0.0536821953814636,15_34,1,Flat allocation assumption
+total_population,Public order and safety,52774,0.0536821953814636,35_54,1,Flat allocation assumption
+total_population,Public order and safety,52774,0.0536821953814636,55_64,1,Flat allocation assumption
+total_population,Public order and safety,52774,0.0536821953814636,65p,1,Flat allocation assumption
+total_population,"Recreation, culture and religion",19971,0.0203146838208817,0_14,1,Flat allocation assumption
+total_population,"Recreation, culture and religion",19971,0.0203146838208817,15_34,1,Flat allocation assumption
+total_population,"Recreation, culture and religion",19971,0.0203146838208817,35_54,1,Flat allocation assumption
+total_population,"Recreation, culture and religion",19971,0.0203146838208817,55_64,1,Flat allocation assumption
+total_population,"Recreation, culture and religion",19971,0.0203146838208817,65p,1,Flat allocation assumption
+total_population,Transport,47156,0.0479675144087675,0_14,1,Flat allocation assumption
+total_population,Transport,47156,0.0479675144087675,15_34,1,Flat allocation assumption
+total_population,Transport,47156,0.0479675144087675,35_54,1,Flat allocation assumption
+total_population,Transport,47156,0.0479675144087675,55_64,1,Flat allocation assumption
+total_population,Transport,47156,0.0479675144087675,65p,1,Flat allocation assumption
