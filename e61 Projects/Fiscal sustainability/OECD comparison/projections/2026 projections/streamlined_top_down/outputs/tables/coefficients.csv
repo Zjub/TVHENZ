@@ -1,0 +1,35 @@
+model,model_label,term,group,estimate,standard_error,p_value,lower_95,upper_95
+with_income,Structural-change model with real GDP per capita,d_age_0_14_pp,Age composition,-0.798900960680024,0.355173961723418,0.0244919536193989,-1.49502913390433,-0.102772787455718
+with_income,Structural-change model with real GDP per capita,d_age_65_74_pp,Age composition,-0.592856419203226,0.28396781599524,0.0368195620264664,-1.14942311132239,-0.0362897270840581
+with_income,Structural-change model with real GDP per capita,d_age_75p_pp,Age composition,3.5500419159992,0.502099407771904,1.5449158104645e-12,2.56594516010737,4.53413867189102
+with_income,Structural-change model with real GDP per capita,d_log_relative_price,Relative government prices,34.9460598689382,3.98814088716925,1.90977589261034e-18,27.1294473648149,42.7626723730616
+with_income,Structural-change model with real GDP per capita,d_log_real_gdp_per_capita,Real GDP per capita,-26.7814412616512,2.76325842031076,3.26148308701175e-22,-32.1973282454373,-21.3655542778651
+with_income,Structural-change model with real GDP per capita,d_unemployment,Transitory macro bridge,0.369591407266809,0.112401373497266,0.00100851817777948,0.149288763399333,0.589894051134285
+with_income,Structural-change model with real GDP per capita,d_unemployment_l1,Transitory macro bridge,0.0188226146264506,0.0997327438980378,0.850304014139388,-0.17664997149306,0.214295200745962
+with_income,Structural-change model with real GDP per capita,d_log_terms_of_trade,Transitory macro bridge,2.92741458273335,0.852125603533374,0.000591622684211554,1.25727908950348,4.59755007596322
+with_income,Structural-change model with real GDP per capita,d_log_terms_of_trade_l1,Transitory macro bridge,0.712103779116652,0.893741259404975,0.425586209827923,-1.03959690081457,2.46380445904787
+with_income,Structural-change model with real GDP per capita,d_covid_fy2020,COVID interventions,4.28109818834017,0.432009818870971,3.77687039972711e-23,3.43437450238539,5.12782187429494
+with_income,Structural-change model with real GDP per capita,d_covid_fy2021,COVID interventions,6.11697162216424,0.625760249581075,1.43782027362042e-22,4.89050407002854,7.34343917429994
+with_income,Structural-change model with real GDP per capita,d_covid_fy2022,COVID interventions,2.67874000108756,0.475304663080707,1.74209262146673e-08,1.74715997976543,3.61032002240969
+no_income,Sensitivity: omit real GDP per capita,d_age_0_14_pp,Age composition,0.224872107122082,0.697346305466263,0.74709791709179,-1.14190153634386,1.59164575058802
+no_income,Sensitivity: omit real GDP per capita,d_age_65_74_pp,Age composition,-0.758517338952213,0.858112143267969,0.376730055502177,-2.44038623445391,0.923351556549482
+no_income,Sensitivity: omit real GDP per capita,d_age_75p_pp,Age composition,1.95649851397819,1.19157486915607,0.100601730643766,-0.378945314450735,4.29194234240712
+no_income,Sensitivity: omit real GDP per capita,d_log_relative_price,Relative government prices,20.4905884865329,8.58193606487866,0.0169568640979011,3.67030288174536,37.3108740913205
+no_income,Sensitivity: omit real GDP per capita,d_unemployment,Transitory macro bridge,0.699145243639426,0.118294975882759,3.41722823851062e-09,0.467291351357184,0.930999135921667
+no_income,Sensitivity: omit real GDP per capita,d_unemployment_l1,Transitory macro bridge,-0.110673850074952,0.11613611821205,0.340606957245556,-0.338296459074856,0.116948758924952
+no_income,Sensitivity: omit real GDP per capita,d_log_terms_of_trade,Transitory macro bridge,0.341513537508148,1.99518665108545,0.864091105348659,-3.56898044105441,4.25200751607071
+no_income,Sensitivity: omit real GDP per capita,d_log_terms_of_trade_l1,Transitory macro bridge,0.735357433662007,1.44248357051385,0.610201635733257,-2.09185841283588,3.5625732801599
+no_income,Sensitivity: omit real GDP per capita,d_covid_fy2020,COVID interventions,4.31613735413497,0.505210310090484,1.30500059833518e-17,3.32594334173931,5.30633136653063
+no_income,Sensitivity: omit real GDP per capita,d_covid_fy2021,COVID interventions,5.87283249691925,0.659443856199698,5.30332867673508e-19,4.58034628894163,7.16531870489687
+no_income,Sensitivity: omit real GDP per capita,d_covid_fy2022,COVID interventions,2.71892081386447,0.571441910399367,1.9552015285455e-06,1.59891525022495,3.83892637750399
+structural_only,Sensitivity: omit transitory macro factors,d_age_0_14_pp,Age composition,-1.56015935513466,0.302383474688284,2.47558545598491e-07,-2.15282007504377,-0.967498635225543
+structural_only,Sensitivity: omit transitory macro factors,d_age_65_74_pp,Age composition,-0.0360196841983845,0.271368267951342,0.894404077557271,-0.567891715930031,0.495852347533262
+structural_only,Sensitivity: omit transitory macro factors,d_age_75p_pp,Age composition,3.09483461013571,0.527108207259821,4.32271295296478e-09,2.06172150795099,4.12794771232043
+structural_only,Sensitivity: omit transitory macro factors,d_log_relative_price,Relative government prices,36.4512053236969,4.16075392681153,1.94005018310364e-18,28.2962774786127,44.6061331687811
+structural_only,Sensitivity: omit transitory macro factors,d_log_real_gdp_per_capita,Real GDP per capita,-31.6019017287122,2.38712327614199,5.25973840166737e-40,-36.2805773766078,-26.9232260808166
+structural_only,Sensitivity: omit transitory macro factors,d_covid_fy2020,COVID interventions,4.10756617717003,0.493516087112141,8.57178409175612e-17,3.1402924206391,5.07483993370096
+structural_only,Sensitivity: omit transitory macro factors,d_covid_fy2021,COVID interventions,6.64709175067338,0.716260396337286,1.69045464916295e-20,5.24324717029992,8.05093633104685
+structural_only,Sensitivity: omit transitory macro factors,d_covid_fy2022,COVID interventions,3.04705876216964,0.531902461365128,1.01260247721967e-08,2.00454909460578,4.0895684297335
+arima_benchmark,Statistical ARIMA benchmark,d_covid_fy2020,COVID interventions,5.1716008259164,0.753712393883088,6.81391565740999e-12,3.69435167920407,6.64884997262872
+arima_benchmark,Statistical ARIMA benchmark,d_covid_fy2021,COVID interventions,7.345590240913,0.870312102775461,3.16851098429378e-17,5.63980986416378,9.05137061766223
+arima_benchmark,Statistical ARIMA benchmark,d_covid_fy2022,COVID interventions,2.7961988215234,0.753712393898032,0.00020733981229181,1.31894967478179,4.27344796826501

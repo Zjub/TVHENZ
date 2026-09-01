@@ -1,0 +1,5 @@
+model,model_label,adf_residual_statistic,adf_residual_5pct_critical,residual_stationary_at_5pct,recursive_cusum_p
+with_income,Structural-change model with real GDP per capita,-4.33305200453676,-1.95,TRUE,0.614586963197943
+no_income,Sensitivity: omit real GDP per capita,-4.53995150544826,-1.95,TRUE,0.550600342464184
+structural_only,Sensitivity: omit transitory macro factors,-3.43293740823821,-1.95,TRUE,0.684028313186602
+arima_benchmark,Statistical ARIMA benchmark,-5.51411614914956,-1.95,TRUE,

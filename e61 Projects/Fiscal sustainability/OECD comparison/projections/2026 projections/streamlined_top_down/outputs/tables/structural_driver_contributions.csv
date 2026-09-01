@@ -1,0 +1,186 @@
+group,year,contribution_change_pp,cumulative_contribution_pp
+Age composition,2030,0,0
+Age composition,2031,0.843881849608013,0.843881849608013
+Age composition,2032,0.774973754434986,1.618855604043
+Age composition,2033,0.747406557018547,2.36626216106155
+Age composition,2034,0.702780800274174,3.06904296133572
+Age composition,2035,0.659466823452261,3.72850978478798
+Age composition,2036,0.673858749168284,4.40236853395626
+Age composition,2037,0.312796871734391,4.71516540569066
+Age composition,2038,0.312796871734751,5.02796227742541
+Age composition,2039,0.312796871734745,5.34075914916015
+Age composition,2040,0.312796871734391,5.65355602089454
+Age composition,2041,0.31279687173475,5.96635289262929
+Age composition,2042,0.312796871734671,6.27914976436396
+Age composition,2043,0.31279687173439,6.59194663609835
+Age composition,2044,0.312796871734748,6.9047435078331
+Age composition,2045,0.312796871734391,7.21754037956749
+Age composition,2046,0.312796871734743,7.53033725130224
+Age composition,2047,0.312796871734751,7.84313412303699
+Age composition,2048,0.31279687173439,8.15593099477138
+Age composition,2049,0.312796871734664,8.46872786650604
+Age composition,2050,0.312796871734751,8.78152473824079
+Age composition,2051,0.312796871734414,9.09432160997521
+Age composition,2052,0.312796871734743,9.40711848170995
+Age composition,2053,0.312796871734748,9.7199153534447
+Age composition,2054,0.31279687173439,10.0327122251791
+Age composition,2055,0.312796871734751,10.3455090969138
+Age composition,2056,0.312796871734312,10.6583059686482
+Age composition,2057,0.312796871734751,10.9711028403829
+Age composition,2058,0.312796871734743,11.2838997121176
+Age composition,2059,0.312796871734397,11.596696583852
+Age composition,2060,0.312796871734744,11.9094934555868
+Age composition,2061,0.312796871734743,12.2222903273215
+Age composition,2062,0.312796871734388,12.5350871990559
+Age composition,2063,0.312796871734665,12.8478840707906
+Age composition,2064,0.312796871734756,13.1606809425253
+Age composition,2065,0.312796871734391,13.4734778142597
+Age composition,2066,0.31279687173475,13.7862746859945
+COVID interventions,2030,0,0
+COVID interventions,2031,0,0
+COVID interventions,2032,0,0
+COVID interventions,2033,0,0
+COVID interventions,2034,0,0
+COVID interventions,2035,0,0
+COVID interventions,2036,0,0
+COVID interventions,2037,0,0
+COVID interventions,2038,0,0
+COVID interventions,2039,0,0
+COVID interventions,2040,0,0
+COVID interventions,2041,0,0
+COVID interventions,2042,0,0
+COVID interventions,2043,0,0
+COVID interventions,2044,0,0
+COVID interventions,2045,0,0
+COVID interventions,2046,0,0
+COVID interventions,2047,0,0
+COVID interventions,2048,0,0
+COVID interventions,2049,0,0
+COVID interventions,2050,0,0
+COVID interventions,2051,0,0
+COVID interventions,2052,0,0
+COVID interventions,2053,0,0
+COVID interventions,2054,0,0
+COVID interventions,2055,0,0
+COVID interventions,2056,0,0
+COVID interventions,2057,0,0
+COVID interventions,2058,0,0
+COVID interventions,2059,0,0
+COVID interventions,2060,0,0
+COVID interventions,2061,0,0
+COVID interventions,2062,0,0
+COVID interventions,2063,0,0
+COVID interventions,2064,0,0
+COVID interventions,2065,0,0
+COVID interventions,2066,0,0
+Real GDP per capita,2030,0,0
+Real GDP per capita,2031,-0.170884391089616,-0.170884391089616
+Real GDP per capita,2032,-0.169694412852657,-0.340578803942273
+Real GDP per capita,2033,-0.174053107862572,-0.514631911804846
+Real GDP per capita,2034,-0.179348051889451,-0.693979963694297
+Real GDP per capita,2035,-0.184244437707312,-0.878224401401609
+Real GDP per capita,2036,-0.189014855097298,-1.06723925649891
+Real GDP per capita,2037,-0.222852095320238,-1.29009135181914
+Real GDP per capita,2038,-0.225527935484544,-1.51561928730369
+Real GDP per capita,2039,-0.22815107209037,-1.74377035939406
+Real GDP per capita,2040,-0.230723047044667,-1.97449340643873
+Real GDP per capita,2041,-0.233245342689484,-2.20773874912821
+Real GDP per capita,2042,-0.235719384646752,-2.44345813377496
+Real GDP per capita,2043,-0.238146544509485,-2.68160467828445
+Real GDP per capita,2044,-0.240528142375364,-2.92213282065981
+Real GDP per capita,2045,-0.242865449239935,-3.16499826989975
+Real GDP per capita,2046,-0.245159689260334,-3.41015795916008
+Real GDP per capita,2047,-0.24741204189395,-3.65757000105403
+Real GDP per capita,2048,-0.249623643916532,-3.90719364497056
+Real GDP per capita,2049,-0.251795591340087,-4.15898923631065
+Real GDP per capita,2050,-0.253928941220603,-4.41291817753125
+Real GDP per capita,2051,-0.256024713374764,-4.66894289090602
+Real GDP per capita,2052,-0.258083892006038,-4.92702678291206
+Real GDP per capita,2053,-0.26010742724499,-5.18713421015705
+Real GDP per capita,2054,-0.26209623661121,-5.44923044676826
+Real GDP per capita,2055,-0.264051206400626,-5.71328165316888
+Real GDP per capita,2056,-0.265973193003342,-5.97925484617222
+Real GDP per capita,2057,-0.267863024153141,-6.24711787032536
+Real GDP per capita,2058,-0.269721500116683,-6.51683937044205
+Real GDP per capita,2059,-0.271549394823809,-6.78838876526586
+Real GDP per capita,2060,-0.273347456941671,-7.06173622220753
+Real GDP per capita,2061,-0.275116410897529,-7.33685263310506
+Real GDP per capita,2062,-0.276856957851753,-7.61370959095681
+Real GDP per capita,2063,-0.278569776624177,-7.89227936758099
+Real GDP per capita,2064,-0.280255524577308,-8.1725348921583
+Real GDP per capita,2065,-0.281914838457851,-8.45444973061615
+Real GDP per capita,2066,-0.283548335196683,-8.73799806581283
+Relative government prices,2030,0,0
+Relative government prices,2031,0.0329080020491914,0.0329080020491914
+Relative government prices,2032,0.0328770423970159,0.0657850444462073
+Relative government prices,2033,0,0.0657850444462073
+Relative government prices,2034,0,0.0657850444462073
+Relative government prices,2035,0,0.0657850444462073
+Relative government prices,2036,0,0.0657850444462073
+Relative government prices,2037,0,0.0657850444462073
+Relative government prices,2038,0,0.0657850444462073
+Relative government prices,2039,0,0.0657850444462073
+Relative government prices,2040,0,0.0657850444462073
+Relative government prices,2041,0,0.0657850444462073
+Relative government prices,2042,0,0.0657850444462073
+Relative government prices,2043,0,0.0657850444462073
+Relative government prices,2044,0,0.0657850444462073
+Relative government prices,2045,0,0.0657850444462073
+Relative government prices,2046,0,0.0657850444462073
+Relative government prices,2047,0,0.0657850444462073
+Relative government prices,2048,0,0.0657850444462073
+Relative government prices,2049,0,0.0657850444462073
+Relative government prices,2050,0,0.0657850444462073
+Relative government prices,2051,0,0.0657850444462073
+Relative government prices,2052,0,0.0657850444462073
+Relative government prices,2053,0,0.0657850444462073
+Relative government prices,2054,0,0.0657850444462073
+Relative government prices,2055,0,0.0657850444462073
+Relative government prices,2056,0,0.0657850444462073
+Relative government prices,2057,0,0.0657850444462073
+Relative government prices,2058,0,0.0657850444462073
+Relative government prices,2059,0,0.0657850444462073
+Relative government prices,2060,0,0.0657850444462073
+Relative government prices,2061,0,0.0657850444462073
+Relative government prices,2062,0,0.0657850444462073
+Relative government prices,2063,0,0.0657850444462073
+Relative government prices,2064,0,0.0657850444462073
+Relative government prices,2065,0,0.0657850444462073
+Relative government prices,2066,0,0.0657850444462073
+Transitory macro bridge,2030,0,0
+Transitory macro bridge,2031,0,0
+Transitory macro bridge,2032,0,0
+Transitory macro bridge,2033,0,0
+Transitory macro bridge,2034,0,0
+Transitory macro bridge,2035,0,0
+Transitory macro bridge,2036,0,0
+Transitory macro bridge,2037,0,0
+Transitory macro bridge,2038,0,0
+Transitory macro bridge,2039,0,0
+Transitory macro bridge,2040,0,0
+Transitory macro bridge,2041,0,0
+Transitory macro bridge,2042,0,0
+Transitory macro bridge,2043,0,0
+Transitory macro bridge,2044,0,0
+Transitory macro bridge,2045,0,0
+Transitory macro bridge,2046,0,0
+Transitory macro bridge,2047,0,0
+Transitory macro bridge,2048,0,0
+Transitory macro bridge,2049,0,0
+Transitory macro bridge,2050,0,0
+Transitory macro bridge,2051,0,0
+Transitory macro bridge,2052,0,0
+Transitory macro bridge,2053,0,0
+Transitory macro bridge,2054,0,0
+Transitory macro bridge,2055,0,0
+Transitory macro bridge,2056,0,0
+Transitory macro bridge,2057,0,0
+Transitory macro bridge,2058,0,0
+Transitory macro bridge,2059,0,0
+Transitory macro bridge,2060,0,0
+Transitory macro bridge,2061,0,0
+Transitory macro bridge,2062,0,0
+Transitory macro bridge,2063,0,0
+Transitory macro bridge,2064,0,0
+Transitory macro bridge,2065,0,0
+Transitory macro bridge,2066,0,0

@@ -1,0 +1,193 @@
+year,primary_fiscal_pp,model,model_label,path_type,underlying_model,income_case,income_case_label
+2019,34.0792684143503,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2020,35.0930481601006,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2021,34.729861993155,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2022,33.5299356308699,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2023,33.5175094780269,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2024,35.3350659648415,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2025,36.7220588322163,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2026,37.3126628042106,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2027,38.1988793682404,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2028,39.4076502627363,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2029,40.0991999149038,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2030,40.5444880606221,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2031,41.2264087650491,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2032,41.8353431405878,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2033,42.3731152468137,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2034,42.8591168287861,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2035,43.2946478027346,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2036,43.7362236130418,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2037,43.8079439882469,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2038,43.8769757677478,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2039,43.9433719063368,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2040,44.0071838095489,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2041,44.0684613935121,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2042,44.1272531419354,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2043,44.1836061603968,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2044,44.2375662280846,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2045,44.2891778471315,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2046,44.3384842896788,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2047,44.3855276427872,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2048,44.4303488513228,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2049,44.4729877589158,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2050,44.5134831471007,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2051,44.551872772734,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2052,44.5881934037778,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2053,44.6224808535338,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2054,44.65477001341,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2055,44.6850948842948,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2056,44.7134886066026,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2057,44.73998348907,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2058,44.7646110363508,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2059,44.7874019754797,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2060,44.8083862812565,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2061,44.8275932005994,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2062,44.8450512759239,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2063,44.8607883675906,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2064,44.8748316754633,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2065,44.8872077596236,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2066,44.8979425602823,central_gdp,GDP PC model: 1.03% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,central_gdp,GDP PC model: 1.03% growth
+2019,34.0792684143503,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2020,35.0930481601006,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2021,34.729861993155,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2022,33.5299356308699,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2023,33.5175094780269,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2024,35.3350659648415,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2025,36.7220588322163,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2026,37.3451225382808,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2027,38.2639562170637,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2028,39.5054234903389,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2029,40.2297092979415,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2030,40.7077734726485,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2031,41.5129865231686,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2032,42.2452132448003,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2033,42.9062776971193,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2034,43.5155716251846,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2035,44.0743949452263,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2036,44.6392631016266,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2037,44.8342758229248,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2038,45.0265999485186,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2039,45.2162884332006,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2040,45.4033926825056,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2041,45.587962612562,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2042,45.7700467070784,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2043,45.9496920716327,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2044,46.1269444854134,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2045,46.3018484505535,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2046,46.4744472391937,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2047,46.6447829383953,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2048,46.8128964930239,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2049,46.9788277467099,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2050,47.1426154809879,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2051,47.3042974527141,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2052,47.463910429851,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2053,47.6214902257,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2054,47.7770717316693,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2055,47.9306889486471,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2056,48.0823750170479,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2057,48.2321622456084,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2058,48.3800821389822,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2059,48.5261654242042,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2060,48.670442076074,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2061,48.81294134151,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2062,48.9536917629274,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2063,49.0927212006871,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2064,49.2300568546529,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2065,49.3657252849063,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2066,49.4997524316579,midpoint_gdp,GDP PC model: 0.56% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,midpoint_gdp,GDP PC model: 0.56% growth
+2019,34.0792684143503,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2020,35.0930481601006,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2021,34.729861993155,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2022,33.5299356308699,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2023,33.5175094780269,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2024,35.3350659648415,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2025,36.7220588322163,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2026,37.3775822723511,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2027,38.329033065887,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2028,39.6031967179414,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2029,40.3602186809791,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2030,40.8710588846749,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2031,41.7995642812881,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2032,42.6550833490129,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2033,43.4394401474249,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2034,44.1720264215831,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2035,44.854142087718,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2036,45.5423025902113,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2037,45.8606076576026,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2038,46.1762241292893,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2039,46.4892049600644,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2040,46.7996015554623,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2041,47.1074638316119,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2042,47.4128402722214,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2043,47.7157779828686,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2044,48.0163227427423,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2045,48.3145190539755,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2046,48.6104101887087,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2047,48.9040382340033,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2048,49.195444134725,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2049,49.484667734504,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2050,49.7717478148751,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2051,50.0567221326942,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2052,50.3396274559242,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2053,50.6204995978662,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2054,50.8993734499285,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2055,51.1762830129995,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2056,51.4512614274932,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2057,51.7243410021467,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2058,51.9955532416136,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2059,52.2649288729286,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2060,52.5324978708915,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2061,52.7982894824206,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2062,53.0623322499309,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2063,53.3246540337837,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2064,53.5852820338425,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2065,53.8442428101889,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2066,54.1015623030335,pressure_gdp,GDP PC model: 0.10% growth,FY2018-19 actual; deterministic structural changes thereafter,with_income,pressure_gdp,GDP PC model: 0.10% growth
+2019,34.0792684143503,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2020,33.8169203699233,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2021,32.8038955396154,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2022,31.2279544587353,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2023,30.7946864682916,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2024,31.5528791083626,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2025,31.851078519628,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2026,31.8106567968234,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2027,31.7303662169343,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2028,31.6553090440621,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2029,31.5886323330491,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2030,31.5364092042264,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2031,31.5069134676097,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2032,31.46645428348,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2033,31.3782406539517,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2034,31.2680486530611,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2035,31.1497002921253,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2036,30.9946584274888,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2037,30.9097651071219,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2038,30.824871786755,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2039,30.7399784663881,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2040,30.6550851460213,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2041,30.5701918256544,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2042,30.4852985052875,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2043,30.4004051849206,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2044,30.3155118645537,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2045,30.2306185441869,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2046,30.14572522382,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2047,30.0608319034531,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2048,29.9759385830863,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2049,29.8910452627193,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2050,29.8061519423524,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2051,29.7212586219856,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2052,29.6363653016187,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2053,29.5514719812518,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2054,29.466578660885,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2055,29.3816853405181,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2056,29.2967920201512,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2057,29.2118986997843,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2058,29.1270053794174,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2059,29.0421120590506,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2060,28.9572187386837,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2061,28.8723254183168,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2062,28.78743209795,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2063,28.702538777583,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2064,28.6176454572161,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2065,28.5327521368493,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC
+2066,28.4478588164824,no_income,Model excluding GDP PC,FY2018-19 actual; deterministic structural changes thereafter,no_income,no_income,Model excluding GDP PC

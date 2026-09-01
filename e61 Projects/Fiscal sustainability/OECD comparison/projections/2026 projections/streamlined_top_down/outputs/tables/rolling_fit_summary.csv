@@ -1,0 +1,5 @@
+model,model_label,observations,average_mae_pp,average_rmse_pp,rmse_1y_pp,rmse_5y_pp
+with_income,Structural-change model with real GDP per capita,80,1.77649522058923,2.50393652114764,2.08851247111485,2.78823097822149
+no_income,Sensitivity: omit real GDP per capita,80,2.71097969945857,3.92544106205657,2.67864181808417,4.91494485209284
+structural_only,Sensitivity: omit transitory macro factors,80,1.86881524974531,2.519640470912,2.03447763423762,2.87473267591192
+arima_benchmark,Statistical ARIMA benchmark,80,1.57828774328552,2.51593712536541,2.37506144294788,2.53596978656551

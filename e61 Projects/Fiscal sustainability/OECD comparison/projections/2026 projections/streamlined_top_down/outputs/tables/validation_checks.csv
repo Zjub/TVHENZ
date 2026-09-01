@@ -1,0 +1,11 @@
+check,passed,detail,required_for_output
+GDP-PC model driver decomposition reconciles,TRUE,Gap = -2.842171e-14,TRUE
+Latest-actual driver decomposition reconciles,TRUE,Gap = 7.105427e-14,TRUE
+FY2018-19 driver decomposition reconciles,TRUE,Gap = 3.552714e-14,TRUE
+All reported primary paths are finite,TRUE,524 model-year rows across three spending anchors,TRUE
+All projected debt paths are finite,TRUE,328 model-year rows,TRUE
+GDP-PC model long-run transitory contribution is zero,TRUE,2066 contribution = 0,TRUE
+Income-model maximum VIF is below 10,TRUE,Maximum VIF = 4.41,FALSE
+Income-model residuals pass Ljung-Box at 5%,FALSE,p = 0.046,FALSE
+Residual-dynamics alternatives include a white-noise specification,TRUE,"Fixed ARMA(0,0), Fixed AR(1), Fixed MA(1), Fixed ARMA(1,1); endpoint range = 38.18-40.01%",FALSE
+Every rolling model has the expected observations,TRUE,Observations per model = 80,TRUE

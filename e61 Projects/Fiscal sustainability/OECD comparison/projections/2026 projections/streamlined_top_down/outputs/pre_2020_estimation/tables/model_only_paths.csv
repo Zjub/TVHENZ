@@ -1,0 +1,165 @@
+year,predicted_change_pp,primary_fiscal_pp,model,model_label,path_type
+2026,0.131303696811938,36.5667081032001,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2027,0.820791894676633,37.3874999978768,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2028,1.01572720009762,38.4032271979744,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2029,0.425905862528485,38.8291330605029,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2030,0.161489686844131,38.990622747347,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2031,0.37516691740609,39.3657896647531,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2032,0.274872198239768,39.6406618629929,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2033,0.51041618880684,40.1510780517997,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2034,0.486001581972423,40.6370796337721,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2035,0.435530973948488,41.0726106077206,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2036,0.441575810307181,41.5141864180278,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2037,0.0717203752051341,41.5859067932329,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2038,0.0690317795008973,41.6549385727338,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2039,0.0663961385889238,41.7213347113228,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2040,0.0638119032121174,41.7851466145349,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2041,0.0612775839632025,41.8464241984981,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2042,0.0587917484233135,41.9052159469214,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2043,0.0563530184614283,41.9615689653828,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2044,0.0539600676877834,42.0155290330706,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2045,0.0516116190468398,42.0671406521174,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2046,0.049306442547322,42.1164470946648,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2047,0.0470433531084669,42.1634904477732,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2048,0.0448212085355738,42.2083116563088,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2049,0.0426389075929418,42.2509505639017,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2050,0.0404953881849646,42.2914459520867,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2051,0.0383896256332852,42.32983557772,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2052,0.0363206310438377,42.3661562087638,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2053,0.034287449755933,42.4004436585198,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2054,0.0322891598761957,42.432732818396,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2055,0.0303248708847965,42.4630576892808,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2056,0.0283937223078388,42.4914514115886,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2057,0.0264948824674254,42.517946294056,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2058,0.0246275472807787,42.5425738413368,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2059,0.0227909391289107,42.5653647804657,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2060,0.0209843057767944,42.5863490862425,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2061,0.0192069193428991,42.6055560055854,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2062,0.017458075324467,42.6230140809099,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2063,0.0157370916666841,42.6387511725766,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2064,0.0140433078727356,42.6527944804493,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2065,0.0123760841602765,42.6651705646096,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2066,0.0107348006586893,42.6759053652683,with_income,Structural-change model with real GDP per capita,Conditional model-only projection from latest actual
+2026,-0.464789303952835,35.9706151024354,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2027,-0.472366445487153,35.4982486569482,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2028,-0.154415247377698,35.3438334095705,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2029,-0.249372777923445,35.0944606316471,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2030,-0.231410232276284,34.8630503993708,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2031,-0.222717626181457,34.6403327731893,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2032,-0.250584243390046,34.3897485297993,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2033,0.0993774234841378,34.4891259532834,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2034,-0.11019200089059,34.3789339523928,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2035,-0.118348360935794,34.260585591457,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2036,-0.155041864636554,34.1055437268205,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2037,-0.0848933203668224,34.0206504064537,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2038,-0.0848933203669026,33.9357570860868,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2039,-0.0848933203669016,33.8508637657199,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2040,-0.0848933203668224,33.765970445353,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2041,-0.084893320366904,33.6810771249861,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2042,-0.0848933203669581,33.5961838046192,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2043,-0.0848933203668239,33.5112904842524,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2044,-0.0848933203669045,33.4263971638855,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2045,-0.0848933203668224,33.3415038435186,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2046,-0.0848933203669026,33.2566105231517,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2047,-0.0848933203669026,33.1717172027848,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2048,-0.0848933203668239,33.086823882418,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2049,-0.0848933203669582,33.001930562051,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2050,-0.0848933203669026,32.9170372416841,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2051,-0.0848933203667903,32.8321439213173,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2052,-0.0848933203669026,32.7472506009504,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2053,-0.0848933203669045,32.6623572805835,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2054,-0.0848933203668239,32.5774639602167,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2055,-0.0848933203669026,32.4925706398498,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2056,-0.084893320366878,32.4076773194829,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2057,-0.0848933203669026,32.322783999116,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2058,-0.0848933203669026,32.2378906787491,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2059,-0.0848933203668253,32.1529973583823,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2060,-0.0848933203669012,32.0681040380154,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2061,-0.0848933203669026,31.9832107176485,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2062,-0.0848933203668244,31.8983173972817,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2063,-0.0848933203669567,31.8134240769147,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2064,-0.0848933203669054,31.7285307565478,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2065,-0.0848933203668224,31.643637436181,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2066,-0.084893320366904,31.5587441158141,no_income,Sensitivity: omit real GDP per capita,Conditional model-only projection from latest actual
+2026,0.638380733190015,37.0737851395782,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2027,1.26745330584262,38.3412384454208,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2028,1.4871829734072,39.828421418828,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2029,0.826196058641871,40.6546174774699,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2030,0.463685886944313,41.1183033644142,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2031,0.72215941012634,41.8404627745406,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2032,0.609215475934235,42.4496782504748,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2033,0.525292136933351,42.9749703874081,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2034,0.48035000784334,43.4553203952515,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2035,0.413540071603463,43.8688604668549,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2036,0.448102969882489,44.3169634367374,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2037,0.0813154543457573,44.3982788910832,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2038,0.0779943041028838,44.4762731951861,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2039,0.0747385674962309,44.5510117626823,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2040,0.0715463307700056,44.6225580934523,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2041,0.0684157540991457,44.6909738475515,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2042,0.0653450680551319,44.7563189156066,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2043,0.0623325702697338,44.8186514858763,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2044,0.0593766222889443,44.8780281081653,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2045,0.0564756466005315,44.9345037547658,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2046,0.0536281238290003,44.9881318785948,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2047,0.0508325900759954,45.0389644686708,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2048,0.0480876344190119,45.0870521030898,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2049,0.045391896530889,45.1324439996207,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2050,0.0427440644336378,45.1751880640543,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2051,0.0401428723694167,45.2153309364238,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2052,0.0375870987838365,45.2529180352076,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2053,0.035075564410191,45.2879935996178,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2054,0.0326071304583346,45.3206007300761,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2055,0.0301806968928035,45.3507814269689,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2056,0.0277952007934428,45.3785766277624,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2057,0.0254496148106977,45.4040262425731,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2058,0.0231429456827307,45.4271691882558,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2059,0.0208742328376642,45.4480434210934,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2060,0.0186425470595619,45.466685968153,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2061,0.0164469892160354,45.4831329573691,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2062,0.0142866890536969,45.4974196464228,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2063,0.0121608040483192,45.5095804504711,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2064,0.0100685183061359,45.5196489687772,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2065,0.00800904152106535,45.5276580102983,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2066,0.0059816079834063,45.5336396182817,structural_only,Sensitivity: omit transitory macro factors,Conditional model-only projection from latest actual
+2026,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2027,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2028,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2029,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2030,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2031,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2032,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2033,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2034,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2035,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2036,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2037,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2038,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2039,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2040,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2041,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2042,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2043,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2044,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2045,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2046,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2047,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2048,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2049,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2050,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2051,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2052,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2053,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2054,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2055,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2056,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2057,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2058,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2059,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2060,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2061,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2062,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2063,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2064,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2065,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual
+2066,0,36.4354044063882,arima_benchmark,Statistical ARIMA benchmark,Conditional model-only projection from latest actual

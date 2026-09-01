@@ -1,0 +1,8 @@
+criterion,result,assessment
+No I(2) variables,No I(2) warning; No I(2) warning; No I(2) warning,Pass
+Bounds F test,"F=2.298, exact p=0.438",Fail
+Bounds t test,"t=-1.560, exact p=0.675",Fail
+Augmented independent-level F test,"F=1.557, p=0.225",Concern
+Adjustment coefficient,"lambda=-0.152, p=0.128",Concern
+Residual and stability checks,1 of 4 tests reject at 5%,Pass
+Overall ECM suitability,Cointegration is not established; do not use the ECM as the primary projection,Do not select as primary model

@@ -1,0 +1,23 @@
+model,model_label,term,group,estimate,standard_error,p_value,lower_95,upper_95
+with_income,Structural-change model with real GDP per capita,d_age_0_14_pp,Age composition,-0.950621137858415,0.440521653116138,0.030932171930256,-1.81402771237609,-0.0872145633407379
+with_income,Structural-change model with real GDP per capita,d_age_65_74_pp,Age composition,-0.649359523267592,0.338670470492857,0.0551898469099739,-1.31314144806083,0.0144224015256428
+with_income,Structural-change model with real GDP per capita,d_age_75p_pp,Age composition,3.32672349716365,1.13285926706199,0.00331861117630471,1.1063601341697,5.54708686015759
+with_income,Structural-change model with real GDP per capita,d_log_relative_price,Relative government prices,37.9153372577133,7.55594123986249,5.22256953824779e-07,23.1059645582819,52.7247099571447
+with_income,Structural-change model with real GDP per capita,d_log_real_gdp_per_capita,Real GDP per capita,-26.9091064925505,4.41216984892334,1.06842681179483e-09,-35.5568004901137,-18.2614124949872
+with_income,Structural-change model with real GDP per capita,d_unemployment,Transitory macro bridge,0.377758843031688,0.128551378843947,0.00329716803458127,0.125802770334587,0.629714915728789
+with_income,Structural-change model with real GDP per capita,d_unemployment_l1,Transitory macro bridge,-0.00941575035755593,0.115092671575897,0.934797673323749,-0.23499324153081,0.216161740815698
+with_income,Structural-change model with real GDP per capita,d_log_terms_of_trade,Transitory macro bridge,3.04497552903334,1.27680349986339,0.0170864246347028,0.542486653966395,5.54746440410028
+with_income,Structural-change model with real GDP per capita,d_log_terms_of_trade_l1,Transitory macro bridge,0.291935026419882,1.60750397738254,0.855890641576954,-2.85871487425479,3.44258492709456
+no_income,Sensitivity: omit real GDP per capita,d_age_0_14_pp,Age composition,-0.558314558790474,0.459032368364544,0.223876062778498,-1.4580014685231,0.341372350942154
+no_income,Sensitivity: omit real GDP per capita,d_age_65_74_pp,Age composition,-0.821383871189369,0.340324295718674,0.0157987031713231,-1.48840723386193,-0.154360508516809
+no_income,Sensitivity: omit real GDP per capita,d_age_75p_pp,Age composition,-0.791578634749221,0.870063629904918,0.36293118087442,-2.49687201362105,0.913714744122605
+no_income,Sensitivity: omit real GDP per capita,d_log_relative_price,Relative government prices,35.8406878183718,8.62989324455102,3.28021556050093e-05,18.9264078686262,52.7549677681173
+no_income,Sensitivity: omit real GDP per capita,d_unemployment,Transitory macro bridge,0.689695014526685,0.132286714847485,1.85172877068522e-07,0.430417817792495,0.948972211260875
+no_income,Sensitivity: omit real GDP per capita,d_unemployment_l1,Transitory macro bridge,-0.102297869181295,0.135834958224312,0.451387337762189,-0.368529495142449,0.16393375677986
+no_income,Sensitivity: omit real GDP per capita,d_log_terms_of_trade,Transitory macro bridge,3.64402468378435,1.65667039042637,0.0278347516946902,0.397010384294757,6.89103898327395
+no_income,Sensitivity: omit real GDP per capita,d_log_terms_of_trade_l1,Transitory macro bridge,-1.91439060359244,1.76421297292328,0.277866546787602,-5.37218449158041,1.54340328439554
+structural_only,Sensitivity: omit transitory macro factors,d_age_0_14_pp,Age composition,-1.48910358933047,0.370215533760567,5.76420754216584e-05,-2.21471270201845,-0.763494476642485
+structural_only,Sensitivity: omit transitory macro factors,d_age_65_74_pp,Age composition,-0.0134101339740023,0.318435917020427,0.966409011901593,-0.637533062718025,0.61071279477002
+structural_only,Sensitivity: omit transitory macro factors,d_age_75p_pp,Age composition,3.55844885767014,0.80511291096176,9.87861488799139e-06,1.98045654869689,5.13644116664339
+structural_only,Sensitivity: omit transitory macro factors,d_log_relative_price,Relative government prices,36.4206201071997,5.24346070999757,3.76021372672644e-12,26.1436259612537,46.6976142531458
+structural_only,Sensitivity: omit transitory macro factors,d_log_real_gdp_per_capita,Real GDP per capita,-33.2400983237871,2.81237205840068,3.1048320514959e-32,-38.7522462693792,-27.727950378195

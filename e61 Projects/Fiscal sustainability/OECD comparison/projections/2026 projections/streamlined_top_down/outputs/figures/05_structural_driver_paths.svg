@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='648.00pt' height='396.00pt' viewBox='0 0 648.00 396.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw2NDguMDB8MC4wMHwzOTYuMDA='>
+    <rect x='0.00' y='0.00' width='648.00' height='396.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHwzOTYuMDA=)'>
+<rect x='0.00' y='0.00' width='648.00' height='396.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMzguMDJ8NjQyLjUyfDM4Ljg1fDMzOC4yNA=='>
+    <rect x='38.02' y='38.85' width='604.50' height='299.39' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMzguMDJ8NjQyLjUyfDM4Ljg1fDMzOC4yNA==)'>
+<polyline points='38.02,311.79 642.52,311.79 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='38.02,244.57 642.52,244.57 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='38.02,177.35 642.52,177.35 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='38.02,110.13 642.52,110.13 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='38.02,42.91 642.52,42.91 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='65.50,338.24 65.50,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='218.15,338.24 218.15,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='370.80,338.24 370.80,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='523.45,338.24 523.45,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<line x1='38.02' y1='311.79' x2='642.52' y2='311.79' style='stroke-width: 1.07; stroke: #B3B3B3; stroke-linecap: butt;' />
+<polyline points='65.50,311.79 80.76,307.49 96.03,303.19 111.29,298.75 126.56,294.15 141.82,289.38 157.09,284.46 172.35,278.62 187.62,272.65 202.88,266.57 218.15,260.36 233.41,254.03 248.68,247.58 263.94,241.00 279.21,234.30 294.47,227.47 309.74,220.51 325.00,213.42 340.27,206.21 355.53,198.86 370.80,191.38 386.06,183.77 401.33,176.02 416.60,168.13 431.86,160.11 447.13,151.95 462.39,143.64 477.66,135.19 492.92,126.60 508.19,117.86 523.45,108.98 538.72,99.94 553.98,90.76 569.25,81.42 584.51,71.92 599.78,62.27 615.04,52.46 ' style='stroke-width: 2.13; stroke: #0072B2; stroke-linecap: butt;' />
+<polyline points='65.50,311.79 80.76,310.58 96.03,309.40 111.29,308.11 126.56,306.67 141.82,305.12 157.09,303.43 172.35,300.88 187.62,298.26 202.88,295.55 218.15,292.77 233.41,289.91 248.68,286.97 263.94,283.96 279.21,280.88 294.47,277.72 309.74,274.48 325.00,271.17 340.27,267.78 355.53,264.32 370.80,260.79 386.06,257.18 401.33,253.49 416.60,249.74 431.86,245.90 447.13,242.00 462.39,238.02 477.66,233.96 492.92,229.84 508.19,225.63 523.45,221.35 538.72,217.00 553.98,212.57 569.25,208.07 584.51,203.49 599.78,198.84 615.04,194.11 ' style='stroke-width: 2.13; stroke: #009E73; stroke-linecap: butt;' />
+<polyline points='65.50,311.79 80.76,313.66 96.03,315.55 111.29,317.33 126.56,318.97 141.82,320.49 157.09,321.89 172.35,322.45 187.62,322.94 202.88,323.36 218.15,323.72 233.41,324.02 248.68,324.26 263.94,324.44 279.21,324.56 294.47,324.63 309.74,324.63 325.00,324.58 340.27,324.48 355.53,324.32 370.80,324.11 386.06,323.85 401.33,323.54 416.60,323.18 431.86,322.76 447.13,322.30 462.39,321.80 477.66,321.24 492.92,320.64 508.19,319.99 523.45,319.30 538.72,318.56 553.98,317.78 569.25,316.95 584.51,316.09 599.78,315.17 615.04,314.22 ' style='stroke-width: 2.13; stroke: #D55E00; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHwzOTYuMDA=)'>
+<text x='33.09' y='314.94' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='14.67px' lengthAdjust='spacingAndGlyphs'>100</text>
+<text x='33.09' y='247.72' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='14.02px' lengthAdjust='spacingAndGlyphs'>110</text>
+<text x='33.09' y='180.50' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='14.67px' lengthAdjust='spacingAndGlyphs'>120</text>
+<text x='33.09' y='113.28' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='14.67px' lengthAdjust='spacingAndGlyphs'>130</text>
+<text x='33.09' y='46.06' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='14.67px' lengthAdjust='spacingAndGlyphs'>140</text>
+<text x='65.50' y='349.47' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2030</text>
+<text x='218.15' y='349.47' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2040</text>
+<text x='370.80' y='349.47' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2050</text>
+<text x='523.45' y='349.47' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2060</text>
+<text transform='translate(13.36,188.55) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='130.11px' lengthAdjust='spacingAndGlyphs'>Real GDP per capita index</text>
+<line x1='124.44' y1='376.40' x2='138.27' y2='376.40' style='stroke-width: 2.13; stroke: #0072B2; stroke-linecap: butt;' />
+<line x1='271.30' y1='376.40' x2='285.13' y2='376.40' style='stroke-width: 2.13; stroke: #009E73; stroke-linecap: butt;' />
+<line x1='418.17' y1='376.40' x2='431.99' y2='376.40' style='stroke-width: 2.13; stroke: #D55E00; stroke-linecap: butt;' />
+<text x='145.47' y='379.55' style='font-size: 8.80px; font-family: "Arial";' textLength='118.62px' lengthAdjust='spacingAndGlyphs'>GDP PC model: 1.03% growth</text>
+<text x='292.34' y='379.55' style='font-size: 8.80px; font-family: "Arial";' textLength='118.62px' lengthAdjust='spacingAndGlyphs'>GDP PC model: 0.56% growth</text>
+<text x='439.20' y='379.55' style='font-size: 8.80px; font-family: "Arial";' textLength='118.62px' lengthAdjust='spacingAndGlyphs'>GDP PC model: 0.10% growth</text>
+<text x='5.48' y='31.05' style='font-size: 11.00px; font-family: "Arial";' textLength='311.80px' lengthAdjust='spacingAndGlyphs'>Index: FY2029-30 = 100; the middle path is halfway in log levels</text>
+<text x='5.48' y='14.93' style='font-size: 13.20px; font-family: "Arial";' textLength='323.58px' lengthAdjust='spacingAndGlyphs'>Real GDP per capita paths used in the sensitivity cases</text>
+</g>
+</g>
+</svg>

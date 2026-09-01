@@ -254,7 +254,8 @@ extract_abs_age_shares <- function(pop_raw) {
     age <= 34, "15_34",
     age <= 54, "35_54",
     age <= 64, "55_64",
-    default = "65p"
+    age <= 74, "65_74",
+    default = "75p"
   )]
   grouped <- x[, .(population = sum(as.numeric(value), na.rm = TRUE)),
                by = .(year = as.integer(format(date, "%Y")), age_group)]
@@ -262,7 +263,11 @@ extract_abs_age_shares <- function(pop_raw) {
   grouped <- merge(grouped, totals, by = "year")
   grouped[, share := population / pop_total]
   wide <- dcast(grouped, year + pop_total ~ age_group, value.var = "share")
-  setcolorder(wide, c("year", "pop_total", "0_14", "15_34", "35_54", "55_64", "65p"))
+  wide[, `65p` := `65_74` + `75p`]
+  setcolorder(wide, c(
+    "year", "pop_total", "0_14", "15_34", "35_54", "55_64",
+    "65_74", "75p", "65p"
+  ))
   wide[order(year)]
 }
 
@@ -340,13 +345,15 @@ parse_population_projection <- function(path) {
   x <- x[!is.na(year) & !is.na(age) & !is.na(population)]
   x[, age_group := fcase(
     age <= 14, "0_14", age <= 34, "15_34", age <= 54, "35_54",
-    age <= 64, "55_64", default = "65p"
+    age <= 64, "55_64", age <= 74, "65_74", default = "75p"
   )]
   grouped <- x[, .(population = sum(population)), by = .(year, age_group)]
   totals <- grouped[, .(pop_total = sum(population)), by = year]
   grouped <- merge(grouped, totals, by = "year")
   grouped[, share := population / pop_total]
-  dcast(grouped, year + pop_total ~ age_group, value.var = "share")[order(year)]
+  out <- dcast(grouped, year + pop_total ~ age_group, value.var = "share")
+  out[, `65p` := `65_74` + `75p`]
+  out[order(year)]
 }
 
 interpolate_projection <- function(dt, years) {

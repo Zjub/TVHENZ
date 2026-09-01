@@ -1,0 +1,9 @@
+model,model_label,anchor_type,anchor_label,primary_fiscal_expenditure_2066_pp,public_debt_interest_2066_pp,total_fiscal_expenditure_2066_pp,net_debt_2066_pp,gross_debt_2066_pp
+central_gdp,GDP PC model: 1.03% growth,pbo,PBO forecast through 2029-30,39.2534544996602,6.26917113953833,45.5226256391985,130.509918169632,152.009918169632
+midpoint_gdp,GDP PC model: 0.56% growth,pbo,PBO forecast through 2029-30,43.6919789590094,10.3102902910329,54.0022692500423,230.738605219334,252.238605219334
+pressure_gdp,GDP PC model: 0.10% growth,pbo,PBO forecast through 2029-30,48.1305034183586,14.8513133820915,62.9818168004501,342.828215068086,364.328215068086
+no_income,Model excluding GDP PC,pbo,PBO forecast through 2029-30,31.8114496122559,0,31.8114496122559,-51.7085097987448,0
+central_gdp,GDP PC model: 1.03% growth,actual,Latest National Accounts actual (2024-25),44.6112881344542,14.4865208188243,59.0978089532785,330.843048740212,352.343048740212
+midpoint_gdp,GDP PC model: 0.56% growth,actual,Latest National Accounts actual (2024-25),49.2130980058298,19.5671916962944,68.7802897021242,455.900748518268,477.400748518268
+pressure_gdp,GDP PC model: 0.10% growth,actual,Latest National Accounts actual (2024-25),53.8149078772054,25.2965932282263,79.1115011054317,596.350623148858,617.850623148858
+no_income,Model excluding GDP PC,actual,Latest National Accounts actual (2024-25),33.0321847032426,0.260842637311604,33.2930273405542,-18.2726006341649,3.22739936583513

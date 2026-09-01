@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='648.00pt' height='396.00pt' viewBox='0 0 648.00 396.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw2NDguMDB8MC4wMHwzOTYuMDA='>
+    <rect x='0.00' y='0.00' width='648.00' height='396.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHwzOTYuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='648.00' height='396.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMzMuMTN8NjQyLjUyfDM4Ljg1fDMxNS40OA=='>
+    <rect x='33.13' y='38.85' width='609.39' height='276.63' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMzMuMTN8NjQyLjUyfDM4Ljg1fDMxNS40OA==)'>
+<polyline points='33.13,261.17 642.52,261.17 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='33.13,205.35 642.52,205.35 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='33.13,149.52 642.52,149.52 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='33.13,93.70 642.52,93.70 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='60.83,315.48 60.83,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='214.71,315.48 214.71,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='368.60,315.48 368.60,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='522.49,315.48 522.49,38.85 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<line x1='33.13' y1='205.35' x2='642.52' y2='205.35' style='stroke-width: 1.07; stroke: #A6A6A6; stroke-linecap: butt;' />
+<polyline points='60.83,205.35 76.22,195.93 91.60,187.27 106.99,178.93 122.38,171.08 137.77,163.72 153.16,156.20 168.55,152.70 183.94,149.21 199.33,145.72 214.71,142.23 230.10,138.73 245.49,135.24 260.88,131.75 276.27,128.26 291.66,124.77 307.05,121.27 322.44,117.78 337.82,114.29 353.21,110.80 368.60,107.30 383.99,103.81 399.38,100.32 414.77,96.83 430.16,93.33 445.54,89.84 460.93,86.35 476.32,82.86 491.71,79.36 507.10,75.87 522.49,72.38 537.88,68.89 553.27,65.40 568.65,61.90 584.04,58.41 599.43,54.92 614.82,51.43 ' style='stroke-width: 2.13; stroke: #0072B2; stroke-linecap: butt;' />
+<polyline points='60.83,205.35 76.22,205.35 91.60,205.35 106.99,205.35 122.38,205.35 137.77,205.35 153.16,205.35 168.55,205.35 183.94,205.35 199.33,205.35 214.71,205.35 230.10,205.35 245.49,205.35 260.88,205.35 276.27,205.35 291.66,205.35 307.05,205.35 322.44,205.35 337.82,205.35 353.21,205.35 368.60,205.35 383.99,205.35 399.38,205.35 414.77,205.35 430.16,205.35 445.54,205.35 460.93,205.35 476.32,205.35 491.71,205.35 507.10,205.35 522.49,205.35 537.88,205.35 553.27,205.35 568.65,205.35 584.04,205.35 599.43,205.35 614.82,205.35 ' style='stroke-width: 2.13; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='60.83,205.35 76.22,207.26 91.60,209.15 106.99,211.09 122.38,213.10 137.77,215.15 153.16,217.26 168.55,219.75 183.94,222.27 199.33,224.82 214.71,227.39 230.10,230.00 245.49,232.63 260.88,235.29 276.27,237.97 291.66,240.69 307.05,243.42 322.44,246.18 337.82,248.97 353.21,251.78 368.60,254.62 383.99,257.48 399.38,260.36 414.77,263.26 430.16,266.19 445.54,269.14 460.93,272.11 476.32,275.10 491.71,278.11 507.10,281.14 522.49,284.19 537.88,287.26 553.27,290.35 568.65,293.46 584.04,296.59 599.43,299.74 614.82,302.91 ' style='stroke-width: 2.13; stroke: #009E73; stroke-linecap: butt;' />
+<polyline points='60.83,205.35 76.22,204.98 91.60,204.61 106.99,204.61 122.38,204.61 137.77,204.61 153.16,204.61 168.55,204.61 183.94,204.61 199.33,204.61 214.71,204.61 230.10,204.61 245.49,204.61 260.88,204.61 276.27,204.61 291.66,204.61 307.05,204.61 322.44,204.61 337.82,204.61 353.21,204.61 368.60,204.61 383.99,204.61 399.38,204.61 414.77,204.61 430.16,204.61 445.54,204.61 460.93,204.61 476.32,204.61 491.71,204.61 507.10,204.61 522.49,204.61 537.88,204.61 553.27,204.61 568.65,204.61 584.04,204.61 599.43,204.61 614.82,204.61 ' style='stroke-width: 2.13; stroke: #D55E00; stroke-linecap: butt;' />
+<polyline points='60.83,205.35 76.22,205.35 91.60,205.35 106.99,205.35 122.38,205.35 137.77,205.35 153.16,205.35 168.55,205.35 183.94,205.35 199.33,205.35 214.71,205.35 230.10,205.35 245.49,205.35 260.88,205.35 276.27,205.35 291.66,205.35 307.05,205.35 322.44,205.35 337.82,205.35 353.21,205.35 368.60,205.35 383.99,205.35 399.38,205.35 414.77,205.35 430.16,205.35 445.54,205.35 460.93,205.35 476.32,205.35 491.71,205.35 507.10,205.35 522.49,205.35 537.88,205.35 553.27,205.35 568.65,205.35 584.04,205.35 599.43,205.35 614.82,205.35 ' style='stroke-width: 2.13; stroke: #CC79A7; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHwzOTYuMDA=)'>
+<text x='28.20' y='264.32' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='7.81px' lengthAdjust='spacingAndGlyphs'>-5</text>
+<text x='28.20' y='208.50' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='28.20' y='152.67' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>5</text>
+<text x='28.20' y='96.85' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>10</text>
+<text x='60.83' y='326.71' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2030</text>
+<text x='214.71' y='326.71' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2040</text>
+<text x='368.60' y='326.71' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2050</text>
+<text x='522.49' y='326.71' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>2060</text>
+<text transform='translate(13.36,177.17) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='230.72px' lengthAdjust='spacingAndGlyphs'>Percentage-point contribution to spending/GDP</text>
+<line x1='160.14' y1='353.64' x2='173.97' y2='353.64' style='stroke-width: 2.13; stroke: #0072B2; stroke-linecap: butt;' />
+<line x1='294.95' y1='353.64' x2='308.77' y2='353.64' style='stroke-width: 2.13; stroke: #777777; stroke-linecap: butt;' />
+<line x1='415.70' y1='353.64' x2='429.52' y2='353.64' style='stroke-width: 2.13; stroke: #009E73; stroke-linecap: butt;' />
+<line x1='160.14' y1='376.40' x2='173.97' y2='376.40' style='stroke-width: 2.13; stroke: #D55E00; stroke-linecap: butt;' />
+<line x1='294.95' y1='376.40' x2='308.77' y2='376.40' style='stroke-width: 2.13; stroke: #CC79A7; stroke-linecap: butt;' />
+<text x='181.18' y='356.79' style='font-size: 8.80px; font-family: "Arial";' textLength='65.03px' lengthAdjust='spacingAndGlyphs'>Age composition</text>
+<text x='315.98' y='356.79' style='font-size: 8.80px; font-family: "Arial";' textLength='80.17px' lengthAdjust='spacingAndGlyphs'>COVID interventions</text>
+<text x='436.73' y='356.79' style='font-size: 8.80px; font-family: "Arial";' textLength='80.50px' lengthAdjust='spacingAndGlyphs'>Real GDP per capita</text>
+<text x='181.18' y='379.55' style='font-size: 8.80px; font-family: "Arial";' textLength='106.56px' lengthAdjust='spacingAndGlyphs'>Relative government prices</text>
+<text x='315.98' y='379.55' style='font-size: 8.80px; font-family: "Arial";' textLength='92.52px' lengthAdjust='spacingAndGlyphs'>Transitory macro bridge</text>
+<text x='5.48' y='31.05' style='font-size: 11.00px; font-family: "Arial";' textLength='304.72px' lengthAdjust='spacingAndGlyphs'>Cumulative contribution relative to the FY2029-30 PBO anchor</text>
+<text x='5.48' y='14.93' style='font-size: 13.20px; font-family: "Arial";' textLength='390.22px' lengthAdjust='spacingAndGlyphs'>Structural driver contributions under GDP PC model: 1.03% growth</text>
+</g>
+</g>
+</svg>

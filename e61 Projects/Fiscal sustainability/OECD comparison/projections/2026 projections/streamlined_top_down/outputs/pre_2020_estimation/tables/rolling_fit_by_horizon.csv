@@ -1,0 +1,21 @@
+model,model_label,horizon,observations,mean_error_pp,mae_pp,rmse_pp
+with_income,Structural-change model with real GDP per capita,1,10,-0.103315860004383,0.704873785011919,0.937808608896339
+with_income,Structural-change model with real GDP per capita,2,10,-0.158725001472241,1.09121522665084,1.32607324354319
+with_income,Structural-change model with real GDP per capita,3,10,-0.265335861718421,1.34580022690597,1.54896340228063
+with_income,Structural-change model with real GDP per capita,4,10,-0.296541353769634,1.59630933785797,1.91395287280327
+with_income,Structural-change model with real GDP per capita,5,10,-0.117872504359193,1.54001819787276,1.87539899310615
+no_income,Sensitivity: omit real GDP per capita,1,10,0.0115858559020431,0.513555635053108,0.784922365483661
+no_income,Sensitivity: omit real GDP per capita,2,10,-0.0716425441335595,0.839982833317848,1.0382488018644
+no_income,Sensitivity: omit real GDP per capita,3,10,-0.233895835597863,1.21092682191125,1.29752078006054
+no_income,Sensitivity: omit real GDP per capita,4,10,-0.436123504255602,1.54672373515665,1.65574058532437
+no_income,Sensitivity: omit real GDP per capita,5,10,-0.487859337753132,1.58091742501493,1.72705902383587
+structural_only,Sensitivity: omit transitory macro factors,1,10,0.207513903072113,0.81224308131934,1.00208495576186
+structural_only,Sensitivity: omit transitory macro factors,2,10,0.538062299037357,1.37787301919983,1.58489236359886
+structural_only,Sensitivity: omit transitory macro factors,3,10,0.795901327912195,1.77692602670328,2.0222931208303
+structural_only,Sensitivity: omit transitory macro factors,4,10,1.09642515452221,2.1462313498423,2.58869352546651
+structural_only,Sensitivity: omit transitory macro factors,5,10,1.64595188938462,2.26147826775186,2.84554536221228
+arima_benchmark,Statistical ARIMA benchmark,1,10,-0.074901886851017,0.543056757198153,0.791695150935867
+arima_benchmark,Statistical ARIMA benchmark,2,10,-0.232128088881726,0.909411756705063,1.12488377474658
+arima_benchmark,Statistical ARIMA benchmark,3,10,-0.403584924143875,0.952214321972393,1.17561494678736
+arima_benchmark,Statistical ARIMA benchmark,4,10,-0.574007216287725,1.01800100679132,1.14795489989279
+arima_benchmark,Statistical ARIMA benchmark,5,10,-0.528088681876895,0.889658373789715,1.00734852687085

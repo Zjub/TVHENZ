@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='648.00pt' height='396.00pt' viewBox='0 0 648.00 396.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw2NDguMDB8MC4wMHwzOTYuMDA='>
+    <rect x='0.00' y='0.00' width='648.00' height='396.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHwzOTYuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='648.00' height='396.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMTE2Ljk3fDY0Mi41Mnw1MC43M3wzNjQuNTA='>
+    <rect x='116.97' y='50.73' width='525.55' height='313.77' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMTE2Ljk3fDY0Mi41Mnw1MC43M3wzNjQuNTA=)'>
+<polyline points='116.97,319.68 642.52,319.68 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='116.97,244.97 642.52,244.97 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='116.97,170.26 642.52,170.26 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='116.97,95.56 642.52,95.56 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='201.57,364.50 201.57,50.73 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='321.52,364.50 321.52,50.73 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='441.48,364.50 441.48,50.73 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='561.43,364.50 561.43,50.73 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<line x1='321.52' y1='364.50' x2='321.52' y2='50.73' style='stroke-width: 1.07; stroke: #7F7F7F; stroke-linecap: butt;' />
+<rect x='321.52' y='61.94' width='297.11' height='67.24' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #0072B2;' />
+<rect x='140.86' y='286.06' width='180.66' height='67.24' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #009E73;' />
+<rect x='321.52' y='136.65' width='3.04' height='67.24' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #D55E00;' />
+<rect x='321.52' y='211.35' width='0.00' height='67.24' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #CC79A7;' />
+</g>
+<g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHwzOTYuMDA=)'>
+<text x='112.04' y='322.83' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='80.50px' lengthAdjust='spacingAndGlyphs'>Real GDP per capita</text>
+<text x='112.04' y='248.12' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='92.52px' lengthAdjust='spacingAndGlyphs'>Transitory macro bridge</text>
+<text x='112.04' y='173.41' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='106.56px' lengthAdjust='spacingAndGlyphs'>Relative government prices</text>
+<text x='112.04' y='98.71' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='65.03px' lengthAdjust='spacingAndGlyphs'>Age composition</text>
+<text x='201.57' y='375.74' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='17.59px' lengthAdjust='spacingAndGlyphs'>-100</text>
+<text x='321.52' y='375.74' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='441.48' y='375.74' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='14.67px' lengthAdjust='spacingAndGlyphs'>100</text>
+<text x='561.43' y='375.74' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='14.67px' lengthAdjust='spacingAndGlyphs'>200</text>
+<text x='379.75' y='388.20' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='198.73px' lengthAdjust='spacingAndGlyphs'>Percentage-point effect on net debt/GDP</text>
+<text x='5.48' y='31.05' style='font-size: 11.00px; font-family: "Arial";' textLength='507.11px' lengthAdjust='spacingAndGlyphs'>GDP PC model: 1.03% growth minus a counterfactual holding that contribution at the FY2029-30 anchor</text>
+<text x='5.48' y='42.93' style='font-size: 11.00px; font-family: "Arial";' textLength='229.27px' lengthAdjust='spacingAndGlyphs'>Coefficients estimated only through FY2018-19</text>
+<text x='5.48' y='14.93' style='font-size: 13.20px; font-family: "Arial";' textLength='286.42px' lengthAdjust='spacingAndGlyphs'>Contribution of each driver to net debt in 2065-66</text>
+</g>
+</g>
+</svg>

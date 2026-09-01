@@ -74,10 +74,11 @@ population_projection <- interpolate_projection(
   population_projection_raw,
   seq(min(population_projection_raw$year), projection_end)
 )
-age_cols <- c("0_14", "15_34", "35_54", "55_64", "65p")
+age_cols <- c("0_14", "15_34", "35_54", "55_64", "65_74", "75p")
 population_projection[, age_sum := rowSums(.SD), .SDcols = age_cols]
 population_projection[, (age_cols) := lapply(.SD, function(x) x / age_sum), .SDcols = age_cols]
 population_projection[, age_sum := NULL]
+population_projection[, `65p` := `65_74` + `75p`]
 
 fwrite(historical, file.path(processed_dir, "historical_top_down_model_data.csv"))
 fwrite(na_hist, file.path(processed_dir, "historical_national_accounts_fiscal.csv"))
@@ -105,6 +106,29 @@ write_validation(
   "Projection age shares sum to one",
   max(abs(rowSums(population_projection[, ..age_cols]) - 1), na.rm = TRUE) < 0.001,
   paste("Maximum absolute deviation:", signif(max(abs(rowSums(population_projection[, ..age_cols]) - 1)), 3)),
+  validation_file
+)
+write_validation(
+  "Historical 65+ share equals 65-74 plus 75+",
+  max(abs(historical$`65p` - historical$`65_74` - historical$`75p`),
+      na.rm = TRUE) < 1e-12,
+  paste(
+    "Maximum absolute deviation:",
+    signif(max(abs(historical$`65p` - historical$`65_74` - historical$`75p`),
+               na.rm = TRUE), 3)
+  ),
+  validation_file
+)
+write_validation(
+  "Projection 65+ share equals 65-74 plus 75+",
+  max(abs(population_projection$`65p` - population_projection$`65_74` -
+            population_projection$`75p`), na.rm = TRUE) < 1e-12,
+  paste(
+    "Maximum absolute deviation:",
+    signif(max(abs(population_projection$`65p` -
+                     population_projection$`65_74` -
+                     population_projection$`75p`), na.rm = TRUE), 3)
+  ),
   validation_file
 )
 write_validation(
