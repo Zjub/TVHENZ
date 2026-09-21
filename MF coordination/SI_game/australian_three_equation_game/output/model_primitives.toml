@@ -1,0 +1,29 @@
+important_note = "Preference weights are fixed across all games and active/passive policy-rule regimes."
+
+[macro]
+sigma_i = 0.036948002726257784
+psi_g = 0.06
+chi_g = 0.051421355523204385
+rho_pi = 0.5625497798601921
+kappa = 0.15510594039123907
+rho_b = 0.995
+psi_i = 0.015
+psi_pi = 0.1
+neutral_real_rate = 1.929135802469136
+rho_x = 0.6287494507727328
+
+[fiscal_preferences]
+debt = 0.45
+output = 1.0
+discount = 0.99
+inflation = 0.25
+adjustment = 0.08
+level = 0.0001
+
+[monetary_preferences]
+debt = 0.0
+output = 0.25
+discount = 0.99
+inflation = 1.0
+adjustment = 0.12
+level = 0.0001

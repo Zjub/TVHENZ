@@ -1,0 +1,25 @@
+manifest_updated_utc = "2026-09-13T01:34:00.431"
+
+[f1_1]
+sha256 = "6c4a99ecb5fa43218e474a8b78aa6540c1898604d0863aac55616ff62f7dfea9"
+bytes = 43807
+file = "rba_f1_1.csv"
+url = "https://www.rba.gov.au/statistics/tables/csv/f1.1-data.csv"
+
+[h1]
+sha256 = "f1b334302f8a9bd4746b6c6ba8db8ee79bd0328108ffd488d3716ec588882ed3"
+bytes = 29336
+file = "rba_h1.csv"
+url = "https://www.rba.gov.au/statistics/tables/csv/h1-data.csv"
+
+[h2]
+sha256 = "6b6c768a03a2e1d2b9dfc9f6e11dc8825220f824e3e1cd50c3330b34c09cebb9"
+bytes = 45273
+file = "rba_h2.csv"
+url = "https://www.rba.gov.au/statistics/tables/csv/h2-data.csv"
+
+[g1]
+sha256 = "c0e8846641eae45a22bca9ede5bbafde11403b608d5ef2e7ab0d38d6be6a8300"
+bytes = 39905
+file = "rba_g1.csv"
+url = "https://www.rba.gov.au/statistics/tables/csv/g1-data.csv"

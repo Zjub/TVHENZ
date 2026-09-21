@@ -1,0 +1,16 @@
+is_rmse = 0.4551213562342176
+sigma_i = 0.036948002726257784
+chi_g = 0.051421355523204385
+sample_end = "2019-12-31"
+demand_shock_sd = 0.46387449164984773
+rho_x = 0.6287494507727328
+available_quarters = 108
+is_intercept = 0.04098674293900403
+sample_start = "1993-03-31"
+pc_observations = 106
+is_observations = 107
+supply_shock_sd = 0.6699569103763775
+rho_pi = 0.5625497798601921
+kappa = 0.15510594039123907
+pc_rmse = 0.6604083425283416
+pc_intercept = -0.03107145902867921

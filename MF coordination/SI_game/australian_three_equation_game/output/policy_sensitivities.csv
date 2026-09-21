@@ -1,0 +1,13 @@
+action,state,derivative
+monetary_u,output_gap,0.21318499028352744
+monetary_u,inflation_gap,0.08325413627607886
+monetary_u,debt_gap,-0.2408633658124769
+monetary_u,lagged_output_gap,0.016280343541699948
+monetary_u,previous_monetary,0.8513202006934064
+monetary_u,previous_fiscal,0.006005846907402621
+fiscal_g,output_gap,-0.43621480542420377
+fiscal_g,inflation_gap,0.28862538063326004
+fiscal_g,debt_gap,-1.5771476867262881
+fiscal_g,lagged_output_gap,0.03587608985857841
+fiscal_g,previous_monetary,-0.04085484783039874
+fiscal_g,previous_fiscal,0.5562087948069033
