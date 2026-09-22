@@ -38,6 +38,18 @@ setDT(shock_dt_c9)
 shock_dt_c9[chart == "Average cash available"]
 shock_dt_c9[chart == "Lifecycle income" & series == "Spendable income"]
 
+shock_dt_c12_access <- read_csv("data_full_shock_withaccess.csv")
+setDT(shock_dt_c12_access)
+
+shock_dt_c12_access[chart == "Average cash available"]
+shock_dt_c12_access[chart == "Lifecycle income" & series == "Spendable income"]
+
+shock_dt_c12_2y <- read_csv("2y_data_full_profile_shock.csv")
+setDT(shock_dt_c12_2y)
+
+shock_dt_c12_2y_access <- read_csv("2y_data_full_shock_withaccess.csv")
+setDT(shock_dt_c12_2y_access)
+
 ggplot(
   data.table(rbind(
     shock_dt_c9[chart == "Lifecycle income" & series == "Spendable income",
@@ -55,3 +67,39 @@ ggplot(
            footnotes = "Single individual with four years out of work.")
 
 save_e61("Shock.png",res=2)
+
+ggplot(
+  data.table(rbind(
+    shock_dt_c12[chart == "Lifecycle income" & series == "Spendable income",
+                 .(age, value_dollars, series = "No access")],
+    shock_dt_c12_access[chart == "Lifecycle income" & series == "Spendable income",
+                        .(age, value_dollars, series = "Access to super")]
+  )),
+  aes(x = age, y = value_dollars/1000, colour = series)
+) +
+  geom_line() +
+  scale_y_continuous_e61(limits = c(0,120,30)) +
+  labs_e61(title = "Earnings profile with an early life shock",
+           y="$",
+           sources = "e61",
+           footnotes = "Single individual with four years out of work and 12% compulsory contributions.")
+
+save_e61("Shock_access.png",res=2)
+
+ggplot(
+  data.table(rbind(
+    shock_dt_c12_2y[chart == "Lifecycle income" & series == "Spendable income",
+                    .(age, value_dollars, series = "No access")],
+    shock_dt_c12_2y_access[chart == "Lifecycle income" & series == "Spendable income",
+                           .(age, value_dollars, series = "Access to super")]
+  )),
+  aes(x = age, y = value_dollars/1000, colour = series)
+) +
+  geom_line() +
+  scale_y_continuous_e61(limits = c(0,120,30)) +
+  labs_e61(title = "Earnings profile with an early life shock",
+           y="$",
+           sources = "e61",
+           footnotes = "Single individual with two years out of work and 12% compulsory contributions.")
+
+save_e61("Shock_access_2y.png",res=2)

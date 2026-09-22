@@ -20,9 +20,11 @@ suppressPackageStartupMessages({
 
 rm(list = ls()); invisible(gc())
 
+setwd("C:/Users/MattNolan/Git/TVHENZ/e61 Projects/Fiscal sustainability/Function analysis/Function analysis")
+
 # -------------------- User prefs --------------------
 freq            <- "FY"                 # "FY" or "CY"
-measure         <- "Expenditure"              # "GFCE" or "GFCE_plus_GFCF" or "Expenditure"
+measure         <- "GFCE_plus_GFCF"              # "GFCE" or "GFCE_plus_GFCF" or "Expenditure"
 share_basis     <- "nominal"           # "nominal" (standard for shares) or "real"
 conditional_sv  <- TRUE                # TRUE = conditional (full Shapley); FALSE = β·Δs
 abs_check_local <- TRUE                # use cached ABS files (fast after first run)
@@ -33,8 +35,8 @@ baseline_year   <- 1999      # optional: force a baseline year; NA = first year 
 features <- c("0_14","15_34","35_54","55_64","65p","tot",
               "rp_g","unemp") # ,"dln_pop""unemp",
 outlier_years <- c(2020, 2021)   # Years we remove from estimation for being outliers
-govt_level    <- "State"        # Either total, or just "Federal", or "State".
-level <- "State" # This is the name for saving files - change to be consistent with above (Federal, State, or Consolidated)
+govt_level    <- "total"        # Either total, or just "Federal", or "State".
+level <- "Consolidated" # This is the name for saving files - change to be consistent with above (Federal, State, or Consolidated)
 
 # -------------------- Helpers --------------------
 # AU FY ends in June: add 6m and take year
@@ -191,7 +193,6 @@ ann <- function(DT, out_name) {
 #   # quick printed summary
 #   cat("\nSelected unique series counts:\n")
 #   print(data.table(
-#     slice = names(res),
 #     n_series = vapply(res, nrow, integer(1))
 #   ))
 #   
@@ -774,7 +775,7 @@ counterfactual_age_path <- function(dt, baseline_year,
 tot_a   <- get_terms_of_trade(freq = freq, check_local = abs_check_local)
 # --- (i) Cycle: Unemployment rate (example placeholder series) ---
 # If you have an ABS pull for unemployment, annualise the rate:
-dt_unemp <- as.data.table(read_abs("6202.0", tables = "1", check_local = abs_check_local))
+dt_unemp <- as.data.table(read_abs("6202.0", tables = "001", check_local = abs_check_local))
 dt_unemp <- dt_unemp[series == "Unemployment rate ;  Persons ;" & series_type == "Seasonally Adjusted"]
 unemp_a <- annualise(dt_unemp, out_name = "unemp", mode = "mean", freq = freq)
 

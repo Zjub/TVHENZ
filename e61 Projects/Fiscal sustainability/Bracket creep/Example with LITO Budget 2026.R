@@ -222,7 +222,7 @@ annotate_points <- annotate_points %>%
 # )
 
 footnotes_vec <- c(
-  paste0("All series are plotted against ", base_year_label, "-dollar incomes; labels compare ", budget_year_label, " and ", future_year_label, ". Assumed inflation rate of 2.5%, and nominal income growth of 3.7%."),
+  paste0("All series are plotted against ", base_year_label, "-dollar incomes. Assumed inflation rate of 2.5%, and nominal income growth of 3.7%."),
   "Dashed line shows the treatment as at 2026, before Budget 2026-27 changes to the second rate and introduction of WATO."
 )
 
