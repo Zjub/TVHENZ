@@ -1,0 +1,812 @@
+country,country_code,year,indicator,indicator_name,value
+Australia,AUS,1990,BN.CAB.XOKA.GD.ZS,Current account balance,-4.98086922325911
+Australia,AUS,1991,BN.CAB.XOKA.GD.ZS,Current account balance,-3.24314665991037
+Australia,AUS,1992,BN.CAB.XOKA.GD.ZS,Current account balance,-3.1637556587871
+Australia,AUS,1993,BN.CAB.XOKA.GD.ZS,Current account balance,-2.97199182738191
+Australia,AUS,1994,BN.CAB.XOKA.GD.ZS,Current account balance,-4.90706698315176
+Australia,AUS,1995,BN.CAB.XOKA.GD.ZS,Current account balance,-5.06318585541186
+Australia,AUS,1996,BN.CAB.XOKA.GD.ZS,Current account balance,-3.58360337747536
+Australia,AUS,1997,BN.CAB.XOKA.GD.ZS,Current account balance,-2.72974894003096
+Australia,AUS,1998,BN.CAB.XOKA.GD.ZS,Current account balance,-4.44111787888726
+Australia,AUS,1999,BN.CAB.XOKA.GD.ZS,Current account balance,-5.58366414929507
+Australia,AUS,2000,BN.CAB.XOKA.GD.ZS,Current account balance,-3.7148479251727
+Australia,AUS,2001,BN.CAB.XOKA.GD.ZS,Current account balance,-2.09983536268172
+Australia,AUS,2002,BN.CAB.XOKA.GD.ZS,Current account balance,-4.03651427027564
+Australia,AUS,2003,BN.CAB.XOKA.GD.ZS,Current account balance,-6.25542304141099
+Australia,AUS,2004,BN.CAB.XOKA.GD.ZS,Current account balance,-6.70631316237641
+Australia,AUS,2005,BN.CAB.XOKA.GD.ZS,Current account balance,-6.22018206583351
+Australia,AUS,2006,BN.CAB.XOKA.GD.ZS,Current account balance,-6.17432428646521
+Australia,AUS,2007,BN.CAB.XOKA.GD.ZS,Current account balance,-7.5509404049246
+Australia,AUS,2008,BN.CAB.XOKA.GD.ZS,Current account balance,-4.87128797048566
+Australia,AUS,2009,BN.CAB.XOKA.GD.ZS,Current account balance,-5.21460357172589
+Australia,AUS,2010,BN.CAB.XOKA.GD.ZS,Current account balance,-3.99211276270473
+Australia,AUS,2011,BN.CAB.XOKA.GD.ZS,Current account balance,-3.25393708127954
+Australia,AUS,2012,BN.CAB.XOKA.GD.ZS,Current account balance,-4.42917293903347
+Australia,AUS,2013,BN.CAB.XOKA.GD.ZS,Current account balance,-3.24439256531685
+Australia,AUS,2014,BN.CAB.XOKA.GD.ZS,Current account balance,-3.07921525285017
+Australia,AUS,2015,BN.CAB.XOKA.GD.ZS,Current account balance,-4.2950643949091
+Australia,AUS,2016,BN.CAB.XOKA.GD.ZS,Current account balance,-3.60213104879027
+Australia,AUS,2017,BN.CAB.XOKA.GD.ZS,Current account balance,-3.00525814878872
+Australia,AUS,2018,BN.CAB.XOKA.GD.ZS,Current account balance,-2.58947975974169
+Australia,AUS,2019,BN.CAB.XOKA.GD.ZS,Current account balance,-0.0757460083721145
+Australia,AUS,2020,BN.CAB.XOKA.GD.ZS,Current account balance,1.64272242623869
+Australia,AUS,2021,BN.CAB.XOKA.GD.ZS,Current account balance,2.44729769999574
+Australia,AUS,2022,BN.CAB.XOKA.GD.ZS,Current account balance,0.254202501603949
+Australia,AUS,2023,BN.CAB.XOKA.GD.ZS,Current account balance,-0.433071259302467
+Australia,AUS,2024,BN.CAB.XOKA.GD.ZS,Current account balance,-2.3075014713626
+Australia,AUS,2025,BN.CAB.XOKA.GD.ZS,Current account balance,-2.68119524894682
+New Zealand,NZL,2000,BN.CAB.XOKA.GD.ZS,Current account balance,-3.30284871216652
+New Zealand,NZL,2001,BN.CAB.XOKA.GD.ZS,Current account balance,-0.776440240634347
+New Zealand,NZL,2002,BN.CAB.XOKA.GD.ZS,Current account balance,-2.09521936295548
+New Zealand,NZL,2003,BN.CAB.XOKA.GD.ZS,Current account balance,-2.40599179153862
+New Zealand,NZL,2004,BN.CAB.XOKA.GD.ZS,Current account balance,-4.50791009901216
+New Zealand,NZL,2005,BN.CAB.XOKA.GD.ZS,Current account balance,-6.9953679486939
+New Zealand,NZL,2006,BN.CAB.XOKA.GD.ZS,Current account balance,-7.06517341361543
+New Zealand,NZL,2007,BN.CAB.XOKA.GD.ZS,Current account balance,-6.79701754359097
+New Zealand,NZL,2008,BN.CAB.XOKA.GD.ZS,Current account balance,-7.69181610885177
+New Zealand,NZL,2009,BN.CAB.XOKA.GD.ZS,Current account balance,-2.47419947301186
+New Zealand,NZL,2010,BN.CAB.XOKA.GD.ZS,Current account balance,-2.33469330577729
+New Zealand,NZL,2011,BN.CAB.XOKA.GD.ZS,Current account balance,-2.86292030978892
+New Zealand,NZL,2012,BN.CAB.XOKA.GD.ZS,Current account balance,-3.90197677437136
+New Zealand,NZL,2013,BN.CAB.XOKA.GD.ZS,Current account balance,-3.05687316237006
+New Zealand,NZL,2014,BN.CAB.XOKA.GD.ZS,Current account balance,-3.08979706201678
+New Zealand,NZL,2015,BN.CAB.XOKA.GD.ZS,Current account balance,-2.61733984538523
+New Zealand,NZL,2016,BN.CAB.XOKA.GD.ZS,Current account balance,-2.15490580463573
+New Zealand,NZL,2017,BN.CAB.XOKA.GD.ZS,Current account balance,-2.9209984129863
+New Zealand,NZL,2018,BN.CAB.XOKA.GD.ZS,Current account balance,-4.16442592967999
+New Zealand,NZL,2019,BN.CAB.XOKA.GD.ZS,Current account balance,-2.82057766065118
+New Zealand,NZL,2020,BN.CAB.XOKA.GD.ZS,Current account balance,-1.08263837857087
+New Zealand,NZL,2021,BN.CAB.XOKA.GD.ZS,Current account balance,-5.64905496688557
+New Zealand,NZL,2022,BN.CAB.XOKA.GD.ZS,Current account balance,-8.7516189444306
+New Zealand,NZL,2023,BN.CAB.XOKA.GD.ZS,Current account balance,-6.14986296247429
+New Zealand,NZL,2024,BN.CAB.XOKA.GD.ZS,Current account balance,-4.62952800849341
+New Zealand,NZL,2025,BN.CAB.XOKA.GD.ZS,Current account balance,-3.61936128781643
+Australia,AUS,1990,NE.GDI.FTOT.ZS,Gross fixed capital formation,27.623562275288
+Australia,AUS,1991,NE.GDI.FTOT.ZS,Gross fixed capital formation,24.5348574396361
+Australia,AUS,1992,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.8064877617222
+Australia,AUS,1993,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.4529547171169
+Australia,AUS,1994,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.9305264869908
+Australia,AUS,1995,NE.GDI.FTOT.ZS,Gross fixed capital formation,25.0572393420043
+Australia,AUS,1996,NE.GDI.FTOT.ZS,Gross fixed capital formation,24.1113881616574
+Australia,AUS,1997,NE.GDI.FTOT.ZS,Gross fixed capital formation,24.0009111568284
+Australia,AUS,1998,NE.GDI.FTOT.ZS,Gross fixed capital formation,25.1156707378023
+Australia,AUS,1999,NE.GDI.FTOT.ZS,Gross fixed capital formation,25.3296988202281
+Australia,AUS,2000,NE.GDI.FTOT.ZS,Gross fixed capital formation,25.8919654195344
+Australia,AUS,2001,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.1582021660242
+Australia,AUS,2002,NE.GDI.FTOT.ZS,Gross fixed capital formation,24.2554623623273
+Australia,AUS,2003,NE.GDI.FTOT.ZS,Gross fixed capital formation,26.007030943111
+Australia,AUS,2004,NE.GDI.FTOT.ZS,Gross fixed capital formation,26.5880659201753
+Australia,AUS,2005,NE.GDI.FTOT.ZS,Gross fixed capital formation,26.9676243082002
+Australia,AUS,2006,NE.GDI.FTOT.ZS,Gross fixed capital formation,27.7412866557676
+Australia,AUS,2007,NE.GDI.FTOT.ZS,Gross fixed capital formation,27.3471755803552
+Australia,AUS,2008,NE.GDI.FTOT.ZS,Gross fixed capital formation,28.1494081563949
+Australia,AUS,2009,NE.GDI.FTOT.ZS,Gross fixed capital formation,27.5129887832226
+Australia,AUS,2010,NE.GDI.FTOT.ZS,Gross fixed capital formation,26.9461352407809
+Australia,AUS,2011,NE.GDI.FTOT.ZS,Gross fixed capital formation,25.9432868336906
+Australia,AUS,2012,NE.GDI.FTOT.ZS,Gross fixed capital formation,27.3175908517662
+Australia,AUS,2013,NE.GDI.FTOT.ZS,Gross fixed capital formation,27.7286395572248
+Australia,AUS,2014,NE.GDI.FTOT.ZS,Gross fixed capital formation,26.7582301625395
+Australia,AUS,2015,NE.GDI.FTOT.ZS,Gross fixed capital formation,26.1113805788248
+Australia,AUS,2016,NE.GDI.FTOT.ZS,Gross fixed capital formation,25.284104393006398
+Australia,AUS,2017,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.9744250133026
+Australia,AUS,2018,NE.GDI.FTOT.ZS,Gross fixed capital formation,24.3863880116543
+Australia,AUS,2019,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.3219874334142
+Australia,AUS,2020,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.7279354612304
+Australia,AUS,2021,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.5826306071239
+Australia,AUS,2022,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.1156890618434
+Australia,AUS,2023,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.1932473759349
+Australia,AUS,2024,NE.GDI.FTOT.ZS,Gross fixed capital formation,24.0919767539482
+Australia,AUS,2025,NE.GDI.FTOT.ZS,Gross fixed capital formation,24.3287174731557
+New Zealand,NZL,1990,NE.GDI.FTOT.ZS,Gross fixed capital formation,20.6733484834553
+New Zealand,NZL,1991,NE.GDI.FTOT.ZS,Gross fixed capital formation,17.6602998670475
+New Zealand,NZL,1992,NE.GDI.FTOT.ZS,Gross fixed capital formation,17.8694070338929
+New Zealand,NZL,1993,NE.GDI.FTOT.ZS,Gross fixed capital formation,19.5317765297074
+New Zealand,NZL,1994,NE.GDI.FTOT.ZS,Gross fixed capital formation,21.294701986755
+New Zealand,NZL,1995,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.4250800116381
+New Zealand,NZL,1996,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.3449817509223
+New Zealand,NZL,1997,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.1495015026475
+New Zealand,NZL,1998,NE.GDI.FTOT.ZS,Gross fixed capital formation,20.5586654934192
+New Zealand,NZL,1999,NE.GDI.FTOT.ZS,Gross fixed capital formation,21.8751379946833
+New Zealand,NZL,2000,NE.GDI.FTOT.ZS,Gross fixed capital formation,20.8504743864685
+New Zealand,NZL,2001,NE.GDI.FTOT.ZS,Gross fixed capital formation,21.4867300640189
+New Zealand,NZL,2002,NE.GDI.FTOT.ZS,Gross fixed capital formation,21.9372544958241
+New Zealand,NZL,2003,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.257117548546
+New Zealand,NZL,2004,NE.GDI.FTOT.ZS,Gross fixed capital formation,24.2179361926513
+New Zealand,NZL,2005,NE.GDI.FTOT.ZS,Gross fixed capital formation,24.7457606314097
+New Zealand,NZL,2006,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.913397362852
+New Zealand,NZL,2007,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.9129386681523
+New Zealand,NZL,2008,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.8770392064939
+New Zealand,NZL,2009,NE.GDI.FTOT.ZS,Gross fixed capital formation,20.3634011223437
+New Zealand,NZL,2010,NE.GDI.FTOT.ZS,Gross fixed capital formation,19.9528098265442
+New Zealand,NZL,2011,NE.GDI.FTOT.ZS,Gross fixed capital formation,20.0739083742502
+New Zealand,NZL,2012,NE.GDI.FTOT.ZS,Gross fixed capital formation,20.9523503518298
+New Zealand,NZL,2013,NE.GDI.FTOT.ZS,Gross fixed capital formation,21.4415172781075
+New Zealand,NZL,2014,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.6149734161941
+New Zealand,NZL,2015,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.9997768722182
+New Zealand,NZL,2016,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.744635785984
+New Zealand,NZL,2017,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.1159512515608
+New Zealand,NZL,2018,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.6866787146363
+New Zealand,NZL,2019,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.673560247464
+New Zealand,NZL,2020,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.3802200341086
+New Zealand,NZL,2021,NE.GDI.FTOT.ZS,Gross fixed capital formation,24.7318991879619
+New Zealand,NZL,2022,NE.GDI.FTOT.ZS,Gross fixed capital formation,25.5413739434671
+New Zealand,NZL,2023,NE.GDI.FTOT.ZS,Gross fixed capital formation,24.8475993149454
+New Zealand,NZL,2024,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.3735424950356
+OECD members,OED,1990,NE.GDI.FTOT.ZS,Gross fixed capital formation,25.5749348056031
+OECD members,OED,1991,NE.GDI.FTOT.ZS,Gross fixed capital formation,24.925684259888
+OECD members,OED,1992,NE.GDI.FTOT.ZS,Gross fixed capital formation,24.1875504480909
+OECD members,OED,1993,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.8173593794732
+OECD members,OED,1994,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.7976301794791
+OECD members,OED,1995,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.8206441064347
+OECD members,OED,1996,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.9206971259994
+OECD members,OED,1997,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.561399648303
+OECD members,OED,1998,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.3522233947997
+OECD members,OED,1999,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.6457116670372
+OECD members,OED,2000,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.9949676635872
+OECD members,OED,2001,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.2361746722197
+OECD members,OED,2002,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.3725408671848
+OECD members,OED,2003,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.2834112678268
+OECD members,OED,2004,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.5202159351081
+OECD members,OED,2005,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.0396121504357
+OECD members,OED,2006,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.3927714759705
+OECD members,OED,2007,NE.GDI.FTOT.ZS,Gross fixed capital formation,23.2996999966656
+OECD members,OED,2008,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.9174926769606
+OECD members,OED,2009,NE.GDI.FTOT.ZS,Gross fixed capital formation,21.0559667229114
+OECD members,OED,2010,NE.GDI.FTOT.ZS,Gross fixed capital formation,20.6835694300693
+OECD members,OED,2011,NE.GDI.FTOT.ZS,Gross fixed capital formation,21.0626320244519
+OECD members,OED,2012,NE.GDI.FTOT.ZS,Gross fixed capital formation,21.3430750963818
+OECD members,OED,2013,NE.GDI.FTOT.ZS,Gross fixed capital formation,21.2469486913823
+OECD members,OED,2014,NE.GDI.FTOT.ZS,Gross fixed capital formation,21.5178008120236
+OECD members,OED,2015,NE.GDI.FTOT.ZS,Gross fixed capital formation,21.7658909125396
+OECD members,OED,2016,NE.GDI.FTOT.ZS,Gross fixed capital formation,21.8748861486961
+OECD members,OED,2017,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.1252200255163
+OECD members,OED,2018,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.3110870261073
+OECD members,OED,2019,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.5601255187674
+OECD members,OED,2020,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.6179256140911
+OECD members,OED,2021,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.4780159838544
+OECD members,OED,2022,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.5631467140569
+OECD members,OED,2023,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.6147457978621
+OECD members,OED,2024,NE.GDI.FTOT.ZS,Gross fixed capital formation,22.2337413514389
+Australia,AUS,1990,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.0586596122525
+Australia,AUS,1991,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.2374625014965
+Australia,AUS,1992,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.4135225482218
+Australia,AUS,1993,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.5793590567599
+Australia,AUS,1994,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.7247788628465
+Australia,AUS,1995,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.8465581022787
+Australia,AUS,1996,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.9629320621902
+Australia,AUS,1997,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.0692816029257
+Australia,AUS,1998,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.1659872192484
+Australia,AUS,1999,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.2516780952874
+Australia,AUS,2000,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.3380926593329
+Australia,AUS,2001,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.4439665253031
+Australia,AUS,2002,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.5526508705762
+Australia,AUS,2003,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.6574144611296
+Australia,AUS,2004,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.7707524793261
+Australia,AUS,2005,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.8849948927024
+Australia,AUS,2006,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.9925124181303
+Australia,AUS,2007,SP.POP.65UP.TO.ZS,Population aged 65 and over,13.0875642584234
+Australia,AUS,2008,SP.POP.65UP.TO.ZS,Population aged 65 and over,13.1772880283573
+Australia,AUS,2009,SP.POP.65UP.TO.ZS,Population aged 65 and over,13.314903986414
+Australia,AUS,2010,SP.POP.65UP.TO.ZS,Population aged 65 and over,13.529289383836
+Australia,AUS,2011,SP.POP.65UP.TO.ZS,Population aged 65 and over,13.7988147123359
+Australia,AUS,2012,SP.POP.65UP.TO.ZS,Population aged 65 and over,14.0880460046549
+Australia,AUS,2013,SP.POP.65UP.TO.ZS,Population aged 65 and over,14.366324406492
+Australia,AUS,2014,SP.POP.65UP.TO.ZS,Population aged 65 and over,14.6343933904119
+Australia,AUS,2015,SP.POP.65UP.TO.ZS,Population aged 65 and over,14.8994580007134
+Australia,AUS,2016,SP.POP.65UP.TO.ZS,Population aged 65 and over,15.1508163000494
+Australia,AUS,2017,SP.POP.65UP.TO.ZS,Population aged 65 and over,15.3876130191621
+Australia,AUS,2018,SP.POP.65UP.TO.ZS,Population aged 65 and over,15.6409676060892
+Australia,AUS,2019,SP.POP.65UP.TO.ZS,Population aged 65 and over,15.9450637793133
+Australia,AUS,2020,SP.POP.65UP.TO.ZS,Population aged 65 and over,16.3387202762794
+Australia,AUS,2021,SP.POP.65UP.TO.ZS,Population aged 65 and over,16.7491873637801
+Australia,AUS,2022,SP.POP.65UP.TO.ZS,Population aged 65 and over,17.0750320469828
+Australia,AUS,2023,SP.POP.65UP.TO.ZS,Population aged 65 and over,17.384024966198
+Australia,AUS,2024,SP.POP.65UP.TO.ZS,Population aged 65 and over,17.7300159228367
+Australia,AUS,2025,SP.POP.65UP.TO.ZS,Population aged 65 and over,18.0930147394386
+New Zealand,NZL,1990,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.0415476577199
+New Zealand,NZL,1991,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.161298913177
+New Zealand,NZL,1992,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.2955515961593
+New Zealand,NZL,1993,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.3933685255762
+New Zealand,NZL,1994,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.4649269040954
+New Zealand,NZL,1995,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.5032854769116
+New Zealand,NZL,1996,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.5151626470738
+New Zealand,NZL,1997,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.5322813381167
+New Zealand,NZL,1998,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.5906848218135
+New Zealand,NZL,1999,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.6696164791818
+New Zealand,NZL,2000,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.7580764490843
+New Zealand,NZL,2001,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.8275203073158
+New Zealand,NZL,2002,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.8311055464421
+New Zealand,NZL,2003,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.8224928165
+New Zealand,NZL,2004,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.87567651152
+New Zealand,NZL,2005,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.0218553465394
+New Zealand,NZL,2006,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.2256297316556
+New Zealand,NZL,2007,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.4172515320195
+New Zealand,NZL,2008,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.5794026219759
+New Zealand,NZL,2009,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.7554071459637
+New Zealand,NZL,2010,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.9832174904356
+New Zealand,NZL,2011,SP.POP.65UP.TO.ZS,Population aged 65 and over,13.2934135015614
+New Zealand,NZL,2012,SP.POP.65UP.TO.ZS,Population aged 65 and over,13.6932184397473
+New Zealand,NZL,2013,SP.POP.65UP.TO.ZS,Population aged 65 and over,14.0864276779802
+New Zealand,NZL,2014,SP.POP.65UP.TO.ZS,Population aged 65 and over,14.3691784824307
+New Zealand,NZL,2015,SP.POP.65UP.TO.ZS,Population aged 65 and over,14.5553593182878
+New Zealand,NZL,2016,SP.POP.65UP.TO.ZS,Population aged 65 and over,14.7113008693955
+New Zealand,NZL,2017,SP.POP.65UP.TO.ZS,Population aged 65 and over,14.8685528434202
+New Zealand,NZL,2018,SP.POP.65UP.TO.ZS,Population aged 65 and over,15.0578869326057
+New Zealand,NZL,2019,SP.POP.65UP.TO.ZS,Population aged 65 and over,15.3016117661383
+New Zealand,NZL,2020,SP.POP.65UP.TO.ZS,Population aged 65 and over,15.6207179833113
+New Zealand,NZL,2021,SP.POP.65UP.TO.ZS,Population aged 65 and over,16.0465779436973
+New Zealand,NZL,2022,SP.POP.65UP.TO.ZS,Population aged 65 and over,16.4463886430602
+New Zealand,NZL,2023,SP.POP.65UP.TO.ZS,Population aged 65 and over,16.7985801212333
+New Zealand,NZL,2024,SP.POP.65UP.TO.ZS,Population aged 65 and over,17.1957543080631
+New Zealand,NZL,2025,SP.POP.65UP.TO.ZS,Population aged 65 and over,17.6093066526984
+OECD members,OED,1990,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.3125539442727
+OECD members,OED,1991,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.4538481576351
+OECD members,OED,1992,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.5916257958342
+OECD members,OED,1993,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.7252812955862
+OECD members,OED,1994,SP.POP.65UP.TO.ZS,Population aged 65 and over,11.8794242068965
+OECD members,OED,1995,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.0222922024137
+OECD members,OED,1996,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.1465156823048
+OECD members,OED,1997,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.2815772829423
+OECD members,OED,1998,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.4107847056536
+OECD members,OED,1999,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.5386101428762
+OECD members,OED,2000,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.6765216221659
+OECD members,OED,2001,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.8271289311398
+OECD members,OED,2002,SP.POP.65UP.TO.ZS,Population aged 65 and over,12.9769495172469
+OECD members,OED,2003,SP.POP.65UP.TO.ZS,Population aged 65 and over,13.1183278208064
+OECD members,OED,2004,SP.POP.65UP.TO.ZS,Population aged 65 and over,13.2764358382963
+OECD members,OED,2005,SP.POP.65UP.TO.ZS,Population aged 65 and over,13.4590656957355
+OECD members,OED,2006,SP.POP.65UP.TO.ZS,Population aged 65 and over,13.6507921075296
+OECD members,OED,2007,SP.POP.65UP.TO.ZS,Population aged 65 and over,13.8402417023633
+OECD members,OED,2008,SP.POP.65UP.TO.ZS,Population aged 65 and over,14.0215262420366
+OECD members,OED,2009,SP.POP.65UP.TO.ZS,Population aged 65 and over,14.2004834641072
+OECD members,OED,2010,SP.POP.65UP.TO.ZS,Population aged 65 and over,14.359209082911
+OECD members,OED,2011,SP.POP.65UP.TO.ZS,Population aged 65 and over,14.5673223088342
+OECD members,OED,2012,SP.POP.65UP.TO.ZS,Population aged 65 and over,14.8803204787978
+OECD members,OED,2013,SP.POP.65UP.TO.ZS,Population aged 65 and over,15.2151605338549
+OECD members,OED,2014,SP.POP.65UP.TO.ZS,Population aged 65 and over,15.5348023900882
+OECD members,OED,2015,SP.POP.65UP.TO.ZS,Population aged 65 and over,15.8306578372037
+OECD members,OED,2016,SP.POP.65UP.TO.ZS,Population aged 65 and over,16.1090856523578
+OECD members,OED,2017,SP.POP.65UP.TO.ZS,Population aged 65 and over,16.3856875843634
+OECD members,OED,2018,SP.POP.65UP.TO.ZS,Population aged 65 and over,16.66306667433
+OECD members,OED,2019,SP.POP.65UP.TO.ZS,Population aged 65 and over,16.9559885910711
+OECD members,OED,2020,SP.POP.65UP.TO.ZS,Population aged 65 and over,17.2630264542708
+OECD members,OED,2021,SP.POP.65UP.TO.ZS,Population aged 65 and over,17.5721300046988
+OECD members,OED,2022,SP.POP.65UP.TO.ZS,Population aged 65 and over,17.8900729073025
+OECD members,OED,2023,SP.POP.65UP.TO.ZS,Population aged 65 and over,18.2469847512258
+OECD members,OED,2024,SP.POP.65UP.TO.ZS,Population aged 65 and over,18.6337872230807
+OECD members,OED,2025,SP.POP.65UP.TO.ZS,Population aged 65 and over,19.024248101954495
+Australia,AUS,1990,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.57297569098456
+Australia,AUS,1991,NY.GDP.MKTP.KD.ZG,Real GDP growth,-0.384631357046658
+Australia,AUS,1992,NY.GDP.MKTP.KD.ZG,Real GDP growth,0.433065864126704
+Australia,AUS,1993,NY.GDP.MKTP.KD.ZG,Real GDP growth,4.04583374101011
+Australia,AUS,1994,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.97884434177331
+Australia,AUS,1995,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.89017188961647
+Australia,AUS,1996,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.86567479160071
+Australia,AUS,1997,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.91795814771731
+Australia,AUS,1998,NY.GDP.MKTP.KD.ZG,Real GDP growth,4.67681373479508
+Australia,AUS,1999,NY.GDP.MKTP.KD.ZG,Real GDP growth,5.02822035850596
+Australia,AUS,2000,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.9160574881715
+Australia,AUS,2001,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.03145880248898
+Australia,AUS,2002,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.94980535772942
+Australia,AUS,2003,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.0912800997751
+Australia,AUS,2004,NY.GDP.MKTP.KD.ZG,Real GDP growth,4.21894147547516
+Australia,AUS,2005,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.15548121323168
+Australia,AUS,2006,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.7709261737475
+Australia,AUS,2007,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.78947119882653
+Australia,AUS,2008,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.62398503565633
+Australia,AUS,2009,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.95484826298522
+Australia,AUS,2010,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.21004795300735
+Australia,AUS,2011,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.3947349433061502
+Australia,AUS,2012,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.95247138119184
+Australia,AUS,2013,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.65445302592404
+Australia,AUS,2014,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.60118978187332
+Australia,AUS,2015,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.16434780647852
+Australia,AUS,2016,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.75564065529868
+Australia,AUS,2017,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.29331030192918
+Australia,AUS,2018,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.87417039499501
+Australia,AUS,2019,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.19401703622717
+Australia,AUS,2020,NY.GDP.MKTP.KD.ZG,Real GDP growth,-0.133531904304775
+Australia,AUS,2021,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.00694844335034
+Australia,AUS,2022,NY.GDP.MKTP.KD.ZG,Real GDP growth,4.25304559238732
+Australia,AUS,2023,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.58382100798981
+Australia,AUS,2024,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.37340773365975
+Australia,AUS,2025,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.35039785076631
+New Zealand,NZL,1990,NY.GDP.MKTP.KD.ZG,Real GDP growth,0.136887537634095
+New Zealand,NZL,1991,NY.GDP.MKTP.KD.ZG,Real GDP growth,-1.07586748814022
+New Zealand,NZL,1992,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.10092234546755
+New Zealand,NZL,1993,NY.GDP.MKTP.KD.ZG,Real GDP growth,6.3836309435096
+New Zealand,NZL,1994,NY.GDP.MKTP.KD.ZG,Real GDP growth,5.11167356780264
+New Zealand,NZL,1995,NY.GDP.MKTP.KD.ZG,Real GDP growth,4.73676080285628
+New Zealand,NZL,1996,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.59083953715972
+New Zealand,NZL,1997,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.07551582422867
+New Zealand,NZL,1998,NY.GDP.MKTP.KD.ZG,Real GDP growth,0.855188594957326
+New Zealand,NZL,1999,NY.GDP.MKTP.KD.ZG,Real GDP growth,5.38315295474565
+New Zealand,NZL,2000,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.86879087314065
+New Zealand,NZL,2001,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.41557461751114
+New Zealand,NZL,2002,NY.GDP.MKTP.KD.ZG,Real GDP growth,4.71514593471419
+New Zealand,NZL,2003,NY.GDP.MKTP.KD.ZG,Real GDP growth,4.72587484712128
+New Zealand,NZL,2004,NY.GDP.MKTP.KD.ZG,Real GDP growth,4.09053577279863
+New Zealand,NZL,2005,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.35295444152619
+New Zealand,NZL,2006,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.7744428588158
+New Zealand,NZL,2007,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.06312221869514
+New Zealand,NZL,2008,NY.GDP.MKTP.KD.ZG,Real GDP growth,-1.02561134479848
+New Zealand,NZL,2009,NY.GDP.MKTP.KD.ZG,Real GDP growth,-0.040259885205117
+New Zealand,NZL,2010,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.47182504276788
+New Zealand,NZL,2011,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.1445004445998
+New Zealand,NZL,2012,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.30256429520961
+New Zealand,NZL,2013,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.5648360739867
+New Zealand,NZL,2014,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.81933619307242
+New Zealand,NZL,2015,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.72968312125018
+New Zealand,NZL,2016,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.7435247472109
+New Zealand,NZL,2017,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.31568621648204
+New Zealand,NZL,2018,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.32219666491432
+New Zealand,NZL,2019,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.32371708441623
+New Zealand,NZL,2020,NY.GDP.MKTP.KD.ZG,Real GDP growth,-0.240916114758988
+New Zealand,NZL,2021,NY.GDP.MKTP.KD.ZG,Real GDP growth,4.29916005216614
+New Zealand,NZL,2022,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.34521847792682
+New Zealand,NZL,2023,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.81389453412019
+New Zealand,NZL,2024,NY.GDP.MKTP.KD.ZG,Real GDP growth,-0.868722371893952
+New Zealand,NZL,2025,NY.GDP.MKTP.KD.ZG,Real GDP growth,0.462871830681081
+OECD members,OED,1990,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.90994092688275
+OECD members,OED,1991,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.14202044785885
+OECD members,OED,1992,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.12871612721892
+OECD members,OED,1993,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.43165150636501
+OECD members,OED,1994,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.33712206709245
+OECD members,OED,1995,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.77524946754495
+OECD members,OED,1996,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.11341013537876
+OECD members,OED,1997,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.68063620350809
+OECD members,OED,1998,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.93646098381292
+OECD members,OED,1999,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.44131500771996
+OECD members,OED,2000,NY.GDP.MKTP.KD.ZG,Real GDP growth,4.14194781215413
+OECD members,OED,2001,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.39419283266746
+OECD members,OED,2002,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.54573413284015
+OECD members,OED,2003,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.02555450027376
+OECD members,OED,2004,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.25450343681813
+OECD members,OED,2005,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.8546887844396
+OECD members,OED,2006,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.06119134402469
+OECD members,OED,2007,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.64883701327084
+OECD members,OED,2008,NY.GDP.MKTP.KD.ZG,Real GDP growth,0.398567531316999
+OECD members,OED,2009,NY.GDP.MKTP.KD.ZG,Real GDP growth,-3.39762752928189
+OECD members,OED,2010,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.97338503994675
+OECD members,OED,2011,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.84967918104462
+OECD members,OED,2012,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.40460967593552
+OECD members,OED,2013,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.62369645988187
+OECD members,OED,2014,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.23873423415506
+OECD members,OED,2015,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.53080900311944
+OECD members,OED,2016,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.85463774155879
+OECD members,OED,2017,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.61204188490709
+OECD members,OED,2018,NY.GDP.MKTP.KD.ZG,Real GDP growth,2.38931017293615
+OECD members,OED,2019,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.85301586905177
+OECD members,OED,2020,NY.GDP.MKTP.KD.ZG,Real GDP growth,-3.86432916323412
+OECD members,OED,2021,NY.GDP.MKTP.KD.ZG,Real GDP growth,6.09471533648059
+OECD members,OED,2022,NY.GDP.MKTP.KD.ZG,Real GDP growth,3.15854809219758
+OECD members,OED,2023,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.78937161232169
+OECD members,OED,2024,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.78218444615328
+OECD members,OED,2025,NY.GDP.MKTP.KD.ZG,Real GDP growth,1.77005853071937
+Australia,AUS,1990,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),36267.7410592234
+Australia,AUS,1991,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),35670.6678637309
+Australia,AUS,1992,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),35426.2848289008
+Australia,AUS,1993,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),36533.1468283451
+Australia,AUS,1994,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),37622.6524772939
+Australia,AUS,1995,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),38653.3366778657
+Australia,AUS,1996,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),39663.1617728168
+Australia,AUS,1997,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),40773.5660516518
+Australia,AUS,1998,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),42257.1718122395
+Australia,AUS,1999,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),43899.073794405
+Australia,AUS,2000,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),45099.0752097084
+Australia,AUS,2001,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),45428.2000837579
+Australia,AUS,2002,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),46688.3947760633
+Australia,AUS,2003,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),47581.2285345879
+Australia,AUS,2004,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),49061.2761503925
+Australia,AUS,2005,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),49997.0664953941
+Australia,AUS,2006,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),50693.7248649798
+Australia,AUS,2007,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),51663.2403953881
+Australia,AUS,2008,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),52473.3819160773
+Australia,AUS,2009,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),52407.9115378584
+Australia,AUS,2010,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),52739.2681556133
+Australia,AUS,2011,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),53257.0473237603
+Australia,AUS,2012,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),54403.8836902433
+Australia,AUS,2013,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),54895.0052588984
+Australia,AUS,2014,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),55489.068844146
+Australia,AUS,2015,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),55879.9958817103
+Australia,AUS,2016,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),56529.951824687
+Australia,AUS,2017,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),56881.8569859104
+Australia,AUS,2018,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),57647.8455068105
+Australia,AUS,2019,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),58048.6188420831
+Australia,AUS,2020,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),57260.4650530108
+Australia,AUS,2021,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),58327.4146842325
+Australia,AUS,2022,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),60029.1329190733
+Australia,AUS,2023,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),60684.9596204883
+Australia,AUS,2024,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),60309.5831772339
+Australia,AUS,2025,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),60194.0633547961
+New Zealand,NZL,1990,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),30785.701752556
+New Zealand,NZL,1991,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),29014.1499420181
+New Zealand,NZL,1992,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),29029.5811361611
+New Zealand,NZL,1993,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),30532.5880166798
+New Zealand,NZL,1994,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),31669.5406509196
+New Zealand,NZL,1995,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),32687.4657703706
+New Zealand,NZL,1996,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),33329.5301011769
+New Zealand,NZL,1997,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),33577.7254994905
+New Zealand,NZL,1998,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),33565.7312220905
+New Zealand,NZL,1999,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),35187.2357200331
+New Zealand,NZL,2000,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),35984.6288016116
+New Zealand,NZL,2001,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),36995.0603198774
+New Zealand,NZL,2002,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),38072.2713835052
+New Zealand,NZL,2003,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),39092.3455202712
+New Zealand,NZL,2004,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),40091.1399487332
+New Zealand,NZL,2005,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),40970.295838255
+New Zealand,NZL,2006,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),41596.8311289998
+New Zealand,NZL,2007,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),42473.1182614499
+New Zealand,NZL,2008,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),41682.2459069155
+New Zealand,NZL,2009,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),41250.9985717425
+New Zealand,NZL,2010,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),41395.370375582
+New Zealand,NZL,2011,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),41961.9202263641
+New Zealand,NZL,2012,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),42693.4234516571
+New Zealand,NZL,2013,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),43453.2814172317
+New Zealand,NZL,2014,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),44369.7664241859
+New Zealand,NZL,2015,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),45097.016468387
+New Zealand,NZL,2016,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),45746.135981069
+New Zealand,NZL,2017,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),46285.9810980642
+New Zealand,NZL,2018,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),46974.6818400482
+New Zealand,NZL,2019,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),47392.1933135172
+New Zealand,NZL,2020,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),46326.3804672976
+New Zealand,NZL,2021,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),48202.0913368233
+New Zealand,NZL,2022,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),49842.9845334162
+New Zealand,NZL,2023,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),49592.5875512098
+New Zealand,NZL,2024,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),48325.3650985684
+New Zealand,NZL,2025,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),48232.6651994696
+OECD members,OED,1990,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),33168.2298311981
+OECD members,OED,1991,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),33242.6352659394
+OECD members,OED,1992,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),33616.3121971947
+OECD members,OED,1993,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),33779.8396070497
+OECD members,OED,1994,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),34580.6901712668
+OECD members,OED,1995,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),35240.9990035223
+OECD members,OED,1996,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),36072.5872423758
+OECD members,OED,1997,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),37129.6562248437
+OECD members,OED,1998,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),37920.9012868331
+OECD members,OED,1999,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),38877.180707839
+OECD members,OED,2000,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),40219.7068164739
+OECD members,OED,2001,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),40475.8813871568
+OECD members,OED,2002,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),40811.3471480594
+OECD members,OED,2003,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),41333.2324314448
+OECD members,OED,2004,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),42397.8667348579
+OECD members,OED,2005,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),43314.4668519001
+OECD members,OED,2006,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),44393.8812932118
+OECD members,OED,2007,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),45303.2152816216
+OECD members,OED,2008,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),45165.4822304847
+OECD members,OED,2009,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),43274.1924719738
+OECD members,OED,2010,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),44296.3842287079
+OECD members,OED,2011,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),44960.672133865
+OECD members,OED,2012,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),45281.102496489
+OECD members,OED,2013,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),45741.9859886325
+OECD members,OED,2014,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),46491.7899829914
+OECD members,OED,2015,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),47398.5562028596
+OECD members,OED,2016,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),47990.2203158456
+OECD members,OED,2017,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),49000.2450341257
+OECD members,OED,2018,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),49885.2296815603
+OECD members,OED,2019,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),50499.1828634038
+OECD members,OED,2020,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),48279.8578743016
+OECD members,OED,2021,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),51208.8336430486
+OECD members,OED,2022,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),52633.5158572918
+OECD members,OED,2023,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),53203.8203533137
+OECD members,OED,2024,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),53798.0599443819
+OECD members,OED,2025,NY.GDP.PCAP.PP.KD,Real GDP per capita (PPP),54545.7635258645
+Australia,AUS,1990,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.05133530941588
+Australia,AUS,1991,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-1.64629276060377
+Australia,AUS,1992,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-0.685109221290034
+Australia,AUS,1993,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,3.12440890934566
+Australia,AUS,1994,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.98223871616621
+Australia,AUS,1995,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.73953092805972
+Australia,AUS,1996,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.61251726692284
+Australia,AUS,1997,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.79958588575271
+Australia,AUS,1998,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,3.63864607453812
+Australia,AUS,1999,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,3.88549898573662
+Australia,AUS,2000,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.73354609011429
+Australia,AUS,2001,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,0.729781869182801
+Australia,AUS,2002,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.7740361493122
+Australia,AUS,2003,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.91232481392237
+Australia,AUS,2004,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,3.11057041061613
+Australia,AUS,2005,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.90739095765275
+Australia,AUS,2006,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.39339848998918
+Australia,AUS,2007,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.91249613831002
+Australia,AUS,2008,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.56811983624921
+Australia,AUS,2009,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-0.124768741461196
+Australia,AUS,2010,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,0.632264496011231
+Australia,AUS,2011,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,0.981771621515961
+Australia,AUS,2012,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.15339832775771
+Australia,AUS,2013,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,0.902732553895234
+Australia,AUS,2014,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.08218148890933
+Australia,AUS,2015,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,0.704511799724457
+Australia,AUS,2016,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.16312811538609
+Australia,AUS,2017,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,0.62251098729871
+Australia,AUS,2018,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.3466306507712
+Australia,AUS,2019,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,0.695209563773375
+Australia,AUS,2020,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-1.35774770320791
+Australia,AUS,2021,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.86332687000336
+Australia,AUS,2022,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.91752727950202
+Australia,AUS,2023,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.09251403364293
+Australia,AUS,2024,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-0.618565861462017
+Australia,AUS,2025,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-0.191544720344581
+New Zealand,NZL,1990,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-0.783344535959387
+New Zealand,NZL,1991,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-5.75446298017491
+New Zealand,NZL,1992,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,0.0531850637493676
+New Zealand,NZL,1993,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,5.17750109265798
+New Zealand,NZL,1994,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,3.72373489472506
+New Zealand,NZL,1995,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,3.21420866400058
+New Zealand,NZL,1996,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.96425239973273
+New Zealand,NZL,1997,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,0.744671159659745
+New Zealand,NZL,1998,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-0.0357209347019278
+New Zealand,NZL,1999,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,4.83083323051672
+New Zealand,NZL,2000,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.26614300686462
+New Zealand,NZL,2001,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.80795315087559
+New Zealand,NZL,2002,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.91176998851674
+New Zealand,NZL,2003,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.67930990113685
+New Zealand,NZL,2004,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.5549616303889
+New Zealand,NZL,2005,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.19289321941467
+New Zealand,NZL,2006,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.5292427792522
+New Zealand,NZL,2007,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.10661992432209
+New Zealand,NZL,2008,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-1.86205389881211
+New Zealand,NZL,2009,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-1.0346067631192
+New Zealand,NZL,2010,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,0.349983779394819
+New Zealand,NZL,2011,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.36863094989059
+New Zealand,NZL,2012,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.74325488763843
+New Zealand,NZL,2013,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.77980097200441
+New Zealand,NZL,2014,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.10912726740773
+New Zealand,NZL,2015,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.63906665013374
+New Zealand,NZL,2016,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.43938460571344
+New Zealand,NZL,2017,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.18008899640975
+New Zealand,NZL,2018,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.48792512472586
+New Zealand,NZL,2019,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,0.888801067116702
+New Zealand,NZL,2020,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-2.24892070128274
+New Zealand,NZL,2021,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,4.04890442681972
+New Zealand,NZL,2022,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,3.40419502781879
+New Zealand,NZL,2023,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-0.502371566531039
+New Zealand,NZL,2024,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-2.55526584760841
+New Zealand,NZL,2025,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-0.19182451888318
+OECD members,OED,1990,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.99769779276342
+OECD members,OED,1991,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,0.173060250291286
+OECD members,OED,1992,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.1671863397985
+OECD members,OED,1993,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,0.526710152193971
+OECD members,OED,1994,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.47570290714521
+OECD members,OED,1995,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.95088085241515
+OECD members,OED,1996,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.31116581499032
+OECD members,OED,1997,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.88355089490761
+OECD members,OED,1998,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.17750452450993
+OECD members,OED,1999,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.68267268607889
+OECD members,OED,2000,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,3.40186387754162
+OECD members,OED,2001,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,0.650538032198526
+OECD members,OED,2002,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,0.797333580734332
+OECD members,OED,2003,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.28582561222763
+OECD members,OED,2004,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.51344792807471
+OECD members,OED,2005,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.13195703317068
+OECD members,OED,2006,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.31514729935438
+OECD members,OED,2007,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.91986482915692
+OECD members,OED,2008,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-0.387696237916998
+OECD members,OED,2009,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-4.09448508506959
+OECD members,OED,2010,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.27809290252907
+OECD members,OED,2011,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.3055785974355
+OECD members,OED,2012,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,0.777378602693261
+OECD members,OED,2013,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.02934089904029
+OECD members,OED,2014,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.61827330748035
+OECD members,OED,2015,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.89826680906103
+OECD members,OED,2016,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.21113178285266
+OECD members,OED,2017,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.00432730661259
+OECD members,OED,2018,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.77987448413401
+OECD members,OED,2019,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.25975589333113
+OECD members,OED,2020,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,-4.22683605904867
+OECD members,OED,2021,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,5.90338766727407
+OECD members,OED,2022,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,2.64885988874985
+OECD members,OED,2023,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.11062600058609
+OECD members,OED,2024,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.12779539475203
+OECD members,OED,2025,NY.GDP.PCAP.KD.ZG,Real GDP per capita growth,1.37692492529541
+Australia,AUS,1990,NE.TRD.GNFS.ZS,Trade openness,32.1100283534983
+Australia,AUS,1991,NE.TRD.GNFS.ZS,Trade openness,32.1456909693335
+Australia,AUS,1992,NE.TRD.GNFS.ZS,Trade openness,32.9981716307874
+Australia,AUS,1993,NE.TRD.GNFS.ZS,Trade openness,35.3502769485307
+Australia,AUS,1994,NE.TRD.GNFS.ZS,Trade openness,36.4066117966299
+Australia,AUS,1995,NE.TRD.GNFS.ZS,Trade openness,37.646874037201
+Australia,AUS,1996,NE.TRD.GNFS.ZS,Trade openness,38.1740208800895
+Australia,AUS,1997,NE.TRD.GNFS.ZS,Trade openness,37.9217014956962
+Australia,AUS,1998,NE.TRD.GNFS.ZS,Trade openness,39.9240664596368
+Australia,AUS,1999,NE.TRD.GNFS.ZS,Trade openness,38.9602467102359
+Australia,AUS,2000,NE.TRD.GNFS.ZS,Trade openness,40.8631257691954
+Australia,AUS,2001,NE.TRD.GNFS.ZS,Trade openness,44.1337313971929
+Australia,AUS,2002,NE.TRD.GNFS.ZS,Trade openness,41.3813128146921
+Australia,AUS,2003,NE.TRD.GNFS.ZS,Trade openness,40.1348011794482
+Australia,AUS,2004,NE.TRD.GNFS.ZS,Trade openness,36.9505159618289
+Australia,AUS,2005,NE.TRD.GNFS.ZS,Trade openness,39.0978822564811
+Australia,AUS,2006,NE.TRD.GNFS.ZS,Trade openness,41.4878923489153
+Australia,AUS,2007,NE.TRD.GNFS.ZS,Trade openness,41.9297451276561
+Australia,AUS,2008,NE.TRD.GNFS.ZS,Trade openness,42.7522207880308
+Australia,AUS,2009,NE.TRD.GNFS.ZS,Trade openness,45.5936120867789
+Australia,AUS,2010,NE.TRD.GNFS.ZS,Trade openness,40.3905070860606
+Australia,AUS,2011,NE.TRD.GNFS.ZS,Trade openness,41.7219860149689
+Australia,AUS,2012,NE.TRD.GNFS.ZS,Trade openness,43.0198495527558
+Australia,AUS,2013,NE.TRD.GNFS.ZS,Trade openness,41.100511881056
+Australia,AUS,2014,NE.TRD.GNFS.ZS,Trade openness,42.2993095385282
+Australia,AUS,2015,NE.TRD.GNFS.ZS,Trade openness,41.4947506939901
+Australia,AUS,2016,NE.TRD.GNFS.ZS,Trade openness,40.813402217321
+Australia,AUS,2017,NE.TRD.GNFS.ZS,Trade openness,42.0354135251854
+Australia,AUS,2018,NE.TRD.GNFS.ZS,Trade openness,43.5732253645218
+Australia,AUS,2019,NE.TRD.GNFS.ZS,Trade openness,46.0016827052171
+Australia,AUS,2020,NE.TRD.GNFS.ZS,Trade openness,44.499564103879
+Australia,AUS,2021,NE.TRD.GNFS.ZS,Trade openness,40.2022359390595
+Australia,AUS,2022,NE.TRD.GNFS.ZS,Trade openness,45.6946418805752
+Australia,AUS,2023,NE.TRD.GNFS.ZS,Trade openness,49.044339318428
+Australia,AUS,2024,NE.TRD.GNFS.ZS,Trade openness,47.1453811065195
+Australia,AUS,2025,NE.TRD.GNFS.ZS,Trade openness,45.9014493880126
+New Zealand,NZL,1990,NE.TRD.GNFS.ZS,Trade openness,52.6081416580188
+New Zealand,NZL,1991,NE.TRD.GNFS.ZS,Trade openness,54.6355654428897
+New Zealand,NZL,1992,NE.TRD.GNFS.ZS,Trade openness,59.2340588498117
+New Zealand,NZL,1993,NE.TRD.GNFS.ZS,Trade openness,57.553650605971
+New Zealand,NZL,1994,NE.TRD.GNFS.ZS,Trade openness,58.8145695364238
+New Zealand,NZL,1995,NE.TRD.GNFS.ZS,Trade openness,56.9142524626959
+New Zealand,NZL,1996,NE.TRD.GNFS.ZS,Trade openness,55.1161709577551
+New Zealand,NZL,1997,NE.TRD.GNFS.ZS,Trade openness,55.2468635214425
+New Zealand,NZL,1998,NE.TRD.GNFS.ZS,Trade openness,57.8960178233763
+New Zealand,NZL,1999,NE.TRD.GNFS.ZS,Trade openness,61.4012311333669
+New Zealand,NZL,2000,NE.TRD.GNFS.ZS,Trade openness,68.5169268768932
+New Zealand,NZL,2001,NE.TRD.GNFS.ZS,Trade openness,67.2338243520418
+New Zealand,NZL,2002,NE.TRD.GNFS.ZS,Trade openness,62.6559945554479
+New Zealand,NZL,2003,NE.TRD.GNFS.ZS,Trade openness,57.914769345753
+New Zealand,NZL,2004,NE.TRD.GNFS.ZS,Trade openness,58.7995522745359
+New Zealand,NZL,2005,NE.TRD.GNFS.ZS,Trade openness,58.0187434407163
+New Zealand,NZL,2006,NE.TRD.GNFS.ZS,Trade openness,59.6032650403479
+New Zealand,NZL,2007,NE.TRD.GNFS.ZS,Trade openness,58.4251605749091
+New Zealand,NZL,2008,NE.TRD.GNFS.ZS,Trade openness,64.2611448527979
+New Zealand,NZL,2009,NE.TRD.GNFS.ZS,Trade openness,55.0143501856026
+New Zealand,NZL,2010,NE.TRD.GNFS.ZS,Trade openness,58.1047406012087
+New Zealand,NZL,2011,NE.TRD.GNFS.ZS,Trade openness,59.1815679267669
+New Zealand,NZL,2012,NE.TRD.GNFS.ZS,Trade openness,56.9257462326897
+New Zealand,NZL,2013,NE.TRD.GNFS.ZS,Trade openness,56.0063219921147
+New Zealand,NZL,2014,NE.TRD.GNFS.ZS,Trade openness,55.1213465284556
+New Zealand,NZL,2015,NE.TRD.GNFS.ZS,Trade openness,54.8749505791536
+New Zealand,NZL,2016,NE.TRD.GNFS.ZS,Trade openness,52.4796021733125
+New Zealand,NZL,2017,NE.TRD.GNFS.ZS,Trade openness,54.2775276299632
+New Zealand,NZL,2018,NE.TRD.GNFS.ZS,Trade openness,55.9063918509538
+New Zealand,NZL,2019,NE.TRD.GNFS.ZS,Trade openness,54.4612464097007
+New Zealand,NZL,2020,NE.TRD.GNFS.ZS,Trade openness,43.8262466218168
+New Zealand,NZL,2021,NE.TRD.GNFS.ZS,Trade openness,48.4315370741539
+New Zealand,NZL,2022,NE.TRD.GNFS.ZS,Trade openness,53.2091433736439
+New Zealand,NZL,2023,NE.TRD.GNFS.ZS,Trade openness,49.8655041498497
+New Zealand,NZL,2024,NE.TRD.GNFS.ZS,Trade openness,50.6607664427853
+OECD members,OED,1990,NE.TRD.GNFS.ZS,Trade openness,36.0804056454746
+OECD members,OED,1991,NE.TRD.GNFS.ZS,Trade openness,35.5827057257875
+OECD members,OED,1992,NE.TRD.GNFS.ZS,Trade openness,35.5028817002521
+OECD members,OED,1993,NE.TRD.GNFS.ZS,Trade openness,35.2536082772213
+OECD members,OED,1994,NE.TRD.GNFS.ZS,Trade openness,37.0492645116778
+OECD members,OED,1995,NE.TRD.GNFS.ZS,Trade openness,39.094448192396
+OECD members,OED,1996,NE.TRD.GNFS.ZS,Trade openness,39.8917362440369
+OECD members,OED,1997,NE.TRD.GNFS.ZS,Trade openness,41.8947901139674
+OECD members,OED,1998,NE.TRD.GNFS.ZS,Trade openness,42.4654854612985
+OECD members,OED,1999,NE.TRD.GNFS.ZS,Trade openness,42.5845317000269
+OECD members,OED,2000,NE.TRD.GNFS.ZS,Trade openness,46.5017915346953
+OECD members,OED,2001,NE.TRD.GNFS.ZS,Trade openness,45.262206632611
+OECD members,OED,2002,NE.TRD.GNFS.ZS,Trade openness,43.9043672804862
+OECD members,OED,2003,NE.TRD.GNFS.ZS,Trade openness,43.627246402396
+OECD members,OED,2004,NE.TRD.GNFS.ZS,Trade openness,45.8910406058815
+OECD members,OED,2005,NE.TRD.GNFS.ZS,Trade openness,47.7679406201503
+OECD members,OED,2006,NE.TRD.GNFS.ZS,Trade openness,50.4411833400992
+OECD members,OED,2007,NE.TRD.GNFS.ZS,Trade openness,51.5239386428617
+OECD members,OED,2008,NE.TRD.GNFS.ZS,Trade openness,53.6896825523781
+OECD members,OED,2009,NE.TRD.GNFS.ZS,Trade openness,46.7730625781555
+OECD members,OED,2010,NE.TRD.GNFS.ZS,Trade openness,51.3260384348016
+OECD members,OED,2011,NE.TRD.GNFS.ZS,Trade openness,55.1030053326433
+OECD members,OED,2012,NE.TRD.GNFS.ZS,Trade openness,55.5112360164814
+OECD members,OED,2013,NE.TRD.GNFS.ZS,Trade openness,55.1482491389613
+OECD members,OED,2014,NE.TRD.GNFS.ZS,Trade openness,55.225064307929
+OECD members,OED,2015,NE.TRD.GNFS.ZS,Trade openness,54.1818728245643
+OECD members,OED,2016,NE.TRD.GNFS.ZS,Trade openness,53.1067266686986
+OECD members,OED,2017,NE.TRD.GNFS.ZS,Trade openness,54.9880584110509
+OECD members,OED,2018,NE.TRD.GNFS.ZS,Trade openness,56.3322811447414
+OECD members,OED,2019,NE.TRD.GNFS.ZS,Trade openness,55.6720668830735
+OECD members,OED,2020,NE.TRD.GNFS.ZS,Trade openness,51.2170212483167
+OECD members,OED,2021,NE.TRD.GNFS.ZS,Trade openness,55.391612459278
+OECD members,OED,2022,NE.TRD.GNFS.ZS,Trade openness,62.7210761175953
+OECD members,OED,2023,NE.TRD.GNFS.ZS,Trade openness,58.0872109260643
+OECD members,OED,2024,NE.TRD.GNFS.ZS,Trade openness,56.884203306257
+Australia,AUS,1991,SL.UEM.TOTL.ZS,Unemployment rate,9.586
+Australia,AUS,1992,SL.UEM.TOTL.ZS,Unemployment rate,10.733
+Australia,AUS,1993,SL.UEM.TOTL.ZS,Unemployment rate,10.879
+Australia,AUS,1994,SL.UEM.TOTL.ZS,Unemployment rate,9.724
+Australia,AUS,1995,SL.UEM.TOTL.ZS,Unemployment rate,8.473
+Australia,AUS,1996,SL.UEM.TOTL.ZS,Unemployment rate,8.509
+Australia,AUS,1997,SL.UEM.TOTL.ZS,Unemployment rate,8.367
+Australia,AUS,1998,SL.UEM.TOTL.ZS,Unemployment rate,7.684
+Australia,AUS,1999,SL.UEM.TOTL.ZS,Unemployment rate,6.876
+Australia,AUS,2000,SL.UEM.TOTL.ZS,Unemployment rate,6.288
+Australia,AUS,2001,SL.UEM.TOTL.ZS,Unemployment rate,6.747
+Australia,AUS,2002,SL.UEM.TOTL.ZS,Unemployment rate,6.375
+Australia,AUS,2003,SL.UEM.TOTL.ZS,Unemployment rate,5.933
+Australia,AUS,2004,SL.UEM.TOTL.ZS,Unemployment rate,5.399
+Australia,AUS,2005,SL.UEM.TOTL.ZS,Unemployment rate,5.036
+Australia,AUS,2006,SL.UEM.TOTL.ZS,Unemployment rate,4.785
+Australia,AUS,2007,SL.UEM.TOTL.ZS,Unemployment rate,4.381
+Australia,AUS,2008,SL.UEM.TOTL.ZS,Unemployment rate,4.242
+Australia,AUS,2009,SL.UEM.TOTL.ZS,Unemployment rate,5.565
+Australia,AUS,2010,SL.UEM.TOTL.ZS,Unemployment rate,5.214
+Australia,AUS,2011,SL.UEM.TOTL.ZS,Unemployment rate,5.083
+Australia,AUS,2012,SL.UEM.TOTL.ZS,Unemployment rate,5.225
+Australia,AUS,2013,SL.UEM.TOTL.ZS,Unemployment rate,5.663
+Australia,AUS,2014,SL.UEM.TOTL.ZS,Unemployment rate,6.078
+Australia,AUS,2015,SL.UEM.TOTL.ZS,Unemployment rate,6.055
+Australia,AUS,2016,SL.UEM.TOTL.ZS,Unemployment rate,5.711
+Australia,AUS,2017,SL.UEM.TOTL.ZS,Unemployment rate,5.592
+Australia,AUS,2018,SL.UEM.TOTL.ZS,Unemployment rate,5.345
+Australia,AUS,2019,SL.UEM.TOTL.ZS,Unemployment rate,5.143
+Australia,AUS,2020,SL.UEM.TOTL.ZS,Unemployment rate,6.394
+Australia,AUS,2021,SL.UEM.TOTL.ZS,Unemployment rate,5.022
+Australia,AUS,2022,SL.UEM.TOTL.ZS,Unemployment rate,3.728
+Australia,AUS,2023,SL.UEM.TOTL.ZS,Unemployment rate,3.668
+Australia,AUS,2024,SL.UEM.TOTL.ZS,Unemployment rate,3.942
+Australia,AUS,2025,SL.UEM.TOTL.ZS,Unemployment rate,4.09
+New Zealand,NZL,1991,SL.UEM.TOTL.ZS,Unemployment rate,10.614
+New Zealand,NZL,1992,SL.UEM.TOTL.ZS,Unemployment rate,10.667
+New Zealand,NZL,1993,SL.UEM.TOTL.ZS,Unemployment rate,9.804
+New Zealand,NZL,1994,SL.UEM.TOTL.ZS,Unemployment rate,8.354
+New Zealand,NZL,1995,SL.UEM.TOTL.ZS,Unemployment rate,6.461
+New Zealand,NZL,1996,SL.UEM.TOTL.ZS,Unemployment rate,6.29
+New Zealand,NZL,1997,SL.UEM.TOTL.ZS,Unemployment rate,6.857
+New Zealand,NZL,1998,SL.UEM.TOTL.ZS,Unemployment rate,7.718
+New Zealand,NZL,1999,SL.UEM.TOTL.ZS,Unemployment rate,7.023
+New Zealand,NZL,2000,SL.UEM.TOTL.ZS,Unemployment rate,6.13
+New Zealand,NZL,2001,SL.UEM.TOTL.ZS,Unemployment rate,5.433
+New Zealand,NZL,2002,SL.UEM.TOTL.ZS,Unemployment rate,5.282
+New Zealand,NZL,2003,SL.UEM.TOTL.ZS,Unemployment rate,4.745
+New Zealand,NZL,2004,SL.UEM.TOTL.ZS,Unemployment rate,4.005
+New Zealand,NZL,2005,SL.UEM.TOTL.ZS,Unemployment rate,3.807
+New Zealand,NZL,2006,SL.UEM.TOTL.ZS,Unemployment rate,3.857
+New Zealand,NZL,2007,SL.UEM.TOTL.ZS,Unemployment rate,3.661
+New Zealand,NZL,2008,SL.UEM.TOTL.ZS,Unemployment rate,4.167
+New Zealand,NZL,2009,SL.UEM.TOTL.ZS,Unemployment rate,6.121
+New Zealand,NZL,2010,SL.UEM.TOTL.ZS,Unemployment rate,6.557
+New Zealand,NZL,2011,SL.UEM.TOTL.ZS,Unemployment rate,6.491
+New Zealand,NZL,2012,SL.UEM.TOTL.ZS,Unemployment rate,6.931
+New Zealand,NZL,2013,SL.UEM.TOTL.ZS,Unemployment rate,5.839
+New Zealand,NZL,2014,SL.UEM.TOTL.ZS,Unemployment rate,5.428
+New Zealand,NZL,2015,SL.UEM.TOTL.ZS,Unemployment rate,5.415
+New Zealand,NZL,2016,SL.UEM.TOTL.ZS,Unemployment rate,5.147
+New Zealand,NZL,2017,SL.UEM.TOTL.ZS,Unemployment rate,4.736
+New Zealand,NZL,2018,SL.UEM.TOTL.ZS,Unemployment rate,4.335
+New Zealand,NZL,2019,SL.UEM.TOTL.ZS,Unemployment rate,4.109
+New Zealand,NZL,2020,SL.UEM.TOTL.ZS,Unemployment rate,4.595
+New Zealand,NZL,2021,SL.UEM.TOTL.ZS,Unemployment rate,3.776
+New Zealand,NZL,2022,SL.UEM.TOTL.ZS,Unemployment rate,3.299
+New Zealand,NZL,2023,SL.UEM.TOTL.ZS,Unemployment rate,3.734
+New Zealand,NZL,2024,SL.UEM.TOTL.ZS,Unemployment rate,4.724
+New Zealand,NZL,2025,SL.UEM.TOTL.ZS,Unemployment rate,5.076
+OECD members,OED,1991,SL.UEM.TOTL.ZS,Unemployment rate,6.78453649835212
+OECD members,OED,1992,SL.UEM.TOTL.ZS,Unemployment rate,7.26896398956244
+OECD members,OED,1993,SL.UEM.TOTL.ZS,Unemployment rate,7.76186074581727
+OECD members,OED,1994,SL.UEM.TOTL.ZS,Unemployment rate,7.8347445928305
+OECD members,OED,1995,SL.UEM.TOTL.ZS,Unemployment rate,7.60351506136332
+OECD members,OED,1996,SL.UEM.TOTL.ZS,Unemployment rate,7.54860880642088
+OECD members,OED,1997,SL.UEM.TOTL.ZS,Unemployment rate,7.2525797614352
+OECD members,OED,1998,SL.UEM.TOTL.ZS,Unemployment rate,7.2199536786199
+OECD members,OED,1999,SL.UEM.TOTL.ZS,Unemployment rate,7.16498343192011
+OECD members,OED,2000,SL.UEM.TOTL.ZS,Unemployment rate,6.71100200632985
+OECD members,OED,2001,SL.UEM.TOTL.ZS,Unemployment rate,6.61732244402856
+OECD members,OED,2002,SL.UEM.TOTL.ZS,Unemployment rate,7.13987676171849
+OECD members,OED,2003,SL.UEM.TOTL.ZS,Unemployment rate,7.27483771000377
+OECD members,OED,2004,SL.UEM.TOTL.ZS,Unemployment rate,7.17441119702139
+OECD members,OED,2005,SL.UEM.TOTL.ZS,Unemployment rate,6.8314671013283
+OECD members,OED,2006,SL.UEM.TOTL.ZS,Unemployment rate,6.34618116260618
+OECD members,OED,2007,SL.UEM.TOTL.ZS,Unemployment rate,5.88940261869547
+OECD members,OED,2008,SL.UEM.TOTL.ZS,Unemployment rate,6.20560204861274
+OECD members,OED,2009,SL.UEM.TOTL.ZS,Unemployment rate,8.38089327283664
+OECD members,OED,2010,SL.UEM.TOTL.ZS,Unemployment rate,8.5207939102318
+OECD members,OED,2011,SL.UEM.TOTL.ZS,Unemployment rate,8.12208995143807
+OECD members,OED,2012,SL.UEM.TOTL.ZS,Unemployment rate,8.1052243905592
+OECD members,OED,2013,SL.UEM.TOTL.ZS,Unemployment rate,8.00520155093803
+OECD members,OED,2014,SL.UEM.TOTL.ZS,Unemployment rate,7.41355981597454
+OECD members,OED,2015,SL.UEM.TOTL.ZS,Unemployment rate,6.86087280016011
+OECD members,OED,2016,SL.UEM.TOTL.ZS,Unemployment rate,6.43777999780825
+OECD members,OED,2017,SL.UEM.TOTL.ZS,Unemployment rate,5.9177915757262
+OECD members,OED,2018,SL.UEM.TOTL.ZS,Unemployment rate,5.47444010714932
+OECD members,OED,2019,SL.UEM.TOTL.ZS,Unemployment rate,5.38695191058807
+OECD members,OED,2020,SL.UEM.TOTL.ZS,Unemployment rate,7.15007422562512
+OECD members,OED,2021,SL.UEM.TOTL.ZS,Unemployment rate,6.19605024177905
+OECD members,OED,2022,SL.UEM.TOTL.ZS,Unemployment rate,4.99493064713263
+OECD members,OED,2023,SL.UEM.TOTL.ZS,Unemployment rate,4.82631374195204
+OECD members,OED,2024,SL.UEM.TOTL.ZS,Unemployment rate,4.90917859417164
+OECD members,OED,2025,SL.UEM.TOTL.ZS,Unemployment rate,4.92729125540891

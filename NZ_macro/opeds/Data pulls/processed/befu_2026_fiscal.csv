@@ -1,0 +1,511 @@
+year,status,measure,unit,value
+2016,Actual,Core Crown expenses,$ millions,73929
+2017,Actual,Core Crown expenses,$ millions,76339
+2018,Actual,Core Crown expenses,$ millions,80576
+2019,Actual,Core Crown expenses,$ millions,86959
+2020,Actual,Core Crown expenses,$ millions,108832
+2021,Actual,Core Crown expenses,$ millions,107764
+2022,Actual,Core Crown expenses,$ millions,125641
+2023,Actual,Core Crown expenses,$ millions,127574
+2024,Actual,Core Crown expenses,$ millions,138998
+2025,Actual,Core Crown expenses,$ millions,141675
+2026,Forecast,Core Crown expenses,$ millions,147239
+2027,Forecast,Core Crown expenses,$ millions,154823
+2028,Forecast,Core Crown expenses,$ millions,158788
+2029,Forecast,Core Crown expenses,$ millions,162767
+2030,Forecast,Core Crown expenses,$ millions,167892
+2016,Actual,Core Crown residual cash,$ millions,-1322
+2017,Actual,Core Crown residual cash,$ millions,2574
+2018,Actual,Core Crown residual cash,$ millions,1346
+2019,Actual,Core Crown residual cash,$ millions,-710
+2020,Actual,Core Crown residual cash,$ millions,-23692
+2021,Actual,Core Crown residual cash,$ millions,-13767
+2022,Actual,Core Crown residual cash,$ millions,-27043
+2023,Actual,Core Crown residual cash,$ millions,-25648
+2024,Actual,Core Crown residual cash,$ millions,-19302
+2025,Actual,Core Crown residual cash,$ millions,-5996
+2026,Forecast,Core Crown residual cash,$ millions,-9314
+2027,Forecast,Core Crown residual cash,$ millions,-24221
+2028,Forecast,Core Crown residual cash,$ millions,-15636
+2029,Forecast,Core Crown residual cash,$ millions,-8842
+2030,Forecast,Core Crown residual cash,$ millions,-4492
+2016,Actual,Core Crown revenue,$ millions,76121
+2017,Actual,Core Crown revenue,$ millions,81782
+2018,Actual,Core Crown revenue,$ millions,86778
+2019,Actual,Core Crown revenue,$ millions,93474
+2020,Actual,Core Crown revenue,$ millions,91923
+2021,Actual,Core Crown revenue,$ millions,104968
+2022,Actual,Core Crown revenue,$ millions,117515
+2023,Actual,Core Crown revenue,$ millions,123398
+2024,Actual,Core Crown revenue,$ millions,133220
+2025,Actual,Core Crown revenue,$ millions,134411
+2026,Forecast,Core Crown revenue,$ millions,137235
+2027,Forecast,Core Crown revenue,$ millions,145590
+2028,Forecast,Core Crown revenue,$ millions,155575
+2029,Forecast,Core Crown revenue,$ millions,165562
+2030,Forecast,Core Crown revenue,$ millions,174255
+2016,Actual,Core Crown tax revenue,$ millions,70445
+2017,Actual,Core Crown tax revenue,$ millions,75644
+2018,Actual,Core Crown tax revenue,$ millions,80224
+2019,Actual,Core Crown tax revenue,$ millions,86468
+2020,Actual,Core Crown tax revenue,$ millions,85102
+2021,Actual,Core Crown tax revenue,$ millions,97983
+2022,Actual,Core Crown tax revenue,$ millions,108458
+2023,Actual,Core Crown tax revenue,$ millions,112358
+2024,Actual,Core Crown tax revenue,$ millions,120566
+2025,Actual,Core Crown tax revenue,$ millions,121698
+2026,Forecast,Core Crown tax revenue,$ millions,124807
+2027,Forecast,Core Crown tax revenue,$ millions,132986
+2028,Forecast,Core Crown tax revenue,$ millions,142229
+2029,Forecast,Core Crown tax revenue,$ millions,151601
+2030,Forecast,Core Crown tax revenue,$ millions,159705
+2016,Actual,Gross debt1,$ millions,86928
+2017,Actual,Gross debt1,$ millions,87141
+2018,Actual,Gross debt1,$ millions,88053
+2019,Actual,Gross debt1,$ millions,84449.361
+2020,Actual,Gross debt1,$ millions,102257
+2021,Actual,Gross debt1,$ millions,100835
+2022,Actual,Gross debt1,$ millions,118950.051
+2023,Actual,Gross debt1,$ millions,135789
+2024,Actual,Gross debt1,$ millions,175966
+2025,Actual,Gross debt1,$ millions,203687.799
+2026,Forecast,Gross debt1,$ millions,223760.676
+2027,Forecast,Gross debt1,$ millions,250219.502
+2028,Forecast,Gross debt1,$ millions,267129.502
+2029,Forecast,Gross debt1,$ millions,278378.502
+2030,Forecast,Gross debt1,$ millions,284277.502
+2016,Actual,Net core Crown debt2,$ millions,61880
+2017,Actual,Net core Crown debt2,$ millions,59480
+2018,Actual,Net core Crown debt2,$ millions,57495
+2019,Actual,Net core Crown debt2,$ millions,57736
+2020,Actual,Net core Crown debt2,$ millions,83375
+2021,Actual,Net core Crown debt2,$ millions,102080
+2022,Actual,Net core Crown debt2,$ millions,128873
+2023,Actual,Net core Crown debt2,$ millions,155273
+2024,Actual,Net core Crown debt2,$ millions,175464
+2025,Actual,Net core Crown debt2,$ millions,182171
+2026,Forecast,Net core Crown debt2,$ millions,191761
+2027,Forecast,Net core Crown debt2,$ millions,216481
+2028,Forecast,Net core Crown debt2,$ millions,232420
+2029,Forecast,Net core Crown debt2,$ millions,241357
+2030,Forecast,Net core Crown debt2,$ millions,246116
+2016,Actual,Net debt,$ millions,23192.833
+2017,Actual,Net debt,$ millions,16248.604
+2018,Actual,Net debt,$ millions,11218.778
+2019,Actual,Net debt,$ millions,5432.286
+2020,Actual,Net debt,$ millions,35710.486
+2021,Actual,Net debt,$ millions,35921
+2022,Actual,Net debt,$ millions,61850
+2023,Actual,Net debt,$ millions,71367
+2024,Actual,Net debt,$ millions,82197
+2025,Actual,Net debt,$ millions,88719
+2026,Forecast,Net debt,$ millions,98736
+2027,Forecast,Net debt,$ millions,115182
+2028,Forecast,Net debt,$ millions,123972
+2029,Forecast,Net debt,$ millions,124363
+2030,Forecast,Net debt,$ millions,120299
+2016,Actual,Net debt (excl. NZS Fund),$ millions,53228.99999999999
+2017,Actual,Net debt (excl. NZS Fund),$ millions,51548
+2018,Actual,Net debt (excl. NZS Fund),$ millions,50763
+2019,Actual,Net debt (excl. NZS Fund),$ millions,50822
+2020,Actual,Net debt (excl. NZS Fund),$ millions,79930
+2021,Actual,Net debt (excl. NZS Fund),$ millions,95188
+2022,Actual,Net debt (excl. NZS Fund),$ millions,117115
+2023,Actual,Net debt (excl. NZS Fund),$ millions,136268
+2024,Actual,Net debt (excl. NZS Fund),$ millions,158255
+2025,Actual,Net debt (excl. NZS Fund),$ millions,172926
+2026,Forecast,Net debt (excl. NZS Fund),$ millions,190849
+2027,Forecast,Net debt (excl. NZS Fund),$ millions,214427
+2028,Forecast,Net debt (excl. NZS Fund),$ millions,229726
+2029,Forecast,Net debt (excl. NZS Fund),$ millions,237303
+2030,Forecast,Net debt (excl. NZS Fund),$ millions,240996
+2016,Actual,Net worth,$ millions,95521
+2017,Actual,Net worth,$ millions,116472
+2018,Actual,Net worth,$ millions,135637
+2019,Actual,Net worth,$ millions,143339
+2020,Actual,Net worth,$ millions,115943
+2021,Actual,Net worth,$ millions,157193
+2022,Actual,Net worth,$ millions,174319
+2023,Actual,Net worth,$ millions,191472
+2024,Actual,Net worth,$ millions,191049
+2025,Actual,Net worth,$ millions,189128
+2026,Forecast,Net worth,$ millions,185332
+2027,Forecast,Net worth,$ millions,189755
+2028,Forecast,Net worth,$ millions,189492
+2029,Forecast,Net worth,$ millions,196377
+2030,Forecast,Net worth,$ millions,207347
+2016,Actual,Net worth attributable to the Crown,$ millions,89366
+2017,Actual,Net worth attributable to the Crown,$ millions,110532
+2018,Actual,Net worth attributable to the Crown,$ millions,129644
+2019,Actual,Net worth attributable to the Crown,$ millions,136949
+2020,Actual,Net worth attributable to the Crown,$ millions,110320
+2021,Actual,Net worth attributable to the Crown,$ millions,151469
+2022,Actual,Net worth attributable to the Crown,$ millions,167036
+2023,Actual,Net worth attributable to the Crown,$ millions,183514
+2024,Actual,Net worth attributable to the Crown,$ millions,181818
+2025,Actual,Net worth attributable to the Crown,$ millions,179260
+2026,Forecast,Net worth attributable to the Crown,$ millions,175459
+2027,Forecast,Net worth attributable to the Crown,$ millions,179885
+2028,Forecast,Net worth attributable to the Crown,$ millions,179369
+2029,Forecast,Net worth attributable to the Crown,$ millions,186162
+2030,Forecast,Net worth attributable to the Crown,$ millions,197198
+2016,Actual,OBEGAL (excluding ACC),$ millions,2121.237
+2017,Actual,OBEGAL (excluding ACC),$ millions,4653
+2018,Actual,OBEGAL (excluding ACC),$ millions,5942.351
+2019,Actual,OBEGAL (excluding ACC),$ millions,8503.746
+2020,Actual,OBEGAL (excluding ACC),$ millions,-20902.222999999998
+2021,Actual,OBEGAL (excluding ACC),$ millions,-2558.558
+2022,Actual,OBEGAL (excluding ACC),$ millions,-8664.022
+2023,Actual,OBEGAL (excluding ACC),$ millions,-7198.905000000001
+2024,Actual,OBEGAL (excluding ACC),$ millions,-8773
+2025,Actual,OBEGAL (excluding ACC),$ millions,-9306
+2026,Forecast,OBEGAL (excluding ACC),$ millions,-11937
+2027,Forecast,OBEGAL (excluding ACC),$ millions,-11441
+2028,Forecast,OBEGAL (excluding ACC),$ millions,-4276
+2029,Forecast,OBEGAL (excluding ACC),$ millions,2585
+2030,Forecast,OBEGAL (excluding ACC),$ millions,6115
+2016,Actual,OBEGAL (excluding minority interests),$ millions,1831
+2017,Actual,OBEGAL (excluding minority interests),$ millions,4069
+2018,Actual,OBEGAL (excluding minority interests),$ millions,5534
+2019,Actual,OBEGAL (excluding minority interests),$ millions,7429
+2020,Actual,OBEGAL (excluding minority interests),$ millions,-23057
+2021,Actual,OBEGAL (excluding minority interests),$ millions,-4560
+2022,Actual,OBEGAL (excluding minority interests),$ millions,-9691
+2023,Actual,OBEGAL (excluding minority interests),$ millions,-9446
+2024,Actual,OBEGAL (excluding minority interests),$ millions,-12854
+2025,Actual,OBEGAL (excluding minority interests),$ millions,-13973
+2026,Forecast,OBEGAL (excluding minority interests),$ millions,-15058
+2027,Forecast,OBEGAL (excluding minority interests),$ millions,-14090
+2028,Forecast,OBEGAL (excluding minority interests),$ millions,-7400
+2029,Forecast,OBEGAL (excluding minority interests),$ millions,-608
+2030,Forecast,OBEGAL (excluding minority interests),$ millions,3005
+2016,Actual,Operating balance (excluding minority interests),$ millions,-5369
+2017,Actual,Operating balance (excluding minority interests),$ millions,12317
+2018,Actual,Operating balance (excluding minority interests),$ millions,8396
+2019,Actual,Operating balance (excluding minority interests),$ millions,389
+2020,Actual,Operating balance (excluding minority interests),$ millions,-30040
+2021,Actual,Operating balance (excluding minority interests),$ millions,16159
+2022,Actual,Operating balance (excluding minority interests),$ millions,-16932
+2023,Actual,Operating balance (excluding minority interests),$ millions,5321
+2024,Actual,Operating balance (excluding minority interests),$ millions,-8365
+2025,Actual,Operating balance (excluding minority interests),$ millions,-4400
+2026,Forecast,Operating balance (excluding minority interests),$ millions,-4137
+2027,Forecast,Operating balance (excluding minority interests),$ millions,-8112
+2028,Forecast,Operating balance (excluding minority interests),$ millions,-570
+2029,Forecast,Operating balance (excluding minority interests),$ millions,6720
+2030,Forecast,Operating balance (excluding minority interests),$ millions,10985
+2016,Actual,Total Crown expenses,$ millions,95137
+2017,Actual,Total Crown expenses,$ millions,99007
+2018,Actual,Total Crown expenses,$ millions,104014
+2019,Actual,Total Crown expenses,$ millions,111376
+2020,Actual,Total Crown expenses,$ millions,138916
+2021,Actual,Total Crown expenses,$ millions,133722
+2022,Actual,Total Crown expenses,$ millions,150956
+2023,Actual,Total Crown expenses,$ millions,161822
+2024,Actual,Total Crown expenses,$ millions,180061
+2025,Actual,Total Crown expenses,$ millions,183502
+2026,Forecast,Total Crown expenses,$ millions,186836
+2027,Forecast,Total Crown expenses,$ millions,197953
+2028,Forecast,Total Crown expenses,$ millions,202781
+2029,Forecast,Total Crown expenses,$ millions,207695
+2030,Forecast,Total Crown expenses,$ millions,214217
+2016,Actual,Total Crown revenue,$ millions,97416
+2017,Actual,Total Crown revenue,$ millions,103422
+2018,Actual,Total Crown revenue,$ millions,109973
+2019,Actual,Total Crown revenue,$ millions,119142
+2020,Actual,Total Crown revenue,$ millions,116003
+2021,Actual,Total Crown revenue,$ millions,129335
+2022,Actual,Total Crown revenue,$ millions,141627
+2023,Actual,Total Crown revenue,$ millions,153011
+2024,Actual,Total Crown revenue,$ millions,167347
+2025,Actual,Total Crown revenue,$ millions,169811
+2026,Forecast,Total Crown revenue,$ millions,171990
+2027,Forecast,Total Crown revenue,$ millions,184053
+2028,Forecast,Total Crown revenue,$ millions,195731
+2029,Forecast,Total Crown revenue,$ millions,207536
+2030,Forecast,Total Crown revenue,$ millions,217653
+2016,Actual,Total assets,$ millions,292679
+2017,Actual,Total assets,$ millions,313609
+2018,Actual,Total assets,$ millions,339932
+2019,Actual,Total assets,$ millions,364652
+2020,Actual,Total assets,$ millions,393400
+2021,Actual,Total assets,$ millions,438596
+2022,Actual,Total assets,$ millions,501844
+2023,Actual,Total assets,$ millions,536666
+2024,Actual,Total assets,$ millions,570868
+2025,Actual,Total assets,$ millions,597976
+2026,Forecast,Total assets,$ millions,611609
+2027,Forecast,Total assets,$ millions,633055
+2028,Forecast,Total assets,$ millions,657506
+2029,Forecast,Total assets,$ millions,680837
+2030,Forecast,Total assets,$ millions,705642
+2016,Actual,Total liabilities,$ millions,197158
+2017,Actual,Total liabilities,$ millions,197137
+2018,Actual,Total liabilities,$ millions,204295
+2019,Actual,Total liabilities,$ millions,221313
+2020,Actual,Total liabilities,$ millions,277457
+2021,Actual,Total liabilities,$ millions,281403
+2022,Actual,Total liabilities,$ millions,327525
+2023,Actual,Total liabilities,$ millions,345194
+2024,Actual,Total liabilities,$ millions,379819
+2025,Actual,Total liabilities,$ millions,408848
+2026,Forecast,Total liabilities,$ millions,426277
+2027,Forecast,Total liabilities,$ millions,443300
+2028,Forecast,Total liabilities,$ millions,468014
+2029,Forecast,Total liabilities,$ millions,484460
+2030,Forecast,Total liabilities,$ millions,498295
+2016,Actual,Core Crown expenses,% of GDP,28.599999999999998
+2017,Actual,Core Crown expenses,% of GDP,27.700000000000003
+2018,Actual,Core Crown expenses,% of GDP,27.3
+2019,Actual,Core Crown expenses,% of GDP,28.000000000000004
+2020,Actual,Core Crown expenses,% of GDP,34.2
+2021,Actual,Core Crown expenses,% of GDP,31.4
+2022,Actual,Core Crown expenses,% of GDP,34.4
+2023,Actual,Core Crown expenses,% of GDP,31.7
+2024,Actual,Core Crown expenses,% of GDP,33
+2025,Actual,Core Crown expenses,% of GDP,32.6
+2026,Forecast,Core Crown expenses,% of GDP,32.6
+2027,Forecast,Core Crown expenses,% of GDP,32.6
+2028,Forecast,Core Crown expenses,% of GDP,31.5
+2029,Forecast,Core Crown expenses,% of GDP,30.7
+2030,Forecast,Core Crown expenses,% of GDP,30.3
+2016,Actual,Core Crown residual cash,% of GDP,-0.5
+2017,Actual,Core Crown residual cash,% of GDP,0.8999999999999999
+2018,Actual,Core Crown residual cash,% of GDP,0.5
+2019,Actual,Core Crown residual cash,% of GDP,-0.2
+2020,Actual,Core Crown residual cash,% of GDP,-7.5
+2021,Actual,Core Crown residual cash,% of GDP,-4
+2022,Actual,Core Crown residual cash,% of GDP,-7.3999999999999995
+2023,Actual,Core Crown residual cash,% of GDP,-6.4
+2024,Actual,Core Crown residual cash,% of GDP,-4.6
+2025,Actual,Core Crown residual cash,% of GDP,-1.4000000000000001
+2026,Forecast,Core Crown residual cash,% of GDP,-2.1
+2027,Forecast,Core Crown residual cash,% of GDP,-5.1
+2028,Forecast,Core Crown residual cash,% of GDP,-3.1
+2029,Forecast,Core Crown residual cash,% of GDP,-1.7000000000000002
+2030,Forecast,Core Crown residual cash,% of GDP,-0.8
+2016,Actual,Core Crown revenue,% of GDP,29.4
+2017,Actual,Core Crown revenue,% of GDP,29.7
+2018,Actual,Core Crown revenue,% of GDP,29.4
+2019,Actual,Core Crown revenue,% of GDP,30.099999999999998
+2020,Actual,Core Crown revenue,% of GDP,28.9
+2021,Actual,Core Crown revenue,% of GDP,30.5
+2022,Actual,Core Crown revenue,% of GDP,32.2
+2023,Actual,Core Crown revenue,% of GDP,30.7
+2024,Actual,Core Crown revenue,% of GDP,31.7
+2025,Actual,Core Crown revenue,% of GDP,30.9
+2026,Forecast,Core Crown revenue,% of GDP,30.4
+2027,Forecast,Core Crown revenue,% of GDP,30.7
+2028,Forecast,Core Crown revenue,% of GDP,30.9
+2029,Forecast,Core Crown revenue,% of GDP,31.2
+2030,Forecast,Core Crown revenue,% of GDP,31.4
+2016,Actual,Core Crown tax revenue,% of GDP,27.200000000000003
+2017,Actual,Core Crown tax revenue,% of GDP,27.400000000000002
+2018,Actual,Core Crown tax revenue,% of GDP,27.1
+2019,Actual,Core Crown tax revenue,% of GDP,27.900000000000002
+2020,Actual,Core Crown tax revenue,% of GDP,26.8
+2021,Actual,Core Crown tax revenue,% of GDP,28.499999999999996
+2022,Actual,Core Crown tax revenue,% of GDP,29.7
+2023,Actual,Core Crown tax revenue,% of GDP,28.000000000000004
+2024,Actual,Core Crown tax revenue,% of GDP,28.599999999999998
+2025,Actual,Core Crown tax revenue,% of GDP,28.000000000000004
+2026,Forecast,Core Crown tax revenue,% of GDP,27.6
+2027,Forecast,Core Crown tax revenue,% of GDP,28.000000000000004
+2028,Forecast,Core Crown tax revenue,% of GDP,28.199999999999996
+2029,Forecast,Core Crown tax revenue,% of GDP,28.599999999999998
+2030,Forecast,Core Crown tax revenue,% of GDP,28.799999999999997
+2016,Actual,Gross debt1,% of GDP,33.6
+2017,Actual,Gross debt1,% of GDP,31.6
+2018,Actual,Gross debt1,% of GDP,29.799999999999997
+2019,Actual,Gross debt1,% of GDP,27.200000000000003
+2020,Actual,Gross debt1,% of GDP,32.2
+2021,Actual,Gross debt1,% of GDP,29.299999999999997
+2022,Actual,Gross debt1,% of GDP,32.6
+2023,Actual,Gross debt1,% of GDP,33.800000000000004
+2024,Actual,Gross debt1,% of GDP,41.8
+2025,Actual,Gross debt1,% of GDP,46.800000000000004
+2026,Forecast,Gross debt1,% of GDP,49.5
+2027,Forecast,Gross debt1,% of GDP,52.7
+2028,Forecast,Gross debt1,% of GDP,53
+2029,Forecast,Gross debt1,% of GDP,52.5
+2030,Forecast,Gross debt1,% of GDP,51.300000000000004
+2016,Actual,Net core Crown debt2,% of GDP,23.9
+2017,Actual,Net core Crown debt2,% of GDP,21.6
+2018,Actual,Net core Crown debt2,% of GDP,19.5
+2019,Actual,Net core Crown debt2,% of GDP,18.6
+2020,Actual,Net core Crown debt2,% of GDP,26.200000000000003
+2021,Actual,Net core Crown debt2,% of GDP,29.7
+2022,Actual,Net core Crown debt2,% of GDP,35.3
+2023,Actual,Net core Crown debt2,% of GDP,38.6
+2024,Actual,Net core Crown debt2,% of GDP,41.699999999999996
+2025,Actual,Net core Crown debt2,% of GDP,41.9
+2026,Forecast,Net core Crown debt2,% of GDP,42.4
+2027,Forecast,Net core Crown debt2,% of GDP,45.6
+2028,Forecast,Net core Crown debt2,% of GDP,46.1
+2029,Forecast,Net core Crown debt2,% of GDP,45.6
+2030,Forecast,Net core Crown debt2,% of GDP,44.4
+2016,Actual,Net debt,% of GDP,9
+2017,Actual,Net debt,% of GDP,5.8999999999999995
+2018,Actual,Net debt,% of GDP,3.8
+2019,Actual,Net debt,% of GDP,1.7999999999999998
+2020,Actual,Net debt,% of GDP,11.200000000000001
+2021,Actual,Net debt,% of GDP,10.4
+2022,Actual,Net debt,% of GDP,16.900000000000002
+2023,Actual,Net debt,% of GDP,17.8
+2024,Actual,Net debt,% of GDP,19.5
+2025,Actual,Net debt,% of GDP,20.4
+2026,Forecast,Net debt,% of GDP,21.8
+2027,Forecast,Net debt,% of GDP,24.3
+2028,Forecast,Net debt,% of GDP,24.6
+2029,Forecast,Net debt,% of GDP,23.5
+2030,Forecast,Net debt,% of GDP,21.7
+2016,Actual,Net debt (excl. NZS Fund),% of GDP,20.599999999999998
+2017,Actual,Net debt (excl. NZS Fund),% of GDP,18.7
+2018,Actual,Net debt (excl. NZS Fund),% of GDP,17.2
+2019,Actual,Net debt (excl. NZS Fund),% of GDP,16.400000000000002
+2020,Actual,Net debt (excl. NZS Fund),% of GDP,25.1
+2021,Actual,Net debt (excl. NZS Fund),% of GDP,27.700000000000003
+2022,Actual,Net debt (excl. NZS Fund),% of GDP,32.1
+2023,Actual,Net debt (excl. NZS Fund),% of GDP,33.900000000000006
+2024,Actual,Net debt (excl. NZS Fund),% of GDP,37.6
+2025,Actual,Net debt (excl. NZS Fund),% of GDP,39.800000000000004
+2026,Forecast,Net debt (excl. NZS Fund),% of GDP,42.199999999999996
+2027,Forecast,Net debt (excl. NZS Fund),% of GDP,45.1
+2028,Forecast,Net debt (excl. NZS Fund),% of GDP,45.6
+2029,Forecast,Net debt (excl. NZS Fund),% of GDP,44.800000000000004
+2030,Forecast,Net debt (excl. NZS Fund),% of GDP,43.5
+2016,Actual,Net worth,% of GDP,36.9
+2017,Actual,Net worth,% of GDP,42.199999999999996
+2018,Actual,Net worth,% of GDP,45.9
+2019,Actual,Net worth,% of GDP,46.2
+2020,Actual,Net worth,% of GDP,36.5
+2021,Actual,Net worth,% of GDP,45.7
+2022,Actual,Net worth,% of GDP,47.699999999999996
+2023,Actual,Net worth,% of GDP,47.599999999999994
+2024,Actual,Net worth,% of GDP,45.4
+2025,Actual,Net worth,% of GDP,43.5
+2026,Forecast,Net worth,% of GDP,41
+2027,Forecast,Net worth,% of GDP,40
+2028,Forecast,Net worth,% of GDP,37.6
+2029,Forecast,Net worth,% of GDP,37.1
+2030,Forecast,Net worth,% of GDP,37.4
+2016,Actual,Net worth attributable to the Crown,% of GDP,34.5
+2017,Actual,Net worth attributable to the Crown,% of GDP,40.1
+2018,Actual,Net worth attributable to the Crown,% of GDP,43.9
+2019,Actual,Net worth attributable to the Crown,% of GDP,44.2
+2020,Actual,Net worth attributable to the Crown,% of GDP,34.699999999999996
+2021,Actual,Net worth attributable to the Crown,% of GDP,44.1
+2022,Actual,Net worth attributable to the Crown,% of GDP,45.7
+2023,Actual,Net worth attributable to the Crown,% of GDP,45.7
+2024,Actual,Net worth attributable to the Crown,% of GDP,43.2
+2025,Actual,Net worth attributable to the Crown,% of GDP,41.199999999999996
+2026,Forecast,Net worth attributable to the Crown,% of GDP,38.800000000000004
+2027,Forecast,Net worth attributable to the Crown,% of GDP,37.9
+2028,Forecast,Net worth attributable to the Crown,% of GDP,35.6
+2029,Forecast,Net worth attributable to the Crown,% of GDP,35.099999999999994
+2030,Forecast,Net worth attributable to the Crown,% of GDP,35.6
+2016,Actual,OBEGAL (excluding ACC),% of GDP,0.8
+2017,Actual,OBEGAL (excluding ACC),% of GDP,1.7000000000000002
+2018,Actual,OBEGAL (excluding ACC),% of GDP,2
+2019,Actual,OBEGAL (excluding ACC),% of GDP,2.7
+2020,Actual,OBEGAL (excluding ACC),% of GDP,-6.6000000000000005
+2021,Actual,OBEGAL (excluding ACC),% of GDP,-0.7000000000000001
+2022,Actual,OBEGAL (excluding ACC),% of GDP,-2.4
+2023,Actual,OBEGAL (excluding ACC),% of GDP,-1.7999999999999998
+2024,Actual,OBEGAL (excluding ACC),% of GDP,-2.1
+2025,Actual,OBEGAL (excluding ACC),% of GDP,-2.1
+2026,Forecast,OBEGAL (excluding ACC),% of GDP,-2.6
+2027,Forecast,OBEGAL (excluding ACC),% of GDP,-2.4
+2028,Forecast,OBEGAL (excluding ACC),% of GDP,-0.8
+2029,Forecast,OBEGAL (excluding ACC),% of GDP,0.5
+2030,Forecast,OBEGAL (excluding ACC),% of GDP,1.0999999999999999
+2016,Actual,OBEGAL (excluding minority interests),% of GDP,0.7000000000000001
+2017,Actual,OBEGAL (excluding minority interests),% of GDP,1.5
+2018,Actual,OBEGAL (excluding minority interests),% of GDP,1.9
+2019,Actual,OBEGAL (excluding minority interests),% of GDP,2.4
+2020,Actual,OBEGAL (excluding minority interests),% of GDP,-7.3
+2021,Actual,OBEGAL (excluding minority interests),% of GDP,-1.3
+2022,Actual,OBEGAL (excluding minority interests),% of GDP,-2.7
+2023,Actual,OBEGAL (excluding minority interests),% of GDP,-2.4
+2024,Actual,OBEGAL (excluding minority interests),% of GDP,-3.1
+2025,Actual,OBEGAL (excluding minority interests),% of GDP,-3.2
+2026,Forecast,OBEGAL (excluding minority interests),% of GDP,-3.3000000000000003
+2027,Forecast,OBEGAL (excluding minority interests),% of GDP,-3
+2028,Forecast,OBEGAL (excluding minority interests),% of GDP,-1.5
+2029,Forecast,OBEGAL (excluding minority interests),% of GDP,-0.1
+2030,Forecast,OBEGAL (excluding minority interests),% of GDP,0.5
+2016,Actual,Operating balance (excluding minority interests),% of GDP,-2.1
+2017,Actual,Operating balance (excluding minority interests),% of GDP,4.5
+2018,Actual,Operating balance (excluding minority interests),% of GDP,2.8000000000000003
+2019,Actual,Operating balance (excluding minority interests),% of GDP,0.1
+2020,Actual,Operating balance (excluding minority interests),% of GDP,-9.5
+2021,Actual,Operating balance (excluding minority interests),% of GDP,4.7
+2022,Actual,Operating balance (excluding minority interests),% of GDP,-4.6
+2023,Actual,Operating balance (excluding minority interests),% of GDP,1.3
+2024,Actual,Operating balance (excluding minority interests),% of GDP,-2
+2025,Actual,Operating balance (excluding minority interests),% of GDP,-1
+2026,Forecast,Operating balance (excluding minority interests),% of GDP,-0.8999999999999999
+2027,Forecast,Operating balance (excluding minority interests),% of GDP,-1.7000000000000002
+2028,Forecast,Operating balance (excluding minority interests),% of GDP,-0.1
+2029,Forecast,Operating balance (excluding minority interests),% of GDP,1.3
+2030,Forecast,Operating balance (excluding minority interests),% of GDP,2
+2016,Actual,Total Crown expenses,% of GDP,36.8
+2017,Actual,Total Crown expenses,% of GDP,35.9
+2018,Actual,Total Crown expenses,% of GDP,35.199999999999996
+2019,Actual,Total Crown expenses,% of GDP,35.9
+2020,Actual,Total Crown expenses,% of GDP,43.7
+2021,Actual,Total Crown expenses,% of GDP,38.9
+2022,Actual,Total Crown expenses,% of GDP,41.3
+2023,Actual,Total Crown expenses,% of GDP,40.300000000000004
+2024,Actual,Total Crown expenses,% of GDP,42.8
+2025,Actual,Total Crown expenses,% of GDP,42.199999999999996
+2026,Forecast,Total Crown expenses,% of GDP,41.3
+2027,Forecast,Total Crown expenses,% of GDP,41.699999999999996
+2028,Forecast,Total Crown expenses,% of GDP,40.300000000000004
+2029,Forecast,Total Crown expenses,% of GDP,39.2
+2030,Forecast,Total Crown expenses,% of GDP,38.6
+2016,Actual,Total Crown revenue,% of GDP,37.6
+2017,Actual,Total Crown revenue,% of GDP,37.5
+2018,Actual,Total Crown revenue,% of GDP,37.2
+2019,Actual,Total Crown revenue,% of GDP,38.4
+2020,Actual,Total Crown revenue,% of GDP,36.5
+2021,Actual,Total Crown revenue,% of GDP,37.6
+2022,Actual,Total Crown revenue,% of GDP,38.800000000000004
+2023,Actual,Total Crown revenue,% of GDP,38.1
+2024,Actual,Total Crown revenue,% of GDP,39.800000000000004
+2025,Actual,Total Crown revenue,% of GDP,39
+2026,Forecast,Total Crown revenue,% of GDP,38
+2027,Forecast,Total Crown revenue,% of GDP,38.800000000000004
+2028,Forecast,Total Crown revenue,% of GDP,38.9
+2029,Forecast,Total Crown revenue,% of GDP,39.2
+2030,Forecast,Total Crown revenue,% of GDP,39.300000000000004
+2016,Actual,Total assets,% of GDP,113.1
+2017,Actual,Total assets,% of GDP,113.79999999999998
+2018,Actual,Total assets,% of GDP,114.99999999999999
+2019,Actual,Total assets,% of GDP,117.6
+2020,Actual,Total assets,% of GDP,123.8
+2021,Actual,Total assets,% of GDP,127.60000000000001
+2022,Actual,Total assets,% of GDP,137.4
+2023,Actual,Total assets,% of GDP,133.6
+2024,Actual,Total assets,% of GDP,135.60000000000002
+2025,Actual,Total assets,% of GDP,137.5
+2026,Forecast,Total assets,% of GDP,135.3
+2027,Forecast,Total assets,% of GDP,133.29999999999998
+2028,Forecast,Total assets,% of GDP,130.5
+2029,Forecast,Total assets,% of GDP,128.5
+2030,Forecast,Total assets,% of GDP,127.3
+2016,Actual,Total liabilities,% of GDP,76.2
+2017,Actual,Total liabilities,% of GDP,71.5
+2018,Actual,Total liabilities,% of GDP,69.1
+2019,Actual,Total liabilities,% of GDP,71.39999999999999
+2020,Actual,Total liabilities,% of GDP,87.3
+2021,Actual,Total liabilities,% of GDP,81.89999999999999
+2022,Actual,Total liabilities,% of GDP,89.7
+2023,Actual,Total liabilities,% of GDP,85.9
+2024,Actual,Total liabilities,% of GDP,90.2
+2025,Actual,Total liabilities,% of GDP,94
+2026,Forecast,Total liabilities,% of GDP,94.3
+2027,Forecast,Total liabilities,% of GDP,93.30000000000001
+2028,Forecast,Total liabilities,% of GDP,92.9
+2029,Forecast,Total liabilities,% of GDP,91.4
+2030,Forecast,Total liabilities,% of GDP,89.9

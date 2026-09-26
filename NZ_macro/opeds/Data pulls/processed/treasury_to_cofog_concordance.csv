@@ -1,0 +1,15 @@
+treasury_functional_class,closest_cofog_division,mapping_note
+Core government services,General public services,Closest broad match; COFOG also places public-debt transactions in general public services.
+Finance costs,General public services,"Related to public-debt transactions, but retained separately in Treasury reporting."
+Defence,Defence,Close conceptual match.
+Law and order,Public order and safety,Close conceptual match.
+Transport and communications,Economic affairs,Partial match; economic affairs is broader.
+Economic and industrial services,Economic affairs,Partial match; overlaps with other Treasury classes.
+Primary services,Economic affairs,"Partial match; mainly agriculture, forestry and fishing functions."
+Environmental protection,Environmental protection,Close conceptual match.
+Housing and community development,Housing and community amenities,Close conceptual match.
+Health,Health,Close conceptual match.
+"Heritage, culture and recreation","Recreation, culture and religion",Close conceptual match.
+Education,Education,Close conceptual match.
+Social security and welfare,Social protection,Close conceptual match; includes New Zealand Superannuation.
+Other,,No unique COFOG match.

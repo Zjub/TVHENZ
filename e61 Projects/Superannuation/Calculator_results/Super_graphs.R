@@ -96,6 +96,7 @@ ggplot(
   aes(x = age, y = value_dollars/1000, colour = series)
 ) +
   geom_line() +
+  plab() +
   scale_y_continuous_e61(limits = c(0,120,30)) +
   labs_e61(title = "Earnings profile with an early life shock",
            y="$",
