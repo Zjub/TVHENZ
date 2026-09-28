@@ -1,0 +1,15 @@
+authority,state,coefficient
+Monetary,lagged_output,0.10939634010085766
+Monetary,lagged_inflation,0.11073179646995905
+Monetary,debt,-0.2509097602272913
+Monetary,lagged_monetary,0.26491943135774765
+Monetary,lagged_fiscal,-0.00195733649896609
+Monetary,demand_shock,0.17399035492819856
+Monetary,cost_push_shock,0.1854115032942532
+Fiscal,lagged_output,-0.20996169700687586
+Fiscal,lagged_inflation,0.03950544750874048
+Fiscal,debt,-0.7306015333552284
+Fiscal,lagged_monetary,3.492644954176842e-5
+Fiscal,lagged_fiscal,0.21687956268974518
+Fiscal,demand_shock,-0.3339353962835802
+Fiscal,cost_push_shock,0.09215841032575758

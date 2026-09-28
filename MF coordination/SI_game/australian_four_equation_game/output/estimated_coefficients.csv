@@ -1,0 +1,8 @@
+equation,term,estimate,method
+IS,intercept,0.04098674293900403,ordinary least squares; post-estimation sign check
+IS,lagged output gap,0.6287494507727328,ordinary least squares; post-estimation sign check
+IS,real rate gap,-0.036948002726257784,ordinary least squares; post-estimation sign check
+IS,public demand gap,0.051421355523204385,ordinary least squares; post-estimation sign check
+Phillips,intercept,-0.03107145902867921,ordinary least squares; post-estimation sign check
+Phillips,lagged inflation gap,0.5625497798601921,ordinary least squares; post-estimation sign check
+Phillips,"output gap, lag 2",0.15510594039123907,ordinary least squares; post-estimation sign check

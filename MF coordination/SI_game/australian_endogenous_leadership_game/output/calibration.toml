@@ -1,0 +1,12 @@
+[estimated]
+sigma = 0.036948002726257784
+supply_shock_sd = 0.6699569103763775
+rho_pi = 0.5625497798601921
+kappa = 0.15510594039123907
+demand_shock_sd = 0.46387449164984773
+rho_x = 0.6287494507727328
+fiscal_multiplier = 0.051421355523204385
+
+[commitment]
+fiscal_adjustment = 0.04
+monetary_adjustment = 0.05

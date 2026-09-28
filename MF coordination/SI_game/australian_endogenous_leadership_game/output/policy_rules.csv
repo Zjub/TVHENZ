@@ -1,0 +1,71 @@
+regime,authority,state,coefficient
+Coordination,Monetary,lagged_output,0.23881602043855976
+Coordination,Monetary,lagged_inflation,0.13739777529344047
+Coordination,Monetary,debt,-0.3561520465078978
+Coordination,Monetary,lagged_monetary,-0.0
+Coordination,Monetary,lagged_fiscal,-0.0
+Coordination,Monetary,demand_shock,0.3798270044531331
+Coordination,Monetary,cost_push_shock,0.21929423939701628
+Coordination,Fiscal,lagged_output,-0.2133450064109896
+Coordination,Fiscal,lagged_inflation,0.008560361209921425
+Coordination,Fiscal,debt,-0.960662518467911
+Coordination,Fiscal,lagged_monetary,-0.0
+Coordination,Fiscal,lagged_fiscal,-0.0
+Coordination,Fiscal,demand_shock,-0.33931640997664275
+Coordination,Fiscal,cost_push_shock,0.037503214126304835
+Bilateral commitment,Monetary,lagged_output,0.10522362526062515
+Bilateral commitment,Monetary,lagged_inflation,0.10193910993310341
+Bilateral commitment,Monetary,debt,-0.18561876165379895
+Bilateral commitment,Monetary,lagged_monetary,0.2653636933353631
+Bilateral commitment,Monetary,lagged_fiscal,-0.0008418631699904578
+Bilateral commitment,Monetary,demand_shock,0.16735382453424869
+Bilateral commitment,Monetary,cost_push_shock,0.17021732795231043
+Bilateral commitment,Fiscal,lagged_output,-0.2121522827903586
+Bilateral commitment,Fiscal,lagged_inflation,0.03656503079984885
+Bilateral commitment,Fiscal,debt,-0.717214970108554
+Bilateral commitment,Fiscal,lagged_monetary,0.00015946283091870174
+Bilateral commitment,Fiscal,lagged_fiscal,0.2170700971698261
+Bilateral commitment,Fiscal,demand_shock,-0.337419432382205
+Bilateral commitment,Fiscal,cost_push_shock,0.08716029525348781
+Fiscal commitment,Monetary,lagged_output,0.15661375857641835
+Fiscal commitment,Monetary,lagged_inflation,0.15392991612167406
+Fiscal commitment,Monetary,debt,-0.2559811756853599
+Fiscal commitment,Monetary,lagged_monetary,-0.0
+Fiscal commitment,Monetary,lagged_fiscal,-0.0009648506968384448
+Fiscal commitment,Monetary,demand_shock,0.2490877063732463
+Fiscal commitment,Monetary,cost_push_shock,0.25726900631529237
+Fiscal commitment,Fiscal,lagged_output,-0.21223804291681025
+Fiscal commitment,Fiscal,lagged_inflation,0.03659601931728687
+Fiscal commitment,Fiscal,debt,-0.7167720047934443
+Fiscal commitment,Fiscal,lagged_monetary,-0.0
+Fiscal commitment,Fiscal,lagged_fiscal,0.2170751628356861
+Fiscal commitment,Fiscal,demand_shock,-0.33755583031678177
+Fiscal commitment,Fiscal,cost_push_shock,0.08722433962784626
+Flexible Nash,Monetary,lagged_output,0.1567217869538188
+Flexible Nash,Monetary,lagged_inflation,0.1537947084841049
+Flexible Nash,Monetary,debt,-0.254462474348433
+Flexible Nash,Monetary,lagged_monetary,-0.0
+Flexible Nash,Monetary,lagged_fiscal,-0.0
+Flexible Nash,Monetary,demand_shock,0.24925952104007054
+Flexible Nash,Monetary,cost_push_shock,0.25701737374620204
+Flexible Nash,Fiscal,lagged_output,-0.31036636805481066
+Flexible Nash,Fiscal,lagged_inflation,0.041424178816453903
+Flexible Nash,Fiscal,debt,-0.9357546965827016
+Flexible Nash,Fiscal,lagged_monetary,-0.0
+Flexible Nash,Fiscal,lagged_fiscal,-0.0
+Flexible Nash,Fiscal,demand_shock,-0.49362487342672123
+Flexible Nash,Fiscal,cost_push_shock,0.10605751547960915
+Monetary commitment,Monetary,lagged_output,0.10535652344020323
+Monetary commitment,Monetary,lagged_inflation,0.10183437622378973
+Monetary commitment,Monetary,debt,-0.18453587232597488
+Monetary commitment,Monetary,lagged_monetary,0.26536701532342494
+Monetary commitment,Monetary,lagged_fiscal,-0.0
+Monetary commitment,Monetary,demand_shock,0.16756519359296476
+Monetary commitment,Monetary,cost_push_shock,0.17001726854796875
+Monetary commitment,Fiscal,lagged_output,-0.31031396070429595
+Monetary commitment,Fiscal,lagged_inflation,0.04129452663811595
+Monetary commitment,Fiscal,debt,-0.936231176043596
+Monetary commitment,Fiscal,lagged_monetary,0.0006015870698793595
+Monetary commitment,Fiscal,lagged_fiscal,-0.0
+Monetary commitment,Fiscal,demand_shock,-0.4935415217029936
+Monetary commitment,Fiscal,cost_push_shock,0.10582156861267328

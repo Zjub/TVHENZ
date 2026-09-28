@@ -1,0 +1,9 @@
+scenario,equilibrium,monetary,fiscal
+Demand contraction,Static Nash,-0.048281700455207924,0.17602382263454902
+Demand contraction,Monetary leader,-0.04745316942808873,0.17603440339853924
+Demand contraction,Fiscal leader,-0.04828373245519918,0.17552025844592764
+Demand contraction,Static cooperation,-0.0882839642836122,0.12128958268384331
+Cost-push inflation,Static Nash,0.058826202551392,-0.019501806807844028
+Cost-push inflation,Monetary leader,0.05788875320842118,-0.019513778514305323
+Cost-push inflation,Fiscal leader,0.05882651816677794,-0.019423591942478568
+Cost-push inflation,Static cooperation,0.03926738815786809,-0.04626371320290916

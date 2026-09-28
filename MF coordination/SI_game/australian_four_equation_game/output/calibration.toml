@@ -1,0 +1,48 @@
+[recursive]
+social_monetary_adjustment = 0.05
+institutional_nash_monetary_adjustment = 0.05
+inflation_persistence = 0.5625497798601921
+institutional_nash_fiscal_adjustment = 0.04
+output_persistence = 0.6287494507727328
+investment_cost = 0.005
+social_fiscal_adjustment = 0.115
+
+[social]
+debt = 0.15
+fiscal_change = 0.04
+output = 0.5
+discount = 0.99
+inflation = 1.0
+monetary_level = 0.1
+monetary_change = 0.05
+fiscal_level = 0.1
+
+[macro]
+sigma = 0.036948002726257784
+debt_from_inflation = 0.1
+kappa = 0.15510594039123907
+rho_b = 0.995
+debt_from_fiscal = 0.06
+debt_from_interest = 0.015
+fiscal_multiplier = 0.051421355523204385
+beta = 0.99
+
+[monetary_mandate]
+debt = 0.15
+fiscal_change = 0.04
+output = 0.25
+discount = 0.99
+inflation = 1.5
+monetary_level = 0.1
+monetary_change = 0.05
+fiscal_level = 0.1
+
+[fiscal_mandate]
+debt = 0.15
+fiscal_change = 0.04
+output = 0.75
+discount = 0.99
+inflation = 0.5
+monetary_level = 0.1
+monetary_change = 0.05
+fiscal_level = 0.1

@@ -1,0 +1,5 @@
+strategy,social_loss,max_abs_output,max_abs_inflation,max_abs_monetary,max_abs_fiscal
+cooperation,0.0,0.0,0.0,0.0,0.0
+nash,0.0,0.0,0.0,0.0,0.0
+monetary_leader,0.0,0.0,0.0,0.0,0.0
+fiscal_leader,0.0,0.0,0.0,0.0,0.0
