@@ -332,7 +332,7 @@ ggplot(df, aes(x = income/1000)) +
   )) +
   scale_shape_manual(values = c("Budget 2026" = 16, "Inflation only" = 17, "Nominal income growth" = 17)) +
   labs_e61(
-    #title = title_vec,
+    title = "ETR by Gross Taxable Income",
     footnotes = footnotes_vec,
     x = paste0("Gross Taxable Income (", base_year_label, "$)"),
     y = "%",

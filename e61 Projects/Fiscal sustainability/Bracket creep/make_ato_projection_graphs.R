@@ -6,6 +6,7 @@
 ## Outputs:
 ##   projection_graphs/figure_3_etr_change_by_percentile.{png,pdf,csv}
 ##   projection_graphs/figure_4_real_income_gain_clawback.{png,pdf,csv}
+##   Bracket_creep_ATO1_F4b_newBudg.{png,pdf,csv}
 ##   projection_graphs/appendix_scenario_etr_change.{png,pdf,csv}
 
 required_packages <- c("dplyr", "ggplot2", "readr", "scales", "tidyr","theme61","data.table","readxl")
@@ -204,6 +205,8 @@ figure_3_data[fy == "FY2034_35"]
 figure_3_data[fy == "FY2034_35" & percentile_label >= 99]
 
 save_e61(paste0("Bracket_creep_ATO1_F3","_newBudg.png"),res=2,save_data = TRUE,chart_type = "wide",dim = list(width = 15))
+save_e61(paste0("Bracket_creep_ATO1_F3","_newBudg.pdf"),res=2,save_data = TRUE,chart_type = "wide",dim = list(width = 15))
+
 
 figure_4_data <- base_rates %>%
   left_join(final_rates, by = "percentile") %>%
@@ -243,14 +246,69 @@ figure_4_plot <- ggplot(
 figure_4_plot
 
 save_e61(paste0("Bracket_creep_ATO1_F4","_newBudg.png"),res=2,save_data = TRUE,chart_type = "wide",dim = list(width = 15))
+save_e61(paste0("Bracket_creep_ATO1_F4","_newBudg.pdf"),res=2,save_data = TRUE,chart_type = "wide",dim = list(width = 15))
+
+
+# Figure 4b uses a broader definition of bracket creep. In the
+# no-bracket-creep counterfactual, the full tax schedule is indexed by the
+# same growth as the earnings distribution. With proportional earnings
+# growth, this holds each percentile's effective tax rate at its base-year
+# level and gives everyone the same percentage increase in real post-tax
+# income.
+figure_4b_data <- base_rates %>%
+  left_join(
+    final_rates %>% select(percentile, final_baseline_etr),
+    by = "percentile"
+  ) %>%
+  mutate(
+    percentile_label = percentile * 100,
+    final_earnings_indexed_etr = base_etr,
+    after_tax_gain_baseline = (1 + real_income_growth_total) * (1 - final_baseline_etr) -
+      (1 - base_etr),
+    after_tax_gain_earnings_indexed =
+      (1 + real_income_growth_total) * (1 - final_earnings_indexed_etr) -
+      (1 - base_etr),
+    income_gain_clawback = if_else(
+      after_tax_gain_earnings_indexed > 0,
+      (after_tax_gain_earnings_indexed - after_tax_gain_baseline) /
+        after_tax_gain_earnings_indexed,
+      NA_real_
+    )
+  )
+
+figure_4b_plot <- ggplot(
+  figure_4b_data,
+  aes(x = percentile_label, y = income_gain_clawback * 100)
+) +
+  geom_hline(yintercept = 0) +
+  geom_line() +
+  scale_x_continuous(
+    breaks = seq(0, 100, 10),
+    limits = c(0, 100),
+    expand = expansion(mult = c(0, 0.01))
+  ) +
+  scale_y_continuous(labels = label_percent(scale = 1, accuracy = 1)) +
+  labs_e61(
+    title = "Share of disposable income gains lost to bracket creep",
+    x = "Earnings percentile",
+    y = "Share of real post-tax income gain",
+    sources = c("ATO Individual Sample file", "e61"),
+    footnotes = c(
+      "Uses the 2022/23 file. Earnings are inflated to 2025/26 level and the 2025/26 nominal tax system is applied to establish the baseline.",
+      "Assumes earnings growth of 3.7%pa, in line with PBO projections. The no-bracket-creep counterfactual indexes the full tax schedule by earnings growth, holding effective tax rates constant."
+    )
+  )
+
+figure_4b_plot
+
+save_e61(paste0("Bracket_creep_ATO1_F4b", "_newBudg.png"), plot = figure_4b_plot, res = 2, save_data = TRUE, spell_check = FALSE, chart_type = "wide", dim = list(width = 15))
+save_e61(paste0("Bracket_creep_ATO1_F4b", "_newBudg.pdf"), plot = figure_4b_plot, res = 2, save_data = TRUE, spell_check = FALSE, chart_type = "wide", dim = list(width = 15))
 
 setDT(figure_4_data)
 
 mean(figure_4_data$income_gain_clawback)
 
 figure_4_data[percentile == 0.348]
-
-library(readxl)
 
 # tax_results2 <- read_excel(data_path2) %>%
 #   mutate(
