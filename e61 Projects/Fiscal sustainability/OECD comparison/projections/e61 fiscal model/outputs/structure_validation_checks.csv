@@ -1,0 +1,21 @@
+"check","passed"
+"Requested defaults: constant hours, 1.2 percent population, 3.2 percent NGDP per capita",TRUE
+"GDP exactly unchanged at 1.2 and 1.7 percent productivity",TRUE
+"GDP exactly unchanged when average hours growth changes",TRUE
+"GDP growth is product of population and per-capita factors",TRUE
+"Per capita GDP compounds at the selected rate",TRUE
+"Population compounds at the selected rate",TRUE
+"Average hours compound at the selected rate",TRUE
+"More productivity raises real output and lowers prices exactly",TRUE
+"More hours raises real output without raising nominal GDP",TRUE
+"Accounting identity reconciles GDP real output prices and ToT",TRUE
+"More population does not change per-capita GDP",TRUE
+"More population scales employment and total GDP together",TRUE
+"Age-sex population cells sum to the macro population",TRUE
+"Population scenario preserves each age-sex share",TRUE
+"Scaled NDIS path equals full cohort recomputation",TRUE
+"Eligible pensioners use the same scenario population",TRUE
+"Population also changes service demand",TRUE
+"Shared 2030 fiscal and GDP anchors unchanged",TRUE
+"Higher per-capita GDP raises NGDP but not real output",TRUE
+"Legacy NGDP arguments fail explicitly",TRUE

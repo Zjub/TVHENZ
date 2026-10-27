@@ -1,0 +1,7 @@
+"file","url","snapshot_date","status","bytes","md5"
+"imf_indicators.json","https://www.imf.org/external/datamapper/api/v1/indicators","2026-10-27","downloaded",48417,"c79b3fbddaa6a92d02b2f9eb95aab334"
+"imf_net_debt.json","https://www.imf.org/external/datamapper/api/v1/GGXWDN_G01_GDP_PT/AUS","2026-10-27","downloaded",77724,"009dd11693c218895e073dac05ac54d7"
+"imf_gross_debt.json","https://www.imf.org/external/datamapper/api/v1/G_XWDG_G01_GDP_PT/AUS","2026-10-27","downloaded",169558,"5cf0c1a65435914b99f12f001d3d2d1b"
+"oecd_net_liabilities.xml","https://sdmx.oecd.org/public/rest/v1/data/OECD.ECO.MAD,DSD_EO_LTB@DF_EO_LTB,/AUS.GNFLQ.BAU1.A?startPeriod=1990&endPeriod=2100","2026-10-27","downloaded",15022,"5a0d507accd90626cb5037c337447e83"
+"oecd_dataflow.xml","https://sdmx.oecd.org/public/rest/v1/dataflow/OECD.ECO.MAD/DSD_EO_LTB@DF_EO_LTB/latest?references=none","2026-10-27","downloaded",3998,"ac1bc173a79eb498db3c1cb262a26f38"
+"oecd_survey_figure_1_14.xlsx","https://stat.link/gdxr47","2026-10-27","downloaded",36985,"093b2e9bf82875d5dcd2c890e3a986e9"

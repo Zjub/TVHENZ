@@ -1,0 +1,24 @@
+parameter,value,unit,status,source_url
+pension_age,67,years,Current eligibility; residence condition not simulated,https://www.servicesaustralia.gov.au/who-can-get-age-pension
+pension_single_fortnight,1237.70,AUD,Maximum including supplements at 20 September 2026,https://www.servicesaustralia.gov.au/how-much-age-pension-you-can-get
+pension_couple_each_fortnight,933.00,AUD,Maximum including supplements at 20 September 2026,https://www.servicesaustralia.gov.au/how-much-age-pension-you-can-get
+asset_free_single_home,333000,AUD,20 September 2026,https://www.servicesaustralia.gov.au/assets-test-for-age-pension
+asset_free_single_renter,600000,AUD,20 September 2026,https://www.servicesaustralia.gov.au/assets-test-for-age-pension
+asset_free_couple_home,499000,AUD combined,20 September 2026,https://www.servicesaustralia.gov.au/assets-test-for-age-pension
+asset_free_couple_renter,766000,AUD combined,20 September 2026,https://www.servicesaustralia.gov.au/assets-test-for-age-pension
+asset_taper_fortnight,0.003,AUD per AUD excess assets,Three dollars per thousand per fortnight,https://guides.dss.gov.au/social-security-guide/4/2/2
+income_free_single,226,AUD per fortnight,20 September 2026,https://www.servicesaustralia.gov.au/income-test-for-age-pension
+income_free_couple,396,AUD combined per fortnight,20 September 2026,https://www.servicesaustralia.gov.au/income-test-for-age-pension
+income_taper_single,0.50,AUD per AUD excess income,Current standard rule,https://www.servicesaustralia.gov.au/income-test-for-age-pension
+income_taper_couple_each,0.25,AUD per AUD combined excess income,Current standard rule,https://www.servicesaustralia.gov.au/income-test-for-age-pension
+deeming_lower,0.0175,annual rate,20 September 2026 determination,https://www.legislation.gov.au/F2026L01083/asmade
+deeming_upper,0.0375,annual rate,20 September 2026 determination,https://www.legislation.gov.au/F2026L01083/asmade
+deeming_threshold_single,66800,AUD,20 September 2026,https://ministers.dss.gov.au/media-releases/19221
+deeming_threshold_couple,110600,AUD combined,20 September 2026,https://ministers.dss.gov.au/media-releases/19221
+super_guarantee,0.12,earnings share,Full SG rate from July 2025,https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/super-guarantee
+super_contributions_tax,0.15,contribution share,Simplified concessional contribution tax; caps not modelled,https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families
+super_real_return,0.04,annual real rate,User-selected baseline; active default in default_assumptions; not an estimated return,
+retirement_drawdown,0.05,annual balance share,Stylised constant drawdown; not age-specific statutory minimums,
+ndis_plan_expenses_2025,46.352178,AUD billion,NDIA Annual Report 2024-25 Note 1.1G; excludes administration,https://www.ndis.gov.au/media/8108/download
+aged_care_expenses_2025,39.8,AUD billion,All-government total; AIHW GEN 28 August 2026,https://www.gen-agedcaredata.gov.au/topics/spending-on-aged-care
+age_pension_expenses_2025,62.2,AUD billion,ANAO 2024-25 outlay; cash-to-GFS allocation approximation,https://www.anao.gov.au/work/performance-audit/administration-of-the-age-pension

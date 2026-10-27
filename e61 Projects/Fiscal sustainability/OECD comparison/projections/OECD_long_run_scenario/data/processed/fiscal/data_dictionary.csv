@@ -1,0 +1,22 @@
+variable,definition,unit
+year,Calendar year; PBO anchor paired to financial year ending in this year,year
+pop,OECD trend total population (POPS),persons
+employment,OECD potential employment (ETPT),persons
+real_gdp,"OECD potential output (GDPVTRD), 2021 PPP USD level",2021 PPP USD
+nominal_gdp,Base-2024 nominal GDP multiplied by potential real output and BAU1 GDP-deflator growth,nominal index/level; growth rates used
+employment_rate,OECD trend employment rate 15-74 (ERS1574)/100,decimal fraction
+share65p,UN population share aged 65+,decimal fraction
+share55_64,UN population share aged 55-64,decimal fraction
+share65_74,UN population share aged 65-74,decimal fraction
+share75p,UN population share aged 75+,decimal fraction
+share5_24,UN population share aged 5-24,decimal fraction
+er55_64,"Age 55-64 employment rate: observed 2024, then specified projection rule",decimal fraction
+er65_74,"Age 65-74 employment rate: observed 2024, then specified projection rule",decimal fraction
+interest_rate,OECD implicit interest rate on gross government liabilities/100,decimal fraction
+health_ratio,Public health and health-related long-term care spending/GDP,decimal fraction
+pension_ratio,Four public cash pension categories from the 2019 definition/GDP,decimal fraction
+other_ratio,"PBO expenses less OECD-derived interest, health and pensions; mixed-concept residual",decimal fraction
+capital_ratio,PBO net capital investment/GDP held at the initial ratio,decimal fraction
+gross_liabilities_ratio,"OECD general-government gross financial liabilities/GDP, not PBO gross debt",decimal fraction
+assets_ratio,OECD gross minus net financial liabilities/GDP; includes non-debt financial assets,decimal fraction
+primary_revenue_ratio,"Revenue excluding interest receipts/GDP, initially inferred from OECD primary balance",decimal fraction

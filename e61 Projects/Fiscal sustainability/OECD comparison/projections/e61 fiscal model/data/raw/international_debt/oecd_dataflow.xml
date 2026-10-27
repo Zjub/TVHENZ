@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v10.11.8.0-->
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <message:Header>
+    <message:ID>IDREF1579</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2026-10-27T06:39:12.0990955+01:00</message:Prepared>
+    <message:Sender id="Unknown" />
+    <message:Receiver id="Unknown" />
+  </message:Header>
+  <message:Structures>
+    <structure:Dataflows>
+      <structure:Dataflow id="DSD_EO_LTB@DF_EO_LTB" agencyID="OECD.ECO.MAD" version="1.0" isFinal="true">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>NonProductionDataflow</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">true</common:AnnotationText>
+          </common:Annotation>
+          <common:Annotation id="@SDMX">
+            <common:AnnotationTitle>REF_AREA,COMBINED_UNIT_MEASURE</common:AnnotationTitle>
+            <common:AnnotationType>LAYOUT_ROW</common:AnnotationType>
+          </common:Annotation>
+          <common:Annotation id="@SDMX">
+            <common:AnnotationTitle>TIME_PERIOD</common:AnnotationTitle>
+            <common:AnnotationType>LAYOUT_COLUMN</common:AnnotationType>
+          </common:Annotation>
+          <common:Annotation id="@SDMX">
+            <common:AnnotationTitle>MEASURE</common:AnnotationTitle>
+            <common:AnnotationType>LAYOUT_ROW_SECTION</common:AnnotationType>
+          </common:Annotation>
+          <common:Annotation>
+            <common:AnnotationTitle>DECIMALS</common:AnnotationTitle>
+            <common:AnnotationType>LAYOUT_NOTE</common:AnnotationType>
+          </common:Annotation>
+          <common:Annotation id="@SDMX">
+            <common:AnnotationTitle>UNIT_MULT=0</common:AnnotationTitle>
+            <common:AnnotationType>NOT_DISPLAYED</common:AnnotationType>
+          </common:Annotation>
+          <common:Annotation id="@SDMX">
+            <common:AnnotationTitle>MEASURE=GDPVTRD_CAP,FREQ=A,TIME_PERIOD_START=2026,TIME_PERIOD_END=2030</common:AnnotationTitle>
+            <common:AnnotationType>DEFAULT</common:AnnotationType>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">OECD Economic Outlook 117 long-term scenarios</common:Name>
+        <common:Name xml:lang="fr">Perspectives Economiques 117: scenarios long terme</common:Name>
+        <common:Description xml:lang="en">Long-run economic scenarios (to 2100) are produced every 2-3 years to look at factors influencing the global economy that play out over many decades. Different vintages look at a different set of scenarios described in an associated publication. Selected series from these scenarios are available here for individual OECD, accession and G20 economies. A breakdown of the global economy by regions (following World Bank definitions) is also provided.</common:Description>
+        <common:Description xml:lang="fr">Des scénarios économiques à long terme (jusqu'en 2100) sont produits tous les 2 à 3 ans afin d'analyser les facteurs influençant l'économie mondiale sur plusieurs décennies. Chaque millésime examine un ensemble de scénarios différents, décrits dans une publication associée. Une sélection de séries est disponible ici pour les économies de l'OCDE, les pays candidats et le G20. Une ventilation de l'économie mondiale par régions (selon les définitions de la Banque mondiale) est également fournie.</common:Description>
+        <structure:Structure>
+          <Ref id="DSD_EO_LTB" version="1.0" agencyID="OECD.ECO.MAD" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+    </structure:Dataflows>
+  </message:Structures>
+</message:Structure>

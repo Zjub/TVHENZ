@@ -1,0 +1,65 @@
+"check","passed"
+"24 unique positive source subfunctions",TRUE
+"Every subfunction has traceable source and limitations",TRUE
+"2025 allocations sum to every original programme control",TRUE
+"2030 allocations sum to every unchanged programme anchor",TRUE
+"ABS education subfunctions match GFS education total",TRUE
+"Hospital allocation uses government funding only",TRUE
+"PBS removed once from primary-care source",TRUE
+"Health residual absorbs GFS reconciliation",TRUE
+"Separate health profiles retained",TRUE
+"NDIS settings and annual projected spending unchanged",TRUE
+"Pension annual projected spending unchanged",TRUE
+"All parent 2030 spending and GDP anchors unchanged",TRUE
+"Future health and education now respond to distinct demand profiles",TRUE
+"Health subfunctions sum in every year",TRUE
+"Education subfunctions sum in every year",TRUE
+"Age Pension subfunctions sum in every year",TRUE
+"Aged care subfunctions sum in every year",TRUE
+"NDIS subfunctions sum in every year",TRUE
+"Other social protection subfunctions sum in every year",TRUE
+"Other public services subfunctions sum in every year",TRUE
+"Defence subfunctions sum in every year",TRUE
+"Each detailed spending level equals anchor times factors",TRUE
+"Displayed factor ratios reconstruct each endpoint pct 2030 FALSE",TRUE
+"Exact contribution identity pct 2030 FALSE",TRUE
+"Selected scope/currency endpoint reconciliation pct 2030 FALSE",TRUE
+"Displayed factor ratios reconstruct each endpoint pct 2030 TRUE",TRUE
+"Exact contribution identity pct 2030 TRUE",TRUE
+"Selected scope/currency endpoint reconciliation pct 2030 TRUE",TRUE
+"Displayed factor ratios reconstruct each endpoint pct 2040 FALSE",TRUE
+"Exact contribution identity pct 2040 FALSE",TRUE
+"Selected scope/currency endpoint reconciliation pct 2040 FALSE",TRUE
+"Displayed factor ratios reconstruct each endpoint pct 2040 TRUE",TRUE
+"Exact contribution identity pct 2040 TRUE",TRUE
+"Selected scope/currency endpoint reconciliation pct 2040 TRUE",TRUE
+"Displayed factor ratios reconstruct each endpoint bn 2030 FALSE",TRUE
+"Exact contribution identity bn 2030 FALSE",TRUE
+"Selected scope/currency endpoint reconciliation bn 2030 FALSE",TRUE
+"Displayed factor ratios reconstruct each endpoint bn 2030 TRUE",TRUE
+"Exact contribution identity bn 2030 TRUE",TRUE
+"Selected scope/currency endpoint reconciliation bn 2030 TRUE",TRUE
+"Displayed factor ratios reconstruct each endpoint bn 2040 FALSE",TRUE
+"Exact contribution identity bn 2040 FALSE",TRUE
+"Selected scope/currency endpoint reconciliation bn 2040 FALSE",TRUE
+"Displayed factor ratios reconstruct each endpoint bn 2040 TRUE",TRUE
+"Exact contribution identity bn 2040 TRUE",TRUE
+"Selected scope/currency endpoint reconciliation bn 2040 TRUE",TRUE
+"Displayed factor ratios reconstruct each endpoint real_bn 2030 FALSE",TRUE
+"Exact contribution identity real_bn 2030 FALSE",TRUE
+"Selected scope/currency endpoint reconciliation real_bn 2030 FALSE",TRUE
+"Displayed factor ratios reconstruct each endpoint real_bn 2030 TRUE",TRUE
+"Exact contribution identity real_bn 2030 TRUE",TRUE
+"Selected scope/currency endpoint reconciliation real_bn 2030 TRUE",TRUE
+"Displayed factor ratios reconstruct each endpoint real_bn 2040 FALSE",TRUE
+"Exact contribution identity real_bn 2040 FALSE",TRUE
+"Selected scope/currency endpoint reconciliation real_bn 2040 FALSE",TRUE
+"Displayed factor ratios reconstruct each endpoint real_bn 2040 TRUE",TRUE
+"Exact contribution identity real_bn 2040 TRUE",TRUE
+"Selected scope/currency endpoint reconciliation real_bn 2040 TRUE",TRUE
+"General inflation cancels for price-indexed services in real measure",TRUE
+"Interaction allocated symmetrically and dummy factor zero",TRUE
+"Zero-valued endpoint factors remain finite and exact",TRUE
+"Factor relabelling only relabels contributions",TRUE
+"Invalid year range rejected",TRUE
+"Zero-debt stress contribution identity remains finite",TRUE

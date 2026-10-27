@@ -1,0 +1,2435 @@
+    OECD Economics Department Working Papers No. 1877
+
+  Illustrating long-run fiscal
+challenges using the Long-             Yvan Guillemette
+                 Term Model
+                                    https://dx.doi.org/10.1787/421bf86f-en
+
+         OECD Economics Department Working Papers
+
+
+
+Illustrating long-run
+fiscal challenges using
+the Long-Term Model
+
+By: Yvan Guillemette
+
+
+
+
+                                      No. 1877
+
+                                                                                |1
+
+
+                   OECD Economics Department Working Papers
+
+
+
+
+  Illustrating long-run fiscal challenges using
+              the Long-Term Model
+
+                                         No. 1877
+
+
+
+
+PUBE
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+2|
+
+This work is issued under the responsibility of the Secretary-General of the OECD and does not necessarily
+reflect the official view of OECD member countries.
+Working Papers describe preliminary results or research in progress by the author(s) and are published to
+stimulate discussion on a broad range of issues on which the OECD works.
+Comments on Working Papers are welcomed and may be sent to the OECD Economics Department.
+This document, as well as any data and map included herein, are without prejudice to the status of or
+sovereignty over any territory, to the delimitation of international frontiers and boundaries and to the name
+of any territory, city or area.
+The statistical data for Israel are supplied by and under the responsibility of the relevant Israeli authorities.
+The use of such data by the OECD is without prejudice to the status of the Golan Heights, East Jerusalem
+and Israeli settlements in the West Bank under the terms of international law.
+
+
+Cover image: <U+00A9> Shutterstock / whiteMocca
+
+
+
+
+<U+00A9> OECD 2026
+
+            Attribution 4.0 International (CC BY 4.0)
+This work is made available under the Creative Commons Attribution 4.0 International licence. By using
+this     work,     you  accept      to    be    bound  by     the     terms      of     this   licence
+(https://creativecommons.org/licenses/by/4.0/).
+Attribution <U+2013> you must cite the work.
+Translations <U+2013> you must cite the original work, identify changes to the original and add the following text: In
+the event of any discrepancy between the original work and the translation, only the text of original work
+should be considered valid.
+Adaptations <U+2013> you must cite the original work and add the following text: This is an adaptation of an
+original work by the OECD. The opinions expressed and arguments employed in this adaptation should
+not be reported as representing the official views of the OECD or of its Member countries.
+Third-party material <U+2013> the licence does not apply to third-party material in the work. If using such material,
+you are responsible for obtaining permission from the third party and for any claims of infringement.
+You must not use the OECD logo, visual identity or cover image without express permission or suggest
+the OECD endorses your use of the work.
+Any dispute arising under this licence shall be settled by arbitration in accordance with the Permanent
+Court of Arbitration (PCA) Arbitration Rules 2012. The seat of arbitration shall be Paris (France). The
+number of arbitrators shall be one.
+
+
+
+
+                       ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                       |3
+
+                                            ABSTRACT/R<U+00C9>SUM<U+00C9>
+                  Illustrating long-run fiscal challenges using the Long-Term Model
+This paper presents updated estimates of long-run fiscal gaps for 35 OECD and accession candidate
+countries using the OECD Global Long-Term Model. The long-run fiscal gap measures the fiscal
+adjustment required at the 2060 horizon to keep public debt ratios stable near current levels while
+maintaining current service standards and benefit entitlements. The methodology incorporates several
+refinements, including projected increases in defence spending and a more detailed treatment of primary
+expenditure. In the absence of additional policy action, the median country would require a fiscal
+adjustment of 4.7 percentage points of GDP between 2027 and 2060 to stabilise debt, with substantially
+larger adjustments in some countries. Population ageing is the main driver of long-run fiscal pressures
+through higher pension, health and long-term care spending, compounded in many cases by weak initial
+fiscal positions. The paper also assesses the sensitivity of fiscal gaps to key assumptions and policy
+scenarios.
+Keywords: long-term projection, long-run fiscal gap, fiscal sustainability, fiscal pressure
+JEL Classification: H68, E17, C53, O57, H55
+
+
+
+                          **************************************************************
+
+
+
+       Illustration des d<U+00E9>fis budg<U+00E9>taires <U+00E0> longue <U+00E9>ch<U+00E9>ance <U+00E0> l'aide du mod<U+00E8>le <U+00E0> long terme
+Ce document pr<U+00E9>sente des estimations actualis<U+00E9>es des <U+00E9>carts budg<U+00E9>taires <U+00E0> long terme pour 35 pays de
+l<U+2019>OCDE et pays candidats <U+00E0> l<U+2019>adh<U+00E9>sion, fond<U+00E9>es sur le mod<U+00E8>le mondial de long terme de l<U+2019>OCDE. L<U+2019><U+00E9>cart
+budg<U+00E9>taire <U+00E0> long terme mesure l<U+2019>ajustement budg<U+00E9>taire n<U+00E9>cessaire <U+00E0> l<U+2019>horizon 2060 pour stabiliser les
+ratios de dette publique <U+00E0> des niveaux proches de ceux observ<U+00E9>s actuellement, tout en maintenant les
+normes de service et les droits aux prestations en vigueur. La m<U+00E9>thodologie int<U+00E8>gre plusieurs
+am<U+00E9>liorations, notamment la prise en compte des hausses projet<U+00E9>es des d<U+00E9>penses de d<U+00E9>fense et un
+traitement plus d<U+00E9>taill<U+00E9> des d<U+00E9>penses primaires. En l<U+2019>absence de nouvelles mesures, le pays m<U+00E9>dian
+devrait proc<U+00E9>der <U+00E0> un ajustement budg<U+00E9>taire de 4,7 points de pourcentage du PIB entre 2027 et 2060 pour
+stabiliser sa dette, des ajustements nettement plus importants <U+00E9>tant requis dans certains pays. Le
+vieillissement d<U+00E9>mographique constitue le principal facteur de pression budg<U+00E9>taire <U+00E0> long terme, en raison
+de la hausse des d<U+00E9>penses li<U+00E9>es aux retraites, <U+00E0> la sant<U+00E9> et aux soins de longue dur<U+00E9>e, une situation
+aggrav<U+00E9>e dans de nombreux cas par une position budg<U+00E9>taire initiale fragile. Le document <U+00E9>value
+<U+00E9>galement la sensibilit<U+00E9> de ces <U+00E9>carts budg<U+00E9>taires aux principales hypoth<U+00E8>ses et aux diff<U+00E9>rents sc<U+00E9>narios
+de politique publique.
+Mots-cl<U+00E9>s : projection <U+00E0> long terme, <U+00E9>cart budg<U+00E9>taire <U+00E0> long terme, viabilit<U+00E9> des finances publiques,
+pression budg<U+00E9>taire
+Classification JEL : H68, E17, C53, O57, H55
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+4|
+
+
+
+Table of contents
+
+
+Illustrating long-run fiscal challenges using the Long-Term Model                                             6
+     1. Introduction                                                                                           7
+     2. The long-run fiscal gap indicator and its components                                                   8
+     3. Some sensitivity analyses                                                                             31
+     4. Complementary illustrations of the need for long-run fiscal adjustments                               38
+     5. The energy transition is potentially an additional source of expenditure pressure                     41
+
+References                                                                                                    45
+Annex A. Decomposition of the long-run fiscal gap indicator                                                   48
+Annex B. Projection of public pension expenditure                                                             51
+Annex C. Individual country charts for net debt and gross financing needs projections 53
+
+
+Figures
+Figure 1. Projected change in cyclically-adjusted government primary balance, 2025-27                         10
+Figure 2. Long-run fiscal gap at the 2060 horizon                                                             11
+Figure 3. Evolution of fiscal gap in the median country                                                       12
+Figure 4. Initial structural fiscal gap                                                                       13
+Figure 5. The <U+0001D493><U+0001D493> <U+2212> <U+0001D488><U+0001D488> differentials are generally negative in 2027                                            14
+Figure 6. The <U+0001D493><U+0001D493><U+0001D493><U+0001D493> <U+2212> <U+0001D488><U+0001D488> differential crucial to debt dynamics normalises in the projection period             15
+Figure 7. The <U+0001D493><U+0001D493><U+0001D493><U+0001D493> <U+2212> <U+0001D488><U+0001D488> differentials are all positive by 2060                                                15
+Figure 8. The <U+0001D493><U+0001D493><U+0001D493><U+0001D493> <U+2212> <U+0001D488><U+0001D488> differentials remain negative or zero by 2060                                         17
+Figure 9. Share of valuation effects in annual change in government net financial assets, 2005-24             18
+Figure 10. Decomposition of the <U+2018>change in <U+0001D493><U+0001D493> <U+2212> <U+0001D488><U+0001D488><U+2019> component of the long-run fiscal gap, 2027-60             19
+Figure 11. Projected change in health and long-term care expenditure, 2027-60                                 21
+Figure 12. Average pension benefit ratio in the European Union                                                22
+Figure 13. Three broad factors affecting pension expenditure projections                                      23
+Figure 14. The contribution of already-legislated pension age reforms to reducing long-run fiscal gaps        25
+Figure 15. Defence expenditure                                                                                26
+Figure 16. Change in other primary expenditure, 2027-60                                                       26
+Figure 17. Change in other current primary expenditure as a share of GDP between 2027 and 2060                29
+Figure 18. Net capital expenditure ex-defence is assumed to converge to 0.8% of potential GDP                 30
+Figure 19. Government net capital expenditure ex-defence as a share of total net investment                   31
+Figure 20. Sensitivity of long-run fiscal gap to +/- 1 percentage point on interest rates                     32
+Figure 21. Impact of lowering gross indebtedness by 50 pp of GDP                                              33
+Figure 22. Impact on long-run fiscal gap of a 10% boost to potential output by 2060 according to the supply
+component responsible                                                                                         34
+Figure 23. Impact on long-run fiscal gap of raising net international migration by 0.1% of population         35
+Figure 24. Impact on long-run fiscal gap of raising statutory retirement ages by one year by 2035             36
+
+
+                        ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                               |5
+
+Figure 25. Impact on long-run fiscal gap of assuming price as opposed to wage indexation of pensions          37
+Figure 26. Net government debt with fiscal adjustment rule switched off, 2027-45                              39
+Figure 27. Change in net government debt from 2027 with the fiscal adjustment rule switched off               40
+Figure 28. Projected annual gross government financing needs                                                  41
+Figure 29. Increase in low-carbon electrical capacity by 2050 in the energy transition scenario               43
+Figure 30. Projected capital expenditure for low-carbon electrical capacity and grid updating, 2028-to-2035
+average                                                                                                       44
+
+
+
+Tables
+Table 1. Estimated equation for implicit average rate of return on government financial assets                16
+Table 2. Summary of baseline assumptions for primary government expenditure                                   19
+Table 3. Assumptions for other current primary government expenditure                                         28
+Table 4. Assumptions for new low-carbon electricity generation capacity                                       42
+
+
+
+Table A A.1. Variable names and definitions                                                                   48
+Table A A.2. Decomposition of the long-run fiscal gap                                                         50
+
+
+
+Box
+Box 1. The cohort employment model and the calculation of average effective retirement ages                   23
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+6|
+
+
+
+
+    Illustrating long-run fiscal challenges
+    using the Long-Term Model
+
+                                                                                            By Yvan Guillemette 1
+
+
+
+
+    Main findings
+    This paper presents the latest estimates of long-run fiscal gaps based on the OECD Global Long-Term
+    Model. It describes the current methodology in detail and assesses the indicator<U+2019>s sensitivity to key
+    assumptions, covering 35 OECD and accession candidate countries. This version introduces several
+    refinements to the previous methodology, including explicit accounting for projected increases in
+    defence expenditure, a more detailed treatment of current primary expenditure, and the inclusion of
+    revaluation effects on government financial assets. The analysis provides illustrative estimates of future
+    fiscal challenges across countries using a common stylised framework. Given this, individual-country
+    results should not be viewed as precise quantifications. The main findings are:
+       <U+2022>   In the absence of further policy changes, maintaining current service standards and benefits
+           while keeping the gross public debt ratio stable would require a fiscal adjustment of 4.7
+           percentage points (pp) of GDP between 2027 and 2060 in the median country. In ten countries,
+           the required fiscal adjustment exceeds 8 pp of GDP.
+       <U+2022>   The main sources of long-run fiscal gaps are weak initial fiscal positions relative to those that
+           would keep government debt-to-GDP ratios stable (0.9 pp of GDP in the median country), and
+           population ageing, which raises public expenditure on both pensions (2.2 pp) as well as health
+           and long-term care (1.8 pp).
+       <U+2022>   Substantial long-run fiscal gaps imply the need for higher revenue or commensurate
+           expenditure restraint to prevent rising government debt ratios. Without revenue adjustments or
+           spending reductions, government net debt could rise by 43 pp of GDP by 2045 in the median
+           country, and by up to 124 pp in the United States.
+       <U+2022>   The required fiscal adjustment through 2060 is marginal (<0.5 pp of GDP) or negative in three
+           countries <U+2014> Denmark, Iceland and Ireland <U+2014> reflecting relatively strong initial fiscal positions
+
+
+1
+  Acknowledgments: Yvan Guillemette is a Senior Economist in the OECD Economics Department. The author would
+like to thank Sebastian Barnes, Ben Conigrave, Nicolas Gonne, Zeev Krill, Nigel Pain, Sebastien Turban, David Turner
+and Filiz Unsal for their comments and discussions on drafts of the paper, as well as Thomas Chalaux for statistical
+assistance and Isabelle Fakih for editorial assistance.
+
+
+
+
+                         ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                             |7
+
+
+         as well as low or negative net public debt, and in the case of Denmark future statutory retirement
+         ages linked to life expectancy.
+     <U+2022>   Long-run fiscal gap estimates are sensitive to interest-rate assumptions. In a scenario with a
+         one percentage point increase in interest rates over baseline but unchanged growth, long-run
+         fiscal gaps rise by 1-1<U+00BC> pp of GDP in countries with the largest debt burdens, such as Greece,
+         Italy, and Japan.
+     <U+2022>   Boosting growth could help improve fiscal outcomes but is unlikely to fully offset long-run
+         adjustment needs, and the fiscal gain depends on the source of growth. Reforms that raise
+         average annual potential growth by 0.3 pp through to 2060 have little impact on long-run fiscal
+         gaps if they work by increasing economy-wide trend labour efficiency. This is because much
+         government expenditure is made up of wages and transfers whose real cost tends to rise with
+         broad productivity growth. Reforms that operate through higher employment have a substantial
+         effect on long-run fiscal gaps (2<U+00BD> pp reduction relative to baseline in the median country). The
+         fiscal dividends from higher growth could be larger if interest rates do not adjust one-for-one to
+         higher growth rates in the long run, if efficiency gains are larger in the public than in the private
+         sector, or if tax thresholds are indexed to prices instead of wages.
+     <U+2022>   Increasing net inward international migration by 0.1% of the population by 2033 could reduce
+         long-run fiscal gaps by about 0.6 pp of GDP in the median country by 2060 due to the younger
+         age composition of migrants, with the total population about 3<U+00BD> per cent higher than baseline.
+         Most of this fiscal dividend stems from lower pension spending, as higher migration reduces the
+         ratio of retirees to workers.
+     <U+2022>   Raising the statutory retirement age by one year lowers long-run fiscal gaps by 0.4 pp of GDP
+         in the median country, with even larger effects where pension expenditures are relatively high
+         and/or where retirees-to-workers and population-to-workers ratios are projected to rise the most.
+     <U+2022>   Shifting from the baseline assumption of full wage indexation to price indexation of pension
+         benefits has a substantial effect, reducing long-run fiscal gaps by 4<U+00BD> pp of GDP in the median
+         country by 2060, and by 7-9 pp in the most affected countries, although this would imply an
+         increase in old-age poverty.
+     <U+2022>   In an energy-transition scenario consistent with the Paris Agreement goal of limiting global
+         temperature increases to well below 2<U+00B0>C by 2100, substantial capital investment in new
+         electricity-generation capacity would be required. If governments finance a large share of this
+         investment, the transition could add a few percentage points of GDP to expenditure pressure
+         over the next decade in some countries.
+
+
+
+1. Introduction
+
+Most OECD governments face long-run fiscal challenges due to weak initial fiscal positions, rising financing
+costs, slowing economic growth, and mounting spending pressures linked to population ageing and the
+increasing relative price of government-provided services. The magnitude of this challenge can be
+illustrated with long-run fiscal gap estimates from the OECD Global Long-Term Model (LTM).
+This indicator, previously called <U+201C>long-run fiscal pressure<U+201D>, first appeared in Guillemette and Turner
+(2018[1]). The methods for projecting certain fiscal components and the way the overall long-run fiscal gap
+is decomposed have evolved subsequently, for instance separating out defence expenditure and
+projecting it explicitly. In addition to presenting the latest estimates, this paper describes the current
+methodology in detail and assesses the indicator<U+2019>s sensitivity to key assumptions. It also updates estimates
+of capital costs for new electricity generation previously published in Guillemette and Ch<U+00E2>teau (2023[2]), a
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+8|
+
+potential additional fiscal challenge not included in the standard indicator. Although the LTM horizon is now
+2100, the analysis in this note runs to 2060 to be comparable to earlier work.
+The scenarios and fiscal projections in this note are intended to illustrate broad trends and support
+discussion of future fiscal challenges. They aim to provide approximate orders of magnitude and, by
+applying a common and relatively simple framework across countries, enable meaningful cross-country
+comparisons. However, the results should not be viewed as precise estimates for individual countries. The
+LTM relies largely on stylised assumptions and reduced-form equations and omits many country-specific
+factors, a necessary trade-off for generating scenarios across numerous economies. Such factors may
+include country-specific institutional arrangements or projected balance-sheet developments, such as the
+accumulation of assets in funded public pension plans. The LTM also does not account for potential
+shorter-term macroeconomic responses to fiscal actions. Moreover, uncertainty surrounding multi-decade
+projections is inherently large. Some sources of uncertainty are illustrated below, but the true extent,
+including unquantifiable risks, is likely to be substantially greater.
+Broader analyses of long-run fiscal challenges and policy implications can be found in Rouzet et al.
+(2019[3]), Crowe et al. (2022[4]), Koutsogeorgopoulou and Morgavi (2025[5]) and OECD (2025[6]). In addition,
+OECD Economic Surveys provide extensive country-specific analysis of short and long-run fiscal
+challenges and policy recommendations. For instance, the potential short-run impact of sustained fiscal
+action is discussed in some recent Country Surveys (OECD, 2024[7]; OECD, 2024[8]).
+The note is structured as follows. Section 2 presents the latest estimates of long-run fiscal gaps. Section
+3 examines the sensitivity of these estimates to major assumptions underlying the long-term scenarios.
+Section 4 considers long-run fiscal sustainability from a different angle by projecting government debt-to-
+GDP ratios and gross financing needs. Finally, Section 5 updates previously published estimates of
+potential capital costs associated with building new electricity-generation capacity in both the baseline and
+an energy-transition scenario.
+
+
+2. The long-run fiscal gap indicator and its components
+
+        The long-term model and the fiscal closure rule
+
+The LTM is a country-level model with an annual frequency, comprising dynamic projection rules and
+identities for key variables over a horizon to 2100. For each country, the model<U+2019>s core is a production
+function with standard inputs <U+2014> labour and capital <U+2014> and labour efficiency. The LTM covers 139 individual
+countries, with a further 55 countries grouped into three regional aggregates. Most variables are anchored
+to the latest OECD Economic Outlook; for this note, the starting point is the OECD Economic Outlook 119
+database of June 2026, with projections until 2027.
+The model includes a <U+201C>fiscal block<U+201D> that projects government primary expenditure by function, interest
+payments and receipts, and the evolution of government financial assets and liabilities. This block is
+available for 33 OECD countries (Chile, Colombia, Costa Rica, Mexico and T<U+00FC>rkiye are excluded due to
+incomplete comparable fiscal data) and three accession candidate countries (Bulgaria, Croatia, and
+Romania). Norway is typically excluded from cross-country comparisons because of its exceptionally large
+net financial asset position, although a modified fiscal block is available for more tailored analyses. This
+note therefore focuses on the remaining 35 countries for which a fiscal block exists in the LTM. Future
+work could aim to expand fiscal projections and the long-run pressure indicators to a larger number of
+countries.
+In a multi-decade model, a technical requirement is that the government debt-to-GDP ratio must eventually
+stabilise. For this purpose, the model includes a reaction function that dynamically adjusts the ratio of
+cyclically adjusted primary revenue to potential GDP to stabilise the gross debt ratio at its value in the final
+
+
+
+                       ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                              |9
+
+year of the OECD Economic Outlook projection (2027). This also implies stabilising the net government
+debt-to-GDP ratio given the LTM assumption that government financial assets remain stable as a share of
+GDP (see section 2.4). The projected change in the revenue ratio over a long horizon is referred to as the
+long-run fiscal gap or, interchangeably, the required long-run fiscal adjustment. It provides a benchmark
+metric of the fiscal challenge over the long run, accounting for the initial fiscal position as well as projected
+growth, interest rates, and expenditure trajectories.
+The use of a revenue measure for debt stabilisation in the LTM is a technical modelling choice, not a policy
+prescription. The appropriate policy mix will differ across countries and may include revenue-raising
+measures alongside expenditure reforms, pension and health reforms, growth-enhancing reforms, and in
+some cases additional debt financing. Other considerations not captured in the LTM framework, such as
+distributional impacts, may also inform policy choices.
+The long-run fiscal gap indicator has several advantages:
+    <U+2022>   It is defined in structural terms, adjusting for cyclical or temporary components in initial fiscal
+        positions, despite uncertainties in such estimates.
+    <U+2022>   It is forward-looking, accounting for projected interest rate and growth trajectories.
+    <U+2022>   It avoids categorising fiscal positions as definitively sustainable or unsustainable <U+2014> an assessment
+        that cannot be made reliably given the inherent uncertainty of the future (Blanchard, Leandro and
+        Zettelmeyer, 2021[9]).
+The LTM approach allows very different government debt ratios across countries to persist. Alternative
+approaches could allow some increase in debt ratios for the lower-debt countries, or enforce reductions in
+debt ratios for highly indebted ones. In either case, the medium-term fiscal adjustment path would differ,
+but the size of the long-run adjustment would be little affected (see section 3.2). Another potential issue is
+that the long-run fiscal gap considers only the impact of population ageing on the spending side of the
+fiscal ledger, but not the revenue side. Recent OECD research has shown that population ageing could
+depress the tax-to-GDP ratio by 1 percentage point on average by 2060, mostly via a reduction in labour
+income taxes (Sicsic and Hourani, 2026[10]). Although modest relative to the impact of ageing on spending,
+such changes represent an additional long-term fiscal gap that may need closing with policy measures
+such as base broadening or tax rate changes.
+The LTM-based fiscal adjustment begins in 2028 and comes in addition to any projected fiscal adjustment
+in 2026 and 2027 in the OECD Economic Outlook 119 database. The adjustment between 2025 and 2027
+is small in the median country but exceeds <U+00BD> per cent of GDP in 13 countries (Figure 1). Thereafter, an
+annual cap of one percentage point of potential GDP is imposed on the fiscal adjustment to reflect political-
+economy constraints. While the one-percentage-point limit is somewhat arbitrary, larger sustained
+adjustments have been comparatively rare. The constraint implies that it can take a few years for the
+objective of a stable debt ratio at target to be achieved in countries where the initial fiscal position is very
+far from the level required to stabilise the debt ratio.
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+10 |
+
+Figure 1. Projected change in cyclically-adjusted government primary balance, 2025-27
+% pts of potential GDP
+
+
+
+
+Note: The change in the cyclically-adjusted primary government balance serves as proxy for the degree of structural fiscal adjustment.
+Source: OECD Economic Outlook 119 database.
+
+
+The LTM-based fiscal trajectories and the annual cap on the size of the fiscal adjustment may diverge from
+current government plans and may differ from national or supranational fiscal objectives, targets, or rules.
+Moreover, the model does not account for potential short-term demand effects of fiscal consolidation or for
+negative supply-side feedback from higher taxation. The gap between actual and cyclically-adjusted
+revenue is determined by the output gap <U+2014> assumed to close gradually over a few years <U+2014> and by a
+country-specific semi-elasticity coefficient estimated in earlier OECD work (Price, Dang and Botev,
+2015[11]).
+
+          Long-run fiscal gaps
+
+In the standard business-as-usual scenario, the long-run fiscal gap is 4.7 percentage points (pp) of GDP
+in the median country at the 2060 horizon (Figure 2). In ten countries, the gap exceeds 8 pp. It is marginal
+(<0.5 pp) or negative in only three countries <U+2014> Denmark, Iceland and Ireland <U+2014> reflecting relatively strong
+initial fiscal positions as well as low or negative net public debt, and in the case of Denmark future statutory
+retirement ages that are linked to life expectancy. The time profile of the fiscal gap for the median country
+is somewhat front-loaded, with about 2.6 of the 4.7 pp long-run fiscal adjustment being implemented in the
+first decade of the projection period, in large part because of a median initial structural fiscal gap of nearly
+1 pp of GDP (Figure 3).
+
+
+
+
+                             ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                                                         | 11
+
+Figure 2. Long-run fiscal gap at the 2060 horizon
+
+
+
+
+Note: The charts show the fiscal adjustment required over the 2027-to-2060 period to keep the gross debt-to-GDP ratio stable near its current
+value (which also implies a stable net debt-to-GDP ratio given the assumption that government financial assets remain stable as a share of
+GDP). The underlying projected growth rates, interest rates, etc., are from the BAU1 scenario described in OECD (2025[12]) but updated to use
+the OECD Economic Outlook 119 database as the starting point. In Panel A, the required fiscal adjustment is decomposed into component parts
+explained in the main text and decomposed algebraically in Annex A. In Panel B, it is shown as a segment length relative to the 2027 structural
+primary revenue level (if the adjustment is fully revenue-based) or expenditure level (if fully spending-based).
+Source: OECD Economic Outlook 119 long-term scenarios database.
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+12 |
+
+Figure 3. Evolution of fiscal gap in the median country
+Fiscal adjustment needed from 2027 to keep government debt ratios stable, % pts of potential GDP
+
+
+
+
+Note: The charts show the fiscal adjustment required from 2027 to the year given by the x-axis to keep the gross debt-to-GDP ratio stable near
+its current value (which also implies a stable net debt-to-GDP ratio given the assumption that government financial assets remain stable as a
+share of GDP). The underlying projected growth rates, interest rates, etc., are from the BAU1 scenario described in OECD (2025[12]) but updated
+to use the OECD Economic Outlook 119 database as the starting point. The required fiscal adjustment is decomposed into component parts
+explained in the main text and decomposed algebraically in Annex A. Because medians are not additive, the diamond does not necessarily
+correspond to the sum of components.
+Source: OECD Economic Outlook 119 long-term scenarios database.
+
+
+The long-run fiscal gap can be decomposed into several components with intuitive interpretations (see
+Annex A for the algebraic decomposition). The following subsections look at each in turn, decomposing its
+drivers where feasible.
+
+          The initial structural fiscal gap
+
+The initial structural fiscal gap measures the difference between the structural primary balance in 2027
+and that which would stabilise the debt-to-GDP ratio at its 2027 level at the growth and interest rates
+projected to prevail that year. It is 0.9 pp in the median country, though variation across countries is
+substantial. Four countries, including the United States, show an initial structural fiscal gap of 2 pp of GDP
+or more (Figures 2 and 4).
+
+
+
+
+                             ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                               | 13
+
+Figure 4. Initial structural fiscal gap
+% of potential GDP
+
+
+
+
+Note: The size of the initial structural fiscal gap is represented by the length of the vertical segment.
+Source: OECD Economic Outlook 119 long-term scenarios database.
+
+
+The size of the initial structural fiscal gap depends on initial-year values for several variables (see
+Appendix A for the algebraic definitions):
+     <U+2022>    The cyclically-adjusted primary budget balance. A higher balance implies a smaller gap, all else
+          equal.
+     <U+2022>    The levels of gross government debt and financial assets.
+     <U+2022>    The differential between the implicit average interest rate paid on government debt (<U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> ) and the
+          economy<U+2019>s potential growth rate (<U+0001D454><U+0001D454>) <U+2014> the so-called <U+0001D45F><U+0001D45F> <U+2212> <U+0001D454><U+0001D454> differential. This differential is central in
+          any long-run fiscal projection because it determines whether the debt-to-GDP ratio would rise,
+          stabilise, or fall for a given primary balance. Conditional on a positive stock of government debt, a
+          higher <U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> <U+2212> <U+0001D454><U+0001D454> differential increases the initial fiscal gap.
+     <U+2022>     The differential between the implicit average return on government financial assets (<U+0001D45F><U+0001D45F> <U+0001D44E><U+0001D44E> ) and
+           potential growth (<U+0001D454><U+0001D454>). With positive asset holdings, a higher <U+0001D45F><U+0001D45F> <U+0001D44E><U+0001D44E> <U+2212> <U+0001D454><U+0001D454> differential reduces the initial
+           fiscal gap.
+The contributions of initial <U+0001D45F><U+0001D45F> <U+2212> <U+0001D454><U+0001D454> differentials and those of debt and asset stocks are interdependent, making
+a clean decomposition infeasible. However, in the common case where a government holds more liabilities
+than assets, the <U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> <U+2212> <U+0001D454><U+0001D454> differential is typically the dominant factor. And despite recent increases in market
+interest rates, <U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> <U+2212> <U+0001D454><U+0001D454> differentials remain negative in most OECD countries at the starting point for the
+long-run projections (Figure 5). This reflects the fact that <U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> is an average of past interest rates weighted
+by outstanding debt holdings and adjusts only gradually as debt is rolled over. The <U+0001D45F><U+0001D45F> <U+0001D44E><U+0001D44E> <U+2212> <U+0001D454><U+0001D454> differentials are
+similarly negative at the starting point in all countries (Figure 5).
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+14 |
+
+Figure 5. The <U+0001D493><U+0001D493> <U+2212> <U+0001D488><U+0001D488> differentials are generally negative in 2027
+% pts
+
+
+
+
+Note: <U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> <U+2212> <U+0001D454><U+0001D454> is the difference between the implicit average nominal interest rate on government financial liabilities and nominal potential GDP
+growth. <U+0001D45F><U+0001D45F> <U+0001D44E><U+0001D44E> <U+2212> <U+0001D454><U+0001D454> is the difference between the implicit average nominal interest rate on government financial assets and nominal potential GDP
+growth. The latter is not shown for Israel as it is a large outlier, but Israel has few government financial assets.
+Source: OECD Economic Outlook 119 long-term scenarios database.
+
+
+           The interest rate <U+2013> growth differential
+
+In the LTM, the short-term real interest rate converges to a neutral rate, assumed to equal trend economic
+growth, while inflation stabilises at an equilibrium rate embedded in nominal interest rates. 2 Consequently,
+short-term nominal rates converge to nominal potential growth on a country-specific basis, except in euro
+area countries, where they converge to euro area-wide potential growth. Long-term nominal interest rates
+(10-year government bond yields) are modelled as forward convolutions of projected short-term rates, plus
+a uniform 70 basis point term premium 3 and a country-specific fiscal risk premium based on fiscal positions
+and other structural factors. 4 The modelling assumptions imply that both short and long-term market
+interest rates react one-for-one to changes in potential growth rates, all else equal, after some adjustment
+period.
+
+           Implicit average interest rate on debt
+
+The projection of the implicit average interest rate on government debt (<U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> ) reflects the gradual refinancing
+of outstanding debt at projected market rates. Newly issued debt is assumed to carry an interest rate equal
+to one quarter of the short-term rate and three quarters of the long-term rate, implying an effective average
+maturity of roughly 7<U+00BD> years. The share of debt maturing each year is taken from country-specific market
+
+
+
+
+2
+  The sole price index in the LTM is the GDP deflator, which includes an adjustment for the Harrod-Balassa-Samuelson
+effect. In advanced countries, this effect is small and equilibrium GDP inflation is close to the consumer price inflation
+target.
+3
+  70 basis points roughly corresponds to the average difference between the long (10-year) and short (3-month)
+interest rates on government bonds observed over the past two decades in a selection of countries where fiscal risk
+can be considered to have been negligible (United States, United Kingdom, Canada, Norway, Switzerland, Japan), so
+as to measure a <U+2018>pure<U+2019> term premium.
+4
+    See section 5 of Guillemette (2019[26]) for methodological details on interest rate projections.
+
+
+
+                              ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                                                             | 15
+
+data for the initial year but gradually converges to a uniform 20%, approximately the current OECD
+average.
+Because long-term rates exceed short-term rates, they exceed nominal potential growth and <U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> <U+2212> <U+0001D454><U+0001D454>
+differentials converge to small positive values over time (Figures 6 and 7). The average <U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> <U+2212> <U+0001D454><U+0001D454> differential
+over the projection period is 0.3 pp, broadly aligned with the empirical finding of Wyplosz (2019[13]), who
+reports an average of 0.1 pp for 22 OECD countries since 1961. By 2060, projected <U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> <U+2212> <U+0001D454><U+0001D454> differentials
+are above 1 pp in only a few euro area countries <U+2014> those with particularly low potential growth relative to
+the euro area aggregate to which the euro area<U+2019>s neutral interest rate is tied (Croatia, Italy, Lithuania and
+Latvia) (Figure 7).
+
+
+Figure 6. The <U+0001D493><U+0001D493><U+0001D493><U+0001D493> <U+2212> <U+0001D488><U+0001D488> differential crucial to debt dynamics normalises in the projection period
+% pts, median and interquartile range
+
+
+
+
+Note: The countries included in the calculation are the same as in Figures 1 to 4. The shaded area is the interquartile range.
+Source: OECD Economic Outlook 119 long-term scenarios database.
+
+
+Figure 7. The <U+0001D493><U+0001D493><U+0001D493><U+0001D493> <U+2212> <U+0001D488><U+0001D488> differentials are all positive by 2060
+% pts
+
+
+
+
+Note: <U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> <U+2212> <U+0001D454><U+0001D454> is the difference between the implicit average nominal interest rate on government financial liabilities and nominal potential GDP
+growth.
+Source: OECD Economic Outlook 119 long-term scenarios database.
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+16 |
+
+           The implicit average interest rate on government financial assets
+
+The equivalent differential on assets, <U+0001D45F><U+0001D45F> <U+0001D44E><U+0001D44E> <U+2212> <U+0001D454><U+0001D454>, plays a less important role than <U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> <U+2212> <U+0001D454><U+0001D454> in fiscal projections
+because most countries hold lower stocks of financial assets than debt. Changes in <U+0001D45F><U+0001D45F> <U+0001D44E><U+0001D44E> <U+2212> <U+0001D454><U+0001D454> affect long-run
+fiscal gaps in the opposite direction to changes in <U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> <U+2212> <U+0001D454><U+0001D454>. An increase in <U+0001D45F><U+0001D45F> <U+0001D44E><U+0001D44E> <U+2212> <U+0001D454><U+0001D454> implies that a larger share
+of the financial asset accumulation required to keep assets growing in line with GDP (as assumed in the
+LTM) comes from interest receipts.
+The projection rule for <U+0001D45F><U+0001D45F><U+0001D461><U+0001D461><U+0001D44E><U+0001D44E> has been revised and is now based on a simple error-correction model estimated
+on a panel of 36 countries (those with a fiscal block in the LTM) using annual data (Table 1).
+Experimentation with various specifications showed that the domestic short-term interest rate (<U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D456><U+0001D456>,<U+0001D461><U+0001D461> ) was
+the only robust explanatory variable in both the short and long run. Omitting the small, statistically
+insignificant constant, the rule makes the implicit average rate of return on financial assets converge in the
+long run to approximately 60% of the short-term interest rate. Because the three-month rate is assumed
+to equal trend nominal growth in equilibrium, the rule implies that raising potential growth also modestly
+raises returns on government financial assets. As with <U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> <U+2212> <U+0001D454><U+0001D454>, the <U+0001D45F><U+0001D45F> <U+0001D44E><U+0001D44E> <U+2212> <U+0001D454><U+0001D454> differentials generally increase
+over time, but in contrast remain at or below zero in all countries by 2060 (Figure 8).
+
+
+Table 1. Estimated equation for implicit average rate of return on government financial assets
+                        <U+0001D44E><U+0001D44E>               <U+0001D44E><U+0001D44E>                                     <U+0001D44E><U+0001D44E>
+Estimated equation: <U+2206><U+0001D45F><U+0001D45F><U+0001D456><U+0001D456>,<U+0001D461><U+0001D461> = <U+0001D6FD><U+0001D6FD>1 <U+2219> <U+2206><U+0001D45F><U+0001D45F><U+0001D456><U+0001D456>,<U+0001D461><U+0001D461><U+2212>1 + <U+0001D6FD><U+0001D6FD>2 <U+2219> <U+2206><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D456><U+0001D456>,<U+0001D461><U+0001D461> + <U+0001D70C><U+0001D70C> <U+2219> <U+FFFD><U+0001D45F><U+0001D45F><U+0001D456><U+0001D456>,<U+0001D461><U+0001D461><U+2212>1 <U+2212> <U+0001D6FC><U+0001D6FC> <U+2212> <U+0001D6FD><U+0001D6FD>3 <U+2219> <U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D456><U+0001D456>,<U+0001D461><U+0001D461><U+2212>1 <U+FFFD> + <U+0001D700><U+0001D700><U+0001D456><U+0001D456>,<U+0001D461><U+0001D461>
+
+                                                                                         Estimated coefficient
+                                    Short run
+                                                                               <U+FFFD> 1)
+                                    Lagged change in rate of return on assets (<U+0001D6FD><U+0001D6FD>               -0.319***
+                                                                        <U+FFFD>
+                                    Change in short-term interest rate (<U+0001D6FD><U+0001D6FD>2 )                    0.250**
+                                    Long run
+                                    Constant (<U+0001D6FC><U+0001D6FC><U+FFFD>)                                               -0.035
+                                                              <U+FFFD> 3)
+                                    Short-term interest rate (<U+0001D6FD><U+0001D6FD>                                0.617***
+                                    Speed of convergence to long run (<U+0001D70C><U+0001D70C><U+FFFD>)                      -0.084**
+                                    Estimation period                                          1993-2024
+                                    Number of countries                                            36
+                                    Number of observations                                         998
+                                    Adjusted R2                                                   0.224
+
+Note: In the specification <U+0001D456><U+0001D456> indexes countries and <U+0001D461><U+0001D461> indexes time periods (years). Asterisks (*, **, ***) indicate the statistical significance level
+(10%, 5%, 1%) of the estimated coefficients based on (White) standard errors robust to arbitrary heteroskedasticity and within-country serial
+correlation (cross-sectional clustering). All data are from the OECD Economic Outlook 118 database.
+
+
+
+
+                               ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                                                        | 17
+
+Figure 8. The <U+0001D493><U+0001D493><U+0001D493><U+0001D493> <U+2212> <U+0001D488><U+0001D488> differentials remain negative or zero by 2060
+% pts
+
+
+
+
+Note: <U+0001D45F><U+0001D45F> <U+0001D44E><U+0001D44E> <U+2212> <U+0001D454><U+0001D454> is the difference between the implicit average nominal interest rate on government financial assets and nominal potential GDP
+growth. It is not shown for Israel as it is a large outlier, but Israel has very little government financial assets.
+Source: OECD Economic Outlook 119 long-term scenarios database.
+
+
+          Accounting for valuation effects on government financial assets
+
+Based on historical OECD experience, the value of government financial assets is assumed to remain
+stable as a share of GDP over time, consistent with those assets continuing to play a similar role relative
+to the size of the economy as today. Some countries have explicit objectives to change the assets-to-GDP
+ratio, for instance to build pension reserves, but this is not currently considered in the LTM. 5
+Maintaining a stable financial-assets-to-GDP ratio requires accumulating assets in line with nominal GDP
+growth. This accumulation affects the long-run fiscal gap indicator. Previous versions of the LTM assumed
+that all increases in government financial assets resulted from debt-financed net asset purchases. In
+practice, however, revaluation effects <U+2014> mainly unrealised capital gains on equity-type assets <U+2014> are
+substantial and contribute a significant share of the required increase in the nominal value of assets to
+maintain its ratio to GDP. Indeed, excluding net acquisitions of financial assets (<U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D456><U+0001D456>,<U+0001D461><U+0001D461> ), a residual item
+in the annual change in government financial assets (<U+2206><U+0001D43A><U+0001D43A><U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D456><U+0001D456>,<U+0001D461><U+0001D461> ) can be calculated as:
+
+                                                                  <U+2206><U+0001D43A><U+0001D43A><U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D456><U+0001D456>,<U+0001D461><U+0001D461> <U+2212> <U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D456><U+0001D456>,<U+0001D461><U+0001D461>
+                                              <U+0001D43C><U+0001D43C><U+0001D445><U+0001D445><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D445><U+0001D445><U+0001D456><U+0001D456>,<U+0001D461><U+0001D461> =                                                                        [1]
+                                                                        <U+2206><U+0001D43A><U+0001D43A><U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D456><U+0001D456>,<U+0001D461><U+0001D461>
+
+where <U+0001D456><U+0001D456> indexes the 35 countries (Norway being excluded) and <U+0001D461><U+0001D461> the years. Over the 652 available
+observations from 2005 to 2024, the median revaluation effect is 0.51 (Figure 9). On this basis, the LTM
+
+
+
+
+5
+  For countries with some pre-funding of future social security obligations (e.g., Canada<U+2019>s CPP/QPP, Japan<U+2019>s GPIF,
+Korea<U+2019>s NPS, Sweden<U+2019>s AP funds, or the US Social Security Trust Fund), the LTM assumption may depart substantially
+from national objectives and projections. For instance, in Canada, official projections anticipate significant growth in
+pension plan (CPP/QPP) assets relative to GDP. If fully reflected on a consolidated general government basis, this
+accumulation would result in a rising trajectory for financial assets as a share of GDP. More country-specific modelling
+of pre-funding within social security schemes can be done when the framework is used for tailored analysis, for
+instance in the context of OECD country surveys.
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+18 |
+
+now adopts the stylised assumption that half of the projected annual increase in government financial
+assets arises from revaluations. 6
+
+
+Figure 9. Share of valuation effects in annual change in government net financial assets, 2005-24
+Frequency distribution of <U+0001D43C><U+0001D43C><U+0001D445><U+0001D445><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D445><U+0001D445><U+0001D456><U+0001D456>,<U+0001D461><U+0001D461> in [1]
+
+
+
+
+Note: Some large outliers (< -3 and > 3) are excluded from the chart.
+Source: OECD National Accounts (consolidated financial accounts).
+
+
+The result of the revised projection rule is that the required pace of net asset purchases is lower, reducing
+the long-run fiscal gap by 0.7 pp of GDP in the median country, and by up to 2-2<U+00BD> pp in countries with
+large public financial-asset holdings (e.g. Canada, Finland, Japan).
+The overall contribution of changes in <U+0001D45F><U+0001D45F> <U+2212> <U+0001D454><U+0001D454> to long-run fiscal gaps
+The <U+2018>change in <U+0001D45F><U+0001D45F> <U+2212> <U+0001D454><U+0001D454><U+2019> component of the long-run fiscal gap summarises the net impact of projected
+movements in <U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> , <U+0001D45F><U+0001D45F> <U+0001D44E><U+0001D44E> , and <U+0001D454><U+0001D454>, the interaction of these variables with stocks of liabilities and assets, and the
+valuation effect on government financial assets. Projected changes in <U+0001D45F><U+0001D45F> <U+2212> <U+0001D454><U+0001D454> differentials from 2027
+onwards add 0.9 pp of GDP to long-run fiscal gaps in the median country by 2060 (Figures 2 and 10). This
+can be broken down into a 1.2 pp contribution from the projected change in <U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> <U+2212> <U+0001D454><U+0001D454> in the median country,
+which is partly compensated by a 0.4 pp reduction from the projected change in <U+0001D45F><U+0001D45F> <U+0001D44E><U+0001D44E> <U+2212> <U+0001D454><U+0001D454>. 7 These respective
+effects are much greater in countries with, respectively, high government debt ratios (e.g. Greece, Japan)
+or a high ratio of government financial assets to GDP (e.g. Finland, Japan).
+
+
+
+
+6
+ Revaluation effects also occur for gross government financial liabilities, as these are at market value in the model,
+but these are not modelled in the LTM. Beyond an initial period of 5-10 years, such revaluations can be expected to
+be small because the implicit price of bonds moves inversely to interest rates and rates evolve only slowly.
+7
+    The two median components do not add up to the reported total exactly because medians are not additive.
+
+
+
+                             ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                                                               | 19
+
+Figure 10. Decomposition of the <U+2018>change in <U+0001D493><U+0001D493> <U+2212> <U+0001D488><U+0001D488><U+2019> component of the long-run fiscal gap, 2027-60
+% pts of potential GDP
+
+
+
+
+Note: The individual contributions are computed using equation [A3] in Appendix A and allowing, respectively, the (<U+0001D45F><U+0001D45F><U+0001D461><U+0001D461><U+0001D451><U+0001D451> <U+2212> <U+0001D454><U+0001D454><U+0001D461><U+0001D461> )<U+2044>(1 + <U+0001D454><U+0001D454><U+0001D461><U+0001D461> ) or the
+(<U+0001D454><U+0001D454><U+0001D461><U+0001D461> /2 <U+2212> <U+0001D45F><U+0001D45F><U+0001D461><U+0001D461><U+0001D44E><U+0001D44E> )<U+2044>(1 + <U+0001D454><U+0001D454><U+0001D461><U+0001D461> ) term to change while holding the other constant.
+Source: OECD Economic Outlook 119 long-term scenarios database.
+
+
+          The evolution of primary expenditure
+
+If government primary expenditure were assumed to remain constant as a share of GDP over the projection
+period, the two previous components would constitute the total fiscal adjustment required to stabilise the
+debt-to-GDP ratio. However, primary expenditure is generally projected to rise over time due to population
+ageing and other cost pressures.
+Primary expenditure projections are generated in the LTM by linking each spending component to plausible
+volume and price determinants. These are summarised in Table 2 and explained in detail below. The
+approach supposes a <U+201C>business-as-usual<U+201D> trajectory in which no major additional policy reforms are
+implemented from 2028, continuing with the approach used previously. Apart from their initial expenditure
+levels <U+2014> and the specific exceptions noted below <U+2014> country-specific features of health, pension, or other
+programme designs are not modelled explicitly.
+
+
+Table 2. Summary of baseline assumptions for primary government expenditure
+                                         % of potential GDP
+       Expenditure component
+                                           in the median                 Volume determinants                         Price assumption
+       expressed as % of GDP
+                                          country in 2025
+       Health and long-term care                                             - Income effect
+                                                  6.6                                                        GDP deflator + <U+00BD> of real wage growth
+              expenditure                                                    - Ageing effect
+                                                                    Proportional to ratio of retirees to
+         Pension expenditure                      8.4                                                           GDP deflator + real wage growth
+                                                                                employees
+        Defence expenditure                      2.1                         NATO commitment or return to historical long-run average
+  Other current primary expenditure              22.2                                                  See Table 3
+  Net capital expenditure ex-defence             1.1                                      Converges to 0.8% of potential GDP
+
+Note: In the LTM, real wage growth is equal to labour productivity growth by construction.
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+20 |
+
+One important feature of long-run government expenditure projections is the overall degree of pass-
+through from economy-wide real wage growth into spending levels, which reflects the different degrees of
+wage indexation assumed for the various spending components. Zero pass-through (purely price indexing)
+would imply that public sector wages, benefits and social transfers would not keep pace with trend growth
+in private-sector wages, and thus that public sector workers and benefit recipients would tend to become
+relatively poorer over time. Full pass-through would imply keeping perfect pace with the private sector but
+government spending is not composed only of wages and transfers, it also consists of goods and services
+purchased on the private market which should naturally follow a price as opposed to a wage index. The
+degree of indexation for overall government spending should thus intuitively fall somewhere between zero
+and one.
+For defence, net capital expenditure and parts of other current primary expenditure, the volume and price
+assumptions cannot be separated, because LTM projection rules are expressed directly in percentage of
+GDP terms. However, assuming that projected changes in these expenditure categories are driven by
+volume rather than relative price effects and weighing the other categories by their relative GDP shares
+(column 2 of Table 2), then the overall degree of real wage indexation for total primary expenditure in the
+LTM works out to approximately 54% in the median country. By design, this is approximately the share of
+expenditure attributable to compensation of employees and cash social transfers in the median OECD
+country.
+
+           Health and long-term care expenditure
+
+In the LTM, growth in real per capita public expenditure on health and long-term care (measured relative
+to the GDP deflator) is based on the work of Farag et al. (2012[14]) and Lorenzoni et al. (2019[15]) and driven
+by three factors: real GDP per capita growth (the income effect), changes in the share of the population
+aged 65 and over (the ageing effect) and the excess of health-care inflation over general inflation (the
+Baumol effect). 8 The first two factors primarily influence the volume of services, while the Baumol effect
+influences their relative price, reflecting the cost pressures typical of labour-intensive sectors where
+productivity grows more slowly than in the wider economy. The relative price assumption is that, in addition
+to the general price level (GDP deflator), health and long-term care prices are assumed to increase by one
+half of economy-wide real wage growth, which is equal to economy-wide labour productivity growth by
+construction. Given that compensation of employees accounts for 30% to 50% of health spending in OECD
+countries once accounting for wages embedded in purchased services (intermediate consumption), the
+assumption implies that wages in this sector rise in line with economy-wide wages. It also implies that
+faster productivity growth magnifies the Baumol effect.
+Under a business-as-usual assumption in which no major policy reforms are implemented, real per-capita
+public expenditure on health and long-term care is projected to rise by 1.8 pp of GDP between 2027 and
+2060 in the median country (Figure 11). Most of this increase is driven by income growth; roughly one-third
+reflects the Baumol effect; and slightly less than one-fifth arises from population ageing. The ageing effect
+varies widely across countries depending on demographic trends <U+2014> for example, it is nearly three times
+larger in Korea than in Denmark. The Baumol effect is stronger in countries that have lower per capita
+incomes today because of their higher projected productivity growth through 2060.
+
+
+
+
+8
+    See section 4 in Guillemette (2019[26]) for additional methodological details.
+
+
+
+                           ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                         | 21
+
+Figure 11. Projected change in health and long-term care expenditure, 2027-60
+% pts of GDP
+
+
+
+
+Source: OECD Economic Outlook 119 long-term scenarios database.
+
+
+Recent evidence suggests that a shift in the nature of technological change could be increasing the rate
+of cost-saving innovation in health care (Smith, Newhouse and Cuckler, 2022[16]; Cutler and Klarnet,
+2026[17]). In light of this evidence, growth in real per capita health spending over the 2014-24 period was
+decomposed on the basis of the LTM equation to assess its recent performance. For the median country,
+roughly one third of the nearly 25% increase in spending is explained by the income effect, with the ageing
+and Baumol effects each accounting for about one quarter, leaving a small positive residual. In other words,
+the equation slightly under-predicted health spending growth in most, though not all, countries over this
+ten-year period. Nevertheless, future cost-saving innovations could dampen health spending growth,
+posing a downside risk to the LTM<U+2019>s projections.
+
+         Pension expenditure
+
+Public pension expenditure (defined as cash expenditure on old-age and survivors<U+2019> pensions) is projected
+in the LTM based on the change in the ratio of retirees to workers and the evolution of the average benefit
+ratio (the ratio of the average public pension benefit to the average wage). It is projected to increase by
+2.2 pp of GDP in the median country between 2027 and 2060 (Figure 2, Panel A). Projected increases in
+public pension expenditure tend to be smaller in countries that have legislated increases in statutory
+retirement ages, especially those linking future retirement ages to life expectancy (e.g. Finland), and larger
+in countries with low statutory retirement ages and particularly unfavourable demographic profiles (e.g.
+Poland).
+In the business-as-usual scenario, country-specific average pension benefit ratios are assumed to remain
+constant over the projection period, with pensions rising in line with the average wage. However, in some
+countries, existing pension legislation implies a substantial reduction in benefit ratios over time, due to
+indexation to price inflation (e.g. France), or to a mixed index of price and wage inflation (e.g. Finland,
+Switzerland) or through other changes to pension entitlements such as those for new entrants (e.g. Italy).
+As a result, the LTM may overstate the increase in pension expenditure if these policies remain unchanged.
+The LTM approach also differs markedly from the European Commission<U+2019>s central scenario, which reflects
+legislated pension system parameters, including affordability rules and other mechanisms that, if
+unchanged, imply an 8.4 pp decline in the average benefit ratio at the EU level between 2025 and 2060
+(European Commission, 2024[18]).
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+22 |
+
+The constant-benefit-ratio assumption in the LTM is motivated by two main considerations:
+     <U+2022>    Simplicity. It can be applied uniformly across EU and non-EU countries, whereas setting country-
+          specific assumptions for non-EU countries would be difficult without comparable official projections.
+     <U+2022>    Plausibility. A continuous decline in average pension benefit ratios over several decades, as less
+          than full wage indexation would imply, seems unlikely given the salience of inequality and old-age
+          poverty and the growing political weight of older voters. In practice, governments often introduce
+          ad hoc adjustments to maintain pensioners<U+2019> relative purchasing power. This pattern is reflected in
+          historical outcomes. For example, the 2015 Ageing Report projected a 1.9 pp decline between
+          2013 and 2025 (European Commission, 2015[19]), whereas the EU average benefit ratio has risen
+          since 2013, as well as in years prior (Figure 12). This suggests an effective link between wages
+          and average pension benefits. Assuming this link persists provides a more realistic foundation for
+          long-run fiscal analysis, while alternative policy choices regarding pension generosity can be
+          explored in scenario variants (see section 3.5).
+
+
+Figure 12. Average pension benefit ratio in the European Union
+Average old-age and survivor pension, % of average full time-adjusted salary
+
+
+
+
+Source: Eurostat and author<U+2019>s calculations.
+
+
+Given the assumption of constant average benefit ratios, the LTM projection reflects only the change in
+the ratio of retirees to workers, driven by evolving demographics and projected employment dynamics.
+While an exact decomposition is not possible, three factors are central:
+     <U+2022>    The speed of population ageing. Faster ageing leads to a larger increase in the retirees-to-workers
+          ratio and, consequently, a larger rise in pension expenditure as a share of GDP (Figure 13,
+          Panel A). The LTM<U+2019>s demographic projections are based on the United Nations Population
+          Division<U+2019>s (UNPD) World Population Prospects (2024 revision, medium scenario).
+     <U+2022>    Employment rates across age groups and their evolution. Employment rates are projected using a
+          cohort-based model (Box 1). Retirement rates depend on exit rates from employment across the
+          50-54 to 75+ age ranges. Differences in employment rates across age groups therefore affect the
+          number of retirees, while changes in the aggregate employment rate influence the denominator of
+          the retirees-to-workers ratio. Generally, higher projected increases in aggregate employment
+          reduce projected pension expenditure as a share of GDP (Figure 13, Panel B).
+     <U+2022>    Already-legislated changes in statutory retirement ages. Projected employment rates incorporate
+          legislated changes in statutory retirement ages. Once legislated, these tend to be more permanent
+          than benefit-indexation mechanisms, which justifies including them in the baseline scenario.
+
+
+                             ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                                             | 23
+
+          Changes to statutory retirement ages do not translate one-for-one into changes to effective
+          retirement ages. Instead, a one-year increase in the statutory retirement age raises employment
+          rates in the 55-74 age group by 1.6 pp in countries with significant voluntary occupational pensions
+          and by 2.2 pp in countries where such plans are less prevalent, based on Morgavi (2024[20]).
+          Expressed differently, a one-year increase raises the average effective retirement age by 3-5
+          months in the former group and 4-7 months in the latter. 9 These changes reduce the number of
+          retirees and increase the number of workers, thereby lowering pension expenditure as a share of
+          GDP (Figure 13, Panel C).
+
+
+Figure 13. Three broad factors affecting pension expenditure projections
+The y-axes of all three panels show the projected change in pension expenditure between 2027 and 2060 in % pts
+of potential GDP and the x-axes show the change in the indicated variables over the same period
+
+
+
+
+Note: The x-axis of Panel C is based on both the male and female statutory retirement ages, with weights of one-half each.
+Source: OECD Economic Outlook 119 long-term scenarios database.
+
+
+
+    Box 1. The cohort employment model and the calculation of average effective retirement ages
+    The LTM includes a cohort-based employment model in which the evolution of trend employment
+    (<U+0001D445><U+0001D445><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D438>) is driven by three main dynamics: changes in the size of the working-age population (ages 15
+    to 74), shifts in its age composition, and trends in the employment rates of different age-sex groups.
+    The size and composition of the working-age population are taken from the United Nations Population
+    Division<U+2019>s (UNPD) World Population Prospects (2024 revision, medium variant) and are exogenous to
+    the model. Trends in age-sex-specific employment rates are projected using a cohort approach applied
+    to historical data (Cavalleri and Guillemette, 2017[21]). These generational trends capture societal
+    changes, such as rising female labour-force participation, as well as structural changes like increased
+    educational attainment.
+    For example, in many countries, younger women exhibit much higher employment rates today than in
+    the past. By holding the most recently estimated entry and exit rates constant over the projection
+    horizon, the cohort model typically projects that employment rates for older women will rise over time
+    as today<U+2019>s younger cohorts move through their life cycle.
+
+
+
+9
+ These impacts differ between countries because the calculation of average effective retirement ages depends on
+population weights for different age/sex groups.
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+24 |
+
+ Already-legislated changes in statutory retirement ages are incorporated into the projected employment
+ rates for individuals aged 55 and over.
+ The average effective retirement ages for sex <U+0001D43C><U+0001D43C> <U+2208> {<U+0001D440><U+0001D440>, <U+0001D441><U+0001D441>} at time <U+0001D461><U+0001D461> (<U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D441><U+0001D441><U+0001D461><U+0001D461><U+0001D446><U+0001D446> ) is calculated using exit rates
+ from employment across the age groups 50-54 and above. For example, the difference between the
+ employment rate of the 55-59 age group at time <U+0001D461><U+0001D461> (<U+0001D445><U+0001D445><U+0001D43C><U+0001D43C><U+0001D461><U+0001D461><U+0001D446><U+0001D446>,5559 ) and that of the 50-54 age group five years
+              S,5054
+ earlier (<U+0001D445><U+0001D445><U+0001D43C><U+0001D43C><U+0001D461><U+0001D461><U+2212>5   ) gives the exit rate for that cohort. The average retirement age for that group of retirees
+ is set at the mid-point between the two age groups (54.5). The overall average effective retirement age
+ is computed in that manner using all age groups and weighting by employment:
+ The overall average effective retirement age is computed in that manner using all age groups and
+ weighting by employment:
+                                      S,5054                           S,5054                   S,7074               S,7074
+                          54.5 <U+2219> <U+FFFD><U+0001D445><U+0001D445><U+0001D43C><U+0001D43C><U+0001D461><U+0001D461><U+2212>5   <U+2212> <U+0001D445><U+0001D445><U+0001D43C><U+0001D43C><U+0001D461><U+0001D461>S,5559 <U+FFFD> <U+2219> <U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D438><U+0001D438><U+0001D461><U+0001D461><U+2212>5    + <U+22EF> + 74.5 <U+2219> <U+FFFD><U+0001D445><U+0001D445><U+0001D43C><U+0001D43C><U+0001D461><U+0001D461><U+2212>5   <U+2212> 0<U+FFFD> <U+2219> <U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D438><U+0001D438><U+0001D461><U+0001D461><U+2212>5
+           <U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D441><U+0001D441><U+0001D461><U+0001D461><U+0001D446><U+0001D446> =               S,5054
+                                 <U+FFFD><U+0001D445><U+0001D445><U+0001D43C><U+0001D43C><U+0001D461><U+0001D461><U+2212>5   <U+2212> <U+0001D445><U+0001D445><U+0001D43C><U+0001D43C><U+0001D461><U+0001D461>S,5559 <U+FFFD> <U+2219> <U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D438><U+0001D438><U+0001D461><U+0001D461><U+2212>5
+                                                                       S,5054            S,7074
+                                                                              + <U+22EF> + <U+FFFD><U+0001D445><U+0001D445><U+0001D43C><U+0001D43C><U+0001D461><U+0001D461><U+2212>5                 S,7074
+                                                                                                <U+2212> 0<U+FFFD> <U+2219> <U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D438><U+0001D438><U+0001D461><U+0001D461><U+2212>5
+
+ where <U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D438><U+0001D438><U+0001D461><U+0001D461>S,A is the population of sex <U+0001D43C><U+0001D43C> in age group <U+0001D441><U+0001D441>.
+
+
+A constant-benefit ratio scenario was also presented in the European Commission<U+2019>s 2024 Ageing Report.
+Focusing on the euro area over the 2025-2060 period, the Commission projected an increase in pension
+expenditure of about 1<U+00BD> pp of GDP, whereas the LTM projects a larger rise of 2<U+00BD> pp. Simulations using
+alternative demographic assumptions (see section 3.4) suggest that most of this difference reflects
+variations in the underlying demographic projections. For example, the old-age population dependency
+ratio for the EU area <U+2014> defined as the population aged 65 and over relative to those aged 20-64 <U+2014>
+increases by 20 pp between 2025 and 2060 in the Eurostat population projections used in the
+Commission<U+2019>s assessment. In contrast, this ratio increases by 23.8 pp in the UNPD projections used in the
+LTM. A key factor behind this difference is that Eurostat typically assumes higher net international migration
+over the coming decades than the UNPD.
+To illustrate more clearly the fiscal benefits of legislated pension reforms, a scenario is constructed in which
+all countries maintain statutory retirement ages at their 2027 levels. The contribution of legislated reforms
+to reducing long-run fiscal gaps is then measured by comparing this scenario with the baseline. Linking
+statutory retirement ages to life expectancy substantially reduces long-run fiscal gaps in Bulgaria,
+Denmark, Estonia, Finland, Greece, Italy, the Netherlands, Portugal, the Slovak Republic and Sweden, by
+1.2 pp in the median country (Figure 14). Even without an explicit link to life expectancy, countries that
+have planned significant reforms, such as Austria, the Czech Republic and Romania, also benefit. The
+reduction in long-run fiscal gaps emerges not only via lower pension expenditure, but also through the
+<U+2018>other primary expenditure<U+2019> component, reflecting an improved employment-to-population ratio relative to
+baseline (as explained in section 2.5.4).
+
+
+
+
+                             ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                         | 25
+
+Figure 14. The contribution of already-legislated pension age reforms to reducing long-run fiscal
+gaps
+Difference from baseline in % pts of potential GDP
+
+
+
+
+Source: OECD Economic Outlook 119 long-term scenarios database and author<U+2019>s calculations.
+
+
+         Defence expenditure
+
+Defence expenditure is incorporated explicitly in the long-run fiscal gap indicator for the first time in this
+paper. The starting point for the projections is each country<U+2019>s defence spending as a percentage of GDP,
+based on data from the Stockholm International Peace Research Institute (SIPRI) (Figure 15). For the
+projection period, assumptions differ between North Atlantic Treaty Organization (NATO) members and
+non-members:
+    <U+2022>    NATO members: Defence expenditure is assumed to:
+         o    Rise to 5% of GDP by 2027 and remain at this level thereafter in Estonia, Latvia, Lithuania and
+              Poland. These members have already announced a near-term target of 5% of GDP and, given
+              their geography, it seems reasonable to assume that this spending level will be maintained
+              over the long run. Since defence spending is expected to be at the target in 2027, this
+              assumption implies that defence does not contribute to the long-run fiscal gaps in these
+              countries by construction.
+         o    Rise to 3.5% of GDP by 2035 and remain at this level thereafter in other NATO countries. This
+              target is based on the 2025 NATO Summit in The Hague, where Members committed to
+              investing at least 3.5% of GDP annually on core defence requirements and on meeting NATO
+              Capability Targets (Conigrave and Shin, 2026[22]). Iceland is an exception as it has no military
+              and is assumed not to increase spending. The assumption implies a 1.1 pp of GDP contribution
+              to the long-run fiscal gap of the median remaining country by 2035.
+    <U+2022>    Non-NATO members: Defence expenditure is assumed to return to its 15-year historical average
+         (2010-2025) by 2035. This implies limited changes from the latest SIPRI estimate (2025) for most
+         countries, except Israel, where exceptionally high spending in 2025 leads to a projected decline.
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+26 |
+
+Figure 15. Defence expenditure
+% of potential GDP
+
+
+
+
+Source: Stockholm International Peace Research Institute (SIPRI) military expenditure database for historical data.
+
+
+Defence expenditure is added as a refinement of the long-run fiscal gap indicator. For now, it is not
+assumed to have any longer-run effects on potential output, though there are some potential channels
+through which it could do so, including defence R&D and (some) capital accumulation (OECD, 2026[23];
+Conigrave and Shin, 2026[22]).
+
+          Other primary expenditure
+
+Other primary expenditure refers to all primary spending not covered previously (health, long-term care,
+pensions, and defence). In the median country, it is projected to fall by 1.7 pp of GDP between 2027 and
+2060 given the approach set out below (Figure 16). Other primary expenditure can be split between other
+current primary expenditure and net capital expenditure on non-defence items, since defence expenditure
+includes defence-related capital expenditures.
+
+
+Figure 16. Change in other primary expenditure, 2027-60
+% pts of potential GDP
+
+
+
+
+Source: OECD Economic Outlook 119 long-term scenarios database.
+
+
+
+
+                             ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                            | 27
+
+             Other current primary expenditure
+
+The approach to projecting other current primary expenditure has been refined from previous versions of
+the LTM to better reflect the composition of other primary government expenditure in the average OECD
+country. The previous approach was based on two simplifying assumptions regarding the volume and
+relative price of government services in this expenditure item: 10
+      <U+2022>    Volume component: Real per capita spending in this category was assumed to remain constant
+           over time. Accordingly, the volume of government services was projected to grow in line with total
+           population.
+      <U+2022>    Price component: The price of government services was assumed to increase at the rate of nominal
+           wages.
+Under these assumptions, changes in the ratio of other current primary expenditure to GDP depended
+solely on the population-to-employment ratio. As a result, productivity-enhancing reforms had no long-run
+impact on this spending category as a share of GDP.
+In practice, while full wage indexation is appropriate for major components such as compensation of
+employees and social transfers, other items are more appropriately linked to the general price level. These
+include parts of intermediate consumption and purchased market output (e.g. social transfers in kind) that
+reflect competitively supplied goods and services (such as electricity, fuel, and office equipment), as well
+as subsidies. In these areas, productivity gains can cause spending to decline as a share of GDP. Indexing
+these items to prices rather than wages implies that their share of GDP declines as economy-wide
+productivity increases.
+The revised approach is this paper distinguishes four expenditure categories based on COFOG data, each
+with specific assumptions regarding volume and price developments (Table 3):
+      1. Education (22% of other current primary expenditure): The volume component is assumed to
+         evolve in proportion to the population aged 5 to 24. The price component is assumed to increase
+         with the GDP deflator plus two-thirds of real wage growth. This implies a gradual rise in the relative
+         price of education services, reflecting a Baumol-type effect similar to that assumed for health and
+         long-term care, but with a higher coefficient (two-thirds rather than one-half) to reflect this sector<U+2019>s
+         higher labour intensity. This allows salaries in the education sector to rise in line with economy-
+         wide wages.
+      2. Social protection, excluding old-age and survivors<U+2019> benefits (31%): The volume component is
+         assumed to grow in line with the total population. The price component follows the GDP deflator
+         plus real wage growth, implying that the average benefit ratio (average benefit relative to the
+         average wage) remains constant over time. This ensures consistency with the treatment of public
+         pension expenditure.
+      3. Housing and community amenities (2%): The volume component is assumed to grow with the total
+         population, while the price component follows the GDP deflator only.
+      4. Other categories (45%): Expenditure in the remaining categories, including for example general
+         public services and environmental protection, is assumed to remain constant as a share of nominal
+         GDP. For these items, distinguishing between volume and price components is conceptually
+         difficult and a constant-share-of-GDP assumption is consistent with long-term trends in countries
+         with available historical data.
+In practice, the LTM does not explicitly disaggregate other current primary expenditure into these sub-
+categories. Instead, total expenditure growth is projected as a weighted average of the volume and price
+determinants described above. The shares are based on unweighted OECD averages, assumed to be
+
+10
+     See section 3.1.2 in Guillemette and Turner (2017[29]) for more details.
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+28 |
+
+constant over time and uniform across countries. This simplified approach reflects data limitations, as
+detailed COFOG information is unavailable for some countries and is subject to significant reporting lags.
+
+
+Table 3. Assumptions for other current primary government expenditure
+                                          % of other current
+             Component                  primary expenditure in        Volume determinant                   Price assumption
+                                        average OECD country
+              Education                           22                 Population aged 5 to 24      GDP deflator + 2/3 real wage growth
+   Social protection (excluding old-
+                                                  31                                                GDP deflator + real wage growth
+     age and survivor benefits)                                            Population
+  Housing and community amenities                  2                                                         GDP deflator
+       General public services                    15
+       Public order and safety                     7
+           Economic affairs                       16                                Constant as a % of nominal GDP
+      Environmental protection                     3
+   Recreation, culture and religion                4
+
+Notes: In the LTM, real wage growth is equal to labour productivity growth by construction. The total current expenditure from which the
+percentages are calculated exclude health and long-term care, pension and defence expenditure. The percentages are simple unweighted
+averages across OECD countries for the latest available year.
+Source: OECD Annual government expenditure by function (COFOG).
+
+
+Given the framework and the assumptions just described, other current primary expenditure is generally
+projected to decline when expressed as a share of GDP, driven primarily by two factors: (i) the population-
+to-employment ratio, because parts of spending are linked to total population, whereas GDP depends on
+employment, and (ii) labour productivity growth, reflecting the varying degrees of pass-through from wages
+into spending across expenditure components. The change over time can be decomposed more finely into
+four elements (Figure 17), the first three of which relate to factor (i) above:
+    <U+2022>    Ageing effect: This component captures changes in the share of the population that is of working
+         age. As this share is projected to decline across OECD countries, upward pressure is placed on
+         other current primary expenditure as a share of GDP (blue component in Figure 17, amounting to
+         +0.6 pp in the median country). The effect is particularly strong in Korea, reflecting adverse
+         demographic trends and very low fertility.
+    <U+2022>    Trend employment rate effect: The aggregate employment rate is projected to rise in most OECD
+         countries, exerting downward pressure on other current primary expenditure as a share of GDP
+         (yellow component in Figure 17, -0.4 pp in the median country). Two opposing forces shape this
+         outcome:
+         o    A composition effect, as employment rates are typically lower among older age groups.
+         o    Continued convergence of female employment rates toward male rates, which occurs
+              mechanically in the LTM<U+2019>s cohort-based framework as the present higher employment rate
+              among younger female cohorts persists over their life cycle (Box 1).
+         In most countries, the catch-up in female employment more than offsets the negative composition
+         effect, resulting in an increase in the aggregate employment rate. However, in countries where
+         female employment is already high (e.g. Switzerland) or is projected to decline due to cohort
+         dynamics (e.g. Romania), the aggregate employment rate is expected to remain stable or fall.
+         These countries tend to show flat or rising other current primary expenditure as a share of GDP
+         over the projection period. The evolution of female employment is therefore a key driver of cross-
+         country differences in projected spending outcomes.
+
+
+
+
+                            ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                             | 29
+
+    <U+2022>    Education effect: This captures changes in the ratio of the population aged 5 to 24 (which
+         determines the volume of education spending) to the working-age population. Owing to persistently
+         low fertility rates, this component is generally negative (fuchsia component in Figure 17, -0.2 pp in
+         the median country).
+    <U+2022>    Trend labour productivity growth effect (part of factor ii): This component is negative for all countries
+         and reflects the revised modelling approach, under which part of other current primary expenditure
+         is no longer fully indexed to real wage growth. As a result, the projected increase in this spending
+         category as a share of GDP is lower than in earlier model versions, reflecting governments<U+2019> gains
+         from declining relative prices of certain purchased goods and services (green component in
+         Figure 17, -1.0 pp in the median country).
+
+
+Figure 17. Change in other current primary expenditure as a share of GDP between 2027 and 2060
+% pts of potential GDP
+
+
+
+
+Source: OECD Economic Outlook 119 long-term scenarios database.
+
+
+Altogether, other current primary expenditure is projected to decline by 1 pp of GDP between 2027 and
+2060 in the median country. Although this downward trend may appear counterintuitive, it is broadly
+consistent with historical developments. Among the 17 countries for which historical data are available,
+other current primary expenditure declined by 0.6 pp of GDP in the median country between 1995 and
+2025. This comparison should be interpreted with caution, however. The historical series are highly cyclical
+and, more importantly, the projection assumption of no major policy change did not hold in the past. A
+meaningful comparison would require isolating and removing the impact of policy changes from historical
+data, which is inherently difficult. Over the period to 2060, the expected decline in other current primary
+expenditure as a share of GDP is driven primarily by projected increases in aggregate employment rates
+and labour productivity. If these improvements fail to materialise, or are weaker than anticipated, additional
+fiscal pressures will arise.
+
+           Net capital expenditure ex-defence
+
+Net capital expenditure is defined as government gross fixed capital formation plus net capital transfers
+minus consumption of fixed capital. Historical COFOG data are used to exclude defence-related net capital
+expenditure, which is included in defence spending. When COFOG data are unavailable, total net capital
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+30 |
+
+expenditure is reduced by 25%, approximating the average defence share observed in countries with
+COFOG data. For convenience, the projection approach focuses on the aggregate net concept to avoid
+having to project components (capital transfers and consumption of fixed capital) separately.
+This component is challenging to project because its long-term drivers are less obvious than for health or
+pension spending and the historical data are not adjusted for the cycle and highly volatile. Capital transfers
+often reflect one-off items, such as radio spectrum sales or special EU funds (e.g. NextGenerationEU),
+making projections based on initial values undesirable. It is assumed that net capital expenditure ex-
+defence gradually converges to 0.8% of GDP in all countries, which is slightly below the 1995-2025 median
+of 1.1%. However, it is consistent with the declining path for total investment in the LTM baseline, which
+reflects the model<U+2019>s targeting a fixed long-run capital-output ratio and slowing potential growth.
+The projection rule implies rising net capital expenditure ex-defence in countries where initial-year
+spending is lower than 0.8% of potential GDP (e.g. Bulgaria), and the opposite where it is higher
+(Figure 18). The substantial dispersion across countries in the government share of total net investment
+gradually compresses into a 6-9% range, in line with historical experience (Figure 19). In the median
+country, the contribution of this component to the long-run fiscal gap is a marginal -0.1 pp (Figure 16).
+However, the simple projection rule does not account for increasing investment needs, including those
+related to the energy transition, climate-change mitigation and adaptation, and other long-term priorities.
+One of these additional pressures, the need for investment in renewable electricity generation, is discussed
+in the next section.
+
+
+Figure 18. Net capital expenditure ex-defence is assumed to converge to 0.8% of potential GDP
+% of potential GDP
+
+
+
+
+Source: OECD Economic Outlook 119 long-term scenarios database.
+
+
+
+
+                          ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                          | 31
+
+Figure 19. Government net capital expenditure ex-defence as a share of total net investment
+Per cent, median and interquartile range
+
+
+
+
+Note: The shaded area is the interquartile range.
+Source: OECD Economic Outlook 119 long-term scenarios database.
+
+
+
+3. Some sensitivity analyses
+
+This section looks at the sensitivity of the long-run fiscal gap estimates to some of the underlying
+assumptions and trends.
+
+         Sensitivity to interest rates
+
+Given the substantial uncertainty surrounding the future path of interest rates, two alternative scenarios
+assess the impact of lower and higher interest rate trajectories relative to the baseline. These interest rate
+shocks are introduced by adding one percentage point (positive-risk scenario) or subtracting one
+percentage point (negative-risk scenario) from the equilibrium short-term neutral interest rate in all
+countries. The shocks feed quickly into short- and long-term market interest rates, and more gradually into
+implicit average interest rates on government debt (depending on country-specific debt maturity structures)
+and on the rate of return on government financial assets, as previously explained.
+Higher interest rates than in the baseline scenario increase the long-run fiscal gap, while lower rates reduce
+it (Figure 20). Unsurprisingly, a country<U+2019>s gross government debt position is the dominant factor shaping
+its sensitivity to interest rate shocks. In the higher-interest-rate scenario, long-run fiscal gaps increase by
+as much as 1-1<U+00BC> pp of GDP in countries with the largest debt burdens, such as Greece, Italy and Japan.
+The pattern is reversed in the lower-interest-rate scenario, although the same countries remain the most
+affected.
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+32 |
+
+Figure 20. Sensitivity of long-run fiscal gap to +/- 1 percentage point on interest rates
+Difference from baseline, % pts of potential GDP
+
+
+
+
+Note: Following the decomposition in Figure 2, Panel A, the change in long-run fiscal gaps relative to baseline occurs exclusively in the <U+2018>change
+in r <U+2013> g<U+2019> component.
+Source: OECD Economic Outlook 119 long-term scenarios database and author<U+2019>s calculations.
+
+
+          Sensitivity to the gross debt-to-GDP ratio target
+
+Because a wide range of government debt ratios is potentially compatible with long-run fiscal sustainability,
+one advantage of the LTM<U+2019>s long-run fiscal gap indicator is that it is not very sensitive to the debt-ratio
+target. The required fiscal adjustment between 2027 and 2060 depends mainly on initial fiscal positions
+and projected expenditure trends. However, the evolution of the revenue instrument in the intervening
+years can be sensitive to the debt-ratio target.
+The indicator<U+2019>s sensitivity to the debt target can be illustrated using the example of Belgium, whose
+government debt ratio is close to the OECD average of 110% of GDP. In a <U+201C>rebuilding fiscal buffers<U+201D>
+scenario, Belgium is assumed to gradually reduce its debt-to-GDP ratio by 50 pp rather than stabilising it
+at the initial level (Figure 21, Panel A). Once the lower debt target is reached, lower interest payments
+imply a commensurate decline in the level of structural primary revenue, the model<U+2019>s technical instrument
+for debt stabilisation. The impact is modest: around <U+00BD> pp of GDP (Figure 21, Panel B). 11
+
+
+
+
+11
+    Referring to equation [A3] in Appendix A and ignoring the impact of a lower debt ratio on the interest rate via the
+fiscal risk premium (which is taken into account in the LTM), the impact is approximately equal to <U+2212>50 <U+2219>
+   <U+0001D451><U+0001D451>
+<U+FFFD><U+0001D45F><U+0001D45F>2060 <U+2212> <U+0001D454><U+0001D454>2060 )<U+2044>(1 + <U+0001D454><U+0001D454>2060 <U+FFFD> = <U+2212>0.44.
+
+
+
+                              ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                          | 33
+
+Figure 21. Impact of lowering gross indebtedness by 50 pp of GDP
+
+
+
+
+Source: OECD Economic Outlook 119 long-term scenarios database and author<U+2019>s calculations.
+
+
+While changing the debt target has little effect on the long-run fiscal gap, it strongly influences the interim
+fiscal trajectory. Reducing the debt ratio requires not only closing the initial structural fiscal gap and
+offsetting rising expenditure, as in the baseline, but also sustaining a sufficiently strong fiscal balance to
+reach the new debt target. Multiple paths could achieve this, depending on the timing, feasible annual
+consolidation pace, and implementation constraints. A front-loaded adjustment produces an early steep
+improvement in the fiscal balance followed by a decline, while others smooth the adjustment over a longer
+period at a lower peak.
+Regardless of the path, a much larger fiscal adjustment than in the baseline scenario would be needed
+over an extended interim period. In the Belgium example, the model<U+2019>s revenue instrument is 2.9 pp of GDP
+above baseline over the 2028-45 period, peaking at 6.2 pp above baseline (Figure 21, Panel B). While the
+exact numbers and the fiscal instrument used are illustrative, the key takeaway is that achieving large debt
+reductions would require a substantial fiscal effort over the coming decades in most countries.
+
+         Sensitivity to growth rates and the sources of growth
+
+Boosting growth could help narrow fiscal deficits and improve long-run fiscal sustainability, although it is
+unlikely to eliminate the need for fiscal adjustment entirely. To assess the sensitivity of long-run fiscal gap
+estimates to stronger growth, two scenarios examine the effects of successful reforms that entail no direct
+fiscal costs, thereby isolating the pure impact of higher growth. In both scenarios, average annual potential
+growth rises by around 0.3 percentage points between 2028 and 2060, resulting in a cumulative increase
+of about 10% in the level of potential output by 2060. In the first scenario, this increase is driven by a 10%
+rise in trend labour efficiency; in the second, by a 10% increase in employment (with the working-age
+population unchanged, implying higher employment rates). In both cases, reforms raise potential growth
+in a hump-shaped pattern relative to baseline, consistent with the treatment of structural reforms in the
+LTM: potential growth gradually increases before returning to baseline.
+The fiscal effects differ markedly across the two scenarios. In the higher labour-efficiency scenario, rising
+incomes increase health and long-term care spending by around 0.2 pp of GDP by 2060. At the same time,
+other primary expenditure declines by a broadly similar magnitude as a share of GDP because wage
+growth is only partially passed through into government spending (see section 2). As a result, the long-run
+fiscal gap for the median country remains broadly unchanged relative to baseline (Figure 22), although in
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+34 |
+
+some countries the increase in health and long-term care spending slightly outweighs the reduction in other
+expenditures, leading to a marginal widening of the fiscal gap.
+
+
+Figure 22. Impact on long-run fiscal gap of a 10% boost to potential output by 2060 according to
+the supply component responsible
+Difference from baseline, % pts of potential GDP
+
+
+
+
+Note: Both scenarios implement a gradual increase in the level of potential output that cumulates to an approximately 10% increase by 2060,
+the first using higher labour efficiency growth and the second using higher employment rates. Over the simulation period 2028-60, the shocks
+correspond to an increase in the average annual growth rate of potential output by approximately 0.3 pp.
+Source: OECD Economic Outlook 119 long-term scenarios database and author<U+2019>s calculations.
+
+
+In the higher-employment scenario, the same income effect places upward pressure on health and long-
+term care spending. However, this is more than offset by other effects, especially reductions in pension
+and other primary expenditures as a share of GDP, resulting in substantially smaller long-run fiscal gaps
+<U+2014> by 2<U+00BD> pp in the median country.
+This difference reflects a key modelling assumption in the LTM: economy-wide productivity growth raises
+wages across all sectors, including the public sector. As a result, productivity-enhancing reforms increase
+the relative price of labour-intensive government services over time, as well as the real value of pension
+and social protection spending. Consequently, when expenditure is measured relative to GDP, part of the
+fiscal benefit from higher productivity-driven growth is offset by rising public spending. Employment-driven
+growth does not generate the same offsetting effect. Although the degree of long-run wage indexation
+across expenditure categories is uncertain <U+2014> and alternative assumptions would affect the quantitative
+results <U+2014> the qualitative conclusion is robust: different sources of growth do not improve fiscal sustainability
+to the same extent.
+The fiscal gains from stronger growth would be somewhat larger if the LTM made different assumptions:
+     <U+2022>    Lower than one-to-one long-run pass-through from potential growth to interest rates: As discussed
+          previously, the LTM assumes that market interest rates gradually adjust fully to changes in potential
+          growth, implying that growth shocks affect the long-run fiscal gap primarily through their impact on
+          expenditure ratios. Allowing for less than full pass-through would therefore modestly increase the
+          fiscal benefits of higher growth, although it would not materially alter the difference between the
+          two scenarios.
+     <U+2022>    Permanent growth impacts: If reforms permanently increased growth rather than temporarily, the
+          reduction in long-run fiscal gaps would be larger.
+
+
+
+
+                            ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                             | 35
+
+    <U+2022>    Price indexing of tax and benefit thresholds: The LTM implicitly assumes that tax and benefits
+         thresholds are indexed to wages as opposed to prices. If the latter were the case for an extended
+         period, more people would be pushed into higher tax brackets and lower benefit rates, increasing
+         the fiscal gains from productivity growth.
+    <U+2022>    Relatively higher productivity gains in the public sector: The implications of the productivity scenario
+         could differ substantially if productivity gains were higher in the public sector than in the rest of the
+         economy. For example, education and health systems could potentially use advances in artificial
+         intelligence to raise productivity relative to the private sector. If public-sector wages continued to
+         track economy-wide productivity growth under such circumstances, public expenditure as a share
+         of GDP could decline significantly.
+
+         Sensitivity to net international migration
+
+In the UNPD population projections used in the baseline scenario, country-level net international migration
+remains close to recent levels up to 2060. However, future population movements and migration policies
+are highly uncertain. To assess the sensitivity of long-run fiscal gap estimates to migration, an alternative
+scenario is run in which net migration in OECD countries rises over the baseline level by 0.1% of the
+current total population by 2033 and remains at that higher level thereafter, thus raising total population by
+about 3<U+00BD> per cent over baseline in 2060 in the average country. In the LTM, new migrants are assumed
+to have the same economic characteristics (employment rates, average productivity level) as the native-
+born population, which could be an overoptimistic assumption in the short run even if justifiable in the
+longer term. Thus, migration affects long-run fiscal gaps solely through changes in the age structure of the
+population, with migrants assumed to be somewhat younger than the existing population. The calibration
+is based on the average age profile of immigrants in European countries. The scenario can therefore be
+interpreted as testing the sensitivity of long-run fiscal gaps to a younger age composition of the population.
+Results show that increasing net migration by 0.1% of the population could reduce long-run fiscal gaps by
+0.6 pp of GDP in the median country by 2060 (Figure 23). Most of this fiscal dividend comes through lower
+pension expenditure relative to GDP, as higher migration reduces the ratio of retirees to workers. It also
+lowers health and long-term care expenditure as a share of GDP (by reducing the proportion of the
+population aged 65 and over) and in many cases increases other current primary expenditure slightly (by
+increasing the ratio of youth to workers which is assumed to raise education spending as a share of GDP).
+
+Figure 23. Impact on long-run fiscal gap of raising net international migration by 0.1% of population
+Difference from baseline, % pts of potential GDP
+
+
+
+
+Source: OECD Economic Outlook 119 long-term scenarios database and author<U+2019>s calculations.
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+36 |
+
+1.       In practice, the fiscal effects of higher migration are more complex than can be illustrated with the
+LTM. Any downward impact on aggregate employment rates or average labour productivity would reduce
+the fiscal dividend associated with a younger population, as would the direct fiscal costs of administering
+a larger annual inflow of newcomers. At the same time, migration could raise employment rates and
+productivity, particularly if immigration policy targets high-skill migrants in occupations facing labour
+shortages and if newcomers receive adequate support to facilitate integration into the labour market, such
+as licensing assistance and language training.
+
+         Sensitivity to pension age and indexation assumptions
+
+The two key drivers of pension expenditure projections are the ratio of retirees to workers and the rate of
+benefit indexation. Two alternative scenarios are used to assess the sensitivity of future pension
+expenditure to these drivers.
+The first assumes that all countries increase both male and female statutory retirement ages by one year
+by 2035, over and above any legislated increases already incorporated in the baseline. Such a reform
+reduces pension expenditure in 2060 by 0.3 pp of GDP in the median country (Figure 24). By raising
+employment rates among those aged 55-74 and thus increasing the employment-to-population ratio, the
+reform also lowers other current primary expenditure by a further 0.1 pp of GDP in the median country for
+the reasons explained in the higher-employment scenario (section 3.3). The total reduction in the long-run
+fiscal gap thus amounts to 0.4 pp of GDP in the median country, and more in countries where these
+expenditures are relatively high and/or where the retirees-to-workers and population-to-workers ratios are
+projected to increase the most (e.g. Austria, Poland).
+
+
+Figure 24. Impact on long-run fiscal gap of raising statutory retirement ages by one year by 2035
+Difference from baseline, % pts of potential GDP
+
+
+
+
+Source: OECD Economic Outlook 119 long-term scenarios database and author<U+2019>s calculations.
+
+
+The second scenario alters the benefit indexation assumption from wage to price indexation, resulting in a
+decline in the ratio of the average pension benefit to the average wage. This scenario has a very large
+effect on long-run fiscal gaps, reducing it by 4<U+00BD> pp of GDP in the median country relative to baseline, and
+by as much as 7-9 pp in the most affected countries (Figure 25). As in the previous scenario, cross-country
+differences largely reflect baseline pension spending levels: countries with higher initial spending gain
+more (as a share of GDP) from reducing benefit generosity. A second factor is the projected average rate
+of labour productivity growth: the higher this rate, the larger the implied fall in the average pension benefit
+
+
+                           ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                                 | 37
+
+ratio in this scenario, and therefore the larger the reduction in pension spending as a share of GDP. With
+price indexation, the ratio of pension expenditure to GDP would generally decline between 2027 and 2060
+(by 1.7 pp of GDP in the median country) and the long-run fiscal gap of the median country would be only
+0.6 pp of GDP. 12
+
+
+Figure 25. Impact on long-run fiscal gap of assuming price as opposed to wage indexation of
+pensions
+Difference from baseline, % pts of potential GDP
+
+
+
+
+Source: OECD Economic Outlook 119 long-term scenarios database and author<U+2019>s calculations.
+
+
+If pensions were indexed to prices as opposed to wages, it would be logical for this to also be the case for
+the rest of social protection expenditure (in the other primary expenditure component). Extending the price
+indexation assumption to the rest of social protection expenditure would generate substantial additional
+fiscal savings of 3 pp in the median country by 2060 relative to baseline.
+While the potential fiscal savings from a reduction in social benefit generosity are substantial, it would
+undoubtedly be politically challenging. At the EU level for instance, it would imply that the average pension
+benefit ratio would fall by nearly one half, from 46% to 28% by 2060 given LTM projections for labour
+productivity growth. However, partial wage indexation, or temporary price indexation followed by a return
+to wage indexation, could still meaningfully reduce fiscal adjustment needs.
+
+
+
+
+12
+    The median long-run fiscal gap reported for this scenario (0.6 pp of GDP) does not correspond exactly to the
+difference between that of the baseline scenario (4.7 pp) and this section<U+2019>s price-indexation scenario (4<U+00BD> pp) because
+medians are not additive.
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+38 |
+
+4. Complementary illustrations of the need for long-run fiscal adjustments
+
+This section illustrates long-run fiscal adjustment needs within the LTM using two approaches that
+complement the analysis in Section 2. Both confirm that, without policy action, many countries face
+sizeable risks to long-run fiscal sustainability.
+
+          Debt-to-GDP ratio trajectories
+
+One way to highlight long-run fiscal challenges is to switch off the LTM<U+2019>s fiscal adjustment mechanism and
+project the debt-to-GDP trajectory that results from holding structural primary revenue as a percentage of
+potential GDP fixed at its initial level. Projected changes in spending, growth, and interest rates feed
+directly into the fiscal balance and the debt trajectory. Because the approach assumes no policy response
+to rising debt levels, some debt ratios begin to follow explosive paths. To avoid excessive feedback
+between debt and interest rates via fiscal risk premia, the illustrative simulation ends in 2045.
+The projected change in the debt-to-GDP ratio is decomposed into components that are either identical or
+very similar to those used in section 2. The differences are as follows:
+      <U+2022>   <U+2018>Initial structural primary balance<U+2019> replaces the previous <U+2018>initial structural fiscal gap<U+2019> component. It
+          shows the contribution to debt dynamics of maintaining the structural primary balance in 2027
+          unchanged as a percentage of GDP throughout the simulation period. It is simply the cumulative
+          sum of this balance and is illustrative rather than aligned with official medium-term targets.
+      <U+2022>   The <U+2018><U+0001D45F><U+0001D45F> <U+2212> <U+0001D454><U+0001D454><U+2019> component includes the effects of the initial level and changes in <U+0001D45F><U+0001D45F> <U+2212> <U+0001D454><U+0001D454> conditions
+          interacting with debt and asset stocks. The feedback from rising debt to higher interest payments
+          appears in this component.
+      <U+2022>   <U+2018>Other factors<U+2019> consist mainly of the <U+2018>other primary expenditure<U+2019> component, plus any cyclical effects
+          that make the initial fiscal balance differ from the structural one in the first few years of the projection
+          period. 13 These cyclical effects are generally very small.
+These illustrative projections show net government debt rising by 43 pp of GDP by 2045 in the median
+country, with the (assumed unchanged) initial structural primary balance being the largest contributor to
+the increase in debt (25 pp), followed by health and long-term care expenditure (10<U+00BD> pp) and pensions
+(10 pp) (Figure 26). The projected increase in defence expenditure adds approximately 7<U+00BC> pp of GDP to
+net debt in the median country, again assuming no impact from defence spending on potential output.
+Other factors, mainly the reduction in primary expenditure other than for health, pension and defence
+explained in the previous section, subtract about 16 pp of GDP in debt in the median country. 14
+
+
+
+
+13
+  Unlike the analysis in section 2, which decomposes a cyclically-adjusted variable, the debt-to-GDP ratio is affected
+by cyclical effects on GDP, making this addition to the decomposition necessary.
+14
+     The sum of median components does not add up to the reported total exactly because medians are not additive.
+
+
+
+                         ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                       | 39
+
+Figure 26. Net government debt with fiscal adjustment rule switched off, 2027-45
+A. Change between 2027 and 2045, % pts of GDP
+
+
+
+
+B. Levels, 2027 and 2045, % of GDP
+
+
+
+
+Source: OECD Economic Outlook 119 long-term scenarios database and author<U+2019>s calculations.
+
+
+Across G7 countries, government net debt increases by between 5<U+00BD> pp of GDP in Japan to 124 pp of
+GDP in the United States (Figure 27; projections for other countries appear in Annex C). A few results
+stand out:
+    <U+2022>    If left unchanged, the negative initial structural primary balances in France, the United Kingdom,
+         and the United States could add more to debt than the projected increases in health, long-term
+         care, and pension spending.
+    <U+2022>    Similarly, in Canada, France, and the United Kingdom, meeting NATO defence spending
+         commitments could add roughly as much, or more, to debt as rising spending on health, long-term
+         care, and pensions.
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+40 |
+
+Figure 27. Change in net government debt from 2027 with the fiscal adjustment rule switched off
+% pts of GDP
+
+
+
+
+Note: The projections use a common framework for all countries, including an assumption that government financial assets remain constant as
+a share of GDP in all countries. Such assumptions may depart substantially from national objectives and projections in particular economies.
+For instance, in Canada, official projections anticipate significant growth in pension plan (CPP/QPP) assets relative to GDP. If fully reflected on
+a consolidated general government basis, this accumulation would result in a lower net debt-to-GDP trajectory than shown in this chart. Such
+issues are best addressed on a country-by-country basis, particularly in the context of OECD country surveys.
+Source: OECD Economic Outlook 119 long-term scenarios database and author<U+2019>s calculations.
+
+
+The projected decline in Japan<U+2019>s debt ratio early in the period is noteworthy. It reflects its initially favourable
+<U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> <U+2212> <U+0001D454><U+0001D454> differential combined with a very high gross debt ratio, which magnifies this effect. However, as the
+implicit average interest rate gradually converges towards an equilibrium somewhat above the potential
+growth rate (see section 2.4), this trend reverses midway through the projection period. By 2060, the
+cumulative contribution of the <U+0001D45F><U+0001D45F> <U+2212> <U+0001D454><U+0001D454> component would again be positive <U+2014> consistent with the longer-
+horizon results shown by the standard long-run fiscal gap indicator (Figure 2, Panel A).
+
+          Gross government financing needs
+Another useful indicator of fiscal challenges is the projected evolution of general government gross
+financing needs, defined as the sum of new borrowing and maturing debt. After spiking during the
+pandemic, annual financing needs now stand at around 25% of GDP in the median G7 country. In the
+scenario described in the previous subsection where budget balances are allowed to deteriorate in line
+with spending pressures, financing needs rise sharply in the coming years, particularly in the United States
+(due to a large initial primary deficit) and Italy (due to high initial debt) (Figure 28, projections for other
+countries appear in Annex C). The United Kingdom is partially insulated by its relatively long debt maturity
+
+
+                              ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                                   | 41
+
+profile (an average remaining maturity of around thirteen years, compared with about seven years for the
+rest of the G7 as of Q1 2026). The projections and maturity statistics do not account for substantial central
+bank holdings of government debt, which effectively shorten the consolidated public sector<U+2019>s average
+maturity, by around two years in the average economy (OECD, 2023[24]). Future changes in central bank
+balance sheet policy could affect the market interest rate on new debt, but are not included in this exercise.
+
+
+Figure 28. Projected annual gross government financing needs
+% of GDP
+
+
+
+
+Source: OECD Economic Outlook 119 long-term scenarios database and author<U+2019>s calculations.
+
+
+
+5. The energy transition is potentially an additional source of expenditure
+pressure
+
+The energy transition, broader climate change mitigation efforts, and fiscal costs related to climate
+adaptation and climate-related damages are additional sources of potential fiscal pressure that are only
+partially included in the LTM and not included in the long-run fiscal gap indicator. This section updates and
+refines the estimates of projected capital expenditure for renewable electricity generation first presented in
+Guillemette and Ch<U+00E2>teau (2023[2]).
+The LTM<U+2019>s baseline scenario is built on a business-as-usual premise, including for the relationship between
+economic output and energy use and for the gradual transition from carbon-based to low-carbon energy
+sources. The energy-substitution assumption is implemented by extrapolating country-level primary energy
+mixes along time trends estimated over the past decade. This approach results in a projected pace of
+substitution that is insufficient to achieve global net-zero greenhouse gas (GHG) emissions this century:
+carbon-based sources still account for roughly three-quarters of the global primary energy mix in 2050 and
+more than 60% in 2100.
+The LTM can also be used to generate other stylised energy-transition scenarios with much more ambitious
+substitution and efficiency gains. In the scenario used below, all countries accelerate decarbonisation,
+phasing out coal by 2050 at the latest and reducing the shares of oil and gas in primary energy to 5% and
+10%, respectively, by then. These declining shares are replaced by low-carbon sources, primarily solar
+and wind, with the allocation varying by country according to stylised projection rules that reflect physical
+constraints and revealed preferences, albeit imperfectly. 15 This scenario limits global warming to about
+
+15
+  See section 2.1 of Annex B in Guillemette and Ch<U+00E2>teau (2023[2]) for how this is done. While many different
+configurations of individual country energy mixes, energy use, etc., could be consistent with the Paris agreement goals,
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+42 |
+
+1.7<U+00B0>C by 2100, consistent with the Paris Agreement. With a few exceptions (e.g. geothermal heat), low-
+carbon energy sources generate electricity. The transition therefore requires a substantial expansion of
+electricity-generation capacity. Using the LTM<U+2019>s projections for total primary energy use and energy mixes,
+indicative projections can be derived for the additional electrical capacity required in both the baseline and
+transition scenarios. 16
+These projections are highly uncertain and cover only a narrow aspect of the fiscal implications of climate
+change and the energy transition. 17 They are intended to provide broad quantification and cross-country
+comparisons on this one aspect, namely the capital costs associated with transitioning to low-carbon
+energy, not to give a full picture of the potential fiscal challenges associated with the climate/energy nexus.
+This focus allows the calculations to ignore the choice of policy instruments to drive the transition (e.g. a
+carbon tax), any associated revenue, and the possibility of a near-term negative supply shock that could
+depress output relative to baseline. The projections also omit many country specificities. For example,
+capacity-factor assumptions for different energy technologies are held constant across countries (Table 4),
+whereas in reality they vary with geography and climate.
+
+
+Table 4. Assumptions for new low-carbon electricity generation capacity
+                       Average                                                                             Assumed learning rate, % decline
+                       capacity    Average building cost of new capacity in 2024, USD billion per GW         in real building cost with each
+                        factor                                                                                doubling of installed capacity
+                                          EU                USA             Japan         Middle East
+        Wind             0.35             1.8                1.8              3.2             1.7                         6
+        Solar            0.17             0.8                1.3              2.0             0.7                         20
+       Hydro             0.48             3.3                3.4              3.0             2.8                         1
+      Nuclear            0.85             6.6                5.0              4.2             3.5                         0
+  Other renewables       0.78             3.7                3.7              3.7             3.3                         5
+
+Source: Capacity factors are based on global 2024 averages for new capacity reported by IRENA (2025), Renewable power generation costs
+in 2024, International Renewable Energy Agency, Abu Dhabi. Cost estimates and learning rates are based on IEA (2025), World Energy Outlook
+2025, International Energy Agency, Paris. The estimates for wind include onshore/offshore wind in a 90/10 proportion. The estimates for solar
+includes solar photovoltaic and concentrated solar power in a 99/1 proportion. The estimates for other renewables are simple averages of the
+six different sub-types (bioenergy, geothermal power, etc.). In the absence of specific estimates for these countries from the IEA, the EU cost
+estimates are used for Australia and New Zealand, and the Japan cost estimates are used for Korea.
+
+
+In the energy-transition scenario, installed low-carbon generation capacity is projected to increase by a
+factor of four to ten by 2050 in most countries (Figure 29). The increase is smaller in countries where low-
+carbon sources already account for a large share of primary energy (e.g. Iceland) and larger in countries
+with high carbon intensity. Solar dominates new capacity additions, partly by assumption, given its rapidly
+declining costs, and partly because its relatively low capacity factor implies a larger installed base is
+
+
+
+the specific assumptions implemented here are guided by simplicity and similarity of treatment, so that results are
+comparable across countries and hopefully illustrative in terms of broad orders of magnitude. They do not necessarily
+adhere to individual country commitments, targets or constraints, but this can be refined when the model is applied to
+individual country analyses.
+16
+     See section 2.5 of Annex B in Guillemette and Ch<U+00E2>teau (2023[2]) for details on how this is done.
+17
+  See https://www.oecd.org/en/data/tools/oecd-tool-for-calculating-the-fiscal-impacts-of-decarbonisation-and-
+environmental-challenges.html for a tool the OECD has developed to evaluate the potential fiscal consequences of
+environmental pressures and decarbonization more broadly, and in particular the potential loss of fuel excise tax
+revenue associated with electrification of the vehicle fleet.
+
+
+
+                             ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                                                     | 43
+
+required for any given level of annual generation. While highly stylised, these projections illustrate the scale
+of the challenge in expanding low-carbon electricity.
+
+
+Figure 29. Increase in low-carbon electrical capacity by 2050 in the energy transition scenario
+Index of low-carbon electricity-generation capacity, 2023 = 100
+
+
+
+
+Note: Israel is not shown as it is an outlier given very low capacity in the base year (2023).
+Source: IEA Electricity Information Statistics database (for the base year) and OECD Economic Outlook 119 long-term scenarios database.
+
+
+Combining the capacity projections with cost estimates by technology allows indicative projections of future
+capital investment needs. For most countries initial cost assumptions are based on regional averages and
+do not capture country-specific conditions perfectly (Table 4). Future cost declines are also uncertain: they
+are assumed to follow a power-law learning curve in which real plant costs (relative to the GDP deflator)
+fall by some percentage with each doubling of installed global capacity (Table 4). 18 Linking country-specific
+costs to global installed capacity generates a positive externality: faster global deployment accelerates
+cost reductions. Since low-carbon capacity expands more rapidly in the transition scenario than in baseline,
+real costs fall more quickly.
+Capital investment in generation capacity is only one component of total investment needs. A renewable-
+heavy grid also requires major investment in transmission lines, transformers, and other equipment, as
+well as new technologies, such as storage, to manage intermittency. Based on European averages, for
+every dollar invested in renewable generation, around 70 cents is required for grid upgrades
+(BloombergNEF, 2025[25]). Accordingly, the LTM<U+2019>s estimated capital costs for new low-carbon generation
+are multiplied by 1.7 to approximate total investment needs for low-carbon electricity systems. This still
+excludes many other necessary investments and does not capture differences in operating costs across
+technologies.
+Investment needs under the transition scenario cannot simply be added to the long-run fiscal gap indicator
+for several reasons. First, low-carbon electricity investment does not necessarily have to be financed by
+governments, even though electricity supply has historically involved substantial public financing. Second,
+if the transition is completed by 2050, investment thereafter would fall back toward baseline levels, making
+
+18
+   The literature provides various estimates for learning rates in renewable power, with some studies pointing to even
+higher learning rates than these assumptions over the last few years (IRENA, 2025[30]). However, learning rate
+estimates often refer to equipment prices (i.e., the solar panels themselves), not necessarily the full installed system
+cost (which includes labour for installation, etc.). Learning rates for overall system costs are likely to be lower than
+purely for equipment. Because data for many non-OECD countries are limited, total installed capacity in the OECD
+area is used in the LTM as a proportionate proxy for global capacity.
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+44 |
+
+the 2060 horizon used elsewhere in this paper not well adapted to this specific spending pressure.
+Moreover, achieving the Paris objective requires front loading investment, given long planning and
+construction periods. Early-period investment is also less uncertain than projections several decades out.
+For these reasons, investment needs are reported for 2028-2035 (the first eight years of the long-run
+simulation) and are not added to the long-run fiscal gap metric for 2060 elsewhere in the paper.
+In the energy-transition scenario, new investment in low-carbon electricity capacity amounts to 2% of GDP
+in the OECD area between 2028 and 2035 (Figure 30). Differences in initial energy mixes and in cost
+estimates for new capacity largely explain cross-country variation <U+2014> for example, euro area countries
+generally show lower investment needs than other OECD economies both because of greener initial
+energy mixes and lower costs for new solar installations. Because the baseline also includes some
+investment in new capacity, these costs do not represent a pure increase: the transition scenario adds
+1<U+00BD> pp of GDP to baseline investment needs for the OECD area, and as much as 3<U+00BD>-5 pp in Japan and
+Korea given relatively high costs for new capacity in this region. If governments finance a large share of
+this investment, the transition could add several tenths of a percentage point to expenditure pressures in
+the early projection years, and perhaps a few percentage points of GDP in some countries.
+
+
+Figure 30. Projected capital expenditure for low-carbon electrical capacity and grid updating, 2028-
+to-2035 average
+% of GDP
+
+
+
+
+Note: Iceland is not shown as its very peculiar energy mix, with a lot of geothermal energy already, implies no need for additional investment in
+the transition scenario.
+Source: OECD Economic Outlook 119 long-term scenarios database.
+
+
+
+
+                              ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                    | 45
+
+
+
+References
+
+
+
+
+ Blanchard, O., A. Leandro and J. Zettelmeyer (2021), <U+201C>Redesigning EU fiscal rules: From rules to    [9]
+    standards<U+201D>, Economic Policy, Vol. eiab003, https://doi.org/10.1093/epolic/eiab003.
+
+ BloombergNEF (2025), Energy Transition Investment Trends: Tracking global investment in the        [25]
+    low-carbon transition, BloombergNEF.
+
+ Cavalleri, M. and Y. Guillemette (2017), <U+201C>A revised approach to trend employment projections in    [21]
+   long-term scenarios<U+201D>, OECD Economics Department Working Papers, No. 1384, OECD
+   Publishing, Paris, https://doi.org/10.1787/075f0153-en.
+
+ Conigrave, B. and Y. Shin (2026), <U+201C>Fiscal and macroeconomic impacts of defence spending<U+201D>,          [22]
+   OECD Economics Department Working Papers, No. 1861, OECD Publishing, Paris,
+   https://doi.org/10.1787/b4860378-en.
+
+ Crowe, D. et al. (2022), <U+201C>Population ageing and government revenue: Expected trends and             [4]
+    policy considerations to boost revenue<U+201D>, OECD Economics Department Working Papers,
+    No. 1737, OECD Publishing, Paris, https://doi.org/10.1787/9ce9e8e3-en.
+
+ Cutler, D. and L. Klarnet (2026), <U+201C>Has the United States Bent the Health Care Cost Curve?<U+201D>,        [17]
+    NBER Working Papers, No. 35231, National Bureau of Economic Research, Cambridge, M.A,
+    https://doi.org/10.3386/w35231.
+
+ European Commission (2024), The 2024 Ageing Report: Economic & Budgetary Projections for           [18]
+    the EU Member States (2022-2070).
+
+ European Commission (2015), The 2015 Ageing Report: Economic and Budgetary Projections             [19]
+    for the 28 EU Member States (2013-2060).
+
+ Farag, M. et al. (2012), <U+201C>The income elasticity of health care spending in developing and          [14]
+    developed countries<U+201D>, International Journal of Health Care Finance and Economics, Vol. 12/2,
+    pp. 145-162, https://doi.org/10.1007/s10754-012-9108-z.
+
+ Guillemette, Y. (2019), <U+201C>Recent improvements to the public finance block of the OECD<U+2019>s long-       [26]
+   term global model<U+201D>, OECD Economics Department Working Papers, No. 1581, OECD
+   Publishing, Paris, https://doi.org/10.1787/4f07fb8d-en.
+
+ Guillemette, Y. and J. Ch<U+00E2>teau (2023), <U+201C>Long-term scenarios: incorporating the energy               [2]
+   transition<U+201D>, OECD Economic Policy Papers, No. 33, OECD Publishing, Paris,
+   https://doi.org/10.1787/153ab87c-en.
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+46 |
+
+ Guillemette, Y. and D. Turner (2018), <U+201C>The Long View: Scenarios for the World Economy to              [1]
+   2060<U+201D>, OECD Economic Policy Papers, No. 22, OECD Publishing, Paris,
+   https://doi.org/10.1787/b4f4e03e-en.
+
+ Guillemette, Y. and D. Turner (2017), <U+201C>The fiscal projection framework in long-term scenarios<U+201D>,      [29]
+   OECD Economics Department Working Papers, No. 1440, OECD Publishing, Paris,
+   https://doi.org/10.1787/8eddfa18-en.
+
+ IRENA (2025), Renewable Power Generation Costs in 2024, International Renewable Energy               [30]
+    Agency, Abu Dhabi.
+
+ Koutsogeorgopoulou, V. and H. Morgavi (2025), <U+201C>Ageing populations, their fiscal implications and      [5]
+   policy responses<U+201D>, OECD Economics Department Working Papers, No. 1844, OECD
+   Publishing, Paris, https://doi.org/10.1787/6aec03b3-en.
+
+ Lorenzoni, L. et al. (2019), <U+201C>Health Spending Projections to 2030: New results based on a            [15]
+    revised OECD methodology<U+201D>, OECD Health Working Papers, No. 110, OECD Publishing,
+    Paris, https://doi.org/10.1787/5667f23d-en.
+
+ Morgavi, H. (2024), <U+201C>Is it worth raising the normal retirement age?: A new model to estimate the     [20]
+   employment effects<U+201D>, OECD Economics Department Working Papers, No. 1823, OECD
+   Publishing, Paris, https://doi.org/10.1787/5f2a3b40-en.
+
+ OECD (2026), OECD Economic Outlook, Volume 2026 Issue 1: Under Pressure, OECD                        [23]
+   Publishing, Paris, https://doi.org/10.1787/2d1956f0-en.
+
+ OECD (2025), <U+201C>OECD global long-run economic scenarios: 2025 update<U+201D>, OECD Economic                   [12]
+   Policy Papers, No. 36, OECD Publishing, Paris, https://doi.org/10.1787/00353678-en.
+
+ OECD (2025), <U+201C>Sustainability of public finances in OECD countries: From fiscal consolidation to       [6]
+   state redesign?<U+201D>, OECD Papers on Budgeting, No. 2025/12, OECD Publishing, Paris,
+   https://doi.org/10.1787/df89a38a-en.
+
+ OECD (2024), OECD Economic Surveys: Italy 2024, OECD Publishing, Paris,                               [7]
+   https://doi.org/10.1787/78add673-en.
+
+ OECD (2024), OECD Economic Surveys: United States 2024, OECD Publishing, Paris,                       [8]
+   https://doi.org/10.1787/cdfff156-en.
+
+ OECD (2023), OECD Economic Outlook, Volume 2023 Issue 2, OECD Publishing, Paris,                     [24]
+   https://doi.org/10.1787/7a5f73ce-en.
+
+ Pak, M. and C. Schwellnus (2019), <U+201C>Labour share developments over the past two decades: The          [28]
+   role of public policies<U+201D>, OECD Economics Department Working Papers, No. 1541, OECD
+   Publishing, Paris, https://doi.org/10.1787/b21e518b-en.
+
+ Price, R., T. Dang and J. Botev (2015), <U+201C>Adjusting fiscal balances for the business cycle: New tax   [11]
+    and expenditure elasticity estimates for OECD countries<U+201D>, OECD Economics Department
+    Working Papers, No. 1275, OECD Publishing, Paris, https://doi.org/10.1787/5jrp1g3282d7-
+    en.
+
+ Rouzet, D. et al. (2019), <U+201C>Fiscal challenges and inclusive growth in ageing societies<U+201D>, OECD          [3]
+   Economic Policy Papers, No. 27, OECD Publishing, Paris, https://doi.org/10.1787/c553d8d2-
+   en.
+
+
+
+                     ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                   | 47
+
+ Schwellnus, C. et al. (2018), <U+201C>Labour share developments over the past two decades: The role of   [27]
+   technological progress, globalisation and <U+201C>winner-takes-most<U+201D> dynamics<U+201D>, OECD Economics
+   Department Working Papers, No. 1503, OECD Publishing, Paris,
+   https://doi.org/10.1787/3eb9f9ed-en.
+
+ Sicsic, M. and D. Hourani (2026), <U+201C>The impact of population ageing on tax revenues in OECD        [10]
+    countries<U+201D>, OECD Taxation Working Papers, No. 75, OECD Publishing, Paris,
+    https://doi.org/10.1787/94cbc7e5-en.
+
+ Smith, S., J. Newhouse and G. Cuckler (2022), <U+201C>Health Care Spending Growth Has Slowed: Will       [16]
+   the Bend in the Curve Continue?<U+201D>, NBER Working Papers, No. 30782, National Bureau of
+   Economic Research, https://www.nber.org/papers/w30782.
+
+ Wyplosz, C. (2019), Olivier in Wonderland, VoxEU, https://voxeu.org/content/olivier-wonderland.   [13]
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+48 |
+
+
+Annex A. Decomposition of the long-run fiscal
+gap indicator
+
+
+This Annex shows the algebraic decomposition of the long-run fiscal gap shown in Figure 2. The variable
+names follow OECD Economic Outlook (as well as LTM) mnemonics wherever possible (Table A A.1).
+
+
+Table A A.1. Variable names and definitions
+   Economic Outlook
+                                                                                                       Shorthand used below if
+  Long-Term database                                      Definition
+                                                                                                             applicable
+      mnemonic
+       CAPOGQ                   Net capital outlays of the government, % of potential GDP
+    CAPOGQ_DEF            Net capital outlays of the government on defence, % of potential GDP
+                          Net capital outlays of the government excluding those on defence, % of
+   CAPOGQ_EXDEF
+                                                        potential GDP
+        DEFENCE                           Defence expenditure, % of potential GDP
+         GDPTR                   Potential gross domestic product, nominal, local currency              <U+0001D454><U+0001D454> = <U+2206>log(<U+0001D43A><U+0001D43A><U+0001D445><U+0001D445><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D43C><U+0001D43C><U+0001D461><U+0001D461> )
+          GFAR                         Government gross financial assets, % of GDP
+         GGFLQ                        Government gross financial liabilities, % of GDP
+         HEALTH            Public expenditure on health and long-term care, % of potential GDP
+        NLGXQA             Cyclically adjusted government primary balance, % of potential GDP
+        PENSION                        Public pension spending, % of potential GDP
+                                                                                                               <U+0001D43C><U+0001D43C><U+0001D441><U+0001D441><U+0001D438><U+0001D438><U+0001D445><U+0001D445>_<U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43C><U+0001D43C><U+0001D441><U+0001D441><U+0001D438><U+0001D438><U+0001D438><U+0001D438>
+       RATE_GGINTP          Implicit interest rate paid on gross government financial liabilities, %   <U+0001D45F><U+0001D45F> <U+0001D451><U+0001D451> =
+                                                                                                                       100
+                                                                                                               <U+0001D43C><U+0001D43C><U+0001D441><U+0001D441><U+0001D438><U+0001D438><U+0001D445><U+0001D445>_<U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43C><U+0001D43C><U+0001D441><U+0001D441><U+0001D438><U+0001D438><U+0001D43C><U+0001D43C>
+       RATE_GGINTR            Implicit interest rate received on government financial assets, %        <U+0001D45F><U+0001D45F> <U+0001D44E><U+0001D44E> =
+                                                                                                                       100
+                        Cyclically adjusted current government disbursements excluding interest, %
+         YPGXQA
+                                                      of potential GDP
+                         Cyclically adjusted current government disbursements excluding interest,
+        YPGXXQA
+                          health and long-term care, pensions and defence, % of potential GDP
+                         Cyclically adjusted current government receipts excluding interest, % of
+         YRGXQA
+                                                       potential GDP
+
+As explained in the main text, the long-run fiscal gap is defined as the change in cyclically-adjusted primary
+government revenue in year <U+0001D461><U+0001D461> (<U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+0001D461><U+0001D461> ) over a chosen period, 2027 to 2060 being used in the main text.
+Using the notation <U+0001D6E9><U+0001D6E9><U+0001D44C><U+0001D44C> = <U+0001D44C><U+0001D44C>2060 <U+2212> <U+0001D44C><U+0001D44C>2027, this is:
+
+                                <U+0001D6E9><U+0001D6E9><U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441> = <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441>2060 <U+2212> <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441>2027                                              [A1]
+
+To stabilise the debt-to-GDP ratio at target over the projection period, the LTM dynamically adjusts its fiscal
+instrument, <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+0001D461><U+0001D461> , so that it matches a target value, <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217><U+0001D461><U+0001D461> , that is consistent with maintaining the
+debt-to-GDP ratio stable given other variables in the model.
+This target value is derived from the conventional debt dynamics equation but using trend values (such as
+potential output and cyclically-adjusted fiscal aggregates) given that, in the LTM, the output gap is assumed
+to close within a few years of the start of the projection period, from which point on fiscal aggregates are
+
+
+                         ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                                             | 49
+
+equal to their cyclically-adjusted values. The equation also accounts for government financial assets
+(<U+0001D43A><U+0001D43A><U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C>):
+
+                                     <U+0001D45F><U+0001D45F><U+0001D461><U+0001D461><U+0001D451><U+0001D451> <U+2212> <U+0001D454><U+0001D454><U+0001D461><U+0001D461>                        <U+0001D454><U+0001D454><U+0001D461><U+0001D461> /2 <U+2212> <U+0001D45F><U+0001D45F><U+0001D461><U+0001D461><U+0001D44E><U+0001D44E>
+                 <U+2206><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D461><U+0001D461> = <U+FFFD>                 <U+FFFD> <U+2219> <U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D461><U+0001D461><U+2212>1 + <U+FFFD>                  <U+FFFD> <U+2219> <U+0001D43A><U+0001D43A><U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C> <U+2212> <U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+0001D461><U+0001D461>   [A2]
+                                      1 + <U+0001D454><U+0001D454><U+0001D461><U+0001D461>                               1 + <U+0001D454><U+0001D454><U+0001D461><U+0001D461>
+
+<U+0001D43A><U+0001D43A><U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C> has no time subscript because it is assumed to remain constant over the projection period. The <U+0001D454><U+0001D454><U+0001D461><U+0001D461>
+in the numerator of the second term is divided by two because of the EO/LTM assumption, explained in
+the main text, that half of the annual increase in government financial assets (to keep pace with GDP)
+comes from revaluation effects and therefore requires no debt issuance.
+Setting the left-hand side of [A2] to zero and moving the rightmost term to that side of the equation, a target
+cyclically-adjusted primary balance (<U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217><U+0001D461><U+0001D461> ) can be defined to achieve the objective of maintaining the
+gross debt ratio stable as a function of the target level (<U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C> <U+2217> ):
+
+                                                <U+0001D45F><U+0001D45F><U+0001D461><U+0001D461><U+0001D451><U+0001D451> <U+2212> <U+0001D454><U+0001D454><U+0001D461><U+0001D461>                      <U+0001D454><U+0001D454><U+0001D461><U+0001D461> /2 <U+2212> <U+0001D45F><U+0001D45F><U+0001D461><U+0001D461><U+0001D44E><U+0001D44E>
+                          <U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217><U+0001D461><U+0001D461> = <U+FFFD>                 <U+FFFD> <U+2219> <U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C> <U+2217> + <U+FFFD>                  <U+FFFD> <U+2219> <U+0001D43A><U+0001D43A><U+0001D441><U+0001D441><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C>           [A3]
+                                                 1 + <U+0001D454><U+0001D454><U+0001D461><U+0001D461>                             1 + <U+0001D454><U+0001D454><U+0001D461><U+0001D461>
+
+This equation is the basis for the first two components of the long-run fiscal gap decomposition. The <U+2018>initial
+structural fiscal gap<U+2019> (<U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A>2027 ) is defined as the difference between the target value given by [A3] and the
+actual value of this variable in the initial year:
+
+                                      <U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A>2027 = <U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217>2027 <U+2212> <U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441>2027                                  [A4]
+
+The <U+2018>change in r <U+2013> g<U+2019> component is defined as the change in [A3] over the period considered, or <U+0001D6E9><U+0001D6E9><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217> .
+Since the stock variables in [A3] are constants, this quantity is only a function of projected changes in <U+0001D45F><U+0001D45F><U+0001D461><U+0001D461><U+0001D451><U+0001D451> ,
+<U+0001D45F><U+0001D45F><U+0001D461><U+0001D461><U+0001D44E><U+0001D44E> and <U+0001D454><U+0001D454><U+0001D461><U+0001D461> , as intended.
+Coming back to the target value <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217><U+0001D461><U+0001D461> , it is defined using the accounting identity for <U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+0001D461><U+0001D461> re-
+arranged to put <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+0001D461><U+0001D461> on the left-hand side and replacing <U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+0001D461><U+0001D461> with the just-defined target value:
+
+                               <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217><U+0001D461><U+0001D461> = <U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217><U+0001D461><U+0001D461> + <U+0001D44C><U+0001D44C><U+0001D438><U+0001D438><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+0001D461><U+0001D461> + <U+0001D436><U+0001D436><U+0001D441><U+0001D441><U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D461><U+0001D461>                         [A5]
+
+By identity, then, when <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+0001D461><U+0001D461> is at this target value, <U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+0001D461><U+0001D461> is also at its target value. The fiscal
+reaction function in the LTM is designed so that <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+0001D461><U+0001D461> goes toward <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217><U+0001D461><U+0001D461> . This is not always exactly
+true given that a limit is imposed on the annual change in <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+0001D461><U+0001D461> to reflect real-world political-economy
+constraints on the size of any annual fiscal adjustment and also because <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217><U+0001D461><U+0001D461> fluctuates from year to
+year. But in principle, it is very close to its target value in the long run, thus <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441>2060 = <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217>2060 ,
+and [A1] can be re-written:
+
+                                  <U+0001D6E9><U+0001D6E9><U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441> = <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217>2060 <U+2212> <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441>2027                                    [A6]
+
+Using the same identity that is the basis for [A5] to expand the two terms, this becomes:
+
+     <U+0001D6E9><U+0001D6E9><U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441> = <U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217>2060 + <U+0001D44C><U+0001D44C><U+0001D438><U+0001D438><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441>2060 + <U+0001D436><U+0001D436><U+0001D441><U+0001D441><U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C>2060 <U+2212> (<U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441>2027 + <U+0001D44C><U+0001D44C><U+0001D438><U+0001D438><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441>2027
+                         + <U+0001D436><U+0001D436><U+0001D441><U+0001D441><U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C>2027 )                                                                              [A7]
+                    = <U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217>2060 <U+2212> <U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441>2027 + <U+0001D6E9><U+0001D6E9><U+0001D44C><U+0001D44C><U+0001D438><U+0001D438><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441> + <U+0001D6E9><U+0001D6E9><U+0001D436><U+0001D436><U+0001D441><U+0001D441><U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C>
+
+Using [A4] to substitute for <U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441>2027 , this becomes:
+
+         <U+0001D6E9><U+0001D6E9><U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441> = <U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217>2060 <U+2212> (<U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217>2027 <U+2212> <U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A>2027 ) + <U+0001D6E9><U+0001D6E9><U+0001D44C><U+0001D44C><U+0001D438><U+0001D438><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441> + <U+0001D6E9><U+0001D6E9><U+0001D436><U+0001D436><U+0001D441><U+0001D441><U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C>
+                                                                                                                           [A8]
+                        = <U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A>2027 + <U+0001D6E9><U+0001D6E9><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217> + <U+0001D6E9><U+0001D6E9><U+0001D44C><U+0001D44C><U+0001D438><U+0001D438><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441> + <U+0001D6E9><U+0001D6E9><U+0001D436><U+0001D436><U+0001D441><U+0001D441><U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C>
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+50 |
+
+Government net capital expenditure is composed of defence and a residual (ex-defence) component:
+
+                               <U+0001D436><U+0001D436><U+0001D441><U+0001D441><U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D461><U+0001D461> <U+2261> <U+0001D436><U+0001D436><U+0001D441><U+0001D441><U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C>_<U+0001D445><U+0001D445><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D461><U+0001D461> + <U+0001D436><U+0001D436><U+0001D441><U+0001D441><U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C>_<U+0001D445><U+0001D445><U+0001D44C><U+0001D44C><U+0001D445><U+0001D445><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D461><U+0001D461>                             [A9]
+
+The variable <U+0001D44C><U+0001D44C><U+0001D438><U+0001D438><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+0001D461><U+0001D461> is not a conventional national accounts concept. It is defined for the purposes of
+the LTM as the remaining current primary expenditure after deducting those components that are projected
+explicitly:
+
+        <U+0001D44C><U+0001D44C><U+0001D438><U+0001D438><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+0001D461><U+0001D461> <U+2261> <U+0001D44C><U+0001D44C><U+0001D438><U+0001D438><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+0001D461><U+0001D461> <U+2212> <U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D443><U+0001D443><U+0001D441><U+0001D441><U+0001D461><U+0001D461> <U+2212> <U+0001D43B><U+0001D43B><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D438><U+0001D438><U+0001D43B><U+0001D43B><U+0001D461><U+0001D461> <U+2212> (<U+0001D445><U+0001D445><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D436><U+0001D436><U+0001D445><U+0001D445><U+0001D461><U+0001D461> <U+2212> <U+0001D436><U+0001D436><U+0001D441><U+0001D441><U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C>_<U+0001D445><U+0001D445><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D461><U+0001D461> )   [A10]
+
+with the term in parenthesis measuring current defence expenditure. Using [A9] and [A10] (re-arranged)
+to expand <U+0001D6E9><U+0001D6E9><U+0001D44C><U+0001D44C><U+0001D438><U+0001D438><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441> in [A8]:
+
+  <U+0001D6E9><U+0001D6E9><U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441> = <U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A>2027 + <U+0001D6E9><U+0001D6E9><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217> + <U+0001D6E9><U+0001D6E9><U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D443><U+0001D443><U+0001D441><U+0001D441> + <U+0001D6E9><U+0001D6E9><U+0001D43B><U+0001D43B><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D438><U+0001D438><U+0001D43B><U+0001D43B> + <U+0001D6E9><U+0001D6E9><U+0001D445><U+0001D445><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D436><U+0001D436><U+0001D445><U+0001D445> + <U+0001D6E9><U+0001D6E9><U+0001D44C><U+0001D44C><U+0001D438><U+0001D438><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441>
+                                                                                                                              [A11]
+                       + <U+0001D6E9><U+0001D6E9><U+0001D436><U+0001D436><U+0001D441><U+0001D441><U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C>_<U+0001D445><U+0001D445><U+0001D44C><U+0001D44C><U+0001D445><U+0001D445><U+0001D445><U+0001D445><U+0001D441><U+0001D441>
+
+Equation [A11] gives the exact decomposition of the long-run fiscal gap (Table A A.2). Any discrepancy
+between the right-hand and left-hand sides is attributable to the condition <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441>2060 = <U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217>2060 not
+holding exactly as the mechanics of the fiscal reaction function in the LTM can make the instrument depart
+from the moving target slightly in any given year for the reasons explained previously.
+
+
+Table A A.2. Decomposition of the long-run fiscal gap
+                          Component as shown in Figure 2, Panel A                     Term in equation [A11]
+                      Initial structural fiscal gap                                            <U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A>2027
+                      Change in r - g                                                        <U+0001D6E9><U+0001D6E9><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441><U+2217>
+                      Change in pension expenditure                                          <U+0001D6E9><U+0001D6E9><U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D443><U+0001D443><U+0001D441><U+0001D441>
+                      Change in health and long-term care expenditure                         <U+0001D6E9><U+0001D6E9><U+0001D43B><U+0001D43B><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D438><U+0001D438><U+0001D43B><U+0001D43B>
+                      Change in defence expenditure                                         <U+0001D6E9><U+0001D6E9><U+0001D445><U+0001D445><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D436><U+0001D436><U+0001D445><U+0001D445>
+                      Change in other primary expenditure                     <U+0001D6E9><U+0001D6E9><U+0001D44C><U+0001D44C><U+0001D438><U+0001D438><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441> + <U+0001D6E9><U+0001D6E9><U+0001D436><U+0001D436><U+0001D441><U+0001D441><U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C>_<U+0001D445><U+0001D445><U+0001D44C><U+0001D44C><U+0001D445><U+0001D445><U+0001D445><U+0001D445><U+0001D441><U+0001D441>
+                      Long-run fiscal gap                                                     <U+0001D6E9><U+0001D6E9><U+0001D44C><U+0001D44C><U+0001D43C><U+0001D43C><U+0001D43A><U+0001D43A><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D44C><U+0001D441><U+0001D441>
+
+
+
+
+                           ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                                                            | 51
+
+
+Annex B. Projection of public pension
+expenditure
+
+
+The approach to projecting public pension expenditure as a percentage of potential GDP (<U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D443><U+0001D443><U+0001D441><U+0001D441><U+0001D461><U+0001D461> ) has
+not fundamentally changed from the approach described in Guillemette (2019[26]). It starts from the
+following identity, with time subscript omitted:
+
+                                         <U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D445><U+0001D445>     <U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D443><U+0001D443><U+0001D441><U+0001D441><U+0001D445><U+0001D445><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C> <U+0001D441><U+0001D441><U+0001D434><U+0001D434><U+0001D43A><U+0001D43A>_<U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D443><U+0001D443><U+0001D441><U+0001D441> <U+0001D43A><U+0001D43A><U+0001D441><U+0001D441><U+0001D43F><U+0001D43F>_<U+0001D43C><U+0001D43C><U+0001D441><U+0001D441><U+0001D436><U+0001D436><U+0001D443><U+0001D443><U+0001D440><U+0001D440><U+0001D445><U+0001D445>
+                   <U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D443><U+0001D443><U+0001D441><U+0001D441> <U+2261>               <U+2261>                     <U+2219>                     <U+2219>                                           [B1]
+                                       <U+0001D43A><U+0001D43A><U+0001D445><U+0001D445><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D43C><U+0001D43C>         <U+0001D445><U+0001D445><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D438>         <U+0001D441><U+0001D441><U+0001D434><U+0001D434><U+0001D43A><U+0001D43A>_<U+0001D44A><U+0001D44A><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D445><U+0001D445>          <U+0001D43A><U+0001D43A><U+0001D445><U+0001D445><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D43C><U+0001D43C>
+
+where <U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D445><U+0001D445> is total of old-age and survivor benefits in local currency, <U+0001D43A><U+0001D43A><U+0001D445><U+0001D445><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D43C><U+0001D43C> is nominal potential gross
+domestic product also in local currency, <U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D443><U+0001D443><U+0001D441><U+0001D441><U+0001D445><U+0001D445><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C> is the number of people receiving a pension, <U+0001D445><U+0001D445><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D438>
+is potential employment, <U+0001D441><U+0001D441><U+0001D434><U+0001D434><U+0001D43A><U+0001D43A>_<U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D443><U+0001D443><U+0001D441><U+0001D441> is the average pension benefit, <U+0001D441><U+0001D441><U+0001D434><U+0001D434><U+0001D43A><U+0001D43A>_<U+0001D44A><U+0001D44A><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D445><U+0001D445> is the average wage
+among workers and <U+0001D43A><U+0001D43A><U+0001D441><U+0001D441><U+0001D43F><U+0001D43F>_<U+0001D43C><U+0001D43C><U+0001D441><U+0001D441><U+0001D436><U+0001D436><U+0001D443><U+0001D443><U+0001D440><U+0001D440><U+0001D445><U+0001D445> is potential total labour income. The identity holds because
+<U+0001D43A><U+0001D43A><U+0001D441><U+0001D441><U+0001D43F><U+0001D43F>_<U+0001D43C><U+0001D43C><U+0001D441><U+0001D441><U+0001D436><U+0001D436><U+0001D443><U+0001D443><U+0001D440><U+0001D440><U+0001D445><U+0001D445> = <U+0001D445><U+0001D445><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D438> <U+2219> <U+0001D441><U+0001D441><U+0001D434><U+0001D434><U+0001D43A><U+0001D43A>_<U+0001D44A><U+0001D44A><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D445><U+0001D445> while <U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D445><U+0001D445> = <U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D443><U+0001D443><U+0001D441><U+0001D441><U+0001D445><U+0001D445><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C> <U+2219> <U+0001D441><U+0001D441><U+0001D434><U+0001D434><U+0001D43A><U+0001D43A>_<U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D443><U+0001D443><U+0001D441><U+0001D441>. Taking logs and time
+differencing [B1] yields an expression for the growth rate of public pension expenditure as a share of
+potential GDP:
+
+                                           <U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D443><U+0001D443><U+0001D441><U+0001D441><U+0001D445><U+0001D445><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C>               <U+0001D441><U+0001D441><U+0001D434><U+0001D434><U+0001D43A><U+0001D43A>_<U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D443><U+0001D443><U+0001D441><U+0001D441>               <U+0001D43A><U+0001D43A><U+0001D441><U+0001D441><U+0001D43F><U+0001D43F>_<U+0001D43C><U+0001D43C><U+0001D441><U+0001D441><U+0001D436><U+0001D436><U+0001D443><U+0001D443><U+0001D440><U+0001D440><U+0001D445><U+0001D445>
+     <U+2206><U+0001D459><U+0001D459><U+0001D459><U+0001D459><U+0001D454><U+0001D454>(<U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D443><U+0001D443><U+0001D441><U+0001D441>) <U+2261> <U+2206><U+0001D459><U+0001D459><U+0001D459><U+0001D459><U+0001D454><U+0001D454> <U+FFFD>                        <U+FFFD> + <U+2206><U+0001D459><U+0001D459><U+0001D459><U+0001D459><U+0001D454><U+0001D454> <U+FFFD>                       <U+FFFD> + <U+2206><U+0001D459><U+0001D459><U+0001D459><U+0001D459><U+0001D454><U+0001D454> <U+FFFD>                     <U+FFFD>   [B2]
+                                                 <U+0001D445><U+0001D445><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D438>                       <U+0001D441><U+0001D441><U+0001D434><U+0001D434><U+0001D43A><U+0001D43A>_<U+0001D44A><U+0001D44A><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D445><U+0001D445>                        <U+0001D43A><U+0001D43A><U+0001D445><U+0001D445><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D43C><U+0001D43C>
+
+The first term of this expression is the rate of change in the ratio of pensioners to workers. This ratio is not
+available per se in the LTM, but for projection purposes its evolution is approximated by the following
+expression:
+
+                                  <U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D443><U+0001D443><U+0001D441><U+0001D441><U+0001D445><U+0001D445><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C>               (1 <U+2212> <U+0001D445><U+0001D445><U+0001D43C><U+0001D43C>5574 ) <U+2219> <U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D438><U+0001D438>5574 + <U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D438><U+0001D438>75+
+                      <U+2206><U+0001D459><U+0001D459><U+0001D459><U+0001D459><U+0001D454><U+0001D454> <U+FFFD>                        <U+FFFD> <U+2245> <U+2206><U+0001D459><U+0001D459><U+0001D459><U+0001D459><U+0001D454><U+0001D454> <U+FFFD>                                          <U+FFFD>                           [B3]
+                                        <U+0001D445><U+0001D445><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D438>                                     <U+0001D445><U+0001D445><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D438><U+0001D438>
+
+where <U+0001D445><U+0001D445><U+0001D43C><U+0001D43C>5574is the employment rate for 55-to-74-year-olds (in decimals), <U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D438><U+0001D438>5574 is the population in this
+age range and <U+0001D438><U+0001D438><U+0001D443><U+0001D443><U+0001D438><U+0001D438>75+ is the population aged 75 and up. This expression appears to imply that non-
+employed people between the ages of 55 and 74 and all those aged 75 and above are pensioners, which
+is never strictly the case. But it is only the log change in the expression that matters to the projection. The
+idea is that the change in this ratio is a good proxy for the proportionate change in the true ratio of
+pensioners to workers.
+The second term of [B2] is the rate of change in the ratio of the average pension to the average wage, also
+called the average benefit ratio (not to be confused with the replacement rate, which usually refers to a
+new retiree<U+2019>s initial pension as a percentage of her last salary). Its numerator, the average pension,
+aggregates over all retirees and all types of pensions at a given time. As such, its future evolution depends
+on many factors, including eligibility rules for new pension benefits, the method used to uprate past
+earnings in the benefit formulae of defined-benefit plans, the rate of indexation of benefits, the age structure
+of the population of benefit recipients, rates of return on plan assets, etc. Projecting the future evolution of
+benefit ratios thus requires a large amount of information, not just on current rules, but also on how they
+will evolve given the many reforms that have already been legislated in many countries.
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+52 |
+
+Under the simplifying assumption that the indexation rule for existing benefits alone drives the evolution of
+the benefit ratio over time, this evolution can be connected to the projected trend labour productivity growth
+rate. In countries where public pension benefits are indexed to the consumer price index, the average
+benefit ratio would decline each year by the wedge between nominal wage growth and consumer price
+inflation (i.e. real wage growth). In the LTM, real wage growth is equal to trend labour productivity growth
+by construction, so with price indexation, the average benefit ratio falls at the rate of trend labour
+productivity growth. In countries where public pension benefits are indexed to wages, the average benefit
+ratio would remain constant, so the second term of [B2] would always be zero. Some countries use a
+formula, or a series of discrete adjustments, to maintain the indexation of public pension benefits
+somewhere between price indexation and full wage indexation.
+For the LTM to be able to reflect a range of assumptions, the following projection rule is used:
+
+                                     <U+0001D441><U+0001D441><U+0001D434><U+0001D434><U+0001D43A><U+0001D43A>_<U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D441><U+0001D441><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D43C><U+0001D443><U+0001D443><U+0001D441><U+0001D441><U+0001D461><U+0001D461>
+                         <U+2206><U+0001D459><U+0001D459><U+0001D459><U+0001D459><U+0001D454><U+0001D454> <U+FFFD>                           <U+FFFD> = (<U+0001D711><U+0001D711> <U+2212> 1) <U+2219> <U+2206>log(<U+0001D438><U+0001D438><U+0001D43C><U+0001D43C><U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D438><U+0001D438><U+0001D44C><U+0001D44C><U+0001D461><U+0001D461> )        [B4]
+                                       <U+0001D441><U+0001D441><U+0001D434><U+0001D434><U+0001D43A><U+0001D43A>_<U+0001D44A><U+0001D44A><U+0001D441><U+0001D441><U+0001D43A><U+0001D43A><U+0001D445><U+0001D445><U+0001D461><U+0001D461>
+
+where <U+0001D711><U+0001D711> is a coefficient reflecting the degree to which public pensions are indexed to wages and <U+0001D438><U+0001D438><U+0001D43C><U+0001D43C><U+0001D438><U+0001D438><U+0001D445><U+0001D445><U+0001D438><U+0001D438><U+0001D44C><U+0001D44C><U+0001D461><U+0001D461>
+is trend labour productivity. As explained in the main text, the LTM<U+2019>s business-as-usual scenario assumes
+a stable average benefit ratio, both for simplicity and based on the historical experience of EU countries.
+This is equivalent to assuming full wage indexation of pension benefits, or <U+0001D711><U+0001D711> = 1. Setting <U+0001D711><U+0001D711> = 0 would
+imply price indexation. Partial wage indexation can be simulated with <U+0001D711><U+0001D711> somewhere between zero and
+one.
+Finally, the third term of [B2] is the rate of change in the labour share of income. In the LTM, the labour
+share of income is assumed constant, so this term is zero. In view of the general decline of labour income
+shares in recent years (Schwellnus et al., 2018[27]), as well as evidence of policy influences behind this
+trend (Pak and Schwellnus, 2019[28]), the assumption of a fixed labour share of income may be revisited in
+future model development.
+
+
+
+
+                       ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                                 | 53
+
+
+Annex C. Individual country charts for net debt
+and gross financing needs projections
+
+
+This Annex complements sections 4.1 and 4.2 of the main text, showing the projected change from 2027
+in net government debt and gross financing needs for non-G7 countries in the scenario where the LTM<U+2019>s
+fiscal adjustment rule is switched off.
+Legend for decomposition of change in net government debt:
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+54 |
+
+
+
+
+       ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                | 55
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+56 |
+
+
+
+
+       ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                | 57
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+58 |
+
+
+
+
+       ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                | 59
+
+
+
+
+                                                                                   -
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+60 |
+
+
+
+
+       ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+                                                                                | 61
+
+
+
+
+ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+
+62 |
+
+
+
+
+       ILLUSTRATING LONG-RUN FISCAL CHALLENGES USING THE LONG-TERM MODEL <U+00A9> OECD 2026
+

@@ -26,9 +26,10 @@ library(readr)
 library(scales)
 library(tidyr)
 library(theme61)
+library(readxl)
 
 fallback_palette <- c("#2f5f8f", "#d55e00", "#6b6b6b", "#009e73", "#7f3c8d")
-has_theme61 <- FALSE
+has_theme61 <- TRUE
 e61_palette <- fallback_palette
 
 data_path <- file.path("ATO 1p results", "tax_distribution_results.csv")
@@ -194,6 +195,29 @@ figure_3_plot <- ggplot(
   ) +
   plab(c("2027/28","2030/31","2034/35"),x=c(60,60,60),y=c(-0.5,1.5,3.5))
 
+ggplot(
+  figure_3_data[fy != "FY2025_26" & percentile <= 0.99],
+  aes(x = percentile_label, y = etr_change_pp, colour = year_label)
+) +
+  geom_hline(yintercept = 0) +
+  geom_line() +
+  #scale_colour_manual(values = e61_palette[seq_along(unique(figure_3_data$year_label))]) +
+  scale_x_continuous(
+    breaks = seq(0, 100, 10),
+    limits = c(0, 100),
+    expand = expansion(mult = c(0, 0.02))
+  ) +
+  scale_y_continuous(labels = label_number(suffix = " pp", accuracy = 0.5)) +
+  labs_e61(
+    title = "Bracket Creep across the income distribution",
+    x = "Earnings percentile",
+    y = "Percentage point change from 2025/26",
+    colour = "Financial year",
+    sources = c("ATO Individual Sample file","e61"),
+    footnotes = c("Uses the 2022/23 file. Earnings are inflated to 2025/26 level and the 2025/26 nominal tax system is applied to establish base line.","Assumes income growth of 3.7%pa, in line with PBO projections.")
+  ) +
+  plab(c("2027/28","2030/31","2034/35"),x=c(60,60,60),y=c(-0.5,1.5,3.5))
+
 figure_3_plot
 
 unique(figure_3_data$fy)
@@ -204,8 +228,8 @@ figure_3_data[fy == "FY2034_35"]
 
 figure_3_data[fy == "FY2034_35" & percentile_label >= 99]
 
-save_e61(paste0("Bracket_creep_ATO1_F3","_newBudg.png"),res=2,save_data = TRUE,chart_type = "wide",dim = list(width = 15))
-save_e61(paste0("Bracket_creep_ATO1_F3","_newBudg.pdf"),res=2,save_data = TRUE,chart_type = "wide",dim = list(width = 15))
+save_e61(paste0("Bracket_creep_ATO1_F3","_newBudg.png"),res=2,save_data = TRUE,chart_type = "wide")#,dim = list(width = 15))
+save_e61(paste0("Bracket_creep_ATO1_F3","_newBudg.pdf"),res=2,save_data = TRUE,chart_type = "wide")#,dim = list(width = 15))
 
 
 figure_4_data <- base_rates %>%
@@ -245,8 +269,8 @@ figure_4_plot <- ggplot(
 
 figure_4_plot
 
-save_e61(paste0("Bracket_creep_ATO1_F4","_newBudg.png"),res=2,save_data = TRUE,chart_type = "wide",dim = list(width = 15))
-save_e61(paste0("Bracket_creep_ATO1_F4","_newBudg.pdf"),res=2,save_data = TRUE,chart_type = "wide",dim = list(width = 15))
+save_e61(paste0("Bracket_creep_ATO1_F4","_newBudg.png"),res=2,save_data = TRUE,chart_type = "wide")#,dim = list(width = 15))
+save_e61(paste0("Bracket_creep_ATO1_F4","_newBudg.pdf"),res=2,save_data = TRUE,chart_type = "wide")#,dim = list(width = 15))
 
 
 # Figure 4b uses a broader definition of bracket creep. In the
@@ -285,11 +309,11 @@ figure_4b_plot <- ggplot(
   scale_x_continuous(
     breaks = seq(0, 100, 10),
     limits = c(0, 100),
-    expand = expansion(mult = c(0, 0.01))
+    expand = expansion(mult = c(0, 0.02))
   ) +
   scale_y_continuous(labels = label_percent(scale = 1, accuracy = 1)) +
   labs_e61(
-    title = "Share of disposable income gains lost to bracket creep",
+    title = "Disposable income gains lost to bracket creep",
     x = "Earnings percentile",
     y = "Share of real post-tax income gain",
     sources = c("ATO Individual Sample file", "e61"),
@@ -301,8 +325,8 @@ figure_4b_plot <- ggplot(
 
 figure_4b_plot
 
-save_e61(paste0("Bracket_creep_ATO1_F4b", "_newBudg.png"), plot = figure_4b_plot, res = 2, save_data = TRUE, spell_check = FALSE, chart_type = "wide", dim = list(width = 15))
-save_e61(paste0("Bracket_creep_ATO1_F4b", "_newBudg.pdf"), plot = figure_4b_plot, res = 2, save_data = TRUE, spell_check = FALSE, chart_type = "wide", dim = list(width = 15))
+save_e61(paste0("Bracket_creep_ATO1_F4b", "_newBudg.png"), plot = figure_4b_plot, res = 2, save_data = TRUE, spell_check = FALSE, chart_type = "wide")#, dim = list(width = 15))
+save_e61(paste0("Bracket_creep_ATO1_F4b", "_newBudg.pdf"), plot = figure_4b_plot, res = 2, save_data = TRUE, spell_check = FALSE, chart_type = "wide")#, dim = list(width = 15))
 
 setDT(figure_4_data)
 

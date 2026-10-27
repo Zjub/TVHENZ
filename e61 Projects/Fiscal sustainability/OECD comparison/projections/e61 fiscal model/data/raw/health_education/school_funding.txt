@@ -1,0 +1,998 @@
+                                       National Report on Schooling in Australia 2024
+
+
+
+Chapter 9: School Funding
+
+
+
+
+This chapter reports on government funding of Australian schools, school income
+and school expenditure.
+In Australia, responsibility for school funding is shared. Schools are funded by a combination of
+state/territory government funding, Australian Government funding, fees and charges, and other
+private contributions.
+The bulk of funding for government schools comes from the state or territory government that owns
+and administers the school, with additional contributions from the Australian Government. A smaller
+contribution comes from fees, charges and other private sources. Most of the income for non-
+government schools comes from Australian Government funding and private sources (including fees
+and other charges), with smaller contributions from state and territory governments.
+This chapter is structured as follows. Section 9.1 reports on government recurrent funding for school
+education, using data from the National Schools Statistics Collection (NSSC) and the Report on
+Government Services (RoGS). Section 9.2 uses the ACARA My School Finance data collection to
+report on school income from all sources (government funding, fees and charges and other private
+income). Section 9.3 provides information about school expenditure, using data from the NSSC for
+government schools, and unpublished data from the Australian Government Department of Education
+(AGDE) for non-government schools.1
+When reading this chapter, it is important to keep in mind that because of differences between the
+various data collections, not all data reported in this chapter is directly comparable.
+
+
+
+
+1
+ Please note that, due to rounding, percentages in this chapter may not total exactly 100%, and component figures may not
+sum precisely to their stated totals.
+
+
+
+
+                                                                                                                      Page 1
+
+                                        National Report on Schooling in Australia 2024
+
+
+In this chapter, time-series figures have been adjusted for inflation to 2024 dollars, based on the
+Consumer Price Index (CPI) for June of each year where financial year values are presented, and
+December of each year when calendar year values are presented.
+While wage/salary related expenditure makes up the majority of school recurrent expenditure (more
+so for government schools than for non-government schools), the purpose of adjusting for inflation is
+to provide a <U+201C>real-dollar<U+201D> comparison of monetary values over time.2 In most years there is not a
+substantial amount of difference in the adjusted values when CPI or the ABS Wage Price Index (WPI)
+are used. There are some exceptions, for example, in periods of high inflation where wages/salaries
+have not increased in line with inflation, and in years where policy changes have resulted in teacher
+wages increasing at a higher rate than inflation.
+
+
+
+
+2
+  Nominal values and values adjusted using the General Government Final Consumption Expenditure (GGFCE) chain price
+deflator and the ABS WPI are available on the National Report on Schooling Data Portal. The use of deflators that focus only on
+wages (e.g. the WPI), or government expenditure (as is the case with GGFCE) is somewhat <U+2018>self-referential<U+2019> in the sense that
+values are being adjusted by a factor of how much the values themselves have changed, rather than how much the value of a
+dollar (more generally) has changed. As such, the nominal values and the deflator values are likely to be highly correlated. In
+this sense, the CPI is the most independent, unbiased way of equating the value of the dollar at a particular point in time.
+
+
+
+
+                                                                                                                        Page 2
+
+                                        National Report on Schooling in Australia 2024
+
+
+9.1       Government funding for school education
+
+    Key Facts
+    In the 2023/24 financial year:
+
+        <U+2022> Total recurrent government funding for schooling was $91.04 billion. This was made up
+          of $61.88 billion (68.0%) from state and territory budgets and $29.16 billion (32.0%)
+          from the Australian Government (Commonwealth) budget.
+        <U+2022> Overall, 75.0% ($68.27 billion) of total recurrent government funding was allocated to
+          government schools and 25.0% ($22.77 billion) to non-government schools.
+        <U+2022> Total recurrent government funding was $26,140 per student in government schools
+          and $15,262 per student for non-government schools.
+        <U+2022> The bulk of state and territory funding (92.3%) was allocated to government schools,
+            while 61.7% of Australian Government funding was allocated to non-government
+            schools.
+
+Under funding arrangements set out in the Australian Education Act 2013 (the Act), the Australian
+Education Regulations 2023, and agreements between the Australian Government and state and
+territory governments, every school that operates on a not-for-profit bases receives funding from the
+Australian Government and its state or territory government.3 State and territory governments are
+responsible for providing most of the public funding for public schools, which they own and operate,
+while the Australian Government is responsible for providing the majority of public funding to non-
+government schools.
+Government recurrent funding, which supports the ongoing operating expenses of schools, is linked
+to a national agreement. Each state and territory government has a separate bilateral agreement with
+the Australian Government, which includes jurisdictional actions to improve student outcomes, and
+minimum state and territory funding contribution requirements.
+The Australian Government calculates the bulk of its funding through a recurrent funding model, set
+out in the Australian Education Act 2013. Under the Act, the Australian Government pays a prescribed
+percentage of each school<U+2019>s Schooling Resource Standard (SRS) each year. The SRS is an estimate of
+how much public funding a school needs to meet its students<U+2019> educational needs. It is calculated
+from a per-student base-funding amount with 6 needs-based loadings to provide extra funding for
+students with disability, Aboriginal and Torres Strait Islander students, students who have low English
+language proficiency, students from a socio-educationally disadvantaged background, schools that
+are not in major cities and smaller schools.4
+All state and territory governments and non-government approved system authorities are then
+expected to redistribute Australian Government funding between schools within their jurisdiction
+according to their own funding arrangements. This means that each state and territory and non-
+government approved system authority should have its own model for distributing Australian
+Government funding. For government schools, these include, for example, the Student Resource
+Package in Victoria or the Resource Allocation Model in New South Wales.
+The Act requires these models to address specific educational needs using a base and loadings
+
+3
+ To be eligible to receive government funding, schools must operate on a not-for-profit basis. Almost all primary and secondary
+schools in Australia are not-for-profit. However, there are a very small number of exceptions where a school is legally operated
+as a profit-making business and does not receive government funding.
+4
+  To receive Australian Government funding, state and territory governments must be signatories to a national agreement and
+associated bilateral agreements. The bilateral agreements set out minimum funding contributions, as a percentage of the SRS,
+that state and territory governments must make for government and non-government schools for them to receive Australian
+Government funding.
+
+
+
+
+                                                                                                                         Page 3
+
+                                                       National Report on Schooling in Australia 2024
+
+
+structure which is similar to the SRS. For most non-government schools, the SRS base amount is
+reduced by the school<U+2019>s Capacity to Contribute (CTC) <U+2013> a measure of the capacity of the parents and
+guardians of students at the school to contribute financially to operating costs, relative to the
+capacity at other non-government schools.5 However, SRS loadings are not affected by capacity to
+contribute.
+
+Government recurrent funding in the 2023/24 financial year
+In the 2023/24 financial year, total government recurrent funding of $91.04 billion was provided for
+school education, with total government expenditure on primary and secondary education making up
+2.8% of Australia<U+2019>s gross domestic product (GDP). This funding included $61.88 billion (68.0%)
+through state and territory budgets and $29.16 billion (32.0%) through the Australian Government
+budget.6
+After adjusting for inflation, this represents an increase of 2.1% from the previous financial year, made
+up of a 3.7% increase in funding from the Australian Government and a 1.3% increase in funding from
+state and territory governments. Funding of school education over time by the Australian Government
+and state and territory governments, adjusted for inflation, is shown in Figure 9.1.
+
+Figure 9.1: Australian and State/Territory government recurrent funding for all schools 2013/14 to
+2023/24 ($billion, $2024)
+
+                        100
+                        90
+                        80
+                                                                                                              28.11   29.16
+                                                                                      27.18   25.99   27.65
+                        70                                                   24.01
+                                                                    22.68
+                        60                        20.24    21.59
+                               17.98   19.24
+
+
+
+
+    $ billion ($2024)
+                        50
+                        40
+                        30                                                            58.52   58.40   58.96   61.10   61.88
+                                                  50.91    50.84    52.85    55.30
+                               48.07   49.18
+                        20
+                        10
+                         0
+                              2013/14 2014/15 2015/16 2016/17 2017/18 2018/19 2019/20 2020/21 2021/22 2022/23 2023/24
+
+                                               State and territory governments       Australian Government
+Notes:
+Amounts are adjusted for inflation to 2024 dollars, based on the CPI for June of each year. Nominal values and values adjusted
+using the GGFCE chain price deflator and the ABS WPI are available on the National Report on Schooling Data Portal.
+The Australian Government provided increased assistance in 2020 to some non-government schools in response to COVID-19.
+Australian Government expenditure data in this table include only Australian Government specific purpose payments. Other
+Australian Government funding for schools and students is not included. For some non-government schools 2020/21 financial
+year payments from the Australian Government were brought forward to the 2019/20 financial year.
+Sources: Government Schools Finance Statistics Group, National Schools Statistics Collection (NSSC) <U+2013> Finance 2024,
+unpublished; the Australian Government Department of Education (unpublished); Steering Committee for the Review of
+Government Service Provision (SCRGSP), Report on Government Services 2025, Productivity Commission; ABS, Schools, 2024;
+ABS, Consumer Price Index, Australia, 2024.
+
+
+5
+  The CTC for most non-government schools is calculated using a Direct Measure of Income (DMI) based on the actual income
+of parents and guardians of students at each school using taxation and other data held by the Australian Government. The CTC
+does not apply to government schools, or non-government schools which are special schools, special assistance schools,
+majority Aboriginal and Torres Strait Islander schools, or sole provider schools. There are 2 other methodologies that can be
+used to calculate a school<U+2019>s CTC <U+2013> the Refined Area Based (RAB) methodology and ministerial discretion. The RAB
+methodology is used to calculate CTC for schools if it is not practicable to use the DMI methodology for the school for
+the year.
+6
+    Components of government recurrent funding may not sum to total due to rounding.
+
+
+
+
+                                                                                                                         Page 4
+
+                                                  National Report on Schooling in Australia 2024
+
+
+Government recurrent funding, by school sector
+Of total government recurrent funding in 2023/24, the government school sector received 75.0%
+($68.27 billion) and the non-government school sector received 25.0% ($22.77 billion). This
+breakdown is shown in Figure 9.2. The bulk of state and territory funding (92.3%) was allocated to
+government schools, while 61.7% of Australian Government funding was allocated to non-government
+schools.
+Figure 9.2: Total government recurrent funding for school education, by funding source and school
+sector, Australia, 2023/24 ($ billion)
+
+                     80
+
+                     70
+
+                     60                  11.17
+
+                     50
+
+  $ billion
+                     40
+                                                                                           Australian Government
+                     30                  57.10                                             State and territory governments
+                     20
+                                                                      17.99
+                     10
+
+                      0                                                4.79
+                                   Government schools        Non-government schools
+                                     ($68.27 billion)            ($22.77 billion)
+
+Sources: Government Schools Finance Statistics Group, NSSC <U+2013> Finance 2024, unpublished; the Australian Government
+Department of Education (unpublished); Steering Committee for the Review of Government Service Provision (SCRGSP),
+Report on Government Services 2025, Productivity Commission.
+
+
+In 2023/24, total government recurrent funding was $26,140 per student in government schools and
+$15,262 per student in non-government schools. Figure 9.3 shows the contribution of state and
+territory governments and the Australian Government to the government and non-government school
+sectors, on a per-student basis.
+Figure 9.3: Government recurrent funding for school education by funding source and school sector,
+Australia, 2023/24, ($ per student)
+
+                      $30,000
+
+                      $25,000
+                                              $4,277
+
+
+
+
+     $ per student
+                      $20,000
+
+                      $15,000
+                                                                                                 Australian Government
+                      $10,000                $21,862
+                                                                       $12,055                   State and territory
+                                                                                                 governments
+                          $5,000
+                                                                        $3,207
+                             $0
+                                       Government schools       Non-government schools
+                                     ($26,140 per FTE student) ($15,262 per FTE student)
+
+Note: Student numbers are the average full-time equivalent (FTE) student populations for the years being reported.
+Sources: Government Schools Finance Statistics Group, NSSC <U+2013> Finance 2024, unpublished; the Australian Government
+Department of Education (unpublished); Steering Committee for the Review of Government Service Provision (SCRGSP),
+Report on Government Services 2025, Productivity Commission.
+
+
+
+
+                                                                                                                         Page 5
+
+                                                                             National Report on Schooling in Australia 2024
+
+
+Between the 2022/23 and 2023/24 financial years, after adjusting for inflation:
+
+                <U+2022> Across all schools, total government recurrent funding per student increased by $207 (0.9%)
+                  per student, with increases of $181 (2.6%) in Australian Government funding and $26 (0.2%) in
+                  state/territory funding.
+
+                <U+2022> In government schools, total government recurrent funding per student increased by $331
+                  (1.3%), with increases of $151 (3.7%) in Australian Government funding and $180 (0.8%) in
+                  state/territory funding.
+
+                <U+2022> In non-government schools, total government recurrent funding per student increased by $146
+                  (1.0%), with increases of $117 (1.0%) in Australian Government funding and $29 (0.9%) in
+                  state/territory funding.
+Figure 9.4 shows changes in government funding per student in government and non-government
+schools since the 2013/14 financial year, after adjusting for inflation.
+Figure 9.4: Government recurrent funding for school education by funding source and school sector,
+Australia, 2023/24, ($ per student, $2024)
+
+                  30,000
+
+                  25,000
+
+
+
+
+$ per student
+                  20,000
+
+                  15,000
+
+                  10,000
+
+                   5,000
+
+                       0
+
+                           2013/14   2014/15   2015/16   2016/17   2017/18   2018/19   2019/20   2020/21   2021/22   2022/23   2023/24   2013/14   2014/15   2015/16   2016/17   2017/18   2018/19   2019/20   2020/21   2021/22   2022/23   2023/24
+
+                                                               Government Schools                                                                                  Non-Government Schools
+
+
+                                     Australian Government                                                           State and territory governments                                                           Total
+
+Notes: Student numbers are the average full-time equivalent (FTE) student populations for the years being reported.
+Amounts are adjusted for inflation to 2024 dollars, based on the CPI for June of each year. Nominal values and values adjusted
+using the GGFCE chain price deflator and the ABS WPI are available on the National Report on Schooling Data Portal.
+Sources: Government Schools Finance Statistics Group, NSSC <U+2013> Finance 2024, unpublished; the Australian Government
+Department of Education (unpublished); Steering Committee for the Review of Government Service Provision (SCRGSP), Report
+on Government Services 2025, Productivity Commission.
+
+
+Over the period from 2013/14 to 2023/24, after adjusting for inflation:
+
+                <U+2022> Across all schools, total government recurrent funding per student increased by $4,128 (22.9%),
+                  with increases of $2,190 (44.6%) in Australian government funding and $1,937 (14.7%) in
+                  state/territory funding.
+
+                <U+2022> In government schools, total government recurrent funding per student increased by $4,950
+                  (23.4%), with increases of $1,578 (58.5%) in Australian government funding and $3,371 (18.2%)
+                  in state/territory funding.
+
+                <U+2022> In non-government schools, total government recurrent funding per student increased by
+                  $3,037 (24.8%), with increases of $3,014 (33.3%) in Australian government funding and $23
+                  (0.7%) in state/territory funding.
+
+
+
+
+                                                                                                                                                                                                                                             Page 6
+
+                                        National Report on Schooling in Australia 2024
+
+
+9.2       School Income
+
+    Key Facts
+    In Australia, school income is made up of a combination of government funding, fees and
+    charges, and private contributions. In 2024:
+       <U+2022> In government schools:
+             o Average school income per student was $20,368.
+             o State and territory governments provided 75.0% of total gross income, Australian
+               Government funding accounted for 21.0%, and the remaining 4.0% came from
+               fees, charges, parent contributions and other private sources.
+       <U+2022> In Catholic schools:
+             o Average school income per student was $22,067.
+             o The Australian Government contributed 60.4% of total gross income, and state
+                and territory governments provided 14.8%. Fees, charges, parent contributions
+                and other private sources made up the remaining 24.8% of Catholic sector
+                income.
+       <U+2022> In independent schools:
+           o    Average school income per student was $28,642.
+           o    Income from fees, charges and parent contributions made up 46.6% of total gross
+                income, with income from other private sources contributing an additional 5.2%.
+                Australian Government funding accounted for 38.4% of total gross income, and
+                state and territory governments provided 9.8%.
+
+In Australia, school income is made up of a combination of government funding (from the Australian
+Government and state/territory governments) and income from fees and charges and private
+contributions.
+For government schools, the bulk of income comes from the state or territory government, with
+smaller contributions from the Australian Government, fees and charges, and private contributions.
+Most of the income for non-government schools comes from Australian Government funding and
+private sources (including fees and other charges), with smaller contributions from state and territory
+governments.
+This section reports on school income from government and private sources using the ACARA My
+School finance data collection, and the amounts reported in this section are not directly comparable
+to the data presented in Section 9.1 of this Chapter. The My School data collection differs from the
+NSSC finance data in the following ways:
+
+    <U+2022> it is based on income reported by schools, rather than government expenditure,
+
+    <U+2022> it is reported on a calendar year basis, rather than a financial year basis,
+
+    <U+2022> the amounts reported in the My School data include government and private funding that
+      supports a school but exclude distinct income and/or expenditure items treated differently
+      across all sectors such as user cost of capital (a notional opportunity cost), payroll tax,
+      depreciation and the cost of transporting students to and from school.7
+
+
+
+
+7
+  As these items are included in the NSSC finance data, school funding amounts reported in Section 9.1 are considerably higher
+than school income from government funding based on the My School data, particularly for state/territory government funding
+for government schools.
+
+
+
+
+                                                                                                                       Page 7
+
+                                         National Report on Schooling in Australia 2024
+
+
+Recurrent income for schools
+In 2024, total gross recurrent income for all schools in Australia was $92.24 billion, made up of
+$29.82 billion (32.3%) from Australian Government recurrent funding, $44.87 billion (48.7%) from
+state/territory government recurrent funding, $14.97 billion (16.2%) from fees, charges and parent
+contributions, and $2.57 billion (2.8%) from other private contributions.
+Australian Government recurrent funding accounted for 21.0% of the total gross income for
+government schools in 2024, with state and territory governments providing 75.0% of funds. For non-
+government schools, the Australian Government contributed 60.4% of Catholic sector gross income
+and 38.4% of independent sector gross income.8 Income from fees, charges and parent contributions
+made up 2.4% of recurrent income for government schools, 21.1% for Catholic schools and 46.6% for
+independent schools. These contributions are shown in Figure 9.5.
+
+Figure 9.5: Gross recurrent school income, by funding source and school sector, Australia, 2024 (%)
+
+                            1.5%
+               100%                                                            2.8
+                        2.4%             3.7                5.2
+               90%                                                           16.2%
+                                       21.1%
+               80%
+
+               70%                                        46.6%
+                                       14.8%                                                     Australian government
+               60%                                                                               recurrent funding
+                        75.0%                                                48.7%
+
+    Per cent
+               50%                                                                               State/territory government
+                                                           9.8%                                  recurent funding
+               40%
+
+               30%                     60.4%                                                     Fees, charges and parent
+                                                                                                 contributions
+               20%                                        38.4%
+                                                                             32.3%               Other private sources
+               10%      21.0%
+
+                0%
+                      Government      Catholic         Independent        All schools
+                        schools       schools            schools
+
+Source: ACARA, My School finance data collection.
+
+
+
+In 2024, average gross recurrent income per student, across all Australian schools, was $22,190. It
+was higher for independent schools ($28,642) than for Catholic schools ($22,067) and government
+schools ($20,368). Figure 9.6 provides a breakdown by source of income and school sector.
+Net recurrent income per student (NRIPS) includes total gross recurrent income from all sources
+(public and private) minus deductions for debt and capital expenditure. In 2024, average NRIPS
+across all schools was $21,476. It was higher for independent schools ($26,313) than for government
+schools ($20,356) and Catholic schools ($20,541).
+
+
+
+
+8
+  In this section non-systemic Catholic schools are included in the independent school data to reflect their financial status. This
+is an exception to the general statement that non-systemic Catholic schools are counted as Catholic in this report.
+
+
+
+
+                                                                                                                            Page 8
+
+                                                           National Report on Schooling in Australia 2024
+
+
+Figure 9.6: Gross recurrent school income, by funding source and school sector, 2024 ($ per FTE student)
+
+                             $30,000
+                                                                               $1,476
+                             $25,000
+                                                 $312                                            $618           Australian government
+                                                                 $824
+
+
+
+
+       $ per FTE student
+                             $20,000                                           $13,341                          recurrent funding
+                                                 $492                                           $3,602
+                                                                 $4,653
+                                                                                                                State/territory
+                             $15,000                             $3,269                                         government recurrent
+                                                                                                                funding
+                                                $15,285                        $2,815          $10,796
+                                                                                                                Fees, charges, and
+                             $10,000                                                                            parent contributions
+
+                                                             $13,321
+                                                                               $11,011                          Other private sources
+                              $5,000
+                                                                                                $7,173
+                                                $4,279
+                                    $0
+                                            Government        Catholic       Independent      All schools
+                                             ($20,368)       ($22,067)         ($28,642)      ($22,190)
+
+Source: ACARA, My School finance data collection.
+
+
+
+In real terms (after adjusting for inflation), between 2023 and 2024, NRIPS increased by $469 (2.4%)
+in government schools, $319 (1.6%) in Catholic schools and $838 (3.3%) in independent schools.
+Across all sectors, NRIPS was $536 (2.6%) higher in 2024 than in 2023. Figure 9.7 shows NRIPS,
+adjusted for inflation, for the period 2014 to 2024.
+
+Figure 9.7: Net recurrent income per student (NRIPS), by school sector, Australia, 2014<U+2013>2024 ($ per
+student, $2024)
+
+
+                           30,000
+
+                           25,000
+
+
+
+
+ $ per student ($2024)
+                           20,000
+
+                           15,000
+
+                           10,000
+
+                            5,000
+
+                               0
+                                         2014     2015    2016      2017    2018      2019     2020      2021   2022    2023     2024
+
+                                                    Government             Catholic          Independent         All
+
+Note: Amounts are adjusted for inflation to 2024 dollars, based on the CPI for June of each year. Nominal values and values
+adjusted using the GGFCE chain price deflator and the ABS WPI are available on the National Report on Schooling Data Portal.
+Sources: ACARA, My School finance data collection. ABS, Schools, 2024; ABS, Consumer Price Index, Australia, 2025.
+
+
+
+After adjusting for inflation, average NRIPS across all schools was $3,766 (21.3%) higher in 2024
+compared to 2014, with increases of $3,651 (21.9%) in government schools, $3,746 (22.3%) in
+Catholic schools and $3,296 (14.3%) in independent schools.
+
+
+
+
+                                                                                                                                        Page 9
+
+                                           National Report on Schooling in Australia 2024
+
+
+9.3         School Expenditure
+      Key Facts
+
+          <U+2022> In government schools, in the 2023/24 financial year, average total recurrent expenditure
+              (money spent for all school operations) was $26,140 per student.
+          <U+2022> In non-government schools, in the 2024 calendar year, average total recurrent
+            expenditure was $22,534 per student.
+          <U+2022> In the 2024 calendar year, capital expenditure (money spent to buy or improve long-term
+            fixed assets, such as renovating classrooms, or constructing a new library) was $5.28
+            billion in government schools, $2.15 billion in Catholic schools, and $3.90 billion in
+            independent schools.
+
+
+There are 2 types, or functions, of school expenditure. Recurrent expenditure is money spent on the
+day-to-day operations of schools, including:
+
+      <U+2022> salaries for school staff,
+
+      <U+2022> school supplies (e.g., textbooks, art supplies, sporting equipment),
+
+      <U+2022> general operating expenses of the school (e.g., utility bills and insurance),
+
+      <U+2022> maintaining the school's land and buildings (e.g., building repairs and school grounds upkeep),
+        and
+
+      <U+2022> other administrative costs (e.g., staff costs in meeting Australian Government reporting
+        requirements and participating in NAPLAN or other national assessments).
+Capital expenditure is money spent to buy or improve long-term fixed assets that can be used for
+educational purposes, for example, renovating classrooms, or constructing a new library.9 Capital
+expenditure amounts reported in this chapter were derived from My School data both government and
+non-government schools.
+In this section, school expenditure is reported separately for government and non-government
+schools. For government schools, recurrent expenditure data is sourced from the NSSC and reported
+on a financial year basis. Only expenditure from government funding is reported.10
+For non-government schools, recurrent expenditure data is sourced from the Australian Government
+Department of Education financial questionnaire. Expenditure is reported for the calendar year and
+includes expenditure from all income sources, including school fees and other private sources.11
+
+
+
+
+9
+ Non-government schools derive their income from Australian Government and state/territory government sources, school
+fees and charges, and from private sources including fundraising, and donations. This income is used to fund both recurrent
+and capital purposes. Under the Australian Education Act 2013, an approved authority for a non-government school that has a
+capacity to contribute greater than zero per cent must not use government recurrent funding for the purchase of land or
+buildings for the school, the construction of a building, or part of a building, for the school, capital improvements for the school,
+any form of loan, credit facility, or other interest in relation to the above.
+10
+  For government schools, expenditure from income from fees, charges and other private sources is excluded from the
+amounts reported in this section. Therefore, for government schools, total expenditure is equal to the total funding amounts
+reported in Section 9.1.
+11
+     In this data collection, compiled by the Australian Government, non-systemic Catholic schools are counted as Catholic.
+
+
+
+
+                                                                                                                             Page 10
+
+                                         National Report on Schooling in Australia 2024
+
+
+It is important to note that, due to the differences in the data sources and the time-period for which
+expenditure is reported (financial year for government schools and calendar year for non-government
+schools), expenditure per student for government and non-government schools is not directly
+comparable.
+The classification of recurrent expenditure also differs between government and non-government
+schools. For government schools, the salaries component includes costs such as superannuation,
+payroll tax, workers<U+2019> compensation, annual leave and long service leave. For non-government schools,
+these costs are reported under <U+2018>other staff-related expenditure<U+2019>.
+
+Recurrent expenditure in government schools
+Total recurrent expenditure on government schools in the 2023/24 financial year was $68.27 billion
+($26,140 per student).
+The major component of expenditure for government schools is in-school expenditure, which covers
+schools<U+2019> day-to-day operations. In-school expenditure encompasses expenses related to teaching,
+learning, school administration and library functions. Out-of-school expenditure includes state office
+costs, and regional and local functions which support schools. Amounts of in-school and out-of-
+school expenditure, by function, are presented in Table 9.1.
+
+Table 9.1: Recurrent expenditure by government education systems, Australia, 2023/24 financial year
+(accrual basis), (nominal $'000 and $ per student)
+
+                                                In school           Out of school             Total           Total recurrent
+                                                recurrent            recurrent              recurrent           expenditure
+                                               expenditure          expenditure            expenditure          per student
+                                                 ($<U+2019>000)              ($<U+2019>000)                ($<U+2019>000)          ($ per student)
+Salaries - Teaching staff                          31,447,043                        0        31,447,043                12,041
+
+Salaries - Non-teaching staff                       9,116,386              2,185,506          11,301,892                  4,328
+
+Redundancies                                             1,322                17,937               19,259                      7
+
+Non-salary costs                                   12,162,161              1,348,714          13,510,875                  5,173
+
+Total recurrent expenditure
+                                                   52,726,912              3,552,157          56,279,069                21,550
+(excluding user cost of capital)
+
+User cost of capital                               11,887,011                100,290          11,987,301                  4,590
+
+Total recurrent expenditure
+                                                   64,613,923              3,652,447          68,266,370                26,140
+(including user cost of capital)
+
+Notes: Amounts are expressed in actual dollars (nominal) and are not adjusted for inflation. Components may not add to
+totals due to exclusions and rounding. Salaries include on-costs such as superannuation, payroll tax, workers compensation,
+annual leave and long service leave. Redundancy payments have been excluded from salaries (teaching and non-teaching).
+In the government budget context, the user cost of capital is usually defined as the opportunity cost of funds tied up in capital
+assets used to deliver government services. Capital charging is the actual procedure used for applying this cost of capital to
+the asset management process. As such, it is a means of representing the cost of capital used in the provision of government
+budgetary outputs.
+Source: National Schools Statistics Collection (NSSC) (Finance), unpublished, 2024.
+
+
+
+
+                                                                                                                          Page 11
+
+                                            National Report on Schooling in Australia 2024
+
+
+Salaries are by far the largest component of expenditure in schools, with teacher salaries comprising
+the majority of this expenditure. Teaching salary costs (average $12,041 per student) represented
+73.6% of total salary costs in 2023/24 and 46.1% of total recurrent expenditure inclusive of user cost
+of capital, up from 45.8% in 2022/23. In 2023/24, non-salary costs including user cost of capital made
+up 37.3% of total operating expenditure (inclusive of user cost of capital).12
+After adjusting for inflation, average total recurrent expenditure per student in government schools
+increased by $334 (1.3%) between the 2022/23 and 2023/24 financial years. Figure 9.8 shows
+average total recurrent expenditure per student in government schools, adjusted for inflation, for the
+period 2013/14 to 2023/24. During this period, average total recurrent expenditure per student
+increased by $4,950 (23.4%) in real terms.
+
+Figure 9.8: Total recurrent expenditure per student (including user cost of capital), government schools,
+Australia, 2013/14 to 2023/24 ($ per student, $2024)
+
+                 $30,000
+
+
+                 $25,000
+
+
+                 $20,000
+
+
+
+ $ per student
+                 $15,000
+
+
+                 $10,000
+
+
+                  $5,000
+
+
+                     $0
+                           2013/14 2014/15 2015/16 2016/17 2017/18 2018/19 2019/20 2020/21 2021/22 2022/23 2023/24
+
+Note: Amounts are adjusted for inflation to 2024 dollars, based on the CPI for June of each year. Nominal values and values
+adjusted using the GGFCE chain price deflator and the ABS WPI are available on the National Report on Schooling Data Portal.
+Sources: National Schools Statistics Collection (NSSC) (Finance), unpublished, 2024; ABS, Consumer Price Index, Australia,
+2025.
+
+
+
+
+12
+  Expenditure data for government and non-government schools, aggregated up to school level (primary and secondary), is
+available on the National Report on Schooling data portal. Average recurrent expenditure per student is higher, on average,
+for secondary school students than for primary students. Capital expenditure per student is also higher, on average, for
+secondary school students than for primary school students.
+
+
+
+
+                                                                                                                       Page 12
+
+                                              National Report on Schooling in Australia 2024
+
+
+Recurrent expenditure in non-government schools
+In 2024, total recurrent expenditure in non-government schools was $35.4 billion ($22,534 per
+student). Table 9.2 shows total recurrent expenditure per student for non-government schools in the
+2024 calendar year.
+
+Table 9.2: Recurrent expenditure in non-government schools, by function, Australia, 2024 calendar year
+($<U+2019>000 and $ per student)
+                                                                                  Total recurrent          Total recurrent
+                                                                                   expenditure              expenditure
+                                                                                     ($<U+2019>000)               per student ($)
+    Salaries - Teaching staff                                                             15,626,502                   9,936
+
+    Salaries - Non-teaching staff                                                           6,336,101                  4,029
+
+    Other staff-related expenditure                                                         4,203,412                  2,673
+
+    Debt servicing                                                                           550,657                     350
+
+    Other operating expenditure                                                             8,723,733                  5,547
+
+    Total recurrent expenditure                                                           35,440,405                  22,534
+Notes: Expenditure per student for the components of recurrent expenditure is derived based on the percentage of total
+recurrent expenditure (including user cost of capital) of each component. Costs such as superannuation, payroll tax, workers
+compensation, annual leave and long service leave are included under <U+2018>other staff-related expenditure<U+2019>.
+Source: Australian Government Department of Education, unpublished data.
+
+As was the case for government schools, salaries were the largest component of expenditure in non-
+government schools, with teacher salaries comprising the majority of this expenditure. In 2024,
+teaching salary costs (average $9,936 per student) represented 71.2% of total salary costs and 44.1%
+of total recurrent expenditure. Non-staff related expenditure (debt servicing and other operating
+expenditure) made up 26.2% of total recurrent expenditure in non-government schools in 2024.
+
+In 2024, total recurrent expenditure per student was higher for independent schools ($24,562 per
+student) than in Catholic schools ($20,788 per student). Average total recurrent expenditure per
+student for the period from 2014 to 2024, adjusted for inflation, is shown in Figure 9.9.
+
+Figure 9.9: Total recurrent expenditure per student, non-government schools, Australia, by sector, 2014<U+2013>
+2024 ($ per student, $2024)
+
+                 $25,000
+
+
+                 $20,000
+
+
+
+
+ $ per student
+                 $15,000
+
+
+                 $10,000
+
+
+                  $5,000
+
+
+                     $0
+                             2014    2015     2016    2017    2018    2019      2020      2021      2022      2023      2024
+
+                           Catholic schools          Independent schools            All non-government schools
+
+Note: Amounts are adjusted for inflation to 2024 dollars, based on the CPI for June of each year. Nominal values and values
+adjusted using the GGFCE chain price deflator and the ABS WPI are available on the National Report on Schooling Data Portal.
+Source: Australian Government Department of Education, unpublished data.
+
+
+
+
+                                                                                                                      Page 13
+
+                                         National Report on Schooling in Australia 2024
+
+
+
+After adjusting for inflation, total recurrent expenditure per student in non-government schools
+increased by $767 (3.5%) between 2023 and 2024, with increases of $567 (2.8%) for Catholic schools
+and $956 (4.0%) for independent schools.
+Average total recurrent expenditure per student in non-government schools, after adjusting for
+inflation, increased by 21.8% ($4,030 in 2024 dollars) over the period from 2014 to 2024, with
+increases of 28.5% ($4,605) for Catholic schools and 12.7% ($2,768) for independent schools.
+
+Capital expenditure in government and non-government schools
+My School allows for comparable reporting of capital expenditure by all schools.13 In 2024, capital
+expenditure was $5.28 billion across 6,727 government schools, $2.15 billion across 1,759 Catholic
+schools, and $3.90 billion across 1,167 independent schools.
+In government schools, capital expenditure was mainly sourced from state/territory funding (90.5%),
+with an additional 8.3% from Australian Government funding, and 1.1% from other private sources, as
+shown in Figure 9.10.
+
+Figure 9.10: Capital expenditure in government and non-government schools, Australia, by sector,
+2024 (%)
+
+            100%        1.1
+                                                                                                         Australian
+            90%                                                                         21.9             Government
+                                            35.6                                                         capital expenditure
+            80%                                                   42.4
+                                                                                                         State/territory
+            70%                                                                         12.8
+                                                                                                         government
+                                                                                                         capital expenditure
+            60%
+                                                                                        15.6
+
+ Per cent
+                        90.5                                                                             Capital
+                                            23.4
+            50%                                                                                          expenditure from
+                                                                  24.0                                   new school loans
+            40%
+                                                                                                         Income allocated
+            30%                                                                                          to current capital
+                                            30.5                                        44.1             projects
+            20%                                                   28.6
+                                                                                                         Capital
+            10%                                                                                          expenditure from
+                                             5.7                                                         other private
+                        8.3                  4.9                   2.7                   5.6             sources
+             0%                                                    2.3
+                    Government       Catholic schools         Independent           All schools
+                      schools         ($2.15 billion)           schools           ($11.32 billion)
+                   ($5.28 billion)                           ($3.90 billion)
+
+
+Note: New school loans refer to the amount of capital expenditure funded by capital loan drawdowns in the reporting year.
+Income allocated to current capital projects is the amount of gross income received by the school that has been spent on
+capital projects in the reporting year. Other (capital expenditure) <U+2013> the amount of capital expenditure funded through other
+private sources including retained earnings from previous years. Values may not sum exactly to 100.0 due to rounding.
+Source: ACARA, My School finance data collection.
+
+
+13
+  Capital expenditure for both government and non-government schools were derived from My School data. These amounts
+differ from the capital expenditure amounts based on NSSC data for government schools and data provided by the AGDE for
+non-government schools. For the My School finance data, jurisdictions agreed to exclude all capital expenditure on the
+construction and acquisition of new schools where the expenditure was incurred in calendar years prior to the school becoming
+operational. There are generally 40-45 new schools opened each year, for which this change applies.
+
+
+
+
+                                                                                                                         Page 14
+
+                                National Report on Schooling in Australia 2024
+
+
+
+A relatively small proportion of capital expenditure in non-government schools was sourced from
+state/territory government capital funding (5.7% for Catholic schools and 2.7% for independent
+schools) or Australian Government funding (4.9% for Catholic schools and 2.3% for independent
+schools).
+In Catholic schools, 35.6% of capital expenditure was sourced from private income sources, as was
+42.4% of capital expenditure in independent schools. Capital expenditure from income allocated to
+current capital projects made up 23.4% of total capital expenditure for Catholic schools and 24.0% of
+total capital expenditure for independent schools, while capital expenditure from new school loans
+made up 30.5% of total capital expenditure for Catholic schools and 28.6% of total capital expenditure
+for independent schools.
+
+
+
+
+                                                                                               Page 15
+
+                                                  National Report on Schooling in Australia 2024
+
+
+
+Table 9.3: An overview of the key features and differences between the 4 school funding data collections
+                                                                                  School income and
+                                                              Non-government                               Government recurrent
+                          Government expenditure                                capital expenditure for
+                                                            schools<U+2019> income and                          expenditure on government
+                          on government schools                                 government and non-
+                                                                expenditure                             and non-government schools
+                                                                                 government schools
+Reporting period         Financial year 2023/24             Calendar year 2024          Calendar year 2024          Financial year 2023/24
+                         (ending in reporting year)         (same as reporting          (same as reporting year)    (ending in reporting year)
+                                                            year)
+Scope of reporting       Government schools only            Non-government              Government and non-         Government and non-government
+                                                            schools receiving           government schools          schools receiving government
+                         Disaggregation by                  Australian Government       receiving government        funding.
+                         state/territory and                recurrent funding.          funding.
+                         primary/secondary                                                                          Disaggregation by state/territory
+                                                            Disaggregation by           Disaggregation by
+                         No disaggregation by funding       state/territory, Catholic   state/territory, Catholic   No disaggregation by
+                         source                             and independent             and independent schools     Catholic/Independent for non-
+                                                            schools                                                 government schools.
+                                                                                        Catholic non-systemic
+                                                            Catholic non-systemic       schools are reported as     Disaggregation by
+                                                            schools are reported as     independent schools in      primary/secondary for
+                                                            Catholic schools            aggregated data             government schools
+
+What is reported         Capital and recurrent              Income from all sources Recurrent income from all       Government recurrent
+                         expenditure                                                sources                         expenditure on government
+                                                            Capital expenditure and                                 schools and non-government
+                         In-school costs (e.g., teacher     recurrent expenditure   Capital expenditure             schools
+                         salaries)
+
+                         Out-of-school costs (e.g.,
+                         state office, regional and local
+                         functions which support
+                         schools)
+
+Income or expenditure    Expenditure based (based on        Income and expenditure Income and capital               Expenditure based (based on
+based                    payment of expenses)               based                  expenditure based                payment of expenses)
+
+Treatment of private     Not reported                       Private income reported Private income                  Not reported
+funding                                                                             reported
+
+Inclusions               Payroll tax (real or notional)     Recurrent and capital       Government funding          Australian Government funding
+                         Notional user cost of capital      grants                      (including JobKeeper        for schools, joint programs
+                         in government school funding                                   payments received by        apportioned to government
+                                                            Debt servicing of loans     non-government schools)     schools, assistance in response
+                         Non-salary costs include other     Australian Government                                   to COVID-19 (excluding
+                         operating expenses, grants         assistance as part of       Private funding             JobKeeper payments received by
+                         and subsidies and                  the COVID-19 response                                   non-government schools)
+                         depreciation                       (including JobKeeper
+                                                            payments)                                               Expenditure by state and territory
+                                                                                                                    government education
+                                                                                                                    departments
+
+                                                                                                                    Staff allowances for
+                                                                                                                    accommodation
+Exclusions               Funds raised by schools,       Amounts related to              Items are treated           Funds raised by schools, school
+                         school councils or community boarding facilities               differently across sectors, councils or community
+                         organisations, amounts                                         such as user cost of        organisations
+                         related to boarding facilities                                 capital, payroll tax and
+                                                                                        boarding
+Agency responsible for   State and territory                Australian Government       AGDE (non-government        Productivity Commission
+collecting data          governments                        Department of               schools) State/territory
+                                                            Education (AGDE)            governments
+                                                                                        (government schools)
+
+Source                   National Schools Statistics        AGDE financial              My School                   NSSC Finance Collection, federal
+                         Collection (Finance)               questionnaire                                           budget papers and data provided
+                                                                                                                    to the Productivity Commission
+
+
+
+
+                                                                                                                                    Page 16
+

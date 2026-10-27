@@ -1,0 +1,46 @@
+"check","passed"
+"Pure inflation leaves personal_income GDP share unchanged",TRUE
+"Pure inflation leaves company GDP share unchanged",TRUE
+"Pure inflation leaves superannuation GDP share unchanged",TRUE
+"Pure inflation leaves medicare_fbt GDP share unchanged",TRUE
+"Pure inflation leaves gst GDP share unchanged",TRUE
+"Pure inflation leaves excises_customs GDP share unchanged",TRUE
+"Pure inflation leaves payroll GDP share unchanged",TRUE
+"Pure inflation leaves property GDP share unchanged",TRUE
+"Pure inflation leaves stamp_duties GDP share unchanged",TRUE
+"Pure inflation leaves other_taxes GDP share unchanged",TRUE
+"Pure inflation leaves royalties GDP share unchanged",TRUE
+"Pure inflation leaves fees_other GDP share unchanged",TRUE
+"gst fixed coverage benchmark has constant GDP share",TRUE
+"property fixed coverage benchmark has constant GDP share",TRUE
+"stamp_duties fixed coverage benchmark has constant GDP share",TRUE
+"other_taxes fixed coverage benchmark has constant GDP share",TRUE
+"superannuation tracks the nominal wage bill",TRUE
+"medicare_fbt tracks the nominal wage bill",TRUE
+"payroll tracks the nominal wage bill",TRUE
+"Excise follows population times indexed unit rate",TRUE
+"Excise GDP share falls as real output per resident increases",TRUE
+"Zero-productivity high-inflation scenario leaves personal_income GDP share unchanged",TRUE
+"Zero-productivity high-inflation scenario leaves company GDP share unchanged",TRUE
+"Zero-productivity high-inflation scenario leaves superannuation GDP share unchanged",TRUE
+"Zero-productivity high-inflation scenario leaves medicare_fbt GDP share unchanged",TRUE
+"Zero-productivity high-inflation scenario leaves gst GDP share unchanged",TRUE
+"Zero-productivity high-inflation scenario leaves excises_customs GDP share unchanged",TRUE
+"Zero-productivity high-inflation scenario leaves payroll GDP share unchanged",TRUE
+"Zero-productivity high-inflation scenario leaves property GDP share unchanged",TRUE
+"Zero-productivity high-inflation scenario leaves stamp_duties GDP share unchanged",TRUE
+"Zero-productivity high-inflation scenario leaves other_taxes GDP share unchanged",TRUE
+"Zero-productivity high-inflation scenario leaves royalties GDP share unchanged",TRUE
+"Zero-productivity high-inflation scenario leaves fees_other GDP share unchanged",TRUE
+"Zero real earnings growth produces no PIT bracket creep",TRUE
+"Wage-indexed default PIT share is invariant to productivity",TRUE
+"No historical regression coefficient affects any output",TRUE
+"Projection works without historical elasticity evidence",TRUE
+"All heads retain the common 2030 calibration",TRUE
+"Nominal GDP remains independent of productivity",TRUE
+"Fixed nominal PIT thresholds explicitly break inflation neutrality",TRUE
+"GST proxy has no implicit additional ToT response",TRUE
+"Royalty share response includes domestic price adjustment",TRUE
+"Every spending module appears in evidence register",TRUE
+"All register entries describe classification, rule, source and limitation",TRUE
+"Published source parameters retain individual provenance",TRUE

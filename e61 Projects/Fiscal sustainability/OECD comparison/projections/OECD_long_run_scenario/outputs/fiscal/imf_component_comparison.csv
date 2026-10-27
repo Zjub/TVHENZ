@@ -1,0 +1,7 @@
+method,component,start_year,end_year,change_pp,qualification
+IMF Fiscal Monitor April 2026,Public pensions,2025,2030,-0.1,Published IMF flow change; health/pension coverage may differ from other models
+IMF Fiscal Monitor April 2026,Health,2025,2030,0.8,Published IMF flow change; health/pension coverage may differ from other models
+OECD equations with available inputs,Health,2025,2030,0.302042188858957,"Independent calculation, not published OECD; health includes health-related LTC"
+OECD equations with available inputs,Public pensions,2025,2030,0.246283508768188,"Independent calculation, not published OECD; health includes health-related LTC"
+Bottom-up fixed exposure,Health,2025,2030,-0.143314034346399,ABS GFS Health function; pensions not separately projected in existing Social Protection block
+Bottom-up data enhanced,Health,2025,2030,-0.0918845220686193,ABS GFS Health function; pensions not separately projected in existing Social Protection block

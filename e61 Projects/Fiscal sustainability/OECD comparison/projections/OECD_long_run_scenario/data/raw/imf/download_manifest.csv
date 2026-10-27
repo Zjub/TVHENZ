@@ -1,0 +1,11 @@
+file,url,status
+datamapper_indicators.json,https://www.imf.org/external/datamapper/api/v1/indicators,cached
+datamapper_datasets.json,https://www.imf.org/external/datamapper/api/v1/datasets,cached
+fiscal_monitor_dataset_page.html,https://www.imf.org/external/datamapper/datasets/FM,cached
+G_X_G01_GDP_PT_AUS.json,https://www.imf.org/external/datamapper/api/v1/G_X_G01_GDP_PT/AUS,downloaded
+GGXCNL_G01_GDP_PT_AUS.json,https://www.imf.org/external/datamapper/api/v1/GGXCNL_G01_GDP_PT/AUS,downloaded
+GGXONLB_G01_GDP_PT_AUS.json,https://www.imf.org/external/datamapper/api/v1/GGXONLB_G01_GDP_PT/AUS,downloaded
+G_XWDG_G01_GDP_PT_AUS.json,https://www.imf.org/external/datamapper/api/v1/G_XWDG_G01_GDP_PT/AUS,downloaded
+fiscal_monitor_april_2026_appendix.pdf,https://www.imf.org/-/media/files/publications/fiscal-monitor/2026/april/english/msa.pdf?download=1,request_failed
+fiscal_monitor_april_2026_appendix.pdf,https://www.imf.org/-/media/Files/Publications/fiscal-monitor/2026/April/English/msa.ashx,request_failed
+australia_article_iv_2025_published_2026.pdf,https://www.imf.org/-/media/files/publications/cr/2026/english/1ausea2026001-source-pdf.pdf?download=1,request_failed

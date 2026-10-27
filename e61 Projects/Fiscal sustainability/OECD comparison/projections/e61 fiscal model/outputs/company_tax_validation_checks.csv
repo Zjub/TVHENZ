@@ -1,0 +1,39 @@
+"check","passed"
+"Reference matches structural rule",TRUE
+"Reference preserves common 2030 revenue anchor",TRUE
+"NGDP per capita 1 percent matches structural rule",TRUE
+"NGDP per capita 1 percent preserves common 2030 revenue anchor",TRUE
+"NGDP per capita 8 percent matches structural rule",TRUE
+"NGDP per capita 8 percent preserves common 2030 revenue anchor",TRUE
+"Screenshot: zero productivity, 8 percent nominal per capita matches structural rule",TRUE
+"Screenshot: zero productivity, 8 percent nominal per capita preserves common 2030 revenue anchor",TRUE
+"Productivity 1.7 percent matches structural rule",TRUE
+"Productivity 1.7 percent preserves common 2030 revenue anchor",TRUE
+"Population growth 1.6 percent matches structural rule",TRUE
+"Population growth 1.6 percent preserves common 2030 revenue anchor",TRUE
+"Average hours growth 0.2 percent matches structural rule",TRUE
+"Average hours growth 0.2 percent preserves common 2030 revenue anchor",TRUE
+"ToT up 10 percent matches structural rule",TRUE
+"ToT up 10 percent preserves common 2030 revenue anchor",TRUE
+"ToT up 20 percent matches structural rule",TRUE
+"ToT up 20 percent preserves common 2030 revenue anchor",TRUE
+"ToT down 20 percent matches structural rule",TRUE
+"ToT down 20 percent preserves common 2030 revenue anchor",TRUE
+"High nominal growth and ToT up 20 percent matches structural rule",TRUE
+"High nominal growth and ToT up 20 percent preserves common 2030 revenue anchor",TRUE
+"ToT sensitivity zero matches structural rule",TRUE
+"ToT sensitivity zero preserves common 2030 revenue anchor",TRUE
+"ToT sensitivity two matches structural rule",TRUE
+"ToT sensitivity two preserves common 2030 revenue anchor",TRUE
+"Reference constant company tax GDP share in all years",TRUE
+"NGDP per capita 1 percent constant company tax GDP share in all years",TRUE
+"NGDP per capita 8 percent constant company tax GDP share in all years",TRUE
+"Screenshot: zero productivity, 8 percent nominal per capita constant company tax GDP share in all years",TRUE
+"Productivity 1.7 percent constant company tax GDP share in all years",TRUE
+"Population growth 1.6 percent constant company tax GDP share in all years",TRUE
+"Average hours growth 0.2 percent constant company tax GDP share in all years",TRUE
+"Higher ToT raises and lower ToT reduces the structural share",TRUE
+"A permanent ToT level shock stops changing the share after 2040",TRUE
+"Changing NGDP does not change the share even with a ToT shock",TRUE
+"Sensitivity zero disables the ToT share response",TRUE
+"Sensitivity two has the stated endpoint response",TRUE

@@ -1,0 +1,5 @@
+programme,year,ratio,missing_treated_zero
+TP111,2022,0.03366,FALSE
+TP112,2022,0,TRUE
+TP211,2022,4e-04,FALSE
+TP311,2022,0.01224,FALSE

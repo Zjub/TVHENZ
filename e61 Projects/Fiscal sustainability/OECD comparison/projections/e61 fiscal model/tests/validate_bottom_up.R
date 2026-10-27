@@ -1,0 +1,53 @@
+args<-commandArgs(FALSE);script<-sub('^--file=','',args[grepl('^--file=',args)][1])
+setwd(normalizePath(file.path(dirname(script),'..'),mustWork=TRUE))
+source('R/model.R');x<-load_inputs();cal<-calibrate(x);a<-default_assumptions();b<-project_model(x,a,cal)
+checks<-data.frame(check=character(),passed=logical())
+check<-function(label,z){checks[nrow(checks)+1,]<<-list(label,isTRUE(z));if(!isTRUE(z))stop('Failed: ',label)}
+near<-function(x,y,tol=1e-7)all(is.finite(c(x,y)))&&max(abs(x-y))<tol
+s<-cal$subfunctions
+check('24 unique positive source subfunctions',nrow(s)==24&&!anyDuplicated(s$id)&&all(s$source_2025_bn>0))
+check('Every subfunction has traceable source and limitations',all(nzchar(s$source)&nzchar(s$locator)&nzchar(s$status)&nzchar(s$limits)))
+check('2025 allocations sum to every original programme control',near(as.numeric(tapply(s$base_2025_bn,s$programme,sum)[cal$programmes$programme]),cal$programmes$base_2025_bn))
+check('2030 allocations sum to every unchanged programme anchor',near(as.numeric(tapply(s$anchor_2030_bn,s$programme,sum)[cal$programmes$programme]),cal$programmes$anchor_2030_bn))
+check('ABS education subfunctions match GFS education total',near(sum(subset(s,programme=='Education')$source_2025_bn),subset(cal$programmes,programme=='Education')$base_2025_bn))
+check('Hospital allocation uses government funding only',near(subset(s,id=='h_hospital')$source_2025_bn,103.2))
+check('PBS removed once from primary-care source',near(subset(s,id=='h_primary')$source_2025_bn,36.8))
+check('Health residual absorbs GFS reconciliation',near(sum(subset(s,programme=='Health')$source_2025_bn),subset(cal$programmes,programme=='Health')$base_2025_bn))
+check('Separate health profiles retained',setequal(unique(x$subfunction_age_profiles$profile),c('hospital','medical','pharma')))
+legacy<-new.env(parent=globalenv());sys.source('archive/pre_bottom_up_2026_10_27/model_v2.R',envir=legacy)
+old<-legacy$project_model(x,a,legacy$calibrate(x))
+check('NDIS settings and annual projected spending unchanged',near(subset(old$components,programme=='NDIS')$spending_bn,subset(b$components,programme=='NDIS')$spending_bn))
+check('Pension annual projected spending unchanged',near(old$pension$payment_index,b$pension$payment_index)&&near(subset(old$components,programme=='Age Pension')$spending_bn,subset(b$components,programme=='Age Pension')$spending_bn))
+check('All parent 2030 spending and GDP anchors unchanged',near(subset(old$components,year==2030)$spending_bn,subset(b$components,year==2030)$spending_bn)&&identical(old$path$nominal_gdp,b$path$nominal_gdp))
+check('Future health and education now respond to distinct demand profiles',!near(subset(old$components,programme=='Health')$spending_bn,subset(b$components,programme=='Health')$spending_bn)&&!near(subset(old$components,programme=='Education')$spending_bn,subset(b$components,programme=='Education')$spending_bn))
+for(n in cal$programmes$programme){
+ detail<-subset(b$subfunctions,programme==n);parent<-subset(b$components,programme==n)
+ check(paste(n,'subfunctions sum in every year'),near(as.numeric(tapply(detail$spending_bn,detail$year,sum)),parent$spending_bn))
+}
+f<-setdiff(names(spending_factor_labels()),'gdp_factor')
+check('Each detailed spending level equals anchor times factors',near(b$subfunctions$anchor_2030_bn*apply(b$subfunctions[,f],1,prod),b$subfunctions$spending_bn,1e-6))
+for(measure in c('pct','bn','real_bn'))for(start in c(2030,2040))for(finance in c(FALSE,TRUE)) {
+ d<-spending_contributions(b,start,2066,measure,finance)
+ check(paste('Displayed factor ratios reconstruct each endpoint',measure,start,finance),
+   near(tapply(d$factor_end/d$factor_start,d$id,prod)*tapply(d$start_value,d$id,unique),tapply(d$end_value,d$id,unique)))
+ check(paste('Exact contribution identity',measure,start,finance),near(tapply(d$contribution,d$id,sum),tapply(d$change,d$id,unique)))
+ endpoints<-d[!duplicated(d$id),];m<-subset(b$path,year%in%c(start,2066));amount<-if(finance)m$total_spending_bn else m$primary_expense_bn
+ expected<-switch(measure,pct=100*amount/m$nominal_gdp,bn=amount,real_bn=amount/m$domestic_price_index)
+ check(paste('Selected scope/currency endpoint reconciliation',measure,start,finance),near(c(sum(endpoints$start_value),sum(endpoints$end_value)),expected,1e-6))
+}
+real<-spending_contributions(b,measure='real_bn')
+check('General inflation cancels for price-indexed services in real measure',all(subset(real,programme%in%c('Health','Education','Aged care','NDIS','Other public services') & factor=='General prices')$contribution==0))
+v<-product_shapley(c(1,1,1),c(1.1,1.2,1),100)
+check('Interaction allocated symmetrically and dummy factor zero',near(v,c(11,21,0)))
+v<-product_shapley(c(1,1),c(0,2),100)
+check('Zero-valued endpoint factors remain finite and exact',all(is.finite(v))&&near(sum(v),-100))
+v<-product_shapley(c(1,1,1),c(1.2,1.1,1),100)
+check('Factor relabelling only relabels contributions',near(v,c(21,11,0)))
+check('Invalid year range rejected',inherits(try(spending_contributions(b,2040,2030),silent=TRUE),'try-error'))
+stress<-project_model(x,modifyList(a,list(productivity=.03,relative_price=-.005,interest_rate=.02)),cal)
+check('Zero-debt stress contribution identity remains finite',all(is.finite(spending_contributions(stress,measure='bn',include_financing=TRUE)$contribution)))
+write.csv(checks,'outputs/bottom_up_validation_checks.csv',row.names=FALSE)
+write.csv(s,'outputs/subfunction_calibration.csv',row.names=FALSE)
+write.csv(b$subfunctions,'outputs/reference_spending_subfunctions.csv',row.names=FALSE)
+for(measure in c('pct','bn','real_bn'))write.csv(spending_contributions(b,measure=measure,include_financing=TRUE),paste0('outputs/spending_contributions_',measure,'.csv'),row.names=FALSE)
+cat(nrow(checks),'bottom-up spending checks passed.\n')

@@ -1,0 +1,5 @@
+step,implementation,qualification
+1,2026-27 PBO and 2026 IGR inputs plus consolidated ABS control totals and coverage bridges,Jurisdictions are distinguished in source data and reconciliation but not separately projected long term
+2,Observed age-sex labour and hours plus IGR targets and sourced care age-cost profiles,Population shares interpolate published years; participation is an aggregate odds bridge; education remains a proxy
+3,Separate care modules and explicit pension means tests with cohort super accumulation,Pension wealth and household mixtures are synthetic; not all care reforms or residence and household rules are simulated
+4,Observed tax heads and ATO percentiles with tax schedules indexation and estimated elasticities,Short-sample elasticities are descriptive and some offsets and state rules remain outside scope

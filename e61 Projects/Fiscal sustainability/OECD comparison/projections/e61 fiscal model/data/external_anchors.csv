@@ -1,0 +1,3 @@
+variable,value,unit,year,status,source_url
+age_pension_outlay,62.2,AUD billion,2025,ANAO published outlay; cash-to-GFS allocation approximation,https://www.anao.gov.au/work/performance-audit/administration-of-the-age-pension
+age_pension_recipients,2.67,million at June,2025,ANAO observed stock; exposure normalisation only,https://www.anao.gov.au/work/performance-audit/administration-of-the-age-pension

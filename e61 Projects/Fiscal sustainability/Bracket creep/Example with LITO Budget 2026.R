@@ -226,24 +226,24 @@ footnotes_vec <- c(
   "Dashed line shows the treatment as at 2026, before Budget 2026-27 changes to the second rate and introduction of WATO."
 )
 
-if (levy && surcharge) {
-  footnotes_vec <- c(footnotes_vec, "Effective Tax Rate includes Single Medicare Levy and Medicare Levy Surcharge.")
-} else if (levy && !surcharge) {
-  footnotes_vec <- c(footnotes_vec, "Effective Tax Rate includes Single Medicare Levy but excludes the Medicare Levy Surcharge.")
-} else if (!levy && surcharge) {
-  footnotes_vec <- c(footnotes_vec, "Effective Tax Rate includes Single Medicare Levy Surcharge but excludes the standard Medicare Levy.")
-} else {
-  footnotes_vec <- c(footnotes_vec, "Effective Tax Rate excludes Single Medicare Levy and Medicare Levy Surcharge.")
-}
+# if (levy && surcharge) {
+#   footnotes_vec <- c(footnotes_vec, "Effective Tax Rate includes Single Medicare Levy and Medicare Levy Surcharge.")
+# } else if (levy && !surcharge) {
+#   footnotes_vec <- c(footnotes_vec, "Effective Tax Rate includes Single Medicare Levy but excludes the Medicare Levy Surcharge.")
+# } else if (!levy && surcharge) {
+#   footnotes_vec <- c(footnotes_vec, "Effective Tax Rate includes Single Medicare Levy Surcharge but excludes the standard Medicare Levy.")
+# } else {
+#   footnotes_vec <- c(footnotes_vec, "Effective Tax Rate excludes Single Medicare Levy and Medicare Levy Surcharge.")
+# }
 
 if (levy && surcharge) {
-  title_vec <- "ETR by Gross Taxable Income - including Medicare Levy"
+  title_vec <- "Effective Income Tax Rate"#"ETR by Gross Taxable Income - including Medicare Levy"
 } else if (levy && !surcharge) {
-  title_vec <- "ETR by Gross Taxable Income - including Medicare Levy (ex surcharge)"
+  title_vec <- "Effective Income Tax Rate"#"ETR by Gross Taxable Income - including Medicare Levy (ex surcharge)"
 } else if (!levy && surcharge) {
-  title_vec <- "ETR by Gross Taxable Income - nonsense"
+  title_vec <- "Effective Income Tax Rate"#"ETR by Gross Taxable Income - nonsense"
 } else {
-  title_vec <- "ETR by Gross Taxable Income - excluding Medicare Levy"
+  title_vec <- "Effective Income Tax Rate"#"ETR by Gross Taxable Income - excluding Medicare Levy"
 }
 
 if (levy && surcharge) {
@@ -332,13 +332,14 @@ ggplot(df, aes(x = income/1000)) +
   )) +
   scale_shape_manual(values = c("Budget 2026" = 16, "Inflation only" = 17, "Nominal income growth" = 17)) +
   labs_e61(
-    title = "ETR by Gross Taxable Income",
+    title = "Effective Income Tax Rate",
     footnotes = footnotes_vec,
     x = paste0("Gross Taxable Income (", base_year_label, "$)"),
     y = "%",
     colour = "Tax Scale",
     linetype = "Tax Scale",
-    shape = "Tax Scale"
+    shape = "Tax Scale",
+    sources = c("e61 calculations")
   ) +
   plab(#c("Effective tax rates in FY25","Effective tax rates in FY35","Average FY25 worker in FY25","Average FY25 worker in FY35","Average FY35 worker in FY35"),
     c(paste0("Effective tax rates in ", budget_year_label), paste0("Effective tax rates in ", future_year_label), paste0(budget_year_label, " worker in ", budget_year_label), paste0(budget_year_label, " worker in ", future_year_label, " (inflation only)"), paste0(future_year_label, " worker in ", future_year_label)),
@@ -358,9 +359,10 @@ df[,diff_doll := diff*income]
 ggplot(df,aes(x=income/1000,y=diff*100)) + geom_line() +
   labs_e61(
     title = paste0("Simulated change in tax rates ", budget_year_label, "-", future_year_label),
-    footnotes = footnotes_vec[3],
+    #footnotes = footnotes_vec[3],
+    sources = c("e61 calculations"),
     x = paste0("Gross Taxable Income (", base_year_label, "$)"),
-    y = "%",
+    y = "Percentage point change",
     colour = "Tax Scale",
     shape = "Tax Scale"
   )
