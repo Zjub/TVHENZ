@@ -21,7 +21,7 @@ for(p in names(notes)){
 }
 def<-igr_spending_comparison(b,b,o,'Defence')
 check(all(is.na(def$igr_pct[def$year%in%c(2030,2035,2050)])))
-a<-default_assumptions();a$health_cost_growth_adjustment<-.01;s<-project_model(x,a,cal)
+a<-default_assumptions();a$health_service_growth_adjustment<-.01;s<-project_model(x,a,cal)
 changed<-igr_spending_comparison(s,b,o,'Health');base<-igr_spending_comparison(b,b,o,'Health')
 check(tail(changed$scenario_pct,1)>tail(base$scenario_pct,1))
 check(identical(changed$igr_pct,base$igr_pct)&&identical(changed$reference_pct,base$reference_pct))

@@ -28,7 +28,7 @@ browser$Page$setDocumentContent(frameId=frame,html=html)
 ready <- FALSE
 for (attempt in 1:50) {
   ready <- isTRUE(browser$Runtime$evaluate(
-    "document.readyState === 'complete' && document.body.innerText.includes('Next development priorities')",
+    "document.readyState === 'complete' && document.body.innerText.includes('Discussion questions')",
     returnByValue=TRUE)$result$value)
   if (ready) break
   Sys.sleep(0.1)
@@ -43,7 +43,7 @@ writeBin(jsonlite::base64_dec(pdf$data),'README.pdf')
 browser$close()
 info <- pdftools::pdf_info('README.pdf')
 text <- paste(pdftools::pdf_text('README.pdf'),collapse='\n')
-stopifnot(info$pages>0,grepl('Next development priorities',text,fixed=TRUE),
+stopifnot(info$pages>0,grepl('Discussion questions',text,fixed=TRUE),
           grepl('Starting data and calibration',text,fixed=TRUE),
           grepl('NGDP',text,fixed=TRUE))
 cat('Created README.pdf:',info$pages,'pages. Verified key sections and readable text.\n')

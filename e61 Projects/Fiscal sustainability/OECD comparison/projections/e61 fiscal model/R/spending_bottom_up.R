@@ -32,78 +32,6 @@ calibrate_subfunctions <- function(x,cal) {
  d
 }
 
-project_primary_spending <- function(x,m,a,cal,pp,pension) {
- spec<-cal$subfunctions;t<-m$year-a$anchor_year;keys<-cost_pass_through_parameters()
- hp<-x$health_education_parameters
- stopifnot(!anyDuplicated(hp$id),setequal(hp$id,spec$id[spec$programme%in%c('Health','Education')]),
-   all(hp$cost_rule%in%c('input_mix','cpi_proxy','funding_proxy')),
-   all(is.finite(as.matrix(hp[,c('wage_weight','service_productivity_growth','coverage_growth','intensity_growth','relative_price_loading')]))),
-   all(hp$wage_weight>=0&hp$wage_weight<=1),all(hp$service_productivity_growth> -1),
-   all(hp$coverage_growth> -1),all(hp$intensity_growth> -1),all(hp$relative_price_loading>=0))
- rows<-lapply(seq_len(nrow(spec)),function(j){
-   s<-spec[j,];q<-pp[match(s$programme,pp$programme),]
-   exposure<-subfunction_demand(x,s$profile,m$year);exposure<-exposure/exposure[1]
-   pass<-if(a$policy=='standards' && q$kind=='mixed')1 else q$wage_pass_through
-   coverage<-rep(1,nrow(m));real_unit<-m$productivity_index^pass
-   intensity<-(1+if(s$programme=='NDIS')a$ndis_intensity_growth else q$excess_cost_growth)^t
-   rel<-if(q$kind%in%c('service','mixed'))(1+a$relative_price)^t else rep(1,nrow(m))
-   pop<-m$population_index;age<-exposure/pop;price<-m$domestic_price_index
-   target<-aggregate_cost<-rep(1,nrow(m));wage_weight<-service_productivity<-NA_real_
-   if(s$id%in%hp$id){
-     z<-hp[match(s$id,hp$id),];wage_weight<-z$wage_weight;service_productivity<-z$service_productivity_growth
-     # Input quantities held fixed per service: a base-period input-cost basket.
-     # Funding proxy instead compounds the stated wage/CPI weighting each year.
-     real_unit<-if(z$cost_rule=='funding_proxy')(1+wage_weight*a$productivity)^t else
-       (1-wage_weight)+wage_weight*m$productivity_index
-     real_unit<-real_unit/(1+service_productivity)^t
-     coverage<-(1+z$coverage_growth)^t
-     intensity<-(1+z$intensity_growth)^t
-     rel<-(1+a$relative_price)^(t*z$relative_price_loading)
-     key<-keys[[s$programme]];aggregate_cost<-(1+a[[key]])^t
-     pass<-NA_real_
-   }
-   if(s$programme=='Age Pension'){
-     coverage<-pension$coverage/pension$coverage[1]
-     mean_payment<-ifelse(exposure*coverage>0,pension$payment_index/(exposure*coverage),1)
-     real_unit<-mean_payment/price;rel[]<-1;intensity[]<-1
-   }
-   if(q$kind=='target'){
-     pop[]<-age[]<-price[]<-real_unit[]<-rel[]<-intensity[]<-1
-     target<-m$nominal_gdp*approx(c(2030,2035),c(q$anchor_2030_bn/cal$gdp0,.025),xout=m$year,rule=2)$y/s$anchor_2030_bn
-   }
-   value<-s$anchor_2030_bn*pop*age*coverage*price*real_unit*rel*intensity*target*aggregate_cost
-   data.frame(year=m$year,programme=s$programme,id=s$id,subfunction=s$subfunction,
-     anchor_2030_bn=s$anchor_2030_bn,spending_bn=value,share_gdp=100*value/m$nominal_gdp,
-     exposure_index=exposure,coverage_index=coverage,
-     cost_pass_through=if(s$programme%in%names(keys))pass else NA_real_,
-     wage_weight=wage_weight,service_productivity_growth=service_productivity,
-     population_factor=pop,age_factor=age,coverage_factor=coverage,price_factor=price,
-     real_unit_factor=real_unit,relative_price_factor=rel,intensity_factor=intensity,policy_factor=target,
-     aggregate_cost_factor=aggregate_cost)
- })
- detail<-do.call(rbind,rows)
- # Effective aggregates retain the old driver-audit API; detailed factors below
- # are the authoritative decomposition and sum across separately modelled units.
- aggregate_rows<-lapply(seq_len(nrow(pp)),function(j){
-   q<-pp[j,];d<-detail[detail$programme==q$programme,]
-   spend<-as.numeric(tapply(d$spending_bn,d$year,sum))
-   exp<-as.numeric(tapply(d$anchor_2030_bn*d$exposure_index,d$year,sum))/q$anchor_2030_bn
-   cov<-if(q$programme=='Age Pension')pension$coverage/pension$coverage[1] else rep(1,nrow(m))
-   intensity<-(1+if(q$programme=='NDIS')a$ndis_intensity_growth else q$excess_cost_growth)^t
-   cost<-ifelse(exp*cov*intensity>0,spend/(q$anchor_2030_bn*exp*cov*intensity),1)
-   pass<-if(q$programme%in%c('Health','Education'))NA_real_ else if(a$policy=='standards' && q$kind=='mixed')1 else q$wage_pass_through
-   data.frame(year=m$year,programme=q$programme,spending_bn=spend,
-     cost_pass_through=if(q$programme%in%names(keys))pass else NA_real_,exposure_index=exp,
-     unit_cost_index=cost,coverage_index=cov,intensity_index=intensity,share_gdp=100*spend/m$nominal_gdp)
- })
- list(components=do.call(rbind,aggregate_rows),subfunctions=detail)
-}
-
-spending_factor_labels <- function() c(population_factor='Population size',age_factor='Age / cohort demand',
- coverage_factor='Coverage / eligibility',price_factor='General prices',real_unit_factor='Real unit cost / payment',
- relative_price_factor='Relative service prices',intensity_factor='Service intensity',
- policy_factor='Policy / financing rule',aggregate_cost_factor='Aggregate cost scaling',gdp_factor='GDP denominator')
-
 product_shapley <- function(initial,final,anchor) {
  # Symmetric allocation of interactions, including zero-valued factors.
  result<-rep(0,length(initial));active<-which(initial!=final);n<-length(active)
@@ -133,7 +61,7 @@ spending_contributions <- function(projection,start_year=2030L,end_year=2066L,me
      d$anchor_2030_bn<-amount[1];d$spending_bn<-amount;d$share_gdp<-100*amount/m$nominal_gdp
      if(n=='Interest')d$policy_factor<-amount/amount[1] else {
        d$population_factor<-m$population_index;d$price_factor<-m$domestic_price_index
-       d$real_unit_factor<-m$productivity_index^.5
+       d$wage_factor<-m$productivity_index^.5;d$real_unit_factor<-d$wage_factor
      }
      detail<-rbind(detail,d)
    }

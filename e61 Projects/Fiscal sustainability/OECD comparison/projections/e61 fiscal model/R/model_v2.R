@@ -12,7 +12,9 @@ load_inputs <- function(path='data') {
     purpose=read('historical_gfs_expenses_by_purpose.csv',FALSE),
     operating=read('historical_gfs_operating_statement.csv',FALSE),
     subfunctions=read('spending_subfunctions.csv',FALSE),subfunction_age_profiles=read('subfunction_age_profiles.csv'),
-    health_education_parameters=read('health_education_parameters.csv',FALSE))
+    health_education_parameters=read('health_education_parameters.csv',FALSE),
+    service_cost_parameters=read('service_cost_parameters.csv',FALSE),
+    historical_service_cost_parameters=read('historical_service_cost_parameters.csv',FALSE))
   x$official<-subset(x$official,level=='national')
   x$labour<-labour_projection(x)
   x$ndis<-ndis_projection(x)
@@ -20,15 +22,25 @@ load_inputs <- function(path='data') {
 }
 default_assumptions <- function() list(productivity=.012,ngdp_per_capita_growth=.032,
   population_growth=.012,hours_growth=0,
-  relative_price=.003,tot_change=0,policy='indexed',tax_policy='wage_indexed',interest_rate=.044,
+  tot_change=0,policy='indexed',tax_policy='wage_indexed',interest_rate=.044,
   tot_income_elasticity=.20,resource_elasticity=2,company_tot_elasticity=1,
-  super_real_return=.04,ndis_intensity_growth=.005,
-  health_cost_growth_adjustment=0,education_cost_growth_adjustment=0,aged_care_pass_through=.8,
-  ndis_pass_through=.85,social_pass_through=.65,other_services_pass_through=.7,
+  super_real_return=.04,interest_debt_sensitivity_bps=0,
+  service_cost_set='current',ndis_cost_rule='input_mix',transfer_cost_rule='current_proxy',
+  transfer_wage_share=.65,other_spending_rule='input_costs',
+  spending_gdp_targets=setNames(rep(NA_real_,8),names(spending_target_parameters())),
+  health_service_growth_adjustment=0,education_service_growth_adjustment=0,ndis_service_growth_adjustment=0,
+  aged_care_service_growth_adjustment=0,social_service_growth_adjustment=0,other_service_growth_adjustment=0,
+  health_service_productivity_share=.25,education_service_productivity_share=.25,ndis_service_productivity_share=0,
+  aged_care_service_productivity_share=0,social_service_productivity_share=0,other_service_productivity_share=0,
   anchor_year=2030L,end_year=2066L)
-cost_pass_through_parameters <- function() c(Health='health_cost_growth_adjustment',Education='education_cost_growth_adjustment',
-  `Aged care`='aged_care_pass_through',NDIS='ndis_pass_through',
-  `Other social protection`='social_pass_through',`Other public services`='other_services_pass_through')
+cost_pass_through_parameters <- function() c(Health='health_service_growth_adjustment',Education='education_service_growth_adjustment',
+  NDIS='ndis_service_growth_adjustment',`Aged care`='aged_care_service_growth_adjustment',
+  `Other social protection`='social_service_growth_adjustment',`Other public services`='other_service_growth_adjustment')
+service_productivity_parameters <- function() setNames(sub('service_growth_adjustment','service_productivity_share',
+  unname(cost_pass_through_parameters())),names(cost_pass_through_parameters()))
+spending_target_parameters <- function() c(Health='health',Education='education',NDIS='ndis',
+  `Aged care`='aged_care',`Age Pension`='age_pension',`Other social protection`='social',
+  `Other public services`='other_public',Defence='defence')
 policy_value <- function(x,n) x$policy$value[match(n,x$policy$parameter)]
 
 labour_projection <- function(x) {
@@ -109,7 +121,7 @@ economic_inputs <- function(inputs,assumptions=default_assumptions()) {
 
 macro_path <- function(inputs,assumptions=default_assumptions(),prepared=FALSE) {
   a<-modifyList(default_assumptions(),assumptions)
-  if(any(c(a$productivity,a$ngdp_per_capita_growth,a$population_growth,a$hours_growth,a$relative_price,a$tot_change)<=-1))stop('Growth rates must exceed -100%.')
+  if(any(c(a$productivity,a$ngdp_per_capita_growth,a$population_growth,a$hours_growth,a$tot_change)<=-1))stop('Growth rates must exceed -100%.')
   if(!prepared)inputs<-economic_inputs(inputs,a)
   d<-subset(inputs$labour,year>=a$anchor_year & year<=a$end_year)
   t<-d$year-a$anchor_year
@@ -132,7 +144,8 @@ macro_path <- function(inputs,assumptions=default_assumptions(),prepared=FALSE) 
     domestic_inflation=c(NA,diff(P)/head(P,-1)),gdp_deflator_index=P*income,
     real_income_index=Q*income,nominal_hourly_wage_index=P*A,
     nominal_earnings_index=P*A*d$average_hours/d$average_hours[1],
-    government_unit_price_index=P*A^a$other_services_pass_through*(1+a$relative_price)^t)
+    government_unit_price_index=P*(.3+.7*A/(1+a$other_service_productivity_share*a$productivity)^t)*
+      (1+a$other_service_growth_adjustment)^t)
 }
 
 profile_exposure <- function(x,profile,years) {
@@ -321,22 +334,32 @@ revenue_projection <- function(x,m,a,c) {
 }
 
 project_model <- function(inputs,assumptions=default_assumptions(),calibration=calibrate(inputs)) {
-  if(any(c('health_pass_through','education_pass_through')%in%names(assumptions)))
-    stop('Health/education use annual cost-growth adjustments now; replace obsolete pass-through fields with health_cost_growth_adjustment and education_cost_growth_adjustment (default zero).')
+  unknown<-setdiff(names(assumptions),names(default_assumptions()))
+  if(length(unknown))stop('Unknown scenario assumptions: ',paste(unknown,collapse=', '))
   c<-calibration;a<-modifyList(default_assumptions(),assumptions)
   x<-economic_inputs(inputs,a)
   stopifnot(a$anchor_year==2030,a$end_year==2066,a$policy%in%c('indexed','standards'))
+  stopifnot(a$service_cost_set%in%c('current','historical'),a$ndis_cost_rule=='input_mix',
+    a$transfer_cost_rule=='current_proxy',a$other_spending_rule%in%c('input_costs','gdp_share'),
+    length(a$transfer_wage_share)==1,is.finite(a$transfer_wage_share),a$transfer_wage_share>=0,a$transfer_wage_share<=1)
+  if(a$ndis_service_productivity_share!=0 || a$social_service_productivity_share!=0)
+    stop('NDIS and cash transfers do not receive service-efficiency deductions')
   m<-macro_path(x,a,prepared=TRUE);pp<-c$programmes;t<-m$year-2030
   # Change future cost responses only; never rebuild the common 2030 anchor.
-  pass_keys<-cost_pass_through_parameters()
-  for(n in names(pass_keys)) {
-    value<-a[[pass_keys[[n]]]]
-    scaling<-n%in%c('Health','Education')
-    lower<-if(scaling)-.02 else 0;upper<-if(scaling).02 else 1.5
-    if(length(value)!=1L||!is.finite(value)||value<lower||value>upper)
-      stop('Cost control out of range: ',n)
-    if(!scaling)pp$wage_pass_through[pp$programme==n]<-value
+  for(key in unname(cost_pass_through_parameters())) {
+    v<-a[[key]];if(length(v)!=1||!is.finite(v)||v< -0.02||v>.02)stop('Additional service-growth adjustment outside -2% to +2%')
   }
+  for(key in unname(service_productivity_parameters())) {
+    v<-a[[key]];if(length(v)!=1||!is.finite(v)||v<0||v>1.5)stop('Service productivity response outside 0 to 150%')
+  }
+  targets<-a$spending_gdp_targets
+  if(!is.numeric(targets)||is.null(names(targets))||anyDuplicated(names(targets))||
+     !all(names(targets)%in%names(spending_target_parameters()))||
+     any(!is.na(targets)&(!is.finite(targets)|targets<0|targets>100)))
+    stop('Spending GDP targets must be named percentages between 0 and 100, or NA for model projection')
+  if(length(a$interest_debt_sensitivity_bps)!=1||!is.finite(a$interest_debt_sensitivity_bps)||
+    a$interest_debt_sensitivity_bps<0||a$interest_debt_sensitivity_bps>5)
+    stop('Interest sensitivity must be between 0 and 5 basis points per percentage point of net debt/GDP')
   pension<-pension_path(x,m,a)
   spending<-project_primary_spending(x,m,a,c,pp,pension)
   parts<-spending$components
@@ -349,11 +372,17 @@ project_model <- function(inputs,assumptions=default_assumptions(),calibration=c
   m$net_capital_investment_bn<-c$nci0*m$population_index*m$domestic_price_index*m$productivity_index^.5
   m$net_financial_asset_acquisition_bn<-c(0,diff(m$financial_assets_bn))
   m$effective_interest_rate<-approx(c(2030,2040),c(c$implied_interest_rate,a$interest_rate),xout=m$year,rule=2)$y
+  m$base_interest_rate<-m$effective_interest_rate
+  m$debt_interest_adjustment<-m$net_debt_gap_pp<-rep(0,nrow(m))
   m$interest_bn<-m$gross_debt_bn<-m$net_debt_bn<-rep(NA_real_,nrow(m))
   m$interest_bn[1]<-c$official$public_debt_interest_billion_dollars
   m$gross_debt_bn[1]<-c$gross_debt0;m$net_debt_bn[1]<-c$gross_debt0-c$assets0
   m$stock_flow_adjustment_bn<-rep(0,nrow(m))
   for(i in 2:nrow(m)) {
+    m$net_debt_gap_pp[i]<-100*(m$net_debt_bn[i-1]/m$nominal_gdp[i-1]-(c$gross_debt0-c$assets0)/c$gdp0)
+    m$effective_interest_rate[i]<-max(0,m$base_interest_rate[i]+
+      a$interest_debt_sensitivity_bps/10000*m$net_debt_gap_pp[i])
+    m$debt_interest_adjustment[i]<-m$effective_interest_rate[i]-m$base_interest_rate[i]
     m$interest_bn[i]<-m$effective_interest_rate[i]*m$gross_debt_bn[i-1]
     borrowing<-m$primary_expense_bn[i]+m$interest_bn[i]+m$net_capital_investment_bn[i]-m$revenue_bn[i]
     gross<-m$gross_debt_bn[i-1]+borrowing+m$net_financial_asset_acquisition_bn[i]
@@ -420,9 +449,13 @@ scenario_attribution <- function(inputs,assumptions,calibration=calibrate(inputs
   assumptions<-modifyList(base,assumptions)
   groups<-list('Productivity'='productivity','NGDP per capita'='ngdp_per_capita_growth',
     'Population'='population_growth','Average hours'='hours_growth',
-    'Government service prices'='relative_price','Cost pass-through'=unname(cost_pass_through_parameters()),
+    'Service cost assumption set'='service_cost_set',
+    'Service productivity'=unname(service_productivity_parameters()),
+    'Additional service growth'=unname(cost_pass_through_parameters()),
     'Terms of trade'=c('tot_change','company_tot_elasticity'),
-    'Policy and financing'=c('policy','tax_policy','interest_rate','super_real_return','ndis_intensity_growth'))
+    'Fixed spending shares'='spending_gdp_targets',
+    'Policy and financing'=c('policy','tax_policy','interest_rate','super_real_return','interest_debt_sensitivity_bps',
+      'ndis_cost_rule','transfer_cost_rule','transfer_wage_share','other_spending_rule'))
   # Evaluate only groups that differ from the fixed reference. The Shapley dummy
   # property makes this identical to allocating all groups, with zero for defaults.
   active<-which(vapply(groups,function(keys)!isTRUE(all.equal(base[keys],assumptions[keys])),logical(1)))

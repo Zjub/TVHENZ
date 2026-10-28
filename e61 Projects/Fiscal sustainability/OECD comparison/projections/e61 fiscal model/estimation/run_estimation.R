@@ -1,0 +1,5 @@
+args<-commandArgs(FALSE);script<-sub('^--file=','',args[grepl('^--file=',args)][1])
+setwd(normalizePath(dirname(script),mustWork=TRUE))
+if('--acquire'%in%commandArgs(TRUE))source('01_acquire_sources.R')
+source('02_estimate.R')
+source('03_report.R')

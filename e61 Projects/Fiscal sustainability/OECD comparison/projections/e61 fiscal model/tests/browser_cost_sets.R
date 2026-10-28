@@ -1,0 +1,43 @@
+args<-commandArgs(FALSE);script<-sub('^--file=','',args[grepl('^--file=',args)][1])
+setwd(normalizePath(file.path(dirname(script),'..'),mustWork=TRUE))
+Sys.setenv(CHROMOTE_CHROME='C:/Program Files/Google/Chrome/Application/chrome.exe')
+b<-chromote::ChromoteSession$new(width=1500,height=1100);b$default_timeout<-45
+options(error=function(){try(b$close(),silent=TRUE);q(status=1,save='no')})
+js<-function(s)b$Runtime$evaluate(s,returnByValue=TRUE)$result$value
+wait<-function(s){for(i in 1:240){if(isTRUE(js(s)))return(invisible(TRUE));Sys.sleep(.25)};stop('Timeout: ',s)}
+dl<-function(id){v<-b$Runtime$evaluate(sprintf("fetch(document.getElementById('%s').href).then(r=>r.text())",id),awaitPromise=TRUE,returnByValue=TRUE)$result$value;read.csv(text=v)}
+slider<-function(id,v)js(sprintf("$('#%s').data('ionRangeSlider').update({from:%f});Shiny.setInputValue('%s',%f,{priority:'event'});true",id,v,id,v))
+b$Page$navigate(Sys.getenv('FISCAL_TEST_URL','http://127.0.0.1:7461'))
+wait("window.Shiny && Shiny.shinyapp && Shiny.shinyapp.$socket && !document.documentElement.classList.contains('shiny-busy')")
+js("document.getElementById('cost_pass_through_controls').open=true;$('a[data-value=components]').click();true")
+wait("document.querySelector('#cost_set_endpoints table')!==null && !document.documentElement.classList.contains('shiny-busy')")
+baseline<-dl('health_education_download')
+stopifnot(js("document.getElementById('health_additional_cost_growth').value==='0.5' && document.getElementById('education_additional_cost_growth').value==='0.5'"),
+ js("document.getElementById('health_service_productivity_share').value==='25' && document.getElementById('education_service_productivity_share').value==='25'"),
+ js("document.getElementById('ndis_cost_rule')===null && document.getElementById('transfer_cost_rule')===null && document.getElementById('ndis_service_productivity_share')===null && document.getElementById('social_service_productivity_share')===null"))
+stopifnot(baseline$cost_rule[baseline$id=='n_ndis']=='ndis_transfer',baseline$selected_additional_service_growth[baseline$id=='n_ndis']==.005)
+slider('health_additional_cost_growth',.7)
+wait("document.getElementById('health_service_growth_adjustment_defaults').innerText.includes('selected 0.70%') && !document.documentElement.classList.contains('shiny-busy')")
+v<-dl('health_education_download');stopifnot(all(subset(v,programme=='Health')$selected_additional_service_growth==.007),all(subset(v,programme=='Education')$selected_additional_service_growth==.005))
+js("document.getElementById('service_cost_set').selectize.setValue('historical');true")
+wait("document.getElementById('cost_set_summary').innerText.includes('Historical trend') && !document.documentElement.classList.contains('shiny-busy')")
+h<-dl('health_education_download');expected<-read.csv('data/historical_service_cost_parameters.csv')
+for(id in expected$id)stopifnot(abs(h$selected_additional_service_growth[h$id==id]-expected$additional_service_growth[expected$id==id])<1e-12)
+centre<-as.numeric(js("document.getElementById('health_additional_cost_growth').value"));slider('health_additional_cost_growth',centre+.2)
+wait("!document.documentElement.classList.contains('shiny-busy')")
+v<-dl('health_education_download');stopifnot(max(abs(subset(v,programme=='Health')$selected_additional_service_growth-subset(h,programme=='Health')$selected_additional_service_growth-.002))<1e-12)
+js("$('a[data-value=sector_ndis]').click();document.querySelector('#sector_ndis-section a[data-value=construction]').click();true")
+wait("document.querySelector('#sector_ndis-cost_comparison table')!==null && !document.documentElement.classList.contains('shiny-busy')")
+z<-dl('sector_ndis-annual_download');stopifnot(all(z$efficiency_factor==1),all(z$additional_service_growth==.005))
+js("document.getElementById('reset').click();$('a[data-value=components]').click();true")
+wait("document.getElementById('service_cost_set').value==='current' && document.getElementById('health_additional_cost_growth').value==='0.5' && document.getElementById('cost_set_summary').innerText.includes('Selected set: Current assumptions.') && document.getElementById('health_service_growth_adjustment_defaults').innerText.includes('adjustment +0.00 pp') && !document.documentElement.classList.contains('shiny-busy')")
+reset_data<-dl('health_education_download')
+if(!isTRUE(all.equal(reset_data,baseline,check.attributes=FALSE))){
+ print(all.equal(reset_data,baseline,check.attributes=FALSE))
+ print(reset_data[,c('id','baseline_additional_growth','additional_growth_adjustment','selected_additional_service_growth','selected_service_productivity_share')])
+ stop('Reset export differs from original defaults')
+}
+js("$('a[data-value=method]').click();true")
+wait("document.body.innerText.includes('These values are also arbitrary') && !document.documentElement.classList.contains('shiny-busy')")
+stopifnot(js("document.querySelectorAll('.shiny-output-error').length")==0)
+b$screenshot(filename='outputs/app_restored_transfers.png');b$close();cat('PASS: browser nonzero defaults, actual rates, historical differences, NDIS, methods and reset.\n')

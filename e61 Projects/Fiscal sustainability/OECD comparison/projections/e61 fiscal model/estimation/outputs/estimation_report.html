@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+  <meta charset="utf-8"/>
+  <title>Health and education: estimating spending assumptions</title>
+  <style>body{font-family:Arial,sans-serif;color:#193b46;max-width:1100px;margin:30px auto;line-height:1.45;font-size:14px}h1,h2{color:#087f84}h2{margin-top:26px}table{border-collapse:collapse;width:100%;font-size:11px;margin:14px 0}th,td{text-align:left;vertical-align:top;padding:7px;border-bottom:1px solid #ccd8db}th{background:#edf5f5}img{width:100%}.note{background:#edf5f5;padding:14px}pre{white-space:pre-wrap}a{color:#087f84}@page{size:A4;margin:15mm}@media print{body{margin:0;font-size:10pt}h2,h3{break-after:avoid}tr{break-inside:avoid}.page{break-before:page}img{max-height:245mm;object-fit:contain}a{overflow-wrap:anywhere}}</style>
+</head>
+<html>
+  <body>
+    <h1>Health and education: estimating spending assumptions</h1>
+    <p>Independent estimation pack | 2026-10-28 | financial years ending 2016-2025</p>
+    <div class="note">
+      <b>Purpose and status. </b>
+      Estimate historical net spending pressure conditional on the fiscal model's demographic and input-cost structure. The outputs are candidates for discussion. This workflow does not edit the fiscal model, change Shiny defaults, or deploy anything.
+    </div>
+    <h2>What is estimated</h2>
+    <p>We fit an exponential time trend to spending after removing demographic demand, general inflation and a stated wage-cost basket. The result combines service intensity, quality, coverage, technology, policy, unmodelled wage mix and measurement. It does not identify a separate causal service-productivity effect.</p>
+    <p>Calculator defaults: the runtime historical alternative uses the 25% productivity specification from the sensitivity output, selected by scripts/prepare_cost_defaults.R. That 25% share is arbitrary, not independently estimated. The zero-efficiency tables below remain a diagnostic specification; paired residuals at 25% are slightly higher. Current calculator cost-growth defaults are also arbitrary choices rather than fitted coefficients. This estimation workflow does not automatically install any set as defaults.</p>
+    <p>The central specification has zero service-productivity cost savings and uses all-industry hourly WPI. Alternative specifications use sector WPI or compensation per hour and service-productivity growth equal to 25% or 50% of observed aggregate productivity growth. Across ten groups, four time windows, three wage measures and three productivity assumptions, 360 specifications are exported.</p>
+    <h2>Consistent accounting identity</h2>
+    <pre>Spending_t = demographic demand_t x CPI_t x wage/efficiency basket_t x net residual_t
+log(net residual_t) = intercept + beta x (year - 2016) + error_t
+Estimated additional annual growth = exp(beta) - 1</pre>
+    <p>For an input basket, real unit cost is (1 - labour share) + labour share x real hourly wage index / service productivity index. All raw baskets and demographic subfunction weights refer to 2025; final time-series indices are rebased to 2016. General CPI is a deliberate proxy for the model's common domestic price index. Using a health-specific deflator here would remove part of the relative cost pressure we are trying to measure.</p>
+    <p>Aggregate demand and cost series are sums of subfunction amounts, not averages of growth rates. Ageing changes the mix of their contributions. Main estimates use ten annual levels and nine years of elapsed growth, with calendar time preserved when years are omitted.</p>
+    <h2>Results: additional growth beyond the specified drivers</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Function</th>
+          <th>Net residual (%/year)</th>
+          <th>Descriptive 95% lower</th>
+          <th>Upper</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Health</td>
+          <td>2.14</td>
+          <td>1.30</td>
+          <td>2.98</td>
+        </tr>
+        <tr>
+          <td>Education</td>
+          <td>1.78</td>
+          <td>1.35</td>
+          <td>2.22</td>
+        </tr>
+        <tr>
+          <td>Schools</td>
+          <td>2.29</td>
+          <td>2.03</td>
+          <td>2.55</td>
+        </tr>
+        <tr>
+          <td>Tertiary</td>
+          <td>1.22</td>
+          <td>0.56</td>
+          <td>1.89</td>
+        </tr>
+        <tr>
+          <td>Other education</td>
+          <td>1.18</td>
+          <td>-1.48</td>
+          <td>3.91</td>
+        </tr>
+        <tr>
+          <td>Hospitals</td>
+          <td>2.79</td>
+          <td>2.36</td>
+          <td>3.22</td>
+        </tr>
+        <tr>
+          <td>Primary/community care</td>
+          <td>1.03</td>
+          <td>-1.63</td>
+          <td>3.76</td>
+        </tr>
+        <tr>
+          <td>Referred medical services</td>
+          <td>0.69</td>
+          <td>-0.24</td>
+          <td>1.63</td>
+        </tr>
+        <tr>
+          <td>Medicines</td>
+          <td>0.79</td>
+          <td>-0.41</td>
+          <td>2.00</td>
+        </tr>
+        <tr>
+          <td>Other health / reconciliation</td>
+          <td>2.94</td>
+          <td>1.05</td>
+          <td>4.85</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Intervals use a one-lag Newey-West covariance and a small-sample t critical value. With only ten observations they are descriptive fitting diagnostics. They exclude uncertainty about demographics, input shares, policy, measurement and future structural change; they are not forecast uncertainty bands.</p>
+    <h2>Spending and demographic boundaries</h2>
+    <p>Health: four named blocks use AIHW current-dollar government funding from Commonwealth and state/local sources, excluding non-government funders. Hospitals combine public and private hospitals. Primary/community care comprises primary health care excluding benefit-paid pharmaceuticals. Referred medical services and benefit-paid pharmaceuticals are separate. Other health is ABS GFS Health less those four blocks; it includes accounting and classification differences and is not a pure service category. AIHW capital expenditure is not separately added to GFS operating expenses.</p>
+    <p>Hospital, medical and pharmaceutical demand use the same fixed IGR C12.10 age-cost profiles as the fiscal model, applied to historical ABS single-age populations. Primary/community and referred medical services share the medical profile. The health reconciliation block uses total population. These are age-cost proxies, not service counts: a historical change in morbidity, relative age costs or coverage remains in the residual.</p>
+    <p>Education: ABS consolidated operating expenses give schools, tertiary and other education. Demand uses ages 5-17 for schools, 18-24 for higher education, 15-64 for VET and total population for other education. A common tertiary residual is supplied to higher education and VET because this GFS history does not split them. Their different demand and cost rules remain. Applying the same residual to them is an explicit allocation assumption. These age proxies omit changes in enrolment, mature-age participation and other composition. Other education includes preschool, making total population a weak demand proxy.</p>
+    <p>Historical populations use the mean of opening and closing June single-age counts. CPI is the four-quarter financial-year average. Hourly WPI holds job quality approximately constant; compensation per hour includes composition and other remuneration. Neither automatically reproduces average weekly earnings. Employment and hours affect the broader model but are not separate multipliers for the labour required per service here.</p>
+    <h2 class="page">Observed residuals and fitted trends</h2>
+    <img src="residual_trends.png"/>
+    <h2 class="page">Sensitivity and interpretation</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Function</th>
+          <th>full_2016_2025</th>
+          <th>pre_covid_2016_2019</th>
+          <th>excluding_2020_2022</th>
+          <th>recent_2019_2025</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Health</td>
+          <td>2.14</td>
+          <td>2.11</td>
+          <td>1.94</td>
+          <td>1.69</td>
+        </tr>
+        <tr>
+          <td>Education</td>
+          <td>1.78</td>
+          <td>1.37</td>
+          <td>1.72</td>
+          <td>1.40</td>
+        </tr>
+        <tr>
+          <td>Schools</td>
+          <td>2.29</td>
+          <td>1.42</td>
+          <td>2.30</td>
+          <td>2.58</td>
+        </tr>
+        <tr>
+          <td>Tertiary</td>
+          <td>1.22</td>
+          <td>1.99</td>
+          <td>1.17</td>
+          <td>0.24</td>
+        </tr>
+        <tr>
+          <td>Other education</td>
+          <td>1.18</td>
+          <td>-0.63</td>
+          <td>0.74</td>
+          <td>-0.32</td>
+        </tr>
+        <tr>
+          <td>Hospitals</td>
+          <td>2.79</td>
+          <td>1.89</td>
+          <td>2.73</td>
+          <td>2.77</td>
+        </tr>
+        <tr>
+          <td>Primary/community care</td>
+          <td>1.03</td>
+          <td>0.29</td>
+          <td>0.35</td>
+          <td>-0.40</td>
+        </tr>
+        <tr>
+          <td>Referred medical services</td>
+          <td>0.69</td>
+          <td>0.27</td>
+          <td>0.41</td>
+          <td>0.28</td>
+        </tr>
+        <tr>
+          <td>Medicines</td>
+          <td>0.79</td>
+          <td>-2.42</td>
+          <td>0.85</td>
+          <td>2.50</td>
+        </tr>
+        <tr>
+          <td>Other health / reconciliation</td>
+          <td>2.94</td>
+          <td>8.66</td>
+          <td>2.87</td>
+          <td>1.40</td>
+        </tr>
+      </tbody>
+    </table>
+    <img src="window_sensitivity.png"/>
+    <p>Excluding 2020-2022 removes those observations, not lasting pandemic effects or policy shifts. The pre-COVID estimate has only four observations. Medicines are particularly sensitive to the estimation period; the health reconciliation and other education blocks are heterogeneous. School funding changes and health staffing, coverage and treatment changes are inside the estimates. This exercise does not econometrically remove those policy effects.</p>
+    <p>The aggregate health/education trends are cross-checks, not additional parameters to stack on top of subfunction trends. Applying all subfunction trend estimates will not exactly reproduce an independently fitted aggregate trend because composition and fitted residuals differ. The sensitivity CSV should be reviewed alongside these estimates before selecting long-run defaults.</p>
+    <h2>How to use the candidates</h2>
+    <p>candidate_service_cost_parameters.csv has the fiscal model's parameter fields plus estimation group, evidence class, adoption status and limitations. For review, compare each candidate with current settings, decide how much of historical policy/coverage growth should persist, and select a long-run rate. Service-productivity shares remain zero in the candidate file as an identification convention, not an empirical estimate. Increasing efficiency savings while retaining the same historical combined trend requires recalibrating the residual in this separate exercise; a prospective efficiency scenario should instead hold the selected residual fixed.</p>
+    <p>A 2% residual compounded for 36 years raises spending roughly 104% above the other drivers. This illustrates why an observed historical trend should not automatically become a central long-term assumption. In particular, the reconciliation-block estimates should not be presented as technical cost estimates.</p>
+    <h2 class="page">Provisional IGR rules for the remaining blocks</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Function</th>
+          <th>Published rule</th>
+          <th>Use in this model</th>
+          <th>IGR page</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>NDIS</td>
+          <td>After medium term, age/disability-specific average costs transition over five years to average weekly earnings</td>
+          <td>Use earnings-indexed unit costs as a transparent long-run scenario; current 85% labour basket plus 0.5% extra is a different assumption</td>
+          <td>309</td>
+        </tr>
+        <tr>
+          <td>Residential aged care</td>
+          <td>CPI plus historical real age-adjusted residential-care cost trend from 2037-38</td>
+          <td>No published scalar to copy; derive an explicitly labelled implied residual or estimate history separately</td>
+          <td>308</td>
+        </tr>
+        <tr>
+          <td>Home care</td>
+          <td>Separate age/sex utilisation and cost model; no common numerical extra-growth coefficient stated in reviewed appendix</td>
+          <td>No numerical IGR default available to copy directly</td>
+          <td>308</td>
+        </tr>
+        <tr>
+          <td>Age Pension</td>
+          <td>MARIA microsimulation of superannuation, assets, income and pension entitlements</td>
+          <td>Retain explicit pension module; IGR spending/GDP path is a benchmark, not a unit-cost parameter</td>
+          <td>309</td>
+        </tr>
+        <tr>
+          <td>DSP, Parenting Payment Single, Carer Payment</td>
+          <td>Higher of average weekly earnings and CPI; programme-specific recipient coverage</td>
+          <td>Published unit-cost rule can be adopted after transfer block is split by programme</td>
+          <td>311</td>
+        </tr>
+        <tr>
+          <td>JobSeeker, Youth Allowance, Austudy, Parenting Payment Partnered, FTB</td>
+          <td>CPI; programme-specific recipient coverage/unemployment/demography</td>
+          <td>Published CPI rule can be adopted after transfer block is split by programme</td>
+          <td>311</td>
+        </tr>
+        <tr>
+          <td>Parental Leave Pay</td>
+          <td>Ten-year historical weekly minimum-wage growth; births and take-up</td>
+          <td>Requires historical minimum-wage data; not a blanket wage index</td>
+          <td>311</td>
+        </tr>
+        <tr>
+          <td>Child Care Subsidy</td>
+          <td>Prices trend to CPI and hours growth to zero by end of medium term; age-specific coverage</td>
+          <td>CPI unit-cost rule is a possible long-run simplification with separate age/coverage assumptions</td>
+          <td>311</td>
+        </tr>
+        <tr>
+          <td>Other spending</td>
+          <td>Residual Commonwealth payments indexed to nominal GDP</td>
+          <td>Constant GDP-share option is available; applying it to consolidated residual is a scope assumption</td>
+          <td>312</td>
+        </tr>
+        <tr>
+          <td>GST transfers</td>
+          <td>Equals GST receipts plus pool boost; intergovernmental transfers consolidate out</td>
+          <td>Do not add as consolidated final expenditure</td>
+          <td>312</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The IGR supplies useful indexation rules, but generally not a single growth coefficient for each consolidated function. Commonwealth funding and consolidated service spending have different boundaries. Scheme-wide NDIS participant support costs are the appropriate comparator; Commonwealth contributions alone omit state funding.</p>
+    <p>NDIS translation: at 1.2% real earnings growth, zero service-productivity savings and an 85% labour input share, a constant extra rate of 0.15% annually would match the 36-year earnings-index endpoint. This is our derived calibration, not an IGR coefficient. It ignores the IGR's post-medium-term five-year transition and age/disability cost mix. The current 0.5% additional rate implies a different, faster cost path. A direct earnings-index rule is clearer than this endpoint approximation.</p>
+    <p>Aged care: the reviewed IGR appendix describes a fitted residential-care trend applied from 2037-38 but does not supply its numerical coefficient. Its total aged-care path cannot identify that coefficient independently of utilisation, age/sex costs, reforms and the home/residential mix. An endpoint residual derived using our demographics would be an e61 calibration to the IGR path. The current 0.3% remains an explicit judgement until separately estimated or calibrated.</p>
+    <p>Transfers: split the existing residual block before assigning CPI versus earnings indexation. A 65% earnings exposure is currently an e61 proxy, not a published IGR aggregate weight. Recipient shares and age/unemployment profiles matter alongside indexation. Age Pension should retain its explicit means-testing and wealth mechanism.</p>
+    <p>Other spending: the IGR residual follows nominal GDP. Our constant-GDP-share control can implement this as an illustrative scenario, but adopting it for consolidated other public services is a scope assumption. Do not add a separate wage/intensity premium on top of a fixed GDP-share total.</p>
+    <h2>Sources and reproducibility</h2>
+    <pre>Rscript run_estimation.R --acquire   # first run: cache sources and estimate
+Rscript run_estimation.R             # offline rebuild from the snapshot
+Rscript validate_estimation.R        # accounting, extraction and synthetic checks</pre>
+    <p>Dependencies: readxl, curl, ggplot2, htmltools. Snapshot bytes and MD5 checksums are in data/source_manifest.csv. Cached downloads and copied source inputs are not silently refreshed. PDF rendering is optional and uses an installed Chrome browser when BUILD_PDF=true. The estimation code does not source or run Shiny.</p>
+    <ul>
+      <li>
+        <a href="https://www.aihw.gov.au/reports/health-welfare-expenditure/health-expenditure-australia-2024-25/data">AIHW Health Expenditure Australia 2024-25</a>
+        : Datacube: AUS, Australian Government + State and local government, current amounts. Four named recurrent groups; exclude non-government and capital.
+      </li>
+      <li>
+        <a href="https://www.abs.gov.au/statistics/economy/government/government-finance-statistics-annual/2024-25">ABS GFS 2024-25</a>
+        : Table 4 Health; 2015-16 to 2024-25 consolidated all-government operating expenses.
+      </li>
+      <li>
+        <a href="https://www.abs.gov.au/statistics/economy/government/government-finance-statistics-annual/2024-25/55120DO095_202425.xlsx">ABS GFS Education Table 1</a>
+        : Rows 9-12 school, tertiary, other and total; 2015-16 to 2024-25.
+      </li>
+      <li>
+        <a href="https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/mar-2026">ABS estimated resident population</a>
+        : Table 59, Persons, single age 0-99 and 100+; mean of opening/closing June observations.
+      </li>
+      <li>
+        <a href="https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/jun-quarter-2025">ABS CPI June 2025</a>
+        : 640101, All groups Australia, index numbers; four-quarter FY mean.
+      </li>
+      <li>
+        <a href="https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/wage-price-index-australia">ABS WPI Table 5a</a>
+        : 634505a, financial-year total hourly rates excluding bonuses, private and public: all industries and sector alternatives.
+      </li>
+      <li>
+        <a href="https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product">ABS National Accounts Table 34</a>
+        : 5206034, GDP/hour index and compensation/hour. Productivity-index power is a sensitivity assumption, not an efficiency estimate.
+      </li>
+      <li>
+        <a href="https://treasury.gov.au/sites/default/files/2026-09/p2026-797917.pdf">2026 IGR Appendix A3</a>
+        : Printed pp 307-312, especially aged care 308, NDIS 309, transfers Table A3.1 p311, other p312.
+      </li>
+      <li>
+        <a href="https://www.ihacpa.gov.au/resources/national-hospital-cost-data-collection-public-sector-2023-24">IHACPA hospital input-cost shares</a>
+        : 2023-24 admitted acute labour cost mix; same scope proxy as fiscal model.
+      </li>
+      <li>
+        <a href="https://dataandreporting.blob.core.windows.net/anrdataportal/ANR-Documents/ANR2024/nationalreportonschoolinginaustralia_2024_Chapter9.pdf">ACARA school cost shares</a>
+        : 2024 Table 9.3 salary share excluding user cost of capital; same proxy as fiscal model.
+      </li>
+      <li>
+        <a href="https://www.education.gov.au/download/19832/finance-2024-financial-reports-higher-education-providers/43005/2024-university-finance-summary-information/pdf">Department of Education university finance</a>
+        : Finance 2024 Table 4 employee expenses / total; all-provider scope proxy.
+      </li>
+    </ul>
+    <p>Outputs also include the exact observed spending series, government-funder source rows, age populations, annual driver indices and exact annual log-change accounting. Parameters inherit the input-share source limitations recorded in the copied service_parameters.csv. These limitations remain even if the fitted trend is precisely estimated.</p>
+  </body>
+</html>
+</html>

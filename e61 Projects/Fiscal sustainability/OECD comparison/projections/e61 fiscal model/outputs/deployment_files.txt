@@ -2,8 +2,10 @@ app.R
 R/model.R
 R/model_v2.R
 R/spending_bottom_up.R
+R/service_costs.R
 R/igr_benchmarks.R
 R/international_debt.R
+R/sector_review.R
 data/processed/official_pbo_nfo_wide.csv
 data/processed/population_age_sex.csv
 data/processed/observed_labour_rates.csv
@@ -23,8 +25,11 @@ data/processed/subfunction_age_profiles.csv
 data/processed/imf_long_term_debt_projections.csv
 data/processed/oecd_debt_projections.csv
 data/spending_subfunctions.csv
+data/service_cost_parameters.csv
+data/historical_service_cost_parameters.csv
 data/health_education_parameters.csv
 documentation/spending_background.pdf
+documentation/health_education_estimation.pdf
 data/policy_parameters.csv
 data/ndis_incidence_2025.csv
 data/assumption_register.csv

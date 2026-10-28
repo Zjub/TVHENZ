@@ -35,8 +35,8 @@ processed<-c('official_pbo_nfo_wide.csv','population_age_sex.csv',
   'igr_pension_status_benchmark.csv','tax_head_history.csv','tax_elasticity_estimates.csv',
   'ato_income_distribution.csv','ndis_igr_benchmark.csv','igr_spending_benchmarks.csv','consolidation_bridge.csv','subfunction_age_profiles.csv',
   'imf_long_term_debt_projections.csv','oecd_debt_projections.csv')
-app_files<-c('app.R','R/model.R','R/model_v2.R','R/spending_bottom_up.R','R/igr_benchmarks.R','R/international_debt.R',file.path('data','processed',processed),
-  'data/spending_subfunctions.csv','data/health_education_parameters.csv','documentation/spending_background.pdf',
+app_files<-c('app.R','R/model.R','R/model_v2.R','R/spending_bottom_up.R','R/service_costs.R','R/igr_benchmarks.R','R/international_debt.R','R/sector_review.R',file.path('data','processed',processed),
+  'data/spending_subfunctions.csv','data/service_cost_parameters.csv','data/historical_service_cost_parameters.csv','data/health_education_parameters.csv','documentation/spending_background.pdf','documentation/health_education_estimation.pdf',
   'data/policy_parameters.csv','data/ndis_incidence_2025.csv','data/assumption_register.csv',
   'data/historical_gfs_expenses_by_purpose.csv','data/historical_gfs_operating_statement.csv',
   'data/raw/v2/download_manifest.csv')
