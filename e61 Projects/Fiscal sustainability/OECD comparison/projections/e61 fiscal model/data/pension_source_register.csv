@@ -1,0 +1,5 @@
+"file","url","locator","classification","md5"
+"dss_june_2026.xlsx","https://data.gov.au/data/dataset/dss-payment-demographic-data","Age Pension - Age; Payment by Rate","Sourced counts; calibrated age rates","2c283e257e8b5aacbccac3e72ad568c5"
+"ato_snapshot_2024.xlsx","https://data.gov.au/data/dataset/taxation-statistics-2023-24","Snapshot Table 5, sheet 12","Sourced positive-balance medians","272dff372d5b08eace4631dfdeadcd3e"
+"abs_age_2020.xlsx","https://www.abs.gov.au/statistics/economy/finance/household-income-and-wealth-australia/2019-20","Tables 10.2 and 10.3","Sourced marginal means; synthetic household allocation","c0af478feb159c57dd385bc312f63f8f"
+"abs_super_2020.xlsx","https://www.abs.gov.au/statistics/economy/finance/household-income-and-wealth-australia/2019-20","Tables 12.1 and 12.3","Sourced dispersion/coverage proxies; not a joint wealth distribution","4f3fd3886f7e4c202e70d8cc22a5c3d9"

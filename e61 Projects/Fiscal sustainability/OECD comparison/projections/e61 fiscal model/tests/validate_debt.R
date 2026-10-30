@@ -1,7 +1,7 @@
 # Debt and interest accounting under the per-capita structure.
 args<-commandArgs(FALSE);script<-sub('^--file=','',args[grepl('^--file=',args)][1])
 setwd(normalizePath(file.path(dirname(script),'..'),mustWork=TRUE))
-source('R/model.R');x<-load_inputs();cal<-calibrate(x);a<-default_assumptions()
+source('R/model.R');x<-load_inputs();cal<-calibrate(x);a<-default_assumptions();a$macro_mode<-'ngdp_per_capita'
 cases<-list(Reference=a,'Productivity 1.7 percent'=modifyList(a,list(productivity=.017)),
   'Population growth 1.6 percent'=modifyList(a,list(population_growth=.016)))
 paths<-lapply(cases,function(z)debt_diagnostics(project_model(x,z,cal)))

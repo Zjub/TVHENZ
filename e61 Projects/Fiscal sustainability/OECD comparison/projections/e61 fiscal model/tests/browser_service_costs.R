@@ -13,7 +13,7 @@ js("$('a[data-value=sector_health]').click();document.querySelector('#sector_hea
 wait("document.querySelector('#sector_health-cost_comparison table') !== null && !document.documentElement.classList.contains('shiny-busy')")
 before<-download('sector_health-evidence_download');annual0<-download('sector_health-annual_download')
 baseline<-js("document.getElementById('sector_health-summary').innerText")
-set_slider('health_service_productivity_share',50);set_slider('health_additional_cost_growth',1.5)
+set_slider('health_service_productivity_share',50);set_slider('health_remaining_growth',1.5)
 wait(paste0("document.getElementById('sector_health-summary').innerText !== ",jsonlite::toJSON(baseline,auto_unbox=TRUE)," && !document.documentElement.classList.contains('shiny-busy')"))
 after<-download('sector_health-evidence_download');annual<-download('sector_health-annual_download')
 stopifnot(all(after$selected_additional_service_growth==.015),
@@ -29,7 +29,7 @@ wait(paste0("document.getElementById('sector_health-summary').innerText !== ",js
 zero<-download('sector_health-annual_download');stopifnot(all(zero$real_unit_factor==1),identical(annual$nominal_gdp_bn,zero$nominal_gdp_bn))
 stopifnot(js("document.getElementById('relative_price')===null && document.getElementById('ndis_intensity')===null"),
  js("document.querySelectorAll('.shiny-output-error').length")==0)
-set_slider('productivity',1.2);set_slider('health_service_productivity_share',0);set_slider('health_additional_cost_growth',.5)
+set_slider('productivity',1.2);set_slider('health_service_productivity_share',0);set_slider('health_remaining_growth',.5)
 Sys.sleep(.5);wait("!document.documentElement.classList.contains('shiny-busy')")
 b$screenshot(filename='outputs/app_service_cost_framework.png',selector='body');b$close()
 cat('Browser service-cost controls, efficiency, additional growth, fixed comparators, GDP invariance and source downloads passed.\n')

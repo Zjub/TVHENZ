@@ -1,7 +1,7 @@
 args<-commandArgs(FALSE);script<-sub('^--file=','',args[grepl('^--file=',args)][1])
 setwd(normalizePath(file.path(dirname(script),'..'),mustWork=TRUE))
 source('R/model.R');source('R/sector_review.R')
-x<-load_inputs();cal<-calibrate(x);a<-default_assumptions();a$ndis_cost_rule<-'input_mix';b<-project_model(x,a,cal)
+x<-load_inputs();cal<-calibrate(x);a<-default_assumptions();a$macro_mode<-'ngdp_per_capita';a$health_specification<-'legacy';a$ndis_cost_rule<-'input_mix';b<-project_model(x,a,cal)
 checks<-data.frame(check=character(),passed=logical())
 check<-function(label,v){checks[nrow(checks)+1L,]<<-list(label,isTRUE(v));if(!isTRUE(v))stop(label)}
 near<-function(x,y)length(x)==length(y)&&all(is.finite(c(x,y)))&&max(abs(x-y))<1e-8

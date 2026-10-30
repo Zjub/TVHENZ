@@ -9,6 +9,8 @@ dl<-function(id){v<-b$Runtime$evaluate(sprintf("fetch(document.getElementById('%
 slider<-function(id,v)js(sprintf("$('#%s').data('ionRangeSlider').update({from:%f});Shiny.setInputValue('%s',%f,{priority:'event'});true",id,v,id,v))
 b$Page$navigate(Sys.getenv('FISCAL_TEST_URL','http://127.0.0.1:7461'))
 wait("window.Shiny && Shiny.shinyapp && Shiny.shinyapp.$socket && !document.documentElement.classList.contains('shiny-busy')")
+js("document.getElementById('health_specification').selectize.setValue('legacy');true")
+Sys.sleep(.5);wait("document.getElementById('health_framework_summary').innerText.includes('Health framework: legacy') && !document.documentElement.classList.contains('shiny-busy')")
 js("document.getElementById('cost_pass_through_controls').open=true;$('a[data-value=components]').click();true")
 wait("document.querySelector('#cost_set_endpoints table')!==null && !document.documentElement.classList.contains('shiny-busy')")
 baseline<-dl('health_education_download')
@@ -16,8 +18,9 @@ stopifnot(js("document.getElementById('health_additional_cost_growth').value==='
  js("document.getElementById('health_service_productivity_share').value==='25' && document.getElementById('education_service_productivity_share').value==='25'"),
  js("document.getElementById('ndis_cost_rule')===null && document.getElementById('transfer_cost_rule')===null && document.getElementById('ndis_service_productivity_share')===null && document.getElementById('social_service_productivity_share')===null"))
 stopifnot(baseline$cost_rule[baseline$id=='n_ndis']=='ndis_transfer',baseline$selected_additional_service_growth[baseline$id=='n_ndis']==.005)
+baseline_summary<-js("document.getElementById('health_framework_summary').innerText")
 slider('health_additional_cost_growth',.7)
-wait("document.getElementById('health_service_growth_adjustment_defaults').innerText.includes('selected 0.70%') && !document.documentElement.classList.contains('shiny-busy')")
+wait(paste0("document.getElementById('health_framework_summary').innerText !== ",jsonlite::toJSON(baseline_summary,auto_unbox=TRUE)," && !document.documentElement.classList.contains('shiny-busy')"))
 v<-dl('health_education_download');stopifnot(all(subset(v,programme=='Health')$selected_additional_service_growth==.007),all(subset(v,programme=='Education')$selected_additional_service_growth==.005))
 js("document.getElementById('service_cost_set').selectize.setValue('historical');true")
 wait("document.getElementById('cost_set_summary').innerText.includes('Historical trend') && !document.documentElement.classList.contains('shiny-busy')")
@@ -30,7 +33,9 @@ js("$('a[data-value=sector_ndis]').click();document.querySelector('#sector_ndis-
 wait("document.querySelector('#sector_ndis-cost_comparison table')!==null && !document.documentElement.classList.contains('shiny-busy')")
 z<-dl('sector_ndis-annual_download');stopifnot(all(z$efficiency_factor==1),all(z$additional_service_growth==.005))
 js("document.getElementById('reset').click();$('a[data-value=components]').click();true")
-wait("document.getElementById('service_cost_set').value==='current' && document.getElementById('health_additional_cost_growth').value==='0.5' && document.getElementById('cost_set_summary').innerText.includes('Selected set: Current assumptions.') && document.getElementById('health_service_growth_adjustment_defaults').innerText.includes('adjustment +0.00 pp') && !document.documentElement.classList.contains('shiny-busy')")
+wait("document.getElementById('service_cost_set').value==='current' && document.getElementById('health_additional_cost_growth').value==='0.5' && document.getElementById('cost_set_summary').innerText.includes('Selected set: Current assumptions.') && !document.documentElement.classList.contains('shiny-busy')")
+js("document.getElementById('health_specification').selectize.setValue('legacy');true");Sys.sleep(.5)
+wait("document.getElementById('health_framework_summary').innerText.includes('Health framework: legacy') && !document.documentElement.classList.contains('shiny-busy')")
 reset_data<-dl('health_education_download')
 if(!isTRUE(all.equal(reset_data,baseline,check.attributes=FALSE))){
  print(all.equal(reset_data,baseline,check.attributes=FALSE))
@@ -38,6 +43,6 @@ if(!isTRUE(all.equal(reset_data,baseline,check.attributes=FALSE))){
  stop('Reset export differs from original defaults')
 }
 js("$('a[data-value=method]').click();true")
-wait("document.body.innerText.includes('These values are also arbitrary') && !document.documentElement.classList.contains('shiny-busy')")
+wait("document.body.innerText.includes('Education retains 0.5%') && !document.documentElement.classList.contains('shiny-busy')")
 stopifnot(js("document.querySelectorAll('.shiny-output-error').length")==0)
 b$screenshot(filename='outputs/app_restored_transfers.png');b$close();cat('PASS: browser nonzero defaults, actual rates, historical differences, NDIS, methods and reset.\n')

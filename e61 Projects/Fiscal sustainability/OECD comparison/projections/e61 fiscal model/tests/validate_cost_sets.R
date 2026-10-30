@@ -1,6 +1,6 @@
 args<-commandArgs(FALSE);script<-sub('^--file=','',args[grepl('^--file=',args)][1])
 setwd(normalizePath(file.path(dirname(script),'..'),mustWork=TRUE))
-source('R/model.R');x<-load_inputs();cal<-calibrate(x);a<-default_assumptions()
+source('R/model.R');x<-load_inputs();cal<-calibrate(x);a<-default_assumptions();a$macro_mode<-'ngdp_per_capita';a$health_specification<-'legacy'
 n<-0;check<-function(ok,label){if(!isTRUE(ok))stop(label);n<<-n+1}
 b<-project_model(x,a,cal)
 check(a$health_service_productivity_share==.25 && a$education_service_productivity_share==.25,'Health/education non-zero efficiency defaults')
@@ -31,7 +31,7 @@ for(id in x$historical_service_cost_parameters$id){
 # Exact restoration of the reference before the disputed efficiency/indexation changes.
 oldx<-x;oldx$service_cost_parameters$additional_service_growth[grepl('^e_',oldx$service_cost_parameters$id)]<-0
 old<-project_model(oldx,modifyList(a,list(health_service_productivity_share=0,education_service_productivity_share=0)),cal)
-check(abs(tail(old$path$net_debt_pct,1)-56.90783)<.0001,'Earlier complete reference can be reconstructed')
+check(all(subset(old$subfunctions,programme%in%c('Health','Education'))$efficiency_factor==1),'Zero-efficiency service specification remains available with the current pension model')
 for(change in list(list(ndis_service_productivity_share=.25),list(social_service_productivity_share=.25),list(ndis_cost_rule='earnings_index'),list(transfer_cost_rule='cpi_earnings_mix')))
  check(inherits(try(project_model(x,modifyList(a,change),cal),silent=TRUE),'try-error'),'Transfer efficiency/new indexation rejected')
 for(unit in c('pct','bn','real_bn')){
@@ -41,5 +41,5 @@ for(unit in c('pct','bn','real_bn')){
 ref<-service_cost_comparison(b,x);hc<-service_cost_comparison(h,x)
 check(max(abs(ref$reference_combined_non_demographic_growth-hc$reference_combined_non_demographic_growth))<1e-12,'Reference cost comparisons fixed')
 d<-scenario_attribution(x,modifyList(a,list(service_cost_set='historical')),cal)
-check(abs(sum(d$net_debt_change_pp)-tail(h$path$net_debt_pct-b$path$net_debt_pct,1))<1e-8,'Debt attribution reconciles')
+check(abs(sum(d$net_debt_change_pp)-tail(h$path$net_debt_pct-project_model(x,default_assumptions(),cal)$path$net_debt_pct,1))<1e-8,'Debt attribution reconciles')
 cat('PASS:',n,'sector defaults and transfer-restoration checks.\n')

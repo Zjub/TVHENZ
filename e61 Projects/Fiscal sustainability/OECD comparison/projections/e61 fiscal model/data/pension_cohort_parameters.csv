@@ -1,0 +1,5 @@
+"parameter","value","classification","interpretation"
+"retirement_consumption_rate",0.05,"Judgement; not estimated from HILDA","Annual consumption from opening super plus liquid wealth after retirement; other income consumed separately"
+"liquid_real_return",0.01,"Judgement; not estimated from HILDA","Real return on non-super liquid assets; separate from the super return slider"
+"property_income_yield",0.03,"Judgement; not estimated from HILDA","Annual income from net investment property/business proxy"
+"open_age_survival",0.65,"Judgement; not estimated from HILDA","Annual relative survival allocation within the sourced 100+ population; not additional population mortality"

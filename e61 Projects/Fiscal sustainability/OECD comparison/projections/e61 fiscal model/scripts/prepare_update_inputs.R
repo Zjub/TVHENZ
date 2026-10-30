@@ -41,36 +41,8 @@ bridge$expense_consolidation_adjustment_bn<-nat$expenses_billion_dollars-bridge$
 bridge$interpretation<-'Net elimination plus local-government/coverage adjustments; not a pure transfer estimate'
 save(bridge,'consolidation_bridge.csv')
 
-# 2026 IGR age distribution (single years at 2025,2036,2066) and annual growth.
-# Annual age shares are interpolated explicitly; not an independently estimated
-# cohort-component population model. Centre for Population supplies sex ratios.
-age<-igr(8,'C8.6',skip=2)
-ages<-pmin(100L,as.integer(sub('[^0-9].*$','',as.character(age[[1]]))))
-keep<-is.finite(ages);ages<-ages[keep]
-age_mat<-sapply(c(2,5,8),function(j)as.numeric(age[[j]][keep]))
-age_mat<-sweep(age_mat,2,colSums(age_mat),'/')
-gr<-igr(8,'C8.1',skip=1);igr_pop<-igr(8,'C8.2',skip=1)
-growth<-data.frame(year=fy(gr[[1]]),growth=as.numeric(gr[[5]])/100)
-pop0<-as.numeric(igr_pop[[2]][fy(igr_pop[[1]])==2025])*1e6
-totals<-data.frame(year=2025:2066,population=NA_real_);totals$population[1]<-pop0
-for(i in 2:nrow(totals))totals$population[i]<-totals$population[i-1]*(1+growth$growth[match(totals$year[i],growth$year)])
-centre<-as.data.table(read_sheet('population_statement_2025.xlsx','PROJECTIONS'))
-centre<-centre[Geography=='Australia' & Sex %in% c('Male','Female','Males','Females')]
-centre[, `:=`(year=fy(get('Financial year')),age=pmin(100L,as.integer(sub('[^0-9].*$','',Age))))]
-sex_names<-unique(centre$Sex)
-stopifnot(length(sex_names)==2,nrow(centre)>0)
-pop<-rbindlist(lapply(ages,function(a) {
-  share<-approx(c(2025,2036,2066),age_mat[match(a,ages),],xout=totals$year,rule=2)$y
-  sx<-centre[age==a]
-  female<-sx[grepl('Female',Sex)]
-  male<-sx[grepl('Male',Sex)]
-  fshare<-female$Value/(female$Value+male$Value[match(female$year,male$year)])
-  fs<-approx(female$year,fshare,xout=totals$year,rule=2)$y
-  rbind(data.table(year=totals$year,age=a,sex='Female',population=totals$population*share*fs),
-        data.table(year=totals$year,age=a,sex='Male',population=totals$population*share*(1-fs)))
-}))
-# The interpolated shares still sum exactly to one, up to machine precision.
-save(pop,'population_age_sex.csv');save(totals,'population_totals.csv')
+# Official annual IGR age/sex projections, plus the 2025 pre-projection bridge.
+source('R/prepare_annual_population.R');prepare_annual_population(raw)
 
 # Observed sex/age participation and unemployment, April 2025 to March 2026.
 lf_rows<-list()

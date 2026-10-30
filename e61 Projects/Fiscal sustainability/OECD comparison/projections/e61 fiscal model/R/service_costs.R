@@ -10,9 +10,19 @@ effective_service_parameters <- function(x,a) {
    p$growth_evidence[k]<-paste('Historical net residual, 2016-2025, conditional on arbitrary 25% service-productivity assumption;',h$evidence_class)
  }
  p$cost_rule[p$id=='n_ndis']<-'ndis_transfer'
+ if(a$health_specification=='income_costs'){
+   r<-health_pressure_base(x,a);k<-match(names(r),p$id)
+   centre<-health_pressure_centre(x,a)
+   p$additional_service_growth[k]<-unname(r)+a$health_remaining_growth-centre
+   p$growth_evidence[k]<-switch(a$health_pressure_source,
+     assumed='Assumed remaining real pressures; replaces the provisional health allowance',
+     subfunctions='Re-estimated 2016-2025 subfunction residual after income, demography, CPI and costs; fixed elasticity 0.8, efficiency share 25%',
+     aggregate_long='1999-2025 national-accounts GFCE residual; aggregate scope/allocation proxy for GFS subfunctions')
+ }
  p
 }
 service_cost_factors <- function(z,m,a) {
+ if(z$programme=='Health' && a$health_specification=='income_costs')return(health_cost_factors(z,m,a))
  t<-m$year-a$anchor_year;programme<-z$programme
  theta<-z$service_productivity_share+a[[service_productivity_parameters()[[programme]]]]
  r<-z$additional_service_growth+a[[cost_pass_through_parameters()[[programme]]]]
@@ -50,7 +60,8 @@ project_primary_spending <- function(x,m,a,cal,pp,pension) {
    s<-spec[j,];q<-pp[match(s$programme,pp$programme),]
    exposure<-subfunction_demand(x,s$profile,m$year);exposure<-exposure/exposure[1]
    pop<-m$population_index;age<-exposure/pop;price<-m$domestic_price_index
-   coverage<-wage<-efficiency<-intensity<-target<-rep(1,nrow(m))
+   coverage<-wage<-efficiency<-intensity<-target<-income<-rep(1,nrow(m))
+   income_elasticity<-0;real_wage_cpi<-premium<-health_productivity<-rep(NA_real_,nrow(m))
    L<-theta<-service_growth<-r<-NA_real_;rule<-'Own policy rule'
    if(s$id%in%hp$id){
      z<-hp[match(s$id,hp$id),];z$programme<-s$programme;f<-service_cost_factors(z,m,a)
@@ -58,6 +69,10 @@ project_primary_spending <- function(x,m,a,cal,pp,pension) {
      coverage<-(1+z$coverage_growth)^(m$year-a$anchor_year)
      L<-z$wage_weight;theta<-f$service_productivity_share[1]
      service_growth<-f$service_productivity_growth[1];r<-f$additional_service_growth[1];rule<-z$cost_rule
+     if('income_factor'%in%names(f)){
+       income<-f$income_factor;price<-f$health_price_index;income_elasticity<-a$health_income_elasticity
+       real_wage_cpi<-f$health_real_wage_cpi_index;premium<-f$health_wage_premium_index;health_productivity<-f$health_productivity_index
+     }
    }
    if(s$programme=='Age Pension'){
      coverage<-pension$coverage/pension$coverage[1]
@@ -67,13 +82,15 @@ project_primary_spending <- function(x,m,a,cal,pp,pension) {
      pop[]<-age[]<-price[]<-1
      target<-m$nominal_gdp*approx(c(2030,2035),c(q$anchor_2030_bn/cal$gdp0,.025),xout=m$year,rule=2)$y/s$anchor_2030_bn
    }
-   value<-s$anchor_2030_bn*pop*age*coverage*price*wage*efficiency*intensity*target
+   value<-s$anchor_2030_bn*pop*age*coverage*price*income*wage*efficiency*intensity*target
    data.frame(year=m$year,programme=s$programme,id=s$id,subfunction=s$subfunction,
      anchor_2030_bn=s$anchor_2030_bn,spending_bn=value,share_gdp=100*value/m$nominal_gdp,
      exposure_index=exposure,coverage_index=coverage,cost_pass_through=NA_real_,
      wage_weight=L,service_productivity_share=theta,service_productivity_growth=service_growth,
      additional_service_growth=r,cost_rule=rule,population_factor=pop,age_factor=age,
      coverage_factor=coverage,price_factor=price,wage_factor=wage,efficiency_factor=efficiency,
+     income_factor=income,income_elasticity=income_elasticity,real_gdp_per_capita_index=m$real_output_index/m$population_index,
+     health_real_wage_cpi_index=real_wage_cpi,health_wage_premium_index=premium,health_productivity_index=health_productivity,
      real_unit_factor=wage*efficiency,intensity_factor=intensity,policy_factor=target,
      relative_price_factor=1,aggregate_cost_factor=1)
  }))
@@ -96,7 +113,7 @@ project_primary_spending <- function(x,m,a,cal,pp,pension) {
        # A positive policy target can fund a function whose modelled eligibility
        # has fallen to zero. Allocate by anchor shares and record the policy rule.
        for(f in c('population_factor','age_factor','coverage_factor','price_factor',
-                   'wage_factor','efficiency_factor','intensity_factor'))detail[k,f]<-1
+                   'income_factor','wage_factor','efficiency_factor','intensity_factor'))detail[k,f]<-1
        detail$real_unit_factor[k]<-1
        detail$spending_bn[k]<-desired*detail$anchor_2030_bn[k]/sum(detail$anchor_2030_bn[k])
        detail$policy_factor[k]<-detail$spending_bn[k]/detail$anchor_2030_bn[k]
@@ -119,7 +136,7 @@ project_primary_spending <- function(x,m,a,cal,pp,pension) {
 }
 
 spending_factor_labels <- function() c(population_factor='Population size',age_factor='Age / cohort demand',
- coverage_factor='Coverage / eligibility',price_factor='General prices',
+ coverage_factor='Coverage / eligibility',price_factor='General prices',income_factor='Income-related demand',
  wage_factor='Real wages / funding indexation',efficiency_factor='Service productivity',
  intensity_factor='Additional service growth',policy_factor='Policy / financing rule',gdp_factor='GDP denominator')
 
@@ -133,17 +150,21 @@ service_cost_comparison <- function(projection,inputs) {
  refm<-macro_path(inputs,default_assumptions())
  rows<-lapply(seq_len(nrow(p)),function(i){z<-p[i,];f<-service_cost_factors(z,m,a)
    input_growth<-tail(f$real_unit_factor,1)^(1/t)-1
-   combined<-tail(f$real_unit_factor*f$intensity_factor,1)^(1/t)-1
+   inc<-if('income_factor'%in%names(f))f$income_factor else rep(1,nrow(f))
+   combined<-tail(inc*f$real_unit_factor*f$intensity_factor,1)^(1/t)-1
    refp<-effective_service_parameters(inputs,default_assumptions())
    zref<-refp[match(z$id,refp$id),];zref$programme<-z$programme
    fref<-service_cost_factors(zref,refm,default_assumptions())
-   reference_growth<-tail(fref$real_unit_factor*fref$intensity_factor,1)^(1/t)-1
+   inc_ref<-if('income_factor'%in%names(fref))fref$income_factor else rep(1,nrow(fref))
+   reference_growth<-tail(inc_ref*fref$real_unit_factor*fref$intensity_factor,1)^(1/t)-1
    benchmark<-switch(z$benchmark_rule,earnings=g,school_index=.75*g,cpi_grants=0,vet_index=.6975*g,NA_real_)
    data.frame(z,selected_service_productivity_share=f$service_productivity_share[1],
      selected_service_productivity_growth=f$service_productivity_growth[1],
      selected_additional_service_growth=f$additional_service_growth[1],
      baseline_additional_growth=z$additional_service_growth,
-     additional_growth_adjustment=a[[cost_pass_through_parameters()[[z$programme]]]],
+     additional_growth_adjustment=if(z$programme=='Health' && a$health_specification=='income_costs')0 else a[[cost_pass_through_parameters()[[z$programme]]]],
+     selected_income_elasticity=if(z$programme=='Health' && a$health_specification=='income_costs')a$health_income_elasticity else 0,
+     income_growth=tail(inc,1)^(1/t)-1,
      real_unit_growth=input_growth,combined_non_demographic_growth=combined,
      reference_combined_non_demographic_growth=reference_growth,
      reference_benchmark_growth=benchmark,
@@ -158,6 +179,8 @@ service_cost_comparison <- function(projection,inputs) {
 
 format_service_cost_comparison <- function(d) data.frame(Subfunction=d$subfunction,
  Rule=d$cost_rule,'Labour/index weight (%)'=round(100*d$wage_weight,2),
+ 'Income elasticity'=d$selected_income_elasticity,
+ 'Income-related growth (%/yr)'=round(100*d$income_growth,2),
  'Service productivity / economy (%)'=round(100*d$selected_service_productivity_share,1),
  'Baseline additional growth (%/yr)'=round(100*d$baseline_additional_growth,2),
  'Aggregate adjustment (pp/yr)'=round(100*d$additional_growth_adjustment,2),

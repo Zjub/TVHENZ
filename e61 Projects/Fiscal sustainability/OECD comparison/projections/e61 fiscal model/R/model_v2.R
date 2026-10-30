@@ -1,5 +1,5 @@
 # Model update 1-4. Monetary amounts AUD bn; years are financial-year ending years.
-load_inputs <- function(path='data') {
+load_inputs <- function(path='data',include_pension=TRUE) {
   read <- function(f,processed=TRUE) read.csv(file.path(path,if(processed)'processed' else '',f),
     check.names=FALSE,stringsAsFactors=FALSE)
   x<-list(official=read('official_pbo_nfo_wide.csv'),population=read('population_age_sex.csv'),
@@ -14,19 +14,31 @@ load_inputs <- function(path='data') {
     subfunctions=read('spending_subfunctions.csv',FALSE),subfunction_age_profiles=read('subfunction_age_profiles.csv'),
     health_education_parameters=read('health_education_parameters.csv',FALSE),
     service_cost_parameters=read('service_cost_parameters.csv',FALSE),
-    historical_service_cost_parameters=read('historical_service_cost_parameters.csv',FALSE))
+    historical_service_cost_parameters=read('historical_service_cost_parameters.csv',FALSE),
+    health_income_residuals=read('health_income_residuals.csv',FALSE))
+  if(include_pension){
+    x$pension_cohort_seed<-read('pension_cohort_seed_2030.csv',FALSE)
+    x$pension_cohort_parameters<-read('pension_cohort_parameters.csv',FALSE)
+    x$pension_public_age<-read('pension_public_age.csv',FALSE)
+    x$pension_initial_calibration<-read('pension_initial_calibration.csv',FALSE)
+    x$pension_sources<-read('pension_source_register.csv',FALSE)
+    x$pension_seed_signature<-unname(tools::md5sum(file.path(path,'pension_cohort_seed_2030.csv')))
+  }
   x$official<-subset(x$official,level=='national')
   x$labour<-labour_projection(x)
   x$ndis<-ndis_projection(x)
+  x$health_pressure_weights<-subset(calibrate(x)$subfunctions,programme=='Health')
   x
 }
 default_assumptions <- function() list(productivity=.012,ngdp_per_capita_growth=.032,
-  population_growth=.012,hours_growth=0,
+  population_growth=.012,hours_growth=0,macro_mode='prices',domestic_price_growth=.025,
   tot_change=0,policy='indexed',tax_policy='wage_indexed',interest_rate=.044,
   tot_income_elasticity=.20,resource_elasticity=2,company_tot_elasticity=1,
   super_real_return=.04,interest_debt_sensitivity_bps=0,
   service_cost_set='current',ndis_cost_rule='input_mix',transfer_cost_rule='current_proxy',
   transfer_wage_share=.65,other_spending_rule='input_costs',
+  health_specification='income_costs',health_income_elasticity=.8,health_remaining_growth=0,
+  health_pressure_source='assumed',health_wage_premium=0,health_cpi_wedge=0,
   spending_gdp_targets=setNames(rep(NA_real_,8),names(spending_target_parameters())),
   health_service_growth_adjustment=0,education_service_growth_adjustment=0,ndis_service_growth_adjustment=0,
   aged_care_service_growth_adjustment=0,social_service_growth_adjustment=0,other_service_growth_adjustment=0,
@@ -121,23 +133,35 @@ economic_inputs <- function(inputs,assumptions=default_assumptions()) {
 
 macro_path <- function(inputs,assumptions=default_assumptions(),prepared=FALSE) {
   a<-modifyList(default_assumptions(),assumptions)
-  if(any(c(a$productivity,a$ngdp_per_capita_growth,a$population_growth,a$hours_growth,a$tot_change)<=-1))stop('Growth rates must exceed -100%.')
+  if(length(a$macro_mode)!=1 || !a$macro_mode%in%c('ngdp_per_capita','prices'))stop('Choose NGDP per capita or price growth mode.')
+  for(key in c('productivity','ngdp_per_capita_growth','population_growth','hours_growth','tot_change','domestic_price_growth'))
+    if(length(a[[key]])!=1 || !is.finite(a[[key]]) || a[[key]]<=-1)stop('Growth rates must be finite and exceed -100%.')
   if(!prepared)inputs<-economic_inputs(inputs,a)
   d<-subset(inputs$labour,year>=a$anchor_year & year<=a$end_year)
   t<-d$year-a$anchor_year
   A<-(1+a$productivity)^t; Q<-d$total_hours/d$total_hours[1]*A
   T<-(1+a$tot_change)^pmin(t/10,1);income<-T^a$tot_income_elasticity
   g0<-inputs$official$nominal_gdp_billion[inputs$official$year==2030]
-  # GDP is determined only by population and nominal GDP per capita. Neither
+  # Choose the nominal closure: fixed NGDP/person, or fixed domestic prices. In NGDP mode neither
   # productivity nor hours can change it when these two inputs are fixed.
-  per_capita<-(1+a$ngdp_per_capita_growth)^t
-  gdp<-g0*(d$population/d$population[1])*per_capita
-  P<-(gdp/g0)/(Q*income)
+  if(a$macro_mode=='ngdp_per_capita'){
+    per_capita<-(1+a$ngdp_per_capita_growth)^t
+    gdp<-g0*(d$population/d$population[1])*per_capita
+    P<-(gdp/g0)/(Q*income)
+  } else {
+    P<-(1+a$domestic_price_growth)^t
+    gdp<-g0*Q*P*income
+    per_capita<-(gdp/g0)/(d$population/d$population[1])
+  }
   data.frame(year=d$year,population=d$population,population_index=d$population/d$population[1],
     employed=d$employed,employed_index=d$employed/d$employed[1],participation_rate=d$participation,
+    labour_force=d$labour_force,population_15plus=d$population_15plus,
+    employment_rate=d$employed/d$population_15plus,employment_population_ratio=d$employed/d$population,
+    unemployment_rate=1-d$employed/d$labour_force,
     average_hours=d$average_hours,average_hours_index=d$average_hours/d$average_hours[1],
     labour_index=d$total_hours/d$total_hours[1],productivity_index=A,real_output_index=Q,
     nominal_gdp_per_capita=gdp*1e9/d$population,nominal_gdp_per_capita_index=per_capita,
+    nominal_gdp_per_capita_growth=c(NA,diff(per_capita)/head(per_capita,-1)),
     hours_per_resident=d$total_hours/d$population,
     domestic_price_index=P,tot_index=T,income_effect=income,nominal_gdp=gdp,
     nominal_gdp_growth=c(NA,diff(gdp)/head(gdp,-1)),real_growth=c(NA,diff(Q)/head(Q,-1)),
@@ -199,54 +223,7 @@ pension_entitlement <- function(x,financial_assets,other_assets,other_income_ann
   pmax(0,max_fort-pmax(asset_cut,income_cut))*26/n
 }
 
-pension_path <- function(x,m,a) {
-  # Representative cohort model: actual rules, age eligibility and SG accumulation;
-  # distribution is synthetic, calibrated only to the 2026 IGR starting status mix.
-  # It is not household microsimulation or a fitted annual coverage decline.
-  shares<-subset(x$pension_benchmark,year==2026)[,c('full','assets_tested','income_tested','no_pension')]
-  shares<-as.numeric(shares);shares<-shares/sum(shares)
-  d<-expand.grid(age=67:100,status=1:4,couple=c(FALSE,TRUE),homeowner=c(FALSE,TRUE))
-  d$weight<-shares[d$status]*ifelse(d$couple,.65,.35)*ifelse(d$homeowner,.75,.25)
-  free<-x$policy$value[match(paste0('asset_free_',ifelse(d$couple,'couple','single'),'_',ifelse(d$homeowner,'home','renter')),x$policy$parameter)]
-  max_fort<-ifelse(d$couple,2*policy_value(x,'pension_couple_each_fortnight'),policy_value(x,'pension_single_fortnight'))
-  taper<-policy_value(x,'asset_taper_fortnight')
-  assets<-ifelse(d$status==1,.3*free,ifelse(d$status==2,free+.5*max_fort/taper,
-    ifelse(d$status==3,.3*free,1.15*(free+max_fort/taper))))
-  # Solve the income-tested archetype for a half-rate pension at calibration.
-  deem_free<-ifelse(d$couple,policy_value(x,'deeming_threshold_couple'),policy_value(x,'deeming_threshold_single'))
-  deemed<-pmin(.8*assets,deem_free)*policy_value(x,'deeming_lower')+pmax(.8*assets-deem_free,0)*policy_value(x,'deeming_upper')
-  taper_income<-ifelse(d$couple,2*policy_value(x,'income_taper_couple_each'),policy_value(x,'income_taper_single'))
-  other_income<-ifelse(d$status==3,pmax(0,(ifelse(d$couple,policy_value(x,'income_free_couple'),policy_value(x,'income_free_single'))+.5*max_fort/taper_income)*26-deemed),0)
-  # Policy parameters are September 2026; uprate price thresholds and pensions to 2030.
-  P0<-1.025^4;W0<-(1.025*1.012)^4
-  taxable_mean<-weighted.mean(x$income_distribution$mean_income,x$income_distribution$count)*(1.025*1.012)^6
-  values<-coverage<-numeric(nrow(m))
-  for(i in seq_len(nrow(m))) {
-    t<-m$year[i]-2030;retire_year<-m$year[i]-d$age+67
-    extra_years<-pmax(0,retire_year-2030)
-    rr<-a$super_real_return
-    annuity<-if(abs(rr)<1e-9)extra_years else ((1+rr)^extra_years-1)/rr
-    saving<-taxable_mean*policy_value(x,'super_guarantee')*(1-policy_value(x,'super_contributions_tax'))*
-      annuity*(1+a$productivity)^(extra_years/2)*ifelse(d$couple,2,1)
-    retired_years<-pmin(t,pmax(d$age-67,0))
-    draw<-(1+rr-policy_value(x,'retirement_drawdown'))^retired_years
-    P<-P0*m$domestic_price_index[i]
-    W<-W0*max(m$domestic_price_index[1:i],m$nominal_earnings_index[1:i])
-    if(a$policy=='standards') {
-      per_person<-pension_entitlement(x,.8*assets*P0,.2*assets*P0,other_income*P0,d$couple,d$homeowner,P0,W0)*W/W0
-    } else {
-      per_person<-pension_entitlement(x,(.8*assets*P0+saving)*draw*m$domestic_price_index[i],
-        .2*assets*P0*m$domestic_price_index[i],other_income*P,
-        d$couple,d$homeowner,P,W)
-    }
-    pa<-aggregate(population~age,subset(x$population,year==m$year[i] & age>=67),sum)
-    people<-pa$population[match(d$age,pa$age)]*d$weight
-    values[i]<-sum(people*per_person)
-    coverage[i]<-sum(people[per_person>0])/sum(people)
-  }
-  data.frame(year=m$year,payment_index=values/values[1],coverage=coverage,
-    eligible_population=sapply(m$year,function(y)sum(subset(x$population,year==y & age>=67)$population)))
-}
+pension_path <- function(x,m,a) pension_cohort_projection(x,m,a)
 
 calibrate <- function(inputs) {
   x<-inputs;a<-default_assumptions();b<-subset(x$purpose,year==2025)
@@ -344,6 +321,13 @@ project_model <- function(inputs,assumptions=default_assumptions(),calibration=c
     length(a$transfer_wage_share)==1,is.finite(a$transfer_wage_share),a$transfer_wage_share>=0,a$transfer_wage_share<=1)
   if(a$ndis_service_productivity_share!=0 || a$social_service_productivity_share!=0)
     stop('NDIS and cash transfers do not receive service-efficiency deductions')
+  stopifnot(a$health_specification%in%c('income_costs','legacy'),
+    a$health_pressure_source%in%c('assumed','subfunctions','aggregate_long'))
+  for(key in c('health_income_elasticity','health_remaining_growth','health_wage_premium','health_cpi_wedge'))
+    if(length(a[[key]])!=1||!is.finite(a[[key]]))stop('Health controls must be finite scalars')
+  if(a$health_income_elasticity<0||a$health_income_elasticity>1.5||
+     a$health_remaining_growth< -.01||a$health_remaining_growth>.02||
+     abs(a$health_wage_premium)>.01||abs(a$health_cpi_wedge)>.01)stop('Health control outside supported range')
   m<-macro_path(x,a,prepared=TRUE);pp<-c$programmes;t<-m$year-2030
   # Change future cost responses only; never rebuild the common 2030 anchor.
   for(key in unname(cost_pass_through_parameters())) {
@@ -447,9 +431,12 @@ spending_driver_audit <- function(projection) {
 scenario_attribution <- function(inputs,assumptions,calibration=calibrate(inputs)) {
   base<-default_assumptions()
   assumptions<-modifyList(base,assumptions)
-  groups<-list('Productivity'='productivity','NGDP per capita'='ngdp_per_capita_growth',
+  groups<-list('Productivity'='productivity','Nominal growth / prices'=c('macro_mode','ngdp_per_capita_growth','domestic_price_growth'),
     'Population'='population_growth','Average hours'='hours_growth',
-    'Service cost assumption set'='service_cost_set',
+    'Service cost assumption set'=c('service_cost_set','health_specification','health_pressure_source'),
+    'Health income demand'='health_income_elasticity',
+    'Health remaining pressures'='health_remaining_growth',
+    'Health wages and prices'=c('health_wage_premium','health_cpi_wedge'),
     'Service productivity'=unname(service_productivity_parameters()),
     'Additional service growth'=unname(cost_pass_through_parameters()),
     'Terms of trade'=c('tot_change','company_tot_elasticity'),

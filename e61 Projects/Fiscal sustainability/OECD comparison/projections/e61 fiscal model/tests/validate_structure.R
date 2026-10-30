@@ -1,6 +1,6 @@
 args<-commandArgs(FALSE);script<-sub('^--file=','',args[grepl('^--file=',args)][1])
 setwd(normalizePath(file.path(dirname(script),'..'),mustWork=TRUE))
-source('R/model.R');x<-load_inputs();cal<-calibrate(x);a<-default_assumptions()
+source('R/model.R');x<-load_inputs();cal<-calibrate(x);a<-default_assumptions();a$macro_mode<-'ngdp_per_capita'
 checks<-data.frame(check=character(),passed=logical())
 check<-function(label,z){checks[nrow(checks)+1,]<<-list(label,isTRUE(z));if(!isTRUE(z))stop('Failed: ',label)}
 near<-function(x,y,tol=1e-6)all(is.finite(c(x,y)))&&max(abs(x-y))<tol

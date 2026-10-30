@@ -2,8 +2,10 @@ dir.create(file.path('outputs','cache'),recursive=TRUE,showWarnings=FALSE)
 Sys.setenv(R_USER_CACHE_DIR=normalizePath(file.path('outputs','cache')))
 library(shiny)
 library(ggplot2)
+source(file.path('R','plot_axes.R'),local=TRUE,encoding='UTF-8')
 source(file.path('R','model.R'))
 source(file.path('R','sector_review.R'),local=TRUE,encoding='UTF-8')
+source(file.path('R','pension_review.R'),local=TRUE,encoding='UTF-8')
 inputs <- load_inputs()
 calibration <- calibrate(inputs)
 igr_spending_official<-read.csv('data/processed/igr_spending_benchmarks.csv',check.names=FALSE)
@@ -17,7 +19,7 @@ theme_e61 <- function() theme_minimal(base_size=13) + theme(
   axis.title=element_text(colour='#41515d'), legend.position='bottom',
   plot.margin=margin(12,18,8,8))
 colours <- c('Your scenario'='#007e80','Reference'='#9b6171')
-reference_text <- 'Fixed reference: NGDP per capita growth 3.2%; population growth 1.2%; productivity 1.2%; constant average hours; service productivity at 25% of economy-wide growth for health and education resource-cost blocks; stated additional service-growth assumptions; unchanged terms of trade; wage-indexed tax thresholds and 4% real super returns. These are discussion assumptions, not a forecast.'
+reference_text <- 'Fixed reference: health income elasticity 0.8 and zero remaining health pressures; domestic price growth 2.5% (NGDP per capita implied); population growth 1.2%; productivity 1.2%; constant average hours; service productivity at 25% of economy-wide growth for health and education resource-cost blocks; stated additional service-growth assumptions; unchanged terms of trade; wage-indexed tax thresholds and 4% real super returns. These are discussion assumptions, not a forecast.'
 
 ui <- fluidPage(
   theme=bslib::bs_theme(version=5,base_font='system-ui',primary='#007e80',bg='#f4f6f5',fg='#122b3f'),
@@ -38,12 +40,12 @@ ui <- fluidPage(
     .nav-tabs{margin-bottom:18px}.nav-tabs .nav-link{color:#46606a}.nav-tabs .active{font-weight:700}
     .control-label{font-size:13px;font-weight:650}.help-block{font-size:12px;line-height:1.45}
     details{margin:18px 0}summary{font-weight:650;cursor:pointer} .btn{border-radius:7px}
-    table{font-size:12px}.shiny-output-error-validation{color:#8a4a20}
+    table{font-size:12px} #health_education_costs table,[id$="-cost_comparison"] table{min-width:1550px} #spending_drivers table,[id$="-factor_check"] table{min-width:1250px} .shiny-output-error-validation{color:#8a4a20}
     @media(max-width:1050px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:600px){.container-fluid{padding:14px}.masthead{align-items:flex-start}.model-badge{display:none}}
   '))),
   div(class='masthead',div(div(class='wordmark','e61'),div(class='eyebrow','Fiscal futures laboratory')),
-      div(class='model-badge','Research prototype · 28 October 2026')),
+      div(class='model-badge','Research prototype · 30 October 2026')),
   h1('What changes Australia’s fiscal future?'),
   p(class='subhead','Explore how economic assumptions flow through services, revenue and debt. Consolidated general government · financial years ending 2030–2066.'),
   p(class='note','Illustrative scenarios: the reference is a modelling starting point, not an e61 forecast. Results depend on the programme and policy assumptions in Method & Data.'),
@@ -51,20 +53,41 @@ ui <- fluidPage(
     sidebarPanel(width=3,
       h3('Build a scenario'),
       sliderInput('productivity','Labour productivity growth (% a year)',min=-0.5,max=3,value=1.2,step=0.1),
-      helpText('Real output per hour. At fixed NGDP per capita and population, productivity changes real output and implied inflation, not nominal GDP.'),
-      sliderInput('ngdp_per_capita','NGDP per capita growth (% a year)',min=1,max=8,value=3.2,step=0.1),
+      helpText('Real output per hour. With NGDP per capita fixed, productivity changes implied inflation. With price growth fixed, productivity changes implied NGDP per capita.'),
+      radioButtons('macro_mode','Choose the nominal assumption',c('NGDP per capita growth'='ngdp_per_capita','Price growth'='prices'),selected='prices'),
+      conditionalPanel("input.macro_mode == 'ngdp_per_capita'",
+        sliderInput('ngdp_per_capita','NGDP per capita growth (% a year)',min=1,max=8,value=3.2,step=0.1)),
+      conditionalPanel("input.macro_mode == 'prices'",
+        sliderInput('domestic_price_growth','Domestic price growth (% a year)',min=-1,max=8,value=2.5,step=.1)),
+      helpText('Choose which path to hold fixed. Price growth means domestic prices, the baseline CPI proxy. The GDP deflator also includes the terms-of-trade income effect. The other nominal path is calculated from the model.'),
       sliderInput('population_growth','Population growth (% a year)',min=-0.5,max=2.5,value=1.2,step=0.1),
-      helpText('Scales the population path from the shared 2030 anchor, retaining the sourced age/sex shares each year. Employment and service demand use that same population. This does not simulate different migration or fertility patterns.'),
+      helpText('Demographically neutral: changing this slider scales every age and sex group equally within each year, preserving the official annual projected age distribution. Employment and service demand use the same population. It does not change migration, fertility or mortality patterns.'),
       sliderInput('hours_growth','Annual change in average hours per worker (%)',min=-1,max=1,value=0,step=0.1),
       div(class='help-block',textOutput('macro_identity')),
       sliderInput('tot','Terms-of-trade level change by 2040 (%)',min=-30,max=30,value=0,step=5),
-      helpText('A permanent export/import price shift, phased in over ten years. Changes implied domestic prices, royalties and the structural company-tax share. Real output and the nominal GDP path set by population and NGDP per capita remain unchanged.'),
+      helpText('A permanent export/import price shift, phased in over ten years. Changes royalties and the structural company-tax share. With NGDP per capita fixed, it changes implied domestic prices. With price growth fixed, it changes nominal income. Real output is unchanged.'),
+      tags$details(id='health_demand_controls',open=TRUE,tags$summary('Health demand and costs'),
+        selectInput('health_specification','Health framework',c('Income, demand and costs (reference)'='income_costs','Legacy cost-only benchmark'='legacy')),
+        conditionalPanel("input.health_specification == 'income_costs'",
+          sliderInput('health_income_elasticity','Income elasticity of health spending pressure',min=0,max=1.5,value=.8,step=.05),
+          helpText('A 1% increase in real GDP per person raises accommodated health demand by this percentage, holding other factors fixed. Applies to all health subfunctions. The 0.8 default is informed by international spending evidence, not an Australian causal estimate or a spending commitment.'),
+          selectInput('health_pressure_source','Remaining-pressure baseline',c('Explicit assumed rate (reference)'='assumed','Re-estimated subfunctions, 2016-2025'='subfunctions','Long-run GFCE aggregate proxy, 1999-2025'='aggregate_long')),
+          sliderInput('health_remaining_growth','Remaining real spending pressures (%/year)',min=-1,max=2,value=0,step=.1),
+          helpText('Zero means no extra trend beyond demographics, income demand and explicit costs; it does not mean no innovation or morbidity change. Historical residuals remove the income channel and remain fixed when economic assumptions change.'),
+          tags$details(tags$summary('Advanced health wage and price assumptions'),
+            sliderInput('health_wage_premium','Health real wage premium above economy-wide hourly wages (%/year)',min=-1,max=1,value=0,step=.1),
+            sliderInput('health_cpi_wedge','Health CPI-proxy inflation minus model domestic-price inflation (pp/year)',min=-1,max=1,value=0,step=.1),
+            helpText('The default CPI proxy is the existing domestic-price path, which differs from the GDP deflator when terms of trade move. Additive annual inflation wedge; nominal wages and GDP are unchanged. This experiment affects health only; other spending and transfers retain their price conventions.'))),
+        sliderInput('health_service_productivity_share','Health service efficiency cost savings (% of economy-wide productivity growth)',min=0,max=150,value=25,step=5),
+        helpText('Arbitrary 25% efficiency assumption: 0.3% per year at 1.2% economy-wide growth. Applies to labour-resource blocks, not the medicines CPI proxy. Wage growth in excess of efficiency generates Baumol pressure inside the cost basket; no separate uplift is added.'),
+        conditionalPanel("input.health_specification == 'legacy'",sliderInput('health_additional_cost_growth','Legacy health additional cost growth above CPI and wages (%/year)',min=-1.5,max=2.5,value=.5,step=.01)),
+        div(class='note',textOutput('health_framework_summary'))),
       tags$details(id='cost_pass_through_controls',tags$summary('Cost pass-through and financing sensitivity'),
-        selectInput('service_cost_set','Health and education cost assumptions',
+        selectInput('service_cost_set','Education and legacy health cost assumptions',
           c('Current assumptions (reference)'='current','Historical trend estimates (2016-2025)'='historical')),
         helpText('The 25% service-productivity default and the current cost-growth baselines are arbitrary modelling choices, not estimated or neutral values. Historical residuals are fitted conditional on that arbitrary productivity assumption. The cost controls show actual selected annual rates.'),
         helpText('Real wages follow economy-wide productivity. Service productivity reduces the labour required per service. A slower service-productivity response generates Baumol cost pressure. Additional service growth covers intensity, quality and mix.'),
-        lapply(setdiff(names(cost_pass_through_parameters()),c('NDIS','Other social protection')),function(n) {
+        lapply(setdiff(names(cost_pass_through_parameters()),c('Health','NDIS','Other social protection')),function(n) {
           key<-cost_pass_through_parameters()[[n]]
           theta<-service_productivity_parameters()[[n]]
           efficiency_control<-sliderInput(theta,paste0(n,': service productivity cost savings (% of economy-wide growth)'),
@@ -150,10 +173,17 @@ ui <- fluidPage(
         tabPanel('Economic channels',value='channels',
           div(class='panel-card',h3('Real output, nominal output and prices'),
               plotOutput('macro',height=390),textOutput('price_message')),
+          div(class='panel-card',h3('Participation, employment and ageing'),
+            plotOutput('labour_rates',height=310),textOutput('labour_rates_summary'),
+            p(class='note','Participation is labour force / population aged 15+. Employment rate is employed / population aged 15+. Workers per resident is employed / total population, including children. These denominators differ and should not be interchanged.'),
+            p(class='note','Participation follows the IGR male and female aggregate paths (2026 IGR chart C9.13). Observed ABS age/sex participation profiles are adjusted annually to match those targets; they are not held fixed within age groups. Aggregate participation weights the male/female targets by each annual population aged 15+. Employment is then derived using fixed observed age/sex unemployment rates and the annual population projection. Employment rates are model results, not separate IGR employment forecasts.'),
+            p(class='note','Workers per resident connects ageing to real GDP per person: output per hour x annual hours per worker x workers per resident. Employment also scales personal income tax and wage-linked tax bases. Demographically neutral population growth changes counts but preserves these rates; productivity and prices do not directly change them. Scenario and reference lines therefore normally overlap.'),
+            p(tags$a(href='https://treasury.gov.au/publication/2026-intergenerational-report',target='_blank','Source: 2026 IGR, chart C9.13'),' | ABS Labour Force Detailed, April 2025-March 2026 age/sex averages.'),
+            downloadButton('labour_rates_download','Download participation and employment CSV')),
           div(class='panel-card',h3('The productivity mechanism'),
             p('Nominal GDP equals population times nominal GDP per capita. Holding those two inputs fixed keeps the entire nominal GDP path fixed when productivity or hours change.'),
             p('Real output equals employment times average hours times output per hour. Implied domestic prices reconcile real output with the chosen nominal GDP path and terms-of-trade income effect. More productivity or hours therefore lowers implied inflation at unchanged nominal income.'),
-            p('Participation and employment rates reflect the sourced age structure. Terms of trade retain an illustrative income elasticity of 0.20 and royalty elasticity of 2. The structural company-tax share has its own ToT sensitivity under advanced assumptions. Domestic prices adjust to preserve the selected nominal income path.'))),
+            p('Participation follows the IGR male/female aggregate paths; employment combines those rates with observed age/sex unemployment profiles and the annual population structure. Terms of trade retain an illustrative income elasticity of 0.20 and royalty elasticity of 2. The structural company-tax share has its own ToT sensitivity under advanced assumptions. Domestic prices adjust to preserve the selected nominal income path.'))),
         tabPanel('Debt & interest',value='debt',
           div(class='panel-card',h3('Gross debt, financial assets and net debt'),
             selectInput('debt_units','Chart units',c('% of GDP'='pct','AUD billion'='bn'),selected='pct'),
@@ -198,9 +228,9 @@ ui <- fluidPage(
             div(style='overflow-x:auto',tableOutput('health_education_costs')),
             p(class='note','Unit cost = general prices x [(1 - labour share) + labour share x real wage index / service-productivity index]. Real wages follow economy-wide productivity. Additional service growth multiplies this cost path separately. Funding-index and CPI proxies have no service-efficiency offset. IGR rules are scope-specific comparators; no unpublished growth coefficient is invented.'),
             downloadButton('health_education_download','Download service assumptions and benchmarks'),
-            downloadButton('cost_estimation_report','Download historical cost estimation report')),
+            downloadButton('cost_estimation_report','Download health framework methods PDF')),
           div(class='panel-card',h3('Compare cost assumption sets'),
-            p('Both paths use your economic and policy settings. Only health and education additional-growth baselines change. Each estimate remains fixed when economic controls move.'),
+            p('Both paths use your economic and policy settings. This selector changes education and legacy health residuals. In the explicit health framework, its separate remaining-pressure selector controls health. Each estimate remains fixed when economic controls move.'),
             plotOutput('cost_set_comparison',height='300px'),
             tableOutput('cost_set_endpoints')),
           div(class='panel-card',h3('Subfunction factors: inspect the mechanism'),
@@ -232,6 +262,7 @@ ui <- fluidPage(
         sector_review_ui('NDIS',calibration$subfunctions),
         sector_review_ui('Health',calibration$subfunctions),
         sector_review_ui('Education',calibration$subfunctions),
+        pension_review_ui(),
         tabPanel('Revenue',value='revenue',
           div(class='panel-card',h3('How revenue responds'),
             plotOutput('revenue_path',height=310),textOutput('revenue_summary'),
@@ -256,18 +287,19 @@ ui <- fluidPage(
         tabPanel('Method & data',value='method',
           div(class='panel-card',h3('Arbitrary defaults and fitted historical residuals'),
             p('Health and education service efficiency defaults to 25% of economy-wide growth. This is arbitrary: a modelling choice for discussion, not an empirical Australian estimate, a neutral assumption or an official recommendation. At 1.2% economy-wide growth it implies 0.3% annual efficiency growth. The efficiency deduction applies to resource-cost baskets; the medicine CPI proxy and VET funding-index rule retain their separate treatment.'),
-            p('Health and education each default to 0.5% additional cost growth a year above baseline CPI and standard wage pass-through. These values are also arbitrary, not empirical estimates. The controls display the actual selected rate. With the historical alternative, the rate is the anchor-spending-weighted mean of subfunction residuals; changing it shifts every subfunction by the same number of percentage points, preserving differences. Aged care retains 0.3% additional growth and other public services zero, with no new efficiency default.'),
-            p('The historical alternative uses fitted 2016-2025 net residuals conditional on the arbitrary 25% productivity assumption. These residuals include policy, coverage, quality, mix and measurement effects. Selecting their estimation period and extrapolating them are modelling judgements; the data do not independently identify service efficiency. Higher education and VET share a tertiary residual, and other health includes accounting reconciliation. Once selected, residuals are held fixed when scenario controls move.'),
-            p('NDIS uses the existing participant/cohort path, original plan-cost index and 0.5% additional cost/use growth. Other transfers retain the original payment indexation and demand proxy; Age Pension retains its explicit wealth and means-testing module. None receives a service-efficiency deduction. Economy-wide productivity can still affect wage-linked payment indexation; it does not make transfers more efficient.')),
+            p('Health separates demographic demand, income-related demand, input costs and remaining real spending pressures. Its income elasticity defaults to 0.8 as an internationally informed scenario assumption, not an Australian causal estimate. Remaining health pressures default to zero beyond these explicit channels; this is a judgement. Education retains 0.5% additional growth, an arbitrary discussion assumption. The controls display the actual selected rate. With the historical alternative, the rate is the anchor-spending-weighted mean of subfunction residuals; changing it shifts every subfunction by the same number of percentage points, preserving differences. Aged care retains 0.3% additional growth and other public services zero, with no new efficiency default.'),
+            p('Health historical alternatives re-estimate residuals after removing income-related demand (elasticity 0.8) and explicit input costs (25% efficiency response). The matched subfunction option covers 2016-2025. The longer aggregate health-consumption option uses 1999-2025 with WPI; a compensation-per-hour sensitivity spans 1987-2025. Spending observations extend to 1963, but all decomposition inputs do not. National-accounts consumption differs from GFS expenses: their overlap is reported rather than spliced. Education retains its 2016-2025 residual option. These residuals include policy, coverage, quality, mix and measurement effects. Selecting their estimation period and extrapolating them are modelling judgements; the data do not independently identify service efficiency. Higher education and VET share a tertiary residual, and other health includes accounting reconciliation. Once selected, residuals are held fixed when scenario controls move.'),
+            p('NDIS uses the existing participant/cohort path, original plan-cost index and 0.5% additional cost/use growth. Other transfers retain the original payment indexation and demand proxy; Age Pension uses a public-data cohort wealth and means-testing module; transition and consumption parameters need future estimation from HILDA. None receives a service-efficiency deduction. Economy-wide productivity can still affect wage-linked payment indexation; it does not make transfers more efficient.')),
           div(class='panel-card',h3('How to interpret this version'),
             p('This is an independent, transparent scenario prototype. It is not a validated forecast, a full current-policy simulation or a replication of the PBO or IGR.'),
             tags$ul(tags$li('The aggregate starting point uses the 2026-27 PBO National Fiscal Outlook. National totals are already consolidated. The source bridge reports Commonwealth and state totals and the net local-government/consolidation adjustment.'),
               tags$li('Programme allocations use 2024–25 ABS GFS and an Age Pension outlay of $62.2bn from the ANAO. A single calibration reconciles their 2030 projection to PBO primary expenses. These are e61 allocations, not published PBO programme forecasts.'),
-              tags$li('Population totals from 2030 follow the chosen growth rate, preserving the sourced age/sex shares each year. The 2026 IGR age structure and participation targets and ABS observed employment profiles are retained. Average hours follow their own control. This is not a migration/fertility cohort model.'),
-              tags$li('Health uses IGR hospital, medical and pharmaceutical age-cost profiles. Education uses age-band demand proxies. Resource-cost baskets separate real wages and service productivity; funding-index rules follow their specified index. Additional service growth covers intensity, quality and mix. Source classifications and IGR comparator scopes are explicit in the sector tabs.'),
-              tags$li('Pension age 67, income/assets tests, deeming and statutory tax brackets are explicit. Pension wealth archetypes and superannuation accumulation are stylised: household wealth distributions and full current-policy reforms remain to be validated.'),
+              tags$li('Population totals from 2030 follow the chosen growth rate, preserving the sourced age/sex shares each year. Official annual 2026 IGR population projections by single-year age and sex determine ageing. IGR participation targets and ABS observed employment profiles are retained. Average hours follow their own control. This is not a migration/fertility cohort model.'),
+              tags$li('Health categories follow AIHW service areas, combining Commonwealth and state/territory government funding and reconciling to the ABS COFOG/GFS health total. They differ from the IGR Commonwealth programme categories. IGR age-cost profiles are used as demographic proxies; using those profiles does not make the spending categories equivalent. Health uses IGR hospital, medical and pharmaceutical age-cost profiles and an explicit real-GDP-per-person income factor. Its price proxy defaults to domestic inflation, with an optional health CPI wedge; domestic inflation differs from the GDP deflator when terms of trade change. Education uses age-band demand proxies. Resource-cost baskets separate real wages and service productivity; funding-index rules follow their specified index. Additional service growth covers intensity, quality and mix. Source classifications and IGR comparator scopes are explicit in the sector tabs.'),
+              tags$li('Pension age 67, income/assets tests, deeming and statutory tax brackets are explicit. Age Pension starts from a public-data calibrated age/cohort wealth distribution, with existing assets for retirees and workers. Joint wealth, retirement transitions and consumption remain provisional and require future HILDA estimation. The Age Pension tab shows age-specific receipt, entry at 67 and cohort paths.'),
               tags$li('Debt is simulated from the common 2030 stock. Interest is charged on gross debt; receipts on financial assets. Financial asset acquisitions are accounted for separately. Surpluses after gross debt repayment accumulate in assets.'),
               tags$li('No statistical uncertainty bands are supplied: model structure and policy uncertainty dominate the precision of this prototype.')),
+            p(class='note','Chart scales: positive level paths show at least 50% to 150% of their starting level; each facet uses its own starting level. Axes expand when any displayed series exceeds that range. Debt includes zero; budget balances and changes use a zero-centred range. Pension receipt uses 0-100%. Contribution charts have a minimum range tied to half the starting spending level (net-debt scenario attribution: at least +/-10 percentage points).'),
             h3('Evidence and assumption register'),
             p('Sourced figures are taken from named publications. Calibrated values reconcile those figures to our starting totals. Proxy and judgment entries are modelling assumptions, including guesses with no estimated coefficient. Identities are consequences of equations, conditional on those assumptions. A cited source supports only the input or method identified; it does not endorse our parameter choices.'),
             selectInput('register_domain','Show choices for',choices=c('All','Anchor','Macro','Demography','Revenue','Spending','Pension','Policy parameter','Financing'),selected='Revenue'),
@@ -290,6 +322,7 @@ ui <- fluidPage(
 
 server <- function(input,output,session) {
   cost_growth_centre<-function(n,z){
+    if(n=='Health')z$health_specification<-'legacy'
     p<-effective_service_parameters(inputs,z);s<-calibration$subfunctions
     s<-s[s$programme==n,];round(100*weighted.mean(p$additional_service_growth[match(s$id,p$id)],s$anchor_2030_bn),2)/100
   }
@@ -303,10 +336,18 @@ server <- function(input,output,session) {
   observeEvent(input$service_cost_set,{
     z<-default_assumptions();z$service_cost_set<-input$service_cost_set;reset_cost_rates(z)
   },ignoreInit=TRUE)
+  observeEvent(input$health_pressure_source,{
+    z<-default_assumptions();z$health_pressure_source<-input$health_pressure_source
+    centre<-100*health_pressure_centre(inputs,z,calibration)
+    freezeReactiveValue(input,'health_remaining_growth')
+    updateSliderInput(session,'health_remaining_growth',value=centre)
+  },ignoreInit=TRUE)
   a <- reactive({
     z <- default_assumptions()
     z$productivity <- input$productivity/100
     z$ngdp_per_capita_growth <- input$ngdp_per_capita/100
+    if(!is.null(input$macro_mode))z$macro_mode<-input$macro_mode
+    if(!is.null(input$domestic_price_growth))z$domestic_price_growth<-input$domestic_price_growth/100
     z$population_growth <- input$population_growth/100
     z$hours_growth <- input$hours_growth/100
     z$tot_change <- input$tot/100
@@ -315,8 +356,10 @@ server <- function(input,output,session) {
     z$super_real_return <- input$super_return/100
     z$company_tot_elasticity <- input$company_tot_elasticity
     z$interest_rate <- input$interest/100
-    for(key in c('service_cost_set','other_spending_rule'))
+    for(key in c('service_cost_set','other_spending_rule','health_specification','health_pressure_source'))
       if(!is.null(input[[key]]))z[[key]]<-input[[key]]
+    if(!is.null(input$health_income_elasticity))z$health_income_elasticity<-input$health_income_elasticity
+    for(key in c('health_remaining_growth','health_wage_premium','health_cpi_wedge'))if(!is.null(input[[key]]))z[[key]]<-input[[key]]/100
     if(!is.null(input$interest_debt_sensitivity_bps))z$interest_debt_sensitivity_bps<-input$interest_debt_sensitivity_bps
     for(n in names(spending_target_parameters())){
       key<-spending_target_parameters()[[n]]
@@ -331,7 +374,7 @@ server <- function(input,output,session) {
       if(!is.null(input[[key]]))z[[key]]<-input[[key]]/100
     for(n in c('Health','Education')){
       value<-input[[paste0(tolower(n),'_additional_cost_growth')]]
-      if(!is.null(value))z[[cost_pass_through_parameters()[[n]]]]<-round(value/100-cost_growth_centre(n,z),10)
+      if(!is.null(value) && (n!='Health'||z$health_specification=='legacy'))z[[cost_pass_through_parameters()[[n]]]]<-round(value/100-cost_growth_centre(n,z),10)
     }
     z
   })
@@ -341,11 +384,18 @@ server <- function(input,output,session) {
   scenario <- reactive(project_model(inputs,a(),calibration))
   reference <- reactive(project_model(inputs,ref_a(),calibration))
   for(programme in c('NDIS','Health','Education'))sector_review_server(programme,inputs,scenario,reference)
+  pension_review_server(inputs,scenario,reference)
   both <- reactive(rbind(transform(scenario()$path,case='Your scenario'),
                          transform(reference()$path,case='Reference')))
   observeEvent(input$reset,{
+    updateSelectInput(session,'health_specification',selected='income_costs')
+    updateSelectInput(session,'health_pressure_source',selected='assumed')
+    updateSliderInput(session,'health_income_elasticity',value=.8)
+    for(key in c('health_remaining_growth','health_wage_premium','health_cpi_wedge'))updateSliderInput(session,key,value=0)
     reset_cost_rates()
     updateSliderInput(session,'productivity',value=1.2)
+    updateRadioButtons(session,'macro_mode',selected='prices')
+    updateSliderInput(session,'domestic_price_growth',value=2.5)
     updateSliderInput(session,'ngdp_per_capita',value=3.2)
     updateSliderInput(session,'population_growth',value=1.2)
     updateSliderInput(session,'hours_growth',value=0)
@@ -363,6 +413,10 @@ server <- function(input,output,session) {
       updateSliderInput(session,key,value=100*default_assumptions()[[key]])
   })
   observeEvent(input$reset_pass_through,{
+    updateSelectInput(session,'health_pressure_source',selected='assumed')
+    updateSliderInput(session,'health_income_elasticity',value=.8)
+    for(key in c('health_remaining_growth','health_wage_premium','health_cpi_wedge'))updateSliderInput(session,key,value=0)
+    updateSliderInput(session,'health_service_productivity_share',value=25)
     reset_cost_rates()
     updateSelectInput(session,'service_cost_set',selected='current')
     updateSliderInput(session,'interest_debt_sensitivity_bps',value=0)
@@ -380,15 +434,21 @@ server <- function(input,output,session) {
   })
   output$cost_set_summary<-renderText({paste('Selected set:',if(a()$service_cost_set=='historical')'Historical trend estimates (2016-2025).' else 'Current assumptions.',
     'The table shows each baseline, aggregate adjustment and resulting rate. Fixed-share policies can override the spending total.')})
+  output$health_framework_summary<-renderText({
+    z<-scenario();p<-service_cost_comparison(z,inputs);p<-p[p$programme=='Health',]
+    sprintf('Health framework: %s. Efficiency %.2f%%/year at your productivity setting. Selected income elasticity %.2f. Combined real non-demographic growth %.2f%% to %.2f%%/year across subfunctions (income x input costs x remaining pressures). The fixed reference does not move.',
+      a()$health_specification,100*a()$health_service_productivity_share*a()$productivity,p$selected_income_elasticity[1],
+      100*min(p$combined_non_demographic_growth),100*max(p$combined_non_demographic_growth))
+  })
   output$cost_set_comparison<-renderPlot({ggplot(cost_sets(),aes(year,net_debt_pct,colour=cost_set))+
-    geom_line(linewidth=1)+scale_colour_manual(values=c('Current assumptions'='#9b6171','Historical trend estimates'='#007e80'))+
+    geom_line(linewidth=1)+natural_y(cost_sets(),'net_debt_pct',zero=TRUE)+scale_colour_manual(values=c('Current assumptions'='#9b6171','Historical trend estimates'='#007e80'))+
     labs(x='Financial year ending',y='Net debt (% GDP)',colour=NULL)+theme_e61()})
   output$cost_set_endpoints<-renderTable({d<-subset(cost_sets(),year==2066)
     data.frame('Assumption set'=d$cost_set,'Primary spending (% GDP)'=round(100*d$primary_expense_bn/d$nominal_gdp,1),
       'Net debt (% GDP)'=round(d$net_debt_pct,1),check.names=FALSE)
   },striped=TRUE)
   output$cost_estimation_report<-downloadHandler(filename=function()'health_education_cost_estimation.pdf',
-    content=function(file)file.copy('documentation/health_education_estimation.pdf',file,overwrite=TRUE))
+    content=function(file)file.copy('documentation/health_framework_background.pdf',file,overwrite=TRUE))
   fixed_share_text<-reactive({
     d<-a()$spending_gdp_targets;d<-d[!is.na(d)]
     if(!length(d))return('All functions follow their projected spending rules.')
@@ -411,9 +471,12 @@ server <- function(input,output,session) {
   output$active_spending_targets<-renderText(fixed_share_text())
   output$macro_identity <- renderText({
     m<-scenario()$path
-    sprintf('Total NGDP growth: %.3f%% a year = (1 + %.1f%% per capita) x (1 + %.1f%% population) - 1. Average weekly hours: %.1f in 2030, %.1f in 2066. Implied inflation: %.2f%% in 2031, %.2f%% in 2066.',
-      100*tail(m$nominal_gdp_growth,1),100*a()$ngdp_per_capita_growth,100*a()$population_growth,
-      m$average_hours[1],tail(m$average_hours,1),100*m$domestic_inflation[2],100*tail(m$domestic_inflation,1))
+    pc<-m$nominal_gdp_per_capita_growth;years<-tail(m$year,1)-m$year[1]
+    cagr<-tail(m$nominal_gdp_per_capita_index,1)^(1/years)-1
+    sprintf('%s. NGDP per capita growth: %.2f%% in 2031, %.2f%% in 2066; %.2f%% annual average (compound). Total NGDP growth: %.2f%% in 2031, %.2f%% in 2066, including %.1f%% population growth. Domestic price growth: %.2f%% in 2031, %.2f%% in 2066. Average weekly hours: %.1f in 2030, %.1f in 2066.',
+      if(a()$macro_mode=='prices')'Price growth fixed; NGDP per capita is implied' else 'NGDP per capita growth fixed; price growth is implied',
+      100*pc[2],100*tail(pc,1),100*cagr,100*m$nominal_gdp_growth[2],100*tail(m$nominal_gdp_growth,1),100*a()$population_growth,
+      100*m$domestic_inflation[2],100*tail(m$domestic_inflation,1),m$average_hours[1],tail(m$average_hours,1))
   })
   output$metrics <- renderUI({
     s <- tail(scenario()$path,1); r <- tail(reference()$path,1)
@@ -442,7 +505,7 @@ server <- function(input,output,session) {
     types<-setNames(c('solid','dashed','solid','dotdash','dotted','longdash','longdash','dotted'),names(palette))
     ggplot(d,aes(year,plotted_value,colour=series_label,linetype=series_label,group=series_id))+
       geom_hline(yintercept=0,colour='#c5cece',linewidth=.3)+geom_line(linewidth=.95)+
-      facet_wrap(~panel,ncol=1,scales='free_y')+
+      facet_wrap(~panel,ncol=1,scales='free_y')+natural_y(d,'plotted_value',panels='panel',zero=TRUE,signed=identical(input$international_debt_view,'change'),floor=10)+
       scale_colour_manual(values=palette)+scale_linetype_manual(values=types)+
       labs(x='Year (model: FY ending; provider years unchanged)',y=d$plot_unit[1],colour=NULL,linetype=NULL)+
       theme_e61()+theme(legend.text=element_text(size=10))+guides(colour=guide_legend(ncol=2))
@@ -465,7 +528,7 @@ server <- function(input,output,session) {
   output$outlook <- renderPlot({
     d <- both(); d$value <- d[[input$measure]]
     label <- if(input$measure=='real_primary_per_person') '2030 dollars per person' else '% of GDP'
-    ggplot(d,aes(year,value,colour=case,linetype=case))+geom_line(linewidth=1.1)+
+    ggplot(d,aes(year,value,colour=case,linetype=case))+geom_line(linewidth=1.1)+natural_y(d,signed=identical(input$measure,'fiscal_balance_pct'),zero=input$measure%in%c('net_debt_pct','gross_debt_pct'),floor=5)+
       scale_colour_manual(values=colours)+scale_linetype_manual(values=c('Reference'='dashed','Your scenario'='solid'))+
       labs(x='Financial year ending',y=label,colour=NULL,linetype=NULL)+theme_e61()
   })
@@ -480,7 +543,7 @@ server <- function(input,output,session) {
       ggplot()+annotate('text',x=0,y=0,label='Reference settings selected\nChange a scenario control to see its contribution',
                        colour='#60717b',size=4.5,lineheight=1.5)+theme_void())
     ggplot(d,aes(net_debt_change_pp,reorder(driver,net_debt_change_pp)))+
-      geom_vline(xintercept=0,colour='#ccd7d5')+geom_col(fill='#007e80',width=.55)+
+      geom_vline(xintercept=0,colour='#ccd7d5')+geom_col(fill='#007e80',width=.55)+natural_contribution_axis(20,axis='x')+
       labs(x='Change in 2066 net debt / GDP (percentage points)',y=NULL)+theme_e61()
   })
   output$macro <- renderPlot({
@@ -493,13 +556,34 @@ server <- function(input,output,session) {
       data.frame(year=d$year,case=d$case,channel=labels[i],index=100*value)
     }))
     ggplot(long,aes(year,index,colour=case,linetype=case))+geom_line(linewidth=1)+
-      facet_wrap(~channel,scales='free_y',ncol=2)+scale_colour_manual(values=colours)+
+      facet_wrap(~channel,scales='free_y',ncol=2)+natural_y(long,'index',panels='channel')+scale_colour_manual(values=colours)+
       scale_linetype_manual(values=c('Reference'='dashed','Your scenario'='solid'))+
       labs(x='Financial year ending',y='Index (2030 = 100)',colour=NULL,linetype=NULL)+theme_e61()
   })
+  labour_rates_data<-reactive({
+    d<-both();fields<-c('participation_rate','employment_rate','employment_population_ratio')
+    labels<-c('Participation: % of people aged 15+','Employment: % of people aged 15+','Workers: % of all residents')
+    do.call(rbind,lapply(seq_along(fields),function(i)data.frame(year=d$year,case=d$case,
+      measure=factor(labels[i],levels=labels),value=100*d[[fields[i]]])))
+  })
+  output$labour_rates<-renderPlot({d<-labour_rates_data()
+    ggplot(d,aes(year,value,colour=case,linetype=case))+geom_line(linewidth=1)+
+      facet_wrap(~measure,ncol=3,scales='free_y')+natural_y(d,panels='measure')+
+      scale_colour_manual(values=colours)+scale_linetype_manual(values=c('Reference'='dashed','Your scenario'='solid'))+
+      labs(x='Financial year ending',y='Percent',colour=NULL,linetype=NULL)+theme_e61()
+  })
+  output$labour_rates_summary<-renderText({m<-scenario()$path;f<-m[1,];l<-tail(m,1)
+    sprintf('2030 to 2066: participation %.1f%% to %.1f%%; employment rate %.1f%% to %.1f%%; workers per resident %.1f%% to %.1f%%.',
+      100*f$participation_rate,100*l$participation_rate,100*f$employment_rate,100*l$employment_rate,
+      100*f$employment_population_ratio,100*l$employment_population_ratio)
+  })
+  output$labour_rates_download<-downloadHandler(filename=function()'participation_employment_channels.csv',
+    content=function(file){d<-both();fields<-c('year','case','population','population_15plus','labour_force','employed',
+      'participation_rate','employment_rate','employment_population_ratio','unemployment_rate','average_hours','hours_per_resident')
+      write.csv(d[fields],file,row.names=FALSE)})
   output$price_message <- renderText({
     m <- scenario()$path
-    sprintf('Implied domestic inflation: %.2f%% in 2031 and %.2f%% in 2066. The GDP deflator also includes the terms-of-trade income effect. Participation follows the sourced age structure; average hours follow your separate control.',
+    sprintf('Domestic inflation (selected directly in price-growth mode; otherwise implied): %.2f%% in 2031 and %.2f%% in 2066. The GDP deflator also includes the terms-of-trade income effect. Participation follows the IGR male/female aggregate paths; average hours follow your separate control.',
             100*m$domestic_inflation[2],100*tail(m$domestic_inflation,1))
   })
   debt_both <- reactive({
@@ -512,7 +596,7 @@ server <- function(input,output,session) {
       data.frame(year=d$year,case=d$case,measure=labels[i],value=d[[paste0(fields[i],'_',unit)]])))
     long$measure<-factor(long$measure,levels=labels)
     ggplot(long,aes(year,value,colour=case,linetype=case))+geom_line(linewidth=.9)+
-      facet_wrap(~measure,ncol=3)+scale_colour_manual(values=colours)+
+      facet_wrap(~measure,ncol=3)+natural_y(long,panels='measure',zero=TRUE)+scale_colour_manual(values=colours)+
       scale_linetype_manual(values=c('Reference'='dashed','Your scenario'='solid'))+
       labs(x='Financial year ending',y=if(unit=='pct')'% of GDP' else 'AUD billion',colour=NULL,linetype=NULL)+theme_e61()
   }
@@ -563,18 +647,18 @@ server <- function(input,output,session) {
     dollars<-identical(input$spending_units,'bn')
     d$value<-if(dollars)d$spending_bn else d$share_gdp
     ggplot(d,aes(year,value,colour=case,linetype=case))+geom_line(linewidth=.9)+
-      facet_wrap(~programme,scales='free_y',ncol=3)+scale_colour_manual(values=colours)+
+      facet_wrap(~programme,scales='free_y',ncol=3)+natural_y(d,panels='programme')+scale_colour_manual(values=colours)+
       scale_linetype_manual(values=c('Reference'='dashed','Your scenario'='solid'))+
       labs(x='Financial year ending',y=if(dollars)'Spending (nominal $bn)' else 'Spending (% GDP)',colour=NULL,linetype=NULL)+theme_e61()
   })
   spending_ngdp_comparison<-reactive({
-    baseline<-a();baseline$ngdp_per_capita_growth<-default_assumptions()$ngdp_per_capita_growth
+    baseline<-a();baseline$macro_mode<-'ngdp_per_capita';baseline$ngdp_per_capita_growth<-default_assumptions()$ngdp_per_capita_growth
     project_model(inputs,baseline,calibration)
   })
   output$spending_ngdp_link<-renderText({
     s<-tail(scenario()$path,1);r<-tail(spending_ngdp_comparison()$path,1)
-    sprintf('In 2066, changing only NGDP per capita growth from %.1f%% to your %.1f%% changes nominal GDP from $%.1fbn to $%.1fbn and primary spending from $%.1fbn to $%.1fbn. Primary spending/GDP moves from %.2f%% to %.2f%%. Domestic prices (2030 = 100) move from %.1f to %.1f.',
-      100*default_assumptions()$ngdp_per_capita_growth,100*a()$ngdp_per_capita_growth,
+    sprintf('In 2066, comparing fixed %.1f%% NGDP per capita growth with your selected nominal path (%.2f%% compound annual NGDP per capita growth) changes nominal GDP from $%.1fbn to $%.1fbn and primary spending from $%.1fbn to $%.1fbn. Primary spending/GDP moves from %.2f%% to %.2f%%. Domestic prices (2030 = 100) move from %.1f to %.1f.',
+      100*default_assumptions()$ngdp_per_capita_growth,100*(tail(scenario()$path$nominal_gdp_per_capita_index,1)^(1/(a()$end_year-a()$anchor_year))-1),
       r$nominal_gdp,s$nominal_gdp,r$primary_expense_bn,s$primary_expense_bn,
       r$primary_expense_pct,s$primary_expense_pct,100*r$domestic_price_index,100*s$domestic_price_index)
   })
@@ -616,7 +700,7 @@ server <- function(input,output,session) {
   output$spending_contribution_plot<-renderPlot({
     d<-aggregate(contribution~factor,spending_factor_data(),sum)
     d$factor<-factor(d$factor,levels=rev(unname(spending_factor_labels())))
-    ggplot(d,aes(factor,contribution,fill=contribution>=0))+geom_col()+coord_flip()+
+    ggplot(d,aes(factor,contribution,fill=contribution>=0))+geom_col()+coord_flip()+natural_contribution_axis(sum(unique(spending_factor_data()[c('programme','id','start_value')])$start_value))+
       scale_fill_manual(values=c('TRUE'='#007e80','FALSE'='#9b6171'),guide='none')+
       labs(x=NULL,y=switch(spending_factor_data()$measure[1],pct='Contribution (percentage points of GDP)',bn='Contribution (nominal $bn)',real_bn='Contribution ($2030 bn)'))+theme_e61()
   })
@@ -669,7 +753,7 @@ server <- function(input,output,session) {
     }
     d <- rbind(extract(scenario(),'Your scenario'),extract(reference(),'Reference'))
     ggplot(d,aes(share_gdp,reorder(programme,share_gdp),fill=case))+
-      geom_col(position='dodge',width=.7)+scale_fill_manual(values=colours)+
+      geom_col(position='dodge',width=.7)+scale_x_continuous(limits=function(r)range(0,r,1.5*max(d$share_gdp[d$case=='Reference'])))+scale_fill_manual(values=colours)+
       labs(x='% of GDP',y=NULL,fill=NULL)+theme_e61()
   })
   output$ndis_growth_readout <- renderText({
@@ -728,7 +812,7 @@ server <- function(input,output,session) {
     s<-scenario();w<-s$path
     d<-rbind(d,data.frame(year=w$year,case='Wage-indexed thresholds',
       value=w$revenue_pct-100*s$revenue_diagnostics$bracket_creep_revenue_bn/w$nominal_gdp))
-    ggplot(d,aes(year,value,colour=case,linetype=case))+geom_line(linewidth=1)+
+    ggplot(d,aes(year,value,colour=case,linetype=case))+geom_line(linewidth=1)+natural_y(d)+
       scale_colour_manual(values=c(colours,'Wage-indexed thresholds'='#cb983e'))+
       labs(x='Financial year ending',y='Revenue (% GDP)',colour=NULL,linetype=NULL)+theme_e61()
   })
@@ -751,7 +835,7 @@ server <- function(input,output,session) {
       'Company tax ($bn)'=round(s$revenue$company[k],1),check.names=FALSE)
   },striped=TRUE)
   output$revenue_mix<-renderPlot({
-    ggplot(revenue_long(),aes(year,share_gdp,fill=head))+geom_area()+
+    ggplot(revenue_long(),aes(year,share_gdp,fill=head))+geom_area()+natural_y(aggregate(share_gdp~year,revenue_long(),sum),'share_gdp',zero=TRUE)+
       scale_fill_manual(values=setNames(grDevices::hcl.colors(13,'Dark 3'),unique(revenue_long()$head)))+
       labs(x='Financial year ending',y='% GDP',fill=NULL)+
       theme_e61()+theme(legend.text=element_text(size=9))+guides(fill=guide_legend(nrow=4))
@@ -810,7 +894,7 @@ server <- function(input,output,session) {
   },striped=TRUE,na='Own policy rule')
   output$sources <- renderTable(data.frame(
     Input=c('Consolidated PBO anchor','Population and participation','Observed employment rates and hours','Spending and tax composition','Health and aged care profiles','NDIS','Income-tax distribution','Pension rules'),
-    Source=c('2026-27 National Fiscal Outlook','2026 IGR + Centre for Population sex ratios',
+    Source=c('2026-27 National Fiscal Outlook','2026 IGR official annual age/sex projections (Centre for Population)',
       'ABS April 2025 to March 2026 age/sex averages','ABS GFS and Taxation Revenue 2024-25',
       '2026 IGR C12.10 and C6.6; Commonwealth health profile used as a national proxy',
       'NDIA 2024-25 accounts and quarterly age participation rates','ATO Taxation Statistics 2023-24 Table 16',
@@ -818,7 +902,7 @@ server <- function(input,output,session) {
     striped=TRUE)
   output$download <- downloadHandler(filename=function() 'e61_fiscal_scenario.csv',content=function(file) {
     d <- both()
-    for(n in names(a())) d[[paste0('scenario_assumption_',n)]] <- a()[[n]]
+    for(n in names(a())) d[[paste0('scenario_assumption_',n)]] <- if(length(a()[[n]])==1)a()[[n]] else jsonlite::toJSON(a()[[n]],auto_unbox=TRUE)
     write.csv(d,file,row.names=FALSE)
   })
   output$audit <- downloadHandler(filename=function() 'e61_fiscal_assumptions.txt',content=function(file) {
