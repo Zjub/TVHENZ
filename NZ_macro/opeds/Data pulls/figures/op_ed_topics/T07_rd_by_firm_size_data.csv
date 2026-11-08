@@ -1,0 +1,7 @@
+breakdown,category,year,value_millions,status,unit,footnotes,relative_sampling_error_percent
+Size,Zero employees,2024,164,,NZ Dollars (millions),5 and 12,46.3
+Size,1 to 9 employees,2024,269,,NZ Dollars (millions),5 and 12,10.1
+Size,10 to 19 employees,2024,328,,NZ Dollars (millions),5 and 12,12
+Size,20 to 49 employees,2024,501,,NZ Dollars (millions),5 and 12,9.8
+Size,50 to 99 employees,2024,491,,NZ Dollars (millions),5 and 12,13.6
+Size,100 or more employees,2024,4707,R,NZ Dollars (millions),5 and 12,5

@@ -1,0 +1,171 @@
+measure,year,status,value,source_sheet,source_row,block,gdp_millions
+Social security and welfare,2022,Actual,42860,Core Crown Expense Tables,7,Functional expense,365304
+Social security and welfare,2023,Actual,41514,Core Crown Expense Tables,7,Functional expense,401827
+Social security and welfare,2024,Actual,44589,Core Crown Expense Tables,7,Functional expense,420858
+Social security and welfare,2025,Actual,47503,Core Crown Expense Tables,7,Functional expense,435071
+Social security and welfare,2026,Unaudited Actual,50224,Core Crown Expense Tables,7,Functional expense,455882
+Social security and welfare,2027,Forecast,53391,Core Crown Expense Tables,7,Functional expense,480119
+Social security and welfare,2028,Forecast,55098,Core Crown Expense Tables,7,Functional expense,507501
+Social security and welfare,2029,Forecast,56384,Core Crown Expense Tables,7,Functional expense,532347
+Social security and welfare,2030,Forecast,58048,Core Crown Expense Tables,7,Functional expense,557351
+Social security and welfare,2031,Forecast,60286,Core Crown Expense Tables,7,Functional expense,582358
+Health,2022,Actual,27781,Core Crown Expense Tables,8,Functional expense,365304
+Health,2023,Actual,28489,Core Crown Expense Tables,8,Functional expense,401827
+Health,2024,Actual,29999,Core Crown Expense Tables,8,Functional expense,420858
+Health,2025,Actual,30311,Core Crown Expense Tables,8,Functional expense,435071
+Health,2026,Unaudited Actual,32917,Core Crown Expense Tables,8,Functional expense,455882
+Health,2027,Forecast,34472,Core Crown Expense Tables,8,Functional expense,480119
+Health,2028,Forecast,34094,Core Crown Expense Tables,8,Functional expense,507501
+Health,2029,Forecast,34209,Core Crown Expense Tables,8,Functional expense,532347
+Health,2030,Forecast,34294,Core Crown Expense Tables,8,Functional expense,557351
+Health,2031,Forecast,34452,Core Crown Expense Tables,8,Functional expense,582358
+Education,2022,Actual,18023,Core Crown Expense Tables,9,Functional expense,365304
+Education,2023,Actual,18403,Core Crown Expense Tables,9,Functional expense,401827
+Education,2024,Actual,20223,Core Crown Expense Tables,9,Functional expense,420858
+Education,2025,Actual,20895,Core Crown Expense Tables,9,Functional expense,435071
+Education,2026,Unaudited Actual,21206,Core Crown Expense Tables,9,Functional expense,455882
+Education,2027,Forecast,22187,Core Crown Expense Tables,9,Functional expense,480119
+Education,2028,Forecast,22069,Core Crown Expense Tables,9,Functional expense,507501
+Education,2029,Forecast,21948,Core Crown Expense Tables,9,Functional expense,532347
+Education,2030,Forecast,21952,Core Crown Expense Tables,9,Functional expense,557351
+Education,2031,Forecast,22019,Core Crown Expense Tables,9,Functional expense,582358
+Core government services,2022,Actual,5720,Core Crown Expense Tables,10,Functional expense,365304
+Core government services,2023,Actual,6806,Core Crown Expense Tables,10,Functional expense,401827
+Core government services,2024,Actual,8468,Core Crown Expense Tables,10,Functional expense,420858
+Core government services,2025,Actual,7908,Core Crown Expense Tables,10,Functional expense,435071
+Core government services,2026,Unaudited Actual,5980,Core Crown Expense Tables,10,Functional expense,455882
+Core government services,2027,Forecast,6657,Core Crown Expense Tables,10,Functional expense,480119
+Core government services,2028,Forecast,6387,Core Crown Expense Tables,10,Functional expense,507501
+Core government services,2029,Forecast,6329,Core Crown Expense Tables,10,Functional expense,532347
+Core government services,2030,Forecast,6327,Core Crown Expense Tables,10,Functional expense,557351
+Core government services,2031,Forecast,6263,Core Crown Expense Tables,10,Functional expense,582358
+Law and order,2022,Actual,5444,Core Crown Expense Tables,11,Functional expense,365304
+Law and order,2023,Actual,6165,Core Crown Expense Tables,11,Functional expense,401827
+Law and order,2024,Actual,6527,Core Crown Expense Tables,11,Functional expense,420858
+Law and order,2025,Actual,6734,Core Crown Expense Tables,11,Functional expense,435071
+Law and order,2026,Unaudited Actual,7077,Core Crown Expense Tables,11,Functional expense,455882
+Law and order,2027,Forecast,7762,Core Crown Expense Tables,11,Functional expense,480119
+Law and order,2028,Forecast,7486,Core Crown Expense Tables,11,Functional expense,507501
+Law and order,2029,Forecast,7340,Core Crown Expense Tables,11,Functional expense,532347
+Law and order,2030,Forecast,7369,Core Crown Expense Tables,11,Functional expense,557351
+Law and order,2031,Forecast,7404,Core Crown Expense Tables,11,Functional expense,582358
+Transport and communications,2022,Actual,4657,Core Crown Expense Tables,12,Functional expense,365304
+Transport and communications,2023,Actual,5472,Core Crown Expense Tables,12,Functional expense,401827
+Transport and communications,2024,Actual,5487,Core Crown Expense Tables,12,Functional expense,420858
+Transport and communications,2025,Actual,5472,Core Crown Expense Tables,12,Functional expense,435071
+Transport and communications,2026,Unaudited Actual,6035,Core Crown Expense Tables,12,Functional expense,455882
+Transport and communications,2027,Forecast,5333,Core Crown Expense Tables,12,Functional expense,480119
+Transport and communications,2028,Forecast,5408,Core Crown Expense Tables,12,Functional expense,507501
+Transport and communications,2029,Forecast,5650,Core Crown Expense Tables,12,Functional expense,532347
+Transport and communications,2030,Forecast,5591,Core Crown Expense Tables,12,Functional expense,557351
+Transport and communications,2031,Forecast,5635,Core Crown Expense Tables,12,Functional expense,582358
+Economic and industrial services,2022,Actual,8078,Core Crown Expense Tables,13,Functional expense,365304
+Economic and industrial services,2023,Actual,3690,Core Crown Expense Tables,13,Functional expense,401827
+Economic and industrial services,2024,Actual,4010,Core Crown Expense Tables,13,Functional expense,420858
+Economic and industrial services,2025,Actual,3514,Core Crown Expense Tables,13,Functional expense,435071
+Economic and industrial services,2026,Unaudited Actual,3012,Core Crown Expense Tables,13,Functional expense,455882
+Economic and industrial services,2027,Forecast,3768,Core Crown Expense Tables,13,Functional expense,480119
+Economic and industrial services,2028,Forecast,3043,Core Crown Expense Tables,13,Functional expense,507501
+Economic and industrial services,2029,Forecast,3233,Core Crown Expense Tables,13,Functional expense,532347
+Economic and industrial services,2030,Forecast,3265,Core Crown Expense Tables,13,Functional expense,557351
+Economic and industrial services,2031,Forecast,3294,Core Crown Expense Tables,13,Functional expense,582358
+Defence,2022,Actual,2832,Core Crown Expense Tables,14,Functional expense,365304
+Defence,2023,Actual,2886,Core Crown Expense Tables,14,Functional expense,401827
+Defence,2024,Actual,3163,Core Crown Expense Tables,14,Functional expense,420858
+Defence,2025,Actual,3271,Core Crown Expense Tables,14,Functional expense,435071
+Defence,2026,Unaudited Actual,3525,Core Crown Expense Tables,14,Functional expense,455882
+Defence,2027,Forecast,3878,Core Crown Expense Tables,14,Functional expense,480119
+Defence,2028,Forecast,3858,Core Crown Expense Tables,14,Functional expense,507501
+Defence,2029,Forecast,3900,Core Crown Expense Tables,14,Functional expense,532347
+Defence,2030,Forecast,3936,Core Crown Expense Tables,14,Functional expense,557351
+Defence,2031,Forecast,3948,Core Crown Expense Tables,14,Functional expense,582358
+"Heritage, culture and recreation",2022,Actual,1468,Core Crown Expense Tables,15,Functional expense,365304
+"Heritage, culture and recreation",2023,Actual,1537,Core Crown Expense Tables,15,Functional expense,401827
+"Heritage, culture and recreation",2024,Actual,1504,Core Crown Expense Tables,15,Functional expense,420858
+"Heritage, culture and recreation",2025,Actual,1457,Core Crown Expense Tables,15,Functional expense,435071
+"Heritage, culture and recreation",2026,Unaudited Actual,1439,Core Crown Expense Tables,15,Functional expense,455882
+"Heritage, culture and recreation",2027,Forecast,1442,Core Crown Expense Tables,15,Functional expense,480119
+"Heritage, culture and recreation",2028,Forecast,1412,Core Crown Expense Tables,15,Functional expense,507501
+"Heritage, culture and recreation",2029,Forecast,1396,Core Crown Expense Tables,15,Functional expense,532347
+"Heritage, culture and recreation",2030,Forecast,1365,Core Crown Expense Tables,15,Functional expense,557351
+"Heritage, culture and recreation",2031,Forecast,1357,Core Crown Expense Tables,15,Functional expense,582358
+Primary services,2022,Actual,949,Core Crown Expense Tables,16,Functional expense,365304
+Primary services,2023,Actual,1156,Core Crown Expense Tables,16,Functional expense,401827
+Primary services,2024,Actual,1062,Core Crown Expense Tables,16,Functional expense,420858
+Primary services,2025,Actual,996,Core Crown Expense Tables,16,Functional expense,435071
+Primary services,2026,Unaudited Actual,1030,Core Crown Expense Tables,16,Functional expense,455882
+Primary services,2027,Forecast,1351,Core Crown Expense Tables,16,Functional expense,480119
+Primary services,2028,Forecast,1136,Core Crown Expense Tables,16,Functional expense,507501
+Primary services,2029,Forecast,1126,Core Crown Expense Tables,16,Functional expense,532347
+Primary services,2030,Forecast,1180,Core Crown Expense Tables,16,Functional expense,557351
+Primary services,2031,Forecast,1098,Core Crown Expense Tables,16,Functional expense,582358
+Housing and community development,2022,Actual,2033,Core Crown Expense Tables,17,Functional expense,365304
+Housing and community development,2023,Actual,2312,Core Crown Expense Tables,17,Functional expense,401827
+Housing and community development,2024,Actual,2512,Core Crown Expense Tables,17,Functional expense,420858
+Housing and community development,2025,Actual,2150,Core Crown Expense Tables,17,Functional expense,435071
+Housing and community development,2026,Unaudited Actual,1958,Core Crown Expense Tables,17,Functional expense,455882
+Housing and community development,2027,Forecast,2289,Core Crown Expense Tables,17,Functional expense,480119
+Housing and community development,2028,Forecast,1908,Core Crown Expense Tables,17,Functional expense,507501
+Housing and community development,2029,Forecast,1852,Core Crown Expense Tables,17,Functional expense,532347
+Housing and community development,2030,Forecast,1749,Core Crown Expense Tables,17,Functional expense,557351
+Housing and community development,2031,Forecast,1795,Core Crown Expense Tables,17,Functional expense,582358
+Environmental protection,2022,Actual,2549,Core Crown Expense Tables,18,Functional expense,365304
+Environmental protection,2023,Actual,2381,Core Crown Expense Tables,18,Functional expense,401827
+Environmental protection,2024,Actual,2297,Core Crown Expense Tables,18,Functional expense,420858
+Environmental protection,2025,Actual,2410,Core Crown Expense Tables,18,Functional expense,435071
+Environmental protection,2026,Unaudited Actual,2509,Core Crown Expense Tables,18,Functional expense,455882
+Environmental protection,2027,Forecast,2874,Core Crown Expense Tables,18,Functional expense,480119
+Environmental protection,2028,Forecast,2716,Core Crown Expense Tables,18,Functional expense,507501
+Environmental protection,2029,Forecast,2691,Core Crown Expense Tables,18,Functional expense,532347
+Environmental protection,2030,Forecast,2609,Core Crown Expense Tables,18,Functional expense,557351
+Environmental protection,2031,Forecast,2641,Core Crown Expense Tables,18,Functional expense,582358
+GSF pension expenses,2022,Actual,94,Core Crown Expense Tables,19,Functional expense,365304
+GSF pension expenses,2023,Actual,61,Core Crown Expense Tables,19,Functional expense,401827
+GSF pension expenses,2024,Actual,69,Core Crown Expense Tables,19,Functional expense,420858
+GSF pension expenses,2025,Actual,65,Core Crown Expense Tables,19,Functional expense,435071
+GSF pension expenses,2026,Unaudited Actual,61,Core Crown Expense Tables,19,Functional expense,455882
+GSF pension expenses,2027,Forecast,46,Core Crown Expense Tables,19,Functional expense,480119
+GSF pension expenses,2028,Forecast,48,Core Crown Expense Tables,19,Functional expense,507501
+GSF pension expenses,2029,Forecast,47,Core Crown Expense Tables,19,Functional expense,532347
+GSF pension expenses,2030,Forecast,46,Core Crown Expense Tables,19,Functional expense,557351
+GSF pension expenses,2031,Forecast,45,Core Crown Expense Tables,19,Functional expense,582358
+Other,2022,Actual,269,Core Crown Expense Tables,20,Functional expense,365304
+Other,2023,Actual,133,Core Crown Expense Tables,20,Functional expense,401827
+Other,2024,Actual,145,Core Crown Expense Tables,20,Functional expense,420858
+Other,2025,Actual,127,Core Crown Expense Tables,20,Functional expense,435071
+Other,2026,Unaudited Actual,189,Core Crown Expense Tables,20,Functional expense,455882
+Other,2027,Forecast,210,Core Crown Expense Tables,20,Functional expense,480119
+Other,2028,Forecast,81,Core Crown Expense Tables,20,Functional expense,507501
+Other,2029,Forecast,277,Core Crown Expense Tables,20,Functional expense,532347
+Other,2030,Forecast,276,Core Crown Expense Tables,20,Functional expense,557351
+Other,2031,Forecast,276,Core Crown Expense Tables,20,Functional expense,582358
+Finance costs,2022,Actual,2884,Core Crown Expense Tables,21,Functional expense,365304
+Finance costs,2023,Actual,6569,Core Crown Expense Tables,21,Functional expense,401827
+Finance costs,2024,Actual,8943,Core Crown Expense Tables,21,Functional expense,420858
+Finance costs,2025,Actual,8862,Core Crown Expense Tables,21,Functional expense,435071
+Finance costs,2026,Unaudited Actual,9057,Core Crown Expense Tables,21,Functional expense,455882
+Finance costs,2027,Forecast,10291,Core Crown Expense Tables,21,Functional expense,480119
+Finance costs,2028,Forecast,11396,Core Crown Expense Tables,21,Functional expense,507501
+Finance costs,2029,Forecast,12481,Core Crown Expense Tables,21,Functional expense,532347
+Finance costs,2030,Forecast,13502,Core Crown Expense Tables,21,Functional expense,557351
+Finance costs,2031,Forecast,13689,Core Crown Expense Tables,21,Functional expense,582358
+Forecast new operating spending,2022,Actual,0,Core Crown Expense Tables,22,Functional expense,365304
+Forecast new operating spending,2023,Actual,0,Core Crown Expense Tables,22,Functional expense,401827
+Forecast new operating spending,2024,Actual,0,Core Crown Expense Tables,22,Functional expense,420858
+Forecast new operating spending,2025,Actual,0,Core Crown Expense Tables,22,Functional expense,435071
+Forecast new operating spending,2026,Unaudited Actual,0,Core Crown Expense Tables,22,Functional expense,455882
+Forecast new operating spending,2027,Forecast,1258,Core Crown Expense Tables,22,Functional expense,480119
+Forecast new operating spending,2028,Forecast,2968,Core Crown Expense Tables,22,Functional expense,507501
+Forecast new operating spending,2029,Forecast,5025,Core Crown Expense Tables,22,Functional expense,532347
+Forecast new operating spending,2030,Forecast,7783,Core Crown Expense Tables,22,Functional expense,557351
+Forecast new operating spending,2031,Forecast,10116,Core Crown Expense Tables,22,Functional expense,582358
+Top-down operating expense adjustment,2022,Actual,0,Core Crown Expense Tables,23,Functional expense,365304
+Top-down operating expense adjustment,2023,Actual,0,Core Crown Expense Tables,23,Functional expense,401827
+Top-down operating expense adjustment,2024,Actual,0,Core Crown Expense Tables,23,Functional expense,420858
+Top-down operating expense adjustment,2025,Actual,0,Core Crown Expense Tables,23,Functional expense,435071
+Top-down operating expense adjustment,2026,Unaudited Actual,0,Core Crown Expense Tables,23,Functional expense,455882
+Top-down operating expense adjustment,2027,Forecast,-2600,Core Crown Expense Tables,23,Functional expense,480119
+Top-down operating expense adjustment,2028,Forecast,-800,Core Crown Expense Tables,23,Functional expense,507501
+Top-down operating expense adjustment,2029,Forecast,-650,Core Crown Expense Tables,23,Functional expense,532347
+Top-down operating expense adjustment,2030,Forecast,-650,Core Crown Expense Tables,23,Functional expense,557351
+Top-down operating expense adjustment,2031,Forecast,-650,Core Crown Expense Tables,23,Functional expense,582358

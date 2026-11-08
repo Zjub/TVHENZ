@@ -1,0 +1,71 @@
+regime,authority,state,coefficient
+Flexible Nash,Monetary,lagged output,-0.0
+Flexible Nash,Monetary,lagged inflation,-0.0
+Flexible Nash,Monetary,debt,-0.7952623039596203
+Flexible Nash,Monetary,lagged monetary,-0.0
+Flexible Nash,Monetary,lagged fiscal,-0.0
+Flexible Nash,Monetary,demand shock,0.18833916916391055
+Flexible Nash,Monetary,cost-push shock,0.37549642861125243
+Flexible Nash,Fiscal,lagged output,-0.0
+Flexible Nash,Fiscal,lagged inflation,-0.0
+Flexible Nash,Fiscal,debt,-4.5083928899412
+Flexible Nash,Fiscal,lagged monetary,-0.0
+Flexible Nash,Fiscal,lagged fiscal,-0.0
+Flexible Nash,Fiscal,demand shock,0.18176650835228195
+Flexible Nash,Fiscal,cost-push shock,0.6106365000595455
+Monetary commitment,Monetary,lagged output,-0.0
+Monetary commitment,Monetary,lagged inflation,-0.0
+Monetary commitment,Monetary,debt,-0.6366731392410294
+Monetary commitment,Monetary,lagged monetary,0.26256341558952373
+Monetary commitment,Monetary,lagged fiscal,-0.0
+Monetary commitment,Monetary,demand shock,0.14227772304612604
+Monetary commitment,Monetary,cost-push shock,0.30282451376650626
+Monetary commitment,Fiscal,lagged output,-0.0
+Monetary commitment,Fiscal,lagged inflation,-0.0
+Monetary commitment,Fiscal,debt,-4.40417154255495
+Monetary commitment,Fiscal,lagged monetary,-0.02918793236922977
+Monetary commitment,Fiscal,lagged fiscal,-0.0
+Monetary commitment,Fiscal,demand shock,0.17291341031542817
+Monetary commitment,Fiscal,cost-push shock,0.5953463599314905
+Fiscal commitment,Monetary,lagged output,-0.0
+Fiscal commitment,Monetary,lagged inflation,-0.0
+Fiscal commitment,Monetary,debt,-0.8555969886074817
+Fiscal commitment,Monetary,lagged monetary,-0.0
+Fiscal commitment,Monetary,lagged fiscal,-0.012167076576592549
+Fiscal commitment,Monetary,demand shock,0.1902762842881436
+Fiscal commitment,Monetary,cost-push shock,0.38898925471364276
+Fiscal commitment,Fiscal,lagged output,-0.0
+Fiscal commitment,Fiscal,lagged inflation,-0.0
+Fiscal commitment,Fiscal,debt,-3.5441593024116314
+Fiscal commitment,Fiscal,lagged monetary,-0.0
+Fiscal commitment,Fiscal,lagged fiscal,0.17339169265322382
+Fiscal commitment,Fiscal,demand shock,0.13962290599031468
+Fiscal commitment,Fiscal,cost-push shock,0.474916357393994
+Bilateral commitment,Monetary,lagged output,-0.0
+Bilateral commitment,Monetary,lagged inflation,-0.0
+Bilateral commitment,Monetary,debt,-0.6846110360882777
+Bilateral commitment,Monetary,lagged monetary,0.2622488751920515
+Bilateral commitment,Monetary,lagged fiscal,-0.00983005870435221
+Bilateral commitment,Monetary,demand shock,0.14376229549403355
+Bilateral commitment,Monetary,cost-push shock,0.3132040781668111
+Bilateral commitment,Fiscal,lagged output,-0.0
+Bilateral commitment,Fiscal,lagged inflation,-0.0
+Bilateral commitment,Fiscal,debt,-3.4574287104783963
+Bilateral commitment,Fiscal,lagged monetary,-0.022675841382824195
+Bilateral commitment,Fiscal,lagged fiscal,0.17484403318258504
+Bilateral commitment,Fiscal,demand shock,0.13257049624727768
+Bilateral commitment,Fiscal,cost-push shock,0.4625316174528563
+Coordination,Monetary,lagged output,-0.0
+Coordination,Monetary,lagged inflation,-0.0
+Coordination,Monetary,debt,-1.3326463665810413
+Coordination,Monetary,lagged monetary,-0.0
+Coordination,Monetary,lagged fiscal,-0.0
+Coordination,Monetary,demand shock,0.2950765382770087
+Coordination,Monetary,cost-push shock,0.2887375677776702
+Coordination,Fiscal,lagged output,-0.0
+Coordination,Fiscal,lagged inflation,-0.0
+Coordination,Fiscal,debt,-4.038867796875946
+Coordination,Fiscal,lagged monetary,-0.0
+Coordination,Fiscal,lagged fiscal,-0.0
+Coordination,Fiscal,demand shock,0.11637692964781067
+Coordination,Fiscal,cost-push shock,0.7109403093276541

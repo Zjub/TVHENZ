@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='0.000000000000064' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNTkuMDl8ODQ2LjA3fDUzLjcwfDQyOS43MA=='>
+    <rect x='59.09' y='53.70' width='786.98' height='376.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTkuMDl8ODQ2LjA3fDUzLjcwfDQyOS43MA==)'>
+<polyline points='59.09,360.47 846.07,360.47 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='59.09,244.60 846.07,244.60 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='59.09,128.73 846.07,128.73 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='159.90,429.70 159.90,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='420.06,429.70 420.06,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='680.22,429.70 680.22,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='59.09,418.41 846.07,418.41 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='59.09,302.54 846.07,302.54 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='59.09,186.66 846.07,186.66 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='59.09,70.79 846.07,70.79 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='289.98,429.70 289.98,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='550.14,429.70 550.14,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='810.30,429.70 810.30,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='94.86,412.61 107.87,411.45 120.87,410.30 133.88,409.14 146.89,407.98 159.90,406.82 172.91,405.66 185.91,404.50 198.92,403.34 211.93,402.19 224.94,401.03 237.95,399.87 250.95,398.71 263.96,397.55 276.97,396.39 289.98,395.23 302.99,394.07 315.99,392.92 329.00,391.76 342.01,390.60 355.02,389.44 368.03,388.28 381.03,387.12 394.04,385.96 407.05,384.80 420.06,383.65 433.07,382.49 446.07,381.33 459.08,380.17 472.09,379.01 485.10,377.85 498.10,376.69 511.11,375.53 524.12,374.38 537.13,373.22 550.14,372.06 563.14,370.90 576.15,369.74 589.16,368.58 602.17,367.42 615.18,366.27 628.18,365.11 641.19,363.95 654.20,362.79 667.21,361.63 680.22,360.47 693.22,359.31 706.23,358.15 719.24,357.00 732.25,355.84 745.26,354.68 758.26,353.52 771.27,352.36 784.28,351.20 797.29,350.04 810.30,348.88 ' style='stroke-width: 1.92; stroke: #F8766D; stroke-linecap: butt;' />
+<polyline points='94.86,406.82 107.87,404.50 120.87,402.19 133.88,399.87 146.89,397.55 159.90,395.23 172.91,392.92 185.91,390.60 198.92,388.28 211.93,385.96 224.94,383.65 237.95,381.33 250.95,379.01 263.96,376.69 276.97,374.38 289.98,372.06 302.99,369.74 315.99,367.42 329.00,365.11 342.01,362.79 355.02,360.47 368.03,358.15 381.03,355.84 394.04,353.52 407.05,351.20 420.06,348.88 433.07,346.57 446.07,344.25 459.08,341.93 472.09,339.61 485.10,337.30 498.10,334.98 511.11,332.66 524.12,330.34 537.13,328.03 550.14,325.71 563.14,323.39 576.15,321.08 589.16,318.76 602.17,316.44 615.18,314.12 628.18,311.81 641.19,309.49 654.20,307.17 667.21,304.85 680.22,302.54 693.22,300.22 706.23,297.90 719.24,295.58 732.25,293.27 745.26,290.95 758.26,288.63 771.27,286.31 784.28,284.00 797.29,281.68 810.30,279.36 ' style='stroke-width: 1.92; stroke: #7CAE00; stroke-linecap: butt;' />
+<polyline points='94.86,401.03 107.87,397.55 120.87,394.07 133.88,390.60 146.89,387.12 159.90,383.65 172.91,380.17 185.91,376.69 198.92,373.22 211.93,369.74 224.94,366.27 237.95,362.79 250.95,359.31 263.96,355.84 276.97,352.36 289.98,348.88 302.99,345.41 315.99,341.93 329.00,338.46 342.01,334.98 355.02,331.50 368.03,328.03 381.03,324.55 394.04,321.08 407.05,317.60 420.06,314.12 433.07,310.65 446.07,307.17 459.08,303.69 472.09,300.22 485.10,296.74 498.10,293.27 511.11,289.79 524.12,286.31 537.13,282.84 550.14,279.36 563.14,275.89 576.15,272.41 589.16,268.93 602.17,265.46 615.18,261.98 628.18,258.50 641.19,255.03 654.20,251.55 667.21,248.08 680.22,244.60 693.22,241.12 706.23,237.65 719.24,234.17 732.25,230.70 745.26,227.22 758.26,223.74 771.27,220.27 784.28,216.79 797.29,213.31 810.30,209.84 ' style='stroke-width: 1.92; stroke: #00BFC4; stroke-linecap: butt;' />
+<polyline points='94.86,389.44 107.87,383.65 120.87,377.85 133.88,372.06 146.89,366.27 159.90,360.47 172.91,354.68 185.91,348.88 198.92,343.09 211.93,337.30 224.94,331.50 237.95,325.71 250.95,319.92 263.96,314.12 276.97,308.33 289.98,302.54 302.99,296.74 315.99,290.95 329.00,285.16 342.01,279.36 355.02,273.57 368.03,267.77 381.03,261.98 394.04,256.19 407.05,250.39 420.06,244.60 433.07,238.81 446.07,233.01 459.08,227.22 472.09,221.43 485.10,215.63 498.10,209.84 511.11,204.05 524.12,198.25 537.13,192.46 550.14,186.66 563.14,180.87 576.15,175.08 589.16,169.28 602.17,163.49 615.18,157.70 628.18,151.90 641.19,146.11 654.20,140.32 667.21,134.52 680.22,128.73 693.22,122.94 706.23,117.14 719.24,111.35 732.25,105.55 745.26,99.76 758.26,93.97 771.27,88.17 784.28,82.38 797.29,76.59 810.30,70.79 ' style='stroke-width: 1.92; stroke: #C77CFF; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='53.71' y='421.99' text-anchor='end' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='5.56px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='53.71' y='306.12' text-anchor='end' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='16.69px' lengthAdjust='spacingAndGlyphs'>100</text>
+<text x='53.71' y='190.25' text-anchor='end' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='16.69px' lengthAdjust='spacingAndGlyphs'>200</text>
+<text x='53.71' y='74.38' text-anchor='end' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='16.69px' lengthAdjust='spacingAndGlyphs'>300</text>
+<text x='289.98' y='442.25' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='5.56px' lengthAdjust='spacingAndGlyphs'>2</text>
+<text x='550.14' y='442.25' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='5.56px' lengthAdjust='spacingAndGlyphs'>4</text>
+<text x='810.30' y='442.25' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='5.56px' lengthAdjust='spacingAndGlyphs'>6</text>
+<text x='452.58' y='455.94' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='230.77px' lengthAdjust='spacingAndGlyphs'>Assumed eligible NZ revenue (NZ$ billions)</text>
+<text transform='translate(22.54,241.70) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='168.05px' lengthAdjust='spacingAndGlyphs'>Gross annual tax (NZ$ millions)</text>
+<line x1='415.06' y1='485.03' x2='428.88' y2='485.03' style='stroke-width: 1.92; stroke: #F8766D; stroke-linecap: butt;' />
+<line x1='457.29' y1='485.03' x2='471.12' y2='485.03' style='stroke-width: 1.92; stroke: #7CAE00; stroke-linecap: butt;' />
+<line x1='415.06' y1='508.29' x2='428.88' y2='508.29' style='stroke-width: 1.92; stroke: #00BFC4; stroke-linecap: butt;' />
+<line x1='457.29' y1='508.29' x2='471.12' y2='508.29' style='stroke-width: 1.92; stroke: #C77CFF; stroke-linecap: butt;' />
+<text x='436.59' y='488.25' style='font-size: 9.00px; font-family: "Arial";' textLength='13.00px' lengthAdjust='spacingAndGlyphs'>1%</text>
+<text x='478.82' y='488.25' style='font-size: 9.00px; font-family: "Arial";' textLength='13.00px' lengthAdjust='spacingAndGlyphs'>2%</text>
+<text x='436.59' y='511.51' style='font-size: 9.00px; font-family: "Arial";' textLength='13.00px' lengthAdjust='spacingAndGlyphs'>3%</text>
+<text x='478.82' y='511.51' style='font-size: 9.00px; font-family: "Arial";' textLength='13.00px' lengthAdjust='spacingAndGlyphs'>5%</text>
+<text x='13.95' y='45.20' style='font-size: 12.00px; font-family: "Arial";' textLength='337.45px' lengthAdjust='spacingAndGlyphs'>Hypothetical gross revenue tax; the withdrawn bill proposed 3%</text>
+<text x='13.95' y='26.84' style='font-size: 18.00px; font-weight: bold; font-family: "Arial";' textLength='378.23px' lengthAdjust='spacingAndGlyphs'>DST revenue depends on its measured base</text>
+<text x='13.95' y='535.33' style='font-size: 9.00px; font-family: "Arial";' textLength='517.03px' lengthAdjust='spacingAndGlyphs'>Scenario | NZ has no enacted DST in this snapshot. The base is assumed, not measured; no avoidance, incidence, compliance or</text>
+<text x='13.95' y='547.75' style='font-size: 9.00px; font-family: "Arial";' textLength='110.50px' lengthAdjust='spacingAndGlyphs'>trade response is modelled.</text>
+<text x='13.95' y='560.17' style='font-size: 9.00px; font-family: "Arial";' textLength='477.19px' lengthAdjust='spacingAndGlyphs'>Sources: IRD DST Bill: withdrawn 21 May 2025; IRD 2023 DST regulatory impact statement; historical revenue estimate</text>
+</g>
+</g>
+</svg>

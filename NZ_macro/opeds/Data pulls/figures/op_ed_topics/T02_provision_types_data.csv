@@ -1,0 +1,12 @@
+type,estimated,n,coverage
+Deferral,FALSE,1,Unestimated
+Deferral,TRUE,1,Annual estimate
+Exemption,FALSE,19,Unestimated
+Exemption,TRUE,11,Annual estimate
+Other / inspect source,TRUE,2,Annual estimate
+Permanent deduction,FALSE,1,Unestimated
+Permanent deduction,TRUE,3,Annual estimate
+Tax credit,FALSE,2,Unestimated
+Tax credit,TRUE,3,Annual estimate
+Timing deduction,FALSE,8,Unestimated
+Timing deduction,TRUE,1,Annual estimate

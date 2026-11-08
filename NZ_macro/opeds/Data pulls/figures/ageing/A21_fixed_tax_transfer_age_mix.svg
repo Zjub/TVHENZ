@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='-0.000000000000064' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNTEuNDF8ODQ0LjA3fDU2LjYyfDQyOC4wOQ=='>
+    <rect x='51.41' y='56.62' width='792.66' height='371.47' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTEuNDF8ODQ0LjA3fDU2LjYyfDQyOC4wOQ==)'>
+<polyline points='51.41,425.34 844.07,425.34 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='51.41,307.56 844.07,307.56 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='51.41,189.79 844.07,189.79 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='51.41,72.01 844.07,72.01 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='258.43,428.09 258.43,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='502.70,428.09 502.70,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='746.98,428.09 746.98,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='87.44,346.26 99.65,341.04 111.87,338.61 124.08,337.04 136.29,336.41 148.51,334.76 160.72,332.94 172.94,331.75 185.15,331.69 197.36,330.91 209.58,328.70 221.79,324.59 234.00,321.26 246.22,317.42 258.43,315.94 270.64,310.35 282.86,309.91 295.07,311.95 307.29,309.34 319.50,307.56 331.71,307.90 343.93,308.30 356.14,308.28 368.35,307.98 380.57,305.06 392.78,302.13 404.99,299.16 417.21,296.10 429.42,293.42 441.64,290.65 453.85,288.18 466.06,285.72 478.28,283.40 490.49,281.40 502.70,279.16 514.92,277.17 527.13,275.50 539.34,274.32 551.56,273.29 563.77,272.27 575.99,271.35 588.20,270.27 600.41,269.31 612.63,268.39 624.84,267.32 637.05,266.23 649.27,265.25 661.48,264.53 673.69,263.84 685.91,263.29 698.12,262.76 710.34,262.23 722.55,261.90 734.76,261.69 746.98,261.72 759.19,261.83 771.40,262.22 783.62,263.00 795.83,263.72 808.04,264.61 ' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<polyline points='87.44,411.21 99.65,406.51 111.87,403.50 124.08,399.68 136.29,395.09 148.51,388.92 160.72,380.12 172.94,372.52 185.15,367.69 197.36,364.40 209.58,361.48 221.79,357.54 234.00,353.96 246.22,347.93 258.43,342.02 270.64,331.36 282.86,321.90 295.07,322.02 307.29,316.10 319.50,307.56 331.71,298.91 343.93,289.62 356.14,280.79 368.35,272.69 380.57,265.02 392.78,257.79 404.99,250.70 417.21,243.81 429.42,236.89 441.64,230.65 453.85,224.07 466.06,217.90 478.28,212.56 490.49,207.73 502.70,203.80 514.92,200.20 527.13,196.57 539.34,193.29 551.56,189.83 563.77,186.58 575.99,183.22 588.20,179.49 600.41,175.27 612.63,170.76 624.84,165.97 637.05,160.75 649.27,154.96 661.48,148.75 673.69,142.44 685.91,135.64 698.12,128.77 710.34,121.88 722.55,115.25 734.76,109.04 746.98,102.67 759.19,96.60 771.40,90.79 783.62,84.98 795.83,79.56 808.04,73.51 ' style='stroke-width: 1.92; stroke: #C56000; stroke-linecap: butt;' />
+<line x1='313.39' y1='428.09' x2='313.39' y2='56.62' style='stroke-width: 1.16; stroke: #999999; stroke-dasharray: 6.21,6.21; stroke-linecap: butt;' />
+<line x1='374.46' y1='428.09' x2='374.46' y2='56.62' style='stroke-width: 1.16; stroke: #999999; stroke-dasharray: 6.21,6.21; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='46.03' y='428.77' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>90</text>
+<text x='46.03' y='311.00' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.98px' lengthAdjust='spacingAndGlyphs'>100</text>
+<text x='46.03' y='193.22' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.27px' lengthAdjust='spacingAndGlyphs'>110</text>
+<text x='46.03' y='75.44' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.98px' lengthAdjust='spacingAndGlyphs'>120</text>
+<text x='258.43' y='440.34' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2020</text>
+<text x='502.70' y='440.34' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2040</text>
+<text x='746.98' y='440.34' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2060</text>
+<text x='447.74' y='453.94' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='52.69px' lengthAdjust='spacingAndGlyphs'>June year</text>
+<text transform='translate(24.54,242.36) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='243.09px' lengthAdjust='spacingAndGlyphs'>Fixed-profile amount per resident: 2025 = 100</text>
+<line x1='368.08' y1='483.04' x2='381.90' y2='483.04' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<line x1='368.08' y1='506.29' x2='381.90' y2='506.29' style='stroke-width: 1.92; stroke: #C56000; stroke-linecap: butt;' />
+<text x='389.61' y='486.62' style='font-size: 10.00px; font-family: "Arial";' textLength='87.30px' lengthAdjust='spacingAndGlyphs'>Selected taxes paid</text>
+<text x='389.61' y='509.88' style='font-size: 10.00px; font-family: "Arial";' textLength='139.53px' lengthAdjust='spacingAndGlyphs'>Selected transfers and services</text>
+<text x='15.94' y='48.13' style='font-size: 12.00px; font-family: "Arial";' textLength='420.83px' lengthAdjust='spacingAndGlyphs'>Reweight the same 2019 tax and benefit age profiles using Treasury population</text>
+<text x='15.94' y='29.55' style='font-size: 19.00px; font-weight: bold; font-family: "Arial";' textLength='552.22px' lengthAdjust='spacingAndGlyphs'>Ageing affects revenue capacity as well as spending demand</text>
+<text x='15.94' y='533.33' style='font-size: 9.00px; font-family: "Arial";' textLength='553.33px' lengthAdjust='spacingAndGlyphs'>Fixed-profile counterfactual: Only age mix changes. No wage growth, policy, tax-rate or behavioural changes; selected profiles do not cover</text>
+<text x='15.94' y='545.75' style='font-size: 9.00px; font-family: "Arial";' textLength='299.50px' lengthAdjust='spacingAndGlyphs'>the entire budget. Not an estimate of future deficits or lifetime redistribution.</text>
+<text x='15.94' y='558.17' style='font-size: 9.00px; font-family: "Arial";' textLength='593.53px' lengthAdjust='spacingAndGlyphs'>Sources: Treasury LTFS 2025 official figure data; LTFM and OLG identified separately; Treasury 2025 Long-Term Fiscal Model, based on BEFU 2025</text>
+</g>
+</g>
+</svg>

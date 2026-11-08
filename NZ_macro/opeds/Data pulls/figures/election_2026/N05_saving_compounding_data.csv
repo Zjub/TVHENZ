@@ -1,0 +1,165 @@
+inflation,years,nominal_interest,starting_balance,basis,real_balance
+2% inflation,0,0.05,100000,Tax on nominal interest,100000
+2% inflation,0,0.05,100000,Tax on positive real interest,100000
+2% inflation,1,0.05,100000,Tax on nominal interest,101323.52941176471
+2% inflation,1,0.05,100000,Tax on positive real interest,101970.58823529413
+2% inflation,2,0.05,100000,Tax on nominal interest,102664.57612456752
+2% inflation,2,0.05,100000,Tax on positive real interest,103980.00865051904
+2% inflation,3,0.05,100000,Tax on nominal interest,104023.37198503976
+2% inflation,3,0.05,100000,Tax on positive real interest,106029.02646804396
+2% inflation,4,0.05,100000,Tax on nominal interest,105400.15190837118
+2% inflation,4,0.05,100000,Tax on positive real interest,108118.42198962015
+2% inflation,5,0.05,100000,Tax on nominal interest,106795.15391892316
+2% inflation,5,0.05,100000,Tax on positive real interest,110248.99089353326
+2% inflation,6,0.05,100000,Tax on nominal interest,108208.61919137952
+2% inflation,6,0.05,100000,Tax on positive real interest,112421.54453761171
+2% inflation,7,0.05,100000,Tax on nominal interest,109640.7920924419
+2% inflation,7,0.05,100000,Tax on positive real interest,114636.91026820584
+2% inflation,8,0.05,100000,Tax on nominal interest,111091.9202230772
+2% inflation,8,0.05,100000,Tax on positive real interest,116895.93173525578
+2% inflation,9,0.05,100000,Tax on nominal interest,112562.2544613238
+2% inflation,9,0.05,100000,Tax on positive real interest,119199.46921356818
+2% inflation,10,0.05,100000,Tax on nominal interest,114052.04900566489
+2% inflation,10,0.05,100000,Tax on positive real interest,121548.3999304238
+2% inflation,11,0.05,100000,Tax on nominal interest,115561.56141897518
+2% inflation,11,0.05,100000,Tax on positive real interest,123943.61839964098
+2% inflation,12,0.05,100000,Tax on nominal interest,117091.05267304988
+2% inflation,12,0.05,100000,Tax on positive real interest,126386.03676222215
+2% inflation,13,0.05,100000,Tax on nominal interest,118640.78719372262
+2% inflation,13,0.05,100000,Tax on positive real interest,128876.585133713
+2% inflation,14,0.05,100000,Tax on nominal interest,120211.03290658072
+2% inflation,14,0.05,100000,Tax on positive real interest,131416.21195840678
+2% inflation,15,0.05,100000,Tax on nominal interest,121802.0612832855
+2% inflation,15,0.05,100000,Tax on positive real interest,134005.8843705283
+2% inflation,16,0.05,100000,Tax on nominal interest,123414.14738850547
+2% inflation,16,0.05,100000,Tax on positive real interest,136646.5885625358
+2% inflation,17,0.05,100000,Tax on nominal interest,125047.56992747102
+2% inflation,17,0.05,100000,Tax on positive real interest,139339.3301606799
+2% inflation,18,0.05,100000,Tax on nominal interest,126702.61129415814
+2% inflation,18,0.05,100000,Tax on positive real interest,142085.1346079639
+2% inflation,19,0.05,100000,Tax on nominal interest,128379.55762011028
+2% inflation,19,0.05,100000,Tax on positive real interest,144885.04755465026
+2% inflation,20,0.05,100000,Tax on nominal interest,130078.69882390586
+2% inflation,20,0.05,100000,Tax on positive real interest,147740.13525646247
+2% inflation,21,0.05,100000,Tax on nominal interest,131800.32866128112
+2% inflation,21,0.05,100000,Tax on positive real interest,150651.48498063398
+2% inflation,22,0.05,100000,Tax on nominal interest,133544.74477591572
+2% inflation,22,0.05,100000,Tax on positive real interest,153620.20541995822
+2% inflation,23,0.05,100000,Tax on nominal interest,135312.24875089113
+2% inflation,23,0.05,100000,Tax on positive real interest,156647.4271149986
+2% inflation,24,0.05,100000,Tax on nominal interest,137103.1461608294
+2% inflation,24,0.05,100000,Tax on positive real interest,159734.3028846177
+2% inflation,25,0.05,100000,Tax on nominal interest,138917.74662472276
+2% inflation,25,0.05,100000,Tax on positive real interest,162882.00826499108
+2% inflation,26,0.05,100000,Tax on nominal interest,140756.36385946177
+2% inflation,26,0.05,100000,Tax on positive real interest,166091.74195727176
+2% inflation,27,0.05,100000,Tax on nominal interest,142619.3157340723
+2% inflation,27,0.05,100000,Tax on positive real interest,169364.72628407684
+2% inflation,28,0.05,100000,Tax on nominal interest,144506.92432467034
+2% inflation,28,0.05,100000,Tax on positive real interest,172702.20765496895
+2% inflation,29,0.05,100000,Tax on nominal interest,146419.51597014396
+2% inflation,29,0.05,100000,Tax on positive real interest,176105.457041111
+2% inflation,30,0.05,100000,Tax on nominal interest,148357.42132857235
+2% inflation,30,0.05,100000,Tax on positive real interest,179575.7704592741
+2% inflation,31,0.05,100000,Tax on nominal interest,150320.9754343917
+2% inflation,31,0.05,100000,Tax on positive real interest,183114.46946538333
+2% inflation,32,0.05,100000,Tax on nominal interest,152310.5177563175
+2% inflation,32,0.05,100000,Tax on positive real interest,186722.90165778945
+2% inflation,33,0.05,100000,Tax on nominal interest,154326.39225603352
+2% inflation,33,0.05,100000,Tax on positive real interest,190402.4411904576
+2% inflation,34,0.05,100000,Tax on nominal interest,156368.9474476575
+2% inflation,34,0.05,100000,Tax on positive real interest,194154.4892962696
+2% inflation,35,0.05,100000,Tax on nominal interest,158438.53645799417
+2% inflation,35,0.05,100000,Tax on positive real interest,197980.4748206373
+2% inflation,36,0.05,100000,Tax on nominal interest,160535.51708758532
+2% inflation,36,0.05,100000,Tax on positive real interest,201881.85476563225
+2% inflation,37,0.05,100000,Tax on nominal interest,162660.25187256807
+2% inflation,37,0.05,100000,Tax on positive real interest,205860.1148448373
+2% inflation,38,0.05,100000,Tax on nominal interest,164813.1081473521
+2% inflation,38,0.05,100000,Tax on positive real interest,209916.77004913267
+2% inflation,39,0.05,100000,Tax on nominal interest,166994.4581081259
+2% inflation,39,0.05,100000,Tax on positive real interest,214053.36522363027
+2% inflation,40,0.05,100000,Tax on nominal interest,169204.67887720407
+2% inflation,40,0.05,100000,Tax on positive real interest,218271.4756559783
+4% inflation,0,0.05,100000,Tax on nominal interest,100000
+4% inflation,0,0.05,100000,Tax on positive real interest,100000
+4% inflation,1,0.05,100000,Tax on nominal interest,99375
+4% inflation,1,0.05,100000,Tax on positive real interest,100644.23076923077
+4% inflation,2,0.05,100000,Tax on nominal interest,98753.90625
+4% inflation,2,0.05,100000,Tax on positive real interest,101292.61187130178
+4% inflation,3,0.05,100000,Tax on nominal interest,98136.6943359375
+4% inflation,3,0.05,100000,Tax on positive real interest,101945.1700439342
+4% inflation,4,0.05,100000,Tax on nominal interest,97523.3399963379
+4% inflation,4,0.05,100000,Tax on positive real interest,102601.93219710184
+4% inflation,5,0.05,100000,Tax on nominal interest,96913.8191213608
+4% inflation,5,0.05,100000,Tax on positive real interest,103262.92541414087
+4% inflation,6,0.05,100000,Tax on nominal interest,96308.1077518523
+4% inflation,6,0.05,100000,Tax on positive real interest,103928.17695286658
+4% inflation,7,0.05,100000,Tax on nominal interest,95706.18207840322
+4% inflation,7,0.05,100000,Tax on positive real interest,104597.71424669756
+4% inflation,8,0.05,100000,Tax on nominal interest,95108.0184404132
+4% inflation,8,0.05,100000,Tax on positive real interest,105271.56490578686
+4% inflation,9,0.05,100000,Tax on nominal interest,94513.59332516062
+4% inflation,9,0.05,100000,Tax on positive real interest,105949.75671816069
+4% inflation,10,0.05,100000,Tax on nominal interest,93922.88336687836
+4% inflation,10,0.05,100000,Tax on positive real interest,106632.3176508642
+4% inflation,11,0.05,100000,Tax on nominal interest,93335.86534583538
+4% inflation,11,0.05,100000,Tax on positive real interest,107319.275851115
+4% inflation,12,0.05,100000,Tax on nominal interest,92752.51618742391
+4% inflation,12,0.05,100000,Tax on positive real interest,108010.6596474635
+4% inflation,13,0.05,100000,Tax on nominal interest,92172.81296125252
+4% inflation,13,0.05,100000,Tax on positive real interest,108706.49755096158
+4% inflation,14,0.05,100000,Tax on nominal interest,91596.73288024469
+4% inflation,14,0.05,100000,Tax on positive real interest,109406.81825633798
+4% inflation,15,0.05,100000,Tax on nominal interest,91024.25329974316
+4% inflation,15,0.05,100000,Tax on positive real interest,110111.6506431817
+4% inflation,16,0.05,100000,Tax on nominal interest,90455.35171661976
+4% inflation,16,0.05,100000,Tax on positive real interest,110821.02377713294
+4% inflation,17,0.05,100000,Tax on nominal interest,89890.0057683909
+4% inflation,17,0.05,100000,Tax on positive real interest,111534.9669110818
+4% inflation,18,0.05,100000,Tax on nominal interest,89328.19323233845
+4% inflation,18,0.05,100000,Tax on positive real interest,112253.50948637434
+4% inflation,19,0.05,100000,Tax on nominal interest,88769.89202463633
+4% inflation,19,0.05,100000,Tax on positive real interest,112976.68113402696
+4% inflation,20,0.05,100000,Tax on nominal interest,88215.08019948237
+4% inflation,20,0.05,100000,Tax on positive real interest,113704.51167594807
+4% inflation,21,0.05,100000,Tax on nominal interest,87663.7359482356
+4% inflation,21,0.05,100000,Tax on positive real interest,114437.03112616812
+4% inflation,22,0.05,100000,Tax on nominal interest,87115.83759855913
+4% inflation,22,0.05,100000,Tax on positive real interest,115174.2696920771
+4% inflation,23,0.05,100000,Tax on nominal interest,86571.36361356813
+4% inflation,23,0.05,100000,Tax on positive real interest,115916.25777567028
+4% inflation,24,0.05,100000,Tax on nominal interest,86030.29259098334
+4% inflation,24,0.05,100000,Tax on positive real interest,116663.025974802
+4% inflation,25,0.05,100000,Tax on nominal interest,85492.60326228969
+4% inflation,25,0.05,100000,Tax on positive real interest,117414.60508444736
+4% inflation,26,0.05,100000,Tax on nominal interest,84958.27449190039
+4% inflation,26,0.05,100000,Tax on positive real interest,118171.02609797216
+4% inflation,27,0.05,100000,Tax on nominal interest,84427.285276326
+4% inflation,27,0.05,100000,Tax on positive real interest,118932.32020841102
+4% inflation,28,0.05,100000,Tax on nominal interest,83899.61474334897
+4% inflation,28,0.05,100000,Tax on positive real interest,119698.51880975367
+4% inflation,29,0.05,100000,Tax on nominal interest,83375.24215120304
+4% inflation,29,0.05,100000,Tax on positive real interest,120469.6534982396
+4% inflation,30,0.05,100000,Tax on nominal interest,82854.14688775803
+4% inflation,30,0.05,100000,Tax on positive real interest,121245.75607366094
+4% inflation,31,0.05,100000,Tax on nominal interest,82336.30846970955
+4% inflation,31,0.05,100000,Tax on positive real interest,122026.85854067394
+4% inflation,32,0.05,100000,Tax on nominal interest,81821.70654177385
+4% inflation,32,0.05,100000,Tax on positive real interest,122812.99311011868
+4% inflation,33,0.05,100000,Tax on nominal interest,81310.32087588777
+4% inflation,33,0.05,100000,Tax on positive real interest,123604.19220034732
+4% inflation,34,0.05,100000,Tax on nominal interest,80802.13137041348
+4% inflation,34,0.05,100000,Tax on positive real interest,124400.48843856112
+4% inflation,35,0.05,100000,Tax on nominal interest,80297.1180493484
+4% inflation,35,0.05,100000,Tax on positive real interest,125201.91466215569
+4% inflation,36,0.05,100000,Tax on nominal interest,79795.26106153998
+4% inflation,36,0.05,100000,Tax on positive real interest,126008.50392007532
+4% inflation,37,0.05,100000,Tax on nominal interest,79296.54067990535
+4% inflation,37,0.05,100000,Tax on positive real interest,126820.2894741758
+4% inflation,38,0.05,100000,Tax on nominal interest,78800.93730065593
+4% inflation,38,0.05,100000,Tax on positive real interest,127637.304800596
+4% inflation,39,0.05,100000,Tax on nominal interest,78308.43144252684
+4% inflation,39,0.05,100000,Tax on positive real interest,128459.58359113827
+4% inflation,40,0.05,100000,Tax on nominal interest,77819.00374601105
+4% inflation,40,0.05,100000,Tax on positive real interest,129287.15975465812

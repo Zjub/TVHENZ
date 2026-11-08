@@ -1,0 +1,16 @@
+hlpi_name,year,tenure,percent
+All households,2024,owned_without_mortgage,33.599999999999994
+All households,2024,owned_with_mortgage,32.2
+All households,2024,other_tenure,34.2
+Beneficiary,2024,owned_without_mortgage,17.2
+Beneficiary,2024,owned_with_mortgage,9.2
+Beneficiary,2024,other_tenure,73.6
+Income quintile 1 (low),2024,owned_without_mortgage,54.7
+Income quintile 1 (low),2024,owned_with_mortgage,12
+Income quintile 1 (low),2024,other_tenure,33.3
+Income quintile 5 (high),2024,owned_without_mortgage,29.199999999999996
+Income quintile 5 (high),2024,owned_with_mortgage,49.9
+Income quintile 5 (high),2024,other_tenure,20.900000000000006
+Superannuitant,2024,owned_without_mortgage,77.2
+Superannuitant,2024,owned_with_mortgage,8.5
+Superannuitant,2024,other_tenure,14.299999999999997

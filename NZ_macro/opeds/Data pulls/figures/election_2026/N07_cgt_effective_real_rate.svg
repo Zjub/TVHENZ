@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='0.00' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNDUuMTZ8ODQ0LjA3fDU2LjYyfDQxNi42MA=='>
+    <rect x='45.16' y='56.62' width='798.91' height='359.97' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNDUuMTZ8ODQ0LjA3fDU2LjYyfDQxNi42MA==)'>
+<polyline points='45.16,328.71 844.07,328.71 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='45.16,209.49 844.07,209.49 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='45.16,90.28 844.07,90.28 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='62.85,416.60 62.85,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='249.08,416.60 249.08,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='435.31,416.60 435.31,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='621.53,416.60 621.53,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='807.76,416.60 807.76,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='81.47,72.99 100.10,77.81 118.72,82.55 137.34,87.21 155.97,91.80 174.59,96.31 193.21,100.75 211.83,105.12 230.46,109.42 249.08,113.65 267.70,117.81 286.32,121.90 304.95,125.93 323.57,129.89 342.19,133.79 360.82,137.62 379.44,141.39 398.06,145.11 416.68,148.76 435.31,152.36 453.93,155.90 472.55,159.38 491.17,162.80 509.80,166.18 528.42,169.50 547.04,172.76 565.67,175.98 584.29,179.14 602.91,182.25 621.53,185.32 640.16,188.34 658.78,191.31 677.40,194.23 696.02,197.11 714.65,199.94 733.27,202.73 751.89,205.47 770.51,208.17 789.14,210.83 807.76,213.45 ' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<polyline points='81.47,236.61 100.10,239.82 118.72,242.96 137.34,246.05 155.97,249.07 174.59,252.03 193.21,254.94 211.83,257.79 230.46,260.58 249.08,263.32 267.70,266.00 286.32,268.64 304.95,271.22 323.57,273.75 342.19,276.23 360.82,278.66 379.44,281.04 398.06,283.38 416.68,285.67 435.31,287.92 453.93,290.12 472.55,292.28 491.17,294.39 509.80,296.47 528.42,298.50 547.04,300.50 565.67,302.45 584.29,304.37 602.91,306.25 621.53,308.09 640.16,309.90 658.78,311.67 677.40,313.41 696.02,315.11 714.65,316.78 733.27,318.42 751.89,320.02 770.51,321.59 789.14,323.14 807.76,324.65 ' style='stroke-width: 1.92; stroke: #C56000; stroke-linecap: butt;' />
+<polyline points='81.47,318.42 100.10,320.81 118.72,323.14 137.34,325.41 155.97,327.61 174.59,329.76 193.21,331.85 211.83,333.89 230.46,335.87 249.08,337.80 267.70,339.68 286.32,341.50 304.95,343.28 323.57,345.00 342.19,346.68 360.82,348.32 379.44,349.91 398.06,351.45 416.68,352.95 435.31,354.41 453.93,355.83 472.55,357.21 491.17,358.55 509.80,359.85 528.42,361.11 547.04,362.34 565.67,363.53 584.29,364.69 602.91,365.82 621.53,366.91 640.16,367.97 658.78,369.00 677.40,370.00 696.02,370.97 714.65,371.91 733.27,372.82 751.89,373.71 770.51,374.57 789.14,375.40 807.76,376.21 ' style='stroke-width: 1.92; stroke: #395A9A; stroke-linecap: butt;' />
+<line x1='45.16' y1='400.23' x2='844.07' y2='400.23' style='stroke-width: 1.16; stroke-dasharray: 6.21,6.21; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='39.78' y='332.14' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>40</text>
+<text x='39.78' y='212.93' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>60</text>
+<text x='39.78' y='93.72' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>80</text>
+<text x='62.85' y='428.84' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='5.33px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='249.08' y='428.84' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>10</text>
+<text x='435.31' y='428.84' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>20</text>
+<text x='621.53' y='428.84' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>30</text>
+<text x='807.76' y='428.84' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>40</text>
+<text x='444.62' y='441.73' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='148.33px' lengthAdjust='spacingAndGlyphs'>Years held after valuation date</text>
+<text transform='translate(23.82,236.61) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='123.56px' lengthAdjust='spacingAndGlyphs'>Tax / real capital gain (%)</text>
+<line x1='353.40' y1='470.62' x2='367.22' y2='470.62' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<line x1='449.33' y1='470.62' x2='463.16' y2='470.62' style='stroke-width: 1.92; stroke: #C56000; stroke-linecap: butt;' />
+<line x1='353.40' y1='493.87' x2='367.22' y2='493.87' style='stroke-width: 1.92; stroke: #395A9A; stroke-linecap: butt;' />
+<text x='374.93' y='474.20' style='font-size: 10.00px; font-family: "Arial";' textLength='66.70px' lengthAdjust='spacingAndGlyphs'>1% real growth</text>
+<text x='470.86' y='474.20' style='font-size: 10.00px; font-family: "Arial";' textLength='66.70px' lengthAdjust='spacingAndGlyphs'>2% real growth</text>
+<text x='374.93' y='497.46' style='font-size: 10.00px; font-family: "Arial";' textLength='66.70px' lengthAdjust='spacingAndGlyphs'>4% real growth</text>
+<text x='15.94' y='48.13' style='font-size: 12.00px; font-family: "Arial";' textLength='311.45px' lengthAdjust='spacingAndGlyphs'>28% of nominal gains; 2% inflation; positive real gains only</text>
+<text x='15.94' y='29.55' style='font-size: 19.00px; font-weight: bold; font-family: "Arial";' textLength='426.91px' lengthAdjust='spacingAndGlyphs'>A nominal tax rate and a tax on real gains differ</text>
+<text x='15.94' y='520.91' style='font-size: 9.00px; font-family: "Arial";' textLength='561.00px' lengthAdjust='spacingAndGlyphs'>Proposed-policy scenario: Undefined when real gains are zero, so those cases are excluded. Capital-only comparison: ignores rental returns,</text>
+<text x='15.94' y='533.33' style='font-size: 9.00px; font-family: "Arial";' textLength='294.83px' lengthAdjust='spacingAndGlyphs'>deductions and financing. Indexation also changes revenue and simplicity.</text>
+<text x='15.94' y='545.75' style='font-size: 9.00px; font-family: "Arial";' textLength='590.67px' lengthAdjust='spacingAndGlyphs'>Sources: Labour proposed property CGT; party policy, not enacted law; Labour original detailed CGT proposal, October 2025: no inflation indexation;</text>
+<text x='15.94' y='558.17' style='font-size: 9.00px; font-family: "Arial";' textLength='82.50px' lengthAdjust='spacingAndGlyphs'>archival party design</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,7 @@
+check,passed,items_checked
+Chart count,True,28
+All PNG SVG CSV artifacts readable,True,84
+SVG text in image bounds,True,28
+Gallery links resolve,True,148
+Manifest hashes match,True,10
+Source/model checks pass,True,19

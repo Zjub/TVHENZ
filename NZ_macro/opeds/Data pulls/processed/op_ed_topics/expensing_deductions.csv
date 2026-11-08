@@ -1,0 +1,16 @@
+method,year,deduction,tax_shield
+20% Investment Boost,0,36000,10080.000000000002
+20% Investment Boost,1,16000,4480
+20% Investment Boost,2,16000,4480
+20% Investment Boost,3,16000,4480
+20% Investment Boost,4,16000,4480
+Full expensing,0,100000,28000.000000000004
+Full expensing,1,0,0
+Full expensing,2,0,0
+Full expensing,3,0,0
+Full expensing,4,0,0
+Standard depreciation,0,20000,5600.000000000001
+Standard depreciation,1,20000,5600.000000000001
+Standard depreciation,2,20000,5600.000000000001
+Standard depreciation,3,20000,5600.000000000001
+Standard depreciation,4,20000,5600.000000000001

@@ -1,0 +1,8 @@
+check,result
+72 consecutive benefit quarters,PASS
+Main benefit components reconcile within rounding,PASS
+Jobseeker subgroups reconcile within rounding,PASS
+2001-2020 PDF expenses reconcile,PASS
+2001-2025 grouped expenses reconcile,PASS
+Archival pension anchors,PASS
+No duplicate years in pension splice,PASS

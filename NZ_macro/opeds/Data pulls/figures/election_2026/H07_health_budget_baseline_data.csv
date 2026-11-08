@@ -1,0 +1,11 @@
+measure,year,status,value,source_sheet,source_row,block,gdp_millions,percent_gdp
+Health,2022,Actual,27781,Core Crown Expense Tables,8,Functional expense,365304,7.60489893349101
+Health,2023,Actual,28489,Core Crown Expense Tables,8,Functional expense,401827,7.089867032329834
+Health,2024,Actual,29999,Core Crown Expense Tables,8,Functional expense,420858,7.128057444553745
+Health,2025,Actual,30311,Core Crown Expense Tables,8,Functional expense,435071,6.96690884936022
+Health,2026,Unaudited Actual,32917,Core Crown Expense Tables,8,Functional expense,455882,7.220508815877793
+Health,2027,Forecast,34472,Core Crown Expense Tables,8,Functional expense,480119,7.179886653100586
+Health,2028,Forecast,34094,Core Crown Expense Tables,8,Functional expense,507501,6.718016319179666
+Health,2029,Forecast,34209,Core Crown Expense Tables,8,Functional expense,532347,6.4260717163804815
+Health,2030,Forecast,34294,Core Crown Expense Tables,8,Functional expense,557351,6.153034622706338
+Health,2031,Forecast,34452,Core Crown Expense Tables,8,Functional expense,582358,5.915948608931276

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='-0.000000000000064' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNTQuMDh8ODQ0LjA3fDU2LjYyfDQyOC4wOQ=='>
+    <rect x='54.08' y='56.62' width='789.99' height='371.47' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTQuMDh8ODQ0LjA3fDU2LjYyfDQyOC4wOQ==)'>
+<polyline points='54.08,350.10 844.07,350.10 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='54.08,256.84 844.07,256.84 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='54.08,163.57 844.07,163.57 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='54.08,70.30 844.07,70.30 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='260.41,428.09 260.41,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='503.85,428.09 503.85,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='747.30,428.09 747.30,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='89.99,392.49 102.16,384.85 114.34,375.89 126.51,369.93 138.68,362.87 150.85,361.27 163.03,366.01 175.20,371.19 187.37,370.04 199.54,372.25 211.72,372.23 223.89,377.16 236.06,385.11 248.23,392.06 260.41,400.42 272.58,402.27 284.75,406.77 296.92,411.01 309.09,411.21 321.27,405.15 333.44,395.88 345.61,387.88 357.78,389.67 369.96,383.78 382.13,375.49 394.30,364.15 406.47,340.46 418.65,320.69 430.82,305.77 442.99,290.57 455.16,279.63 467.34,268.47 479.51,257.15 491.68,243.75 503.85,229.18 516.03,213.13 528.20,197.06 540.37,180.01 552.54,162.47 564.72,146.23 576.89,128.28 589.06,110.54 601.23,95.23 613.41,84.45 625.58,78.85 637.75,76.63 649.92,75.62 662.10,75.35 674.27,74.29 686.44,75.37 698.61,73.73 710.79,73.51 722.96,75.88 735.13,79.79 747.30,86.45 759.48,94.21 771.65,99.76 783.82,105.11 795.99,105.83 808.17,104.85 ' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<line x1='315.18' y1='428.09' x2='315.18' y2='56.62' style='stroke-width: 1.16; stroke: #999999; stroke-dasharray: 6.21,6.21; stroke-linecap: butt;' />
+<line x1='376.04' y1='428.09' x2='376.04' y2='56.62' style='stroke-width: 1.16; stroke: #999999; stroke-dasharray: 6.21,6.21; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='48.70' y='353.54' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='18.66px' lengthAdjust='spacingAndGlyphs'>12.5</text>
+<text x='48.70' y='260.27' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='18.66px' lengthAdjust='spacingAndGlyphs'>15.0</text>
+<text x='48.70' y='167.00' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='18.66px' lengthAdjust='spacingAndGlyphs'>17.5</text>
+<text x='48.70' y='73.74' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='18.66px' lengthAdjust='spacingAndGlyphs'>20.0</text>
+<text x='260.41' y='440.34' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2020</text>
+<text x='503.85' y='440.34' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2040</text>
+<text x='747.30' y='440.34' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2060</text>
+<text x='449.08' y='453.94' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='52.69px' lengthAdjust='spacingAndGlyphs'>June year</text>
+<text transform='translate(24.54,242.36) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='179.75px' lengthAdjust='spacingAndGlyphs'>Share of population aged 65+ (%)</text>
+<line x1='375.22' y1='483.04' x2='389.04' y2='483.04' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<text x='396.75' y='486.62' style='font-size: 10.00px; font-family: "Arial";' textLength='127.92px' lengthAdjust='spacingAndGlyphs'>85+ among people aged 65+</text>
+<text x='15.94' y='48.13' style='font-size: 12.00px; font-family: "Arial";' textLength='411.84px' lengthAdjust='spacingAndGlyphs'>Share of the 65+ population aged 85 or above, Treasury calibrated population</text>
+<text x='15.94' y='29.55' style='font-size: 19.00px; font-weight: bold; font-family: "Arial";' textLength='325.17px' lengthAdjust='spacingAndGlyphs'>The older population is itself ageing</text>
+<text x='15.94' y='533.33' style='font-size: 9.00px; font-family: "Arial";' textLength='546.83px' lengthAdjust='spacingAndGlyphs'>Historical / forecast / projection: 2025 LTFM vintage: outturn through 2024, BEFU 2025 forecast to 2029, conditional projection from 2030.</text>
+<text x='15.94' y='545.75' style='font-size: 9.00px; font-family: "Arial";' textLength='561.50px' lengthAdjust='spacingAndGlyphs'>Not an updated PREFU projection. An increase within retirement ages matters for care needs even with an unchanged pension eligibility age.</text>
+<text x='15.94' y='558.17' style='font-size: 9.00px; font-family: "Arial";' textLength='285.02px' lengthAdjust='spacingAndGlyphs'>Sources: Treasury 2025 Long-Term Fiscal Model, based on BEFU 2025</text>
+</g>
+</g>
+</svg>

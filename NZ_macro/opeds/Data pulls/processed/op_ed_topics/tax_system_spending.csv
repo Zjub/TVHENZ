@@ -1,0 +1,67 @@
+programme,year_end,year_basis,value_millions,status,pdf_page,earlier_as_at_value_2025
+Company donations deduction,2021,income,27,Actual,7,24
+Company donations deduction,2022,income,40,Actual,7,24
+Company donations deduction,2023,income,25,Actual,7,24
+Company donations deduction,2024,income,33,Actual,7,24
+Company donations deduction,2025,income,24,Estimated actual,7,24
+Company donations deduction,2026,income,24,Forecast,7,24
+Donations tax credit,2021,income,310,Actual,7,351
+Donations tax credit,2022,income,328,Actual,7,351
+Donations tax credit,2023,income,330,Actual,7,351
+Donations tax credit,2024,income,341,Actual,7,351
+Donations tax credit,2025,income,367,Estimated actual,7,351
+Donations tax credit,2026,income,367,Forecast,7,351
+Independent earner tax credit,2021,income,214,Actual,7,328
+Independent earner tax credit,2022,income,192,Actual,7,328
+Independent earner tax credit,2023,income,176,Actual,7,328
+Independent earner tax credit,2024,income,180,Actual,7,328
+Independent earner tax credit,2025,income,331,Estimated actual,7,328
+Independent earner tax credit,2026,income,391,Forecast,7,328
+Maori Authority donations,2021,income,5.9,Actual,7,7.6
+Maori Authority donations,2022,income,4.8,Actual,7,7.6
+Maori Authority donations,2023,income,5.4,Actual,7,7.6
+Maori Authority donations,2024,income,7.3,Actual,7,7.6
+Maori Authority donations,2025,income,7.7,Estimated actual,7,7.6
+Maori Authority donations,2026,income,7.7,Forecast,7,7.6
+Family tax credit,2021,fiscal,2103,Actual,7,
+Family tax credit,2022,fiscal,2017,Actual,7,
+Family tax credit,2023,fiscal,2152,Actual,7,
+Family tax credit,2024,fiscal,2297,Actual,7,
+Family tax credit,2025,fiscal,2434,Estimate,7,
+Family tax credit,2026,fiscal,2449,Forecast,7,
+In-work tax credit,2021,fiscal,572,Actual,7,
+In-work tax credit,2022,fiscal,506,Actual,7,
+In-work tax credit,2023,fiscal,464,Actual,7,
+In-work tax credit,2024,fiscal,437,Actual,7,
+In-work tax credit,2025,fiscal,550,Estimate,7,
+In-work tax credit,2026,fiscal,647,Forecast,7,
+Minimum family tax credit,2021,fiscal,13,Actual,7,
+Minimum family tax credit,2022,fiscal,13,Actual,7,
+Minimum family tax credit,2023,fiscal,12,Actual,7,
+Minimum family tax credit,2024,fiscal,12,Actual,7,
+Minimum family tax credit,2025,fiscal,11,Estimate,7,
+Minimum family tax credit,2026,fiscal,9,Forecast,7,
+Best Start payment,2021,fiscal,271,Actual,7,
+Best Start payment,2022,fiscal,308,Actual,7,
+Best Start payment,2023,fiscal,321,Actual,7,
+Best Start payment,2024,fiscal,336,Actual,7,
+Best Start payment,2025,fiscal,346,Estimate,7,
+Best Start payment,2026,fiscal,327,Forecast,7,
+FamilyBoost,2021,fiscal,,Actual,8,
+FamilyBoost,2022,fiscal,,Actual,8,
+FamilyBoost,2023,fiscal,,Actual,8,
+FamilyBoost,2024,fiscal,,Actual,8,
+FamilyBoost,2025,fiscal,51,Estimate,8,
+FamilyBoost,2026,fiscal,140,Forecast,8,
+KiwiSaver tax credit,2021,fiscal,916,Actual,8,
+KiwiSaver tax credit,2022,fiscal,964,Actual,8,
+KiwiSaver tax credit,2023,fiscal,996,Actual,8,
+KiwiSaver tax credit,2024,fiscal,1011,Actual,8,
+KiwiSaver tax credit,2025,fiscal,1017,Estimate,8,
+KiwiSaver tax credit,2026,fiscal,556,Forecast,8,
+R&D tax incentive,2021,fiscal,313,Actual,8,
+R&D tax incentive,2022,fiscal,473,Actual,8,
+R&D tax incentive,2023,fiscal,64,Actual,8,
+R&D tax incentive,2024,fiscal,317,Actual,8,
+R&D tax incentive,2025,fiscal,532,Estimate,8,
+R&D tax incentive,2026,fiscal,626,Forecast,8,

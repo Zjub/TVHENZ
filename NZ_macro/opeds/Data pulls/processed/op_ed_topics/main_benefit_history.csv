@@ -1,0 +1,361 @@
+date,recipients,source_id,source_vintage,source_sheet,source_row,programme,estimate_basis
+2008-09-30,95603,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2008-09-30,79178,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2008-09-30,89044,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2008-09-30,5783,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2008-09-30,269608,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2008-12-31,102809,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2008-12-31,80906,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2008-12-31,89168,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2008-12-31,13293,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2008-12-31,286176,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2009-03-31,111886,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2009-03-31,81803,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2009-03-31,89710,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2009-03-31,5560,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2009-03-31,288959,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2009-06-30,130352,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2009-06-30,83387,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2009-06-30,90560,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2009-06-30,5997,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2009-06-30,310296,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2009-09-30,143628,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2009-09-30,85319,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2009-09-30,91342,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2009-09-30,6522,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2009-09-30,326811,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2009-12-31,148274,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2009-12-31,87067,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2009-12-31,91525,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2009-12-31,18610,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2009-12-31,345476,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2010-03-31,140702,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2010-03-31,86947,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2010-03-31,91347,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2010-03-31,5818,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2010-03-31,324814,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2010-06-30,146385,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2010-06-30,88110,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2010-06-30,92012,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2010-06-30,6417,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2010-06-30,332924,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2010-09-30,150803,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2010-09-30,88624,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2010-09-30,92049,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2010-09-30,6736,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2010-09-30,338212,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2010-12-31,149569,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2010-12-31,89432,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2010-12-31,92024,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2010-12-31,21682,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2010-12-31,352707,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2011-03-31,144177,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2011-03-31,89260,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2011-03-31,92073,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2011-03-31,6019,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2011-03-31,331529,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2011-06-30,139931,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2011-06-30,89056,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2011-06-30,92084,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2011-06-30,6746,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2011-06-30,327817,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2011-09-30,140843,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2011-09-30,89164,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2011-09-30,92001,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2011-09-30,6488,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2011-09-30,328496,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2011-12-31,143497,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2011-12-31,89856,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2011-12-31,91693,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2011-12-31,25886,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2011-12-31,350932,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2012-03-31,137028,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2012-03-31,88509,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2012-03-31,91207,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2012-03-31,6207,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2012-03-31,322951,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2012-06-30,134512,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2012-06-30,87662,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2012-06-30,91309,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2012-06-30,6558,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2012-06-30,320041,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2012-09-30,136020,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2012-09-30,86967,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2012-09-30,91376,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2012-09-30,6579,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2012-09-30,320942,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2012-12-31,137370,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2012-12-31,85939,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2012-12-31,91514,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2012-12-31,24272,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2012-12-31,339095,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2013-03-31,128784,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2013-03-31,84462,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2013-03-31,91367,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2013-03-31,5533,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2013-03-31,310146,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2013-06-30,128608,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast
+2013-06-30,82897,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast
+2013-06-30,91862,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast
+2013-06-30,6415,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast
+2013-06-30,309782,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast
+2013-09-30,126470,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,Observed current-category count
+2013-09-30,79699,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,Observed current-category count
+2013-09-30,92072,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,Observed current-category count
+2013-09-30,6153,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,Observed current-category count
+2013-09-30,304394,msd_national_2013,2013,All main benefits 2008-2013,18,Total,Observed current-category count
+2013-12-31,130225,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count
+2013-12-31,77843,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count
+2013-12-31,92661,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count
+2013-12-31,21140,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count
+2013-12-31,321869,msd_national_2018,2018,Summary table - last 5 years,8,Total,Observed current-category count
+2014-03-31,121953,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count
+2014-03-31,75844,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count
+2014-03-31,92960,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count
+2014-03-31,4563,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count
+2014-03-31,295320,msd_national_2018,2018,Summary table - last 5 years,8,Total,Observed current-category count
+2014-06-30,121131,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count
+2014-06-30,74027,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count
+2014-06-30,93257,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count
+2014-06-30,5171,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count
+2014-06-30,293586,msd_national_2018,2018,Summary table - last 5 years,8,Total,Observed current-category count
+2014-09-30,123133,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count
+2014-09-30,72589,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count
+2014-09-30,93852,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count
+2014-09-30,4747,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count
+2014-09-30,294321,msd_national_2018,2018,Summary table - last 5 years,8,Total,Observed current-category count
+2014-12-31,124631,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count
+2014-12-31,72534,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count
+2014-12-31,93867,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count
+2014-12-31,18113,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count
+2014-12-31,309145,msd_national_2018,2018,Summary table - last 5 years,8,Total,Observed current-category count
+2015-03-31,116893,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count
+2015-03-31,70373,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count
+2015-03-31,93580,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count
+2015-03-31,3414,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count
+2015-03-31,284260,msd_national_2018,2018,Summary table - last 5 years,8,Total,Observed current-category count
+2015-06-30,118072,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count
+2015-06-30,69240,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count
+2015-06-30,93959,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count
+2015-06-30,4078,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count
+2015-06-30,285349,msd_national_2018,2018,Summary table - last 5 years,8,Total,Observed current-category count
+2015-09-30,120901,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count
+2015-09-30,67887,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count
+2015-09-30,93850,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count
+2015-09-30,4529,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count
+2015-09-30,287167,msd_national_2018,2018,Summary table - last 5 years,8,Total,Observed current-category count
+2015-12-31,122927,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count
+2015-12-31,68380,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count
+2015-12-31,93848,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count
+2015-12-31,16194,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count
+2015-12-31,301349,msd_national_2018,2018,Summary table - last 5 years,8,Total,Observed current-category count
+2016-03-31,117134,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count
+2016-03-31,66387,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count
+2016-03-31,93250,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count
+2016-03-31,3120,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count
+2016-03-31,279891,msd_national_2018,2018,Summary table - last 5 years,8,Total,Observed current-category count
+2016-06-30,117954,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count
+2016-06-30,65422,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count
+2016-06-30,93243,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count
+2016-06-30,3558,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count
+2016-06-30,280177,msd_national_2018,2018,Summary table - last 5 years,8,Total,Observed current-category count
+2016-09-30,122284,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count
+2016-09-30,64372,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count
+2016-09-30,93257,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count
+2016-09-30,3962,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count
+2016-09-30,283875,msd_national_2018,2018,Summary table - last 5 years,8,Total,Observed current-category count
+2016-12-31,124311,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2016-12-31,64971,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2016-12-31,93420,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2016-12-31,14310,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2016-12-31,297009,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2017-03-31,119406,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2017-03-31,62214,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2017-03-31,93108,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2017-03-31,3513,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2017-03-31,278238,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2017-06-30,118776,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2017-06-30,60630,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2017-06-30,92991,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2017-06-30,3933,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2017-06-30,276333,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2017-09-30,120726,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2017-09-30,59502,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2017-09-30,92847,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2017-09-30,4143,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2017-09-30,277218,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2017-12-31,123039,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2017-12-31,60678,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2017-12-31,93021,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2017-12-31,13047,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2017-12-31,289788,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2018-03-31,118755,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2018-03-31,58830,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2018-03-31,92472,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2018-03-31,3327,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2018-03-31,273387,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2018-06-30,122514,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2018-06-30,58557,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2018-06-30,92643,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2018-06-30,3696,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2018-06-30,277410,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2018-09-30,129645,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2018-09-30,58620,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2018-09-30,92415,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2018-09-30,3639,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2018-09-30,284316,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2018-12-31,134046,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2018-12-31,59871,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2018-12-31,92688,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2018-12-31,12738,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2018-12-31,299343,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2019-03-31,131721,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2019-03-31,58824,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2019-03-31,92502,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2019-03-31,3402,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2019-03-31,286449,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2019-06-30,136233,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2019-06-30,59262,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2019-06-30,92856,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2019-06-30,3618,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2019-06-30,291969,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2019-09-30,142932,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2019-09-30,59715,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2019-09-30,93063,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2019-09-30,3762,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2019-09-30,299472,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2019-12-31,147465,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2019-12-31,61188,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2019-12-31,93594,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2019-12-31,12162,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2019-12-31,314409,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2020-03-31,151743,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2020-03-31,60984,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2020-03-31,93861,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2020-03-31,3405,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2020-03-31,309993,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2020-06-30,190455,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2020-06-30,64029,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2020-06-30,94143,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2020-06-30,4809,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2020-06-30,353439,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2020-09-30,204117,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2020-09-30,65856,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2020-09-30,94146,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2020-09-30,5184,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2020-09-30,369300,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2020-12-31,212466,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2020-12-31,67563,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2020-12-31,94419,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2020-12-31,15048,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2020-12-31,389499,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2021-03-31,201300,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count
+2021-03-31,66753,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count
+2021-03-31,94368,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count
+2021-03-31,3510,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count
+2021-03-31,365934,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count
+2021-06-30,190260,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2021-06-30,65967,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2021-06-30,94701,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2021-06-30,3816,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2021-06-30,354744,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2021-09-30,193635,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2021-09-30,66627,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2021-09-30,94599,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2021-09-30,4638,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2021-09-30,359493,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2021-12-31,187989,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2021-12-31,73263,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2021-12-31,93918,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2021-12-31,13002,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2021-12-31,368172,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2022-03-31,177642,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2022-03-31,72372,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2022-03-31,95007,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2022-03-31,3315,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2022-03-31,348339,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2022-06-30,170763,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2022-06-30,72687,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2022-06-30,97710,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2022-06-30,3465,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2022-06-30,344622,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2022-09-30,170037,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2022-09-30,72897,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2022-09-30,99258,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2022-09-30,3573,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2022-09-30,345762,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2022-12-31,170103,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2022-12-31,73560,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2022-12-31,100038,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2022-12-31,10200,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2022-12-31,353904,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2023-03-31,168498,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2023-03-31,73572,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2023-03-31,100095,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2023-03-31,3246,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2023-03-31,345417,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2023-06-30,173130,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2023-06-30,74166,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2023-06-30,100878,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2023-06-30,3582,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2023-06-30,351759,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2023-09-30,181509,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2023-09-30,75000,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2023-09-30,101364,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2023-09-30,4221,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2023-09-30,362094,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2023-12-31,189798,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2023-12-31,76170,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2023-12-31,101502,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2023-12-31,11241,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2023-12-31,378711,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2024-03-31,187986,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2024-03-31,76338,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2024-03-31,102090,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2024-03-31,3834,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2024-03-31,370251,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2024-06-30,196434,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2024-06-30,76959,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2024-06-30,103152,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2024-06-30,4344,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2024-06-30,380889,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2024-09-30,204765,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2024-09-30,78027,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2024-09-30,103824,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2024-09-30,4611,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2024-09-30,391224,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2024-12-31,213321,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2024-12-31,79296,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2024-12-31,104469,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2024-12-31,12576,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2024-12-31,409665,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2025-03-31,209838,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2025-03-31,79341,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2025-03-31,104700,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2025-03-31,4284,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2025-03-31,398163,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2025-06-30,216009,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2025-06-30,79953,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2025-06-30,105642,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2025-06-30,4524,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2025-06-30,406128,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2025-09-30,217818,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2025-09-30,80568,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2025-09-30,106890,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2025-09-30,5052,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2025-09-30,410328,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2025-12-31,223512,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2025-12-31,81534,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2025-12-31,107760,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2025-12-31,14430,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2025-12-31,427236,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2026-03-31,215214,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2026-03-31,81531,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2026-03-31,108498,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2026-03-31,4335,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2026-03-31,409575,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count
+2026-06-30,218481,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count
+2026-06-30,81255,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count
+2026-06-30,109500,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count
+2026-06-30,4455,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count
+2026-06-30,413691,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count

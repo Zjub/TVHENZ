@@ -1,0 +1,386 @@
+year,measure,value_millions,original_cell,status,source_id,source_vintage,pdf_page
+2001,New Zealand Superannuation,5273.0,"5,273",Actual,treasury_hyefu_2005,2005,1
+2002,New Zealand Superannuation,5450.0,"5,450",Actual,treasury_hyefu_2005,2005,1
+2003,New Zealand Superannuation,5642.0,"5,642",Actual,treasury_hyefu_2005,2005,1
+2004,New Zealand Superannuation,5889.0,"5,889",Actual,treasury_hyefu_2005,2005,1
+2005,New Zealand Superannuation,6083.0,"6,083",Actual,treasury_hyefu_2005,2005,1
+2001,Domestic Purposes Benefit,1444.0,"1,444",Actual,treasury_hyefu_2005,2005,1
+2002,Domestic Purposes Benefit,1501.0,"1,501",Actual,treasury_hyefu_2005,2005,1
+2003,Domestic Purposes Benefit,1520.0,"1,520",Actual,treasury_hyefu_2005,2005,1
+2004,Domestic Purposes Benefit,1569.0,"1,569",Actual,treasury_hyefu_2005,2005,1
+2005,Domestic Purposes Benefit,1547.0,"1,547",Actual,treasury_hyefu_2005,2005,1
+2001,Unemployment Benefit,,..,Actual,treasury_hyefu_2005,2005,1
+2002,Unemployment Benefit,1369.0,"1,369",Actual,treasury_hyefu_2005,2005,1
+2003,Unemployment Benefit,1274.0,"1,274",Actual,treasury_hyefu_2005,2005,1
+2004,Unemployment Benefit,1084.0,"1,084",Actual,treasury_hyefu_2005,2005,1
+2005,Unemployment Benefit,831.0,831,Actual,treasury_hyefu_2005,2005,1
+2001,Community Wage,1849.0,"1,849",Actual,treasury_hyefu_2005,2005,1
+2002,Community Wage,,..,Actual,treasury_hyefu_2005,2005,1
+2003,Community Wage,,..,Actual,treasury_hyefu_2005,2005,1
+2004,Community Wage,,..,Actual,treasury_hyefu_2005,2005,1
+2005,Community Wage,,..,Actual,treasury_hyefu_2005,2005,1
+2001,Accommodation Supplement,795.0,795,Actual,treasury_hyefu_2005,2005,1
+2002,Accommodation Supplement,720.0,720,Actual,treasury_hyefu_2005,2005,1
+2003,Accommodation Supplement,706.0,706,Actual,treasury_hyefu_2005,2005,1
+2004,Accommodation Supplement,702.0,702,Actual,treasury_hyefu_2005,2005,1
+2005,Accommodation Supplement,750.0,750,Actual,treasury_hyefu_2005,2005,1
+2001,Invalids Benefit,745.0,745,Actual,treasury_hyefu_2005,2005,1
+2002,Invalids Benefit,832.0,832,Actual,treasury_hyefu_2005,2005,1
+2003,Invalids Benefit,914.0,914,Actual,treasury_hyefu_2005,2005,1
+2004,Invalids Benefit,976.0,976,Actual,treasury_hyefu_2005,2005,1
+2005,Invalids Benefit,1026.0,"1,026",Actual,treasury_hyefu_2005,2005,1
+2001,Sickness Benefit,,..,Actual,treasury_hyefu_2005,2005,1
+2002,Sickness Benefit,375.0,375,Actual,treasury_hyefu_2005,2005,1
+2003,Sickness Benefit,421.0,421,Actual,treasury_hyefu_2005,2005,1
+2004,Sickness Benefit,470.0,470,Actual,treasury_hyefu_2005,2005,1
+2005,Sickness Benefit,510.0,510,Actual,treasury_hyefu_2005,2005,1
+2001,Disability Allowance,210.0,210,Actual,treasury_hyefu_2005,2005,1
+2002,Disability Allowance,224.0,224,Actual,treasury_hyefu_2005,2005,1
+2003,Disability Allowance,241.0,241,Actual,treasury_hyefu_2005,2005,1
+2004,Disability Allowance,257.0,257,Actual,treasury_hyefu_2005,2005,1
+2005,Disability Allowance,267.0,267,Actual,treasury_hyefu_2005,2005,1
+2001,Transitional Retirement Benefit,127.0,127,Actual,treasury_hyefu_2005,2005,1
+2002,Transitional Retirement Benefit,97.0,97,Actual,treasury_hyefu_2005,2005,1
+2003,Transitional Retirement Benefit,47.0,47,Actual,treasury_hyefu_2005,2005,1
+2004,Transitional Retirement Benefit,11.0,11,Actual,treasury_hyefu_2005,2005,1
+2005,Transitional Retirement Benefit,,..,Actual,treasury_hyefu_2005,2005,1
+2001,Income Related Rents,161.0,161,Actual,treasury_hyefu_2005,2005,1
+2002,Income Related Rents,274.0,274,Actual,treasury_hyefu_2005,2005,1
+2003,Income Related Rents,296.0,296,Actual,treasury_hyefu_2005,2005,1
+2004,Income Related Rents,340.0,340,Actual,treasury_hyefu_2005,2005,1
+2005,Income Related Rents,370.0,370,Actual,treasury_hyefu_2005,2005,1
+2001,Family Support,878.0,878,Actual,treasury_hyefu_2005,2005,1
+2002,Family Support,848.0,848,Actual,treasury_hyefu_2005,2005,1
+2003,Family Support,862.0,862,Actual,treasury_hyefu_2005,2005,1
+2004,Family Support,833.0,833,Actual,treasury_hyefu_2005,2005,1
+2005,Family Support,846.0,846,Actual,treasury_hyefu_2005,2005,1
+2001,Child Tax Credit,161.0,161,Actual,treasury_hyefu_2005,2005,1
+2002,Child Tax Credit,157.0,157,Actual,treasury_hyefu_2005,2005,1
+2003,Child Tax Credit,143.0,143,Actual,treasury_hyefu_2005,2005,1
+2004,Child Tax Credit,155.0,155,Actual,treasury_hyefu_2005,2005,1
+2005,Child Tax Credit,141.0,141,Actual,treasury_hyefu_2005,2005,1
+2001,Special Benefit,40.0,40,Actual,treasury_hyefu_2005,2005,1
+2002,Special Benefit,49.0,49,Actual,treasury_hyefu_2005,2005,1
+2003,Special Benefit,82.0,82,Actual,treasury_hyefu_2005,2005,1
+2004,Special Benefit,140.0,140,Actual,treasury_hyefu_2005,2005,1
+2005,Special Benefit,175.0,175,Actual,treasury_hyefu_2005,2005,1
+2001,In Work Payment,,..,Actual,treasury_hyefu_2005,2005,1
+2002,In Work Payment,,..,Actual,treasury_hyefu_2005,2005,1
+2003,In Work Payment,,..,Actual,treasury_hyefu_2005,2005,1
+2004,In Work Payment,,..,Actual,treasury_hyefu_2005,2005,1
+2005,In Work Payment,,..,Actual,treasury_hyefu_2005,2005,1
+2001,Benefits paid in Australia,171.0,171,Actual,treasury_hyefu_2005,2005,1
+2002,Benefits paid in Australia,159.0,159,Actual,treasury_hyefu_2005,2005,1
+2003,Benefits paid in Australia,121.0,121,Actual,treasury_hyefu_2005,2005,1
+2004,Benefits paid in Australia,103.0,103,Actual,treasury_hyefu_2005,2005,1
+2005,Benefits paid in Australia,91.0,91,Actual,treasury_hyefu_2005,2005,1
+2001,Paid Parental Leave,,..,Actual,treasury_hyefu_2005,2005,1
+2002,Paid Parental Leave,,..,Actual,treasury_hyefu_2005,2005,1
+2003,Paid Parental Leave,56.0,56,Actual,treasury_hyefu_2005,2005,1
+2004,Paid Parental Leave,63.0,63,Actual,treasury_hyefu_2005,2005,1
+2005,Paid Parental Leave,76.0,76,Actual,treasury_hyefu_2005,2005,1
+2001,Other benefits,531.0,531,Actual,treasury_hyefu_2005,2005,1
+2002,Other benefits,559.0,559,Actual,treasury_hyefu_2005,2005,1
+2003,Other benefits,559.0,559,Actual,treasury_hyefu_2005,2005,1
+2004,Other benefits,589.0,589,Actual,treasury_hyefu_2005,2005,1
+2005,Other benefits,613.0,613,Actual,treasury_hyefu_2005,2005,1
+2001,Welfare Benefit Expenses,12385.0,"12,385",Actual,treasury_hyefu_2005,2005,1
+2002,Welfare Benefit Expenses,12614.0,"12,614",Actual,treasury_hyefu_2005,2005,1
+2003,Welfare Benefit Expenses,12884.0,"12,884",Actual,treasury_hyefu_2005,2005,1
+2004,Welfare Benefit Expenses,13181.0,"13,181",Actual,treasury_hyefu_2005,2005,1
+2005,Welfare Benefit Expenses,13326.0,"13,326",Actual,treasury_hyefu_2005,2005,1
+2006,New Zealand Superannuation,6414.0,"6,414",Actual,treasury_hyefu_2010,2010,100
+2007,New Zealand Superannuation,6810.0,"6,810",Actual,treasury_hyefu_2010,2010,100
+2008,New Zealand Superannuation,7348.0,"7,348",Actual,treasury_hyefu_2010,2010,100
+2009,New Zealand Superannuation,7744.0,"7,744",Actual,treasury_hyefu_2010,2010,100
+2010,New Zealand Superannuation,8290.0,"8,290",Actual,treasury_hyefu_2010,2010,100
+2006,Domestic Purposes Benefit,1493.0,"1,493",Actual,treasury_hyefu_2010,2010,100
+2007,Domestic Purposes Benefit,1468.0,"1,468",Actual,treasury_hyefu_2010,2010,100
+2008,Domestic Purposes Benefit,1478.0,"1,478",Actual,treasury_hyefu_2010,2010,100
+2009,Domestic Purposes Benefit,1530.0,"1,530",Actual,treasury_hyefu_2010,2010,100
+2010,Domestic Purposes Benefit,1693.0,"1,693",Actual,treasury_hyefu_2010,2010,100
+2006,Unemployment Benefit,712.0,712,Actual,treasury_hyefu_2010,2010,100
+2007,Unemployment Benefit,613.0,613,Actual,treasury_hyefu_2010,2010,100
+2008,Unemployment Benefit,458.0,458,Actual,treasury_hyefu_2010,2010,100
+2009,Unemployment Benefit,586.0,586,Actual,treasury_hyefu_2010,2010,100
+2010,Unemployment Benefit,930.0,930,Actual,treasury_hyefu_2010,2010,100
+2006,Invalids Benefit,1073.0,"1,073",Actual,treasury_hyefu_2010,2010,100
+2007,Invalids Benefit,1132.0,"1,132",Actual,treasury_hyefu_2010,2010,100
+2008,Invalids Benefit,1216.0,"1,216",Actual,treasury_hyefu_2010,2010,100
+2009,Invalids Benefit,1260.0,"1,260",Actual,treasury_hyefu_2010,2010,100
+2010,Invalids Benefit,1303.0,"1,303",Actual,treasury_hyefu_2010,2010,100
+2006,Family Tax Credit,1285.0,"1,285",Actual,treasury_hyefu_2010,2010,100
+2007,Family Tax Credit,1699.0,"1,699",Actual,treasury_hyefu_2010,2010,100
+2008,Family Tax Credit,1897.0,"1,897",Actual,treasury_hyefu_2010,2010,100
+2009,Family Tax Credit,2062.0,"2,062",Actual,treasury_hyefu_2010,2010,100
+2010,Family Tax Credit,2168.0,"2,168",Actual,treasury_hyefu_2010,2010,100
+2006,Accommodation Supplement,843.0,843,Actual,treasury_hyefu_2010,2010,100
+2007,Accommodation Supplement,877.0,877,Actual,treasury_hyefu_2010,2010,100
+2008,Accommodation Supplement,891.0,891,Actual,treasury_hyefu_2010,2010,100
+2009,Accommodation Supplement,989.0,989,Actual,treasury_hyefu_2010,2010,100
+2010,Accommodation Supplement,1154.0,"1,154",Actual,treasury_hyefu_2010,2010,100
+2006,Sickness Benefit,541.0,541,Actual,treasury_hyefu_2010,2010,100
+2007,Sickness Benefit,573.0,573,Actual,treasury_hyefu_2010,2010,100
+2008,Sickness Benefit,582.0,582,Actual,treasury_hyefu_2010,2010,100
+2009,Sickness Benefit,613.0,613,Actual,treasury_hyefu_2010,2010,100
+2010,Sickness Benefit,710.0,710,Actual,treasury_hyefu_2010,2010,100
+2006,Disability Allowance,261.0,261,Actual,treasury_hyefu_2010,2010,100
+2007,Disability Allowance,270.0,270,Actual,treasury_hyefu_2010,2010,100
+2008,Disability Allowance,278.0,278,Actual,treasury_hyefu_2010,2010,100
+2009,Disability Allowance,390.0,390,Actual,treasury_hyefu_2010,2010,100
+2010,Disability Allowance,411.0,411,Actual,treasury_hyefu_2010,2010,100
+2006,Income Related Rents,395.0,395,Actual,treasury_hyefu_2010,2010,100
+2007,Income Related Rents,434.0,434,Actual,treasury_hyefu_2010,2010,100
+2008,Income Related Rents,465.0,465,Actual,treasury_hyefu_2010,2010,100
+2009,Income Related Rents,512.0,512,Actual,treasury_hyefu_2010,2010,100
+2010,Income Related Rents,522.0,522,Actual,treasury_hyefu_2010,2010,100
+2006,In Work Tax Credit,70.0,70,Actual,treasury_hyefu_2010,2010,100
+2007,In Work Tax Credit,461.0,461,Actual,treasury_hyefu_2010,2010,100
+2008,In Work Tax Credit,563.0,563,Actual,treasury_hyefu_2010,2010,100
+2009,In Work Tax Credit,584.0,584,Actual,treasury_hyefu_2010,2010,100
+2010,In Work Tax Credit,595.0,595,Actual,treasury_hyefu_2010,2010,100
+2006,Child Tax Credit,154.0,154,Actual,treasury_hyefu_2010,2010,100
+2007,Child Tax Credit,44.0,44,Actual,treasury_hyefu_2010,2010,100
+2008,Child Tax Credit,11.0,11,Actual,treasury_hyefu_2010,2010,100
+2009,Child Tax Credit,6.0,6,Actual,treasury_hyefu_2010,2010,100
+2010,Child Tax Credit,4.0,4,Actual,treasury_hyefu_2010,2010,100
+2006,Special Benefit,162.0,162,Actual,treasury_hyefu_2010,2010,100
+2007,Special Benefit,106.0,106,Actual,treasury_hyefu_2010,2010,100
+2008,Special Benefit,71.0,71,Actual,treasury_hyefu_2010,2010,100
+2009,Special Benefit,,..,Actual,treasury_hyefu_2010,2010,100
+2010,Special Benefit,,..,Actual,treasury_hyefu_2010,2010,100
+2006,Benefits paid in Australia,80.0,80,Actual,treasury_hyefu_2010,2010,100
+2007,Benefits paid in Australia,71.0,71,Actual,treasury_hyefu_2010,2010,100
+2008,Benefits paid in Australia,58.0,58,Actual,treasury_hyefu_2010,2010,100
+2009,Benefits paid in Australia,50.0,50,Actual,treasury_hyefu_2010,2010,100
+2010,Benefits paid in Australia,45.0,45,Actual,treasury_hyefu_2010,2010,100
+2006,Paid Parental Leave,96.0,96,Actual,treasury_hyefu_2010,2010,100
+2007,Paid Parental Leave,122.0,122,Actual,treasury_hyefu_2010,2010,100
+2008,Paid Parental Leave,135.0,135,Actual,treasury_hyefu_2010,2010,100
+2009,Paid Parental Leave,143.0,143,Actual,treasury_hyefu_2010,2010,100
+2010,Paid Parental Leave,154.0,154,Actual,treasury_hyefu_2010,2010,100
+2006,Childcare Assistance,110.0,110,Actual,treasury_hyefu_2010,2010,100
+2007,Childcare Assistance,139.0,139,Actual,treasury_hyefu_2010,2010,100
+2008,Childcare Assistance,150.0,150,Actual,treasury_hyefu_2010,2010,100
+2009,Childcare Assistance,159.0,159,Actual,treasury_hyefu_2010,2010,100
+2010,Childcare Assistance,178.0,178,Actual,treasury_hyefu_2010,2010,100
+2006,War Disablement Pensions,113.0,113,Actual,treasury_hyefu_2010,2010,100
+2007,War Disablement Pensions,122.0,122,Actual,treasury_hyefu_2010,2010,100
+2008,War Disablement Pensions,134.0,134,Actual,treasury_hyefu_2010,2010,100
+2009,War Disablement Pensions,125.0,125,Actual,treasury_hyefu_2010,2010,100
+2010,War Disablement Pensions,137.0,137,Actual,treasury_hyefu_2010,2010,100
+2006,Veteran's Pension,128.0,128,Actual,treasury_hyefu_2010,2010,100
+2007,Veteran's Pension,143.0,143,Actual,treasury_hyefu_2010,2010,100
+2008,Veteran's Pension,161.0,161,Actual,treasury_hyefu_2010,2010,100
+2009,Veteran's Pension,176.0,176,Actual,treasury_hyefu_2010,2010,100
+2010,Veteran's Pension,179.0,179,Actual,treasury_hyefu_2010,2010,100
+2006,Other benefits,316.0,316,Actual,treasury_hyefu_2010,2010,100
+2007,Other benefits,351.0,351,Actual,treasury_hyefu_2010,2010,100
+2008,Other benefits,392.0,392,Actual,treasury_hyefu_2010,2010,100
+2009,Other benefits,437.0,437,Actual,treasury_hyefu_2010,2010,100
+2010,Other benefits,488.0,488,Actual,treasury_hyefu_2010,2010,100
+2006,Benefit expenses,14246.0,"14,246",Actual,treasury_hyefu_2010,2010,100
+2007,Benefit expenses,15435.0,"15,435",Actual,treasury_hyefu_2010,2010,100
+2008,Benefit expenses,16288.0,"16,288",Actual,treasury_hyefu_2010,2010,100
+2009,Benefit expenses,17366.0,"17,366",Actual,treasury_hyefu_2010,2010,100
+2010,Benefit expenses,18961.0,"18,961",Actual,treasury_hyefu_2010,2010,100
+2011,New Zealand Superannuation,8830.0,"8,830",Actual,treasury_hyefu_2015,2015,136
+2012,New Zealand Superannuation,9584.0,"9,584",Actual,treasury_hyefu_2015,2015,136
+2013,New Zealand Superannuation,10235.0,"10,235",Actual,treasury_hyefu_2015,2015,136
+2014,New Zealand Superannuation,10913.0,"10,913",Actual,treasury_hyefu_2015,2015,136
+2015,New Zealand Superannuation,11591.0,"11,591",Actual,treasury_hyefu_2015,2015,136
+2011,Jobseeker Support and Emergency Benefit,,..,Actual,treasury_hyefu_2015,2015,136
+2012,Jobseeker Support and Emergency Benefit,,..,Actual,treasury_hyefu_2015,2015,136
+2013,Jobseeker Support and Emergency Benefit,,..,Actual,treasury_hyefu_2015,2015,136
+2014,Jobseeker Support and Emergency Benefit,1691.0,"1,691",Actual,treasury_hyefu_2015,2015,136
+2015,Jobseeker Support and Emergency Benefit,1684.0,"1,684",Actual,treasury_hyefu_2015,2015,136
+2011,Supported living payment,,..,Actual,treasury_hyefu_2015,2015,136
+2012,Supported living payment,,..,Actual,treasury_hyefu_2015,2015,136
+2013,Supported living payment,,..,Actual,treasury_hyefu_2015,2015,136
+2014,Supported living payment,1422.0,"1,422",Actual,treasury_hyefu_2015,2015,136
+2015,Supported living payment,1515.0,"1,515",Actual,treasury_hyefu_2015,2015,136
+2011,Sole parent support,,..,Actual,treasury_hyefu_2015,2015,136
+2012,Sole parent support,,..,Actual,treasury_hyefu_2015,2015,136
+2013,Sole parent support,,..,Actual,treasury_hyefu_2015,2015,136
+2014,Sole parent support,1222.0,"1,222",Actual,treasury_hyefu_2015,2015,136
+2015,Sole parent support,1186.0,"1,186",Actual,treasury_hyefu_2015,2015,136
+2011,Domestic Purposes Benefit,1757.0,"1,757",Actual,treasury_hyefu_2015,2015,136
+2012,Domestic Purposes Benefit,1811.0,"1,811",Actual,treasury_hyefu_2015,2015,136
+2013,Domestic Purposes Benefit,1738.0,"1,738",Actual,treasury_hyefu_2015,2015,136
+2014,Domestic Purposes Benefit,63.0,63,Actual,treasury_hyefu_2015,2015,136
+2015,Domestic Purposes Benefit,,..,Actual,treasury_hyefu_2015,2015,136
+2011,Invalid's Benefit,1306.0,"1,306",Actual,treasury_hyefu_2015,2015,136
+2012,Invalid's Benefit,1325.0,"1,325",Actual,treasury_hyefu_2015,2015,136
+2013,Invalid's Benefit,1330.0,"1,330",Actual,treasury_hyefu_2015,2015,136
+2014,Invalid's Benefit,52.0,52,Actual,treasury_hyefu_2015,2015,136
+2015,Invalid's Benefit,,..,Actual,treasury_hyefu_2015,2015,136
+2011,Sickness Benefit,743.0,743,Actual,treasury_hyefu_2015,2015,136
+2012,Sickness Benefit,775.0,775,Actual,treasury_hyefu_2015,2015,136
+2013,Sickness Benefit,782.0,782,Actual,treasury_hyefu_2015,2015,136
+2014,Sickness Benefit,29.0,29,Actual,treasury_hyefu_2015,2015,136
+2015,Sickness Benefit,,..,Actual,treasury_hyefu_2015,2015,136
+2011,Unemployment Benefit,943.0,943,Actual,treasury_hyefu_2015,2015,136
+2012,Unemployment Benefit,883.0,883,Actual,treasury_hyefu_2015,2015,136
+2013,Unemployment Benefit,812.0,812,Actual,treasury_hyefu_2015,2015,136
+2014,Unemployment Benefit,29.0,29,Actual,treasury_hyefu_2015,2015,136
+2015,Unemployment Benefit,,..,Actual,treasury_hyefu_2015,2015,136
+2011,Family Tax Credit,2130.0,"2,130",Actual,treasury_hyefu_2015,2015,136
+2012,Family Tax Credit,2071.0,"2,071",Actual,treasury_hyefu_2015,2015,136
+2013,Family Tax Credit,2018.0,"2,018",Actual,treasury_hyefu_2015,2015,136
+2014,Family Tax Credit,1965.0,"1,965",Actual,treasury_hyefu_2015,2015,136
+2015,Family Tax Credit,1854.0,"1,854",Actual,treasury_hyefu_2015,2015,136
+2011,Other working for families tax credits,616.0,616,Actual,treasury_hyefu_2015,2015,136
+2012,Other working for families tax credits,599.0,599,Actual,treasury_hyefu_2015,2015,136
+2013,Other working for families tax credits,575.0,575,Actual,treasury_hyefu_2015,2015,136
+2014,Other working for families tax credits,567.0,567,Actual,treasury_hyefu_2015,2015,136
+2015,Other working for families tax credits,549.0,549,Actual,treasury_hyefu_2015,2015,136
+2011,Accommodation Assistance,1197.0,"1,197",Actual,treasury_hyefu_2015,2015,136
+2012,Accommodation Assistance,1195.0,"1,195",Actual,treasury_hyefu_2015,2015,136
+2013,Accommodation Assistance,1177.0,"1,177",Actual,treasury_hyefu_2015,2015,136
+2014,Accommodation Assistance,1146.0,"1,146",Actual,treasury_hyefu_2015,2015,136
+2015,Accommodation Assistance,1129.0,"1,129",Actual,treasury_hyefu_2015,2015,136
+2011,Income-Related Rents,553.0,553,Actual,treasury_hyefu_2015,2015,136
+2012,Income-Related Rents,580.0,580,Actual,treasury_hyefu_2015,2015,136
+2013,Income-Related Rents,611.0,611,Actual,treasury_hyefu_2015,2015,136
+2014,Income-Related Rents,660.0,660,Actual,treasury_hyefu_2015,2015,136
+2015,Income-Related Rents,703.0,703,Actual,treasury_hyefu_2015,2015,136
+2011,Disability Assistance,409.0,409,Actual,treasury_hyefu_2015,2015,136
+2012,Disability Assistance,401.0,401,Actual,treasury_hyefu_2015,2015,136
+2013,Disability Assistance,384.0,384,Actual,treasury_hyefu_2015,2015,136
+2014,Disability Assistance,379.0,379,Actual,treasury_hyefu_2015,2015,136
+2015,Disability Assistance,377.0,377,Actual,treasury_hyefu_2015,2015,136
+2011,Benefits paid in Australia,40.0,40,Actual,treasury_hyefu_2015,2015,136
+2012,Benefits paid in Australia,37.0,37,Actual,treasury_hyefu_2015,2015,136
+2013,Benefits paid in Australia,22.0,22,Actual,treasury_hyefu_2015,2015,136
+2014,Benefits paid in Australia,19.0,19,Actual,treasury_hyefu_2015,2015,136
+2015,Benefits paid in Australia,15.0,15,Actual,treasury_hyefu_2015,2015,136
+2011,Paid Parental Leave,154.0,154,Actual,treasury_hyefu_2015,2015,136
+2012,Paid Parental Leave,158.0,158,Actual,treasury_hyefu_2015,2015,136
+2013,Paid Parental Leave,165.0,165,Actual,treasury_hyefu_2015,2015,136
+2014,Paid Parental Leave,165.0,165,Actual,treasury_hyefu_2015,2015,136
+2015,Paid Parental Leave,180.0,180,Actual,treasury_hyefu_2015,2015,136
+2011,Childcare Assistance,188.0,188,Actual,treasury_hyefu_2015,2015,136
+2012,Childcare Assistance,188.0,188,Actual,treasury_hyefu_2015,2015,136
+2013,Childcare Assistance,186.0,186,Actual,treasury_hyefu_2015,2015,136
+2014,Childcare Assistance,186.0,186,Actual,treasury_hyefu_2015,2015,136
+2015,Childcare Assistance,183.0,183,Actual,treasury_hyefu_2015,2015,136
+2011,Veterans Support Entitlement,135.0,135,Actual,treasury_hyefu_2015,2015,136
+2012,Veterans Support Entitlement,128.0,128,Actual,treasury_hyefu_2015,2015,136
+2013,Veterans Support Entitlement,123.0,123,Actual,treasury_hyefu_2015,2015,136
+2014,Veterans Support Entitlement,119.0,119,Actual,treasury_hyefu_2015,2015,136
+2015,Veterans Support Entitlement,115.0,115,Actual,treasury_hyefu_2015,2015,136
+2011,Veteran's Pension,178.0,178,Actual,treasury_hyefu_2015,2015,136
+2012,Veteran's Pension,177.0,177,Actual,treasury_hyefu_2015,2015,136
+2013,Veteran's Pension,171.0,171,Actual,treasury_hyefu_2015,2015,136
+2014,Veteran's Pension,165.0,165,Actual,treasury_hyefu_2015,2015,136
+2015,Veteran's Pension,178.0,178,Actual,treasury_hyefu_2015,2015,136
+2011,Other benefits,602.0,602,Actual,treasury_hyefu_2015,2015,136
+2012,Other benefits,463.0,463,Actual,treasury_hyefu_2015,2015,136
+2013,Other benefits,460.0,460,Actual,treasury_hyefu_2015,2015,136
+2014,Other benefits,395.0,395,Actual,treasury_hyefu_2015,2015,136
+2015,Other benefits,421.0,421,Actual,treasury_hyefu_2015,2015,136
+2011,Benefit expenses,19781.0,"19,781",Actual,treasury_hyefu_2015,2015,136
+2012,Benefit expenses,20375.0,"20,375",Actual,treasury_hyefu_2015,2015,136
+2013,Benefit expenses,20789.0,"20,789",Actual,treasury_hyefu_2015,2015,136
+2014,Benefit expenses,21187.0,"21,187",Actual,treasury_hyefu_2015,2015,136
+2015,Benefit expenses,21680.0,"21,680",Actual,treasury_hyefu_2015,2015,136
+2016,New Zealand Superannuation,12267.0,"12,267",Actual,treasury_hyefu_2020,2020,124
+2017,New Zealand Superannuation,13043.0,"13,043",Actual,treasury_hyefu_2020,2020,124
+2018,New Zealand Superannuation,13699.0,"13,699",Actual,treasury_hyefu_2020,2020,124
+2019,New Zealand Superannuation,14562.0,"14,562",Actual,treasury_hyefu_2020,2020,124
+2020,New Zealand Superannuation,15521.0,"15,521",Actual,treasury_hyefu_2020,2020,124
+2016,Jobseeker Support and Emergency Benefit,1671.0,"1,671",Actual,treasury_hyefu_2020,2020,124
+2017,Jobseeker Support and Emergency Benefit,1697.0,"1,697",Actual,treasury_hyefu_2020,2020,124
+2018,Jobseeker Support and Emergency Benefit,1697.0,"1,697",Actual,treasury_hyefu_2020,2020,124
+2019,Jobseeker Support and Emergency Benefit,1854.0,"1,854",Actual,treasury_hyefu_2020,2020,124
+2020,Jobseeker Support and Emergency Benefit,2285.0,"2,285",Actual,treasury_hyefu_2020,2020,124
+2016,Supported living payment,1523.0,"1,523",Actual,treasury_hyefu_2020,2020,124
+2017,Supported living payment,1533.0,"1,533",Actual,treasury_hyefu_2020,2020,124
+2018,Supported living payment,1541.0,"1,541",Actual,treasury_hyefu_2020,2020,124
+2019,Supported living payment,1556.0,"1,556",Actual,treasury_hyefu_2020,2020,124
+2020,Supported living payment,1650.0,"1,650",Actual,treasury_hyefu_2020,2020,124
+2016,Sole parent support,1153.0,"1,153",Actual,treasury_hyefu_2020,2020,124
+2017,Sole parent support,1159.0,"1,159",Actual,treasury_hyefu_2020,2020,124
+2018,Sole parent support,1117.0,"1,117",Actual,treasury_hyefu_2020,2020,124
+2019,Sole parent support,1115.0,"1,115",Actual,treasury_hyefu_2020,2020,124
+2020,Sole parent support,1231.0,"1,231",Actual,treasury_hyefu_2020,2020,124
+2016,Family Tax Credit,1793.0,"1,793",Actual,treasury_hyefu_2020,2020,124
+2017,Family Tax Credit,1723.0,"1,723",Actual,treasury_hyefu_2020,2020,124
+2018,Family Tax Credit,1639.0,"1,639",Actual,treasury_hyefu_2020,2020,124
+2019,Family Tax Credit,2131.0,"2,131",Actual,treasury_hyefu_2020,2020,124
+2020,Family Tax Credit,2189.0,"2,189",Actual,treasury_hyefu_2020,2020,124
+2016,Other working for families tax credits,559.0,559,Actual,treasury_hyefu_2020,2020,124
+2017,Other working for families tax credits,596.0,596,Actual,treasury_hyefu_2020,2020,124
+2018,Other working for families tax credits,556.0,556,Actual,treasury_hyefu_2020,2020,124
+2019,Other working for families tax credits,635.0,635,Actual,treasury_hyefu_2020,2020,124
+2020,Other working for families tax credits,641.0,641,Actual,treasury_hyefu_2020,2020,124
+2016,Accommodation Assistance,1164.0,"1,164",Actual,treasury_hyefu_2020,2020,124
+2017,Accommodation Assistance,1127.0,"1,127",Actual,treasury_hyefu_2020,2020,124
+2018,Accommodation Assistance,1204.0,"1,204",Actual,treasury_hyefu_2020,2020,124
+2019,Accommodation Assistance,1640.0,"1,640",Actual,treasury_hyefu_2020,2020,124
+2020,Accommodation Assistance,1923.0,"1,923",Actual,treasury_hyefu_2020,2020,124
+2016,Income-Related Rents,755.0,755,Actual,treasury_hyefu_2020,2020,124
+2017,Income-Related Rents,815.0,815,Actual,treasury_hyefu_2020,2020,124
+2018,Income-Related Rents,890.0,890,Actual,treasury_hyefu_2020,2020,124
+2019,Income-Related Rents,974.0,974,Actual,treasury_hyefu_2020,2020,124
+2020,Income-Related Rents,1071.0,"1,071",Actual,treasury_hyefu_2020,2020,124
+2016,Disability Assistance,377.0,377,Actual,treasury_hyefu_2020,2020,124
+2017,Disability Assistance,377.0,377,Actual,treasury_hyefu_2020,2020,124
+2018,Disability Assistance,379.0,379,Actual,treasury_hyefu_2020,2020,124
+2019,Disability Assistance,386.0,386,Actual,treasury_hyefu_2020,2020,124
+2020,Disability Assistance,395.0,395,Actual,treasury_hyefu_2020,2020,124
+2016,Winter energy,,..,Actual,treasury_hyefu_2020,2020,124
+2017,Winter energy,,..,Actual,treasury_hyefu_2020,2020,124
+2018,Winter energy,,..,Actual,treasury_hyefu_2020,2020,124
+2019,Winter energy,441.0,441,Actual,treasury_hyefu_2020,2020,124
+2020,Winter energy,669.0,669,Actual,treasury_hyefu_2020,2020,124
+2016,Best start,,..,Actual,treasury_hyefu_2020,2020,124
+2017,Best start,,..,Actual,treasury_hyefu_2020,2020,124
+2018,Best start,,..,Actual,treasury_hyefu_2020,2020,124
+2019,Best start,48.0,48,Actual,treasury_hyefu_2020,2020,124
+2020,Best start,184.0,184,Actual,treasury_hyefu_2020,2020,124
+2016,Orphan's/Unsupported Child's Benefit,143.0,143,Actual,treasury_hyefu_2020,2020,124
+2017,Orphan's/Unsupported Child's Benefit,152.0,152,Actual,treasury_hyefu_2020,2020,124
+2018,Orphan's/Unsupported Child's Benefit,165.0,165,Actual,treasury_hyefu_2020,2020,124
+2019,Orphan's/Unsupported Child's Benefit,225.0,225,Actual,treasury_hyefu_2020,2020,124
+2020,Orphan's/Unsupported Child's Benefit,248.0,248,Actual,treasury_hyefu_2020,2020,124
+2016,Hardship Assistance,290.0,290,Actual,treasury_hyefu_2020,2020,124
+2017,Hardship Assistance,353.0,353,Actual,treasury_hyefu_2020,2020,124
+2018,Hardship Assistance,355.0,355,Actual,treasury_hyefu_2020,2020,124
+2019,Hardship Assistance,300.0,300,Actual,treasury_hyefu_2020,2020,124
+2020,Hardship Assistance,418.0,418,Actual,treasury_hyefu_2020,2020,124
+2016,Paid Parental Leave,217.0,217,Actual,treasury_hyefu_2020,2020,124
+2017,Paid Parental Leave,274.0,274,Actual,treasury_hyefu_2020,2020,124
+2018,Paid Parental Leave,288.0,288,Actual,treasury_hyefu_2020,2020,124
+2019,Paid Parental Leave,369.0,369,Actual,treasury_hyefu_2020,2020,124
+2020,Paid Parental Leave,422.0,422,Actual,treasury_hyefu_2020,2020,124
+2016,Childcare Assistance,182.0,182,Actual,treasury_hyefu_2020,2020,124
+2017,Childcare Assistance,199.0,199,Actual,treasury_hyefu_2020,2020,124
+2018,Childcare Assistance,196.0,196,Actual,treasury_hyefu_2020,2020,124
+2019,Childcare Assistance,183.0,183,Actual,treasury_hyefu_2020,2020,124
+2020,Childcare Assistance,144.0,144,Actual,treasury_hyefu_2020,2020,124
+2016,Veterans Support Entitlement,107.0,107,Actual,treasury_hyefu_2020,2020,124
+2017,Veterans Support Entitlement,98.0,98,Actual,treasury_hyefu_2020,2020,124
+2018,Veterans Support Entitlement,93.0,93,Actual,treasury_hyefu_2020,2020,124
+2019,Veterans Support Entitlement,90.0,90,Actual,treasury_hyefu_2020,2020,124
+2020,Veterans Support Entitlement,66.0,66,Actual,treasury_hyefu_2020,2020,124
+2016,Veteran's Pension,186.0,186,Actual,treasury_hyefu_2020,2020,124
+2017,Veteran's Pension,175.0,175,Actual,treasury_hyefu_2020,2020,124
+2018,Veteran's Pension,163.0,163,Actual,treasury_hyefu_2020,2020,124
+2019,Veteran's Pension,153.0,153,Actual,treasury_hyefu_2020,2020,124
+2020,Veteran's Pension,145.0,145,Actual,treasury_hyefu_2020,2020,124
+2016,Wage Subsidy Scheme,,,Actual,treasury_hyefu_2020,2020,124
+2017,Wage Subsidy Scheme,,,Actual,treasury_hyefu_2020,2020,124
+2018,Wage Subsidy Scheme,,,Actual,treasury_hyefu_2020,2020,124
+2019,Wage Subsidy Scheme,,..,Actual,treasury_hyefu_2020,2020,124
+2020,Wage Subsidy Scheme,12095.0,"12,095",Actual,treasury_hyefu_2020,2020,124
+2016,Other benefits,54.0,54,Actual,treasury_hyefu_2020,2020,124
+2017,Other benefits,18.0,18,Actual,treasury_hyefu_2020,2020,124
+2018,Other benefits,23.0,23,Actual,treasury_hyefu_2020,2020,124
+2019,Other benefits,27.0,27,Actual,treasury_hyefu_2020,2020,124
+2020,Other benefits,11.0,11,Actual,treasury_hyefu_2020,2020,124
+2016,Benefit expenses,22441.0,"22,441",Actual,treasury_hyefu_2020,2020,124
+2017,Benefit expenses,23339.0,"23,339",Actual,treasury_hyefu_2020,2020,124
+2018,Benefit expenses,24005.0,"24,005",Actual,treasury_hyefu_2020,2020,124
+2019,Benefit expenses,26689.0,"26,689",Actual,treasury_hyefu_2020,2020,124
+2020,Benefit expenses,41308.0,"41,308",Actual,treasury_hyefu_2020,2020,124

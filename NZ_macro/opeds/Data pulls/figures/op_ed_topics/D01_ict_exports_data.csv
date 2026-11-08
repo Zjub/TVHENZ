@@ -1,0 +1,53 @@
+country,iso3,year,measure,indicator,value
+Australia,AUS,2025,ict_exports_usd,BX.GSR.CCIS.CD,3108782368.68856
+Australia,AUS,2024,ict_exports_usd,BX.GSR.CCIS.CD,2518877124.82042
+Australia,AUS,2023,ict_exports_usd,BX.GSR.CCIS.CD,2482079648.5613
+Australia,AUS,2022,ict_exports_usd,BX.GSR.CCIS.CD,2176001377.90262
+Australia,AUS,2021,ict_exports_usd,BX.GSR.CCIS.CD,2381789910.05509
+Australia,AUS,2020,ict_exports_usd,BX.GSR.CCIS.CD,1942297195.14538
+Australia,AUS,2019,ict_exports_usd,BX.GSR.CCIS.CD,2330448639.86354
+Australia,AUS,2018,ict_exports_usd,BX.GSR.CCIS.CD,2321690668.31143
+Australia,AUS,2017,ict_exports_usd,BX.GSR.CCIS.CD,2035617647.39335
+Australia,AUS,2016,ict_exports_usd,BX.GSR.CCIS.CD,1965335304.38254
+Australia,AUS,2015,ict_exports_usd,BX.GSR.CCIS.CD,1927699080.4871
+Australia,AUS,2014,ict_exports_usd,BX.GSR.CCIS.CD,2400848354.44005
+Australia,AUS,2013,ict_exports_usd,BX.GSR.CCIS.CD,2336607022.16147
+Australia,AUS,2012,ict_exports_usd,BX.GSR.CCIS.CD,2196301156.83907
+Australia,AUS,2011,ict_exports_usd,BX.GSR.CCIS.CD,2118316624.8429599
+Australia,AUS,2010,ict_exports_usd,BX.GSR.CCIS.CD,1865989121.80635
+Australia,AUS,2009,ict_exports_usd,BX.GSR.CCIS.CD,1689820167.45343
+Australia,AUS,2008,ict_exports_usd,BX.GSR.CCIS.CD,1796369725.27719
+Australia,AUS,2007,ict_exports_usd,BX.GSR.CCIS.CD,1687175360.79601
+Australia,AUS,2006,ict_exports_usd,BX.GSR.CCIS.CD,1410615342.68256
+Australia,AUS,2005,ict_exports_usd,BX.GSR.CCIS.CD,1249805388.6818
+Australia,AUS,2004,ict_exports_usd,BX.GSR.CCIS.CD,1314051733.94766
+Australia,AUS,2003,ict_exports_usd,BX.GSR.CCIS.CD,1203524652.34723
+Australia,AUS,2002,ict_exports_usd,BX.GSR.CCIS.CD,1023371439.92641
+Australia,AUS,2001,ict_exports_usd,BX.GSR.CCIS.CD,824442592.361303
+Australia,AUS,2000,ict_exports_usd,BX.GSR.CCIS.CD,1212114150.87612
+New Zealand,NZL,2025,ict_exports_usd,BX.GSR.CCIS.CD,1086458537.38977
+New Zealand,NZL,2024,ict_exports_usd,BX.GSR.CCIS.CD,1180207855.59613
+New Zealand,NZL,2023,ict_exports_usd,BX.GSR.CCIS.CD,1183129555.7579
+New Zealand,NZL,2022,ict_exports_usd,BX.GSR.CCIS.CD,1079986427.93646
+New Zealand,NZL,2021,ict_exports_usd,BX.GSR.CCIS.CD,1119605889.22444
+New Zealand,NZL,2020,ict_exports_usd,BX.GSR.CCIS.CD,957236036.332979
+New Zealand,NZL,2019,ict_exports_usd,BX.GSR.CCIS.CD,902652261.26246
+New Zealand,NZL,2018,ict_exports_usd,BX.GSR.CCIS.CD,772859099.202257
+New Zealand,NZL,2017,ict_exports_usd,BX.GSR.CCIS.CD,733487188.127372
+New Zealand,NZL,2016,ict_exports_usd,BX.GSR.CCIS.CD,731289584.80188
+New Zealand,NZL,2015,ict_exports_usd,BX.GSR.CCIS.CD,655743437.738512
+New Zealand,NZL,2014,ict_exports_usd,BX.GSR.CCIS.CD,608016037.766827
+New Zealand,NZL,2013,ict_exports_usd,BX.GSR.CCIS.CD,564771618.993652
+New Zealand,NZL,2012,ict_exports_usd,BX.GSR.CCIS.CD,575451103.948022
+New Zealand,NZL,2011,ict_exports_usd,BX.GSR.CCIS.CD,583296337.81141
+New Zealand,NZL,2010,ict_exports_usd,BX.GSR.CCIS.CD,487293104.116203
+New Zealand,NZL,2009,ict_exports_usd,BX.GSR.CCIS.CD,379942325.092803
+New Zealand,NZL,2008,ict_exports_usd,BX.GSR.CCIS.CD,440033015.747652
+New Zealand,NZL,2007,ict_exports_usd,BX.GSR.CCIS.CD,397385968.290169
+New Zealand,NZL,2006,ict_exports_usd,BX.GSR.CCIS.CD,325351434.988841
+New Zealand,NZL,2005,ict_exports_usd,BX.GSR.CCIS.CD,436370900.055808
+New Zealand,NZL,2004,ict_exports_usd,BX.GSR.CCIS.CD,364486038.518896
+New Zealand,NZL,2003,ict_exports_usd,BX.GSR.CCIS.CD,315582249.224742
+New Zealand,NZL,2002,ict_exports_usd,BX.GSR.CCIS.CD,315147552.239589
+New Zealand,NZL,2001,ict_exports_usd,BX.GSR.CCIS.CD,282115617.214813
+New Zealand,NZL,2000,ict_exports_usd,BX.GSR.CCIS.CD,258564897.160371

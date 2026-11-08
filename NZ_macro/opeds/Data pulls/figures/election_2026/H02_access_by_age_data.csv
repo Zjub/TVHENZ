@@ -1,0 +1,15 @@
+population,indicator,year,group,estimate,flag,low,high,male,male_flag_for_publishing,male.low.CI,male.high.CI,female,female_flag_for_publishing,female.low.CI,female.high.CI,estimated.number,estimated.number.low.CI,estimated.number.high.CI,survey_period
+adults,Unmet need for GP due to cost,2024,15-24,15.2,,12.5,18.2,8.2,,5.4,11.7,22.5,,18.2,27.2,103000,85000,122000,2024/25
+adults,Unmet need for GP due to cost,2024,25-34,23.5,,20.7,26.5,20.2,,15.7,25.4,26.1,,22.4,30,177000,156000,198000,2024/25
+adults,Unmet need for GP due to cost,2024,35-44,17.3,,14.5,20.3,14.1,,10.4,18.6,20.5,,17.2,24.2,130000,109000,151000,2024/25
+adults,Unmet need for GP due to cost,2024,45-54,17.1,,14.2,20.2,15.1,,11.3,19.6,19,,15.1,23.4,110000,91000,129000,2024/25
+adults,Unmet need for GP due to cost,2024,55-64,11.9,,10,14.1,9.3,,6.6,12.7,14.4,,11.6,17.5,74000,62000,87000,2024/25
+adults,Unmet need for GP due to cost,2024,65-74,7.8,,6.2,9.7,4.9,,3.2,7.3,10.5,,7.7,13.8,39000,30000,47000,2024/25
+adults,Unmet need for GP due to cost,2024,75+,3.3,,2.1,4.8,4.6,,2.8,7,2.3,,1.2,3.9,13000,8000,18000,2024/25
+adults,Unmet need for GP due to wait time,2024,15-24,18.9,,15.8,22.3,13.6,,9.8,18.2,23.9,,18.9,29.6,128000,107000,150000,2024/25
+adults,Unmet need for GP due to wait time,2024,25-34,29.7,,26,33.5,25.8,,20.9,31.2,33.7,,28.9,38.6,223000,196000,250000,2024/25
+adults,Unmet need for GP due to wait time,2024,35-44,31.3,,27.9,34.9,27.2,,23.1,31.6,35.6,,30.6,40.8,235000,210000,261000,2024/25
+adults,Unmet need for GP due to wait time,2024,45-54,32,,28.7,35.4,24.1,,18.9,29.9,39.6,,35.3,44,206000,185000,227000,2024/25
+adults,Unmet need for GP due to wait time,2024,55-64,25.2,,22.1,28.5,18.4,,14.3,23.2,31.4,,27.2,35.9,157000,138000,176000,2024/25
+adults,Unmet need for GP due to wait time,2024,65-74,20.1,,17.2,23.2,16.3,,12.6,20.6,23.6,,19.3,28.3,99000,85000,113000,2024/25
+adults,Unmet need for GP due to wait time,2024,75+,14.8,,11.9,18,14.1,,10.9,17.7,15.2,,11.4,19.6,58000,47000,70000,2024/25

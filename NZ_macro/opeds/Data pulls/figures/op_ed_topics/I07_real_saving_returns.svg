@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='0.000000000000064' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNjguNTJ8ODQ2LjA3fDUzLjcwfDQ0My44MQ=='>
+    <rect x='68.52' y='53.70' width='777.54' height='390.11' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNjguNTJ8ODQ2LjA3fDUzLjcwfDQ0My44MQ==)'>
+<polyline points='68.52,433.96 846.07,433.96 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='68.52,326.62 846.07,326.62 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='68.52,219.28 846.07,219.28 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='68.52,111.95 846.07,111.95 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='174.55,443.81 174.55,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='315.92,443.81 315.92,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='457.30,443.81 457.30,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='598.67,443.81 598.67,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='740.04,443.81 740.04,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='68.52,380.29 846.07,380.29 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='68.52,272.95 846.07,272.95 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='68.52,165.61 846.07,165.61 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='68.52,58.28 846.07,58.28 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='103.87,443.81 103.87,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='245.24,443.81 245.24,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='386.61,443.81 386.61,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='527.98,443.81 527.98,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='669.35,443.81 669.35,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='810.72,443.81 810.72,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='103.87,173.17 132.14,173.63 160.42,175.82 188.69,135.97 216.96,159.21 245.24,191.16 273.51,205.06 301.79,162.91 330.06,229.96 358.34,151.68 386.61,159.72 414.88,232.83 443.16,105.56 471.43,108.85 499.71,112.94 527.98,71.43 556.26,87.22 584.53,140.20 612.80,129.20 641.08,130.13 669.35,134.27 697.63,229.21 725.90,359.98 754.18,302.72 782.45,186.30 810.72,182.77 ' style='stroke-width: 2.13; stroke: #F8766D; stroke-linecap: butt;' />
+<polyline points='103.87,242.21 132.14,242.66 160.42,244.81 188.69,205.59 216.96,228.47 245.24,259.91 273.51,273.59 301.79,232.11 330.06,298.10 358.34,221.05 386.61,228.97 414.88,300.93 443.16,175.66 471.43,178.89 499.71,182.93 527.98,142.07 556.26,157.61 584.53,209.75 612.80,198.93 641.08,199.84 669.35,203.92 697.63,297.37 725.90,426.08 754.18,369.73 782.45,255.13 810.72,251.65 ' style='stroke-width: 2.13; stroke: #00BA38; stroke-linecap: butt;' />
+<polyline points='103.87,206.10 132.14,206.40 160.42,207.87 188.69,181.17 216.96,196.75 245.24,218.15 273.51,227.46 301.79,199.23 330.06,244.15 358.34,191.70 386.61,197.09 414.88,246.07 443.16,160.80 471.43,163.00 499.71,165.75 527.98,137.94 556.26,148.51 584.53,184.01 612.80,176.64 641.08,177.26 669.35,180.04 697.63,243.65 725.90,359.98 754.18,302.72 782.45,214.90 810.72,212.53 ' style='stroke-width: 2.13; stroke: #619CFF; stroke-linecap: butt;' />
+<line x1='68.52' y1='272.95' x2='846.07' y2='272.95' style='stroke-width: 1.16; stroke-dasharray: 6.21,6.21; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='63.14' y='383.87' text-anchor='end' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='26.12px' lengthAdjust='spacingAndGlyphs'>-2.5%</text>
+<text x='63.14' y='276.53' text-anchor='end' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='22.80px' lengthAdjust='spacingAndGlyphs'>0.0%</text>
+<text x='63.14' y='169.20' text-anchor='end' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='22.80px' lengthAdjust='spacingAndGlyphs'>2.5%</text>
+<text x='63.14' y='61.86' text-anchor='end' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='22.80px' lengthAdjust='spacingAndGlyphs'>5.0%</text>
+<text x='103.87' y='456.35' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='22.25px' lengthAdjust='spacingAndGlyphs'>2000</text>
+<text x='245.24' y='456.35' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='22.25px' lengthAdjust='spacingAndGlyphs'>2005</text>
+<text x='386.61' y='456.35' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='22.25px' lengthAdjust='spacingAndGlyphs'>2010</text>
+<text x='527.98' y='456.35' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='22.25px' lengthAdjust='spacingAndGlyphs'>2015</text>
+<text x='669.35' y='456.35' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='22.25px' lengthAdjust='spacingAndGlyphs'>2020</text>
+<text x='810.72' y='456.35' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='22.25px' lengthAdjust='spacingAndGlyphs'>2025</text>
+<text transform='translate(22.54,248.76) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='98.72px' lengthAdjust='spacingAndGlyphs'>Real annual return</text>
+<line x1='332.03' y1='485.03' x2='345.85' y2='485.03' style='stroke-width: 2.13; stroke: #F8766D; stroke-linecap: butt;' />
+<line x1='470.26' y1='485.03' x2='484.09' y2='485.03' style='stroke-width: 2.13; stroke: #00BA38; stroke-linecap: butt;' />
+<line x1='332.03' y1='508.29' x2='345.85' y2='508.29' style='stroke-width: 2.13; stroke: #619CFF; stroke-linecap: butt;' />
+<text x='353.56' y='488.25' style='font-size: 9.00px; font-family: "Arial";' textLength='41.00px' lengthAdjust='spacingAndGlyphs'>Before tax</text>
+<text x='491.79' y='488.25' style='font-size: 9.00px; font-family: "Arial";' textLength='92.50px' lengthAdjust='spacingAndGlyphs'>Tax on nominal interest</text>
+<text x='353.56' y='511.51' style='font-size: 9.00px; font-family: "Arial";' textLength='109.00px' lengthAdjust='spacingAndGlyphs'>Tax on positive real interest</text>
+<text x='13.95' y='45.20' style='font-size: 12.00px; font-family: "Arial";' textLength='390.78px' lengthAdjust='spacingAndGlyphs'>Fixed illustrative 5% nominal return; 33% tax; exact real-return calculation</text>
+<text x='13.95' y='26.84' style='font-size: 18.00px; font-weight: bold; font-family: "Arial";' textLength='313.16px' lengthAdjust='spacingAndGlyphs'>Saving returns after inflation and tax</text>
+<text x='13.95' y='535.33' style='font-size: 9.00px; font-family: "Arial";' textLength='490.53px' lengthAdjust='spacingAndGlyphs'>Scenario using observed CPI | These are not realised returns on actual NZ deposits. The real-return-only tax counterfactual</text>
+<text x='13.95' y='547.75' style='font-size: 9.00px; font-family: "Arial";' textLength='298.50px' lengthAdjust='spacingAndGlyphs'>assumes no refund for losses; nominal tax payments are deflated with CPI.</text>
+<text x='13.95' y='560.17' style='font-size: 9.00px; font-family: "Arial";' textLength='348.03px' lengthAdjust='spacingAndGlyphs'>Sources: IRD full-year personal tax scale from April 2025; World Bank FP.CPI.TOTL.ZG</text>
+</g>
+</g>
+</svg>

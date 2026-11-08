@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='-0.000000000000064' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNTAuNDl8ODQ0LjA3fDU2LjYyfDQyOS4wMg=='>
+    <rect x='50.49' y='56.62' width='793.59' height='372.39' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTAuNDl8ODQ0LjA3fDU2LjYyfDQyOS4wMg==)'>
+<polyline points='50.49,412.09 844.07,412.09 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='50.49,324.11 844.07,324.11 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='50.49,236.13 844.07,236.13 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='50.49,148.15 844.07,148.15 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='50.49,60.17 844.07,60.17 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='86.56,429.02 86.56,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='230.85,429.02 230.85,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='375.14,429.02 375.14,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='519.43,429.02 519.43,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='663.71,429.02 663.71,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='808.00,429.02 808.00,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='86.56,412.09 100.99,410.33 115.42,408.55 129.85,406.76 144.28,404.95 158.70,403.12 173.13,401.27 187.56,399.40 201.99,397.52 216.42,395.62 230.85,393.70 245.28,391.76 259.71,389.80 274.14,387.82 288.56,385.82 302.99,383.80 317.42,381.77 331.85,379.71 346.28,377.63 360.71,375.54 375.14,373.42 389.57,371.28 404.00,369.12 418.42,366.94 432.85,364.74 447.28,362.51 461.71,360.27 476.14,358.00 490.57,355.71 505.00,353.40 519.43,351.06 533.85,348.70 548.28,346.32 562.71,343.92 577.14,341.49 591.57,339.04 606.00,336.56 620.43,334.06 634.86,331.54 649.29,328.99 663.71,326.41 678.14,323.82 692.57,321.19 707.00,318.54 721.43,315.86 735.86,313.16 750.29,310.43 764.72,307.67 779.14,304.89 793.57,302.08 808.00,299.24 ' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<polyline points='86.56,412.09 100.99,408.57 115.42,405.02 129.85,401.43 144.28,397.80 158.70,394.14 173.13,390.45 187.56,386.72 201.99,382.95 216.42,379.14 230.85,375.30 245.28,371.42 259.71,367.50 274.14,363.55 288.56,359.55 302.99,355.52 317.42,351.45 331.85,347.33 346.28,343.18 360.71,338.98 375.14,334.75 389.57,330.47 404.00,326.15 418.42,321.79 432.85,317.38 447.28,312.94 461.71,308.45 476.14,303.91 490.57,299.33 505.00,294.71 519.43,290.04 533.85,285.32 548.28,280.56 562.71,275.75 577.14,270.89 591.57,265.99 606.00,261.04 620.43,256.04 634.86,250.99 649.29,245.89 663.71,240.74 678.14,235.54 692.57,230.29 707.00,224.99 721.43,219.64 735.86,214.23 750.29,208.77 764.72,203.26 779.14,197.69 793.57,192.07 808.00,186.40 ' style='stroke-width: 1.92; stroke: #C56000; stroke-linecap: butt;' />
+<polyline points='86.56,412.09 100.99,406.81 115.42,401.48 129.85,396.10 144.28,390.66 158.70,385.17 173.13,379.63 187.56,374.03 201.99,368.38 216.42,362.67 230.85,356.91 245.28,351.09 259.71,345.21 274.14,339.28 288.56,333.29 302.99,327.23 317.42,321.12 331.85,314.95 346.28,308.72 360.71,302.43 375.14,296.08 389.57,289.66 404.00,283.18 418.42,276.64 432.85,270.03 447.28,263.36 461.71,256.62 476.14,249.82 490.57,242.95 505.00,236.01 519.43,229.01 533.85,221.94 548.28,214.79 562.71,207.58 577.14,200.30 591.57,192.94 606.00,185.51 620.43,178.01 634.86,170.44 649.29,162.79 663.71,155.07 678.14,147.27 692.57,139.39 707.00,131.44 721.43,123.41 735.86,115.30 750.29,107.11 764.72,98.85 779.14,90.50 793.57,82.06 808.00,73.55 ' style='stroke-width: 1.92; stroke: #395A9A; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='45.11' y='415.52' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='5.33px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='45.11' y='327.54' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>50</text>
+<text x='45.11' y='239.56' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.98px' lengthAdjust='spacingAndGlyphs'>100</text>
+<text x='45.11' y='151.58' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.98px' lengthAdjust='spacingAndGlyphs'>150</text>
+<text x='45.11' y='63.60' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.98px' lengthAdjust='spacingAndGlyphs'>200</text>
+<text x='86.56' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='5.33px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='230.85' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>10</text>
+<text x='375.14' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>20</text>
+<text x='519.43' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>30</text>
+<text x='663.71' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>40</text>
+<text x='808.00' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>50</text>
+<text x='447.28' y='454.15' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='178.27px' lengthAdjust='spacingAndGlyphs'>Years after starting extra pre-funding</text>
+<text transform='translate(23.82,242.82) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='141.11px' lengthAdjust='spacingAndGlyphs'>Accumulated fund / GDP (%)</text>
+<line x1='337.89' y1='483.04' x2='351.71' y2='483.04' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<line x1='452.00' y1='483.04' x2='465.82' y2='483.04' style='stroke-width: 1.92; stroke: #C56000; stroke-linecap: butt;' />
+<line x1='337.89' y1='506.29' x2='351.71' y2='506.29' style='stroke-width: 1.92; stroke: #395A9A; stroke-linecap: butt;' />
+<text x='359.42' y='486.62' style='font-size: 10.00px; font-family: "Arial";' textLength='84.88px' lengthAdjust='spacingAndGlyphs'>1% GDP deposited</text>
+<text x='473.53' y='486.62' style='font-size: 10.00px; font-family: "Arial";' textLength='84.88px' lengthAdjust='spacingAndGlyphs'>2% GDP deposited</text>
+<text x='359.42' y='509.88' style='font-size: 10.00px; font-family: "Arial";' textLength='84.88px' lengthAdjust='spacingAndGlyphs'>3% GDP deposited</text>
+<text x='15.94' y='48.13' style='font-size: 12.00px; font-family: "Arial";' textLength='430.55px' lengthAdjust='spacingAndGlyphs'>Extra end-year deposits; 3% net real return; 2% real GDP growth; no withdrawals</text>
+<text x='15.94' y='29.55' style='font-size: 19.00px; font-weight: bold; font-family: "Arial";' textLength='472.97px' lengthAdjust='spacingAndGlyphs'>Pre-funding requires resources during the transition</text>
+<text x='15.94' y='533.33' style='font-size: 9.00px; font-family: "Arial";' textLength='540.00px' lengthAdjust='spacingAndGlyphs'>Scenario: Existing pensions still need financing. If deposits are debt-funded, gross assets overstate net pre-funding; no borrowing costs,</text>
+<text x='15.94' y='545.75' style='font-size: 9.00px; font-family: "Arial";' textLength='175.84px' lengthAdjust='spacingAndGlyphs'>tax changes or pension offsets are included.</text>
+<text x='15.94' y='558.17' style='font-size: 9.00px; font-family: "Arial";' textLength='265.52px' lengthAdjust='spacingAndGlyphs'>Sources: Treasury PREFU September 2026 charts and time series</text>
+</g>
+</g>
+</svg>

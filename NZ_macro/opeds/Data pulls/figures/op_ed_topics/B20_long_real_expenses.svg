@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='0.00' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNTMuNTJ8ODQ2LjA3fDUzLjcwfDQxNy4yOA=='>
+    <rect x='53.52' y='53.70' width='792.54' height='363.58' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTMuNTJ8ODQ2LjA3fDUzLjcwfDQxNy4yOA==)'>
+<polyline points='53.52,387.62 846.07,387.62 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='53.52,310.92 846.07,310.92 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='53.52,234.22 846.07,234.22 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='53.52,157.52 846.07,157.52 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='53.52,80.83 846.07,80.83 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='134.58,417.28 134.58,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='284.68,417.28 284.68,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='434.79,417.28 434.79,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='584.89,417.28 584.89,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='734.99,417.28 734.99,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='53.52,349.27 846.07,349.27 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='53.52,272.57 846.07,272.57 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='53.52,195.87 846.07,195.87 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='53.52,119.18 846.07,119.18 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='59.53,417.28 59.53,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='209.63,417.28 209.63,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='359.73,417.28 359.73,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='509.84,417.28 509.84,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='659.94,417.28 659.94,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='810.04,417.28 810.04,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='89.55,396.75 119.57,398.44 149.59,398.91 179.61,399.97 209.63,400.76 239.65,388.68 269.67,372.78 299.69,368.60 329.71,365.68 359.73,364.48 389.75,367.31 419.78,369.53 449.80,371.77 479.82,373.69 509.84,376.50 539.86,377.86 569.88,379.39 599.90,382.58 629.92,371.23 659.94,368.33 689.96,371.52 719.98,377.14 750.00,378.10 780.02,377.36 810.04,373.93 ' style='stroke-width: 2.13; stroke: #F8766D; stroke-linecap: butt;' />
+<polyline points='89.55,399.08 119.57,398.74 149.59,398.99 179.61,398.55 209.63,397.36 239.65,395.38 269.67,394.33 299.69,394.49 329.71,391.84 359.73,388.72 389.75,388.58 419.78,388.45 449.80,388.60 479.82,388.68 509.84,388.25 539.86,386.71 569.88,386.96 599.90,384.57 629.92,375.12 659.94,368.71 689.96,361.50 719.98,362.29 750.00,366.36 780.02,364.00 810.04,364.85 ' style='stroke-width: 2.13; stroke: #7CAE00; stroke-linecap: butt;' />
+<polyline points='89.55,312.41 119.57,314.30 149.59,314.83 179.61,318.11 209.63,326.01 239.65,331.61 269.67,334.60 299.69,339.28 329.71,335.28 359.73,322.95 389.75,324.52 419.78,324.63 449.80,328.53 479.82,332.89 509.84,335.69 539.86,337.05 569.88,337.82 599.90,339.88 629.92,337.95 659.94,327.17 689.96,306.28 719.98,304.40 750.00,300.93 780.02,288.89 810.04,279.26 ' style='stroke-width: 2.13; stroke: #00BFC4; stroke-linecap: butt;' />
+<polyline points='89.55,277.68 119.57,276.70 149.59,274.11 179.61,271.01 209.63,270.62 239.65,267.50 269.67,261.62 299.69,255.39 329.71,249.92 359.73,241.75 389.75,237.35 419.78,223.39 449.80,212.06 479.82,200.65 509.84,187.35 539.86,175.06 569.88,164.03 599.90,155.19 629.92,142.72 659.94,129.15 689.96,121.13 719.98,121.01 750.00,109.08 780.02,85.63 810.04,70.23 ' style='stroke-width: 2.13; stroke: #C77CFF; stroke-linecap: butt;' />
+<line x1='464.81' y1='417.28' x2='464.81' y2='53.70' style='stroke-width: 1.16; stroke: #666666; stroke-dasharray: 6.21,6.21; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='48.14' y='352.85' text-anchor='end' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='5.56px' lengthAdjust='spacingAndGlyphs'>5</text>
+<text x='48.14' y='276.15' text-anchor='end' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>10</text>
+<text x='48.14' y='199.46' text-anchor='end' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>15</text>
+<text x='48.14' y='122.76' text-anchor='end' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>20</text>
+<text x='59.53' y='429.83' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='22.25px' lengthAdjust='spacingAndGlyphs'>2000</text>
+<text x='209.63' y='429.83' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='22.25px' lengthAdjust='spacingAndGlyphs'>2005</text>
+<text x='359.73' y='429.83' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='22.25px' lengthAdjust='spacingAndGlyphs'>2010</text>
+<text x='509.84' y='429.83' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='22.25px' lengthAdjust='spacingAndGlyphs'>2015</text>
+<text x='659.94' y='429.83' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='22.25px' lengthAdjust='spacingAndGlyphs'>2020</text>
+<text x='810.04' y='429.83' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='22.25px' lengthAdjust='spacingAndGlyphs'>2025</text>
+<text x='449.80' y='443.52' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='126.72px' lengthAdjust='spacingAndGlyphs'>Fiscal year ending June</text>
+<text transform='translate(22.54,235.49) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='261.45px' lengthAdjust='spacingAndGlyphs'>Expense in 2025 purchasing power (NZ$ billions)</text>
+<line x1='320.03' y1='472.61' x2='333.85' y2='472.61' style='stroke-width: 2.13; stroke: #F8766D; stroke-linecap: butt;' />
+<line x1='481.76' y1='472.61' x2='495.59' y2='472.61' style='stroke-width: 2.13; stroke: #7CAE00; stroke-linecap: butt;' />
+<line x1='320.03' y1='495.87' x2='333.85' y2='495.87' style='stroke-width: 2.13; stroke: #00BFC4; stroke-linecap: butt;' />
+<line x1='481.76' y1='495.87' x2='495.59' y2='495.87' style='stroke-width: 2.13; stroke: #C77CFF; stroke-linecap: butt;' />
+<text x='341.56' y='475.83' style='font-size: 9.00px; font-family: "Arial";' textLength='129.00px' lengthAdjust='spacingAndGlyphs'>Family tax credits and payments</text>
+<text x='503.29' y='475.83' style='font-size: 9.00px; font-family: "Arial";' textLength='78.00px' lengthAdjust='spacingAndGlyphs'>Housing assistance</text>
+<text x='341.56' y='499.09' style='font-size: 9.00px; font-family: "Arial";' textLength='132.50px' lengthAdjust='spacingAndGlyphs'>Main income-replacement basket</text>
+<text x='503.29' y='499.09' style='font-size: 9.00px; font-family: "Arial";' textLength='78.00px' lengthAdjust='spacingAndGlyphs'>NZ Superannuation</text>
+<text x='13.95' y='45.20' style='font-size: 12.00px; font-family: "Arial";' textLength='361.47px' lengthAdjust='spacingAndGlyphs'>Selected baskets, 2001-2025; calendar annual-average CPI deflator</text>
+<text x='13.95' y='26.84' style='font-size: 18.00px; font-weight: bold; font-family: "Arial";' textLength='347.11px' lengthAdjust='spacingAndGlyphs'>Long-run benefit spending after inflation</text>
+<text x='13.95' y='522.91' style='font-size: 9.00px; font-family: "Arial";' textLength='508.36px' lengthAdjust='spacingAndGlyphs'>Derived expense history / approximate grouping | Actuals from five Treasury vintages; accounting, classification and programme</text>
+<text x='13.95' y='535.33' style='font-size: 9.00px; font-family: "Arial";' textLength='522.34px' lengthAdjust='spacingAndGlyphs'>coverage change. The main basket is approximate across the 2013 reform. Calendar-year CPI approximates fiscal-year purchasing</text>
+<text x='13.95' y='547.75' style='font-size: 9.00px; font-family: "Arial";' textLength='301.00px' lengthAdjust='spacingAndGlyphs'>power. Real spending changes can reflect caseload, rates and composition.</text>
+<text x='13.95' y='560.17' style='font-size: 9.00px; font-family: "Arial";' textLength='322.34px' lengthAdjust='spacingAndGlyphs'>Sources: 6 official releases; full URLs and vintages in chart catalogue and gallery</text>
+</g>
+</g>
+</svg>

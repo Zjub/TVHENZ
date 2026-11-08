@@ -1,0 +1,18 @@
+date,recipients,source_id,source_vintage,source_sheet,source_row,programme,estimate_basis,year,population,cpi,per_1000_residents
+2009-06-30,310296,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast,2009,4302600,97.7497768150263,72.11825407892901
+2010-06-30,332924,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast,2010,4350700,100,76.52193899832211
+2011-06-30,327817,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast,2011,4384000,104.02790667392,74.77577554744525
+2012-06-30,320041,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast,2012,4408100,105.130512172271,72.6029355050929
+2013-06-30,309782,msd_national_2013,2013,All main benefits 2008-2013,18,Total,MSD pre-reform backcast,2013,4442100,106.323136529614,69.73773665608608
+2014-06-30,293586,msd_national_2018,2018,Summary table - last 5 years,8,Total,Observed current-category count,2014,4516500,107.628261011102,65.00298904018598
+2015-06-30,285349,msd_national_2018,2018,Summary table - last 5 years,8,Total,Observed current-category count,2015,4609400,107.943293912264,61.90588796806526
+2016-06-30,280177,msd_national_2018,2018,Summary table - last 5 years,8,Total,Observed current-category count,2016,4714100,108.640866961892,59.43382618103137
+2017-06-30,276333,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count,2017,4813600,110.65157873712,57.40672261924547
+2018-06-30,277410,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count,2018,4900600,112.420119642595,56.60735420152634
+2019-06-30,291969,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count,2019,4970300,114.240911764413,58.742731827052694
+2020-06-30,353439,msd_national_2021,2021,Summary table - last 5 years,9,Total,Observed current-category count,2020,5072400,116.19964268334,69.67885024840312
+2021-06-30,354744,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count,2021,5084600,120.779210747308,69.76832002517405
+2022-06-30,344622,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count,2022,5081700,129.441767205657,67.81628195288978
+2023-06-30,351759,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count,2023,5200000,136.86287449004,67.64596153846153
+2024-06-30,380889,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count,2024,5290000,140.863099606157,72.00170132325142
+2025-06-30,406128,msd_benefits,2026,Summary table - last 5 years,,Total,Observed current-category count,2025,5324700,144.863324722274,76.2724660544256

@@ -1,0 +1,2877 @@
+Date,RegionalCouncil,Headcount,Sector,BroadSector
+6/30/2011 0:00,Southland,757,Public Service,State Sector
+6/30/2001 0:00,Canterbury,3377,Public Service,State Sector
+6/30/2006 0:00,Taranaki,518,Public Service,State Sector
+6/30/2018 0:00,Northland,1398,Public Service,State Sector
+6/30/2005 0:00,Tasman,87,Public Service,State Sector
+6/30/2008 0:00,Manawatu-Wanganui,1966,Public Service,State Sector
+6/30/2015 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2022 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2002 0:00,Overseas,226,Public Service,State Sector
+6/30/2003 0:00,Manawatu-Wanganui,1486,Public Service,State Sector
+6/30/2006 0:00,Wellington,17488,Public Service,State Sector
+6/30/2008 0:00,Southland,813,Public Service,State Sector
+6/30/2012 0:00,Wellington,18199,Public Service,State Sector
+6/30/2012 0:00,Marlborough,142,Public Service,State Sector
+6/30/2018 0:00,Marlborough,186,Public Service,State Sector
+6/30/2011 0:00,Auckland,9152,Public Service,State Sector
+6/30/2015 0:00,Otago,1304,Public Service,State Sector
+6/30/2016 0:00,Overseas,291,Public Service,State Sector
+6/30/2016 0:00,Taranaki,378,Public Service,State Sector
+6/30/2006 0:00,Tasman,17,Public Service,State Sector
+6/30/2007 0:00,Wellington,17894,Public Service,State Sector
+6/30/2008 0:00,Auckland,9406,Public Service,State Sector
+6/30/2017 0:00,Auckland,10010,Public Service,State Sector
+6/30/2018 0:00,West Coast,288,Public Service,State Sector
+6/30/2018 0:00,Canterbury,4684,Public Service,State Sector
+6/30/2019 0:00,Tasman,116,Public Service,State Sector
+6/30/2005 0:00,Wellington,16193,Public Service,State Sector
+6/30/2014 0:00,Waikato,3935,Public Service,State Sector
+6/30/2011 0:00,Marlborough,165,Public Service,State Sector
+6/30/2016 0:00,Nelson,462,Public Service,State Sector
+6/30/2008 0:00,Marlborough,334,Public Service,State Sector
+6/30/2021 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2017 0:00,Southland,574,Public Service,State Sector
+6/30/2023 0:00,Marlborough,540,Local Government,Local Government
+6/30/2023 0:00,Tasman,21800,Private Sector,Private Sector
+6/30/2023 0:00,Southland,44200,Private Sector,Private Sector
+6/30/2023 0:00,Otago,4400,Local Government,Local Government
+6/30/2023 0:00,Canterbury,9900,Local Government,Local Government
+6/30/2023 0:00,Taranaki,290,SoEs,State Sector
+6/30/2023 0:00,Auckland,16500,SoEs,State Sector
+6/30/2022 0:00,Manawatu-Wanganui,85000,Private Sector,Private Sector
+6/30/2023 0:00,Manawatu-Wanganui,1150,SoEs,State Sector
+6/30/2023 0:00,Hawkes Bay,2400,Local Government,Local Government
+6/30/2023 0:00,Hawkes Bay,760,SoEs,State Sector
+6/30/2023 0:00,Gisborne,140,SoEs,State Sector
+6/30/2023 0:00,Waikato,4800,Local Government,Local Government
+6/30/2022 0:00,Nelson,420,SoEs,State Sector
+6/30/2022 0:00,West Coast,830,Education Sector,State Sector
+6/30/2022 0:00,Manawatu-Wanganui,1250,SoEs,State Sector
+6/30/2023 0:00,Manawatu-Wanganui,85100,Private Sector,Private Sector
+6/30/2023 0:00,Northland,53200,Private Sector,Private Sector
+6/30/2022 0:00,Otago,9800,Education Sector,State Sector
+6/30/2022 0:00,Wellington,192600,Private Sector,Private Sector
+6/30/2022 0:00,Hawkes Bay,71400,Private Sector,Private Sector
+6/30/2022 0:00,Taranaki,3450,Education Sector,State Sector
+6/30/2021 0:00,Nelson,380,SoEs,State Sector
+6/30/2021 0:00,Southland,2800,Education Sector,State Sector
+6/30/2021 0:00,Canterbury,13000,Health Sector,State Sector
+6/30/2021 0:00,Waikato,4350,Local Government,Local Government
+6/30/2020 0:00,Marlborough,990,Education Sector,State Sector
+6/30/2020 0:00,Southland,420,SoEs,State Sector
+6/30/2020 0:00,Canterbury,12700,Health Sector,State Sector
+6/30/2020 0:00,West Coast,210,SoEs,State Sector
+6/30/2020 0:00,West Coast,790,Education Sector,State Sector
+6/30/2020 0:00,Manawatu-Wanganui,82400,Private Sector,Private Sector
+6/30/2020 0:00,Manawatu-Wanganui,2000,Local Government,Local Government
+6/30/2020 0:00,Hawkes Bay,660,SoEs,State Sector
+6/30/2020 0:00,Gisborne,580,Local Government,Local Government
+6/30/2020 0:00,Bay of Plenty,4600,Health Sector,State Sector
+6/30/2019 0:00,West Coast,720,Education Sector,State Sector
+6/30/2019 0:00,Northland,440,SoEs,State Sector
+6/30/2018 0:00,Marlborough,21400,Private Sector,Private Sector
+6/30/2018 0:00,Nelson,21000,Private Sector,Private Sector
+6/30/2018 0:00,Otago,1250,SoEs,State Sector
+6/30/2018 0:00,Bay of Plenty,111300,Private Sector,Private Sector
+6/30/2020 0:00,Waikato,13600,Education Sector,State Sector
+6/30/2019 0:00,Area Outside Regions,320,Private Sector,Private Sector
+6/30/2019 0:00,Canterbury,12100,Health Sector,State Sector
+6/30/2019 0:00,Waikato,4150,Local Government,Local Government
+6/30/2018 0:00,Taranaki,1700,Health Sector,State Sector
+6/30/2018 0:00,Waikato,7700,Health Sector,State Sector
+6/30/2020 0:00,Gisborne,110,SoEs,State Sector
+6/30/2017 0:00,Southland,41900,Private Sector,Private Sector
+6/30/2017 0:00,Otago,91200,Private Sector,Private Sector
+6/30/2017 0:00,Taranaki,260,SoEs,State Sector
+6/30/2017 0:00,Gisborne,910,Health Sector,State Sector
+6/30/2017 0:00,Northland,47900,Private Sector,Private Sector
+6/30/2016 0:00,Marlborough,20300,Private Sector,Private Sector
+6/30/2016 0:00,Marlborough,430,Local Government,Local Government
+6/30/2016 0:00,Nelson,510,SoEs,State Sector
+6/30/2016 0:00,Southland,42200,Private Sector,Private Sector
+6/30/2016 0:00,Southland,1250,Health Sector,State Sector
+6/30/2016 0:00,West Coast,11400,Private Sector,Private Sector
+6/30/2016 0:00,Gisborne,1450,Education Sector,State Sector
+6/30/2016 0:00,Waikato,12700,Education Sector,State Sector
+6/30/2016 0:00,Northland,420,SoEs,State Sector
+6/30/2015 0:00,Area Outside Regions,15,Health Sector,State Sector
+6/30/2015 0:00,Marlborough,19200,Private Sector,Private Sector
+6/30/2015 0:00,Tasman,100,Health Sector,State Sector
+6/30/2015 0:00,Southland,1950,Local Government,Local Government
+6/30/2015 0:00,Southland,1250,Health Sector,State Sector
+6/30/2015 0:00,Canterbury,236200,Private Sector,Private Sector
+6/30/2015 0:00,Gisborne,1500,Education Sector,State Sector
+6/30/2014 0:00,Area Outside Regions,0,SoEs,State Sector
+6/30/2014 0:00,Canterbury,228000,Private Sector,Private Sector
+6/30/2014 0:00,Canterbury,5700,SoEs,State Sector
+6/30/2014 0:00,Taranaki,1550,Health Sector,State Sector
+6/30/2014 0:00,Hawkes Bay,610,SoEs,State Sector
+6/30/2013 0:00,Wellington,164700,Private Sector,Private Sector
+6/30/2013 0:00,Hawkes Bay,2150,Health Sector,State Sector
+6/30/2013 0:00,Gisborne,16600,Private Sector,Private Sector
+6/30/2013 0:00,Gisborne,130,SoEs,State Sector
+6/30/2016 0:00,Taranaki,1300,Local Government,Local Government
+6/30/2016 0:00,Waikato,7200,Health Sector,State Sector
+6/30/2013 0:00,Taranaki,1300,Local Government,Local Government
+6/30/2012 0:00,West Coast,790,SoEs,State Sector
+6/30/2012 0:00,Taranaki,1300,Local Government,Local Government
+6/30/2012 0:00,Hawkes Bay,2200,Health Sector,State Sector
+6/30/2012 0:00,Auckland,534400,Private Sector,Private Sector
+6/30/2011 0:00,Nelson,1350,Education Sector,State Sector
+6/30/2011 0:00,Manawatu-Wanganui,1350,SoEs,State Sector
+6/30/2010 0:00,Wellington,8500,Health Sector,State Sector
+6/30/2010 0:00,Taranaki,1300,Local Government,Local Government
+6/30/2009 0:00,Hawkes Bay,4450,Education Sector,State Sector
+6/30/2009 0:00,Auckland,37700,Education Sector,State Sector
+6/30/2008 0:00,Wellington,4600,Local Government,Local Government
+6/30/2008 0:00,Auckland,14600,SoEs,State Sector
+6/30/2008 0:00,Northland,2050,Health Sector,State Sector
+6/30/2007 0:00,Area Outside Regions,0,SoEs,State Sector
+6/30/2007 0:00,Nelson,560,Local Government,Local Government
+6/30/2010 0:00,Tasman,25,SoEs,State Sector
+6/30/2022 0:00,Nelson,23200,Private Sector,Private Sector
+6/30/2022 0:00,West Coast,610,Local Government,Local Government
+6/30/2022 0:00,Wellington,10300,SoEs,State Sector
+6/30/2021 0:00,Nelson,1750,Health Sector,State Sector
+6/30/2021 0:00,Waikato,14200,Education Sector,State Sector
+6/30/2020 0:00,Canterbury,17400,Education Sector,State Sector
+6/30/2019 0:00,Canterbury,252300,Private Sector,Private Sector
+6/30/2018 0:00,Gisborne,95,SoEs,State Sector
+6/30/2018 0:00,Northland,50000,Private Sector,Private Sector
+6/30/2020 0:00,Otago,99100,Private Sector,Private Sector
+6/30/2017 0:00,Bay of Plenty,740,SoEs,State Sector
+6/30/2017 0:00,Waikato,155900,Private Sector,Private Sector
+6/30/2016 0:00,Canterbury,9000,Local Government,Local Government
+6/30/2016 0:00,Manawatu-Wanganui,1150,SoEs,State Sector
+6/30/2016 0:00,Hawkes Bay,64400,Private Sector,Private Sector
+6/30/2015 0:00,Otago,3450,Local Government,Local Government
+6/30/2015 0:00,Otago,3500,Health Sector,State Sector
+6/30/2015 0:00,Wellington,168200,Private Sector,Private Sector
+6/30/2015 0:00,Wellington,5000,Local Government,Local Government
+6/30/2015 0:00,Wellington,8600,Health Sector,State Sector
+6/30/2015 0:00,Manawatu-Wanganui,1150,SoEs,State Sector
+6/30/2015 0:00,Gisborne,470,Local Government,Local Government
+6/30/2015 0:00,Bay of Plenty,860,SoEs,State Sector
+6/30/2014 0:00,Otago,1350,SoEs,State Sector
+6/30/2014 0:00,Waikato,7000,Health Sector,State Sector
+6/30/2014 0:00,Waikato,12600,Education Sector,State Sector
+6/30/2013 0:00,Nelson,1500,Health Sector,State Sector
+6/30/2013 0:00,Tasman,17600,Private Sector,Private Sector
+6/30/2013 0:00,Southland,40100,Private Sector,Private Sector
+6/30/2013 0:00,Canterbury,15300,Education Sector,State Sector
+6/30/2013 0:00,Wellington,4750,Local Government,Local Government
+6/30/2013 0:00,Gisborne,1450,Education Sector,State Sector
+6/30/2013 0:00,Bay of Plenty,860,SoEs,State Sector
+6/30/2012 0:00,Nelson,19200,Private Sector,Private Sector
+6/30/2015 0:00,Northland,4500,Education Sector,State Sector
+6/30/2013 0:00,Manawatu-Wanganui,1200,SoEs,State Sector
+6/30/2012 0:00,Southland,540,SoEs,State Sector
+6/30/2012 0:00,West Coast,780,Education Sector,State Sector
+6/30/2012 0:00,Manawatu-Wanganui,1300,SoEs,State Sector
+6/30/2012 0:00,Taranaki,2900,Education Sector,State Sector
+6/30/2012 0:00,Gisborne,870,Health Sector,State Sector
+6/30/2012 0:00,Waikato,6800,Health Sector,State Sector
+6/30/2011 0:00,Nelson,19700,Private Sector,Private Sector
+6/30/2011 0:00,Tasman,170,Health Sector,State Sector
+6/30/2011 0:00,Southland,1900,Local Government,Local Government
+6/30/2011 0:00,Otago,3600,Local Government,Local Government
+6/30/2011 0:00,Canterbury,15900,Education Sector,State Sector
+6/30/2011 0:00,Wellington,8500,Health Sector,State Sector
+6/30/2011 0:00,Gisborne,16700,Private Sector,Private Sector
+6/30/2011 0:00,Waikato,133000,Private Sector,Private Sector
+6/30/2011 0:00,Auckland,40400,Education Sector,State Sector
+6/30/2010 0:00,Southland,2450,Education Sector,State Sector
+6/30/2010 0:00,Canterbury,7900,Local Government,Local Government
+6/30/2010 0:00,Manawatu-Wanganui,76000,Private Sector,Private Sector
+6/30/2010 0:00,Taranaki,41800,Private Sector,Private Sector
+6/30/2010 0:00,Bay of Plenty,780,SoEs,State Sector
+6/30/2010 0:00,Waikato,6500,Health Sector,State Sector
+6/30/2009 0:00,Southland,600,SoEs,State Sector
+6/30/2009 0:00,West Coast,500,Local Government,Local Government
+6/30/2009 0:00,Hawkes Bay,65000,Private Sector,Private Sector
+6/30/2009 0:00,Gisborne,440,Local Government,Local Government
+6/30/2009 0:00,Gisborne,1400,Education Sector,State Sector
+6/30/2009 0:00,Waikato,6200,Health Sector,State Sector
+6/30/2009 0:00,Northland,1000,Local Government,Local Government
+6/30/2009 0:00,Northland,420,SoEs,State Sector
+6/30/2008 0:00,Area Outside Regions,0,SoEs,State Sector
+6/30/2008 0:00,Marlborough,320,Local Government,Local Government
+6/30/2008 0:00,Nelson,1350,Education Sector,State Sector
+6/30/2008 0:00,West Coast,970,Health Sector,State Sector
+6/30/2008 0:00,Taranaki,1350,Local Government,Local Government
+6/30/2008 0:00,Hawkes Bay,66000,Private Sector,Private Sector
+6/30/2007 0:00,Marlborough,300,Local Government,Local Government
+6/30/2007 0:00,Marlborough,510,SoEs,State Sector
+6/30/2007 0:00,Tasman,30,SoEs,State Sector
+6/30/2007 0:00,Tasman,1150,Education Sector,State Sector
+6/30/2018 0:00,Nelson,540,SoEs,State Sector
+6/30/2011 0:00,Northland,43000,Private Sector,Private Sector
+6/30/2010 0:00,Marlborough,460,Health Sector,State Sector
+6/30/2010 0:00,Nelson,1300,Education Sector,State Sector
+6/30/2010 0:00,Canterbury,206700,Private Sector,Private Sector
+6/30/2009 0:00,Manawatu-Wanganui,76900,Private Sector,Private Sector
+6/30/2008 0:00,Northland,1000,Local Government,Local Government
+6/30/2011 0:00,Gisborne,330,SoEs,State Sector
+6/30/2009 0:00,West Coast,12000,Private Sector,Private Sector
+6/30/2009 0:00,Taranaki,2650,Education Sector,State Sector
+6/30/2008 0:00,Canterbury,7300,Local Government,Local Government
+6/30/2008 0:00,Waikato,5900,Health Sector,State Sector
+6/30/2009 0:00,Bay of Plenty,2200,Local Government,Local Government
+6/30/2007 0:00,Otago,9100,Education Sector,State Sector
+6/30/2007 0:00,Wellington,173600,Private Sector,Private Sector
+6/30/2007 0:00,Manawatu-Wanganui,78800,Private Sector,Private Sector
+6/30/2007 0:00,Manawatu-Wanganui,1950,Local Government,Local Government
+6/30/2007 0:00,Bay of Plenty,790,SoEs,State Sector
+6/30/2007 0:00,Bay of Plenty,6900,Education Sector,State Sector
+6/30/2007 0:00,Waikato,3550,Local Government,Local Government
+6/30/2007 0:00,Waikato,5800,Health Sector,State Sector
+6/30/2007 0:00,Northland,45400,Private Sector,Private Sector
+6/30/2007 0:00,Northland,1000,Local Government,Local Government
+6/30/2006 0:00,Tasman,210,Health Sector,State Sector
+6/30/2006 0:00,Southland,510,SoEs,State Sector
+6/30/2006 0:00,Canterbury,9400,Health Sector,State Sector
+6/30/2006 0:00,West Coast,11000,Private Sector,Private Sector
+6/30/2006 0:00,West Coast,750,Education Sector,State Sector
+6/30/2006 0:00,Manawatu-Wanganui,1300,SoEs,State Sector
+6/30/2006 0:00,Hawkes Bay,2200,Health Sector,State Sector
+6/30/2006 0:00,Gisborne,17500,Private Sector,Private Sector
+6/30/2006 0:00,Bay of Plenty,6400,Education Sector,State Sector
+6/30/2006 0:00,Waikato,136300,Private Sector,Private Sector
+6/30/2006 0:00,Waikato,3350,Local Government,Local Government
+6/30/2005 0:00,Area Outside Regions,260,Private Sector,Private Sector
+6/30/2005 0:00,Area Outside Regions,0,SoEs,State Sector
+6/30/2005 0:00,Area Outside Regions,15,Education Sector,State Sector
+6/30/2005 0:00,Marlborough,500,SoEs,State Sector
+6/30/2005 0:00,Marlborough,790,Education Sector,State Sector
+6/30/2005 0:00,Nelson,1400,Health Sector,State Sector
+6/30/2005 0:00,Tasman,1200,Education Sector,State Sector
+6/30/2005 0:00,Canterbury,207500,Private Sector,Private Sector
+6/30/2005 0:00,Canterbury,9100,Health Sector,State Sector
+6/30/2005 0:00,Taranaki,2900,Education Sector,State Sector
+6/30/2005 0:00,Waikato,5700,Health Sector,State Sector
+6/30/2004 0:00,Marlborough,17600,Private Sector,Private Sector
+6/30/2004 0:00,Nelson,1400,Health Sector,State Sector
+6/30/2004 0:00,Northland,810,Local Government,Local Government
+6/30/2004 0:00,Northland,1900,Health Sector,State Sector
+6/30/2004 0:00,Northland,3850,Education Sector,State Sector
+6/30/2003 0:00,Area Outside Regions,0,SoEs,State Sector
+6/30/2003 0:00,Marlborough,530,SoEs,State Sector
+6/30/2003 0:00,Tasman,25,SoEs,State Sector
+6/30/2003 0:00,Wellington,13800,Education Sector,State Sector
+6/30/2003 0:00,Taranaki,36900,Private Sector,Private Sector
+6/30/2003 0:00,Waikato,2250,SoEs,State Sector
+6/30/2003 0:00,Auckland,17700,Health Sector,State Sector
+6/30/2002 0:00,Marlborough,15200,Private Sector,Private Sector
+6/30/2002 0:00,Southland,1700,Local Government,Local Government
+6/30/2002 0:00,Southland,570,SoEs,State Sector
+6/30/2002 0:00,Otago,1100,SoEs,State Sector
+6/30/2003 0:00,Hawkes Bay,57100,Private Sector,Private Sector
+6/30/2002 0:00,West Coast,390,SoEs,State Sector
+6/30/2002 0:00,Taranaki,400,SoEs,State Sector
+6/30/2002 0:00,Waikato,2750,Local Government,Local Government
+6/30/2002 0:00,Waikato,2250,SoEs,State Sector
+6/30/2002 0:00,Waikato,5300,Health Sector,State Sector
+6/30/2002 0:00,Auckland,12900,SoEs,State Sector
+6/30/2001 0:00,Area Outside Regions,6,Health Sector,State Sector
+6/30/2001 0:00,Tasman,280,Local Government,Local Government
+6/30/2001 0:00,Southland,1050,Health Sector,State Sector
+6/30/2001 0:00,Otago,8200,Education Sector,State Sector
+6/30/2001 0:00,Bay of Plenty,74000,Private Sector,Private Sector
+6/30/2001 0:00,Bay of Plenty,1550,Local Government,Local Government
+6/30/2001 0:00,Bay of Plenty,1200,SoEs,State Sector
+6/30/2001 0:00,Waikato,5200,Health Sector,State Sector
+6/30/2000 0:00,Marlborough,250,Local Government,Local Government
+6/30/2000 0:00,Marlborough,110,SoEs,State Sector
+6/30/2000 0:00,Southland,34200,Private Sector,Private Sector
+6/30/2000 0:00,Otago,2450,Local Government,Local Government
+6/30/2000 0:00,Otago,860,SoEs,State Sector
+6/30/2000 0:00,Manawatu-Wanganui,1350,SoEs,State Sector
+6/30/2000 0:00,Gisborne,160,SoEs,State Sector
+6/30/2000 0:00,Auckland,15800,Health Sector,State Sector
+6/30/2010 0:00,Hawkes Bay,1237,Public Service,State Sector
+6/30/2012 0:00,Manawatu-Wanganui,1872,Public Service,State Sector
+6/30/2009 0:00,Gisborne,287,Public Service,State Sector
+6/30/2021 0:00,Wellington,28054,Public Service,State Sector
+6/30/2017 0:00,Northland,1369,Public Service,State Sector
+6/30/2009 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2005 0:00,Wellington,166600,Private Sector,Private Sector
+6/30/2005 0:00,Manawatu-Wanganui,77700,Private Sector,Private Sector
+6/30/2004 0:00,Gisborne,1500,Education Sector,State Sector
+6/30/2003 0:00,Manawatu-Wanganui,72200,Private Sector,Private Sector
+6/30/2002 0:00,Manawatu-Wanganui,1100,SoEs,State Sector
+6/30/2016 0:00,West Coast,296,Public Service,State Sector
+6/30/2000 0:00,Taranaki,445,Public Service,State Sector
+6/30/2003 0:00,Otago,966,Public Service,State Sector
+6/30/2006 0:00,Gisborne,233,Public Service,State Sector
+6/30/2006 0:00,Overseas,280,Public Service,State Sector
+6/30/2007 0:00,Otago,1354,Public Service,State Sector
+6/30/2023 0:00,Southland,696,Public Service,State Sector
+6/30/2018 0:00,Waikato,4062,Public Service,State Sector
+6/30/2022 0:00,Wellington,27612,Public Service,State Sector
+6/30/2023 0:00,Area Outside Regions,25,Other Government Entities,State Sector
+6/30/2023 0:00,Otago,1510,Other Government Entities,State Sector
+6/30/2023 0:00,Gisborne,381,Other Government Entities,State Sector
+6/30/2023 0:00,Auckland,13462,Other Government Entities,State Sector
+6/30/2022 0:00,Auckland,14590,Other Government Entities,State Sector
+6/30/2023 0:00,Wellington,18374,Other Government Entities,State Sector
+6/30/2022 0:00,Canterbury,5067,Other Government Entities,State Sector
+6/30/2021 0:00,Wellington,16246,Other Government Entities,State Sector
+6/30/2020 0:00,Nelson,439,Other Government Entities,State Sector
+6/30/2020 0:00,Otago,1568,Other Government Entities,State Sector
+6/30/2020 0:00,Wellington,15259,Other Government Entities,State Sector
+6/30/2020 0:00,Auckland,12882,Other Government Entities,State Sector
+6/30/2019 0:00,Area Outside Regions,35,Other Government Entities,State Sector
+6/30/2019 0:00,Nelson,425,Other Government Entities,State Sector
+6/30/2019 0:00,Southland,334,Other Government Entities,State Sector
+6/30/2019 0:00,Otago,1499,Other Government Entities,State Sector
+6/30/2019 0:00,Bay of Plenty,2192,Other Government Entities,State Sector
+6/30/2017 0:00,Area Outside Regions,35,Other Government Entities,State Sector
+6/30/2021 0:00,Otago,1515,Other Government Entities,State Sector
+6/30/2017 0:00,Manawatu-Wanganui,5774,Other Government Entities,State Sector
+6/30/2017 0:00,Auckland,12590,Other Government Entities,State Sector
+6/30/2016 0:00,Nelson,278,Other Government Entities,State Sector
+6/30/2016 0:00,Southland,376,Other Government Entities,State Sector
+6/30/2016 0:00,Gisborne,270,Other Government Entities,State Sector
+6/30/2016 0:00,Northland,561,Other Government Entities,State Sector
+6/30/2015 0:00,Southland,369,Other Government Entities,State Sector
+6/30/2015 0:00,Wellington,15405,Other Government Entities,State Sector
+6/30/2015 0:00,Auckland,12526,Other Government Entities,State Sector
+6/30/2014 0:00,Wellington,15378,Other Government Entities,State Sector
+6/30/2013 0:00,Marlborough,727,Other Government Entities,State Sector
+6/30/2012 0:00,Gisborne,207,Other Government Entities,State Sector
+6/30/2011 0:00,Otago,1262,Other Government Entities,State Sector
+6/30/2011 0:00,Waikato,2119,Other Government Entities,State Sector
+6/30/2010 0:00,Area Outside Regions,25,Other Government Entities,State Sector
+6/30/2010 0:00,West Coast,182,Other Government Entities,State Sector
+6/30/2010 0:00,Bay of Plenty,1604,Other Government Entities,State Sector
+6/30/2009 0:00,Area Outside Regions,25,Other Government Entities,State Sector
+6/30/2008 0:00,Area Outside Regions,25,Other Government Entities,State Sector
+6/30/2008 0:00,Taranaki,359,Other Government Entities,State Sector
+6/30/2007 0:00,West Coast,203,Other Government Entities,State Sector
+6/30/2007 0:00,Wellington,12206,Other Government Entities,State Sector
+6/30/2007 0:00,Hawkes Bay,1174,Other Government Entities,State Sector
+6/30/2006 0:00,Canterbury,4506,Other Government Entities,State Sector
+6/30/2006 0:00,Manawatu-Wanganui,5282,Other Government Entities,State Sector
+6/30/2006 0:00,Gisborne,267,Other Government Entities,State Sector
+6/30/2006 0:00,Bay of Plenty,1518,Other Government Entities,State Sector
+6/30/2005 0:00,West Coast,156,Other Government Entities,State Sector
+6/30/2005 0:00,Northland,374,Other Government Entities,State Sector
+6/30/2004 0:00,Bay of Plenty,1081,Other Government Entities,State Sector
+6/30/2003 0:00,Wellington,9788,Other Government Entities,State Sector
+6/30/2002 0:00,Otago,1142,Other Government Entities,State Sector
+6/30/2002 0:00,West Coast,171,Other Government Entities,State Sector
+6/30/2001 0:00,Canterbury,6023,Other Government Entities,State Sector
+6/30/2001 0:00,Taranaki,237,Other Government Entities,State Sector
+6/30/2001 0:00,Auckland,10051,Other Government Entities,State Sector
+6/30/2000 0:00,Canterbury,3904,Other Government Entities,State Sector
+6/30/2000 0:00,West Coast,160,Other Government Entities,State Sector
+6/30/2016 0:00,Hawkes Bay,749,Other Government Entities,State Sector
+6/30/2013 0:00,Gisborne,198,Other Government Entities,State Sector
+6/30/2008 0:00,Wellington,13802,Other Government Entities,State Sector
+6/30/2004 0:00,Otago,930,Other Government Entities,State Sector
+6/30/2014 0:00,Marlborough,148,Public Service,State Sector
+6/30/2001 0:00,West Coast,215,Public Service,State Sector
+6/30/2020 0:00,Overseas,316,Public Service,State Sector
+6/30/2012 0:00,Waikato,3884,Public Service,State Sector
+6/30/2014 0:00,Auckland,9385,Public Service,State Sector
+6/30/2018 0:00,Gisborne,287,Public Service,State Sector
+6/30/2019 0:00,Southland,636,Public Service,State Sector
+6/30/2009 0:00,Canterbury,4582,Public Service,State Sector
+6/30/2009 0:00,Unknown,22,Public Service,State Sector
+6/30/2019 0:00,Bay of Plenty,1708,Public Service,State Sector
+6/30/2017 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2004 0:00,Gisborne,191,Public Service,State Sector
+6/30/2005 0:00,Canterbury,3835,Public Service,State Sector
+6/30/2009 0:00,Manawatu-Wanganui,1985,Public Service,State Sector
+6/30/2020 0:00,Northland,1523,Public Service,State Sector
+6/30/2020 0:00,Tasman,109,Public Service,State Sector
+6/30/2022 0:00,Otago,1429,Public Service,State Sector
+6/30/2013 0:00,Hawkes Bay,1124,Public Service,State Sector
+6/30/2015 0:00,Waikato,3947,Public Service,State Sector
+6/30/2013 0:00,Taranaki,526,Public Service,State Sector
+6/30/2023 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2014 0:00,Otago,1328,Public Service,State Sector
+6/30/2020 0:00,Taranaki,466,Public Service,State Sector
+6/30/2017 0:00,Waikato,3949,Public Service,State Sector
+6/30/2002 0:00,Marlborough,142,Public Service,State Sector
+6/30/2002 0:00,Waikato,2765,Public Service,State Sector
+6/30/2017 0:00,Manawatu-Wanganui,2126,Public Service,State Sector
+6/30/2011 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2008 0:00,Otago,1590,Public Service,State Sector
+6/30/2021 0:00,Taranaki,506,Public Service,State Sector
+6/30/2022 0:00,Tasman,140,Public Service,State Sector
+6/30/2011 0:00,Taranaki,590,Public Service,State Sector
+6/30/2014 0:00,Taranaki,444,Public Service,State Sector
+6/30/2012 0:00,Canterbury,4314,Public Service,State Sector
+6/30/2008 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2014 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2021 0:00,Marlborough,215,Public Service,State Sector
+6/30/2003 0:00,Canterbury,3539,Public Service,State Sector
+6/30/2009 0:00,Taranaki,453,Public Service,State Sector
+6/30/2022 0:00,Marlborough,216,Public Service,State Sector
+6/30/2000 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2023 0:00,Hawkes Bay,3400,Health Sector,State Sector
+6/30/2022 0:00,Area Outside Regions,15,Health Sector,State Sector
+6/30/2022 0:00,Otago,1450,SoEs,State Sector
+6/30/2022 0:00,Northland,4050,Health Sector,State Sector
+6/30/2023 0:00,Marlborough,220,SoEs,State Sector
+6/30/2023 0:00,Canterbury,269500,Private Sector,Private Sector
+6/30/2023 0:00,West Coast,900,Health Sector,State Sector
+6/30/2023 0:00,Hawkes Bay,71900,Private Sector,Private Sector
+6/30/2023 0:00,Hawkes Bay,5200,Education Sector,State Sector
+6/30/2023 0:00,Waikato,181900,Private Sector,Private Sector
+6/30/2022 0:00,Tasman,21100,Private Sector,Private Sector
+6/30/2022 0:00,Otago,96500,Private Sector,Private Sector
+6/30/2022 0:00,Tasman,260,Health Sector,State Sector
+6/30/2022 0:00,Southland,400,SoEs,State Sector
+6/30/2021 0:00,Tasman,680,Local Government,Local Government
+6/30/2021 0:00,Southland,42900,Private Sector,Private Sector
+6/30/2021 0:00,Otago,3950,Health Sector,State Sector
+6/30/2021 0:00,Canterbury,4650,SoEs,State Sector
+6/30/2021 0:00,Manawatu-Wanganui,4350,Health Sector,State Sector
+6/30/2021 0:00,Bay of Plenty,8400,Education Sector,State Sector
+6/30/2020 0:00,Nelson,1700,Education Sector,State Sector
+6/30/2020 0:00,Canterbury,254100,Private Sector,Private Sector
+6/30/2020 0:00,West Coast,810,Health Sector,State Sector
+6/30/2020 0:00,Wellington,5500,Local Government,Local Government
+6/30/2020 0:00,Northland,3450,Health Sector,State Sector
+6/30/2019 0:00,Southland,2550,Education Sector,State Sector
+6/30/2019 0:00,Wellington,184900,Private Sector,Private Sector
+6/30/2019 0:00,Hawkes Bay,600,SoEs,State Sector
+6/30/2019 0:00,Hawkes Bay,2600,Health Sector,State Sector
+6/30/2019 0:00,Bay of Plenty,8400,Education Sector,State Sector
+6/30/2019 0:00,Auckland,27400,Health Sector,State Sector
+6/30/2018 0:00,Tasman,210,Health Sector,State Sector
+6/30/2018 0:00,West Coast,890,Education Sector,State Sector
+6/30/2018 0:00,Bay of Plenty,760,SoEs,State Sector
+6/30/2018 0:00,Auckland,660200,Private Sector,Private Sector
+6/30/2018 0:00,Northland,520,SoEs,State Sector
+6/30/2020 0:00,Canterbury,5500,SoEs,State Sector
+6/30/2020 0:00,Wellington,10300,SoEs,State Sector
+6/30/2019 0:00,Area Outside Regions,35,Local Government,Local Government
+6/30/2019 0:00,Marlborough,630,Health Sector,State Sector
+6/30/2019 0:00,Nelson,1600,Health Sector,State Sector
+6/30/2018 0:00,Tasman,20300,Private Sector,Private Sector
+6/30/2018 0:00,Waikato,161100,Private Sector,Private Sector
+6/30/2017 0:00,Area Outside Regions,40,Local Government,Local Government
+6/30/2018 0:00,Southland,1950,Local Government,Local Government
+6/30/2017 0:00,Southland,1300,Health Sector,State Sector
+6/30/2017 0:00,West Coast,11100,Private Sector,Private Sector
+6/30/2017 0:00,Wellington,9000,SoEs,State Sector
+6/30/2017 0:00,Wellington,16200,Education Sector,State Sector
+6/30/2017 0:00,Taranaki,43300,Private Sector,Private Sector
+6/30/2017 0:00,Waikato,3750,Local Government,Local Government
+6/30/2016 0:00,Nelson,700,Local Government,Local Government
+6/30/2016 0:00,Gisborne,910,Health Sector,State Sector
+6/30/2015 0:00,Area Outside Regions,240,Private Sector,Private Sector
+6/30/2015 0:00,Marlborough,460,SoEs,State Sector
+6/30/2015 0:00,Nelson,480,SoEs,State Sector
+6/30/2015 0:00,Tasman,1100,Education Sector,State Sector
+6/30/2015 0:00,Otago,1450,SoEs,State Sector
+6/30/2015 0:00,West Coast,420,SoEs,State Sector
+6/30/2015 0:00,Taranaki,1300,Local Government,Local Government
+6/30/2015 0:00,Northland,44700,Private Sector,Private Sector
+6/30/2014 0:00,Area Outside Regions,35,Local Government,Local Government
+6/30/2014 0:00,Southland,1900,Local Government,Local Government
+6/30/2014 0:00,Manawatu-Wanganui,8300,Education Sector,State Sector
+6/30/2014 0:00,Bay of Plenty,94000,Private Sector,Private Sector
+6/30/2014 0:00,Auckland,39200,Education Sector,State Sector
+6/30/2013 0:00,Marlborough,17700,Private Sector,Private Sector
+6/30/2013 0:00,Otago,9500,Education Sector,State Sector
+6/30/2012 0:00,Marlborough,520,Health Sector,State Sector
+6/30/2012 0:00,Nelson,1550,Education Sector,State Sector
+6/30/2012 0:00,Tasman,1200,Education Sector,State Sector
+6/30/2012 0:00,Wellington,4800,Local Government,Local Government
+6/30/2012 0:00,Wellington,15300,Education Sector,State Sector
+6/30/2011 0:00,Area Outside Regions,35,Local Government,Local Government
+6/30/2011 0:00,Southland,2500,Education Sector,State Sector
+6/30/2010 0:00,Otago,1350,SoEs,State Sector
+6/30/2009 0:00,Area Outside Regions,15,Education Sector,State Sector
+6/30/2009 0:00,Marlborough,580,Health Sector,State Sector
+6/30/2009 0:00,Nelson,430,SoEs,State Sector
+6/30/2009 0:00,Southland,2400,Education Sector,State Sector
+6/30/2009 0:00,Northland,2200,Health Sector,State Sector
+6/30/2008 0:00,Northland,46900,Private Sector,Private Sector
+6/30/2010 0:00,Otago,3350,Health Sector,State Sector
+6/30/2010 0:00,Gisborne,17200,Private Sector,Private Sector
+6/30/2008 0:00,Bay of Plenty,96200,Private Sector,Private Sector
+6/30/2007 0:00,Waikato,2100,SoEs,State Sector
+6/30/2006 0:00,Area Outside Regions,12,Health Sector,State Sector
+6/30/2006 0:00,Canterbury,5500,SoEs,State Sector
+6/30/2006 0:00,Manawatu-Wanganui,8300,Education Sector,State Sector
+6/30/2006 0:00,Northland,3800,Education Sector,State Sector
+6/30/2005 0:00,Northland,880,Local Government,Local Government
+6/30/2004 0:00,Canterbury,6400,Local Government,Local Government
+6/30/2022 0:00,Taranaki,270,SoEs,State Sector
+6/30/2021 0:00,Hawkes Bay,72100,Private Sector,Private Sector
+6/30/2021 0:00,Hawkes Bay,5100,Education Sector,State Sector
+6/30/2020 0:00,Manawatu-Wanganui,1100,SoEs,State Sector
+6/30/2020 0:00,Bay of Plenty,8200,Education Sector,State Sector
+6/30/2019 0:00,Nelson,21700,Private Sector,Private Sector
+6/30/2018 0:00,Gisborne,510,Local Government,Local Government
+6/30/2018 0:00,Northland,3050,Health Sector,State Sector
+6/30/2017 0:00,Area Outside Regions,280,Private Sector,Private Sector
+6/30/2017 0:00,Southland,2000,Local Government,Local Government
+6/30/2017 0:00,Waikato,7400,Health Sector,State Sector
+6/30/2016 0:00,Area Outside Regions,18,Health Sector,State Sector
+6/30/2016 0:00,Tasman,12,SoEs,State Sector
+6/30/2016 0:00,Wellington,8700,Health Sector,State Sector
+6/30/2016 0:00,Manawatu-Wanganui,76400,Private Sector,Private Sector
+6/30/2016 0:00,Taranaki,44100,Private Sector,Private Sector
+6/30/2016 0:00,Hawkes Bay,1900,Local Government,Local Government
+6/30/2016 0:00,Bay of Plenty,4000,Health Sector,State Sector
+6/30/2016 0:00,Northland,2850,Health Sector,State Sector
+6/30/2015 0:00,Area Outside Regions,30,Local Government,Local Government
+6/30/2015 0:00,Otago,84600,Private Sector,Private Sector
+6/30/2015 0:00,West Coast,12200,Private Sector,Private Sector
+6/30/2015 0:00,Auckland,585000,Private Sector,Private Sector
+6/30/2014 0:00,Wellington,4800,Local Government,Local Government
+6/30/2014 0:00,Waikato,141400,Private Sector,Private Sector
+6/30/2014 0:00,Northland,4250,Education Sector,State Sector
+6/30/2013 0:00,Marlborough,530,SoEs,State Sector
+6/30/2013 0:00,Marlborough,560,Health Sector,State Sector
+6/30/2013 0:00,Auckland,544300,Private Sector,Private Sector
+6/30/2016 0:00,Bay of Plenty,790,SoEs,State Sector
+6/30/2015 0:00,Manawatu-Wanganui,75200,Private Sector,Private Sector
+6/30/2012 0:00,Southland,1950,Local Government,Local Government
+6/30/2012 0:00,Taranaki,330,SoEs,State Sector
+6/30/2012 0:00,Waikato,136800,Private Sector,Private Sector
+6/30/2012 0:00,Waikato,12700,Education Sector,State Sector
+6/30/2012 0:00,Auckland,10600,Local Government,Local Government
+6/30/2012 0:00,Northland,42300,Private Sector,Private Sector
+6/30/2012 0:00,Northland,2350,Health Sector,State Sector
+6/30/2011 0:00,Area Outside Regions,230,Private Sector,Private Sector
+6/30/2011 0:00,Canterbury,9900,Health Sector,State Sector
+6/30/2011 0:00,Waikato,2800,SoEs,State Sector
+6/30/2010 0:00,Tasman,1250,Education Sector,State Sector
+6/30/2010 0:00,Otago,9600,Education Sector,State Sector
+6/30/2010 0:00,West Coast,1000,Health Sector,State Sector
+6/30/2010 0:00,Bay of Plenty,90200,Private Sector,Private Sector
+6/30/2010 0:00,Waikato,3750,Local Government,Local Government
+6/30/2009 0:00,Marlborough,21100,Private Sector,Private Sector
+6/30/2009 0:00,Manawatu-Wanganui,2000,Local Government,Local Government
+6/30/2009 0:00,Taranaki,420,SoEs,State Sector
+6/30/2009 0:00,Taranaki,1500,Health Sector,State Sector
+6/30/2009 0:00,Waikato,3800,Local Government,Local Government
+6/30/2008 0:00,Marlborough,20200,Private Sector,Private Sector
+6/30/2007 0:00,Area Outside Regions,18,Local Government,Local Government
+6/30/2007 0:00,Nelson,20200,Private Sector,Private Sector
+6/30/2007 0:00,Southland,2350,Education Sector,State Sector
+6/30/2009 0:00,Gisborne,340,SoEs,State Sector
+6/30/2008 0:00,Tasman,1100,Education Sector,State Sector
+6/30/2008 0:00,Southland,2450,Education Sector,State Sector
+6/30/2007 0:00,Canterbury,4950,SoEs,State Sector
+6/30/2007 0:00,Taranaki,2950,Education Sector,State Sector
+6/30/2007 0:00,Gisborne,17500,Private Sector,Private Sector
+6/30/2007 0:00,Gisborne,790,Health Sector,State Sector
+6/30/2007 0:00,Bay of Plenty,93200,Private Sector,Private Sector
+6/30/2006 0:00,Southland,39500,Private Sector,Private Sector
+6/30/2006 0:00,Taranaki,440,SoEs,State Sector
+6/30/2006 0:00,Auckland,10100,Local Government,Local Government
+6/30/2005 0:00,Nelson,510,Local Government,Local Government
+6/30/2005 0:00,Otago,78600,Private Sector,Private Sector
+6/30/2005 0:00,Manawatu-Wanganui,1800,Local Government,Local Government
+6/30/2005 0:00,Waikato,12200,Education Sector,State Sector
+6/30/2005 0:00,Northland,43800,Private Sector,Private Sector
+6/30/2004 0:00,Area Outside Regions,18,Local Government,Local Government
+6/30/2004 0:00,Tasman,1100,Education Sector,State Sector
+6/30/2004 0:00,Southland,580,SoEs,State Sector
+6/30/2004 0:00,Otago,2800,Local Government,Local Government
+6/30/2012 0:00,West Coast,990,Health Sector,State Sector
+6/30/2012 0:00,Hawkes Bay,61500,Private Sector,Private Sector
+6/30/2012 0:00,Gisborne,450,Local Government,Local Government
+6/30/2011 0:00,Tasman,1250,Education Sector,State Sector
+6/30/2011 0:00,West Coast,12100,Private Sector,Private Sector
+6/30/2011 0:00,Northland,2350,Health Sector,State Sector
+6/30/2010 0:00,Gisborne,1400,Education Sector,State Sector
+6/30/2009 0:00,Bay of Plenty,92000,Private Sector,Private Sector
+6/30/2008 0:00,Canterbury,14800,Education Sector,State Sector
+6/30/2010 0:00,Otago,3600,Local Government,Local Government
+6/30/2007 0:00,Bay of Plenty,2050,Local Government,Local Government
+6/30/2005 0:00,Nelson,19600,Private Sector,Private Sector
+6/30/2005 0:00,Otago,1100,SoEs,State Sector
+6/30/2005 0:00,Waikato,2300,SoEs,State Sector
+6/30/2008 0:00,Wellington,8500,SoEs,State Sector
+6/30/2004 0:00,West Coast,330,Local Government,Local Government
+6/30/2004 0:00,Manawatu-Wanganui,1050,SoEs,State Sector
+6/30/2004 0:00,Taranaki,390,SoEs,State Sector
+6/30/2004 0:00,Hawkes Bay,1650,Local Government,Local Government
+6/30/2004 0:00,Bay of Plenty,85600,Private Sector,Private Sector
+6/30/2003 0:00,Nelson,1300,Health Sector,State Sector
+6/30/2003 0:00,West Coast,430,SoEs,State Sector
+6/30/2003 0:00,Wellington,7200,SoEs,State Sector
+6/30/2003 0:00,Manawatu-Wanganui,1100,SoEs,State Sector
+6/30/2003 0:00,Auckland,8900,Local Government,Local Government
+6/30/2003 0:00,Northland,480,SoEs,State Sector
+6/30/2002 0:00,Area Outside Regions,9,Health Sector,State Sector
+6/30/2002 0:00,Area Outside Regions,25,Education Sector,State Sector
+6/30/2002 0:00,Marlborough,270,Local Government,Local Government
+6/30/2002 0:00,Marlborough,500,Health Sector,State Sector
+6/30/2002 0:00,Tasman,15700,Private Sector,Private Sector
+6/30/2002 0:00,Tasman,25,SoEs,State Sector
+6/30/2002 0:00,Tasman,180,Health Sector,State Sector
+6/30/2002 0:00,Canterbury,181400,Private Sector,Private Sector
+6/30/2003 0:00,Gisborne,16200,Private Sector,Private Sector
+6/30/2002 0:00,Canterbury,4850,SoEs,State Sector
+6/30/2002 0:00,Canterbury,14700,Education Sector,State Sector
+6/30/2002 0:00,Manawatu-Wanganui,3700,Health Sector,State Sector
+6/30/2002 0:00,Bay of Plenty,1400,SoEs,State Sector
+6/30/2002 0:00,Northland,700,Local Government,Local Government
+6/30/2001 0:00,Marlborough,810,Education Sector,State Sector
+6/30/2001 0:00,Southland,1600,Local Government,Local Government
+6/30/2001 0:00,West Coast,9200,Private Sector,Private Sector
+6/30/2001 0:00,Wellington,155400,Private Sector,Private Sector
+6/30/2001 0:00,Taranaki,2850,Education Sector,State Sector
+6/30/2001 0:00,Waikato,2600,Local Government,Local Government
+6/30/2001 0:00,Auckland,8300,Local Government,Local Government
+6/30/2000 0:00,Area Outside Regions,18,Local Government,Local Government
+6/30/2000 0:00,Area Outside Regions,30,Education Sector,State Sector
+6/30/2000 0:00,Tasman,14300,Private Sector,Private Sector
+6/30/2000 0:00,Tasman,310,Local Government,Local Government
+6/30/2000 0:00,Otago,62400,Private Sector,Private Sector
+6/30/2000 0:00,Otago,3000,Health Sector,State Sector
+6/30/2000 0:00,Canterbury,14500,Education Sector,State Sector
+6/30/2000 0:00,West Coast,890,Health Sector,State Sector
+6/30/2000 0:00,Wellington,6600,SoEs,State Sector
+6/30/2000 0:00,Manawatu-Wanganui,3600,Health Sector,State Sector
+6/30/2000 0:00,Hawkes Bay,53500,Private Sector,Private Sector
+6/30/2000 0:00,Gisborne,390,Local Government,Local Government
+6/30/2000 0:00,Bay of Plenty,72400,Private Sector,Private Sector
+6/30/2000 0:00,Auckland,8300,Local Government,Local Government
+6/30/2000 0:00,Northland,34700,Private Sector,Private Sector
+6/30/2000 0:00,Northland,840,Local Government,Local Government
+6/30/2000 0:00,Canterbury,3296,Public Service,State Sector
+6/30/2013 0:00,Northland,1255,Public Service,State Sector
+6/30/2013 0:00,Southland,709,Public Service,State Sector
+6/30/2016 0:00,Northland,1289,Public Service,State Sector
+6/30/2018 0:00,Bay of Plenty,1671,Public Service,State Sector
+6/30/2019 0:00,Manawatu-Wanganui,2081,Public Service,State Sector
+6/30/2001 0:00,Manawatu-Wanganui,1150,SoEs,State Sector
+6/30/2000 0:00,Canterbury,5800,Local Government,Local Government
+6/30/2000 0:00,Wellington,6500,Health Sector,State Sector
+6/30/2000 0:00,Manawatu-Wanganui,2100,Local Government,Local Government
+6/30/2011 0:00,Hawkes Bay,1108,Public Service,State Sector
+6/30/2012 0:00,Tasman,29,Public Service,State Sector
+6/30/2001 0:00,Gisborne,219,Public Service,State Sector
+6/30/2003 0:00,Overseas,226,Public Service,State Sector
+6/30/2004 0:00,Northland,831,Public Service,State Sector
+6/30/2002 0:00,Manawatu-Wanganui,1486,Public Service,State Sector
+6/30/2013 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2023 0:00,Tasman,253,Other Government Entities,State Sector
+6/30/2023 0:00,Taranaki,550,Other Government Entities,State Sector
+6/30/2022 0:00,Wellington,19188,Other Government Entities,State Sector
+6/30/2021 0:00,Marlborough,615,Other Government Entities,State Sector
+6/30/2021 0:00,Hawkes Bay,927,Other Government Entities,State Sector
+6/30/2020 0:00,Bay of Plenty,2207,Other Government Entities,State Sector
+6/30/2019 0:00,Taranaki,541,Other Government Entities,State Sector
+6/30/2018 0:00,Manawatu-Wanganui,6043,Other Government Entities,State Sector
+6/30/2018 0:00,Hawkes Bay,823,Other Government Entities,State Sector
+6/30/2019 0:00,Canterbury,4864,Other Government Entities,State Sector
+6/30/2017 0:00,Tasman,121,Other Government Entities,State Sector
+6/30/2016 0:00,Wellington,14893,Other Government Entities,State Sector
+6/30/2015 0:00,Canterbury,4689,Other Government Entities,State Sector
+6/30/2015 0:00,Taranaki,351,Other Government Entities,State Sector
+6/30/2015 0:00,Hawkes Bay,760,Other Government Entities,State Sector
+6/30/2015 0:00,Northland,664,Other Government Entities,State Sector
+6/30/2014 0:00,Nelson,92,Other Government Entities,State Sector
+6/30/2014 0:00,Gisborne,217,Other Government Entities,State Sector
+6/30/2014 0:00,Auckland,13615,Other Government Entities,State Sector
+6/30/2013 0:00,Taranaki,304,Other Government Entities,State Sector
+6/30/2012 0:00,Area Outside Regions,25,Other Government Entities,State Sector
+6/30/2012 0:00,Tasman,201,Other Government Entities,State Sector
+6/30/2017 0:00,Gisborne,274,Other Government Entities,State Sector
+6/30/2012 0:00,Hawkes Bay,827,Other Government Entities,State Sector
+6/30/2012 0:00,Northland,670,Other Government Entities,State Sector
+6/30/2011 0:00,Nelson,115,Other Government Entities,State Sector
+6/30/2009 0:00,Gisborne,263,Other Government Entities,State Sector
+6/30/2008 0:00,Northland,549,Other Government Entities,State Sector
+6/30/2007 0:00,Nelson,403,Other Government Entities,State Sector
+6/30/2007 0:00,Northland,568,Other Government Entities,State Sector
+6/30/2006 0:00,Tasman,213,Other Government Entities,State Sector
+6/30/2005 0:00,Otago,1108,Other Government Entities,State Sector
+6/30/2004 0:00,West Coast,203,Other Government Entities,State Sector
+6/30/2004 0:00,Gisborne,339,Other Government Entities,State Sector
+6/30/2003 0:00,Waikato,2029,Other Government Entities,State Sector
+6/30/2002 0:00,Tasman,181,Other Government Entities,State Sector
+6/30/2002 0:00,Bay of Plenty,1339,Other Government Entities,State Sector
+6/30/2001 0:00,Waikato,1720,Other Government Entities,State Sector
+6/30/2000 0:00,Auckland,9236,Other Government Entities,State Sector
+6/30/2000 0:00,Marlborough,666,Other Government Entities,State Sector
+6/30/2012 0:00,Taranaki,348,Other Government Entities,State Sector
+6/30/2012 0:00,Nelson,527,Public Service,State Sector
+6/30/2000 0:00,Nelson,294,Public Service,State Sector
+6/30/2002 0:00,Northland,706,Public Service,State Sector
+6/30/2002 0:00,Nelson,394,Public Service,State Sector
+6/30/2006 0:00,Southland,720,Public Service,State Sector
+6/30/2006 0:00,Northland,1061,Public Service,State Sector
+6/30/2021 0:00,Manawatu-Wanganui,2525,Public Service,State Sector
+6/30/2018 0:00,Tasman,133,Public Service,State Sector
+6/30/2001 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2019 0:00,Overseas,303,Public Service,State Sector
+6/30/2000 0:00,Auckland,5764,Public Service,State Sector
+6/30/2002 0:00,Gisborne,330,Public Service,State Sector
+6/30/2007 0:00,Unknown,53,Public Service,State Sector
+6/30/2003 0:00,Tasman,82,Public Service,State Sector
+6/30/2020 0:00,Gisborne,288,Public Service,State Sector
+6/30/2016 0:00,Tasman,36,Public Service,State Sector
+6/30/2000 0:00,Otago,823,Public Service,State Sector
+6/30/2017 0:00,West Coast,246,Public Service,State Sector
+6/30/2016 0:00,Waikato,3846,Public Service,State Sector
+6/30/2019 0:00,Northland,1413,Public Service,State Sector
+6/30/2003 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2010 0:00,Taranaki,447,Public Service,State Sector
+6/30/2012 0:00,West Coast,255,Public Service,State Sector
+6/30/2001 0:00,Bay of Plenty,902,Public Service,State Sector
+6/30/2005 0:00,Southland,717,Public Service,State Sector
+6/30/2009 0:00,Marlborough,313,Public Service,State Sector
+6/30/2000 0:00,West Coast,220,Public Service,State Sector
+6/30/2003 0:00,Taranaki,465,Public Service,State Sector
+6/30/2007 0:00,Taranaki,550,Public Service,State Sector
+6/30/2009 0:00,Nelson,425,Public Service,State Sector
+6/30/2020 0:00,Hawkes Bay,1380,Public Service,State Sector
+6/30/2017 0:00,Nelson,384,Public Service,State Sector
+6/30/2010 0:00,Wellington,19007,Public Service,State Sector
+6/30/2015 0:00,Taranaki,379,Public Service,State Sector
+6/30/2021 0:00,Southland,667,Public Service,State Sector
+6/30/2023 0:00,Area Outside Regions,30,Local Government,Local Government
+6/30/2023 0:00,Nelson,520,SoEs,State Sector
+6/30/2023 0:00,Nelson,1750,Education Sector,State Sector
+6/30/2023 0:00,Southland,2700,Education Sector,State Sector
+6/30/2023 0:00,West Coast,610,Local Government,Local Government
+6/30/2023 0:00,Auckland,45900,Education Sector,State Sector
+6/30/2022 0:00,Marlborough,880,Health Sector,State Sector
+6/30/2023 0:00,Southland,2150,Local Government,Local Government
+6/30/2023 0:00,Bay of Plenty,122700,Private Sector,Private Sector
+6/30/2023 0:00,Bay of Plenty,3650,Local Government,Local Government
+6/30/2023 0:00,Auckland,33100,Health Sector,State Sector
+6/30/2022 0:00,Marlborough,20200,Private Sector,Private Sector
+6/30/2022 0:00,Southland,2800,Education Sector,State Sector
+6/30/2022 0:00,West Coast,220,SoEs,State Sector
+6/30/2022 0:00,Wellington,5700,Local Government,Local Government
+6/30/2022 0:00,Manawatu-Wanganui,9100,Education Sector,State Sector
+6/30/2022 0:00,Taranaki,1600,Local Government,Local Government
+6/30/2022 0:00,Gisborne,140,SoEs,State Sector
+6/30/2022 0:00,Bay of Plenty,830,SoEs,State Sector
+6/30/2023 0:00,Waikato,3350,SoEs,State Sector
+6/30/2022 0:00,Manawatu-Wanganui,2100,Local Government,Local Government
+6/30/2022 0:00,Northland,390,SoEs,State Sector
+6/30/2021 0:00,Area Outside Regions,30,Local Government,Local Government
+6/30/2021 0:00,Otago,9600,Education Sector,State Sector
+6/30/2021 0:00,Canterbury,17700,Education Sector,State Sector
+6/30/2021 0:00,West Coast,10800,Private Sector,Private Sector
+6/30/2021 0:00,West Coast,820,Education Sector,State Sector
+6/30/2021 0:00,Wellington,10000,Health Sector,State Sector
+6/30/2021 0:00,Gisborne,600,Local Government,Local Government
+6/30/2021 0:00,Auckland,12100,SoEs,State Sector
+6/30/2020 0:00,Area Outside Regions,18,Education Sector,State Sector
+6/30/2020 0:00,Marlborough,500,Local Government,Local Government
+6/30/2020 0:00,Tasman,630,Local Government,Local Government
+6/30/2020 0:00,Tasman,1200,Education Sector,State Sector
+6/30/2020 0:00,Otago,3850,Health Sector,State Sector
+6/30/2020 0:00,Manawatu-Wanganui,9200,Education Sector,State Sector
+6/30/2020 0:00,Taranaki,250,SoEs,State Sector
+6/30/2020 0:00,Bay of Plenty,3350,Local Government,Local Government
+6/30/2020 0:00,Waikato,4350,Local Government,Local Government
+6/30/2019 0:00,Nelson,450,SoEs,State Sector
+6/30/2019 0:00,Tasman,600,Local Government,Local Government
+6/30/2019 0:00,Tasman,1150,Education Sector,State Sector
+6/30/2019 0:00,Gisborne,1100,Health Sector,State Sector
+6/30/2019 0:00,Bay of Plenty,115700,Private Sector,Private Sector
+6/30/2019 0:00,Auckland,45400,Education Sector,State Sector
+6/30/2018 0:00,Area Outside Regions,260,Private Sector,Private Sector
+6/30/2018 0:00,Area Outside Regions,15,Education Sector,State Sector
+6/30/2018 0:00,Marlborough,940,Education Sector,State Sector
+6/30/2018 0:00,Canterbury,9200,Local Government,Local Government
+6/30/2018 0:00,Canterbury,16500,Education Sector,State Sector
+6/30/2018 0:00,Wellington,16800,Education Sector,State Sector
+6/30/2018 0:00,Manawatu-Wanganui,1050,SoEs,State Sector
+6/30/2018 0:00,Manawatu-Wanganui,8900,Education Sector,State Sector
+6/30/2018 0:00,Bay of Plenty,4300,Health Sector,State Sector
+6/30/2018 0:00,Waikato,3900,Local Government,Local Government
+6/30/2018 0:00,Waikato,2600,SoEs,State Sector
+6/30/2019 0:00,Auckland,14300,SoEs,State Sector
+6/30/2018 0:00,Canterbury,5100,SoEs,State Sector
+6/30/2018 0:00,Bay of Plenty,3100,Local Government,Local Government
+6/30/2020 0:00,Southland,2750,Education Sector,State Sector
+6/30/2018 0:00,Southland,2600,Education Sector,State Sector
+6/30/2017 0:00,Tasman,1150,Education Sector,State Sector
+6/30/2017 0:00,Southland,490,SoEs,State Sector
+6/30/2017 0:00,Canterbury,11000,Health Sector,State Sector
+6/30/2017 0:00,Wellington,175100,Private Sector,Private Sector
+6/30/2016 0:00,Marlborough,830,Education Sector,State Sector
+6/30/2016 0:00,Hawkes Bay,2350,Health Sector,State Sector
+6/30/2016 0:00,Auckland,11600,Local Government,Local Government
+6/30/2015 0:00,Southland,41700,Private Sector,Private Sector
+6/30/2015 0:00,Otago,8900,Education Sector,State Sector
+6/30/2015 0:00,Bay of Plenty,7400,Education Sector,State Sector
+6/30/2015 0:00,Auckland,24700,Health Sector,State Sector
+6/30/2014 0:00,Marlborough,340,Local Government,Local Government
+6/30/2014 0:00,Marlborough,460,SoEs,State Sector
+6/30/2014 0:00,Marlborough,850,Education Sector,State Sector
+6/30/2014 0:00,Manawatu-Wanganui,1850,Local Government,Local Government
+6/30/2014 0:00,Auckland,13500,SoEs,State Sector
+6/30/2014 0:00,Auckland,23500,Health Sector,State Sector
+6/30/2013 0:00,Area Outside Regions,15,Health Sector,State Sector
+6/30/2013 0:00,Otago,1200,SoEs,State Sector
+6/30/2013 0:00,Northland,1050,Local Government,Local Government
+6/30/2012 0:00,Tasman,440,Local Government,Local Government
+6/30/2014 0:00,Tasman,70,Health Sector,State Sector
+6/30/2013 0:00,Taranaki,300,SoEs,State Sector
+6/30/2012 0:00,Otago,3500,Local Government,Local Government
+6/30/2012 0:00,Otago,1200,SoEs,State Sector
+6/30/2012 0:00,Hawkes Bay,650,SoEs,State Sector
+6/30/2012 0:00,Bay of Plenty,91500,Private Sector,Private Sector
+6/30/2011 0:00,Otago,9600,Education Sector,State Sector
+6/30/2010 0:00,Nelson,19400,Private Sector,Private Sector
+6/30/2010 0:00,Tasman,120,Health Sector,State Sector
+6/30/2010 0:00,Taranaki,1500,Health Sector,State Sector
+6/30/2009 0:00,Tasman,410,Local Government,Local Government
+6/30/2009 0:00,Taranaki,42200,Private Sector,Private Sector
+6/30/2008 0:00,Tasman,220,Health Sector,State Sector
+6/30/2022 0:00,Gisborne,19600,Private Sector,Private Sector
+6/30/2021 0:00,Southland,1300,Health Sector,State Sector
+6/30/2021 0:00,Canterbury,249500,Private Sector,Private Sector
+6/30/2021 0:00,Bay of Plenty,790,SoEs,State Sector
+6/30/2020 0:00,Marlborough,130,SoEs,State Sector
+6/30/2020 0:00,Wellington,9500,Health Sector,State Sector
+6/30/2019 0:00,Wellington,17100,Education Sector,State Sector
+6/30/2019 0:00,Manawatu-Wanganui,1900,Local Government,Local Government
+6/30/2019 0:00,Gisborne,18100,Private Sector,Private Sector
+6/30/2018 0:00,Otago,3450,Health Sector,State Sector
+6/30/2017 0:00,Marlborough,430,Local Government,Local Government
+6/30/2017 0:00,Nelson,530,SoEs,State Sector
+6/30/2021 0:00,Waikato,9000,Health Sector,State Sector
+6/30/2020 0:00,Gisborne,1550,Education Sector,State Sector
+6/30/2019 0:00,Manawatu-Wanganui,4100,Health Sector,State Sector
+6/30/2018 0:00,Southland,42300,Private Sector,Private Sector
+6/30/2018 0:00,West Coast,570,Local Government,Local Government
+6/30/2018 0:00,West Coast,240,SoEs,State Sector
+6/30/2018 0:00,Taranaki,1350,Local Government,Local Government
+6/30/2018 0:00,Nelson,1650,Education Sector,State Sector
+6/30/2017 0:00,Tasman,12,SoEs,State Sector
+6/30/2016 0:00,Wellington,5100,Local Government,Local Government
+6/30/2016 0:00,Hawkes Bay,480,SoEs,State Sector
+6/30/2016 0:00,Hawkes Bay,4450,Education Sector,State Sector
+6/30/2015 0:00,Area Outside Regions,0,SoEs,State Sector
+6/30/2015 0:00,West Coast,850,Education Sector,State Sector
+6/30/2015 0:00,Manawatu-Wanganui,8300,Education Sector,State Sector
+6/30/2015 0:00,Gisborne,17000,Private Sector,Private Sector
+6/30/2015 0:00,Waikato,145400,Private Sector,Private Sector
+6/30/2015 0:00,Waikato,2850,SoEs,State Sector
+6/30/2015 0:00,Waikato,7100,Health Sector,State Sector
+6/30/2015 0:00,Waikato,12500,Education Sector,State Sector
+6/30/2015 0:00,Northland,1100,Local Government,Local Government
+6/30/2015 0:00,Northland,2750,Health Sector,State Sector
+6/30/2014 0:00,Southland,2650,Education Sector,State Sector
+6/30/2014 0:00,Manawatu-Wanganui,73700,Private Sector,Private Sector
+6/30/2014 0:00,Hawkes Bay,2200,Health Sector,State Sector
+6/30/2014 0:00,Bay of Plenty,860,SoEs,State Sector
+6/30/2014 0:00,Auckland,11100,Local Government,Local Government
+6/30/2014 0:00,Northland,43400,Private Sector,Private Sector
+6/30/2013 0:00,Southland,550,SoEs,State Sector
+6/30/2013 0:00,Canterbury,216500,Private Sector,Private Sector
+6/30/2013 0:00,Manawatu-Wanganui,8100,Education Sector,State Sector
+6/30/2013 0:00,Taranaki,42100,Private Sector,Private Sector
+6/30/2013 0:00,Hawkes Bay,62200,Private Sector,Private Sector
+6/30/2012 0:00,Area Outside Regions,270,Private Sector,Private Sector
+6/30/2012 0:00,Marlborough,17800,Private Sector,Private Sector
+6/30/2012 0:00,Marlborough,320,Local Government,Local Government
+6/30/2013 0:00,Otago,79000,Private Sector,Private Sector
+6/30/2013 0:00,Otago,3450,Local Government,Local Government
+6/30/2012 0:00,Southland,2500,Education Sector,State Sector
+6/30/2012 0:00,Gisborne,16600,Private Sector,Private Sector
+6/30/2011 0:00,Area Outside Regions,0,SoEs,State Sector
+6/30/2011 0:00,Marlborough,560,SoEs,State Sector
+6/30/2011 0:00,Otago,3350,Health Sector,State Sector
+6/30/2011 0:00,Wellington,4900,Local Government,Local Government
+6/30/2011 0:00,Manawatu-Wanganui,8400,Education Sector,State Sector
+6/30/2011 0:00,Bay of Plenty,3800,Health Sector,State Sector
+6/30/2010 0:00,West Coast,12000,Private Sector,Private Sector
+6/30/2010 0:00,Bay of Plenty,7400,Education Sector,State Sector
+6/30/2009 0:00,Area Outside Regions,15,Health Sector,State Sector
+6/30/2009 0:00,Tasman,1150,Education Sector,State Sector
+6/30/2009 0:00,Southland,1950,Local Government,Local Government
+6/30/2009 0:00,Otago,3300,Health Sector,State Sector
+6/30/2009 0:00,Canterbury,9600,Health Sector,State Sector
+6/30/2009 0:00,West Coast,830,Education Sector,State Sector
+6/30/2009 0:00,Bay of Plenty,920,SoEs,State Sector
+6/30/2009 0:00,Bay of Plenty,3700,Health Sector,State Sector
+6/30/2009 0:00,Auckland,11100,Local Government,Local Government
+6/30/2009 0:00,Auckland,21300,Health Sector,State Sector
+6/30/2008 0:00,Area Outside Regions,18,Education Sector,State Sector
+6/30/2008 0:00,Southland,1950,Local Government,Local Government
+6/30/2008 0:00,Southland,500,SoEs,State Sector
+6/30/2008 0:00,Otago,3200,Health Sector,State Sector
+6/30/2008 0:00,Otago,9200,Education Sector,State Sector
+6/30/2008 0:00,Canterbury,9300,Health Sector,State Sector
+6/30/2014 0:00,Bay of Plenty,2650,Local Government,Local Government
+6/30/2014 0:00,Marlborough,19200,Private Sector,Private Sector
+6/30/2012 0:00,Bay of Plenty,3850,Health Sector,State Sector
+6/30/2011 0:00,Bay of Plenty,93000,Private Sector,Private Sector
+6/30/2010 0:00,Auckland,40900,Education Sector,State Sector
+6/30/2008 0:00,West Coast,890,Education Sector,State Sector
+6/30/2008 0:00,Manawatu-Wanganui,79200,Private Sector,Private Sector
+6/30/2007 0:00,Area Outside Regions,15,Education Sector,State Sector
+6/30/2007 0:00,Tasman,16800,Private Sector,Private Sector
+6/30/2007 0:00,Southland,1950,Local Government,Local Government
+6/30/2010 0:00,Area Outside Regions,15,Education Sector,State Sector
+6/30/2010 0:00,West Coast,770,Education Sector,State Sector
+6/30/2009 0:00,Otago,1350,SoEs,State Sector
+6/30/2009 0:00,Taranaki,1350,Local Government,Local Government
+6/30/2008 0:00,Taranaki,360,SoEs,State Sector
+6/30/2008 0:00,Nelson,1500,Health Sector,State Sector
+6/30/2008 0:00,Bay of Plenty,3550,Health Sector,State Sector
+6/30/2007 0:00,Wellington,14800,Education Sector,State Sector
+6/30/2007 0:00,Hawkes Bay,65900,Private Sector,Private Sector
+6/30/2007 0:00,Hawkes Bay,1800,Local Government,Local Government
+6/30/2007 0:00,Auckland,10500,Local Government,Local Government
+6/30/2007 0:00,Auckland,38000,Education Sector,State Sector
+6/30/2006 0:00,Otago,3000,Local Government,Local Government
+6/30/2006 0:00,Canterbury,15200,Education Sector,State Sector
+6/30/2006 0:00,Wellington,7800,Health Sector,State Sector
+6/30/2006 0:00,Wellington,14000,Education Sector,State Sector
+6/30/2006 0:00,Manawatu-Wanganui,3950,Health Sector,State Sector
+6/30/2006 0:00,Taranaki,40000,Private Sector,Private Sector
+6/30/2006 0:00,Bay of Plenty,89200,Private Sector,Private Sector
+6/30/2006 0:00,Bay of Plenty,1950,Local Government,Local Government
+6/30/2005 0:00,Area Outside Regions,12,Health Sector,State Sector
+6/30/2005 0:00,Marlborough,530,Health Sector,State Sector
+6/30/2005 0:00,Southland,500,SoEs,State Sector
+6/30/2005 0:00,Wellington,7600,Health Sector,State Sector
+6/30/2005 0:00,Taranaki,410,SoEs,State Sector
+6/30/2005 0:00,Hawkes Bay,62600,Private Sector,Private Sector
+6/30/2005 0:00,Hawkes Bay,1700,Local Government,Local Government
+6/30/2005 0:00,Bay of Plenty,88300,Private Sector,Private Sector
+6/30/2005 0:00,Waikato,3150,Local Government,Local Government
+6/30/2005 0:00,Auckland,13800,SoEs,State Sector
+6/30/2005 0:00,Auckland,18800,Health Sector,State Sector
+6/30/2004 0:00,Nelson,1350,Education Sector,State Sector
+6/30/2004 0:00,Tasman,17000,Private Sector,Private Sector
+6/30/2004 0:00,Southland,1850,Local Government,Local Government
+6/30/2004 0:00,Southland,2600,Education Sector,State Sector
+6/30/2004 0:00,Otago,76100,Private Sector,Private Sector
+6/30/2004 0:00,Otago,3300,Health Sector,State Sector
+6/30/2004 0:00,Canterbury,4850,SoEs,State Sector
+6/30/2004 0:00,Canterbury,9000,Health Sector,State Sector
+6/30/2004 0:00,Wellington,6900,SoEs,State Sector
+6/30/2004 0:00,Hawkes Bay,2100,Health Sector,State Sector
+6/30/2004 0:00,Bay of Plenty,6500,Education Sector,State Sector
+6/30/2004 0:00,Auckland,13800,SoEs,State Sector
+6/30/2003 0:00,Area Outside Regions,15,Local Government,Local Government
+6/30/2003 0:00,Area Outside Regions,18,Education Sector,State Sector
+6/30/2003 0:00,Marlborough,270,Local Government,Local Government
+6/30/2003 0:00,Marlborough,750,Education Sector,State Sector
+6/30/2003 0:00,Tasman,1000,Education Sector,State Sector
+6/30/2003 0:00,Southland,1050,Health Sector,State Sector
+6/30/2003 0:00,Manawatu-Wanganui,8600,Education Sector,State Sector
+6/30/2003 0:00,Gisborne,750,Health Sector,State Sector
+6/30/2003 0:00,Gisborne,1400,Education Sector,State Sector
+6/30/2002 0:00,Marlborough,770,Education Sector,State Sector
+6/30/2005 0:00,Hawkes Bay,570,SoEs,State Sector
+6/30/2002 0:00,Canterbury,5900,Local Government,Local Government
+6/30/2002 0:00,Wellington,7200,Health Sector,State Sector
+6/30/2002 0:00,Manawatu-Wanganui,8500,Education Sector,State Sector
+6/30/2002 0:00,Gisborne,220,SoEs,State Sector
+6/30/2002 0:00,Bay of Plenty,78600,Private Sector,Private Sector
+6/30/2002 0:00,Bay of Plenty,1850,Local Government,Local Government
+6/30/2002 0:00,Auckland,8500,Local Government,Local Government
+6/30/2002 0:00,Northland,440,SoEs,State Sector
+6/30/2001 0:00,Nelson,200,SoEs,State Sector
+6/30/2001 0:00,Nelson,1400,Health Sector,State Sector
+6/30/2001 0:00,Southland,36000,Private Sector,Private Sector
+6/30/2001 0:00,Otago,2500,Local Government,Local Government
+6/30/2001 0:00,Canterbury,3100,SoEs,State Sector
+6/30/2001 0:00,Canterbury,8400,Health Sector,State Sector
+6/30/2001 0:00,Manawatu-Wanganui,67600,Private Sector,Private Sector
+6/30/2001 0:00,Taranaki,32700,Private Sector,Private Sector
+6/30/2001 0:00,Gisborne,15700,Private Sector,Private Sector
+6/30/2001 0:00,Waikato,11800,Education Sector,State Sector
+6/30/2001 0:00,Auckland,445600,Private Sector,Private Sector
+6/30/2001 0:00,Northland,1850,Health Sector,State Sector
+6/30/2000 0:00,Marlborough,430,Health Sector,State Sector
+6/30/2000 0:00,Southland,1550,Local Government,Local Government
+6/30/2000 0:00,West Coast,9000,Private Sector,Private Sector
+6/30/2000 0:00,Taranaki,1250,Health Sector,State Sector
+6/30/2000 0:00,Hawkes Bay,1650,Local Government,Local Government
+6/30/2000 0:00,Gisborne,1450,Education Sector,State Sector
+6/30/2010 0:00,Otago,1393,Public Service,State Sector
+6/30/2014 0:00,Overseas,264,Public Service,State Sector
+6/30/2015 0:00,Wellington,19195,Public Service,State Sector
+6/30/2008 0:00,Bay of Plenty,1439,Public Service,State Sector
+6/30/2010 0:00,Tasman,51,Public Service,State Sector
+6/30/2020 0:00,Auckland,11818,Public Service,State Sector
+6/30/2019 0:00,West Coast,321,Public Service,State Sector
+6/30/2007 0:00,Otago,3100,Local Government,Local Government
+6/30/2007 0:00,Northland,370,SoEs,State Sector
+6/30/2006 0:00,Tasman,1100,Education Sector,State Sector
+6/30/2004 0:00,Bay of Plenty,3400,Health Sector,State Sector
+6/30/2003 0:00,Taranaki,2950,Education Sector,State Sector
+6/30/2004 0:00,Waikato,2000,SoEs,State Sector
+6/30/2001 0:00,Nelson,1100,Education Sector,State Sector
+6/30/2001 0:00,Canterbury,179300,Private Sector,Private Sector
+6/30/2001 0:00,West Coast,810,Education Sector,State Sector
+6/30/2001 0:00,Nelson,470,Local Government,Local Government
+6/30/2001 0:00,Canterbury,5700,Local Government,Local Government
+6/30/2012 0:00,Northland,1230,Public Service,State Sector
+6/30/2014 0:00,Bay of Plenty,1748,Public Service,State Sector
+6/30/2002 0:00,Bay of Plenty,1011,Public Service,State Sector
+6/30/2009 0:00,Northland,1139,Public Service,State Sector
+6/30/2019 0:00,Canterbury,5036,Public Service,State Sector
+6/30/2002 0:00,Hawkes Bay,864,Public Service,State Sector
+6/30/2004 0:00,Southland,597,Public Service,State Sector
+6/30/2023 0:00,Canterbury,5190,Other Government Entities,State Sector
+6/30/2023 0:00,Manawatu-Wanganui,6586,Other Government Entities,State Sector
+6/30/2023 0:00,Bay of Plenty,1829,Other Government Entities,State Sector
+6/30/2022 0:00,Marlborough,584,Other Government Entities,State Sector
+6/30/2022 0:00,Tasman,130,Other Government Entities,State Sector
+6/30/2022 0:00,Northland,835,Other Government Entities,State Sector
+6/30/2021 0:00,Nelson,468,Other Government Entities,State Sector
+6/30/2021 0:00,Canterbury,5033,Other Government Entities,State Sector
+6/30/2021 0:00,West Coast,196,Other Government Entities,State Sector
+6/30/2021 0:00,Bay of Plenty,1931,Other Government Entities,State Sector
+6/30/2021 0:00,Northland,705,Other Government Entities,State Sector
+6/30/2020 0:00,Area Outside Regions,35,Other Government Entities,State Sector
+6/30/2020 0:00,Tasman,281,Other Government Entities,State Sector
+6/30/2020 0:00,Gisborne,342,Other Government Entities,State Sector
+6/30/2018 0:00,Marlborough,564,Other Government Entities,State Sector
+6/30/2018 0:00,Bay of Plenty,2079,Other Government Entities,State Sector
+6/30/2020 0:00,Taranaki,634,Other Government Entities,State Sector
+6/30/2018 0:00,Southland,292,Other Government Entities,State Sector
+6/30/2017 0:00,Otago,1393,Other Government Entities,State Sector
+6/30/2017 0:00,Bay of Plenty,1712,Other Government Entities,State Sector
+6/30/2016 0:00,Marlborough,721,Other Government Entities,State Sector
+6/30/2016 0:00,Bay of Plenty,1509,Other Government Entities,State Sector
+6/30/2014 0:00,Manawatu-Wanganui,5137,Other Government Entities,State Sector
+6/30/2013 0:00,Area Outside Regions,30,Other Government Entities,State Sector
+6/30/2013 0:00,Otago,1188,Other Government Entities,State Sector
+6/30/2013 0:00,Auckland,13147,Other Government Entities,State Sector
+6/30/2012 0:00,Marlborough,718,Other Government Entities,State Sector
+6/30/2013 0:00,Wellington,15290,Other Government Entities,State Sector
+6/30/2012 0:00,Wellington,15201,Other Government Entities,State Sector
+6/30/2012 0:00,Bay of Plenty,1780,Other Government Entities,State Sector
+6/30/2012 0:00,Waikato,1916,Other Government Entities,State Sector
+6/30/2011 0:00,Area Outside Regions,25,Other Government Entities,State Sector
+6/30/2011 0:00,Canterbury,5009,Other Government Entities,State Sector
+6/30/2011 0:00,Gisborne,247,Other Government Entities,State Sector
+6/30/2010 0:00,Manawatu-Wanganui,6259,Other Government Entities,State Sector
+6/30/2010 0:00,Taranaki,443,Other Government Entities,State Sector
+6/30/2009 0:00,Northland,661,Other Government Entities,State Sector
+6/30/2006 0:00,Southland,180,Other Government Entities,State Sector
+6/30/2006 0:00,Otago,1232,Other Government Entities,State Sector
+6/30/2006 0:00,Auckland,8761,Other Government Entities,State Sector
+6/30/2006 0:00,Northland,489,Other Government Entities,State Sector
+6/30/2005 0:00,Area Outside Regions,25,Other Government Entities,State Sector
+6/30/2005 0:00,Nelson,291,Other Government Entities,State Sector
+6/30/2005 0:00,Bay of Plenty,1264,Other Government Entities,State Sector
+6/30/2004 0:00,Manawatu-Wanganui,4739,Other Government Entities,State Sector
+6/30/2004 0:00,Taranaki,68,Other Government Entities,State Sector
+6/30/2004 0:00,Hawkes Bay,659,Other Government Entities,State Sector
+6/30/2004 0:00,Waikato,1796,Other Government Entities,State Sector
+6/30/2002 0:00,Manawatu-Wanganui,4614,Other Government Entities,State Sector
+6/30/2002 0:00,Hawkes Bay,736,Other Government Entities,State Sector
+6/30/2002 0:00,Waikato,1735,Other Government Entities,State Sector
+6/30/2001 0:00,Tasman,126,Other Government Entities,State Sector
+6/30/2001 0:00,Otago,1229,Other Government Entities,State Sector
+6/30/2001 0:00,West Coast,175,Other Government Entities,State Sector
+6/30/2000 0:00,Manawatu-Wanganui,4617,Other Government Entities,State Sector
+6/30/2001 0:00,Gisborne,251,Other Government Entities,State Sector
+6/30/2007 0:00,Southland,276,Other Government Entities,State Sector
+6/30/2000 0:00,Gisborne,196,Public Service,State Sector
+6/30/2004 0:00,Tasman,68,Public Service,State Sector
+6/30/2008 0:00,Hawkes Bay,1169,Public Service,State Sector
+6/30/2017 0:00,Canterbury,4513,Public Service,State Sector
+6/30/2012 0:00,Auckland,9184,Public Service,State Sector
+6/30/2015 0:00,Nelson,547,Public Service,State Sector
+6/30/2001 0:00,Wellington,12454,Public Service,State Sector
+6/30/2004 0:00,Wellington,14970,Public Service,State Sector
+6/30/2021 0:00,Waikato,4241,Public Service,State Sector
+6/30/2023 0:00,Auckland,13438,Public Service,State Sector
+6/30/2008 0:00,Wellington,18698,Public Service,State Sector
+6/30/2022 0:00,Overseas,312,Public Service,State Sector
+6/30/2002 0:00,Wellington,12885,Public Service,State Sector
+6/30/2006 0:00,Manawatu-Wanganui,1818,Public Service,State Sector
+6/30/2007 0:00,Manawatu-Wanganui,1935,Public Service,State Sector
+6/30/2022 0:00,West Coast,300,Public Service,State Sector
+6/30/2012 0:00,Bay of Plenty,1670,Public Service,State Sector
+6/30/2017 0:00,Gisborne,266,Public Service,State Sector
+6/30/2015 0:00,Canterbury,4611,Public Service,State Sector
+6/30/2015 0:00,Gisborne,264,Public Service,State Sector
+6/30/2015 0:00,Marlborough,153,Public Service,State Sector
+6/30/2022 0:00,Hawkes Bay,1450,Public Service,State Sector
+6/30/2001 0:00,Taranaki,443,Public Service,State Sector
+6/30/2005 0:00,Otago,1142,Public Service,State Sector
+6/30/2007 0:00,West Coast,257,Public Service,State Sector
+6/30/2014 0:00,Tasman,37,Public Service,State Sector
+6/30/2015 0:00,Hawkes Bay,1140,Public Service,State Sector
+6/30/2000 0:00,Marlborough,144,Public Service,State Sector
+6/30/2007 0:00,Tasman,144,Public Service,State Sector
+6/30/2009 0:00,Overseas,300,Public Service,State Sector
+6/30/2020 0:00,Bay of Plenty,1843,Public Service,State Sector
+6/30/2019 0:00,Wellington,23662,Public Service,State Sector
+6/30/2019 0:00,Gisborne,275,Public Service,State Sector
+6/30/2023 0:00,Tasman,190,Health Sector,State Sector
+6/30/2023 0:00,Southland,1800,Health Sector,State Sector
+6/30/2023 0:00,West Coast,830,Education Sector,State Sector
+6/30/2023 0:00,Wellington,18400,Education Sector,State Sector
+6/30/2023 0:00,Waikato,9800,Health Sector,State Sector
+6/30/2022 0:00,Area Outside Regions,18,Education Sector,State Sector
+6/30/2022 0:00,Canterbury,17900,Education Sector,State Sector
+6/30/2023 0:00,Canterbury,18300,Education Sector,State Sector
+6/30/2023 0:00,Auckland,12600,Local Government,Local Government
+6/30/2022 0:00,Marlborough,170,SoEs,State Sector
+6/30/2022 0:00,Nelson,920,Local Government,Local Government
+6/30/2022 0:00,Nelson,1650,Health Sector,State Sector
+6/30/2022 0:00,West Coast,890,Health Sector,State Sector
+6/30/2022 0:00,Northland,1450,Local Government,Local Government
+6/30/2023 0:00,Tasman,1250,Education Sector,State Sector
+6/30/2023 0:00,Northland,5100,Education Sector,State Sector
+6/30/2022 0:00,Bay of Plenty,5500,Health Sector,State Sector
+6/30/2022 0:00,Bay of Plenty,8400,Education Sector,State Sector
+6/30/2022 0:00,Auckland,706200,Private Sector,Private Sector
+6/30/2022 0:00,Canterbury,4600,SoEs,State Sector
+6/30/2022 0:00,Hawkes Bay,700,SoEs,State Sector
+6/30/2022 0:00,Gisborne,1150,Health Sector,State Sector
+6/30/2021 0:00,Area Outside Regions,18,Education Sector,State Sector
+6/30/2021 0:00,Marlborough,1000,Education Sector,State Sector
+6/30/2021 0:00,Nelson,21700,Private Sector,Private Sector
+6/30/2021 0:00,Tasman,6,SoEs,State Sector
+6/30/2021 0:00,Wellington,5600,Local Government,Local Government
+6/30/2021 0:00,Taranaki,3450,Education Sector,State Sector
+6/30/2021 0:00,Hawkes Bay,2150,Local Government,Local Government
+6/30/2021 0:00,Hawkes Bay,2900,Health Sector,State Sector
+6/30/2021 0:00,Auckland,30500,Health Sector,State Sector
+6/30/2021 0:00,Northland,3700,Health Sector,State Sector
+6/30/2020 0:00,Nelson,22200,Private Sector,Private Sector
+6/30/2020 0:00,Tasman,170,Health Sector,State Sector
+6/30/2019 0:00,Otago,3650,Health Sector,State Sector
+6/30/2019 0:00,Otago,9600,Education Sector,State Sector
+6/30/2019 0:00,West Coast,770,Health Sector,State Sector
+6/30/2019 0:00,Wellington,9300,SoEs,State Sector
+6/30/2019 0:00,Manawatu-Wanganui,80800,Private Sector,Private Sector
+6/30/2019 0:00,Taranaki,3050,Education Sector,State Sector
+6/30/2019 0:00,Waikato,166000,Private Sector,Private Sector
+6/30/2019 0:00,Waikato,2500,SoEs,State Sector
+6/30/2018 0:00,Area Outside Regions,35,Local Government,Local Government
+6/30/2018 0:00,Otago,94500,Private Sector,Private Sector
+6/30/2018 0:00,West Coast,11600,Private Sector,Private Sector
+6/30/2018 0:00,Northland,1250,Local Government,Local Government
+6/30/2021 0:00,Taranaki,1500,Local Government,Local Government
+6/30/2019 0:00,Southland,400,SoEs,State Sector
+6/30/2019 0:00,Otago,3950,Local Government,Local Government
+6/30/2019 0:00,Wellington,9400,Health Sector,State Sector
+6/30/2018 0:00,Canterbury,11600,Health Sector,State Sector
+6/30/2019 0:00,Waikato,13600,Education Sector,State Sector
+6/30/2017 0:00,Nelson,1650,Education Sector,State Sector
+6/30/2017 0:00,Otago,1200,SoEs,State Sector
+6/30/2017 0:00,Bay of Plenty,7800,Education Sector,State Sector
+6/30/2016 0:00,Area Outside Regions,15,Education Sector,State Sector
+6/30/2016 0:00,Marlborough,680,Health Sector,State Sector
+6/30/2016 0:00,Otago,87500,Private Sector,Private Sector
+6/30/2016 0:00,Otago,1350,SoEs,State Sector
+6/30/2016 0:00,West Coast,590,Local Government,Local Government
+6/30/2016 0:00,West Coast,810,Health Sector,State Sector
+6/30/2016 0:00,Gisborne,150,SoEs,State Sector
+6/30/2016 0:00,Bay of Plenty,103000,Private Sector,Private Sector
+6/30/2016 0:00,Auckland,41400,Education Sector,State Sector
+6/30/2015 0:00,West Coast,570,Local Government,Local Government
+6/30/2015 0:00,Taranaki,2900,Education Sector,State Sector
+6/30/2015 0:00,Hawkes Bay,1900,Local Government,Local Government
+6/30/2015 0:00,Hawkes Bay,4450,Education Sector,State Sector
+6/30/2015 0:00,Gisborne,890,Health Sector,State Sector
+6/30/2015 0:00,Bay of Plenty,2750,Local Government,Local Government
+6/30/2014 0:00,Southland,980,Health Sector,State Sector
+6/30/2014 0:00,Manawatu-Wanganui,1200,SoEs,State Sector
+6/30/2014 0:00,Gisborne,1500,Education Sector,State Sector
+6/30/2013 0:00,Gisborne,880,Health Sector,State Sector
+6/30/2013 0:00,Auckland,23300,Health Sector,State Sector
+6/30/2012 0:00,Marlborough,550,SoEs,State Sector
+6/30/2013 0:00,Area Outside Regions,12,Education Sector,State Sector
+6/30/2013 0:00,Northland,4200,Education Sector,State Sector
+6/30/2012 0:00,Northland,1050,Local Government,Local Government
+6/30/2011 0:00,Otago,1300,SoEs,State Sector
+6/30/2011 0:00,West Coast,990,Health Sector,State Sector
+6/30/2011 0:00,West Coast,790,Education Sector,State Sector
+6/30/2011 0:00,Taranaki,1250,Local Government,Local Government
+6/30/2011 0:00,Bay of Plenty,7400,Education Sector,State Sector
+6/30/2011 0:00,Waikato,12900,Education Sector,State Sector
+6/30/2010 0:00,Nelson,400,SoEs,State Sector
+6/30/2010 0:00,Southland,40200,Private Sector,Private Sector
+6/30/2010 0:00,Southland,550,SoEs,State Sector
+6/30/2010 0:00,Bay of Plenty,2400,Local Government,Local Government
+6/30/2010 0:00,Auckland,22000,Health Sector,State Sector
+6/30/2009 0:00,Area Outside Regions,250,Private Sector,Private Sector
+6/30/2009 0:00,Nelson,1450,Health Sector,State Sector
+6/30/2008 0:00,Area Outside Regions,280,Private Sector,Private Sector
+6/30/2008 0:00,Wellington,15100,Education Sector,State Sector
+6/30/2008 0:00,Northland,390,SoEs,State Sector
+6/30/2007 0:00,Tasman,410,Local Government,Local Government
+6/30/2007 0:00,Wellington,8400,SoEs,State Sector
+6/30/2006 0:00,Taranaki,1450,Local Government,Local Government
+6/30/2021 0:00,Wellington,9900,SoEs,State Sector
+6/30/2019 0:00,Hawkes Bay,2150,Local Government,Local Government
+6/30/2019 0:00,Bay of Plenty,3200,Local Government,Local Government
+6/30/2019 0:00,Bay of Plenty,4400,Health Sector,State Sector
+6/30/2018 0:00,Tasman,1150,Education Sector,State Sector
+6/30/2021 0:00,Northland,1450,Local Government,Local Government
+6/30/2021 0:00,Northland,480,SoEs,State Sector
+6/30/2020 0:00,Northland,51600,Private Sector,Private Sector
+6/30/2019 0:00,Auckland,12300,Local Government,Local Government
+6/30/2019 0:00,Northland,1300,Local Government,Local Government
+6/30/2018 0:00,Otago,3800,Local Government,Local Government
+6/30/2018 0:00,Manawatu-Wanganui,79400,Private Sector,Private Sector
+6/30/2018 0:00,Manawatu-Wanganui,3950,Health Sector,State Sector
+6/30/2018 0:00,Wellington,9000,Health Sector,State Sector
+6/30/2017 0:00,Bay of Plenty,2950,Local Government,Local Government
+6/30/2016 0:00,Nelson,20800,Private Sector,Private Sector
+6/30/2016 0:00,Northland,1150,Local Government,Local Government
+6/30/2015 0:00,Marlborough,820,Education Sector,State Sector
+6/30/2015 0:00,Nelson,1600,Education Sector,State Sector
+6/30/2015 0:00,Canterbury,8800,Local Government,Local Government
+6/30/2015 0:00,Manawatu-Wanganui,1700,Local Government,Local Government
+6/30/2013 0:00,Bay of Plenty,3800,Health Sector,State Sector
+6/30/2013 0:00,Waikato,2800,SoEs,State Sector
+6/30/2012 0:00,Area Outside Regions,35,Local Government,Local Government
+6/30/2014 0:00,Nelson,1800,Health Sector,State Sector
+6/30/2013 0:00,West Coast,12200,Private Sector,Private Sector
+6/30/2013 0:00,West Coast,530,Local Government,Local Government
+6/30/2013 0:00,Waikato,136400,Private Sector,Private Sector
+6/30/2012 0:00,Nelson,400,SoEs,State Sector
+6/30/2012 0:00,Wellington,10100,SoEs,State Sector
+6/30/2012 0:00,Waikato,2850,SoEs,State Sector
+6/30/2011 0:00,Area Outside Regions,15,Health Sector,State Sector
+6/30/2011 0:00,Canterbury,7800,Local Government,Local Government
+6/30/2011 0:00,Taranaki,2900,Education Sector,State Sector
+6/30/2011 0:00,Hawkes Bay,62400,Private Sector,Private Sector
+6/30/2011 0:00,Hawkes Bay,2150,Health Sector,State Sector
+6/30/2011 0:00,Waikato,3900,Local Government,Local Government
+6/30/2010 0:00,Manawatu-Wanganui,3450,Health Sector,State Sector
+6/30/2009 0:00,Tasman,16600,Private Sector,Private Sector
+6/30/2009 0:00,Wellington,170400,Private Sector,Private Sector
+6/30/2009 0:00,Northland,44700,Private Sector,Private Sector
+6/30/2008 0:00,Taranaki,1450,Health Sector,State Sector
+6/30/2008 0:00,Hawkes Bay,650,SoEs,State Sector
+6/30/2008 0:00,Hawkes Bay,2150,Health Sector,State Sector
+6/30/2008 0:00,Waikato,142200,Private Sector,Private Sector
+6/30/2007 0:00,Southland,40100,Private Sector,Private Sector
+6/30/2011 0:00,Gisborne,450,Local Government,Local Government
+6/30/2010 0:00,Hawkes Bay,4750,Education Sector,State Sector
+6/30/2008 0:00,Canterbury,4850,SoEs,State Sector
+6/30/2007 0:00,Area Outside Regions,12,Health Sector,State Sector
+6/30/2007 0:00,Nelson,410,SoEs,State Sector
+6/30/2007 0:00,Otago,3100,Health Sector,State Sector
+6/30/2007 0:00,West Coast,400,Local Government,Local Government
+6/30/2007 0:00,Manawatu-Wanganui,1150,SoEs,State Sector
+6/30/2007 0:00,Manawatu-Wanganui,3350,Health Sector,State Sector
+6/30/2007 0:00,Taranaki,1350,Local Government,Local Government
+6/30/2007 0:00,Waikato,12200,Education Sector,State Sector
+6/30/2006 0:00,Marlborough,520,Health Sector,State Sector
+6/30/2006 0:00,Tasman,35,SoEs,State Sector
+6/30/2006 0:00,Wellington,170800,Private Sector,Private Sector
+6/30/2006 0:00,Manawatu-Wanganui,1850,Local Government,Local Government
+6/30/2006 0:00,Bay of Plenty,1150,SoEs,State Sector
+6/30/2005 0:00,Southland,39900,Private Sector,Private Sector
+6/30/2005 0:00,Manawatu-Wanganui,1100,SoEs,State Sector
+6/30/2005 0:00,Manawatu-Wanganui,3850,Health Sector,State Sector
+6/30/2005 0:00,Hawkes Bay,2100,Health Sector,State Sector
+6/30/2005 0:00,Gisborne,17500,Private Sector,Private Sector
+6/30/2016 0:00,Northland,4550,Education Sector,State Sector
+6/30/2010 0:00,Canterbury,16000,Education Sector,State Sector
+6/30/2010 0:00,Hawkes Bay,1950,Local Government,Local Government
+6/30/2009 0:00,Marlborough,800,Education Sector,State Sector
+6/30/2008 0:00,Bay of Plenty,810,SoEs,State Sector
+6/30/2007 0:00,West Coast,500,SoEs,State Sector
+6/30/2007 0:00,Northland,4100,Education Sector,State Sector
+6/30/2006 0:00,Area Outside Regions,0,SoEs,State Sector
+6/30/2006 0:00,Area Outside Regions,12,Education Sector,State Sector
+6/30/2005 0:00,Southland,1900,Local Government,Local Government
+6/30/2006 0:00,Nelson,19700,Private Sector,Private Sector
+6/30/2005 0:00,Gisborne,350,Local Government,Local Government
+6/30/2005 0:00,Gisborne,310,SoEs,State Sector
+6/30/2005 0:00,Bay of Plenty,3500,Health Sector,State Sector
+6/30/2005 0:00,Northland,1950,Health Sector,State Sector
+6/30/2004 0:00,Area Outside Regions,12,Health Sector,State Sector
+6/30/2004 0:00,Area Outside Regions,12,Education Sector,State Sector
+6/30/2004 0:00,Canterbury,15600,Education Sector,State Sector
+6/30/2004 0:00,West Coast,940,Health Sector,State Sector
+6/30/2004 0:00,West Coast,800,Education Sector,State Sector
+6/30/2004 0:00,Wellington,4250,Local Government,Local Government
+6/30/2004 0:00,Wellington,7400,Health Sector,State Sector
+6/30/2004 0:00,Manawatu-Wanganui,3800,Health Sector,State Sector
+6/30/2004 0:00,Northland,520,SoEs,State Sector
+6/30/2003 0:00,Area Outside Regions,210,Private Sector,Private Sector
+6/30/2003 0:00,Nelson,510,Local Government,Local Government
+6/30/2003 0:00,Tasman,15400,Private Sector,Private Sector
+6/30/2003 0:00,Tasman,190,Health Sector,State Sector
+6/30/2003 0:00,Southland,590,SoEs,State Sector
+6/30/2003 0:00,Otago,2700,Local Government,Local Government
+6/30/2003 0:00,Otago,3350,Health Sector,State Sector
+6/30/2003 0:00,Otago,8400,Education Sector,State Sector
+6/30/2003 0:00,Canterbury,8700,Health Sector,State Sector
+6/30/2003 0:00,West Coast,10100,Private Sector,Private Sector
+6/30/2003 0:00,West Coast,820,Education Sector,State Sector
+6/30/2003 0:00,Wellington,4150,Local Government,Local Government
+6/30/2003 0:00,Wellington,7400,Health Sector,State Sector
+6/30/2003 0:00,Hawkes Bay,2000,Health Sector,State Sector
+6/30/2003 0:00,Bay of Plenty,1500,SoEs,State Sector
+6/30/2002 0:00,Area Outside Regions,15,Local Government,Local Government
+6/30/2002 0:00,Southland,37000,Private Sector,Private Sector
+6/30/2002 0:00,Southland,2500,Education Sector,State Sector
+6/30/2002 0:00,Otago,2550,Local Government,Local Government
+6/30/2005 0:00,Otago,8700,Education Sector,State Sector
+6/30/2003 0:00,Tasman,330,Local Government,Local Government
+6/30/2003 0:00,Auckland,13400,SoEs,State Sector
+6/30/2002 0:00,West Coast,9500,Private Sector,Private Sector
+6/30/2002 0:00,Wellington,4200,Local Government,Local Government
+6/30/2002 0:00,Wellington,13200,Education Sector,State Sector
+6/30/2002 0:00,Manawatu-Wanganui,70400,Private Sector,Private Sector
+6/30/2002 0:00,Hawkes Bay,1950,Health Sector,State Sector
+6/30/2002 0:00,Gisborne,16400,Private Sector,Private Sector
+6/30/2002 0:00,Bay of Plenty,6100,Education Sector,State Sector
+6/30/2002 0:00,Auckland,17500,Health Sector,State Sector
+6/30/2002 0:00,Auckland,32400,Education Sector,State Sector
+6/30/2002 0:00,Northland,1850,Health Sector,State Sector
+6/30/2001 0:00,Tasman,1000,Education Sector,State Sector
+6/30/2001 0:00,West Coast,350,Local Government,Local Government
+6/30/2001 0:00,West Coast,410,SoEs,State Sector
+6/30/2001 0:00,Hawkes Bay,520,SoEs,State Sector
+6/30/2001 0:00,Waikato,2150,SoEs,State Sector
+6/30/2001 0:00,Auckland,29800,Education Sector,State Sector
+6/30/2001 0:00,Northland,700,Local Government,Local Government
+6/30/2000 0:00,Nelson,1100,Education Sector,State Sector
+6/30/2000 0:00,Tasman,35,SoEs,State Sector
+6/30/2000 0:00,Tasman,970,Education Sector,State Sector
+6/30/2000 0:00,Southland,2700,Education Sector,State Sector
+6/30/2000 0:00,West Coast,350,Local Government,Local Government
+6/30/2000 0:00,West Coast,370,SoEs,State Sector
+6/30/2000 0:00,Wellington,3950,Local Government,Local Government
+6/30/2000 0:00,Manawatu-Wanganui,66600,Private Sector,Private Sector
+6/30/2000 0:00,Hawkes Bay,1850,Health Sector,State Sector
+6/30/2000 0:00,Bay of Plenty,1550,Local Government,Local Government
+6/30/2000 0:00,Waikato,108600,Private Sector,Private Sector
+6/30/2000 0:00,Auckland,6900,SoEs,State Sector
+6/30/2001 0:00,Gisborne,330,Local Government,Local Government
+6/30/2000 0:00,Nelson,480,Local Government,Local Government
+6/30/2003 0:00,Waikato,2771,Public Service,State Sector
+6/30/2004 0:00,West Coast,197,Public Service,State Sector
+6/30/2014 0:00,Wellington,19322,Public Service,State Sector
+6/30/2016 0:00,Marlborough,139,Public Service,State Sector
+6/30/2007 0:00,Gisborne,311,Public Service,State Sector
+6/30/2009 0:00,Waikato,3598,Public Service,State Sector
+6/30/2020 0:00,Marlborough,170,Public Service,State Sector
+6/30/2002 0:00,Bay of Plenty,3200,Health Sector,State Sector
+6/30/2002 0:00,Waikato,11800,Education Sector,State Sector
+6/30/2001 0:00,Otago,910,SoEs,State Sector
+6/30/2011 0:00,Manawatu-Wanganui,1785,Public Service,State Sector
+6/30/2015 0:00,Northland,1286,Public Service,State Sector
+6/30/2001 0:00,Otago,921,Public Service,State Sector
+6/30/2004 0:00,Taranaki,622,Public Service,State Sector
+6/30/2021 0:00,West Coast,314,Public Service,State Sector
+6/30/2023 0:00,Wellington,28726,Public Service,State Sector
+6/30/2023 0:00,West Coast,302,Public Service,State Sector
+6/30/2019 0:00,Nelson,425,Public Service,State Sector
+6/30/2000 0:00,Waikato,2602,Public Service,State Sector
+6/30/2022 0:00,Canterbury,6033,Public Service,State Sector
+6/30/2022 0:00,Waikato,4039,Public Service,State Sector
+6/30/2023 0:00,Marlborough,604,Other Government Entities,State Sector
+6/30/2023 0:00,Nelson,623,Other Government Entities,State Sector
+6/30/2023 0:00,Waikato,2861,Other Government Entities,State Sector
+6/30/2022 0:00,Otago,1471,Other Government Entities,State Sector
+6/30/2022 0:00,West Coast,160,Other Government Entities,State Sector
+6/30/2022 0:00,Manawatu-Wanganui,6708,Other Government Entities,State Sector
+6/30/2021 0:00,Southland,253,Other Government Entities,State Sector
+6/30/2020 0:00,West Coast,232,Other Government Entities,State Sector
+6/30/2020 0:00,Hawkes Bay,820,Other Government Entities,State Sector
+6/30/2019 0:00,Marlborough,680,Other Government Entities,State Sector
+6/30/2019 0:00,West Coast,229,Other Government Entities,State Sector
+6/30/2019 0:00,Northland,837,Other Government Entities,State Sector
+6/30/2018 0:00,Area Outside Regions,30,Other Government Entities,State Sector
+6/30/2018 0:00,Northland,702,Other Government Entities,State Sector
+6/30/2018 0:00,Otago,1422,Other Government Entities,State Sector
+6/30/2018 0:00,Gisborne,253,Other Government Entities,State Sector
+6/30/2017 0:00,Canterbury,4687,Other Government Entities,State Sector
+6/30/2016 0:00,Tasman,194,Other Government Entities,State Sector
+6/30/2016 0:00,Otago,1293,Other Government Entities,State Sector
+6/30/2016 0:00,Canterbury,4801,Other Government Entities,State Sector
+6/30/2015 0:00,Tasman,191,Other Government Entities,State Sector
+6/30/2014 0:00,Canterbury,4632,Other Government Entities,State Sector
+6/30/2013 0:00,Nelson,114,Other Government Entities,State Sector
+6/30/2013 0:00,West Coast,165,Other Government Entities,State Sector
+6/30/2012 0:00,Nelson,103,Other Government Entities,State Sector
+6/30/2015 0:00,Bay of Plenty,1436,Other Government Entities,State Sector
+6/30/2012 0:00,Canterbury,4886,Other Government Entities,State Sector
+6/30/2012 0:00,West Coast,135,Other Government Entities,State Sector
+6/30/2011 0:00,Wellington,14398,Other Government Entities,State Sector
+6/30/2011 0:00,Bay of Plenty,1726,Other Government Entities,State Sector
+6/30/2010 0:00,Wellington,14793,Other Government Entities,State Sector
+6/30/2010 0:00,Auckland,12471,Other Government Entities,State Sector
+6/30/2009 0:00,Tasman,209,Other Government Entities,State Sector
+6/30/2009 0:00,Southland,433,Other Government Entities,State Sector
+6/30/2009 0:00,Wellington,13988,Other Government Entities,State Sector
+6/30/2009 0:00,Manawatu-Wanganui,5715,Other Government Entities,State Sector
+6/30/2008 0:00,Nelson,380,Other Government Entities,State Sector
+6/30/2008 0:00,Bay of Plenty,1711,Other Government Entities,State Sector
+6/30/2008 0:00,Waikato,2618,Other Government Entities,State Sector
+6/30/2007 0:00,Otago,1096,Other Government Entities,State Sector
+6/30/2007 0:00,Manawatu-Wanganui,5465,Other Government Entities,State Sector
+6/30/2006 0:00,Marlborough,499,Other Government Entities,State Sector
+6/30/2006 0:00,Nelson,116,Other Government Entities,State Sector
+6/30/2006 0:00,Wellington,11912,Other Government Entities,State Sector
+6/30/2006 0:00,Hawkes Bay,761,Other Government Entities,State Sector
+6/30/2005 0:00,Tasman,123,Other Government Entities,State Sector
+6/30/2005 0:00,Canterbury,4565,Other Government Entities,State Sector
+6/30/2005 0:00,Manawatu-Wanganui,5150,Other Government Entities,State Sector
+6/30/2005 0:00,Gisborne,290,Other Government Entities,State Sector
+6/30/2004 0:00,Wellington,10430,Other Government Entities,State Sector
+6/30/2003 0:00,Nelson,337,Other Government Entities,State Sector
+6/30/2003 0:00,Bay of Plenty,1479,Other Government Entities,State Sector
+6/30/2003 0:00,Northland,524,Other Government Entities,State Sector
+6/30/2002 0:00,Canterbury,3945,Other Government Entities,State Sector
+6/30/2001 0:00,Nelson,190,Other Government Entities,State Sector
+6/30/2001 0:00,Wellington,12046,Other Government Entities,State Sector
+6/30/2000 0:00,Area Outside Regions,60,Other Government Entities,State Sector
+6/30/2000 0:00,Otago,1277,Other Government Entities,State Sector
+6/30/2000 0:00,Waikato,1698,Other Government Entities,State Sector
+6/30/2022 0:00,Taranaki,380,Other Government Entities,State Sector
+6/30/2010 0:00,Gisborne,173,Other Government Entities,State Sector
+6/30/2003 0:00,Manawatu-Wanganui,4914,Other Government Entities,State Sector
+6/30/2000 0:00,Northland,441,Other Government Entities,State Sector
+6/30/2013 0:00,Otago,1312,Public Service,State Sector
+6/30/2014 0:00,Southland,613,Public Service,State Sector
+6/30/2001 0:00,Northland,681,Public Service,State Sector
+6/30/2002 0:00,Tasman,29,Public Service,State Sector
+6/30/2005 0:00,Waikato,3033,Public Service,State Sector
+6/30/2008 0:00,Tasman,110,Public Service,State Sector
+6/30/2023 0:00,Waikato,4139,Public Service,State Sector
+6/30/2007 0:00,Waikato,3158,Public Service,State Sector
+6/30/2011 0:00,Gisborne,253,Public Service,State Sector
+6/30/2003 0:00,Nelson,293,Public Service,State Sector
+6/30/2005 0:00,Overseas,256,Public Service,State Sector
+6/30/2004 0:00,Nelson,388,Public Service,State Sector
+6/30/2021 0:00,Otago,1535,Public Service,State Sector
+6/30/2021 0:00,Gisborne,305,Public Service,State Sector
+6/30/2006 0:00,Hawkes Bay,1189,Public Service,State Sector
+6/30/2001 0:00,Nelson,290,Public Service,State Sector
+6/30/2005 0:00,Hawkes Bay,1133,Public Service,State Sector
+6/30/2013 0:00,Canterbury,4468,Public Service,State Sector
+6/30/2013 0:00,Nelson,516,Public Service,State Sector
+6/30/2023 0:00,Northland,1649,Public Service,State Sector
+6/30/2021 0:00,Nelson,452,Public Service,State Sector
+6/30/2018 0:00,Otago,1378,Public Service,State Sector
+6/30/2015 0:00,Bay of Plenty,1764,Public Service,State Sector
+6/30/2018 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2001 0:00,Tasman,74,Public Service,State Sector
+6/30/2010 0:00,Manawatu-Wanganui,1941,Public Service,State Sector
+6/30/2013 0:00,Marlborough,143,Public Service,State Sector
+6/30/2016 0:00,Canterbury,4399,Public Service,State Sector
+6/30/2001 0:00,Manawatu-Wanganui,1425,Public Service,State Sector
+6/30/2021 0:00,Auckland,12758,Public Service,State Sector
+6/30/2021 0:00,Northland,1695,Public Service,State Sector
+6/30/2005 0:00,West Coast,234,Public Service,State Sector
+6/30/2009 0:00,Auckland,9674,Public Service,State Sector
+6/30/2021 0:00,Bay of Plenty,1919,Public Service,State Sector
+6/30/2016 0:00,Hawkes Bay,1151,Public Service,State Sector
+6/30/2014 0:00,Manawatu-Wanganui,1963,Public Service,State Sector
+6/30/2019 0:00,Taranaki,419,Public Service,State Sector
+6/30/2011 0:00,Wellington,18302,Public Service,State Sector
+6/30/2000 0:00,Northland,659,Public Service,State Sector
+6/30/2010 0:00,Marlborough,143,Public Service,State Sector
+6/30/2017 0:00,Otago,1307,Public Service,State Sector
+6/30/2022 0:00,Gisborne,294,Public Service,State Sector
+6/30/2023 0:00,Area Outside Regions,12,Health Sector,State Sector
+6/30/2023 0:00,Otago,9800,Education Sector,State Sector
+6/30/2023 0:00,Wellington,6300,Local Government,Local Government
+6/30/2023 0:00,Wellington,11000,Health Sector,State Sector
+6/30/2023 0:00,Northland,4150,Health Sector,State Sector
+6/30/2022 0:00,Tasman,6,SoEs,State Sector
+6/30/2023 0:00,Tasman,700,Local Government,Local Government
+6/30/2023 0:00,Otago,100900,Private Sector,Private Sector
+6/30/2023 0:00,Wellington,194400,Private Sector,Private Sector
+6/30/2023 0:00,Taranaki,1650,Local Government,Local Government
+6/30/2022 0:00,Gisborne,640,Local Government,Local Government
+6/30/2022 0:00,Northland,52900,Private Sector,Private Sector
+6/30/2022 0:00,Waikato,2700,SoEs,State Sector
+6/30/2022 0:00,Waikato,14200,Education Sector,State Sector
+6/30/2022 0:00,Tasman,730,Local Government,Local Government
+6/30/2021 0:00,Nelson,870,Local Government,Local Government
+6/30/2021 0:00,Tasman,1250,Education Sector,State Sector
+6/30/2021 0:00,Southland,1850,Local Government,Local Government
+6/30/2021 0:00,Otago,4050,Local Government,Local Government
+6/30/2021 0:00,West Coast,650,Local Government,Local Government
+6/30/2021 0:00,West Coast,860,Health Sector,State Sector
+6/30/2021 0:00,Manawatu-Wanganui,2000,Local Government,Local Government
+6/30/2021 0:00,Manawatu-Wanganui,1100,SoEs,State Sector
+6/30/2021 0:00,Gisborne,110,SoEs,State Sector
+6/30/2021 0:00,Auckland,44500,Education Sector,State Sector
+6/30/2020 0:00,Marlborough,630,Health Sector,State Sector
+6/30/2020 0:00,Nelson,840,Local Government,Local Government
+6/30/2020 0:00,Tasman,21100,Private Sector,Private Sector
+6/30/2020 0:00,Tasman,6,SoEs,State Sector
+6/30/2020 0:00,Southland,1250,Health Sector,State Sector
+6/30/2020 0:00,Manawatu-Wanganui,4200,Health Sector,State Sector
+6/30/2020 0:00,Hawkes Bay,70100,Private Sector,Private Sector
+6/30/2020 0:00,Auckland,28600,Health Sector,State Sector
+6/30/2020 0:00,Northland,4900,Education Sector,State Sector
+6/30/2019 0:00,Marlborough,900,Education Sector,State Sector
+6/30/2019 0:00,Otago,97400,Private Sector,Private Sector
+6/30/2019 0:00,Manawatu-Wanganui,8900,Education Sector,State Sector
+6/30/2019 0:00,Taranaki,1750,Health Sector,State Sector
+6/30/2019 0:00,Bay of Plenty,710,SoEs,State Sector
+6/30/2019 0:00,Auckland,675300,Private Sector,Private Sector
+6/30/2018 0:00,Hawkes Bay,68300,Private Sector,Private Sector
+6/30/2018 0:00,Waikato,13300,Education Sector,State Sector
+6/30/2017 0:00,Marlborough,900,Education Sector,State Sector
+6/30/2021 0:00,Gisborne,1600,Education Sector,State Sector
+6/30/2020 0:00,Southland,1950,Local Government,Local Government
+6/30/2020 0:00,Auckland,687300,Private Sector,Private Sector
+6/30/2019 0:00,Area Outside Regions,18,Education Sector,State Sector
+6/30/2019 0:00,Canterbury,5500,SoEs,State Sector
+6/30/2019 0:00,Gisborne,540,Local Government,Local Government
+6/30/2017 0:00,Marlborough,20200,Private Sector,Private Sector
+6/30/2017 0:00,West Coast,590,Local Government,Local Government
+6/30/2017 0:00,Taranaki,1350,Local Government,Local Government
+6/30/2017 0:00,Taranaki,2800,Education Sector,State Sector
+6/30/2017 0:00,Hawkes Bay,460,SoEs,State Sector
+6/30/2017 0:00,Bay of Plenty,4100,Health Sector,State Sector
+6/30/2017 0:00,Auckland,26000,Health Sector,State Sector
+6/30/2016 0:00,Tasman,510,Local Government,Local Government
+6/30/2016 0:00,Tasman,1100,Education Sector,State Sector
+6/30/2016 0:00,Canterbury,10900,Health Sector,State Sector
+6/30/2016 0:00,Bay of Plenty,7400,Education Sector,State Sector
+6/30/2015 0:00,Nelson,20400,Private Sector,Private Sector
+6/30/2015 0:00,West Coast,870,Health Sector,State Sector
+6/30/2015 0:00,Taranaki,1500,Health Sector,State Sector
+6/30/2015 0:00,Gisborne,130,SoEs,State Sector
+6/30/2015 0:00,Auckland,13400,SoEs,State Sector
+6/30/2014 0:00,Nelson,1500,Education Sector,State Sector
+6/30/2014 0:00,Tasman,19100,Private Sector,Private Sector
+6/30/2014 0:00,Tasman,1150,Education Sector,State Sector
+6/30/2014 0:00,Canterbury,10600,Health Sector,State Sector
+6/30/2014 0:00,Hawkes Bay,4500,Education Sector,State Sector
+6/30/2014 0:00,Gisborne,140,SoEs,State Sector
+6/30/2013 0:00,Area Outside Regions,0,SoEs,State Sector
+6/30/2013 0:00,Southland,990,Health Sector,State Sector
+6/30/2013 0:00,Canterbury,8200,Local Government,Local Government
+6/30/2013 0:00,Manawatu-Wanganui,1950,Local Government,Local Government
+6/30/2013 0:00,Taranaki,1550,Health Sector,State Sector
+6/30/2013 0:00,Hawkes Bay,4450,Education Sector,State Sector
+6/30/2012 0:00,Area Outside Regions,15,Education Sector,State Sector
+6/30/2014 0:00,Gisborne,450,Local Government,Local Government
+6/30/2012 0:00,Marlborough,870,Education Sector,State Sector
+6/30/2012 0:00,Waikato,3800,Local Government,Local Government
+6/30/2012 0:00,Northland,4300,Education Sector,State Sector
+6/30/2011 0:00,Marlborough,18000,Private Sector,Private Sector
+6/30/2011 0:00,Southland,1100,Health Sector,State Sector
+6/30/2011 0:00,Manawatu-Wanganui,73800,Private Sector,Private Sector
+6/30/2011 0:00,Taranaki,340,SoEs,State Sector
+6/30/2011 0:00,Taranaki,1500,Health Sector,State Sector
+6/30/2011 0:00,Hawkes Bay,4800,Education Sector,State Sector
+6/30/2010 0:00,Area Outside Regions,260,Private Sector,Private Sector
+6/30/2010 0:00,West Coast,500,Local Government,Local Government
+6/30/2010 0:00,Wellington,15400,Education Sector,State Sector
+6/30/2010 0:00,Manawatu-Wanganui,1950,Local Government,Local Government
+6/30/2010 0:00,Northland,1050,Local Government,Local Government
+6/30/2009 0:00,Nelson,1300,Education Sector,State Sector
+6/30/2009 0:00,Hawkes Bay,2200,Health Sector,State Sector
+6/30/2009 0:00,Waikato,2650,SoEs,State Sector
+6/30/2009 0:00,Auckland,14600,SoEs,State Sector
+6/30/2008 0:00,Area Outside Regions,20,Local Government,Local Government
+6/30/2008 0:00,Tasman,410,Local Government,Local Government
+6/30/2008 0:00,Tasman,35,SoEs,State Sector
+6/30/2022 0:00,Southland,1800,Local Government,Local Government
+6/30/2022 0:00,Canterbury,13400,Health Sector,State Sector
+6/30/2020 0:00,Wellington,17400,Education Sector,State Sector
+6/30/2019 0:00,Tasman,3,SoEs,State Sector
+6/30/2019 0:00,West Coast,630,Local Government,Local Government
+6/30/2019 0:00,Taranaki,1400,Local Government,Local Government
+6/30/2018 0:00,Southland,380,SoEs,State Sector
+6/30/2018 0:00,West Coast,820,Health Sector,State Sector
+6/30/2020 0:00,Taranaki,1800,Health Sector,State Sector
+6/30/2018 0:00,Wellington,5300,Local Government,Local Government
+6/30/2017 0:00,Canterbury,9100,Local Government,Local Government
+6/30/2017 0:00,Canterbury,15800,Education Sector,State Sector
+6/30/2017 0:00,Manawatu-Wanganui,1050,SoEs,State Sector
+6/30/2016 0:00,Tasman,18800,Private Sector,Private Sector
+6/30/2016 0:00,Otago,3500,Local Government,Local Government
+6/30/2016 0:00,Wellington,9500,SoEs,State Sector
+6/30/2016 0:00,Manawatu-Wanganui,8300,Education Sector,State Sector
+6/30/2016 0:00,Taranaki,2950,Education Sector,State Sector
+6/30/2016 0:00,Bay of Plenty,2800,Local Government,Local Government
+6/30/2016 0:00,Northland,45500,Private Sector,Private Sector
+6/30/2015 0:00,Hawkes Bay,62300,Private Sector,Private Sector
+6/30/2014 0:00,Marlborough,320,Health Sector,State Sector
+6/30/2014 0:00,Nelson,400,SoEs,State Sector
+6/30/2014 0:00,Southland,40800,Private Sector,Private Sector
+6/30/2014 0:00,Southland,550,SoEs,State Sector
+6/30/2014 0:00,Otago,3550,Health Sector,State Sector
+6/30/2014 0:00,West Coast,540,Local Government,Local Government
+6/30/2014 0:00,Wellington,10100,SoEs,State Sector
+6/30/2014 0:00,Gisborne,16900,Private Sector,Private Sector
+6/30/2014 0:00,Northland,1050,Local Government,Local Government
+6/30/2013 0:00,Area Outside Regions,260,Private Sector,Private Sector
+6/30/2013 0:00,Marlborough,850,Education Sector,State Sector
+6/30/2013 0:00,Nelson,670,Local Government,Local Government
+6/30/2013 0:00,Canterbury,5500,SoEs,State Sector
+6/30/2013 0:00,Canterbury,10300,Health Sector,State Sector
+6/30/2013 0:00,Wellington,15200,Education Sector,State Sector
+6/30/2013 0:00,Gisborne,430,Local Government,Local Government
+6/30/2013 0:00,Bay of Plenty,2600,Local Government,Local Government
+6/30/2013 0:00,Bay of Plenty,7000,Education Sector,State Sector
+6/30/2016 0:00,Auckland,13200,SoEs,State Sector
+6/30/2014 0:00,Canterbury,8700,Local Government,Local Government
+6/30/2013 0:00,Auckland,38900,Education Sector,State Sector
+6/30/2012 0:00,Otago,78500,Private Sector,Private Sector
+6/30/2012 0:00,Wellington,165200,Private Sector,Private Sector
+6/30/2012 0:00,Wellington,8500,Health Sector,State Sector
+6/30/2011 0:00,Area Outside Regions,12,Education Sector,State Sector
+6/30/2011 0:00,Marlborough,320,Local Government,Local Government
+6/30/2011 0:00,Nelson,650,Local Government,Local Government
+6/30/2011 0:00,Tasman,16700,Private Sector,Private Sector
+6/30/2011 0:00,Tasman,35,SoEs,State Sector
+6/30/2011 0:00,Southland,540,SoEs,State Sector
+6/30/2011 0:00,West Coast,550,Local Government,Local Government
+6/30/2011 0:00,Hawkes Bay,1950,Local Government,Local Government
+6/30/2011 0:00,Auckland,521100,Private Sector,Private Sector
+6/30/2011 0:00,Auckland,10000,Local Government,Local Government
+6/30/2010 0:00,Nelson,630,Local Government,Local Government
+6/30/2010 0:00,Otago,78500,Private Sector,Private Sector
+6/30/2010 0:00,Taranaki,340,SoEs,State Sector
+6/30/2010 0:00,Waikato,2600,SoEs,State Sector
+6/30/2009 0:00,Area Outside Regions,21,Local Government,Local Government
+6/30/2009 0:00,Nelson,590,Local Government,Local Government
+6/30/2009 0:00,Otago,3400,Local Government,Local Government
+6/30/2009 0:00,Canterbury,5100,SoEs,State Sector
+6/30/2009 0:00,Wellington,8100,Health Sector,State Sector
+6/30/2008 0:00,Nelson,20300,Private Sector,Private Sector
+6/30/2008 0:00,Nelson,420,SoEs,State Sector
+6/30/2008 0:00,Southland,41600,Private Sector,Private Sector
+6/30/2008 0:00,West Coast,450,Local Government,Local Government
+6/30/2008 0:00,Waikato,2250,SoEs,State Sector
+6/30/2007 0:00,Nelson,1400,Health Sector,State Sector
+6/30/2011 0:00,Manawatu-Wanganui,1950,Local Government,Local Government
+6/30/2010 0:00,Northland,4350,Education Sector,State Sector
+6/30/2009 0:00,Marlborough,670,SoEs,State Sector
+6/30/2017 0:00,Wellington,5200,Local Government,Local Government
+6/30/2014 0:00,Taranaki,310,SoEs,State Sector
+6/30/2013 0:00,Tasman,460,Local Government,Local Government
+6/30/2012 0:00,Bay of Plenty,2450,Local Government,Local Government
+6/30/2010 0:00,Southland,1100,Health Sector,State Sector
+6/30/2008 0:00,Auckland,19800,Health Sector,State Sector
+6/30/2008 0:00,Manawatu-Wanganui,8500,Education Sector,State Sector
+6/30/2007 0:00,Marlborough,490,Health Sector,State Sector
+6/30/2007 0:00,Otago,81000,Private Sector,Private Sector
+6/30/2007 0:00,Taranaki,360,SoEs,State Sector
+6/30/2007 0:00,Gisborne,1500,Education Sector,State Sector
+6/30/2007 0:00,Auckland,13500,SoEs,State Sector
+6/30/2007 0:00,Auckland,19000,Health Sector,State Sector
+6/30/2006 0:00,Marlborough,290,Local Government,Local Government
+6/30/2006 0:00,Tasman,16900,Private Sector,Private Sector
+6/30/2006 0:00,Southland,1150,Health Sector,State Sector
+6/30/2006 0:00,Otago,79400,Private Sector,Private Sector
+6/30/2006 0:00,Otago,1150,SoEs,State Sector
+6/30/2006 0:00,Canterbury,209400,Private Sector,Private Sector
+6/30/2006 0:00,Canterbury,7000,Local Government,Local Government
+6/30/2006 0:00,Taranaki,2800,Education Sector,State Sector
+6/30/2006 0:00,Northland,44300,Private Sector,Private Sector
+6/30/2005 0:00,Marlborough,18100,Private Sector,Private Sector
+6/30/2005 0:00,Nelson,440,SoEs,State Sector
+6/30/2005 0:00,Nelson,1300,Education Sector,State Sector
+6/30/2005 0:00,Tasman,35,SoEs,State Sector
+6/30/2005 0:00,Otago,2800,Local Government,Local Government
+6/30/2005 0:00,West Coast,780,Education Sector,State Sector
+6/30/2005 0:00,Taranaki,1450,Local Government,Local Government
+6/30/2005 0:00,Gisborne,1500,Education Sector,State Sector
+6/30/2005 0:00,Bay of Plenty,1900,Local Government,Local Government
+6/30/2005 0:00,Auckland,9700,Local Government,Local Government
+6/30/2004 0:00,Nelson,19400,Private Sector,Private Sector
+6/30/2004 0:00,Tasman,30,SoEs,State Sector
+6/30/2004 0:00,Southland,38600,Private Sector,Private Sector
+6/30/2004 0:00,Otago,1050,SoEs,State Sector
+6/30/2004 0:00,Taranaki,37800,Private Sector,Private Sector
+6/30/2004 0:00,Gisborne,360,Local Government,Local Government
+6/30/2003 0:00,Otago,71200,Private Sector,Private Sector
+6/30/2003 0:00,Canterbury,6000,Local Government,Local Government
+6/30/2003 0:00,Manawatu-Wanganui,1650,Local Government,Local Government
+6/30/2003 0:00,Hawkes Bay,560,SoEs,State Sector
+6/30/2003 0:00,Gisborne,350,Local Government,Local Government
+6/30/2003 0:00,Northland,40500,Private Sector,Private Sector
+6/30/2003 0:00,Northland,3800,Education Sector,State Sector
+6/30/2002 0:00,Nelson,1300,Health Sector,State Sector
+6/30/2002 0:00,Otago,3400,Health Sector,State Sector
+6/30/2005 0:00,Auckland,509000,Private Sector,Private Sector
+6/30/2005 0:00,Northland,3750,Education Sector,State Sector
+6/30/2003 0:00,Area Outside Regions,12,Health Sector,State Sector
+6/30/2003 0:00,Bay of Plenty,6300,Education Sector,State Sector
+6/30/2002 0:00,West Coast,360,Local Government,Local Government
+6/30/2002 0:00,Wellington,157200,Private Sector,Private Sector
+6/30/2002 0:00,Wellington,6900,SoEs,State Sector
+6/30/2002 0:00,Gisborne,1450,Education Sector,State Sector
+6/30/2002 0:00,Northland,38200,Private Sector,Private Sector
+6/30/2001 0:00,Marlborough,230,Local Government,Local Government
+6/30/2001 0:00,Tasman,14700,Private Sector,Private Sector
+6/30/2001 0:00,Otago,64800,Private Sector,Private Sector
+6/30/2001 0:00,Wellington,6900,Health Sector,State Sector
+6/30/2001 0:00,Manawatu-Wanganui,3650,Health Sector,State Sector
+6/30/2001 0:00,Manawatu-Wanganui,8700,Education Sector,State Sector
+6/30/2001 0:00,Taranaki,380,SoEs,State Sector
+6/30/2001 0:00,Bay of Plenty,6000,Education Sector,State Sector
+6/30/2001 0:00,Waikato,111700,Private Sector,Private Sector
+6/30/2000 0:00,Marlborough,820,Education Sector,State Sector
+6/30/2000 0:00,Nelson,17400,Private Sector,Private Sector
+6/30/2000 0:00,Taranaki,33000,Private Sector,Private Sector
+6/30/2000 0:00,Hawkes Bay,3650,Education Sector,State Sector
+6/30/2000 0:00,Auckland,30200,Education Sector,State Sector
+6/30/2000 0:00,Northland,1800,Health Sector,State Sector
+6/30/2002 0:00,Southland,509,Public Service,State Sector
+6/30/2002 0:00,Taranaki,393,Public Service,State Sector
+6/30/2010 0:00,Northland,1257,Public Service,State Sector
+6/30/2013 0:00,Tasman,33,Public Service,State Sector
+6/30/2005 0:00,Wellington,7800,SoEs,State Sector
+6/30/2004 0:00,Waikato,12600,Education Sector,State Sector
+6/30/2003 0:00,Otago,1100,SoEs,State Sector
+6/30/2000 0:00,Wellington,155000,Private Sector,Private Sector
+6/30/2000 0:00,Hawkes Bay,660,SoEs,State Sector
+6/30/2000 0:00,West Coast,850,Education Sector,State Sector
+6/30/2006 0:00,Canterbury,3994,Public Service,State Sector
+6/30/2007 0:00,Overseas,272,Public Service,State Sector
+6/30/2023 0:00,Southland,354,Other Government Entities,State Sector
+6/30/2022 0:00,Nelson,457,Other Government Entities,State Sector
+6/30/2022 0:00,Gisborne,316,Other Government Entities,State Sector
+6/30/2021 0:00,Auckland,14142,Other Government Entities,State Sector
+6/30/2020 0:00,Marlborough,670,Other Government Entities,State Sector
+6/30/2019 0:00,Auckland,13138,Other Government Entities,State Sector
+6/30/2018 0:00,Nelson,491,Other Government Entities,State Sector
+6/30/2018 0:00,Canterbury,4916,Other Government Entities,State Sector
+6/30/2018 0:00,Taranaki,466,Other Government Entities,State Sector
+6/30/2018 0:00,Auckland,12596,Other Government Entities,State Sector
+6/30/2017 0:00,Nelson,366,Other Government Entities,State Sector
+6/30/2018 0:00,West Coast,172,Other Government Entities,State Sector
+6/30/2017 0:00,Waikato,1651,Other Government Entities,State Sector
+6/30/2017 0:00,Northland,681,Other Government Entities,State Sector
+6/30/2016 0:00,Area Outside Regions,35,Other Government Entities,State Sector
+6/30/2016 0:00,Waikato,2054,Other Government Entities,State Sector
+6/30/2015 0:00,Gisborne,286,Other Government Entities,State Sector
+6/30/2014 0:00,Bay of Plenty,1552,Other Government Entities,State Sector
+6/30/2013 0:00,Southland,291,Other Government Entities,State Sector
+6/30/2013 0:00,Canterbury,4032,Other Government Entities,State Sector
+6/30/2016 0:00,Manawatu-Wanganui,5882,Other Government Entities,State Sector
+6/30/2012 0:00,Southland,399,Other Government Entities,State Sector
+6/30/2012 0:00,Manawatu-Wanganui,5128,Other Government Entities,State Sector
+6/30/2011 0:00,Marlborough,725,Other Government Entities,State Sector
+6/30/2009 0:00,Nelson,285,Other Government Entities,State Sector
+6/30/2008 0:00,Manawatu-Wanganui,5434,Other Government Entities,State Sector
+6/30/2008 0:00,Hawkes Bay,1181,Other Government Entities,State Sector
+6/30/2008 0:00,Auckland,10694,Other Government Entities,State Sector
+6/30/2007 0:00,Area Outside Regions,25,Other Government Entities,State Sector
+6/30/2007 0:00,Gisborne,249,Other Government Entities,State Sector
+6/30/2006 0:00,Taranaki,252,Other Government Entities,State Sector
+6/30/2005 0:00,Marlborough,565,Other Government Entities,State Sector
+6/30/2005 0:00,Waikato,1567,Other Government Entities,State Sector
+6/30/2004 0:00,Marlborough,536,Other Government Entities,State Sector
+6/30/2002 0:00,Nelson,166,Other Government Entities,State Sector
+6/30/2004 0:00,Northland,569,Other Government Entities,State Sector
+6/30/2003 0:00,Area Outside Regions,80,Other Government Entities,State Sector
+6/30/2002 0:00,Wellington,10015,Other Government Entities,State Sector
+6/30/2002 0:00,Gisborne,120,Other Government Entities,State Sector
+6/30/2002 0:00,Auckland,8845,Other Government Entities,State Sector
+6/30/2001 0:00,Bay of Plenty,1398,Other Government Entities,State Sector
+6/30/2001 0:00,Northland,469,Other Government Entities,State Sector
+6/30/2000 0:00,Gisborne,234,Other Government Entities,State Sector
+6/30/2000 0:00,Bay of Plenty,1423,Other Government Entities,State Sector
+6/30/2012 0:00,Overseas,279,Public Service,State Sector
+6/30/2001 0:00,Overseas,228,Public Service,State Sector
+6/30/2007 0:00,Auckland,8901,Public Service,State Sector
+6/30/2012 0:00,Gisborne,263,Public Service,State Sector
+6/30/2003 0:00,Southland,538,Public Service,State Sector
+6/30/2009 0:00,Bay of Plenty,1503,Public Service,State Sector
+6/30/2014 0:00,Northland,1264,Public Service,State Sector
+6/30/2003 0:00,Bay of Plenty,1021,Public Service,State Sector
+6/30/2005 0:00,Nelson,329,Public Service,State Sector
+6/30/2007 0:00,Marlborough,333,Public Service,State Sector
+6/30/2010 0:00,Overseas,302,Public Service,State Sector
+6/30/2020 0:00,Waikato,4385,Public Service,State Sector
+6/30/2019 0:00,Hawkes Bay,1286,Public Service,State Sector
+6/30/2006 0:00,Waikato,3033,Public Service,State Sector
+6/30/2008 0:00,Gisborne,262,Public Service,State Sector
+6/30/2012 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2022 0:00,Auckland,12810,Public Service,State Sector
+6/30/2019 0:00,Auckland,10962,Public Service,State Sector
+6/30/2016 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2006 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2011 0:00,Waikato,3681,Public Service,State Sector
+6/30/2014 0:00,Nelson,508,Public Service,State Sector
+6/30/2018 0:00,Hawkes Bay,1227,Public Service,State Sector
+6/30/2001 0:00,Waikato,2630,Public Service,State Sector
+6/30/2003 0:00,Wellington,13912,Public Service,State Sector
+6/30/2008 0:00,Northland,1301,Public Service,State Sector
+6/30/2004 0:00,Waikato,2904,Public Service,State Sector
+6/30/2021 0:00,Canterbury,5767,Public Service,State Sector
+6/30/2011 0:00,Bay of Plenty,1724,Public Service,State Sector
+6/30/2017 0:00,Hawkes Bay,1204,Public Service,State Sector
+6/30/2009 0:00,Hawkes Bay,1164,Public Service,State Sector
+6/30/2019 0:00,Waikato,4120,Public Service,State Sector
+6/30/2010 0:00,Canterbury,4479,Public Service,State Sector
+6/30/2014 0:00,West Coast,236,Public Service,State Sector
+6/30/2000 0:00,Manawatu-Wanganui,1383,Public Service,State Sector
+6/30/2020 0:00,Wellington,25941,Public Service,State Sector
+6/30/2020 0:00,Manawatu-Wanganui,2392,Public Service,State Sector
+6/30/2011 0:00,Nelson,555,Public Service,State Sector
+6/30/2014 0:00,Gisborne,263,Public Service,State Sector
+6/30/2015 0:00,Southland,611,Public Service,State Sector
+6/30/2005 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2003 0:00,West Coast,242,Public Service,State Sector
+6/30/2000 0:00,Northland,3750,Education Sector,State Sector
+6/30/2023 0:00,Area Outside Regions,300,Private Sector,Private Sector
+6/30/2023 0:00,Area Outside Regions,15,Education Sector,State Sector
+6/30/2023 0:00,Marlborough,21100,Private Sector,Private Sector
+6/30/2023 0:00,Marlborough,700,Health Sector,State Sector
+6/30/2023 0:00,Tasman,6,SoEs,State Sector
+6/30/2023 0:00,Southland,430,SoEs,State Sector
+6/30/2023 0:00,Manawatu-Wanganui,2200,Local Government,Local Government
+6/30/2023 0:00,Manawatu-Wanganui,4750,Health Sector,State Sector
+6/30/2023 0:00,Northland,1550,Local Government,Local Government
+6/30/2023 0:00,Northland,440,SoEs,State Sector
+6/30/2023 0:00,Marlborough,1050,Education Sector,State Sector
+6/30/2023 0:00,Nelson,1950,Health Sector,State Sector
+6/30/2023 0:00,West Coast,250,SoEs,State Sector
+6/30/2023 0:00,Wellington,9500,SoEs,State Sector
+6/30/2022 0:00,Nelson,1750,Education Sector,State Sector
+6/30/2022 0:00,Tasman,1200,Education Sector,State Sector
+6/30/2022 0:00,Southland,43600,Private Sector,Private Sector
+6/30/2022 0:00,Canterbury,9400,Local Government,Local Government
+6/30/2022 0:00,Auckland,12400,Local Government,Local Government
+6/30/2022 0:00,Auckland,44800,Education Sector,State Sector
+6/30/2023 0:00,Gisborne,1200,Health Sector,State Sector
+6/30/2022 0:00,Auckland,31800,Health Sector,State Sector
+6/30/2021 0:00,Area Outside Regions,12,Health Sector,State Sector
+6/30/2021 0:00,Marlborough,500,Local Government,Local Government
+6/30/2021 0:00,Nelson,1750,Education Sector,State Sector
+6/30/2021 0:00,Canterbury,9300,Local Government,Local Government
+6/30/2021 0:00,West Coast,230,SoEs,State Sector
+6/30/2021 0:00,Wellington,17800,Education Sector,State Sector
+6/30/2021 0:00,Taranaki,44800,Private Sector,Private Sector
+6/30/2021 0:00,Hawkes Bay,700,SoEs,State Sector
+6/30/2021 0:00,Gisborne,19100,Private Sector,Private Sector
+6/30/2021 0:00,Gisborne,1100,Health Sector,State Sector
+6/30/2021 0:00,Bay of Plenty,117600,Private Sector,Private Sector
+6/30/2021 0:00,Northland,51800,Private Sector,Private Sector
+6/30/2020 0:00,Area Outside Regions,12,Health Sector,State Sector
+6/30/2020 0:00,Marlborough,21700,Private Sector,Private Sector
+6/30/2020 0:00,Otago,4150,Local Government,Local Government
+6/30/2020 0:00,Bay of Plenty,740,SoEs,State Sector
+6/30/2020 0:00,Waikato,8800,Health Sector,State Sector
+6/30/2020 0:00,Northland,1400,Local Government,Local Government
+6/30/2019 0:00,Marlborough,21300,Private Sector,Private Sector
+6/30/2019 0:00,Nelson,820,Local Government,Local Government
+6/30/2019 0:00,West Coast,11700,Private Sector,Private Sector
+6/30/2019 0:00,Wellington,5500,Local Government,Local Government
+6/30/2019 0:00,Taranaki,250,SoEs,State Sector
+6/30/2018 0:00,Marlborough,160,SoEs,State Sector
+6/30/2018 0:00,Taranaki,3000,Education Sector,State Sector
+6/30/2018 0:00,Gisborne,980,Health Sector,State Sector
+6/30/2021 0:00,Waikato,170000,Private Sector,Private Sector
+6/30/2020 0:00,Taranaki,3300,Education Sector,State Sector
+6/30/2020 0:00,Waikato,2750,SoEs,State Sector
+6/30/2018 0:00,Southland,1300,Health Sector,State Sector
+6/30/2018 0:00,Taranaki,260,SoEs,State Sector
+6/30/2017 0:00,Tasman,19000,Private Sector,Private Sector
+6/30/2017 0:00,Otago,3450,Health Sector,State Sector
+6/30/2017 0:00,Otago,9300,Education Sector,State Sector
+6/30/2017 0:00,Gisborne,1450,Education Sector,State Sector
+6/30/2017 0:00,Northland,620,SoEs,State Sector
+6/30/2016 0:00,Area Outside Regions,270,Private Sector,Private Sector
+6/30/2016 0:00,Marlborough,240,SoEs,State Sector
+6/30/2016 0:00,Southland,2000,Local Government,Local Government
+6/30/2016 0:00,Taranaki,270,SoEs,State Sector
+6/30/2016 0:00,Taranaki,1600,Health Sector,State Sector
+6/30/2016 0:00,Gisborne,500,Local Government,Local Government
+6/30/2015 0:00,Area Outside Regions,12,Education Sector,State Sector
+6/30/2015 0:00,Hawkes Bay,510,SoEs,State Sector
+6/30/2015 0:00,Bay of Plenty,97700,Private Sector,Private Sector
+6/30/2015 0:00,Waikato,3650,Local Government,Local Government
+6/30/2014 0:00,Canterbury,15600,Education Sector,State Sector
+6/30/2014 0:00,West Coast,870,Education Sector,State Sector
+6/30/2014 0:00,Wellington,8700,Health Sector,State Sector
+6/30/2014 0:00,Taranaki,43800,Private Sector,Private Sector
+6/30/2014 0:00,Northland,470,SoEs,State Sector
+6/30/2013 0:00,Manawatu-Wanganui,3500,Health Sector,State Sector
+6/30/2013 0:00,Bay of Plenty,91000,Private Sector,Private Sector
+6/30/2012 0:00,Area Outside Regions,0,SoEs,State Sector
+6/30/2012 0:00,West Coast,12300,Private Sector,Private Sector
+6/30/2012 0:00,Northland,510,SoEs,State Sector
+6/30/2011 0:00,Marlborough,820,Education Sector,State Sector
+6/30/2011 0:00,Otago,77700,Private Sector,Private Sector
+6/30/2011 0:00,Wellington,165000,Private Sector,Private Sector
+6/30/2010 0:00,Nelson,1650,Health Sector,State Sector
+6/30/2010 0:00,Tasman,420,Local Government,Local Government
+6/30/2010 0:00,Hawkes Bay,610,SoEs,State Sector
+6/30/2010 0:00,Waikato,12900,Education Sector,State Sector
+6/30/2010 0:00,Northland,430,SoEs,State Sector
+6/30/2009 0:00,Canterbury,7400,Local Government,Local Government
+6/30/2009 0:00,Hawkes Bay,1900,Local Government,Local Government
+6/30/2008 0:00,Marlborough,840,Education Sector,State Sector
+6/30/2008 0:00,Taranaki,2700,Education Sector,State Sector
+6/30/2008 0:00,Gisborne,17700,Private Sector,Private Sector
+6/30/2008 0:00,Gisborne,310,SoEs,State Sector
+6/30/2008 0:00,Waikato,3700,Local Government,Local Government
+6/30/2023 0:00,Bay of Plenty,8500,Education Sector,State Sector
+6/30/2023 0:00,Waikato,14200,Education Sector,State Sector
+6/30/2023 0:00,Auckland,733800,Private Sector,Private Sector
+6/30/2023 0:00,Gisborne,18700,Private Sector,Private Sector
+6/30/2022 0:00,Hawkes Bay,5100,Education Sector,State Sector
+6/30/2022 0:00,Taranaki,45700,Private Sector,Private Sector
+6/30/2022 0:00,Gisborne,1600,Education Sector,State Sector
+6/30/2021 0:00,Tasman,170,Health Sector,State Sector
+6/30/2021 0:00,Southland,400,SoEs,State Sector
+6/30/2021 0:00,Otago,1250,SoEs,State Sector
+6/30/2021 0:00,Taranaki,1900,Health Sector,State Sector
+6/30/2021 0:00,Auckland,12100,Local Government,Local Government
+6/30/2020 0:00,Hawkes Bay,2750,Health Sector,State Sector
+6/30/2019 0:00,Canterbury,16700,Education Sector,State Sector
+6/30/2018 0:00,Marlborough,650,Health Sector,State Sector
+6/30/2018 0:00,Gisborne,1500,Education Sector,State Sector
+6/30/2019 0:00,Marlborough,180,SoEs,State Sector
+6/30/2017 0:00,Tasman,140,Health Sector,State Sector
+6/30/2017 0:00,Wellington,8700,Health Sector,State Sector
+6/30/2017 0:00,Hawkes Bay,65900,Private Sector,Private Sector
+6/30/2017 0:00,Hawkes Bay,2000,Local Government,Local Government
+6/30/2017 0:00,Gisborne,560,Local Government,Local Government
+6/30/2017 0:00,Northland,1200,Local Government,Local Government
+6/30/2016 0:00,Nelson,1550,Education Sector,State Sector
+6/30/2016 0:00,Canterbury,239900,Private Sector,Private Sector
+6/30/2016 0:00,West Coast,420,SoEs,State Sector
+6/30/2016 0:00,Manawatu-Wanganui,3850,Health Sector,State Sector
+6/30/2016 0:00,Waikato,2700,SoEs,State Sector
+6/30/2015 0:00,Tasman,18,SoEs,State Sector
+6/30/2015 0:00,Canterbury,10800,Health Sector,State Sector
+6/30/2015 0:00,Wellington,15900,Education Sector,State Sector
+6/30/2015 0:00,Taranaki,310,SoEs,State Sector
+6/30/2015 0:00,Bay of Plenty,3900,Health Sector,State Sector
+6/30/2015 0:00,Auckland,11500,Local Government,Local Government
+6/30/2014 0:00,Hawkes Bay,62500,Private Sector,Private Sector
+6/30/2014 0:00,Waikato,3700,Local Government,Local Government
+6/30/2013 0:00,Marlborough,330,Local Government,Local Government
+6/30/2013 0:00,West Coast,860,Education Sector,State Sector
+6/30/2013 0:00,Wellington,8700,Health Sector,State Sector
+6/30/2013 0:00,Taranaki,2950,Education Sector,State Sector
+6/30/2013 0:00,Waikato,3700,Local Government,Local Government
+6/30/2013 0:00,Waikato,6800,Health Sector,State Sector
+6/30/2013 0:00,Waikato,12700,Education Sector,State Sector
+6/30/2013 0:00,Northland,460,SoEs,State Sector
+6/30/2012 0:00,Area Outside Regions,15,Health Sector,State Sector
+6/30/2012 0:00,Nelson,660,Local Government,Local Government
+6/30/2013 0:00,Tasman,80,Health Sector,State Sector
+6/30/2012 0:00,Nelson,1550,Health Sector,State Sector
+6/30/2012 0:00,Otago,3550,Health Sector,State Sector
+6/30/2012 0:00,Canterbury,5600,SoEs,State Sector
+6/30/2012 0:00,Canterbury,15300,Education Sector,State Sector
+6/30/2012 0:00,Manawatu-Wanganui,3400,Health Sector,State Sector
+6/30/2012 0:00,Gisborne,150,SoEs,State Sector
+6/30/2012 0:00,Bay of Plenty,900,SoEs,State Sector
+6/30/2012 0:00,Auckland,41100,Education Sector,State Sector
+6/30/2011 0:00,Nelson,1400,Health Sector,State Sector
+6/30/2011 0:00,Gisborne,870,Health Sector,State Sector
+6/30/2011 0:00,Bay of Plenty,2450,Local Government,Local Government
+6/30/2011 0:00,Auckland,22100,Health Sector,State Sector
+6/30/2010 0:00,Manawatu-Wanganui,1400,SoEs,State Sector
+6/30/2010 0:00,Taranaki,2850,Education Sector,State Sector
+6/30/2010 0:00,Auckland,14200,SoEs,State Sector
+6/30/2009 0:00,Area Outside Regions,0,SoEs,State Sector
+6/30/2009 0:00,Marlborough,350,Local Government,Local Government
+6/30/2009 0:00,Nelson,19800,Private Sector,Private Sector
+6/30/2009 0:00,Tasman,35,SoEs,State Sector
+6/30/2009 0:00,Wellington,14600,Education Sector,State Sector
+6/30/2009 0:00,Manawatu-Wanganui,1400,SoEs,State Sector
+6/30/2009 0:00,Manawatu-Wanganui,3500,Health Sector,State Sector
+6/30/2009 0:00,Gisborne,840,Health Sector,State Sector
+6/30/2008 0:00,Nelson,560,Local Government,Local Government
+6/30/2008 0:00,Tasman,17300,Private Sector,Private Sector
+6/30/2008 0:00,West Coast,580,SoEs,State Sector
+6/30/2008 0:00,Manawatu-Wanganui,3300,Health Sector,State Sector
+6/30/2008 0:00,Auckland,545900,Private Sector,Private Sector
+6/30/2016 0:00,Waikato,149100,Private Sector,Private Sector
+6/30/2015 0:00,Southland,2550,Education Sector,State Sector
+6/30/2013 0:00,Southland,2650,Education Sector,State Sector
+6/30/2013 0:00,Manawatu-Wanganui,73300,Private Sector,Private Sector
+6/30/2011 0:00,Hawkes Bay,640,SoEs,State Sector
+6/30/2010 0:00,Hawkes Bay,63000,Private Sector,Private Sector
+6/30/2008 0:00,Otago,3300,Local Government,Local Government
+6/30/2008 0:00,Wellington,7700,Health Sector,State Sector
+6/30/2007 0:00,Marlborough,19200,Private Sector,Private Sector
+6/30/2007 0:00,Nelson,1350,Education Sector,State Sector
+6/30/2010 0:00,Area Outside Regions,15,Health Sector,State Sector
+6/30/2010 0:00,Southland,1900,Local Government,Local Government
+6/30/2010 0:00,West Coast,690,SoEs,State Sector
+6/30/2010 0:00,Northland,43500,Private Sector,Private Sector
+6/30/2010 0:00,Northland,2250,Health Sector,State Sector
+6/30/2008 0:00,West Coast,11700,Private Sector,Private Sector
+6/30/2008 0:00,Northland,4050,Education Sector,State Sector
+6/30/2007 0:00,Canterbury,9200,Health Sector,State Sector
+6/30/2007 0:00,Canterbury,14600,Education Sector,State Sector
+6/30/2007 0:00,West Coast,11500,Private Sector,Private Sector
+6/30/2007 0:00,West Coast,780,Education Sector,State Sector
+6/30/2007 0:00,Waikato,140000,Private Sector,Private Sector
+6/30/2007 0:00,Northland,1950,Health Sector,State Sector
+6/30/2006 0:00,Nelson,520,Local Government,Local Government
+6/30/2006 0:00,Southland,2000,Local Government,Local Government
+6/30/2006 0:00,Southland,2250,Education Sector,State Sector
+6/30/2006 0:00,West Coast,930,Health Sector,State Sector
+6/30/2006 0:00,Wellington,4600,Local Government,Local Government
+6/30/2006 0:00,Wellington,8300,SoEs,State Sector
+6/30/2006 0:00,Manawatu-Wanganui,78000,Private Sector,Private Sector
+6/30/2006 0:00,Hawkes Bay,1750,Local Government,Local Government
+6/30/2006 0:00,Gisborne,850,Health Sector,State Sector
+6/30/2006 0:00,Gisborne,1550,Education Sector,State Sector
+6/30/2006 0:00,Northland,980,Local Government,Local Government
+6/30/2006 0:00,Northland,2000,Health Sector,State Sector
+6/30/2005 0:00,Canterbury,5100,SoEs,State Sector
+6/30/2005 0:00,West Coast,900,Health Sector,State Sector
+6/30/2005 0:00,Wellington,4450,Local Government,Local Government
+6/30/2005 0:00,Wellington,14300,Education Sector,State Sector
+6/30/2005 0:00,Hawkes Bay,4250,Education Sector,State Sector
+6/30/2005 0:00,Gisborne,820,Health Sector,State Sector
+6/30/2005 0:00,Bay of Plenty,1150,SoEs,State Sector
+6/30/2005 0:00,Bay of Plenty,6700,Education Sector,State Sector
+6/30/2005 0:00,Waikato,133000,Private Sector,Private Sector
+6/30/2004 0:00,Nelson,410,SoEs,State Sector
+6/30/2004 0:00,Canterbury,199700,Private Sector,Private Sector
+6/30/2004 0:00,Manawatu-Wanganui,74200,Private Sector,Private Sector
+6/30/2004 0:00,Manawatu-Wanganui,8900,Education Sector,State Sector
+6/30/2004 0:00,Taranaki,3000,Education Sector,State Sector
+6/30/2004 0:00,Hawkes Bay,61900,Private Sector,Private Sector
+6/30/2004 0:00,Hawkes Bay,4250,Education Sector,State Sector
+6/30/2004 0:00,Gisborne,760,Health Sector,State Sector
+6/30/2004 0:00,Waikato,5500,Health Sector,State Sector
+6/30/2004 0:00,Auckland,9300,Local Government,Local Government
+6/30/2003 0:00,Marlborough,16400,Private Sector,Private Sector
+6/30/2003 0:00,Southland,2500,Education Sector,State Sector
+6/30/2003 0:00,Taranaki,1300,Health Sector,State Sector
+6/30/2003 0:00,Gisborne,230,SoEs,State Sector
+6/30/2003 0:00,Bay of Plenty,1950,Local Government,Local Government
+6/30/2003 0:00,Waikato,2800,Local Government,Local Government
+6/30/2002 0:00,Area Outside Regions,0,SoEs,State Sector
+6/30/2002 0:00,Nelson,480,Local Government,Local Government
+6/30/2002 0:00,Nelson,450,SoEs,State Sector
+6/30/2002 0:00,Southland,1100,Health Sector,State Sector
+6/30/2004 0:00,Marlborough,280,Local Government,Local Government
+6/30/2002 0:00,Manawatu-Wanganui,1800,Local Government,Local Government
+6/30/2002 0:00,Taranaki,35400,Private Sector,Private Sector
+6/30/2002 0:00,Hawkes Bay,57900,Private Sector,Private Sector
+6/30/2002 0:00,Hawkes Bay,560,SoEs,State Sector
+6/30/2002 0:00,Auckland,449200,Private Sector,Private Sector
+6/30/2001 0:00,Area Outside Regions,210,Private Sector,Private Sector
+6/30/2001 0:00,Area Outside Regions,18,Local Government,Local Government
+6/30/2001 0:00,Marlborough,380,Health Sector,State Sector
+6/30/2001 0:00,Southland,490,SoEs,State Sector
+6/30/2001 0:00,Otago,3250,Health Sector,State Sector
+6/30/2001 0:00,Canterbury,14700,Education Sector,State Sector
+6/30/2001 0:00,Taranaki,1050,Local Government,Local Government
+6/30/2001 0:00,Hawkes Bay,54700,Private Sector,Private Sector
+6/30/2001 0:00,Hawkes Bay,1600,Local Government,Local Government
+6/30/2001 0:00,Hawkes Bay,1950,Health Sector,State Sector
+6/30/2001 0:00,Hawkes Bay,3800,Education Sector,State Sector
+6/30/2001 0:00,Bay of Plenty,3050,Health Sector,State Sector
+6/30/2000 0:00,Southland,1050,Health Sector,State Sector
+6/30/2000 0:00,Otago,8400,Education Sector,State Sector
+6/30/2000 0:00,Canterbury,2850,SoEs,State Sector
+6/30/2000 0:00,Manawatu-Wanganui,8600,Education Sector,State Sector
+6/30/2000 0:00,Taranaki,410,SoEs,State Sector
+6/30/2000 0:00,Taranaki,3150,Education Sector,State Sector
+6/30/2000 0:00,Bay of Plenty,5900,Education Sector,State Sector
+6/30/2000 0:00,Waikato,2550,Local Government,Local Government
+6/30/2003 0:00,Marlborough,211,Public Service,State Sector
+6/30/2006 0:00,Marlborough,251,Public Service,State Sector
+6/30/2013 0:00,Auckland,9353,Public Service,State Sector
+6/30/2016 0:00,Wellington,19807,Public Service,State Sector
+6/30/2013 0:00,Overseas,251,Public Service,State Sector
+6/30/2015 0:00,Overseas,285,Public Service,State Sector
+6/30/2007 0:00,Canterbury,4136,Public Service,State Sector
+6/30/2022 0:00,Manawatu-Wanganui,2292,Public Service,State Sector
+6/30/2019 0:00,Marlborough,140,Public Service,State Sector
+6/30/2007 0:00,Canterbury,7000,Local Government,Local Government
+6/30/2006 0:00,Waikato,5900,Health Sector,State Sector
+6/30/2004 0:00,Wellington,14300,Education Sector,State Sector
+6/30/2003 0:00,Manawatu-Wanganui,3700,Health Sector,State Sector
+6/30/2001 0:00,Auckland,16800,Health Sector,State Sector
+6/30/2001 0:00,Northland,3750,Education Sector,State Sector
+6/30/2001 0:00,Wellington,6400,SoEs,State Sector
+6/30/2020 0:00,Otago,1482,Public Service,State Sector
+6/30/2010 0:00,Nelson,569,Public Service,State Sector
+6/30/2011 0:00,Overseas,314,Public Service,State Sector
+6/30/2017 0:00,Marlborough,169,Public Service,State Sector
+6/30/2006 0:00,Otago,1118,Public Service,State Sector
+6/30/2005 0:00,Bay of Plenty,1286,Public Service,State Sector
+6/30/2003 0:00,Hawkes Bay,936,Public Service,State Sector
+6/30/2023 0:00,West Coast,188,Other Government Entities,State Sector
+6/30/2023 0:00,Hawkes Bay,963,Other Government Entities,State Sector
+6/30/2022 0:00,Bay of Plenty,1652,Other Government Entities,State Sector
+6/30/2022 0:00,Hawkes Bay,900,Other Government Entities,State Sector
+6/30/2021 0:00,Tasman,175,Other Government Entities,State Sector
+6/30/2021 0:00,Taranaki,344,Other Government Entities,State Sector
+6/30/2020 0:00,Canterbury,4836,Other Government Entities,State Sector
+6/30/2020 0:00,Northland,977,Other Government Entities,State Sector
+6/30/2019 0:00,Manawatu-Wanganui,7019,Other Government Entities,State Sector
+6/30/2021 0:00,Gisborne,305,Other Government Entities,State Sector
+6/30/2018 0:00,Wellington,14214,Other Government Entities,State Sector
+6/30/2017 0:00,Taranaki,340,Other Government Entities,State Sector
+6/30/2016 0:00,West Coast,44,Other Government Entities,State Sector
+6/30/2015 0:00,Otago,1246,Other Government Entities,State Sector
+6/30/2015 0:00,Waikato,1953,Other Government Entities,State Sector
+6/30/2014 0:00,Southland,367,Other Government Entities,State Sector
+6/30/2014 0:00,Taranaki,296,Other Government Entities,State Sector
+6/30/2013 0:00,Hawkes Bay,776,Other Government Entities,State Sector
+6/30/2015 0:00,Marlborough,777,Other Government Entities,State Sector
+6/30/2015 0:00,Manawatu-Wanganui,5748,Other Government Entities,State Sector
+6/30/2012 0:00,Otago,1210,Other Government Entities,State Sector
+6/30/2011 0:00,Tasman,213,Other Government Entities,State Sector
+6/30/2011 0:00,Manawatu-Wanganui,5515,Other Government Entities,State Sector
+6/30/2011 0:00,Hawkes Bay,842,Other Government Entities,State Sector
+6/30/2011 0:00,Auckland,13948,Other Government Entities,State Sector
+6/30/2010 0:00,Southland,368,Other Government Entities,State Sector
+6/30/2010 0:00,Otago,757,Other Government Entities,State Sector
+6/30/2010 0:00,Hawkes Bay,713,Other Government Entities,State Sector
+6/30/2008 0:00,Southland,337,Other Government Entities,State Sector
+6/30/2008 0:00,Gisborne,258,Other Government Entities,State Sector
+6/30/2010 0:00,Northland,443,Other Government Entities,State Sector
+6/30/2007 0:00,Taranaki,350,Other Government Entities,State Sector
+6/30/2004 0:00,Area Outside Regions,80,Other Government Entities,State Sector
+6/30/2003 0:00,Tasman,128,Other Government Entities,State Sector
+6/30/2003 0:00,Canterbury,4261,Other Government Entities,State Sector
+6/30/2003 0:00,West Coast,188,Other Government Entities,State Sector
+6/30/2003 0:00,Taranaki,205,Other Government Entities,State Sector
+6/30/2003 0:00,Gisborne,242,Other Government Entities,State Sector
+6/30/2003 0:00,Southland,392,Other Government Entities,State Sector
+6/30/2002 0:00,Taranaki,247,Other Government Entities,State Sector
+6/30/2001 0:00,Southland,397,Other Government Entities,State Sector
+6/30/2001 0:00,Hawkes Bay,695,Other Government Entities,State Sector
+6/30/2000 0:00,Taranaki,235,Other Government Entities,State Sector
+6/30/2000 0:00,Hawkes Bay,767,Other Government Entities,State Sector
+6/30/2015 0:00,Area Outside Regions,35,Other Government Entities,State Sector
+6/30/2014 0:00,Canterbury,4568,Public Service,State Sector
+6/30/2005 0:00,Manawatu-Wanganui,1750,Public Service,State Sector
+6/30/2007 0:00,Hawkes Bay,1126,Public Service,State Sector
+6/30/2009 0:00,Southland,717,Public Service,State Sector
+6/30/2009 0:00,Tasman,41,Public Service,State Sector
+6/30/2007 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2018 0:00,Taranaki,394,Public Service,State Sector
+6/30/2010 0:00,Auckland,9429,Public Service,State Sector
+6/30/2011 0:00,Otago,1388,Public Service,State Sector
+6/30/2016 0:00,Manawatu-Wanganui,2018,Public Service,State Sector
+6/30/2003 0:00,Northland,776,Public Service,State Sector
+6/30/2007 0:00,Bay of Plenty,1468,Public Service,State Sector
+6/30/2009 0:00,Otago,1445,Public Service,State Sector
+6/30/2020 0:00,Nelson,431,Public Service,State Sector
+6/30/2002 0:00,Canterbury,3455,Public Service,State Sector
+6/30/2008 0:00,Canterbury,4324,Public Service,State Sector
+6/30/2008 0:00,Waikato,3082,Public Service,State Sector
+6/30/2009 0:00,West Coast,292,Public Service,State Sector
+6/30/2022 0:00,Southland,700,Public Service,State Sector
+6/30/2022 0:00,Northland,1615,Public Service,State Sector
+6/30/2011 0:00,Northland,1239,Public Service,State Sector
+6/30/2011 0:00,Tasman,27,Public Service,State Sector
+6/30/2015 0:00,Tasman,39,Public Service,State Sector
+6/30/2004 0:00,Hawkes Bay,1141,Public Service,State Sector
+6/30/2005 0:00,Gisborne,250,Public Service,State Sector
+6/30/2007 0:00,Northland,1332,Public Service,State Sector
+6/30/2023 0:00,Manawatu-Wanganui,2314,Public Service,State Sector
+6/30/2022 0:00,Nelson,463,Public Service,State Sector
+6/30/2005 0:00,Northland,1076,Public Service,State Sector
+6/30/2001 0:00,Auckland,6049,Public Service,State Sector
+6/30/2010 0:00,Waikato,3798,Public Service,State Sector
+6/30/2010 0:00,Unknown,36,Public Service,State Sector
+6/30/2016 0:00,Bay of Plenty,1691,Public Service,State Sector
+6/30/2006 0:00,West Coast,253,Public Service,State Sector
+6/30/2008 0:00,Taranaki,531,Public Service,State Sector
+6/30/2017 0:00,Taranaki,390,Public Service,State Sector
+6/30/2023 0:00,Tasman,157,Public Service,State Sector
+6/30/2017 0:00,Wellington,20357,Public Service,State Sector
+6/30/2018 0:00,Southland,608,Public Service,State Sector
+6/30/2023 0:00,Nelson,970,Local Government,Local Government
+6/30/2023 0:00,Canterbury,13900,Health Sector,State Sector
+6/30/2023 0:00,Taranaki,3400,Education Sector,State Sector
+6/30/2023 0:00,Gisborne,1650,Education Sector,State Sector
+6/30/2022 0:00,Otago,4100,Local Government,Local Government
+6/30/2023 0:00,Manawatu-Wanganui,9100,Education Sector,State Sector
+6/30/2022 0:00,Area Outside Regions,350,Private Sector,Private Sector
+6/30/2022 0:00,Marlborough,490,Local Government,Local Government
+6/30/2022 0:00,Hawkes Bay,2150,Local Government,Local Government
+6/30/2021 0:00,Area Outside Regions,270,Private Sector,Private Sector
+6/30/2023 0:00,Taranaki,2150,Health Sector,State Sector
+6/30/2022 0:00,Canterbury,258900,Private Sector,Private Sector
+6/30/2022 0:00,West Coast,11000,Private Sector,Private Sector
+6/30/2022 0:00,Hawkes Bay,3250,Health Sector,State Sector
+6/30/2022 0:00,Bay of Plenty,3500,Local Government,Local Government
+6/30/2022 0:00,Waikato,9500,Health Sector,State Sector
+6/30/2022 0:00,Wellington,18400,Education Sector,State Sector
+6/30/2022 0:00,Taranaki,2100,Health Sector,State Sector
+6/30/2022 0:00,Northland,5000,Education Sector,State Sector
+6/30/2021 0:00,Marlborough,160,SoEs,State Sector
+6/30/2021 0:00,Marlborough,650,Health Sector,State Sector
+6/30/2021 0:00,Wellington,184400,Private Sector,Private Sector
+6/30/2021 0:00,Waikato,2800,SoEs,State Sector
+6/30/2020 0:00,Area Outside Regions,25,Local Government,Local Government
+6/30/2020 0:00,Otago,9900,Education Sector,State Sector
+6/30/2020 0:00,Canterbury,9400,Local Government,Local Government
+6/30/2020 0:00,West Coast,640,Local Government,Local Government
+6/30/2020 0:00,Taranaki,1450,Local Government,Local Government
+6/30/2019 0:00,Area Outside Regions,12,Health Sector,State Sector
+6/30/2019 0:00,Nelson,1600,Education Sector,State Sector
+6/30/2019 0:00,Tasman,21200,Private Sector,Private Sector
+6/30/2019 0:00,Southland,43000,Private Sector,Private Sector
+6/30/2019 0:00,Southland,1350,Health Sector,State Sector
+6/30/2019 0:00,Otago,1300,SoEs,State Sector
+6/30/2019 0:00,Northland,3300,Health Sector,State Sector
+6/30/2018 0:00,Marlborough,450,Local Government,Local Government
+6/30/2018 0:00,Auckland,26500,Health Sector,State Sector
+6/30/2017 0:00,Marlborough,410,Health Sector,State Sector
+6/30/2020 0:00,Nelson,1700,Health Sector,State Sector
+6/30/2020 0:00,Gisborne,1100,Health Sector,State Sector
+6/30/2020 0:00,Auckland,44600,Education Sector,State Sector
+6/30/2019 0:00,Tasman,150,Health Sector,State Sector
+6/30/2019 0:00,Gisborne,95,SoEs,State Sector
+6/30/2018 0:00,Manawatu-Wanganui,1850,Local Government,Local Government
+6/30/2018 0:00,Hawkes Bay,2100,Local Government,Local Government
+6/30/2017 0:00,Otago,3500,Local Government,Local Government
+6/30/2017 0:00,West Coast,790,Health Sector,State Sector
+6/30/2017 0:00,Taranaki,1650,Health Sector,State Sector
+6/30/2017 0:00,Gisborne,17300,Private Sector,Private Sector
+6/30/2017 0:00,Gisborne,100,SoEs,State Sector
+6/30/2017 0:00,Auckland,42600,Education Sector,State Sector
+6/30/2016 0:00,Tasman,140,Health Sector,State Sector
+6/30/2016 0:00,Otago,3400,Health Sector,State Sector
+6/30/2016 0:00,Wellington,171300,Private Sector,Private Sector
+6/30/2016 0:00,Gisborne,17400,Private Sector,Private Sector
+6/30/2016 0:00,Auckland,610800,Private Sector,Private Sector
+6/30/2016 0:00,Auckland,25500,Health Sector,State Sector
+6/30/2015 0:00,Tasman,18400,Private Sector,Private Sector
+6/30/2014 0:00,Area Outside Regions,12,Education Sector,State Sector
+6/30/2014 0:00,Nelson,670,Local Government,Local Government
+6/30/2014 0:00,Tasman,25,SoEs,State Sector
+6/30/2014 0:00,Wellington,15400,Education Sector,State Sector
+6/30/2014 0:00,Taranaki,1350,Local Government,Local Government
+6/30/2014 0:00,Waikato,2750,SoEs,State Sector
+6/30/2014 0:00,Auckland,562200,Private Sector,Private Sector
+6/30/2013 0:00,Nelson,390,SoEs,State Sector
+6/30/2013 0:00,Southland,1950,Local Government,Local Government
+6/30/2013 0:00,Wellington,10200,SoEs,State Sector
+6/30/2013 0:00,Hawkes Bay,610,SoEs,State Sector
+6/30/2013 0:00,Auckland,10800,Local Government,Local Government
+6/30/2013 0:00,Northland,2350,Health Sector,State Sector
+6/30/2014 0:00,Otago,81000,Private Sector,Private Sector
+6/30/2014 0:00,Taranaki,2950,Education Sector,State Sector
+6/30/2014 0:00,Gisborne,880,Health Sector,State Sector
+6/30/2012 0:00,Southland,1000,Health Sector,State Sector
+6/30/2012 0:00,Canterbury,209500,Private Sector,Private Sector
+6/30/2012 0:00,West Coast,550,Local Government,Local Government
+6/30/2012 0:00,Hawkes Bay,4650,Education Sector,State Sector
+6/30/2011 0:00,Nelson,400,SoEs,State Sector
+6/30/2011 0:00,Canterbury,5100,SoEs,State Sector
+6/30/2010 0:00,Area Outside Regions,25,Local Government,Local Government
+6/30/2010 0:00,Area Outside Regions,0,SoEs,State Sector
+6/30/2010 0:00,Marlborough,640,SoEs,State Sector
+6/30/2010 0:00,Wellington,4850,Local Government,Local Government
+6/30/2010 0:00,Manawatu-Wanganui,8600,Education Sector,State Sector
+6/30/2009 0:00,Canterbury,15300,Education Sector,State Sector
+6/30/2009 0:00,Manawatu-Wanganui,8400,Education Sector,State Sector
+6/30/2008 0:00,Marlborough,550,SoEs,State Sector
+6/30/2008 0:00,Southland,1150,Health Sector,State Sector
+6/30/2008 0:00,Hawkes Bay,1850,Local Government,Local Government
+6/30/2008 0:00,Auckland,38300,Education Sector,State Sector
+6/30/2007 0:00,Area Outside Regions,240,Private Sector,Private Sector
+6/30/2007 0:00,Manawatu-Wanganui,8700,Education Sector,State Sector
+6/30/2006 0:00,Nelson,1200,Education Sector,State Sector
+6/30/2006 0:00,Taranaki,1450,Health Sector,State Sector
+6/30/2022 0:00,Wellington,10600,Health Sector,State Sector
+6/30/2021 0:00,Taranaki,250,SoEs,State Sector
+6/30/2021 0:00,Bay of Plenty,3350,Local Government,Local Government
+6/30/2021 0:00,Auckland,676100,Private Sector,Private Sector
+6/30/2020 0:00,Waikato,168900,Private Sector,Private Sector
+6/30/2019 0:00,Southland,1900,Local Government,Local Government
+6/30/2019 0:00,Canterbury,9300,Local Government,Local Government
+6/30/2019 0:00,Northland,4750,Education Sector,State Sector
+6/30/2018 0:00,Nelson,810,Local Government,Local Government
+6/30/2018 0:00,Wellington,8900,SoEs,State Sector
+6/30/2018 0:00,Auckland,44600,Education Sector,State Sector
+6/30/2017 0:00,Area Outside Regions,12,Health Sector,State Sector
+6/30/2019 0:00,West Coast,250,SoEs,State Sector
+6/30/2018 0:00,Nelson,1500,Health Sector,State Sector
+6/30/2018 0:00,Gisborne,17900,Private Sector,Private Sector
+6/30/2017 0:00,Canterbury,243000,Private Sector,Private Sector
+6/30/2017 0:00,Canterbury,5100,SoEs,State Sector
+6/30/2017 0:00,West Coast,450,SoEs,State Sector
+6/30/2017 0:00,West Coast,860,Education Sector,State Sector
+6/30/2017 0:00,Manawatu-Wanganui,8400,Education Sector,State Sector
+6/30/2017 0:00,Hawkes Bay,2400,Health Sector,State Sector
+6/30/2017 0:00,Waikato,12900,Education Sector,State Sector
+6/30/2017 0:00,Northland,4450,Education Sector,State Sector
+6/30/2016 0:00,Area Outside Regions,25,Local Government,Local Government
+6/30/2016 0:00,Canterbury,5300,SoEs,State Sector
+6/30/2016 0:00,West Coast,850,Education Sector,State Sector
+6/30/2015 0:00,Nelson,660,Local Government,Local Government
+6/30/2015 0:00,Hawkes Bay,2250,Health Sector,State Sector
+6/30/2015 0:00,Northland,460,SoEs,State Sector
+6/30/2014 0:00,Otago,3350,Local Government,Local Government
+6/30/2014 0:00,West Coast,460,SoEs,State Sector
+6/30/2014 0:00,Wellington,167900,Private Sector,Private Sector
+6/30/2014 0:00,Bay of Plenty,7100,Education Sector,State Sector
+6/30/2013 0:00,Area Outside Regions,35,Local Government,Local Government
+6/30/2013 0:00,Nelson,19700,Private Sector,Private Sector
+6/30/2013 0:00,Nelson,1500,Education Sector,State Sector
+6/30/2013 0:00,Tasman,1200,Education Sector,State Sector
+6/30/2013 0:00,Otago,3600,Health Sector,State Sector
+6/30/2013 0:00,West Coast,950,Health Sector,State Sector
+6/30/2012 0:00,Tasman,140,Health Sector,State Sector
+6/30/2012 0:00,Otago,9500,Education Sector,State Sector
+6/30/2012 0:00,Canterbury,7500,Local Government,Local Government
+6/30/2012 0:00,Canterbury,10000,Health Sector,State Sector
+6/30/2012 0:00,Auckland,14200,SoEs,State Sector
+6/30/2012 0:00,Auckland,22700,Health Sector,State Sector
+6/30/2011 0:00,Tasman,420,Local Government,Local Government
+6/30/2011 0:00,Wellington,10200,SoEs,State Sector
+6/30/2011 0:00,Gisborne,1350,Education Sector,State Sector
+6/30/2010 0:00,Marlborough,370,Local Government,Local Government
+6/30/2010 0:00,Tasman,16400,Private Sector,Private Sector
+6/30/2010 0:00,Canterbury,5000,SoEs,State Sector
+6/30/2010 0:00,Wellington,10600,SoEs,State Sector
+6/30/2010 0:00,Gisborne,450,Local Government,Local Government
+6/30/2010 0:00,Gisborne,840,Health Sector,State Sector
+6/30/2009 0:00,Otago,80800,Private Sector,Private Sector
+6/30/2009 0:00,West Coast,690,SoEs,State Sector
+6/30/2009 0:00,West Coast,1000,Health Sector,State Sector
+6/30/2009 0:00,Wellington,10400,SoEs,State Sector
+6/30/2009 0:00,Hawkes Bay,710,SoEs,State Sector
+6/30/2009 0:00,Waikato,12000,Education Sector,State Sector
+6/30/2008 0:00,Otago,82800,Private Sector,Private Sector
+6/30/2008 0:00,Taranaki,42200,Private Sector,Private Sector
+6/30/2008 0:00,Gisborne,1400,Education Sector,State Sector
+6/30/2007 0:00,Tasman,210,Health Sector,State Sector
+6/30/2007 0:00,Southland,480,SoEs,State Sector
+6/30/2011 0:00,Bay of Plenty,950,SoEs,State Sector
+6/30/2011 0:00,Northland,610,SoEs,State Sector
+6/30/2010 0:00,Hawkes Bay,2200,Health Sector,State Sector
+6/30/2007 0:00,Marlborough,780,Education Sector,State Sector
+6/30/2007 0:00,Wellington,4500,Local Government,Local Government
+6/30/2006 0:00,Marlborough,530,SoEs,State Sector
+6/30/2006 0:00,Marlborough,760,Education Sector,State Sector
+6/30/2006 0:00,Tasman,420,Local Government,Local Government
+6/30/2006 0:00,West Coast,420,Local Government,Local Government
+6/30/2020 0:00,Wellington,186900,Private Sector,Private Sector
+6/30/2018 0:00,Hawkes Bay,2500,Health Sector,State Sector
+6/30/2014 0:00,Manawatu-Wanganui,3500,Health Sector,State Sector
+6/30/2010 0:00,Wellington,166800,Private Sector,Private Sector
+6/30/2008 0:00,Otago,1100,SoEs,State Sector
+6/30/2007 0:00,Taranaki,40800,Private Sector,Private Sector
+6/30/2007 0:00,Taranaki,1450,Health Sector,State Sector
+6/30/2006 0:00,Nelson,1450,Health Sector,State Sector
+6/30/2006 0:00,Hawkes Bay,63900,Private Sector,Private Sector
+6/30/2006 0:00,Hawkes Bay,580,SoEs,State Sector
+6/30/2006 0:00,Hawkes Bay,4250,Education Sector,State Sector
+6/30/2006 0:00,Gisborne,360,Local Government,Local Government
+6/30/2006 0:00,Gisborne,320,SoEs,State Sector
+6/30/2006 0:00,Waikato,2400,SoEs,State Sector
+6/30/2006 0:00,Waikato,11700,Education Sector,State Sector
+6/30/2006 0:00,Auckland,19500,Health Sector,State Sector
+6/30/2006 0:00,Northland,420,SoEs,State Sector
+6/30/2005 0:00,Tasman,400,Local Government,Local Government
+6/30/2005 0:00,Tasman,200,Health Sector,State Sector
+6/30/2005 0:00,Otago,3350,Health Sector,State Sector
+6/30/2005 0:00,Canterbury,6700,Local Government,Local Government
+6/30/2005 0:00,Canterbury,15500,Education Sector,State Sector
+6/30/2005 0:00,Taranaki,38900,Private Sector,Private Sector
+6/30/2005 0:00,Northland,400,SoEs,State Sector
+6/30/2004 0:00,Area Outside Regions,210,Private Sector,Private Sector
+6/30/2004 0:00,Marlborough,510,SoEs,State Sector
+6/30/2004 0:00,Marlborough,490,Health Sector,State Sector
+6/30/2004 0:00,Nelson,510,Local Government,Local Government
+6/30/2004 0:00,Taranaki,1300,Health Sector,State Sector
+6/30/2004 0:00,Gisborne,17100,Private Sector,Private Sector
+6/30/2004 0:00,Bay of Plenty,2000,Local Government,Local Government
+6/30/2004 0:00,Bay of Plenty,1300,SoEs,State Sector
+6/30/2004 0:00,Waikato,127700,Private Sector,Private Sector
+6/30/2004 0:00,Waikato,3000,Local Government,Local Government
+6/30/2004 0:00,Auckland,17800,Health Sector,State Sector
+6/30/2004 0:00,Auckland,35200,Education Sector,State Sector
+6/30/2004 0:00,Northland,41900,Private Sector,Private Sector
+6/30/2003 0:00,Nelson,400,SoEs,State Sector
+6/30/2003 0:00,Southland,1800,Local Government,Local Government
+6/30/2003 0:00,Hawkes Bay,1600,Local Government,Local Government
+6/30/2003 0:00,Bay of Plenty,3300,Health Sector,State Sector
+6/30/2003 0:00,Waikato,121800,Private Sector,Private Sector
+6/30/2002 0:00,Marlborough,510,SoEs,State Sector
+6/30/2002 0:00,Otago,68400,Private Sector,Private Sector
+6/30/2002 0:00,Otago,8300,Education Sector,State Sector
+6/30/2005 0:00,West Coast,11000,Private Sector,Private Sector
+6/30/2005 0:00,Auckland,35700,Education Sector,State Sector
+6/30/2004 0:00,Tasman,360,Local Government,Local Government
+6/30/2003 0:00,Waikato,5400,Health Sector,State Sector
+6/30/2002 0:00,Nelson,17700,Private Sector,Private Sector
+6/30/2002 0:00,Tasman,1000,Education Sector,State Sector
+6/30/2002 0:00,Canterbury,8500,Health Sector,State Sector
+6/30/2002 0:00,West Coast,820,Education Sector,State Sector
+6/30/2002 0:00,Taranaki,2850,Education Sector,State Sector
+6/30/2002 0:00,Gisborne,380,Local Government,Local Government
+6/30/2002 0:00,Northland,3700,Education Sector,State Sector
+6/30/2001 0:00,Area Outside Regions,25,Education Sector,State Sector
+6/30/2001 0:00,Marlborough,130,SoEs,State Sector
+6/30/2001 0:00,Tasman,20,SoEs,State Sector
+6/30/2001 0:00,Southland,2650,Education Sector,State Sector
+6/30/2001 0:00,West Coast,910,Health Sector,State Sector
+6/30/2001 0:00,Wellington,4100,Local Government,Local Government
+6/30/2001 0:00,Manawatu-Wanganui,1950,Local Government,Local Government
+6/30/2001 0:00,Taranaki,1200,Health Sector,State Sector
+6/30/2001 0:00,Gisborne,680,Health Sector,State Sector
+6/30/2001 0:00,Northland,35800,Private Sector,Private Sector
+6/30/2000 0:00,Marlborough,13900,Private Sector,Private Sector
+6/30/2000 0:00,Nelson,1300,Health Sector,State Sector
+6/30/2000 0:00,Canterbury,174100,Private Sector,Private Sector
+6/30/2000 0:00,Canterbury,8200,Health Sector,State Sector
+6/30/2000 0:00,Taranaki,1050,Local Government,Local Government
+6/30/2000 0:00,Waikato,1950,SoEs,State Sector
+6/30/2000 0:00,Auckland,446000,Private Sector,Private Sector
+6/30/2000 0:00,Northland,640,SoEs,State Sector
+6/30/2000 0:00,Bay of Plenty,877,Public Service,State Sector
+6/30/2003 0:00,Gisborne,248,Public Service,State Sector
+6/30/2006 0:00,Auckland,8539,Public Service,State Sector
+6/30/2011 0:00,Canterbury,4491,Public Service,State Sector
+6/30/2018 0:00,Overseas,326,Public Service,State Sector
+6/30/2004 0:00,Manawatu-Wanganui,1700,Local Government,Local Government
+6/30/2002 0:00,Nelson,1400,Education Sector,State Sector
+6/30/2010 0:00,Gisborne,267,Public Service,State Sector
+6/30/2012 0:00,Southland,701,Public Service,State Sector
+6/30/2013 0:00,West Coast,235,Public Service,State Sector
+6/30/2004 0:00,Canterbury,3676,Public Service,State Sector
+6/30/2008 0:00,Unknown,23,Public Service,State Sector
+6/30/2018 0:00,Wellington,21786,Public Service,State Sector
+6/30/2001 0:00,Southland,493,Public Service,State Sector
+6/30/2007 0:00,Southland,824,Public Service,State Sector
+6/30/2022 0:00,Bay of Plenty,1848,Public Service,State Sector
+6/30/2012 0:00,Hawkes Bay,1073,Public Service,State Sector
+6/30/2013 0:00,Manawatu-Wanganui,1774,Public Service,State Sector
+6/30/2002 0:00,Otago,958,Public Service,State Sector
+6/30/2008 0:00,West Coast,269,Public Service,State Sector
+6/30/2007 0:00,Nelson,287,Public Service,State Sector
+6/30/2022 0:00,Waikato,2561,Other Government Entities,State Sector
+6/30/2022 0:00,Southland,300,Other Government Entities,State Sector
+6/30/2021 0:00,Manawatu-Wanganui,6775,Other Government Entities,State Sector
+6/30/2020 0:00,Southland,349,Other Government Entities,State Sector
+6/30/2020 0:00,Manawatu-Wanganui,7108,Other Government Entities,State Sector
+6/30/2019 0:00,Wellington,14138,Other Government Entities,State Sector
+6/30/2019 0:00,Hawkes Bay,864,Other Government Entities,State Sector
+6/30/2018 0:00,Waikato,2238,Other Government Entities,State Sector
+6/30/2017 0:00,West Coast,94,Other Government Entities,State Sector
+6/30/2016 0:00,Taranaki,352,Other Government Entities,State Sector
+6/30/2015 0:00,Nelson,133,Other Government Entities,State Sector
+6/30/2015 0:00,West Coast,172,Other Government Entities,State Sector
+6/30/2014 0:00,Waikato,1965,Other Government Entities,State Sector
+6/30/2013 0:00,Tasman,177,Other Government Entities,State Sector
+6/30/2013 0:00,Manawatu-Wanganui,5126,Other Government Entities,State Sector
+6/30/2016 0:00,Auckland,12594,Other Government Entities,State Sector
+6/30/2012 0:00,Auckland,13816,Other Government Entities,State Sector
+6/30/2011 0:00,Southland,343,Other Government Entities,State Sector
+6/30/2011 0:00,Taranaki,330,Other Government Entities,State Sector
+6/30/2010 0:00,Canterbury,5321,Other Government Entities,State Sector
+6/30/2009 0:00,Marlborough,397,Other Government Entities,State Sector
+6/30/2009 0:00,Canterbury,4818,Other Government Entities,State Sector
+6/30/2009 0:00,West Coast,168,Other Government Entities,State Sector
+6/30/2009 0:00,Bay of Plenty,1297,Other Government Entities,State Sector
+6/30/2009 0:00,Waikato,2302,Other Government Entities,State Sector
+6/30/2008 0:00,Tasman,130,Other Government Entities,State Sector
+6/30/2007 0:00,Tasman,76,Other Government Entities,State Sector
+6/30/2010 0:00,Waikato,2002,Other Government Entities,State Sector
+6/30/2009 0:00,Auckland,12326,Other Government Entities,State Sector
+6/30/2008 0:00,Otago,760,Other Government Entities,State Sector
+6/30/2007 0:00,Marlborough,717,Other Government Entities,State Sector
+6/30/2007 0:00,Auckland,10699,Other Government Entities,State Sector
+6/30/2006 0:00,Area Outside Regions,25,Other Government Entities,State Sector
+6/30/2006 0:00,West Coast,147,Other Government Entities,State Sector
+6/30/2005 0:00,Southland,193,Other Government Entities,State Sector
+6/30/2004 0:00,Canterbury,4224,Other Government Entities,State Sector
+6/30/2003 0:00,Hawkes Bay,764,Other Government Entities,State Sector
+6/30/2002 0:00,Area Outside Regions,75,Other Government Entities,State Sector
+6/30/2002 0:00,Southland,361,Other Government Entities,State Sector
+6/30/2001 0:00,Marlborough,657,Other Government Entities,State Sector
+6/30/2000 0:00,Nelson,216,Other Government Entities,State Sector
+6/30/2000 0:00,Southland,345,Other Government Entities,State Sector
+6/30/2000 0:00,Wellington,10094,Other Government Entities,State Sector
+6/30/2004 0:00,Marlborough,284,Public Service,State Sector
+6/30/2023 0:00,Gisborne,299,Public Service,State Sector
+6/30/2013 0:00,Waikato,3794,Public Service,State Sector
+6/30/2013 0:00,Gisborne,262,Public Service,State Sector
+6/30/2001 0:00,Marlborough,133,Public Service,State Sector
+6/30/2002 0:00,Auckland,6455,Public Service,State Sector
+6/30/2005 0:00,Marlborough,295,Public Service,State Sector
+6/30/2004 0:00,Overseas,238,Public Service,State Sector
+6/30/2023 0:00,Marlborough,206,Public Service,State Sector
+6/30/2004 0:00,Otago,1220,Public Service,State Sector
+6/30/2004 0:00,Bay of Plenty,1319,Public Service,State Sector
+6/30/2023 0:00,Overseas,310,Public Service,State Sector
+6/30/2023 0:00,Taranaki,500,Public Service,State Sector
+6/30/2004 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2023 0:00,Canterbury,6410,Public Service,State Sector
+6/30/2004 0:00,Auckland,7558,Public Service,State Sector
+6/30/2010 0:00,West Coast,288,Public Service,State Sector
+6/30/2008 0:00,Nelson,340,Public Service,State Sector
+6/30/2009 0:00,Wellington,19112,Public Service,State Sector
+6/30/2021 0:00,Tasman,125,Public Service,State Sector
+6/30/2016 0:00,Southland,584,Public Service,State Sector
+6/30/2015 0:00,West Coast,208,Public Service,State Sector
+6/30/2018 0:00,Nelson,369,Public Service,State Sector
+6/30/2019 0:00,Otago,1401,Public Service,State Sector
+6/30/2019 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2020 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2000 0:00,Tasman,84,Public Service,State Sector
+6/30/2005 0:00,Taranaki,532,Public Service,State Sector
+6/30/2008 0:00,Overseas,277,Public Service,State Sector
+6/30/2018 0:00,Manawatu-Wanganui,2157,Public Service,State Sector
+6/30/2000 0:00,Southland,515,Public Service,State Sector
+6/30/2000 0:00,Overseas,213,Public Service,State Sector
+6/30/2020 0:00,West Coast,328,Public Service,State Sector
+6/30/2000 0:00,Wellington,11606,Public Service,State Sector
+6/30/2002 0:00,West Coast,229,Public Service,State Sector
+6/30/2006 0:00,Bay of Plenty,1282,Public Service,State Sector
+6/30/2021 0:00,Hawkes Bay,1473,Public Service,State Sector
+6/30/2016 0:00,Auckland,9606,Public Service,State Sector
+6/30/2017 0:00,Bay of Plenty,1588,Public Service,State Sector
+6/30/2023 0:00,Nelson,477,Public Service,State Sector
+6/30/2023 0:00,Hawkes Bay,1487,Public Service,State Sector
+6/30/2020 0:00,Canterbury,5364,Public Service,State Sector
+6/30/2012 0:00,Otago,1340,Public Service,State Sector
+6/30/2013 0:00,Wellington,19110,Public Service,State Sector
+6/30/2002 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2023 0:00,Nelson,23900,Private Sector,Private Sector
+6/30/2023 0:00,Otago,1600,SoEs,State Sector
+6/30/2023 0:00,Otago,4400,Health Sector,State Sector
+6/30/2023 0:00,West Coast,11800,Private Sector,Private Sector
+6/30/2023 0:00,Taranaki,46800,Private Sector,Private Sector
+6/30/2023 0:00,Bay of Plenty,5600,Health Sector,State Sector
+6/30/2022 0:00,Area Outside Regions,25,Local Government,Local Government
+6/30/2022 0:00,Marlborough,1000,Education Sector,State Sector
+6/30/2022 0:00,Southland,1650,Health Sector,State Sector
+6/30/2023 0:00,Gisborne,630,Local Government,Local Government
+6/30/2022 0:00,Manawatu-Wanganui,4650,Health Sector,State Sector
+6/30/2022 0:00,Bay of Plenty,121900,Private Sector,Private Sector
+6/30/2022 0:00,Waikato,4600,Local Government,Local Government
+6/30/2022 0:00,Auckland,13100,SoEs,State Sector
+6/30/2023 0:00,Canterbury,4750,SoEs,State Sector
+6/30/2023 0:00,Bay of Plenty,1650,SoEs,State Sector
+6/30/2022 0:00,Otago,4050,Health Sector,State Sector
+6/30/2022 0:00,Waikato,176700,Private Sector,Private Sector
+6/30/2021 0:00,Marlborough,20700,Private Sector,Private Sector
+6/30/2021 0:00,Tasman,20700,Private Sector,Private Sector
+6/30/2021 0:00,Otago,94100,Private Sector,Private Sector
+6/30/2021 0:00,Manawatu-Wanganui,82800,Private Sector,Private Sector
+6/30/2021 0:00,Manawatu-Wanganui,9100,Education Sector,State Sector
+6/30/2021 0:00,Bay of Plenty,4850,Health Sector,State Sector
+6/30/2021 0:00,Northland,5100,Education Sector,State Sector
+6/30/2020 0:00,Area Outside Regions,310,Private Sector,Private Sector
+6/30/2020 0:00,Nelson,460,SoEs,State Sector
+6/30/2020 0:00,Otago,1350,SoEs,State Sector
+6/30/2020 0:00,West Coast,11700,Private Sector,Private Sector
+6/30/2020 0:00,Taranaki,45500,Private Sector,Private Sector
+6/30/2020 0:00,Auckland,14300,Local Government,Local Government
+6/30/2020 0:00,Auckland,14500,SoEs,State Sector
+6/30/2020 0:00,Northland,420,SoEs,State Sector
+6/30/2019 0:00,Manawatu-Wanganui,1100,SoEs,State Sector
+6/30/2019 0:00,Taranaki,44700,Private Sector,Private Sector
+6/30/2019 0:00,Hawkes Bay,69500,Private Sector,Private Sector
+6/30/2018 0:00,Tasman,580,Local Government,Local Government
+6/30/2018 0:00,Tasman,12,SoEs,State Sector
+6/30/2018 0:00,Canterbury,251600,Private Sector,Private Sector
+6/30/2018 0:00,Taranaki,44200,Private Sector,Private Sector
+6/30/2018 0:00,Hawkes Bay,4750,Education Sector,State Sector
+6/30/2018 0:00,Northland,4650,Education Sector,State Sector
+6/30/2017 0:00,Area Outside Regions,15,Education Sector,State Sector
+6/30/2020 0:00,Hawkes Bay,4900,Education Sector,State Sector
+6/30/2020 0:00,Gisborne,18500,Private Sector,Private Sector
+6/30/2019 0:00,Waikato,8500,Health Sector,State Sector
+6/30/2019 0:00,Northland,50700,Private Sector,Private Sector
+6/30/2018 0:00,Area Outside Regions,12,Health Sector,State Sector
+6/30/2018 0:00,Otago,9400,Education Sector,State Sector
+6/30/2017 0:00,Marlborough,160,SoEs,State Sector
+6/30/2017 0:00,Nelson,21100,Private Sector,Private Sector
+6/30/2017 0:00,Tasman,550,Local Government,Local Government
+6/30/2017 0:00,Manawatu-Wanganui,3900,Health Sector,State Sector
+6/30/2017 0:00,Hawkes Bay,4550,Education Sector,State Sector
+6/30/2017 0:00,Bay of Plenty,106300,Private Sector,Private Sector
+6/30/2017 0:00,Auckland,11500,Local Government,Local Government
+6/30/2017 0:00,Auckland,13800,SoEs,State Sector
+6/30/2016 0:00,Nelson,1400,Health Sector,State Sector
+6/30/2016 0:00,Southland,2450,Education Sector,State Sector
+6/30/2016 0:00,Wellington,16200,Education Sector,State Sector
+6/30/2016 0:00,Waikato,3650,Local Government,Local Government
+6/30/2015 0:00,Marlborough,510,Health Sector,State Sector
+6/30/2015 0:00,Nelson,1600,Health Sector,State Sector
+6/30/2015 0:00,Canterbury,15800,Education Sector,State Sector
+6/30/2015 0:00,Wellington,9900,SoEs,State Sector
+6/30/2014 0:00,Area Outside Regions,250,Private Sector,Private Sector
+6/30/2014 0:00,Area Outside Regions,15,Health Sector,State Sector
+6/30/2014 0:00,Tasman,470,Local Government,Local Government
+6/30/2014 0:00,Otago,9600,Education Sector,State Sector
+6/30/2014 0:00,West Coast,12100,Private Sector,Private Sector
+6/30/2013 0:00,Tasman,30,SoEs,State Sector
+6/30/2013 0:00,Northland,42700,Private Sector,Private Sector
+6/30/2013 0:00,Hawkes Bay,1850,Local Government,Local Government
+6/30/2012 0:00,Southland,40800,Private Sector,Private Sector
+6/30/2012 0:00,Manawatu-Wanganui,73300,Private Sector,Private Sector
+6/30/2012 0:00,Hawkes Bay,1900,Local Government,Local Government
+6/30/2012 0:00,Gisborne,1350,Education Sector,State Sector
+6/30/2011 0:00,Wellington,15500,Education Sector,State Sector
+6/30/2011 0:00,Northland,4200,Education Sector,State Sector
+6/30/2010 0:00,Bay of Plenty,3850,Health Sector,State Sector
+6/30/2010 0:00,Auckland,509600,Private Sector,Private Sector
+6/30/2010 0:00,Auckland,11100,Local Government,Local Government
+6/30/2009 0:00,Southland,1100,Health Sector,State Sector
+6/30/2009 0:00,Bay of Plenty,6800,Education Sector,State Sector
+6/30/2008 0:00,Area Outside Regions,12,Health Sector,State Sector
+6/30/2008 0:00,Wellington,177700,Private Sector,Private Sector
+6/30/2008 0:00,Hawkes Bay,4550,Education Sector,State Sector
+6/30/2008 0:00,Bay of Plenty,2200,Local Government,Local Government
+6/30/2008 0:00,Bay of Plenty,7100,Education Sector,State Sector
+6/30/2008 0:00,Waikato,12500,Education Sector,State Sector
+6/30/2008 0:00,Gisborne,800,Health Sector,State Sector
+6/30/2007 0:00,Otago,1000,SoEs,State Sector
+6/30/2007 0:00,Gisborne,300,SoEs,State Sector
+6/30/2007 0:00,Bay of Plenty,3450,Health Sector,State Sector
+6/30/2006 0:00,Nelson,460,SoEs,State Sector
+6/30/2006 0:00,Otago,3400,Health Sector,State Sector
+6/30/2020 0:00,Southland,43700,Private Sector,Private Sector
+6/30/2020 0:00,Bay of Plenty,117200,Private Sector,Private Sector
+6/30/2019 0:00,Hawkes Bay,4750,Education Sector,State Sector
+6/30/2019 0:00,Gisborne,1550,Education Sector,State Sector
+6/30/2018 0:00,Hawkes Bay,590,SoEs,State Sector
+6/30/2018 0:00,Bay of Plenty,8200,Education Sector,State Sector
+6/30/2018 0:00,Auckland,12000,Local Government,Local Government
+6/30/2018 0:00,Auckland,13800,SoEs,State Sector
+6/30/2020 0:00,Hawkes Bay,2200,Local Government,Local Government
+6/30/2019 0:00,Marlborough,470,Local Government,Local Government
+6/30/2018 0:00,Wellington,180900,Private Sector,Private Sector
+6/30/2017 0:00,Nelson,760,Local Government,Local Government
+6/30/2017 0:00,Nelson,1700,Health Sector,State Sector
+6/30/2017 0:00,Southland,2450,Education Sector,State Sector
+6/30/2017 0:00,Manawatu-Wanganui,77600,Private Sector,Private Sector
+6/30/2017 0:00,Manawatu-Wanganui,1800,Local Government,Local Government
+6/30/2017 0:00,Waikato,2250,SoEs,State Sector
+6/30/2017 0:00,Auckland,640900,Private Sector,Private Sector
+6/30/2017 0:00,Northland,2900,Health Sector,State Sector
+6/30/2016 0:00,Southland,520,SoEs,State Sector
+6/30/2016 0:00,Otago,8900,Education Sector,State Sector
+6/30/2016 0:00,Canterbury,15700,Education Sector,State Sector
+6/30/2016 0:00,Manawatu-Wanganui,1700,Local Government,Local Government
+6/30/2015 0:00,Marlborough,430,Local Government,Local Government
+6/30/2015 0:00,Tasman,460,Local Government,Local Government
+6/30/2015 0:00,Taranaki,44300,Private Sector,Private Sector
+6/30/2015 0:00,Auckland,40300,Education Sector,State Sector
+6/30/2014 0:00,Nelson,19800,Private Sector,Private Sector
+6/30/2014 0:00,West Coast,960,Health Sector,State Sector
+6/30/2014 0:00,Bay of Plenty,3900,Health Sector,State Sector
+6/30/2013 0:00,West Coast,550,SoEs,State Sector
+6/30/2012 0:00,Tasman,16900,Private Sector,Private Sector
+6/30/2012 0:00,Tasman,40,SoEs,State Sector
+6/30/2015 0:00,Southland,510,SoEs,State Sector
+6/30/2015 0:00,Manawatu-Wanganui,3800,Health Sector,State Sector
+6/30/2013 0:00,Auckland,13900,SoEs,State Sector
+6/30/2014 0:00,Hawkes Bay,1900,Local Government,Local Government
+6/30/2012 0:00,Manawatu-Wanganui,1950,Local Government,Local Government
+6/30/2012 0:00,Manawatu-Wanganui,8200,Education Sector,State Sector
+6/30/2012 0:00,Taranaki,42000,Private Sector,Private Sector
+6/30/2012 0:00,Taranaki,1500,Health Sector,State Sector
+6/30/2012 0:00,Bay of Plenty,7000,Education Sector,State Sector
+6/30/2011 0:00,Marlborough,570,Health Sector,State Sector
+6/30/2011 0:00,Southland,40300,Private Sector,Private Sector
+6/30/2011 0:00,Canterbury,207100,Private Sector,Private Sector
+6/30/2011 0:00,West Coast,680,SoEs,State Sector
+6/30/2011 0:00,Manawatu-Wanganui,3400,Health Sector,State Sector
+6/30/2011 0:00,Taranaki,41800,Private Sector,Private Sector
+6/30/2011 0:00,Waikato,6600,Health Sector,State Sector
+6/30/2011 0:00,Auckland,14500,SoEs,State Sector
+6/30/2011 0:00,Northland,1050,Local Government,Local Government
+6/30/2010 0:00,Marlborough,18700,Private Sector,Private Sector
+6/30/2010 0:00,Canterbury,9800,Health Sector,State Sector
+6/30/2010 0:00,Gisborne,330,SoEs,State Sector
+6/30/2010 0:00,Waikato,131600,Private Sector,Private Sector
+6/30/2009 0:00,Tasman,220,Health Sector,State Sector
+6/30/2009 0:00,Southland,40900,Private Sector,Private Sector
+6/30/2009 0:00,Otago,9200,Education Sector,State Sector
+6/30/2009 0:00,Canterbury,213000,Private Sector,Private Sector
+6/30/2009 0:00,Wellington,4800,Local Government,Local Government
+6/30/2009 0:00,Gisborne,17000,Private Sector,Private Sector
+6/30/2009 0:00,Waikato,135600,Private Sector,Private Sector
+6/30/2009 0:00,Auckland,520400,Private Sector,Private Sector
+6/30/2009 0:00,Northland,4050,Education Sector,State Sector
+6/30/2008 0:00,Marlborough,490,Health Sector,State Sector
+6/30/2008 0:00,Canterbury,219600,Private Sector,Private Sector
+6/30/2008 0:00,Auckland,10700,Local Government,Local Government
+6/30/2007 0:00,Southland,1050,Health Sector,State Sector
+6/30/2008 0:00,Manawatu-Wanganui,2050,Local Government,Local Government
+6/30/2007 0:00,Hawkes Bay,610,SoEs,State Sector
+6/30/2007 0:00,Hawkes Bay,2050,Health Sector,State Sector
+6/30/2007 0:00,Hawkes Bay,4600,Education Sector,State Sector
+6/30/2007 0:00,Gisborne,380,Local Government,Local Government
+6/30/2006 0:00,Area Outside Regions,250,Private Sector,Private Sector
+6/30/2006 0:00,Area Outside Regions,21,Local Government,Local Government
+6/30/2006 0:00,Marlborough,18900,Private Sector,Private Sector
+6/30/2006 0:00,Otago,8700,Education Sector,State Sector
+6/30/2015 0:00,Canterbury,5200,SoEs,State Sector
+6/30/2014 0:00,Northland,2350,Health Sector,State Sector
+6/30/2010 0:00,Marlborough,790,Education Sector,State Sector
+6/30/2008 0:00,Manawatu-Wanganui,1200,SoEs,State Sector
+6/30/2008 0:00,Gisborne,410,Local Government,Local Government
+6/30/2007 0:00,Canterbury,212900,Private Sector,Private Sector
+6/30/2007 0:00,West Coast,900,Health Sector,State Sector
+6/30/2007 0:00,Wellington,7300,Health Sector,State Sector
+6/30/2007 0:00,Auckland,532200,Private Sector,Private Sector
+6/30/2006 0:00,West Coast,540,SoEs,State Sector
+6/30/2006 0:00,Bay of Plenty,3700,Health Sector,State Sector
+6/30/2006 0:00,Auckland,521700,Private Sector,Private Sector
+6/30/2006 0:00,Auckland,14600,SoEs,State Sector
+6/30/2006 0:00,Auckland,34900,Education Sector,State Sector
+6/30/2005 0:00,Area Outside Regions,18,Local Government,Local Government
+6/30/2005 0:00,Marlborough,280,Local Government,Local Government
+6/30/2005 0:00,Tasman,16800,Private Sector,Private Sector
+6/30/2005 0:00,Southland,2200,Education Sector,State Sector
+6/30/2005 0:00,West Coast,390,Local Government,Local Government
+6/30/2005 0:00,West Coast,510,SoEs,State Sector
+6/30/2005 0:00,Manawatu-Wanganui,8800,Education Sector,State Sector
+6/30/2005 0:00,Taranaki,1400,Health Sector,State Sector
+6/30/2004 0:00,Marlborough,780,Education Sector,State Sector
+6/30/2004 0:00,Tasman,200,Health Sector,State Sector
+6/30/2004 0:00,Southland,1100,Health Sector,State Sector
+6/30/2004 0:00,Otago,8500,Education Sector,State Sector
+6/30/2004 0:00,West Coast,10500,Private Sector,Private Sector
+6/30/2004 0:00,West Coast,410,SoEs,State Sector
+6/30/2004 0:00,Wellington,159700,Private Sector,Private Sector
+6/30/2004 0:00,Taranaki,1150,Local Government,Local Government
+6/30/2004 0:00,Hawkes Bay,540,SoEs,State Sector
+6/30/2004 0:00,Auckland,489700,Private Sector,Private Sector
+6/30/2003 0:00,Marlborough,520,Health Sector,State Sector
+6/30/2003 0:00,Nelson,18500,Private Sector,Private Sector
+6/30/2003 0:00,Nelson,1400,Education Sector,State Sector
+6/30/2003 0:00,Southland,38300,Private Sector,Private Sector
+6/30/2003 0:00,Canterbury,188900,Private Sector,Private Sector
+6/30/2003 0:00,Canterbury,4950,SoEs,State Sector
+6/30/2003 0:00,Canterbury,14900,Education Sector,State Sector
+6/30/2003 0:00,West Coast,350,Local Government,Local Government
+6/30/2003 0:00,West Coast,910,Health Sector,State Sector
+6/30/2003 0:00,Wellington,158300,Private Sector,Private Sector
+6/30/2003 0:00,Taranaki,1000,Local Government,Local Government
+6/30/2003 0:00,Taranaki,410,SoEs,State Sector
+6/30/2003 0:00,Hawkes Bay,4200,Education Sector,State Sector
+6/30/2003 0:00,Bay of Plenty,81700,Private Sector,Private Sector
+6/30/2003 0:00,Waikato,12100,Education Sector,State Sector
+6/30/2003 0:00,Auckland,467700,Private Sector,Private Sector
+6/30/2003 0:00,Auckland,33900,Education Sector,State Sector
+6/30/2003 0:00,Northland,760,Local Government,Local Government
+6/30/2002 0:00,Area Outside Regions,220,Private Sector,Private Sector
+6/30/2005 0:00,Southland,1100,Health Sector,State Sector
+6/30/2004 0:00,Area Outside Regions,3,SoEs,State Sector
+6/30/2003 0:00,Northland,1850,Health Sector,State Sector
+6/30/2002 0:00,Tasman,360,Local Government,Local Government
+6/30/2002 0:00,West Coast,920,Health Sector,State Sector
+6/30/2002 0:00,Taranaki,1100,Local Government,Local Government
+6/30/2002 0:00,Taranaki,1300,Health Sector,State Sector
+6/30/2002 0:00,Hawkes Bay,1600,Local Government,Local Government
+6/30/2002 0:00,Hawkes Bay,4100,Education Sector,State Sector
+6/30/2002 0:00,Waikato,117700,Private Sector,Private Sector
+6/30/2001 0:00,Area Outside Regions,0,SoEs,State Sector
+6/30/2001 0:00,Marlborough,14500,Private Sector,Private Sector
+6/30/2001 0:00,Nelson,17400,Private Sector,Private Sector
+6/30/2001 0:00,Tasman,240,Health Sector,State Sector
+6/30/2001 0:00,Wellington,13100,Education Sector,State Sector
+6/30/2001 0:00,Gisborne,170,SoEs,State Sector
+6/30/2001 0:00,Auckland,7000,SoEs,State Sector
+6/30/2001 0:00,Northland,500,SoEs,State Sector
+6/30/2000 0:00,Area Outside Regions,210,Private Sector,Private Sector
+6/30/2000 0:00,Area Outside Regions,0,SoEs,State Sector
+6/30/2000 0:00,Area Outside Regions,3,Health Sector,State Sector
+6/30/2000 0:00,Nelson,180,SoEs,State Sector
+6/30/2000 0:00,Tasman,150,Health Sector,State Sector
+6/30/2000 0:00,Southland,520,SoEs,State Sector
+6/30/2000 0:00,Wellington,12700,Education Sector,State Sector
+6/30/2000 0:00,Gisborne,15700,Private Sector,Private Sector
+6/30/2000 0:00,Gisborne,690,Health Sector,State Sector
+6/30/2000 0:00,Bay of Plenty,2950,Health Sector,State Sector
+6/30/2000 0:00,Waikato,4950,Health Sector,State Sector
+6/30/2000 0:00,Waikato,11600,Education Sector,State Sector
+6/30/2001 0:00,Hawkes Bay,905,Public Service,State Sector
+6/30/2003 0:00,Auckland,6732,Public Service,State Sector
+6/30/2010 0:00,Bay of Plenty,1396,Public Service,State Sector
+6/30/2011 0:00,West Coast,276,Public Service,State Sector
+6/30/2015 0:00,Auckland,9474,Public Service,State Sector
+6/30/2017 0:00,Overseas,300,Public Service,State Sector
+6/30/2018 0:00,Auckland,10404,Public Service,State Sector
+6/30/2023 0:00,Bay of Plenty,2071,Public Service,State Sector
+6/30/2023 0:00,Otago,1590,Public Service,State Sector
+6/30/2004 0:00,Gisborne,330,SoEs,State Sector
+6/30/2002 0:00,Gisborne,740,Health Sector,State Sector
+6/30/2001 0:00,Gisborne,1500,Education Sector,State Sector
+6/30/2000 0:00,Bay of Plenty,1100,SoEs,State Sector
+6/30/2020 0:00,Southland,651,Public Service,State Sector
+6/30/2010 0:00,Southland,782,Public Service,State Sector
+6/30/2013 0:00,Bay of Plenty,1681,Public Service,State Sector
+6/30/2016 0:00,Otago,1307,Public Service,State Sector
+6/30/2012 0:00,Taranaki,482,Public Service,State Sector
+6/30/2015 0:00,Manawatu-Wanganui,1952,Public Service,State Sector
+6/30/2016 0:00,Gisborne,270,Public Service,State Sector
+6/30/2000 0:00,Hawkes Bay,883,Public Service,State Sector
+6/30/2022 0:00,Taranaki,490,Public Service,State Sector
+6/30/2014 0:00,Hawkes Bay,1094,Public Service,State Sector
+6/30/2004 0:00,Manawatu-Wanganui,1661,Public Service,State Sector
+6/30/2005 0:00,Auckland,8177,Public Service,State Sector
+6/30/2006 0:00,Nelson,474,Public Service,State Sector
+6/30/2021 0:00,Overseas,302,Public Service,State Sector
+6/30/2017 0:00,Tasman,119,Public Service,State Sector
+6/30/2010 0:00,Area Outside Regions,0,Public Service,State Sector
+6/30/2023 0:00,Northland,951,Other Government Entities,State Sector
+6/30/2022 0:00,Area Outside Regions,21,Other Government Entities,State Sector
+6/30/2021 0:00,Area Outside Regions,35,Other Government Entities,State Sector
+6/30/2021 0:00,Waikato,2459,Other Government Entities,State Sector
+6/30/2020 0:00,Waikato,2715,Other Government Entities,State Sector
+6/30/2019 0:00,Tasman,244,Other Government Entities,State Sector
+6/30/2019 0:00,Gisborne,315,Other Government Entities,State Sector
+6/30/2019 0:00,Waikato,2680,Other Government Entities,State Sector
+6/30/2018 0:00,Tasman,187,Other Government Entities,State Sector
+6/30/2017 0:00,Marlborough,661,Other Government Entities,State Sector
+6/30/2017 0:00,Southland,346,Other Government Entities,State Sector
+6/30/2017 0:00,Wellington,14843,Other Government Entities,State Sector
+6/30/2017 0:00,Hawkes Bay,696,Other Government Entities,State Sector
+6/30/2014 0:00,Marlborough,952,Other Government Entities,State Sector
+6/30/2014 0:00,Tasman,173,Other Government Entities,State Sector
+6/30/2014 0:00,Otago,1222,Other Government Entities,State Sector
+6/30/2014 0:00,West Coast,304,Other Government Entities,State Sector
+6/30/2014 0:00,Hawkes Bay,856,Other Government Entities,State Sector
+6/30/2014 0:00,Northland,636,Other Government Entities,State Sector
+6/30/2013 0:00,Bay of Plenty,1569,Other Government Entities,State Sector
+6/30/2013 0:00,Waikato,1806,Other Government Entities,State Sector
+6/30/2013 0:00,Northland,645,Other Government Entities,State Sector
+6/30/2014 0:00,Area Outside Regions,30,Other Government Entities,State Sector
+6/30/2011 0:00,West Coast,194,Other Government Entities,State Sector
+6/30/2011 0:00,Northland,561,Other Government Entities,State Sector
+6/30/2010 0:00,Marlborough,907,Other Government Entities,State Sector
+6/30/2010 0:00,Nelson,121,Other Government Entities,State Sector
+6/30/2010 0:00,Tasman,179,Other Government Entities,State Sector
+6/30/2009 0:00,Otago,1055,Other Government Entities,State Sector
+6/30/2009 0:00,Hawkes Bay,1186,Other Government Entities,State Sector
+6/30/2008 0:00,Marlborough,656,Other Government Entities,State Sector
+6/30/2008 0:00,Canterbury,5376,Other Government Entities,State Sector
+6/30/2008 0:00,West Coast,221,Other Government Entities,State Sector
+6/30/2009 0:00,Taranaki,457,Other Government Entities,State Sector
+6/30/2007 0:00,Canterbury,5264,Other Government Entities,State Sector
+6/30/2007 0:00,Bay of Plenty,1782,Other Government Entities,State Sector
+6/30/2007 0:00,Waikato,2342,Other Government Entities,State Sector
+6/30/2006 0:00,Waikato,1767,Other Government Entities,State Sector
+6/30/2005 0:00,Wellington,10707,Other Government Entities,State Sector
+6/30/2005 0:00,Taranaki,178,Other Government Entities,State Sector
+6/30/2005 0:00,Hawkes Bay,717,Other Government Entities,State Sector
+6/30/2005 0:00,Auckland,8723,Other Government Entities,State Sector
+6/30/2004 0:00,Nelson,212,Other Government Entities,State Sector
+6/30/2004 0:00,Tasman,142,Other Government Entities,State Sector
+6/30/2004 0:00,Southland,333,Other Government Entities,State Sector
+6/30/2004 0:00,Auckland,9242,Other Government Entities,State Sector
+6/30/2003 0:00,Marlborough,579,Other Government Entities,State Sector
+6/30/2003 0:00,Auckland,9568,Other Government Entities,State Sector
+6/30/2002 0:00,Marlborough,638,Other Government Entities,State Sector
+6/30/2002 0:00,Northland,444,Other Government Entities,State Sector
+6/30/2001 0:00,Area Outside Regions,80,Other Government Entities,State Sector
+6/30/2000 0:00,Tasman,116,Other Government Entities,State Sector
+6/30/2003 0:00,Otago,1234,Other Government Entities,State Sector
+6/30/2001 0:00,Manawatu-Wanganui,4575,Other Government Entities,State Sector

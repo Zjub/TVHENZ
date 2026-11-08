@@ -1,0 +1,8 @@
+population,indicator,year,group,estimate,flag,low,high,male,male_flag_for_publishing,male.low.CI,male.high.CI,female,female_flag_for_publishing,female.low.CI,female.high.CI,estimated.number,estimated.number.low.CI,estimated.number.high.CI,survey_period
+adults,GP visit,2024,15-24,65.1,,61,69.1,58.9,,52.3,65.3,70.8,,65,76.3,443000,416000,469000,2024/25
+adults,GP visit,2024,25-34,68.8,,65.4,72.1,61.2,,55.7,66.5,76.6,,73,79.9,517000,492000,541000,2024/25
+adults,GP visit,2024,35-44,71.7,,68.7,74.6,65.9,,61.1,70.4,77.9,,74.7,80.9,539000,518000,561000,2024/25
+adults,GP visit,2024,45-54,76.7,,73.2,80.1,70.9,,65.6,75.8,82.4,,78.8,85.6,494000,473000,515000,2024/25
+adults,GP visit,2024,55-64,82.8,,80,85.3,81.2,,77.4,84.6,84.2,,80.1,87.7,516000,500000,532000,2024/25
+adults,GP visit,2024,65-74,86.7,,84.5,88.7,87,,83.4,90,86.5,,83.4,89.1,429000,419000,439000,2024/25
+adults,GP visit,2024,75+,93.8,,91.7,95.4,93.4,,89.8,96,94.1,,91.4,96.1,372000,365000,378000,2024/25

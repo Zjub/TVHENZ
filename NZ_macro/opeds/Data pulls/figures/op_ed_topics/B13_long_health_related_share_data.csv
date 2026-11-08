@@ -1,0 +1,73 @@
+date,recipients,source_id,source_vintage,source_sheet,source_row,subgroup,estimate_basis,share_percent
+2008-09-30,48178,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,50.39381609363723
+2008-12-31,50865,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,49.47524049450924
+2009-03-31,51015,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,45.59551686538084
+2009-06-30,54321,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,41.67254817724316
+2009-09-30,56369,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,39.246525747068816
+2009-12-31,59133,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,39.8808961786962
+2010-03-31,55776,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,39.641227558954384
+2010-06-30,58444,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,39.92485568876592
+2010-09-30,58629,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,38.87787378235181
+2010-12-31,59973,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,40.09721265770313
+2011-03-31,59560,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,41.31033382578359
+2011-06-30,57990,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,41.44185348493186
+2011-09-30,58627,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,41.625781898993914
+2011-12-31,60734,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,42.3242297748385
+2012-03-31,58443,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,42.65040721604343
+2012-06-30,59389,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,44.15145117164268
+2012-09-30,59595,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,43.81340979267755
+2012-12-31,61245,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,44.58397029919196
+2013-03-31,58208,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,45.198161262268606
+2013-06-30,59127,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,MSD pre-reform backcast,45.97458945011197
+2013-09-30,57865,msd_national_2013,2013,JS 2008-2013,6,Health condition or disability,Observed current-category count,45.753933739226696
+2013-12-31,58852,msd_national_2018,2018,JS- last 5 years,6,Health condition or disability,Observed current-category count,45.19255135342676
+2014-03-31,56045,msd_national_2018,2018,JS- last 5 years,6,Health condition or disability,Observed current-category count,45.956229039056026
+2014-06-30,55810,msd_national_2018,2018,JS- last 5 years,6,Health condition or disability,Observed current-category count,46.07408508144076
+2014-09-30,56379,msd_national_2018,2018,JS- last 5 years,6,Health condition or disability,Observed current-category count,45.78707576360521
+2014-12-31,55475,msd_national_2018,2018,JS- last 5 years,6,Health condition or disability,Observed current-category count,44.51139764585055
+2015-03-31,53830,msd_national_2018,2018,JS- last 5 years,6,Health condition or disability,Observed current-category count,46.05066171627043
+2015-06-30,54817,msd_national_2018,2018,JS- last 5 years,6,Health condition or disability,Observed current-category count,46.42675655532218
+2015-09-30,55169,msd_national_2018,2018,JS- last 5 years,6,Health condition or disability,Observed current-category count,45.63154978039884
+2015-12-31,55257,msd_national_2018,2018,JS- last 5 years,6,Health condition or disability,Observed current-category count,44.95106852034134
+2016-03-31,53068,msd_national_2018,2018,JS- last 5 years,6,Health condition or disability,Observed current-category count,45.30537674799802
+2016-06-30,53689,msd_national_2018,2018,JS- last 5 years,6,Health condition or disability,Observed current-category count,45.5168964172474
+2016-09-30,56169,msd_national_2018,2018,JS- last 5 years,6,Health condition or disability,Observed current-category count,45.933237381832456
+2016-12-31,56811,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,45.7007022709173
+2017-03-31,55461,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,46.44741470277876
+2017-06-30,55746,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,46.933723984643365
+2017-09-30,56427,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,46.73972466577208
+2017-12-31,57429,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,46.67430633442239
+2018-03-31,55707,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,46.909182771251736
+2018-06-30,57249,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,46.72968141636261
+2018-09-30,58233,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,44.91831350951081
+2018-12-31,59940,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,44.71599301732241
+2019-03-31,59535,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,45.19780445031544
+2019-06-30,60909,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,44.70943163550682
+2019-09-30,62328,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,43.606750062967
+2019-12-31,64362,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,43.64561082290713
+2020-03-31,62913,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,41.459412439207625
+2020-06-30,66492,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,34.91163406105283
+2020-09-30,71280,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,34.921148165023
+2020-12-31,77637,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,36.54090536838835
+2021-03-31,78432,msd_national_2021,2021,JS - last 5 years,6,Health condition or disability,Observed current-category count,38.962161517712104
+2021-06-30,79467,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,41.7682398019521
+2021-09-30,81576,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,42.129400099157166
+2021-12-31,81627,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,43.42115762092463
+2022-03-31,76791,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,43.22722283205269
+2022-06-30,70674,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,41.3879128601546
+2022-09-30,71103,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,41.81619294624111
+2022-12-31,71337,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,41.937531965926524
+2023-03-31,71616,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,42.50182491498567
+2023-06-30,73851,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,42.65712453863349
+2023-09-30,76902,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,42.36744678037816
+2023-12-31,80100,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,42.20276293743875
+2024-03-31,79692,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,42.39251859181003
+2024-06-30,82506,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,42.001252309900885
+2024-09-30,87861,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,42.90821185261153
+2024-12-31,92922,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,43.559705795491304
+2025-03-31,92412,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,44.03968775912847
+2025-06-30,95178,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,44.06205297001514
+2025-09-30,96468,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,44.28835082500069
+2025-12-31,98637,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,44.13051648233652
+2026-03-31,96852,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,45.00327585485872
+2026-06-30,98181,msd_benefits,2026,JS - last 5 years,,Health condition or disability,Observed current-category count,44.93800376234089

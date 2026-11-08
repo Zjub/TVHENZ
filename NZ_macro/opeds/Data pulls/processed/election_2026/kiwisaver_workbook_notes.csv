@@ -1,0 +1,1097 @@
+sheet,row,text
+Menu,1,Annual KiwiSaver dataset 2025-2026
+Menu,2,Published 30 September 2026
+Menu,3,
+Menu,4,KiwiSaver data technical caveats:
+Menu,5,"1: As part of Inland Revenue’s Business Transformation, KiwiSaver was moved to a new system in April 2020."
+Menu,6,2: Some annual KiwiSaver datasets were introduced in later years. This means that the earliest year of data differs across datasets.
+Menu,7,"3: Dataset names and definitions may have changed over time. As a result, some datasets may not align with previously published data or with the monthly KiwiSaver dataset."
+Menu,8,4: Any data sources used in addition to Inland Revenue administrative data are identified under 'Source'.
+Menu,9,
+Menu,10,Link | Description | Section
+Menu,11,Paid parental leave | KiwiSaver employer contributions while on paid parental leave | Paid parental leave
+Menu,12,Govt contributions 1 | Government contributions entitlement by age | Govt contributions 1
+Menu,13,Govt contributions 2 | Government contributions entitlement by income group | Govt contributions 2
+Menu,14,Demographics 1 | Member age at enrolment | Demographics
+Menu,15,Demographics 2 | Age of members and estimated New Zealand population as at 30 June 2026 | Demographics
+Menu,16,"Demographics 3 | Income of members, eligible population and opt-out population as at 30 June 2026 | Demographics"
+Menu,17,Demographics 4 | Age of individuals who opted out during the year ended 30 June 2026 | Demographics
+Menu,18,Demographics 5 | Income of individuals with a current opt-out status as at 30 June 2026 | Demographics
+Menu,19,"Demographics 6 | Members on a savings suspension, by member age as at 30 June 2026 | Demographics"
+Menu,20,"Demographics 7 | Number of KiwiSaver members, by age as at 30 June | Demographics"
+Menu,21,"Demographics 8 | Number of KiwiSaver members, by annual income as at 30 June | Demographics"
+Menu,22,"Demographics 9 | Number of KiwiSaver members, by annual income and age as at 30 June 2026 | Demographics"
+Menu,23,"Demographics 10 | Number of KiwiSaver members, by region as at 30 June | Demographics"
+Menu,24,Enrolment 1 | Percentage change by enrolment method as at 30 June | Enrolment
+Menu,25,Enrolment 2 | Number of KiwiSaver members by enrolment method as at 30 June | Enrolment
+Menu,26,Exiting | Number of KiwiSaver closed accounts | Exiting
+Menu,27,Membership size | KiwiSaver scheme provider membership size as at 30 June | Membership size
+Menu,28,"Amount withdrawn 1 | Amount of KiwiSaver funds withdrawn, by withdrawal reason, for the year ended 30 June | Amount withdrawn"
+Menu,29,"Amount withdrawn 2 | Amount of KiwiSaver funds withdrawn, by region, for the year ended 30 June | Amount withdrawn"
+Menu,30,"Number of withdrawals 1 | Number of KiwiSaver fund withdrawals, by withdrawal reason, for the year ended 30 June | Number of withdrawals"
+Menu,31,"Number of withdrawals 2 | Number of KiwiSaver fund withdrawals, by region, for the year ended 30 June | Number of withdrawals"
+Menu,32,Opt-outs 1 | Frequency of opt-outs per individual for the year ended 30 June 2026 | Opt-outs
+Menu,33,Opt-outs 2 | Number of individuals opted out of KiwiSaver as at 30 June | Opt-outs
+Menu,34,"Payments to providers 1 | Payments to scheme providers, by category, for the year ended 30 June | Payments to providers"
+Menu,35,"Payments to providers 2 | Number of KiwiSaver members, by contribution rate | Payments to providers"
+Menu,36,"Payments to providers 3 | Members that have made a contribution to KiwiSaver through Inland Revenue or scheme provider, for the year ended 30 June | Payments to providers"
+Menu,37,Scheme entry | Number of KiwiSaver members by scheme entry method as at 30 June | Scheme entry
+Menu,38,"Transfers 1 | Speed of transfer of employer contributions from IR to scheme providers, by month | Scheme transfer"
+Menu,39,"Transfers 2 | Speed of transfer of employee contributions from IR to scheme providers, by month | Scheme transfer"
+Menu,40,"Transfers 3 | Number of member transfers between scheme providers, by month | Scheme transfer"
+Menu,41,Transfers 4 | Number of member transfers between scheme providers for the year ended 30 June | Scheme transfer
+Menu,42,Suspensions 1 | Number of savings suspensions by type as at 30 June | Suspensions
+Menu,43,Suspensions 2 | Number of savings suspensions by duration as at 30 June | Suspensions
+Paid parental leave,1,KiwiSaver employer contributions while on paid parental leave
+Paid parental leave,2,
+Paid parental leave,3,45838 | 46203
+Paid parental leave,4,Paid parental leave paid | 159481190 | 182131830
+Paid parental leave,5,KiwiSaver employer contributions | 3823920 | 5067160
+Paid parental leave,6,Number of individuals | 11800 | 13790
+Paid parental leave,7,
+Paid parental leave,8,Technical notes:
+Paid parental leave,9,"1: From 1 July 2024, if members choose to have KiwiSaver deductions from their paid parental leave payments, Inland Revenue will also make employer contributions of 3%."
+Paid parental leave,10,2: Figures are rounded to the nearest 10.
+Paid parental leave,11,
+Paid parental leave,12,Source:
+Paid parental leave,13,1: Inland Revenue administrative data.
+Paid parental leave,14,
+Paid parental leave,15,Return
+Govt contributions 1,1,Government contributions entitlement by age
+Govt contributions 1,2,
+Govt contributions 1,3,Government contributions entitlement
+Govt contributions 1,4,Age | Full | Partial | None | Total
+Govt contributions 1,5,< 16 | 109422 | 109422
+Govt contributions 1,6,16 | 6 | 9702 | 14684 | 24392
+Govt contributions 1,7,17 | 2927 | 11516 | 13762 | 28205
+Govt contributions 1,8,18 | 5701 | 23748 | 13622 | 43071
+Govt contributions 1,9,19 | 14497 | 26972 | 11133 | 52602
+Govt contributions 1,10,20 | 20301 | 24087 | 11547 | 55935
+Govt contributions 1,11,21 | 24520 | 21513 | 12529 | 58562
+Govt contributions 1,12,22 | 29251 | 17922 | 14536 | 61709
+Govt contributions 1,13,23 | 31810 | 14401 | 15510 | 61721
+Govt contributions 1,14,24 | 33248 | 12429 | 16890 | 62567
+Govt contributions 1,15,25 | 34950 | 11593 | 18765 | 65308
+Govt contributions 1,16,26 | 35530 | 11061 | 20533 | 67124
+Govt contributions 1,17,27 | 34168 | 10605 | 21741 | 66514
+Govt contributions 1,18,28 | 35562 | 10655 | 23067 | 69284
+Govt contributions 1,19,29 | 35637 | 10799 | 24401 | 70837
+Govt contributions 1,20,30 | 36800 | 11072 | 25768 | 73640
+Govt contributions 1,21,31 | 38165 | 11159 | 26938 | 76262
+Govt contributions 1,22,32 | 39280 | 11066 | 28055 | 78401
+Govt contributions 1,23,33 | 40690 | 11301 | 29437 | 81428
+Govt contributions 1,24,34 | 42164 | 11161 | 30897 | 84222
+Govt contributions 1,25,35 | 43016 | 11265 | 32341 | 86622
+Govt contributions 1,26,36 | 42436 | 11003 | 32349 | 85788
+Govt contributions 1,27,37 | 40959 | 10423 | 31729 | 83111
+Govt contributions 1,28,38 | 40580 | 9959 | 31186 | 81725
+Govt contributions 1,29,39 | 39387 | 9251 | 29400 | 78038
+Govt contributions 1,30,40 | 38025 | 8558 | 28256 | 74839
+Govt contributions 1,31,41 | 37687 | 7961 | 27301 | 72949
+Govt contributions 1,32,42 | 36741 | 7731 | 26608 | 71080
+Govt contributions 1,33,43 | 36226 | 7399 | 25697 | 69322
+Govt contributions 1,34,44 | 35381 | 6837 | 24616 | 66834
+Govt contributions 1,35,45 | 34908 | 6657 | 23009 | 64574
+Govt contributions 1,36,46 | 34462 | 6179 | 22063 | 62704
+Govt contributions 1,37,47 | 33445 | 6115 | 21469 | 61029
+Govt contributions 1,38,48 | 32188 | 5709 | 20246 | 58143
+Govt contributions 1,39,49 | 32832 | 5430 | 20050 | 58312
+Govt contributions 1,40,50 | 32179 | 5296 | 19428 | 56903
+Govt contributions 1,41,51 | 33193 | 5172 | 19483 | 57848
+Govt contributions 1,42,52 | 34117 | 5416 | 19735 | 59268
+Govt contributions 1,43,53 | 34620 | 5441 | 19651 | 59712
+Govt contributions 1,44,54 | 35600 | 5457 | 20300 | 61357
+Govt contributions 1,45,55 | 35760 | 5621 | 19519 | 60900
+Govt contributions 1,46,56 | 34259 | 5153 | 18783 | 58195
+Govt contributions 1,47,57 | 34238 | 5073 | 18317 | 57628
+Govt contributions 1,48,58 | 32940 | 5067 | 17851 | 55858
+Govt contributions 1,49,59 | 32226 | 4753 | 17029 | 54008
+Govt contributions 1,50,60 | 31185 | 4816 | 16616 | 52617
+Govt contributions 1,51,61 | 31279 | 4762 | 16401 | 52442
+Govt contributions 1,52,62 | 31857 | 4983 | 16150 | 52990
+Govt contributions 1,53,63 | 31811 | 5122 | 16167 | 53100
+Govt contributions 1,54,64 | 30895 | 4905 | 15888 | 51688
+Govt contributions 1,55,65 | 25924 | 12701 | 38625
+Govt contributions 1,56,66+ | 218670 | 218670
+Govt contributions 1,57,no info | 33 | 25 | 114 | 172
+Govt contributions 1,58,Total | 1589672 | 496225 | 1382360 | 3468257
+Govt contributions 1,59,
+Govt contributions 1,60,Technical notes:
+Govt contributions 1,61,1: Eligibility criteria for KiwiSaver government contribution (year ended 30 June 2026)
+Govt contributions 1,62,"To be eligible for the government contribution, a person must have met the following criteria:"
+Govt contributions 1,63,·  Contributed to their KiwiSaver account during the period 1 July 2025 to 30 June 2026
+Govt contributions 1,64,·  Been a member of a KiwiSaver scheme or a complying fund
+Govt contributions 1,65,·  Been aged 16 to 64
+Govt contributions 1,66,"·  Lived mainly in New Zealand, or been:"
+Govt contributions 1,67,"·  A government employee serving overseas, or"
+Govt contributions 1,68,·  Working overseas as a volunteer or for token payment for an approved charitable organisation.
+Govt contributions 1,69,"·  Annual taxable income of $180,000 or less"
+Govt contributions 1,70,2: The maximum government contribution for the year ending 30 June 2026 was $260.72
+Govt contributions 1,71,"3: To receive the full government contribution, a person must have contributed at least $1,042.86 of their own money to their KiwiSaver account during the year."
+Govt contributions 1,72,"4: If a person contributed less than $1,042.86, the government still contributed 25 cents for every dollar they contributed."
+Govt contributions 1,73,"5: KiwiSaver providers claim the government contribution from Inland Revenue after 30 June each year, and it is typically deposited into members’ accounts by late July or August."
+Govt contributions 1,74,6. Member age is calculated as at 30 June 2026.
+Govt contributions 1,75,
+Govt contributions 1,76,Source:
+Govt contributions 1,77,1: Inland Revenue administrative data.
+Govt contributions 1,78,
+Govt contributions 1,79,Return
+Govt contributions 2,1,Government contributions entitlement by income group
+Govt contributions 2,2,
+Govt contributions 2,3,Government contributions entitlement
+Govt contributions 2,4,"Income group 
+(2025 tax year) | Full | Partial | None | Total"
+Govt contributions 2,5,"a. <= $10,000 | 58530 | 108094 | 559152 | 725776"
+Govt contributions 2,6,"b. $10,001 - $20,000 | 46407 | 67753 | 80701 | 194861"
+Govt contributions 2,7,"c. $20,001 - $30,000 | 64847 | 76030 | 177627 | 318504"
+Govt contributions 2,8,"d. $30,001 - $40,000 | 81143 | 57077 | 94323 | 232543"
+Govt contributions 2,9,"e. $40,001 - $50,000 | 109929 | 38983 | 50604 | 199516"
+Govt contributions 2,10,"f. $50,001 - $60,000 | 165068 | 32628 | 44224 | 241920"
+Govt contributions 2,11,"g. $60,001 - $70,000 | 193779 | 25693 | 37015 | 256487"
+Govt contributions 2,12,"h. $70,001 - $80,000 | 181863 | 19564 | 32570 | 233997"
+Govt contributions 2,13,"i. $80,001 - $90,000 | 151299 | 13867 | 26627 | 191793"
+Govt contributions 2,14,"j. $90,001 - $100,000 | 121857 | 10073 | 21981 | 153911"
+Govt contributions 2,15,"k. $100,001 - $110,000 | 100487 | 7809 | 18661 | 126957"
+Govt contributions 2,16,"l. $110,001 - $120,000 | 78053 | 5709 | 14711 | 98473"
+Govt contributions 2,17,"m. $120,001 - $130,000 | 61678 | 4386 | 12224 | 78288"
+Govt contributions 2,18,"n. $130,001 - $140,000 | 48015 | 3237 | 10393 | 61645"
+Govt contributions 2,19,"o. $140,001 - $150,000 | 37224 | 2571 | 8817 | 48612"
+Govt contributions 2,20,"p. $150,001 - $160,000 | 29373 | 1869 | 8231 | 39473"
+Govt contributions 2,21,"q. $160,001 - $170,000 | 22353 | 1495 | 7914 | 31762"
+Govt contributions 2,22,"r. $170,001 - $180,000 | 17860 | 1525 | 9751 | 29136"
+Govt contributions 2,23,"s. > $180,000 | 17643 | 1850 | 134044 | 153537"
+Govt contributions 2,24,t. No income info | 2264 | 16012 | 32790 | 51066
+Govt contributions 2,25,Total | 1589672 | 496225 | 1382360 | 3468257
+Govt contributions 2,26,
+Govt contributions 2,27,Technical notes:
+Govt contributions 2,28,1: Eligibility criteria for KiwiSaver government contribution (year ended 30 June 2026)
+Govt contributions 2,29,"To be eligible for the government contribution, a person must have met the following criteria:"
+Govt contributions 2,30,·  Contributed to their KiwiSaver account during the period 1 July 2025 to 30 June 2026
+Govt contributions 2,31,·  Been a member of a KiwiSaver scheme or a complying fund
+Govt contributions 2,32,·  Been aged 16 to 64
+Govt contributions 2,33,"·  Lived mainly in New Zealand, or been:"
+Govt contributions 2,34,"·  A government employee serving overseas, or"
+Govt contributions 2,35,·  Working overseas as a volunteer or for token payment for an approved charitable organisation
+Govt contributions 2,36,"·  Annual taxable income of $180,000 or less."
+Govt contributions 2,37,2: The maximum government contribution for the year ending 30 June 2026 was $260.72.
+Govt contributions 2,38,"3: To receive the full government contribution, a person must have contributed at least $1,042.86 of their own money to their KiwiSaver account during the year."
+Govt contributions 2,39,"4: If a person contributed less than $1,042.86, the government still contributed 25 cents for every dollar they contributed."
+Govt contributions 2,40,"5: KiwiSaver providers claim the government contribution from Inland Revenue after 30 June each year, and it is typically deposited into members’ accounts by late July or August."
+Govt contributions 2,41,"6: The total income includes PIE (portfolio investment entity) income. For some members,their only income is from theirKiwiSaver investment, resulting in PIE income."
+Govt contributions 2,42,"7: Income details are for the tax year prior to the financial year. For example, income details for members as at 30 June 2026 are from the 2025 tax year."
+Govt contributions 2,43,8: The income shown in this table may differ from the income used to determine a member's government contribution entitlement.
+Govt contributions 2,44,"·  For most members, government contribution entitlement is determined using the most recent annual taxable income available, which is generally from the 2026 tax year. The income shown in this table is from the 2025 tax year."
+Govt contributions 2,45,"·  The income used to determine government contribution entitlement excludes PIE income, whereas the income shown in this table includes PIE income."
+Govt contributions 2,46,"These differences may result in some members appearing in the income group above $180,000 while still having a full or partial government contribution entitlement."
+Govt contributions 2,47,
+Govt contributions 2,48,Source:
+Govt contributions 2,49,1: Inland Revenue administrative data.
+Govt contributions 2,50,
+Govt contributions 2,51,Return
+Govt contributions 2,52,
+Govt contributions 2,53,
+Govt contributions 2,54,
+Govt contributions 2,55, 
+Demographics 1,1,Member age at enrolment
+Demographics 1,2,
+Demographics 1,3,Proportion of enrolments in the year ended | 00 - 17 | 18 - 24 | 25 - 34 | 35 - 44 | 45 - 54 | 55 - 64 | 65+ | No data | Total
+Demographics 1,4,44742 | 7.2999999999999995E-2 | 0.30099999999999999 | 0.20699999999999999 | 0.185 | 0.129 | 7.2999999999999995E-2 | 2.9000000000000001E-2 | 3.0000000000000001E-3 | 1
+Demographics 1,5,45107 | 5.8000000000000003E-2 | 0.26400000000000001 | 0.27800000000000002 | 0.21199999999999999 | 0.11799999999999999 | 5.1999999999999998E-2 | 1.6E-2 | 2.0000000000000001E-4 | 1
+Demographics 1,6,45473 | 7.0000000000000007E-2 | 0.29299999999999998 | 0.24 | 0.21099999999999999 | 0.11700000000000001 | 5.5E-2 | 1.4E-2 | 2.9999999999999997E-4 | 1
+Demographics 1,7,45838 | 9.7000000000000003E-2 | 0.32600000000000001 | 0.21099999999999999 | 0.188 | 0.105 | 5.6000000000000001E-2 | 1.7000000000000001E-2 | 2.0000000000000001E-4 | 1
+Demographics 1,8,46203 | 0.187 | 0.32700000000000001 | 0.17599999999999999 | 0.16200000000000001 | 8.6999999999999994E-2 | 4.3999999999999997E-2 | 1.7000000000000001E-2 | 2.0000000000000001E-4 | 1
+Demographics 1,9,
+Demographics 1,10,Technical notes:
+Demographics 1,11,"1: All enrolments (net) 1 July 2021 to 30 June 2026, by enrolment year and age at enrolment."
+Demographics 1,12,"2: Due to rounding, figures may not sum exactly to the totals."
+Demographics 1,13,
+Demographics 1,14,Source:
+Demographics 1,15,1: Inland Revenue administrative data.
+Demographics 1,16,2: Data from prior to June 2024 was updated as at July 2024.
+Demographics 1,17,
+Demographics 1,18,Return
+Demographics 2,1,Age of members and estimated New Zealand population as at 30 June 2026
+Demographics 2,2,
+Demographics 2,3,Age | Total estimated population | Total members | Member count
+Demographics 2,4,0 | 1.0999999999999999E-2 | 4.0000000000000002E-4 | 1461
+Demographics 2,5,1 | 1.0999999999999999E-2 | 6.9999999999999999E-4 | 2290
+Demographics 2,6,2 | 1.0999999999999999E-2 | 1E-3 | 2316
+Demographics 2,7,3 | 1.0999999999999999E-2 | 1E-3 | 2593
+Demographics 2,8,4 | 1.2E-2 | 1E-3 | 2987
+Demographics 2,9,5 | 1.2E-2 | 1E-3 | 3280
+Demographics 2,10,6 | 1.2E-2 | 1E-3 | 3248
+Demographics 2,11,7 | 1.2E-2 | 1E-3 | 3794
+Demographics 2,12,8 | 1.2E-2 | 1E-3 | 4238
+Demographics 2,13,9 | 1.2999999999999999E-2 | 2E-3 | 5043
+Demographics 2,14,10 | 1.2999999999999999E-2 | 2E-3 | 5760
+Demographics 2,15,11 | 1.2999999999999999E-2 | 3.0000000000000001E-3 | 8890
+Demographics 2,16,12 | 1.2999999999999999E-2 | 4.0000000000000001E-3 | 12844
+Demographics 2,17,13 | 1.2999999999999999E-2 | 4.0000000000000001E-3 | 14514
+Demographics 2,18,14 | 1.2999999999999999E-2 | 5.0000000000000001E-3 | 16763
+Demographics 2,19,15 | 1.2999999999999999E-2 | 6.0000000000000001E-3 | 19404
+Demographics 2,20,16 | 1.4E-2 | 7.0000000000000001E-3 | 24391
+Demographics 2,21,17 | 1.4E-2 | 8.0000000000000002E-3 | 28204
+Demographics 2,22,18 | 1.4E-2 | 1.2E-2 | 43066
+Demographics 2,23,19 | 1.2999999999999999E-2 | 1.4999999999999999E-2 | 52597
+Demographics 2,24,20 | 1.2999999999999999E-2 | 1.6E-2 | 55932
+Demographics 2,25,21 | 1.2E-2 | 1.7000000000000001E-2 | 58555
+Demographics 2,26,22 | 1.2E-2 | 1.7999999999999999E-2 | 61701
+Demographics 2,27,23 | 1.2E-2 | 1.7999999999999999E-2 | 61715
+Demographics 2,28,24 | 1.2E-2 | 1.7999999999999999E-2 | 62559
+Demographics 2,29,25 | 1.2E-2 | 1.9E-2 | 65303
+Demographics 2,30,26 | 1.2999999999999999E-2 | 1.9E-2 | 67120
+Demographics 2,31,27 | 1.2E-2 | 1.9E-2 | 66506
+Demographics 2,32,28 | 1.2999999999999999E-2 | 0.02 | 69274
+Demographics 2,33,29 | 1.2999999999999999E-2 | 0.02 | 70825
+Demographics 2,34,30 | 1.4E-2 | 2.1000000000000001E-2 | 73629
+Demographics 2,35,31 | 1.4E-2 | 2.1999999999999999E-2 | 76248
+Demographics 2,36,32 | 1.4999999999999999E-2 | 2.3E-2 | 78383
+Demographics 2,37,33 | 1.4999999999999999E-2 | 2.4E-2 | 81416
+Demographics 2,38,34 | 1.6E-2 | 2.4E-2 | 84204
+Demographics 2,39,35 | 1.6E-2 | 2.5000000000000001E-2 | 86603
+Demographics 2,40,36 | 1.6E-2 | 2.5000000000000001E-2 | 85768
+Demographics 2,41,37 | 1.4999999999999999E-2 | 2.4E-2 | 83090
+Demographics 2,42,38 | 1.4999999999999999E-2 | 2.4E-2 | 81708
+Demographics 2,43,39 | 1.4999999999999999E-2 | 2.3E-2 | 78025
+Demographics 2,44,40 | 1.4E-2 | 2.1999999999999999E-2 | 74822
+Demographics 2,45,41 | 1.4E-2 | 2.1000000000000001E-2 | 72935
+Demographics 2,46,42 | 1.4E-2 | 2.1000000000000001E-2 | 71071
+Demographics 2,47,43 | 1.4E-2 | 0.02 | 69307
+Demographics 2,48,44 | 1.2999999999999999E-2 | 1.9E-2 | 66829
+Demographics 2,49,45 | 1.2999999999999999E-2 | 1.9E-2 | 64564
+Demographics 2,50,46 | 1.2E-2 | 1.7999999999999999E-2 | 62691
+Demographics 2,51,47 | 1.2E-2 | 1.7999999999999999E-2 | 61019
+Demographics 2,52,48 | 1.2E-2 | 1.7000000000000001E-2 | 58133
+Demographics 2,53,49 | 1.2E-2 | 1.7000000000000001E-2 | 58305
+Demographics 2,54,50 | 1.0999999999999999E-2 | 1.6E-2 | 56894
+Demographics 2,55,51 | 1.2E-2 | 1.7000000000000001E-2 | 57841
+Demographics 2,56,52 | 1.2E-2 | 1.7000000000000001E-2 | 59260
+Demographics 2,57,53 | 1.2E-2 | 1.7000000000000001E-2 | 59707
+Demographics 2,58,54 | 1.2E-2 | 1.7999999999999999E-2 | 61346
+Demographics 2,59,55 | 1.2999999999999999E-2 | 1.7999999999999999E-2 | 60899
+Demographics 2,60,56 | 1.2E-2 | 1.7000000000000001E-2 | 58183
+Demographics 2,61,57 | 1.2E-2 | 1.7000000000000001E-2 | 57622
+Demographics 2,62,58 | 1.2E-2 | 1.6E-2 | 55854
+Demographics 2,63,59 | 1.0999999999999999E-2 | 1.6E-2 | 54003
+Demographics 2,64,60 | 1.0999999999999999E-2 | 1.4999999999999999E-2 | 52613
+Demographics 2,65,61 | 1.0999999999999999E-2 | 1.4999999999999999E-2 | 52440
+Demographics 2,66,62 | 1.2E-2 | 1.4999999999999999E-2 | 52984
+Demographics 2,67,63 | 1.2E-2 | 1.4999999999999999E-2 | 53107
+Demographics 2,68,64 | 1.2E-2 | 1.4999999999999999E-2 | 51668
+Demographics 2,69,65 | 1.0999999999999999E-2 | 1.0999999999999999E-2 | 38630
+Demographics 2,70,
+Demographics 2,71,Technical notes:
+Demographics 2,72,1: All members where the member is active as at 30 June 2026.
+Demographics 2,73,2: KiwiSaver membership numbers may include:
+Demographics 2,74,"· People living overseas. If a KiwiSaver member moves overseas, they can choose to remain a member, even if they no longer reside here"
+Demographics 2,75,"· People who have died, as the process of closing their accounts and exiting can take time to complete."
+Demographics 2,76,
+Demographics 2,77,Source:
+Demographics 2,78,1: Inland Revenue administrative data.
+Demographics 2,79,2: Data for the estimated resident population of New Zealand is sourced from Stats NZ as at 30 June 2026.
+Demographics 2,80,
+Demographics 2,81,Return
+Demographics 3 ,1,"Income of members, eligible population and opt-out population as at 30 June 2026"
+Demographics 3 ,2,
+Demographics 3 ,3,Population | Income Band | Active choice via provider # | Auto-enrolled # | Opt in via employer # | Total | Total %
+Demographics 3 ,4,"Eligible | $1 - $10,000 | 1094860 | 0.22600000000000001"
+Demographics 3 ,5,"Eligible | $10,001 - $20,000 | 283859 | 5.8999999999999997E-2"
+Demographics 3 ,6,"Eligible | $20,001 - $30,000 | 651093 | 0.13500000000000001"
+Demographics 3 ,7,"Eligible | $30,001 - $40,000 | 465693 | 9.6000000000000002E-2"
+Demographics 3 ,8,"Eligible | $40,001 - $50,000 | 291504 | 0.06"
+Demographics 3 ,9,"Eligible | $50,001 - $60,000 | 306486 | 6.3E-2"
+Demographics 3 ,10,"Eligible | $60,001 - $70,000 | 310453 | 6.4000000000000001E-2"
+Demographics 3 ,11,"Eligible | $70,001 - $80,000 | 275316 | 5.7000000000000002E-2"
+Demographics 3 ,12,"Eligible | $80,001 - $90,000 | 220798 | 4.5999999999999999E-2"
+Demographics 3 ,13,"Eligible | $90,001 - $100,000 | 174627 | 3.5999999999999997E-2"
+Demographics 3 ,14,"Eligible | $100,001 - $110,000 | 143625 | 0.03"
+Demographics 3 ,15,"Eligible | $110,001 - $120,000 | 111276 | 2.3E-2"
+Demographics 3 ,16,"Eligible | $120,001 - $130,000 | 88652 | 1.7999999999999999E-2"
+Demographics 3 ,17,"Eligible | $130,001 - $140,000 | 69777 | 1.4E-2"
+Demographics 3 ,18,"Eligible | $140,001 - $150,000 | 55379 | 1.0999999999999999E-2"
+Demographics 3 ,19,"Eligible | $150,001 - $160,000 | 45057 | 8.9999999999999993E-3"
+Demographics 3 ,20,"Eligible | $160,001 - $170,000 | 36466 | 8.0000000000000002E-3"
+Demographics 3 ,21,"Eligible | $170,001 - $180,000 | 36902 | 8.0000000000000002E-3"
+Demographics 3 ,22,"Eligible | $180,000+ | 172478 | 3.5999999999999997E-2"
+Demographics 3 ,23,"KiwiSaver | $1 - $10,000 | 420584 | 265945 | 39229 | 725758 | 0.21199999999999999"
+Demographics 3 ,24,"KiwiSaver | $10,001 - $20,000 | 103349 | 74143 | 17387 | 194879 | 5.7000000000000002E-2"
+Demographics 3 ,25,"KiwiSaver | $20,001 - $30,000 | 155390 | 137705 | 25409 | 318504 | 9.2999999999999999E-2"
+Demographics 3 ,26,"KiwiSaver | $30,001 - $40,000 | 112649 | 98580 | 21314 | 232543 | 6.8000000000000005E-2"
+Demographics 3 ,27,"KiwiSaver | $40,001 - $50,000 | 93956 | 85095 | 20465 | 199516 | 5.8000000000000003E-2"
+Demographics 3 ,28,"KiwiSaver | $50,001 - $60,000 | 112973 | 103900 | 25047 | 241920 | 7.0999999999999994E-2"
+Demographics 3 ,29,"KiwiSaver | $60,001 - $70,000 | 117526 | 112184 | 26777 | 256487 | 7.4999999999999997E-2"
+Demographics 3 ,30,"KiwiSaver | $70,001 - $80,000 | 107862 | 101282 | 24853 | 233997 | 6.8000000000000005E-2"
+Demographics 3 ,31,"KiwiSaver | $80,001 - $90,000 | 89561 | 81160 | 21072 | 191793 | 5.6000000000000001E-2"
+Demographics 3 ,32,"KiwiSaver | $90,001 - $100,000 | 71781 | 64659 | 17471 | 153911 | 4.4999999999999998E-2"
+Demographics 3 ,33,"KiwiSaver | $100,001 - $110,000 | 60208 | 51636 | 15113 | 126957 | 3.6999999999999998E-2"
+Demographics 3 ,34,"KiwiSaver | $110,001 - $120,000 | 47480 | 38893 | 12100 | 98473 | 2.9000000000000001E-2"
+Demographics 3 ,35,"KiwiSaver | $120,001 - $130,000 | 37988 | 30733 | 9567 | 78288 | 2.3E-2"
+Demographics 3 ,36,"KiwiSaver | $130,001 - $140,000 | 30591 | 23487 | 7567 | 61645 | 1.7999999999999999E-2"
+Demographics 3 ,37,"KiwiSaver | $140,001 - $150,000 | 24195 | 18601 | 5816 | 48612 | 1.4E-2"
+Demographics 3 ,38,"KiwiSaver | $150,001 - $160,000 | 19960 | 14922 | 4591 | 39473 | 1.2E-2"
+Demographics 3 ,39,"KiwiSaver | $160,001 - $170,000 | 16168 | 11975 | 3619 | 31762 | 8.9999999999999993E-3"
+Demographics 3 ,40,"KiwiSaver | $170,001 - $180,000 | 15065 | 10932 | 3139 | 29136 | 8.9999999999999993E-3"
+Demographics 3 ,41,"KiwiSaver | $180,000+ | 82645 | 54869 | 16023 | 153537 | 4.4999999999999998E-2"
+Demographics 3 ,42,"Opt-out | $1 - $10,000 | 20937 | 0.17899999999999999"
+Demographics 3 ,43,"Opt-out | $10,001 - $20,000 | 7531 | 6.4000000000000001E-2"
+Demographics 3 ,44,"Opt-out | $20,001 - $30,000 | 20591 | 0.17599999999999999"
+Demographics 3 ,45,"Opt-out | $30,001 - $40,000 | 12574 | 0.107"
+Demographics 3 ,46,"Opt-out | $40,001 - $50,000 | 7607 | 6.5000000000000002E-2"
+Demographics 3 ,47,"Opt-out | $50,001 - $60,000 | 7410 | 6.3E-2"
+Demographics 3 ,48,"Opt-out | $60,001 - $70,000 | 6809 | 5.8000000000000003E-2"
+Demographics 3 ,49,"Opt-out | $70,001 - $80,000 | 5933 | 5.0999999999999997E-2"
+Demographics 3 ,50,"Opt-out | $80,001 - $90,000 | 4525 | 3.9E-2"
+Demographics 3 ,51,"Opt-out | $90,001 - $100,000 | 3527 | 0.03"
+Demographics 3 ,52,"Opt-out | $100,001 - $110,000 | 3103 | 2.5999999999999999E-2"
+Demographics 3 ,53,"Opt-out | $110,001 - $120,000 | 2486 | 2.1000000000000001E-2"
+Demographics 3 ,54,"Opt-out | $120,001 - $130,000 | 1972 | 1.7000000000000001E-2"
+Demographics 3 ,55,"Opt-out | $130,001 - $140,000 | 1518 | 1.2999999999999999E-2"
+Demographics 3 ,56,"Opt-out | $140,001 - $150,000 | 1267 | 1.0999999999999999E-2"
+Demographics 3 ,57,"Opt-out | $150,001 - $160,000 | 1127 | 0.01"
+Demographics 3 ,58,"Opt-out | $160,001 - $170,000 | 932 | 8.0000000000000002E-3"
+Demographics 3 ,59,"Opt-out | $170,001 - $180,000 | 1381 | 1.2E-2"
+Demographics 3 ,60,"Opt-out | $180,000+ | 5902 | 0.05"
+Demographics 3 ,61,
+Demographics 3 ,62,Technical notes:
+Demographics 3 ,63,1: KiwiSaver membership numbers may include:
+Demographics 3 ,64,"·  People living overseas. If a KiwiSaver member moves overseas, they can choose to remain a member, even if they no longer reside here"
+Demographics 3 ,65,"·  People who have died, as the process of closing their accounts and exiting can take time to complete."
+Demographics 3 ,66,2: People with no income are excluded.
+Demographics 3 ,67,"3: Eligibility figures ares indicative. It is the scheme provider, or employer, who determines if someone is eligible to join KiwiSaver."
+Demographics 3 ,68,"4: The total income includes PIE (portfolio investment entity) income. For some members, their only income is from their KiwiSaver investment, resulting in PIE income."
+Demographics 3 ,69,"5: Income details are for the tax year prior to the financial year. For example, income details for members as at 30 June 2026 are from the 2025 tax year."
+Demographics 3 ,70,
+Demographics 3 ,71,Source:
+Demographics 3 ,72,1: Inland Revenue administrative data.
+Demographics 3 ,73,
+Demographics 3 ,74,Return
+Demographics 4,1,Age of individuals who opted out during the year ended 30 June 2026
+Demographics 4,2,
+Demographics 4,3,Age | Number of individuals | Percentage
+Demographics 4,4,18 - 24 | 3568 | 0.254
+Demographics 4,5,25 - 34 | 4925 | 0.35
+Demographics 4,6,35 - 44 | 2939 | 0.20899999999999999
+Demographics 4,7,45 - 54 | 1509 | 0.107
+Demographics 4,8,55 - 64 | 1009 | 7.1999999999999995E-2
+Demographics 4,9,65+ | 90 | 6.0000000000000001E-3
+Demographics 4,10,No data | 18 | 1E-3
+Demographics 4,11,Total | 14058 | 1
+Demographics 4,12,
+Demographics 4,13,Technical notes:
+Demographics 4,14,"1: Under 18s can only join KiwiSaver through a scheme provider, they are not automatically enrolled through their employer."
+Demographics 4,15,2: The 65+ age group includes individuals who opted out when aged 64 and turned 65 by 30 June.
+Demographics 4,16,"3: Due to rounding, figures may not sum exactly to the totals."
+Demographics 4,17,
+Demographics 4,18,Source:
+Demographics 4,19,1: Inland Revenue administrative data.
+Demographics 4,20,
+Demographics 4,21,Return
+Demographics 5,1,Income of individuals with a current opt-out status as at 30 June 2026
+Demographics 5,2,
+Demographics 5,3,Income (2025 tax year) | Percentage
+Demographics 5,4,"$1 - $10,000 | 0.17899999999999999"
+Demographics 5,5,"$10,001 - $20,000 | 6.4000000000000001E-2"
+Demographics 5,6,"$20,001 - $30,000 | 0.17599999999999999"
+Demographics 5,7,"$30,001 - $40,000 | 0.107"
+Demographics 5,8,"$40,001 - $50,000 | 6.5000000000000002E-2"
+Demographics 5,9,"$50,001 - $60,000 | 6.3E-2"
+Demographics 5,10,"$60,001 - $70,000 | 5.8000000000000003E-2"
+Demographics 5,11,"$70,001 - $80,000 | 5.0999999999999997E-2"
+Demographics 5,12,"$80,001 - $90,000 | 3.9E-2"
+Demographics 5,13,"$90,001 - $100,000 | 0.03"
+Demographics 5,14,"$100,001 - $110,000 | 2.5999999999999999E-2"
+Demographics 5,15,"$110,001 - $120,000 | 2.1000000000000001E-2"
+Demographics 5,16,"$120,001 - $130,000 | 1.7000000000000001E-2"
+Demographics 5,17,"$130,001 - $140,000 | 1.2999999999999999E-2"
+Demographics 5,18,"$140,001 - $150,000 | 1.0999999999999999E-2"
+Demographics 5,19,"$150,001 - $160,000 | 0.01"
+Demographics 5,20,"$160,001 - $170,000 | 8.0000000000000002E-3"
+Demographics 5,21,"$170,001 - $180,000 | 1.2E-2"
+Demographics 5,22,"$180,000+ | 0.05"
+Demographics 5,23,Total | 1
+Demographics 5,24,
+Demographics 5,25,Technical notes:
+Demographics 5,26,1: Income details are for those individuals who have a status of 'opt-out' as at 30 June 2026 with income for the 2025 tax year.
+Demographics 5,27,2: Individuals with no income information for the year are excluded.
+Demographics 5,28,"3: Due to rounding, figures may not sum exactly to the totals."
+Demographics 5,29,
+Demographics 5,30,Source:
+Demographics 5,31,1: Inland Revenue administrative data.
+Demographics 5,32,
+Demographics 5,33,Return
+Demographics 6,1,"Members on a savings suspension, by member age as at 30 June 2026"
+Demographics 6,2,
+Demographics 6,3,Age | Ordinary | Financial hardship | Total
+Demographics 6,4,0 - 24 | 5255 | 222 | 5477
+Demographics 6,5,25 - 34 | 22109 | 360 | 22469
+Demographics 6,6,35 - 44 | 29759 | 293 | 30052
+Demographics 6,7,45 - 54 | 16430 | 186 | 16616
+Demographics 6,8,55+ | 9222 | 100 | 9322
+Demographics 6,9,Total | 82775 | 1161 | 83936
+Demographics 6,10,
+Demographics 6,11,Technical notes:
+Demographics 6,12,1: All members as at 30 June 2026 who are on a savings suspension. Members who were granted an early savings suspension due to financial hardship are also included. 
+Demographics 6,13,2: Individuals under 18 years of age cannot join KiwiSaver through an employer but can join through a scheme provider.
+Demographics 6,14,3:To ensure data confidentiality we have grouped some categories.
+Demographics 6,15,
+Demographics 6,16,Source:
+Demographics 6,17,1: Inland Revenue administrative data.
+Demographics 6,18,
+Demographics 6,19,Return
+Demographics 7,1,"Number of KiwiSaver members, by age as at 30 June"
+Demographics 7,2,
+Demographics 7,3,Age band | 41090 | 41455 | 41820 | 42185 | 42551 | 42916 | 43281 | 43646 | 44012 | 44377 | 44742 | 45107 | 45473 | 45838 | 46203
+Demographics 7,4,0 - 17 | 320519 | 333270 | 352556 | 368079 | 352188 | 336783 | 319619 | 301911 | 281412 | 255528 | 232431 | 210945 | 189641 | 169409 | 162020
+Demographics 7,5,18 - 24 | 301819 | 324718 | 346582 | 360350 | 364541 | 371786 | 380013 | 384907 | 387333 | 388865 | 393061 | 396675 | 396419 | 393064 | 396125
+Demographics 7,6,25 - 34 | 345923 | 398916 | 454502 | 506406 | 551543 | 593772 | 629779 | 657485 | 677695 | 692204 | 707461 | 736768 | 743602 | 739929 | 732908
+Demographics 7,7,35 - 44 | 318979 | 352675 | 389568 | 420794 | 443555 | 469132 | 497292 | 523754 | 548966 | 577612 | 612071 | 662862 | 702348 | 736662 | 770158
+Demographics 7,8,45 - 54 | 317089 | 353010 | 391234 | 423985 | 447794 | 472267 | 492436 | 510195 | 523720 | 537373 | 551363 | 568012 | 580186 | 590728 | 599760
+Demographics 7,9,55 - 64 | 350372 | 371321 | 407702 | 443991 | 367345 | 391361 | 416552 | 438906 | 456924 | 476799 | 493194 | 510589 | 524792 | 537501 | 549373
+Demographics 7,10,65+ | 108715 | 119809 | 131598 | 143463 | 168079 | 186444 | 204812 | 214378 | 222588 | 237634 | 257287
+Demographics 7,11,No information | 11743 | 12933 | 8421 | 7314 | 6387 | 6095 | 5843 | 5453 | 10605 | 10102 | 9959 | 165 | 467 | 479 | 626
+Demographics 7,12,Total | 1966444 | 2146843 | 2350565 | 2530919 | 2642068 | 2761005 | 2873132 | 2966074 | 3054734 | 3124927 | 3204352 | 3300394 | 3360043 | 3405406 | 3468257
+Demographics 7,13,
+Demographics 7,14,Technical notes:
+Demographics 7,15,"1: Before 2016, members aged 65+ are included in the age bracket '55 - 64'."
+Demographics 7,16,2: Members who were automatically enrolled have a provisional period of 8 weeks in which they can decide to opt out.
+Demographics 7,17,
+Demographics 7,18,Source:
+Demographics 7,19,1: Inland Revenue administration data.
+Demographics 7,20,"2: From April 2020, KiwiSaver information is reported from a new system."
+Demographics 7,21,
+Demographics 7,22,Return
+Demographics 8,1,"Number of KiwiSaver members, by annual income as at 30 June"
+Demographics 8,2,
+Demographics 8,3,Income | 41090 | 41455 | 41820 | 42185 | 42551 | 42916 | 43281 | 43646 | 44012 | 44377 | 44742 | 45107 | 45473 | 45838 | 46203
+Demographics 8,4,"$1 - $20,000 | 539958 | 559070 | 576700 | 598656 | 595594 | 602294 | 581317 | 609752 | 1260691 | 1090294 | 1194852 | 1078718 | 999201 | 942973 | 920637"
+Demographics 8,5,"$20,001 - $40,000 | 403157 | 422815 | 444045 | 461215 | 472166 | 479839 | 454378 | 465832 | 475660 | 488220 | 507721 | 518210 | 536436 | 550365 | 551047"
+Demographics 8,6,"$40,001 - $60,000 | 305664 | 342229 | 381377 | 416204 | 448372 | 474661 | 473547 | 501101 | 504875 | 515191 | 523507 | 563450 | 522106 | 465672 | 441436"
+Demographics 8,7,"$60,001 - $80,000 | 144088 | 170521 | 197620 | 226596 | 254966 | 279809 | 298648 | 332571 | 341430 | 363551 | 384503 | 455199 | 490502 | 493347 | 490484"
+Demographics 8,8,"$80,001 - $100,000 | 56143 | 69800 | 83175 | 97337 | 112221 | 130200 | 153682 | 173066 | 179169 | 200818 | 220221 | 259298 | 302372 | 325791 | 345704"
+Demographics 8,9,"$100,001 - $120,000 | 25920 | 32896 | 38980 | 45978 | 52791 | 60864 | 74147 | 80137 | 83746 | 94963 | 111040 | 137603 | 166426 | 204570 | 225430"
+Demographics 8,10,"Over $120,000 | 42469 | 55723 | 67832 | 78809 | 90930 | 105471 | 139501 | 126524 | 129584 | 147041 | 178735 | 238334 | 290520"
+Demographics 8,11,"$120,001 - $140,000 | 123312 | 139933"
+Demographics 8,12,"$140,001 - $160,000 | 78515 | 88085"
+Demographics 8,13,"$160,001 - $180,000 | 53335 | 60898"
+Demographics 8,14,"Over $180,000 | 124815 | 153537"
+Demographics 8,15,Total | 1517399 | 1653054 | 1789729 | 1924795 | 2027040 | 2133138 | 2175220 | 2288983 | 2975155 | 2900078 | 3120579 | 3250812 | 3307563 | 3362695 | 3417191
+Demographics 8,16,
+Demographics 8,17,Technical notes:
+Demographics 8,18,1: KiwiSaver membership numbers may include:
+Demographics 8,19,"·  People living overseas. If a KiwiSaver member moves overseas, they can choose to remain a member, even if they no longer reside here"
+Demographics 8,20,"·  People who have died, as the process of closing their accounts and exiting can take time to complete."
+Demographics 8,21,2: People with no income are excluded.
+Demographics 8,22,"3: The total income includes PIE (portfolio investment entity) income. For some members,their only income is from theirKiwiSaver investment, resulting in PIE income."
+Demographics 8,23,"4: Income details are for the tax year prior to the financial year. For example, income details for members as at 30 June 2026 are from the 2025 tax year."
+Demographics 8,24,5: To ensure data confidentiality we have grouped some categories.
+Demographics 8,25,
+Demographics 8,26,Source:
+Demographics 8,27,1: Inland Revenue administrative data.
+Demographics 8,28,"2: From April 2020, KiwiSaver information is reported from a new system."
+Demographics 8,29,
+Demographics 8,30,Return
+Demographics 9,1,"Number of KiwiSaver members, by annual income and age as at 30 June 2026"
+Demographics 9,2,
+Demographics 9,3,Age group | Income group | Number of members
+Demographics 9,4,"Age 0 to 17 | $1 - $20,000 | 139635"
+Demographics 9,5,"Age 0 to 17 | $20,001 - $40,000 | 749"
+Demographics 9,6,"Age 0 to 17 | $40,001 - $60,000 | 213"
+Demographics 9,7,"Age 0 to 17 | $60,001 - $80,000 | 95"
+Demographics 9,8,"Age 0 to 17 | $80,001 - $100,000 | 12"
+Demographics 9,9,"Age 0 to 17 | $100,001 - $120,000 | 18"
+Demographics 9,10,"Age 0 to 17 | $120,001 - $140,000 | 7"
+Demographics 9,11,"Age 0 to 17 | $140,001 - $160,000 | 8"
+Demographics 9,12,"Age 0 to 17 | $160,001 - $180,000 | 17"
+Demographics 9,13,"Age 0 to 17 | Over $180,000 | 22"
+Demographics 9,14,Age 0 to 17 | No income information | 21244
+Demographics 9,15,"Age 18 to 24 | $1 - $20,000 | 192253"
+Demographics 9,16,"Age 18 to 24 | $20,001 - $40,000 | 89041"
+Demographics 9,17,"Age 18 to 24 | $40,001 - $60,000 | 63122"
+Demographics 9,18,"Age 18 to 24 | $60,001 - $80,000 | 32709"
+Demographics 9,19,"Age 18 to 24 | $80,001 - $100,000 | 6472"
+Demographics 9,20,"Age 18 to 24 | $100,001 - $120,000 | 1334"
+Demographics 9,21,"Age 18 to 24 | $120,001 - $140,000 | 410"
+Demographics 9,22,"Age 18 to 24 | $140,001 - $160,000 | 191"
+Demographics 9,23,"Age 18 to 24 | $160,001 - $180,000 | 328"
+Demographics 9,24,"Age 18 to 24 | Over $180,000 | 358"
+Demographics 9,25,Age 18 to 24 | No income information | 9907
+Demographics 9,26,"Age 25 to 34 | $1 - $20,000 | 181063"
+Demographics 9,27,"Age 25 to 34 | $20,001 - $40,000 | 127068"
+Demographics 9,28,"Age 25 to 34 | $40,001 - $60,000 | 112221"
+Demographics 9,29,"Age 25 to 34 | $60,001 - $80,000 | 137973"
+Demographics 9,30,"Age 25 to 34 | $80,001 - $100,000 | 83373"
+Demographics 9,31,"Age 25 to 34 | $100,001 - $120,000 | 40623"
+Demographics 9,32,"Age 25 to 34 | $120,001 - $140,000 | 20153"
+Demographics 9,33,"Age 25 to 34 | $140,001 - $160,000 | 9718"
+Demographics 9,34,"Age 25 to 34 | $160,001 - $180,000 | 5274"
+Demographics 9,35,"Age 25 to 34 | Over $180,000 | 7688"
+Demographics 9,36,Age 25 to 34 | No income information | 7754
+Demographics 9,37,"Age 35 to 44 | $1 - $20,000 | 181559"
+Demographics 9,38,"Age 35 to 44 | $20,001 - $40,000 | 103618"
+Demographics 9,39,"Age 35 to 44 | $40,001 - $60,000 | 88836"
+Demographics 9,40,"Age 35 to 44 | $60,001 - $80,000 | 112690"
+Demographics 9,41,"Age 35 to 44 | $80,001 - $100,000 | 90755"
+Demographics 9,42,"Age 35 to 44 | $100,001 - $120,000 | 64029"
+Demographics 9,43,"Age 35 to 44 | $120,001 - $140,000 | 42091"
+Demographics 9,44,"Age 35 to 44 | $140,001 - $160,000 | 26252"
+Demographics 9,45,"Age 35 to 44 | $160,001 - $180,000 | 17316"
+Demographics 9,46,"Age 35 to 44 | Over $180,000 | 36787"
+Demographics 9,47,Age 35 to 44 | No income information | 6225
+Demographics 9,48,"Age 45 to 54 | $1 - $20,000 | 105905"
+Demographics 9,49,"Age 45 to 54 | $20,001 - $40,000 | 76759"
+Demographics 9,50,"Age 45 to 54 | $40,001 - $60,000 | 68630"
+Demographics 9,51,"Age 45 to 54 | $60,001 - $80,000 | 89598"
+Demographics 9,52,"Age 45 to 54 | $80,001 - $100,000 | 73411"
+Demographics 9,53,"Age 45 to 54 | $100,001 - $120,000 | 54375"
+Demographics 9,54,"Age 45 to 54 | $120,001 - $140,000 | 35541"
+Demographics 9,55,"Age 45 to 54 | $140,001 - $160,000 | 24011"
+Demographics 9,56,"Age 45 to 54 | $160,001 - $180,000 | 17737"
+Demographics 9,57,"Age 45 to 54 | Over $180,000 | 50613"
+Demographics 9,58,Age 45 to 54 | No income information | 3180
+Demographics 9,59,"Age 55 to 64 | $1 - $20,000 | 92395"
+Demographics 9,60,"Age 55 to 64 | $20,001 - $40,000 | 84477"
+Demographics 9,61,"Age 55 to 64 | $40,001 - $60,000 | 68171"
+Demographics 9,62,"Age 55 to 64 | $60,001 - $80,000 | 85407"
+Demographics 9,63,"Age 55 to 64 | $80,001 - $100,000 | 65340"
+Demographics 9,64,"Age 55 to 64 | $100,001 - $120,000 | 46201"
+Demographics 9,65,"Age 55 to 64 | $120,001 - $140,000 | 29057"
+Demographics 9,66,"Age 55 to 64 | $140,001 - $160,000 | 19786"
+Demographics 9,67,"Age 55 to 64 | $160,001 - $180,000 | 14501"
+Demographics 9,68,"Age 55 to 64 | Over $180,000 | 42289"
+Demographics 9,69,Age 55 to 64 | No income information | 1749
+Demographics 9,70,"Age 65 plus | $1 - $20,000 | 27747"
+Demographics 9,71,"Age 65 plus | $20,001 - $40,000 | 69267"
+Demographics 9,72,"Age 65 plus | $40,001 - $60,000 | 40179"
+Demographics 9,73,"Age 65 plus | $60,001 - $80,000 | 31956"
+Demographics 9,74,"Age 65 plus | $80,001 - $100,000 | 26287"
+Demographics 9,75,"Age 65 plus | $100,001 - $120,000 | 18795"
+Demographics 9,76,"Age 65 plus | $120,001 - $140,000 | 12652"
+Demographics 9,77,"Age 65 plus | $140,001 - $160,000 | 8106"
+Demographics 9,78,"Age 65 plus | $160,001 - $180,000 | 5718"
+Demographics 9,79,"Age 65 plus | Over $180,000 | 15753"
+Demographics 9,80,Age 65 plus | No income information | 827
+Demographics 9,81,"No information | $1 - $20,000 | 80"
+Demographics 9,82,"No information | $20,001 - $40,000 | 68"
+Demographics 9,83,"No information | $40,001 - $60,000 | 64"
+Demographics 9,84,"No information | $60,001 - $80,000 | 56"
+Demographics 9,85,"No information | $80,001 - $100,000 | 54"
+Demographics 9,86,"No information | $100,001 - $120,000 | 55"
+Demographics 9,87,"No information | $120,001 - $140,000 | 22"
+Demographics 9,88,"No information | $140,001 - $160,000 | 13"
+Demographics 9,89,"No information | $160,001 - $180,000 | 7"
+Demographics 9,90,"No information | Over $180,000 | 27"
+Demographics 9,91,No information | No income information | 180
+Demographics 9,92,
+Demographics 9,93,Technical notes:
+Demographics 9,94,1: KiwiSaver membership numbers may include:
+Demographics 9,95,"·  People living overseas. If a KiwiSaver member moves overseas, they can choose to remain a member, even if they no longer reside here"
+Demographics 9,96,"·  People who have died, as the process of closing their accounts and exiting can take time to complete."
+Demographics 9,97,"2: The total income includes PIE (portfolio investment entity) income. For some members, their only income is from their KiwiSaver investment, resulting in PIE income."
+Demographics 9,98,"3: Income details are for the tax year prior to the financial year. For example, income details for members as at 30 June 2026 are from the 2025 tax year."
+Demographics 9,99,4: Members with no income are grouped under 'No income information'.
+Demographics 9,100,5: Members with no age recorded are grouped under 'No information'.
+Demographics 9,101,6: To ensure data confidentiality some categories are grouped.
+Demographics 9,102,
+Demographics 9,103,Source:
+Demographics 9,104,1: Inland Revenue administrative data.
+Demographics 9,105,
+Demographics 9,106,Return
+Demographics 10,1,"Number of KiwiSaver members, by region as at 30 June"
+Demographics 10,2,
+Demographics 10,3,Region | 41090 | 41455 | 41820 | 42185 | 42551 | 42916 | 43281 | 43646 | 44012 | 44377 | 44742 | 45107 | 45473 | 45838 | 46203
+Demographics 10,4,Auckland | 687575 | 747385 | 812127 | 870700 | 901763 | 938524 | 956676 | 978526 | 1018409 | 1017974 | 1049992 | 1116826 | 1141396 | 1152919 | 1171877
+Demographics 10,5,Bay of Plenty | 111781 | 122547 | 134774 | 146130 | 154382 | 162867 | 169053 | 174597 | 173601 | 189352 | 193824 | 206014 | 209046 | 211050 | 214384
+Demographics 10,6,Canterbury | 236885 | 260267 | 285948 | 308092 | 322110 | 335939 | 341877 | 350060 | 391406 | 375217 | 385187 | 415301 | 425038 | 433840 | 444044
+Demographics 10,7,Chatham Islands | 49 | 60 | 74 | 86 | 96 | 101 | 98 | 102 | 111 | 105 | 107 | 322 | 334 | 340 | 344
+Demographics 10,8,Gisborne | 20396 | 21849 | 23626 | 25061 | 25712 | 26691 | 27275 | 27717 | 26100 | 29103 | 29588 | 31708 | 31944 | 31835 | 31972
+Demographics 10,9,Hawkes Bay | 69615 | 74798 | 81121 | 86514 | 90639 | 94661 | 96520 | 98365 | 104287 | 104816 | 106655 | 111843 | 112743 | 113110 | 113979
+Demographics 10,10,Manawatū/Whanganui | 89076 | 96719 | 105943 | 114099 | 118984 | 124726 | 128066 | 131498 | 144451 | 139165 | 141835 | 150862 | 152284 | 153618 | 155247
+Demographics 10,11,Marlborough | 17174 | 18880 | 20647 | 22347 | 23541 | 24664 | 25200 | 25780 | 27313 | 27500 | 28064 | 29869 | 30165 | 30417 | 30742
+Demographics 10,12,Nelson | 27608 | 29796 | 32285 | 34663 | 36135 | 37949 | 38542 | 39417 | 32106 | 31881 | 32605 | 34502 | 34743 | 34605 | 34910
+Demographics 10,13,Northland | 58261 | 63513 | 69792 | 75326 | 78918 | 83415 | 86781 | 89627 | 98201 | 97374 | 98941 | 109353 | 110648 | 112578 | 114116
+Demographics 10,14,Otago | 81324 | 89676 | 99082 | 107593 | 112813 | 118740 | 120074 | 124518 | 134081 | 130556 | 134106 | 148723 | 151645 | 153448 | 156345
+Demographics 10,15,Southland | 37895 | 41069 | 44311 | 47615 | 49565 | 51395 | 52408 | 53445 | 55046 | 54447 | 55674 | 61130 | 61961 | 62716 | 63587
+Demographics 10,16,Taranaki | 43606 | 47105 | 51293 | 55930 | 58529 | 61388 | 63103 | 64948 | 68326 | 70097 | 71586 | 75416 | 76084 | 76949 | 77843
+Demographics 10,17,Tasman | 12725 | 13870 | 15331 | 16448 | 17257 | 18184 | 18616 | 19342 | 13457 | 30211 | 30646 | 34486 | 34850 | 35221 | 35900
+Demographics 10,18,Waikato | 161804 | 177565 | 195561 | 211242 | 221414 | 233898 | 238786 | 245934 | 306581 | 273894 | 280750 | 300676 | 306258 | 310676 | 317284
+Demographics 10,19,Wellington | 215902 | 234642 | 255050 | 273449 | 284910 | 297897 | 301999 | 310108 | 326558 | 328022 | 337276 | 352324 | 357221 | 358576 | 362191
+Demographics 10,20,West Coast | 12643 | 13811 | 14973 | 16034 | 16575 | 17138 | 17893 | 18368 | 20463 | 16993 | 17212 | 19635 | 19815 | 20161 | 20389
+Demographics 10,21,Other | 82125 | 93291 | 108627 | 119590 | 128725 | 132828 | 190165 | 213722 | 114237 | 208220 | 210304 | 101404 | 103868 | 113347 | 123103
+Demographics 10,22,Total | 1966444 | 2146843 | 2350565 | 2530919 | 2642068 | 2761005 | 2873132 | 2966074 | 3054734 | 3124927 | 3204352 | 3300394 | 3360043 | 3405406 | 3468257
+Demographics 10,23,
+Demographics 10,24,Technical notes:
+Demographics 10,25,"1: Other includes: overseas addresses, and members who do not have a valid New Zealand post code."
+Demographics 10,26,
+Demographics 10,27,Source:
+Demographics 10,28,1: Inland Revenue administration data.
+Demographics 10,29,"2: From April 2020, KiwiSaver information is reported from a new system."
+Demographics 10,30,
+Demographics 10,31,Return
+Enrolment 1,1,Percentage change by enrolment method asat 30 June
+Enrolment 1,2,
+Enrolment 1,3,"Enrolments in the year ended | Auto-enrolled through employer | Opt-in through 
+employer | Opt-in through provider (active choice)"
+Enrolment 1,4,44742 | 2.3E-2 | 8.1000000000000003E-2 | 0.02
+Enrolment 1,5,45107 | 2.9000000000000001E-2 | 0.10299999999999999 | 0.02
+Enrolment 1,6,45473 | 1.9E-2 | 6.2E-2 | 0.01
+Enrolment 1,7,45838 | 0.01 | 5.8999999999999997E-2 | 8.9999999999999993E-3
+Enrolment 1,8,46203 | 1.0999999999999999E-2 | 5.8000000000000003E-2 | 1.7999999999999999E-2
+Enrolment 1,9,
+Enrolment 1,10,Technical notes:
+Enrolment 1,11,1: Members who were automatically enrolled have a provisional period of 8 weeks in which they can decide to opt out.
+Enrolment 1,12,2: All enrolments 1 July 2021 to 30 June 2026 including provisional members.
+Enrolment 1,13,3: Enrolment method is the original enrolment method used to join KiwiSaver.
+Enrolment 1,14,
+Enrolment 1,15,Source:
+Enrolment 1,16,1: Inland Revenue administrative data.
+Enrolment 1,17,
+Enrolment 1,18,Return
+Enrolment 2,1,Number of KiwiSaver members by enrolment method as at 30 June
+Enrolment 2,2,
+Enrolment 2,3,Enrolment method | 41090 | 41455 | 41820 | 42185 | 42551 | 42916 | 43281 | 43646 | 44012 | 44377 | 44742 | 45107 | 45473 | 45838 | 46203
+Enrolment 2,4,Automatically enrolled - via employer | 742751 | 830461 | 917544 | 998762 | 1066513 | 1136990 | 1202826 | 1264382 | 1246207 | 1274968 | 1304198 | 1341542 | 1367402 | 1380873 | 1395873
+Enrolment 2,5,Opt in via employer | 247950 | 256302 | 267943 | 275185 | 283145 | 291346 | 298142 | 304113 | 220498 | 225606 | 243945 | 269188 | 285882 | 302885 | 320410
+Enrolment 2,6,Opt in via provider (active choice) | 975743 | 1060080 | 1165078 | 1256972 | 1292410 | 1332669 | 1372164 | 1397579 | 1588029 | 1624353 | 1656209 | 1689664 | 1706759 | 1721648 | 1751974
+Enrolment 2,7,Total | 1966444 | 2146843 | 2350565 | 2530919 | 2642068 | 2761005 | 2873132 | 2966074 | 3054734 | 3124927 | 3204352 | 3300394 | 3360043 | 3405406 | 3468257
+Enrolment 2,8,
+Enrolment 2,9,Technical notes:
+Enrolment 2,10,1: Members who were automatically enrolled have a provisional period of 8 weeks in which they can decide to opt out.
+Enrolment 2,11,2: Enrolment method is the original enrolment method used to join KiwiSaver.
+Enrolment 2,12,
+Enrolment 2,13,Source:
+Enrolment 2,14,1: Inland Revenue administration data.
+Enrolment 2,15,"2: From April 2020, the definition of the enrolment method has changed."
+Enrolment 2,16,"3: From April 2020, KiwiSaver information is reported from a new system."
+Enrolment 2,17,
+Enrolment 2,18,Return
+Exiting,1,Number of KiwiSaver closed accounts
+Exiting,2,
+Exiting,3,Closure reason | 39629 | 39994 | 40359 | 40724 | 41090 | 41455 | 41820 | 42185 | 42551 | 42916 | 43281 | 43646 | 44012 | 44377 | 44742 | 45107 | 45473 | 45838 | 46203
+Exiting,4,Death | 3892 | 8447 | 13664 | 19686 | 26115 | 32769 | 39473 | 47242 | 55277 | 64094 | 72683 | 78932 | 84886 | 89196 | 93392 | 97749 | 102041 | 106166 | 109587
+Exiting,5,Serious illness | 0 | 33 | 140 | 293 | 560 | 990 | 1466 | 2072 | 2843 | 3740 | 4870 | 6213 | 7673 | 9276 | 10622 | 12338 | 14249 | 16446 | 18651
+Exiting,6,Permanent emigration | 4706 | 10400 | 15244 | 21076 | 28590 | 38924 | 44205 | 49954 | 55563 | 60189 | 62245 | 63978 | 65559 | 67221 | 69450 | 72960 | 80252 | 88893 | 97798
+Exiting,7,Retirement | 0 | 0 | 0 | 0 | 0 | 25636 | 43699 | 62052 | 80327 | 99022 | 117794 | 138971 | 157938 | 176083 | 199209 | 231822 | 267423 | 297936 | 327352
+Exiting,8,Other | 870 | 4164 | 7104 | 11306 | 12911 | 14496 | 17018 | 20143 | 23265 | 26453 | 29733 | 32683 | 44349 | 51242 | 56325 | 62743 | 71561 | 82056 | 96233
+Exiting,9,Total | 9468 | 23044 | 36152 | 52361 | 68176 | 112815 | 145861 | 181463 | 217275 | 253498 | 287325 | 320777 | 360405 | 393018 | 428998 | 477612 | 535526 | 591497 | 649621
+Exiting,10,
+Exiting,11,Technical notes:
+Exiting,12,1: 'Other' contains reasons such as invalid enrolment or court order.
+Exiting,13,2: Permanent emigration includes KiwiSaver members who transfer to an Australian superannuation scheme.
+Exiting,14,"3: Since the introduction of KiwiSaver on 1 July 2007, the earliest a member could exit and withdraw funds due to retirement was 1 July 2012, if they had been in the scheme for 5 years and were 65 years old."
+Exiting,15,4: The number of individuals opted out of KiwiSaver is available on the 'Opt-outs 2' tab
+Exiting,16,5: All figures are as at September 2026.
+Exiting,17,
+Exiting,18,Source:
+Exiting,19,1: Inland Revenue administration data.
+Exiting,20,"2: From April 2020, KiwiSaver information is reported from a new system."
+Exiting,21,
+Exiting,22,Return
+Membership size,1,KiwiSaver scheme provider membership size as at 30 June
+Membership size,2,
+Membership size,3,Members | 44742 | 45107 | 45473 | 45838 | 46203
+Membership size,4,"< 10,000 | 17 | 19 | 18 | 17 | 17"
+Membership size,5,"10,000 - 100,000 | 11 | 10 | 10 | 12 | 12"
+Membership size,6,100k + | 10 | 10 | 11 | 11 | 11
+Membership size,7,
+Membership size,8,Technical notes:
+Membership size,9,1: All members are aggregated by the scheme provider.
+Membership size,10,2: To ensure data confidentiality some categories are grouped.
+Membership size,11,
+Membership size,12,Source:
+Membership size,13,1: Inland Revenue administration data.
+Membership size,14,"2: From April 2020, KiwiSaver information is reported from a new system."
+Membership size,15,
+Membership size,16,Return
+Amount withdrawn 1,1,"Amount of KiwiSaver funds withdrawn, by withdrawal reason, for the year ended 30 June"
+Amount withdrawn 1,2,
+Amount withdrawn 1,3,Withdrawal reason | 41090 | 41455 | 41820 | 42185 | 42551 | 42916 | 43281 | 43646 | 44012 | 44377 | 44742 | 45107 | 45473 | 45838 | 46203
+Amount withdrawn 1,4,Financial hardship | 22937400 | 23121000 | 30356200 | 41094100 | 59359500 | 69912900 | 95315900 | 104468800 | 125315700 | 147931700 | 104425000 | 172965000 | 300514800 | 471209900 | 538167200
+Amount withdrawn 1,5,First home | 62720100 | 123409800 | 158971600 | 257834000 | 494988800 | 601479300 | 712480800 | 986882400 | 1114602300 | 1624992200 | 1249781400 | 974662800 | 1372694300 | 1860659500 | 2272349800
+Amount withdrawn 1,6,Total | 85657500 | 146530800 | 189327800 | 298928200 | 554348200 | 671392200 | 807796700 | 1091351200 | 1239918000 | 1772923800 | 1354206400 | 1147627800 | 1673209100 | 2331869400 | 2810516900
+Amount withdrawn 1,7,
+Amount withdrawn 1,8,Technical notes:
+Amount withdrawn 1,9,"1: Data has been provided to Inland Revenue from scheme providers, and may not be 100% of all of these type of fund withdrawals."
+Amount withdrawn 1,10,"2: Data does not cover all types of withdrawals, for example, Inland Revenue does not capture retirement withdrawals."
+Amount withdrawn 1,11,3: Figures are rounded to the nearest $100.
+Amount withdrawn 1,12,"4: Due to rounding, figures may not sum exactly to the totals."
+Amount withdrawn 1,13,
+Amount withdrawn 1,14,Source:
+Amount withdrawn 1,15,1: Inland Revenue administration data.
+Amount withdrawn 1,16,"2: From April 2020, KiwiSaver information is reported from a new system."
+Amount withdrawn 1,17,3: Data from June 2020 through to June 2024 was updated as at July 2024.
+Amount withdrawn 1,18,
+Amount withdrawn 1,19,Return
+Amount withdrawn 2,1,"Amount of KiwiSaver funds withdrawn, by region, for the year ended 30 June"
+Amount withdrawn 2,2,
+Amount withdrawn 2,3,2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026
+Amount withdrawn 2,4,Region | Significant financial hardship | First home purchase | Significant financial hardship | First home purchase | Significant financial hardship | First home purchase | Significant financial hardship | First home purchase | Significant financial hardship | First home purchase | Significant financial hardship | First home purchase | Significant financial hardship | First home purchase
+Amount withdrawn 2,5,Auckland | 50555300 | 341369500 | 59101000 | 558480500 | 36789100 | 418662400 | 72746900 | 344071300 | 132346200 | 474699500 | 208968800 | 630983400 | 237652200 | 758749900
+Amount withdrawn 2,6,Bay Of Plenty | 6413300 | 62909300 | 8346000 | 80182600 | 6749900 | 64433000 | 10565200 | 50590700 | 17467000 | 79475500 | 27580200 | 107162500 | 33043000 | 133587000
+Amount withdrawn 2,7,Canterbury | 14755000 | 179369900 | 16828700 | 245915200 | 12122700 | 183042400 | 18091700 | 146283700 | 29190500 | 198780800 | 44197000 | 272275500 | 46811900 | 344676600
+Amount withdrawn 2,8,Gisborne | 1100700 | 7557400 | 1081900 | 9863800 | 850900 | 9268700 | 1705200 | 7476500 | 3017700 | 11077600 | 6521700 | 16211700 | 6719600 | 19979600
+Amount withdrawn 2,9,Hawkes Bay | 3828000 | 32172000 | 4073900 | 40114500 | 3331000 | 35018200 | 7492600 | 28135200 | 10316900 | 45703100 | 16649700 | 63838300 | 20326000 | 73357500
+Amount withdrawn 2,10,Manawatū/Whanganui | 4654400 | 51132000 | 5334400 | 62459400 | 5008400 | 50253900 | 7684800 | 44189200 | 14077600 | 62908600 | 20802300 | 88051500 | 25992100 | 107749800
+Amount withdrawn 2,11,Marlborough | 674500 | 9703200 | 1167300 | 12679500 | 1049900 | 9531500 | 1484200 | 6316300 | 1982700 | 10345800 | 2637800 | 17847300 | 3663600 | 21592200
+Amount withdrawn 2,12,Nelson | 580900 | 10362000 | 870500 | 15352300 | 609300 | 11260200 | 926600 | 9801100 | 2101700 | 11543200 | 3210800 | 18506200 | 3183700 | 21958800
+Amount withdrawn 2,13,Northland | 3892600 | 27810400 | 4945800 | 36598300 | 3971600 | 29872200 | 7019600 | 22059300 | 10958300 | 32847400 | 16845000 | 48337400 | 21021600 | 59389700
+Amount withdrawn 2,14,Otago | 3364400 | 39342600 | 3670400 | 62237200 | 3145000 | 49976500 | 4961200 | 43049200 | 7318300 | 63537900 | 10750100 | 83800600 | 11550600 | 105288500
+Amount withdrawn 2,15,Southland | 1771600 | 19970600 | 2181200 | 28496900 | 1721700 | 22625300 | 2556200 | 19766700 | 3831900 | 26469700 | 6007900 | 35361200 | 6753800 | 45504500
+Amount withdrawn 2,16,Taranaki | 2254800 | 23395600 | 2910500 | 30970700 | 2446200 | 24540600 | 3891100 | 20044800 | 6333200 | 28300500 | 9843500 | 39172000 | 10415100 | 45170400
+Amount withdrawn 2,17,Tasman | 626600 | 10521100 | 863700 | 13791200 | 660500 | 10147500 | 1307900 | 8998700 | 1873000 | 12357200 | 2570000 | 18322100 | 2609600 | 22361200
+Amount withdrawn 2,18,Waikato | 10388700 | 107804000 | 13551900 | 138246400 | 9576500 | 102831200 | 15615300 | 84083000 | 28116800 | 121546300 | 43260700 | 172038600 | 48870200 | 231012200
+Amount withdrawn 2,19,Wellington | 9223100 | 123722500 | 11941100 | 180038100 | 8959400 | 145758800 | 13899700 | 129340000 | 26484400 | 178462600 | 43864900 | 227341600 | 50879700 | 260884700
+Amount withdrawn 2,20,West Coast | 514700 | 7289100 | 809000 | 10178800 | 489300 | 8494200 | 682000 | 6973300 | 1358700 | 7637300 | 2134600 | 10214600 | 1887800 | 13834700
+Amount withdrawn 2,21,Other | 10717200 | 60171300 | 10254400 | 99386900 | 6943500 | 74064600 | 2334600 | 3483700 | 3739900 | 7001300 | 5364900 | 11194900 | 6786500 | 7252500
+Amount withdrawn 2,22,Total | 125315700 | 1114602300 | 147931700 | 1624992200 | 104425000 | 1249781400 | 172965000 | 974662800 | 300514800 | 1372694300 | 471209900 | 1860659500 | 538167200 | 2272349800
+Amount withdrawn 2,23,
+Amount withdrawn 2,24,Technical notes:
+Amount withdrawn 2,25,"1: Data has been provided to Inland Revenue from scheme providers, and may not be 100% of all of these type of fund withdrawals."
+Amount withdrawn 2,26,"2: Data does not cover all types of withdrawals, for example, Inland Revenue does not capture retirement withdrawals."
+Amount withdrawn 2,27,"3: Other includes: Chatham Islands, overseas addresses, and members who do not have a valid New Zealand post code."
+Amount withdrawn 2,28,4: Figures are rounded to the nearest $100.
+Amount withdrawn 2,29,"5: Due to rounding, figures may not sum exactly to the totals."
+Amount withdrawn 2,30,
+Amount withdrawn 2,31,Source:
+Amount withdrawn 2,32,1: Inland Revenue administrative data.
+Amount withdrawn 2,33,
+Amount withdrawn 2,34,Return
+Number of withdrawals 1,1,"Number of KiwiSaver fund withdrawals, by withdrawal reason, for the year ended 30 June"
+Number of withdrawals 1,2,
+Number of withdrawals 1,3,Withdrawal reason | 41090 | 41455 | 41820 | 42185 | 42551 | 42916 | 43281 | 43646 | 44012 | 44377 | 44742 | 45107 | 45473 | 45838 | 46203
+Number of withdrawals 1,4,Financial hardship | 6240 | 6010 | 7660 | 8250 | 10670 | 14910 | 15710 | 16720 | 18220 | 19940 | 14470 | 20600 | 32480 | 45870 | 52330
+Number of withdrawals 1,5,First home | 5890 | 10720 | 12720 | 16180 | 26570 | 32680 | 31920 | 40150 | 41370 | 54520 | 38740 | 30200 | 36960 | 43600 | 50470
+Number of withdrawals 1,6,
+Number of withdrawals 1,7,Technical notes:
+Number of withdrawals 1,8,"1: Data has been provided to Inland Revenue from scheme providers, and may not be 100% of all of these type of fund withdrawals."
+Number of withdrawals 1,9,"2: Data does not cover all types of withdrawals, for example, Inland Revenue does not capture retirement withdrawals."
+Number of withdrawals 1,10,3: The data represents a distinct count of members.
+Number of withdrawals 1,11,4: The data may include members who withdrew funds under both categories during the year.
+Number of withdrawals 1,12,5: Figures are rounded to the nearest 10.
+Number of withdrawals 1,13,
+Number of withdrawals 1,14,Source:
+Number of withdrawals 1,15,1: Inland Revenue administration data.
+Number of withdrawals 1,16,"2: From April 2020, KiwiSaver information is reported from a new system."
+Number of withdrawals 1,17,3: Data from June 2020 through to June 2024 was updated as at July 2024.
+Number of withdrawals 1,18,
+Number of withdrawals 1,19,Return
+Number of withdrawals 2,1,"Number of KiwiSaver fund withdrawals, by region, for the year ended 30 June"
+Number of withdrawals 2,2,
+Number of withdrawals 2,3,2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026
+Number of withdrawals 2,4,Region | Significant financial hardship | First home purchase | Significant financial hardship | First home purchase | Significant financial hardship | First home purchase | Significant financial hardship | First home purchase | Significant financial hardship | First home purchase | Significant financial hardship | First home purchase | Significant financial hardship | First home purchase
+Number of withdrawals 2,5,Auckland | 7200 | 11640 | 7940 | 17420 | 5180 | 12300 | 8490 | 10120 | 14140 | 12080 | 20080 | 13750 | 22860 | 15930
+Number of withdrawals 2,6,Bay Of Plenty | 980 | 2430 | 1130 | 2930 | 900 | 2090 | 1250 | 1670 | 1960 | 2240 | 2770 | 2650 | 3260 | 3060
+Number of withdrawals 2,7,Canterbury | 2100 | 6830 | 2210 | 8590 | 1660 | 5960 | 2190 | 4800 | 3190 | 5620 | 4420 | 6790 | 4750 | 8130
+Number of withdrawals 2,8,Gisborne | 180 | 310 | 170 | 340 | 150 | 300 | 240 | 230 | 350 | 310 | 590 | 370 | 620 | 410
+Number of withdrawals 2,9,Hawkes Bay | 580 | 1290 | 580 | 1440 | 470 | 1170 | 890 | 940 | 1190 | 1260 | 1620 | 1550 | 1960 | 1700
+Number of withdrawals 2,10,Manawatū/Whanganui | 770 | 2130 | 830 | 2300 | 710 | 1720 | 1020 | 1510 | 1570 | 1840 | 2120 | 2290 | 2670 | 2540
+Number of withdrawals 2,11,Marlborough | 120 | 400 | 150 | 460 | 140 | 300 | 150 | 200 | 210 | 310 | 280 | 420 | 380 | 500
+Number of withdrawals 2,12,Nelson | 100 | 430 | 140 | 550 | 90 | 370 | 130 | 330 | 260 | 340 | 330 | 470 | 360 | 540
+Number of withdrawals 2,13,Northland | 570 | 1090 | 670 | 1360 | 550 | 950 | 830 | 720 | 1150 | 950 | 1600 | 1190 | 1990 | 1400
+Number of withdrawals 2,14,Otago | 490 | 1630 | 530 | 2260 | 440 | 1620 | 620 | 1450 | 840 | 1830 | 1120 | 2160 | 1240 | 2490
+Number of withdrawals 2,15,Southland | 290 | 870 | 330 | 1100 | 260 | 770 | 330 | 690 | 480 | 820 | 680 | 970 | 730 | 1140
+Number of withdrawals 2,16,Taranaki | 360 | 920 | 430 | 1170 | 330 | 810 | 460 | 640 | 670 | 840 | 1010 | 1000 | 1060 | 1090
+Number of withdrawals 2,17,Tasman | 90 | 420 | 100 | 480 | 90 | 340 | 110 | 260 | 180 | 360 | 250 | 450 | 250 | 510
+Number of withdrawals 2,18,Waikato | 1500 | 4240 | 1820 | 5020 | 1350 | 3390 | 1880 | 2730 | 3090 | 3460 | 4300 | 4300 | 4900 | 5380
+Number of withdrawals 2,19,Wellington | 1400 | 4170 | 1540 | 5430 | 1150 | 4090 | 1670 | 3590 | 2680 | 4310 | 3980 | 4690 | 4540 | 5180
+Number of withdrawals 2,20,West Coast | 80 | 280 | 110 | 370 | 70 | 240 | 90 | 220 | 140 | 230 | 200 | 270 | 200 | 330
+Number of withdrawals 2,21,Other | 1420 | 2280 | 1280 | 3280 | 940 | 2340 | 260 | 110 | 380 | 170 | 520 | 270 | 580 | 150
+Number of withdrawals 2,22,Total | 18220 | 41370 | 19940 | 54500 | 14470 | 38740 | 20600 | 30200 | 32480 | 36960 | 45870 | 43600 | 52330 | 50470
+Number of withdrawals 2,23,
+Number of withdrawals 2,24,Technical notes:
+Number of withdrawals 2,25,"1: Data has been provided to Inland Revenue from scheme providers, and may not be 100% of all of these type of fund withdrawals."
+Number of withdrawals 2,26,"2: Data does not cover all types of withdrawals, for example, Inland Revenue does not capture retirement withdrawals."
+Number of withdrawals 2,27,3: The data represents a distinct count of members.
+Number of withdrawals 2,28,4: The data may include members who withdrew funds under both categories during the year.
+Number of withdrawals 2,29,"5: Other includes: Chatham Islands, overseas addresses, and members who do not have a valid New Zealand post code."
+Number of withdrawals 2,30,6: Figures are rounded to the nearest 10.
+Number of withdrawals 2,31,"7: Due to rounding, figures may not sum exactly to the totals."
+Number of withdrawals 2,32,
+Number of withdrawals 2,33,Source:
+Number of withdrawals 2,34,1: Inland Revenue administration data.
+Number of withdrawals 2,35,
+Number of withdrawals 2,36,Return
+Opt-outs 1,1,Frequency of opt-outs per individual for the year ended 30 June 2026
+Opt-outs 1,2,
+Opt-outs 1,3,Number of opt-outs | Number of individuals | Percentage
+Opt-outs 1,4,1 | 13096 | 0.93200000000000005
+Opt-outs 1,5,2 | 860 | 6.0999999999999999E-2
+Opt-outs 1,6,3+ | 102 | 7.0000000000000001E-3
+Opt-outs 1,7,Total | 14058 | 1
+Opt-outs 1,8,
+Opt-outs 1,9,Technical note:
+Opt-outs 1,10,1: All individuals who have opted out at least once during the year ended 30 June 2026.
+Opt-outs 1,11,
+Opt-outs 1,12,Source:
+Opt-outs 1,13,1: Inland Revenue administration data.
+Opt-outs 1,14,
+Opt-outs 1,15,Return
+Opt-outs 2,1,Number of individuals opted out of KiwiSaver as at 30 June
+Opt-outs 2,2,
+Opt-outs 2,3,Status | 41455 | 41820 | 42185 | 42551 | 42916 | 43281 | 43646 | 44012 | 44377 | 44742 | 45107 | 45473 | 45838 | 46203
+Opt-outs 2,4,Opted out | 247727 | 239243 | 230930 | 232528 | 231021 | 228404 | 225907 | 217594 | 204757 | 197181 | 193635 | 189519 | 187735 | 189741
+Opt-outs 2,5,
+Opt-outs 2,6,Technical note:
+Opt-outs 2,7,1: Members who were automatically enrolled have a provisional period of 8 weeks in which they can decide to opt out.
+Opt-outs 2,8,2: Closure data is available on the Exiting tab.
+Opt-outs 2,9,
+Opt-outs 2,10,Source:
+Opt-outs 2,11,1: Inland Revenue administration data.
+Opt-outs 2,12,"2: From April 2020, KiwiSaver information is reported from a new system."
+Opt-outs 2,13,3: Opt-out data from June 2020 through to June 2023 was updated as at September 2023.
+Opt-outs 2,14,
+Opt-outs 2,15,Return
+Payments to providers 1,1,"Payments to scheme providers, by category, for the year ended 30 June"
+Payments to providers 1,2,
+Payments to providers 1,3,Funds to providers (gross) $m | 39629 | 39994 | 40359 | 40724 | 41090 | 41455 | 41820 | 42185 | 42551 | 42916 | 43281 | 43646 | 44012 | 44377 | 44742 | 45107 | 45473 | 45838 | 46203
+Payments to providers 1,4,Employee deductions | 394.7 | 916.6 | 1051.3 | 1155.7 | 1321.7 | 1536.9 | 2050.8000000000002 | 2416 | 2669.3 | 3001.4 | 3295.8 | 3621.16 | 4488.5 | 4455 | 5107 | 5641.9 | 6074.2 | 6251.9 | 6644.8
+Payments to providers 1,5,Employer contributions | 63.5 | 354.7 | 625.5 | 740.3 | 865.8 | 833.2 | 1277.0999999999999 | 1542.6 | 1653.2 | 1828.3 | 1971.7 | 2146.52 | 2534.4 | 2587 | 2821.5 | 3135.5 | 3349.4 | 3439.4 | 3699.3
+Payments to providers 1,6,Voluntary contributions | 7.4 | 6.1 | 8.8000000000000007 | 15.5 | 16.2 | 23 | 31.2 | 39.299999999999997 | 45.6 | 40.299999999999997 | 45.4 | 43.03 | 50.8 | 76 | 53.8 | 35 | 39.200000000000003 | 48.5 | 58.5
+Payments to providers 1,7,Total member and employer | 465.6 | 1277.4000000000001 | 1685.6 | 1911.5 | 2203.6999999999998 | 2393.1 | 3359.1 | 3997.9 | 4368.1000000000004 | 4870 | 5312.9 | 5810.71 | 7073.7 | 7118 | 7982.3 | 8812.4 | 9462.7999999999993 | 9739.7999999999993 | 10402.6
+Payments to providers 1,8,Government contribution | 0 | 321.8 | 572.6 | 663.7 | 799.1 | 454.6 | 495.1 | 580.29999999999995 | 640.29999999999995 | 703 | 747.3 | 802.56 | 845.7 | 878 | 918 | 970.2 | 1006.3 | 1036.5 | 1017
+Payments to providers 1,9,Fee subsidy | 15.4 | 33.9 | 8.8000000000000007 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Payments to providers 1,10,Kick-start | 551.5 | 471.5 | 376.1 | 331.4 | 239.4 | 217.2 | 234.9 | 215.1 | 35.4 | 0.1 | 0.2 | 0.1 | 0.15 | 0 | 0.1 | 0.1 | 0 | 0 | 0
+Payments to providers 1,11,Interest | 4.9000000000000004 | 11.7 | 4.5999999999999996 | 4.2 | 5.8 | 5 | 7.2 | 8.1999999999999993 | 11.7 | 11.6 | 5.3 | 6.38 | 6.3 | 0.3 | 0.4 | 0.8 | 2.7 | 3.2 | 1.9
+Payments to providers 1,12,Total crown | 571.79999999999995 | 838.9 | 962.2 | 999.3 | 1044.3 | 676.8 | 737.2 | 803.6 | 687.4 | 714.7 | 752.8 | 809.04 | 852.15 | 878.3 | 918.4 | 971 | 1008.9 | 1039.7 | 1018.9
+Payments to providers 1,13,Total payments to providers | 1037.3 | 2116.1999999999998 | 2647.8 | 2910.7 | 3248 | 3069.9 | 4096.3 | 4801.5 | 5055.5 | 5584.7 | 6065.7 | 6619.75 | 7925.85 | 7996.3 | 8900.7000000000007 | 9783.4 | 10471.799999999999 | 10779.5 | 11421.6
+Payments to providers 1,14,
+Payments to providers 1,15,Technical notes:
+Payments to providers 1,16,1: Figures are gross and do not include payments refunded by providers to Inland Revenue.
+Payments to providers 1,17,2: Figures do not include KiwiSaver contributions held by Inland Revenue.
+Payments to providers 1,18,3: Government contribution figures represent all government contributions paid to KiwiSaver providers. Figures exclude government contributions paid to complying funds.
+Payments to providers 1,19,"4: Voluntary contributions include only those made through Inland Revenue, and exclude payments made directly to providers."
+Payments to providers 1,20,5: Kick-start payments ceased on 21 May 2015.
+Payments to providers 1,21,6: The KiwiSaver fee subsidy was repealed on 31 March 2009.
+Payments to providers 1,22,"7. Due to rounding, figures may not sum exactly to the totals."
+Payments to providers 1,23,
+Payments to providers 1,24,Source:
+Payments to providers 1,25,1: Inland Revenue administration data.
+Payments to providers 1,26,"2: From April 2020, KiwiSaver information is reported from a new system."
+Payments to providers 1,27,3: All figures are as at August 2026.
+Payments to providers 1,28,
+Payments to providers 1,29,Return
+Payments to providers 2,1,Number of KiwiSaver members by contribution rate
+Payments to providers 2,2,
+Payments to providers 2,3,Contribution rate | 44012 | 44377 | 44742 | 45107 | 45473 | 45838 | 46203
+Payments to providers 2,4,0.03 | 1045466 | 1204776 | 1275828 | 1395543 | 1406052 | 1384587 | 185949
+Payments to providers 2,5,3.5000000000000003E-2 | 1180164
+Payments to providers 2,6,0.04 | 371621 | 381747 | 376943 | 369478 | 354203 | 339428 | 347932
+Payments to providers 2,7,0.06 | 46131 | 79186 | 104726 | 121100 | 131655 | 139885 | 152400
+Payments to providers 2,8,0.08 | 155387 | 158505 | 147668 | 132990 | 122040 | 113609 | 109149
+Payments to providers 2,9,0.1 | 52191 | 83058 | 99653 | 105056 | 112194 | 119942 | 132335
+Payments to providers 2,10,No contribution | 1383938 | 1217655 | 1199534 | 1176227 | 1233899 | 1307955 | 1360328
+Payments to providers 2,11,
+Payments to providers 2,12,Technical notes:
+Payments to providers 2,13,"1: From 1 April 2019 to 31 March 2026, the minimum employee contribution rate was 3% of their gross salary or wages."
+Payments to providers 2,14,"2: From 1 April 2026, the minimum employee contribution rate is 3.5% (this is also the default rate) of their gross salary or wages."
+Payments to providers 2,15,·  members can apply to decrease their conribution rate to 3% (a temporary rate reduction) for a period of 3 months to 1 year
+Payments to providers 2,16,"·  members can also opt for the 4%, 6%, 8% or 10% rate."
+Payments to providers 2,17,"3: The contribution rate is calculated from each member's most recent payday during the year ending 30 June. If the member did not contribute through PAYE during the year they will appear as 'no contribution' in this table, even if they contributed outside of the PAYE system."
+Payments to providers 2,18,4: Within the no contribution category there are members who: 
+Payments to providers 2,19,·  were children (under 18 and therefore may not be earning) 
+Payments to providers 2,20,·  were not in work (including retirees)
+Payments to providers 2,21,·  were on a savings suspension
+Payments to providers 2,22,"·  were receiving accident compensation, a benefit, or paid parental leave which were not subject to compulsory deduction "
+Payments to providers 2,23,"·  have died, as the process of closing their accounts and exiting can take time to complete."
+Payments to providers 2,24,·  were overseas
+Payments to providers 2,25,·  were contributing to other work-based savings schemes.
+Payments to providers 2,26,"5: Voluntary contributions include only those made through Inland Revenue, and exclude payments made directly to providers."
+Payments to providers 2,27,6: Within the 3% category for 2026 there are members who:
+Payments to providers 2,28,·  last made an employee contribution prior to 1 April 2026
+Payments to providers 2,29,·  are on a temporary reduction rate.
+Payments to providers 2,30,7: Data from June 2020 through to June 2025 was updated as at September 2026.
+Payments to providers 2,31,
+Payments to providers 2,32,Source:
+Payments to providers 2,33,1: Inland Revenue administration data.
+Payments to providers 2,34,
+Payments to providers 2,35,Return
+Payments to Providers 3,1,"Members that have made a contribution to KiwiSaver through Inland Revenue or scheme provider, for the year ended 30 June"
+Payments to Providers 3,2,
+Payments to Providers 3,3,Year | Total members | Made a contribution | % | No contribution | %
+Payments to Providers 3,4,2021 | 3174547 | 2171859 | 0.68414769099339212 | 1002688 | 0.31585230900660788
+Payments to Providers 3,5,2022 | 3249653 | 2243128 | 0.69026693003837636 | 1006525 | 0.30973306996162364
+Payments to Providers 3,6,2023 | 3353164 | 2349936 | 0.70081153203362556 | 1003228 | 0.29918846796637444
+Payments to Providers 3,7,2024 | 3447256 | 2354052 | 0.6828770477156324 | 1093204 | 0.3171229522843676
+Payments to Providers 3,8,2025 | 3486291 | 2344770 | 0.6725686409998477 | 1141521 | 0.3274313590001523
+Payments to Providers 3,9,2026 | 3546055 | 2340767 | 0.66010453870568842 | 1205288 | 0.33989546129431158
+Payments to Providers 3,10,
+Payments to Providers 3,11,Technical notes:
+Payments to Providers 3,12,1: Total members represents individuals who were KiwiSaver members at any time during the financial year
+Payments to Providers 3,13,2: Information on those who contribute directly to scheme providers is only held by Inland Revenue if advised by scheme providers as part of a claim for the government contribution.
+Payments to Providers 3,14,3: Within the no contribution category there are members who: 
+Payments to Providers 3,15,·  were children (under 18 and therefore may not be earning) 
+Payments to Providers 3,16,·  were not in work (including retirees)
+Payments to Providers 3,17,·  were on a savings suspension
+Payments to Providers 3,18,"·  were receiving accident compensation, a benefit, or paid parental leave which were not subject to compulsory deduction "
+Payments to Providers 3,19,"·  have died, as the process of closing their accounts and exiting can take time to complete."
+Payments to Providers 3,20,·  were overseas
+Payments to Providers 3,21,·  were contributing to other work-based savings schemes.
+Payments to Providers 3,22,"4: Voluntary contributions include only those made through Inland Revenue, and exclude payments made directly to providers."
+Payments to Providers 3,23,
+Payments to Providers 3,24,Source:
+Payments to Providers 3,25,1: Inland Revenue administration data.
+Payments to Providers 3,26,
+Payments to Providers 3,27,Return
+Scheme entry ,1,Number of KiwiSaver members by scheme entry method as at 30 June
+Scheme entry ,2,
+Scheme entry ,3,Scheme entry method | 41090 | 41455 | 41820 | 42185 | 42551 | 42916 | 43281 | 43646 | 44012 | 44377 | 44742 | 45107 | 45473 | 45838 | 46203
+Scheme entry ,4,Default allocated | 503823 | 527320 | 543309 | 558258 | 566753 | 572840 | 573636 | 583226 | 588773 | 594041 | 606297 | 652304 | 660257 | 650642 | 638563
+Scheme entry ,5,Employer nominated | 183094 | 190110 | 194566 | 197853 | 200397 | 201442 | 201529 | 204082 | 205268 | 206230 | 211442 | 211246 | 214360 | 210868 | 206228
+Scheme entry ,6,Active choice | 1279246 | 1429040 | 1612216 | 1774397 | 1874399 | 1986239 | 2095672 | 2176881 | 2242956 | 2311364 | 2370590 | 2419296 | 2474872 | 2534404 | 2614671
+Scheme entry ,7,Not allocated | 281 | 373 | 474 | 411 | 519 | 484 | 2295 | 1885 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Scheme entry ,8,Total | 1966444 | 2146843 | 2350565 | 2530919 | 2642068 | 2761005 | 2873132 | 2966074 | 3036997 | 3111635 | 3188329 | 3282846 | 3349489 | 3395914 | 3459462
+Scheme entry ,9,
+Scheme entry ,10,Technical notes:
+Scheme entry ,11,"1: This data includes provisional members for 2019 and earlier years, then from April 2020 only reports active members. "
+Scheme entry ,12,2: Scheme entry method is the method members have used to enter their current scheme.
+Scheme entry ,13,
+Scheme entry ,14,Source:
+Scheme entry ,15,1: Inland Revenue administration data.
+Scheme entry ,16,2: From April 2020 KiwiSaver information is reported from a new system.
+Scheme entry ,17,
+Scheme entry ,18,Return
+Transfers 1,1,"Speed of transfer of employer contributions from IR to scheme providers, by month"
+Transfers 1,2,
+Transfers 1,3,Total working days range | 45869 | 45900 | 45930 | 45961 | 45991 | 46022 | 46053 | 46081 | 46112 | 46142 | 46173 | 46203 | 2025-26
+Transfers 1,4,0 days | 0.997 | 0.996 | 0.997 | 0.997 | 0.996 | 0.996 | 0.73699999999999999 | 0.997 | 0.996 | 0.996 | 0.996 | 0.99399999999999999 | 0.96899999999999997
+Transfers 1,5,1 day | 1E-3 | 1E-3 | 1E-3 | 2E-3 | 1E-3 | 2E-3 | 0.10199999999999999 | 1E-3 | 1E-3 | 2E-3 | 2E-3 | 2E-3 | 1.2E-2
+Transfers 1,6,2 days | 2.9999999999999997E-4 | 5.0000000000000001E-4 | 2.9999999999999997E-4 | 4.0000000000000002E-4 | 4.0000000000000002E-4 | 2.9999999999999997E-4 | 4.2900000000000001E-2 | 4.0000000000000002E-4 | 2.9999999999999997E-4 | 2.9999999999999997E-4 | 4.0000000000000002E-4 | 8.0000000000000004E-4 | 5.0000000000000001E-3
+Transfers 1,7,3 days | 2.9999999999999997E-4 | 5.0000000000000001E-4 | 4.0000000000000002E-4 | 2.9999999999999997E-4 | 4.0000000000000002E-4 | 2.9999999999999997E-4 | 4.6399999999999997E-2 | 4.0000000000000002E-4 | 4.0000000000000002E-4 | 2.9999999999999997E-4 | 4.0000000000000002E-4 | 1E-3 | 5.0000000000000001E-3
+Transfers 1,8,4-7 days | 8.9999999999999998E-4 | 1E-3 | 8.9999999999999998E-4 | 8.0000000000000004E-4 | 1E-3 | 8.9999999999999998E-4 | 7.1900000000000006E-2 | 8.9999999999999998E-4 | 8.9999999999999998E-4 | 8.0000000000000004E-4 | 1E-3 | 1.1999999999999999E-3 | 8.0000000000000002E-3
+Transfers 1,9,8-14 days | 2.9999999999999997E-4 | 2.9999999999999997E-4 | 2.0000000000000001E-4 | 2.9999999999999997E-4 | 5.0000000000000001E-4 | 5.0000000000000001E-4 | 4.0000000000000002E-4 | 2.9999999999999997E-4 | 2.9999999999999997E-4 | 2.0000000000000001E-4 | 2.9999999999999997E-4 | 4.0000000000000002E-4 | 2.9999999999999997E-4
+Transfers 1,10,15-28 days | 1E-4 | 2.0000000000000001E-4 | 1E-4 | 1E-4 | 4.0000000000000002E-4 | 2.0000000000000001E-4 | 1E-4 | 1E-4 | 1E-4 | 1E-4 | 1E-4 | 1E-4 | 1E-4
+Transfers 1,11,29-60 days | 0 | 1E-4 | 0 | 0 | 1E-4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Transfers 1,12,61-120 days | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Transfers 1,13,121+ days | 0 | 1E-4 | 0 | 0 | 0 | 0 | 0 | 0 | 1E-4 | 0 | 1E-4 | 0 | 0
+Transfers 1,14,
+Transfers 1,15,Technical notes:
+Transfers 1,16,1: Data excludes members in the 2-month provisional (holding) period. 
+Transfers 1,17,2: 2025-26 represents the overall result for July 2025 to June 2026.
+Transfers 1,18,3: Inland Revenue has a target to transfer 98% of KiwiSaver contributions to scheme providers within 2 working days.
+Transfers 1,19,"4: Due to rounding, figures may not sum exactly to the totals."
+Transfers 1,20,
+Transfers 1,21,Source:
+Transfers 1,22,1: Inland Revenue administration data.
+Transfers 1,23,
+Transfers 1,24,Return
+Transfers 2,1,"Speed of transfer of employee contributions from IR to scheme providers, by month"
+Transfers 2,2,
+Transfers 2,3,Total working days range | 45869 | 45900 | 45930 | 45961 | 45991 | 46022 | 46053 | 46081 | 46112 | 46142 | 46173 | 46203 | 2025-26
+Transfers 2,4,0 days | 0.997 | 0.996 | 0.997 | 0.997 | 0.996 | 0.996 | 0.73699999999999999 | 0.997 | 0.996 | 0.996 | 0.996 | 0.99399999999999999 | 0.96899999999999997
+Transfers 2,5,1 day | 1E-3 | 1E-3 | 1E-3 | 2E-3 | 1E-3 | 2E-3 | 0.10199999999999999 | 1E-3 | 1E-3 | 2E-3 | 2E-3 | 2E-3 | 1.2E-2
+Transfers 2,6,2 days | 2.9999999999999997E-4 | 5.0000000000000001E-4 | 2.9999999999999997E-4 | 4.0000000000000002E-4 | 4.0000000000000002E-4 | 2.9999999999999997E-4 | 4.2799999999999998E-2 | 2.9999999999999997E-4 | 2.9999999999999997E-4 | 2.9999999999999997E-4 | 4.0000000000000002E-4 | 8.0000000000000004E-4 | 5.0000000000000001E-3
+Transfers 2,7,3 days | 2.9999999999999997E-4 | 5.0000000000000001E-4 | 4.0000000000000002E-4 | 2.9999999999999997E-4 | 4.0000000000000002E-4 | 2.9999999999999997E-4 | 4.6100000000000002E-2 | 2.9999999999999997E-4 | 4.0000000000000002E-4 | 2.9999999999999997E-4 | 4.0000000000000002E-4 | 1E-3 | 5.0000000000000001E-3
+Transfers 2,8,4-7 days | 8.9999999999999998E-4 | 1E-3 | 8.9999999999999998E-4 | 8.0000000000000004E-4 | 8.9999999999999998E-4 | 8.0000000000000004E-4 | 7.1599999999999997E-2 | 8.9999999999999998E-4 | 8.9999999999999998E-4 | 8.0000000000000004E-4 | 1E-3 | 1.1999999999999999E-3 | 8.0000000000000002E-3
+Transfers 2,9,8-14 days | 2.9999999999999997E-4 | 2.9999999999999997E-4 | 2.0000000000000001E-4 | 2.9999999999999997E-4 | 5.0000000000000001E-4 | 4.0000000000000002E-4 | 4.0000000000000002E-4 | 2.9999999999999997E-4 | 2.9999999999999997E-4 | 2.0000000000000001E-4 | 2.9999999999999997E-4 | 4.0000000000000002E-4 | 2.9999999999999997E-4
+Transfers 2,10,15-28 days | 1E-4 | 2.0000000000000001E-4 | 1E-4 | 1E-4 | 4.0000000000000002E-4 | 2.0000000000000001E-4 | 1E-4 | 1E-4 | 1E-4 | 1E-4 | 1E-4 | 1E-4 | 1E-4
+Transfers 2,11,29-60 days | 0 | 1E-4 | 0 | 0 | 1E-4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Transfers 2,12,61-120 days | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Transfers 2,13,121+ days | 0 | 1E-4 | 0 | 0 | 0 | 0 | 0 | 0 | 1E-4 | 0 | 1E-4 | 1E-4 | 0
+Transfers 2,14,
+Transfers 2,15,Technical notes:
+Transfers 2,16,1: Data excludes members in the 2-month provisional (holding) period. 
+Transfers 2,17,2: 2025-26 represents the overall result for July 2025 to June 2026.
+Transfers 2,18,3: Inland Revenue has a target to transfer 98% of KiwiSaver contributions to scheme providers within 2 working days.
+Transfers 2,19,"4: Due to rounding, figures may not sum exactly to the totals."
+Transfers 2,20,
+Transfers 2,21,Source:
+Transfers 2,22,1: Inland Revenue administration data.
+Transfers 2,23,
+Transfers 2,24,Return
+Transfers 3,1,"Number of member transfers between scheme providers, by month"
+Transfers 3,2,
+Transfers 3,3,Month | 2021-22 | 2022-23 | 2023-24 | 2024-25 | 2025-26
+Transfers 3,4,Jul | 15437 | 18481 | 11242 | 15239 | 18147
+Transfers 3,5,Aug | 12910 | 17584 | 14278 | 14335 | 16902
+Transfers 3,6,Sep | 11480 | 8889 | 11715 | 14682 | 17364
+Transfers 3,7,Oct | 8600 | 8079 | 10061 | 13603 | 18804
+Transfers 3,8,Nov | 10910 | 8401 | 11794 | 13778 | 16211
+Transfers 3,9,Dec | 211568 | 7183 | 10159 | 11658 | 13467
+Transfers 3,10,Jan | 27730 | 5818 | 9181 | 11296 | 12859
+Transfers 3,11,Feb | 10690 | 7267 | 12454 | 14450 | 15329
+Transfers 3,12,Mar | 8164 | 9612 | 13024 | 15045 | 16412
+Transfers 3,13,Apr | 7507 | 7764 | 12572 | 11980 | 14089
+Transfers 3,14,May | 9664 | 11141 | 14573 | 14997 | 17556
+Transfers 3,15,Jun | 9438 | 11211 | 12240 | 13866 | 21757
+Transfers 3,16,
+Transfers 3,17,Technical notes:
+Transfers 3,18,1: Figures do not include transfers within the provisional period of 8 weeks.
+Transfers 3,19,"2: Figures only represent transfers between KiwiSaver schemes, transfers between complying funds are excluded."
+Transfers 3,20,3: Figures exclude transfers as a result of scheme mergers.
+Transfers 3,21,4: The large number of transfers in December 2021 was due to the outcomes of the default provider review which took place in that month.
+Transfers 3,22,
+Transfers 3,23,Source:
+Transfers 3,24,1: Inland Revenue administration data.
+Transfers 3,25,2: From April 2020 KiwiSaver information is reported from a new system.
+Transfers 3,26,
+Transfers 3,27,Return
+Transfers 4,1,Number of member transfers between scheme providers for the year ended 30 June
+Transfers 4,2,
+Transfers 4,3,Transfers | 41090 | 41455 | 41820 | 42185 | 42551 | 42916 | 43281 | 43646 | 44012 | 44377 | 44742 | 45107 | 45473 | 45838 | 46203
+Transfers 4,4,Total | 103438 | 126728 | 149407 | 157809 | 140557 | 149718 | 162982 | 144559 | 126974 | 139105 | 344098 | 121430 | 143293 | 164929 | 198897
+Transfers 4,5,
+Transfers 4,6,Technical notes:
+Transfers 4,7,1: Figures do not include transfers within the provisional period of 8 weeks.
+Transfers 4,8,"2: Figures only represent transfers between KiwiSaver scheme providers, transfers between complying funds are excluded."
+Transfers 4,9,3: Figures exclude transfers as a result of scheme mergers.
+Transfers 4,10,4: The 2022 financial year shows a large number of transfers due to the outcomes of the default provider review which took place in December 2021.
+Transfers 4,11,
+Transfers 4,12,Source:
+Transfers 4,13,1: Inland Revenue administration data.
+Transfers 4,14,2: From April 2020 KiwiSaver information is reported from a new system.
+Transfers 4,15,
+Transfers 4,16,Return
+Suspensions 1,1,Number of savings suspensions by type as at 30 June
+Suspensions 1,2,
+Suspensions 1,3,Suspension type | 41090 | 41455 | 41820 | 42185 | 42551 | 42916 | 43281 | 43646 | 44012 | 44377 | 44742 | 45107 | 45473 | 45838 | 46203
+Suspensions 1,4,Financial hardship | 219 | 307 | 440 | 303 | 187 | 209 | 198 | 136 | 358 | 1238 | 1033 | 1695 | 1535 | 1076 | 1161
+Suspensions 1,5,Ordinary | 83151 | 101108 | 112551 | 118850 | 127173 | 131501 | 135401 | 135693 | 137504 | 113393 | 99042 | 101160 | 87383 | 83917 | 82775
+Suspensions 1,6,Total | 83370 | 101415 | 112991 | 119153 | 127360 | 131710 | 135599 | 135829 | 137862 | 114631 | 100075 | 102855 | 88918 | 84993 | 83936
+Suspensions 1,7,
+Suspensions 1,8,Technical notes:
+Suspensions 1,9,1: Active members can request a savings suspension. There are two types of savings suspensions:
+Suspensions 1,10,·  ordinary - can be granted to any member after 12 months of membership
+Suspensions 1,11,·  financial hardship - can be granted earlier for members in financial hardship.
+Suspensions 1,12,
+Suspensions 1,13,Source:
+Suspensions 1,14,1: Inland Revenue administration data.
+Suspensions 1,15,2: Data from June 2020 through to June 2024 was updated as at July 2024.
+Suspensions 1,16,
+Suspensions 1,17,Return
+Suspensions 2,1,Number of savings suspensions by duration as at 30 June
+Suspensions 2,2,
+Suspensions 2,3,Suspension duration | 41090 | 41455 | 41820 | 42185 | 42551 | 42916 | 43281 | 43646 | 44012 | 44377 | 44742 | 45107 | 45473 | 45838 | 46203
+Suspensions 2,4,Up to 12 months | 5888 | 6962 | 8672 | 9379 | 9290 | 9275 | 9453 | 15885 | 45642 | 48128 | 59022 | 85878 | 88918 | 84993 | 83936
+Suspensions 2,5,13 to 24 months | 3476 | 3999 | 4990 | 5767 | 6245 | 6462 | 6613 | 6065 | 2339 | 278
+Suspensions 2,6,25 to 36 months | 1878 | 2099 | 2675 | 3232 | 3586 | 3740 | 3748 | 3659 | 2549 | 1481 | 283
+Suspensions 2,7,Over 36 months | 72128 | 88355 | 96654 | 100775 | 108239 | 112233 | 115785 | 110220 | 87332 | 64744 | 40770 | 16977
+Suspensions 2,8,Total | 83370 | 101415 | 112991 | 119153 | 127360 | 131710 | 135599 | 135829 | 137862 | 114631 | 100075 | 102855 | 88918 | 84993 | 83936
+Suspensions 2,9,
+Suspensions 2,10,Suspension duration (months) | 44012 | 44377 | 44742 | 45107 | 45473 | 45838 | 46203
+Suspensions 2,11,3 | 4814 | 1195 | 1402 | 1622 | 1944 | 2074 | 2315
+Suspensions 2,12,4 | 1360 | 350 | 439 | 500 | 641 | 585 | 672
+Suspensions 2,13,5 | 4079 | 236 | 285 | 374 | 447 | 435 | 444
+Suspensions 2,14,6 | 3241 | 2537 | 3302 | 4054 | 4777 | 4897 | 5311
+Suspensions 2,15,7 | 1067 | 230 | 265 | 348 | 420 | 406 | 402
+Suspensions 2,16,8 | 1050 | 351 | 476 | 591 | 669 | 637 | 665
+Suspensions 2,17,9 | 1040 | 256 | 314 | 448 | 512 | 480 | 513
+Suspensions 2,18,10 | 1229 | 367 | 427 | 538 | 676 | 636 | 666
+Suspensions 2,19,11 | 19633 | 85 | 100 | 159 | 154 | 159 | 172
+Suspensions 2,20,12 | 8129 | 42521 | 52012 | 77244 | 78678 | 74684 | 72776
+Suspensions 2,21,13 to 24 | 2339 | 278
+Suspensions 2,22,25 to 36 | 2549 | 1481 | 283
+Suspensions 2,23,Over 36 | 87332 | 64744 | 40770 | 16977
+Suspensions 2,24,Total | 137862 | 114631 | 100075 | 102855 | 88918 | 84993 | 83936
+Suspensions 2,25,
+Suspensions 2,26,Technical notes:
+Suspensions 2,27,1: Active members can request a savings suspension. There are two types of savings suspensions:
+Suspensions 2,28,·  ordinary - can be granted to any member after 12 months of membership
+Suspensions 2,29,·  financial hardship - can be granted earlier for members in financial hardship.
+Suspensions 2,30,"2: From 1 April 2019, an employee can apply for a savings suspension for a period from 3 months to 1 year. Previously, savings suspensions were called contributions holidays and could be granted for a period from 3 months to 5 years."
+Suspensions 2,31,"3: A member can apply for a new savings suspension at any time, they do not need to wait for their current suspension to expire. "
+Suspensions 2,32,
+Suspensions 2,33,Source:
+Suspensions 2,34,1: Inland Revenue administration data.
+Suspensions 2,35,"2: From April 2020, KiwiSaver information is reported from a new system."
+Suspensions 2,36,3: Data from June 2020 through to June 2024 was updated as at July 2024.
+Suspensions 2,37,
+Suspensions 2,38,Return

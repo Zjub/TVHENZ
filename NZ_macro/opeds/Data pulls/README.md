@@ -1,5 +1,11 @@
 # New Zealand fiscal-risk data pulls
 
+For the five additional op-ed topics (digital services taxes, tax streamlining,
+inflation taxation, public servants and benefits), see
+[README_OPED_TOPICS.md](README_OPED_TOPICS.md) and the
+[70-chart gallery](figures/op_ed_topics/index.html). Run
+`05_run_topic_pack.R` to pull their sources and regenerate their separate outputs.
+
 This folder supports the fiscal-risks op-ed with reproducible data and charts. The selection follows the themes in `NZ Macro chapter full.docx`: the structural deficit, reduced debt headroom for shocks, population ageing, rising health and superannuation costs, weak productivity/per-capita growth, the composition of government spending, and the debt consequences of leaving policy unchanged.
 
 ## Run

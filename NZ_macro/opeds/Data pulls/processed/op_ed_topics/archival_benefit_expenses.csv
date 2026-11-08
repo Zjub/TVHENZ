@@ -1,0 +1,404 @@
+year,programme,value_millions,original_cell,source_id,pdf_page,period_basis,accounting_basis
+1940,Unemployment Benefit,0.869,869,msd_statistical_2002,60,March year,Cash
+1940,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1940,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1940,Sickness Benefit,0.418,418,msd_statistical_2002,60,March year,Cash
+1940,Invalids Benefit,1.884,"1,884",msd_statistical_2002,60,March year,Cash
+1940,Miners Benefit,0.185,185,msd_statistical_2002,60,March year,Cash
+1940,Domestic Purposes Benefit,,,msd_statistical_2002,60,March year,Cash
+1940,Widows Benefit,1.572,"1,572",msd_statistical_2002,60,March year,Cash
+1940,Orphans and Unsupported Childs Benefit,0.03,30,msd_statistical_2002,60,March year,Cash
+1940,Family Benefit,0.505,505,msd_statistical_2002,60,March year,Cash
+1940,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1940,NZ Superannuation / predecessor pensions,13.036,"13,036",msd_statistical_2002,60,March year,Cash
+1940,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1945,Unemployment Benefit,0.056,56,msd_statistical_2002,60,March year,Cash
+1945,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1945,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1945,Sickness Benefit,0.704,704,msd_statistical_2002,60,March year,Cash
+1945,Invalids Benefit,2.145,"2,145",msd_statistical_2002,60,March year,Cash
+1945,Miners Benefit,0.149,149,msd_statistical_2002,60,March year,Cash
+1945,Domestic Purposes Benefit,,,msd_statistical_2002,60,March year,Cash
+1945,Widows Benefit,1.971,"1,971",msd_statistical_2002,60,March year,Cash
+1945,Orphans and Unsupported Childs Benefit,0.047,47,msd_statistical_2002,60,March year,Cash
+1945,Family Benefit,2.81,"2,810",msd_statistical_2002,60,March year,Cash
+1945,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1945,NZ Superannuation / predecessor pensions,18.974,"18,974",msd_statistical_2002,60,March year,Cash
+1945,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1950,Unemployment Benefit,0.021,21,msd_statistical_2002,60,March year,Cash
+1950,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1950,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1950,Sickness Benefit,2.017,"2,017",msd_statistical_2002,60,March year,Cash
+1950,Invalids Benefit,2.795,"2,795",msd_statistical_2002,60,March year,Cash
+1950,Miners Benefit,0.24,240,msd_statistical_2002,60,March year,Cash
+1950,Domestic Purposes Benefit,,,msd_statistical_2002,60,March year,Cash
+1950,Widows Benefit,4.32,"4,320",msd_statistical_2002,60,March year,Cash
+1950,Orphans and Unsupported Childs Benefit,0.062,62,msd_statistical_2002,60,March year,Cash
+1950,Family Benefit,29.702,"29,702",msd_statistical_2002,60,March year,Cash
+1950,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1950,NZ Superannuation / predecessor pensions,34.627,"34,627",msd_statistical_2002,60,March year,Cash
+1950,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1955,Unemployment Benefit,0.011,11,msd_statistical_2002,60,March year,Cash
+1955,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1955,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1955,Sickness Benefit,2.554,"2,554",msd_statistical_2002,60,March year,Cash
+1955,Invalids Benefit,3.233,"3,233",msd_statistical_2002,60,March year,Cash
+1955,Miners Benefit,0.257,257,msd_statistical_2002,60,March year,Cash
+1955,Domestic Purposes Benefit,,,msd_statistical_2002,60,March year,Cash
+1955,Widows Benefit,5.329,"5,329",msd_statistical_2002,60,March year,Cash
+1955,Orphans and Unsupported Childs Benefit,0.058,58,msd_statistical_2002,60,March year,Cash
+1955,Family Benefit,36.358,"36,358",msd_statistical_2002,60,March year,Cash
+1955,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1955,NZ Superannuation / predecessor pensions,58.002,"58,002",msd_statistical_2002,60,March year,Cash
+1955,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1960,Unemployment Benefit,0.38,380,msd_statistical_2002,60,March year,Cash
+1960,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1960,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1960,Sickness Benefit,3.439,"3,439",msd_statistical_2002,60,March year,Cash
+1960,Invalids Benefit,4.237,"4,237",msd_statistical_2002,60,March year,Cash
+1960,Miners Benefit,0.226,226,msd_statistical_2002,60,March year,Cash
+1960,Domestic Purposes Benefit,,,msd_statistical_2002,60,March year,Cash
+1960,Widows Benefit,7.832,"7,832",msd_statistical_2002,60,March year,Cash
+1960,Orphans and Unsupported Childs Benefit,0.079,79,msd_statistical_2002,60,March year,Cash
+1960,Family Benefit,63.584,"63,584",msd_statistical_2002,60,March year,Cash
+1960,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1960,NZ Superannuation / predecessor pensions,85.502,"85,502",msd_statistical_2002,60,March year,Cash
+1960,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1965,Unemployment Benefit,0.197,197,msd_statistical_2002,60,March year,Cash
+1965,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1965,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1965,Sickness Benefit,3.914,"3,914",msd_statistical_2002,60,March year,Cash
+1965,Invalids Benefit,4.83,"4,830",msd_statistical_2002,60,March year,Cash
+1965,Miners Benefit,0.153,153,msd_statistical_2002,60,March year,Cash
+1965,Domestic Purposes Benefit,,,msd_statistical_2002,60,March year,Cash
+1965,Widows Benefit,10.215,"10,215",msd_statistical_2002,60,March year,Cash
+1965,Orphans and Unsupported Childs Benefit,0.11,110,msd_statistical_2002,60,March year,Cash
+1965,Family Benefit,65.925,"65,925",msd_statistical_2002,60,March year,Cash
+1965,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1965,NZ Superannuation / predecessor pensions,110.314,"110,314",msd_statistical_2002,60,March year,Cash
+1965,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1970,Unemployment Benefit,1.465,"1,465",msd_statistical_2002,60,March year,Cash
+1970,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1970,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1970,Sickness Benefit,6.073,"6,073",msd_statistical_2002,60,March year,Cash
+1970,Invalids Benefit,6.093,"6,093",msd_statistical_2002,60,March year,Cash
+1970,Miners Benefit,0.099,99,msd_statistical_2002,60,March year,Cash
+1970,Domestic Purposes Benefit,,,msd_statistical_2002,60,March year,Cash
+1970,Widows Benefit,13.742,"13,742",msd_statistical_2002,60,March year,Cash
+1970,Orphans and Unsupported Childs Benefit,0.15,150,msd_statistical_2002,60,March year,Cash
+1970,Family Benefit,73.318,"73,318",msd_statistical_2002,60,March year,Cash
+1970,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1970,NZ Superannuation / predecessor pensions,155.822,"155,822",msd_statistical_2002,60,March year,Cash
+1970,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1975,Unemployment Benefit,5.155,"5,155",msd_statistical_2002,60,March year,Cash
+1975,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1975,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1975,Sickness Benefit,15.887,"15,887",msd_statistical_2002,60,March year,Cash
+1975,Invalids Benefit,13.665,"13,665",msd_statistical_2002,60,March year,Cash
+1975,Miners Benefit,0.084,84,msd_statistical_2002,60,March year,Cash
+1975,Domestic Purposes Benefit,30.156,"30,156",msd_statistical_2002,60,March year,Cash
+1975,Widows Benefit,27.967,"27,967",msd_statistical_2002,60,March year,Cash
+1975,Orphans and Unsupported Childs Benefit,0.381,381,msd_statistical_2002,60,March year,Cash
+1975,Family Benefit,153.175,"153,175",msd_statistical_2002,60,March year,Cash
+1975,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1975,NZ Superannuation / predecessor pensions,365.803,"365,803",msd_statistical_2002,60,March year,Cash
+1975,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1980,Unemployment Benefit,66.077,"66,077",msd_statistical_2002,60,March year,Cash
+1980,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1980,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1980,Sickness Benefit,33.236,"33,236",msd_statistical_2002,60,March year,Cash
+1980,Invalids Benefit,40.924,"40,924",msd_statistical_2002,60,March year,Cash
+1980,Miners Benefit,0.076,76,msd_statistical_2002,60,March year,Cash
+1980,Domestic Purposes Benefit,169.449,"169,449",msd_statistical_2002,60,March year,Cash
+1980,Widows Benefit,53.342,"53,342",msd_statistical_2002,60,March year,Cash
+1980,Orphans and Unsupported Childs Benefit,0.778,778,msd_statistical_2002,60,March year,Cash
+1980,Family Benefit,220.854,"220,854",msd_statistical_2002,60,March year,Cash
+1980,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1980,NZ Superannuation / predecessor pensions,1334.115,"1,334,115",msd_statistical_2002,60,March year,Cash
+1980,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1981,Unemployment Benefit,118.757,"118,757",msd_statistical_2002,60,March year,Cash
+1981,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1981,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1981,Sickness Benefit,38.553,"38,553",msd_statistical_2002,60,March year,Cash
+1981,Invalids Benefit,49.58,"49,580",msd_statistical_2002,60,March year,Cash
+1981,Miners Benefit,0.068,68,msd_statistical_2002,60,March year,Cash
+1981,Domestic Purposes Benefit,198.053,"198,053",msd_statistical_2002,60,March year,Cash
+1981,Widows Benefit,57.815,"57,815",msd_statistical_2002,60,March year,Cash
+1981,Orphans and Unsupported Childs Benefit,0.865,865,msd_statistical_2002,60,March year,Cash
+1981,Family Benefit,306.773,"306,773",msd_statistical_2002,60,March year,Cash
+1981,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1981,NZ Superannuation / predecessor pensions,1556.518,"1,556,518",msd_statistical_2002,60,March year,Cash
+1981,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1982,Unemployment Benefit,156.429,"156,429",msd_statistical_2002,60,March year,Cash
+1982,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1982,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1982,Sickness Benefit,43.529,"43,529",msd_statistical_2002,60,March year,Cash
+1982,Invalids Benefit,60.454,"60,454",msd_statistical_2002,60,March year,Cash
+1982,Miners Benefit,0.072,72,msd_statistical_2002,60,March year,Cash
+1982,Domestic Purposes Benefit,252.654,"252,654",msd_statistical_2002,60,March year,Cash
+1982,Widows Benefit,62.164,"62,164",msd_statistical_2002,60,March year,Cash
+1982,Orphans and Unsupported Childs Benefit,0.943,943,msd_statistical_2002,60,March year,Cash
+1982,Family Benefit,297.705,"297,705",msd_statistical_2002,60,March year,Cash
+1982,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1982,NZ Superannuation / predecessor pensions,1895.845,"1,895,845",msd_statistical_2002,60,March year,Cash
+1982,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1983,Unemployment Benefit,195.218,"195,218",msd_statistical_2002,60,March year,Cash
+1983,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1983,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1983,Sickness Benefit,52.355,"52,355",msd_statistical_2002,60,March year,Cash
+1983,Invalids Benefit,79.074,"79,074",msd_statistical_2002,60,March year,Cash
+1983,Miners Benefit,0.095,95,msd_statistical_2002,60,March year,Cash
+1983,Domestic Purposes Benefit,333.617,"333,617",msd_statistical_2002,60,March year,Cash
+1983,Widows Benefit,73.954,"73,954",msd_statistical_2002,60,March year,Cash
+1983,Orphans and Unsupported Childs Benefit,1.114,"1,114",msd_statistical_2002,60,March year,Cash
+1983,Family Benefit,293.044,"293,044",msd_statistical_2002,60,March year,Cash
+1983,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1983,NZ Superannuation / predecessor pensions,2418.93,"2,418,930",msd_statistical_2002,60,March year,Cash
+1983,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1984,Unemployment Benefit,315.849,"315,849",msd_statistical_2002,60,March year,Cash
+1984,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1984,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1984,Sickness Benefit,62.212,"62,212",msd_statistical_2002,60,March year,Cash
+1984,Invalids Benefit,87.41,"87,410",msd_statistical_2002,60,March year,Cash
+1984,Miners Benefit,0.078,78,msd_statistical_2002,60,March year,Cash
+1984,Domestic Purposes Benefit,380.836,"380,836",msd_statistical_2002,60,March year,Cash
+1984,Widows Benefit,71.295,"71,295",msd_statistical_2002,60,March year,Cash
+1984,Orphans and Unsupported Childs Benefit,1.186,"1,186",msd_statistical_2002,60,March year,Cash
+1984,Family Benefit,289.689,"289,689",msd_statistical_2002,60,March year,Cash
+1984,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1984,NZ Superannuation / predecessor pensions,2526.031,"2,526,031",msd_statistical_2002,60,March year,Cash
+1984,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1985,Unemployment Benefit,274.689,"274,689",msd_statistical_2002,60,March year,Cash
+1985,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1985,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1985,Sickness Benefit,72.55,"72,550",msd_statistical_2002,60,March year,Cash
+1985,Invalids Benefit,105.724,"105,724",msd_statistical_2002,60,March year,Cash
+1985,Miners Benefit,0.072,72,msd_statistical_2002,60,March year,Cash
+1985,Domestic Purposes Benefit,460.385,"460,385",msd_statistical_2002,60,March year,Cash
+1985,Widows Benefit,78.495,"78,495",msd_statistical_2002,60,March year,Cash
+1985,Orphans and Unsupported Childs Benefit,1.004,"1,004",msd_statistical_2002,60,March year,Cash
+1985,Family Benefit,284.167,"284,167",msd_statistical_2002,60,March year,Cash
+1985,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1985,NZ Superannuation / predecessor pensions,2743.512,"2,743,512",msd_statistical_2002,60,March year,Cash
+1985,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1986,Unemployment Benefit,290.462,"290,462",msd_statistical_2002,60,March year,Cash
+1986,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1986,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1986,Sickness Benefit,91.762,"91,762",msd_statistical_2002,60,March year,Cash
+1986,Invalids Benefit,133.287,"133,287",msd_statistical_2002,60,March year,Cash
+1986,Miners Benefit,0.076,76,msd_statistical_2002,60,March year,Cash
+1986,Domestic Purposes Benefit,603.878,"603,878",msd_statistical_2002,60,March year,Cash
+1986,Widows Benefit,89.338,"89,338",msd_statistical_2002,60,March year,Cash
+1986,Orphans and Unsupported Childs Benefit,1.281,"1,281",msd_statistical_2002,60,March year,Cash
+1986,Family Benefit,281.957,"281,957",msd_statistical_2002,60,March year,Cash
+1986,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1986,NZ Superannuation / predecessor pensions,3341.211,"3,341,211",msd_statistical_2002,60,March year,Cash
+1986,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1987,Unemployment Benefit,459.685,"459,685",msd_statistical_2002,60,March year,Cash
+1987,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1987,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1987,Sickness Benefit,124.292,"124,292",msd_statistical_2002,60,March year,Cash
+1987,Invalids Benefit,159.823,"159,823",msd_statistical_2002,60,March year,Cash
+1987,Miners Benefit,0.074,74,msd_statistical_2002,60,March year,Cash
+1987,Domestic Purposes Benefit,709.568,"709,568",msd_statistical_2002,60,March year,Cash
+1987,Widows Benefit,94.732,"94,732",msd_statistical_2002,60,March year,Cash
+1987,Orphans and Unsupported Childs Benefit,1.7,"1,700",msd_statistical_2002,60,March year,Cash
+1987,Family Benefit,273.248,"273,248",msd_statistical_2002,60,March year,Cash
+1987,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1987,NZ Superannuation / predecessor pensions,3650.165,"3,650,165",msd_statistical_2002,60,March year,Cash
+1987,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1988,Unemployment Benefit,672.694,"672,694",msd_statistical_2002,60,March year,Cash
+1988,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1988,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1988,Sickness Benefit,159.85,"159,850",msd_statistical_2002,60,March year,Cash
+1988,Invalids Benefit,196.051,"196,051",msd_statistical_2002,60,March year,Cash
+1988,Miners Benefit,0.069,69,msd_statistical_2002,60,March year,Cash
+1988,Domestic Purposes Benefit,808.787,"808,787",msd_statistical_2002,60,March year,Cash
+1988,Widows Benefit,104.17,"104,170",msd_statistical_2002,60,March year,Cash
+1988,Orphans and Unsupported Childs Benefit,6.174,"6,174",msd_statistical_2002,60,March year,Cash
+1988,Family Benefit,290.556,"290,556",msd_statistical_2002,60,March year,Cash
+1988,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1988,NZ Superannuation / predecessor pensions,3986.544,"3,986,544",msd_statistical_2002,60,March year,Cash
+1988,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1989,Unemployment Benefit,987.275,"987,275",msd_statistical_2002,60,March year,Cash
+1989,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,March year,Cash
+1989,Unemployment Benefit - Training,,,msd_statistical_2002,60,March year,Cash
+1989,Sickness Benefit,197.745,"197,745",msd_statistical_2002,60,March year,Cash
+1989,Invalids Benefit,226.304,"226,304",msd_statistical_2002,60,March year,Cash
+1989,Miners Benefit,0.072,72,msd_statistical_2002,60,March year,Cash
+1989,Domestic Purposes Benefit,962.871,"962,871",msd_statistical_2002,60,March year,Cash
+1989,Widows Benefit,106.062,"106,062",msd_statistical_2002,60,March year,Cash
+1989,Orphans and Unsupported Childs Benefit,14.074,"14,074",msd_statistical_2002,60,March year,Cash
+1989,Family Benefit,258.445,"258,445",msd_statistical_2002,60,March year,Cash
+1989,Transitional Retirement Benefit,,,msd_statistical_2002,60,March year,Cash
+1989,NZ Superannuation / predecessor pensions,4314.259,"4,314,259",msd_statistical_2002,60,March year,Cash
+1989,Veterans Pensions,,,msd_statistical_2002,60,March year,Cash
+1990,Unemployment Benefit,1235.056,"1,235,056",msd_statistical_2002,60,June year,Cash
+1990,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,June year,Cash
+1990,Unemployment Benefit - Training,56.46,"56,460",msd_statistical_2002,60,June year,Cash
+1990,Sickness Benefit,229.568,"229,568",msd_statistical_2002,60,June year,Cash
+1990,Invalids Benefit,260.751,"260,751",msd_statistical_2002,60,June year,Cash
+1990,Miners Benefit,0.068,68,msd_statistical_2002,60,June year,Cash
+1990,Domestic Purposes Benefit,1136.718,"1,136,718",msd_statistical_2002,60,June year,Cash
+1990,Widows Benefit,114.888,"114,888",msd_statistical_2002,60,June year,Cash
+1990,Orphans and Unsupported Childs Benefit,24.742,"24,742",msd_statistical_2002,60,June year,Cash
+1990,Family Benefit,284.444,"284,444",msd_statistical_2002,60,June year,Cash
+1990,Transitional Retirement Benefit,,,msd_statistical_2002,60,June year,Cash
+1990,NZ Superannuation / predecessor pensions,4774.676,"4,774,676",msd_statistical_2002,60,June year,Cash
+1990,Veterans Pensions,1.147,"1,147",msd_statistical_2002,60,June year,Cash
+1991,Unemployment Benefit,1401.628,"1,401,628",msd_statistical_2002,60,June year,Cash
+1991,Independent Youth Benefit (included in unemployment),,,msd_statistical_2002,60,June year,Cash
+1991,Unemployment Benefit - Training,81.696,"81,696",msd_statistical_2002,60,June year,Cash
+1991,Sickness Benefit,248.672,"248,672",msd_statistical_2002,60,June year,Cash
+1991,Invalids Benefit,289.212,"289,212",msd_statistical_2002,60,June year,Cash
+1991,Miners Benefit,0.039,39,msd_statistical_2002,60,June year,Cash
+1991,Domestic Purposes Benefit,1207.856,"1,207,856",msd_statistical_2002,60,June year,Cash
+1991,Widows Benefit,106.07,"106,070",msd_statistical_2002,60,June year,Cash
+1991,Orphans and Unsupported Childs Benefit,20.697,"20,697",msd_statistical_2002,60,June year,Cash
+1991,Family Benefit,222.996,"222,996",msd_statistical_2002,60,June year,Cash
+1991,Transitional Retirement Benefit,,,msd_statistical_2002,60,June year,Cash
+1991,NZ Superannuation / predecessor pensions,5173.859,"5,173,859",msd_statistical_2002,60,June year,Cash
+1991,Veterans Pensions,29.639,"29,639",msd_statistical_2002,60,June year,Cash
+1992,Unemployment Benefit,1445.248,"1,445,248",msd_statistical_2002,60,June year,Cash
+1992,Independent Youth Benefit (included in unemployment),25.605,"25,605",msd_statistical_2002,60,June year,Cash
+1992,Unemployment Benefit - Training,74.546,"74,546",msd_statistical_2002,60,June year,Cash
+1992,Sickness Benefit,239.415,"239,415",msd_statistical_2002,60,June year,Cash
+1992,Invalids Benefit,348.81,"348,810",msd_statistical_2002,60,June year,Cash
+1992,Miners Benefit,0.014,14,msd_statistical_2002,60,June year,Cash
+1992,Domestic Purposes Benefit,1161.191,"1,161,191",msd_statistical_2002,60,June year,Cash
+1992,Widows Benefit,85.468,"85,468",msd_statistical_2002,60,June year,Cash
+1992,Orphans and Unsupported Childs Benefit,15.08,"15,080",msd_statistical_2002,60,June year,Cash
+1992,Family Benefit,,,msd_statistical_2002,60,June year,Cash
+1992,Transitional Retirement Benefit,,,msd_statistical_2002,60,June year,Cash
+1992,NZ Superannuation / predecessor pensions,5514.482,"5,514,482",msd_statistical_2002,60,June year,Cash
+1992,Veterans Pensions,33.331,"33,331",msd_statistical_2002,60,June year,Cash
+1993,Unemployment Benefit,1560.669,"1,560,669",msd_statistical_2002,60,June year,Cash
+1993,Independent Youth Benefit (included in unemployment),28.64,"28,640",msd_statistical_2002,60,June year,Cash
+1993,Unemployment Benefit - Training,78.236,"78,236",msd_statistical_2002,60,June year,Cash
+1993,Sickness Benefit,284.597,"284,597",msd_statistical_2002,60,June year,Cash
+1993,Invalids Benefit,372.786,"372,786",msd_statistical_2002,60,June year,Cash
+1993,Miners Benefit,,,msd_statistical_2002,60,June year,Cash
+1993,Domestic Purposes Benefit,1159.737,"1,159,737",msd_statistical_2002,60,June year,Cash
+1993,Widows Benefit,84.977,"84,977",msd_statistical_2002,60,June year,Cash
+1993,Orphans and Unsupported Childs Benefit,16.473,"16,473",msd_statistical_2002,60,June year,Cash
+1993,Family Benefit,,,msd_statistical_2002,60,June year,Cash
+1993,Transitional Retirement Benefit,,,msd_statistical_2002,60,June year,Cash
+1993,NZ Superannuation / predecessor pensions,5315.899,"5,315,899",msd_statistical_2002,60,June year,Cash
+1993,Veterans Pensions,47.793,"47,793",msd_statistical_2002,60,June year,Cash
+1994,Unemployment Benefit,1498.545,"1,498,545",msd_statistical_2002,60,June year,Cash
+1994,Independent Youth Benefit (included in unemployment),26.263,"26,263",msd_statistical_2002,60,June year,Cash
+1994,Unemployment Benefit - Training,92.502,"92,502",msd_statistical_2002,60,June year,Cash
+1994,Sickness Benefit,329.995,"329,995",msd_statistical_2002,60,June year,Cash
+1994,Invalids Benefit,422.324,"422,324",msd_statistical_2002,60,June year,Cash
+1994,Miners Benefit,,,msd_statistical_2002,60,June year,Cash
+1994,Domestic Purposes Benefit,1228.054,"1,228,054",msd_statistical_2002,60,June year,Cash
+1994,Widows Benefit,86.665,"86,665",msd_statistical_2002,60,June year,Cash
+1994,Orphans and Unsupported Childs Benefit,19.185,"19,185",msd_statistical_2002,60,June year,Cash
+1994,Family Benefit,,,msd_statistical_2002,60,June year,Cash
+1994,Transitional Retirement Benefit,17.385,"17,385",msd_statistical_2002,60,June year,Cash
+1994,NZ Superannuation / predecessor pensions,5102.551,"5,102,551",msd_statistical_2002,60,June year,Cash
+1994,Veterans Pensions,54.66,"54,660",msd_statistical_2002,60,June year,Cash
+1995,Unemployment Benefit,1313.682,"1,313,682",msd_statistical_2002,60,June year,Accrual
+1995,Independent Youth Benefit (included in unemployment),21.547,"21,547",msd_statistical_2002,60,June year,Accrual
+1995,Unemployment Benefit - Training,93.584,"93,584",msd_statistical_2002,60,June year,Accrual
+1995,Sickness Benefit,352.167,"352,167",msd_statistical_2002,60,June year,Accrual
+1995,Invalids Benefit,463.598,"463,598",msd_statistical_2002,60,June year,Accrual
+1995,Miners Benefit,,,msd_statistical_2002,60,June year,Accrual
+1995,Domestic Purposes Benefit,1300.173,"1,300,173",msd_statistical_2002,60,June year,Accrual
+1995,Widows Benefit,81.258,"81,258",msd_statistical_2002,60,June year,Accrual
+1995,Orphans and Unsupported Childs Benefit,20.557,"20,557",msd_statistical_2002,60,June year,Accrual
+1995,Family Benefit,,,msd_statistical_2002,60,June year,Accrual
+1995,Transitional Retirement Benefit,79.167,"79,167",msd_statistical_2002,60,June year,Accrual
+1995,NZ Superannuation / predecessor pensions,5083.119,"5,083,119",msd_statistical_2002,60,June year,Accrual
+1995,Veterans Pensions,57.217,"57,217",msd_statistical_2002,60,June year,Accrual
+1996,Unemployment Benefit,1276.54,"1,276,540",msd_statistical_2002,60,June year,Accrual
+1996,Independent Youth Benefit (included in unemployment),21.552,"21,552",msd_statistical_2002,60,June year,Accrual
+1996,Unemployment Benefit - Training,96.973,"96,973",msd_statistical_2002,60,June year,Accrual
+1996,Sickness Benefit,378.85,"378,850",msd_statistical_2002,60,June year,Accrual
+1996,Invalids Benefit,494.849,"494,849",msd_statistical_2002,60,June year,Accrual
+1996,Miners Benefit,,,msd_statistical_2002,60,June year,Accrual
+1996,Domestic Purposes Benefit,1440.122,"1,440,122",msd_statistical_2002,60,June year,Accrual
+1996,Widows Benefit,85.008,"85,008",msd_statistical_2002,60,June year,Accrual
+1996,Orphans and Unsupported Childs Benefit,22.929,"22,929",msd_statistical_2002,60,June year,Accrual
+1996,Family Benefit,,,msd_statistical_2002,60,June year,Accrual
+1996,Transitional Retirement Benefit,90.698,"90,698",msd_statistical_2002,60,June year,Accrual
+1996,NZ Superannuation / predecessor pensions,5170.506,"5,170,506",msd_statistical_2002,60,June year,Accrual
+1996,Veterans Pensions,60.612,"60,612",msd_statistical_2002,60,June year,Accrual
+1997,Unemployment Benefit,1370.772,"1,370,772",msd_statistical_2002,60,June year,Accrual
+1997,Independent Youth Benefit (included in unemployment),20.739,"20,739",msd_statistical_2002,60,June year,Accrual
+1997,Unemployment Benefit - Training,97.406,"97,406",msd_statistical_2002,60,June year,Accrual
+1997,Sickness Benefit,406.164,"406,164",msd_statistical_2002,60,June year,Accrual
+1997,Invalids Benefit,555.2,"555,200",msd_statistical_2002,60,June year,Accrual
+1997,Miners Benefit,,,msd_statistical_2002,60,June year,Accrual
+1997,Domestic Purposes Benefit,1563.488,"1,563,488",msd_statistical_2002,60,June year,Accrual
+1997,Widows Benefit,91.249,"91,249",msd_statistical_2002,60,June year,Accrual
+1997,Orphans and Unsupported Childs Benefit,26.87,"26,870",msd_statistical_2002,60,June year,Accrual
+1997,Family Benefit,,,msd_statistical_2002,60,June year,Accrual
+1997,Transitional Retirement Benefit,96.819,"96,819",msd_statistical_2002,60,June year,Accrual
+1997,NZ Superannuation / predecessor pensions,5239.129,"5,239,129",msd_statistical_2002,60,June year,Accrual
+1997,Veterans Pensions,64.963,"64,963",msd_statistical_2002,60,June year,Accrual
+1998,Unemployment Benefit,1496.627,"1,496,627",msd_statistical_2002,60,June year,Accrual
+1998,Independent Youth Benefit (included in unemployment),20.764,"20,764",msd_statistical_2002,60,June year,Accrual
+1998,Unemployment Benefit - Training,97.264,"97,264",msd_statistical_2002,60,June year,Accrual
+1998,Sickness Benefit,434.956,"434,956",msd_statistical_2002,60,June year,Accrual
+1998,Invalids Benefit,622.157,"622,157",msd_statistical_2002,60,June year,Accrual
+1998,Miners Benefit,,,msd_statistical_2002,60,June year,Accrual
+1998,Domestic Purposes Benefit,1654.035,"1,654,035",msd_statistical_2002,60,June year,Accrual
+1998,Widows Benefit,93.931,"93,931",msd_statistical_2002,60,June year,Accrual
+1998,Orphans and Unsupported Childs Benefit,29.831,"29,831",msd_statistical_2002,60,June year,Accrual
+1998,Family Benefit,,,msd_statistical_2002,60,June year,Accrual
+1998,Transitional Retirement Benefit,99.875,99875,msd_statistical_2002,60,June year,Accrual
+1998,NZ Superannuation / predecessor pensions,5259.198,"5,259,198",msd_statistical_2002,60,June year,Accrual
+1998,Veterans Pensions,70.414,"70,414",msd_statistical_2002,60,June year,Accrual
+1999,Unemployment Benefit,1620.031,"1,620,031",msd_statistical_2002,60,June year,Accrual
+1999,Independent Youth Benefit (included in unemployment),26.61,"26,610",msd_statistical_2002,60,June year,Accrual
+1999,Unemployment Benefit - Training,68.035,"68,035",msd_statistical_2002,60,June year,Accrual
+1999,Sickness Benefit,403.708,"403,708",msd_statistical_2002,60,June year,Accrual
+1999,Invalids Benefit,654.432,"654,432",msd_statistical_2002,60,June year,Accrual
+1999,Miners Benefit,,,msd_statistical_2002,60,June year,Accrual
+1999,Domestic Purposes Benefit,1610.91,"1,610,910",msd_statistical_2002,60,June year,Accrual
+1999,Widows Benefit,93.235,"93,235",msd_statistical_2002,60,June year,Accrual
+1999,Orphans and Unsupported Childs Benefit,32.152,"32,152",msd_statistical_2002,60,June year,Accrual
+1999,Family Benefit,,,msd_statistical_2002,60,June year,Accrual
+1999,Transitional Retirement Benefit,105.412,"105,412",msd_statistical_2002,60,June year,Accrual
+1999,NZ Superannuation / predecessor pensions,5221.501,"5,221,501",msd_statistical_2002,60,June year,Accrual
+1999,Veterans Pensions,72.645,"72,645",msd_statistical_2002,60,June year,Accrual
+2000,Unemployment Benefit,1634.523,"1,634,523",msd_statistical_2002,60,June year,Accrual
+2000,Independent Youth Benefit (included in unemployment),29.229,"29,229",msd_statistical_2002,60,June year,Accrual
+2000,Unemployment Benefit - Training,45.021,"45,021",msd_statistical_2002,60,June year,Accrual
+2000,Sickness Benefit,384.68,"384,680",msd_statistical_2002,60,June year,Accrual
+2000,Invalids Benefit,700.385,"700,385",msd_statistical_2002,60,June year,Accrual
+2000,Miners Benefit,,,msd_statistical_2002,60,June year,Accrual
+2000,Domestic Purposes Benefit,1590.813,"1,590,813",msd_statistical_2002,60,June year,Accrual
+2000,Widows Benefit,91.592,"91,592",msd_statistical_2002,60,June year,Accrual
+2000,Orphans and Unsupported Childs Benefit,35.413,"35,413",msd_statistical_2002,60,June year,Accrual
+2000,Family Benefit,,,msd_statistical_2002,60,June year,Accrual
+2000,Transitional Retirement Benefit,112.384,"112,384",msd_statistical_2002,60,June year,Accrual
+2000,NZ Superannuation / predecessor pensions,5227.598,"5,227,598",msd_statistical_2002,60,June year,Accrual
+2000,Veterans Pensions,73.801,"73,801",msd_statistical_2002,60,June year,Accrual
+2001,Unemployment Benefit,1536.34,"1,536,340",msd_statistical_2002,60,June year,Accrual
+2001,Independent Youth Benefit (included in unemployment),31.532,"31,532",msd_statistical_2002,60,June year,Accrual
+2001,Unemployment Benefit - Training,40.575,"40,575",msd_statistical_2002,60,June year,Accrual
+2001,Sickness Benefit,385.68,"385,680",msd_statistical_2002,60,June year,Accrual
+2001,Invalids Benefit,761.656,"761,656",msd_statistical_2002,60,June year,Accrual
+2001,Miners Benefit,,,msd_statistical_2002,60,June year,Accrual
+2001,Domestic Purposes Benefit,1575.974,"1,575,974",msd_statistical_2002,60,June year,Accrual
+2001,Widows Benefit,89.008,"89,008",msd_statistical_2002,60,June year,Accrual
+2001,Orphans and Unsupported Childs Benefit,38.567,"38,567",msd_statistical_2002,60,June year,Accrual
+2001,Family Benefit,,,msd_statistical_2002,60,June year,Accrual
+2001,Transitional Retirement Benefit,114.108,"114,108",msd_statistical_2002,60,June year,Accrual
+2001,NZ Superannuation / predecessor pensions,5422.012,"5,422,012",msd_statistical_2002,60,June year,Accrual
+2001,Veterans Pensions,78.354,"78,354",msd_statistical_2002,60,June year,Accrual
+2002,Unemployment Benefit,1423.509,"1,423,509",msd_statistical_2002,60,June year,Accrual
+2002,Independent Youth Benefit (included in unemployment),29.782,"29,782",msd_statistical_2002,60,June year,Accrual
+2002,Unemployment Benefit - Training,32.687,"32,687",msd_statistical_2002,60,June year,Accrual
+2002,Sickness Benefit,415.683,"415,683",msd_statistical_2002,60,June year,Accrual
+2002,Invalids Benefit,843.535,"843,535",msd_statistical_2002,60,June year,Accrual
+2002,Miners Benefit,,,msd_statistical_2002,60,June year,Accrual
+2002,Domestic Purposes Benefit,1588.381,"1,588,381",msd_statistical_2002,60,June year,Accrual
+2002,Widows Benefit,88.958,"88,958",msd_statistical_2002,60,June year,Accrual
+2002,Orphans and Unsupported Childs Benefit,41.953,"41,953",msd_statistical_2002,60,June year,Accrual
+2002,Family Benefit,,,msd_statistical_2002,60,June year,Accrual
+2002,Transitional Retirement Benefit,86.586,"86,586",msd_statistical_2002,60,June year,Accrual
+2002,NZ Superannuation / predecessor pensions,5600.488,"5,600,488",msd_statistical_2002,60,June year,Accrual
+2002,Veterans Pensions,83.605,"83,605",msd_statistical_2002,60,June year,Accrual

@@ -1,0 +1,421 @@
+measure,year,status,value,source_row
+Private consumption,2016,Actual,4.7,6
+Private consumption,2017,Actual,6.3,6
+Private consumption,2018,Actual,4.7,6
+Private consumption,2019,Actual,4.1,6
+Private consumption,2020,Actual,-1.1,6
+Private consumption,2021,Actual,8,6
+Private consumption,2022,Actual,1.2,6
+Private consumption,2023,Actual,3.8,6
+Private consumption,2024,Actual,0.2,6
+Private consumption,2025,Actual,0.6,6
+Private consumption,2026,Forecast,1,6
+Private consumption,2027,Forecast,2.4,6
+Private consumption,2028,Forecast,3,6
+Private consumption,2029,Forecast,3,6
+Private consumption,2030,Forecast,3,6
+Public consumption,2016,Actual,1.1,7
+Public consumption,2017,Actual,2.7,7
+Public consumption,2018,Actual,4.1,7
+Public consumption,2019,Actual,2.9,7
+Public consumption,2020,Actual,6.4,7
+Public consumption,2021,Actual,7.1,7
+Public consumption,2022,Actual,7.9,7
+Public consumption,2023,Actual,1.2,7
+Public consumption,2024,Actual,0.6,7
+Public consumption,2025,Actual,-0.8,7
+Public consumption,2026,Forecast,2.7,7
+Public consumption,2027,Forecast,-1.3,7
+Public consumption,2028,Forecast,1.1,7
+Public consumption,2029,Forecast,0.2,7
+Public consumption,2030,Forecast,0,7
+TOTAL CONSUMPTION,2016,Actual,3.8,9
+TOTAL CONSUMPTION,2017,Actual,5.4,9
+TOTAL CONSUMPTION,2018,Actual,4.5,9
+TOTAL CONSUMPTION,2019,Actual,3.8,9
+TOTAL CONSUMPTION,2020,Actual,0.6,9
+TOTAL CONSUMPTION,2021,Actual,7.8,9
+TOTAL CONSUMPTION,2022,Actual,2.8,9
+TOTAL CONSUMPTION,2023,Actual,3.2,9
+TOTAL CONSUMPTION,2024,Actual,0.3,9
+TOTAL CONSUMPTION,2025,Actual,0.2,9
+TOTAL CONSUMPTION,2026,Forecast,1.4,9
+TOTAL CONSUMPTION,2027,Forecast,1.5,9
+TOTAL CONSUMPTION,2028,Forecast,2.5,9
+TOTAL CONSUMPTION,2029,Forecast,2.3,9
+TOTAL CONSUMPTION,2030,Forecast,2.3,9
+Residential investment,2016,Actual,10.2,11
+Residential investment,2017,Actual,4.2,11
+Residential investment,2018,Actual,-0.7,11
+Residential investment,2019,Actual,1.6,11
+Residential investment,2020,Actual,-4.4,11
+Residential investment,2021,Actual,16.5,11
+Residential investment,2022,Actual,-5.6,11
+Residential investment,2023,Actual,-0.8,11
+Residential investment,2024,Actual,-6.8,11
+Residential investment,2025,Actual,-12.3,11
+Residential investment,2026,Forecast,-1.9,11
+Residential investment,2027,Forecast,8.5,11
+Residential investment,2028,Forecast,10.4,11
+Residential investment,2029,Forecast,4.9,11
+Residential investment,2030,Forecast,3,11
+Business investment,2016,Actual,0.9,12
+Business investment,2017,Actual,1.7,12
+Business investment,2018,Actual,11.7,12
+Business investment,2019,Actual,4.6,12
+Business investment,2020,Actual,-2.3,12
+Business investment,2021,Actual,8.1,12
+Business investment,2022,Actual,5.9,12
+Business investment,2023,Actual,5.9,12
+Business investment,2024,Actual,-2.5,12
+Business investment,2025,Actual,-2.4,12
+Business investment,2026,Forecast,0.8,12
+Business investment,2027,Forecast,1.3,12
+Business investment,2028,Forecast,7.4,12
+Business investment,2029,Forecast,5.2,12
+Business investment,2030,Forecast,3.6,12
+TOTAL INVESTMENT,2016,Actual,3.3,14
+TOTAL INVESTMENT,2017,Actual,2.3,14
+TOTAL INVESTMENT,2018,Actual,8.3,14
+TOTAL INVESTMENT,2019,Actual,3.9,14
+TOTAL INVESTMENT,2020,Actual,-2.8,14
+TOTAL INVESTMENT,2021,Actual,10.1,14
+TOTAL INVESTMENT,2022,Actual,2.9,14
+TOTAL INVESTMENT,2023,Actual,4.3,14
+TOTAL INVESTMENT,2024,Actual,-3.5,14
+TOTAL INVESTMENT,2025,Actual,-4.6,14
+TOTAL INVESTMENT,2026,Forecast,0.3,14
+TOTAL INVESTMENT,2027,Forecast,2.7,14
+TOTAL INVESTMENT,2028,Forecast,8,14
+TOTAL INVESTMENT,2029,Forecast,5.2,14
+TOTAL INVESTMENT,2030,Forecast,3.5,14
+Stock change (contribution to growth),2016,Actual,-0.3,16
+Stock change (contribution to growth),2017,Actual,0.4,16
+Stock change (contribution to growth),2018,Actual,0.2,16
+Stock change (contribution to growth),2019,Actual,-0.5,16
+Stock change (contribution to growth),2020,Actual,-0.4,16
+Stock change (contribution to growth),2021,Actual,0.2,16
+Stock change (contribution to growth),2022,Actual,1,16
+Stock change (contribution to growth),2023,Actual,-1,16
+Stock change (contribution to growth),2024,Actual,-0.2,16
+Stock change (contribution to growth),2025,Actual,0,16
+Stock change (contribution to growth),2026,Forecast,0.5,16
+Stock change (contribution to growth),2027,Forecast,0.1,16
+Stock change (contribution to growth),2028,Forecast,0,16
+Stock change (contribution to growth),2029,Forecast,0,16
+Stock change (contribution to growth),2030,Forecast,0,16
+GROSS NATIONAL EXPENDITURE,2016,Actual,3.2,18
+GROSS NATIONAL EXPENDITURE,2017,Actual,5.1,18
+GROSS NATIONAL EXPENDITURE,2018,Actual,5.7,18
+GROSS NATIONAL EXPENDITURE,2019,Actual,3.3,18
+GROSS NATIONAL EXPENDITURE,2020,Actual,-0.6,18
+GROSS NATIONAL EXPENDITURE,2021,Actual,8.5,18
+GROSS NATIONAL EXPENDITURE,2022,Actual,4,18
+GROSS NATIONAL EXPENDITURE,2023,Actual,2.4,18
+GROSS NATIONAL EXPENDITURE,2024,Actual,-0.9,18
+GROSS NATIONAL EXPENDITURE,2025,Actual,-1,18
+GROSS NATIONAL EXPENDITURE,2026,Forecast,1.9,18
+GROSS NATIONAL EXPENDITURE,2027,Forecast,2,18
+GROSS NATIONAL EXPENDITURE,2028,Forecast,3.8,18
+GROSS NATIONAL EXPENDITURE,2029,Forecast,3,18
+GROSS NATIONAL EXPENDITURE,2030,Forecast,2.6,18
+Exports,2016,Actual,6.3,20
+Exports,2017,Actual,0.9,20
+Exports,2018,Actual,4,20
+Exports,2019,Actual,3.3,20
+Exports,2020,Actual,-5.4,20
+Exports,2021,Actual,-10.8,20
+Exports,2022,Actual,-3.1,20
+Exports,2023,Actual,12,20
+Exports,2024,Actual,5.2,20
+Exports,2025,Actual,2.9,20
+Exports,2026,Forecast,3.6,20
+Exports,2027,Forecast,3,20
+Exports,2028,Forecast,2.2,20
+Exports,2029,Forecast,2.2,20
+Exports,2030,Forecast,2.3,20
+Imports,2016,Actual,2.1,21
+Imports,2017,Actual,6.3,21
+Imports,2018,Actual,8.8,21
+Imports,2019,Actual,2.7,21
+Imports,2020,Actual,-5.7,21
+Imports,2021,Actual,-4.2,21
+Imports,2022,Actual,12,21
+Imports,2023,Actual,2.6,21
+Imports,2024,Actual,-1.3,21
+Imports,2025,Actual,1.9,21
+Imports,2026,Forecast,4,21
+Imports,2027,Forecast,0.5,21
+Imports,2028,Forecast,3.7,21
+Imports,2029,Forecast,2.9,21
+Imports,2030,Forecast,2.5,21
+EXPENDITURE ON GDP,2016,Actual,4.3,23
+EXPENDITURE ON GDP,2017,Actual,3.6,23
+EXPENDITURE ON GDP,2018,Actual,4.4,23
+EXPENDITURE ON GDP,2019,Actual,3.4,23
+EXPENDITURE ON GDP,2020,Actual,-0.6,23
+EXPENDITURE ON GDP,2021,Actual,6.7,23
+EXPENDITURE ON GDP,2022,Actual,0.6,23
+EXPENDITURE ON GDP,2023,Actual,4.6,23
+EXPENDITURE ON GDP,2024,Actual,0.7,23
+EXPENDITURE ON GDP,2025,Actual,-0.9,23
+EXPENDITURE ON GDP,2026,Forecast,1.4,23
+EXPENDITURE ON GDP,2027,Forecast,2.6,23
+EXPENDITURE ON GDP,2028,Forecast,3.3,23
+EXPENDITURE ON GDP,2029,Forecast,2.8,23
+EXPENDITURE ON GDP,2030,Forecast,2.6,23
+GDP (production measure),2016,Actual,3.8,24
+GDP (production measure),2017,Actual,3.5,24
+GDP (production measure),2018,Actual,3.4,24
+GDP (production measure),2019,Actual,3.1,24
+GDP (production measure),2020,Actual,-0.8,24
+GDP (production measure),2021,Actual,6.3,24
+GDP (production measure),2022,Actual,0.4,24
+GDP (production measure),2023,Actual,4,24
+GDP (production measure),2024,Actual,1.1,24
+GDP (production measure),2025,Actual,-1.1,24
+GDP (production measure),2026,Forecast,1.2,24
+GDP (production measure),2027,Forecast,2.3,24
+GDP (production measure),2028,Forecast,3.2,24
+GDP (production measure),2029,Forecast,2.7,24
+GDP (production measure),2030,Forecast,2.5,24
+- annual % change,2016,Actual,4.2,25
+- annual % change,2017,Actual,3.2,25
+- annual % change,2018,Actual,3.5,25
+- annual % change,2019,Actual,2.5,25
+- annual % change,2020,Actual,-9.7,25
+- annual % change,2021,Actual,17.7,25
+- annual % change,2022,Actual,0.4,25
+- annual % change,2023,Actual,3,25
+- annual % change,2024,Actual,0.1,25
+- annual % change,2025,Actual,-1,25
+- annual % change,2026,Forecast,1.8,25
+- annual % change,2027,Forecast,3.1,25
+- annual % change,2028,Forecast,3.1,25
+- annual % change,2029,Forecast,2.6,25
+- annual % change,2030,Forecast,2.4,25
+Real GDP per capita,2016,Actual,1.6,27
+Real GDP per capita,2017,Actual,1.3,27
+Real GDP per capita,2018,Actual,1.4,27
+Real GDP per capita,2019,Actual,1.5,27
+Real GDP per capita,2020,Actual,-2.5,27
+Real GDP per capita,2021,Actual,5.1,27
+Real GDP per capita,2022,Actual,0.4,27
+Real GDP per capita,2023,Actual,3.1,27
+Real GDP per capita,2024,Actual,-1.4,27
+Real GDP per capita,2025,Actual,-2.1,27
+Real GDP per capita,2026,Forecast,0.6,27
+Real GDP per capita,2027,Forecast,1.3,27
+Real GDP per capita,2028,Forecast,2,27
+Real GDP per capita,2029,Forecast,1.5,27
+Real GDP per capita,2030,Forecast,1.3,27
+Nominal GDP (expenditure basis),2016,Actual,5.3,28
+Nominal GDP (expenditure basis),2017,Actual,6.5,28
+Nominal GDP (expenditure basis),2018,Actual,7.2,28
+Nominal GDP (expenditure basis),2019,Actual,5,28
+Nominal GDP (expenditure basis),2020,Actual,2.5,28
+Nominal GDP (expenditure basis),2021,Actual,8.1,28
+Nominal GDP (expenditure basis),2022,Actual,6.3,28
+Nominal GDP (expenditure basis),2023,Actual,10,28
+Nominal GDP (expenditure basis),2024,Actual,4.7,28
+Nominal GDP (expenditure basis),2025,Actual,3.4,28
+Nominal GDP (expenditure basis),2026,Forecast,4,28
+Nominal GDP (expenditure basis),2027,Forecast,5,28
+Nominal GDP (expenditure basis),2028,Forecast,6.1,28
+Nominal GDP (expenditure basis),2029,Forecast,5.2,28
+Nominal GDP (expenditure basis),2030,Forecast,4.6,28
+GDP deflator,2016,Actual,0.9,29
+GDP deflator,2017,Actual,2.8,29
+GDP deflator,2018,Actual,2.6,29
+GDP deflator,2019,Actual,1.5,29
+GDP deflator,2020,Actual,3.1,29
+GDP deflator,2021,Actual,1.4,29
+GDP deflator,2022,Actual,5.7,29
+GDP deflator,2023,Actual,5.2,29
+GDP deflator,2024,Actual,4,29
+GDP deflator,2025,Actual,4.3,29
+GDP deflator,2026,Forecast,2.5,29
+GDP deflator,2027,Forecast,2.4,29
+GDP deflator,2028,Forecast,2.6,29
+GDP deflator,2029,Forecast,2.3,29
+GDP deflator,2030,Forecast,2,29
+"Output gap (% deviation, June year average)",2016,Actual,-0.2,30
+"Output gap (% deviation, June year average)",2017,Actual,0.3,30
+"Output gap (% deviation, June year average)",2018,Actual,0.8,30
+"Output gap (% deviation, June year average)",2019,Actual,1.2,30
+"Output gap (% deviation, June year average)",2020,Actual,0.7,30
+"Output gap (% deviation, June year average)",2021,Actual,1.8,30
+"Output gap (% deviation, June year average)",2022,Actual,2.3,30
+"Output gap (% deviation, June year average)",2023,Actual,2,30
+"Output gap (% deviation, June year average)",2024,Actual,1.1,30
+"Output gap (% deviation, June year average)",2025,Actual,-1.8,30
+"Output gap (% deviation, June year average)",2026,Forecast,-2.2,30
+"Output gap (% deviation, June year average)",2027,Forecast,-1.7,30
+"Output gap (% deviation, June year average)",2028,Forecast,-0.6,30
+"Output gap (% deviation, June year average)",2029,Forecast,-0.1,30
+"Output gap (% deviation, June year average)",2030,Forecast,0,30
+Employment,2016,Actual,2.7,32
+Employment,2017,Actual,5.3,32
+Employment,2018,Actual,3.6,32
+Employment,2019,Actual,1.8,32
+Employment,2020,Actual,1.4,32
+Employment,2021,Actual,0.4,32
+Employment,2022,Actual,2.5,32
+Employment,2023,Actual,2.4,32
+Employment,2024,Actual,1.6,32
+Employment,2025,Actual,-1,32
+Employment,2026,Forecast,0.3,32
+Employment,2027,Forecast,2,32
+Employment,2028,Forecast,2.3,32
+Employment,2029,Forecast,1.8,32
+Employment,2030,Forecast,1.5,32
+Unemployment (% June quarter s.a.),2016,Actual,5.1,33
+Unemployment (% June quarter s.a.),2017,Actual,4.9,33
+Unemployment (% June quarter s.a.),2018,Actual,4.6,33
+Unemployment (% June quarter s.a.),2019,Actual,4.1,33
+Unemployment (% June quarter s.a.),2020,Actual,4.1,33
+Unemployment (% June quarter s.a.),2021,Actual,4,33
+Unemployment (% June quarter s.a.),2022,Actual,3.3,33
+Unemployment (% June quarter s.a.),2023,Actual,3.7,33
+Unemployment (% June quarter s.a.),2024,Actual,4.7,33
+Unemployment (% June quarter s.a.),2025,Actual,5.2,33
+Unemployment (% June quarter s.a.),2026,Forecast,5.5,33
+Unemployment (% June quarter s.a.),2027,Forecast,5,33
+Unemployment (% June quarter s.a.),2028,Forecast,4.5,33
+Unemployment (% June quarter s.a.),2029,Forecast,4.4,33
+Unemployment (% June quarter s.a.),2030,Forecast,4.3,33
+"Wages (average ordinary-time hourly, ann % change)",2016,Actual,2.4,35
+"Wages (average ordinary-time hourly, ann % change)",2017,Actual,2.5,35
+"Wages (average ordinary-time hourly, ann % change)",2018,Actual,2.8,35
+"Wages (average ordinary-time hourly, ann % change)",2019,Actual,4,35
+"Wages (average ordinary-time hourly, ann % change)",2020,Actual,2.9,35
+"Wages (average ordinary-time hourly, ann % change)",2021,Actual,4,35
+"Wages (average ordinary-time hourly, ann % change)",2022,Actual,6.3,35
+"Wages (average ordinary-time hourly, ann % change)",2023,Actual,6.9,35
+"Wages (average ordinary-time hourly, ann % change)",2024,Actual,5,35
+"Wages (average ordinary-time hourly, ann % change)",2025,Actual,4.5,35
+"Wages (average ordinary-time hourly, ann % change)",2026,Forecast,2.6,35
+"Wages (average ordinary-time hourly, ann % change)",2027,Forecast,2.8,35
+"Wages (average ordinary-time hourly, ann % change)",2028,Forecast,3,35
+"Wages (average ordinary-time hourly, ann % change)",2029,Forecast,3.4,35
+"Wages (average ordinary-time hourly, ann % change)",2030,Forecast,3.5,35
+CPI inflation (ann % change),2016,Actual,0.4,36
+CPI inflation (ann % change),2017,Actual,1.7,36
+CPI inflation (ann % change),2018,Actual,1.5,36
+CPI inflation (ann % change),2019,Actual,1.7,36
+CPI inflation (ann % change),2020,Actual,1.5,36
+CPI inflation (ann % change),2021,Actual,3.3,36
+CPI inflation (ann % change),2022,Actual,7.3,36
+CPI inflation (ann % change),2023,Actual,6,36
+CPI inflation (ann % change),2024,Actual,3.3,36
+CPI inflation (ann % change),2025,Actual,2.7,36
+CPI inflation (ann % change),2026,Forecast,4,36
+CPI inflation (ann % change),2027,Forecast,1.6,36
+CPI inflation (ann % change),2028,Forecast,2.1,36
+CPI inflation (ann % change),2029,Forecast,2.1,36
+CPI inflation (ann % change),2030,Forecast,2,36
+Merchandise terms of trade (SNA basis),2016,Actual,-2,37
+Merchandise terms of trade (SNA basis),2017,Actual,4.3,37
+Merchandise terms of trade (SNA basis),2018,Actual,4.7,37
+Merchandise terms of trade (SNA basis),2019,Actual,-2.8,37
+Merchandise terms of trade (SNA basis),2020,Actual,4.7,37
+Merchandise terms of trade (SNA basis),2021,Actual,0.4,37
+Merchandise terms of trade (SNA basis),2022,Actual,2.8,37
+Merchandise terms of trade (SNA basis),2023,Actual,-7,37
+Merchandise terms of trade (SNA basis),2024,Actual,-2.7,37
+Merchandise terms of trade (SNA basis),2025,Actual,8.1,37
+Merchandise terms of trade (SNA basis),2026,Forecast,1.7,37
+Merchandise terms of trade (SNA basis),2027,Forecast,0.3,37
+Merchandise terms of trade (SNA basis),2028,Forecast,3.6,37
+Merchandise terms of trade (SNA basis),2029,Forecast,1.3,37
+Merchandise terms of trade (SNA basis),2030,Forecast,0.2,37
+House prices (ann % change),2016,Actual,15,38
+House prices (ann % change),2017,Actual,6.5,38
+House prices (ann % change),2018,Actual,3.6,38
+House prices (ann % change),2019,Actual,1.5,38
+House prices (ann % change),2020,Actual,7.1,38
+House prices (ann % change),2021,Actual,29.6,38
+House prices (ann % change),2022,Actual,5.3,38
+House prices (ann % change),2023,Actual,-9,38
+House prices (ann % change),2024,Actual,1.5,38
+House prices (ann % change),2025,Actual,-0.7,38
+House prices (ann % change),2026,Forecast,-0.5,38
+House prices (ann % change),2027,Forecast,4,38
+House prices (ann % change),2028,Forecast,4.6,38
+House prices (ann % change),2029,Forecast,4.3,38
+House prices (ann % change),2030,Forecast,4.4,38
+Current account balance - $billion,2016,Actual,-5.4,40
+Current account balance - $billion,2017,Actual,-7.4,40
+Current account balance - $billion,2018,Actual,-11.1,40
+Current account balance - $billion,2019,Actual,-11.3,40
+Current account balance - $billion,2020,Actual,-5.1,40
+Current account balance - $billion,2021,Actual,-11.1,40
+Current account balance - $billion,2022,Actual,-29.2,40
+Current account balance - $billion,2023,Actual,-29.8,40
+Current account balance - $billion,2024,Actual,-23.2,40
+Current account balance - $billion,2025,Actual,-16.6,40
+Current account balance - $billion,2026,Forecast,-18.8,40
+Current account balance - $billion,2027,Forecast,-16.7,40
+Current account balance - $billion,2028,Forecast,-14.6,40
+Current account balance - $billion,2029,Forecast,-14,40
+Current account balance - $billion,2030,Forecast,-14.1,40
+Current account balance - % of GDP,2016,Actual,-2.1,41
+Current account balance - % of GDP,2017,Actual,-2.7,41
+Current account balance - % of GDP,2018,Actual,-3.7,41
+Current account balance - % of GDP,2019,Actual,-3.6,41
+Current account balance - % of GDP,2020,Actual,-1.6,41
+Current account balance - % of GDP,2021,Actual,-3.2,41
+Current account balance - % of GDP,2022,Actual,-8,41
+Current account balance - % of GDP,2023,Actual,-7.4,41
+Current account balance - % of GDP,2024,Actual,-5.5,41
+Current account balance - % of GDP,2025,Actual,-3.8,41
+Current account balance - % of GDP,2026,Forecast,-4.1,41
+Current account balance - % of GDP,2027,Forecast,-3.5,41
+Current account balance - % of GDP,2028,Forecast,-2.9,41
+Current account balance - % of GDP,2029,Forecast,-2.6,41
+Current account balance - % of GDP,2030,Forecast,-2.5,41
+TWI (June quarter),2016,Actual,73.6,43
+TWI (June quarter),2017,Actual,76.5,43
+TWI (June quarter),2018,Actual,73.8,43
+TWI (June quarter),2019,Actual,72.7,43
+TWI (June quarter),2020,Actual,69.7,43
+TWI (June quarter),2021,Actual,74.7,43
+TWI (June quarter),2022,Actual,72.2,43
+TWI (June quarter),2023,Actual,70.9,43
+TWI (June quarter),2024,Actual,71.4,43
+TWI (June quarter),2025,Actual,69.1,43
+TWI (June quarter),2026,Forecast,66.8,43
+TWI (June quarter),2027,Forecast,67.6,43
+TWI (June quarter),2028,Forecast,68.8,43
+TWI (June quarter),2029,Forecast,69.7,43
+TWI (June quarter),2030,Forecast,70.3,43
+90-day bank bill rate (June quarter),2016,Actual,2.4,44
+90-day bank bill rate (June quarter),2017,Actual,2,44
+90-day bank bill rate (June quarter),2018,Actual,2,44
+90-day bank bill rate (June quarter),2019,Actual,1.7,44
+90-day bank bill rate (June quarter),2020,Actual,0.3,44
+90-day bank bill rate (June quarter),2021,Actual,0.3,44
+90-day bank bill rate (June quarter),2022,Actual,2.2,44
+90-day bank bill rate (June quarter),2023,Actual,5.6,44
+90-day bank bill rate (June quarter),2024,Actual,5.6,44
+90-day bank bill rate (June quarter),2025,Actual,3.4,44
+90-day bank bill rate (June quarter),2026,Forecast,2.5,44
+90-day bank bill rate (June quarter),2027,Forecast,2.8,44
+90-day bank bill rate (June quarter),2028,Forecast,3.1,44
+90-day bank bill rate (June quarter),2029,Forecast,3.3,44
+90-day bank bill rate (June quarter),2030,Forecast,3.3,44
+10-year bond rate (June quarter),2016,Actual,2.7,45
+10-year bond rate (June quarter),2017,Actual,2.9,45
+10-year bond rate (June quarter),2018,Actual,2.8,45
+10-year bond rate (June quarter),2019,Actual,1.8,45
+10-year bond rate (June quarter),2020,Actual,0.8,45
+10-year bond rate (June quarter),2021,Actual,1.7,45
+10-year bond rate (June quarter),2022,Actual,3.7,45
+10-year bond rate (June quarter),2023,Actual,4.3,45
+10-year bond rate (June quarter),2024,Actual,4.7,45
+10-year bond rate (June quarter),2025,Actual,4.6,45
+10-year bond rate (June quarter),2026,Forecast,4.6,45
+10-year bond rate (June quarter),2027,Forecast,4.5,45
+10-year bond rate (June quarter),2028,Forecast,4.5,45
+10-year bond rate (June quarter),2029,Forecast,4.5,45
+10-year bond rate (June quarter),2030,Forecast,4.5,45

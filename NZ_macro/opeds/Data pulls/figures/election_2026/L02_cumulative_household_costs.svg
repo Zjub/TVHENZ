@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='-0.000000000000064' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNTAuNDl8ODQ0LjA3fDU2LjYyfDQ0Mi4yMA=='>
+    <rect x='50.49' y='56.62' width='793.59' height='385.58' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTAuNDl8ODQ0LjA3fDU2LjYyfDQ0Mi4yMA==)'>
+<polyline points='50.49,423.73 844.07,423.73 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='50.49,322.86 844.07,322.86 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='50.49,222.00 844.07,222.00 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='50.49,121.13 844.07,121.13 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='95.63,442.20 95.63,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='309.49,442.20 309.49,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='523.05,442.20 523.05,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='736.91,442.20 736.91,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='86.56,423.73 113.18,415.27 140.10,421.85 167.01,418.09 193.64,417.15 219.97,407.75 246.88,396.47 273.80,377.67 300.42,364.51 326.75,340.07 353.66,320.32 380.58,294.94 407.20,277.08 433.53,256.40 460.45,240.42 487.36,210.34 513.98,196.24 540.61,184.02 567.52,176.50 594.44,163.34 621.06,158.64 647.39,147.36 674.30,143.60 701.22,133.26 727.84,130.44 754.17,120.10 781.09,102.24 808.00,93.78 ' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<polyline points='86.56,423.73 113.18,409.89 140.10,413.58 167.01,407.12 193.64,404.35 219.97,393.27 246.88,383.12 273.80,367.44 300.42,354.52 326.75,330.52 353.66,314.83 380.58,297.30 407.20,279.77 433.53,256.70 460.45,241.93 487.36,220.71 513.98,207.79 540.61,194.87 567.52,188.41 594.44,174.56 621.06,167.18 647.39,151.49 674.30,143.19 701.22,132.11 727.84,128.42 754.17,115.50 781.09,96.12 808.00,92.43 ' style='stroke-width: 1.92; stroke: #C56000; stroke-linecap: butt;' />
+<polyline points='86.56,423.73 113.18,415.34 140.10,420.00 167.01,415.34 193.64,414.41 219.97,405.08 246.88,394.83 273.80,375.25 300.42,364.07 326.75,340.76 353.66,323.98 380.58,299.74 407.20,283.90 433.53,261.52 460.45,246.61 487.36,219.57 513.98,207.46 540.61,196.27 567.52,188.81 594.44,171.10 621.06,165.51 647.39,150.59 674.30,142.20 701.22,125.42 727.84,122.62 754.17,109.57 781.09,90.93 808.00,80.68 ' style='stroke-width: 1.92; stroke: #395A9A; stroke-linecap: butt;' />
+<polyline points='86.56,423.73 113.18,418.06 140.10,424.67 167.01,422.78 193.64,420.89 219.97,412.38 246.88,401.04 273.80,381.19 300.42,367.95 326.75,343.38 353.66,321.63 380.58,291.38 407.20,272.48 433.53,252.63 460.45,236.56 487.36,203.47 513.98,187.40 540.61,175.11 567.52,169.44 594.44,158.09 621.06,152.42 647.39,145.81 674.30,146.75 701.22,141.08 727.84,137.30 754.17,131.63 781.09,116.50 808.00,106.10 ' style='stroke-width: 1.92; stroke: #A53B59; stroke-linecap: butt;' />
+<polyline points='86.56,423.73 113.18,417.20 140.10,421.86 167.01,414.41 193.64,413.47 219.97,405.08 246.88,393.90 273.80,371.52 300.42,362.20 326.75,342.63 353.66,325.85 380.58,298.81 407.20,282.96 433.53,265.25 460.45,250.34 487.36,222.37 513.98,213.05 540.61,204.66 567.52,196.27 594.44,175.76 621.06,169.23 647.39,156.18 674.30,145.93 701.22,126.35 727.84,120.76 754.17,106.78 781.09,88.13 808.00,74.15 ' style='stroke-width: 1.92; stroke: #4D7342; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='45.11' y='427.16' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.98px' lengthAdjust='spacingAndGlyphs'>100</text>
+<text x='45.11' y='326.30' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.27px' lengthAdjust='spacingAndGlyphs'>110</text>
+<text x='45.11' y='225.43' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.98px' lengthAdjust='spacingAndGlyphs'>120</text>
+<text x='45.11' y='124.57' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.98px' lengthAdjust='spacingAndGlyphs'>130</text>
+<text x='95.63' y='454.45' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2020</text>
+<text x='309.49' y='454.45' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2022</text>
+<text x='523.05' y='454.45' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2024</text>
+<text x='736.91' y='454.45' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2026</text>
+<text transform='translate(23.82,249.41) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='109.23px' lengthAdjust='spacingAndGlyphs'>December 2019 = 100</text>
+<line x1='272.22' y1='483.04' x2='286.05' y2='483.04' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<line x1='405.41' y1='483.04' x2='419.24' y2='483.04' style='stroke-width: 1.92; stroke: #C56000; stroke-linecap: butt;' />
+<line x1='502.49' y1='483.04' x2='516.31' y2='483.04' style='stroke-width: 1.92; stroke: #395A9A; stroke-linecap: butt;' />
+<line x1='272.22' y1='506.29' x2='286.05' y2='506.29' style='stroke-width: 1.92; stroke: #A53B59; stroke-linecap: butt;' />
+<line x1='405.41' y1='506.29' x2='419.24' y2='506.29' style='stroke-width: 1.92; stroke: #4D7342; stroke-linecap: butt;' />
+<text x='293.75' y='486.62' style='font-size: 10.00px; font-family: "Arial";' textLength='65.05px' lengthAdjust='spacingAndGlyphs'>All households</text>
+<text x='426.94' y='486.62' style='font-size: 10.00px; font-family: "Arial";' textLength='49.47px' lengthAdjust='spacingAndGlyphs'>Beneficiary</text>
+<text x='524.02' y='486.62' style='font-size: 10.00px; font-family: "Arial";' textLength='100.05px' lengthAdjust='spacingAndGlyphs'>Income quintile 1 (low)</text>
+<text x='293.75' y='509.88' style='font-size: 10.00px; font-family: "Arial";' textLength='103.95px' lengthAdjust='spacingAndGlyphs'>Income quintile 5 (high)</text>
+<text x='426.94' y='509.88' style='font-size: 10.00px; font-family: "Arial";' textLength='67.84px' lengthAdjust='spacingAndGlyphs'>Superannuitant</text>
+<text x='15.94' y='48.13' style='font-size: 12.00px; font-family: "Arial";' textLength='325.75px' lengthAdjust='spacingAndGlyphs'>Cumulative cost of maintaining each group's spending basket</text>
+<text x='15.94' y='29.55' style='font-size: 19.00px; font-weight: bold; font-family: "Arial";' textLength='483.58px' lengthAdjust='spacingAndGlyphs'>Lower inflation does not restore the earlier price level</text>
+<text x='15.94' y='533.33' style='font-size: 9.00px; font-family: "Arial";' textLength='553.00px' lengthAdjust='spacingAndGlyphs'>Observed / derived: A cost index is not household wellbeing or disposable income; expenditure weights update over time. Base quarter and</text>
+<text x='15.94' y='545.75' style='font-size: 9.00px; font-family: "Arial";' textLength='148.50px' lengthAdjust='spacingAndGlyphs'>endpoint are common across groups.</text>
+<text x='15.94' y='558.17' style='font-size: 9.00px; font-family: "Arial";' textLength='310.00px' lengthAdjust='spacingAndGlyphs'>Sources: Stats NZ September 2026 household living-cost indexes, 2008-2026</text>
+</g>
+</g>
+</svg>

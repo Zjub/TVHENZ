@@ -1,0 +1,16 @@
+topic,measure,value,unit,period,basis,caveat,source_id
+Health,Adults with GP cost barrier,14.9,percent,2024/25,Observed survey estimate,95% CI in health_survey.csv; barriers overlap,health
+Health,Adults with GP waiting-time barrier,25.5,percent,2024/25,Observed survey estimate,Does not establish which intervention creates appointments,health
+Household costs,All-household annual living-cost inflation,3,percent,September 2026,Observed index change,HLPI includes interest; differs from CPI,hlpi
+Household costs,Superannuitant annual living-cost inflation,4,percent,September 2026,Observed index change,"Group basket, not each retiree's inflation",hlpi
+Jobs,Seasonally adjusted unemployment rate,5.6,percent of labour force,June 2026,Observed HLFS estimate,Different concept from Jobseeker receipt,labour
+Fiscal,Core Crown tax revenue / GDP,27.6,percent,2025/26,Unaudited actual,Published PREFU denominator; revisions noted in original release,prefu
+Fiscal,Core Crown tax revenue / GDP,29.099999999999998,percent,2030/31,Official forecast,Not a guarantee or independent election-policy costing,prefu
+Benefits,NZ Super / total benefit expense,53.54806567603865,percent,2025/26,Derived from unaudited actual,Benefit expense denominator excludes administration and other social services,prefu_exp
+Benefits,Jobseeker + Emergency / core Crown expenses,3.36891922390387,percent,2025/26,Derived from unaudited actual,Whole programme includes health-related recipients; not work-ready spending,prefu_exp
+Inflation,Extra real annual income tax after ten years,1575.5243345137424,Starting-year NZD/year,Ten-year scenario,Scenario,"Constant $70k real earnings, 2% inflation, frozen versus indexed current thresholds; no credits/ACC/transfers",tax_rates
+Inflation,CGT on inflation alone after ten years,25151.238017478277,Starting-year NZD,Ten-year scenario,Proposed-policy scenario,"$500k property, 2% inflation, zero real gain, 28% tax, no costs; begins at valuation/acquisition date",labour_cgt
+Retirement,Capital for $30k CPI-level lifetime income,515834.1102608721,NZD at age 65,Model retirement at 65,Actuarial scenario,"2% liability discount, equal male/female period mortality, 5% loading; no survivor/refund; not a quote",life
+Retirement,Net invested contribution to fund $30k target,9.773124141529104,percent of assumed gross earnings,Ages 25-64,Scenario,"$70k constant real earnings, 3% net return, fixed 2% annuity discount; not a universal pension costing",life
+Retirement,Lifetime income after 8% invested for 40 years,24557.142273488975,NZD/year in constant purchasing power,Ages 25-64,Scenario,"8% is net deposited, not combined headline employee/employer rate; $70k real earnings, 3% net return",life
+Retirement,Share of members with no recorded annual contribution,33.989546129431154,percent,Year ending June 2026,Administrative statistic,Includes children/retirees/overseas members; not non-saving employed adults,kiwi

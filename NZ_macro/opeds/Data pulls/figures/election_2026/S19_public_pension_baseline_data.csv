@@ -1,0 +1,21 @@
+measure,year,status,value,source_sheet,source_row,block,gdp_millions,recipient_thousands,measure_type,index
+New Zealand Superannuation,2022,Actual,17764,Core Crown Expense Tables,54,Benefit expense,365304,848,expense_index,71.85793454957324
+New Zealand Superannuation,2022,Actual,17764,Core Crown Expense Tables,54,Benefit expense,365304,848,recipient_index,88.42544316996872
+New Zealand Superannuation,2023,Actual,19517,Core Crown Expense Tables,54,Benefit expense,401827,870,expense_index,78.94907163949678
+New Zealand Superannuation,2023,Actual,19517,Core Crown Expense Tables,54,Benefit expense,401827,870,recipient_index,90.71949947862356
+New Zealand Superannuation,2024,Actual,21574,Core Crown Expense Tables,54,Benefit expense,420858,899,expense_index,87.26993244609847
+New Zealand Superannuation,2024,Actual,21574,Core Crown Expense Tables,54,Benefit expense,420858,899,recipient_index,93.74348279457769
+New Zealand Superannuation,2025,Actual,23191,Core Crown Expense Tables,54,Benefit expense,435071,928,expense_index,93.81092997856074
+New Zealand Superannuation,2025,Actual,23191,Core Crown Expense Tables,54,Benefit expense,435071,928,recipient_index,96.7674661105318
+New Zealand Superannuation,2026,Unaudited Actual,24721,Core Crown Expense Tables,54,Benefit expense,455882,959,expense_index,100
+New Zealand Superannuation,2026,Unaudited Actual,24721,Core Crown Expense Tables,54,Benefit expense,455882,959,recipient_index,100
+New Zealand Superannuation,2027,Forecast,26480,Core Crown Expense Tables,54,Benefit expense,480119,992,expense_index,107.11540795275272
+New Zealand Superannuation,2027,Forecast,26480,Core Crown Expense Tables,54,Benefit expense,480119,992,recipient_index,103.44108446298227
+New Zealand Superannuation,2028,Forecast,28321,Core Crown Expense Tables,54,Benefit expense,507501,1026,expense_index,114.56251769750415
+New Zealand Superannuation,2028,Forecast,28321,Core Crown Expense Tables,54,Benefit expense,507501,1026,recipient_index,106.98644421272158
+New Zealand Superannuation,2029,Forecast,29706,Core Crown Expense Tables,54,Benefit expense,532347,1057,expense_index,120.16504186723839
+New Zealand Superannuation,2029,Forecast,29706,Core Crown Expense Tables,54,Benefit expense,532347,1057,recipient_index,110.21897810218978
+New Zealand Superannuation,2030,Forecast,31237,Core Crown Expense Tables,54,Benefit expense,557351,1086,expense_index,126.35815703248251
+New Zealand Superannuation,2030,Forecast,31237,Core Crown Expense Tables,54,Benefit expense,557351,1086,recipient_index,113.2429614181439
+New Zealand Superannuation,2031,Forecast,32888,Core Crown Expense Tables,54,Benefit expense,582358,1112,expense_index,133.0366894543101
+New Zealand Superannuation,2031,Forecast,32888,Core Crown Expense Tables,54,Benefit expense,582358,1112,recipient_index,115.9541188738269

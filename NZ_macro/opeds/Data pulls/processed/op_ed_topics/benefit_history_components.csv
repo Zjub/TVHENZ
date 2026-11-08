@@ -1,0 +1,476 @@
+year,measure,value_millions,original_cell,status,source_id,source_vintage,pdf_page,key,group
+2001,New Zealand Superannuation,5273,"5,273",Actual,treasury_hyefu_2005,2005,1,newzealandsuperannuation,NZ Superannuation
+2002,New Zealand Superannuation,5450,"5,450",Actual,treasury_hyefu_2005,2005,1,newzealandsuperannuation,NZ Superannuation
+2003,New Zealand Superannuation,5642,"5,642",Actual,treasury_hyefu_2005,2005,1,newzealandsuperannuation,NZ Superannuation
+2004,New Zealand Superannuation,5889,"5,889",Actual,treasury_hyefu_2005,2005,1,newzealandsuperannuation,NZ Superannuation
+2005,New Zealand Superannuation,6083,"6,083",Actual,treasury_hyefu_2005,2005,1,newzealandsuperannuation,NZ Superannuation
+2001,Domestic Purposes Benefit,1444,"1,444",Actual,treasury_hyefu_2005,2005,1,domesticpurposesbenefit,Main income-replacement basket
+2002,Domestic Purposes Benefit,1501,"1,501",Actual,treasury_hyefu_2005,2005,1,domesticpurposesbenefit,Main income-replacement basket
+2003,Domestic Purposes Benefit,1520,"1,520",Actual,treasury_hyefu_2005,2005,1,domesticpurposesbenefit,Main income-replacement basket
+2004,Domestic Purposes Benefit,1569,"1,569",Actual,treasury_hyefu_2005,2005,1,domesticpurposesbenefit,Main income-replacement basket
+2005,Domestic Purposes Benefit,1547,"1,547",Actual,treasury_hyefu_2005,2005,1,domesticpurposesbenefit,Main income-replacement basket
+2001,Unemployment Benefit,,..,Actual,treasury_hyefu_2005,2005,1,unemploymentbenefit,Main income-replacement basket
+2002,Unemployment Benefit,1369,"1,369",Actual,treasury_hyefu_2005,2005,1,unemploymentbenefit,Main income-replacement basket
+2003,Unemployment Benefit,1274,"1,274",Actual,treasury_hyefu_2005,2005,1,unemploymentbenefit,Main income-replacement basket
+2004,Unemployment Benefit,1084,"1,084",Actual,treasury_hyefu_2005,2005,1,unemploymentbenefit,Main income-replacement basket
+2005,Unemployment Benefit,831,831,Actual,treasury_hyefu_2005,2005,1,unemploymentbenefit,Main income-replacement basket
+2001,Community Wage,1849,"1,849",Actual,treasury_hyefu_2005,2005,1,communitywage,Main income-replacement basket
+2002,Community Wage,,..,Actual,treasury_hyefu_2005,2005,1,communitywage,Main income-replacement basket
+2003,Community Wage,,..,Actual,treasury_hyefu_2005,2005,1,communitywage,Main income-replacement basket
+2004,Community Wage,,..,Actual,treasury_hyefu_2005,2005,1,communitywage,Main income-replacement basket
+2005,Community Wage,,..,Actual,treasury_hyefu_2005,2005,1,communitywage,Main income-replacement basket
+2001,Accommodation Supplement,795,795,Actual,treasury_hyefu_2005,2005,1,accommodationsupplement,Housing assistance
+2002,Accommodation Supplement,720,720,Actual,treasury_hyefu_2005,2005,1,accommodationsupplement,Housing assistance
+2003,Accommodation Supplement,706,706,Actual,treasury_hyefu_2005,2005,1,accommodationsupplement,Housing assistance
+2004,Accommodation Supplement,702,702,Actual,treasury_hyefu_2005,2005,1,accommodationsupplement,Housing assistance
+2005,Accommodation Supplement,750,750,Actual,treasury_hyefu_2005,2005,1,accommodationsupplement,Housing assistance
+2001,Invalids Benefit,745,745,Actual,treasury_hyefu_2005,2005,1,invalidsbenefit,Main income-replacement basket
+2002,Invalids Benefit,832,832,Actual,treasury_hyefu_2005,2005,1,invalidsbenefit,Main income-replacement basket
+2003,Invalids Benefit,914,914,Actual,treasury_hyefu_2005,2005,1,invalidsbenefit,Main income-replacement basket
+2004,Invalids Benefit,976,976,Actual,treasury_hyefu_2005,2005,1,invalidsbenefit,Main income-replacement basket
+2005,Invalids Benefit,1026,"1,026",Actual,treasury_hyefu_2005,2005,1,invalidsbenefit,Main income-replacement basket
+2001,Sickness Benefit,,..,Actual,treasury_hyefu_2005,2005,1,sicknessbenefit,Main income-replacement basket
+2002,Sickness Benefit,375,375,Actual,treasury_hyefu_2005,2005,1,sicknessbenefit,Main income-replacement basket
+2003,Sickness Benefit,421,421,Actual,treasury_hyefu_2005,2005,1,sicknessbenefit,Main income-replacement basket
+2004,Sickness Benefit,470,470,Actual,treasury_hyefu_2005,2005,1,sicknessbenefit,Main income-replacement basket
+2005,Sickness Benefit,510,510,Actual,treasury_hyefu_2005,2005,1,sicknessbenefit,Main income-replacement basket
+2001,Disability Allowance,210,210,Actual,treasury_hyefu_2005,2005,1,disabilityallowance,Other benefits and assistance
+2002,Disability Allowance,224,224,Actual,treasury_hyefu_2005,2005,1,disabilityallowance,Other benefits and assistance
+2003,Disability Allowance,241,241,Actual,treasury_hyefu_2005,2005,1,disabilityallowance,Other benefits and assistance
+2004,Disability Allowance,257,257,Actual,treasury_hyefu_2005,2005,1,disabilityallowance,Other benefits and assistance
+2005,Disability Allowance,267,267,Actual,treasury_hyefu_2005,2005,1,disabilityallowance,Other benefits and assistance
+2001,Transitional Retirement Benefit,127,127,Actual,treasury_hyefu_2005,2005,1,transitionalretirementbenefit,Other benefits and assistance
+2002,Transitional Retirement Benefit,97,97,Actual,treasury_hyefu_2005,2005,1,transitionalretirementbenefit,Other benefits and assistance
+2003,Transitional Retirement Benefit,47,47,Actual,treasury_hyefu_2005,2005,1,transitionalretirementbenefit,Other benefits and assistance
+2004,Transitional Retirement Benefit,11,11,Actual,treasury_hyefu_2005,2005,1,transitionalretirementbenefit,Other benefits and assistance
+2005,Transitional Retirement Benefit,,..,Actual,treasury_hyefu_2005,2005,1,transitionalretirementbenefit,Other benefits and assistance
+2001,Income Related Rents,161,161,Actual,treasury_hyefu_2005,2005,1,incomerelatedrents,Housing assistance
+2002,Income Related Rents,274,274,Actual,treasury_hyefu_2005,2005,1,incomerelatedrents,Housing assistance
+2003,Income Related Rents,296,296,Actual,treasury_hyefu_2005,2005,1,incomerelatedrents,Housing assistance
+2004,Income Related Rents,340,340,Actual,treasury_hyefu_2005,2005,1,incomerelatedrents,Housing assistance
+2005,Income Related Rents,370,370,Actual,treasury_hyefu_2005,2005,1,incomerelatedrents,Housing assistance
+2001,Family Support,878,878,Actual,treasury_hyefu_2005,2005,1,familysupport,Family tax credits and payments
+2002,Family Support,848,848,Actual,treasury_hyefu_2005,2005,1,familysupport,Family tax credits and payments
+2003,Family Support,862,862,Actual,treasury_hyefu_2005,2005,1,familysupport,Family tax credits and payments
+2004,Family Support,833,833,Actual,treasury_hyefu_2005,2005,1,familysupport,Family tax credits and payments
+2005,Family Support,846,846,Actual,treasury_hyefu_2005,2005,1,familysupport,Family tax credits and payments
+2001,Child Tax Credit,161,161,Actual,treasury_hyefu_2005,2005,1,childtaxcredit,Family tax credits and payments
+2002,Child Tax Credit,157,157,Actual,treasury_hyefu_2005,2005,1,childtaxcredit,Family tax credits and payments
+2003,Child Tax Credit,143,143,Actual,treasury_hyefu_2005,2005,1,childtaxcredit,Family tax credits and payments
+2004,Child Tax Credit,155,155,Actual,treasury_hyefu_2005,2005,1,childtaxcredit,Family tax credits and payments
+2005,Child Tax Credit,141,141,Actual,treasury_hyefu_2005,2005,1,childtaxcredit,Family tax credits and payments
+2001,Special Benefit,40,40,Actual,treasury_hyefu_2005,2005,1,specialbenefit,Other benefits and assistance
+2002,Special Benefit,49,49,Actual,treasury_hyefu_2005,2005,1,specialbenefit,Other benefits and assistance
+2003,Special Benefit,82,82,Actual,treasury_hyefu_2005,2005,1,specialbenefit,Other benefits and assistance
+2004,Special Benefit,140,140,Actual,treasury_hyefu_2005,2005,1,specialbenefit,Other benefits and assistance
+2005,Special Benefit,175,175,Actual,treasury_hyefu_2005,2005,1,specialbenefit,Other benefits and assistance
+2001,In Work Payment,,..,Actual,treasury_hyefu_2005,2005,1,inworkpayment,Family tax credits and payments
+2002,In Work Payment,,..,Actual,treasury_hyefu_2005,2005,1,inworkpayment,Family tax credits and payments
+2003,In Work Payment,,..,Actual,treasury_hyefu_2005,2005,1,inworkpayment,Family tax credits and payments
+2004,In Work Payment,,..,Actual,treasury_hyefu_2005,2005,1,inworkpayment,Family tax credits and payments
+2005,In Work Payment,,..,Actual,treasury_hyefu_2005,2005,1,inworkpayment,Family tax credits and payments
+2001,Benefits paid in Australia,171,171,Actual,treasury_hyefu_2005,2005,1,benefitspaidinaustralia,Other benefits and assistance
+2002,Benefits paid in Australia,159,159,Actual,treasury_hyefu_2005,2005,1,benefitspaidinaustralia,Other benefits and assistance
+2003,Benefits paid in Australia,121,121,Actual,treasury_hyefu_2005,2005,1,benefitspaidinaustralia,Other benefits and assistance
+2004,Benefits paid in Australia,103,103,Actual,treasury_hyefu_2005,2005,1,benefitspaidinaustralia,Other benefits and assistance
+2005,Benefits paid in Australia,91,91,Actual,treasury_hyefu_2005,2005,1,benefitspaidinaustralia,Other benefits and assistance
+2001,Paid Parental Leave,,..,Actual,treasury_hyefu_2005,2005,1,paidparentalleave,Other benefits and assistance
+2002,Paid Parental Leave,,..,Actual,treasury_hyefu_2005,2005,1,paidparentalleave,Other benefits and assistance
+2003,Paid Parental Leave,56,56,Actual,treasury_hyefu_2005,2005,1,paidparentalleave,Other benefits and assistance
+2004,Paid Parental Leave,63,63,Actual,treasury_hyefu_2005,2005,1,paidparentalleave,Other benefits and assistance
+2005,Paid Parental Leave,76,76,Actual,treasury_hyefu_2005,2005,1,paidparentalleave,Other benefits and assistance
+2001,Other benefits,531,531,Actual,treasury_hyefu_2005,2005,1,otherbenefits,Other benefits and assistance
+2002,Other benefits,559,559,Actual,treasury_hyefu_2005,2005,1,otherbenefits,Other benefits and assistance
+2003,Other benefits,559,559,Actual,treasury_hyefu_2005,2005,1,otherbenefits,Other benefits and assistance
+2004,Other benefits,589,589,Actual,treasury_hyefu_2005,2005,1,otherbenefits,Other benefits and assistance
+2005,Other benefits,613,613,Actual,treasury_hyefu_2005,2005,1,otherbenefits,Other benefits and assistance
+2006,New Zealand Superannuation,6414,"6,414",Actual,treasury_hyefu_2010,2010,100,newzealandsuperannuation,NZ Superannuation
+2007,New Zealand Superannuation,6810,"6,810",Actual,treasury_hyefu_2010,2010,100,newzealandsuperannuation,NZ Superannuation
+2008,New Zealand Superannuation,7348,"7,348",Actual,treasury_hyefu_2010,2010,100,newzealandsuperannuation,NZ Superannuation
+2009,New Zealand Superannuation,7744,"7,744",Actual,treasury_hyefu_2010,2010,100,newzealandsuperannuation,NZ Superannuation
+2010,New Zealand Superannuation,8290,"8,290",Actual,treasury_hyefu_2010,2010,100,newzealandsuperannuation,NZ Superannuation
+2006,Domestic Purposes Benefit,1493,"1,493",Actual,treasury_hyefu_2010,2010,100,domesticpurposesbenefit,Main income-replacement basket
+2007,Domestic Purposes Benefit,1468,"1,468",Actual,treasury_hyefu_2010,2010,100,domesticpurposesbenefit,Main income-replacement basket
+2008,Domestic Purposes Benefit,1478,"1,478",Actual,treasury_hyefu_2010,2010,100,domesticpurposesbenefit,Main income-replacement basket
+2009,Domestic Purposes Benefit,1530,"1,530",Actual,treasury_hyefu_2010,2010,100,domesticpurposesbenefit,Main income-replacement basket
+2010,Domestic Purposes Benefit,1693,"1,693",Actual,treasury_hyefu_2010,2010,100,domesticpurposesbenefit,Main income-replacement basket
+2006,Unemployment Benefit,712,712,Actual,treasury_hyefu_2010,2010,100,unemploymentbenefit,Main income-replacement basket
+2007,Unemployment Benefit,613,613,Actual,treasury_hyefu_2010,2010,100,unemploymentbenefit,Main income-replacement basket
+2008,Unemployment Benefit,458,458,Actual,treasury_hyefu_2010,2010,100,unemploymentbenefit,Main income-replacement basket
+2009,Unemployment Benefit,586,586,Actual,treasury_hyefu_2010,2010,100,unemploymentbenefit,Main income-replacement basket
+2010,Unemployment Benefit,930,930,Actual,treasury_hyefu_2010,2010,100,unemploymentbenefit,Main income-replacement basket
+2006,Invalids Benefit,1073,"1,073",Actual,treasury_hyefu_2010,2010,100,invalidsbenefit,Main income-replacement basket
+2007,Invalids Benefit,1132,"1,132",Actual,treasury_hyefu_2010,2010,100,invalidsbenefit,Main income-replacement basket
+2008,Invalids Benefit,1216,"1,216",Actual,treasury_hyefu_2010,2010,100,invalidsbenefit,Main income-replacement basket
+2009,Invalids Benefit,1260,"1,260",Actual,treasury_hyefu_2010,2010,100,invalidsbenefit,Main income-replacement basket
+2010,Invalids Benefit,1303,"1,303",Actual,treasury_hyefu_2010,2010,100,invalidsbenefit,Main income-replacement basket
+2006,Family Tax Credit,1285,"1,285",Actual,treasury_hyefu_2010,2010,100,familytaxcredit,Family tax credits and payments
+2007,Family Tax Credit,1699,"1,699",Actual,treasury_hyefu_2010,2010,100,familytaxcredit,Family tax credits and payments
+2008,Family Tax Credit,1897,"1,897",Actual,treasury_hyefu_2010,2010,100,familytaxcredit,Family tax credits and payments
+2009,Family Tax Credit,2062,"2,062",Actual,treasury_hyefu_2010,2010,100,familytaxcredit,Family tax credits and payments
+2010,Family Tax Credit,2168,"2,168",Actual,treasury_hyefu_2010,2010,100,familytaxcredit,Family tax credits and payments
+2006,Accommodation Supplement,843,843,Actual,treasury_hyefu_2010,2010,100,accommodationsupplement,Housing assistance
+2007,Accommodation Supplement,877,877,Actual,treasury_hyefu_2010,2010,100,accommodationsupplement,Housing assistance
+2008,Accommodation Supplement,891,891,Actual,treasury_hyefu_2010,2010,100,accommodationsupplement,Housing assistance
+2009,Accommodation Supplement,989,989,Actual,treasury_hyefu_2010,2010,100,accommodationsupplement,Housing assistance
+2010,Accommodation Supplement,1154,"1,154",Actual,treasury_hyefu_2010,2010,100,accommodationsupplement,Housing assistance
+2006,Sickness Benefit,541,541,Actual,treasury_hyefu_2010,2010,100,sicknessbenefit,Main income-replacement basket
+2007,Sickness Benefit,573,573,Actual,treasury_hyefu_2010,2010,100,sicknessbenefit,Main income-replacement basket
+2008,Sickness Benefit,582,582,Actual,treasury_hyefu_2010,2010,100,sicknessbenefit,Main income-replacement basket
+2009,Sickness Benefit,613,613,Actual,treasury_hyefu_2010,2010,100,sicknessbenefit,Main income-replacement basket
+2010,Sickness Benefit,710,710,Actual,treasury_hyefu_2010,2010,100,sicknessbenefit,Main income-replacement basket
+2006,Disability Allowance,261,261,Actual,treasury_hyefu_2010,2010,100,disabilityallowance,Other benefits and assistance
+2007,Disability Allowance,270,270,Actual,treasury_hyefu_2010,2010,100,disabilityallowance,Other benefits and assistance
+2008,Disability Allowance,278,278,Actual,treasury_hyefu_2010,2010,100,disabilityallowance,Other benefits and assistance
+2009,Disability Allowance,390,390,Actual,treasury_hyefu_2010,2010,100,disabilityallowance,Other benefits and assistance
+2010,Disability Allowance,411,411,Actual,treasury_hyefu_2010,2010,100,disabilityallowance,Other benefits and assistance
+2006,Income Related Rents,395,395,Actual,treasury_hyefu_2010,2010,100,incomerelatedrents,Housing assistance
+2007,Income Related Rents,434,434,Actual,treasury_hyefu_2010,2010,100,incomerelatedrents,Housing assistance
+2008,Income Related Rents,465,465,Actual,treasury_hyefu_2010,2010,100,incomerelatedrents,Housing assistance
+2009,Income Related Rents,512,512,Actual,treasury_hyefu_2010,2010,100,incomerelatedrents,Housing assistance
+2010,Income Related Rents,522,522,Actual,treasury_hyefu_2010,2010,100,incomerelatedrents,Housing assistance
+2006,In Work Tax Credit,70,70,Actual,treasury_hyefu_2010,2010,100,inworktaxcredit,Family tax credits and payments
+2007,In Work Tax Credit,461,461,Actual,treasury_hyefu_2010,2010,100,inworktaxcredit,Family tax credits and payments
+2008,In Work Tax Credit,563,563,Actual,treasury_hyefu_2010,2010,100,inworktaxcredit,Family tax credits and payments
+2009,In Work Tax Credit,584,584,Actual,treasury_hyefu_2010,2010,100,inworktaxcredit,Family tax credits and payments
+2010,In Work Tax Credit,595,595,Actual,treasury_hyefu_2010,2010,100,inworktaxcredit,Family tax credits and payments
+2006,Child Tax Credit,154,154,Actual,treasury_hyefu_2010,2010,100,childtaxcredit,Family tax credits and payments
+2007,Child Tax Credit,44,44,Actual,treasury_hyefu_2010,2010,100,childtaxcredit,Family tax credits and payments
+2008,Child Tax Credit,11,11,Actual,treasury_hyefu_2010,2010,100,childtaxcredit,Family tax credits and payments
+2009,Child Tax Credit,6,6,Actual,treasury_hyefu_2010,2010,100,childtaxcredit,Family tax credits and payments
+2010,Child Tax Credit,4,4,Actual,treasury_hyefu_2010,2010,100,childtaxcredit,Family tax credits and payments
+2006,Special Benefit,162,162,Actual,treasury_hyefu_2010,2010,100,specialbenefit,Other benefits and assistance
+2007,Special Benefit,106,106,Actual,treasury_hyefu_2010,2010,100,specialbenefit,Other benefits and assistance
+2008,Special Benefit,71,71,Actual,treasury_hyefu_2010,2010,100,specialbenefit,Other benefits and assistance
+2009,Special Benefit,,..,Actual,treasury_hyefu_2010,2010,100,specialbenefit,Other benefits and assistance
+2010,Special Benefit,,..,Actual,treasury_hyefu_2010,2010,100,specialbenefit,Other benefits and assistance
+2006,Benefits paid in Australia,80,80,Actual,treasury_hyefu_2010,2010,100,benefitspaidinaustralia,Other benefits and assistance
+2007,Benefits paid in Australia,71,71,Actual,treasury_hyefu_2010,2010,100,benefitspaidinaustralia,Other benefits and assistance
+2008,Benefits paid in Australia,58,58,Actual,treasury_hyefu_2010,2010,100,benefitspaidinaustralia,Other benefits and assistance
+2009,Benefits paid in Australia,50,50,Actual,treasury_hyefu_2010,2010,100,benefitspaidinaustralia,Other benefits and assistance
+2010,Benefits paid in Australia,45,45,Actual,treasury_hyefu_2010,2010,100,benefitspaidinaustralia,Other benefits and assistance
+2006,Paid Parental Leave,96,96,Actual,treasury_hyefu_2010,2010,100,paidparentalleave,Other benefits and assistance
+2007,Paid Parental Leave,122,122,Actual,treasury_hyefu_2010,2010,100,paidparentalleave,Other benefits and assistance
+2008,Paid Parental Leave,135,135,Actual,treasury_hyefu_2010,2010,100,paidparentalleave,Other benefits and assistance
+2009,Paid Parental Leave,143,143,Actual,treasury_hyefu_2010,2010,100,paidparentalleave,Other benefits and assistance
+2010,Paid Parental Leave,154,154,Actual,treasury_hyefu_2010,2010,100,paidparentalleave,Other benefits and assistance
+2006,Childcare Assistance,110,110,Actual,treasury_hyefu_2010,2010,100,childcareassistance,Other benefits and assistance
+2007,Childcare Assistance,139,139,Actual,treasury_hyefu_2010,2010,100,childcareassistance,Other benefits and assistance
+2008,Childcare Assistance,150,150,Actual,treasury_hyefu_2010,2010,100,childcareassistance,Other benefits and assistance
+2009,Childcare Assistance,159,159,Actual,treasury_hyefu_2010,2010,100,childcareassistance,Other benefits and assistance
+2010,Childcare Assistance,178,178,Actual,treasury_hyefu_2010,2010,100,childcareassistance,Other benefits and assistance
+2006,War Disablement Pensions,113,113,Actual,treasury_hyefu_2010,2010,100,wardisablementpensions,Other benefits and assistance
+2007,War Disablement Pensions,122,122,Actual,treasury_hyefu_2010,2010,100,wardisablementpensions,Other benefits and assistance
+2008,War Disablement Pensions,134,134,Actual,treasury_hyefu_2010,2010,100,wardisablementpensions,Other benefits and assistance
+2009,War Disablement Pensions,125,125,Actual,treasury_hyefu_2010,2010,100,wardisablementpensions,Other benefits and assistance
+2010,War Disablement Pensions,137,137,Actual,treasury_hyefu_2010,2010,100,wardisablementpensions,Other benefits and assistance
+2006,Veteran's Pension,128,128,Actual,treasury_hyefu_2010,2010,100,veteranspension,Other benefits and assistance
+2007,Veteran's Pension,143,143,Actual,treasury_hyefu_2010,2010,100,veteranspension,Other benefits and assistance
+2008,Veteran's Pension,161,161,Actual,treasury_hyefu_2010,2010,100,veteranspension,Other benefits and assistance
+2009,Veteran's Pension,176,176,Actual,treasury_hyefu_2010,2010,100,veteranspension,Other benefits and assistance
+2010,Veteran's Pension,179,179,Actual,treasury_hyefu_2010,2010,100,veteranspension,Other benefits and assistance
+2006,Other benefits,316,316,Actual,treasury_hyefu_2010,2010,100,otherbenefits,Other benefits and assistance
+2007,Other benefits,351,351,Actual,treasury_hyefu_2010,2010,100,otherbenefits,Other benefits and assistance
+2008,Other benefits,392,392,Actual,treasury_hyefu_2010,2010,100,otherbenefits,Other benefits and assistance
+2009,Other benefits,437,437,Actual,treasury_hyefu_2010,2010,100,otherbenefits,Other benefits and assistance
+2010,Other benefits,488,488,Actual,treasury_hyefu_2010,2010,100,otherbenefits,Other benefits and assistance
+2011,New Zealand Superannuation,8830,"8,830",Actual,treasury_hyefu_2015,2015,136,newzealandsuperannuation,NZ Superannuation
+2012,New Zealand Superannuation,9584,"9,584",Actual,treasury_hyefu_2015,2015,136,newzealandsuperannuation,NZ Superannuation
+2013,New Zealand Superannuation,10235,"10,235",Actual,treasury_hyefu_2015,2015,136,newzealandsuperannuation,NZ Superannuation
+2014,New Zealand Superannuation,10913,"10,913",Actual,treasury_hyefu_2015,2015,136,newzealandsuperannuation,NZ Superannuation
+2015,New Zealand Superannuation,11591,"11,591",Actual,treasury_hyefu_2015,2015,136,newzealandsuperannuation,NZ Superannuation
+2011,Jobseeker Support and Emergency Benefit,,..,Actual,treasury_hyefu_2015,2015,136,jobseekersupportandemergencybenefit,Main income-replacement basket
+2012,Jobseeker Support and Emergency Benefit,,..,Actual,treasury_hyefu_2015,2015,136,jobseekersupportandemergencybenefit,Main income-replacement basket
+2013,Jobseeker Support and Emergency Benefit,,..,Actual,treasury_hyefu_2015,2015,136,jobseekersupportandemergencybenefit,Main income-replacement basket
+2014,Jobseeker Support and Emergency Benefit,1691,"1,691",Actual,treasury_hyefu_2015,2015,136,jobseekersupportandemergencybenefit,Main income-replacement basket
+2015,Jobseeker Support and Emergency Benefit,1684,"1,684",Actual,treasury_hyefu_2015,2015,136,jobseekersupportandemergencybenefit,Main income-replacement basket
+2011,Supported living payment,,..,Actual,treasury_hyefu_2015,2015,136,supportedlivingpayment,Main income-replacement basket
+2012,Supported living payment,,..,Actual,treasury_hyefu_2015,2015,136,supportedlivingpayment,Main income-replacement basket
+2013,Supported living payment,,..,Actual,treasury_hyefu_2015,2015,136,supportedlivingpayment,Main income-replacement basket
+2014,Supported living payment,1422,"1,422",Actual,treasury_hyefu_2015,2015,136,supportedlivingpayment,Main income-replacement basket
+2015,Supported living payment,1515,"1,515",Actual,treasury_hyefu_2015,2015,136,supportedlivingpayment,Main income-replacement basket
+2011,Sole parent support,,..,Actual,treasury_hyefu_2015,2015,136,soleparentsupport,Main income-replacement basket
+2012,Sole parent support,,..,Actual,treasury_hyefu_2015,2015,136,soleparentsupport,Main income-replacement basket
+2013,Sole parent support,,..,Actual,treasury_hyefu_2015,2015,136,soleparentsupport,Main income-replacement basket
+2014,Sole parent support,1222,"1,222",Actual,treasury_hyefu_2015,2015,136,soleparentsupport,Main income-replacement basket
+2015,Sole parent support,1186,"1,186",Actual,treasury_hyefu_2015,2015,136,soleparentsupport,Main income-replacement basket
+2011,Domestic Purposes Benefit,1757,"1,757",Actual,treasury_hyefu_2015,2015,136,domesticpurposesbenefit,Main income-replacement basket
+2012,Domestic Purposes Benefit,1811,"1,811",Actual,treasury_hyefu_2015,2015,136,domesticpurposesbenefit,Main income-replacement basket
+2013,Domestic Purposes Benefit,1738,"1,738",Actual,treasury_hyefu_2015,2015,136,domesticpurposesbenefit,Main income-replacement basket
+2014,Domestic Purposes Benefit,63,63,Actual,treasury_hyefu_2015,2015,136,domesticpurposesbenefit,Main income-replacement basket
+2015,Domestic Purposes Benefit,,..,Actual,treasury_hyefu_2015,2015,136,domesticpurposesbenefit,Main income-replacement basket
+2011,Invalid's Benefit,1306,"1,306",Actual,treasury_hyefu_2015,2015,136,invalidsbenefit,Main income-replacement basket
+2012,Invalid's Benefit,1325,"1,325",Actual,treasury_hyefu_2015,2015,136,invalidsbenefit,Main income-replacement basket
+2013,Invalid's Benefit,1330,"1,330",Actual,treasury_hyefu_2015,2015,136,invalidsbenefit,Main income-replacement basket
+2014,Invalid's Benefit,52,52,Actual,treasury_hyefu_2015,2015,136,invalidsbenefit,Main income-replacement basket
+2015,Invalid's Benefit,,..,Actual,treasury_hyefu_2015,2015,136,invalidsbenefit,Main income-replacement basket
+2011,Sickness Benefit,743,743,Actual,treasury_hyefu_2015,2015,136,sicknessbenefit,Main income-replacement basket
+2012,Sickness Benefit,775,775,Actual,treasury_hyefu_2015,2015,136,sicknessbenefit,Main income-replacement basket
+2013,Sickness Benefit,782,782,Actual,treasury_hyefu_2015,2015,136,sicknessbenefit,Main income-replacement basket
+2014,Sickness Benefit,29,29,Actual,treasury_hyefu_2015,2015,136,sicknessbenefit,Main income-replacement basket
+2015,Sickness Benefit,,..,Actual,treasury_hyefu_2015,2015,136,sicknessbenefit,Main income-replacement basket
+2011,Unemployment Benefit,943,943,Actual,treasury_hyefu_2015,2015,136,unemploymentbenefit,Main income-replacement basket
+2012,Unemployment Benefit,883,883,Actual,treasury_hyefu_2015,2015,136,unemploymentbenefit,Main income-replacement basket
+2013,Unemployment Benefit,812,812,Actual,treasury_hyefu_2015,2015,136,unemploymentbenefit,Main income-replacement basket
+2014,Unemployment Benefit,29,29,Actual,treasury_hyefu_2015,2015,136,unemploymentbenefit,Main income-replacement basket
+2015,Unemployment Benefit,,..,Actual,treasury_hyefu_2015,2015,136,unemploymentbenefit,Main income-replacement basket
+2011,Family Tax Credit,2130,"2,130",Actual,treasury_hyefu_2015,2015,136,familytaxcredit,Family tax credits and payments
+2012,Family Tax Credit,2071,"2,071",Actual,treasury_hyefu_2015,2015,136,familytaxcredit,Family tax credits and payments
+2013,Family Tax Credit,2018,"2,018",Actual,treasury_hyefu_2015,2015,136,familytaxcredit,Family tax credits and payments
+2014,Family Tax Credit,1965,"1,965",Actual,treasury_hyefu_2015,2015,136,familytaxcredit,Family tax credits and payments
+2015,Family Tax Credit,1854,"1,854",Actual,treasury_hyefu_2015,2015,136,familytaxcredit,Family tax credits and payments
+2011,Other working for families tax credits,616,616,Actual,treasury_hyefu_2015,2015,136,otherworkingforfamiliestaxcredits,Family tax credits and payments
+2012,Other working for families tax credits,599,599,Actual,treasury_hyefu_2015,2015,136,otherworkingforfamiliestaxcredits,Family tax credits and payments
+2013,Other working for families tax credits,575,575,Actual,treasury_hyefu_2015,2015,136,otherworkingforfamiliestaxcredits,Family tax credits and payments
+2014,Other working for families tax credits,567,567,Actual,treasury_hyefu_2015,2015,136,otherworkingforfamiliestaxcredits,Family tax credits and payments
+2015,Other working for families tax credits,549,549,Actual,treasury_hyefu_2015,2015,136,otherworkingforfamiliestaxcredits,Family tax credits and payments
+2011,Accommodation Assistance,1197,"1,197",Actual,treasury_hyefu_2015,2015,136,accommodationassistance,Housing assistance
+2012,Accommodation Assistance,1195,"1,195",Actual,treasury_hyefu_2015,2015,136,accommodationassistance,Housing assistance
+2013,Accommodation Assistance,1177,"1,177",Actual,treasury_hyefu_2015,2015,136,accommodationassistance,Housing assistance
+2014,Accommodation Assistance,1146,"1,146",Actual,treasury_hyefu_2015,2015,136,accommodationassistance,Housing assistance
+2015,Accommodation Assistance,1129,"1,129",Actual,treasury_hyefu_2015,2015,136,accommodationassistance,Housing assistance
+2011,Income-Related Rents,553,553,Actual,treasury_hyefu_2015,2015,136,incomerelatedrents,Housing assistance
+2012,Income-Related Rents,580,580,Actual,treasury_hyefu_2015,2015,136,incomerelatedrents,Housing assistance
+2013,Income-Related Rents,611,611,Actual,treasury_hyefu_2015,2015,136,incomerelatedrents,Housing assistance
+2014,Income-Related Rents,660,660,Actual,treasury_hyefu_2015,2015,136,incomerelatedrents,Housing assistance
+2015,Income-Related Rents,703,703,Actual,treasury_hyefu_2015,2015,136,incomerelatedrents,Housing assistance
+2011,Disability Assistance,409,409,Actual,treasury_hyefu_2015,2015,136,disabilityassistance,Other benefits and assistance
+2012,Disability Assistance,401,401,Actual,treasury_hyefu_2015,2015,136,disabilityassistance,Other benefits and assistance
+2013,Disability Assistance,384,384,Actual,treasury_hyefu_2015,2015,136,disabilityassistance,Other benefits and assistance
+2014,Disability Assistance,379,379,Actual,treasury_hyefu_2015,2015,136,disabilityassistance,Other benefits and assistance
+2015,Disability Assistance,377,377,Actual,treasury_hyefu_2015,2015,136,disabilityassistance,Other benefits and assistance
+2011,Benefits paid in Australia,40,40,Actual,treasury_hyefu_2015,2015,136,benefitspaidinaustralia,Other benefits and assistance
+2012,Benefits paid in Australia,37,37,Actual,treasury_hyefu_2015,2015,136,benefitspaidinaustralia,Other benefits and assistance
+2013,Benefits paid in Australia,22,22,Actual,treasury_hyefu_2015,2015,136,benefitspaidinaustralia,Other benefits and assistance
+2014,Benefits paid in Australia,19,19,Actual,treasury_hyefu_2015,2015,136,benefitspaidinaustralia,Other benefits and assistance
+2015,Benefits paid in Australia,15,15,Actual,treasury_hyefu_2015,2015,136,benefitspaidinaustralia,Other benefits and assistance
+2011,Paid Parental Leave,154,154,Actual,treasury_hyefu_2015,2015,136,paidparentalleave,Other benefits and assistance
+2012,Paid Parental Leave,158,158,Actual,treasury_hyefu_2015,2015,136,paidparentalleave,Other benefits and assistance
+2013,Paid Parental Leave,165,165,Actual,treasury_hyefu_2015,2015,136,paidparentalleave,Other benefits and assistance
+2014,Paid Parental Leave,165,165,Actual,treasury_hyefu_2015,2015,136,paidparentalleave,Other benefits and assistance
+2015,Paid Parental Leave,180,180,Actual,treasury_hyefu_2015,2015,136,paidparentalleave,Other benefits and assistance
+2011,Childcare Assistance,188,188,Actual,treasury_hyefu_2015,2015,136,childcareassistance,Other benefits and assistance
+2012,Childcare Assistance,188,188,Actual,treasury_hyefu_2015,2015,136,childcareassistance,Other benefits and assistance
+2013,Childcare Assistance,186,186,Actual,treasury_hyefu_2015,2015,136,childcareassistance,Other benefits and assistance
+2014,Childcare Assistance,186,186,Actual,treasury_hyefu_2015,2015,136,childcareassistance,Other benefits and assistance
+2015,Childcare Assistance,183,183,Actual,treasury_hyefu_2015,2015,136,childcareassistance,Other benefits and assistance
+2011,Veterans Support Entitlement,135,135,Actual,treasury_hyefu_2015,2015,136,veteranssupportentitlement,Other benefits and assistance
+2012,Veterans Support Entitlement,128,128,Actual,treasury_hyefu_2015,2015,136,veteranssupportentitlement,Other benefits and assistance
+2013,Veterans Support Entitlement,123,123,Actual,treasury_hyefu_2015,2015,136,veteranssupportentitlement,Other benefits and assistance
+2014,Veterans Support Entitlement,119,119,Actual,treasury_hyefu_2015,2015,136,veteranssupportentitlement,Other benefits and assistance
+2015,Veterans Support Entitlement,115,115,Actual,treasury_hyefu_2015,2015,136,veteranssupportentitlement,Other benefits and assistance
+2011,Veteran's Pension,178,178,Actual,treasury_hyefu_2015,2015,136,veteranspension,Other benefits and assistance
+2012,Veteran's Pension,177,177,Actual,treasury_hyefu_2015,2015,136,veteranspension,Other benefits and assistance
+2013,Veteran's Pension,171,171,Actual,treasury_hyefu_2015,2015,136,veteranspension,Other benefits and assistance
+2014,Veteran's Pension,165,165,Actual,treasury_hyefu_2015,2015,136,veteranspension,Other benefits and assistance
+2015,Veteran's Pension,178,178,Actual,treasury_hyefu_2015,2015,136,veteranspension,Other benefits and assistance
+2011,Other benefits,602,602,Actual,treasury_hyefu_2015,2015,136,otherbenefits,Other benefits and assistance
+2012,Other benefits,463,463,Actual,treasury_hyefu_2015,2015,136,otherbenefits,Other benefits and assistance
+2013,Other benefits,460,460,Actual,treasury_hyefu_2015,2015,136,otherbenefits,Other benefits and assistance
+2014,Other benefits,395,395,Actual,treasury_hyefu_2015,2015,136,otherbenefits,Other benefits and assistance
+2015,Other benefits,421,421,Actual,treasury_hyefu_2015,2015,136,otherbenefits,Other benefits and assistance
+2016,New Zealand Superannuation,12267,"12,267",Actual,treasury_hyefu_2020,2020,124,newzealandsuperannuation,NZ Superannuation
+2017,New Zealand Superannuation,13043,"13,043",Actual,treasury_hyefu_2020,2020,124,newzealandsuperannuation,NZ Superannuation
+2018,New Zealand Superannuation,13699,"13,699",Actual,treasury_hyefu_2020,2020,124,newzealandsuperannuation,NZ Superannuation
+2019,New Zealand Superannuation,14562,"14,562",Actual,treasury_hyefu_2020,2020,124,newzealandsuperannuation,NZ Superannuation
+2020,New Zealand Superannuation,15521,"15,521",Actual,treasury_hyefu_2020,2020,124,newzealandsuperannuation,NZ Superannuation
+2016,Jobseeker Support and Emergency Benefit,1671,"1,671",Actual,treasury_hyefu_2020,2020,124,jobseekersupportandemergencybenefit,Main income-replacement basket
+2017,Jobseeker Support and Emergency Benefit,1697,"1,697",Actual,treasury_hyefu_2020,2020,124,jobseekersupportandemergencybenefit,Main income-replacement basket
+2018,Jobseeker Support and Emergency Benefit,1697,"1,697",Actual,treasury_hyefu_2020,2020,124,jobseekersupportandemergencybenefit,Main income-replacement basket
+2019,Jobseeker Support and Emergency Benefit,1854,"1,854",Actual,treasury_hyefu_2020,2020,124,jobseekersupportandemergencybenefit,Main income-replacement basket
+2020,Jobseeker Support and Emergency Benefit,2285,"2,285",Actual,treasury_hyefu_2020,2020,124,jobseekersupportandemergencybenefit,Main income-replacement basket
+2016,Supported living payment,1523,"1,523",Actual,treasury_hyefu_2020,2020,124,supportedlivingpayment,Main income-replacement basket
+2017,Supported living payment,1533,"1,533",Actual,treasury_hyefu_2020,2020,124,supportedlivingpayment,Main income-replacement basket
+2018,Supported living payment,1541,"1,541",Actual,treasury_hyefu_2020,2020,124,supportedlivingpayment,Main income-replacement basket
+2019,Supported living payment,1556,"1,556",Actual,treasury_hyefu_2020,2020,124,supportedlivingpayment,Main income-replacement basket
+2020,Supported living payment,1650,"1,650",Actual,treasury_hyefu_2020,2020,124,supportedlivingpayment,Main income-replacement basket
+2016,Sole parent support,1153,"1,153",Actual,treasury_hyefu_2020,2020,124,soleparentsupport,Main income-replacement basket
+2017,Sole parent support,1159,"1,159",Actual,treasury_hyefu_2020,2020,124,soleparentsupport,Main income-replacement basket
+2018,Sole parent support,1117,"1,117",Actual,treasury_hyefu_2020,2020,124,soleparentsupport,Main income-replacement basket
+2019,Sole parent support,1115,"1,115",Actual,treasury_hyefu_2020,2020,124,soleparentsupport,Main income-replacement basket
+2020,Sole parent support,1231,"1,231",Actual,treasury_hyefu_2020,2020,124,soleparentsupport,Main income-replacement basket
+2016,Family Tax Credit,1793,"1,793",Actual,treasury_hyefu_2020,2020,124,familytaxcredit,Family tax credits and payments
+2017,Family Tax Credit,1723,"1,723",Actual,treasury_hyefu_2020,2020,124,familytaxcredit,Family tax credits and payments
+2018,Family Tax Credit,1639,"1,639",Actual,treasury_hyefu_2020,2020,124,familytaxcredit,Family tax credits and payments
+2019,Family Tax Credit,2131,"2,131",Actual,treasury_hyefu_2020,2020,124,familytaxcredit,Family tax credits and payments
+2020,Family Tax Credit,2189,"2,189",Actual,treasury_hyefu_2020,2020,124,familytaxcredit,Family tax credits and payments
+2016,Other working for families tax credits,559,559,Actual,treasury_hyefu_2020,2020,124,otherworkingforfamiliestaxcredits,Family tax credits and payments
+2017,Other working for families tax credits,596,596,Actual,treasury_hyefu_2020,2020,124,otherworkingforfamiliestaxcredits,Family tax credits and payments
+2018,Other working for families tax credits,556,556,Actual,treasury_hyefu_2020,2020,124,otherworkingforfamiliestaxcredits,Family tax credits and payments
+2019,Other working for families tax credits,635,635,Actual,treasury_hyefu_2020,2020,124,otherworkingforfamiliestaxcredits,Family tax credits and payments
+2020,Other working for families tax credits,641,641,Actual,treasury_hyefu_2020,2020,124,otherworkingforfamiliestaxcredits,Family tax credits and payments
+2016,Accommodation Assistance,1164,"1,164",Actual,treasury_hyefu_2020,2020,124,accommodationassistance,Housing assistance
+2017,Accommodation Assistance,1127,"1,127",Actual,treasury_hyefu_2020,2020,124,accommodationassistance,Housing assistance
+2018,Accommodation Assistance,1204,"1,204",Actual,treasury_hyefu_2020,2020,124,accommodationassistance,Housing assistance
+2019,Accommodation Assistance,1640,"1,640",Actual,treasury_hyefu_2020,2020,124,accommodationassistance,Housing assistance
+2020,Accommodation Assistance,1923,"1,923",Actual,treasury_hyefu_2020,2020,124,accommodationassistance,Housing assistance
+2016,Income-Related Rents,755,755,Actual,treasury_hyefu_2020,2020,124,incomerelatedrents,Housing assistance
+2017,Income-Related Rents,815,815,Actual,treasury_hyefu_2020,2020,124,incomerelatedrents,Housing assistance
+2018,Income-Related Rents,890,890,Actual,treasury_hyefu_2020,2020,124,incomerelatedrents,Housing assistance
+2019,Income-Related Rents,974,974,Actual,treasury_hyefu_2020,2020,124,incomerelatedrents,Housing assistance
+2020,Income-Related Rents,1071,"1,071",Actual,treasury_hyefu_2020,2020,124,incomerelatedrents,Housing assistance
+2016,Disability Assistance,377,377,Actual,treasury_hyefu_2020,2020,124,disabilityassistance,Other benefits and assistance
+2017,Disability Assistance,377,377,Actual,treasury_hyefu_2020,2020,124,disabilityassistance,Other benefits and assistance
+2018,Disability Assistance,379,379,Actual,treasury_hyefu_2020,2020,124,disabilityassistance,Other benefits and assistance
+2019,Disability Assistance,386,386,Actual,treasury_hyefu_2020,2020,124,disabilityassistance,Other benefits and assistance
+2020,Disability Assistance,395,395,Actual,treasury_hyefu_2020,2020,124,disabilityassistance,Other benefits and assistance
+2016,Winter energy,,..,Actual,treasury_hyefu_2020,2020,124,winterenergy,Other benefits and assistance
+2017,Winter energy,,..,Actual,treasury_hyefu_2020,2020,124,winterenergy,Other benefits and assistance
+2018,Winter energy,,..,Actual,treasury_hyefu_2020,2020,124,winterenergy,Other benefits and assistance
+2019,Winter energy,441,441,Actual,treasury_hyefu_2020,2020,124,winterenergy,Other benefits and assistance
+2020,Winter energy,669,669,Actual,treasury_hyefu_2020,2020,124,winterenergy,Other benefits and assistance
+2016,Best start,,..,Actual,treasury_hyefu_2020,2020,124,beststart,Family tax credits and payments
+2017,Best start,,..,Actual,treasury_hyefu_2020,2020,124,beststart,Family tax credits and payments
+2018,Best start,,..,Actual,treasury_hyefu_2020,2020,124,beststart,Family tax credits and payments
+2019,Best start,48,48,Actual,treasury_hyefu_2020,2020,124,beststart,Family tax credits and payments
+2020,Best start,184,184,Actual,treasury_hyefu_2020,2020,124,beststart,Family tax credits and payments
+2016,Orphan's/Unsupported Child's Benefit,143,143,Actual,treasury_hyefu_2020,2020,124,orphansunsupportedchildsbenefit,Other benefits and assistance
+2017,Orphan's/Unsupported Child's Benefit,152,152,Actual,treasury_hyefu_2020,2020,124,orphansunsupportedchildsbenefit,Other benefits and assistance
+2018,Orphan's/Unsupported Child's Benefit,165,165,Actual,treasury_hyefu_2020,2020,124,orphansunsupportedchildsbenefit,Other benefits and assistance
+2019,Orphan's/Unsupported Child's Benefit,225,225,Actual,treasury_hyefu_2020,2020,124,orphansunsupportedchildsbenefit,Other benefits and assistance
+2020,Orphan's/Unsupported Child's Benefit,248,248,Actual,treasury_hyefu_2020,2020,124,orphansunsupportedchildsbenefit,Other benefits and assistance
+2016,Hardship Assistance,290,290,Actual,treasury_hyefu_2020,2020,124,hardshipassistance,Other benefits and assistance
+2017,Hardship Assistance,353,353,Actual,treasury_hyefu_2020,2020,124,hardshipassistance,Other benefits and assistance
+2018,Hardship Assistance,355,355,Actual,treasury_hyefu_2020,2020,124,hardshipassistance,Other benefits and assistance
+2019,Hardship Assistance,300,300,Actual,treasury_hyefu_2020,2020,124,hardshipassistance,Other benefits and assistance
+2020,Hardship Assistance,418,418,Actual,treasury_hyefu_2020,2020,124,hardshipassistance,Other benefits and assistance
+2016,Paid Parental Leave,217,217,Actual,treasury_hyefu_2020,2020,124,paidparentalleave,Other benefits and assistance
+2017,Paid Parental Leave,274,274,Actual,treasury_hyefu_2020,2020,124,paidparentalleave,Other benefits and assistance
+2018,Paid Parental Leave,288,288,Actual,treasury_hyefu_2020,2020,124,paidparentalleave,Other benefits and assistance
+2019,Paid Parental Leave,369,369,Actual,treasury_hyefu_2020,2020,124,paidparentalleave,Other benefits and assistance
+2020,Paid Parental Leave,422,422,Actual,treasury_hyefu_2020,2020,124,paidparentalleave,Other benefits and assistance
+2016,Childcare Assistance,182,182,Actual,treasury_hyefu_2020,2020,124,childcareassistance,Other benefits and assistance
+2017,Childcare Assistance,199,199,Actual,treasury_hyefu_2020,2020,124,childcareassistance,Other benefits and assistance
+2018,Childcare Assistance,196,196,Actual,treasury_hyefu_2020,2020,124,childcareassistance,Other benefits and assistance
+2019,Childcare Assistance,183,183,Actual,treasury_hyefu_2020,2020,124,childcareassistance,Other benefits and assistance
+2020,Childcare Assistance,144,144,Actual,treasury_hyefu_2020,2020,124,childcareassistance,Other benefits and assistance
+2016,Veterans Support Entitlement,107,107,Actual,treasury_hyefu_2020,2020,124,veteranssupportentitlement,Other benefits and assistance
+2017,Veterans Support Entitlement,98,98,Actual,treasury_hyefu_2020,2020,124,veteranssupportentitlement,Other benefits and assistance
+2018,Veterans Support Entitlement,93,93,Actual,treasury_hyefu_2020,2020,124,veteranssupportentitlement,Other benefits and assistance
+2019,Veterans Support Entitlement,90,90,Actual,treasury_hyefu_2020,2020,124,veteranssupportentitlement,Other benefits and assistance
+2020,Veterans Support Entitlement,66,66,Actual,treasury_hyefu_2020,2020,124,veteranssupportentitlement,Other benefits and assistance
+2016,Veteran's Pension,186,186,Actual,treasury_hyefu_2020,2020,124,veteranspension,Other benefits and assistance
+2017,Veteran's Pension,175,175,Actual,treasury_hyefu_2020,2020,124,veteranspension,Other benefits and assistance
+2018,Veteran's Pension,163,163,Actual,treasury_hyefu_2020,2020,124,veteranspension,Other benefits and assistance
+2019,Veteran's Pension,153,153,Actual,treasury_hyefu_2020,2020,124,veteranspension,Other benefits and assistance
+2020,Veteran's Pension,145,145,Actual,treasury_hyefu_2020,2020,124,veteranspension,Other benefits and assistance
+2016,Wage Subsidy Scheme,,,Actual,treasury_hyefu_2020,2020,124,wagesubsidyscheme,Temporary COVID / cost-of-living
+2017,Wage Subsidy Scheme,,,Actual,treasury_hyefu_2020,2020,124,wagesubsidyscheme,Temporary COVID / cost-of-living
+2018,Wage Subsidy Scheme,,,Actual,treasury_hyefu_2020,2020,124,wagesubsidyscheme,Temporary COVID / cost-of-living
+2019,Wage Subsidy Scheme,,..,Actual,treasury_hyefu_2020,2020,124,wagesubsidyscheme,Temporary COVID / cost-of-living
+2020,Wage Subsidy Scheme,12095,"12,095",Actual,treasury_hyefu_2020,2020,124,wagesubsidyscheme,Temporary COVID / cost-of-living
+2016,Other benefits,54,54,Actual,treasury_hyefu_2020,2020,124,otherbenefits,Other benefits and assistance
+2017,Other benefits,18,18,Actual,treasury_hyefu_2020,2020,124,otherbenefits,Other benefits and assistance
+2018,Other benefits,23,23,Actual,treasury_hyefu_2020,2020,124,otherbenefits,Other benefits and assistance
+2019,Other benefits,27,27,Actual,treasury_hyefu_2020,2020,124,otherbenefits,Other benefits and assistance
+2020,Other benefits,11,11,Actual,treasury_hyefu_2020,2020,124,otherbenefits,Other benefits and assistance
+2021,New Zealand Superannuation,16569,16569,Actual,treasury_expenses,2026,,newzealandsuperannuation,NZ Superannuation
+2022,New Zealand Superannuation,17764,17764,Actual,treasury_expenses,2026,,newzealandsuperannuation,NZ Superannuation
+2023,New Zealand Superannuation,19517,19517,Actual,treasury_expenses,2026,,newzealandsuperannuation,NZ Superannuation
+2024,New Zealand Superannuation,21574,21574,Actual,treasury_expenses,2026,,newzealandsuperannuation,NZ Superannuation
+2025,New Zealand Superannuation,23191,23191,Actual,treasury_expenses,2026,,newzealandsuperannuation,NZ Superannuation
+2021,Jobseeker Support and Emergency Benefit,3224,3224,Actual,treasury_expenses,2026,,jobseekersupportandemergencybenefit,Main income-replacement basket
+2022,Jobseeker Support and Emergency Benefit,3330,3330,Actual,treasury_expenses,2026,,jobseekersupportandemergencybenefit,Main income-replacement basket
+2023,Jobseeker Support and Emergency Benefit,3473,3473,Actual,treasury_expenses,2026,,jobseekersupportandemergencybenefit,Main income-replacement basket
+2024,Jobseeker Support and Emergency Benefit,4062,4062,Actual,treasury_expenses,2026,,jobseekersupportandemergencybenefit,Main income-replacement basket
+2025,Jobseeker Support and Emergency Benefit,4641,4641,Actual,treasury_expenses,2026,,jobseekersupportandemergencybenefit,Main income-replacement basket
+2021,Supported Living Payment,1826,1826,Actual,treasury_expenses,2026,,supportedlivingpayment,Main income-replacement basket
+2022,Supported Living Payment,2047,2047,Actual,treasury_expenses,2026,,supportedlivingpayment,Main income-replacement basket
+2023,Supported Living Payment,2311,2311,Actual,treasury_expenses,2026,,supportedlivingpayment,Main income-replacement basket
+2024,Supported Living Payment,2530,2530,Actual,treasury_expenses,2026,,supportedlivingpayment,Main income-replacement basket
+2025,Supported Living Payment,2668,2668,Actual,treasury_expenses,2026,,supportedlivingpayment,Main income-replacement basket
+2021,Sole Parent Support,1455,1455,Actual,treasury_expenses,2026,,soleparentsupport,Main income-replacement basket
+2022,Sole Parent Support,1704,1704,Actual,treasury_expenses,2026,,soleparentsupport,Main income-replacement basket
+2023,Sole Parent Support,1917,1917,Actual,treasury_expenses,2026,,soleparentsupport,Main income-replacement basket
+2024,Sole Parent Support,2097,2097,Actual,treasury_expenses,2026,,soleparentsupport,Main income-replacement basket
+2025,Sole Parent Support,2255,2255,Actual,treasury_expenses,2026,,soleparentsupport,Main income-replacement basket
+2021,Family Tax Credit,2103,2103,Actual,treasury_expenses,2026,,familytaxcredit,Family tax credits and payments
+2022,Family Tax Credit,2017,2017,Actual,treasury_expenses,2026,,familytaxcredit,Family tax credits and payments
+2023,Family Tax Credit,2151,2151,Actual,treasury_expenses,2026,,familytaxcredit,Family tax credits and payments
+2024,Family Tax Credit,2297,2297,Actual,treasury_expenses,2026,,familytaxcredit,Family tax credits and payments
+2025,Family Tax Credit,2434,2434,Actual,treasury_expenses,2026,,familytaxcredit,Family tax credits and payments
+2021,Other Working for Families tax credits,585,585,Actual,treasury_expenses,2026,,otherworkingforfamiliestaxcredits,Family tax credits and payments
+2022,Other Working for Families tax credits,519,519,Actual,treasury_expenses,2026,,otherworkingforfamiliestaxcredits,Family tax credits and payments
+2023,Other Working for Families tax credits,476,476,Actual,treasury_expenses,2026,,otherworkingforfamiliestaxcredits,Family tax credits and payments
+2024,Other Working for Families tax credits,448,448,Actual,treasury_expenses,2026,,otherworkingforfamiliestaxcredits,Family tax credits and payments
+2025,Other Working for Families tax credits,561,561,Actual,treasury_expenses,2026,,otherworkingforfamiliestaxcredits,Family tax credits and payments
+2021,Accommodation Assistance,2302,2302,Actual,treasury_expenses,2026,,accommodationassistance,Housing assistance
+2022,Accommodation Assistance,2386,2386,Actual,treasury_expenses,2026,,accommodationassistance,Housing assistance
+2023,Accommodation Assistance,2349,2349,Actual,treasury_expenses,2026,,accommodationassistance,Housing assistance
+2024,Accommodation Assistance,2411,2411,Actual,treasury_expenses,2026,,accommodationassistance,Housing assistance
+2025,Accommodation Assistance,2232,2232,Actual,treasury_expenses,2026,,accommodationassistance,Housing assistance
+2021,Income-Related Rents,1202,1202,Actual,treasury_expenses,2026,,incomerelatedrents,Housing assistance
+2022,Income-Related Rents,1323,1323,Actual,treasury_expenses,2026,,incomerelatedrents,Housing assistance
+2023,Income-Related Rents,1322,1322,Actual,treasury_expenses,2026,,incomerelatedrents,Housing assistance
+2024,Income-Related Rents,1517,1517,Actual,treasury_expenses,2026,,incomerelatedrents,Housing assistance
+2025,Income-Related Rents,1752,1752,Actual,treasury_expenses,2026,,incomerelatedrents,Housing assistance
+2021,Disability Assistance,409,409,Actual,treasury_expenses,2026,,disabilityassistance,Other benefits and assistance
+2022,Disability Assistance,412,412,Actual,treasury_expenses,2026,,disabilityassistance,Other benefits and assistance
+2023,Disability Assistance,431,431,Actual,treasury_expenses,2026,,disabilityassistance,Other benefits and assistance
+2024,Disability Assistance,464,464,Actual,treasury_expenses,2026,,disabilityassistance,Other benefits and assistance
+2025,Disability Assistance,492,492,Actual,treasury_expenses,2026,,disabilityassistance,Other benefits and assistance
+2021,Winter Energy Payment,812,812,Actual,treasury_expenses,2026,,winterenergypayment,Other benefits and assistance
+2022,Winter Energy Payment,513,513,Actual,treasury_expenses,2026,,winterenergypayment,Other benefits and assistance
+2023,Winter Energy Payment,519,519,Actual,treasury_expenses,2026,,winterenergypayment,Other benefits and assistance
+2024,Winter Energy Payment,537,537,Actual,treasury_expenses,2026,,winterenergypayment,Other benefits and assistance
+2025,Winter Energy Payment,562,562,Actual,treasury_expenses,2026,,winterenergypayment,Other benefits and assistance
+2021,Best start,271,271,Actual,treasury_expenses,2026,,beststart,Family tax credits and payments
+2022,Best start,308,308,Actual,treasury_expenses,2026,,beststart,Family tax credits and payments
+2023,Best start,321,321,Actual,treasury_expenses,2026,,beststart,Family tax credits and payments
+2024,Best start,336,336,Actual,treasury_expenses,2026,,beststart,Family tax credits and payments
+2025,Best start,346,346,Actual,treasury_expenses,2026,,beststart,Family tax credits and payments
+2021,Orphan's/Unsupported Child's Benefit,293,293,Actual,treasury_expenses,2026,,orphansunsupportedchildsbenefit,Other benefits and assistance
+2022,Orphan's/Unsupported Child's Benefit,313,313,Actual,treasury_expenses,2026,,orphansunsupportedchildsbenefit,Other benefits and assistance
+2023,Orphan's/Unsupported Child's Benefit,350,350,Actual,treasury_expenses,2026,,orphansunsupportedchildsbenefit,Other benefits and assistance
+2024,Orphan's/Unsupported Child's Benefit,384,384,Actual,treasury_expenses,2026,,orphansunsupportedchildsbenefit,Other benefits and assistance
+2025,Orphan's/Unsupported Child's Benefit,402,402,Actual,treasury_expenses,2026,,orphansunsupportedchildsbenefit,Other benefits and assistance
+2021,Hardship Assistance,479,479,Actual,treasury_expenses,2026,,hardshipassistance,Other benefits and assistance
+2022,Hardship Assistance,497,497,Actual,treasury_expenses,2026,,hardshipassistance,Other benefits and assistance
+2023,Hardship Assistance,673,673,Actual,treasury_expenses,2026,,hardshipassistance,Other benefits and assistance
+2024,Hardship Assistance,667,667,Actual,treasury_expenses,2026,,hardshipassistance,Other benefits and assistance
+2025,Hardship Assistance,755,755,Actual,treasury_expenses,2026,,hardshipassistance,Other benefits and assistance
+2021,Paid Parental Leave,503,503,Actual,treasury_expenses,2026,,paidparentalleave,Other benefits and assistance
+2022,Paid Parental Leave,603,603,Actual,treasury_expenses,2026,,paidparentalleave,Other benefits and assistance
+2023,Paid Parental Leave,608,608,Actual,treasury_expenses,2026,,paidparentalleave,Other benefits and assistance
+2024,Paid Parental Leave,647,647,Actual,treasury_expenses,2026,,paidparentalleave,Other benefits and assistance
+2025,Paid Parental Leave,709,709,Actual,treasury_expenses,2026,,paidparentalleave,Other benefits and assistance
+2021,Childcare Assistance,145,145,Actual,treasury_expenses,2026,,childcareassistance,Other benefits and assistance
+2022,Childcare Assistance,132,132,Actual,treasury_expenses,2026,,childcareassistance,Other benefits and assistance
+2023,Childcare Assistance,139,139,Actual,treasury_expenses,2026,,childcareassistance,Other benefits and assistance
+2024,Childcare Assistance,165,165,Actual,treasury_expenses,2026,,childcareassistance,Other benefits and assistance
+2025,Childcare Assistance,167,167,Actual,treasury_expenses,2026,,childcareassistance,Other benefits and assistance
+2021,FamilyBoost tax credit,0,0,Actual,treasury_expenses,2026,,familyboosttaxcredit,Family tax credits and payments
+2022,FamilyBoost tax credit,0,0,Actual,treasury_expenses,2026,,familyboosttaxcredit,Family tax credits and payments
+2023,FamilyBoost tax credit,0,0,Actual,treasury_expenses,2026,,familyboosttaxcredit,Family tax credits and payments
+2024,FamilyBoost tax credit,0,0,Actual,treasury_expenses,2026,,familyboosttaxcredit,Family tax credits and payments
+2025,FamilyBoost tax credit,51,51,Actual,treasury_expenses,2026,,familyboosttaxcredit,Family tax credits and payments
+2021,Veteran's Pension,139,139,Actual,treasury_expenses,2026,,veteranspension,Other benefits and assistance
+2022,Veteran's Pension,134,134,Actual,treasury_expenses,2026,,veteranspension,Other benefits and assistance
+2023,Veteran's Pension,132,132,Actual,treasury_expenses,2026,,veteranspension,Other benefits and assistance
+2024,Veteran's Pension,132,132,Actual,treasury_expenses,2026,,veteranspension,Other benefits and assistance
+2025,Veteran's Pension,132,132,Actual,treasury_expenses,2026,,veteranspension,Other benefits and assistance
+2021,Emergency Housing Assistance,0,0,Actual,treasury_expenses,2026,,emergencyhousingassistance,Other benefits and assistance
+2022,Emergency Housing Assistance,0,0,Actual,treasury_expenses,2026,,emergencyhousingassistance,Other benefits and assistance
+2023,Emergency Housing Assistance,0,0,Actual,treasury_expenses,2026,,emergencyhousingassistance,Other benefits and assistance
+2024,Emergency Housing Assistance,0,0,Actual,treasury_expenses,2026,,emergencyhousingassistance,Other benefits and assistance
+2025,Emergency Housing Assistance,74,74,Actual,treasury_expenses,2026,,emergencyhousingassistance,Other benefits and assistance
+2021,Wage Subsidy Scheme,1197,1197,Actual,treasury_expenses,2026,,wagesubsidyscheme,Temporary COVID / cost-of-living
+2022,Wage Subsidy Scheme,4689,4689,Actual,treasury_expenses,2026,,wagesubsidyscheme,Temporary COVID / cost-of-living
+2023,Wage Subsidy Scheme,0,0,Actual,treasury_expenses,2026,,wagesubsidyscheme,Temporary COVID / cost-of-living
+2024,Wage Subsidy Scheme,1,1,Actual,treasury_expenses,2026,,wagesubsidyscheme,Temporary COVID / cost-of-living
+2025,Wage Subsidy Scheme,0,0,Actual,treasury_expenses,2026,,wagesubsidyscheme,Temporary COVID / cost-of-living
+2021,Cost of living payment,0,0,Actual,treasury_expenses,2026,,costoflivingpayment,Temporary COVID / cost-of-living
+2022,Cost of living payment,0,0,Actual,treasury_expenses,2026,,costoflivingpayment,Temporary COVID / cost-of-living
+2023,Cost of living payment,600,600,Actual,treasury_expenses,2026,,costoflivingpayment,Temporary COVID / cost-of-living
+2024,Cost of living payment,0,0,Actual,treasury_expenses,2026,,costoflivingpayment,Temporary COVID / cost-of-living
+2025,Cost of living payment,0,0,Actual,treasury_expenses,2026,,costoflivingpayment,Temporary COVID / cost-of-living
+2021,Covid leave support,0,0,Actual,treasury_expenses,2026,,covidleavesupport,Temporary COVID / cost-of-living
+2022,Covid leave support,471,471,Actual,treasury_expenses,2026,,covidleavesupport,Temporary COVID / cost-of-living
+2023,Covid leave support,273,273,Actual,treasury_expenses,2026,,covidleavesupport,Temporary COVID / cost-of-living
+2024,Covid leave support,13,13,Actual,treasury_expenses,2026,,covidleavesupport,Temporary COVID / cost-of-living
+2025,Covid leave support,0,0,Actual,treasury_expenses,2026,,covidleavesupport,Temporary COVID / cost-of-living
+2021,Other benefits,157,157,Actual,treasury_expenses,2026,,otherbenefits,Other benefits and assistance
+2022,Other benefits,25,25,Actual,treasury_expenses,2026,,otherbenefits,Other benefits and assistance
+2023,Other benefits,14,14,Actual,treasury_expenses,2026,,otherbenefits,Other benefits and assistance
+2024,Other benefits,12,12,Actual,treasury_expenses,2026,,otherbenefits,Other benefits and assistance
+2025,Other benefits,101,101,Actual,treasury_expenses,2026,,otherbenefits,Other benefits and assistance

@@ -1,0 +1,2877 @@
+year,region,sector,broad_sector,headcount
+2011,Southland,Public Service,State Sector,757
+2001,Canterbury,Public Service,State Sector,3377
+2006,Taranaki,Public Service,State Sector,518
+2018,Northland,Public Service,State Sector,1398
+2005,Tasman,Public Service,State Sector,87
+2008,Manawatu-Wanganui,Public Service,State Sector,1966
+2015,Area Outside Regions,Public Service,State Sector,0
+2022,Area Outside Regions,Public Service,State Sector,0
+2002,Overseas,Public Service,State Sector,226
+2003,Manawatu-Wanganui,Public Service,State Sector,1486
+2006,Wellington,Public Service,State Sector,17488
+2008,Southland,Public Service,State Sector,813
+2012,Wellington,Public Service,State Sector,18199
+2012,Marlborough,Public Service,State Sector,142
+2018,Marlborough,Public Service,State Sector,186
+2011,Auckland,Public Service,State Sector,9152
+2015,Otago,Public Service,State Sector,1304
+2016,Overseas,Public Service,State Sector,291
+2016,Taranaki,Public Service,State Sector,378
+2006,Tasman,Public Service,State Sector,17
+2007,Wellington,Public Service,State Sector,17894
+2008,Auckland,Public Service,State Sector,9406
+2017,Auckland,Public Service,State Sector,10010
+2018,West Coast,Public Service,State Sector,288
+2018,Canterbury,Public Service,State Sector,4684
+2019,Tasman,Public Service,State Sector,116
+2005,Wellington,Public Service,State Sector,16193
+2014,Waikato,Public Service,State Sector,3935
+2011,Marlborough,Public Service,State Sector,165
+2016,Nelson,Public Service,State Sector,462
+2008,Marlborough,Public Service,State Sector,334
+2021,Area Outside Regions,Public Service,State Sector,0
+2017,Southland,Public Service,State Sector,574
+2023,Marlborough,Local Government,Local Government,540
+2023,Tasman,Private Sector,Private Sector,21800
+2023,Southland,Private Sector,Private Sector,44200
+2023,Otago,Local Government,Local Government,4400
+2023,Canterbury,Local Government,Local Government,9900
+2023,Taranaki,SoEs,State Sector,290
+2023,Auckland,SoEs,State Sector,16500
+2022,Manawatu-Wanganui,Private Sector,Private Sector,85000
+2023,Manawatu-Wanganui,SoEs,State Sector,1150
+2023,Hawkes Bay,Local Government,Local Government,2400
+2023,Hawkes Bay,SoEs,State Sector,760
+2023,Gisborne,SoEs,State Sector,140
+2023,Waikato,Local Government,Local Government,4800
+2022,Nelson,SoEs,State Sector,420
+2022,West Coast,Education Sector,State Sector,830
+2022,Manawatu-Wanganui,SoEs,State Sector,1250
+2023,Manawatu-Wanganui,Private Sector,Private Sector,85100
+2023,Northland,Private Sector,Private Sector,53200
+2022,Otago,Education Sector,State Sector,9800
+2022,Wellington,Private Sector,Private Sector,192600
+2022,Hawkes Bay,Private Sector,Private Sector,71400
+2022,Taranaki,Education Sector,State Sector,3450
+2021,Nelson,SoEs,State Sector,380
+2021,Southland,Education Sector,State Sector,2800
+2021,Canterbury,Health Sector,State Sector,13000
+2021,Waikato,Local Government,Local Government,4350
+2020,Marlborough,Education Sector,State Sector,990
+2020,Southland,SoEs,State Sector,420
+2020,Canterbury,Health Sector,State Sector,12700
+2020,West Coast,SoEs,State Sector,210
+2020,West Coast,Education Sector,State Sector,790
+2020,Manawatu-Wanganui,Private Sector,Private Sector,82400
+2020,Manawatu-Wanganui,Local Government,Local Government,2000
+2020,Hawkes Bay,SoEs,State Sector,660
+2020,Gisborne,Local Government,Local Government,580
+2020,Bay of Plenty,Health Sector,State Sector,4600
+2019,West Coast,Education Sector,State Sector,720
+2019,Northland,SoEs,State Sector,440
+2018,Marlborough,Private Sector,Private Sector,21400
+2018,Nelson,Private Sector,Private Sector,21000
+2018,Otago,SoEs,State Sector,1250
+2018,Bay of Plenty,Private Sector,Private Sector,111300
+2020,Waikato,Education Sector,State Sector,13600
+2019,Area Outside Regions,Private Sector,Private Sector,320
+2019,Canterbury,Health Sector,State Sector,12100
+2019,Waikato,Local Government,Local Government,4150
+2018,Taranaki,Health Sector,State Sector,1700
+2018,Waikato,Health Sector,State Sector,7700
+2020,Gisborne,SoEs,State Sector,110
+2017,Southland,Private Sector,Private Sector,41900
+2017,Otago,Private Sector,Private Sector,91200
+2017,Taranaki,SoEs,State Sector,260
+2017,Gisborne,Health Sector,State Sector,910
+2017,Northland,Private Sector,Private Sector,47900
+2016,Marlborough,Private Sector,Private Sector,20300
+2016,Marlborough,Local Government,Local Government,430
+2016,Nelson,SoEs,State Sector,510
+2016,Southland,Private Sector,Private Sector,42200
+2016,Southland,Health Sector,State Sector,1250
+2016,West Coast,Private Sector,Private Sector,11400
+2016,Gisborne,Education Sector,State Sector,1450
+2016,Waikato,Education Sector,State Sector,12700
+2016,Northland,SoEs,State Sector,420
+2015,Area Outside Regions,Health Sector,State Sector,15
+2015,Marlborough,Private Sector,Private Sector,19200
+2015,Tasman,Health Sector,State Sector,100
+2015,Southland,Local Government,Local Government,1950
+2015,Southland,Health Sector,State Sector,1250
+2015,Canterbury,Private Sector,Private Sector,236200
+2015,Gisborne,Education Sector,State Sector,1500
+2014,Area Outside Regions,SoEs,State Sector,0
+2014,Canterbury,Private Sector,Private Sector,228000
+2014,Canterbury,SoEs,State Sector,5700
+2014,Taranaki,Health Sector,State Sector,1550
+2014,Hawkes Bay,SoEs,State Sector,610
+2013,Wellington,Private Sector,Private Sector,164700
+2013,Hawkes Bay,Health Sector,State Sector,2150
+2013,Gisborne,Private Sector,Private Sector,16600
+2013,Gisborne,SoEs,State Sector,130
+2016,Taranaki,Local Government,Local Government,1300
+2016,Waikato,Health Sector,State Sector,7200
+2013,Taranaki,Local Government,Local Government,1300
+2012,West Coast,SoEs,State Sector,790
+2012,Taranaki,Local Government,Local Government,1300
+2012,Hawkes Bay,Health Sector,State Sector,2200
+2012,Auckland,Private Sector,Private Sector,534400
+2011,Nelson,Education Sector,State Sector,1350
+2011,Manawatu-Wanganui,SoEs,State Sector,1350
+2010,Wellington,Health Sector,State Sector,8500
+2010,Taranaki,Local Government,Local Government,1300
+2009,Hawkes Bay,Education Sector,State Sector,4450
+2009,Auckland,Education Sector,State Sector,37700
+2008,Wellington,Local Government,Local Government,4600
+2008,Auckland,SoEs,State Sector,14600
+2008,Northland,Health Sector,State Sector,2050
+2007,Area Outside Regions,SoEs,State Sector,0
+2007,Nelson,Local Government,Local Government,560
+2010,Tasman,SoEs,State Sector,25
+2022,Nelson,Private Sector,Private Sector,23200
+2022,West Coast,Local Government,Local Government,610
+2022,Wellington,SoEs,State Sector,10300
+2021,Nelson,Health Sector,State Sector,1750
+2021,Waikato,Education Sector,State Sector,14200
+2020,Canterbury,Education Sector,State Sector,17400
+2019,Canterbury,Private Sector,Private Sector,252300
+2018,Gisborne,SoEs,State Sector,95
+2018,Northland,Private Sector,Private Sector,50000
+2020,Otago,Private Sector,Private Sector,99100
+2017,Bay of Plenty,SoEs,State Sector,740
+2017,Waikato,Private Sector,Private Sector,155900
+2016,Canterbury,Local Government,Local Government,9000
+2016,Manawatu-Wanganui,SoEs,State Sector,1150
+2016,Hawkes Bay,Private Sector,Private Sector,64400
+2015,Otago,Local Government,Local Government,3450
+2015,Otago,Health Sector,State Sector,3500
+2015,Wellington,Private Sector,Private Sector,168200
+2015,Wellington,Local Government,Local Government,5000
+2015,Wellington,Health Sector,State Sector,8600
+2015,Manawatu-Wanganui,SoEs,State Sector,1150
+2015,Gisborne,Local Government,Local Government,470
+2015,Bay of Plenty,SoEs,State Sector,860
+2014,Otago,SoEs,State Sector,1350
+2014,Waikato,Health Sector,State Sector,7000
+2014,Waikato,Education Sector,State Sector,12600
+2013,Nelson,Health Sector,State Sector,1500
+2013,Tasman,Private Sector,Private Sector,17600
+2013,Southland,Private Sector,Private Sector,40100
+2013,Canterbury,Education Sector,State Sector,15300
+2013,Wellington,Local Government,Local Government,4750
+2013,Gisborne,Education Sector,State Sector,1450
+2013,Bay of Plenty,SoEs,State Sector,860
+2012,Nelson,Private Sector,Private Sector,19200
+2015,Northland,Education Sector,State Sector,4500
+2013,Manawatu-Wanganui,SoEs,State Sector,1200
+2012,Southland,SoEs,State Sector,540
+2012,West Coast,Education Sector,State Sector,780
+2012,Manawatu-Wanganui,SoEs,State Sector,1300
+2012,Taranaki,Education Sector,State Sector,2900
+2012,Gisborne,Health Sector,State Sector,870
+2012,Waikato,Health Sector,State Sector,6800
+2011,Nelson,Private Sector,Private Sector,19700
+2011,Tasman,Health Sector,State Sector,170
+2011,Southland,Local Government,Local Government,1900
+2011,Otago,Local Government,Local Government,3600
+2011,Canterbury,Education Sector,State Sector,15900
+2011,Wellington,Health Sector,State Sector,8500
+2011,Gisborne,Private Sector,Private Sector,16700
+2011,Waikato,Private Sector,Private Sector,133000
+2011,Auckland,Education Sector,State Sector,40400
+2010,Southland,Education Sector,State Sector,2450
+2010,Canterbury,Local Government,Local Government,7900
+2010,Manawatu-Wanganui,Private Sector,Private Sector,76000
+2010,Taranaki,Private Sector,Private Sector,41800
+2010,Bay of Plenty,SoEs,State Sector,780
+2010,Waikato,Health Sector,State Sector,6500
+2009,Southland,SoEs,State Sector,600
+2009,West Coast,Local Government,Local Government,500
+2009,Hawkes Bay,Private Sector,Private Sector,65000
+2009,Gisborne,Local Government,Local Government,440
+2009,Gisborne,Education Sector,State Sector,1400
+2009,Waikato,Health Sector,State Sector,6200
+2009,Northland,Local Government,Local Government,1000
+2009,Northland,SoEs,State Sector,420
+2008,Area Outside Regions,SoEs,State Sector,0
+2008,Marlborough,Local Government,Local Government,320
+2008,Nelson,Education Sector,State Sector,1350
+2008,West Coast,Health Sector,State Sector,970
+2008,Taranaki,Local Government,Local Government,1350
+2008,Hawkes Bay,Private Sector,Private Sector,66000
+2007,Marlborough,Local Government,Local Government,300
+2007,Marlborough,SoEs,State Sector,510
+2007,Tasman,SoEs,State Sector,30
+2007,Tasman,Education Sector,State Sector,1150
+2018,Nelson,SoEs,State Sector,540
+2011,Northland,Private Sector,Private Sector,43000
+2010,Marlborough,Health Sector,State Sector,460
+2010,Nelson,Education Sector,State Sector,1300
+2010,Canterbury,Private Sector,Private Sector,206700
+2009,Manawatu-Wanganui,Private Sector,Private Sector,76900
+2008,Northland,Local Government,Local Government,1000
+2011,Gisborne,SoEs,State Sector,330
+2009,West Coast,Private Sector,Private Sector,12000
+2009,Taranaki,Education Sector,State Sector,2650
+2008,Canterbury,Local Government,Local Government,7300
+2008,Waikato,Health Sector,State Sector,5900
+2009,Bay of Plenty,Local Government,Local Government,2200
+2007,Otago,Education Sector,State Sector,9100
+2007,Wellington,Private Sector,Private Sector,173600
+2007,Manawatu-Wanganui,Private Sector,Private Sector,78800
+2007,Manawatu-Wanganui,Local Government,Local Government,1950
+2007,Bay of Plenty,SoEs,State Sector,790
+2007,Bay of Plenty,Education Sector,State Sector,6900
+2007,Waikato,Local Government,Local Government,3550
+2007,Waikato,Health Sector,State Sector,5800
+2007,Northland,Private Sector,Private Sector,45400
+2007,Northland,Local Government,Local Government,1000
+2006,Tasman,Health Sector,State Sector,210
+2006,Southland,SoEs,State Sector,510
+2006,Canterbury,Health Sector,State Sector,9400
+2006,West Coast,Private Sector,Private Sector,11000
+2006,West Coast,Education Sector,State Sector,750
+2006,Manawatu-Wanganui,SoEs,State Sector,1300
+2006,Hawkes Bay,Health Sector,State Sector,2200
+2006,Gisborne,Private Sector,Private Sector,17500
+2006,Bay of Plenty,Education Sector,State Sector,6400
+2006,Waikato,Private Sector,Private Sector,136300
+2006,Waikato,Local Government,Local Government,3350
+2005,Area Outside Regions,Private Sector,Private Sector,260
+2005,Area Outside Regions,SoEs,State Sector,0
+2005,Area Outside Regions,Education Sector,State Sector,15
+2005,Marlborough,SoEs,State Sector,500
+2005,Marlborough,Education Sector,State Sector,790
+2005,Nelson,Health Sector,State Sector,1400
+2005,Tasman,Education Sector,State Sector,1200
+2005,Canterbury,Private Sector,Private Sector,207500
+2005,Canterbury,Health Sector,State Sector,9100
+2005,Taranaki,Education Sector,State Sector,2900
+2005,Waikato,Health Sector,State Sector,5700
+2004,Marlborough,Private Sector,Private Sector,17600
+2004,Nelson,Health Sector,State Sector,1400
+2004,Northland,Local Government,Local Government,810
+2004,Northland,Health Sector,State Sector,1900
+2004,Northland,Education Sector,State Sector,3850
+2003,Area Outside Regions,SoEs,State Sector,0
+2003,Marlborough,SoEs,State Sector,530
+2003,Tasman,SoEs,State Sector,25
+2003,Wellington,Education Sector,State Sector,13800
+2003,Taranaki,Private Sector,Private Sector,36900
+2003,Waikato,SoEs,State Sector,2250
+2003,Auckland,Health Sector,State Sector,17700
+2002,Marlborough,Private Sector,Private Sector,15200
+2002,Southland,Local Government,Local Government,1700
+2002,Southland,SoEs,State Sector,570
+2002,Otago,SoEs,State Sector,1100
+2003,Hawkes Bay,Private Sector,Private Sector,57100
+2002,West Coast,SoEs,State Sector,390
+2002,Taranaki,SoEs,State Sector,400
+2002,Waikato,Local Government,Local Government,2750
+2002,Waikato,SoEs,State Sector,2250
+2002,Waikato,Health Sector,State Sector,5300
+2002,Auckland,SoEs,State Sector,12900
+2001,Area Outside Regions,Health Sector,State Sector,6
+2001,Tasman,Local Government,Local Government,280
+2001,Southland,Health Sector,State Sector,1050
+2001,Otago,Education Sector,State Sector,8200
+2001,Bay of Plenty,Private Sector,Private Sector,74000
+2001,Bay of Plenty,Local Government,Local Government,1550
+2001,Bay of Plenty,SoEs,State Sector,1200
+2001,Waikato,Health Sector,State Sector,5200
+2000,Marlborough,Local Government,Local Government,250
+2000,Marlborough,SoEs,State Sector,110
+2000,Southland,Private Sector,Private Sector,34200
+2000,Otago,Local Government,Local Government,2450
+2000,Otago,SoEs,State Sector,860
+2000,Manawatu-Wanganui,SoEs,State Sector,1350
+2000,Gisborne,SoEs,State Sector,160
+2000,Auckland,Health Sector,State Sector,15800
+2010,Hawkes Bay,Public Service,State Sector,1237
+2012,Manawatu-Wanganui,Public Service,State Sector,1872
+2009,Gisborne,Public Service,State Sector,287
+2021,Wellington,Public Service,State Sector,28054
+2017,Northland,Public Service,State Sector,1369
+2009,Area Outside Regions,Public Service,State Sector,0
+2005,Wellington,Private Sector,Private Sector,166600
+2005,Manawatu-Wanganui,Private Sector,Private Sector,77700
+2004,Gisborne,Education Sector,State Sector,1500
+2003,Manawatu-Wanganui,Private Sector,Private Sector,72200
+2002,Manawatu-Wanganui,SoEs,State Sector,1100
+2016,West Coast,Public Service,State Sector,296
+2000,Taranaki,Public Service,State Sector,445
+2003,Otago,Public Service,State Sector,966
+2006,Gisborne,Public Service,State Sector,233
+2006,Overseas,Public Service,State Sector,280
+2007,Otago,Public Service,State Sector,1354
+2023,Southland,Public Service,State Sector,696
+2018,Waikato,Public Service,State Sector,4062
+2022,Wellington,Public Service,State Sector,27612
+2023,Area Outside Regions,Other Government Entities,State Sector,25
+2023,Otago,Other Government Entities,State Sector,1510
+2023,Gisborne,Other Government Entities,State Sector,381
+2023,Auckland,Other Government Entities,State Sector,13462
+2022,Auckland,Other Government Entities,State Sector,14590
+2023,Wellington,Other Government Entities,State Sector,18374
+2022,Canterbury,Other Government Entities,State Sector,5067
+2021,Wellington,Other Government Entities,State Sector,16246
+2020,Nelson,Other Government Entities,State Sector,439
+2020,Otago,Other Government Entities,State Sector,1568
+2020,Wellington,Other Government Entities,State Sector,15259
+2020,Auckland,Other Government Entities,State Sector,12882
+2019,Area Outside Regions,Other Government Entities,State Sector,35
+2019,Nelson,Other Government Entities,State Sector,425
+2019,Southland,Other Government Entities,State Sector,334
+2019,Otago,Other Government Entities,State Sector,1499
+2019,Bay of Plenty,Other Government Entities,State Sector,2192
+2017,Area Outside Regions,Other Government Entities,State Sector,35
+2021,Otago,Other Government Entities,State Sector,1515
+2017,Manawatu-Wanganui,Other Government Entities,State Sector,5774
+2017,Auckland,Other Government Entities,State Sector,12590
+2016,Nelson,Other Government Entities,State Sector,278
+2016,Southland,Other Government Entities,State Sector,376
+2016,Gisborne,Other Government Entities,State Sector,270
+2016,Northland,Other Government Entities,State Sector,561
+2015,Southland,Other Government Entities,State Sector,369
+2015,Wellington,Other Government Entities,State Sector,15405
+2015,Auckland,Other Government Entities,State Sector,12526
+2014,Wellington,Other Government Entities,State Sector,15378
+2013,Marlborough,Other Government Entities,State Sector,727
+2012,Gisborne,Other Government Entities,State Sector,207
+2011,Otago,Other Government Entities,State Sector,1262
+2011,Waikato,Other Government Entities,State Sector,2119
+2010,Area Outside Regions,Other Government Entities,State Sector,25
+2010,West Coast,Other Government Entities,State Sector,182
+2010,Bay of Plenty,Other Government Entities,State Sector,1604
+2009,Area Outside Regions,Other Government Entities,State Sector,25
+2008,Area Outside Regions,Other Government Entities,State Sector,25
+2008,Taranaki,Other Government Entities,State Sector,359
+2007,West Coast,Other Government Entities,State Sector,203
+2007,Wellington,Other Government Entities,State Sector,12206
+2007,Hawkes Bay,Other Government Entities,State Sector,1174
+2006,Canterbury,Other Government Entities,State Sector,4506
+2006,Manawatu-Wanganui,Other Government Entities,State Sector,5282
+2006,Gisborne,Other Government Entities,State Sector,267
+2006,Bay of Plenty,Other Government Entities,State Sector,1518
+2005,West Coast,Other Government Entities,State Sector,156
+2005,Northland,Other Government Entities,State Sector,374
+2004,Bay of Plenty,Other Government Entities,State Sector,1081
+2003,Wellington,Other Government Entities,State Sector,9788
+2002,Otago,Other Government Entities,State Sector,1142
+2002,West Coast,Other Government Entities,State Sector,171
+2001,Canterbury,Other Government Entities,State Sector,6023
+2001,Taranaki,Other Government Entities,State Sector,237
+2001,Auckland,Other Government Entities,State Sector,10051
+2000,Canterbury,Other Government Entities,State Sector,3904
+2000,West Coast,Other Government Entities,State Sector,160
+2016,Hawkes Bay,Other Government Entities,State Sector,749
+2013,Gisborne,Other Government Entities,State Sector,198
+2008,Wellington,Other Government Entities,State Sector,13802
+2004,Otago,Other Government Entities,State Sector,930
+2014,Marlborough,Public Service,State Sector,148
+2001,West Coast,Public Service,State Sector,215
+2020,Overseas,Public Service,State Sector,316
+2012,Waikato,Public Service,State Sector,3884
+2014,Auckland,Public Service,State Sector,9385
+2018,Gisborne,Public Service,State Sector,287
+2019,Southland,Public Service,State Sector,636
+2009,Canterbury,Public Service,State Sector,4582
+2009,Unknown,Public Service,State Sector,22
+2019,Bay of Plenty,Public Service,State Sector,1708
+2017,Area Outside Regions,Public Service,State Sector,0
+2004,Gisborne,Public Service,State Sector,191
+2005,Canterbury,Public Service,State Sector,3835
+2009,Manawatu-Wanganui,Public Service,State Sector,1985
+2020,Northland,Public Service,State Sector,1523
+2020,Tasman,Public Service,State Sector,109
+2022,Otago,Public Service,State Sector,1429
+2013,Hawkes Bay,Public Service,State Sector,1124
+2015,Waikato,Public Service,State Sector,3947
+2013,Taranaki,Public Service,State Sector,526
+2023,Area Outside Regions,Public Service,State Sector,0
+2014,Otago,Public Service,State Sector,1328
+2020,Taranaki,Public Service,State Sector,466
+2017,Waikato,Public Service,State Sector,3949
+2002,Marlborough,Public Service,State Sector,142
+2002,Waikato,Public Service,State Sector,2765
+2017,Manawatu-Wanganui,Public Service,State Sector,2126
+2011,Area Outside Regions,Public Service,State Sector,0
+2008,Otago,Public Service,State Sector,1590
+2021,Taranaki,Public Service,State Sector,506
+2022,Tasman,Public Service,State Sector,140
+2011,Taranaki,Public Service,State Sector,590
+2014,Taranaki,Public Service,State Sector,444
+2012,Canterbury,Public Service,State Sector,4314
+2008,Area Outside Regions,Public Service,State Sector,0
+2014,Area Outside Regions,Public Service,State Sector,0
+2021,Marlborough,Public Service,State Sector,215
+2003,Canterbury,Public Service,State Sector,3539
+2009,Taranaki,Public Service,State Sector,453
+2022,Marlborough,Public Service,State Sector,216
+2000,Area Outside Regions,Public Service,State Sector,0
+2023,Hawkes Bay,Health Sector,State Sector,3400
+2022,Area Outside Regions,Health Sector,State Sector,15
+2022,Otago,SoEs,State Sector,1450
+2022,Northland,Health Sector,State Sector,4050
+2023,Marlborough,SoEs,State Sector,220
+2023,Canterbury,Private Sector,Private Sector,269500
+2023,West Coast,Health Sector,State Sector,900
+2023,Hawkes Bay,Private Sector,Private Sector,71900
+2023,Hawkes Bay,Education Sector,State Sector,5200
+2023,Waikato,Private Sector,Private Sector,181900
+2022,Tasman,Private Sector,Private Sector,21100
+2022,Otago,Private Sector,Private Sector,96500
+2022,Tasman,Health Sector,State Sector,260
+2022,Southland,SoEs,State Sector,400
+2021,Tasman,Local Government,Local Government,680
+2021,Southland,Private Sector,Private Sector,42900
+2021,Otago,Health Sector,State Sector,3950
+2021,Canterbury,SoEs,State Sector,4650
+2021,Manawatu-Wanganui,Health Sector,State Sector,4350
+2021,Bay of Plenty,Education Sector,State Sector,8400
+2020,Nelson,Education Sector,State Sector,1700
+2020,Canterbury,Private Sector,Private Sector,254100
+2020,West Coast,Health Sector,State Sector,810
+2020,Wellington,Local Government,Local Government,5500
+2020,Northland,Health Sector,State Sector,3450
+2019,Southland,Education Sector,State Sector,2550
+2019,Wellington,Private Sector,Private Sector,184900
+2019,Hawkes Bay,SoEs,State Sector,600
+2019,Hawkes Bay,Health Sector,State Sector,2600
+2019,Bay of Plenty,Education Sector,State Sector,8400
+2019,Auckland,Health Sector,State Sector,27400
+2018,Tasman,Health Sector,State Sector,210
+2018,West Coast,Education Sector,State Sector,890
+2018,Bay of Plenty,SoEs,State Sector,760
+2018,Auckland,Private Sector,Private Sector,660200
+2018,Northland,SoEs,State Sector,520
+2020,Canterbury,SoEs,State Sector,5500
+2020,Wellington,SoEs,State Sector,10300
+2019,Area Outside Regions,Local Government,Local Government,35
+2019,Marlborough,Health Sector,State Sector,630
+2019,Nelson,Health Sector,State Sector,1600
+2018,Tasman,Private Sector,Private Sector,20300
+2018,Waikato,Private Sector,Private Sector,161100
+2017,Area Outside Regions,Local Government,Local Government,40
+2018,Southland,Local Government,Local Government,1950
+2017,Southland,Health Sector,State Sector,1300
+2017,West Coast,Private Sector,Private Sector,11100
+2017,Wellington,SoEs,State Sector,9000
+2017,Wellington,Education Sector,State Sector,16200
+2017,Taranaki,Private Sector,Private Sector,43300
+2017,Waikato,Local Government,Local Government,3750
+2016,Nelson,Local Government,Local Government,700
+2016,Gisborne,Health Sector,State Sector,910
+2015,Area Outside Regions,Private Sector,Private Sector,240
+2015,Marlborough,SoEs,State Sector,460
+2015,Nelson,SoEs,State Sector,480
+2015,Tasman,Education Sector,State Sector,1100
+2015,Otago,SoEs,State Sector,1450
+2015,West Coast,SoEs,State Sector,420
+2015,Taranaki,Local Government,Local Government,1300
+2015,Northland,Private Sector,Private Sector,44700
+2014,Area Outside Regions,Local Government,Local Government,35
+2014,Southland,Local Government,Local Government,1900
+2014,Manawatu-Wanganui,Education Sector,State Sector,8300
+2014,Bay of Plenty,Private Sector,Private Sector,94000
+2014,Auckland,Education Sector,State Sector,39200
+2013,Marlborough,Private Sector,Private Sector,17700
+2013,Otago,Education Sector,State Sector,9500
+2012,Marlborough,Health Sector,State Sector,520
+2012,Nelson,Education Sector,State Sector,1550
+2012,Tasman,Education Sector,State Sector,1200
+2012,Wellington,Local Government,Local Government,4800
+2012,Wellington,Education Sector,State Sector,15300
+2011,Area Outside Regions,Local Government,Local Government,35
+2011,Southland,Education Sector,State Sector,2500
+2010,Otago,SoEs,State Sector,1350
+2009,Area Outside Regions,Education Sector,State Sector,15
+2009,Marlborough,Health Sector,State Sector,580
+2009,Nelson,SoEs,State Sector,430
+2009,Southland,Education Sector,State Sector,2400
+2009,Northland,Health Sector,State Sector,2200
+2008,Northland,Private Sector,Private Sector,46900
+2010,Otago,Health Sector,State Sector,3350
+2010,Gisborne,Private Sector,Private Sector,17200
+2008,Bay of Plenty,Private Sector,Private Sector,96200
+2007,Waikato,SoEs,State Sector,2100
+2006,Area Outside Regions,Health Sector,State Sector,12
+2006,Canterbury,SoEs,State Sector,5500
+2006,Manawatu-Wanganui,Education Sector,State Sector,8300
+2006,Northland,Education Sector,State Sector,3800
+2005,Northland,Local Government,Local Government,880
+2004,Canterbury,Local Government,Local Government,6400
+2022,Taranaki,SoEs,State Sector,270
+2021,Hawkes Bay,Private Sector,Private Sector,72100
+2021,Hawkes Bay,Education Sector,State Sector,5100
+2020,Manawatu-Wanganui,SoEs,State Sector,1100
+2020,Bay of Plenty,Education Sector,State Sector,8200
+2019,Nelson,Private Sector,Private Sector,21700
+2018,Gisborne,Local Government,Local Government,510
+2018,Northland,Health Sector,State Sector,3050
+2017,Area Outside Regions,Private Sector,Private Sector,280
+2017,Southland,Local Government,Local Government,2000
+2017,Waikato,Health Sector,State Sector,7400
+2016,Area Outside Regions,Health Sector,State Sector,18
+2016,Tasman,SoEs,State Sector,12
+2016,Wellington,Health Sector,State Sector,8700
+2016,Manawatu-Wanganui,Private Sector,Private Sector,76400
+2016,Taranaki,Private Sector,Private Sector,44100
+2016,Hawkes Bay,Local Government,Local Government,1900
+2016,Bay of Plenty,Health Sector,State Sector,4000
+2016,Northland,Health Sector,State Sector,2850
+2015,Area Outside Regions,Local Government,Local Government,30
+2015,Otago,Private Sector,Private Sector,84600
+2015,West Coast,Private Sector,Private Sector,12200
+2015,Auckland,Private Sector,Private Sector,585000
+2014,Wellington,Local Government,Local Government,4800
+2014,Waikato,Private Sector,Private Sector,141400
+2014,Northland,Education Sector,State Sector,4250
+2013,Marlborough,SoEs,State Sector,530
+2013,Marlborough,Health Sector,State Sector,560
+2013,Auckland,Private Sector,Private Sector,544300
+2016,Bay of Plenty,SoEs,State Sector,790
+2015,Manawatu-Wanganui,Private Sector,Private Sector,75200
+2012,Southland,Local Government,Local Government,1950
+2012,Taranaki,SoEs,State Sector,330
+2012,Waikato,Private Sector,Private Sector,136800
+2012,Waikato,Education Sector,State Sector,12700
+2012,Auckland,Local Government,Local Government,10600
+2012,Northland,Private Sector,Private Sector,42300
+2012,Northland,Health Sector,State Sector,2350
+2011,Area Outside Regions,Private Sector,Private Sector,230
+2011,Canterbury,Health Sector,State Sector,9900
+2011,Waikato,SoEs,State Sector,2800
+2010,Tasman,Education Sector,State Sector,1250
+2010,Otago,Education Sector,State Sector,9600
+2010,West Coast,Health Sector,State Sector,1000
+2010,Bay of Plenty,Private Sector,Private Sector,90200
+2010,Waikato,Local Government,Local Government,3750
+2009,Marlborough,Private Sector,Private Sector,21100
+2009,Manawatu-Wanganui,Local Government,Local Government,2000
+2009,Taranaki,SoEs,State Sector,420
+2009,Taranaki,Health Sector,State Sector,1500
+2009,Waikato,Local Government,Local Government,3800
+2008,Marlborough,Private Sector,Private Sector,20200
+2007,Area Outside Regions,Local Government,Local Government,18
+2007,Nelson,Private Sector,Private Sector,20200
+2007,Southland,Education Sector,State Sector,2350
+2009,Gisborne,SoEs,State Sector,340
+2008,Tasman,Education Sector,State Sector,1100
+2008,Southland,Education Sector,State Sector,2450
+2007,Canterbury,SoEs,State Sector,4950
+2007,Taranaki,Education Sector,State Sector,2950
+2007,Gisborne,Private Sector,Private Sector,17500
+2007,Gisborne,Health Sector,State Sector,790
+2007,Bay of Plenty,Private Sector,Private Sector,93200
+2006,Southland,Private Sector,Private Sector,39500
+2006,Taranaki,SoEs,State Sector,440
+2006,Auckland,Local Government,Local Government,10100
+2005,Nelson,Local Government,Local Government,510
+2005,Otago,Private Sector,Private Sector,78600
+2005,Manawatu-Wanganui,Local Government,Local Government,1800
+2005,Waikato,Education Sector,State Sector,12200
+2005,Northland,Private Sector,Private Sector,43800
+2004,Area Outside Regions,Local Government,Local Government,18
+2004,Tasman,Education Sector,State Sector,1100
+2004,Southland,SoEs,State Sector,580
+2004,Otago,Local Government,Local Government,2800
+2012,West Coast,Health Sector,State Sector,990
+2012,Hawkes Bay,Private Sector,Private Sector,61500
+2012,Gisborne,Local Government,Local Government,450
+2011,Tasman,Education Sector,State Sector,1250
+2011,West Coast,Private Sector,Private Sector,12100
+2011,Northland,Health Sector,State Sector,2350
+2010,Gisborne,Education Sector,State Sector,1400
+2009,Bay of Plenty,Private Sector,Private Sector,92000
+2008,Canterbury,Education Sector,State Sector,14800
+2010,Otago,Local Government,Local Government,3600
+2007,Bay of Plenty,Local Government,Local Government,2050
+2005,Nelson,Private Sector,Private Sector,19600
+2005,Otago,SoEs,State Sector,1100
+2005,Waikato,SoEs,State Sector,2300
+2008,Wellington,SoEs,State Sector,8500
+2004,West Coast,Local Government,Local Government,330
+2004,Manawatu-Wanganui,SoEs,State Sector,1050
+2004,Taranaki,SoEs,State Sector,390
+2004,Hawkes Bay,Local Government,Local Government,1650
+2004,Bay of Plenty,Private Sector,Private Sector,85600
+2003,Nelson,Health Sector,State Sector,1300
+2003,West Coast,SoEs,State Sector,430
+2003,Wellington,SoEs,State Sector,7200
+2003,Manawatu-Wanganui,SoEs,State Sector,1100
+2003,Auckland,Local Government,Local Government,8900
+2003,Northland,SoEs,State Sector,480
+2002,Area Outside Regions,Health Sector,State Sector,9
+2002,Area Outside Regions,Education Sector,State Sector,25
+2002,Marlborough,Local Government,Local Government,270
+2002,Marlborough,Health Sector,State Sector,500
+2002,Tasman,Private Sector,Private Sector,15700
+2002,Tasman,SoEs,State Sector,25
+2002,Tasman,Health Sector,State Sector,180
+2002,Canterbury,Private Sector,Private Sector,181400
+2003,Gisborne,Private Sector,Private Sector,16200
+2002,Canterbury,SoEs,State Sector,4850
+2002,Canterbury,Education Sector,State Sector,14700
+2002,Manawatu-Wanganui,Health Sector,State Sector,3700
+2002,Bay of Plenty,SoEs,State Sector,1400
+2002,Northland,Local Government,Local Government,700
+2001,Marlborough,Education Sector,State Sector,810
+2001,Southland,Local Government,Local Government,1600
+2001,West Coast,Private Sector,Private Sector,9200
+2001,Wellington,Private Sector,Private Sector,155400
+2001,Taranaki,Education Sector,State Sector,2850
+2001,Waikato,Local Government,Local Government,2600
+2001,Auckland,Local Government,Local Government,8300
+2000,Area Outside Regions,Local Government,Local Government,18
+2000,Area Outside Regions,Education Sector,State Sector,30
+2000,Tasman,Private Sector,Private Sector,14300
+2000,Tasman,Local Government,Local Government,310
+2000,Otago,Private Sector,Private Sector,62400
+2000,Otago,Health Sector,State Sector,3000
+2000,Canterbury,Education Sector,State Sector,14500
+2000,West Coast,Health Sector,State Sector,890
+2000,Wellington,SoEs,State Sector,6600
+2000,Manawatu-Wanganui,Health Sector,State Sector,3600
+2000,Hawkes Bay,Private Sector,Private Sector,53500
+2000,Gisborne,Local Government,Local Government,390
+2000,Bay of Plenty,Private Sector,Private Sector,72400
+2000,Auckland,Local Government,Local Government,8300
+2000,Northland,Private Sector,Private Sector,34700
+2000,Northland,Local Government,Local Government,840
+2000,Canterbury,Public Service,State Sector,3296
+2013,Northland,Public Service,State Sector,1255
+2013,Southland,Public Service,State Sector,709
+2016,Northland,Public Service,State Sector,1289
+2018,Bay of Plenty,Public Service,State Sector,1671
+2019,Manawatu-Wanganui,Public Service,State Sector,2081
+2001,Manawatu-Wanganui,SoEs,State Sector,1150
+2000,Canterbury,Local Government,Local Government,5800
+2000,Wellington,Health Sector,State Sector,6500
+2000,Manawatu-Wanganui,Local Government,Local Government,2100
+2011,Hawkes Bay,Public Service,State Sector,1108
+2012,Tasman,Public Service,State Sector,29
+2001,Gisborne,Public Service,State Sector,219
+2003,Overseas,Public Service,State Sector,226
+2004,Northland,Public Service,State Sector,831
+2002,Manawatu-Wanganui,Public Service,State Sector,1486
+2013,Area Outside Regions,Public Service,State Sector,0
+2023,Tasman,Other Government Entities,State Sector,253
+2023,Taranaki,Other Government Entities,State Sector,550
+2022,Wellington,Other Government Entities,State Sector,19188
+2021,Marlborough,Other Government Entities,State Sector,615
+2021,Hawkes Bay,Other Government Entities,State Sector,927
+2020,Bay of Plenty,Other Government Entities,State Sector,2207
+2019,Taranaki,Other Government Entities,State Sector,541
+2018,Manawatu-Wanganui,Other Government Entities,State Sector,6043
+2018,Hawkes Bay,Other Government Entities,State Sector,823
+2019,Canterbury,Other Government Entities,State Sector,4864
+2017,Tasman,Other Government Entities,State Sector,121
+2016,Wellington,Other Government Entities,State Sector,14893
+2015,Canterbury,Other Government Entities,State Sector,4689
+2015,Taranaki,Other Government Entities,State Sector,351
+2015,Hawkes Bay,Other Government Entities,State Sector,760
+2015,Northland,Other Government Entities,State Sector,664
+2014,Nelson,Other Government Entities,State Sector,92
+2014,Gisborne,Other Government Entities,State Sector,217
+2014,Auckland,Other Government Entities,State Sector,13615
+2013,Taranaki,Other Government Entities,State Sector,304
+2012,Area Outside Regions,Other Government Entities,State Sector,25
+2012,Tasman,Other Government Entities,State Sector,201
+2017,Gisborne,Other Government Entities,State Sector,274
+2012,Hawkes Bay,Other Government Entities,State Sector,827
+2012,Northland,Other Government Entities,State Sector,670
+2011,Nelson,Other Government Entities,State Sector,115
+2009,Gisborne,Other Government Entities,State Sector,263
+2008,Northland,Other Government Entities,State Sector,549
+2007,Nelson,Other Government Entities,State Sector,403
+2007,Northland,Other Government Entities,State Sector,568
+2006,Tasman,Other Government Entities,State Sector,213
+2005,Otago,Other Government Entities,State Sector,1108
+2004,West Coast,Other Government Entities,State Sector,203
+2004,Gisborne,Other Government Entities,State Sector,339
+2003,Waikato,Other Government Entities,State Sector,2029
+2002,Tasman,Other Government Entities,State Sector,181
+2002,Bay of Plenty,Other Government Entities,State Sector,1339
+2001,Waikato,Other Government Entities,State Sector,1720
+2000,Auckland,Other Government Entities,State Sector,9236
+2000,Marlborough,Other Government Entities,State Sector,666
+2012,Taranaki,Other Government Entities,State Sector,348
+2012,Nelson,Public Service,State Sector,527
+2000,Nelson,Public Service,State Sector,294
+2002,Northland,Public Service,State Sector,706
+2002,Nelson,Public Service,State Sector,394
+2006,Southland,Public Service,State Sector,720
+2006,Northland,Public Service,State Sector,1061
+2021,Manawatu-Wanganui,Public Service,State Sector,2525
+2018,Tasman,Public Service,State Sector,133
+2001,Area Outside Regions,Public Service,State Sector,0
+2019,Overseas,Public Service,State Sector,303
+2000,Auckland,Public Service,State Sector,5764
+2002,Gisborne,Public Service,State Sector,330
+2007,Unknown,Public Service,State Sector,53
+2003,Tasman,Public Service,State Sector,82
+2020,Gisborne,Public Service,State Sector,288
+2016,Tasman,Public Service,State Sector,36
+2000,Otago,Public Service,State Sector,823
+2017,West Coast,Public Service,State Sector,246
+2016,Waikato,Public Service,State Sector,3846
+2019,Northland,Public Service,State Sector,1413
+2003,Area Outside Regions,Public Service,State Sector,0
+2010,Taranaki,Public Service,State Sector,447
+2012,West Coast,Public Service,State Sector,255
+2001,Bay of Plenty,Public Service,State Sector,902
+2005,Southland,Public Service,State Sector,717
+2009,Marlborough,Public Service,State Sector,313
+2000,West Coast,Public Service,State Sector,220
+2003,Taranaki,Public Service,State Sector,465
+2007,Taranaki,Public Service,State Sector,550
+2009,Nelson,Public Service,State Sector,425
+2020,Hawkes Bay,Public Service,State Sector,1380
+2017,Nelson,Public Service,State Sector,384
+2010,Wellington,Public Service,State Sector,19007
+2015,Taranaki,Public Service,State Sector,379
+2021,Southland,Public Service,State Sector,667
+2023,Area Outside Regions,Local Government,Local Government,30
+2023,Nelson,SoEs,State Sector,520
+2023,Nelson,Education Sector,State Sector,1750
+2023,Southland,Education Sector,State Sector,2700
+2023,West Coast,Local Government,Local Government,610
+2023,Auckland,Education Sector,State Sector,45900
+2022,Marlborough,Health Sector,State Sector,880
+2023,Southland,Local Government,Local Government,2150
+2023,Bay of Plenty,Private Sector,Private Sector,122700
+2023,Bay of Plenty,Local Government,Local Government,3650
+2023,Auckland,Health Sector,State Sector,33100
+2022,Marlborough,Private Sector,Private Sector,20200
+2022,Southland,Education Sector,State Sector,2800
+2022,West Coast,SoEs,State Sector,220
+2022,Wellington,Local Government,Local Government,5700
+2022,Manawatu-Wanganui,Education Sector,State Sector,9100
+2022,Taranaki,Local Government,Local Government,1600
+2022,Gisborne,SoEs,State Sector,140
+2022,Bay of Plenty,SoEs,State Sector,830
+2023,Waikato,SoEs,State Sector,3350
+2022,Manawatu-Wanganui,Local Government,Local Government,2100
+2022,Northland,SoEs,State Sector,390
+2021,Area Outside Regions,Local Government,Local Government,30
+2021,Otago,Education Sector,State Sector,9600
+2021,Canterbury,Education Sector,State Sector,17700
+2021,West Coast,Private Sector,Private Sector,10800
+2021,West Coast,Education Sector,State Sector,820
+2021,Wellington,Health Sector,State Sector,10000
+2021,Gisborne,Local Government,Local Government,600
+2021,Auckland,SoEs,State Sector,12100
+2020,Area Outside Regions,Education Sector,State Sector,18
+2020,Marlborough,Local Government,Local Government,500
+2020,Tasman,Local Government,Local Government,630
+2020,Tasman,Education Sector,State Sector,1200
+2020,Otago,Health Sector,State Sector,3850
+2020,Manawatu-Wanganui,Education Sector,State Sector,9200
+2020,Taranaki,SoEs,State Sector,250
+2020,Bay of Plenty,Local Government,Local Government,3350
+2020,Waikato,Local Government,Local Government,4350
+2019,Nelson,SoEs,State Sector,450
+2019,Tasman,Local Government,Local Government,600
+2019,Tasman,Education Sector,State Sector,1150
+2019,Gisborne,Health Sector,State Sector,1100
+2019,Bay of Plenty,Private Sector,Private Sector,115700
+2019,Auckland,Education Sector,State Sector,45400
+2018,Area Outside Regions,Private Sector,Private Sector,260
+2018,Area Outside Regions,Education Sector,State Sector,15
+2018,Marlborough,Education Sector,State Sector,940
+2018,Canterbury,Local Government,Local Government,9200
+2018,Canterbury,Education Sector,State Sector,16500
+2018,Wellington,Education Sector,State Sector,16800
+2018,Manawatu-Wanganui,SoEs,State Sector,1050
+2018,Manawatu-Wanganui,Education Sector,State Sector,8900
+2018,Bay of Plenty,Health Sector,State Sector,4300
+2018,Waikato,Local Government,Local Government,3900
+2018,Waikato,SoEs,State Sector,2600
+2019,Auckland,SoEs,State Sector,14300
+2018,Canterbury,SoEs,State Sector,5100
+2018,Bay of Plenty,Local Government,Local Government,3100
+2020,Southland,Education Sector,State Sector,2750
+2018,Southland,Education Sector,State Sector,2600
+2017,Tasman,Education Sector,State Sector,1150
+2017,Southland,SoEs,State Sector,490
+2017,Canterbury,Health Sector,State Sector,11000
+2017,Wellington,Private Sector,Private Sector,175100
+2016,Marlborough,Education Sector,State Sector,830
+2016,Hawkes Bay,Health Sector,State Sector,2350
+2016,Auckland,Local Government,Local Government,11600
+2015,Southland,Private Sector,Private Sector,41700
+2015,Otago,Education Sector,State Sector,8900
+2015,Bay of Plenty,Education Sector,State Sector,7400
+2015,Auckland,Health Sector,State Sector,24700
+2014,Marlborough,Local Government,Local Government,340
+2014,Marlborough,SoEs,State Sector,460
+2014,Marlborough,Education Sector,State Sector,850
+2014,Manawatu-Wanganui,Local Government,Local Government,1850
+2014,Auckland,SoEs,State Sector,13500
+2014,Auckland,Health Sector,State Sector,23500
+2013,Area Outside Regions,Health Sector,State Sector,15
+2013,Otago,SoEs,State Sector,1200
+2013,Northland,Local Government,Local Government,1050
+2012,Tasman,Local Government,Local Government,440
+2014,Tasman,Health Sector,State Sector,70
+2013,Taranaki,SoEs,State Sector,300
+2012,Otago,Local Government,Local Government,3500
+2012,Otago,SoEs,State Sector,1200
+2012,Hawkes Bay,SoEs,State Sector,650
+2012,Bay of Plenty,Private Sector,Private Sector,91500
+2011,Otago,Education Sector,State Sector,9600
+2010,Nelson,Private Sector,Private Sector,19400
+2010,Tasman,Health Sector,State Sector,120
+2010,Taranaki,Health Sector,State Sector,1500
+2009,Tasman,Local Government,Local Government,410
+2009,Taranaki,Private Sector,Private Sector,42200
+2008,Tasman,Health Sector,State Sector,220
+2022,Gisborne,Private Sector,Private Sector,19600
+2021,Southland,Health Sector,State Sector,1300
+2021,Canterbury,Private Sector,Private Sector,249500
+2021,Bay of Plenty,SoEs,State Sector,790
+2020,Marlborough,SoEs,State Sector,130
+2020,Wellington,Health Sector,State Sector,9500
+2019,Wellington,Education Sector,State Sector,17100
+2019,Manawatu-Wanganui,Local Government,Local Government,1900
+2019,Gisborne,Private Sector,Private Sector,18100
+2018,Otago,Health Sector,State Sector,3450
+2017,Marlborough,Local Government,Local Government,430
+2017,Nelson,SoEs,State Sector,530
+2021,Waikato,Health Sector,State Sector,9000
+2020,Gisborne,Education Sector,State Sector,1550
+2019,Manawatu-Wanganui,Health Sector,State Sector,4100
+2018,Southland,Private Sector,Private Sector,42300
+2018,West Coast,Local Government,Local Government,570
+2018,West Coast,SoEs,State Sector,240
+2018,Taranaki,Local Government,Local Government,1350
+2018,Nelson,Education Sector,State Sector,1650
+2017,Tasman,SoEs,State Sector,12
+2016,Wellington,Local Government,Local Government,5100
+2016,Hawkes Bay,SoEs,State Sector,480
+2016,Hawkes Bay,Education Sector,State Sector,4450
+2015,Area Outside Regions,SoEs,State Sector,0
+2015,West Coast,Education Sector,State Sector,850
+2015,Manawatu-Wanganui,Education Sector,State Sector,8300
+2015,Gisborne,Private Sector,Private Sector,17000
+2015,Waikato,Private Sector,Private Sector,145400
+2015,Waikato,SoEs,State Sector,2850
+2015,Waikato,Health Sector,State Sector,7100
+2015,Waikato,Education Sector,State Sector,12500
+2015,Northland,Local Government,Local Government,1100
+2015,Northland,Health Sector,State Sector,2750
+2014,Southland,Education Sector,State Sector,2650
+2014,Manawatu-Wanganui,Private Sector,Private Sector,73700
+2014,Hawkes Bay,Health Sector,State Sector,2200
+2014,Bay of Plenty,SoEs,State Sector,860
+2014,Auckland,Local Government,Local Government,11100
+2014,Northland,Private Sector,Private Sector,43400
+2013,Southland,SoEs,State Sector,550
+2013,Canterbury,Private Sector,Private Sector,216500
+2013,Manawatu-Wanganui,Education Sector,State Sector,8100
+2013,Taranaki,Private Sector,Private Sector,42100
+2013,Hawkes Bay,Private Sector,Private Sector,62200
+2012,Area Outside Regions,Private Sector,Private Sector,270
+2012,Marlborough,Private Sector,Private Sector,17800
+2012,Marlborough,Local Government,Local Government,320
+2013,Otago,Private Sector,Private Sector,79000
+2013,Otago,Local Government,Local Government,3450
+2012,Southland,Education Sector,State Sector,2500
+2012,Gisborne,Private Sector,Private Sector,16600
+2011,Area Outside Regions,SoEs,State Sector,0
+2011,Marlborough,SoEs,State Sector,560
+2011,Otago,Health Sector,State Sector,3350
+2011,Wellington,Local Government,Local Government,4900
+2011,Manawatu-Wanganui,Education Sector,State Sector,8400
+2011,Bay of Plenty,Health Sector,State Sector,3800
+2010,West Coast,Private Sector,Private Sector,12000
+2010,Bay of Plenty,Education Sector,State Sector,7400
+2009,Area Outside Regions,Health Sector,State Sector,15
+2009,Tasman,Education Sector,State Sector,1150
+2009,Southland,Local Government,Local Government,1950
+2009,Otago,Health Sector,State Sector,3300
+2009,Canterbury,Health Sector,State Sector,9600
+2009,West Coast,Education Sector,State Sector,830
+2009,Bay of Plenty,SoEs,State Sector,920
+2009,Bay of Plenty,Health Sector,State Sector,3700
+2009,Auckland,Local Government,Local Government,11100
+2009,Auckland,Health Sector,State Sector,21300
+2008,Area Outside Regions,Education Sector,State Sector,18
+2008,Southland,Local Government,Local Government,1950
+2008,Southland,SoEs,State Sector,500
+2008,Otago,Health Sector,State Sector,3200
+2008,Otago,Education Sector,State Sector,9200
+2008,Canterbury,Health Sector,State Sector,9300
+2014,Bay of Plenty,Local Government,Local Government,2650
+2014,Marlborough,Private Sector,Private Sector,19200
+2012,Bay of Plenty,Health Sector,State Sector,3850
+2011,Bay of Plenty,Private Sector,Private Sector,93000
+2010,Auckland,Education Sector,State Sector,40900
+2008,West Coast,Education Sector,State Sector,890
+2008,Manawatu-Wanganui,Private Sector,Private Sector,79200
+2007,Area Outside Regions,Education Sector,State Sector,15
+2007,Tasman,Private Sector,Private Sector,16800
+2007,Southland,Local Government,Local Government,1950
+2010,Area Outside Regions,Education Sector,State Sector,15
+2010,West Coast,Education Sector,State Sector,770
+2009,Otago,SoEs,State Sector,1350
+2009,Taranaki,Local Government,Local Government,1350
+2008,Taranaki,SoEs,State Sector,360
+2008,Nelson,Health Sector,State Sector,1500
+2008,Bay of Plenty,Health Sector,State Sector,3550
+2007,Wellington,Education Sector,State Sector,14800
+2007,Hawkes Bay,Private Sector,Private Sector,65900
+2007,Hawkes Bay,Local Government,Local Government,1800
+2007,Auckland,Local Government,Local Government,10500
+2007,Auckland,Education Sector,State Sector,38000
+2006,Otago,Local Government,Local Government,3000
+2006,Canterbury,Education Sector,State Sector,15200
+2006,Wellington,Health Sector,State Sector,7800
+2006,Wellington,Education Sector,State Sector,14000
+2006,Manawatu-Wanganui,Health Sector,State Sector,3950
+2006,Taranaki,Private Sector,Private Sector,40000
+2006,Bay of Plenty,Private Sector,Private Sector,89200
+2006,Bay of Plenty,Local Government,Local Government,1950
+2005,Area Outside Regions,Health Sector,State Sector,12
+2005,Marlborough,Health Sector,State Sector,530
+2005,Southland,SoEs,State Sector,500
+2005,Wellington,Health Sector,State Sector,7600
+2005,Taranaki,SoEs,State Sector,410
+2005,Hawkes Bay,Private Sector,Private Sector,62600
+2005,Hawkes Bay,Local Government,Local Government,1700
+2005,Bay of Plenty,Private Sector,Private Sector,88300
+2005,Waikato,Local Government,Local Government,3150
+2005,Auckland,SoEs,State Sector,13800
+2005,Auckland,Health Sector,State Sector,18800
+2004,Nelson,Education Sector,State Sector,1350
+2004,Tasman,Private Sector,Private Sector,17000
+2004,Southland,Local Government,Local Government,1850
+2004,Southland,Education Sector,State Sector,2600
+2004,Otago,Private Sector,Private Sector,76100
+2004,Otago,Health Sector,State Sector,3300
+2004,Canterbury,SoEs,State Sector,4850
+2004,Canterbury,Health Sector,State Sector,9000
+2004,Wellington,SoEs,State Sector,6900
+2004,Hawkes Bay,Health Sector,State Sector,2100
+2004,Bay of Plenty,Education Sector,State Sector,6500
+2004,Auckland,SoEs,State Sector,13800
+2003,Area Outside Regions,Local Government,Local Government,15
+2003,Area Outside Regions,Education Sector,State Sector,18
+2003,Marlborough,Local Government,Local Government,270
+2003,Marlborough,Education Sector,State Sector,750
+2003,Tasman,Education Sector,State Sector,1000
+2003,Southland,Health Sector,State Sector,1050
+2003,Manawatu-Wanganui,Education Sector,State Sector,8600
+2003,Gisborne,Health Sector,State Sector,750
+2003,Gisborne,Education Sector,State Sector,1400
+2002,Marlborough,Education Sector,State Sector,770
+2005,Hawkes Bay,SoEs,State Sector,570
+2002,Canterbury,Local Government,Local Government,5900
+2002,Wellington,Health Sector,State Sector,7200
+2002,Manawatu-Wanganui,Education Sector,State Sector,8500
+2002,Gisborne,SoEs,State Sector,220
+2002,Bay of Plenty,Private Sector,Private Sector,78600
+2002,Bay of Plenty,Local Government,Local Government,1850
+2002,Auckland,Local Government,Local Government,8500
+2002,Northland,SoEs,State Sector,440
+2001,Nelson,SoEs,State Sector,200
+2001,Nelson,Health Sector,State Sector,1400
+2001,Southland,Private Sector,Private Sector,36000
+2001,Otago,Local Government,Local Government,2500
+2001,Canterbury,SoEs,State Sector,3100
+2001,Canterbury,Health Sector,State Sector,8400
+2001,Manawatu-Wanganui,Private Sector,Private Sector,67600
+2001,Taranaki,Private Sector,Private Sector,32700
+2001,Gisborne,Private Sector,Private Sector,15700
+2001,Waikato,Education Sector,State Sector,11800
+2001,Auckland,Private Sector,Private Sector,445600
+2001,Northland,Health Sector,State Sector,1850
+2000,Marlborough,Health Sector,State Sector,430
+2000,Southland,Local Government,Local Government,1550
+2000,West Coast,Private Sector,Private Sector,9000
+2000,Taranaki,Health Sector,State Sector,1250
+2000,Hawkes Bay,Local Government,Local Government,1650
+2000,Gisborne,Education Sector,State Sector,1450
+2010,Otago,Public Service,State Sector,1393
+2014,Overseas,Public Service,State Sector,264
+2015,Wellington,Public Service,State Sector,19195
+2008,Bay of Plenty,Public Service,State Sector,1439
+2010,Tasman,Public Service,State Sector,51
+2020,Auckland,Public Service,State Sector,11818
+2019,West Coast,Public Service,State Sector,321
+2007,Otago,Local Government,Local Government,3100
+2007,Northland,SoEs,State Sector,370
+2006,Tasman,Education Sector,State Sector,1100
+2004,Bay of Plenty,Health Sector,State Sector,3400
+2003,Taranaki,Education Sector,State Sector,2950
+2004,Waikato,SoEs,State Sector,2000
+2001,Nelson,Education Sector,State Sector,1100
+2001,Canterbury,Private Sector,Private Sector,179300
+2001,West Coast,Education Sector,State Sector,810
+2001,Nelson,Local Government,Local Government,470
+2001,Canterbury,Local Government,Local Government,5700
+2012,Northland,Public Service,State Sector,1230
+2014,Bay of Plenty,Public Service,State Sector,1748
+2002,Bay of Plenty,Public Service,State Sector,1011
+2009,Northland,Public Service,State Sector,1139
+2019,Canterbury,Public Service,State Sector,5036
+2002,Hawkes Bay,Public Service,State Sector,864
+2004,Southland,Public Service,State Sector,597
+2023,Canterbury,Other Government Entities,State Sector,5190
+2023,Manawatu-Wanganui,Other Government Entities,State Sector,6586
+2023,Bay of Plenty,Other Government Entities,State Sector,1829
+2022,Marlborough,Other Government Entities,State Sector,584
+2022,Tasman,Other Government Entities,State Sector,130
+2022,Northland,Other Government Entities,State Sector,835
+2021,Nelson,Other Government Entities,State Sector,468
+2021,Canterbury,Other Government Entities,State Sector,5033
+2021,West Coast,Other Government Entities,State Sector,196
+2021,Bay of Plenty,Other Government Entities,State Sector,1931
+2021,Northland,Other Government Entities,State Sector,705
+2020,Area Outside Regions,Other Government Entities,State Sector,35
+2020,Tasman,Other Government Entities,State Sector,281
+2020,Gisborne,Other Government Entities,State Sector,342
+2018,Marlborough,Other Government Entities,State Sector,564
+2018,Bay of Plenty,Other Government Entities,State Sector,2079
+2020,Taranaki,Other Government Entities,State Sector,634
+2018,Southland,Other Government Entities,State Sector,292
+2017,Otago,Other Government Entities,State Sector,1393
+2017,Bay of Plenty,Other Government Entities,State Sector,1712
+2016,Marlborough,Other Government Entities,State Sector,721
+2016,Bay of Plenty,Other Government Entities,State Sector,1509
+2014,Manawatu-Wanganui,Other Government Entities,State Sector,5137
+2013,Area Outside Regions,Other Government Entities,State Sector,30
+2013,Otago,Other Government Entities,State Sector,1188
+2013,Auckland,Other Government Entities,State Sector,13147
+2012,Marlborough,Other Government Entities,State Sector,718
+2013,Wellington,Other Government Entities,State Sector,15290
+2012,Wellington,Other Government Entities,State Sector,15201
+2012,Bay of Plenty,Other Government Entities,State Sector,1780
+2012,Waikato,Other Government Entities,State Sector,1916
+2011,Area Outside Regions,Other Government Entities,State Sector,25
+2011,Canterbury,Other Government Entities,State Sector,5009
+2011,Gisborne,Other Government Entities,State Sector,247
+2010,Manawatu-Wanganui,Other Government Entities,State Sector,6259
+2010,Taranaki,Other Government Entities,State Sector,443
+2009,Northland,Other Government Entities,State Sector,661
+2006,Southland,Other Government Entities,State Sector,180
+2006,Otago,Other Government Entities,State Sector,1232
+2006,Auckland,Other Government Entities,State Sector,8761
+2006,Northland,Other Government Entities,State Sector,489
+2005,Area Outside Regions,Other Government Entities,State Sector,25
+2005,Nelson,Other Government Entities,State Sector,291
+2005,Bay of Plenty,Other Government Entities,State Sector,1264
+2004,Manawatu-Wanganui,Other Government Entities,State Sector,4739
+2004,Taranaki,Other Government Entities,State Sector,68
+2004,Hawkes Bay,Other Government Entities,State Sector,659
+2004,Waikato,Other Government Entities,State Sector,1796
+2002,Manawatu-Wanganui,Other Government Entities,State Sector,4614
+2002,Hawkes Bay,Other Government Entities,State Sector,736
+2002,Waikato,Other Government Entities,State Sector,1735
+2001,Tasman,Other Government Entities,State Sector,126
+2001,Otago,Other Government Entities,State Sector,1229
+2001,West Coast,Other Government Entities,State Sector,175
+2000,Manawatu-Wanganui,Other Government Entities,State Sector,4617
+2001,Gisborne,Other Government Entities,State Sector,251
+2007,Southland,Other Government Entities,State Sector,276
+2000,Gisborne,Public Service,State Sector,196
+2004,Tasman,Public Service,State Sector,68
+2008,Hawkes Bay,Public Service,State Sector,1169
+2017,Canterbury,Public Service,State Sector,4513
+2012,Auckland,Public Service,State Sector,9184
+2015,Nelson,Public Service,State Sector,547
+2001,Wellington,Public Service,State Sector,12454
+2004,Wellington,Public Service,State Sector,14970
+2021,Waikato,Public Service,State Sector,4241
+2023,Auckland,Public Service,State Sector,13438
+2008,Wellington,Public Service,State Sector,18698
+2022,Overseas,Public Service,State Sector,312
+2002,Wellington,Public Service,State Sector,12885
+2006,Manawatu-Wanganui,Public Service,State Sector,1818
+2007,Manawatu-Wanganui,Public Service,State Sector,1935
+2022,West Coast,Public Service,State Sector,300
+2012,Bay of Plenty,Public Service,State Sector,1670
+2017,Gisborne,Public Service,State Sector,266
+2015,Canterbury,Public Service,State Sector,4611
+2015,Gisborne,Public Service,State Sector,264
+2015,Marlborough,Public Service,State Sector,153
+2022,Hawkes Bay,Public Service,State Sector,1450
+2001,Taranaki,Public Service,State Sector,443
+2005,Otago,Public Service,State Sector,1142
+2007,West Coast,Public Service,State Sector,257
+2014,Tasman,Public Service,State Sector,37
+2015,Hawkes Bay,Public Service,State Sector,1140
+2000,Marlborough,Public Service,State Sector,144
+2007,Tasman,Public Service,State Sector,144
+2009,Overseas,Public Service,State Sector,300
+2020,Bay of Plenty,Public Service,State Sector,1843
+2019,Wellington,Public Service,State Sector,23662
+2019,Gisborne,Public Service,State Sector,275
+2023,Tasman,Health Sector,State Sector,190
+2023,Southland,Health Sector,State Sector,1800
+2023,West Coast,Education Sector,State Sector,830
+2023,Wellington,Education Sector,State Sector,18400
+2023,Waikato,Health Sector,State Sector,9800
+2022,Area Outside Regions,Education Sector,State Sector,18
+2022,Canterbury,Education Sector,State Sector,17900
+2023,Canterbury,Education Sector,State Sector,18300
+2023,Auckland,Local Government,Local Government,12600
+2022,Marlborough,SoEs,State Sector,170
+2022,Nelson,Local Government,Local Government,920
+2022,Nelson,Health Sector,State Sector,1650
+2022,West Coast,Health Sector,State Sector,890
+2022,Northland,Local Government,Local Government,1450
+2023,Tasman,Education Sector,State Sector,1250
+2023,Northland,Education Sector,State Sector,5100
+2022,Bay of Plenty,Health Sector,State Sector,5500
+2022,Bay of Plenty,Education Sector,State Sector,8400
+2022,Auckland,Private Sector,Private Sector,706200
+2022,Canterbury,SoEs,State Sector,4600
+2022,Hawkes Bay,SoEs,State Sector,700
+2022,Gisborne,Health Sector,State Sector,1150
+2021,Area Outside Regions,Education Sector,State Sector,18
+2021,Marlborough,Education Sector,State Sector,1000
+2021,Nelson,Private Sector,Private Sector,21700
+2021,Tasman,SoEs,State Sector,6
+2021,Wellington,Local Government,Local Government,5600
+2021,Taranaki,Education Sector,State Sector,3450
+2021,Hawkes Bay,Local Government,Local Government,2150
+2021,Hawkes Bay,Health Sector,State Sector,2900
+2021,Auckland,Health Sector,State Sector,30500
+2021,Northland,Health Sector,State Sector,3700
+2020,Nelson,Private Sector,Private Sector,22200
+2020,Tasman,Health Sector,State Sector,170
+2019,Otago,Health Sector,State Sector,3650
+2019,Otago,Education Sector,State Sector,9600
+2019,West Coast,Health Sector,State Sector,770
+2019,Wellington,SoEs,State Sector,9300
+2019,Manawatu-Wanganui,Private Sector,Private Sector,80800
+2019,Taranaki,Education Sector,State Sector,3050
+2019,Waikato,Private Sector,Private Sector,166000
+2019,Waikato,SoEs,State Sector,2500
+2018,Area Outside Regions,Local Government,Local Government,35
+2018,Otago,Private Sector,Private Sector,94500
+2018,West Coast,Private Sector,Private Sector,11600
+2018,Northland,Local Government,Local Government,1250
+2021,Taranaki,Local Government,Local Government,1500
+2019,Southland,SoEs,State Sector,400
+2019,Otago,Local Government,Local Government,3950
+2019,Wellington,Health Sector,State Sector,9400
+2018,Canterbury,Health Sector,State Sector,11600
+2019,Waikato,Education Sector,State Sector,13600
+2017,Nelson,Education Sector,State Sector,1650
+2017,Otago,SoEs,State Sector,1200
+2017,Bay of Plenty,Education Sector,State Sector,7800
+2016,Area Outside Regions,Education Sector,State Sector,15
+2016,Marlborough,Health Sector,State Sector,680
+2016,Otago,Private Sector,Private Sector,87500
+2016,Otago,SoEs,State Sector,1350
+2016,West Coast,Local Government,Local Government,590
+2016,West Coast,Health Sector,State Sector,810
+2016,Gisborne,SoEs,State Sector,150
+2016,Bay of Plenty,Private Sector,Private Sector,103000
+2016,Auckland,Education Sector,State Sector,41400
+2015,West Coast,Local Government,Local Government,570
+2015,Taranaki,Education Sector,State Sector,2900
+2015,Hawkes Bay,Local Government,Local Government,1900
+2015,Hawkes Bay,Education Sector,State Sector,4450
+2015,Gisborne,Health Sector,State Sector,890
+2015,Bay of Plenty,Local Government,Local Government,2750
+2014,Southland,Health Sector,State Sector,980
+2014,Manawatu-Wanganui,SoEs,State Sector,1200
+2014,Gisborne,Education Sector,State Sector,1500
+2013,Gisborne,Health Sector,State Sector,880
+2013,Auckland,Health Sector,State Sector,23300
+2012,Marlborough,SoEs,State Sector,550
+2013,Area Outside Regions,Education Sector,State Sector,12
+2013,Northland,Education Sector,State Sector,4200
+2012,Northland,Local Government,Local Government,1050
+2011,Otago,SoEs,State Sector,1300
+2011,West Coast,Health Sector,State Sector,990
+2011,West Coast,Education Sector,State Sector,790
+2011,Taranaki,Local Government,Local Government,1250
+2011,Bay of Plenty,Education Sector,State Sector,7400
+2011,Waikato,Education Sector,State Sector,12900
+2010,Nelson,SoEs,State Sector,400
+2010,Southland,Private Sector,Private Sector,40200
+2010,Southland,SoEs,State Sector,550
+2010,Bay of Plenty,Local Government,Local Government,2400
+2010,Auckland,Health Sector,State Sector,22000
+2009,Area Outside Regions,Private Sector,Private Sector,250
+2009,Nelson,Health Sector,State Sector,1450
+2008,Area Outside Regions,Private Sector,Private Sector,280
+2008,Wellington,Education Sector,State Sector,15100
+2008,Northland,SoEs,State Sector,390
+2007,Tasman,Local Government,Local Government,410
+2007,Wellington,SoEs,State Sector,8400
+2006,Taranaki,Local Government,Local Government,1450
+2021,Wellington,SoEs,State Sector,9900
+2019,Hawkes Bay,Local Government,Local Government,2150
+2019,Bay of Plenty,Local Government,Local Government,3200
+2019,Bay of Plenty,Health Sector,State Sector,4400
+2018,Tasman,Education Sector,State Sector,1150
+2021,Northland,Local Government,Local Government,1450
+2021,Northland,SoEs,State Sector,480
+2020,Northland,Private Sector,Private Sector,51600
+2019,Auckland,Local Government,Local Government,12300
+2019,Northland,Local Government,Local Government,1300
+2018,Otago,Local Government,Local Government,3800
+2018,Manawatu-Wanganui,Private Sector,Private Sector,79400
+2018,Manawatu-Wanganui,Health Sector,State Sector,3950
+2018,Wellington,Health Sector,State Sector,9000
+2017,Bay of Plenty,Local Government,Local Government,2950
+2016,Nelson,Private Sector,Private Sector,20800
+2016,Northland,Local Government,Local Government,1150
+2015,Marlborough,Education Sector,State Sector,820
+2015,Nelson,Education Sector,State Sector,1600
+2015,Canterbury,Local Government,Local Government,8800
+2015,Manawatu-Wanganui,Local Government,Local Government,1700
+2013,Bay of Plenty,Health Sector,State Sector,3800
+2013,Waikato,SoEs,State Sector,2800
+2012,Area Outside Regions,Local Government,Local Government,35
+2014,Nelson,Health Sector,State Sector,1800
+2013,West Coast,Private Sector,Private Sector,12200
+2013,West Coast,Local Government,Local Government,530
+2013,Waikato,Private Sector,Private Sector,136400
+2012,Nelson,SoEs,State Sector,400
+2012,Wellington,SoEs,State Sector,10100
+2012,Waikato,SoEs,State Sector,2850
+2011,Area Outside Regions,Health Sector,State Sector,15
+2011,Canterbury,Local Government,Local Government,7800
+2011,Taranaki,Education Sector,State Sector,2900
+2011,Hawkes Bay,Private Sector,Private Sector,62400
+2011,Hawkes Bay,Health Sector,State Sector,2150
+2011,Waikato,Local Government,Local Government,3900
+2010,Manawatu-Wanganui,Health Sector,State Sector,3450
+2009,Tasman,Private Sector,Private Sector,16600
+2009,Wellington,Private Sector,Private Sector,170400
+2009,Northland,Private Sector,Private Sector,44700
+2008,Taranaki,Health Sector,State Sector,1450
+2008,Hawkes Bay,SoEs,State Sector,650
+2008,Hawkes Bay,Health Sector,State Sector,2150
+2008,Waikato,Private Sector,Private Sector,142200
+2007,Southland,Private Sector,Private Sector,40100
+2011,Gisborne,Local Government,Local Government,450
+2010,Hawkes Bay,Education Sector,State Sector,4750
+2008,Canterbury,SoEs,State Sector,4850
+2007,Area Outside Regions,Health Sector,State Sector,12
+2007,Nelson,SoEs,State Sector,410
+2007,Otago,Health Sector,State Sector,3100
+2007,West Coast,Local Government,Local Government,400
+2007,Manawatu-Wanganui,SoEs,State Sector,1150
+2007,Manawatu-Wanganui,Health Sector,State Sector,3350
+2007,Taranaki,Local Government,Local Government,1350
+2007,Waikato,Education Sector,State Sector,12200
+2006,Marlborough,Health Sector,State Sector,520
+2006,Tasman,SoEs,State Sector,35
+2006,Wellington,Private Sector,Private Sector,170800
+2006,Manawatu-Wanganui,Local Government,Local Government,1850
+2006,Bay of Plenty,SoEs,State Sector,1150
+2005,Southland,Private Sector,Private Sector,39900
+2005,Manawatu-Wanganui,SoEs,State Sector,1100
+2005,Manawatu-Wanganui,Health Sector,State Sector,3850
+2005,Hawkes Bay,Health Sector,State Sector,2100
+2005,Gisborne,Private Sector,Private Sector,17500
+2016,Northland,Education Sector,State Sector,4550
+2010,Canterbury,Education Sector,State Sector,16000
+2010,Hawkes Bay,Local Government,Local Government,1950
+2009,Marlborough,Education Sector,State Sector,800
+2008,Bay of Plenty,SoEs,State Sector,810
+2007,West Coast,SoEs,State Sector,500
+2007,Northland,Education Sector,State Sector,4100
+2006,Area Outside Regions,SoEs,State Sector,0
+2006,Area Outside Regions,Education Sector,State Sector,12
+2005,Southland,Local Government,Local Government,1900
+2006,Nelson,Private Sector,Private Sector,19700
+2005,Gisborne,Local Government,Local Government,350
+2005,Gisborne,SoEs,State Sector,310
+2005,Bay of Plenty,Health Sector,State Sector,3500
+2005,Northland,Health Sector,State Sector,1950
+2004,Area Outside Regions,Health Sector,State Sector,12
+2004,Area Outside Regions,Education Sector,State Sector,12
+2004,Canterbury,Education Sector,State Sector,15600
+2004,West Coast,Health Sector,State Sector,940
+2004,West Coast,Education Sector,State Sector,800
+2004,Wellington,Local Government,Local Government,4250
+2004,Wellington,Health Sector,State Sector,7400
+2004,Manawatu-Wanganui,Health Sector,State Sector,3800
+2004,Northland,SoEs,State Sector,520
+2003,Area Outside Regions,Private Sector,Private Sector,210
+2003,Nelson,Local Government,Local Government,510
+2003,Tasman,Private Sector,Private Sector,15400
+2003,Tasman,Health Sector,State Sector,190
+2003,Southland,SoEs,State Sector,590
+2003,Otago,Local Government,Local Government,2700
+2003,Otago,Health Sector,State Sector,3350
+2003,Otago,Education Sector,State Sector,8400
+2003,Canterbury,Health Sector,State Sector,8700
+2003,West Coast,Private Sector,Private Sector,10100
+2003,West Coast,Education Sector,State Sector,820
+2003,Wellington,Local Government,Local Government,4150
+2003,Wellington,Health Sector,State Sector,7400
+2003,Hawkes Bay,Health Sector,State Sector,2000
+2003,Bay of Plenty,SoEs,State Sector,1500
+2002,Area Outside Regions,Local Government,Local Government,15
+2002,Southland,Private Sector,Private Sector,37000
+2002,Southland,Education Sector,State Sector,2500
+2002,Otago,Local Government,Local Government,2550
+2005,Otago,Education Sector,State Sector,8700
+2003,Tasman,Local Government,Local Government,330
+2003,Auckland,SoEs,State Sector,13400
+2002,West Coast,Private Sector,Private Sector,9500
+2002,Wellington,Local Government,Local Government,4200
+2002,Wellington,Education Sector,State Sector,13200
+2002,Manawatu-Wanganui,Private Sector,Private Sector,70400
+2002,Hawkes Bay,Health Sector,State Sector,1950
+2002,Gisborne,Private Sector,Private Sector,16400
+2002,Bay of Plenty,Education Sector,State Sector,6100
+2002,Auckland,Health Sector,State Sector,17500
+2002,Auckland,Education Sector,State Sector,32400
+2002,Northland,Health Sector,State Sector,1850
+2001,Tasman,Education Sector,State Sector,1000
+2001,West Coast,Local Government,Local Government,350
+2001,West Coast,SoEs,State Sector,410
+2001,Hawkes Bay,SoEs,State Sector,520
+2001,Waikato,SoEs,State Sector,2150
+2001,Auckland,Education Sector,State Sector,29800
+2001,Northland,Local Government,Local Government,700
+2000,Nelson,Education Sector,State Sector,1100
+2000,Tasman,SoEs,State Sector,35
+2000,Tasman,Education Sector,State Sector,970
+2000,Southland,Education Sector,State Sector,2700
+2000,West Coast,Local Government,Local Government,350
+2000,West Coast,SoEs,State Sector,370
+2000,Wellington,Local Government,Local Government,3950
+2000,Manawatu-Wanganui,Private Sector,Private Sector,66600
+2000,Hawkes Bay,Health Sector,State Sector,1850
+2000,Bay of Plenty,Local Government,Local Government,1550
+2000,Waikato,Private Sector,Private Sector,108600
+2000,Auckland,SoEs,State Sector,6900
+2001,Gisborne,Local Government,Local Government,330
+2000,Nelson,Local Government,Local Government,480
+2003,Waikato,Public Service,State Sector,2771
+2004,West Coast,Public Service,State Sector,197
+2014,Wellington,Public Service,State Sector,19322
+2016,Marlborough,Public Service,State Sector,139
+2007,Gisborne,Public Service,State Sector,311
+2009,Waikato,Public Service,State Sector,3598
+2020,Marlborough,Public Service,State Sector,170
+2002,Bay of Plenty,Health Sector,State Sector,3200
+2002,Waikato,Education Sector,State Sector,11800
+2001,Otago,SoEs,State Sector,910
+2011,Manawatu-Wanganui,Public Service,State Sector,1785
+2015,Northland,Public Service,State Sector,1286
+2001,Otago,Public Service,State Sector,921
+2004,Taranaki,Public Service,State Sector,622
+2021,West Coast,Public Service,State Sector,314
+2023,Wellington,Public Service,State Sector,28726
+2023,West Coast,Public Service,State Sector,302
+2019,Nelson,Public Service,State Sector,425
+2000,Waikato,Public Service,State Sector,2602
+2022,Canterbury,Public Service,State Sector,6033
+2022,Waikato,Public Service,State Sector,4039
+2023,Marlborough,Other Government Entities,State Sector,604
+2023,Nelson,Other Government Entities,State Sector,623
+2023,Waikato,Other Government Entities,State Sector,2861
+2022,Otago,Other Government Entities,State Sector,1471
+2022,West Coast,Other Government Entities,State Sector,160
+2022,Manawatu-Wanganui,Other Government Entities,State Sector,6708
+2021,Southland,Other Government Entities,State Sector,253
+2020,West Coast,Other Government Entities,State Sector,232
+2020,Hawkes Bay,Other Government Entities,State Sector,820
+2019,Marlborough,Other Government Entities,State Sector,680
+2019,West Coast,Other Government Entities,State Sector,229
+2019,Northland,Other Government Entities,State Sector,837
+2018,Area Outside Regions,Other Government Entities,State Sector,30
+2018,Northland,Other Government Entities,State Sector,702
+2018,Otago,Other Government Entities,State Sector,1422
+2018,Gisborne,Other Government Entities,State Sector,253
+2017,Canterbury,Other Government Entities,State Sector,4687
+2016,Tasman,Other Government Entities,State Sector,194
+2016,Otago,Other Government Entities,State Sector,1293
+2016,Canterbury,Other Government Entities,State Sector,4801
+2015,Tasman,Other Government Entities,State Sector,191
+2014,Canterbury,Other Government Entities,State Sector,4632
+2013,Nelson,Other Government Entities,State Sector,114
+2013,West Coast,Other Government Entities,State Sector,165
+2012,Nelson,Other Government Entities,State Sector,103
+2015,Bay of Plenty,Other Government Entities,State Sector,1436
+2012,Canterbury,Other Government Entities,State Sector,4886
+2012,West Coast,Other Government Entities,State Sector,135
+2011,Wellington,Other Government Entities,State Sector,14398
+2011,Bay of Plenty,Other Government Entities,State Sector,1726
+2010,Wellington,Other Government Entities,State Sector,14793
+2010,Auckland,Other Government Entities,State Sector,12471
+2009,Tasman,Other Government Entities,State Sector,209
+2009,Southland,Other Government Entities,State Sector,433
+2009,Wellington,Other Government Entities,State Sector,13988
+2009,Manawatu-Wanganui,Other Government Entities,State Sector,5715
+2008,Nelson,Other Government Entities,State Sector,380
+2008,Bay of Plenty,Other Government Entities,State Sector,1711
+2008,Waikato,Other Government Entities,State Sector,2618
+2007,Otago,Other Government Entities,State Sector,1096
+2007,Manawatu-Wanganui,Other Government Entities,State Sector,5465
+2006,Marlborough,Other Government Entities,State Sector,499
+2006,Nelson,Other Government Entities,State Sector,116
+2006,Wellington,Other Government Entities,State Sector,11912
+2006,Hawkes Bay,Other Government Entities,State Sector,761
+2005,Tasman,Other Government Entities,State Sector,123
+2005,Canterbury,Other Government Entities,State Sector,4565
+2005,Manawatu-Wanganui,Other Government Entities,State Sector,5150
+2005,Gisborne,Other Government Entities,State Sector,290
+2004,Wellington,Other Government Entities,State Sector,10430
+2003,Nelson,Other Government Entities,State Sector,337
+2003,Bay of Plenty,Other Government Entities,State Sector,1479
+2003,Northland,Other Government Entities,State Sector,524
+2002,Canterbury,Other Government Entities,State Sector,3945
+2001,Nelson,Other Government Entities,State Sector,190
+2001,Wellington,Other Government Entities,State Sector,12046
+2000,Area Outside Regions,Other Government Entities,State Sector,60
+2000,Otago,Other Government Entities,State Sector,1277
+2000,Waikato,Other Government Entities,State Sector,1698
+2022,Taranaki,Other Government Entities,State Sector,380
+2010,Gisborne,Other Government Entities,State Sector,173
+2003,Manawatu-Wanganui,Other Government Entities,State Sector,4914
+2000,Northland,Other Government Entities,State Sector,441
+2013,Otago,Public Service,State Sector,1312
+2014,Southland,Public Service,State Sector,613
+2001,Northland,Public Service,State Sector,681
+2002,Tasman,Public Service,State Sector,29
+2005,Waikato,Public Service,State Sector,3033
+2008,Tasman,Public Service,State Sector,110
+2023,Waikato,Public Service,State Sector,4139
+2007,Waikato,Public Service,State Sector,3158
+2011,Gisborne,Public Service,State Sector,253
+2003,Nelson,Public Service,State Sector,293
+2005,Overseas,Public Service,State Sector,256
+2004,Nelson,Public Service,State Sector,388
+2021,Otago,Public Service,State Sector,1535
+2021,Gisborne,Public Service,State Sector,305
+2006,Hawkes Bay,Public Service,State Sector,1189
+2001,Nelson,Public Service,State Sector,290
+2005,Hawkes Bay,Public Service,State Sector,1133
+2013,Canterbury,Public Service,State Sector,4468
+2013,Nelson,Public Service,State Sector,516
+2023,Northland,Public Service,State Sector,1649
+2021,Nelson,Public Service,State Sector,452
+2018,Otago,Public Service,State Sector,1378
+2015,Bay of Plenty,Public Service,State Sector,1764
+2018,Area Outside Regions,Public Service,State Sector,0
+2001,Tasman,Public Service,State Sector,74
+2010,Manawatu-Wanganui,Public Service,State Sector,1941
+2013,Marlborough,Public Service,State Sector,143
+2016,Canterbury,Public Service,State Sector,4399
+2001,Manawatu-Wanganui,Public Service,State Sector,1425
+2021,Auckland,Public Service,State Sector,12758
+2021,Northland,Public Service,State Sector,1695
+2005,West Coast,Public Service,State Sector,234
+2009,Auckland,Public Service,State Sector,9674
+2021,Bay of Plenty,Public Service,State Sector,1919
+2016,Hawkes Bay,Public Service,State Sector,1151
+2014,Manawatu-Wanganui,Public Service,State Sector,1963
+2019,Taranaki,Public Service,State Sector,419
+2011,Wellington,Public Service,State Sector,18302
+2000,Northland,Public Service,State Sector,659
+2010,Marlborough,Public Service,State Sector,143
+2017,Otago,Public Service,State Sector,1307
+2022,Gisborne,Public Service,State Sector,294
+2023,Area Outside Regions,Health Sector,State Sector,12
+2023,Otago,Education Sector,State Sector,9800
+2023,Wellington,Local Government,Local Government,6300
+2023,Wellington,Health Sector,State Sector,11000
+2023,Northland,Health Sector,State Sector,4150
+2022,Tasman,SoEs,State Sector,6
+2023,Tasman,Local Government,Local Government,700
+2023,Otago,Private Sector,Private Sector,100900
+2023,Wellington,Private Sector,Private Sector,194400
+2023,Taranaki,Local Government,Local Government,1650
+2022,Gisborne,Local Government,Local Government,640
+2022,Northland,Private Sector,Private Sector,52900
+2022,Waikato,SoEs,State Sector,2700
+2022,Waikato,Education Sector,State Sector,14200
+2022,Tasman,Local Government,Local Government,730
+2021,Nelson,Local Government,Local Government,870
+2021,Tasman,Education Sector,State Sector,1250
+2021,Southland,Local Government,Local Government,1850
+2021,Otago,Local Government,Local Government,4050
+2021,West Coast,Local Government,Local Government,650
+2021,West Coast,Health Sector,State Sector,860
+2021,Manawatu-Wanganui,Local Government,Local Government,2000
+2021,Manawatu-Wanganui,SoEs,State Sector,1100
+2021,Gisborne,SoEs,State Sector,110
+2021,Auckland,Education Sector,State Sector,44500
+2020,Marlborough,Health Sector,State Sector,630
+2020,Nelson,Local Government,Local Government,840
+2020,Tasman,Private Sector,Private Sector,21100
+2020,Tasman,SoEs,State Sector,6
+2020,Southland,Health Sector,State Sector,1250
+2020,Manawatu-Wanganui,Health Sector,State Sector,4200
+2020,Hawkes Bay,Private Sector,Private Sector,70100
+2020,Auckland,Health Sector,State Sector,28600
+2020,Northland,Education Sector,State Sector,4900
+2019,Marlborough,Education Sector,State Sector,900
+2019,Otago,Private Sector,Private Sector,97400
+2019,Manawatu-Wanganui,Education Sector,State Sector,8900
+2019,Taranaki,Health Sector,State Sector,1750
+2019,Bay of Plenty,SoEs,State Sector,710
+2019,Auckland,Private Sector,Private Sector,675300
+2018,Hawkes Bay,Private Sector,Private Sector,68300
+2018,Waikato,Education Sector,State Sector,13300
+2017,Marlborough,Education Sector,State Sector,900
+2021,Gisborne,Education Sector,State Sector,1600
+2020,Southland,Local Government,Local Government,1950
+2020,Auckland,Private Sector,Private Sector,687300
+2019,Area Outside Regions,Education Sector,State Sector,18
+2019,Canterbury,SoEs,State Sector,5500
+2019,Gisborne,Local Government,Local Government,540
+2017,Marlborough,Private Sector,Private Sector,20200
+2017,West Coast,Local Government,Local Government,590
+2017,Taranaki,Local Government,Local Government,1350
+2017,Taranaki,Education Sector,State Sector,2800
+2017,Hawkes Bay,SoEs,State Sector,460
+2017,Bay of Plenty,Health Sector,State Sector,4100
+2017,Auckland,Health Sector,State Sector,26000
+2016,Tasman,Local Government,Local Government,510
+2016,Tasman,Education Sector,State Sector,1100
+2016,Canterbury,Health Sector,State Sector,10900
+2016,Bay of Plenty,Education Sector,State Sector,7400
+2015,Nelson,Private Sector,Private Sector,20400
+2015,West Coast,Health Sector,State Sector,870
+2015,Taranaki,Health Sector,State Sector,1500
+2015,Gisborne,SoEs,State Sector,130
+2015,Auckland,SoEs,State Sector,13400
+2014,Nelson,Education Sector,State Sector,1500
+2014,Tasman,Private Sector,Private Sector,19100
+2014,Tasman,Education Sector,State Sector,1150
+2014,Canterbury,Health Sector,State Sector,10600
+2014,Hawkes Bay,Education Sector,State Sector,4500
+2014,Gisborne,SoEs,State Sector,140
+2013,Area Outside Regions,SoEs,State Sector,0
+2013,Southland,Health Sector,State Sector,990
+2013,Canterbury,Local Government,Local Government,8200
+2013,Manawatu-Wanganui,Local Government,Local Government,1950
+2013,Taranaki,Health Sector,State Sector,1550
+2013,Hawkes Bay,Education Sector,State Sector,4450
+2012,Area Outside Regions,Education Sector,State Sector,15
+2014,Gisborne,Local Government,Local Government,450
+2012,Marlborough,Education Sector,State Sector,870
+2012,Waikato,Local Government,Local Government,3800
+2012,Northland,Education Sector,State Sector,4300
+2011,Marlborough,Private Sector,Private Sector,18000
+2011,Southland,Health Sector,State Sector,1100
+2011,Manawatu-Wanganui,Private Sector,Private Sector,73800
+2011,Taranaki,SoEs,State Sector,340
+2011,Taranaki,Health Sector,State Sector,1500
+2011,Hawkes Bay,Education Sector,State Sector,4800
+2010,Area Outside Regions,Private Sector,Private Sector,260
+2010,West Coast,Local Government,Local Government,500
+2010,Wellington,Education Sector,State Sector,15400
+2010,Manawatu-Wanganui,Local Government,Local Government,1950
+2010,Northland,Local Government,Local Government,1050
+2009,Nelson,Education Sector,State Sector,1300
+2009,Hawkes Bay,Health Sector,State Sector,2200
+2009,Waikato,SoEs,State Sector,2650
+2009,Auckland,SoEs,State Sector,14600
+2008,Area Outside Regions,Local Government,Local Government,20
+2008,Tasman,Local Government,Local Government,410
+2008,Tasman,SoEs,State Sector,35
+2022,Southland,Local Government,Local Government,1800
+2022,Canterbury,Health Sector,State Sector,13400
+2020,Wellington,Education Sector,State Sector,17400
+2019,Tasman,SoEs,State Sector,3
+2019,West Coast,Local Government,Local Government,630
+2019,Taranaki,Local Government,Local Government,1400
+2018,Southland,SoEs,State Sector,380
+2018,West Coast,Health Sector,State Sector,820
+2020,Taranaki,Health Sector,State Sector,1800
+2018,Wellington,Local Government,Local Government,5300
+2017,Canterbury,Local Government,Local Government,9100
+2017,Canterbury,Education Sector,State Sector,15800
+2017,Manawatu-Wanganui,SoEs,State Sector,1050
+2016,Tasman,Private Sector,Private Sector,18800
+2016,Otago,Local Government,Local Government,3500
+2016,Wellington,SoEs,State Sector,9500
+2016,Manawatu-Wanganui,Education Sector,State Sector,8300
+2016,Taranaki,Education Sector,State Sector,2950
+2016,Bay of Plenty,Local Government,Local Government,2800
+2016,Northland,Private Sector,Private Sector,45500
+2015,Hawkes Bay,Private Sector,Private Sector,62300
+2014,Marlborough,Health Sector,State Sector,320
+2014,Nelson,SoEs,State Sector,400
+2014,Southland,Private Sector,Private Sector,40800
+2014,Southland,SoEs,State Sector,550
+2014,Otago,Health Sector,State Sector,3550
+2014,West Coast,Local Government,Local Government,540
+2014,Wellington,SoEs,State Sector,10100
+2014,Gisborne,Private Sector,Private Sector,16900
+2014,Northland,Local Government,Local Government,1050
+2013,Area Outside Regions,Private Sector,Private Sector,260
+2013,Marlborough,Education Sector,State Sector,850
+2013,Nelson,Local Government,Local Government,670
+2013,Canterbury,SoEs,State Sector,5500
+2013,Canterbury,Health Sector,State Sector,10300
+2013,Wellington,Education Sector,State Sector,15200
+2013,Gisborne,Local Government,Local Government,430
+2013,Bay of Plenty,Local Government,Local Government,2600
+2013,Bay of Plenty,Education Sector,State Sector,7000
+2016,Auckland,SoEs,State Sector,13200
+2014,Canterbury,Local Government,Local Government,8700
+2013,Auckland,Education Sector,State Sector,38900
+2012,Otago,Private Sector,Private Sector,78500
+2012,Wellington,Private Sector,Private Sector,165200
+2012,Wellington,Health Sector,State Sector,8500
+2011,Area Outside Regions,Education Sector,State Sector,12
+2011,Marlborough,Local Government,Local Government,320
+2011,Nelson,Local Government,Local Government,650
+2011,Tasman,Private Sector,Private Sector,16700
+2011,Tasman,SoEs,State Sector,35
+2011,Southland,SoEs,State Sector,540
+2011,West Coast,Local Government,Local Government,550
+2011,Hawkes Bay,Local Government,Local Government,1950
+2011,Auckland,Private Sector,Private Sector,521100
+2011,Auckland,Local Government,Local Government,10000
+2010,Nelson,Local Government,Local Government,630
+2010,Otago,Private Sector,Private Sector,78500
+2010,Taranaki,SoEs,State Sector,340
+2010,Waikato,SoEs,State Sector,2600
+2009,Area Outside Regions,Local Government,Local Government,21
+2009,Nelson,Local Government,Local Government,590
+2009,Otago,Local Government,Local Government,3400
+2009,Canterbury,SoEs,State Sector,5100
+2009,Wellington,Health Sector,State Sector,8100
+2008,Nelson,Private Sector,Private Sector,20300
+2008,Nelson,SoEs,State Sector,420
+2008,Southland,Private Sector,Private Sector,41600
+2008,West Coast,Local Government,Local Government,450
+2008,Waikato,SoEs,State Sector,2250
+2007,Nelson,Health Sector,State Sector,1400
+2011,Manawatu-Wanganui,Local Government,Local Government,1950
+2010,Northland,Education Sector,State Sector,4350
+2009,Marlborough,SoEs,State Sector,670
+2017,Wellington,Local Government,Local Government,5200
+2014,Taranaki,SoEs,State Sector,310
+2013,Tasman,Local Government,Local Government,460
+2012,Bay of Plenty,Local Government,Local Government,2450
+2010,Southland,Health Sector,State Sector,1100
+2008,Auckland,Health Sector,State Sector,19800
+2008,Manawatu-Wanganui,Education Sector,State Sector,8500
+2007,Marlborough,Health Sector,State Sector,490
+2007,Otago,Private Sector,Private Sector,81000
+2007,Taranaki,SoEs,State Sector,360
+2007,Gisborne,Education Sector,State Sector,1500
+2007,Auckland,SoEs,State Sector,13500
+2007,Auckland,Health Sector,State Sector,19000
+2006,Marlborough,Local Government,Local Government,290
+2006,Tasman,Private Sector,Private Sector,16900
+2006,Southland,Health Sector,State Sector,1150
+2006,Otago,Private Sector,Private Sector,79400
+2006,Otago,SoEs,State Sector,1150
+2006,Canterbury,Private Sector,Private Sector,209400
+2006,Canterbury,Local Government,Local Government,7000
+2006,Taranaki,Education Sector,State Sector,2800
+2006,Northland,Private Sector,Private Sector,44300
+2005,Marlborough,Private Sector,Private Sector,18100
+2005,Nelson,SoEs,State Sector,440
+2005,Nelson,Education Sector,State Sector,1300
+2005,Tasman,SoEs,State Sector,35
+2005,Otago,Local Government,Local Government,2800
+2005,West Coast,Education Sector,State Sector,780
+2005,Taranaki,Local Government,Local Government,1450
+2005,Gisborne,Education Sector,State Sector,1500
+2005,Bay of Plenty,Local Government,Local Government,1900
+2005,Auckland,Local Government,Local Government,9700
+2004,Nelson,Private Sector,Private Sector,19400
+2004,Tasman,SoEs,State Sector,30
+2004,Southland,Private Sector,Private Sector,38600
+2004,Otago,SoEs,State Sector,1050
+2004,Taranaki,Private Sector,Private Sector,37800
+2004,Gisborne,Local Government,Local Government,360
+2003,Otago,Private Sector,Private Sector,71200
+2003,Canterbury,Local Government,Local Government,6000
+2003,Manawatu-Wanganui,Local Government,Local Government,1650
+2003,Hawkes Bay,SoEs,State Sector,560
+2003,Gisborne,Local Government,Local Government,350
+2003,Northland,Private Sector,Private Sector,40500
+2003,Northland,Education Sector,State Sector,3800
+2002,Nelson,Health Sector,State Sector,1300
+2002,Otago,Health Sector,State Sector,3400
+2005,Auckland,Private Sector,Private Sector,509000
+2005,Northland,Education Sector,State Sector,3750
+2003,Area Outside Regions,Health Sector,State Sector,12
+2003,Bay of Plenty,Education Sector,State Sector,6300
+2002,West Coast,Local Government,Local Government,360
+2002,Wellington,Private Sector,Private Sector,157200
+2002,Wellington,SoEs,State Sector,6900
+2002,Gisborne,Education Sector,State Sector,1450
+2002,Northland,Private Sector,Private Sector,38200
+2001,Marlborough,Local Government,Local Government,230
+2001,Tasman,Private Sector,Private Sector,14700
+2001,Otago,Private Sector,Private Sector,64800
+2001,Wellington,Health Sector,State Sector,6900
+2001,Manawatu-Wanganui,Health Sector,State Sector,3650
+2001,Manawatu-Wanganui,Education Sector,State Sector,8700
+2001,Taranaki,SoEs,State Sector,380
+2001,Bay of Plenty,Education Sector,State Sector,6000
+2001,Waikato,Private Sector,Private Sector,111700
+2000,Marlborough,Education Sector,State Sector,820
+2000,Nelson,Private Sector,Private Sector,17400
+2000,Taranaki,Private Sector,Private Sector,33000
+2000,Hawkes Bay,Education Sector,State Sector,3650
+2000,Auckland,Education Sector,State Sector,30200
+2000,Northland,Health Sector,State Sector,1800
+2002,Southland,Public Service,State Sector,509
+2002,Taranaki,Public Service,State Sector,393
+2010,Northland,Public Service,State Sector,1257
+2013,Tasman,Public Service,State Sector,33
+2005,Wellington,SoEs,State Sector,7800
+2004,Waikato,Education Sector,State Sector,12600
+2003,Otago,SoEs,State Sector,1100
+2000,Wellington,Private Sector,Private Sector,155000
+2000,Hawkes Bay,SoEs,State Sector,660
+2000,West Coast,Education Sector,State Sector,850
+2006,Canterbury,Public Service,State Sector,3994
+2007,Overseas,Public Service,State Sector,272
+2023,Southland,Other Government Entities,State Sector,354
+2022,Nelson,Other Government Entities,State Sector,457
+2022,Gisborne,Other Government Entities,State Sector,316
+2021,Auckland,Other Government Entities,State Sector,14142
+2020,Marlborough,Other Government Entities,State Sector,670
+2019,Auckland,Other Government Entities,State Sector,13138
+2018,Nelson,Other Government Entities,State Sector,491
+2018,Canterbury,Other Government Entities,State Sector,4916
+2018,Taranaki,Other Government Entities,State Sector,466
+2018,Auckland,Other Government Entities,State Sector,12596
+2017,Nelson,Other Government Entities,State Sector,366
+2018,West Coast,Other Government Entities,State Sector,172
+2017,Waikato,Other Government Entities,State Sector,1651
+2017,Northland,Other Government Entities,State Sector,681
+2016,Area Outside Regions,Other Government Entities,State Sector,35
+2016,Waikato,Other Government Entities,State Sector,2054
+2015,Gisborne,Other Government Entities,State Sector,286
+2014,Bay of Plenty,Other Government Entities,State Sector,1552
+2013,Southland,Other Government Entities,State Sector,291
+2013,Canterbury,Other Government Entities,State Sector,4032
+2016,Manawatu-Wanganui,Other Government Entities,State Sector,5882
+2012,Southland,Other Government Entities,State Sector,399
+2012,Manawatu-Wanganui,Other Government Entities,State Sector,5128
+2011,Marlborough,Other Government Entities,State Sector,725
+2009,Nelson,Other Government Entities,State Sector,285
+2008,Manawatu-Wanganui,Other Government Entities,State Sector,5434
+2008,Hawkes Bay,Other Government Entities,State Sector,1181
+2008,Auckland,Other Government Entities,State Sector,10694
+2007,Area Outside Regions,Other Government Entities,State Sector,25
+2007,Gisborne,Other Government Entities,State Sector,249
+2006,Taranaki,Other Government Entities,State Sector,252
+2005,Marlborough,Other Government Entities,State Sector,565
+2005,Waikato,Other Government Entities,State Sector,1567
+2004,Marlborough,Other Government Entities,State Sector,536
+2002,Nelson,Other Government Entities,State Sector,166
+2004,Northland,Other Government Entities,State Sector,569
+2003,Area Outside Regions,Other Government Entities,State Sector,80
+2002,Wellington,Other Government Entities,State Sector,10015
+2002,Gisborne,Other Government Entities,State Sector,120
+2002,Auckland,Other Government Entities,State Sector,8845
+2001,Bay of Plenty,Other Government Entities,State Sector,1398
+2001,Northland,Other Government Entities,State Sector,469
+2000,Gisborne,Other Government Entities,State Sector,234
+2000,Bay of Plenty,Other Government Entities,State Sector,1423
+2012,Overseas,Public Service,State Sector,279
+2001,Overseas,Public Service,State Sector,228
+2007,Auckland,Public Service,State Sector,8901
+2012,Gisborne,Public Service,State Sector,263
+2003,Southland,Public Service,State Sector,538
+2009,Bay of Plenty,Public Service,State Sector,1503
+2014,Northland,Public Service,State Sector,1264
+2003,Bay of Plenty,Public Service,State Sector,1021
+2005,Nelson,Public Service,State Sector,329
+2007,Marlborough,Public Service,State Sector,333
+2010,Overseas,Public Service,State Sector,302
+2020,Waikato,Public Service,State Sector,4385
+2019,Hawkes Bay,Public Service,State Sector,1286
+2006,Waikato,Public Service,State Sector,3033
+2008,Gisborne,Public Service,State Sector,262
+2012,Area Outside Regions,Public Service,State Sector,0
+2022,Auckland,Public Service,State Sector,12810
+2019,Auckland,Public Service,State Sector,10962
+2016,Area Outside Regions,Public Service,State Sector,0
+2006,Area Outside Regions,Public Service,State Sector,0
+2011,Waikato,Public Service,State Sector,3681
+2014,Nelson,Public Service,State Sector,508
+2018,Hawkes Bay,Public Service,State Sector,1227
+2001,Waikato,Public Service,State Sector,2630
+2003,Wellington,Public Service,State Sector,13912
+2008,Northland,Public Service,State Sector,1301
+2004,Waikato,Public Service,State Sector,2904
+2021,Canterbury,Public Service,State Sector,5767
+2011,Bay of Plenty,Public Service,State Sector,1724
+2017,Hawkes Bay,Public Service,State Sector,1204
+2009,Hawkes Bay,Public Service,State Sector,1164
+2019,Waikato,Public Service,State Sector,4120
+2010,Canterbury,Public Service,State Sector,4479
+2014,West Coast,Public Service,State Sector,236
+2000,Manawatu-Wanganui,Public Service,State Sector,1383
+2020,Wellington,Public Service,State Sector,25941
+2020,Manawatu-Wanganui,Public Service,State Sector,2392
+2011,Nelson,Public Service,State Sector,555
+2014,Gisborne,Public Service,State Sector,263
+2015,Southland,Public Service,State Sector,611
+2005,Area Outside Regions,Public Service,State Sector,0
+2003,West Coast,Public Service,State Sector,242
+2000,Northland,Education Sector,State Sector,3750
+2023,Area Outside Regions,Private Sector,Private Sector,300
+2023,Area Outside Regions,Education Sector,State Sector,15
+2023,Marlborough,Private Sector,Private Sector,21100
+2023,Marlborough,Health Sector,State Sector,700
+2023,Tasman,SoEs,State Sector,6
+2023,Southland,SoEs,State Sector,430
+2023,Manawatu-Wanganui,Local Government,Local Government,2200
+2023,Manawatu-Wanganui,Health Sector,State Sector,4750
+2023,Northland,Local Government,Local Government,1550
+2023,Northland,SoEs,State Sector,440
+2023,Marlborough,Education Sector,State Sector,1050
+2023,Nelson,Health Sector,State Sector,1950
+2023,West Coast,SoEs,State Sector,250
+2023,Wellington,SoEs,State Sector,9500
+2022,Nelson,Education Sector,State Sector,1750
+2022,Tasman,Education Sector,State Sector,1200
+2022,Southland,Private Sector,Private Sector,43600
+2022,Canterbury,Local Government,Local Government,9400
+2022,Auckland,Local Government,Local Government,12400
+2022,Auckland,Education Sector,State Sector,44800
+2023,Gisborne,Health Sector,State Sector,1200
+2022,Auckland,Health Sector,State Sector,31800
+2021,Area Outside Regions,Health Sector,State Sector,12
+2021,Marlborough,Local Government,Local Government,500
+2021,Nelson,Education Sector,State Sector,1750
+2021,Canterbury,Local Government,Local Government,9300
+2021,West Coast,SoEs,State Sector,230
+2021,Wellington,Education Sector,State Sector,17800
+2021,Taranaki,Private Sector,Private Sector,44800
+2021,Hawkes Bay,SoEs,State Sector,700
+2021,Gisborne,Private Sector,Private Sector,19100
+2021,Gisborne,Health Sector,State Sector,1100
+2021,Bay of Plenty,Private Sector,Private Sector,117600
+2021,Northland,Private Sector,Private Sector,51800
+2020,Area Outside Regions,Health Sector,State Sector,12
+2020,Marlborough,Private Sector,Private Sector,21700
+2020,Otago,Local Government,Local Government,4150
+2020,Bay of Plenty,SoEs,State Sector,740
+2020,Waikato,Health Sector,State Sector,8800
+2020,Northland,Local Government,Local Government,1400
+2019,Marlborough,Private Sector,Private Sector,21300
+2019,Nelson,Local Government,Local Government,820
+2019,West Coast,Private Sector,Private Sector,11700
+2019,Wellington,Local Government,Local Government,5500
+2019,Taranaki,SoEs,State Sector,250
+2018,Marlborough,SoEs,State Sector,160
+2018,Taranaki,Education Sector,State Sector,3000
+2018,Gisborne,Health Sector,State Sector,980
+2021,Waikato,Private Sector,Private Sector,170000
+2020,Taranaki,Education Sector,State Sector,3300
+2020,Waikato,SoEs,State Sector,2750
+2018,Southland,Health Sector,State Sector,1300
+2018,Taranaki,SoEs,State Sector,260
+2017,Tasman,Private Sector,Private Sector,19000
+2017,Otago,Health Sector,State Sector,3450
+2017,Otago,Education Sector,State Sector,9300
+2017,Gisborne,Education Sector,State Sector,1450
+2017,Northland,SoEs,State Sector,620
+2016,Area Outside Regions,Private Sector,Private Sector,270
+2016,Marlborough,SoEs,State Sector,240
+2016,Southland,Local Government,Local Government,2000
+2016,Taranaki,SoEs,State Sector,270
+2016,Taranaki,Health Sector,State Sector,1600
+2016,Gisborne,Local Government,Local Government,500
+2015,Area Outside Regions,Education Sector,State Sector,12
+2015,Hawkes Bay,SoEs,State Sector,510
+2015,Bay of Plenty,Private Sector,Private Sector,97700
+2015,Waikato,Local Government,Local Government,3650
+2014,Canterbury,Education Sector,State Sector,15600
+2014,West Coast,Education Sector,State Sector,870
+2014,Wellington,Health Sector,State Sector,8700
+2014,Taranaki,Private Sector,Private Sector,43800
+2014,Northland,SoEs,State Sector,470
+2013,Manawatu-Wanganui,Health Sector,State Sector,3500
+2013,Bay of Plenty,Private Sector,Private Sector,91000
+2012,Area Outside Regions,SoEs,State Sector,0
+2012,West Coast,Private Sector,Private Sector,12300
+2012,Northland,SoEs,State Sector,510
+2011,Marlborough,Education Sector,State Sector,820
+2011,Otago,Private Sector,Private Sector,77700
+2011,Wellington,Private Sector,Private Sector,165000
+2010,Nelson,Health Sector,State Sector,1650
+2010,Tasman,Local Government,Local Government,420
+2010,Hawkes Bay,SoEs,State Sector,610
+2010,Waikato,Education Sector,State Sector,12900
+2010,Northland,SoEs,State Sector,430
+2009,Canterbury,Local Government,Local Government,7400
+2009,Hawkes Bay,Local Government,Local Government,1900
+2008,Marlborough,Education Sector,State Sector,840
+2008,Taranaki,Education Sector,State Sector,2700
+2008,Gisborne,Private Sector,Private Sector,17700
+2008,Gisborne,SoEs,State Sector,310
+2008,Waikato,Local Government,Local Government,3700
+2023,Bay of Plenty,Education Sector,State Sector,8500
+2023,Waikato,Education Sector,State Sector,14200
+2023,Auckland,Private Sector,Private Sector,733800
+2023,Gisborne,Private Sector,Private Sector,18700
+2022,Hawkes Bay,Education Sector,State Sector,5100
+2022,Taranaki,Private Sector,Private Sector,45700
+2022,Gisborne,Education Sector,State Sector,1600
+2021,Tasman,Health Sector,State Sector,170
+2021,Southland,SoEs,State Sector,400
+2021,Otago,SoEs,State Sector,1250
+2021,Taranaki,Health Sector,State Sector,1900
+2021,Auckland,Local Government,Local Government,12100
+2020,Hawkes Bay,Health Sector,State Sector,2750
+2019,Canterbury,Education Sector,State Sector,16700
+2018,Marlborough,Health Sector,State Sector,650
+2018,Gisborne,Education Sector,State Sector,1500
+2019,Marlborough,SoEs,State Sector,180
+2017,Tasman,Health Sector,State Sector,140
+2017,Wellington,Health Sector,State Sector,8700
+2017,Hawkes Bay,Private Sector,Private Sector,65900
+2017,Hawkes Bay,Local Government,Local Government,2000
+2017,Gisborne,Local Government,Local Government,560
+2017,Northland,Local Government,Local Government,1200
+2016,Nelson,Education Sector,State Sector,1550
+2016,Canterbury,Private Sector,Private Sector,239900
+2016,West Coast,SoEs,State Sector,420
+2016,Manawatu-Wanganui,Health Sector,State Sector,3850
+2016,Waikato,SoEs,State Sector,2700
+2015,Tasman,SoEs,State Sector,18
+2015,Canterbury,Health Sector,State Sector,10800
+2015,Wellington,Education Sector,State Sector,15900
+2015,Taranaki,SoEs,State Sector,310
+2015,Bay of Plenty,Health Sector,State Sector,3900
+2015,Auckland,Local Government,Local Government,11500
+2014,Hawkes Bay,Private Sector,Private Sector,62500
+2014,Waikato,Local Government,Local Government,3700
+2013,Marlborough,Local Government,Local Government,330
+2013,West Coast,Education Sector,State Sector,860
+2013,Wellington,Health Sector,State Sector,8700
+2013,Taranaki,Education Sector,State Sector,2950
+2013,Waikato,Local Government,Local Government,3700
+2013,Waikato,Health Sector,State Sector,6800
+2013,Waikato,Education Sector,State Sector,12700
+2013,Northland,SoEs,State Sector,460
+2012,Area Outside Regions,Health Sector,State Sector,15
+2012,Nelson,Local Government,Local Government,660
+2013,Tasman,Health Sector,State Sector,80
+2012,Nelson,Health Sector,State Sector,1550
+2012,Otago,Health Sector,State Sector,3550
+2012,Canterbury,SoEs,State Sector,5600
+2012,Canterbury,Education Sector,State Sector,15300
+2012,Manawatu-Wanganui,Health Sector,State Sector,3400
+2012,Gisborne,SoEs,State Sector,150
+2012,Bay of Plenty,SoEs,State Sector,900
+2012,Auckland,Education Sector,State Sector,41100
+2011,Nelson,Health Sector,State Sector,1400
+2011,Gisborne,Health Sector,State Sector,870
+2011,Bay of Plenty,Local Government,Local Government,2450
+2011,Auckland,Health Sector,State Sector,22100
+2010,Manawatu-Wanganui,SoEs,State Sector,1400
+2010,Taranaki,Education Sector,State Sector,2850
+2010,Auckland,SoEs,State Sector,14200
+2009,Area Outside Regions,SoEs,State Sector,0
+2009,Marlborough,Local Government,Local Government,350
+2009,Nelson,Private Sector,Private Sector,19800
+2009,Tasman,SoEs,State Sector,35
+2009,Wellington,Education Sector,State Sector,14600
+2009,Manawatu-Wanganui,SoEs,State Sector,1400
+2009,Manawatu-Wanganui,Health Sector,State Sector,3500
+2009,Gisborne,Health Sector,State Sector,840
+2008,Nelson,Local Government,Local Government,560
+2008,Tasman,Private Sector,Private Sector,17300
+2008,West Coast,SoEs,State Sector,580
+2008,Manawatu-Wanganui,Health Sector,State Sector,3300
+2008,Auckland,Private Sector,Private Sector,545900
+2016,Waikato,Private Sector,Private Sector,149100
+2015,Southland,Education Sector,State Sector,2550
+2013,Southland,Education Sector,State Sector,2650
+2013,Manawatu-Wanganui,Private Sector,Private Sector,73300
+2011,Hawkes Bay,SoEs,State Sector,640
+2010,Hawkes Bay,Private Sector,Private Sector,63000
+2008,Otago,Local Government,Local Government,3300
+2008,Wellington,Health Sector,State Sector,7700
+2007,Marlborough,Private Sector,Private Sector,19200
+2007,Nelson,Education Sector,State Sector,1350
+2010,Area Outside Regions,Health Sector,State Sector,15
+2010,Southland,Local Government,Local Government,1900
+2010,West Coast,SoEs,State Sector,690
+2010,Northland,Private Sector,Private Sector,43500
+2010,Northland,Health Sector,State Sector,2250
+2008,West Coast,Private Sector,Private Sector,11700
+2008,Northland,Education Sector,State Sector,4050
+2007,Canterbury,Health Sector,State Sector,9200
+2007,Canterbury,Education Sector,State Sector,14600
+2007,West Coast,Private Sector,Private Sector,11500
+2007,West Coast,Education Sector,State Sector,780
+2007,Waikato,Private Sector,Private Sector,140000
+2007,Northland,Health Sector,State Sector,1950
+2006,Nelson,Local Government,Local Government,520
+2006,Southland,Local Government,Local Government,2000
+2006,Southland,Education Sector,State Sector,2250
+2006,West Coast,Health Sector,State Sector,930
+2006,Wellington,Local Government,Local Government,4600
+2006,Wellington,SoEs,State Sector,8300
+2006,Manawatu-Wanganui,Private Sector,Private Sector,78000
+2006,Hawkes Bay,Local Government,Local Government,1750
+2006,Gisborne,Health Sector,State Sector,850
+2006,Gisborne,Education Sector,State Sector,1550
+2006,Northland,Local Government,Local Government,980
+2006,Northland,Health Sector,State Sector,2000
+2005,Canterbury,SoEs,State Sector,5100
+2005,West Coast,Health Sector,State Sector,900
+2005,Wellington,Local Government,Local Government,4450
+2005,Wellington,Education Sector,State Sector,14300
+2005,Hawkes Bay,Education Sector,State Sector,4250
+2005,Gisborne,Health Sector,State Sector,820
+2005,Bay of Plenty,SoEs,State Sector,1150
+2005,Bay of Plenty,Education Sector,State Sector,6700
+2005,Waikato,Private Sector,Private Sector,133000
+2004,Nelson,SoEs,State Sector,410
+2004,Canterbury,Private Sector,Private Sector,199700
+2004,Manawatu-Wanganui,Private Sector,Private Sector,74200
+2004,Manawatu-Wanganui,Education Sector,State Sector,8900
+2004,Taranaki,Education Sector,State Sector,3000
+2004,Hawkes Bay,Private Sector,Private Sector,61900
+2004,Hawkes Bay,Education Sector,State Sector,4250
+2004,Gisborne,Health Sector,State Sector,760
+2004,Waikato,Health Sector,State Sector,5500
+2004,Auckland,Local Government,Local Government,9300
+2003,Marlborough,Private Sector,Private Sector,16400
+2003,Southland,Education Sector,State Sector,2500
+2003,Taranaki,Health Sector,State Sector,1300
+2003,Gisborne,SoEs,State Sector,230
+2003,Bay of Plenty,Local Government,Local Government,1950
+2003,Waikato,Local Government,Local Government,2800
+2002,Area Outside Regions,SoEs,State Sector,0
+2002,Nelson,Local Government,Local Government,480
+2002,Nelson,SoEs,State Sector,450
+2002,Southland,Health Sector,State Sector,1100
+2004,Marlborough,Local Government,Local Government,280
+2002,Manawatu-Wanganui,Local Government,Local Government,1800
+2002,Taranaki,Private Sector,Private Sector,35400
+2002,Hawkes Bay,Private Sector,Private Sector,57900
+2002,Hawkes Bay,SoEs,State Sector,560
+2002,Auckland,Private Sector,Private Sector,449200
+2001,Area Outside Regions,Private Sector,Private Sector,210
+2001,Area Outside Regions,Local Government,Local Government,18
+2001,Marlborough,Health Sector,State Sector,380
+2001,Southland,SoEs,State Sector,490
+2001,Otago,Health Sector,State Sector,3250
+2001,Canterbury,Education Sector,State Sector,14700
+2001,Taranaki,Local Government,Local Government,1050
+2001,Hawkes Bay,Private Sector,Private Sector,54700
+2001,Hawkes Bay,Local Government,Local Government,1600
+2001,Hawkes Bay,Health Sector,State Sector,1950
+2001,Hawkes Bay,Education Sector,State Sector,3800
+2001,Bay of Plenty,Health Sector,State Sector,3050
+2000,Southland,Health Sector,State Sector,1050
+2000,Otago,Education Sector,State Sector,8400
+2000,Canterbury,SoEs,State Sector,2850
+2000,Manawatu-Wanganui,Education Sector,State Sector,8600
+2000,Taranaki,SoEs,State Sector,410
+2000,Taranaki,Education Sector,State Sector,3150
+2000,Bay of Plenty,Education Sector,State Sector,5900
+2000,Waikato,Local Government,Local Government,2550
+2003,Marlborough,Public Service,State Sector,211
+2006,Marlborough,Public Service,State Sector,251
+2013,Auckland,Public Service,State Sector,9353
+2016,Wellington,Public Service,State Sector,19807
+2013,Overseas,Public Service,State Sector,251
+2015,Overseas,Public Service,State Sector,285
+2007,Canterbury,Public Service,State Sector,4136
+2022,Manawatu-Wanganui,Public Service,State Sector,2292
+2019,Marlborough,Public Service,State Sector,140
+2007,Canterbury,Local Government,Local Government,7000
+2006,Waikato,Health Sector,State Sector,5900
+2004,Wellington,Education Sector,State Sector,14300
+2003,Manawatu-Wanganui,Health Sector,State Sector,3700
+2001,Auckland,Health Sector,State Sector,16800
+2001,Northland,Education Sector,State Sector,3750
+2001,Wellington,SoEs,State Sector,6400
+2020,Otago,Public Service,State Sector,1482
+2010,Nelson,Public Service,State Sector,569
+2011,Overseas,Public Service,State Sector,314
+2017,Marlborough,Public Service,State Sector,169
+2006,Otago,Public Service,State Sector,1118
+2005,Bay of Plenty,Public Service,State Sector,1286
+2003,Hawkes Bay,Public Service,State Sector,936
+2023,West Coast,Other Government Entities,State Sector,188
+2023,Hawkes Bay,Other Government Entities,State Sector,963
+2022,Bay of Plenty,Other Government Entities,State Sector,1652
+2022,Hawkes Bay,Other Government Entities,State Sector,900
+2021,Tasman,Other Government Entities,State Sector,175
+2021,Taranaki,Other Government Entities,State Sector,344
+2020,Canterbury,Other Government Entities,State Sector,4836
+2020,Northland,Other Government Entities,State Sector,977
+2019,Manawatu-Wanganui,Other Government Entities,State Sector,7019
+2021,Gisborne,Other Government Entities,State Sector,305
+2018,Wellington,Other Government Entities,State Sector,14214
+2017,Taranaki,Other Government Entities,State Sector,340
+2016,West Coast,Other Government Entities,State Sector,44
+2015,Otago,Other Government Entities,State Sector,1246
+2015,Waikato,Other Government Entities,State Sector,1953
+2014,Southland,Other Government Entities,State Sector,367
+2014,Taranaki,Other Government Entities,State Sector,296
+2013,Hawkes Bay,Other Government Entities,State Sector,776
+2015,Marlborough,Other Government Entities,State Sector,777
+2015,Manawatu-Wanganui,Other Government Entities,State Sector,5748
+2012,Otago,Other Government Entities,State Sector,1210
+2011,Tasman,Other Government Entities,State Sector,213
+2011,Manawatu-Wanganui,Other Government Entities,State Sector,5515
+2011,Hawkes Bay,Other Government Entities,State Sector,842
+2011,Auckland,Other Government Entities,State Sector,13948
+2010,Southland,Other Government Entities,State Sector,368
+2010,Otago,Other Government Entities,State Sector,757
+2010,Hawkes Bay,Other Government Entities,State Sector,713
+2008,Southland,Other Government Entities,State Sector,337
+2008,Gisborne,Other Government Entities,State Sector,258
+2010,Northland,Other Government Entities,State Sector,443
+2007,Taranaki,Other Government Entities,State Sector,350
+2004,Area Outside Regions,Other Government Entities,State Sector,80
+2003,Tasman,Other Government Entities,State Sector,128
+2003,Canterbury,Other Government Entities,State Sector,4261
+2003,West Coast,Other Government Entities,State Sector,188
+2003,Taranaki,Other Government Entities,State Sector,205
+2003,Gisborne,Other Government Entities,State Sector,242
+2003,Southland,Other Government Entities,State Sector,392
+2002,Taranaki,Other Government Entities,State Sector,247
+2001,Southland,Other Government Entities,State Sector,397
+2001,Hawkes Bay,Other Government Entities,State Sector,695
+2000,Taranaki,Other Government Entities,State Sector,235
+2000,Hawkes Bay,Other Government Entities,State Sector,767
+2015,Area Outside Regions,Other Government Entities,State Sector,35
+2014,Canterbury,Public Service,State Sector,4568
+2005,Manawatu-Wanganui,Public Service,State Sector,1750
+2007,Hawkes Bay,Public Service,State Sector,1126
+2009,Southland,Public Service,State Sector,717
+2009,Tasman,Public Service,State Sector,41
+2007,Area Outside Regions,Public Service,State Sector,0
+2018,Taranaki,Public Service,State Sector,394
+2010,Auckland,Public Service,State Sector,9429
+2011,Otago,Public Service,State Sector,1388
+2016,Manawatu-Wanganui,Public Service,State Sector,2018
+2003,Northland,Public Service,State Sector,776
+2007,Bay of Plenty,Public Service,State Sector,1468
+2009,Otago,Public Service,State Sector,1445
+2020,Nelson,Public Service,State Sector,431
+2002,Canterbury,Public Service,State Sector,3455
+2008,Canterbury,Public Service,State Sector,4324
+2008,Waikato,Public Service,State Sector,3082
+2009,West Coast,Public Service,State Sector,292
+2022,Southland,Public Service,State Sector,700
+2022,Northland,Public Service,State Sector,1615
+2011,Northland,Public Service,State Sector,1239
+2011,Tasman,Public Service,State Sector,27
+2015,Tasman,Public Service,State Sector,39
+2004,Hawkes Bay,Public Service,State Sector,1141
+2005,Gisborne,Public Service,State Sector,250
+2007,Northland,Public Service,State Sector,1332
+2023,Manawatu-Wanganui,Public Service,State Sector,2314
+2022,Nelson,Public Service,State Sector,463
+2005,Northland,Public Service,State Sector,1076
+2001,Auckland,Public Service,State Sector,6049
+2010,Waikato,Public Service,State Sector,3798
+2010,Unknown,Public Service,State Sector,36
+2016,Bay of Plenty,Public Service,State Sector,1691
+2006,West Coast,Public Service,State Sector,253
+2008,Taranaki,Public Service,State Sector,531
+2017,Taranaki,Public Service,State Sector,390
+2023,Tasman,Public Service,State Sector,157
+2017,Wellington,Public Service,State Sector,20357
+2018,Southland,Public Service,State Sector,608
+2023,Nelson,Local Government,Local Government,970
+2023,Canterbury,Health Sector,State Sector,13900
+2023,Taranaki,Education Sector,State Sector,3400
+2023,Gisborne,Education Sector,State Sector,1650
+2022,Otago,Local Government,Local Government,4100
+2023,Manawatu-Wanganui,Education Sector,State Sector,9100
+2022,Area Outside Regions,Private Sector,Private Sector,350
+2022,Marlborough,Local Government,Local Government,490
+2022,Hawkes Bay,Local Government,Local Government,2150
+2021,Area Outside Regions,Private Sector,Private Sector,270
+2023,Taranaki,Health Sector,State Sector,2150
+2022,Canterbury,Private Sector,Private Sector,258900
+2022,West Coast,Private Sector,Private Sector,11000
+2022,Hawkes Bay,Health Sector,State Sector,3250
+2022,Bay of Plenty,Local Government,Local Government,3500
+2022,Waikato,Health Sector,State Sector,9500
+2022,Wellington,Education Sector,State Sector,18400
+2022,Taranaki,Health Sector,State Sector,2100
+2022,Northland,Education Sector,State Sector,5000
+2021,Marlborough,SoEs,State Sector,160
+2021,Marlborough,Health Sector,State Sector,650
+2021,Wellington,Private Sector,Private Sector,184400
+2021,Waikato,SoEs,State Sector,2800
+2020,Area Outside Regions,Local Government,Local Government,25
+2020,Otago,Education Sector,State Sector,9900
+2020,Canterbury,Local Government,Local Government,9400
+2020,West Coast,Local Government,Local Government,640
+2020,Taranaki,Local Government,Local Government,1450
+2019,Area Outside Regions,Health Sector,State Sector,12
+2019,Nelson,Education Sector,State Sector,1600
+2019,Tasman,Private Sector,Private Sector,21200
+2019,Southland,Private Sector,Private Sector,43000
+2019,Southland,Health Sector,State Sector,1350
+2019,Otago,SoEs,State Sector,1300
+2019,Northland,Health Sector,State Sector,3300
+2018,Marlborough,Local Government,Local Government,450
+2018,Auckland,Health Sector,State Sector,26500
+2017,Marlborough,Health Sector,State Sector,410
+2020,Nelson,Health Sector,State Sector,1700
+2020,Gisborne,Health Sector,State Sector,1100
+2020,Auckland,Education Sector,State Sector,44600
+2019,Tasman,Health Sector,State Sector,150
+2019,Gisborne,SoEs,State Sector,95
+2018,Manawatu-Wanganui,Local Government,Local Government,1850
+2018,Hawkes Bay,Local Government,Local Government,2100
+2017,Otago,Local Government,Local Government,3500
+2017,West Coast,Health Sector,State Sector,790
+2017,Taranaki,Health Sector,State Sector,1650
+2017,Gisborne,Private Sector,Private Sector,17300
+2017,Gisborne,SoEs,State Sector,100
+2017,Auckland,Education Sector,State Sector,42600
+2016,Tasman,Health Sector,State Sector,140
+2016,Otago,Health Sector,State Sector,3400
+2016,Wellington,Private Sector,Private Sector,171300
+2016,Gisborne,Private Sector,Private Sector,17400
+2016,Auckland,Private Sector,Private Sector,610800
+2016,Auckland,Health Sector,State Sector,25500
+2015,Tasman,Private Sector,Private Sector,18400
+2014,Area Outside Regions,Education Sector,State Sector,12
+2014,Nelson,Local Government,Local Government,670
+2014,Tasman,SoEs,State Sector,25
+2014,Wellington,Education Sector,State Sector,15400
+2014,Taranaki,Local Government,Local Government,1350
+2014,Waikato,SoEs,State Sector,2750
+2014,Auckland,Private Sector,Private Sector,562200
+2013,Nelson,SoEs,State Sector,390
+2013,Southland,Local Government,Local Government,1950
+2013,Wellington,SoEs,State Sector,10200
+2013,Hawkes Bay,SoEs,State Sector,610
+2013,Auckland,Local Government,Local Government,10800
+2013,Northland,Health Sector,State Sector,2350
+2014,Otago,Private Sector,Private Sector,81000
+2014,Taranaki,Education Sector,State Sector,2950
+2014,Gisborne,Health Sector,State Sector,880
+2012,Southland,Health Sector,State Sector,1000
+2012,Canterbury,Private Sector,Private Sector,209500
+2012,West Coast,Local Government,Local Government,550
+2012,Hawkes Bay,Education Sector,State Sector,4650
+2011,Nelson,SoEs,State Sector,400
+2011,Canterbury,SoEs,State Sector,5100
+2010,Area Outside Regions,Local Government,Local Government,25
+2010,Area Outside Regions,SoEs,State Sector,0
+2010,Marlborough,SoEs,State Sector,640
+2010,Wellington,Local Government,Local Government,4850
+2010,Manawatu-Wanganui,Education Sector,State Sector,8600
+2009,Canterbury,Education Sector,State Sector,15300
+2009,Manawatu-Wanganui,Education Sector,State Sector,8400
+2008,Marlborough,SoEs,State Sector,550
+2008,Southland,Health Sector,State Sector,1150
+2008,Hawkes Bay,Local Government,Local Government,1850
+2008,Auckland,Education Sector,State Sector,38300
+2007,Area Outside Regions,Private Sector,Private Sector,240
+2007,Manawatu-Wanganui,Education Sector,State Sector,8700
+2006,Nelson,Education Sector,State Sector,1200
+2006,Taranaki,Health Sector,State Sector,1450
+2022,Wellington,Health Sector,State Sector,10600
+2021,Taranaki,SoEs,State Sector,250
+2021,Bay of Plenty,Local Government,Local Government,3350
+2021,Auckland,Private Sector,Private Sector,676100
+2020,Waikato,Private Sector,Private Sector,168900
+2019,Southland,Local Government,Local Government,1900
+2019,Canterbury,Local Government,Local Government,9300
+2019,Northland,Education Sector,State Sector,4750
+2018,Nelson,Local Government,Local Government,810
+2018,Wellington,SoEs,State Sector,8900
+2018,Auckland,Education Sector,State Sector,44600
+2017,Area Outside Regions,Health Sector,State Sector,12
+2019,West Coast,SoEs,State Sector,250
+2018,Nelson,Health Sector,State Sector,1500
+2018,Gisborne,Private Sector,Private Sector,17900
+2017,Canterbury,Private Sector,Private Sector,243000
+2017,Canterbury,SoEs,State Sector,5100
+2017,West Coast,SoEs,State Sector,450
+2017,West Coast,Education Sector,State Sector,860
+2017,Manawatu-Wanganui,Education Sector,State Sector,8400
+2017,Hawkes Bay,Health Sector,State Sector,2400
+2017,Waikato,Education Sector,State Sector,12900
+2017,Northland,Education Sector,State Sector,4450
+2016,Area Outside Regions,Local Government,Local Government,25
+2016,Canterbury,SoEs,State Sector,5300
+2016,West Coast,Education Sector,State Sector,850
+2015,Nelson,Local Government,Local Government,660
+2015,Hawkes Bay,Health Sector,State Sector,2250
+2015,Northland,SoEs,State Sector,460
+2014,Otago,Local Government,Local Government,3350
+2014,West Coast,SoEs,State Sector,460
+2014,Wellington,Private Sector,Private Sector,167900
+2014,Bay of Plenty,Education Sector,State Sector,7100
+2013,Area Outside Regions,Local Government,Local Government,35
+2013,Nelson,Private Sector,Private Sector,19700
+2013,Nelson,Education Sector,State Sector,1500
+2013,Tasman,Education Sector,State Sector,1200
+2013,Otago,Health Sector,State Sector,3600
+2013,West Coast,Health Sector,State Sector,950
+2012,Tasman,Health Sector,State Sector,140
+2012,Otago,Education Sector,State Sector,9500
+2012,Canterbury,Local Government,Local Government,7500
+2012,Canterbury,Health Sector,State Sector,10000
+2012,Auckland,SoEs,State Sector,14200
+2012,Auckland,Health Sector,State Sector,22700
+2011,Tasman,Local Government,Local Government,420
+2011,Wellington,SoEs,State Sector,10200
+2011,Gisborne,Education Sector,State Sector,1350
+2010,Marlborough,Local Government,Local Government,370
+2010,Tasman,Private Sector,Private Sector,16400
+2010,Canterbury,SoEs,State Sector,5000
+2010,Wellington,SoEs,State Sector,10600
+2010,Gisborne,Local Government,Local Government,450
+2010,Gisborne,Health Sector,State Sector,840
+2009,Otago,Private Sector,Private Sector,80800
+2009,West Coast,SoEs,State Sector,690
+2009,West Coast,Health Sector,State Sector,1000
+2009,Wellington,SoEs,State Sector,10400
+2009,Hawkes Bay,SoEs,State Sector,710
+2009,Waikato,Education Sector,State Sector,12000
+2008,Otago,Private Sector,Private Sector,82800
+2008,Taranaki,Private Sector,Private Sector,42200
+2008,Gisborne,Education Sector,State Sector,1400
+2007,Tasman,Health Sector,State Sector,210
+2007,Southland,SoEs,State Sector,480
+2011,Bay of Plenty,SoEs,State Sector,950
+2011,Northland,SoEs,State Sector,610
+2010,Hawkes Bay,Health Sector,State Sector,2200
+2007,Marlborough,Education Sector,State Sector,780
+2007,Wellington,Local Government,Local Government,4500
+2006,Marlborough,SoEs,State Sector,530
+2006,Marlborough,Education Sector,State Sector,760
+2006,Tasman,Local Government,Local Government,420
+2006,West Coast,Local Government,Local Government,420
+2020,Wellington,Private Sector,Private Sector,186900
+2018,Hawkes Bay,Health Sector,State Sector,2500
+2014,Manawatu-Wanganui,Health Sector,State Sector,3500
+2010,Wellington,Private Sector,Private Sector,166800
+2008,Otago,SoEs,State Sector,1100
+2007,Taranaki,Private Sector,Private Sector,40800
+2007,Taranaki,Health Sector,State Sector,1450
+2006,Nelson,Health Sector,State Sector,1450
+2006,Hawkes Bay,Private Sector,Private Sector,63900
+2006,Hawkes Bay,SoEs,State Sector,580
+2006,Hawkes Bay,Education Sector,State Sector,4250
+2006,Gisborne,Local Government,Local Government,360
+2006,Gisborne,SoEs,State Sector,320
+2006,Waikato,SoEs,State Sector,2400
+2006,Waikato,Education Sector,State Sector,11700
+2006,Auckland,Health Sector,State Sector,19500
+2006,Northland,SoEs,State Sector,420
+2005,Tasman,Local Government,Local Government,400
+2005,Tasman,Health Sector,State Sector,200
+2005,Otago,Health Sector,State Sector,3350
+2005,Canterbury,Local Government,Local Government,6700
+2005,Canterbury,Education Sector,State Sector,15500
+2005,Taranaki,Private Sector,Private Sector,38900
+2005,Northland,SoEs,State Sector,400
+2004,Area Outside Regions,Private Sector,Private Sector,210
+2004,Marlborough,SoEs,State Sector,510
+2004,Marlborough,Health Sector,State Sector,490
+2004,Nelson,Local Government,Local Government,510
+2004,Taranaki,Health Sector,State Sector,1300
+2004,Gisborne,Private Sector,Private Sector,17100
+2004,Bay of Plenty,Local Government,Local Government,2000
+2004,Bay of Plenty,SoEs,State Sector,1300
+2004,Waikato,Private Sector,Private Sector,127700
+2004,Waikato,Local Government,Local Government,3000
+2004,Auckland,Health Sector,State Sector,17800
+2004,Auckland,Education Sector,State Sector,35200
+2004,Northland,Private Sector,Private Sector,41900
+2003,Nelson,SoEs,State Sector,400
+2003,Southland,Local Government,Local Government,1800
+2003,Hawkes Bay,Local Government,Local Government,1600
+2003,Bay of Plenty,Health Sector,State Sector,3300
+2003,Waikato,Private Sector,Private Sector,121800
+2002,Marlborough,SoEs,State Sector,510
+2002,Otago,Private Sector,Private Sector,68400
+2002,Otago,Education Sector,State Sector,8300
+2005,West Coast,Private Sector,Private Sector,11000
+2005,Auckland,Education Sector,State Sector,35700
+2004,Tasman,Local Government,Local Government,360
+2003,Waikato,Health Sector,State Sector,5400
+2002,Nelson,Private Sector,Private Sector,17700
+2002,Tasman,Education Sector,State Sector,1000
+2002,Canterbury,Health Sector,State Sector,8500
+2002,West Coast,Education Sector,State Sector,820
+2002,Taranaki,Education Sector,State Sector,2850
+2002,Gisborne,Local Government,Local Government,380
+2002,Northland,Education Sector,State Sector,3700
+2001,Area Outside Regions,Education Sector,State Sector,25
+2001,Marlborough,SoEs,State Sector,130
+2001,Tasman,SoEs,State Sector,20
+2001,Southland,Education Sector,State Sector,2650
+2001,West Coast,Health Sector,State Sector,910
+2001,Wellington,Local Government,Local Government,4100
+2001,Manawatu-Wanganui,Local Government,Local Government,1950
+2001,Taranaki,Health Sector,State Sector,1200
+2001,Gisborne,Health Sector,State Sector,680
+2001,Northland,Private Sector,Private Sector,35800
+2000,Marlborough,Private Sector,Private Sector,13900
+2000,Nelson,Health Sector,State Sector,1300
+2000,Canterbury,Private Sector,Private Sector,174100
+2000,Canterbury,Health Sector,State Sector,8200
+2000,Taranaki,Local Government,Local Government,1050
+2000,Waikato,SoEs,State Sector,1950
+2000,Auckland,Private Sector,Private Sector,446000
+2000,Northland,SoEs,State Sector,640
+2000,Bay of Plenty,Public Service,State Sector,877
+2003,Gisborne,Public Service,State Sector,248
+2006,Auckland,Public Service,State Sector,8539
+2011,Canterbury,Public Service,State Sector,4491
+2018,Overseas,Public Service,State Sector,326
+2004,Manawatu-Wanganui,Local Government,Local Government,1700
+2002,Nelson,Education Sector,State Sector,1400
+2010,Gisborne,Public Service,State Sector,267
+2012,Southland,Public Service,State Sector,701
+2013,West Coast,Public Service,State Sector,235
+2004,Canterbury,Public Service,State Sector,3676
+2008,Unknown,Public Service,State Sector,23
+2018,Wellington,Public Service,State Sector,21786
+2001,Southland,Public Service,State Sector,493
+2007,Southland,Public Service,State Sector,824
+2022,Bay of Plenty,Public Service,State Sector,1848
+2012,Hawkes Bay,Public Service,State Sector,1073
+2013,Manawatu-Wanganui,Public Service,State Sector,1774
+2002,Otago,Public Service,State Sector,958
+2008,West Coast,Public Service,State Sector,269
+2007,Nelson,Public Service,State Sector,287
+2022,Waikato,Other Government Entities,State Sector,2561
+2022,Southland,Other Government Entities,State Sector,300
+2021,Manawatu-Wanganui,Other Government Entities,State Sector,6775
+2020,Southland,Other Government Entities,State Sector,349
+2020,Manawatu-Wanganui,Other Government Entities,State Sector,7108
+2019,Wellington,Other Government Entities,State Sector,14138
+2019,Hawkes Bay,Other Government Entities,State Sector,864
+2018,Waikato,Other Government Entities,State Sector,2238
+2017,West Coast,Other Government Entities,State Sector,94
+2016,Taranaki,Other Government Entities,State Sector,352
+2015,Nelson,Other Government Entities,State Sector,133
+2015,West Coast,Other Government Entities,State Sector,172
+2014,Waikato,Other Government Entities,State Sector,1965
+2013,Tasman,Other Government Entities,State Sector,177
+2013,Manawatu-Wanganui,Other Government Entities,State Sector,5126
+2016,Auckland,Other Government Entities,State Sector,12594
+2012,Auckland,Other Government Entities,State Sector,13816
+2011,Southland,Other Government Entities,State Sector,343
+2011,Taranaki,Other Government Entities,State Sector,330
+2010,Canterbury,Other Government Entities,State Sector,5321
+2009,Marlborough,Other Government Entities,State Sector,397
+2009,Canterbury,Other Government Entities,State Sector,4818
+2009,West Coast,Other Government Entities,State Sector,168
+2009,Bay of Plenty,Other Government Entities,State Sector,1297
+2009,Waikato,Other Government Entities,State Sector,2302
+2008,Tasman,Other Government Entities,State Sector,130
+2007,Tasman,Other Government Entities,State Sector,76
+2010,Waikato,Other Government Entities,State Sector,2002
+2009,Auckland,Other Government Entities,State Sector,12326
+2008,Otago,Other Government Entities,State Sector,760
+2007,Marlborough,Other Government Entities,State Sector,717
+2007,Auckland,Other Government Entities,State Sector,10699
+2006,Area Outside Regions,Other Government Entities,State Sector,25
+2006,West Coast,Other Government Entities,State Sector,147
+2005,Southland,Other Government Entities,State Sector,193
+2004,Canterbury,Other Government Entities,State Sector,4224
+2003,Hawkes Bay,Other Government Entities,State Sector,764
+2002,Area Outside Regions,Other Government Entities,State Sector,75
+2002,Southland,Other Government Entities,State Sector,361
+2001,Marlborough,Other Government Entities,State Sector,657
+2000,Nelson,Other Government Entities,State Sector,216
+2000,Southland,Other Government Entities,State Sector,345
+2000,Wellington,Other Government Entities,State Sector,10094
+2004,Marlborough,Public Service,State Sector,284
+2023,Gisborne,Public Service,State Sector,299
+2013,Waikato,Public Service,State Sector,3794
+2013,Gisborne,Public Service,State Sector,262
+2001,Marlborough,Public Service,State Sector,133
+2002,Auckland,Public Service,State Sector,6455
+2005,Marlborough,Public Service,State Sector,295
+2004,Overseas,Public Service,State Sector,238
+2023,Marlborough,Public Service,State Sector,206
+2004,Otago,Public Service,State Sector,1220
+2004,Bay of Plenty,Public Service,State Sector,1319
+2023,Overseas,Public Service,State Sector,310
+2023,Taranaki,Public Service,State Sector,500
+2004,Area Outside Regions,Public Service,State Sector,0
+2023,Canterbury,Public Service,State Sector,6410
+2004,Auckland,Public Service,State Sector,7558
+2010,West Coast,Public Service,State Sector,288
+2008,Nelson,Public Service,State Sector,340
+2009,Wellington,Public Service,State Sector,19112
+2021,Tasman,Public Service,State Sector,125
+2016,Southland,Public Service,State Sector,584
+2015,West Coast,Public Service,State Sector,208
+2018,Nelson,Public Service,State Sector,369
+2019,Otago,Public Service,State Sector,1401
+2019,Area Outside Regions,Public Service,State Sector,0
+2020,Area Outside Regions,Public Service,State Sector,0
+2000,Tasman,Public Service,State Sector,84
+2005,Taranaki,Public Service,State Sector,532
+2008,Overseas,Public Service,State Sector,277
+2018,Manawatu-Wanganui,Public Service,State Sector,2157
+2000,Southland,Public Service,State Sector,515
+2000,Overseas,Public Service,State Sector,213
+2020,West Coast,Public Service,State Sector,328
+2000,Wellington,Public Service,State Sector,11606
+2002,West Coast,Public Service,State Sector,229
+2006,Bay of Plenty,Public Service,State Sector,1282
+2021,Hawkes Bay,Public Service,State Sector,1473
+2016,Auckland,Public Service,State Sector,9606
+2017,Bay of Plenty,Public Service,State Sector,1588
+2023,Nelson,Public Service,State Sector,477
+2023,Hawkes Bay,Public Service,State Sector,1487
+2020,Canterbury,Public Service,State Sector,5364
+2012,Otago,Public Service,State Sector,1340
+2013,Wellington,Public Service,State Sector,19110
+2002,Area Outside Regions,Public Service,State Sector,0
+2023,Nelson,Private Sector,Private Sector,23900
+2023,Otago,SoEs,State Sector,1600
+2023,Otago,Health Sector,State Sector,4400
+2023,West Coast,Private Sector,Private Sector,11800
+2023,Taranaki,Private Sector,Private Sector,46800
+2023,Bay of Plenty,Health Sector,State Sector,5600
+2022,Area Outside Regions,Local Government,Local Government,25
+2022,Marlborough,Education Sector,State Sector,1000
+2022,Southland,Health Sector,State Sector,1650
+2023,Gisborne,Local Government,Local Government,630
+2022,Manawatu-Wanganui,Health Sector,State Sector,4650
+2022,Bay of Plenty,Private Sector,Private Sector,121900
+2022,Waikato,Local Government,Local Government,4600
+2022,Auckland,SoEs,State Sector,13100
+2023,Canterbury,SoEs,State Sector,4750
+2023,Bay of Plenty,SoEs,State Sector,1650
+2022,Otago,Health Sector,State Sector,4050
+2022,Waikato,Private Sector,Private Sector,176700
+2021,Marlborough,Private Sector,Private Sector,20700
+2021,Tasman,Private Sector,Private Sector,20700
+2021,Otago,Private Sector,Private Sector,94100
+2021,Manawatu-Wanganui,Private Sector,Private Sector,82800
+2021,Manawatu-Wanganui,Education Sector,State Sector,9100
+2021,Bay of Plenty,Health Sector,State Sector,4850
+2021,Northland,Education Sector,State Sector,5100
+2020,Area Outside Regions,Private Sector,Private Sector,310
+2020,Nelson,SoEs,State Sector,460
+2020,Otago,SoEs,State Sector,1350
+2020,West Coast,Private Sector,Private Sector,11700
+2020,Taranaki,Private Sector,Private Sector,45500
+2020,Auckland,Local Government,Local Government,14300
+2020,Auckland,SoEs,State Sector,14500
+2020,Northland,SoEs,State Sector,420
+2019,Manawatu-Wanganui,SoEs,State Sector,1100
+2019,Taranaki,Private Sector,Private Sector,44700
+2019,Hawkes Bay,Private Sector,Private Sector,69500
+2018,Tasman,Local Government,Local Government,580
+2018,Tasman,SoEs,State Sector,12
+2018,Canterbury,Private Sector,Private Sector,251600
+2018,Taranaki,Private Sector,Private Sector,44200
+2018,Hawkes Bay,Education Sector,State Sector,4750
+2018,Northland,Education Sector,State Sector,4650
+2017,Area Outside Regions,Education Sector,State Sector,15
+2020,Hawkes Bay,Education Sector,State Sector,4900
+2020,Gisborne,Private Sector,Private Sector,18500
+2019,Waikato,Health Sector,State Sector,8500
+2019,Northland,Private Sector,Private Sector,50700
+2018,Area Outside Regions,Health Sector,State Sector,12
+2018,Otago,Education Sector,State Sector,9400
+2017,Marlborough,SoEs,State Sector,160
+2017,Nelson,Private Sector,Private Sector,21100
+2017,Tasman,Local Government,Local Government,550
+2017,Manawatu-Wanganui,Health Sector,State Sector,3900
+2017,Hawkes Bay,Education Sector,State Sector,4550
+2017,Bay of Plenty,Private Sector,Private Sector,106300
+2017,Auckland,Local Government,Local Government,11500
+2017,Auckland,SoEs,State Sector,13800
+2016,Nelson,Health Sector,State Sector,1400
+2016,Southland,Education Sector,State Sector,2450
+2016,Wellington,Education Sector,State Sector,16200
+2016,Waikato,Local Government,Local Government,3650
+2015,Marlborough,Health Sector,State Sector,510
+2015,Nelson,Health Sector,State Sector,1600
+2015,Canterbury,Education Sector,State Sector,15800
+2015,Wellington,SoEs,State Sector,9900
+2014,Area Outside Regions,Private Sector,Private Sector,250
+2014,Area Outside Regions,Health Sector,State Sector,15
+2014,Tasman,Local Government,Local Government,470
+2014,Otago,Education Sector,State Sector,9600
+2014,West Coast,Private Sector,Private Sector,12100
+2013,Tasman,SoEs,State Sector,30
+2013,Northland,Private Sector,Private Sector,42700
+2013,Hawkes Bay,Local Government,Local Government,1850
+2012,Southland,Private Sector,Private Sector,40800
+2012,Manawatu-Wanganui,Private Sector,Private Sector,73300
+2012,Hawkes Bay,Local Government,Local Government,1900
+2012,Gisborne,Education Sector,State Sector,1350
+2011,Wellington,Education Sector,State Sector,15500
+2011,Northland,Education Sector,State Sector,4200
+2010,Bay of Plenty,Health Sector,State Sector,3850
+2010,Auckland,Private Sector,Private Sector,509600
+2010,Auckland,Local Government,Local Government,11100
+2009,Southland,Health Sector,State Sector,1100
+2009,Bay of Plenty,Education Sector,State Sector,6800
+2008,Area Outside Regions,Health Sector,State Sector,12
+2008,Wellington,Private Sector,Private Sector,177700
+2008,Hawkes Bay,Education Sector,State Sector,4550
+2008,Bay of Plenty,Local Government,Local Government,2200
+2008,Bay of Plenty,Education Sector,State Sector,7100
+2008,Waikato,Education Sector,State Sector,12500
+2008,Gisborne,Health Sector,State Sector,800
+2007,Otago,SoEs,State Sector,1000
+2007,Gisborne,SoEs,State Sector,300
+2007,Bay of Plenty,Health Sector,State Sector,3450
+2006,Nelson,SoEs,State Sector,460
+2006,Otago,Health Sector,State Sector,3400
+2020,Southland,Private Sector,Private Sector,43700
+2020,Bay of Plenty,Private Sector,Private Sector,117200
+2019,Hawkes Bay,Education Sector,State Sector,4750
+2019,Gisborne,Education Sector,State Sector,1550
+2018,Hawkes Bay,SoEs,State Sector,590
+2018,Bay of Plenty,Education Sector,State Sector,8200
+2018,Auckland,Local Government,Local Government,12000
+2018,Auckland,SoEs,State Sector,13800
+2020,Hawkes Bay,Local Government,Local Government,2200
+2019,Marlborough,Local Government,Local Government,470
+2018,Wellington,Private Sector,Private Sector,180900
+2017,Nelson,Local Government,Local Government,760
+2017,Nelson,Health Sector,State Sector,1700
+2017,Southland,Education Sector,State Sector,2450
+2017,Manawatu-Wanganui,Private Sector,Private Sector,77600
+2017,Manawatu-Wanganui,Local Government,Local Government,1800
+2017,Waikato,SoEs,State Sector,2250
+2017,Auckland,Private Sector,Private Sector,640900
+2017,Northland,Health Sector,State Sector,2900
+2016,Southland,SoEs,State Sector,520
+2016,Otago,Education Sector,State Sector,8900
+2016,Canterbury,Education Sector,State Sector,15700
+2016,Manawatu-Wanganui,Local Government,Local Government,1700
+2015,Marlborough,Local Government,Local Government,430
+2015,Tasman,Local Government,Local Government,460
+2015,Taranaki,Private Sector,Private Sector,44300
+2015,Auckland,Education Sector,State Sector,40300
+2014,Nelson,Private Sector,Private Sector,19800
+2014,West Coast,Health Sector,State Sector,960
+2014,Bay of Plenty,Health Sector,State Sector,3900
+2013,West Coast,SoEs,State Sector,550
+2012,Tasman,Private Sector,Private Sector,16900
+2012,Tasman,SoEs,State Sector,40
+2015,Southland,SoEs,State Sector,510
+2015,Manawatu-Wanganui,Health Sector,State Sector,3800
+2013,Auckland,SoEs,State Sector,13900
+2014,Hawkes Bay,Local Government,Local Government,1900
+2012,Manawatu-Wanganui,Local Government,Local Government,1950
+2012,Manawatu-Wanganui,Education Sector,State Sector,8200
+2012,Taranaki,Private Sector,Private Sector,42000
+2012,Taranaki,Health Sector,State Sector,1500
+2012,Bay of Plenty,Education Sector,State Sector,7000
+2011,Marlborough,Health Sector,State Sector,570
+2011,Southland,Private Sector,Private Sector,40300
+2011,Canterbury,Private Sector,Private Sector,207100
+2011,West Coast,SoEs,State Sector,680
+2011,Manawatu-Wanganui,Health Sector,State Sector,3400
+2011,Taranaki,Private Sector,Private Sector,41800
+2011,Waikato,Health Sector,State Sector,6600
+2011,Auckland,SoEs,State Sector,14500
+2011,Northland,Local Government,Local Government,1050
+2010,Marlborough,Private Sector,Private Sector,18700
+2010,Canterbury,Health Sector,State Sector,9800
+2010,Gisborne,SoEs,State Sector,330
+2010,Waikato,Private Sector,Private Sector,131600
+2009,Tasman,Health Sector,State Sector,220
+2009,Southland,Private Sector,Private Sector,40900
+2009,Otago,Education Sector,State Sector,9200
+2009,Canterbury,Private Sector,Private Sector,213000
+2009,Wellington,Local Government,Local Government,4800
+2009,Gisborne,Private Sector,Private Sector,17000
+2009,Waikato,Private Sector,Private Sector,135600
+2009,Auckland,Private Sector,Private Sector,520400
+2009,Northland,Education Sector,State Sector,4050
+2008,Marlborough,Health Sector,State Sector,490
+2008,Canterbury,Private Sector,Private Sector,219600
+2008,Auckland,Local Government,Local Government,10700
+2007,Southland,Health Sector,State Sector,1050
+2008,Manawatu-Wanganui,Local Government,Local Government,2050
+2007,Hawkes Bay,SoEs,State Sector,610
+2007,Hawkes Bay,Health Sector,State Sector,2050
+2007,Hawkes Bay,Education Sector,State Sector,4600
+2007,Gisborne,Local Government,Local Government,380
+2006,Area Outside Regions,Private Sector,Private Sector,250
+2006,Area Outside Regions,Local Government,Local Government,21
+2006,Marlborough,Private Sector,Private Sector,18900
+2006,Otago,Education Sector,State Sector,8700
+2015,Canterbury,SoEs,State Sector,5200
+2014,Northland,Health Sector,State Sector,2350
+2010,Marlborough,Education Sector,State Sector,790
+2008,Manawatu-Wanganui,SoEs,State Sector,1200
+2008,Gisborne,Local Government,Local Government,410
+2007,Canterbury,Private Sector,Private Sector,212900
+2007,West Coast,Health Sector,State Sector,900
+2007,Wellington,Health Sector,State Sector,7300
+2007,Auckland,Private Sector,Private Sector,532200
+2006,West Coast,SoEs,State Sector,540
+2006,Bay of Plenty,Health Sector,State Sector,3700
+2006,Auckland,Private Sector,Private Sector,521700
+2006,Auckland,SoEs,State Sector,14600
+2006,Auckland,Education Sector,State Sector,34900
+2005,Area Outside Regions,Local Government,Local Government,18
+2005,Marlborough,Local Government,Local Government,280
+2005,Tasman,Private Sector,Private Sector,16800
+2005,Southland,Education Sector,State Sector,2200
+2005,West Coast,Local Government,Local Government,390
+2005,West Coast,SoEs,State Sector,510
+2005,Manawatu-Wanganui,Education Sector,State Sector,8800
+2005,Taranaki,Health Sector,State Sector,1400
+2004,Marlborough,Education Sector,State Sector,780
+2004,Tasman,Health Sector,State Sector,200
+2004,Southland,Health Sector,State Sector,1100
+2004,Otago,Education Sector,State Sector,8500
+2004,West Coast,Private Sector,Private Sector,10500
+2004,West Coast,SoEs,State Sector,410
+2004,Wellington,Private Sector,Private Sector,159700
+2004,Taranaki,Local Government,Local Government,1150
+2004,Hawkes Bay,SoEs,State Sector,540
+2004,Auckland,Private Sector,Private Sector,489700
+2003,Marlborough,Health Sector,State Sector,520
+2003,Nelson,Private Sector,Private Sector,18500
+2003,Nelson,Education Sector,State Sector,1400
+2003,Southland,Private Sector,Private Sector,38300
+2003,Canterbury,Private Sector,Private Sector,188900
+2003,Canterbury,SoEs,State Sector,4950
+2003,Canterbury,Education Sector,State Sector,14900
+2003,West Coast,Local Government,Local Government,350
+2003,West Coast,Health Sector,State Sector,910
+2003,Wellington,Private Sector,Private Sector,158300
+2003,Taranaki,Local Government,Local Government,1000
+2003,Taranaki,SoEs,State Sector,410
+2003,Hawkes Bay,Education Sector,State Sector,4200
+2003,Bay of Plenty,Private Sector,Private Sector,81700
+2003,Waikato,Education Sector,State Sector,12100
+2003,Auckland,Private Sector,Private Sector,467700
+2003,Auckland,Education Sector,State Sector,33900
+2003,Northland,Local Government,Local Government,760
+2002,Area Outside Regions,Private Sector,Private Sector,220
+2005,Southland,Health Sector,State Sector,1100
+2004,Area Outside Regions,SoEs,State Sector,3
+2003,Northland,Health Sector,State Sector,1850
+2002,Tasman,Local Government,Local Government,360
+2002,West Coast,Health Sector,State Sector,920
+2002,Taranaki,Local Government,Local Government,1100
+2002,Taranaki,Health Sector,State Sector,1300
+2002,Hawkes Bay,Local Government,Local Government,1600
+2002,Hawkes Bay,Education Sector,State Sector,4100
+2002,Waikato,Private Sector,Private Sector,117700
+2001,Area Outside Regions,SoEs,State Sector,0
+2001,Marlborough,Private Sector,Private Sector,14500
+2001,Nelson,Private Sector,Private Sector,17400
+2001,Tasman,Health Sector,State Sector,240
+2001,Wellington,Education Sector,State Sector,13100
+2001,Gisborne,SoEs,State Sector,170
+2001,Auckland,SoEs,State Sector,7000
+2001,Northland,SoEs,State Sector,500
+2000,Area Outside Regions,Private Sector,Private Sector,210
+2000,Area Outside Regions,SoEs,State Sector,0
+2000,Area Outside Regions,Health Sector,State Sector,3
+2000,Nelson,SoEs,State Sector,180
+2000,Tasman,Health Sector,State Sector,150
+2000,Southland,SoEs,State Sector,520
+2000,Wellington,Education Sector,State Sector,12700
+2000,Gisborne,Private Sector,Private Sector,15700
+2000,Gisborne,Health Sector,State Sector,690
+2000,Bay of Plenty,Health Sector,State Sector,2950
+2000,Waikato,Health Sector,State Sector,4950
+2000,Waikato,Education Sector,State Sector,11600
+2001,Hawkes Bay,Public Service,State Sector,905
+2003,Auckland,Public Service,State Sector,6732
+2010,Bay of Plenty,Public Service,State Sector,1396
+2011,West Coast,Public Service,State Sector,276
+2015,Auckland,Public Service,State Sector,9474
+2017,Overseas,Public Service,State Sector,300
+2018,Auckland,Public Service,State Sector,10404
+2023,Bay of Plenty,Public Service,State Sector,2071
+2023,Otago,Public Service,State Sector,1590
+2004,Gisborne,SoEs,State Sector,330
+2002,Gisborne,Health Sector,State Sector,740
+2001,Gisborne,Education Sector,State Sector,1500
+2000,Bay of Plenty,SoEs,State Sector,1100
+2020,Southland,Public Service,State Sector,651
+2010,Southland,Public Service,State Sector,782
+2013,Bay of Plenty,Public Service,State Sector,1681
+2016,Otago,Public Service,State Sector,1307
+2012,Taranaki,Public Service,State Sector,482
+2015,Manawatu-Wanganui,Public Service,State Sector,1952
+2016,Gisborne,Public Service,State Sector,270
+2000,Hawkes Bay,Public Service,State Sector,883
+2022,Taranaki,Public Service,State Sector,490
+2014,Hawkes Bay,Public Service,State Sector,1094
+2004,Manawatu-Wanganui,Public Service,State Sector,1661
+2005,Auckland,Public Service,State Sector,8177
+2006,Nelson,Public Service,State Sector,474
+2021,Overseas,Public Service,State Sector,302
+2017,Tasman,Public Service,State Sector,119
+2010,Area Outside Regions,Public Service,State Sector,0
+2023,Northland,Other Government Entities,State Sector,951
+2022,Area Outside Regions,Other Government Entities,State Sector,21
+2021,Area Outside Regions,Other Government Entities,State Sector,35
+2021,Waikato,Other Government Entities,State Sector,2459
+2020,Waikato,Other Government Entities,State Sector,2715
+2019,Tasman,Other Government Entities,State Sector,244
+2019,Gisborne,Other Government Entities,State Sector,315
+2019,Waikato,Other Government Entities,State Sector,2680
+2018,Tasman,Other Government Entities,State Sector,187
+2017,Marlborough,Other Government Entities,State Sector,661
+2017,Southland,Other Government Entities,State Sector,346
+2017,Wellington,Other Government Entities,State Sector,14843
+2017,Hawkes Bay,Other Government Entities,State Sector,696
+2014,Marlborough,Other Government Entities,State Sector,952
+2014,Tasman,Other Government Entities,State Sector,173
+2014,Otago,Other Government Entities,State Sector,1222
+2014,West Coast,Other Government Entities,State Sector,304
+2014,Hawkes Bay,Other Government Entities,State Sector,856
+2014,Northland,Other Government Entities,State Sector,636
+2013,Bay of Plenty,Other Government Entities,State Sector,1569
+2013,Waikato,Other Government Entities,State Sector,1806
+2013,Northland,Other Government Entities,State Sector,645
+2014,Area Outside Regions,Other Government Entities,State Sector,30
+2011,West Coast,Other Government Entities,State Sector,194
+2011,Northland,Other Government Entities,State Sector,561
+2010,Marlborough,Other Government Entities,State Sector,907
+2010,Nelson,Other Government Entities,State Sector,121
+2010,Tasman,Other Government Entities,State Sector,179
+2009,Otago,Other Government Entities,State Sector,1055
+2009,Hawkes Bay,Other Government Entities,State Sector,1186
+2008,Marlborough,Other Government Entities,State Sector,656
+2008,Canterbury,Other Government Entities,State Sector,5376
+2008,West Coast,Other Government Entities,State Sector,221
+2009,Taranaki,Other Government Entities,State Sector,457
+2007,Canterbury,Other Government Entities,State Sector,5264
+2007,Bay of Plenty,Other Government Entities,State Sector,1782
+2007,Waikato,Other Government Entities,State Sector,2342
+2006,Waikato,Other Government Entities,State Sector,1767
+2005,Wellington,Other Government Entities,State Sector,10707
+2005,Taranaki,Other Government Entities,State Sector,178
+2005,Hawkes Bay,Other Government Entities,State Sector,717
+2005,Auckland,Other Government Entities,State Sector,8723
+2004,Nelson,Other Government Entities,State Sector,212
+2004,Tasman,Other Government Entities,State Sector,142
+2004,Southland,Other Government Entities,State Sector,333
+2004,Auckland,Other Government Entities,State Sector,9242
+2003,Marlborough,Other Government Entities,State Sector,579
+2003,Auckland,Other Government Entities,State Sector,9568
+2002,Marlborough,Other Government Entities,State Sector,638
+2002,Northland,Other Government Entities,State Sector,444
+2001,Area Outside Regions,Other Government Entities,State Sector,80
+2000,Tasman,Other Government Entities,State Sector,116
+2003,Otago,Other Government Entities,State Sector,1234
+2001,Manawatu-Wanganui,Other Government Entities,State Sector,4575

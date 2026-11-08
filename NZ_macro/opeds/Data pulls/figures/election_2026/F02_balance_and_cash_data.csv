@@ -1,0 +1,46 @@
+measure,year,status,value,source_sheet,source_row,block,billions
+OBEGALx,2017,Actual,4653,Fiscal Time Series,16,NZD millions,4.653
+OBEGALx,2018,Actual,5942.351,Fiscal Time Series,16,NZD millions,5.9423509999999995
+OBEGALx,2019,Actual,8503.746,Fiscal Time Series,16,NZD millions,8.503746
+OBEGALx,2020,Actual,-20902.223,Fiscal Time Series,16,NZD millions,-20.902223000000003
+OBEGALx,2021,Actual,-2558.558,Fiscal Time Series,16,NZD millions,-2.558558
+OBEGALx,2022,Actual,-8664.022,Fiscal Time Series,16,NZD millions,-8.664022000000001
+OBEGALx,2023,Actual,-7198.905000000001,Fiscal Time Series,16,NZD millions,-7.198905000000001
+OBEGALx,2024,Actual,-8773,Fiscal Time Series,16,NZD millions,-8.773
+OBEGALx,2025,Actual,-9306,Fiscal Time Series,16,NZD millions,-9.306
+OBEGALx,2026,Unaudited Actual,-8641,Fiscal Time Series,16,NZD millions,-8.641
+OBEGALx,2027,Forecast,-6750,Fiscal Time Series,16,NZD millions,-6.75
+OBEGALx,2028,Forecast,-834,Fiscal Time Series,16,NZD millions,-0.834
+OBEGALx,2029,Forecast,4016,Fiscal Time Series,16,NZD millions,4.016
+OBEGALx,2030,Forecast,8057,Fiscal Time Series,16,NZD millions,8.057
+OBEGALx,2031,Forecast,11693,Fiscal Time Series,16,NZD millions,11.693
+OBEGAL,2017,Actual,4069,Fiscal Time Series,17,NZD millions,4.069
+OBEGAL,2018,Actual,5534,Fiscal Time Series,17,NZD millions,5.534
+OBEGAL,2019,Actual,7429,Fiscal Time Series,17,NZD millions,7.429
+OBEGAL,2020,Actual,-23057,Fiscal Time Series,17,NZD millions,-23.057
+OBEGAL,2021,Actual,-4560,Fiscal Time Series,17,NZD millions,-4.56
+OBEGAL,2022,Actual,-9691,Fiscal Time Series,17,NZD millions,-9.691
+OBEGAL,2023,Actual,-9446,Fiscal Time Series,17,NZD millions,-9.446
+OBEGAL,2024,Actual,-12854,Fiscal Time Series,17,NZD millions,-12.854
+OBEGAL,2025,Actual,-13973,Fiscal Time Series,17,NZD millions,-13.973
+OBEGAL,2026,Unaudited Actual,-10739,Fiscal Time Series,17,NZD millions,-10.739
+OBEGAL,2027,Forecast,-8730,Fiscal Time Series,17,NZD millions,-8.73
+OBEGAL,2028,Forecast,-2938,Fiscal Time Series,17,NZD millions,-2.938
+OBEGAL,2029,Forecast,2062,Fiscal Time Series,17,NZD millions,2.062
+OBEGAL,2030,Forecast,6310,Fiscal Time Series,17,NZD millions,6.31
+OBEGAL,2031,Forecast,8879,Fiscal Time Series,17,NZD millions,8.879
+Core Crown residual cash,2017,Actual,2574,Fiscal Time Series,18,NZD millions,2.574
+Core Crown residual cash,2018,Actual,1346,Fiscal Time Series,18,NZD millions,1.346
+Core Crown residual cash,2019,Actual,-710,Fiscal Time Series,18,NZD millions,-0.71
+Core Crown residual cash,2020,Actual,-23692,Fiscal Time Series,18,NZD millions,-23.692
+Core Crown residual cash,2021,Actual,-13767,Fiscal Time Series,18,NZD millions,-13.767
+Core Crown residual cash,2022,Actual,-27043,Fiscal Time Series,18,NZD millions,-27.043
+Core Crown residual cash,2023,Actual,-25648,Fiscal Time Series,18,NZD millions,-25.648
+Core Crown residual cash,2024,Actual,-19302,Fiscal Time Series,18,NZD millions,-19.302
+Core Crown residual cash,2025,Actual,-5996,Fiscal Time Series,18,NZD millions,-5.996
+Core Crown residual cash,2026,Unaudited Actual,-4892,Fiscal Time Series,18,NZD millions,-4.892
+Core Crown residual cash,2027,Forecast,-21985,Fiscal Time Series,18,NZD millions,-21.985
+Core Crown residual cash,2028,Forecast,-13535,Fiscal Time Series,18,NZD millions,-13.535
+Core Crown residual cash,2029,Forecast,-7285,Fiscal Time Series,18,NZD millions,-7.285
+Core Crown residual cash,2030,Forecast,-1782,Fiscal Time Series,18,NZD millions,-1.782
+Core Crown residual cash,2031,Forecast,3298,Fiscal Time Series,18,NZD millions,3.298

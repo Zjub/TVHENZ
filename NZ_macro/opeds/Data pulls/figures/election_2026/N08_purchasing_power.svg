@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='-0.000000000000064' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNTAuNDl8ODQ0LjA3fDU2LjYyfDQ0Mi4yMA=='>
+    <rect x='50.49' y='56.62' width='793.59' height='385.58' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTAuNDl8ODQ0LjA3fDU2LjYyfDQ0Mi4yMA==)'>
+<polyline points='50.49,379.19 844.07,379.19 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='50.49,277.51 844.07,277.51 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='50.49,175.83 844.07,175.83 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='50.49,74.15 844.07,74.15 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='68.21,442.20 68.21,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='290.13,442.20 290.13,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='512.06,442.20 512.06,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='734.11,442.20 734.11,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='86.56,74.15 97.74,85.13 108.80,108.13 119.74,115.85 130.92,125.12 142.10,129.28 153.16,125.96 164.22,130.93 175.40,134.22 186.59,136.67 197.65,135.04 208.58,139.11 219.76,140.73 230.95,149.53 242.01,150.32 252.94,153.48 264.13,155.83 275.31,158.95 286.37,157.40 297.31,155.83 308.49,159.73 319.67,162.82 330.73,158.18 341.79,159.73 352.97,163.60 364.15,166.66 375.21,170.47 386.15,179.48 397.33,179.48 408.51,183.92 419.57,184.92 430.51,189.40 441.69,192.95 452.87,200.84 463.93,201.71 474.87,202.58 486.05,207.74 497.23,213.69 508.29,217.89 519.35,224.53 530.53,220.40 541.72,226.18 552.78,230.26 563.71,237.51 574.90,248.56 586.08,266.84 597.14,278.59 608.07,292.82 619.26,305.88 630.44,322.43 641.50,333.29 652.44,342.62 663.62,350.52 674.80,363.52 685.86,366.99 696.92,371.56 708.10,374.39 719.28,378.87 730.34,382.74 741.28,389.28 752.46,393.04 763.64,399.92 774.70,404.09 785.64,410.24 796.82,420.26 808.00,424.67 ' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='45.11' y='382.63' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>70</text>
+<text x='45.11' y='280.95' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>80</text>
+<text x='45.11' y='179.26' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>90</text>
+<text x='45.11' y='77.58' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.98px' lengthAdjust='spacingAndGlyphs'>100</text>
+<text x='68.21' y='454.45' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2010</text>
+<text x='290.13' y='454.45' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2015</text>
+<text x='512.06' y='454.45' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2020</text>
+<text x='734.11' y='454.45' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2025</text>
+<text transform='translate(23.82,249.41) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='189.69px' lengthAdjust='spacingAndGlyphs'>Purchasing power in June 2010 dollars</text>
+<line x1='379.28' y1='483.04' x2='393.10' y2='483.04' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<text x='400.81' y='486.62' style='font-size: 10.00px; font-family: "Arial";' textLength='116.20px' lengthAdjust='spacingAndGlyphs'>Purchasing power of $100</text>
+<text x='15.94' y='48.13' style='font-size: 12.00px; font-family: "Arial";' textLength='315.12px' lengthAdjust='spacingAndGlyphs'>Observed national CPI; June 2010 purchasing power = 100</text>
+<text x='15.94' y='29.55' style='font-size: 19.00px; font-weight: bold; font-family: "Arial";' textLength='425.48px' lengthAdjust='spacingAndGlyphs'>Why nominal amounts need a price benchmark</text>
+<text x='15.94' y='533.33' style='font-size: 9.00px; font-family: "Arial";' textLength='552.72px' lengthAdjust='spacingAndGlyphs'>Observed / derived: CPI is a broad consumption benchmark, not each household's inflation and not an asset-price index. Shows price-level</text>
+<text x='15.94' y='545.75' style='font-size: 9.00px; font-family: "Arial";' textLength='195.00px' lengthAdjust='spacingAndGlyphs'>accumulation rather than an annual inflation rate.</text>
+<text x='15.94' y='558.17' style='font-size: 9.00px; font-family: "Arial";' textLength='253.50px' lengthAdjust='spacingAndGlyphs'>Sources: Stats NZ CPI index histories, September 2026 vintage</text>
+</g>
+</g>
+</svg>

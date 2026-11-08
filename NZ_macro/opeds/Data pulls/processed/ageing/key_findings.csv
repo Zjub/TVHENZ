@@ -1,0 +1,22 @@
+measure,year,value,unit,basis
+Age 65+ population share,2006,12.01314567710293,percent,Historical calibrated estimate
+Age 65+ population share,2024,16.304584491711978,percent,Historical calibrated estimate
+Age 65+ population share,2025,16.657823893455166,percent,BEFU 2025 forecast
+Age 65+ population share,2065,25.695912368899503,percent,LTFM projection
+Fixed-profile health cost per resident,2006,3528.504401473102,Source-profile NZD (not current prices),Fixed age-cost-profile benchmark; not a spending forecast
+Fixed-profile health cost per resident,2025,3870.8530138400124,Source-profile NZD (not current prices),Fixed age-cost-profile benchmark; not a spending forecast
+Fixed-profile health cost per resident,2065,5045.720192771056,Source-profile NZD (not current prices),Fixed age-cost-profile benchmark; not a spending forecast
+pension_percent_gdp,2025,5.326923253697593,percent GDP,BEFU 2025 forecast in LTFS
+health_percent_gdp,2025,7.109075532922131,percent GDP,BEFU 2025 forecast in LTFS
+pension_percent_gdp,2065,7.817528233281357,percent GDP,LTFM conditional projection
+health_percent_gdp,2065,9.910099542001117,percent GDP,LTFM conditional projection
+Historical real NZS increase: Total population,2025,3738.8248072208507,2025 NZD millions,"LMDI accounting allocation, 2009-2025"
+Historical real NZS increase: 65+ population share,2025,4721.148263986505,2025 NZD millions,"LMDI accounting allocation, 2009-2025"
+Historical real NZS increase: Recipient / population-definition residual,2025,1115.4631617122948,2025 NZD millions,"LMDI accounting allocation, 2009-2025"
+Historical real NZS increase: Real expense per average recipient,2025,2139.1018947209504,2025 NZD millions,"LMDI accounting allocation, 2009-2025"
+Projected NZS/GDP change: 65+ relative to ages 15-64,2065,2.7531500902646298,percentage points GDP,"LMDI accounting allocation, 2029-2065"
+Projected NZS/GDP change: Real expense per person aged 65+,2065,2.086995381744909,percentage points GDP,"LMDI accounting allocation, 2029-2065"
+Projected NZS/GDP change: Real GDP per person aged 15-64,2065,-2.5474759548286308,percentage points GDP,"LMDI accounting allocation, 2029-2065"
+CPI-deflated actual health expense per resident: growth since 2006,2025,54.91608678185549,percent change,Actual spending; resident-population and annual-CPI denominators
+Fixed-profile age-mix health benchmark: growth since 2006,2025,9.702371696744505,percent change,Fixed-profile counterfactual; 2025 Treasury demographic input is forecast
+Fixed-profile age-mix health benchmark: growth since 2025,2065,30.35163502024938,percent change,Fixed-profile counterfactual; no change in costs or health within ages

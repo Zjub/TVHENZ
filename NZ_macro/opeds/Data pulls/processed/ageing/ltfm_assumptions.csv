@@ -1,0 +1,38 @@
+source_row,assumption,value
+7,SCENARIO NAME,LTFM
+8,"First Projected Year (key variable, must set to year immediately after last forecast year)",2030
+9,Zero marker (set to zero to avoid using any pasted in numbers in modelling worksheets),0
+12,Unemployment Rate (percentage of labour force),4.2500000000000003E-2
+13,Average weekly hours worked (hours per week),33.6
+14,Labour productivity annual growth (percentage),8.9999999999999993E-3
+15,Consumers Price Index (CPI) annual growth (percentage),0.02
+16,Government 10-year bond annual rate of return (percentage),4.2999999999999997E-2
+18,Unemployment Rate (percentage points per year),6.9999999999999999E-4
+19,Average weekly hours worked (hours per week per year),0.06
+20,Labour productivity growth (percentage points per year),2.9999999999999997E-4
+21,Consumers Price Index growth (percentage points per year),5.0000000000000001E-4
+22,Government 10-year bond annual rate of return (percentage points per year),5.0000000000000001E-4
+23,Number of years for effective interest rate to align with government 10-year bond rate,5
+27,Number of projected years to apply fiscal drag elasticity greater than 1.,10
+28,Fiscal drag elasticity applied to nominal wage growth for source deductions and other personal income tax revenue,1.35
+31,Number of years used to calculate average for stable percentage of GDP for each tax type,10
+32,Transition rate from end-of-forecast to stable percentage of GDP for tax types (percentage points per year),5.0000000000000001E-4
+34,Number of projected years to apply fiscal drag modelling in calculating net AOTWE used in NZS rate indexation,0
+35,Percentage of net ordinary time weekly earnings that serves as NZS wage floor,0.66
+36,Percentage of net ordinary time weekly earnings that serves as NZS wage ceiling,0.72499999999999998
+37,Number of years into projections after which wage indexation of non-NZS benefits begins,10
+38,Use a 2 percentage point of GDP stable level for Defence operating spending in projected yearsa,Yes
+39,Number of years used to calculate average for stable percentage of GDP for each bottom-up expense and asset type,10
+40,Transition rate from end-of-forecast to stable percentage of GDP for bottom-up expense types (percentage points per year),5.0000000000000001E-4
+41,Education rexpenditure esidual growth factor,5.0000000000000001E-3
+42,Health expenditure residual growth factor,5.0000000000000001E-3
+43,Transition rate from end-of-forecast to stable percentage of GDP for bottom-up asset types (percentage points per year),2E-3
+44,Number of years used to calculate average for stable percentage of GDP for bottom-up advances asset,8
+45,Number of years used to calculate average for stable percentage of PP&E assets for each depreciation type,5
+49,Percentage of NZSF revenue received as interest,0.44
+50,Percentage of NZSF revenue received as dividends (non-interest/dividend received as other),0.55000000000000004
+51,Percentage of NZSF financial assets excluding receivables and advances as cash and cash equivalents,0.05
+52,Percentage of NZSF financial assets excluding receivables and advances as marketable securities etc.,0.32
+53,Percentage of NZSF financial assets excluding receivables and advances as share investrnents,0.53
+54,Percentage of NZSF financial assets excluding receivables and advances as investments in controlled enterprises,0.1
+55,Percentage of NZSF financial liabilities as borrowings (debt),0.6

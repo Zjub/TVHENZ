@@ -1,0 +1,16 @@
+parameter,value,unit,basis
+cgt_rate,0.28,fraction,Labour proposed rate; not enacted
+interest_nominal_rate,0.05,fraction/year,Assumption; not a deposit-rate observation
+saving_tax_rate,0.33,fraction,Illustrative marginal income-tax rate
+saving_balance,100000,NZD,Illustrative starting balance
+retirement_age,65,years,Scenario; current NZ Super age context
+start_age,25,years,Scenario; 40 year accumulation
+real_salary,70000,NZD/year,Constant real gross earnings assumption
+real_annuity,30000,NZD/year,"Illustrative CPI-level pension, NOT a statutory NZ Super rate"
+accumulation_real_return,0.03,fraction/year,"Net of tax and fees; scenario, not forecast"
+annuity_real_discount,0.02,fraction/year,"Liability discount assumption, not expected risky asset return"
+annuity_expense_loading,0.05,fraction of actuarial cost,"Sensitivity assumption, not market quote"
+employer_esct,0.3,fraction,Illustrative tax on employer contribution; not all workers' rate
+business_asset_cost,100000,NZD,Scenario
+business_depreciation,0.2,diminishing value fraction/year,Assumed eligible asset; not universal statutory depreciation
+business_discount,0.05,fraction/year,Scenario

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='-0.000000000000064' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNDAuNzV8ODQ0LjA3fDU2LjYyfDQyOC4wOQ=='>
+    <rect x='40.75' y='56.62' width='803.32' height='371.47' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNDAuNzV8ODQ0LjA3fDU2LjYyfDQyOC4wOQ==)'>
+<polyline points='40.75,403.15 844.07,403.15 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='40.75,334.10 844.07,334.10 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='40.75,265.04 844.07,265.04 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='40.75,195.98 844.07,195.98 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='40.75,126.92 844.07,126.92 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='40.75,57.87 844.07,57.87 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='250.56,428.09 250.56,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='498.11,428.09 498.11,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='745.67,428.09 745.67,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='77.27,395.88 89.65,386.69 102.02,387.07 114.40,389.22 126.78,388.48 139.16,383.65 151.54,374.40 163.91,365.88 176.29,357.76 188.67,349.71 201.05,341.97 213.42,333.57 225.80,325.33 238.18,316.62 250.56,307.49 262.94,297.53 275.31,286.94 287.69,276.15 300.07,264.06 312.45,251.85 324.82,238.56 337.20,224.60 349.58,210.99 361.96,198.22 374.34,186.94 386.71,176.40 399.09,165.68 411.47,155.20 423.85,144.82 436.23,134.99 448.60,124.78 460.98,115.08 473.36,107.27 485.74,100.89 498.11,96.20 510.49,93.14 522.87,90.21 535.25,88.24 547.63,85.80 560.00,83.49 572.38,81.07 584.76,78.88 597.14,76.72 609.51,75.00 621.89,73.51 ' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<polyline points='89.65,407.88 102.02,406.10 114.40,391.07 126.78,380.90 139.16,374.85 151.54,361.90 163.91,348.86 176.29,349.27 188.67,345.78 201.05,342.40 213.42,338.10 225.80,333.31 238.18,330.01 250.56,326.45 262.94,319.71 275.31,311.74 287.69,303.60 300.07,294.51 312.45,285.46 324.82,275.70 337.20,265.73 349.58,256.07 361.96,247.21 374.34,239.46 386.71,232.35 399.09,225.76 411.47,219.39 423.85,213.02 436.23,207.28 448.60,201.39 460.98,196.21 473.36,192.46 485.74,189.95 498.11,188.59 510.49,188.32 522.87,188.39 535.25,188.96 547.63,189.17 560.00,189.12 572.38,188.77 584.76,187.92 597.14,186.46 609.51,184.82 621.89,182.94 634.27,180.61 646.65,177.97 659.03,174.27 671.40,169.88 683.78,164.39 696.16,158.24 708.54,152.63 720.92,147.03 733.29,141.75 745.67,136.37 ' style='stroke-width: 1.92; stroke: #C56000; stroke-linecap: butt;' />
+<polyline points='238.18,355.27 250.56,340.79 262.94,337.52 275.31,330.07 287.69,327.65 300.07,328.23 312.45,329.06 324.82,320.86 337.20,312.28 349.58,303.94 361.96,296.62 374.34,290.08 386.71,284.11 399.09,278.19 411.47,271.99 423.85,265.52 436.23,259.43 448.60,252.93 460.98,246.91 473.36,241.97 485.74,238.01 498.11,235.06 510.49,233.10 522.87,231.28 535.25,229.87 547.63,228.07 560.00,226.16 572.38,224.13 584.76,221.74 597.14,218.99 609.51,216.00 621.89,212.81 634.27,209.27 646.65,205.02 659.03,199.68 671.40,194.04 683.78,187.35 696.16,180.35 708.54,173.44 720.92,166.97 733.29,161.28 745.67,155.74 758.05,150.43 ' style='stroke-width: 1.92; stroke: #395A9A; stroke-linecap: butt;' />
+<polyline points='238.18,355.53 250.56,341.94 262.94,346.18 275.31,343.95 287.69,343.73 300.07,325.18 312.45,311.52 324.82,305.84 337.20,301.90 349.58,298.78 361.96,297.85 374.34,296.18 386.71,292.53 399.09,288.44 411.47,283.80 423.85,278.98 436.23,274.50 448.60,269.49 460.98,265.02 473.36,261.37 485.74,258.45 498.11,256.45 510.49,255.09 522.87,253.72 535.25,252.65 547.63,250.99 560.00,248.98 572.38,246.59 584.76,243.72 597.14,240.22 609.51,236.37 621.89,232.09 634.27,227.42 646.65,221.74 659.03,215.18 671.40,208.25 683.78,200.42 696.16,192.30 708.54,184.41 720.92,177.03 733.29,170.45 745.67,164.16 758.05,158.50 770.43,153.36 782.80,148.54 795.18,144.32 807.56,139.53 ' style='stroke-width: 1.92; stroke: #A53B59; stroke-linecap: butt;' />
+<polyline points='77.27,410.05 89.65,411.21 102.02,410.75 114.40,397.67 126.78,389.30 139.16,383.52 151.54,371.83 163.91,356.91 176.29,361.47 188.67,353.83 201.05,352.22 213.42,352.89 225.80,359.59 238.18,355.53 250.56,341.94 262.94,346.18 275.31,343.95 287.69,343.73 300.07,325.18 ' style='stroke-width: 1.92; stroke: #4D7342; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='35.37' y='406.59' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='5.33px' lengthAdjust='spacingAndGlyphs'>4</text>
+<text x='35.37' y='337.53' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='5.33px' lengthAdjust='spacingAndGlyphs'>5</text>
+<text x='35.37' y='268.47' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='5.33px' lengthAdjust='spacingAndGlyphs'>6</text>
+<text x='35.37' y='199.42' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='5.33px' lengthAdjust='spacingAndGlyphs'>7</text>
+<text x='35.37' y='130.36' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='5.33px' lengthAdjust='spacingAndGlyphs'>8</text>
+<text x='35.37' y='61.30' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='5.33px' lengthAdjust='spacingAndGlyphs'>9</text>
+<text x='250.56' y='440.34' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2020</text>
+<text x='498.11' y='440.34' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2040</text>
+<text x='745.67' y='440.34' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2060</text>
+<text x='442.41' y='453.94' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='83.36px' lengthAdjust='spacingAndGlyphs'>June fiscal year</text>
+<text transform='translate(24.54,242.36) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='109.11px' lengthAdjust='spacingAndGlyphs'>NZ Super / GDP (%)</text>
+<line x1='330.15' y1='483.04' x2='343.98' y2='483.04' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<line x1='408.14' y1='483.04' x2='421.96' y2='483.04' style='stroke-width: 1.92; stroke: #C56000; stroke-linecap: butt;' />
+<line x1='486.12' y1='483.04' x2='499.95' y2='483.04' style='stroke-width: 1.92; stroke: #395A9A; stroke-linecap: butt;' />
+<line x1='330.15' y1='506.29' x2='343.98' y2='506.29' style='stroke-width: 1.92; stroke: #A53B59; stroke-linecap: butt;' />
+<line x1='408.14' y1='506.29' x2='421.96' y2='506.29' style='stroke-width: 1.92; stroke: #4D7342; stroke-linecap: butt;' />
+<text x='351.68' y='486.62' style='font-size: 10.00px; font-family: "Arial";' textLength='48.75px' lengthAdjust='spacingAndGlyphs'>2006 LTFS</text>
+<text x='429.67' y='486.62' style='font-size: 10.00px; font-family: "Arial";' textLength='48.75px' lengthAdjust='spacingAndGlyphs'>2013 LTFS</text>
+<text x='507.65' y='486.62' style='font-size: 10.00px; font-family: "Arial";' textLength='48.75px' lengthAdjust='spacingAndGlyphs'>2021 LTFS</text>
+<text x='351.68' y='509.88' style='font-size: 10.00px; font-family: "Arial";' textLength='48.75px' lengthAdjust='spacingAndGlyphs'>2025 LTFS</text>
+<text x='429.67' y='509.88' style='font-size: 10.00px; font-family: "Arial";' textLength='27.80px' lengthAdjust='spacingAndGlyphs'>Actual</text>
+<text x='15.94' y='48.13' style='font-size: 12.00px; font-family: "Arial";' textLength='390.98px' lengthAdjust='spacingAndGlyphs'>Selected LTFS vintages and the actual series as supplied with LTFS 2025</text>
+<text x='15.94' y='29.55' style='font-size: 19.00px; font-weight: bold; font-family: "Arial";' textLength='476.20px' lengthAdjust='spacingAndGlyphs'>Previous pension projections provide a reality check</text>
+<text x='15.94' y='533.33' style='font-size: 9.00px; font-family: "Arial";' textLength='554.06px' lengthAdjust='spacingAndGlyphs'>Published projection-vintage comparison: Each projection has a different baseline and assumptions. Actuals here are the 2025 publication's</text>
+<text x='15.94' y='545.75' style='font-size: 9.00px; font-family: "Arial";' textLength='362.34px' lengthAdjust='spacingAndGlyphs'>series, not newly revised 2026 outcomes. This is not a like-for-like forecast-accuracy score.</text>
+<text x='15.94' y='558.17' style='font-size: 9.00px; font-family: "Arial";' textLength='341.52px' lengthAdjust='spacingAndGlyphs'>Sources: Treasury LTFS 2025 official figure data; LTFM and OLG identified separately</text>
+</g>
+</g>
+</svg>

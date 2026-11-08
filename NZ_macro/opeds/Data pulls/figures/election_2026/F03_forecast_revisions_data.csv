@@ -1,0 +1,13 @@
+measure,year,status,value,source_sheet,source_row,block,vintage,billions
+Core Crown tax revenue,2025,Actual,121698,Fiscal Time Series,8,NZD millions,PREFU September 2026,121.698
+Core Crown tax revenue,2026,Unaudited Actual,125884,Fiscal Time Series,8,NZD millions,PREFU September 2026,125.884
+Core Crown tax revenue,2027,Forecast,137185,Fiscal Time Series,8,NZD millions,PREFU September 2026,137.185
+Core Crown tax revenue,2028,Forecast,144493,Fiscal Time Series,8,NZD millions,PREFU September 2026,144.493
+Core Crown tax revenue,2029,Forecast,153156,Fiscal Time Series,8,NZD millions,PREFU September 2026,153.156
+Core Crown tax revenue,2030,Forecast,161620,Fiscal Time Series,8,NZD millions,PREFU September 2026,161.62
+Core Crown tax revenue,2025,Actual,121698,,10,,BEFU May 2026,121.698
+Core Crown tax revenue,2026,Forecast,124807,,10,,BEFU May 2026,124.807
+Core Crown tax revenue,2027,Forecast,132986,,10,,BEFU May 2026,132.986
+Core Crown tax revenue,2028,Forecast,142229,,10,,BEFU May 2026,142.229
+Core Crown tax revenue,2029,Forecast,151601,,10,,BEFU May 2026,151.601
+Core Crown tax revenue,2030,Forecast,159705,,10,,BEFU May 2026,159.705

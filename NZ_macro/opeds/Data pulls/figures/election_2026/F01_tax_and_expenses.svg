@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='0.00' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNDUuMTZ8ODQ0LjA3fDU2LjYyfDQyOS4wMg=='>
+    <rect x='45.16' y='56.62' width='798.91' height='372.39' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNDUuMTZ8ODQ0LjA3fDU2LjYyfDQyOS4wMg==)'>
+<polyline points='45.16,358.63 844.07,358.63 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='45.16,269.55 844.07,269.55 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='45.16,180.46 844.07,180.46 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='45.16,91.37 844.07,91.37 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='237.11,429.02 237.11,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='444.62,429.02 444.62,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='652.13,429.02 652.13,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='81.47,372.00 133.35,389.82 185.23,358.63 237.11,82.46 288.98,207.18 340.86,73.55 392.74,193.82 444.62,135.91 496.50,153.73 548.37,176.00 600.25,171.55 652.13,216.09 704.01,238.36 755.88,256.18 807.76,278.45 ' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<polyline points='81.47,385.36 133.35,398.73 185.23,363.09 237.11,412.09 288.98,336.36 340.86,282.91 392.74,358.63 444.62,331.91 496.50,358.63 548.37,376.45 600.25,331.91 652.13,336.36 704.01,323.00 755.88,314.09 807.76,309.64 ' style='stroke-width: 1.92; stroke: #C56000; stroke-linecap: butt;' />
+<line x1='574.31' y1='429.02' x2='574.31' y2='56.62' style='stroke-width: 1.16; stroke: #7F7F7F; stroke-dasharray: 6.21,6.21; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='39.78' y='362.07' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>28</text>
+<text x='39.78' y='272.98' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>30</text>
+<text x='39.78' y='183.89' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>32</text>
+<text x='39.78' y='94.80' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>34</text>
+<text x='237.11' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2020</text>
+<text x='444.62' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2024</text>
+<text x='652.13' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.31px' lengthAdjust='spacingAndGlyphs'>2028</text>
+<text x='444.62' y='454.15' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='76.47px' lengthAdjust='spacingAndGlyphs'>June fiscal year</text>
+<text transform='translate(23.82,242.82) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='48.94px' lengthAdjust='spacingAndGlyphs'>% of GDP</text>
+<line x1='380.52' y1='483.04' x2='394.35' y2='483.04' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<line x1='380.52' y1='506.29' x2='394.35' y2='506.29' style='stroke-width: 1.92; stroke: #C56000; stroke-linecap: butt;' />
+<text x='402.05' y='486.62' style='font-size: 10.00px; font-family: "Arial";' textLength='98.94px' lengthAdjust='spacingAndGlyphs'>Core Crown expenses</text>
+<text x='402.05' y='509.88' style='font-size: 10.00px; font-family: "Arial";' textLength='108.39px' lengthAdjust='spacingAndGlyphs'>Core Crown tax revenue</text>
+<text x='15.94' y='48.13' style='font-size: 12.00px; font-family: "Arial";' textLength='194.72px' lengthAdjust='spacingAndGlyphs'>PREFU 2026 tax and expense ratios</text>
+<text x='15.94' y='29.55' style='font-size: 19.00px; font-weight: bold; font-family: "Arial";' textLength='315.69px' lengthAdjust='spacingAndGlyphs'>What does the fiscal plan assume?</text>
+<text x='15.94' y='533.33' style='font-size: 9.00px; font-family: "Arial";' textLength='545.00px' lengthAdjust='spacingAndGlyphs'>Actuals / unaudited / forecast: 2026 fiscal results are unaudited; 2027 onward are forecasts (dashed divider). Policy baseline, not election</text>
+<text x='15.94' y='545.75' style='font-size: 9.00px; font-family: "Arial";' textLength='39.00px' lengthAdjust='spacingAndGlyphs'>promises.</text>
+<text x='15.94' y='558.17' style='font-size: 9.00px; font-family: "Arial";' textLength='265.52px' lengthAdjust='spacingAndGlyphs'>Sources: Treasury PREFU September 2026 charts and time series</text>
+</g>
+</g>
+</svg>

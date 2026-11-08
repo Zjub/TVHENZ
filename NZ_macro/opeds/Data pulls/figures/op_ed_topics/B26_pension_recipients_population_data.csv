@@ -1,0 +1,43 @@
+year,recipients,source_id,regime,population,cpi,per_1000_residents,counting_regime
+1960,204036,msd_statistical_2012,Archival pension series,2371800,4.9921648004467,86.02580318745257,Before non-qualified spouses included
+1965,214659,msd_statistical_2012,Archival pension series,2628400,5.69281967867984,81.66907624410287,Before non-qualified spouses included
+1970,241772,msd_statistical_2012,Archival pension series,2810700,7.23277641003797,86.0184295727043,Before non-qualified spouses included
+1975,289348,msd_statistical_2012,Archival pension series,3083100,11.7675753338946,93.84969673380688,Before non-qualified spouses included
+1980,405834,msd_statistical_2012,Archival pension series,3112900,23.4662419623063,130.3716791416364,Before non-qualified spouses included
+1985,459813,msd_statistical_2012,Archival pension series,3247100,41.3668631282974,141.60728034245943,Before non-qualified spouses included
+1990,495500,msd_statistical_2012,Archival pension series,3329800,64.6755789843069,148.80773620037235,Before non-qualified spouses included
+1991,506047,msd_statistical_2012,Archival pension series,3495100,66.3586916339567,144.7875597264742,Before non-qualified spouses included
+1992,504561,msd_statistical_2012,Archival pension series,3531700,67.031940556103,142.86632499929215,Before non-qualified spouses included
+1993,488893,msd_statistical_2012,Archival pension series,3572200,67.8954512198755,136.86047813672246,Before non-qualified spouses included
+1994,477400,msd_statistical_2012,Archival pension series,3620000,69.0804834258259,131.87845303867405,Before non-qualified spouses included
+1995,469239,msd_statistical_2012,Archival pension series,3673400,71.6744169878801,127.73969619426146,Before non-qualified spouses included
+1996,481565,msd_statistical_2012,Archival pension series,3732000,73.3126884933662,129.03670953912112,Includes non-qualified spouses
+1997,474451,msd_statistical_2012,Archival pension series,3781300,74.1830188512677,125.47298548118373,Includes non-qualified spouses
+1998,469307,msd_statistical_2012,Archival pension series,3815000,75.1216151198577,123.01625163827,Includes non-qualified spouses
+1999,461137,msd_statistical_2012,Archival pension series,3835100,75.0357758064178,120.24119318922584,Includes non-qualified spouses
+2000,453401,msd_statistical_2012,Archival pension series,3857700,76.9981372744838,117.5314306452031,Includes non-qualified spouses
+2001,446706,msd_statistical_2012,Archival pension series,3880500,79.0199669167589,115.11557788944724,Includes non-qualified spouses
+2002,450435,msd_statistical_2012,Archival pension series,3948500,81.135404585527,114.0774977839686,Includes non-qualified spouses
+2003,457278,msd_statistical_2012,Archival pension series,4027200,82.5581743082921,113.54737783075088,Includes non-qualified spouses
+2004,464624,msd_statistical_2012,Archival pension series,4087500,84.448962093315,113.66948012232416,Includes non-qualified spouses
+2005,475215,msd_statistical_2012,Archival pension series,4133900,87.0136967707976,114.95561092430876,Includes non-qualified spouses
+2006,488825,msd_statistical_2012,Archival pension series,4184600,89.942057428887,116.81522726186492,Includes non-qualified spouses
+2007,502717,msd_statistical_2012,Archival pension series,4223800,92.0792094230958,119.02007670817748,Includes non-qualified spouses
+2008,514276,msd_statistical_2012,Archival pension series,4259800,95.7245787073258,120.72773369641769,Includes non-qualified spouses
+2009,530758,msd_national_2013,Modern June NZ Super series,4302600,97.7497768150263,123.35750476456096,Includes non-qualified spouses
+2010,550520,msd_national_2013,Modern June NZ Super series,4350700,100,126.53595973061807,Includes non-qualified spouses
+2011,571239,msd_national_2013,Modern June NZ Super series,4384000,104.02790667392,130.30086678832117,Includes non-qualified spouses
+2012,598933,msd_national_2013,Modern June NZ Super series,4408100,105.130512172271,135.87101018579435,Includes non-qualified spouses
+2013,626313,msd_national_2013,Modern June NZ Super series,4442100,106.323136529614,140.99479975687177,Includes non-qualified spouses
+2014,653247,msd_nzs_2018,Modern June NZ Super series,4516500,107.628261011102,144.63566921288609,Includes non-qualified spouses
+2015,677935,msd_nzs_2018,Modern June NZ Super series,4609400,107.943293912264,147.07662602507918,Includes non-qualified spouses
+2016,704607,msd_nzs_2018,Modern June NZ Super series,4714100,108.640866961892,149.46797904159862,Includes non-qualified spouses
+2017,729444,msd_nzs_2021,Modern June NZ Super series,4813600,110.65157873712,151.53814193119493,Includes non-qualified spouses
+2018,753318,msd_nzs_2021,Modern June NZ Super series,4900600,112.420119642595,153.71954454556587,Includes non-qualified spouses
+2019,781437,msd_nzs_2021,Modern June NZ Super series,4970300,114.240911764413,157.22129448926626,Includes non-qualified spouses
+2020,809001,msd_nzs_2021,Modern June NZ Super series,5072400,116.19964268334,159.49077359829667,Includes non-qualified spouses
+2021,837549,msd_nzs_2026,Modern June NZ Super series,5084600,120.779210747308,164.72269205050543,Includes non-qualified spouses
+2022,858390,msd_nzs_2026,Modern June NZ Super series,5081700,129.441767205657,168.9178818112049,Includes non-qualified spouses
+2023,883239,msd_nzs_2026,Modern June NZ Super series,5200000,136.86287449004,169.85365384615383,Includes non-qualified spouses
+2024,912420,msd_nzs_2026,Modern June NZ Super series,5290000,140.863099606157,172.48015122873343,Includes non-qualified spouses
+2025,941511,msd_nzs_2026,Modern June NZ Super series,5324700,144.863324722274,176.819539128965,Includes non-qualified spouses

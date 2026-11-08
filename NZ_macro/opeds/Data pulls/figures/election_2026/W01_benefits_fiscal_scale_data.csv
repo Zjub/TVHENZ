@@ -1,0 +1,41 @@
+measure,year,status,value,source_sheet,source_row,block,gdp_millions,percent_gdp
+New Zealand Superannuation,2022,Actual,17764,Core Crown Expense Tables,54,Benefit expense,365304,4.862799202855704
+New Zealand Superannuation,2023,Actual,19517,Core Crown Expense Tables,54,Benefit expense,401827,4.857065353995625
+New Zealand Superannuation,2024,Actual,21574,Core Crown Expense Tables,54,Benefit expense,420858,5.126194583446198
+New Zealand Superannuation,2025,Actual,23191,Core Crown Expense Tables,54,Benefit expense,435071,5.330394349428024
+New Zealand Superannuation,2026,Unaudited Actual,24721,Core Crown Expense Tables,54,Benefit expense,455882,5.422675165942064
+New Zealand Superannuation,2027,Forecast,26480,Core Crown Expense Tables,54,Benefit expense,480119,5.515299332040598
+New Zealand Superannuation,2028,Forecast,28321,Core Crown Expense Tables,54,Benefit expense,507501,5.580481614814552
+New Zealand Superannuation,2029,Forecast,29706,Core Crown Expense Tables,54,Benefit expense,532347,5.580194872893056
+New Zealand Superannuation,2030,Forecast,31237,Core Crown Expense Tables,54,Benefit expense,557351,5.60454722428057
+New Zealand Superannuation,2031,Forecast,32888,Core Crown Expense Tables,54,Benefit expense,582358,5.647385285339945
+Jobseeker Support and Emergency Benefit,2022,Actual,3330,Core Crown Expense Tables,55,Benefit expense,365304,0.9115695420800211
+Jobseeker Support and Emergency Benefit,2023,Actual,3473,Core Crown Expense Tables,55,Benefit expense,401827,0.8643022992481839
+Jobseeker Support and Emergency Benefit,2024,Actual,4062,Core Crown Expense Tables,55,Benefit expense,420858,0.9651711503642558
+Jobseeker Support and Emergency Benefit,2025,Actual,4641,Core Crown Expense Tables,55,Benefit expense,435071,1.0667224430035558
+Jobseeker Support and Emergency Benefit,2026,Unaudited Actual,4926,Core Crown Expense Tables,55,Benefit expense,455882,1.0805427720331138
+Jobseeker Support and Emergency Benefit,2027,Forecast,5031,Core Crown Expense Tables,55,Benefit expense,480119,1.0478652167483478
+Jobseeker Support and Emergency Benefit,2028,Forecast,5011,Core Crown Expense Tables,55,Benefit expense,507501,0.9873872169710011
+Jobseeker Support and Emergency Benefit,2029,Forecast,4904,Core Crown Expense Tables,55,Benefit expense,532347,0.9212036510020719
+Jobseeker Support and Emergency Benefit,2030,Forecast,5001,Core Crown Expense Tables,55,Benefit expense,557351,0.8972801699467661
+Jobseeker Support and Emergency Benefit,2031,Forecast,5109,Core Crown Expense Tables,55,Benefit expense,582358,0.8772954093530096
+Supported Living Payment,2022,Actual,2047,Core Crown Expense Tables,56,Benefit expense,365304,0.5603552110023432
+Supported Living Payment,2023,Actual,2311,Core Crown Expense Tables,56,Benefit expense,401827,0.5751231251259871
+Supported Living Payment,2024,Actual,2530,Core Crown Expense Tables,56,Benefit expense,420858,0.6011528829201298
+Supported Living Payment,2025,Actual,2668,Core Crown Expense Tables,56,Benefit expense,435071,0.6132332423903225
+Supported Living Payment,2026,Unaudited Actual,2826,Core Crown Expense Tables,56,Benefit expense,455882,0.6198972541140032
+Supported Living Payment,2027,Forecast,3006,Core Crown Expense Tables,56,Benefit expense,480119,0.6260947806689592
+Supported Living Payment,2028,Forecast,3190,Core Crown Expense Tables,56,Benefit expense,507501,0.6285701900094778
+Supported Living Payment,2029,Forecast,3286,Core Crown Expense Tables,56,Benefit expense,532347,0.6172665573394797
+Supported Living Payment,2030,Forecast,3434,Core Crown Expense Tables,56,Benefit expense,557351,0.6161287949604468
+Supported Living Payment,2031,Forecast,3581,Core Crown Expense Tables,56,Benefit expense,582358,0.6149138502433211
+Sole Parent Support,2022,Actual,1704,Core Crown Expense Tables,57,Benefit expense,365304,0.4664608107220288
+Sole Parent Support,2023,Actual,1917,Core Crown Expense Tables,57,Benefit expense,401827,0.4770709783065847
+Sole Parent Support,2024,Actual,2097,Core Crown Expense Tables,57,Benefit expense,420858,0.4982678243017835
+Sole Parent Support,2025,Actual,2255,Core Crown Expense Tables,57,Benefit expense,435071,0.5183062074925702
+Sole Parent Support,2026,Unaudited Actual,2386,Core Crown Expense Tables,57,Benefit expense,455882,0.5233810503595229
+Sole Parent Support,2027,Forecast,2438,Core Crown Expense Tables,57,Benefit expense,480119,0.507790776869901
+Sole Parent Support,2028,Forecast,2392,Core Crown Expense Tables,57,Benefit expense,507501,0.47132912053375264
+Sole Parent Support,2029,Forecast,2234,Core Crown Expense Tables,57,Benefit expense,532347,0.41965109223870894
+Sole Parent Support,2030,Forecast,2240,Core Crown Expense Tables,57,Benefit expense,557351,0.4019011359089694
+Sole Parent Support,2031,Forecast,2284,Core Crown Expense Tables,57,Benefit expense,582358,0.39219861322416794

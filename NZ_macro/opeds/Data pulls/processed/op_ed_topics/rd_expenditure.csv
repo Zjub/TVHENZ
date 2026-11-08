@@ -1,0 +1,235 @@
+breakdown,category,year,value_millions,status,unit,footnotes,relative_sampling_error_percent
+Published_Industry,Primary,2016,96,,NZ Dollars (millions),12,23.8
+Published_Industry,Primary,2018,98,,NZ Dollars (millions),12,49.8
+Published_Industry,Primary,2019,98,,NZ Dollars (millions),12,30.2
+Published_Industry,Primary,2020,101,,NZ Dollars (millions),12,29.7
+Published_Industry,Primary,2021,91,,NZ Dollars (millions),12,26
+Published_Industry,Primary,2022,89,,NZ Dollars (millions),12,42.8
+Published_Industry,Primary,2023,139,,NZ Dollars (millions),12,40.8
+Published_Industry,Primary,2024,204,,NZ Dollars (millions),12,33.7
+Published_Industry,Primary,2025,197,,NZ Dollars (millions),12,30.7
+Published_Industry,Food_Manufacturing,2016,110,,NZ Dollars (millions),12,27.1
+Published_Industry,Food_Manufacturing,2018,74,,NZ Dollars (millions),12,17.8
+Published_Industry,Food_Manufacturing,2019,78,,NZ Dollars (millions),12,22.7
+Published_Industry,Food_Manufacturing,2020,108,,NZ Dollars (millions),12,12.6
+Published_Industry,Food_Manufacturing,2021,99,,NZ Dollars (millions),12,18.2
+Published_Industry,Food_Manufacturing,2022,148,,NZ Dollars (millions),12,10.5
+Published_Industry,Food_Manufacturing,2023,161,R,NZ Dollars (millions),12,13.9
+Published_Industry,Food_Manufacturing,2024,234,R,NZ Dollars (millions),12,75.6
+Published_Industry,Food_Manufacturing,2025,207,,NZ Dollars (millions),12,29.5
+Published_Industry,Beverage and tobacco manufacturing,2016,7,,NZ Dollars (millions),3 and 12,23.5
+Published_Industry,Beverage and tobacco manufacturing,2018,9,,NZ Dollars (millions),3 and 12,57.7
+Published_Industry,Beverage and tobacco manufacturing,2019,10,,NZ Dollars (millions),3 and 12,32.7
+Published_Industry,Beverage and tobacco manufacturing,2020,12,,NZ Dollars (millions),3 and 12,63.9
+Published_Industry,Beverage and tobacco manufacturing,2021,11,,NZ Dollars (millions),3 and 12,13.9
+Published_Industry,Beverage and tobacco manufacturing,2022,9,,NZ Dollars (millions),3 and 12,10.8
+Published_Industry,Beverage and tobacco manufacturing,2023,11,,NZ Dollars (millions),3 and 12,12.5
+Published_Industry,Beverage and tobacco manufacturing,2024,11,,NZ Dollars (millions),3 and 12,12.4
+Published_Industry,Beverage and tobacco manufacturing,2025,13,,NZ Dollars (millions),3 and 12,12.2
+Published_Industry,"Textiles, clothing, footwear, and leather manufacturing",2016,6,,NZ Dollars (millions),3 and 12,14.2
+Published_Industry,"Textiles, clothing, footwear, and leather manufacturing",2018,9,,NZ Dollars (millions),3 and 12,33.5
+Published_Industry,"Textiles, clothing, footwear, and leather manufacturing",2019,11,,NZ Dollars (millions),3 and 12,30.8
+Published_Industry,"Textiles, clothing, footwear, and leather manufacturing",2020,12,,NZ Dollars (millions),3 and 12,41.2
+Published_Industry,"Textiles, clothing, footwear, and leather manufacturing",2021,14,,NZ Dollars (millions),3 and 12,26.8
+Published_Industry,"Textiles, clothing, footwear, and leather manufacturing",2022,12,,NZ Dollars (millions),3 and 12,17.1
+Published_Industry,"Textiles, clothing, footwear, and leather manufacturing",2023,19,,NZ Dollars (millions),3 and 12,25.7
+Published_Industry,"Textiles, clothing, footwear, and leather manufacturing",2024,17,,NZ Dollars (millions),3 and 12,17.8
+Published_Industry,"Textiles, clothing, footwear, and leather manufacturing",2025,16,,NZ Dollars (millions),3 and 12,27.1
+Published_Industry,"Petroleum, coal, chemical, and associated product",2016,76,,NZ Dollars (millions),12,14.5
+Published_Industry,"Petroleum, coal, chemical, and associated product",2018,119,,NZ Dollars (millions),12,36
+Published_Industry,"Petroleum, coal, chemical, and associated product",2019,117,,NZ Dollars (millions),12,22.9
+Published_Industry,"Petroleum, coal, chemical, and associated product",2020,104,,NZ Dollars (millions),12,25.7
+Published_Industry,"Petroleum, coal, chemical, and associated product",2021,90,,NZ Dollars (millions),12,28.7
+Published_Industry,"Petroleum, coal, chemical, and associated product",2022,64,,NZ Dollars (millions),12,18.4
+Published_Industry,"Petroleum, coal, chemical, and associated product",2023,72,,NZ Dollars (millions),12,13.7
+Published_Industry,"Petroleum, coal, chemical, and associated product",2024,77,,NZ Dollars (millions),12,16.3
+Published_Industry,"Petroleum, coal, chemical, and associated product",2025,98,,NZ Dollars (millions),12,21.4
+Published_Industry,Non-metallic mineral product manufacturing,2016,3,,NZ Dollars (millions),3 and 12,27.9
+Published_Industry,Non-metallic mineral product manufacturing,2018,3,,NZ Dollars (millions),3 and 12,52.2
+Published_Industry,Non-metallic mineral product manufacturing,2019,3,,NZ Dollars (millions),3 and 12,93.8
+Published_Industry,Non-metallic mineral product manufacturing,2020,2,,NZ Dollars (millions),3 and 12,121.6
+Published_Industry,Non-metallic mineral product manufacturing,2021,6,,NZ Dollars (millions),3 and 12,17.3
+Published_Industry,Non-metallic mineral product manufacturing,2022,5,,NZ Dollars (millions),3 and 12,32.6
+Published_Industry,Non-metallic mineral product manufacturing,2023,8,,NZ Dollars (millions),3 and 12,37.2
+Published_Industry,Non-metallic mineral product manufacturing,2024,9,,NZ Dollars (millions),3 and 12,13.4
+Published_Industry,Non-metallic mineral product manufacturing,2025,9,,NZ Dollars (millions),3 and 12,12.7
+Published_Industry,Metal product manufacturing,2016,67,,NZ Dollars (millions),12,27.9
+Published_Industry,Metal product manufacturing,2018,71,,NZ Dollars (millions),12,10.4
+Published_Industry,Metal product manufacturing,2019,82,,NZ Dollars (millions),12,9
+Published_Industry,Metal product manufacturing,2020,93,,NZ Dollars (millions),12,10
+Published_Industry,Metal product manufacturing,2021,72,,NZ Dollars (millions),12,19.3
+Published_Industry,Metal product manufacturing,2022,69,,NZ Dollars (millions),12,13.5
+Published_Industry,Metal product manufacturing,2023,102,,NZ Dollars (millions),12,15.4
+Published_Industry,Metal product manufacturing,2024,127,,NZ Dollars (millions),12,19.9
+Published_Industry,Metal product manufacturing,2025,89,,NZ Dollars (millions),12,13.7
+Published_Industry,Machinery and equipment manufacturing,2016,392,,NZ Dollars (millions),12,11
+Published_Industry,Machinery and equipment manufacturing,2018,372,,NZ Dollars (millions),12,13.1
+Published_Industry,Machinery and equipment manufacturing,2019,450,,NZ Dollars (millions),12,12.6
+Published_Industry,Machinery and equipment manufacturing,2020,497,,NZ Dollars (millions),12,11.7
+Published_Industry,Machinery and equipment manufacturing,2021,461,,NZ Dollars (millions),12,10
+Published_Industry,Machinery and equipment manufacturing,2022,538,,NZ Dollars (millions),12,8.2
+Published_Industry,Machinery and equipment manufacturing,2023,640,,NZ Dollars (millions),12,8.1
+Published_Industry,Machinery and equipment manufacturing,2024,716,,NZ Dollars (millions),12,9.5
+Published_Industry,Machinery and equipment manufacturing,2025,690,,NZ Dollars (millions),12,7.8
+Published_Industry,Other manufacturing,2016,10,,NZ Dollars (millions),3 and 12,21.5
+Published_Industry,Other manufacturing,2018,17,,NZ Dollars (millions),12,33.6
+Published_Industry,Other manufacturing,2019,28,,NZ Dollars (millions),12,32.5
+Published_Industry,Other manufacturing,2020,18,,NZ Dollars (millions),12,21.3
+Published_Industry,Other manufacturing,2021,21,,NZ Dollars (millions),12,33.1
+Published_Industry,Other manufacturing,2022,30,,NZ Dollars (millions),12,37.9
+Published_Industry,Other manufacturing,2023,29,,NZ Dollars (millions),12,16.1
+Published_Industry,Other manufacturing,2024,34,,NZ Dollars (millions),12,14.9
+Published_Industry,Other manufacturing,2025,35,,NZ Dollars (millions),12,18.7
+Published_Industry,Wholesale trade,2016,111,,NZ Dollars (millions),12,17.3
+Published_Industry,Wholesale trade,2018,233,,NZ Dollars (millions),12,40.3
+Published_Industry,Wholesale trade,2019,182,,NZ Dollars (millions),12,16.6
+Published_Industry,Wholesale trade,2020,174,,NZ Dollars (millions),12,21
+Published_Industry,Wholesale trade,2021,188,,NZ Dollars (millions),12,17
+Published_Industry,Wholesale trade,2022,192,,NZ Dollars (millions),12,10.5
+Published_Industry,Wholesale trade,2023,223,,NZ Dollars (millions),12,13.8
+Published_Industry,Wholesale trade,2024,173,,NZ Dollars (millions),12,11
+Published_Industry,Wholesale trade,2025,206,,NZ Dollars (millions),12,29
+Published_Industry,Scientific research and technical services,2016,75,,NZ Dollars (millions),12,18.8
+Published_Industry,Scientific research and technical services,2018,118,,NZ Dollars (millions),12,48.2
+Published_Industry,Scientific research and technical services,2019,102,,NZ Dollars (millions),12,29.3
+Published_Industry,Scientific research and technical services,2020,181,,NZ Dollars (millions),12,36.7
+Published_Industry,Scientific research and technical services,2021,202,,NZ Dollars (millions),12,20.8
+Published_Industry,Scientific research and technical services,2022,320,,NZ Dollars (millions),12,11.6
+Published_Industry,Scientific research and technical services,2023,382,,NZ Dollars (millions),12,12.6
+Published_Industry,Scientific research and technical services,2024,465,,NZ Dollars (millions),12,20.7
+Published_Industry,Scientific research and technical services,2025,420,,NZ Dollars (millions),12,10
+Published_Industry,Computer services,2016,436,,NZ Dollars (millions),12,12.5
+Published_Industry,Computer services,2018,582,,NZ Dollars (millions),12,16.2
+Published_Industry,Computer services,2019,748,,NZ Dollars (millions),12,11.5
+Published_Industry,Computer services,2020,924,,NZ Dollars (millions),12,12
+Published_Industry,Computer services,2021,968,,NZ Dollars (millions),12,10.3
+Published_Industry,Computer services,2022,1063,,NZ Dollars (millions),12,11.8
+Published_Industry,Computer services,2023,1081,,NZ Dollars (millions),12,12.6
+Published_Industry,Computer services,2024,1157,,NZ Dollars (millions),12,12.9
+Published_Industry,Computer services,2025,1126,,NZ Dollars (millions),12,10.2
+Published_Industry,Other services,2016,212,,NZ Dollars (millions),4 and 12,24.9
+Published_Industry,Other services,2018,428,,NZ Dollars (millions),4 and 12,45.3
+Published_Industry,Other services,2019,517,,NZ Dollars (millions),4 and 12,17.5
+Published_Industry,Other services,2020,505,,NZ Dollars (millions),4 and 12,11.7
+Published_Industry,Other services,2021,645,,NZ Dollars (millions),4 and 12,11.2
+Published_Industry,Other services,2022,643,,NZ Dollars (millions),4 and 12,15.4
+Published_Industry,Other services,2023,821,R,NZ Dollars (millions),4 and 12,20.7
+Published_Industry,Other services,2024,851,R,NZ Dollars (millions),4 and 12,17.9
+Published_Industry,Other services,2025,980,,NZ Dollars (millions),4 and 12,14.7
+Published_Industry,Scientific research,2016,589,,NZ Dollars (millions),3 and 12,0
+Published_Industry,Scientific research,2018,762,,NZ Dollars (millions),3 and 12,8.1
+Published_Industry,Scientific research,2019,,,NZ Dollars (millions),3 and 12,
+Published_Industry,Scientific research,2020,715,,NZ Dollars (millions),3 and 12,0
+Published_Industry,Scientific research,2021,,,NZ Dollars (millions),3 and 12,
+Published_Industry,Scientific research,2022,800,,NZ Dollars (millions),3 and 12,0
+Published_Industry,Scientific research,2023,,,NZ Dollars (millions),3 and 12,
+Published_Industry,Scientific research,2024,936,,NZ Dollars (millions),3 and 12,0
+Published_Industry,Scientific research,2025,,,NZ Dollars (millions),3 and 12,
+Published_Industry,Other government research,2016,69,,NZ Dollars (millions),3 and 12,34.2
+Published_Industry,Other government research,2018,66,,NZ Dollars (millions),3 and 12,36.4
+Published_Industry,Other government research,2019,,,NZ Dollars (millions),3 and 12,
+Published_Industry,Other government research,2020,86,,NZ Dollars (millions),3 and 12,28.8
+Published_Industry,Other government research,2021,,,NZ Dollars (millions),3 and 12,
+Published_Industry,Other government research,2022,100,,NZ Dollars (millions),3 and 12,20.3
+Published_Industry,Other government research,2023,,,NZ Dollars (millions),3 and 12,
+Published_Industry,Other government research,2024,103,,NZ Dollars (millions),3 and 12,28.4
+Published_Industry,Other government research,2025,,,NZ Dollars (millions),3 and 12,
+Published_Industry,Higher Education,2016,877,,NZ Dollars (millions),3 and 12,0
+Published_Industry,Higher Education,2018,960,,NZ Dollars (millions),3 and 12,0
+Published_Industry,Higher Education,2019,,,NZ Dollars (millions),3 and 12,
+Published_Industry,Higher Education,2020,1202,,NZ Dollars (millions),3 and 12,0
+Published_Industry,Higher Education,2021,,,NZ Dollars (millions),3 and 12,
+Published_Industry,Higher Education,2022,1254,,NZ Dollars (millions),3 and 12,0
+Published_Industry,Higher Education,2023,,,NZ Dollars (millions),3 and 12,
+Published_Industry,Higher Education,2024,1349,,NZ Dollars (millions),3 and 12,0
+Published_Industry,Higher Education,2025,,,NZ Dollars (millions),3 and 12,
+Sector,Business Sector,2016,1602,,NZ Dollars (millions),1 and 12,6.3
+Sector,Business Sector,2018,2134,,NZ Dollars (millions),1 and 12,12
+Sector,Business Sector,2019,2427,,NZ Dollars (millions),1 and 12,6.2
+Sector,Business Sector,2020,2731,,NZ Dollars (millions),1 and 12,6
+Sector,Business Sector,2021,2867,,NZ Dollars (millions),1 and 12,5.1
+Sector,Business Sector,2022,3182,,NZ Dollars (millions),1 and 12,5.6
+Sector,Business Sector,2023,3690,R,NZ Dollars (millions),1 and 12,6.5
+Sector,Business Sector,2024,4073,R,NZ Dollars (millions),1 and 12,7.6
+Sector,Business Sector,2025,4088,,NZ Dollars (millions),1 and 12,5.5
+Sector,Government Sector,2016,658,,NZ Dollars (millions),1 and 2 and 3 and 12,3.6
+Sector,Government Sector,2018,828,,NZ Dollars (millions),1 and 2 and 3 and 12,8
+Sector,Government Sector,2019,,,NZ Dollars (millions),1 and 2 and 3 and 12,
+Sector,Government Sector,2020,802,,NZ Dollars (millions),1 and 2 and 3 and 12,3.1
+Sector,Government Sector,2021,,,NZ Dollars (millions),1 and 2 and 3 and 12,
+Sector,Government Sector,2022,900,,NZ Dollars (millions),1 and 2 and 3 and 12,2.3
+Sector,Government Sector,2023,,,NZ Dollars (millions),1 and 2 and 3 and 12,
+Sector,Government Sector,2024,1038,,NZ Dollars (millions),1 and 2 and 3 and 12,2.8
+Sector,Government Sector,2025,,,NZ Dollars (millions),1 and 2 and 3 and 12,
+Sector,Higher Education Sector,2016,877,,NZ Dollars (millions),1 and 2 and 3 and 12,0
+Sector,Higher Education Sector,2018,960,,NZ Dollars (millions),1 and 2 and 3 and 12,0
+Sector,Higher Education Sector,2019,,,NZ Dollars (millions),1 and 2 and 3 and 12,
+Sector,Higher Education Sector,2020,1202,,NZ Dollars (millions),1 and 2 and 3 and 12,0
+Sector,Higher Education Sector,2021,,,NZ Dollars (millions),1 and 2 and 3 and 12,
+Sector,Higher Education Sector,2022,1254,,NZ Dollars (millions),1 and 2 and 3 and 12,0
+Sector,Higher Education Sector,2023,,,NZ Dollars (millions),1 and 2 and 3 and 12,
+Sector,Higher Education Sector,2024,1349,,NZ Dollars (millions),1 and 2 and 3 and 12,0
+Sector,Higher Education Sector,2025,,,NZ Dollars (millions),1 and 2 and 3 and 12,
+Size,Zero employees,2016,45,,NZ Dollars (millions),5 and 12,40
+Size,Zero employees,2018,161,,NZ Dollars (millions),5 and 12,55.7
+Size,Zero employees,2019,,,NZ Dollars (millions),5 and 12,
+Size,Zero employees,2020,174,,NZ Dollars (millions),5 and 12,40.9
+Size,Zero employees,2021,,,NZ Dollars (millions),5 and 12,
+Size,Zero employees,2022,166,,NZ Dollars (millions),5 and 12,28.5
+Size,Zero employees,2023,,,NZ Dollars (millions),5 and 12,
+Size,Zero employees,2024,164,,NZ Dollars (millions),5 and 12,46.3
+Size,Zero employees,2025,,,NZ Dollars (millions),5 and 12,
+Size,1 to 9 employees,2016,145,,NZ Dollars (millions),5 and 12,18.1
+Size,1 to 9 employees,2018,206,,NZ Dollars (millions),5 and 12,11.6
+Size,1 to 9 employees,2019,,,NZ Dollars (millions),5 and 12,
+Size,1 to 9 employees,2020,270,,NZ Dollars (millions),5 and 12,6.7
+Size,1 to 9 employees,2021,,,NZ Dollars (millions),5 and 12,
+Size,1 to 9 employees,2022,260,,NZ Dollars (millions),5 and 12,10.4
+Size,1 to 9 employees,2023,,,NZ Dollars (millions),5 and 12,
+Size,1 to 9 employees,2024,269,,NZ Dollars (millions),5 and 12,10.1
+Size,1 to 9 employees,2025,,,NZ Dollars (millions),5 and 12,
+Size,10 to 19 employees,2016,150,,NZ Dollars (millions),5 and 12,12.1
+Size,10 to 19 employees,2018,149,,NZ Dollars (millions),5 and 12,16.2
+Size,10 to 19 employees,2019,,,NZ Dollars (millions),5 and 12,
+Size,10 to 19 employees,2020,216,,NZ Dollars (millions),5 and 12,13
+Size,10 to 19 employees,2021,,,NZ Dollars (millions),5 and 12,
+Size,10 to 19 employees,2022,285,,NZ Dollars (millions),5 and 12,10.6
+Size,10 to 19 employees,2023,,,NZ Dollars (millions),5 and 12,
+Size,10 to 19 employees,2024,328,,NZ Dollars (millions),5 and 12,12
+Size,10 to 19 employees,2025,,,NZ Dollars (millions),5 and 12,
+Size,20 to 49 employees,2016,193,,NZ Dollars (millions),5 and 12,18.5
+Size,20 to 49 employees,2018,246,,NZ Dollars (millions),5 and 12,13.4
+Size,20 to 49 employees,2019,,,NZ Dollars (millions),5 and 12,
+Size,20 to 49 employees,2020,324,,NZ Dollars (millions),5 and 12,10.3
+Size,20 to 49 employees,2021,,,NZ Dollars (millions),5 and 12,
+Size,20 to 49 employees,2022,436,,NZ Dollars (millions),5 and 12,10.8
+Size,20 to 49 employees,2023,,,NZ Dollars (millions),5 and 12,
+Size,20 to 49 employees,2024,501,,NZ Dollars (millions),5 and 12,9.8
+Size,20 to 49 employees,2025,,,NZ Dollars (millions),5 and 12,
+Size,50 to 99 employees,2016,217,,NZ Dollars (millions),5 and 12,12.7
+Size,50 to 99 employees,2018,251,,NZ Dollars (millions),5 and 12,17.2
+Size,50 to 99 employees,2019,,,NZ Dollars (millions),5 and 12,
+Size,50 to 99 employees,2020,347,,NZ Dollars (millions),5 and 12,15.6
+Size,50 to 99 employees,2021,,,NZ Dollars (millions),5 and 12,
+Size,50 to 99 employees,2022,354,,NZ Dollars (millions),5 and 12,17
+Size,50 to 99 employees,2023,,,NZ Dollars (millions),5 and 12,
+Size,50 to 99 employees,2024,491,,NZ Dollars (millions),5 and 12,13.6
+Size,50 to 99 employees,2025,,,NZ Dollars (millions),5 and 12,
+Size,100 or more employees,2016,2386,,NZ Dollars (millions),5 and 12,3
+Size,100 or more employees,2018,2910,,NZ Dollars (millions),5 and 12,7.5
+Size,100 or more employees,2019,,,NZ Dollars (millions),5 and 12,
+Size,100 or more employees,2020,3402,,NZ Dollars (millions),5 and 12,3.4
+Size,100 or more employees,2021,,,NZ Dollars (millions),5 and 12,
+Size,100 or more employees,2022,3834,,NZ Dollars (millions),5 and 12,2.9
+Size,100 or more employees,2023,,,NZ Dollars (millions),5 and 12,
+Size,100 or more employees,2024,4707,R,NZ Dollars (millions),5 and 12,5
+Size,100 or more employees,2025,,,NZ Dollars (millions),5 and 12,
+Total,Total,2016,3136,,NZ Dollars (millions),12,3.3
+Total,Total,2018,3922,,NZ Dollars (millions),12,6.7
+Total,Total,2019,,,NZ Dollars (millions),12,
+Total,Total,2020,4734,,NZ Dollars (millions),12,3.5
+Total,Total,2021,,,NZ Dollars (millions),12,
+Total,Total,2022,5336,,NZ Dollars (millions),12,3.3
+Total,Total,2023,,,NZ Dollars (millions),12,
+Total,Total,2024,6460,R,NZ Dollars (millions),12,4.8
+Total,Total,2025,,,NZ Dollars (millions),12,

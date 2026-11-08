@@ -1,0 +1,1123 @@
+{
+  "registry": [
+    {
+      "provision": "Accelerated depreciation",
+      "sections_and_type": "Sections DO 4-5, 12, DP 3, DZ 17- 18, EE 31 -Deduction (timing)",
+      "explanation": "The benchmark is that capital assets are depreciated over their economic life. This expenditure allows businesses to depreciate assets faster than their economic life by uplifting the economic rate of the asset by a factor of 1.2. This reduces taxable income by a greater amount in earlier years (deferring tax payments). This treatment includes most depreciable property (eg, machines and vehicles) and primary sector land improvements. This treatment generally only applies to assets acquired before 20 May 2010 and is no longer available to new assets acquired by businesses.",
+      "rationale": "To encourage investment in capital assets.",
+      "estimate_text": "No estimate available Tax policy report: Changes to depreciation – Budget 2010",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 9
+    },
+    {
+      "provision": "Allowances of the Governor-General",
+      "sections_and_type": "Section CW 16 -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of a person. However, allowances and benefits received by the Governor-General and former Governor-Generals under the Governor-General Act 2010 are exempt from tax.",
+      "rationale": "Administrative convenience, as the Governor-General’s allowance covers both personal and office expenses.",
+      "estimate_text": "Less than $20,000 per annum Confidence high Last reviewed 2025 Review of the Civil List Act 1979 (Law Commission report – pages 11-12)",
+      "annual_estimate_millions": null,
+      "last_reviewed": 2025,
+      "pdf_page": 9
+    },
+    {
+      "provision": "Bloodstock: accelerated deductions",
+      "sections_and_type": "Sections EC 38-48 -Deduction (timing)",
+      "explanation": "The benchmark is that capital assets are depreciated over their economic life. This expenditure allows owners of bloodstock to depreciate their bloodstock faster than their economic life.",
+      "rationale": "To encourage the ownership and breeding of stallions and broodmares.",
+      "estimate_text": "$5 million per annum Confidence low Last reviewed 2025 Tax Policy report – Bloodstock write-down rates and GST on export of bloodstock",
+      "annual_estimate_millions": 5.0,
+      "last_reviewed": 2025,
+      "pdf_page": 9
+    },
+    {
+      "provision": "Bloodstock deductions",
+      "sections_and_type": "Sections EC 47C -Deduction (permanent)",
+      "explanation": "The benchmark is that racing is exempted from income tax except for established bloodstock breeding businesses. The policy allows new investors in qualifying yearlings to claim tax deductions as if they have a bloodstock breeding business.",
+      "rationale": "To encourage the ownership and breeding of stallions and broodmares.",
+      "estimate_text": "$3 million per annum Medium confidence Last reviewed 2025 Regulatory impact statement – Proposed changes to bloodstock tax rules",
+      "annual_estimate_millions": 3.0,
+      "last_reviewed": 2025,
+      "pdf_page": 9
+    },
+    {
+      "provision": "Bodies promoting amateur games and sports: exempt income",
+      "sections_and_type": "Section CW 46 -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of an entity. However, income derived by a club, society or association is exempt income, providing it is established to promote an amateur game or sport and no funds are used for private pecuniary profit.",
+      "rationale": "To encourage amateur games or sports which have the purpose of promoting physical activity across generations for the general well-being of society.",
+      "estimate_text": "No estimate available Regulatory impact statement – Amateur sports promoters’ tax exemption and sporting trusts (indirectly related)",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 10
+    },
+    {
+      "provision": "Bodies promoting scientific or industrial research: exempt income",
+      "sections_and_type": "Section CW 49 -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of an entity. However, income derived by a society or association established mainly to promote or encourage scientific or industrial research is exempt income, providing the society or association is approved by the Royal Society of New Zealand and no funds are used for private pecuniary profit.",
+      "rationale": "To encourage research that is of national interest, and ensure these institutions are on a level playing field with other tax-exempt organisations.",
+      "estimate_text": "$1 million per annum Confidence low Last reviewed 2025 Document unavailable",
+      "annual_estimate_millions": 1.0,
+      "last_reviewed": 2025,
+      "pdf_page": 10
+    },
+    {
+      "provision": "Certain income derived by transitional residents: exempt income",
+      "sections_and_type": "Sections CW 27 and HR 8 -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the worldwide income of New Zealand tax residents. However, new tax residents (both immigrants and returning New Zealanders) can gain a temporary tax exemption for up to four years on most foreign--sourced income.",
+      "rationale": "To reduce the costs to New Zealand businesses associated with recruiting highly skilled and mobile individuals; remove tax barriers that may inhibit international recruitment to New Zealand; and grow development of a competitive and innovative economy.",
+      "estimate_text": "$150 million per annum Low/medium confidence Last reviewed 2025 Reducing tax barriers to international recruitment to New Zealand – A government discussion document Tax policy report – Cabinet Committee Paper – Temporary exemption from tax on foreign income for new migrants and certain returning New Zealanders",
+      "annual_estimate_millions": 150.0,
+      "last_reviewed": 2025,
+      "pdf_page": 10
+    },
+    {
+      "provision": "Charitable or other public benefit gifts by a company: deduction",
+      "sections_and_type": "Section DB 41 -Deduction (permanent)",
+      "explanation": "The benchmark is that deductions must have a nexus with the activity of a business. However, a company is allowed a deduction for a charitable or other public benefit gift of cash when made to a donee organisation described in section LD 3(2) or listed in schedule 32 of the Income Tax Act 2007. This deduction is limited by net income.",
+      "rationale": "To incentivise charitable donations.",
+      "estimate_text": "$24 million per annum High confidence – regularly measured, refer Table 3 Last reviewed 2026 Tax incentives for giving to charities and other non-profit organisations: a government discussion document Cabinet paper – Tax incentives for giving to charities and other non- profit organisations",
+      "annual_estimate_millions": 24.0,
+      "last_reviewed": 2026,
+      "pdf_page": 11
+    },
+    {
+      "provision": "Charitable or other public benefit gifts by an individual: tax credit",
+      "sections_and_type": "Subpart LD -Tax credit",
+      "explanation": "An individual who makes a charitable or other public benefit gift is, under certain conditions, allowed a refundable tax credit. This applies to cash donations only and is limited by taxable income.",
+      "rationale": "To incentivise charitable donations.",
+      "estimate_text": "$367 million per annum High confidence – regularly measured, refer Table 3 Last reviewed 2026 Tax incentives for giving to charities and other non-profit organisations: a government discussion document Cabinet paper – Tax incentives for giving to charities and other non- profit organisations",
+      "annual_estimate_millions": 367.0,
+      "last_reviewed": 2026,
+      "pdf_page": 11
+    },
+    {
+      "provision": "Charities: exempt income",
+      "sections_and_type": "Sections CW 41, 42, 43 -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of an entity. However, business income, non-business income and charitable bequests are exempt income for registered charitable entities. The exemption does not apply to business income to the extent that the charity carries out its charitable purposes outside New Zealand.",
+      "rationale": "To support the carrying out of charitable purposes and encourage individuals to leave bequests to charities.",
+      "estimate_text": "No estimate available Taxation and the not-for-profit sector – An officials’ issues paper (indirectly related)",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 11
+    },
+    {
+      "provision": "Community housing: exempt income",
+      "sections_and_type": "Section CW 42B -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of an entity. However, income derived by community housing entities is exempt income.",
+      "rationale": "To help promote home ownership for New Zealanders who would not otherwise be able to afford to buy a house. Supports community housing providers that offer pathways to home ownership to low-income households but may no longer be considered charitable entities.",
+      "estimate_text": "No estimate available Regulatory impact statement – Tax treatment of community housing providers",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 12
+    },
+    {
+      "provision": "Community trusts: exempt income",
+      "sections_and_type": "Section CW 52 -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of an entity. Income derived by the trustee of a community trust is exempt income.",
+      "rationale": "To assist with providing community benefits for the good of the public.",
+      "estimate_text": "No estimate available Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 12
+    },
+    {
+      "provision": "Defence Force accommodation",
+      "sections_and_type": "Section CE 1D -Exemption",
+      "explanation": "The benchmark is that the market rental value of accommodation provided by an employer to an employee is income. However, the market rental value for certain accommodation provided to Defence Force employees is discounted. This means that difference between market rental value and rental charged to a member of the Defence Force is effectively exempt income.",
+      "rationale": "NZDF staff are required to accept postings anywhere in the country and some housing is on base and under certain restrictions. A discount recognises that accommodation arises from operational requirements and offers little personal benefit.",
+      "estimate_text": "Approximately $5 million per annum High confidence Last reviewed 2026 Employee allowances - special report, pages 15-16",
+      "annual_estimate_millions": 5.0,
+      "last_reviewed": 2026,
+      "pdf_page": 12
+    },
+    {
+      "provision": "Donated trading stock – adverse events",
+      "sections_and_type": "Section GC 1(5)(b) -Exemption",
+      "explanation": "The benchmark is that a person has income when they dispose of trading stock below market value and the disposal has no nexus with income. However, the disposal of trading stock is not income when it is given to a farming business impacted by an adverse event.",
+      "rationale": "To support businesses in the agricultural, farming and fishing sector affected by adverse events.",
+      "estimate_text": "Unquantifiable as depends on event occurring Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 12
+    },
+    {
+      "provision": "Donated trading stock",
+      "sections_and_type": "Section GC 1 -Exemption",
+      "explanation": "The benchmark is that a person has income when they dispose of trading stock below market value and the disposal has no nexus with income. However, the disposal of trading stock is not income when it is given to a donee organisation.",
+      "rationale": "To remove the tax- related disincentive to donate trading stock to donee organisations.",
+      "estimate_text": "Estimate unavailable Regulatory impact statement – Disposals of trading stock at below market value",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 13
+    },
+    {
+      "provision": "Environmental restoration accounts: deductions",
+      "sections_and_type": "Subpart EK -Deduction (timing)",
+      "explanation": "The benchmark is that deductions have a nexus with income in the applicable income year. However, persons who carry out environmental restoration activity as outlined in Schedule 19 of the Income Tax Act 2007 may reduce their taxable income in a year by depositing taxable income with Inland Revenue. The schemes allow taxable income to be transferred between years thereby smoothing taxable income.",
+      "rationale": "To facilitate income smoothing; expenditure on environmental restoration may give rise to a tax loss which is of limited value after a business stops generating income.",
+      "estimate_text": "Estimate unavailable (confidentiality) Tax Information Bulletin – Vol 17, No7 September 2005 – page 24",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 13
+    },
+    {
+      "provision": "Environmental restoration accounts: interest",
+      "sections_and_type": "Section EK 6",
+      "explanation": "The scheme pays interest on the balance of an environmental restoration account. The accounts allow site restoration and environmental restoration monitoring costs to be matched against prior business income.",
+      "rationale": "To compensate for the loss of the use of money.",
+      "estimate_text": "$4.2 million per annum Appropriated expenditure, refer Table 3 Estimate last reviewed: 2026 Tax Information Bulletin – Vol 17, No7 September 2005 – page 24",
+      "annual_estimate_millions": 4.2,
+      "last_reviewed": null,
+      "pdf_page": 13
+    },
+    {
+      "provision": "Farming business expenditure: accelerated deductions",
+      "sections_and_type": "Sections DO 1-3, DO 10 -Deduction (timing)",
+      "explanation": "The benchmark is that capital assets are depreciated over their economic life. However, certain deductions granted for improvements and enhancements to land for farming can be expensed rather than treated as capital and amortised, eg, fencing.",
+      "rationale": "To increase the productive capacity of existing farms and the quality of the nation’s exports.",
+      "estimate_text": "Estimate unavailable Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 13
+    },
+    {
+      "provision": "Film industry expenditure: accelerated deductions",
+      "sections_and_type": "Sections DS 1-4 -Deduction (timing)",
+      "explanation": "The benchmark is that capital assets are depreciated over their economic life. However, expenditure incurred acquiring film rights or film production expenditure can be expensed over a specified time frame.",
+      "rationale": "To encourage the development of the New Zealand screen production industry.",
+      "estimate_text": "Estimate unavailable Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 13
+    },
+    {
+      "provision": "New foreign investment fund calculation method (revenue account method)",
+      "sections_and_type": "Sections EX 46B and EX 56B -Deferral",
+      "explanation": "The benchmark is that foreign shares are taxed on a deemed income basis. The new method allows new migrants to be taxed on a realisation basis.",
+      "rationale": "To remove a tax barrier to migration and permanent settlement in New Zealand of highly skilled individuals.",
+      "estimate_text": "$1 million per annum Low confidence Last reviewed 2025 Cabinet Paper: Changes to Foreign Investment Fund Rules",
+      "annual_estimate_millions": 1.0,
+      "last_reviewed": 2025,
+      "pdf_page": 14
+    },
+    {
+      "provision": "Forestry encouragement grant: accelerated deductions",
+      "sections_and_type": "Section DP 5 -Deduction (timing)",
+      "explanation": "The benchmark is that capital assets are depreciated over their economic life. However, forestry expenditure incurred by a person with a forestry encouragement grant can be immediately deducted if it is not grant-related. There are no new grants being issued under this scheme.",
+      "rationale": "To encourage the planting of woodlots and ensure an adequate supply of timber for future needs.",
+      "estimate_text": "Estimate unavailable Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 14
+    },
+    {
+      "provision": "Forestry expenditure: accelerated deductions",
+      "sections_and_type": "Section DP 1 -Deduction (timing)",
+      "explanation": "The benchmark is that forestry expenditure is matched against harvest proceeds (using trading stock or revenue account rules). However, certain expenditures associated with forestry (eg, planting or tending costs) can be immediately expensed.",
+      "rationale": "To encourage the establishment of new forests.",
+      "estimate_text": "Estimate unavailable Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 14
+    },
+    {
+      "provision": "Friendly societies: exempt income",
+      "sections_and_type": "Section CW 44 -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of an entity. However, specified income derived by a friendly society is treated as exempt income.",
+      "rationale": "To support friendly societies and credit unions.",
+      "estimate_text": "Estimate unavailable Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 14
+    },
+    {
+      "provision": "Fringe benefit tax exemption for certain public transport fare subsidies",
+      "sections_and_type": "Section CX 19C -Exemption",
+      "explanation": "The benchmark is that benefits provided to employees (other than those provided on business premises) are subject to fringe benefit tax. However, a public transport fare that an employer subsidises mainly for the purposes of an employee travelling between their home and place of work is not a fringe benefit.",
+      "rationale": "To address an inconsistency in the Fringe benefit tax treatment between the different forms of transport used for commuting (employer provided car parks were already largely exempt from FBT). Also, environmentally friendly.",
+      "estimate_text": "$11 million per annum Low confidence - the estimate for this expenditure is combined with the tax expenditure below (Fringe benefit tax exemption for certain self-powered and low-powered vehicles and vehicle-share services). Last reviewed 2018 Regulatory impact statement – Fringe benefit tax exemption for public transport",
+      "annual_estimate_millions": 11.0,
+      "last_reviewed": 2018,
+      "pdf_page": 14
+    },
+    {
+      "provision": "Fringe benefit tax exemption for certain self- powered and low- powered vehicles and vehicle-share services",
+      "sections_and_type": "Section CX 19D -Exemption",
+      "explanation": "The benchmark is that benefits provided to employees (other than those provided on business premises) are subject to Fringe benefit tax. However, a bike, electric bike, scooter or electric scooter that an employer provides to an employee for the main purpose of travelling between their home and place of work is not a fringe benefit.",
+      "rationale": "As above, to address an inconsistency in the Fringe benefit tax treatment between the different forms of transport used for commuting.",
+      "estimate_text": "The estimate for this expenditure is combined with the tax expenditure above (Fringe benefit tax exemption for certain public transport fare subsidies).",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 15
+    },
+    {
+      "provision": "Fringe benefit tax: partial exclusion for charities",
+      "sections_and_type": "Section CX 25 -Exemption",
+      "explanation": "The benchmark is that benefits provided to employees of a business are subject to Fringe benefit tax. Generally, fringe benefits provided to employees of charitable organisations when they are carrying out the charitable purposes of the charity are exempt from Fringe benefit tax.",
+      "rationale": "The cost of complying with Fringe benefit tax obligations would be onerous and reduce the funds available for charitable purposes.",
+      "estimate_text": "$8 million per annum Low confidence Last reviewed 2025 Taxation and the not-for-profit sector – An officials’ issues paper (pages 21-22)",
+      "annual_estimate_millions": 8.0,
+      "last_reviewed": 2025,
+      "pdf_page": 15
+    },
+    {
+      "provision": "Funeral Trusts: exempt income",
+      "sections_and_type": "Section CW 45 -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of an entity. Interest or a dividend derived by a trustee in a funeral trust is exempt income.",
+      "rationale": "To reduce compliance costs for sickness, accident and death funds that would need to restructure to be recognised as friendly societies.",
+      "estimate_text": "Estimate unavailable Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 15
+    },
+    {
+      "provision": "Herd improvement bodies: exempt income",
+      "sections_and_type": "Section CW 51 -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of an entity. Income derived by a herd improvement association, or society established mainly to promote an improvement in New Zealand dairy cattle, is exempt income, providing no funds are used for private pecuniary profit.",
+      "rationale": "Originally, herd improvement bodies were considered of national significance.",
+      "estimate_text": "$1 million per annum Medium-high confidence Last reviewed 2025 Document unavailable",
+      "annual_estimate_millions": 1.0,
+      "last_reviewed": 2025,
+      "pdf_page": 15
+    },
+    {
+      "provision": "Income equalisation schemes: deduction",
+      "sections_and_type": "Subpart EH -Deferral",
+      "explanation": "The benchmark is that income is recognised in the year it is derived. However, persons working in forestry, fishing, or farming entities may reduce their taxable income in a year by depositing taxable income with Inland Revenue, to be taxed in a later year when it is withdrawn.",
+      "rationale": "To facilitate income smoothing.",
+      "estimate_text": "+/- $60 million, depends on whether people are depositing or withdrawing from the scheme in any given year. High confidence Last reviewed 2026 Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": 2026,
+      "pdf_page": 15
+    },
+    {
+      "provision": "Income equalisation schemes: interest",
+      "sections_and_type": "Section EH 6",
+      "explanation": "The scheme pays interest on the balance of the account.",
+      "rationale": "To compensate for the loss of the use of money.",
+      "estimate_text": "$7 million per annum Appropriated expenditure, refer Table 3 High confidence Last reviewed 2026 Document unavailable",
+      "annual_estimate_millions": 7.0,
+      "last_reviewed": 2026,
+      "pdf_page": 16
+    },
+    {
+      "provision": "Income for military or police service in operational area: exempt income",
+      "sections_and_type": "Sections CW 23-24 -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of an entity. Specified income derived by members of the New Zealand Defence Force (or the police) serving in an operational area can be treated as exempt income.",
+      "rationale": "To increase equity and reduce the administrative burden across the New Zealand Defence Force and the Police.",
+      "estimate_text": "Less than $4 million per annum High confidence Last reviewed: 2026 Tax Information Bulletin Vol 19 No 3 April 2007 – page 68",
+      "annual_estimate_millions": 4.0,
+      "last_reviewed": null,
+      "pdf_page": 16
+    },
+    {
+      "provision": "Income from conducting gaming-machine gambling: exempt income",
+      "sections_and_type": "Section CW 48 -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of a person. However, gross gambling proceeds from gaming-machine gambling are exempt income if the person complies with the Gambling Act 2003. Note that turnover is separately taxed, and in the latest year raised $204 million.",
+      "rationale": "To reduce compliance costs as income is used for authorised purposes, which generally have an income tax exemption.",
+      "estimate_text": "$203 million per annum High confidence Last reviewed 2025 Document unavailable",
+      "annual_estimate_millions": 203.0,
+      "last_reviewed": 2025,
+      "pdf_page": 16
+    },
+    {
+      "provision": "Independent earner: tax credit",
+      "sections_and_type": "Section LC 13 -Tax Credit",
+      "explanation": "The benchmark is that tax liabilities are determined by applying the relevant tax rates to taxable income. However, individuals whose income is between $24,000 and $70,000, and who are not receiving certain forms of income, are entitled to a tax credit of $520. This credit abates once annual income rises above $66,000.",
+      "rationale": "To improve incentives to participate in the workforce.",
+      "estimate_text": "$391 million per annum High confidence – regularly measured, refer Table 3 Last reviewed 2026 Treasury Report: Removing the Independent Earner Tax Credit",
+      "annual_estimate_millions": 391.0,
+      "last_reviewed": 2026,
+      "pdf_page": 16
+    },
+    {
+      "provision": "Interest on home vendor mortgages: tax credit",
+      "sections_and_type": "Sections LZ 6-8 -Tax Credit",
+      "explanation": "A tax credit may be available for interest from a home vendor mortgage, providing it was approved by the Housing NZ Corporation, on or before 5 August 1982.",
+      "rationale": "To encourage home ownership.",
+      "estimate_text": "Nil High confidence Last reviewed 2025 Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": 2025,
+      "pdf_page": 16
+    },
+    {
+      "provision": "Jurors’ and witnesses’ fees: exempt income",
+      "sections_and_type": "Section CW 26 -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of a person. However, fees paid by the Crown to jurors and its witnesses, other than expert witnesses, are exempt income.",
+      "rationale": "To encourage public involvement in law enforcement by increasing the net payment to witnesses. Cost savings for the Ministry of Justice who administer the payments, which outweigh the tax foregone.",
+      "estimate_text": "$1.8 million per annum High confidence Last reviewed 2025 Document unavailable",
+      "annual_estimate_millions": 1.8,
+      "last_reviewed": 2025,
+      "pdf_page": 17
+    },
+    {
+      "provision": "Local and regional promotional bodies: exempt income",
+      "sections_and_type": "Section CW 40 -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of an entity. The income derived by a charitable association or society is exempt income if it is primarily established for beautification purposes.",
+      "rationale": "To encourage local and regional beautification/ advertisement.",
+      "estimate_text": "$3 million per annum Medium confidence Last reviewed 2026 Document unavailable",
+      "annual_estimate_millions": 3.0,
+      "last_reviewed": 2026,
+      "pdf_page": 17
+    },
+    {
+      "provision": "Māori Authorities: donations",
+      "sections_and_type": "Section DV 12 -Deduction (permanent)",
+      "explanation": "The benchmark is that deductions must have a nexus with the activity of an entity. However, a Māori authority is allowed a deduction for a cash donation that it makes to a Māori association as defined in the Māori Community Development Act 1962. It is also allowed a deduction for charitable or other public benefit cash gifts. This deduction is limited by net income.",
+      "rationale": "To incentivise charitable donations.",
+      "estimate_text": "$7.7 million per annum High confidence – regularly measured, refer Table 3 Last reviewed 2026 Tax incentives for giving to charities and other non-profit organisations: a government discussion document Cabinet paper – Tax incentives for giving to charities and other non- profit organisations",
+      "annual_estimate_millions": 7.7,
+      "last_reviewed": 2026,
+      "pdf_page": 17
+    },
+    {
+      "provision": "Ministers of religion accommodation",
+      "sections_and_type": "Section CE 1E -Exemption",
+      "explanation": "The benchmark is that non-cash benefits, such as accommodation, are valued and taxed as part of taxable income. However, there is cap on the amount used to value the benefit of the accommodation for owned and rental accommodation supplied by religious bodies to their ministers.",
+      "rationale": "Subsidised accommodation enables and encourages ministers, who are generally low wage earners, to better perform their religious duties and provide a service to their communities (often the expectation is parishioners can visit their home).",
+      "estimate_text": "Estimate unavailable Policy special report – Employee Allowances",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 18
+    },
+    {
+      "provision": "Non-profit organisations",
+      "sections_and_type": "Section DV 8 -Deduction (permanent)",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of an entity. However, non-profit organisations are entitled to an income tax deduction for the lesser of $1,000 and their net income.",
+      "rationale": "To reduce compliance costs.",
+      "estimate_text": "Estimate unavailable Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 18
+    },
+    {
+      "provision": "Non-resident oil rig and seismic vessel operator – tax exemption",
+      "sections_and_type": "Section CW 57 -Exemption",
+      "explanation": "The benchmark is that income derived from services performed in New Zealand is subject to income tax. However, income derived by non-resident operators of oil rigs and seismic vessels is exempt from taxation.",
+      "rationale": "To prevent rig operators leaving New Zealand before 183 days and a separate operator having to come in to finish the job.",
+      "estimate_text": "Estimate unavailable Regulatory impact statement – Extending tax exemption for non- resident oil rig and seismic vessel operators",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 18
+    },
+    {
+      "provision": "Payments of interest post-war credits: exempt income",
+      "sections_and_type": "Section CW 5 -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of a person. However, interest derived by a person under section 2 of the Income Tax (Repayment of Post-War Credits) Act 1959 of the United Kingdom Parliament is exempt income.",
+      "rationale": "To reduce compliance costs, as interest on post-war credits was already exempt from tax in the UK.",
+      "estimate_text": "Estimate unavailable Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 18
+    },
+    {
+      "provision": "Payments of interest on farm mortgages: exempt income",
+      "sections_and_type": "Section CW 6 -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of a person. However, 50 percent of the interest that an individual derives from a mortgage securing a loan made by a seller of a farm is exempt income, if the Rural Banking and Finance Corporation of New Zealand approves the mortgage.",
+      "rationale": "To encourage young farmers.",
+      "estimate_text": "Nil High confidence Last reviewed 2026 Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": 2026,
+      "pdf_page": 18
+    },
+    {
+      "provision": "Partial expensing (Investment Boost)",
+      "sections_and_type": "Subpart DI - Deduction (timing)",
+      "explanation": "The benchmark is that capital assets are depreciated over their economic life. This expenditure allows businesses to depreciate assets faster than their economic life by allowing them to deduct 20% of the cost of the asset in the first year. This reduces taxable income by a greater amount in the first year (deferring tax payments). This treatment includes most depreciable property (eg, machines and vehicles) and primary sector land improvements. This treatment generally only applies to assets acquired on or after 22 May 2025.",
+      "rationale": "To encourage investment in capital assets.",
+      "estimate_text": "$1.475 billion per annum Medium confidence Last reviewed 2025 Regulatory impact statement – Partial expensing (Investment Boost)",
+      "annual_estimate_millions": null,
+      "last_reviewed": 2025,
+      "pdf_page": 19
+    },
+    {
+      "provision": "Petroleum mining expenditure: accelerated deduction",
+      "sections_and_type": "Subpart DT, sections EJ 12-20 -Deduction (timing)",
+      "explanation": "The benchmark is that capital assets are depreciated over their economic life. However, development expenditure is written off over an accelerated seven- year period.",
+      "rationale": "To make the New Zealand mining industry more competitive internationally (and similar to the rules in Australia).",
+      "estimate_text": "Estimate unavailable Officials Consultative paper – Suggested changes to the Petroleum mining expenditure tax rules",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 19
+    },
+    {
+      "provision": "Plain clothes allowances",
+      "sections_and_type": "Section CW 17CC -Exemption",
+      "explanation": "The benchmark is that allowances and payments received by employees are subject to income tax. However, in very limited circumstances a plain clothes allowance paid to an employee who is also provided with a uniform can be tax exempt.",
+      "rationale": "To reduce compliance costs. Consistent with longstanding practice.",
+      "estimate_text": "Estimate unavailable Regulatory Impact Statement: The tax treatment of payments by employers in respect of employee expenditure, and employer- provided accommodation, pages 3- 33",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 19
+    },
+    {
+      "provision": "Research and Development (R&D) – cashing out tax losses",
+      "sections_and_type": "Subpart MX -tax credit",
+      "explanation": "The benchmark is that tax losses are carried forward and can be offset against taxable income in future years. However, in qualifying circumstances, a company that conducts R&D and incurs tax losses may cash out the tax value of the R&D part of the tax losses. This is repayable against future profits, or in certain other circumstances.",
+      "rationale": "To reduce bias against investment in R&D start- ups arising from the current treatment of tax losses.",
+      "estimate_text": "$100 million per annum High confidence Last reviewed 2026 An officials’ issue paper – R&D tax losses",
+      "annual_estimate_millions": 100.0,
+      "last_reviewed": 2026,
+      "pdf_page": 19
+    },
+    {
+      "provision": "Scholarships and bursaries: exempt income",
+      "sections_and_type": "Section CW 36 -Exemption",
+      "explanation": "The benchmark is that income tax is paid on the taxable income of a person. However, any scholarship or bursary payment for attendance at an educational institution is exempt income, except for a basic grant or independent circumstances grant under the Education and Training Act 2020.",
+      "rationale": "To assist education development.",
+      "estimate_text": "Estimate unavailable Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 19
+    },
+    {
+      "provision": "TAB and racing clubs: exempt income",
+      "sections_and_type": "Section CW 47 -Exemption",
+      "explanation": "The benchmark is that income derived by an entity is subject to income tax. However, income derived by the New Zealand Racing Board, New Zealand Thoroughbred Racing, Harness Racing New Zealand and the New Zealand Greyhound Racing Association is exempt income. Note that betting turnover is separately taxed.",
+      "rationale": "To support the racing sector.",
+      "estimate_text": "Estimate unavailable (confidentiality) Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 20
+    },
+    {
+      "provision": "Te Pou Tupua",
+      "sections_and_type": "Section CW 40C and the Te Awa Tupua (Whanganui River Claims Settlement) Act 2017 -Exemption",
+      "explanation": "The benchmark is that income derived by an entity is subject to income tax. Income received by Te Pou Tupua is exempt from income tax so long as it is applied for the purposes set out in the Te Awa Tupua (Whanganui River Claims Settlement) Act 2017.",
+      "rationale": "Treaty of Waitangi settlement.",
+      "estimate_text": "Estimate unavailable (confidentiality) Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 20
+    },
+    {
+      "provision": "Te Urewera Board",
+      "sections_and_type": "Section CW 40B and the Te Urewera Act 2014 -Exemption",
+      "explanation": "The benchmark is that income derived by an entity is subject to income tax. Te Urewera Board’s income (generally from concessions) is exempt from tax so long as it is applied for the purposes set out in the Te Urewera Act 2014.",
+      "rationale": "Treaty of Waitangi settlement.",
+      "estimate_text": "Estimate unavailable (confidentiality) Document unavailable",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 20
+    },
+    {
+      "provision": "Veterinary services bodies: exempt income",
+      "sections_and_type": "Section CW 50 -Exemption",
+      "explanation": "The benchmark is that income derived by an entity is subject to income tax. Income derived by a veterinary association, club, or society established mainly to promote efficient veterinary services in New Zealand is exempt income, providing no funds are used for private pecuniary profit.",
+      "rationale": "Originally, the bodies were seen to be of national significance.",
+      "estimate_text": "$2 million per annum High confidence Last reviewed 2025",
+      "annual_estimate_millions": 2.0,
+      "last_reviewed": 2025,
+      "pdf_page": 20
+    },
+    {
+      "provision": "Input tax (GST) recovered by registered non-profit bodies",
+      "sections_and_type": "Section 20 (3K) - Tax credit",
+      "explanation": ") The benchmark is that GST input credits must relate to the making of taxable supplies. However, GST input tax is able to be recovered where the input tax does not factually relate to taxable supplies made by a non-profit body.",
+      "rationale": "Except for input tax relating to exempt supplies, a non- profit body should be able to recover all other input tax whether or not it relates to the making of taxable supplies. This ensures, for example, that input tax can be recovered in relation to donations.",
+      "estimate_text": "Estimate unavailable A government discussion document on taxation issues relating to charities and non- profit bodies pages 57-59",
+      "annual_estimate_millions": null,
+      "last_reviewed": null,
+      "pdf_page": 21
+    }
+  ],
+  "series": [
+    {
+      "programme": "Company donations deduction",
+      "year_end": 2021,
+      "year_basis": "income",
+      "value_millions": 27.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 24.0
+    },
+    {
+      "programme": "Company donations deduction",
+      "year_end": 2022,
+      "year_basis": "income",
+      "value_millions": 40.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 24.0
+    },
+    {
+      "programme": "Company donations deduction",
+      "year_end": 2023,
+      "year_basis": "income",
+      "value_millions": 25.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 24.0
+    },
+    {
+      "programme": "Company donations deduction",
+      "year_end": 2024,
+      "year_basis": "income",
+      "value_millions": 33.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 24.0
+    },
+    {
+      "programme": "Company donations deduction",
+      "year_end": 2025,
+      "year_basis": "income",
+      "value_millions": 24.0,
+      "status": "Estimated actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 24.0
+    },
+    {
+      "programme": "Company donations deduction",
+      "year_end": 2026,
+      "year_basis": "income",
+      "value_millions": 24.0,
+      "status": "Forecast",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 24.0
+    },
+    {
+      "programme": "Donations tax credit",
+      "year_end": 2021,
+      "year_basis": "income",
+      "value_millions": 310.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 351.0
+    },
+    {
+      "programme": "Donations tax credit",
+      "year_end": 2022,
+      "year_basis": "income",
+      "value_millions": 328.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 351.0
+    },
+    {
+      "programme": "Donations tax credit",
+      "year_end": 2023,
+      "year_basis": "income",
+      "value_millions": 330.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 351.0
+    },
+    {
+      "programme": "Donations tax credit",
+      "year_end": 2024,
+      "year_basis": "income",
+      "value_millions": 341.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 351.0
+    },
+    {
+      "programme": "Donations tax credit",
+      "year_end": 2025,
+      "year_basis": "income",
+      "value_millions": 367.0,
+      "status": "Estimated actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 351.0
+    },
+    {
+      "programme": "Donations tax credit",
+      "year_end": 2026,
+      "year_basis": "income",
+      "value_millions": 367.0,
+      "status": "Forecast",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 351.0
+    },
+    {
+      "programme": "Independent earner tax credit",
+      "year_end": 2021,
+      "year_basis": "income",
+      "value_millions": 214.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 328.0
+    },
+    {
+      "programme": "Independent earner tax credit",
+      "year_end": 2022,
+      "year_basis": "income",
+      "value_millions": 192.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 328.0
+    },
+    {
+      "programme": "Independent earner tax credit",
+      "year_end": 2023,
+      "year_basis": "income",
+      "value_millions": 176.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 328.0
+    },
+    {
+      "programme": "Independent earner tax credit",
+      "year_end": 2024,
+      "year_basis": "income",
+      "value_millions": 180.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 328.0
+    },
+    {
+      "programme": "Independent earner tax credit",
+      "year_end": 2025,
+      "year_basis": "income",
+      "value_millions": 331.0,
+      "status": "Estimated actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 328.0
+    },
+    {
+      "programme": "Independent earner tax credit",
+      "year_end": 2026,
+      "year_basis": "income",
+      "value_millions": 391.0,
+      "status": "Forecast",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 328.0
+    },
+    {
+      "programme": "Maori Authority donations",
+      "year_end": 2021,
+      "year_basis": "income",
+      "value_millions": 5.9,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 7.6
+    },
+    {
+      "programme": "Maori Authority donations",
+      "year_end": 2022,
+      "year_basis": "income",
+      "value_millions": 4.8,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 7.6
+    },
+    {
+      "programme": "Maori Authority donations",
+      "year_end": 2023,
+      "year_basis": "income",
+      "value_millions": 5.4,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 7.6
+    },
+    {
+      "programme": "Maori Authority donations",
+      "year_end": 2024,
+      "year_basis": "income",
+      "value_millions": 7.3,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 7.6
+    },
+    {
+      "programme": "Maori Authority donations",
+      "year_end": 2025,
+      "year_basis": "income",
+      "value_millions": 7.7,
+      "status": "Estimated actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 7.6
+    },
+    {
+      "programme": "Maori Authority donations",
+      "year_end": 2026,
+      "year_basis": "income",
+      "value_millions": 7.7,
+      "status": "Forecast",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": 7.6
+    },
+    {
+      "programme": "Family tax credit",
+      "year_end": 2021,
+      "year_basis": "fiscal",
+      "value_millions": 2103.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Family tax credit",
+      "year_end": 2022,
+      "year_basis": "fiscal",
+      "value_millions": 2017.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Family tax credit",
+      "year_end": 2023,
+      "year_basis": "fiscal",
+      "value_millions": 2152.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Family tax credit",
+      "year_end": 2024,
+      "year_basis": "fiscal",
+      "value_millions": 2297.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Family tax credit",
+      "year_end": 2025,
+      "year_basis": "fiscal",
+      "value_millions": 2434.0,
+      "status": "Estimate",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Family tax credit",
+      "year_end": 2026,
+      "year_basis": "fiscal",
+      "value_millions": 2449.0,
+      "status": "Forecast",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "In-work tax credit",
+      "year_end": 2021,
+      "year_basis": "fiscal",
+      "value_millions": 572.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "In-work tax credit",
+      "year_end": 2022,
+      "year_basis": "fiscal",
+      "value_millions": 506.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "In-work tax credit",
+      "year_end": 2023,
+      "year_basis": "fiscal",
+      "value_millions": 464.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "In-work tax credit",
+      "year_end": 2024,
+      "year_basis": "fiscal",
+      "value_millions": 437.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "In-work tax credit",
+      "year_end": 2025,
+      "year_basis": "fiscal",
+      "value_millions": 550.0,
+      "status": "Estimate",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "In-work tax credit",
+      "year_end": 2026,
+      "year_basis": "fiscal",
+      "value_millions": 647.0,
+      "status": "Forecast",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Minimum family tax credit",
+      "year_end": 2021,
+      "year_basis": "fiscal",
+      "value_millions": 13.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Minimum family tax credit",
+      "year_end": 2022,
+      "year_basis": "fiscal",
+      "value_millions": 13.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Minimum family tax credit",
+      "year_end": 2023,
+      "year_basis": "fiscal",
+      "value_millions": 12.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Minimum family tax credit",
+      "year_end": 2024,
+      "year_basis": "fiscal",
+      "value_millions": 12.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Minimum family tax credit",
+      "year_end": 2025,
+      "year_basis": "fiscal",
+      "value_millions": 11.0,
+      "status": "Estimate",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Minimum family tax credit",
+      "year_end": 2026,
+      "year_basis": "fiscal",
+      "value_millions": 9.0,
+      "status": "Forecast",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Best Start payment",
+      "year_end": 2021,
+      "year_basis": "fiscal",
+      "value_millions": 271.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Best Start payment",
+      "year_end": 2022,
+      "year_basis": "fiscal",
+      "value_millions": 308.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Best Start payment",
+      "year_end": 2023,
+      "year_basis": "fiscal",
+      "value_millions": 321.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Best Start payment",
+      "year_end": 2024,
+      "year_basis": "fiscal",
+      "value_millions": 336.0,
+      "status": "Actual",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Best Start payment",
+      "year_end": 2025,
+      "year_basis": "fiscal",
+      "value_millions": 346.0,
+      "status": "Estimate",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "Best Start payment",
+      "year_end": 2026,
+      "year_basis": "fiscal",
+      "value_millions": 327.0,
+      "status": "Forecast",
+      "pdf_page": 7,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "FamilyBoost",
+      "year_end": 2021,
+      "year_basis": "fiscal",
+      "value_millions": null,
+      "status": "Actual",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "FamilyBoost",
+      "year_end": 2022,
+      "year_basis": "fiscal",
+      "value_millions": null,
+      "status": "Actual",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "FamilyBoost",
+      "year_end": 2023,
+      "year_basis": "fiscal",
+      "value_millions": null,
+      "status": "Actual",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "FamilyBoost",
+      "year_end": 2024,
+      "year_basis": "fiscal",
+      "value_millions": null,
+      "status": "Actual",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "FamilyBoost",
+      "year_end": 2025,
+      "year_basis": "fiscal",
+      "value_millions": 51.0,
+      "status": "Estimate",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "FamilyBoost",
+      "year_end": 2026,
+      "year_basis": "fiscal",
+      "value_millions": 140.0,
+      "status": "Forecast",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "KiwiSaver tax credit",
+      "year_end": 2021,
+      "year_basis": "fiscal",
+      "value_millions": 916.0,
+      "status": "Actual",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "KiwiSaver tax credit",
+      "year_end": 2022,
+      "year_basis": "fiscal",
+      "value_millions": 964.0,
+      "status": "Actual",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "KiwiSaver tax credit",
+      "year_end": 2023,
+      "year_basis": "fiscal",
+      "value_millions": 996.0,
+      "status": "Actual",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "KiwiSaver tax credit",
+      "year_end": 2024,
+      "year_basis": "fiscal",
+      "value_millions": 1011.0,
+      "status": "Actual",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "KiwiSaver tax credit",
+      "year_end": 2025,
+      "year_basis": "fiscal",
+      "value_millions": 1017.0,
+      "status": "Estimate",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "KiwiSaver tax credit",
+      "year_end": 2026,
+      "year_basis": "fiscal",
+      "value_millions": 556.0,
+      "status": "Forecast",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "R&D tax incentive",
+      "year_end": 2021,
+      "year_basis": "fiscal",
+      "value_millions": 313.0,
+      "status": "Actual",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "R&D tax incentive",
+      "year_end": 2022,
+      "year_basis": "fiscal",
+      "value_millions": 473.0,
+      "status": "Actual",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "R&D tax incentive",
+      "year_end": 2023,
+      "year_basis": "fiscal",
+      "value_millions": 64.0,
+      "status": "Actual",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "R&D tax incentive",
+      "year_end": 2024,
+      "year_basis": "fiscal",
+      "value_millions": 317.0,
+      "status": "Actual",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "R&D tax incentive",
+      "year_end": 2025,
+      "year_basis": "fiscal",
+      "value_millions": 532.0,
+      "status": "Estimate",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    },
+    {
+      "programme": "R&D tax incentive",
+      "year_end": 2026,
+      "year_basis": "fiscal",
+      "value_millions": 626.0,
+      "status": "Forecast",
+      "pdf_page": 8,
+      "earlier_as_at_value_2025": null
+    }
+  ],
+  "international_screen_budget_2027_millions": 210.0,
+  "pdf_page": 129,
+  "source_text": "Part 3.4 - Non-Departmental Other Expenses                                                Vote Business, Science and Innovation\n\n\nEconomic Growth: New Zealand Screen Production Rebate - International\n2026-2031 MYA (M116) (A17)\nScope of Appropriation and Expenses\n\n Type, Title, Scope and Period of Appropriations                                 Appropriations, Adjustments and Use               $000\n Economic Growth: New Zealand Screen Production Rebate - International  Original Appropriation                          1,050,000\n 2026-2031 MYA (M116) (A17)\n                                                                        Adjustments to 2024/25                                                 - This appropriation is limited to providing rebate assistance to screen\n productions that are internationally focused and produced in New Zealand.     Adjustments for 2025/26                                                -\n                                                                          Adjusted Appropriation                         1,050,000 Commences: 01 July 2026\n                                                                              Actual to 2024/25 Year End                                            -\n Expires: 30 June 2031\n                                                                         Estimated Actual for 2025/26                                          -\n                                                                          Estimate for 2026/27                            210,000\n                                                                         Estimated Appropriation Remaining               840,000\n\nWhat is Intended to be Achieved with this Appropriation\n\nThe appropriation is intended to achieve economic and industry benefits to New Zealand, including\nemployment and skill development opportunities by incentivising screen productions that would not\notherwise have been made in New Zealand.\n\nHow Performance will be Assessed and End of Year Reporting Requirements\n\n                                                                            2025/26                                 2026/27\n                                                                             Final Budgeted              Estimated                Budget\n Assessment of Performance                                              Standard                   Actual              Standard\n Percentage of New Zealand cast employed on live action             New measure        New measure              60%\n international productions receiving the NZSPR\n Percentage of New Zealand crew employed on live action             New measure        New measure              85%\n international productions receiving the NZSPR (see Note 1)\n Total annual value of approved Qualifying New Zealand              New measure        New measure        $650m-$800m\n Production Expenditure (QNZPE) for NZSPR (international\n productions) (see Note 1)\n\nNote 1 - These performance indicators and budget standards were selected for 2026/27 and outyears.\nThe indicators, included in a previous appropriation for this initiative, provide information relevant to\nprogress towards the objectives intended to be achieved with this appropriation. They inform assessment\nof the economic and industry benefits to New Zealand, including employment.\n\nEnd of Year Performance Reporting\n\nPerformance information for this appropriation will be reported by the Minister for Economic Growth in the\nVote Business, Science and Innovation Non‑Departmental Appropriations Report.\n\nReasons for Change in Appropriation\n\nThe increase in this appropriation is due to the transfer of $1,050 million from the Large Budget Screen\nProduction Fund annual appropriation to this multi-year appropriation.\n\n\n\n\n\n                                        The Estimates of Appropriations 2026/27 - Economic Development and Infrastructure Sector B.5 Vol.1    157"
+}

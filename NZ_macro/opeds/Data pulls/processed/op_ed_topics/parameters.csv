@@ -1,0 +1,9 @@
+parameter,value,unit,basis,source
+dst_rate,0.03,fraction,Withdrawn 2023 proposal,https://www.legislation.govt.nz/bill/government/2023/0288/latest/096be8ed81f46d88.pdf
+dst_historical_revenue_low,86,NZD millions/year,"2023 RIS historical estimate, NOT a current forecast",https://www.regulation.govt.nz/assets/RIS-Documents/ria-ird-dst-aug23.pdf
+dst_historical_revenue_high,90,NZD millions/year,"2023 RIS historical estimate, NOT a current forecast",https://www.regulation.govt.nz/assets/RIS-Documents/ria-ird-dst-aug23.pdf
+company_tax_rate,0.28,fraction,NZ standard company tax rate,https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/tax-rates-for-businesses
+investment_boost_immediate_fraction,0.2,fraction,IRD published Investment Boost treatment,https://www.ird.govt.nz/investment-boost
+illustrative_interest_rate,0.05,fraction/year,Scenario assumption; not a measured deposit rate,User-adjustable in script
+illustrative_saving_balance,10000,NZD,Scenario assumption,User-adjustable in script
+illustrative_asset_cost,100000,NZD,Scenario assumption,User-adjustable in script

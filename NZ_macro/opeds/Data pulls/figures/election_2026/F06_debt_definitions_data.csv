@@ -1,0 +1,31 @@
+measure,year,status,value,source_sheet,source_row,block,percent_gdp
+Net debt,2017,Actual,0.059,Fiscal Time Series,45,Share GDP,5.8999999999999995
+Net debt,2018,Actual,0.038,Fiscal Time Series,45,Share GDP,3.8
+Net debt,2019,Actual,0.018,Fiscal Time Series,45,Share GDP,1.7999999999999998
+Net debt,2020,Actual,0.112,Fiscal Time Series,45,Share GDP,11.200000000000001
+Net debt,2021,Actual,0.105,Fiscal Time Series,45,Share GDP,10.5
+Net debt,2022,Actual,0.169,Fiscal Time Series,45,Share GDP,16.900000000000002
+Net debt,2023,Actual,0.178,Fiscal Time Series,45,Share GDP,17.8
+Net debt,2024,Actual,0.195,Fiscal Time Series,45,Share GDP,19.5
+Net debt,2025,Actual,0.204,Fiscal Time Series,45,Share GDP,20.4
+Net debt,2026,Unaudited Actual,0.2,Fiscal Time Series,45,Share GDP,20
+Net debt,2027,Forecast,0.22,Fiscal Time Series,45,Share GDP,22
+Net debt,2028,Forecast,0.221,Fiscal Time Series,45,Share GDP,22.1
+Net debt,2029,Forecast,0.209,Fiscal Time Series,45,Share GDP,20.9
+Net debt,2030,Forecast,0.189,Fiscal Time Series,45,Share GDP,18.9
+Net debt,2031,Forecast,0.164,Fiscal Time Series,45,Share GDP,16.400000000000002
+Net debt (excl. NZS Fund),2017,Actual,0.187,Fiscal Time Series,46,Share GDP,18.7
+Net debt (excl. NZS Fund),2018,Actual,0.172,Fiscal Time Series,46,Share GDP,17.2
+Net debt (excl. NZS Fund),2019,Actual,0.164,Fiscal Time Series,46,Share GDP,16.400000000000002
+Net debt (excl. NZS Fund),2020,Actual,0.251,Fiscal Time Series,46,Share GDP,25.1
+Net debt (excl. NZS Fund),2021,Actual,0.277,Fiscal Time Series,46,Share GDP,27.700000000000003
+Net debt (excl. NZS Fund),2022,Actual,0.321,Fiscal Time Series,46,Share GDP,32.1
+Net debt (excl. NZS Fund),2023,Actual,0.339,Fiscal Time Series,46,Share GDP,33.900000000000006
+Net debt (excl. NZS Fund),2024,Actual,0.376,Fiscal Time Series,46,Share GDP,37.6
+Net debt (excl. NZS Fund),2025,Actual,0.397,Fiscal Time Series,46,Share GDP,39.7
+Net debt (excl. NZS Fund),2026,Unaudited Actual,0.405,Fiscal Time Series,46,Share GDP,40.5
+Net debt (excl. NZS Fund),2027,Forecast,0.43,Fiscal Time Series,46,Share GDP,43
+Net debt (excl. NZS Fund),2028,Forecast,0.431,Fiscal Time Series,46,Share GDP,43.1
+Net debt (excl. NZS Fund),2029,Forecast,0.423,Fiscal Time Series,46,Share GDP,42.3
+Net debt (excl. NZS Fund),2030,Forecast,0.406,Fiscal Time Series,46,Share GDP,40.6
+Net debt (excl. NZS Fund),2031,Forecast,0.384,Fiscal Time Series,46,Share GDP,38.4

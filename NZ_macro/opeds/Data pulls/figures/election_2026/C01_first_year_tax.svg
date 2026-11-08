@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='-0.000000000000064' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNjkuMTR8ODQ0LjA3fDU2LjYyfDQyOS4wMg=='>
+    <rect x='69.14' y='56.62' width='774.93' height='372.39' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNjkuMTR8ODQ0LjA3fDU2LjYyfDQyOS4wMg==)'>
+<polyline points='69.14,412.09 844.07,412.09 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='69.14,306.95 844.07,306.95 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='69.14,201.82 844.07,201.82 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='69.14,96.68 844.07,96.68 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='104.37,429.02 104.37,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='245.27,429.02 245.27,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='386.16,429.02 386.16,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='527.06,429.02 527.06,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='667.95,429.02 667.95,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='808.85,429.02 808.85,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='104.37,412.09 118.46,412.09 132.55,412.09 146.64,412.09 160.73,412.09 174.82,406.83 188.91,401.57 203.00,396.32 217.09,391.06 231.18,385.80 245.27,380.55 259.35,375.29 273.44,370.03 287.53,364.78 301.62,359.52 315.71,354.26 329.80,349.01 343.89,343.75 357.98,338.49 372.07,333.24 386.16,327.98 400.25,322.72 414.34,317.47 428.43,312.21 442.52,306.95 456.61,301.70 470.70,296.44 484.79,291.18 498.88,285.93 512.97,280.67 527.06,275.41 541.15,270.15 555.24,264.90 569.33,259.64 583.42,254.38 597.51,249.13 611.60,243.87 625.69,238.61 639.77,233.36 653.86,228.10 667.95,222.84 682.04,217.59 696.13,212.33 710.22,207.07 724.31,201.82 738.40,196.56 752.49,191.30 766.58,186.05 780.67,180.79 794.76,175.53 808.85,170.28 ' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<polyline points='104.37,412.09 118.46,412.09 132.55,412.09 146.64,412.09 160.73,412.09 174.82,412.09 188.91,412.09 203.00,412.09 217.09,406.20 231.18,398.84 245.27,391.48 259.35,384.12 273.44,376.76 287.53,369.40 301.62,362.04 315.71,354.68 329.80,347.32 343.89,339.97 357.98,332.61 372.07,325.25 386.16,317.89 400.25,310.53 414.34,303.17 428.43,295.81 442.52,288.45 456.61,281.09 470.70,273.73 484.79,266.37 498.88,259.01 512.97,251.65 527.06,244.29 541.15,236.93 555.24,229.57 569.33,222.21 583.42,214.85 597.51,207.49 611.60,200.13 625.69,192.77 639.77,185.42 653.86,178.06 667.95,170.70 682.04,163.34 696.13,155.98 710.22,148.62 724.31,141.26 738.40,133.90 752.49,126.54 766.58,119.18 780.67,111.82 794.76,104.46 808.85,97.10 ' style='stroke-width: 1.92; stroke: #C56000; stroke-linecap: butt;' />
+<polyline points='104.37,412.09 118.46,412.09 132.55,412.09 146.64,412.09 160.73,412.09 174.82,412.09 188.91,412.09 203.00,412.09 217.09,412.09 231.18,412.09 245.27,412.09 259.35,412.09 273.44,412.09 287.53,412.09 301.62,412.09 315.71,412.09 329.80,412.09 343.89,412.09 357.98,412.09 372.07,412.09 386.16,412.09 400.25,404.73 414.34,397.37 428.43,390.01 442.52,382.65 456.61,375.29 470.70,367.93 484.79,360.57 498.88,353.21 512.97,345.85 527.06,338.49 541.15,331.13 555.24,323.77 569.33,316.41 583.42,309.06 597.51,301.70 611.60,294.34 625.69,286.98 639.77,279.62 653.86,272.26 667.95,264.90 682.04,257.54 696.13,250.18 710.22,242.82 724.31,235.46 738.40,228.10 752.49,220.74 766.58,213.38 780.67,206.02 794.76,198.66 808.85,191.30 ' style='stroke-width: 1.92; stroke: #395A9A; stroke-linecap: butt;' />
+<polyline points='104.37,412.09 118.46,412.09 132.55,412.09 146.64,412.09 160.73,412.09 174.82,404.73 188.91,397.37 203.00,390.01 217.09,382.65 231.18,375.29 245.27,367.93 259.35,360.57 273.44,353.21 287.53,345.85 301.62,338.49 315.71,331.13 329.80,323.77 343.89,316.41 357.98,309.06 372.07,301.70 386.16,294.34 400.25,286.98 414.34,279.62 428.43,272.26 442.52,264.90 456.61,257.54 470.70,250.18 484.79,242.82 498.88,235.46 512.97,228.10 527.06,220.74 541.15,213.38 555.24,206.02 569.33,198.66 583.42,191.30 597.51,183.94 611.60,176.58 625.69,169.22 639.77,161.86 653.86,154.51 667.95,147.15 682.04,139.79 696.13,132.43 710.22,125.07 724.31,117.71 738.40,110.35 752.49,102.99 766.58,95.63 780.67,88.27 794.76,80.91 808.85,73.55 ' style='stroke-width: 1.92; stroke: #A53B59; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='63.76' y='415.52' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>$0</text>
+<text x='63.76' y='310.39' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='34.64px' lengthAdjust='spacingAndGlyphs'>$20,000</text>
+<text x='63.76' y='205.25' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='34.64px' lengthAdjust='spacingAndGlyphs'>$40,000</text>
+<text x='63.76' y='100.11' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='34.64px' lengthAdjust='spacingAndGlyphs'>$60,000</text>
+<text x='104.37' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>$0</text>
+<text x='245.27' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='34.64px' lengthAdjust='spacingAndGlyphs'>$50,000</text>
+<text x='386.16' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='39.97px' lengthAdjust='spacingAndGlyphs'>$100,000</text>
+<text x='527.06' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='39.97px' lengthAdjust='spacingAndGlyphs'>$150,000</text>
+<text x='667.95' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='39.97px' lengthAdjust='spacingAndGlyphs'>$200,000</text>
+<text x='808.85' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='39.97px' lengthAdjust='spacingAndGlyphs'>$250,000</text>
+<text x='456.61' y='454.15' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='234.44px' lengthAdjust='spacingAndGlyphs'>Profit before the $100,000 investment deduction</text>
+<text transform='translate(23.82,242.82) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='111.91px' lengthAdjust='spacingAndGlyphs'>First-year company tax</text>
+<line x1='304.48' y1='483.04' x2='318.31' y2='483.04' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<line x1='461.33' y1='483.04' x2='475.15' y2='483.04' style='stroke-width: 1.92; stroke: #C56000; stroke-linecap: butt;' />
+<line x1='304.48' y1='506.29' x2='318.31' y2='506.29' style='stroke-width: 1.92; stroke: #395A9A; stroke-linecap: butt;' />
+<line x1='461.33' y1='506.29' x2='475.15' y2='506.29' style='stroke-width: 1.92; stroke: #A53B59; stroke-linecap: butt;' />
+<text x='326.01' y='486.62' style='font-size: 10.00px; font-family: "Arial";' textLength='127.61px' lengthAdjust='spacingAndGlyphs'>20% + standard depreciation</text>
+<text x='482.86' y='486.62' style='font-size: 10.00px; font-family: "Arial";' textLength='108.70px' lengthAdjust='spacingAndGlyphs'>28% + Investment Boost</text>
+<text x='326.01' y='509.88' style='font-size: 10.00px; font-family: "Arial";' textLength='92.58px' lengthAdjust='spacingAndGlyphs'>28% + full expensing</text>
+<text x='482.86' y='509.88' style='font-size: 10.00px; font-family: "Arial";' textLength='127.61px' lengthAdjust='spacingAndGlyphs'>28% + standard depreciation</text>
+<text x='15.94' y='48.13' style='font-size: 12.00px; font-family: "Arial";' textLength='400.86px' lengthAdjust='spacingAndGlyphs'>Illustrative new $100,000 eligible asset; 20% diminishing-value depreciation</text>
+<text x='15.94' y='29.55' style='font-size: 19.00px; font-weight: bold; font-family: "Arial";' textLength='559.19px' lengthAdjust='spacingAndGlyphs'>Tax-rate cuts and investment deductions target different firms</text>
+<text x='15.94' y='533.33' style='font-size: 9.00px; font-family: "Arial";' textLength='548.00px' lengthAdjust='spacingAndGlyphs'>Scenario: 28% standard rate versus proposed 20% SME rate and deduction alternatives. No loss refunds, financing or imputation; profit is</text>
+<text x='15.94' y='545.75' style='font-size: 9.00px; font-family: "Arial";' textLength='222.00px' lengthAdjust='spacingAndGlyphs'>before asset deductions. Illustrative, not a party costing.</text>
+<text x='15.94' y='558.17' style='font-size: 9.00px; font-family: "Arial";' textLength='625.50px' lengthAdjust='spacingAndGlyphs'>Sources: NZ First proposed 20% company rate below $30m turnover; party policy; IRD Investment Boost: 20% deduction and depreciation on remaining 80%</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,309 @@
+measure,year,value,unit,source_sheet,source_row
+Employee deductions,2008,394.7,NZD millions,Payments to providers 1,4
+Employee deductions,2009,916.6,NZD millions,Payments to providers 1,4
+Employee deductions,2010,1051.3,NZD millions,Payments to providers 1,4
+Employee deductions,2011,1155.7,NZD millions,Payments to providers 1,4
+Employee deductions,2012,1321.7,NZD millions,Payments to providers 1,4
+Employee deductions,2013,1536.9,NZD millions,Payments to providers 1,4
+Employee deductions,2014,2050.8,NZD millions,Payments to providers 1,4
+Employee deductions,2015,2416,NZD millions,Payments to providers 1,4
+Employee deductions,2016,2669.3,NZD millions,Payments to providers 1,4
+Employee deductions,2017,3001.4,NZD millions,Payments to providers 1,4
+Employee deductions,2018,3295.8,NZD millions,Payments to providers 1,4
+Employee deductions,2019,3621.16,NZD millions,Payments to providers 1,4
+Employee deductions,2020,4488.5,NZD millions,Payments to providers 1,4
+Employee deductions,2021,4455,NZD millions,Payments to providers 1,4
+Employee deductions,2022,5107,NZD millions,Payments to providers 1,4
+Employee deductions,2023,5641.9,NZD millions,Payments to providers 1,4
+Employee deductions,2024,6074.2,NZD millions,Payments to providers 1,4
+Employee deductions,2025,6251.9,NZD millions,Payments to providers 1,4
+Employee deductions,2026,6644.8,NZD millions,Payments to providers 1,4
+Employer contributions,2008,63.5,NZD millions,Payments to providers 1,5
+Employer contributions,2009,354.7,NZD millions,Payments to providers 1,5
+Employer contributions,2010,625.5,NZD millions,Payments to providers 1,5
+Employer contributions,2011,740.3,NZD millions,Payments to providers 1,5
+Employer contributions,2012,865.8,NZD millions,Payments to providers 1,5
+Employer contributions,2013,833.2,NZD millions,Payments to providers 1,5
+Employer contributions,2014,1277.1,NZD millions,Payments to providers 1,5
+Employer contributions,2015,1542.6,NZD millions,Payments to providers 1,5
+Employer contributions,2016,1653.2,NZD millions,Payments to providers 1,5
+Employer contributions,2017,1828.3,NZD millions,Payments to providers 1,5
+Employer contributions,2018,1971.7,NZD millions,Payments to providers 1,5
+Employer contributions,2019,2146.52,NZD millions,Payments to providers 1,5
+Employer contributions,2020,2534.4,NZD millions,Payments to providers 1,5
+Employer contributions,2021,2587,NZD millions,Payments to providers 1,5
+Employer contributions,2022,2821.5,NZD millions,Payments to providers 1,5
+Employer contributions,2023,3135.5,NZD millions,Payments to providers 1,5
+Employer contributions,2024,3349.4,NZD millions,Payments to providers 1,5
+Employer contributions,2025,3439.4,NZD millions,Payments to providers 1,5
+Employer contributions,2026,3699.3,NZD millions,Payments to providers 1,5
+Voluntary contributions,2008,7.4,NZD millions,Payments to providers 1,6
+Voluntary contributions,2009,6.1,NZD millions,Payments to providers 1,6
+Voluntary contributions,2010,8.8,NZD millions,Payments to providers 1,6
+Voluntary contributions,2011,15.5,NZD millions,Payments to providers 1,6
+Voluntary contributions,2012,16.2,NZD millions,Payments to providers 1,6
+Voluntary contributions,2013,23,NZD millions,Payments to providers 1,6
+Voluntary contributions,2014,31.2,NZD millions,Payments to providers 1,6
+Voluntary contributions,2015,39.3,NZD millions,Payments to providers 1,6
+Voluntary contributions,2016,45.6,NZD millions,Payments to providers 1,6
+Voluntary contributions,2017,40.3,NZD millions,Payments to providers 1,6
+Voluntary contributions,2018,45.4,NZD millions,Payments to providers 1,6
+Voluntary contributions,2019,43.03,NZD millions,Payments to providers 1,6
+Voluntary contributions,2020,50.8,NZD millions,Payments to providers 1,6
+Voluntary contributions,2021,76,NZD millions,Payments to providers 1,6
+Voluntary contributions,2022,53.8,NZD millions,Payments to providers 1,6
+Voluntary contributions,2023,35,NZD millions,Payments to providers 1,6
+Voluntary contributions,2024,39.2,NZD millions,Payments to providers 1,6
+Voluntary contributions,2025,48.5,NZD millions,Payments to providers 1,6
+Voluntary contributions,2026,58.5,NZD millions,Payments to providers 1,6
+Total member and employer,2008,465.6,NZD millions,Payments to providers 1,7
+Total member and employer,2009,1277.4,NZD millions,Payments to providers 1,7
+Total member and employer,2010,1685.6,NZD millions,Payments to providers 1,7
+Total member and employer,2011,1911.5,NZD millions,Payments to providers 1,7
+Total member and employer,2012,2203.7,NZD millions,Payments to providers 1,7
+Total member and employer,2013,2393.1,NZD millions,Payments to providers 1,7
+Total member and employer,2014,3359.1,NZD millions,Payments to providers 1,7
+Total member and employer,2015,3997.9,NZD millions,Payments to providers 1,7
+Total member and employer,2016,4368.1,NZD millions,Payments to providers 1,7
+Total member and employer,2017,4870,NZD millions,Payments to providers 1,7
+Total member and employer,2018,5312.9,NZD millions,Payments to providers 1,7
+Total member and employer,2019,5810.71,NZD millions,Payments to providers 1,7
+Total member and employer,2020,7073.7,NZD millions,Payments to providers 1,7
+Total member and employer,2021,7118,NZD millions,Payments to providers 1,7
+Total member and employer,2022,7982.3,NZD millions,Payments to providers 1,7
+Total member and employer,2023,8812.4,NZD millions,Payments to providers 1,7
+Total member and employer,2024,9462.8,NZD millions,Payments to providers 1,7
+Total member and employer,2025,9739.8,NZD millions,Payments to providers 1,7
+Total member and employer,2026,10402.6,NZD millions,Payments to providers 1,7
+Government contribution,2008,0,NZD millions,Payments to providers 1,8
+Government contribution,2009,321.8,NZD millions,Payments to providers 1,8
+Government contribution,2010,572.6,NZD millions,Payments to providers 1,8
+Government contribution,2011,663.7,NZD millions,Payments to providers 1,8
+Government contribution,2012,799.1,NZD millions,Payments to providers 1,8
+Government contribution,2013,454.6,NZD millions,Payments to providers 1,8
+Government contribution,2014,495.1,NZD millions,Payments to providers 1,8
+Government contribution,2015,580.3,NZD millions,Payments to providers 1,8
+Government contribution,2016,640.3,NZD millions,Payments to providers 1,8
+Government contribution,2017,703,NZD millions,Payments to providers 1,8
+Government contribution,2018,747.3,NZD millions,Payments to providers 1,8
+Government contribution,2019,802.56,NZD millions,Payments to providers 1,8
+Government contribution,2020,845.7,NZD millions,Payments to providers 1,8
+Government contribution,2021,878,NZD millions,Payments to providers 1,8
+Government contribution,2022,918,NZD millions,Payments to providers 1,8
+Government contribution,2023,970.2,NZD millions,Payments to providers 1,8
+Government contribution,2024,1006.3,NZD millions,Payments to providers 1,8
+Government contribution,2025,1036.5,NZD millions,Payments to providers 1,8
+Government contribution,2026,1017,NZD millions,Payments to providers 1,8
+Fee subsidy,2008,15.4,NZD millions,Payments to providers 1,9
+Fee subsidy,2009,33.9,NZD millions,Payments to providers 1,9
+Fee subsidy,2010,8.8,NZD millions,Payments to providers 1,9
+Fee subsidy,2011,0,NZD millions,Payments to providers 1,9
+Fee subsidy,2012,0,NZD millions,Payments to providers 1,9
+Fee subsidy,2013,0,NZD millions,Payments to providers 1,9
+Fee subsidy,2014,0,NZD millions,Payments to providers 1,9
+Fee subsidy,2015,0,NZD millions,Payments to providers 1,9
+Fee subsidy,2016,0,NZD millions,Payments to providers 1,9
+Fee subsidy,2017,0,NZD millions,Payments to providers 1,9
+Fee subsidy,2018,0,NZD millions,Payments to providers 1,9
+Fee subsidy,2019,0,NZD millions,Payments to providers 1,9
+Fee subsidy,2020,0,NZD millions,Payments to providers 1,9
+Fee subsidy,2021,0,NZD millions,Payments to providers 1,9
+Fee subsidy,2022,0,NZD millions,Payments to providers 1,9
+Fee subsidy,2023,0,NZD millions,Payments to providers 1,9
+Fee subsidy,2024,0,NZD millions,Payments to providers 1,9
+Fee subsidy,2025,0,NZD millions,Payments to providers 1,9
+Fee subsidy,2026,0,NZD millions,Payments to providers 1,9
+Kick-start,2008,551.5,NZD millions,Payments to providers 1,10
+Kick-start,2009,471.5,NZD millions,Payments to providers 1,10
+Kick-start,2010,376.1,NZD millions,Payments to providers 1,10
+Kick-start,2011,331.4,NZD millions,Payments to providers 1,10
+Kick-start,2012,239.4,NZD millions,Payments to providers 1,10
+Kick-start,2013,217.2,NZD millions,Payments to providers 1,10
+Kick-start,2014,234.9,NZD millions,Payments to providers 1,10
+Kick-start,2015,215.1,NZD millions,Payments to providers 1,10
+Kick-start,2016,35.4,NZD millions,Payments to providers 1,10
+Kick-start,2017,0.1,NZD millions,Payments to providers 1,10
+Kick-start,2018,0.2,NZD millions,Payments to providers 1,10
+Kick-start,2019,0.1,NZD millions,Payments to providers 1,10
+Kick-start,2020,0.15,NZD millions,Payments to providers 1,10
+Kick-start,2021,0,NZD millions,Payments to providers 1,10
+Kick-start,2022,0.1,NZD millions,Payments to providers 1,10
+Kick-start,2023,0.1,NZD millions,Payments to providers 1,10
+Kick-start,2024,0,NZD millions,Payments to providers 1,10
+Kick-start,2025,0,NZD millions,Payments to providers 1,10
+Kick-start,2026,0,NZD millions,Payments to providers 1,10
+Interest,2008,4.9,NZD millions,Payments to providers 1,11
+Interest,2009,11.7,NZD millions,Payments to providers 1,11
+Interest,2010,4.6,NZD millions,Payments to providers 1,11
+Interest,2011,4.2,NZD millions,Payments to providers 1,11
+Interest,2012,5.8,NZD millions,Payments to providers 1,11
+Interest,2013,5,NZD millions,Payments to providers 1,11
+Interest,2014,7.2,NZD millions,Payments to providers 1,11
+Interest,2015,8.2,NZD millions,Payments to providers 1,11
+Interest,2016,11.7,NZD millions,Payments to providers 1,11
+Interest,2017,11.6,NZD millions,Payments to providers 1,11
+Interest,2018,5.3,NZD millions,Payments to providers 1,11
+Interest,2019,6.38,NZD millions,Payments to providers 1,11
+Interest,2020,6.3,NZD millions,Payments to providers 1,11
+Interest,2021,0.3,NZD millions,Payments to providers 1,11
+Interest,2022,0.4,NZD millions,Payments to providers 1,11
+Interest,2023,0.8,NZD millions,Payments to providers 1,11
+Interest,2024,2.7,NZD millions,Payments to providers 1,11
+Interest,2025,3.2,NZD millions,Payments to providers 1,11
+Interest,2026,1.9,NZD millions,Payments to providers 1,11
+Total crown,2008,571.8,NZD millions,Payments to providers 1,12
+Total crown,2009,838.9,NZD millions,Payments to providers 1,12
+Total crown,2010,962.2,NZD millions,Payments to providers 1,12
+Total crown,2011,999.3,NZD millions,Payments to providers 1,12
+Total crown,2012,1044.3,NZD millions,Payments to providers 1,12
+Total crown,2013,676.8,NZD millions,Payments to providers 1,12
+Total crown,2014,737.2,NZD millions,Payments to providers 1,12
+Total crown,2015,803.6,NZD millions,Payments to providers 1,12
+Total crown,2016,687.4,NZD millions,Payments to providers 1,12
+Total crown,2017,714.7,NZD millions,Payments to providers 1,12
+Total crown,2018,752.8,NZD millions,Payments to providers 1,12
+Total crown,2019,809.04,NZD millions,Payments to providers 1,12
+Total crown,2020,852.15,NZD millions,Payments to providers 1,12
+Total crown,2021,878.3,NZD millions,Payments to providers 1,12
+Total crown,2022,918.4,NZD millions,Payments to providers 1,12
+Total crown,2023,971,NZD millions,Payments to providers 1,12
+Total crown,2024,1008.9,NZD millions,Payments to providers 1,12
+Total crown,2025,1039.7,NZD millions,Payments to providers 1,12
+Total crown,2026,1018.9,NZD millions,Payments to providers 1,12
+Total payments to providers,2008,1037.3,NZD millions,Payments to providers 1,13
+Total payments to providers,2009,2116.2,NZD millions,Payments to providers 1,13
+Total payments to providers,2010,2647.8,NZD millions,Payments to providers 1,13
+Total payments to providers,2011,2910.7,NZD millions,Payments to providers 1,13
+Total payments to providers,2012,3248,NZD millions,Payments to providers 1,13
+Total payments to providers,2013,3069.9,NZD millions,Payments to providers 1,13
+Total payments to providers,2014,4096.3,NZD millions,Payments to providers 1,13
+Total payments to providers,2015,4801.5,NZD millions,Payments to providers 1,13
+Total payments to providers,2016,5055.5,NZD millions,Payments to providers 1,13
+Total payments to providers,2017,5584.7,NZD millions,Payments to providers 1,13
+Total payments to providers,2018,6065.7,NZD millions,Payments to providers 1,13
+Total payments to providers,2019,6619.75,NZD millions,Payments to providers 1,13
+Total payments to providers,2020,7925.85,NZD millions,Payments to providers 1,13
+Total payments to providers,2021,7996.3,NZD millions,Payments to providers 1,13
+Total payments to providers,2022,8900.7,NZD millions,Payments to providers 1,13
+Total payments to providers,2023,9783.4,NZD millions,Payments to providers 1,13
+Total payments to providers,2024,10471.8,NZD millions,Payments to providers 1,13
+Total payments to providers,2025,10779.5,NZD millions,Payments to providers 1,13
+Total payments to providers,2026,11421.6,NZD millions,Payments to providers 1,13
+0.03,2020,1045466,Members,Payments to providers 2,4
+0.03,2021,1204776,Members,Payments to providers 2,4
+0.03,2022,1275828,Members,Payments to providers 2,4
+0.03,2023,1395543,Members,Payments to providers 2,4
+0.03,2024,1406052,Members,Payments to providers 2,4
+0.03,2025,1384587,Members,Payments to providers 2,4
+0.03,2026,185949,Members,Payments to providers 2,4
+3.5000000000000003E-2,2026,1180164,Members,Payments to providers 2,5
+0.04,2020,371621,Members,Payments to providers 2,6
+0.04,2021,381747,Members,Payments to providers 2,6
+0.04,2022,376943,Members,Payments to providers 2,6
+0.04,2023,369478,Members,Payments to providers 2,6
+0.04,2024,354203,Members,Payments to providers 2,6
+0.04,2025,339428,Members,Payments to providers 2,6
+0.04,2026,347932,Members,Payments to providers 2,6
+0.06,2020,46131,Members,Payments to providers 2,7
+0.06,2021,79186,Members,Payments to providers 2,7
+0.06,2022,104726,Members,Payments to providers 2,7
+0.06,2023,121100,Members,Payments to providers 2,7
+0.06,2024,131655,Members,Payments to providers 2,7
+0.06,2025,139885,Members,Payments to providers 2,7
+0.06,2026,152400,Members,Payments to providers 2,7
+0.08,2020,155387,Members,Payments to providers 2,8
+0.08,2021,158505,Members,Payments to providers 2,8
+0.08,2022,147668,Members,Payments to providers 2,8
+0.08,2023,132990,Members,Payments to providers 2,8
+0.08,2024,122040,Members,Payments to providers 2,8
+0.08,2025,113609,Members,Payments to providers 2,8
+0.08,2026,109149,Members,Payments to providers 2,8
+0.1,2020,52191,Members,Payments to providers 2,9
+0.1,2021,83058,Members,Payments to providers 2,9
+0.1,2022,99653,Members,Payments to providers 2,9
+0.1,2023,105056,Members,Payments to providers 2,9
+0.1,2024,112194,Members,Payments to providers 2,9
+0.1,2025,119942,Members,Payments to providers 2,9
+0.1,2026,132335,Members,Payments to providers 2,9
+No contribution,2020,1383938,Members,Payments to providers 2,10
+No contribution,2021,1217655,Members,Payments to providers 2,10
+No contribution,2022,1199534,Members,Payments to providers 2,10
+No contribution,2023,1176227,Members,Payments to providers 2,10
+No contribution,2024,1233899,Members,Payments to providers 2,10
+No contribution,2025,1307955,Members,Payments to providers 2,10
+No contribution,2026,1360328,Members,Payments to providers 2,10
+Financial hardship,2012,22937400,NZD,Amount withdrawn 1,4
+Financial hardship,2013,23121000,NZD,Amount withdrawn 1,4
+Financial hardship,2014,30356200,NZD,Amount withdrawn 1,4
+Financial hardship,2015,41094100,NZD,Amount withdrawn 1,4
+Financial hardship,2016,59359500,NZD,Amount withdrawn 1,4
+Financial hardship,2017,69912900,NZD,Amount withdrawn 1,4
+Financial hardship,2018,95315900,NZD,Amount withdrawn 1,4
+Financial hardship,2019,104468800,NZD,Amount withdrawn 1,4
+Financial hardship,2020,125315700,NZD,Amount withdrawn 1,4
+Financial hardship,2021,147931700,NZD,Amount withdrawn 1,4
+Financial hardship,2022,104425000,NZD,Amount withdrawn 1,4
+Financial hardship,2023,172965000,NZD,Amount withdrawn 1,4
+Financial hardship,2024,300514800,NZD,Amount withdrawn 1,4
+Financial hardship,2025,471209900,NZD,Amount withdrawn 1,4
+Financial hardship,2026,538167200,NZD,Amount withdrawn 1,4
+First home,2012,62720100,NZD,Amount withdrawn 1,5
+First home,2013,123409800,NZD,Amount withdrawn 1,5
+First home,2014,158971600,NZD,Amount withdrawn 1,5
+First home,2015,257834000,NZD,Amount withdrawn 1,5
+First home,2016,494988800,NZD,Amount withdrawn 1,5
+First home,2017,601479300,NZD,Amount withdrawn 1,5
+First home,2018,712480800,NZD,Amount withdrawn 1,5
+First home,2019,986882400,NZD,Amount withdrawn 1,5
+First home,2020,1114602300,NZD,Amount withdrawn 1,5
+First home,2021,1624992200,NZD,Amount withdrawn 1,5
+First home,2022,1249781400,NZD,Amount withdrawn 1,5
+First home,2023,974662800,NZD,Amount withdrawn 1,5
+First home,2024,1372694300,NZD,Amount withdrawn 1,5
+First home,2025,1860659500,NZD,Amount withdrawn 1,5
+First home,2026,2272349800,NZD,Amount withdrawn 1,5
+Total,2012,85657500,NZD,Amount withdrawn 1,6
+Total,2013,146530800,NZD,Amount withdrawn 1,6
+Total,2014,189327800,NZD,Amount withdrawn 1,6
+Total,2015,298928200,NZD,Amount withdrawn 1,6
+Total,2016,554348200,NZD,Amount withdrawn 1,6
+Total,2017,671392200,NZD,Amount withdrawn 1,6
+Total,2018,807796700,NZD,Amount withdrawn 1,6
+Total,2019,1091351200,NZD,Amount withdrawn 1,6
+Total,2020,1239918000,NZD,Amount withdrawn 1,6
+Total,2021,1772923800,NZD,Amount withdrawn 1,6
+Total,2022,1354206400,NZD,Amount withdrawn 1,6
+Total,2023,1147627800,NZD,Amount withdrawn 1,6
+Total,2024,1673209100,NZD,Amount withdrawn 1,6
+Total,2025,2331869400,NZD,Amount withdrawn 1,6
+Total,2026,2810516900,NZD,Amount withdrawn 1,6
+Financial hardship,2012,6240,Withdrawals,Number of withdrawals 1,4
+Financial hardship,2013,6010,Withdrawals,Number of withdrawals 1,4
+Financial hardship,2014,7660,Withdrawals,Number of withdrawals 1,4
+Financial hardship,2015,8250,Withdrawals,Number of withdrawals 1,4
+Financial hardship,2016,10670,Withdrawals,Number of withdrawals 1,4
+Financial hardship,2017,14910,Withdrawals,Number of withdrawals 1,4
+Financial hardship,2018,15710,Withdrawals,Number of withdrawals 1,4
+Financial hardship,2019,16720,Withdrawals,Number of withdrawals 1,4
+Financial hardship,2020,18220,Withdrawals,Number of withdrawals 1,4
+Financial hardship,2021,19940,Withdrawals,Number of withdrawals 1,4
+Financial hardship,2022,14470,Withdrawals,Number of withdrawals 1,4
+Financial hardship,2023,20600,Withdrawals,Number of withdrawals 1,4
+Financial hardship,2024,32480,Withdrawals,Number of withdrawals 1,4
+Financial hardship,2025,45870,Withdrawals,Number of withdrawals 1,4
+Financial hardship,2026,52330,Withdrawals,Number of withdrawals 1,4
+First home,2012,5890,Withdrawals,Number of withdrawals 1,5
+First home,2013,10720,Withdrawals,Number of withdrawals 1,5
+First home,2014,12720,Withdrawals,Number of withdrawals 1,5
+First home,2015,16180,Withdrawals,Number of withdrawals 1,5
+First home,2016,26570,Withdrawals,Number of withdrawals 1,5
+First home,2017,32680,Withdrawals,Number of withdrawals 1,5
+First home,2018,31920,Withdrawals,Number of withdrawals 1,5
+First home,2019,40150,Withdrawals,Number of withdrawals 1,5
+First home,2020,41370,Withdrawals,Number of withdrawals 1,5
+First home,2021,54520,Withdrawals,Number of withdrawals 1,5
+First home,2022,38740,Withdrawals,Number of withdrawals 1,5
+First home,2023,30200,Withdrawals,Number of withdrawals 1,5
+First home,2024,36960,Withdrawals,Number of withdrawals 1,5
+First home,2025,43600,Withdrawals,Number of withdrawals 1,5
+First home,2026,50470,Withdrawals,Number of withdrawals 1,5

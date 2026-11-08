@@ -1,0 +1,112 @@
+year,benchmark,index
+2029,Population growth only,100
+2029,Population + fixed age-cost profile,100
+2029,Full LTFM health projection,100
+2030,Population growth only,101.0242958231996
+2030,Population + fixed age-cost profile,101.97717399128354
+2030,Full LTFM health projection,103.24142755477784
+2031,Population growth only,102.0244026284455
+2031,Population + fixed age-cost profile,103.96208902733922
+2031,Full LTFM health projection,106.56068045749468
+2032,Population growth only,103.0001425676494
+2032,Population + fixed age-cost profile,106.05582586228242
+2032,Full LTFM health projection,110.09298775491968
+2033,Population growth only,103.95507284653388
+2033,Population + fixed age-cost profile,108.05807553842392
+2033,Full LTFM health projection,113.61111253899088
+2034,Population growth only,104.90146584596472
+2034,Population + fixed age-cost profile,110.05612542906914
+2034,Full LTFM health projection,117.14718883278162
+2035,Population growth only,105.8375429660558
+2035,Population + fixed age-cost profile,112.02975861282336
+2035,Full LTFM health projection,120.71998892121712
+2036,Population growth only,106.77059646634036
+2036,Population + fixed age-cost profile,114.00510630899028
+2036,Full LTFM health projection,124.34176502206604
+2037,Population growth only,107.6960019871144
+2037,Population + fixed age-cost profile,116.0450120031872
+2037,Full LTFM health projection,128.05266171154653
+2038,Population growth only,108.61696100817304
+2038,Population + fixed age-cost profile,118.03193880364712
+2038,Full LTFM health projection,131.8000055313073
+2039,Population growth only,109.53240636958454
+2039,Population + fixed age-cost profile,120.0032865122596
+2039,Full LTFM health projection,135.6241114239262
+2040,Population growth only,110.4444723912123
+2040,Population + fixed age-cost profile,121.93900835771548
+2040,Full LTFM health projection,139.51167114398675
+2041,Population growth only,111.35102475319296
+2041,Population + fixed age-cost profile,123.87707895643176
+2041,Full LTFM health projection,143.4852941034603
+2042,Population growth only,112.25490921534434
+2042,Population + fixed age-cost profile,125.82284861750968
+2042,Full LTFM health projection,147.52539405236465
+2043,Population growth only,113.1511456979852
+2043,Population + fixed age-cost profile,127.7425706557997
+2043,Full LTFM health projection,151.59682733750748
+2044,Population growth only,114.04257996093342
+2044,Population + fixed age-cost profile,129.6452296438423
+2044,Full LTFM health projection,155.71441849605628
+2045,Population growth only,114.92689982433694
+2045,Population + fixed age-cost profile,131.46920298957312
+2045,Full LTFM health projection,159.86920121181072
+2046,Population growth only,115.80339384824131
+2046,Population + fixed age-cost profile,133.31058099696003
+2046,Full LTFM health projection,164.09330658761567
+2047,Population growth only,116.670461292749
+2047,Population + fixed age-cost profile,135.156393774249
+2047,Full LTFM health projection,168.36528694285974
+2048,Population growth only,117.52845787783724
+2048,Population + fixed age-cost profile,136.97817833605
+2048,Full LTFM health projection,172.66653209986012
+2049,Population growth only,118.37400426372228
+2049,Population + fixed age-cost profile,138.74560958577143
+2049,Full LTFM health projection,176.99668457696987
+2050,Population growth only,119.21119123014228
+2050,Population + fixed age-cost profile,140.42140081493395
+2050,Full LTFM health projection,181.37870495200625
+2051,Population growth only,120.03628371733636
+2051,Population + fixed age-cost profile,142.09389588415246
+2051,Full LTFM health projection,185.8176292758475
+2052,Population growth only,120.85212748512238
+2052,Population + fixed age-cost profile,143.75966509701414
+2052,Full LTFM health projection,190.3331148147108
+2053,Population growth only,121.6599675534206
+2053,Population + fixed age-cost profile,145.3748787918539
+2053,Full LTFM health projection,194.9176589554921
+2054,Population growth only,122.45731388239044
+2054,Population + fixed age-cost profile,146.9586296765024
+2054,Full LTFM health projection,199.5817709410961
+2055,Population growth only,123.24790153179283
+2055,Population + fixed age-cost profile,148.49002788268356
+2055,Full LTFM health projection,204.35841494935676
+2056,Population growth only,124.03101906167332
+2056,Population + fixed age-cost profile,150.03430072690713
+2056,Full LTFM health projection,209.23291339796504
+2057,Population growth only,124.81129083173592
+2057,Population + fixed age-cost profile,151.60984763497106
+2057,Full LTFM health projection,214.22741700622737
+2058,Population growth only,125.58533750219694
+2058,Population + fixed age-cost profile,153.15078291521212
+2058,Full LTFM health projection,219.34790274789148
+2059,Population growth only,126.3609849125555
+2059,Population + fixed age-cost profile,154.7213264179749
+2059,Full LTFM health projection,224.5687478497981
+2060,Population growth only,127.13200796321004
+2060,Population + fixed age-cost profile,156.30058900170098
+2060,Full LTFM health projection,229.93489763545543
+2061,Population growth only,127.90125241397838
+2061,Population + fixed age-cost profile,157.91148940577048
+2061,Full LTFM health projection,235.3965839314193
+2062,Population growth only,128.67263118461014
+2062,Population + fixed age-cost profile,159.60330914600974
+2062,Full LTFM health projection,241.0249378249868
+2063,Population growth only,129.44383209525327
+2063,Population + fixed age-cost profile,161.333694727931
+2063,Full LTFM health projection,246.8235533202714
+2064,Population growth only,130.2169894657712
+2064,Population + fixed age-cost profile,163.1416784497673
+2064,Full LTFM health projection,252.7453499951421
+2065,Population growth only,130.98907967635745
+2065,Population + fixed age-cost profile,165.04831384946434
+2065,Full LTFM health projection,258.8238382298603

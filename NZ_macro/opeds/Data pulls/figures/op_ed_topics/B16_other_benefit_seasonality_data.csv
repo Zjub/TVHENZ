@@ -1,0 +1,73 @@
+date,recipients,source_id,source_vintage,source_sheet,source_row,programme,estimate_basis,quarter
+2008-09-30,5783,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,September
+2008-12-31,13293,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,December
+2009-03-31,5560,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,March
+2009-06-30,5997,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,June
+2009-09-30,6522,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,September
+2009-12-31,18610,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,December
+2010-03-31,5818,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,March
+2010-06-30,6417,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,June
+2010-09-30,6736,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,September
+2010-12-31,21682,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,December
+2011-03-31,6019,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,March
+2011-06-30,6746,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,June
+2011-09-30,6488,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,September
+2011-12-31,25886,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,December
+2012-03-31,6207,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,March
+2012-06-30,6558,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,June
+2012-09-30,6579,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,September
+2012-12-31,24272,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,December
+2013-03-31,5533,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,March
+2013-06-30,6415,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,June
+2013-09-30,6153,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,Observed current-category count,September
+2013-12-31,21140,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,December
+2014-03-31,4563,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,March
+2014-06-30,5171,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,June
+2014-09-30,4747,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,September
+2014-12-31,18113,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,December
+2015-03-31,3414,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,March
+2015-06-30,4078,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,June
+2015-09-30,4529,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,September
+2015-12-31,16194,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,December
+2016-03-31,3120,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,March
+2016-06-30,3558,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,June
+2016-09-30,3962,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,September
+2016-12-31,14310,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,December
+2017-03-31,3513,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,March
+2017-06-30,3933,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,June
+2017-09-30,4143,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,September
+2017-12-31,13047,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,December
+2018-03-31,3327,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,March
+2018-06-30,3696,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,June
+2018-09-30,3639,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,September
+2018-12-31,12738,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,December
+2019-03-31,3402,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,March
+2019-06-30,3618,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,June
+2019-09-30,3762,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,September
+2019-12-31,12162,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,December
+2020-03-31,3405,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,March
+2020-06-30,4809,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,June
+2020-09-30,5184,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,September
+2020-12-31,15048,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,December
+2021-03-31,3510,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,March
+2021-06-30,3816,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,June
+2021-09-30,4638,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,September
+2021-12-31,13002,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,December
+2022-03-31,3315,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,March
+2022-06-30,3465,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,June
+2022-09-30,3573,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,September
+2022-12-31,10200,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,December
+2023-03-31,3246,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,March
+2023-06-30,3582,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,June
+2023-09-30,4221,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,September
+2023-12-31,11241,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,December
+2024-03-31,3834,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,March
+2024-06-30,4344,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,June
+2024-09-30,4611,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,September
+2024-12-31,12576,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,December
+2025-03-31,4284,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,March
+2025-06-30,4524,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,June
+2025-09-30,5052,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,September
+2025-12-31,14430,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,December
+2026-03-31,4335,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,March
+2026-06-30,4455,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,June

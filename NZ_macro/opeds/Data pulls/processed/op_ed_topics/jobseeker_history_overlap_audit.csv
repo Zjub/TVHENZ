@@ -1,0 +1,25 @@
+date,subgroup,releases,lowest,highest,revision_range
+2016-12-31,Health condition or disability,2,56809,56811,2
+2016-12-31,Work ready,2,67500,67502,2
+2017-03-31,Health condition or disability,2,55460,55461,1
+2017-03-31,Work ready,2,63945,63945,0
+2017-06-30,Health condition or disability,2,55746,55747,1
+2017-06-30,Work ready,2,63029,63030,1
+2017-09-30,Health condition or disability,2,56427,56427,0
+2017-09-30,Work ready,2,64299,64299,0
+2017-12-31,Health condition or disability,2,57428,57429,1
+2017-12-31,Work ready,2,65613,65613,0
+2018-03-31,Health condition or disability,2,55707,55707,0
+2018-03-31,Work ready,2,63048,63048,0
+2018-06-30,Health condition or disability,2,57249,57249,0
+2018-06-30,Work ready,2,65262,65264,2
+2018-09-30,Health condition or disability,2,58233,58234,1
+2018-09-30,Work ready,2,71409,71409,0
+2018-12-31,Health condition or disability,2,59940,59941,1
+2018-12-31,Work ready,2,74106,74107,1
+2021-06-30,Health condition or disability,2,79467,79467,0
+2021-06-30,Work ready,2,110790,110790,0
+2021-09-30,Health condition or disability,2,81576,81576,0
+2021-09-30,Work ready,2,112056,112056,0
+2021-12-31,Health condition or disability,2,81627,81627,0
+2021-12-31,Work ready,2,106362,106362,0

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='0.00' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNTkuMDl8ODQ2LjA3fDUzLjcwfDQyOS43MA=='>
+    <rect x='59.09' y='53.70' width='786.98' height='376.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTkuMDl8ODQ2LjA3fDUzLjcwfDQyOS43MA==)'>
+<polyline points='59.09,355.64 846.07,355.64 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='59.09,241.70 846.07,241.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='59.09,127.76 846.07,127.76 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='139.57,429.70 139.57,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='288.62,429.70 288.62,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='437.67,429.70 437.67,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='586.72,429.70 586.72,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='735.77,429.70 735.77,53.70 ' style='stroke-width: 0.58; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='59.09,412.61 846.07,412.61 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='59.09,298.67 846.07,298.67 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='59.09,184.73 846.07,184.73 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='59.09,70.79 846.07,70.79 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='65.05,429.70 65.05,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='214.10,429.70 214.10,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='363.15,429.70 363.15,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='512.20,429.70 512.20,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='661.25,429.70 661.25,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='810.30,429.70 810.30,53.70 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='94.86,70.79 124.67,241.70 154.48,298.67 184.29,327.16 214.10,344.25 243.91,355.64 273.72,363.78 303.53,369.89 333.34,374.63 363.15,378.43 392.96,381.54 422.77,384.13 452.58,386.32 482.39,388.20 512.20,389.83 542.01,391.25 571.82,392.51 601.63,393.62 631.44,394.62 661.25,395.52 691.06,396.34 720.87,397.08 750.68,397.75 780.49,398.37 810.30,398.94 ' style='stroke-width: 1.92; stroke: #F8766D; stroke-linecap: butt;' />
+<polyline points='94.86,412.61 124.67,412.61 154.48,412.61 184.29,412.61 214.10,412.61 243.91,412.61 273.72,412.61 303.53,412.61 333.34,412.61 363.15,412.61 392.96,412.61 422.77,412.61 452.58,412.61 482.39,412.61 512.20,412.61 542.01,412.61 571.82,412.61 601.63,412.61 631.44,412.61 661.25,412.61 691.06,412.61 720.87,412.61 750.68,412.61 780.49,412.61 810.30,412.61 ' style='stroke-width: 1.92; stroke: #00BA38; stroke-linecap: butt;' />
+<polyline points='94.86,241.70 124.67,327.16 154.48,355.64 184.29,369.89 214.10,378.43 243.91,384.13 273.72,388.20 303.53,391.25 333.34,393.62 363.15,395.52 392.96,397.08 422.77,398.37 452.58,399.47 482.39,400.41 512.20,401.22 542.01,401.93 571.82,402.56 601.63,403.12 631.44,403.62 661.25,404.07 691.06,404.47 720.87,404.84 750.68,405.18 780.49,405.49 810.30,405.78 ' style='stroke-width: 1.92; stroke: #619CFF; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='53.71' y='416.20' text-anchor='end' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='5.56px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='53.71' y='302.26' text-anchor='end' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='16.69px' lengthAdjust='spacingAndGlyphs'>100</text>
+<text x='53.71' y='188.32' text-anchor='end' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='16.69px' lengthAdjust='spacingAndGlyphs'>200</text>
+<text x='53.71' y='74.38' text-anchor='end' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='16.69px' lengthAdjust='spacingAndGlyphs'>300</text>
+<text x='65.05' y='442.25' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='5.56px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='214.10' y='442.25' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='5.56px' lengthAdjust='spacingAndGlyphs'>5</text>
+<text x='363.15' y='442.25' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>10</text>
+<text x='512.20' y='442.25' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>15</text>
+<text x='661.25' y='442.25' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>20</text>
+<text x='810.30' y='442.25' text-anchor='middle' style='font-size: 10.00px;fill: #4D4D4D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>25</text>
+<text x='452.58' y='455.94' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='138.47px' lengthAdjust='spacingAndGlyphs'>Pre-DST profit margin (%)</text>
+<text transform='translate(22.54,241.70) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='226.78px' lengthAdjust='spacingAndGlyphs'>Firm's retained burden / pre-DST profit (%)</text>
+<line x1='343.06' y1='485.03' x2='356.88' y2='485.03' style='stroke-width: 1.92; stroke: #F8766D; stroke-linecap: butt;' />
+<line x1='454.79' y1='485.03' x2='468.62' y2='485.03' style='stroke-width: 1.92; stroke: #00BA38; stroke-linecap: butt;' />
+<line x1='343.06' y1='508.29' x2='356.88' y2='508.29' style='stroke-width: 1.92; stroke: #619CFF; stroke-linecap: butt;' />
+<text x='364.59' y='488.25' style='font-size: 9.00px; font-family: "Arial";' textLength='77.50px' lengthAdjust='spacingAndGlyphs'>0% passed through</text>
+<text x='476.32' y='488.25' style='font-size: 9.00px; font-family: "Arial";' textLength='87.50px' lengthAdjust='spacingAndGlyphs'>100% passed through</text>
+<text x='364.59' y='511.51' style='font-size: 9.00px; font-family: "Arial";' textLength='82.50px' lengthAdjust='spacingAndGlyphs'>50% passed through</text>
+<text x='13.95' y='45.20' style='font-size: 12.00px; font-family: "Arial";' textLength='362.75px' lengthAdjust='spacingAndGlyphs'>A 3% tax with assumed customer pass-through of 0%, 50% or 100%</text>
+<text x='13.95' y='26.84' style='font-size: 18.00px; font-weight: bold; font-family: "Arial";' textLength='329.16px' lengthAdjust='spacingAndGlyphs'>Who bears the DST changes the result</text>
+<text x='13.95' y='535.33' style='font-size: 9.00px; font-family: "Arial";' textLength='528.53px' lengthAdjust='spacingAndGlyphs'>Scenario | The assumed passed-through fraction is borne by customers; demand and the eligible revenue base are held fixed. These</text>
+<text x='13.95' y='547.75' style='font-size: 9.00px; font-family: "Arial";' textLength='112.00px' lengthAdjust='spacingAndGlyphs'>are not incidence estimates.</text>
+<text x='13.95' y='560.17' style='font-size: 9.00px; font-family: "Arial";' textLength='321.84px' lengthAdjust='spacingAndGlyphs'>Sources: IRD 2023 DST regulatory impact statement; historical revenue estimate</text>
+</g>
+</g>
+</svg>

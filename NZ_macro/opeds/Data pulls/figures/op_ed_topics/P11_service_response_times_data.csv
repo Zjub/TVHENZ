@@ -1,0 +1,34 @@
+agency_id,agency,requests,within_timeframe,published_share,extensions,average_days,median_days,timeliness_percent,period
+364,Crown Law,134,133,0.1417910447761194,13,16.6,17,99.25373134328358,January-June 2026
+350,Department of Conservation Te Papa Atawhai,387,383,0.1937984496124031,83,19,18,98.96640826873384,January-June 2026
+347,Department of Corrections,9253,9191,0.00313411866421701,107,6.6,5,99.32994704420187,January-June 2026
+348,Department of Internal Affairs Te Tari Taiwhenua,574,558,0.1480836236933798,46,13.4,17,97.21254355400696,January-June 2026
+369,Department of the Prime Minister and Cabinet,201,200,0.5870646766169154,12,11.9,12,99.50248756218906,January-June 2026
+363,Inland Revenue — Te Tari Taake,217,215,0.511520737327189,9,16.87,19,99.07834101382488,January-June 2026
+368,Ministry for Primary Industries,2638,2567,0,103,6,1,97.30856709628506,January-June 2026
+344,Ministry for the Environment — Manatū Mō Te Taiao,213,210,0.4788732394366197,81,23.18,20,98.59154929577464,January-June 2026
+3000,"Ministry of Business, Innovation and Employment",1848,1746,0.00216450216450216,336,18.5,18,94.48051948051948,January-June 2026
+354,Ministry of Foreign Affairs and Trade,281,280,0.199288256227758,115,23,20,99.644128113879,January-June 2026
+358,Ministry of Health – Manatū Hauora,962,948,0.08523908523908524,50,17,7,98.54469854469856,January-June 2026
+361,Ministry of Social Development,988,912,0.3815789473684211,233,21.6,17,92.3076923076923,January-June 2026
+1036,Ministry of Transport Te Manatū Waka,140,140,0.5071428571428571,20,15.8,16,100,January-June 2026
+352,New Zealand Customs Service,2539,2534,0.01339109885781804,29,6.09,5,99.80307207562032,January-June 2026
+3125,Oranga Tamariki-Ministry for Children,150,149,1.2666666666666666,39,18.9,17.3,99.33333333333331,January-June 2026
+3005,Public Service Commission Te Kawa Mataaho,220,220,0.4,53,20.83,19.5,100,January-June 2026
+378,Stats NZ Tatauranga Aotearoa,214,210,0.1588785046728972,11,6.4,0,98.13084112149532,January-June 2026
+365,Te Tāhū o te Ture - Ministry of Justice,772,725,0.19170984455958548,78,12.6,14,93.9119170984456,January-June 2026
+379,Te Tāhuhu o te Mātauranga | Ministry of Education,1178,1159,0.14431239388794567,250,14.29,4,98.38709677419357,January-June 2026
+3079,Te Tai Ōhanga | The Treasury,373,373,0.5522788203753352,112,20.13,19,100,January-June 2026
+3007,Te Tūāpapa Kura Kāinga – Ministry of Housing and Urban Development,101,99,0.5445544554455446,25,18.52,18.25,98.01980198019804,January-June 2026
+376,Toitū Te Whenua Land Information New Zealand,167,166,0.3413173652694611,9,16,17,99.40119760479044,January-June 2026
+3001,ACC,636,626,0.04716981132075472,47,15.9,15,98.42767295597484,January-June 2026
+3008,Civil Aviation Authority of New Zealand,121,117,0,32,32,34,96.69421487603306,January-June 2026
+3031,Fire and Emergency New Zealand,1657,1656,0.02715751357875679,133,11.5,8,99.93964996982498,January-June 2026
+3034,Health NZ — Te Whatu Ora,2851,2706,0.00982111539810592,160,25,23,94.91406524026657,January-June 2026
+3118,Kāinga Ora–Homes and Communities,481,450,0.00207900207900207,101,15.64,12,93.55509355509356,January-June 2026
+3036,Natural Hazards Commission – Toka Tū Ake,10861,10841,0,21,12.9,16,99.8158548936562,January-June 2026
+2732,NZ Transport Agency Waka Kotahi,1811,1802,0.17945886250690227,139,11.03,8,99.50303699613474,January-June 2026
+3040,Pharmac,117,116,0.00854700854700854,10,16.8,19,99.14529914529916,January-June 2026
+3039,WorkSafe,354,349,0,46,15.9,14,98.58757062146891,January-June 2026
+3063,Commerce Commission | Te Komihana Tauhokohoko,116,115,0.0603448275862069,11,15,14,99.13793103448276,January-June 2026
+3119,Health and Disability Commissioner,173,166,0,12,17.74,20,95.95375722543352,January-June 2026

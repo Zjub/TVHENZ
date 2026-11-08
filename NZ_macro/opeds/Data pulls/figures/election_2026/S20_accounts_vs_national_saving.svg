@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='-0.000000000000064' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMzkuODN8ODQ0LjA3fDU2LjYyfDQyOS4wMg=='>
+    <rect x='39.83' y='56.62' width='804.24' height='372.39' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMzkuODN8ODQ0LjA3fDU2LjYyfDQyOS4wMg==)'>
+<polyline points='39.83,355.67 844.07,355.67 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='39.83,242.82 844.07,242.82 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='39.83,129.97 844.07,129.97 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='76.39,429.02 76.39,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='259.17,429.02 259.17,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='441.95,429.02 441.95,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='624.74,429.02 624.74,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='807.52,429.02 807.52,56.62 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='76.39,73.55 112.95,87.66 149.50,101.76 186.06,115.87 222.61,129.97 259.17,144.08 295.73,158.18 332.28,172.29 368.84,186.40 405.40,200.50 441.95,214.61 478.51,228.71 515.07,242.82 551.62,256.93 588.18,271.03 624.74,285.14 661.29,299.24 697.85,313.35 734.41,327.45 770.96,341.56 807.52,355.67 ' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<polyline points='76.39,101.76 112.95,115.87 149.50,129.97 186.06,144.08 222.61,158.18 259.17,172.29 295.73,186.40 332.28,200.50 368.84,214.61 405.40,228.71 441.95,242.82 478.51,256.93 515.07,271.03 551.62,285.14 588.18,299.24 624.74,313.35 661.29,327.45 697.85,341.56 734.41,355.67 770.96,369.77 807.52,383.88 ' style='stroke-width: 1.92; stroke: #C56000; stroke-linecap: butt;' />
+<polyline points='76.39,129.97 112.95,144.08 149.50,158.18 186.06,172.29 222.61,186.40 259.17,200.50 295.73,214.61 332.28,228.71 368.84,242.82 405.40,256.93 441.95,271.03 478.51,285.14 515.07,299.24 551.62,313.35 588.18,327.45 624.74,341.56 661.29,355.67 697.85,369.77 734.41,383.88 770.96,397.98 807.52,412.09 ' style='stroke-width: 1.92; stroke: #395A9A; stroke-linecap: butt;' />
+<line x1='39.83' y1='355.67' x2='844.07' y2='355.67' style='stroke-width: 1.16; stroke-dasharray: 6.21,6.21; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='34.45' y='359.10' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='5.33px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='34.45' y='246.25' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='5.33px' lengthAdjust='spacingAndGlyphs'>2</text>
+<text x='34.45' y='133.41' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='5.33px' lengthAdjust='spacingAndGlyphs'>4</text>
+<text x='76.39' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='5.33px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='259.17' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>25</text>
+<text x='441.95' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>50</text>
+<text x='624.74' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>75</text>
+<text x='807.52' y='441.26' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.98px' lengthAdjust='spacingAndGlyphs'>100</text>
+<text x='441.95' y='454.15' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='327.94px' lengthAdjust='spacingAndGlyphs'>Displacement of saving in other assets / extra account deposits (%)</text>
+<text transform='translate(23.82,242.82) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='192.69px' lengthAdjust='spacingAndGlyphs'>Additional national saving (NZ$ billions)</text>
+<line x1='324.04' y1='483.04' x2='337.87' y2='483.04' style='stroke-width: 1.92; stroke: #087F8C; stroke-linecap: butt;' />
+<line x1='446.67' y1='483.04' x2='460.49' y2='483.04' style='stroke-width: 1.92; stroke: #C56000; stroke-linecap: butt;' />
+<line x1='324.04' y1='506.29' x2='337.87' y2='506.29' style='stroke-width: 1.92; stroke: #395A9A; stroke-linecap: butt;' />
+<text x='345.57' y='486.62' style='font-size: 10.00px; font-family: "Arial";' textLength='87.83px' lengthAdjust='spacingAndGlyphs'>0% public dissaving</text>
+<text x='468.20' y='486.62' style='font-size: 10.00px; font-family: "Arial";' textLength='93.39px' lengthAdjust='spacingAndGlyphs'>10% public dissaving</text>
+<text x='345.57' y='509.88' style='font-size: 10.00px; font-family: "Arial";' textLength='93.39px' lengthAdjust='spacingAndGlyphs'>20% public dissaving</text>
+<text x='15.94' y='48.13' style='font-size: 12.00px; font-family: "Arial";' textLength='414.84px' lengthAdjust='spacingAndGlyphs'>Illustrative $5 billion increase in account deposits, including any public subsidy</text>
+<text x='15.94' y='29.55' style='font-size: 19.00px; font-weight: bold; font-family: "Arial";' textLength='549.02px' lengthAdjust='spacingAndGlyphs'>Bigger retirement accounts need not mean equal new saving</text>
+<text x='15.94' y='533.33' style='font-size: 9.00px; font-family: "Arial";' textLength='507.00px' lengthAdjust='spacingAndGlyphs'>Scenario: Static accounting sensitivity: subtract displaced other saving and additional public dissaving. Not estimated KiwiSaver</text>
+<text x='15.94' y='545.75' style='font-size: 9.00px; font-family: "Arial";' textLength='352.83px' lengthAdjust='spacingAndGlyphs'>additionality. Does not model consumption, investment or general-equilibrium responses.</text>
+<text x='15.94' y='558.17' style='font-size: 9.00px; font-family: "Arial";' textLength='319.83px' lengthAdjust='spacingAndGlyphs'>Sources: National proposed compulsory KiwiSaver; party policy, not enacted law</text>
+</g>
+</g>
+</svg>

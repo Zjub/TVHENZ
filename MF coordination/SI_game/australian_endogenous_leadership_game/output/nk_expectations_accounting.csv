@@ -1,0 +1,81 @@
+scenario,regime,variable,contribution,value
+Demand contraction,Flexible Nash,Output,Expected output,-0.0009578049062573867
+Demand contraction,Flexible Nash,Output,Expected inflation,-2.4588151815857604e-5
+Demand contraction,Flexible Nash,Output,Monetary action,0.0032279894649766844
+Demand contraction,Flexible Nash,Output,Fiscal action,-0.004335686548744752
+Demand contraction,Flexible Nash,Output,Demand shock,-0.46387449164984773
+Demand contraction,Flexible Nash,Inflation,Expected inflation,-0.0006588250649987026
+Demand contraction,Flexible Nash,Inflation,Output gap,-0.0722738746478325
+Demand contraction,Flexible Nash,Inflation,Cost-push shock,0.0
+Demand contraction,Monetary commitment,Output,Expected output,-0.0002357212936759457
+Demand contraction,Monetary commitment,Output,Expected inflation,-2.2612901512638683e-5
+Demand contraction,Monetary commitment,Output,Monetary action,0.00243853147028627
+Demand contraction,Monetary commitment,Output,Fiscal action,-0.00412451311299435
+Demand contraction,Monetary commitment,Output,Demand shock,-0.46387449164984773
+Demand contraction,Monetary commitment,Inflation,Expected inflation,-0.0006058993949787365
+Demand contraction,Monetary commitment,Inflation,Output gap,-0.07225126418728524
+Demand contraction,Monetary commitment,Inflation,Cost-push shock,0.0
+Demand contraction,Fiscal commitment,Output,Expected output,-0.0019664439021181896
+Demand contraction,Fiscal commitment,Output,Expected inflation,-3.260703567389382e-5
+Demand contraction,Fiscal commitment,Output,Monetary action,0.003261190138215449
+Demand contraction,Fiscal commitment,Output,Fiscal action,-0.003330432877247161
+Demand contraction,Fiscal commitment,Output,Demand shock,-0.46387449164984773
+Demand contraction,Fiscal commitment,Inflation,Expected inflation,-0.0008736863412163228
+Demand contraction,Fiscal commitment,Inflation,Output gap,-0.07227049388662692
+Demand contraction,Fiscal commitment,Inflation,Cost-push shock,0.0
+Demand contraction,Bilateral commitment,Output,Expected output,-0.0011907208029942583
+Demand contraction,Bilateral commitment,Output,Expected inflation,-3.056059185194232e-5
+Demand contraction,Bilateral commitment,Output,Monetary action,0.00246397590780351
+Demand contraction,Bilateral commitment,Output,Fiscal action,-0.003162211358683023
+Demand contraction,Bilateral commitment,Output,Demand shock,-0.46387449164984773
+Demand contraction,Bilateral commitment,Inflation,Expected inflation,-0.0008188530827383974
+Demand contraction,Bilateral commitment,Inflation,Output gap,-0.07224741771633666
+Demand contraction,Bilateral commitment,Inflation,Cost-push shock,0.0
+Demand contraction,Coordination,Output,Expected output,-0.001764972388129658
+Demand contraction,Coordination,Output,Expected inflation,-4.787917242533051e-5
+Demand contraction,Coordination,Output,Monetary action,0.005057386422316722
+Demand contraction,Coordination,Output,Fiscal action,-0.0027759453214577443
+Demand contraction,Coordination,Output,Demand shock,-0.46387449164984773
+Demand contraction,Coordination,Inflation,Expected inflation,-0.0012828942623031487
+Demand contraction,Coordination,Inflation,Output gap,-0.07187700822950095
+Demand contraction,Coordination,Inflation,Cost-push shock,0.0
+Cost-push inflation,Flexible Nash,Output,Expected output,0.0441684420722993
+Cost-push inflation,Flexible Nash,Output,Expected inflation,0.001133863850611521
+Cost-push inflation,Flexible Nash,Output,Monetary action,-0.009294877036903175
+Cost-push inflation,Flexible Nash,Output,Fiscal action,0.021036483894862536
+Cost-push inflation,Flexible Nash,Output,Demand shock,0.0
+Cost-push inflation,Flexible Nash,Inflation,Expected inflation,0.03038121493121095
+Cost-push inflation,Flexible Nash,Inflation,Output gap,0.008847849736493116
+Cost-push inflation,Flexible Nash,Inflation,Cost-push shock,0.6699569103763775
+Cost-push inflation,Monetary commitment,Output,Expected output,0.04078800153621378
+Cost-push inflation,Monetary commitment,Output,Expected inflation,0.0011074607096034038
+Cost-push inflation,Monetary commitment,Output,Monetary action,-0.007495987723850538
+Cost-push inflation,Monetary commitment,Output,Fiscal action,0.020509737153515343
+Cost-push inflation,Monetary commitment,Output,Demand shock,0.0
+Cost-push inflation,Monetary commitment,Inflation,Expected inflation,0.029673758298393832
+Cost-push inflation,Monetary commitment,Inflation,Output gap,0.00851674491206564
+Cost-push inflation,Monetary commitment,Inflation,Cost-push shock,0.6699569103763775
+Cost-push inflation,Fiscal commitment,Output,Expected output,0.04876464357169523
+Cost-push inflation,Fiscal commitment,Output,Expected inflation,0.0012064539117007376
+Cost-push inflation,Fiscal commitment,Output,Monetary action,-0.009628872648967637
+Cost-push inflation,Fiscal commitment,Output,Fiscal action,0.016360912429491715
+Cost-push inflation,Fiscal commitment,Output,Demand shock,0.0
+Cost-push inflation,Fiscal commitment,Inflation,Expected inflation,0.03232622292016113
+Cost-push inflation,Fiscal commitment,Inflation,Output gap,0.008794993429440477
+Cost-push inflation,Fiscal commitment,Inflation,Cost-push shock,0.6699569103763775
+Cost-push inflation,Bilateral commitment,Output,Expected output,0.045142544612983365
+Cost-push inflation,Bilateral commitment,Output,Expected inflation,0.0011781788516003872
+Cost-push inflation,Bilateral commitment,Output,Monetary action,-0.00775291899521912
+Cost-push inflation,Bilateral commitment,Output,Fiscal action,0.0159342569932569
+Cost-push inflation,Bilateral commitment,Output,Demand shock,0.0
+Cost-push inflation,Bilateral commitment,Inflation,Expected inflation,0.03156860931634233
+Cost-push inflation,Bilateral commitment,Inflation,Output gap,0.008453593497412735
+Cost-push inflation,Bilateral commitment,Inflation,Cost-push shock,0.6699569103763775
+Cost-push inflation,Coordination,Output,Expected output,0.03382324468014043
+Cost-push inflation,Coordination,Output,Expected inflation,0.0009175378464366213
+Cost-push inflation,Coordination,Output,Monetary action,-0.0071472855237364455
+Cost-push inflation,Coordination,Output,Fiscal action,0.024491959399612368
+Cost-push inflation,Coordination,Output,Demand shock,0.0
+Cost-push inflation,Coordination,Inflation,Expected inflation,0.02458488689367532
+Cost-push inflation,Coordination,Inflation,Output gap,0.008078763695045323
+Cost-push inflation,Coordination,Inflation,Cost-push shock,0.6699569103763775

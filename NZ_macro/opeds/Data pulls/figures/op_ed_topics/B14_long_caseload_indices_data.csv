@@ -1,0 +1,289 @@
+date,recipients,source_id,source_vintage,source_sheet,source_row,programme,estimate_basis,index
+2008-09-30,95603,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,100
+2008-12-31,102809,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,107.53742037383765
+2009-03-31,111886,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,117.0318923046348
+2009-06-30,130352,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,136.3471857577691
+2009-09-30,143628,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,150.23377927470895
+2009-12-31,148274,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,155.09345941026956
+2010-03-31,140702,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,147.17320586174074
+2010-06-30,146385,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,153.11757999225966
+2010-09-30,150803,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,157.7387738878487
+2010-12-31,149569,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,156.44801941361672
+2011-03-31,144177,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,150.80802903674572
+2011-06-30,139931,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,146.3667458134159
+2011-09-30,140843,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,147.3206907733021
+2011-12-31,143497,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,150.09675428595338
+2012-03-31,137028,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,143.33023022290095
+2012-06-30,134512,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,140.6985136449693
+2012-09-30,136020,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,142.27587000407937
+2012-12-31,137370,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,143.68795958285827
+2013-03-31,128784,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,134.7070698618244
+2013-06-30,128608,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,MSD pre-reform backcast,134.52297522044287
+2013-09-30,126470,msd_national_2013,2013,JS 2008-2013,27,Jobseeker Support,Observed current-category count,132.2866437245693
+2013-12-31,130225,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count,136.21434473813582
+2014-03-31,121953,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count,127.56189659320314
+2014-06-30,121131,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count,126.70209093856887
+2014-09-30,123133,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count,128.79616748428396
+2014-12-31,124631,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count,130.36306392058827
+2015-03-31,116893,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count,122.26917565348367
+2015-06-30,118072,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count,123.50240055228393
+2015-09-30,120901,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count,126.46151271403617
+2015-12-31,122927,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count,128.5806930744851
+2016-03-31,117134,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count,122.52125979310273
+2016-06-30,117954,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count,123.37897346317584
+2016-09-30,122284,msd_national_2018,2018,Summary table - last 5 years,4,Jobseeker Support,Observed current-category count,127.90812003807412
+2016-12-31,124311,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,130.02834639080365
+2017-03-31,119406,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,124.8977542545736
+2017-06-30,118776,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,124.23877911781011
+2017-09-30,120726,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,126.2784640649352
+2017-12-31,123039,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,128.69784420990973
+2018-03-31,118755,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,124.216813279918
+2018-06-30,122514,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,128.1486982626068
+2018-09-30,129645,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,135.6076692154012
+2018-12-31,134046,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,140.21108124222044
+2019-03-31,131721,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,137.77914918987898
+2019-06-30,136233,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,142.49866635984228
+2019-09-30,142932,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,149.50576864742737
+2019-12-31,147465,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,154.24725165528278
+2020-03-31,151743,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,158.72200663159106
+2020-06-30,190455,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,199.2144597972867
+2020-09-30,204117,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,213.50480633452926
+2020-12-31,212466,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,222.23779588506636
+2021-03-31,201300,msd_national_2021,2021,Summary table - last 5 years,5,Jobseeker Support,Observed current-category count,210.55824608014393
+2021-06-30,190260,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,199.0104913025742
+2021-09-30,193635,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,202.54071524952147
+2021-12-31,187989,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,196.6350428333839
+2022-03-31,177642,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,185.812160706254
+2022-06-30,170763,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,178.616779808165
+2022-09-30,170037,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,177.85738941246615
+2022-12-31,170103,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,177.92642490298422
+2023-03-31,168498,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,176.2476072926582
+2023-06-30,173130,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,181.0926435362907
+2023-09-30,181509,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,189.85701285524513
+2023-12-31,189798,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,198.52724286894764
+2024-03-31,187986,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,196.63190485654215
+2024-06-30,196434,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,205.4684476428564
+2024-09-30,204765,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,214.18260933234313
+2024-12-31,213321,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,223.13211928495969
+2025-03-31,209838,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,219.48892817171009
+2025-06-30,216009,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,225.94374653515058
+2025-09-30,217818,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,227.8359465707143
+2025-12-31,223512,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,233.79182661631958
+2026-03-31,215214,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,225.11218267209188
+2026-06-30,218481,msd_benefits,2026,Summary table - last 5 years,,Jobseeker Support,Observed current-category count,228.52943945273685
+2008-09-30,5783,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,100
+2008-12-31,13293,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,229.86339270274945
+2009-03-31,5560,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,96.14386996368667
+2009-06-30,5997,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,103.70050146982535
+2009-09-30,6522,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,112.77883451495764
+2009-12-31,18610,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,321.8052913712606
+2010-03-31,5818,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,100.60522220300882
+2010-06-30,6417,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,110.96316790593117
+2010-09-30,6736,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,116.47933598478298
+2010-12-31,21682,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,374.9265087324918
+2011-03-31,6019,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,104.08092685457375
+2011-06-30,6746,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,116.65225661421408
+2011-09-30,6488,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,112.19090437489193
+2011-12-31,25886,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,447.6223413453225
+2012-03-31,6207,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,107.33183468787827
+2012-06-30,6558,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,113.40134878090956
+2012-09-30,6579,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,113.76448210271485
+2012-12-31,24272,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,419.7129517551444
+2013-03-31,5533,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,95.67698426422272
+2013-06-30,6415,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,MSD pre-reform backcast,110.92858378004496
+2013-09-30,6153,msd_national_2013,2013,Other 2008-2013,8,Other Main Benefits,Observed current-category count,106.39806328895037
+2013-12-31,21140,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,365.55421061732665
+2014-03-31,4563,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,78.90368320940688
+2014-06-30,5171,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,89.41725747881722
+2014-09-30,4747,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,82.08542279093896
+2014-12-31,18113,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,313.21113608853534
+2015-03-31,3414,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,59.035102887774514
+2015-06-30,4078,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,70.51703268199896
+2015-09-30,4529,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,78.31575306934117
+2015-12-31,16194,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,280.02766730070897
+2016-03-31,3120,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,53.95123638250043
+2016-06-30,3558,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,61.525159951582225
+2016-09-30,3962,msd_national_2018,2018,Summary table - last 5 years,7,Other Main Benefits,Observed current-category count,68.5111533805983
+2016-12-31,14310,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,247.4494207158914
+2017-03-31,3513,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,60.74701711914231
+2017-06-30,3933,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,68.00968355524815
+2017-09-30,4143,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,71.64101677330106
+2017-12-31,13047,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,225.60954521874459
+2018-03-31,3327,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,57.530693411724016
+2018-06-30,3696,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,63.91146463773128
+2018-09-30,3639,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,62.925817049974064
+2018-12-31,12738,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,220.26629776932387
+2019-03-31,3402,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,58.827598132457204
+2019-06-30,3618,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,62.56268372816877
+2019-09-30,3762,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,65.05274079197649
+2019-12-31,12162,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,210.30606951409302
+2020-03-31,3405,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,58.87947432128653
+2020-06-30,4809,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,83.15753069341173
+2020-09-30,5184,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,89.64205429707764
+2020-12-31,15048,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,260.21096316790596
+2021-03-31,3510,msd_national_2021,2021,Summary table - last 5 years,8,Other Main Benefits,Observed current-category count,60.69514093031299
+2021-06-30,3816,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,65.98651219090438
+2021-09-30,4638,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,80.20058793014006
+2021-12-31,13002,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,224.8314023863047
+2022-03-31,3315,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,57.32318865640671
+2022-06-30,3465,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,59.916998097873076
+2022-09-30,3573,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,61.78454089572886
+2022-12-31,10200,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,176.37904201971295
+2023-03-31,3246,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,56.130036313332184
+2023-06-30,3582,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,61.94016946221684
+2023-09-30,4221,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,72.98979768286357
+2023-12-31,11241,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,194.38007954348953
+2024-03-31,3834,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,66.29776932388035
+2024-06-30,4344,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,75.11672142486599
+2024-09-30,4611,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,79.73370223067612
+2024-12-31,12576,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,217.4649835725402
+2025-03-31,4284,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,74.07919764827945
+2025-06-30,4524,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,78.22929275462563
+2025-09-30,5052,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,87.35950198858724
+2025-12-31,14430,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,249.5244682690645
+2026-03-31,4335,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,74.96109285837801
+2026-06-30,4455,msd_benefits,2026,Summary table - last 5 years,,Other Main Benefits,Observed current-category count,77.0361404115511
+2008-09-30,79178,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,100
+2008-12-31,80906,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,102.18242441082118
+2009-03-31,81803,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,103.31531486018844
+2009-06-30,83387,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,105.31587057010786
+2009-09-30,85319,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,107.75594230720655
+2009-12-31,87067,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,109.96362625981965
+2010-03-31,86947,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,109.81206900906818
+2010-06-30,88110,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,111.28091136426785
+2010-09-30,88624,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,111.93008158832
+2010-12-31,89432,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,112.95056707671323
+2011-03-31,89260,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,112.73333501730279
+2011-06-30,89056,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,112.47568769102529
+2011-09-30,89164,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,112.6120892167016
+2011-12-31,89856,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,113.48606936270176
+2012-03-31,88509,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,111.78483922301649
+2012-06-30,87662,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,110.71509762812903
+2012-09-30,86967,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,109.8373285508601
+2012-12-31,85939,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,108.53898810275581
+2013-03-31,84462,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,106.67357094142312
+2013-06-30,82897,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,MSD pre-reform backcast,104.69701179620601
+2013-09-30,79699,msd_national_2013,2013,SPS 2008-2013,22,Sole Parent Support,Observed current-category count,100.65801106367931
+2013-12-31,77843,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count,98.31392558538988
+2014-03-31,75844,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count,95.78923438328829
+2014-06-30,74027,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count,93.49440501149309
+2014-09-30,72589,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count,91.67824395665463
+2014-12-31,72534,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count,91.60878021672687
+2015-03-31,70373,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count,88.87948672611078
+2015-06-30,69240,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count,87.44853368359898
+2015-09-30,67887,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count,85.73972568137614
+2015-12-31,68380,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count,86.36237338654676
+2016-03-31,66387,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count,83.84526004698274
+2016-06-30,65422,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count,82.626487155523
+2016-09-30,64372,msd_national_2018,2018,Summary table - last 5 years,5,Sole Parent Support,Observed current-category count,81.30036121144762
+2016-12-31,64971,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,82.05688448811539
+2017-03-31,62214,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,78.57485665210034
+2017-06-30,60630,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,76.57430094218091
+2017-09-30,59502,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,75.14966278511707
+2017-12-31,60678,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,76.6349238424815
+2018-03-31,58830,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,74.30094218090883
+2018-06-30,58557,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,73.95614943544923
+2018-09-30,58620,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,74.03571699209377
+2018-12-31,59871,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,75.61570133117785
+2019-03-31,58824,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,74.29336431837126
+2019-06-30,59262,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,74.84654828361414
+2019-09-30,59715,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,75.41867690520094
+2019-12-31,61188,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,77.27904215817524
+2020-03-31,60984,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,77.02139483189775
+2020-06-30,64029,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,80.86716006971633
+2020-09-30,65856,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,83.17461921240749
+2020-12-31,67563,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,85.33052110434717
+2021-03-31,66753,msd_national_2021,2021,Summary table - last 5 years,6,Sole Parent Support,Observed current-category count,84.30750966177473
+2021-06-30,65967,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,83.3148096693526
+2021-09-30,66627,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,84.14837454848569
+2021-12-31,73263,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,92.52949051504206
+2022-03-31,72372,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,91.40417792821238
+2022-06-30,72687,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,91.80201571143499
+2022-09-30,72897,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,92.06724090025007
+2022-12-31,73560,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,92.90459471065195
+2023-03-31,73572,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,92.9197504357271
+2023-06-30,74166,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,93.66995882694688
+2023-09-30,75000,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,94.7232817196696
+2023-12-31,76170,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,96.20096491449645
+2024-03-31,76338,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,96.4131450655485
+2024-06-30,76959,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,97.19745383818737
+2024-09-30,78027,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,98.54631336987548
+2024-12-31,79296,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,100.14903129657228
+2025-03-31,79341,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,100.20586526560407
+2025-06-30,79953,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,100.97880724443658
+2025-09-30,80568,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,101.75553815453787
+2025-12-31,81534,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,102.97557402308722
+2026-03-31,81531,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,102.97178509181843
+2026-06-30,81255,msd_benefits,2026,Summary table - last 5 years,,Sole Parent Support,Observed current-category count,102.62320341509005
+2008-09-30,89044,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,100
+2008-12-31,89168,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,100.13925699654104
+2009-03-31,89710,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,100.74794483626073
+2009-06-30,90560,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,101.70252908674364
+2009-09-30,91342,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,102.58074659718791
+2009-12-31,91525,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,102.7862629711154
+2010-03-31,91347,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,102.58636179866133
+2010-06-30,92012,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,103.33318359462737
+2010-09-30,92049,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,103.37473608553074
+2010-12-31,92024,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,103.34666007816361
+2011-03-31,92073,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,103.4016890526032
+2011-06-30,92084,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,103.41404249584475
+2011-09-30,92001,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,103.32083015138583
+2011-12-31,91693,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,102.97493374062262
+2012-03-31,91207,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,102.42913615740532
+2012-06-30,91309,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,102.54368626746327
+2012-09-30,91376,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,102.61892996720722
+2012-12-31,91514,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,102.77390952787385
+2013-03-31,91367,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,102.60882260455506
+2013-06-30,91862,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,MSD pre-reform backcast,103.16472755042452
+2013-09-30,92072,msd_national_2013,2013,SLP 2008-2013,29,Supported Living Payment,Observed current-category count,103.40056601230852
+2013-12-31,92661,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count,104.06203674587844
+2014-03-31,92960,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count,104.39782579398948
+2014-06-30,93257,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count,104.73136876151116
+2014-09-30,93852,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count,105.3995777368492
+2014-12-31,93867,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count,105.41642334126948
+2015-03-31,93580,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count,105.09411077669466
+2015-06-30,93959,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count,105.51974304838058
+2015-09-30,93850,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count,105.39733165625982
+2015-12-31,93848,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count,105.39508557567045
+2016-03-31,93250,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count,104.72350747944836
+2016-06-30,93243,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count,104.71564619738557
+2016-09-30,93257,msd_national_2018,2018,Summary table - last 5 years,6,Supported Living Payment,Observed current-category count,104.73136876151116
+2016-12-31,93420,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,104.91442432954494
+2017-03-31,93108,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,104.56403575760298
+2017-06-30,92991,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,104.43264004312475
+2017-09-30,92847,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,104.27092224069
+2017-12-31,93021,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,104.46633125196531
+2018-03-31,92472,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,103.84978213018283
+2018-06-30,92643,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,104.0418220205741
+2018-09-30,92415,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,103.78576883338575
+2018-12-31,92688,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,104.09235883383496
+2019-03-31,92502,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,103.88347333902341
+2019-06-30,92856,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,104.28102960334216
+2019-09-30,93063,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,104.51349894434212
+2019-12-31,93594,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,105.10983334082027
+2020-03-31,93861,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,105.40968509950137
+2020-06-30,94143,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,105.72638246260276
+2020-09-30,94146,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,105.72975158348682
+2020-12-31,94419,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,106.03634158393604
+2021-03-31,94368,msd_national_2021,2021,Summary table - last 5 years,7,Supported Living Payment,Observed current-category count,105.97906652890705
+2021-06-30,94701,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,106.35303894703742
+2021-09-30,94599,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,106.23848883697947
+2021-12-31,93918,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,105.47369839629846
+2022-03-31,95007,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,106.69668927721126
+2022-06-30,97710,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,109.7322671937469
+2022-09-30,99258,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,111.47073356992048
+2022-12-31,100038,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,112.3467049997754
+2023-03-31,100095,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,112.41071829657248
+2023-06-30,100878,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,113.29005884731144
+2023-09-30,101364,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,113.83585643052872
+2023-12-31,101502,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,113.99083599119537
+2024-03-31,102090,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,114.6511836844706
+2024-06-30,103152,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,115.84385247742689
+2024-09-30,103824,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,116.59853555545573
+2024-12-31,104469,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,117.32289654552805
+2025-03-31,104700,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,117.58231885360047
+2025-06-30,105642,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,118.64022281119446
+2025-09-30,106890,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,120.04177709896231
+2025-12-31,107760,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,121.01882215533894
+2026-03-31,108498,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,121.84762589281704
+2026-06-30,109500,msd_benefits,2026,Summary table - last 5 years,,Supported Living Payment,Observed current-category count,122.97291226809217

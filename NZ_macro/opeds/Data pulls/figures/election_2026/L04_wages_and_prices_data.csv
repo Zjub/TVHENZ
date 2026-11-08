@@ -1,0 +1,109 @@
+series,period,value,units,magnitude,measure,status,year,month,date,cpi,label,basis,index
+LCIQ.SD53Z9,2019.12,1056.719023,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2019,12,2019-12-01,1044,Fixed-quality wage rates (LCI),Nominal,100
+LCIQ.SD53Z9,2019.12,1056.719023,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2019,12,2019-12-01,1044,Fixed-quality wage rates (LCI),CPI-adjusted,100
+LCIQ.SD53Z9,2020.03,1060.209,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2020,3,2020-03-01,1052,Fixed-quality wage rates (LCI),Nominal,100.33026537083548
+LCIQ.SD53Z9,2020.03,1060.209,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2020,3,2020-03-01,1052,Fixed-quality wage rates (LCI),CPI-adjusted,99.56729757333862
+LCIQ.SD53Z9,2020.06,1062.827225,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2020,6,2020-06-01,1047,Fixed-quality wage rates (LCI),Nominal,100.57803463996123
+LCIQ.SD53Z9,2020.06,1062.827225,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2020,6,2020-06-01,1047,Fixed-quality wage rates (LCI),CPI-adjusted,100.28984542895846
+LCIQ.SD53Z9,2020.09,1068.935428,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2020,9,2020-09-01,1054,Fixed-quality wage rates (LCI),Nominal,101.156069374555
+LCIQ.SD53Z9,2020.09,1068.935428,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2020,9,2020-09-01,1054,Fixed-quality wage rates (LCI),CPI-adjusted,100.19633437100133
+LCIQ.SD53Z9,2020.12,1073.298429,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2020,12,2020-12-01,1059,Fixed-quality wage rates (LCI),Nominal,101.56895121968479
+LCIQ.SD53Z9,2020.12,1073.298429,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2020,12,2020-12-01,1059,Fixed-quality wage rates (LCI),CPI-adjusted,100.13029751968924
+LCIQ.SD53Z9,2021.03,1077.661431,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2021,3,2021-03-01,1068,Fixed-quality wage rates (LCI),Nominal,101.98183315944715
+LCIQ.SD53Z9,2021.03,1077.661431,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2021,3,2021-03-01,1068,Fixed-quality wage rates (LCI),CPI-adjusted,99.69010657159438
+LCIQ.SD53Z9,2021.06,1085.514834,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2021,6,2021-06-01,1082,Fixed-quality wage rates (LCI),Nominal,102.72502059423984
+LCIQ.SD53Z9,2021.06,1085.514834,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2021,6,2021-06-01,1082,Fixed-quality wage rates (LCI),CPI-adjusted,99.11730268057892
+LCIQ.SD53Z9,2021.09,1094.240838,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2021,9,2021-09-01,1106,Fixed-quality wage rates (LCI),Nominal,103.5507844737645
+LCIQ.SD53Z9,2021.09,1094.240838,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2021,9,2021-09-01,1106,Fixed-quality wage rates (LCI),CPI-adjusted,97.74594845443953
+LCIQ.SD53Z9,2021.12,1101.22164,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2021,12,2021-12-01,1122,Fixed-quality wage rates (LCI),Nominal,104.2113954638252
+LCIQ.SD53Z9,2021.12,1101.22164,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2021,12,2021-12-01,1122,Fixed-quality wage rates (LCI),CPI-adjusted,96.96675299842558
+LCIQ.SD53Z9,2022.03,1109.947644,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2022,3,2022-03-01,1142,Fixed-quality wage rates (LCI),Nominal,105.03715934334987
+LCIQ.SD53Z9,2022.03,1109.947644,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2022,3,2022-03-01,1142,Fixed-quality wage rates (LCI),CPI-adjusted,96.02346265714296
+LCIQ.SD53Z9,2022.06,1122.164049,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2022,6,2022-06-01,1161,Fixed-quality wage rates (LCI),Nominal,106.19322871790487
+LCIQ.SD53Z9,2022.06,1122.164049,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2022,6,2022-06-01,1161,Fixed-quality wage rates (LCI),CPI-adjusted,95.49158551377491
+LCIQ.SD53Z9,2022.09,1134.380454,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2022,9,2022-09-01,1186,Fixed-quality wage rates (LCI),Nominal,107.3492980924599
+LCIQ.SD53Z9,2022.09,1134.380454,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2022,9,2022-09-01,1186,Fixed-quality wage rates (LCI),CPI-adjusted,94.49634671882642
+LCIQ.SD53Z9,2022.12,1146.596859,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2022,12,2022-12-01,1203,Fixed-quality wage rates (LCI),Nominal,108.50536746701492
+LCIQ.SD53Z9,2022.12,1146.596859,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2022,12,2022-12-01,1203,Fixed-quality wage rates (LCI),CPI-adjusted,94.16425904868127
+LCIQ.SD53Z9,2023.03,1157.940663,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2023,3,2023-03-01,1218,Fixed-quality wage rates (LCI),Nominal,109.57886039683795
+LCIQ.SD53Z9,2023.03,1157.940663,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2023,3,2023-03-01,1218,Fixed-quality wage rates (LCI),CPI-adjusted,93.92473748300395
+LCIQ.SD53Z9,2023.06,1170.157068,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2023,6,2023-06-01,1231,Fixed-quality wage rates (LCI),Nominal,110.73492977139297
+LCIQ.SD53Z9,2023.06,1170.157068,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2023,6,2023-06-01,1231,Fixed-quality wage rates (LCI),CPI-adjusted,93.91329543568989
+LCIQ.SD53Z9,2023.09,1184.118674,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2023,9,2023-09-01,1253,Fixed-quality wage rates (LCI),Nominal,112.05615194077943
+LCIQ.SD53Z9,2023.09,1184.118674,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2023,9,2023-09-01,1253,Fixed-quality wage rates (LCI),CPI-adjusted,93.36522156917296
+LCIQ.SD53Z9,2023.12,1196.335079,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2023,12,2023-12-01,1259,Fixed-quality wage rates (LCI),Nominal,113.21222131533445
+LCIQ.SD53Z9,2023.12,1196.335079,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2023,12,2023-12-01,1259,Fixed-quality wage rates (LCI),CPI-adjusted,93.87891902558312
+LCIQ.SD53Z9,2024.03,1205.933682,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2024,3,2024-03-01,1267,Fixed-quality wage rates (LCI),Nominal,114.12056145032604
+LCIQ.SD53Z9,2024.03,1205.933682,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2024,3,2024-03-01,1267,Fixed-quality wage rates (LCI),CPI-adjusted,94.03462206325206
+LCIQ.SD53Z9,2024.06,1219.895288,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2024,6,2024-06-01,1272,Fixed-quality wage rates (LCI),Nominal,115.4417836197125
+LCIQ.SD53Z9,2024.06,1219.895288,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2024,6,2024-06-01,1272,Fixed-quality wage rates (LCI),CPI-adjusted,94.7493884425942
+LCIQ.SD53Z9,2024.09,1227.748691,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2024,9,2024-09-01,1280,Fixed-quality wage rates (LCI),Nominal,116.18497105450517
+LCIQ.SD53Z9,2024.09,1227.748691,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2024,9,2024-09-01,1280,Fixed-quality wage rates (LCI),CPI-adjusted,94.76336701633078
+LCIQ.SD53Z9,2024.12,1234.729494,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2024,12,2024-12-01,1287,Fixed-quality wage rates (LCI),Nominal,116.8455821391984
+LCIQ.SD53Z9,2024.12,1234.729494,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2024,12,2024-12-01,1287,Fixed-quality wage rates (LCI),CPI-adjusted,94.78382886816094
+LCIQ.SD53Z9,2025.03,1240.837696,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2025,3,2025-03-01,1299,Fixed-quality wage rates (LCI),Nominal,117.42361677915964
+LCIQ.SD53Z9,2025.03,1240.837696,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2025,3,2025-03-01,1299,Fixed-quality wage rates (LCI),CPI-adjusted,94.37279131442854
+LCIQ.SD53Z9,2025.06,1248.691099,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2025,6,2025-06-01,1306,Fixed-quality wage rates (LCI),Nominal,118.16680421395232
+LCIQ.SD53Z9,2025.06,1248.691099,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2025,6,2025-06-01,1306,Fixed-quality wage rates (LCI),CPI-adjusted,94.46105941758515
+LCIQ.SD53Z9,2025.09,1253.926702,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2025,9,2025-09-01,1319,Fixed-quality wage rates (LCI),Nominal,118.66226259844665
+LCIQ.SD53Z9,2025.09,1253.926702,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2025,9,2025-09-01,1319,Fixed-quality wage rates (LCI),CPI-adjusted,93.92221543046118
+LCIQ.SD53Z9,2025.12,1259.162304,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2025,12,2025-12-01,1327,Fixed-quality wage rates (LCI),Nominal,119.15772088830845
+LCIQ.SD53Z9,2025.12,1259.162304,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2025,12,2025-12-01,1327,Fixed-quality wage rates (LCI),CPI-adjusted,93.74578794829992
+LCIQ.SD53Z9,2026.03,1265.270506,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2026,3,2026-03-01,1339,Fixed-quality wage rates (LCI),Nominal,119.73575552826968
+LCIQ.SD53Z9,2026.03,1265.270506,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2026,3,2026-03-01,1339,Fixed-quality wage rates (LCI),CPI-adjusted,93.35633216692572
+LCIQ.SD53Z9,2026.06,1273.123909,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2026,6,2026-06-01,1359,Fixed-quality wage rates (LCI),Nominal,120.47894296306237
+LCIQ.SD53Z9,2026.06,1273.123909,index,0,All Sectors Combined All Salary and Wage Rates,FINAL,2026,6,2026-06-01,1359,Fixed-quality wage rates (LCI),CPI-adjusted,92.55336015705453
+QEMQ.SAAZ9A,2019.12,32.9,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2019,12,2019-12-01,1044,Average hourly earnings (QES),Nominal,100
+QEMQ.SAAZ9A,2019.12,32.9,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2019,12,2019-12-01,1044,Average hourly earnings (QES),CPI-adjusted,100
+QEMQ.SAAZ9A,2020.03,33.2,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2020,3,2020-03-01,1052,Average hourly earnings (QES),Nominal,100.91185410334349
+QEMQ.SAAZ9A,2020.03,33.2,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2020,3,2020-03-01,1052,Average hourly earnings (QES),CPI-adjusted,100.14446357784277
+QEMQ.SAAZ9A,2020.06,33.42,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2020,6,2020-06-01,1047,Average hourly earnings (QES),Nominal,101.58054711246201
+QEMQ.SAAZ9A,2020.06,33.42,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2020,6,2020-06-01,1047,Average hourly earnings (QES),CPI-adjusted,101.28948537288477
+QEMQ.SAAZ9A,2020.09,34.06,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2020,9,2020-09-01,1054,Average hourly earnings (QES),Nominal,103.5258358662614
+QEMQ.SAAZ9A,2020.09,34.06,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2020,9,2020-09-01,1054,Average hourly earnings (QES),CPI-adjusted,102.54361730965553
+QEMQ.SAAZ9A,2020.12,34.32,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2020,12,2020-12-01,1059,Average hourly earnings (QES),Nominal,104.3161094224924
+QEMQ.SAAZ9A,2020.12,34.32,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2020,12,2020-12-01,1059,Average hourly earnings (QES),CPI-adjusted,102.83854413322197
+QEMQ.SAAZ9A,2021.03,34.53,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2021,3,2021-03-01,1068,Average hourly earnings (QES),Nominal,104.95440729483283
+QEMQ.SAAZ9A,2021.03,34.53,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2021,3,2021-03-01,1068,Average hourly earnings (QES),CPI-adjusted,102.59588128820738
+QEMQ.SAAZ9A,2021.06,34.76,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2021,6,2021-06-01,1082,Average hourly earnings (QES),Nominal,105.65349544072949
+QEMQ.SAAZ9A,2021.06,34.76,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2021,6,2021-06-01,1082,Average hourly earnings (QES),CPI-adjusted,101.94292905741365
+QEMQ.SAAZ9A,2021.09,35.25,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2021,9,2021-09-01,1106,Average hourly earnings (QES),Nominal,107.14285714285715
+QEMQ.SAAZ9A,2021.09,35.25,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2021,9,2021-09-01,1106,Average hourly earnings (QES),CPI-adjusted,101.1366571945234
+QEMQ.SAAZ9A,2021.12,35.61,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2021,12,2021-12-01,1122,Average hourly earnings (QES),Nominal,108.2370820668693
+QEMQ.SAAZ9A,2021.12,35.61,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2021,12,2021-12-01,1122,Average hourly earnings (QES),CPI-adjusted,100.71257903548268
+QEMQ.SAAZ9A,2022.03,36.18,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2022,3,2022-03-01,1142,Average hourly earnings (QES),Nominal,109.96960486322189
+QEMQ.SAAZ9A,2022.03,36.18,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2022,3,2022-03-01,1142,Average hourly earnings (QES),CPI-adjusted,100.53263351769148
+QEMQ.SAAZ9A,2022.06,36.97,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2022,6,2022-06-01,1161,Average hourly earnings (QES),Nominal,112.37082066869301
+QEMQ.SAAZ9A,2022.06,36.97,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2022,6,2022-06-01,1161,Average hourly earnings (QES),CPI-adjusted,101.04662943851466
+QEMQ.SAAZ9A,2022.09,37.86,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2022,9,2022-09-01,1186,Average hourly earnings (QES),Nominal,115.07598784194529
+QEMQ.SAAZ9A,2022.09,37.86,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2022,9,2022-09-01,1186,Average hourly earnings (QES),CPI-adjusted,101.29791847132452
+QEMQ.SAAZ9A,2022.12,38.19,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2022,12,2022-12-01,1203,Average hourly earnings (QES),Nominal,116.07902735562311
+QEMQ.SAAZ9A,2022.12,38.19,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2022,12,2022-12-01,1203,Average hourly earnings (QES),CPI-adjusted,100.73691152059064
+QEMQ.SAAZ9A,2023.03,38.93,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2023,3,2023-03-01,1218,Average hourly earnings (QES),Nominal,118.32826747720365
+QEMQ.SAAZ9A,2023.03,38.93,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2023,3,2023-03-01,1218,Average hourly earnings (QES),CPI-adjusted,101.42422926617458
+QEMQ.SAAZ9A,2023.06,39.53,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2023,6,2023-06-01,1231,Average hourly earnings (QES),Nominal,120.15197568389058
+QEMQ.SAAZ9A,2023.06,39.53,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2023,6,2023-06-01,1231,Average hourly earnings (QES),CPI-adjusted,101.89980716001769
+QEMQ.SAAZ9A,2023.09,40.4,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2023,9,2023-09-01,1253,Average hourly earnings (QES),Nominal,122.79635258358662
+QEMQ.SAAZ9A,2023.09,40.4,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2023,9,2023-09-01,1253,Average hourly earnings (QES),CPI-adjusted,102.3139601733954
+QEMQ.SAAZ9A,2023.12,40.84,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2023,12,2023-12-01,1259,Average hourly earnings (QES),Nominal,124.13373860182372
+QEMQ.SAAZ9A,2023.12,40.84,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2023,12,2023-12-01,1259,Average hourly earnings (QES),CPI-adjusted,102.93536386044796
+QEMQ.SAAZ9A,2024.03,40.96,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2024,3,2024-03-01,1267,Average hourly earnings (QES),Nominal,124.4984802431611
+QEMQ.SAAZ9A,2024.03,40.96,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2024,3,2024-03-01,1267,Average hourly earnings (QES),CPI-adjusted,102.58596162104199
+QEMQ.SAAZ9A,2024.06,41.52,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2024,6,2024-06-01,1272,Average hourly earnings (QES),Nominal,126.20060790273557
+QEMQ.SAAZ9A,2024.06,41.52,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2024,6,2024-06-01,1272,Average hourly earnings (QES),CPI-adjusted,103.57974422205658
+QEMQ.SAAZ9A,2024.09,41.98,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2024,9,2024-09-01,1280,Average hourly earnings (QES),Nominal,127.59878419452887
+QEMQ.SAAZ9A,2024.09,41.98,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2024,9,2024-09-01,1280,Average hourly earnings (QES),CPI-adjusted,104.07275835866261
+QEMQ.SAAZ9A,2024.12,42.57,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2024,12,2024-12-01,1287,Average hourly earnings (QES),Nominal,129.3920972644377
+QEMQ.SAAZ9A,2024.12,42.57,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2024,12,2024-12-01,1287,Average hourly earnings (QES),CPI-adjusted,104.96142155716626
+QEMQ.SAAZ9A,2025.03,42.79,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2025,3,2025-03-01,1299,Average hourly earnings (QES),Nominal,130.06079027355625
+QEMQ.SAAZ9A,2025.03,42.79,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2025,3,2025-03-01,1299,Average hourly earnings (QES),CPI-adjusted,104.52922636304291
+QEMQ.SAAZ9A,2025.06,43.39,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2025,6,2025-06-01,1306,Average hourly earnings (QES),Nominal,131.88449848024317
+QEMQ.SAAZ9A,2025.06,43.39,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2025,6,2025-06-01,1306,Average hourly earnings (QES),CPI-adjusted,105.42681195511018
+QEMQ.SAAZ9A,2025.09,43.6,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2025,9,2025-09-01,1319,Average hourly earnings (QES),Nominal,132.52279635258358
+QEMQ.SAAZ9A,2025.09,43.6,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2025,9,2025-09-01,1319,Average hourly earnings (QES),CPI-adjusted,104.89294874306087
+QEMQ.SAAZ9A,2025.12,43.99,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2025,12,2025-12-01,1327,Average hourly earnings (QES),Nominal,133.70820668693008
+QEMQ.SAAZ9A,2025.12,43.99,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2025,12,2025-12-01,1327,Average hourly earnings (QES),CPI-adjusted,105.1931935050151
+QEMQ.SAAZ9A,2026.03,44.12,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2026,3,2026-03-01,1339,Average hourly earnings (QES),Nominal,134.1033434650456
+QEMQ.SAAZ9A,2026.03,44.12,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2026,3,2026-03-01,1339,Average hourly earnings (QES),CPI-adjusted,104.5585441206181
+QEMQ.SAAZ9A,2026.06,44.62,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2026,6,2026-06-01,1359,Average hourly earnings (QES),Nominal,135.62310030395136
+QEMQ.SAAZ9A,2026.06,44.62,Dollars,0,Total All Industries Ordinary Time Hourly,FINAL,2026,6,2026-06-01,1359,Average hourly earnings (QES),CPI-adjusted,104.18728235270437

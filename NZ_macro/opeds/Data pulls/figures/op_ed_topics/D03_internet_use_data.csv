@@ -1,0 +1,48 @@
+country,iso3,year,measure,indicator,value
+Australia,AUS,2024,internet_users,IT.NET.USER.ZS,96.13140106
+Australia,AUS,2023,internet_users,IT.NET.USER.ZS,96.1160965
+Australia,AUS,2022,internet_users,IT.NET.USER.ZS,96.11940002
+Australia,AUS,2021,internet_users,IT.NET.USER.ZS,96.97219849
+Australia,AUS,2020,internet_users,IT.NET.USER.ZS,94.6934967
+Australia,AUS,2019,internet_users,IT.NET.USER.ZS,93.60990143
+Australia,AUS,2018,internet_users,IT.NET.USER.ZS,90.0082016
+Australia,AUS,2017,internet_users,IT.NET.USER.ZS,86.5450488476768
+Australia,AUS,2016,internet_users,IT.NET.USER.ZS,86.54000092
+Australia,AUS,2015,internet_users,IT.NET.USER.ZS,84.5605149091408
+Australia,AUS,2014,internet_users,IT.NET.USER.ZS,84
+Australia,AUS,2013,internet_users,IT.NET.USER.ZS,83.453497167
+Australia,AUS,2012,internet_users,IT.NET.USER.ZS,79
+Australia,AUS,2011,internet_users,IT.NET.USER.ZS,79.4876977139029
+Australia,AUS,2010,internet_users,IT.NET.USER.ZS,76
+Australia,AUS,2009,internet_users,IT.NET.USER.ZS,74.25
+Australia,AUS,2008,internet_users,IT.NET.USER.ZS,71.67
+Australia,AUS,2007,internet_users,IT.NET.USER.ZS,69.45
+Australia,AUS,2006,internet_users,IT.NET.USER.ZS,66
+Australia,AUS,2005,internet_users,IT.NET.USER.ZS,63
+Australia,AUS,2001,internet_users,IT.NET.USER.ZS,52.6892664310395
+Australia,AUS,2000,internet_users,IT.NET.USER.ZS,46.7561156116738
+New Zealand,NZL,2024,internet_users,IT.NET.USER.ZS,93.51930237
+New Zealand,NZL,2023,internet_users,IT.NET.USER.ZS,93.32610321
+New Zealand,NZL,2022,internet_users,IT.NET.USER.ZS,93.07289886
+New Zealand,NZL,2021,internet_users,IT.NET.USER.ZS,91.99060059
+New Zealand,NZL,2020,internet_users,IT.NET.USER.ZS,90.92099762
+New Zealand,NZL,2019,internet_users,IT.NET.USER.ZS,89.86370087
+New Zealand,NZL,2018,internet_users,IT.NET.USER.ZS,89
+New Zealand,NZL,2017,internet_users,IT.NET.USER.ZS,87.69999695
+New Zealand,NZL,2016,internet_users,IT.NET.USER.ZS,86.5
+New Zealand,NZL,2015,internet_users,IT.NET.USER.ZS,85.19999695
+New Zealand,NZL,2014,internet_users,IT.NET.USER.ZS,84
+New Zealand,NZL,2013,internet_users,IT.NET.USER.ZS,82.77999878
+New Zealand,NZL,2012,internet_users,IT.NET.USER.ZS,81.644470179502
+New Zealand,NZL,2011,internet_users,IT.NET.USER.ZS,81.23000336
+New Zealand,NZL,2010,internet_users,IT.NET.USER.ZS,80.45999908
+New Zealand,NZL,2009,internet_users,IT.NET.USER.ZS,79.7
+New Zealand,NZL,2008,internet_users,IT.NET.USER.ZS,72.02999878
+New Zealand,NZL,2007,internet_users,IT.NET.USER.ZS,69.76000214
+New Zealand,NZL,2006,internet_users,IT.NET.USER.ZS,69
+New Zealand,NZL,2005,internet_users,IT.NET.USER.ZS,62.72019958
+New Zealand,NZL,2004,internet_users,IT.NET.USER.ZS,61.8476278106481
+New Zealand,NZL,2003,internet_users,IT.NET.USER.ZS,60.9625398663824
+New Zealand,NZL,2002,internet_users,IT.NET.USER.ZS,59.0807532812931
+New Zealand,NZL,2001,internet_users,IT.NET.USER.ZS,53.2410152941279
+New Zealand,NZL,2000,internet_users,IT.NET.USER.ZS,47.3795565432096

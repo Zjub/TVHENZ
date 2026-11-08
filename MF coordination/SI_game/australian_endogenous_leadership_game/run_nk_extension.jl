@@ -142,6 +142,97 @@ function save_channel_plot(channels, summary)
             joinpath(OUTPUT, "nk_strategic_investment_channels.png"))
 end
 
+function save_expectations_accounting(accounting)
+    names = ["Flexible Nash", "Monetary commitment", "Fiscal commitment",
+             "Bilateral commitment", "Coordination"]
+    colors = [:navy, :purple, :darkgreen, :grey55, :firebrick]
+    panels = Any[]
+    specifications = [
+        ("Demand contraction", "Output", ["Expected output", "Expected inflation",
+          "Monetary action", "Fiscal action", "Demand shock"]),
+        ("Demand contraction", "Inflation", ["Expected inflation", "Output gap",
+          "Cost-push shock"]),
+        ("Cost-push inflation", "Output", ["Expected output", "Expected inflation",
+          "Monetary action", "Fiscal action", "Demand shock"]),
+        ("Cost-push inflation", "Inflation", ["Expected inflation", "Output gap",
+          "Cost-push shock"]),
+    ]
+    for (scenario, variable, contributions) in specifications
+        x = collect(1:length(names))
+        p = plot(title="$scenario: $variable", xticks=(x, names), xrotation=18,
+                 ylabel="contribution", legend=:outerright)
+        width = 0.75 / length(contributions)
+        for (j, contribution) in enumerate(contributions)
+            values = [accounting[(accounting.scenario .== scenario) .&
+                                 (accounting.regime .== name) .&
+                                 (accounting.variable .== variable) .&
+                                 (accounting.contribution .== contribution), :value][1]
+                      for name in names]
+            offset = (j - (length(contributions) + 1) / 2) * width
+            bar!(p, x .+ offset, values, bar_width=width * 0.92,
+                 color=colors[j], label=contribution)
+        end
+        hline!(p, [0.0], color=:black, linewidth=1, label=false)
+        push!(panels, p)
+    end
+    savefig(plot(panels..., layout=(2, 2), size=(1250, 850),
+                 plot_title="Rational-expectations accounting at impact",
+                 left_margin=7Plots.mm, bottom_margin=9Plots.mm,
+                 right_margin=7Plots.mm),
+            joinpath(OUTPUT, "nk_expectations_accounting.png"))
+end
+
+function save_policy_rule_heatmap(rule_table)
+    regimes = ["Flexible Nash", "Monetary commitment", "Fiscal commitment",
+               "Bilateral commitment", "Coordination"]
+    states = ["lagged output", "lagged inflation", "debt", "lagged monetary",
+              "lagged fiscal", "demand shock", "cost-push shock"]
+    panels = Any[]
+    for authority in ["Monetary", "Fiscal"]
+        matrix = [rule_table[(rule_table.regime .== regime) .&
+                             (rule_table.authority .== authority) .&
+                             (rule_table.state .== state), :coefficient][1]
+                  for regime in regimes, state in states]
+        bound = maximum(abs, matrix)
+        p = heatmap(1:length(states), 1:length(regimes), matrix,
+            xticks=(1:length(states), states), yticks=(1:length(regimes), regimes),
+            xrotation=25, yflip=true, color=:balance, clims=(-bound, bound),
+            title="$authority feedback rule", colorbar_title="coefficient")
+        push!(panels, p)
+    end
+    savefig(plot(panels..., layout=(2, 1), size=(1100, 800),
+                 plot_title="Pure New Keynesian Markov policy rules",
+                 left_margin=22Plots.mm, bottom_margin=12Plots.mm,
+                 right_margin=8Plots.mm),
+            joinpath(OUTPUT, "nk_policy_rule_heatmap.png"))
+end
+
+function save_pure_channel_decomposition(channels)
+    cases = [("M-only: monetary", "Monetary commitment", "Monetary"),
+             ("F-only: fiscal", "Fiscal commitment", "Fiscal"),
+             ("Both: monetary", "Bilateral commitment", "Monetary"),
+             ("Both: fiscal", "Bilateral commitment", "Fiscal")]
+    macro_values = Float64[]
+    adjustment = Float64[]
+    for (_, regime, authority) in cases
+        row = channels[(channels.theta .== 1.0) .&
+                       (channels.regime .== regime) .&
+                       (channels.authority .== authority), :]
+        push!(macro_values, row.macro_state_wedge[1])
+        push!(adjustment, row.adjustment_state_wedge[1])
+    end
+    x = collect(1:length(cases))
+    labels = first.(cases)
+    p = bar(x .- 0.18, macro_values, bar_width=0.34, color=:darkorange,
+            label="macro-state rival response", xticks=(x, labels), xrotation=16,
+            ylabel="first-order-condition contribution",
+            title="Pure NK strategic channel decomposition")
+    bar!(p, x .+ 0.18, adjustment, bar_width=0.34, color=:navy,
+         label="inherited-policy rival response")
+    hline!(p, [0.0], color=:black, linewidth=1, label=false)
+    savefig(p, joinpath(OUTPUT, "nk_pure_channel_decomposition.png"))
+end
+
 function save_irfs(paths, scenario, filename)
     fields = [(:output, "Output gap"), (:inflation, "Inflation gap"),
               (:debt, "Debt gap"), (:monetary, "Monetary instrument"),
@@ -173,10 +264,12 @@ function save_irfs(paths, scenario, filename)
             joinpath(OUTPUT, filename))
 end
 
-function write_tex(summary, channels, search, backward_match)
+function write_tex(summary, channels, search, backward_match, solutions)
     demand = summary[(summary.scenario .== "Demand contraction") .&
                      (summary.theta .== 1.0), :]
-    getv(regime, column) = demand[demand.regime .== regime, column][1]
+    supply = summary[(summary.scenario .== "Cost-push inflation") .&
+                     (summary.theta .== 1.0), :]
+    getv(df, regime, column) = df[df.regime .== regime, column][1]
     mon = channels[(channels.theta .== 1.0) .&
                    (channels.regime .== "Monetary commitment") .&
                    (channels.authority .== "Monetary"), :]
@@ -193,21 +286,45 @@ function write_tex(summary, channels, search, backward_match)
         @printf(io, "\\newcommand{\\NKBackwardMatch}{%.2e}\n", backward_match)
         @printf(io, "\\newcommand{\\NKDistinctSolutions}{%d}\n", length(search.solutions))
         @printf(io, "\\newcommand{\\NKSearchAttempts}{%d}\n", length(search.attempts))
-        @printf(io, "\\newcommand{\\NKFlexibleM}{%.4f}\n", getv("Flexible Nash", :initial_monetary))
-        @printf(io, "\\newcommand{\\NKFlexibleF}{%.4f}\n", getv("Flexible Nash", :initial_fiscal))
-        @printf(io, "\\newcommand{\\NKBilateralM}{%.4f}\n", getv("Bilateral commitment", :initial_monetary))
-        @printf(io, "\\newcommand{\\NKBilateralF}{%.4f}\n", getv("Bilateral commitment", :initial_fiscal))
-        @printf(io, "\\newcommand{\\NKCoordM}{%.4f}\n", getv("Coordination", :initial_monetary))
-        @printf(io, "\\newcommand{\\NKCoordF}{%.4f}\n", getv("Coordination", :initial_fiscal))
-        @printf(io, "\\newcommand{\\NKFlexibleLoss}{%.4f}\n", getv("Flexible Nash", :common_macro_loss))
-        @printf(io, "\\newcommand{\\NKBilateralLoss}{%.4f}\n", getv("Bilateral commitment", :common_macro_loss))
-        @printf(io, "\\newcommand{\\NKCoordLoss}{%.4f}\n", getv("Coordination", :common_macro_loss))
+        for (prefix, df) in [("NKDemand", demand), ("NKSupply", supply)]
+            for (tag, regime) in [("Flexible", "Flexible Nash"),
+                                  ("Monetary", "Monetary commitment"),
+                                  ("Fiscal", "Fiscal commitment"),
+                                  ("Bilateral", "Bilateral commitment"),
+                                  ("Coord", "Coordination")]
+                @printf(io, "\\newcommand{\\%s%sM}{%.4f}\n", prefix, tag,
+                        getv(df, regime, :initial_monetary))
+                @printf(io, "\\newcommand{\\%s%sF}{%.4f}\n", prefix, tag,
+                        getv(df, regime, :initial_fiscal))
+                @printf(io, "\\newcommand{\\%s%sMacroLoss}{%.4f}\n", prefix, tag,
+                        getv(df, regime, :common_macro_loss))
+                @printf(io, "\\newcommand{\\%s%sActualLoss}{%.4f}\n", prefix, tag,
+                        getv(df, regime, :actual_social_loss))
+            end
+        end
+        @printf(io, "\\newcommand{\\NKFlexibleM}{%.4f}\n", getv(demand, "Flexible Nash", :initial_monetary))
+        @printf(io, "\\newcommand{\\NKFlexibleF}{%.4f}\n", getv(demand, "Flexible Nash", :initial_fiscal))
+        @printf(io, "\\newcommand{\\NKBilateralM}{%.4f}\n", getv(demand, "Bilateral commitment", :initial_monetary))
+        @printf(io, "\\newcommand{\\NKBilateralF}{%.4f}\n", getv(demand, "Bilateral commitment", :initial_fiscal))
+        @printf(io, "\\newcommand{\\NKCoordM}{%.4f}\n", getv(demand, "Coordination", :initial_monetary))
+        @printf(io, "\\newcommand{\\NKCoordF}{%.4f}\n", getv(demand, "Coordination", :initial_fiscal))
+        @printf(io, "\\newcommand{\\NKFlexibleLoss}{%.4f}\n", getv(demand, "Flexible Nash", :common_macro_loss))
+        @printf(io, "\\newcommand{\\NKBilateralLoss}{%.4f}\n", getv(demand, "Bilateral commitment", :common_macro_loss))
+        @printf(io, "\\newcommand{\\NKCoordLoss}{%.4f}\n", getv(demand, "Coordination", :common_macro_loss))
         @printf(io, "\\newcommand{\\NKMonInvestmentShare}{%.3f}\n", mon.adjustment_state_share[1])
         @printf(io, "\\newcommand{\\NKFisInvestmentShare}{%.3f}\n", fis.adjustment_state_share[1])
+        @printf(io, "\\newcommand{\\NKMonMacroWedge}{%.3e}\n", mon.macro_state_wedge[1])
+        @printf(io, "\\newcommand{\\NKMonAdjustmentWedge}{%.3e}\n", mon.adjustment_state_wedge[1])
+        @printf(io, "\\newcommand{\\NKFisMacroWedge}{%.3e}\n", fis.macro_state_wedge[1])
+        @printf(io, "\\newcommand{\\NKFisAdjustmentWedge}{%.3e}\n", fis.adjustment_state_wedge[1])
         @printf(io, "\\newcommand{\\NKMonPeakTheta}{%.2f}\n", mon_peak.theta)
         @printf(io, "\\newcommand{\\NKFisPeakTheta}{%.2f}\n", fis_peak.theta)
         @printf(io, "\\newcommand{\\NKMonPeakWedge}{%.2e}\n", abs(mon_peak.adjustment_state_wedge))
         @printf(io, "\\newcommand{\\NKFisPeakWedge}{%.2e}\n", abs(fis_peak.adjustment_state_wedge))
+        @printf(io, "\\newcommand{\\NKBilateralRadius}{%.4f}\n",
+                solutions[(1.0, "Bilateral commitment")].spectral_radius)
+        @printf(io, "\\newcommand{\\NKBilateralOuterIterations}{%d}\n",
+                solutions[(1.0, "Bilateral commitment")].metadata.outer_iterations)
     end
 end
 
@@ -274,6 +391,60 @@ function main()
     end
     CSV.write(joinpath(OUTPUT, "nk_equilibrium_search.csv"), search_table)
 
+    # State-feedback coefficients in the pure forward-looking economy.  These
+    # are useful for seeing which predetermined variables make policy persistent.
+    state_names = ["lagged output", "lagged inflation", "debt", "lagged monetary",
+                   "lagged fiscal", "demand shock", "cost-push shock"]
+    rule_table = DataFrame(regime=String[], authority=String[], state=String[],
+                           coefficient=Float64[])
+    for name in names
+        rule = solutions[(1.0, name)]
+        for (authority, coefficients) in [("Monetary", rule.monetary_rule),
+                                           ("Fiscal", rule.fiscal_rule)]
+            for (state, coefficient) in zip(state_names, coefficients)
+                push!(rule_table, (name, authority, state, coefficient))
+            end
+        end
+    end
+    CSV.write(joinpath(OUTPUT, "nk_policy_rules.csv"), rule_table)
+
+    # Exact impact accounting for the two private-sector equations.  The bars
+    # sum to the realised output or inflation gap in the first period.
+    accounting = DataFrame(scenario=String[], regime=String[], variable=String[],
+                           contribution=String[], value=Float64[])
+    calibration = model.calibration
+    for scenario in ["Demand contraction", "Cost-push inflation"], name in names
+        rule = solutions[(1.0, name)]
+        initial_state = initial[scenario]
+        monetary = dot(rule.monetary_rule, initial_state)
+        fiscal = dot(rule.fiscal_rule, initial_state)
+        next_state = rule.transition * initial_state
+        expected_private = rule.metadata.expectations * next_state
+        output_terms = [
+            ("Expected output", expected_private[1]),
+            ("Expected inflation", calibration.sigma * expected_private[2]),
+            ("Monetary action", -calibration.sigma * monetary),
+            ("Fiscal action", calibration.fiscal_multiplier * fiscal),
+            ("Demand shock", initial_state[6]),
+        ]
+        inflation_terms = [
+            ("Expected inflation", calibration.private_discount * expected_private[2]),
+            ("Output gap", calibration.kappa * next_state[1]),
+            ("Cost-push shock", initial_state[7]),
+        ]
+        for (label, value) in output_terms
+            push!(accounting, (scenario, name, "Output", label, value))
+        end
+        for (label, value) in inflation_terms
+            push!(accounting, (scenario, name, "Inflation", label, value))
+        end
+        abs(sum(last.(output_terms)) - next_state[1]) < 1e-8 ||
+            error("output accounting failed for $scenario / $name")
+        abs(sum(last.(inflation_terms)) - next_state[2]) < 1e-8 ||
+            error("inflation accounting failed for $scenario / $name")
+    end
+    CSV.write(joinpath(OUTPUT, "nk_expectations_accounting.csv"), accounting)
+
     save_theta_plot(summary)
     save_channel_plot(channels, summary)
     pure_nk_paths = Dict{String, Dict{String, Any}}()
@@ -288,7 +459,10 @@ function main()
               "Forward-looking NK demand contraction", "nk_demand_irfs.png")
     save_irfs(pure_nk_paths["Cost-push inflation"],
               "Forward-looking NK cost-push inflation", "nk_cost_push_irfs.png")
-    write_tex(summary, channels, search, backward_match)
+    save_expectations_accounting(accounting)
+    save_policy_rule_heatmap(rule_table)
+    save_pure_channel_decomposition(channels)
+    write_tex(summary, channels, search, backward_match, solutions)
 
     @printf("Backward-looking rule replication error: %.3e\n", backward_match)
     @printf("Pure-NK bilateral search: %d stable distinct solution(s) from %d converged starts\n",

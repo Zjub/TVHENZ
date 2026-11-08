@@ -1,0 +1,79 @@
+country,iso3,year,measure,indicator,value
+Australia,AUS,2025,ict_exports_share,BX.GSR.CCIS.ZS,3.39416673294624
+Australia,AUS,2024,ict_exports_share,BX.GSR.CCIS.ZS,2.96154223956379
+Australia,AUS,2023,ict_exports_share,BX.GSR.CCIS.ZS,3.23730789452169
+Australia,AUS,2022,ict_exports_share,BX.GSR.CCIS.ZS,4.09783060678457
+Australia,AUS,2021,ict_exports_share,BX.GSR.CCIS.ZS,5.18824275459087
+Australia,AUS,2020,ict_exports_share,BX.GSR.CCIS.ZS,3.86127547831478
+Australia,AUS,2019,ict_exports_share,BX.GSR.CCIS.ZS,3.28826166040525
+Australia,AUS,2018,ict_exports_share,BX.GSR.CCIS.ZS,3.34590837120137
+Australia,AUS,2017,ict_exports_share,BX.GSR.CCIS.ZS,3.12846845889695
+Australia,AUS,2016,ict_exports_share,BX.GSR.CCIS.ZS,3.3910413179373
+Australia,AUS,2015,ict_exports_share,BX.GSR.CCIS.ZS,3.48225072552904
+Australia,AUS,2014,ict_exports_share,BX.GSR.CCIS.ZS,4.00269341940975
+Australia,AUS,2013,ict_exports_share,BX.GSR.CCIS.ZS,3.97880538189997
+Australia,AUS,2012,ict_exports_share,BX.GSR.CCIS.ZS,3.71502796948963
+Australia,AUS,2011,ict_exports_share,BX.GSR.CCIS.ZS,3.61956747292406
+Australia,AUS,2010,ict_exports_share,BX.GSR.CCIS.ZS,3.55625876406972
+Australia,AUS,2009,ict_exports_share,BX.GSR.CCIS.ZS,3.75434501282163
+Australia,AUS,2008,ict_exports_share,BX.GSR.CCIS.ZS,3.66212127990896
+Australia,AUS,2007,ict_exports_share,BX.GSR.CCIS.ZS,3.83590537546618
+Australia,AUS,2006,ict_exports_share,BX.GSR.CCIS.ZS,3.97131922452705
+Australia,AUS,2005,ict_exports_share,BX.GSR.CCIS.ZS,4.09674550847431
+Australia,AUS,2004,ict_exports_share,BX.GSR.CCIS.ZS,4.73126442984499
+Australia,AUS,2003,ict_exports_share,BX.GSR.CCIS.ZS,5.10444873600436
+Australia,AUS,2002,ict_exports_share,BX.GSR.CCIS.ZS,5.27322920331627
+Australia,AUS,2001,ict_exports_share,BX.GSR.CCIS.ZS,4.6035529013505
+Australia,AUS,2000,ict_exports_share,BX.GSR.CCIS.ZS,6.07595378806028
+New Zealand,NZL,2025,ict_exports_share,BX.GSR.CCIS.ZS,5.5692758434463
+New Zealand,NZL,2024,ict_exports_share,BX.GSR.CCIS.ZS,6.23885230872959
+New Zealand,NZL,2023,ict_exports_share,BX.GSR.CCIS.ZS,6.95102745056589
+New Zealand,NZL,2022,ict_exports_share,BX.GSR.CCIS.ZS,9.90124819836033
+New Zealand,NZL,2021,ict_exports_share,BX.GSR.CCIS.ZS,11.3408088401434
+New Zealand,NZL,2020,ict_exports_share,BX.GSR.CCIS.ZS,8.046268825424
+New Zealand,NZL,2019,ict_exports_share,BX.GSR.CCIS.ZS,4.9623619824799
+New Zealand,NZL,2018,ict_exports_share,BX.GSR.CCIS.ZS,4.22343883673291
+New Zealand,NZL,2017,ict_exports_share,BX.GSR.CCIS.ZS,4.18411611193116
+New Zealand,NZL,2016,ict_exports_share,BX.GSR.CCIS.ZS,4.53898576370547
+New Zealand,NZL,2015,ict_exports_share,BX.GSR.CCIS.ZS,4.32632056043383
+New Zealand,NZL,2014,ict_exports_share,BX.GSR.CCIS.ZS,4.1645519018796
+New Zealand,NZL,2013,ict_exports_share,BX.GSR.CCIS.ZS,4.18234824130988
+New Zealand,NZL,2012,ict_exports_share,BX.GSR.CCIS.ZS,4.37905878927895
+New Zealand,NZL,2011,ict_exports_share,BX.GSR.CCIS.ZS,4.40569717558682
+New Zealand,NZL,2010,ict_exports_share,BX.GSR.CCIS.ZS,4.21232126734148
+New Zealand,NZL,2009,ict_exports_share,BX.GSR.CCIS.ZS,3.72776516666065
+New Zealand,NZL,2008,ict_exports_share,BX.GSR.CCIS.ZS,3.72420790531755
+New Zealand,NZL,2007,ict_exports_share,BX.GSR.CCIS.ZS,3.4244457919084
+New Zealand,NZL,2006,ict_exports_share,BX.GSR.CCIS.ZS,3.30755512341023
+New Zealand,NZL,2005,ict_exports_share,BX.GSR.CCIS.ZS,4.29842122960725
+New Zealand,NZL,2004,ict_exports_share,BX.GSR.CCIS.ZS,3.79834651884259
+New Zealand,NZL,2003,ict_exports_share,BX.GSR.CCIS.ZS,3.90351188531471
+New Zealand,NZL,2002,ict_exports_share,BX.GSR.CCIS.ZS,4.88709231030791
+New Zealand,NZL,2001,ict_exports_share,BX.GSR.CCIS.ZS,5.34777787683185
+New Zealand,NZL,2000,ict_exports_share,BX.GSR.CCIS.ZS,4.93410126588761
+OECD members,OED,2025,ict_exports_share,BX.GSR.CCIS.ZS,15.0445805851988
+OECD members,OED,2024,ict_exports_share,BX.GSR.CCIS.ZS,14.237090707909
+OECD members,OED,2023,ict_exports_share,BX.GSR.CCIS.ZS,13.8124718177545
+OECD members,OED,2022,ict_exports_share,BX.GSR.CCIS.ZS,13.3288801814646
+OECD members,OED,2021,ict_exports_share,BX.GSR.CCIS.ZS,14.6213070676111
+OECD members,OED,2020,ict_exports_share,BX.GSR.CCIS.ZS,14.3388256406939
+OECD members,OED,2019,ict_exports_share,BX.GSR.CCIS.ZS,11.2659593518238
+OECD members,OED,2018,ict_exports_share,BX.GSR.CCIS.ZS,10.4130464094391
+OECD members,OED,2017,ict_exports_share,BX.GSR.CCIS.ZS,9.58680055180621
+OECD members,OED,2016,ict_exports_share,BX.GSR.CCIS.ZS,9.33790158253159
+OECD members,OED,2015,ict_exports_share,BX.GSR.CCIS.ZS,8.96571800762704
+OECD members,OED,2014,ict_exports_share,BX.GSR.CCIS.ZS,8.99062121596243
+OECD members,OED,2013,ict_exports_share,BX.GSR.CCIS.ZS,8.40438710582728
+OECD members,OED,2012,ict_exports_share,BX.GSR.CCIS.ZS,8.29203031175333
+OECD members,OED,2011,ict_exports_share,BX.GSR.CCIS.ZS,8.22796765984628
+OECD members,OED,2010,ict_exports_share,BX.GSR.CCIS.ZS,7.98644772105364
+OECD members,OED,2009,ict_exports_share,BX.GSR.CCIS.ZS,8.0121920742915
+OECD members,OED,2008,ict_exports_share,BX.GSR.CCIS.ZS,7.43185541966241
+OECD members,OED,2007,ict_exports_share,BX.GSR.CCIS.ZS,7.15365864671046
+OECD members,OED,2006,ict_exports_share,BX.GSR.CCIS.ZS,7.13405316769259
+OECD members,OED,2005,ict_exports_share,BX.GSR.CCIS.ZS,6.97592178327908
+OECD members,OED,2004,ict_exports_share,BX.GSR.CCIS.ZS,6.23306277762892
+OECD members,OED,2003,ict_exports_share,BX.GSR.CCIS.ZS,6.35349422637285
+OECD members,OED,2002,ict_exports_share,BX.GSR.CCIS.ZS,6.0240868672419
+OECD members,OED,2001,ict_exports_share,BX.GSR.CCIS.ZS,6.01993460628418
+OECD members,OED,2000,ict_exports_share,BX.GSR.CCIS.ZS,5.65528001001469

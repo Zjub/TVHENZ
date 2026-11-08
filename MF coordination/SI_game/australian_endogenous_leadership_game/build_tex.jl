@@ -2,7 +2,7 @@ using tectonic_jll
 
 const ROOT = @__DIR__
 const SOURCE = joinpath(ROOT, "paper.tex")
-const TARGET = joinpath(ROOT, "STRATEGIC_INVESTMENT_POLICY_GAME.pdf")
+const TARGET = joinpath(ROOT, "FORWARD_LOOKING_NK_POLICY_GAME.pdf")
 
 isfile(SOURCE) || error("Cannot find $SOURCE")
 mktempdir() do build_directory

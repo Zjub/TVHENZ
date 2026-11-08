@@ -1,0 +1,121 @@
+year,status,age,share
+2006,Historical calibrated estimate,Aged 65+,12.013145677102932
+2006,Historical calibrated estimate,Aged 85+,1.365135526976065
+2007,Historical calibrated estimate,Aged 65+,12.247120391759948
+2007,Historical calibrated estimate,Aged 85+,1.416823731595758
+2008,Historical calibrated estimate,Aged 65+,12.368970473096752
+2008,Historical calibrated estimate,Aged 85+,1.460612590864536
+2009,Historical calibrated estimate,Aged 65+,12.545622329573241
+2009,Historical calibrated estimate,Aged 85+,1.5015395158017542
+2010,Historical calibrated estimate,Aged 65+,12.744355691873931
+2010,Historical calibrated estimate,Aged 85+,1.549417611581499
+2011,Historical calibrated estimate,Aged 65+,13.02053346614974
+2011,Historical calibrated estimate,Aged 85+,1.5885926271863062
+2012,Historical calibrated estimate,Aged 65+,13.45964544631606
+2012,Historical calibrated estimate,Aged 85+,1.6250596024542
+2013,Historical calibrated estimate,Aged 65+,13.8534223939914
+2013,Historical calibrated estimate,Aged 85+,1.6533637710747728
+2014,Historical calibrated estimate,Aged 65+,14.091146097898402
+2014,Historical calibrated estimate,Aged 85+,1.6860791901637788
+2015,Historical calibrated estimate,Aged 65+,14.258726734194695
+2015,Historical calibrated estimate,Aged 85+,1.697695408126668
+2016,Historical calibrated estimate,Aged 65+,14.404661190627726
+2016,Historical calibrated estimate,Aged 85+,1.715128093380857
+2017,Historical calibrated estimate,Aged 65+,14.590077837660465
+2017,Historical calibrated estimate,Aged 85+,1.7179586195981589
+2018,Historical calibrated estimate,Aged 65+,14.764591106015809
+2018,Historical calibrated estimate,Aged 85+,1.707029657624758
+2019,Historical calibrated estimate,Aged 65+,15.03345607747186
+2019,Historical calibrated estimate,Aged 85+,1.7101209100768442
+2020,Historical calibrated estimate,Aged 65+,15.279491600499757
+2020,Historical calibrated estimate,Aged 85+,1.703833094223211
+2021,Historical calibrated estimate,Aged 65+,15.727164794883395
+2021,Historical calibrated estimate,Aged 85+,1.745992572898096
+2022,Historical calibrated estimate,Aged 65+,16.09336932861535
+2022,Historical calibrated estimate,Aged 85+,1.767216586249214
+2023,Historical calibrated estimate,Aged 65+,16.061936458662775
+2023,Historical calibrated estimate,Aged 85+,1.745512641860692
+2024,Historical calibrated estimate,Aged 65+,16.304584491711978
+2024,Historical calibrated estimate,Aged 85+,1.7710126387914982
+2025,BEFU 2025 forecast,Aged 65+,16.657823893455166
+2025,BEFU 2025 forecast,Aged 85+,1.836449305212433
+2026,BEFU 2025 forecast,Aged 65+,17.01646909208274
+2026,BEFU 2025 forecast,Aged 85+,1.918241842840324
+2027,BEFU 2025 forecast,Aged 65+,17.377380546719813
+2027,BEFU 2025 forecast,Aged 85+,1.9962019455342108
+2028,BEFU 2025 forecast,Aged 65+,17.724238034706
+2028,BEFU 2025 forecast,Aged 85+,2.0275625357370353
+2029,BEFU 2025 forecast,Aged 65+,18.03333473226586
+2029,BEFU 2025 forecast,Aged 85+,2.091351823819493
+2030,LTFM projection,Aged 65+,18.322387991860747
+2030,LTFM projection,Aged 85+,2.1656272836539663
+2031,LTFM projection,Aged 65+,18.582864009595525
+2031,LTFM projection,Aged 85+,2.252866209123372
+2032,LTFM projection,Aged 65+,18.841469433746592
+2032,LTFM projection,Aged 85+,2.403874087959052
+2033,LTFM projection,Aged 65+,19.10194187355288
+2033,LTFM projection,Aged 85+,2.5383423387376403
+2034,LTFM projection,Aged 65+,19.36891220385419
+2034,LTFM projection,Aged 85+,2.651251301192657
+2035,LTFM projection,Aged 65+,19.616721108624414
+2035,LTFM projection,Aged 85+,2.765099233123693
+2036,LTFM projection,Aged 65+,19.888066737839978
+2036,LTFM projection,Aged 85+,2.8617069509599533
+2037,LTFM projection,Aged 65+,20.131865169541648
+2037,LTFM projection,Aged 85+,2.957015927829527
+2038,LTFM projection,Aged 65+,20.329441021435667
+2038,LTFM projection,Aged 85+,3.04771456835151
+2039,LTFM projection,Aged 65+,20.48543145201756
+2039,LTFM projection,Aged 85+,3.1446778993804942
+2040,LTFM projection,Aged 65+,20.594054199819375
+2040,LTFM projection,Aged 85+,3.241743411463107
+2041,LTFM projection,Aged 65+,20.669018429486904
+2041,LTFM projection,Aged 85+,3.342495469849452
+2042,LTFM projection,Aged 65+,20.7437402008535
+2042,LTFM projection,Aged 85+,3.4439202488417378
+2043,LTFM projection,Aged 65+,20.802013385743138
+2043,LTFM projection,Aged 85+,3.548679878100341
+2044,LTFM projection,Aged 65+,20.886606181949034
+2044,LTFM projection,Aged 85+,3.661304339493207
+2045,LTFM projection,Aged 65+,20.986196524828575
+2045,LTFM projection,Aged 85+,3.770093881874772
+2046,LTFM projection,Aged 65+,21.101510348421098
+2046,LTFM projection,Aged 85+,3.8923820606108985
+2047,LTFM projection,Aged 65+,21.23692874815786
+2047,LTFM projection,Aged 85+,4.0183403958596795
+2048,LTFM projection,Aged 65+,21.400146607124448
+2048,LTFM projection,Aged 85+,4.1370093957019645
+2049,LTFM projection,Aged 65+,21.576638844704156
+2049,LTFM projection,Aged 85+,4.233520616836316
+2050,LTFM projection,Aged 65+,21.77050408760967
+2050,LTFM projection,Aged 85+,4.304199626621306
+2051,LTFM projection,Aged 65+,21.980325260786522
+2051,LTFM projection,Aged 85+,4.358775496310518
+2052,LTFM projection,Aged 65+,22.23430845618979
+2052,LTFM projection,Aged 85+,4.415151479541465
+2053,LTFM projection,Aged 65+,22.526714348015073
+2053,LTFM projection,Aged 85+,4.47486657876507
+2054,LTFM projection,Aged 65+,22.833630123515675
+2054,LTFM projection,Aged 85+,4.542315966163462
+2055,LTFM projection,Aged 65+,23.179982472038272
+2055,LTFM projection,Aged 85+,4.60452747874604
+2056,LTFM projection,Aged 65+,23.536672546225738
+2056,LTFM projection,Aged 85+,4.685729318539146
+2057,LTFM projection,Aged 65+,23.87931363785803
+2057,LTFM projection,Aged 85+,4.75533312475503
+2058,LTFM projection,Aged 65+,24.194963074760256
+2058,LTFM projection,Aged 85+,4.802784218405078
+2059,LTFM projection,Aged 65+,24.46983845775414
+2059,LTFM projection,Aged 85+,4.831716585374337
+2060,LTFM projection,Aged 65+,24.729248953297216
+2060,LTFM projection,Aged 85+,4.838787934729156
+2061,LTFM projection,Aged 65+,24.95931881434145
+2061,LTFM projection,Aged 85+,4.831935375173859
+2062,LTFM projection,Aged 65+,25.162306770621758
+2062,LTFM projection,Aged 85+,4.833792999242661
+2063,LTFM projection,Aged 65+,25.350681410860826
+2063,LTFM projection,Aged 85+,4.833574079583184
+2064,LTFM projection,Aged 65+,25.51007969922462
+2064,LTFM projection,Aged 85+,4.859100150613975
+2065,LTFM projection,Aged 65+,25.695912368899503
+2065,LTFM projection,Aged 85+,4.901201688864511
