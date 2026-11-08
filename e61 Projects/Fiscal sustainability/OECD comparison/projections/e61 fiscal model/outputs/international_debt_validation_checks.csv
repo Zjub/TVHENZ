@@ -1,0 +1,35 @@
+"check","passed"
+"IMF unique series/year observations",TRUE
+"IMF Australian percent-GDP data only",TRUE
+"IMF traceable vintage and source",TRUE
+"OECD unique series/year observations",TRUE
+"OECD Australian percent-GDP data only",TRUE
+"OECD traceable vintage and source",TRUE
+"IMF vintage from live indicator metadata",TRUE
+"IMF ends at 2031",TRUE
+"IMF net equals raw AUS observations",TRUE
+"IMF gross equals raw AUS observations",TRUE
+"Both OECD Survey scenarios are gross debt",TRUE
+"No invented OECD net-debt scenario",TRUE
+"OECD net financial liabilities available to 2100",TRUE
+"Published OECD 2050 no-adjustment endpoint preserved",TRUE
+"Published OECD 2050 adjustment endpoint preserved",TRUE
+"IMF long-term three gross-debt cases",TRUE
+"IMF digitisation explicitly approximate",TRUE
+"IMF long-term horizon preserved",TRUE
+"IMF final baseline read to chart accuracy",TRUE
+"IMF stabilising case roughly constant",TRUE
+"Medium-term IMF rejected from plot",TRUE
+"Short-run window rejected",TRUE
+"levels 2030 has all ten comparison series",TRUE
+"levels 2030 respects window and source horizon",TRUE
+"levels 2030 net and gross panels separated",TRUE
+"levels 2030 model values match engine",TRUE
+"change 2030 has all ten comparison series",TRUE
+"change 2030 respects window and source horizon",TRUE
+"change 2030 net and gross panels separated",TRUE
+"All ten series zero at 2030 2030",TRUE
+"change 2030 model values match engine",TRUE
+"Scenario control changes model net-debt path",TRUE
+"Scenario control preserves all published observations",TRUE
+"Fixed model reference remains unchanged",TRUE

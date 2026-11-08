@@ -1,0 +1,54 @@
+"check","passed"
+"h_hospital labour-only efficiency formula",TRUE
+"h_hospital wages and efficiency reconstruct unit cost",TRUE
+"h_hospital additional growth independent of macro productivity",TRUE
+"h_primary labour-only efficiency formula",TRUE
+"h_primary wages and efficiency reconstruct unit cost",TRUE
+"h_primary additional growth independent of macro productivity",TRUE
+"h_medicines labour-only efficiency formula",TRUE
+"h_medicines wages and efficiency reconstruct unit cost",TRUE
+"h_medicines additional growth independent of macro productivity",TRUE
+"e_school labour-only efficiency formula",TRUE
+"e_school wages and efficiency reconstruct unit cost",TRUE
+"e_school additional growth independent of macro productivity",TRUE
+"e_higher labour-only efficiency formula",TRUE
+"e_higher wages and efficiency reconstruct unit cost",TRUE
+"e_higher additional growth independent of macro productivity",TRUE
+"e_vet labour-only efficiency formula",TRUE
+"e_vet wages and efficiency reconstruct unit cost",TRUE
+"e_vet additional growth independent of macro productivity",TRUE
+"n_ndis labour-only efficiency formula",TRUE
+"n_ndis wages and efficiency reconstruct unit cost",TRUE
+"n_ndis additional growth independent of macro productivity",TRUE
+"Full service productivity offset eliminates hospital real input-cost growth",TRUE
+"Zero productivity eliminates wage-productivity effects",TRUE
+"Efficiency improves hospital spending outcome",TRUE
+"Additional growth increases spending with efficiency fixed",TRUE
+"Productivity does not change nominal GDP path",TRUE
+"Controls do not change 2030 allocations",TRUE
+"Factor product reconstructs all spending 27",TRUE
+"Shapley all-spending reconciliation pct 28",TRUE
+"Shapley all-spending reconciliation bn 29",TRUE
+"Shapley all-spending reconciliation real_bn 30",TRUE
+"Factor product reconstructs all spending 31",TRUE
+"Shapley all-spending reconciliation pct 32",TRUE
+"Shapley all-spending reconciliation bn 33",TRUE
+"Shapley all-spending reconciliation real_bn 34",TRUE
+"Factor product reconstructs all spending 35",TRUE
+"Shapley all-spending reconciliation pct 36",TRUE
+"Shapley all-spending reconciliation bn 37",TRUE
+"Shapley all-spending reconciliation real_bn 38",TRUE
+"Factor product reconstructs all spending 39",TRUE
+"Shapley all-spending reconciliation pct 40",TRUE
+"Shapley all-spending reconciliation bn 41",TRUE
+"Shapley all-spending reconciliation real_bn 42",TRUE
+"Factor product reconstructs all spending 43",TRUE
+"Shapley all-spending reconciliation pct 44",TRUE
+"Shapley all-spending reconciliation bn 45",TRUE
+"Shapley all-spending reconciliation real_bn 46",TRUE
+"Reference comparators do not refit with scenario",TRUE
+"Reference implied growth remains fixed",TRUE
+"No unpublished health coefficient",TRUE
+"School funding comparator equals 75% real wage growth",TRUE
+"NDIS comparator equals reference real earnings growth",TRUE
+"Service-control attribution reconciles without overlapping groups",TRUE

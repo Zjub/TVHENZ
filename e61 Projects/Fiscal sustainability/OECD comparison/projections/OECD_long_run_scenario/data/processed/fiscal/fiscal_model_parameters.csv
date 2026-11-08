@@ -1,0 +1,8 @@
+case,alpha,ageing,baumol,phi,employment_rule,other_rule
+documented_equations,0.7,0.4,0.5,1,aggregate_odds,services
+fixed_older_employment,0.7,0.4,0.5,1,fixed_rates,services
+price_indexed_pensions,0.7,0.4,0.5,0,aggregate_odds,services
+no_health_baumol,0.7,0.4,0,1,aggregate_odds,services
+other_spending_fixed_gdp,0.7,0.4,0.5,1,aggregate_odds,gdp_share
+higher_health_income_elasticity,1,0.4,0.5,1,aggregate_odds,services
+september_2026_other_rule_only,0.7,0.4,0.5,1,aggregate_odds,weighted_2026

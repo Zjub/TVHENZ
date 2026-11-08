@@ -1,0 +1,49 @@
+"check","passed"
+"Health cost response matches selected control",TRUE
+"Health common anchor preserved",TRUE
+"Health other primary programmes unchanged",TRUE
+"Health does not change GDP or tax receipts",TRUE
+"Education cost response matches selected control",TRUE
+"Education common anchor preserved",TRUE
+"Education other primary programmes unchanged",TRUE
+"Education does not change GDP or tax receipts",TRUE
+"Aged care cost response matches selected control",TRUE
+"Aged care common anchor preserved",TRUE
+"Aged care other primary programmes unchanged",TRUE
+"Aged care does not change GDP or tax receipts",TRUE
+"NDIS cost response matches selected control",TRUE
+"NDIS common anchor preserved",TRUE
+"NDIS other primary programmes unchanged",TRUE
+"NDIS does not change GDP or tax receipts",TRUE
+"Other social protection cost response matches selected control",TRUE
+"Other social protection common anchor preserved",TRUE
+"Other social protection other primary programmes unchanged",TRUE
+"Other social protection does not change GDP or tax receipts",TRUE
+"Other public services cost response matches selected control",TRUE
+"Other public services common anchor preserved",TRUE
+"Other public services other primary programmes unchanged",TRUE
+"Other public services does not change GDP or tax receipts",TRUE
+"Out-of-range pass-through rejected",TRUE
+"Relative standards explicitly overrides social protection coefficient",TRUE
+"NGDP control raises annual GDP at fixed ToT and real assumptions",TRUE
+"NGDP control raises domestic prices by the same factor",TRUE
+"Health nominal dollars increase with NGDP even after ToT shock",TRUE
+"Health GDP share is neutral to that pure nominal change",TRUE
+"Education nominal dollars increase with NGDP even after ToT shock",TRUE
+"Education GDP share is neutral to that pure nominal change",TRUE
+"Age Pension nominal dollars increase with NGDP even after ToT shock",TRUE
+"Age Pension GDP share is neutral to that pure nominal change",TRUE
+"Aged care nominal dollars increase with NGDP even after ToT shock",TRUE
+"Aged care GDP share is neutral to that pure nominal change",TRUE
+"NDIS nominal dollars increase with NGDP even after ToT shock",TRUE
+"NDIS GDP share is neutral to that pure nominal change",TRUE
+"Other social protection nominal dollars increase with NGDP even after ToT shock",TRUE
+"Other social protection GDP share is neutral to that pure nominal change",TRUE
+"Other public services nominal dollars increase with NGDP even after ToT shock",TRUE
+"Other public services GDP share is neutral to that pure nominal change",TRUE
+"Defence nominal dollars increase with NGDP even after ToT shock",TRUE
+"Defence GDP share is neutral to that pure nominal change",TRUE
+"ToT preserves nominal GDP path",TRUE
+"ToT lowers service spending shares through the real-income wedge",TRUE
+"Pass-through attribution reconciles the debt change",TRUE
+"Pass-through changes allocated to their own group",TRUE

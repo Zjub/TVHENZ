@@ -1,0 +1,11 @@
+method,start_year,end_year,initial_spending_pct,end_spending_pct,change_pp
+IMF Fiscal Monitor (live snapshot),2025,2030,39.562073942013,38.326781733204,-1.235292208809
+PBO official forecast,2025,2030,38.7,37.1,-1.6
+OECD equations: revenue adjustment rule,2025,2030,37.8484467486088,38.3322717185592,0.483824969950319
+OECD equations: fixed revenue,2025,2030,37.8484467486088,38.7492590536021,0.900812304993288
+Bottom-up fixed exposure + interest + capital,2025,2030,38.7,36.4092906238128,-2.2907093761872
+Bottom-up enhanced + common interest + capital,2025,2030,38.7,36.4092906238128,-2.29070937618718
+Streamlined: central_gdp,2025,2030,38.7,37.1,-1.6
+Streamlined: midpoint_gdp,2025,2030,38.7,37.1,-1.6
+Streamlined: pressure_gdp,2025,2030,38.7,37.1,-1.6
+Streamlined: no_income,2025,2030,38.7,37.1,-1.6

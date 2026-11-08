@@ -1,0 +1,58 @@
+"check","passed"
+"Nine health/education specifications cover exactly the selected subfunctions",TRUE
+"Source and judgment status is explicit for every parameter block",TRUE
+"Observed hospital input share matches national workbook",TRUE
+"School input share excludes notional user cost of capital",TRUE
+"University employee share matches published accounts",TRUE
+"VET index weight follows stated agreement arithmetic",TRUE
+"Separate higher/VET allocations sum to original ABS tertiary control",TRUE
+"VET and university demand respond to different age bases",TRUE
+"h_hospital unit cost follows its own rule",TRUE
+"h_hospital coverage/intensity/price assumptions are separate",TRUE
+"h_hospital aggregate scaling neutral at default",TRUE
+"h_primary unit cost follows its own rule",TRUE
+"h_primary coverage/intensity/price assumptions are separate",TRUE
+"h_primary aggregate scaling neutral at default",TRUE
+"h_referred unit cost follows its own rule",TRUE
+"h_referred coverage/intensity/price assumptions are separate",TRUE
+"h_referred aggregate scaling neutral at default",TRUE
+"h_medicines unit cost follows its own rule",TRUE
+"h_medicines coverage/intensity/price assumptions are separate",TRUE
+"h_medicines aggregate scaling neutral at default",TRUE
+"h_other unit cost follows its own rule",TRUE
+"h_other coverage/intensity/price assumptions are separate",TRUE
+"h_other aggregate scaling neutral at default",TRUE
+"e_school unit cost follows its own rule",TRUE
+"e_school coverage/intensity/price assumptions are separate",TRUE
+"e_school aggregate scaling neutral at default",TRUE
+"e_higher unit cost follows its own rule",TRUE
+"e_higher coverage/intensity/price assumptions are separate",TRUE
+"e_higher aggregate scaling neutral at default",TRUE
+"e_vet unit cost follows its own rule",TRUE
+"e_vet coverage/intensity/price assumptions are separate",TRUE
+"e_vet aggregate scaling neutral at default",TRUE
+"e_other unit cost follows its own rule",TRUE
+"e_other coverage/intensity/price assumptions are separate",TRUE
+"e_other aggregate scaling neutral at default",TRUE
+"Medicine unit prices have no inherited wage exposure or service premium",TRUE
+"Health common multiplier applies to every cost",TRUE
+"Health relative subfunction differences preserved",TRUE
+"Health multiplier has its own exact contribution",TRUE
+"Health cost scaling works at zero productivity",TRUE
+"Health negative cost adjustment compounds correctly",TRUE
+"Health out of range cost adjustment rejected",TRUE
+"Education common multiplier applies to every cost",TRUE
+"Education relative subfunction differences preserved",TRUE
+"Education multiplier has its own exact contribution",TRUE
+"Education cost scaling works at zero productivity",TRUE
+"Education negative cost adjustment compounds correctly",TRUE
+"Education out of range cost adjustment rejected",TRUE
+"service_productivity_growth changes only intended factor without double counting",TRUE
+"service_productivity_growth other health blocks unchanged",TRUE
+"coverage_growth changes only intended factor without double counting",TRUE
+"coverage_growth other health blocks unchanged",TRUE
+"intensity_growth changes only intended factor without double counting",TRUE
+"intensity_growth other health blocks unchanged",TRUE
+"All eight category anchor dollars remain unchanged",TRUE
+"Other six primary spending categories unchanged in every year",TRUE
+"GDP path and tax projection rules unchanged",TRUE

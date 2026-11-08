@@ -1,0 +1,734 @@
+<!doctype html><html><head><meta charset="utf-8"><style>@page{size:A4;margin:17mm}body{font-family:Arial,sans-serif;font-size:10pt;line-height:1.45;color:#183343}h1,h2{color:#007e80}h2,h3,h4{break-after:avoid}h2{margin-top:22pt}table{border-collapse:collapse;width:100%;font-size:8pt}td,th{padding:5pt;border:1px solid #d5dfdc;text-align:left}thead{display:table-header-group}tr{break-inside:avoid}th{background:#eaf2ef}a{color:#007e80}</style></head><body><h1>Constructing Australian government spending</h1>
+<p>e61 fiscal model | Discussion paper | 28 October 2026</p>
+<p>This paper documents a consolidated-government scenario framework. Sources support the identified inputs, not every parameter choice. Sourced amounts, calibrated allocations, scope proxies, modelling judgments and accounting identities are distinguished.</p>
+<h2>Starting data and calibration</h2>
+<p>PBO national primary expenses provide the common FY2029-30 anchor of $1,171.9bn. ABS GFS functional controls, AIHW allocations, NDIA plan expenses and other programme sources allocate it across eight functions and 24 subfunctions. Health categories follow AIHW service areas, combining Commonwealth and state/territory government funding and reconciling to the ABS COFOG/GFS health total. They differ from the IGR Commonwealth programme categories. IGR age-cost profiles are used as demographic proxies; using those profiles does not make the spending categories equivalent. The 2025-2030 bridge is an allocation calculation; post-2030 scenario controls do not recalibrate it. Internal transfers are not added as extra national spending.</p>
+<h2>Annual demographics</h2>
+<p>All functions share the official 2026 IGR annual population projection by single-year age and sex for 2026-2066, with Population Statement 2025 supplying the 2025 base year. Health and aged care apply their fixed published age-cost weights to these annual cells; education uses its age-window proxies; NDIS and Age Pension follow annual cohorts. Residual population-based demand remains a total-population proxy. The population-growth slider scales every age/sex cell equally within each year, retaining the official projected age distribution and leaving migration, fertility and mortality assumptions unchanged.</p>
+<h2>A consistent identity</h2>
+<p>Spending = anchor x population x age/cohort demand x coverage x general prices x real unit cost x additional service growth. Defence and pension payments have explicit policy rules.</p>
+<p>Real unit cost = (1 - L) + L x W / Q. L is the fixed labour share, W the real wage index and Q the service-productivity index. Q = (1 + theta x economy-wide productivity growth)^years. Real wages follow economy-wide productivity. Efficiency reduces labour requirements, while non-labour inputs follow general inflation.</p>
+<p>A wage-productivity gap generates Baumol cost pressure inside the input basket. Additional service growth, (1 + r)^years, represents intensity, quality and mix beyond that basket. It is not an additional Baumol premium. Funding-index, CPI and cash-indexation proxies use their stated rules rather than resource-efficiency deductions.</p>
+<p>Health and education efficiency defaults to 25% of economy-wide productivity (0.3% annually at the macro default). Health adds real-GDP-per-person demand with income elasticity 0.8 and defaults to zero remaining pressures beyond explicit income and costs. Education retains 0.5% additional annual cost growth. Both are arbitrary discussion assumptions, not empirical estimates. The controls display actual additional-growth rates and preserve subfunction differences by applying a common shift. NDIS and cash transfers receive no service-efficiency deduction. Aged care retains 0.3% additional growth and other public services zero, with no new efficiency default.</p>
+<h2>Cost assumption sets</h2>
+<p>Current assumptions remain the reference. Health historical options use income-adjusted matched 2016-2025 residuals or a 1999-2025 aggregate consumption residual. Education retains its 2016-2025 option. See health_framework_background.pdf for equations, price conventions and the long-history accounting bridge. Aggregate adjustments add percentage points to each subfunction rate. Estimates bundle policy, coverage, quality and mix, and do not identify separate efficiency effects. Higher education and VET share a tertiary estimate. The reconciliation block is a heterogeneous accounting residual. The Spending tab compares both sets with selected economic and policy settings held fixed.</p>
+<p>NDIS uses the existing participant/cohort projection, original plan-cost index and 0.5% additional cost/use growth, plus its policy adjustment. Other transfers use the original demand and payment-indexation proxy. Age Pension retains means tests and wealth accumulation. Transfers have no service-efficiency deductions. These controls are presented separately from health and education efficiency and cost growth.</p>
+<h2>IGR and literature discipline</h2>
+<p>Commonwealth IGR Appendix A3 describes programme-specific real age/sex-adjusted health trends; numeric coefficients are not supplied in the reviewed appendix. NDIS costs by age/disability transition to earnings growth. Commonwealth schools use 75% wages/25% CPI and university grants use CPI. VET uses a wage-cost index; the numerical 69.75% comparator here is the National Skills Agreement proxy.</p>
+<p>Comparators and reference implied growth are fixed at the reference macro assumptions. They are not targets for differently defined consolidated expenditure. State resource costs and Commonwealth funding rules need not match. A blank coefficient is reported as unavailable rather than invented.</p>
+<p>
+  <a href="https://treasury.gov.au/sites/default/files/2026-09/p2026-797917.pdf">Commonwealth IGR, printed pages 307-312</a>
+   | 
+  <a href="https://www.nsw.gov.au/sites/default/files/noindex/2026-08/2026-27-nsw-igr-technical-note.pdf">NSW IGR technical note, printed pages 12-15</a>
+   | 
+  <a href="https://www.oecd.org/en/publications/fiscal-sustainability-of-health-systems_880f3195-en/full-report/component-6.html">OECD projection framework</a>
+</p>
+<h2>What the decomposition measures</h2>
+<p>Exact Shapley accounting allocates interactions across income-related demand, population, age/cohort demand, coverage, general prices, real wages/funding indexation, service productivity, additional service growth, policy/financing and the GDP denominator. Contributions reconcile before rounding. They describe arithmetic, not estimated causal effects. Price growth is removed for 2030-dollar results; the denominator is included only for GDP shares.</p>
+<section>
+  <h2>NDIS</h2>
+  <h3>Allocation and spending</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Subfunction</th>
+        <th>2025 source ($bn)</th>
+        <th>2030 anchor ($bn)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>NDIS participant plans</td>
+        <td>46.352</td>
+        <td>56.166</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Cost and productivity assumptions</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Subfunction</th>
+        <th>Labour weight (%)</th>
+        <th>Productivity response (%)</th>
+        <th>Additional growth (%/yr)</th>
+        <th>Combined real growth (%/yr)</th>
+        <th>Comparator (%/yr)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>NDIS participant plans</td>
+        <td>85.000</td>
+        <td>0.000</td>
+        <td>0.500</td>
+        <td>1.554</td>
+        <td>1.200</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Contribution to the 2030-2066 GDP-share change</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>factor</th>
+        <th>contribution</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Additional service growth</td>
+        <td>0.433</td>
+      </tr>
+      <tr>
+        <td>Age / cohort demand</td>
+        <td>0.002</td>
+      </tr>
+      <tr>
+        <td>Coverage / eligibility</td>
+        <td>0.000</td>
+      </tr>
+      <tr>
+        <td>GDP denominator</td>
+        <td>-4.241</td>
+      </tr>
+      <tr>
+        <td>General prices</td>
+        <td>2.100</td>
+      </tr>
+      <tr>
+        <td>Income-related demand</td>
+        <td>0.000</td>
+      </tr>
+      <tr>
+        <td>Policy / financing rule</td>
+        <td>0.000</td>
+      </tr>
+      <tr>
+        <td>Population size</td>
+        <td>1.029</td>
+      </tr>
+      <tr>
+        <td>Real wages / funding indexation</td>
+        <td>0.902</td>
+      </tr>
+      <tr>
+        <td>Service productivity</td>
+        <td>0.000</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Sources, scope and discussion</h3>
+  <div>
+    <h4>NDIS participant plans</h4>
+    <p>
+      Demand: 
+      ndis
+      . 
+      NDIS pass-through/intensity settings unchanged; administration remains in broader residual
+    </p>
+    <p>
+      Allocation: 
+      Annual Report Note 1.1G; participant plan expenses
+      . 
+      <a href="https://www.ndis.gov.au/media/8108/download">Allocation source</a>
+    </p>
+    <p>
+      Modelling judgment
+      : 
+      Labour or earnings-indexation weight is an unestimated scenario parameter; service productivity response is zero
+      . 
+      <span>Modelling judgment / allocation identity</span>
+    </p>
+    <p>
+      Comparator: 
+      IGR cost by age/disability transitions to average weekly earnings after the medium term; aggregate participant mix can also change costs
+      . 
+      Per-participant cost index only; participant/disability mix and transition dates differ
+    </p>
+    <p>
+      Limits: 
+      Additional service growth combines intensity, quality and mix; not a separately measured causal effect
+    </p>
+  </div>
+</section>
+<section>
+  <h2>Health</h2>
+  <h3>Allocation and spending</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Subfunction</th>
+        <th>2025 source ($bn)</th>
+        <th>2030 anchor ($bn)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Hospital services</td>
+        <td>103.200</td>
+        <td>129.053</td>
+      </tr>
+      <tr>
+        <td>Primary and community care, excluding PBS medicines</td>
+        <td>36.800</td>
+        <td>45.868</td>
+      </tr>
+      <tr>
+        <td>Referred medical services</td>
+        <td>18.100</td>
+        <td>22.560</td>
+      </tr>
+      <tr>
+        <td>PBS medicines outside hospitals</td>
+        <td>15.800</td>
+        <td>19.882</td>
+      </tr>
+      <tr>
+        <td>Other health and GFS reconciliation</td>
+        <td>33.843</td>
+        <td>40.925</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Cost and productivity assumptions</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Subfunction</th>
+        <th>Labour weight (%)</th>
+        <th>Productivity response (%)</th>
+        <th>Additional growth (%/yr)</th>
+        <th>Combined real growth (%/yr)</th>
+        <th>Comparator (%/yr)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Hospital services</td>
+        <td>67.253</td>
+        <td>25.000</td>
+        <td>0.000</td>
+        <td>1.586</td>
+        <td>Not available</td>
+      </tr>
+      <tr>
+        <td>Primary and community care, excluding PBS medicines</td>
+        <td>70.000</td>
+        <td>25.000</td>
+        <td>0.000</td>
+        <td>1.610</td>
+        <td>Not available</td>
+      </tr>
+      <tr>
+        <td>Referred medical services</td>
+        <td>70.000</td>
+        <td>25.000</td>
+        <td>0.000</td>
+        <td>1.610</td>
+        <td>Not available</td>
+      </tr>
+      <tr>
+        <td>PBS medicines outside hospitals</td>
+        <td>0.000</td>
+        <td>0.000</td>
+        <td>0.000</td>
+        <td>0.947</td>
+        <td>Not available</td>
+      </tr>
+      <tr>
+        <td>Other health and GFS reconciliation</td>
+        <td>70.000</td>
+        <td>25.000</td>
+        <td>0.000</td>
+        <td>1.610</td>
+        <td>Not available</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Contribution to the 2030-2066 GDP-share change</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>factor</th>
+        <th>contribution</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Additional service growth</td>
+        <td>0.000</td>
+      </tr>
+      <tr>
+        <td>Age / cohort demand</td>
+        <td>1.482</td>
+      </tr>
+      <tr>
+        <td>Coverage / eligibility</td>
+        <td>0.000</td>
+      </tr>
+      <tr>
+        <td>GDP denominator</td>
+        <td>-21.196</td>
+      </tr>
+      <tr>
+        <td>General prices</td>
+        <td>10.264</td>
+      </tr>
+      <tr>
+        <td>Income-related demand</td>
+        <td>4.006</td>
+      </tr>
+      <tr>
+        <td>Policy / financing rule</td>
+        <td>0.000</td>
+      </tr>
+      <tr>
+        <td>Population size</td>
+        <td>5.052</td>
+      </tr>
+      <tr>
+        <td>Real wages / funding indexation</td>
+        <td>3.437</td>
+      </tr>
+      <tr>
+        <td>Service productivity</td>
+        <td>-0.912</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Sources, scope and discussion</h3>
+  <div>
+    <h4>Hospital services</h4>
+    <p>
+      Demand: 
+      hospital
+      . 
+      Rounded AIHW funding amounts; public-hospital age profile used for both public and private hospitals; no grants added separately
+    </p>
+    <p>
+      Allocation: 
+      Figures 11 and 16: Commonwealth public 35.4 + private 8.3 + state hospital 59.5
+      . 
+      <a href="https://www.aihw.gov.au/reports/health-welfare-expenditure/health-expenditure-australia-2024-25/contents/spending-trends-by-source/australian-government-spending">Allocation source</a>
+    </p>
+    <p>
+      Observed input share; scope proxy
+      : 
+      Appendix 5.2, national 2023-24 column: salary/wage line items plus oncosts / total line-item cost
+      . 
+      <a href="https://www.ihacpa.gov.au/resources/national-hospital-cost-data-collection-public-sector-2023-24">Unit-cost source</a>
+    </p>
+    <p>
+      Comparator: 
+      IGR programme-specific age/sex-adjusted real spending trend; coefficient not tabulated in Appendix A3
+      . 
+      Commonwealth funding is a comparator for consolidated spending, not an identical expenditure boundary
+    </p>
+    <p>
+      Limits: 
+      Public admitted-acute cost mix applied to all hospital funding; includes VMOs and oncosts; does not identify future efficiency
+    </p>
+  </div>
+  <div>
+    <h4>Primary and community care, excluding PBS medicines</h4>
+    <p>
+      Demand: 
+      medical
+      . 
+      Medical-benefits age profile is a proxy for heterogeneous community/public-health services
+    </p>
+    <p>
+      Allocation: 
+      Figures 11/16: Commonwealth primary 39.7 + state primary 12.9 - Commonwealth PBS within primary 15.8
+      . 
+      <a href="https://www.aihw.gov.au/reports/health-welfare-expenditure/health-expenditure-australia-2024-25/contents/spending-trends-by-source/australian-government-spending">Allocation source</a>
+    </p>
+    <p>
+      Modelling judgment
+      : 
+      70% labour weight is an unestimated input-mix assumption; not an MBS indexation formula
+      . 
+      <span>Modelling judgment / allocation identity</span>
+    </p>
+    <p>
+      Comparator: 
+      IGR programme-specific age/sex-adjusted real spending trend; coefficient not tabulated in Appendix A3
+      . 
+      Commonwealth funding is a comparator for consolidated spending, not an identical expenditure boundary
+    </p>
+    <p>
+      Limits: 
+      Community/public health and Medicare funding need separate models; not measured labour share
+    </p>
+  </div>
+  <div>
+    <h4>Referred medical services</h4>
+    <p>
+      Demand: 
+      medical
+      . 
+      IGR medical-benefits age profile used as a proxy
+    </p>
+    <p>
+      Allocation: 
+      Figure 11: referred medical services; state page notes no referred medical spending
+      . 
+      <a href="https://www.aihw.gov.au/reports/health-welfare-expenditure/health-expenditure-australia-2024-25/contents/spending-trends-by-source/australian-government-spending">Allocation source</a>
+    </p>
+    <p>
+      Modelling judgment
+      : 
+      70% labour weight is an unestimated proxy for government-funded medical costs
+      . 
+      <span>Modelling judgment / allocation identity</span>
+    </p>
+    <p>
+      Comparator: 
+      IGR programme-specific age/sex-adjusted real spending trend; coefficient not tabulated in Appendix A3
+      . 
+      Commonwealth funding is a comparator for consolidated spending, not an identical expenditure boundary
+    </p>
+    <p>
+      Limits: 
+      Government rebates differ from provider costs and include policy changes; not measured labour share
+    </p>
+  </div>
+  <div>
+    <h4>PBS medicines outside hospitals</h4>
+    <p>
+      Demand: 
+      pharma
+      . 
+      Does not separately model medicine innovation, patents, utilisation or price negotiations
+    </p>
+    <p>
+      Allocation: 
+      Area of spending: PBS excluding drugs allocated to hospitals
+      . 
+      <a href="https://www.aihw.gov.au/reports/health-welfare-expenditure/health-expenditure-australia-2024-25/contents/spending-trends-by-source/australian-government-spending">Allocation source</a>
+    </p>
+    <p>
+      Explicit judgment
+      : 
+      Government cost per prescription follows CPI; no extra real price trend fitted
+      . 
+      <span>Modelling judgment / allocation identity</span>
+    </p>
+    <p>
+      Comparator: 
+      IGR programme-specific age/sex-adjusted real spending trend; coefficient not tabulated in Appendix A3
+      . 
+      Commonwealth funding is a comparator for consolidated spending, not an identical expenditure boundary
+    </p>
+    <p>
+      Limits: 
+      Ignores medicine innovation, price disclosure, confidential rebates and future mix; 0.5% additional service growth is a modelling assumption
+    </p>
+  </div>
+  <div>
+    <h4>Other health and GFS reconciliation</h4>
+    <p>
+      Demand: 
+      population
+      . 
+      Includes research, other services, classification/rounding and accounting differences; not an independently measured service group
+    </p>
+    <p>
+      Allocation: 
+      ABS Table 4; residual identity
+      . 
+      <span>Modelling judgment / allocation identity</span>
+    </p>
+    <p>
+      Modelling judgment
+      : 
+      70% labour weight is a modelling assumption for a heterogeneous residual
+      . 
+      <span>Modelling judgment / allocation identity</span>
+    </p>
+    <p>
+      Comparator: 
+      IGR Other Health uses a GDP-share and historical-average path; different residual coverage
+      . 
+      Commonwealth funding is a comparator for consolidated spending, not an identical expenditure boundary
+    </p>
+    <p>
+      Limits: 
+      Includes reconciliation and research; not a single observed service
+    </p>
+  </div>
+</section>
+<section>
+  <h2>Education</h2>
+  <h3>Allocation and spending</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Subfunction</th>
+        <th>2025 source ($bn)</th>
+        <th>2030 anchor ($bn)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>School education</td>
+        <td>80.661</td>
+        <td>87.390</td>
+      </tr>
+      <tr>
+        <td>Higher education</td>
+        <td>43.709</td>
+        <td>51.518</td>
+      </tr>
+      <tr>
+        <td>Vocational education and training</td>
+        <td>7.730</td>
+        <td>8.850</td>
+      </tr>
+      <tr>
+        <td>Other education</td>
+        <td>16.341</td>
+        <td>18.804</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Cost and productivity assumptions</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Subfunction</th>
+        <th>Labour weight (%)</th>
+        <th>Productivity response (%)</th>
+        <th>Additional growth (%/yr)</th>
+        <th>Combined real growth (%/yr)</th>
+        <th>Comparator (%/yr)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>School education</td>
+        <td>75.993</td>
+        <td>25.000</td>
+        <td>0.500</td>
+        <td>1.210</td>
+        <td>0.900</td>
+      </tr>
+      <tr>
+        <td>Higher education</td>
+        <td>55.473</td>
+        <td>25.000</td>
+        <td>0.500</td>
+        <td>1.035</td>
+        <td>0.000</td>
+      </tr>
+      <tr>
+        <td>Vocational education and training</td>
+        <td>69.750</td>
+        <td>0.000</td>
+        <td>0.500</td>
+        <td>1.341</td>
+        <td>0.837</td>
+      </tr>
+      <tr>
+        <td>Other education</td>
+        <td>80.000</td>
+        <td>25.000</td>
+        <td>0.500</td>
+        <td>1.243</td>
+        <td>Not available</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Contribution to the 2030-2066 GDP-share change</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>factor</th>
+        <th>contribution</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Additional service growth</td>
+        <td>1.105</td>
+      </tr>
+      <tr>
+        <td>Age / cohort demand</td>
+        <td>-1.017</td>
+      </tr>
+      <tr>
+        <td>Coverage / eligibility</td>
+        <td>0.000</td>
+      </tr>
+      <tr>
+        <td>GDP denominator</td>
+        <td>-10.382</td>
+      </tr>
+      <tr>
+        <td>General prices</td>
+        <td>5.439</td>
+      </tr>
+      <tr>
+        <td>Income-related demand</td>
+        <td>0.000</td>
+      </tr>
+      <tr>
+        <td>Policy / financing rule</td>
+        <td>0.000</td>
+      </tr>
+      <tr>
+        <td>Population size</td>
+        <td>2.639</td>
+      </tr>
+      <tr>
+        <td>Real wages / funding indexation</td>
+        <td>1.950</td>
+      </tr>
+      <tr>
+        <td>Service productivity</td>
+        <td>-0.481</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Sources, scope and discussion</h3>
+  <div>
+    <h4>School education</h4>
+    <p>
+      Demand: 
+      school_age
+      . 
+      Ages 5-17 proxy; constant enrolment/coverage; includes government funding of all school sectors
+    </p>
+    <p>
+      Allocation: 
+      Table_1 row 9 2024-25
+      . 
+      <a href="https://www.abs.gov.au/statistics/economy/government/government-finance-statistics-annual/2024-25/55120DO095_202425.xlsx">Allocation source</a>
+    </p>
+    <p>
+      Observed input share; scope proxy
+      : 
+      ACARA Table 9.3: salaries including redundancies / recurrent spending excluding user cost of capital
+      . 
+      <a href="https://dataandreporting.blob.core.windows.net/anrdataportal/ANR-Documents/ANR2024/nationalreportonschoolinginaustralia_2024_Chapter9.pdf">Unit-cost source</a>
+    </p>
+    <p>
+      Comparator: 
+      IGR Commonwealth school funding: 75% wages, 25% CPI
+      . 
+      Commonwealth funding is a comparator for consolidated spending, not an identical expenditure boundary
+    </p>
+    <p>
+      Limits: 
+      Government-school cost structure applied to all government school funding; funding rules differ, oncost scope differs
+    </p>
+  </div>
+  <div>
+    <h4>Higher education</h4>
+    <p>
+      Demand: 
+      tertiary_age
+      . 
+      18-24 demand proxy omits mature-age/international composition; university expenses include research and private funding; source concepts differ
+    </p>
+    <p>
+      Allocation: 
+      ABS tertiary control allocated using 2024 university total expenses versus VET recurrent expenses excluding user cost of capital
+      . 
+      <a href="https://www.abs.gov.au/statistics/economy/government/government-finance-statistics-annual/2024-25/55120DO095_202425.xlsx">Allocation source</a>
+    </p>
+    <p>
+      Observed input share; scope proxy
+      : 
+      Finance 2024 Table 4: employee benefits 23,891,495 / total expenses 43,068,392 ($000)
+      . 
+      <a href="https://www.education.gov.au/download/19832/finance-2024-financial-reports-higher-education-providers/43005/2024-university-finance-summary-information/pdf">Unit-cost source</a>
+    </p>
+    <p>
+      Comparator: 
+      IGR Commonwealth university grants per student: CPI; partial scope comparator
+      . 
+      Commonwealth funding is a comparator for consolidated spending, not an identical expenditure boundary
+    </p>
+    <p>
+      Limits: 
+      Whole-provider structure includes research/international activity; not a pure government-funded teaching cost share
+    </p>
+  </div>
+  <div>
+    <h4>Vocational education and training</h4>
+    <p>
+      Demand: 
+      vet_age
+      . 
+      15-64 demand proxy; allocation is not an exact GFS split; government-funded training participation and hours held constant
+    </p>
+    <p>
+      Allocation: 
+      ABS tertiary control allocated using 2024 university total expenses versus VET recurrent expenses excluding user cost of capital
+      . 
+      <a href="https://www.abs.gov.au/statistics/economy/government/government-finance-statistics-annual/2024-25/55120DO095_202425.xlsx">Allocation source</a>
+    </p>
+    <p>
+      Published funding rule; scope proxy
+      : 
+      National Skills Agreement flexible funding: 85% WCI-1 and 15% WCI-6; wage weights 75% and 40%
+      . 
+      <a href="https://federalfinancialrelations.gov.au/sites/federalfinancialrelations.gov.au/files/2023-12/national-skills-agreement.pdf">Unit-cost source</a>
+    </p>
+    <p>
+      Comparator: 
+      National Skills Agreement funding index proxy; IGR specifies WCI without a numerical weight
+      . 
+      Commonwealth funding is a comparator for consolidated spending, not an identical expenditure boundary
+    </p>
+    <p>
+      Limits: 
+      Commonwealth flexible-funding formula extended as proxy to all VET; productivity discount set to zero, not estimated
+    </p>
+  </div>
+  <div>
+    <h4>Other education</h4>
+    <p>
+      Demand: 
+      population
+      . 
+      Residual purpose includes preschool/other education; total-population proxy, not a fitted age profile
+    </p>
+    <p>
+      Allocation: 
+      Table_1 row 11 2024-25
+      . 
+      <a href="https://www.abs.gov.au/statistics/economy/government/government-finance-statistics-annual/2024-25/55120DO095_202425.xlsx">Allocation source</a>
+    </p>
+    <p>
+      Modelling judgment
+      : 
+      80% labour weight is a modelling assumption for a heterogeneous residual
+      . 
+      <span>Modelling judgment / allocation identity</span>
+    </p>
+    <p>
+      Comparator: 
+      No matching aggregate benchmark
+      . 
+      Commonwealth funding is a comparator for consolidated spending, not an identical expenditure boundary
+    </p>
+    <p>
+      Limits: 
+      Includes preschool and residual functions; not independently estimated
+    </p>
+  </div>
+</section>
+<h2>Other functions and fiscal financing</h2>
+<p>Aged care uses an IGR demand profile with four allocations. Other public services use population demand. Other social protection is a residual cash/indexation proxy, not a complete benefit microsimulation. Pension receipt and payments follow public-data calibrated wealth cohorts and means tests; joint distributions and transitions need future HILDA estimation; defence follows a stated GDP-share target. Gross debt finances deficits and asset acquisitions. Interest is charged on opening gross debt, with separate asset receipts.</p>
+<h2>Fixed-share policies and borrowing-rate sensitivity</h2>
+<p>Each function can optionally be fixed at a selected GDP share from 2031, preserving the common 2030 anchor. The target replaces the function total and is allocated across its subfunctions proportionately to unconstrained spending. Annual exports show unconstrained costs, actual costs and the policy factor. The override feeds into the fiscal balance and debt; a zero target is supported.</p>
+<p>The borrowing-rate sensitivity defaults to zero. A setting of 3 basis points per percentage point of net debt/GDP matches the historical Treasury research benchmark in Yan and Brittle (2010). The rate adjustment is sensitivity/10000 times the previous-year net-debt/GDP percentage-point gap from 2030. It can be negative when debt falls, with a zero borrowing-rate floor. Interest is charged on opening gross debt; asset yields do not change. Applying a long-run real ten-year yield-margin estimate immediately to the effective rate is a scenario assumption, without refinancing lags.</p>
+<p>
+  <a href="https://treasury.gov.au/sites/default/files/2019-03/Tsy_Working_Paper_2010_04.pdf">Treasury Working Paper 2010-04, printed pages 13 and 17</a>
+</p>
+<h2>Discussion questions</h2>
+<p>What quality-adjusted service-productivity response is credible? How much additional growth remains after explicit costs? Do enrolment, morbidity and participant-mix changes warrant separate demand assumptions? Which funding rules require their own blocks? What data and uncertainty range support each proposal?</p>
+<p>Annual factors, allocation bridges, evidence and exact contributions can be downloaded from the local app. The source/assumption register provides source classifications and locators. This paper and its CSV audit tables are reproduced by scripts/build_spending_background.R.</p></body></html>

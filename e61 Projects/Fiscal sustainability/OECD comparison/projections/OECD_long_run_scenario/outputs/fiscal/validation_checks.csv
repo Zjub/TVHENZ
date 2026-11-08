@@ -1,0 +1,17 @@
+check,passed,maximum_error
+Unique and complete annual scenario/case paths,TRUE,0
+All component paths finite,TRUE,0
+Primary spending equals components,TRUE,1.04083408558608e-16
+All paths start at the same spending anchor,TRUE,5.55111512312578e-17
+Health contributions reconcile,TRUE,4.44089209850063e-16
+GDP-deflator inflation cancels in spending shares,TRUE,0
+Population/economy scale invariance,TRUE,0
+Productivity affects health with net elasticity 0.2,TRUE,2.22044604925031e-16
+Productivity cancels from wage-linked other spending,TRUE,0
+Wage-indexed pensions do not fall with productivity,TRUE,0
+Gross debt recursion includes financial asset acquisition,TRUE,0
+Net liabilities equal gross less financial assets,TRUE,2.22044604925031e-16
+Revenue minus outlays reconciles to net lending,TRUE,5.55111512312578e-17
+Published chart components reconcile to total fiscal pressure,TRUE,8.88178419700125e-15
+Fiscal rule converges in a stationary economy,TRUE,2.22044604925031e-16
+Fiscal-rule annual revenue increase respects cap,TRUE,8.67361737988404e-18

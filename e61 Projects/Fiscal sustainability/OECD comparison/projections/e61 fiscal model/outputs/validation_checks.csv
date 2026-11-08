@@ -1,0 +1,90 @@
+"check","passed"
+"No duplicate population age-sex-year cells",TRUE
+"Single-year population covers every age 0-100 and both sexes",TRUE
+"IGR population total reconciliation",TRUE
+"Observed labour profiles are populated",TRUE
+"Projected participation remains in bounds",TRUE
+"Average hours follow published IGR trend",TRUE
+"Hours employment identity",TRUE
+"Age Pension eligibility uses age 67",TRUE
+"Eight spending modules include distinct NDIS and aged care",TRUE
+"No double counting of care pension or conventional interest",TRUE
+"Observed NDIS allocation matches audited plan expenses",TRUE
+"Older NDIS recipients are retained",TRUE
+"NDIS incidence below 65 and cohort recursion remain finite",TRUE
+"PBO spending dollars match exactly at anchor",TRUE
+"PBO revenue dollars match exactly at anchor",TRUE
+"PBO gross and net debt anchors match",TRUE
+"Programme calibration factor common to all modules",TRUE
+"Programmes sum to primary expenses",TRUE
+"Revenue heads sum to total revenue",TRUE
+"ABS tax-head totals match national consolidated GFS",TRUE
+"Personal and Medicare taxes are separate heads",TRUE
+"ATO uses 100 actual percentile cells",TRUE
+"Tax is zero below tax-free threshold",TRUE
+"2027-28 lower tax rate is legislated 14 percent",TRUE
+"LITO applied at 45000",TRUE
+"Schedule indexation scales tax proportionately",TRUE
+"Wage indexation is the default threshold convention",TRUE
+"Wage-indexed default removes real bracket creep",TRUE
+"Wage-indexed bracket creep counterfactual is zero",TRUE
+"Fixed thresholds generate more PIT than CPI indexation",TRUE
+"CPI thresholds generate more PIT than wage indexation",TRUE
+"Changing threshold rule does not recalibrate 2030 revenue",TRUE
+"Fixed-threshold reported bracket creep reconciles",TRUE
+"Low wealth single receives full annual pension",TRUE
+"Low wealth couple receives correct per-person pension",TRUE
+"Assets test tapers and cuts off benefit",TRUE
+"Income test reduces benefit",TRUE
+"Non-homeowner asset threshold is higher",TRUE
+"Pension coverage bounded",TRUE
+"Relative standards preserve eligibility coverage",TRUE
+"No automatic tax closure or spending recalibration",TRUE
+"Higher private returns reduce pension spending",TRUE
+"Higher private returns reduce debt",TRUE
+"Private returns leave GDP unchanged",TRUE
+"Private returns leave superannuation taxes unchanged",TRUE
+"Private returns leave public asset yield unchanged",TRUE
+"Private returns leave anchor pension spending unchanged",TRUE
+"Private return control inactive under relative standards",TRUE
+"Productivity real-output multiplier is exact",TRUE
+"Productivity leaves nominal GDP unchanged",TRUE
+"NGDP equals compounded per capita and population growth",TRUE
+"Nominal real and price identity",TRUE
+"Terms of trade does not change real production",TRUE
+"Terms of trade increases royalty receipts",TRUE
+"Service prices do not directly index cash pensions",TRUE
+"Negative productivity has no hidden floor",TRUE
+"Net debt stock-flow identity 1",TRUE
+"Gross debt financing identity 1",TRUE
+"Interest charged on opening gross debt 1",TRUE
+"Receipts earned on opening assets 1",TRUE
+"Gross minus assets equals net debt 1",TRUE
+"All fiscal outputs finite 1",TRUE
+"Net debt stock-flow identity 2",TRUE
+"Gross debt financing identity 2",TRUE
+"Interest charged on opening gross debt 2",TRUE
+"Receipts earned on opening assets 2",TRUE
+"Gross minus assets equals net debt 2",TRUE
+"All fiscal outputs finite 2",TRUE
+"Net debt stock-flow identity 3",TRUE
+"Gross debt financing identity 3",TRUE
+"Interest charged on opening gross debt 3",TRUE
+"Receipts earned on opening assets 3",TRUE
+"Gross minus assets equals net debt 3",TRUE
+"All fiscal outputs finite 3",TRUE
+"Net debt stock-flow identity 4",TRUE
+"Gross debt financing identity 4",TRUE
+"Interest charged on opening gross debt 4",TRUE
+"Receipts earned on opening assets 4",TRUE
+"Gross minus assets equals net debt 4",TRUE
+"All fiscal outputs finite 4",TRUE
+"Shapley allocation reconciles all four controls and interactions",TRUE
+"Number cost intensity identity reproduces every non-target spending level",TRUE
+"Real driver identity reproduces every non-target GDP share",TRUE
+"Defence target is explicitly excluded from driver identity",TRUE
+"Ageing and costs increase health and aged care GDP shares",TRUE
+"Health and care age-weighted demand grow faster than total population",TRUE
+"Pure nominal GDP override leaves programme GDP shares unchanged",TRUE
+"Extra service prices compound into service GDP shares",TRUE
+"Health/education relative prices respect medicine and funding exclusions",TRUE

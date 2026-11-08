@@ -1,0 +1,11 @@
+variable,value,status
+health_ratio,0.07474,Observed OECD SHA 2024
+pension_ratio,0.0470155337327128,OECD SOCX 2022 rolled forward to 2024
+capital_ratio,0.023,PBO FY2023-24 historical extract
+gross_liabilities_ratio,0.570834838047451,Published EO117 2024
+assets_ratio,0.559385907646617,Published EO117 2024
+interest_ratio,0.0196836812330341,EO117 implicit rate times lagged gross liabilities/current GDP
+interest_receipts_ratio,0.00772483184245708,Accounting residual or implied parameter; see report
+other_ratio,0.212560785034253,Accounting residual or implied parameter; see report
+primary_revenue_ratio,0.342686272732338,Accounting residual or implied parameter; see report
+asset_return,0.0143332606103329,Accounting residual or implied parameter; see report

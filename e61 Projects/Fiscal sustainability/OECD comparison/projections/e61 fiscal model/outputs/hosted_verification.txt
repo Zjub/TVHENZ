@@ -1,0 +1,5 @@
+PASS: hosted Fiscal_tester loads with wage-indexed thresholds
+PASS: default net debt headline is 118.7% GDP
+PASS: evidence register renders
+PASS: hosted CSV matches local 2066 revenue and debt results
+Checked: 2026-10-26 17:04:04.096867

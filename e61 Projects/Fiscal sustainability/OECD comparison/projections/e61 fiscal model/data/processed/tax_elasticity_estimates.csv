@@ -1,0 +1,11 @@
+head,raw_elasticity,standard_error,applied_elasticity,observations,r_squared,estimation
+personal_income,1.25133582401371,0.413605065232569,1.149224791238,9,0.566651089174899,"2017-2025 annual changes versus nominal GDP; Normal(1,0.5^2) shrinkage; income tax instead uses schedule"
+company,3.23819266130268,0.823179664523721,1.60320529313401,9,0.688535637764949,"2017-2025 annual changes versus nominal GDP; Normal(1,0.5^2) shrinkage; income tax instead uses schedule"
+superannuation,-0.671064638189039,7.19966721277349,0.991979178431037,9,0.00123955886479586,"2017-2025 annual changes versus nominal GDP; Normal(1,0.5^2) shrinkage; income tax instead uses schedule"
+medicare_fbt,0.399450703810467,0.422112858763582,0.649358723944062,9,0.113419875900033,"2017-2025 annual changes versus nominal GDP; Normal(1,0.5^2) shrinkage; income tax instead uses schedule"
+gst,0.63631075348505,0.603427877495243,0.851948249095657,9,0.137076237077336,"2017-2025 annual changes versus nominal GDP; Normal(1,0.5^2) shrinkage; income tax instead uses schedule"
+excises_customs,-0.488829889280917,0.626623537143797,0.420830335416405,9,0.0799833762715622,"2017-2025 annual changes versus nominal GDP; Normal(1,0.5^2) shrinkage; income tax instead uses schedule"
+payroll,1.76248128833309,0.64230923004622,1.28770223389289,9,0.518218425587534,"2017-2025 annual changes versus nominal GDP; Normal(1,0.5^2) shrinkage; income tax instead uses schedule"
+property,0.215186799629182,0.372151490459708,0.494967952091393,9,0.0455859001007894,"2017-2025 annual changes versus nominal GDP; Normal(1,0.5^2) shrinkage; income tax instead uses schedule"
+stamp_duties,1.19767759863034,2.31072995104175,1.00884151340976,9,0.0369596549099789,"2017-2025 annual changes versus nominal GDP; Normal(1,0.5^2) shrinkage; income tax instead uses schedule"
+other_taxes,0.655097860936755,0.404667230585525,0.791602720212877,9,0.272401750352704,"2017-2025 annual changes versus nominal GDP; Normal(1,0.5^2) shrinkage; income tax instead uses schedule"

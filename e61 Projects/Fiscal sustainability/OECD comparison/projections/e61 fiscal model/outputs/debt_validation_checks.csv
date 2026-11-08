@@ -1,0 +1,17 @@
+"check","passed"
+"Reference gross minus assets equals net debt",TRUE
+"Reference interest on opening gross debt",TRUE
+"Reference receipts on opening assets",TRUE
+"Reference interest GDP identity",TRUE
+"Reference net interest reconciles",TRUE
+"Productivity 1.7 percent gross minus assets equals net debt",TRUE
+"Productivity 1.7 percent interest on opening gross debt",TRUE
+"Productivity 1.7 percent receipts on opening assets",TRUE
+"Productivity 1.7 percent interest GDP identity",TRUE
+"Productivity 1.7 percent net interest reconciles",TRUE
+"Population growth 1.6 percent gross minus assets equals net debt",TRUE
+"Population growth 1.6 percent interest on opening gross debt",TRUE
+"Population growth 1.6 percent receipts on opening assets",TRUE
+"Population growth 1.6 percent interest GDP identity",TRUE
+"Population growth 1.6 percent net interest reconciles",TRUE
+"Productivity changes debt without changing GDP",TRUE

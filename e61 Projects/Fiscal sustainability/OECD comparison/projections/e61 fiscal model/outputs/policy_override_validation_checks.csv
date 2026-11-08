@@ -1,0 +1,68 @@
+"check","passed"
+"Health fixed at target after anchor",TRUE
+"Health common anchor preserved",TRUE
+"Health underlying spending exported",TRUE
+"Health preserves projected within-function shares",TRUE
+"Health other primary functions unaffected",TRUE
+"Health policy factor reconstructs spending",TRUE
+"Education fixed at target after anchor",TRUE
+"Education common anchor preserved",TRUE
+"Education underlying spending exported",TRUE
+"Education preserves projected within-function shares",TRUE
+"Education other primary functions unaffected",TRUE
+"Education policy factor reconstructs spending",TRUE
+"NDIS fixed at target after anchor",TRUE
+"NDIS common anchor preserved",TRUE
+"NDIS underlying spending exported",TRUE
+"NDIS preserves projected within-function shares",TRUE
+"NDIS other primary functions unaffected",TRUE
+"NDIS policy factor reconstructs spending",TRUE
+"Aged care fixed at target after anchor",TRUE
+"Aged care common anchor preserved",TRUE
+"Aged care underlying spending exported",TRUE
+"Aged care preserves projected within-function shares",TRUE
+"Aged care other primary functions unaffected",TRUE
+"Aged care policy factor reconstructs spending",TRUE
+"Age Pension fixed at target after anchor",TRUE
+"Age Pension common anchor preserved",TRUE
+"Age Pension underlying spending exported",TRUE
+"Age Pension preserves projected within-function shares",TRUE
+"Age Pension other primary functions unaffected",TRUE
+"Age Pension policy factor reconstructs spending",TRUE
+"Other social protection fixed at target after anchor",TRUE
+"Other social protection common anchor preserved",TRUE
+"Other social protection underlying spending exported",TRUE
+"Other social protection preserves projected within-function shares",TRUE
+"Other social protection other primary functions unaffected",TRUE
+"Other social protection policy factor reconstructs spending",TRUE
+"Other public services fixed at target after anchor",TRUE
+"Other public services common anchor preserved",TRUE
+"Other public services underlying spending exported",TRUE
+"Other public services preserves projected within-function shares",TRUE
+"Other public services other primary functions unaffected",TRUE
+"Other public services policy factor reconstructs spending",TRUE
+"Defence fixed at target after anchor",TRUE
+"Defence common anchor preserved",TRUE
+"Defence underlying spending exported",TRUE
+"Defence preserves projected within-function shares",TRUE
+"Defence other primary functions unaffected",TRUE
+"Defence policy factor reconstructs spending",TRUE
+"Multiple/zero targets: exact decomposition pct",TRUE
+"Multiple/zero targets: exact decomposition bn",TRUE
+"Multiple/zero targets: exact decomposition real_bn",TRUE
+"Zero NDIS target gives zero future spending",TRUE
+"Three-bp coefficient uses lagged net debt and correct units",TRUE
+"First projection year has zero debt feedback",TRUE
+"Interest is still charged on opening gross debt",TRUE
+"Positive feedback increases default debt endpoint",TRUE
+"Zero coefficient preserves base rates",TRUE
+"Debt feedback preserves macro GDP",TRUE
+"Debt feedback does not reprice financial assets",TRUE
+"Falling net debt gives negative adjustment",TRUE
+"Borrowing rate floor prevents negative rates",TRUE
+"Zero borrowing rate reached under low-debt scenario",TRUE
+"Policy/debt-rate attribution reconciles",TRUE
+"Invalid target/sensitivity rejected",TRUE
+"Invalid target/sensitivity rejected",TRUE
+"Invalid target/sensitivity rejected",TRUE
+"Invalid target/sensitivity rejected",TRUE

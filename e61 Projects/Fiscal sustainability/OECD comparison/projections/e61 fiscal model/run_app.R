@@ -1,0 +1,5 @@
+args <- commandArgs(FALSE)
+script <- sub('^--file=','',args[grepl('^--file=',args)][1])
+setwd(normalizePath(dirname(script),mustWork=TRUE))
+port <- as.integer(Sys.getenv('E61_FISCAL_PORT','7461'))
+shiny::runApp('.',host='127.0.0.1',port=port,launch.browser=FALSE)

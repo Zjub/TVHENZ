@@ -1,0 +1,2 @@
+"programme","aggregate_productivity","wage_weight","horizon_years","target_real_unit_cagr","implied_extra_growth","method","current_extra_growth"
+"NDIS",0.012,0.85,36,0.012,0.00149525260932681,"Match earnings-index endpoint with zero service productivity savings; not an IGR published scalar; no medium-term transition",0.005

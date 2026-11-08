@@ -1,0 +1,326 @@
+<!doctype html><html><head><meta charset="utf-8"><style>@page{size:A4;margin:17mm}body{font:10pt Arial;line-height:1.45;color:#183343}h1,h2{color:#007e80}h2,h3{break-after:avoid}table{border-collapse:collapse;width:100%;font-size:8pt}td,th{border:1px solid #ccd9d8;padding:5pt;text-align:left}tr{break-inside:avoid}pre{white-space:pre-wrap;font-size:8pt;background:#edf4f3;padding:10pt}a{color:#007e80}</style></head><body><div>
+  <h1>Health spending: explicit income, costs and remaining pressures</h1>
+  <p>30 October 2026. Australian consolidated general government. Financial years are labelled by ending year; amounts are nominal AUD billions unless stated. This paper documents a scenario framework for discussion, not a validated forecast or exact OBR/OECD replication.</p>
+  <h2>What is projected</h2>
+  <p>The PBO 2030 primary-spending and debt anchors, GFS functional boundaries, AIHW health allocations and IGR age-cost profiles are retained. Health is split into hospitals, primary/community care, referred medical services, medicines and a reconciliation block. Other health reconciles GFS with the named AIHW blocks and is not a homogeneous service. Health categories follow AIHW service areas, combining Commonwealth and state/territory government funding and reconciling to the ABS COFOG/GFS health total. They differ from the IGR Commonwealth programme categories. IGR age-cost profiles are used as demographic proxies; using those profiles does not make the spending categories equivalent. No healthy-ageing adjustment is imposed.</p>
+  <pre>H[j,t] = H[j,2030] x D[j,t] x coverage[j,t] x P_health[t]
+         x (real GDP/person index[t])^epsilon
+         x ((1-L[j]) + L[j] x nominal hourly wage index[t]/P_health[t]
+            x wage premium index[t]/service efficiency index[j,t])
+         x (1+r[j])^(t-2030) x policy[j,t]</pre>
+  <p>D separates population and age/cohort composition using fixed IGR hospital, medical and pharmaceutical age-cost weights. It is an age-weighted spending-demand proxy, not a patient count. Primary and referred services share the medical profile; other health uses population. Coverage and policy factors remain separate. All indices equal one in 2030.</p>
+  <p>Real GDP per person includes employment, participation and hours as well as labour productivity. Its income factor represents spending pressure that a government accommodates in this scenario; it is not a prediction of automatic public funding. Applying this international conditional spending coefficient to a distinct quantity factor is a modelling interpretation, not an econometrically identified Australian demand equation.</p>
+  <h2>Defaults and their evidence status</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Parameter</th>
+        <th>Default</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Income elasticity</td>
+        <td>0.8</td>
+        <td>Rounded international-evidence-informed scenario; not Australian causal estimate</td>
+      </tr>
+      <tr>
+        <td>Service efficiency / economy-wide productivity</td>
+        <td>25%</td>
+        <td>Arbitrary discussion assumption</td>
+      </tr>
+      <tr>
+        <td>Remaining health pressures</td>
+        <td>0% annually</td>
+        <td>Judgement beyond explicit channels; not an empirical zero</td>
+      </tr>
+      <tr>
+        <td>Health wage premium</td>
+        <td>0% annually</td>
+        <td>No differential wage trend assumed</td>
+      </tr>
+      <tr>
+        <td>Health CPI minus domestic inflation</td>
+        <td>0 percentage points annually</td>
+        <td>Domestic price proxy retained; not observed future CPI</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Sliders expose income elasticity (0-1.5, step 0.05), efficiency (0-150%, step 5 percentage points), remaining pressures (-1% to +2%, step 0.1), and advanced wage premium and price wedge (-1% to +1%, step 0.1). Efficiency grows at the selected fraction of economy-wide labour productivity: Q=(1+theta*g)^years. At the reference 1.2% economy-wide growth and 25% response this is 0.3% annually.</p>
+  <p>Hospital labour exposure is approximately 67.25%, an IHACPA admitted-acute cost proxy. Other labour-resource health blocks use a 70% judgement. Medicines retain the CPI unit-cost proxy without a labour or efficiency component; income and remaining pressures still apply. Fixed input shares omit input substitution. Wage premiums enter only the labour basket.</p>
+  <p>When wages grow faster than service efficiency, labour cost per service rises relative to general prices: this is the Baumol mechanism already inside the equation. No additional Baumol uplift is added. Higher economy-wide productivity can increase income-related demand and wages while improving service efficiency; all three effects must be considered together.</p>
+  <h2>Prices, wages and nominal GDP</h2>
+  <p>The macro model implies domestic inflation from fixed nominal GDP per person, real output and terms of trade. Domestic prices differ from the GDP deflator when terms of trade change. Health defaults to domestic prices as its general-price/CPI proxy, preserving other functions. The advanced wedge adds percentage points to annual domestic inflation, then compounds these rates. It is explicitly a CPI-minus-domestic-inflation wedge, rather than a CPI-minus-GDP-deflator wedge.</p>
+  <p>Health real wages equal the unchanged nominal hourly wage index divided by the selected health price index. Thus a higher price wedge does not reprice the labour wage bill mechanically; it raises non-labour costs. Configurations with non-positive gross price factors are rejected. Health controls leave nominal GDP, nominal wages, revenue rules and all other spending functions unchanged. Changes to health spending still affect the fiscal balance, interest and debt. Real-dollar outputs use the common domestic-price deflator, so an additional health price wedge remains a relative-cost effect.</p>
+  <h2>Historical data: observations and estimation windows</h2>
+  <p>Archived ABS national accounts Table 35 supplies government final consumption expenditure by purpose for health and education: 63 observations from FY1962-63 to FY2024-25. Series A85307122X and A85307124C are current-dollar total-general-government health and education, converted from millions to billions. Table 35 was discontinued in the October 2026 release, so the 2024-25 snapshot is cached with its source URL and hash.</p>
+  <p>A longer spending history does not imply a complete decomposition over the same period. Financial-year WPI supports 27 annual observations, 1999-2025; compensation per hour supports 39, 1987-2025. CPI uses four-quarter financial-year means. Historical population is the mean of opening and closing June single-age counts. Real GDP per person and output per hour come from the cached ABS national accounts workbook. WPI is the primary wage proxy; compensation per hour includes workforce composition and remuneration changes and is a sensitivity.</p>
+  <p>Aggregate demographic demand and labour-cost indices use fixed 2025 GFS allocation shares and the same demographic profiles as the model. Applying those shares to earlier government consumption is an explicit approximation, not a reconstructed historical subfunction allocation. Education has income elasticity zero in this diagnostic exercise and its projection rules are unchanged.</p>
+  <h2>Accounting bridge: government consumption is not GFS expenses</h2>
+  <p>National accounts government consumption and consolidated GFS operating expenses have different treatments of sales, transfers, depreciation/consumption of fixed capital and other transactions. The overlap below reports both levels and their ratio. No level splice or assumption of interchangeable scopes is made. The long aggregate health residual is therefore an optional scope/allocation proxy, not a matched subfunction estimate.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>year</th>
+        <th>programme</th>
+        <th>spending_bn_gfs</th>
+        <th>spending_bn_gfce</th>
+        <th>gfs_to_gfce_ratio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2016</td>
+        <td>Education</td>
+        <td>91.253</td>
+        <td>69.149</td>
+        <td>1.31965755108534</td>
+      </tr>
+      <tr>
+        <td>2016</td>
+        <td>Health</td>
+        <td>115.99</td>
+        <td>99.745</td>
+        <td>1.16286530653166</td>
+      </tr>
+      <tr>
+        <td>2025</td>
+        <td>Education</td>
+        <td>148.441</td>
+        <td>113.509</td>
+        <td>1.3077465223022</td>
+      </tr>
+      <tr>
+        <td>2025</td>
+        <td>Health</td>
+        <td>207.743</td>
+        <td>177.976</td>
+        <td>1.16725288802985</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>How remaining pressures are estimated</h2>
+  <p>For each available history divide nominal spending by demographics, observed CPI, the income factor with epsilon=0.8 for health, and the real input-cost basket with theta=25%. Regress the log of the resulting residual index on year, and convert the slope using exp(slope)-1. These are conditional trend estimates. Policy, coverage, morbidity, quality, treatment mix, measurement and classification changes remain in them. They do not separately identify technical efficiency or medical innovation.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>source</th>
+        <th>programme</th>
+        <th>wage_basis</th>
+        <th>start</th>
+        <th>end</th>
+        <th>n</th>
+        <th>Residual_percent</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>GFCE</td>
+        <td>Education</td>
+        <td>Compensation/hour</td>
+        <td>1987</td>
+        <td>2025</td>
+        <td>39</td>
+        <td>1.682</td>
+      </tr>
+      <tr>
+        <td>GFCE</td>
+        <td>Health</td>
+        <td>Compensation/hour</td>
+        <td>1987</td>
+        <td>2025</td>
+        <td>39</td>
+        <td>0.363</td>
+      </tr>
+      <tr>
+        <td>GFCE</td>
+        <td>Education</td>
+        <td>WPI</td>
+        <td>1999</td>
+        <td>2025</td>
+        <td>27</td>
+        <td>1.441</td>
+      </tr>
+      <tr>
+        <td>GFS</td>
+        <td>Education</td>
+        <td>WPI</td>
+        <td>2016</td>
+        <td>2025</td>
+        <td>10</td>
+        <td>1.835</td>
+      </tr>
+      <tr>
+        <td>GFCE</td>
+        <td>Health</td>
+        <td>WPI</td>
+        <td>1999</td>
+        <td>2025</td>
+        <td>27</td>
+        <td>1.291</td>
+      </tr>
+      <tr>
+        <td>GFS</td>
+        <td>Health</td>
+        <td>WPI</td>
+        <td>2016</td>
+        <td>2025</td>
+        <td>10</td>
+        <td>1.511</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The annual decomposition and residual-estimates CSVs include shorter common-window sensitivities. Full-sample WPI and compensation results differ in both wage measure and period; their difference is not a causal wage-measure effect. Log-slope standard errors in the extended exercise are descriptive ordinary least squares diagnostics, not forecast uncertainty intervals. Estimation-window and allocation choices are material.</p>
+  <h3>Optional health residuals supplied to the calculator</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>source</th>
+        <th>start</th>
+        <th>end</th>
+        <th>Residual_percent</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>h_hospital</td>
+        <td>subfunctions</td>
+        <td>2016</td>
+        <td>2025</td>
+        <td>2.161</td>
+      </tr>
+      <tr>
+        <td>h_primary</td>
+        <td>subfunctions</td>
+        <td>2016</td>
+        <td>2025</td>
+        <td>0.409</td>
+      </tr>
+      <tr>
+        <td>h_referred</td>
+        <td>subfunctions</td>
+        <td>2016</td>
+        <td>2025</td>
+        <td>0.074</td>
+      </tr>
+      <tr>
+        <td>h_medicines</td>
+        <td>subfunctions</td>
+        <td>2016</td>
+        <td>2025</td>
+        <td>0.119</td>
+      </tr>
+      <tr>
+        <td>h_other</td>
+        <td>subfunctions</td>
+        <td>2016</td>
+        <td>2025</td>
+        <td>2.306</td>
+      </tr>
+      <tr>
+        <td>h_hospital</td>
+        <td>aggregate_long</td>
+        <td>1999</td>
+        <td>2025</td>
+        <td>1.291</td>
+      </tr>
+      <tr>
+        <td>h_primary</td>
+        <td>aggregate_long</td>
+        <td>1999</td>
+        <td>2025</td>
+        <td>1.291</td>
+      </tr>
+      <tr>
+        <td>h_referred</td>
+        <td>aggregate_long</td>
+        <td>1999</td>
+        <td>2025</td>
+        <td>1.291</td>
+      </tr>
+      <tr>
+        <td>h_medicines</td>
+        <td>aggregate_long</td>
+        <td>1999</td>
+        <td>2025</td>
+        <td>1.291</td>
+      </tr>
+      <tr>
+        <td>h_other</td>
+        <td>aggregate_long</td>
+        <td>1999</td>
+        <td>2025</td>
+        <td>1.291</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The matched 2016-2025 option re-estimates each health block after the new income channel is removed. The aggregate-long option applies the 1999-2025 consumption residual to all health blocks and is labelled as a proxy. The slider shows the rounded anchor-spending-weighted mean (0.1 percentage points); at that centre unrounded source residuals are preserved. Moving it shifts all subfunction rates by the same number of percentage points. These values remain fixed when economic assumptions move. No residual is recalibrated to cancel a slider change.</p>
+  <h2>Projection comparison and decomposition</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Specification</th>
+        <th>Year</th>
+        <th>Health_bn</th>
+        <th>Health_GDP_pct</th>
+        <th>Net_debt_GDP_pct</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Explicit income and costs</td>
+        <td>2066</td>
+        <td>1907.70255576137</td>
+        <td>9.49152075673012</td>
+        <td>70.7985120113897</td>
+      </tr>
+      <tr>
+        <td>Legacy cost-only benchmark</td>
+        <td>2066</td>
+        <td>1621.75290602151</td>
+        <td>8.06881624355073</td>
+        <td>43.9946074993279</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Both paths hold macroeconomics, revenue, education, NDIS, transfers and all other policies fixed. The new reference adds income-related spending demand and sets remaining health pressures to zero. The legacy benchmark has no income channel and retains its 0.5% health allowance. This is a specification comparison, not evidence that either endpoint is the right forecast. The reproducible comparison CSV is estimation/outputs/extended/projection_comparison.csv.</p>
+  <p>The sector table and annual download expose income, demographics, coverage, prices, wages, efficiency, remaining pressures and policy. Ten-factor Shapley accounting separates income demand from the other drivers and distributes interactions symmetrically. It reconciles nominal, real and GDP-share changes exactly before rounding, including fixed-share overrides. Contributions are arithmetic, not causal estimates. Combined real non-demographic growth is the compound growth of income x real unit cost x remaining pressures.</p>
+  <h2>What remains unchanged</h2>
+  <p>Education retains 25% service efficiency and 0.5% additional cost growth as arbitrary discussion assumptions, plus its 2016-2025 historical residual alternative. NDIS retains participant/cohort demand, the original plan-cost index and 0.5% additional cost/use growth; no service-efficiency saving is imposed. Cash transfers retain payment indexation and demand rules. Age Pension retains the wealth/means-test module. Aged care retains its existing demographic and 0.3% additional-growth rule. Healthy ageing remains a separate possible extension.</p>
+  <h2>Sources and how they are used</h2>
+  <ul>
+    <li>
+      <a href="https://www.oecd.org/en/publications/fiscal-sustainability-of-health-systems_880f3195-en/full-report/component-6.html">OECD: Fiscal Sustainability of Health Systems, long-term projections</a>
+       informs the separation of demographic, income, cost and other channels. Its conditional income coefficient near 0.77 motivates a rounded 0.8 scenario; its regression cost coefficient is not this model labour share or efficiency response.
+    </li>
+    <li>
+      <a href="https://obr.uk/frs/fiscal-risks-and-sustainability-july-2026/">OBR fiscal risks and sustainability framework</a>
+       motivates explicit channels; no claim is made to reproduce OBR calibration or spending totals.
+    </li>
+    <li>
+      <a href="https://www.abs.gov.au/statistics/economy/national-accounts/australian-system-national-accounts/2024-25">ABS ASNA 2024-25, Table 35</a>
+       supplies long aggregate purpose consumption; archived workbook and hash are in estimation/data/raw and outputs/extended/source_manifest.csv.
+    </li>
+    <li>
+      <a href="https://www.abs.gov.au/statistics/economy/national-accounts/australian-system-national-accounts/2025-26">ABS ASNA 2025-26</a>
+       records discontinuation of Table 35.
+    </li>
+    <li>
+      <a href="https://www.abs.gov.au/statistics/research/understanding-different-approaches-reporting-health-expenditure-australia">ABS health accounting reconciliation</a>
+       explains accounting boundaries; it does not supply a numerical bridge for our current vintage.
+    </li>
+    <li>
+      <a href="https://treasury.gov.au/sites/default/files/2026-09/p2026-797917.pdf">2026 IGR, Appendix A3</a>
+       supplies the age-cost profiles and method comparators, not our income elasticity, efficiency or remaining-pressure default.
+    </li>
+    <li>AIHW government health funding, ABS GFS, CPI, WPI, population and national accounts: exact cached files, series extraction and locators are recorded in estimation/outputs/source_register.csv, estimation/data/source_manifest.csv and outputs/extended/source_manifest.csv. These support inputs, not the arbitrary efficiency choice.</li>
+  </ul>
+  <h2>Reproduce and inspect</h2>
+  <pre>Rscript estimation/04_extend_health_history.R --acquire  # first acquisition only
+Rscript estimation/04_extend_health_history.R            # cached rebuild
+Rscript estimation/05_health_framework_report.R
+Rscript tests/validate_health_framework.R</pre>
+  <p>Outputs: gfce_history_1963_2025.csv; gfs_gfce_overlap.csv; annual_decomposition.csv; residual_estimates.csv; individual income-adjusted health residual histories; projection_comparison.csv; source_manifest.csv. Runtime optional residuals are in data/health_income_residuals.csv. R/health_framework.R implements the health equation. The fixed reference is not recalibrated by user inputs.</p>
+</div></body></html>

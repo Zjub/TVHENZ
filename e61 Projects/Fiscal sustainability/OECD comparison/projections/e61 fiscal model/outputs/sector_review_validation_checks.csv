@@ -1,0 +1,477 @@
+"check","passed"
+"NDIS base all 2040 pct contributions reconcile",TRUE
+"NDIS base all 2040 pct endpoint equals engine",TRUE
+"NDIS base all 2040 pct factors reconstruct dollars",TRUE
+"NDIS base all 2040 bn contributions reconcile",TRUE
+"NDIS base all 2040 bn endpoint equals engine",TRUE
+"NDIS base all 2040 bn factors reconstruct dollars",TRUE
+"NDIS base all 2040 real_bn contributions reconcile",TRUE
+"NDIS base all 2040 real_bn endpoint equals engine",TRUE
+"NDIS base all 2040 real_bn factors reconstruct dollars",TRUE
+"NDIS base all 2066 pct contributions reconcile",TRUE
+"NDIS base all 2066 pct endpoint equals engine",TRUE
+"NDIS base all 2066 pct factors reconstruct dollars",TRUE
+"NDIS base all 2066 bn contributions reconcile",TRUE
+"NDIS base all 2066 bn endpoint equals engine",TRUE
+"NDIS base all 2066 bn factors reconstruct dollars",TRUE
+"NDIS base all 2066 real_bn contributions reconcile",TRUE
+"NDIS base all 2066 real_bn endpoint equals engine",TRUE
+"NDIS base all 2066 real_bn factors reconstruct dollars",TRUE
+"NDIS base n_ndis 2040 pct contributions reconcile",TRUE
+"NDIS base n_ndis 2040 pct endpoint equals engine",TRUE
+"NDIS base n_ndis 2040 pct factors reconstruct dollars",TRUE
+"NDIS base n_ndis 2040 bn contributions reconcile",TRUE
+"NDIS base n_ndis 2040 bn endpoint equals engine",TRUE
+"NDIS base n_ndis 2040 bn factors reconstruct dollars",TRUE
+"NDIS base n_ndis 2040 real_bn contributions reconcile",TRUE
+"NDIS base n_ndis 2040 real_bn endpoint equals engine",TRUE
+"NDIS base n_ndis 2040 real_bn factors reconstruct dollars",TRUE
+"NDIS base n_ndis 2066 pct contributions reconcile",TRUE
+"NDIS base n_ndis 2066 pct endpoint equals engine",TRUE
+"NDIS base n_ndis 2066 pct factors reconstruct dollars",TRUE
+"NDIS base n_ndis 2066 bn contributions reconcile",TRUE
+"NDIS base n_ndis 2066 bn endpoint equals engine",TRUE
+"NDIS base n_ndis 2066 bn factors reconstruct dollars",TRUE
+"NDIS base n_ndis 2066 real_bn contributions reconcile",TRUE
+"NDIS base n_ndis 2066 real_bn endpoint equals engine",TRUE
+"NDIS base n_ndis 2066 real_bn factors reconstruct dollars",TRUE
+"NDIS changed all 2040 pct contributions reconcile",TRUE
+"NDIS changed all 2040 pct endpoint equals engine",TRUE
+"NDIS changed all 2040 pct factors reconstruct dollars",TRUE
+"NDIS changed all 2040 bn contributions reconcile",TRUE
+"NDIS changed all 2040 bn endpoint equals engine",TRUE
+"NDIS changed all 2040 bn factors reconstruct dollars",TRUE
+"NDIS changed all 2040 real_bn contributions reconcile",TRUE
+"NDIS changed all 2040 real_bn endpoint equals engine",TRUE
+"NDIS changed all 2040 real_bn factors reconstruct dollars",TRUE
+"NDIS changed all 2066 pct contributions reconcile",TRUE
+"NDIS changed all 2066 pct endpoint equals engine",TRUE
+"NDIS changed all 2066 pct factors reconstruct dollars",TRUE
+"NDIS changed all 2066 bn contributions reconcile",TRUE
+"NDIS changed all 2066 bn endpoint equals engine",TRUE
+"NDIS changed all 2066 bn factors reconstruct dollars",TRUE
+"NDIS changed all 2066 real_bn contributions reconcile",TRUE
+"NDIS changed all 2066 real_bn endpoint equals engine",TRUE
+"NDIS changed all 2066 real_bn factors reconstruct dollars",TRUE
+"NDIS changed n_ndis 2040 pct contributions reconcile",TRUE
+"NDIS changed n_ndis 2040 pct endpoint equals engine",TRUE
+"NDIS changed n_ndis 2040 pct factors reconstruct dollars",TRUE
+"NDIS changed n_ndis 2040 bn contributions reconcile",TRUE
+"NDIS changed n_ndis 2040 bn endpoint equals engine",TRUE
+"NDIS changed n_ndis 2040 bn factors reconstruct dollars",TRUE
+"NDIS changed n_ndis 2040 real_bn contributions reconcile",TRUE
+"NDIS changed n_ndis 2040 real_bn endpoint equals engine",TRUE
+"NDIS changed n_ndis 2040 real_bn factors reconstruct dollars",TRUE
+"NDIS changed n_ndis 2066 pct contributions reconcile",TRUE
+"NDIS changed n_ndis 2066 pct endpoint equals engine",TRUE
+"NDIS changed n_ndis 2066 pct factors reconstruct dollars",TRUE
+"NDIS changed n_ndis 2066 bn contributions reconcile",TRUE
+"NDIS changed n_ndis 2066 bn endpoint equals engine",TRUE
+"NDIS changed n_ndis 2066 bn factors reconstruct dollars",TRUE
+"NDIS changed n_ndis 2066 real_bn contributions reconcile",TRUE
+"NDIS changed n_ndis 2066 real_bn endpoint equals engine",TRUE
+"NDIS changed n_ndis 2066 real_bn factors reconstruct dollars",TRUE
+"NDIS anchor unchanged under scenario changes",TRUE
+"NDIS discussion questions supplied",TRUE
+"Health base all 2040 pct contributions reconcile",TRUE
+"Health base all 2040 pct endpoint equals engine",TRUE
+"Health base all 2040 pct factors reconstruct dollars",TRUE
+"Health base all 2040 bn contributions reconcile",TRUE
+"Health base all 2040 bn endpoint equals engine",TRUE
+"Health base all 2040 bn factors reconstruct dollars",TRUE
+"Health base all 2040 real_bn contributions reconcile",TRUE
+"Health base all 2040 real_bn endpoint equals engine",TRUE
+"Health base all 2040 real_bn factors reconstruct dollars",TRUE
+"Health base all 2066 pct contributions reconcile",TRUE
+"Health base all 2066 pct endpoint equals engine",TRUE
+"Health base all 2066 pct factors reconstruct dollars",TRUE
+"Health base all 2066 bn contributions reconcile",TRUE
+"Health base all 2066 bn endpoint equals engine",TRUE
+"Health base all 2066 bn factors reconstruct dollars",TRUE
+"Health base all 2066 real_bn contributions reconcile",TRUE
+"Health base all 2066 real_bn endpoint equals engine",TRUE
+"Health base all 2066 real_bn factors reconstruct dollars",TRUE
+"Health base h_hospital 2040 pct contributions reconcile",TRUE
+"Health base h_hospital 2040 pct endpoint equals engine",TRUE
+"Health base h_hospital 2040 pct factors reconstruct dollars",TRUE
+"Health base h_hospital 2040 bn contributions reconcile",TRUE
+"Health base h_hospital 2040 bn endpoint equals engine",TRUE
+"Health base h_hospital 2040 bn factors reconstruct dollars",TRUE
+"Health base h_hospital 2040 real_bn contributions reconcile",TRUE
+"Health base h_hospital 2040 real_bn endpoint equals engine",TRUE
+"Health base h_hospital 2040 real_bn factors reconstruct dollars",TRUE
+"Health base h_hospital 2066 pct contributions reconcile",TRUE
+"Health base h_hospital 2066 pct endpoint equals engine",TRUE
+"Health base h_hospital 2066 pct factors reconstruct dollars",TRUE
+"Health base h_hospital 2066 bn contributions reconcile",TRUE
+"Health base h_hospital 2066 bn endpoint equals engine",TRUE
+"Health base h_hospital 2066 bn factors reconstruct dollars",TRUE
+"Health base h_hospital 2066 real_bn contributions reconcile",TRUE
+"Health base h_hospital 2066 real_bn endpoint equals engine",TRUE
+"Health base h_hospital 2066 real_bn factors reconstruct dollars",TRUE
+"Health base h_primary 2040 pct contributions reconcile",TRUE
+"Health base h_primary 2040 pct endpoint equals engine",TRUE
+"Health base h_primary 2040 pct factors reconstruct dollars",TRUE
+"Health base h_primary 2040 bn contributions reconcile",TRUE
+"Health base h_primary 2040 bn endpoint equals engine",TRUE
+"Health base h_primary 2040 bn factors reconstruct dollars",TRUE
+"Health base h_primary 2040 real_bn contributions reconcile",TRUE
+"Health base h_primary 2040 real_bn endpoint equals engine",TRUE
+"Health base h_primary 2040 real_bn factors reconstruct dollars",TRUE
+"Health base h_primary 2066 pct contributions reconcile",TRUE
+"Health base h_primary 2066 pct endpoint equals engine",TRUE
+"Health base h_primary 2066 pct factors reconstruct dollars",TRUE
+"Health base h_primary 2066 bn contributions reconcile",TRUE
+"Health base h_primary 2066 bn endpoint equals engine",TRUE
+"Health base h_primary 2066 bn factors reconstruct dollars",TRUE
+"Health base h_primary 2066 real_bn contributions reconcile",TRUE
+"Health base h_primary 2066 real_bn endpoint equals engine",TRUE
+"Health base h_primary 2066 real_bn factors reconstruct dollars",TRUE
+"Health base h_referred 2040 pct contributions reconcile",TRUE
+"Health base h_referred 2040 pct endpoint equals engine",TRUE
+"Health base h_referred 2040 pct factors reconstruct dollars",TRUE
+"Health base h_referred 2040 bn contributions reconcile",TRUE
+"Health base h_referred 2040 bn endpoint equals engine",TRUE
+"Health base h_referred 2040 bn factors reconstruct dollars",TRUE
+"Health base h_referred 2040 real_bn contributions reconcile",TRUE
+"Health base h_referred 2040 real_bn endpoint equals engine",TRUE
+"Health base h_referred 2040 real_bn factors reconstruct dollars",TRUE
+"Health base h_referred 2066 pct contributions reconcile",TRUE
+"Health base h_referred 2066 pct endpoint equals engine",TRUE
+"Health base h_referred 2066 pct factors reconstruct dollars",TRUE
+"Health base h_referred 2066 bn contributions reconcile",TRUE
+"Health base h_referred 2066 bn endpoint equals engine",TRUE
+"Health base h_referred 2066 bn factors reconstruct dollars",TRUE
+"Health base h_referred 2066 real_bn contributions reconcile",TRUE
+"Health base h_referred 2066 real_bn endpoint equals engine",TRUE
+"Health base h_referred 2066 real_bn factors reconstruct dollars",TRUE
+"Health base h_medicines 2040 pct contributions reconcile",TRUE
+"Health base h_medicines 2040 pct endpoint equals engine",TRUE
+"Health base h_medicines 2040 pct factors reconstruct dollars",TRUE
+"Health base h_medicines 2040 bn contributions reconcile",TRUE
+"Health base h_medicines 2040 bn endpoint equals engine",TRUE
+"Health base h_medicines 2040 bn factors reconstruct dollars",TRUE
+"Health base h_medicines 2040 real_bn contributions reconcile",TRUE
+"Health base h_medicines 2040 real_bn endpoint equals engine",TRUE
+"Health base h_medicines 2040 real_bn factors reconstruct dollars",TRUE
+"Health base h_medicines 2066 pct contributions reconcile",TRUE
+"Health base h_medicines 2066 pct endpoint equals engine",TRUE
+"Health base h_medicines 2066 pct factors reconstruct dollars",TRUE
+"Health base h_medicines 2066 bn contributions reconcile",TRUE
+"Health base h_medicines 2066 bn endpoint equals engine",TRUE
+"Health base h_medicines 2066 bn factors reconstruct dollars",TRUE
+"Health base h_medicines 2066 real_bn contributions reconcile",TRUE
+"Health base h_medicines 2066 real_bn endpoint equals engine",TRUE
+"Health base h_medicines 2066 real_bn factors reconstruct dollars",TRUE
+"Health base h_other 2040 pct contributions reconcile",TRUE
+"Health base h_other 2040 pct endpoint equals engine",TRUE
+"Health base h_other 2040 pct factors reconstruct dollars",TRUE
+"Health base h_other 2040 bn contributions reconcile",TRUE
+"Health base h_other 2040 bn endpoint equals engine",TRUE
+"Health base h_other 2040 bn factors reconstruct dollars",TRUE
+"Health base h_other 2040 real_bn contributions reconcile",TRUE
+"Health base h_other 2040 real_bn endpoint equals engine",TRUE
+"Health base h_other 2040 real_bn factors reconstruct dollars",TRUE
+"Health base h_other 2066 pct contributions reconcile",TRUE
+"Health base h_other 2066 pct endpoint equals engine",TRUE
+"Health base h_other 2066 pct factors reconstruct dollars",TRUE
+"Health base h_other 2066 bn contributions reconcile",TRUE
+"Health base h_other 2066 bn endpoint equals engine",TRUE
+"Health base h_other 2066 bn factors reconstruct dollars",TRUE
+"Health base h_other 2066 real_bn contributions reconcile",TRUE
+"Health base h_other 2066 real_bn endpoint equals engine",TRUE
+"Health base h_other 2066 real_bn factors reconstruct dollars",TRUE
+"Health changed all 2040 pct contributions reconcile",TRUE
+"Health changed all 2040 pct endpoint equals engine",TRUE
+"Health changed all 2040 pct factors reconstruct dollars",TRUE
+"Health changed all 2040 bn contributions reconcile",TRUE
+"Health changed all 2040 bn endpoint equals engine",TRUE
+"Health changed all 2040 bn factors reconstruct dollars",TRUE
+"Health changed all 2040 real_bn contributions reconcile",TRUE
+"Health changed all 2040 real_bn endpoint equals engine",TRUE
+"Health changed all 2040 real_bn factors reconstruct dollars",TRUE
+"Health changed all 2066 pct contributions reconcile",TRUE
+"Health changed all 2066 pct endpoint equals engine",TRUE
+"Health changed all 2066 pct factors reconstruct dollars",TRUE
+"Health changed all 2066 bn contributions reconcile",TRUE
+"Health changed all 2066 bn endpoint equals engine",TRUE
+"Health changed all 2066 bn factors reconstruct dollars",TRUE
+"Health changed all 2066 real_bn contributions reconcile",TRUE
+"Health changed all 2066 real_bn endpoint equals engine",TRUE
+"Health changed all 2066 real_bn factors reconstruct dollars",TRUE
+"Health changed h_hospital 2040 pct contributions reconcile",TRUE
+"Health changed h_hospital 2040 pct endpoint equals engine",TRUE
+"Health changed h_hospital 2040 pct factors reconstruct dollars",TRUE
+"Health changed h_hospital 2040 bn contributions reconcile",TRUE
+"Health changed h_hospital 2040 bn endpoint equals engine",TRUE
+"Health changed h_hospital 2040 bn factors reconstruct dollars",TRUE
+"Health changed h_hospital 2040 real_bn contributions reconcile",TRUE
+"Health changed h_hospital 2040 real_bn endpoint equals engine",TRUE
+"Health changed h_hospital 2040 real_bn factors reconstruct dollars",TRUE
+"Health changed h_hospital 2066 pct contributions reconcile",TRUE
+"Health changed h_hospital 2066 pct endpoint equals engine",TRUE
+"Health changed h_hospital 2066 pct factors reconstruct dollars",TRUE
+"Health changed h_hospital 2066 bn contributions reconcile",TRUE
+"Health changed h_hospital 2066 bn endpoint equals engine",TRUE
+"Health changed h_hospital 2066 bn factors reconstruct dollars",TRUE
+"Health changed h_hospital 2066 real_bn contributions reconcile",TRUE
+"Health changed h_hospital 2066 real_bn endpoint equals engine",TRUE
+"Health changed h_hospital 2066 real_bn factors reconstruct dollars",TRUE
+"Health changed h_primary 2040 pct contributions reconcile",TRUE
+"Health changed h_primary 2040 pct endpoint equals engine",TRUE
+"Health changed h_primary 2040 pct factors reconstruct dollars",TRUE
+"Health changed h_primary 2040 bn contributions reconcile",TRUE
+"Health changed h_primary 2040 bn endpoint equals engine",TRUE
+"Health changed h_primary 2040 bn factors reconstruct dollars",TRUE
+"Health changed h_primary 2040 real_bn contributions reconcile",TRUE
+"Health changed h_primary 2040 real_bn endpoint equals engine",TRUE
+"Health changed h_primary 2040 real_bn factors reconstruct dollars",TRUE
+"Health changed h_primary 2066 pct contributions reconcile",TRUE
+"Health changed h_primary 2066 pct endpoint equals engine",TRUE
+"Health changed h_primary 2066 pct factors reconstruct dollars",TRUE
+"Health changed h_primary 2066 bn contributions reconcile",TRUE
+"Health changed h_primary 2066 bn endpoint equals engine",TRUE
+"Health changed h_primary 2066 bn factors reconstruct dollars",TRUE
+"Health changed h_primary 2066 real_bn contributions reconcile",TRUE
+"Health changed h_primary 2066 real_bn endpoint equals engine",TRUE
+"Health changed h_primary 2066 real_bn factors reconstruct dollars",TRUE
+"Health changed h_referred 2040 pct contributions reconcile",TRUE
+"Health changed h_referred 2040 pct endpoint equals engine",TRUE
+"Health changed h_referred 2040 pct factors reconstruct dollars",TRUE
+"Health changed h_referred 2040 bn contributions reconcile",TRUE
+"Health changed h_referred 2040 bn endpoint equals engine",TRUE
+"Health changed h_referred 2040 bn factors reconstruct dollars",TRUE
+"Health changed h_referred 2040 real_bn contributions reconcile",TRUE
+"Health changed h_referred 2040 real_bn endpoint equals engine",TRUE
+"Health changed h_referred 2040 real_bn factors reconstruct dollars",TRUE
+"Health changed h_referred 2066 pct contributions reconcile",TRUE
+"Health changed h_referred 2066 pct endpoint equals engine",TRUE
+"Health changed h_referred 2066 pct factors reconstruct dollars",TRUE
+"Health changed h_referred 2066 bn contributions reconcile",TRUE
+"Health changed h_referred 2066 bn endpoint equals engine",TRUE
+"Health changed h_referred 2066 bn factors reconstruct dollars",TRUE
+"Health changed h_referred 2066 real_bn contributions reconcile",TRUE
+"Health changed h_referred 2066 real_bn endpoint equals engine",TRUE
+"Health changed h_referred 2066 real_bn factors reconstruct dollars",TRUE
+"Health changed h_medicines 2040 pct contributions reconcile",TRUE
+"Health changed h_medicines 2040 pct endpoint equals engine",TRUE
+"Health changed h_medicines 2040 pct factors reconstruct dollars",TRUE
+"Health changed h_medicines 2040 bn contributions reconcile",TRUE
+"Health changed h_medicines 2040 bn endpoint equals engine",TRUE
+"Health changed h_medicines 2040 bn factors reconstruct dollars",TRUE
+"Health changed h_medicines 2040 real_bn contributions reconcile",TRUE
+"Health changed h_medicines 2040 real_bn endpoint equals engine",TRUE
+"Health changed h_medicines 2040 real_bn factors reconstruct dollars",TRUE
+"Health changed h_medicines 2066 pct contributions reconcile",TRUE
+"Health changed h_medicines 2066 pct endpoint equals engine",TRUE
+"Health changed h_medicines 2066 pct factors reconstruct dollars",TRUE
+"Health changed h_medicines 2066 bn contributions reconcile",TRUE
+"Health changed h_medicines 2066 bn endpoint equals engine",TRUE
+"Health changed h_medicines 2066 bn factors reconstruct dollars",TRUE
+"Health changed h_medicines 2066 real_bn contributions reconcile",TRUE
+"Health changed h_medicines 2066 real_bn endpoint equals engine",TRUE
+"Health changed h_medicines 2066 real_bn factors reconstruct dollars",TRUE
+"Health changed h_other 2040 pct contributions reconcile",TRUE
+"Health changed h_other 2040 pct endpoint equals engine",TRUE
+"Health changed h_other 2040 pct factors reconstruct dollars",TRUE
+"Health changed h_other 2040 bn contributions reconcile",TRUE
+"Health changed h_other 2040 bn endpoint equals engine",TRUE
+"Health changed h_other 2040 bn factors reconstruct dollars",TRUE
+"Health changed h_other 2040 real_bn contributions reconcile",TRUE
+"Health changed h_other 2040 real_bn endpoint equals engine",TRUE
+"Health changed h_other 2040 real_bn factors reconstruct dollars",TRUE
+"Health changed h_other 2066 pct contributions reconcile",TRUE
+"Health changed h_other 2066 pct endpoint equals engine",TRUE
+"Health changed h_other 2066 pct factors reconstruct dollars",TRUE
+"Health changed h_other 2066 bn contributions reconcile",TRUE
+"Health changed h_other 2066 bn endpoint equals engine",TRUE
+"Health changed h_other 2066 bn factors reconstruct dollars",TRUE
+"Health changed h_other 2066 real_bn contributions reconcile",TRUE
+"Health changed h_other 2066 real_bn endpoint equals engine",TRUE
+"Health changed h_other 2066 real_bn factors reconstruct dollars",TRUE
+"Health anchor unchanged under scenario changes",TRUE
+"Health discussion questions supplied",TRUE
+"Education base all 2040 pct contributions reconcile",TRUE
+"Education base all 2040 pct endpoint equals engine",TRUE
+"Education base all 2040 pct factors reconstruct dollars",TRUE
+"Education base all 2040 bn contributions reconcile",TRUE
+"Education base all 2040 bn endpoint equals engine",TRUE
+"Education base all 2040 bn factors reconstruct dollars",TRUE
+"Education base all 2040 real_bn contributions reconcile",TRUE
+"Education base all 2040 real_bn endpoint equals engine",TRUE
+"Education base all 2040 real_bn factors reconstruct dollars",TRUE
+"Education base all 2066 pct contributions reconcile",TRUE
+"Education base all 2066 pct endpoint equals engine",TRUE
+"Education base all 2066 pct factors reconstruct dollars",TRUE
+"Education base all 2066 bn contributions reconcile",TRUE
+"Education base all 2066 bn endpoint equals engine",TRUE
+"Education base all 2066 bn factors reconstruct dollars",TRUE
+"Education base all 2066 real_bn contributions reconcile",TRUE
+"Education base all 2066 real_bn endpoint equals engine",TRUE
+"Education base all 2066 real_bn factors reconstruct dollars",TRUE
+"Education base e_school 2040 pct contributions reconcile",TRUE
+"Education base e_school 2040 pct endpoint equals engine",TRUE
+"Education base e_school 2040 pct factors reconstruct dollars",TRUE
+"Education base e_school 2040 bn contributions reconcile",TRUE
+"Education base e_school 2040 bn endpoint equals engine",TRUE
+"Education base e_school 2040 bn factors reconstruct dollars",TRUE
+"Education base e_school 2040 real_bn contributions reconcile",TRUE
+"Education base e_school 2040 real_bn endpoint equals engine",TRUE
+"Education base e_school 2040 real_bn factors reconstruct dollars",TRUE
+"Education base e_school 2066 pct contributions reconcile",TRUE
+"Education base e_school 2066 pct endpoint equals engine",TRUE
+"Education base e_school 2066 pct factors reconstruct dollars",TRUE
+"Education base e_school 2066 bn contributions reconcile",TRUE
+"Education base e_school 2066 bn endpoint equals engine",TRUE
+"Education base e_school 2066 bn factors reconstruct dollars",TRUE
+"Education base e_school 2066 real_bn contributions reconcile",TRUE
+"Education base e_school 2066 real_bn endpoint equals engine",TRUE
+"Education base e_school 2066 real_bn factors reconstruct dollars",TRUE
+"Education base e_higher 2040 pct contributions reconcile",TRUE
+"Education base e_higher 2040 pct endpoint equals engine",TRUE
+"Education base e_higher 2040 pct factors reconstruct dollars",TRUE
+"Education base e_higher 2040 bn contributions reconcile",TRUE
+"Education base e_higher 2040 bn endpoint equals engine",TRUE
+"Education base e_higher 2040 bn factors reconstruct dollars",TRUE
+"Education base e_higher 2040 real_bn contributions reconcile",TRUE
+"Education base e_higher 2040 real_bn endpoint equals engine",TRUE
+"Education base e_higher 2040 real_bn factors reconstruct dollars",TRUE
+"Education base e_higher 2066 pct contributions reconcile",TRUE
+"Education base e_higher 2066 pct endpoint equals engine",TRUE
+"Education base e_higher 2066 pct factors reconstruct dollars",TRUE
+"Education base e_higher 2066 bn contributions reconcile",TRUE
+"Education base e_higher 2066 bn endpoint equals engine",TRUE
+"Education base e_higher 2066 bn factors reconstruct dollars",TRUE
+"Education base e_higher 2066 real_bn contributions reconcile",TRUE
+"Education base e_higher 2066 real_bn endpoint equals engine",TRUE
+"Education base e_higher 2066 real_bn factors reconstruct dollars",TRUE
+"Education base e_vet 2040 pct contributions reconcile",TRUE
+"Education base e_vet 2040 pct endpoint equals engine",TRUE
+"Education base e_vet 2040 pct factors reconstruct dollars",TRUE
+"Education base e_vet 2040 bn contributions reconcile",TRUE
+"Education base e_vet 2040 bn endpoint equals engine",TRUE
+"Education base e_vet 2040 bn factors reconstruct dollars",TRUE
+"Education base e_vet 2040 real_bn contributions reconcile",TRUE
+"Education base e_vet 2040 real_bn endpoint equals engine",TRUE
+"Education base e_vet 2040 real_bn factors reconstruct dollars",TRUE
+"Education base e_vet 2066 pct contributions reconcile",TRUE
+"Education base e_vet 2066 pct endpoint equals engine",TRUE
+"Education base e_vet 2066 pct factors reconstruct dollars",TRUE
+"Education base e_vet 2066 bn contributions reconcile",TRUE
+"Education base e_vet 2066 bn endpoint equals engine",TRUE
+"Education base e_vet 2066 bn factors reconstruct dollars",TRUE
+"Education base e_vet 2066 real_bn contributions reconcile",TRUE
+"Education base e_vet 2066 real_bn endpoint equals engine",TRUE
+"Education base e_vet 2066 real_bn factors reconstruct dollars",TRUE
+"Education base e_other 2040 pct contributions reconcile",TRUE
+"Education base e_other 2040 pct endpoint equals engine",TRUE
+"Education base e_other 2040 pct factors reconstruct dollars",TRUE
+"Education base e_other 2040 bn contributions reconcile",TRUE
+"Education base e_other 2040 bn endpoint equals engine",TRUE
+"Education base e_other 2040 bn factors reconstruct dollars",TRUE
+"Education base e_other 2040 real_bn contributions reconcile",TRUE
+"Education base e_other 2040 real_bn endpoint equals engine",TRUE
+"Education base e_other 2040 real_bn factors reconstruct dollars",TRUE
+"Education base e_other 2066 pct contributions reconcile",TRUE
+"Education base e_other 2066 pct endpoint equals engine",TRUE
+"Education base e_other 2066 pct factors reconstruct dollars",TRUE
+"Education base e_other 2066 bn contributions reconcile",TRUE
+"Education base e_other 2066 bn endpoint equals engine",TRUE
+"Education base e_other 2066 bn factors reconstruct dollars",TRUE
+"Education base e_other 2066 real_bn contributions reconcile",TRUE
+"Education base e_other 2066 real_bn endpoint equals engine",TRUE
+"Education base e_other 2066 real_bn factors reconstruct dollars",TRUE
+"Education changed all 2040 pct contributions reconcile",TRUE
+"Education changed all 2040 pct endpoint equals engine",TRUE
+"Education changed all 2040 pct factors reconstruct dollars",TRUE
+"Education changed all 2040 bn contributions reconcile",TRUE
+"Education changed all 2040 bn endpoint equals engine",TRUE
+"Education changed all 2040 bn factors reconstruct dollars",TRUE
+"Education changed all 2040 real_bn contributions reconcile",TRUE
+"Education changed all 2040 real_bn endpoint equals engine",TRUE
+"Education changed all 2040 real_bn factors reconstruct dollars",TRUE
+"Education changed all 2066 pct contributions reconcile",TRUE
+"Education changed all 2066 pct endpoint equals engine",TRUE
+"Education changed all 2066 pct factors reconstruct dollars",TRUE
+"Education changed all 2066 bn contributions reconcile",TRUE
+"Education changed all 2066 bn endpoint equals engine",TRUE
+"Education changed all 2066 bn factors reconstruct dollars",TRUE
+"Education changed all 2066 real_bn contributions reconcile",TRUE
+"Education changed all 2066 real_bn endpoint equals engine",TRUE
+"Education changed all 2066 real_bn factors reconstruct dollars",TRUE
+"Education changed e_school 2040 pct contributions reconcile",TRUE
+"Education changed e_school 2040 pct endpoint equals engine",TRUE
+"Education changed e_school 2040 pct factors reconstruct dollars",TRUE
+"Education changed e_school 2040 bn contributions reconcile",TRUE
+"Education changed e_school 2040 bn endpoint equals engine",TRUE
+"Education changed e_school 2040 bn factors reconstruct dollars",TRUE
+"Education changed e_school 2040 real_bn contributions reconcile",TRUE
+"Education changed e_school 2040 real_bn endpoint equals engine",TRUE
+"Education changed e_school 2040 real_bn factors reconstruct dollars",TRUE
+"Education changed e_school 2066 pct contributions reconcile",TRUE
+"Education changed e_school 2066 pct endpoint equals engine",TRUE
+"Education changed e_school 2066 pct factors reconstruct dollars",TRUE
+"Education changed e_school 2066 bn contributions reconcile",TRUE
+"Education changed e_school 2066 bn endpoint equals engine",TRUE
+"Education changed e_school 2066 bn factors reconstruct dollars",TRUE
+"Education changed e_school 2066 real_bn contributions reconcile",TRUE
+"Education changed e_school 2066 real_bn endpoint equals engine",TRUE
+"Education changed e_school 2066 real_bn factors reconstruct dollars",TRUE
+"Education changed e_higher 2040 pct contributions reconcile",TRUE
+"Education changed e_higher 2040 pct endpoint equals engine",TRUE
+"Education changed e_higher 2040 pct factors reconstruct dollars",TRUE
+"Education changed e_higher 2040 bn contributions reconcile",TRUE
+"Education changed e_higher 2040 bn endpoint equals engine",TRUE
+"Education changed e_higher 2040 bn factors reconstruct dollars",TRUE
+"Education changed e_higher 2040 real_bn contributions reconcile",TRUE
+"Education changed e_higher 2040 real_bn endpoint equals engine",TRUE
+"Education changed e_higher 2040 real_bn factors reconstruct dollars",TRUE
+"Education changed e_higher 2066 pct contributions reconcile",TRUE
+"Education changed e_higher 2066 pct endpoint equals engine",TRUE
+"Education changed e_higher 2066 pct factors reconstruct dollars",TRUE
+"Education changed e_higher 2066 bn contributions reconcile",TRUE
+"Education changed e_higher 2066 bn endpoint equals engine",TRUE
+"Education changed e_higher 2066 bn factors reconstruct dollars",TRUE
+"Education changed e_higher 2066 real_bn contributions reconcile",TRUE
+"Education changed e_higher 2066 real_bn endpoint equals engine",TRUE
+"Education changed e_higher 2066 real_bn factors reconstruct dollars",TRUE
+"Education changed e_vet 2040 pct contributions reconcile",TRUE
+"Education changed e_vet 2040 pct endpoint equals engine",TRUE
+"Education changed e_vet 2040 pct factors reconstruct dollars",TRUE
+"Education changed e_vet 2040 bn contributions reconcile",TRUE
+"Education changed e_vet 2040 bn endpoint equals engine",TRUE
+"Education changed e_vet 2040 bn factors reconstruct dollars",TRUE
+"Education changed e_vet 2040 real_bn contributions reconcile",TRUE
+"Education changed e_vet 2040 real_bn endpoint equals engine",TRUE
+"Education changed e_vet 2040 real_bn factors reconstruct dollars",TRUE
+"Education changed e_vet 2066 pct contributions reconcile",TRUE
+"Education changed e_vet 2066 pct endpoint equals engine",TRUE
+"Education changed e_vet 2066 pct factors reconstruct dollars",TRUE
+"Education changed e_vet 2066 bn contributions reconcile",TRUE
+"Education changed e_vet 2066 bn endpoint equals engine",TRUE
+"Education changed e_vet 2066 bn factors reconstruct dollars",TRUE
+"Education changed e_vet 2066 real_bn contributions reconcile",TRUE
+"Education changed e_vet 2066 real_bn endpoint equals engine",TRUE
+"Education changed e_vet 2066 real_bn factors reconstruct dollars",TRUE
+"Education changed e_other 2040 pct contributions reconcile",TRUE
+"Education changed e_other 2040 pct endpoint equals engine",TRUE
+"Education changed e_other 2040 pct factors reconstruct dollars",TRUE
+"Education changed e_other 2040 bn contributions reconcile",TRUE
+"Education changed e_other 2040 bn endpoint equals engine",TRUE
+"Education changed e_other 2040 bn factors reconstruct dollars",TRUE
+"Education changed e_other 2040 real_bn contributions reconcile",TRUE
+"Education changed e_other 2040 real_bn endpoint equals engine",TRUE
+"Education changed e_other 2040 real_bn factors reconstruct dollars",TRUE
+"Education changed e_other 2066 pct contributions reconcile",TRUE
+"Education changed e_other 2066 pct endpoint equals engine",TRUE
+"Education changed e_other 2066 pct factors reconstruct dollars",TRUE
+"Education changed e_other 2066 bn contributions reconcile",TRUE
+"Education changed e_other 2066 bn endpoint equals engine",TRUE
+"Education changed e_other 2066 bn factors reconstruct dollars",TRUE
+"Education changed e_other 2066 real_bn contributions reconcile",TRUE
+"Education changed e_other 2066 real_bn endpoint equals engine",TRUE
+"Education changed e_other 2066 real_bn factors reconstruct dollars",TRUE
+"Education anchor unchanged under scenario changes",TRUE
+"Education discussion questions supplied",TRUE
+"Invalid cross-sector selection rejected",TRUE
+"Invalid endpoint rejected",TRUE

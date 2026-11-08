@@ -1,0 +1,4 @@
+quantity,independent_value,benchmark_implied_value,status
+Health Baumol coefficient,0.5,0.525486763474127,Diagnostic inverse calculation only; not an independently identified OECD parameter
+2060 employment rate age 55-74,0.461786444336401,0.350166825487081,Diagnostic inverse calculation only; not an independently identified OECD parameter
+Other-spending baseline ratio required,0.212560785034253,-0.161972838266723,Diagnostic inverse calculation only; not an independently identified OECD parameter

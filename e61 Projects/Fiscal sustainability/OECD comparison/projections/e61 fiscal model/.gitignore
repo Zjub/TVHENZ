@@ -1,0 +1,4 @@
+outputs/cache/
+outputs/*.log
+outputs/shiny_pid.txt
+.Rhistory

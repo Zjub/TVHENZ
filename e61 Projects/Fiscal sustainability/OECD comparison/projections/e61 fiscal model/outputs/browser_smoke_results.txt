@@ -1,0 +1,42 @@
+PASS: HTTP and Shiny websocket connection at http://127.0.0.1:7461
+PASS: all six economic controls independently change rendered metrics
+PASS: all six cost pass-through controls change metrics and reset; cost-only reset preserves NGDP choice
+PASS: spending charts switch to nominal dollars and NGDP-only spending comparisons render
+PASS: 24 subfunctions render; group/year/currency controls update exact factor contributions and CSV exports; background PDF downloads
+PASS: productivity and hours leave the GDP headline unchanged; exported full GDP path is identical at 1.2 and 1.7 percent productivity
+PASS: all tabs including Revenue render without output errors
+PASS: evidence register renders, filters to spending and downloads all 64 source/assumption entries
+PASS: structural company-tax share and terms-of-trade diagnostics render
+PASS: company tax/GDP is constant at zero productivity and 8% NGDP per capita; ToT and sensitivity change its level and reset correctly
+PASS: explicit tax threshold control changes projected revenue and fiscal results
+PASS: Wage indexation is the default; CPI and fixed thresholds change debt levels and gaps versus the fixed wage-indexed reference
+PASS: Spending tab renders the live NDIS projection and total-Scheme IGR comparison
+PASS: subfunction factor table follows group/year/currency selections, includes financing rows, and exports endpoint factors that reconstruct spending
+PASS: Debt and interest tab reconciles gross/net debt and asset income; units, year selector and detail download work
+PASS: live NDIS growth readout responds to intensity; real super returns default to 4%, allow 7% and reset correctly
+PASS: results revenue-detail and assumptions downloads return valid content
+PASS: reset restores reference metrics
+2066 net debt / GDP
+112.3%
++0.0 pp versus reference
+2066 fiscal balance / GDP
+-8.0%
++0.0 pp versus reference
+2066 nominal GDP
+$16.7 tn
++0.0% versus reference
+2066 real primary spend / person
+$66,776
++0.0% versus reference
+2066 net debt / GDP
+116.7%
++4.4 pp versus reference
+2066 fiscal balance / GDP
+-10.4%
+-2.4 pp versus reference
+2066 nominal GDP
+$22.1 tn
++32.0% versus reference
+2066 real primary spend / person
+$97,965
++46.7% versus reference
