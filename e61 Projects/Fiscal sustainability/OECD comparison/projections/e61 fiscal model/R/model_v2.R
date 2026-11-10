@@ -9,6 +9,7 @@ load_inputs <- function(path='data',include_pension=TRUE) {
     pension_benchmark=read('igr_pension_status_benchmark.csv'),tax_history=read('tax_head_history.csv'),
     tax_elasticities=read('tax_elasticity_estimates.csv'),income_distribution=read('ato_income_distribution.csv'),
     policy=read('policy_parameters.csv',FALSE),ndis_incidence=read('ndis_incidence_2025.csv',FALSE),
+    ndis_age_costs=read('ndis_age_costs_2025.csv',FALSE),
     purpose=read('historical_gfs_expenses_by_purpose.csv',FALSE),
     operating=read('historical_gfs_operating_statement.csv',FALSE),
     subfunctions=read('spending_subfunctions.csv',FALSE),subfunction_age_profiles=read('subfunction_age_profiles.csv'),
@@ -38,6 +39,7 @@ default_assumptions <- function() list(productivity=.012,ngdp_per_capita_growth=
   service_cost_set='current',ndis_cost_rule='input_mix',transfer_cost_rule='current_proxy',
   transfer_wage_share=.65,other_spending_rule='input_costs',
   health_specification='income_costs',health_income_elasticity=.8,health_remaining_growth=0,
+  education_income_elasticity=.2,
   health_pressure_source='assumed',health_wage_premium=0,health_cpi_wedge=0,
   spending_gdp_targets=setNames(rep(NA_real_,8),names(spending_target_parameters())),
   health_service_growth_adjustment=0,education_service_growth_adjustment=0,ndis_service_growth_adjustment=0,
@@ -45,6 +47,30 @@ default_assumptions <- function() list(productivity=.012,ngdp_per_capita_growth=
   health_service_productivity_share=.25,education_service_productivity_share=.25,ndis_service_productivity_share=0,
   aged_care_service_productivity_share=0,social_service_productivity_share=0,other_service_productivity_share=0,
   anchor_year=2030L,end_year=2066L)
+fiscal_outlook_measures <- function() c('Net debt (% GDP)'='net_debt_pct',
+  'Gross debt (% GDP)'='gross_debt_pct','Total expenditure (% GDP)'='total_spending_pct',
+  'Fiscal balance (% GDP)'='fiscal_balance_pct','Revenue (% GDP)'='revenue_pct',
+  'Real primary spending per person ($2030)'='real_primary_per_person')
+
+fiscal_outlook_data <- function(scenario,reference,measure=NULL,include_assumptions=TRUE) {
+  choices<-fiscal_outlook_measures()
+  if(is.null(measure))measure<-unname(choices)
+  stopifnot(length(measure)>0,!anyDuplicated(measure),all(measure%in%choices))
+  cases<-list('Your scenario'=scenario,'Reference'=reference)
+  do.call(rbind,lapply(names(cases),function(label){
+    p<-cases[[label]]
+    d<-do.call(rbind,lapply(measure,function(key)data.frame(year=p$path$year,case=label,
+      measure=key,measure_label=names(choices)[match(key,choices)],
+      unit=if(key=='real_primary_per_person')'2030 dollars per person' else '% of GDP',
+      value=p$path[[key]],stringsAsFactors=FALSE)))
+    if(include_assumptions)for(key in names(p$assumptions)){
+      v<-p$assumptions[[key]]
+      d[[paste0('assumption_',key)]]<-if(length(v)==1)v else jsonlite::toJSON(as.list(v),auto_unbox=TRUE,na='null')
+    }
+    d
+  }))
+}
+
 cost_pass_through_parameters <- function() c(Health='health_service_growth_adjustment',Education='education_service_growth_adjustment',
   NDIS='ndis_service_growth_adjustment',`Aged care`='aged_care_service_growth_adjustment',
   `Other social protection`='social_service_growth_adjustment',`Other public services`='other_service_growth_adjustment')
@@ -103,8 +129,8 @@ ndis_projection <- function(x) {
     counts[66:100,i]<-counts[65:99,i-1]*current[66:100]/previous[65:99]
     counts[101,i]<-sum(counts[100:101,i-1])*current[101]/sum(previous[100:101])
   }
-  data.frame(year=years,participants=colSums(counts),
-    participants_65plus=colSums(counts[66:101,,drop=FALSE]))
+  ndis_cost_summary(counts,pop,x,years)
+
 }
 
 economic_inputs <- function(inputs,assumptions=default_assumptions()) {
@@ -126,8 +152,12 @@ economic_inputs <- function(inputs,assumptions=default_assumptions()) {
   x$labour<-d
   # Uniform within-year population scaling commutes with the NDIS cohort
   # retention recursion, including the 100+ group. Preserve that exact scaling.
-  for(n in c('participants','participants_65plus'))
+  for(n in c('participants','participants_65plus','cost_weighted_participants'))
     x$ndis[[n]]<-x$ndis[[n]]*scale[match(x$ndis$year,d$year)]
+  profiles<-attr(x$ndis,'age_profiles')
+  for(n in c('participants','population','cost_weighted_participants'))
+    profiles[[n]]<-profiles[[n]]*scale[match(profiles$year,d$year)]
+  attr(x$ndis,'age_profiles')<-profiles
   x
 }
 
@@ -325,6 +355,8 @@ project_model <- function(inputs,assumptions=default_assumptions(),calibration=c
     a$health_pressure_source%in%c('assumed','subfunctions','aggregate_long'))
   for(key in c('health_income_elasticity','health_remaining_growth','health_wage_premium','health_cpi_wedge'))
     if(length(a[[key]])!=1||!is.finite(a[[key]]))stop('Health controls must be finite scalars')
+  v<-a$education_income_elasticity
+  if(length(v)!=1||!is.finite(v)||v<0||v>1.5)stop('Education income elasticity must be a finite scalar between 0 and 1.5')
   if(a$health_income_elasticity<0||a$health_income_elasticity>1.5||
      a$health_remaining_growth< -.01||a$health_remaining_growth>.02||
      abs(a$health_wage_premium)>.01||abs(a$health_cpi_wedge)>.01)stop('Health control outside supported range')
@@ -435,6 +467,7 @@ scenario_attribution <- function(inputs,assumptions,calibration=calibrate(inputs
     'Population'='population_growth','Average hours'='hours_growth',
     'Service cost assumption set'=c('service_cost_set','health_specification','health_pressure_source'),
     'Health income demand'='health_income_elasticity',
+    'Education income demand'='education_income_elasticity',
     'Health remaining pressures'='health_remaining_growth',
     'Health wages and prices'=c('health_wage_premium','health_cpi_wedge'),
     'Service productivity'=unname(service_productivity_parameters()),

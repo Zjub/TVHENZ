@@ -1,0 +1,3208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v8.19.9.0-->
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <message:Header>
+    <message:ID>IDREF6856</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2026-11-02T22:56:21.2530189+00:00</message:Prepared>
+    <message:Sender id="Unknown" />
+    <message:Receiver id="Unknown" />
+  </message:Header>
+  <message:Structures>
+    <structure:Dataflows>
+      <structure:Dataflow id="ABS_SU_TABLE_2025" agencyID="ABS" version="1.0.0" isFinal="true">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>NonProductionDataflow</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">true</common:AnnotationText>
+          </common:Annotation>
+          <common:Annotation id="LAYOUT_ROW_SECTION">
+            <common:AnnotationTitle>SUPG,FREQ</common:AnnotationTitle>
+            <common:AnnotationType>LAYOUT_ROW_SECTION</common:AnnotationType>
+          </common:Annotation>
+          <common:Annotation id="LAYOUT_COLUMN">
+            <common:AnnotationTitle>TIME_PERIOD</common:AnnotationTitle>
+            <common:AnnotationType>LAYOUT_COLUMN</common:AnnotationType>
+          </common:Annotation>
+          <common:Annotation id="LAYOUT_ROW">
+            <common:AnnotationTitle>SU_CAT</common:AnnotationTitle>
+            <common:AnnotationType>LAYOUT_ROW</common:AnnotationType>
+          </common:Annotation>
+          <common:Annotation>
+            <common:AnnotationTitle>SUPG=SUP_BPR,SU_CAT=10,LASTNPERIODS=4</common:AnnotationTitle>
+            <common:AnnotationType>DEFAULT</common:AnnotationType>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">Supply Use Table, 2024-25</common:Name>
+        <common:Description xml:lang="en">Dataset: ABS_SU_TABLE_2025. Supply-use tables are building blocks for the Australian System of National Accounts as they are used to ensure GDP is balanced for all three approaches (production, expenditure and income) and provide the annual benchmarks (levels) from which the quarterly estimates are compiled. Unit of measure: AUD. Geographic coverage: Australia. Catalogue number: 5217.0</common:Description>
+        <structure:Structure>
+          <Ref id="ABS_SU_TABLE_2025" version="1.0.0" agencyID="ABS" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+    </structure:Dataflows>
+    <structure:CategorySchemes>
+      <structure:CategoryScheme id="ECONOMY" agencyID="ABS" version="1.0.0" isFinal="true">
+        <common:Name xml:lang="en">Economy</common:Name>
+        <structure:Category id="PRICE_INDEX_INFLATION">
+          <common:Name xml:lang="en">Price indexes and inflation</common:Name>
+        </structure:Category>
+        <structure:Category id="NATIONAL_ACCOUNTS">
+          <common:Name xml:lang="en">National accounts</common:Name>
+        </structure:Category>
+        <structure:Category id="INTERNATIONAL_TRADE">
+          <common:Name xml:lang="en">International trade</common:Name>
+        </structure:Category>
+        <structure:Category id="BUSINESS_INDICATORS">
+          <common:Name xml:lang="en">Business indicators</common:Name>
+        </structure:Category>
+        <structure:Category id="FINANCE">
+          <common:Name xml:lang="en">Finance</common:Name>
+        </structure:Category>
+        <structure:Category id="GOVERNMENT">
+          <common:Name xml:lang="en">Government</common:Name>
+        </structure:Category>
+      </structure:CategoryScheme>
+    </structure:CategorySchemes>
+    <structure:Categorisations>
+      <structure:Categorisation id="CAT_ABS_SU_2025" agencyID="ABS" version="1.0.0" isFinal="true">
+        <common:Name xml:lang="en">Supply Use Table, 2024-25</common:Name>
+        <structure:Source>
+          <Ref id="ABS_SU_TABLE_2025" version="1.0.0" agencyID="ABS" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="NATIONAL_ACCOUNTS" maintainableParentID="ECONOMY" maintainableParentVersion="1.0.0" agencyID="ABS" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+    </structure:Categorisations>
+    <structure:Codelists>
+      <structure:Codelist id="CL_FREQ" agencyID="ABS" version="1.0.0" isFinal="true">
+        <common:Name xml:lang="en">Frequency</common:Name>
+        <structure:Code id="H">
+          <common:Name xml:lang="en">Hourly</common:Name>
+          <common:Description xml:lang="en">To be used for data collected or disseminated every hour.</common:Description>
+        </structure:Code>
+        <structure:Code id="D">
+          <common:Name xml:lang="en">Daily</common:Name>
+          <common:Description xml:lang="en">To be used for data collected or disseminated every day.</common:Description>
+        </structure:Code>
+        <structure:Code id="N">
+          <common:Name xml:lang="en">Minutely</common:Name>
+          <common:Description xml:lang="en">While N denotes "minutely", usually, there may be no observations every minute (for several series the frequency is usually "irregular" within a day/days). And though observations may be sparse (not collected or disseminated every minute), missing values do not need to be given for the minutes when no observations exist: in any case the time stamp determines when an observation is observed.</common:Description>
+        </structure:Code>
+        <structure:Code id="B">
+          <common:Name xml:lang="en">Daily or businessweek</common:Name>
+          <common:Description xml:lang="en">Similar to "daily", however there are no observations for Saturdays and Sundays (so, neither "missing values" nor "numeric values" should be provided for Saturday and Sunday). This treatment ("business") is one way to deal with such cases, but it is not the only option. Such a time series could alternatively be considered daily ("D"), thus, with missing values in the weekend.</common:Description>
+        </structure:Code>
+        <structure:Code id="W">
+          <common:Name xml:lang="en">Weekly</common:Name>
+          <common:Description xml:lang="en">To be used for data collected or disseminated every week.</common:Description>
+        </structure:Code>
+        <structure:Code id="S">
+          <common:Name xml:lang="en">Half-yearly, semester</common:Name>
+          <common:Description xml:lang="en">To be used for data collected or disseminated every semester.</common:Description>
+        </structure:Code>
+        <structure:Code id="A">
+          <common:Name xml:lang="en">Annual</common:Name>
+          <common:Description xml:lang="en">To be used for data collected or disseminated every year.</common:Description>
+        </structure:Code>
+        <structure:Code id="M">
+          <common:Name xml:lang="en">Monthly</common:Name>
+          <common:Description xml:lang="en">To be used for data collected or disseminated every month.</common:Description>
+        </structure:Code>
+        <structure:Code id="Q">
+          <common:Name xml:lang="en">Quarterly</common:Name>
+          <common:Description xml:lang="en">To be used for data collected or disseminated every quarter.</common:Description>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_OBS_STATUS" agencyID="ABS" version="1.0.0" isFinal="true">
+        <common:Name xml:lang="en">Observation Status</common:Name>
+        <structure:Code id="k">
+          <common:Name xml:lang="en">estimate</common:Name>
+        </structure:Code>
+        <structure:Code id="l">
+          <common:Name xml:lang="en">not elsewhere included</common:Name>
+        </structure:Code>
+        <structure:Code id="m">
+          <common:Name xml:lang="en">not recorded</common:Name>
+        </structure:Code>
+        <structure:Code id="n">
+          <common:Name xml:lang="en">not available for publication but included in totals where applicable, unless otherwise indicated</common:Name>
+        </structure:Code>
+        <structure:Code id="o">
+          <common:Name xml:lang="en">nil or rounded to zero, including null cells</common:Name>
+        </structure:Code>
+        <structure:Code id="p">
+          <common:Name xml:lang="en">preliminary figure or series subject to revision</common:Name>
+        </structure:Code>
+        <structure:Code id="q">
+          <common:Name xml:lang="en">not available</common:Name>
+        </structure:Code>
+        <structure:Code id="r">
+          <common:Name xml:lang="en">revised</common:Name>
+        </structure:Code>
+        <structure:Code id="s">
+          <common:Name xml:lang="en">not currently available due to break in time series</common:Name>
+        </structure:Code>
+        <structure:Code id="t">
+          <common:Name xml:lang="en">not yet available</common:Name>
+        </structure:Code>
+        <structure:Code id="u">
+          <common:Name xml:lang="en">not applicable</common:Name>
+        </structure:Code>
+        <structure:Code id="v">
+          <common:Name xml:lang="en">not available for publication but included in totals where applicable, unless otherwise indicated</common:Name>
+        </structure:Code>
+        <structure:Code id="w">
+          <common:Name xml:lang="en">estimate is subject to sampling variability too high for most practical purposes</common:Name>
+        </structure:Code>
+        <structure:Code id="x">
+          <common:Name xml:lang="en">estimate has a relative standard error of 10% to less than 25% and should be used with caution</common:Name>
+        </structure:Code>
+        <structure:Code id="y">
+          <common:Name xml:lang="en">estimate has a relative standard error between 25% and 50% and should be used with caution</common:Name>
+        </structure:Code>
+        <structure:Code id="z">
+          <common:Name xml:lang="en">estimate has a relative standard error greater than 50% and is considered too unreliable for general use</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_SU_CAT" agencyID="ABS" version="1.0.0" isFinal="true">
+        <common:Name xml:lang="en">SU Category</common:Name>
+        <structure:Code id="10">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">1</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Supply table</common:Name>
+        </structure:Code>
+        <structure:Code id="20">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">2</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Use table</common:Name>
+        </structure:Code>
+        <structure:Code id="30">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">3</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Income table</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_SU_IC" agencyID="ABS" version="1.1.0" isFinal="true">
+        <common:Name xml:lang="en">SU Industry Code</common:Name>
+        <structure:Code id="IND">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">1</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Industry</common:Name>
+        </structure:Code>
+        <structure:Code id="910">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">66</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Gambling, sports and recreation</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="890">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">65</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Heritage and creative and performing arts</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="840">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">64</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Health care and social assistance</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="803">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">63</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Arts, Sports, Adult and Other Education Services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="802">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">62</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Technical, Vocational and Tertiary Education Services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="801">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">61</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Primary and Secondary Education Services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="770">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">60</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Public order and safety</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="760">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">59</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Defence</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="750">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">58</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Government administration and regulatory services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="720">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">57</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Administration and support services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="700">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">56</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Computer systems design and related services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="690">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">55</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Professional, scientific and technical services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="672">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">54</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Other property operators and real estate services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="671">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">53</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Ownership of dwellings</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="670">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">530</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Imputed rent for owner-occupiers</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="660">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">52</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Rental and hiring services (except real estate)</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="640">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">51</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Auxiliary finance and insurance services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="630">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">50</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Insurance and superannuation funds</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="620">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">49</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Finance</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="600">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">48</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Library and other information services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="940">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">67</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Repair and maintenance</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="580">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">47</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Telecommunications services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="950">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">68</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Personal and other services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="MGS_SUT">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">70</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Imports</common:Name>
+        </structure:Code>
+        <structure:Code id="F_DEMAND">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">81</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Final demand</common:Name>
+        </structure:Code>
+        <structure:Code id="RXP_SUT">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">89</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Reexports</common:Name>
+          <structure:Parent>
+            <Ref id="F_DEMAND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="XGS_SUT">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">88</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Exports</common:Name>
+          <structure:Parent>
+            <Ref id="F_DEMAND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="INV_SUT">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">87</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Change in inventories</common:Name>
+          <structure:Parent>
+            <Ref id="F_DEMAND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="GFCF_GGOD">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">86</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Gross fixed capital formation - GG</common:Name>
+          <structure:Parent>
+            <Ref id="F_DEMAND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="GFCF_GC">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">85</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Gross fixed capital formation - public corporations</common:Name>
+          <structure:Parent>
+            <Ref id="F_DEMAND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="GFCF_PR">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">84</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Gross fixed capital formation - private</common:Name>
+          <structure:Parent>
+            <Ref id="F_DEMAND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="GFCE_SU">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">83</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Government final consumption expenditure</common:Name>
+          <structure:Parent>
+            <Ref id="F_DEMAND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="HFCE_TOT">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">82</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Household final consumption expenditure</common:Name>
+          <structure:Parent>
+            <Ref id="F_DEMAND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="SUP_PPR">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">80</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Total supply at purchasers prices</common:Name>
+        </structure:Code>
+        <structure:Code id="TLS_PDT">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">79</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Taxes less subsidies on products</common:Name>
+        </structure:Code>
+        <structure:Code id="MTS">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">72</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Margins</common:Name>
+        </structure:Code>
+        <structure:Code id="TOT_MAR">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">78</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Total Margins</common:Name>
+          <structure:Parent>
+            <Ref id="MTS" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="GAS_MAR">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">77</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Gas Margins</common:Name>
+          <structure:Parent>
+            <Ref id="MTS" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ELE_MAR">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">76</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Electricity Margins</common:Name>
+          <structure:Parent>
+            <Ref id="MTS" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="WOTWRE_MAR">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">75</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Wholesale Margins</common:Name>
+          <structure:Parent>
+            <Ref id="MTS" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RETFNB_MAR">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">74</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Retail Margins</common:Name>
+          <structure:Parent>
+            <Ref id="MTS" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="TRNMIS_MAR">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">73</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Transport Margins</common:Name>
+          <structure:Parent>
+            <Ref id="MTS" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="SUP_BPR">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">71</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Total supply at Basic prices</common:Name>
+        </structure:Code>
+        <structure:Code id="TOT">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">69</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Total Australian production at basic prices</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="TFD_PPR">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">90</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Total final demand Purchasers prices</common:Name>
+          <structure:Parent>
+            <Ref id="F_DEMAND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="570">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">46</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Internet publishing and broadcasting, internet service providers and data processing services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="550">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">44</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Motion picture and sound recording</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="210">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">20</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Primary metal and metal product manufacturing</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="200">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">19</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Non-metallic mineral product manufacturing</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="190">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">18</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Polymer and rubber product manufacturing</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="180">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">17</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Chemical manufacturing</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="170">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">16</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Petroleum and coal product manufacturing</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="160">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">15</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Printing (including the reproduction of recorded media)</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="150">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">14</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Pulp, paper and converted paper product manufacturing</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="140">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">13</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Wood product manufacturing</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="130">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">12</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Textiles, leather, clothing and footwear manufacturing</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="120">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">11</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Beverage and tobacco product manufacturing</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="110">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">10</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Food product manufacturing</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="100">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">9</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Exploration and mining support services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="090">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">8</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Non-metallic minerals</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="082">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">7</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Non-ferrous metallic minerals</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="081">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">6</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Iron ore</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="070">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">5</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Oil and gas extraction</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="060">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">4</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Coal mining</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="020">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">3</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Forestry, aquaculture, fishing, hunting, trapping and services to agriculture, forestry and fishing</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="010">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">2</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Agriculture</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="220">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">21</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Fabricated metal product manufacturing</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="560">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">45</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Broadcasting (except Internet)</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="230">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">22</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Transport equipment manufacturing</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="250">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">24</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Furniture and other manufacturing</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="540">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">43</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Publishing (except internet and music publishing)</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="520">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">42</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Transport support, warehousing and storage services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="510">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">41</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Postal, courier pick-up and delivery services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="490">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">40</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Air and space transport</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="480">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">39</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Water, pipeline and other transport</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="470">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">38</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Rail transport</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="460">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">37</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Road transport</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="450">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">36</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Food and beverage services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="440">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">35</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Accommodation</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="390">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">34</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Retail trade</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="330">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">33</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Wholesale trade</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="320">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">32</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Construction services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="310">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">31</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Heavy and civil engineering construction</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="302">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">30</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Non-residential building construction</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="301">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">29</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Residential building construction</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="290">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">28</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Waste collection, treatment and disposal services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="280">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">27</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Water supply, sewerage and drainage services</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="270">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">26</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Gas supply</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="260">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">25</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Electricity supply</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="240">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">23</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Other machinery and equipment manufacturing</common:Name>
+          <structure:Parent>
+            <Ref id="IND" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="UPI_PPRT">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">91</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Total use and primary inputs. Purchases prices</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_SU_PG" agencyID="ABS" version="1.1.0" isFinal="true">
+        <common:Name xml:lang="en">SU Product Group</common:Name>
+        <structure:Code id="0101">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">1</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Sheep, Grains, Beef and Dairy Cattle</common:Name>
+        </structure:Code>
+        <structure:Code id="0102">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">2</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Poultry and Other Livestock</common:Name>
+        </structure:Code>
+        <structure:Code id="0103">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">3</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Other Agriculture</common:Name>
+        </structure:Code>
+        <structure:Code id="0201">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">4</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Aquaculture</common:Name>
+        </structure:Code>
+        <structure:Code id="0301">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">5</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Forestry and Logging</common:Name>
+        </structure:Code>
+        <structure:Code id="0401">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">6</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Fishing, hunting and trapping</common:Name>
+        </structure:Code>
+        <structure:Code id="0501">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">7</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Agriculture, Forestry and Fishing Support Services</common:Name>
+        </structure:Code>
+        <structure:Code id="0601">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">8</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Coal mining</common:Name>
+        </structure:Code>
+        <structure:Code id="0701">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">9</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Oil and gas extraction</common:Name>
+        </structure:Code>
+        <structure:Code id="0801">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">10</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Iron Ore Mining</common:Name>
+        </structure:Code>
+        <structure:Code id="0802">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">11</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Non Ferrous Metal Ore Mining</common:Name>
+        </structure:Code>
+        <structure:Code id="0901">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">12</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Non Metallic Mineral Mining</common:Name>
+        </structure:Code>
+        <structure:Code id="1001">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">13</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Exploration and Mining Support Services</common:Name>
+        </structure:Code>
+        <structure:Code id="1101">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">14</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Meat and Meat product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1102">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">15</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Processed Seafood Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1103">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">16</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Dairy Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1104">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">17</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Fruit and Vegetable Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1105">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">18</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Oils and Fats Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1106">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">19</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Grain Mill and Cereal Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1107">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">20</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Bakery Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1108">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">21</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Sugar and Confectionery Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1109">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">22</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Other Food Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1201">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">23</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Soft Drinks, Cordials and Syrup Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1202">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">24</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Beer Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1205">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">25</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Wine, spirits and tobacco</common:Name>
+        </structure:Code>
+        <structure:Code id="1301">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">26</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Textile Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1302">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">27</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Tanned Leather, Dressed Fur and Leather Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1303">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">28</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Textile Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1304">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">29</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Knitted Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1305">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">30</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Clothing Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1306">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">31</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Footwear Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1401">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">32</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Sawmill Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1402">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">33</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Other Wood Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1501">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">34</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Pulp, Paper and Paperboard Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1502">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">35</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Paper Stationery and Other Converted Paper Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1601">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">36</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Printing (including the reproduction of recorded media)</common:Name>
+        </structure:Code>
+        <structure:Code id="1701">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">37</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Petroleum and Coal Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1801">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">38</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Human Pharmaceutical and Medicinal Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1802">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">39</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Veterinary Pharmaceutical and Medicinal Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1803">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">40</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Basic Chemical Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1804">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">41</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Cleaning Compounds and Toiletry Preparation Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1901">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">42</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Polymer Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="1902">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">43</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Natural Rubber Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2001">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">44</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Glass and Glass Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2002">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">45</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Ceramic Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2003">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">46</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Cement, Lime and Ready-Mixed Concrete Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2004">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">47</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Plaster and Concrete Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2005">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">48</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Other Non-Metallic Mineral Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2101">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">49</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Iron and Steel Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2102">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">50</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Basic Non-Ferrous Metal Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2201">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">51</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Forged Iron and Steel Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2202">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">52</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Structural Metal Product Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2203">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">53</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Metal Containers and Other Sheet Metal Product manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2204">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">54</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Other Fabricated Metal Product manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2301">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">55</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Motor Vehicles and Parts; Other Transport Equipment manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2302">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">56</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Ships and Boat Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2303">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">57</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Railway Rolling Stock Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2304">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">58</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Aircraft Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2401">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">59</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Professional, Scientific, Computer and Electronic Equipment Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2403">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">60</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Electrical Equipment Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2404">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">61</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Domestic Appliance Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2405">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">62</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Specialised and other Machinery and Equipment Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2501">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">63</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Furniture Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="2502">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">64</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Other Manufactured Products</common:Name>
+        </structure:Code>
+        <structure:Code id="2601">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">65</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Electricity Generation</common:Name>
+        </structure:Code>
+        <structure:Code id="2605">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">66</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Electricity Transmission, Distribution, On Selling and Electricity Market Operation</common:Name>
+        </structure:Code>
+        <structure:Code id="2701">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">67</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Gas Supply</common:Name>
+        </structure:Code>
+        <structure:Code id="2801">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">68</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Water Supply, Sewerage and Drainage Services</common:Name>
+        </structure:Code>
+        <structure:Code id="2901">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">69</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Waste Collection, Treatment and Disposal Services</common:Name>
+        </structure:Code>
+        <structure:Code id="3001">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">70</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Residential Building Construction</common:Name>
+        </structure:Code>
+        <structure:Code id="3002">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">71</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Non-Residential Building Construction</common:Name>
+        </structure:Code>
+        <structure:Code id="3101">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">72</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Heavy and Civil Engineering Construction</common:Name>
+        </structure:Code>
+        <structure:Code id="3201">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">73</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Construction Services</common:Name>
+        </structure:Code>
+        <structure:Code id="3301">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">74</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Wholesale Trade</common:Name>
+        </structure:Code>
+        <structure:Code id="3901">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">75</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Retail Trade</common:Name>
+        </structure:Code>
+        <structure:Code id="4401">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">76</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Accommodation</common:Name>
+        </structure:Code>
+        <structure:Code id="4501">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">77</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Food and Beverage Services</common:Name>
+        </structure:Code>
+        <structure:Code id="4601">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">78</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Road Transport</common:Name>
+        </structure:Code>
+        <structure:Code id="4701">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">79</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Rail Transport</common:Name>
+        </structure:Code>
+        <structure:Code id="4801">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">80</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Water, Pipeline and Other Transport</common:Name>
+        </structure:Code>
+        <structure:Code id="4901">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">81</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Air and Space Transport</common:Name>
+        </structure:Code>
+        <structure:Code id="5101">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">82</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Postal and Courier Pick-up and Delivery Service</common:Name>
+        </structure:Code>
+        <structure:Code id="5201">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">83</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Transport Support services and storage</common:Name>
+        </structure:Code>
+        <structure:Code id="5401">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">84</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Publishing (except Internet and Music Publishing)</common:Name>
+        </structure:Code>
+        <structure:Code id="5501">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">85</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Motion Picture and Sound Recording</common:Name>
+        </structure:Code>
+        <structure:Code id="5601">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">86</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Broadcasting (except Internet)</common:Name>
+        </structure:Code>
+        <structure:Code id="5701">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">87</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Internet Service Providers, Internet Publishing and Broadcasting, Websearch Portals and Data Processing</common:Name>
+        </structure:Code>
+        <structure:Code id="5801">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">88</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Telecommunication Services</common:Name>
+        </structure:Code>
+        <structure:Code id="6001">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">89</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Library and Other Information Services</common:Name>
+        </structure:Code>
+        <structure:Code id="6201">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">90</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Finance</common:Name>
+        </structure:Code>
+        <structure:Code id="6301">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">91</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Insurance and Superannuation Funds</common:Name>
+        </structure:Code>
+        <structure:Code id="6401">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">92</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Auxiliary Finance and Insurance Services</common:Name>
+        </structure:Code>
+        <structure:Code id="6601">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">92</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Rental and Hiring Services (except Real Estate)</common:Name>
+        </structure:Code>
+        <structure:Code id="6701">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">94</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Actual Rent for Housing</common:Name>
+        </structure:Code>
+        <structure:Code id="6702">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">95</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Non-Residential Property Operators and Real Estate Services</common:Name>
+        </structure:Code>
+        <structure:Code id="6901">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">96</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Professional, Scientific and Technical Services</common:Name>
+        </structure:Code>
+        <structure:Code id="7001">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">97</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Computer Systems Design and Related Services</common:Name>
+        </structure:Code>
+        <structure:Code id="7210">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">98</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Employment, Travel Agency and Other Administrative Services</common:Name>
+        </structure:Code>
+        <structure:Code id="7310">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">99</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Building Cleaning, Pest Control and Other Support Services</common:Name>
+        </structure:Code>
+        <structure:Code id="7501">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">100</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Public Administration and Regulatory Services</common:Name>
+        </structure:Code>
+        <structure:Code id="7601">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">101</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Defence</common:Name>
+        </structure:Code>
+        <structure:Code id="7701">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">102</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Public Order and Safety</common:Name>
+        </structure:Code>
+        <structure:Code id="8010">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">103</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Primary and Secondary Education Services (incl Pre-Schools and Special Schools)</common:Name>
+        </structure:Code>
+        <structure:Code id="8110">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">104</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Technical, Vocational and Tertiary Education Services (incl undergraduate and postgraduate)</common:Name>
+        </structure:Code>
+        <structure:Code id="8210">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">105</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Arts, Sports, Adult and Other Education Services (incl community education)</common:Name>
+        </structure:Code>
+        <structure:Code id="8401">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">106</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Health Care Services</common:Name>
+        </structure:Code>
+        <structure:Code id="8601">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">107</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Residential Care and Social Assistance Services</common:Name>
+        </structure:Code>
+        <structure:Code id="8901">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">108</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Heritage, Creative and Performing Arts</common:Name>
+        </structure:Code>
+        <structure:Code id="9101">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">109</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Sports and Recreation</common:Name>
+        </structure:Code>
+        <structure:Code id="9201">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">110</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Gambling</common:Name>
+        </structure:Code>
+        <structure:Code id="9401">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">111</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Automotive Repair and Maintenance</common:Name>
+        </structure:Code>
+        <structure:Code id="9402">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">112</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Other Repair and Maintenance</common:Name>
+        </structure:Code>
+        <structure:Code id="9501">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">113</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Personal Services</common:Name>
+        </structure:Code>
+        <structure:Code id="9502">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">114</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Other Services</common:Name>
+        </structure:Code>
+        <structure:Code id="TOT">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">115</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Total</common:Name>
+        </structure:Code>
+        <structure:Code id="WSSESC_SUT">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">116</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Compensation of employees</common:Name>
+        </structure:Code>
+        <structure:Code id="GOVPRI_GOS">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">117</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Gross operating surplus</common:Name>
+        </structure:Code>
+        <structure:Code id="TLS_PDT">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">118</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Taxes less subsidies on products</common:Name>
+        </structure:Code>
+        <structure:Code id="TLS_PDN">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">119</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Taxes less subsidies on production</common:Name>
+        </structure:Code>
+        <structure:Code id="TOT_PRI">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">120</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Total primary inputs</common:Name>
+        </structure:Code>
+        <structure:Code id="6700">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>ORDER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">93</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Imputed Rent for Owner-Occupiers</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_UNIT_MEASURE" agencyID="ABS" version="1.0.0" isFinal="true">
+        <common:Name xml:lang="en">Unit of Measure</common:Name>
+        <structure:Code id="AUD">
+          <common:Name xml:lang="en">Australian Dollars</common:Name>
+        </structure:Code>
+        <structure:Code id="NUM">
+          <common:Name xml:lang="en">Number</common:Name>
+        </structure:Code>
+        <structure:Code id="PCT">
+          <common:Name xml:lang="en">Percent</common:Name>
+        </structure:Code>
+        <structure:Code id="PCT_PTS">
+          <common:Name xml:lang="en">Percentage Points</common:Name>
+        </structure:Code>
+        <structure:Code id="PROP">
+          <common:Name xml:lang="en">Proportion</common:Name>
+        </structure:Code>
+        <structure:Code id="IN">
+          <common:Name xml:lang="en">Index Numbers</common:Name>
+        </structure:Code>
+        <structure:Code id="IP">
+          <common:Name xml:lang="en">Index Points</common:Name>
+        </structure:Code>
+        <structure:Code id="VAR">
+          <common:Name xml:lang="en">Variance</common:Name>
+        </structure:Code>
+        <structure:Code id="NA">
+          <common:Name xml:lang="en">Not Applicable</common:Name>
+        </structure:Code>
+        <structure:Code id="PSNS">
+          <common:Name xml:lang="en">Persons</common:Name>
+        </structure:Code>
+        <structure:Code id="PSN_YR">
+          <common:Name xml:lang="en">Person Years</common:Name>
+        </structure:Code>
+        <structure:Code id="JOB">
+          <common:Name xml:lang="en">Jobs</common:Name>
+        </structure:Code>
+        <structure:Code id="M_G">
+          <common:Name xml:lang="en">Milligrams</common:Name>
+        </structure:Code>
+        <structure:Code id="G">
+          <common:Name xml:lang="en">Grams</common:Name>
+        </structure:Code>
+        <structure:Code id="KG">
+          <common:Name xml:lang="en">Kilograms</common:Name>
+        </structure:Code>
+        <structure:Code id="CT">
+          <common:Name xml:lang="en">Carat (metric)</common:Name>
+        </structure:Code>
+        <structure:Code id="MCT">
+          <common:Name xml:lang="en">Megacarat (metric)</common:Name>
+        </structure:Code>
+        <structure:Code id="T">
+          <common:Name xml:lang="en">Tonnes</common:Name>
+        </structure:Code>
+        <structure:Code id="MT">
+          <common:Name xml:lang="en">Megatonnes</common:Name>
+        </structure:Code>
+        <structure:Code id="GT">
+          <common:Name xml:lang="en">Gigatonnes</common:Name>
+        </structure:Code>
+        <structure:Code id="TKM">
+          <common:Name xml:lang="en">Tonnes-kilometres</common:Name>
+        </structure:Code>
+        <structure:Code id="M_M">
+          <common:Name xml:lang="en">Millimetres</common:Name>
+        </structure:Code>
+        <structure:Code id="M">
+          <common:Name xml:lang="en">Metres</common:Name>
+        </structure:Code>
+        <structure:Code id="KM">
+          <common:Name xml:lang="en">Kilometres</common:Name>
+        </structure:Code>
+        <structure:Code id="SQM">
+          <common:Name xml:lang="en">Square Metres</common:Name>
+        </structure:Code>
+        <structure:Code id="SQKM">
+          <common:Name xml:lang="en">Square Kilometres</common:Name>
+        </structure:Code>
+        <structure:Code id="HA">
+          <common:Name xml:lang="en">Hectares</common:Name>
+        </structure:Code>
+        <structure:Code id="CBM">
+          <common:Name xml:lang="en">Cubic Metres</common:Name>
+        </structure:Code>
+        <structure:Code id="L">
+          <common:Name xml:lang="en">Litres</common:Name>
+        </structure:Code>
+        <structure:Code id="KL">
+          <common:Name xml:lang="en">Kilolitres</common:Name>
+        </structure:Code>
+        <structure:Code id="ML">
+          <common:Name xml:lang="en">Megalitres</common:Name>
+        </structure:Code>
+        <structure:Code id="GL">
+          <common:Name xml:lang="en">Gigalitres</common:Name>
+        </structure:Code>
+        <structure:Code id="A">
+          <common:Name xml:lang="en">Ampere</common:Name>
+        </structure:Code>
+        <structure:Code id="KVA">
+          <common:Name xml:lang="en">Kilovolt Amperes</common:Name>
+        </structure:Code>
+        <structure:Code id="W">
+          <common:Name xml:lang="en">Watts</common:Name>
+        </structure:Code>
+        <structure:Code id="KW">
+          <common:Name xml:lang="en">Kilowatts</common:Name>
+        </structure:Code>
+        <structure:Code id="KWH">
+          <common:Name xml:lang="en">Kilowatt Hours</common:Name>
+        </structure:Code>
+        <structure:Code id="GWH">
+          <common:Name xml:lang="en">Gigawatt Hours</common:Name>
+        </structure:Code>
+        <structure:Code id="J">
+          <common:Name xml:lang="en">Joules</common:Name>
+        </structure:Code>
+        <structure:Code id="KJ">
+          <common:Name xml:lang="en">Kilojoules</common:Name>
+        </structure:Code>
+        <structure:Code id="MJ">
+          <common:Name xml:lang="en">Megajoules</common:Name>
+        </structure:Code>
+        <structure:Code id="GJ">
+          <common:Name xml:lang="en">Gigajoules</common:Name>
+        </structure:Code>
+        <structure:Code id="TJ">
+          <common:Name xml:lang="en">Terajoules</common:Name>
+        </structure:Code>
+        <structure:Code id="PJ">
+          <common:Name xml:lang="en">Petajoules</common:Name>
+        </structure:Code>
+        <structure:Code id="C">
+          <common:Name xml:lang="en">Coulumb</common:Name>
+        </structure:Code>
+        <structure:Code id="CD">
+          <common:Name xml:lang="en">Candela</common:Name>
+        </structure:Code>
+        <structure:Code id="K">
+          <common:Name xml:lang="en">Kelvin</common:Name>
+        </structure:Code>
+        <structure:Code id="DEG_CEL">
+          <common:Name xml:lang="en">Degrees Celsius</common:Name>
+        </structure:Code>
+        <structure:Code id="S">
+          <common:Name xml:lang="en">Seconds</common:Name>
+        </structure:Code>
+        <structure:Code id="MIN">
+          <common:Name xml:lang="en">Minutes</common:Name>
+        </structure:Code>
+        <structure:Code id="HR">
+          <common:Name xml:lang="en">Hours</common:Name>
+        </structure:Code>
+        <structure:Code id="DAY">
+          <common:Name xml:lang="en">Days</common:Name>
+        </structure:Code>
+        <structure:Code id="WK">
+          <common:Name xml:lang="en">Weeks</common:Name>
+        </structure:Code>
+        <structure:Code id="MTH">
+          <common:Name xml:lang="en">Months</common:Name>
+        </structure:Code>
+        <structure:Code id="YR">
+          <common:Name xml:lang="en">Years</common:Name>
+        </structure:Code>
+        <structure:Code id="B">
+          <common:Name xml:lang="en">Bytes</common:Name>
+        </structure:Code>
+        <structure:Code id="KB">
+          <common:Name xml:lang="en">Kilobytes</common:Name>
+        </structure:Code>
+        <structure:Code id="MB">
+          <common:Name xml:lang="en">Megabytes</common:Name>
+        </structure:Code>
+        <structure:Code id="GB">
+          <common:Name xml:lang="en">Gigabytes</common:Name>
+        </structure:Code>
+        <structure:Code id="TB">
+          <common:Name xml:lang="en">Terabytes</common:Name>
+        </structure:Code>
+        <structure:Code id="DEG">
+          <common:Name xml:lang="en">Degrees</common:Name>
+        </structure:Code>
+        <structure:Code id="RAD">
+          <common:Name xml:lang="en">Radians</common:Name>
+        </structure:Code>
+        <structure:Code id="DOZ">
+          <common:Name xml:lang="en">Dozen</common:Name>
+        </structure:Code>
+        <structure:Code id="PR">
+          <common:Name xml:lang="en">Pairs</common:Name>
+        </structure:Code>
+        <structure:Code id="ROOM">
+          <common:Name xml:lang="en">Rooms</common:Name>
+        </structure:Code>
+        <structure:Code id="SITE">
+          <common:Name xml:lang="en">Sites</common:Name>
+        </structure:Code>
+        <structure:Code id="BUNDLE">
+          <common:Name xml:lang="en">Bundles</common:Name>
+        </structure:Code>
+        <structure:Code id="CARTON">
+          <common:Name xml:lang="en">Cartons</common:Name>
+        </structure:Code>
+        <structure:Code id="UNK">
+          <common:Name xml:lang="en">Unknown</common:Name>
+        </structure:Code>
+        <structure:Code id="GBP">
+          <common:Name xml:lang="en">Pound Sterling</common:Name>
+        </structure:Code>
+        <structure:Code id="CENT">
+          <common:Name xml:lang="en">Cents</common:Name>
+        </structure:Code>
+        <structure:Code id="FAM">
+          <common:Name xml:lang="en">Families</common:Name>
+        </structure:Code>
+        <structure:Code id="HH">
+          <common:Name xml:lang="en">Households</common:Name>
+        </structure:Code>
+        <structure:Code id="RATE">
+          <common:Name xml:lang="en">Rate</common:Name>
+        </structure:Code>
+        <structure:Code id="AUD_PER_EMP">
+          <common:Name xml:lang="en">Australian Dollars per Employee</common:Name>
+        </structure:Code>
+        <structure:Code id="AUD_PER_PSN">
+          <common:Name xml:lang="en">Australian Dollars per Person</common:Name>
+        </structure:Code>
+        <structure:Code id="AUD_PER_KL">
+          <common:Name xml:lang="en">Australian Dollars per Kilolitre</common:Name>
+        </structure:Code>
+        <structure:Code id="AUD_PER_KG">
+          <common:Name xml:lang="en">Australian Dollars per Kilogram</common:Name>
+        </structure:Code>
+        <structure:Code id="AUD_PER_T">
+          <common:Name xml:lang="en">Australian Dollars per Tonne</common:Name>
+        </structure:Code>
+        <structure:Code id="AUD_PER_CT">
+          <common:Name xml:lang="en">Australian Dollars per Carat</common:Name>
+        </structure:Code>
+        <structure:Code id="AUD_PER_SQM">
+          <common:Name xml:lang="en">Australian Dollars per Square Metre</common:Name>
+        </structure:Code>
+        <structure:Code id="AUD_PER_1000CBM">
+          <common:Name xml:lang="en">Australian Dollars per thousand cubic metres</common:Name>
+        </structure:Code>
+        <structure:Code id="L_PER_100KM">
+          <common:Name xml:lang="en">Litres per 100 Kilometres</common:Name>
+        </structure:Code>
+        <structure:Code id="L_PER_KM">
+          <common:Name xml:lang="en">Litres per Kilometre</common:Name>
+        </structure:Code>
+        <structure:Code id="ML_PER_HA">
+          <common:Name xml:lang="en">Megalitres per Hectare</common:Name>
+        </structure:Code>
+        <structure:Code id="T_PER_HA">
+          <common:Name xml:lang="en">Tonnes per Hectare</common:Name>
+        </structure:Code>
+        <structure:Code id="PSNS_PER_SQKM">
+          <common:Name xml:lang="en">Persons per Square Kilometre</common:Name>
+        </structure:Code>
+        <structure:Code id="KG_PER_TREE">
+          <common:Name xml:lang="en">Kilograms per Tree</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_UNIT_MULT" agencyID="ABS" version="1.0.0" isFinal="true">
+        <common:Name xml:lang="en">Unit Multiplier</common:Name>
+        <structure:Code id="0">
+          <common:Name xml:lang="en">Units</common:Name>
+        </structure:Code>
+        <structure:Code id="1">
+          <common:Name xml:lang="en">Tens</common:Name>
+        </structure:Code>
+        <structure:Code id="2">
+          <common:Name xml:lang="en">Hundreds</common:Name>
+        </structure:Code>
+        <structure:Code id="3">
+          <common:Name xml:lang="en">Thousands</common:Name>
+        </structure:Code>
+        <structure:Code id="4">
+          <common:Name xml:lang="en">Tens of thousands</common:Name>
+        </structure:Code>
+        <structure:Code id="5">
+          <common:Name xml:lang="en">Hundreds of thousands</common:Name>
+        </structure:Code>
+        <structure:Code id="6">
+          <common:Name xml:lang="en">Millions</common:Name>
+        </structure:Code>
+        <structure:Code id="7">
+          <common:Name xml:lang="en">Tens of millions</common:Name>
+        </structure:Code>
+        <structure:Code id="8">
+          <common:Name xml:lang="en">Hundreds of millions</common:Name>
+        </structure:Code>
+        <structure:Code id="9">
+          <common:Name xml:lang="en">Billions</common:Name>
+        </structure:Code>
+        <structure:Code id="10">
+          <common:Name xml:lang="en">Tens of billions</common:Name>
+        </structure:Code>
+        <structure:Code id="11">
+          <common:Name xml:lang="en">Hundreds of billions</common:Name>
+        </structure:Code>
+        <structure:Code id="12">
+          <common:Name xml:lang="en">Trillions</common:Name>
+        </structure:Code>
+        <structure:Code id="13">
+          <common:Name xml:lang="en">Tens of trillions</common:Name>
+        </structure:Code>
+        <structure:Code id="14">
+          <common:Name xml:lang="en">Hundred of trillions</common:Name>
+        </structure:Code>
+        <structure:Code id="15">
+          <common:Name xml:lang="en">Quadrillions</common:Name>
+        </structure:Code>
+        <structure:Code id="-1">
+          <common:Name xml:lang="en">Tenths</common:Name>
+        </structure:Code>
+        <structure:Code id="-2">
+          <common:Name xml:lang="en">Hundredths</common:Name>
+        </structure:Code>
+        <structure:Code id="-3">
+          <common:Name xml:lang="en">Thousandths</common:Name>
+        </structure:Code>
+        <structure:Code id="-4">
+          <common:Name xml:lang="en">Ten-thousandths</common:Name>
+        </structure:Code>
+        <structure:Code id="-5">
+          <common:Name xml:lang="en">Hundred-thousandths</common:Name>
+        </structure:Code>
+        <structure:Code id="-6">
+          <common:Name xml:lang="en">Millionths</common:Name>
+        </structure:Code>
+        <structure:Code id="-7">
+          <common:Name xml:lang="en">Ten-millionths</common:Name>
+        </structure:Code>
+        <structure:Code id="-8">
+          <common:Name xml:lang="en">Hundred-millionths</common:Name>
+        </structure:Code>
+        <structure:Code id="-9">
+          <common:Name xml:lang="en">Billionths</common:Name>
+        </structure:Code>
+        <structure:Code id="-10">
+          <common:Name xml:lang="en">Ten-billionths</common:Name>
+        </structure:Code>
+        <structure:Code id="-11">
+          <common:Name xml:lang="en">Hundred-billionths</common:Name>
+        </structure:Code>
+        <structure:Code id="-12">
+          <common:Name xml:lang="en">Trillionths</common:Name>
+        </structure:Code>
+        <structure:Code id="-13">
+          <common:Name xml:lang="en">Ten-trillionths</common:Name>
+        </structure:Code>
+        <structure:Code id="-14">
+          <common:Name xml:lang="en">Hundred-trillionths</common:Name>
+        </structure:Code>
+        <structure:Code id="-15">
+          <common:Name xml:lang="en">Quadrillionths</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+    </structure:Codelists>
+    <structure:Concepts>
+      <structure:ConceptScheme id="CS_ATTRIBUTE" agencyID="ABS" version="1.0.0" isFinal="true">
+        <common:Name xml:lang="en">Attribute Concepts</common:Name>
+        <structure:Concept id="UNIT_MEASURE">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CONTEXT</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">If a unit multiplier exists the data is recorded according to the combination of the unit multiplier and the unit of measure.</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Unit of Measure</common:Name>
+          <common:Description xml:lang="en">Base unit in which the observation value is expressed.</common:Description>
+        </structure:Concept>
+        <structure:Concept id="UNIT_MULT">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CONTEXT</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">Codes for unit of multiplier are the exponent in base 10 so that multiplying the observation by 10^UNIT_MULT gives a value expressed in the unit of measure.</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Unit of Multiplier</common:Name>
+          <common:Description xml:lang="en">The multiple of the unit of measure for which the data is expressed.</common:Description>
+        </structure:Concept>
+        <structure:Concept id="OBS_STATUS">
+          <common:Name xml:lang="en">Observation Status</common:Name>
+        </structure:Concept>
+        <structure:Concept id="OBS_COMMENT">
+          <common:Name xml:lang="en">Observation Comment</common:Name>
+        </structure:Concept>
+        <structure:Concept id="REPYEAREND">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CONTEXT</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">The use of reporting year end day also specifies that the reporting period of YYYY-A1 references an earlier period (e.g. 2018-A1 will be equivalent to 2017/18 and not 2018/19).</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Reporting Year End Day</common:Name>
+          <common:Description xml:lang="en">A month day that specifies the ending day of the reporting periods (e.g. YYYY-A1) within the datastucture.</common:Description>
+        </structure:Concept>
+        <structure:Concept id="BASE_PERIOD">
+          <common:Name xml:lang="en">Reference Base Period</common:Name>
+          <common:Description xml:lang="en">Reference Period that the value has been based against.</common:Description>
+        </structure:Concept>
+      </structure:ConceptScheme>
+      <structure:ConceptScheme id="CS_COMMON" agencyID="ABS" version="1.0.0" isFinal="true">
+        <common:Name xml:lang="en">Common Concepts</common:Name>
+        <structure:Concept id="OBS_VALUE">
+          <common:Name xml:lang="en">Observation Value</common:Name>
+          <common:Description xml:lang="en">The observed value of the variable identified by the series dimension values.</common:Description>
+        </structure:Concept>
+        <structure:Concept id="TIME_PERIOD">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CONTEXT</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">The measurement represented by each observation corresponds to either a specific point in time (e.g. a single day) or a period (e.g. a month, quarter, financial or calendar year).</common:AnnotationText>
+            </common:Annotation>
+            <common:Annotation>
+              <common:AnnotationType>QUARTER</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">Quarterly data is reported against the calander year. e.g. "YYYY-Q1" represents the quarter ending March.</common:AnnotationText>
+            </common:Annotation>
+            <common:Annotation>
+              <common:AnnotationType>FINANCIAL_YEAR</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">Time periods matching the "YYYY-MM-DD/P1Y" format represent financial years as the start date of the period followed by the duration of 1 year.</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Time Period</common:Name>
+          <common:Description xml:lang="en">Timespan or point in time for which the observation refers.</common:Description>
+        </structure:Concept>
+        <structure:Concept id="FREQ">
+          <common:Name xml:lang="en">Frequency</common:Name>
+          <common:Description xml:lang="en">Rate at which data is collated.</common:Description>
+        </structure:Concept>
+        <structure:Concept id="MEASURE">
+          <common:Name xml:lang="en">Measure</common:Name>
+        </structure:Concept>
+        <structure:Concept id="TSEST">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>OTHER_LINKS</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Time+Series+Analysis:+The+Basics</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Adjustment Type</common:Name>
+          <common:Description xml:lang="en">An original time series can be decomposed into three components: the trend (the general direction of the series), the seasonal component (systematic, calendar related movements) and the irregular component (unsystematic, short term fluctuations). Seasonally adjusted series are produced by estimating the seasonal component and removing this from the original series. In most economic data the seasonal component is a combination of seasonal influences (e.g. the effect of the weather or social traditions) plus other kinds of calendar related variations such as Chinese New Year and Christmas. The seasonal adjustment methodology takes into account both seasonal and other calendar related factors that evolve over time to reflect changes in activity patterns.</common:Description>
+        </structure:Concept>
+      </structure:ConceptScheme>
+      <structure:ConceptScheme id="CS_SU" agencyID="ABS" version="1.0.0" isFinal="true">
+        <common:Name xml:lang="en">Supply Use Concepts</common:Name>
+        <structure:Concept id="SU_CAT">
+          <common:Name xml:lang="en">SU Category</common:Name>
+        </structure:Concept>
+        <structure:Concept id="SUIC">
+          <common:Name xml:lang="en">SU Industry Code</common:Name>
+        </structure:Concept>
+        <structure:Concept id="SUPG">
+          <common:Name xml:lang="en">SU Product Group</common:Name>
+        </structure:Concept>
+      </structure:ConceptScheme>
+    </structure:Concepts>
+    <structure:DataStructures>
+      <structure:DataStructure id="ABS_SU_TABLE_2025" agencyID="ABS" version="1.0.0" isFinal="true">
+        <common:Name xml:lang="en">Supply Use Table, 2024-25</common:Name>
+        <common:Description xml:lang="en">Supply Use Table, 2024-25</common:Description>
+        <structure:DataStructureComponents>
+          <structure:DimensionList id="DimensionDescriptor">
+            <structure:Dimension id="SUPG" position="1">
+              <structure:ConceptIdentity>
+                <Ref id="SUPG" maintainableParentID="CS_SU" maintainableParentVersion="1.0.0" agencyID="ABS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_SU_PG" version="1.1.0" agencyID="ABS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="SUPC" position="2">
+              <structure:ConceptIdentity>
+                <Ref id="SUIC" maintainableParentID="CS_SU" maintainableParentVersion="1.0.0" agencyID="ABS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_SU_IC" version="1.1.0" agencyID="ABS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="SU_CAT" position="3">
+              <structure:ConceptIdentity>
+                <Ref id="SU_CAT" maintainableParentID="CS_SU" maintainableParentVersion="1.0.0" agencyID="ABS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_SU_CAT" version="1.0.0" agencyID="ABS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="FREQUENCY" position="4">
+              <structure:ConceptIdentity>
+                <Ref id="FREQ" maintainableParentID="CS_COMMON" maintainableParentVersion="1.0.0" agencyID="ABS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_FREQ" version="1.0.0" agencyID="ABS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:TimeDimension id="TIME_PERIOD" position="5">
+              <structure:ConceptIdentity>
+                <Ref id="TIME_PERIOD" maintainableParentID="CS_COMMON" maintainableParentVersion="1.0.0" agencyID="ABS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:TextFormat textType="ObservationalTimePeriod" />
+              </structure:LocalRepresentation>
+            </structure:TimeDimension>
+          </structure:DimensionList>
+          <structure:AttributeList id="AttributeDescriptor">
+            <structure:Attribute id="UNIT_MEASURE" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="OBS_COMMENT" maintainableParentID="CS_ATTRIBUTE" maintainableParentVersion="1.0.0" agencyID="ABS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_UNIT_MEASURE" version="1.0.0" agencyID="ABS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+              <structure:AttributeRelationship>
+                <structure:None />
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="UNIT_MULT" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="UNIT_MULT" maintainableParentID="CS_ATTRIBUTE" maintainableParentVersion="1.0.0" agencyID="ABS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_UNIT_MULT" version="1.0.0" agencyID="ABS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+              <structure:AttributeRelationship>
+                <structure:None />
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="OBS_STATUS" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="OBS_COMMENT" maintainableParentID="CS_ATTRIBUTE" maintainableParentVersion="1.0.0" agencyID="ABS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_OBS_STATUS" version="1.0.0" agencyID="ABS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="OBS_COMMENT" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="OBS_COMMENT" maintainableParentID="CS_ATTRIBUTE" maintainableParentVersion="1.0.0" agencyID="ABS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+          </structure:AttributeList>
+          <structure:MeasureList id="MeasureDescriptor">
+            <structure:PrimaryMeasure id="OBS_VALUE">
+              <structure:ConceptIdentity>
+                <Ref id="OBS_VALUE" maintainableParentID="CS_COMMON" maintainableParentVersion="1.0.0" agencyID="ABS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:TextFormat textType="Double" />
+              </structure:LocalRepresentation>
+            </structure:PrimaryMeasure>
+          </structure:MeasureList>
+        </structure:DataStructureComponents>
+      </structure:DataStructure>
+    </structure:DataStructures>
+    <structure:Constraints>
+      <structure:ContentConstraint id="CR_A_ABS_SU_TABLE_2025" agencyID="ABS" version="1.0.0" validFrom="2026-10-23T01:00:00Z" isFinal="false" type="Actual">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationTitle>A</common:AnnotationTitle>
+            <common:AnnotationType>ReleaseVersion</common:AnnotationType>
+          </common:Annotation>
+          <common:Annotation id="obs_count">
+            <common:AnnotationTitle>576755</common:AnnotationTitle>
+            <common:AnnotationType>sdmx_metrics</common:AnnotationType>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">Availability (A) for ABS_SU_TABLE_2025</common:Name>
+        <structure:ConstraintAttachment>
+          <structure:Dataflow>
+            <Ref id="ABS_SU_TABLE_2025" version="1.0.0" agencyID="ABS" package="datastructure" class="Dataflow" />
+          </structure:Dataflow>
+        </structure:ConstraintAttachment>
+        <structure:CubeRegion include="true">
+          <common:KeyValue id="SUPG">
+            <common:Value>0101</common:Value>
+            <common:Value>0102</common:Value>
+            <common:Value>0103</common:Value>
+            <common:Value>0201</common:Value>
+            <common:Value>0301</common:Value>
+            <common:Value>0401</common:Value>
+            <common:Value>0501</common:Value>
+            <common:Value>0601</common:Value>
+            <common:Value>0701</common:Value>
+            <common:Value>0801</common:Value>
+            <common:Value>0802</common:Value>
+            <common:Value>0901</common:Value>
+            <common:Value>1001</common:Value>
+            <common:Value>1101</common:Value>
+            <common:Value>1102</common:Value>
+            <common:Value>1103</common:Value>
+            <common:Value>1104</common:Value>
+            <common:Value>1105</common:Value>
+            <common:Value>1106</common:Value>
+            <common:Value>1107</common:Value>
+            <common:Value>1108</common:Value>
+            <common:Value>1109</common:Value>
+            <common:Value>1201</common:Value>
+            <common:Value>1202</common:Value>
+            <common:Value>1205</common:Value>
+            <common:Value>1301</common:Value>
+            <common:Value>1302</common:Value>
+            <common:Value>1303</common:Value>
+            <common:Value>1304</common:Value>
+            <common:Value>1305</common:Value>
+            <common:Value>1306</common:Value>
+            <common:Value>1401</common:Value>
+            <common:Value>1402</common:Value>
+            <common:Value>1501</common:Value>
+            <common:Value>1502</common:Value>
+            <common:Value>1601</common:Value>
+            <common:Value>1701</common:Value>
+            <common:Value>1801</common:Value>
+            <common:Value>1802</common:Value>
+            <common:Value>1803</common:Value>
+            <common:Value>1804</common:Value>
+            <common:Value>1901</common:Value>
+            <common:Value>1902</common:Value>
+            <common:Value>2001</common:Value>
+            <common:Value>2002</common:Value>
+            <common:Value>2003</common:Value>
+            <common:Value>2004</common:Value>
+            <common:Value>2005</common:Value>
+            <common:Value>2101</common:Value>
+            <common:Value>2102</common:Value>
+            <common:Value>2201</common:Value>
+            <common:Value>2202</common:Value>
+            <common:Value>2203</common:Value>
+            <common:Value>2204</common:Value>
+            <common:Value>2301</common:Value>
+            <common:Value>2302</common:Value>
+            <common:Value>2303</common:Value>
+            <common:Value>2304</common:Value>
+            <common:Value>2401</common:Value>
+            <common:Value>2403</common:Value>
+            <common:Value>2404</common:Value>
+            <common:Value>2405</common:Value>
+            <common:Value>2501</common:Value>
+            <common:Value>2502</common:Value>
+            <common:Value>2601</common:Value>
+            <common:Value>2605</common:Value>
+            <common:Value>2701</common:Value>
+            <common:Value>2801</common:Value>
+            <common:Value>2901</common:Value>
+            <common:Value>3001</common:Value>
+            <common:Value>3002</common:Value>
+            <common:Value>3101</common:Value>
+            <common:Value>3201</common:Value>
+            <common:Value>3301</common:Value>
+            <common:Value>3901</common:Value>
+            <common:Value>4401</common:Value>
+            <common:Value>4501</common:Value>
+            <common:Value>4601</common:Value>
+            <common:Value>4701</common:Value>
+            <common:Value>4801</common:Value>
+            <common:Value>4901</common:Value>
+            <common:Value>5101</common:Value>
+            <common:Value>5201</common:Value>
+            <common:Value>5401</common:Value>
+            <common:Value>5501</common:Value>
+            <common:Value>5601</common:Value>
+            <common:Value>5701</common:Value>
+            <common:Value>5801</common:Value>
+            <common:Value>6001</common:Value>
+            <common:Value>6201</common:Value>
+            <common:Value>6301</common:Value>
+            <common:Value>6401</common:Value>
+            <common:Value>6601</common:Value>
+            <common:Value>6700</common:Value>
+            <common:Value>6701</common:Value>
+            <common:Value>6702</common:Value>
+            <common:Value>6901</common:Value>
+            <common:Value>7001</common:Value>
+            <common:Value>7210</common:Value>
+            <common:Value>7310</common:Value>
+            <common:Value>7501</common:Value>
+            <common:Value>7601</common:Value>
+            <common:Value>7701</common:Value>
+            <common:Value>8010</common:Value>
+            <common:Value>8110</common:Value>
+            <common:Value>8210</common:Value>
+            <common:Value>8401</common:Value>
+            <common:Value>8601</common:Value>
+            <common:Value>8901</common:Value>
+            <common:Value>9101</common:Value>
+            <common:Value>9201</common:Value>
+            <common:Value>9401</common:Value>
+            <common:Value>9402</common:Value>
+            <common:Value>9501</common:Value>
+            <common:Value>9502</common:Value>
+            <common:Value>GOVPRI_GOS</common:Value>
+            <common:Value>TLS_PDN</common:Value>
+            <common:Value>TLS_PDT</common:Value>
+            <common:Value>TOT</common:Value>
+            <common:Value>TOT_PRI</common:Value>
+            <common:Value>WSSESC_SUT</common:Value>
+          </common:KeyValue>
+          <common:KeyValue id="SUPC">
+            <common:Value>010</common:Value>
+            <common:Value>020</common:Value>
+            <common:Value>060</common:Value>
+            <common:Value>070</common:Value>
+            <common:Value>081</common:Value>
+            <common:Value>082</common:Value>
+            <common:Value>090</common:Value>
+            <common:Value>100</common:Value>
+            <common:Value>110</common:Value>
+            <common:Value>120</common:Value>
+            <common:Value>130</common:Value>
+            <common:Value>140</common:Value>
+            <common:Value>150</common:Value>
+            <common:Value>160</common:Value>
+            <common:Value>170</common:Value>
+            <common:Value>180</common:Value>
+            <common:Value>190</common:Value>
+            <common:Value>200</common:Value>
+            <common:Value>210</common:Value>
+            <common:Value>220</common:Value>
+            <common:Value>230</common:Value>
+            <common:Value>240</common:Value>
+            <common:Value>250</common:Value>
+            <common:Value>260</common:Value>
+            <common:Value>270</common:Value>
+            <common:Value>280</common:Value>
+            <common:Value>290</common:Value>
+            <common:Value>301</common:Value>
+            <common:Value>302</common:Value>
+            <common:Value>310</common:Value>
+            <common:Value>320</common:Value>
+            <common:Value>330</common:Value>
+            <common:Value>390</common:Value>
+            <common:Value>440</common:Value>
+            <common:Value>450</common:Value>
+            <common:Value>460</common:Value>
+            <common:Value>470</common:Value>
+            <common:Value>480</common:Value>
+            <common:Value>490</common:Value>
+            <common:Value>510</common:Value>
+            <common:Value>520</common:Value>
+            <common:Value>540</common:Value>
+            <common:Value>550</common:Value>
+            <common:Value>560</common:Value>
+            <common:Value>570</common:Value>
+            <common:Value>580</common:Value>
+            <common:Value>600</common:Value>
+            <common:Value>620</common:Value>
+            <common:Value>630</common:Value>
+            <common:Value>640</common:Value>
+            <common:Value>660</common:Value>
+            <common:Value>670</common:Value>
+            <common:Value>671</common:Value>
+            <common:Value>672</common:Value>
+            <common:Value>690</common:Value>
+            <common:Value>700</common:Value>
+            <common:Value>720</common:Value>
+            <common:Value>750</common:Value>
+            <common:Value>760</common:Value>
+            <common:Value>770</common:Value>
+            <common:Value>801</common:Value>
+            <common:Value>802</common:Value>
+            <common:Value>803</common:Value>
+            <common:Value>840</common:Value>
+            <common:Value>890</common:Value>
+            <common:Value>910</common:Value>
+            <common:Value>940</common:Value>
+            <common:Value>950</common:Value>
+            <common:Value>ELE_MAR</common:Value>
+            <common:Value>GAS_MAR</common:Value>
+            <common:Value>GFCE_SU</common:Value>
+            <common:Value>GFCF_GC</common:Value>
+            <common:Value>GFCF_GGOD</common:Value>
+            <common:Value>GFCF_PR</common:Value>
+            <common:Value>HFCE_TOT</common:Value>
+            <common:Value>INV_SUT</common:Value>
+            <common:Value>MGS_SUT</common:Value>
+            <common:Value>RETFNB_MAR</common:Value>
+            <common:Value>RXP_SUT</common:Value>
+            <common:Value>SUP_BPR</common:Value>
+            <common:Value>SUP_PPR</common:Value>
+            <common:Value>TFD_PPR</common:Value>
+            <common:Value>TLS_PDT</common:Value>
+            <common:Value>TOT</common:Value>
+            <common:Value>TOT_MAR</common:Value>
+            <common:Value>TRNMIS_MAR</common:Value>
+            <common:Value>UPI_PPRT</common:Value>
+            <common:Value>WOTWRE_MAR</common:Value>
+            <common:Value>XGS_SUT</common:Value>
+          </common:KeyValue>
+          <common:KeyValue id="SU_CAT">
+            <common:Value>10</common:Value>
+            <common:Value>20</common:Value>
+            <common:Value>30</common:Value>
+          </common:KeyValue>
+          <common:KeyValue id="FREQUENCY">
+            <common:Value>A</common:Value>
+          </common:KeyValue>
+          <common:KeyValue id="TIME_PERIOD">
+            <common:TimeRange>
+              <common:StartPeriod isInclusive="true">1995-01-01T00:00:00</common:StartPeriod>
+              <common:EndPeriod isInclusive="true">2025-12-31T00:00:00</common:EndPeriod>
+            </common:TimeRange>
+          </common:KeyValue>
+        </structure:CubeRegion>
+      </structure:ContentConstraint>
+    </structure:Constraints>
+  </message:Structures>
+</message:Structure>

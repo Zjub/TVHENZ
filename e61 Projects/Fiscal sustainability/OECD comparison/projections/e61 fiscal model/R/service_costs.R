@@ -42,7 +42,8 @@ service_cost_factors <- function(z,m,a) {
  } else if(z$cost_rule=='cpi_proxy') {
    wage<-efficiency<-rep(1,length(t))
  } else stop('Unknown service cost rule')
- data.frame(wage_factor=wage,efficiency_factor=efficiency,
+ income<-if(programme=='Education')(m$real_output_index/m$population_index)^a$education_income_elasticity else rep(1,nrow(m))
+ data.frame(income_factor=income,wage_factor=wage,efficiency_factor=efficiency,
    real_unit_factor=wage*efficiency,intensity_factor=(1+r)^t,
    configured_service_productivity_share=theta,
    service_productivity_share=if(z$cost_rule=='input_mix')theta else 0,
@@ -59,6 +60,9 @@ project_primary_spending <- function(x,m,a,cal,pp,pension) {
  detail<-do.call(rbind,lapply(seq_len(nrow(spec)),function(j){
    s<-spec[j,];q<-pp[match(s$programme,pp$programme),]
    exposure<-subfunction_demand(x,s$profile,m$year);exposure<-exposure/exposure[1]
+   participant_factor<-if(s$programme=='NDIS')exposure else rep(1,nrow(m))
+   age_cost_mix<-if(s$programme=='NDIS')x$ndis$age_cost_mix_index[match(m$year,x$ndis$year)] else rep(1,nrow(m))
+   exposure<-exposure*age_cost_mix
    pop<-m$population_index;age<-exposure/pop;price<-m$domestic_price_index
    coverage<-wage<-efficiency<-intensity<-target<-income<-rep(1,nrow(m))
    income_elasticity<-0;real_wage_cpi<-premium<-health_productivity<-rep(NA_real_,nrow(m))
@@ -69,7 +73,10 @@ project_primary_spending <- function(x,m,a,cal,pp,pension) {
      coverage<-(1+z$coverage_growth)^(m$year-a$anchor_year)
      L<-z$wage_weight;theta<-f$service_productivity_share[1]
      service_growth<-f$service_productivity_growth[1];r<-f$additional_service_growth[1];rule<-z$cost_rule
-     if('income_factor'%in%names(f)){
+     if(s$programme=='Education'){
+       income<-f$income_factor;income_elasticity<-a$education_income_elasticity
+     }
+     if(s$programme=='Health' && a$health_specification=='income_costs'){
        income<-f$income_factor;price<-f$health_price_index;income_elasticity<-a$health_income_elasticity
        real_wage_cpi<-f$health_real_wage_cpi_index;premium<-f$health_wage_premium_index;health_productivity<-f$health_productivity_index
      }
@@ -86,6 +93,7 @@ project_primary_spending <- function(x,m,a,cal,pp,pension) {
    data.frame(year=m$year,programme=s$programme,id=s$id,subfunction=s$subfunction,
      anchor_2030_bn=s$anchor_2030_bn,spending_bn=value,share_gdp=100*value/m$nominal_gdp,
      exposure_index=exposure,coverage_index=coverage,cost_pass_through=NA_real_,
+     ndis_participant_factor=participant_factor,ndis_age_cost_mix_factor=age_cost_mix,
      wage_weight=L,service_productivity_share=theta,service_productivity_growth=service_growth,
      additional_service_growth=r,cost_rule=rule,population_factor=pop,age_factor=age,
      coverage_factor=coverage,price_factor=price,wage_factor=wage,efficiency_factor=efficiency,
@@ -163,7 +171,7 @@ service_cost_comparison <- function(projection,inputs) {
      selected_additional_service_growth=f$additional_service_growth[1],
      baseline_additional_growth=z$additional_service_growth,
      additional_growth_adjustment=if(z$programme=='Health' && a$health_specification=='income_costs')0 else a[[cost_pass_through_parameters()[[z$programme]]]],
-     selected_income_elasticity=if(z$programme=='Health' && a$health_specification=='income_costs')a$health_income_elasticity else 0,
+     selected_income_elasticity=if(z$programme=='Education')a$education_income_elasticity else if(z$programme=='Health' && a$health_specification=='income_costs')a$health_income_elasticity else 0,
      income_growth=tail(inc,1)^(1/t)-1,
      real_unit_growth=input_growth,combined_non_demographic_growth=combined,
      reference_combined_non_demographic_growth=reference_growth,

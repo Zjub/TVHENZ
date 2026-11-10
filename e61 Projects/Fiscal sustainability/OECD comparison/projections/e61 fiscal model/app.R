@@ -83,6 +83,8 @@ ui <- fluidPage(
         conditionalPanel("input.health_specification == 'legacy'",sliderInput('health_additional_cost_growth','Legacy health additional cost growth above CPI and wages (%/year)',min=-1.5,max=2.5,value=.5,step=.01)),
         div(class='note',textOutput('health_framework_summary'))),
       tags$details(id='cost_pass_through_controls',tags$summary('Cost pass-through and financing sensitivity'),
+        sliderInput('education_income_elasticity','Education: income elasticity of service intensity',min=0,max=1.5,value=.2,step=.05),
+        helpText('A 1% increase in real GDP per person increases education provision per eligible person by this percentage, beyond wage costs and other inputs. Applies to every education subfunction. The 0.2 default is an unverified assumption, not an estimated Australian parameter. Review additional cost growth alongside a positive elasticity to avoid counting the same pressures twice. Historical residuals are not re-estimated for this elasticity.'),
         selectInput('service_cost_set','Education and legacy health cost assumptions',
           c('Current assumptions (reference)'='current','Historical trend estimates (2016-2025)'='historical')),
         helpText('The 25% service-productivity default and the current cost-growth baselines are arbitrary modelling choices, not estimated or neutral values. Historical residuals are fitted conditional on that arbitrary productivity assumption. The cost controls show actual selected annual rates.'),
@@ -146,11 +148,11 @@ ui <- fluidPage(
         tabPanel('Fiscal outlook',value='outlook',
           div(class='panel-card',
             fluidRow(column(8,h3('Your scenario and the reference')),
-              column(4,selectInput('measure',NULL,c('Net debt (% GDP)'='net_debt_pct',
-                'Gross debt (% GDP)'='gross_debt_pct','Total expenditure (% GDP)'='total_spending_pct',
-                'Fiscal balance (% GDP)'='fiscal_balance_pct','Revenue (% GDP)'='revenue_pct',
-                'Real primary spending per person ($2030)'='real_primary_per_person')))),
+              column(4,selectInput('measure',NULL,fiscal_outlook_measures()))),
             plotOutput('outlook',height=340),
+            downloadButton('outlook_download','Download selected chart (CSV)'),
+            downloadButton('outlook_all_download','Download all six measures (CSV)'),
+            p(class='note','Downloads include unrounded annual values for your scenario and the fixed reference, units and each case\'s assumptions. The all-measures file includes every option in the chart selector. Years denote financial years ending.'),
             p(class='note',reference_text),textOutput('endpoint')),
           div(class='panel-card',h3('International debt comparisons'),
             p('Long-term scenarios from the common 2030 starting year. The PBO supplies our starting point; short-run international forecasts are excluded. The lower panel compares gross debt with both OECD Survey scenarios and three IMF long-term scenarios.'),
@@ -288,7 +290,8 @@ ui <- fluidPage(
           div(class='panel-card',h3('Arbitrary defaults and fitted historical residuals'),
             p('Health and education service efficiency defaults to 25% of economy-wide growth. This is arbitrary: a modelling choice for discussion, not an empirical Australian estimate, a neutral assumption or an official recommendation. At 1.2% economy-wide growth it implies 0.3% annual efficiency growth. The efficiency deduction applies to resource-cost baskets; the medicine CPI proxy and VET funding-index rule retain their separate treatment.'),
             p('Health separates demographic demand, income-related demand, input costs and remaining real spending pressures. Its income elasticity defaults to 0.8 as an internationally informed scenario assumption, not an Australian causal estimate. Remaining health pressures default to zero beyond these explicit channels; this is a judgement. Education retains 0.5% additional growth, an arbitrary discussion assumption. The controls display the actual selected rate. With the historical alternative, the rate is the anchor-spending-weighted mean of subfunction residuals; changing it shifts every subfunction by the same number of percentage points, preserving differences. Aged care retains 0.3% additional growth and other public services zero, with no new efficiency default.'),
-            p('Health historical alternatives re-estimate residuals after removing income-related demand (elasticity 0.8) and explicit input costs (25% efficiency response). The matched subfunction option covers 2016-2025. The longer aggregate health-consumption option uses 1999-2025 with WPI; a compensation-per-hour sensitivity spans 1987-2025. Spending observations extend to 1963, but all decomposition inputs do not. National-accounts consumption differs from GFS expenses: their overlap is reported rather than spliced. Education retains its 2016-2025 residual option. These residuals include policy, coverage, quality, mix and measurement effects. Selecting their estimation period and extrapolating them are modelling judgements; the data do not independently identify service efficiency. Higher education and VET share a tertiary residual, and other health includes accounting reconciliation. Once selected, residuals are held fixed when scenario controls move.'),
+            p('Education service intensity is multiplied by the real-GDP-per-person index raised to the selected education income elasticity. The coefficient applies to all education subfunctions, beyond wage costs and service efficiency; the default of 0.2 is an unverified assumption, not an Australian estimate. A coefficient of 0.5 means 1% higher real GDP per person implies approximately 0.5% more provision per eligible person, other factors fixed. It is not the total income elasticity of spending. Review the separate additional-growth allowance alongside a positive elasticity to avoid overlapping assumptions. Terms of trade do not directly enter this real-output income factor.'),
+            p('Health historical alternatives re-estimate residuals after removing income-related demand (elasticity 0.8) and explicit input costs (25% efficiency response). The matched subfunction option covers 2016-2025. The longer aggregate health-consumption option uses 1999-2025 with WPI; a compensation-per-hour sensitivity spans 1987-2025. Spending observations extend to 1963, but all decomposition inputs do not. National-accounts consumption differs from GFS expenses: their overlap is reported rather than spliced. Education retains its 2016-2025 residual option, fitted without an education income factor; a positive elasticity may overlap with this residual. These residuals include policy, coverage, quality, mix and measurement effects. Selecting their estimation period and extrapolating them are modelling judgements; the data do not independently identify service efficiency. Higher education and VET share a tertiary residual, and other health includes accounting reconciliation. Once selected, residuals are held fixed when scenario controls move.'),
             p('NDIS uses the existing participant/cohort path, original plan-cost index and 0.5% additional cost/use growth. Other transfers retain the original payment indexation and demand proxy; Age Pension uses a public-data cohort wealth and means-testing module; transition and consumption parameters need future estimation from HILDA. None receives a service-efficiency deduction. Economy-wide productivity can still affect wage-linked payment indexation; it does not make transfers more efficient.')),
           div(class='panel-card',h3('How to interpret this version'),
             p('This is an independent, transparent scenario prototype. It is not a validated forecast, a full current-policy simulation or a replication of the PBO or IGR.'),
@@ -359,6 +362,7 @@ server <- function(input,output,session) {
     for(key in c('service_cost_set','other_spending_rule','health_specification','health_pressure_source'))
       if(!is.null(input[[key]]))z[[key]]<-input[[key]]
     if(!is.null(input$health_income_elasticity))z$health_income_elasticity<-input$health_income_elasticity
+    if(!is.null(input$education_income_elasticity))z$education_income_elasticity<-input$education_income_elasticity
     for(key in c('health_remaining_growth','health_wage_premium','health_cpi_wedge'))if(!is.null(input[[key]]))z[[key]]<-input[[key]]/100
     if(!is.null(input$interest_debt_sensitivity_bps))z$interest_debt_sensitivity_bps<-input$interest_debt_sensitivity_bps
     for(n in names(spending_target_parameters())){
@@ -391,6 +395,7 @@ server <- function(input,output,session) {
     updateSelectInput(session,'health_specification',selected='income_costs')
     updateSelectInput(session,'health_pressure_source',selected='assumed')
     updateSliderInput(session,'health_income_elasticity',value=.8)
+    updateSliderInput(session,'education_income_elasticity',value=.2)
     for(key in c('health_remaining_growth','health_wage_premium','health_cpi_wedge'))updateSliderInput(session,key,value=0)
     reset_cost_rates()
     updateSliderInput(session,'productivity',value=1.2)
@@ -414,6 +419,7 @@ server <- function(input,output,session) {
   })
   observeEvent(input$reset_pass_through,{
     updateSelectInput(session,'health_pressure_source',selected='assumed')
+    updateSliderInput(session,'education_income_elasticity',value=.2)
     updateSliderInput(session,'health_income_elasticity',value=.8)
     for(key in c('health_remaining_growth','health_wage_premium','health_cpi_wedge'))updateSliderInput(session,key,value=0)
     updateSliderInput(session,'health_service_productivity_share',value=25)
@@ -526,12 +532,18 @@ server <- function(input,output,session) {
   output$international_debt_download<-downloadHandler(filename=function()'e61_international_debt_comparison.csv',
     content=function(file)write.csv(international_debt_data(),file,row.names=FALSE))
   output$outlook <- renderPlot({
-    d <- both(); d$value <- d[[input$measure]]
-    label <- if(input$measure=='real_primary_per_person') '2030 dollars per person' else '% of GDP'
+    d <- fiscal_outlook_data(scenario(),reference(),input$measure,include_assumptions=FALSE)
+    label <- d$unit[1]
     ggplot(d,aes(year,value,colour=case,linetype=case))+geom_line(linewidth=1.1)+natural_y(d,signed=identical(input$measure,'fiscal_balance_pct'),zero=input$measure%in%c('net_debt_pct','gross_debt_pct'),floor=5)+
       scale_colour_manual(values=colours)+scale_linetype_manual(values=c('Reference'='dashed','Your scenario'='solid'))+
       labs(x='Financial year ending',y=label,colour=NULL,linetype=NULL)+theme_e61()
   })
+  output$outlook_download<-downloadHandler(
+    filename=function()paste0('e61_outlook_',input$measure,'.csv'),
+    content=function(file)write.csv(fiscal_outlook_data(scenario(),reference(),input$measure),file,row.names=FALSE))
+  output$outlook_all_download<-downloadHandler(
+    filename=function()'e61_outlook_all_measures.csv',
+    content=function(file)write.csv(fiscal_outlook_data(scenario(),reference()),file,row.names=FALSE))
   output$endpoint <- renderText({
     d <- tail(scenario()$path,1)
     sprintf('2066: revenue %.1f%% of GDP; total spending %.1f%%; primary expenses %.1f%%; interest %.1f%%; net capital investment %.1f%%.',
