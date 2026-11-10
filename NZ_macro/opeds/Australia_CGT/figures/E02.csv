@@ -1,0 +1,9 @@
+study,country,definition,estimate,low,high,reference_rate,horizon,kind,source_id,locator,caveat,url,retrieval_method,point_type,tax_elasticity,label
+"Minas, Lim & Evans (2018)",Australia,Tax-rate semi-elasticity,-1.75,-1.75,-1.75,0.3675,Annual time series 1988-89 to 2014-15,Empirical,australia_study,Authors Table 1,"27 observations; macro confounding; main specification, not CRS alternative 2.15",https://www.austaxpolicy.com/tax-rate-changes-impact-capital-gains-realisations-evidence-australia/,Downloaded original/author source,Reported point / selected specification,-0.643125,"Minas, Lim & Evans (2018)
+Evaluated at 36.75%"
+"Agersnap & Zidar (2021), baseline",United States,Net-of-tax elasticity,1.87,1.87,1.87,0.22,Average years 0-10,Empirical,agersnap_zidar,Table 2; baseline policy elasticity,Adjusted for interstate migration; 1.87 is not a tax-rate elasticity,https://www.nber.org/system/files/working_papers/w27705/w27705.pdf,Downloaded original/author source,Reported point / selected specification,-0.5274358974358975,"Agersnap & Zidar (2021), baseline
+Evaluated at 22%"
+"OBR (2025), main rates",United Kingdom,Net-of-tax elasticity,3.6,3.6,3.6,0.24,Costing horizon,Scoring assumption,obr,Paragraph 1.9; Table 1.1,"Combined behaviours; 24% illustrative conversion rate, not empirical reference rate",https://obr.uk/docs/dlm_uploads/CGT-supplementary-release-Jan-2025.pdf,Web-tool verified; direct download denied,Reported point / selected specification,-1.136842105263158,"OBR (2025), main rates
+Evaluated at 24%"
+"OBR (2025), business relief",United Kingdom,Net-of-tax elasticity,1.4,1.4,1.4,0.18,Costing horizon,Scoring assumption,obr,Paragraph 1.9; Table 1.1,18% illustrative conversion rate; distinct population and relief,https://obr.uk/docs/dlm_uploads/CGT-supplementary-release-Jan-2025.pdf,Web-tool verified; direct download denied,Reported point / selected specification,-0.3073170731707317,"OBR (2025), business relief
+Evaluated at 18%"

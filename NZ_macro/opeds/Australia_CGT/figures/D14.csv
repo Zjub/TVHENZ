@@ -1,0 +1,15 @@
+gain_range,measure,share
+$1 to $9,Share of gain reporters,0.07058923872826
+$1 to $9,Share of net gains,1.0013516300658523e-5
+$10 - $99,Share of gain reporters,0.14048255591903155
+$10 - $99,Share of net gains,2.060435785152491e-4
+$100 - $999,Share of gain reporters,0.25957722389199783
+$100 - $999,Share of net gains,0.0035126292991037307
+"$1,000 - $9,999",Share of gain reporters,0.2792939943933783
+"$1,000 - $9,999",Share of net gains,0.03341546111974505
+"$10,000 - $99,999",Share of gain reporters,0.19452667523108066
+"$10,000 - $99,999",Share of net gains,0.23606628129369456
+"$100,000 - $999,999",Share of gain reporters,0.052765495576143025
+"$100,000 - $999,999",Share of net gains,0.38188500994137753
+"$1,000,000 or more",Share of gain reporters,0.0027648162601086
+"$1,000,000 or more",Share of net gains,0.3449045612512632

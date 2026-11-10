@@ -1,0 +1,10 @@
+parameter,value,interpretation
+snapshot,2026-11-11,Source cut-off; not a prediction
+principal,1e+05,Hypothetical assumption
+inflation,0.025,Hypothetical assumption
+normal_real_return,0.03,Hypothetical assumption
+normal_nominal_allowance,0.05575,Hypothetical assumption
+flat_tax_rate,0.3,Hypothetical assumption
+illustrative_excess_real_return,0.04,Hypothetical assumption
+consumption_tax_equivalent_rate,0.428571428571429,Hypothetical assumption
+personal_schedule_year,2027-28,"Frozen future resident scale; excludes Medicare, offsets, HELP and transfers"

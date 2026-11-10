@@ -1,0 +1,1292 @@
+--- PDF PAGE 1 ---
+NBER WORKING PAPER SERIES
+RETHINKING HOW WE SCORE CAPITAL GAINS TAX REFORM
+Natasha Sarin
+Lawrence H. Summers
+Owen M. Zidar
+Eric Zwick
+Working Paper 28362
+http://www.nber.org/papers/w28362
+NATIONAL BUREAU OF ECONOMIC RESEARCH
+1050 Massachusetts Avenue
+Cambridge, MA 02138
+January 2021
+We thank Coly Elhai for outstanding research assistance. We received helpful comments from 
+Tim Dowd, Robert McClelland, Rich Prisinzano, Jim Poterba, and others who wish to remain 
+anonymous. These acknowledgments should not be interpreted as implying that these individuals 
+are in agreement with this paper's conclusions. This work is supported by National Science 
+Foundation under Grant Number 1752431. We declare that we have no relevant or material 
+financial interests that relate to the research described in this paper other than owning some 
+assets which have unrealized accrued capital gains. The views expressed 
+herein are those of the authors and do not necessarily reflect the views of the National Bureau 
+of Economic Research.
+NBER working papers are circulated for discussion and comment purposes. They have not been 
+peer-reviewed or been subject to the review by the NBER Board of Directors that accompanies 
+official NBER publications.
+© 2021 by Natasha Sarin, Lawrence H. Summers, Owen M. Zidar, and Eric Zwick. All rights 
+reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit 
+permission provided that full credit, including © notice, is given to the source.
+
+
+--- PDF PAGE 2 ---
+Rethinking How We Score Capital Gains Tax Reform
+Natasha Sarin, Lawrence H. Summers, Owen M. Zidar, and Eric Zwick
+NBER Working Paper No. 28362
+January 2021
+JEL No. H0,H2,H3
+ABSTRACT
+We argue the revenue potential from increasing tax rates on capital gains may be substantially 
+greater than previously understood. First, many prior studies focus primarily on short-run 
+taxpayer responses, and so miss revenue from gains that are deferred when rates change. Second, 
+the composition of capital gains has shifted in recent years, such that the share of gains that are 
+highly elastic to the tax rate has likely declined. Third, focusing on capital gains tax collection 
+may understate fiscal spillovers from decreasing the preferential tax treatment for capital gains. 
+Fourth, additional base-broadening reforms, like eliminating stepped-up basis and making 
+charitable giving a realization event, will decrease the elasticity of the tax base to rate changes. 
+Overall, we do not think the prevailing assumption of many in the scorekeeping community—that 
+raising rates to top ordinary income levels would raise little revenue—is warranted. A crude 
+calculation illustrates that raising capital gains rates to ordinary income levels could raise $1 
+trillion more revenue over a decade than other estimates suggest. Given the magnitudes at stake, 
+scorekeeping procedures employed in evaluating capital gains should be made more transparent 
+and be the subject of external professional debate and review.
+Natasha Sarin
+University of Pennsylvania 
+Carey Law
+Silverman 139 
+3501 Sansom Street 
+Philadelphia, PA 19104
+nsarin@law.upenn.edu
+Lawrence H. Summers
+Harvard Kennedy School of Government
+79 JFK Street
+Cambridge, MA 02138
+and NBER
+lhs@harvard.edu
+Owen M. Zidar
+Department of Economics &
+School of International and Public Affairs
+Princeton University
+237 Julis Romo Rabinowitz Building
+Princeton, NJ 08544
+and NBER
+ozidar@princeton.edu
+Eric Zwick
+Booth School of Business
+University of Chicago
+5807 South Woodlawn Avenue
+Chicago, IL 60637
+and NBER
+ezwick@chicagobooth.edu
+
+
+--- PDF PAGE 3 ---
+1
+Introduction
+Capital gains taxes are a perennial issue in tax reform debates. Some maintain that preferential rates on capital
+gains encourage entrepreneurship and capital formation. Others question whether these beneﬁts are suﬃciently
+large to outweigh the equity and ﬁscal costs of lower rates. While the direct equity costs of lower rates are
+clear—the wealthiest one percent account for two-thirds of capital gains realizations in the 2019 Survey of
+Consumer Finances—the ﬁscal costs are more uncertain.
+The Joint Committee on Taxation (JCT) estimates these costs. In the parlance of policymakers, the JCT
+is the oﬃcial “scorekeeper” who decides how tax legislation “scores” if implemented. The prevailing wisdom
+among some in the scorekeeping community (e.g., Tax Policy Center, Tax Foundation, Penn Wharton Budget
+Model) has been that the revenue-maximizing capital gains rate is around 30 percent, such that setting a rate
+too far above this level could actually reduce the total amount of revenue collected.1 This “Laﬀer rate” is well
+below both current top marginal tax rates on other income and top rates currently under debate. The rationale
+for a low Laﬀer rate is that the static revenue gains expected from a high rate will fail to materialize because
+the dynamic response of taxpayers dramatically shrinks the tax base.
+Accounting for the diﬀerence between static and dynamic scores is clearly important. For example, the
+oﬃcial score attached to changes in the top income tax rate is perhaps 12 percent lower than the static score,
+because some taxpayers will choose to work less, or hire tax planners to help avoid taxes more.2 But in the
+capital gains context, dynamic eﬀects are often assumed to exceed 100 percent, because rate hikes lock-in
+realizations that would have otherwise occurred. Deploying this assumption, increases in the capital gains tax
+rate have previously been estimated to lose revenue, and decreases, to raise revenue.3
+It seems natural that the dynamic eﬀects in the case of capital gains are more pronounced than for other
+policies: Retiming a capital gain realization in an investor’s stock portfolio is easier than changing investment
+strategy for executives seeking to avoid a corporate tax increase, or reducing labor supply for workers when
+income tax rates rise. But we suspect that these behavioral eﬀects are overstated, resulting in a potentially
+severe underestimate of the revenue at play from capital gains tax increases.
+The current “realization elasticity” used by JCT and others in the scorekeeping community is approximately
+-0.7, based both on historical scores (Joint Committee on Taxation, 1990) and more recent academic research
+(Dowd, McClelland and Muthitacharoen, 2015).
+If tax rates increased by 100%, crude application of this
+elasticity implies that only 53% (= 1 −(0.7 × 0.67)) of gains will be realized.4 In concrete terms, roughly $1
+trillion of annual realizations would shrink to around $500 billion. This assumed $500 billion response is large
+enough that raising capital gains rates to ordinary income levels could be scored as raising no new revenue.
+1For example, McClelland provides a short discussion of revenue-maximizing rates, noting that “the Tax Policy Center uses
+estimates that imply that the revenue from taxing long-term capital gains is maximized when the top rate is set to be about 28
+percent” and the Treasury Department, and JCT appear to use similar estimates. https://www.taxpolicycenter.org/taxvox/
+new-study-suggests-congress-could-raise-money-increasing-capital-gains-tax-rates-47-percent
+2See Saez, Slemrod and Giertz (2012), which uses an elasticity of taxable income of -0.2.
+3Indeed, in the 1990s, a long line of academic and policy work was focused on whether decreasing the capital gains tax rate
+was likely to pay for itself (Gravelle, 1991; Auten and Cordes, 1991).
+4Note that 0.67 = .20/.30, which is the rate change from 20% to 40% divided by the mid-point. This stylized example ab-
+stracts from the 3.8% net investment income tax and other tax considerations.
+2
+
+
+--- PDF PAGE 4 ---
+This style of calculation neglects a material oﬀsetting factor: medium-term retiming of realizations would
+oﬀset lost revenues in the short-term. Suppose that doubling capital gains rates from 20% to 40% causes
+realizations to occur half as often: instead of realizing gains every year, individuals realize gains every two
+years. If assets grow at 10% annually, then in the low-tax regime, $100 of assets yield realizations of $10 in year
+1 and $10.80 in year 2 (after paying two dollars of tax in year 1). In the high-tax regime, $100 of assets yield
+realizations of $0 in year 1 and $21 in year 2. Despite the appearance in year 1 of a large elasticity of realizations
+in response to the tax increase, total revenues over both years increase from $4.16 in the low-tax regime to
+$8.40 in the high-tax regime. In this simple example without other behavioral responses, the short-run revenue
+score is zero and the medium-run revenue score is double the baseline. Clearly, the latter revenue score is more
+relevant for policy purposes.
+It is not clear to what extent these dynamic factors are incorporated in current scorekeeping methods,
+or if instead the current approach predicts that annual realizations would permanently fall.
+Given scarce
+public information about oﬃcial scorekeeping methods, we are not in a position to evaluate how these methods
+account for such medium-run behavior. It is also unclear how much additional base-broadening reforms, like
+stepped-up basis and making charitable giving a realization event, would aﬀect estimates of lost tax collection
+due to indeﬁnite deferrals. This ambiguity also impairs the ability of new research to contribute to improving
+our understanding of dynamic taxpayer responses.
+Beyond the issue of deferred gains, we highlight three additional considerations that suggest conventional
+elasticities may be overstated. First, the composition of capital gains has shifted in recent years, such that
+the share of capital gains that are highly elastic to the tax rate has fallen. Today, nearly half of capital gains
+accrue through passthrough and mutual fund distributions outside of the direct control of taxpayers. If half
+of capital gains are not sensitive to the tax environment, then for e = −0.7 to be the right average elasticity
+across all gains, the elasticity for the other half of gains would be e = −1.4. And even in the extreme case that
+the timeable realizations were to shrink to zero, a large stock of gains that will be taxed regularly at higher
+rates would remain. Moreover, the appropriate elasticity for scoring big tax increases should put more weight
+on the elasticity of the less timeable portion since it will account for more of the remaining tax base. It is
+unclear whether scorekeeping models account for compositional changes and dynamic weights.
+Second, revenue estimates may understate the substitution between capital gains and other forms of income.
+Third, the uncertainty about how scorekeepers incorporate dynamic eﬀects into various capital gains reform
+proposals complicates apples-to-apples evaluation of alternatives. These issues are all deserving of further study.
+Overall, we do not think the prevailing assumption by many in the scorekeeping community—that raising rates
+to top ordinary income levels would raise little revenue—is warranted by a reasonable reading of the evidence.
+We conclude with crude estimates of the wide range in revenue potential from raising capital gains rates
+to the top ordinary income levels under diﬀerent elasticity assumptions. Applying the conventional elasticity
+e = −0.7 leads to the conclusion that this substantial rate increase would raise less than $150 billion in revenue.
+In stark contrast, using an elasticity that incorporates medium-term dynamics suggests that raising rates to
+the top ordinary income level could raise more than $1 trillion over a decade. Put diﬀerently, e = −0.7 implies
+3
+
+
+--- PDF PAGE 5 ---
+that once capital gains rates reach around 30 percent, the additional increase to top ordinary rates loses, rather
+than raises, revenue. Our preferred estimates suggest the opposite. Pairing rate increases with the elimination
+of loopholes that erode the capital gains tax base—like stepped-up basis and the tax preference for charitable
+gifts of appreciated assets—produces larger revenue estimates. We provide a simple calculation that abstracts
+from many important details. Our point is not to oﬀer an oﬃcial score, but instead to illustrate the magnitude
+of potential revenue and how sensitive capital gains revenue estimates are to various assumptions. We suspect
+that making scorekeeping procedures more transparent and the subject of external professional debate and
+review will lead to an upward revision in the estimated revenue potential from substantially increasing capital
+gains tax rates.
+2
+Short-Run Deferral Increases Medium-Run Realizations
+2.1
+Longer estimation window produces smaller elasticity estimates
+A long estimation window is necessary to measure the dynamic response and revenue eﬀects of capital gains tax
+changes. The reason is that gains deferred when taxes rise may not, in fact, be deferred indeﬁnitely. Auerbach
+(1989) provides a helpful model that we describe in the Appendix. In the model, rate changes may induce less
+frequent asset turnover, but at least some portion of gains deferred will face a tax burden eventually. And
+when deferred realizations do occur, the gains will be larger, as they will accrue over many years, oﬀsetting
+transient losses from delays in realization. Working through the long-run dynamic equilibrium properties of
+whatever elasticity is estimated is quite important. In general, increasing the frequency of realizations means
+that the average realization will be smaller, and decreasing the frequency of realizations means that when they
+do occur, they will be larger. The impact on the size of the taxable gain works against this baseline eﬀect and
+is missed by short-term elasticity estimates.
+There is a long line of empirical research on the responsiveness of capital gains realizations to rate changes,
+relying on diﬀerent methodologies for estimating taxpayer response, diﬀerent sample periods, and diﬀerent
+rate changes from which to derive estimates (Dowd and Richards, 2021).
+Importantly, varying realization
+elasticities across studies often reﬂect the horizon over which taxpayer responses are estimated. Due largely
+to data limitations, much of the literature has estimated a short-run elasticity by studying responses within a
+short window before and after tax changes. If researchers and professional scorekeepers adopt the short-run
+elasticity as the relevant statistic for revenue estimation, they implicitly presume that realizations that are
+deferred when rates rise will never take place.
+Consider two recent contributions. Dowd, McClelland and Muthitacharoen (2015) use micro panel data from
+the 2000s to estimate a permanent elasticity of -.72, based on taxpayer responses from the two years surrounding
+tax changes. A limitation of this approach is that it misses out on realizations that are deferred when rates
+change, but occur eventually, just outside of the years immediately surrounding tax changes. Consistent with
+this idea, Dowd, McClelland and Muthitacharoen (2015) ﬁnd that their estimates are exclusively driven by
+intensive margin eﬀects (i.e., the size of a realized gain), indicating this approach may miss medium-run timing
+4
+
+
+--- PDF PAGE 6 ---
+responses that are more likely to appear as extensive margin eﬀects (i.e., the presence of a realized gain).
+Agersnap and Zidar (2020), in contrast, capture realizations that occur at the state-level within ten years
+of a tax change (Figure 1). Consistent with the deferred realization hypothesis, they arrive at an estimate of
+the behavioral eﬀect of capital gains tax hikes that is much lower than existing estimates (between -.3 and -.5),
+and consequently an estimate of the revenue-maximizing rate that is much higher, around 38 to 47 percent.
+There are issues with this ten-year horizon as well. On the one hand, estimates are less precise in later years
+since other shocks occur during such a lengthy estimation window. On the other, even this more expansive
+estimation window misses realizations deferred when rates change that occur eventually, just outside of the
+ten-year horizon.
+Figure 1: Evolution of realization responses: Elasticity estimates by horizon from Agersnap and Zidar (2020)
+-1
+-.5
+0
+.5
+Elasticity of realizations w.r.t. tax rate
+-10
+-5
+0
+5
+10
+Event Time
+Notes:
+This ﬁgure plots tax rate elasticities within 3-year bins deﬁned relative to the year of a tax change. For instance, the
+rightmost point indicates that the realizations elasticity to a tax change 9 and 11 years previous is -0.28. This ﬁgure is con-
+structed by converting the policy-relevant elasticity (εCG −εN) series from Figure 3(c) of Agersnap and Zidar (2020) to a tax-
+rate elasticity. We use a conversion factor of
+−0.22
+1−0.22 so that the result is an elasticity at a tax rate of 22 percent.
+A critique of both Dowd, McClelland and Muthitacharoen (2015) and Agersnap and Zidar (2020) is that
+their identiﬁcation relies on relatively small state-level tax changes. An alternative approach would be to use the
+time series of large federal changes to examine dynamics around larger reforms. The only comparable historical
+episodes in the U.S. are in the 1970s, when capital gains rates rose following the Tax Reform Act of 1969 to
+49 percent, before being cut to 29 percent by the end of the decade. However, the lack of a comparison group
+and the existence of confounding shocks makes clear how diﬃcult it is to identify the permanent tax-induced
+component of this change from the federal time series.
+Figure 2 plots aggregate realizations and capital gains tax rates and reveals clear issues with extrapolation
+from the federal time series.
+First, the time series show clear anticipatory and transient taxpayer timing,
+providing more evidence of why elasticities based on just a few years of data can be misleading. Second, the
+base of capital gains is procylical, so it is hard to disentangle changes in realizations from unrelated market-
+induced changes in tax collections.
+The 1970s featured capital gains tax hikes, decreases in capital gains
+tax collection as a share of GDP, and poor market performance—all of which reversed in the 1980s. Figure
+5
+
+
+--- PDF PAGE 7 ---
+2(b) shows a sharp decline in C-corporation equity wealth as a share of GDP in the 1970s, which confounds
+inferences about the tax elasticity based solely on time-series ﬂuctuations in rates and realized gains. Looking
+to state-level changes is thus valuable, as it is a broader sample that allows for separating tax-induced changes
+from general macroeconomic trends.
+Figure 2: Evolution of Net Capital Gains and C-Corporation Equity Wealth
+(a) Capital gains
+10
+20
+30
+40
+Tax rate (%)
+0
+2
+4
+6
+8
+Share of GDP (%)
+1965
+1975
+1985
+1995
+2005
+2015
+Net realized capital gains
+Max long-term capital gains tax rate
+(b) C-Corporation equity wealth
+10
+20
+30
+40
+Tax rate (%)
+0
+20
+40
+60
+80
+Share of GDP (%)
+1965
+1975
+1985
+1995
+2005
+2015
+C-corporation equity wealth
+Max long-term capital gains tax rate
+Notes:
+These graphs plot net realized capital gains, C-corporation equity wealth, and the maximum long-term capital
+gains tax rates between 1960 and 2014 as a share of GDP. Data on capital gains and C-corporation wealth from Smith, Zi-
+dar and Zwick (2020). Data on tax rates from the U.S. Treasury (https://www.treasury.gov/resource-center/tax-policy/
+tax-analysis/Documents/Taxes-Paid-on-Capital-Gains-for-Returns-with-Positive-Net-Capital-Gains.pdf) and the Tax
+Foundation (https://taxfoundation.org/federal-capital-gains-tax-collections-1954-2009/). GDP data from the World
+Bank (https://data.worldbank.org/indicator/NY.GDP.MKTP.CD).
+2.2
+Some portion of deferred gains are eventually realized
+Overall, many empirical estimates in the capital gains literature are lacking because without lengthening the
+window beyond a year or two, one cannot measure relevant medium- and long-term responses. If taxpayers
+respond to increases in capital gains rates by realizing gains less frequently—but not deferring indeﬁnitely—
+then these longer-run responses would suggest the impact of rate changes on capital gains tax collection is more
+temporary than previously believed.
+If this were the case, one would expect to observe a few patterns in the data when rates increase. First,
+6
+
+
+--- PDF PAGE 8 ---
+the duration that taxpayers hold their gains before realizing would rise. Second, the ratio of sales price to
+basis would be higher: In the Auerbach framework discussed in the Appendix, δ represents the share of
+realizations that occur annually. If a capital gains change aﬀects δ, the share of annual realizations falls, but
+when realizations occur, gains relative to purchase basis are higher.
+The IRS SOCA (Sales of Capital Assets) study provides some suggestive evidence on these patterns. The
+SOCA panel data includes the sales price, basis, gain or loss, and the purchase and sales date for capital gains
+transactions for a representative sample of taxpayers. This data is at the federal level and only for certain
+years between 1997-2012.5 As such, there is just one federal tax change during the time covered by these data,
+the 2003 reform, which reduced the top rate from 20% to 15%. This is one of many areas where more recent
+and comprehensive IRS data would be invaluable: Regular SOCA panels would enable better inference about
+the extent to which realization behavior has changed over time.
+Figure 3 shows that, for all transactions and corporate stock transactions speciﬁcally, duration decreases in
+lockstep with the rate change. In other words, the share of assets held for more than ten years drops when the
+rate falls, and the ratio of sales price to basis falls (Figure 4). It is worth noting that this evidence is purely
+suggestive—these two periods are distinct and diﬀerences in macroeconomic conditions may well be driving the
+results.6 But the ﬁgures are consistent with the notion that at least some of the changes induced by capital
+gains reforms have to do with the timing of gains, and not just the decision of whether or not to realize. Models
+that assume only the latter channel is operating will miss out on the revenue potential of rate changes.
+Figure 3: Holding Length by Asset Class
+(a) Held less than 5 years
+0
+.1
+.2
+.3
+Max tax rate, long-term gains
+.4
+.5
+.6
+.7
+.8
+Share of transactions held < 5 yrs
+1995
+2000
+2005
+2010
+2015
+year
+All assets
+Stocks
+Tax rate
+(b) Held 10 years or more
+0
+.1
+.2
+.3
+Max tax rate, long-term gains
+.04
+.05
+.06
+.07
+.08
+Share of transactions held < 10 yrs
+1995
+2000
+2005
+2010
+2015
+year
+All assets
+Stocks
+Tax rate
+Notes:
+These graphs plot the average share of capital gains realizations that are held for less than ﬁve years and for more
+than 10 years. For reference, we also plot the maximum federal long-term capital gains tax rate. Data from the IRS SOCA.
+5There is also a 1985 SOCA study but there are no study ﬁles for other years in the 1980s and early 1990s.
+6Indeed, the share of assets held for long periods is mechanically tied to recent market movements: when the stock of capital
+gains rises signiﬁcantly in a year, the share of total gains that have been held for long periods drops.
+7
+
+
+--- PDF PAGE 9 ---
+Figure 4: Price-to-Basis Ratio by Asset Class
+0
+.1
+.2
+.3
+Max tax rate, long-term gains
+1
+1.5
+2
+2.5
+3
+Price-to-basis ratio
+1995
+2000
+2005
+2010
+2015
+Year
+All assets
+Stocks
+Tax rate
+Notes:
+This graph plots the ratio of sales price to basis for long-term gain realizations of all assets and for stocks only. For
+reference, we also plot the maximum federal long-term capital gains tax rate. Data from the IRS SOCA.
+2.3
+Tax law changes make it unlikely that taxpayers can defer gains indeﬁnitely
+An early theoretical paper by Stiglitz (1983) suggests that the avoidance opportunities for capital gains taxes
+are so rampant that the existence of a tax would have no impact on individual consumption, because the tax
+can be avoided entirely through a range of techniques like the use of derivatives.
+Whether the assumptions that underlie this model were ever realistic is debatable. A long line of literature
+documents that most trading activity is inconsistent with tax-motivated realizations, which pushes against
+the idea that investors are so active in their tax avoidance strategies.7
+Further, to the extent that these
+opportunities did exist, they are more limited today than they were in the 1980s.
+For example, Section 1259 of the tax code was adopted in 1997 and required that a constructive sale of
+property held by a taxpayer be treated for the purposes of recognizing gain and establishing a holding period
+as if she had sold the property in question for its fair market value. Section 1259 leaves some room for forward
+contracts designed for the holder to defer tax liability for a period (typically three to ﬁve years) while receiving
+cash today. But recent legal precedent makes clear that there are limits to this strategy that make it infeasible
+for gains periods to be rolled over indeﬁnitely.8 Thus, this strategy oﬀers only a temporary salve to inevitable
+capital gains tax liability.
+For those at the top of the wealth distribution, diversiﬁcation, rather than consumption, needs likely drive
+7See, for example, Odean (1998, 1999) and Barber and Odean (2000). In more recent work looking at bunching behavior
+around capital gains tax thresholds, Dowd and McClelland (2019) ﬁnd that many taxpayers appear to pursue “distinctly inferior
+tax minimization [strategies]” when selling assets (p.347).
+8See, for example, Estate of Andrew J. McKelvey V. Commissioner, No. 17-2554 (2d Cir. 2018).
+8
+
+
+--- PDF PAGE 10 ---
+some realization choices. But for taxpayers who are looking to consume out of their gains, it is plausible that
+they could borrow against shares that have accumulated in value, thus deferring capital gains liability. However,
+potential borrowers are likely to face sizable marginal calls because of the volatility of their underlying shares.
+They thus need to have suﬃcient liquidity on hand, which makes consumption without realization challenging.
+Outside of the wealthiest who actively choose not to diversify (e.g., founders with large equity stakes), it
+seems unlikely that rate changes could conceivably lock-in accrued gains until death. More quantitative work is
+needed to try and measure the behavior of and share of gains held by taxpayers across the wealth distribution.
+3
+A Rising Share of Capital Gains Cannot Be Easily Retimed
+Relative to the 1990s, the portion of assets where accumulated capital gains could conceivably be deferred—and
+thus untaxed—has declined. The prototypical example of a capital gain is a share of corporate stock. An
+individual who bought a share of Amazon when it IPO-ed at $18 could sell that share today, and pay taxes on
+more than $3,100 of appreciation. Or, if she does not face consumption needs during her lifetime, she could
+defer the gains indeﬁnitely and bequest the share of stock to her heirs, at which point the basis will adjust and
+wipe out any tax liabilities for appreciated gains during her lifetime.
+Stock transactions are among the most elastic form of capital gains, since the taxpayer can proactively decide
+whether or not to realize. But, as Figure 5 shows, the share of capital gains that stock transactions represent
+has fallen substantially over the course of the last several decades, while more inelastic gains are growing in
+import: between 1997 and 2012, the share of long-term gains that involved corporate stock transactions fell
+from 41.2% to 26.9%.
+The largest corresponding growth is in passthrough gains or losses, which rose from just 22.6% of long-term
+gains to 37.7%. Pass-through gains refer to distributed gains from pass-through entities owned by taxpayers.
+This category includes the growth of “carried interest” compensation to general partners of hedge funds, venture
+capital, and private equity ﬁrms. Partnership agreements typically require funds to be returned within ten to
+twelve years of the initial commitment. Investors in these structures cannot time realization decisions around
+favorable tax environments, as their participation is limited, nor can they typically defer their gains indeﬁnitely
+like stockholders. Instead, they receive—and pay taxes on—gains when the general partners exit underlying
+investments. Moreover, many of the limited partners in these funds are non-taxable, such that the decision to
+exit an investment is likely to be less responsive to capital gains tax changes.
+Considering this shift in composition suggests that conventional elasticities are likely overstated. The most
+recent data available from the IRS reveal that nearly half of capital gains accrue from passthrough and mutual
+fund distributions.
+It is hard to know what share of non-personal capital gains are timeable around tax
+changes (e.g., corporate stock held by partnerships) and what share are inelastic (e.g., carried interest, which
+itself represents around 10% of annual capital gains in recent years (Smith, Zidar and Zwick, 2020)). It seems
+plausible that between 30% to 50% of capital gains are not easily timeable in response to tax changes. If 50%
+of gains are untimeable, then for e = −0.7 to be the right average elasticity across all gains, then the remaining
+9
+
+
+--- PDF PAGE 11 ---
+Figure 5: Stock Share of Gains
+0
+.1
+.2
+.3
+.4
+.5
+Max tax rate, long-term gains
+.25
+.3
+.35
+.4
+.45
+.5
+Stock share of total gains
+1995
+2000
+2005
+2010
+2015
+Year
+Stock share of total gains
+Tax rate
+Notes:
+Points represent the corporate stock share of total capital gains realized in a given year. These are
+plotted alongside the maximum federal long-term capital gains rate. Data from the IRS SOCA.
+50% of timeable capital gains that are elastic to the tax rate should have an elasticity of close to -1.4.
+Said another way, if 50% of capital gains are not sensitive to the tax environment, then no matter how large
+the “timeable” elasticity is, doubling rates to top ordinary income levels will still raise substantial revenues.
+Even if the timeable realizations shrink to zero, there remains a large stock of gains that will be taxed regularly
+at new, higher rates. Moreover, the appropriate elasticity for bigger changes should put more weight on the
+elasticity of the less timeable portion. The elasticities used by scorekeepers are averages across diﬀerent asset
+types. But the weights are not static: when there is a substantial change in the tax environment, the weights
+of the diﬀerent asset classes that comprise the capital gains tax base shift, and so too does the elasticity of the
+overall tax base. It is no accident that when capital gains tax rates are low (or, when taxpayers predict that
+rates may rise in the near future), a large share of realizations are in easily-timeable equities. This dynamism
+appears missing from existing revenue estimates.
+Work by Dowd, McClelland and Muthitacharoen (2015) conﬁrms that diﬀerent types of assets exhibit
+diﬀerent realization elasticities, ﬁnding for example that pass-through distributions exhibit a higher sensitivity
+to rate changes than other types of assets, while mutual fund distributions exhibit a much lower sensitivity.
+However, their data runs from 1999 through 2008, so may not reﬂect the current composition of gains. In
+addition, they ﬁnd the elasticity of directly-owned capital gains varies over diﬀerent time periods and is lower
+in recent years. Further research incorporating the growth of carried interest and the quantitative importance
+of diﬀerent types of gains and their varied elasticities would be useful for improving assessments of the revenue
+potential of capital gains tax reform.
+10
+
+
+--- PDF PAGE 12 ---
+4
+Realization Responses Generate Fiscal Spillovers
+4.1
+Capital gains tax changes aﬀect tax collections beyond realization responses
+Elasticity estimates from the literature tend to focus on the narrow question of how the capital gains tax
+base evolves in response to rate changes, but this approach oﬀers an incomplete answer to the question of total
+revenue eﬀects. Perhaps scorekeepers are already modeling such spillovers, but we are unaware of the approach,
+the assumed magnitudes, and the empirical basis for these assumptions.
+Consider a few examples of how changes in the capital gains tax might aﬀect other tax bases.
+First,
+incentives to mischaracterize labor income and proﬁts as capital gains to take advantage of lower tax rates
+can also aﬀect revenues (Smith, Yagan, Zidar and Zwick, 2019). The existence of preferential tax treatment
+encourages avoidance in the form of misclassiﬁcation of wage income for fund managers through the carried
+interest loophole, discussed above. Similarly, the tax code favors employee stock options, which, when held for
+long enough, qualify for capital gains treatment. Second, diﬀerent treatment of capital gains and dividends
+aﬀects the relative attractiveness of distributing corporate proﬁts via share buybacks versus dividends. Third,
+capital gains tax preferences can aﬀect the allocation of capital across industries and locations, due to sheltering
+opportunities such as like-kind exchanges in real estate and oil and gas, investments in Opportunity Zones,
+and incomplete recapture of depreciation deductions following asset sales. Reforming capital gains taxation
+will thus also reduce wasteful eﬀort by taxpayers and their planners to devote resources to circumventing tax
+liabilities by exploiting preferential capital gains rates and sheltering opportunities.
+4.2
+Capital gains tax changes and investment behavior
+One reason to be skeptical of the revenue potential of capital gains tax increases is that tax increases might
+impact economic growth. Many critics of capital income taxes argue that low rates induce business creation
+by allowing investors to reap a larger share of the gains they create (Feldstein, 2006).
+Indeed in the Bush Administration, one rationale for cutting capital gains rates was incentivizing en-
+trepreneurship.
+According to the 1990 Economic Report of the President, “[m]uch of the return to en-
+trepreneurs. . . comes through increasing the value of the business.
+Reducing the tax rate on capital gains
+will provide a climate that encourages businesses to invest in new technologies and products” (President and
+CEA, 1990). If large, such investment and entrepreneurship eﬀects would amplify realization elasticities by
+shrinking the future corporate tax base in the case of a capital gains tax increase.9
+But the case for large investment eﬀects of lower capital gains rates appears overstated. First, preferential
+capital gains treatment incentivizes some income sheltering that may cause misallocation and prevent capital
+from being employed in its most productive use. Second, the majority of venture capital comes from large
+institutions like pension funds, endowments of universities, charitable foundations, and sovereign wealth funds,
+which are already tax-exempt.10 Third, it is hard to imagine entrepreneurs making decisions about investment
+9Another reason why considering dynamics and longer horizons would be valuable is that longer horizons are needed to de-
+tect and quantify these eﬀects.
+10This was a point made by early work by Poterba (1989) and is even more true today.
+11
+
+
+--- PDF PAGE 13 ---
+and risk on the basis of the capital gains tax regime: Mark Zuckerberg was not focusing on the capital gains
+tax when he was in his dorm room coding up Facebook. Bell, Chetty, Jaravel, Petkova and Van Reenen (2019)
+reach the same conclusion based on comprehensive data on U.S. inventors, arguing that tax cuts do not produce
+more Einsteins. Finally, in a related context, empirical evidence suggests that dividend tax cuts that decrease
+ﬁrms’ cost of capital in similar ways to the capital gains tax do not aﬀect investment (Yagan, 2015).11
+5
+Implications for Scorekeeping and Revenue Estimates
+5.1
+Illustrative revenue estimates under diﬀerent assumptions
+Table 1 shows our realization and revenue estimates for capital gains tax rate increases. The ﬁrst column
+starts with CBO’s projections for realizations from 2020 to 2029. While the amount of realizations itself is
+endogenous, the CBO projections of approximately $1 trillion of realizations per year over the next decade
+provide a useful starting point.12 At a 20% tax rate, the table shows that the baseline capital tax revenues
+amount to around $200 billion a year.
+We consider two tax changes. The ﬁrst is a 2 percentage point increase in the rate, which allows us to
+compare our approach to published scores from JCT.13 Table 1 shows how much realizations shrink under
+diﬀerent elasticity assumptions. When e = 0, realizations remain at their baseline level. But when e = −0.3
+and e = −0.7, the baseline realizations shrink by 3%(= 9.5% × −0.3) and 7%, respectively. These are on the
+lower and upper end of the varied realization elasticities estimated by prior work.14 Applying the new 22% tax
+rate to the smaller realization levels results in less revenue than the additional $20B per year that would result
+if there were no behavioral response. With e = −0.3 and e = −0.7, the annual gains are $13.7 billion and $5.3
+billion, respectively.
+The JCT scores capital gains hikes of 2 percentage points as generating around $70 billion over ten years,
+which is roughly in the same ballpark as our ten-year estimate using the crude elasticity approach with e = −0.7
+of $54 billion. We suspect some of this diﬀerence may reﬂect more careful consideration of other components
+that our crude elasticity-based approach misses, but we view this as somewhat validating that the crude
+approach is on the same order of magnitude as this public JCT score.
+The second tax change of interest is doubling the rate from 20% to 40%, which would raise the capital gains
+rate to top ordinary income levels. This change requires much more extrapolation from observed variation in
+the data and more elaborate methods to model behavioral responses to such large changes. Nonetheless, it is
+11In contrast, Moon (2020) presents evidence that a capital gains tax reform in South Korea had substantial eﬀects on corpo-
+rate investment.
+12Note that CBO’s baseline has capital gains as a share of GDP falling slightly, which is why the table shows a relatively
+stable base of realizations despite higher nominal GDP. If the capital gains share of GDP is stable, then the revenue potential is
+even greater than the estimates we present.
+13Note that the CBO cites the JCT as the source for the table of revenue eﬀects. https://www.cbo.gov/budget-options/
+2018/54788.
+14Speciﬁcally, we take e = −0.3 from Agersnap and Zidar (2020) discussed above (and pick the lower end of their range to
+reﬂect an elasticity that may be consistent with eliminating stepped-up basis and including other base broadeners); e = −0.7
+is the midpoint of the current JCT and Treasury elasticity estimates of -.68 and -.72, which we believe may be based in part on
+the headline estimate of -0.72 in Dowd, McClelland and Muthitacharoen (2015). The 9.5% comes from the rate change of 2 p.p.
+divided by the average of the initial rate of 20% and the post-change rate of 22%.
+12
+
+
+--- PDF PAGE 14 ---
+striking to see how much elasticity assumptions aﬀect revenue scores. Using an elasticity of e = −0.3, raising
+the tax rate to 40% would raise just over $1.2 trillion over ten years.15 With the elimination of stepped-up
+basis, this estimate rises to $1.4 trillion.16
+Comparing this ﬁgure to the case of e = −0.7 illustrates the striking behavioral adjustments that are implied
+by such an elasticity. We can see this in multiple ways. First, in the Auerbach (1989) model, we can relate
+behavioral responses to changes in the frequency of realization and the extent of deferral until death or via
+charitable contribution. In the Appendix, we ﬁnd that with e = −0.7, if the eﬀect on the capital gains tax base
+is driven solely by an increase in deferred realizations, the share of unrealized gains would have to rise from
+50% to nearly 70%. If the eﬀect is driven by an increase in turnover, then turnover would decrease from once
+every three years (CBO and JCT, 2016) to once every 13 years, increasing by a factor of four.
+For the case of e = −0.3, the impact on unrealized gains would be half as large. The impact on turnover
+would also be about half as large, as turnover rises from once every three years to once every seven years. Thus,
+the change in underlying investor behavior predicted by applying e = −0.7 is signiﬁcantly more dramatic than
+in the case of e = −0.3. More explicit modeling of turnover behavior and the distribution of unrealized gains
+would help provide discipline when modeling large tax changes.17
+Second, simply applying e = −0.7 to the CBO’s projections for realized gains implies a gain of only $140
+billion over ten years, almost ten times smaller than our estimate using e = −0.3.18
+Figure 7 shows the
+sensitivity of revenue estimates to a range of elasticities from zero to one. Adjusting our preferred elasticity
+toward zero (e.g., if rate hikes are coupled with base-broadening reforms like the elimination of step-up in basis
+or death as a realization event) produces estimates approaching $2 trillion.19
+These calculations are far from a ﬁnal word on the tax revenue at stake from these reforms. Moreover, we
+suspect that, for a large change in tax rates, scorekeepers have developed more elaborate revenue models than
+our stylized approach implies. Our objective is to illustrate that the many issues we raise above suggest the
+capital gains tax base overall is likely less elastic than previously understood. Therefore, should scorekeepers
+be moved to revisit elasticity assumptions and the modeling of deferred gains, the impact on oﬃcial revenue
+estimates could be substantial.
+15The mechanical revenue of a 40% rate on a $1 trillion base is $400 billion in annual revenue, or an additional $200 billion
+in revenue per year. Using an elasticity of e = −0.3 shrinks the base by 20%
+
+which is −0.3 ×
+20
+(20+40)/2
+
+to $800 billion,
+generating around $320 billion in annual revenue, or about $120 billion more per year.
+16The impact of stepped-up basis elimination is based on the JCT score, which at current rates is estimated to raise $105
+billion over a decade (CBO, 2018). Since we are focused on the revenue eﬀect of raising capital gains rates to ordinary in-
+come levels, we double this estimate. An alternative approach would be to follow Penn-Wharton Budget Model and scale
+the realization elasticity down by 20% from -0.65 to -0.52 (https://budgetmodel.wharton.upenn.edu/issues/2020/9/14/
+biden-2020-analysis). Of course, a more sophisticated approach to estimating the interaction of various capital gains reform
+proposals would yield a more accurate estimate.
+17This calculation abstracts from reductions in the overall base due to real responses, which can also contribute to the change
+in gains and place less burden on turnover in accounting for the total response.
+18Using e = −0.7, the $1 trillion baseline realizations shrink by 47%
+
+which is −0.7 ×
+20
+(20+40)/2
+
+to $530 billion per year.
+With only $530 billion in realizations, a 40% tax rate would raise $212 billion, or just $12 billion more than the baseline rev-
+enues of $200 billion per year.
+19To facilitate comparisons to prior estimates, we express calculations in terms of elasticities with respect to the tax rate.
+In general, we prefer the net-of-tax formulation because it measures the relevant price governing behavior, is standard in the
+broader tax literature, and better reﬂects the economic magnitude of the tax shock. The net-of-tax estimates are similar to the
+estimates we present and do not alter the conclusion.
+13
+
+
+--- PDF PAGE 15 ---
+Revenue estimates from scorekeeping community.
+To our knowledge, there are no recent oﬃcial esti-
+mates available for raising capital gains rates to ordinary income levels. Estimates oﬀered during this election
+cycle from unoﬃcial scorekeepers (see Table 2) suggest that large increases in capital gains rates can raise
+signiﬁcant revenue. The general consensus appears to be that an increase in capital gains rates of the size
+we contemplate is likely to raise hundreds of billions of dollars in the coming decade. Still, these scores are
+far below the crude estimate that we oﬀer in Section 5.1.20 In part, this diﬀerence reﬂects the much more
+signiﬁcant taxpayer response assumed by the scorekeeping community, which we think is worth revisiting in
+light of the considerations we oﬀer.
+5.2
+Elasticity depends on broader capital gains context
+Unique features of capital gains taxation make the tax base more sensitive to rate changes than other types of
+taxes (Dowd and Richards, 2021). Most obviously, the existence of a step-up in basis upon the death of the
+taxpayer dissuades holders of unappreciated assets from realizing their gains in a high-rate environment, in the
+absence of consumption needs or a desire to diversify. Eliminating stepped-up basis would diminish incentives
+to lock-in gains, which is why we estimate an added $200 billion in additional capital gains taxes collected if
+raising capital gains rates is combined with this change. Making death a realization event for capital gains
+tax collection would likely raise even more, because the value of deferral, especially in a low-rate environment,
+would be minimal if taxes were sure to be collected at death (abstracting away from policy risk that such a
+change would be rolled back by future policymakers).
+In the current code, deferring gains until death is not the only capital gains avoidance tactic. When an
+individual donates an asset to charity (e.g., share of stock) that has appreciated in value, capital gains on that
+asset go untaxed, and the individual receives a credit equivalent to the full value of the gift, despite not paying
+any taxes on the gain. Further, investors can place existing assets with accumulated gains into Opportunity
+Zones (meant to spur investment in economically distressed communities) to defer payment of capital gains; or
+can avoid taxation all together, for example through the use of like-kind exchanges for real estate transactions.
+On top of this, investing in small businesses can mean up to $10 million in gains is excluded from capital gains
+taxation. Broadening the capital gains tax base by limiting these preferences raises the revenue potential of
+capital gains reform eﬀorts. Conversely, while signiﬁcant sheltering opportunities exist, there is a legitimate
+concern that raising the capital gains rate will result in taxpayers relying more on existing tools to shield gains
+from taxation, thus limiting the potential of reform.
+The elasticities that we use are based on the current capital taxation regime, including a step-up in basis at
+death, which ampliﬁes the incentive to respond to capital gains tax changes. A broader overhaul of capital gains
+taxation—which raises rates while also eliminating sheltering opportunities—could result in a lower realization
+elasticity, and thus even more revenue potential, than our estimates suggest.
+20One diﬀerence between our back-of-the-envelope calculation and these scores is the size of the tax base. These scores focus
+on a proposal to raise rates only for those whose AGI exceeds one million, who collectively account for around 70% of all taxable
+realizations based on 2019 SCF data. Applying our approach to this group would result in 70% of the revenue from raising rates
+across the board or $840 billion + $200 billion = $1040 billion.
+14
+
+
+--- PDF PAGE 16 ---
+5.3
+Transparency would improve policy analysis of alternative reforms
+Transparency on how dynamic adjustments are made in oﬃcial scores would be valuable for several reasons.
+First, this transparency will facilitate discussion between professional scorekeepers and outside experts about
+the extent to which models can be improved and new data collected. Second, it will facilitate comparison of
+estimates across a broader set of proposals with conﬁdence that consistent scorekeeping practices are applied.
+Ensuring comparability across scores produced for diﬀerent proposals is essential to informing the policy process.
+And comparability depends on transparency of the assumptions that underlie these estimates.
+A few examples are illustrative. Mark-to-market capital gains proposals have yet to be oﬃcially scored.
+But some available estimates of the likely revenue potential suggest that nearly $200 billion annually could be
+raised (Gravelle, 2019; Batchelder and Kamin, 2019). By way of comparison, JCT estimates that taxing capital
+gains at death would yield about $40 billion annually (absent any behavioral changes).21 It is unclear how to
+get from this realization-at-death score to a mark-to-market estimate of nearly 5 times that amount: In a low
+rate environment, the value of deferral is negligible, so the two approaches should yield similar revenue.
+Another example concerns the score for eliminating the carried interest loophole. The JCT approach to
+scoring this provision seems to assume even larger shifting responses than in the case of capital gains tax
+increases, presumably because they model such a change in the absence of other changes to taxing gains. Es-
+sentially, the assumption is that fund managers will devise alternative contractual arrangements to reconstruct
+the status quo, so that revenues ultimately rise very little. It is unclear (to us) whether there is an empirical
+basis for this assumption.
+5.4
+A process suggestion
+Transparency is a double-edged sword. Given the importance of oﬃcial scores to legislative decision-making,
+making the assumptions underlying scorekeepers’ estimation publicly available will invite greater lobbying
+around those assumptions by supporters and critics of diﬀerent reforms.
+Our proposal is not to open the ﬂoodgates with respect to scorekeeping writ large. A natural structure is
+in place: CBO already has a panel of advisers who provide input on economic issues. This group or a related
+subgroup of experts can be convened to advise JCT, as well as CBO and the Treasury Oﬃce of Tax Analysis. It
+will be important for diverse views to be represented in this body, and it will be valuable to work with the full
+set of scorekeepers to select a panel who is thoughtful and likely to be taken seriously by the revenue estimating
+community. Short of such a formal gathering, promoting informal conversations and collaborations between
+scorekeepers and academics would facilitate advancing the research frontier in the most useful directions.
+6
+Conclusion
+The appropriate tax treatment of capital gains is a major issue. Historically, the consensus of scorekeepers
+has been that very sizable behavioral eﬀects diminish the revenue-raising potential of rate hikes, because they
+21From the JCT’s 2019 tax expenditure estimates: https://www.jct.gov/publications/2019/jcx-55-19/.
+15
+
+
+--- PDF PAGE 17 ---
+encourage taxpayers to lock-in gains and avoid taxation, potentially indeﬁnitely. We believe this conclusion is
+worth revisiting in light of recent research, an improved understanding of dynamic responses via medium-run
+investor behavior, and the recent evolution in the composition of capital gains.
+Indeed, we argue the revenue potential from substantially increasing tax rates on capital gains may be
+greater than previously understood. A crude estimate suggests that raising capital gains rates to ordinary
+income levels could raise vastly more revenue than what is implied by applying conventional elasticities. The
+striking diﬀerence suggests there is much to be gained from reﬁning the approach to scoring capital gains tax
+reforms.
+Our call to action is borne from a position of enormous respect and admiration for the integrity and
+seriousness of the scorekeepers. The ultimate goal is to continue to advance our understanding of taxpayer
+behavior and the revenue potential of capital gains (and other) tax reform eﬀorts to inform the policymaking
+process.
+For example, it would be valuable for scorekeepers to explicitly model the consequences of capital gains tax
+changes on turnover, taking into account the large stock of yet unrealized gains, how it varies across types of
+gains, and how it may evolve. We’re optimistic that focusing on turnover is one avenue towards potentially
+improving revenue estimates and the analysis of capital gains taxation.
+16
+
+
+--- PDF PAGE 18 ---
+References
+Agersnap, Ole, and Owen Zidar. 2020. “The Tax Elasticity of Capital Gains and Revenue-Maximizing
+Rates.” NBER Working Paper No. 27705.
+Auerbach, Alan J. 1989. “Capital gains taxation and tax reform.” National Tax Journal, 42(3): 391–401.
+Auten, Gerald E, and Joseph J Cordes. 1991. “Policy watch: cutting capital gains taxes.” Journal of
+Economic Perspectives, 5(1): 181–192.
+Barber, Brad M, and Terrance Odean. 2000. “Trading is hazardous to your wealth: The common stock
+investment performance of individual investors.” Journal of Finance, 55(2): 773–806.
+Batchelder, Lily L., and David Kamin. 2019. “Taxing the Rich: Issues and Options.” Available at SSRN.
+Bell, Alex, Raj Chetty, Xavier Jaravel, Neviana Petkova, and John Van Reenen. 2019. “Who
+becomes an inventor in America? The importance of exposure to innovation.” The Quarterly Journal of
+Economics, 134(2): 647–713.
+CBO. 2018. “Options for Reducing the Deﬁcit: Change the Tax Treatment of Capital Gains From Sales of
+Inherited Assets.” https://www.cbo.gov/budget-options/54792.
+CBO and JCT. 2016. “The Distribution of Asset Holdings and Capital Gains.” https://www.cbo.gov/
+sites/default/files/114th-congress-2015-2016/reports/51831-capitalgains.pdf.
+Dowd, Tim, and Robert McClelland. 2019. “The Bunching of Capital Gains Realizations.” National Tax
+Journal, 72(2): 323–358.
+Dowd, Tim, and Zach Richards. 2021. “Contextualizing Elasticities for Policymaking: Capital Gains
+and Revenue-Maximizing Tax Rates.” Available on SSRN: https://papers.ssrn.com/sol3/papers.cfm?
+abstract_id=3767121.
+Dowd, Tim, Robert McClelland, and Athiphat Muthitacharoen. 2015. “New evidence on the tax
+elasticity of capital gains.” National Tax Journal, 68(3): 511.
+Feldstein, Martin. 2006. “The eﬀect of taxes on eﬃciency and growth.” NBER Working Paper No. 12201.
+Gravelle, Jane. 1991. “Limits to Capital Gains Feedback Eﬀects.” Congressional Research Service, Library
+of Congress.
+Gravelle, Jane. 2019. “Mark-to-Market Taxation of Capital Gains.” https://www.taxpolicycenter.org/
+sites/default/files/mark-to-market_taxation_of_capital_gains.pdf.
+Joint Committee on Taxation, Staﬀ. 1990. “Explanation of Methodology Used to Estimate Proposals
+Aﬀecting the Taxation of Income from Capital Gains.” Vol. JCS-12-90.
+Moon, Terry S. 2020. “Capital gains taxes and real corporate investment.” Princeton University Working
+Paper.
+Odean, Terrance. 1998. “Are investors reluctant to realize their losses?” Journal of Finance, 53(5): 1775–
+1798.
+Odean, Terrance. 1999. “Do investors trade too much?” American Economic Review, 89(5): 1279–1298.
+Poterba, James M. 1989. “Venture Capital and Capital Gains Taxation.” Tax Policy and the Economy,
+47–67.
+President and CEA. 1990. “Economic Report of the President.” https://fraser.stlouisfed.org/title/
+economic-report-president-45/1990-8161.
+Saez, Emmanuel, Joel Slemrod, and Seth H. Giertz. 2012. “The Elasticity of Taxable Income with
+Respect to Marginal Tax Rates: A Critical Review.” Journal of Economic Literature, 50(1): 3–50.
+17
+
+
+--- PDF PAGE 19 ---
+Smith, Matthew, Danny Yagan, Owen Zidar, and Eric Zwick. 2019. “Capitalists in the Twenty-ﬁrst
+Century.” Quarterly Journal of Economics, 134(4): 1675–1745.
+Smith, Matthew, Owen M Zidar, and Eric Zwick. 2020. “Top Wealth in America: New Estimates and
+Implications.” Working Paper.
+Stiglitz, Joseph E. 1983. “Some aspects of the taxation of capital gains.” Journal of Public Economics,
+21(2): 257–294.
+Yagan, Danny. 2015. “Capital tax reform and the real economy: The eﬀects of the 2003 dividend tax cut.”
+American Economic Review, 105(12): 3531–63.
+18
+
+
+--- PDF PAGE 20 ---
+Figure 6: Evolution of Wealth and Capital Gains Tax Rates
+(a) Fixed income assets
+10
+20
+30
+40
+Tax rate (%)
+30
+40
+50
+60
+70
+80
+Share of GDP (%)
+1965
+1975
+1985
+1995
+2005
+2015
+Fixed income wealth
+Max long-term capital gains tax rate
+(b) Pass-through equity wealth
+10
+20
+30
+40
+Tax rate (%)
+20
+30
+40
+50
+60
+70
+Share of GDP (%)
+1965
+1975
+1985
+1995
+2005
+2015
+Pass-through wealth
+Max long-term capital gains tax rate
+(c) Equity and ﬁxed income wealth
+10
+20
+30
+40
+Tax rate (%)
+100
+120
+140
+160
+180
+200
+Share of GDP (%)
+1965
+1975
+1985
+1995
+2005
+2015
+Equity and fixed income wealth
+Max long-term capital gains tax rate
+Notes:
+These graphs plot ﬁxed income assets, pass-through equity wealth, total equity and ﬁxed income wealth,
+and the maximum long-term capital gains tax rates between 1960 and 2014 as a share of GDP. In panel (a), ﬁxed in-
+come assets include taxable and non-taxable ﬁxed income assets, in addition to non-interest bearing deposits. In panel
+(b), pass-through wealth includes assets from partnerships, sole-proprietorships, and S-corporations. In panel (c), eq-
+uity includes C-corporation and pass-through assets. Data on wealth from Smith, Zidar, and Zwick (2020). Data on tax
+rates from the U.S. Treasury (https://www.treasury.gov/resource-center/tax-policy/tax-analysis/Documents/
+Taxes-Paid-on-Capital-Gains-for-Returns-with-Positive-Net-Capital-Gains.pdf) and the Tax Foundation (https:
+//taxfoundation.org/federal-capital-gains-tax-collections-1954-2009/). GDP data from the World Bank (https:
+//data.worldbank.org/indicator/NY.GDP.MKTP.CD).
+19
+
+
+--- PDF PAGE 21 ---
+Figure 7: Illustrative Revenue Estimates for Diﬀerent Elasticities
+-1
+0
+1
+2
+Change in 10-year revenue ($ T)
+0
+.2
+.4
+.6
+.8
+1
+Elasticity with respect to tax rate
+20% to 22% tax rate
+20% to 40% tax rate
+Notes:
+We base our estimates on CBO projections of capital gains realizations from 2020 to 2029 (accessible at https://www.
+cbo.gov/data/budget-economic-data under “Revenue projections, by category”). See Table 1 for underlying CBO projections
+and realizations estimates corresponding to e = −.3 and e = −0.7. We assume a starting tax rate of 20%. When multiplied by
+−1−0.22
+0.22 , tax rate elasticities at a tax rate of 22% become net-of-tax rate elasticities.
+20
+
+
+--- PDF PAGE 22 ---
+Table 1: Realization and Revenue Estimates for 2 p.p. and 20 p.p. Tax Rate Increases, by Elasticity
+t = 22%
+t = 40%
+CBO Projections
+Realizations
+Revenue
+Realizations
+Revenue
+Realizations
+Revenue
+e = 0
+e = -0.3
+e = -0.7
+e = 0
+e = -0.3
+e = -0.7
+e = 0
+e = -0.3
+e = -0.7
+e = 0
+e = -0.3
+e = -0.7
+2020
+1,013
+203
+1,013
+984
+945
+223
+216
+208
+1,013
+810
+540
+405
+324
+216
+2021
+1,009
+202
+1,009
+980
+942
+222
+216
+207
+1,009
+807
+538
+404
+323
+215
+2022
+1,004
+201
+1,004
+975
+937
+221
+215
+206
+1,004
+803
+535
+402
+321
+214
+2023
+987
+197
+987
+959
+921
+217
+211
+203
+987
+790
+526
+395
+316
+211
+2024
+986
+197
+986
+958
+920
+217
+211
+202
+986
+789
+526
+394
+316
+210
+2025
+996
+199
+996
+968
+930
+219
+213
+205
+996
+797
+531
+398
+319
+212
+2026
+1,016
+203
+1,016
+987
+948
+224
+217
+209
+1,016
+813
+542
+406
+325
+217
+2027
+1,043
+209
+1,043
+1,013
+973
+229
+223
+214
+1,043
+834
+556
+417
+334
+223
+2028
+1,074
+215
+1,074
+1,043
+1,002
+236
+230
+221
+1,074
+859
+573
+430
+344
+229
+2029
+1,110
+222
+1,110
+1,078
+1,036
+244
+237
+228
+1,110
+888
+592
+444
+355
+237
+SUM
+10,238
+2,048
+10,238
+9,945
+9,555
+2,252
+2,188
+2,102
+10,238
+8,190
+5,460
+4,095
+3,276
+2,184
+Notes: CG base taken from January 2020 CBO predictions for capital gains realizations over the next ten years (accessible at https://www.cbo.gov/
+data/budget-economic-data under “Revenue projections, by category”). We assume a starting tax rate of 20% to compute baseline total revenues.
+21
+
+
+--- PDF PAGE 23 ---
+Table 2: Unoﬃcial estimates of revenue potential from taxing capital gains at ordinary income levels
+Source
+Revenue
+estimate
+($B)
+Elasticities
+Notes
+Penn Wharton
+Budget Model
+382
+With step-up in basis: -0.66
+Eliminating step-up in basis: -0.53
+Reported estimate includes $178B from
+taxing capital gains and dividends at or-
+dinary rates, and $204B from repealing
+step-up in basis
+Tax Foundation
+469
+Long-run: -0.79
+Transitory: -1.2 (year 1) and -1.0
+(year 2)
+Tax capital gains and dividends at the
+same rate as ordinary income for those
+with income $1M+ and repeal step-up in
+basis
+Tax Policy Cen-
+ter
+373
+With step-up in basis: -0.7
+Eliminating step-up in basis: -0.4
+Tax capital gains and dividends at the
+same rate as ordinary income for those
+with income $1M+ and tax unrealized
+gains at death
+Notes: All rows present 10 year revenue estimates for raising the tax on capital gains and dividends to ordi-
+nary rates (39.6%) for income above $1 million and eliminating the step-up in basis at death.
+Penn Wharton Budget Model revenue and elasticity estimates can be found at https:
+//budgetmodel.wharton.upenn.edu/issues/2020/3/10/the-biden-tax-plan-updated
+and https://budgetmodel.wharton.upenn.edu/issues/2019/12/4/
+the-revenue-maximizing-capital-gains-tax-rate-with-and-without-stepped-up-basis-at-death.
+Tax Foundation revenue and elasticity estimates are available at https://taxfoundation.org/
+joe-biden-tax-plan-2020/ and https://taxfoundation.org/2020-capital-gains-tax-proposals/.
+Estimates from the Tax Policy Center can be found at https://www.taxpolicycenter.org/
+model-estimates/updated-analysis-former-vice-president-bidens-tax-plan-october-2020/
+t20-0246-former and https://www.taxpolicycenter.org/sites/default/files/publication/158624/
+An_Analysis_of_Former_Vice_President_Bidens_Tax_Proposals_1_2.pdf.
+22
+
+
+--- PDF PAGE 24 ---
+Appendix For Online Publication
+A
+A model of capital gains realizations
+This appendix describes and updates the asset turnover model in Auerbach (1989), which we use to relate
+capital gains elasticities to changes in investor behavior. The two key parameters are f, which is the fraction
+of assets that never face capital gains, and δ, which is the fraction of assets that face capital gains and are sold
+every year. The main idea is that a given change in capital gains realizations can be related to changes in these
+two parameters, which represent investors holding assets until death and asset turnover frequency.
+We need to deﬁne a few more variables to relate capital gains realizations Gt in to these two key parameters.
+The nominal value of assets sold in year t is denoted at, and g is the annual growth rate of asset value (and
+output growth). With these components, we can express capital gains realizations Gt as the sum of accumulated
+gains from assets held at diﬀerent durations:
+Gt = gδat−1 + [(1 + g)2 −1]δ(1 −δ)at−2 + [(1 + g)3 −1]δ(1 −δ)2at−3 + ...
+(A.1)
+Auerbach (1989) shows that one can express the steady-state ratio of realizations to sales at each date:
+G
+a =
+g
+g + δ .
+(A.2)
+As Auerbach argues, the total value of assets ever sold S is sum of those last realized one year ago, at current
+value, (1 + g)at−1 plus those two years ago, at current value, (1 + g)2(1 −δ)at−2, plus those three years ago,
+at current value, (1 + g)3(1 −δ)2at−3, etc. Given the steady state condition that at = (1 + g)at−1, the sum
+S = at + (1 −δ)at−1 + (1 −δ)2at−2 + ... = at
+δ . Since a fraction f of all assets are never realized, this result (i.e.,
+A = (1 −f) at
+δ ) and equation A.2 imply that the ratio of gains to assets each year is:
+G
+A = (1 −f) gδ
+g + δ
+(A.3)
+Thus, the ratio of realized gains to the total value of assets that are ever sold is a function of our two main
+parameters f and δ, as well as the rate of growth g. We cannot observe f and g directly, but we can re-arrange
+these expressions to estimate them using nominal rates of return, the ratio of gains to sales, and the ratio of
+gains to assets. Speciﬁcally, we can rewrite equation A.2 and A.3:
+δ = g(1 −G
+a )
+G
+a
+(A.4)
+f = 1 −
+G
+A(g + δ)
+gδ
+(A.5)
+Auerbach (1989) sets g = .1 and estimates that G
+A = 0.033 and G
+a = 0.303. The resulting estimates using
+inputs from the late 1970s and early 1980s give δ = 0.23 and f = 0.526, suggesting that half of assets never
+face capital gains, and those that do turn over roughly every four years.
+Updating the inputs to this calculation gives slightly higher estimates of δ and similar estimate of f. If
+we set g = .06 based on nominal annual wealth growth since 1990, G
+A = .0257, and G
+a = 0.158, then we get
+updated estimates ˆδ = .32 and ˆf = .49.22
+A.1
+Using model to quantify implications of elasticity estimates for δ and f
+Taking log diﬀerences of A.3, gives an expression for log changes in the realizations in terms of parameters:
+∆ln G = ∆ln(1 −f) + ∆ln
+ gδ
+g + δ
+
++ ∆ln A
+(A.6)
+22Note that G
+A = .0257 is the ratio of realized gains divided by household public and private equity holdings plus real estate
+wealth less housing wealth. For G
+a = 0.158, we use the ratio of net gains to sales price in Table 1C, which has long term gains in
+2010. https://www.irs.gov/pub/irs-soi/soi-a-inca-id1604.pdf
+23
+
+
+--- PDF PAGE 25 ---
+We can use this expression to relate our parameters to capital gains realization elasticities, (i.e., e = ∆ln G
+∆ln τ ) with
+respect to capital gains tax rates τ. For a change in tax rates and a given elasticity, the change in realizations
+is ∆ln G = e × ∆ln τ. Using this expression allows us to go from an elasticity value and a tax change to see
+how much f and δ might have to change.
+e × ∆ln τ = ∆ln(1 −f) + ∆ln
+ gδ
+g + δ
+
++ ∆ln A
+(A.7)
+Quantitatively, we can start with the updated calibration values described above: f0 = .49 and δ0 = .32,
+g = .06 as a baseline. Consider a capital gains tax rate increase that increases rates from τ0 = .22 to τ1 = .396,
+so ∆ln τ ≈60%.23 With an elasticity of -.7, the left-hand-side is e = −0.7 × .6 = −.42, which means that
+gains would fall by 42%. Applying equation A.7, we can obtain this decline by 42% through changes in f,
+δ, or some combination (assuming, for simplicity, that ∆ln A = 0).
+Using only changes in f, we’d need
+∆ln(1 −f) = −.42 ⇒f1 = 66.5. In other words, if all the response to the tax increase came from changes f,
+the share of gains that are held until death would have to increase by 17.5 percentage points from an initial
+level of f0 = .49. Using only changes in δ, we’d get δ1 = .075, which is a substantial decline in asset turnover
+frequency relative to an initial value of δ0 = .32. With an elasticity of e = −0.3, the percentage point increase
+in f would be half as large (i.e., the increase would be 8.5 p.p.), and the value of δ1 = .15 would be twice as
+high.
+23Note that this stylized calculation abstracts from state capital gains tax rates as well as other tax interactions.
+24

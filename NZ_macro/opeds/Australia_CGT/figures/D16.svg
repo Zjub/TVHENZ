@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='0.00' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNjMuNzR8ODQyLjA4fDUzLjc4fDUyMi42MA=='>
+    <rect x='63.74' y='53.78' width='778.34' height='468.82' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNjMuNzR8ODQyLjA4fDUzLjc4fDUyMi42MA==)'>
+<polyline points='63.74,503.48 842.08,503.48 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='63.74,364.07 842.08,364.07 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='63.74,224.66 842.08,224.66 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='63.74,85.24 842.08,85.24 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='175.62,522.60 175.62,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='366.85,522.60 366.85,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='558.09,522.60 558.09,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='749.33,522.60 749.33,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='99.12,501.29 118.24,496.53 137.37,485.52 156.49,487.18 175.62,491.52 194.74,488.81 213.86,485.59 232.99,465.58 252.11,478.56 271.24,470.10 290.36,456.70 309.48,430.11 328.61,416.64 347.73,416.54 366.85,423.96 385.98,417.27 405.10,414.83 424.23,372.25 443.35,349.36 462.47,307.95 481.60,206.22 500.72,244.85 519.85,389.29 538.97,384.49 558.09,381.02 577.22,409.61 596.34,402.94 615.46,364.08 634.59,336.45 653.71,332.05 672.84,314.82 691.96,286.68 711.08,321.45 730.21,317.96 749.33,189.27 768.46,75.09 787.58,215.78 806.70,220.48 ' style='stroke-width: 2.13; stroke: #146B8C; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='58.36' y='506.92' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='23.98px' lengthAdjust='spacingAndGlyphs'>0.0bn</text>
+<text x='58.36' y='367.50' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>20.0bn</text>
+<text x='58.36' y='228.09' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>40.0bn</text>
+<text x='58.36' y='88.68' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>60.0bn</text>
+<text x='175.62' y='534.84' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>1990-91</text>
+<text x='366.85' y='534.84' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2000-01</text>
+<text x='558.09' y='534.84' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='34.44px' lengthAdjust='spacingAndGlyphs'>2010-11</text>
+<text x='749.33' y='534.84' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2020-21</text>
+<text transform='translate(23.54,288.19) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='55.38px' lengthAdjust='spacingAndGlyphs'>value_real</text>
+<text x='63.74' y='45.48' style='font-size: 11.00px; font-family: "Arial";' textLength='380.17px' lengthAdjust='spacingAndGlyphs'>ATO observations, approximately CPI-deflated into 2023-24 purchasing power</text>
+<text x='63.74' y='27.83' style='font-size: 18.00px; font-weight: bold; font-family: "Arial";' textLength='450.89px' lengthAdjust='spacingAndGlyphs'>D16 A longer history of individuals’ net taxable gains</text>
+<text x='63.74' y='549.28' style='font-size: 9.00px; font-family: "Arial";' textLength='579.02px' lengthAdjust='spacingAndGlyphs'>Source: ATO Individuals Table 1A; ABS CPI via RBA G1.  Net taxable gains reflect successive tax rules and reporting changes, including the 1999</text>
+<text x='63.74' y='561.16' style='font-size: 9.00px; font-family: "Arial";' textLength='261.19px' lengthAdjust='spacingAndGlyphs'>discount. This history does not identify the causal effect of reform.</text>
+</g>
+</g>
+</svg>

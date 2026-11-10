@@ -1,0 +1,28 @@
+entity,asset,value
+Companies,Australian-listed shares,4412076037
+Companies,Australian-listed trust units,316246536
+Companies,Collectables,3609814
+Companies,Direct Australian real estate,5726026883
+Companies,Distributions from trusts/funds,3524185385
+Companies,Other assets/events,5799456702
+Companies,Other real estate,90498809
+Companies,Other shares,5695456819
+Companies,Other units,593726024
+Funds,Australian-listed shares,14994729412
+Funds,Australian-listed trust units,1891881520
+Funds,Collectables,13186896
+Funds,Direct Australian real estate,3955984957
+Funds,Distributions from trusts/funds,25604866681
+Funds,Other assets/events,14765866288
+Funds,Other real estate,42279970
+Funds,Other shares,32552210240
+Funds,Other units,12948707854
+Individuals,Australian-listed shares,9106343433
+Individuals,Australian-listed trust units,457600886
+Individuals,Collectables,58056951
+Individuals,Direct Australian real estate,37633139034
+Individuals,Distributions from trusts/funds,29289966640
+Individuals,Other assets/events,3772533253
+Individuals,Other real estate,997535446
+Individuals,Other shares,7169479381
+Individuals,Other units,639373982

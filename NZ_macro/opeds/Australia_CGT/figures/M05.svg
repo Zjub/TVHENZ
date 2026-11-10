@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='648.00pt' viewBox='0 0 864.00 648.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw2NDguMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='648.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw2NDguMDA=)'>
+<rect x='0.00' y='0.00' width='864.00' height='648.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNTguNDB8ODQyLjA4fDUzLjc4fDUwNi44OQ=='>
+    <rect x='58.40' y='53.78' width='783.68' height='453.11' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTguNDB8ODQyLjA4fDUzLjc4fDUwNi44OQ==)'>
+<polyline points='58.40,503.79 842.08,503.79 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='58.40,428.47 842.08,428.47 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='58.40,353.14 842.08,353.14 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='58.40,277.82 842.08,277.82 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='58.40,202.49 842.08,202.49 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='58.40,127.16 842.08,127.16 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='94.02,506.89 94.02,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='242.45,506.89 242.45,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='390.87,506.89 390.87,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='539.30,506.89 539.30,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='687.72,506.89 687.72,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='836.15,506.89 836.15,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='94.02,428.47 153.39,410.87 272.13,370.64 390.87,322.72 568.98,233.60 806.46,74.37 ' style='stroke-width: 2.13; stroke: #146B8C; stroke-linecap: butt;' />
+<polyline points='94.02,486.29 153.39,468.70 272.13,428.47 390.87,380.55 568.98,291.42 806.46,132.20 ' style='stroke-width: 2.13; stroke: #CF671D; stroke-linecap: butt;' />
+<polyline points='94.02,486.29 153.39,468.70 272.13,428.47 390.87,380.55 568.98,291.42 806.46,132.20 ' style='stroke-width: 2.13; stroke: #20836B; stroke-linecap: butt;' />
+<circle cx='94.02' cy='486.29' r='2.13' style='stroke-width: 0.77; stroke: #20836B; fill: #20836B;' />
+<circle cx='94.02' cy='486.29' r='2.13' style='stroke-width: 0.77; stroke: #CF671D; fill: #CF671D;' />
+<circle cx='94.02' cy='428.47' r='2.13' style='stroke-width: 0.77; stroke: #146B8C; fill: #146B8C;' />
+<circle cx='153.39' cy='468.70' r='2.13' style='stroke-width: 0.77; stroke: #20836B; fill: #20836B;' />
+<circle cx='153.39' cy='468.70' r='2.13' style='stroke-width: 0.77; stroke: #CF671D; fill: #CF671D;' />
+<circle cx='153.39' cy='410.87' r='2.13' style='stroke-width: 0.77; stroke: #146B8C; fill: #146B8C;' />
+<circle cx='272.13' cy='428.47' r='2.13' style='stroke-width: 0.77; stroke: #20836B; fill: #20836B;' />
+<circle cx='272.13' cy='428.47' r='2.13' style='stroke-width: 0.77; stroke: #CF671D; fill: #CF671D;' />
+<circle cx='272.13' cy='370.64' r='2.13' style='stroke-width: 0.77; stroke: #146B8C; fill: #146B8C;' />
+<circle cx='390.87' cy='380.55' r='2.13' style='stroke-width: 0.77; stroke: #20836B; fill: #20836B;' />
+<circle cx='390.87' cy='380.55' r='2.13' style='stroke-width: 0.77; stroke: #CF671D; fill: #CF671D;' />
+<circle cx='390.87' cy='322.72' r='2.13' style='stroke-width: 0.77; stroke: #146B8C; fill: #146B8C;' />
+<circle cx='568.98' cy='291.42' r='2.13' style='stroke-width: 0.77; stroke: #20836B; fill: #20836B;' />
+<circle cx='568.98' cy='291.42' r='2.13' style='stroke-width: 0.77; stroke: #CF671D; fill: #CF671D;' />
+<circle cx='568.98' cy='233.60' r='2.13' style='stroke-width: 0.77; stroke: #146B8C; fill: #146B8C;' />
+<circle cx='806.46' cy='132.20' r='2.13' style='stroke-width: 0.77; stroke: #20836B; fill: #20836B;' />
+<circle cx='806.46' cy='132.20' r='2.13' style='stroke-width: 0.77; stroke: #CF671D; fill: #CF671D;' />
+<circle cx='806.46' cy='74.37' r='2.13' style='stroke-width: 0.77; stroke: #146B8C; fill: #146B8C;' />
+<line x1='58.40' y1='428.47' x2='842.08' y2='428.47' style='stroke-width: 1.16; stroke-dasharray: 6.21,6.21; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw2NDguMDA=)'>
+<text x='53.02' y='507.23' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='23.97px' lengthAdjust='spacingAndGlyphs'>-$10k</text>
+<text x='53.02' y='431.90' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.45px' lengthAdjust='spacingAndGlyphs'>$0k</text>
+<text x='53.02' y='356.57' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='20.78px' lengthAdjust='spacingAndGlyphs'>$10k</text>
+<text x='53.02' y='281.25' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='20.78px' lengthAdjust='spacingAndGlyphs'>$20k</text>
+<text x='53.02' y='205.92' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='20.78px' lengthAdjust='spacingAndGlyphs'>$30k</text>
+<text x='53.02' y='130.60' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='20.78px' lengthAdjust='spacingAndGlyphs'>$40k</text>
+<text x='94.02' y='519.14' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.86px' lengthAdjust='spacingAndGlyphs'>0%</text>
+<text x='242.45' y='519.14' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.86px' lengthAdjust='spacingAndGlyphs'>2%</text>
+<text x='390.87' y='519.14' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.86px' lengthAdjust='spacingAndGlyphs'>5%</text>
+<text x='539.30' y='519.14' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.86px' lengthAdjust='spacingAndGlyphs'>8%</text>
+<text x='687.72' y='519.14' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='19.19px' lengthAdjust='spacingAndGlyphs'>10%</text>
+<text x='836.15' y='519.14' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='19.19px' lengthAdjust='spacingAndGlyphs'>12%</text>
+<text transform='translate(23.54,280.33) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='126.02px' lengthAdjust='spacingAndGlyphs'>Present value of net tax</text>
+<line x1='347.61' y1='547.73' x2='361.44' y2='547.73' style='stroke-width: 2.13; stroke: #146B8C; stroke-linecap: butt;' />
+<circle cx='354.52' cy='547.73' r='2.13' style='stroke-width: 0.77; stroke: #146B8C; fill: #146B8C;' />
+<line x1='347.61' y1='570.99' x2='361.44' y2='570.99' style='stroke-width: 2.13; stroke: #CF671D; stroke-linecap: butt;' />
+<circle cx='354.52' cy='570.99' r='2.13' style='stroke-width: 0.77; stroke: #CF671D; fill: #CF671D;' />
+<line x1='347.61' y1='594.24' x2='361.44' y2='594.24' style='stroke-width: 2.13; stroke: #20836B; stroke-linecap: butt;' />
+<circle cx='354.52' cy='594.24' r='2.13' style='stroke-width: 0.77; stroke: #20836B; fill: #20836B;' />
+<text x='369.14' y='551.16' style='font-size: 9.60px; font-family: "Arial";' textLength='81.53px' lengthAdjust='spacingAndGlyphs'>CPI allowance only</text>
+<text x='369.14' y='574.42' style='font-size: 9.60px; font-family: "Arial";' textLength='185.45px' lengthAdjust='spacingAndGlyphs'>Cash-flow tax, refundable upfront deduction</text>
+<text x='369.14' y='597.68' style='font-size: 9.60px; font-family: "Arial";' textLength='104.38px' lengthAdjust='spacingAndGlyphs'>Normal-return allowance</text>
+<text x='58.40' y='45.48' style='font-size: 11.00px; font-family: "Arial";' textLength='394.69px' lengthAdjust='spacingAndGlyphs'>Hypothetical scenario, not an estimate of reform revenue or household behaviour</text>
+<text x='58.40' y='27.83' style='font-size: 18.00px; font-weight: bold; font-family: "Arial";' textLength='589.69px' lengthAdjust='spacingAndGlyphs'>M05 RRA and cash-flow taxation: an exact present-value comparison</text>
+<text x='58.40' y='621.28' style='font-size: 9.00px; font-family: "Arial";' textLength='569.00px' lengthAdjust='spacingAndGlyphs'>Source: Model: rra_cashflow_equivalence.  New $100k investment, 10 years, 30% flat tax. Discount at the 5.575% nominal allowance rate. Full</text>
+<text x='58.40' y='633.16' style='font-size: 9.00px; font-family: "Arial";' textLength='377.00px' lengthAdjust='spacingAndGlyphs'>immediate-value loss relief; RRA and cash-flow lines coincide. Risk would require state pricing.</text>
+</g>
+</g>
+</svg>

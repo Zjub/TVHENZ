@@ -1,0 +1,1157 @@
+--- PDF PAGE 1 ---
+ 
+ 
+  
+Boundaries on the Long-Run Realization 
+Response to Changes in Capital Gains Taxes  
+June 6, 2025 
+Congressional Research Service 
+https://crsreports.congress.gov 
+R48562 
+
+
+--- PDF PAGE 2 ---
+ 
+Congressional Research Service 
+ 
+SUMMARY 
+Boundaries on the Long-Run Realization 
+Response to Changes in Capital Gains Taxes  
+This report analyzes how responsive taxpayers are to changes in capital gains taxes. Capital gains 
+occur when an asset increases in value as measured by the price of the asset minus the basis, 
+which is generally the cost at which the asset was acquired. Capital gains are a form of income 
+and subject to tax, but only when the asset is sold and the gain is realized. Thus, taxpayers have 
+some control over when capital gains taxes are paid and at what rate by choosing when to sell an 
+asset and realize capital gains. All else equal, a decrease in capital gains taxes should encourage 
+taxpayers to sell assets and realize gains. Likewise, an increase in capital gains taxes should 
+discourage taxpayers from selling assets and realizing gains. 
+How much individuals respond to a decrease or an increase in capital gains taxes can be quantified using the economic 
+concept of an elasticity, which in the context of this analysis measures the percentage change in realizations divided by the 
+percentage change in the capital gains tax rate. In theory, the capital gains tax elasticity ranges from negative infinity to zero; 
+the larger the elasticity is (in absolute terms), the more responsive taxpayers will be. In turn, the more (or less) responsive 
+individuals are to capital gains taxes, the lower (or higher) tax rates should be to minimize economic distortions and 
+maximize tax revenue. 
+The analysis in this report suggests that the maximum long-run (or permanent) capital gains elasticity is between -0.29 to -
+0.45, with an estimate at the midpoint of positive transaction costs of -0.34. At a -0.34 elasticity, the revenue-maximizing tax 
+rate would be 65%. This estimate for the capital gains elasticity assumes that in the absence of taxes and transactions costs all 
+gains would be realized every year. This assumption is almost certainly too high, as there are numerous reasons aside from 
+taxes and trading costs that would cause individuals to retain assets. If instead it is assumed that only 80% of gains would be 
+realized, the maximum elasticity ranges from -0.22 to -0.16 for positive transactions costs, with an estimate at the midpoint of 
+positive transactions costs of -0.19. 
+A change in the capital gains tax rate may produce smaller revenue effects than would be estimated by simply applying the 
+tax rate change to currently observed realizations. If individuals respond to a tax cut by realizing more gains or to a tax 
+increase by realizing fewer gains, this change in realizations can offset some portion of the static revenue effects (the revenue 
+in the absence of a behavioral response). The share of revenue offset by the realization’s response corresponds to the 
+elasticity, which at the midpoint elasticities presented in this report would be between 19% and 34%.  
+The common statistical approach in the literature for estimating the permanent capital gains elasticity has yielded wide 
+variations in the magnitude of this effect, from -0.22 to -0.98. The major reason that high elasticities were found in some 
+earlier studies is that the elasticity probably reflected in large part the short-run (or transitory) elasticity, which arises when 
+taxpayers time their realizations for periods when their tax rates are lower. Although the variations have narrowed in more 
+recent studies as researchers refined their approaches, these measures indicate that the offset from a tax increase can be as 
+small as 22% and as large as 98%, while the corresponding revenue-maximizing tax rate can be as high as 100% and as low 
+as 22%.  
+The analysis in this report uses an approach that differs from the common statistical methodology and is based on the simple 
+observation that there is a boundary on the realization response: realizations over time cannot exceed accrued gains. The 
+larger the existing realizations are relative to accruals, the smaller any potential realizations response can be. Estimates of 
+realizations relative to accruals over the period 1987-2023 indicate that realizations are approximately 60% of accruals, 
+although there is some variation owing to uncertainties, primarily the magnitude of noncompliance. These estimates are 
+paired with the estimates of taxes and transactions costs, and the common functional form used for estimating the realizations 
+response, to yield an estimate of the size of realizations in the absence of these taxes and transactions costs.  
+ 
+ 
+R48562 
+June 6, 2025 
+Mark P. Keightley 
+Specialist in Economics 
+  
+Jane G. Gravelle 
+Senior Specialist in 
+Economic Policy 
+  
+ 
+
+
+--- PDF PAGE 3 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+ 
+Contents 
+Introduction ..................................................................................................................................... 1 
+The Realization-to-Accruals Ratio .................................................................................................. 1 
+Measuring Tax Rates and Transactions Costs ................................................................................. 2 
+Estimating the Range of Realization Elasticities ............................................................................. 4 
+The Relationship of the Limits to Econometric Estimates and Revenue-Estimating 
+Practices ....................................................................................................................................... 6 
+Econometric Estimates .............................................................................................................. 6 
+Revenue-Estimating Practices ................................................................................................... 8 
+ 
+Tables 
+Table 1. Maximum Capital Gains Elasticity at a 22% Federal Tax Rate, Assuming 100% 
+of Accruals Are Realized, Various Transactions Costs ................................................................. 4 
+Table 2. Maximum Capital Gains Elasticity at a 22% Federal Tax Rate, Assuming 80% of 
+Accruals Realized, Various Transactions Costs ............................................................................ 5 
+Table 3. Effects of Varying Noncompliance Rates Assuming the Midpoint Transactions 
+Costs ............................................................................................................................................. 6 
+Table 4. Recent Panel Estimates of Realizations Response ............................................................ 7 
+  
+Table A-1. Maximum Capital Gains Elasticity at a 22% Federal Tax Rate, Assuming 
+100% of Accruals Are Realized, Various Transactions Costs, Constant Net-of-Tax 
+Elasticity ..................................................................................................................................... 10 
+Table A-2. Maximum Capital Gains Elasticity at a 22% Federal Tax Rate, Assuming 80% 
+of Accruals Are Realized, Various Transactions Costs, Constant Net-of-Tax Elasticity ............. 11 
+Table A-3. Effects of Varying Noncompliance Rates Assuming the Midpoint Transactions 
+Costs, Constant Net-of-Tax Elasticity ......................................................................................... 11 
+Table A-4. Elasticities by Maximum Realizations As a Percentage of Accruals ............................ 11 
+Table D-1. Elasticity Model Parameter Inputs .............................................................................. 17 
+ 
+Appendixes 
+Appendix A. Sensitivity Analysis .................................................................................................. 10 
+Appendix B. Derivation and Estimation of Tax Elasticities .......................................................... 13 
+Appendix C. Revenue-Maximizing Tax Rates .............................................................................. 15 
+Appendix D. Data Sources ............................................................................................................ 16 
+Appendix E. References to Empirical Studies in Table 4 .............................................................. 18 
+ 
+Contacts 
+Author Information ........................................................................................................................ 18 
+ 
+
+
+--- PDF PAGE 4 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+1 
+Introduction 
+Capital gains occur when an asset increases in price, but capital gains are only taxed under the 
+income tax when the asset is sold and the gain is realized. A change in the capital gains tax rate 
+may produce smaller revenue effects than would be estimated by simply applying the tax rate 
+change to observed realizations. If individuals respond to a tax cut by realizing more gains or to a 
+tax increase by realizing fewer gains, this change in realizations can offset the static revenue 
+effects. At a certain tax rate, called the revenue-maximizing rate, a tax increase would reduce 
+revenues rather than increase them owing to the increase in realizations. The measure of the 
+realizations responses is an elasticity, the percentage change in realizations divided by the 
+percentage change in the tax rate.  
+Beginning in 1980, a series of statistical studies estimating the realizations response yielded a 
+wide range of behavioral responses, spanning elasticities of -0.27 to -3.80, providing little 
+guidance to the actual revenue gained or lost by a change in the tax rate. These estimates used 
+different approaches, including examining realizations and tax rates over time (time series), 
+comparing individuals with different tax rates and realizations in a single year (cross section), or 
+comparing individuals over time with changes in their tax rates (panel). These studies faced 
+challenges in separating transitory effects (effects of a temporary change in tax rates), short-term 
+effects (where there is a large stock of unrealized gains), and long-term or permanent elasticities 
+(changes in a steady state with a permanent tax change). Some of the large elasticities estimated 
+in these studies likely reflected a measure capturing transitional or short-run elasticities. 
+In 1991, CRS published a report aimed at measuring the limit to how large the elasticity could be. 
+Because gains cannot exceed accruals in the long term, this study used historical data on gains 
+relative to realizations to estimate this upper limit.1  
+Beginning in 1994, a number of additional statistical studies, addressing some previously raised 
+methodological issues, found a narrower range of estimates. However, the estimates still varied 
+widely, indicating that realizations responses could offset between 22% and 98% of the revenue 
+increase.2 Studies also had a wide range of revenue-maximizing tax rates, as high as 100% and as 
+low as 24%.3  
+This report updates CRS’s 1991 estimate of the bounds to capital gains realizations elasticities 
+using more recent data.  
+The Realization-to-Accruals Ratio 
+In the long run, the amount of capital gains realizations cannot exceed the amount of accruals. In 
+the extreme case, if every asset were sold every year, then realizations would be virtually equal to 
+accruals in each year. If this were currently the case, there could be no increased realizations in 
+response to a capital gains tax cut because there would be no potential source of the response. If, 
+however, some assets are never sold (or held until death, when the tax on gain is forgiven) or if 
+assets are sold less frequently than each year, then realizations will be less than accruals. 
+ 
+1 Limits to Capital Gains Feedback Effects, Congressional Research Service Report, Report 91-250 by Jane G, 
+Gravelle, March 15, 1991. This report can be found at https://www.policyarchive.org/handle/10207/20219.  
+2 Since the common semi-log functional form resulted in an elasticity that rose with the tax rate, this revenue offset 
+relates to a small change around the 22% tax rate.  
+3 See CRS Report R41364, Capital Gains Tax Options: Behavioral Responses and Revenues, by Jane G. Gravelle for a 
+review of these studies. 
+
+
+--- PDF PAGE 5 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+2 
+Realizations can then increase as a result of a tax cut, as individuals sell assets more frequently or 
+sell assets they would otherwise have held until death. This response is still limited by the amount 
+of unrealized accruals. Therefore, data on the ratio of realizations to accruals can provide some 
+bounds on the increase in realizations that might be expected from a capital gains tax cut. 
+Although realizations cannot exceed accruals on average, there are fluctuations from year to year 
+because the rate of appreciation does not remain constant each year. Therefore, it is important to 
+measure the ratio of realizations to accruals over a fairly long period of time. This report’s 
+analysis begins with data on revaluations of all individually held assets from the Federal 
+Reserve’s Financial Accounts of the United States (FA)4 and capital gains realizations for the 
+period 1987-2023 from tax returns.5  
+The revaluations from the FA include some assets that are not subject to capital gains, or to 
+negligible taxable capital gains. To arrive at accruals, the following assets were eliminated from 
+the FA: owner-occupied housing (structures and land), employer pension plans, life insurance, 
+earnings from individual retirement accounts, education saving accounts, and revaluations that 
+accrue to the nonprofit sector.6 Individual retirement accounts are included in other entries in the 
+revaluation data, largely in corporate equities, and the share of those in retirement accounts was 
+estimated using data from the Investment Company Institute.7 Revaluations in the nonprofit 
+sector were eliminated based on their share of included assets using FA balance sheets. In 
+addition, the revaluations exclude debt securities, which may have small gains or losses and are 
+relatively unimportant.  
+After excluding accruals that are not subject to capital gains taxes or subject to negligible capital 
+gains taxes, the ratio of realizations to accruals is 52.17%. An adjustment also needs to be made 
+for noncompliance, since some gains are not reported. Accruals were reduced by 15% to account 
+for noncompliance based on estimates using IRS data.8 Reducing accruals by 15% results in a 
+realization ratio of 61.374%. 
+Measuring Tax Rates and Transactions Costs 
+Placing boundaries on the long-run realization response requires accounting for federal and state 
+capital gains taxes, as well as transactions costs. Currently, the federal capital gains rate on long-
+ 
+4 Board of Governors of the Federal Reserve System, “R.101 Change in Net Worth of Households and Nonprofit 
+Organization,” Financial Accounts of the United States, https://www.federalreserve.gov/releases/z1/20240607/html/
+r101.htm. 
+5 Realizations from 1987 to 2014 are from U.S. Department of the Treasury, Office of Tax Analysis, “Taxes Paid on 
+Capital Gains for Returns with Positive Net Capital Gains: 1954-2014,” https://home.treasury.gov/policy-issues/tax-
+policy/office-of-tax-analysis. Realizations from 2015 on are from Congressional Budget Office (CBO), “Budget and 
+Economic Data, Revenue Projections, by Category,” June 18, 2024 (supplement to An Update to the Budget and 
+Economic Outlook: 2024 to 2034), https://www.cbo.gov/data/budget-economic-data#7.  
+ 
+ 
+ 
+ 
+6  Board of Governors of the Federal Reserve System, Financial Accounts of the United States, “B.101.h Balance Sheet 
+of Households,” https://www.federalreserve.gov/releases/z1/preview/html/b101h.htm, and “B.101.n Balance Sheet of 
+Nonprofit Organizations,” https://www.federalreserve.gov/releases/z1/preview/html/b101n.htm. 
+7 Investment Company Institute, “Release: Quarterly Retirement Market Data,” The US Retirement Market, Table 19, 
+https://www.ici.org/statistical-report/ret_24_q3. The assets in Table 19 outside of money market assets and 75% of the 
+assets in “Other Assets” in Table 9, and adjusted for Section 529 savings plans, are excluded following the 
+methodology in Steven M. Rosenthal and Lydia S. Austin, “The Dwindling Taxable Share Of U.S. Corporate Stock,” 
+Tax Notes, May 16, 2016, pp. 923-932, https://www.urban.org/sites/default/files/publication/80621/2000790-The-
+Dwindling-Taxable-Share-of-U.S.-Corporate-Stock.pdf. 
+8 Based on data for various years from Internal Revenue Service (IRS), “IRS: The Tax Gap,” https://www.irs.gov/
+statistics/irs-the-tax-gap. The tax gap for capital gains varied, but tended to average around 15% for the years available.  
+
+
+--- PDF PAGE 6 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+3 
+term gains (which constitute most of gains) is 0%, 15%, or 20%, depending on the taxable 
+income of the taxpayer. Gains on assets held for less than a year are taxed at ordinary income tax 
+rates.9 Tax regimes have varied over the time period under consideration.10 From 1987 through 
+May 6, 1997, long-term capital gains were taxed at ordinary rates, but with a maximum rate of 
+28%. From May 7, 1997, to May 5, 2003, the maximum rate was 20%. From May 6, 2003, 
+through December 31, 2012, the maximum rate was 15%, and from January 1, 2013, to the 
+present, the maximum rate was 20%. Starting in 2013, high-income taxpayers also became 
+subject to a 3.8% tax on passive investment income, including capital gains, making the 
+maximum rate 23.8%.  
+The average combined income tax rate computed over the observation period is 23.6% (19.8% 
+federal and 3.8% state). The federal income tax rate is the average tax collected on realizations 
+based on Treasury Department and CBO data. It includes the 3.8% tax on net investment income. 
+This rate may be slightly understated because the marginal tax rate is higher than the average tax 
+rate. However, capital gains realizations are heavily concentrated in the top tax rate. The state 
+income tax rate is the maximum rate from the National Bureau of Economic Research TAXSIM 
+model.11  
+Transactions costs, like capital gains taxes, act as a barrier that makes selling assets more costly 
+and therefore need to be accounted for when estimating the realization response. Transactions 
+costs are relatively small for corporate equities, which are estimated to be 70% of the total 
+realizations.12 However, they are much larger for buildings (which constitute most noncorporate 
+assets). Because of the variability and uncertainty, several measures of transactions costs are 
+considered: 0.1%, 0.45%, and 1% for corporate stocks and mutual funds, and 3%, 6%, and 9% for 
+noncorporate equity.13  
+ 
+9 Carried interests must be held for three years to receive long-term capital gains treatment. 
+10 For a concise summary of the rates, see Tax Foundation, “Federal Capital Gains Tax Rates 1988-2011,” 
+https://files.taxfoundation.org/legacy/docs/fed_capgains_taxrates-20100830.pdf. For a narrative history, see CRS 
+Report R47113, Capital Gains Taxes: An Overview of the Issues, by Jane G. Gravelle. 
+11 National Bureau of Economic Research, “Maximum State Income Tax Rates 1977-2024,” TAXSIM, 
+https://taxsim.nber.org/state-rates/. 
+12 See CRS Report R47113, Capital Gains Taxes: An Overview of the Issues, by Jane G. Gravelle, for a discussion of 
+the share of capital gains by asset type.  
+13 These measures include the central tendency as indicated in the following discussions, along with larger and smaller 
+amounts to illustrate the sensitivity. Transactions costs in the stock market vary depending on the size of the trade and 
+the investor status. See Jeffrey A. Busse et al., Transaction Costs, Portfolio Characteristics, and Mutual Fund 
+Performance, October 2019, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2350583; Christopher Schwarz et al., 
+The “Actual Retail Price” of Equity Trades, July 2023, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4189239; 
+BICCONI Students Investment Club, Modelling Transaction Costs and Market Impact, April 16, 2023, https://bsic.it/
+modelling-transaction-costs-and-market-impact/; FREC, “Direct Indexing Transaction Costs,” January 15, 2025, 
+https://frec.com/resources/blog/direct-indexing-transaction-costs; Yuval Taylor, “The Transaction Costs of Trading 
+Stocks: A Primer for Retail Investors,” Portfolio 123 (blog) September 28, 2022, https://blog.portfolio123.com/the-
+transaction-costs-of-trading-stocks-a-primer-for-retail-investors/; Quick MBA, “Trading Costs,” 
+http://www.quickmba.com/finance/invest/tradecost/; Assurance Financial, “How to Estimate Closing Costs and What’s 
+Included,” https://assurancemortgage.com/what-are-closing-costs/#:~:text=
+On%20average%2C%20most%20homebuyers%20will,are%20between%20$12%2C000%20and%20$30%2C000; Ira 
+Zlotowitz, “How Much Are Commercial Real Estate Closing Costs?,” Gparency, December 26, 2023, 
+https://gparency.com/blog/commercial-real-estate-closing-costs/; Taylor Wallace, “Fees For Selling a Business You 
+Might Not be Aware Of: Commission Rate,” Baton, March 15, 2023, https://www.batonmarket.com/resources/own/
+fees-for-selling-a-business; BizBuySell, “How Much Does It Cost to Sell a Business?,” https://www.bizbuysell.com/
+learning-center/article/cost-sell-business/#:~:text=
+For%20most%20business%20owners%2C%20the,at%20the%20best%20possible%20terms.%E2%80%99. 
+
+
+--- PDF PAGE 7 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+4 
+Transactions costs are imposed on the entire sales price and not just the gain, so they must be 
+multiplied by the ratio of sales price to gains. These ratios are based on data reported by the IRS 
+for corporate and noncorporate equities: 4.5 for corporate stocks and 3.25 for noncorporate 
+equity.14  
+Estimating the Range of Realization Elasticities 
+The ratio of realizations to accruals and the tax rate can be translated into an elasticity given a 
+functional form of the realizations equation. The analysis in this report uses the semi-log 
+functional form that is used by both JCT and Treasury revenue estimators as well as recent 
+studies, in which econometric studies regress the natural logarithm of realizations on the tax rate. 
+A sensitivity analysis uses another functional form, constant net-of-tax rate elasticity, in which 
+econometric studies regress the logarithm of realizations on the logarithm of the net-of-tax rate 
+(one minus the sum of tax and transactions rates). The results of the sensitivity analysis are 
+reported in Appendix A. Both of the functional forms result in the elasticity rising with the tax 
+rate (see Appendix B).  
+Table 1 shows the estimated maximum elasticities evaluated at a 22% federal tax rate with 
+varying assumptions about transactions costs. For positive transactions costs, the estimated 
+maximum elasticity varies from -0.29 to -0.40 with an estimate at the midpoint of positive 
+transaction costs of -0.34. At a -0.34 elasticity, the revenue-maximizing tax rate would be 65%.15 
+The share of revenue offset by the realizations response corresponds to the elasticity, 34%. Table 
+1 also reports estimates if there are no transactions costs, with a maximum elasticity of -0.45.  
+Table 1. Maximum Capital Gains Elasticity at a 22% Federal Tax Rate, Assuming 
+100% of Accruals Are Realized, Various Transactions Costs 
+ 
+ 
+Corporate Stock and Mutual Funds 
+ 
+Transactions Costs 
+0.0% 
+0.01% 
+0.45% 
+1.0% 
+Noncorporate 
+Assets 
+0.0% 
+-0.45 
+-0.45 
+-0.43 
+-0.40 
+3.0% 
+-0.40 
+-0.40 
+-0.38 
+-0.36 
+6.0% 
+-0.36 
+-0.36 
+-0.34 
+-0.32 
+9.0% 
+-0.32 
+-0.32 
+-0.31 
+-0.29 
+Source: CRS calculations. 
+Note: Estimates were made using the semi-log functional form. Assumes 15% noncompliance and a realization 
+ratio in the absence of transactions costs and taxes (𝑟∗), of 1. See Appendix B for more information.  
+ 
+14 Janette Wilson and Christopher Williams, “Sales of Capital Assets Data Reported on Individual Tax Returns, Tax 
+Years 2013-2015,” IRS, Statistics of Income Bulletin, Winter 2022, https://www.irs.gov/pub/irs-soi/soi-a-soca-
+id2205.pdf. 
+15 The revenue-maximizing tax rate is 0.22 divided by the absolute value of the elasticity. See Appendix C. Note that 
+the revenue-maximizing tax rate measures the rate applied to taxpayers and all gains would be taxed at the same rate. If 
+only the top rate of 20% were increased to maximize revenues, the revenue-maximizing tax rate would be lower 
+because some of the tax is generated at the lower rate of 15% and revenues would not increase for that share of gains. 
+Data from Tim Dowd and Zach Richards, Contextualizing Elasticities for Policymaking: Capital Gains and Revenue-
+Maximizing Tax Rates, February 2021, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3767121, indicate that of 
+gains in the adjusted gross income bracket of $500,000 or more where most gains are subject to the top rate, 77% are 
+taxed at the 20% rate. This estimate indicates that the revenue-maximizing top rate would be 77% times 65%, or 50%.  
+
+
+--- PDF PAGE 8 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+5 
+The elasticities reported in Table 1 assume that in the absence of transaction costs and taxes, all 
+gains would be realized every year, as investors would prefer to receive income in the present 
+rather than the future. This assumption is almost certainly too high, as there are numerous reasons 
+aside from costs of trading that would cause individuals to retain assets. There are nonpecuniary 
+costs to trading assets, as such trades require some time and attention by the seller. In addition, 
+individuals are likely to be satisfied with the experienced and anticipated gains made in all or 
+some of their portfolios, perhaps indefinitely. Some assets are part of family businesses and 
+would be retained for those reasons. Even for corporate stock, founders, even of very large 
+corporations, own significant shares of stock and may plan to pass those shares to their 
+descendants. In addition, some individuals donate appreciated assets to charitable organizations 
+(either in life or at death), and those gains would never be realized.  
+If instead of all gains being realized annually in the absence of taxes and transactions costs, only 
+80% would be realized (approximately the midpoint of possible responses, given that the 
+observed accrual to realization ratio with tax is 0.64), the maximum elasticity ranges from -0.22 
+to -0.16 for positive transactions costs, with an estimate at the midpoint of positive transactions 
+costs of -0.19. The revenue-maximizing tax rate at these elasticities would be over 100%.16 The 
+revenue offset would be 19%. The maximum elasticity with no transactions costs is -0.25.  
+Table 2. Maximum Capital Gains Elasticity at a 22% Federal Tax Rate, Assuming 80% 
+of Accruals Realized, Various Transactions Costs 
+ 
+ 
+Corporate Stock and Mutual Funds 
+ 
+Transaction Costs 
+0.0% 
+0.01% 
+0.45% 
+1.0% 
+Noncorporate 
+Assets 
+0.0% 
+-0.25 
+-0.24 
+-0.23 
+-0.22 
+3.0% 
+-0.22 
+-0.22 
+-0.21 
+-0.19 
+6.0% 
+-0.20 
+-0.19 
+-0.19 
+-0.17 
+9.0% 
+-0.18 
+-0.17 
+-0.17 
+-0.16 
+Source: CRS calculations. 
+Note: Estimates were made using the semi-log functional form. Assumes 15% noncompliance and a realization 
+ratio in the absence of transactions costs and taxes, 𝑟∗, of 0.8. See Appendix B for more information.  
+The results presented in Table 1 and Table 2 assumed a noncompliance rate of 15%. The degree 
+of noncompliance, however, is challenging to measure. Table 3 provides a sensitivity analysis 
+that considers the effects of larger (20%) or smaller (10%) noncompliance rates, assuming the 
+midpoint transactions costs. It also reports results at a 0% noncompliance rate. The maximum 
+elasticity with 100% of accruals realized ranges from -0.38 to -0.30. The elasticity assuming a 
+limit of 80% of accruals ranges from -0.23 to -0.14. The elasticity with full compliance is -0.46 
+and -0.30.  
+ 
+16 Nothing precludes a revenue-maximizing rate in excess of 100% since saving is the only way to transfer purchasing 
+power across time, regardless of the rate of return. The after-tax real rate of return on savings has been negative in the 
+past.  
+
+
+--- PDF PAGE 9 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+6 
+Table 3. Effects of Varying Noncompliance Rates Assuming the Midpoint 
+Transactions Costs 
+Noncompliance Rate 
+Maximum Elasticity with 100% 
+of Accruals Realized 
+Maximum Elasticity With 80% 
+of Accruals Realized 
+ 
+ 
+ 
+0% 
+-0.46 
+-0.30 
+10% 
+-0.38 
+-0.23 
+15% 
+-0.34 
+-0.19 
+20% 
+-0.30 
+-0.14 
+Source: CRS calculations.  
+Note: Estimates made using semi-log functional form. Assumes corporate stock and mutual funds transactions 
+costs of 0.45% and noncorporate equity transactions costs of 6.0%. See Appendix A for more information.  
+The Relationship of the Limits to Econometric 
+Estimates and Revenue-Estimating Practices 
+The results of the basic simulations (Table 1) indicate that the maximum elasticity ranges from -
+0.40 to -0.29 at a 22% federal tax rate for the range of positive transactions costs considered; the 
+value at the midpoint of these costs is -0.34. In reality, all accruals are unlikely to be realized in a 
+year, as assumed in that model. Therefore, an elasticity of -0.19 that is based on the assumption of 
+a realization ratio in the absence of transactions costs and taxes equal to 0.8 and at the midpoint 
+of transactions costs might be a more reasonable estimate (Table 2). The following examines how 
+the results presented in Table 1 and Table 2 compare to those from econometric studies and to 
+estimates used by revenue estimators.  
+Econometric Estimates 
+Because of various methodologies, this report focuses on the more recent studies that have been 
+published beginning in the mid-1990s that avoided some of the methodological problems that 
+caused the confounding of transitory, short-term, and permanent elasticities in older studies.17 It 
+also focuses on panel studies, which follow individuals over a period of time, as these are 
+generally recognized as the best approach to uncovering the permanent elasticity. (Panel studies 
+can be problematic if the panels are too short, however.)  
+Table 4 lists the panel studies that began in the mid-1990s, arrayed by elasticities from smaller to 
+larger, all evaluated at a 22% tax rate. These studies still reveal a broad range of elasticity 
+estimates (and revenue offset) from a tax rate change, ranging from 22% to 90%. Of the eight 
+studies, five exceed the maximum elasticity at the midpoint of transactions costs and 
+noncompliance estimated in this study (-0.34). 
+ 
+17 These older studies are discussed in the Appendix to CRS Report R41364, Capital Gains Tax Options: Behavioral 
+Responses and Revenues, by Jane G. Gravelle. 
+
+
+--- PDF PAGE 10 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+7 
+Table 4. Recent Panel Estimates of Realizations Response 
+Study 
+Coefficient 
+Elasticity at 22% Rate 
+Revenue-Maximizing 
+Tax Rate 
+Burman and Randolph 
+(1994) 
+1.0* 
+-0.22 
+100% 
+Auerbach and Siegel  
+(2000) 
+1.36 
+-0.30 
+0.73% 
+Agersnap and Zidar  
+(2020) 
+1.4 
+-0.31 
+71% 
+Bogart and Gentry  
+(2000) 
+2.5 
+-0.55 
+40% 
+Bakija and Gentry (2014) 
+2.91 
+-0.64 
+34% 
+Dowd and McClelland 
+(2024) 
+3.2 
+-0.71 
+31% 
+Auten and Joulfaian  
+(2004) 
+3.6 
+-0.79 
+28% 
+Dowd, McClelland, and 
+Muthitacharoen (2015) 
+4.48 
+-0.98 
+22% 
+Source: For references, see Appendix C. For brief comments on these studies, see CRS Report R41364, Capital 
+Gains Tax Options: Behavioral Responses and Revenues, by Jane G. Gravelle. 
+Notes: An * indicates that the estimate was not statistically significant. The estimates have been adjusted to 
+conform to the 22% tax rate and may be different from those reported by the authors. The coefficient is the 
+fixed estimate from a semi-log function that, multiplied by the tax rate, yields the elasticity. That is, if the 
+regression is of the form: log gain = a + bt + other regressors, and t is the tax rate, the coefficient is b. It is 
+expected to be negative but is reported as an absolute value. Note that the Agersnap-Zidar basic regression was 
+in a log gains = a +b log(1-t) + other regressors, but they also reported results with a semi-log function. A long-
+term estimate was not provided, but an estimate of b of 3.05 for years 6-8 and 2.39 for years 6-10 indicates an 
+estimate of 1.4 for years 9 and 10. At a 22% rate, their elasticity was -0.19 with their preferred functional form. 
+As noted in the text, Dowd and McClelland (2024) in a subsequent paper corrected an error in the code used in 
+Dowd, McClelland, and Muthitacharoen (2015) which resulted in a revised elasticity of -0.78 compared to -0.72 
+reported in the original 2015 study. It is the revised results that are reported in Table 4 for Dowd, McClelland, 
+and Muthitacharoen (2015).  
+Why do these studies often find elasticities that appear larger than the maximum feasible 
+elasticity presented in this report? One possibility, of course, is that the functional form used in 
+this analysis does not track the pattern of realizations. However, it is notable that the other 
+functional form sometimes used, the net-of-tax elasticity, produces similar estimates of the 
+maximum rate (-0.42 as compared to -0.34 for the semi-log form) for the midpoint of positive 
+transactions cost (see Appendix A).  
+It is more likely that studies with higher elasticities are capturing the transitory elasticity. These 
+effects occur when individuals time their realizations to occur when their tax rates are temporarily 
+low. Notably, the first two studies that found lower elasticities than the estimated maximum relied 
+on variation in state tax rates to identify the permanent elasticity. The Agersnap and Zidar study 
+used total tax rates with year-fixed effects to control for the federal tax rate.18 All three studies 
+used tax data. The Agersnap and Zidar study also has a fairly long measure of response (covering 
+up to 10 years), and the elasticity fell over time. The next two studies, which found elasticities of 
+ 
+18 Using year-fixed effects does not solely rely on state tax rates, but controls for changes in federal tax rates through 
+tax changes over time. It does not control for variations in tax rate for an observation when tax rates are not changing 
+through legislation. 
+
+
+--- PDF PAGE 11 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+8 
+-0.55 and -0.64, did not have direct access to tax data, but they used the state tax variation by 
+including year-fixed effects. 
+The last two studies with the highest elasticities used federal tax rates and generally had short 
+lags, which suggests it is difficult to isolate the permanent elasticity. Also, when the Auerbach and 
+Siegel study added a variable in an alternative specification that included the federal rate, the 
+elasticity was five times larger. That result suggests that while the state variation reflects 
+permanent differences, the variation in realizations with the federal rate reflects transitory effects. 
+And while transitory or very short-run effects can have some policy relevance—for instance, if 
+evaluating the potential ramifications of a temporary capital gains tax decrease to mitigate a 
+severe economic shock—the long-run elasticity is typically of interest to policymakers when 
+considering permanent changes. 
+Subsequent to the Dowd, McClelland, and Muthitacharoen study, McClelland and Dowd returned 
+to their data source and provided some estimates with additional lags and additional years.19 
+Adding lags and years reduced the estimated elasticity, but the elasticities still exceeded the 
+maximum elasticity estimated in this study for positive transactions costs.  
+Some econometric studies use time series estimation, which estimates how realizations changed 
+with the tax rate over time. These estimates largely pick up short-run responses, which are 
+generally expected to be larger than permanent responses. These short-run responses can be 
+asymmetric as well, since larger short-run effects are more likely to be associated with reductions 
+in tax rates than with increases, where there is an accumulated stock of unrealized gains. Time 
+series studies also face the challenges of controlling for other variables in the economy that affect 
+realizations, such as stock market prices, business cycles, and real estate prices. Such studies, 
+however, have not produced the large elasticities associated with pre-1994 panel and cross section 
+studies that could not control for transitory effects, and time series studies have exhibited similar 
+ranges of elasticities (between -0.27 and -0.89) from the initial studies to present day, although all 
+have not used the semi-log functional form or were evaluated at the same tax rate. Those recent 
+studies have had a range of elasticities from -0.47 to -0.75.20 
+Revenue-Estimating Practices  
+The official revenue estimator for tax legislation, the Joint Committee on Taxation (JCT), has 
+used a coefficient of 3.1 for the permanent elasticity, corresponding to a -0.68 elasticity at a 22% 
+rate for estimates of capital gains revenue effects.21 This estimate is well above the maximum 
+elasticities estimated in this study and above all but two of the recent panel studies shown in 
+Table 4. The Treasury Department uses a slightly higher estimate of 0.72.22 The elasticities 
+ 
+19 See Tim Dowd and Robert McClelland, The Sensitivity of the Tax Elasticity of Capital Gains to Lagged Tax Rates 
+and Migration, Tax Policy Center, May 2024, https://taxpolicycenter.org/sites/default/files/publication/165863/
+the_sensitivity_of_the_tax_elasticity_of_capital_gains_to_lagged_tax_rates_and_migration.pdf. These estimates reflect 
+three different effects: adding lags, using a data set with more years which would raise the mean tax rate, probably by 
+about 3%. However, the reported elasticity without lags was 0.75 so adjusting for both would result in a rate at a 22% 
+tax rate of 0.87. So the lowest rate they estimated with three lags would be -0.50.  
+20 See CRS Report R41364, Capital Gains Tax Options: Behavioral Responses and Revenues, by Jane G. Gravelle for a 
+review. 
+21 The Joint Committee on Taxation does not regularly report its elasticities in general, and the coefficient was supplied 
+by the committee and used in CRS Report R41364, Capital Gains Tax Options: Behavioral Responses and Revenues, 
+by Jane G. Gravelle.  
+22 CRS Report R41364, Capital Gains Tax Options: Behavioral Responses and Revenues, by Jane G. Gravelle. This 
+elasticity was supplied to the author by the Treasury Department.  
+
+
+--- PDF PAGE 12 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+9 
+reported in 1990 were -0.76 for JCT and-0.98 for Treasury, although at an unspecified tax rate.23 
+These elasticities were chosen at a time when panel and cross section studies were reporting 
+widely varying estimates, ranging from -0.55 to -3.8. The original JCT estimate was based on the 
+time series studies and was approximately in the middle of the studies.24 Also, at that time, the top 
+tax rate was higher than in subsequent years.  
+CBO uses elasticities for forecasting rather than revenue estimating and relies on time series. Its 
+current elasticity is -0.46.25 
+The bounds on the capital gains realization response based on the observed ratios of realizations 
+to accruals and tax rates indicate a smaller response than that estimated in some statistical studies 
+and smaller than that used in recent estimates of the capital gains response. 
+ 
+23 These are elasticities before portfolio responses, and are reported in CRS Report 90-161 RCO, Can a Capital Gains 
+Tax Cut Pay For Itself? by Jane G. Gravelle, March 23, 1990, available to congressional clients on request.  
+24 See JCT, Explanation of Methodology Used To Estimate proposals Affecting the Taxation of Income From Capital 
+Gains, Joint Committee Print, March 27, 1990, https://www.jct.gov/publications/1990/jcs-12-90.  
+25 Based on conversations with CBO and adjusted by CRS to conform to a 22% tax rate. 
+
+
+--- PDF PAGE 13 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+10 
+Appendix A. Sensitivity Analysis 
+This appendix reports a sensitivity analysis, which considers the choice of functional form and 
+other modeling assumptions by seeing how the results change when alternatives are selected. 
+A Constant Net-Of-Tax Elasticity 
+Table A-1 reports the results of using the alternative functional form, a constant elasticity with 
+respect to the net-of-tax return (see Appendix B). Both functions have similar shapes with 
+realizations first declining slowly and then more quickly (so that the elasticity rises with the tax 
+rate) before rising dramatically at very high tax rates. The semi-log approach seems more realistic 
+because, unlike the constant net-of tax-elasticity, the elasticity does not approach infinity and 
+realizations do not approach zero as the tax rate approaches 100%. People would still sell assets 
+with a 100% tax rate (just as they sell assets with losses), and people save when the real interest 
+rate is negative due to inflation because since the only way to use current resources for future 
+consumption is to save, even if the return is negative.26  
+The elasticity with positive transactions costs ranges from -0.48 to -0.36 with an estimate at the 
+midpoint of transaction costs of -0.42. The revenue-maximizing tax rate for this elasticity is lower 
+than using a semi-log functional form, 40%.27 The revenue offset is 42%. 
+Table A-1. Maximum Capital Gains Elasticity at a 22% Federal Tax Rate, Assuming 
+100% of Accruals Are Realized, Various Transactions Costs, Constant Net-of-Tax 
+Elasticity  
+Noncorporate 
+Corporate Stock and Mutual Funds 
+Transactions 
+Costs: 
+0.0% 
+0.01% 
+0.45% 
+1.0% 
+0.0% 
+-0.54 
+-0.53 
+-0.51 
+-0.48 
+3.0% 
+-0.48 
+-0.48 
+-0.46 
+-0.44 
+6.0% 
+-0.44 
+-0.43 
+-0.42 
+-0.40 
+9.0% 
+-0.40 
+-0.40 
+-0.38 
+-0.36 
+Source: CRS calculations. 
+Notes: Noncorporate transactions costs are listed in the first column, rows two through five, and corporate 
+stock and mutual funds transactions costs are listed in the first row, columns two through give. Estimates are 
+made using semi-log functional form. Assumes 15% noncompliance and a realization ratio in the absence of 
+transactions costs and taxes, 𝑟∗, of 1.0. See Appendix B for more information.  
+Table A-2 shows the same elasticities under the assumption that maximum realizations will be 
+80% of accruals. The elasticities range from -0.26 to -0.20, with an estimate at the midpoint of 
+transactions costs of -0.23. The revenue-maximizing tax rate at the midpoint is 54%.  
+ 
+26 Two other functional forms were used in earlier studies, but each presents difficulties in the pattern of realizations. A 
+linear form crosses the y and x axis. Thus, for example, it can cause realizations to become negative at some higher tax 
+rate. Because a constant elasticity with respect to the tax rate asymptotically approaches infinity on the y axis and zero 
+on the x axis, it can cause realizations to continue well beyond a 100% tax rate.  
+27 The revenue-maximizing tax rate is [(1-ts)*0.22]/(.22 + E*(1-ts-0.22)] where ts is the state tax rate and E is the 
+estimated elasticity.  
+
+
+--- PDF PAGE 14 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+11 
+Table A-2. Maximum Capital Gains Elasticity at a 22% Federal Tax Rate, Assuming 
+80% of Accruals Are Realized, Various Transactions Costs, Constant Net-of-Tax 
+Elasticity 
+Noncorporate 
+Corporate Stock and Mutual Funds 
+Transactions Costs: 
+0.0% 
+0.01% 
+0.45% 
+1.0% 
+0.0% 
+-0.29 
+-0.29 
+-0.28 
+-0.26 
+3.0% 
+-0.26 
+-0.26 
+-0.25 
+-0.24 
+6.0% 
+-0.24 
+-0.24 
+-0.23 
+-0.21 
+9.0% 
+-0.22 
+-0.22 
+-0.21 
+-0.20 
+Source: CRS calculations. 
+Notes: Noncorporate transactions costs are listed in the first column, rows two through five, and corporate 
+stock and mutual funds transactions costs are listed in the first row, columns two through give. Estimates are 
+made using semi-log functional form. Assumes 15% noncompliance and a realization ratio in the absence of 
+transactions costs and taxes, 𝑟∗, of 0.8. See Appendix B for more information.  
+Table A-3 shows the effects of different assumptions about compliance costs. The maximum 
+elasticity ranges from -0.47 to -0.37. The elasticity with a maximum realization of 80% of 
+accruals ranges from -0.28 to -0.18. 
+Table A-3. Effects of Varying Noncompliance Rates Assuming the Midpoint 
+Transactions Costs, Constant Net-of-Tax Elasticity 
+Noncompliance Rate 
+Elasticity with 100% of Accruals 
+Realized 
+Elasticity With 80% of Accruals 
+Realized 
+0% 
+-0.56 
+-0.37 
+10% 
+-0.47 
+-0.28 
+15% 
+-0.42 
+-0.23 
+20% 
+-0.37 
+-0.18 
+Source: CRS calculations.  
+Note: Assumes corporate stock and mutual funds transactions costs of 0.45% and noncorporate equity 
+transactions costs of 6.0%. See Appendix B for more information.  
+Alternative Limits on Maximum Realizations, Basic (Semi-log) 
+Equation 
+Table A-4 shows how elasticities vary depending on the assumption of the maximum realizations 
+as a percentage of accruals for the lowest, midpoint, and highest transactions costs. This 
+assumption has the largest effect on the elasticity. 
+Table A-4. Elasticities by Maximum Realizations As a Percentage of Accruals 
+Limit on Realizations 
+Low Transactions 
+Costs 
+Midpoint Transactions 
+Costs 
+High Transactions 
+Costs 
+70% 
+-0.11 
+-0.09 
+-0.08 
+80% 
+-0.22 
+-0.19 
+-0.16 
+90% 
+-0.31 
+-0.27 
+-0.23 
+
+
+--- PDF PAGE 15 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+12 
+Limit on Realizations 
+Low Transactions 
+Costs 
+Midpoint Transactions 
+Costs 
+High Transactions 
+Costs 
+100% 
+-0.40 
+-0.34 
+-0.29 
+Source: CRS calculations.  
+Notes: Assumes 15% noncompliance and a realization ratio of 1.0 in the absence of transactions costs and taxes. 
+See Appendix B for more information. 
+ 
+
+
+--- PDF PAGE 16 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+13 
+Appendix B. Derivation and Estimation of Tax 
+Elasticities 
+Semi-Log Functional Form 
+The semi-log functional form used to calculate the feedback effect of a capital gains tax reduction 
+is: 
+𝑅= 𝐵𝑒−𝑏𝑘
+(1) 
+where:  
+• 
+𝑅 is the amount of realizations; 
+• 
+𝐵 and 𝑏 are constants; 
+• 
+𝑘 is the sum of transactions costs (𝑐) and combined state capital gains tax (𝑡𝑠) 
+and federal capital gains tax (𝑡𝑓), or 𝑘 = 𝑐+ 𝑡(1 −𝑐) where 𝑡= 𝑡𝑠+ 𝑡𝑓, and 
+• 
+𝑒 is the mathematical constant.  
+Thus, the semi-log functional form can be expressed as: 
+𝑅= 𝐵𝑒−𝑏(𝑐+𝑡(1−𝑐))
+(2) 
+This can be used to determine the formula for the elasticity of realizations with respect to the 
+federal capital gains tax rate, which is the percentage change in realizations over the percentage 
+change in the capital gains tax rate. Start by computing the differential of 𝑅 in equations (2): 
+𝑑𝑅= −𝐵𝑏(1 −𝑐)𝑒−𝑏(𝑐+𝑡(1−𝑐))𝑑𝑡𝑓
+(3) 
+Dividing (3) by (2) gives the percentage change in realizations (𝑅) as: 
+𝑑𝑅
+𝑅= −𝑏(1 −𝑐)𝑑𝑡𝑓
+(4) 
+To obtain the elasticity with respect to 𝑡𝑓, multiply the right-hand side of (4) by 𝑡𝑓 over 𝑡𝑓. 
+𝑑𝑅
+𝑅= −𝑏(1 −𝑐)𝑑𝑡𝑓
+𝑡𝑓
+𝑡𝑓
+(5) 
+Rearranging to get the percentage change in 𝑅 over the percentage change in 𝑡 produces the 
+elasticity of realizations with respect to 𝑡𝑓: 
+𝜀𝑡𝑓= 𝑏(1 −𝑐)𝑡𝑓
+(6) 
+Using this formula requires determining values for 𝑏 and 𝑐. Transactions costs (𝑐) are difficult to 
+pin down, so the analysis presented in this report assumed a range of values as discussed in 
+Appendix D. The constant 𝑏 can be expressed as a function of estimated and assumed values by 
+noting that realizations can also be expressed as a fraction of accruals: 
+𝑅= 𝑟𝐴
+(7) 
+where 𝑟 is the ratio of realizations to accruals and 𝐴 is accruals.  
+
+
+--- PDF PAGE 17 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+14 
+Let 𝑟∗ be defined as the ratio of realizations to accruals when the capital gains tax and 
+transactions costs are zero (i.e., 𝑘= 0). Using this definition along with (1) and (2) allows the 
+ratio 𝑟/𝑟∗ to be expressed as: 
+𝑟
+𝑟∗ = 𝑒−𝑏𝑘
+(8) 
+ 
+This equation can be solved for the constant 𝑏 by taking the natural logarithm of both sides: 
+ 
+𝑏= −1
+𝑘ln ( 𝑟
+𝑟∗)
+(9) 
+ 
+The ratio of realization to accruals (𝑟) was estimated from the data as explained below. The ratio 
+of realizations to accruals (𝑟∗) when the capital gains tax and transactions costs are zero is 
+bounded between 𝑟 and 1.0. The analysis in this report allowed 𝑟∗ to vary by a tenth of a percent 
+within those bounds. The sum of transactions costs and state and federal capital gains tax rates 
+(𝑘) was set partly by assumption and partly by using estimates from the data as explained below.  
+Constant Net-of-Tax Elasticity Functional Form 
+The constant net-of-tax elasticity functional form used to calculate the feedback effect of a capital 
+gains tax reduction is: 
+𝑅= 𝐵(1 −𝑘)𝑏 
+(10) 
+where:  
+• 
+𝑅 is the amount of realizations; 
+• 
+𝐵 and 𝑏 are constants; 
+• 
+𝑘 is the sum of transactions costs (𝑐) and combined state capital gains tax (𝑡𝑠) 
+and federal capital gains tax (𝑡𝑓), or 𝑘 = 𝑐+ 𝑡(1 −𝑐) where 𝑡= 𝑡𝑠+ 𝑡𝑓.  
+Following the same steps explained above for the semi-log elasticity produces the elasticity: 
+𝜀𝑡𝑓= −
+𝑏𝑡𝑓
+(1 −𝑡)
+(11) 
+where 𝑏 is given by: 
+ 
+𝑏=
+1
+ln(1 −𝑘) ln ( 𝑟
+𝑟∗)
+(12) 
+
+
+--- PDF PAGE 18 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+15 
+Appendix C. Revenue-Maximizing Tax Rates  
+The revenue-maximizing capital gains tax rate can be estimated using the functional forms 
+reviewed in Appendix B. 
+Semi-Log Functional Form 
+Federal capital gains tax revenues (𝑇𝑎𝑥𝑅𝑒𝑣) are equal to the federal capital gains tax rate (𝑡𝑓) 
+multiplied by realizations (𝑅). Using equation (2), this can be written as: 
+𝑇𝑎𝑥𝑅𝑒𝑣= 𝑡𝑓𝐵𝑒−𝑏(𝑐+𝑡(1−𝑐))
+(13) 
+where 𝑡 is the combined federal capital gains tax (𝑡𝑓) and state capital gains tax (𝑡𝑓). 
+Taking the natural log and differentiating with respect to 𝑡𝑓 produces: 
+𝑑ln(𝑇𝑎𝑥𝑅𝑒𝑣)
+𝑑𝑡𝑓
+= 1
+𝑡𝑓
+−𝑏(1 −𝑐)
+(14) 
+Setting (14) equal to zero and denoting the revenue-maximizing tax rate as 𝑡𝑓
+∗ gives: 
+𝑡𝑓
+∗=
+1
+𝑏(1 −𝑐)
+(15) 
+Multiplying the right-hand side by 𝑡𝑓 over 𝑡𝑓 and using equation (6) allows the revenue-
+maximizing tax rate to be expressed as a function of the tax elasticity 𝜀𝑡 
+𝑡𝑓
+∗= 𝑡𝑓
+𝜀𝑡𝑓
+(16) 
+Constant Net-of-Tax Elasticity Functional Form 
+Using equation (10) and substituting in 𝑘 = 𝑐+ 𝑡(1 −𝑐), federal capital gains tax revenues can 
+be written as: 
+𝑇𝑎𝑥𝑅𝑒𝑣= 𝑡𝑓𝐵[1 −(𝑐+ 𝑡(1 −𝑐))]
+𝑏
+(17) 
+where, again, 𝑡 is the combined federal capital gains tax (𝑡𝑓) and state capital gains tax (𝑡𝑠).  
+Differentiating with respect to 𝑡𝑓 produces: 
+𝑑𝑇𝑎𝑥𝑅𝑒𝑣
+𝑑𝑡𝑓
+= 𝐵[1 −(𝑐+ 𝑡(1 −𝑐))]
+𝑏−𝑡𝑓𝑏𝐵(1 −𝑐)[1 −(𝑐+ 𝑡(1 −𝑐))]
+𝑏−1
+(18) 
+Setting (18) equal to zero and denoting the federal revenue-maximizing tax rate as 𝑡𝑓
+∗ gives: 
+𝑡𝑓
+∗= 1 −𝑡𝑠
+1 + 𝑏
+(19) 
+Solving equation (11) for 𝑏 and substituting into equation (19) allows the revenue-maximizing tax 
+rate to be expressed as a function of the tax elasticity: 
+𝑡𝑓
+∗=
+(1 −𝑡𝑠)𝑡𝑓
+𝑡𝑓−𝜀𝑡𝑓(1 −𝑡𝑠−𝑡𝑓)
+(20) 
+
+
+--- PDF PAGE 19 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+16 
+Appendix D. Data Sources 
+The period of study in this report was 1987 to 2023. Accrued capital gains were obtained from the 
+Board of Governors of the Federal Reserve System, Financial Accounts, R.101 Change in Net 
+Worth of Households and Nonprofit Organizations.28 These data were adjusted to isolate 
+household equities and mutual funds using B.101.h Balance Sheet of Households and B.101.n 
+Balance Sheet of Nonprofit Organizations.29 Education saving accounts (e.g., 529s) were 
+removed using data on such accounts listed in the memo to B.10.1. Individual retirement accounts 
+were removed using estimates from the Investment Company Institute.30  
+Realized capital gains from 1987 to 1994 were obtained from Treasury, Office of Tax Analysis.31 
+Realized capital gains from 1995 to 2023 were obtained from the Congressional Budget Office 
+(CBO).32  
+Federal capital gains tax rates were computed as capital gains tax receipts over realizations as 
+reported by Treasury and CBO. State capital gains tax rates were obtained from the NBER 
+TAXSIM.33 An average effective combined capital gains tax rate was computed by weighting 
+federal and state taxes by realizations.  
+Tax noncompliance impacts the potential response to a capital gains tax reduction. This analysis 
+assumed four different rates of noncompliance: 0%, 10%, 15%, and 20%.34  
+Estimates of transactions costs vary across studies and depend on how costs are measured. Due to 
+the variation in the literature, this analysis assumed a range of transactions costs for corporate and 
+noncorporate equity separately. 
+Transactions costs are generally measured as a share of the total asset’s sales price. The above 
+cost figures were increased by a multiple to reflect costs as a share of the realized gain. The 
+multiple for corporate equity was 4.5 and the multiple for noncorporate equity was 3.25, as 
+determined using IRS Statistics of Income data on gain over sales price.35 Noncorporate equity 
+ 
+28 Board of Governors of the Federal Reserve System, “R.101 Change in Net Worth of Households and Nonprofit 
+Organizations,” Financial Accounts of the United States, https://www.federalreserve.gov/releases/z1/20240607/html/
+r101.htm. 
+29 Board of Governors of the Federal Reserve System, “B.101.h Balance Sheet of Households,” Financial Accounts of 
+the United States, https://www.federalreserve.gov/releases/z1/preview/html/b101h.htm, and “B.101.n Balance Sheet of 
+Nonprofit Organizations,” https://www.federalreserve.gov/releases/z1/preview/html/b101n.htm. 
+30 Investment Company Institute, “Release: Quarterly Retirement Market Data,” The US Retirement Market, Table 19, 
+https://www.ici.org/statistical-report/ret_24_q3. The assets in Table 19 outside of money market assets and 75% of the 
+assets in “Other Assets” in Table 9, and adjusted for Section 529 savings plans, are excluded following the 
+methodology in Steven M. Rosenthal and Lydia S. Austin, “The Dwindling Taxable Share Of U.S. Corporate Stock,” 
+Tax Notes, May 16, 2016, pp. 923-932, https://www.urban.org/sites/default/files/publication/80621/2000790-The-
+Dwindling-Taxable-Share-of-U.S.-Corporate-Stock.pdf. 
+31 U.S. Department of the Treasury, Office of Tax Analysis, “Taxes Paid on Capital Gains for Returns with Positive 
+Net Capital Gains: 1954-2014,” https://home.treasury.gov/policy-issues/tax-policy/office-of-tax-analysis. 
+32 CBO, “Budget and Economic Data, Revenue Projections, by Category,” June 18, 2024 (supplement to An Update to 
+the Budget and Economic Outlook: 2024 to 2034), https://www.cbo.gov/data/budget-economic-data#7. 
+33 National Bureau of Economic Research, “Maximum State Income Tax Rates 1977-2024,” TAXSIM, 
+https://taxsim.nber.org/state-rates/. 
+34 Based on data for various years from IRS, “IRS: The Tax Gap,” https://www.irs.gov/statistics/irs-the-tax-gap. The 
+tax gap varied, but tended to average around 15% for the years available. 
+35 Janette Wilson and Christopher Williams, Sales of Capital Assets Data Reported on Individual Tax Returns, Tax 
+Years 2013-2015, IRS, Statistics of Income Bulletin, Winter 2022, Table 1A, https://www.irs.gov/pub/irs-soi/soi-a-
+soca-id2205.pdf. 
+
+
+--- PDF PAGE 20 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+17 
+includes residential rental property, depreciable business real property, farmland, and other land. 
+A previous CRS study found that corporate stock accounted for 67.9% of long-term capital gains 
+(associated with stocks held directly and indirectly through pass-throughs). The analysis 
+presented in this report assumed corporate equity accounts for 70% of long-term capital gains, in 
+line with the previous finding.  
+The data sources summarized above produced the parameter estimates shown in Table D-1. 
+Table D-1. Elasticity Model Parameter Inputs  
+Parameter 
+Value 
+Realization ratio (𝑟) 
+0.614 
+Federal capital gains tax rate (𝑡𝑓) 
+0.1918 
+State capital gains tax rate (𝑡𝑠) 
+0.0380 
+Transactions costs: 
+ 
+Corporate equity 
+0.0, 0.0010, 0.0045, 0.010 
+Noncorporate equity 
+0.0, 0.03, 0.06, 0.09 
+Transactions cost multiple: 
+ 
+Corporate equity 
+4.5 
+Noncorporate equity 
+3.25 
+Share of long-term gains attributable to corporate stock  
+0.70 
+Noncompliance rate 
+0.0, 0.10, 0.15, 0.20 
+ 
+ 
+ 
+ 
+
+
+--- PDF PAGE 21 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service 
+18 
+Appendix E. References to Empirical Studies in 
+Table 4 
+Agersnap, Ole and Owen Zidar, “The Tax Elasticity of Capital Gains and Revenue-Maximizing 
+Rates,” American Economic Review: Insights, vol. 3. no. 4 (December 2021), pp. 399-416. 
+Auerbach, Alan J. and Jonathan M. Siegel, “Capital-Gains Realizations of the Rich and 
+Sophisticated,” American Economic Review, vol. 90 (May 2000), pp. 276-282. 
+Auten, Gerald and David Joulfaian, “Taxes and Capital Gains Realizations: Evidence from a 
+Long Panel,” Prepared for Presentation at the Society of Government Economists session at the 
+Allied Social Science Association Meetings, January 8, 2005, paper dated December 2004.  
+Bakija, Jon M. and William M. Gentry, Capital Gains Realizations: Evidence from a Long Panel 
+of State-Level Data, Working Paper, Williams College, June 2014, https://web.williams.edu/
+Economics/wp/BakijaGentryCapitalGainsStatePanel.pdf. 
+Bogart, William T. and William M. Gentry, “Capital Gains Taxes and Realizations: Evidence from 
+Interstate Comparisons,” Review of Economics and Statistics, vol. 77 (May 1995), pp. 267-282. 
+Burman, Leonard E. and William C. Randolph, “Measuring Permanent Responses to Capital 
+Gains Tax Change in Panel Data,” American Economic Review, vol. 83 (September 1994), pp. 
+794-809. 
+Dowd, Tim, Robert McClelland, and Athiphat Muthitacharoen, “New Evidence on the Elasticity 
+of Capital Gains,” National Tax Journal, vol. 68, no. 3 (September 2015), pp. 511-544. 
+Dowd, Tim and Robert McClelland, The Sensitivity of the Tax Elasticity of Capital Gains to 
+Lagged Tax Rates and Migration, Tax Policy Center, May 2024. 
+Gillingham, Robert and John S. Greenlees, “The Effect of Marginal Tax Rates on Capital Gains 
+Revenue: Another Look at the Evidence,” National Tax Journal, vol. 45 (June 1992), pp. 167-
+177. 
+ 
+ 
+Author Information 
+ 
+Mark P. Keightley 
+Specialist in Economics 
+   
+Jane G. Gravelle 
+Senior Specialist in Economic Policy 
+   
+
+
+--- PDF PAGE 22 ---
+Boundaries on the Long-Run Realization Response to Changes in Capital Gains Taxes  
+ 
+Congressional Research Service  
+R48562 · VERSION 1 · NEW 
+19 
+ 
+ 
+Disclaimer 
+This document was prepared by the Congressional Research Service (CRS). CRS serves as nonpartisan 
+shared staff to congressional committees and Members of Congress. It operates solely at the behest of and 
+under the direction of Congress. Information in a CRS Report should not be relied upon for purposes other 
+than public understanding of information that has been provided by CRS to Members of Congress in 
+connection with CRS’s institutional role. CRS Reports, as a work of the United States Government, are not 
+subject to copyright protection in the United States. Any CRS Report may be reproduced and distributed in 
+its entirety without permission from CRS. However, as a CRS Report may include copyrighted images or 
+material from a third party, you may need to obtain the permission of the copyright holder if you wish to 
+copy or otherwise use copyrighted material. 
+ 

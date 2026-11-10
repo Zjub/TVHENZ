@@ -1,0 +1,607 @@
+base_income,gain,exception,basic_increment,tax,average_gain_rate,case
+0,10000,FALSE,0,3000,0.3,Subject to minimum
+0,10000,TRUE,0,0,0,Specified-payment exemption
+0,50000,FALSE,5252,15000,0.3,Subject to minimum
+0,50000,TRUE,5252,5252,0.10504,Specified-payment exemption
+0,200000,FALSE,55602,60000,0.3,Subject to minimum
+0,200000,TRUE,55602,55602,0.27801,Specified-payment exemption
+2500,10000,FALSE,0,3000,0.3,Subject to minimum
+2500,10000,TRUE,0,0,0,Specified-payment exemption
+2500,50000,FALSE,6002,15000,0.3,Subject to minimum
+2500,50000,TRUE,6002,6002,0.12004,Specified-payment exemption
+2500,200000,FALSE,56727,60000,0.3,Subject to minimum
+2500,200000,TRUE,56727,56727,0.283635,Specified-payment exemption
+5000,10000,FALSE,0,3000,0.3,Subject to minimum
+5000,10000,TRUE,0,0,0,Specified-payment exemption
+5000,50000,FALSE,6752,15000,0.3,Subject to minimum
+5000,50000,TRUE,6752,6752,0.13504,Specified-payment exemption
+5000,200000,FALSE,57852,60000,0.3,Subject to minimum
+5000,200000,TRUE,57852,57852,0.28926,Specified-payment exemption
+7500,10000,FALSE,0,3000,0.3,Subject to minimum
+7500,10000,TRUE,0,0,0,Specified-payment exemption
+7500,50000,FALSE,7502,15000,0.3,Subject to minimum
+7500,50000,TRUE,7502,7502,0.15004,Specified-payment exemption
+7500,200000,FALSE,58977,60000,0.3,Subject to minimum
+7500,200000,TRUE,58977,58977,0.294885,Specified-payment exemption
+10000,10000,FALSE,252.00000000000003,3000,0.3,Subject to minimum
+10000,10000,TRUE,252.00000000000003,252.00000000000003,0.025200000000000004,Specified-payment exemption
+10000,50000,FALSE,8252,15000,0.3,Subject to minimum
+10000,50000,TRUE,8252,8252,0.16504,Specified-payment exemption
+10000,200000,FALSE,60102,60102,0.30051,Subject to minimum
+10000,200000,TRUE,60102,60102,0.30051,Specified-payment exemption
+12500,10000,FALSE,602.0000000000001,3000,0.3,Subject to minimum
+12500,10000,TRUE,602.0000000000001,602.0000000000001,0.06020000000000001,Specified-payment exemption
+12500,50000,FALSE,9002,15000,0.3,Subject to minimum
+12500,50000,TRUE,9002,9002,0.18004,Specified-payment exemption
+12500,200000,FALSE,61227,61227,0.306135,Subject to minimum
+12500,200000,TRUE,61227,61227,0.306135,Specified-payment exemption
+15000,10000,FALSE,952.0000000000001,3000,0.3,Subject to minimum
+15000,10000,TRUE,952.0000000000001,952.0000000000001,0.0952,Specified-payment exemption
+15000,50000,FALSE,9752,15000,0.3,Subject to minimum
+15000,50000,TRUE,9752,9752,0.19504,Specified-payment exemption
+15000,200000,FALSE,62352,62352,0.31176,Subject to minimum
+15000,200000,TRUE,62352,62352,0.31176,Specified-payment exemption
+17500,10000,FALSE,1302.0000000000002,3000,0.3,Subject to minimum
+17500,10000,TRUE,1302.0000000000002,1302.0000000000002,0.1302,Specified-payment exemption
+17500,50000,FALSE,10502,15000,0.3,Subject to minimum
+17500,50000,TRUE,10502,10502,0.21004,Specified-payment exemption
+17500,200000,FALSE,63477,63477,0.317385,Subject to minimum
+17500,200000,TRUE,63477,63477,0.317385,Specified-payment exemption
+20000,10000,FALSE,1400.0000000000002,3000,0.3,Subject to minimum
+20000,10000,TRUE,1400.0000000000002,1400.0000000000002,0.14,Specified-payment exemption
+20000,50000,FALSE,11000,15000,0.3,Subject to minimum
+20000,50000,TRUE,11000,11000,0.22,Specified-payment exemption
+20000,200000,FALSE,64350,64350,0.32175,Subject to minimum
+20000,200000,TRUE,64350,64350,0.32175,Specified-payment exemption
+22500,10000,FALSE,1400,3000,0.3,Subject to minimum
+22500,10000,TRUE,1400,1400,0.14,Specified-payment exemption
+22500,50000,FALSE,11400,15000,0.3,Subject to minimum
+22500,50000,TRUE,11400,11400,0.228,Specified-payment exemption
+22500,200000,FALSE,65125,65125,0.325625,Subject to minimum
+22500,200000,TRUE,65125,65125,0.325625,Specified-payment exemption
+25000,10000,FALSE,1400,3000,0.3,Subject to minimum
+25000,10000,TRUE,1400,1400,0.14,Specified-payment exemption
+25000,50000,FALSE,11800,15000,0.3,Subject to minimum
+25000,50000,TRUE,11800,11800,0.236,Specified-payment exemption
+25000,200000,FALSE,65900,65900,0.3295,Subject to minimum
+25000,200000,TRUE,65900,65900,0.3295,Specified-payment exemption
+27500,10000,FALSE,1400.0000000000002,3000,0.3,Subject to minimum
+27500,10000,TRUE,1400.0000000000002,1400.0000000000002,0.14,Specified-payment exemption
+27500,50000,FALSE,12200,15000,0.3,Subject to minimum
+27500,50000,TRUE,12200,12200,0.244,Specified-payment exemption
+27500,200000,FALSE,66675,66675,0.333375,Subject to minimum
+27500,200000,TRUE,66675,66675,0.333375,Specified-payment exemption
+30000,10000,FALSE,1400.0000000000002,3000,0.3,Subject to minimum
+30000,10000,TRUE,1400.0000000000002,1400.0000000000002,0.14,Specified-payment exemption
+30000,50000,FALSE,12600,15000,0.3,Subject to minimum
+30000,50000,TRUE,12600,12600,0.252,Specified-payment exemption
+30000,200000,FALSE,67450,67450,0.33725,Subject to minimum
+30000,200000,TRUE,67450,67450,0.33725,Specified-payment exemption
+32500,10000,FALSE,1400.0000000000002,3000,0.3,Subject to minimum
+32500,10000,TRUE,1400.0000000000002,1400.0000000000002,0.14,Specified-payment exemption
+32500,50000,FALSE,13000,15000,0.3,Subject to minimum
+32500,50000,TRUE,13000,13000,0.26,Specified-payment exemption
+32500,200000,FALSE,68225,68225,0.341125,Subject to minimum
+32500,200000,TRUE,68225,68225,0.341125,Specified-payment exemption
+35000,10000,FALSE,1400.0000000000005,3000,0.3,Subject to minimum
+35000,10000,TRUE,1400.0000000000005,1400.0000000000005,0.14000000000000004,Specified-payment exemption
+35000,50000,FALSE,13400,15000,0.3,Subject to minimum
+35000,50000,TRUE,13400,13400,0.268,Specified-payment exemption
+35000,200000,FALSE,69000,69000,0.345,Subject to minimum
+35000,200000,TRUE,69000,69000,0.345,Specified-payment exemption
+37500,10000,FALSE,1799.9999999999995,3000,0.3,Subject to minimum
+37500,10000,TRUE,1799.9999999999995,1799.9999999999995,0.17999999999999997,Specified-payment exemption
+37500,50000,FALSE,13800,15000,0.3,Subject to minimum
+37500,50000,TRUE,13800,13800,0.276,Specified-payment exemption
+37500,200000,FALSE,69775,69775,0.348875,Subject to minimum
+37500,200000,TRUE,69775,69775,0.348875,Specified-payment exemption
+40000,10000,FALSE,2199.9999999999995,3000,0.3,Subject to minimum
+40000,10000,TRUE,2199.9999999999995,2199.9999999999995,0.21999999999999995,Specified-payment exemption
+40000,50000,FALSE,14200,15000,0.3,Subject to minimum
+40000,50000,TRUE,14200,14200,0.284,Specified-payment exemption
+40000,200000,FALSE,70550,70550,0.35275,Subject to minimum
+40000,200000,TRUE,70550,70550,0.35275,Specified-payment exemption
+42500,10000,FALSE,2599.9999999999995,3000,0.3,Subject to minimum
+42500,10000,TRUE,2599.9999999999995,2599.9999999999995,0.25999999999999995,Specified-payment exemption
+42500,50000,FALSE,14600,15000,0.3,Subject to minimum
+42500,50000,TRUE,14600,14600,0.292,Specified-payment exemption
+42500,200000,FALSE,71325,71325,0.356625,Subject to minimum
+42500,200000,TRUE,71325,71325,0.356625,Specified-payment exemption
+45000,10000,FALSE,2999.9999999999995,3000,0.3,Subject to minimum
+45000,10000,TRUE,2999.9999999999995,2999.9999999999995,0.29999999999999993,Specified-payment exemption
+45000,50000,FALSE,15000,15000,0.3,Subject to minimum
+45000,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+45000,200000,FALSE,72100,72100,0.3605,Subject to minimum
+45000,200000,TRUE,72100,72100,0.3605,Specified-payment exemption
+47500,10000,FALSE,3000,3000,0.3,Subject to minimum
+47500,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+47500,50000,FALSE,15000,15000,0.3,Subject to minimum
+47500,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+47500,200000,FALSE,72475,72475,0.362375,Subject to minimum
+47500,200000,TRUE,72475,72475,0.362375,Specified-payment exemption
+50000,10000,FALSE,3000,3000,0.3,Subject to minimum
+50000,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+50000,50000,FALSE,15000,15000,0.3,Subject to minimum
+50000,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+50000,200000,FALSE,72850,72850,0.36425,Subject to minimum
+50000,200000,TRUE,72850,72850,0.36425,Specified-payment exemption
+52500,10000,FALSE,3000,3000,0.3,Subject to minimum
+52500,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+52500,50000,FALSE,15000,15000,0.3,Subject to minimum
+52500,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+52500,200000,FALSE,73225,73225,0.366125,Subject to minimum
+52500,200000,TRUE,73225,73225,0.366125,Specified-payment exemption
+55000,10000,FALSE,3000,3000,0.3,Subject to minimum
+55000,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+55000,50000,FALSE,15000,15000,0.3,Subject to minimum
+55000,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+55000,200000,FALSE,73600,73600,0.368,Subject to minimum
+55000,200000,TRUE,73600,73600,0.368,Specified-payment exemption
+57500,10000,FALSE,3000,3000,0.3,Subject to minimum
+57500,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+57500,50000,FALSE,15000,15000,0.3,Subject to minimum
+57500,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+57500,200000,FALSE,73975,73975,0.369875,Subject to minimum
+57500,200000,TRUE,73975,73975,0.369875,Specified-payment exemption
+60000,10000,FALSE,3000,3000,0.3,Subject to minimum
+60000,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+60000,50000,FALSE,15000,15000,0.3,Subject to minimum
+60000,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+60000,200000,FALSE,74350,74350,0.37175,Subject to minimum
+60000,200000,TRUE,74350,74350,0.37175,Specified-payment exemption
+62500,10000,FALSE,3000,3000,0.3,Subject to minimum
+62500,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+62500,50000,FALSE,15000,15000,0.3,Subject to minimum
+62500,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+62500,200000,FALSE,74725,74725,0.373625,Subject to minimum
+62500,200000,TRUE,74725,74725,0.373625,Specified-payment exemption
+65000,10000,FALSE,3000,3000,0.3,Subject to minimum
+65000,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+65000,50000,FALSE,15000,15000,0.3,Subject to minimum
+65000,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+65000,200000,FALSE,75100,75100,0.3755,Subject to minimum
+65000,200000,TRUE,75100,75100,0.3755,Specified-payment exemption
+67500,10000,FALSE,3000,3000,0.3,Subject to minimum
+67500,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+67500,50000,FALSE,15000,15000,0.3,Subject to minimum
+67500,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+67500,200000,FALSE,75475,75475,0.377375,Subject to minimum
+67500,200000,TRUE,75475,75475,0.377375,Specified-payment exemption
+70000,10000,FALSE,3000,3000,0.3,Subject to minimum
+70000,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+70000,50000,FALSE,15000,15000,0.3,Subject to minimum
+70000,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+70000,200000,FALSE,75850,75850,0.37925,Subject to minimum
+70000,200000,TRUE,75850,75850,0.37925,Specified-payment exemption
+72500,10000,FALSE,3000,3000,0.3,Subject to minimum
+72500,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+72500,50000,FALSE,15000,15000,0.3,Subject to minimum
+72500,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+72500,200000,FALSE,76225,76225,0.381125,Subject to minimum
+72500,200000,TRUE,76225,76225,0.381125,Specified-payment exemption
+75000,10000,FALSE,3000,3000,0.3,Subject to minimum
+75000,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+75000,50000,FALSE,15000,15000,0.3,Subject to minimum
+75000,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+75000,200000,FALSE,76600,76600,0.383,Subject to minimum
+75000,200000,TRUE,76600,76600,0.383,Specified-payment exemption
+77500,10000,FALSE,3000,3000,0.3,Subject to minimum
+77500,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+77500,50000,FALSE,15000,15000,0.3,Subject to minimum
+77500,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+77500,200000,FALSE,76975,76975,0.384875,Subject to minimum
+77500,200000,TRUE,76975,76975,0.384875,Specified-payment exemption
+80000,10000,FALSE,3000,3000,0.3,Subject to minimum
+80000,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+80000,50000,FALSE,15000,15000,0.3,Subject to minimum
+80000,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+80000,200000,FALSE,77350,77350,0.38675,Subject to minimum
+80000,200000,TRUE,77350,77350,0.38675,Specified-payment exemption
+82500,10000,FALSE,3000,3000,0.3,Subject to minimum
+82500,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+82500,50000,FALSE,15000,15000,0.3,Subject to minimum
+82500,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+82500,200000,FALSE,77725,77725,0.388625,Subject to minimum
+82500,200000,TRUE,77725,77725,0.388625,Specified-payment exemption
+85000,10000,FALSE,3000,3000,0.3,Subject to minimum
+85000,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+85000,50000,FALSE,15000,15000,0.3,Subject to minimum
+85000,50000,TRUE,15000,15000,0.3,Specified-payment exemption
+85000,200000,FALSE,78100,78100,0.3905,Subject to minimum
+85000,200000,TRUE,78100,78100,0.3905,Specified-payment exemption
+87500,10000,FALSE,3000,3000,0.3,Subject to minimum
+87500,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+87500,50000,FALSE,15175,15175,0.3035,Subject to minimum
+87500,50000,TRUE,15175,15175,0.3035,Specified-payment exemption
+87500,200000,FALSE,78475,78475,0.392375,Subject to minimum
+87500,200000,TRUE,78475,78475,0.392375,Specified-payment exemption
+90000,10000,FALSE,3000,3000,0.3,Subject to minimum
+90000,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+90000,50000,FALSE,15350,15350,0.307,Subject to minimum
+90000,50000,TRUE,15350,15350,0.307,Specified-payment exemption
+90000,200000,FALSE,78850,78850,0.39425,Subject to minimum
+90000,200000,TRUE,78850,78850,0.39425,Specified-payment exemption
+92500,10000,FALSE,3000,3000,0.3,Subject to minimum
+92500,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+92500,50000,FALSE,15525,15525,0.3105,Subject to minimum
+92500,50000,TRUE,15525,15525,0.3105,Specified-payment exemption
+92500,200000,FALSE,79225,79225,0.396125,Subject to minimum
+92500,200000,TRUE,79225,79225,0.396125,Specified-payment exemption
+95000,10000,FALSE,3000,3000,0.3,Subject to minimum
+95000,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+95000,50000,FALSE,15700,15700,0.314,Subject to minimum
+95000,50000,TRUE,15700,15700,0.314,Specified-payment exemption
+95000,200000,FALSE,79600,79600,0.398,Subject to minimum
+95000,200000,TRUE,79600,79600,0.398,Specified-payment exemption
+97500,10000,FALSE,3000,3000,0.3,Subject to minimum
+97500,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+97500,50000,FALSE,15875,15875,0.3175,Subject to minimum
+97500,50000,TRUE,15875,15875,0.3175,Specified-payment exemption
+97500,200000,FALSE,79975,79975,0.399875,Subject to minimum
+97500,200000,TRUE,79975,79975,0.399875,Specified-payment exemption
+100000,10000,FALSE,3000,3000,0.3,Subject to minimum
+100000,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+100000,50000,FALSE,16050,16050,0.321,Subject to minimum
+100000,50000,TRUE,16050,16050,0.321,Specified-payment exemption
+100000,200000,FALSE,80350,80350,0.40175,Subject to minimum
+100000,200000,TRUE,80350,80350,0.40175,Specified-payment exemption
+102500,10000,FALSE,3000,3000,0.3,Subject to minimum
+102500,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+102500,50000,FALSE,16225,16225,0.3245,Subject to minimum
+102500,50000,TRUE,16225,16225,0.3245,Specified-payment exemption
+102500,200000,FALSE,80725,80725,0.403625,Subject to minimum
+102500,200000,TRUE,80725,80725,0.403625,Specified-payment exemption
+105000,10000,FALSE,3000,3000,0.3,Subject to minimum
+105000,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+105000,50000,FALSE,16400,16400,0.328,Subject to minimum
+105000,50000,TRUE,16400,16400,0.328,Specified-payment exemption
+105000,200000,FALSE,81100,81100,0.4055,Subject to minimum
+105000,200000,TRUE,81100,81100,0.4055,Specified-payment exemption
+107500,10000,FALSE,3000,3000,0.3,Subject to minimum
+107500,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+107500,50000,FALSE,16575,16575,0.3315,Subject to minimum
+107500,50000,TRUE,16575,16575,0.3315,Specified-payment exemption
+107500,200000,FALSE,81475,81475,0.407375,Subject to minimum
+107500,200000,TRUE,81475,81475,0.407375,Specified-payment exemption
+110000,10000,FALSE,3000,3000,0.3,Subject to minimum
+110000,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+110000,50000,FALSE,16750,16750,0.335,Subject to minimum
+110000,50000,TRUE,16750,16750,0.335,Specified-payment exemption
+110000,200000,FALSE,81850,81850,0.40925,Subject to minimum
+110000,200000,TRUE,81850,81850,0.40925,Specified-payment exemption
+112500,10000,FALSE,3000,3000,0.3,Subject to minimum
+112500,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+112500,50000,FALSE,16925,16925,0.3385,Subject to minimum
+112500,50000,TRUE,16925,16925,0.3385,Specified-payment exemption
+112500,200000,FALSE,82225,82225,0.411125,Subject to minimum
+112500,200000,TRUE,82225,82225,0.411125,Specified-payment exemption
+115000,10000,FALSE,3000,3000,0.3,Subject to minimum
+115000,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+115000,50000,FALSE,17100,17100,0.342,Subject to minimum
+115000,50000,TRUE,17100,17100,0.342,Specified-payment exemption
+115000,200000,FALSE,82600,82600,0.413,Subject to minimum
+115000,200000,TRUE,82600,82600,0.413,Specified-payment exemption
+117500,10000,FALSE,3000,3000,0.3,Subject to minimum
+117500,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+117500,50000,FALSE,17275,17275,0.3455,Subject to minimum
+117500,50000,TRUE,17275,17275,0.3455,Specified-payment exemption
+117500,200000,FALSE,82975,82975,0.414875,Subject to minimum
+117500,200000,TRUE,82975,82975,0.414875,Specified-payment exemption
+120000,10000,FALSE,3000,3000,0.3,Subject to minimum
+120000,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+120000,50000,FALSE,17450,17450,0.349,Subject to minimum
+120000,50000,TRUE,17450,17450,0.349,Specified-payment exemption
+120000,200000,FALSE,83350,83350,0.41675,Subject to minimum
+120000,200000,TRUE,83350,83350,0.41675,Specified-payment exemption
+122500,10000,FALSE,3000,3000,0.3,Subject to minimum
+122500,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+122500,50000,FALSE,17625,17625,0.3525,Subject to minimum
+122500,50000,TRUE,17625,17625,0.3525,Specified-payment exemption
+122500,200000,FALSE,83725,83725,0.418625,Subject to minimum
+122500,200000,TRUE,83725,83725,0.418625,Specified-payment exemption
+125000,10000,FALSE,3000,3000,0.3,Subject to minimum
+125000,10000,TRUE,3000,3000,0.3,Specified-payment exemption
+125000,50000,FALSE,17800,17800,0.356,Subject to minimum
+125000,50000,TRUE,17800,17800,0.356,Specified-payment exemption
+125000,200000,FALSE,84100,84100,0.4205,Subject to minimum
+125000,200000,TRUE,84100,84100,0.4205,Specified-payment exemption
+127500,10000,FALSE,3175,3175,0.3175,Subject to minimum
+127500,10000,TRUE,3175,3175,0.3175,Specified-payment exemption
+127500,50000,FALSE,17975,17975,0.3595,Subject to minimum
+127500,50000,TRUE,17975,17975,0.3595,Specified-payment exemption
+127500,200000,FALSE,84475,84475,0.422375,Subject to minimum
+127500,200000,TRUE,84475,84475,0.422375,Specified-payment exemption
+130000,10000,FALSE,3350,3350,0.335,Subject to minimum
+130000,10000,TRUE,3350,3350,0.335,Specified-payment exemption
+130000,50000,FALSE,18150,18150,0.363,Subject to minimum
+130000,50000,TRUE,18150,18150,0.363,Specified-payment exemption
+130000,200000,FALSE,84850,84850,0.42425,Subject to minimum
+130000,200000,TRUE,84850,84850,0.42425,Specified-payment exemption
+132500,10000,FALSE,3525,3525,0.3525,Subject to minimum
+132500,10000,TRUE,3525,3525,0.3525,Specified-payment exemption
+132500,50000,FALSE,18325,18325,0.3665,Subject to minimum
+132500,50000,TRUE,18325,18325,0.3665,Specified-payment exemption
+132500,200000,FALSE,85225,85225,0.426125,Subject to minimum
+132500,200000,TRUE,85225,85225,0.426125,Specified-payment exemption
+135000,10000,FALSE,3700,3700,0.37,Subject to minimum
+135000,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+135000,50000,FALSE,18500,18500,0.37,Subject to minimum
+135000,50000,TRUE,18500,18500,0.37,Specified-payment exemption
+135000,200000,FALSE,85600,85600,0.428,Subject to minimum
+135000,200000,TRUE,85600,85600,0.428,Specified-payment exemption
+137500,10000,FALSE,3700,3700,0.37,Subject to minimum
+137500,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+137500,50000,FALSE,18500,18500,0.37,Subject to minimum
+137500,50000,TRUE,18500,18500,0.37,Specified-payment exemption
+137500,200000,FALSE,85800,85800,0.429,Subject to minimum
+137500,200000,TRUE,85800,85800,0.429,Specified-payment exemption
+140000,10000,FALSE,3700,3700,0.37,Subject to minimum
+140000,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+140000,50000,FALSE,18500,18500,0.37,Subject to minimum
+140000,50000,TRUE,18500,18500,0.37,Specified-payment exemption
+140000,200000,FALSE,86000,86000,0.43,Subject to minimum
+140000,200000,TRUE,86000,86000,0.43,Specified-payment exemption
+142500,10000,FALSE,3700,3700,0.37,Subject to minimum
+142500,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+142500,50000,FALSE,18700,18700,0.374,Subject to minimum
+142500,50000,TRUE,18700,18700,0.374,Specified-payment exemption
+142500,200000,FALSE,86200,86200,0.431,Subject to minimum
+142500,200000,TRUE,86200,86200,0.431,Specified-payment exemption
+145000,10000,FALSE,3700,3700,0.37,Subject to minimum
+145000,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+145000,50000,FALSE,18900,18900,0.378,Subject to minimum
+145000,50000,TRUE,18900,18900,0.378,Specified-payment exemption
+145000,200000,FALSE,86400,86400,0.432,Subject to minimum
+145000,200000,TRUE,86400,86400,0.432,Specified-payment exemption
+147500,10000,FALSE,3700,3700,0.37,Subject to minimum
+147500,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+147500,50000,FALSE,19100,19100,0.382,Subject to minimum
+147500,50000,TRUE,19100,19100,0.382,Specified-payment exemption
+147500,200000,FALSE,86600,86600,0.433,Subject to minimum
+147500,200000,TRUE,86600,86600,0.433,Specified-payment exemption
+150000,10000,FALSE,3700,3700,0.37,Subject to minimum
+150000,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+150000,50000,FALSE,19300,19300,0.386,Subject to minimum
+150000,50000,TRUE,19300,19300,0.386,Specified-payment exemption
+150000,200000,FALSE,86800,86800,0.434,Subject to minimum
+150000,200000,TRUE,86800,86800,0.434,Specified-payment exemption
+152500,10000,FALSE,3700,3700,0.37,Subject to minimum
+152500,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+152500,50000,FALSE,19500,19500,0.39,Subject to minimum
+152500,50000,TRUE,19500,19500,0.39,Specified-payment exemption
+152500,200000,FALSE,87000,87000,0.435,Subject to minimum
+152500,200000,TRUE,87000,87000,0.435,Specified-payment exemption
+155000,10000,FALSE,3700,3700,0.37,Subject to minimum
+155000,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+155000,50000,FALSE,19700,19700,0.394,Subject to minimum
+155000,50000,TRUE,19700,19700,0.394,Specified-payment exemption
+155000,200000,FALSE,87200,87200,0.436,Subject to minimum
+155000,200000,TRUE,87200,87200,0.436,Specified-payment exemption
+157500,10000,FALSE,3700,3700,0.37,Subject to minimum
+157500,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+157500,50000,FALSE,19900,19900,0.398,Subject to minimum
+157500,50000,TRUE,19900,19900,0.398,Specified-payment exemption
+157500,200000,FALSE,87400,87400,0.437,Subject to minimum
+157500,200000,TRUE,87400,87400,0.437,Specified-payment exemption
+160000,10000,FALSE,3700,3700,0.37,Subject to minimum
+160000,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+160000,50000,FALSE,20100,20100,0.402,Subject to minimum
+160000,50000,TRUE,20100,20100,0.402,Specified-payment exemption
+160000,200000,FALSE,87600,87600,0.438,Subject to minimum
+160000,200000,TRUE,87600,87600,0.438,Specified-payment exemption
+162500,10000,FALSE,3700,3700,0.37,Subject to minimum
+162500,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+162500,50000,FALSE,20300,20300,0.406,Subject to minimum
+162500,50000,TRUE,20300,20300,0.406,Specified-payment exemption
+162500,200000,FALSE,87800,87800,0.439,Subject to minimum
+162500,200000,TRUE,87800,87800,0.439,Specified-payment exemption
+165000,10000,FALSE,3700,3700,0.37,Subject to minimum
+165000,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+165000,50000,FALSE,20500,20500,0.41,Subject to minimum
+165000,50000,TRUE,20500,20500,0.41,Specified-payment exemption
+165000,200000,FALSE,88000,88000,0.44,Subject to minimum
+165000,200000,TRUE,88000,88000,0.44,Specified-payment exemption
+167500,10000,FALSE,3700,3700,0.37,Subject to minimum
+167500,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+167500,50000,FALSE,20700,20700,0.414,Subject to minimum
+167500,50000,TRUE,20700,20700,0.414,Specified-payment exemption
+167500,200000,FALSE,88200,88200,0.441,Subject to minimum
+167500,200000,TRUE,88200,88200,0.441,Specified-payment exemption
+170000,10000,FALSE,3700,3700,0.37,Subject to minimum
+170000,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+170000,50000,FALSE,20900,20900,0.418,Subject to minimum
+170000,50000,TRUE,20900,20900,0.418,Specified-payment exemption
+170000,200000,FALSE,88400,88400,0.442,Subject to minimum
+170000,200000,TRUE,88400,88400,0.442,Specified-payment exemption
+172500,10000,FALSE,3700,3700,0.37,Subject to minimum
+172500,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+172500,50000,FALSE,21100,21100,0.422,Subject to minimum
+172500,50000,TRUE,21100,21100,0.422,Specified-payment exemption
+172500,200000,FALSE,88600,88600,0.443,Subject to minimum
+172500,200000,TRUE,88600,88600,0.443,Specified-payment exemption
+175000,10000,FALSE,3700,3700,0.37,Subject to minimum
+175000,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+175000,50000,FALSE,21300,21300,0.426,Subject to minimum
+175000,50000,TRUE,21300,21300,0.426,Specified-payment exemption
+175000,200000,FALSE,88800,88800,0.444,Subject to minimum
+175000,200000,TRUE,88800,88800,0.444,Specified-payment exemption
+177500,10000,FALSE,3700,3700,0.37,Subject to minimum
+177500,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+177500,50000,FALSE,21500,21500,0.43,Subject to minimum
+177500,50000,TRUE,21500,21500,0.43,Specified-payment exemption
+177500,200000,FALSE,89000,89000,0.445,Subject to minimum
+177500,200000,TRUE,89000,89000,0.445,Specified-payment exemption
+180000,10000,FALSE,3700,3700,0.37,Subject to minimum
+180000,10000,TRUE,3700,3700,0.37,Specified-payment exemption
+180000,50000,FALSE,21700,21700,0.434,Subject to minimum
+180000,50000,TRUE,21700,21700,0.434,Specified-payment exemption
+180000,200000,FALSE,89200,89200,0.446,Subject to minimum
+180000,200000,TRUE,89200,89200,0.446,Specified-payment exemption
+182500,10000,FALSE,3900,3900,0.39,Subject to minimum
+182500,10000,TRUE,3900,3900,0.39,Specified-payment exemption
+182500,50000,FALSE,21900,21900,0.438,Subject to minimum
+182500,50000,TRUE,21900,21900,0.438,Specified-payment exemption
+182500,200000,FALSE,89400,89400,0.447,Subject to minimum
+182500,200000,TRUE,89400,89400,0.447,Specified-payment exemption
+185000,10000,FALSE,4100,4100,0.41,Subject to minimum
+185000,10000,TRUE,4100,4100,0.41,Specified-payment exemption
+185000,50000,FALSE,22100,22100,0.442,Subject to minimum
+185000,50000,TRUE,22100,22100,0.442,Specified-payment exemption
+185000,200000,FALSE,89600,89600,0.448,Subject to minimum
+185000,200000,TRUE,89600,89600,0.448,Specified-payment exemption
+187500,10000,FALSE,4300,4300,0.43,Subject to minimum
+187500,10000,TRUE,4300,4300,0.43,Specified-payment exemption
+187500,50000,FALSE,22300,22300,0.446,Subject to minimum
+187500,50000,TRUE,22300,22300,0.446,Specified-payment exemption
+187500,200000,FALSE,89800,89800,0.449,Subject to minimum
+187500,200000,TRUE,89800,89800,0.449,Specified-payment exemption
+190000,10000,FALSE,4500,4500,0.45,Subject to minimum
+190000,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+190000,50000,FALSE,22500,22500,0.45,Subject to minimum
+190000,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+190000,200000,FALSE,90000,90000,0.45,Subject to minimum
+190000,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+192500,10000,FALSE,4500,4500,0.45,Subject to minimum
+192500,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+192500,50000,FALSE,22500,22500,0.45,Subject to minimum
+192500,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+192500,200000,FALSE,90000,90000,0.45,Subject to minimum
+192500,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+195000,10000,FALSE,4500,4500,0.45,Subject to minimum
+195000,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+195000,50000,FALSE,22500,22500,0.45,Subject to minimum
+195000,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+195000,200000,FALSE,90000,90000,0.45,Subject to minimum
+195000,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+197500,10000,FALSE,4500,4500,0.45,Subject to minimum
+197500,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+197500,50000,FALSE,22500,22500,0.45,Subject to minimum
+197500,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+197500,200000,FALSE,90000,90000,0.45,Subject to minimum
+197500,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+200000,10000,FALSE,4500,4500,0.45,Subject to minimum
+200000,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+200000,50000,FALSE,22500,22500,0.45,Subject to minimum
+200000,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+200000,200000,FALSE,90000,90000,0.45,Subject to minimum
+200000,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+202500,10000,FALSE,4500,4500,0.45,Subject to minimum
+202500,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+202500,50000,FALSE,22500,22500,0.45,Subject to minimum
+202500,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+202500,200000,FALSE,90000,90000,0.45,Subject to minimum
+202500,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+205000,10000,FALSE,4500,4500,0.45,Subject to minimum
+205000,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+205000,50000,FALSE,22500,22500,0.45,Subject to minimum
+205000,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+205000,200000,FALSE,90000,90000,0.45,Subject to minimum
+205000,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+207500,10000,FALSE,4500,4500,0.45,Subject to minimum
+207500,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+207500,50000,FALSE,22500,22500,0.45,Subject to minimum
+207500,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+207500,200000,FALSE,90000,90000,0.45,Subject to minimum
+207500,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+210000,10000,FALSE,4500,4500,0.45,Subject to minimum
+210000,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+210000,50000,FALSE,22500,22500,0.45,Subject to minimum
+210000,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+210000,200000,FALSE,90000,90000,0.45,Subject to minimum
+210000,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+212500,10000,FALSE,4500,4500,0.45,Subject to minimum
+212500,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+212500,50000,FALSE,22500,22500,0.45,Subject to minimum
+212500,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+212500,200000,FALSE,90000,90000,0.45,Subject to minimum
+212500,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+215000,10000,FALSE,4500,4500,0.45,Subject to minimum
+215000,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+215000,50000,FALSE,22500,22500,0.45,Subject to minimum
+215000,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+215000,200000,FALSE,90000,90000,0.45,Subject to minimum
+215000,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+217500,10000,FALSE,4500,4500,0.45,Subject to minimum
+217500,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+217500,50000,FALSE,22500,22500,0.45,Subject to minimum
+217500,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+217500,200000,FALSE,90000,90000,0.45,Subject to minimum
+217500,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+220000,10000,FALSE,4500,4500,0.45,Subject to minimum
+220000,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+220000,50000,FALSE,22500,22500,0.45,Subject to minimum
+220000,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+220000,200000,FALSE,90000,90000,0.45,Subject to minimum
+220000,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+222500,10000,FALSE,4500,4500,0.45,Subject to minimum
+222500,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+222500,50000,FALSE,22500,22500,0.45,Subject to minimum
+222500,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+222500,200000,FALSE,90000,90000,0.45,Subject to minimum
+222500,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+225000,10000,FALSE,4500,4500,0.45,Subject to minimum
+225000,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+225000,50000,FALSE,22500,22500,0.45,Subject to minimum
+225000,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+225000,200000,FALSE,90000,90000,0.45,Subject to minimum
+225000,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+227500,10000,FALSE,4500,4500,0.45,Subject to minimum
+227500,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+227500,50000,FALSE,22500,22500,0.45,Subject to minimum
+227500,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+227500,200000,FALSE,90000,90000,0.45,Subject to minimum
+227500,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+230000,10000,FALSE,4500,4500,0.45,Subject to minimum
+230000,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+230000,50000,FALSE,22500,22500,0.45,Subject to minimum
+230000,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+230000,200000,FALSE,90000,90000,0.45,Subject to minimum
+230000,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+232500,10000,FALSE,4500,4500,0.45,Subject to minimum
+232500,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+232500,50000,FALSE,22500,22500,0.45,Subject to minimum
+232500,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+232500,200000,FALSE,90000,90000,0.45,Subject to minimum
+232500,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+235000,10000,FALSE,4500,4500,0.45,Subject to minimum
+235000,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+235000,50000,FALSE,22500,22500,0.45,Subject to minimum
+235000,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+235000,200000,FALSE,90000,90000,0.45,Subject to minimum
+235000,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+237500,10000,FALSE,4500,4500,0.45,Subject to minimum
+237500,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+237500,50000,FALSE,22500,22500,0.45,Subject to minimum
+237500,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+237500,200000,FALSE,90000,90000,0.45,Subject to minimum
+237500,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+240000,10000,FALSE,4500,4500,0.45,Subject to minimum
+240000,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+240000,50000,FALSE,22500,22500,0.45,Subject to minimum
+240000,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+240000,200000,FALSE,90000,90000,0.45,Subject to minimum
+240000,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+242500,10000,FALSE,4500,4500,0.45,Subject to minimum
+242500,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+242500,50000,FALSE,22500,22500,0.45,Subject to minimum
+242500,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+242500,200000,FALSE,90000,90000,0.45,Subject to minimum
+242500,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+245000,10000,FALSE,4500,4500,0.45,Subject to minimum
+245000,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+245000,50000,FALSE,22500,22500,0.45,Subject to minimum
+245000,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+245000,200000,FALSE,90000,90000,0.45,Subject to minimum
+245000,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+247500,10000,FALSE,4500,4500,0.45,Subject to minimum
+247500,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+247500,50000,FALSE,22500,22500,0.45,Subject to minimum
+247500,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+247500,200000,FALSE,90000,90000,0.45,Subject to minimum
+247500,200000,TRUE,90000,90000,0.45,Specified-payment exemption
+250000,10000,FALSE,4500,4500,0.45,Subject to minimum
+250000,10000,TRUE,4500,4500,0.45,Specified-payment exemption
+250000,50000,FALSE,22500,22500,0.45,Subject to minimum
+250000,50000,TRUE,22500,22500,0.45,Specified-payment exemption
+250000,200000,FALSE,90000,90000,0.45,Subject to minimum
+250000,200000,TRUE,90000,90000,0.45,Specified-payment exemption

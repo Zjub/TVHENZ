@@ -1,0 +1,3487 @@
+--- PDF PAGE 1 ---
+NBER WORKING PAPER SERIES
+THE TAX ELASTICITY OF CAPITAL GAINS AND REVENUE-MAXIMIZING
+RATES
+Ole Agersnap
+Owen M. Zidar
+Working Paper 27705
+http://www.nber.org/papers/w27705
+NATIONAL BUREAU OF ECONOMIC RESEARCH
+1050 Massachusetts Avenue
+Cambridge, MA 02138
+August 2020, Revised December 2020
+We thank Coly Elhai and Stephanie Kestelman for providing excellent research assistance on this 
+project. We also thank Alan Auerbach, Jerry Auten, Lily Batchelder, Tim Dowd, Patrick 
+Driessen, Jane Gravelle, David Kamin, Paul Kindsgrab, Henrik Kleven, Ilyana Kuziemko, Robert 
+McClelland, Jim Poterba, Natasha Sarin, Daniel Shaviro, Juan Carlos Suárez Serrato, Larry 
+Summers, Danny Yagan, Eric Zwick, and anonymous referees as well as seminar and conference 
+participants for helpful conversations and suggestions. This work is supported by National 
+Science Foundation under Grant Number 1752431. We declare that we have no relevant or 
+material financial interests that relate to the research described in this paper. The views expressed 
+herein are those of the authors and do not necessarily reflect the views of the National Bureau of 
+Economic Research.
+NBER working papers are circulated for discussion and comment purposes. They have not been 
+peer-reviewed or been subject to the review by the NBER Board of Directors that accompanies 
+official NBER publications.
+© 2020 by Ole Agersnap and Owen M. Zidar. All rights reserved. Short sections of text, not to 
+exceed two paragraphs, may be quoted without explicit permission provided that full credit, 
+including © notice, is given to the source.
+
+
+--- PDF PAGE 2 ---
+The Tax Elasticity of Capital Gains and Revenue-Maximizing Rates 
+Ole Agersnap and Owen M. Zidar
+NBER Working Paper No. 27705
+August 2020, Revised December 2020
+JEL No. H0,H2,H21,H24,H71,R5
+ABSTRACT
+This paper uses a direct-projections approach to estimate the effect of capital gains taxation on 
+realizations at the state level, and then develops a framework for determining revenue-
+maximizing rates at the federal level. We find that the elasticity of revenues with respect to the 
+tax rate over a ten-year period is -0.5 to -0.3, indicating that capital gains tax cuts do not pay for 
+themselves, and that a 5 percentage point rate increase would yield $18 to $30 billion in annual 
+federal tax revenue. Our long-run estimates yield revenue-maximizing capital gains tax rates of 
+38 to 47 percent.
+Ole Agersnap
+Department of Economics  
+Princeton University  
+Princeton, NJ 08544
+agersnap@princeton.edu
+Owen M. Zidar
+Department of Economics &
+School of International and Public Affairs
+Princeton University
+237 Julis Romo Rabinowitz Building
+Princeton, NJ 08544
+and NBER
+ozidar@princeton.edu
+
+
+--- PDF PAGE 3 ---
+The tax elasticity of capital gains realizations features centrally in U.S. ﬁscal policy debates. In the 1990s
+“capital gains tax wars,” U.S. Treasury and economic oﬃcials argued that the responsiveness of realizations
+to capital gains tax rates was large enough that capital gains tax cuts would pay for themselves (Auten and
+Cordes, 1991). Others (e.g., Gravelle, 1991) asserted that the true responsiveness was much lower, so capital
+tax cuts would generate substantial ﬁscal cost. This issue has re-emerged in every presidential administration
+since 1990 and plays a key role in ongoing tax reform plans. For instance, this elasticity is the central parameter
+governing the revenue scores of Vice President Biden’s plan to increase capital gains rates as well as President
+Trump’s proposal reducing capital gains taxes.
+Informing these policy debates is diﬃcult because a wide range of estimates exist. Feldstein, Slemrod and
+Yitzhaki (1980), for example, estimate an elasticity with respect to the capital gains tax rate of -3.8, whereas
+the estimate of Burman and Randolph (1994) is -0.22. Moreover, there is limited empirical evidence in recent
+decades when there has been lower inﬂation, more widespread use of diversiﬁed investment vehicles, and a
+bigger role of pass-through ﬁrms, which have accounted for nearly half of capital gains realizations in recent
+years (Smith, Yagan, Zidar and Zwick, 2019).
+This paper estimates the eﬀect of capital gains taxes on tax revenues and quantiﬁes the implications for
+revenue-maximizing tax rates in the United States. We use a direct-projections approach and new state-level
+panel data on capital gains realizations and the migration of the wealthy to estimate the eﬀects of state capital
+gains tax changes on realizations and location decisions. Our data, which range from 1980 to 2016, allow us
+to characterize responsiveness in a more recent period than most of the literature, and our direct-projections
+approach enables us to estimate eﬀects over diﬀerent time horizons and test for dynamic eﬀects. We then build
+a simple framework to relate these state-level eﬀects to a policy-relevant elasticity at the national level, which is
+the state-level realization response after removing migration eﬀects and accounting for average state taxes and
+a minor aggregation adjustment term. We ﬁnd that this policy-relevant elasticity of realizations with respect
+to capital gains tax rates over a ten year period is approximately -0.3 to -0.5 depending on the speciﬁcation,
+and that the estimates are larger in absolute value in the short and medium run than in the long run.
+We highlight three implications of these elasticity estimates.
+First, these estimates are well below an
+elasticity of one in absolute value, which indicates that capital gains tax cuts do not pay for themselves. We
+formally test and reject the null of an elasticity of -1.0. Second, these estimates suggest that raising capital
+gains tax rates by 5 percentage points (in the current regime with unlimited deferral and step-up-basis at death)
+would yield 18 to 30 billion in annual tax revenue, which is roughly twice the amount implied by the current
+approach of the Joint Committee on Taxation (JCT), which according to Gravelle (2020) currently uses an
+elasticity of -0.7 to score proposals.1 Third, our long-run elasticity estimates correspond to point estimates for
+the revenue-maximizing capital gains tax rates of 38 to 47 percent.
+Using state-level panel data provides more reforms and closer comparison groups than time-series analysis
+at the federal level. At the federal level, there are not only fewer reforms but also many confounding factors.
+1Gravelle (2020) also notes that Treasury had used an estimate of -1.0 previously, but has since moved closer to the JCT’s
+estimate. In addition, Dowd, McClelland and Muthitacharoen (2015), whose paper ﬁrst appeared as a technical working paper
+(JCX-56-12) of joint work of the staﬀof the JCT and CBO, estimate an elasticity of -0.72.
+2
+
+
+--- PDF PAGE 4 ---
+Figure 1 plots realizations and the maximum long-run capital gains tax rate since 1980. It shows that some
+capital gains tax changes are associated with sizable movements in realizations, but the responses are quite
+unequal across reforms. It is also quite diﬃcult to separate these movements from unrelated macroeconomic
+trends and asset price ﬂuctuations. One approach is to diﬀerence out macroeconomic trends by comparing the
+realization series in one county with that of a similar country. In panels (b) and (c) of Figure 1, we implement
+this approach using the realization series of the U.K. around cuts to the U.S. capital gains tax rate in 1997
+and 2003. These panels, however, show how precarious this approach is—it yields unstable elasticity estimates
+that exhibit large variance in non-tax-related country-year shocks and inherits the limitations of cross-country
+regressions.
+Our state-level approach complements prior work by Bogart and Gentry (1995), who use state panel data
+from 1979 to 1990 to estimate the eﬀect of capital gains tax rates on on state-level realizations per tax return,
+and ongoing work by Bakija and Gentry (2014), who use a similar approach for a longer panel from 1950-2007.
+Relative to this valuable work, our paper uses a diﬀerent empirical approach and new data to provide new
+policy-relevant elasticity estimates based on a more recent sample that is closer to current conditions in terms
+of inﬂation, pass-through prevalence, and tax code. By having a better measure of location decisions of the
+wealthy, our approach also provides a more accurate accounting for migration eﬀects, and thus policy-relevant
+realization eﬀects, which diﬀerence out migration responses. Moreover, we use a direct-projections approach
+that contributes new graphical evidence on the dynamics of realizations around tax changes. Scoring capital
+gains tax changes requires estimating how realizations evolve over a ten-year period around the tax change,
+which, to the best of our knowledge, has not been done in prior work.
+Much of the literature on capital gains in the 1990s and 2000s (e.g., Burman and Randolph, 1994; Auerbach
+and Siegel, 2000; Poterba, 2002; Auten and Joulfaian, 2004) has focused on the distinction between temporary
+and permanent eﬀects, and used individual-level data to estimate these eﬀects. The interpretation of these
+individual-level results, however, is complicated by factors such as strategic loss-harvesting, observations with
+zero realizations, and movement in and out of top income brackets depending on the timing of big realizations.
+While standard approaches for addressing these concerns exist (e.g., selection corrections (Heckman, 1979) to
+account for realization decisions and instruments for tax rates), aggregating within a state-year cell avoids
+these complexities and also provides a longer panel than many existing individual-level studies. In addition,
+mapping estimates of micro-level responses, which are often person-weighted rather than dollar-weighted, into
+policy-relevant macro eﬀects on tax revenues can be diﬃcult.2 Indeed, Joint Committee on Taxation (1990)
+highlighted similar concerns when evaluating the available literature to score reforms during the capital tax
+wars. Some recent promising work using bunching approaches (e.g., Dowd and McClelland, 2019; Buhlmann,
+Doerrenberg, Loos and Voget, 2020) also faces the challenge of mapping bunching responses into policy-relevant
+elasticities. Our state-level approach has the beneﬁt of estimating aggregate responses, while also providing
+considerable variation over a long panel.
+2For example, choosing the weights (especially for those with losses) and accounting for heterogeneous responses introduces
+diﬃculties when aggregating from micro to macro.
+3
+
+
+--- PDF PAGE 5 ---
+1.
+Data on Capital Gains Taxation and Realizations
+Our primary outcome variable is realized capital gains by state and year from Smith, Zidar and Zwick (2020),
+which is the sum of short-term and long-term net realizations and is available from 1980 to 2016.3 We inﬂate
+nominal data using CPI-U from the Bureau of Labor Statistics to measure realizations in 2018 USD. We also
+use data from 1980 to 2016 on the number of wealthy individuals by state and year from Smith, Zidar and
+Zwick (2020). Speciﬁcally, we focus on the number of individuals in the top 10% and top 1% of the national
+wealth distribution. Finally, some speciﬁcations use population and output data from the US Census Bureau
+and the Bureau of Economic Analysis.
+We relate these state-level outcomes to the net-of-capital-gains-tax rate in state s in year t, which is (1−τs,t),
+where τs,t is the maximum marginal federal and state tax rate. This variable comes from NBER TAXSIM and
+measures the combined eﬀect of federal and state taxes, incorporating the deductibility of state and local taxes,
+the phase-out of deductions, and other state-year-speciﬁc features of the tax code. For instance, in terms of
+deductibility, 1 −τst ≡1 −τ fed
+t
+−(1 −τ fed
+t
+) ∗τ state
+st
+.
+The tax rate data are available from 1977 to 2017, which is a slightly longer range of years than the
+realizations and count data.
+We use these extra years when estimating longer-term eﬀects.
+For example,
+although we cannot use a state tax reform in 1978 to identify the short-term impact on realizations, it can still
+contribute to the identiﬁcation of longer-term eﬀects.4
+Table 1 provides summary statistics. On average, state capital gains tax rates are 4 percent, but they range
+from 0 to 15 percent in our sample. Figure 1 plots the maximum federal tax rate over time. The current
+maximum capital gains tax rate is 23.8 percent. Combining both tax rates and accounting for interactions and
+phase-outs results in an eﬀective keep rate of 75 percent on average, indicating that a dollar of realized capital
+gains amounts to 75 cents after taxes.
+We ﬁnd a total of 584 changes in state capital gains tax rates throughout our panel. Most of these changes
+are fairly small, which reﬂects the fact that our tax rate measure includes the eﬀect of deductions and other
+minor provisions of state tax codes, so any changes to these provisions can cause the capital gains tax rate
+to change. The largest changes, however, are in excess of 4 percentage points (Table A.1). In total, we have
+128 state tax changes that exceed 1 percentage point in absolute value. In Appendix Figure A.2, we provide
+a histogram of all changes. As we show below, our results are robust to using variation only from these larger
+tax changes.
+We examine the relationship between changes in state capital gains tax rates and economic and policy
+conditions in Appendix Table A.2. Speciﬁcally, we regress indicators for capital gains tax increases and de-
+creases on lags of state unemployment rates, GDP per capita, and state tax rates on personal and corporate
+income.5 Most coeﬃcients are insigniﬁcant and small, though notably, higher unemployment in the previous
+year is associated with a higher probability of increasing the capital gains tax rate. In our main analysis, we
+3The vast majority of realizations are long-term realizations (Appendix Figure A.3).
+4We generally use the terms “reform” and “tax change” interchangeably to indicate any non-zero value of ∆log (1 −τs,t).
+5Appendix Table A.3 also shows that changes in state capital gains tax rates are often accompanied by changes in state
+personal income tax rates. We include speciﬁcations that do (as well as those that do not) control for leads and lags of changes
+in state tax rates on personal and corporate income.
+4
+
+
+--- PDF PAGE 6 ---
+include speciﬁcations that condition on unemployment prior to tax reforms and do not ﬁnd evidence that this
+relationship aﬀects our estimates.
+2.
+Methods
+2.1
+Estimating the Annual Eﬀects of Capital Gains Tax Changes
+We investigate the eﬀects of log net-of-tax rates on log realized capital gains and on log counts of wealthy
+residents. We run direct projections regressions for diﬀerent time horizons h ∈{−10, −9, ..., 9, 10}:
+ys,t+h = βh∆log (1 −τs,t) + X′
+s,tΛh + γs,h + φt,h + εs,t,h
+(1)
+where s and t index state and calendar year, ys,t+h is the outcome variable in year t+h (log realized capital gains
+in our main speciﬁcation), γs,h and φt,h are horizon-speciﬁc state and year ﬁxed eﬀects, and Xs,t is a vector of
+controls. The main parameters of interest are the sequence of {βh}10
+h=−10, which describe the path of realized
+capital gains around the tax change. The variable ∆log (1 −τs,t) is the one-year change in the log net-of-tax
+rate. Using ﬁrst diﬀerences helps deal with serial correlation concerns and facilitates estimating an impulse
+response function. To express the results as elasticities at diﬀerent horizons, we normalize the coeﬃcients to
+be relative to the coeﬃcient in the year before the tax change, i.e., we deﬁne elasticities δh ≡βh −β−1. For
+example, δ5 = β5 −β−1 measures the elasticity of realized capital gains 5 years after the reform with respect to
+the capital gains net-of-tax rate, where the change in realizations is relative to the year before the tax event.
+We plot the δh estimates in our main ﬁgures.
+In our baseline speciﬁcation, we control for the vector Xs,t of leads and lags of changes in the log net-of-tax
+rate, i.e., X′
+s,tΛh = P10
+r=−10,r̸=0 λh
+r∆log (1 −τs,t+r). Controlling for these other leads and lags of capital gains
+tax changes isolates the eﬀect of a given tax reform. Without these controls, estimates would reﬂect the eﬀect
+of not just the tax reform of interest, but also any other reforms occurring within the event window.6 To check
+robustness, we also run speciﬁcations featuring additional controls in Xs,t, including GDP in pre-reform year
+t −1, GDP-growth-bin-by-year dummies, state unemployment in pre-reform year t −1, and changes in state
+corporate and personal income taxes. Finally, we include a speciﬁcation that interacts the tax change with
+indicators based on the size of the tax change, and report estimates for βh coming only from larger tax reforms
+that exceed 1 percentage point in absolute value.
+Discussion of Alternative Speciﬁcations and Semi-Elasticities.
+To facilitate comparisons to prior
+estimates, we discuss the theoretical and empirical implications of using logs and semi-logs in Appendix C. We
+also provide estimates using a semi-log speciﬁcation, which delivers similar results. We prefer our net-of-tax
+6In Appendix Figure A.9, we run a speciﬁcation that excludes the vector of controls for other reforms and ﬁnd similar re-
+sults.
+5
+
+
+--- PDF PAGE 7 ---
+formulation because it measures the relevant price governing behavior and is standard in the broader literature
+(Saez, Slemrod and Giertz, 2012).
+Compared with an event-study speciﬁcation, which centers around the outcome year rather than the policy
+reform year, the direct projections approach accurately recovers elasticities in simulations (see Appendix D
+for details).7 In the appendix we also provide results using event-study speciﬁcations (Appendix Figure A.8,
+Figure A.13 and Table A.5). Results are similar.
+2.2
+Estimating eﬀects over multiple years
+We extend the method in equation (1) to estimate the elasticity of capital gains realizations over longer time
+horizons.
+First, we consider a direct projections speciﬁcation that estimates the eﬀect of tax reforms on
+realizations in three-year bins, yielding estimates of the elasticity in the short (0-2 years), medium (3-5 years)
+and longer run (6-8 years):
+ys,t+h = ˜βh∆3 log (1 −τs,t) + X′
+s,t ˜Λh + ˜γs,h + ˜φt,h + ˜εs,t,h,
+(2)
+where ∆3 log (1 −τs,t) represents the three-year change in the log net-of-tax rate (i.e., ∆3 log (1 −τs,t) =
+log (1 −τs,t) −log (1 −τs,t−3)). For each value of h ∈−9, −6, . . . , 6, 9, we estimate a separate instance of this
+regression. The controls for other reforms in this regression are also speciﬁed in 3-year bins: the vector of
+controls Xs,t now contains the variables ∆3 log (1 −τs,t+r) for r = −9, −6, −3, 3, 6, 9. We use the notation ˜β,
+˜Λ, etc, to distinguish the parameters in equation (2) from their analogues in equation (1).
+To understand why this speciﬁcation correctly identiﬁes the average elasticity over the speciﬁed three-year
+periods, consider a simple example. Suppose a state changes its capital gains tax rate exactly once in year
+2000. Then ∆3 log (1 −τs,t) takes a value of zero for this state in every year except three: t = 2000, 2001, 2002.
+Now consider the regression above for h = 0. The variable ∆3 log (1 −τs,t) is non-zero whenever the left-hand
+side variable is ys,2000, ys,2001 or ys,2002. Therefore, the coeﬃcient ˜β0 will capture the average eﬀect of the tax
+reform on capital gains in these three years. Suppose instead h = −3. In this case, our left-hand side variable
+of ys,t+h becomes ys,t−3. Since ∆3 log (1 −τs,t) is still zero for all t except 2000, 2001, and 2002, ˜β−3 captures
+the eﬀect of the tax reform on ys,1997, ys,1998 and ys,1999 (the only ys,t−3 such that t ∈2000, 2001, 2002). Now,
+deﬁne ˜δ0 ≡˜β0 −˜β−3. The parameter ˜δ0 measures the diﬀerence in realizations in the periods immediately after
+and before the reform. In our example, ˜δ0 represents the diﬀerence between average realizations in post-reform
+years 2000-2002 and average realizations in pre-reform years 1997-1999. In other words, ˜δ0 identiﬁes the average
+elasticity over a 0-2 year horizon relative to the reform year. Similarly, ˜δ3 ≡˜β3 −˜β−3 would identify the impact
+of the reform on the diﬀerence between average realizations in 2003-2005 and 1997-1999, thus giving us an
+average elasticity over a 3-5 year horizon, and so on.
+We use a similar approach to estimate eﬀects in the post period (i.e., in years 0-10) and in the long-run
+7Since the direct-projections approach centers leads and lags on the policy reform year, it includes fewer pre-observation
+controls when estimating the eﬀect of post-observation reforms or vice versa. However, it also facilitates controlling for pre-
+treatment conditions and handling locations with multiple events (and associated issues with adjusting standard errors).
+6
+
+
+--- PDF PAGE 8 ---
+(i.e., years 6-10). To get a single estimate of the eﬀect of capital gains tax reforms on realizations in the decade
+following the reform, we use the following speciﬁcation:
+ys,t = βℓ∆11 log (1 −τs,t) + X′
+s,t ´Λh + ´γs,h + ´φt,h + ´εs,t,h,
+(3)
+where ∆11 log (1 −τs,t) = log (1 −τs,t)−log (1 −τs,t−11).8 To estimate the elasticity for the 0-10-year estimate,
+we take the point estimate βℓfrom this regression and subtract oﬀthe point estimate ˜β−3 from (2). Finally,
+the long-run estimate for years 6-10 is implemented similarly to equation (3), but using a 5-year rather than
+11-year diﬀerence for the right-hand side tax change variable (i.e., replacing ∆11 with ∆5), and using ys,t+6 as
+the outcome variable.
+3.
+Capital Gains Tax Changes and Realizations at the State-Level
+Figure 2 shows the results of our baseline speciﬁcation from equation (1). The ﬁgure illustrates how capital
+gains realizations evolve before and after a change in the capital gains net-of-tax rate, controlling for other state
+capital tax reforms. We see no clear pre-trend: in each of the ten pre-reform years, capital gains realizations
+tend to be stable. We then see a jump soon after the reform, after which the point estimates decline modestly
+throughout the post-period. Unlike the 1986 and 2012 national reforms shown in Figure 1, we do not see
+evidence of anticipation eﬀects preceding state capital gains tax reforms, which would have manifested as a
+downward spike at year -1.
+On average across post-reform years 0 through 10, the point estimates directly provide an elasticity estimate
+of capital gains realizations with respect to the net-of-tax rate of around 3.18. The dynamics of this response
+are also of interest. In Figure 2, there is a modest downward trend over the post-period. Combining some of
+our individual year point estimates, the estimated short-run elasticity 1
+3
+P3
+h=1 ˆδh is 3.61 (s.e. 1.22), whereas
+the longer run estimate 1
+3
+P10
+h=8 ˆδh is somewhat lower at 2.59 (s.e. 1.42). However, we cannot reject the null
+that these eﬀects are the same.
+In Panel (b) of Figure 2, we present ﬁve robustness tests of these results: (1) controlling for pre-event state
+GDP, (2) controlling for pre-event state GDP growth, (3) controlling for pre-event state unemployment rates,
+(4) only using large reforms that change the capital gains tax rate by at least 1 percentage point, and (5)
+controlling for changes in state income and corporate tax rates. The results are remarkably similar. We also
+provide a range of other robustness checks in the Appendix Figures A.7-A.12, including an event study version
+of the analysis, a speciﬁcation without controls for other capital gains tax changes in the pre- and post-reform
+periods, and separate analyses for small and large states
+State capital gains tax rates often move in the same direction as state income tax rates (Appendix Table
+A.3). Many states treat capital gains as regular income for tax purposes, in which case the capital gains tax rate
+will be identical to the income tax rate. We account for these possibilities using a speciﬁcation that controls for
+8In this speciﬁcation, the vector of controls Xs,t contains variables that are still 3-year binned versions before and after the
+long bin: ∆3 log (1 −τs,t+r) for r = −17, −14, −11, 3, 6, 9.
+7
+
+
+--- PDF PAGE 9 ---
+changes in personal income and corporate taxes. Panel (b) of Figure 2 illustrates that the elasticity estimates
+from this speciﬁcation are very similar to the baseline.
+4.
+Federal Revenue-Maximizing Rates
+In this section, we present a framework that shows how to use the state-level estimates from above to infer the
+policy-relevant elasticity at the national level. We then derive an estimate for the revenue-maximizing tax rate
+and calculate revenue eﬀects of a hypothetical ﬁve percentage point tax rate increase.
+4.1
+A Simple Model of State-Level Capital Gains Realizations
+Consider a country with states s ∈S. Residents of state s retain a share (1 −τF −τs) of their realized capital
+gains after paying federal (τF ) and state capital gains taxes (τs).9
+We can decompose total realized capital gains in state s into two terms:
+CGs = Ns (1 −τF −τs, τ−s) Rs (1 −τF −τs) ,
+(4)
+where Ns (1 −τF −τs, τ−s) represents the number of residents in state s, and Rs (1 −τF −τs) represents real-
+ized capital gains per resident conditional on residing in state s.
+Using equation (4), we can decompose the empirical elasticity of capital gains with respect to the net-of-tax
+rate:
+εCG =
+∂log CGs
+∂log (1 −τF −τs) =
+∂log Ns
+∂log (1 −τF −τs) +
+d log Rs
+d log (1 −τF −τs) = εN + εR.
+(5)
+Thus, εCG
+s
+is the sum of two elasticities: a migration elasticity εN and a realization elasticity εR, which is
+the main object of interest and represents the “pure” per capita response of capital gains realizations to the
+net-of-tax rate.
+4.2
+From State-Level Realizations to the Federal Revenue-Maximizing Tax Rate
+We show in Appendix Section E shows that the federal capital gains tax rate that maximizes federal tax revenue
+from capital gains is:
+τ ∗
+F = 1 −¯τS
+1 + εR .
+(6)
+This formula resembles familiar optimal tax models (Saez, 2001; Diamond and Saez, 2011), but has an additional
+aggregation adjustment term ¯τS that denotes the average population-weighted state tax rate.
+The policy-
+relevant elasticity at the federal level is our estimate of the elasticity of capital gains realizations at the state
+level less the migration elasticity, i.e., εR = εCG −εN.
+9When measuring keep rates net of federal and state taxes, we account for deductibility as described in section 1.
+8
+
+
+--- PDF PAGE 10 ---
+4.3
+Estimating the Federal Revenue-Maximizing Tax Rate
+We estimate εN based on the responses of those at the top of the national wealth distribution because the top
+groups account for essentially all capital gains (Smith, Zidar and Zwick, 2020). To do so, we ﬁt equation (1)
+when the outcome is the share of the state population that belongs to either the top 10% or the top 1% of the
+national wealth distribution. Panels (a) and (b) of Figure 3 show the outcome of this speciﬁcation for the top
+10% and top 1% groups, respectively. We see fairly stable pre-trends, though somewhat noisy in the earliest
+pre-periods for the top 1% group. Following an increase in the net-of-tax rate, the share of residents in each of
+the top groups grows, and the magnitude of the response is larger for the top 1% group.
+Connecting these migration responses to the theory requires weighing the following tradeoﬀ. Focusing on
+the top 10% delivers a more precise estimate, but risks putting too little weight on the responsiveness of those
+at the top who have substantial capital gains realizations in dollar terms. Our preferred measure of migration
+is a combination of the two groups. Speciﬁcally, we deﬁne the outcome variable as: θs ln N P 99−P 100
+s,t
++ (1 −
+θs) ln N P 90−P 100
+s,t
+, which is a dollar-weighted convex combination of the two groups, where θs is the state’s
+wealth share of the top 1% relative to the top 10%.10
+To estimate εR, we ﬁrst estimate εCG and εN using our binned speciﬁcations described in section 2.2, with
+log capital gains and our migration measure from above as outcome variables. We perform this estimation at
+various time horizons: the main estimate covering years 0-10 after each reform, as well as three-year bins of
+0-2 years, 3-5 years, 6-8 years, and 6-10 years. We then calculate ˆεR
+h = ˆεCG
+h
+−ˆεN
+h at each time horizon.
+Panel (c) of Figure 3 shows the estimates from these binned regressions graphically. The grey series shows
+estimates of ˆεCG
+h
+at diﬀerent horizons h, the dark blue series shows ˆεR
+h , and the light blue shows the average
+policy-relevant elasticity over a decade following each reform, ˆεR
+0−10.
+Table 2 also provides estimates of our elasticities at various time horizons. We also translate our net-of-tax
+elasticity estimates into an elasticity with respect to the tax rate to facilitate comparisons to prior work. Table
+2 includes estimates from two alternative speciﬁcations: one in which we identify all elasticities from state tax
+reforms of at least 1 percentage point, and a second in which we control for all reforms to state income tax and
+corporate tax rates in a 21-year window around the capital gains tax reform in question.11
+Overall, our baseline estimate at a 0-10 year horizon gives an elasticity with respect to the net-of-tax-
+rate of approximately 1.87, which translates into an elasticity of -0.53 with respect to the tax rate.
+The
+speciﬁcation using only large tax changes yields an elasticity with respect to the tax rate of -0.42 and the
+speciﬁcation controlling for other state tax changes yields an elasticity with respect to the tax rate of -0.29.
+While these point estimates are somewhat noisy, the point estimates are notably smaller in absolute value
+than the conventional elasticities used by tax analysts. Moreover, we can deﬁnitively test and reject the null
+10θs is deﬁned as
+θs =
+X
+t
+W P 99−P 100
+s,t
+W P 90−P 100
+s,t
+,
+that is, it represents the average wealth share in state s of the top 1% within the top 10% across all years in our sample. Across
+all states in the sample, the mean of θs is 0.39. The minimum value is 0.28 (Iowa), while the maximum is 0.56 (District of
+Columbia), with Wyoming, Nevada and New York also having values above 0.5.
+11Appendix Tables A.6 and A.7 provide additional speciﬁcations that control for pre-reform unemployment and unemploy-
+ment growth. These are very similar to the results in Table 2.
+9
+
+
+--- PDF PAGE 11 ---
+hypothesis that this elasticity with respect to the tax rate equals 1 in absolute value. The p-values for the
+baseline, big-change-only, and other-tax-control speciﬁcations are 0.066, 0.021, and 0.31, respectively. This
+ﬁnding provides important evidence suggesting that capital gains tax cuts do not pay for themselves, which
+has been a prominent proposition in this literature (Joint Committee on Taxation, 1990; Auten and Cordes,
+1991; Gravelle, 1991; Burman, 2010; Gravelle, 2020).
+As in Figure 2, the results in Table 2 across all speciﬁcations show an elasticity which is somewhat bigger in
+absolute value in the short to medium run, and then declines in the longer run. This pattern could potentially
+reﬂect some transitory eﬀects that are present in the short run but disappear over time. For instance, a tax
+cut may in the shorter run spur some individuals to realize accumulated gains to take advantage of the lower
+tax rate, particularly if they expect a possible reversal of the tax cut in the future. However, once many of
+these accumulated gains have been realized, the potential for realization of further gains is limited, and the
+magnitude of the behavioral eﬀect declines in the longer run.12 For this reason, we view our 6-10 year estimates
+as being the most likely to capture the long-run structural elasticity of capital gains to the net-of-tax rate,
+though some transitory eﬀects might exist even beyond a 10-year horizon.
+4.4
+Policy Implications
+These elasticity results have policy implications for revenue-maximizing tax rates and the revenue eﬀects of
+capital gains tax reforms. Table 2 provides the corresponding estimates of the revenue-maximizing tax rate,
+ˆτ ∗
+F . Our baseline elasticity estimate for the full 10-year period implies a revenue-maximizing rate around 33%,
+and the analogous estimates for the big-changes-only and control-for-other-tax-changes speciﬁcations are 38%
+and 47%, respectively. Thus, over a ten year budget window, these results suggest that a capital gains tax
+rate of around 40% would maximize federal capital gains tax revenues. For analysis over years 6-10, we ﬁnd
+somewhat higher revenue maximizing rates, ranging from 38% to 47% across the three speciﬁcations.
+We can use our elasticities from Table 2 to estimate how realizations and thus tax revenues change in
+response to a 5 percentage point tax increase. By the deﬁnition of these elasticities, we can estimate how
+realizations and thus tax revenues change for a given elasticity estimate and tax rate change. In 2017, the most
+recent year that our state and federal tax data covers, the average combined maximum state and federal tax
+rate was 27.82%.13 We use this rate as an approximation to the average marginal tax rate. An increase of 5
+percentage points in the tax rate implies that the net-of-tax rate decreases by
+0.05
+1−0.2782 = 6.93%. We relate this
+percentage change in taxes to a percentage change in realizations using our baseline 0-10 year policy-relevant
+elasticity of 1.87 from Table 2, and ﬁnd that realizations would have been 6.93 × 1.87 = 13 percent lower, for
+a total of $754.3 billion in realizations. To calculate counterfactual tax revenue given this realizations amount,
+we need to use the average tax rate, which diﬀers from the marginal. In 2018, the most recent year for which
+12This possibility seems consistent with the graphical evidence that we ﬁnd when we examine the behavioral eﬀects following
+tax increases and tax decreases separately, which are shown in Appendix Figure A.10. Following a tax cut, we see a striking
+and immediate upward jump in realizations, and the eﬀect grows even larger over the following 3-4 years. However, after this
+initial jump, the trend reverses, and the behavioral eﬀect 7-9 years after a tax cut is much more modest. In contrast, the eﬀect
+on realizations following a tax increase is much smaller and more stable over time.
+13Appendix Figure A.6 shows how the following calculations would change if the elasticity were measured at a diﬀerent initial
+tax rate.
+10
+
+
+--- PDF PAGE 12 ---
+we have data on federal tax revenue, total capital gains realizations were $890.6 billion (Piketty, Saez and
+Zucman, 2018), and federal capital gains tax revenue was $158.4 billion, yielding an average federal tax rate
+of 158.4
+890.6 = 17.79%. We assume that the 5 percentage points tax increase also applies to this number, for a
+counterfactual average tax rate of 17.79 + 5 = 22.79%. Applying this average tax rate to the counterfactual
+realizations amount yields tax revenue of 0.2279 × 754.3 = $176.6 billion, an increase of $18.2 billion relative
+to the actual 2018 tax revenue. Repeating these steps, but using the net-of-tax elasticity estimate of 1.01 from
+our speciﬁcation with controls for other taxes would result in an increase of $30.3 billion in tax revenues. In
+sum, we estimate that a 5 percentage point tax increase would yield between $18 billion and $30 billion in
+additional revenues.
+Absent any behavioral response, which corresponds to an elasticity of zero, tax revenues from this 5 per-
+centage point tax increase would increase revenues by $44.5 billion. Thus, depending on the speciﬁcation, our
+estimates indicate that, at current tax rates, between a third and half of the mechanical revenue gains are lost
+due to behavioral eﬀects.
+Our central elasticity estimate is lower than those in most existing studies, and our estimated revenue-
+maximizing tax rate is correspondingly higher. In particular, it is interesting to compare our estimated elasticity
+to that used by the JCT to evaluate the budgetary impacts of tax reforms. They currently assume an elasticity
+with respect to the tax rate of 0.68 (Gravelle, 2020), substantially higher than our estimate. This elasticity
+would imply a revenue gain from a 5 percentage point tax increase of only $10.6 billion, or that about three-
+quarters of mechanical revenue gains are lost due to behavioral eﬀects. Appendix Figure A.1 compares our
+elasticity estimate, implied revenue-maximizing tax rate, and revenue impact with estimates implied by previous
+studies. Note that all of these estimates apply to the current capital taxation regime with unlimited deferral
+and step-up-basis at death.
+5.
+Conclusion
+This paper estimates the eﬀect of state capital gains tax changes on realizations at the state-level. These
+estimates reﬂect the responsiveness of both capital gains realizations as well as the migration of the wealthy.
+These overall eﬀects at the state-level are of interest in their own right as many states consider revenue-raising
+options to address budgetary pressures. We hope that estimates of how state-level realizations evolve around
+state capital gains tax changes may serve as useful inputs into this process, as well as to the literature on state
+taxes, capital gains behavior, and migration.
+We also provide policy-relevant elasticities at the federal level, which use a new framework to account for
+migration responses on the wealthy and other aggregation adjustments. Our main estimate is an elasticity of
+realizations with respect to the tax rate of -0.5 to -0.3 depending on the speciﬁcation.
+These main elasticity estimates are notably smaller than estimates used by oﬃcial analysts to score federal
+tax reforms (Gravelle, 2020). We hope that these elasticity estimates, as well as their implications for revenue-
+maximizing rates and tax revenue eﬀects, will be considered when evaluating reforms to capital gains taxation,
+11
+
+
+--- PDF PAGE 13 ---
+although we note that using these estimates to evaluate large tax rate changes may require extrapolation beyond
+the observed variation in our sample. In addition, revenue-maximizing rates may exceed welfare-maximizing
+rates to the extent that capital gains taxes reduce investment below optimal levels or create lock-in eﬀects
+that misallocate capital. Overall, our bottom-line ﬁnding is that raising capital gains tax rates has sizable
+revenue-raising potential, and that cutting capital gains tax rates has substantial ﬁscal cost.
+12
+
+
+--- PDF PAGE 14 ---
+References
+Auerbach, Alan J, and Jonathan M Siegel. 2000. “Capital-gains realizations of the rich and sophisticated.”
+American Economic Review, 90(2): 276–282.
+Auten, Gerald, and David Joulfaian. 2004. “Taxes and Capital Gains Realizations: Evidence from a Long
+Panel.” Vol. 5.
+Auten, Gerald E, and Joseph J Cordes. 1991. “Policy watch: cutting capital gains taxes.” Journal of
+Economic Perspectives, 5(1): 181–192.
+Bakija, Jon M, and William M Gentry. 2014. “Capital gains taxes and realizations: Evidence from a long
+panel of state-level data.” Unpublished Manuscript, Williams College.
+Board of Governors of the Federal Reserve System. 1971-2019. “U.S. / U.K Foreign Exchange
+Rate[AEXUSUK].” https://fred.stlouisfed.org/series/AEXUSUK (accessed Dec. 9, 2020).
+Bogart, William T, and William M Gentry. 1995. “Capital gains taxes and realizations: Evidence from
+interstate comparisons.” The Review of Economics and Statistics, 267–282.
+Buhlmann, Florian, Philipp Doerrenberg, Benjamin Loos, and Johannes Voget. 2020. “How do
+taxes aﬀect the trading behavior of private investors? Evidence from individual portfolio data.” Working
+Paper.
+Bureau of Economic Analysis. 1963-2019. “Regional Economic Accounts: Download.” https://apps.bea.
+gov/regional/downloadzip.cfm (accessed May 7, 2020).
+Bureau of Labor Statistics. 1913-2020. “Consumer Price Index - All Urban Consumers.” https://www.
+bls.gov/cpi/data.htm (accessed May 7, 2020).
+Bureau of Labor Statistics. 1976-2019. “Local Area Unemployment Statistics.” https://www.bls.gov/
+lau/#data (accessed June 19, 2019).
+Burman, Leonard E. 2010. The labyrinth of capital gains tax policy: A guide for the perplexed. Brookings
+Institution Press.
+Burman, Leonard E, and William C Randolph. 1994. “Measuring permanent responses to capital-gains
+tax changes in panel data.” The American Economic Review, 794–809.
+Diamond, Peter, and Emmanuel Saez. 2011. “The case for a progressive tax: from basic research to policy
+recommendations.” Journal of Economic Perspectives, 25(4): 165–90.
+Doerrenberg, Phillipp, Andreas Peichl, and Sebastian Siegloch. 2017. “The elasticity of taxable income
+in the presence of deduction possibilities.” Journal of Public Economics, 151: 41–55.
+Dowd, Tim, and Robert McClelland. 2019. “The bunching of capital gains realizations.” National Tax
+Journal, 72(2): 323–358.
+Dowd, Tim, Robert McClelland, and Athiphat Muthitacharoen. 2015. “New evidence on the tax
+elasticity of capital gains.” National Tax Journal, 68(3): 511.
+Feenberg, Daniel Richard, and Elizabeth Coutts. 1960-2018. “Marginal Tax Rates by Income Type.”
+https://users.nber.org/~taxsim/marginal-tax-rates/ (accessed Feb. 22, 2019).
+Feenberg, Daniel Richard, and Elizabeth Coutts. 1977-2017. “Maximum State Income Tax Rates.”
+https://users.nber.org/~taxsim/state-rates/ (accessed Jan. 21, 2019).
+Feldstein, Martin, Joel Slemrod, and Shlomo Yitzhaki. 1980. “The eﬀects of taxation on the selling of
+corporate stock and the realization of capital gains.” The Quarterly Journal of Economics, 94(4): 777–791.
+Gravelle, Jane. 1991. “Limits to Capital Gains Feedback Eﬀects.” Congressional Research Service, Library
+of Congress.
+13
+
+
+--- PDF PAGE 15 ---
+Gravelle, Jane G. 2020. “Capital Gains Tax Options: Behavioral Responses and Revenues.” Vol. 41364.
+Gruber, Jon, and Emmanuel Saez. 2002. “The elasticity of taxable income: evidence and implications.”
+Journal of Public Economics, 84: 1–32.
+Heckman, James J. 1979. “Sample selection bias as a speciﬁcation error.” Econometrica: Journal of the
+econometric society, 153–161.
+HM Revenue and Customs. 1980-2017b. “National Statistics: Rates of Capital Gains Tax.” https://www.
+gov.uk/government/statistics/rates-of-capital-gains-tax-statistics (accessed May 6, 2019).
+HM Revenue and Customs. 1987-2017a. “National Statistics: Capital Gains Tax statistical tables.” https:
+//www.gov.uk/government/statistics/capital-gains-tax-statistical-tables (accessed June 10,
+2019).
+Internal
+Revenue
+Service.
+1985,
+1997-1999,
+2007-2012.
+“SOI
+Tax
+Stats
+-
+Sales
+of
+Cap-
+ital
+Assets
+Reported
+on
+Individual
+Tax
+Returns.”
+https://www.irs.gov/statistics/
+soi-tax-stats-sales-of-capital-assets-reported-on-individual-tax-returns (accessed Novem-
+ber 16, 2020).
+Internal Revenue Service. 1997-2016. “SOI Tax Stats - Historic Table 2.” https://www.irs.gov/
+statistics/soi-tax-stats-historic-table-2 (accessed June 19, 2019).
+Joint Committee on Taxation, Staﬀ. 1990. “Explanation of Methodology Used to Estimate Proposals
+Aﬀecting the Taxation of Income from Capital Gains.” Vol. JCS-12-90.
+Kleven, Henrik, and Esben Schultz. 2014. “Estimating Taxable Income Responses Using Danish Tax
+Reforms.” American Economic Journal: Economic Policy, 6: 271–301.
+Moﬃtt, Robert A., Brian J. Phelan, and Anne E. Winkler. 1960-1998. “Welfare Beneﬁts Data Base.”
+http://www.econ2.jhu.edu/people/moffitt/datasets.html (accessed June 19, 2019).
+OECD.Stat. 1965-2018. “Details of Tax Revenue - United States.” https://stats.oecd.org/Index.aspx?
+DataSetCode=REVUSA (accessed May 27, 2020).
+Oﬃce for National Statistics. 1988-2020. “Consumer price inﬂation time series.” https://stats.oecd.
+org/Index.aspx?DataSetCode=REVUSA (accessed May 6, 2020).
+Piketty, Thomas, Emmanuel Saez, and Gabriel Zucman. 2018. “Distributional national accounts: meth-
+ods and estimates for the United States.” Quarterly Journal of Economics, 133(2): 553–609.
+Poterba, James M. 2002. “Taxation, risk-taking, and household portfolio behavior.” In Handbook of Public
+Economics. Vol. 3, 1109–1171. Elsevier.
+Saez, Emmanuel. 2001. “Using elasticities to derive optimal income tax rates.” The Review of Economic
+Studies, 68(1): 205–229.
+Saez, Emmanuel, Joel Slemrod, and Seth H. Giertz. 2012. “The Elasticity of Taxable Income with
+Respect to Marginal Tax Rates: A Critical Review.” Journal of Economic Literature, 50(1): 3–50.
+Slattery, Cailin, and Owen Zidar. 2020. “Evaluating State and Local Business Incentives.” Journal of
+Economic Perspectives, 34(2): 90–118.
+Smith, Matthew, Danny Yagan, Owen Zidar, and Eric Zwick. 2019. “Capitalists in the Twenty-ﬁrst
+Century.” Quarterly Journal of Economics, 134(4): 1675–1745.
+Smith, Matthew, Owen M Zidar, and Eric Zwick. 2020. “Top Wealth in America: New Estimates and
+Implications.” Working Paper.
+Tax
+Policy
+Center.
+1913-2014.
+“Historical
+Highest
+Marginal
+Income
+Tax
+Rates.”
+https://www.
+taxpolicycenter.org/statistics/historical-highest-marginal-income-tax-rates (accessed June
+3, 2020).
+14
+
+
+--- PDF PAGE 16 ---
+US Census Bureau. 1951-2019b. “Annual Survey of State Government Tax Collections Datasets.” https:
+//www.census.gov/programs-surveys/stc/data/datasets.html (accessed May 28, 2020).
+U.S. Census Bureau. 1960-2019a. “Annual Estimates of the Population for the U.S. and States, and for
+Puerto Rico.” https://fred.stlouisfed.org/release/tables?rid=118&eid=259194 (accessed Jan. 13,
+2020).
+15
+
+
+--- PDF PAGE 17 ---
+Figure 1: Capital Gains Realizations and Tax Rates in the United States
+(a) Time-Series Evidence
+0
+.1
+.2
+.3
+.4
+Max. federal LG tax rate
+19
+19.5
+20
+20.5
+21
+Log net capital gains, scaled
+1980
+1990
+2000
+2010
+2020
+Year
+Realized Gains
+Maximum LG Tax Rate
+(b) US vs. UK: 1997 Reform
+US max. statutory CGT rate
+cut from 28 to 20 percent
+0-2 year ε:
+-0.26
+3-4 year ε:
+0.61
+19.5
+20
+20.5
+Log net capital gains, scaled
+1990
+1992
+1994
+1996
+1998
+2000
+2002
+Year
+US
+UK (normalized = US 1996)
+(c) US vs. UK: 2003 Reform
+US max. statutory
+CGT rate cut from
+20 to 15 percent
+0-2 year ε:
+-1.67
+3-5 year ε:
+1.41
+19
+19.5
+20
+20.5
+Log net capital gains, scaled
+1998
+2000
+2002
+2004
+2006
+2008
+2010
+Year
+US
+UK (normalized = US 2002)
+Notes:
+In all panels, net capital gains have been scaled by the ratio of a country’s real GDP in 2000 to the country’s real
+GDP in a given year (e.g. U.S. capital gains for 2005 were multiplied by the U.S. GDP in 2000 divided by the U.S. GDP in
+2005). Panel (a) shows the evolution of realized capital gains and the maximum federal long-term capital gains tax rate in the
+US from 1980 to 2018. Panels (b) and (c) compare realized capital gains in the US to those in the UK around the time of US
+reforms. In all panels, net capital gains have been scaled by the ratio of a given country-year’s GDP to the country’s GDP in
+2000. In both (b) and (c), the UK capital gains tax rate was constant throughout the period shown. The UK series has been
+normalized to equal the US series in the year prior to the reform. We calculate the short-term (0-2 years) and medium-term (3-4
+or 3-5 years) tax elasticities provided in panels (b) and (c) by normalizing the UK series in the year before reform, calculating
+the average diﬀerence between the normalized UK series and the US series during the period, and dividing that diﬀerence by the
+diﬀerence in US log net-of-tax rates before and after the reform. This calculation gives us elasticities with respect to the net-of-
+tax rate, which we then multiply by
+−0.22
+1−0.22 to convert them into elasticities with respect to the tax rate, at a tax rate of 22%.
+We use this tax rate to facilitate comparisons between these numbers and those given in Table 2, where we also use a rate of
+22% to calculate tax elasticities given net-of-tax elasticities. If instead we had calculated the tax elasticities in panels (b) and
+(c) using the prevailing US federal tax rates prior to each reform, we would have obtained tax elasticities in panel (b) of -0.48
+in the short run and 0.85 in the medium run, and in panel (c) of -1.64 in the short run and 1.28 in the medium run. We do not
+include the ﬁfth year post-reform in the medium-term analysis of panel (b) because this ﬁfth year coincides with the 2003 tax
+reform shown in panel (c).
+16
+
+
+--- PDF PAGE 18 ---
+Figure 2: The Eﬀect of Net-of-Tax Rate Changes on Capital Gains Realizations
+(a) Baseline
+-5
+0
+5
+10
+Log real cap gains realizations by state
+-10
+-5
+0
+5
+10
+Event Time
+(b) Alternate speciﬁcations
+-2
+0
+2
+4
+6
+Log real cap gains inc by state
+-10
+-5
+0
+5
+10
+Event Time
+Baseline
+Ctrl for GDP
+Ctrl for GDP growth*year   
+Ctrl for lagged unemp   
+Large reforms only
+Control for other taxes
+Notes:
+This ﬁgure presents our main results of the impact of state capital tax rate changes on capital gains realizations. The
+points plotted are the estimated coeﬃcients from equation (1) for the impact of a change in the total (federal and state) log
+net-of-tax capital gains tax rate on log capital gains realizations. The alternate speciﬁcations include the following: (1) con-
+trolling linearly for GDP in the year before the reform; (2) controlling for a set of dummies interacting prior GDP growth ter-
+tiles and years, where the prior GDP growth tertile is determined using GDP growth over the most recent three years; (3)
+controlling for prior unemployment rates; (4) interacting the tax change variable with indicators for reforms greater or smaller
+than 1 percentage point, and reporting the coeﬃcients corresponding to large changes, and (5) controlling for other state per-
+sonal and corporate income tax changes. Speciﬁcally, for (4) we modify the baseline speciﬁcation by estimating separate coef-
+ﬁcients for large and small tax changes, i.e., we ﬁt ys,t+h = βbig
+h
+× 1
+∆
+
+1 −τ state
+s,t
+ ≥0.01
+
+× ∆log (1 −τs,t) + βsmall
+h
+×
+1
+∆
+
+1 −τ state
+s,t
+ < 0.01
+
+× ∆log (1 −τs,t) + X′
+s,tΛh + γs,h + φt,h + εs,t,h, where βbig
+h
+and βsmall
+h
+are the tax-change-
+size-speciﬁc coeﬃcients. We report the series based on the βbig
+h
+coeﬃcients. In all series, capital gains are in real terms, and the
+estimated coeﬃcients are normalized to equal 0 at time -1, i.e., we plot ˆδh as described in section 2.1. Standard errors are clus-
+tered at the state level.
+17
+
+
+--- PDF PAGE 19 ---
+Figure 3: Migration Eﬀects of State Capital Gains Taxes and Policy-Relevant Elasticity Estimates
+(a) Residents in top 10% of national wealth distribution
+-6
+-4
+-2
+0
+2
+4
+6
+8
+Log of Number of people, top 10%
+-10
+-5
+0
+5
+10
+Event Time
+(b) Residents in top 1% of national wealth distribution
+-6
+-4
+-2
+0
+2
+4
+6
+8
+Log of Number of people, top 1%
+-10
+-5
+0
+5
+10
+Event Time
+(c) Binned estimates of empirical and policy-relevant
+elasticities
+-2
+0
+2
+4
+εCG - εN, εCG
+-10
+-5
+0
+5
+10
+Event Time
+εCG - εN: 3-yr binned ests
+εCG - εN: 10-yr binned est
+εCG: : 3-yr binned ests
+Notes:
+Panels (a) and (b) of this ﬁgure show the impact of state capital gains tax reforms on migration of high-net worth res-
+idents, using the speciﬁcation in equation (1). The outcome in panel (a) is the log of the share of residents belonging to the top
+10 percent of the national wealth distribution, and in panel (b) it is the log share in the top 1 percent. The points plotted are
+the estimated coeﬃcients for the impact of a one-period change in the total (federal and state) log net-of-tax capital gains tax
+rate on these outcome variables. In panel (c), we estimate the empirical capital gains elasticity using a speciﬁcation analogous
+to that in equation (1), but using three-year bins (see section 2.2 for details). This estimate is represented by the grey point es-
+timates. The dark blue point estimates represent our estimates of the policy-relevant elasticity ˆεR = ˆεCG −ˆεN for each period.
+As described in section 2.2, ˆεN is estimated using a state-year speciﬁc dollar-weighted average of the migration responses of the
+top 1% and top 10%.The horizontal light-blue line is our estimate of the policy-relevant elasticity using a binned speciﬁcation
+for post-reform years 0-10 (see equation 3). All speciﬁcations include state and year ﬁxed eﬀects and controls for tax reforms in
+years surrounding the reform. The estimated coeﬃcients are normalized to equal 0 at time -1, and standard errors are clustered
+at the state level.
+18
+
+
+--- PDF PAGE 20 ---
+Table 1: Summary Statistics on State Capital Gains Realizations and Tax Rates
+Observations
+Mean
+Standard
+deviation
+Minimum
+Maximum
+Capital gains realizations
+Capital gains income ($ B)
+1887
+9.33
+16.50
+0.19
+176.12
+Log capital gains income
+1887
+15.25
+1.22
+12.14
+18.99
+Per capita capital gains income ($ 1000s)
+1887
+1.58
+1.21
+0.18
+20.12
+Tax variables
+State capital gains tax rate (τ state
+st
+)
+2091
+0.04
+0.03
+0.00
+0.15
+Keep rate
+2091
+0.75
+0.05
+0.63
+0.85
+Log keep rate
+2091
+-0.29
+0.07
+-0.46
+-0.16
+Indicator for ∆τ state
+st
+̸= 0
+2040
+0.29
+0.45
+0.00
+1.00
+∆τ state
+st
+if ∆τ state
+st
+̸= 0
+584
+0.00
+0.01
+-0.08
+0.09
+Indicator for ∆τ state
+st
+≥0.01
+2040
+0.04
+0.19
+0.00
+1.00
+∆τ state
+st
+if ∆τ state
+st
+≥0.01
+75
+0.03
+0.02
+0.01
+0.09
+Indicator for ∆τ state
+st
+≤−0.01
+2040
+0.03
+0.16
+0.00
+1.00
+∆τ state
+st
+if ∆τ state
+st
+≤−0.01
+53
+-0.02
+0.01
+-0.08
+-0.01
+Notes:
+This table summarizes capital gains and tax variables used in our analysis, which are observed at the state-year level. We report
+counts and magnitudes for changes in state capital gains tax changes in three bins: non-zero changes, increases of one percentage point
+or more, and decreases of one percentage point or more. The sample ranges from 1980 to 2016 for realizations, and from 1977 to 2017 for
+tax rates. All dollar values are in 2018 dollars. We use capital gains income data from Smith, Zidar and Zwick (2020) and data on state
+population from the Census Bureau via FRED. Data on state and federal capital gains tax rates are from NBER TAXSIM. Keep rates
+(1 −τst) are net of federal and state taxes on capital gains, accounting for deductibility and other provisions described in section 1. See
+data appendix B for additional details.
+19
+
+
+--- PDF PAGE 21 ---
+Table 2: Capital Gains Elasticities and Revenue-Maximizing Tax Rates
+Speciﬁcation
+Total elasticity,
+εCG
+Policy elasticity,
+εR = εCG −εN
+Laﬀer rate,
+τ ∗= 1−¯τS
+1+εR
+Elasticity with
+respect to tax,
+εtax = εR ·
+−0.22
+1−0.22
+χ2 test:
+εtax = −1
+Baseline
+0-10 years
+3.39
+1.87
+0.33
+-0.53
+3.38
+(1.01)
+(0.91)
+(0.10)
+(0.26)
+(0.07)
+0-2 years
+3.32
+2.09
+0.30
+-0.59
+2.58
+(0.97)
+(0.91)
+(0.09)
+(0.26)
+(0.11)
+3-5 years
+4.78
+2.28
+0.29
+-0.64
+2.05
+(1.10)
+(0.88)
+(0.08)
+(0.25)
+(0.15)
+6-8 years
+4.07
+1.94
+0.32
+-0.55
+3.02
+(1.20)
+(0.92)
+(0.10)
+(0.26)
+(0.08)
+6-10 years
+3.66
+1.47
+0.38
+-0.41
+4.54
+(1.27)
+(0.97)
+(0.15)
+(0.27)
+(0.03)
+Big changes only
+0-10 years
+2.81
+1.48
+0.38
+-0.42
+5.31
+(1.02)
+(0.89)
+(0.14)
+(0.25)
+(0.02)
+0-2 years
+3.54
+2.50
+0.27
+-0.71
+1.14
+(0.97)
+(0.98)
+(0.07)
+(0.28)
+(0.29)
+3-5 years
+4.96
+2.40
+0.28
+-0.68
+1.54
+(1.10)
+(0.92)
+(0.07)
+(0.26)
+(0.21)
+6-8 years
+3.77
+1.65
+0.35
+-0.46
+4.35
+(1.19)
+(0.91)
+(0.12)
+(0.26)
+(0.04)
+6-10 years
+2.80
+0.99
+0.47
+-0.28
+6.48
+(1.30)
+(1.00)
+(0.24)
+(0.28)
+(0.01)
+Control for other
+taxes
+0-10 years
+2.28
+1.01
+0.47
+-0.29
+4.64
+(1.32)
+(1.18)
+(0.27)
+(0.33)
+(0.03)
+0-2 years
+2.38
+1.25
+0.42
+-0.35
+3.88
+(1.19)
+(1.16)
+(0.21)
+(0.33)
+(0.05)
+3-5 years
+3.58
+1.64
+0.36
+-0.46
+3.54
+(1.24)
+(1.01)
+(0.14)
+(0.29)
+(0.06)
+6-8 years
+3.32
+1.40
+0.39
+-0.39
+3.57
+(1.43)
+(1.14)
+(0.19)
+(0.32)
+(0.06)
+6-10 years
+2.98
+1.18
+0.43
+-0.33
+3.96
+(1.54)
+(1.19)
+(0.24)
+(0.34)
+(0.05)
+Notes:
+This table shows estimates of main elasticities and associated revenue-maximizing rate for diﬀerent speciﬁcations of equa-
+tion (2). The 0-2, 3-5 and 6-8 year speciﬁcations use 3-year bins, the 6-10 year speciﬁcation uses a 5-year bin, and the 0-10 year
+speciﬁcation uses an 11-year bin as described by equation (3)). As described in the main text, the empirical elasticities ˆεCG and ˆεN
+are calculated as the diﬀerence between the point estimate for each speciﬁc horizon, and the point estimate for the [−3, −1]-year
+bin. Revenue-maximizing tax rates are estimated using the formula in equation (6), which is derived in Online Appendix Section E.
+The term ¯τS adjusts for the average population-weighted state tax rate in 2016, which was 6.27% in 2016. All speciﬁcations con-
+trol for reforms in the capital gains tax rate in three 3-year bins before and after the reform in question, and include state and year
+ﬁxed eﬀects. The “Big changes only” speciﬁcation replaces the right hand side variable of interest—the 3-year (or 5-year or 11-year)
+change in the log net-of-tax rate—with two variables: one which sums the changes in the log net-of-tax rate in years where the state
+tax rate changed by more than 1 percentage point, leaving out smaller changes, and one which sums changes to the log net-of-tax
+rate in years where the state rate changed by less than 1 percentage point. Speciﬁcally, we replace the right-hand side variable of
+interest – for instance, ∆3 log (1 −τs,t) – with two variables: ∆big
+3
+log (1 −τs,t) ≡P2
+k=0 ∆log (1 −τs,t−k) × 1(|∆(1 −τs,t−k) | ≥
+0.01), which sums all the tax changes greater than 1 percentage point in magnitude over the past year, and a corresponding variable
+that sums all tax changes smaller than 1 percentage point. We then report estimates for the variable that sums the big changes.
+The “Control for other taxes” rows report results from a speciﬁcation that includes controls for changes in state income and corpo-
+rate tax rates. We control for the change in other tax taxes over the same 3-year (or 5-year or 11-year) bins that we use to identify
+our main point estimate in each regression, as well as three 3-year bins before and after the main period. Standard errors are clus-
+tered at the state level. Values in parentheses in columns 1-4 represent standard errors; values in parentheses in column 5 (χ2 test)
+represent p-values.
+20
+
+
+--- PDF PAGE 22 ---
+Appendix For Online Publication
+A
+Appendix Figures
+Figure A.1: Estimates from the Capital Gains Literature
+(a) Elasticities
+Auten/Clotfelter
+Burman/Randolph
+Auerbach/Siegel
+Dowd et al.
+Minarik
+Bogart/Gentry
+Bakija/Gentry
+Auten
+Auerbach
+Gillingham/Greenlees
+Eichner/Sinai
+.2
+.4
+.6
+.8
+Elasticity (cap gains realiz. w.r.t tax rate)
+1980
+1990
+2000
+2010
+2020
+Micro-data panels
+Micro-data cross sections
+State panels
+Time series
+JCT (current)
+Our est (baseline)
+Our est (ctrl for other taxes)
+(b) Revenue from 5 pp tax increase
+Auten/Clotfelter
+Burman/Randolph
+Auerbach/Siegel
+Dowd et al.
+Minarik
+Bogart/Gentry
+Bakija/Gentry
+Auten
+Auerbach
+Gillingham/Greenlees
+Eichner/Sinai
+0
+10
+20
+30
+40
+Implied change in tax revenue ($ B)
+1980
+1990
+2000
+2010
+2020
+Micro-data panels
+Micro-data cross sections
+State panels
+Time series
+JCT (current)
+Our est (baseline)
+Our est (ctrl for other taxes)
+(c) Revenue-maximizing tax rate
+Auten/Clotfelter
+Burman/Randolph
+Auerbach/Siegel
+Dowd et al.
+Minarik
+Bogart/Gentry
+Bakija/Gentry
+Auten
+Auerbach
+Gillingham/Greenlees
+Eichner/Sinai
+.2
+.3
+.4
+.5
+Implied revenue-maximizing tax rate
+1980
+1990
+2000
+2010
+2020
+Micro-data panels
+Micro-data cross sections
+State panels
+Time series
+JCT (current)
+Our est (baseline)
+Our est (ctrl for other taxes)
+Notes:
+This ﬁgure compares our results with those from the previous literature on capital gains. With the exception of Dowd,
+McClelland and Muthitacharoen (2015), the elasticities reported in panel (a) are calculated with respect to a tax rate of 22%
+and are taken from Tables 1 and B-1 from Gravelle (2020). The relevant marginal tax rates in the Dowd et al. paper are those
+in place between 1999 and 2008, which average around 17 percent. The tax increase analyzed in panel (b) is a 5 percentage
+point increase, from 17.8% (the eﬀective federal capital gains tax rate in 2018) to 22.8%, assuming that realizations and rev-
+enues begin at their 2018 levels ($891 B and $158 B respectively). We calculate revenue-maximizing rate using equation (6)
+from the text, using an average state tax rate of 6.4% (its 2016 population-weighted value).
+21
+
+
+--- PDF PAGE 23 ---
+Figure A.2: Histogram of State Capital Gains Tax Rate Changes
+0
+50
+100
+150
+200
+250
+Number of tax changes
+-6
+-4
+-2
+0
+2
+4
+6
+Change in maximum state capital gains tax rate (%)
+Notes:
+This ﬁgure shows the distribution of the size of changes in the top state capital gains tax rate throughout our panel,
+including changes to the statutory tax rate as well as deductibility and other minor provisions of the tax code. It has been cen-
+sored at 6%, so tax changes of more than 6 percentage points in absolute value appear in the left- or rightmost bin in this ﬁg-
+ure. The ﬁgure does not include state-years where the tax rate stayed the same, i.e. changed by 0.
+Figure A.3: Long- and short-term share of capital gains
+.2
+.4
+.6
+.8
+1
+Share of total capital gains
+1995
+2000
+2005
+2010
+2015
+Long-term gains
+Short-term gains
+Notes:
+Data from the IRS SOI series “Short-term and Long-term Capital Gains and Losses” classiﬁed
+by size of adjusted gross income and selected asset type (accessible at https://www.irs.gov/statistics/
+soi-tax-stats-sales-of-capital-assets-reported-on-individual-tax-returns). More precisely, the long-term gain
+series corresponds to total gains reported in returns with long-term gain transactions. The short-term gain series corresponds to
+total gains reported in returns with short-term gain transactions. We calculate total capital gains as the sum of these two series.
+We use cross-sectional data, which are available for 1985, 1997-1999, and 2007-2012. Although panel data are available for
+1999-2007, the IRS warns that extrapolations from the panel to the general population should be made with “extreme caution”.
+Due to the IRS’ warning, we have omitted data for these years.
+22
+
+
+--- PDF PAGE 24 ---
+Figure A.4: The Eﬀect of Net-of-Tax Rate Changes on the Net-of-Tax Rate over Time
+-.5
+0
+.5
+1
+Log net-of-tax rate
+-10
+-5
+0
+5
+10
+Event Time
+Notes:
+This ﬁgure uses our direct projections framework from equation (1), but with the outcome variable being the net-of-
+tax rate itself, and excluding the controls for capital gains tax reforms in other years. This creates a speciﬁcation where the
+treatment eﬀect from time -1 to time 0 is 1 by construction, but where the point estimates in other years show the degree of
+mean reversion in tax rates. A decline in point estimates following the initial jump indicates mean reversion, as states that lower
+tax rates tend to partially revert back towards higher tax rates over time and vice versa. The estimated coeﬃcients are normal-
+ized to equal 0 at time -1. Standard errors are clustered at the state level.
+23
+
+
+--- PDF PAGE 25 ---
+Figure A.5: Scatterplots, 3-year Changes in Log Capital Gains, Net-of-Tax Rate, and Log Net-of-Tax Rate
+(a) Log capital gains and net-of-tax rate
+-3
+-2
+-1
+0
+1
+2
+3-year change in log realized capital gains
+-.2
+-.1
+0
+.1
+.2
+3-year change in net-of-tax rate
+(b) Log capital gains and log net-of-tax rate
+-3
+-2
+-1
+0
+1
+2
+3-year change in log realized capital gains
+-.2
+-.1
+0
+.1
+.2
+3-year change in log net-of-tax rate
+(c) Binscatter, log capital gains and net-of-tax
+rate
+-.5
+0
+.5
+1
+3-year change in log realized capital gains
+-.2
+-.1
+0
+.1
+.2
+3-year change in net-of-tax rate
+(d) Binscatter, log capital gains and log net-of-
+tax rate
+-.5
+0
+.5
+1
+3-year change in log realized capital gains
+-.2
+-.1
+0
+.1
+.2
+3-year change in log net-of-tax rate
+Notes:
+This ﬁgure shows two scatterplots of our state-year data on tax rates and realized capital gains, as well as correspond-
+ing binned scatterplots. In all plots, the variable on the vertical axis is the three-year change in log realized capital gains (2018
+dollars). In the plots on the left, the variable on the horizontal axis is the three-year change in the net-of-tax rate by state (us-
+ing the maximum combined federal and state capital gains tax rate, as we describe in section 1.), while in the plots on the right,
+the horizontal axis shows the three-year change in the log net-of-tax rate. The plots in the top row are standard scatterplots,
+while the plots in the bottom row are the corresponding binned scatter plots, using 30 bins. The regression corresponding to the
+line of best ﬁt in the scatterplot in panel (c) has an R2 of 0.1304, and in panel (b) the R2 is 0.1352.
+24
+
+
+--- PDF PAGE 26 ---
+Figure A.6: Comparing Elasticity Assumptions
+(a) Elasticities
+.4
+.6
+.8
+1
+1.2
+Elasticity w.r.t tax rate
+.15
+.2
+.25
+.3
+.35
+.4
+Tax rate
+Constant semi-elasticity
+Constant net-of-tax elasticity
+(b) Realizations
+-140
+-130
+-120
+-110
+-100
+Change in realizations ($ B)
+.15
+.2
+.25
+.3
+.35
+.4
+Initial tax rate
+Constant semi-elasticity
+Constant net-of-tax elasticity
+(c) Revenues
+-20
+-10
+0
+10
+20
+30
+Change in revenues ($ B)
+.15
+.2
+.25
+.3
+.35
+.4
+Initial tax rate
+Constant semi-elasticity
+Constant net-of-tax elasticity
+Notes:
+This ﬁgure supplements the discussion in section 2.1 of models of capital gains realizations that either assume a
+constant semi-elasticity (models of the form log CGt = γ · τt), or a constant net-of-tax elasticity (of the form log CGt =
+δ · log (1 −τt)). We here show some implications of these models at various tax rates when either the semi-elasticity or the net-
+of-tax elasticity is assumed to be constant for all tax rates. All calculations are based on a tax rate elasticity of 0.53 at 22%,
+corresponding to a semi-elasticity of 2.41 and a net-of-tax rate elasticity of 1.88. Panel (a) shows, at each given tax rate, what is
+obtained when converting the semi-elasticity or net-of-tax elasticity to an elasticity with respect to the tax rate. We also evalu-
+ate the implications of both models for realizations (panel b) and tax revenue (panel c) under a 5 percentage point tax increase
+relative to the tax rate on the horizontal axis. We assume initial realizations equal to $891 billion regardless of starting tax rate.
+This ﬁgure is equal to net capital gains realizations in 2018 according to data from Piketty, Saez and Zucman (2018). Total tax
+rates observed in our data range from 0.15 to 0.37, comparable to the range of rates presented here.
+25
+
+
+--- PDF PAGE 27 ---
+Figure A.7: The Eﬀect of Net-of-Tax Rate Changes on Capital Gains Realizations, by Speciﬁcation
+(a) Control for GDP
+-5
+0
+5
+10
+Log real cap gains realizations by state
+-10
+-5
+0
+5
+10
+Event Time
+Log capgains, normalized (year -1 = 0)
+(b) Control for GDP growth*year
+-5
+0
+5
+10
+Log real cap gains realizations by state
+-10
+-5
+0
+5
+10
+Event Time
+(c) Control for unemployment
+-5
+0
+5
+10
+Log real cap gains realizations by state
+-10
+-5
+0
+5
+10
+Event Time
+(d) Large reforms only
+-5
+0
+5
+10
+Log real cap gains realizations by state
+-10
+-5
+0
+5
+10
+Event Time
+(e) Control for other taxes
+-10
+-5
+0
+5
+10
+Log real cap gains realizations by state
+-10
+-5
+0
+5
+10
+Event Time
+Notes:
+This ﬁgure shows the ﬁve series from panel (b) of Figure 2 individually. Panel (a) in this ﬁgure controls linearly for
+GDP in the year before the reform; panel (b) controls for a set of dummies interacting GDP growth tertiles and years, where
+the GDP growth tertile is determined separately in each year by grouping states according to GDP growth over the three years
+prior to the reform; panel (c) controls for the unemployment rate in the year prior to the capital gains tax reform. Panel (d)
+uses a speciﬁcation that interacts the variable for changes in the net-of-tax rate with indicators for reforms greater or smaller
+than 1 percentage point in magnitude – the reported point estimates are for the interaction with the large reform dummy, such
+that the eﬀects shown in this panel are idetiﬁed only from larger reforms. Panel (e) includes controls for changes in the state
+personal income and corporate tax rates in each year from 10 years before until 10 years after the capital gains reform. In all
+cases, we plot the estimated coeﬃcients for the impact of a one-period change in the total (federal and state) log net-of-tax cap-
+ital gains tax rate on log capital gains realizations. Capital gains are in real terms and standard errors are clustered at the state
+level. Estimates have been normalized to 0 in period -1. We include state and year ﬁxed eﬀects.
+26
+
+
+--- PDF PAGE 28 ---
+Figure A.8: Baseline Speciﬁcation as Event Study
+-5
+0
+5
+10
+Log real cap gains realizations by state
+-10
+-5
+0
+5
+10
+eventtime
+Notes:
+This ﬁgure shows a variation of our baseline graph in Figure 2 that uses a classic event study speciﬁcation in which all
+plotted coeﬃcients are estimated within the same single regression rather than the direct projections approach. The speciﬁca-
+tion used is ys,t = P10
+h=−10 βh∆log
+ 1 −τs,t−h
+
++ γs + φt + εs,t (where ∆indicates a one-period change), and the ﬁgure plots
+the point estimates for β−10, β−9, . . . , β10. Capital gains are in real terms and the estimated coeﬃcients are normalized to equal
+0 at time -1. Standard errors are clustered at the state level.
+Figure A.9: The Eﬀect of Net-of-Tax Rate Changes on Capital Gains Realizations – No Controls for Other
+Capital Gains Tax Reforms
+-4
+-2
+0
+2
+4
+6
+Log real cap gains realizations by state
+-10
+-5
+0
+5
+10
+Event Time
+Notes:
+This ﬁgure is analogous to panel (a) of Figure 2, but without controls for other changes in the capital gains tax rate
+before and after the reform of interest. Realized capital gains are in real terms, and the estimated coeﬃcients are normalized to
+equal 0 at time -1. Standard errors are clustered at the state level.
+27
+
+
+--- PDF PAGE 29 ---
+Figure A.10: The Eﬀect of Net-of-Tax Rate Changes on Capital Gains Realizations – Tax Cuts and Increases
+(a) Tax cuts only
+-5
+0
+5
+10
+15
+Log real cap gains realizations by state
+-10
+-5
+0
+5
+10
+Event Time
+(b) Tax increases only
+-10
+-5
+0
+5
+10
+Log real cap gains realizations by state
+-10
+-5
+0
+5
+10
+Event Time
+Notes:
+This ﬁgure is analogous to panel (a) of Figure 2, but shows the eﬀects of tax cuts and tax increases separately. Spec-
+iﬁcatlly, we modify the baseline speciﬁcation in equation (1) by estimating separate coeﬃcients for tax increases and decreases,
+i.e., we use the speciﬁcation ys,t+h = βcut
+h
+× 1(∆τs,t < 0) × ∆log (1 −τs,t) + βinc
+h
+× 1(∆τs,t > 0) × ∆log (1 −τs,t) + X′
+s,tΛh +
+γs,h + φt,h + εs,t,h, where 1(∆τs,t < 0) is an indicator for tax cuts, 1(∆τs,t > 0) is an indicator for tax increases, and βcut
+h
+and
+βinc
+h
+are the corresponding tax-change-direction-speciﬁc coeﬃcients. Panel (a) reports the coeﬀcients {βcut
+h
+}10
+h=−10, and panel
+(b) reports {βinc
+h
+}10
+h=−10 from this speciﬁcation. Realized capital gains are in real terms, and the estimated coeﬃcients are nor-
+malized to equal 0 at time -1. Standard errors are clustered at the state level.
+Figure A.11: The Eﬀect of Net-of-Tax Rate Changes on Capital Gains Realizations in the 10 most populous
+states versus the rest
+-5
+0
+5
+10
+log real cap gains realizations by state
+-10
+-5
+0
+5
+10
+eventtime
+Log capgains, small states, normalized (year -1 = 0)
+Log capgains, big states, normalized (year -1 = 0)
+Notes:
+This ﬁgure is analogous to panel (a) of Figure 2, but interacts the main right-hand-side variable of interest with an
+indicator for belonging to the 10 most populous states, lagged by 10 years relative to the reform to avoid any potential con-
+founding eﬀects of recent population growth or decline. This thus creates two sets of treatment eﬀects, one for larger and one
+for smaller states. Realized capital gains are in real terms, and the estimated coeﬃcients are normalized to equal 0 at time -1.
+Standard errors are clustered at the state level.
+28
+
+
+--- PDF PAGE 30 ---
+Figure A.12: The Eﬀect of Net-of-Tax Rate Changes on Capital Gains Realizations After 1990
+-5
+0
+5
+10
+Log real cap gains realizations by state
+-10
+-5
+0
+5
+10
+Event Time
+Notes:
+This ﬁgure is analogous to panel (a) of Figure 2, but restricts the speciﬁcation to only estimate the eﬀects of reforms
+after 1990. We do use realizations data from prior to 1990 to estimate the pre-trend, and we also include reforms from before
+1990 when in our set of controls for capital gains tax reforms in the years surrounding the reform of interest. Realized capital
+gains are in real terms, and the estimated coeﬃcients are normalized to equal 0 at time -1. Standard errors are clustered at the
+state level.
+Figure A.13: Binned Elasticity Estimates, Event Study Speciﬁcation
+-2
+0
+2
+4
+εCG - εN, εCG
+-10
+-5
+0
+5
+10
+Event Time
+εCG - εN: 3-yr binned ests
+εCG - εN: 10-yr binned est
+εCG: : 3-yr binned ests
+Notes:
+This ﬁgure is analogous to panel (c) of Figure 3, but uses an event study speciﬁcation where elasticities at diﬀerent
+horizons are estimated jointly within the same regression model rather than using separate regressions for each coeﬃcient as in
+the direct projections case. Speciﬁcally, for the three-year bins, instead of equation (2), we run a single regression of the form
+ys,t = β−9∆3 log(1 −τs,t+9) + β−6∆3 log(1 −τs,t+6) + · · · + β9∆3 log(1 −τs,t−9) + γs + φt + εs,t. Using capital gains realizations
+as the outcome variable, the grey line then plots elasticity estimates ˆεCG as the diﬀerence between the coeﬃcients βt −β−3 from
+this regression. Migration elasticities ˆεN are calculated correspondingly, using our migration variable from the main text as the
+outcome variable, and the dark blue line then plots the estimated policy-relevant elasticity, ˆεR = ˆεCG −ˆεN. For the estimates in
+the 0-10 year bin, we run a separate regression ys,t = ˜β−9∆3 log(1 −τs,t+9) + ˜β−6∆3 log(1 −τs,t+6) + ˜β−3∆3 log(1 −τs,t+3) +
+˜β0∆11 log(1 −τs,t) + ˜γs + ˜φt + ˜εs,t and estimate the 0-10 year elasticity as the diﬀerence ˜β0 −˜β−3. Standard errors are clustered
+at the state level.
+29
+
+
+--- PDF PAGE 31 ---
+Figure A.14: Estimating Eﬀects of Simulated Tax Changes Assuming a Constant Elasticity
+(a) Direct projection, control for reforms in surrounding
+years
+-1
+0
+1
+2
+3
+Log simulated cap gains realizations by state
+-10
+-5
+0
+5
+10
+Event Time
+(b) Direct projection, no controls for other reforms
+-1
+0
+1
+2
+Log simulated cap gains realizations by state
+-10
+-5
+0
+5
+10
+Event Time
+(c) Event study
+-1
+0
+1
+2
+Log simulated cap gains realizations by state
+-10
+-5
+0
+5
+10
+eventtime
+Notes:
+This ﬁgure shows the outcome of the simulation exercise detailed in Appendix Section D. We simulate a log capital
+gains realizations variable which is generated in such a way that it has a true empirical elasticity of 2 with respect to the net-of-
+tax rate, constant across all horizons. The ﬁgures use three diﬀerent methods to estimate the impact of changes in the net-of-
+tax rate on this simulated outcome variable. Panel (a) shows the outcome of a direct projections estimation exactly as speciﬁed
+in equation (1), panel (b) shows the outcome of a similar speciﬁcation that excludes the controls for tax reforms in other years,
+and panel (c) shows the outcome of an event study speciﬁcation. Estimates have been normalized to 0 in period -1. We include
+state and year ﬁxed eﬀects. See Appendix Section D for further details.
+30
+
+
+--- PDF PAGE 32 ---
+Figure A.15: Estimating Eﬀects of Simulated Tax Changes Assuming a Time-Varying Elasticity
+(a) Direct projection, control for reforms in surrounding
+years
+0
+1
+2
+3
+4
+Log simulated cap gains realizations by state
+-10
+-5
+0
+5
+10
+Event Time
+(b) 3-year and 10-year binned estimates
+0
+1
+2
+3
+εCG
+-10
+-5
+0
+5
+10
+Event Time
+3-yr binned ests
+95% CI
+10-yr binned est
+95% CI
+Notes:
+This ﬁgure shows the outcome of the simulation exercise detailed in Appendix Section D. Unlike Figure A.14, we here
+generate an outcome variable for which the true elasticity with respect to the net-of-tax rate is 3 in years 0-2 following the re-
+form, 1 in years 3-5, and 2 in the following years. Panel (a) shows the outcome of a direct projections estimation exactly as
+speciﬁed in equation (1). Panel (b) shows the outcome of the estimation when binned speciﬁcations as outlined in section 2.2.
+We include state and year ﬁxed eﬀects. See Appendix Section D for further details.
+31
+
+
+--- PDF PAGE 33 ---
+Table A.1: Largest Capital Gains Tax Changes by State-Year
+Year
+∆tax
+rate
+Post-change
+tax rate
+∆net of
+tax rate
+Post-change
+net of tax rate
+Largest tax decreases
+Oklahoma
+2005
+-7.97
+0.19
+5.19
+83.83
+Alaska
+1980
+-5.80
+0.00
+1.79
+72.79
+Rhode Island
+2003
+-4.46
+4.82
+2.67
+75.82
+Montana
+2005
+-3.84
+6.11
+2.50
+79.98
+New York
+1978
+-3.00
+7.50
+9.90
+81.75
+Vermont
+2002
+-2.99
+5.20
+1.81
+75.65
+Vermont
+1994
+-2.94
+9.28
+1.76
+65.21
+Kansas
+1988
+-2.84
+3.87
+1.34
+69.21
+Wisconsin
+1984
+-2.60
+4.00
+1.30
+78.00
+North Carolina
+2014
+-2.18
+5.80
+1.27
+71.73
+Largest tax increases
+Maine
+1989
+8.50
+8.50
+-6.12
+65.88
+Hawaii
+2016
+7.30
+14.55
+-4.51
+66.50
+Utah
+1987
+6.14
+7.75
+-11.96
+67.23
+Minnesota
+1987
+5.99
+9.00
+-12.03
+66.46
+District of Columbia
+1987
+5.60
+10.00
+-11.95
+65.85
+New Mexico
+1987
+5.38
+8.50
+-11.67
+66.77
+Idaho
+1987
+5.20
+8.20
+-11.54
+66.96
+Delaware
+1987
+4.92
+8.80
+-11.47
+66.59
+Kansas
+1987
+4.83
+6.71
+-11.19
+67.87
+Montana
+2003
+4.71
+9.38
+-3.12
+72.86
+Notes:
+This table shows the largest year-by-year changes in top marginal state capital gains tax rates, measured using
+TAXSIM and presented as percentages. Tax changes are relative to previous year.
+Table A.2: Policy Regressions
+Tax Increases
+Tax Decreases
+Estimate
+Standard Error
+Estimate
+Standard Error
+Unemployment (t-1)
+1.2372
+0.4009
+0.7959
+0.5581
+Unemployment (t-4)
+0.2352
+0.4537
+-0.6874
+0.5517
+GDP per capita, USD 1000 (t-1)
+-0.0000
+0.0020
+0.0080
+0.0044
+GDP per capita, USD 1000 (t-4)
+-0.0014
+0.0020
+-0.0077
+0.0044
+Max. state income tax (t-1)
+0.9204
+0.4928
+1.9205
+0.7455
+State corporate tax (t-1)
+0.6303
+0.2792
+-0.0142
+0.3590
+State in middle CGT tertile (t-1)
+0.0119
+0.0268
+0.0425
+0.0378
+State in highest CGT tertile (t-1)
+0.0018
+0.0339
+0.0440
+0.0484
+Constant
+0.0036
+0.0474
+-0.0132
+0.0452
+Notes:
+This table shows the results of two OLS regressions aiming to determine whether economic conditions, pre-
+vious capital gains rates, and other tax rates predict changes in the capital gains tax rate. The outcome variables are
+dummies for increases and decreases in the state capital gains tax rate at time t, respectively. The variables “Unem-
+ployment”, “Max state income tax” and “State corporate tax” are measured as decimal numbers, not percentages. We
+do not include ﬁxed eﬀects. Standard errors are clustered at the state level.
+32
+
+
+--- PDF PAGE 34 ---
+Table A.3: Capital Gains and Income Tax Changes by State-Year
+Capital gains tax rate
+Income tax rate
+Decreased
+Unchanged
+Increased
+Total
+Decreased
+75.1%
+0.7%
+13.8%
+14.4%
+(259)
+(10)
+(33)
+(302)
+Unchanged
+13.6%
+98.5%
+18.8%
+75.4%
+(47)
+(1484)
+(45)
+(1576)
+Increased
+11.3%
+0.9%
+67.4%
+10.2%
+(39)
+(13)
+(161)
+(213)
+Total
+100.0%
+100.0%
+100.0%
+100.0%
+(345)
+(1507)
+(239)
+(2091)
+Notes:
+This table relates the direction of year-by-year changes in state capital
+gains and income tax rates. Within each column, the percentages show the share
+of income tax changes that went in the given direction. The rates used are max-
+imum state capital gains and wage tax rates, calculated for a hypothetical high-
+income taxpayer for years 1977-2017 by Daniel Feenberg for NBER. Tax changes
+are relative to previous year. Observation (state-year) counts are in parentheses.
+33
+
+
+--- PDF PAGE 35 ---
+Table A.4: Capital Gains Semi-Elasticities and Revenue-Maximizing Tax Rates
+Speciﬁcation
+Total elasticity,
+γCG
+Policy elasticity,
+γR = γCG −γN
+Laﬀer rate,
+τ ∗= −1
+γR
+Elasticity with
+respect to tax,
+εtax = γR ·
+−0.22
+1−0.22
+χ2 test:
+εtax = −1
+Baseline
+0-10 years
+-5.53
+-2.89
+0.35
+-0.64
+1.81
+(1.35)
+(1.23)
+(0.15)
+(0.27)
+(0.18)
+0-2 years
+-5.23
+-3.21
+0.31
+-0.71
+1.12
+(1.32)
+(1.26)
+(0.12)
+(0.28)
+(0.29)
+3-5 years
+-7.36
+-3.34
+0.30
+-0.74
+0.94
+(1.49)
+(1.24)
+(0.11)
+(0.27)
+(0.33)
+6-8 years
+-6.59
+-3.05
+0.33
+-0.67
+1.25
+(1.70)
+(1.33)
+(0.14)
+(0.29)
+(0.26)
+6-10 years
+-6.04
+-2.39
+0.42
+-0.53
+2.38
+(1.81)
+(1.40)
+(0.24)
+(0.31)
+(0.12)
+Big changes only
+0-10 years
+-4.80
+-2.37
+0.42
+-0.52
+3.25
+(1.34)
+(1.20)
+(0.21)
+(0.26)
+(0.07)
+0-2 years
+-5.55
+-3.74
+0.27
+-0.82
+0.35
+(1.33)
+(1.36)
+(0.10)
+(0.30)
+(0.55)
+3-5 years
+-7.62
+-3.49
+0.29
+-0.77
+0.68
+(1.48)
+(1.28)
+(0.11)
+(0.28)
+(0.41)
+6-8 years
+-6.27
+-2.67
+0.37
+-0.59
+1.98
+(1.68)
+(1.33)
+(0.19)
+(0.29)
+(0.16)
+6-10 years
+-5.01
+-1.78
+0.56
+-0.39
+3.66
+(1.87)
+(1.44)
+(0.45)
+(0.32)
+(0.06)
+Control for other
+taxes
+0-10 years
+-4.02
+-1.61
+0.62
+-0.35
+3.18
+(1.81)
+(1.65)
+(0.64)
+(0.36)
+(0.07)
+0-2 years
+-3.88
+-1.90
+0.53
+-0.42
+2.62
+(1.63)
+(1.63)
+(0.45)
+(0.36)
+(0.11)
+3-5 years
+-5.68
+-2.35
+0.42
+-0.52
+2.24
+(1.72)
+(1.46)
+(0.26)
+(0.32)
+(0.13)
+6-8 years
+-5.66
+-2.28
+0.44
+-0.50
+1.94
+(2.02)
+(1.63)
+(0.31)
+(0.36)
+(0.16)
+6-10 years
+-5.24
+-2.00
+0.50
+-0.44
+2.28
+(2.20)
+(1.69)
+(0.42)
+(0.37)
+(0.13)
+Notes:
+This table corresponds to Table 2 in the main text, but uses a speciﬁcation in which the right-hand side variable of inter-
+est is the change in the tax rate, rather than in the log net-of-tax rate. Speciﬁcally, we use the exact estimation method described
+in section 2.2, with the exception that in equation (2), we replace the variable ∆3 log (1 −τs,t) with ∆3τs,t, and correspondingly,
+in (3), ∆11 log (1 −τs,t) is replaced with ∆11τs,t. Similarly, the vector of controls for reforms in surrounding years, Xs,t, is also
+speciﬁed using the tax rate in levels rather than the log net-of-tax rate. With this change of right-hand-side variables, columns 1
+and 2 estimate semi-elasticities in a way completely analogously to how we estimate the corresponding elasticities in Table 2. In
+column 3, we calculate the revenue-maximizing tax rate given the policy-relevant semi-elasticity from column 2. In a model where
+the semi-elasticity γ is assumed constant, the revenue-maximizing tax rate can be found as τ ∗= −1
+γ . In column 4, we convert our
+semi-elasticity to an elasticity with respect to the tax rate simply by multiplying by a tax rate of 0.22. More details on our calcula-
+tions can be found in Appendix C. Standard errors are clustered at the state level. Values in parentheses in columns 1-4 represent
+standard errors; values in parentheses in column 5 (χ2 test) represent p-values.
+34
+
+
+--- PDF PAGE 36 ---
+Table A.5: Capital Gains Elasticities and Revenue-Maximizing Tax Rates - Event Study Speciﬁcation
+Speciﬁcation
+Total elasticity,
+εCG
+Policy elasticity,
+εR = εCG −εN
+Laﬀer rate,
+τ ∗= 1−¯τS
+1+εR
+Elasticity with
+respect to tax,
+εtax = εR ·
+−0.22
+1−0.22
+χ2 test:
+εtax = −1
+Baseline
+0-10 years
+3.35
+1.85
+0.33
+-0.52
+5.26
+(0.90)
+(0.74)
+(0.08)
+(0.21)
+(0.02)
+0-2 years
+3.13
+2.14
+0.30
+-0.60
+2.65
+(0.97)
+(0.86)
+(0.08)
+(0.24)
+(0.10)
+3-5 years
+4.45
+2.28
+0.29
+-0.64
+2.05
+(1.09)
+(0.89)
+(0.08)
+(0.25)
+(0.15)
+6-8 years
+3.39
+1.91
+0.32
+-0.54
+3.50
+(1.04)
+(0.87)
+(0.10)
+(0.25)
+(0.06)
+6-10 years
+3.00
+1.41
+0.39
+-0.40
+6.34
+(1.01)
+(0.85)
+(0.14)
+(0.24)
+(0.01)
+Big changes only
+0-10 years
+2.68
+1.57
+0.37
+-0.44
+7.22
+(0.94)
+(0.74)
+(0.10)
+(0.21)
+(0.01)
+0-2 years
+3.48
+2.72
+0.25
+-0.77
+0.72
+(0.99)
+(0.97)
+(0.07)
+(0.27)
+(0.40)
+3-5 years
+4.84
+2.75
+0.25
+-0.78
+0.68
+(1.15)
+(0.97)
+(0.06)
+(0.27)
+(0.41)
+6-8 years
+3.38
+2.00
+0.31
+-0.57
+2.86
+(1.05)
+(0.91)
+(0.09)
+(0.26)
+(0.09)
+6-10 years
+2.44
+1.30
+0.41
+-0.37
+6.38
+(1.04)
+(0.89)
+(0.16)
+(0.25)
+(0.01)
+Control for other
+taxes
+0-10 years
+2.70
+1.35
+0.40
+-0.38
+6.27
+(0.96)
+(0.88)
+(0.15)
+(0.25)
+(0.01)
+0-2 years
+2.31
+1.27
+0.41
+-0.36
+4.57
+(1.08)
+(1.07)
+(0.19)
+(0.30)
+(0.03)
+3-5 years
+3.47
+1.69
+0.35
+-0.48
+4.03
+(1.10)
+(0.92)
+(0.12)
+(0.26)
+(0.04)
+6-8 years
+3.01
+1.61
+0.36
+-0.45
+3.67
+(1.12)
+(1.01)
+(0.14)
+(0.29)
+(0.06)
+6-10 years
+2.60
+1.25
+0.42
+-0.35
+5.23
+(1.10)
+(1.01)
+(0.19)
+(0.28)
+(0.02)
+Notes: This table corresponds to Table 2 in the main text, but uses an event study speciﬁcation where elasticities at diﬀerent
+horizons are estimated jointly within the same regression model rather than using separate regressions for each coeﬃcient as in
+the direct projections case. Speciﬁcally, for the three-year bins, instead of equation (2), we run a single regression of the form
+ys,t = β−9∆3 log(1 −τs,t+9) + β−6∆3 log(1 −τs,t+6) + · · · + β9∆3 log(1 −τs,t−9) + γs + φt + εs,t. Using capital gains real-
+izations as the outcome variable, we then provide elasticity estimates as the diﬀerence between the coeﬃcients βt −β−3 from this
+regression. Migration elasticities are calculated correspondingly, using our migration variable from the main text as the outcome
+variable. For the estimates in the 0-10 year and 6-10 year rows, we run separate regressions. For the 0-10 year bin, we run the re-
+gression ys,t = ˜β−9∆3 log(1 −τs,t+9) + ˜β−6∆3 log(1 −τs,t+6) + ˜β−3∆3 log(1 −τs,t+3) + ˜β0∆11 log(1 −τs,t) + ˜γs + ˜φt + ˜εs,t
+and estimate the 0-10 year elasticity as the diﬀerence ˜β0 −˜β−3. Similarly, for the 6-10 year bin, we run the regression ys,t =
+ˇβ−9∆3 log(1 −τs,t+9) + · · · + ˇβ0∆3 log(1 −τs,t) + ˇβ3∆3 log(1 −τs,t−3) + ˇβ6∆5 log(1 −τs,t−6) + ˇγs + ˇφt + ˇεs,t and identify the
+6-10 year elasticity as ˇβ6 −ˇβ0. In the speciﬁcation that controls for other taxes, we include as variables in the regressions changes
+in state labor and corporate tax rates over the same year bins as for capital gains taxes. In the “big changes only” speciﬁcation, like
+in Table 2, we replace the ∆q log(1 −τs,t−r)-variables with two variables that each sum changes that are smaller and larger than 1
+pp, respectively, over the relevant time horizon. See the ﬁgure notes to Table 2 for details on this. After estimating the total capital
+gains and migration elasticities in this way, all other calculations follow exactly as in Table 2. Standard errors are clustered at the
+state level. Values in parentheses in columns 1-4 represent standard errors; values in parentheses in column 5 (χ2 test) represent p-
+values.
+35
+
+
+--- PDF PAGE 37 ---
+Table A.6: Capital Gains Elasticities and Revenue-Maximizing Tax Rates with Controls for Unemployment
+Speciﬁcation
+Total elasticity,
+εCG
+Policy elasticity,
+εR = εCG −εN
+Laﬀer rate,
+τ ∗= 1−¯τS
+1+εR
+Elasticity with
+respect to tax,
+εtax = εR ·
+−0.22
+1−0.22
+χ2 test:
+εtax = −1
+Baseline
+0-10 years
+3.39
+1.87
+0.33
+-0.53
+3.38
+(1.01)
+(0.91)
+(0.10)
+(0.26)
+(0.07)
+0-2 years
+3.32
+2.09
+0.30
+-0.59
+2.58
+(0.97)
+(0.91)
+(0.09)
+(0.26)
+(0.11)
+3-5 years
+4.78
+2.28
+0.29
+-0.64
+2.05
+(1.10)
+(0.88)
+(0.08)
+(0.25)
+(0.15)
+6-8 years
+4.07
+1.94
+0.32
+-0.55
+3.02
+(1.20)
+(0.92)
+(0.10)
+(0.26)
+(0.08)
+6-10 years
+3.66
+1.47
+0.38
+-0.41
+4.54
+(1.27)
+(0.97)
+(0.15)
+(0.27)
+(0.03)
+Control for
+unemployment
+0-10 years
+3.24
+1.79
+0.34
+-0.51
+3.87
+(0.98)
+(0.89)
+(0.11)
+(0.25)
+(0.05)
+0-2 years
+3.36
+2.03
+0.31
+-0.57
+2.74
+(0.98)
+(0.92)
+(0.09)
+(0.26)
+(0.10)
+3-5 years
+4.71
+2.15
+0.30
+-0.61
+2.80
+(1.14)
+(0.84)
+(0.08)
+(0.24)
+(0.09)
+6-8 years
+3.87
+1.76
+0.34
+-0.50
+4.24
+(1.26)
+(0.87)
+(0.11)
+(0.24)
+(0.04)
+6-10 years
+3.45
+1.39
+0.39
+-0.39
+5.10
+(1.22)
+(0.96)
+(0.16)
+(0.27)
+(0.02)
+Control for
+unemployment
+growth
+0-10 years
+3.04
+1.94
+0.32
+-0.55
+3.20
+(0.94)
+(0.90)
+(0.10)
+(0.25)
+(0.07)
+0-2 years
+3.02
+2.17
+0.30
+-0.61
+2.14
+(0.94)
+(0.94)
+(0.09)
+(0.27)
+(0.14)
+3-5 years
+4.56
+2.37
+0.28
+-0.67
+1.91
+(1.07)
+(0.85)
+(0.07)
+(0.24)
+(0.17)
+6-8 years
+3.92
+1.93
+0.32
+-0.54
+2.89
+(1.24)
+(0.95)
+(0.10)
+(0.27)
+(0.09)
+6-10 years
+3.59
+1.63
+0.36
+-0.46
+3.99
+(1.18)
+(0.96)
+(0.13)
+(0.27)
+(0.05)
+Notes: This table provides additional alternative speciﬁcations to our main estimation, beyond those shown in Table 2 in the main
+text. The top panel of this table, labelled “Baseline”, corresponds exactly to the Baseline panel in Table 2. The next two panels
+add controls for unemployment in two diﬀerent ways. The middle panel includes a linear control for the state’s unemployment rate
+prior to the capital gains tax reform in question. The bottom panel instead controls for a set of dummies interacting unemploy-
+ment growth tertiles and years, where the unemployment growth tertile is determined separately in each year by grouping states
+according to unemployment growth over three years prior to the reform. Standard errors are clustered at the state level. Values in
+parentheses in columns 1-4 represent standard errors; values in parentheses in column 5 (χ2 test) represent p-values.
+36
+
+
+--- PDF PAGE 38 ---
+Table A.7: Capital Gains Elasticities and Revenue-Maximizing Tax Rates with Controls for Other Taxes and
+Unemployment
+Speciﬁcation
+Total elasticity,
+εCG
+Policy elasticity,
+εR = εCG −εN
+Laﬀer rate,
+τ ∗= 1−¯τS
+1+εR
+Elasticity with
+respect to tax,
+εtax = εR ·
+−0.22
+1−0.22
+χ2 test:
+εtax = −1
+Control for other
+taxes
+0-10 years
+2.28
+1.01
+0.47
+-0.29
+4.64
+(1.32)
+(1.18)
+(0.27)
+(0.33)
+(0.03)
+0-2 years
+2.38
+1.25
+0.42
+-0.35
+3.88
+(1.19)
+(1.16)
+(0.21)
+(0.33)
+(0.05)
+3-5 years
+3.58
+1.64
+0.36
+-0.46
+3.54
+(1.24)
+(1.01)
+(0.14)
+(0.29)
+(0.06)
+6-8 years
+3.32
+1.40
+0.39
+-0.39
+3.57
+(1.43)
+(1.14)
+(0.19)
+(0.32)
+(0.06)
+6-10 years
+2.98
+1.18
+0.43
+-0.33
+3.96
+(1.54)
+(1.19)
+(0.24)
+(0.34)
+(0.05)
+Control for taxes,
+unemployment
+0-10 years
+2.22
+0.96
+0.48
+-0.27
+4.83
+(1.30)
+(1.18)
+(0.29)
+(0.33)
+(0.03)
+0-2 years
+2.35
+1.20
+0.43
+-0.34
+3.92
+(1.23)
+(1.18)
+(0.23)
+(0.33)
+(0.05)
+3-5 years
+3.51
+1.57
+0.36
+-0.44
+3.84
+(1.33)
+(1.01)
+(0.14)
+(0.28)
+(0.05)
+6-8 years
+3.18
+1.31
+0.41
+-0.37
+4.11
+(1.47)
+(1.10)
+(0.19)
+(0.31)
+(0.04)
+6-10 years
+2.94
+1.13
+0.44
+-0.32
+4.23
+(1.48)
+(1.18)
+(0.24)
+(0.33)
+(0.04)
+Control for taxes,
+unemployment
+growth
+0-10 years
+2.21
+1.06
+0.45
+-0.30
+4.67
+(1.20)
+(1.15)
+(0.25)
+(0.32)
+(0.03)
+0-2 years
+2.31
+1.31
+0.41
+-0.37
+3.68
+(1.12)
+(1.16)
+(0.20)
+(0.33)
+(0.05)
+3-5 years
+3.55
+1.70
+0.35
+-0.48
+3.68
+(1.20)
+(0.96)
+(0.12)
+(0.27)
+(0.05)
+6-8 years
+3.38
+1.38
+0.39
+-0.39
+4.01
+(1.41)
+(1.08)
+(0.18)
+(0.30)
+(0.05)
+6-10 years
+3.08
+1.25
+0.42
+-0.35
+4.23
+(1.45)
+(1.12)
+(0.21)
+(0.31)
+(0.04)
+Notes: This table provides additional alternative speciﬁcations to our main estimation, beyond those shown in Table 2 in the main
+text. The top panel of this table, labelled “Control for other taxes”, controls for changes in state labor and corporate taxes, and
+corresponds exactly to the bottom panel in Table 2 – see the notes to Table 2 for further details on how this is speciﬁed. The next
+two panels in this table include the same controls for other state tax changes, but also control for unemployment in two diﬀerent
+ways. The middle panel includes a linear control for the state’s unemployment rate prior to the capital gains tax reform in question.
+The bottom panel instead controls for a set of dummies interacting unemployment growth tertiles and years, where the unemploy-
+ment growth tertile is determined separately in each year by grouping states according to unemployment growth over three years
+prior to the reform. Standard errors are clustered at the state level. Values in parentheses in columns 1-4 represent standard errors;
+values in parentheses in column 5 (χ2 test) represent p-values.
+37
+
+
+--- PDF PAGE 39 ---
+B
+Data Appendix
+This appendix covers our data sources in more detail and clariﬁes adjustments and assumptions that have been
+made in cleaning and processing the data.
+Tax rates
+ Maximum federal, state, and total tax rates on long-term capital gains for the years 1977 to 2017 are
+obtained from NBER TAXSIM data. These data are calculated by simulating the eﬀect of a change in
+income for a hypothetical high earner in the TAXSIM model, and thus incorporate statutory state tax
+rates as well as phaseouts of exemptions and itemized deductions. In some speciﬁcations, we control
+for changes in the maximum state income tax and corporate tax rates, which we also obtain from this
+dataset.14
+ Table 1 shows maximum federal long-term capital gains tax rates, which we obtain from the US Depart-
+ment of the Treasury.15 As of the time of writing, the Treasury data starts in 1954, but unfortunately
+only goes to 2014. Knowing that the maximum statutory tax rate on capital gains did not change between
+2014 and 2017, we manually extend the data forwards, assuming a tax range that is unchanged from its
+2014 level. Since the data also includes the eﬀects of other minor provisions on maximum tax rates, it
+is possible that we are leaving out smaller changes in the maximum tax rate through our extrapolation.
+However, we expect any such discrepancies to be small, as the maximum eﬀective tax rate is very close to
+the maximum statutory rate for recent years. In the data, certain years contain two diﬀerent tax rates.
+In these cases, the capital gains tax rate changed at some point during the year, and diﬀerent tax rates
+applied for gains that were realized in diﬀerent parts of the years. Since our data on realized capital gains
+are at the year level, we are unable to apply these diﬀerent tax rates over the year. Therefore, for these
+few years, we assume the relevant tax rate to be the midpoint between the two tax rates that applied
+over the year.
+ Data on UK tax rates comes from HM Revenue and Customs.16
+Note that for some of the years in
+question, the UK had diﬀerent tax rates for individuals and trusts. For the purposes of our analysis,
+we ignore trusts, which account for a comparatively small and stable amount of capital gains across the
+years we study.
+Realized capital gains
+ Data on realized capital gains at the federal level are obtained from the appendix tables of Piketty, Saez
+and Zucman (2018).17 Speciﬁcally, the numbers we use can be found in column 21 of Table C1. These
+numbers were calculated by Piketty, Saez and Zucman (2018) as aggregates of the NBER micro-ﬁles
+samples of tax returns and correspond to the ﬁkgi variable.18 Note that these are net long-term plus
+short-term capital gains, i.e., any capital losses are subtracted from the total in each year.19
+ Data on realized capital gains at the state level are taken from Smith, Zidar and Zwick (2020). The series
+that we use comes from a state-year collapse of the ﬁkgi variable in the IRS SOI sample ﬁles. We also use
+data from the same source on the number of residents by state within the top 1 and 10% of the national
+wealth distribution.
+14Further background information and the dataset itself are available at https://users.nber.org/~taxsim/state-rates/.
+15These data are currently available in excel format at https://www.treasury.gov/resource-center/tax-policy/
+tax-analysis/Documents/Taxes-Paid-on-Capital-Gains-for-Returns-with-Positive-Net-Capital-Gains.xlsx.
+16Speciﬁcally, it can be found at https://assets.publishing.service.gov.uk/government/uploads/system/uploads/
+attachment_data/file/764247/Table_A1.pdf. Note that we do not currently use these data directly in our analysis, except to
+verify that the UK did not change its capital gains tax rate at any time during the periods in which we use it as a control group
+to the US. Capital gains were treated as part of regular income throughout all of the years in our UK sample. The maximum
+income tax rate throughout this period was 40 percent.
+17Currently, these can be found under http://gabriel-zucman.eu/files/PSZ2017AppendixTablesI(Macro).xlsx
+18See the Piketty, Saez and Zucman (2018) codebook here http://gabriel-zucman.eu/files/PSZCodebook.pdf.
+19In future work, it would be valuable to consider gains and losses separately and test where the inclusion of net short term
+gains and losses and netting of loss carryovers from past years have diﬀerent eﬀects.
+38
+
+
+--- PDF PAGE 40 ---
+ UK data on realized net capital gains comes from HM Revenue and Customs.20 These data are given
+separately for individuals and trusts, which are taxed at diﬀerent rates over the period that we study.
+We only use the data for individuals, who are taxed at a 40 percent rate throughout all the years that
+we study. For speciﬁc types of trusts, the tax rate did change slightly over the period that we study.
+Our choice to only use realized capital gains by individuals is therefore based on an assumption that any
+spillover eﬀects between the two tax bases resulting from changes in the trust tax rate are negligible. We
+view this as a reasonable assumption since capital gains by trusts is a small and relatively stable share
+of total capital gains, since only certain types of trusts (i.e, interest in possession trusts and personal
+representative) were subject to tax changes over the period we study, and since the tax changes were very
+small, changing by only 3 percentage points over the period.
+Other variables
+ In some speciﬁcations, we control for state GDP numbers obtained from the Bureau of Economic Anal-
+ysis.21
+ Other speciﬁcations control for unemployment, which we obtain from the Bureau of Labor Statistics.22
+ To generate variables in per capita terms, we use annual estimates of US state populations from the US
+Census Bureau, obtained through the St. Louis Fed.23
+ We convert dollar amounts into real values using the CPI for urban consumers (CPI-U), obtained from
+the US Bureau of Labor Statistics.24
+ Nominal values from the UK are deﬂated using the Retail Price Index, avalable from the Oﬃce for
+National Statistics. 25
+20They can be found at https://www.gov.uk/government/statistics/capital-gains-tax-statistical-tables
+21These can be found using the Regional Economic Accounts download tool at https://apps.bea.gov/regional/
+downloadzip.cfm.
+22Available at https://www.bls.gov/lau/#data.
+23These can be obtained as a single zip ﬁle by using the download tool at https://research.stlouisfed.org/pdl/628/
+download.
+24Available at https://www.bls.gov/cpi/data.htm.
+25https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/consumerpriceindices.
+39
+
+
+--- PDF PAGE 41 ---
+C
+On Elasticities and Semi-Elasticities
+Our approach in equation (1) relates log capital gains realizations to the log net-of-tax rate, which is a standard
+approach in much of the recent literature on the elasticity of taxable income (e.g., Gruber and Saez, 2002; Saez,
+Slemrod and Giertz, 2012; Kleven and Schultz, 2014; Doerrenberg, Peichl and Siegloch, 2017), where the log
+net-of-tax rate (or changes in the log net-of-tax rate) is often used as the primary explanatory variable. One
+reason for this formulation is that the net-of-tax price is often the relevant price governing behavior in standard
+economic models.26 However, most of the previous literature on capital gains taxes (e.g., Bogart and Gentry,
+1995; Bakija and Gentry, 2014; Dowd, McClelland and Muthitacharoen, 2015) has related log capital gains to
+the linear tax rate or net-of-tax rate, ﬁtting speciﬁcations of the semi-log form:
+log CGt = γ · τt.
+(C.1)
+In a model of this form, the coeﬃcient γ corresponds to a semi-elasticity of capital gains realizations with
+respect to the tax rate.
+Empirically, given the variation we observe in tax rates, it is hard to determine
+whether our baseline model in equation (1) ﬁts the data better than a model of this type.27 However, the two
+models generate diﬀerent predictions about how behavioral responses scale with tax rates. Whereas our baseline
+model would imply that a 1 percentage point change in the tax rate induces larger realizations responses when
+the tax rate is higher, the model in (C.1) implies that a 1 percentage point change in tax rates would always
+generate the same percentage change in realizations. As we illustrate in Appendix Figure A.6, the diﬀerence
+between the predictions of these models grows larger when the tax rate is extrapolated further from the rate
+at which both semi-elasticity and net-of-tax rate elasticity are calculated. This diﬀerence can be important,
+for instance, when using these models to calculate the implied revenue-maximizing tax rate.
+We use the model in equation (1) as our baseline model because it is standard in the broader taxable
+elasticity literature and may generate more realistic predictions when considering implied behavioral responses
+at large tax rates. For example, the model in (C.1) implies that the percentage change in realizations would
+be the same whether tax rates were increased from 20 to 21 percent or from 99 to 100 percent, which seems
+less accurate given standard predictions about distortions growing with the square of the tax rate. Our model,
+in contrast, would predict much larger responses when tax rates are high.
+C.1
+Empirical Estimates Using a Semi-Log Speciﬁcation
+We provide results estimation using semi-log speciﬁcations to facilitate comparisons to the prior literature and
+to assess the robustness of our estimates. We report these semi-log results in Table A.4, which has the same
+structure as Table 2 with our binned multi-year estimates from the main text, but with various changes as
+outlined below.
+In the ﬁrst column of Table A.4, we estimate the empirical semi-elasticity, which we label γCG. We do so
+using the same procedure described in Section 2.2 in the main text, but with the right hand-side variable of
+interest changed. For instance, instead of equation (2), we estimate:
+ys,t+h = ˜θh∆3τs,t + X′
+s,t ˜Λh + ˜µs,h + ˜φt,h + ˜εs,t,h.
+(C.2)
+Just as we do for the elasticities in the main text, we calculate the semi-elasticity based on these estimates
+as the diﬀerence between post- and pre-reform point estimates. For example, the 0-2 year semi-elasticity is
+calculated as ˜γ0 ≡˜θ0 −˜θ−3, the 3-5 year semi-elasticity as ˜γ3 ≡˜θ3 −˜θ−3, and so on. Also note that in this
+speciﬁcation, the vector of controls for reforms in surrounding years, Xs,t, is also speciﬁed in terms of the tax
+rate in levels, i.e., it contains the variables ∆3τs,t+r for r = −9, −6, −3, 3, 6, 9.
+In the second column of Table A.4, we obtain a semi-elasticity that diﬀerences out the migration eﬀect by
+subtracting the point estimates of γN from a speciﬁcation like (C.2) with θs ln N P 99−P 100
+s,t
++(1−θs) ln N P 90−P 100
+s,t
+as the outcome variable. This step is completely analogous to what we do in Table 2 for our main estimates.28
+26For example, labor supply decisions depend on the net-of-tax wage, i.e., (1 −τ)w, in standard models of labor supply.
+27Figure A.5 shows that there is little diﬀerence in how strongly changes in log realized capital gains correlate with changes
+in net-of-tax rates and log net-of-tax rates, respectively.
+28One small diﬀerence is that unlike in Table 2, we do not multiply by the minor adjustment factor that we describe in Ap-
+pendix E. This adjustment is not needed in a model where semi-elasticities are assumed constant for all tax rates. We can see
+this point by repeating the simpliﬁcation from equation (E.4) in the context of a semi-elasticity model. Speciﬁcally, let γ ≡
+dCG
+dτ ·
+1
+CG be the policy-relevant semi-elasticity at a national level (corresponding to ε in (E.4)), and let γR ≡d log Rs
+dτ
+= dRs
+dτ · 1
+Rs
+40
+
+
+--- PDF PAGE 42 ---
+We then go on to calculate the revenue-maximizing tax rate implied by the estimated policy-relevant semi-
+elasticities. As in Appendix E, this is the tax rate that solves the federal government’s revenue maximization
+problem,
+τ ∗
+F = arg maxτF τF · CG
+= arg maxτF log τF + log CG
+Taking the ﬁrst order condition for maximization with respect to τF in the second line, we get:
+0 = 1
+τF
++ d log CG
+dτF
+,
+which rearranges to
+τ ∗
+F = −1
+γ ,
+where γ ≡dCG
+dτF ·
+1
+CG = d log CG
+dτF
+is the policy-relevant semi-elasticity at a national level. Note that unlike in
+our main analysis, where we ﬁnd the formula for the revenue-maximizing tax rate in equation (6), we do not
+adjust for the average state taxes here. That is because in a model with a constant semi-elasticity, state taxes
+are irrelevant for the federal tax; diﬀerences in the baseline tax rate do not aﬀect the magnitude of behavioral
+responses. In other words, in this model, if the semi-elasticity is -4, the revenue-maximizing federal tax rate is
+25%, regardless of whether average state taxes are 0 or 50%.
+Finally, in the fourth column of Table A.4, we convert the estimated policy-relevant semi-elasticity to an
+elasticity with respect to the tax rate, evaluated at 22% to facilitate comparison to Table 2 and the prior
+literature as referenced in Gravelle (2020).
+Since the semi-elasticity is given by γ =
+dCG
+dτ
+·
+1
+CG, it can be
+converted into a tax elasticity at any given tax rate τ by simply multiplying it by τ.
+Our results in Table A.4 are broadly consistent with what we ﬁnd in Table 2. While the ﬁrst two columns
+are not directly comparable, we ﬁnd that the semi-log speciﬁcation delivers tax elasticities that are slightly
+larger than those in our main speciﬁcation. However, despite diﬀerences in how revenue-maximizing tax rates
+are calculated in the two models, we get similar estimates of the revenue-maximizing tax rate across our various
+speciﬁcations.
+be the realizations semi-elasticity at the state level. We then ﬁnd:
+γ = dCG
+dτ
+·
+1
+CG
+=
+
+X
+s∈S
+Ns
+dRs
+dτ
+
+·
+1
+P
+s∈S NsRs
+=
+
+X
+s∈S
+NsγR · Rs
+
+·
+1
+P
+s∈S NsRs
+= γR
+
+X
+s∈S
+NsRs
+
+·
+1
+P
+s∈S NsRs
+= γR.
+41
+
+
+--- PDF PAGE 43 ---
+D
+Estimation Using Simulated Data
+This section presents the results of two simulation exercises that aim to examine whether our estimation
+methods are biased when estimating the empirical elasticity of capital gains with respect to the net-of-tax rate.
+We use our actual empirical data on the maximum combined state and federal capital gains tax rate, but rather
+than use empirical data on realized capital gains as the outcome variable, we simulate this variable in such a
+way that we know the true empirical elasticity for this simulated variable with respect to the net-of-tax rate.
+We start with a simulation that features an elasticity that is constant across all time horizons, before moving
+on to the more complex case of a time-varying elasticity.
+D.1
+Simulation with constant elasticity
+First, we generate the simulated log capital gains variable according to the following formula:
+log CGsim
+s,t = 10 + 1 · fipss + 2 · t + 2 · log (1 −τs,t) + ηs,t.
+(D.1)
+From this data-generating process, it is clear to see that the “true” empirical elasticity of capital gains with
+respect to the net-of-tax rate will be εCG =
+∂log CGsim
+s,t
+∂log(1−τs,t) = 2. The constant 10 and the terms 1 · fipss + 2 · t
+are chosen arbitrarily—they are simply there to generate a time trend and some variation across states which
+will be absorbed by state and year ﬁxed eﬀects in our estimation anyway—mimicking structural time trends
+and diﬀerences across states which are unrelated to the tax rate.29 The term ηs,t is a random variable with
+mean 0 and standard deviation 0.001. In reality, the short-term and long-term elasticities likely diﬀer, which we
+explore in more detail in subsection D.2. Here, we have here simpliﬁed matters and assumed a single permanent
+elasticity of 2, which holds for both the short and the long term. This is for expositional purposes, since it will
+make any bias in the diﬀerent estimation methods easier to see visually.
+Having generated this simulated capital gains realizations variable, we now estimate empirically the eﬀect of
+capital gains tax reforms on it, using various methods. The results of these estimations are shown in Appendix
+Figure A.14. First, in panel (a), we use our main speciﬁcation—the baseline direct projections speciﬁcation
+from equation (1), which includes a set of controls for other capital gains reforms in the 10 years before and
+after each reform that enters our regressions. This ﬁgure is thus analogous to Figure 2 (a) in the main text,
+but with simulated outcome data. If our estimation method is accurate, the ﬁgure should display a completely
+ﬂat trend in the pre-and post-periods, with a single upward jump of size 2 from year -1 to 0. The results show
+we accurately identify the true elasticity of 2 in the simulated data. There is a clear jump from time -1 to time
+0, the pre-trend is ﬂat, and the trend in the post-period is almost entirely ﬂat as well, with just a very slight
+upward trend.30
+Panel (b) of Figure A.14 uses the same estimation method, but omits our controls for capital gains reforms
+at diﬀerent horizons. We see that not controlling for other capital gains tax changes performs worse. While the
+jump at time 0 is still exactly 2, we now have a clear downward trend both before and after the reform year.
+This pattern reﬂects the fact that tax reforms in our data tend to be somewhat mean-reverting, as we show in
+Appendix Figure A.4 and discuss brieﬂy in section 2.. Because of this mean-reversion, the diﬀerence between
+tax rates at time 0 and -1 will tend to be an overestimate of the diﬀerence between rates at time h and -1 for
+h > 0, and because we are overestimating the size of the tax change, we will correspondingly underestimate
+the magnitude of the elasticity at these longer horizons.
+Finally, panel (c) of Figure A.14 uses an event study method. We use the following speciﬁcation:
+log CGsim
+s,t =
+10
+X
+h=−10
+βh∆log (1 −τs,t−h) + γs + δt + εs,t,
+(D.2)
+and the ﬁgure plots the point estimates that are normalized relative to period −1, i.e. it shows β−10−β−1, β−9−
+β−1, . . . , β10 −β−1. This diﬀers from our baseline direct projections speciﬁcation from equation (1) in that all
+the point estimates are generated within the same regression. We see that this method performs better than
+29fipss is literally just the FIPS code corresponding to state s, which is included as a crude way to ensure that the mean of
+log CGsim will vary across states.
+30An alternative speciﬁcation that is similar to equation (1), but using ys,t+h −ys,t−1 as the outcome variable, would in
+fact remove this very slight bias. However, we have opted not to use this speciﬁcation for our empirical analysis, as it would not
+extend naturally to our long multi-year binned speciﬁcations, and therefore we do not present it here either.
+42
+
+
+--- PDF PAGE 44 ---
+the direct projections method without controls, but worse than the direct projections with controls, since there
+is still somewhat of a downward trend. This result is likely because given the speciﬁcation that we use, we
+are unable to bin tax reforms that occur beyond the endpoints of our window of 10 leads and lags around the
+realization year.31
+Overall, these results show that our main direct projections method with controls is accurately identifying
+the true elasticity in the longer run. In the next subsection, we extend the simulation exercise to show that
+our estimation methods also accurately identify true elasticities when they diﬀer across time horizons.
+D.2
+Simulation with time-varying elasticity
+To simulate a log realized capital gains variable with a varying net-of-tax elasticity over time, we slightly alter
+the simulated variable we introduced in equation (D.1). It now becomes:
+log CGsim
+s,t =10 + 1 · fipss + 2 · t + 2 · log (1 −τs,t)
+(D.3)
++ 1 · [∆log (1 −τs,t) + ∆log (1 −τs,t−1) + ∆log (1 −τs,t−2)]
+−1 · [∆log (1 −τs,t−3) + ∆log (1 −τs,t−4) + ∆log (1 −τs,t−5)]
++ ηs,t.
+In this speciﬁcation, the long-run elasticity of capital gains with respect to the net-of-tax rate is still 2, but the
+added terms modify this elasticity in the short and medium run. The ﬁrst bracketed term increases the impact
+of the change in the net-of-tax rate on realizations by 1 for reforms that happened 0, 1 or 2 years ago, which
+means that the elasticity in these three years will now be 3. Similarly, the second bracketed term decreases the
+impact of a reform that happened 3, 4 or 5 years ago on capital gains realizations, lowering the elasticity in
+each of these three years to 1.
+We now estimate our baseline speciﬁcation from equation (1) with this new outcome variable. The result
+is shown in panel (a) of Figure A.15. We clearly see that our estimation method accurately picks up on the
+time-varying elasticity across diﬀerent years, which conﬁrms that this speciﬁcation also does a good job of
+capturing the dynamics of the empirical capital gains elasticity around a tax reform.
+Panel (b) of Figure A.15 estimates the impact of capital gains reforms on the same simulated outcome
+variable using the binned speciﬁcations in equations (2) and (3). We see that the 3-year binned speciﬁcation
+also captures the dynamics of the elasticity, and the long 0-10-year speciﬁcation captures the average elasticity
+across time (the three short-run years with an elasticity of 3 and the three medium-run years with an elasticity
+of 1 average out to an elasticity of 2 across these six years). Overall, these results conﬁrm that our empirical
+methods are well-suited to capture the magnitude and evolution of empirical capital gains elasticities over
+time.
+31Speciﬁying the right-hand side variables in the event study speciﬁcation in levels rather than ﬁrst diﬀerences could help
+deal with this problem, but would also make our empirical estimates harder to compare directly with those from the direct pro-
+jections speciﬁcation.
+43
+
+
+--- PDF PAGE 45 ---
+E
+Full Model
+This section contains further details and derivations for the model outlined in section 4.1 of the main text. We
+ﬁrst show the derivations of the formula for the revenue-maximizing tax rate provided in the text. Consider
+the revenue maximization problem of the national government.32 Let ¯τS denote the average state tax rate.33
+The government sets τF to maximize revenue:
+max
+τF τF · CG,
+(E.1)
+where CG = P
+s∈S CGs = P
+s∈S Ns (1 −τF −τs, τ−s) Rs (1 −τF −τs). Taking logs in (E.1), we get the ﬁrst
+order condition
+1
+τF
+= −d log CG
+dτF
+,
+which is equivalent to
+1
+τF
+=
+d log CG
+d (1 −τF −¯τS)
+=
+d log CG
+d log (1 −τF −¯τS) · d log (1 −τF −¯τS)
+d (1 −τF −¯τS)
+=
+d log CG
+d log (1 −τF −¯τS) ·
+1
+1 −τF −¯τS
+.
+We can rewrite this expression to ﬁnd that the revenue-maximizing tax rate is
+τ ∗
+F = 1 −¯τS
+1 + ε ,
+(E.2)
+where
+ε =
+d log CG
+d log (1 −τF −¯τS) =
+dCG
+d (1 −τF −¯τS) · (1 −τF −¯τS)
+CG
+.
+(E.3)
+We call this elasticity the policy-relevant elasticity since it is a suﬃcient statistic for determining revenue-
+maximizing rates at the federal level.
+We would like to express this elasticity in terms of the realization
+elasticities εR that we described in equation (5), since they are what we can empirically estimate. To simplify
+the expression in (E.3), we impose two fairly reasonable assumptions.
+Assumption 1: In every region, ns is unaﬀected by the federal tax rate. Mathematically, this means that
+dns (1 −τF −τ1, 1 −τF −τ2, . . . , 1 −τF −τs, . . . )
+dτF
+= 0
+for all s ∈S.
+In reality, it might be hard to ﬁnd a function for which this is indeed exactly true everywhere on its do-
+main. However, within the range of usual tax rates that we consider, it seems like a reasonable ﬁrst degree
+approximation that a change in national tax rates wouldn’t directly cause internal migration between regions.
+Assumption 2: Realization elasticities are homogenous across regions, εR
+s = εR for all s ∈S.
+32Changes in the capital gains rate may aﬀect other types of income (e.g., dividends, wage and salary income, etc.). This
+formula does not account for spillovers to other parts of the tax base, so we may actually be underestimating the revenue max-
+imizing capital gains rate. Estimating these ﬁscal spillovers precisely is diﬃcult empirically. Another relevant issue is the nega-
+tive vertical ﬁscal externality between federal and state governments—maximizing federal revenues is diﬀerent from maximizing
+federal plus state revenues.
+33This average is weighted by state populations Ns, so
+¯τS =
+P
+s∈S Nsτs
+P
+s∈S Ns
+.
+44
+
+
+--- PDF PAGE 46 ---
+Given these two assumptions, we can simplify the expression in (E.3):
+ε =
+dCG
+d (1 −τF −¯τS) · (1 −τF −¯τS)
+CG
+=
+"X
+s∈S
+Ns
+dRs
+d (1 −τF −τs)
+#
+· (1 −τF −¯τS)
+P
+s∈S NsRs
+=
+"X
+s∈S
+NsεR ·
+Rs
+(1 −τF −τs)
+#
+· (1 −τF −¯τS)
+P
+s∈S NsRs
+= εR
+"X
+s∈S
+Ns
+Rs
+(1 −τF −τs)
+#
+· (1 −τF −¯τS)
+P
+s∈S NsRs
+= εR
+"X
+s∈S
+ns
+Rs
+(1 −τF −τs)
+#
+·
+P
+s∈S ns · (1 −τF −τs)
+
+P
+s∈S nsRs
+
+,
+(E.4)
+where ns is the population of the state expressed as a share of the national population.34 This expression now
+gives us the policy-relevant national elasticity as a function of the local realizations elasticity, εR, times an
+adjustment term which is somewhat diﬃcult to interpret but deals with weighting among states. Essentially,
+it corrects for the fact that an elasticity measured at the aggregate level is not necessarily exactly equal to the
+mean of elasticities measured at a more granular level. Note that in our empirical setting, in every single year
+for which we have data, the adjustment factor is very close to 1 – its minimum value across all years is 0.993,
+and its maximum is 1.004. For this reason, ε and εR are in practice almost identical, which is why we present
+equation (6) for the revenue-maximzing tax rate in the main text with an εR, although it should be an ε to
+be completely precise, as in equation (E.2). We use the 2016 value, which is 1.0025, to adjust our empirical
+estimates when estimating εR and the revenue-maximizing tax rates in section 4.3.
+Equations (E.2) and (E.4) together tell us directly how to get an estimate of the revenue-maximizing tax
+rate from local elasticities. Since our empirically estimated elasticities at the state level give us εCG = εN +εS,
+we need an estimate of εN to get the realizations elasticity. We do this in section 4. of the paper by running a
+version of our direct projections with the outcome variable being a weighted combination of the log number of
+state residents that belong to the top 10% and the top 1% of the national wealth distribution, respectively. This
+can be thought of as applying our outlined model only to the top of the wealth distribution. Capital gains tax
+reforms are likely to have a limited impact on migration of individuals outside the top 10%, and even if there
+is a migration eﬀect for these individuals, it will not substantially aﬀect overall capital gains realizations in the
+state, since individuals outside the top 10% only account for a very small share of capital gains realizations.
+Two-region example
+To make the above derivations a little more concrete, we present the following simple numerical example.
+Suppose the country consists of two regions: California (c) and everywhere else (e). Assume the following
+34Formally, this is deﬁned as
+ns =
+Ns
+P
+q∈S Nq
+.
+45
+
+
+--- PDF PAGE 47 ---
+values:35
+Nc = 20
+Ne = 80
+κc = 25
+κe = 22
+τc = 0.14
+τe = 0.05
+τF = 0.25
+Suppose we estimate a total elasticity of capital gains ˆεCG = 3 and a migration elasticity ˆεN = 1.5.36 This
+implies a realization elasticity of ˆεR = 1.5.
+The average population-weighted state tax rate is ¯τ = 0.2 · 0.14 + 0.8 · 0.05 = 0.068. Using equation (E.4)
+above, we thus ﬁnd the policy-relevant elasticity ε above to be
+ε = εκ
+"X
+s∈S
+ns
+Rs
+(1 −τF −τs)
+#
+·
+P
+s∈S ns (1 −τF −τs)
+
+P
+s∈S nsRs
+
+= 1.5 ·
+0.2 · 25
+0.61
++ 0.8 · 22
+0.7
+
+· 0.2 · 0.61 + 0.8 · 0.7
+0.2 · 25 + 0.8 · 22
+= 1.5 · 1.006
+= 1.509.
+The revenue-maximizing national capital gains tax rate implied by this elasticity is thus
+τ ∗
+F = 1 −¯τS
+1 + ε = 1 −0.068
+1 + 1.509 = 0.371.
+35These values are roughly consistent with actual numbers for people in the top 10% of the wealth distribution in the US in
+2016, with the population rebased to 100 individuals and the realized capital gains per capita given in thousands of dollars.
+36These values are close to what we ﬁnd in our speciﬁcation using big tax changes only.
+46

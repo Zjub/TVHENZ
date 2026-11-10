@@ -1,0 +1,271 @@
+years,base_income,method,tax
+1,0,Gain all in sale year,0
+1,0,Same gain spread equally,0
+1,0,Lump + 30% minimum,4500
+1,70000,Gain all in sale year,4500
+1,70000,Same gain spread equally,4500
+1,70000,Lump + 30% minimum,4500
+1,150000,Gain all in sale year,5550
+1,150000,Same gain spread equally,5550
+1,150000,Lump + 30% minimum,5550
+2,0,Gain all in sale year,1652.0000000000002
+2,0,Same gain spread equally,0
+2,0,Lump + 30% minimum,9000
+2,70000,Gain all in sale year,9000
+2,70000,Same gain spread equally,9000
+2,70000,Lump + 30% minimum,9000
+2,150000,Gain all in sale year,11100
+2,150000,Same gain spread equally,11100
+2,150000,Lump + 30% minimum,11100
+3,0,Gain all in sale year,3752.000000000001
+3,0,Same gain spread equally,0
+3,0,Lump + 30% minimum,13500
+3,70000,Gain all in sale year,13500
+3,70000,Same gain spread equally,13500
+3,70000,Lump + 30% minimum,13500
+3,150000,Gain all in sale year,17050
+3,150000,Same gain spread equally,16650
+3,150000,Lump + 30% minimum,17050
+4,0,Gain all in sale year,8252
+4,0,Same gain spread equally,0
+4,0,Lump + 30% minimum,18000
+4,70000,Gain all in sale year,18000
+4,70000,Same gain spread equally,18000
+4,70000,Lump + 30% minimum,18000
+4,150000,Gain all in sale year,23800
+4,150000,Same gain spread equally,22200
+4,150000,Lump + 30% minimum,23800
+5,0,Gain all in sale year,12752
+5,0,Same gain spread equally,0
+5,0,Lump + 30% minimum,22500
+5,70000,Gain all in sale year,23200
+5,70000,Same gain spread equally,22500
+5,70000,Lump + 30% minimum,23200
+5,150000,Gain all in sale year,30550
+5,150000,Same gain spread equally,27750
+5,150000,Lump + 30% minimum,30550
+6,0,Gain all in sale year,17252
+6,0,Same gain spread equally,0
+6,0,Lump + 30% minimum,27000
+6,70000,Gain all in sale year,28750
+6,70000,Same gain spread equally,27000
+6,70000,Lump + 30% minimum,28750
+6,150000,Gain all in sale year,37300
+6,150000,Same gain spread equally,33300
+6,150000,Lump + 30% minimum,37300
+7,0,Gain all in sale year,21752
+7,0,Same gain spread equally,0
+7,0,Lump + 30% minimum,31500
+7,70000,Gain all in sale year,34300
+7,70000,Same gain spread equally,31500
+7,70000,Lump + 30% minimum,34300
+7,150000,Gain all in sale year,44050
+7,150000,Same gain spread equally,38850
+7,150000,Lump + 30% minimum,44050
+8,0,Gain all in sale year,26252
+8,0,Same gain spread equally,0
+8,0,Lump + 30% minimum,36000
+8,70000,Gain all in sale year,39850
+8,70000,Same gain spread equally,36000
+8,70000,Lump + 30% minimum,39850
+8,150000,Gain all in sale year,50800
+8,150000,Same gain spread equally,44400
+8,150000,Lump + 30% minimum,50800
+9,0,Gain all in sale year,30752
+9,0,Same gain spread equally,0
+9,0,Lump + 30% minimum,40500
+9,70000,Gain all in sale year,46600
+9,70000,Same gain spread equally,40500
+9,70000,Lump + 30% minimum,46600
+9,150000,Gain all in sale year,57550
+9,150000,Same gain spread equally,49950
+9,150000,Lump + 30% minimum,57550
+10,0,Gain all in sale year,36302
+10,0,Same gain spread equally,0
+10,0,Lump + 30% minimum,45000
+10,70000,Gain all in sale year,53350
+10,70000,Same gain spread equally,45000
+10,70000,Lump + 30% minimum,53350
+10,150000,Gain all in sale year,64300
+10,150000,Same gain spread equally,55500
+10,150000,Lump + 30% minimum,64300
+11,0,Gain all in sale year,41852
+11,0,Same gain spread equally,0
+11,0,Lump + 30% minimum,49500
+11,70000,Gain all in sale year,60100
+11,70000,Same gain spread equally,49500
+11,70000,Lump + 30% minimum,60100
+11,150000,Gain all in sale year,71050
+11,150000,Same gain spread equally,61050
+11,150000,Lump + 30% minimum,71050
+12,0,Gain all in sale year,47402
+12,0,Same gain spread equally,0
+12,0,Lump + 30% minimum,54000
+12,70000,Gain all in sale year,66850
+12,70000,Same gain spread equally,54000
+12,70000,Lump + 30% minimum,66850
+12,150000,Gain all in sale year,77800
+12,150000,Same gain spread equally,66600
+12,150000,Lump + 30% minimum,77800
+13,0,Gain all in sale year,53352
+13,0,Same gain spread equally,0
+13,0,Lump + 30% minimum,58500
+13,70000,Gain all in sale year,73600
+13,70000,Same gain spread equally,58500
+13,70000,Lump + 30% minimum,73600
+13,150000,Gain all in sale year,84550
+13,150000,Same gain spread equally,72150
+13,150000,Lump + 30% minimum,84550
+14,0,Gain all in sale year,60102
+14,0,Same gain spread equally,0
+14,0,Lump + 30% minimum,63000
+14,70000,Gain all in sale year,80350
+14,70000,Same gain spread equally,63000
+14,70000,Lump + 30% minimum,80350
+14,150000,Gain all in sale year,91300
+14,150000,Same gain spread equally,77700
+14,150000,Lump + 30% minimum,91300
+15,0,Gain all in sale year,66852
+15,0,Same gain spread equally,0
+15,0,Lump + 30% minimum,67500
+15,70000,Gain all in sale year,87100
+15,70000,Same gain spread equally,67500
+15,70000,Lump + 30% minimum,87100
+15,150000,Gain all in sale year,98050
+15,150000,Same gain spread equally,83250
+15,150000,Lump + 30% minimum,98050
+16,0,Gain all in sale year,73602
+16,0,Same gain spread equally,0
+16,0,Lump + 30% minimum,73602
+16,70000,Gain all in sale year,93850
+16,70000,Same gain spread equally,72000
+16,70000,Lump + 30% minimum,93850
+16,150000,Gain all in sale year,104800
+16,150000,Same gain spread equally,88800
+16,150000,Lump + 30% minimum,104800
+17,0,Gain all in sale year,80352
+17,0,Same gain spread equally,0
+17,0,Lump + 30% minimum,80352
+17,70000,Gain all in sale year,100600
+17,70000,Same gain spread equally,76500
+17,70000,Lump + 30% minimum,100600
+17,150000,Gain all in sale year,111550
+17,150000,Same gain spread equally,94350
+17,150000,Lump + 30% minimum,111550
+18,0,Gain all in sale year,87102
+18,0,Same gain spread equally,0
+18,0,Lump + 30% minimum,87102
+18,70000,Gain all in sale year,107350
+18,70000,Same gain spread equally,81000
+18,70000,Lump + 30% minimum,107350
+18,150000,Gain all in sale year,118300
+18,150000,Same gain spread equally,99900
+18,150000,Lump + 30% minimum,118300
+19,0,Gain all in sale year,93852
+19,0,Same gain spread equally,0
+19,0,Lump + 30% minimum,93852
+19,70000,Gain all in sale year,114100
+19,70000,Same gain spread equally,85500
+19,70000,Lump + 30% minimum,114100
+19,150000,Gain all in sale year,125050
+19,150000,Same gain spread equally,105450
+19,150000,Lump + 30% minimum,125050
+20,0,Gain all in sale year,100602
+20,0,Same gain spread equally,0
+20,0,Lump + 30% minimum,100602
+20,70000,Gain all in sale year,120850
+20,70000,Same gain spread equally,90000
+20,70000,Lump + 30% minimum,120850
+20,150000,Gain all in sale year,131800
+20,150000,Same gain spread equally,111000
+20,150000,Lump + 30% minimum,131800
+21,0,Gain all in sale year,107352
+21,0,Same gain spread equally,0
+21,0,Lump + 30% minimum,107352
+21,70000,Gain all in sale year,127600
+21,70000,Same gain spread equally,94500
+21,70000,Lump + 30% minimum,127600
+21,150000,Gain all in sale year,138550
+21,150000,Same gain spread equally,116550
+21,150000,Lump + 30% minimum,138550
+22,0,Gain all in sale year,114102
+22,0,Same gain spread equally,0
+22,0,Lump + 30% minimum,114102
+22,70000,Gain all in sale year,134350
+22,70000,Same gain spread equally,99000
+22,70000,Lump + 30% minimum,134350
+22,150000,Gain all in sale year,145300
+22,150000,Same gain spread equally,122100
+22,150000,Lump + 30% minimum,145300
+23,0,Gain all in sale year,120852
+23,0,Same gain spread equally,0
+23,0,Lump + 30% minimum,120852
+23,70000,Gain all in sale year,141100
+23,70000,Same gain spread equally,103500
+23,70000,Lump + 30% minimum,141100
+23,150000,Gain all in sale year,152050
+23,150000,Same gain spread equally,127650
+23,150000,Lump + 30% minimum,152050
+24,0,Gain all in sale year,127602
+24,0,Same gain spread equally,0
+24,0,Lump + 30% minimum,127602
+24,70000,Gain all in sale year,147850
+24,70000,Same gain spread equally,108000
+24,70000,Lump + 30% minimum,147850
+24,150000,Gain all in sale year,158800
+24,150000,Same gain spread equally,133200
+24,150000,Lump + 30% minimum,158800
+25,0,Gain all in sale year,134352
+25,0,Same gain spread equally,0
+25,0,Lump + 30% minimum,134352
+25,70000,Gain all in sale year,154600
+25,70000,Same gain spread equally,112500
+25,70000,Lump + 30% minimum,154600
+25,150000,Gain all in sale year,165550
+25,150000,Same gain spread equally,138750
+25,150000,Lump + 30% minimum,165550
+26,0,Gain all in sale year,141102
+26,0,Same gain spread equally,0
+26,0,Lump + 30% minimum,141102
+26,70000,Gain all in sale year,161350
+26,70000,Same gain spread equally,117000
+26,70000,Lump + 30% minimum,161350
+26,150000,Gain all in sale year,172300
+26,150000,Same gain spread equally,144300
+26,150000,Lump + 30% minimum,172300
+27,0,Gain all in sale year,147852
+27,0,Same gain spread equally,0
+27,0,Lump + 30% minimum,147852
+27,70000,Gain all in sale year,168100
+27,70000,Same gain spread equally,121500
+27,70000,Lump + 30% minimum,168100
+27,150000,Gain all in sale year,179050
+27,150000,Same gain spread equally,149850
+27,150000,Lump + 30% minimum,179050
+28,0,Gain all in sale year,154602
+28,0,Same gain spread equally,0
+28,0,Lump + 30% minimum,154602
+28,70000,Gain all in sale year,174850
+28,70000,Same gain spread equally,126000
+28,70000,Lump + 30% minimum,174850
+28,150000,Gain all in sale year,185800
+28,150000,Same gain spread equally,155400
+28,150000,Lump + 30% minimum,185800
+29,0,Gain all in sale year,161352
+29,0,Same gain spread equally,0
+29,0,Lump + 30% minimum,161352
+29,70000,Gain all in sale year,181600
+29,70000,Same gain spread equally,130500
+29,70000,Lump + 30% minimum,181600
+29,150000,Gain all in sale year,192550
+29,150000,Same gain spread equally,160950
+29,150000,Lump + 30% minimum,192550
+30,0,Gain all in sale year,168102
+30,0,Same gain spread equally,0
+30,0,Lump + 30% minimum,168102
+30,70000,Gain all in sale year,188350
+30,70000,Same gain spread equally,135000
+30,70000,Lump + 30% minimum,188350
+30,150000,Gain all in sale year,199300
+30,150000,Same gain spread equally,166500
+30,150000,Lump + 30% minimum,199300

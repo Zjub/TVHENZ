@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='-0.000000000000064' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNjkuMDd8ODQyLjA4fDUzLjc4fDQ4MS40MQ=='>
+    <rect x='69.07' y='53.78' width='773.01' height='427.63' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNjkuMDd8ODQyLjA4fDUzLjc4fDQ4MS40MQ==)'>
+<polyline points='69.07,461.97 842.08,461.97 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='69.07,360.73 842.08,360.73 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='69.07,259.49 842.08,259.49 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='69.07,158.25 842.08,158.25 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='69.07,57.02 842.08,57.02 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='104.21,481.41 104.21,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='279.89,481.41 279.89,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='455.58,481.41 455.58,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='631.26,481.41 631.26,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='806.95,481.41 806.95,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='104.21,461.97 112.99,461.97 121.78,461.97 130.56,461.97 139.34,461.97 148.13,461.97 156.91,461.97 165.70,461.97 174.48,461.97 183.26,461.97 192.05,461.97 200.83,461.97 209.62,461.97 218.40,461.97 227.19,461.97 235.97,461.97 244.75,461.97 253.54,461.97 262.32,461.97 271.11,461.97 279.89,461.97 288.68,461.97 297.46,461.97 306.24,461.97 315.03,461.97 323.81,461.97 332.60,461.97 341.38,461.97 350.17,461.97 358.95,461.97 367.73,461.97 376.52,461.97 385.30,461.97 394.09,461.97 402.87,461.97 411.65,461.97 420.44,461.97 429.22,461.97 438.01,461.97 446.79,461.97 455.58,461.97 464.36,461.97 473.14,461.97 481.93,461.97 490.71,461.97 499.50,461.97 508.28,461.97 517.07,461.97 525.85,461.97 534.63,461.97 543.42,461.97 552.20,461.97 560.99,461.97 569.77,461.97 578.56,461.97 587.34,461.97 596.12,461.97 604.91,461.97 613.69,461.97 622.48,461.97 631.26,461.97 640.04,461.97 648.83,461.97 657.61,461.97 666.40,461.97 675.18,461.97 683.97,461.97 692.75,461.97 701.53,461.97 710.32,461.97 719.10,461.97 727.89,461.97 736.67,461.97 745.46,461.97 754.24,461.97 763.02,461.97 771.81,461.97 780.59,461.97 789.38,461.97 798.16,461.97 806.95,461.97 ' style='stroke-width: 2.13; stroke: #146B8C; stroke-linecap: butt;' />
+<polyline points='104.21,461.97 112.99,458.93 121.78,455.89 130.56,452.86 139.34,449.82 148.13,446.78 156.91,443.75 165.70,440.71 174.48,437.67 183.26,434.63 192.05,431.60 200.83,428.56 209.62,425.52 218.40,422.49 227.19,419.45 235.97,416.41 244.75,413.37 253.54,410.34 262.32,407.30 271.11,404.26 279.89,401.23 288.68,398.19 297.46,395.15 306.24,392.11 315.03,389.08 323.81,386.04 332.60,383.00 341.38,379.97 350.17,376.93 358.95,373.89 367.73,370.85 376.52,367.82 385.30,364.78 394.09,361.74 402.87,358.71 411.65,355.67 420.44,352.63 429.22,349.59 438.01,346.56 446.79,343.52 455.58,340.48 464.36,337.45 473.14,334.41 481.93,331.37 490.71,328.33 499.50,325.30 508.28,322.26 517.07,319.22 525.85,316.19 534.63,313.15 543.42,310.11 552.20,307.07 560.99,304.04 569.77,301.00 578.56,297.96 587.34,294.93 596.12,291.89 604.91,288.85 613.69,285.81 622.48,282.78 631.26,279.74 640.04,276.70 648.83,273.67 657.61,270.63 666.40,267.59 675.18,264.55 683.97,261.52 692.75,258.48 701.53,255.44 710.32,252.41 719.10,249.37 727.89,246.33 736.67,243.29 745.46,240.26 754.24,237.22 763.02,234.18 771.81,231.15 780.59,228.11 789.38,225.07 798.16,222.03 806.95,219.00 ' style='stroke-width: 2.13; stroke: #CF671D; stroke-linecap: butt;' />
+<polyline points='104.21,461.97 112.99,457.11 121.78,452.25 130.56,447.39 139.34,442.53 148.13,437.67 156.91,432.81 165.70,427.95 174.48,423.09 183.26,418.23 192.05,413.37 200.83,408.51 209.62,403.65 218.40,398.80 227.19,393.94 235.97,389.08 244.75,384.22 253.54,379.36 262.32,374.50 271.11,369.64 279.89,364.78 288.68,359.92 297.46,355.06 306.24,350.20 315.03,345.34 323.81,340.48 332.60,335.62 341.38,330.76 350.17,325.90 358.95,321.04 367.73,316.19 376.52,311.33 385.30,306.47 394.09,301.61 402.87,296.75 411.65,291.89 420.44,287.03 429.22,282.17 438.01,277.31 446.79,272.45 455.58,267.59 464.36,262.73 473.14,257.87 481.93,253.01 490.71,248.15 499.50,243.29 508.28,238.43 517.07,233.58 525.85,228.72 534.63,223.86 543.42,219.00 552.20,214.14 560.99,209.28 569.77,204.42 578.56,199.56 587.34,194.70 596.12,189.84 604.91,184.98 613.69,180.12 622.48,175.26 631.26,170.40 640.04,165.54 648.83,160.68 657.61,155.82 666.40,150.97 675.18,146.11 683.97,141.25 692.75,136.39 701.53,131.53 710.32,126.67 719.10,121.81 727.89,116.95 736.67,112.09 745.46,107.23 754.24,102.37 763.02,97.51 771.81,92.65 780.59,87.79 789.38,82.93 798.16,78.07 806.95,73.21 ' style='stroke-width: 2.13; stroke: #20836B; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='63.69' y='465.40' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>$0</text>
+<text x='63.69' y='364.16' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>$2,500</text>
+<text x='63.69' y='262.93' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>$5,000</text>
+<text x='63.69' y='161.69' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>$7,500</text>
+<text x='63.69' y='60.45' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='34.64px' lengthAdjust='spacingAndGlyphs'>$10,000</text>
+<text x='104.21' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.86px' lengthAdjust='spacingAndGlyphs'>0%</text>
+<text x='279.89' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.86px' lengthAdjust='spacingAndGlyphs'>2%</text>
+<text x='455.58' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.86px' lengthAdjust='spacingAndGlyphs'>4%</text>
+<text x='631.26' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.86px' lengthAdjust='spacingAndGlyphs'>6%</text>
+<text x='806.95' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.86px' lengthAdjust='spacingAndGlyphs'>8%</text>
+<text transform='translate(23.54,267.59) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='282.09px' lengthAdjust='spacingAndGlyphs'>Tax value of inflation component in interest deduction</text>
+<line x1='323.22' y1='522.24' x2='337.05' y2='522.24' style='stroke-width: 2.13; stroke: #146B8C; stroke-linecap: butt;' />
+<line x1='411.05' y1='522.24' x2='424.87' y2='522.24' style='stroke-width: 2.13; stroke: #CF671D; stroke-linecap: butt;' />
+<line x1='504.21' y1='522.24' x2='518.03' y2='522.24' style='stroke-width: 2.13; stroke: #20836B; stroke-linecap: butt;' />
+<text x='344.75' y='525.68' style='font-size: 9.60px; font-family: "Arial";' textLength='58.59px' lengthAdjust='spacingAndGlyphs'>0% borrowing</text>
+<text x='432.58' y='525.68' style='font-size: 9.60px; font-family: "Arial";' textLength='63.92px' lengthAdjust='spacingAndGlyphs'>50% borrowing</text>
+<text x='525.74' y='525.68' style='font-size: 9.60px; font-family: "Arial";' textLength='63.92px' lengthAdjust='spacingAndGlyphs'>80% borrowing</text>
+<text x='69.07' y='45.48' style='font-size: 11.00px; font-family: "Arial";' textLength='394.69px' lengthAdjust='spacingAndGlyphs'>Hypothetical scenario, not an estimate of reform revenue or household behaviour</text>
+<text x='69.07' y='27.83' style='font-size: 18.00px; font-weight: bold; font-family: "Arial";' textLength='609.36px' lengthAdjust='spacingAndGlyphs'>R08 Indexing gains raises a parallel question about interest deductions</text>
+<text x='69.07' y='549.28' style='font-size: 9.00px; font-family: "Arial";' textLength='550.33px' lengthAdjust='spacingAndGlyphs'>Source: Model: interest_inflation_symmetry.  $500k asset; inflation compensation on nominal debt principal; 30% flat tax. A comprehensive</text>
+<text x='69.07' y='561.16' style='font-size: 9.00px; font-family: "Arial";' textLength='314.52px' lengthAdjust='spacingAndGlyphs'>real-income system also adjusts lenders’ interest receipts. This is not a costing.</text>
+</g>
+</g>
+</svg>

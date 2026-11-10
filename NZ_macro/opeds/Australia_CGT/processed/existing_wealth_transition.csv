@@ -1,0 +1,125 @@
+year,origin,system,initial,consumption
+0,Existing after-tax wealth,Consumption tax introduced,100000,70000
+0,Existing after-tax wealth,Labour tax + RRA introduced,100000,100000
+0,New pre-tax earnings,Consumption tax introduced,100000,70000
+0,New pre-tax earnings,Labour tax + RRA introduced,100000,70000
+1,Existing after-tax wealth,Consumption tax introduced,100000,72100
+1,Existing after-tax wealth,Labour tax + RRA introduced,100000,103000
+1,New pre-tax earnings,Consumption tax introduced,100000,72100
+1,New pre-tax earnings,Labour tax + RRA introduced,100000,72100
+2,Existing after-tax wealth,Consumption tax introduced,100000,74263
+2,Existing after-tax wealth,Labour tax + RRA introduced,100000,106090
+2,New pre-tax earnings,Consumption tax introduced,100000,74263
+2,New pre-tax earnings,Labour tax + RRA introduced,100000,74263
+3,Existing after-tax wealth,Consumption tax introduced,100000,76490.89
+3,Existing after-tax wealth,Labour tax + RRA introduced,100000,109272.7
+3,New pre-tax earnings,Consumption tax introduced,100000,76490.89
+3,New pre-tax earnings,Labour tax + RRA introduced,100000,76490.89
+4,Existing after-tax wealth,Consumption tax introduced,100000,78785.61670000001
+4,Existing after-tax wealth,Labour tax + RRA introduced,100000,112550.88100000001
+4,New pre-tax earnings,Consumption tax introduced,100000,78785.61670000001
+4,New pre-tax earnings,Labour tax + RRA introduced,100000,78785.61670000001
+5,Existing after-tax wealth,Consumption tax introduced,100000,81149.185201
+5,Existing after-tax wealth,Labour tax + RRA introduced,100000,115927.40743
+5,New pre-tax earnings,Consumption tax introduced,100000,81149.185201
+5,New pre-tax earnings,Labour tax + RRA introduced,100000,81149.185201
+6,Existing after-tax wealth,Consumption tax introduced,100000,83583.66075703001
+6,Existing after-tax wealth,Labour tax + RRA introduced,100000,119405.22965290002
+6,New pre-tax earnings,Consumption tax introduced,100000,83583.66075703001
+6,New pre-tax earnings,Labour tax + RRA introduced,100000,83583.66075703001
+7,Existing after-tax wealth,Consumption tax introduced,100000,86091.17057974091
+7,Existing after-tax wealth,Labour tax + RRA introduced,100000,122987.38654248702
+7,New pre-tax earnings,Consumption tax introduced,100000,86091.17057974091
+7,New pre-tax earnings,Labour tax + RRA introduced,100000,86091.17057974091
+8,Existing after-tax wealth,Consumption tax introduced,100000,88673.90569713314
+8,Existing after-tax wealth,Labour tax + RRA introduced,100000,126677.00813876164
+8,New pre-tax earnings,Consumption tax introduced,100000,88673.90569713314
+8,New pre-tax earnings,Labour tax + RRA introduced,100000,88673.90569713314
+9,Existing after-tax wealth,Consumption tax introduced,100000,91334.12286804714
+9,Existing after-tax wealth,Labour tax + RRA introduced,100000,130477.3183829245
+9,New pre-tax earnings,Consumption tax introduced,100000,91334.12286804714
+9,New pre-tax earnings,Labour tax + RRA introduced,100000,91334.12286804714
+10,Existing after-tax wealth,Consumption tax introduced,100000,94074.14655408855
+10,Existing after-tax wealth,Labour tax + RRA introduced,100000,134391.63793441223
+10,New pre-tax earnings,Consumption tax introduced,100000,94074.14655408855
+10,New pre-tax earnings,Labour tax + RRA introduced,100000,94074.14655408855
+11,Existing after-tax wealth,Consumption tax introduced,100000,96896.37095071122
+11,Existing after-tax wealth,Labour tax + RRA introduced,100000,138423.3870724446
+11,New pre-tax earnings,Consumption tax introduced,100000,96896.37095071122
+11,New pre-tax earnings,Labour tax + RRA introduced,100000,96896.37095071122
+12,Existing after-tax wealth,Consumption tax introduced,100000,99803.26207923255
+12,Existing after-tax wealth,Labour tax + RRA introduced,100000,142576.08868461792
+12,New pre-tax earnings,Consumption tax introduced,100000,99803.26207923255
+12,New pre-tax earnings,Labour tax + RRA introduced,100000,99803.26207923255
+13,Existing after-tax wealth,Consumption tax introduced,100000,102797.35994160954
+13,Existing after-tax wealth,Labour tax + RRA introduced,100000,146853.37134515648
+13,New pre-tax earnings,Consumption tax introduced,100000,102797.35994160954
+13,New pre-tax earnings,Labour tax + RRA introduced,100000,102797.35994160954
+14,Existing after-tax wealth,Consumption tax introduced,100000,105881.28073985783
+14,Existing after-tax wealth,Labour tax + RRA introduced,100000,151258.97248551119
+14,New pre-tax earnings,Consumption tax introduced,100000,105881.28073985783
+14,New pre-tax earnings,Labour tax + RRA introduced,100000,105881.28073985783
+15,Existing after-tax wealth,Consumption tax introduced,100000,109057.71916205356
+15,Existing after-tax wealth,Labour tax + RRA introduced,100000,155796.7416600765
+15,New pre-tax earnings,Consumption tax introduced,100000,109057.71916205356
+15,New pre-tax earnings,Labour tax + RRA introduced,100000,109057.71916205356
+16,Existing after-tax wealth,Consumption tax introduced,100000,112329.45073691517
+16,Existing after-tax wealth,Labour tax + RRA introduced,100000,160470.64390987883
+16,New pre-tax earnings,Consumption tax introduced,100000,112329.45073691517
+16,New pre-tax earnings,Labour tax + RRA introduced,100000,112329.45073691517
+17,Existing after-tax wealth,Consumption tax introduced,100000,115699.33425902262
+17,Existing after-tax wealth,Labour tax + RRA introduced,100000,165284.7632271752
+17,New pre-tax earnings,Consumption tax introduced,100000,115699.33425902262
+17,New pre-tax earnings,Labour tax + RRA introduced,100000,115699.33425902262
+18,Existing after-tax wealth,Consumption tax introduced,100000,119170.31428679332
+18,Existing after-tax wealth,Labour tax + RRA introduced,100000,170243.30612399045
+18,New pre-tax earnings,Consumption tax introduced,100000,119170.31428679332
+18,New pre-tax earnings,Labour tax + RRA introduced,100000,119170.31428679332
+19,Existing after-tax wealth,Consumption tax introduced,100000,122745.42371539712
+19,Existing after-tax wealth,Labour tax + RRA introduced,100000,175350.60530771015
+19,New pre-tax earnings,Consumption tax introduced,100000,122745.42371539712
+19,New pre-tax earnings,Labour tax + RRA introduced,100000,122745.42371539712
+20,Existing after-tax wealth,Consumption tax introduced,100000,126427.78642685903
+20,Existing after-tax wealth,Labour tax + RRA introduced,100000,180611.12346694147
+20,New pre-tax earnings,Consumption tax introduced,100000,126427.78642685903
+20,New pre-tax earnings,Labour tax + RRA introduced,100000,126427.78642685903
+21,Existing after-tax wealth,Consumption tax introduced,100000,130220.6200196648
+21,Existing after-tax wealth,Labour tax + RRA introduced,100000,186029.45717094972
+21,New pre-tax earnings,Consumption tax introduced,100000,130220.6200196648
+21,New pre-tax earnings,Labour tax + RRA introduced,100000,130220.6200196648
+22,Existing after-tax wealth,Consumption tax introduced,100000,134127.23862025476
+22,Existing after-tax wealth,Labour tax + RRA introduced,100000,191610.34088607822
+22,New pre-tax earnings,Consumption tax introduced,100000,134127.23862025476
+22,New pre-tax earnings,Labour tax + RRA introduced,100000,134127.23862025476
+23,Existing after-tax wealth,Consumption tax introduced,100000,138151.0557788624
+23,Existing after-tax wealth,Labour tax + RRA introduced,100000,197358.6511126606
+23,New pre-tax earnings,Consumption tax introduced,100000,138151.0557788624
+23,New pre-tax earnings,Labour tax + RRA introduced,100000,138151.0557788624
+24,Existing after-tax wealth,Consumption tax introduced,100000,142295.58745222827
+24,Existing after-tax wealth,Labour tax + RRA introduced,100000,203279.4106460404
+24,New pre-tax earnings,Consumption tax introduced,100000,142295.58745222827
+24,New pre-tax earnings,Labour tax + RRA introduced,100000,142295.58745222827
+25,Existing after-tax wealth,Consumption tax introduced,100000,146564.45507579512
+25,Existing after-tax wealth,Labour tax + RRA introduced,100000,209377.7929654216
+25,New pre-tax earnings,Consumption tax introduced,100000,146564.45507579512
+25,New pre-tax earnings,Labour tax + RRA introduced,100000,146564.45507579512
+26,Existing after-tax wealth,Consumption tax introduced,100000,150961.388728069
+26,Existing after-tax wealth,Labour tax + RRA introduced,100000,215659.12675438428
+26,New pre-tax earnings,Consumption tax introduced,100000,150961.388728069
+26,New pre-tax earnings,Labour tax + RRA introduced,100000,150961.388728069
+27,Existing after-tax wealth,Consumption tax introduced,100000,155490.23038991107
+27,Existing after-tax wealth,Labour tax + RRA introduced,100000,222128.90055701582
+27,New pre-tax earnings,Consumption tax introduced,100000,155490.23038991107
+27,New pre-tax earnings,Labour tax + RRA introduced,100000,155490.23038991107
+28,Existing after-tax wealth,Consumption tax introduced,100000,160154.9373016084
+28,Existing after-tax wealth,Labour tax + RRA introduced,100000,228792.76757372628
+28,New pre-tax earnings,Consumption tax introduced,100000,160154.9373016084
+28,New pre-tax earnings,Labour tax + RRA introduced,100000,160154.9373016084
+29,Existing after-tax wealth,Consumption tax introduced,100000,164959.58542065666
+29,Existing after-tax wealth,Labour tax + RRA introduced,100000,235656.5506009381
+29,New pre-tax earnings,Consumption tax introduced,100000,164959.58542065666
+29,New pre-tax earnings,Labour tax + RRA introduced,100000,164959.58542065666
+30,Existing after-tax wealth,Consumption tax introduced,100000,169908.37298327635
+30,Existing after-tax wealth,Labour tax + RRA introduced,100000,242726.24711896622
+30,New pre-tax earnings,Consumption tax introduced,100000,169908.37298327635
+30,New pre-tax earnings,Labour tax + RRA introduced,100000,169908.37298327635

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='648.00pt' viewBox='0 0 864.00 648.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw2NDguMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='648.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw2NDguMDA=)'>
+<rect x='0.00' y='0.00' width='864.00' height='648.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNjAuNTR8ODQyLjA4fDUzLjc4fDUzMC4xNQ=='>
+    <rect x='60.54' y='53.78' width='781.54' height='476.37' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNjAuNTR8ODQyLjA4fDUzLjc4fDUzMC4xNQ==)'>
+<polyline points='60.54,426.54 842.08,426.54 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='60.54,256.67 842.08,256.67 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='60.54,86.81 842.08,86.81 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='77.85,530.15 77.85,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='260.02,530.15 260.02,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='442.20,530.15 442.20,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='624.38,530.15 624.38,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='806.56,530.15 806.56,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='96.06,508.49 114.28,505.42 132.50,502.23 150.72,498.94 168.93,495.53 187.15,492.00 205.37,488.34 223.59,484.56 241.81,480.65 260.02,476.59 278.24,472.40 296.46,468.06 314.68,463.57 332.89,458.92 351.11,454.11 369.33,449.13 387.55,443.97 405.77,438.64 423.98,433.12 442.20,427.40 460.42,421.49 478.64,415.37 496.85,409.03 515.07,402.47 533.29,395.68 551.51,388.66 569.73,381.39 587.94,373.86 606.16,366.08 624.38,358.01 642.60,349.67 660.82,341.03 679.03,332.10 697.25,322.85 715.47,313.27 733.69,303.36 751.90,293.11 770.12,282.49 788.34,271.50 806.56,260.13 ' style='stroke-width: 2.13; stroke: #146B8C; stroke-linecap: butt;' />
+<polyline points='96.06,507.86 114.28,504.07 132.50,500.09 150.72,495.91 168.93,491.52 187.15,486.92 205.37,482.08 223.59,477.00 241.81,471.67 260.02,466.07 278.24,460.19 296.46,454.01 314.68,447.53 332.89,440.72 351.11,433.58 369.33,426.07 387.55,418.19 405.77,409.92 423.98,401.23 442.20,392.11 460.42,382.54 478.64,372.48 496.85,361.92 515.07,350.83 533.29,339.19 551.51,326.97 569.73,314.13 587.94,300.66 606.16,286.51 624.38,271.65 642.60,256.05 660.82,239.67 679.03,222.47 697.25,204.41 715.47,185.45 733.69,165.54 751.90,144.63 770.12,122.68 788.34,99.63 806.56,75.43 ' style='stroke-width: 2.13; stroke: #CF671D; stroke-linecap: butt;' />
+<polyline points='96.06,507.73 114.28,503.82 132.50,499.73 150.72,495.46 168.93,490.98 187.15,486.30 205.37,481.41 223.59,476.28 241.81,470.92 260.02,465.32 278.24,459.45 296.46,453.30 314.68,446.88 332.89,440.15 351.11,433.11 369.33,425.74 387.55,418.02 405.77,409.94 423.98,401.49 442.20,392.64 460.42,383.37 478.64,373.66 496.85,363.50 515.07,352.87 533.29,341.72 551.51,330.06 569.73,317.84 587.94,305.04 606.16,291.64 624.38,277.61 642.60,262.90 660.82,247.50 679.03,231.37 697.25,214.47 715.47,196.76 733.69,178.22 751.90,158.78 770.12,138.43 788.34,117.09 806.56,94.74 ' style='stroke-width: 2.13; stroke: #20836B; stroke-linecap: butt;' />
+<polyline points='96.06,508.49 114.28,505.37 132.50,502.10 150.72,498.66 168.93,495.04 187.15,491.25 205.37,487.26 223.59,483.08 241.81,478.69 260.02,474.08 278.24,469.24 296.46,464.15 314.68,458.81 332.89,453.21 351.11,447.32 369.33,441.14 387.55,434.65 405.77,427.84 423.98,420.69 442.20,413.18 460.42,405.29 478.64,397.01 496.85,388.31 515.07,379.18 533.29,369.59 551.51,359.53 569.73,348.96 587.94,337.86 606.16,326.21 624.38,313.97 642.60,301.12 660.82,287.63 679.03,273.47 697.25,258.60 715.47,242.98 733.69,226.58 751.90,209.37 770.12,191.29 788.34,172.31 806.56,152.38 ' style='stroke-width: 2.13; stroke: #A34B66; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw2NDguMDA=)'>
+<text x='55.16' y='429.97' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='26.11px' lengthAdjust='spacingAndGlyphs'>$200k</text>
+<text x='55.16' y='260.11' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='26.11px' lengthAdjust='spacingAndGlyphs'>$400k</text>
+<text x='55.16' y='90.24' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='26.11px' lengthAdjust='spacingAndGlyphs'>$600k</text>
+<text x='77.85' y='542.40' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='5.33px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='260.02' y='542.40' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>10</text>
+<text x='442.20' y='542.40' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>20</text>
+<text x='624.38' y='542.40' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>30</text>
+<text x='806.56' y='542.40' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>40</text>
+<text transform='translate(23.54,291.96) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='66.69px' lengthAdjust='spacingAndGlyphs'>aftertax_real</text>
+<line x1='338.23' y1='570.99' x2='352.05' y2='570.99' style='stroke-width: 2.13; stroke: #146B8C; stroke-linecap: butt;' />
+<line x1='338.23' y1='594.24' x2='352.05' y2='594.24' style='stroke-width: 2.13; stroke: #CF671D; stroke-linecap: butt;' />
+<line x1='473.87' y1='570.99' x2='487.70' y2='570.99' style='stroke-width: 2.13; stroke: #20836B; stroke-linecap: butt;' />
+<line x1='473.87' y1='594.24' x2='487.70' y2='594.24' style='stroke-width: 2.13; stroke: #A34B66; stroke-linecap: butt;' />
+<text x='359.76' y='574.42' style='font-size: 9.60px; font-family: "Arial";' textLength='98.03px' lengthAdjust='spacingAndGlyphs'>Annual real-income tax</text>
+<text x='359.76' y='597.68' style='font-size: 9.60px; font-family: "Arial";' textLength='106.41px' lengthAdjust='spacingAndGlyphs'>Half-rate real CGT at exit</text>
+<text x='495.40' y='574.42' style='font-size: 9.60px; font-family: "Arial";' textLength='47.98px' lengthAdjust='spacingAndGlyphs'>RRA at exit</text>
+<text x='495.40' y='597.68' style='font-size: 9.60px; font-family: "Arial";' textLength='70.72px' lengthAdjust='spacingAndGlyphs'>Real CGT at exit</text>
+<text x='60.54' y='45.48' style='font-size: 11.00px; font-family: "Arial";' textLength='394.69px' lengthAdjust='spacingAndGlyphs'>Hypothetical scenario, not an estimate of reform revenue or household behaviour</text>
+<text x='60.54' y='27.83' style='font-size: 18.00px; font-weight: bold; font-family: "Arial";' textLength='595.39px' lengthAdjust='spacingAndGlyphs'>R01 Deferral changes terminal wealth even when gains are fully taxed</text>
+<text x='60.54' y='621.28' style='font-size: 9.00px; font-family: "Arial";' textLength='528.50px' lengthAdjust='spacingAndGlyphs'>Source: Model: deferral.  $100k already-taxed principal; 5% real return; 30% flat tax; 3% real RRA; no inflation, company tax or credit</text>
+<text x='60.54' y='633.16' style='font-size: 9.00px; font-family: "Arial";' textLength='380.00px' lengthAdjust='spacingAndGlyphs'>constraints in this real-dollar model. Half-rate comparator is not the nominal Australian discount.</text>
+</g>
+</g>
+</svg>

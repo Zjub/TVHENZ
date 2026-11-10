@@ -1,0 +1,517 @@
+--- PDF PAGE 1 ---
+ 
+  |  Negative Gearing and Capital Gains Tax Reform 
+1 
+Negative Gearing and Capital Gains Tax Reform 
+The Government is helping more Australians get into the housing market and 
+improving the efficiency and fairness of the tax system. 
+ 
+Supporting home ownership 
+with a fairer and more efficient 
+tax system 
+The Government is reforming negative gearing 
+and capital gains tax (CGT) arrangements. 
+These reforms will limit the benefits of negative 
+gearing to new residential properties, re-introduce 
+capital gains tax cost base indexation, and 
+introduce a 30 per cent minimum tax on 
+capital  gains. 
+Since 1999, housing prices have risen more than 
+twice as fast as average full time earnings and, 
+since 2001 to 2021, the home ownership rate for 
+households 25 to 34 years old has declined by 
+seven percentage points. 
+These changes will help level the playing field for 
+first home buyers, preserve the gains investors 
+have made, and support investment in new 
+housing supply. 
+From 1 July 2027, the Government will: 
+• limit negative gearing for residential property 
+investments to new builds; and 
+• replace the 50 per cent CGT discount for 
+individuals, trusts and partnerships with cost 
+base indexation and a 30 per cent minimum tax 
+rate on capital gains.  
+These changes will rebalance our tax system, 
+allowing the Government to take pressure off 
+wage earners and first home buyers. 
+The impact of these changes on existing 
+investments will be limited. Properties held before 
+announcement (7:30pm AEST 12 May 2026) will 
+be exempt from the negative gearing changes. The 
+CGT reforms will only apply to gains accruing after 
+1 July 2027.  
+Rental losses can only reduce income 
+from residential properties 
+Under current tax settings, losses from a rental 
+property can be used to reduce other forms of 
+taxable income (e.g. salary and wages). This 
+encourages leveraged property investments that 
+can lead to investors receiving greater tax 
+advantages than those available to owner 
+occupiers. 
+From 1 July 2027, losses related to existing 
+residential investment properties purchased from 
+7:30pm AEST 12 May 2026 will only be deductible 
+against other income from residential properties, 
+including capital gains.  
+However, when an investor has excess losses, they 
+will be able to carry forward that excess to offset 
+residential property income in future years. 
+Enabling losses to be carried forward ensures 
+investors remain able to claim a deduction in the 
+future for costs such as maintenance.  
+These changes will apply to individuals, 
+partnerships, companies and most trusts. Widely 
+held trusts (for example, most managed 
+investment trusts) and superannuation funds 
+(including SMSFs) will be excluded.  
+
+
+--- PDF PAGE 2 ---
+  |  Negative Gearing and Capital Gains Tax Reform 
+2 
+Cost base indexation 
+The current 50 per cent CGT discount was 
+introduced in 1999, allowing taxpayers to 
+reduce their taxable capital gain by half rather 
+than adjusting for inflation. As a result, the 
+50 per cent discount does not accurately 
+approximate the inflation component of gains, 
+meaning investors are undercompensated or 
+overcompensated depending on their returns. 
+Returning to indexation based on the 
+Consumer Price Index (CPI) aligns with the 
+original intent of the CGT regime and supports 
+productivity over time by ensuring that 
+investment decisions are taken for economic 
+reasons, not due to tax outcomes.  
+Indexation will be calculated using CPI in a 
+similar manner to arrangements previously in 
+place between 1985 and 1999. The ATO will 
+provide guidance and tools to support 
+calculation of this adjustment.  
+These changes will apply to all CGT assets 
+(including property and shares) held by individuals, 
+partnerships and trusts for at least 12 months. 
+Applying these changes broadly across assets 
+ensures the CGT settings are broadly asset neutral 
+with only targeted exemptions. 
+Minimum tax on capital gains 
+A minimum tax rate of 30 per cent will apply 
+to real capital gains accruing from 1 July 2027 
+(with no impact until the income is realised). 
+This will not affect people whose capital gains 
+are already taxed at rates of at least 30 per cent. 
+The introduction of the minimum tax reduces 
+the benefit of taxpayers deferring capital gains 
+realisation to years where their marginal tax rates 
+are low. It ensures their gains are subject to a tax 
+rate closer to the rate they faced during their 
+working life and is commensurate with the tax 
+rate paid by most workers.  
+Recipients of means-tested income support 
+payments, such as the Age Pension or JobSeeker, 
+will be exempted from the minimum tax if they 
+receive any payment in the financial year in which 
+they realise the capital gain. 
+ 
+ 
+Comparison of Returns, Inflation and Effective Rates 
+Under these new arrangements, the effective tax rate on nominal capital gains would vary 
+depending on an individual’s marginal rate, their returns and the inflation rate over the period 
+the asset had been held. 
+As shown below, if indexation had been in place over the past 20 years instead of the current 
+arrangements, the effective discount would have ranged from 35-60 per cent on average for 
+typical assets held for five or ten years. 
+This equates to an effective tax rate on the nominal gain of between 13 per cent and 30 per cent. 
+Table 1: Comparison of tax rates under indexation on average over past 20 years 
+House 
+ 
+Average capital growth(a) 
+Discount for CPI(b) 
+At 32c rate(c) 
+At 47c rate(d) 
+5y hold 
+5.8% 
+42% 
+18.6 
+27.3 
+10y hold 
+6.1% 
+36% 
+20.5 
+30.1 
+continued on next page 
+
+
+--- PDF PAGE 3 ---
+  |  Negative Gearing and Capital Gains Tax Reform 
+3 
+Table 1: Comparison of tax rates under indexation on average over past 20 years 
+(continued) 
+Unit  
+ 
+Average capital growth(a) 
+Discount for CPI(b) 
+At 32c rate(c) 
+At 47c rate(d) 
+5y hold 
+4.1% 
+59% 
+13.1 
+19.3 
+10y hold 
+4.8% 
+50% 
+16.0 
+23.5 
+Shares (S&P/ASX 200) 
+ 
+Average capital growth(a) 
+Discount for CPI(b) 
+At 32c rate(c) 
+At 47c rate(d) 
+5y hold 
+4.4% 
+53% 
+15.0 
+22.1 
+10y hold 
+4.3% 
+56% 
+14.1 
+20.7 
+a) Average annual return on an asset held for five or ten years and sold over the period, not including rental or dividend income 
+or additional investor costs 
+b) Average inflation share of nominal gain over holding period 
+c) Effective tax rate on nominal gain at 32 cent marginal tax rate after indexation 
+d) Effective tax rate on nominal gain at 47 cent marginal tax rate after indexation 
+Source: Cotality Data, ASX and Treasury analysis; Budget Paper No. 1, Statement 4: Tax reform for workers, businesses 
+and future generations. 
+ 
+Transitional arrangements 
+Transitional arrangements for 
+negative gearing 
+New builds can continue to be negatively geared 
+before and after 1 July 2027. 
+For established residential properties: 
+• Properties held at announcement (including 
+where a contract has been entered into, but 
+not yet settled) will be allowed to be negatively 
+geared in future years until sold. This ensures 
+that arrangements for taxpayers who have 
+already made investment decisions based on 
+the existing negative gearing rules will not 
+change. 
+• Properties purchased between announcement 
+and 30 June 2027 may be negatively geared 
+during this period, but not from 1 July 2027.  
+• Properties purchased from 1 July 2027 will not 
+be able to be negatively geared. 
+Transitional arrangements for capital gains tax 
+For eligible CGT assets other than new residential 
+properties: 
+• There will be no changes in arrangements for 
+assets purchased and sold prior to 1 July 2027. 
+• Assets purchased after 1 July 2027 will be 
+treated wholly under the new arrangements. 
+• Assets owned prior to 1 July 2027 and sold 
+after 1 July 2027 will be treated under current 
+arrangements on gains made prior to this date, 
+and under the new arrangements for gains 
+made after this date (with no impact until gains 
+are realised). 
+The 50 per cent CGT discount will apply to the 
+difference between the asset’s cost base and its 
+value at 1 July 2027. Indexation and the minimum 
+tax will be used to calculate the CGT on gains 
+accruing from 1 July 2027 (using the asset’s value 
+at 1 July 2027 as the asset’s cost base).  
+
+
+--- PDF PAGE 4 ---
+  |  Negative Gearing and Capital Gains Tax Reform 
+4 
+An asset’s value at 1 July 2027 will be determined 
+by taxpayers as part of their tax return in the year 
+the asset is realised. Taxpayers can either: 
+• seek a valuation of the asset as at 1 July 2027, 
+which will include using quoted prices for 
+assets such as shares; or  
+• use a specified apportionment formula that 
+estimates the asset’s value on 1 July 2027, 
+based on its growth rate over the asset’s 
+holding period. The ATO will provide tools to 
+estimate this value for taxpayers. 
+These transitional arrangements also apply to 
+legacy assets, including those purchased before 
+1985. Gains on pre-1985 assets accrued before 
+1 July 2027 will continue to be exempt. 
+New build exemption 
+Investors who buy new builds will be able to 
+choose either the 50 per cent CGT discount or 
+indexation and the minimum tax when they sell 
+the property. 
+These investors will also continue to have access 
+to negative gearing. This means if they make a 
+rental loss on a new build, they can still use that 
+loss to reduce their taxable income (including 
+salary and wages). 
+New builds are residential properties which 
+genuinely add to supply (see Table 2). This will 
+include: 
+• dwellings constructed on vacant land, or  
+• where existing properties are demolished and 
+replaced with a greater number of dwellings. 
+Knock-down rebuilds or substantial renovations 
+that do not increase supply will not be eligible. 
+A new build cannot have been previously sold, 
+unless first owned by the builder and not occupied 
+for more than 12 months.  
+Subsequent purchasers of the dwelling will not be 
+able to access the 50 per cent CGT discount or 
+negative gearing in relation to that property. This 
+is similar to how stamp duty exemptions apply to 
+new builds under some state-based arrangements. 
+Other exemptions 
+The main residence will continue to be exempt 
+for CGT purposes. The four small business CGT 
+concessions will also be unchanged. 
+The existing 60 per cent CGT discount applying to 
+qualifying affordable housing will be fully retained 
+to preserve incentives to invest in those assets.  
+Given the unique characteristics of the tech and 
+start up sector the Government will consult on 
+the interaction of the capital gains tax reforms 
+and incentives for investment in early-stage and 
+start-up businesses. 
+Changes to negative gearing will only apply to 
+residential property. Commercial property and 
+other asset classes, such as shares, will remain 
+subject to existing arrangements. 
+Further exemptions to the negative gearing 
+changes will also be available for private 
+investors who support government housing 
+programs, for example, through the provision 
+of affordable housing. 
+Policy impacts 
+Changes to negative gearing 
+arrangements 
+Every existing property owner will be able to 
+continue to negatively gear any properties held 
+before the time of announcement (7:30PM AEST 
+on 12 May 2026). 
+All future investors will still be able to negatively 
+gear property investments if they are new builds.  
+Around 1 per cent of taxfilers acquire negatively 
+geared properties each year. In 2022–23, this was 
+around 230,000 individuals. 
+
+
+--- PDF PAGE 5 ---
+  |  Negative Gearing and Capital Gains Tax Reform 
+5 
+Changes to capital gains tax 
+arrangements 
+The new arrangements will only apply to capital 
+gains that accrue after 1 July 2027 when they are 
+realised. Individuals may pay more or less tax than 
+under current settings depending on investment 
+returns (see Cameos: Different rates of return). 
+Around 7 per cent of taxfilers report a net capital 
+gain each year. In 2022–23, this was around 
+1.1 million individuals. Most of these taxfilers used 
+the CGT discount (which is only available for assets 
+held for more than 12 months). 
+Market impacts 
+The transitional arrangements minimise risks of 
+asset market disruption. Properties held at 
+announcement (including where a contract has 
+been entered into, but not yet settled) will be 
+allowed to be negatively geared in future years, 
+meaning there will be no incentive to buy or sell 
+properties before specific dates. 
+Only capital gains accrued after the 
+commencement of the policy will be subject to 
+new arrangements, meaning there is no incentive 
+to buy or sell assets before this date.  
+Housing impacts 
+These changes will support more first home 
+buyers to enter the housing market over time, and 
+form part of a package of reforms that will support 
+supply overall. 
+Treasury modelling suggests that the reforms will 
+increase the owner occupier share of the housing 
+market, resulting in around 75,000 additional 
+owner-occupiers over the next decade. This is 
+equivalent to reversing around 10 years of 
+declines in the home ownership rate. 
+The reduction in investor demand is expected to 
+lead to a small and temporary slowing in house 
+price growth, estimated to see prices grow by 
+around 2 per cent less over a couple years relative 
+to no tax policy change. Lower house price growth 
+will have a small impact on housing supply, more 
+than offset by the additional homes supported by 
+housing supply measures in the Budget. 
+The reforms are likely to have a small impact on 
+rents, with an expected increase of less than 
+$2 per week for a household paying the current 
+median rent. The combination of the 
+Government’s policies in this Budget will add to 
+housing supply, which will exert downward 
+pressure on rents over time. The Government’s 
+increases to Commonwealth Rent Assistance in 
+2023 and 2024 total more than $20 per week for a 
+single person receiving the maximum rate, and 
+renters can also benefit from the Government’s 
+tax cuts. 
+International comparisons 
+In its most recent country report on Australia, the 
+OECD recommended cutting or eliminating the 
+capital gains tax discount and phasing out negative 
+gearing to improve Australia’s tax system.  
+Countries tax capital gains and treat rental 
+deductions in a range of different ways, so direct 
+comparisons depend on specific circumstances. In 
+particular, headline tax rates applying to nominal 
+and real gains are not directly comparable. 
+The effective tax rate on nominal gains in Australia 
+under the new indexation arrangements will 
+depend on the nominal return, inflation and 
+marginal tax rate. As highlighted above, over the 
+past 20 years nominal tax rates on average returns 
+could have been in the order of 20 to 30 per cent 
+for someone on the top marginal tax rate, though 
+in some cases the effective rate could be higher 
+where real returns are large. 
+While there are difficulties in comparing tax 
+arrangements across jurisdictions, similar rates 
+apply across many OECD countries. 
+
+
+--- PDF PAGE 6 ---
+ 
+  |  Negative Gearing and Capital Gains Tax Reform 
+6 
+Table 2: New builds comparison table 
+The changes target the benefit of negative gearing to newly constructed properties that genuinely add 
+to housing supply. 
+Eligible new build 
+Not an eligible new build 
+A newly constructed apartment bought off-the-plan. 
+An established property that has recently been extended to 
+add additional bedrooms. 
+A duplex constructed through a knock-down rebuild 
+replacing a single, free-standing house. 
+A free-standing house constructed through a knock-down 
+rebuild replacing an older, smaller free-standing house.  
+Any residential construction on previously vacant land. 
+A granny flat built adjacent to an established property that 
+is not eligible for negative gearing. 
+A newly built property which is occupied for less than 
+12 months before being first sold. 
+A newly built property which is occupied for more than 
+12 months before being sold to a subsequent investor. 
+ 
+ 
+1  This is roughly the average negative gearing loss in 2022–23 for an individual in the top tax bracket ($14,390) and is 
+equivalent to the loss with a 3.1 per cent rental yield and 5.7 per cent interest rate on a $1 million property.  
+Cameos 
+Impacts on existing property investors 
+Michael owns an investment property purchased before 12 May 2026 that is negatively geared. 
+He can continue to negatively gear this property in future years by using losses from his investment 
+property against other income.  
+Michael sells the property two years after the policy commences for $560,000. Michael still receives 
+the 50 per cent CGT discount for the capital gain he makes on the property between the purchase 
+date and 1 July 2027.  He uses ATO tools to determine its value on that date was $500,000. After 
+adjusting for two years of inflation of 2.5 per cent, his taxable capital gain for the period after 
+1 July 2027 is $34,688, slightly more than if he had applied a 50 per cent discount (which would have 
+resulted in a taxable capital gain of $30,000). Assuming a 47 per cent tax rate, the tax on his gain since 
+1 July 2027 is $16,303 (instead of $14,100 with a 50 per cent discount). Michael does not pay any tax 
+on the capital gain until he sells his property. 
+Carrying forward losses for future property investors 
+A person buying a new build property can continue to negatively gear as per current arrangements. 
+For an individual purchasing an existing property after the announcement, the impact depends on 
+the size of their rental loss and how much other income they have. For example, assuming a rental 
+loss of $14,810: 1 
+• For a person with $80,000 in other income this deduction would be worth $4,761. 
+• For a person with $210,000 in other income this deduction would be worth $6,961. 
+This person will instead carry forward their $14,810 loss to use against future property income. 
+The tax value of this future deduction will also depend on their other income at the time. 
+continued on next page 
+
+
+--- PDF PAGE 7 ---
+ 
+  |  Negative Gearing and Capital Gains Tax Reform 
+7 
+ 
+Cameos (continued) 
+Negative gearing an existing residential property bought after announcement 
+Yoonseo earns an income of $100,000 and buys an existing residential investment property for 
+$519,000 (including stamp duty) after the policy start date, rents it out and sells it ten years later 
+for $814,447. Over the first five years that she owns the property she has net rental losses and 
+accumulates $22,879 of carry forward losses.  
+In the following five years, Yoonseo applies most of these carried forward losses to reduce her positive 
+net rent over this period from $18,079 to zero. In the year she sells the property she uses the remaining 
+carried forward losses to reduce her real estate capital gain from $150,083 to $145,284. Overall, she 
+pays $186 more in nominal tax over the years of her investment compared to previous settings.  
+Had Yoonseo bought a new build property, she would not pay additional tax as negative gearing 
+and the existing capital gains tax discount would still be available for this property. 
+Cost base indexation 
+Zoe purchases shares in a company for $100 on 1 July 2027. She then sells her shares on 1 July 2032 
+for $125, having made a nominal gain of from this investment of $25, with an investment return of 
+4.6 per cent per year. 
+As the shares were purchased after 1 July 2027, Zoe’s capital gains are subject to cost base indexation. 
+Inflation is 2.5 per cent each year Zoe holds the assets and, using ATO tools, Zoe can work out that the 
+indexed cost base of the shares is $113. Zoe's taxable capital gain is reduced from $25 to $12 under 
+cost base indexation. This is slightly less than the taxable capital gain of about $13 under the 50 per 
+cent discount, meaning she will pay slightly less tax.  
+Transitional CGT arrangements 
+Jane purchases an asset on 1 July 2022 for $800,000. She sells the asset on 1 July 2032 for 
+$1,600,000 earning a 7.2 per cent annual return. Using ATO tools, Jane determines that the asset 
+was worth $1,131,371 at commencement of the policy (1 July 2027). 
+Under the transitional rules, Jane calculates her taxable capital gain by adding: 
+• Taxable capital gains of $165,685 earned before commencement, which is equal to gross capital 
+gains of $331,371 with the 50 per cent CGT discount; plus 
+• Taxable gains of $319,958 earned after commencement, which is equal to the gain of $468,629 less 
+cost base indexation. 
+Her total taxable capital gain is $485,643. This is more than the $400,000 that would have been 
+calculated if a 50 per cent discount applied to the gain overall. Assuming a 47 per cent tax rate, the 
+tax on her gain is $228,252 (compared to $188,000 with a 50 per cent discount). 
+continued on next page 
+ 
+
+
+--- PDF PAGE 8 ---
+ 
+  |  Negative Gearing and Capital Gains Tax Reform 
+8 
+Cameos (continued) 
+Different rates of return 
+People will be affected differently depending on the rate of return on their assets. For example, 
+assuming 2.5 per cent inflation, an asset purchased for $500,000 in July 2027, a holding period of 
+10 years, and $100,000 in other income per year: 
+• David earns an annual rate of return of 5 per cent, similar to longer term returns on residential 
+real estate. He will have a taxable capital gain of $174,405 under cost base indexation compared 
+to $157,224 under the current 50 per cent discount. He will pay an extra $8,075 in tax due to 
+the reforms. 
+• Ben earns a lower 2.5 per cent annual return. As Ben does not earn a positive return on his 
+investment after inflation, he will not have a taxable capital gain under cost base indexation. 
+Under the 50 per cent discount his taxable capital gain would have been $70,021. He will pay 
+$24,858 less in tax due to the reforms. 
+• Kate earns a higher 7.5 per cent annual return.  She will have a taxable capital gain of $390,474 
+under cost base indexation compared to $265,258 under the current 50 per cent discount. She 
+will pay an extra $58,851 in tax due to the reforms. 
+Minimum tax on capital gains 
+Jack has a taxable income before capital gains of $25,000 in 2029–30 and realises a capital gain of 
+$10,000 on an asset that he purchased in 2027–28. Jack does not receive an income support payment 
+so is not exempt from the minimum tax. 
+• The tax on Jack's capital gain of $10,000 is $1,400, or a tax rate of 14 per cent (excluding the 
+Medicare levy). As this is lower than 30 per cent, Jack pays an additional $1,600 in tax to bring 
+the tax rate on his capital gain up to 30 per cent. Jack may have tax offsets available to reduce the 
+minimum tax and would be exempt from the minimum tax if he received an income support 
+payment in that year. 
+ 

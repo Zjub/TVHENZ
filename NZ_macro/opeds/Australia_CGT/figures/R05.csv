@@ -1,0 +1,9 @@
+treatment,state,gross,scale,payoff
+"No loss relief, restored upside",Failure,-100000,1.4285714285714286,-142857.14285714287
+"No loss relief, restored upside",Success,200000,1.4285714285714286,200000
+No tax,Failure,-100000,1,-100000
+No tax,Success,200000,1,200000
+"Symmetric tax, fixed scale",Failure,-100000,1,-70000
+"Symmetric tax, fixed scale",Success,200000,1,140000
+"Symmetric tax, restored scale",Failure,-100000,1.4285714285714286,-100000
+"Symmetric tax, restored scale",Success,200000,1.4285714285714286,200000

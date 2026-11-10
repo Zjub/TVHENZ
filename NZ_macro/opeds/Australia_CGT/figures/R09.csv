@@ -1,0 +1,13 @@
+company_rate,personal_rate,method,tax,rate_label
+0.25,0.15,Full usable imputation,1500,15%
+0.25,0.15,"Company + shareholder tax, no credit",3625,15%
+0.25,0.3,Full usable imputation,3000,30%
+0.25,0.3,"Company + shareholder tax, no credit",4750,30%
+0.25,0.45,Full usable imputation,4500,45%
+0.25,0.45,"Company + shareholder tax, no credit",5875,45%
+0.3,0.15,Full usable imputation,1500,15%
+0.3,0.15,"Company + shareholder tax, no credit",4050,15%
+0.3,0.3,Full usable imputation,3000,30%
+0.3,0.3,"Company + shareholder tax, no credit",5100,30%
+0.3,0.45,Full usable imputation,4500,45%
+0.3,0.45,"Company + shareholder tax, no credit",6150,45%

@@ -1,0 +1,67 @@
+source_id,source_row,note
+ato_cgt1,1,Taxation statistics 2023–24
+ato_cgt1,2,Table 1: Capital gains tax
+ato_cgt1,3,"Selected items, by entity, 2012–13 to 2023–24 income years1"
+ato_cgt1,5,Notes:
+ato_cgt1,6,* | Totals may not equal the sum of components due to rounding.
+ato_cgt1,7,"* | To meet privacy regulations, some items may be combined with other groups or not included."
+ato_cgt1,9,1 | The statistics for the income years 2021–22 to 2023–24 were sourced from CGT schedules and the associated form processed by 31 October 2025. Statistics for the 2021–22 and 2022–23 income years may not match those in previous editions as they were updated. The statistics are not necessarily complete.
+ato_cgt1,10,"2 | From 2019–20 income year, individuals stopped lodging a capital gains tax schedule but instead they fill out a capital gains tax associated form. This new form does not contain the label ""Amount of capital gain previously deferred under transitional CGT relief for superannuation fund"" and hence the value recorded at this label for individuals is ""na""."
+ato_cgt2,1,Taxation statistics 2023–24
+ato_cgt2,2,Table 2: Capital gains tax
+ato_cgt2,3,"Net capital gains, by entity, taxable status and amount of gains, 2013–14 to 2023–24 income years1"
+ato_cgt2,5,Notes:
+ato_cgt2,6,* | Totals may not equal the sum of components due to rounding.
+ato_cgt2,8,"1 | The statistics were sourced from the individual, company and fund income tax returns processed by 31 October of the year following the end of the income year. For example, the statistics for the 2023–24 income year include returns processed by 31 October 2025. The statistics are not necessarily complete."
+ato_ind1,1,Taxation statistics 2023–24
+ato_ind1,2,Table 1: Individuals
+ato_ind1,3,"Selected items, for income years 1978–79 to 2023–241,4"
+ato_ind1,5,Notes:
+ato_ind1,6,* | Totals may not equal the sum of components due to rounding.
+ato_ind1,7,"* | To meet privacy regulations, some items may be combined with other groups or not included. Prior to 2011–12, the number indicators were rounded to the nearest multiple of 5."
+ato_ind1,8,* | Labels not on returns for more than 3 years are not included in this table.
+ato_ind1,9,* | Labels not on returns for less than 3 years are in italics.
+ato_ind1,11,1 | The statistics in table 1A for the 2021–22 to 2023–24 income years were sourced from Individual income tax returns processed by 31 October 2025. The statistics are not necessarily complete. Statistics for the 2021–22 and 2022–23 income years reported in this table may not match the statistics reported in previous editions because they have been updated.
+ato_ind1,12,2 | Refers to the label on the Individual income tax return form and will not necessarily equal the sum of component labels.
+ato_ind1,13,"3 | For table 1B, counts, medians and averages are generated using all individuals for: • taxable income or loss • total income or loss • total deductions. These values include reported zeroes and a default value of zero where the value was unknown. Counts, medians and averages for net rent include all individuals who reported at the label, whether the value was zero or not. All remaining fields include only individuals who had a non-zero value for the field."
+ato_ind1,14,4 | The statistics in table 1B were sourced from Individual income tax returns processed by 31 October of the year following the end of the income year. The statistics are not necessarily complete.
+ato_ind1,16,"Table 1A | Selected items, for income years 1978–79 to 2023–24"
+ato_ind1,18,"Table 1B | Selected counts, totals, means and medians, for income years 2012–13 to 2023-24"
+ato_ind3,1,Taxation statistics 2023–24
+ato_ind3,2,Table 3: Individuals
+ato_ind3,3,"Selected items, by sex4, taxable status, age range3 and taxable income range, 2010–11 to 2023–24 income years1"
+ato_ind3,5,Notes:
+ato_ind3,6,* | Totals may not equal the sum of components due to rounding.
+ato_ind3,7,"* | To meet privacy regulations, some items may be combined with other groups or not included."
+ato_ind3,9,"1 | The statistics for the 2023–24 income year were sourced from 2024 individual income tax returns processed by 31 October 2025. The statistics are not necessarily complete. Table 3B includes data processed up to 31 October of the following year. For example, data for the 2018–19 income year includes data processed up to 31 October 2020."
+ato_ind3,10,2 | Refers to the label on the individual return form and will not necessarily equal the sum of component labels.
+ato_ind3,11,"3 | Age range is based on an individuals age as at 30 June at the end of the income year, for example 2020 for the 2019–20 income year. This is based on the birth date information reported on the individual income tax return form."
+ato_ind3,12,"4 | Sex is derived from a variety of ATO sources. Where the sex of an individual is unknown or indeterminate, the individual is allocated to male for the purposes of this table."
+ato_ind3,14,"Table 3A | Selected items, by sex, taxable status, age range and taxable income range, 2023–24 income year"
+ato_ind3,16,"Table 3B | Key items, by income year, sex, taxable status, age range and taxable income range, 2010–11 to 2023–24 income years"
+ato_ind16,1,Taxation statistics 2023–24
+ato_ind16,2,Table 16: Individuals
+ato_ind16,3,"Percentile distribution of taxable individuals, by taxable income, state/territory5 and sex4, 2023–24 income year1"
+ato_ind16,5,Notes:
+ato_ind16,6,* | Totals may not equal the sum of components due to rounding.
+ato_ind16,7,"* | In order to meet privacy regulations, some items may not be included, or data for some groups may be aggregated with other groups."
+ato_ind16,9,1 | The statistics for the 2023–24 income year were sourced from 2024 individual income tax returns processed by 31 October 2025. The statistics are not necessarily complete.
+ato_ind16,10,2 | Refers to the label on the individual return form and will not necessarily equal the sum of component labels.
+ato_ind16,11,"3 | Medians and averages are generated using all taxable individuals for the fields: • taxable income or loss • total income or loss • total deductions. The medians and averages for net rent include all taxable individuals who reported at the label, whether the value was zero or not. All remaining fields include only taxable individuals who had a non-zero value for the field."
+ato_ind16,12,"4 | Sex is derived from a variety of ATO sources. Where the sex of an individual is unknown or indeterminate, the individual is assumed to be male."
+ato_ind16,13,5 | State/territory is based on residential postcodes as stated on the individual tax return forms.
+ato_ind16,15,Table 16A | Totals for percentile distribution of taxable individuals by sex and state
+ato_ind16,17,Table 16B | Medians and averages for percentile distribution of taxable individuals by sex
+ato_ind16,19,Table 16C | Medians and averages for percentile distribution of taxable individuals by sex and state
+ato_rental,1,Taxation statistics 2023–24
+ato_rental,2,Table 26: Individuals
+ato_rental,3,"Rental property schedule items, by state/territory1 of property and net rent position2, 2012–13 to 2023–24 income years3"
+ato_rental,5,Notes:
+ato_rental,6,* | Totals may not equal the sum of components due to rounding.
+ato_rental,7,"* | In order to meet privacy regulations, some items may not be included, or data for some groups may be aggregated with other groups."
+ato_rental,9,1 | The state/territory location of the rental property as per the rental property schedule.
+ato_rental,10,2 | Net rent is as reported for each rental property schedule lodged.
+ato_rental,11,"3 | Data includes rental property schedules processed up to 31 October of the following year. For example, data for the 2019–20 income year includes data processed up to 31 October 2021. The statistics are not necessarily complete."
+ato_rental,12,"4 | This data is at the rental property schedule level, and is not representative of the total number of properties, or the total number of individuals with a rental property. The same property can have more than one individual with an interest in any income year (joint owners, or different owners - buy and sell). An individual can also have an interest in more than one rental property in an income year."
+ato_rental,13,5 | The data from rental property schedules may not necessarily match the data reported on income tax returns.
+ato_rental,14,6 | Refers to the label on the rental property schedule and will not necessarily equal the sum of component labels.

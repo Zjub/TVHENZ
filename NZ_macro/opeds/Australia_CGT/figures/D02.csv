@@ -1,0 +1,109 @@
+year,entity,section,item,unit,value,sheet,source_row,source_column,asset,total,share
+2012,Individuals,Current year capital gains,Shares in companies listed on an Australian securities exchange,$,4563288877,Table 1,8,3,Australian-listed shares,23504724092,0.1941434776744794
+2012,Individuals,Current year capital gains,Other shares,$,2049942558,Table 1,10,3,Other shares,23504724092,0.08721406598845007
+2012,Individuals,Current year capital gains,Units in unit trusts listed on an Australian securities exchange,$,378001776,Table 1,12,3,Australian-listed trust units,23504724092,0.016081949080553368
+2012,Individuals,Current year capital gains,Other units,$,292098028,Table 1,14,3,Other units,23504724092,0.012427205137856421
+2012,Individuals,Current year capital gains,Real estate situated in Australia,$,9232216912,Table 1,16,3,Direct Australian real estate,23504724092,0.39278133518454067
+2012,Individuals,Current year capital gains,Other real estate,$,382810099,Table 1,18,3,Other real estate,23504724092,0.01628651744652013
+2012,Individuals,Current year capital gains,Amount of capital gains from a trust (including a managed fund),$,4882307177,Table 1,20,3,Distributions from trusts/funds,23504724092,0.20771599606488161
+2012,Individuals,Current year capital gains,Collectables,$,19405108,Table 1,22,3,Collectables,23504724092,8.255833135520475e-4
+2012,Individuals,Current year capital gains,Other CGT assets and any other CGT events,$,1703240365,Table 1,24,3,Other assets/events,23504724092,0.07246374636576611
+2013,Individuals,Current year capital gains,Shares in companies listed on an Australian securities exchange,$,5442350006,Table 1,8,6,Australian-listed shares,33434693862,0.1627755297674632
+2013,Individuals,Current year capital gains,Other shares,$,3806187295,Table 1,10,6,Other shares,33434693862,0.11383945403268367
+2013,Individuals,Current year capital gains,Units in unit trusts listed on an Australian securities exchange,$,460236910,Table 1,12,6,Australian-listed trust units,33434693862,0.013765249710363865
+2013,Individuals,Current year capital gains,Other units,$,309059630,Table 1,14,6,Other units,33434693862,0.009243680569519432
+2013,Individuals,Current year capital gains,Real estate situated in Australia,$,12537202028,Table 1,16,6,Direct Australian real estate,33434693862,0.3749758283939032
+2013,Individuals,Current year capital gains,Other real estate,$,506830795,Table 1,18,6,Other real estate,33434693862,0.015158828643441999
+2013,Individuals,Current year capital gains,Amount of capital gains from a trust (including a managed fund),$,8424394315,Table 1,20,6,Distributions from trusts/funds,33434693862,0.25196564831044244
+2013,Individuals,Current year capital gains,Collectables,$,42454575,Table 1,22,6,Collectables,33434693862,0.0012697760947125492
+2013,Individuals,Current year capital gains,Other CGT assets and any other CGT events,$,1810234299,Table 1,24,6,Other assets/events,33434693862,0.054142391925933286
+2014,Individuals,Current year capital gains,Shares in companies listed on an Australian securities exchange,$,6069279051,Table 1,8,9,Australian-listed shares,41483316823,0.14630650381444307
+2014,Individuals,Current year capital gains,Other shares,$,3439365815,Table 1,10,9,Other shares,41483316823,0.08290961471752613
+2014,Individuals,Current year capital gains,Units in unit trusts listed on an Australian securities exchange,$,567178048,Table 1,12,9,Australian-listed trust units,41483316823,0.013672437293768514
+2014,Individuals,Current year capital gains,Other units,$,354464075,Table 1,14,9,Other units,41483316823,0.008544738033181355
+2014,Individuals,Current year capital gains,Real estate situated in Australia,$,15821180238,Table 1,16,9,Direct Australian real estate,41483316823,0.38138657777789137
+2014,Individuals,Current year capital gains,Other real estate,$,612514421,Table 1,18,9,Other real estate,41483316823,0.014765319359911879
+2014,Individuals,Current year capital gains,Amount of capital gains from a trust (including a managed fund),$,12503090510,Table 1,20,9,Distributions from trusts/funds,41483316823,0.301400453665455
+2014,Individuals,Current year capital gains,Collectables,$,19890253,Table 1,22,9,Collectables,41483316823,4.794759561986628e-4
+2014,Individuals,Current year capital gains,Other CGT assets and any other CGT events,$,2096778960,Table 1,24,9,Other assets/events,41483316823,0.0505451135680998
+2015,Individuals,Current year capital gains,Shares in companies listed on an Australian securities exchange,$,4976027132,Table 1,8,12,Australian-listed shares,43675997884,0.11393047378598961
+2015,Individuals,Current year capital gains,Other shares,$,3448993821,Table 1,10,12,Other shares,43675997884,0.0789677165513254
+2015,Individuals,Current year capital gains,Units in unit trusts listed on an Australian securities exchange,$,586283290,Table 1,12,12,Australian-listed trust units,43675997884,0.013423466398114637
+2015,Individuals,Current year capital gains,Other units,$,374530453,Table 1,14,12,Other units,43675997884,0.008575200822994893
+2015,Individuals,Current year capital gains,Real estate situated in Australia,$,16958652616,Table 1,16,12,Direct Australian real estate,43675997884,0.38828311744681465
+2015,Individuals,Current year capital gains,Other real estate,$,642889367,Table 1,18,12,Other real estate,43675997884,0.014719511817622653
+2015,Individuals,Current year capital gains,Amount of capital gains from a trust (including a managed fund),$,13690349796,Table 1,20,12,Distributions from trusts/funds,43675997884,0.313452478690023
+2015,Individuals,Current year capital gains,Collectables,$,23969774,Table 1,22,12,Collectables,43675997884,5.488088460774686e-4
+2015,Individuals,Current year capital gains,Other CGT assets and any other CGT events,$,2490533026,Table 1,24,12,Other assets/events,43675997884,0.05702292212337447
+2016,Individuals,Current year capital gains,Shares in companies listed on an Australian securities exchange,$,5823539422,Table 1,8,15,Australian-listed shares,48835992422,0.11924687373357377
+2016,Individuals,Current year capital gains,Other shares,$,4664222988,Table 1,10,15,Other shares,48835992422,0.09550789810301523
+2016,Individuals,Current year capital gains,Units in unit trusts listed on an Australian securities exchange,$,572401093,Table 1,12,15,Australian-listed trust units,48835992422,0.011720885859220105
+2016,Individuals,Current year capital gains,Other units,$,469229532,Table 1,14,15,Other units,48835992422,0.009608272684320796
+2016,Individuals,Current year capital gains,Real estate situated in Australia,$,19041836680,Table 1,16,15,Direct Australian real estate,48835992422,0.3899139903916828
+2016,Individuals,Current year capital gains,Other real estate,$,587051502,Table 1,18,15,Other real estate,48835992422,0.012020877899381863
+2016,Individuals,Current year capital gains,Amount of capital gains from a trust (including a managed fund),$,15384017528,Table 1,20,15,Distributions from trusts/funds,48835992422,0.31501392241738685
+2016,Individuals,Current year capital gains,Collectables,$,28738607,Table 1,22,15,Collectables,48835992422,5.884718539487204e-4
+2016,Individuals,Current year capital gains,Other CGT assets and any other CGT events,$,2264951722,Table 1,24,15,Other assets/events,48835992422,0.04637873850147597
+2017,Individuals,Current year capital gains,Shares in companies listed on an Australian securities exchange,$,6968782103,Table 1,8,18,Australian-listed shares,54486075885,0.1279002385436699
+2017,Individuals,Current year capital gains,Other shares,$,5765880404,Table 1,10,18,Other shares,54486075885,0.10582300726096784
+2017,Individuals,Current year capital gains,Units in unit trusts listed on an Australian securities exchange,$,651777481,Table 1,12,18,Australian-listed trust units,54486075885,0.011962276057017976
+2017,Individuals,Current year capital gains,Other units,$,522314550,Table 1,14,18,Other units,54486075885,0.009586202374023288
+2017,Individuals,Current year capital gains,Real estate situated in Australia,$,20566774720,Table 1,16,18,Direct Australian real estate,54486075885,0.37746845200246887
+2017,Individuals,Current year capital gains,Other real estate,$,599752319,Table 1,18,18,Other real estate,54486075885,0.011007441979595958
+2017,Individuals,Current year capital gains,Amount of capital gains from a trust (including a managed fund),$,16950829161,Table 1,20,18,Distributions from trusts/funds,54486075885,0.31110387168965786
+2017,Individuals,Current year capital gains,Collectables,$,24232738,Table 1,22,18,Collectables,54486075885,4.4475102319987893e-4
+2017,Individuals,Current year capital gains,Other CGT assets and any other CGT events,$,2420073536,Table 1,24,18,Other assets/events,54486075885,0.044416366873398665
+2018,Individuals,Current year capital gains,Shares in companies listed on an Australian securities exchange,$,6188987010,Table 1,8,21,Australian-listed shares,47067024465,0.13149305868277816
+2018,Individuals,Current year capital gains,Other shares,$,6198714196,Table 1,10,21,Other shares,47067024465,0.1316997253694992
+2018,Individuals,Current year capital gains,Units in unit trusts listed on an Australian securities exchange,$,408475695,Table 1,12,21,Australian-listed trust units,47067024465,0.00867859610083809
+2018,Individuals,Current year capital gains,Other units,$,406876858,Table 1,14,21,Other units,47067024465,0.00864462673442554
+2018,Individuals,Current year capital gains,Real estate situated in Australia,$,16226492193,Table 1,16,21,Direct Australian real estate,47067024465,0.344752879057956
+2018,Individuals,Current year capital gains,Other real estate,$,582508970,Table 1,18,21,Other real estate,47067024465,0.012376158820771973
+2018,Individuals,Current year capital gains,Amount of capital gains from a trust (including a managed fund),$,15119998594,Table 1,20,21,Distributions from trusts/funds,47067024465,0.3212439869710383
+2018,Individuals,Current year capital gains,Collectables,$,15717464,Table 1,22,21,Collectables,47067024465,3.33937914679264e-4
+2018,Individuals,Current year capital gains,Other CGT assets and any other CGT events,$,4512400519,Table 1,24,21,Other assets/events,47067024465,0.09587180346094563
+2019,Individuals,Current year capital gains,Shares in companies listed on an Australian securities exchange,$,8191516273,Table 1,8,24,Australian-listed shares,51095798583,0.1603168264352245
+2019,Individuals,Current year capital gains,Other shares,$,5886128388,Table 1,10,24,Other shares,51095798583,0.11519789398023743
+2019,Individuals,Current year capital gains,Units in unit trusts listed on an Australian securities exchange,$,579718428,Table 1,12,24,Australian-listed trust units,51095798583,0.011345716166042607
+2019,Individuals,Current year capital gains,Other units,$,486460811,Table 1,14,24,Other units,51095798583,0.009520563813280914
+2019,Individuals,Current year capital gains,Real estate situated in Australia,$,17129255311,Table 1,16,24,Direct Australian real estate,51095798583,0.33523803886096903
+2019,Individuals,Current year capital gains,Other real estate,$,585363991,Table 1,18,24,Other real estate,51095798583,0.011456205935388894
+2019,Individuals,Current year capital gains,Amount of capital gains from a trust (including a managed fund),$,15035224879,Table 1,20,24,Distributions from trusts/funds,51095798583,0.2942556001855375
+2019,Individuals,Current year capital gains,Collectables,$,23000298,Table 1,22,24,Collectables,51095798583,4.501406894079231e-4
+2019,Individuals,Current year capital gains,Other CGT assets and any other CGT events,$,2012139066,Table 1,24,24,Other assets/events,51095798583,0.0393797361388037
+2020,Individuals,Current year capital gains,Shares in companies listed on an Australian securities exchange,$,10980097218,Table 1,8,27,Australian-listed shares,82752955848,0.13268525704590128
+2020,Individuals,Current year capital gains,Other shares,$,9244260024,Table 1,10,27,Other shares,82752955848,0.11170912179837765
+2020,Individuals,Current year capital gains,Units in unit trusts listed on an Australian securities exchange,$,591733142,Table 1,12,27,Australian-listed trust units,82752955848,0.007150598258833085
+2020,Individuals,Current year capital gains,Other units,$,639289516,Table 1,14,27,Other units,82752955848,0.007725277114865143
+2020,Individuals,Current year capital gains,Real estate situated in Australia,$,28870981589,Table 1,16,27,Direct Australian real estate,82752955848,0.34888157520354923
+2020,Individuals,Current year capital gains,Other real estate,$,1017413968,Table 1,18,27,Other real estate,82752955848,0.012294593680360835
+2020,Individuals,Current year capital gains,Amount of capital gains from a trust (including a managed fund),$,24828928687,Table 1,20,27,Distributions from trusts/funds,82752955848,0.30003675920175693
+2020,Individuals,Current year capital gains,Collectables,$,45307394,Table 1,22,27,Collectables,82752955848,5.475018207593729e-4
+2020,Individuals,Current year capital gains,Other CGT assets and any other CGT events,$,4889554543,Table 1,24,27,Other assets/events,82752955848,0.059086161852406775
+2021,Individuals,Current year capital gains,Shares in companies listed on an Australian securities exchange,$,13460876186,Table 1,8,30,Australian-listed shares,119877415067,0.11228867571490976
+2021,Individuals,Current year capital gains,Other shares,$,12051536873,Table 1,10,30,Other shares,119877415067,0.10053217168775573
+2021,Individuals,Current year capital gains,Units in unit trusts listed on an Australian securities exchange,$,849141409,Table 1,12,30,Australian-listed trust units,119877415067,0.007083414407337789
+2021,Individuals,Current year capital gains,Other units,$,826113917,Table 1,14,30,Other units,119877415067,0.006891322410800078
+2021,Individuals,Current year capital gains,Real estate situated in Australia,$,48227573775,Table 1,16,30,Direct Australian real estate,119877415067,0.4023074216944485
+2021,Individuals,Current year capital gains,Other real estate,$,1357186414,Table 1,18,30,Other real estate,119877415067,0.011321452112071842
+2021,Individuals,Current year capital gains,Amount of capital gains from a trust (including a managed fund),$,35524144000,Table 1,20,30,Distributions from trusts/funds,119877415067,0.29633725402024563
+2021,Individuals,Current year capital gains,Collectables,$,48704691,Table 1,22,30,Collectables,119877415067,4.062874643466306e-4
+2021,Individuals,Current year capital gains,Other CGT assets and any other CGT events,$,5362751837,Table 1,24,30,Other assets/events,119877415067,0.04473529758714546
+2022,Individuals,Current year capital gains,Shares in companies listed on an Australian securities exchange,$,7892741187,Table 1,8,33,Australian-listed shares,88296328730,0.08938923396390684
+2022,Individuals,Current year capital gains,Other shares,$,7738312232,Table 1,10,33,Other shares,88296328730,0.08764024895828758
+2022,Individuals,Current year capital gains,Units in unit trusts listed on an Australian securities exchange,$,399672104,Table 1,12,33,Australian-listed trust units,88296328730,0.0045264860923283825
+2022,Individuals,Current year capital gains,Other units,$,1025808710,Table 1,14,33,Other units,88296328730,0.011617795719874207
+2022,Individuals,Current year capital gains,Real estate situated in Australia,$,34226510113,Table 1,16,33,Direct Australian real estate,88296328730,0.3876323127506323
+2022,Individuals,Current year capital gains,Other real estate,$,964727256,Table 1,18,33,Other real estate,88296328730,0.010926017761735313
+2022,Individuals,Current year capital gains,Amount of capital gains from a trust (including a managed fund),$,31215350631,Table 1,20,33,Distributions from trusts/funds,88296328730,0.35352942845962426
+2022,Individuals,Current year capital gains,Collectables,$,44006949,Table 1,22,33,Collectables,88296328730,4.984006654972958e-4
+2022,Individuals,Current year capital gains,Other CGT assets and any other CGT events,$,3525607688,Table 1,24,33,Other assets/events,88296328730,0.03992926703420368
+2023,Individuals,Current year capital gains,Shares in companies listed on an Australian securities exchange,$,9106343433,Table 1,8,36,Australian-listed shares,90593755918,0.10051844457406658
+2023,Individuals,Current year capital gains,Other shares,$,7169479381,Table 1,10,36,Other shares,90593755918,0.0791387806847238
+2023,Individuals,Current year capital gains,Units in unit trusts listed on an Australian securities exchange,$,457600886,Table 1,12,36,Australian-listed trust units,90593755918,0.005051130526194241
+2023,Individuals,Current year capital gains,Other units,$,639373982,Table 1,14,36,Other units,90593755918,0.007057594373046225
+2023,Individuals,Current year capital gains,Real estate situated in Australia,$,37633139034,Table 1,16,36,Direct Australian real estate,90593755918,0.4154054399517694
+2023,Individuals,Current year capital gains,Other real estate,$,997535446,Table 1,18,36,Other real estate,90593755918,0.01101108388643152
+2023,Individuals,Current year capital gains,Amount of capital gains from a trust (including a managed fund),$,29289966640,Table 1,20,36,Distributions from trusts/funds,90593755918,0.32331109736206887
+2023,Individuals,Current year capital gains,Collectables,$,58056951,Table 1,22,36,Collectables,90593755918,6.408493655186307e-4
+2023,Individuals,Current year capital gains,Other CGT assets and any other CGT events,$,3772533253,Table 1,24,36,Other assets/events,90593755918,0.04164230983440701

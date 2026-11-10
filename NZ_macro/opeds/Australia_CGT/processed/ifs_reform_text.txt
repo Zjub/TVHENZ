@@ -1,0 +1,1712 @@
+--- PDF PAGE 1 ---
+lnstitute for Fiscal Studies
+ 
+ 
+ 
+ 
+abrdn 
+~ 
+Financial Fairness Trust 
+Nuffield 
+Foundation 
+Economic 
+and Social 
+Research Council 
+Capital gains 
+tax reform
+IFS Report R336
+Stuart Adam
+Arun Advani
+Helen Miller  
+Andy Summers
+
+
+--- PDF PAGE 2 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+1 
+7. Capital gains tax reform
+Stuart Adam (IFS), Arun Advani (CenTax and University of 
+Warwick), Helen Miller (IFS) and Andy Summers (CenTax and LSE)1 
+Key findings 
+1. Capital gains tax (CGT) raises around £15 billion per year, less than 2% of total
+tax revenue. Revenues have risen significantly over time and are forecast to rise
+further, partly reflecting the increasing role of wealth accumulation in the UK economy.
+2. CGT is paid by around 350,000 people (0.65% of the adult population). 3% of CGT
+taxpayers realised gains of more than £1 million and this group accounted for
+two-thirds of CGT revenue. The average gain among this group of 12,000 people
+(0.02% of the adult population) was £4 million. Around half of taxable gains relate to
+unlisted shares in private businesses.
+3. CGT rates vary across assets. They are lower than tax rates on earned income and, in
+most cases, income from capital. These rate differentials are unfair and create a
+range of undesirable distortions.
+4. The design of the tax base is flawed. Ultimately, by discouraging saving, investment
+and risk-taking and distorting who holds assets and for how long, it reduces
+productivity and well-being.
+5. Higher rates of CGT would worsen these problems caused by the tax base. But
+keeping tax rates low cannot solve those problems. There is a strong case for
+reform.
+1
+Advani and Summers gratefully acknowledge funding provided by the ESRC research grant ‘Taxing the Super 
+Rich’ (grant number ES/W012650/1) and a grant from the Nuffield Foundation, General Election Analysis, 
+‘Reforming Capital Gains Tax’ (grant number FR-000024377). 
+
+
+--- PDF PAGE 3 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+2 
+6. The tax base could be reformed so that CGT does little to discourage saving and 
+investment. This requires giving more generous deductions for purchase costs and 
+losses. There are several ways to do this in practice.  
+7. Ultimately, we advocate aligning marginal tax rates across all forms of gains and 
+income, while reforming the tax base. Tax rates could be aligned at any level; for 
+example, rates on capital gains (and capital income) could be increased while rates on 
+employment income were reduced. In practice, the ‘big-picture’ solution we set out 
+would include substantially higher CGT rates.  
+8. Higher CGT rates would increase the incentive for people to leave the UK before 
+realising gains to avoid UK CGT. One option to address this would be to tax people 
+emigrating from the UK on their accrued but unrealised gains, whilst exempting new 
+arrivals from UK CGT on gains they made whilst living abroad. There are challenges 
+with this approach, but it is operated by some other countries.  
+9. Steps could be taken towards a better-designed system. Low CGT rates on business 
+assets are poorly targeted at entrepreneurship. They lead to more money being held in 
+companies, but do not achieve the commonly stated policy goal of increasing owner-
+managers’ investment in their own businesses. Business asset disposal relief 
+should be scrapped in favour of more generous deductions for investment 
+costs. Removing CGT uplift (or ‘forgiveness’) at death should also be a priority. 
+10. The government should seek to make reform credibly lasting. It should set out 
+clear principles and a rationale for reform and commit to the new regime for the length 
+of the parliament. Instability and unpredictability are bad for investment.  
+7.1 Introduction  
+There is widespread speculation in the run-up to her first Budget that the new Chancellor, Rachel 
+Reeves, will raise capital gains tax (CGT).  
+Increasing CGT is one option that was not ruled out in the Labour Party manifesto. And it is 
+easy to explain the inequities that arise from taxing capital gains at substantially lower rates than 
+earned income and, in most cases, capital income. Taxable capital gains are heavily concentrated 
+at the top of the income distribution and those receiving gains pay much lower tax rates than 
+people receiving similar amounts but in the form of employment income.  
+
+
+--- PDF PAGE 4 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+3 
+However, at first glance, CGT might not seem like an obvious choice for a Chancellor looking to 
+raise significant sums. According to official estimates of the revenue effects of different tax 
+changes produced by HM Revenue and Customs (HMRC), a 1 percentage point increase in the 
+higher rates of capital gains tax in April 2025 would raise a measly £100 million in 2027–28 
+while a 10 percentage point increase would actually reduce revenue by about £2 billion that 
+year.  
+In the absence of sufficient information as to how these estimates are produced, it is difficult to 
+assess their credibility. Our view is that HMRC’s published estimates are not a good guide to the 
+revenue effect over a longer time horizon and that a rise in CGT rates would, up to a point, raise 
+revenue in the medium run. But increasing headline rates in isolation would involve difficult 
+trade-offs. More revenue would be raised, and with tax rates on capital gains closer to tax rates 
+on income, there would be less distortion to how people chose to work and to take their income. 
+But distortions created by the tax base – the definition of what is subject to tax – would be 
+worsened. Among other things, higher rates would increase unwelcome distortions to 
+commercial decisions about how much to save and invest, which assets to choose and how long 
+to hold them for (see Section 7.3).  
+Removing the harmful distortions created by the poor design of the UK’s CGT should be a key 
+focus of policy. CGT creates unfairness by arbitrarily favouring one action over another and 
+thereby penalising otherwise-equivalent people who behave in the tax-disadvantaged way.  
+CGT also creates economic inefficiency. The cost to taxpayers of CGT is not just the money 
+they hand over and the resources they spend complying with their obligations, but the lower 
+well-being that results when CGT leads them to change how they behave. For example, there is 
+a cost to people when they hold on to assets for longer than they would want to absent tax 
+considerations. People also waste time and resources undertaking legal arrangements aimed at 
+saving tax by repackaging income into capital gains. And because it leads to reduced investment 
+and skewed patterns of capital allocation, CGT acts to lower productivity. We are collectively 
+made poorer by a poorly designed CGT.  
+The good news for Ms Reeves is that the tax base could be reformed to greatly reduce – and in 
+some cases largely remove – the distortions to saving, investment and risk-taking. In short, this 
+would require giving more generous deductions for purchase costs and losses and removing 
+CGT uplift (or ‘forgiveness’) at death. There are several ways that base reforms could be 
+achieved in practice. With a reformed tax base, tax rates could be increased with much less 
+distortion to choices over whether, when or how to invest. We summarise a ‘big-picture 
+solution’ that involves reforming the tax base while aligning overall marginal tax rates across all 
+forms of gains and income (see Section 7.5). This would represent a major change in tax policy, 
+but also offers a significant prize. Importantly, reforming CGT would be worthwhile in its own 
+
+
+--- PDF PAGE 5 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+4 
+right: regardless of how much revenue the government would like to raise, it could raise it in a 
+way that was fairer and less damaging to economic growth and well-being. Reform is even more 
+important if the government wishes to raise additional revenue.  
+The UK currently charges CGT on disposals that an individual makes while they are UK-
+resident. Higher CGT rates would increase the incentive for those who have accrued large gains 
+to move to a lower-tax country – to retire abroad, for example – before realising them. One 
+option to mitigate this incentive would be to introduce ‘deemed disposal on departure’ for CGT 
+purposes, matched by ‘rebasing on arrival’ for new arrivals (Section 7.5). Effectively, this would 
+move to taxing gains that accrued while a person was living in the UK, rather than those 
+realised here. There are challenges with this approach, but it is already operated by some other 
+countries. 
+If the government chooses to reform only some rates or elements of CGT, there would be 
+inevitable trade-offs that require careful management (Section 7.6). But there are smaller steps 
+that could be taken in the right direction. For example, we describe a reform that would include 
+removing business asset disposal (BAD) relief – a preferential CGT rate for business owner-
+managers which is not well targeted at entrepreneurship and leads to a range of undesirable 
+distortions – alongside giving up-front tax relief for investment in shares. The new up-front 
+relief could be thought of as a replacement for BAD relief – a reorienting away from tax relief 
+on large gains to tax relief on investment. Empirical evidence suggests that implementing the 
+two measures together would boost investment and raise revenue. It would be a progressive 
+change: revenue would be raised from the top of the income distribution, while recipients of the 
+new relief are less well off: those investing the most, rather than those making the biggest gains, 
+would benefit most.  
+Reforming the tax base at the same time as increasing rates would create winners as well as 
+losers (see Section 7.8). Those making relatively low returns (e.g. those making low-risk arm’s-
+length investments and those taking risks that do not pay off) would pay less tax. Those making 
+very high returns – which could reflect some combination of effort and skill, privileged access to 
+scarce opportunities, and luck – would pay more. But note that raising taxes on high returns 
+could equally be described as removing the tax advantages they receive under the current tax 
+system. We do not take a view on how high tax rates should be, but there is no good reason to 
+tax work less heavily if it generates a capital gain than if it generates employment income. 
+Whatever changes are made to CGT, a decision would have to be made on the transitional 
+arrangements for existing accrued gains (see Section 7.7). Specifically, to what extent would any 
+benefits of a narrower base and any costs of higher rates be applied to gains that have already 
+been accrued but not yet realised? Giving more generous allowances for past investments would 
+come with a cost but not improve incentives. Applying higher tax rates to past gains would be an 
+
+
+--- PDF PAGE 6 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+5 
+efficient way to raise revenue. But it may lead to objections that it is retrospective – though 
+almost all tax increases are retrospective to some degree.  
+7.2 What is CGT and who pays it?  
+What is capital gains tax? 
+CGT is a tax on the increase in the value of an asset between its acquisition and its disposal. 
+Broadly speaking, this means its sale price minus its purchase price.2 If an asset is held until 
+death, any capital gain up to that point is subject to uplift (the tax is ‘forgiven’): the deceased’s 
+estate is not liable for tax on any increase in the value of assets prior to death, and those 
+inheriting the assets are deemed to acquire them at their market value at the date of death. 
+CGT only applies to assets sold by individuals and trustees; gains made by companies are 
+included in profits and subject to corporation tax. The rest of this chapter focuses exclusively on 
+capital gains made by individuals. 
+Not all assets are subject to capital gains tax. Most notably, increases in the value of owner-
+occupied homes are exempt from CGT. There is also no CGT charged on assets held within 
+pension funds or Individual Savings Accounts (ISAs) and there are reliefs for various venture 
+capital and employee share schemes.3  
+Broadly, CGT is based on where people live when they realise capital gains. As such, people 
+who move to the UK can – in principle – be taxed on gains that accrued before they came 
+(though in practice there is a ‘grace period’ during which they are not taxed on gains made on 
+overseas assets), and people who leave the UK can avoid UK tax on gains that accrued while 
+they were here. We return to the specific details below.  
+As with income tax, there is an annual threshold below which CGT does not have to be paid. In 
+2024–25, this ‘annual exempt amount’ is £3,000 (having been reduced from £12,300 in 2022–
+23). This is subtracted from total annual capital gains before calculating the tax due.  
+ 
+2  Assets that are acquired or disposed of in other ways (e.g. gifts) are assigned a market value. Transfers to a spouse 
+or civil partner do not trigger a CGT liability: roughly speaking, the recipient is treated as if he or she were the 
+original purchaser of the asset, at the original acquisition date and price. 
+3  Schemes with CGT advantages include the Enterprise Investment Scheme, Seed Enterprise Investment Scheme 
+and social investment tax relief (see https://www.gov.uk/guidance/venture-capital-schemes-tax-relief-for-investors 
+for an introduction), share incentive plans (https://www.gov.uk/tax-employee-share-schemes/share-incentive-
+plans-sips) and employee ownership trusts (https://www.gov.uk/government/consultations/taxation-of-employee-
+ownership-trusts-and-employee-benefit-trusts). 
+
+
+--- PDF PAGE 7 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+6 
+Table 7.1. Capital gains tax rates, 2024–25 
+Source of gains 
+Basic  
+rate 
+Higher 
+rate 
+Additional 
+rate 
+Carried interest  
+18% 
+28% 
+28% 
+Residential property 
+18% 
+24% 
+24% 
+Business asset disposal relief and investors’ relief  
+10% 
+10% 
+10% 
+Other assets  
+10% 
+20% 
+20% 
+Exempt assets, and all gains unrealised at death 
+0% 
+0% 
+0% 
+Source: HMRC. 
+From April 2024, there are five CGT rate schedules depending on the source of the capital gain 
+(see Table 7.1).  
+Carried interest is the share of profits from a private equity fund that is paid (in the form of 
+capital gains) to private equity managers – it is effectively a performance fee. Carried interest 
+faces a higher rate of 28%. Business asset disposal (BAD) relief is a preferential 10% tax rate 
+that applies to capital gains on owner-managers’ shares in their companies, up to a limit of 
+£1 million of lifetime gains from owner-managed businesses. Investors’ relief similarly provides 
+a 10% CGT rate for external investors in unlisted trading companies if they hold the shares for at 
+least three years, up to a lifetime limit of £10 million. 
+Box 7.1. A potted history of capital gains tax  
+CGT was introduced in 1965 at a flat rate of 30%. Geoffrey Howe introduced indexation allowances in 
+1982, ensuring that only gains in excess of inflation were taxed. In 1988, Nigel Lawson aligned CGT rates 
+with individuals’ marginal income tax rates. In 1998, Gordon Brown scrapped indexation allowances for 
+future years and introduced taper relief, which reduced CGT by more the longer an asset was held and was 
+more generous for ‘business’ than ‘non-business’ assets. Taper relief was subsequently made more 
+generous, before then being scrapped by Alistair Darling in 2008. Mr Darling announced a return to a 
+single flat rate, set at 18%, but (following a backlash from business lobby groups) introduced 
+entrepreneurs’ relief (now BAD relief), which applied a 10% rate to the first £1 million (later increased to 
+£10 million then reduced back to £1 million) of lifetime gains for some business assets. George Osborne 
+raised the rate to 28% for higher-rate taxpayers in 2010, but then cut it (for most assets) to 20% for higher-
+rate taxpayers and 10% for basic-rate taxpayers in 2016. The rate for residential property (other than 
+owner-occupied housing) was reduced from 28% to 24% in 2024. 
+
+
+--- PDF PAGE 8 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+7 
+Residential property (except people’s main homes, which are exempt) is subject to higher rates 
+of CGT than other assets (except for carried interest). However, the biggest of those other assets 
+is company shares, which are subject to higher overall effective tax rates as a result of 
+corporation tax levied on the company profits from which shares derive their value. But, even 
+accounting for this, capital gains are taxed at significantly lower rates than labour income (Table 
+7.2 later shows this).  
+Both the rates and base of CGT have changed many times since its introduction in 1965. Box 7.1 
+provides a brief history of the main changes. For further discussion, see Adam (2008) and Seely 
+(2020). 
+What capital gains represent  
+It can be useful to distinguish, conceptually, between returns that reflect ‘normal’ and ‘excess’ 
+returns to capital. Tax has different effects (in terms of both equity and efficiency) depending on 
+whether it is levied on normal and/or excess returns. In short, a tax on the normal return will 
+create a range of distortions, including discouraging saving and investment.  
+The normal return can be thought of as the return that just compensates savers and investors for 
+the delay in consumption (without any additional compensation for risk-taking). When buying a 
+rental property or shares, for example, a person needs to expect to make at least the risk-adjusted 
+normal return in order to be willing to part with their money. 
+Returns to capital will often be higher – and sometimes substantially higher – than the normal 
+return. We will refer to all differences from the normal return as ‘excess returns’ (negative if an 
+asset yields a below-normal return). Such returns can reflect: 
+▪ 
+Luck in the outcome of risky investments. Since people generally prefer a safe bet, 
+higher-risk investments will generally only be attractive if they offer a correspondingly 
+higher expected return, or risk premium; so those who invest in risky assets can earn 
+above-normal returns on average (not just if they happen to get lucky).  
+▪ 
+Economic rents, which are a return greater than that required to make an investment 
+worthwhile. Rents generally arise from a factor being in limited supply, whether that is 
+land or another natural resource, government-induced restrictions such as taxi licences, 
+monopoly power, unique ideas, private information or brands (including those related to 
+innovators, artists, sports stars and firms).  
+▪ 
+Effort and skill. Excess returns to capital can directly reflect returns to effort (e.g. where 
+excess returns reflect skill in choosing the best investments or effort that was put into 
+renovating an asset or capturing rents) or indirectly reflect returns to work where labour 
+income is being ‘disguised’ (e.g. where a company owner-manager pays herself in 
+dividends or capital gains rather than through a salary).  
+
+
+--- PDF PAGE 9 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+8 
+In practice, capital returns (whether in the form of gains or incomes) will often reflect a mix of 
+sources. For example, some houses will have amassed large capital gains both as a result of 
+being located in an area that became more attractive and as a result of substantial renovation. 
+Some business assets will be valuable because their owners were highly skilled and put a lot of 
+effort into building a business, and because the business had a monopoly, and because the 
+owners had some good fortune. Also note that some business owners make no meaningful 
+capital investments at all, such that capital gains can entirely reflect ‘disguised’ labour income.  
+Capital gains will reflect these underlying factors, as well as what share of a return to capital is 
+realised or taken in the form of gains versus income.  
+Aggregate gains and revenue 
+In 2022–23, 370,000 taxpayers realised £81 billion of taxable gains.4 Taxable gains were lower 
+than in 2021–22, but have been rising over time. Taxable gains as a share of national income  
+Figure 7.1. Capital gains, taxpayers and revenue  
+ 
+Note: ‘Amount of gains’ refers to taxable gains measured after the deduction of losses plus attributed gains 
+but before deduction of the annual exempt amount or of taper relief, where relevant. Individuals and trusts 
+are included in all figures. Dashed line is a forecast.  
+Source: Revenue and GDP measures are from OBR Public Finances Databank, August 2024. ‘Total 
+taxpayers’ is from table 1 of HMRC capital gains tax statistics, August 2024. ‘Amount of gains’ is from 
+Advani and Summers (2020). 
+ 
+4  Throughout, taxable gains refer to the gains of CGT taxpayers plus the gains of the small number of people who 
+file a CGT return despite not being liable for any CGT. They are measured before the deduction of the annual 
+exempt amount (and, in the relevant years, before taper relief).  
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+0.0%
+0.5%
+1.0%
+1.5%
+2.0%
+2.5%
+3.0%
+3.5%
+4.0%
+4.5%
+5.0%
+1999–00
+2001–02
+2003–04
+2005–06
+2007–08
+2009–10
+2011–12
+2013–14
+2015–16
+2017–18
+2019–20
+2021–22
+2023–24
+2025–26
+2027–28
+CGT payers (thousands)
+Share of national income
+CGT revenue (left axis) 
+Amount of gains (left axis) 
+Taxpayers (right axis) 
+
+
+--- PDF PAGE 10 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+9 
+have risen from around 1% of national income in the early 2000s to over 3% (see Figure 7.1). 
+The large spike in gains in 2007–08 occurred as a result of the government preannouncing the 
+removal of taper relief and (for some) an increase in the CGT rate, which gave asset holders an 
+incentive to sell before the policy change was enacted (Seely, 2010a).  
+CGT raises around £15 billion per year (less than 2% of total tax revenue). As Figure 7.1 shows, 
+CGT revenue – which is affected both by underlying gains and by tax policy choices – has risen 
+over time (as a share of national income) and is forecast by the Office for Budget Responsibility 
+(OBR) to rise further. 
+Source and distribution of capital gains  
+Who gets capital gains  
+Taxable capital gains are very concentrated among a small number of people. In 2022–23, there 
+were 350,000 individuals – 0.65% of the adult population – realising taxable gains.5 This is 
+around 100 times fewer than the number of income tax payers (34.6 million) in that year. Less 
+than 3% of UK adults paid CGT at any point over the 10 years from 2010–11 to 2019–20 
+(Advani, Lonsdale and Summers, 2024a).  
+Around 60% of individuals who filed a CGT return in 2022–23 realised gains of less than 
+£50,000, and accounted for just 7% of gains and 4% of the CGT revenue.6 3% of CGT taxpayers 
+realised gains of more than £1 million and this group accounted for 62% of gains and 67% of the 
+CGT revenue. The average gain among this group of 12,000 people – who represent 0.02% of 
+the adult population – was £4 million.  
+For most of the people receiving taxable capital gains, gains are ‘lumpy’ – they accrue over 
+many years and are realised in a single year. The Office of Tax Simplification (2020, para. 1.18) 
+reports that 72% of taxpayers who reported capital gains in the 11 years from 2007–08 to 2017–
+18 did so in only one of those years.  
+Advani, Lonsdale and Summers (2024a) find that half (49.1%) of individuals who paid CGT in 
+2019–20 did not receive gains at any point over the preceding decade. However, many of the 
+other half received gains regularly: almost one in eight (11.6%) individuals received gains at 
+least five times, while a small minority (0.6%) received gains in all 10 years. Averaging across 
+years when gains were realised, the mean capital gain was over twice (2.3 times) as large for 
+individuals who realised gains every year (£441,000) as for one-off gainers (£194,000). 
+ 
+5  In addition, there were 20,000 trusts realising gains – bringing the total to 370,000 taxpayers as cited above. Source 
+for numbers in this paragraph: table 2 of HMRC capital gains tax statistics August 2024. 
+6  Figures in this paragraph refer to gains and CGT revenue from individuals (i.e. excluding trusts). 
+
+
+--- PDF PAGE 11 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+10 
+Taxable capital gains flow disproportionately to people who are already in the top 1% of the 
+income distribution (Advani and Summers, 2020; Delestre et al., 2022). In contrast, untaxed 
+capital gains are more equally distributed. This is unsurprising given that owner-occupied 
+housing and investments held in ISAs are exempt from CGT.  
+Advani, Lonsdale and Summers (2024a) find that taxable gains are disproportionately 
+concentrated amongst certain demographic groups. Although men receive a disproportionate 
+share of overall income (66%), their share of gains is even larger (74%). Taxable gains are also 
+weighted towards the middle of the age distribution. While around half (49%) of individuals 
+with gains are over 60, most of the value of gains (56%) goes to taxpayers aged 40–59. There are 
+sharp geographical divides, with most gains in London and the South East. The constituency of 
+Kensington has a larger share of total gains (3.1%) than the entirety of Wales (2.0%). 
+Capital gains by type of asset  
+Figure 7.2 shows the distribution of capital gains by asset type, based on both the number of 
+disposals of different assets (green) and the value of the gains received (yellow).  
+Figure 7.2. Capital gains by asset type, 2021–22 
+ 
+Note: Gains are measured before the deduction of the annual exempt amount. ‘Other financial assets’ 
+includes assets such as UK and non-UK listed and unlisted securities, unit trusts and loan notes. ‘Other 
+non-financial assets’ includes intangible assets such as goodwill and tangible assets such as fine works of 
+art.  
+Source: Tables 7.2 and 7.5 of HMRC capital gains tax statistics August 2024. 
+0%
+10%
+20%
+30%
+40%
+50%
+60%
+Share of disposals
+Share of gains
+
+
+--- PDF PAGE 12 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+11 
+Most (85%) disposals were of financial assets. Roughly similar shares (25%) of disposals were 
+of listed shares (those publicly traded on a stock market) and of unlisted shares (in private 
+businesses).  
+Looking instead by value of gains, a very different picture emerges. Around half of the value of 
+gains related to unlisted shares. The average gain realised on unlisted shares (including those 
+eligible for BAD relief) was more than £120,000. By contrast, on listed shares and residential 
+property, the averages are ‘only’ £18,000 and £61,000 respectively.7  
+‘Carried interest’, which is received by private equity executives and comprises mostly gains in 
+unlisted shares, is received by only around 2,000 individuals (fewer than 1% of CGT payers) but 
+accounts for just over 4% of the value of gains, with a mean gain of £1,281,000 per individual in 
+2019–20 (Advani, Lonsdale and Summers, 2024a). 
+Nature of private business gains  
+Private businesses span a huge range of industries and scales. They cover everything from 
+chemical manufacturer Ineos, with annual profit in 2023 of £1.4 billion and 26,000 employees, 
+to micro-businesses with a sole employee-shareholder, working, for example, as a consultant. 
+While the former makes substantial investments in new capital annually, a consultant setting up 
+a company likely needs little capital outlay and may have no intention of ever employing anyone 
+else. The tax treatment of capital gains relative to earned income, described further below, 
+encourages the setting-up of such low-capital businesses. 
+Advani et al. (2024) find that over two-thirds of the gains on unlisted shares go to individuals 
+who are company directors, indicating that they are actively working in the business. Many 
+gains reflect minimal initial capital investment by the individual receiving the gain: half of all 
+disposals of unlisted shares yield gains equating to an average annual return of over 100%.  
+Combining the carried interest of private equity managers with gains that were eligible for 
+entrepreneurs’ relief in 2019–20,8 a conservative estimate is that around half of all taxable 
+capital gains are closely linked to people’s occupations (Corlett, Advani and Summers, 2020). 
+That is to say that, while taxed as capital gains, these incomes have many of the characteristics 
+of labour earnings. 
+ 
+7  See table 7 of HMRC capital gains tax statistics August 2024.  
+8  At the time, entrepreneurs’ relief was capped at a lifetime limit of £10 million. This was reduced to £1 million 
+from March 2020. Entrepreneurs’ relief was subsequently renamed business asset disposal relief.  
+
+
+--- PDF PAGE 13 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+12 
+7.3 Problems with the design of CGT  
+A good rule of thumb is that the tax system should aim to be neutral: that is, to treat similar 
+activities similarly.9 Our starting point is that taxes should not, without a strong rationale, distort 
+commercial decisions about who holds assets for how long, which assets are chosen and whether 
+remuneration is taken as earnings, dividends or capital gains. Nor should the tax system 
+discourage saving and investment. Yet the current design of capital gains tax distorts all these 
+margins. We briefly summarise the problems that causes below; in Section 7.4, we discuss 
+whether and how the tax system should actively encourage entrepreneurship. We note that the 
+exemption of main homes from CGT (formally principal private residence relief) is a costly 
+relief and creates distortions. Removing the relief would be difficult. The Labour Party has ruled 
+out doing this and we do not discuss the taxation of main homes here.  
+Ultimately, the fact that the design of CGT discourages some investments and distorts a range of 
+decisions is a source of both economic inefficiency and unfairness.  
+Economic inefficiency means that, for a given amount of revenue raised, welfare – i.e. how well 
+off people are in a broad sense – is lower than it would otherwise be (if the inefficiencies were 
+smaller). The economic inefficiencies can directly manifest in lower economic output. For 
+example, reduced rates of investment and skewed patterns of capital allocation will mean that, 
+for a given level of revenue, productivity is lower, with this resulting in lower output and 
+incomes.  
+Unfairness arises because aspects of CGT arbitrarily favour one action over another and thereby 
+penalise otherwise-equivalent people who behave in the tax-disadvantaged way. To give one 
+example among many, consider two people who have made similar investments in their own 
+company and generated similar returns. One takes the return as a flow of dividends (while a 
+higher-rate taxpayer). The other takes the return as capital gains when the company is sold, using 
+another source of income to finance their spending before the point of sale. The first person 
+faces a large and unfair tax penalty relative to the second.  
+Problems caused by the design of the tax base  
+Many of the problems created by CGT stem from the design of the tax base – the definition of 
+what is subject to tax. In summary, the design of the tax base penalises saving, investment and 
+risk-taking and leads to a misallocation of capital. For example, it can mean that capital is 
+ 
+9  Tax systems should aim to achieve revenue-raising and distributional goals as simply as possible, as equitably as 
+possible, and at the lowest possible cost to taxpayers. With simplicity, equity and economic efficiency in mind, a 
+good rule of thumb is that a well-designed tax system should strive to be neutral. For further discussion of how 
+neutrality relates to the principles that underlie a well-designed tax system, see Mirrlees et al. (2011, ch. 2). 
+
+
+--- PDF PAGE 14 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+13 
+directed away from its most productive use. This creates economic inefficiency and unfairness. 
+The problems are worse at higher rates of CGT. In fact, the efficiency costs created by a 
+distorted tax base rise more than in proportion to tax rates, because low tax rates only change 
+behaviour when the decision is marginal anyway (e.g. when an investment was only just 
+worthwhile); higher tax rates discourage not only more activities, but also more valuable 
+activities. But while lower rates of CGT lessen the problems caused by the base, they cannot fix 
+them. In Section 7.5, we discuss how tax base reforms could directly address the problems 
+described here. 
+CGT discourages saving and investment  
+CGT discourages saving and investment in taxed assets. The tax reduces the return the saver can 
+expect to receive on their investment, so some investments that would have been worthwhile 
+in the absence of taxation are made unprofitable by the tax.  
+Suppose I require a return of 4.5% to persuade me to invest – for example, to put more money 
+into my own company or to buy shares or a property. A 20% tax that reduces the return from 5% 
+to 4% will mean an investment I would otherwise have undertaken will now not go ahead. This 
+is undesirable: too little investment will be undertaken if otherwise profitable investments are 
+made unprofitable by tax. And if an individual would rather save his or her money than spend it 
+now, it is difficult to see why taxes should penalise this choice. 
+This is not an inescapable feature of CGT. As we discuss in Section 7.5, it would be possible to 
+have a tax system that did not discourage marginal investments (those that generate only a 
+‘normal’ return and whose viability would be threatened by tax) but continued to raise revenue 
+from investments that earn a high (‘excess’) return – which would continue to be viable even 
+with a tax liability – and from capital gains that represent a return to effort and skill (and luck) 
+rather than capital invested. 
+With the current tax base, however, CGT does discourage saving and investment. Worse, it 
+discourages different investments to different degrees. The magnitude of the disincentive to save 
+depends on the tax rate (or, more precisely, what the tax rate is expected to be when the gain is 
+realised) – which depends on the type of asset and on how much of the return takes the form of a 
+capital gain rather than some sort of income. It also depends on how long the asset is held and on 
+the risk of making a loss that cannot be offset immediately – factors we discuss below. And it 
+depends on the rate of inflation: the disincentive is greater when inflation is expected to be 
+
+
+--- PDF PAGE 15 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+14 
+higher.10 (This was the motivation behind the system of inflation indexation that existed in some 
+form between 1982 and 2008.)  
+Lock-in effects disincentivise capital reallocation 
+Capital gains tax creates a ‘lock-in’ effect. If someone has an asset that has risen in value, there 
+is an incentive to hold on to the same asset, rather than selling it (triggering a tax liability) and 
+reinvesting the money in another taxed asset. In effect, if a person sells an asset after one year, 
+buys another one and then sells it after another year, the value of the tax payments would be 
+higher than if they held a single asset for two years. This disincentive to reallocate capital to a 
+different asset locks people into their existing investments.11 
+In that sense, CGT acts as a tax on transactions (like stamp duties) and leads to misallocation of 
+capital: I will continue to hold on to my existing asset even if someone else could use the asset 
+more productively and I could use my capital more productively elsewhere. The tax system 
+includes reliefs (notably business asset rollover relief and reinvestment relief) specifically 
+intended to mitigate the lock-in effect in some cases, but those are incomplete.12  
+The lock-in effect is exacerbated by the fact that capital gains unrealised when someone dies are 
+not taxed at all: the deceased’s estate is not liable for CGT on any increase in the asset’s value 
+prior to death, and those inheriting the assets are deemed (for future CGT purposes) to acquire 
+them for their market value at the time of death, not the original purchase price. This creates a 
+big incentive to hold on to assets that have risen in value and bequeath them – even if it would 
+be more profitable to sell them and use the proceeds in some other way before death (at which 
+point other assets, including the proceeds from the sale of the original assets, could be passed on 
+instead) and even if it would be preferable to pass on the assets (or the proceeds from selling 
+them) immediately. 
+ 
+10  Even at low rates of inflation, a tax on nominal capital gains corresponds to a much higher tax rate on real gains: 
+for example, if inflation is 2%, a 20% tax rate on a 5% nominal return corresponds to a 34% tax rate on the real 
+return. 
+11  Note that the existence of CGT does not create an incentive to hold on to an existing asset if the intention is to 
+consume the proceeds of sale (or reinvest them in a tax-free form such as an ISA).  
+12  Under business asset rollover relief, self-employed people who sell certain types of assets used in their business 
+and use the proceeds to buy another asset for use in their business can defer paying CGT on the original asset until 
+they come to dispose of the replacement asset. This can create neutrality between holding on to a qualifying asset 
+and replacing it with another. However, it does not apply to all assets – for example, to selling or buying shares; 
+and as a result it introduces new distortions between qualifying and non-qualifying assets. A second, similar relief 
+to mitigate the lock-in effect in some cases is reinvestment relief, under which CGT on any asset can be deferred if 
+the seller reinvests the gain through the Enterprise Investment Scheme or social investment tax relief up to three 
+years after (or one year before) selling the asset. Again, this is clearly limited in scope and brings its own problems. 
+
+
+--- PDF PAGE 16 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+15 
+Incomplete loss offsets discourage risk-taking  
+Much discussion of the effect of tax on risk-taking focuses on the rate of tax on successful 
+projects: higher taxes (on gains or income) reduce the rewards to success. But what matters 
+when considering risky projects – that is, projects where the outcome is uncertain – is the 
+treatment of good outcomes relative to bad ones. Risk-taking is discouraged by the tax system 
+not as a result of the level of tax on income and gains per se, but because of the asymmetric 
+treatment of upside and downside risk. In effect, the government takes a share in the fruits of 
+success but does not take an equal share in the pain of failure. 
+The current tax system does not treat profits/gains and losses symmetrically. When people make 
+a loss, they are able to ‘offset’ the loss against other gains such that tax is then levied on the net 
+gain. But loss offsets are incomplete. Losses often cannot be relieved immediately; they can be 
+carried forward to offset in future, but the delay reduces the value of the relief; and sometimes 
+the losses can never be offset at all. As a result, the system discourages risk-taking. Other things 
+equal, that is harmful. 
+Problems caused by differential tax rates  
+There are large differences in the overall tax rates (i.e. accounting for all levels of tax) levied on 
+capital gains on different types of assets and on gains relative to income (these are shown in 
+Table 7.2 later) – although the lack of indexation for inflation makes comparing effective tax 
+rates on income received now and capital gains realised in the future more difficult. 
+Gains on different types of assets are taxed at different rates. This skews the allocation of 
+investments (away from what is the commercially best investment towards tax-favoured 
+investments) and penalises people who invest in more heavily taxed assets.  
+Capital gains are (almost always) taxed at lower rates than capital income, and both 
+capital gains and capital income are (almost always) taxed at lower rates than earnings 
+from employment or self-employment. This creates a bias towards taking any rewards in the 
+form of gains rather than income and towards putting effort into activities that generate gains 
+rather than income.  
+The incentives created and problems caused by differential rates can be clearly seen for business 
+owner-managers. Tax differentials provide an incentive to work for your own business (through 
+self-employment or as a company owner-manager) rather than as someone else’s employee, 
+even when that is not the most productive choice. They also provide a strong incentive to 
+undertake investments that will result in capital gains rather than income and, where possible, to 
+realise the returns to labour as capital income or gains.  
+
+
+--- PDF PAGE 17 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+16 
+Miller, Pope and Smith (2024) use UK tax records to show that company owner-managers are 
+very responsive to tax incentives. Company owner-managers can choose when and how to take 
+income out of their companies. They can pay themselves a salary, take dividends or take capital 
+gains. Most company owner-managers pay themselves a small salary (equal to the point at which 
+personal taxes become payable) and take any remaining remuneration in the form of dividends 
+or capital gains. Those generating income above the higher-rate threshold retain significant 
+amounts in their company over long periods. Much of this is ultimately withdrawn in the form of 
+capital gains and subject to BAD relief.13 The tax savings can be substantial. For example, 
+among owner-managers claiming (what was then) entrepreneurs’ relief in 2015, average capital 
+gains were £500,000. This delivers a tax saving of £75,000 relative to if the income had been 
+taxed at 25% (the effective higher rate of tax on dividends in 2015) rather than 10%.14 
+These distortions are inefficient. One implication is that people will not always be making the 
+most productive choices over, for example, what type of work to do or which investments to 
+make. They can also reduce people’s well-being by, for example, leading them to spend their 
+money later than they would absent the tax incentives.  
+In principle, the distortions created by BAD relief specifically could lead to a misallocation of 
+capital. However, Miller, Pope and Smith (2024) find no evidence that tax-motivated earnings 
+retention affects investment within the company: the retained earnings are kept as cash or other 
+financial assets – for example, shares in other companies – rather than used to buy assets for use 
+in the business. Preferential rates of capital gains tax for business assets therefore lead to more 
+money held in companies but not to any great misallocation of the capital owned by company 
+owner-managers. This also means that preferential rates are not achieving the commonly stated 
+policy goal of increasing owner-managers’ investment in assets for use in their businesses (we 
+return to this in Section 7.4). 
+Alongside the economic inefficiencies caused by differential tax rates, there is clear unfairness: 
+there is effectively a tax penalty on those people who find it harder to arrange their affairs to take 
+advantage of preferential tax rates.  
+International issues 
+There are differences in the taxation of capital gains across countries which can affect people’s 
+location decisions. The UK is currently around the middle of the pack for headline CGT rates 
+ 
+13  Retained earnings boost the value of a company, such that when a company owner-manager sells or liquidates their 
+company, the retained earnings are taxed as capital gains. It is usually impractical for company owner-managers to 
+sell shares a bit at a time in order to extract money gradually in a way that qualifies for BAD relief. 
+14  Note that this will typically reflect gains built up over the lifetime of a company and realised in a single year, so the 
+tax saving will be a one-off for that person, not an annual saving.  
+
+
+--- PDF PAGE 18 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+17 
+compared with other major economies, although there is huge variation in approaches. Like the 
+UK, the US currently taxes long-term gains on most assets at a top rate of 20%. The top rates in 
+France (34%), Ireland (33%), Spain (28%), Germany (26%) and Italy (26%) are somewhat 
+higher than the UK’s, and some countries – such as Australia and Denmark – tax capital gains at 
+full income tax rates. However, several countries do not tax capital gains at all, including 
+Switzerland and New Zealand, as well as more typical tax haven jurisdictions. Additionally, 
+some countries such as Ireland and Italy do not tax capital gains on the foreign assets of new 
+arrivals. 
+Capital gains are generally taxed on a ‘residence’ basis, meaning that UK residents must pay UK 
+CGT on their worldwide gains, irrespective of where the assets are located.15 Non-residents only 
+pay UK CGT on gains from UK land and property. Consequently, the main impact of the UK’s 
+CGT regime, from an international perspective, concerns the movement of people (into or out of 
+UK residence); investment in UK assets is affected only insofar as that is linked to whether 
+people live in the UK. 
+Specifically, the UK currently charges CGT on disposals that an individual makes while they are 
+UK-resident. This means that if someone accrues capital gains while living in the UK but then 
+leaves the UK before selling the asset, they pay no UK CGT (unless the gains are from UK land 
+and property or the individual moves back to the UK within six years, in which case they are taxed 
+on the gains they realised while abroad). This creates an incentive for those who have accrued 
+large gains to move to a lower-tax country – to retire abroad, for example – before realising them. 
+The flip side is that individuals who move to the UK are potentially liable for UK CGT on 
+capital gains that they accrued prior to arrival, if they subsequently dispose of these assets while 
+UK-resident – unless the gains are on foreign assets and they dispose of them within the ‘grace 
+period’ they get after moving to the UK (four years under the new regime being introduced from 
+April 2025, generally much longer under the ‘non-dom’ regime that is replacing). That creates a 
+disincentive to move to the UK from a lower-tax country (and an incentive to move to the UK 
+from a higher-tax country). 
+7.4 Support for entrepreneurship  
+We describe in the next section how to reform the tax base so that it is neutral with respect to a 
+range of decisions, including investment. Such a tax base would mean that CGT did not 
+discourage investment. But in policy discussion, arguments for preferential CGT rates are often 
+ 
+15  An exception is the UK’s ‘non-dom’ regime (soon to be replaced by a new four-year regime for foreign income 
+and gains) under which new arrivals in the UK are effectively exempted from UK CGT on their foreign gains for 
+an initial period, despite having UK residence. 
+
+
+--- PDF PAGE 19 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+18 
+predicated on the assumption that the government is not seeking neutrality: it is seeking to 
+actively encourage investment and entrepreneurship. For example, at the point of announcing 
+entrepreneurs’ relief, Alistair Darling (then Chancellor) said: ‘I am determined that we do as 
+much as possible to encourage entrepreneurship’.16 In this section, we therefore discuss whether 
+CGT should be used to support entrepreneurship.  
+It is important to recognise that the difficulty and risk associated with entrepreneurship do not 
+themselves justify favourable tax treatment. If the market rewards for particularly difficult or 
+risky activities are not sufficiently high to compensate for the additional difficulty and risk 
+involved, it suggests that the activities are not worth undertaking: there is no reason for the 
+government to give them special tax breaks. A justification for government intervention arises 
+only if markets fail to provide the appropriate incentives for entrepreneurship. 
+Markets do sometimes fail, and there is a case in principle for encouraging some types of 
+business activity. For example, some businesses may be particularly innovative but underinvest 
+relative to the efficient level because part of the return to investment flows to other firms which 
+can learn from the new products or processes (i.e. there are ‘externalities’). There may also be 
+barriers to entry or obstacles to growth of small businesses, such that the market generates too 
+little activity in the small business sector. 
+But preferential rates of CGT are poorly targeted at market failures in two ways. 
+First, the incentives apply much more widely than where there is a rationale for government to 
+try to increase the level of activity. CGT rates are lower than tax rates on employment for 
+everyone, not only in those cases where there may be market failures. There is no clear reason to 
+want to encourage investment in, for example, artwork or second homes. Even BAD relief, 
+which is somewhat targeted, can be accessed by anyone operating a business, not only by those 
+making significant investment or those doing something entrepreneurial. As a result, even 
+though lower CGT rates may boost some of the activities that have externalities, at the same 
+time they create a series of other unintended side effects. These include, for example, more 
+people keeping income in their companies for much longer than they otherwise would.  
+Second, for those firms generating externalities, lower tax rates will often have little effect on 
+incentives to invest. The benefit of lower tax rates accrues disproportionately to those who make 
+high private returns on their activities; those are likely to be viable even without support. It is 
+much more effective to target activities that are only borderline-viable and their specific critical 
+features (such as investment and finance costs) where tax can make a difference to whether 
+projects go ahead. In short, it is more effective to use the tax base.  
+ 
+16  For discussion of the introduction of entrepreneurs’ relief and the source of the quote, see Seely (2010b). 
+
+
+--- PDF PAGE 20 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+19 
+7.5 How to fix CGT  
+There is a strong case for reforming the structure of CGT. This could be done in a revenue-
+neutral way or to raise more revenue: however much revenue the government wishes to raise, it 
+could be raised in a fairer and less damaging way.  
+To recap: the design of the CGT base creates a range of problems, including disincentives to 
+save and invest and incentives to hold on to assets for longer than would otherwise be desirable. 
+These problems would be worse at higher tax rates. But keeping preferential rates of CGT 
+(relative to tax on income) and differential rates across assets also creates various inefficiencies 
+and unfairness. Moreover, low rates of CGT are not well targeted at fixing the problems caused 
+by the tax base. Nor are they well targeted at incentivising entrepreneurship. Any change in CGT 
+rates would, given the current tax base, come with trade-offs – some problems would be made 
+better and some worse.  
+We propose the following big-picture solution to fixing the design flaws in CGT: the tax base 
+should be changed so that there are full deductions for any amounts of money saved or invested. 
+This is equivalent to saying that the tax base should be reformed so that the normal return to 
+saving and investment (see Section 7.2) is not taxed. In addition, fixing the tax base would 
+require being more generous in the treatment of losses and removing uplift of CGT at death. 
+With a reformed tax base in place, tax rates could be increased with little concern about 
+weakening incentives to invest and take risks. Ultimately, we advocate that overall tax rates – 
+i.e. including all layers of tax – be aligned across all forms of income and gains in order to 
+remove the problems caused by differential rates. This solution was originally set out in Mirrlees 
+et al. (2011). 
+In this section, we summarise the components of this big-picture reform package. In Section 7.6, 
+we discuss the types of trade-offs that arise if only some parts of the full solution are adopted. In 
+Section 7.7, we lay out the choices that would inevitably have to be made when transitioning to a 
+new system.  
+Components of reform  
+More generous deductions for asset purchase costs 
+Broadly speaking, the way to stop CGT disincentivising saving and investment (in a domestic 
+context) is to give a full deduction for the amount saved – equivalently, to remove the normal 
+return from tax and tax only excess returns (as defined in Section 7.2). There are three ways to 
+achieve this outcome: 
+
+
+--- PDF PAGE 21 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+20 
+▪ 
+Up-front deductions: allow the purchase cost of an asset to be tax-deductible at the time of 
+purchase, rather than only when the asset is later sold (a ‘cash-flow’ tax treatment);  
+▪ 
+A stream of annual deductions: give a stream of annual tax allowances that represent the 
+normal return on the purchase cost (a ‘rate-of-return allowance’); 
+▪ 
+Deductions at the point of sale: step up the purchase cost with an interest rate (the normal 
+rate of return) – rather than an inflation rate as used in the past – when deducting it from an 
+asset’s sale price to calculate the taxable gain (‘indexing for an interest rate’).  
+Here we briefly sketch out these three approaches. The treatment of losses is important for all 
+three approaches and we return to that below. For a detailed discussion, including of caveats and 
+possible reasons to choose one approach over the others, and for worked examples of the 
+different approaches, see Adam and Miller (2021).17 
+The cash-flow approach. Under this approach, an individual can deduct the purchase cost of an 
+asset from their income at the point of purchase. When they sell the asset, tax is levied on the 
+full proceeds of sale, without deducting the purchase cost (since that was deducted up front). 
+With a tax rate of 20%, say, the government effectively bears 20% of the cost of the investment 
+and takes 20% of the proceeds. If the value of the proceeds exceeds the cost of the investment, 
+then 80% of the proceeds will exceed 80% of the cost, so any investment that is profitable before 
+tax will be profitable after tax: the tax does not discourage investment. But the government gets 
+20% of any return in excess of what is required to make the investment worthwhile. 
+The cash-flow approach is akin to the income tax treatment of pensions (but without the 
+restrictions on when money can be accessed or the ability to take 25% of withdrawals from a 
+pension tax-free): contributions attract tax relief at a person’s marginal tax rate, while income 
+received from a pension is taxable. The cash-flow approach is also already in place for the self-
+employed when they purchase plant and machinery that qualify for the annual investment 
+allowance: the cost of investment is fully deductible up front and any money received from the 
+business – whether from working with the equipment or from selling it – is taxable. Adam and 
+Miller (2021) describe in detail how a new cash-flow vehicle (which they call a Personal 
+Shareholding Account) could be used to allow people to buy new equity (in their own or others’ 
+companies) in a tax-neutral way. 
+The rate-of-return allowance. This approach would look a lot like the current capital gains tax, 
+in the sense that there was no full up-front deduction for any amounts saved or invested and tax 
+was levied on the nominal capital gain at the point the gain was realised. The change from the 
+ 
+17  The neutrality properties of the approaches we summarise here assume that individuals face a constant tax rate, so 
+that deductions are given at the same rate as gains or income are taxed. Properties of the tax are more complicated 
+without constant tax rates. Adam and Miller (2021) discuss. 
+
+
+--- PDF PAGE 22 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+21 
+current system would be to introduce a new annual allowance equal to the normal return on the 
+purchase cost of the asset.18 This is referred to as a rate-of-return allowance (RRA).  
+The logic of an RRA is straightforward. To avoid discouraging investment, the normal rate of 
+return – the return required to persuade someone to undertake extra investment – must not be 
+taxed; an RRA is an explicit allowance, each year, for the normal return, ensuring it is deductible 
+from taxable income or gains. If exactly the normal return is earned, no tax would be levied. Any 
+excess returns would be taxed in full.19 In practice, the normal return (the risk-free interest rate 
+used to calculate the annual allowance) could be measured as the nominal interest rate on 
+medium-term government bonds.  
+Indexing for an interest rate. Rather than providing an annual RRA, an alternative way the 
+government could ensure that no tax was paid on the normal return would be to adjust the 
+deduction that is given when an asset is sold. Specifically, the taxable capital gain could be 
+calculated as the sale price minus the purchase price indexed (or stepped up) with the (normal) 
+interest rate over the period the asset was held.20 This is the third way to stop CGT from 
+disincentivising saving and investment: levy it on an asset’s sale price minus its purchase-price-
+plus-interest, not just its nominal purchase price. This would be a tax on excess returns. 
+This approach is somewhat familiar in the UK because indexation for inflation was part of CGT 
+(in some form) from 1982 until 2008, and continued in corporation tax until 2017. The 
+government could reintroduce indexation of capital gains, but for an interest rate (the normal rate 
+of return) rather than an inflation rate.21  
+ 
+18  This does not require using a different rate of return for each person depending on their propensity to save: the 
+normal return is the same for everyone. This might seem surprising, given that people clearly differ in many ways, 
+including in their preferences for spending their money today or saving it for the future. The explanation lies in the 
+difference between people’s willingness to save overall and their willingness to save an extra £1. The former will 
+vary, but (under textbook assumptions) the latter should not. 
+19  If the ‘normal’ rate of return is set correctly, the stream of annual allowances under an RRA will have the same 
+present value as the initial investment cost – and therefore of a 100% up-front allowance in a cash-flow tax. That 
+is, in both approaches, 100% of savings or investments are deducted from the tax base in present-value terms (i.e. 
+from the point of view of an investor evaluating the worth of the allowances today), but the RRA spreads the same 
+present value of deductions over a number of years rather than giving them immediately. 
+20  This would be the outcome under an RRA if the annual allowances, rather than being deducted each year, were 
+rolled up with interest and added to the deductible acquisition cost at the point of disposal. 
+21  If this were done, it would be even more important to ensure that capital losses could be fully offset, since losses 
+relative to such an indexed base cost would be bigger and more common than the nominal losses potentially 
+eligible for relief under the current system. 
+
+
+--- PDF PAGE 23 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+22 
+Importantly, the reform to the tax base we are advocating – regardless of which of the three 
+approaches was used to implement it – would bring a range of benefits, including removing the 
+disincentive to invest, removing the lock-in effect and avoiding biases between assets.22  
+Improve loss relief 
+In order to minimise the extent to which the tax system discourages risk-taking, taxes on capital 
+gains (above normal returns to investment) should ideally be matched by equally generous relief 
+for those making ‘losses’ (including below-normal returns).23  
+At present, there are various restrictions on how losses can be offset. Capital losses can usually 
+only be offset against capital gains, even in the same year, and can be carried forward 
+indefinitely but only carried back in very limited circumstances. 
+There are various ways that loss relief could be made more generous. Broadly speaking, these 
+include: allowing carry-back as well as carry-forward; carrying losses forward (and back) with 
+interest to maintain their present value; and letting people offset their capital losses against 
+income rather than capital gains in a wider range of circumstances (although losses should never 
+be offset at a higher rate than corresponding income/gains would be taxed). There are genuine 
+concerns about the use of artificial losses for tax evasion and avoidance. Care is therefore 
+required in changing the treatment of losses. But we are confident that some improvements are 
+possible.24  
+Abolish uplift at death  
+Currently, if someone keeps an asset until they die then no capital gains tax is levied on any rise 
+in its value from when it was acquired until death. This uplift of CGT at death should be 
+abolished.  
+Uplift at death provides a huge incentive for people to hold on to assets that have risen in value, 
+even if, in the absence of tax considerations, they would prefer to sell them and use the proceeds 
+in some other way, and even if someone else could use the assets more productively. And the 
+ability to escape tax in this way provides a big incentive to set up a business and roll as much 
+money as possible into it, rather than working as an employee. These incentives would be 
+ 
+22  The three approaches we describe are all equivalent in present-value terms: all leave the normal return untaxed but 
+tax excess returns. The interest deduction in the form of an annual RRA or a stepped-up purchase cost can be 
+thought of as compensation for deferring the deduction of purchase costs from the point of acquisition (under the 
+cash-flow approach) to the point of disposal (under the others). 
+23  The symmetric treatment of profits and losses can be seen as the government taking an equal share in both the 
+upside and the downside of a risky project. If we fail to treat losses in an equivalent way to profits/gains then the 
+expected tax on (normal) returns to risky projects would be positive, undermining neutrality both over the level of 
+investment and between more and less risky activities. 
+24  See Adam and Miller (2021) for more detailed discussion. 
+
+
+--- PDF PAGE 24 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+23 
+exacerbated if tax rates on capital gains or income were increased. Abolishing uplift at death 
+would therefore reduce some distortions in its own right, but it would also remove one of the 
+downsides of moving towards alignment of tax rates across different forms of gains and income. 
+Removing uplift at death should be prioritised as one of the first steps taken towards the long-
+run ideal we set out above.25 
+There are two ways to remove CGT uplift at death. Those inheriting assets could be deemed to 
+acquire them at their original acquisition cost, rather than at market value at the date of death. 
+They would therefore pay CGT on the full gain when the asset was sold. Alternatively, an asset 
+could be treated as if it had been sold at the point of death, such that the deceased’s estate was 
+liable for CGT at the point of death and the individual inheriting the asset would be treated as if 
+they had immediately bought the asset at its market value on the date of inheritance (‘deemed 
+realisation’).  
+These reforms would mean that CGT would sometimes be payable on top of inheritance tax 
+(and, under the second option, at the same time). That is not a flaw. CGT and inheritance tax are 
+serving different purposes – inheritance tax is not a substitute for CGT. On death, if an asset has 
+accrued gains, it is appropriate to tax these just as much as if the asset were sold the day before 
+death, when it would currently be taxed.  
+Align rates  
+Economic inefficiency and unfairness are caused both by different types of assets’ facing 
+different CGT rates and by CGT rates’ (almost always) being lower than tax rates on income, 
+including dividends for those in the higher- or additional-rate tax bands and employment income.  
+Ultimately, we advocate aligning marginal tax rates across all forms of gains and income, while 
+making changes to the tax base (as outlined above).26 That is, we recommend aligning rates not 
+only within CGT (across assets) but across capital gains, capital incomes and employment 
+income.27  
+When looking to align rates, or move towards that goal, it is important to consider all layers of 
+tax. It is only by aligning overall rates – including all layers of tax – that a level playing field can 
+be created. Within CGT, this means accounting for corporation tax such that the CGT rates on  
+ 
+25 The Office of Tax Simplification (2020) also recommended that the government consider removing uplift at death. 
+It highlighted the practical downside that this would increase the number of times difficulties arose because the 
+original acquisition cost by the deceased could not be established (that problem can already arise now, but less 
+often) and suggested some possible responses. 
+26  Here we have discussed changes to the personal tax base; we recommend equivalent changes at the corporate level.  
+27  This would need to include reform of venture capital schemes and employee share schemes (including employee 
+ownership trusts) – if they remain unchanged while CGT rates were increased, there could be a large increase in 
+their use.  
+
+
+--- PDF PAGE 25 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+24 
+Table 7.2. Combined marginal tax rates by income form, 2024–25  
+Source of gains  
+Basic rate 
+Higher rate 
+Additional rate 
+Carried interest  
+18% 
+28% 
+28% 
+Residential property 
+18% 
+24% 
+24% 
+Non-corporate business assets (BADR)  
+10% 
+10% 
+10% 
+Corporate business assets (BADR / IR) 
+ 
+ 
+ 
+ 
+with 19% corporation tax  
+27.1% 
+27.1% 
+27.1% 
+ 
+with 25% corporation tax 
+32.5% 
+32.5% 
+32.5% 
+Other assets – not shares  
+10% 
+20% 
+20% 
+Other assets – shares  
+ 
+ 
+ 
+ 
+with 19% corporation tax  
+27.1% 
+35.2% 
+35.2% 
+ 
+with 25% corporation tax 
+32.5% 
+40.0% 
+40.0% 
+Exempt assets, and all gains unrealised 
+at death 
+0% 
+0% 
+0% 
+Source of income 
+ 
+ 
+ 
+Employment  
+36.7% 
+49.0% 
+53.4% 
+Self-employment profits  
+26% 
+42% 
+47% 
+Rent and interest  
+20% 
+40% 
+45% 
+Dividends  
+ 
+ 
+ 
+ 
+with 19% corporation tax  
+26.1% 
+46.3% 
+50.9% 
+ 
+with 25% corporation tax 
+31.6% 
+50.3% 
+54.5% 
+Note: BADR stands for business asset disposal relief. IR stands for investors’ relief. We show marginal 
+combined rates including (where relevant) corporation tax at the 19% small profits rate and the main 25% 
+rate. Employment income includes employee and employer National Insurance contributions. Self-
+employed profits include self-employed National Insurance contributions. Income tax rates are different in 
+Scotland; employment and self-employment lines shown here apply in the rest of the UK. 
+shares would be lower (to account for corporation tax levied on the underlying profits) than the 
+rates on other assets.28 When considering the rates that apply to employment income, one must 
+account not only for income tax but also for employee and employer National Insurance 
+contributions (NICs). The combined rates of tax on different income sources are shown in Table 
+ 
+28  Note that there is not a single corporation tax rate. Companies with annual profits below £50,000 are subject to a 
+marginal ‘small profits’ rate of 19%, while those with profits above £250,000 face the main 25% rate. Companies 
+with profits between £50,000 and £250,000 are subject to ‘marginal relief’ and face a marginal rate of 26.5%. 
+
+
+--- PDF PAGE 26 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+25 
+7.2 (note that income tax rates differ in Scotland).29 Full alignment would require that within the 
+basic-, higher- and additional-rate bands, all of the rates be the same across sources of income 
+and gains. 
+Tax rates could be aligned at any level; rates on employment income could be reduced while 
+rates on capital gains (and capital income) were increased. If CGT rates were aligned with 
+current (overall) tax rates on labour income, it would require very large rate increases. For 
+example, the rate on ‘other assets – not shares’ within the higher-rate band would need to be 
+increased from 20% to 49%. For shares (which fall within ‘other assets’), and if accounting for 
+corporation tax at 19%, the rate would need to be increased from 20% to 37% (such that the 
+overall rate moved from 35.2% to 49%). As part of alignment, BAD relief would need to be 
+removed. We take no stance on the overall level of tax rates. But we note that, in practice and 
+since employment tax rates are not going to be levelled down to capital gains tax rates (it would 
+represent a huge tax cut), aligning rates (as laid out in our ‘big-picture’ solution) would include 
+substantially higher CGT rates. 
+International issues 
+Higher CGT would make the UK a less attractive place for people to live at the time they 
+realised a capital gain. It would affect incentives to work and invest in the UK only to the extent 
+that those are linked to where people live when they realise a capital gain – though there are 
+undoubtedly some such links: for example, people running a business tend to work and invest in 
+the country they live in, and may be reluctant to emigrate purely for tax reasons when they want 
+to sell the business. Non-residents (and corporate investors) investing in the UK would be 
+unaffected by reforms to CGT, except insofar as they applied to investments in UK land and 
+property.  
+Higher effective rates of UK CGT would thus increase both the incentive for individuals with 
+accrued but unrealised capital gains to leave the UK and the disincentive for such individuals to 
+come to the UK. One option to address this would be for the UK to introduce ‘deemed disposal 
+on departure’ for CGT purposes, matched by ‘rebasing on arrival’ for new arrivals.30 This would 
+ensure that all gains accrued by an individual whilst UK-resident are taxed in the UK, even if 
+ 
+29  Note that, even where higher- and additional-rate taxpayers face similar marginal rates on labour and capital 
+income, the lower rate within the basic-rate band means that people who are only higher- and additional-rate 
+taxpayers because of their capital income face lower average rates than people whose income comes entirely from 
+labour. 
+30  Another option used by some countries is to operate a ‘tail’ for CGT purposes, where gains remain taxable on non-
+residents for a number of years after leaving (the UK currently does this only for people who then move back to the 
+UK within six years). However, international experience indicates that CGT tails can be difficult to enforce and are 
+relatively easy to avoid, and they levy no tax on those who emigrate permanently. Symmetrically, a ‘grace period’ 
+after people arrive in the UK (four years under current plans to be implemented in April 2025, though that is only 
+for gains on overseas assets) can mitigate disincentives for people to come to the UK in the first place, but is not a 
+complete solution. 
+
+
+--- PDF PAGE 27 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+26 
+they subsequently moved abroad, but would correspondingly exempt from CGT any gains 
+accrued prior to arrival.  
+▪ 
+Rebasing on arrival (ROA) works by granting new arrivals (or returners) to the UK a 
+‘rebasing’ of their assets to their value at the date of arrival, so that only rises in value after 
+they arrive are subject to UK CGT.  
+▪ 
+Deemed disposal on departure (DDD) works by treating individuals who leave the UK 
+(i.e. become non-resident for tax purposes) as having disposed of their assets at the end of 
+their final year of residence, thereby bringing into CGT all of the gains that they accrued 
+whilst UK-resident even if they have not made an actual disposal. 
+In combination, ROA–DDD would in effect move CGT from taxing gains realised while living 
+in the UK to taxing gains accrued while living in the UK. There are practical challenges with 
+this approach: for example, it would require valuing assets at the points of arrival and departure; 
+and DDD could create cash-flow difficulties for some of those leaving the UK who face a CGT 
+liability despite not selling their assets (though there are possible ways to mitigate this). There 
+would be a number of other difficult design issues to negotiate, beyond the scope of this chapter. 
+But it would clearly be feasible for the UK to adopt ROA–DDD, since the policy is already in 
+operation in Australia, Canada and elsewhere.31 The UK is unusual internationally in having no 
+CGT charge on emigrants (unless they move back to the UK within six years).  
+While ROA–DDD would help to address the concern that higher CGT would lead people to 
+realise gains outside the UK (eating into the potential revenue yield of the tax rise), it would not 
+address the concern that higher CGT rates would lead people to accrue gains outside the UK – 
+that is, to live outside the UK while they work and invest to generate capital gains. Indeed, by 
+making it harder for people to live in the UK and accrue gains here without paying CGT, it 
+might make that problem worse. This is similar to the effect that (for example) increasing 
+income tax rates can have on internationally mobile individuals, but for business owners and 
+investors rather than top-earning employees. The likely aggregate impact should not be 
+overstated, though: relatively few of those making large capital gains ever move countries. And 
+people’s decisions over where to live while they work and invest to generate capital gains may 
+be less responsive to taxation than decisions over where to live when they realise those gains.  
+Potential emigration is therefore a consequence to bear in mind when increasing CGT rates (like 
+international mobility matters for other taxes, to varying degrees) – though note that, on the flip 
+ 
+31  The US, Japan and Norway also have DDD for CGT purposes. In the US, a deemed disposal applies upon 
+relinquishing citizenship, which is equivalent (under the US system of citizenship taxation) to becoming non-
+resident. France and Germany also both operate DDD, although effective implementation is made more difficult 
+within the EU as a result of restrictions imposed by the principle of free movement. In addition to international 
+examples, the UK already operates DDD for companies and trusts: Taxation of Chargeable Gains Act 1992, 
+Section 80 and Section 185. 
+
+
+--- PDF PAGE 28 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+27 
+side, more generous deductions for investment would make the UK a more attractive place for 
+investors to live. But concerns about the mobility of a small number of people should not stop 
+the government from moving towards alignment of tax rates across sources of income and 
+capital gains for the wider UK population. Low rates of CGT across the board are not well 
+targeted at attracting internationally mobile individuals. Most CGT revenue does not come from 
+highly mobile groups, and it is not clear that mobility is closely linked to capital gains 
+specifically (rather than high incomes, or particular industries or activities, or the treatment of 
+those arriving or leaving). 
+Simplification  
+CGT is complex. It creates a large burden on taxpayers and on HMRC. Some of the components 
+we have laid out – notably, implementing an RRA or moving to a form of indexation – would 
+add a small amount of further complexity. Although it is worth noting that we do not envisage 
+anything like the complexity that arose under the previous system of indexation, not least 
+because modern IT would make implementing the system significantly less costly. But our big-
+picture solution would be a substantial simplification overall. Moving towards neutrality reduces 
+the need for – or at least takes the pressure off – boundaries in the tax system and therefore the 
+need to have rules to police those boundaries. For example, under the full solution, there would 
+be no tax incentive to shift between income and capital gains such that it would not really matter 
+whether carried interest or share buy-backs were treated as generating income or capital gains. 
+Significant legal simplification would come from obviating the need for whole swathes of 
+existing anti-avoidance legislation. 
+In practice, the extent of remaining complexity would depend on which specific reforms were 
+pursued – a cash-flow approach would be simpler than an RRA, for example – and on any 
+transitional arrangements (see Section 7.7). 
+7.6 Trade-offs and options when making 
+partial reforms to CGT 
+The previous section set out the components of a fully reformed tax regime for capital gains and 
+income. In the big-picture solution, the tax base changes would apply to all investments, 
+regardless of whether they went on to generate capital incomes or gains. And rate alignment 
+would take place not only within CGT but also in relation to income taxes. A fully reformed 
+system represents a significant prize. It would be less distortionary – and therefore more growth-
+friendly – because tax would no longer be as much of a driver of how people choose to work or 
+realise returns to their efforts or investments, of asset choices or of the timing of transactions. 
+
+
+--- PDF PAGE 29 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+28 
+Since there would be no big tax differences between similar activities, there would be little need 
+to police boundaries and the system would be much fairer. 
+But, even if the government accepted this as the right end goal, it is unlikely that it would make 
+all of the changes in the upcoming Budget. More likely is that the government would choose to 
+reform some rates or elements of CGT, possibly leaving the rest of the tax system (i.e. outside 
+CGT) unchanged. In this case, trade-offs would inevitably arise. Here we briefly highlight some 
+of the main trade-offs.  
+▪ 
+Reforms to the CGT tax base that provide more generous deductions for purchase costs or 
+losses would reduce distortions and reduce disincentives to invest. But these reforms would 
+cost money (and be a giveaway to relatively rich people). If the government wishes to raise 
+revenue, it will need to do at least some rate rises alongside these base reforms.  
+▪ 
+Increases in rates of CGT without removing uplift at death would increase the incentive to 
+hold on to assets until death. We argue that uplift at death should be removed regardless of 
+what other reforms are planned. 
+▪ 
+Increases in rates of CGT without changes to the tax base would lessen some distortions, 
+including the incentive to work through one’s own business rather than be employed and to 
+realise the returns to investment in the form of gains rather than income, but worsen others, 
+including weakening investment incentives and exacerbating the bias against risk-taking and 
+the lock-in effect. And recall that distortions caused by the tax base rise more than in 
+proportion to tax rates, because low tax rates only change behaviour when the decision is 
+marginal anyway whereas higher tax rates discourage not only more activities, but also more 
+valuable activities.  
+▪ 
+Different sources of income are taxed at different rates, so if rates of CGT are changed but 
+tax rates on income are not,32 tax rate differentials (and the associated distortions they cause) 
+will inevitably persist across different types of income and gains. If the government wanted 
+to align the tax rates on gains with the rates on income, it would have to choose which 
+source of income to align with. For example, self-employed profits and dividends are taxed 
+at particularly low rates relative to employment income within the basic-rate tax band (see 
+Table 7.2 earlier). In this case, CGT rates could in principle be moved towards alignment 
+with any of the tax rates on income. If they were aligned (within the basic-rate band) with 
+tax rates on employment income, there would be a strong incentive to take investment 
+returns in the form of dividends rather than capital gains. If they were aligned with dividend 
+tax rates, there would continue to be a tax penalty on employment. 
+▪ 
+Higher rates of CGT would weaken work incentives – for example, by increasing the tax on 
+owner-managers’ labour supply. (Although note that employees’ labour supply would still 
+ 
+32  The Labour Party’s election manifesto ruled out increasing the basic, higher or additional rates of income tax. 
+
+
+--- PDF PAGE 30 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+29 
+be taxed more heavily. And increasing tax on capital gains while reducing tax on 
+employment income could even out the treatment of different forms of remuneration without 
+increasing tax on work overall.) 
+There are many ways in which partial reforms could be done. Here we discuss just two options 
+that would combine reforms to the tax base and to tax rates, assuming that the government will 
+not change tax rates outside CGT.  
+Advani, Lonsdale and Summers (2024b) also discuss possible reform options and lay out 
+estimates of the revenue and distributional effects of increasing CGT rates while making various 
+changes to the tax base.  
+Example: index for inflation and align CGT rates with income tax  
+As part of the big-picture solution, we recommend giving more generous deductions for asset 
+purchase costs. This could be done in several ways, including by introducing an RRA or 
+(equivalently) indexing for an interest rate.  
+The UK has previously operated a CGT with indexation for inflation. Reintroducing indexing 
+for inflation would eliminate the sensitivity of investment decisions to inflation and would 
+alleviate (but not remove) the disincentives to save/invest, and the lock-in effect. While it would 
+not remove all problems, inflation indexation could be seen as a step towards indexing for an 
+interest rate, and therefore a step in the right direction.  
+Alongside this partial base reform, the government could increase CGT rates, but not go as far as 
+full alignment with overall tax rates on employment income.  
+Table 7.3. An illustration of a potential reform to CGT rates  
+Source of gains  
+Basic rate 
+Higher rate 
+Additional rate 
+All assets except shares  
+20% 
+40% 
+45% 
+Shares  
+8.75% 
+33.75% 
+39.35% 
+Effective rate on shares  
+ 
+ 
+ 
+ 
+With corporation tax at 19% 
+26.1% 
+46.3% 
+50.9% 
+ 
+With corporation tax at 25% 
+31.6% 
+50.3% 
+54.5% 
+Note: Headline corporation tax rate is 25%. The small profits rate is 19%.  
+Source: Authors’ calculations. 
+ 
+ 
+
+
+--- PDF PAGE 31 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+30 
+Assuming that only CGT rates are changed, one option would be to align CGT rates with income 
+tax rates. Specifically, that would mean having two sets of CGT rates (illustrated in Table 7.3). 
+The basic, higher and additional rates of CGT would be 20%, 40% and 45% respectively 
+(matching ordinary income tax rates) for all assets except shares, for which they would be 
+8.75%, 33.75% and 39.35% (matching the special rates of income tax on dividends). This would 
+be a reduction in the CGT rate on shares for basic-rate taxpayers, and an increase in the rate for 
+other assets and other taxpayers.  
+CGT rates would be lower for shares than for other assets – just like income tax rates are lower 
+for dividends than for other income – to reflect corporation tax. This is more logical and 
+defensible than the current system where CGT rates depend on the ownership of the business 
+rather than on whether the business profits are subject to corporation tax (and are arbitrarily 
+higher for second and rental homes). Aligning CGT rates with income tax rates is also relatively 
+easy to explain. 
+This reform would not produce full alignment of tax rates on capital gains across all assets: the 
+effective tax rate (after accounting for corporation tax) would be higher on shares than on other 
+assets. But the alignment across assets would be much closer than it is now, and for the most 
+part this reform would act to align the tax rates on capital gains with those on capital incomes 
+from the same assets.33 
+This would rationalise the system and move closer towards overall alignment. Within the current 
+system it is hard to understand why capital gains on shares should be taxed more than dividends 
+at the basic rate but less than dividends at the higher rate; or why ordinary income and dividends 
+are subject to basic, higher and additional rates of tax while capital gains are subject only to 
+basic and higher (no additional) rates.  
+Taken as a package, introducing indexation for inflation and aligning CGT rates with income tax 
+rates would be more efficient and fairer than the current system. Employment income would still 
+be taxed at higher rates than capital incomes or gains – largely as a result of employer National 
+Insurance contributions – but the disparity would be smaller.  
+Example: scrap BAD relief and introduce up-front relief for 
+investment 
+We showed in Section 7.2 that around half of taxable capital gains (by value) come from 
+unlisted shares. Many of these will benefit from business asset disposal relief, the existence of 
+ 
+33  There would still be a differential tax rate on self-employed profits, which are subject both to income tax and self-
+employed National Insurance contributions.  
+
+
+--- PDF PAGE 32 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+31 
+which creates very strong incentives to operate via a business and to take returns (including 
+returns to labour) in the form of capital gains rather than income, where possible.  
+BAD relief (and preferential rates of CGT more generally) is not well targeted at 
+entrepreneurship (see Section 7.4) and leads to a range of undesirable distortions (Section7.3). 
+Simply removing BAD relief in isolation would come with trade-offs: distortions caused by rate 
+differentials would be lessened (e.g. there would be a reduced incentive to take returns in the 
+form of capital gains) but distortions related to the base would be worse (a higher rate would 
+weaken investment incentives and exacerbate the bias against risk-taking and the lock-in effect). 
+Removing BAD relief would also weaken work incentives by increasing the tax on owner-
+managers’ labour supply (although note it would still be taxed less heavily than for employees). 
+The downsides of that trade-off could be greatly reduced if BAD relief were scrapped while 
+deductions for asset purchase costs were made more generous.  
+Adam and Miller (2021) set out one specific option for providing more generous tax treatment of 
+investment in shares. They describe a new vehicle – which they call a ‘Personal Shareholding 
+Account’ (PSA) – that would provide a cash-flow tax treatment (as described in Section 7.5) 
+when people bought newly issued shares. Individuals would receive up-front income tax relief 
+on any money they put into a PSA. Money in the PSA could be used to buy new equity issued by 
+companies, and any dividends or capital gains received within the PSA would not be taxed. But 
+any money the individual withdrew from the PSA would be subject to tax at that point. (Note 
+there would be a single tax rate schedule with no distinction between dividends and capital 
+gains.) That is identical to the current income tax treatment of pensions, except that there would 
+be no 25% tax-free lump sum. The PSA could also be likened to an ISA or to one of the current 
+venture capital schemes (EIS/SEIS/VCTs).34 Unlike any current vehicles, however, it would be 
+available – indeed, intended – for people to invest in their own company (or that of a connected 
+person), not just for arm’s-length shareholders. In that respect, it could also be thought of as a 
+replacement for BAD relief – a reorienting away from tax relief on large gains to tax relief on 
+investment. Importantly, the PSA would be better targeted: it would be available to business 
+owners making new investments at the point they invest and in proportion to the amount they 
+invest, rather than available to all business owners regardless of investment, only many years in 
+the future, and worth more to those who make the most money. 
+In principle, there would be no need for restrictions on when a PSA could be used: the PSA 
+would be well suited to portfolio investment in the stock market and, since it offers neutral rather 
+ 
+34  The Enterprise Investment Scheme (EIS), the Seed Enterprise Investment Scheme (SEIS) and Venture Capital 
+Trusts (VCTs) provide various combinations of income tax relief for amounts invested, CGT relief on returns and 
+other tax advantages for investments that meet qualifying conditions. 
+
+
+--- PDF PAGE 33 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+32 
+than subsidised treatment, there seems little reason to limit the investments. Keeping the 
+availability of the scheme as wide as possible would maximise the economic benefits and help to 
+make the scheme better known. But if the government wanted to ‘test the water’, or were 
+concerned about the potential size of up-front tax relief (although it would get correspondingly 
+more revenue later from taxing withdrawals), then it could impose additional restrictions on 
+PSAs, such as limiting eligible investments to shares in unlisted companies or imposing a cap on 
+the amount that could be invested. 
+Miller and Smith (2023) empirically estimate the impact on business owners of removing BAD 
+relief (taxing eligible gains at the main 20% rate rather than 10%) while moving to a cash-flow 
+treatment of investment in their own business (i.e. giving individuals up-front income tax relief 
+on any money they put in).35 They find that:  
+▪ 
+Removing BAD relief brings benefits (most notably, there is a substantial reduction in 
+people keeping income in their companies for long periods) but leads to a small fall in 
+investment – this is exactly the trade-off we discuss above. It is debatable whether this 
+move, in isolation, would be an improvement.  
+▪ 
+Introducing a new up-front relief boosts investment. Moreover, with the new relief in place, 
+the higher rate of CGT has no disincentive effect on investment. (This assumes that there is 
+no effect on people moving their capital into or out of the UK.)  
+The two measures implemented together work to boost investment and to raise a modest amount 
+of revenue. It is a progressive change: revenue is raised from the top of the income distribution. 
+More specifically, it is raised from people that have made very large gains relative to their 
+investments. Those making large investments and making modest (‘normal’) returns see a tax 
+cut. 
+7.7 Transition and retrospection 
+Whatever changes were made to CGT, a decision would have to be made over how to treat 
+existing assets.  
+The simplest way to introduce reforms to CGT would be to apply them in full to any capital 
+gains realised after the date the reforms were announced. One consequence of this approach 
+ 
+35  To estimate the effects of this policy change, they use a sophisticated model of business owners which captures the 
+different ways in which people can respond to tax changes, including choices over: whether to start a business; 
+whether to incorporate; whether, how much and when to invest; how and when to take income out of a business; 
+and when and how much to work. Underpinning the model is evidence on the activities of business owners and 
+how they respond to tax policy. That evidence uses 20 years of data drawn from personal and corporate tax records 
+held by HMRC and covering all owner-managed businesses (the self-employed and company owner-managers). 
+
+
+--- PDF PAGE 34 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+33 
+would be that higher rates – and any changes to the tax base (such as indexation) – would apply 
+to gains that accrued when the previous system was in place but were realised afterwards, as 
+well as to future investments and accruals. In this scenario, part of the net revenue raised would 
+therefore derive from taxpayers’ past activities rather than their future ones. This is the way that 
+most (although not all) reforms to CGT have been applied in the UK in the past, and is a natural 
+consequence of CGT being a realisation-based, rather than accrual-based, tax. 
+In economic terms, this is an efficient way to raise revenue: since there is nothing taxpayers can do 
+to change the past, this part of the revenue is raised without distorting people’s behaviour. Taxing 
+the returns to past investment and effort cannot discourage them as they have already happened. 
+However, the flip side of this is that taxpayers may object that the tax is, in a sense, 
+retrospective. They may have expected the existing CGT regime to persist when they invested 
+and worked to generate the capital gain: the higher tax rate would be applied to gains that had 
+already accrued.  
+There would be some justice to this complaint. However, it is not a clear-cut, decisive argument 
+against the policy. Retrospection is not binary; it comes in different types and degrees, and 
+almost all tax changes involve some element of retrospection. A rise in inheritance tax or VAT, 
+for example, would also reduce the value of past wealth accumulation. Investors (and others) 
+always face the risk that the government will change policy; violating their legitimate 
+expectations is something governments should try to avoid, but cannot be an absolute block on 
+policy changes. In any case, it seems unlikely that most people would have formed a strong 
+expectation of policy stability in an area such as CGT which has changed so often, and which 
+(when changed) usually does so with full effect for disposals made after the reform date. It is 
+also worth noting that giving more generous allowances for past investments would 
+‘retrospectively’ benefit taxpayers, who would have expected the less generous regime when 
+they were making their investments. Those making only modest returns would find that most or 
+all of the CGT they were expecting to pay was wiped out by more generous allowances. 
+There are several ways that governments have previously attempted to reduce the degree of 
+retrospection associated with a CGT reform.36 In very broad terms, they boil down to trying to 
+apply the new regime only to gains that are accrued after the point of the reform. But all of the 
+options for doing that in practice have significant disadvantages. To varying degrees, all would 
+create more complexity, create opportunities to reduce tax liabilities by delaying or accelerating 
+transactions, and reduce the revenue yield of the reform without reducing its economic 
+efficiency cost. 
+ 
+36  We do not discuss the possible approaches here. There is some discussion in Adam (2008). Adam and Miller 
+(2021) briefly say how some of these options could operate for some example reforms. 
+
+
+--- PDF PAGE 35 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+34 
+7.8 Revenue, winners and losers  
+Revenue 
+The HMRC Ready Reckoner, as of June 2024, says that small increases in main capital gains tax 
+rates would raise a small amount of revenue, while a larger rate increase would lead to a fall in 
+revenue. For example, a 1 percentage point increase in the higher rates of capital gains tax in 
+April 2025 is estimated to raise just £100 million in 2027–28 while a 10 percentage point 
+increase is estimated to reduce revenue by around £2 billion (HM Revenue and Customs, 2024). 
+In the absence of sufficient information as to how these estimates are produced, it is difficult to 
+assess their credibility.37 However, based on available evidence, we do not think the behavioural 
+responses to higher rates would be such that a 10 percentage point rate increase would leave us 
+above the revenue-maximising rate. As such, we think it unlikely that the Ready Reckoner 
+figures give a good guide to the revenue effect of higher CGT rates over a longer time horizon. 
+In any case, the nature and size of behavioural responses, and therefore the effect on revenue, 
+would hinge critically on the exact reform. If, for example, uplift at death remained in place and 
+there was no change to how we tax gains when people emigrate, we would expect higher tax 
+rates to lead more people to hold on to assets until death or emigration and thereby avoid paying 
+CGT. Conversely, removing these opportunities to defer realisation should reduce people’s 
+ability to avoid higher tax rates, such that we would expect a rate increase to raise more revenue 
+than under the current tax base.  
+Aside from increasing rates, some other possible changes to CGT would raise revenue. At 
+current tax rates, and before accounting for behavioural responses, currently available estimates 
+tentatively suggest that the cost of uplift at death is about £1.6 billion (Advani and Sturrock, 
+2023) and the cost of BAD relief is about £1.5 billion (HM Revenue and Customs, 2023). We 
+would expect removing either relief to mean that more revenue would be raised by an increase in 
+headline rates (because a rate increase would apply to a broader tax base and there would be 
+fewer ways to avoid paying higher rates). 
+Introducing more generous treatment of purchase costs and/or losses would cost money – though 
+part of the up-front cost would be recouped in the longer run as doing this would reduce the 
+disincentive to invest and take risks. It would also mean that rate increases had less of a 
+disincentive effect. As shown in Section 7.2, a large share of taxable capital gains come from 
+ 
+37  Increasing CGT rates would affect people’s behaviour in a variety of ways, some of which would reduce the yield 
+of a rate increase, some of which would increase the yield, and some of which would change the timing of revenue. 
+HMRC publishes information on which types of behavioural response and knock-on effects to other taxes it 
+attempts to account for in the Ready Reckoner figures, but not on its methodology or on the empirical estimates of 
+responsiveness that it uses.  
+
+
+--- PDF PAGE 36 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+35 
+private businesses and a large share of those gains are very large relative to the initial 
+investment. Broadly speaking, this suggests that – to the extent that gains in future are like those 
+in the past – the revenue potential from higher tax rates (on excess returns) is large relative to the 
+cost of giving more generous reliefs for initial investment costs. This of course assumes that 
+higher rates could not be avoided – for example, through holding on to assets until death or 
+emigration or putting wealth into tax-privileged vehicles instead. 
+For any reform, the amount of revenue raised in the short run would depend on the transitional 
+arrangements: higher rates would raise less if they were not applied fully to gains already 
+accrued (but not yet realised), and more generous treatment of investment costs and losses would 
+cost more if they applied to existing assets and previous years.  
+Short-run revenue effects also depend on people’s expectations about whether and how the CGT 
+regime might change again in future. There is currently anecdotal evidence of people realising 
+gains in advance of the upcoming Budget and in expectation of a rate increase; this could lead to 
+a spike in revenues this year and a fall next year. After the Budget, people might defer selling 
+assets if they anticipate a subsequent reduction in CGT rates. That is, higher rates could 
+temporarily lower revenues if people expect rates will be lowered again. Conversely, people 
+might sell assets more quickly if they think further increases in the CGT rate are on the horizon. 
+These judgements are inevitably highly sensitive to the political context. Policy credibility is 
+crucial. Further policy changes can never be entirely ruled out, but reforms introduced during the 
+first year of a new government with a big majority can perhaps be expected to be more durable 
+than if done shortly before a closely contested election.  
+Advani, Lonsdale and Summers (2024b) use HMRC tax records to estimate the cost of various 
+reforms to CGT. 
+Winners and losers 
+It is also possible to set out, broadly, which types of people would gain or lose under our ‘full 
+proposal’ (which would entail a reformed tax base and higher marginal CGT rates38). These 
+broad patterns would hold for many smaller steps in that direction. 
+Where capital gains represent returns to labour (e.g. that of a business owner, a person 
+renovating a house, a skilled investor or a private equity manager), or market power, or luck 
+(such as owning a house in an area where prices rose), the policies we propose would represent a 
+tax increase; if CGT rates were fully aligned with current labour income tax rates then in some 
+cases it would be a very large increase. There is no way to reform CGT effectively without 
+ 
+38  We do not take a position on the level at which tax rates should be aligned; rates on employment income could be 
+reduced alongside increases in rates on capital gains (and capital income). 
+
+
+--- PDF PAGE 37 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+36 
+making this group worse off. But note that this could equally be described as removing the tax 
+advantages they receive under the current tax system. Increasing tax on the returns to work has 
+clear downsides, but there is no good reason to tax work less heavily if it generates a capital gain 
+than if it generates employment income. Increasing tax on capital gains while reducing tax on 
+employment income could even out the treatment of different forms of remuneration without 
+increasing tax on work overall. If reform of the system included lower taxes on employment 
+income as well as higher rates of CGT, employees would gain while those receiving labour 
+returns in the form of capital gains would lose. 
+For individuals who are investing their money and taking risks, there would be offsetting effects 
+from our proposals. There would be more generous treatment of investment costs and more risk-
+sharing with the government. Many of those making relatively low returns (e.g. those making 
+low-risk arm’s-length investments and those taking risks that do not pay off) would see lower 
+taxes – and this is where tax is likely to make most difference to whether projects go ahead. 
+Those making very high returns – which could reflect some combination of effort and skill, 
+privileged access to scarce opportunities, and luck – would pay more.  
+Revenue would be raised very progressively. As shown in Section 7.2, taxable capital gains are 
+heavily concentrated at the top of the income distribution.  
+In all cases, the transition arrangements would have a large effect on the exact winners and 
+losers. Specifically, if reforms applied to existing gains, the winners and losers would include 
+people who had already accrued but not yet realised capital gains (or losses). If any new regime 
+only applied to the future, the winners and losers would only be those people who accrue gains 
+in future.  
+7.9 Conclusions  
+Policymakers perceive a tension when setting CGT rates. The desire to create a fair system and 
+stop tax-motivated changes in behaviour to realise returns in the form of capital gains suggests 
+that capital gains tax rates should be similar to income tax rates. But the desire to ensure that tax 
+does not discourage saving and investment is often used to support lower rates. What results is 
+an awkward compromise. The current design of CGT discourages saving and investment and 
+distorts choices people make about which assets to buy and sell and when. And it creates 
+unfairness, with some people able to access much lower tax rates than others. Politicians over 
+the decades have chosen different points on this perceived trade-off but, since neither aim is ever 
+achieved, the system is subject to constant tinkering. Moreover, the compromise creates many 
+boundaries in the tax system – including between capital gains and capital income – which then 
+require great effort to define and police. The UK is not alone here: most governments choose 
+
+
+--- PDF PAGE 38 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+37 
+low capital gains tax rates (relative to income tax rates) on nominal gains, and as a result they 
+face the same set of problems we set out in this chapter.  
+We argue that the two aims – economic efficiency and fairness – can both be achieved, and the 
+tension overcome, by using tax rates and the tax base. The design of the tax base is often 
+overlooked, but it is critical for creating a capital gains tax that does not discourage saving and 
+investment.  
+We have sketched out a ‘big-picture’ solution that would vastly improve – and in many cases 
+largely remove – the problems of the current system in a domestic context. We have also 
+discussed how the tax treatment of people who enter and leave the UK could be changed so that 
+higher CGT rates do not lead to people leaving the UK in order to realise gains.  
+Short of a full-scale overhaul of the way we tax capital gains and income, the government would 
+have to manage inevitable trade-offs, since some distortions would be made better and some 
+worse. But there are steps that could be taken in the right direction.  
+Regardless of how much revenue the government would like to raise, it has an opportunity to 
+implement a system that is fairer and less damaging to economic growth. Making the system less 
+damaging is even more important if the government would like to raise more revenue in the 
+medium term.  
+The details of any reform will be crucial. The government should take care to get these right. It 
+should also seek to ensure that any reform is credibly lasting. CGT has been reformed many 
+times in the past decades. If people believe that any policy choice will be reversed in future 
+years, it will distort behaviour. For example, people will hold off selling assets if they think there 
+will be a more favourable reform in future. And if people expect rates to rise in future, they will 
+be more inclined to sell assets in advance. Similarly, it is undesirable to leave people thinking 
+that any reform is simply more upheaval, with more unknown reforms likely in coming years. 
+Making a policy change credibly lasting requires setting out clear principles and a rationale for 
+reform, rather than simply tinkering and tweaking to raise a bit more cash. Instability and 
+unpredictability are bad for investment.  
+
+
+--- PDF PAGE 39 ---
+Capital gains tax reform  
+© The Institute for Fiscal Studies, October 2024 
+38 
+References 
+Adam, S., 2008. Capital gains tax. In R. Chote, C. Emmerson, D. Miles and J. Shaw (eds), The IFS Green 
+Budget: January 2008. Institute for Fiscal Studies, https://ifs.org.uk/publications/ifs-green-budget-
+january-2008.  
+Adam, S. and Miller, H., 2021. Taxing work and investment across legal forms: pathways to well-designed 
+taxes. Institute for Fiscal Studies, Report R184, https://ifs.org.uk/publications/taxing-work-and-
+investment-across-legal-forms-pathways-well-designed-taxes. 
+Advani, A., Hughson, H., Lonsdale, A. and Summers, A., 2024. Should capital gains be tax privileged? 
+https://arunadvani.com/slides/AdvaniHughsonLonsdaleSummers2024_ShouldCapitalGainsBeTaxPrivileg
+ed.pdf. 
+Advani, A., Lonsdale, A. and Summers, A., 2024a. Who would be affected by capital gains tax reform? 
+CAGE Policy Briefing 40, 
+https://warwick.ac.uk/fac/soc/economics/research/centres/cage/manage/publications/bn40.2024.pdf. 
+Advani, A., Lonsdale, A. and Summers, A., 2024b. Reforming capital gains tax: revenue and distributional 
+effects. Forthcoming. 
+Advani, A. and Sturrock, D., 2023. Reforming inheritance tax: Green Budget 2023 – Chapter 7. 
+https://ifs.org.uk/publications/reforming-inheritance-tax. 
+Advani, A. and Summers, A., 2020. Capital gains and UK inequality. CAGE Working Paper 465, 
+https://warwick.ac.uk/fac/soc/economics/research/centres/cage/manage/publications/wp465.2020.pdf. 
+Corlett, A., Advani, A. and Summers, A., 2020. Who gains? The importance of accounting for capital gains. 
+Resolution Foundation, May 2020, https://www.resolutionfoundation.org/app/uploads/2020/05/Who-
+gains.pdf. 
+Delestre, I., Kopczuk, W., Miller, H. and Smith, K., 2022. Top income inequality and tax policy. Institute for 
+Fiscal Studies, IFS Deaton Review of Inequalities, https://ifs.org.uk/inequality/top-income-inequality-
+and-tax-policy/.  
+HM Revenue and Customs, 2023. Non-structural tax relief statistics (December 2023). 
+https://www.gov.uk/government/statistics/main-tax-expenditures-and-structural-reliefs/non-structural-
+tax-relief-statistics-december-2023. 
+
+
+--- PDF PAGE 40 ---
+The IFS Green Budget: October 2024 
+© The Institute for Fiscal Studies, October 2024 
+39 
+HM Revenue and Customs, 2024. Direct effects of illustrative tax changes bulletin. June 2024, 
+https://www.gov.uk/government/statistics/direct-effects-of-illustrative-tax-changes.  
+Miller, H., Pope, T. and Smith, K., 2024. Intertemporal income shifting and the taxation of business owner-
+managers. Review of Economics and Statistics, 106, 184–201, https://doi.org/10.1162/rest_a_01166. 
+Miller, H. and Smith, K., 2023. It’s all about the base: taxing business owner-managers. Working paper, 
+https://katesmith.me/wp-content/uploads/2023/08/extensivemarginpaper.pdf. 
+Mirrlees, J., Adam, S., Besley, T., Blundell, R., Bond, S., Chote, R., Gammie, M., Johnson, P., Myles, G. and 
+Poterba, J., 2011. Tax by Design: The Mirrlees Review. Oxford University Press for IFS, 
+https://www.ifs.org.uk/publications/5353. 
+Office of Tax Simplification, 2020. OTS Capital Gains Tax Review: simplifying by design. 
+https://www.gov.uk/government/publications/ots-capital-gains-tax-review-simplifying-by-design.  
+Seely, A., 2010a. Capital gains tax: background history. House of Commons Library, Research Briefing, 
+https://commonslibrary.parliament.uk/research-briefings/sn00860/.  
+Seely, A., 2010b. Capital gains tax: the 2008 reforms. House of Commons Library, Research Briefing, 
+https://commonslibrary.parliament.uk/research-briefings/sn04652/. 
+Seely, A., 2020. Capital gains tax: recent developments. House of Commons Library, Research Briefing, 
+https://commonslibrary.parliament.uk/research-briefings/sn05572/.  

@@ -1,0 +1,9 @@
+measure,value,unit,period,status,caveat
+Individual reported gross current-year gains,90.593755918,AUD billion,2023-24,ATO observation,Associated-form reporting; not all accrued gains; includes trust-origin gains
+Direct Australian real-estate share of individual gross gains,41.54054399517694,percent,2023-24,ATO observation,"All Australian real estate, not just residential; no trust look-through"
+Trust-origin share of individual gross gains,32.331109736206884,percent,2023-24,ATO observation,Underlying property/share composition unknown
+Combined CGT and negative-gearing gross receipts,3.63,AUD billion,2025-26 to 2029-30,Budget estimate,Announcement vintage; not isolated CGT; .. rounded to zero for plotting
+Combined measure related payments,99,AUD million,2025-26 to 2029-30,Budget estimate,Published totals include rounding
+RRA nominal allowance,5.574999999999997,percent per year,Scenario,Illustration,2.5% inflation and 3% real normal return; not chosen policy setting
+Consumption tax matching 30% income-inclusive rate,42.85714285714286,percent tax-exclusive,Scenario,Identity,Equivalent new-resource timing example; not Australia GST rate
+"Tax on normal return, symmetric RRA",0,AUD,Scenario,Identity,Correct allowance and usable/capitalised relief assumed

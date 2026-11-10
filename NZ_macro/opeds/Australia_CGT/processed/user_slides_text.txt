@@ -1,0 +1,140 @@
+SLIDE 1
+Thoughts on CGT changes
+
+SLIDE 2
+2
+Key policy directions of Federal Budget 2026
+Budget 2026 took place given rising concerns about fiscal sustainability, intergenerational equity, and productivity growth – three topics that are closely linked.
+NDIS reforms.
+
+Details are currently limited – but these savings were the main drivers of surplus returning.
+Thriving kids program a significant part, however a lot of community and social support likely to be removed.
+
+Tax reforms.
+
+WATO and the future taxation of labour income.
+Liquidity and R&D policies for small and young firms.
+Minimum trust tax rate.
+Capital gains and negative gearing.
+
+SLIDE 3
+3
+Taxation of income
+Understanding taxation of capital gains requires thinking about income tax.
+Tax changes in the capacity to consume irrespective of how we do so (https://e61.in/e61-capital-income-tax-calculator/).
+Tax capital like wages? Intergenerational equity? Equity-efficiency trade-off.
+What is income?
+Fixer-upper sale
+High inflation property investor
+
+SLIDE 4
+4
+Taxation of income
+Understanding taxation of capital gains requires thinking about income tax.
+Tax changes in the capacity to consume irrespective of how we do so.
+Tax capital like wages? Intergenerational equity? Equity-efficiency trade-off.
+What is income?
+Capital income as a return to savings.
+Inflation reduces the value of nominal savings – not income.
+A normal rate of return compensates for deferring consumption – necessary to maintain present value of savings, so not income.
+To tax all true income the same way we can either tax consumption, or tax labour income + capital income above a normal rate of return.
+Hard to create the redistribution we may want with consumption taxes (progressivity). Hence an income tax is needed.
+
+SLIDE 5
+5
+What are capital gains and negative gearing
+A capital gain is an additional form of capital income.
+Like other capital income, some of the dollar amount is not “income”.
+Is taxed on realisation – this gives capital gain a deferral benefit relative to other capital income currently.
+Due to progressive taxes, capital gains are taxed at a higher rate than if they were taxed each year.
+Discount and income averaging
+
+SLIDE 6
+6
+What are capital gains and negative gearing
+Negative gearing is when annual revenue for an asset in a year is less than the costs, due to borrowing expenses.
+Only allow expenses related to taxed income. Allowing deductibility of inflation component of interest inconsistent with discount/indexation.
+Quarantining losses both punishes those with genuine losses (as all expenses are deferred) and over-credits those making positive annual rental income.
+
+SLIDE 7
+7
+Issues with prior treatment
+Horizontal inequity
+
+SLIDE 8
+8
+Issues with prior treatment
+Incentive to borrow too much
+
+Increasing leverage allows an investor toincrease their return on equity (RoE) post-taxby more than the pre-tax increase.-> Can turn a pre-tax negative return 	positive post-tax
+Vertical inequity
+
+Capital gains tend to go to those with highdecade-long income.Implies that the tax-system may be lessprogressive than intended.
+
+SLIDE 9
+9
+Implications for revenue
+It was not clear these reforms should increase revenue – but it does.
+Gain from change in distribution of tax rates.
+Consistency would also discount other capital income.
+Asymmetric treatment of losses.
+No “income averaging” – over-taxation of lumpy income such as capital gains, incentives for strategic timing.
+Minimum rates.
+Is inflation the correct discount rate?
+
+SLIDE 10
+10
+Trade-offs
+Capital mobility and investment
+Changing residence shifts taxation of “passive” housing capital gains.
+Mobile ideas and finance can move – incidence passes through to consumers and business.
+Domestic value-add is less mobile.
+International evidence suggests mobility from CGT is limited.
+Also suggests the general tax rate mobility is lower for sources that generate high returns (location specific rents).
+
+SLIDE 11
+11
+Trade-offs
+Compliance costs
+Different rules for different assets.
+Complicated minimum tax rules (especially alongside trusts).
+Transitional valuations.
+Taxation of risk?
+The reforms increase the taxation of risk.
+In the absence of “asymmetry” this would be neutral/positive with respect to risk.
+Progressive taxes.
+Differential treatment of losses.
+Minimum rates.
+
+SLIDE 12
+12
+Q&A
+
+SLIDE 13
+13
+Additional plots
+Flat tax incentive for risk-averse individual
+Deferral without imputation
+
+SLIDE 14
+14
+Additional plots
+Deferral with imputation
+Change in real tax rates by capital gain
+
+SLIDE 15
+15
+Additional plots
+Progressivity and risk
+Income averaging and risk
+
+SLIDE 16
+16
+Additional plots
+Housing median tax rates
+Housing CGT revenue estimates
+
+SLIDE 17
+17
+Additional plots
+Breakeven international tax and “allowance” (with 2.5% inflation)

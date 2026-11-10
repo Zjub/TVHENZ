@@ -1,0 +1,17 @@
+year,entity,section,item,unit,value,sheet,source_row,source_column,asset,flow
+2023,Individuals,Current year capital gains,Shares in companies listed on an Australian securities exchange,$,9106343433,Table 1,8,36,Australian-listed shares,Gains
+2023,Individuals,Current year capital gains,Other shares,$,7169479381,Table 1,10,36,Other shares,Gains
+2023,Individuals,Current year capital gains,Units in unit trusts listed on an Australian securities exchange,$,457600886,Table 1,12,36,Australian-listed trust units,Gains
+2023,Individuals,Current year capital gains,Other units,$,639373982,Table 1,14,36,Other units,Gains
+2023,Individuals,Current year capital gains,Real estate situated in Australia,$,37633139034,Table 1,16,36,Direct Australian real estate,Gains
+2023,Individuals,Current year capital gains,Other real estate,$,997535446,Table 1,18,36,Other real estate,Gains
+2023,Individuals,Current year capital gains,Collectables,$,58056951,Table 1,22,36,Collectables,Gains
+2023,Individuals,Current year capital gains,Other CGT assets and any other CGT events,$,3772533253,Table 1,24,36,Other assets/events,Gains
+2023,Individuals,Current year capital losses,Shares in companies listed on an Australian securities exchange,$,3653346355,Table 1,32,36,Australian-listed shares,Losses
+2023,Individuals,Current year capital losses,Other shares,$,901573262,Table 1,34,36,Other shares,Losses
+2023,Individuals,Current year capital losses,Units in unit trusts listed on an Australian securities exchange,$,191689486,Table 1,36,36,Australian-listed trust units,Losses
+2023,Individuals,Current year capital losses,Other units,$,215928415,Table 1,38,36,Other units,Losses
+2023,Individuals,Current year capital losses,Real estate situated in Australia,$,1574698410,Table 1,40,36,Direct Australian real estate,Losses
+2023,Individuals,Current year capital losses,Other real estate,$,162149182,Table 1,42,36,Other real estate,Losses
+2023,Individuals,Current year capital losses,Collectables,$,9764121,Table 1,44,36,Collectables,Losses
+2023,Individuals,Current year capital losses,Other CGT assets and any other CGT events,$,1266681204,Table 1,46,36,Other assets/events,Losses

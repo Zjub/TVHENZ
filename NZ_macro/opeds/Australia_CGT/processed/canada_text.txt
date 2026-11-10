@@ -1,0 +1,5849 @@
+--- PDF PAGE 1 ---
+NBER WORKING PAPER SERIES
+PERMANENT AND TRANSITORY RESPONSES TO CAPITAL GAINS TAXES: 
+EVIDENCE FROM A LIFETIME EXEMPTION IN CANADA
+Adam M. Lavecchia
+Alisa Tazhitdinova
+Working Paper 28514
+http://www.nber.org/papers/w28514
+NATIONAL BUREAU OF ECONOMIC RESEARCH
+1050 Massachusetts Avenue
+Cambridge, MA 02138
+February 2021
+We are grateful to Alan Auerbach, Jon Bakija, Youssef Benzarti, Tim Dowd, William Gentry, 
+Ross Hickey, Arjan Lejour, Kevin Milligan, Jim Poterba, Emmanuel Saez and seminar 
+participants at Williams College, UBC, 7th Annual Mannheim Conference, Finances of the 
+Nation Seminar, and the International Online Public Finance Seminar for helpful comments. We 
+thank Ae Jin Kim for research assistance. This research was supported by funds to the Canadian 
+Research Data Centre Network (CRDCN) from the SSHRC, the Canadian Institute for Health 
+Research (CIHR), the Canadian Foundation for Innovation (CFI), and Statistics Canada. 
+Although the research and analysis are based on data from Statistics Canada, the opinions 
+expressed do not represent the views of Statistics Canada. The views expressed herein are those 
+of the authors and do not necessarily reflect the views of the National Bureau of Economic 
+Research.
+NBER working papers are circulated for discussion and comment purposes. They have not been 
+peer-reviewed or been subject to the review by the NBER Board of Directors that accompanies 
+official NBER publications.
+© 2021 by Adam M. Lavecchia and Alisa Tazhitdinova. All rights reserved. Short sections of 
+text, not to exceed two paragraphs, may be quoted without explicit permission provided that full 
+credit, including © notice, is given to the source.
+
+
+--- PDF PAGE 2 ---
+Permanent and Transitory Responses to Capital Gains Taxes: Evidence from a Lifetime Exemption 
+in Canada
+Adam M. Lavecchia and Alisa Tazhitdinova
+NBER Working Paper No. 28514
+February 2021
+JEL No. G51,H24,H31
+ABSTRACT
+Using panel data on a 20% random sample of Canadian taxpayers, we study behavioral responses 
+to the cancellation of a lifetime capital gains exemption that resulted in increased capital gains 
+taxation for some individuals. The unique setting allows us to distinguish between short-term 
+avoidance responses and permanent responses to capital gains taxes. We show that the exemption 
+did not change the number of taxpayers reporting positive capital gains, and thus unlikely resulted 
+in increased participation in capital markets. However, the exemption cancellation slightly 
+increased capital gains realizations of the existing traders.
+Adam M. Lavecchia
+Department of Economics
+McMaster University
+Kenneth Taylor Hall, Room 412
+1280 Main Street West
+Hamilton, Ontario
+ L8S 4M4
+Canada
+laveccha@mcmaster.ca
+Alisa Tazhitdinova
+Department of Economics
+University of California at Santa Barbara
+North Hall
+Santa Barbara, CA 93106
+and NBER
+tazhitda@ucsb.edu
+
+
+--- PDF PAGE 3 ---
+How does taxation aﬀect the realization of capital gains? The answer to this
+question is central to several ongoing debates about the equity-eﬃciency tradeoﬀ
+of taxing capital gains income. For example, the elasticity of capital income with
+respect to the net-of-tax rate is an input into formulas for optimal tax rates on
+capital (Saez and Stancheva (2018)). The elasticity of capital gains realizations
+with respect to taxes is also important for estimating the impact of tax reforms
+on government revenues (Gravelle (2020); Agersnap and Zidar (2020)). In spite
+of its importance, evidence on the responsiveness of capital gains realizations to
+changes in taxation is mixed, largely due to limitations in data and identifying
+variation.
+In this paper, we exploit the unexpected cancellation of a $100,000 CAD
+(nominal) lifetime capital gains exemption in 1994 and longitudinal tax return
+data on a 20% sample of Canadian tax ﬁlers to estimate the eﬀect of taxes
+on short-run and long-run capital gains realizations.
+Introduced in 1985, the
+lifetime capital gains exemption (hereafter the LCGE) resulted in an eﬀective
+marginal tax rate on capital gains of zero up to the $100,000 threshold. Broadly
+speaking, the abrupt elimination of the LCGE in February 1994 aﬀected tax
+ﬁlers in one of two ways depending on their expected path of lifetime capital
+gains realizations and past behavior.
+For individuals whose expected lifetime
+capital gains realizations were less than $100,000, the elimination of the LCGE
+led to both an increase in the eﬀective marginal tax rate on capital gains income
+and a negative shock to expected lifetime wealth.1 On the other hand, individuals
+who had already exhausted their $100,000 exemption limit were unaﬀected by the
+1994 reform.
+We adopt a diﬀerence-in-diﬀerences research design that exploits the dif-
+ferences in remaining exemption space at the time the LCGE was cancelled to
+partition tax ﬁlers into one of several treatment groups and a comparison group.
+In particular, we assign individuals to treatment and control groups based on the
+sum of their 1985-1993 capital gains realizations that counted towards the LCGE
+1 The increase in the eﬀective marginal tax rate on capital gains from 1994 to 1995 meant that
+the after-tax real return to earning capital income fell sharply from 1995 onwards. Furthermore,
+the fact that realizations up to $100,000 were subjected to taxation meant that lifetime wealth
+fell by an amount proportional to the tax ﬁler’s remaining exemption space multiplied by their
+marginal tax rate on capital gains income.
+2
+
+
+--- PDF PAGE 4 ---
+limit. Tax ﬁlers that exhausted their LCGE space by 1993 are assigned to the
+control group. By construction, this group is unaﬀected by the 1994 reform. We
+assign tax ﬁlers whose 1985-1993 realizations were below the LCGE threshold to
+one of three treatment groups, depending on how far below the $100,000 limit
+their pre-reform realizations were. While all tax ﬁlers with unused LCGE space
+experienced an immediate increase in their eﬀective marginal tax rate, those with
+more remaining exemption space at the time of the exemption cancellation were
+arguably less likely to eventually reach the $100,000 limit (conditional on covari-
+ates).2 As a result, the removal of the LCGE should have led to an increase in the
+medium- and long-run eﬀective marginal tax rates for this group. Partitioning
+treated tax ﬁlers into three groups thus allows us to investigate how the cancel-
+lation of the LCGE aﬀected individuals diﬀerently, depending on the extent to
+which their long-run incentives to realize capital gains income changed.
+Our analysis generates two main results. First, we ﬁnd that the removal
+of the LCGE led to a large increase in realizations in 1994, the last year it
+was available, for all treatment groups.
+Compared to the control group, the
+unconditional realized capital gains of treated tax ﬁlers approximately doubled,
+increasing by 0.9 to 1.1 log points from 1993 to 1994.3 Furthermore, we show that
+this short-term increase in unconditional capital gains realizations is driven by
+responses along both the extensive (i.e. the likelihood of reporting capital gains)
+and the intensive margins (i.e. the amount of realized capital gains conditional
+on reporting positive gains).
+Second, although responses by all three treatment groups are quantitatively
+similar in the short-run, our estimated medium to long-run responses (i.e. 3-5
+years later) diﬀer signiﬁcantly across groups. For treated ﬁlers whose 1985-1993
+realizations were close to $100,000, and who were more likely to eventually exceed
+2In Online Appendix F, we show that the all three treatment groups and the comparison
+group have similar time-invariant characteristics (e.g. age, gender) and that their time-varying
+covariates (e.g. marital status, broad income and taxable income) evolve similarly over time.
+This is reassuring and suggests that our estimated responses are unlikely to be driven by
+diﬀerences in life-circumstances and individual characteristics between groups. See Section 4.3
+for a more detailed discussion.
+3 While all individuals with remaining exemption space had an incentive bring forward and
+report capital gains in 1994, only those with paper gains at the time of the announcement were
+able to take advantage of this opportunity. Since we do not observe investors’ portfolios and,
+therefore, their unrealized gains, we cannot test the optimality of the behavior of tax ﬁlers.
+3
+
+
+--- PDF PAGE 5 ---
+the limit in the absence of the elimination of the LCGE, we ﬁnd that the 1994
+reform had a small, statistically insigniﬁcant eﬀect on 1995-1999 realized capital
+gains. However, for treated individuals whose 1985-1993 realized capital gains
+were far below the $100,000 limit, we ﬁnd that the elimination of the LCGE
+increased (unconditional) capital gains realizations by approximately 0.25 log
+points (i.e. 25 percent). We show that this increase is primarily due increases
+along the intensive rather than extensive margin.
+Taken together, our results suggest that the short-run elasticity of capital
+gains realizations with respect to the net-of-tax rate is large and positive (2.85
+to 3.61), while the medium and long-run elasticities are much smaller and even
+negative in some cases (-0.16 to -1.12). Our short-run estimates likely represent
+an upper bound on the potential magnitude of re-timing responses for two rea-
+sons. First, tax ﬁlers were able to take advantage of the expiring exemption and
+crystalize existing unrealized capital gains without selling their assets by ﬁlling
+out a form when completing their 1994 tax return. Since ﬁlling out this form was
+essentially costless compared to the potential tax savings, our estimated 1994 re-
+timing responses are likely larger than what would be observed for a typical tax
+reform. Second, some taxpayers may have inﬂated their crystalized capital gains
+on assets that are not third-party reported (e.g. certain non-ﬁnancial assets),
+since doing so would reduce their future tax liabilities without increasing their
+tax burden in 1994.4
+Our negative estimate of the long-run elasticity of capital gains realizations
+with respect to the net-of-tax rate is consistent with the wealth eﬀect arising from
+the elimination of the LCGE being relatively important in our setting. This may
+not be surprising given that the sudden elimination of the LCGE represented
+a large negative shock to the lifetime wealth for tax ﬁlers that did not expect
+to exceed the $100,000 limit and because the elimination of the LCGE was not
+viewed as a transitory tax change (Richardson and Moore (1995)). Our estimates
+suggest that this wealth eﬀect is particularly important for young tax ﬁlers with
+substantial unused LCGE space at the time the cancellation was announced.
+To contrast, our estimates of the long-run elasticity for those with little unused
+4 During this time period, capital gains realizations through banks and brokerage accounts
+were third-party reported to Canada Revenue Agency.
+4
+
+
+--- PDF PAGE 6 ---
+exemption space are small and statistically insigniﬁcant.5
+Our interpretation of the estimated responses for tax ﬁlers with modest 1985-
+1993 realizations as being consistent with a negative wealth eﬀect is grounded in
+economic theory. Generally speaking, the capital gains realization behavior of
+tax ﬁlers depends on responses along three margins: (i) savings/consumption
+decisions that aﬀect the acquisition of assets that may generate capital gains, (ii)
+portfolio asset allocation decisions that determine the fraction of wealth allocated
+to assets that may generate capital gains and (iii) the decision about when to
+realize paper gains (i.e. timing decisions). In Online Appendix C, we develop three
+simple theoretical models that isolate each of these decisions margins. Along all
+three decision margins, we show that the eﬀect of higher capital gains tax rates
+on capital gains realizations is theoretically ambiguous.6
+We benchmark our empirical estimates against a number of sensitivity checks
+and ﬁnd that our results are robust. In particular, we address three potential con-
+cerns with our empirical strategy and argue that our estimated null and positive
+long-term responses to the elimination of the LCGE are unlikely to be aﬀected
+by estimation bias. One potential concern is that our estimates of the medium
+and long-run response to the LCGE are biased downwards because treated tax
+ﬁlers brought forward capital gains realizations to 1994, leading to mechanically
+lower realizations in subsequent years. However, to the extent that the realiza-
+tions of tax ﬁlers in the treated group are lower than they otherwise would be
+in the 1995-1999 period because of a 1994 re-timing response, this would suggest
+the ‘true’ long-run response of capital gains realizations to taxes is even more
+positive than we ﬁnd.
+Another potential concern is that we misclassify individuals with pre-reform
+realizations below $100,000 who would have eventually exceeded the limit in the
+5 Strictly speaking, interpreting diﬀerences in elasticity estimates between treatment groups
+as being driven by the relative importance of the wealth eﬀect requires an assumption that tax
+ﬁlers in these groups have similar underlying structural elasticities. This assumption is plausible
+in our setting since all groups have similar demographic characteristics and income. If this is not
+the case, however, diﬀerences in the response to the elimination of the LCGE between groups
+may represent diﬀerences in underlying structural elasticities (e.g. due to diﬀerent preferences
+or discount factors) rather than the relative importance of the wealth eﬀect.
+6Section 5 contains a detailed discussion of these theoretical results and their applicability
+to our setting.
+5
+
+
+--- PDF PAGE 7 ---
+absence of the elimination of the LCGE as treated. While the elimination of
+the LCGE created an incentive to bring forward future expected realizations to
+1994 to avoid taxation, the removal of the exemption would not have aﬀected
+the long-run eﬀective marginal tax rate on capital gains or the expected lifetime
+wealth for these individuals. This misclassiﬁcation reduces our ability to identify
+long-run responses and will tend to attenuate our estimates towards zero. We
+address this concern in a number of ways . First, we estimate the causal eﬀect of
+the elimination of the LCGE separately for three diﬀerent treatment groups that
+vary in their 1985-1993 realizations and, therefore, their likelihood of being mis-
+classiﬁed. In particular, tax ﬁlers with relatively low 1985-1993 realized capital
+gains (and substantial unused exemption space) are much less likely to be mis-
+classiﬁed. Second, we check the sensitivity of our baseline results by estimating
+regression speciﬁcations on the sub-sample of tax ﬁlers over age 65. Arguably,
+our pre-reform proxy for lifetime capital gains is more accurate for this group
+given that they face less uncertainty about future earnings and retirement in-
+come needs. Finally, we drop individuals whose 1994 realization response pushes
+them over the $100,000 LCGE limit. Reassuringly, our estimates are similar for
+all of these sensitivity checks.
+A third potential concern is that we deﬁne treatment and control group status
+based on past behavior and this may introduce bias if capital gains are mean-
+reverting. We argue that this concern is unlikely to materially aﬀect our estimates
+because we deﬁne our treatment and control groups based on a long series of
+capital gains realizations (9 years). Furthermore, our event study estimates show
+no evidence of diverging pre-trends between the treatment and control groups,
+suggesting that mean-reversion is unlikely to drive our results.
+An important feature of our setting is that the LCGE limit of $100,000 was
+relatively low and did not aﬀect the incentive to save or take risk (on the margin)
+for the most aﬄuent Canadians. In spite of this, we argue that our estimates
+are informative for both researchers and policy makers because our treatment
+and control groups collectively earn between 30% and 60% of all capital gains
+income in Canada in a given year. By comparison, the share of capital gains
+income earned by those with extremely large capital gains realizations (who are
+excluded from our analysis) is typically between 20% and 40%. Thus, while our
+6
+
+
+--- PDF PAGE 8 ---
+estimates may not be externally valid for tax changes that primarily aﬀect top
+earners, they are economically relevant.
+Our results contribute to several active literatures in public ﬁnance. A num-
+ber of papers study individual responses to capital gains taxes (Feldstein et al.
+(1980); Minarik (1981); Auten and Clotfelter (1982); Lindsey (1987); Poterba
+(1987); Auerbach and Poterba (1988); Auten et al. (1989); Slemrod and Shobe
+(1990); Gillingham and Greenless (1992); Burman and Randolph (1994); Bogart
+and Gentry (1995); Auerbach and Siegel (2000), Landsman et al. (2002); Dowd
+et al. (2015); Bakija and Gentry (2014); Dowd and McClelland (2019); Buhlmann
+et al. (2020); Agersnap and Zidar (2020)).7 Compared with prior work, our set-
+ting allows for an arguably cleaner identiﬁcation of both short-run and long-run
+responses to capital gains taxes. In particular, the elimination of the LCGE led
+to an increase in the eﬀective marginal tax rate on capital gains income that
+was very salient, aﬀected a large fraction of the population and was relatively
+simple for tax ﬁlers to understand. Moreover, the tax change we study is very
+large compared to typical tax reforms: the elimination of the LCGE reduced the
+net-of-tax rate on income from realized capital gains from 1 to 1 minus 75% of a
+tax ﬁler’s eﬀective marginal tax rate. To contrast, most prior work estimates the
+impact of changes to statutory tax rates that are small and often mean-reverting
+(Agersnap and Zidar (2020)).
+A key feature of our setting is that we are able to estimate long-run responses
+to capital gains taxes without having to rely on potentially subjective measures
+of transitory and permanent tax changes, unlike prior work. The legislation to
+eliminate the LCGE was introduced as part of the Government of Canada’s 1994
+Budget as a way to help lower the federal budget deﬁcit and was reaﬃrmed in the
+1995 Budget. This reinforced the perception that the elimination of the LCGE
+was not a transitory policy change. Moreover, the fact that the elimination of the
+LCGE had no eﬀect on individuals whose prior capital gains realizations exceeded
+the $100,000 limit also allows us to construct a natural comparison group. This is
+advantageous because it allows us to assign treatment status based on immutable
+past behavior rather than endogenous marginal tax rates. Finally, the elimination
+7 For a recent summary of the literature, see Stantcheva (2020). Also, a growing literature
+estimates the eﬀects of capital gains taxes on investors’ trading behavior and portfolio asset
+allocations (Alan et al. (2010); Buhlmann et al. (2020)).
+7
+
+
+--- PDF PAGE 9 ---
+of the LCGE was the only policy that aﬀected the tax treatment of capital gains
+and other investment income during the 1990-1999 period we study. This reduces
+the likelihood that our estimates are contaminated by other policy changes.
+The expected eﬀects of the introduction of the LCGE on savings and risk
+taking was discussed in a special issue of the Canadian Public Policy journal in
+1995 (Mintz and Richardson (1995)).8 Our paper contributes to the small set of
+papers in this special issue by presenting estimates of the casual eﬀect of capital
+gains taxes on capital gains realizations using a representative panel of Canadian
+tax returns.
+Our ﬁndings also contribute to a literature that aims to understand individ-
+ual savings responses to ﬁnancial incentives (Bernheim (2002)). While our data
+do not allow us to observe changes in an individual’s overall ﬁnancial position
+(e.g. home equity and net debt are not observed), the absence of substantial
+long-run realization responses makes it less likely that individuals adjusted their
+savings along other margins. This is consistent with the results from several re-
+cent papers which ﬁnd that contributions to tax-preferred savings accounts do
+not respond strongly to tax incentives (Chetty et al. (2014); Manoli and Weber
+(2016); Messacar (2018)).9
+The remainder of the paper is structured as follows. In Section 1, we discuss
+the features of the Canadian personal income tax system and the tax treatment of
+capital gains that are relevant for our setting. Section 2 describes the longitudinal
+dataset of individual tax returns we use in the paper. In Section 3, we present
+descriptive time series evidence on capital gains realizations in Canada from 1982
+to the present. In Section 4, we describe our empirical strategy for estimating the
+8 Notably, the papers in the special issue were presented at a symposium jointly sponsored
+by the federal Department of Finance and the Institute for Policy Analysis at the University
+of Toronto held on January 27-28, 1994.
+This event was held just a few weeks before the
+February 1994 budget that announced exemption’s cancellation. As discussed by the editors of
+the special issue, the cancellation of the LCGE was completely unexpected at the time of the
+symposium.
+9 Our administrative tax return data contains information on annual contributions to tax-
+deferred retirement savings accounts as well as income from dividends and interest at the
+individual level. We use this information to investigate the extent to which the elimination of
+the LCGE aﬀected income from sources other than realized capital gains. We ﬁnd that these
+other forms of income were not signiﬁcantly aﬀected by the change in the tax incentive for
+saving caused by the elimination of the LCGE.
+8
+
+
+--- PDF PAGE 10 ---
+causal eﬀect of the elimination of the LCGE, present the main results and discuss
+several robustness checks.
+Section 5 concludes and discusses some promising
+avenues for future research.
+1
+Institutional Setting
+Table 1 summarizes the tax rules applicable to income from realized capital gains
+and the top federal and provincial marginal income tax rates for the years we
+study. The tax rules for other years, as well as the tax treatment of other invest-
+ment income (i.e. dividends and tax-deferred savings accounts) are summarized
+in Appendix Tables A.1–A.2.
+In Canada, the tax unit is the individual (rather than the couple or family)
+and the period of taxation is the calendar year; and both the federal government
+and the provinces set income tax rates. Realized capital gains have been included
+in the tax base since 1972.10 An individual’s taxable capital gains income is equal
+to their net (of losses) realized gains in a calendar year multiplied by a ﬁxed
+parameter, called the inclusion rate. The inclusion rate was 50% from 1972 to
+1987, 66.7% from 1988-1989, 75% from 1990-2000 and 50% from 2001 until the
+present (see column 2 of Table 1). Increases (resp. decreases) in the inclusion
+rate push the tax base more towards (resp. away from) a comprehensive income
+deﬁnition and increase (resp. decrease) the eﬀective marginal tax rate on capital
+gains income.
+Tax ﬁlers with net capital losses in a given year can use these losses to
+reduce their taxable capital gains income in any of the 3 preceding years or in
+any future year.
+Capital losses cannot be used to oﬀset regular income (e.g.
+earnings). Realized capital gains from certain sources are exempt from taxation.
+Most notably, realized capital gains from the disposition of a tax ﬁler’s primary
+residence do not count towards taxable income (and were not even recorded on
+10 In 1962, Prime Minister John Diefenbaker set up a commission to study the entire federal
+tax system and recommend changes for Parliament to enact. The resulting Report of the Royal
+Commission on Taxation (often referred to as the Carter Commission) of 1966 recommended
+broad changes, most notably a shift towards a comprehensive deﬁnition of income as the base
+for taxation. A more detailed review of the history of the taxation of capital income in Canada
+can be found in Richardson and Moore (1995).
+9
+
+
+--- PDF PAGE 11 ---
+tax forms until 2016). Since 1985 the proceeds from the sale of a qualiﬁed farm
+property or a qualiﬁed small business property are also exempt from taxation, up
+to a lifetime limit of $500,000. Finally, in Canada, a tax ﬁler’s death results in a
+“deemed disposition” and, therefore, a capital gains liability on any appreciated
+assets. Married couples can avoid or delay tax liabilities from deemed dispositions
+from one spouse through a “spousal rollover,” which defers the disposition until
+the death of the second spouse.
+The Lifetime Capital Gains Exemption (LCGE) was introduced by the fed-
+eral government in 1985 with the goal of encouraging risk taking and competi-
+tiveness. The LCGE exempted from taxation the realized capital gains from the
+disposition of property other than farm property and small business property up
+to a lifetime limit. Examples of income eligible for the LCGE included realized
+capital gains from the sale of ﬁnancial assets such as stocks, bonds and mutual
+funds and the proceeds from the sale of secondary residences and rental proper-
+ties. The LCGE limit was phased in gradually from $20,000 in 1985, to $50,000
+in 1986-1987 and $100,000 in 1988 onwards.11
+The LCGE was unexpectedly cancelled in February 1994 as part of the deﬁcit
+reduction plans of the newly elected federal Liberal government. In fact, the
+cancellation was so unanticipated, that it was never discussed at a symposium
+on capital gains taxation jointly sponsored by the federal Department of Finance
+and the Institute for Policy Analysis at the University of Toronto that was held
+on January 27-28, 1994, just a few weeks before the February 1994 budget that
+announced exemption’s cancellation (Mintz and Richardson (1995)). Although
+the planned reduction in the deﬁcit was mostly achieved by reductions in the level
+and growth rate of federal spending, the LCGE was eliminated on the grounds
+that many of its beneﬁciaries were high income earners who should participate
+in the austerity eﬀort (Richardson and Moore (1995)).12
+The elimination of
+the LCGE was reaﬃrmed in subsequent federal Budgets, further reinforcing the
+11 Note that the use of LCGE reduced the remaining exemption space for the sale of qualiﬁed
+property. In other words, the $500,000 exemption discussed earlier applied to the sum of all
+capital gains realizations.
+12 The announcement that the LCGE was being eliminated was made as part of the 1994
+federal Budget presented to Parliament by Minister of Finance Paul Martin on February 22,
+1994.
+10
+
+
+--- PDF PAGE 12 ---
+perception that the policy change was permanent. To ease the transition, the
+federal government allowed individuals to take advantage of any unused LCGE
+space in 1994 without having to sell their assets on a one-time basis. In particular,
+tax ﬁlers were able to crystalize unrealized capital gains (up to their remaining
+LCGE limit) by ﬁlling out a form (Form T664) when ﬁling their 1994 return.13
+Even though individuals did not have to sell their assets, the crystalized capital
+gains generated by this one-time opportunity were recorded as realized capital
+gains income on tax returns and in our data.
+Tables 1 and A.2 summarize the tax treatment of other forms of capital
+income. Interest income (both from assets held in Canada and overseas) and div-
+idends received from foreign ﬁrms are taxed at an individual’s ordinary marginal
+tax rate. In contrast, dividends from domestic ﬁrms (referred to as ‘eligible div-
+idends’) receive preferential treatment. Taxable dividend income is equal to an
+individual’s nominal dividend payment multiplied by one plus a gross-up factor.
+At the federal level, the gross-up factor has ranged from 25% to 50% over the past
+several decades but was constant at 25% during the 1990-1999 period we focus
+on. To compensate for the fact that dividend income is grossed-up, individuals
+may also claim a (non-refundable) dividend tax credit. This tax credit for eligible
+domestic dividends was stable at 13.3% during the 1990-1999 period.14 Together,
+the gross-up factor and tax credit system is designed to oﬀset the prepaid taxes
+on corporate proﬁts.
+The Canadian personal income tax system also features tax subsidies for
+retirement saving through Registered Retirement Savings Plans (RRSPs) and
+employer-sponsored Registered Pension Plans (RPPs).
+RRSPs are similar to
+Individual Retirement Accounts (IRAs) in the U.S. in that contributions are
+deductible from taxable income, investment income accumulates tax-free and
+13 Form T664 allowed individuals to crystalize their unrealized capital gains by artiﬁcially
+and appropriately increasing the cost base of their assets up to their unused LCGE space. The
+untaxed crystalized (unrealized) capital gain is the diﬀerence between the new artiﬁcial cost
+base and the original cost base.
+14 To illustrate how the gross-up and tax credit work, consider a tax ﬁler with $100 in
+eligible dividend income year t and a marginal tax rate of τt ∈[0, 1). After the gross-up, the
+individual’s federal taxable dividend income is $125 (= $100 × 1.25); their federal dividend tax
+credit is $16.625 (= $125×0.133). Their after-tax dividend income is $100−$125(τt −0.133) >
+$100(1 −τt).
+11
+
+
+--- PDF PAGE 13 ---
+Table 1: Summary of Tax Rules and Rates
+Capital Gains:
+Income Tax:
+Lifetime Exemptions:
+Federal MTR:
+Provincial Top MTRs:
+Year Inclusion General
+Small
+# of Tax Top MTR
+Top
+Range
+Median
+Rate
+Business
+Brackets
+Cutoﬀ
+MTR
+1982
+0.5
+0
+10
+53,376
+34
+13 - 33
+18
+1983
+0.5
+0
+10
+56,592
+34
+13 - 33
+19
+1984
+0.5
+0
+10
+59,424
+34
+13 - 33
+19
+1985
+0.5
+20,000
+500,000
+10
+62,160
+34
+15 - 33
+19
+1986
+0.5
+50,000
+500,000
+10
+62,657
+34
+15 - 28
+19
+1987
+0.5
+50,000
+500,000
+10
+63,347
+34
+15 - 28
+19
+1988
+0.667
+100,000
+500,000
+3
+55,000
+29
+12 - 26
+17
+1989
+0.667
+100,000
+500,000
+3
+55,605
+29
+12 - 24
+17
+1990
+0.75
+100,000
+500,000
+3
+56,550
+29
+13 - 24
+18
+1991
+0.75
+100,000
+500,000
+3
+57,568
+29
+13 - 24
+18
+1992
+0.75
+100,000
+500,000
+3
+59,180
+29
+13 - 24
+19
+1993
+0.75
+100,000
+500,000
+3
+59,180
+29
+13 - 26
+20
+1994
+0.75
+100,000
+500,000
+3
+59,180
+29
+13 - 27
+20
+1995
+0.75
+0
+500,000
+3
+59,180
+29
+13 - 27
+20
+1996
+0.75
+0
+500,000
+3
+59,180
+29
+13 - 26
+20
+1997
+0.75
+0
+500,000
+3
+59,180
+29
+13 - 27
+19
+1998
+0.75
+0
+500,000
+3
+59,180
+29
+13 - 27
+19
+1999
+0.75
+0
+500,000
+3
+59,180
+29
+13 - 27
+19
+2000
+0.667
+0
+500,000
+3
+60,009
+29
+13 - 25
+18
+2001
+0.5
+0
+500,000
+4
+100,000
+29
+10 - 30
+17
+Notes: This table summarizes tax rules for capital gains and income tax rates. Information
+for years 2002-2015 is available in Appendix Table A.1.
+12
+
+
+--- PDF PAGE 14 ---
+withdrawals are taxable. Individual contributions to RRSPs cannot exceed an
+annual limit: a certain percentage of the tax ﬁler’s annual earnings (18%-20%
+during our period of study) up to a maximum amount. The nominal value of
+the maximum RRSP contribution limit increased in recent decades from $5,500
+in 1982 to $27,830 in 2020; since 1991 unused contribution from one year can
+be carried forward to future years. Annual contributions to employer-sponsored
+RPPs reduce an individual’s RRSP contribution room.
+2
+Data
+This paper uses individual tax return data from the Longitudinal Administrative
+Databank (LAD).15 The LAD is a representative panel of 20% of Canadian tax
+ﬁlers. Each year, 20% of new ﬁlers are selected into the sample. Once in the
+LAD, individuals are followed each year they ﬁle a return and are linked across
+years using their Social Insurance Number (SIN).16 Although the most recent
+version of the LAD spans the 1982-2016 period, most of our analysis below will
+be based on the 1990-1999 window around the elimination of the LCGE. Unless
+stated otherwise, all dollar amounts we report are in 1993 dollars, the year before
+the LCGE was eliminated.17
+The LAD contains information on a tax ﬁler’s realized net capital gains and
+taxable net capital gains in all years. For 1994, reported capital gains include
+the unrealized crystalized gains claimed by tax ﬁlers taking advantage of the
+expiring LCGE. In other words, net realized capital gains in 1994 are the sum of
+realized capital gains for that year and the “deemed” realizations from the ﬁling
+of Form T664. Unfortunately, the LAD does not contain a detailed breakdown
+15 See https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=4107.
+16 Changes over time in the number of individual-year observations in the LAD reﬂect in-
+creases in the Canadian population and the fraction of individuals ﬁling a return. Though
+unlikely to aﬀect our estimates, two tax policy changes in the late 1980s increased fraction of
+individuals at the bottom of the income distribution that ﬁle a return. In Online Appendix B,
+we discuss these tax changes and show that they led to a very small increase in the number of
+low-income tax-ﬁlers.
+17 From 1993 to 2016 (the last year of our data), the Canadian Consumer Price In-
+dex increased by 49.02 percent.
+Thus, to convert 1993 dollars to 2016 dollars, multi-
+ply 1993 dollar values by approximately 1.5 (see the Bank of Canada Inﬂation Calculator
+(https://www.bankofcanada.ca/rates/related/inﬂation-calculator/)).
+13
+
+
+--- PDF PAGE 15 ---
+of capital gains by asset/security. This means that some of the capital gains
+we observe may be due to distributions from mutual funds or other investments
+that are outside of an individual’s control.18 However, unless individuals in our
+‘treated’ groups systematically began receiving more (or less) capital gains from
+these distributions after 1994 compared to the control group, the income from
+these passive sources simply adds noise to our dependent variable of interest.
+Starting in 1986, the LAD also contains information on the capital gains
+exemptions claimed by the tax ﬁlers. Notably, we cannot distinguish whether
+these exemptions are claimed under the $100,000 LCGE or the $500,000 qualiﬁed
+small business exemption.19 The LAD also contains information on the capital
+losses claimed to oﬀset current gains, though we do not observe the stock of losses
+tax ﬁlers have accumulated.
+The LAD allows us to observe income from other sources including earnings,
+dividends (domestic/eligible and foreign/ineligible) and interest, as well as basic
+demographic characteristics (age, sex, family composition) and, where applicable,
+immigration status (e.g. year of landing in Canada, origin country). Further-
+more, for all individuals selected into the LAD, some information on their spouse
+and children is available (if applicable). We use this information to investigate
+whether the response to the change in tax incentives aﬀects tax ﬁlers diﬀerently
+depending on their marital status and family composition.
+For the purposes of this study, we make a number of sample restrictions.
+First, we drop tax returns ﬁled on behalf of deceased persons. As mentioned
+earlier, the realized capital gains for individuals that pass away during a calendar
+year may be due in part to the required deemed disposition at death. Second,
+to avoid bias from extreme observations, we drop year-person observations with
+realized annual capital gains exceeding $762,367 in 1993 dollars (equivalent to
+just over $500,000 in 1982 dollars or $1.1 million in 2016 dollars).
+Finally, Statistics Canada requires that all researchers working with the LAD
+18 Most mutual funds and exchange traded funds (ETFs) are organized as trusts that are
+owned by unit holders. Any gains from trading activity generate capital income that is taxable.
+Since the trust is not taxable, any gains are distributed to the unit holders, regardless of whether
+or not the unit holder buys/sells units throughout the year.
+19 The elimination of the LCGE is clearly observable in the data with both the fraction of tax
+ﬁlers claiming an exemption and the mean exemption claimed falling by more than 80 percent
+after 1994.
+14
+
+
+--- PDF PAGE 16 ---
+abide by statistical conﬁdentiality rules. These rules do not allow the release
+of raw summary statistics for variables measured in dollars.20 Consequently, all
+summary statistics (both ﬁgures and tables) presented in this paper are calculated
+using the following two-step procedure. First, a small amount of noise is added
+to the variable underlying the summary statistic. Second, the resulting statistic
+(e.g. mean, median) is rounded according to the following rules. Dollar values
+of less than $1000 are rounded to the nearest $10, while dollar estimates above
+$1000 are rounded to the nearest $100. All sample size counts are rounded to
+the nearest 5. The counts shown are inﬂated to represent the full population of
+Canadian tax ﬁlers from the 20% LAD random sample.
+3
+Time Series Evidence
+In this section, we present time series evidence on the evolution of realized capital
+gains in Canada from 1982 to 2016. We also compare this series to the perfor-
+mance of the Canadian stock market over the period we study. Figure 1 plots the
+unconditional mean of net realized capital gains (in 1993 dollars) from 1982 to
+2016 on the left axis. The right axis plots the (inﬂation-adjusted) performance
+of the Standard and Poor’s Toronto Stock Exchange Composite Index (TSECI).
+The shaded green area indicates the 1985-1994 period when the LCGE was in
+place. Average net realized capital gains increased during the ﬁrst few years the
+LCGE was in place before falling back to prior levels by 1990. The absence of
+strong long-run response to the introduction of the LCGE cannot be attributed to
+poor conditions in ﬁnancial markets since the stock market performed well during
+this period. The large spike in realized capital gains that is clearly observed in
+1994 is a multiple of the average gains for any other year in the sample.21
+Figure 2(a) plots the fraction of tax ﬁlers who report positive net capital
+gains each year from 1982-2016. The fraction of Canadian tax ﬁlers reporting
+20 To contrast, output based on regression models does not require that noise be added to
+the data or the resulting estimates.
+21 Appendix Figure D.2 breaks down responses by the amount of reported capital gains
+and suggests that the spike in 1994 realizations was not due to a large number of very small
+realizations. Most of the spike in 1994 can be attributed to an increase in the number of tax
+ﬁlers reporting large capital gains.
+15
+
+
+--- PDF PAGE 17 ---
+Figure 1: Average Reported Capital Gains Over Time
+0
+5000
+10000
+15000
+20000
+25000
+30000
+35000
+40000
+S&P TSE Index
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+4000
+capital gains (1993 $)
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+capital gains (1993 $)
+S&P TSE Index
+Notes: The green shaded area marks the period of time (1985-1994) when the LCGE was
+available.
+The red vertical lines indicate the years where the capital gains inclusion rate
+changed (from 50% to 66.6% in 1988, from 66.6% to 75% in 1990 and from 75% to 50%
+in 2000).
+The dashed grey line shows evolution of the inﬂation-adjusted values of the
+Standard and Poor’s Toronto Stock Exchange Composite Index over the same time period.
+positive capital gains has increased substantially over time, from approximately
+2.5 percent of all ﬁlers in 1982 to nearly 10 percent in recent years. With the
+exception of a large spike in 1994, the fraction of tax ﬁlers reporting positive
+capital gains did not increase materially during the years the LCGE was available.
+In the years since the LCGE was eliminated, the fraction of Canadians reporting
+positive capital gains has tended to be positively correlated with the performance
+of the TSECI.
+Figure 2(b) plots the average realized capital gains (in 1993 dollars) among
+tax ﬁlers reporting positive gains.
+After falling from 1982-1984, the average
+realized capital gain increased substantially from 1985-1990, before leveling oﬀ.
+One interpretation of this increase is that the introduction of the LCGE led to
+increased realizations among those reporting positive gains. However, another
+interpretation is that part of the observed increase may be due to a change in
+the composition of those reporting positive gains. Indeed, the fraction reporting
+16
+
+
+--- PDF PAGE 18 ---
+Figure 2: Capital Gains Over Time – Extensive and Intensive Margin Responses
+(a) Percent Positive
+0
+2500
+5000
+7500
+10000
+12500
+S&P TSE Index
+0
+2.5
+5
+7.5
+10
+12.5
+% with positive net capital gains
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+% with positive net capital gains
+S&P TSE Index
+(b) Average Positive
+0
+5000
+10000
+15000
+20000
+25000
+30000
+35000
+40000
+S&P TSE Index
+0
+5000
+10000
+15000
+20000
+25000
+30000
+35000
+40000
+capital gains (1993 $)
+19821985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+capital gains (1993 $)
+S&P TSE Index
+Notes:
+The green shaded area marks the period of capital gains exemption,
+1985-
+1994.
+The
+red
+vertical
+lines
+mark
+capital
+gains
+inclusion
+rate
+changes:
+in-
+crease
+from
+50%
+to
+66.6%
+and
+further
+to
+75%
+in
+1988
+and
+1990;
+and
+a
+de-
+crease
+from
+75%
+to
+50%
+in
+2000.
+The
+dashed
+grey
+line
+shows
+the
+inﬂation-
+adjusted values of the Standard and Poor’s Toronto Stock Exchange Composite Index.
+a positive capital gain fell from about 5 percent in 1984 to just over 2.5 percent
+in 1990.
+Furthermore, the average realized gain by positive contributors fell
+substantially after the elimination of the LCGE just as the fraction reporting
+positive gains began increasing.
+The series in Figure 2(a) also exhibit small declines in 1988 and 1990, corre-
+sponding to the years the inclusion rate increased from 50% to 66.67% and from
+66.7% to 75%, respectively. Similarly, there is a clear spike in the series in 2000
+when the inclusion rate decreased from 75% to 50%.
+Attributing the annual ﬂuctuations in the series in Figures 1 and 2 to changes
+in the tax treatment of capital gains is challenging because of ﬂuctuations in the
+business cycle and stock market, changes in the composition of tax ﬁlers reporting
+capital gains and the fact that there were multiple tax changes in the late 1980s.
+This motivates our choice to focus on the 1990-1999 period around the elimination
+of the LCGE when the policy environment was otherwise stable. Furthermore,
+focusing on this reform allows us to construct a credible comparison group with
+which we can compare those aﬀected by the elimination of the LCGE. This is the
+focus of our analysis in Section 4.
+17
+
+
+--- PDF PAGE 19 ---
+4
+Causal Analysis
+4.1
+Identiﬁcation Approach
+The introduction and subsequent elimination of the LCGE dramatically changed
+the eﬀective marginal tax rate on capital gains income for most tax ﬁlers. The
+majority of tax ﬁlers report relatively small amounts of capital gains over the
+life-cycle (see Figure D.1 in the Online Appendix). For these ﬁlers, the $100,000
+LCGE limit did not bind so its elimination in 1994 led to a large increase in
+the eﬀective marginal tax rate on capital gains income. On the other hand, for
+the minority of tax ﬁlers with large capital gains, the LCGE created a one-time
+windfall that did not change their marginal incentives to realize capital gains.
+Our identiﬁcation strategy exploits the diﬀerent incentives faced by these groups
+around the 1994 elimination of the LCGE. Importantly, there were no other
+federal tax changes during this period.
+In our setting, an ideal experiment would involve comparing the annual cap-
+ital gains realizations of individuals who, in absence of the cancellation of the
+LCGE, would realize less than $100,000 worth of capital gains during their life-
+time, to those who would realize more than $100,000. Unfortunately, the lifetime
+capital gains of individuals are not observed until they are deceased and tax ﬁl-
+ers face uncertainty about their lifetime capital gains (including the uncertainty
+about net ﬁnancial returns which may be aﬀected by changes in tax policy).
+Furthermore, the observed realizations of tax ﬁlers in the years after 1994 are en-
+dogenous to the elimination of the LCGE. Consequently, our empirical strategy
+relies on a proxy for lifetime capital gains and, in turn, the likelihood that an
+individual was aﬀected by the cancellation of the LCGE.
+We use the sum of reported 1985-1993 capital gains as a proxy for lifetime
+capital gains. Let CGit denote tax ﬁler i’s reported net capital gain in year t.
+Our proxy for lifetime capital gains is Proxyi = P1993
+t=1985 CGit. Our choice of this
+proxy is driven by several considerations. First, our proxy is based on pre-1994
+capital gains and, therefore, is based on immutable pre-cancellation behavior.
+Second, capital gains exhibit strong mean-reversion so proxies based on just a
+few years of capital gains realizations are likely to rank individuals incorrectly.
+Relying on a large number of years gives us the greatest predictive power for
+18
+
+
+--- PDF PAGE 20 ---
+lifetime capital gains.
+We assign tax ﬁlers to the comparison group or one of three treatment groups
+based on the variable Proxyi.
+Our control group consists of tax ﬁlers whose
+1985-1993 capital gains realizations were between $100,000 and $133,333 (1993
+dollars).22
+The pre-elimination realizations of this group exceeded the LCGE
+limit and, therefore, they should be unaﬀected by the 1994 reform. Tax ﬁlers
+with values of Proxyi less than $100,000 include both individuals whose ex-
+pected future capital gains realizations would see them exceed the LCGE thresh-
+old and those whose expected future capital gains realizations would not see
+them exceed the LCGE threshold.
+Since the elimination of the LCGE may
+have aﬀected the long-run incentives of these individuals diﬀerently, we parti-
+tion tax ﬁlers whose values of Proxyi are less than $100,000 into three groups:
+(i) Proxyi ∈[$66, 667; $100, 000), (ii) Proxyi ∈[$33, 334; $66, 667), and (iii)
+Proxyi ∈[$16, 667; $33, 334).
+We exclude individuals with very small capital
+gains in 1985-1993 period from our analysis because they are substantially dif-
+ferent from the tax ﬁlers in the other treatment and control groups.23 Our treat-
+ment groups includes individuals whose 1994 capital gains bring them above the
+$100,000 LCGE limit. We intentionally include these individuals in our treat-
+ment groups because the decision to report large 1994 gains is endogenous to the
+exemption cancellation. Nevertheless, in a robustness checks described in Section
+4.3, we show that dropping these ﬁlers does not change our results materially.
+The average age of tax ﬁlers in all three of our treatment groups is similar
+to the average age of tax ﬁlers in the comparison group (see Online Appendix
+F). This suggests that individuals in all groups are at similar points in the life-
+cycle. Consequently, those with lower values of Proxyi are less likely to have
+counterfactual capital gains realizations that would see them eventually exceed
+the $100,000 LCGE limit. In sensitivity checks described in Section 4.3, we sup-
+plement our main regression speciﬁcations by restricting the sample to diﬀerent
+age groups (young adults, middle age adults and senior citizens) and by adding
+group-by-age ﬁxed eﬀects and year-by-age ﬁxed eﬀects. We show that our results
+22 The 2016 dollar value of the nominal $100,000 exemption in 1993 was $150,000.
+23 In particular, tax ﬁlers with values of Proxyi below $16,667 are, on average, 10 years
+younger than those in the other groups and have annual earnings signiﬁcantly below the other
+groups. Estimates for this group are available upon request.
+19
+
+
+--- PDF PAGE 21 ---
+are qualitatively similar for all age groups and for various ways of accounting for
+age/life-cycle diﬀerences between tax ﬁlers.
+Although we exclude individuals with both very large and very small reported
+capital gains during the 1985-1993 period, our analysis sample still comprises tax
+ﬁlers that account for a large share of annual capital gains. Figure 3(a) shows
+that each of our treatment and control groups accounts for between 5% to 20% of
+annual capital gains in Canada. Collectively, the tax ﬁlers in our analysis sample
+(treatment and control) account for nearly 60% of all capital gains reported in
+1985-1994, and about 25% in 1995-1999, as shown in Figure 3(b). Figure 3 also
+provides indirect support for our empirical strategy: the share of capital gains
+attributed to each of our treatment and control groups evolve similarly over time.
+The share of national capital gains earned by these groups decreases over time as
+they age (tax ﬁlers in our treatment and comparison groups were in their early
+60s, on average, in 2000).24
+Figure 3: Share of Capital Gains Received By Group
+(a) Treatment Groups and Control
+0
+5
+10
+15
+20
+25
+share of total reported capital gains
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+100K-133K
+67K-100K
+33.33K-67K
+17K-33K
+(b) Included vs Omitted Groups
+0
+20
+40
+60
+80
+share of total reported capital gains
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+17K-133K (our treat+control)
+>133K (excluded)
+<17K (excluded)
+Notes: Figure 3(a) plots the share of capital gains in a given year that is reported by the con-
+trol group or by one of the treatment groups. Figure 3(b) plots the share of capital gains in
+a given year that is reported (collectively) by our treated/control groups and by two omitted
+groups of tax ﬁlers: those with large capital gains and with small capital gains in 1985-1993.
+For each treatment group k, we estimate the unconditional and intensive
+24 Figure 3(b) shows that the group of younger tax ﬁlers with low 1985-1993 capital gains
+(i.e. the Proxyi < $17K group) accounts for an increasing share of national capital gains over
+time. This is likely due to a combination of age eﬀects and the fact that this group represents
+the vast majority of tax ﬁlers in Canada.
+20
+
+
+--- PDF PAGE 22 ---
+margin responses to the cancellation of the LCGE using the following statistical
+model:
+ln(1 + CGit) = α + β · Treatk
+i + δt +
+1999
+X
+t=1990
+t̸=1993
+γτ · 1t=τ · Treatk
+i + Xit + ηi + eit (1)
+where CGit is inﬂation-adjusted capital gains in dollars for tax ﬁler i in year
+t, Treatk
+i is an indicator variable for individuals treatment group k, δt are year
+ﬁxed eﬀects, Xit are individual controls (gender, age, age squared, family type,
+number of children, postal code ﬁxed eﬀects). The variable eit is the error term.
+We estimate speciﬁcation (1) both with and without individuals ﬁxed eﬀects ηi,
+as well as with and without controls for the natural logarithm of a tax ﬁler’s total
+(broad) income. We add $1 to CGit so that the dependent variable is deﬁned
+for tax ﬁlers with no capital gains in any given year. Unless otherwise noted,
+all conﬁdence intervals reported in the ﬁgures and tables below are based on
+heteroskedasticity robust standard errors.25
+We estimate the eﬀect of the cancellation of the LCGE on the likelihood
+of reporting realized capital gains (i.e. the extensive margin response) using the
+following linear probability model (LMP) regression model:
+Positive CGit = α + β · Treatk
+i + δt +
+1999
+X
+t=1990
+t̸=1993
+γτ · 1t=τ · Treatk
+i + Xit + ηi + eit (2)
+where Positive CGit is equal to 1 if tax ﬁler i reports positive capital gains in
+year t and zero otherwise. Our estimates of γτ in both equations (1) and (2) are
+unbiased if the counterfactual capital gains realizations of tax ﬁlers in the treated
+groups would have followed the path of the realizations of those in the control
+group after the removal of the LCGE in 1994 (i.e. parallel trends). Below, we
+present evidence suggesting that this assumption is plausible in our setting.
+25 Estimates for speciﬁcations where the dependent variable is in levels are qualitatively
+similar and are available in Appendix Figure E.1. Speciﬁcations with individual ﬁxed eﬀects
+absorb term Treati and any time-invariant controls Xi.
+21
+
+
+--- PDF PAGE 23 ---
+Figure 4: Responses by Capital Gains Levels in 1982-1993
+(a) Average Capital Gains
+1
+2
+3
+4
+log(capital gains in 1993$)
+1990
+1992
+1994
+1996
+1998
+2000
+year
+100K-133K
+67K-100K
+33.33K-67K
+17K-33K
+(b) Average Positive CGs
+6.5
+7
+7.5
+8
+8.5
+9
+log(capital gains in 1993$)
+1990
+1992
+1994
+1996
+1998
+2000
+year
+100K-133K
+67K-100K
+33.33K-67K
+17K-33K
+(c) Percent with Positive CGs
+20
+30
+40
+50
+percent with positive CGs
+1990
+1992
+1994
+1996
+1998
+2000
+year
+100K-133K
+67K-100K
+33.33K-67K
+17K-33K
+Notes:
+This ﬁgure plots: (a) the average natural logarithm of $1 + realized capital gains by year, sep-
+arately for all tax ﬁlers in the treated and control groups, (b) the average natural logarithm of $1
++ realized capital gains by year, separately for tax ﬁlers in the treated and control groups with pos-
+itive gains,
+(c) the fraction of tax ﬁlers reporting positive capital gains by year,
+separately for all
+tax ﬁlers in the treatment and control groups.
+All dollar amounts are expressed in 1993 dollars.
+4.2
+Results
+Figure 4(a) plots the average values of the natural logarithm of $1 + CGit,
+separately for tax ﬁlers in the diﬀerent treatment groups and the control group.
+Figures 4(b) and (c) plot average capital gains for those reporting positive values
+and the fraction of tax ﬁlers that report positive capital gains, respectively.
+Figure 4 conﬁrms that, on average, individuals with higher values of Proxyi
+realize more capital gains and are more likely to report positive capital gains each
+year. This suggests that our proxy for lifetime capital gains correctly ranks tax
+ﬁlers. Furthermore, while we see a pronounced spike in the amount of capital
+gains reported by tax ﬁlers in the treated groups (i.e. individuals with Proxyi
+22
+
+
+--- PDF PAGE 24 ---
+of less than $100,000) in 1994, the control group continues to follow its pre-1994
+trend. This behavior is consistent with tax ﬁlers in the control group having no
+tax-incentive to report large capital gains in 1994 because they already exhausted
+their LCGE limit.
+Figure 4 also allows us to evaluate the plausibility of the parallel trends
+assumption by comparing the evolution of the pre-1994 capital gains realizations
+of tax ﬁlers in the treatment and control groups.
+Reassuringly, the pre-1994
+trends in all three treatment groups and the comparison group are stable. Online
+Appendix F provides further evidence on the plausibility of the parallel trends
+assumption by showing that the demographic characteristics of tax ﬁlers in the
+treatment and control groups evolved similarly around 1994.
+Having presented the raw data, we are now ready to report the estimates
+from our regression speciﬁcations.
+The γτ estimates (and the resulting conﬁ-
+dence intervals) from speciﬁcations (1) and (2) are presented in Figures 5-7. The
+coeﬃcients presented are based on a speciﬁcation that include the individual con-
+trols (gender, age, age squared, family type, number of children, postal code ﬁxed
+eﬀects), group ﬁxed eﬀects and year ﬁxed eﬀects but does not include individ-
+ual ﬁxed eﬀects. Although our estimates are similar with and without individual
+ﬁxed eﬀects, we exclude them in our baseline model because capital gains realiza-
+tions are infrequent. This leads to noisier estimates, especially in speciﬁcations
+that restrict the sample to tax ﬁlers with positive realizations. In our baseline
+speciﬁcations, we also do not include controls for total (broad) income because it
+is mechanically correlated with the dependent variable. Nevertheless, Appendix
+Figures E.2 and E.3 in the Online Appendix present estimates from speciﬁca-
+tions that include the individual ﬁxed eﬀects and income controls, respectively.
+Reassuringly, our results are robust to the inclusion of these controls.
+Figure 5 plots the γτ estimates when the dependent variable is the natural
+logarithm of $1 plus the realized capital gains and the sample is all tax ﬁlers in
+the treatment and control groups. Three things stand out in this ﬁgure. First, the
+realized capital gains of tax ﬁlers in each of the treated groups evolved in a similar
+way as the control group in the years leading up to the cancellation of the LCGE
+(even after controlling for individual demographic characteristics). Second, the
+realized capital gains of ﬁlers in all three treatment groups increases signiﬁcantly
+23
+
+
+--- PDF PAGE 25 ---
+Figure 5: Unconditional Changes in Capital Gains Realizations
+-.25
+0
+.25
+.5
+.75
+1
+1.25
+coefﬁcient estimates (Δ log(CG))
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.25
+0
+.25
+.5
+.75
+1
+1.25
+coefﬁcient estimates (Δ log(CG))
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.25
+0
+.25
+.5
+.75
+1
+1.25
+coefﬁcient estimates (Δ log(CG))
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 17K-33K CG in 1985-1993 (1993$)
+Notes:
+Figure 5 plots the estimates of coeﬃcients γτ from estimating speciﬁcation (1)
+described in Section 4.1 when the dependent variable is the natural logarithm of un-
+conditional realized capital gains (i.e. $1 plus CGit).
+In all panels, the control group
+is tax ﬁlers with values of Proxyi ∈[100, 000, 133, 333).
+The treatment group in the
+left panel is tax ﬁlers with values of Proxyi ∈[66, 667, 100, 000).
+The treatment group
+in the middle (resp. right) panel is tax ﬁlers with values of Proxyi ∈[33, 334, 66, 667)
+(resp. Proxyi
+∈[16, 667, 33, 334)). Number of observations:
+289,735; 525,650; 596,595.
+relative to the control group in 1994 (the omitted interaction term is for 1993).
+The coeﬃcient estimates of approximately 0.8-1.0 suggest that tax ﬁlers in the
+treatment groups increased their capital gains realizations by 80 to 100 percent
+relative to the control group from 1993 to 1994. Third, the γτ estimates during
+the 1995-1999 years are either close to zero or small and positive. These estimates
+suggest that the cancellation of the LCGE had no eﬀect on the medium/long-run
+capital gains realizations of tax ﬁlers in the highest treatment group (i.e. Proxyi ∈
+[$66, 667, $100, 000)) and a modest positive eﬀect on medium/long-run capital
+gains realizations of those in the medium (i.e. Proxyi ∈[$33, 335, $66, 667)) and
+low (i.e. Proxyi ∈[$16, 667, $33, 334) treatment groups.
+Our estimates of the short-run eﬀects of the elimination of the LCGE in 1994
+are consistent with prior evidence that capital gains realizations are relatively
+easy to manipulate and re-time in the short-run (Burman and Randolph (1994);
+Auerbach and Siegel (2000); Agersnap and Zidar (2020)). The short-run response
+to the removal of the LCGE we estimate is large in magnitude.
+This is not
+surprising because tax ﬁlers did not have to sell their assets to take advantage
+of the crystallization opportunity provided by the government. In spite of this
+opportunity, only 10% of all taxpayers reported positive net capital gains in
+1994. A likely explanation is the fact that only those with paper gains as of
+February 1994 were able to take advantage of the crystallization opportunity.
+24
+
+
+--- PDF PAGE 26 ---
+Moreover, the fact that the capital gains form ﬁnancial assets were reported to
+the Canada Revenue Agency by third parties (i.e. banks and brokerages) made
+the false reporting of capital gains risky for certain assets.
+Since we do not
+observe the portfolios of tax ﬁlers (and, therefore, their unrealized paper gains),
+we cannot determine the extent to which indivduals left money on the table by
+failing to take advantage of the 1994 crystalization opportunity.
+The estimates reported in Figure 5 suggest that the cancellation of the LCGE
+did not lead to a large drop in reported realized capital gains in the medium-to-
+long run. Rather, our estimates suggest a small, statistically insigniﬁcant eﬀect
+for individuals with values of Proxyi ∈[66, 667, 100, 000) and an approximately
+25% increase for tax ﬁlers with Proxyi ∈[16, 667, 33, 333). All else equal, an
+increase in the eﬀective marginal tax rate on capital gains income should lead tax
+ﬁlers to substitute away from reporting realized taxable gains. The fact that we
+do not observe a decrease in realized capital gains for any of the treatment groups
+suggests that the income/wealth eﬀects arising from the removal of the LCGE
+oﬀset the substitution eﬀect. The importance of income/wealth eﬀects appears to
+be especially important for tax ﬁlers with substantial unused exemption space at
+the time the LCGE was cancelled. In Appendix C, we develop three theoretical
+models of capital gains realization behavior and show that the income/wealth
+eﬀect aﬀects responses to capital gains taxes along the savings, spending and
+portfolio asset allocation decision margins. We discuss these models further in
+Section 5.
+We also explored the extent to which our estimates on unconditional realized
+taxable gains can be explained by responses along the extensive and intensive
+margins. Figures 6 and 7 present estimates of the eﬀect of the cancellation of
+the LCGE on average positive capital gains realizations and the likelihood of
+reporting positive capital gains realizations, respectively. Our estimates suggest
+that the cancellation of the LCGE increased the fraction of tax ﬁlers in the treat-
+ment groups with Proxyi ∈[66, 667, 100, 000) and Proxyi ∈[33, 334, 66, 667)
+reporting positive realized capital gains by approximately 7.5 percentage points
+in 1994, with no statistically signiﬁcant change in the medium/long-run. Fur-
+thermore, our estimates for these two treatment groups suggest that the average
+capital gains among those with positive realizations fell by approximately 10
+25
+
+
+--- PDF PAGE 27 ---
+percent relative to the control group. However, our intensive margin estimates
+for these treatment groups are often not statistically signiﬁcant at conventional
+levels.
+Figure 6: Extensive Margin: Changes in Probability of Realizations
+-.05
+-.025
+0
+.025
+.05
+.075
+.1
+.125
+coefﬁcient estimates (in p.p)
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.05
+-.025
+0
+.025
+.05
+.075
+.1
+.125
+coefﬁcient estimates (in p.p)
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.05
+-.025
+0
+.025
+.05
+.075
+.1
+.125
+coefﬁcient estimates (in p.p)
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 17K-33K CG in 1985-1993 (1993$)
+Notes: Notes: Figure 6 plots the estimates of coeﬃcients γτ from estimating speciﬁcation
+(2) described in Section 4.1 when the dependent variable is equal to 1 if a tax ﬁler reports
+positive realized capital gains in a given year and zero otherwise.
+In all panels, the con-
+trol group is tax ﬁlers with values of Proxyi ∈[100, 000, 133, 333).
+The treatment group
+in the left panel is tax ﬁlers with values of Proxyi ∈[66, 667, 100, 000).
+The treatment
+group in the middle (resp. right) panel is tax ﬁlers with values of Proxyi ∈[33, 334, 66, 667)
+(resp. Proxyi
+∈[16, 667, 33, 334)). Number of observations:
+289,735; 525,650; 596,595.
+For the Proxyi ∈[16, 667, 33, 334) treatment group, our estimates suggest
+that the cancellation of the LCGE increased the likelihood of reporting positive
+capital gains by 7.5 percentage points in the short-run and by less than 2.5
+percentage points after 3-5 years. Our intensive margin estimates suggest that
+the average positive gains of this treatment group increased by approximately
+125% in 1994 and by 25%-30% over the following 3-5 years.
+Taken together, our results suggest that in the short-run, the eﬀects of the
+elimination of the LCGE on unconditional capital gains are remarkably similar
+for all three treatment groups. Moreover, the responses along the intensive and
+extensive margins are similar for all three treatment groups in 1994. Over the
+medium and long-run, however, the eﬀects of the elimination of the LCGE are
+heterogeneous and vary across the three treatment groups. For tax ﬁlers with
+1985-1993 capital gains close to the $100,000 limit, the cancellation of the LCGE
+had no eﬀect on the likelihood of reporting positive capital gains and a modest
+negative but statistically insigniﬁcant eﬀect on the amount of realized capital
+gains reported. To contrast, the cancellation of the LCGE increased both the
+likelihood of reporting positive capital gains and the average positive realized
+26
+
+
+--- PDF PAGE 28 ---
+Figure 7: Intensive Margin: Changes in Positive Capital Gains Realizations
+-.25
+0
+.25
+.5
+.75
+1
+1.25
+coefﬁcient estimates (Δ log(CG))
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.25
+0
+.25
+.5
+.75
+1
+1.25
+coefﬁcient estimates (Δ log(CG))
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.25
+0
+.25
+.5
+.75
+1
+1.25
+coefﬁcient estimates (Δ log(CG))
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 17K-33K CG in 1985-1993 (1993$)
+Notes: Figure 7 plots the estimates of coeﬃcients γτ from estimating speciﬁcation (1) de-
+scribed in Section 4.1 when the dependent variable is the natural logarithm of realized cap-
+ital gains (i.e. $1 plus CGit) on the sample of tax ﬁlers with positive realizations.
+In all
+panels, the control group is tax ﬁlers with positive realizations and values of Proxyi ∈
+[100, 000, 133, 333). The treatment group in the left panel is tax ﬁlers with positive realiza-
+tions and values of Proxyi ∈[66, 667, 100, 000). The treatment group in the middle (resp.
+right) panel is tax ﬁlers with positive realizations and values of Proxyi ∈[33, 334, 66, 667)
+(resp. Proxyi ∈[16, 667,
+33, 334)). Number of observations:
+105,105; 171,335; 186,125.
+capital gains for tax ﬁlers with substantial unused exemption room (i.e. Proxyi ∈
+[16, 667, 33, 334).
+4.3
+Robustness Checks and Heterogeneity Analysis
+In this section we discuss potential threats to our identiﬁcation assumptions and
+present the results from a number of sensitivity checks. Broadly speaking, threats
+to our identiﬁcation assumptions can be separated into one of three categories:
+(i) mechanical bias in our estimates due to re-timing responses, (ii) bias due to
+the misclassiﬁcation of some tax ﬁlers in the treatment groups, and (iii) bias due
+to the presence of mean-reversion. Towards the end of the section, we discuss how
+responses to the elimination of the LCGE varied with individuals’ demographic
+characteristics.
+4.3.1
+Robustness Checks
+Re-timing responses. One potential concern is that our estimates of the long-
+run eﬀects of the LCGE are mechanically biased downwards because some in-
+dividuals may have brought forward to 1994 realizations that would have been
+realized in the 1995-1999 period or later. However, to the extent that our γτ es-
+27
+
+
+--- PDF PAGE 29 ---
+timates are mechanically biased because of this re-timing behavior, this suggests
+that the ‘true’ medium- and long-run responses to capital gains taxes are even
+more positive than we ﬁnd.
+Misclassiﬁcation. Another potential threat to our estimates of the short-
+run and long-run sensitivity of capital gains realizations to taxes is that we could
+be mistakenly classifying some tax ﬁlers as treated when they should be allocated
+to the control group. In particular, some tax ﬁlers with 1985-1993 capital gains
+less than $100,000 might have been holding substantial unrealized capital gains
+at the time of the 1994 reform. These individuals might very well have exceeded
+the LCGE limit during the 1995-1999 period in the absence of the reform. For
+these ﬁlers, the removal of the LCGE created an incentive to bring forward future
+unrealized capital gains but did not aﬀect their expected future eﬀective marginal
+tax rate. The presence of these individuals in our treatment groups attenuates
+our estimates because some treated tax ﬁlers did not experience a change in their
+long-run incentive to realize capital gains.
+We assess the importance of this potential misclassiﬁcation on our baseline
+estimates in three ways. First, the likelihood of misclassifying tax ﬁlers as treated
+in the way mentioned above should decrease as we consider individuals with lower
+values of the Proxyi (i.e. those with smaller 1985-1993 realized capital gains).
+This is supported by the fact that tax ﬁlers in all three treatment and control
+groups are similar in age and, therefore, are likely to be at similar points in the
+life-cycle (see Figure F.1 in the Online Appendix). Provided that the control
+group is a good counterfactual for those with low 1985-1993 realizations (i.e. the
+Proxyi ∈[16, 667, 33, 334) treatment group), our empirical strategy still allows
+us to identify the long-run response of realizations to capital gains taxes. Our
+estimates in Figures 5 – 7 make clear that the medium and long-run responses
+to the cancellation of the LCGE are larger in magnitude (and positive) for tax
+ﬁlers with low 1985-1993 realizations, precisely those for whom we are the least
+likely to misclassify.
+A second way to assess the potential misclassiﬁcation of treated individuals
+is to restrict the sample to tax ﬁlers whose cumulative pre-1994 realizations are a
+more accurate proxy for their lifetime gains. Arguably, the pre-1994 realizations
+of older tax ﬁlers are a better proxy for their lifetime gains. In Figure 8, we
+28
+
+
+--- PDF PAGE 30 ---
+Figure 8: Capital Gains Realizations of 65+ Year Olds
+Panel A: Unconditional Capital Gains
+-.5
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17K-33K  CG in 1985-1993 (1993$)
+Panel B: Intensive Margin: Positive Capital Gains
+-.2
+0
+.2
+.4
+.6
+.8
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17K-33K  CG in 1985-1993 (1993$)
+Notes: Figure 8 plots the estimates of coeﬃcients γτ from estimating speciﬁcation (1) de-
+scribed in Section 4.1 when the dependent variable is the natural logarithm of uncondi-
+tional realized capital gains (i.e. $1 plus CGit) and the sample is restricted to tax ﬁl-
+ers over age 65.
+In Panel B, the sample is further restricted to tax ﬁlers with posi-
+tive realized capital gains income.
+In all panels, the control group is tax ﬁlers with val-
+ues of Proxyi ∈[100, 000, 133, 333).
+The treatment group in the left panel is tax ﬁl-
+ers with values of Proxyi
+∈
+[66, 667, 100, 000).
+The treatment group in the middle
+(resp. right) panel is tax ﬁlers with values of Proxyi ∈[33, 334, 66, 667) (resp. Proxyi ∈
+[16, 667, 33, 334)). Number of observations in Panel A (left, middle, right): 109,120; 192,410;
+206,385.
+Number of observations in Panel B (left, middle, right): 38,080; 58,425; 59,265.
+restrict the sample to tax ﬁlers over age 65. These ﬁlers are likely in the asset
+decumulation phase of the life-cycle and are less likely to be misclassiﬁed.26 Our
+results are qualitatively similar to those reported in Figures 5 – 7. In particular,
+the cancellation of the LCGE approximately doubled the realized capital gains
+of tax ﬁlers in all treatment groups in 1994. The cancellation of the LCGE had
+no statistically signiﬁcant eﬀect on the realizations of tax ﬁlers with high pre-
+reform capital gains (i.e. those with Proxyi ∈[66, 667, 100, 000)). To contrast,
+the cancellation of the LCGE increased the medium- and long-run realizations of
+those with low 1985-1993 capital gains.
+As a third sensitivity check against the potential misclassiﬁcation concern, we
+26 Figure E.7 in the Online Appendix reports the analogous estimates for other age groups.
+29
+
+
+--- PDF PAGE 31 ---
+drop individuals whose 1994 capital gains bring them above the $100,000 LCGE
+limit. This leads to an approximately 18% drop in the sample. Perhaps not
+surprisingly, tax ﬁlers with higher values of Proxyi (and, therefore, less unused
+exemption space) were more likely to be dropped than ﬁlers with modest 1985-
+1993 realizations. Intuitively, by dropping ﬁlers that were easily able to exhaust
+their unused LCGE space in 1994, we are left with tax ﬁlers in the treatment group
+that deﬁnitely experienced an increase to their medium-run and long-run eﬀective
+marginal tax rate on capital gains income. The results from this sensitivity check
+are reported in Online Appendix Figure E.4. Reassuringly, our estimates are very
+similar (especially for those with modest 1985-1993 realizations).
+Mean-reversion.
+A third concern is that capital gains realizations are
+likely to be mean-reverting. Mean reversion could be problematic in our setting
+since our treatment and control groups are deﬁned based on past capital gains
+realizations.
+To alleviate this concern, we deﬁned our treatment and control
+groups based on capital gains over a nine year period (i.e. 1985-1993).
+This
+relatively long horizon should reduce the likelihood that our estimates are biased
+due to mean reversion. The estimates presented in Figures 5 – 7 support this
+view. In particular, there is no evidence that the pre-trends of tax ﬁlers in any of
+the treatment groups are converging or diverging from those of the comparison
+group. In order for mean reversion to bias our results, it would have to be the
+case that the realizations of tax ﬁlers in all treated groups (with fewer1985-1983
+capital gains) began increasing compared to the control group (whose 1985-1993
+gains were higher) precisely in 1994, even after following a similar path in the
+preceding years.
+We present evidence from additional checks against mean reversion in the
+Online Appendix. In Appendix Figure E.5, we extend the event window from
+1990-1999 to 1984-2006. Recall that our main analysis focuses on the 1990-1999
+period because no other tax changes occurred during these years. Our estimates
+based on the wider 1984-2006 window are noisier, but provide strong evidence
+against mean-reversion trends for our treated and control groups. Second, we
+consider speciﬁcations that attempt to control more ﬂexibly for age/life-cycle
+eﬀects. In Online Appendix Figure E.6, we present estimates that replace the
+cubic polynomial in age with Proxyi × Age and Y ear × Age ﬁxed eﬀects. It is
+30
+
+
+--- PDF PAGE 32 ---
+Figure 9: Heterogeneity by Married/Single
+Panel A: Unconditional Capital Gains
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Married
+-.5
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Single
+Panel B: Intensive Margin: Positive Capital Gains
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Married
+-.5
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Single
+Notes: Figure 9 plots the estimates of coeﬃcients γτ from estimating speciﬁcation (1) de-
+scribed in Section 4.1 when the dependent variable is the natural logarithm of unconditional
+realized capital gains (i.e. $1 plus CGit) and the sample is restricted to married (left panel) or
+to unmarried/single (right panel) tax ﬁlers, respectively. In Panel B, the sample is further re-
+stricted to tax ﬁlers with positive realized capital gains income. In all panels, the control group
+is tax ﬁlers with values of Proxyi ∈[100, 000, 133, 333) and the (pooled) treatment group is
+tax ﬁlers with values of Proxyi ∈[16, 667, 100, 000). Number of observations in Panel A (left,
+right): 938,640; 256,085. Number of observations in Panel B (left, right): 289,635; 89,255.
+reassuring that our estimates are nearly identical to our baseline estimates.
+4.3.2
+Heterogeneity Analysis
+Figure 9 investigates how capital gains responses vary by marital status.
+In
+Canada, the tax unit is the individual rather than the couple or family. As a
+result, capital income derived from assets that are jointly-held can can be claimed
+by either spouse. This provides an additional margin along which tax ﬁlers can
+respond to changes in tax rates on capital gains income.27 The left (resp. right)
+panel in Figure 9 presents estimates from speciﬁcation (1) when the sample is
+restricted to married (resp. single) tax ﬁlers. For ease of presentation, we pool
+27 Appendix D.4 presents additional time-series analysis about how married tax ﬁlers split
+capital gains income.
+31
+
+
+--- PDF PAGE 33 ---
+all three treatment groups.28
+Both the 1994 re-timing and medium/long-run
+responses are similar for single and married tax ﬁlers.
+Figure 10: Who Reported Capital Gains in 1994?
+(a) By Previous CG Reports
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+% individuals with positive net capital gains 
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+some CG past 6 years 
+no CG past 6 years
+(b) Average Reported CG
+0
+10000
+20000
+30000
+40000
+average capital gains  (1993 $)
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+some CG in past 6 years
+no CG past 6 years
+Notes:
+Figure 10(a) plots the likelihood of reporting positive capital gains income over
+time for two groups: tax ﬁlers that report no realizations in the past 6 years (open mark-
+ers) and those that report some realizations in the past 6 years (dark markers).
+Fig-
+ure 10(b) plots average realized capital gains income over time for the same two groups.
+The green shaded area marks the period of capital gains exemption, 1985-1994.
+The
+red vertical lines mark capital gains inclusion rate changes:
+increase from 50% to 66.6%
+and further to 75% in 1988 and 1990;
+and a decrease from 75% to 50% in 2000.
+We also explore whether the 1994 re-timing response is driven by “frequent”
+or “infrequent” realizers. Our deﬁnition of frequent realizers is tax ﬁlers who
+report positive realized capital gains in any of the preceding 6 years (calculated
+on a rolling basis). Figure 10(a) plots the fraction of tax ﬁlers that report posi-
+tive realized capital gains each year from 1982-2016, separately for frequent and
+infrequent realizers.29 While frequent realizers are more likely to realize capital
+gains in any given year, the re-timing response is larger for infrequent realizers.
+For infrequent realizers, the likelihood of reporting positive capital gains income
+increases from around 1 percent in the early 1990s to approximately 5 percent
+in 1994, an increase of 500 percent. To contrast, among frequent realizers, the
+likelihood of reporting positive capital gains income increases only by approxi-
+mately 150 percent (from about 2 to 5 percentage points) over the same period.
+28 We presents estimates for each treatment group separately in Appendix Figure E.8.
+29 Figure D.3 in the Online Appendix presents similar ﬁgures for tax ﬁlers in diﬀerent age
+groups using the same “frequent realizer” deﬁnition.
+32
+
+
+--- PDF PAGE 34 ---
+Furthermore, Figure 10(a) shows that frequent realizers appear to be driving the
+increase in the participation in capital markets in the late 1990s and 2000s. We
+ﬁnd similar patterns for average realized capital gains; on average, infrequent re-
+alizers experienced a larger change in realized capital gains in 1994 than frequent
+realizers (see Figure 10(b)).
+A limitation of our tax return data is that it does not allow us to discern
+whether the diﬀering 1994 re-timing responses between frequent and infrequent
+realizers is driven by diﬀerences in savings behavior, diﬀerences in the baseline
+asset allocations or diﬀerences in the frequency of adjusting their portfolios, con-
+ditional on asset allocation. The ability to crystalize gains by ﬁlling out form
+T664 in 1994 made it beneﬁcial for all investors to report capital gains in 1994.
+Finally, we also investigate whether the cancellation of the LCGE led to sub-
+stitution away from capital gains income and towards other types of investment
+income, such as interest and dividend income or contributions to tax-deferred
+RRSPs. Appendix Figure G.2 presents the γτ estimates for these speciﬁcations.
+The results suggest that the cancellation of the LCGE had no statistically signif-
+icant eﬀect on dividend income receipt. The estimates for investment (interest)
+income are inconclusive as the pre-trends are stable for speciﬁcations with some
+treatment groups but not others. Given that we do not estimate statistically
+signiﬁcant long-run eﬀects of the cancellation of the LCGE for most treatment
+groups, it is not surprising that we do not detect economically meaningful eﬀects
+on other dependent variables.
+5
+Implied Elasticities and Interpretation of the
+Results
+In this section we convert our event study estimates into elasticities and dis-
+cuss the results. To facilitate a comparison of our estimates with those in the
+literature, we report a number of diﬀerent elasticity concepts.
+Elasticity estimates. Some papers in the literature report estimates of the
+elasticity of realizations with respect to the marginal tax rate on capital gains
+income. Let e1 =
+∆log(CG)
+∆log(τCG) denote this elasticity. To calculate this elasticity,
+we need to divide our diﬀerence-in-diﬀerences γτ estimates by the corresponding
+33
+
+
+--- PDF PAGE 35 ---
+percentage change in τCG.
+However, the removal of the LCGE increased the
+eﬀective marginal tax rate on capital gains income from a baseline of zero. As
+a result, ∆log(τCG) is not deﬁned in our setting. To overcome this, we assume
+that the behavioral response to the removal of the LCGE is symmetric. In other
+words, we compute e1 assuming that the response to the cancellation of the
+LCGE is equal to −1 times the response to a tax decrease from τCG to zero (i.e.
+∆log(τCG) ≈1). The second elasticity concept we report is the percentage change
+in realized capital gains income in response to a one percent increase in the net-of-
+tax rate: e2 =
+∆log(CG)
+∆log(1−τCG). This concept is used in a recent study by Agersnap and
+Zidar (2020). The third elasticity concept we report is e3 = ∆log(CG)
+∆τCG
+. This semi-
+elasticity measures the percentage change in realized capital gains in response to
+a one percentage point increase in the eﬀective marginal tax rate on capital gains
+income.
+Table 2 reports elasticity estimates for all three concepts. We report elastic-
+ities for all three treatment groups for the total (unconditional) response to the
+cancellation of the LCGE, as well as the intensive and extensive margin responses.
+The numerators for the total unconditional (resp. intensive margin) elasticities
+use the γτ estimates from Figure 5 (resp. Figure 7). The numerators for the
+extensive margin elasticities are the γτ estimates from Figure 6 and the baseline
+participation rates in 1993: ∆%Positive CGτ = γτ/Positive CG1993. Standard
+errors for each elasticity are calculated using the delta method.
+Table 2 reports elasticity estimates for all three treatment groups and for
+three horizons: the short-run, the medium-run and the long-run. Our short-run
+elasticity estimate is based on the 1994 (re-timing) response to the cancellation
+of the LCGE. The medium-run (resp. long-run) elasticity estimate measures the
+percentage change in 1997 (resp. 1999) realizations (i.e. 3 and 5 years after the
+cancellation of the LCGE, respectively). Note that the e2 elasticity concept will
+be of a diﬀerent sign than the e1 and e3 concepts. This is because the former
+measures the percentage change in realizations with respect to a one percent
+increase in the net-of-tax rate 1 −τCG, while the latter measure how realizations
+change when the marginal tax rate increases. For brevity, the discussion below
+will focus on the e2 elasticity concept.
+Our short-run elasticity estimates for all three treatment groups are large in
+34
+
+
+--- PDF PAGE 36 ---
+Table 2: Summary of Elasticity Estimates
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+Average MTR
+Total Response
+Intensive Margin
+Extensive Margin
+in 1995
+e1
+e2
+e3
+e1
+e2
+e3
+e1
+e2
+e3
+Short-run – 1994:
+67K-100K
+36%
+-0.89
+2.85
+-3.32
+-0.29
+0.93
+-1.08
+-0.19
+0.61
+-0.71
+(0.06) (0.19) (0.22) (0.04) (0.13) (0.15) (0.02) (0.06) (0.07)
+33K-67K
+35%
+-1.06
+3.48
+-4.04
+-0.4
+1.31
+-1.53
+-0.25
+0.82
+-0.95
+(0.05) (0.16) (0.19) (0.04) (0.13) (0.15) (0.02) (0.07) (0.08)
+17K-33K
+35%
+-1.09
+3.61
+-4.18
+-1.26
+4.17
+-4.83
+-0.25
+0.83
+-0.96
+(0.05) (0.17) (0.19) (0.04) (0.13) (0.15) (0.02) (0.07) (0.08)
+Medium-run – 1997:
+67K-100K
+36%
+-0.03
+0.1
+-0.11
+-0.02
+0.06
+-0.07
+-0.02
+0.06
+-0.07
+(0.06) (0.19) (0.22) (0.05) (0.16) (0.19) (0.02) (0.06) (0.07)
+33K-67K
+35%
+0.06
+-0.2
+0.23
+-0.07
+0.23
+-0.27
+0
+0
+0
+(0.05) (0.16) (0.19) (0.04) (0.13) (0.15) (0.02) (0.07) (0.08)
+17K-33K
+35%
+0.2
+-0.66
+0.77
+0.38
+-1.26
+1.46
+0.03
+-0.1
+0.11
+(0.05) (0.17) (0.19) (0.04) (0.13) (0.15) (0.02) (0.07) (0.08)
+Long-run – 1999:
+67K-100K
+36%
+0.05
+-0.16
+0.19
+-0.08
+0.26
+-0.3
+0.01
+-0.03
+0.04
+(0.06) (0.19) (0.22) (0.05) (0.16) (0.19) (0.02) (0.06) (0.07)
+33K-67K
+35%
+0.22
+-0.72
+0.84
+-0.08
+0.26
+-0.31
+-0.18
+0.59
+-0.69
+(0.05) (0.16) (0.19) (0.05) (0.16) (0.19) (0.02) (0.07) (0.08)
+17K-33K
+35%
+0.34
+-1.12
+1.3
+0.4
+-1.32
+1.53
+0.06
+-0.2
+0.23
+(0.05) (0.17) (0.19) (0.05) (0.17) (0.19) (0.02) (0.07) (0.08)
+Notes:
+This table calculates elasticities of capital gains with respect to the marginal ef-
+fective tax rate on capital income using three diﬀerent concepts:
+e1 = ∆log(CG), e2 =
+∆log(CG)
+∆log(1−τCG), and e3 =
+∆log(CG)
+∆τCG
+.
+The total (unconditional) and intensive margin elas-
+ticities are based on the ∆log(CG)
+=
+γτ estimates in Figures 5 and 7.
+Extensive
+margin elasticities are calculating using the same formula but with ∆%Positive CG =
+∆Positive CG/Positive1993 = γτ/Positive1993.
+∆%Positive CG is calculated by divid-
+ing the ∆Positive CG = γτ estimates in Figure 6 by 1993 average of Positive CG (0.36,
+0.31 and 0.30 respectively).
+Standard errors are calculated using the delta method.
+35
+
+
+--- PDF PAGE 37 ---
+magnitude. For the total response to the cancellation of the LCGE, our short-run
+elasticity estimates range from 2.8 to 3.6. Tax ﬁlers with low 1985-1993 realiza-
+tions (i.e. those with Proxyi ∈[16, 667, 33, 334)) are more elastic than ﬁlers with
+high pre-reform realizations. As discussed in Section 4.2, the total response to
+the cancellation of the LCGE is driven by responses on the intensive and exten-
+sive margins, although the former is larger in magnitude for all treatment groups.
+Interestingly, the short-run elasticities we estimate in Table 2 are similar to the
+short-run (i.e. 0-2 year) elasticity estimates for the United States in Agersnap
+and Zidar (2020). In a recent review, Stantcheva (2020) notes that prior work
+ﬁnds that the e1 elasticity ranges from -6.4 to -1.1. Our short-run elasticities for
+this elasticity concept range from -1.09 to -0.89 (see column 1).
+Our medium-run (resp. long-run) e2 estimates range from -0.66 to 0.1 (resp.
+-1.12 to -0.16). As noted earlier, elasticity estimates are more negative for tax
+ﬁlers with low values of Proxyi and closer to zero for tax ﬁlers with relatively high
+1985-1993 realizations. Using the e1 concept, our medium-run (resp. long-run)
+estimates range from -0.03 to 0.2 (resp. 0.05 to 0.34). These estimates are closer
+to the high end of the -1.7 to 0 range cited in Stantcheva (2020).
+Interpretation of the results.
+Our negative estimates of the e2 long-
+run elasticity of capital gains realizations with respect to the net-of-tax rate
+is consistent with the wealth aﬀect arising from the elimination of the LCGE
+being relatively important. In Appendix C, we consider three simple models,
+each of which focuses on one decision margin that drives realized capital gains
+income. Comparative statics from all three models indicate that that capital
+gains realizations may increase or decrease following a marginal tax rate increase
+due to oﬀsetting substitution and income/wealth eﬀects.
+The ﬁrst model is used to predict the response along the savings margin. In
+this model, an increase in capital gains tax rate reduces savings via a substitution
+eﬀect but increases savings via an income/wealth eﬀect. Brieﬂy, higher marginal
+tax rates cause lifetime wealth to fall by an amount proportional to counterfactual
+unrealized capital gains. This decrease in lifetime wealth may lead to increased
+levels of savings and, ultimately, higher future capital gains.
+The second model focuses on spenders – individuals with large portfolios who
+are in the process of consuming their wealth. For these individuals, an increase
+36
+
+
+--- PDF PAGE 38 ---
+in capital gains tax makes future consumption more expensive. The substitu-
+tion eﬀect then shifts consumption into the current period, thus implying lower
+capital gains realizations in the future. On the other hand, the income/wealth
+eﬀect motivates agents to decrease current consumption in order to smooth con-
+sumption in the future. In this model, consumption smoothing is achieved via
+lowering capital gains in the current period and increasing capital gains income
+in the future. Once again, capital gains realizations may increase or decrease
+depending on the relative magnitudes of the income and substitution eﬀects.
+Finally, the third model focuses on portfolio asset allocation decisions. In this
+model, capital gains realizations depend on the fraction of an agent’s portfolio
+that is allocated to equities versus ﬁxed income assets (that pay interest income).
+Assuming that ﬁxed income assets are not taxed (i.e. bonds are always held un-
+til maturity), higher capital gains taxes imply lower rewards to holding equities.
+Holding wealth constant, this leads to less equity holding and fewer capital gains
+realizations. At the same time, lower after-tax returns make it harder for indi-
+viduals to achieve any desired level of consumption, necessitating an increase in
+equity holding higher capital gains realizations.
+Although we don’t observe the portfolios of tax ﬁlers and cannot isolate the
+mechanism driving the positive response to the removal of the LCGE, the mod-
+els presented in Appendix C provide a theoretical foundation for our empirical
+results.
+6
+Conclusion
+In this paper, we present estimates of the causal eﬀect of the 1994 cancellation
+of the $100,000 LCGE in Canada on realized capital gains and other types of
+capital income. Comparing tax ﬁlers who did not exhaust their LCGE limit to
+those that did, before and after the 1994 reform, we ﬁnd that the unexpected
+cancellation of the exemption led to an immediate spike in realized capital gains
+in 1994 as tax ﬁlers exhausted their remaining LCGE space. We also ﬁnd that
+the cancellation of the LCGE increased realized capital gains in the medium
+and long-run for tax ﬁlers with small pre-reform capital gains. In contrast, we
+estimate that the elimination of the LCGE had no statistically signiﬁcant eﬀect
+37
+
+
+--- PDF PAGE 39 ---
+on the realization behavior of tax ﬁlers with larger pre-1994 capital gains. Our
+results are similar, qualitatively and quantitatively, when we restrict the sample
+to young, middle-age and older tax ﬁlers, respectively. Moreover, our estimates
+are similar for married and single tax ﬁlers.
+Taken together, our results suggest that despite increasing the marginal ef-
+fective tax rate on capital gains income for most tax ﬁlers, the elimination of the
+LCGE had little eﬀect on capital gains realizations in the long run. We also ﬁnd
+little evidence of substitution away from capital gains and towards other types
+of investment income, such as interest income and dividends.
+One interpretation of our results is that the unexpected cancellation of the
+LCGE led to a large, negative wealth shock that oﬀset the incentive for tax ﬁlers
+to substitute away from capital gains income. This wealth shock was largest for
+those with the most unused exemption space (i.e. those with modest pre-reform
+capital gains) and it is precisely this group that experienced the largest increase
+in realizations in the post-1994 period. While this explanation can reconcile our
+results, we remain cautious because it is possible that individuals with diﬀerent
+pre-reform capital gains may have diﬀerent underlying structural parameters (risk
+aversion, discount factors etc.) and it is these diﬀerences that are driving the
+heterogeneity in our estimates.
+References
+Agersnap, O. and O. M. Zidar (2020): “The Tax Elasticity of Capital Gains
+and Revenue-Maximizing Rates,” Working Paper 27705, National Bureau of
+Economic Research.
+Alan, S., K. Atalay, T. F. Crossley, and S.-H. Jeon (2010): “New
+evidence on taxes and portfolio choice,” Journal of Public Economics, 94, 813–
+823.
+Auerbach, A. J. and J. Poterba (1988): “Capital Gains Taxation in the
+United States: Realizations, Revenue, and Rhetoric,” Brookings Papers on
+Economic Activity, 1988, 595–637.
+Auerbach, A. J. and J. M. Siegel (2000): “Capital-gains realizations of the
+rich and sophisticated,” American Economic Review, 90, 276–282.
+38
+
+
+--- PDF PAGE 40 ---
+Auten, G., L. E. Burman, and W. C. Randolph (1989): “Estimation and
+Interpretation of Capital Gains Realization Behavior: Evidence from Panel
+Data,” National Tax Journal, 42, 353–374, number: 3 Reporter: National Tax
+Journal Publisher: National Tax Association.
+Auten, G. E. and C. T. Clotfelter (1982): “Permanent versus Transitory
+Tax Eﬀects and the Realization of Capital Gains,” The Quarterly Journal of
+Economics, 97, 613–632.
+Bakija, J. and W. M. Gentry (2014): “Capital Gains Taxes and Realizations:
+Evidence from a Long Panel of State-Level Data,” Mimeo.
+Bernheim, B. D. (2002): “Taxation and Saving,” in Handbook of Public Eco-
+nomics, ed. by A. J. Auerbach and M. Feldstein, Elsevier, vol. 3, 1173–1249.
+Bogart, W. T. and W. M. Gentry (1995): “Capital Gains Taxes and Re-
+alizations: Evidence from Interstate Comparisons,” The Review of Economics
+and Statistics, 77, 267–282, number: 2 Reporter: The Review of Economics
+and Statistics Publisher: The MIT Press.
+Buhlmann, F., P. Doerrenberg, B. Loos, and J. Voget (2020): “How do
+taxes aﬀect the trading behavior of private investors? Evidence from individual
+portfolio data,” Mimeo.
+Burman, L. E. and W. C. Randolph (1994): “Measuring Permanent Re-
+sponses to Capital-Gains Tax Changes in Panel Data,” The American Eco-
+nomic Review, 84, 794–809.
+Chetty, R., J. N. Friedman, S. Leth-Petersen, T. H. Nielsen, and
+T. Olsen (2014): “Active vs. Passive Decisions and Crowd-Out in Retire-
+ment Savings Accounts: Evidence from Denmark,” The Quarterly Journal of
+Economics, 129, 1141–1219, publisher: Oxford Academic.
+Dowd, T. and R. McClelland (2019): “The Bunching of Capital Gains
+Realizations,” National Tax Journal, 72, 323–358, publisher: National Tax
+Association & National Tax Journal.
+Dowd, T., R. McClelland, and A. Muthitacharoen (2015): “New Ev-
+idence on the Tax Elasticity of Capital Gains,” National Tax Journal, 68,
+511–544, number: 3 Reporter: National Tax Journal.
+Feldstein, M., J. Slemrod, and S. Yitzhaki (1980): “The Eﬀects of Tax-
+39
+
+
+--- PDF PAGE 41 ---
+ation on the Selling of Corporate Stock and the Realization of Capital Gains,”
+The Quarterly Journal of Economics, 94, 777–791.
+Gillingham, R. and J. S. Greenless (1992): “The Eﬀect of Marginal Tax
+Rates on Capital Gains Revenue: Another Look at the Evidence,” National Tax
+Journal, 45, 167–177, number: 2 Reporter: National Tax Journal Publisher:
+National Tax Association.
+Gravelle, J. G. (2020): “Capital Gains Tax Options: Behavioral Responses
+and Revenues,” CRS Report E41364, Congressional Research Service (CRS).
+Landsman, W. R., D. A. Shackelford, and R. J. Yetman (2002): “The
+Determinants of Capital Gains Tax Compliance:
+Evidence from the RJR
+Nabisco Leveraged Buyout,” Journal of Public Economics, 84, 47–74, num-
+ber: 1 Reporter: Journal of Public Economics.
+Lindsey, L. B. (1987): “Capital gains rates, realizations, and revenues,” in
+The eﬀects of taxation on capital accumulation, University of Chicago Press,
+69–100, reporter: The eﬀects of taxation on capital accumulation.
+Manoli, D. and A. Weber (2016): “Nonparametric Evidence on the Eﬀects of
+Financial Incentives on Retirement Decisions,” American Economic Journal:
+Economic Policy, 8, 160–182.
+Messacar, D. (2018): “Crowd-Out, Education, and Employer Contributions to
+Workplace Pensions: Evidence from Canadian Tax Records,” The Review of
+Economics and Statistics, 100, 648–663.
+Minarik, J. J. (1981): “Capital gains,” How taxes aﬀect economic behavior,
+255–65, reporter: How taxes aﬀect economic behavior Publisher: Brookings
+Institution Washington, DC.
+Mintz, J. and S. R. Richardson (1995): “The Canadian Experience of the
+Lifetime Capital Gains Exemption,” Canadian Public Policy, Special Supple-
+ment, 21.
+Poterba, J. M. (1987): “Tax Evasion and Capital Gains Taxation,” The Amer-
+ican Economic Review, 77, 234–239, number: 2 Reporter: The American Eco-
+nomic Review Publisher: American Economic Association.
+Richardson, S. R. and K. E. Moore (1995): “Canadian Experience with the
+Taxation of Capital Gains,” Canadian Public Policy / Analyse de Politiques,
+21, S77–S99, reporter: Canadian Public Policy / Analyse de Politiques.
+40
+
+
+--- PDF PAGE 42 ---
+Saez, E. and S. Stancheva (2018): “A simpler theory of optimal capital
+taxation,” Journal of Public Economics, 162, 120–142.
+Slemrod, J. and W. Shobe (1990): “The Tax Elasticity of Capital Gains
+Realizations: Evidence from a Panel of Taxpayers,” NBER Working Paper
+3237.
+Stantcheva, S. (2020): “Dynamic Taxation,” Annual Review of Economics,
+12.
+41
+
+
+--- PDF PAGE 43 ---
+APPENDIX FOR ONLINE PUBLICATION
+A
+Tax Rules and Tax Rates
+Table A.1: Summary of Tax Rules and Rates
+Capital Gains:
+Income Tax:
+Lifetime Exemptions:
+Federal Top MTR:
+Provincial Top MTRs:
+Year
+Inclusion
+General
+Small
+# of Tax
+Top MTR
+Top
+Range
+Median
+Rate
+Business
+Brackets
+Cutoﬀ
+MTR
+2002
+0.5
+0
+500,000
+4
+103,000
+29
+10 - 30
+17
+2003
+0.5
+0
+500,000
+4
+104,648
+29
+10 - 30
+17
+2004
+0.5
+0
+500,000
+4
+113,804
+29
+10 - 30
+17
+2005
+0.5
+0
+500,000
+4
+115,739
+29
+10 - 30
+17
+2006
+0.5
+0
+500,000
+4
+118,285
+29
+10 - 30
+17
+2007
+0.5
+0
+750,000
+4
+120,887
+29
+10 - 28
+17
+2008
+0.5
+0
+750,000
+4
+123,184
+29
+10 - 26
+17
+2009
+0.5
+0
+750,000
+4
+126,264
+29
+10 - 26
+17
+2010
+0.5
+0
+750,000
+4
+127,021
+29
+10 - 25
+16
+2011
+0.5
+0
+750,000
+4
+128,800
+29
+10 - 25
+15
+2012
+0.5
+0
+750,000
+4
+132,406
+29
+10 - 25
+15
+2013
+0.5
+0
+750,000
+4
+135,054
+29
+10 - 27
+16
+2014
+0.5
+0
+800,000
+4
+136,270
+29
+10 - 25
+17
+2015
+0.5
+0
+1,000,000
+4
+138,586
+29
+10 - 25
+17
+Notes:
+This table summarizes the tax rules for capital gains income and the fed-
+eral and provincial top income tax rates and bracket cutoﬀfor the years 2002-2016.
+42
+
+
+--- PDF PAGE 44 ---
+Table A.2: Dividend Tax Rules and RRSP Rules
+Dividend Taxes:
+RRSP:
+Gross Up
+Tax Credit
+Maximum Contribution:
+Year
+Factor
+Rate
+Amount
+Rate
+1982
+0.5
+0.227
+5,500
+0.2
+1983
+0.5
+0.227
+5,500
+0.2
+1984
+0.5
+0.227
+5,500
+0.2
+1985
+0.5
+0.227
+5,500
+0.2
+1986
+0.5
+0.227
+7,500
+0.2
+1987
+0.333
+0.167
+7,500
+0.2
+1988
+0.25
+0.133
+7,500
+0.2
+1989
+0.25
+0.133
+7,500
+0.2
+1990
+0.25
+0.133
+7,500
+0.2
+1991
+0.25
+0.133
+11,500
+0.18
+1992
+0.25
+0.133
+12,500
+0.18
+1993
+0.25
+0.133
+12,500
+0.18
+1994
+0.25
+0.133
+13,500
+0.18
+1995
+0.25
+0.133
+14,500
+0.18
+1996
+0.25
+0.133
+13,500
+0.18
+1997
+0.25
+0.133
+13,500
+0.18
+1998
+0.25
+0.133
+13,500
+0.18
+1999
+0.25
+0.133
+13,500
+0.18
+2000
+0.25
+0.133
+13,500
+0.18
+2001
+0.25
+0.133
+13,500
+0.18
+Notes:
+This
+table
+lists
+the
+dividend
+gross-up
+factor,
+the
+dividend
+tax
+credit
+rates
+and
+the
+maximum
+annual
+contribution
+limit
+for
+Reg-
+istered
+Retirement
+Savings
+Plans
+(RRSP)
+for
+the
+years
+1982-2001.
+43
+
+
+--- PDF PAGE 45 ---
+B
+Changes in the Fraction of Individuals Filing
+a Tax Return
+Section 2 of the main paper describes the Longitudinal Administrative Databank
+(LAD) that we use. The LAD is a panel dataset of tax returns for a random 20
+percent sample of Canadian tax ﬁlers. Each year, a randomly selected 20 percent
+of new Canadian tax ﬁlers are selected into the LAD. Once selected, tax ﬁlers
+are followed until they cease to ﬁle a tax return (i.e. upon death or emigration
+from Canada). Thus, the size of the LAD sample grows proportionately with the
+Canadian population and the fraction of residents that ﬁle a tax return.
+The introduction of two refundable tax credits in the late 1980s increased
+the fraction of Canadian residents that ﬁle a tax return each year and, therefore,
+the size of the LAD sample. We argue that the increase in the number of tax
+ﬁlers is unlikely to have a large eﬀect on our estimates. The Federal Sales Tax
+(FST) Credit (introduced in 1986) and the Goods and Services Tax (GST) Credit
+(introduced in 1989) reduce the net tax liabilities of low-income tax ﬁlers and help
+to dampen the regressivity of the federal value-added tax in Canada (formerly the
+FST, now the GST). Receipt of these tax credits is only available to low-income
+earners that ﬁle a tax return. Figure B.1 shows that the number of tax ﬁlers in
+the LAD increased sharply following the introduction of the tax credits in 1986
+and 1989. Notably, the increase in the number of tax ﬁlers in these years was
+immediate and the growth in the LAD sample was stable after 1990. Since our
+baseline estimates are based on an event window from 1990-1999, it is unlikely
+that the increase in the fraction of Canadian residents ﬁling a tax return in the
+1980s will aﬀect our results. Furthermore, the increase in the likelihood of ﬁling
+a tax return was concentrated among those with low-incomes and not moderate
+and high income earners who claim a large fraction of capital gains income.
+44
+
+
+--- PDF PAGE 46 ---
+Figure B.1: Changes in the Number of Tax Filers in the LAD (1982-2016)
+(a) Total Number of Tax Filers
+1.5e+07
+2.0e+07
+2.5e+07
+3.0e+07
+number of tax ﬁlers
+1983 1986 1989 1992 1995 1998 2001 2004 2007 2010 2013 2016
+year
+(b) Change in the Number of Filers
+0
+200000
+400000
+600000
+800000
+1000000
+absolute change in tax ﬁlers
+1983 1986 1989 1992 1995 1998 2001 2004 2007 2010 2013 2016
+year
+(c) Percentage Change in the Number
+of Tax Filers
+0
+2
+4
+6
+% change in tax ﬁlers
+1983 1986 1989 1992 1995 1998 2001 2004 2007 2010 2013 2016
+year
+Notes:
+Figure B.1(a) plots the total number of tax ﬁlers in the LAD over the 1982-
+2016 period.
+Figure B.1(b) plots the (absolute) change in the number of tax ﬁlers in
+the LAD from one year to the next for the 1983-2016 period.
+The change in the
+number of tax ﬁlers for 1983 represents the diﬀerence between the number of tax ﬁl-
+ers in 1983 compared to 1982.
+Figure B.1(c) plots the percentage change in the num-
+ber of tax ﬁlers in the LAD from one year to the next over the 1983-2016 period.
+45
+
+
+--- PDF PAGE 47 ---
+C
+Theoretical Model
+In this Appendix, we set out three theoretical models that help us interpret our
+empirical results. The intuition for developing three diﬀerent models stems from
+the desire to isolate the three economic choices that determine an individual’s
+realized capital gains in any given year. Generally speaking, the capital gains
+realizations of an individual in year t depend on (i) their past savings choices
+(i.e. their past decisions to defer income/consumption to the future; (ii) their
+choice about when to realize capital gains income on their existing assets; and
+(iii) their past portfolio asset allocation decisions. Changes to capital gains taxes
+may aﬀect the choices of individuals along all three of these margins.
+In order to isolate the impact of capital gains taxes on each of these margins,
+we develop three models, each of which focuses on one margin. Below, we show
+that capital gains taxes have a theoretically ambiguous eﬀect on all three mar-
+gins (savings, asset draw down and portfolio asset allocation). We discuss how
+oﬀsetting substitution and income/wealth eﬀects lead to this result. Two of the
+most important parameters governing the income/wealth eﬀects in our models
+are risk aversion/diminishing marginal utility and the agent’s initial asset level.
+While our models are (very) stylized, they provide a useful lens through which
+to interpret our empirical results. Admittedly, more complicated (and possibly
+realistic) models that incorporate dynamics and interactions between the three
+aforementioned choices might add more nuance to the theoretical results below.
+However, we argue that the stylized models presented below provide a simple
+and intuitive way of illustrating the economic forces at work following a change
+in capital gains tax rates.
+C.1
+Capital Gains Realizations of Individuals (“Savers”)
+Consider a simple 2-period model. In each period an individual earns exogenous
+labor income yt; furthermore, in period 1, the individual is endowed with ex-
+ogenous assets A1. These assets, together with any savings that the individual
+chooses to undertake, grow at the exogenous real return rate r and are subject
+to capital gains tax τ.30 For simplicity, we assume no discounting. The individ-
+30For ease of exposition, we assume that labor income is not taxable.
+46
+
+
+--- PDF PAGE 48 ---
+ual chooses how much to consume each period in order to maximize her lifetime
+utility:
+max
+c1,c2 U(c1, c2) = u(c1) + u(c2)
+= u(y1 −s1) + u(y2 + (A1 + s1)(1 + r(1 −τ))).
+With exogenous labor income, the individual’s problem simpliﬁes to choosing
+their optimal level savings s1. The ﬁrst order conditions with respect to s1 is:
+dU
+ds1
+= −u′(c1) + u′(c2)(1 + r(1 −τ)) = 0.
+(3)
+With a two-period model, we assume that the agent sells all of their assets
+and realizes all of their capital gains in period 2. Realized capital gains are equal
+to the agent’s total asset position (initial assets plus period 1 savings) multiplied
+by the exogenous return rate: CG2 = (A1 + s1)r. Thus, in this model realized
+capital gains in period 2 are determined by the agents initial assets and their
+period 1 savings decision. However, only the latter is under the agent’s control
+so the eﬀect of a change in the capital gains rate τ is proportional to the eﬀect
+of the tax on period 1 savings:
+dCG2
+dτ
+= r ds1
+dτ . In order to determine the sign of
+ds1/dτ, we diﬀerentiate (3) with respect to τ, which yields:
+u′′(c1)ds1
+dτ +u′′(c2)
+ds1
+dτ (1 + r(1 −τ))+ (A1 + s1)(−r)
+
+(1+r(1−τ))+u′(c2)(−r) = 0.
+Rearranging, we ﬁnd
+ds1
+dτ = u′(c2)r + u′′(c2)(A1 + s1)r(1 + r(1 −τ))
+u′′(c1) + u′′(c2)(1 + r(1 −τ))2
+.
+(4)
+Assuming that the individual experiences diminishing marginal utility of con-
+sumption, the denominator of (4) is negative.
+The sign of the numerator is
+theoretically ambiguous and depends on the relative magnitudes of the sub-
+stitution eﬀect (SE), captured by u′(c2)r, and an income/wealth eﬀect (IE),
+u′′(c2)(A1 + s1)r(1 + r(1 −τ)). Notably, the latter term is larger in absolute
+value when realized capital gains (i.e (A1 + s1)r) are larger and when agents are
+47
+
+
+--- PDF PAGE 49 ---
+more risk averse.
+The ambiguous response of savings to capital gains taxation implies that
+capital gain realizations may increase or decrease in response to a capital gain tax
+increase. If the substitution eﬀect dominates, individuals will save less and will
+report less capital gains in the future. On the other hand, if the income/wealth
+eﬀect dominates, individuals will save more in order to oﬀset the negative eﬀect
+of taxes on their lifetime wealth. This will lead to higher future capital gains
+realizations.
+C.2
+Capital Gains Realizations of Retirees (“Spenders”)
+In the previous model, we explicitly interpreted s1 as ﬂow savings (i.e income
+deferred for future consumption). Positive savings are likely to be optimal for
+individuals with relatively large labor income y1 and relatively small assets A1
+and/or relatively small future labor earnings y2. In that case, the amount of
+observed capital gains realizations depends on the period 1 savings decisions of
+the individual.
+However, for individuals with large assets A1, optimal “savings” s1 are likely
+to be negative. In other words, instead of saving, these individuals will choose
+to actively draw down their wealth. Even if the agent optimally chooses to draw
+down their wealth (i.e negative s1), the theoretically ambiguous sign of ds1/dτ
+from subsection C.1 will still hold. A small increase to the capital gains tax rate τ
+may increase or decrease asset draw down (i.e. increase or decrease s1. In this case,
+capital gains realizations will be driven by the agent’s draw down and spending
+decisions.
+On one hand, an increase in τ makes second period consumption
+expensive which will incentive the agent to shift consumption to period 1 and
+lower period 2 capital gains realizations. On the other hand, the higher capital
+gains tax will decrease the agent’s lifetime wealth. All else equal, the wealth eﬀect
+will induce the agent to increase s1, decrease the draw down of assets, increase
+period 2 capital gains realizations and increase period 2 consumption. Whether
+s1 (i.e. asset draw down) will increase or decrease will depend on which of these
+eﬀects dominates.
+48
+
+
+--- PDF PAGE 50 ---
+C.3
+Capital Gains Realizations of Portfolio Optimizers
+The third channel that aﬀects capital gains realizations is an agent’s portfolio
+asset allocation choices. Consider an individual who is endowed with some ex-
+ogenous starting wealth A0 and chooses how to allocate her portfolio across two
+assets: a risk-less bond with return rb and a risky equity with stochastic returns
+rL and rH such that (1 −τ)rL < rb < (1 −τ)rH. In other words, we assume that
+the risky returns are subject to capital gains tax τ while risk-less ﬁxed income
+returns are tax-free. Finally, we assume that the high-state occurs with proba-
+bility p ∈(0, 1). The individual decides which share of her portfolio α ∈[0, 1]
+should be allocated to the risky asset by maximizing her expected utility31:
+max
+α
+E[U(c)] = p u[cH] + (1 −p)u[cL]
+= p u[A0α(1 + rH(1 −τ)) + A0(1 −α)(1 + rb)]
++ (1 −p)u[A0α(1 + rL(1 −τ)) + A0(1 −α)(1 + rb)].
+The ﬁrst order condition for α is:
+∂U
+∂α = pu′(cH)[A0(rH(1 −τ) −rb)] + (1 −p)u′(cL)[A0(rL(1 −τ) −rb)] = 0. (5)
+The individual’s choice of α determines their capital gains realizations in the
+high and low state: CGi = αA0ri, i ∈{L, H}. Thus, the impact of capital gains
+taxes on realizations depends on whether it increases or decreases the fraction
+of the agent’s portfolio allocated to equities:
+dCGi
+dτ
+= A0ri dα
+dτ . Diﬀerentiating the
+ﬁrst corder condition (5) with respect to τ gives
+pu′′(cH)A2
+0(rH(1−τ)−rb)2 · ∂α
+∂τ −pu′′(cH)A2
+0(rH(1−τ)−rb)αrH −pu′(cH)A0rH
++(1−p)u′′(cL)A2
+0(rL(1−τ)−rb)2·∂α
+∂τ −(1−p)u′′(cL)A2
+0(rL(1−τ)−rb)αrL−(1−p)u′(cL)A0rL = 0
+31Assuming that the after-tax real return to equities in the low state, rL(1 −τ), is less than
+the risk-free return to bonds, rb, ensures an interior solution for α.
+49
+
+
+--- PDF PAGE 51 ---
+Rearranging,
+∂α
+∂τ = prH[u′′(cH)αA0(rH(1 −τ) −rb) + u′(cH)] + (1 −p)rL[u′′(cL)αA0(rL(1 −τ) −rb) + u′(cL)]
+pu′′(cH)A0(rH(1 −τ) −rb)2 + (1 −p)u′′(cL)A0(rL(1 −τ) −rb)2
+.
+(6)
+Note that rH(1−τ)−rb > 0 since otherwise individuals would never invest in risky
+assets. Assuming that the utility function u(c) is strictly concave, u′(c) > 0 and
+u′′(c) < 0. Consequently, the denominator of (6) is negative while the numerator
+may be either positive or negative. Intuitively, higher capital gains taxes imply
+lower rewards to holding equities in both the high and low state. This leads
+the agent to allocate less of their portfolio to equities and lower capital gains
+realizations. At the same time, the lower after-tax returns to equities generate
+a negative wealth eﬀect.
+When capital gains taxes increase, it is harder for
+risk-averse investors to hit a target level of assets. This tends to increase equity
+holding and leads to larger capital gains realizations. An examination of equation
+(6) makes clear that the wealth eﬀect is large when the capital gains tax rate is
+initially low, when the return to equities in the high state is large (compared to
+the return to bonds) and when the investor is risk-averse.
+Once again, capital gains realizations may increase or decrease in response
+to a capital gains tax increase, depending on the relative magnitudes of the
+income/wealth and substitution eﬀects.
+D
+Additional Time Series Evidence
+D.1
+Capital Gains Realizations Over The Life-cycle
+Figure D.1 uses information on the cohort of tax ﬁlers that were 30-35 years old in
+1982 to illustrate how capital gains realizations evolve over the life-cycle. Focusing
+on this cohort allows us to observe how capital gains realization behavior changes
+over long 36-year period (from 1982-2016). Figure D.1(a) plots the fraction of
+individuals in this cohort who ever reported positive capital gains by age, while
+Figure D.1(b) plots the average value of the cumulative “lifetime” capital gains
+by age. Figure D.1 shows that over a 36 year period, just under 50% of tax
+ﬁlers in this cohort report positive capital gains on their tax return at least once.
+50
+
+
+--- PDF PAGE 52 ---
+However, for most tax ﬁlers, the value of their cumulative capital gains are quite
+small. At the median (not shown), the average “lifetime” capital gains are zero;
+at the 75th percentile, the average “lifetime” capital gains are $100,000; at the
+99th percentile, the average is at just above $500,000 (all 1993 dollars). Thus
+for the majority of individuals in Canada, a $100,000 LCGE was equivalent to a
+zero marginal eﬀective tax rate on capital gains income.32
+Figure D.1: Capital Gains Over Lifetime
+(a) Share with Positive CG
+0
+10
+20
+30
+40
+50
+percent of individuals
+30
+40
+50
+60
+70
+average age
+% Ever Reported Capital Gains
+% Ever Reported Capital Gains > 1.5K (1993 $)
+(b) Cumulative CG Over Lifetime
+0
+100
+200
+300
+400
+500
+600
+thousands of 1993 $
+0
+10
+20
+30
+40
+50
+60
+thousands of 1993 $
+30
+40
+50
+60
+70
+average age
+Average (left axis)
+75th percentile (left axis)
+99th percentile (right axis)
+Notes: For Figure D.1, the sample is tax ﬁlers age 30-35 in 1982.
+Figure D.1(a) plots the fraction of tax
+ﬁlers that ever report positive capital gains by age.
+Figure D.1(b) plots the cumulative “lifetime” capital
+gains for the average tax ﬁler, the tax ﬁler at the 75th percentile and the tax ﬁler at the 99th percentile.
+32 Because the value of the exemption was nominally ﬁxed, the actual share of the population
+aﬀected is strongly inﬂuenced by the inﬂation rate during a tax ﬁler’s lifetime.
+51
+
+
+--- PDF PAGE 53 ---
+D.2
+Small vs Large Realizations
+Figure D.2: Capital Gains Over Time – Small vs Large Capital Gains
+(a) Average Positive ≤1K
+0
+5000
+10000
+15000
+20000
+25000
+30000
+35000
+40000
+S&P TSE Index
+0
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+capital gains (1993 $)
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+capital gains (1993 $)
+S&P TSE Index
+(b) Average Positive >1K
+0
+5000
+10000
+15000
+20000
+25000
+30000
+35000
+40000
+S&P TSE Index
+0
+5000
+10000
+15000
+20000
+25000
+30000
+35000
+40000
+capital gains (1993 $)
+19821985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+capital gains (1993 $)
+S&P TSE Index
+(c) Percent Positive ≤1K
+0
+2500
+5000
+7500
+10000
+12500
+S&P TSE Index
+0
+2.5
+5
+7.5
+10
+12.5
+% with net capital gains <$1K (1982 $)
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+% with net capital gains <$1K (1982 $)
+S&P TSE Index
+(d) Percent Positive > 1K
+0
+2500
+5000
+7500
+10000
+12500
+S&P TSE Index
+0
+2.5
+5
+7.5
+10
+12.5
+% with net capital gains > (1982 $)
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+% with net capital gains > (1982 $)
+S&P TSE Index
+Notes: This ﬁgure plots the evolution of realized capital gains for those with large and small capital gains. Fig-
+ure C.2(a) (resp. Figure C.2(b)) plots the average realized capital gain among those with positive gains of less
+(resp. greater) than $1,000 from 1982 to 2016. Figure C.2(c) (resp. Figure C.2(d)) plots the fraction of tax ﬁl-
+ers with positive realized capital gains between $0.01 and $1,000 (resp. greater than $1,000) from 1982 to 2016.
+The green shaded area marks the 1985-1994 period in which the Lifetime Capital Gains Exemption (LCGE)
+was in place. The red vertical lines mark changes in the capital gains inclusion rate (from 50% to 66.6% in
+1988, from 66.6% to 75% in 1990 and a decrease from 75% to 50% in 2000). The dashed grey line plots the
+evolution of the inﬂation-adjusted values of the Standard and Poor’s Toronto Stock Exchange Composite Index.
+52
+
+
+--- PDF PAGE 54 ---
+Figure D.3: Capital Gains Realizations History By Age
+(a) Fraction of CG Realiz-
+ers with Prior Realized CG:
+Age < 40
+4
+6
+8
+10
+12
+% individuals 
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+some past 3 years 
+some past 5 years
+ some past 7 years
+(b) Fraction of CG Realiz-
+ers with Prior Realized CG:
+Age 40-60
+10
+15
+20
+25
+% individuals 
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+some past 3 years 
+some past 5 years
+ some past 7 years
+(c) Fraction of CG Realiz-
+ers with Prior Realized CG:
+Age > 60
+10
+15
+20
+25
+30
+% individuals 
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+some past 3 years 
+some past 5 years
+ some past 7 years
+(d)
+Fraction
+of
+CG
+Re-
+alizers with and without
+CG Realizations in Past 6
+Years: Age < 40
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+% individuals 
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+some past 6 years 
+none past 6 years
+all
+Age <40
+(e) Fraction of CG Realizers
+with and without CG Re-
+alizations in Past 6 Years:
+Age 40 −60
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+% individuals 
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+some past 6 years 
+none past 6 years
+all
+Age 40-60
+(f) Fraction of CG Realizers
+with and without CG Re-
+alizations in Past 6 Years:
+Age > 60
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+% individuals 
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+some past 6 years 
+none past 6 years
+all
+Age >60
+(g) Average CG Among Re-
+alizers with and without
+Prior Realizations in Past 6
+Years: Age < 40
+0
+20000
+average capital gains  (1990 $)
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+some
+none
+Age <40
+(h) Average CG Among Re-
+alizers with and without
+Prior Realizations in Past 6
+Years: Age 40-60
+0
+10000
+20000
+30000
+40000
+average capital gains  (1990 $)
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+some
+none
+Age 40-60
+(i) Average CG Among Re-
+alizers with and without
+Prior Realizations in Past 6
+Years: Age > 60
+0
+10000
+20000
+30000
+40000
+average capital gains  (1990 $)
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+some
+none
+Age 60+
+Notes: Figures C.3(a), C.3(b) and C.3(c) plot the fraction of tax ﬁlers with realized capital gains
+in the past 3, 5 and 7 years in the age groups: (a) under 40, (b) between 40 and 60 and (c) over
+60. Figures C.3(d), C.3(e) and C.3(f) plot the fraction of tax ﬁlers with and without realized
+capital gains in the 6 years for the following age groups: (d) under 40, (e) between 40 and 60 and
+(f) over 60. Figures C.3(g), C.3(h) and C.3(i) plot the average realized capital gain in the current
+year, separately for tax ﬁlers with and without realized capital gains in the previous 6 years and
+the following age groups: (g) under 40, (h) between 40 and 60 and (i) over 60. The green shaded
+area marks the 1985-1994 period in which the Lifetime Capital Gains Exemption (LCGE) was
+in place. The red vertical lines mark changes in the capital gains inclusion rate (from 50%
+to 66.6% in 1988, from 66.6% to 75% in 1990 and a decrease from 75% to 50% in 2000).
+53
+
+
+--- PDF PAGE 55 ---
+D.3
+Comparison with the U.S.
+Figures D.4 and D.5 compare the evolution of total realized capital gains in the
+U.S. and Canada. Figure D.4 compares total reported capital gains in Canada
+based on individual tax returns from the LAD dataset (i.e. totals scaled from a
+20% random LAD sample) to the totals from the U.S. Department of the Treasury
+report.
+Figure D.4: Total Reported Capital Gains Over Time – Comparison with the
+U.S. Series
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+550
+600
+million dollars
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+Canada: total capital gains (1993$)
+S&P TSE Index
+USA: total capital gains (1993 USD$)
+DJIA (1993 $)
+Notes: This ﬁgure plots total reported capital gains in millions of dollars in the U.S. and
+Canada from 1982 to 2016.
+The green shaded area marks the 1985-1994 period in which
+the Lifetime Capital Gains Exemption (LCGE) was in place.
+The red vertical lines mark
+changes in the capital gains inclusion rate (from 50% to 66.6% in 1988, from 66.6% to
+75% in 1990 and a decrease from 75% to 50% in 2000). The solid grey (resp. dashed) line
+shows evolution of the inﬂation-adjusted values of the Standard and Poor’s Toronto Stock
+Exchange Composite Index (resp. Dow Jones Industrial Average) over the same time period.
+Figure D.5 uses annual cross-sections of individual tax returns constructed
+by the Internal Revenue Service (IRS) and commonly known as the Statistics of
+Income (SOI) Public Use Files, for years 1982–2009. The SOI Public Use Files
+consist of stratiﬁed random samples of approximately 80,000-200,000 tax returns
+each year. All time-series are normalized to 100% in 2002.
+54
+
+
+--- PDF PAGE 56 ---
+Figure D.5: Capital Gains Over Time – Comparison with the U.S. Series
+(a) Average Positive CG
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+220
+240
+260
+280
+300
+320
+340
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+capital gains (1993 $)
+S&P TSE Index
+U.S. capital gains (1993 $)
+DJIA (1993 $)
+(b) Average Positive >1K
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+220
+240
+260
+280
+300
+320
+340
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+capital gains (1993 $)
+S&P TSE Index
+U.S. capital gains (1993 $)
+DJIA (1993 $)
+(c) Average Positive ≤1K
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+220
+240
+260
+280
+300
+320
+340
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+capital gains (1993 $)
+S&P TSE Index
+U.S. capital gains (1993 $)
+DJIA (1993 $)
+(d) Percent Positive
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+220
+240
+260
+280
+300
+320
+340
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+% with positive net capital gains
+S&P TSE Index
+U.S. % with positive net capital gains
+DJIA (1993 $)
+(e) Percent Positive > 1K
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+220
+240
+260
+280
+300
+320
+340
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+% with net capital gains > (1982 $)
+S&P TSE Index
+U.S. % with net capital gains >$1K (1982$)
+DJIA (1993 $)
+(f) Percent Positive ≤1K
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+220
+240
+260
+280
+300
+320
+340
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+% with net capital gains <$1K (1982 $)
+S&P TSE Index
+U.S. % with net capital gains <=$1K (1982$)
+DJIA (1993 $)
+Notes:
+To account for diﬀerences in levels between Canada and the United States, all time-series are normalized to 100 in 2002.
+The green shaded area marks the 1985-1994 period in which the Lifetime Capital Gains Exemption (LCGE) was in place.
+The
+red vertical lines mark changes in the capital gains inclusion rate (from 50% to 66.6% in 1988, from 66.6% to 75% in 1990 and
+a decrease from 75% to 50% in 2000).
+The solid grey (resp. dashed) line shows evolution of the inﬂation-adjusted values of the
+Standard and Poor’s Toronto Stock Exchange Composite Index (resp. Dow Jones Industrial Average) over the same time period.
+55
+
+
+--- PDF PAGE 57 ---
+D.4
+Spousal Responses
+Figure D.6 is similar to ﬁgures Figures 1 and 2 in the main text. The ﬁgure plots
+the unconditional average realized capital gains, average realized capital gains
+among those with positive realizations and the fraction of individuals with pos-
+itive capital gains realizations from 1982-2016, separately for single (unmarried)
+and married tax ﬁlers. The patterns described in Section 3 appear to carry over.
+Figure D.6: Evolution of Realized Capital Gains By Marital Status
+Panel A: Single (Unmarried) Tax Filers
+(a) Unconditional Average
+0
+5000
+10000
+15000
+20000
+25000
+30000
+35000
+40000
+DJIA (2016 $)
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+4000
+capital gains (1990 $)
+19821985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+capital gains (1990 $)
+DJIA (2016 $)
+(b) Average Positive
+0
+5000
+10000
+15000
+20000
+25000
+30000
+35000
+40000
+DJIA (2016 $)
+0
+5000
+10000
+15000
+20000
+25000
+30000
+35000
+40000
+capital gains (1990 $)
+19821985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+capital gains (1990 $)
+DJIA (2016 $)
+(c) Percent Positive
+0
+2500
+5000
+7500
+10000
+12500
+15000
+17500
+20000
+DJIA (2016 $)
+0
+2.5
+5
+7.5
+10
+12.5
+15
+17.5
+20
+% with positive net capital gains
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+% with positive net capital gains
+DJIA (2016 $)
+Panel B: Married Tax Filers
+(d) Unconditional Average
+0
+5000
+10000
+15000
+20000
+25000
+30000
+35000
+40000
+DJIA (2016 $)
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+4000
+capital gains (1990 $)
+19821985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+capital gains (1990 $)
+DJIA (2016 $)
+(e) Average Positive
+0
+5000
+10000
+15000
+20000
+25000
+30000
+35000
+40000
+DJIA (2016 $)
+0
+5000
+10000
+15000
+20000
+25000
+30000
+35000
+40000
+capital gains (1990 $)
+19821985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+capital gains (1990 $)
+DJIA (2016 $)
+(f) Percent Positive
+0
+2500
+5000
+7500
+10000
+12500
+15000
+17500
+20000
+DJIA (2016 $)
+0
+2.5
+5
+7.5
+10
+12.5
+15
+17.5
+20
+% with positive net capital gains
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+% with positive net capital gains
+DJIA (2016 $)
+Notes:
+The
+green
+shaded
+area
+marks
+the
+1985-1994
+period
+in
+which
+the
+Life-
+time
+Capital
+Gains
+Exemption
+(LCGE)
+was
+in
+place.
+The
+red
+vertical
+lines
+mark
+changes
+in
+the
+capital
+gains
+inclusion
+rate
+(from
+50%
+to
+66.6%
+in
+1988,
+from
+66.6%
+to
+75%
+in
+1990
+and
+a
+decrease
+from
+75%
+to
+50%
+in
+2000).
+In Canada, the tax unit is the individual, not the family.
+Consequently,
+tax ﬁlers that are married (or who are in a common-law relationship) have an
+incentive to split realized capital gains evenly, if possible.33 Since wage income
+cannot be split but capital gains can be tentatively allocated to a lower earning
+33 There are some small deviations from this rule, e.g. some credits depend on joint income
+and the personal exemption amount is partially sharable.
+56
+
+
+--- PDF PAGE 58 ---
+spouse, couples with uneven incomes can reduce their combined tax liability if the
+lower earning partner/spouse reports all of the couple’s combined realized capital
+gains income. This strategy was less advantageous during the period in which
+the LCGE was in place because the eﬀective marginal tax rate on capital gains
+income for tax ﬁlers with remaining exemption space was zero.
+For partners
+that earn similar incomes, the optimal tax strategy is to split assets and the
+resulting capital gains income equally. The LCGE did not change this incentive.
+Consequently, after the elimination of the LCGE couples that did not exhaust
+their exemption room may have reverted to shifting capital gains income to the
+spouse with the lower eﬀective marginal tax rate. To the extent that couples
+where both partners had unused exemption room were disproportionately in the
+treated groups, this would tend to result in larger (i.e. more positive) extensive
+margin estimates in the post-1994 years. However, this type of income shifting
+would not result in greater participation in capital markets.
+Figure D.7 explores whether couples follow these optimal strategies. The
+results suggest a ﬁrm “no”. For the vast majority of couples, the partner who
+earns the most gross income also reports the most capital gains income.
+In
+fact, for the majority of couples, capital gains income is reported on only one of
+the returns and it is typically on the tax return of the higher-earning partner.
+Nonetheless, Figure D.7 also documents that from 1982 until approximately 2000,
+the share of capital gains income reported by the higher earner (resp. lower earner)
+decreased (resp. increased).
+The ﬁgure provides suggestive evidence that the
+introduction of the LCGE slowed down this trend, consistent with the hypothesis
+that some couples responded to the introduction of the lifetime exemption by
+using up the exemption space of the high-income (and, therefore, the high eﬀective
+MTR) spouse.
+57
+
+
+--- PDF PAGE 59 ---
+Figure D.7: Split of Capital Gains within Couples by Shares of Gross Income
+(a) Share Reported
+0
+20
+40
+60
+80
+share of joint capital gains reported
+1980
+1990
+2000
+2010
+2020
+year
+Gross Income Share >75%
+Gross Income Share 50-75%
+Gross Income Share 25-50%
+Gross Income Share <25%
+(b) Percent with Higher Share
+0
+20
+40
+60
+80
+percent with higher share of capital gains reported
+1980
+1990
+2000
+2010
+2020
+year
+Gross Income Share >75%
+Gross Income Share 50-75%
+Gross Income Share 25-50%
+Gross Income Share <25%
+Notes: The sample in this ﬁgure is all tax ﬁlers that are married or in a common-law re-
+lationship and report positive capital gains income.
+Married couples are partitioned into
+four groups based on each tax ﬁler’s share of the family’s gross (total) income.
+Figure
+C.7(a) plots the average share of the family’s capital gains income reported by tax ﬁl-
+ers in each of the four groups from 1982-2016.
+Figure C.7(b) plots the fraction of tax
+ﬁlers that report more capital gains income than their spouse over the 1982-2016 pe-
+riod, separately for each of the four groups.
+The red vertical lines mark the introduc-
+tion and elimination of the Lifetime Capital Gains Exemption (LCGE), respectively.
+58
+
+
+--- PDF PAGE 60 ---
+E
+Additional Robustness Checks
+Figure E.1: Main Results: Estimates in Levels
+Panel A: Unconditional Realized Capital Gains
+0
+2000
+4000
+6000
+coefﬁcient estimates (ΔCG)
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-5000
+0
+5000
+10000
+coefﬁcient estimates (ΔCG)
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-5000
+0
+5000
+10000
+coefﬁcient estimates (ΔCG)
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 670-33K  CG in 1985-1993 (1993$)
+Panel B: Intensive Margin: Conditional on Positive Realized Capital Gains
+-2000
+0
+2000
+4000
+6000
+coefﬁcient estimates (ΔCG)
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-5000
+0
+5000
+10000
+15000
+coefﬁcient estimates (ΔCG)
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-5000
+0
+5000
+10000
+15000
+coefﬁcient estimates (ΔCG)
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 670-33K  CG in 1985-1993 (1993$)
+Notes: Each ﬁgure plots the estimates of coeﬃcients γτ from speciﬁcation (1) described in Sec-
+tion 4.1. The dependent variable is a tax ﬁler’s realized capital gain in the current tax year
+(i.e. in levels). The sample in Panel A is comprised of all tax ﬁlers with 1985-1993 realized
+capital gains between $100,000-$133,333 (the control group) and one of the following three
+treatment groups: (i) 1985-1993 realized capital gains between $66,667-$100,000 (left panel);
+(ii) 1985-1993 realized capital gains between $33,334-$66,666 (middle panel); (iii) 1985-1993
+realized capital gains between $667-$33,333 (right panel). The sample in Panel B is restricted
+to tax ﬁlers with positive realized capital gains in the current tax year. Number of observa-
+tions: (left, middle and right panels): 293,385; 532,890; 2,593,670; 105,100; 171,300; 800,900.
+59
+
+
+--- PDF PAGE 61 ---
+Figure E.2: Adding Individual Fixed Eﬀects
+Panel A: Unconditional Realized Capital Gains
+-.25
+0
+.25
+.5
+.75
+1
+1.25
+coefﬁcient estimates (Δ log(CG))
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.25
+0
+.25
+.5
+.75
+1
+1.25
+coefﬁcient estimates (Δ log(CG))
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.25
+0
+.25
+.5
+.75
+1
+1.25
+coefﬁcient estimates (Δ log(CG))
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 17K-33K CG in 1985-1993 (1993$)
+Panel B: Intensive Margin: Conditional on Positive Realized Capital Gains
+-.25
+0
+.25
+.5
+.75
+1
+1.25
+coefﬁcient estimates (Δ log(CG))
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.25
+0
+.25
+.5
+.75
+1
+1.25
+coefﬁcient estimates (Δ log(CG))
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.25
+0
+.25
+.5
+.75
+1
+1.25
+coefﬁcient estimates (Δ log(CG))
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 17K-33K CG in 1985-1993 (1993$)
+Panel C: Extensive Margin: Fraction with Positive Realized Capital Gains
+-.05
+-.025
+0
+.025
+.05
+.075
+.1
+.125
+coefﬁcient estimates (in p.p)
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.05
+-.025
+0
+.025
+.05
+.075
+.1
+.125
+coefﬁcient estimates (in p.p)
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.05
+-.025
+0
+.025
+.05
+.075
+.1
+.125
+coefﬁcient estimates (in p.p)
+1990
+1992
+1994
+1996
+1998
+2000
+Treatment group: 17K-33K CG in 1985-1993 (1993$)
+Notes: Each ﬁgure plots the estimates of coeﬃcients γτ from a speciﬁcation that augments
+equations (1) and (2) with individual ﬁxed eﬀects. In Panels A and B, the dependent vari-
+able is the natural logarithm of $1 plus a tax ﬁler’s realized capital gain in the current tax
+year. In Panel C, the dependent variable is a binary variable equal to 1 for tax ﬁlers with pos-
+itive realized capital gains in the current tax year and zero otherwise. The sample in Panels
+A and C is comprised of all tax ﬁlers with 1985-1993 realized capital gains between $100,000-
+$133,333(the control group) and one of the following three treatment groups: (i) 1985-1993
+realized capital gains between $66,667-$100,000 (left panel); (ii) 1985-1993 realized capital
+gains between $33,334-$66,666 (middle panel); (iii) 1985-1993 realized capital gains between
+$16,666-$33,333 (right panel).
+The sample in Panel B is restricted to tax ﬁlers with posi-
+tive realized capital gains in the current tax year. Number of observations (left, middle and
+right panels): 293,385; 532,890; 596,600; 105,100; 171,300; 186,100; 293,385; 532,890; 596,600.
+60
+
+
+--- PDF PAGE 62 ---
+Figure E.3: Adding Income Controls
+Panel A: Unconditional Capital Gains
+-.5
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 670-33K  CG in 1985-1993 (1993$)
+Panel B: Intensive Margin: Positive Capital Gains
+-.2
+0
+.2
+.4
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.2
+0
+.2
+.4
+.6
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 670-33K  CG in 1985-1993 (1993$)
+Panel C: Extensive Margin: Percent with Positive Capital Gains
+-.02
+0
+.02
+.04
+.06
+.08
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.02
+0
+.02
+.04
+.06
+.08
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.1
+-.05
+0
+.05
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 670-33K  CG in 1985-1993 (1993$)
+Notes: Each ﬁgure plots the estimates of coeﬃcients γτ from a speciﬁcation that augments
+equations (1) and (2) with the natural logarithm of a tax ﬁler’s total (broad) income as
+a control variable.
+In Panels A and B, the dependent variable is the natural logarithm
+of $1 plus a tax ﬁler’s realized capital gain in the current tax year.
+In Panel C, the de-
+pendent variable is a binary variable equal to 1 for tax ﬁlers with positive realized capi-
+tal gains in the current tax year and zero otherwise.
+The sample in Panels A and C is
+comprised of all tax ﬁlers with 1985-1993 realized capital gains between $100,000-$133,333
+(the control group) and one of the following three treatment groups: (i) 1985-1993 realized
+capital gains between $66,667-$100,000 (left panel); (ii) 1985-1993 realized capital gains be-
+tween $33,334-$66,666 (middle panel); (iii) 1985-1993 realized capital gains between $667-
+$33,333 (right panel).
+The sample in Panel B is restricted to tax ﬁlers with positive real-
+ized capital gains in the current tax year.
+Number of observations (left, middle and right
+panels): 293,385; 532,890; 2,593,700; 105,100; 171,300; 800,900; 293,385; 532,890; 2,534,700.
+61
+
+
+--- PDF PAGE 63 ---
+Figure E.4: Sensitivity Check that Excludes ‘Treated’ Tax Filers Whose 1994
+Realized Capital Gain Pushes Them Above The $100,000 LCGE Threshold
+Panel A: Unconditional Capital Gains
+-.2
+0
+.2
+.4
+.6
+.8
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17K-33K  CG in 1985-1993 (1993$)
+Panel B: Intensive Margin: Positive Capital Gains
+-.2
+0
+.2
+.4
+.6
+.8
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17K-33K  CG in 1985-1993 (1993$)
+Notes: Each ﬁgure plots the estimates of coeﬃcients γτ from speciﬁcation (1) described in
+Section 4.1.
+In Panels A and B, the dependent variable is the natural logarithm of $1
+plus a tax ﬁler’s realized capital gain in the current tax year.
+The sample in Panel A is
+comprised of all tax ﬁlers with 1985-1993 realized capital gains between $100,000-$133,333
+(the control group) and one of the following three treatment groups:
+(i) 1985-1993 real-
+ized capital gains between $66,667-$100,000 and 1985-1994 realized capital gains less than
+$100,000(left panel); (ii) 1985-1993 realized capital gains between $33,333-$66,667 and 1985-
+1994 realized capital gains less than $100,000 (middle panel); (iii) 1985-1993 realized cap-
+ital gains between $16,666-$33,334 and 1985-1994 realized capital gains less than $100,000
+(right panel).
+The sample in Panel B is the same as Panel A except that it is restricted
+to tax ﬁlers with positive realized capital gains in the current tax year.
+Number of obser-
+vations (left, middle and right panels): 237,000; 484,100; 554,400; 78,700; 154,900; 174,200.
+62
+
+
+--- PDF PAGE 64 ---
+Figure E.5: Extending Event Window
+Panel A: Unconditional Capital Gains
+-.5
+0
+.5
+1
+1984
+1986
+1988
+1990
+1992
+1994
+1996
+1998
+2000
+2002
+2004
+2006
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1.5
+1984
+1986
+1988
+1990
+1992
+1994
+1996
+1998
+2000
+2002
+2004
+2006
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-1
+-.5
+0
+.5
+1
+1984
+1986
+1988
+1990
+1992
+1994
+1996
+1998
+2000
+2002
+2004
+2006
+year
+Treatment group: 17K-33K  CG in 1985-1993 (1993$)
+Panel B: Intensive Margin: Positive Capital Gains
+-.2
+0
+.2
+.4
+.6
+.8
+1984
+1986
+1988
+1990
+1992
+1994
+1996
+1998
+2000
+2002
+2004
+2006
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1984
+1986
+1988
+1990
+1992
+1994
+1996
+1998
+2000
+2002
+2004
+2006
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1.5
+1984
+1986
+1988
+1990
+1992
+1994
+1996
+1998
+2000
+2002
+2004
+2006
+year
+Treatment group: 17K-33K  CG in 1985-1993 (1993$)
+Panel C: Extensive Margin: Percent with Positive Capital Gains
+-.02
+0
+.02
+.04
+.06
+.08
+1984
+1986
+1988
+1990
+1992
+1994
+1996
+1998
+2000
+2002
+2004
+2006
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.05
+0
+.05
+.1
+1984
+1986
+1988
+1990
+1992
+1994
+1996
+1998
+2000
+2002
+2004
+2006
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.05
+0
+.05
+.1
+1984
+1986
+1988
+1990
+1992
+1994
+1996
+1998
+2000
+2002
+2004
+2006
+year
+Treatment group: 17K-33K  CG in 1985-1993 (1993$)
+Notes: Each ﬁgure plots the estimates of coeﬃcients γτ from a speciﬁcation that augments
+equations (1) and (2) described in Section 4.1 by extending the event study window from
+1990-1999 to 1984-2006.
+In Panels A and B, the dependent variable is the natural loga-
+rithm of $1 plus a tax ﬁler’s realized capital gain in the current tax year. In Panel C, the
+dependent variable is a binary variable equal to 1 for tax ﬁlers with positive realized cap-
+ital gains in the current tax year and zero otherwise.
+The sample in Panels A and C is
+comprised of all tax ﬁlers with 1985-1993 realized capital gains between $100,000-$133,333
+(the control group) and one of the following three treatment groups: (i) 1985-1993 realized
+capital gains between $66,667-$100,000 (left panel); (ii) 1985-1993 realized capital gains be-
+tween $33,334-$66,666 (middle panel); (iii) 1985-1993 realized capital gains between $16,667-
+$33,333 (right panel). The sample in Panel B is restricted to tax ﬁlers with positive realized
+capital gains in the current tax year.
+Number of observations (left, middle and right pan-
+els): 918,070; 1,672,620; 1,880,740; 319,070; 527,610; 571,030; 918,070; 1,672,620; 1,880,740.
+63
+
+
+--- PDF PAGE 65 ---
+Figure E.6: Main Results: Adding Life Cycle Controls
+Panel A: Unconditional Capital Gains
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17K-33K  CG in 1985-1993 (1993$)
+Panel B: Intensive Margin: Positive Capital Gains
+-.2
+0
+.2
+.4
+.6
+.8
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+0
+.2
+.4
+.6
+.8
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17K-33K  CG in 1985-1993 (1993$)
+t
+Notes:
+Each ﬁgure plots the estimates of coeﬃcients γτ from a speciﬁcation that aug-
+ments equation (1) by replacing the cubic polynomial in age with group (treatment/control)
+by age ﬁxed eﬀects.
+In Panels A and B, the dependent variable is the natural loga-
+rithm of $1 plus a tax ﬁler’s realized capital gain in the current tax year.
+The sam-
+ple in Panel A is comprised of all tax ﬁlers with 1985-1993 realized capital gains between
+$100,000-$133,333 (the control group) and one of the following three treatment groups: (i)
+1985-1993 realized capital gains between $66,667-$100,000 (left panel); (ii) 1985-1993 real-
+ized capital gains between $33,334-$66,666 (middle panel); (iii) 1985-1993 realized capital
+gains between $16,667-$33,333 (right panel).
+The sample in Panel B is restricted to tax
+ﬁlers with positive realized capital gains in the current tax year.
+Number of observations
+(left, middle and right panels):
+293,400; 532,900; 596,600; 105,100; 171,300; 186,100.
+64
+
+
+--- PDF PAGE 66 ---
+Figure E.7: Heterogeneity by Age
+Panel A: Total Response – Age < 50
+-.5
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17K-33K  CG in 1985-1993 (1993$)
+Panel B: Total Response – 50 ≤Age < 65
+-.5
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17K-33K  CG in 1985-1993 (1993$)
+Panel C: Intensive Margin Response – Age < 50
+-.2
+0
+.2
+.4
+.6
+.8
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17K-33K  CG in 1985-1993 (1993$)
+Panel D: Intensive Margin Response – 50 ≤Age < 65
+-.5
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17K-33K  CG in 1985-1993 (1993$)
+Notes: Each ﬁgure plots the estimates of coeﬃcients γτ from speciﬁcation (1) described in
+Section 4.1.
+The dependent variable is the natural logarithm of $1 plus a tax ﬁler’s real-
+ized capital gain in the current tax year.
+The sample in Panel A is comprised of tax ﬁl-
+ers in the treatment and control groups between the ages of 19 and 49.
+The sample in
+Panel B is comprised of tax ﬁlers in the treatment and control groups between the ages of
+50 and 64.
+The sample in Panel C is comprised of tax ﬁlers in the treatment and con-
+trol groups between the ages of 19 and 49 with positive realized capital gains in the cur-
+rent tax year. The sample in Panel D is comprised of tax ﬁlers in the treatment and con-
+trol groups between the ages of 50 and 64 with positive realized capital gains in the cur-
+rent tax year.
+Number of observations (left, middle and right panels):
+89,665; 176,660;
+219,325;
+109,120;
+192,410;
+206,385;
+27,610;
+49,040;
+58,530;
+39,415;
+63,870;
+68,335.
+65
+
+
+--- PDF PAGE 67 ---
+Figure E.8: Heterogeneity by Marital Status
+Panel A: Unconditional Capital Gains – Married
+-.5
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17-33K  CG in 1985-1993 (1993$)
+Panel B: Unconditional Capital Gains – Single
+-.5
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17-33K  CG in 1985-1993 (1993$)
+Panel C: Intensive Margin – Married
+-.2
+0
+.2
+.4
+.6
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.2
+0
+.2
+.4
+.6
+.8
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17-33K  CG in 1985-1993 (1993$)
+Panel D: Intensive Margin – Single
+-.2
+0
+.2
+.4
+.6
+.8
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.5
+0
+.5
+1
+1.5
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17-33K  CG in 1985-1993 (1993$)
+Notes: Each ﬁgure plots the estimates of coeﬃcients γτ from speciﬁcation (1) described in Sec-
+tion 4.1. The dependent variable is the natural logarithm of $1 plus a tax ﬁler’s realized cap-
+ital gain in the current tax year. The sample in Panel A is comprised of married tax ﬁlers in
+the treatment and control groups. The sample in Panel B is comprised of single (unmarried)
+tax ﬁlers in the treatment and control groups. The sample in Panel C is comprised of mar-
+ried tax ﬁlers in the treatment and control groups with positive realized capital gains in the
+current tax year. The sample in Panel D is comprised of single (unmarried) tax ﬁlers in the
+treatment and control groups. Number of observations (left, middle and right panels): 228,770;
+414,875; 463,710; 61,515; 112,665; 127,365; 80,165; 130,335; 141,200; 24,340; 40,000; 43,735.
+66
+
+
+--- PDF PAGE 68 ---
+F
+Demographic Characteristics Over the Years
+Figure F.1: Demographic Characteristics
+(a) Age
+40
+50
+60
+70
+80
+average age
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+100K-133K
+67K-100K
+33.33K-67K
+17K-33K
+(b) Percent Married
+.7
+.75
+.8
+.85
+share married
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+100K-133K
+67K-100K
+33.33K-67K
+17K-33K
+(c) Number of Kids
+.2
+.4
+.6
+.8
+1
+1.2
+number of children
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+100K-133K
+67K-100K
+33.33K-67K
+17K-33K
+(d) Total Income
+20000
+40000
+60000
+80000
+100000
+gross income in 1993$
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+100K-133K
+67K-100K
+33.33K-67K
+17K-33K
+(e) Taxable Income
+20000
+40000
+60000
+80000
+taxable income in 1993$
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+100K-133K
+67K-100K
+33.33K-67K
+17K-33K
+(f) Marginal Tax Rate
+0
+.1
+.2
+.3
+.4
+MTR
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+100K-133K
+67K-100K
+33.33K-67K
+17K-33K
+Notes: This ﬁgure plots the means for several demographic characteristics and two diﬀer-
+ent income concepts from 1982-2016 in each of the four treatment and control groups. The
+ﬁgure in panel (f) plots average the eﬀective marginal tax rate on capital gains income in
+each of the treatment and control groups from over time. Note that the eﬀective marginal
+tax rate in any given year is based on reported taxable capital gains in that year and ac-
+counts for the capital losses taken and the available Lifetime Capital Gains Exemption (LCGE)
+space available to the tax ﬁler in that year. Tax ﬁlers with remaining LCGE space or with
+enough capital losses to oﬀset realized gains face an eﬀective marginal tax rate of zero. The
+green shaded area marks the period of time (1985-1994) when the LCGE was available.
+67
+
+
+--- PDF PAGE 69 ---
+Figure F.2: Demographic Characteristics - Individuals with Positive CGs
+(a) Age
+50
+55
+60
+65
+70
+75
+average age
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+100K-133K
+67K-100K
+33.33K-67K
+17K-33K
+(b) Share Married
+.65
+.7
+.75
+.8
+share married
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+100K-133K
+67K-100K
+33.33K-67K
+17K-33K
+(c) Number of Kids
+.2
+.4
+.6
+.8
+1
+number of children
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+100K-133K
+67K-100K
+33.33K-67K
+17K-33K
+(d) Total Income
+20000
+40000
+60000
+80000
+100000
+120000
+gross income in 1993$
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+100K-133K
+67K-100K
+33.33K-67K
+17K-33K
+(e) Taxable Income
+20000
+40000
+60000
+80000
+100000
+taxable income in 1993$
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+100K-133K
+67K-100K
+33.33K-67K
+17K-33K
+(f) Marginal Tax Rate
+0
+.1
+.2
+.3
+.4
+MTR
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+100K-133K
+67K-100K
+33.33K-67K
+17K-33K
+Notes:
+This ﬁgure plots the means for several demographic characteristics and two dif-
+ferent income concepts for tax ﬁlers that report positive realized capital gains from 1982-
+2016, separately for each of the four treatment and control groups. The ﬁgure in panel (f)
+plots average the eﬀective marginal tax rate on capital gains income in each of the treat-
+ment and control groups from over time.
+Note that the eﬀective marginal tax rate in any
+given year is based on reported taxable capital gains in that year and accounts for the cap-
+ital losses taken and the available Lifetime Capital Gains Exemption (LCGE) space avail-
+able to the tax ﬁler in that year.
+Tax ﬁlers with remaining LCGE space or with enough
+capital losses to oﬀset realized gains face an eﬀective marginal tax rate of zero.
+The
+green shaded area marks the period of time (1985-1994) when the LCGE was available.
+68
+
+
+--- PDF PAGE 70 ---
+G
+Substitution Eﬀects
+Figure G.1: Time Series: Dividends, Investment Income and RRSP
+(a) Average Dividends
+0
+2500
+5000
+7500
+10000
+12500
+15000
+17500
+20000
+DJIA (2016 $)
+500
+1000
+1500
+2000
+2500
+dividends (1993 $)
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+dividends (1993 $)
+DJIA (2016 $)
+(b) % Positive Dividends
+0
+2500
+5000
+7500
+10000
+12500
+15000
+17500
+20000
+DJIA (2016 $)
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+% with positive dividends
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+% with positive dividends
+DJIA (2016 $)
+(c) Ave Positive Dividends
+0
+2500
+5000
+7500
+10000
+12500
+15000
+17500
+20000
+DJIA (2016 $)
+5000
+10000
+15000
+dividends (1993 $)
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+dividends (1993 $)
+DJIA (2016 $)
+(d) Average Investment
+0
+2500
+5000
+7500
+10000
+12500
+15000
+17500
+20000
+DJIA (2016 $)
+500
+1000
+1500
+2000
+2500
+3000
+investment income (1993 $)
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+investment income (1993 $)
+DJIA (2016 $)
+(e) % Positive Investment
+0
+2500
+5000
+7500
+10000
+12500
+15000
+17500
+20000
+DJIA (2016 $)
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+% with positive investment income
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+% with positive investment income
+DJIA (2016 $)
+(f) Ave Positive Investment
+0
+2500
+5000
+7500
+10000
+12500
+15000
+17500
+20000
+DJIA (2016 $)
+2000
+3000
+4000
+5000
+6000
+investment income (1993 $)
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+investment income (1993 $)
+DJIA (2016 $)
+(g) Average RRSP
+0
+2500
+5000
+7500
+10000
+12500
+15000
+17500
+20000
+DJIA (2016 $)
+800
+1000
+1200
+1400
+1600
+1800
+RRSP contributions (1993 $)
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+RRSP contributions (1993 $)
+DJIA (2016 $)
+(h) % Positive RRSP
+0
+2500
+5000
+7500
+10000
+12500
+15000
+17500
+20000
+DJIA (2016 $)
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+% with positive RRSP contrubutions
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+% with positive RRSP contrubutions
+DJIA (2016 $)
+(i) Ave Positive RRSP
+0
+2500
+5000
+7500
+10000
+12500
+15000
+17500
+20000
+DJIA (2016 $)
+4500
+5000
+5500
+6000
+6500
+7000
+RRSP contributions (1993 $)
+1982 1985
+1990
+1994
+2000
+2005
+2010
+2015
+year
+RRSP contributions (1993 $)
+DJIA (2016 $)
+Notes: Figures F.1(a), (d) and (g) plot the average reported dividends, investment income (sum of dividend
+and interest income) and RRSP contributions from 1982-2016 for all tax ﬁlers. Figures F.1(b), (e) and (h)
+plot the fraction of all tax ﬁlers with positive values of the aforementioned variables. Figures F.1(c), (f) and
+(i) plot the average reported dividends, investment income and RRSP contributions for tax ﬁlers with posi-
+tive values of those variables. The dashed grey line plots the inﬂation-adjusted values of the Standard and
+Poor’s Toronto Stock Exchange Composite Index.
+The green shaded area marks the period of time (1985-
+1994) when the LCGE was available. The red vertical lines indicate the years where the capital gains inclu-
+sion rate changed (from 50% to 66.6% in 1988, from 66.6% to 75% in 1990 and from 75% to 50% in 2000).
+69
+
+
+--- PDF PAGE 71 ---
+Figure G.2: Substitution Responses – Total Response
+Panel A: Dividends
+-.2
+-.1
+0
+.1
+.2
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.2
+-.1
+0
+.1
+.2
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.2
+-.1
+0
+.1
+.2
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17-33K  CG in 1985-1993 (1993$)
+Panel B: Investment Income
+-.2
+-.1
+0
+.1
+.2
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.05
+0
+.05
+.1
+.15
+.2
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.1
+0
+.1
+.2
+.3
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17-33K  CG in 1985-1993 (1993$)
+Panel C: RRSP
+-.2
+-.1
+0
+.1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.2
+-.1
+0
+.1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.2
+-.1
+0
+.1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17-33K  CG in 1985-1993 (1993$)
+Notes: This ﬁgure plots the γτ coeﬃcient estimates and the associated 95% conﬁdence in-
+tervals from the estimation of speciﬁcation (1) described in Section 4.1 for each of the
+three treatment groups.
+The dependent variables in Panels A, B and C are the nat-
+ural logarithm of dividend income, investment income and RRSP contributions, respec-
+tively.
+$1 is added to the value to all dollar values so that the natural logarithm is de-
+ﬁned.
+For speciﬁcations where the treatment group is $66,667-$100,000 1985-1993 capital
+gains, the number of observations is 293,385. For speciﬁcations where the treatment group is
+$33,334-$66,666 (resp. $16,666-$33,333), the number of observations is 532,893 (resp. 596,595).
+70
+
+
+--- PDF PAGE 72 ---
+Figure G.3: Substitution Responses - Intensive Margin
+Panel A: Dividends
+-.6
+-.4
+-.2
+0
+.2
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.6
+-.4
+-.2
+0
+.2
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.4
+-.2
+0
+.2
+.4
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17-33K  CG in 1985-1993 (1993$)
+Panel B: Investment Income
+-.3
+-.2
+-.1
+0
+.1
+.2
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.3
+-.2
+-.1
+0
+.1
+.2
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.4
+-.2
+0
+.2
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17-33K  CG in 1985-1993 (1993$)
+Panel C: RRSP
+-.4
+-.3
+-.2
+-.1
+0
+.1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 67K-100K  CG in 1985-1993 (1993$)
+-.4
+-.3
+-.2
+-.1
+0
+.1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 33K-67K  CG in 1985-1993 (1993$)
+-.4
+-.3
+-.2
+-.1
+0
+.1
+1990
+1992
+1994
+1996
+1998
+2000
+year
+Treatment group: 17-33K  CG in 1985-1993 (1993$)
+Notes: This ﬁgure plots the γτ coeﬃcient estimates and the associated 95% conﬁdence in-
+tervals from the estimation of speciﬁcation (1) described in Section 4.1 for each of the three
+treatment groups.
+For all speciﬁcations, the sample is restricted to tax ﬁlers with positive
+realized capital gains.
+The dependent variables in Panels A, B and C are the natural log-
+arithm of dividend income, investment income and RRSP contributions, respectively. $1 is
+added to the value to all dollar values so that the natural logarithm is deﬁned.
+For spec-
+iﬁcations where the treatment group is $66,667-$100,000 1985-1993 capital gains, the num-
+ber of observations is 105,105.
+For speciﬁcations where the treatment group is $33,334-
+$66,666 (resp. $16,666-$33,333), the number of observations is 171,335 (resp. 186,125).
+71

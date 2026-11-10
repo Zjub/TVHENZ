@@ -1,0 +1,11 @@
+tax_bracket,measure,share
+"$18,200 or less",Net capital gains,0.021854029710154883
+"$18,200 or less",All tax filers,0.14499284774799182
+"$18,201 to $45,000",Net capital gains,0.04039065918093601
+"$18,201 to $45,000",All tax filers,0.23929940430963356
+"$45,001 to $120,000",Net capital gains,0.12999565655023373
+"$45,001 to $120,000",All tax filers,0.4499852179355073
+"$120,001 to $180,000",Net capital gains,0.11097856133052234
+"$120,001 to $180,000",All tax filers,0.1055795163216845
+"$180,001 or more",Net capital gains,0.6967810932281531
+"$180,001 or more",All tax filers,0.06014301368518285

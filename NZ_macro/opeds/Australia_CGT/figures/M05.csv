@@ -1,0 +1,19 @@
+real_return,method,pv_tax
+0,Normal-return allowance,-7677.1825530982605
+0,"Cash-flow tax, refundable upfront deduction",-7677.182553098264
+0,CPI allowance only,0
+0.01,Normal-return allowance,-5341.721946637058
+0.01,"Cash-flow tax, refundable upfront deduction",-5341.7219466370625
+0.01,CPI allowance only,2335.460606461202
+0.03,Normal-return allowance,0
+0.03,"Cash-flow tax, refundable upfront deduction",-3.637978807091713e-12
+0.03,CPI allowance only,7677.1825530982605
+0.05,Normal-return allowance,6361.517393791976
+0.05,"Cash-flow tax, refundable upfront deduction",6361.517393791975
+0.05,CPI allowance only,14038.699946890236
+0.08,Normal-return allowance,18193.28859567329
+0.08,"Cash-flow tax, refundable upfront deduction",18193.288595673286
+0.08,CPI allowance only,25870.47114877155
+0.12,Normal-return allowance,39331.28257265463
+0.12,"Cash-flow tax, refundable upfront deduction",39331.28257265463
+0.12,CPI allowance only,47008.46512575289

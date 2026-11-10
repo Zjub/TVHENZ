@@ -1,0 +1,885 @@
+check,passed,detail
+62 unique charts,True,
+D01 png exists,True,
+D01 svg exists,True,
+D01 csv exists,True,
+D01 image resolution,True,"(2160, 1440)"
+D01 SVG parses,True,
+D01 SVG text bounds and encoding,True,
+D01 data nonempty,True,
+D01 no infinite plotted values,True,
+D02 png exists,True,
+D02 svg exists,True,
+D02 csv exists,True,
+D02 image resolution,True,"(2160, 1620)"
+D02 SVG parses,True,
+D02 SVG text bounds and encoding,True,
+D02 data nonempty,True,
+D02 no infinite plotted values,True,
+D03 png exists,True,
+D03 svg exists,True,
+D03 csv exists,True,
+D03 image resolution,True,"(2160, 1440)"
+D03 SVG parses,True,
+D03 SVG text bounds and encoding,True,
+D03 data nonempty,True,
+D03 no infinite plotted values,True,
+D04 png exists,True,
+D04 svg exists,True,
+D04 csv exists,True,
+D04 image resolution,True,"(2520, 1620)"
+D04 SVG parses,True,
+D04 SVG text bounds and encoding,True,
+D04 data nonempty,True,
+D04 no infinite plotted values,True,
+D05 png exists,True,
+D05 svg exists,True,
+D05 csv exists,True,
+D05 image resolution,True,"(2160, 1440)"
+D05 SVG parses,True,
+D05 SVG text bounds and encoding,True,
+D05 data nonempty,True,
+D05 no infinite plotted values,True,
+D06 png exists,True,
+D06 svg exists,True,
+D06 csv exists,True,
+D06 image resolution,True,"(2160, 1440)"
+D06 SVG parses,True,
+D06 SVG text bounds and encoding,True,
+D06 data nonempty,True,
+D06 no infinite plotted values,True,
+D07 png exists,True,
+D07 svg exists,True,
+D07 csv exists,True,
+D07 image resolution,True,"(2160, 1440)"
+D07 SVG parses,True,
+D07 SVG text bounds and encoding,True,
+D07 data nonempty,True,
+D07 no infinite plotted values,True,
+D08 png exists,True,
+D08 svg exists,True,
+D08 csv exists,True,
+D08 image resolution,True,"(2160, 1440)"
+D08 SVG parses,True,
+D08 SVG text bounds and encoding,True,
+D08 data nonempty,True,
+D08 no infinite plotted values,True,
+D09 png exists,True,
+D09 svg exists,True,
+D09 csv exists,True,
+D09 image resolution,True,"(2160, 1440)"
+D09 SVG parses,True,
+D09 SVG text bounds and encoding,True,
+D09 data nonempty,True,
+D09 no infinite plotted values,True,
+D10 png exists,True,
+D10 svg exists,True,
+D10 csv exists,True,
+D10 image resolution,True,"(2160, 1440)"
+D10 SVG parses,True,
+D10 SVG text bounds and encoding,True,
+D10 data nonempty,True,
+D10 no infinite plotted values,True,
+D11 png exists,True,
+D11 svg exists,True,
+D11 csv exists,True,
+D11 image resolution,True,"(2160, 1440)"
+D11 SVG parses,True,
+D11 SVG text bounds and encoding,True,
+D11 data nonempty,True,
+D11 no infinite plotted values,True,
+D12 png exists,True,
+D12 svg exists,True,
+D12 csv exists,True,
+D12 image resolution,True,"(2160, 1440)"
+D12 SVG parses,True,
+D12 SVG text bounds and encoding,True,
+D12 data nonempty,True,
+D12 no infinite plotted values,True,
+D13 png exists,True,
+D13 svg exists,True,
+D13 csv exists,True,
+D13 image resolution,True,"(2160, 1620)"
+D13 SVG parses,True,
+D13 SVG text bounds and encoding,True,
+D13 data nonempty,True,
+D13 no infinite plotted values,True,
+D14 png exists,True,
+D14 svg exists,True,
+D14 csv exists,True,
+D14 image resolution,True,"(2160, 1440)"
+D14 SVG parses,True,
+D14 SVG text bounds and encoding,True,
+D14 data nonempty,True,
+D14 no infinite plotted values,True,
+D15 png exists,True,
+D15 svg exists,True,
+D15 csv exists,True,
+D15 image resolution,True,"(2160, 1440)"
+D15 SVG parses,True,
+D15 SVG text bounds and encoding,True,
+D15 data nonempty,True,
+D15 no infinite plotted values,True,
+D16 png exists,True,
+D16 svg exists,True,
+D16 csv exists,True,
+D16 image resolution,True,"(2160, 1440)"
+D16 SVG parses,True,
+D16 SVG text bounds and encoding,True,
+D16 data nonempty,True,
+D16 no infinite plotted values,True,
+D17 png exists,True,
+D17 svg exists,True,
+D17 csv exists,True,
+D17 image resolution,True,"(2160, 1440)"
+D17 SVG parses,True,
+D17 SVG text bounds and encoding,True,
+D17 data nonempty,True,
+D17 no infinite plotted values,True,
+D18 png exists,True,
+D18 svg exists,True,
+D18 csv exists,True,
+D18 image resolution,True,"(2160, 1440)"
+D18 SVG parses,True,
+D18 SVG text bounds and encoding,True,
+D18 data nonempty,True,
+D18 no infinite plotted values,True,
+D19 png exists,True,
+D19 svg exists,True,
+D19 csv exists,True,
+D19 image resolution,True,"(2160, 1440)"
+D19 SVG parses,True,
+D19 SVG text bounds and encoding,True,
+D19 data nonempty,True,
+D19 no infinite plotted values,True,
+B01 png exists,True,
+B01 svg exists,True,
+B01 csv exists,True,
+B01 image resolution,True,"(2160, 1440)"
+B01 SVG parses,True,
+B01 SVG text bounds and encoding,True,
+B01 data nonempty,True,
+B01 no infinite plotted values,True,
+B02 png exists,True,
+B02 svg exists,True,
+B02 csv exists,True,
+B02 image resolution,True,"(2160, 1440)"
+B02 SVG parses,True,
+B02 SVG text bounds and encoding,True,
+B02 data nonempty,True,
+B02 no infinite plotted values,True,
+B03 png exists,True,
+B03 svg exists,True,
+B03 csv exists,True,
+B03 image resolution,True,"(2160, 1440)"
+B03 SVG parses,True,
+B03 SVG text bounds and encoding,True,
+B03 data nonempty,True,
+B03 no infinite plotted values,True,
+B04 png exists,True,
+B04 svg exists,True,
+B04 csv exists,True,
+B04 image resolution,True,"(2160, 1620)"
+B04 SVG parses,True,
+B04 SVG text bounds and encoding,True,
+B04 data nonempty,True,
+B04 no infinite plotted values,True,
+B05 png exists,True,
+B05 svg exists,True,
+B05 csv exists,True,
+B05 image resolution,True,"(2160, 1620)"
+B05 SVG parses,True,
+B05 SVG text bounds and encoding,True,
+B05 data nonempty,True,
+B05 no infinite plotted values,True,
+B06 png exists,True,
+B06 svg exists,True,
+B06 csv exists,True,
+B06 image resolution,True,"(2160, 1620)"
+B06 SVG parses,True,
+B06 SVG text bounds and encoding,True,
+B06 data nonempty,True,
+B06 no infinite plotted values,True,
+M01 png exists,True,
+M01 svg exists,True,
+M01 csv exists,True,
+M01 image resolution,True,"(2160, 1440)"
+M01 SVG parses,True,
+M01 SVG text bounds and encoding,True,
+M01 data nonempty,True,
+M01 no infinite plotted values,True,
+M02 png exists,True,
+M02 svg exists,True,
+M02 csv exists,True,
+M02 image resolution,True,"(2160, 1620)"
+M02 SVG parses,True,
+M02 SVG text bounds and encoding,True,
+M02 data nonempty,True,
+M02 no infinite plotted values,True,
+M03 png exists,True,
+M03 svg exists,True,
+M03 csv exists,True,
+M03 image resolution,True,"(2160, 1620)"
+M03 SVG parses,True,
+M03 SVG text bounds and encoding,True,
+M03 data nonempty,True,
+M03 no infinite plotted values,True,
+M04 png exists,True,
+M04 svg exists,True,
+M04 csv exists,True,
+M04 image resolution,True,"(2160, 1440)"
+M04 SVG parses,True,
+M04 SVG text bounds and encoding,True,
+M04 data nonempty,True,
+M04 no infinite plotted values,True,
+M05 png exists,True,
+M05 svg exists,True,
+M05 csv exists,True,
+M05 image resolution,True,"(2160, 1620)"
+M05 SVG parses,True,
+M05 SVG text bounds and encoding,True,
+M05 data nonempty,True,
+M05 no infinite plotted values,True,
+M06 png exists,True,
+M06 svg exists,True,
+M06 csv exists,True,
+M06 image resolution,True,"(2160, 1440)"
+M06 SVG parses,True,
+M06 SVG text bounds and encoding,True,
+M06 data nonempty,True,
+M06 no infinite plotted values,True,
+M07 png exists,True,
+M07 svg exists,True,
+M07 csv exists,True,
+M07 image resolution,True,"(2160, 1440)"
+M07 SVG parses,True,
+M07 SVG text bounds and encoding,True,
+M07 data nonempty,True,
+M07 no infinite plotted values,True,
+M08 png exists,True,
+M08 svg exists,True,
+M08 csv exists,True,
+M08 image resolution,True,"(2160, 1440)"
+M08 SVG parses,True,
+M08 SVG text bounds and encoding,True,
+M08 data nonempty,True,
+M08 no infinite plotted values,True,
+M09 png exists,True,
+M09 svg exists,True,
+M09 csv exists,True,
+M09 image resolution,True,"(2160, 1440)"
+M09 SVG parses,True,
+M09 SVG text bounds and encoding,True,
+M09 data nonempty,True,
+M09 no infinite plotted values,True,
+M10 png exists,True,
+M10 svg exists,True,
+M10 csv exists,True,
+M10 image resolution,True,"(2160, 1440)"
+M10 SVG parses,True,
+M10 SVG text bounds and encoding,True,
+M10 data nonempty,True,
+M10 no infinite plotted values,True,
+M11 png exists,True,
+M11 svg exists,True,
+M11 csv exists,True,
+M11 image resolution,True,"(2160, 1440)"
+M11 SVG parses,True,
+M11 SVG text bounds and encoding,True,
+M11 data nonempty,True,
+M11 no infinite plotted values,True,
+M12 png exists,True,
+M12 svg exists,True,
+M12 csv exists,True,
+M12 image resolution,True,"(2160, 1440)"
+M12 SVG parses,True,
+M12 SVG text bounds and encoding,True,
+M12 data nonempty,True,
+M12 no infinite plotted values,True,
+M13 png exists,True,
+M13 svg exists,True,
+M13 csv exists,True,
+M13 image resolution,True,"(2160, 1440)"
+M13 SVG parses,True,
+M13 SVG text bounds and encoding,True,
+M13 data nonempty,True,
+M13 no infinite plotted values,True,
+M14 png exists,True,
+M14 svg exists,True,
+M14 csv exists,True,
+M14 image resolution,True,"(2520, 1440)"
+M14 SVG parses,True,
+M14 SVG text bounds and encoding,True,
+M14 data nonempty,True,
+M14 no infinite plotted values,True,
+M15 png exists,True,
+M15 svg exists,True,
+M15 csv exists,True,
+M15 image resolution,True,"(2520, 1620)"
+M15 SVG parses,True,
+M15 SVG text bounds and encoding,True,
+M15 data nonempty,True,
+M15 no infinite plotted values,True,
+M16 png exists,True,
+M16 svg exists,True,
+M16 csv exists,True,
+M16 image resolution,True,"(2520, 1800)"
+M16 SVG parses,True,
+M16 SVG text bounds and encoding,True,
+M16 data nonempty,True,
+M16 no infinite plotted values,True,
+R01 png exists,True,
+R01 svg exists,True,
+R01 csv exists,True,
+R01 image resolution,True,"(2160, 1620)"
+R01 SVG parses,True,
+R01 SVG text bounds and encoding,True,
+R01 data nonempty,True,
+R01 no infinite plotted values,True,
+R02 png exists,True,
+R02 svg exists,True,
+R02 csv exists,True,
+R02 image resolution,True,"(2520, 1620)"
+R02 SVG parses,True,
+R02 SVG text bounds and encoding,True,
+R02 data nonempty,True,
+R02 no infinite plotted values,True,
+R03 png exists,True,
+R03 svg exists,True,
+R03 csv exists,True,
+R03 image resolution,True,"(2160, 1440)"
+R03 SVG parses,True,
+R03 SVG text bounds and encoding,True,
+R03 data nonempty,True,
+R03 no infinite plotted values,True,
+R04 png exists,True,
+R04 svg exists,True,
+R04 csv exists,True,
+R04 image resolution,True,"(2160, 1440)"
+R04 SVG parses,True,
+R04 SVG text bounds and encoding,True,
+R04 data nonempty,True,
+R04 no infinite plotted values,True,
+R05 png exists,True,
+R05 svg exists,True,
+R05 csv exists,True,
+R05 image resolution,True,"(2160, 1440)"
+R05 SVG parses,True,
+R05 SVG text bounds and encoding,True,
+R05 data nonempty,True,
+R05 no infinite plotted values,True,
+R06 png exists,True,
+R06 svg exists,True,
+R06 csv exists,True,
+R06 image resolution,True,"(2160, 1440)"
+R06 SVG parses,True,
+R06 SVG text bounds and encoding,True,
+R06 data nonempty,True,
+R06 no infinite plotted values,True,
+R07 png exists,True,
+R07 svg exists,True,
+R07 csv exists,True,
+R07 image resolution,True,"(2160, 1800)"
+R07 SVG parses,True,
+R07 SVG text bounds and encoding,True,
+R07 data nonempty,True,
+R07 no infinite plotted values,True,
+R08 png exists,True,
+R08 svg exists,True,
+R08 csv exists,True,
+R08 image resolution,True,"(2160, 1440)"
+R08 SVG parses,True,
+R08 SVG text bounds and encoding,True,
+R08 data nonempty,True,
+R08 no infinite plotted values,True,
+R09 png exists,True,
+R09 svg exists,True,
+R09 csv exists,True,
+R09 image resolution,True,"(2160, 1440)"
+R09 SVG parses,True,
+R09 SVG text bounds and encoding,True,
+R09 data nonempty,True,
+R09 no infinite plotted values,True,
+R10 png exists,True,
+R10 svg exists,True,
+R10 csv exists,True,
+R10 image resolution,True,"(2520, 1620)"
+R10 SVG parses,True,
+R10 SVG text bounds and encoding,True,
+R10 data nonempty,True,
+R10 no infinite plotted values,True,
+R11 png exists,True,
+R11 svg exists,True,
+R11 csv exists,True,
+R11 image resolution,True,"(2160, 1620)"
+R11 SVG parses,True,
+R11 SVG text bounds and encoding,True,
+R11 data nonempty,True,
+R11 no infinite plotted values,True,
+M17 png exists,True,
+M17 svg exists,True,
+M17 csv exists,True,
+M17 image resolution,True,"(2160, 1440)"
+M17 SVG parses,True,
+M17 SVG text bounds and encoding,True,
+M17 data nonempty,True,
+M17 no infinite plotted values,True,
+E01 png exists,True,
+E01 svg exists,True,
+E01 csv exists,True,
+E01 image resolution,True,"(2520, 2340)"
+E01 SVG parses,True,
+E01 SVG text bounds and encoding,True,
+E01 data nonempty,True,
+E01 no infinite plotted values,True,
+E02 png exists,True,
+E02 svg exists,True,
+E02 csv exists,True,
+E02 image resolution,True,"(2520, 1440)"
+E02 SVG parses,True,
+E02 SVG text bounds and encoding,True,
+E02 data nonempty,True,
+E02 no infinite plotted values,True,
+E03 png exists,True,
+E03 svg exists,True,
+E03 csv exists,True,
+E03 image resolution,True,"(2520, 1620)"
+E03 SVG parses,True,
+E03 SVG text bounds and encoding,True,
+E03 data nonempty,True,
+E03 no infinite plotted values,True,
+E04 png exists,True,
+E04 svg exists,True,
+E04 csv exists,True,
+E04 image resolution,True,"(2520, 1620)"
+E04 SVG parses,True,
+E04 SVG text bounds and encoding,True,
+E04 data nonempty,True,
+E04 no infinite plotted values,True,
+E05 png exists,True,
+E05 svg exists,True,
+E05 csv exists,True,
+E05 image resolution,True,"(2160, 1440)"
+E05 SVG parses,True,
+E05 SVG text bounds and encoding,True,
+E05 data nonempty,True,
+E05 no infinite plotted values,True,
+E06 png exists,True,
+E06 svg exists,True,
+E06 csv exists,True,
+E06 image resolution,True,"(2160, 1440)"
+E06 SVG parses,True,
+E06 SVG text bounds and encoding,True,
+E06 data nonempty,True,
+E06 no infinite plotted values,True,
+E07 png exists,True,
+E07 svg exists,True,
+E07 csv exists,True,
+E07 image resolution,True,"(2160, 1440)"
+E07 SVG parses,True,
+E07 SVG text bounds and encoding,True,
+E07 data nonempty,True,
+E07 no infinite plotted values,True,
+Q01 png exists,True,
+Q01 svg exists,True,
+Q01 csv exists,True,
+Q01 image resolution,True,"(2160, 1440)"
+Q01 SVG parses,True,
+Q01 SVG text bounds and encoding,True,
+Q01 data nonempty,True,
+Q01 no infinite plotted values,True,
+Q02 png exists,True,
+Q02 svg exists,True,
+Q02 csv exists,True,
+Q02 image resolution,True,"(2160, 1440)"
+Q02 SVG parses,True,
+Q02 SVG text bounds and encoding,True,
+Q02 data nonempty,True,
+Q02 no infinite plotted values,True,
+32 public-source snapshots,True,
+agersnap_zidar source SHA-256,True,
+ato_catalogue source SHA-256,True,
+ato_cgt1 source SHA-256,True,
+ato_cgt2 source SHA-256,True,
+ato_ind1 source SHA-256,True,
+ato_ind16 source SHA-256,True,
+ato_ind2 source SHA-256,True,
+ato_ind3 source SHA-256,True,
+ato_landlords source SHA-256,True,
+ato_rental source SHA-256,True,
+australia_study source SHA-256,True,
+budget_explainer source SHA-256,True,
+budget_measures source SHA-256,True,
+budget_strategy source SHA-256,True,
+budget_tax_docx source SHA-256,True,
+canada source SHA-256,True,
+crs source SHA-256,True,
+enacted_main source SHA-256,True,
+enacted_rates source SHA-256,True,
+ifs_reform source SHA-256,True,
+october_speech source SHA-256,True,
+oecd source SHA-256,True,
+pbo_data source SHA-256,True,
+pbo_report source SHA-256,True,
+personal_rates source SHA-256,True,
+rba_bonds source SHA-256,True,
+rba_cpi source SHA-256,True,
+sarin_etal source SHA-256,True,
+teis source SHA-256,True,
+teis_data source SHA-256,True,
+tranche2 source SHA-256,True,
+treasury_reforms source SHA-256,True,
+gallery local link 1,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\RESEARCH_GUIDE.md
+gallery local link 2,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\README.md
+gallery local link 3,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\processed\key_findings.csv
+gallery local link 4,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\processed\literature.csv
+gallery local link 5,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\POLICY_STATUS.md
+gallery local link 6,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D01.png
+gallery local link 7,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D01.png
+gallery local link 8,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D01.png
+gallery local link 9,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D01.svg
+gallery local link 10,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D01.csv
+gallery local link 11,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D02.png
+gallery local link 12,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D02.png
+gallery local link 13,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D02.png
+gallery local link 14,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D02.svg
+gallery local link 15,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D02.csv
+gallery local link 16,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D03.png
+gallery local link 17,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D03.png
+gallery local link 18,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D03.png
+gallery local link 19,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D03.svg
+gallery local link 20,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D03.csv
+gallery local link 21,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D04.png
+gallery local link 22,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D04.png
+gallery local link 23,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D04.png
+gallery local link 24,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D04.svg
+gallery local link 25,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D04.csv
+gallery local link 26,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D05.png
+gallery local link 27,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D05.png
+gallery local link 28,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D05.png
+gallery local link 29,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D05.svg
+gallery local link 30,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D05.csv
+gallery local link 31,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D06.png
+gallery local link 32,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D06.png
+gallery local link 33,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D06.png
+gallery local link 34,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D06.svg
+gallery local link 35,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D06.csv
+gallery local link 36,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D07.png
+gallery local link 37,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D07.png
+gallery local link 38,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D07.png
+gallery local link 39,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D07.svg
+gallery local link 40,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D07.csv
+gallery local link 41,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D08.png
+gallery local link 42,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D08.png
+gallery local link 43,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D08.png
+gallery local link 44,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D08.svg
+gallery local link 45,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D08.csv
+gallery local link 46,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D09.png
+gallery local link 47,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D09.png
+gallery local link 48,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D09.png
+gallery local link 49,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D09.svg
+gallery local link 50,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D09.csv
+gallery local link 51,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D10.png
+gallery local link 52,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D10.png
+gallery local link 53,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D10.png
+gallery local link 54,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D10.svg
+gallery local link 55,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D10.csv
+gallery local link 56,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D11.png
+gallery local link 57,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D11.png
+gallery local link 58,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D11.png
+gallery local link 59,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D11.svg
+gallery local link 60,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D11.csv
+gallery local link 61,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D12.png
+gallery local link 62,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D12.png
+gallery local link 63,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D12.png
+gallery local link 64,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D12.svg
+gallery local link 65,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D12.csv
+gallery local link 66,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D13.png
+gallery local link 67,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D13.png
+gallery local link 68,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D13.png
+gallery local link 69,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D13.svg
+gallery local link 70,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D13.csv
+gallery local link 71,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D14.png
+gallery local link 72,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D14.png
+gallery local link 73,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D14.png
+gallery local link 74,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D14.svg
+gallery local link 75,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D14.csv
+gallery local link 76,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D15.png
+gallery local link 77,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D15.png
+gallery local link 78,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D15.png
+gallery local link 79,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D15.svg
+gallery local link 80,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D15.csv
+gallery local link 81,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D16.png
+gallery local link 82,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D16.png
+gallery local link 83,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D16.png
+gallery local link 84,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D16.svg
+gallery local link 85,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D16.csv
+gallery local link 86,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D17.png
+gallery local link 87,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D17.png
+gallery local link 88,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D17.png
+gallery local link 89,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D17.svg
+gallery local link 90,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D17.csv
+gallery local link 91,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D18.png
+gallery local link 92,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D18.png
+gallery local link 93,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D18.png
+gallery local link 94,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D18.svg
+gallery local link 95,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D18.csv
+gallery local link 96,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D19.png
+gallery local link 97,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D19.png
+gallery local link 98,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D19.png
+gallery local link 99,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D19.svg
+gallery local link 100,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\D19.csv
+gallery local link 101,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B01.png
+gallery local link 102,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B01.png
+gallery local link 103,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B01.png
+gallery local link 104,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B01.svg
+gallery local link 105,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B01.csv
+gallery local link 106,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B02.png
+gallery local link 107,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B02.png
+gallery local link 108,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B02.png
+gallery local link 109,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B02.svg
+gallery local link 110,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B02.csv
+gallery local link 111,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B03.png
+gallery local link 112,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B03.png
+gallery local link 113,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B03.png
+gallery local link 114,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B03.svg
+gallery local link 115,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B03.csv
+gallery local link 116,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B04.png
+gallery local link 117,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B04.png
+gallery local link 118,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B04.png
+gallery local link 119,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B04.svg
+gallery local link 120,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B04.csv
+gallery local link 121,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B05.png
+gallery local link 122,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B05.png
+gallery local link 123,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B05.png
+gallery local link 124,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B05.svg
+gallery local link 125,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B05.csv
+gallery local link 126,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B06.png
+gallery local link 127,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B06.png
+gallery local link 128,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B06.png
+gallery local link 129,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B06.svg
+gallery local link 130,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\B06.csv
+gallery local link 131,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M01.png
+gallery local link 132,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M01.png
+gallery local link 133,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M01.png
+gallery local link 134,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M01.svg
+gallery local link 135,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M01.csv
+gallery local link 136,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M02.png
+gallery local link 137,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M02.png
+gallery local link 138,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M02.png
+gallery local link 139,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M02.svg
+gallery local link 140,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M02.csv
+gallery local link 141,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M03.png
+gallery local link 142,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M03.png
+gallery local link 143,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M03.png
+gallery local link 144,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M03.svg
+gallery local link 145,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M03.csv
+gallery local link 146,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M04.png
+gallery local link 147,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M04.png
+gallery local link 148,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M04.png
+gallery local link 149,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M04.svg
+gallery local link 150,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M04.csv
+gallery local link 151,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M05.png
+gallery local link 152,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M05.png
+gallery local link 153,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M05.png
+gallery local link 154,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M05.svg
+gallery local link 155,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M05.csv
+gallery local link 156,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M06.png
+gallery local link 157,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M06.png
+gallery local link 158,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M06.png
+gallery local link 159,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M06.svg
+gallery local link 160,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M06.csv
+gallery local link 161,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M07.png
+gallery local link 162,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M07.png
+gallery local link 163,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M07.png
+gallery local link 164,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M07.svg
+gallery local link 165,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M07.csv
+gallery local link 166,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M08.png
+gallery local link 167,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M08.png
+gallery local link 168,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M08.png
+gallery local link 169,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M08.svg
+gallery local link 170,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M08.csv
+gallery local link 171,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M09.png
+gallery local link 172,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M09.png
+gallery local link 173,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M09.png
+gallery local link 174,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M09.svg
+gallery local link 175,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M09.csv
+gallery local link 176,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M10.png
+gallery local link 177,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M10.png
+gallery local link 178,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M10.png
+gallery local link 179,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M10.svg
+gallery local link 180,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M10.csv
+gallery local link 181,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M11.png
+gallery local link 182,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M11.png
+gallery local link 183,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M11.png
+gallery local link 184,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M11.svg
+gallery local link 185,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M11.csv
+gallery local link 186,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M12.png
+gallery local link 187,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M12.png
+gallery local link 188,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M12.png
+gallery local link 189,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M12.svg
+gallery local link 190,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M12.csv
+gallery local link 191,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M13.png
+gallery local link 192,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M13.png
+gallery local link 193,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M13.png
+gallery local link 194,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M13.svg
+gallery local link 195,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M13.csv
+gallery local link 196,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M14.png
+gallery local link 197,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M14.png
+gallery local link 198,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M14.png
+gallery local link 199,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M14.svg
+gallery local link 200,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M14.csv
+gallery local link 201,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M15.png
+gallery local link 202,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M15.png
+gallery local link 203,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M15.png
+gallery local link 204,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M15.svg
+gallery local link 205,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M15.csv
+gallery local link 206,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M16.png
+gallery local link 207,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M16.png
+gallery local link 208,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M16.png
+gallery local link 209,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M16.svg
+gallery local link 210,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M16.csv
+gallery local link 211,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R01.png
+gallery local link 212,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R01.png
+gallery local link 213,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R01.png
+gallery local link 214,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R01.svg
+gallery local link 215,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R01.csv
+gallery local link 216,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R02.png
+gallery local link 217,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R02.png
+gallery local link 218,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R02.png
+gallery local link 219,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R02.svg
+gallery local link 220,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R02.csv
+gallery local link 221,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R03.png
+gallery local link 222,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R03.png
+gallery local link 223,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R03.png
+gallery local link 224,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R03.svg
+gallery local link 225,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R03.csv
+gallery local link 226,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R04.png
+gallery local link 227,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R04.png
+gallery local link 228,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R04.png
+gallery local link 229,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R04.svg
+gallery local link 230,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R04.csv
+gallery local link 231,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R05.png
+gallery local link 232,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R05.png
+gallery local link 233,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R05.png
+gallery local link 234,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R05.svg
+gallery local link 235,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R05.csv
+gallery local link 236,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R06.png
+gallery local link 237,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R06.png
+gallery local link 238,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R06.png
+gallery local link 239,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R06.svg
+gallery local link 240,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R06.csv
+gallery local link 241,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R07.png
+gallery local link 242,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R07.png
+gallery local link 243,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R07.png
+gallery local link 244,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R07.svg
+gallery local link 245,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R07.csv
+gallery local link 246,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R08.png
+gallery local link 247,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R08.png
+gallery local link 248,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R08.png
+gallery local link 249,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R08.svg
+gallery local link 250,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R08.csv
+gallery local link 251,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R09.png
+gallery local link 252,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R09.png
+gallery local link 253,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R09.png
+gallery local link 254,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R09.svg
+gallery local link 255,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R09.csv
+gallery local link 256,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R10.png
+gallery local link 257,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R10.png
+gallery local link 258,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R10.png
+gallery local link 259,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R10.svg
+gallery local link 260,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R10.csv
+gallery local link 261,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R11.png
+gallery local link 262,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R11.png
+gallery local link 263,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R11.png
+gallery local link 264,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R11.svg
+gallery local link 265,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\R11.csv
+gallery local link 266,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M17.png
+gallery local link 267,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M17.png
+gallery local link 268,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M17.png
+gallery local link 269,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M17.svg
+gallery local link 270,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\M17.csv
+gallery local link 271,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E01.png
+gallery local link 272,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E01.png
+gallery local link 273,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E01.png
+gallery local link 274,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E01.svg
+gallery local link 275,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E01.csv
+gallery local link 276,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E02.png
+gallery local link 277,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E02.png
+gallery local link 278,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E02.png
+gallery local link 279,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E02.svg
+gallery local link 280,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E02.csv
+gallery local link 281,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E03.png
+gallery local link 282,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E03.png
+gallery local link 283,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E03.png
+gallery local link 284,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E03.svg
+gallery local link 285,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E03.csv
+gallery local link 286,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E04.png
+gallery local link 287,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E04.png
+gallery local link 288,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E04.png
+gallery local link 289,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E04.svg
+gallery local link 290,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E04.csv
+gallery local link 291,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E05.png
+gallery local link 292,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E05.png
+gallery local link 293,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E05.png
+gallery local link 294,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E05.svg
+gallery local link 295,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E05.csv
+gallery local link 296,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E06.png
+gallery local link 297,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E06.png
+gallery local link 298,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E06.png
+gallery local link 299,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E06.svg
+gallery local link 300,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E06.csv
+gallery local link 301,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E07.png
+gallery local link 302,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E07.png
+gallery local link 303,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E07.png
+gallery local link 304,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E07.svg
+gallery local link 305,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\E07.csv
+gallery local link 306,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\Q01.png
+gallery local link 307,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\Q01.png
+gallery local link 308,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\Q01.png
+gallery local link 309,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\Q01.svg
+gallery local link 310,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\Q01.csv
+gallery local link 311,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\Q02.png
+gallery local link 312,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\Q02.png
+gallery local link 313,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\Q02.png
+gallery local link 314,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\Q02.svg
+gallery local link 315,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\figures\Q02.csv
+gallery local link 316,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\agersnap_zidar.pdf
+gallery local link 317,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\ato_catalogue.json
+gallery local link 318,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\ato_cgt1.xlsx
+gallery local link 319,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\ato_cgt2.xlsx
+gallery local link 320,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\ato_ind1.xlsx
+gallery local link 321,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\ato_ind16.xlsx
+gallery local link 322,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\ato_ind2.xlsx
+gallery local link 323,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\ato_ind3.xlsx
+gallery local link 324,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\ato_landlords.xlsx
+gallery local link 325,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\ato_rental.xlsx
+gallery local link 326,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\australia_study.html
+gallery local link 327,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\budget_explainer.pdf
+gallery local link 328,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\budget_measures.pdf
+gallery local link 329,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\budget_strategy.pdf
+gallery local link 330,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\budget_tax_statement.docx
+gallery local link 331,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\canada.pdf
+gallery local link 332,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\crs.pdf
+gallery local link 333,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\enacted_main.html
+gallery local link 334,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\enacted_rates.html
+gallery local link 335,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\ifs_reform.pdf
+gallery local link 336,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\october_speech.html
+gallery local link 337,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\oecd.pdf
+gallery local link 338,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\pbo.xlsx
+gallery local link 339,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\pbo.html
+gallery local link 340,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\personal_rates.html
+gallery local link 341,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\rba_bonds.csv
+gallery local link 342,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\rba_cpi.csv
+gallery local link 343,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\sarin_etal.pdf
+gallery local link 344,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\teis.pdf
+gallery local link 345,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\teis.xlsx
+gallery local link 346,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\tranche2.html
+gallery local link 347,True,C:\Users\OEM\Documents\GitHub\TVHENZ\NZ_macro\opeds\Australia_CGT\raw\treasury_reforms.html
+R model/source checks passed,True,26
+Composition includes published-total residual,True,
+Rental graph has all 12 years,True,
+Rental non-interest deductions positive,True,
+Rental plotted deductions match independent source sum,True,
+Rental source near-reconciliation retained,True,Small source discrepancies retained; not forced to zero
+Gallery local links resolve,True,347

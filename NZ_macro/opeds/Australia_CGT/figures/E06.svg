@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='576.00pt' viewBox='0 0 864.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='0.00' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNTAuNDF8ODQyLjA4fDUzLjc4fDQ4MS40MQ=='>
+    <rect x='50.41' y='53.78' width='791.67' height='427.63' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTAuNDF8ODQyLjA4fDUzLjc4fDQ4MS40MQ==)'>
+<polyline points='50.41,461.97 842.08,461.97 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='50.41,364.78 842.08,364.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='50.41,267.59 842.08,267.59 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='50.41,170.40 842.08,170.40 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='50.41,73.21 842.08,73.21 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='50.41,481.41 50.41,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='230.34,481.41 230.34,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='410.26,481.41 410.26,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='590.19,481.41 590.19,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='770.11,481.41 770.11,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='86.40,364.78 158.37,73.21 230.34,461.97 302.31,461.97 374.28,461.97 446.25,364.78 518.22,364.78 590.19,364.78 662.16,364.78 734.13,364.78 806.10,364.78 ' style='stroke-width: 2.13; stroke: #146B8C; stroke-linecap: butt;' />
+<polyline points='86.40,364.78 158.37,364.78 230.34,364.78 302.31,364.78 374.28,364.78 446.25,364.78 518.22,364.78 590.19,364.78 662.16,364.78 734.13,364.78 806.10,364.78 ' style='stroke-width: 2.13; stroke: #CF671D; stroke-linecap: butt;' />
+<line x1='194.35' y1='481.41' x2='194.35' y2='53.78' style='stroke-width: 1.16; stroke-dasharray: 6.21,6.21; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='45.03' y='465.40' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>90</text>
+<text x='45.03' y='368.21' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.98px' lengthAdjust='spacingAndGlyphs'>100</text>
+<text x='45.03' y='271.03' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.27px' lengthAdjust='spacingAndGlyphs'>110</text>
+<text x='45.03' y='173.84' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.98px' lengthAdjust='spacingAndGlyphs'>120</text>
+<text x='45.03' y='76.65' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='15.98px' lengthAdjust='spacingAndGlyphs'>130</text>
+<text x='50.41' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='16.52px' lengthAdjust='spacingAndGlyphs'>-2.5</text>
+<text x='230.34' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>0.0</text>
+<text x='410.26' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>2.5</text>
+<text x='590.19' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>5.0</text>
+<text x='770.11' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>7.5</text>
+<text transform='translate(23.54,267.59) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='226.47px' lengthAdjust='spacingAndGlyphs'>Realised gains; unchanged baseline = 100</text>
+<line x1='299.71' y1='522.24' x2='313.54' y2='522.24' style='stroke-width: 2.13; stroke: #146B8C; stroke-linecap: butt;' />
+<line x1='490.40' y1='522.24' x2='504.23' y2='522.24' style='stroke-width: 2.13; stroke: #CF671D; stroke-linecap: butt;' />
+<text x='321.24' y='525.68' style='font-size: 9.60px; font-family: "Arial";' textLength='161.45px' lengthAdjust='spacingAndGlyphs'>Bring forward 30; unwind over 3 years</text>
+<text x='511.93' y='525.68' style='font-size: 9.60px; font-family: "Arial";' textLength='82.58px' lengthAdjust='spacingAndGlyphs'>No timing response</text>
+<text x='50.41' y='45.48' style='font-size: 11.00px; font-family: "Arial";' textLength='394.69px' lengthAdjust='spacingAndGlyphs'>Hypothetical scenario, not an estimate of reform revenue or household behaviour</text>
+<text x='50.41' y='27.83' style='font-size: 18.00px; font-weight: bold; font-family: "Arial";' textLength='515.95px' lengthAdjust='spacingAndGlyphs'>E06 A surge before a tax change can be followed by a slump</text>
+<text x='50.41' y='549.28' style='font-size: 9.00px; font-family: "Arial";' textLength='556.34px' lengthAdjust='spacingAndGlyphs'>Source: Model: retiming.  Pure timing illustration shifts 30 units into year -1 and removes 10 in each of years 0-2. Total gains conserved over</text>
+<text x='50.41' y='561.16' style='font-size: 9.00px; font-family: "Arial";' textLength='200.50px' lengthAdjust='spacingAndGlyphs'>the full window; no permanent response assumed.</text>
+</g>
+</g>
+</svg>
