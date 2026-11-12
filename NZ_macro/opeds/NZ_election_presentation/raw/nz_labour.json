@@ -1,0 +1,925 @@
+{
+  "DateTaxonomyTerm": {
+    "ID": "8378",
+    "ClassName": "DateTaxonomyTerm",
+    "Date": null,
+    "DisplayName": "Labour market statistics: September 2026 quarter",
+    "DateFormat": "F Y",
+    "DateString": "4 November 2026",
+    "PublicationDate": "2026-11-04 10:45:00"
+  },
+  "ID": "80678",
+  "Title": "Labour market statistics: September 2026 quarter",
+  "ClassName": "BlockPage",
+  "BackgroundColor": "white",
+  "FeaturedMedia": {
+    "ID": 135689,
+    "SeriesData": [
+      {
+        "ID": 35908,
+        "Title": "Unemployment rate by sex, seasonally adjusted, September 2012\u2013September 2026 quarters",
+        "ClassName": "SeriesGroup",
+        "Type": "line",
+        "GraphCsvData": "Quarter,Sept-12,Dec-12,Mar-13,Jun-13,Sept-13,Dec-13,Mar-14,Jun-14,Sept-14,Dec-14,Mar-15,Jun-15,Sept-15,Dec-15,Mar-16,Jun-16,Sept-16,Dec-16,Mar-17,Jun-17,Sept-17,Dec-17,Mar-18,Jun-18,Sept-18,Dec-18,Mar-19,Jun-19,Sept-19,Dec-19,Mar-20,Jun-20,Sept-20,Dec-20,Mar-21,Jun-21,Sept-21,Dec-21,Mar-22,Jun-22,Sept-22,Dec-22,Mar-23,Jun-23,Sept-23,Dec-23,Mar-24,Jun-24,Sept-24,Dec-24,Mar-25,Jun-25,Sept-25,Dec-25,Mar-26,Jun-26,Sept-26\r\nMen,6.6,6,5.2,5.5,5.5,5,5.1,4.6,4.6,4.8,5.2,4.8,5.2,4.7,5,4.7,4.7,4.8,4.3,4.8,4.1,4,3.9,4.4,4,4.4,3.8,3.7,3.8,3.9,4,3.6,4.8,4.5,4.6,3.8,3.3,3.1,3.2,3.1,2.9,3.3,3.3,3.4,3.7,3.8,4.1,4.6,4.7,5,4.9,5,5.2,5.3,5.4,5.6,5.6\r\nWomen,6.9,6.7,6.5,6.5,6.2,6.4,6.1,6,6.1,6.3,5.9,6.3,6.1,5.3,5.6,5.5,5.3,5.8,5.6,5,5.4,5,4.8,4.9,4,4.2,4.5,4.4,4.4,4.3,4.4,4.6,5.6,5.4,4.7,4.2,3.3,3.4,3.4,3.6,3.7,3.5,3.7,3.9,4.2,4.3,4.8,4.8,5,5.3,5.4,5.5,5.3,5.5,5.3,5.5,5.7\r\nTotal,6.7,6.3,5.8,6,5.8,5.7,5.6,5.3,5.3,5.5,5.5,5.5,5.7,5,5.3,5.1,5,5.3,4.9,4.9,4.7,4.5,4.4,4.6,4,4.3,4.2,4.1,4.1,4.1,4.2,4.1,5.2,4.9,4.6,4,3.3,3.2,3.3,3.3,3.3,3.4,3.5,3.7,3.9,4,4.4,4.7,4.9,5.1,5.2,5.2,5.3,5.4,5.4,5.6,5.7\r\n"
+      }
+    ],
+    "GraphType": "line",
+    "GraphHeading": "Unemployment rate by sex, seasonally adjusted, September 2012\u2013September 2026 quarters",
+    "ClassName": "GraphTableBlock"
+  },
+  "FeaturedText": "<p>Labour market statistics provide a picture of the New Zealand labour market, including unemployment and employment rates, demand for labour, and changes in wages and salaries.</p>",
+  "IsPublishing": false,
+  "MediaPosition": "",
+  "PageLayout": "info",
+  "PageLink": "/information-releases/labour-market-statistics-september-2026-quarter/",
+  "PageDate": "2026-11-04 10:45:00",
+  "TagPosition": "bottom",
+  "MetaDescription": "The unemployment rate was 5.7 percent in the September 2026 quarter, compared with 5.6 percent in the June 2026 quarter, and the underutilisation rate was unchanged at 13.8 percent.",
+  "PageBreadcrumbs": [
+    {
+      "Title": "Home",
+      "MenuTitle": "Home",
+      "Link": "/"
+    },
+    {
+      "Title": "Information releases",
+      "MenuTitle": "Information releases",
+      "Link": "/information-releases/"
+    },
+    {
+      "Title": "Labour market statistics: September 2026 quarter",
+      "MenuTitle": "Labour market statistics: September 2026 quarter",
+      "Link": "/information-releases/labour-market-statistics-september-2026-quarter/"
+    }
+  ],
+  "SiteBanner": [],
+  "PageBlocks": [
+    {
+      "ID": "718",
+      "Title": "Description labour market statistics",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<p><span class=\"intro\">Labour market statistics provide a picture of the New Zealand labour market, including unemployment and employment rates, demand for labour, and changes in wages and salaries.<a id=\"download-data\"></a></span></p>"
+    },
+    {
+      "ID": "135733",
+      "Title": "Labour market statistics: September 2026 quarter \u2013 download data 1",
+      "ClassName": "DocumentBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "BlockDocuments": [
+        {
+          "ID": "124824",
+          "ClassName": "SilverStripe\\Assets\\File",
+          "Name": "labour-market-statistics-september-2026-quarter.zip",
+          "FileName": "labour-market-statistics-september-2026-quarter.zip",
+          "Title": "Labour market statistics: September 2026 quarter \u2013 CSV",
+          "ShowInSearch": 1,
+          "ParentID": 124474,
+          "OwnerID": 247,
+          "DocumentLink": "/assets/Uploads/Labour-market-statistics/Labour-market-statistics-September-2026-quarter/Download-data/labour-market-statistics-september-2026-quarter.zip",
+          "DocumentCategory": "archive",
+          "DocumentExtension": "zip",
+          "DocumentFileType": "ZIP compressed file",
+          "DocumentIcon": "/_resources/vendor/silverstripe/framework/client/images/app_icons/archive_92.png?m=1793625164",
+          "DocumentSize": "18 MB",
+          "DocumentPreviewImage": false
+        },
+        {
+          "ID": "124820",
+          "ClassName": "SilverStripe\\Assets\\File",
+          "Name": "household-labour-force-survey-september-2026-quarter.xlsx",
+          "FileName": "household-labour-force-survey-september-2026-quarter.xlsx",
+          "Title": "Household labour force survey: September 2026 quarter",
+          "ShowInSearch": 1,
+          "ParentID": 124474,
+          "OwnerID": 247,
+          "DocumentLink": "/assets/Uploads/Labour-market-statistics/Labour-market-statistics-September-2026-quarter/Download-data/household-labour-force-survey-september-2026-quarter.xlsx",
+          "DocumentCategory": "document",
+          "DocumentExtension": "xlsx",
+          "DocumentFileType": "Excel spreadsheet",
+          "DocumentIcon": "/_resources/vendor/silverstripe/framework/client/images/app_icons/document_92.png?m=1793625164",
+          "DocumentSize": "250 KB",
+          "DocumentPreviewImage": false
+        }
+      ],
+      "Heading": "Download data",
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      },
+      "Presentation": null
+    },
+    {
+      "ID": "135736",
+      "Title": "Labour market statistics: September 2026 quarter \u2013 download data text",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<ul>\n<li>Table 4 has key labour market measures by age group.</li>\n<li>Table 5 has key labour market measures by ethnic group.</li>\n<li>Table 6 has key labour market measures by regional council area.</li>\n</ul>"
+    },
+    {
+      "ID": "135734",
+      "Title": "Labour market statistics: September 2026 quarter \u2013 download data 2",
+      "ClassName": "DocumentBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "BlockDocuments": [
+        {
+          "ID": "124821",
+          "ClassName": "SilverStripe\\Assets\\File",
+          "Name": "labour-cost-index-salary-and-wage-rates-september-2026-quarter.xlsx",
+          "FileName": "labour-cost-index-salary-and-wage-rates-september-2026-quarter.xlsx",
+          "Title": "Labour cost index (salary and wage rates): September 2026 quarter",
+          "ShowInSearch": 1,
+          "ParentID": 124474,
+          "OwnerID": 247,
+          "DocumentLink": "/assets/Uploads/Labour-market-statistics/Labour-market-statistics-September-2026-quarter/Download-data/labour-cost-index-salary-and-wage-rates-september-2026-quarter.xlsx",
+          "DocumentCategory": "document",
+          "DocumentExtension": "xlsx",
+          "DocumentFileType": "Excel spreadsheet",
+          "DocumentIcon": "/_resources/vendor/silverstripe/framework/client/images/app_icons/document_92.png?m=1793625164",
+          "DocumentSize": "353 KB",
+          "DocumentPreviewImage": false
+        },
+        {
+          "ID": "124822",
+          "ClassName": "SilverStripe\\Assets\\File",
+          "Name": "quarterly-employment-survey-september-2026-quarter.xlsx",
+          "FileName": "quarterly-employment-survey-september-2026-quarter.xlsx",
+          "Title": "Quarterly employment survey: September 2026 quarter",
+          "ShowInSearch": 1,
+          "ParentID": 124474,
+          "OwnerID": 247,
+          "DocumentLink": "/assets/Uploads/Labour-market-statistics/Labour-market-statistics-September-2026-quarter/Download-data/quarterly-employment-survey-september-2026-quarter.xlsx",
+          "DocumentCategory": "document",
+          "DocumentExtension": "xlsx",
+          "DocumentFileType": "Excel spreadsheet",
+          "DocumentIcon": "/_resources/vendor/silverstripe/framework/client/images/app_icons/document_92.png?m=1793625164",
+          "DocumentSize": "116 KB",
+          "DocumentPreviewImage": false
+        },
+        {
+          "ID": "124823",
+          "ClassName": "SilverStripe\\Assets\\File",
+          "Name": "labour-market-statistics-september-2026-quarter-summary-diagrams.pdf",
+          "FileName": "labour-market-statistics-september-2026-quarter-summary-diagrams.pdf",
+          "Title": "Labour market statistics: September 2026 quarter \u2013 summary diagrams",
+          "ShowInSearch": 1,
+          "ParentID": 124474,
+          "OwnerID": 247,
+          "DocumentLink": "/assets/Uploads/Labour-market-statistics/Labour-market-statistics-September-2026-quarter/Download-data/labour-market-statistics-september-2026-quarter-summary-diagrams.pdf",
+          "DocumentCategory": "document",
+          "DocumentExtension": "pdf",
+          "DocumentFileType": "Adobe Acrobat PDF file",
+          "DocumentIcon": "/_resources/vendor/silverstripe/framework/client/images/app_icons/document_92.png?m=1793625164",
+          "DocumentSize": "2.2 MB",
+          "DocumentPreviewImage": false
+        }
+      ],
+      "Heading": null,
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      },
+      "Presentation": null
+    },
+    {
+      "ID": "135735",
+      "Title": "Labour market statistics: September 2026 quarter \u2013 key facts 1",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>Key facts</h2>\n<p>In the September 2026 quarter, compared with the June 2026 quarter, the:</p>\n<ul>\n<li>unemployment rate was 5.7 percent, compared with 5.6 percent</li>\n<li>underutilisation rate was unchanged at 13.8 percent</li>\n<li>employment rate was 66.4 percent, compared with 66.7 percent.</li>\n</ul>\n<p>In the year ended September 2026:</p>\n<ul>\n<li>all salary and wage rates (including overtime) increased 2.1 percent</li>\n<li>average weekly earnings (including overtime) for full-time equivalent employees (FTEs) increased to $1,743 from $1,688</li>\n<li>average ordinary time hourly earnings increased to $44.86 from $43.60.</li>\n</ul>\n<table class=\"stats-striped\" style=\"border-collapse: collapse; width: 100%; white-space: normal; margin-bottom: 1.474rem; border-spacing: 0px;\" cellspacing=\"0\" cellpadding=\"0\" width=\"654\"><caption><strong>Labour market stats at a glance: September 2026 quarter</strong></caption>\n<tbody>\n<tr>\n<td colspan=\"2\" width=\"261\">\n<p><strong>Labour market measures</strong></p>\n</td>\n<td width=\"131\">\n<p align=\"center\"><strong>September 2026</strong><br><strong>quarter</strong></p>\n</td>\n<td width=\"142\">\n<p align=\"center\"><strong>Quarterly</strong><br><strong>change</strong></p>\n</td>\n<td width=\"119\">\n<p align=\"center\"><strong>Annual</strong><br><strong>change</strong></p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">\n<p><strong>Employment at a glance (seasonally adjusted, HLFS)</strong></p>\n</td>\n<td width=\"131\">\n<p align=\"center\">Percent</p>\n</td>\n<td colspan=\"2\" width=\"262\">\n<p align=\"center\">Percentage points</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">\n<p>Unemployment rate</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">5.7</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">0.1</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">0.4</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">\n<p>Underutilisation rate</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">13.8</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">0.0</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">0.9</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">\n<p>Employment rate</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">66.4</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">-0.3</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">-0.2</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">\n<p>Labour force participation rate</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">70.4</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">-0.2</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">0.1</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">&nbsp;</td>\n<td width=\"131\">\n<p align=\"center\">(000)</p>\n</td>\n<td colspan=\"2\" width=\"262\">\n<p align=\"center\">Percent</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">\n<p>Unemployed</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">174</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">1.8</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">8.7</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">\n<p>Underutilised</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">438</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">-0.1</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">8.4</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">\n<p>Employed</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">2,891</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">-0.1</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">0.7</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">\n<p>Working-age population</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">4,355</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">0.3</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">1.0</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">\n<p><strong>Wages at a glance (not seasonally adjusted)</strong></p>\n</td>\n<td width=\"131\">\n<p align=\"center\">Index</p>\n</td>\n<td colspan=\"2\" width=\"262\">\n<p align=\"center\">Percent</p>\n</td>\n</tr>\n<tr>\n<td rowspan=\"3\" width=\"134\">\n<p>Wage inflation (salary and wage rates, including overtime, LCI)</p>\n</td>\n<td width=\"127\">\n<p>All sectors</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">1467</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">0.5</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">2.1</p>\n</td>\n</tr>\n<tr>\n<td width=\"127\">\n<p>Private sector</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">1465</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">0.5</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">2.1</p>\n</td>\n</tr>\n<tr>\n<td width=\"127\">\n<p>Public sector</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">1484</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">0.7</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">1.9</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">\n<p>LCI analytical unadjusted</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">1815</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">0.5</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">2.9</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">&nbsp;</td>\n<td width=\"131\">\n<p align=\"center\">Dollars</p>\n</td>\n<td colspan=\"2\" width=\"262\">\n<p align=\"center\">Percent</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">\n<p>Average ordinary time hourly earnings (QES)</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">44.86</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">0.5</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">2.9</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">\n<p><strong>Hours at a glance (seasonally adjusted)</strong></p>\n</td>\n<td width=\"131\">\n<p align=\"center\">Hours</p>\n</td>\n<td colspan=\"2\" width=\"262\">\n<p align=\"center\">Percent</p>\n</td>\n</tr>\n<tr>\n<td rowspan=\"2\" width=\"134\">\n<p>Average weekly paid hours for FTEs (QES)</p>\n</td>\n<td width=\"127\">\n<p>Ordinary time</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">38.30</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">0.4</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">0.3</p>\n</td>\n</tr>\n<tr>\n<td width=\"127\">\n<p>Total</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">38.88</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">0.4</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">0.4</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">&nbsp;</td>\n<td width=\"131\">\n<p align=\"center\">Hours (millions)</p>\n</td>\n<td colspan=\"2\" width=\"262\">\n<p align=\"center\">Percent</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">\n<p>Total weekly paid hours (QES)</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">74.7</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">0.6</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">0.3</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"261\">\n<p>Total actual weekly hours worked (HLFS)</p>\n</td>\n<td width=\"131\">\n<p align=\"center\">94.7</p>\n</td>\n<td width=\"142\">\n<p align=\"center\">-1.6</p>\n</td>\n<td width=\"119\">\n<p align=\"center\">-0.5</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"5\" width=\"654\">\n<p>Note:</p>\n<p>LCI \u2013 labour cost index</p>\n<p>QES \u2013 Quarterly Employment Survey</p>\n<p>HLFS \u2013 Household Labour Force Survey</p>\n<p>FTEs \u2013 full-time equivalent employees<br><br>Due to rounding, changes do not always sum to the published totals.</p>\n</td>\n</tr>\n</tbody>\n</table>\n<h2>Unemployment</h2>\n<p>The seasonally adjusted unemployment rate was 5.7 percent in the September 2026 quarter, compared with 5.6 percent in the June 2026 quarter.</p>\n<ul>\n<li>For men, the unemployment rate was unchanged at 5.6 percent.</li>\n<li>For women, the unemployment rate was 5.7 percent, compared with 5.5 percent last quarter.</li>\n</ul>"
+    },
+    {
+      "ID": "135689",
+      "Title": "LMS Sept 2026 qtr \u2013 g1 \u2013 Unemployment rate by sex, seasonally adjusted, September 2012\u2013September 2026 quarters",
+      "ClassName": "GraphTableBlock",
+      "ShowBlockTitle": 0,
+      "DefaultView": "Grid",
+      "xAxisTitle": null,
+      "yAxisTitle": "Percent",
+      "yAxisDualRightTitle": null,
+      "GraphMetadata": null,
+      "SeriesData": [
+        {
+          "ID": 35908,
+          "Title": "Unemployment rate by sex, seasonally adjusted, September 2012\u2013September 2026 quarters",
+          "ClassName": "SeriesGroup",
+          "Type": "line",
+          "GraphCsvData": "Quarter,Sept-12,Dec-12,Mar-13,Jun-13,Sept-13,Dec-13,Mar-14,Jun-14,Sept-14,Dec-14,Mar-15,Jun-15,Sept-15,Dec-15,Mar-16,Jun-16,Sept-16,Dec-16,Mar-17,Jun-17,Sept-17,Dec-17,Mar-18,Jun-18,Sept-18,Dec-18,Mar-19,Jun-19,Sept-19,Dec-19,Mar-20,Jun-20,Sept-20,Dec-20,Mar-21,Jun-21,Sept-21,Dec-21,Mar-22,Jun-22,Sept-22,Dec-22,Mar-23,Jun-23,Sept-23,Dec-23,Mar-24,Jun-24,Sept-24,Dec-24,Mar-25,Jun-25,Sept-25,Dec-25,Mar-26,Jun-26,Sept-26\r\nMen,6.6,6,5.2,5.5,5.5,5,5.1,4.6,4.6,4.8,5.2,4.8,5.2,4.7,5,4.7,4.7,4.8,4.3,4.8,4.1,4,3.9,4.4,4,4.4,3.8,3.7,3.8,3.9,4,3.6,4.8,4.5,4.6,3.8,3.3,3.1,3.2,3.1,2.9,3.3,3.3,3.4,3.7,3.8,4.1,4.6,4.7,5,4.9,5,5.2,5.3,5.4,5.6,5.6\r\nWomen,6.9,6.7,6.5,6.5,6.2,6.4,6.1,6,6.1,6.3,5.9,6.3,6.1,5.3,5.6,5.5,5.3,5.8,5.6,5,5.4,5,4.8,4.9,4,4.2,4.5,4.4,4.4,4.3,4.4,4.6,5.6,5.4,4.7,4.2,3.3,3.4,3.4,3.6,3.7,3.5,3.7,3.9,4.2,4.3,4.8,4.8,5,5.3,5.4,5.5,5.3,5.5,5.3,5.5,5.7\r\nTotal,6.7,6.3,5.8,6,5.8,5.7,5.6,5.3,5.3,5.5,5.5,5.5,5.7,5,5.3,5.1,5,5.3,4.9,4.9,4.7,4.5,4.4,4.6,4,4.3,4.2,4.1,4.1,4.1,4.2,4.1,5.2,4.9,4.6,4,3.3,3.2,3.3,3.3,3.3,3.4,3.5,3.7,3.9,4,4.4,4.7,4.9,5.1,5.2,5.2,5.3,5.4,5.4,5.6,5.7\r\n"
+        }
+      ],
+      "GraphType": "line",
+      "Presentation": "graphTable",
+      "GraphHeading": "Unemployment rate by sex, seasonally adjusted, September 2012\u2013September 2026 quarters",
+      "showLegend": true,
+      "SourceCredit": "Stats NZ",
+      "Footnote": null,
+      "GeoLevelView": null,
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      }
+    },
+    {
+      "ID": "135737",
+      "Title": "Labour market statistics: September 2026 quarter \u2013 key facts 2",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<p>The seasonally adjusted number of unemployed people was 174,000, compared with 171,000 in the June 2026 quarter.</p>\n<ul>\n<li>1,000 fewer men were unemployed.</li>\n<li>3,000 more women were unemployed.</li>\n</ul>\n<p>The following data is not seasonally adjusted.</p>\n<p>In the September 2026 quarter, the unemployment rate for ethnic groups was:</p>\n<ul>\n<li>11.5 percent for Pacific peoples</li>\n<li>10.9 percent for M\u0101ori</li>\n<li>5.0 percent for Asian</li>\n<li>4.5 percent for European.</li>\n</ul>\n<p>Of the 169,100 people who were unemployed in the September 2026 quarter (not seasonally adjusted), 21.5 percent had been unemployed for more than a year. Being unemployed for over a year is one measure of long-term unemployment.</p>"
+    },
+    {
+      "ID": "135691",
+      "Title": "LMS Sept 2026 qtr \u2013 g7 \u2013 Unemployment duration, September quarters, 2022\u20132026",
+      "ClassName": "GraphTableBlock",
+      "ShowBlockTitle": 0,
+      "DefaultView": "Grid",
+      "xAxisTitle": "Unemployment duration\u00a0",
+      "yAxisTitle": "Number of people",
+      "yAxisDualRightTitle": null,
+      "GraphMetadata": null,
+      "SeriesData": [
+        {
+          "ID": 35919,
+          "Title": "2022 column",
+          "ClassName": "SeriesGroup",
+          "Type": "column",
+          "GraphCsvData": "\ufeffDuration of unemployment,1\u20134 weeks,5\u20138 weeks,9\u201313 weeks,3\u20136 months,Over 6 months\u20131 year,Over 1 year\r\nSeptember 2022,23100,11900,11100,16100,16500,11200\r\n"
+        },
+        {
+          "ID": 35920,
+          "Title": "2022 error",
+          "ClassName": "SeriesGroup",
+          "Type": "errorbar",
+          "GraphCsvData": "\ufeff18500,27700\r\n9300,14600\r\n8100,14100\r\n12400,19700\r\n13100,19800\r\n8400,13900\r\n"
+        },
+        {
+          "ID": 35921,
+          "Title": "2023 column",
+          "ClassName": "SeriesGroup",
+          "Type": "column",
+          "GraphCsvData": "\ufeffDuration of unemployment,1\u20134 weeks,5\u20138 weeks,9\u201313 weeks,3\u20136 months,Over 6 months\u20131 year,Over 1 year\r\nSeptember 2023,27000,21100,10000,20000,21300,10800\r\n"
+        },
+        {
+          "ID": 35922,
+          "Title": "2023 error",
+          "ClassName": "SeriesGroup",
+          "Type": "errorbar",
+          "GraphCsvData": "\ufeff22400,31500\r\n17900,24300\r\n7400,12700\r\n16200,23800\r\n16600,26100\r\n8600,13000\r\n"
+        },
+        {
+          "ID": 35923,
+          "Title": "2024 column",
+          "ClassName": "SeriesGroup",
+          "Type": "column",
+          "GraphCsvData": "\ufeffDuration of unemployment,1\u20134 weeks,5\u20138 weeks,9\u201313 weeks,3\u20136 months,Over 6 months\u20131 year,Over 1 year\r\nSeptember 2024,26600,19300,14900,29500,32600,16800\r\n"
+        },
+        {
+          "ID": 35924,
+          "Title": "2024 error",
+          "ClassName": "SeriesGroup",
+          "Type": "errorbar",
+          "GraphCsvData": "\ufeff22200,31100\r\n15700,23000\r\n11700,18100\r\n24900,34100\r\n27700,37500\r\n13600,19900\r\n"
+        },
+        {
+          "ID": 35925,
+          "Title": "2025 column",
+          "ClassName": "SeriesGroup",
+          "Type": "column",
+          "GraphCsvData": "\ufeffDuration of unemployment,1\u20134 weeks,5\u20138 weeks,9\u201313 weeks,3\u20136 months,Over 6 months\u20131 year,Over 1 year\r\nSeptember 2025,24700,17500,12500,35500,37300,22600\r\n"
+        },
+        {
+          "ID": 35926,
+          "Title": "2025 error",
+          "ClassName": "SeriesGroup",
+          "Type": "errorbar",
+          "GraphCsvData": "\ufeff20100,29200\r\n14500,20600\r\n9400,15600\r\n29900,41100\r\n31900,42600\r\n19000,26300\r\n"
+        },
+        {
+          "ID": 35927,
+          "Title": "2026 column",
+          "ClassName": "SeriesGroup",
+          "Type": "column",
+          "GraphCsvData": "\ufeffDuration of unemployment,1\u20134 weeks,5\u20138 weeks,9\u201313 weeks,3\u20136 months,Over 6 months\u20131 year,Over 1 year\r\nSeptember 2026,25400,20000,13200,25200,44100,36300\r\n"
+        },
+        {
+          "ID": 35928,
+          "Title": "2026 error",
+          "ClassName": "SeriesGroup",
+          "Type": "errorbar",
+          "GraphCsvData": "\ufeff21400,29500\r\n16200,23900\r\n10000,16400\r\n21000,29400\r\n38800,49400\r\n31300,41300\r\n"
+        }
+      ],
+      "GraphType": "columnError",
+      "Presentation": "graphTable",
+      "GraphHeading": "Unemployment duration, September quarters, 2022\u20132026",
+      "showLegend": true,
+      "SourceCredit": "Stats NZ",
+      "Footnote": "Error bars represent variability in estimates. Excludes those who did not specify duration of unemployment or had not looked for work.",
+      "GeoLevelView": null,
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      }
+    },
+    {
+      "ID": "135739",
+      "Title": "Labour market statistics: September 2026 quarter \u2013 key facts 3",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>Underutilisation</h2>\n<p>The seasonally adjusted underutilisation rate was unchanged at 13.8 percent in the September 2026 quarter.</p>\n<ul>\n<li>For men, the underutilisation rate was unchanged at 12.4 percent.</li>\n<li>For women, the underutilisation rate was 15.3 percent, compared with 15.2 percent last quarter.</li>\n</ul>"
+    },
+    {
+      "ID": "135695",
+      "Title": "LMS Sept 2026 qtr \u2013 g3 \u2013 Underutilisation rate by sex, seasonally adjusted, September 2012\u2013September 2026 quarters",
+      "ClassName": "GraphTableBlock",
+      "ShowBlockTitle": 0,
+      "DefaultView": "Grid",
+      "xAxisTitle": null,
+      "yAxisTitle": "Percent",
+      "yAxisDualRightTitle": null,
+      "GraphMetadata": null,
+      "SeriesData": [
+        {
+          "ID": 35910,
+          "Title": "Underutilisation rate by sex, seasonally adjusted, September 2012\u2013September 2026 quarters",
+          "ClassName": "SeriesGroup",
+          "Type": "line",
+          "GraphCsvData": "Quarter,Sept-12,Dec-12,Mar-13,Jun-13,Sept-13,Dec-13,Mar-14,Jun-14,Sept-14,Dec-14,Mar-15,Jun-15,Sept-15,Dec-15,Mar-16,Jun-16,Sept-16,Dec-16,Mar-17,Jun-17,Sept-17,Dec-17,Mar-18,Jun-18,Sept-18,Dec-18,Mar-19,Jun-19,Sept-19,Dec-19,Mar-20,Jun-20,Sept-20,Dec-20,Mar-21,Jun-21,Sept-21,Dec-21,Mar-22,Jun-22,Sept-22,Dec-22,Mar-23,Jun-23,Sept-23,Dec-23,Mar-24,Jun-24,Sept-24,Dec-24,Mar-25,Jun-25,Sept-25,Dec-25,Mar-26,Jun-26,Sept-26\r\nMen,13.5,12.4,10.4,10.6,11.1,11.1,10.9,10.5,10.2,10.5,10.8,10.6,11.2,10.1,11.2,10.5,10,9.7,9.3,9.5,9.3,9.4,9.5,9.9,9.3,10,9,9.2,8.4,8.4,8.3,9.4,10.6,9.7,9.9,8.3,7.7,7.4,7.8,7.5,7.3,7.6,7.5,8.2,8.7,8.7,9.4,10.1,10.3,10.7,10.5,11,11.1,11.1,11.6,12.4,12.4\r\nWomen,17.7,17.3,15.9,16.2,17.3,17.1,15.8,16.4,15.6,16.4,16.6,16.9,16.5,15,16.3,15.9,15.6,15.4,15.5,14.7,15.2,15.3,14.6,14.5,13.6,14.6,13.9,13.2,12.5,12,12.8,15,15.9,14.4,14.6,13,10.8,11.2,11.2,11.2,10.9,11.5,11,11.9,12.4,13.1,13.4,13.8,13.2,13.9,14.5,14.7,14.8,14.8,14.4,15.2,15.3\r\nTotal,15.6,14.7,13,13.3,14.1,14,13.2,13.3,12.8,13.3,13.6,13.6,13.7,12.5,13.7,13.1,12.7,12.4,12.3,12,12.1,12.2,11.9,12.1,11.3,12.2,11.3,11.1,10.3,10.1,10.4,12.1,13.1,11.9,12.2,10.5,9.2,9.3,9.4,9.3,9,9.4,9.1,10,10.4,10.8,11.3,11.9,11.6,12.2,12.4,12.8,12.9,12.9,12.9,13.8,13.8\r\n"
+        }
+      ],
+      "GraphType": "line",
+      "Presentation": "graphTable",
+      "GraphHeading": "Underutilisation rate by sex, seasonally adjusted, September 2012\u2013September 2026 quarters",
+      "showLegend": true,
+      "SourceCredit": "Stats NZ",
+      "Footnote": null,
+      "GeoLevelView": null,
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      }
+    },
+    {
+      "ID": "135743",
+      "Title": "Labour market statistics: September 2026 quarter \u2013 key facts 4",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<p>Underutilisation is a broad measure of spare capacity in New Zealand\u2019s labour market and is just as important as the unemployment rate, as it gives us a more detailed picture of the workforce.</p>\n<p><img width=\"900\" height=\"554\" alt=\"Diagram shows total underutilisation, September 2026 quarter, seasonally adjusted. Link to text alternative is below image.\" src=\"/assets/Uploads/Labour-market-statistics/Labour-market-statistics-September-2026-quarter/Download-data/total-underutilisation-september-2026-quarter-seasonally-adjusted__ResizedImageWzkwMCw1NTRd.png\" loading=\"lazy\" class=\"leftAlone ss-htmleditorfield-file image\">\n\n</p>\n<p><a href=\"/information-releases/labour-market-statistics-september-2026-quarter/#text-alt\">Text alternative for diagram Total underutilisation, September 2026 quarter, seasonally adjusted.</a></p>\n<p>The following data is not seasonally adjusted.</p>\n<p>In the September 2026 quarter, the underutilisation rate for ethnic groups was:</p>\n<ul>\n<li>22.3 percent for M\u0101ori</li>\n<li>21.2 percent for Pacific peoples</li>\n<li>12.7 percent for Asian</li>\n<li>12.0 percent for European.</li>\n</ul>\n<p>Underutilisation in the North Island increased to 14.0 percent in the September 2026 quarter, up 1.4 percentage points from a year earlier. In the South Island, the underutilisation rate was 11.7 percent. A regional breakdown of underutilisation can be found in the tables.</p>\n<h2>Employment</h2>\n<p>The seasonally adjusted employment rate was 66.4 percent, compared with 66.7 percent last quarter.</p>\n<ul>\n<li>For men, the employment rate was 70.1 percent, compared with 70.4 percent last quarter.</li>\n<li>For women, the employment rate was 62.8 percent, compared with 63.1 percent last quarter.</li>\n</ul>"
+    },
+    {
+      "ID": "135696",
+      "Title": "LMS Sept 2026 qtr \u2013 g2 \u2013 Employment rate by sex, seasonally adjusted, September 2012\u2013September 2026 quarters",
+      "ClassName": "GraphTableBlock",
+      "ShowBlockTitle": 0,
+      "DefaultView": "Grid",
+      "xAxisTitle": null,
+      "yAxisTitle": "Percent",
+      "yAxisDualRightTitle": null,
+      "GraphMetadata": null,
+      "SeriesData": [
+        {
+          "ID": 35909,
+          "Title": "Employment rate by sex, seasonally adjusted, September 2012\u2013September 2026 quarters",
+          "ClassName": "SeriesGroup",
+          "Type": "line",
+          "GraphCsvData": "Quarter,Sept-12,Dec-12,Mar-13,Jun-13,Sept-13,Dec-13,Mar-14,Jun-14,Sept-14,Dec-14,Mar-15,Jun-15,Sept-15,Dec-15,Mar-16,Jun-16,Sept-16,Dec-16,Mar-17,Jun-17,Sept-17,Dec-17,Mar-18,Jun-18,Sept-18,Dec-18,Mar-19,Jun-19,Sept-19,Dec-19,Mar-20,Jun-20,Sept-20,Dec-20,Mar-21,Jun-21,Sept-21,Dec-21,Mar-22,Jun-22,Sept-22,Dec-22,Mar-23,Jun-23,Sept-23,Dec-23,Mar-24,Jun-24,Sept-24,Dec-24,Mar-25,Jun-25,Sept-25,Dec-25,Mar-26,Jun-26,Sept-26\r\nMen,68.7,68.7,68.9,69.1,69.9,70.4,70.6,70.8,70.6,71,71.2,71.1,70.1,70.5,70.7,71.9,72.4,72.5,73.2,72.7,73.5,73.5,73.4,73.2,73.2,72.7,72.5,72.6,72.6,72.5,72.8,72.4,71.8,72,72.1,72.7,73.1,73.2,73.3,73,73.9,74,74.1,74.3,73.9,73.6,72.7,72.4,71.8,71.4,71.3,70.9,70.6,70.4,70.3,70.4,70.1\r\nWomen,58.3,58.1,58.1,58.1,58.8,58.8,59.3,58.9,59.6,60.2,60.2,59.7,59.2,59.6,60.2,61.2,61.1,61.7,61.8,61.5,62.4,62.6,62.8,62.9,63.4,63.2,62.9,63.1,63,62.6,62.8,62.1,61.3,61.6,62.3,62.9,64.6,64.4,64.2,64.2,65,64.9,65.3,65.3,64.6,64.4,64,64.1,63.7,63.2,62.9,62.8,62.7,63.2,63,63.1,62.8\r\nTotal,63.3,63.3,63.3,63.4,64.1,64.4,64.8,64.7,64.9,65.5,65.5,65.3,64.5,64.9,65.3,66.5,66.6,67,67.4,67,67.8,68,68,67.9,68.2,67.8,67.6,67.8,67.7,67.5,67.7,67.2,66.4,66.7,67.2,67.8,68.8,68.7,68.6,68.5,69.4,69.4,69.6,69.7,69.2,68.9,68.3,68.2,67.7,67.2,67.1,66.8,66.6,66.7,66.6,66.7,66.4\r\n"
+        }
+      ],
+      "GraphType": "line",
+      "Presentation": "graphTable",
+      "GraphHeading": "Employment rate by sex, seasonally adjusted, September 2012\u2013September 2026 quarters",
+      "showLegend": true,
+      "SourceCredit": "Stats NZ",
+      "Footnote": null,
+      "GeoLevelView": null,
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      }
+    },
+    {
+      "ID": "135742",
+      "Title": "Labour market statistics: September 2026 quarter \u2013 key facts 5",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<p>In the September 2026 quarter, 2,891,000 people were employed, compared with 2,896,000 in the June 2026 quarter and 2,872,000 in the September 2025 quarter.</p>\n<p>The following data is not seasonally adjusted.</p>\n<p>Annually, there was an increase in the number of paid employees working in casual or fixed term roles. Among 2,340,000 paid employees in the September 2026 quarter, there were:</p>\n<ul>\n<li>2,136,700 permanent employees</li>\n<li>116,900 casual employees (up 19,100 annually)</li>\n<li>50,900 fixed-term employees (up 8,100 annually)</li>\n<li>35,400 seasonal, temporary agency, or other employee types not elsewhere included.</li>\n</ul>\n<p>Information about employment permanency is only collected for paid employees, not for self-employed people or unpaid family workers.</p>\n<p>For more frequent, administrative-based indicators of levels and changes in filled jobs, see our monthly <a href=\"https://www.stats.govt.nz/insights/?categoryFiltersID=139&amp;dateFiltersID=2718&amp;filters=Employment%20indicators%2CInformation%20releases\">Employment indicators</a>.</p>\n<h2><a id=\"hours\"></a>Hours worked</h2>\n<p>The seasonally adjusted number of hours usually and actually worked decreased in the September 2026 quarter.</p>\n<ul>\n<li>Usual hours decreased by 0.49 million (down 0.5 percent) to 106.5 million hours.</li>\n<li>Actual hours decreased by 1.56 million (down 1.6 percent) to 94.7 million hours.</li>\n</ul>"
+    },
+    {
+      "ID": "135690",
+      "Title": "LMS Sept 2026 qtr \u2013 g8 \u2013 Actual and usual hours worked, seasonally adjusted, September 2012\u2013September 2026 quarters",
+      "ClassName": "GraphTableBlock",
+      "ShowBlockTitle": 0,
+      "DefaultView": "Grid",
+      "xAxisTitle": null,
+      "yAxisTitle": null,
+      "yAxisDualRightTitle": null,
+      "GraphMetadata": null,
+      "SeriesData": [
+        {
+          "ID": 35916,
+          "Title": "Actual and usual hours worked, seasonally adjusted, September 2012\u2013September 2026 quarters",
+          "ClassName": "SeriesGroup",
+          "Type": "line",
+          "GraphCsvData": "Quarter,Sept-12,Dec-12,Mar-13,Jun-13,Sept-13,Dec-13,Mar-14,Jun-14,Sept-14,Dec-14,Mar-15,Jun-15,Sept-15,Dec-15,Mar-16,Jun-16,Sept-16,Dec-16,Mar-17,Jun-17,Sept-17,Dec-17,Mar-18,Jun-18,Sept-18,Dec-18,Mar-19,Jun-19,Sept-19,Dec-19,Mar-20,Jun-20,Sept-20,Dec-20,Mar-21,Jun-21,Sept-21,Dec-21,Mar-22,Jun-22,Sept-22,Dec-22,Mar-23,Jun-23,Sept-23,Dec-23,Mar-24,Jun-24,Sept-24,Dec-24,Mar-25,Jun-25,Sept-25,Dec-25,Mar-26,Jun-26,Sept-26\r\nActual hours,72715000,73792000,74622000,74193000,75249000,75363000,77105000,77671000,77929000,78343000,79539000,78945000,79263000,80482000,81692000,83853000,84643000,86076000,85201000,86234000,88558000,88205000,89262000,90769000,90471000,91108000,92221000,91522000,92456000,91338000,93031000,83363000,91528000,94319000,92341000,93783000,88037000,93011000,93033000,94140000,95820000,96482000,96321000,97517000,97631000,98089000,97884000,96766000,96475000,95379000,94670000,93920000,95186000,96019000,96637000,96277000,94715000\r\nUsual hours,80558000,81382000,82057000,82277000,83738000,83888000,85094000,85474000,86227000,87164000,87949000,88506000,88324000,89191000,90380000,94051000,94269000,95751000,96324000,96400000,98487000,98861000,99477000,100364000,100928000,101211000,101537000,102218000,102301000,102729000,103702000,103012000,102035000,102980000,102964000,104157000,105889000,105859000,105941000,106194000,107185000,107849000,108905000,109392000,109408000,109656000,108546000,108817000,107356000,106605000,106431000,105931000,106329000,106589000,106889000,107012000,106522000\r\n"
+        }
+      ],
+      "GraphType": "line",
+      "Presentation": "graphTable",
+      "GraphHeading": "Actual and usual hours worked, seasonally adjusted, September 2012\u2013September 2026 quarters",
+      "showLegend": true,
+      "SourceCredit": "Stats NZ",
+      "Footnote": null,
+      "GeoLevelView": null,
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      }
+    },
+    {
+      "ID": "135744",
+      "Title": "Labour market statistics: September 2026 quarter \u2013 key facts 6",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<p>Hours usually worked represent an average work week across all employed people, while hours actually worked cover the week prior to being surveyed, including overtime and time spent away from work.</p>\n<p>The decrease in actual and usual hours worked coincides with 15,000 more people employed part-time and 17,000 fewer people employed full-time in the September 2026 quarter (seasonally adjusted).</p>\n<ul>\n<li>11,000 more men were employed part-time.</li>\n<li>3,000 more women were employed part-time.</li>\n<li>16,000 fewer men were employed full-time.</li>\n<li>2,000 fewer women were employed full-time.</li>\n</ul>\n<p>Annually, the number of people working fewer hours than usual in their main job increased by 78,100 (21.7 percent) to 438,100 (not seasonally adjusted). This came predominantly from an increase in the number of people who said they worked fewer hours than usual for holiday reasons (up 59,200 to 146,900).</p>\n<p>Holiday reasons can relate to vacations, school holidays, public holidays, or anything else that might be considered by the respondent as \u2018holiday reasons\u2019.</p>\n<p>In 2026, the Matariki public holiday fell within the September quarter, while in 2024 and 2025, it fell within June quarters.</p>\n<h2>Labour force participation</h2>\n<p>The seasonally adjusted labour force participation rate was 70.4 percent, compared with 70.6 percent in the June 2026 quarter.</p>\n<ul>\n<li>For men, the labour force participation rate was 74.3 percent, compared with 74.6 percent last quarter.</li>\n<li>For women, the labour force participation rate was 66.6 percent, compared with 66.7 percent last quarter.</li>\n</ul>"
+    },
+    {
+      "ID": "135700",
+      "Title": "LMS Sept 2026 qtr \u2013 g9 \u2013 Labour force participation rate by sex, seasonally adjusted, September 2012\u2013September 2026 quarters",
+      "ClassName": "GraphTableBlock",
+      "ShowBlockTitle": 0,
+      "DefaultView": "Grid",
+      "xAxisTitle": null,
+      "yAxisTitle": "Percent",
+      "yAxisDualRightTitle": null,
+      "GraphMetadata": null,
+      "SeriesData": [
+        {
+          "ID": 35917,
+          "Title": "Labour force participation rate by sex, seasonally adjusted, September 2012\u2013September 2026 quarters",
+          "ClassName": "SeriesGroup",
+          "Type": "line",
+          "GraphCsvData": "Quarter,Sept-12,Dec-12,Mar-13,Jun-13,Sept-13,Dec-13,Mar-14,Jun-14,Sept-14,Dec-14,Mar-15,Jun-15,Sept-15,Dec-15,Mar-16,Jun-16,Sept-16,Dec-16,Mar-17,Jun-17,Sept-17,Dec-17,Mar-18,Jun-18,Sept-18,Dec-18,Mar-19,Jun-19,Sept-19,Dec-19,Mar-20,Jun-20,Sept-20,Dec-20,Mar-21,Jun-21,Sept-21,Dec-21,Mar-22,Jun-22,Sept-22,Dec-22,Mar-23,Jun-23,Sept-23,Dec-23,Mar-24,Jun-24,Sept-24,Dec-24,Mar-25,Jun-25,Sept-25,Dec-25,Mar-26,Jun-26,Sept-26\r\nMen,73.5,73.1,72.6,73.1,73.9,74.1,74.4,74.3,74,74.7,75.1,74.7,74,74,74.5,75.5,76,76.2,76.5,76.3,76.6,76.6,76.4,76.5,76.3,76,75.4,75.4,75.5,75.4,75.9,75.1,75.4,75.4,75.6,75.6,75.6,75.5,75.7,75.3,76,76.5,76.6,76.9,76.8,76.5,75.8,75.9,75.3,75.1,75,74.6,74.5,74.3,74.3,74.6,74.3\r\nWomen,62.6,62.3,62.1,62.2,62.7,62.8,63.2,62.7,63.4,64.2,63.9,63.7,63,63,63.7,64.8,64.5,65.4,65.5,64.7,65.9,66,66,66.1,66,65.9,65.8,66,65.9,65.5,65.7,65,64.9,65.1,65.4,65.7,66.8,66.6,66.4,66.5,67.5,67.2,67.8,67.9,67.4,67.3,67.2,67.3,67.1,66.7,66.5,66.4,66.3,66.9,66.6,66.7,66.6\r\nTotal,67.9,67.5,67.2,67.5,68.1,68.3,68.6,68.3,68.6,69.3,69.4,69.1,68.4,68.3,69,70,70.1,70.7,70.9,70.4,71.2,71.2,71.1,71.2,71.1,70.9,70.6,70.6,70.6,70.4,70.7,70,70.1,70.2,70.4,70.6,71.1,71,71,70.9,71.7,71.8,72.1,72.4,72,71.8,71.5,71.6,71.1,70.9,70.7,70.4,70.3,70.5,70.4,70.6,70.4\r\n"
+        }
+      ],
+      "GraphType": "line",
+      "Presentation": "graphTable",
+      "GraphHeading": "Labour force participation rate by sex, seasonally adjusted, September 2012\u2013September 2026 quarters",
+      "showLegend": true,
+      "SourceCredit": "Stats NZ",
+      "Footnote": null,
+      "GeoLevelView": null,
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      }
+    },
+    {
+      "ID": "135749",
+      "Title": "Labour market statistics: September 2026 quarter \u2013 key facts 7",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>Youth not in employment, education, or training (NEET)</h2>\n<p>In the September 2026 quarter, the seasonally adjusted proportion of people aged 15 to 24 years who were not in employment, education, or training (NEET) was 14.1 percent, compared with 13.8 percent last quarter.</p>"
+    },
+    {
+      "ID": "135699",
+      "Title": "LMS Sept 2026 qtr \u2013 g10 \u2013 NEET rate by age, seasonally adjusted, September 2012\u2013September 2026 quarters",
+      "ClassName": "GraphTableBlock",
+      "ShowBlockTitle": 0,
+      "DefaultView": "Grid",
+      "xAxisTitle": null,
+      "yAxisTitle": "Percent",
+      "yAxisDualRightTitle": null,
+      "GraphMetadata": null,
+      "SeriesData": [
+        {
+          "ID": 35918,
+          "Title": "NEET rate by age, seasonally adjusted, September 2012\u2013September 2026 quarters",
+          "ClassName": "SeriesGroup",
+          "Type": "line",
+          "GraphCsvData": "\ufeffQuarter,Sept-12,Dec-12,Mar-13,Jun-13,Sept-13,Dec-13,Mar-14,Jun-14,Sept-14,Dec-14,Mar-15,Jun-15,Sept-15,Dec-15,Mar-16,Jun-16,Sept-16,Dec-16,Mar-17,Jun-17,Sept-17,Dec-17,Mar-18,Jun-18,Sept-18,Dec-18,Mar-19,Jun-19,Sept-19,Dec-19,Mar-20,Jun-20,Sept-20,Dec-20,Mar-21,Jun-21,Sept-21,Dec-21,Mar-22,Jun-22,Sept-22,Dec-22,Mar-23,Jun-23,Sept-23,Dec-23,Mar-24,Jun-24,Sept-24,Dec-24,Mar-25,Jun-25,Sept-25,Dec-25,Mar-26,Jun-26,Sept-26\r\n15\u201319 years,9.7,9.5,8.3,8.7,8.9,8.2,8.1,8,7.9,7.9,7.1,8.2,7.9,6.6,7.6,7.6,8.3,9.6,9,9.7,8.2,8.6,8.6,8.1,8.5,11.7,8.8,8.8,8.3,9.3,11.5,9.7,9.2,8.8,9.7,9.7,11.1,8.9,9.3,8.4,9.9,9.6,9.3,9.7,9.5,10,9.7,10.6,9.6,10.8,10.1,10.2,10.6,9.9,10.9,11.1,11.4\r\n20\u201324 years,18,18.7,16.8,16.8,15.1,14.8,15.1,15.4,15.8,14.5,15.3,16.1,15.7,14.5,15.8,15.2,15.5,16.8,14.8,14.3,15.6,14.3,14.4,15,12.9,16.5,15.5,13,14.1,14.5,15,16,16.5,16.2,14.9,14.2,13.3,13,14.5,15.1,13,12.7,12,13.7,14.7,14.6,15.4,15.2,15.2,16.3,15.7,16.1,17,16.9,18.1,16.8,17.1\r\nTotal,13.8,14.1,12.6,12.7,12,11.5,11.7,11.8,11.9,11.2,11.3,12.3,11.9,10.7,11.9,11.5,12,13.3,12,12.1,12,11.5,11.6,11.7,10.8,14.2,12.3,11,11.3,12,13.3,12.9,13,12.6,12.4,12,12.2,11,11.9,11.8,11.4,11.2,10.7,11.7,12.1,12.3,12.5,12.8,12.3,13.4,12.8,13,13.7,13.3,14.4,13.8,14.1\r\n"
+        }
+      ],
+      "GraphType": "line",
+      "Presentation": "graphTable",
+      "GraphHeading": "NEET rate by age, seasonally adjusted, September 2012\u2013September 2026 quarters",
+      "showLegend": true,
+      "SourceCredit": "Stats NZ",
+      "Footnote": "NEET \u2013 youth not in employment, education, or training",
+      "GeoLevelView": null,
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      }
+    },
+    {
+      "ID": "135751",
+      "Title": "Labour market statistics: September 2026 quarter \u2013 key facts 8",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>Wages</h2>\n<p>The labour cost index (LCI) all salary and wage rates (including overtime) increased 2.1 percent in the year to the September 2026 quarter, while the unadjusted LCI increased 2.9 percent.</p>\n<ul>\n<li>Private sector wages increased by 2.1 percent over the year.</li>\n<li>Public sector wages increased by 1.9 percent over the year.</li>\n</ul>\n<p>The LCI is often compared with the consumers price index (CPI) to see how wage inflation compares with consumer inflation (that is, the change in prices of goods and services bought by households). Annual CPI inflation was 3.7 percent in the year to the September 2026 quarter.</p>"
+    },
+    {
+      "ID": "135717",
+      "Title": "LMS Sept 2026 qtr \u2013 g11 \u2013 LCI and CPI, annual percentage change, September 2006\u2013September 2026 quarters",
+      "ClassName": "GraphTableBlock",
+      "ShowBlockTitle": 0,
+      "DefaultView": "Grid",
+      "xAxisTitle": null,
+      "yAxisTitle": "Percent",
+      "yAxisDualRightTitle": null,
+      "GraphMetadata": null,
+      "SeriesData": [
+        {
+          "ID": 35932,
+          "Title": "LCI and CPI, annual percentage change, September 2006\u2013September 2026 quarters",
+          "ClassName": "SeriesGroup",
+          "Type": "line",
+          "GraphCsvData": "\ufeffQuarter,Sept-06,Dec-06,Mar-07,Jun-07,Sept-07,Dec-07,Mar-08,Jun-08,Sept-08,Dec-08,Mar-09,Jun-09,Sept-09,Dec-09,Mar-10,Jun-10,Sept-10,Dec-10,Mar-11,Jun-11,Sept-11,Dec-11,Mar-12,Jun-12,Sept-12,Dec-12,Mar-13,Jun-13,Sept-13,Dec-13,Mar-14,Jun-14,Sept-14,Dec-14,Mar-15,Jun-15,Sept-15,Dec-15,Mar-16,Jun-16,Sept-16,Dec-16,Mar-17,Jun-17,Sept-17,Dec-17,Mar-18,Jun-18,Sept-18,Dec-18,Mar-19,Jun-19,Sept-19,Dec-19,Mar-20,Jun-20,Sept-20,Dec-20,Mar-21,Jun-21,Sept-21,Dec-21,Mar-22,Jun-22,Sept-22,Dec-22,Mar-23,Jun-23,Sept-23,Dec-23,Mar-24,Jun-24,Sept-24,Dec-24,Mar-25,Jun-25,Sept-25,Dec-25,Mar-26,Jun-26,Sept-26\r\nLCI \u2013 all salary and wage rates,3.2,3.2,3.2,3.3,3.1,3.3,3.4,3.6,4,3.5,3.3,2.8,2.1,1.8,1.5,1.6,1.6,1.7,1.9,1.9,2,2,2,2,1.9,1.8,1.7,1.7,1.7,1.6,1.6,1.7,1.6,1.8,1.7,1.6,1.6,1.5,1.6,1.5,1.6,1.6,1.6,1.7,1.9,1.8,1.8,1.9,1.8,1.9,2,2.1,2.4,2.6,2.5,2.1,1.9,1.6,1.6,2.1,2.4,2.6,3,3.4,3.7,4.1,4.3,4.3,4.3,4.3,4.1,4.3,3.8,3.3,2.9,2.4,2.1,2,2,2,2.1\r\nCPI \u2013 all groups,3.5,2.6,2.5,2,1.8,3.2,3.4,4,5.1,3.4,3,1.9,1.7,2,2,1.7,1.5,4,4.5,5.3,4.6,1.8,1.6,1,0.8,0.9,0.9,0.7,1.4,1.6,1.5,1.6,1,0.8,0.3,0.4,0.4,0.1,0.4,0.4,0.4,1.3,2.2,1.7,1.9,1.6,1.1,1.5,1.9,1.9,1.5,1.7,1.5,1.9,2.5,1.5,1.4,1.4,1.5,3.3,4.9,5.9,6.9,7.3,7.2,7.2,6.7,6,5.6,4.7,4,3.3,2.2,2.2,2.5,2.7,3,3.1,3.1,4.1,3.7\r\n"
+        }
+      ],
+      "GraphType": "line",
+      "Presentation": "graphTable",
+      "GraphHeading": "LCI and CPI, annual percentage change, September 2006\u2013September 2026 quarters",
+      "showLegend": true,
+      "SourceCredit": "Stats NZ",
+      "Footnote": "LCI \u2013 labour cost index; CPI \u2013 consumers price index",
+      "GeoLevelView": null,
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      }
+    },
+    {
+      "ID": "135750",
+      "Title": "Labour market statistics: September 2026 quarter \u2013 key facts 9",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<p>In the year to the September 2026 quarter, wages as measured by the Quarterly Employment Survey (QES) also grew. Average ordinary time hourly earnings increased to $44.86 (up 2.9 percent).</p>\n<ul>\n<li>Private sector ordinary time hourly earnings increased by 2.6 percent, to $42.58.</li>\n<li>Public sector ordinary time hourly earnings increased by 3.6 percent, to $53.14.</li>\n</ul>\n<p>Average weekly earnings (including overtime) for full-time equivalent employees (FTEs) in the QES also increased on an annual basis, up 3.3 percent to $1,743.</p>\n<ul>\n<li>Private sector average weekly earnings increased by 2.9 percent, to $1,649.</li>\n<li>Public sector average weekly earnings increased by 4.3 percent, to $2,095.</li>\n</ul>\n<h5><a id=\"text-alt\"></a>Text alternative for diagram Total underutilisation, September 2026 quarter, seasonally adjusted</h5>\n<p>The diagram shows data from the September 2026 quarter Household Labour Force Survey.</p>\n<p>The underutilisation rate was unchanged at 13.8 percent. This rate is derived from the number of total underutilised divided by the extended labour force. The unemployment rate was up 0.1 percentage points, to 5.7 percent. This is derived from the number of unemployed divided by the labour force.</p>\n<p>The number of total underutilised was unchanged at 438,000. The number of underemployed was down 2,000 to 151,000, while the number of unemployed was up 3,000 to 174,000. The potential labour force was down 2,000 to 113,000.</p>\n<p>Within the potential labour force, available potential jobseekers were down 6,400 to 88,400, and unavailable jobseekers were up 5,000 to 25,000.</p>\n<p>Notes:</p>\n<ol>\n<li>No seasonal pattern is evident for available potential jobseekers. Therefore, this series is not seasonally adjusted.</li>\n<li>Due to rounding, changes do not always sum to the published totals.</li>\n<li>All changes are quarterly.</li>\n</ol>\n<p><strong>Source</strong>: Stats NZ, Household Labour Force Survey</p>"
+    },
+    {
+      "ID": "133387",
+      "Title": "Labour market statistics: March 2026 quarter \u2013 more data",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>More data</h2>\n<p>Use<span>&nbsp;</span><a rel=\"noopener noreferrer\" href=\"http://infoshare.stats.govt.nz/\" target=\"_blank\">Infoshare</a>&nbsp;to access the labour market time series.</p>\n<p>Subject category:&nbsp;Work income and spending&nbsp;<br>Group:&nbsp;Household labour force survey \u2013 HLF<br>Group: Quarterly employment survey \u2013 QEM<br>Group: Labour cost index \u2013 LCI</p>"
+    },
+    {
+      "ID": "135753",
+      "Title": "Labour market statistics: September 2026 quarter \u2013 metadata",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>Definitions and metadata</h2>\n<p><a href=\"https://datainfoplus.stats.govt.nz/item/example.org/a2a47613-c80f-4291-9edc-f47e29efaaa3\">Labour market statistics: September 2026 quarter \u2013 Period-specific information \u2013 DataInfo+</a> includes data-quality notes for the September 2026 quarter, including response and achieved sample rates.</p>\n<p><a href=\"http://datainfoplus.stats.govt.nz/Item/example.org/438dbf04-3b3f-446a-b575-2f2df7d6531f?_ga=2.143153788.817057502.1619417816-730143600.1617836679\">Labour market statistics \u2013 DataInfo+</a> gives general methodology used to produce this release, and related metadata.</p>\n<p><a href=\"https://datainfoplus.stats.govt.nz/Item/nz.govt.stats/b7c39358-aa03-446f-a27d-91c37caac35d#/nz.govt.stats/6a13af44-0057-4a63-835a-c1a0c6f8ef91\">Household Labour Force Survey \u2013 DataInfo+</a> gives general methodology used to produce Household Labour Force Survey statistics, and related metadata.</p>\n<p><a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/9007195c-8dc3-4dfb-b5da-1b12c32e90ac?_ga=2.75913564.817057502.1619417816-730143600.1617836679\">Labour cost index \u2013 DataInfo+</a> gives general methodology used to produce labour cost index statistics, and related metadata.</p>\n<p><a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/086258b1-90e6-4728-981d-756b3ca6e147?_ga=2.84375888.817057502.1619417816-730143600.1617836679\">Quarterly Employment Survey \u2013 DataInfo+</a> gives general methodology used to produce Quarterly Employment Survey statistics, and related metadata.</p>"
+    },
+    {
+      "ID": "133962",
+      "Title": "Infoshare is being replaced by Aotearoa Data Explorer",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>Infoshare is being replaced by Aotearoa Data Explorer</h2>\n<p><a id=\"menurj4r\" title=\"https://www.stats.govt.nz/tools/infoshare-is-being-replaced-by-aotearoa-data-explorer/\" rel=\"noopener noreferrer\" href=\"https://www.stats.govt.nz/tools/infoshare-is-being-replaced-by-aotearoa-data-explorer/\" target=\"_blank\">Infoshare is being replaced by Aotearoa Data Explorer</a>. Stay informed and get support with this change by joining our customer group at <a href=\"mailto:cdtp@stats.govt.nz?subject=CDTP%20customer%20group\">cdtp@stats.govt.nz</a>.</p>"
+    },
+    {
+      "ID": "5831",
+      "Title": "Labour market statistics \u2013 media enquiries",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2><span>Media enquiries</span></h2>\n<p>Media team<br><a href=\"mailto:media@stats.govt.nz?subject=Labour%20market%20statistics%20%E2%80%93%20media%20enquiries\">media@stats.govt.nz</a><br><a href=\"tel:+64212859191\">021 285 9191<br></a></p>"
+    },
+    {
+      "ID": "5834",
+      "Title": "Labour market statistics \u2013 technical enquiries",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>Technical enquiries</h2>\n<p>Labour market statistics team<br><a href=\"mailto:info@stats.govt.nz?subject=Labour%20market%20statistics%20%E2%80%93%20technical%20enquiries\">info@stats.govt.nz</a></p>"
+    },
+    {
+      "ID": "721",
+      "Title": "ISSN labour market statistics",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<p>ISSN 2422-8699</p>"
+    },
+    {
+      "ID": "135738",
+      "Title": "Labour market statistics: September 2026 quarter \u2013 next release date",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>Next release</h2>\n<p><em>Labour market statistics: December 2026 quarter</em> will be released on 3 February 2027.</p>"
+    }
+  ],
+  "DefaultView": "Grid",
+  "PageBlockSortOrder": {
+    "135284": 1,
+    "135733": 2,
+    "135736": 3,
+    "135734": 4,
+    "135735": 5,
+    "135689": 6,
+    "135737": 7,
+    "135691": 8,
+    "135739": 9,
+    "135695": 10,
+    "135743": 11,
+    "135696": 12,
+    "135742": 13,
+    "135690": 14,
+    "135744": 15,
+    "135700": 17,
+    "135749": 18,
+    "135699": 19,
+    "135751": 20,
+    "135717": 21,
+    "135750": 22,
+    "135285": 23,
+    "135753": 24,
+    "135286": 25,
+    "135287": 26,
+    "135288": 27,
+    "135289": 28,
+    "135738": 29
+  },
+  "EnableTopDivider": {
+    "718": "No",
+    "135733": "No",
+    "135736": "No",
+    "135734": "No",
+    "135735": "No",
+    "135689": "No",
+    "135737": "No",
+    "135691": "No",
+    "135739": "No",
+    "135695": "No",
+    "135743": "No",
+    "135696": "No",
+    "135742": "No",
+    "135690": "No",
+    "135744": "No",
+    "135700": "No",
+    "135749": "No",
+    "135699": "No",
+    "135751": "No",
+    "135717": "No",
+    "135750": "No",
+    "133387": "No",
+    "135753": "No",
+    "133962": "No",
+    "5831": "No",
+    "5834": "No",
+    "721": "No",
+    "135738": "No"
+  },
+  "PageBlockWidths": {
+    "135284": 0,
+    "135733": 0,
+    "135736": 0,
+    "135734": 0,
+    "135735": 0,
+    "135689": 0,
+    "135737": 0,
+    "135691": 0,
+    "135739": 0,
+    "135695": 0,
+    "135743": 0,
+    "135696": 0,
+    "135742": 0,
+    "135690": 0,
+    "135744": 0,
+    "135700": 0,
+    "135749": 0,
+    "135699": 0,
+    "135751": 0,
+    "135717": 0,
+    "135750": 0,
+    "135285": 0,
+    "135753": 0,
+    "135286": 0,
+    "135287": 0,
+    "135288": 0,
+    "135289": 0,
+    "135738": 0
+  },
+  "PageTerms": [
+    {
+      "ID": 139,
+      "ClassName": "Stats\\CategoryTaxonomyTerm",
+      "LinkData": "{\"LinkURL\":null,\"Title\":null}"
+    },
+    {
+      "ID": 129,
+      "ClassName": "SilverStripe\\Taxonomy\\TaxonomyTerm",
+      "LinkData": "{\"LinkURL\":\"\\/topics\\/business\",\"Title\":\"Business\"}"
+    },
+    {
+      "ID": 1040,
+      "ClassName": "SilverStripe\\Taxonomy\\TaxonomyTerm",
+      "LinkData": "{\"LinkURL\":\"\\/topics\\/disabilities\",\"Title\":\"Disabilities\"}"
+    },
+    {
+      "ID": 141,
+      "ClassName": "SilverStripe\\Taxonomy\\TaxonomyTerm",
+      "LinkData": "{\"LinkURL\":\"\\/topics\\/economy\",\"Title\":\"Economy\"}"
+    },
+    {
+      "ID": 160,
+      "ClassName": "SilverStripe\\Taxonomy\\TaxonomyTerm",
+      "LinkData": "{\"LinkURL\":null,\"Title\":null}"
+    },
+    {
+      "ID": 1043,
+      "ClassName": "SilverStripe\\Taxonomy\\TaxonomyTerm",
+      "LinkData": "{\"LinkURL\":\"\\/topics\\/gender-sex-and-intersex\",\"Title\":\"Gender, sex, and intersex\"}"
+    },
+    {
+      "ID": 167,
+      "ClassName": "SilverStripe\\Taxonomy\\TaxonomyTerm",
+      "LinkData": "{\"LinkURL\":\"\\/topics\\/income\",\"Title\":\"Income\"}"
+    },
+    {
+      "ID": 1034,
+      "ClassName": "SilverStripe\\Taxonomy\\TaxonomyTerm",
+      "LinkData": "{\"LinkURL\":\"\\/topics\\/industries\",\"Title\":\"Industries\"}"
+    },
+    {
+      "ID": 132,
+      "ClassName": "SilverStripe\\Taxonomy\\TaxonomyTerm",
+      "LinkData": "{\"LinkURL\":\"\\/topics\\/labour-market\",\"Title\":\"Labour market\"}"
+    },
+    {
+      "ID": 8378,
+      "ClassName": "Stats\\DateTaxonomyTerm",
+      "LinkData": "{\"LinkURL\":null,\"Title\":null}"
+    },
+    {
+      "ID": 1638,
+      "ClassName": "SilverStripe\\Taxonomy\\TaxonomyTerm",
+      "LinkData": "{\"LinkURL\":\"\\/topics\\/price-indexes\",\"Title\":\"\\/topics\\/price-indexes\"}"
+    },
+    {
+      "ID": 150,
+      "ClassName": "SilverStripe\\Taxonomy\\TaxonomyTerm",
+      "LinkData": "{\"LinkURL\":\"\\/topics\\/society\",\"Title\":\"Society\"}"
+    },
+    {
+      "ID": 1067,
+      "ClassName": "SilverStripe\\Taxonomy\\TaxonomyTerm",
+      "LinkData": "{\"LinkURL\":\"\\/topics\\/women\",\"Title\":\"Women\"}"
+    }
+  ],
+  "PagesRelated": [
+    {
+      "ID": 80711,
+      "Title": "Unemployment rate at 5.7 percent in the September 2026 quarter",
+      "Link": "/news/unemployment-rate-at-5-7-percent-in-the-september-2026-quarter/",
+      "PageDate": "2026-11-04 10:45:00",
+      "IsPublished": "2026-11-04 10:45:12",
+      "FeaturedMedia": {
+        "Title": "Crowd of people \u2013 population",
+        "Filename": "https://www.stats.govt.nz/assets/Uploads/news-story-thumbnails/Crowd-of-people-population-__ScaleHeightWzE2MF0.jpg"
+      }
+    }
+  ],
+  "Category": {
+    "ID": 139,
+    "DisplayName": "Information releases",
+    "LinkData": "{\"LinkURL\":\"information-releases\",\"Title\":\"Information releases\"}",
+    "FilterName": null
+  },
+  "TermsReleases": [
+    {
+      "ID": 8378,
+      "ClassName": "DateTaxonomyTerm",
+      "Date": null,
+      "DisplayName": "Labour market statistics: September 2026 quarter",
+      "DateFormat": "F Y",
+      "DateString": "4 November 2026",
+      "PublicationDate": "2026-11-04 10:45:00"
+    }
+  ],
+  "TermsTopics": [
+    {
+      "ID": 129,
+      "ClassName": "TaxonomyTerm",
+      "DisplayName": "Business",
+      "LinkData": "{\"LinkURL\":\"topics\\/business\",\"Title\":\"Business\"}",
+      "FilterName": null
+    },
+    {
+      "ID": 1040,
+      "ClassName": "TaxonomyTerm",
+      "DisplayName": "Disability",
+      "LinkData": "{\"LinkURL\":\"topics\\/disability\",\"Title\":\"Disability\"}",
+      "FilterName": null
+    },
+    {
+      "ID": 141,
+      "ClassName": "TaxonomyTerm",
+      "DisplayName": "Economy",
+      "LinkData": "{\"LinkURL\":\"topics\\/economy\",\"Title\":\"Economy\"}",
+      "FilterName": null
+    },
+    {
+      "ID": 160,
+      "ClassName": "TaxonomyTerm",
+      "DisplayName": "Employment and unemployment",
+      "LinkData": "{\"LinkURL\":\"topics\\/employment-and-unemployment\",\"Title\":\"Employment and unemployment\"}",
+      "FilterName": null
+    },
+    {
+      "ID": 1043,
+      "ClassName": "TaxonomyTerm",
+      "DisplayName": "Gender sex and intersex",
+      "LinkData": "{\"LinkURL\":\"topics\\/gender-sex-and-intersex\",\"Title\":\"Gender sex and intersex\"}",
+      "FilterName": null
+    },
+    {
+      "ID": 167,
+      "ClassName": "TaxonomyTerm",
+      "DisplayName": "Income",
+      "LinkData": "{\"LinkURL\":\"topics\\/income\",\"Title\":\"Income\"}",
+      "FilterName": null
+    },
+    {
+      "ID": 1034,
+      "ClassName": "TaxonomyTerm",
+      "DisplayName": "Industries",
+      "LinkData": "{\"LinkURL\":\"topics\\/industries\",\"Title\":\"Industries\"}",
+      "FilterName": null
+    },
+    {
+      "ID": 132,
+      "ClassName": "TaxonomyTerm",
+      "DisplayName": "Labour market",
+      "LinkData": "{\"LinkURL\":\"topics\\/labour-market\",\"Title\":\"Labour market\"}",
+      "FilterName": null
+    },
+    {
+      "ID": 1638,
+      "ClassName": "TaxonomyTerm",
+      "DisplayName": "Price indexes",
+      "LinkData": "{\"LinkURL\":\"topics\\/price-indexes\",\"Title\":\"Price indexes\"}",
+      "FilterName": null
+    },
+    {
+      "ID": 150,
+      "ClassName": "TaxonomyTerm",
+      "DisplayName": "Society",
+      "LinkData": "{\"LinkURL\":\"topics\\/society\",\"Title\":\"Society\"}",
+      "FilterName": null
+    },
+    {
+      "ID": 1067,
+      "ClassName": "TaxonomyTerm",
+      "DisplayName": "Women",
+      "LinkData": "{\"LinkURL\":\"topics\\/women\",\"Title\":\"Women\"}",
+      "FilterName": null
+    }
+  ]
+}

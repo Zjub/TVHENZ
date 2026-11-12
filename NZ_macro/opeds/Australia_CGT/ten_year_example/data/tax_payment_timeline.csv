@@ -1,0 +1,193 @@
+year,tax,stage,wealth,basis,asset,system,nominal_return,pv_tax
+0,30000,Initial labour-income tax,70000,70000,Bank deposit,Full-rate income tax,0.055749999999999966,30000
+1,1170.7499999999993,Current capital-income tax,72731.75,72731.75,Bank deposit,Full-rate income tax,0.055749999999999966,1108.927302865261
+2,1216.4385187499993,Current capital-income tax,75570.10654375,75570.10654375,Bank deposit,Full-rate income tax,0.055749999999999966,1091.3598776789752
+3,1263.9100319442177,Current capital-income tax,78519.22995161984,78519.22995161984,Bank deposit,Full-rate income tax,0.055749999999999966,1074.0707524559762
+4,1313.234120940841,Current capital-income tax,81583.44290048181,81583.44290048181,Bank deposit,Full-rate income tax,0.055749999999999966,1057.055518418727
+5,1364.4830825105573,Current capital-income tax,84767.2367596731,84767.2367596731,Bank deposit,Full-rate income tax,0.055749999999999966,1040.3098366327422
+6,1417.7320348055318,Current capital-income tax,88075.27817421935,88075.27817421935,Bank deposit,Full-rate income tax,0.055749999999999966,1023.8294369001517
+7,1473.0590274638175,Current capital-income tax,91512.41590496825,91512.41590496825,Bank deposit,Full-rate income tax,0.055749999999999966,1007.6101166707837
+8,1530.5451560105928,Current capital-income tax,95083.68793565963,95083.68793565963,Bank deposit,Full-rate income tax,0.055749999999999966,991.6477399705052
+9,1590.2746807239064,Current capital-income tax,98794.32885734875,98794.32885734875,Bank deposit,Full-rate income tax,0.055749999999999966,975.9382363465351
+10,1652.335150139157,Current capital-income tax,102649.77754100678,102649.77754100678,Bank deposit,Full-rate income tax,0.055749999999999966,960.4775998294659
+10,0,Tax on realised capital gain (or symmetric RRA relief),102649.77754100678,102649.77754100678,Bank deposit,Full-rate income tax,0.055749999999999966,0
+0,30000,Initial labour-income tax,70000,70000,Bank deposit,Comprehensive normal-return allowance,0.055749999999999966,30000
+1,0,Current capital-income tax,73902.5,73902.5,Bank deposit,Comprehensive normal-return allowance,0.055749999999999966,0
+2,0,Current capital-income tax,78022.564375,78022.564375,Bank deposit,Comprehensive normal-return allowance,0.055749999999999966,0
+3,0,Current capital-income tax,82372.32233890625,82372.32233890625,Bank deposit,Comprehensive normal-return allowance,0.055749999999999966,0
+4,0,Current capital-income tax,86964.57930930027,86964.57930930027,Bank deposit,Comprehensive normal-return allowance,0.055749999999999966,0
+5,0,Current capital-income tax,91812.85460579376,91812.85460579376,Bank deposit,Comprehensive normal-return allowance,0.055749999999999966,0
+6,0,Current capital-income tax,96931.42125006676,96931.42125006676,Bank deposit,Comprehensive normal-return allowance,0.055749999999999966,0
+7,0,Current capital-income tax,102335.34798475799,102335.34798475799,Bank deposit,Comprehensive normal-return allowance,0.055749999999999966,0
+8,0,Current capital-income tax,108040.54363490824,108040.54363490824,Bank deposit,Comprehensive normal-return allowance,0.055749999999999966,0
+9,0,Current capital-income tax,114063.80394255437,114063.80394255437,Bank deposit,Comprehensive normal-return allowance,0.055749999999999966,0
+10,0,Current capital-income tax,120422.86101235177,120422.86101235177,Bank deposit,Comprehensive normal-return allowance,0.055749999999999966,0
+10,0,Tax on realised capital gain (or symmetric RRA relief),120422.86101235177,120422.86101235177,Bank deposit,Comprehensive normal-return allowance,0.055749999999999966,0
+0,30000,Initial labour-income tax,70000,70000,Bank deposit,CGT inflation allowance only,0.055749999999999966,30000
+1,1170.7499999999993,Current capital-income tax,72731.75,72731.75,Bank deposit,CGT inflation allowance only,0.055749999999999966,1108.927302865261
+2,1216.4385187499993,Current capital-income tax,75570.10654375,75570.10654375,Bank deposit,CGT inflation allowance only,0.055749999999999966,1091.3598776789752
+3,1263.9100319442177,Current capital-income tax,78519.22995161984,78519.22995161984,Bank deposit,CGT inflation allowance only,0.055749999999999966,1074.0707524559762
+4,1313.234120940841,Current capital-income tax,81583.44290048181,81583.44290048181,Bank deposit,CGT inflation allowance only,0.055749999999999966,1057.055518418727
+5,1364.4830825105573,Current capital-income tax,84767.2367596731,84767.2367596731,Bank deposit,CGT inflation allowance only,0.055749999999999966,1040.3098366327422
+6,1417.7320348055318,Current capital-income tax,88075.27817421935,88075.27817421935,Bank deposit,CGT inflation allowance only,0.055749999999999966,1023.8294369001517
+7,1473.0590274638175,Current capital-income tax,91512.41590496825,91512.41590496825,Bank deposit,CGT inflation allowance only,0.055749999999999966,1007.6101166707837
+8,1530.5451560105928,Current capital-income tax,95083.68793565963,95083.68793565963,Bank deposit,CGT inflation allowance only,0.055749999999999966,991.6477399705052
+9,1590.2746807239064,Current capital-income tax,98794.32885734875,98794.32885734875,Bank deposit,CGT inflation allowance only,0.055749999999999966,975.9382363465351
+10,1652.335150139157,Current capital-income tax,102649.77754100678,102649.77754100678,Bank deposit,CGT inflation allowance only,0.055749999999999966,960.4775998294659
+10,0,Tax on realised capital gain (or symmetric RRA relief),102649.77754100678,102649.77754100678,Bank deposit,CGT inflation allowance only,0.055749999999999966,0
+0,0,Initial labour-income tax,100000,100000,Bank deposit,Broad consumption tax,0.055749999999999966,0
+1,0,Current capital-income tax,105575,105575,Bank deposit,Broad consumption tax,0.055749999999999966,0
+2,0,Current capital-income tax,111460.80625,111460.80625,Bank deposit,Broad consumption tax,0.055749999999999966,0
+3,0,Current capital-income tax,117674.7461984375,117674.7461984375,Bank deposit,Broad consumption tax,0.055749999999999966,0
+4,0,Current capital-income tax,124235.11329900038,124235.11329900038,Bank deposit,Broad consumption tax,0.055749999999999966,0
+5,0,Current capital-income tax,131161.22086541966,131161.22086541966,Bank deposit,Broad consumption tax,0.055749999999999966,0
+6,0,Current capital-income tax,138473.4589286668,138473.4589286668,Bank deposit,Broad consumption tax,0.055749999999999966,0
+7,0,Current capital-income tax,146193.35426393998,146193.35426393998,Bank deposit,Broad consumption tax,0.055749999999999966,0
+8,0,Current capital-income tax,154343.63376415463,154343.63376415463,Bank deposit,Broad consumption tax,0.055749999999999966,0
+9,0,Current capital-income tax,162948.29134650624,162948.29134650624,Bank deposit,Broad consumption tax,0.055749999999999966,0
+10,0,Current capital-income tax,172032.65858907395,172032.65858907395,Bank deposit,Broad consumption tax,0.055749999999999966,0
+10,51609.79757672219,Tax on final consumption,120422.86101235176,172032.65858907395,Bank deposit,Broad consumption tax,0.055749999999999966,30000.000000000004
+0,30000,Initial labour-income tax,70000,70000,Domestic company,Full-rate income tax,0.055749999999999966,30000
+1,1170.7499999999993,Company tax (net of equity allowance where applicable),72731.75,72731.75,Domestic company,Full-rate income tax,0.055749999999999966,1108.927302865261
+2,1216.4385187499993,Company tax (net of equity allowance where applicable),75570.10654375,75570.10654375,Domestic company,Full-rate income tax,0.055749999999999966,1091.3598776789752
+3,1263.9100319442177,Company tax (net of equity allowance where applicable),78519.22995161984,78519.22995161984,Domestic company,Full-rate income tax,0.055749999999999966,1074.0707524559762
+4,1313.234120940841,Company tax (net of equity allowance where applicable),81583.44290048181,81583.44290048181,Domestic company,Full-rate income tax,0.055749999999999966,1057.055518418727
+5,1364.4830825105573,Company tax (net of equity allowance where applicable),84767.2367596731,84767.2367596731,Domestic company,Full-rate income tax,0.055749999999999966,1040.3098366327422
+6,1417.7320348055318,Company tax (net of equity allowance where applicable),88075.27817421935,88075.27817421935,Domestic company,Full-rate income tax,0.055749999999999966,1023.8294369001517
+7,1473.0590274638175,Company tax (net of equity allowance where applicable),91512.41590496825,91512.41590496825,Domestic company,Full-rate income tax,0.055749999999999966,1007.6101166707837
+8,1530.5451560105928,Company tax (net of equity allowance where applicable),95083.68793565963,95083.68793565963,Domestic company,Full-rate income tax,0.055749999999999966,991.6477399705052
+9,1590.2746807239064,Company tax (net of equity allowance where applicable),98794.32885734875,98794.32885734875,Domestic company,Full-rate income tax,0.055749999999999966,975.9382363465351
+10,1652.335150139157,Company tax (net of equity allowance where applicable),102649.77754100678,102649.77754100678,Domestic company,Full-rate income tax,0.055749999999999966,960.4775998294659
+10,1.8189894035458565e-12,Shareholder settlement after usable franking credits,102649.77754100678,102649.77754100678,Domestic company,Full-rate income tax,0.055749999999999966,1.0573512136964576e-12
+0,30000,Initial labour-income tax,70000,70000,Domestic company,Comprehensive normal-return allowance,0.055749999999999966,30000
+1,0,Company tax (net of equity allowance where applicable),73902.5,73902.5,Domestic company,Comprehensive normal-return allowance,0.055749999999999966,0
+2,0,Company tax (net of equity allowance where applicable),78022.564375,78022.564375,Domestic company,Comprehensive normal-return allowance,0.055749999999999966,0
+3,0,Company tax (net of equity allowance where applicable),82372.32233890625,82372.32233890625,Domestic company,Comprehensive normal-return allowance,0.055749999999999966,0
+4,0,Company tax (net of equity allowance where applicable),86964.57930930027,86964.57930930027,Domestic company,Comprehensive normal-return allowance,0.055749999999999966,0
+5,0,Company tax (net of equity allowance where applicable),91812.85460579376,91812.85460579376,Domestic company,Comprehensive normal-return allowance,0.055749999999999966,0
+6,0,Company tax (net of equity allowance where applicable),96931.42125006676,96931.42125006676,Domestic company,Comprehensive normal-return allowance,0.055749999999999966,0
+7,0,Company tax (net of equity allowance where applicable),102335.34798475799,102335.34798475799,Domestic company,Comprehensive normal-return allowance,0.055749999999999966,0
+8,0,Company tax (net of equity allowance where applicable),108040.54363490824,108040.54363490824,Domestic company,Comprehensive normal-return allowance,0.055749999999999966,0
+9,0,Company tax (net of equity allowance where applicable),114063.80394255437,114063.80394255437,Domestic company,Comprehensive normal-return allowance,0.055749999999999966,0
+10,0,Company tax (net of equity allowance where applicable),120422.86101235177,120422.86101235177,Domestic company,Comprehensive normal-return allowance,0.055749999999999966,0
+10,0,Shareholder settlement after usable franking credits,120422.86101235177,120422.86101235177,Domestic company,Comprehensive normal-return allowance,0.055749999999999966,0
+0,30000,Initial labour-income tax,70000,70000,Domestic company,CGT inflation allowance only,0.055749999999999966,30000
+1,1170.7499999999993,Company tax (net of equity allowance where applicable),72731.75,72731.75,Domestic company,CGT inflation allowance only,0.055749999999999966,1108.927302865261
+2,1216.4385187499993,Company tax (net of equity allowance where applicable),75570.10654375,75570.10654375,Domestic company,CGT inflation allowance only,0.055749999999999966,1091.3598776789752
+3,1263.9100319442177,Company tax (net of equity allowance where applicable),78519.22995161984,78519.22995161984,Domestic company,CGT inflation allowance only,0.055749999999999966,1074.0707524559762
+4,1313.234120940841,Company tax (net of equity allowance where applicable),81583.44290048181,81583.44290048181,Domestic company,CGT inflation allowance only,0.055749999999999966,1057.055518418727
+5,1364.4830825105573,Company tax (net of equity allowance where applicable),84767.2367596731,84767.2367596731,Domestic company,CGT inflation allowance only,0.055749999999999966,1040.3098366327422
+6,1417.7320348055318,Company tax (net of equity allowance where applicable),88075.27817421935,88075.27817421935,Domestic company,CGT inflation allowance only,0.055749999999999966,1023.8294369001517
+7,1473.0590274638175,Company tax (net of equity allowance where applicable),91512.41590496825,91512.41590496825,Domestic company,CGT inflation allowance only,0.055749999999999966,1007.6101166707837
+8,1530.5451560105928,Company tax (net of equity allowance where applicable),95083.68793565963,95083.68793565963,Domestic company,CGT inflation allowance only,0.055749999999999966,991.6477399705052
+9,1590.2746807239064,Company tax (net of equity allowance where applicable),98794.32885734875,98794.32885734875,Domestic company,CGT inflation allowance only,0.055749999999999966,975.9382363465351
+10,1652.335150139157,Company tax (net of equity allowance where applicable),102649.77754100678,102649.77754100678,Domestic company,CGT inflation allowance only,0.055749999999999966,960.4775998294659
+10,1.8189894035458565e-12,Shareholder settlement after usable franking credits,102649.77754100678,102649.77754100678,Domestic company,CGT inflation allowance only,0.055749999999999966,1.0573512136964576e-12
+0,0,Initial labour-income tax,100000,100000,Domestic company,Broad consumption tax,0.055749999999999966,0
+1,0,Company tax (net of equity allowance where applicable),105575,105575,Domestic company,Broad consumption tax,0.055749999999999966,0
+2,0,Company tax (net of equity allowance where applicable),111460.80625,111460.80625,Domestic company,Broad consumption tax,0.055749999999999966,0
+3,0,Company tax (net of equity allowance where applicable),117674.7461984375,117674.7461984375,Domestic company,Broad consumption tax,0.055749999999999966,0
+4,0,Company tax (net of equity allowance where applicable),124235.11329900038,124235.11329900038,Domestic company,Broad consumption tax,0.055749999999999966,0
+5,0,Company tax (net of equity allowance where applicable),131161.22086541966,131161.22086541966,Domestic company,Broad consumption tax,0.055749999999999966,0
+6,0,Company tax (net of equity allowance where applicable),138473.4589286668,138473.4589286668,Domestic company,Broad consumption tax,0.055749999999999966,0
+7,0,Company tax (net of equity allowance where applicable),146193.35426393998,146193.35426393998,Domestic company,Broad consumption tax,0.055749999999999966,0
+8,0,Company tax (net of equity allowance where applicable),154343.63376415463,154343.63376415463,Domestic company,Broad consumption tax,0.055749999999999966,0
+9,0,Company tax (net of equity allowance where applicable),162948.29134650624,162948.29134650624,Domestic company,Broad consumption tax,0.055749999999999966,0
+10,0,Company tax (net of equity allowance where applicable),172032.65858907395,172032.65858907395,Domestic company,Broad consumption tax,0.055749999999999966,0
+10,51609.79757672219,Tax on final consumption,120422.86101235176,172032.65858907395,Domestic company,Broad consumption tax,0.055749999999999966,30000.000000000004
+0,30000,Initial labour-income tax,70000,70000,House: capital appreciation,Full-rate income tax,0.055749999999999966,30000
+1,0,Current capital-income tax,73902.5,70000,House: capital appreciation,Full-rate income tax,0.055749999999999966,0
+2,0,Current capital-income tax,78022.564375,70000,House: capital appreciation,Full-rate income tax,0.055749999999999966,0
+3,0,Current capital-income tax,82372.32233890625,70000,House: capital appreciation,Full-rate income tax,0.055749999999999966,0
+4,0,Current capital-income tax,86964.57930930027,70000,House: capital appreciation,Full-rate income tax,0.055749999999999966,0
+5,0,Current capital-income tax,91812.85460579376,70000,House: capital appreciation,Full-rate income tax,0.055749999999999966,0
+6,0,Current capital-income tax,96931.42125006676,70000,House: capital appreciation,Full-rate income tax,0.055749999999999966,0
+7,0,Current capital-income tax,102335.34798475799,70000,House: capital appreciation,Full-rate income tax,0.055749999999999966,0
+8,0,Current capital-income tax,108040.54363490824,70000,House: capital appreciation,Full-rate income tax,0.055749999999999966,0
+9,0,Current capital-income tax,114063.80394255437,70000,House: capital appreciation,Full-rate income tax,0.055749999999999966,0
+10,0,Current capital-income tax,120422.86101235177,70000,House: capital appreciation,Full-rate income tax,0.055749999999999966,0
+10,15126.85830370553,Tax on realised capital gain (or symmetric RRA relief),105296.00270864624,70000,House: capital appreciation,Full-rate income tax,0.055749999999999966,8793.01548192563
+0,30000,Initial labour-income tax,70000,70000,House: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,30000
+1,0,Current capital-income tax,73902.5,73902.5,House: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+2,0,Current capital-income tax,78022.564375,78022.564375,House: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+3,0,Current capital-income tax,82372.32233890625,82372.32233890625,House: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+4,0,Current capital-income tax,86964.57930930027,86964.57930930027,House: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+5,0,Current capital-income tax,91812.85460579376,91812.85460579376,House: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+6,0,Current capital-income tax,96931.42125006676,96931.42125006676,House: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+7,0,Current capital-income tax,102335.34798475799,102335.34798475799,House: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+8,0,Current capital-income tax,108040.54363490824,108040.54363490824,House: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+9,0,Current capital-income tax,114063.80394255437,114063.80394255437,House: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+10,0,Current capital-income tax,120422.86101235177,120422.86101235177,House: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+10,0,Tax on realised capital gain (or symmetric RRA relief),120422.86101235177,120422.86101235177,House: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+0,30000,Initial labour-income tax,70000,70000,House: capital appreciation,CGT inflation allowance only,0.055749999999999966,30000
+1,0,Current capital-income tax,73902.5,70000,House: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+2,0,Current capital-income tax,78022.564375,70000,House: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+3,0,Current capital-income tax,82372.32233890625,70000,House: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+4,0,Current capital-income tax,86964.57930930027,70000,House: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+5,0,Current capital-income tax,91812.85460579376,70000,House: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+6,0,Current capital-income tax,96931.42125006676,70000,House: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+7,0,Current capital-income tax,102335.34798475799,70000,House: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+8,0,Current capital-income tax,108040.54363490824,70000,House: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+9,0,Current capital-income tax,114063.80394255437,70000,House: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+10,0,Current capital-income tax,120422.86101235177,70000,House: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+10,9245.082875582031,Tax on realised capital gain (or symmetric RRA relief),111177.77813676975,70000,House: capital appreciation,CGT inflation allowance only,0.055749999999999966,5374.0277871687795
+0,0,Initial labour-income tax,100000,100000,House: capital appreciation,Broad consumption tax,0.055749999999999966,0
+1,0,Current capital-income tax,105575,100000,House: capital appreciation,Broad consumption tax,0.055749999999999966,0
+2,0,Current capital-income tax,111460.80625,100000,House: capital appreciation,Broad consumption tax,0.055749999999999966,0
+3,0,Current capital-income tax,117674.7461984375,100000,House: capital appreciation,Broad consumption tax,0.055749999999999966,0
+4,0,Current capital-income tax,124235.11329900038,100000,House: capital appreciation,Broad consumption tax,0.055749999999999966,0
+5,0,Current capital-income tax,131161.22086541966,100000,House: capital appreciation,Broad consumption tax,0.055749999999999966,0
+6,0,Current capital-income tax,138473.4589286668,100000,House: capital appreciation,Broad consumption tax,0.055749999999999966,0
+7,0,Current capital-income tax,146193.35426393998,100000,House: capital appreciation,Broad consumption tax,0.055749999999999966,0
+8,0,Current capital-income tax,154343.63376415463,100000,House: capital appreciation,Broad consumption tax,0.055749999999999966,0
+9,0,Current capital-income tax,162948.29134650624,100000,House: capital appreciation,Broad consumption tax,0.055749999999999966,0
+10,0,Current capital-income tax,172032.65858907395,100000,House: capital appreciation,Broad consumption tax,0.055749999999999966,0
+10,51609.79757672219,Tax on final consumption,120422.86101235176,100000,House: capital appreciation,Broad consumption tax,0.055749999999999966,30000.000000000004
+0,30000,Initial labour-income tax,70000,70000,New business: capital appreciation,Full-rate income tax,0.055749999999999966,30000
+1,0,Current capital-income tax,73902.5,70000,New business: capital appreciation,Full-rate income tax,0.055749999999999966,0
+2,0,Current capital-income tax,78022.564375,70000,New business: capital appreciation,Full-rate income tax,0.055749999999999966,0
+3,0,Current capital-income tax,82372.32233890625,70000,New business: capital appreciation,Full-rate income tax,0.055749999999999966,0
+4,0,Current capital-income tax,86964.57930930027,70000,New business: capital appreciation,Full-rate income tax,0.055749999999999966,0
+5,0,Current capital-income tax,91812.85460579376,70000,New business: capital appreciation,Full-rate income tax,0.055749999999999966,0
+6,0,Current capital-income tax,96931.42125006676,70000,New business: capital appreciation,Full-rate income tax,0.055749999999999966,0
+7,0,Current capital-income tax,102335.34798475799,70000,New business: capital appreciation,Full-rate income tax,0.055749999999999966,0
+8,0,Current capital-income tax,108040.54363490824,70000,New business: capital appreciation,Full-rate income tax,0.055749999999999966,0
+9,0,Current capital-income tax,114063.80394255437,70000,New business: capital appreciation,Full-rate income tax,0.055749999999999966,0
+10,0,Current capital-income tax,120422.86101235177,70000,New business: capital appreciation,Full-rate income tax,0.055749999999999966,0
+10,15126.85830370553,Tax on realised capital gain (or symmetric RRA relief),105296.00270864624,70000,New business: capital appreciation,Full-rate income tax,0.055749999999999966,8793.01548192563
+0,30000,Initial labour-income tax,70000,70000,New business: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,30000
+1,0,Current capital-income tax,73902.5,73902.5,New business: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+2,0,Current capital-income tax,78022.564375,78022.564375,New business: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+3,0,Current capital-income tax,82372.32233890625,82372.32233890625,New business: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+4,0,Current capital-income tax,86964.57930930027,86964.57930930027,New business: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+5,0,Current capital-income tax,91812.85460579376,91812.85460579376,New business: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+6,0,Current capital-income tax,96931.42125006676,96931.42125006676,New business: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+7,0,Current capital-income tax,102335.34798475799,102335.34798475799,New business: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+8,0,Current capital-income tax,108040.54363490824,108040.54363490824,New business: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+9,0,Current capital-income tax,114063.80394255437,114063.80394255437,New business: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+10,0,Current capital-income tax,120422.86101235177,120422.86101235177,New business: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+10,0,Tax on realised capital gain (or symmetric RRA relief),120422.86101235177,120422.86101235177,New business: capital appreciation,Comprehensive normal-return allowance,0.055749999999999966,0
+0,30000,Initial labour-income tax,70000,70000,New business: capital appreciation,CGT inflation allowance only,0.055749999999999966,30000
+1,0,Current capital-income tax,73902.5,70000,New business: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+2,0,Current capital-income tax,78022.564375,70000,New business: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+3,0,Current capital-income tax,82372.32233890625,70000,New business: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+4,0,Current capital-income tax,86964.57930930027,70000,New business: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+5,0,Current capital-income tax,91812.85460579376,70000,New business: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+6,0,Current capital-income tax,96931.42125006676,70000,New business: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+7,0,Current capital-income tax,102335.34798475799,70000,New business: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+8,0,Current capital-income tax,108040.54363490824,70000,New business: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+9,0,Current capital-income tax,114063.80394255437,70000,New business: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+10,0,Current capital-income tax,120422.86101235177,70000,New business: capital appreciation,CGT inflation allowance only,0.055749999999999966,0
+10,9245.082875582031,Tax on realised capital gain (or symmetric RRA relief),111177.77813676975,70000,New business: capital appreciation,CGT inflation allowance only,0.055749999999999966,5374.0277871687795
+0,0,Initial labour-income tax,100000,100000,New business: capital appreciation,Broad consumption tax,0.055749999999999966,0
+1,0,Current capital-income tax,105575,100000,New business: capital appreciation,Broad consumption tax,0.055749999999999966,0
+2,0,Current capital-income tax,111460.80625,100000,New business: capital appreciation,Broad consumption tax,0.055749999999999966,0
+3,0,Current capital-income tax,117674.7461984375,100000,New business: capital appreciation,Broad consumption tax,0.055749999999999966,0
+4,0,Current capital-income tax,124235.11329900038,100000,New business: capital appreciation,Broad consumption tax,0.055749999999999966,0
+5,0,Current capital-income tax,131161.22086541966,100000,New business: capital appreciation,Broad consumption tax,0.055749999999999966,0
+6,0,Current capital-income tax,138473.4589286668,100000,New business: capital appreciation,Broad consumption tax,0.055749999999999966,0
+7,0,Current capital-income tax,146193.35426393998,100000,New business: capital appreciation,Broad consumption tax,0.055749999999999966,0
+8,0,Current capital-income tax,154343.63376415463,100000,New business: capital appreciation,Broad consumption tax,0.055749999999999966,0
+9,0,Current capital-income tax,162948.29134650624,100000,New business: capital appreciation,Broad consumption tax,0.055749999999999966,0
+10,0,Current capital-income tax,172032.65858907395,100000,New business: capital appreciation,Broad consumption tax,0.055749999999999966,0
+10,51609.79757672219,Tax on final consumption,120422.86101235176,100000,New business: capital appreciation,Broad consumption tax,0.055749999999999966,30000.000000000004

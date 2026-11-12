@@ -5,6 +5,7 @@ D01 svg exists,True,
 D01 csv exists,True,
 D01 image resolution,True,"(2160, 1440)"
 D01 SVG parses,True,
+D01 horizontal-axis title present,True,Income year (July to June)
 D01 SVG text bounds and encoding,True,
 D01 data nonempty,True,
 D01 no infinite plotted values,True,
@@ -13,6 +14,7 @@ D02 svg exists,True,
 D02 csv exists,True,
 D02 image resolution,True,"(2160, 1620)"
 D02 SVG parses,True,
+D02 horizontal-axis title present,True,Income year (July to June)
 D02 SVG text bounds and encoding,True,
 D02 data nonempty,True,
 D02 no infinite plotted values,True,
@@ -21,6 +23,7 @@ D03 svg exists,True,
 D03 csv exists,True,
 D03 image resolution,True,"(2160, 1440)"
 D03 SVG parses,True,
+D03 horizontal-axis title present,True,Reported gross capital gains (AUD billion)
 D03 SVG text bounds and encoding,True,
 D03 data nonempty,True,
 D03 no infinite plotted values,True,
@@ -29,6 +32,7 @@ D04 svg exists,True,
 D04 csv exists,True,
 D04 image resolution,True,"(2520, 1620)"
 D04 SVG parses,True,
+D04 horizontal-axis title present,True,Reported gross capital gains (AUD billion)
 D04 SVG text bounds and encoding,True,
 D04 data nonempty,True,
 D04 no infinite plotted values,True,
@@ -37,6 +41,7 @@ D05 svg exists,True,
 D05 csv exists,True,
 D05 image resolution,True,"(2160, 1440)"
 D05 SVG parses,True,
+D05 horizontal-axis title present,True,Reported capital gains or losses (AUD billion)
 D05 SVG text bounds and encoding,True,
 D05 data nonempty,True,
 D05 no infinite plotted values,True,
@@ -45,6 +50,7 @@ D06 svg exists,True,
 D06 csv exists,True,
 D06 image resolution,True,"(2160, 1440)"
 D06 SVG parses,True,
+D06 horizontal-axis title present,True,Steps from gross gains to net taxable gains
 D06 SVG text bounds and encoding,True,
 D06 data nonempty,True,
 D06 no infinite plotted values,True,
@@ -53,6 +59,7 @@ D07 svg exists,True,
 D07 csv exists,True,
 D07 image resolution,True,"(2160, 1440)"
 D07 SVG parses,True,
+D07 horizontal-axis title present,True,Income year (July to June)
 D07 SVG text bounds and encoding,True,
 D07 data nonempty,True,
 D07 no infinite plotted values,True,
@@ -61,6 +68,7 @@ D08 svg exists,True,
 D08 csv exists,True,
 D08 image resolution,True,"(2160, 1440)"
 D08 SVG parses,True,
+D08 horizontal-axis title present,True,Annual taxable income bracket (AUD)
 D08 SVG text bounds and encoding,True,
 D08 data nonempty,True,
 D08 no infinite plotted values,True,
@@ -69,6 +77,7 @@ D09 svg exists,True,
 D09 csv exists,True,
 D09 image resolution,True,"(2160, 1440)"
 D09 SVG parses,True,
+D09 horizontal-axis title present,True,Age group (years)
 D09 SVG text bounds and encoding,True,
 D09 data nonempty,True,
 D09 no infinite plotted values,True,
@@ -77,6 +86,7 @@ D10 svg exists,True,
 D10 csv exists,True,
 D10 image resolution,True,"(2160, 1440)"
 D10 SVG parses,True,
+D10 horizontal-axis title present,True,Age group (years)
 D10 SVG text bounds and encoding,True,
 D10 data nonempty,True,
 D10 no infinite plotted values,True,
@@ -85,6 +95,7 @@ D11 svg exists,True,
 D11 csv exists,True,
 D11 image resolution,True,"(2160, 1440)"
 D11 SVG parses,True,
+D11 horizontal-axis title present,True,Recorded sex
 D11 SVG text bounds and encoding,True,
 D11 data nonempty,True,
 D11 no infinite plotted values,True,
@@ -93,6 +104,7 @@ D12 svg exists,True,
 D12 csv exists,True,
 D12 image resolution,True,"(2160, 1440)"
 D12 SVG parses,True,
+D12 horizontal-axis title present,True,"Cumulative share of taxable filers, ranked by taxable income (%)"
 D12 SVG text bounds and encoding,True,
 D12 data nonempty,True,
 D12 no infinite plotted values,True,
@@ -101,6 +113,7 @@ D13 svg exists,True,
 D13 csv exists,True,
 D13 image resolution,True,"(2160, 1620)"
 D13 SVG parses,True,
+D13 horizontal-axis title present,True,Annual taxable income bracket (AUD)
 D13 SVG text bounds and encoding,True,
 D13 data nonempty,True,
 D13 no infinite plotted values,True,
@@ -109,6 +122,7 @@ D14 svg exists,True,
 D14 csv exists,True,
 D14 image resolution,True,"(2160, 1440)"
 D14 SVG parses,True,
+D14 horizontal-axis title present,True,Annual net taxable capital gain per filer (AUD)
 D14 SVG text bounds and encoding,True,
 D14 data nonempty,True,
 D14 no infinite plotted values,True,
@@ -117,6 +131,7 @@ D15 svg exists,True,
 D15 csv exists,True,
 D15 image resolution,True,"(2160, 1440)"
 D15 SVG parses,True,
+D15 horizontal-axis title present,True,Income year (July to June)
 D15 SVG text bounds and encoding,True,
 D15 data nonempty,True,
 D15 no infinite plotted values,True,
@@ -125,6 +140,7 @@ D16 svg exists,True,
 D16 csv exists,True,
 D16 image resolution,True,"(2160, 1440)"
 D16 SVG parses,True,
+D16 horizontal-axis title present,True,Income year (July to June)
 D16 SVG text bounds and encoding,True,
 D16 data nonempty,True,
 D16 no infinite plotted values,True,
@@ -133,6 +149,7 @@ D17 svg exists,True,
 D17 csv exists,True,
 D17 image resolution,True,"(2160, 1440)"
 D17 SVG parses,True,
+D17 horizontal-axis title present,True,Income year (July to June)
 D17 SVG text bounds and encoding,True,
 D17 data nonempty,True,
 D17 no infinite plotted values,True,
@@ -141,6 +158,7 @@ D18 svg exists,True,
 D18 csv exists,True,
 D18 image resolution,True,"(2160, 1440)"
 D18 SVG parses,True,
+D18 horizontal-axis title present,True,Annual taxable income decile (lowest to highest)
 D18 SVG text bounds and encoding,True,
 D18 data nonempty,True,
 D18 no infinite plotted values,True,
@@ -149,6 +167,7 @@ D19 svg exists,True,
 D19 csv exists,True,
 D19 image resolution,True,"(2160, 1440)"
 D19 SVG parses,True,
+D19 horizontal-axis title present,True,Age group (years)
 D19 SVG text bounds and encoding,True,
 D19 data nonempty,True,
 D19 no infinite plotted values,True,
@@ -157,6 +176,7 @@ B01 svg exists,True,
 B01 csv exists,True,
 B01 image resolution,True,"(2160, 1440)"
 B01 SVG parses,True,
+B01 horizontal-axis title present,True,Financial year (July to June)
 B01 SVG text bounds and encoding,True,
 B01 data nonempty,True,
 B01 no infinite plotted values,True,
@@ -165,6 +185,7 @@ B02 svg exists,True,
 B02 csv exists,True,
 B02 image resolution,True,"(2160, 1440)"
 B02 SVG parses,True,
+B02 horizontal-axis title present,True,Financial year (July to June)
 B02 SVG text bounds and encoding,True,
 B02 data nonempty,True,
 B02 no infinite plotted values,True,
@@ -173,6 +194,7 @@ B03 svg exists,True,
 B03 csv exists,True,
 B03 image resolution,True,"(2160, 1440)"
 B03 SVG parses,True,
+B03 horizontal-axis title present,True,Financial year (July to June)
 B03 SVG text bounds and encoding,True,
 B03 data nonempty,True,
 B03 no infinite plotted values,True,
@@ -181,6 +203,7 @@ B04 svg exists,True,
 B04 csv exists,True,
 B04 image resolution,True,"(2160, 1620)"
 B04 SVG parses,True,
+B04 horizontal-axis title present,True,Financial year (July to June)
 B04 SVG text bounds and encoding,True,
 B04 data nonempty,True,
 B04 no infinite plotted values,True,
@@ -189,6 +212,7 @@ B05 svg exists,True,
 B05 csv exists,True,
 B05 image resolution,True,"(2160, 1620)"
 B05 SVG parses,True,
+B05 horizontal-axis title present,True,Financial year (July to June)
 B05 SVG text bounds and encoding,True,
 B05 data nonempty,True,
 B05 no infinite plotted values,True,
@@ -197,6 +221,7 @@ B06 svg exists,True,
 B06 csv exists,True,
 B06 image resolution,True,"(2160, 1620)"
 B06 SVG parses,True,
+B06 horizontal-axis title present,True,Financial year (July to June)
 B06 SVG text bounds and encoding,True,
 B06 data nonempty,True,
 B06 no infinite plotted values,True,
@@ -205,6 +230,7 @@ M01 svg exists,True,
 M01 csv exists,True,
 M01 image resolution,True,"(2160, 1440)"
 M01 SVG parses,True,
+M01 horizontal-axis title present,True,Component of the annual nominal investment return
 M01 SVG text bounds and encoding,True,
 M01 data nonempty,True,
 M01 no infinite plotted values,True,
@@ -213,6 +239,7 @@ M02 svg exists,True,
 M02 csv exists,True,
 M02 image resolution,True,"(2160, 1620)"
 M02 SVG parses,True,
+M02 horizontal-axis title present,True,Years since earning and investing the initial income
 M02 SVG text bounds and encoding,True,
 M02 data nonempty,True,
 M02 no infinite plotted values,True,
@@ -221,6 +248,7 @@ M03 svg exists,True,
 M03 csv exists,True,
 M03 image resolution,True,"(2160, 1620)"
 M03 SVG parses,True,
+M03 horizontal-axis title present,True,Years since earning and investing the initial income
 M03 SVG text bounds and encoding,True,
 M03 data nonempty,True,
 M03 no infinite plotted values,True,
@@ -229,6 +257,7 @@ M04 svg exists,True,
 M04 csv exists,True,
 M04 image resolution,True,"(2160, 1440)"
 M04 SVG parses,True,
+M04 horizontal-axis title present,True,Tax-inclusive income tax rate (%)
 M04 SVG text bounds and encoding,True,
 M04 data nonempty,True,
 M04 no infinite plotted values,True,
@@ -237,6 +266,7 @@ M05 svg exists,True,
 M05 csv exists,True,
 M05 image resolution,True,"(2160, 1620)"
 M05 SVG parses,True,
+M05 horizontal-axis title present,True,Annual real investment return (%)
 M05 SVG text bounds and encoding,True,
 M05 data nonempty,True,
 M05 no infinite plotted values,True,
@@ -245,6 +275,7 @@ M06 svg exists,True,
 M06 csv exists,True,
 M06 image resolution,True,"(2160, 1440)"
 M06 SVG parses,True,
+M06 horizontal-axis title present,True,Years since the initial investment
 M06 SVG text bounds and encoding,True,
 M06 data nonempty,True,
 M06 no infinite plotted values,True,
@@ -253,6 +284,7 @@ M07 svg exists,True,
 M07 csv exists,True,
 M07 image resolution,True,"(2160, 1440)"
 M07 SVG parses,True,
+M07 horizontal-axis title present,True,Annual cash yield (%); capital appreciation supplies the remaining return
 M07 SVG text bounds and encoding,True,
 M07 data nonempty,True,
 M07 no infinite plotted values,True,
@@ -261,6 +293,7 @@ M08 svg exists,True,
 M08 csv exists,True,
 M08 image resolution,True,"(2160, 1440)"
 M08 SVG parses,True,
+M08 horizontal-axis title present,True,Actual annual real investment return (%)
 M08 SVG text bounds and encoding,True,
 M08 data nonempty,True,
 M08 no infinite plotted values,True,
@@ -269,6 +302,7 @@ M09 svg exists,True,
 M09 csv exists,True,
 M09 image resolution,True,"(2160, 1440)"
 M09 SVG parses,True,
+M09 horizontal-axis title present,True,Years until the asset is sold
 M09 SVG text bounds and encoding,True,
 M09 data nonempty,True,
 M09 no infinite plotted values,True,
@@ -277,6 +311,7 @@ M10 svg exists,True,
 M10 csv exists,True,
 M10 image resolution,True,"(2160, 1440)"
 M10 SVG parses,True,
+M10 horizontal-axis title present,True,Annual nominal capital appreciation (%)
 M10 SVG text bounds and encoding,True,
 M10 data nonempty,True,
 M10 no infinite plotted values,True,
@@ -285,6 +320,7 @@ M11 svg exists,True,
 M11 csv exists,True,
 M11 image resolution,True,"(2160, 1440)"
 M11 SVG parses,True,
+M11 horizontal-axis title present,True,Annual nominal capital appreciation (%)
 M11 SVG text bounds and encoding,True,
 M11 data nonempty,True,
 M11 no infinite plotted values,True,
@@ -293,6 +329,7 @@ M12 svg exists,True,
 M12 csv exists,True,
 M12 image resolution,True,"(2160, 1440)"
 M12 SVG parses,True,
+M12 horizontal-axis title present,True,Annual nominal capital appreciation (%)
 M12 SVG text bounds and encoding,True,
 M12 data nonempty,True,
 M12 no infinite plotted values,True,
@@ -301,6 +338,7 @@ M13 svg exists,True,
 M13 csv exists,True,
 M13 image resolution,True,"(2160, 1440)"
 M13 SVG parses,True,
+M13 horizontal-axis title present,True,Asset holding period (years)
 M13 SVG text bounds and encoding,True,
 M13 data nonempty,True,
 M13 no infinite plotted values,True,
@@ -309,6 +347,7 @@ M14 svg exists,True,
 M14 csv exists,True,
 M14 image resolution,True,"(2520, 1440)"
 M14 SVG parses,True,
+M14 horizontal-axis title present,True,"Other annual taxable income, excluding the gain (AUD)"
 M14 SVG text bounds and encoding,True,
 M14 data nonempty,True,
 M14 no infinite plotted values,True,
@@ -317,6 +356,7 @@ M15 svg exists,True,
 M15 csv exists,True,
 M15 image resolution,True,"(2520, 1620)"
 M15 SVG parses,True,
+M15 horizontal-axis title present,True,Years of gains accumulated before sale
 M15 SVG text bounds and encoding,True,
 M15 data nonempty,True,
 M15 no infinite plotted values,True,
@@ -325,6 +365,7 @@ M16 svg exists,True,
 M16 csv exists,True,
 M16 image resolution,True,"(2520, 1800)"
 M16 SVG parses,True,
+M16 horizontal-axis title present,True,Years after 1 July 2027 until sale
 M16 SVG text bounds and encoding,True,
 M16 data nonempty,True,
 M16 no infinite plotted values,True,
@@ -333,6 +374,7 @@ R01 svg exists,True,
 R01 csv exists,True,
 R01 image resolution,True,"(2160, 1620)"
 R01 SVG parses,True,
+R01 horizontal-axis title present,True,Investment holding period (years)
 R01 SVG text bounds and encoding,True,
 R01 data nonempty,True,
 R01 no infinite plotted values,True,
@@ -341,6 +383,7 @@ R02 svg exists,True,
 R02 csv exists,True,
 R02 image resolution,True,"(2520, 1620)"
 R02 SVG parses,True,
+R02 horizontal-axis title present,True,Investment holding period (years)
 R02 SVG text bounds and encoding,True,
 R02 data nonempty,True,
 R02 no infinite plotted values,True,
@@ -349,6 +392,7 @@ R03 svg exists,True,
 R03 csv exists,True,
 R03 image resolution,True,"(2160, 1440)"
 R03 SVG parses,True,
+R03 horizontal-axis title present,True,Replacement investment annual real return (%)
 R03 SVG text bounds and encoding,True,
 R03 data nonempty,True,
 R03 no infinite plotted values,True,
@@ -357,6 +401,7 @@ R04 svg exists,True,
 R04 csv exists,True,
 R04 image resolution,True,"(2160, 1440)"
 R04 SVG parses,True,
+R04 horizontal-axis title present,True,Years until the capital loss can be used
 R04 SVG text bounds and encoding,True,
 R04 data nonempty,True,
 R04 no infinite plotted values,True,
@@ -365,6 +410,7 @@ R05 svg exists,True,
 R05 csv exists,True,
 R05 image resolution,True,"(2160, 1440)"
 R05 SVG parses,True,
+R05 horizontal-axis title present,True,Tax treatment and investment scale
 R05 SVG text bounds and encoding,True,
 R05 data nonempty,True,
 R05 no infinite plotted values,True,
@@ -373,6 +419,7 @@ R06 svg exists,True,
 R06 csv exists,True,
 R06 image resolution,True,"(2160, 1440)"
 R06 SVG parses,True,
+R06 horizontal-axis title present,True,Assumed probability of project success (%)
 R06 SVG text bounds and encoding,True,
 R06 data nonempty,True,
 R06 no infinite plotted values,True,
@@ -381,6 +428,7 @@ R07 svg exists,True,
 R07 csv exists,True,
 R07 image resolution,True,"(2160, 1800)"
 R07 SVG parses,True,
+R07 horizontal-axis title present,True,Loan as a share of the asset value (%)
 R07 SVG text bounds and encoding,True,
 R07 data nonempty,True,
 R07 no infinite plotted values,True,
@@ -389,6 +437,7 @@ R08 svg exists,True,
 R08 csv exists,True,
 R08 image resolution,True,"(2160, 1440)"
 R08 SVG parses,True,
+R08 horizontal-axis title present,True,Annual inflation rate (%)
 R08 SVG text bounds and encoding,True,
 R08 data nonempty,True,
 R08 no infinite plotted values,True,
@@ -397,6 +446,7 @@ R09 svg exists,True,
 R09 csv exists,True,
 R09 image resolution,True,"(2160, 1440)"
 R09 SVG parses,True,
+R09 horizontal-axis title present,True,Personal income tax rate (%)
 R09 SVG text bounds and encoding,True,
 R09 data nonempty,True,
 R09 no infinite plotted values,True,
@@ -405,6 +455,7 @@ R10 svg exists,True,
 R10 csv exists,True,
 R10 image resolution,True,"(2520, 1620)"
 R10 SVG parses,True,
+R10 horizontal-axis title present,True,Years after the hypothetical tax is introduced
 R10 SVG text bounds and encoding,True,
 R10 data nonempty,True,
 R10 no infinite plotted values,True,
@@ -413,6 +464,7 @@ R11 svg exists,True,
 R11 csv exists,True,
 R11 image resolution,True,"(2160, 1620)"
 R11 SVG parses,True,
+R11 horizontal-axis title present,True,One-period nominal asset return (%)
 R11 SVG text bounds and encoding,True,
 R11 data nonempty,True,
 R11 no infinite plotted values,True,
@@ -421,6 +473,7 @@ M17 svg exists,True,
 M17 csv exists,True,
 M17 image resolution,True,"(2160, 1440)"
 M17 SVG parses,True,
+M17 horizontal-axis title present,True,Assumed hours of unpaid owner work
 M17 SVG text bounds and encoding,True,
 M17 data nonempty,True,
 M17 no infinite plotted values,True,
@@ -429,6 +482,7 @@ E01 svg exists,True,
 E01 csv exists,True,
 E01 image resolution,True,"(2520, 2340)"
 E01 SVG parses,True,
+E01 horizontal-axis title present,True,Reported behavioural parameter (definition differs by panel)
 E01 SVG text bounds and encoding,True,
 E01 data nonempty,True,
 E01 no infinite plotted values,True,
@@ -437,6 +491,7 @@ E02 svg exists,True,
 E02 csv exists,True,
 E02 image resolution,True,"(2520, 1440)"
 E02 SVG parses,True,
+E02 horizontal-axis title present,True,Elasticity of realised gains with respect to the tax rate
 E02 SVG text bounds and encoding,True,
 E02 data nonempty,True,
 E02 no infinite plotted values,True,
@@ -445,6 +500,7 @@ E03 svg exists,True,
 E03 csv exists,True,
 E03 image resolution,True,"(2520, 1620)"
 E03 SVG parses,True,
+E03 horizontal-axis title present,True,Tax rate on the hypothetical gains base (%)
 E03 SVG text bounds and encoding,True,
 E03 data nonempty,True,
 E03 no infinite plotted values,True,
@@ -453,6 +509,7 @@ E04 svg exists,True,
 E04 csv exists,True,
 E04 image resolution,True,"(2520, 1620)"
 E04 SVG parses,True,
+E04 horizontal-axis title present,True,Tax rate on the hypothetical gains base (%)
 E04 SVG text bounds and encoding,True,
 E04 data nonempty,True,
 E04 no infinite plotted values,True,
@@ -461,6 +518,7 @@ E05 svg exists,True,
 E05 csv exists,True,
 E05 image resolution,True,"(2160, 1440)"
 E05 SVG parses,True,
+E05 horizontal-axis title present,True,"Local elasticity of realised gains to the tax rate, evaluated at 22%"
 E05 SVG text bounds and encoding,True,
 E05 data nonempty,True,
 E05 no infinite plotted values,True,
@@ -469,6 +527,7 @@ E06 svg exists,True,
 E06 csv exists,True,
 E06 image resolution,True,"(2160, 1440)"
 E06 SVG parses,True,
+E06 horizontal-axis title present,True,Years relative to reform (0 = first year under the new rate)
 E06 SVG text bounds and encoding,True,
 E06 data nonempty,True,
 E06 no infinite plotted values,True,
@@ -477,6 +536,7 @@ E07 svg exists,True,
 E07 csv exists,True,
 E07 image resolution,True,"(2160, 1440)"
 E07 SVG parses,True,
+E07 horizontal-axis title present,True,Units of gains disappearing from the CGT base (initial base = 100)
 E07 SVG text bounds and encoding,True,
 E07 data nonempty,True,
 E07 no infinite plotted values,True,
@@ -485,6 +545,7 @@ Q01 svg exists,True,
 Q01 csv exists,True,
 Q01 image resolution,True,"(2160, 1440)"
 Q01 SVG parses,True,
+Q01 horizontal-axis title present,True,Observation date (monthly)
 Q01 SVG text bounds and encoding,True,
 Q01 data nonempty,True,
 Q01 no infinite plotted values,True,
@@ -493,6 +554,7 @@ Q02 svg exists,True,
 Q02 csv exists,True,
 Q02 image resolution,True,"(2160, 1440)"
 Q02 SVG parses,True,
+Q02 horizontal-axis title present,True,Observation date (quarterly)
 Q02 SVG text bounds and encoding,True,
 Q02 data nonempty,True,
 Q02 no infinite plotted values,True,

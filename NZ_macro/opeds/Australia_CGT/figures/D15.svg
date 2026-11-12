@@ -29,33 +29,41 @@
 <rect x='0.00' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
 </g>
 <defs>
-  <clipPath id='cpNTMuNjJ8ODQyLjA4fDUzLjc4fDQ4MS40MQ=='>
-    <rect x='53.62' y='53.78' width='788.47' height='427.63' />
+  <clipPath id='cpNTMuNjJ8ODQyLjA4fDUzLjc4fDQ1Ny4zNA=='>
+    <rect x='53.62' y='53.78' width='788.47' height='403.56' />
   </clipPath>
 </defs>
-<g clip-path='url(#cpNTMuNjJ8ODQyLjA4fDUzLjc4fDQ4MS40MQ==)'>
-<polyline points='53.62,337.64 842.08,337.64 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='53.62,174.10 842.08,174.10 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='89.46,481.41 89.46,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='232.81,481.41 232.81,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='376.17,481.41 376.17,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='519.53,481.41 519.53,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='662.89,481.41 662.89,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='806.24,481.41 806.24,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='89.46,344.99 161.13,373.63 232.81,336.95 304.49,326.33 376.17,320.11 447.85,326.87 519.53,320.04 591.21,309.38 662.89,266.12 734.56,315.38 806.24,286.60 ' style='stroke-width: 2.13; stroke: #146B8C; stroke-linecap: butt;' />
-<polyline points='89.46,416.30 161.13,434.55 232.81,431.29 304.49,432.63 376.17,432.41 447.85,431.23 519.53,453.80 591.21,441.54 662.89,449.67 734.56,461.97 806.24,448.85 ' style='stroke-width: 2.13; stroke: #CF671D; stroke-linecap: butt;' />
-<polyline points='89.46,123.40 161.13,84.60 232.81,73.21 304.49,96.87 376.17,96.19 447.85,100.21 519.53,114.99 591.21,114.01 662.89,97.05 734.56,135.04 806.24,98.30 ' style='stroke-width: 2.13; stroke: #20836B; stroke-linecap: butt;' />
+<g clip-path='url(#cpNTMuNjJ8ODQyLjA4fDUzLjc4fDQ1Ny4zNA==)'>
+<polyline points='53.62,321.66 842.08,321.66 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='53.62,167.32 842.08,167.32 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='89.46,457.34 89.46,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='232.81,457.34 232.81,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='376.17,457.34 376.17,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='519.53,457.34 519.53,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='662.89,457.34 662.89,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='806.24,457.34 806.24,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='89.46,328.60 161.13,355.62 232.81,321.01 304.49,310.99 376.17,305.12 447.85,311.50 519.53,305.05 591.21,294.99 662.89,254.17 734.56,300.66 806.24,273.50 ' style='stroke-width: 2.13; stroke: #146B8C; stroke-linecap: butt;' />
+<polyline points='89.46,395.89 161.13,413.12 232.81,410.05 304.49,411.31 376.17,411.10 447.85,409.99 519.53,431.28 591.21,419.72 662.89,427.39 734.56,438.99 806.24,426.62 ' style='stroke-width: 2.13; stroke: #CF671D; stroke-linecap: butt;' />
+<polyline points='89.46,119.48 161.13,82.87 232.81,72.12 304.49,94.44 376.17,93.81 447.85,97.59 519.53,111.55 591.21,110.62 662.89,94.62 734.56,130.47 806.24,95.80 ' style='stroke-width: 2.13; stroke: #20836B; stroke-linecap: butt;' />
 </g>
 <g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
-<text x='48.24' y='341.07' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='19.19px' lengthAdjust='spacingAndGlyphs'>20%</text>
-<text x='48.24' y='177.53' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='19.19px' lengthAdjust='spacingAndGlyphs'>30%</text>
-<text x='89.46' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2013-14</text>
-<text x='232.81' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2015-16</text>
-<text x='376.17' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2017-18</text>
-<text x='519.53' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2019-20</text>
-<text x='662.89' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2021-22</text>
-<text x='806.24' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2023-24</text>
-<text transform='translate(23.54,267.59) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='20.67px' lengthAdjust='spacingAndGlyphs'>rate</text>
+<text x='48.24' y='325.10' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='19.19px' lengthAdjust='spacingAndGlyphs'>20%</text>
+<text x='48.24' y='170.76' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='19.19px' lengthAdjust='spacingAndGlyphs'>30%</text>
+<polyline points='53.62,457.34 842.08,457.34 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='89.46,460.33 89.46,457.34 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='232.81,460.33 232.81,457.34 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='376.17,460.33 376.17,457.34 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='519.53,460.33 519.53,457.34 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='662.89,460.33 662.89,457.34 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='806.24,460.33 806.24,457.34 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<text x='89.46' y='472.57' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2013-14</text>
+<text x='232.81' y='472.57' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2015-16</text>
+<text x='376.17' y='472.57' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2017-18</text>
+<text x='519.53' y='472.57' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2019-20</text>
+<text x='662.89' y='472.57' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2021-22</text>
+<text x='806.24' y='472.57' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2023-24</text>
+<text x='447.85' y='493.15' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='141.36px' lengthAdjust='spacingAndGlyphs'>Income year (July to June)</text>
+<text transform='translate(23.54,255.56) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='20.67px' lengthAdjust='spacingAndGlyphs'>rate</text>
 <line x1='348.52' y1='522.24' x2='362.34' y2='522.24' style='stroke-width: 2.13; stroke: #146B8C; stroke-linecap: butt;' />
 <line x1='426.22' y1='522.24' x2='440.05' y2='522.24' style='stroke-width: 2.13; stroke: #CF671D; stroke-linecap: butt;' />
 <line x1='482.10' y1='522.24' x2='495.92' y2='522.24' style='stroke-width: 2.13; stroke: #20836B; stroke-linecap: butt;' />

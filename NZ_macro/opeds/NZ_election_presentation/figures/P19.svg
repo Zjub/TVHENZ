@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1008.00pt' height='567.00pt' viewBox='0 0 1008.00 567.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw'>
+    <rect x='0.00' y='0.00' width='1008.00' height='567.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw)'>
+<rect x='0.00' y='0.00' width='1008.00' height='567.00' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNTQuOTN8OTgzLjA5fDEwMC4yMnw0NjcuMTk='>
+    <rect x='54.93' y='100.22' width='928.16' height='366.97' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTQuOTN8OTgzLjA5fDEwMC4yMnw0NjcuMTk=)'>
+<polyline points='54.93,450.51 983.09,450.51 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='54.93,394.90 983.09,394.90 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='54.93,339.30 983.09,339.30 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='54.93,283.70 983.09,283.70 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='54.93,228.10 983.09,228.10 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='54.93,172.50 983.09,172.50 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='54.93,116.90 983.09,116.90 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='97.12,172.50 237.75,172.50 378.38,228.10 519.01,228.10 659.64,283.70 800.27,283.70 940.90,339.30 ' style='stroke-width: 2.56; stroke: #444444; stroke-dasharray: 13.66,13.66; stroke-linecap: butt;' />
+<polyline points='97.12,283.70 237.75,283.70 378.38,283.70 519.01,283.70 659.64,283.70 800.27,283.70 940.90,283.70 ' style='stroke-width: 2.56; stroke: #C28000; stroke-linecap: butt;' />
+<polyline points='97.12,116.90 237.75,172.50 378.38,228.10 519.01,283.70 659.64,339.30 800.27,394.90 940.90,450.51 ' style='stroke-width: 2.56; stroke: #007C91; stroke-linecap: butt;' />
+<circle cx='97.12' cy='116.90' r='3.78' style='stroke-width: 1.16; stroke: #007C91; fill: #007C91;' />
+<circle cx='97.12' cy='283.70' r='3.78' style='stroke-width: 1.16; stroke: #C28000; fill: #C28000;' />
+<circle cx='97.12' cy='172.50' r='3.78' style='stroke-width: 1.16; stroke: #444444; fill: #444444;' />
+<circle cx='237.75' cy='172.50' r='3.78' style='stroke-width: 1.16; stroke: #007C91; fill: #007C91;' />
+<circle cx='237.75' cy='283.70' r='3.78' style='stroke-width: 1.16; stroke: #C28000; fill: #C28000;' />
+<circle cx='237.75' cy='172.50' r='3.78' style='stroke-width: 1.16; stroke: #444444; fill: #444444;' />
+<circle cx='378.38' cy='228.10' r='3.78' style='stroke-width: 1.16; stroke: #007C91; fill: #007C91;' />
+<circle cx='378.38' cy='283.70' r='3.78' style='stroke-width: 1.16; stroke: #C28000; fill: #C28000;' />
+<circle cx='378.38' cy='228.10' r='3.78' style='stroke-width: 1.16; stroke: #444444; fill: #444444;' />
+<circle cx='519.01' cy='283.70' r='3.78' style='stroke-width: 1.16; stroke: #007C91; fill: #007C91;' />
+<circle cx='519.01' cy='283.70' r='3.78' style='stroke-width: 1.16; stroke: #C28000; fill: #C28000;' />
+<circle cx='519.01' cy='228.10' r='3.78' style='stroke-width: 1.16; stroke: #444444; fill: #444444;' />
+<circle cx='659.64' cy='339.30' r='3.78' style='stroke-width: 1.16; stroke: #007C91; fill: #007C91;' />
+<circle cx='659.64' cy='283.70' r='3.78' style='stroke-width: 1.16; stroke: #C28000; fill: #C28000;' />
+<circle cx='659.64' cy='283.70' r='3.78' style='stroke-width: 1.16; stroke: #444444; fill: #444444;' />
+<circle cx='800.27' cy='394.90' r='3.78' style='stroke-width: 1.16; stroke: #007C91; fill: #007C91;' />
+<circle cx='800.27' cy='283.70' r='3.78' style='stroke-width: 1.16; stroke: #C28000; fill: #C28000;' />
+<circle cx='800.27' cy='283.70' r='3.78' style='stroke-width: 1.16; stroke: #444444; fill: #444444;' />
+<circle cx='940.90' cy='450.51' r='3.78' style='stroke-width: 1.16; stroke: #007C91; fill: #007C91;' />
+<circle cx='940.90' cy='283.70' r='3.78' style='stroke-width: 1.16; stroke: #C28000; fill: #C28000;' />
+<circle cx='940.90' cy='339.30' r='3.78' style='stroke-width: 1.16; stroke: #444444; fill: #444444;' />
+</g>
+<g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw)'>
+<text x='46.86' y='455.16' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>61</text>
+<text x='46.86' y='399.56' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>62</text>
+<text x='46.86' y='343.96' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>63</text>
+<text x='46.86' y='288.36' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>64</text>
+<text x='46.86' y='232.76' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>65</text>
+<text x='46.86' y='177.15' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>66</text>
+<text x='46.86' y='121.55' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>67</text>
+<polyline points='54.93,467.19 983.09,467.19 ' style='stroke-width: 0.64; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='97.12,471.67 97.12,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='237.75,471.67 237.75,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='378.38,471.67 378.38,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='519.01,471.67 519.01,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='659.64,471.67 659.64,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='800.27,471.67 800.27,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='940.90,471.67 940.90,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<text x='97.12' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='7.23px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='237.75' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='7.23px' lengthAdjust='spacingAndGlyphs'>1</text>
+<text x='378.38' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='7.23px' lengthAdjust='spacingAndGlyphs'>2</text>
+<text x='519.01' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='7.23px' lengthAdjust='spacingAndGlyphs'>3</text>
+<text x='659.64' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='7.23px' lengthAdjust='spacingAndGlyphs'>4</text>
+<text x='800.27' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='7.23px' lengthAdjust='spacingAndGlyphs'>5</text>
+<text x='940.90' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='7.23px' lengthAdjust='spacingAndGlyphs'>6</text>
+<text x='519.01' y='506.29' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='323.58px' lengthAdjust='spacingAndGlyphs'>National electorates switching to Labour (illustrative)</text>
+<text transform='translate(24.97,283.70) rotate(-90)' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='123.67px' lengthAdjust='spacingAndGlyphs'>Parliamentary seats</text>
+<line x1='221.29' y1='64.68' x2='235.11' y2='64.68' style='stroke-width: 2.56; stroke: #444444; stroke-dasharray: 13.66,13.66; stroke-linecap: butt;' />
+<circle cx='228.20' cy='64.68' r='3.78' style='stroke-width: 1.16; stroke: #444444; fill: #444444;' />
+<line x1='425.30' y1='64.68' x2='439.12' y2='64.68' style='stroke-width: 2.56; stroke: #C28000; stroke-linecap: butt;' />
+<circle cx='432.21' cy='64.68' r='3.78' style='stroke-width: 1.16; stroke: #C28000; fill: #C28000;' />
+<line x1='633.96' y1='64.68' x2='647.79' y2='64.68' style='stroke-width: 2.56; stroke: #007C91; stroke-linecap: butt;' />
+<circle cx='640.88' cy='64.68' r='3.78' style='stroke-width: 1.16; stroke: #007C91; fill: #007C91;' />
+<text x='245.81' y='69.69' style='font-size: 14.00px; font-family: "Arial";' textLength='168.80px' lengthAdjust='spacingAndGlyphs'>Absolute majority threshold</text>
+<text x='449.82' y='69.69' style='font-size: 14.00px; font-family: "Arial";' textLength='173.45px' lengthAdjust='spacingAndGlyphs'>Other four parties combined</text>
+<text x='658.48' y='69.69' style='font-size: 14.00px; font-family: "Arial";' textLength='159.98px' lengthAdjust='spacingAndGlyphs'>National + ACT + NZ First</text>
+<text x='14.94' y='32.84' style='font-size: 25.00px; font-weight: bold;fill: #142D40; font-family: "Arial";' textLength='673.44px' lengthAdjust='spacingAndGlyphs'>Two electorate flips alone would not reverse the majority</text>
+<text x='14.94' y='528.35' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='591.41px' lengthAdjust='spacingAndGlyphs'>Source: Electoral Commission preliminary results; mechanical scenario with fixed party-vote entitlements and National-to-Labour flips.</text>
+<text x='14.94' y='539.15' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='499.58px' lengthAdjust='spacingAndGlyphs'>Labour substitutes electorate MPs for list MPs; National loses overhang seats. This is not a special-vote forecast.</text>
+<text x='14.94' y='549.95' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='394.20px' lengthAdjust='spacingAndGlyphs'>Snapshot: 12 November 2026. Calculations and exact plotted data accompany this chart.</text>
+</g>
+</g>
+</svg>

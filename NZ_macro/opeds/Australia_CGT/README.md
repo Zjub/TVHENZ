@@ -3,6 +3,7 @@
 Research snapshot: **11 November 2026**. Independent of the New Zealand packs. This is research and reproducible illustration, not an op-ed, tax-return calculator or predetermined argument.
 
 - [Open the 62-chart gallery](figures/index.html)
+- [Ten-year worked comparison: PV taxes and METRs](ten_year_example/EXAMPLE.pdf), with [12 additional plots](ten_year_example/index.html) and a separate reproducible script
 - [Research guide and suggested reading paths](RESEARCH_GUIDE.md)
 - [Enacted rules, announcements and implementation work](POLICY_STATUS.md)
 - [Behavioural evidence, definitions and original links](processed/literature.csv)

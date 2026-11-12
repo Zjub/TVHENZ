@@ -29,31 +29,37 @@
 <rect x='0.00' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
 </g>
 <defs>
-  <clipPath id='cpNTguOTV8ODQyLjA4fDUzLjc4fDUzNC40OA=='>
-    <rect x='58.95' y='53.78' width='783.14' height='480.70' />
+  <clipPath id='cpNTguOTV8ODQyLjA4fDUzLjc4fDUxMC40MQ=='>
+    <rect x='58.95' y='53.78' width='783.14' height='456.63' />
   </clipPath>
 </defs>
-<g clip-path='url(#cpNTguOTV8ODQyLjA4fDUzLjc4fDUzNC40OA==)'>
-<polyline points='58.95,512.63 842.08,512.63 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='58.95,366.96 842.08,366.96 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='58.95,221.29 842.08,221.29 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='58.95,75.63 842.08,75.63 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='94.54,534.48 94.54,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='331.86,534.48 331.86,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='569.17,534.48 569.17,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='806.49,534.48 806.49,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='94.54,512.63 106.41,509.68 118.27,506.68 130.14,503.62 142.01,500.49 153.87,497.29 165.74,494.03 177.60,490.70 189.47,487.29 201.33,483.81 213.20,480.26 225.07,476.62 236.93,472.90 248.80,469.09 260.66,465.20 272.53,461.21 284.39,457.13 296.26,452.96 308.13,448.67 319.99,444.29 331.86,439.79 343.72,435.18 355.59,430.46 367.45,425.60 379.32,420.63 391.19,415.52 403.05,410.27 414.92,404.87 426.78,399.33 438.65,393.63 450.51,387.77 462.38,381.74 474.25,375.53 486.11,369.13 497.98,362.55 509.84,355.75 521.71,348.75 533.57,341.53 545.44,334.07 557.31,326.36 569.17,318.40 581.04,310.17 592.90,301.66 604.77,292.85 616.63,283.72 628.50,274.26 640.37,264.45 652.23,254.27 664.10,243.70 675.96,232.72 687.83,221.29 699.69,209.40 711.56,197.02 723.43,184.10 735.29,170.63 747.16,156.55 759.02,141.84 770.89,126.44 782.75,110.31 794.62,93.39 806.49,75.63 ' style='stroke-width: 2.13; stroke: #146B8C; stroke-linecap: butt;' />
+<g clip-path='url(#cpNTguOTV8ODQyLjA4fDUzLjc4fDUxMC40MQ==)'>
+<polyline points='58.95,489.65 842.08,489.65 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='58.95,351.28 842.08,351.28 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='58.95,212.91 842.08,212.91 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='58.95,74.53 842.08,74.53 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='94.54,510.41 94.54,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='331.86,510.41 331.86,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='569.17,510.41 569.17,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='806.49,510.41 806.49,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='94.54,489.65 106.41,486.86 118.27,484.00 130.14,481.09 142.01,478.12 153.87,475.09 165.74,471.99 177.60,468.82 189.47,465.59 201.33,462.28 213.20,458.90 225.07,455.45 236.93,451.91 248.80,448.30 260.66,444.60 272.53,440.81 284.39,436.94 296.26,432.97 308.13,428.90 319.99,424.74 331.86,420.47 343.72,416.09 355.59,411.60 367.45,406.99 379.32,402.26 391.19,397.40 403.05,392.42 414.92,387.29 426.78,382.03 438.65,376.61 450.51,371.05 462.38,365.32 474.25,359.42 486.11,353.34 497.98,347.09 509.84,340.63 521.71,333.98 533.57,327.12 545.44,320.03 557.31,312.72 569.17,305.15 581.04,297.34 592.90,289.25 604.77,280.88 616.63,272.21 628.50,263.22 640.37,253.91 652.23,244.24 664.10,234.19 675.96,223.76 687.83,212.91 699.69,201.61 711.56,189.84 723.43,177.58 735.29,164.78 747.16,151.41 759.02,137.43 770.89,122.80 782.75,107.48 794.62,91.41 806.49,74.53 ' style='stroke-width: 2.13; stroke: #146B8C; stroke-linecap: butt;' />
 </g>
 <g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
-<text x='53.57' y='516.06' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.86px' lengthAdjust='spacingAndGlyphs'>0%</text>
-<text x='53.57' y='370.39' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='19.19px' lengthAdjust='spacingAndGlyphs'>50%</text>
-<text x='53.57' y='224.73' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='24.52px' lengthAdjust='spacingAndGlyphs'>100%</text>
-<text x='53.57' y='79.06' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='24.52px' lengthAdjust='spacingAndGlyphs'>150%</text>
-<text x='94.54' y='546.72' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.86px' lengthAdjust='spacingAndGlyphs'>0%</text>
-<text x='331.86' y='546.72' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='19.19px' lengthAdjust='spacingAndGlyphs'>20%</text>
-<text x='569.17' y='546.72' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='19.19px' lengthAdjust='spacingAndGlyphs'>40%</text>
-<text x='806.49' y='546.72' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='19.19px' lengthAdjust='spacingAndGlyphs'>60%</text>
-<text transform='translate(23.54,294.13) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='224.08px' lengthAdjust='spacingAndGlyphs'>Equivalent tax-exclusive consumption rate</text>
+<text x='53.57' y='493.09' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.86px' lengthAdjust='spacingAndGlyphs'>0%</text>
+<text x='53.57' y='354.71' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='19.19px' lengthAdjust='spacingAndGlyphs'>50%</text>
+<text x='53.57' y='216.34' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='24.52px' lengthAdjust='spacingAndGlyphs'>100%</text>
+<text x='53.57' y='77.97' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='24.52px' lengthAdjust='spacingAndGlyphs'>150%</text>
+<polyline points='58.95,510.41 842.08,510.41 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='94.54,513.40 94.54,510.41 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='331.86,513.40 331.86,510.41 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='569.17,513.40 569.17,510.41 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='806.49,513.40 806.49,510.41 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<text x='94.54' y='525.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.86px' lengthAdjust='spacingAndGlyphs'>0%</text>
+<text x='331.86' y='525.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='19.19px' lengthAdjust='spacingAndGlyphs'>20%</text>
+<text x='569.17' y='525.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='19.19px' lengthAdjust='spacingAndGlyphs'>40%</text>
+<text x='806.49' y='525.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='19.19px' lengthAdjust='spacingAndGlyphs'>60%</text>
+<text x='450.51' y='546.22' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='176.05px' lengthAdjust='spacingAndGlyphs'>Tax-inclusive income tax rate (%)</text>
+<text transform='translate(23.54,282.09) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='224.08px' lengthAdjust='spacingAndGlyphs'>Equivalent tax-exclusive consumption rate</text>
 <text x='58.95' y='45.48' style='font-size: 11.00px; font-family: "Arial";' textLength='218.27px' lengthAdjust='spacingAndGlyphs'>Algebraic mapping, not a proposed GST rate</text>
 <text x='58.95' y='27.83' style='font-size: 18.00px; font-weight: bold; font-family: "Arial";' textLength='561.39px' lengthAdjust='spacingAndGlyphs'>M04 Matching income-inclusive and GST-style tax-exclusive rates</text>
 <text x='58.95' y='561.16' style='font-size: 9.00px; font-family: "Arial";' textLength='441.42px' lengthAdjust='spacingAndGlyphs'>Source: Model identity.  s = t / (1 - t). Australian GST is 10%; a 30% income tax is not equivalent to a 30% GST.</text>

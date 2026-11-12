@@ -1,0 +1,15 @@
+check,passed
+All assets have the same pre-tax total return,TRUE
+"At normal return, PV taxes plus PV consumption equals labour resource",TRUE
+Bank/company match under fully usable integrated credits,TRUE
+RRA and consumption tax have zero normal-return METR,TRUE
+RRA and consumption tax have matching PV tax at normal return,TRUE
+GST tax-exclusive rate is correctly matched,TRUE
+Matched project RRA and cash-flow tax PVs agree above normal as well,TRUE
+Bank terminal wealth matches closed form,TRUE
+Full-rate realised gain matches closed form,TRUE
+Indexed realised gain matches closed form,TRUE
+Coherent accrual tax gives the same outcome across assets,TRUE
+RRA unused allowance and reinvestment preserve neutrality across payout mixes,TRUE
+Deferred zero-basis labour case has no invented CPI or RRA basis,TRUE
+Every METR root meets the required after-tax return,TRUE

@@ -1,0 +1,526 @@
+measure,year,status,value,source_sheet,source_row,block
+Core Crown tax revenue,2017,Actual,75644,Fiscal Time Series,8,NZD millions
+Core Crown tax revenue,2018,Actual,80224,Fiscal Time Series,8,NZD millions
+Core Crown tax revenue,2019,Actual,86468,Fiscal Time Series,8,NZD millions
+Core Crown tax revenue,2020,Actual,85102,Fiscal Time Series,8,NZD millions
+Core Crown tax revenue,2021,Actual,97983,Fiscal Time Series,8,NZD millions
+Core Crown tax revenue,2022,Actual,108458,Fiscal Time Series,8,NZD millions
+Core Crown tax revenue,2023,Actual,112358,Fiscal Time Series,8,NZD millions
+Core Crown tax revenue,2024,Actual,120566,Fiscal Time Series,8,NZD millions
+Core Crown tax revenue,2025,Actual,121698,Fiscal Time Series,8,NZD millions
+Core Crown tax revenue,2026,Unaudited Actual,125884,Fiscal Time Series,8,NZD millions
+Core Crown tax revenue,2027,Forecast,137185,Fiscal Time Series,8,NZD millions
+Core Crown tax revenue,2028,Forecast,144493,Fiscal Time Series,8,NZD millions
+Core Crown tax revenue,2029,Forecast,153156,Fiscal Time Series,8,NZD millions
+Core Crown tax revenue,2030,Forecast,161620,Fiscal Time Series,8,NZD millions
+Core Crown tax revenue,2031,Forecast,169672,Fiscal Time Series,8,NZD millions
+Core Crown revenue,2017,Actual,81782,Fiscal Time Series,9,NZD millions
+Core Crown revenue,2018,Actual,86778,Fiscal Time Series,9,NZD millions
+Core Crown revenue,2019,Actual,93474,Fiscal Time Series,9,NZD millions
+Core Crown revenue,2020,Actual,91923,Fiscal Time Series,9,NZD millions
+Core Crown revenue,2021,Actual,104968,Fiscal Time Series,9,NZD millions
+Core Crown revenue,2022,Actual,117515,Fiscal Time Series,9,NZD millions
+Core Crown revenue,2023,Actual,123398,Fiscal Time Series,9,NZD millions
+Core Crown revenue,2024,Actual,133220,Fiscal Time Series,9,NZD millions
+Core Crown revenue,2025,Actual,134411,Fiscal Time Series,9,NZD millions
+Core Crown revenue,2026,Unaudited Actual,138649,Fiscal Time Series,9,NZD millions
+Core Crown revenue,2027,Forecast,150470,Fiscal Time Series,9,NZD millions
+Core Crown revenue,2028,Forecast,158433,Fiscal Time Series,9,NZD millions
+Core Crown revenue,2029,Forecast,167757,Fiscal Time Series,9,NZD millions
+Core Crown revenue,2030,Forecast,176803,Fiscal Time Series,9,NZD millions
+Core Crown revenue,2031,Forecast,185009,Fiscal Time Series,9,NZD millions
+Total Crown revenue,2017,Actual,103422,Fiscal Time Series,10,NZD millions
+Total Crown revenue,2018,Actual,109973,Fiscal Time Series,10,NZD millions
+Total Crown revenue,2019,Actual,119142,Fiscal Time Series,10,NZD millions
+Total Crown revenue,2020,Actual,116003,Fiscal Time Series,10,NZD millions
+Total Crown revenue,2021,Actual,129335,Fiscal Time Series,10,NZD millions
+Total Crown revenue,2022,Actual,141627,Fiscal Time Series,10,NZD millions
+Total Crown revenue,2023,Actual,153011,Fiscal Time Series,10,NZD millions
+Total Crown revenue,2024,Actual,167347,Fiscal Time Series,10,NZD millions
+Total Crown revenue,2025,Actual,169811,Fiscal Time Series,10,NZD millions
+Total Crown revenue,2026,Unaudited Actual,172334,Fiscal Time Series,10,NZD millions
+Total Crown revenue,2027,Forecast,185857,Fiscal Time Series,10,NZD millions
+Total Crown revenue,2028,Forecast,195219,Fiscal Time Series,10,NZD millions
+Total Crown revenue,2029,Forecast,205632,Fiscal Time Series,10,NZD millions
+Total Crown revenue,2030,Forecast,216681,Fiscal Time Series,10,NZD millions
+Total Crown revenue,2031,Forecast,226122,Fiscal Time Series,10,NZD millions
+Core Crown expenses,2017,Actual,76339,Fiscal Time Series,11,NZD millions
+Core Crown expenses,2018,Actual,80576,Fiscal Time Series,11,NZD millions
+Core Crown expenses,2019,Actual,86959,Fiscal Time Series,11,NZD millions
+Core Crown expenses,2020,Actual,108832,Fiscal Time Series,11,NZD millions
+Core Crown expenses,2021,Actual,107764,Fiscal Time Series,11,NZD millions
+Core Crown expenses,2022,Actual,125641,Fiscal Time Series,11,NZD millions
+Core Crown expenses,2023,Actual,127574,Fiscal Time Series,11,NZD millions
+Core Crown expenses,2024,Actual,138998,Fiscal Time Series,11,NZD millions
+Core Crown expenses,2025,Actual,141675,Fiscal Time Series,11,NZD millions
+Core Crown expenses,2026,Unaudited Actual,146219,Fiscal Time Series,11,NZD millions
+Core Crown expenses,2027,Forecast,154609,Fiscal Time Series,11,NZD millions
+Core Crown expenses,2028,Forecast,158308,Fiscal Time Series,11,NZD millions
+Core Crown expenses,2029,Forecast,163238,Fiscal Time Series,11,NZD millions
+Core Crown expenses,2030,Forecast,168642,Fiscal Time Series,11,NZD millions
+Core Crown expenses,2031,Forecast,173668,Fiscal Time Series,11,NZD millions
+Total Crown expenses,2017,Actual,99007,Fiscal Time Series,12,NZD millions
+Total Crown expenses,2018,Actual,104014,Fiscal Time Series,12,NZD millions
+Total Crown expenses,2019,Actual,111376,Fiscal Time Series,12,NZD millions
+Total Crown expenses,2020,Actual,138916,Fiscal Time Series,12,NZD millions
+Total Crown expenses,2021,Actual,133722,Fiscal Time Series,12,NZD millions
+Total Crown expenses,2022,Actual,150956,Fiscal Time Series,12,NZD millions
+Total Crown expenses,2023,Actual,161822,Fiscal Time Series,12,NZD millions
+Total Crown expenses,2024,Actual,180061,Fiscal Time Series,12,NZD millions
+Total Crown expenses,2025,Actual,183502,Fiscal Time Series,12,NZD millions
+Total Crown expenses,2026,Unaudited Actual,182691,Fiscal Time Series,12,NZD millions
+Total Crown expenses,2027,Forecast,194473,Fiscal Time Series,12,NZD millions
+Total Crown expenses,2028,Forecast,197731,Fiscal Time Series,12,NZD millions
+Total Crown expenses,2029,Forecast,203182,Fiscal Time Series,12,NZD millions
+Total Crown expenses,2030,Forecast,209950,Fiscal Time Series,12,NZD millions
+Total Crown expenses,2031,Forecast,216699,Fiscal Time Series,12,NZD millions
+Operating balance (excluding minority interests),2017,Actual,12317,Fiscal Time Series,13,NZD millions
+Operating balance (excluding minority interests),2018,Actual,8396,Fiscal Time Series,13,NZD millions
+Operating balance (excluding minority interests),2019,Actual,389,Fiscal Time Series,13,NZD millions
+Operating balance (excluding minority interests),2020,Actual,-30040,Fiscal Time Series,13,NZD millions
+Operating balance (excluding minority interests),2021,Actual,16159,Fiscal Time Series,13,NZD millions
+Operating balance (excluding minority interests),2022,Actual,-16932,Fiscal Time Series,13,NZD millions
+Operating balance (excluding minority interests),2023,Actual,5321,Fiscal Time Series,13,NZD millions
+Operating balance (excluding minority interests),2024,Actual,-8365,Fiscal Time Series,13,NZD millions
+Operating balance (excluding minority interests),2025,Actual,-4400,Fiscal Time Series,13,NZD millions
+Operating balance (excluding minority interests),2026,Unaudited Actual,1136,Fiscal Time Series,13,NZD millions
+Operating balance (excluding minority interests),2027,Forecast,-2963,Fiscal Time Series,13,NZD millions
+Operating balance (excluding minority interests),2028,Forecast,3477,Fiscal Time Series,13,NZD millions
+Operating balance (excluding minority interests),2029,Forecast,8902,Fiscal Time Series,13,NZD millions
+Operating balance (excluding minority interests),2030,Forecast,13543,Fiscal Time Series,13,NZD millions
+Operating balance (excluding minority interests),2031,Forecast,16693,Fiscal Time Series,13,NZD millions
+OBEGAL (excluding ACC),2017,Actual,4653,Fiscal Time Series,16,NZD millions
+OBEGAL (excluding ACC),2018,Actual,5942.351,Fiscal Time Series,16,NZD millions
+OBEGAL (excluding ACC),2019,Actual,8503.746,Fiscal Time Series,16,NZD millions
+OBEGAL (excluding ACC),2020,Actual,-20902.222999999998,Fiscal Time Series,16,NZD millions
+OBEGAL (excluding ACC),2021,Actual,-2558.558,Fiscal Time Series,16,NZD millions
+OBEGAL (excluding ACC),2022,Actual,-8664.022,Fiscal Time Series,16,NZD millions
+OBEGAL (excluding ACC),2023,Actual,-7198.905000000001,Fiscal Time Series,16,NZD millions
+OBEGAL (excluding ACC),2024,Actual,-8773,Fiscal Time Series,16,NZD millions
+OBEGAL (excluding ACC),2025,Actual,-9306,Fiscal Time Series,16,NZD millions
+OBEGAL (excluding ACC),2026,Unaudited Actual,-8641,Fiscal Time Series,16,NZD millions
+OBEGAL (excluding ACC),2027,Forecast,-6750,Fiscal Time Series,16,NZD millions
+OBEGAL (excluding ACC),2028,Forecast,-834,Fiscal Time Series,16,NZD millions
+OBEGAL (excluding ACC),2029,Forecast,4016,Fiscal Time Series,16,NZD millions
+OBEGAL (excluding ACC),2030,Forecast,8057,Fiscal Time Series,16,NZD millions
+OBEGAL (excluding ACC),2031,Forecast,11693,Fiscal Time Series,16,NZD millions
+OBEGAL (excluding minority interests),2017,Actual,4069,Fiscal Time Series,17,NZD millions
+OBEGAL (excluding minority interests),2018,Actual,5534,Fiscal Time Series,17,NZD millions
+OBEGAL (excluding minority interests),2019,Actual,7429,Fiscal Time Series,17,NZD millions
+OBEGAL (excluding minority interests),2020,Actual,-23057,Fiscal Time Series,17,NZD millions
+OBEGAL (excluding minority interests),2021,Actual,-4560,Fiscal Time Series,17,NZD millions
+OBEGAL (excluding minority interests),2022,Actual,-9691,Fiscal Time Series,17,NZD millions
+OBEGAL (excluding minority interests),2023,Actual,-9446,Fiscal Time Series,17,NZD millions
+OBEGAL (excluding minority interests),2024,Actual,-12854,Fiscal Time Series,17,NZD millions
+OBEGAL (excluding minority interests),2025,Actual,-13973,Fiscal Time Series,17,NZD millions
+OBEGAL (excluding minority interests),2026,Unaudited Actual,-10739,Fiscal Time Series,17,NZD millions
+OBEGAL (excluding minority interests),2027,Forecast,-8730,Fiscal Time Series,17,NZD millions
+OBEGAL (excluding minority interests),2028,Forecast,-2938,Fiscal Time Series,17,NZD millions
+OBEGAL (excluding minority interests),2029,Forecast,2062,Fiscal Time Series,17,NZD millions
+OBEGAL (excluding minority interests),2030,Forecast,6310,Fiscal Time Series,17,NZD millions
+OBEGAL (excluding minority interests),2031,Forecast,8879,Fiscal Time Series,17,NZD millions
+Core Crown residual cash,2017,Actual,2574,Fiscal Time Series,18,NZD millions
+Core Crown residual cash,2018,Actual,1346,Fiscal Time Series,18,NZD millions
+Core Crown residual cash,2019,Actual,-710,Fiscal Time Series,18,NZD millions
+Core Crown residual cash,2020,Actual,-23692,Fiscal Time Series,18,NZD millions
+Core Crown residual cash,2021,Actual,-13767,Fiscal Time Series,18,NZD millions
+Core Crown residual cash,2022,Actual,-27043,Fiscal Time Series,18,NZD millions
+Core Crown residual cash,2023,Actual,-25648,Fiscal Time Series,18,NZD millions
+Core Crown residual cash,2024,Actual,-19302,Fiscal Time Series,18,NZD millions
+Core Crown residual cash,2025,Actual,-5996,Fiscal Time Series,18,NZD millions
+Core Crown residual cash,2026,Unaudited Actual,-4892,Fiscal Time Series,18,NZD millions
+Core Crown residual cash,2027,Forecast,-21985,Fiscal Time Series,18,NZD millions
+Core Crown residual cash,2028,Forecast,-13535,Fiscal Time Series,18,NZD millions
+Core Crown residual cash,2029,Forecast,-7285,Fiscal Time Series,18,NZD millions
+Core Crown residual cash,2030,Forecast,-1782,Fiscal Time Series,18,NZD millions
+Core Crown residual cash,2031,Forecast,3298,Fiscal Time Series,18,NZD millions
+Net debt,2017,Actual,16248.604,Fiscal Time Series,19,NZD millions
+Net debt,2018,Actual,11218.778,Fiscal Time Series,19,NZD millions
+Net debt,2019,Actual,5432.286,Fiscal Time Series,19,NZD millions
+Net debt,2020,Actual,35710.486,Fiscal Time Series,19,NZD millions
+Net debt,2021,Actual,35921,Fiscal Time Series,19,NZD millions
+Net debt,2022,Actual,61850,Fiscal Time Series,19,NZD millions
+Net debt,2023,Actual,71367,Fiscal Time Series,19,NZD millions
+Net debt,2024,Actual,82197,Fiscal Time Series,19,NZD millions
+Net debt,2025,Actual,88719,Fiscal Time Series,19,NZD millions
+Net debt,2026,Unaudited Actual,91092,Fiscal Time Series,19,NZD millions
+Net debt,2027,Forecast,105751,Fiscal Time Series,19,NZD millions
+Net debt,2028,Forecast,111974,Fiscal Time Series,19,NZD millions
+Net debt,2029,Forecast,111514,Fiscal Time Series,19,NZD millions
+Net debt,2030,Forecast,105583,Fiscal Time Series,19,NZD millions
+Net debt,2031,Forecast,95298,Fiscal Time Series,19,NZD millions
+Net debt (excl. NZS Fund),2017,Actual,51548,Fiscal Time Series,20,NZD millions
+Net debt (excl. NZS Fund),2018,Actual,50763,Fiscal Time Series,20,NZD millions
+Net debt (excl. NZS Fund),2019,Actual,50822,Fiscal Time Series,20,NZD millions
+Net debt (excl. NZS Fund),2020,Actual,79930,Fiscal Time Series,20,NZD millions
+Net debt (excl. NZS Fund),2021,Actual,95188,Fiscal Time Series,20,NZD millions
+Net debt (excl. NZS Fund),2022,Actual,117115,Fiscal Time Series,20,NZD millions
+Net debt (excl. NZS Fund),2023,Actual,136268,Fiscal Time Series,20,NZD millions
+Net debt (excl. NZS Fund),2024,Actual,158255,Fiscal Time Series,20,NZD millions
+Net debt (excl. NZS Fund),2025,Actual,172926,Fiscal Time Series,20,NZD millions
+Net debt (excl. NZS Fund),2026,Unaudited Actual,184700,Fiscal Time Series,20,NZD millions
+Net debt (excl. NZS Fund),2027,Forecast,206498,Fiscal Time Series,20,NZD millions
+Net debt (excl. NZS Fund),2028,Forecast,218847,Fiscal Time Series,20,NZD millions
+Net debt (excl. NZS Fund),2029,Forecast,225086,Fiscal Time Series,20,NZD millions
+Net debt (excl. NZS Fund),2030,Forecast,226387,Fiscal Time Series,20,NZD millions
+Net debt (excl. NZS Fund),2031,Forecast,223821,Fiscal Time Series,20,NZD millions
+Gross debt1,2017,Actual,87141,Fiscal Time Series,21,NZD millions
+Gross debt1,2018,Actual,88053,Fiscal Time Series,21,NZD millions
+Gross debt1,2019,Actual,84449.361,Fiscal Time Series,21,NZD millions
+Gross debt1,2020,Actual,102257,Fiscal Time Series,21,NZD millions
+Gross debt1,2021,Actual,100835,Fiscal Time Series,21,NZD millions
+Gross debt1,2022,Actual,118950.051,Fiscal Time Series,21,NZD millions
+Gross debt1,2023,Actual,135789,Fiscal Time Series,21,NZD millions
+Gross debt1,2024,Actual,175966,Fiscal Time Series,21,NZD millions
+Gross debt1,2025,Actual,203687.799,Fiscal Time Series,21,NZD millions
+Gross debt1,2026,Unaudited Actual,227448.433,Fiscal Time Series,21,NZD millions
+Gross debt1,2027,Forecast,243425.12,Fiscal Time Series,21,NZD millions
+Gross debt1,2028,Forecast,259411.6,Fiscal Time Series,21,NZD millions
+Gross debt1,2029,Forecast,269818.6,Fiscal Time Series,21,NZD millions
+Gross debt1,2030,Forecast,273176.6,Fiscal Time Series,21,NZD millions
+Gross debt1,2031,Forecast,269018.6,Fiscal Time Series,21,NZD millions
+Net core Crown debt2,2017,Actual,59480,Fiscal Time Series,22,NZD millions
+Net core Crown debt2,2018,Actual,57495,Fiscal Time Series,22,NZD millions
+Net core Crown debt2,2019,Actual,57736,Fiscal Time Series,22,NZD millions
+Net core Crown debt2,2020,Actual,83375,Fiscal Time Series,22,NZD millions
+Net core Crown debt2,2021,Actual,102080,Fiscal Time Series,22,NZD millions
+Net core Crown debt2,2022,Actual,128873,Fiscal Time Series,22,NZD millions
+Net core Crown debt2,2023,Actual,155273,Fiscal Time Series,22,NZD millions
+Net core Crown debt2,2024,Actual,175464,Fiscal Time Series,22,NZD millions
+Net core Crown debt2,2025,Actual,182171,Fiscal Time Series,22,NZD millions
+Net core Crown debt2,2026,Unaudited Actual,186703,Fiscal Time Series,22,NZD millions
+Net core Crown debt2,2027,Forecast,209631,Fiscal Time Series,22,NZD millions
+Net core Crown debt2,2028,Forecast,222955,Fiscal Time Series,22,NZD millions
+Net core Crown debt2,2029,Forecast,230534,Fiscal Time Series,22,NZD millions
+Net core Crown debt2,2030,Forecast,232763,Fiscal Time Series,22,NZD millions
+Net core Crown debt2,2031,Forecast,229769,Fiscal Time Series,22,NZD millions
+Total assets,2017,Actual,313609,Fiscal Time Series,25,NZD millions
+Total assets,2018,Actual,339932,Fiscal Time Series,25,NZD millions
+Total assets,2019,Actual,364652,Fiscal Time Series,25,NZD millions
+Total assets,2020,Actual,393400,Fiscal Time Series,25,NZD millions
+Total assets,2021,Actual,438596,Fiscal Time Series,25,NZD millions
+Total assets,2022,Actual,501844,Fiscal Time Series,25,NZD millions
+Total assets,2023,Actual,536666,Fiscal Time Series,25,NZD millions
+Total assets,2024,Actual,570868,Fiscal Time Series,25,NZD millions
+Total assets,2025,Actual,597976,Fiscal Time Series,25,NZD millions
+Total assets,2026,Unaudited Actual,619565,Fiscal Time Series,25,NZD millions
+Total assets,2027,Forecast,635067,Fiscal Time Series,25,NZD millions
+Total assets,2028,Forecast,662043,Fiscal Time Series,25,NZD millions
+Total assets,2029,Forecast,687683,Fiscal Time Series,25,NZD millions
+Total assets,2030,Forecast,712327,Fiscal Time Series,25,NZD millions
+Total assets,2031,Forecast,734567,Fiscal Time Series,25,NZD millions
+Total liabilities,2017,Actual,197137,Fiscal Time Series,26,NZD millions
+Total liabilities,2018,Actual,204295,Fiscal Time Series,26,NZD millions
+Total liabilities,2019,Actual,221313,Fiscal Time Series,26,NZD millions
+Total liabilities,2020,Actual,277457,Fiscal Time Series,26,NZD millions
+Total liabilities,2021,Actual,281403,Fiscal Time Series,26,NZD millions
+Total liabilities,2022,Actual,327525,Fiscal Time Series,26,NZD millions
+Total liabilities,2023,Actual,345194,Fiscal Time Series,26,NZD millions
+Total liabilities,2024,Actual,379819,Fiscal Time Series,26,NZD millions
+Total liabilities,2025,Actual,408848,Fiscal Time Series,26,NZD millions
+Total liabilities,2026,Unaudited Actual,431851,Fiscal Time Series,26,NZD millions
+Total liabilities,2027,Forecast,438512,Fiscal Time Series,26,NZD millions
+Total liabilities,2028,Forecast,461971,Fiscal Time Series,26,NZD millions
+Total liabilities,2029,Forecast,478562,Fiscal Time Series,26,NZD millions
+Total liabilities,2030,Forecast,489924,Fiscal Time Series,26,NZD millions
+Total liabilities,2031,Forecast,495339,Fiscal Time Series,26,NZD millions
+Net worth,2017,Actual,116472,Fiscal Time Series,27,NZD millions
+Net worth,2018,Actual,135637,Fiscal Time Series,27,NZD millions
+Net worth,2019,Actual,143339,Fiscal Time Series,27,NZD millions
+Net worth,2020,Actual,115943,Fiscal Time Series,27,NZD millions
+Net worth,2021,Actual,157193,Fiscal Time Series,27,NZD millions
+Net worth,2022,Actual,174319,Fiscal Time Series,27,NZD millions
+Net worth,2023,Actual,191472,Fiscal Time Series,27,NZD millions
+Net worth,2024,Actual,191049,Fiscal Time Series,27,NZD millions
+Net worth,2025,Actual,189128,Fiscal Time Series,27,NZD millions
+Net worth,2026,Unaudited Actual,187714,Fiscal Time Series,27,NZD millions
+Net worth,2027,Forecast,196555,Fiscal Time Series,27,NZD millions
+Net worth,2028,Forecast,200072,Fiscal Time Series,27,NZD millions
+Net worth,2029,Forecast,209121,Fiscal Time Series,27,NZD millions
+Net worth,2030,Forecast,222403,Fiscal Time Series,27,NZD millions
+Net worth,2031,Forecast,239228,Fiscal Time Series,27,NZD millions
+Net worth attributable to the Crown,2017,Actual,110532,Fiscal Time Series,28,NZD millions
+Net worth attributable to the Crown,2018,Actual,129644,Fiscal Time Series,28,NZD millions
+Net worth attributable to the Crown,2019,Actual,136949,Fiscal Time Series,28,NZD millions
+Net worth attributable to the Crown,2020,Actual,110320,Fiscal Time Series,28,NZD millions
+Net worth attributable to the Crown,2021,Actual,151469,Fiscal Time Series,28,NZD millions
+Net worth attributable to the Crown,2022,Actual,167036,Fiscal Time Series,28,NZD millions
+Net worth attributable to the Crown,2023,Actual,183514,Fiscal Time Series,28,NZD millions
+Net worth attributable to the Crown,2024,Actual,181818,Fiscal Time Series,28,NZD millions
+Net worth attributable to the Crown,2025,Actual,179260,Fiscal Time Series,28,NZD millions
+Net worth attributable to the Crown,2026,Unaudited Actual,177203,Fiscal Time Series,28,NZD millions
+Net worth attributable to the Crown,2027,Forecast,186521,Fiscal Time Series,28,NZD millions
+Net worth attributable to the Crown,2028,Forecast,190074,Fiscal Time Series,28,NZD millions
+Net worth attributable to the Crown,2029,Forecast,199158,Fiscal Time Series,28,NZD millions
+Net worth attributable to the Crown,2030,Forecast,212795,Fiscal Time Series,28,NZD millions
+Net worth attributable to the Crown,2031,Forecast,229618,Fiscal Time Series,28,NZD millions
+Core Crown tax revenue,2017,Actual,0.274,Fiscal Time Series,34,Share GDP
+Core Crown tax revenue,2018,Actual,0.271,Fiscal Time Series,34,Share GDP
+Core Crown tax revenue,2019,Actual,0.279,Fiscal Time Series,34,Share GDP
+Core Crown tax revenue,2020,Actual,0.268,Fiscal Time Series,34,Share GDP
+Core Crown tax revenue,2021,Actual,0.285,Fiscal Time Series,34,Share GDP
+Core Crown tax revenue,2022,Actual,0.297,Fiscal Time Series,34,Share GDP
+Core Crown tax revenue,2023,Actual,0.28,Fiscal Time Series,34,Share GDP
+Core Crown tax revenue,2024,Actual,0.286,Fiscal Time Series,34,Share GDP
+Core Crown tax revenue,2025,Actual,0.28,Fiscal Time Series,34,Share GDP
+Core Crown tax revenue,2026,Unaudited Actual,0.276,Fiscal Time Series,34,Share GDP
+Core Crown tax revenue,2027,Forecast,0.286,Fiscal Time Series,34,Share GDP
+Core Crown tax revenue,2028,Forecast,0.285,Fiscal Time Series,34,Share GDP
+Core Crown tax revenue,2029,Forecast,0.288,Fiscal Time Series,34,Share GDP
+Core Crown tax revenue,2030,Forecast,0.29,Fiscal Time Series,34,Share GDP
+Core Crown tax revenue,2031,Forecast,0.291,Fiscal Time Series,34,Share GDP
+Core Crown revenue,2017,Actual,0.297,Fiscal Time Series,35,Share GDP
+Core Crown revenue,2018,Actual,0.294,Fiscal Time Series,35,Share GDP
+Core Crown revenue,2019,Actual,0.301,Fiscal Time Series,35,Share GDP
+Core Crown revenue,2020,Actual,0.289,Fiscal Time Series,35,Share GDP
+Core Crown revenue,2021,Actual,0.305,Fiscal Time Series,35,Share GDP
+Core Crown revenue,2022,Actual,0.322,Fiscal Time Series,35,Share GDP
+Core Crown revenue,2023,Actual,0.307,Fiscal Time Series,35,Share GDP
+Core Crown revenue,2024,Actual,0.317,Fiscal Time Series,35,Share GDP
+Core Crown revenue,2025,Actual,0.309,Fiscal Time Series,35,Share GDP
+Core Crown revenue,2026,Unaudited Actual,0.304,Fiscal Time Series,35,Share GDP
+Core Crown revenue,2027,Forecast,0.313,Fiscal Time Series,35,Share GDP
+Core Crown revenue,2028,Forecast,0.312,Fiscal Time Series,35,Share GDP
+Core Crown revenue,2029,Forecast,0.315,Fiscal Time Series,35,Share GDP
+Core Crown revenue,2030,Forecast,0.317,Fiscal Time Series,35,Share GDP
+Core Crown revenue,2031,Forecast,0.318,Fiscal Time Series,35,Share GDP
+Total Crown revenue,2017,Actual,0.375,Fiscal Time Series,36,Share GDP
+Total Crown revenue,2018,Actual,0.372,Fiscal Time Series,36,Share GDP
+Total Crown revenue,2019,Actual,0.384,Fiscal Time Series,36,Share GDP
+Total Crown revenue,2020,Actual,0.365,Fiscal Time Series,36,Share GDP
+Total Crown revenue,2021,Actual,0.376,Fiscal Time Series,36,Share GDP
+Total Crown revenue,2022,Actual,0.388,Fiscal Time Series,36,Share GDP
+Total Crown revenue,2023,Actual,0.381,Fiscal Time Series,36,Share GDP
+Total Crown revenue,2024,Actual,0.398,Fiscal Time Series,36,Share GDP
+Total Crown revenue,2025,Actual,0.39,Fiscal Time Series,36,Share GDP
+Total Crown revenue,2026,Unaudited Actual,0.378,Fiscal Time Series,36,Share GDP
+Total Crown revenue,2027,Forecast,0.387,Fiscal Time Series,36,Share GDP
+Total Crown revenue,2028,Forecast,0.385,Fiscal Time Series,36,Share GDP
+Total Crown revenue,2029,Forecast,0.386,Fiscal Time Series,36,Share GDP
+Total Crown revenue,2030,Forecast,0.389,Fiscal Time Series,36,Share GDP
+Total Crown revenue,2031,Forecast,0.388,Fiscal Time Series,36,Share GDP
+Core Crown expenses,2017,Actual,0.277,Fiscal Time Series,37,Share GDP
+Core Crown expenses,2018,Actual,0.273,Fiscal Time Series,37,Share GDP
+Core Crown expenses,2019,Actual,0.28,Fiscal Time Series,37,Share GDP
+Core Crown expenses,2020,Actual,0.342,Fiscal Time Series,37,Share GDP
+Core Crown expenses,2021,Actual,0.314,Fiscal Time Series,37,Share GDP
+Core Crown expenses,2022,Actual,0.344,Fiscal Time Series,37,Share GDP
+Core Crown expenses,2023,Actual,0.317,Fiscal Time Series,37,Share GDP
+Core Crown expenses,2024,Actual,0.33,Fiscal Time Series,37,Share GDP
+Core Crown expenses,2025,Actual,0.326,Fiscal Time Series,37,Share GDP
+Core Crown expenses,2026,Unaudited Actual,0.321,Fiscal Time Series,37,Share GDP
+Core Crown expenses,2027,Forecast,0.322,Fiscal Time Series,37,Share GDP
+Core Crown expenses,2028,Forecast,0.312,Fiscal Time Series,37,Share GDP
+Core Crown expenses,2029,Forecast,0.307,Fiscal Time Series,37,Share GDP
+Core Crown expenses,2030,Forecast,0.303,Fiscal Time Series,37,Share GDP
+Core Crown expenses,2031,Forecast,0.298,Fiscal Time Series,37,Share GDP
+Total Crown expenses,2017,Actual,0.359,Fiscal Time Series,38,Share GDP
+Total Crown expenses,2018,Actual,0.352,Fiscal Time Series,38,Share GDP
+Total Crown expenses,2019,Actual,0.359,Fiscal Time Series,38,Share GDP
+Total Crown expenses,2020,Actual,0.437,Fiscal Time Series,38,Share GDP
+Total Crown expenses,2021,Actual,0.389,Fiscal Time Series,38,Share GDP
+Total Crown expenses,2022,Actual,0.413,Fiscal Time Series,38,Share GDP
+Total Crown expenses,2023,Actual,0.403,Fiscal Time Series,38,Share GDP
+Total Crown expenses,2024,Actual,0.428,Fiscal Time Series,38,Share GDP
+Total Crown expenses,2025,Actual,0.422,Fiscal Time Series,38,Share GDP
+Total Crown expenses,2026,Unaudited Actual,0.401,Fiscal Time Series,38,Share GDP
+Total Crown expenses,2027,Forecast,0.405,Fiscal Time Series,38,Share GDP
+Total Crown expenses,2028,Forecast,0.39,Fiscal Time Series,38,Share GDP
+Total Crown expenses,2029,Forecast,0.382,Fiscal Time Series,38,Share GDP
+Total Crown expenses,2030,Forecast,0.377,Fiscal Time Series,38,Share GDP
+Total Crown expenses,2031,Forecast,0.372,Fiscal Time Series,38,Share GDP
+Operating balance (excluding minority interests),2017,Actual,0.045,Fiscal Time Series,39,Share GDP
+Operating balance (excluding minority interests),2018,Actual,0.028,Fiscal Time Series,39,Share GDP
+Operating balance (excluding minority interests),2019,Actual,0.001,Fiscal Time Series,39,Share GDP
+Operating balance (excluding minority interests),2020,Actual,-0.095,Fiscal Time Series,39,Share GDP
+Operating balance (excluding minority interests),2021,Actual,0.047,Fiscal Time Series,39,Share GDP
+Operating balance (excluding minority interests),2022,Actual,-0.046,Fiscal Time Series,39,Share GDP
+Operating balance (excluding minority interests),2023,Actual,0.013,Fiscal Time Series,39,Share GDP
+Operating balance (excluding minority interests),2024,Actual,-0.02,Fiscal Time Series,39,Share GDP
+Operating balance (excluding minority interests),2025,Actual,-0.01,Fiscal Time Series,39,Share GDP
+Operating balance (excluding minority interests),2026,Unaudited Actual,0.002,Fiscal Time Series,39,Share GDP
+Operating balance (excluding minority interests),2027,Forecast,-0.006,Fiscal Time Series,39,Share GDP
+Operating balance (excluding minority interests),2028,Forecast,0.007,Fiscal Time Series,39,Share GDP
+Operating balance (excluding minority interests),2029,Forecast,0.017,Fiscal Time Series,39,Share GDP
+Operating balance (excluding minority interests),2030,Forecast,0.024,Fiscal Time Series,39,Share GDP
+Operating balance (excluding minority interests),2031,Forecast,0.029,Fiscal Time Series,39,Share GDP
+OBEGAL (excluding ACC),2017,Actual,0.017,Fiscal Time Series,42,Share GDP
+OBEGAL (excluding ACC),2018,Actual,0.02,Fiscal Time Series,42,Share GDP
+OBEGAL (excluding ACC),2019,Actual,0.027,Fiscal Time Series,42,Share GDP
+OBEGAL (excluding ACC),2020,Actual,-0.066,Fiscal Time Series,42,Share GDP
+OBEGAL (excluding ACC),2021,Actual,-0.007,Fiscal Time Series,42,Share GDP
+OBEGAL (excluding ACC),2022,Actual,-0.024,Fiscal Time Series,42,Share GDP
+OBEGAL (excluding ACC),2023,Actual,-0.018,Fiscal Time Series,42,Share GDP
+OBEGAL (excluding ACC),2024,Actual,-0.021,Fiscal Time Series,42,Share GDP
+OBEGAL (excluding ACC),2025,Actual,-0.021,Fiscal Time Series,42,Share GDP
+OBEGAL (excluding ACC),2026,Unaudited Actual,-0.019,Fiscal Time Series,42,Share GDP
+OBEGAL (excluding ACC),2027,Forecast,-0.014,Fiscal Time Series,42,Share GDP
+OBEGAL (excluding ACC),2028,Forecast,-0.002,Fiscal Time Series,42,Share GDP
+OBEGAL (excluding ACC),2029,Forecast,0.008,Fiscal Time Series,42,Share GDP
+OBEGAL (excluding ACC),2030,Forecast,0.014,Fiscal Time Series,42,Share GDP
+OBEGAL (excluding ACC),2031,Forecast,0.02,Fiscal Time Series,42,Share GDP
+OBEGAL (excluding minority interests),2017,Actual,0.015,Fiscal Time Series,43,Share GDP
+OBEGAL (excluding minority interests),2018,Actual,0.019,Fiscal Time Series,43,Share GDP
+OBEGAL (excluding minority interests),2019,Actual,0.024,Fiscal Time Series,43,Share GDP
+OBEGAL (excluding minority interests),2020,Actual,-0.073,Fiscal Time Series,43,Share GDP
+OBEGAL (excluding minority interests),2021,Actual,-0.013,Fiscal Time Series,43,Share GDP
+OBEGAL (excluding minority interests),2022,Actual,-0.027,Fiscal Time Series,43,Share GDP
+OBEGAL (excluding minority interests),2023,Actual,-0.024,Fiscal Time Series,43,Share GDP
+OBEGAL (excluding minority interests),2024,Actual,-0.031,Fiscal Time Series,43,Share GDP
+OBEGAL (excluding minority interests),2025,Actual,-0.032,Fiscal Time Series,43,Share GDP
+OBEGAL (excluding minority interests),2026,Unaudited Actual,-0.024,Fiscal Time Series,43,Share GDP
+OBEGAL (excluding minority interests),2027,Forecast,-0.018,Fiscal Time Series,43,Share GDP
+OBEGAL (excluding minority interests),2028,Forecast,-0.006,Fiscal Time Series,43,Share GDP
+OBEGAL (excluding minority interests),2029,Forecast,0.004,Fiscal Time Series,43,Share GDP
+OBEGAL (excluding minority interests),2030,Forecast,0.011,Fiscal Time Series,43,Share GDP
+OBEGAL (excluding minority interests),2031,Forecast,0.015,Fiscal Time Series,43,Share GDP
+Core Crown residual cash,2017,Actual,0.009,Fiscal Time Series,44,Share GDP
+Core Crown residual cash,2018,Actual,0.005,Fiscal Time Series,44,Share GDP
+Core Crown residual cash,2019,Actual,-0.002,Fiscal Time Series,44,Share GDP
+Core Crown residual cash,2020,Actual,-0.075,Fiscal Time Series,44,Share GDP
+Core Crown residual cash,2021,Actual,-0.04,Fiscal Time Series,44,Share GDP
+Core Crown residual cash,2022,Actual,-0.074,Fiscal Time Series,44,Share GDP
+Core Crown residual cash,2023,Actual,-0.064,Fiscal Time Series,44,Share GDP
+Core Crown residual cash,2024,Actual,-0.046,Fiscal Time Series,44,Share GDP
+Core Crown residual cash,2025,Actual,-0.014,Fiscal Time Series,44,Share GDP
+Core Crown residual cash,2026,Unaudited Actual,-0.011,Fiscal Time Series,44,Share GDP
+Core Crown residual cash,2027,Forecast,-0.046,Fiscal Time Series,44,Share GDP
+Core Crown residual cash,2028,Forecast,-0.027,Fiscal Time Series,44,Share GDP
+Core Crown residual cash,2029,Forecast,-0.014,Fiscal Time Series,44,Share GDP
+Core Crown residual cash,2030,Forecast,-0.003,Fiscal Time Series,44,Share GDP
+Core Crown residual cash,2031,Forecast,0.006,Fiscal Time Series,44,Share GDP
+Net debt,2017,Actual,0.059,Fiscal Time Series,45,Share GDP
+Net debt,2018,Actual,0.038,Fiscal Time Series,45,Share GDP
+Net debt,2019,Actual,0.018,Fiscal Time Series,45,Share GDP
+Net debt,2020,Actual,0.112,Fiscal Time Series,45,Share GDP
+Net debt,2021,Actual,0.105,Fiscal Time Series,45,Share GDP
+Net debt,2022,Actual,0.169,Fiscal Time Series,45,Share GDP
+Net debt,2023,Actual,0.178,Fiscal Time Series,45,Share GDP
+Net debt,2024,Actual,0.195,Fiscal Time Series,45,Share GDP
+Net debt,2025,Actual,0.204,Fiscal Time Series,45,Share GDP
+Net debt,2026,Unaudited Actual,0.2,Fiscal Time Series,45,Share GDP
+Net debt,2027,Forecast,0.22,Fiscal Time Series,45,Share GDP
+Net debt,2028,Forecast,0.221,Fiscal Time Series,45,Share GDP
+Net debt,2029,Forecast,0.209,Fiscal Time Series,45,Share GDP
+Net debt,2030,Forecast,0.189,Fiscal Time Series,45,Share GDP
+Net debt,2031,Forecast,0.164,Fiscal Time Series,45,Share GDP
+Net debt (excl. NZS Fund),2017,Actual,0.187,Fiscal Time Series,46,Share GDP
+Net debt (excl. NZS Fund),2018,Actual,0.172,Fiscal Time Series,46,Share GDP
+Net debt (excl. NZS Fund),2019,Actual,0.164,Fiscal Time Series,46,Share GDP
+Net debt (excl. NZS Fund),2020,Actual,0.251,Fiscal Time Series,46,Share GDP
+Net debt (excl. NZS Fund),2021,Actual,0.277,Fiscal Time Series,46,Share GDP
+Net debt (excl. NZS Fund),2022,Actual,0.321,Fiscal Time Series,46,Share GDP
+Net debt (excl. NZS Fund),2023,Actual,0.339,Fiscal Time Series,46,Share GDP
+Net debt (excl. NZS Fund),2024,Actual,0.376,Fiscal Time Series,46,Share GDP
+Net debt (excl. NZS Fund),2025,Actual,0.397,Fiscal Time Series,46,Share GDP
+Net debt (excl. NZS Fund),2026,Unaudited Actual,0.405,Fiscal Time Series,46,Share GDP
+Net debt (excl. NZS Fund),2027,Forecast,0.43,Fiscal Time Series,46,Share GDP
+Net debt (excl. NZS Fund),2028,Forecast,0.431,Fiscal Time Series,46,Share GDP
+Net debt (excl. NZS Fund),2029,Forecast,0.423,Fiscal Time Series,46,Share GDP
+Net debt (excl. NZS Fund),2030,Forecast,0.406,Fiscal Time Series,46,Share GDP
+Net debt (excl. NZS Fund),2031,Forecast,0.384,Fiscal Time Series,46,Share GDP
+Gross debt1,2017,Actual,0.316,Fiscal Time Series,47,Share GDP
+Gross debt1,2018,Actual,0.298,Fiscal Time Series,47,Share GDP
+Gross debt1,2019,Actual,0.272,Fiscal Time Series,47,Share GDP
+Gross debt1,2020,Actual,0.322,Fiscal Time Series,47,Share GDP
+Gross debt1,2021,Actual,0.293,Fiscal Time Series,47,Share GDP
+Gross debt1,2022,Actual,0.326,Fiscal Time Series,47,Share GDP
+Gross debt1,2023,Actual,0.338,Fiscal Time Series,47,Share GDP
+Gross debt1,2024,Actual,0.418,Fiscal Time Series,47,Share GDP
+Gross debt1,2025,Actual,0.468,Fiscal Time Series,47,Share GDP
+Gross debt1,2026,Unaudited Actual,0.499,Fiscal Time Series,47,Share GDP
+Gross debt1,2027,Forecast,0.507,Fiscal Time Series,47,Share GDP
+Gross debt1,2028,Forecast,0.511,Fiscal Time Series,47,Share GDP
+Gross debt1,2029,Forecast,0.507,Fiscal Time Series,47,Share GDP
+Gross debt1,2030,Forecast,0.49,Fiscal Time Series,47,Share GDP
+Gross debt1,2031,Forecast,0.462,Fiscal Time Series,47,Share GDP
+Net core Crown debt2,2017,Actual,0.216,Fiscal Time Series,48,Share GDP
+Net core Crown debt2,2018,Actual,0.195,Fiscal Time Series,48,Share GDP
+Net core Crown debt2,2019,Actual,0.186,Fiscal Time Series,48,Share GDP
+Net core Crown debt2,2020,Actual,0.262,Fiscal Time Series,48,Share GDP
+Net core Crown debt2,2021,Actual,0.297,Fiscal Time Series,48,Share GDP
+Net core Crown debt2,2022,Actual,0.353,Fiscal Time Series,48,Share GDP
+Net core Crown debt2,2023,Actual,0.386,Fiscal Time Series,48,Share GDP
+Net core Crown debt2,2024,Actual,0.417,Fiscal Time Series,48,Share GDP
+Net core Crown debt2,2025,Actual,0.419,Fiscal Time Series,48,Share GDP
+Net core Crown debt2,2026,Unaudited Actual,0.41,Fiscal Time Series,48,Share GDP
+Net core Crown debt2,2027,Forecast,0.437,Fiscal Time Series,48,Share GDP
+Net core Crown debt2,2028,Forecast,0.439,Fiscal Time Series,48,Share GDP
+Net core Crown debt2,2029,Forecast,0.433,Fiscal Time Series,48,Share GDP
+Net core Crown debt2,2030,Forecast,0.418,Fiscal Time Series,48,Share GDP
+Net core Crown debt2,2031,Forecast,0.395,Fiscal Time Series,48,Share GDP
+Total assets,2017,Actual,1.138,Fiscal Time Series,51,Share GDP
+Total assets,2018,Actual,1.15,Fiscal Time Series,51,Share GDP
+Total assets,2019,Actual,1.176,Fiscal Time Series,51,Share GDP
+Total assets,2020,Actual,1.238,Fiscal Time Series,51,Share GDP
+Total assets,2021,Actual,1.276,Fiscal Time Series,51,Share GDP
+Total assets,2022,Actual,1.374,Fiscal Time Series,51,Share GDP
+Total assets,2023,Actual,1.336,Fiscal Time Series,51,Share GDP
+Total assets,2024,Actual,1.356,Fiscal Time Series,51,Share GDP
+Total assets,2025,Actual,1.374,Fiscal Time Series,51,Share GDP
+Total assets,2026,Unaudited Actual,1.359,Fiscal Time Series,51,Share GDP
+Total assets,2027,Forecast,1.323,Fiscal Time Series,51,Share GDP
+Total assets,2028,Forecast,1.305,Fiscal Time Series,51,Share GDP
+Total assets,2029,Forecast,1.292,Fiscal Time Series,51,Share GDP
+Total assets,2030,Forecast,1.278,Fiscal Time Series,51,Share GDP
+Total assets,2031,Forecast,1.261,Fiscal Time Series,51,Share GDP
+Total liabilities,2017,Actual,0.715,Fiscal Time Series,52,Share GDP
+Total liabilities,2018,Actual,0.691,Fiscal Time Series,52,Share GDP
+Total liabilities,2019,Actual,0.714,Fiscal Time Series,52,Share GDP
+Total liabilities,2020,Actual,0.873,Fiscal Time Series,52,Share GDP
+Total liabilities,2021,Actual,0.819,Fiscal Time Series,52,Share GDP
+Total liabilities,2022,Actual,0.897,Fiscal Time Series,52,Share GDP
+Total liabilities,2023,Actual,0.859,Fiscal Time Series,52,Share GDP
+Total liabilities,2024,Actual,0.902,Fiscal Time Series,52,Share GDP
+Total liabilities,2025,Actual,0.94,Fiscal Time Series,52,Share GDP
+Total liabilities,2026,Unaudited Actual,0.947,Fiscal Time Series,52,Share GDP
+Total liabilities,2027,Forecast,0.913,Fiscal Time Series,52,Share GDP
+Total liabilities,2028,Forecast,0.91,Fiscal Time Series,52,Share GDP
+Total liabilities,2029,Forecast,0.899,Fiscal Time Series,52,Share GDP
+Total liabilities,2030,Forecast,0.879,Fiscal Time Series,52,Share GDP
+Total liabilities,2031,Forecast,0.851,Fiscal Time Series,52,Share GDP
+Net worth,2017,Actual,0.422,Fiscal Time Series,53,Share GDP
+Net worth,2018,Actual,0.459,Fiscal Time Series,53,Share GDP
+Net worth,2019,Actual,0.462,Fiscal Time Series,53,Share GDP
+Net worth,2020,Actual,0.365,Fiscal Time Series,53,Share GDP
+Net worth,2021,Actual,0.457,Fiscal Time Series,53,Share GDP
+Net worth,2022,Actual,0.477,Fiscal Time Series,53,Share GDP
+Net worth,2023,Actual,0.477,Fiscal Time Series,53,Share GDP
+Net worth,2024,Actual,0.454,Fiscal Time Series,53,Share GDP
+Net worth,2025,Actual,0.435,Fiscal Time Series,53,Share GDP
+Net worth,2026,Unaudited Actual,0.412,Fiscal Time Series,53,Share GDP
+Net worth,2027,Forecast,0.409,Fiscal Time Series,53,Share GDP
+Net worth,2028,Forecast,0.394,Fiscal Time Series,53,Share GDP
+Net worth,2029,Forecast,0.393,Fiscal Time Series,53,Share GDP
+Net worth,2030,Forecast,0.399,Fiscal Time Series,53,Share GDP
+Net worth,2031,Forecast,0.411,Fiscal Time Series,53,Share GDP
+Net worth attributable to the Crown,2017,Actual,0.401,Fiscal Time Series,54,Share GDP
+Net worth attributable to the Crown,2018,Actual,0.439,Fiscal Time Series,54,Share GDP
+Net worth attributable to the Crown,2019,Actual,0.442,Fiscal Time Series,54,Share GDP
+Net worth attributable to the Crown,2020,Actual,0.347,Fiscal Time Series,54,Share GDP
+Net worth attributable to the Crown,2021,Actual,0.441,Fiscal Time Series,54,Share GDP
+Net worth attributable to the Crown,2022,Actual,0.457,Fiscal Time Series,54,Share GDP
+Net worth attributable to the Crown,2023,Actual,0.457,Fiscal Time Series,54,Share GDP
+Net worth attributable to the Crown,2024,Actual,0.432,Fiscal Time Series,54,Share GDP
+Net worth attributable to the Crown,2025,Actual,0.412,Fiscal Time Series,54,Share GDP
+Net worth attributable to the Crown,2026,Unaudited Actual,0.389,Fiscal Time Series,54,Share GDP
+Net worth attributable to the Crown,2027,Forecast,0.388,Fiscal Time Series,54,Share GDP
+Net worth attributable to the Crown,2028,Forecast,0.375,Fiscal Time Series,54,Share GDP
+Net worth attributable to the Crown,2029,Forecast,0.374,Fiscal Time Series,54,Share GDP
+Net worth attributable to the Crown,2030,Forecast,0.382,Fiscal Time Series,54,Share GDP
+Net worth attributable to the Crown,2031,Forecast,0.394,Fiscal Time Series,54,Share GDP
+Nominal expenditure GDP (revised)3,2017,Actual,275691,Fiscal Time Series,30,NZD millions
+Nominal expenditure GDP (revised)3,2018,Actual,295491,Fiscal Time Series,30,NZD millions
+Nominal expenditure GDP (revised)3,2019,Actual,310174,Fiscal Time Series,30,NZD millions
+Nominal expenditure GDP (revised)3,2020,Actual,317875,Fiscal Time Series,30,NZD millions
+Nominal expenditure GDP (revised)3,2021,Actual,343739,Fiscal Time Series,30,NZD millions
+Nominal expenditure GDP (revised)3,2022,Actual,365304,Fiscal Time Series,30,NZD millions
+Nominal expenditure GDP (revised)3,2023,Actual,401827,Fiscal Time Series,30,NZD millions
+Nominal expenditure GDP (revised)3,2024,Actual,420858,Fiscal Time Series,30,NZD millions
+Nominal expenditure GDP (revised)3,2025,Actual,435071,Fiscal Time Series,30,NZD millions
+Nominal expenditure GDP (revised)3,2026,Unaudited Actual,455882,Fiscal Time Series,30,NZD millions
+Nominal expenditure GDP (revised)3,2027,Forecast,480119,Fiscal Time Series,30,NZD millions
+Nominal expenditure GDP (revised)3,2028,Forecast,507501,Fiscal Time Series,30,NZD millions
+Nominal expenditure GDP (revised)3,2029,Forecast,532347,Fiscal Time Series,30,NZD millions
+Nominal expenditure GDP (revised)3,2030,Forecast,557351,Fiscal Time Series,30,NZD millions
+Nominal expenditure GDP (revised)3,2031,Forecast,582358,Fiscal Time Series,30,NZD millions

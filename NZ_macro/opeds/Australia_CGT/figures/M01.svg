@@ -29,34 +29,39 @@
 <rect x='0.00' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
 </g>
 <defs>
-  <clipPath id='cpNjMuNzR8ODQyLjA4fDUzLjc4fDUxMi4yMw=='>
-    <rect x='63.74' y='53.78' width='778.34' height='458.45' />
+  <clipPath id='cpNjMuNzR8ODQyLjA4fDUzLjc4fDQ4OC4xNg=='>
+    <rect x='63.74' y='53.78' width='778.34' height='434.38' />
   </clipPath>
 </defs>
-<g clip-path='url(#cpNjMuNzR8ODQyLjA4fDUzLjc4fDUxMi4yMw==)'>
-<polyline points='63.74,491.39 842.08,491.39 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='63.74,389.74 842.08,389.74 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='63.74,288.08 842.08,288.08 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='63.74,186.43 842.08,186.43 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='63.74,84.78 842.08,84.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='209.68,512.23 209.68,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='452.91,512.23 452.91,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='696.14,512.23 696.14,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<rect x='361.70' y='237.26' width='182.42' height='254.13' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
-<rect x='604.93' y='178.81' width='182.42' height='312.58' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
-<rect x='118.47' y='74.62' width='182.42' height='416.77' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
+<g clip-path='url(#cpNjMuNzR8ODQyLjA4fDUzLjc4fDQ4OC4xNg==)'>
+<polyline points='63.74,468.42 842.08,468.42 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='63.74,372.10 842.08,372.10 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='63.74,275.78 842.08,275.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='63.74,179.47 842.08,179.47 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='63.74,83.15 842.08,83.15 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='209.68,488.16 209.68,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='452.91,488.16 452.91,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='696.14,488.16 696.14,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<rect x='361.70' y='227.63' width='182.42' height='240.79' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
+<rect x='604.93' y='172.24' width='182.42' height='296.17' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
+<rect x='118.47' y='73.52' width='182.42' height='394.89' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
 </g>
 <g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
-<text x='58.36' y='494.82' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>$0</text>
-<text x='58.36' y='393.17' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>$1,000</text>
-<text x='58.36' y='291.52' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>$2,000</text>
-<text x='58.36' y='189.87' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>$3,000</text>
-<text x='58.36' y='88.22' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>$4,000</text>
-<text x='209.68' y='524.48' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='58.62px' lengthAdjust='spacingAndGlyphs'>Excess return</text>
-<text x='452.91' y='524.48' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='33.58px' lengthAdjust='spacingAndGlyphs'>Inflation</text>
-<text x='452.91' y='534.84' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='59.67px' lengthAdjust='spacingAndGlyphs'>compensation</text>
-<text x='696.14' y='524.48' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='79.36px' lengthAdjust='spacingAndGlyphs'>Real normal return</text>
-<text transform='translate(23.54,283.00) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='28.69px' lengthAdjust='spacingAndGlyphs'>value</text>
+<text x='58.36' y='471.85' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='10.66px' lengthAdjust='spacingAndGlyphs'>$0</text>
+<text x='58.36' y='375.53' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>$1,000</text>
+<text x='58.36' y='279.22' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>$2,000</text>
+<text x='58.36' y='182.90' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>$3,000</text>
+<text x='58.36' y='86.59' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>$4,000</text>
+<polyline points='63.74,488.16 842.08,488.16 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='209.68,491.15 209.68,488.16 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='452.91,491.15 452.91,488.16 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='696.14,491.15 696.14,488.16 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<text x='209.68' y='503.40' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='58.62px' lengthAdjust='spacingAndGlyphs'>Excess return</text>
+<text x='452.91' y='503.40' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='33.58px' lengthAdjust='spacingAndGlyphs'>Inflation</text>
+<text x='452.91' y='513.77' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='59.67px' lengthAdjust='spacingAndGlyphs'>compensation</text>
+<text x='696.14' y='503.40' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='79.36px' lengthAdjust='spacingAndGlyphs'>Real normal return</text>
+<text x='452.91' y='534.34' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='276.09px' lengthAdjust='spacingAndGlyphs'>Component of the annual nominal investment return</text>
+<text transform='translate(23.54,270.97) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='28.69px' lengthAdjust='spacingAndGlyphs'>value</text>
 <text x='63.74' y='45.48' style='font-size: 11.00px; font-family: "Arial";' textLength='394.69px' lengthAdjust='spacingAndGlyphs'>Hypothetical scenario, not an estimate of reform revenue or household behaviour</text>
 <text x='63.74' y='27.83' style='font-size: 18.00px; font-weight: bold; font-family: "Arial";' textLength='554.34px' lengthAdjust='spacingAndGlyphs'>M01 Inflation, the normal return, and excess returns are separate</text>
 <text x='63.74' y='549.28' style='font-size: 9.00px; font-family: "Arial";' textLength='575.00px' lengthAdjust='spacingAndGlyphs'>Source: Model parameters and 02_models.R.  $100k principal; inflation 2.5%, real normal return 3%, excess real return 4pp. Uses exact nominal</text>

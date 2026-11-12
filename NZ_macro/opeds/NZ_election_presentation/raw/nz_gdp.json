@@ -1,0 +1,720 @@
+{
+  "DateTaxonomyTerm": {
+    "ID": "8351",
+    "ClassName": "DateTaxonomyTerm",
+    "Date": null,
+    "DisplayName": "Gross domestic product: June 2026 quarter",
+    "DateFormat": "F Y",
+    "DateString": "17 September 2026",
+    "PublicationDate": "2026-09-17 10:45:00"
+  },
+  "ID": "80606",
+  "Title": "Gross domestic product: June 2026 quarter",
+  "ClassName": "BlockPage",
+  "BackgroundColor": "white",
+  "FeaturedMedia": {
+    "ID": 135124,
+    "SeriesData": [
+      {
+        "ID": 35784,
+        "Title": "Quarterly growth",
+        "ClassName": "SeriesGroup",
+        "Type": "column",
+        "GraphCsvData": "\"Quarter\",\"Dec 2022\",\"Mar 2023\",\"Jun 2023\",\"Sep 2023\",\"Dec 2023\",\"Mar 2024\",\"Jun 2024\",\"Sep 2024\",\"Dec 2024\",\"Mar 2025\",\"Jun 2025\",\"Sep 2025\",\"Dec 2025\",\"Mar 2026\",\"Jun 2026\"\n\"Quarterly growth (%)\",0.3,-0.1,0.9,0.1,0.5,0,-0.5,-1.2,0.1,0.8,-0.6,0.9,0.5,0.9,0.2\n"
+      },
+      {
+        "ID": 35785,
+        "Title": "Annual growth",
+        "ClassName": "SeriesGroup",
+        "Type": "line",
+        "GraphCsvData": "\"Quarter\",\"Dec 2022\",\"Mar 2023\",\"Jun 2023\",\"Sep 2023\",\"Dec 2023\",\"Mar 2024\",\"Jun 2024\",\"Sep 2024\",\"Dec 2024\",\"Mar 2025\",\"Jun 2025\",\"Sep 2025\",\"Dec 2025\",\"Mar 2026\",\"Jun 2026\"\n\"Annual growth (%)\",2.7,3.4,4.1,2.6,2.2,1.8,1.1,0.4,-0.3,-0.9,-1.1,-0.5,0.3,0.9,1.7\n"
+      }
+    ],
+    "GraphType": "columnLine",
+    "GraphHeading": "Gross domestic product, quarterly and annual growth rates, chain volume, December 2022\u2013June 2026",
+    "ClassName": "GraphTableBlock"
+  },
+  "FeaturedText": "<p>Gross domestic product (GDP) provides a snapshot of the performance of the economy. GDP is New Zealand\u2019s official measure of economic growth.</p>",
+  "IsPublishing": false,
+  "MediaPosition": "",
+  "PageLayout": "info",
+  "PageLink": "/information-releases/gross-domestic-product-june-2026-quarter/",
+  "PageDate": "2026-09-17 10:45:00",
+  "TagPosition": "bottom",
+  "MetaDescription": "Gross domestic product rose 0.2 percent in the June 2026 quarter compared with the March 2026 quarter.",
+  "PageBreadcrumbs": [
+    {
+      "Title": "Home",
+      "MenuTitle": "Home",
+      "Link": "/"
+    },
+    {
+      "Title": "Information releases",
+      "MenuTitle": "Information releases",
+      "Link": "/information-releases/"
+    },
+    {
+      "Title": "Gross domestic product: June 2026 quarter",
+      "MenuTitle": "Gross domestic product: June 2026 quarter",
+      "Link": "/information-releases/gross-domestic-product-june-2026-quarter/"
+    }
+  ],
+  "SiteBanner": [],
+  "PageBlocks": [
+    {
+      "ID": "1102",
+      "Title": "Description gross domestic product GDP",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<p><span class=\"intro\">Gross domestic product (GDP) provides a snapshot of the performance of the economy. GDP is New Zealand\u2019s official measure of economic growth.<a name=\"download\"></a></span></p>"
+    },
+    {
+      "ID": "135165",
+      "Title": "Gross domestic product: June 2026 quarter \u2013 download data",
+      "ClassName": "DocumentBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "BlockDocuments": [
+        {
+          "ID": "124375",
+          "ClassName": "SilverStripe\\Assets\\File",
+          "Name": "gross-domestic-product-june-2026-quarter.xlsx",
+          "FileName": "gross-domestic-product-june-2026-quarter.xlsx",
+          "Title": "Gross domestic product: June 2026 quarter",
+          "ShowInSearch": 1,
+          "ParentID": 124002,
+          "OwnerID": 37,
+          "DocumentLink": "/assets/Uploads/Gross-domestic-product/Gross-domestic-product-June-2026-quarter/Download-data/gross-domestic-product-june-2026-quarter.xlsx",
+          "DocumentCategory": "document",
+          "DocumentExtension": "xlsx",
+          "DocumentFileType": "Excel spreadsheet",
+          "DocumentIcon": "/_resources/vendor/silverstripe/framework/client/images/app_icons/document_92.png?m=1793625165",
+          "DocumentSize": "279 KB",
+          "DocumentPreviewImage": false
+        },
+        {
+          "ID": "124376",
+          "ClassName": "SilverStripe\\Assets\\File",
+          "Name": "gross-domestic-product-june-2026-quarter.csv",
+          "FileName": "gross-domestic-product-june-2026-quarter.csv",
+          "Title": "Gross domestic product: June 2026 quarter \u2013 CSV",
+          "ShowInSearch": 1,
+          "ParentID": 124002,
+          "OwnerID": 37,
+          "DocumentLink": "/assets/Uploads/Gross-domestic-product/Gross-domestic-product-June-2026-quarter/Download-data/gross-domestic-product-june-2026-quarter.csv",
+          "DocumentCategory": "document",
+          "DocumentExtension": "csv",
+          "DocumentFileType": "Comma Separated Values",
+          "DocumentIcon": "/_resources/vendor/silverstripe/framework/client/images/app_icons/document_92.png?m=1793625165",
+          "DocumentSize": "20 MB",
+          "DocumentPreviewImage": false
+        },
+        {
+          "ID": "124377",
+          "ClassName": "SilverStripe\\Assets\\File",
+          "Name": "gross-domestic-product-june-2026-quarter-current-price-income-and-expenditure.xlsx",
+          "FileName": "gross-domestic-product-june-2026-quarter-current-price-income-and-expenditure.xlsx",
+          "Title": "Gross domestic product: June 2026 quarter \u2013 current price income and expenditure",
+          "ShowInSearch": 1,
+          "ParentID": 124002,
+          "OwnerID": 37,
+          "DocumentLink": "/assets/Uploads/Gross-domestic-product/Gross-domestic-product-June-2026-quarter/Download-data/gross-domestic-product-june-2026-quarter-current-price-income-and-expenditure.xlsx",
+          "DocumentCategory": "document",
+          "DocumentExtension": "xlsx",
+          "DocumentFileType": "Excel spreadsheet",
+          "DocumentIcon": "/_resources/vendor/silverstripe/framework/client/images/app_icons/document_92.png?m=1793625165",
+          "DocumentSize": "49 KB",
+          "DocumentPreviewImage": false
+        },
+        {
+          "ID": "124385",
+          "ClassName": "SilverStripe\\Assets\\File",
+          "Name": "gross-domestic-product-june-2026-quarter-supplementary-tables.xlsx",
+          "FileName": "gross-domestic-product-june-2026-quarter-supplementary-tables.xlsx",
+          "Title": "Gross domestic product: June 2026 quarter \u2013 supplementary tables",
+          "ShowInSearch": 1,
+          "ParentID": 124002,
+          "OwnerID": 37,
+          "DocumentLink": "/assets/Uploads/Gross-domestic-product/Gross-domestic-product-June-2026-quarter/Download-data/gross-domestic-product-june-2026-quarter-supplementary-tables.xlsx",
+          "DocumentCategory": "document",
+          "DocumentExtension": "xlsx",
+          "DocumentFileType": "Excel spreadsheet",
+          "DocumentIcon": "/_resources/vendor/silverstripe/framework/client/images/app_icons/document_92.png?m=1793625165",
+          "DocumentSize": "333 KB",
+          "DocumentPreviewImage": false
+        },
+        {
+          "ID": "124379",
+          "ClassName": "SilverStripe\\Assets\\File",
+          "Name": "gross-domestic-product-june-2026-quarter-visualisation.csv",
+          "FileName": "gross-domestic-product-june-2026-quarter-visualisation.csv",
+          "Title": "Gross domestic product: June 2026 quarter \u2013 visualisation CSV",
+          "ShowInSearch": 1,
+          "ParentID": 124002,
+          "OwnerID": 37,
+          "DocumentLink": "/assets/Uploads/Gross-domestic-product/Gross-domestic-product-June-2026-quarter/Download-data/gross-domestic-product-june-2026-quarter-visualisation.csv",
+          "DocumentCategory": "document",
+          "DocumentExtension": "csv",
+          "DocumentFileType": "Comma Separated Values",
+          "DocumentIcon": "/_resources/vendor/silverstripe/framework/client/images/app_icons/document_92.png?m=1793625165",
+          "DocumentSize": "781 KB",
+          "DocumentPreviewImage": false
+        }
+      ],
+      "Heading": "Download data",
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      },
+      "Presentation": null
+    },
+    {
+      "ID": "135169",
+      "Title": "Gross domestic product: June 2026 quarter \u2013 key facts 1",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>Key facts</h2>\n<p>All movements are in seasonally adjusted chain-volume terms (adjusted for price inflation) unless otherwise stated.</p>\n<p>In the June 2026 quarter, compared with the March 2026 quarter:</p>\n<ul>\n<li>GDP rose 0.2 percent</li>\n<li>expenditure on GDP rose 0.4 percent</li>\n<li>GDP per capita rose 0.1 percent</li>\n<li>real gross national disposable income fell 0.4 percent.</li>\n</ul>\n<p>The following movements are in seasonally adjusted nominal terms (not adjusted for price inflation).</p>\n<p>In the June 2026 quarter, compared with the March 2026 quarter:</p>\n<ul>\n<li>expenditure on GDP rose 0.5 percent</li>\n<li>income GDP rose 0.6 percent.</li>\n</ul>\n<h2>New Zealand economy up in June 2026 quarter</h2>\n<p>Economic activity rose 0.2 percent in the June 2026 quarter as measured by gross domestic product. This follows a 0.9 percent rise in the March 2026 quarter. GDP rose 1.7 percent over the year ended June 2026, compared with the year ended June 2025.</p>\n<p>Expenditure on GDP rose 0.4 percent in the June 2026 quarter, following a 1.1 percent rise in the March 2026 quarter. Expenditure on GDP rose 2.2 percent over the year ended June 2026, compared with the year ended June 2025.</p>"
+    },
+    {
+      "ID": "135124",
+      "Title": "GDP June 2026 qtr \u2013 g1 \u2013 Gross domestic product, quarterly and annual growth rates, chain volume, December 2022\u2013June 2026",
+      "ClassName": "GraphTableBlock",
+      "ShowBlockTitle": 0,
+      "DefaultView": "Grid",
+      "xAxisTitle": "Quarter",
+      "yAxisTitle": "Percent",
+      "yAxisDualRightTitle": null,
+      "GraphMetadata": null,
+      "SeriesData": [
+        {
+          "ID": 35784,
+          "Title": "Quarterly growth",
+          "ClassName": "SeriesGroup",
+          "Type": "column",
+          "GraphCsvData": "\"Quarter\",\"Dec 2022\",\"Mar 2023\",\"Jun 2023\",\"Sep 2023\",\"Dec 2023\",\"Mar 2024\",\"Jun 2024\",\"Sep 2024\",\"Dec 2024\",\"Mar 2025\",\"Jun 2025\",\"Sep 2025\",\"Dec 2025\",\"Mar 2026\",\"Jun 2026\"\n\"Quarterly growth (%)\",0.3,-0.1,0.9,0.1,0.5,0,-0.5,-1.2,0.1,0.8,-0.6,0.9,0.5,0.9,0.2\n"
+        },
+        {
+          "ID": 35785,
+          "Title": "Annual growth",
+          "ClassName": "SeriesGroup",
+          "Type": "line",
+          "GraphCsvData": "\"Quarter\",\"Dec 2022\",\"Mar 2023\",\"Jun 2023\",\"Sep 2023\",\"Dec 2023\",\"Mar 2024\",\"Jun 2024\",\"Sep 2024\",\"Dec 2024\",\"Mar 2025\",\"Jun 2025\",\"Sep 2025\",\"Dec 2025\",\"Mar 2026\",\"Jun 2026\"\n\"Annual growth (%)\",2.7,3.4,4.1,2.6,2.2,1.8,1.1,0.4,-0.3,-0.9,-1.1,-0.5,0.3,0.9,1.7\n"
+        }
+      ],
+      "GraphType": "columnLine",
+      "Presentation": "graphTable",
+      "GraphHeading": "Gross domestic product, quarterly and annual growth rates, chain volume, December 2022\u2013June 2026",
+      "showLegend": true,
+      "SourceCredit": "Stats NZ",
+      "Footnote": "Seasonally adjusted chain-volume quarterly growth.",
+      "GeoLevelView": null,
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      }
+    },
+    {
+      "ID": "135170",
+      "Title": "Gross domestic product: June 2026 quarter \u2013 key facts 2",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>Growth and contribution to growth by industry group, June 2026 quarter</h2>\n<p>The following three graphs show the growth, contribution to growth, and economic share of the primary, goods-producing, and services industries to GDP for the June 2026 quarter.</p>"
+    },
+    {
+      "ID": "135130",
+      "Title": "GDP June 2026 qtr \u2013 g2 \u2013 GDP growth by industry group, June 2026 quarter",
+      "ClassName": "GraphTableBlock",
+      "ShowBlockTitle": 0,
+      "DefaultView": "Grid",
+      "xAxisTitle": "Industry group",
+      "yAxisTitle": "Percent",
+      "yAxisDualRightTitle": null,
+      "GraphMetadata": null,
+      "SeriesData": [
+        {
+          "ID": 35786,
+          "Title": "GDP growth by industry group, June 2026 quarter",
+          "ClassName": "SeriesGroup",
+          "Type": "column",
+          "GraphCsvData": "\"Industry group\",\"Primary\",\"Goods-producing\",\"Services\"\n\"Growth (%)\",-0.3,1.3,0.2\n"
+        }
+      ],
+      "GraphType": "column",
+      "Presentation": "graphTable",
+      "GraphHeading": "GDP growth by industry group, June 2026 quarter",
+      "showLegend": false,
+      "SourceCredit": "Stats NZ",
+      "Footnote": "Seasonally adjusted chain-volume quarterly growth.",
+      "GeoLevelView": null,
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      }
+    },
+    {
+      "ID": "135129",
+      "Title": "GDP June 2026 qtr \u2013 g3 \u2013 Contribution to GDP growth, by industry group, June 2026 quarter",
+      "ClassName": "GraphTableBlock",
+      "ShowBlockTitle": 0,
+      "DefaultView": "Grid",
+      "xAxisTitle": "Industry group",
+      "yAxisTitle": "Percent",
+      "yAxisDualRightTitle": null,
+      "GraphMetadata": null,
+      "SeriesData": [
+        {
+          "ID": 35787,
+          "Title": "Contribution to GDP growth, by industry group, June 2026 quarter",
+          "ClassName": "SeriesGroup",
+          "Type": "column",
+          "GraphCsvData": "\"Industry group\",\"Primary\",\"Goods-producing\",\"Services\"\n\"Contribution (%)\",-0.01,0.23,0.14\n"
+        }
+      ],
+      "GraphType": "column",
+      "Presentation": "graphTable",
+      "GraphHeading": "Contribution to GDP growth, by industry group, June 2026 quarter",
+      "showLegend": false,
+      "SourceCredit": "Stats NZ",
+      "Footnote": "\u200e ",
+      "GeoLevelView": null,
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      }
+    },
+    {
+      "ID": "135128",
+      "Title": "GDP June 2026 qtr \u2013 g4 \u2013 Share of the economy by industry group, year ended March 2024",
+      "ClassName": "GraphTableBlock",
+      "ShowBlockTitle": 0,
+      "DefaultView": "Grid",
+      "xAxisTitle": null,
+      "yAxisTitle": null,
+      "yAxisDualRightTitle": null,
+      "GraphMetadata": null,
+      "SeriesData": [
+        {
+          "ID": 35788,
+          "Title": "Share of the economy by industry group, year ended March 2024",
+          "ClassName": "SeriesGroup",
+          "Type": "pie",
+          "GraphCsvData": "\"Industry groups\",\"Share (%)\"\n\"Primary\",5.2\n\"Goods-producing\",20.4\n\"Services\",74.4\n"
+        }
+      ],
+      "GraphType": "pie",
+      "Presentation": "graphTable",
+      "GraphHeading": "Share of the economy by industry group, year ended March 2024",
+      "showLegend": true,
+      "SourceCredit": "Stats NZ",
+      "Footnote": null,
+      "GeoLevelView": null,
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      }
+    },
+    {
+      "ID": "135171",
+      "Title": "Gross domestic product: June 2026 quarter \u2013 key facts 3",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<p>The headline measure of GDP is directly seasonally adjusted. Differences between the sum of components and total GDP are due to the contribution of unallocated taxes and statistical effects created by processes of chain linking and seasonal adjustment.</p>\n<h2>Breakdown of GDP by production</h2>\n<table class=\"stats-striped\" style=\"border-collapse: collapse; width: 100%; white-space: normal; margin-bottom: 1.474rem; border-spacing: 0px;\" cellspacing=\"0\" cellpadding=\"0\" width=\"94%\"><caption><strong>Table 1, Quarterly and annual average percentage change in GDP, by industry in chain volume terms, March 2026 and June 2026 quarters</strong></caption>\n<tbody>\n<tr>\n<td width=\"204\" valign=\"top\">&nbsp;</td>\n<td width=\"93\" valign=\"bottom\">\n<p align=\"center\"><strong>March 2026 quarter (updated)</strong></p>\n</td>\n<td width=\"104\" valign=\"bottom\">\n<p align=\"center\"><strong>June 2026 quarter</strong></p>\n</td>\n<td width=\"186\" valign=\"bottom\">\n<p align=\"center\"><strong>Annual average (growth over YE June 2026)</strong></p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p>Agriculture, forestry, and fishing</p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\">1.2</p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\">-0.3</p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\">1.7</p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p>Mining</p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\">-11.0</p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\">-0.4</p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\">-5.6</p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p><strong>Primary industries</strong></p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\"><strong>-0.4</strong></p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\"><strong>-0.3</strong></p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\"><strong>0.7</strong></p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p>Manufacturing</p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\">1.9</p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\">0.4</p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\">1.8</p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p>Electricity, gas, water, and waste services</p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\">0.0</p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\">0.5</p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\">3.9</p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p>Construction</p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\">-0.1</p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\">2.7</p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\">-1.1</p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p><strong>Goods-producing industries</strong></p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\"><strong>0.9</strong></p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\"><strong>1.3</strong></p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\"><strong>1.0</strong></p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p>Wholesale trade</p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\">2.6</p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\">1.3</p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\">5.8</p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p>Retail trade and accommodation</p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\">1.0</p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\">-1.0</p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\">3.5</p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p>Transport, postal, and warehousing</p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\">0.6</p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\">-1.7</p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\">0.8</p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p>Information media and telecommunications</p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\">-0.5</p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\">1.7</p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\">0.2</p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p>Financial and insurance services</p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\">-0.7</p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\">0.3</p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\">0.2</p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p>Rental, hiring, and real estate</p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\">0.2</p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\">0.3</p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\">1.5</p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p>Business services</p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\">1.3</p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\">0.0</p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\">2.8</p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p>Public administration and safety</p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\">-0.4</p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\">2.0</p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\">2.9</p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p>Education and training</p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\">0.1</p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\">0.1</p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\">-0.5</p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p>Healthcare and social assistance</p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\">1.0</p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\">0.8</p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\">1.6</p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p>Arts, recreation, and other services</p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\">-0.5</p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\">-0.8</p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\">1.2</p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p><strong>Service industries</strong></p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\"><strong>0.5</strong></p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\"><strong>0.2</strong></p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\"><strong>1.9</strong></p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p><strong>Unallocated taxes</strong></p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\"><strong>2.4</strong></p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\"><strong>-0.2</strong></p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\"><strong>2.4</strong></p>\n</td>\n</tr>\n<tr>\n<td width=\"204\" valign=\"top\">\n<p><strong>Gross domestic product</strong></p>\n</td>\n<td width=\"93\" valign=\"top\">\n<p align=\"center\"><strong>0.9</strong></p>\n</td>\n<td width=\"104\" valign=\"top\">\n<p align=\"center\"><strong>0.2</strong></p>\n</td>\n<td width=\"186\" valign=\"top\">\n<p align=\"center\"><strong>1.7</strong></p>\n</td>\n</tr>\n<tr>\n<td colspan=\"4\" width=\"587\" valign=\"top\">\n<p><strong>Note: </strong>For the June 2026 quarter, the measures of average annual growth compare activity over the most recent year (sum of activity in September 2025 to June 2026 quarters) with activity over the previous year (sum of activity in September 2024 to June 2025 quarters).</p>\n<p><span style=\"font-size: 1em;\"><br>YE \u2013 year ended</span></p>\n</td>\n</tr>\n</tbody>\n</table>"
+    },
+    {
+      "ID": "135127",
+      "Title": "GDP June 2026 qtr \u2013 g5 \u2013 Contribution to change in production of GDP (%), by industry, March 2026-June 2026 quarters",
+      "ClassName": "GraphTableBlock",
+      "ShowBlockTitle": 0,
+      "DefaultView": "Grid",
+      "xAxisTitle": "Industry",
+      "yAxisTitle": "Percent",
+      "yAxisDualRightTitle": null,
+      "GraphMetadata": null,
+      "SeriesData": [
+        {
+          "ID": 35789,
+          "Title": "Contribution to change in production of GDP (%), by industry, March 2026\u2013June 2026 quarters",
+          "ClassName": "SeriesGroup",
+          "Type": "bar",
+          "GraphCsvData": "Industry,Construction,Public admin and safety,Health care and social assistance,Wholesale trade,\"Rental, hiring, and real estate services\",Manufacturing,Information media and telecommunications,Financial and insurance services,\"Electricity, gas, water, and waste services\",Business services,Education and training,Mining,\"Agriculture,\u00a0forestry,\u00a0and\u00a0fishing\",Arts and recreation services,Retail trade and accommodation,\"Transport, postal, and warehousing\"\r\nPercent,0.18,0.09,0.06,0.06,0.05,0.04,0.03,0.02,0.01,0,0,0,-0.01,-0.03,-0.07,-0.07\r\n"
+        }
+      ],
+      "GraphType": "bar",
+      "Presentation": "graphTable",
+      "GraphHeading": "Contribution to change in production of GDP (%), by industry, March 2026\u2013June 2026 quarters",
+      "showLegend": false,
+      "SourceCredit": "Stats NZ",
+      "Footnote": "Seasonally adjusted chain volume series 2009/2010 prices.",
+      "GeoLevelView": null,
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      }
+    },
+    {
+      "ID": "135172",
+      "Title": "Gross domestic product: June 2026 quarter \u2013 key facts 4",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h3>Upwards drivers \u2013 change in production</h3>\n<p>Construction was up 2.7 percent, driven by:</p>\n<ul>\n<li>construction services</li>\n<li>residential building construction.</li>\n</ul>\n<p>Public administration and safety was up 2.0 percent, driven by:</p>\n<ul>\n<li>central government administration and justice.</li>\n</ul>\n<p>Health care and social assistance was up 0.8 percent, driven by:</p>\n<ul>\n<li>central government health care and social assistance</li>\n<li>private sector residential care services and social assistance.</li>\n</ul>\n<p>Wholesale trade was up 1.3 percent, driven by:</p>\n<ul>\n<li>machinery and equipment wholesaling</li>\n<li>other goods wholesaling.</li>\n</ul>\n<h3>Downwards drivers \u2013 change in production</h3>\n<p>Transport, postal, and warehousing was down 1.7 percent, driven by:</p>\n<ul>\n<li>road transport</li>\n<li>transport support services.</li>\n</ul>\n<p>Retail trade and accommodation was down 1.0 percent, driven by:</p>\n<ul>\n<li>accommodation</li>\n<li>food and beverage services.</li>\n</ul>\n<h2>Breakdown of GDP by expenditure</h2>\n<table class=\"stats-striped\" style=\"border-collapse: collapse; width: 100%; white-space: normal; margin-bottom: 1.474rem; border-spacing: 0px;\" cellspacing=\"0\" cellpadding=\"0\" width=\"99%\"><caption><strong>Table 2, Quarterly and annual average percentage change in GDP, by expenditure in chain volume terms, March 2026 and June 2026 quarters</strong></caption>\n<tbody>\n<tr>\n<td width=\"188\" valign=\"top\">&nbsp;</td>\n<td width=\"127\" valign=\"bottom\">\n<p align=\"center\"><strong>March 2026 quarter (updated)</strong></p>\n</td>\n<td width=\"109\" valign=\"bottom\">\n<p align=\"center\"><strong>June 2026 quarter</strong></p>\n</td>\n<td width=\"196\" valign=\"bottom\">\n<p align=\"center\"><strong>Annual average (growth over YE June 2026)</strong></p>\n</td>\n</tr>\n<tr>\n<td width=\"188\" valign=\"top\">\n<p>Household final consumption expenditure</p>\n</td>\n<td width=\"127\" valign=\"top\">\n<p align=\"center\">0.6</p>\n</td>\n<td width=\"109\" valign=\"top\">\n<p align=\"center\">0.1</p>\n</td>\n<td width=\"196\" valign=\"top\">\n<p align=\"center\">1.3</p>\n</td>\n</tr>\n<tr>\n<td width=\"188\" valign=\"top\">\n<p>Non-profit organisations serving households</p>\n</td>\n<td width=\"127\" valign=\"top\">\n<p align=\"center\">-0.6</p>\n</td>\n<td width=\"109\" valign=\"top\">\n<p align=\"center\">-0.5</p>\n</td>\n<td width=\"196\" valign=\"top\">\n<p align=\"center\">-2.4</p>\n</td>\n</tr>\n<tr>\n<td width=\"188\" valign=\"top\">\n<p><strong>Private consumption expenditure</strong></p>\n</td>\n<td width=\"127\" valign=\"top\">\n<p align=\"center\"><strong>0.6</strong></p>\n</td>\n<td width=\"109\" valign=\"top\">\n<p align=\"center\"><strong>0.0</strong></p>\n</td>\n<td width=\"196\" valign=\"top\">\n<p align=\"center\"><strong>1.3</strong></p>\n</td>\n</tr>\n<tr>\n<td width=\"188\" valign=\"top\">\n<p>Central government final consumption expenditure</p>\n</td>\n<td width=\"127\" valign=\"top\">\n<p align=\"center\">0.8</p>\n</td>\n<td width=\"109\" valign=\"top\">\n<p align=\"center\">-2.0</p>\n</td>\n<td width=\"196\" valign=\"top\">\n<p align=\"center\">4.0</p>\n</td>\n</tr>\n<tr>\n<td width=\"188\" valign=\"top\">\n<p>Local government final consumption expenditure</p>\n</td>\n<td width=\"127\" valign=\"top\">\n<p align=\"center\">2.1</p>\n</td>\n<td width=\"109\" valign=\"top\">\n<p align=\"center\">0.4</p>\n</td>\n<td width=\"196\" valign=\"top\">\n<p align=\"center\">4.8</p>\n</td>\n</tr>\n<tr>\n<td width=\"188\" valign=\"top\">\n<p><strong>General government expenditure</strong></p>\n</td>\n<td width=\"127\" valign=\"top\">\n<p align=\"center\"><strong>0.9</strong></p>\n</td>\n<td width=\"109\" valign=\"top\">\n<p align=\"center\"><strong>-1.7</strong></p>\n</td>\n<td width=\"196\" valign=\"top\">\n<p align=\"center\"><strong>4.1</strong></p>\n</td>\n</tr>\n<tr>\n<td width=\"188\" valign=\"top\">\n<p>Gross fixed capital formation</p>\n</td>\n<td width=\"127\" valign=\"top\">\n<p align=\"center\">2.8</p>\n</td>\n<td width=\"109\" valign=\"top\">\n<p align=\"center\">1.5</p>\n</td>\n<td width=\"196\" valign=\"top\">\n<p align=\"center\">2.3</p>\n</td>\n</tr>\n<tr>\n<td width=\"188\" valign=\"top\">\n<p><strong>Gross capital formation</strong></p>\n</td>\n<td width=\"127\" valign=\"top\">\n<p align=\"center\"><strong>2.5</strong></p>\n</td>\n<td width=\"109\" valign=\"top\">\n<p align=\"center\"><strong>-1.0</strong></p>\n</td>\n<td width=\"196\" valign=\"top\">\n<p align=\"center\"><strong>3.7</strong></p>\n</td>\n</tr>\n<tr>\n<td width=\"188\" valign=\"top\">\n<p><strong>Gross national expenditure</strong></p>\n</td>\n<td width=\"127\" valign=\"top\">\n<p align=\"center\"><strong>1.1</strong></p>\n</td>\n<td width=\"109\" valign=\"top\">\n<p align=\"center\"><strong>-0.5</strong></p>\n</td>\n<td width=\"196\" valign=\"top\">\n<p align=\"center\"><strong>2.4</strong></p>\n</td>\n</tr>\n<tr>\n<td width=\"188\" valign=\"top\">\n<p>Exports of goods and services</p>\n</td>\n<td width=\"127\" valign=\"top\">\n<p align=\"center\">2.2</p>\n</td>\n<td width=\"109\" valign=\"top\">\n<p align=\"center\">3.3</p>\n</td>\n<td width=\"196\" valign=\"top\">\n<p align=\"center\">6.1</p>\n</td>\n</tr>\n<tr>\n<td width=\"188\" valign=\"top\">\n<p>(Less) imports of goods and services</p>\n</td>\n<td width=\"127\" valign=\"top\">\n<p align=\"center\">3.3</p>\n</td>\n<td width=\"109\" valign=\"top\">\n<p align=\"center\">-0.8</p>\n</td>\n<td width=\"196\" valign=\"top\">\n<p align=\"center\">6.8</p>\n</td>\n</tr>\n<tr>\n<td width=\"188\" valign=\"top\">\n<p><strong>Expenditure on gross domestic product</strong></p>\n</td>\n<td width=\"127\" valign=\"top\">\n<p align=\"center\"><strong>1.1</strong></p>\n</td>\n<td width=\"109\" valign=\"top\">\n<p align=\"center\"><strong>0.4</strong></p>\n</td>\n<td width=\"196\" valign=\"top\">\n<p align=\"center\"><strong>2.2</strong></p>\n</td>\n</tr>\n<tr>\n<td colspan=\"4\" width=\"620\" valign=\"top\">\n<p><strong>Note:</strong> For the June 2026 quarter, the measures of average annual growth compare activity over the most recent year (sum of activity in September 2025 to June 2026 quarters) with activity over the previous year (sum of activity in September 2024 to June 2025 quarters).<br><br>YE \u2013 year ended</p>\n</td>\n</tr>\n</tbody>\n</table>"
+    },
+    {
+      "ID": "135126",
+      "Title": "GDP June 2026 qtr \u2013 g6 \u2013 Contribution to change in expenditure on GDP (%), by component, March 2026-June 2026 quarters",
+      "ClassName": "GraphTableBlock",
+      "ShowBlockTitle": 0,
+      "DefaultView": "Grid",
+      "xAxisTitle": "Component",
+      "yAxisTitle": "Percent",
+      "yAxisDualRightTitle": null,
+      "GraphMetadata": null,
+      "SeriesData": [
+        {
+          "ID": 35790,
+          "Title": "Contribution to change in expenditure on GDP (%), by component, March 2026\u2013June 2026 quarters",
+          "ClassName": "SeriesGroup",
+          "Type": "bar",
+          "GraphCsvData": "\"Component\",\"Exports of goods and services\",\"Gross fixed capital formation, residential buildings\",\"Imports of goods and services\",\"Gross fixed capital formation, business investment\",\"Private final consumption expenditure\",\"General government final consumption expenditure\"\n\"Percent\",0.85,0.28,0.23,0.05,0.02,-0.38\n"
+        }
+      ],
+      "GraphType": "bar",
+      "Presentation": "graphTable",
+      "GraphHeading": "Contribution to change in expenditure on GDP (%), by component, March 2026\u2013June 2026 quarters",
+      "showLegend": false,
+      "SourceCredit": "Stats NZ",
+      "Footnote": "Seasonally adjusted chain volume series in 2009/2010 prices.",
+      "GeoLevelView": null,
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      }
+    },
+    {
+      "ID": "135173",
+      "Title": "Gross domestic product: June 2026 quarter \u2013 key facts 5",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h3>Upwards drivers \u2013 change in expenditure</h3>\n<p>Exports of goods and services was up 3.3 percent, driven by:</p>\n<ul>\n<li>meat products</li>\n<li>other food, beverages, and tobacco</li>\n<li>dairy products.</li>\n</ul>\n<p>Gross fixed capital formation was up 1.5 percent, driven by:</p>\n<ul>\n<li>residential buildings</li>\n<li>intangible fixed assets</li>\n<li>plant, machinery, and equipment.</li>\n</ul>\n<p>Imports of goods and services was down 0.8 percent (a fall in imports has an upwards contribution to expenditure on GDP), driven by:</p>\n<ul>\n<li>travel services</li>\n<li>imports of intermediate goods.</li>\n</ul>\n<h3>Downwards drivers \u2013 change in expenditure</h3>\n<p>Change in inventories decreased by $289 million, driven by:</p>\n<ul>\n<li>distribution</li>\n<li>manufacturing.</li>\n</ul>\n<p>Central government final consumption expenditure was down 2.0 percent, driven by:</p>\n<ul>\n<li>intermediate consumption plus taxes on production</li>\n<li>social benefits in kind</li>\n<li>an increase in sales (an increase in sales has a downwards contribution to the overall movement).</li>\n</ul>\n<h2>New Zealand\u2019s real purchasing power falls in the June 2026 quarter</h2>\n<p>In the June 2026 quarter, compared with the March 2026 quarter:</p>\n<ul>\n<li>real gross national disposable income fell 0.4 percent</li>\n<li>real gross national disposable income per capita fell 0.6 percent.</li>\n</ul>\n<p>In the year ended June 2026, compared with the year ended June 2025:</p>\n<ul>\n<li>annual real gross national disposable income rose 2.5 percent</li>\n<li>annual real gross national disposable income per capita rose 1.9 percent.</li>\n</ul>\n<p>While GDP measures economic activity, real gross national disposable income (RGNDI) measures the volumes of goods and services that New Zealand residents have command over, that is, the real purchasing power of the country\u2019s disposable income. RGNDI is also affected by changes in the terms of trade, the country\u2019s net investment income, and net transfer flows with the rest of the world.</p>\n<p>New Zealand\u2019s ability to buy goods and services from its income, RGNDI, fell 0.4 percent in the June 2026 quarter. Net transfer flows increased, terms of trade decreased, and net investment income on our international investments increased.</p>\n<p>Over the June 2026 quarter, export prices rose 3.5 percent, while import prices rose 13.8 percent, resulting in a decrease in the terms of trade. A decrease in the terms of trade results in more exports being needed to pay for a given volume of imports. This means that residents can purchase fewer goods and services by volume from the income generated from a given level of domestic production.</p>\n<p>The 0.4 percent decrease in RGNDI, coupled with a population increase of 0.2 percent over the quarter, decreased RGNDI per capita by 0.6 percent in the quarter.</p>\n<p>Annually, RGNDI rose 2.5 percent over the year to June 2026 while RGNDI per capita rose 1.9 percent over the year.</p>\n<h2>New Zealand and trade partners, June 2026 quarter</h2>\n<table class=\"stats-striped\" style=\"border-collapse: collapse; width: 100%; white-space: normal; margin-bottom: 1.474rem;\" cellspacing=\"0\" cellpadding=\"0\"><caption><strong>Table 3, Percentage changes in GDP, international comparisons in chain volume terms, June 2026 quarter and with same quarter previous year (June 2025 quarter)</strong></caption>\n<tbody>\n<tr>\n<td width=\"143\" valign=\"bottom\">\n<p>Country</p>\n</td>\n<td width=\"248\" valign=\"bottom\">\n<p align=\"center\"><strong>Quarterly % change in GDP, June 2026 quarter</strong></p>\n</td>\n<td width=\"209\" valign=\"bottom\">\n<p align=\"center\"><strong>% change from same quarter previous year</strong></p>\n</td>\n</tr>\n<tr>\n<td width=\"143\" valign=\"top\">\n<p><strong>New Zealand</strong></p>\n</td>\n<td width=\"248\" valign=\"top\">\n<p align=\"center\"><strong>0.2</strong></p>\n</td>\n<td width=\"209\" valign=\"top\">\n<p align=\"center\"><strong>2.6</strong></p>\n</td>\n</tr>\n<tr>\n<td width=\"143\" valign=\"top\">\n<p>Australia</p>\n</td>\n<td width=\"248\" valign=\"top\">\n<p align=\"center\">0.4</p>\n</td>\n<td width=\"209\" valign=\"top\">\n<p align=\"center\">2.1</p>\n</td>\n</tr>\n<tr>\n<td width=\"143\" valign=\"top\">\n<p>Canada</p>\n</td>\n<td width=\"248\" valign=\"top\">\n<p align=\"center\">0.8</p>\n</td>\n<td width=\"209\" valign=\"top\">\n<p align=\"center\">1.1</p>\n</td>\n</tr>\n<tr>\n<td width=\"143\" valign=\"top\">\n<p>China</p>\n</td>\n<td width=\"248\" valign=\"top\">\n<p align=\"center\">0.9</p>\n</td>\n<td width=\"209\" valign=\"top\">\n<p align=\"center\">4.3</p>\n</td>\n</tr>\n<tr>\n<td width=\"143\" valign=\"top\">\n<p>Euro area</p>\n</td>\n<td width=\"248\" valign=\"top\">\n<p align=\"center\">0.6</p>\n</td>\n<td width=\"209\" valign=\"top\">\n<p align=\"center\">1.2</p>\n</td>\n</tr>\n<tr>\n<td width=\"143\" valign=\"top\">\n<p>European Union</p>\n</td>\n<td width=\"248\" valign=\"top\">\n<p align=\"center\">0.5</p>\n</td>\n<td width=\"209\" valign=\"top\">\n<p align=\"center\">2.3</p>\n</td>\n</tr>\n<tr>\n<td width=\"143\" valign=\"top\">\n<p>Japan</p>\n</td>\n<td width=\"248\" valign=\"top\">\n<p align=\"center\">0.4</p>\n</td>\n<td width=\"209\" valign=\"top\">\n<p align=\"center\">0.7</p>\n</td>\n</tr>\n<tr>\n<td width=\"143\" valign=\"top\">\n<p>OECD \u2013 total</p>\n</td>\n<td width=\"248\" valign=\"top\">\n<p align=\"center\">0.5</p>\n</td>\n<td width=\"209\" valign=\"top\">\n<p align=\"center\">2.3</p>\n</td>\n</tr>\n<tr>\n<td width=\"143\" valign=\"top\">\n<p>United Kingdom</p>\n</td>\n<td width=\"248\" valign=\"top\">\n<p align=\"center\">0.4</p>\n</td>\n<td width=\"209\" valign=\"top\">\n<p align=\"center\">1.2</p>\n</td>\n</tr>\n<tr>\n<td width=\"143\" valign=\"top\">\n<p>United States</p>\n</td>\n<td width=\"248\" valign=\"top\">\n<p align=\"center\">0.4</p>\n</td>\n<td width=\"209\" valign=\"top\">\n<p align=\"center\">2.1</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"3\" width=\"600\" valign=\"top\">\n<p>Data as at 15 September 2026. See <a href=\"https://stats.oecd.org/\">OECD.Stat</a> for GDP data covering other countries. Take care when comparing New Zealand\u2019s GDP figures with those of other countries, as the methodology used varies internationally. Stats NZ publishes both \u2018average annual growth\u2019 and \u2018year-on-year\u2019 (change from same quarter previous year) GDP growth rates. \u2018Average annual growth\u2019 is Stats NZ\u2019s preferred measure, but it is not available from the OECD website for all countries each quarter.<br><br>For more information on average annual growth and year-on-year growth, see <a href=\"https://datainfoplus.stats.govt.nz/Item/nz.govt.stats/9a9295f6-ce5f-4c71-8462-ba6dd01f4dc7?&amp;_ga=2.40369250.1392587584.1663017663-1796918034.1635296758#/nz.govt.stats/771b4b3c-fc19-4e78-a0e8-cbc63509b36b\">DataInfo+</a>.</p>\n</td>\n</tr>\n</tbody>\n</table>\n<h2>Quarterly nominal expenditure GDP, June 2026 quarter</h2>\n<p>The following movements are in seasonally adjusted nominal terms (not adjusted for price inflation) unless otherwise stated.</p>\n<p>Seasonally adjusted nominal expenditure GDP rose 0.5 percent in the June 2026 quarter. The size of the economy was $455 billion for the year ended June 2026.</p>\n<h2>Nominal income GDP rises</h2>\n<p>Nominal income GDP rose 0.6 percent in the June 2026 quarter, following a 1.8 percent rise in the March 2026 quarter. The drivers were:</p>\n<ul>\n<li>compensation of employees, up 1.0 percent</li>\n<li>taxes on production and imports, up 1.2 percent.</li>\n</ul>\n<h2>Breakdown of GDP by income</h2>\n<table class=\"stats-striped\" style=\"border-collapse: collapse; width: 100%; white-space: normal; margin-bottom: 1.474rem;\" cellspacing=\"0\" cellpadding=\"0\"><caption><strong>Table 4, Quarterly and annual average percentage change in GDP, by income in nominal terms, March 2026 and June 2026 quarters</strong></caption>\n<tbody>\n<tr>\n<td width=\"177\" valign=\"bottom\">&nbsp;</td>\n<td width=\"125\" valign=\"bottom\">\n<p align=\"center\"><strong>March 2026 quarter (updated)</strong></p>\n</td>\n<td width=\"106\" valign=\"bottom\">\n<p align=\"center\"><strong>June 2026 quarter</strong></p>\n</td>\n<td width=\"192\" valign=\"bottom\">\n<p align=\"center\"><strong>Annual average (growth over YE June 2026)</strong></p>\n</td>\n</tr>\n<tr>\n<td width=\"177\" valign=\"top\">\n<p>Compensation of employees</p>\n</td>\n<td width=\"125\" valign=\"top\">\n<p align=\"center\">1.3</p>\n</td>\n<td width=\"106\" valign=\"top\">\n<p align=\"center\">1.0</p>\n</td>\n<td width=\"192\" valign=\"top\">\n<p align=\"center\">2.7</p>\n</td>\n</tr>\n<tr>\n<td width=\"177\" valign=\"top\">\n<p>Gross operating surplus and gross mixed income</p>\n</td>\n<td width=\"125\" valign=\"top\">\n<p align=\"center\">1.9</p>\n</td>\n<td width=\"106\" valign=\"top\">\n<p align=\"center\">0.0</p>\n</td>\n<td width=\"192\" valign=\"top\">\n<p align=\"center\">7.4</p>\n</td>\n</tr>\n<tr>\n<td width=\"177\" valign=\"top\">\n<p>Taxes on production and imports</p>\n</td>\n<td width=\"125\" valign=\"top\">\n<p align=\"center\">2.8</p>\n</td>\n<td width=\"106\" valign=\"top\">\n<p align=\"center\">1.2</p>\n</td>\n<td width=\"192\" valign=\"top\">\n<p align=\"center\">5.0</p>\n</td>\n</tr>\n<tr>\n<td width=\"177\" valign=\"top\">\n<p>Less subsidies</p>\n</td>\n<td width=\"125\" valign=\"top\">\n<p align=\"center\">1.0</p>\n</td>\n<td width=\"106\" valign=\"top\">\n<p align=\"center\">-5.5</p>\n</td>\n<td width=\"192\" valign=\"top\">\n<p align=\"center\">-11.1</p>\n</td>\n</tr>\n<tr>\n<td width=\"177\" valign=\"top\">\n<p><strong>Income gross domestic product</strong></p>\n</td>\n<td width=\"125\" valign=\"top\">\n<p align=\"center\"><strong>1.8</strong></p>\n</td>\n<td width=\"106\" valign=\"top\">\n<p align=\"center\"><strong>0.6</strong></p>\n</td>\n<td width=\"192\" valign=\"top\">\n<p align=\"center\"><strong>5.1</strong></p>\n</td>\n</tr>\n<tr>\n<td colspan=\"4\" width=\"600\" valign=\"top\">\n<p><strong>Note:</strong> For June 2026 quarter, the measures of average annual growth compare activity over the most recent year (sum of activity in September 2025 to June 2026 quarters) with activity over the previous year (sum of activity in September 2024 to June 2025 quarters).<br><br>YE \u2013 year ended</p>\n</td>\n</tr>\n</tbody>\n</table>"
+    },
+    {
+      "ID": "135125",
+      "Title": "GDP June 2026 qtr \u2013 g7 \u2013 Change in income GDP ($), by component, March 2026\u2013June 2026 quarters",
+      "ClassName": "GraphTableBlock",
+      "ShowBlockTitle": 0,
+      "DefaultView": "Grid",
+      "xAxisTitle": "Component",
+      "yAxisTitle": "$",
+      "yAxisDualRightTitle": null,
+      "GraphMetadata": null,
+      "SeriesData": [
+        {
+          "ID": 35791,
+          "Title": "Change in income GDP ($), by component, March 2026\u2013June 2026 quarters",
+          "ClassName": "SeriesGroup",
+          "Type": "bar",
+          "GraphCsvData": "\"Component\",\"Compensation of employees\",\"Taxes on production and imports\",\"Gross operating surplus and gross mixed income\",\"(Less) subsidies\"\n\"Change ($)\",508000000,175000000,-6000000,-28000000\n"
+        }
+      ],
+      "GraphType": "bar",
+      "Presentation": "graphTable",
+      "GraphHeading": "Change in income GDP ($), by component, March 2026\u2013June 2026 quarters",
+      "showLegend": false,
+      "SourceCredit": "Stats NZ",
+      "Footnote": "Seasonally adjusted current price series.",
+      "GeoLevelView": null,
+      "Action": {
+        "ActionText": null,
+        "ActionHref": {
+          "Url": "",
+          "Target": "_self"
+        }
+      }
+    },
+    {
+      "ID": "135174",
+      "Title": "Gross domestic product: June 2026 quarter \u2013 key facts 6",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>Impact of conflict in the Middle East on GDP in the June 2026 quarter</h2>\n<p>The measures of GDP in the June 2026 quarter were impacted by the Middle East conflict and related fuel price increases. Our headline measure of GDP is presented in volume terms, which removes the effect of price changes. However, GDP for some industries related to fuel saw changes which could be attributed to the large increases in fuel prices during the quarter.</p>\n<p>In retail trade and accommodation, fuel retailing fell in volume terms in the June 2026 quarter and was the largest quarterly decline since the COVID-19-affected September 2021 quarter.</p>\n<p>Accommodation and food services fell 3.8 percent in the June 2026 quarter, indicating a potential change in discretionary spending.</p>\n<p>In household consumption expenditure (HCE), the restaurants and hotels group fell in the June 2026 quarter, indicating a similar change in discretionary spending to that seen in the accommodation and food services sub-industry on the production side.</p>\n<p>Transport, postal, and warehousing fell 1.7 percent in the June 2026 quarter, driven by a decline in road transport. The quarterly method for this sub-industry has used diesel delivery volumes since the March 2022 quarter.</p>\n<p>The transport group of HCE fell 1.6 percent in the June 2026 quarter. The petrol and other vehicle fuels and lubricants components of non-durable goods HCE also fell during the June 2026 quarter.</p>\n<p>Imports of refined petroleum in constant prices rose 5.3 percent in the June 2026 quarter compared with the March 2026 quarter, but rose 63.8 percent in current prices over the same period.</p>\n<p>Imports of intermediate goods, processed fuels and lubricants (which includes diesel) in constant prices rose 19.8 percent in the June 2026 quarter compared with the March 2026 quarter, but rose 123.8 percent in current prices over the same period.</p>\n<p>Increases in quarterly prices for petrol imports were the highest since December 1990, while increases for processed fuels and lubricants were the highest on record (data from September 1990).</p>\n<p>We made no methodological changes to quarterly GDP in response to the Middle East conflict and elevated fuel prices.</p>"
+    },
+    {
+      "ID": "44",
+      "Title": "Gross domestic product GDP \u2013 more data",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>More data</h2><p>Use&nbsp;<a title=\"Link to Stats NZ data tool Infoshare\" href=\"http://infoshare.stats.govt.nz/\">Infoshare</a>&nbsp;to access the national accounts&nbsp;time series.</p><p>Subject category: Economic indicators <br>Group: National accounts \u2013 SNA 2008</p>"
+    },
+    {
+      "ID": "135175",
+      "Title": "Gross domestic product: June 2026 quarter \u2013 metadata",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>Definitions and metadata</h2>\n<p><a href=\"https://datainfoplus.stats.govt.nz/Item/nz.govt.stats/9a9295f6-ce5f-4c71-8462-ba6dd01f4dc7?_ga=2.225172954.1957942343.1600037239-940604984.1576371829\">National accounts quarterlies \u2013 DataInfo+</a> provides the general methodology used to produce these statistics.</p>\n<p><a href=\"https://datainfoplus.stats.govt.nz/item/nz.govt.stats/b8a36978-cd7d-4beb-acb9-699524dcf5bb/4\">National accounts quarterlies \u2013 concepts \u2013 DataInfo+</a> provides the definitions of terms used in this release.</p>\n<p><a href=\"https://datainfoplus.stats.govt.nz/item/nz.govt.stats/5e99e77b-056e-4956-b8be-10a0cf3253b4\">Gross domestic product: June 2026 quarter \u2013 changes and data updates \u2013 DataInfo+</a> has details of data updates for this release.</p>\n<p><a href=\"/methods/overview-of-sources-and-methods-for-quarterly-gross-domestic-product-updates-and-covid-19-adjustments/\">Overview of sources and methods for quarterly gross domestic product: Updates and COVID-19 adjustments</a> provides an overview of changes to our usual quarterly GDP methods, including alternative data sources and methods we are using to measure the effects of COVID-19 in New Zealand.</p>\n<p><a href=\"/methods/about-the-quarterly-income-measure-of-gdp/\">About the quarterly income measure of GDP</a> provides more information on the GDPI measure.</p>\n<p><a href=\"/methods/national-accounts-income-saving-assets-and-liabilities-sources-and-methods/\">National accounts (income, saving, assets, and liabilities): Sources and methods (fourth edition)</a> provides the data sources and compilation methods used in estimating GDPI as well as income by institutional sector and saving, assets, and liabilities measures.</p>"
+    },
+    {
+      "ID": "133962",
+      "Title": "Infoshare is being replaced by Aotearoa Data Explorer",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>Infoshare is being replaced by Aotearoa Data Explorer</h2>\n<p><a id=\"menurj4r\" title=\"https://www.stats.govt.nz/tools/infoshare-is-being-replaced-by-aotearoa-data-explorer/\" rel=\"noopener noreferrer\" href=\"https://www.stats.govt.nz/tools/infoshare-is-being-replaced-by-aotearoa-data-explorer/\" target=\"_blank\">Infoshare is being replaced by Aotearoa Data Explorer</a>. Stay informed and get support with this change by joining our customer group at <a href=\"mailto:cdtp@stats.govt.nz?subject=CDTP%20customer%20group\">cdtp@stats.govt.nz</a>.</p>"
+    },
+    {
+      "ID": "48",
+      "Title": "Gross domestic product \u2013 media enquiries",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>Media enquiries</h2>\n<p>Media team<br><a href=\"mailto:media@stats.govt.nz?subject=Gross%20domestic%20product%20%E2%80%93%20media%20enquiries\">media@stats.govt.nz</a><br><a href=\"tel:+64212859191\">021 285 9191</a></p>"
+    },
+    {
+      "ID": "4009",
+      "Title": "Gross domestic product \u2013 technical enquiries",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>Technical enquiries</h2>\n<p>Economic growth team<br><a href=\"mailto:info@stats.govt.nz?subject=Gross%20domestic%20product%20%E2%80%93%20technical%20enquiries\">info@stats.govt.nz</a><br><a href=\"tel:+6449314841\">04 931 4841</a></p>"
+    },
+    {
+      "ID": "564",
+      "Title": "ISSN Gross domestic product GDP",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<p>ISSN 1178-0290</p>"
+    },
+    {
+      "ID": "135176",
+      "Title": "Gross domestic product: June 2026 quarter \u2013 next release",
+      "ClassName": "TextBlock",
+      "ShowBlockTitle": false,
+      "DefaultView": "Grid",
+      "Content": "<h2>Next release</h2>\n<p><em>Gross domestic product: September 2026 quarter</em> will be released on 17 December 2026.</p>"
+    }
+  ],
+  "DefaultView": "Grid",
+  "PageBlockSortOrder": {
+    "134693": 1,
+    "135165": 2,
+    "135169": 3,
+    "135124": 4,
+    "135170": 5,
+    "135130": 6,
+    "135129": 7,
+    "135128": 8,
+    "135171": 9,
+    "135127": 10,
+    "135172": 11,
+    "135126": 12,
+    "135173": 13,
+    "135125": 14,
+    "135174": 15,
+    "134694": 16,
+    "135175": 17,
+    "134695": 18,
+    "134696": 19,
+    "134697": 20,
+    "134698": 21,
+    "135176": 22
+  },
+  "EnableTopDivider": {
+    "1102": "No",
+    "135165": "No",
+    "135169": "No",
+    "135124": "No",
+    "135170": "No",
+    "135130": "No",
+    "135129": "No",
+    "135128": "No",
+    "135171": "No",
+    "135127": "No",
+    "135172": "No",
+    "135126": "No",
+    "135173": "No",
+    "135125": "No",
+    "135174": "No",
+    "44": "No",
+    "135175": "No",
+    "133962": "No",
+    "48": "No",
+    "4009": "No",
+    "564": "No",
+    "135176": "No"
+  },
+  "PageBlockWidths": {
+    "134693": 0,
+    "135165": 0,
+    "135169": 0,
+    "135124": 0,
+    "135170": 0,
+    "135130": 6,
+    "135129": 6,
+    "135128": 0,
+    "135171": 0,
+    "135127": 0,
+    "135172": 0,
+    "135126": 0,
+    "135173": 0,
+    "135125": 0,
+    "135174": 0,
+    "134694": 0,
+    "135175": 0,
+    "134695": 0,
+    "134696": 0,
+    "134697": 0,
+    "134698": 0,
+    "135176": 0
+  },
+  "PageTerms": [
+    {
+      "ID": 139,
+      "ClassName": "Stats\\CategoryTaxonomyTerm",
+      "LinkData": "{\"LinkURL\":null,\"Title\":null}"
+    },
+    {
+      "ID": 141,
+      "ClassName": "SilverStripe\\Taxonomy\\TaxonomyTerm",
+      "LinkData": "{\"LinkURL\":\"\\/topics\\/economy\",\"Title\":\"Economy\"}"
+    },
+    {
+      "ID": 8351,
+      "ClassName": "Stats\\DateTaxonomyTerm",
+      "LinkData": "{\"LinkURL\":null,\"Title\":null}"
+    },
+    {
+      "ID": 632,
+      "ClassName": "SilverStripe\\Taxonomy\\TaxonomyTerm",
+      "LinkData": "{\"LinkURL\":\"\\/topics\\/gross-domestic-product\",\"Title\":\"Gross domestic product\"}"
+    },
+    {
+      "ID": 1046,
+      "ClassName": "SilverStripe\\Taxonomy\\TaxonomyTerm",
+      "LinkData": "{\"LinkURL\":\"\\/topics\\/imports-and-exports\",\"Title\":\"Imports and exports\"}"
+    },
+    {
+      "ID": 1034,
+      "ClassName": "SilverStripe\\Taxonomy\\TaxonomyTerm",
+      "LinkData": "{\"LinkURL\":\"\\/topics\\/industries\",\"Title\":\"Industries\"}"
+    },
+    {
+      "ID": 1055,
+      "ClassName": "SilverStripe\\Taxonomy\\TaxonomyTerm",
+      "LinkData": "{\"LinkURL\":\"\\/topics\\/national-accounts\",\"Title\":\"National accounts\"}"
+    }
+  ],
+  "PagesRelated": [
+    {
+      "ID": 80663,
+      "Title": "GDP increases 0.2 percent in the June 2026 quarter",
+      "Link": "/news/gdp-increases-0-2-percent-in-the-june-2026-quarter/",
+      "PageDate": "2026-09-17 10:45:00",
+      "IsPublished": "2026-09-17 10:45:12",
+      "FeaturedMedia": {
+        "Title": "building construction",
+        "Filename": "https://www.stats.govt.nz/assets/Uploads/news-story-thumbnails/building-construction__ScaleHeightWzE2MF0.jpg"
+      }
+    },
+    {
+      "ID": 80428,
+      "Title": "Economic impacts on New Zealand from conflict in the Middle East",
+      "Link": "/reports/economic-impacts-on-new-zealand-from-conflict-in-the-middle-east/",
+      "PageDate": "2026-04-16 14:00:00",
+      "IsPublished": "2026-11-05 14:34:59",
+      "FeaturedMedia": {
+        "Title": "petrol and diesel at the pump small",
+        "Filename": "https://www.stats.govt.nz/assets/Uploads/news-story-thumbnails/petrol-and-diesel-at-the-pump-small__ScaleHeightWzE2MF0.jpg"
+      }
+    },
+    {
+      "ID": 80656,
+      "Title": "Understanding the pattern of revisions to gross domestic product estimates over time",
+      "Link": "/methods/understanding-the-pattern-of-revisions-to-gross-domestic-product-estimates-over-time/",
+      "PageDate": "2026-09-17 10:45:00",
+      "IsPublished": "2026-09-17 10:45:22"
+    }
+  ],
+  "Category": {
+    "ID": 139,
+    "DisplayName": "Information releases",
+    "LinkData": "{\"LinkURL\":\"information-releases\",\"Title\":\"Information releases\"}",
+    "FilterName": null
+  },
+  "TermsReleases": [
+    {
+      "ID": 8351,
+      "ClassName": "DateTaxonomyTerm",
+      "Date": null,
+      "DisplayName": "Gross domestic product: June 2026 quarter",
+      "DateFormat": "F Y",
+      "DateString": "17 September 2026",
+      "PublicationDate": "2026-09-17 10:45:00"
+    }
+  ],
+  "TermsTopics": [
+    {
+      "ID": 141,
+      "ClassName": "TaxonomyTerm",
+      "DisplayName": "Economy",
+      "LinkData": "{\"LinkURL\":\"topics\\/economy\",\"Title\":\"Economy\"}",
+      "FilterName": null
+    },
+    {
+      "ID": 632,
+      "ClassName": "TaxonomyTerm",
+      "DisplayName": "Gross domestic product",
+      "LinkData": "{\"LinkURL\":\"topics\\/gross-domestic-product\",\"Title\":\"Gross domestic product\"}",
+      "FilterName": null
+    },
+    {
+      "ID": 1046,
+      "ClassName": "TaxonomyTerm",
+      "DisplayName": "Imports and exports",
+      "LinkData": "{\"LinkURL\":\"topics\\/imports-and-exports\",\"Title\":\"Imports and exports\"}",
+      "FilterName": null
+    },
+    {
+      "ID": 1034,
+      "ClassName": "TaxonomyTerm",
+      "DisplayName": "Industries",
+      "LinkData": "{\"LinkURL\":\"topics\\/industries\",\"Title\":\"Industries\"}",
+      "FilterName": null
+    },
+    {
+      "ID": 1055,
+      "ClassName": "TaxonomyTerm",
+      "DisplayName": "National accounts",
+      "LinkData": "{\"LinkURL\":\"topics\\/national-accounts\",\"Title\":\"National accounts\"}",
+      "FilterName": null
+    }
+  ]
+}

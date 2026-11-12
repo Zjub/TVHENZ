@@ -1,0 +1,112 @@
+[
+  {
+    "slide": 1,
+    "text": "New Zealand election\n2026",
+    "notes": "",
+    "shapes": [
+      {
+        "type": "PLACEHOLDER (14)",
+        "name": "Title 1"
+      },
+      {
+        "type": "PLACEHOLDER (14)",
+        "name": "Subtitle 2"
+      }
+    ]
+  },
+  {
+    "slide": 2,
+    "text": "“New Zealand has spoken, but we’re not sure what they’ve said yet.” – Chris Hipkins (Labour Party leader)",
+    "notes": "",
+    "shapes": [
+      {
+        "type": "PLACEHOLDER (14)",
+        "name": "Subtitle 2"
+      },
+      {
+        "type": "PICTURE (13)",
+        "name": "Picture 5"
+      }
+    ]
+  },
+  {
+    "slide": 3,
+    "text": "Background of New Zealand election\nEconomic stress\nElectoral reform and breakdown in electoral “norms”",
+    "notes": "",
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "name": "TextBox 1"
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "name": "TextBox 6"
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "name": "TextBox 8"
+      }
+    ]
+  },
+  {
+    "slide": 4,
+    "text": "What were the results",
+    "notes": "",
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "name": "TextBox 1"
+      },
+      {
+        "type": "PICTURE (13)",
+        "name": "Picture 3"
+      },
+      {
+        "type": "PICTURE (13)",
+        "name": "Picture 9"
+      },
+      {
+        "type": "PICTURE (13)",
+        "name": "Picture 11"
+      }
+    ]
+  },
+  {
+    "slide": 5,
+    "text": "What is the likely structure of government?\nAt face value the current government will return (National-ACT-NZF coalition). However:\nSpecial votes tend to boost left-leaning parties.\nMultiple cabinet members lost their seats (including Finance – which is the Treasurer equivalent).\nNZF leader went on a podcast saying he wanted to join a coalition with Labour.\nCurrently, a left coalition would need at least five parties.\nLabour, Greens, Te Pāti Māori (left block)\nOpportunity (first timers)\nNew Zealand First (NZF) – if two electorates flip to Labour, they would not be needed.",
+    "notes": "",
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "name": "TextBox 1"
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "name": "TextBox 3"
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "name": "TextBox 5"
+      }
+    ]
+  },
+  {
+    "slide": 6,
+    "text": "What does this mean for policy\nA reelected centre-right government means:\nNo capital-gains tax introduced.\n\nReplacing KiwiSaver with compulsory superannuation.\n\nNo PBO.\n\nMinistry of Regulation will not be shut – other departments likely to be cut further.\n\nElectoral reform more likely to involve cutting electorates (especially Māori), rather than increasing the number of list seats.",
+    "notes": "",
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "name": "TextBox 1"
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "name": "TextBox 3"
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "name": "TextBox 5"
+      }
+    ]
+  }
+]

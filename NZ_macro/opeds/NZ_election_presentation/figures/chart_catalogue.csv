@@ -1,0 +1,43 @@
+id,title,x_axis,y_axis,note,priority
+P01,The economies grew; growth per person was much weaker,Quarter,Index: December 2019 = 100,"Sources: Stats NZ June 2026 GDP CSV; ABS June 2026 Table 1. Real, seasonally adjusted expenditure GDP. Indices compare growth, not income levels.",Main deck
+P02,GDP per person has barely moved since the 2023 election,Quarter,Index: December 2019 = 100,"Sources: Stats NZ June 2026 GDP CSV; ABS June 2026 Table 1. Real, seasonally adjusted expenditure GDP. Indices compare growth, not income levels.",Main deck
+P03,New Zealand GDP measures tell different recovery stories,Quarter,Real GDP per person: December 2019 = 100,Source: Stats NZ June 2026 GDP CSV. Production is the NZ headline; expenditure is used for the ABS comparison.,Appendix
+P04,Recent recovery is not the same as a strong whole term,Quarter,Change from the same quarter a year earlier (%),"Sources: Stats NZ June 2026 GDP CSV; ABS June 2026 Table 1. Real, seasonally adjusted expenditure GDP. Year-on-year growth; not annual-average growth.",Appendix
+P05,"Since September 2023, per-person output is roughly flat",Country,Real growth: September 2023 to June 2026 (%),"Sources: Stats NZ June 2026 GDP CSV; ABS June 2026 Table 1. Real, seasonally adjusted expenditure GDP. This aligns dates; it does not identify the causal effect of either government.",Main deck
+P06,New Zealand unemployment has risen further,Quarter,Unemployment rate (%),"Sources: Stats NZ HLFS, September 2026; ABS Labour Force Table 1, September 2026. Seasonally adjusted, age 15+.
+Australian observations are averages of three monthly rates; national survey scope and composition differ.",Main deck
+P07,The unemployment gap has turned against New Zealand,Quarter,NZ minus Australian unemployment (percentage points),Sources: Stats NZ HLFS; ABS Labour Force. Australia: quarterly average of monthly seasonally adjusted rates.,Appendix
+P08,Higher unemployment coexists with a higher employment rate,Quarter,Employment rate (%),"Sources: Stats NZ HLFS, September 2026; ABS Labour Force Table 1, September 2026. Seasonally adjusted, age 15+.
+Australian observations are averages of three monthly rates; national survey scope and composition differ.",Appendix
+P09,New Zealand has a larger share of adults in the labour force,Quarter,Participation rate (%),"Sources: Stats NZ HLFS, September 2026; ABS Labour Force Table 1, September 2026. Seasonally adjusted, age 15+.
+Australian observations are averages of three monthly rates; national survey scope and composition differ.",Appendix
+P10,Unemployment captures only part of unused labour capacity,Quarter,Rate (%),"Source: Stats NZ September 2026 HLFS. Underutilisation includes unemployed, underemployed and potential labour force.
+The underutilisation denominator is the extended labour force; the unemployment denominator is the labour force.",Appendix
+P11,Party votes and seats differ because of overhangs,Share of valid party votes / parliamentary seats (%),Party,"Source: Electoral Commission preliminary results, 7 November 2026. 131 seats, including 11 above the usual 120.
+Percentages calculated from exact counts; special votes excluded. Official results due 27 November.",Main deck
+P12,The incumbent bloc has 67 of 131 preliminary seats,Parliamentary seats (66 for an absolute majority),Arithmetic grouping,"Source: Electoral Commission preliminary results. TPM = Te Pati Maori. Groups are arithmetic examples, not negotiated agreements.
+Special votes can change party entitlements, electorate winners, total seats and the majority threshold.",Main deck
+P13,National has no list seats in the preliminary allocation,Parliamentary seats,Party,"Source: Electoral Commission preliminary results. Losing an electorate does not by itself exclude a candidate from Parliament.
+A list candidate needs room in the party entitlement after electorate MPs have been included.",Appendix
+P14,Coalition choices sit inside a constrained fiscal outlook,Year ended June,Share of GDP (%),"Source: NZ Treasury PREFU September 2026, Fiscal Time Series. Open markers are forecasts; filled markers actual/unaudited actual.
+Core Crown tax revenue excludes other revenue: the distance between these lines is not the operating balance.",Appendix
+P15,The operating-balance improvement is largely a forecast,Year ended June,OBEGAL excluding ACC (% of GDP),"Source: NZ Treasury PREFU September 2026, Fiscal Time Series. Forecasts are conditional Treasury projections, not realised savings.",Appendix
+P16,A longer view changes the growth comparison,Quarter,Real GDP per person: March 2000 = 100,"Sources: Stats NZ June 2026 GDP CSV; ABS June 2026 Table 1. Real, seasonally adjusted expenditure GDP. Growth indices do not establish which country has a higher income level.",Appendix
+P17,Today's unemployment rise in historical perspective,Quarter,Unemployment rate (%),"Sources: Stats NZ HLFS and ABS Labour Force, September 2026 vintages. Seasonally adjusted; Australia quarterly monthly-rate average.
+Survey redesigns affect long-run comparability; see the release methodology before interpreting small differences.",Appendix
+P18,Slower inflation has not reversed the increase in living costs,Quarter,Household living-cost index: December 2019 = 100,"Source: Stats NZ September 2026 Household Living-costs Price Indexes. These household cost baskets include interest payments.
+They differ from the CPI; the lines measure prices, not disposable income or affordability.",Main deck
+P19,Two electorate flips alone would not reverse the majority,National electorates switching to Labour (illustrative),Parliamentary seats,"Source: Electoral Commission preliminary results; mechanical scenario with fixed party-vote entitlements and National-to-Labour flips.
+Labour substitutes electorate MPs for list MPs; National loses overhang seats. This is not a special-vote forecast.",Appendix
+P20,Which National leads are smallest relative to specials?,Labour minus National special-vote share needed to tie (percentage points),Electorate and preliminary National lead,"Source: Electoral Commission 2026 preliminary counts and 2023 candidate-vote turnout table; own scenarios.
+Dots: historical-pattern benchmark. Lines: 0.5 to 1.5 times that volume, not confidence intervals.
+Six lowest hurdles among nine smallest National leads. No boundary/rule adjustment; recount changes excluded.",Main deck
+P21,How close National contests depend on special-vote volume,Valid special candidate votes remaining in that electorate (scenario),Labour minus National share needed to tie (percentage points),"Source: Electoral Commission preliminary candidate margins; own break-even calculation: 100 x margin / valid specials.
+Each curve uses a range of possible volumes, not an official local count or a probability forecast.
+Votes for other candidates do not transfer to Labour or National in NZ electorate voting.",Appendix
+P22,National could also gain seats on special votes,Trailing candidate minus leader special-vote share needed to tie (percentage points),"Electorate, current leader and preliminary margin","Source: Electoral Commission preliminary counts and 2023 turnout table; own historical-pattern volume benchmark.
+National-Labour marginals within 2,200 votes. These are hurdles, not forecasts; smaller does not mean more likely.
+Unadjusted predecessor electorates: Kapiti uses Otaki; Hutt South boundaries changed. Final party votes also matter.",Appendix
+P23,The ranking depends on how many specials each seat has,Labour minus National special-vote share needed to tie (percentage points),Electorate,"Source: Electoral Commission preliminary counts and official 2023 valid-candidate-vote turnout table; own benchmarks.
+Both methods use the same national 2026 specials estimate. Neither is an official electorate-level estimate or a forecast.
+Historical relative volumes may change with boundaries, enrolment rules, overseas voting and candidate-vote eligibility.",Appendix

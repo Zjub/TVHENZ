@@ -1,0 +1,28 @@
+check,passed
+Nonempty NZ series SNEQ.SG02RSC00B15,True
+Nonempty NZ series SNEQ.SG09RSC00B15NZ,True
+Nonempty NZ series SNEQ.SG01RSC00B01,True
+Nonempty NZ series SNEQ.SG09RSC00B01NZ,True
+Unique ABS series A2304402X,True
+ABS series seasonally adjusted A2304402X,True
+Unique ABS series A2304404C,True
+ABS series seasonally adjusted A2304404C,True
+GDP unique country measure quarter,True
+Nonempty NZ series HLFQ.S1F3S,True
+Nonempty NZ series HLFQ.S1H3S,True
+Nonempty NZ series HLFQ.S1E3S,True
+Nonempty NZ series HLFQ.SXJ3UZS,True
+Unique ABS series A84423050A,True
+ABS series seasonally adjusted A84423050A,True
+Unique ABS series A84423054K,True
+ABS series seasonally adjusted A84423054K,True
+Unique ABS series A84423051C,True
+ABS series seasonally adjusted A84423051C,True
+Labour unique country measure quarter,True
+All rate observations in plausible range,True
+NZ September unemployment equals release,True
+ABS September unemployment rounds to release,True
+Election electorate seats sum to 71,True
+Election list seats sum to 60,True
+Election seats sum to 131,True
+Incumbent bloc preliminary 67 seats,True

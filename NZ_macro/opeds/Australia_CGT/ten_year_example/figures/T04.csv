@@ -1,0 +1,177 @@
+asset,system,year,tax
+Bank deposit,Broad consumption tax,0,0
+Bank deposit,Broad consumption tax,1,0
+Bank deposit,Broad consumption tax,2,0
+Bank deposit,Broad consumption tax,3,0
+Bank deposit,Broad consumption tax,4,0
+Bank deposit,Broad consumption tax,5,0
+Bank deposit,Broad consumption tax,6,0
+Bank deposit,Broad consumption tax,7,0
+Bank deposit,Broad consumption tax,8,0
+Bank deposit,Broad consumption tax,9,0
+Bank deposit,Broad consumption tax,10,51609.79757672219
+Bank deposit,CGT inflation allowance only,0,30000
+Bank deposit,CGT inflation allowance only,1,1170.7499999999993
+Bank deposit,CGT inflation allowance only,2,1216.4385187499993
+Bank deposit,CGT inflation allowance only,3,1263.9100319442177
+Bank deposit,CGT inflation allowance only,4,1313.234120940841
+Bank deposit,CGT inflation allowance only,5,1364.4830825105573
+Bank deposit,CGT inflation allowance only,6,1417.7320348055318
+Bank deposit,CGT inflation allowance only,7,1473.0590274638175
+Bank deposit,CGT inflation allowance only,8,1530.5451560105928
+Bank deposit,CGT inflation allowance only,9,1590.2746807239064
+Bank deposit,CGT inflation allowance only,10,1652.335150139157
+Bank deposit,Comprehensive normal-return allowance,0,30000
+Bank deposit,Comprehensive normal-return allowance,1,0
+Bank deposit,Comprehensive normal-return allowance,2,0
+Bank deposit,Comprehensive normal-return allowance,3,0
+Bank deposit,Comprehensive normal-return allowance,4,0
+Bank deposit,Comprehensive normal-return allowance,5,0
+Bank deposit,Comprehensive normal-return allowance,6,0
+Bank deposit,Comprehensive normal-return allowance,7,0
+Bank deposit,Comprehensive normal-return allowance,8,0
+Bank deposit,Comprehensive normal-return allowance,9,0
+Bank deposit,Comprehensive normal-return allowance,10,0
+Bank deposit,Full-rate income tax,0,30000
+Bank deposit,Full-rate income tax,1,1170.7499999999993
+Bank deposit,Full-rate income tax,2,1216.4385187499993
+Bank deposit,Full-rate income tax,3,1263.9100319442177
+Bank deposit,Full-rate income tax,4,1313.234120940841
+Bank deposit,Full-rate income tax,5,1364.4830825105573
+Bank deposit,Full-rate income tax,6,1417.7320348055318
+Bank deposit,Full-rate income tax,7,1473.0590274638175
+Bank deposit,Full-rate income tax,8,1530.5451560105928
+Bank deposit,Full-rate income tax,9,1590.2746807239064
+Bank deposit,Full-rate income tax,10,1652.335150139157
+Domestic company,Broad consumption tax,0,0
+Domestic company,Broad consumption tax,1,0
+Domestic company,Broad consumption tax,2,0
+Domestic company,Broad consumption tax,3,0
+Domestic company,Broad consumption tax,4,0
+Domestic company,Broad consumption tax,5,0
+Domestic company,Broad consumption tax,6,0
+Domestic company,Broad consumption tax,7,0
+Domestic company,Broad consumption tax,8,0
+Domestic company,Broad consumption tax,9,0
+Domestic company,Broad consumption tax,10,51609.79757672219
+Domestic company,CGT inflation allowance only,0,30000
+Domestic company,CGT inflation allowance only,1,1170.7499999999993
+Domestic company,CGT inflation allowance only,2,1216.4385187499993
+Domestic company,CGT inflation allowance only,3,1263.9100319442177
+Domestic company,CGT inflation allowance only,4,1313.234120940841
+Domestic company,CGT inflation allowance only,5,1364.4830825105573
+Domestic company,CGT inflation allowance only,6,1417.7320348055318
+Domestic company,CGT inflation allowance only,7,1473.0590274638175
+Domestic company,CGT inflation allowance only,8,1530.5451560105928
+Domestic company,CGT inflation allowance only,9,1590.2746807239064
+Domestic company,CGT inflation allowance only,10,1652.3351501391587
+Domestic company,Comprehensive normal-return allowance,0,30000
+Domestic company,Comprehensive normal-return allowance,1,0
+Domestic company,Comprehensive normal-return allowance,2,0
+Domestic company,Comprehensive normal-return allowance,3,0
+Domestic company,Comprehensive normal-return allowance,4,0
+Domestic company,Comprehensive normal-return allowance,5,0
+Domestic company,Comprehensive normal-return allowance,6,0
+Domestic company,Comprehensive normal-return allowance,7,0
+Domestic company,Comprehensive normal-return allowance,8,0
+Domestic company,Comprehensive normal-return allowance,9,0
+Domestic company,Comprehensive normal-return allowance,10,0
+Domestic company,Full-rate income tax,0,30000
+Domestic company,Full-rate income tax,1,1170.7499999999993
+Domestic company,Full-rate income tax,2,1216.4385187499993
+Domestic company,Full-rate income tax,3,1263.9100319442177
+Domestic company,Full-rate income tax,4,1313.234120940841
+Domestic company,Full-rate income tax,5,1364.4830825105573
+Domestic company,Full-rate income tax,6,1417.7320348055318
+Domestic company,Full-rate income tax,7,1473.0590274638175
+Domestic company,Full-rate income tax,8,1530.5451560105928
+Domestic company,Full-rate income tax,9,1590.2746807239064
+Domestic company,Full-rate income tax,10,1652.3351501391587
+House: capital appreciation,Broad consumption tax,0,0
+House: capital appreciation,Broad consumption tax,1,0
+House: capital appreciation,Broad consumption tax,2,0
+House: capital appreciation,Broad consumption tax,3,0
+House: capital appreciation,Broad consumption tax,4,0
+House: capital appreciation,Broad consumption tax,5,0
+House: capital appreciation,Broad consumption tax,6,0
+House: capital appreciation,Broad consumption tax,7,0
+House: capital appreciation,Broad consumption tax,8,0
+House: capital appreciation,Broad consumption tax,9,0
+House: capital appreciation,Broad consumption tax,10,51609.79757672219
+House: capital appreciation,CGT inflation allowance only,0,30000
+House: capital appreciation,CGT inflation allowance only,1,0
+House: capital appreciation,CGT inflation allowance only,2,0
+House: capital appreciation,CGT inflation allowance only,3,0
+House: capital appreciation,CGT inflation allowance only,4,0
+House: capital appreciation,CGT inflation allowance only,5,0
+House: capital appreciation,CGT inflation allowance only,6,0
+House: capital appreciation,CGT inflation allowance only,7,0
+House: capital appreciation,CGT inflation allowance only,8,0
+House: capital appreciation,CGT inflation allowance only,9,0
+House: capital appreciation,CGT inflation allowance only,10,9245.082875582031
+House: capital appreciation,Comprehensive normal-return allowance,0,30000
+House: capital appreciation,Comprehensive normal-return allowance,1,0
+House: capital appreciation,Comprehensive normal-return allowance,2,0
+House: capital appreciation,Comprehensive normal-return allowance,3,0
+House: capital appreciation,Comprehensive normal-return allowance,4,0
+House: capital appreciation,Comprehensive normal-return allowance,5,0
+House: capital appreciation,Comprehensive normal-return allowance,6,0
+House: capital appreciation,Comprehensive normal-return allowance,7,0
+House: capital appreciation,Comprehensive normal-return allowance,8,0
+House: capital appreciation,Comprehensive normal-return allowance,9,0
+House: capital appreciation,Comprehensive normal-return allowance,10,0
+House: capital appreciation,Full-rate income tax,0,30000
+House: capital appreciation,Full-rate income tax,1,0
+House: capital appreciation,Full-rate income tax,2,0
+House: capital appreciation,Full-rate income tax,3,0
+House: capital appreciation,Full-rate income tax,4,0
+House: capital appreciation,Full-rate income tax,5,0
+House: capital appreciation,Full-rate income tax,6,0
+House: capital appreciation,Full-rate income tax,7,0
+House: capital appreciation,Full-rate income tax,8,0
+House: capital appreciation,Full-rate income tax,9,0
+House: capital appreciation,Full-rate income tax,10,15126.85830370553
+New business: capital appreciation,Broad consumption tax,0,0
+New business: capital appreciation,Broad consumption tax,1,0
+New business: capital appreciation,Broad consumption tax,2,0
+New business: capital appreciation,Broad consumption tax,3,0
+New business: capital appreciation,Broad consumption tax,4,0
+New business: capital appreciation,Broad consumption tax,5,0
+New business: capital appreciation,Broad consumption tax,6,0
+New business: capital appreciation,Broad consumption tax,7,0
+New business: capital appreciation,Broad consumption tax,8,0
+New business: capital appreciation,Broad consumption tax,9,0
+New business: capital appreciation,Broad consumption tax,10,51609.79757672219
+New business: capital appreciation,CGT inflation allowance only,0,30000
+New business: capital appreciation,CGT inflation allowance only,1,0
+New business: capital appreciation,CGT inflation allowance only,2,0
+New business: capital appreciation,CGT inflation allowance only,3,0
+New business: capital appreciation,CGT inflation allowance only,4,0
+New business: capital appreciation,CGT inflation allowance only,5,0
+New business: capital appreciation,CGT inflation allowance only,6,0
+New business: capital appreciation,CGT inflation allowance only,7,0
+New business: capital appreciation,CGT inflation allowance only,8,0
+New business: capital appreciation,CGT inflation allowance only,9,0
+New business: capital appreciation,CGT inflation allowance only,10,9245.082875582031
+New business: capital appreciation,Comprehensive normal-return allowance,0,30000
+New business: capital appreciation,Comprehensive normal-return allowance,1,0
+New business: capital appreciation,Comprehensive normal-return allowance,2,0
+New business: capital appreciation,Comprehensive normal-return allowance,3,0
+New business: capital appreciation,Comprehensive normal-return allowance,4,0
+New business: capital appreciation,Comprehensive normal-return allowance,5,0
+New business: capital appreciation,Comprehensive normal-return allowance,6,0
+New business: capital appreciation,Comprehensive normal-return allowance,7,0
+New business: capital appreciation,Comprehensive normal-return allowance,8,0
+New business: capital appreciation,Comprehensive normal-return allowance,9,0
+New business: capital appreciation,Comprehensive normal-return allowance,10,0
+New business: capital appreciation,Full-rate income tax,0,30000
+New business: capital appreciation,Full-rate income tax,1,0
+New business: capital appreciation,Full-rate income tax,2,0
+New business: capital appreciation,Full-rate income tax,3,0
+New business: capital appreciation,Full-rate income tax,4,0
+New business: capital appreciation,Full-rate income tax,5,0
+New business: capital appreciation,Full-rate income tax,6,0
+New business: capital appreciation,Full-rate income tax,7,0
+New business: capital appreciation,Full-rate income tax,8,0
+New business: capital appreciation,Full-rate income tax,9,0
+New business: capital appreciation,Full-rate income tax,10,15126.85830370553

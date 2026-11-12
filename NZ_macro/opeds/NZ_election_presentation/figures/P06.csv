@@ -1,0 +1,95 @@
+country,measure,date,value,source_series,months
+Australia,Unemployment rate,2015-03-01,6.205025933333334,A84423050A,3
+Australia,Unemployment rate,2015-06-01,6.0204809,A84423050A,3
+Australia,Unemployment rate,2015-09-01,6.1893123999999995,A84423050A,3
+Australia,Unemployment rate,2015-12-01,5.837129466666667,A84423050A,3
+Australia,Unemployment rate,2016-03-01,5.7986803,A84423050A,3
+Australia,Unemployment rate,2016-06-01,5.6912874,A84423050A,3
+Australia,Unemployment rate,2016-09-01,5.666003166666667,A84423050A,3
+Australia,Unemployment rate,2016-12-01,5.736268633333334,A84423050A,3
+Australia,Unemployment rate,2017-03-01,5.810318966666666,A84423050A,3
+Australia,Unemployment rate,2017-06-01,5.597607866666666,A84423050A,3
+Australia,Unemployment rate,2017-09-01,5.539999233333333,A84423050A,3
+Australia,Unemployment rate,2017-12-01,5.494365966666667,A84423050A,3
+Australia,Unemployment rate,2018-03-01,5.548150333333333,A84423050A,3
+Australia,Unemployment rate,2018-06-01,5.446495266666666,A84423050A,3
+Australia,Unemployment rate,2018-09-01,5.1909484,A84423050A,3
+Australia,Unemployment rate,2018-12-01,5.0453388666666665,A84423050A,3
+Australia,Unemployment rate,2019-03-01,5.0466062,A84423050A,3
+Australia,Unemployment rate,2019-06-01,5.2316326,A84423050A,3
+Australia,Unemployment rate,2019-09-01,5.2577631333333334,A84423050A,3
+Australia,Unemployment rate,2019-12-01,5.173431766666667,A84423050A,3
+Australia,Unemployment rate,2020-03-01,5.190000433333333,A84423050A,3
+Australia,Unemployment rate,2020-06-01,6.915748466666667,A84423050A,3
+Australia,Unemployment rate,2020-09-01,7.053856733333333,A84423050A,3
+Australia,Unemployment rate,2020-12-01,6.774431866666667,A84423050A,3
+Australia,Unemployment rate,2021-03-01,5.9362319,A84423050A,3
+Australia,Unemployment rate,2021-06-01,5.2101695999999995,A84423050A,3
+Australia,Unemployment rate,2021-09-01,4.6672734,A84423050A,3
+Australia,Unemployment rate,2021-12-01,4.6929921666666665,A84423050A,3
+Australia,Unemployment rate,2022-03-01,4.0635218,A84423050A,3
+Australia,Unemployment rate,2022-06-01,3.808290766666667,A84423050A,3
+Australia,Unemployment rate,2022-09-01,3.5243174666666666,A84423050A,3
+Australia,Unemployment rate,2022-12-01,3.4918898333333335,A84423050A,3
+Australia,Unemployment rate,2023-03-01,3.6256059,A84423050A,3
+Australia,Unemployment rate,2023-06-01,3.613614533333333,A84423050A,3
+Australia,Unemployment rate,2023-09-01,3.6487567333333337,A84423050A,3
+Australia,Unemployment rate,2023-12-01,3.896899233333333,A84423050A,3
+Australia,Unemployment rate,2024-03-01,3.9145107,A84423050A,3
+Australia,Unemployment rate,2024-06-01,4.0520803,A84423050A,3
+Australia,Unemployment rate,2024-09-01,4.109690566666667,A84423050A,3
+Australia,Unemployment rate,2024-12-01,4.004481166666666,A84423050A,3
+Australia,Unemployment rate,2025-03-01,4.096211633333334,A84423050A,3
+Australia,Unemployment rate,2025-06-01,4.171669266666666,A84423050A,3
+Australia,Unemployment rate,2025-09-01,4.303938933333334,A84423050A,3
+Australia,Unemployment rate,2025-12-01,4.249477766666666,A84423050A,3
+Australia,Unemployment rate,2026-03-01,4.226218066666667,A84423050A,3
+Australia,Unemployment rate,2026-06-01,4.448133233333333,A84423050A,3
+Australia,Unemployment rate,2026-09-01,4.619711533333334,A84423050A,3
+New Zealand,Unemployment rate,2015-03-01,5.5,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2015-06-01,5.5,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2015-09-01,5.7,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2015-12-01,5,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2016-03-01,5.3,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2016-06-01,5.1,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2016-09-01,5,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2016-12-01,5.3,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2017-03-01,4.9,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2017-06-01,4.9,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2017-09-01,4.7,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2017-12-01,4.5,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2018-03-01,4.4,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2018-06-01,4.6,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2018-09-01,4,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2018-12-01,4.3,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2019-03-01,4.2,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2019-06-01,4.1,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2019-09-01,4.1,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2019-12-01,4.1,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2020-03-01,4.2,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2020-06-01,4.1,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2020-09-01,5.2,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2020-12-01,4.9,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2021-03-01,4.6,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2021-06-01,4,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2021-09-01,3.3,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2021-12-01,3.2,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2022-03-01,3.3,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2022-06-01,3.3,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2022-09-01,3.3,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2022-12-01,3.4,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2023-03-01,3.5,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2023-06-01,3.7,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2023-09-01,3.9,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2023-12-01,4,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2024-03-01,4.4,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2024-06-01,4.7,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2024-09-01,4.9,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2024-12-01,5.1,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2025-03-01,5.2,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2025-06-01,5.2,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2025-09-01,5.3,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2025-12-01,5.4,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2026-03-01,5.4,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2026-06-01,5.6,HLFQ.S1F3S,NA
+New Zealand,Unemployment rate,2026-09-01,5.7,HLFQ.S1F3S,NA

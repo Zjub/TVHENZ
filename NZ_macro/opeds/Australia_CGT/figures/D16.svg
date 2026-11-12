@@ -29,31 +29,37 @@
 <rect x='0.00' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
 </g>
 <defs>
-  <clipPath id='cpNjMuNzR8ODQyLjA4fDUzLjc4fDUyMi42MA=='>
-    <rect x='63.74' y='53.78' width='778.34' height='468.82' />
+  <clipPath id='cpNjMuNzR8ODQyLjA4fDUzLjc4fDQ5OC41Mw=='>
+    <rect x='63.74' y='53.78' width='778.34' height='444.75' />
   </clipPath>
 </defs>
-<g clip-path='url(#cpNjMuNzR8ODQyLjA4fDUzLjc4fDUyMi42MA==)'>
-<polyline points='63.74,503.48 842.08,503.48 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='63.74,364.07 842.08,364.07 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='63.74,224.66 842.08,224.66 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='63.74,85.24 842.08,85.24 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='175.62,522.60 175.62,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='366.85,522.60 366.85,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='558.09,522.60 558.09,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='749.33,522.60 749.33,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='99.12,501.29 118.24,496.53 137.37,485.52 156.49,487.18 175.62,491.52 194.74,488.81 213.86,485.59 232.99,465.58 252.11,478.56 271.24,470.10 290.36,456.70 309.48,430.11 328.61,416.64 347.73,416.54 366.85,423.96 385.98,417.27 405.10,414.83 424.23,372.25 443.35,349.36 462.47,307.95 481.60,206.22 500.72,244.85 519.85,389.29 538.97,384.49 558.09,381.02 577.22,409.61 596.34,402.94 615.46,364.08 634.59,336.45 653.71,332.05 672.84,314.82 691.96,286.68 711.08,321.45 730.21,317.96 749.33,189.27 768.46,75.09 787.58,215.78 806.70,220.48 ' style='stroke-width: 2.13; stroke: #146B8C; stroke-linecap: butt;' />
+<g clip-path='url(#cpNjMuNzR8ODQyLjA4fDUzLjc4fDQ5OC41Mw==)'>
+<polyline points='63.74,480.40 842.08,480.40 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='63.74,348.14 842.08,348.14 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='63.74,215.88 842.08,215.88 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='63.74,83.63 842.08,83.63 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='175.62,498.53 175.62,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='366.85,498.53 366.85,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='558.09,498.53 558.09,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='749.33,498.53 749.33,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='99.12,478.31 118.24,473.80 137.37,463.36 156.49,464.93 175.62,469.04 194.74,466.48 213.86,463.42 232.99,444.44 252.11,456.75 271.24,448.73 290.36,436.01 309.48,410.79 328.61,398.01 347.73,397.92 366.85,404.95 385.98,398.61 405.10,396.30 424.23,355.90 443.35,334.18 462.47,294.90 481.60,198.39 500.72,235.04 519.85,372.06 538.97,367.52 558.09,364.22 577.22,391.34 596.34,385.01 615.46,348.15 634.59,321.94 653.71,317.76 672.84,301.42 691.96,274.73 711.08,307.71 730.21,304.40 749.33,182.31 768.46,73.99 787.58,207.46 806.70,211.92 ' style='stroke-width: 2.13; stroke: #146B8C; stroke-linecap: butt;' />
 </g>
 <g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
-<text x='58.36' y='506.92' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='23.98px' lengthAdjust='spacingAndGlyphs'>0.0bn</text>
-<text x='58.36' y='367.50' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>20.0bn</text>
-<text x='58.36' y='228.09' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>40.0bn</text>
-<text x='58.36' y='88.68' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>60.0bn</text>
-<text x='175.62' y='534.84' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>1990-91</text>
-<text x='366.85' y='534.84' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2000-01</text>
-<text x='558.09' y='534.84' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='34.44px' lengthAdjust='spacingAndGlyphs'>2010-11</text>
-<text x='749.33' y='534.84' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2020-21</text>
-<text transform='translate(23.54,288.19) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='55.38px' lengthAdjust='spacingAndGlyphs'>value_real</text>
+<text x='58.36' y='483.83' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='23.98px' lengthAdjust='spacingAndGlyphs'>0.0bn</text>
+<text x='58.36' y='351.57' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>20.0bn</text>
+<text x='58.36' y='219.32' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>40.0bn</text>
+<text x='58.36' y='87.06' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>60.0bn</text>
+<polyline points='63.74,498.53 842.08,498.53 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='175.62,501.52 175.62,498.53 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='366.85,501.52 366.85,498.53 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='558.09,501.52 558.09,498.53 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='749.33,501.52 749.33,498.53 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<text x='175.62' y='513.77' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>1990-91</text>
+<text x='366.85' y='513.77' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2000-01</text>
+<text x='558.09' y='513.77' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='34.44px' lengthAdjust='spacingAndGlyphs'>2010-11</text>
+<text x='749.33' y='513.77' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>2020-21</text>
+<text x='452.91' y='534.34' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='141.36px' lengthAdjust='spacingAndGlyphs'>Income year (July to June)</text>
+<text transform='translate(23.54,276.15) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='55.38px' lengthAdjust='spacingAndGlyphs'>value_real</text>
 <text x='63.74' y='45.48' style='font-size: 11.00px; font-family: "Arial";' textLength='380.17px' lengthAdjust='spacingAndGlyphs'>ATO observations, approximately CPI-deflated into 2023-24 purchasing power</text>
 <text x='63.74' y='27.83' style='font-size: 18.00px; font-weight: bold; font-family: "Arial";' textLength='450.89px' lengthAdjust='spacingAndGlyphs'>D16 A longer history of individuals’ net taxable gains</text>
 <text x='63.74' y='549.28' style='font-size: 9.00px; font-family: "Arial";' textLength='579.02px' lengthAdjust='spacingAndGlyphs'>Source: ATO Individuals Table 1A; ABS CPI via RBA G1.  Net taxable gains reflect successive tax rules and reporting changes, including the 1999</text>

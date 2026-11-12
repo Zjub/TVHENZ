@@ -1,0 +1,11 @@
+check,passed
+Eleven selected official electorate inputs,True
+Top two do not exceed valid candidate votes,True
+Every margin is positive and top two fraction valid,True
+Two smallest National leads are Wairarapa and Hamilton East,True
+Volume-hurdle identity,True
+Fewer specials require greater margin,True
+Share threshold algebra,True
+Benchmarks are positive and denominator exact,True
+Historical mapping one per selected seat,True
+Historical counts positive and national ratio exact,True

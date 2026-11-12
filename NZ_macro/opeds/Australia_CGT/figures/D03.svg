@@ -29,56 +29,62 @@
 <rect x='0.00' y='0.00' width='864.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
 </g>
 <defs>
-  <clipPath id='cpMTk2LjAwfDg0Mi4wOHw1My43OHw1MDguNDk='>
-    <rect x='196.00' y='53.78' width='646.09' height='454.71' />
+  <clipPath id='cpMjEwLjEwfDg0Mi4wOHw1My43OHw0OTguNTM='>
+    <rect x='210.10' y='53.78' width='631.98' height='444.75' />
   </clipPath>
 </defs>
-<g clip-path='url(#cpMTk2LjAwfDg0Mi4wOHw1My43OHw1MDguNDk=)'>
-<polyline points='196.00,481.74 842.08,481.74 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='196.00,437.16 842.08,437.16 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='196.00,392.58 842.08,392.58 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='196.00,348.00 842.08,348.00 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='196.00,303.42 842.08,303.42 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='196.00,258.84 842.08,258.84 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='196.00,214.26 842.08,214.26 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='196.00,169.68 842.08,169.68 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='196.00,125.10 842.08,125.10 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='196.00,80.52 842.08,80.52 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='225.36,508.49 225.36,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='381.44,508.49 381.44,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='537.51,508.49 537.51,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='693.58,508.49 693.58,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<rect x='225.36' y='152.97' width='142.13' height='33.43' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
-<rect x='225.36' y='197.55' width='111.90' height='33.43' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
-<rect x='225.36' y='420.45' width='7.14' height='33.43' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
-<rect x='225.36' y='375.87' width='9.98' height='33.43' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
-<rect x='225.36' y='63.81' width='587.35' height='33.43' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
-<rect x='225.36' y='331.29' width='15.57' height='33.43' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
-<rect x='225.36' y='108.39' width='457.14' height='33.43' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
-<rect x='225.36' y='465.03' width='0.91' height='33.43' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
-<rect x='225.36' y='242.13' width='58.88' height='33.43' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
-<rect x='225.36' y='286.71' width='22.94' height='33.43' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
+<g clip-path='url(#cpMjEwLjEwfDg0Mi4wOHw1My43OHw0OTguNTM=)'>
+<polyline points='210.10,472.37 842.08,472.37 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='210.10,428.76 842.08,428.76 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='210.10,385.16 842.08,385.16 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='210.10,341.56 842.08,341.56 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='210.10,297.95 842.08,297.95 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='210.10,254.35 842.08,254.35 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='210.10,210.75 842.08,210.75 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='210.10,167.14 842.08,167.14 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='210.10,123.54 842.08,123.54 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='210.10,79.94 842.08,79.94 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='238.83,498.53 238.83,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='391.49,498.53 391.49,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='544.16,498.53 544.16,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='696.82,498.53 696.82,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<rect x='238.83' y='150.79' width='139.02' height='32.70' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
+<rect x='238.83' y='194.40' width='109.45' height='32.70' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
+<rect x='238.83' y='412.41' width='6.99' height='32.70' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
+<rect x='238.83' y='368.81' width='9.76' height='32.70' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
+<rect x='238.83' y='63.59' width='574.53' height='32.70' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
+<rect x='238.83' y='325.21' width='15.23' height='32.70' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
+<rect x='238.83' y='107.19' width='447.16' height='32.70' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
+<rect x='238.83' y='456.01' width='0.89' height='32.70' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
+<rect x='238.83' y='238.00' width='57.59' height='32.70' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
+<rect x='238.83' y='281.60' width='22.44' height='32.70' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #146B8C;' />
 </g>
 <g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw1NzYuMDA=)'>
-<text x='190.62' y='485.18' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='52.20px' lengthAdjust='spacingAndGlyphs'>Collectables</text>
-<text x='190.62' y='440.60' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='112.44px' lengthAdjust='spacingAndGlyphs'>Australian-listed trust units</text>
-<text x='190.62' y='396.02' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='46.91px' lengthAdjust='spacingAndGlyphs'>Other units</text>
-<text x='190.62' y='351.44' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='71.42px' lengthAdjust='spacingAndGlyphs'>Other real estate</text>
-<text x='190.62' y='306.86' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='175.67px' lengthAdjust='spacingAndGlyphs'>Unreconciled difference to published total</text>
-<text x='190.62' y='262.28' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='85.30px' lengthAdjust='spacingAndGlyphs'>Other assets/events</text>
-<text x='190.62' y='217.70' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='55.42px' lengthAdjust='spacingAndGlyphs'>Other shares</text>
-<text x='190.62' y='173.12' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='99.62px' lengthAdjust='spacingAndGlyphs'>Australian-listed shares</text>
-<text x='190.62' y='128.54' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='126.83px' lengthAdjust='spacingAndGlyphs'>Distributions from trusts/funds</text>
-<text x='190.62' y='83.96' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='117.23px' lengthAdjust='spacingAndGlyphs'>Direct Australian real estate</text>
-<text x='225.36' y='520.74' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='23.98px' lengthAdjust='spacingAndGlyphs'>0.0bn</text>
-<text x='381.44' y='520.74' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>10.0bn</text>
-<text x='537.51' y='520.74' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>20.0bn</text>
-<text x='693.58' y='520.74' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>30.0bn</text>
-<text x='519.04' y='534.34' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='28.69px' lengthAdjust='spacingAndGlyphs'>value</text>
-<text x='196.00' y='45.48' style='font-size: 11.00px; font-family: "Arial";' textLength='457.03px' lengthAdjust='spacingAndGlyphs'>Observed Australian tax-return data; income years end in June; nominal AUD unless specified</text>
-<text x='196.00' y='27.83' style='font-size: 18.00px; font-weight: bold; font-family: "Arial";' textLength='430.23px' lengthAdjust='spacingAndGlyphs'>D03 What individuals reported gains on in 2023-24</text>
-<text x='196.00' y='549.28' style='font-size: 9.00px; font-family: "Arial";' textLength='557.70px' lengthAdjust='spacingAndGlyphs'>Source: ATO CGT Table 1.  Direct Australian real estate includes commercial and other real estate. Trusts remain a separate origin category.</text>
-<text x='196.00' y='561.16' style='font-size: 9.00px; font-family: "Arial";' textLength='157.84px' lengthAdjust='spacingAndGlyphs'>Difference to published total is retained.</text>
+<text x='204.72' y='475.80' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='52.20px' lengthAdjust='spacingAndGlyphs'>Collectables</text>
+<text x='204.72' y='432.20' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='112.44px' lengthAdjust='spacingAndGlyphs'>Australian-listed trust units</text>
+<text x='204.72' y='388.59' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='46.91px' lengthAdjust='spacingAndGlyphs'>Other units</text>
+<text x='204.72' y='344.99' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='71.42px' lengthAdjust='spacingAndGlyphs'>Other real estate</text>
+<text x='204.72' y='301.39' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='175.67px' lengthAdjust='spacingAndGlyphs'>Unreconciled difference to published total</text>
+<text x='204.72' y='257.79' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='85.30px' lengthAdjust='spacingAndGlyphs'>Other assets/events</text>
+<text x='204.72' y='214.18' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='55.42px' lengthAdjust='spacingAndGlyphs'>Other shares</text>
+<text x='204.72' y='170.58' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='99.62px' lengthAdjust='spacingAndGlyphs'>Australian-listed shares</text>
+<text x='204.72' y='126.98' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='126.83px' lengthAdjust='spacingAndGlyphs'>Distributions from trusts/funds</text>
+<text x='204.72' y='83.37' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='117.23px' lengthAdjust='spacingAndGlyphs'>Direct Australian real estate</text>
+<polyline points='210.10,498.53 842.08,498.53 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='238.83,501.52 238.83,498.53 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='391.49,501.52 391.49,498.53 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='544.16,501.52 544.16,498.53 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='696.82,501.52 696.82,498.53 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<text x='238.83' y='513.77' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='23.98px' lengthAdjust='spacingAndGlyphs'>0.0bn</text>
+<text x='391.49' y='513.77' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>10.0bn</text>
+<text x='544.16' y='513.77' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>20.0bn</text>
+<text x='696.82' y='513.77' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='29.31px' lengthAdjust='spacingAndGlyphs'>30.0bn</text>
+<text x='526.09' y='534.34' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='222.77px' lengthAdjust='spacingAndGlyphs'>Reported gross capital gains (AUD billion)</text>
+<text transform='translate(23.54,276.15) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='79.34px' lengthAdjust='spacingAndGlyphs'>Asset category</text>
+<text x='210.10' y='45.48' style='font-size: 11.00px; font-family: "Arial";' textLength='457.03px' lengthAdjust='spacingAndGlyphs'>Observed Australian tax-return data; income years end in June; nominal AUD unless specified</text>
+<text x='210.10' y='27.83' style='font-size: 18.00px; font-weight: bold; font-family: "Arial";' textLength='430.23px' lengthAdjust='spacingAndGlyphs'>D03 What individuals reported gains on in 2023-24</text>
+<text x='210.10' y='549.28' style='font-size: 9.00px; font-family: "Arial";' textLength='557.70px' lengthAdjust='spacingAndGlyphs'>Source: ATO CGT Table 1.  Direct Australian real estate includes commercial and other real estate. Trusts remain a separate origin category.</text>
+<text x='210.10' y='561.16' style='font-size: 9.00px; font-family: "Arial";' textLength='157.84px' lengthAdjust='spacingAndGlyphs'>Difference to published total is retained.</text>
 </g>
 </g>
 </svg>

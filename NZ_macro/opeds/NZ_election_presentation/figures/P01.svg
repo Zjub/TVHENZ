@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1008.00pt' height='567.00pt' viewBox='0 0 1008.00 567.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw'>
+    <rect x='0.00' y='0.00' width='1008.00' height='567.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw)'>
+<rect x='0.00' y='0.00' width='1008.00' height='567.00' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNjIuMTd8OTgzLjA5fDEwMC4yMnw0NzcuOTk='>
+    <rect x='62.17' y='100.22' width='920.93' height='377.77' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNjIuMTd8OTgzLjA5fDEwMC4yMnw0NzcuOTk=)'>
+<polyline points='62.17,453.33 983.09,453.33 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='62.17,384.33 983.09,384.33 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='62.17,315.32 983.09,315.32 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='62.17,246.31 983.09,246.31 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='62.17,177.30 983.09,177.30 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='62.17,108.30 983.09,108.30 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='104.03,315.32 136.12,317.48 168.56,411.04 201.01,366.88 233.10,321.35 264.84,290.44 297.28,279.90 329.73,304.79 361.82,253.65 393.56,239.19 426.00,226.02 458.45,219.33 490.54,206.72 522.28,198.22 554.72,193.02 587.17,187.45 619.26,186.96 651.35,181.76 683.79,179.21 716.24,175.07 748.33,168.37 780.07,162.38 812.51,150.42 844.96,142.64 877.05,128.47 908.79,123.98 941.23,117.39 ' style='stroke-width: 2.45; stroke: #C28000; stroke-linecap: butt;' />
+<polyline points='104.03,315.32 136.12,325.53 168.56,460.81 201.01,288.66 233.10,281.63 264.84,252.95 297.28,242.99 329.73,306.64 361.82,249.10 393.56,248.62 426.00,230.50 458.45,195.10 490.54,190.75 522.28,195.01 554.72,181.46 587.17,183.28 619.26,176.85 651.35,179.57 683.79,179.30 716.24,197.65 748.33,194.72 780.07,182.59 812.51,189.64 844.96,171.29 877.05,166.08 908.79,149.95 941.23,144.38 ' style='stroke-width: 2.45; stroke: #007C91; stroke-linecap: butt;' />
+<line x1='62.17' y1='315.32' x2='983.09' y2='315.32' style='stroke-width: 1.75; stroke: #777777; stroke-dasharray: 2.33,6.98; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw)'>
+<text x='54.10' y='457.99' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>90</text>
+<text x='54.10' y='388.98' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>95</text>
+<text x='54.10' y='319.97' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='21.70px' lengthAdjust='spacingAndGlyphs'>100</text>
+<text x='54.10' y='250.97' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='21.70px' lengthAdjust='spacingAndGlyphs'>105</text>
+<text x='54.10' y='181.96' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='20.73px' lengthAdjust='spacingAndGlyphs'>110</text>
+<text x='54.10' y='112.95' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='20.73px' lengthAdjust='spacingAndGlyphs'>115</text>
+<polyline points='62.17,477.99 983.09,477.99 ' style='stroke-width: 0.64; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='244.03,482.47 244.03,477.99 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='501.47,482.47 501.47,477.99 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='759.26,482.47 759.26,477.99 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<text x='244.03' y='499.85' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2021</text>
+<text x='501.47' y='499.85' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2023</text>
+<text x='759.26' y='499.85' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2025</text>
+<text x='522.63' y='517.09' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='47.44px' lengthAdjust='spacingAndGlyphs'>Quarter</text>
+<text transform='translate(24.97,289.10) rotate(-90)' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='180.88px' lengthAdjust='spacingAndGlyphs'>Index: December 2019 = 100</text>
+<line x1='425.18' y1='64.68' x2='439.00' y2='64.68' style='stroke-width: 2.45; stroke: #C28000; stroke-linecap: butt;' />
+<line x1='514.84' y1='64.68' x2='528.67' y2='64.68' style='stroke-width: 2.45; stroke: #007C91; stroke-linecap: butt;' />
+<text x='449.69' y='69.69' style='font-size: 14.00px; font-family: "Arial";' textLength='54.45px' lengthAdjust='spacingAndGlyphs'>Australia</text>
+<text x='539.36' y='69.69' style='font-size: 14.00px; font-family: "Arial";' textLength='82.45px' lengthAdjust='spacingAndGlyphs'>New Zealand</text>
+<text x='14.94' y='32.84' style='font-size: 25.00px; font-weight: bold;fill: #142D40; font-family: "Arial";' textLength='701.67px' lengthAdjust='spacingAndGlyphs'>The economies grew; growth per person was much weaker</text>
+<text x='14.94' y='539.15' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='682.36px' lengthAdjust='spacingAndGlyphs'>Sources: Stats NZ June 2026 GDP CSV; ABS June 2026 Table 1. Real, seasonally adjusted expenditure GDP. Indices compare growth, not income levels.</text>
+<text x='14.94' y='549.95' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='394.20px' lengthAdjust='spacingAndGlyphs'>Snapshot: 12 November 2026. Calculations and exact plotted data accompany this chart.</text>
+</g>
+</g>
+</svg>

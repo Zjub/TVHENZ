@@ -29,38 +29,44 @@
 <rect x='-0.00000000000013' y='0.00' width='1008.00' height='576.00' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
 </g>
 <defs>
-  <clipPath id='cpMTY2LjMyfDk4Ni4wOHw1My43OHw0ODEuNDE='>
-    <rect x='166.32' y='53.78' width='819.76' height='427.63' />
+  <clipPath id='cpMTY2LjMyfDk4Ni4wOHw1My43OHw0NTcuMzQ='>
+    <rect x='166.32' y='53.78' width='819.76' height='403.56' />
   </clipPath>
 </defs>
-<g clip-path='url(#cpMTY2LjMyfDk4Ni4wOHw1My43OHw0ODEuNDE=)'>
-<polyline points='166.32,420.32 986.08,420.32 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='166.32,318.50 986.08,318.50 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='166.32,216.68 986.08,216.68 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='166.32,114.87 986.08,114.87 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='358.84,481.41 358.84,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='555.50,481.41 555.50,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='752.16,481.41 752.16,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='948.82,481.41 948.82,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<circle cx='527.23' cy='318.50' r='4.65' style='stroke-width: 0.77; stroke: #146B8C; fill: #146B8C;' />
-<circle cx='603.07' cy='216.68' r='4.65' style='stroke-width: 0.77; stroke: #146B8C; fill: #146B8C;' />
-<circle cx='203.59' cy='420.32' r='4.65' style='stroke-width: 0.77; stroke: #CF671D; fill: #CF671D;' />
-<circle cx='747.36' cy='114.87' r='4.65' style='stroke-width: 0.77; stroke: #CF671D; fill: #CF671D;' />
-<line x1='948.82' y1='481.41' x2='948.82' y2='53.78' style='stroke-width: 1.16; stroke-dasharray: 6.21,6.21; stroke-linecap: butt;' />
+<g clip-path='url(#cpMTY2LjMyfDk4Ni4wOHw1My43OHw0NTcuMzQ=)'>
+<polyline points='166.32,399.69 986.08,399.69 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='166.32,303.60 986.08,303.60 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='166.32,207.51 986.08,207.51 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='166.32,111.43 986.08,111.43 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='358.84,457.34 358.84,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='555.50,457.34 555.50,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='752.16,457.34 752.16,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='948.82,457.34 948.82,53.78 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
+<circle cx='527.23' cy='303.60' r='4.65' style='stroke-width: 0.77; stroke: #146B8C; fill: #146B8C;' />
+<circle cx='603.07' cy='207.51' r='4.65' style='stroke-width: 0.77; stroke: #146B8C; fill: #146B8C;' />
+<circle cx='203.59' cy='399.69' r='4.65' style='stroke-width: 0.77; stroke: #CF671D; fill: #CF671D;' />
+<circle cx='747.36' cy='111.43' r='4.65' style='stroke-width: 0.77; stroke: #CF671D; fill: #CF671D;' />
+<line x1='948.82' y1='457.34' x2='948.82' y2='53.78' style='stroke-width: 1.16; stroke-dasharray: 6.21,6.21; stroke-linecap: butt;' />
 </g>
 <g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NTc2LjAw)'>
-<text x='160.94' y='418.57' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='101.25px' lengthAdjust='spacingAndGlyphs'>OBR (2025), main rates</text>
-<text x='160.94' y='428.93' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='75.17px' lengthAdjust='spacingAndGlyphs'>Evaluated at 24%</text>
-<text x='160.94' y='316.75' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='115.11px' lengthAdjust='spacingAndGlyphs'>Minas, Lim &amp; Evans (2018)</text>
-<text x='160.94' y='327.12' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='88.50px' lengthAdjust='spacingAndGlyphs'>Evaluated at 36.75%</text>
-<text x='160.94' y='214.93' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='146.00px' lengthAdjust='spacingAndGlyphs'>Agersnap &amp; Zidar (2021), baseline</text>
-<text x='160.94' y='225.30' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='75.17px' lengthAdjust='spacingAndGlyphs'>Evaluated at 22%</text>
-<text x='160.94' y='113.12' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='117.77px' lengthAdjust='spacingAndGlyphs'>OBR (2025), business relief</text>
-<text x='160.94' y='123.48' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='75.17px' lengthAdjust='spacingAndGlyphs'>Evaluated at 18%</text>
-<text x='358.84' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='16.52px' lengthAdjust='spacingAndGlyphs'>-0.9</text>
-<text x='555.50' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='16.52px' lengthAdjust='spacingAndGlyphs'>-0.6</text>
-<text x='752.16' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='16.52px' lengthAdjust='spacingAndGlyphs'>-0.3</text>
-<text x='948.82' y='493.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>0.0</text>
+<text x='160.94' y='397.94' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='101.25px' lengthAdjust='spacingAndGlyphs'>OBR (2025), main rates</text>
+<text x='160.94' y='408.30' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='75.17px' lengthAdjust='spacingAndGlyphs'>Evaluated at 24%</text>
+<text x='160.94' y='301.85' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='115.11px' lengthAdjust='spacingAndGlyphs'>Minas, Lim &amp; Evans (2018)</text>
+<text x='160.94' y='312.22' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='88.50px' lengthAdjust='spacingAndGlyphs'>Evaluated at 36.75%</text>
+<text x='160.94' y='205.76' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='146.00px' lengthAdjust='spacingAndGlyphs'>Agersnap &amp; Zidar (2021), baseline</text>
+<text x='160.94' y='216.13' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='75.17px' lengthAdjust='spacingAndGlyphs'>Evaluated at 22%</text>
+<text x='160.94' y='109.68' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='117.77px' lengthAdjust='spacingAndGlyphs'>OBR (2025), business relief</text>
+<text x='160.94' y='120.05' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='75.17px' lengthAdjust='spacingAndGlyphs'>Evaluated at 18%</text>
+<polyline points='166.32,457.34 986.08,457.34 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='358.84,460.33 358.84,457.34 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='555.50,460.33 555.50,457.34 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='752.16,460.33 752.16,457.34 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<polyline points='948.82,460.33 948.82,457.34 ' style='stroke-width: 0.75; stroke: #687780; stroke-linecap: butt;' />
+<text x='358.84' y='472.57' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='16.52px' lengthAdjust='spacingAndGlyphs'>-0.9</text>
+<text x='555.50' y='472.57' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='16.52px' lengthAdjust='spacingAndGlyphs'>-0.6</text>
+<text x='752.16' y='472.57' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='16.52px' lengthAdjust='spacingAndGlyphs'>-0.3</text>
+<text x='948.82' y='472.57' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>0.0</text>
+<text x='576.20' y='493.15' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='282.05px' lengthAdjust='spacingAndGlyphs'>Elasticity of realised gains with respect to the tax rate</text>
 <circle cx='496.80' cy='522.24' r='4.65' style='stroke-width: 0.77; stroke: #146B8C; fill: #146B8C;' />
 <circle cx='565.44' cy='522.24' r='4.65' style='stroke-width: 0.77; stroke: #CF671D; fill: #CF671D;' />
 <text x='511.42' y='525.68' style='font-size: 9.60px; font-family: "Arial";' textLength='39.41px' lengthAdjust='spacingAndGlyphs'>Empirical</text>

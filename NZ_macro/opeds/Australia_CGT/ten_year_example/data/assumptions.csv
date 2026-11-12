@@ -1,0 +1,12 @@
+parameter,value
+Initial gross labour resource,100000
+Years,10
+Personal tax rate,0.3
+Company tax rate,0.3
+Inflation,0.025
+Normal real required return,0.03
+Normal nominal allowance/return/PV discount,0.055749999999999966
+Equivalent tax-exclusive broad GST,0.4285714285714286
+Current payout share: bank,1
+Current taxable profit share: company,1
+Current payout share: house/business,0

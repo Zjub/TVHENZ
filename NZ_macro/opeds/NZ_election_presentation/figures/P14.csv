@@ -1,0 +1,31 @@
+measure,year,status,value,source_sheet,source_row,block,segment
+Core Crown tax revenue,2017,Actual,27.400000000000002,Fiscal Time Series,34,Share GDP,Observed
+Core Crown tax revenue,2018,Actual,27.1,Fiscal Time Series,34,Share GDP,Observed
+Core Crown tax revenue,2019,Actual,27.900000000000002,Fiscal Time Series,34,Share GDP,Observed
+Core Crown tax revenue,2020,Actual,26.8,Fiscal Time Series,34,Share GDP,Observed
+Core Crown tax revenue,2021,Actual,28.499999999999996,Fiscal Time Series,34,Share GDP,Observed
+Core Crown tax revenue,2022,Actual,29.7,Fiscal Time Series,34,Share GDP,Observed
+Core Crown tax revenue,2023,Actual,28.000000000000004,Fiscal Time Series,34,Share GDP,Observed
+Core Crown tax revenue,2024,Actual,28.599999999999998,Fiscal Time Series,34,Share GDP,Observed
+Core Crown tax revenue,2025,Actual,28.000000000000004,Fiscal Time Series,34,Share GDP,Observed
+Core Crown tax revenue,2026,Unaudited Actual,27.6,Fiscal Time Series,34,Share GDP,Observed
+Core Crown tax revenue,2027,Forecast,28.599999999999998,Fiscal Time Series,34,Share GDP,Forecast
+Core Crown tax revenue,2028,Forecast,28.499999999999996,Fiscal Time Series,34,Share GDP,Forecast
+Core Crown tax revenue,2029,Forecast,28.799999999999997,Fiscal Time Series,34,Share GDP,Forecast
+Core Crown tax revenue,2030,Forecast,28.999999999999996,Fiscal Time Series,34,Share GDP,Forecast
+Core Crown tax revenue,2031,Forecast,29.099999999999998,Fiscal Time Series,34,Share GDP,Forecast
+Core Crown expenses,2017,Actual,27.700000000000003,Fiscal Time Series,37,Share GDP,Observed
+Core Crown expenses,2018,Actual,27.3,Fiscal Time Series,37,Share GDP,Observed
+Core Crown expenses,2019,Actual,28.000000000000004,Fiscal Time Series,37,Share GDP,Observed
+Core Crown expenses,2020,Actual,34.2,Fiscal Time Series,37,Share GDP,Observed
+Core Crown expenses,2021,Actual,31.4,Fiscal Time Series,37,Share GDP,Observed
+Core Crown expenses,2022,Actual,34.4,Fiscal Time Series,37,Share GDP,Observed
+Core Crown expenses,2023,Actual,31.7,Fiscal Time Series,37,Share GDP,Observed
+Core Crown expenses,2024,Actual,33,Fiscal Time Series,37,Share GDP,Observed
+Core Crown expenses,2025,Actual,32.6,Fiscal Time Series,37,Share GDP,Observed
+Core Crown expenses,2026,Unaudited Actual,32.1,Fiscal Time Series,37,Share GDP,Observed
+Core Crown expenses,2027,Forecast,32.2,Fiscal Time Series,37,Share GDP,Forecast
+Core Crown expenses,2028,Forecast,31.2,Fiscal Time Series,37,Share GDP,Forecast
+Core Crown expenses,2029,Forecast,30.7,Fiscal Time Series,37,Share GDP,Forecast
+Core Crown expenses,2030,Forecast,30.3,Fiscal Time Series,37,Share GDP,Forecast
+Core Crown expenses,2031,Forecast,29.799999999999997,Fiscal Time Series,37,Share GDP,Forecast

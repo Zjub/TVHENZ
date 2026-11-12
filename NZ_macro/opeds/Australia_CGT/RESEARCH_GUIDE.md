@@ -2,6 +2,8 @@
 
 Research snapshot: **11 November 2026**. This pack supports an evidence-led article and companion blog posts. It does not draft the argument or select a preferred tax rate.
 
+**Worked extension:** [Ten years of saving: present-value tax and METRs](ten_year_example/EXAMPLE.pdf) compares the four tax designs and four saving vehicles with a common initial labour resource and pre-tax return. Its [12 plots](ten_year_example/index.html) also cover company integration, unpaid labour in a zero-basis business, annual-earnings cohorts and the distinction between a specified-return wedge and a required-return METR.
+
 Start with the [62-chart gallery](figures/index.html). Every figure supplies PNG, SVG, its exact plotted CSV and an interpretation note. The [numeric notes](processed/key_findings.csv) retain units, period, observation/scenario status and limitations. Read [policy status](POLICY_STATUS.md) before describing the reforms as proposals or treating their detailed implementation as settled.
 
 ## A short first pass
