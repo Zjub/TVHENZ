@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1008.00pt' height='567.00pt' viewBox='0 0 1008.00 567.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw'>
+    <rect x='0.00' y='0.00' width='1008.00' height='567.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw)'>
+<rect x='0.00' y='0.00' width='1008.00' height='567.00' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNTIuMDN8OTgzLjA5fDQ3LjA3fDQ3Ny45OQ=='>
+    <rect x='52.03' y='47.07' width='931.07' height='430.91' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTIuMDN8OTgzLjA5fDQ3LjA3fDQ3Ny45OQ==)'>
+<polyline points='52.03,476.49 983.09,476.49 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='52.03,378.30 983.09,378.30 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='52.03,280.11 983.09,280.11 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='52.03,181.92 983.09,181.92 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='52.03,83.72 983.09,83.72 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<line x1='52.03' y1='181.92' x2='983.09' y2='181.92' style='stroke-width: 1.75; stroke: #667788; stroke-linecap: butt;' />
+<polygon points='94.35,251.14 112.88,233.02 131.41,229.96 149.74,264.11 168.07,230.88 186.60,239.97 205.14,247.31 223.47,224.75 241.60,271.30 260.13,250.41 278.66,264.40 296.99,279.55 315.12,294.65 333.65,265.03 352.18,298.86 370.51,255.10 388.64,265.05 407.17,293.03 425.71,295.60 444.04,287.32 462.37,279.13 480.90,458.40 499.43,363.95 517.76,365.97 535.89,313.12 554.42,300.74 572.95,316.17 591.28,328.51 609.41,256.89 627.95,231.83 646.48,203.94 664.81,190.94 682.94,194.25 701.47,173.43 720.00,157.25 738.33,171.79 756.66,134.24 775.19,118.30 793.73,104.31 812.06,74.34 830.19,73.53 848.72,80.94 867.25,84.11 885.58,68.94 903.71,66.66 922.24,68.81 940.77,75.84 940.77,181.92 922.24,181.92 903.71,181.92 885.58,181.92 867.25,181.92 848.72,181.92 830.19,181.92 812.06,181.92 793.73,181.92 775.19,181.92 756.66,181.92 738.33,181.92 720.00,181.92 701.47,181.92 682.94,181.92 664.81,181.92 646.48,181.92 627.95,181.92 609.41,181.92 591.28,181.92 572.95,181.92 554.42,181.92 535.89,181.92 517.76,181.92 499.43,181.92 480.90,181.92 462.37,181.92 444.04,181.92 425.71,181.92 407.17,181.92 388.64,181.92 370.51,181.92 352.18,181.92 333.65,181.92 315.12,181.92 296.99,181.92 278.66,181.92 260.13,181.92 241.60,181.92 223.47,181.92 205.14,181.92 186.60,181.92 168.07,181.92 149.74,181.92 131.41,181.92 112.88,181.92 94.35,181.92 ' style='stroke-width: 0.00; stroke: none; stroke-linecap: butt; fill: #007C91; fill-opacity: 0.20;' />
+<polyline points='94.35,251.14 112.88,233.02 131.41,229.96 149.74,264.11 168.07,230.88 186.60,239.97 205.14,247.31 223.47,224.75 241.60,271.30 260.13,250.41 278.66,264.40 296.99,279.55 315.12,294.65 333.65,265.03 352.18,298.86 370.51,255.10 388.64,265.05 407.17,293.03 425.71,295.60 444.04,287.32 462.37,279.13 480.90,458.40 499.43,363.95 517.76,365.97 535.89,313.12 554.42,300.74 572.95,316.17 591.28,328.51 609.41,256.89 627.95,231.83 646.48,203.94 664.81,190.94 682.94,194.25 701.47,173.43 720.00,157.25 738.33,171.79 756.66,134.24 775.19,118.30 793.73,104.31 812.06,74.34 830.19,73.53 848.72,80.94 867.25,84.11 885.58,68.94 903.71,66.66 922.24,68.81 940.77,75.84 ' style='stroke-width: 1.75; stroke: none; stroke-linecap: butt;' />
+<polyline points='94.35,251.14 112.88,233.02 131.41,229.96 149.74,264.11 168.07,230.88 186.60,239.97 205.14,247.31 223.47,224.75 241.60,271.30 260.13,250.41 278.66,264.40 296.99,279.55 315.12,294.65 333.65,265.03 352.18,298.86 370.51,255.10 388.64,265.05 407.17,293.03 425.71,295.60 444.04,287.32 462.37,279.13 480.90,458.40 499.43,363.95 517.76,365.97 535.89,313.12 554.42,300.74 572.95,316.17 591.28,328.51 609.41,256.89 627.95,231.83 646.48,203.94 664.81,190.94 682.94,194.25 701.47,173.43 720.00,157.25 738.33,171.79 756.66,134.24 775.19,118.30 793.73,104.31 812.06,74.34 830.19,73.53 848.72,80.94 867.25,84.11 885.58,68.94 903.71,66.66 922.24,68.81 940.77,75.84 ' style='stroke-width: 2.35; stroke: #007C91; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw)'>
+<text x='43.96' y='481.15' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='11.56px' lengthAdjust='spacingAndGlyphs'>-3</text>
+<text x='43.96' y='382.95' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='11.56px' lengthAdjust='spacingAndGlyphs'>-2</text>
+<text x='43.96' y='284.76' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='11.56px' lengthAdjust='spacingAndGlyphs'>-1</text>
+<text x='43.96' y='186.57' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='7.23px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='43.96' y='88.38' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='7.23px' lengthAdjust='spacingAndGlyphs'>1</text>
+<polyline points='52.03,477.99 983.09,477.99 ' style='stroke-width: 0.64; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='155.99,482.47 155.99,477.99 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='303.23,482.47 303.23,477.99 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='450.28,482.47 450.28,477.99 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='597.53,482.47 597.53,477.99 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='744.58,482.47 744.58,477.99 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='891.82,482.47 891.82,477.99 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<text x='155.99' y='499.85' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2016</text>
+<text x='303.23' y='499.85' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2018</text>
+<text x='450.28' y='499.85' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2020</text>
+<text x='597.53' y='499.85' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2022</text>
+<text x='744.58' y='499.85' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2024</text>
+<text x='891.82' y='499.85' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2026</text>
+<text x='517.56' y='517.09' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='47.44px' lengthAdjust='spacingAndGlyphs'>Quarter</text>
+<text transform='translate(24.97,262.53) rotate(-90)' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='345.36px' lengthAdjust='spacingAndGlyphs'>NZ minus Australian unemployment (percentage points)</text>
+<text x='14.94' y='32.84' style='font-size: 25.00px; font-weight: bold;fill: #142D40; font-family: "Arial";' textLength='669.59px' lengthAdjust='spacingAndGlyphs'>The unemployment gap has turned against New Zealand</text>
+<text x='14.94' y='539.15' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='491.45px' lengthAdjust='spacingAndGlyphs'>Sources: Stats NZ HLFS; ABS Labour Force. Australia: quarterly average of monthly seasonally adjusted rates.</text>
+<text x='14.94' y='549.95' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='394.20px' lengthAdjust='spacingAndGlyphs'>Snapshot: 12 November 2026. Calculations and exact plotted data accompany this chart.</text>
+</g>
+</g>
+</svg>

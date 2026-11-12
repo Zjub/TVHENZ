@@ -1,0 +1,406 @@
+measure,year,status,value,source_sheet,source_row,block
+Private consumption,2017,Actual,6.2,Economic Time Series,6,Source units; see workbook
+Private consumption,2018,Actual,4.7,Economic Time Series,6,Source units; see workbook
+Private consumption,2019,Actual,4.1,Economic Time Series,6,Source units; see workbook
+Private consumption,2020,Actual,-1.1,Economic Time Series,6,Source units; see workbook
+Private consumption,2021,Actual,8.1,Economic Time Series,6,Source units; see workbook
+Private consumption,2022,Actual,1.2,Economic Time Series,6,Source units; see workbook
+Private consumption,2023,Actual,3.8,Economic Time Series,6,Source units; see workbook
+Private consumption,2024,Actual,0.2,Economic Time Series,6,Source units; see workbook
+Private consumption,2025,Actual,0.6,Economic Time Series,6,Source units; see workbook
+Private consumption,2026,Forecast,1,Economic Time Series,6,Source units; see workbook
+Private consumption,2027,Forecast,1.8,Economic Time Series,6,Source units; see workbook
+Private consumption,2028,Forecast,2.7,Economic Time Series,6,Source units; see workbook
+Private consumption,2029,Forecast,2.9,Economic Time Series,6,Source units; see workbook
+Private consumption,2030,Forecast,3.1,Economic Time Series,6,Source units; see workbook
+Private consumption,2031,Forecast,3,Economic Time Series,6,Source units; see workbook
+Public consumption,2017,Actual,2.7,Economic Time Series,7,Source units; see workbook
+Public consumption,2018,Actual,4.1,Economic Time Series,7,Source units; see workbook
+Public consumption,2019,Actual,2.9,Economic Time Series,7,Source units; see workbook
+Public consumption,2020,Actual,6.4,Economic Time Series,7,Source units; see workbook
+Public consumption,2021,Actual,7.1,Economic Time Series,7,Source units; see workbook
+Public consumption,2022,Actual,7.9,Economic Time Series,7,Source units; see workbook
+Public consumption,2023,Actual,1.2,Economic Time Series,7,Source units; see workbook
+Public consumption,2024,Actual,0.6,Economic Time Series,7,Source units; see workbook
+Public consumption,2025,Actual,-0.8,Economic Time Series,7,Source units; see workbook
+Public consumption,2026,Forecast,4.7,Economic Time Series,7,Source units; see workbook
+Public consumption,2027,Forecast,1.1,Economic Time Series,7,Source units; see workbook
+Public consumption,2028,Forecast,0.4,Economic Time Series,7,Source units; see workbook
+Public consumption,2029,Forecast,0.2,Economic Time Series,7,Source units; see workbook
+Public consumption,2030,Forecast,0.2,Economic Time Series,7,Source units; see workbook
+Public consumption,2031,Forecast,0.3,Economic Time Series,7,Source units; see workbook
+TOTAL CONSUMPTION,2017,Actual,5.4,Economic Time Series,9,Source units; see workbook
+TOTAL CONSUMPTION,2018,Actual,4.5,Economic Time Series,9,Source units; see workbook
+TOTAL CONSUMPTION,2019,Actual,3.8,Economic Time Series,9,Source units; see workbook
+TOTAL CONSUMPTION,2020,Actual,0.6,Economic Time Series,9,Source units; see workbook
+TOTAL CONSUMPTION,2021,Actual,7.8,Economic Time Series,9,Source units; see workbook
+TOTAL CONSUMPTION,2022,Actual,2.8,Economic Time Series,9,Source units; see workbook
+TOTAL CONSUMPTION,2023,Actual,3.2,Economic Time Series,9,Source units; see workbook
+TOTAL CONSUMPTION,2024,Actual,0.3,Economic Time Series,9,Source units; see workbook
+TOTAL CONSUMPTION,2025,Actual,0.3,Economic Time Series,9,Source units; see workbook
+TOTAL CONSUMPTION,2026,Forecast,1.9,Economic Time Series,9,Source units; see workbook
+TOTAL CONSUMPTION,2027,Forecast,1.6,Economic Time Series,9,Source units; see workbook
+TOTAL CONSUMPTION,2028,Forecast,2.2,Economic Time Series,9,Source units; see workbook
+TOTAL CONSUMPTION,2029,Forecast,2.3,Economic Time Series,9,Source units; see workbook
+TOTAL CONSUMPTION,2030,Forecast,2.4,Economic Time Series,9,Source units; see workbook
+TOTAL CONSUMPTION,2031,Forecast,2.3,Economic Time Series,9,Source units; see workbook
+Residential investment,2017,Actual,4.2,Economic Time Series,11,Source units; see workbook
+Residential investment,2018,Actual,-0.8,Economic Time Series,11,Source units; see workbook
+Residential investment,2019,Actual,1.7,Economic Time Series,11,Source units; see workbook
+Residential investment,2020,Actual,-4.4,Economic Time Series,11,Source units; see workbook
+Residential investment,2021,Actual,16.5,Economic Time Series,11,Source units; see workbook
+Residential investment,2022,Actual,-5.6,Economic Time Series,11,Source units; see workbook
+Residential investment,2023,Actual,-0.8,Economic Time Series,11,Source units; see workbook
+Residential investment,2024,Actual,-6.8,Economic Time Series,11,Source units; see workbook
+Residential investment,2025,Actual,-12.1,Economic Time Series,11,Source units; see workbook
+Residential investment,2026,Forecast,-1.8,Economic Time Series,11,Source units; see workbook
+Residential investment,2027,Forecast,7,Economic Time Series,11,Source units; see workbook
+Residential investment,2028,Forecast,10.6,Economic Time Series,11,Source units; see workbook
+Residential investment,2029,Forecast,5.2,Economic Time Series,11,Source units; see workbook
+Residential investment,2030,Forecast,3.4,Economic Time Series,11,Source units; see workbook
+Residential investment,2031,Forecast,2.5,Economic Time Series,11,Source units; see workbook
+Business investment,2017,Actual,1.7,Economic Time Series,12,Source units; see workbook
+Business investment,2018,Actual,11.7,Economic Time Series,12,Source units; see workbook
+Business investment,2019,Actual,4.6,Economic Time Series,12,Source units; see workbook
+Business investment,2020,Actual,-2.3,Economic Time Series,12,Source units; see workbook
+Business investment,2021,Actual,8.1,Economic Time Series,12,Source units; see workbook
+Business investment,2022,Actual,5.9,Economic Time Series,12,Source units; see workbook
+Business investment,2023,Actual,5.9,Economic Time Series,12,Source units; see workbook
+Business investment,2024,Actual,-2.5,Economic Time Series,12,Source units; see workbook
+Business investment,2025,Actual,-2.4,Economic Time Series,12,Source units; see workbook
+Business investment,2026,Forecast,1.6,Economic Time Series,12,Source units; see workbook
+Business investment,2027,Forecast,1.9,Economic Time Series,12,Source units; see workbook
+Business investment,2028,Forecast,6.2,Economic Time Series,12,Source units; see workbook
+Business investment,2029,Forecast,4.8,Economic Time Series,12,Source units; see workbook
+Business investment,2030,Forecast,3.6,Economic Time Series,12,Source units; see workbook
+Business investment,2031,Forecast,2.9,Economic Time Series,12,Source units; see workbook
+TOTAL INVESTMENT,2017,Actual,2.3,Economic Time Series,14,Source units; see workbook
+TOTAL INVESTMENT,2018,Actual,8.3,Economic Time Series,14,Source units; see workbook
+TOTAL INVESTMENT,2019,Actual,3.9,Economic Time Series,14,Source units; see workbook
+TOTAL INVESTMENT,2020,Actual,-2.8,Economic Time Series,14,Source units; see workbook
+TOTAL INVESTMENT,2021,Actual,10.1,Economic Time Series,14,Source units; see workbook
+TOTAL INVESTMENT,2022,Actual,2.9,Economic Time Series,14,Source units; see workbook
+TOTAL INVESTMENT,2023,Actual,4.3,Economic Time Series,14,Source units; see workbook
+TOTAL INVESTMENT,2024,Actual,-3.4,Economic Time Series,14,Source units; see workbook
+TOTAL INVESTMENT,2025,Actual,-4.5,Economic Time Series,14,Source units; see workbook
+TOTAL INVESTMENT,2026,Forecast,1,Economic Time Series,14,Source units; see workbook
+TOTAL INVESTMENT,2027,Forecast,2.9,Economic Time Series,14,Source units; see workbook
+TOTAL INVESTMENT,2028,Forecast,7.1,Economic Time Series,14,Source units; see workbook
+TOTAL INVESTMENT,2029,Forecast,4.9,Economic Time Series,14,Source units; see workbook
+TOTAL INVESTMENT,2030,Forecast,3.6,Economic Time Series,14,Source units; see workbook
+TOTAL INVESTMENT,2031,Forecast,2.8,Economic Time Series,14,Source units; see workbook
+Stock change (contribution to growth),2017,Actual,0.4,Economic Time Series,16,Source units; see workbook
+Stock change (contribution to growth),2018,Actual,0.2,Economic Time Series,16,Source units; see workbook
+Stock change (contribution to growth),2019,Actual,-0.5,Economic Time Series,16,Source units; see workbook
+Stock change (contribution to growth),2020,Actual,-0.4,Economic Time Series,16,Source units; see workbook
+Stock change (contribution to growth),2021,Actual,0.2,Economic Time Series,16,Source units; see workbook
+Stock change (contribution to growth),2022,Actual,1,Economic Time Series,16,Source units; see workbook
+Stock change (contribution to growth),2023,Actual,-1,Economic Time Series,16,Source units; see workbook
+Stock change (contribution to growth),2024,Actual,-0.2,Economic Time Series,16,Source units; see workbook
+Stock change (contribution to growth),2025,Actual,0,Economic Time Series,16,Source units; see workbook
+Stock change (contribution to growth),2026,Forecast,0.3,Economic Time Series,16,Source units; see workbook
+Stock change (contribution to growth),2027,Forecast,0,Economic Time Series,16,Source units; see workbook
+Stock change (contribution to growth),2028,Forecast,0.2,Economic Time Series,16,Source units; see workbook
+Stock change (contribution to growth),2029,Forecast,0,Economic Time Series,16,Source units; see workbook
+Stock change (contribution to growth),2030,Forecast,0,Economic Time Series,16,Source units; see workbook
+Stock change (contribution to growth),2031,Forecast,0,Economic Time Series,16,Source units; see workbook
+GROSS NATIONAL EXPENDITURE,2017,Actual,5.1,Economic Time Series,18,Source units; see workbook
+GROSS NATIONAL EXPENDITURE,2018,Actual,5.7,Economic Time Series,18,Source units; see workbook
+GROSS NATIONAL EXPENDITURE,2019,Actual,3.3,Economic Time Series,18,Source units; see workbook
+GROSS NATIONAL EXPENDITURE,2020,Actual,-0.6,Economic Time Series,18,Source units; see workbook
+GROSS NATIONAL EXPENDITURE,2021,Actual,8.5,Economic Time Series,18,Source units; see workbook
+GROSS NATIONAL EXPENDITURE,2022,Actual,4,Economic Time Series,18,Source units; see workbook
+GROSS NATIONAL EXPENDITURE,2023,Actual,2.4,Economic Time Series,18,Source units; see workbook
+GROSS NATIONAL EXPENDITURE,2024,Actual,-0.9,Economic Time Series,18,Source units; see workbook
+GROSS NATIONAL EXPENDITURE,2025,Actual,-1,Economic Time Series,18,Source units; see workbook
+GROSS NATIONAL EXPENDITURE,2026,Forecast,2.4,Economic Time Series,18,Source units; see workbook
+GROSS NATIONAL EXPENDITURE,2027,Forecast,2.1,Economic Time Series,18,Source units; see workbook
+GROSS NATIONAL EXPENDITURE,2028,Forecast,3.3,Economic Time Series,18,Source units; see workbook
+GROSS NATIONAL EXPENDITURE,2029,Forecast,2.9,Economic Time Series,18,Source units; see workbook
+GROSS NATIONAL EXPENDITURE,2030,Forecast,2.7,Economic Time Series,18,Source units; see workbook
+GROSS NATIONAL EXPENDITURE,2031,Forecast,2.4,Economic Time Series,18,Source units; see workbook
+Exports,2017,Actual,0.9,Economic Time Series,20,Source units; see workbook
+Exports,2018,Actual,4,Economic Time Series,20,Source units; see workbook
+Exports,2019,Actual,3.3,Economic Time Series,20,Source units; see workbook
+Exports,2020,Actual,-5.4,Economic Time Series,20,Source units; see workbook
+Exports,2021,Actual,-10.8,Economic Time Series,20,Source units; see workbook
+Exports,2022,Actual,-3.1,Economic Time Series,20,Source units; see workbook
+Exports,2023,Actual,12,Economic Time Series,20,Source units; see workbook
+Exports,2024,Actual,5.2,Economic Time Series,20,Source units; see workbook
+Exports,2025,Actual,3,Economic Time Series,20,Source units; see workbook
+Exports,2026,Forecast,5.7,Economic Time Series,20,Source units; see workbook
+Exports,2027,Forecast,2.8,Economic Time Series,20,Source units; see workbook
+Exports,2028,Forecast,0.7,Economic Time Series,20,Source units; see workbook
+Exports,2029,Forecast,2.1,Economic Time Series,20,Source units; see workbook
+Exports,2030,Forecast,2.3,Economic Time Series,20,Source units; see workbook
+Exports,2031,Forecast,2.3,Economic Time Series,20,Source units; see workbook
+Imports,2017,Actual,6.3,Economic Time Series,21,Source units; see workbook
+Imports,2018,Actual,8.8,Economic Time Series,21,Source units; see workbook
+Imports,2019,Actual,2.7,Economic Time Series,21,Source units; see workbook
+Imports,2020,Actual,-5.7,Economic Time Series,21,Source units; see workbook
+Imports,2021,Actual,-4.2,Economic Time Series,21,Source units; see workbook
+Imports,2022,Actual,12,Economic Time Series,21,Source units; see workbook
+Imports,2023,Actual,2.6,Economic Time Series,21,Source units; see workbook
+Imports,2024,Actual,-1.3,Economic Time Series,21,Source units; see workbook
+Imports,2025,Actual,2,Economic Time Series,21,Source units; see workbook
+Imports,2026,Forecast,6.1,Economic Time Series,21,Source units; see workbook
+Imports,2027,Forecast,0,Economic Time Series,21,Source units; see workbook
+Imports,2028,Forecast,2.4,Economic Time Series,21,Source units; see workbook
+Imports,2029,Forecast,2.8,Economic Time Series,21,Source units; see workbook
+Imports,2030,Forecast,2.6,Economic Time Series,21,Source units; see workbook
+Imports,2031,Forecast,2.3,Economic Time Series,21,Source units; see workbook
+EXPENDITURE ON GDP,2017,Actual,3.6,Economic Time Series,23,Source units; see workbook
+EXPENDITURE ON GDP,2018,Actual,4.5,Economic Time Series,23,Source units; see workbook
+EXPENDITURE ON GDP,2019,Actual,3.5,Economic Time Series,23,Source units; see workbook
+EXPENDITURE ON GDP,2020,Actual,-0.6,Economic Time Series,23,Source units; see workbook
+EXPENDITURE ON GDP,2021,Actual,6.7,Economic Time Series,23,Source units; see workbook
+EXPENDITURE ON GDP,2022,Actual,0.6,Economic Time Series,23,Source units; see workbook
+EXPENDITURE ON GDP,2023,Actual,4.6,Economic Time Series,23,Source units; see workbook
+EXPENDITURE ON GDP,2024,Actual,0.7,Economic Time Series,23,Source units; see workbook
+EXPENDITURE ON GDP,2025,Actual,-0.8,Economic Time Series,23,Source units; see workbook
+EXPENDITURE ON GDP,2026,Forecast,2.1,Economic Time Series,23,Source units; see workbook
+EXPENDITURE ON GDP,2027,Forecast,2.6,Economic Time Series,23,Source units; see workbook
+EXPENDITURE ON GDP,2028,Forecast,3,Economic Time Series,23,Source units; see workbook
+EXPENDITURE ON GDP,2029,Forecast,2.7,Economic Time Series,23,Source units; see workbook
+EXPENDITURE ON GDP,2030,Forecast,2.6,Economic Time Series,23,Source units; see workbook
+EXPENDITURE ON GDP,2031,Forecast,2.4,Economic Time Series,23,Source units; see workbook
+GDP (production measure),2017,Actual,3.5,Economic Time Series,24,Source units; see workbook
+GDP (production measure),2018,Actual,3.4,Economic Time Series,24,Source units; see workbook
+GDP (production measure),2019,Actual,3.1,Economic Time Series,24,Source units; see workbook
+GDP (production measure),2020,Actual,-0.8,Economic Time Series,24,Source units; see workbook
+GDP (production measure),2021,Actual,6.3,Economic Time Series,24,Source units; see workbook
+GDP (production measure),2022,Actual,0.5,Economic Time Series,24,Source units; see workbook
+GDP (production measure),2023,Actual,4,Economic Time Series,24,Source units; see workbook
+GDP (production measure),2024,Actual,1.1,Economic Time Series,24,Source units; see workbook
+GDP (production measure),2025,Actual,-1.1,Economic Time Series,24,Source units; see workbook
+GDP (production measure),2026,Forecast,1.6,Economic Time Series,24,Source units; see workbook
+GDP (production measure),2027,Forecast,2.3,Economic Time Series,24,Source units; see workbook
+GDP (production measure),2028,Forecast,2.9,Economic Time Series,24,Source units; see workbook
+GDP (production measure),2029,Forecast,2.7,Economic Time Series,24,Source units; see workbook
+GDP (production measure),2030,Forecast,2.6,Economic Time Series,24,Source units; see workbook
+GDP (production measure),2031,Forecast,2.5,Economic Time Series,24,Source units; see workbook
+- annual % change,2017,Actual,3.2,Economic Time Series,25,Source units; see workbook
+- annual % change,2018,Actual,3.5,Economic Time Series,25,Source units; see workbook
+- annual % change,2019,Actual,2.5,Economic Time Series,25,Source units; see workbook
+- annual % change,2020,Actual,-9.7,Economic Time Series,25,Source units; see workbook
+- annual % change,2021,Actual,17.8,Economic Time Series,25,Source units; see workbook
+- annual % change,2022,Actual,0.5,Economic Time Series,25,Source units; see workbook
+- annual % change,2023,Actual,3,Economic Time Series,25,Source units; see workbook
+- annual % change,2024,Actual,0.1,Economic Time Series,25,Source units; see workbook
+- annual % change,2025,Actual,-0.9,Economic Time Series,25,Source units; see workbook
+- annual % change,2026,Forecast,2.2,Economic Time Series,25,Source units; see workbook
+- annual % change,2027,Forecast,2.9,Economic Time Series,25,Source units; see workbook
+- annual % change,2028,Forecast,2.7,Economic Time Series,25,Source units; see workbook
+- annual % change,2029,Forecast,2.7,Economic Time Series,25,Source units; see workbook
+- annual % change,2030,Forecast,2.5,Economic Time Series,25,Source units; see workbook
+- annual % change,2031,Forecast,2.5,Economic Time Series,25,Source units; see workbook
+Real GDP per capita,2017,Actual,1.3,Economic Time Series,27,Source units; see workbook
+Real GDP per capita,2018,Actual,1.4,Economic Time Series,27,Source units; see workbook
+Real GDP per capita,2019,Actual,1.5,Economic Time Series,27,Source units; see workbook
+Real GDP per capita,2020,Actual,-2.5,Economic Time Series,27,Source units; see workbook
+Real GDP per capita,2021,Actual,5.1,Economic Time Series,27,Source units; see workbook
+Real GDP per capita,2022,Actual,0.4,Economic Time Series,27,Source units; see workbook
+Real GDP per capita,2023,Actual,3.1,Economic Time Series,27,Source units; see workbook
+Real GDP per capita,2024,Actual,-1.4,Economic Time Series,27,Source units; see workbook
+Real GDP per capita,2025,Actual,-2.1,Economic Time Series,27,Source units; see workbook
+Real GDP per capita,2026,Forecast,1,Economic Time Series,27,Source units; see workbook
+Real GDP per capita,2027,Forecast,1.4,Economic Time Series,27,Source units; see workbook
+Real GDP per capita,2028,Forecast,1.8,Economic Time Series,27,Source units; see workbook
+Real GDP per capita,2029,Forecast,1.5,Economic Time Series,27,Source units; see workbook
+Real GDP per capita,2030,Forecast,1.4,Economic Time Series,27,Source units; see workbook
+Real GDP per capita,2031,Forecast,1.3,Economic Time Series,27,Source units; see workbook
+Nominal GDP (expenditure basis),2017,Actual,6.5,Economic Time Series,28,Source units; see workbook
+Nominal GDP (expenditure basis),2018,Actual,7.2,Economic Time Series,28,Source units; see workbook
+Nominal GDP (expenditure basis),2019,Actual,5,Economic Time Series,28,Source units; see workbook
+Nominal GDP (expenditure basis),2020,Actual,2.5,Economic Time Series,28,Source units; see workbook
+Nominal GDP (expenditure basis),2021,Actual,8.1,Economic Time Series,28,Source units; see workbook
+Nominal GDP (expenditure basis),2022,Actual,6.3,Economic Time Series,28,Source units; see workbook
+Nominal GDP (expenditure basis),2023,Actual,10,Economic Time Series,28,Source units; see workbook
+Nominal GDP (expenditure basis),2024,Actual,4.7,Economic Time Series,28,Source units; see workbook
+Nominal GDP (expenditure basis),2025,Actual,3.4,Economic Time Series,28,Source units; see workbook
+Nominal GDP (expenditure basis),2026,Forecast,4.8,Economic Time Series,28,Source units; see workbook
+Nominal GDP (expenditure basis),2027,Forecast,5.3,Economic Time Series,28,Source units; see workbook
+Nominal GDP (expenditure basis),2028,Forecast,5.7,Economic Time Series,28,Source units; see workbook
+Nominal GDP (expenditure basis),2029,Forecast,4.9,Economic Time Series,28,Source units; see workbook
+Nominal GDP (expenditure basis),2030,Forecast,4.7,Economic Time Series,28,Source units; see workbook
+Nominal GDP (expenditure basis),2031,Forecast,4.5,Economic Time Series,28,Source units; see workbook
+GDP deflator,2017,Actual,2.8,Economic Time Series,29,Source units; see workbook
+GDP deflator,2018,Actual,2.6,Economic Time Series,29,Source units; see workbook
+GDP deflator,2019,Actual,1.5,Economic Time Series,29,Source units; see workbook
+GDP deflator,2020,Actual,3.1,Economic Time Series,29,Source units; see workbook
+GDP deflator,2021,Actual,1.3,Economic Time Series,29,Source units; see workbook
+GDP deflator,2022,Actual,5.6,Economic Time Series,29,Source units; see workbook
+GDP deflator,2023,Actual,5.2,Economic Time Series,29,Source units; see workbook
+GDP deflator,2024,Actual,4,Economic Time Series,29,Source units; see workbook
+GDP deflator,2025,Actual,4.2,Economic Time Series,29,Source units; see workbook
+GDP deflator,2026,Forecast,2.6,Economic Time Series,29,Source units; see workbook
+GDP deflator,2027,Forecast,2.7,Economic Time Series,29,Source units; see workbook
+GDP deflator,2028,Forecast,2.7,Economic Time Series,29,Source units; see workbook
+GDP deflator,2029,Forecast,2.2,Economic Time Series,29,Source units; see workbook
+GDP deflator,2030,Forecast,2,Economic Time Series,29,Source units; see workbook
+GDP deflator,2031,Forecast,2,Economic Time Series,29,Source units; see workbook
+"Output gap (% deviation, June year average)",2017,Actual,0.3,Economic Time Series,30,Source units; see workbook
+"Output gap (% deviation, June year average)",2018,Actual,0.8,Economic Time Series,30,Source units; see workbook
+"Output gap (% deviation, June year average)",2019,Actual,1.2,Economic Time Series,30,Source units; see workbook
+"Output gap (% deviation, June year average)",2020,Actual,0.7,Economic Time Series,30,Source units; see workbook
+"Output gap (% deviation, June year average)",2021,Actual,1.9,Economic Time Series,30,Source units; see workbook
+"Output gap (% deviation, June year average)",2022,Actual,2.4,Economic Time Series,30,Source units; see workbook
+"Output gap (% deviation, June year average)",2023,Actual,2,Economic Time Series,30,Source units; see workbook
+"Output gap (% deviation, June year average)",2024,Actual,1.1,Economic Time Series,30,Source units; see workbook
+"Output gap (% deviation, June year average)",2025,Actual,-1.8,Economic Time Series,30,Source units; see workbook
+"Output gap (% deviation, June year average)",2026,Forecast,-1.9,Economic Time Series,30,Source units; see workbook
+"Output gap (% deviation, June year average)",2027,Forecast,-1.5,Economic Time Series,30,Source units; see workbook
+"Output gap (% deviation, June year average)",2028,Forecast,-0.6,Economic Time Series,30,Source units; see workbook
+"Output gap (% deviation, June year average)",2029,Forecast,-0.2,Economic Time Series,30,Source units; see workbook
+"Output gap (% deviation, June year average)",2030,Forecast,0.1,Economic Time Series,30,Source units; see workbook
+"Output gap (% deviation, June year average)",2031,Forecast,0,Economic Time Series,30,Source units; see workbook
+Employment1,2017,Actual,5.3,Economic Time Series,32,Source units; see workbook
+Employment1,2018,Actual,3.6,Economic Time Series,32,Source units; see workbook
+Employment1,2019,Actual,1.8,Economic Time Series,32,Source units; see workbook
+Employment1,2020,Actual,1.4,Economic Time Series,32,Source units; see workbook
+Employment1,2021,Actual,0.4,Economic Time Series,32,Source units; see workbook
+Employment1,2022,Actual,2.5,Economic Time Series,32,Source units; see workbook
+Employment1,2023,Actual,2.4,Economic Time Series,32,Source units; see workbook
+Employment1,2024,Actual,1.6,Economic Time Series,32,Source units; see workbook
+Employment1,2025,Actual,-1,Economic Time Series,32,Source units; see workbook
+Employment1,2026,Forecast,0.3,Economic Time Series,32,Source units; see workbook
+Employment1,2027,Forecast,1.6,Economic Time Series,32,Source units; see workbook
+Employment1,2028,Forecast,2.3,Economic Time Series,32,Source units; see workbook
+Employment1,2029,Forecast,1.9,Economic Time Series,32,Source units; see workbook
+Employment1,2030,Forecast,1.6,Economic Time Series,32,Source units; see workbook
+Employment1,2031,Forecast,1.4,Economic Time Series,32,Source units; see workbook
+Unemployment1 (% June quarter s.a.),2017,Actual,4.9,Economic Time Series,33,Source units; see workbook
+Unemployment1 (% June quarter s.a.),2018,Actual,4.6,Economic Time Series,33,Source units; see workbook
+Unemployment1 (% June quarter s.a.),2019,Actual,4.1,Economic Time Series,33,Source units; see workbook
+Unemployment1 (% June quarter s.a.),2020,Actual,4.1,Economic Time Series,33,Source units; see workbook
+Unemployment1 (% June quarter s.a.),2021,Actual,4,Economic Time Series,33,Source units; see workbook
+Unemployment1 (% June quarter s.a.),2022,Actual,3.3,Economic Time Series,33,Source units; see workbook
+Unemployment1 (% June quarter s.a.),2023,Actual,3.7,Economic Time Series,33,Source units; see workbook
+Unemployment1 (% June quarter s.a.),2024,Actual,4.7,Economic Time Series,33,Source units; see workbook
+Unemployment1 (% June quarter s.a.),2025,Actual,5.2,Economic Time Series,33,Source units; see workbook
+Unemployment1 (% June quarter s.a.),2026,Forecast,5.6,Economic Time Series,33,Source units; see workbook
+Unemployment1 (% June quarter s.a.),2027,Forecast,5.2,Economic Time Series,33,Source units; see workbook
+Unemployment1 (% June quarter s.a.),2028,Forecast,4.7,Economic Time Series,33,Source units; see workbook
+Unemployment1 (% June quarter s.a.),2029,Forecast,4.4,Economic Time Series,33,Source units; see workbook
+Unemployment1 (% June quarter s.a.),2030,Forecast,4.3,Economic Time Series,33,Source units; see workbook
+Unemployment1 (% June quarter s.a.),2031,Forecast,4.3,Economic Time Series,33,Source units; see workbook
+"Wages1 (average ordinary-time hourly, ann % change)",2017,Actual,2.5,Economic Time Series,35,Source units; see workbook
+"Wages1 (average ordinary-time hourly, ann % change)",2018,Actual,2.8,Economic Time Series,35,Source units; see workbook
+"Wages1 (average ordinary-time hourly, ann % change)",2019,Actual,4,Economic Time Series,35,Source units; see workbook
+"Wages1 (average ordinary-time hourly, ann % change)",2020,Actual,2.9,Economic Time Series,35,Source units; see workbook
+"Wages1 (average ordinary-time hourly, ann % change)",2021,Actual,4,Economic Time Series,35,Source units; see workbook
+"Wages1 (average ordinary-time hourly, ann % change)",2022,Actual,6.3,Economic Time Series,35,Source units; see workbook
+"Wages1 (average ordinary-time hourly, ann % change)",2023,Actual,6.9,Economic Time Series,35,Source units; see workbook
+"Wages1 (average ordinary-time hourly, ann % change)",2024,Actual,5,Economic Time Series,35,Source units; see workbook
+"Wages1 (average ordinary-time hourly, ann % change)",2025,Actual,4.5,Economic Time Series,35,Source units; see workbook
+"Wages1 (average ordinary-time hourly, ann % change)",2026,Forecast,2.8,Economic Time Series,35,Source units; see workbook
+"Wages1 (average ordinary-time hourly, ann % change)",2027,Forecast,3.1,Economic Time Series,35,Source units; see workbook
+"Wages1 (average ordinary-time hourly, ann % change)",2028,Forecast,3.2,Economic Time Series,35,Source units; see workbook
+"Wages1 (average ordinary-time hourly, ann % change)",2029,Forecast,3.3,Economic Time Series,35,Source units; see workbook
+"Wages1 (average ordinary-time hourly, ann % change)",2030,Forecast,3.5,Economic Time Series,35,Source units; see workbook
+"Wages1 (average ordinary-time hourly, ann % change)",2031,Forecast,3.5,Economic Time Series,35,Source units; see workbook
+CPI inflation1 (ann % change),2017,Actual,1.7,Economic Time Series,36,Source units; see workbook
+CPI inflation1 (ann % change),2018,Actual,1.5,Economic Time Series,36,Source units; see workbook
+CPI inflation1 (ann % change),2019,Actual,1.7,Economic Time Series,36,Source units; see workbook
+CPI inflation1 (ann % change),2020,Actual,1.5,Economic Time Series,36,Source units; see workbook
+CPI inflation1 (ann % change),2021,Actual,3.3,Economic Time Series,36,Source units; see workbook
+CPI inflation1 (ann % change),2022,Actual,7.3,Economic Time Series,36,Source units; see workbook
+CPI inflation1 (ann % change),2023,Actual,6,Economic Time Series,36,Source units; see workbook
+CPI inflation1 (ann % change),2024,Actual,3.3,Economic Time Series,36,Source units; see workbook
+CPI inflation1 (ann % change),2025,Actual,2.7,Economic Time Series,36,Source units; see workbook
+CPI inflation1 (ann % change),2026,Forecast,4.1,Economic Time Series,36,Source units; see workbook
+CPI inflation1 (ann % change),2027,Forecast,1.9,Economic Time Series,36,Source units; see workbook
+CPI inflation1 (ann % change),2028,Forecast,2,Economic Time Series,36,Source units; see workbook
+CPI inflation1 (ann % change),2029,Forecast,2.1,Economic Time Series,36,Source units; see workbook
+CPI inflation1 (ann % change),2030,Forecast,2.1,Economic Time Series,36,Source units; see workbook
+CPI inflation1 (ann % change),2031,Forecast,2,Economic Time Series,36,Source units; see workbook
+Merchandise terms of trade (SNA basis),2017,Actual,4.3,Economic Time Series,37,Source units; see workbook
+Merchandise terms of trade (SNA basis),2018,Actual,4.7,Economic Time Series,37,Source units; see workbook
+Merchandise terms of trade (SNA basis),2019,Actual,-2.8,Economic Time Series,37,Source units; see workbook
+Merchandise terms of trade (SNA basis),2020,Actual,4.7,Economic Time Series,37,Source units; see workbook
+Merchandise terms of trade (SNA basis),2021,Actual,0.4,Economic Time Series,37,Source units; see workbook
+Merchandise terms of trade (SNA basis),2022,Actual,2.8,Economic Time Series,37,Source units; see workbook
+Merchandise terms of trade (SNA basis),2023,Actual,-7,Economic Time Series,37,Source units; see workbook
+Merchandise terms of trade (SNA basis),2024,Actual,-2.6,Economic Time Series,37,Source units; see workbook
+Merchandise terms of trade (SNA basis),2025,Actual,8,Economic Time Series,37,Source units; see workbook
+Merchandise terms of trade (SNA basis),2026,Forecast,2.1,Economic Time Series,37,Source units; see workbook
+Merchandise terms of trade (SNA basis),2027,Forecast,0.1,Economic Time Series,37,Source units; see workbook
+Merchandise terms of trade (SNA basis),2028,Forecast,4.1,Economic Time Series,37,Source units; see workbook
+Merchandise terms of trade (SNA basis),2029,Forecast,0.9,Economic Time Series,37,Source units; see workbook
+Merchandise terms of trade (SNA basis),2030,Forecast,0.1,Economic Time Series,37,Source units; see workbook
+Merchandise terms of trade (SNA basis),2031,Forecast,0,Economic Time Series,37,Source units; see workbook
+House prices (ann % change),2017,Actual,6.5,Economic Time Series,38,Source units; see workbook
+House prices (ann % change),2018,Actual,3.6,Economic Time Series,38,Source units; see workbook
+House prices (ann % change),2019,Actual,1.5,Economic Time Series,38,Source units; see workbook
+House prices (ann % change),2020,Actual,7.1,Economic Time Series,38,Source units; see workbook
+House prices (ann % change),2021,Actual,29.6,Economic Time Series,38,Source units; see workbook
+House prices (ann % change),2022,Actual,5.3,Economic Time Series,38,Source units; see workbook
+House prices (ann % change),2023,Actual,-9,Economic Time Series,38,Source units; see workbook
+House prices (ann % change),2024,Actual,1.5,Economic Time Series,38,Source units; see workbook
+House prices (ann % change),2025,Actual,-0.7,Economic Time Series,38,Source units; see workbook
+House prices (ann % change),2026,Forecast,-0.4,Economic Time Series,38,Source units; see workbook
+House prices (ann % change),2027,Forecast,0.6,Economic Time Series,38,Source units; see workbook
+House prices (ann % change),2028,Forecast,2.4,Economic Time Series,38,Source units; see workbook
+House prices (ann % change),2029,Forecast,3.7,Economic Time Series,38,Source units; see workbook
+House prices (ann % change),2030,Forecast,4.1,Economic Time Series,38,Source units; see workbook
+House prices (ann % change),2031,Forecast,4.8,Economic Time Series,38,Source units; see workbook
+Current account balance - $billion,2017,Actual,-7.379,Economic Time Series,40,Source units; see workbook
+Current account balance - $billion,2018,Actual,-11.072,Economic Time Series,40,Source units; see workbook
+Current account balance - $billion,2019,Actual,-11.286,Economic Time Series,40,Source units; see workbook
+Current account balance - $billion,2020,Actual,-5.126,Economic Time Series,40,Source units; see workbook
+Current account balance - $billion,2021,Actual,-11.116,Economic Time Series,40,Source units; see workbook
+Current account balance - $billion,2022,Actual,-29.158,Economic Time Series,40,Source units; see workbook
+Current account balance - $billion,2023,Actual,-29.813,Economic Time Series,40,Source units; see workbook
+Current account balance - $billion,2024,Actual,-23.231,Economic Time Series,40,Source units; see workbook
+Current account balance - $billion,2025,Actual,-16.55,Economic Time Series,40,Source units; see workbook
+Current account balance - $billion,2026,Forecast,-18.029,Economic Time Series,40,Source units; see workbook
+Current account balance - $billion,2027,Forecast,-16.643,Economic Time Series,40,Source units; see workbook
+Current account balance - $billion,2028,Forecast,-13.945,Economic Time Series,40,Source units; see workbook
+Current account balance - $billion,2029,Forecast,-13.758,Economic Time Series,40,Source units; see workbook
+Current account balance - $billion,2030,Forecast,-14.055,Economic Time Series,40,Source units; see workbook
+Current account balance - $billion,2031,Forecast,-14.152,Economic Time Series,40,Source units; see workbook
+Current account balance - % of GDP,2017,Actual,-2.7,Economic Time Series,41,Source units; see workbook
+Current account balance - % of GDP,2018,Actual,-3.8,Economic Time Series,41,Source units; see workbook
+Current account balance - % of GDP,2019,Actual,-3.6,Economic Time Series,41,Source units; see workbook
+Current account balance - % of GDP,2020,Actual,-1.6,Economic Time Series,41,Source units; see workbook
+Current account balance - % of GDP,2021,Actual,-3.2,Economic Time Series,41,Source units; see workbook
+Current account balance - % of GDP,2022,Actual,-8,Economic Time Series,41,Source units; see workbook
+Current account balance - % of GDP,2023,Actual,-7.4,Economic Time Series,41,Source units; see workbook
+Current account balance - % of GDP,2024,Actual,-5.5,Economic Time Series,41,Source units; see workbook
+Current account balance - % of GDP,2025,Actual,-3.8,Economic Time Series,41,Source units; see workbook
+Current account balance - % of GDP,2026,Forecast,-4,Economic Time Series,41,Source units; see workbook
+Current account balance - % of GDP,2027,Forecast,-3.5,Economic Time Series,41,Source units; see workbook
+Current account balance - % of GDP,2028,Forecast,-2.7,Economic Time Series,41,Source units; see workbook
+Current account balance - % of GDP,2029,Forecast,-2.6,Economic Time Series,41,Source units; see workbook
+Current account balance - % of GDP,2030,Forecast,-2.5,Economic Time Series,41,Source units; see workbook
+Current account balance - % of GDP,2031,Forecast,-2.4,Economic Time Series,41,Source units; see workbook
+TWI1 (June quarter),2017,Actual,76.5,Economic Time Series,43,Source units; see workbook
+TWI1 (June quarter),2018,Actual,73.8,Economic Time Series,43,Source units; see workbook
+TWI1 (June quarter),2019,Actual,72.7,Economic Time Series,43,Source units; see workbook
+TWI1 (June quarter),2020,Actual,69.7,Economic Time Series,43,Source units; see workbook
+TWI1 (June quarter),2021,Actual,74.7,Economic Time Series,43,Source units; see workbook
+TWI1 (June quarter),2022,Actual,72.2,Economic Time Series,43,Source units; see workbook
+TWI1 (June quarter),2023,Actual,70.9,Economic Time Series,43,Source units; see workbook
+TWI1 (June quarter),2024,Actual,71.4,Economic Time Series,43,Source units; see workbook
+TWI1 (June quarter),2025,Actual,69.1,Economic Time Series,43,Source units; see workbook
+TWI1 (June quarter),2026,Forecast,66.5,Economic Time Series,43,Source units; see workbook
+TWI1 (June quarter),2027,Forecast,67.7,Economic Time Series,43,Source units; see workbook
+TWI1 (June quarter),2028,Forecast,68.7,Economic Time Series,43,Source units; see workbook
+TWI1 (June quarter),2029,Forecast,69.3,Economic Time Series,43,Source units; see workbook
+TWI1 (June quarter),2030,Forecast,69.8,Economic Time Series,43,Source units; see workbook
+TWI1 (June quarter),2031,Forecast,70.1,Economic Time Series,43,Source units; see workbook
+90-day bank bill rate1 (June quarter),2017,Actual,2,Economic Time Series,44,Source units; see workbook
+90-day bank bill rate1 (June quarter),2018,Actual,2,Economic Time Series,44,Source units; see workbook
+90-day bank bill rate1 (June quarter),2019,Actual,1.7,Economic Time Series,44,Source units; see workbook
+90-day bank bill rate1 (June quarter),2020,Actual,0.3,Economic Time Series,44,Source units; see workbook
+90-day bank bill rate1 (June quarter),2021,Actual,0.3,Economic Time Series,44,Source units; see workbook
+90-day bank bill rate1 (June quarter),2022,Actual,2.2,Economic Time Series,44,Source units; see workbook
+90-day bank bill rate1 (June quarter),2023,Actual,5.6,Economic Time Series,44,Source units; see workbook
+90-day bank bill rate1 (June quarter),2024,Actual,5.6,Economic Time Series,44,Source units; see workbook
+90-day bank bill rate1 (June quarter),2025,Actual,3.4,Economic Time Series,44,Source units; see workbook
+90-day bank bill rate1 (June quarter),2026,Forecast,2.6,Economic Time Series,44,Source units; see workbook
+90-day bank bill rate1 (June quarter),2027,Forecast,3.5,Economic Time Series,44,Source units; see workbook
+90-day bank bill rate1 (June quarter),2028,Forecast,3.7,Economic Time Series,44,Source units; see workbook
+90-day bank bill rate1 (June quarter),2029,Forecast,3.8,Economic Time Series,44,Source units; see workbook
+90-day bank bill rate1 (June quarter),2030,Forecast,3.8,Economic Time Series,44,Source units; see workbook
+90-day bank bill rate1 (June quarter),2031,Forecast,3.6,Economic Time Series,44,Source units; see workbook

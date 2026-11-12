@@ -1,0 +1,95 @@
+country,measure,date,value,source_series,months
+Australia,Employment rate,2015-03-01,60.8216703,A84423054K,3
+Australia,Employment rate,2015-06-01,60.914320266666664,A84423054K,3
+Australia,Employment rate,2015-09-01,60.9763487,A84423054K,3
+Australia,Employment rate,2015-12-01,61.3718663,A84423054K,3
+Australia,Employment rate,2016-03-01,61.30048013333333,A84423054K,3
+Australia,Employment rate,2016-06-01,61.182953966666666,A84423054K,3
+Australia,Employment rate,2016-09-01,61.0014702,A84423054K,3
+Australia,Employment rate,2016-12-01,60.880940966666664,A84423054K,3
+Australia,Employment rate,2017-03-01,60.857839033333335,A84423054K,3
+Australia,Employment rate,2017-06-01,61.2186388,A84423054K,3
+Australia,Employment rate,2017-09-01,61.549944466666666,A84423054K,3
+Australia,Employment rate,2017-12-01,61.76780526666667,A84423054K,3
+Australia,Employment rate,2018-03-01,61.8327073,A84423054K,3
+Australia,Employment rate,2018-06-01,61.798281833333334,A84423054K,3
+Australia,Employment rate,2018-09-01,61.99401396666667,A84423054K,3
+Australia,Employment rate,2018-12-01,62.13700146666667,A84423054K,3
+Australia,Employment rate,2019-03-01,62.25859756666667,A84423054K,3
+Australia,Employment rate,2019-06-01,62.3449137,A84423054K,3
+Australia,Employment rate,2019-09-01,62.48885696666667,A84423054K,3
+Australia,Employment rate,2019-12-01,62.29142463333333,A84423054K,3
+Australia,Employment rate,2020-03-01,62.237081133333334,A84423054K,3
+Australia,Employment rate,2020-06-01,58.7183355,A84423054K,3
+Australia,Employment rate,2020-09-01,60.0146849,A84423054K,3
+Australia,Employment rate,2020-12-01,61.150304866666666,A84423054K,3
+Australia,Employment rate,2021-03-01,61.8906311,A84423054K,3
+Australia,Employment rate,2021-06-01,62.38326216666667,A84423054K,3
+Australia,Employment rate,2021-09-01,62.029522766666666,A84423054K,3
+Australia,Employment rate,2021-12-01,62.330396400000005,A84423054K,3
+Australia,Employment rate,2022-03-01,63.425434300000006,A84423054K,3
+Australia,Employment rate,2022-06-01,63.833638433333334,A84423054K,3
+Australia,Employment rate,2022-09-01,64.09219156666667,A84423054K,3
+Australia,Employment rate,2022-12-01,64.17982096666667,A84423054K,3
+Australia,Employment rate,2023-03-01,64.11407100000001,A84423054K,3
+Australia,Employment rate,2023-06-01,64.26242266666667,A84423054K,3
+Australia,Employment rate,2023-09-01,64.19132246666668,A84423054K,3
+Australia,Employment rate,2023-12-01,64.20840886666666,A84423054K,3
+Australia,Employment rate,2024-03-01,63.98596253333334,A84423054K,3
+Australia,Employment rate,2024-06-01,64.06160729999999,A84423054K,3
+Australia,Employment rate,2024-09-01,64.32055856666666,A84423054K,3
+Australia,Employment rate,2024-12-01,64.3294554,A84423054K,3
+Australia,Employment rate,2025-03-01,64.1129451,A84423054K,3
+Australia,Employment rate,2025-06-01,64.20977513333334,A84423054K,3
+Australia,Employment rate,2025-09-01,64.02897363333334,A84423054K,3
+Australia,Employment rate,2025-12-01,63.904979266666665,A84423054K,3
+Australia,Employment rate,2026-03-01,63.93886823333333,A84423054K,3
+Australia,Employment rate,2026-06-01,63.817022699999995,A84423054K,3
+Australia,Employment rate,2026-09-01,63.78120346666666,A84423054K,3
+New Zealand,Employment rate,2015-03-01,65.5,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2015-06-01,65.3,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2015-09-01,64.5,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2015-12-01,64.9,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2016-03-01,65.3,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2016-06-01,66.5,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2016-09-01,66.6,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2016-12-01,67,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2017-03-01,67.4,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2017-06-01,67,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2017-09-01,67.8,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2017-12-01,68,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2018-03-01,68,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2018-06-01,67.9,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2018-09-01,68.2,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2018-12-01,67.8,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2019-03-01,67.6,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2019-06-01,67.8,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2019-09-01,67.7,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2019-12-01,67.5,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2020-03-01,67.7,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2020-06-01,67.2,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2020-09-01,66.4,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2020-12-01,66.7,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2021-03-01,67.2,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2021-06-01,67.8,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2021-09-01,68.8,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2021-12-01,68.7,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2022-03-01,68.6,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2022-06-01,68.5,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2022-09-01,69.4,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2022-12-01,69.4,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2023-03-01,69.6,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2023-06-01,69.7,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2023-09-01,69.2,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2023-12-01,68.9,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2024-03-01,68.3,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2024-06-01,68.2,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2024-09-01,67.7,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2024-12-01,67.2,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2025-03-01,67.1,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2025-06-01,66.8,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2025-09-01,66.6,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2025-12-01,66.7,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2026-03-01,66.6,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2026-06-01,66.7,HLFQ.S1H3S,NA
+New Zealand,Employment rate,2026-09-01,66.4,HLFQ.S1H3S,NA

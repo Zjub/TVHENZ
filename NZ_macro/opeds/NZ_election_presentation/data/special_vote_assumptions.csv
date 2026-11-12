@@ -1,0 +1,7 @@
+name,value,kind,url
+National estimated special ballots,399365,Electoral Commission estimate,https://elections.nz/media-and-news/2026/2026-general-election-preliminary-results
+National ordinary ballots including informal,2432403,Electoral Commission preliminary count,https://elections.nz/media-and-news/2026/2026-general-election-preliminary-results
+National valid candidate specials 2023,524823,Electoral Commission official turnout table combined totals,https://electionresults.govt.nz/electionresults_2023/statistics/candidate-votes-and-turnout-by-electorate.html
+National valid candidate ordinary 2023,2217854,Electoral Commission official turnout table combined totals,https://electionresults.govt.nz/electionresults_2023/statistics/candidate-votes-and-turnout-by-electorate.html
+Local benchmark ratio before historical adjustment,0.16418537553193283,Assumption: national specials/ordinary ballot ratio proxies valid candidate votes,
+Volume low/high multipliers,0.5 / 1.5,Sensitivity scenarios; not estimated intervals,

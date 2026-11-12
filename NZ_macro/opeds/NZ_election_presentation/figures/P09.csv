@@ -1,0 +1,95 @@
+country,measure,date,value,source_series,months
+Australia,Participation rate,2015-03-01,64.84528176666667,A84423051C,3
+Australia,Participation rate,2015-06-01,64.8165786,A84423051C,3
+Australia,Participation rate,2015-09-01,64.99941213333334,A84423051C,3
+Australia,Participation rate,2015-12-01,65.17629593333334,A84423051C,3
+Australia,Participation rate,2016-03-01,65.07417129999999,A84423051C,3
+Australia,Participation rate,2016-06-01,64.87517986666667,A84423051C,3
+Australia,Participation rate,2016-09-01,64.66545509999999,A84423051C,3
+Australia,Participation rate,2016-12-01,64.58588816666666,A84423051C,3
+Australia,Participation rate,2017-03-01,64.61198026666666,A84423051C,3
+Australia,Participation rate,2017-06-01,64.84862323333333,A84423051C,3
+Australia,Participation rate,2017-09-01,65.159748,A84423051C,3
+Australia,Participation rate,2017-12-01,65.35901249999999,A84423051C,3
+Australia,Participation rate,2018-03-01,65.46478213333334,A84423051C,3
+Australia,Participation rate,2018-06-01,65.3579946,A84423051C,3
+Australia,Participation rate,2018-09-01,65.38831526666667,A84423051C,3
+Australia,Participation rate,2018-12-01,65.43861573333334,A84423051C,3
+Australia,Participation rate,2019-03-01,65.5675466,A84423051C,3
+Australia,Participation rate,2019-06-01,65.7866328,A84423051C,3
+Australia,Participation rate,2019-09-01,65.95669523333333,A84423051C,3
+Australia,Participation rate,2019-12-01,65.68983476666666,A84423051C,3
+Australia,Participation rate,2020-03-01,65.6440445,A84423051C,3
+Australia,Participation rate,2020-06-01,63.0812282,A84423051C,3
+Australia,Participation rate,2020-09-01,64.56897796666667,A84423051C,3
+Australia,Participation rate,2020-12-01,65.5936319,A84423051C,3
+Australia,Participation rate,2021-03-01,65.79637543333332,A84423051C,3
+Australia,Participation rate,2021-06-01,65.81201353333334,A84423051C,3
+Australia,Participation rate,2021-09-01,65.0664636,A84423051C,3
+Australia,Participation rate,2021-12-01,65.39692983333333,A84423051C,3
+Australia,Participation rate,2022-03-01,66.11187143333333,A84423051C,3
+Australia,Participation rate,2022-06-01,66.36074496666667,A84423051C,3
+Australia,Participation rate,2022-09-01,66.43356323333333,A84423051C,3
+Australia,Participation rate,2022-12-01,66.50202543333333,A84423051C,3
+Australia,Participation rate,2023-03-01,66.52602913333334,A84423051C,3
+Australia,Participation rate,2023-06-01,66.6716563,A84423051C,3
+Australia,Participation rate,2023-09-01,66.62225366666667,A84423051C,3
+Australia,Participation rate,2023-12-01,66.81198943333334,A84423051C,3
+Australia,Participation rate,2024-03-01,66.59268036666667,A84423051C,3
+Australia,Participation rate,2024-06-01,66.76706186666667,A84423051C,3
+Australia,Participation rate,2024-09-01,67.07722873333334,A84423051C,3
+Australia,Participation rate,2024-12-01,67.01300606666666,A84423051C,3
+Australia,Participation rate,2025-03-01,66.8513744,A84423051C,3
+Australia,Participation rate,2025-06-01,67.004946,A84423051C,3
+Australia,Participation rate,2025-09-01,66.90870283333334,A84423051C,3
+Australia,Participation rate,2025-12-01,66.74117626666667,A84423051C,3
+Australia,Participation rate,2026-03-01,66.76036406666667,A84423051C,3
+Australia,Participation rate,2026-06-01,66.78783323333333,A84423051C,3
+Australia,Participation rate,2026-09-01,66.8704096,A84423051C,3
+New Zealand,Participation rate,2015-03-01,69.4,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2015-06-01,69.1,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2015-09-01,68.4,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2015-12-01,68.3,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2016-03-01,69,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2016-06-01,70,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2016-09-01,70.1,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2016-12-01,70.7,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2017-03-01,70.9,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2017-06-01,70.4,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2017-09-01,71.2,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2017-12-01,71.2,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2018-03-01,71.1,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2018-06-01,71.2,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2018-09-01,71.1,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2018-12-01,70.9,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2019-03-01,70.6,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2019-06-01,70.6,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2019-09-01,70.6,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2019-12-01,70.4,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2020-03-01,70.7,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2020-06-01,70,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2020-09-01,70.1,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2020-12-01,70.2,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2021-03-01,70.4,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2021-06-01,70.6,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2021-09-01,71.1,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2021-12-01,71,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2022-03-01,71,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2022-06-01,70.9,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2022-09-01,71.7,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2022-12-01,71.8,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2023-03-01,72.1,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2023-06-01,72.4,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2023-09-01,72,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2023-12-01,71.8,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2024-03-01,71.5,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2024-06-01,71.6,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2024-09-01,71.1,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2024-12-01,70.9,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2025-03-01,70.7,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2025-06-01,70.4,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2025-09-01,70.3,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2025-12-01,70.5,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2026-03-01,70.4,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2026-06-01,70.6,HLFQ.S1E3S,NA
+New Zealand,Participation rate,2026-09-01,70.4,HLFQ.S1E3S,NA

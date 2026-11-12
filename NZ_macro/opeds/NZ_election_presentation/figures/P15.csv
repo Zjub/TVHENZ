@@ -1,0 +1,16 @@
+measure,year,status,value,source_sheet,source_row,block,stage
+OBEGAL (excluding ACC),2017,Actual,1.7000000000000002,Fiscal Time Series,42,Share GDP,Observed
+OBEGAL (excluding ACC),2018,Actual,2,Fiscal Time Series,42,Share GDP,Observed
+OBEGAL (excluding ACC),2019,Actual,2.7,Fiscal Time Series,42,Share GDP,Observed
+OBEGAL (excluding ACC),2020,Actual,-6.6000000000000005,Fiscal Time Series,42,Share GDP,Observed
+OBEGAL (excluding ACC),2021,Actual,-0.7000000000000001,Fiscal Time Series,42,Share GDP,Observed
+OBEGAL (excluding ACC),2022,Actual,-2.4,Fiscal Time Series,42,Share GDP,Observed
+OBEGAL (excluding ACC),2023,Actual,-1.7999999999999998,Fiscal Time Series,42,Share GDP,Observed
+OBEGAL (excluding ACC),2024,Actual,-2.1,Fiscal Time Series,42,Share GDP,Observed
+OBEGAL (excluding ACC),2025,Actual,-2.1,Fiscal Time Series,42,Share GDP,Observed
+OBEGAL (excluding ACC),2026,Unaudited Actual,-1.9,Fiscal Time Series,42,Share GDP,Observed
+OBEGAL (excluding ACC),2027,Forecast,-1.4000000000000001,Fiscal Time Series,42,Share GDP,Forecast
+OBEGAL (excluding ACC),2028,Forecast,-0.2,Fiscal Time Series,42,Share GDP,Forecast
+OBEGAL (excluding ACC),2029,Forecast,0.8,Fiscal Time Series,42,Share GDP,Forecast
+OBEGAL (excluding ACC),2030,Forecast,1.4000000000000001,Fiscal Time Series,42,Share GDP,Forecast
+OBEGAL (excluding ACC),2031,Forecast,2,Fiscal Time Series,42,Share GDP,Forecast

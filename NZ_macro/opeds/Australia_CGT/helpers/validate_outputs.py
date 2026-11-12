@@ -19,6 +19,8 @@ for row in cat.itertuples():
  with Image.open(FIG/row.png) as im:
   check(row.id+' image resolution',im.width>=2000 and im.height>=1400,str(im.size))
  svg=ET.parse(FIG/row.svg).getroot(); check(row.id+' SVG parses',svg.tag.endswith('svg'))
+ texts=[''.join(t.itertext()) for t in svg.iter('{http://www.w3.org/2000/svg}text')]
+ check(row.id+' horizontal-axis title present',row.horizontal_axis in texts,row.horizontal_axis)
  # svglite provides textLength and anchor information for export text.
  width,height=map(float,svg.attrib['viewBox'].split()[2:]);problems=[]
  for t in svg.iter('{http://www.w3.org/2000/svg}text'):

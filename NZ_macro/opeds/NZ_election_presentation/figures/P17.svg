@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1008.00pt' height='567.00pt' viewBox='0 0 1008.00 567.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw'>
+    <rect x='0.00' y='0.00' width='1008.00' height='567.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw)'>
+<rect x='0.00' y='0.00' width='1008.00' height='567.00' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNjUuNzh8OTgzLjA5fDEwMC4yMnw0NjcuMTk='>
+    <rect x='65.78' y='100.22' width='917.32' height='366.97' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNjUuNzh8OTgzLjA5fDEwMC4yMnw0NjcuMTk=)'>
+<polyline points='65.78,375.44 983.09,375.44 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='65.78,271.19 983.09,271.19 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='65.78,166.94 983.09,166.94 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='107.47,254.01 112.66,258.67 117.84,240.79 122.97,236.56 128.05,238.77 133.23,243.24 138.42,251.21 143.55,253.90 148.68,270.50 153.86,265.08 159.05,295.37 164.18,302.30 169.25,308.92 174.44,326.92 179.63,333.48 184.75,339.89 189.83,324.16 195.01,314.40 200.20,282.62 205.33,255.88 210.40,219.74 215.59,182.10 220.77,173.82 225.90,157.78 231.03,149.52 236.22,140.51 241.41,132.58 246.54,119.05 251.61,129.30 256.79,131.56 261.98,129.88 267.11,129.92 272.18,148.58 277.37,171.82 282.56,188.79 287.68,206.27 292.76,218.43 297.94,235.12 303.13,234.94 308.26,234.06 313.39,233.67 318.58,233.01 323.76,224.47 328.89,224.48 333.96,224.45 339.15,230.23 344.34,234.75 349.47,251.31 354.54,256.99 359.72,261.45 364.91,259.19 370.04,276.43 375.11,288.62 380.30,296.80 385.49,297.30 390.61,307.33 395.74,306.63 400.93,321.16 406.12,334.19 411.25,326.59 416.32,318.49 421.51,297.49 426.69,297.57 431.82,292.92 436.89,307.59 442.08,316.87 447.27,322.07 452.40,327.18 457.47,331.41 462.65,331.61 467.84,337.63 472.97,345.90 478.10,353.05 483.29,357.27 488.47,355.47 493.60,370.56 498.67,371.00 503.86,373.06 509.05,377.19 514.18,375.13 519.25,373.60 524.43,381.39 529.62,388.88 534.75,395.66 539.82,394.24 545.01,403.59 550.20,406.54 555.33,402.40 560.45,413.55 565.64,406.35 570.83,409.47 575.96,398.76 581.03,362.62 586.22,345.02 591.40,347.04 596.53,352.18 601.60,361.71 606.79,363.28 611.98,370.34 617.11,371.66 622.18,376.78 627.36,376.94 632.55,367.46 637.68,366.86 642.81,369.53 648.00,370.42 653.18,364.11 658.31,360.12 663.38,355.59 668.57,349.04 673.76,345.32 678.89,340.35 683.96,337.86 689.15,336.65 694.33,326.48 699.46,323.08 704.53,325.19 709.72,332.89 714.91,325.85 720.04,340.53 725.17,342.14 730.35,346.62 735.54,347.67 740.67,344.74 745.74,341.65 750.93,350.52 756.11,352.93 761.24,354.83 766.31,352.59 771.50,356.82 776.69,367.48 781.82,373.55 786.89,373.50 792.08,365.78 797.26,364.69 802.39,368.21 807.52,367.52 812.71,295.56 817.89,289.80 823.02,301.45 828.10,336.40 833.28,366.68 838.47,389.32 843.60,388.25 848.67,414.50 853.86,425.14 859.04,436.98 864.17,438.33 869.24,432.76 874.43,433.26 879.62,431.79 884.75,421.44 889.88,420.71 895.06,414.97 900.25,412.57 905.38,416.96 910.45,413.13 915.64,409.99 920.82,404.47 925.95,406.74 931.03,407.71 936.21,398.46 941.40,391.30 ' style='stroke-width: 2.45; stroke: #C28000; stroke-linecap: butt;' />
+<polyline points='107.47,408.80 112.66,412.97 117.84,408.80 122.97,404.63 128.05,412.97 133.23,408.80 138.42,408.80 143.55,400.46 148.68,375.44 153.86,354.59 159.05,317.06 164.18,321.23 169.25,287.87 174.44,271.19 179.63,275.36 184.75,279.53 189.83,283.70 195.01,262.85 200.20,246.17 205.33,212.81 210.40,175.28 215.59,146.09 220.77,116.90 225.90,125.24 231.03,125.24 236.22,146.09 241.41,141.92 246.54,141.92 251.61,162.77 256.79,158.60 261.98,187.79 267.11,191.96 272.18,196.13 277.37,229.49 282.56,250.34 287.68,267.02 292.76,300.38 297.94,317.06 303.13,325.40 308.26,317.06 313.39,317.06 318.58,325.40 323.76,312.89 328.89,325.40 333.96,304.55 339.15,300.38 344.34,292.04 349.47,292.04 354.54,275.36 359.72,254.51 364.91,262.85 370.04,254.51 375.11,271.19 380.30,279.53 385.49,292.04 390.61,317.06 395.74,312.89 400.93,321.23 406.12,333.74 411.25,342.08 416.32,354.59 421.51,358.76 426.69,358.76 431.82,350.42 436.89,362.93 442.08,362.93 447.27,354.59 452.40,371.27 457.47,375.44 462.65,383.78 467.84,396.29 472.97,387.95 478.10,404.63 483.29,408.80 488.47,421.31 493.60,429.65 498.67,421.31 503.86,425.48 509.05,425.48 514.18,429.65 519.25,412.97 524.43,429.65 529.62,421.31 534.75,425.48 539.82,421.31 545.01,433.82 550.20,433.82 555.33,442.17 560.45,425.48 565.64,425.48 570.83,412.97 575.96,400.46 581.03,375.44 586.22,342.08 591.40,325.40 596.53,308.72 601.60,337.91 606.79,308.72 611.98,329.57 617.11,325.40 622.18,333.74 627.36,329.57 632.55,333.74 637.68,329.57 642.81,317.06 648.00,317.06 653.18,304.55 658.31,321.23 663.38,342.08 668.57,333.74 673.76,342.08 678.89,346.25 683.96,350.42 689.15,362.93 694.33,362.93 699.46,354.59 704.53,354.59 709.72,354.59 714.91,346.25 720.04,375.44 725.17,362.93 730.35,371.27 735.54,375.44 740.67,362.93 745.74,379.61 750.93,379.61 756.11,387.95 761.24,396.29 766.31,400.46 771.50,392.12 776.69,417.14 781.82,404.63 786.89,408.80 792.08,412.97 797.26,412.97 802.39,412.97 807.52,408.80 812.71,412.97 817.89,367.10 823.02,379.61 828.10,392.12 833.28,417.14 838.47,446.34 843.60,450.51 848.67,446.34 853.86,446.34 859.04,446.34 864.17,442.17 869.24,437.99 874.43,429.65 879.62,421.31 884.75,417.14 889.88,400.46 895.06,387.95 900.25,379.61 905.38,371.27 910.45,367.10 915.64,367.10 920.82,362.93 925.95,358.76 931.03,358.76 936.21,350.42 941.40,346.25 ' style='stroke-width: 2.45; stroke: #007C91; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw)'>
+<text x='57.71' y='380.10' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='18.08px' lengthAdjust='spacingAndGlyphs'>5.0</text>
+<text x='57.71' y='275.85' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='18.08px' lengthAdjust='spacingAndGlyphs'>7.5</text>
+<text x='57.71' y='171.59' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='25.31px' lengthAdjust='spacingAndGlyphs'>10.0</text>
+<polyline points='65.78,467.19 983.09,467.19 ' style='stroke-width: 0.64; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='165.93,471.67 165.93,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='268.86,471.67 268.86,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='371.79,471.67 371.79,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='474.72,471.67 474.72,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='577.70,471.67 577.70,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='680.63,471.67 680.63,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='783.56,471.67 783.56,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='886.49,471.67 886.49,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<text x='165.93' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>1989</text>
+<text x='268.86' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>1994</text>
+<text x='371.79' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>1999</text>
+<text x='474.72' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2004</text>
+<text x='577.70' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2009</text>
+<text x='680.63' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2014</text>
+<text x='783.56' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2019</text>
+<text x='886.49' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2024</text>
+<text x='524.43' y='506.29' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='47.44px' lengthAdjust='spacingAndGlyphs'>Quarter</text>
+<text transform='translate(24.97,283.70) rotate(-90)' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='147.77px' lengthAdjust='spacingAndGlyphs'>Unemployment rate (%)</text>
+<line x1='426.98' y1='64.68' x2='440.80' y2='64.68' style='stroke-width: 2.45; stroke: #C28000; stroke-linecap: butt;' />
+<line x1='516.65' y1='64.68' x2='530.47' y2='64.68' style='stroke-width: 2.45; stroke: #007C91; stroke-linecap: butt;' />
+<text x='451.50' y='69.69' style='font-size: 14.00px; font-family: "Arial";' textLength='54.45px' lengthAdjust='spacingAndGlyphs'>Australia</text>
+<text x='541.16' y='69.69' style='font-size: 14.00px; font-family: "Arial";' textLength='82.45px' lengthAdjust='spacingAndGlyphs'>New Zealand</text>
+<text x='14.94' y='32.84' style='font-size: 25.00px; font-weight: bold;fill: #142D40; font-family: "Arial";' textLength='621.03px' lengthAdjust='spacingAndGlyphs'>Today's unemployment rise in historical perspective</text>
+<text x='14.94' y='528.35' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='613.78px' lengthAdjust='spacingAndGlyphs'>Sources: Stats NZ HLFS and ABS Labour Force, September 2026 vintages. Seasonally adjusted; Australia quarterly monthly-rate average.</text>
+<text x='14.94' y='539.15' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='503.84px' lengthAdjust='spacingAndGlyphs'>Survey redesigns affect long-run comparability; see the release methodology before interpreting small differences.</text>
+<text x='14.94' y='549.95' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='394.20px' lengthAdjust='spacingAndGlyphs'>Snapshot: 12 November 2026. Calculations and exact plotted data accompany this chart.</text>
+</g>
+</g>
+</svg>

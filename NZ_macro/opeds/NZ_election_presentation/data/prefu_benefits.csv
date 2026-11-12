@@ -1,0 +1,221 @@
+measure,year,status,value,source_sheet,source_row,block,gdp_millions
+New Zealand Superannuation,2022,Actual,17764,Core Crown Expense Tables,54,Benefit expense,365304
+New Zealand Superannuation,2023,Actual,19517,Core Crown Expense Tables,54,Benefit expense,401827
+New Zealand Superannuation,2024,Actual,21574,Core Crown Expense Tables,54,Benefit expense,420858
+New Zealand Superannuation,2025,Actual,23191,Core Crown Expense Tables,54,Benefit expense,435071
+New Zealand Superannuation,2026,Unaudited Actual,24721,Core Crown Expense Tables,54,Benefit expense,455882
+New Zealand Superannuation,2027,Forecast,26480,Core Crown Expense Tables,54,Benefit expense,480119
+New Zealand Superannuation,2028,Forecast,28321,Core Crown Expense Tables,54,Benefit expense,507501
+New Zealand Superannuation,2029,Forecast,29706,Core Crown Expense Tables,54,Benefit expense,532347
+New Zealand Superannuation,2030,Forecast,31237,Core Crown Expense Tables,54,Benefit expense,557351
+New Zealand Superannuation,2031,Forecast,32888,Core Crown Expense Tables,54,Benefit expense,582358
+Jobseeker Support and Emergency Benefit,2022,Actual,3330,Core Crown Expense Tables,55,Benefit expense,365304
+Jobseeker Support and Emergency Benefit,2023,Actual,3473,Core Crown Expense Tables,55,Benefit expense,401827
+Jobseeker Support and Emergency Benefit,2024,Actual,4062,Core Crown Expense Tables,55,Benefit expense,420858
+Jobseeker Support and Emergency Benefit,2025,Actual,4641,Core Crown Expense Tables,55,Benefit expense,435071
+Jobseeker Support and Emergency Benefit,2026,Unaudited Actual,4926,Core Crown Expense Tables,55,Benefit expense,455882
+Jobseeker Support and Emergency Benefit,2027,Forecast,5031,Core Crown Expense Tables,55,Benefit expense,480119
+Jobseeker Support and Emergency Benefit,2028,Forecast,5011,Core Crown Expense Tables,55,Benefit expense,507501
+Jobseeker Support and Emergency Benefit,2029,Forecast,4904,Core Crown Expense Tables,55,Benefit expense,532347
+Jobseeker Support and Emergency Benefit,2030,Forecast,5001,Core Crown Expense Tables,55,Benefit expense,557351
+Jobseeker Support and Emergency Benefit,2031,Forecast,5109,Core Crown Expense Tables,55,Benefit expense,582358
+Supported Living Payment,2022,Actual,2047,Core Crown Expense Tables,56,Benefit expense,365304
+Supported Living Payment,2023,Actual,2311,Core Crown Expense Tables,56,Benefit expense,401827
+Supported Living Payment,2024,Actual,2530,Core Crown Expense Tables,56,Benefit expense,420858
+Supported Living Payment,2025,Actual,2668,Core Crown Expense Tables,56,Benefit expense,435071
+Supported Living Payment,2026,Unaudited Actual,2826,Core Crown Expense Tables,56,Benefit expense,455882
+Supported Living Payment,2027,Forecast,3006,Core Crown Expense Tables,56,Benefit expense,480119
+Supported Living Payment,2028,Forecast,3190,Core Crown Expense Tables,56,Benefit expense,507501
+Supported Living Payment,2029,Forecast,3286,Core Crown Expense Tables,56,Benefit expense,532347
+Supported Living Payment,2030,Forecast,3434,Core Crown Expense Tables,56,Benefit expense,557351
+Supported Living Payment,2031,Forecast,3581,Core Crown Expense Tables,56,Benefit expense,582358
+Sole Parent Support,2022,Actual,1704,Core Crown Expense Tables,57,Benefit expense,365304
+Sole Parent Support,2023,Actual,1917,Core Crown Expense Tables,57,Benefit expense,401827
+Sole Parent Support,2024,Actual,2097,Core Crown Expense Tables,57,Benefit expense,420858
+Sole Parent Support,2025,Actual,2255,Core Crown Expense Tables,57,Benefit expense,435071
+Sole Parent Support,2026,Unaudited Actual,2386,Core Crown Expense Tables,57,Benefit expense,455882
+Sole Parent Support,2027,Forecast,2438,Core Crown Expense Tables,57,Benefit expense,480119
+Sole Parent Support,2028,Forecast,2392,Core Crown Expense Tables,57,Benefit expense,507501
+Sole Parent Support,2029,Forecast,2234,Core Crown Expense Tables,57,Benefit expense,532347
+Sole Parent Support,2030,Forecast,2240,Core Crown Expense Tables,57,Benefit expense,557351
+Sole Parent Support,2031,Forecast,2284,Core Crown Expense Tables,57,Benefit expense,582358
+Family Tax Credit,2022,Actual,2017,Core Crown Expense Tables,58,Benefit expense,365304
+Family Tax Credit,2023,Actual,2151,Core Crown Expense Tables,58,Benefit expense,401827
+Family Tax Credit,2024,Actual,2297,Core Crown Expense Tables,58,Benefit expense,420858
+Family Tax Credit,2025,Actual,2434,Core Crown Expense Tables,58,Benefit expense,435071
+Family Tax Credit,2026,Unaudited Actual,2438,Core Crown Expense Tables,58,Benefit expense,455882
+Family Tax Credit,2027,Forecast,2574,Core Crown Expense Tables,58,Benefit expense,480119
+Family Tax Credit,2028,Forecast,2603,Core Crown Expense Tables,58,Benefit expense,507501
+Family Tax Credit,2029,Forecast,2676,Core Crown Expense Tables,58,Benefit expense,532347
+Family Tax Credit,2030,Forecast,2633,Core Crown Expense Tables,58,Benefit expense,557351
+Family Tax Credit,2031,Forecast,2680,Core Crown Expense Tables,58,Benefit expense,582358
+Other Working for Families tax credits,2022,Actual,519,Core Crown Expense Tables,59,Benefit expense,365304
+Other Working for Families tax credits,2023,Actual,476,Core Crown Expense Tables,59,Benefit expense,401827
+Other Working for Families tax credits,2024,Actual,448,Core Crown Expense Tables,59,Benefit expense,420858
+Other Working for Families tax credits,2025,Actual,561,Core Crown Expense Tables,59,Benefit expense,435071
+Other Working for Families tax credits,2026,Unaudited Actual,620,Core Crown Expense Tables,59,Benefit expense,455882
+Other Working for Families tax credits,2027,Forecast,843,Core Crown Expense Tables,59,Benefit expense,480119
+Other Working for Families tax credits,2028,Forecast,610,Core Crown Expense Tables,59,Benefit expense,507501
+Other Working for Families tax credits,2029,Forecast,579,Core Crown Expense Tables,59,Benefit expense,532347
+Other Working for Families tax credits,2030,Forecast,561,Core Crown Expense Tables,59,Benefit expense,557351
+Other Working for Families tax credits,2031,Forecast,546,Core Crown Expense Tables,59,Benefit expense,582358
+Accommodation Assistance,2022,Actual,2386,Core Crown Expense Tables,60,Benefit expense,365304
+Accommodation Assistance,2023,Actual,2349,Core Crown Expense Tables,60,Benefit expense,401827
+Accommodation Assistance,2024,Actual,2411,Core Crown Expense Tables,60,Benefit expense,420858
+Accommodation Assistance,2025,Actual,2232,Core Crown Expense Tables,60,Benefit expense,435071
+Accommodation Assistance,2026,Unaudited Actual,2306,Core Crown Expense Tables,60,Benefit expense,455882
+Accommodation Assistance,2027,Forecast,2233,Core Crown Expense Tables,60,Benefit expense,480119
+Accommodation Assistance,2028,Forecast,2330,Core Crown Expense Tables,60,Benefit expense,507501
+Accommodation Assistance,2029,Forecast,2221,Core Crown Expense Tables,60,Benefit expense,532347
+Accommodation Assistance,2030,Forecast,2247,Core Crown Expense Tables,60,Benefit expense,557351
+Accommodation Assistance,2031,Forecast,2283,Core Crown Expense Tables,60,Benefit expense,582358
+Income-Related Rents,2022,Actual,1323,Core Crown Expense Tables,61,Benefit expense,365304
+Income-Related Rents,2023,Actual,1322,Core Crown Expense Tables,61,Benefit expense,401827
+Income-Related Rents,2024,Actual,1517,Core Crown Expense Tables,61,Benefit expense,420858
+Income-Related Rents,2025,Actual,1752,Core Crown Expense Tables,61,Benefit expense,435071
+Income-Related Rents,2026,Unaudited Actual,1963,Core Crown Expense Tables,61,Benefit expense,455882
+Income-Related Rents,2027,Forecast,1896,Core Crown Expense Tables,61,Benefit expense,480119
+Income-Related Rents,2028,Forecast,1881,Core Crown Expense Tables,61,Benefit expense,507501
+Income-Related Rents,2029,Forecast,1873,Core Crown Expense Tables,61,Benefit expense,532347
+Income-Related Rents,2030,Forecast,1946,Core Crown Expense Tables,61,Benefit expense,557351
+Income-Related Rents,2031,Forecast,2019,Core Crown Expense Tables,61,Benefit expense,582358
+Disability Assistance,2022,Actual,412,Core Crown Expense Tables,62,Benefit expense,365304
+Disability Assistance,2023,Actual,431,Core Crown Expense Tables,62,Benefit expense,401827
+Disability Assistance,2024,Actual,464,Core Crown Expense Tables,62,Benefit expense,420858
+Disability Assistance,2025,Actual,492,Core Crown Expense Tables,62,Benefit expense,435071
+Disability Assistance,2026,Unaudited Actual,518,Core Crown Expense Tables,62,Benefit expense,455882
+Disability Assistance,2027,Forecast,531,Core Crown Expense Tables,62,Benefit expense,480119
+Disability Assistance,2028,Forecast,538,Core Crown Expense Tables,62,Benefit expense,507501
+Disability Assistance,2029,Forecast,538,Core Crown Expense Tables,62,Benefit expense,532347
+Disability Assistance,2030,Forecast,545,Core Crown Expense Tables,62,Benefit expense,557351
+Disability Assistance,2031,Forecast,558,Core Crown Expense Tables,62,Benefit expense,582358
+Winter Energy Payment,2022,Actual,513,Core Crown Expense Tables,63,Benefit expense,365304
+Winter Energy Payment,2023,Actual,519,Core Crown Expense Tables,63,Benefit expense,401827
+Winter Energy Payment,2024,Actual,537,Core Crown Expense Tables,63,Benefit expense,420858
+Winter Energy Payment,2025,Actual,562,Core Crown Expense Tables,63,Benefit expense,435071
+Winter Energy Payment,2026,Unaudited Actual,582,Core Crown Expense Tables,63,Benefit expense,455882
+Winter Energy Payment,2027,Forecast,595,Core Crown Expense Tables,63,Benefit expense,480119
+Winter Energy Payment,2028,Forecast,604,Core Crown Expense Tables,63,Benefit expense,507501
+Winter Energy Payment,2029,Forecast,613,Core Crown Expense Tables,63,Benefit expense,532347
+Winter Energy Payment,2030,Forecast,624,Core Crown Expense Tables,63,Benefit expense,557351
+Winter Energy Payment,2031,Forecast,635,Core Crown Expense Tables,63,Benefit expense,582358
+Best start,2022,Actual,308,Core Crown Expense Tables,64,Benefit expense,365304
+Best start,2023,Actual,321,Core Crown Expense Tables,64,Benefit expense,401827
+Best start,2024,Actual,336,Core Crown Expense Tables,64,Benefit expense,420858
+Best start,2025,Actual,346,Core Crown Expense Tables,64,Benefit expense,435071
+Best start,2026,Unaudited Actual,339,Core Crown Expense Tables,64,Benefit expense,455882
+Best start,2027,Forecast,286,Core Crown Expense Tables,64,Benefit expense,480119
+Best start,2028,Forecast,275,Core Crown Expense Tables,64,Benefit expense,507501
+Best start,2029,Forecast,281,Core Crown Expense Tables,64,Benefit expense,532347
+Best start,2030,Forecast,274,Core Crown Expense Tables,64,Benefit expense,557351
+Best start,2031,Forecast,279,Core Crown Expense Tables,64,Benefit expense,582358
+Orphan's/Unsupported Child's Benefit,2022,Actual,313,Core Crown Expense Tables,65,Benefit expense,365304
+Orphan's/Unsupported Child's Benefit,2023,Actual,350,Core Crown Expense Tables,65,Benefit expense,401827
+Orphan's/Unsupported Child's Benefit,2024,Actual,384,Core Crown Expense Tables,65,Benefit expense,420858
+Orphan's/Unsupported Child's Benefit,2025,Actual,402,Core Crown Expense Tables,65,Benefit expense,435071
+Orphan's/Unsupported Child's Benefit,2026,Unaudited Actual,416,Core Crown Expense Tables,65,Benefit expense,455882
+Orphan's/Unsupported Child's Benefit,2027,Forecast,433,Core Crown Expense Tables,65,Benefit expense,480119
+Orphan's/Unsupported Child's Benefit,2028,Forecast,447,Core Crown Expense Tables,65,Benefit expense,507501
+Orphan's/Unsupported Child's Benefit,2029,Forecast,453,Core Crown Expense Tables,65,Benefit expense,532347
+Orphan's/Unsupported Child's Benefit,2030,Forecast,460,Core Crown Expense Tables,65,Benefit expense,557351
+Orphan's/Unsupported Child's Benefit,2031,Forecast,465,Core Crown Expense Tables,65,Benefit expense,582358
+Hardship Assistance,2022,Actual,497,Core Crown Expense Tables,66,Benefit expense,365304
+Hardship Assistance,2023,Actual,673,Core Crown Expense Tables,66,Benefit expense,401827
+Hardship Assistance,2024,Actual,667,Core Crown Expense Tables,66,Benefit expense,420858
+Hardship Assistance,2025,Actual,755,Core Crown Expense Tables,66,Benefit expense,435071
+Hardship Assistance,2026,Unaudited Actual,810,Core Crown Expense Tables,66,Benefit expense,455882
+Hardship Assistance,2027,Forecast,803,Core Crown Expense Tables,66,Benefit expense,480119
+Hardship Assistance,2028,Forecast,737,Core Crown Expense Tables,66,Benefit expense,507501
+Hardship Assistance,2029,Forecast,738,Core Crown Expense Tables,66,Benefit expense,532347
+Hardship Assistance,2030,Forecast,773,Core Crown Expense Tables,66,Benefit expense,557351
+Hardship Assistance,2031,Forecast,815,Core Crown Expense Tables,66,Benefit expense,582358
+Paid Parental Leave,2022,Actual,603,Core Crown Expense Tables,67,Benefit expense,365304
+Paid Parental Leave,2023,Actual,608,Core Crown Expense Tables,67,Benefit expense,401827
+Paid Parental Leave,2024,Actual,647,Core Crown Expense Tables,67,Benefit expense,420858
+Paid Parental Leave,2025,Actual,709,Core Crown Expense Tables,67,Benefit expense,435071
+Paid Parental Leave,2026,Unaudited Actual,726,Core Crown Expense Tables,67,Benefit expense,455882
+Paid Parental Leave,2027,Forecast,760,Core Crown Expense Tables,67,Benefit expense,480119
+Paid Parental Leave,2028,Forecast,800,Core Crown Expense Tables,67,Benefit expense,507501
+Paid Parental Leave,2029,Forecast,840,Core Crown Expense Tables,67,Benefit expense,532347
+Paid Parental Leave,2030,Forecast,885,Core Crown Expense Tables,67,Benefit expense,557351
+Paid Parental Leave,2031,Forecast,930,Core Crown Expense Tables,67,Benefit expense,582358
+Childcare Assistance,2022,Actual,132,Core Crown Expense Tables,68,Benefit expense,365304
+Childcare Assistance,2023,Actual,139,Core Crown Expense Tables,68,Benefit expense,401827
+Childcare Assistance,2024,Actual,165,Core Crown Expense Tables,68,Benefit expense,420858
+Childcare Assistance,2025,Actual,167,Core Crown Expense Tables,68,Benefit expense,435071
+Childcare Assistance,2026,Unaudited Actual,160,Core Crown Expense Tables,68,Benefit expense,455882
+Childcare Assistance,2027,Forecast,164,Core Crown Expense Tables,68,Benefit expense,480119
+Childcare Assistance,2028,Forecast,173,Core Crown Expense Tables,68,Benefit expense,507501
+Childcare Assistance,2029,Forecast,176,Core Crown Expense Tables,68,Benefit expense,532347
+Childcare Assistance,2030,Forecast,180,Core Crown Expense Tables,68,Benefit expense,557351
+Childcare Assistance,2031,Forecast,184,Core Crown Expense Tables,68,Benefit expense,582358
+FamilyBoost tax credit,2022,Actual,0,Core Crown Expense Tables,69,Benefit expense,365304
+FamilyBoost tax credit,2023,Actual,0,Core Crown Expense Tables,69,Benefit expense,401827
+FamilyBoost tax credit,2024,Actual,0,Core Crown Expense Tables,69,Benefit expense,420858
+FamilyBoost tax credit,2025,Actual,51,Core Crown Expense Tables,69,Benefit expense,435071
+FamilyBoost tax credit,2026,Unaudited Actual,137,Core Crown Expense Tables,69,Benefit expense,455882
+FamilyBoost tax credit,2027,Forecast,168,Core Crown Expense Tables,69,Benefit expense,480119
+FamilyBoost tax credit,2028,Forecast,166,Core Crown Expense Tables,69,Benefit expense,507501
+FamilyBoost tax credit,2029,Forecast,163,Core Crown Expense Tables,69,Benefit expense,532347
+FamilyBoost tax credit,2030,Forecast,159,Core Crown Expense Tables,69,Benefit expense,557351
+FamilyBoost tax credit,2031,Forecast,154,Core Crown Expense Tables,69,Benefit expense,582358
+Veteran's Pension,2022,Actual,134,Core Crown Expense Tables,70,Benefit expense,365304
+Veteran's Pension,2023,Actual,132,Core Crown Expense Tables,70,Benefit expense,401827
+Veteran's Pension,2024,Actual,132,Core Crown Expense Tables,70,Benefit expense,420858
+Veteran's Pension,2025,Actual,132,Core Crown Expense Tables,70,Benefit expense,435071
+Veteran's Pension,2026,Unaudited Actual,132,Core Crown Expense Tables,70,Benefit expense,455882
+Veteran's Pension,2027,Forecast,133,Core Crown Expense Tables,70,Benefit expense,480119
+Veteran's Pension,2028,Forecast,134,Core Crown Expense Tables,70,Benefit expense,507501
+Veteran's Pension,2029,Forecast,134,Core Crown Expense Tables,70,Benefit expense,532347
+Veteran's Pension,2030,Forecast,134,Core Crown Expense Tables,70,Benefit expense,557351
+Veteran's Pension,2031,Forecast,135,Core Crown Expense Tables,70,Benefit expense,582358
+Emergency Housing Assistance1,2022,Actual,0,Core Crown Expense Tables,71,Benefit expense,365304
+Emergency Housing Assistance1,2023,Actual,0,Core Crown Expense Tables,71,Benefit expense,401827
+Emergency Housing Assistance1,2024,Actual,0,Core Crown Expense Tables,71,Benefit expense,420858
+Emergency Housing Assistance1,2025,Actual,74,Core Crown Expense Tables,71,Benefit expense,435071
+Emergency Housing Assistance1,2026,Unaudited Actual,40,Core Crown Expense Tables,71,Benefit expense,455882
+Emergency Housing Assistance1,2027,Forecast,42,Core Crown Expense Tables,71,Benefit expense,480119
+Emergency Housing Assistance1,2028,Forecast,57,Core Crown Expense Tables,71,Benefit expense,507501
+Emergency Housing Assistance1,2029,Forecast,64,Core Crown Expense Tables,71,Benefit expense,532347
+Emergency Housing Assistance1,2030,Forecast,65,Core Crown Expense Tables,71,Benefit expense,557351
+Emergency Housing Assistance1,2031,Forecast,68,Core Crown Expense Tables,71,Benefit expense,582358
+Wage Subsidy Scheme,2022,Actual,4689,Core Crown Expense Tables,72,Benefit expense,365304
+Wage Subsidy Scheme,2023,Actual,0,Core Crown Expense Tables,72,Benefit expense,401827
+Wage Subsidy Scheme,2024,Actual,1,Core Crown Expense Tables,72,Benefit expense,420858
+Wage Subsidy Scheme,2025,Actual,0,Core Crown Expense Tables,72,Benefit expense,435071
+Wage Subsidy Scheme,2026,Unaudited Actual,0,Core Crown Expense Tables,72,Benefit expense,455882
+Wage Subsidy Scheme,2027,Forecast,0,Core Crown Expense Tables,72,Benefit expense,480119
+Wage Subsidy Scheme,2028,Forecast,0,Core Crown Expense Tables,72,Benefit expense,507501
+Wage Subsidy Scheme,2029,Forecast,0,Core Crown Expense Tables,72,Benefit expense,532347
+Wage Subsidy Scheme,2030,Forecast,0,Core Crown Expense Tables,72,Benefit expense,557351
+Wage Subsidy Scheme,2031,Forecast,0,Core Crown Expense Tables,72,Benefit expense,582358
+Cost of living payment,2022,Actual,0,Core Crown Expense Tables,73,Benefit expense,365304
+Cost of living payment,2023,Actual,600,Core Crown Expense Tables,73,Benefit expense,401827
+Cost of living payment,2024,Actual,0,Core Crown Expense Tables,73,Benefit expense,420858
+Cost of living payment,2025,Actual,0,Core Crown Expense Tables,73,Benefit expense,435071
+Cost of living payment,2026,Unaudited Actual,0,Core Crown Expense Tables,73,Benefit expense,455882
+Cost of living payment,2027,Forecast,0,Core Crown Expense Tables,73,Benefit expense,480119
+Cost of living payment,2028,Forecast,0,Core Crown Expense Tables,73,Benefit expense,507501
+Cost of living payment,2029,Forecast,0,Core Crown Expense Tables,73,Benefit expense,532347
+Cost of living payment,2030,Forecast,0,Core Crown Expense Tables,73,Benefit expense,557351
+Cost of living payment,2031,Forecast,0,Core Crown Expense Tables,73,Benefit expense,582358
+Covid leave support,2022,Actual,471,Core Crown Expense Tables,74,Benefit expense,365304
+Covid leave support,2023,Actual,273,Core Crown Expense Tables,74,Benefit expense,401827
+Covid leave support,2024,Actual,13,Core Crown Expense Tables,74,Benefit expense,420858
+Covid leave support,2025,Actual,0,Core Crown Expense Tables,74,Benefit expense,435071
+Covid leave support,2026,Unaudited Actual,0,Core Crown Expense Tables,74,Benefit expense,455882
+Covid leave support,2027,Forecast,0,Core Crown Expense Tables,74,Benefit expense,480119
+Covid leave support,2028,Forecast,0,Core Crown Expense Tables,74,Benefit expense,507501
+Covid leave support,2029,Forecast,0,Core Crown Expense Tables,74,Benefit expense,532347
+Covid leave support,2030,Forecast,0,Core Crown Expense Tables,74,Benefit expense,557351
+Covid leave support,2031,Forecast,0,Core Crown Expense Tables,74,Benefit expense,582358
+"Other benefits2,3",2022,Actual,25,Core Crown Expense Tables,75,Benefit expense,365304
+"Other benefits2,3",2023,Actual,14,Core Crown Expense Tables,75,Benefit expense,401827
+"Other benefits2,3",2024,Actual,12,Core Crown Expense Tables,75,Benefit expense,420858
+"Other benefits2,3",2025,Actual,101,Core Crown Expense Tables,75,Benefit expense,435071
+"Other benefits2,3",2026,Unaudited Actual,120,Core Crown Expense Tables,75,Benefit expense,455882
+"Other benefits2,3",2027,Forecast,341,Core Crown Expense Tables,75,Benefit expense,480119
+"Other benefits2,3",2028,Forecast,330,Core Crown Expense Tables,75,Benefit expense,507501
+"Other benefits2,3",2029,Forecast,369,Core Crown Expense Tables,75,Benefit expense,532347
+"Other benefits2,3",2030,Forecast,402,Core Crown Expense Tables,75,Benefit expense,557351
+"Other benefits2,3",2031,Forecast,367,Core Crown Expense Tables,75,Benefit expense,582358

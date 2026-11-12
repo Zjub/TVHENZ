@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1008.00pt' height='567.00pt' viewBox='0 0 1008.00 567.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw'>
+    <rect x='0.00' y='0.00' width='1008.00' height='567.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw)'>
+<rect x='0.00' y='0.00' width='1008.00' height='567.00' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNjIuMTd8OTgzLjA5fDEwMC4yMnw0NjcuMTk='>
+    <rect x='62.17' y='100.22' width='920.93' height='366.97' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNjIuMTd8OTgzLjA5fDEwMC4yMnw0NjcuMTk=)'>
+<polyline points='62.17,450.51 983.09,450.51 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='62.17,354.25 983.09,354.25 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='62.17,257.99 983.09,257.99 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='62.17,161.74 983.09,161.74 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='104.03,450.51 134.92,442.43 166.16,448.71 197.39,445.12 228.28,444.23 258.84,435.25 290.07,424.49 321.31,406.55 352.20,393.99 382.76,370.67 413.99,351.83 445.22,327.61 476.12,310.56 506.67,290.83 537.91,275.57 569.14,246.87 600.04,233.41 630.93,221.75 662.16,214.57 693.40,202.01 724.29,197.53 754.85,186.76 786.08,183.18 817.32,173.31 848.21,170.62 878.77,160.75 910.00,143.70 941.23,135.63 ' style='stroke-width: 2.35; stroke: #007C91; stroke-linecap: butt;' />
+<polyline points='104.03,450.51 134.92,437.30 166.16,440.82 197.39,434.65 228.28,432.01 258.84,421.44 290.07,411.76 321.31,396.78 352.20,384.46 382.76,361.56 413.99,346.59 445.22,329.85 476.12,313.12 506.67,291.10 537.91,277.01 569.14,256.76 600.04,244.43 630.93,232.10 662.16,225.94 693.40,212.73 724.29,205.68 754.85,190.71 786.08,182.78 817.32,172.22 848.21,168.69 878.77,156.36 910.00,137.87 941.23,134.35 ' style='stroke-width: 2.35; stroke: #C28000; stroke-linecap: butt;' />
+<polyline points='104.03,450.51 134.92,442.50 166.16,446.95 197.39,442.50 228.28,441.61 258.84,432.71 290.07,422.93 321.31,404.25 352.20,393.57 382.76,371.33 413.99,355.32 445.22,332.19 476.12,317.06 506.67,295.71 537.91,281.48 569.14,255.68 600.04,244.11 630.93,233.44 662.16,226.32 693.40,209.42 724.29,204.08 754.85,189.85 786.08,181.84 817.32,165.83 848.21,163.16 878.77,150.70 910.00,132.91 941.23,123.13 ' style='stroke-width: 2.35; stroke: #AD4A3F; stroke-linecap: butt;' />
+<polyline points='104.03,450.51 134.92,444.28 166.16,448.73 197.39,441.61 228.28,440.72 258.84,432.71 290.07,422.04 321.31,400.69 352.20,391.79 382.76,373.11 413.99,357.10 445.22,331.30 476.12,316.17 506.67,299.27 537.91,285.04 569.14,258.35 600.04,249.45 630.93,241.45 662.16,233.44 693.40,213.87 724.29,207.64 754.85,195.18 786.08,185.40 817.32,166.72 848.21,161.38 878.77,148.04 910.00,130.24 941.23,116.90 ' style='stroke-width: 2.35; stroke: #7955A1; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw)'>
+<text x='54.10' y='455.16' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='21.70px' lengthAdjust='spacingAndGlyphs'>100</text>
+<text x='54.10' y='358.90' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='20.73px' lengthAdjust='spacingAndGlyphs'>110</text>
+<text x='54.10' y='262.65' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='21.70px' lengthAdjust='spacingAndGlyphs'>120</text>
+<text x='54.10' y='166.39' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='21.70px' lengthAdjust='spacingAndGlyphs'>130</text>
+<polyline points='62.17,467.19 983.09,467.19 ' style='stroke-width: 0.64; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='238.81,471.67 238.81,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='486.64,471.67 486.64,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='734.82,471.67 734.82,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='982.65,471.67 982.65,467.19 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<text x='238.81' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2021</text>
+<text x='486.64' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2023</text>
+<text x='734.82' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2025</text>
+<text x='982.65' y='489.05' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='28.94px' lengthAdjust='spacingAndGlyphs'>2027</text>
+<text x='522.63' y='506.29' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='47.44px' lengthAdjust='spacingAndGlyphs'>Quarter</text>
+<text transform='translate(24.97,283.70) rotate(-90)' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='317.00px' lengthAdjust='spacingAndGlyphs'>Household living-cost index: December 2019 = 100</text>
+<line x1='260.82' y1='64.68' x2='274.65' y2='64.68' style='stroke-width: 2.35; stroke: #007C91; stroke-linecap: butt;' />
+<line x1='387.07' y1='64.68' x2='400.89' y2='64.68' style='stroke-width: 2.35; stroke: #C28000; stroke-linecap: butt;' />
+<line x1='491.51' y1='64.68' x2='505.34' y2='64.68' style='stroke-width: 2.35; stroke: #AD4A3F; stroke-linecap: butt;' />
+<line x1='666.73' y1='64.68' x2='680.55' y2='64.68' style='stroke-width: 2.35; stroke: #7955A1; stroke-linecap: butt;' />
+<text x='285.34' y='69.69' style='font-size: 14.00px; font-family: "Arial";' textLength='91.03px' lengthAdjust='spacingAndGlyphs'>All households</text>
+<text x='411.58' y='69.69' style='font-size: 14.00px; font-family: "Arial";' textLength='69.23px' lengthAdjust='spacingAndGlyphs'>Beneficiary</text>
+<text x='516.03' y='69.69' style='font-size: 14.00px; font-family: "Arial";' textLength='140.00px' lengthAdjust='spacingAndGlyphs'>Income quintile 1 (low)</text>
+<text x='691.24' y='69.69' style='font-size: 14.00px; font-family: "Arial";' textLength='94.92px' lengthAdjust='spacingAndGlyphs'>Superannuitant</text>
+<text x='14.94' y='32.84' style='font-size: 25.00px; font-weight: bold;fill: #142D40; font-family: "Arial";' textLength='719.80px' lengthAdjust='spacingAndGlyphs'>Slower inflation has not reversed the increase in living costs</text>
+<text x='14.94' y='528.35' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='581.89px' lengthAdjust='spacingAndGlyphs'>Source: Stats NZ September 2026 Household Living-costs Price Indexes. These household cost baskets include interest payments.</text>
+<text x='14.94' y='539.15' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='392.47px' lengthAdjust='spacingAndGlyphs'>They differ from the CPI; the lines measure prices, not disposable income or affordability.</text>
+<text x='14.94' y='549.95' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='394.20px' lengthAdjust='spacingAndGlyphs'>Snapshot: 12 November 2026. Calculations and exact plotted data accompany this chart.</text>
+</g>
+</g>
+</svg>

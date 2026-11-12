@@ -1,0 +1,14 @@
+country,measure,series_id,source,description,unit
+New Zealand,Real GDP,SNEQ.SG02RSC00B15,gross-domestic-product-june-2026-quarter.csv,,
+New Zealand,Real GDP per person,SNEQ.SG09RSC00B15NZ,gross-domestic-product-june-2026-quarter.csv,,
+New Zealand,Real GDP production,SNEQ.SG01RSC00B01,gross-domestic-product-june-2026-quarter.csv,,
+New Zealand,Real GDP production per person,SNEQ.SG09RSC00B01NZ,gross-domestic-product-june-2026-quarter.csv,,
+Australia,Real GDP,A2304402X,5206001_Key_Aggregates.xlsx,Gross domestic product: Chain volume measures ;,$ Millions
+Australia,Real GDP per person,A2304404C,5206001_Key_Aggregates.xlsx,GDP per capita: Chain volume measures ;,$
+New Zealand,Unemployment rate,HLFQ.S1F3S,HLFS September 2026 ZIP,,
+New Zealand,Employment rate,HLFQ.S1H3S,HLFS September 2026 ZIP,,
+New Zealand,Participation rate,HLFQ.S1E3S,HLFS September 2026 ZIP,,
+New Zealand,Underutilisation rate,HLFQ.SXJ3UZS,HLFS September 2026 ZIP,,
+Australia,Unemployment rate,A84423050A,62020001.xlsx,Unemployment rate ;  Persons ;,Percent
+Australia,Employment rate,A84423054K,62020001.xlsx,Employment to population ratio ;  Persons ;,Percent
+Australia,Participation rate,A84423051C,62020001.xlsx,Participation rate ;  Persons ;,Percent

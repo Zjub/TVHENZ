@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1008.00pt' height='567.00pt' viewBox='0 0 1008.00 567.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw'>
+    <rect x='0.00' y='0.00' width='1008.00' height='567.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw)'>
+<rect x='0.00' y='-0.00000000000011' width='1008.00' height='567.00' style='stroke-width: 1.75; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjk3LjgyfDk4My4wOXw5Mi4xMnw0NTYuMzk='>
+    <rect x='297.82' y='92.12' width='685.27' height='364.27' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjk3LjgyfDk4My4wOXw5Mi4xMnw0NTYuMzk=)'>
+<polyline points='297.82,421.13 983.09,421.13 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='297.82,362.38 983.09,362.38 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='297.82,303.63 983.09,303.63 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='297.82,244.88 983.09,244.88 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='297.82,186.12 983.09,186.12 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='297.82,127.37 983.09,127.37 ' style='stroke-width: 1.75; stroke: #EBEBEB; stroke-linecap: butt;' />
+<line x1='329.56' y1='127.37' x2='366.69' y2='127.37' style='stroke-width: 2.56; stroke: #A6BBC2; stroke-linecap: butt;' />
+<line x1='354.43' y1='186.12' x2='441.27' y2='186.12' style='stroke-width: 2.56; stroke: #A6BBC2; stroke-linecap: butt;' />
+<line x1='433.54' y1='244.88' x2='678.60' y2='244.88' style='stroke-width: 2.56; stroke: #A6BBC2; stroke-linecap: butt;' />
+<line x1='447.34' y1='303.63' x2='720.03' y2='303.63' style='stroke-width: 2.56; stroke: #A6BBC2; stroke-linecap: butt;' />
+<line x1='458.95' y1='362.38' x2='754.85' y2='362.38' style='stroke-width: 2.56; stroke: #A6BBC2; stroke-linecap: butt;' />
+<line x1='509.64' y1='421.13' x2='906.91' y2='421.13' style='stroke-width: 2.56; stroke: #A6BBC2; stroke-linecap: butt;' />
+<circle cx='338.85' cy='127.37' r='4.85' style='stroke-width: 1.16; stroke: #007C91; fill: #007C91;' />
+<circle cx='376.14' cy='186.12' r='4.85' style='stroke-width: 1.16; stroke: #007C91; fill: #007C91;' />
+<circle cx='494.80' cy='244.88' r='4.85' style='stroke-width: 1.16; stroke: #007C91; fill: #007C91;' />
+<circle cx='515.51' cy='303.63' r='4.85' style='stroke-width: 1.16; stroke: #007C91; fill: #007C91;' />
+<circle cx='532.92' cy='362.38' r='4.85' style='stroke-width: 1.16; stroke: #007C91; fill: #007C91;' />
+<circle cx='608.96' cy='421.13' r='4.85' style='stroke-width: 1.16; stroke: #007C91; fill: #007C91;' />
+<text x='338.85' y='118.21' text-anchor='middle' style='font-size: 12.80px;fill: #142D40; font-family: "Arial";' textLength='35.56px' lengthAdjust='spacingAndGlyphs'>3.4 pp</text>
+<text x='376.14' y='176.97' text-anchor='middle' style='font-size: 12.80px;fill: #142D40; font-family: "Arial";' textLength='35.56px' lengthAdjust='spacingAndGlyphs'>7.9 pp</text>
+<text x='494.80' y='235.72' text-anchor='middle' style='font-size: 12.80px;fill: #142D40; font-family: "Arial";' textLength='42.67px' lengthAdjust='spacingAndGlyphs'>22.3 pp</text>
+<text x='515.51' y='294.47' text-anchor='middle' style='font-size: 12.80px;fill: #142D40; font-family: "Arial";' textLength='42.67px' lengthAdjust='spacingAndGlyphs'>24.8 pp</text>
+<text x='532.92' y='353.22' text-anchor='middle' style='font-size: 12.80px;fill: #142D40; font-family: "Arial";' textLength='42.67px' lengthAdjust='spacingAndGlyphs'>26.9 pp</text>
+<text x='608.96' y='411.98' text-anchor='middle' style='font-size: 12.80px;fill: #142D40; font-family: "Arial";' textLength='42.67px' lengthAdjust='spacingAndGlyphs'>36.2 pp</text>
+</g>
+<g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NTY3LjAw)'>
+<text x='289.75' y='418.77' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='80.25px' lengthAdjust='spacingAndGlyphs'>Maungakiekie</text>
+<text x='289.75' y='432.81' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='257.36px' lengthAdjust='spacingAndGlyphs'>National +2,952; benchmark ~8,200 specials</text>
+<text x='289.75' y='360.02' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='40.48px' lengthAdjust='spacingAndGlyphs'>Nelson</text>
+<text x='289.75' y='374.06' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='257.36px' lengthAdjust='spacingAndGlyphs'>National +1,210; benchmark ~4,500 specials</text>
+<text x='289.75' y='301.26' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='62.89px' lengthAdjust='spacingAndGlyphs'>Whangarei</text>
+<text x='289.75' y='315.30' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='257.36px' lengthAdjust='spacingAndGlyphs'>National +1,092; benchmark ~4,400 specials</text>
+<text x='289.75' y='242.51' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='47.72px' lengthAdjust='spacingAndGlyphs'>Takanini</text>
+<text x='289.75' y='256.55' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='257.36px' lengthAdjust='spacingAndGlyphs'>National +1,487; benchmark ~6,700 specials</text>
+<text x='289.75' y='183.76' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='80.94px' lengthAdjust='spacingAndGlyphs'>Hamilton East</text>
+<text x='289.75' y='197.80' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='246.52px' lengthAdjust='spacingAndGlyphs'>National +456; benchmark ~5,800 specials</text>
+<text x='289.75' y='125.01' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='59.50px' lengthAdjust='spacingAndGlyphs'>Wairarapa</text>
+<text x='289.75' y='139.05' text-anchor='end' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='246.52px' lengthAdjust='spacingAndGlyphs'>National +139; benchmark ~4,100 specials</text>
+<polyline points='297.82,456.39 983.09,456.39 ' style='stroke-width: 0.64; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='311.00,460.87 311.00,456.39 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='393.37,460.87 393.37,456.39 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='475.73,460.87 475.73,456.39 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='558.09,460.87 558.09,456.39 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='640.46,460.87 640.46,456.39 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='722.82,460.87 722.82,456.39 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='805.19,460.87 805.19,456.39 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='887.55,460.87 887.55,456.39 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<polyline points='969.92,460.87 969.92,456.39 ' style='stroke-width: 1.75; stroke: #84939E; stroke-linecap: butt;' />
+<text x='311.00' y='478.25' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='7.23px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='393.37' y='478.25' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>10</text>
+<text x='475.73' y='478.25' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>20</text>
+<text x='558.09' y='478.25' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>30</text>
+<text x='640.46' y='478.25' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>40</text>
+<text x='722.82' y='478.25' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>50</text>
+<text x='805.19' y='478.25' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>60</text>
+<text x='887.55' y='478.25' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>70</text>
+<text x='969.92' y='478.25' text-anchor='middle' style='font-size: 13.00px;fill: #4D4D4D; font-family: "Arial";' textLength='14.47px' lengthAdjust='spacingAndGlyphs'>80</text>
+<text x='640.46' y='495.49' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='466.73px' lengthAdjust='spacingAndGlyphs'>Labour minus National special-vote share needed to tie (percentage points)</text>
+<text transform='translate(24.97,274.25) rotate(-90)' text-anchor='middle' style='font-size: 14.00px; font-family: "Arial";' textLength='248.14px' lengthAdjust='spacingAndGlyphs'>Electorate and preliminary National lead</text>
+<text x='14.94' y='57.82' style='font-size: 15.00px; font-family: "Arial";' textLength='524.56px' lengthAdjust='spacingAndGlyphs'>Break-even Labour minus National gap among all valid special candidate votes</text>
+<text x='14.94' y='74.02' style='font-size: 15.00px; font-family: "Arial";' textLength='621.69px' lengthAdjust='spacingAndGlyphs'>Volume benchmark scales the national estimate using each electorate's 2023 specials pattern</text>
+<text x='14.94' y='32.84' style='font-size: 25.00px; font-weight: bold;fill: #142D40; font-family: "Arial";' textLength='649.02px' lengthAdjust='spacingAndGlyphs'>Which National leads are smallest relative to specials?</text>
+<text x='14.94' y='517.55' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='486.44px' lengthAdjust='spacingAndGlyphs'>Source: Electoral Commission 2026 preliminary counts and 2023 candidate-vote turnout table; own scenarios.</text>
+<text x='14.94' y='528.35' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='423.62px' lengthAdjust='spacingAndGlyphs'>Dots: historical-pattern benchmark. Lines: 0.5 to 1.5 times that volume, not confidence intervals.</text>
+<text x='14.94' y='539.15' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='500.34px' lengthAdjust='spacingAndGlyphs'>Six lowest hurdles among nine smallest National leads. No boundary/rule adjustment; recount changes excluded.</text>
+<text x='14.94' y='549.95' style='font-size: 10.00px;fill: #465563; font-family: "Arial";' textLength='394.20px' lengthAdjust='spacingAndGlyphs'>Snapshot: 12 November 2026. Calculations and exact plotted data accompany this chart.</text>
+</g>
+</g>
+</svg>

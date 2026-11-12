@@ -13,14 +13,87 @@ palette<-c('#146b8c','#cf671d','#20836b','#a34b66','#745898','#9b7825','#58646f'
 scale_colour_discrete<-function(...)scale_colour_manual(values=palette,...)
 scale_fill_discrete<-function(...)scale_fill_manual(values=palette,...)
 catalogue<-list()
+# Titles refer to the visible horizontal axis, including flipped bar charts.
+horizontal_axes<-c(
+ D01='Income year (July to June)',
+ D02='Income year (July to June)',
+ D03='Reported gross capital gains (AUD billion)',
+ D04='Reported gross capital gains (AUD billion)',
+ D05='Reported capital gains or losses (AUD billion)',
+ D06='Steps from gross gains to net taxable gains',
+ D07='Income year (July to June)',
+ D08='Annual taxable income bracket (AUD)',
+ D09='Age group (years)',
+ D10='Age group (years)',
+ D11='Recorded sex',
+ D12='Cumulative share of taxable filers, ranked by taxable income (%)',
+ D13='Annual taxable income bracket (AUD)',
+ D14='Annual net taxable capital gain per filer (AUD)',
+ D15='Income year (July to June)',
+ D16='Income year (July to June)',
+ D17='Income year (July to June)',
+ D18='Annual taxable income decile (lowest to highest)',
+ D19='Age group (years)',
+ B01='Financial year (July to June)',
+ B02='Financial year (July to June)',
+ B03='Financial year (July to June)',
+ B04='Financial year (July to June)',
+ B05='Financial year (July to June)',
+ B06='Financial year (July to June)',
+ M01='Component of the annual nominal investment return',
+ M02='Years since earning and investing the initial income',
+ M03='Years since earning and investing the initial income',
+ M04='Tax-inclusive income tax rate (%)',
+ M05='Annual real investment return (%)',
+ M06='Years since the initial investment',
+ M07='Annual cash yield (%); capital appreciation supplies the remaining return',
+ M08='Actual annual real investment return (%)',
+ M09='Years until the asset is sold',
+ M10='Annual nominal capital appreciation (%)',
+ M11='Annual nominal capital appreciation (%)',
+ M12='Annual nominal capital appreciation (%)',
+ M13='Asset holding period (years)',
+ M14='Other annual taxable income, excluding the gain (AUD)',
+ M15='Years of gains accumulated before sale',
+ M16='Years after 1 July 2027 until sale',
+ M17='Assumed hours of unpaid owner work',
+ R01='Investment holding period (years)',
+ R02='Investment holding period (years)',
+ R03='Replacement investment annual real return (%)',
+ R04='Years until the capital loss can be used',
+ R05='Tax treatment and investment scale',
+ R06='Assumed probability of project success (%)',
+ R07='Loan as a share of the asset value (%)',
+ R08='Annual inflation rate (%)',
+ R09='Personal income tax rate (%)',
+ R10='Years after the hypothetical tax is introduced',
+ R11='One-period nominal asset return (%)',
+ E01='Reported behavioural parameter (definition differs by panel)',
+ E02='Elasticity of realised gains with respect to the tax rate',
+ E03='Tax rate on the hypothetical gains base (%)',
+ E04='Tax rate on the hypothetical gains base (%)',
+ E05='Local elasticity of realised gains to the tax rate, evaluated at 22%',
+ E06='Years relative to reform (0 = first year under the new rate)',
+ E07='Units of gains disappearing from the CGT base (initial base = 100)',
+ Q01='Observation date (monthly)',
+ Q02='Observation date (quarterly)'
+)
 emit<-function(id,title,d,p,group,status,note,sources,width=12,height=8){
  stopifnot(nrow(d)>0)
+ horizontal_axis<-unname(horizontal_axes[id])
+ if(length(horizontal_axis)!=1L || is.na(horizontal_axis) || !nzchar(horizontal_axis)) stop('Missing horizontal-axis title: ',id)
  cap<-paste0('Source: ',sources,'.  ',note)
- p<-p+labs(title=wrap(paste(id,title),85),subtitle=wrap(status,125),caption=wrap(cap,145),x=NULL)
+ p<-p+labs(title=wrap(paste(id,title),85),subtitle=wrap(status,125),caption=wrap(cap,145))
+ if(inherits(p$coordinates,'CoordFlip')) {
+   p<-p+labs(x='Asset category',y=horizontal_axis)
+ } else {
+   p<-p+labs(x=horizontal_axis)
+ }
+ p<-p+theme(axis.line.x=element_line(colour='#687780',linewidth=.35),axis.ticks.x=element_line(colour='#687780',linewidth=.35),axis.title.x=element_text(margin=margin(t=10)))
  ggsave(file.path(fig,paste0(id,'.png')),p,width=width,height=height,dpi=180,bg='white')
  ggsave(file.path(fig,paste0(id,'.svg')),p,width=width,height=height,device=svglite::svglite,bg='white')
  write_csv(d,file.path(fig,paste0(id,'.csv')),na='')
- catalogue[[length(catalogue)+1]]<<-tibble(id=id,title=title,group=group,status=status,note=note,sources=sources,png=paste0(id,'.png'),svg=paste0(id,'.svg'),csv=paste0(id,'.csv'))
+ catalogue[[length(catalogue)+1]]<<-tibble(id=id,title=title,group=group,status=status,note=note,sources=sources,horizontal_axis=horizontal_axis,png=paste0(id,'.png'),svg=paste0(id,'.svg'),csv=paste0(id,'.csv'))
  message('Saved ',id)
 }
 line<-function(d,x,y,colour=NULL){

@@ -1,0 +1,4 @@
+source_id,description,url,snapshot_cutoff,downloaded_utc,cached_this_run,local_file,md5
+prefu,Treasury PREFU September 2026 charts and time series,https://www.treasury.govt.nz/sites/default/files/2026-09/prefu26-charts-data.xlsx,2026-11-02,2026-11-02 05:36:58 UTC,True,prefu.xlsx,489d9f37cdcf73220feb7e85aa1f702d
+prefu_exp,Treasury PREFU 2026 expense and recipient tables,https://www.treasury.govt.nz/sites/default/files/2026-09/prefu26-data-expense-tables.xlsx,2026-11-02,2026-11-02 05:36:58 UTC,True,prefu_expenses.xlsx,1f7c67dd975bdfebb5526fcd45f8f97d
+hlpi,"Stats NZ September 2026 household living-cost indexes, 2008-2026",https://www.stats.govt.nz/assets/Uploads/Household-living-costs-price-indexes/Household-living-costs-price-indexes-September-2026-quarter/Download-data/household-living-costs-price-indexes-september-2026-quarter-time-series-indexes.csv,2026-11-02,2026-11-02 05:36:59 UTC,True,hlpi_september.csv,dc26f72f874e0d30193cc24d2d0186d1

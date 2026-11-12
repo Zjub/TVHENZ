@@ -1,0 +1,65 @@
+asset,system,pv_tax,discount_rate
+Bank deposit,Broad consumption tax,51609.79757672219,0
+Bank deposit,CGT inflation allowance only,43992.76180328862,0
+Bank deposit,Comprehensive normal-return allowance,30000,0
+Bank deposit,Full-rate income tax,43992.76180328862,0
+Domestic company,Broad consumption tax,51609.79757672219,0
+Domestic company,CGT inflation allowance only,43992.761803288624,0
+Domestic company,Comprehensive normal-return allowance,30000,0
+Domestic company,Full-rate income tax,43992.761803288624,0
+House: capital appreciation,Broad consumption tax,51609.79757672219,0
+House: capital appreciation,CGT inflation allowance only,39245.08287558203,0
+House: capital appreciation,Comprehensive normal-return allowance,30000,0
+House: capital appreciation,Full-rate income tax,45126.85830370553,0
+New business: capital appreciation,Broad consumption tax,51609.79757672219,0
+New business: capital appreciation,CGT inflation allowance only,39245.08287558203,0
+New business: capital appreciation,Comprehensive normal-return allowance,30000,0
+New business: capital appreciation,Full-rate income tax,45126.85830370553,0
+Bank deposit,Broad consumption tax,40317.49138032369,0.025
+Bank deposit,CGT inflation allowance only,42151.52299473533,0.025
+Bank deposit,Comprehensive normal-return allowance,30000,0.025
+Bank deposit,Full-rate income tax,42151.52299473533,0.025
+Domestic company,Broad consumption tax,40317.49138032369,0.025
+Domestic company,CGT inflation allowance only,42151.52299473533,0.025
+Domestic company,Comprehensive normal-return allowance,30000,0.025
+Domestic company,Full-rate income tax,42151.52299473533,0.025
+House: capital appreciation,Broad consumption tax,40317.49138032369,0.025
+House: capital appreciation,CGT inflation allowance only,37222.243966226575,0.025
+House: capital appreciation,Comprehensive normal-return allowance,30000,0.025
+House: capital appreciation,Full-rate income tax,41817.07752998631,0.025
+New business: capital appreciation,Broad consumption tax,40317.49138032369,0.025
+New business: capital appreciation,CGT inflation allowance only,37222.243966226575,0.025
+New business: capital appreciation,Comprehensive normal-return allowance,30000,0.025
+New business: capital appreciation,Full-rate income tax,41817.07752998631,0.025
+Bank deposit,Broad consumption tax,30000.000000000004,0.055749999999999966
+Bank deposit,CGT inflation allowance only,40331.226417769125,0.055749999999999966
+Bank deposit,Comprehensive normal-return allowance,30000,0.055749999999999966
+Bank deposit,Full-rate income tax,40331.226417769125,0.055749999999999966
+Domestic company,Broad consumption tax,30000.000000000004,0.055749999999999966
+Domestic company,CGT inflation allowance only,40331.226417769125,0.055749999999999966
+Domestic company,Comprehensive normal-return allowance,30000,0.055749999999999966
+Domestic company,Full-rate income tax,40331.226417769125,0.055749999999999966
+House: capital appreciation,Broad consumption tax,30000.000000000004,0.055749999999999966
+House: capital appreciation,CGT inflation allowance only,35374.02778716878,0.055749999999999966
+House: capital appreciation,Comprehensive normal-return allowance,30000,0.055749999999999966
+House: capital appreciation,Full-rate income tax,38793.01548192563,0.055749999999999966
+New business: capital appreciation,Broad consumption tax,30000.000000000004,0.055749999999999966
+New business: capital appreciation,CGT inflation allowance only,35374.02778716878,0.055749999999999966
+New business: capital appreciation,Comprehensive normal-return allowance,30000,0.055749999999999966
+New business: capital appreciation,Full-rate income tax,38793.01548192563,0.055749999999999966
+Bank deposit,Broad consumption tax,23905.32215890643,0.08
+Bank deposit,CGT inflation allowance only,39164.888350570654,0.08
+Bank deposit,Comprehensive normal-return allowance,30000,0.08
+Bank deposit,Full-rate income tax,39164.888350570654,0.08
+Domestic company,Broad consumption tax,23905.32215890643,0.08
+Domestic company,CGT inflation allowance only,39164.888350570654,0.08
+Domestic company,Comprehensive normal-return allowance,30000,0.08
+Domestic company,Full-rate income tax,39164.888350570654,0.08
+House: capital appreciation,Broad consumption tax,23905.32215890643,0.08
+House: capital appreciation,CGT inflation allowance only,34282.26218477282,0.08
+House: capital appreciation,Comprehensive normal-return allowance,30000,0.08
+House: capital appreciation,Full-rate income tax,37006.662261456135,0.08
+New business: capital appreciation,Broad consumption tax,23905.32215890643,0.08
+New business: capital appreciation,CGT inflation allowance only,34282.26218477282,0.08
+New business: capital appreciation,Comprehensive normal-return allowance,30000,0.08
+New business: capital appreciation,Full-rate income tax,37006.662261456135,0.08
