@@ -86,7 +86,7 @@ ggplot(melt(health_age_year[,.(year,value,value_added_demand_adjust)], id.vars =
 
 save_e61("B61 2026/Health_added_demand.png",res=2)
 
-ggplot(melt(health_age_year, id.vars = "year"), aes(y=value,x=year,colour=variable)) + geom_line() + plab(label = c("Projection","No Added Demand","Age")) +
+ggplot(melt(health_age_year, id.vars = "year"), aes(y=value,x=year,colour=variable)) + geom_line() + plab(label = c("Projection","Age","No Added Demand")) +
   labs_e61(title = "Health spending: Age and Added Demand",
            y = "% GDP",
            x =)
