@@ -39,7 +39,7 @@ default_assumptions <- function() list(productivity=.012,ngdp_per_capita_growth=
   service_cost_set='current',ndis_cost_rule='input_mix',transfer_cost_rule='current_proxy',
   transfer_wage_share=.65,other_spending_rule='input_costs',
   health_specification='income_costs',health_income_elasticity=.8,health_remaining_growth=0,
-  education_income_elasticity=.2,
+  education_income_elasticity=.5,
   health_pressure_source='assumed',health_wage_premium=0,health_cpi_wedge=0,
   spending_gdp_targets=setNames(rep(NA_real_,8),names(spending_target_parameters())),
   health_service_growth_adjustment=0,education_service_growth_adjustment=0,ndis_service_growth_adjustment=0,

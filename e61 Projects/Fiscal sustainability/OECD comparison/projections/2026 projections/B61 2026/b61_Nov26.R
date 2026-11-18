@@ -68,9 +68,14 @@ save_e61("B61 2026/Benchmark_Health.png",res=2)
 health_contribution_year <- read_csv("B61 2026/health_annual_calculation.csv")
 setDT(health_contribution_year)
 
-health_contribution_year[,value_age_adjust := value/age_factor][,value_added_demand_adjust := value/income_factor]
+health_contribution_year[,value_age_adjust := value/age_factor][,value_added_demand_adjust := value/income_factor][,value_age_demand := value/(age_factor*income_factor)][,value_GDP_only := value/(age_factor*income_factor*real_unit_factor)][,value_no_income_e := value/(age_factor*real_unit_factor)]
 
-health_age_year <- health_contribution_year[,.(value = sum(value), value_age_adjust = sum(value_age_adjust), value_added_demand_adjust = sum(value_added_demand_adjust)),by=.(year)]
+health_contribution_year[
+  , value_GDP_check :=
+    share_gdp[year == 2030] / real_gdp_per_capita_index
+]
+
+health_age_year <- health_contribution_year[,.(value = sum(value), value_age_adjust = sum(value_age_adjust), value_added_demand_adjust = sum(value_added_demand_adjust), value_age_demand = sum(value_age_demand), value_GDP_only = sum(value_GDP_only), value_GDP_check = sum(value_GDP_check), value_no_income_e = sum(value_no_income_e)),by=.(year)]
 
 ggplot(melt(health_age_year[,.(year,value,value_age_adjust)], id.vars = "year"), aes(y=value,x=year,colour=variable)) + geom_line() + plab(label = c("Projection","No Ageing")) +
   labs_e61(title = "Health spending would rise without ageing",
@@ -86,12 +91,36 @@ ggplot(melt(health_age_year[,.(year,value,value_added_demand_adjust)], id.vars =
 
 save_e61("B61 2026/Health_added_demand.png",res=2)
 
-ggplot(melt(health_age_year, id.vars = "year"), aes(y=value,x=year,colour=variable)) + geom_line() + plab(label = c("Projection","Age","No Added Demand")) +
+ggplot(melt(health_age_year[,.(year,value,value_age_adjust,value_added_demand_adjust)], id.vars = "year"), aes(y=value,x=year,colour=variable)) + geom_line() + plab(label = c("Projection","Age","No Added Demand")) +
   labs_e61(title = "Health spending: Age and Added Demand",
            y = "% GDP",
            x =)
 
 save_e61("B61 2026/Health_age_v_added_demand.png",res=2)
+
+ggplot(melt(health_age_year[,.(year,value,value_age_adjust,value_added_demand_adjust,value_age_demand)], id.vars = "year"), aes(y=value,x=year,colour=variable,linetype = variable)) + geom_line() + plab(label = c("Projection","No Ageing","No Added Demand","No Ageing or Demand"),x=c(2040,2055,2032,2042),y=c(8.7,7.5,6.2,5.5)) +
+  labs_e61(title = "Health Spending Drivers",
+           y = "% GDP",
+           x = "",
+           sources = c("e61 modelling","ABS", "PBO","AIHW","Treasury IGR")) + scale_linetype_manual(values = c("solid","dashed","dashed","solid")) + scale_y_continuous_e61(limits = c(4,10,1))
+
+save_e61("B61 2026/Health_age_v_added_demand_long.png",res=2)
+
+ggplot(melt(health_age_year[,.(year,value,value_age_adjust,value_added_demand_adjust,value_age_demand,value_GDP_only)], id.vars = "year"), aes(y=value,x=year,colour=variable,linetype = variable)) + geom_line() + plab(label = c("Projection","No Ageing","No Added Demand","No Ageing or Demand","Fixed Real"),x=c(2040,2055,2032,2042,2030),y=c(8.7,7.5,6.2,5.5,9)) +
+  labs_e61(title = "Health Spending Drivers",
+           y = "% GDP",
+           x = "",
+           sources = c("e61 modelling","ABS", "PBO","AIHW","Treasury IGR")) + scale_linetype_manual(values = c("solid","dashed","dashed","solid","dashed"))
+
+ggplot(melt(health_age_year[,.(year,value,value_GDP_only)], id.vars = "year"), aes(y=value,x=year,colour=variable)) + geom_line() + plab(label = c("Projection","Fixed Real"),x=c(2040,2032),y=c(8.7,5.5)) +
+  labs_e61(title = "Health Projections",
+           y = "% GDP",
+           x = "",
+           sources = c("e61 modelling","ABS", "PBO","AIHW","Treasury IGR")) + geom_hline(yintercept = health_age_year[year == 2030]$value,linetype = "dashed")
+
+save_e61("B61 2026/Health_real.png",res=2)
+
+health_age_year[year == 2066]
 
 # Decomposition - Health
 
@@ -230,4 +259,8 @@ ggplot(net_debt_health_demand,aes(x=year,y=value,colour=case)) + geom_line() +
 
 
 save_e61("B61 2026/Health_reform_net_debt.png",res=2)
+
+
+
+#### New education numbers (remove the cost fiddle, change education income elasticity to XXX.)
 
