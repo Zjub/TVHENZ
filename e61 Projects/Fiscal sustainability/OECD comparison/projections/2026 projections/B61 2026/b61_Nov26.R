@@ -164,19 +164,33 @@ save_e61("B61 2026/Benchmark_Education.png",res=2)
 education_contribution_year <- read_csv("B61 2026/education_annual_calculation.csv")
 setDT(education_contribution_year)
 
-education_contribution_year[,value_age_adjust := value/age_factor]
+# education_contribution_year[,value_age_adjust := value/age_factor]
+# 
+# education_age_year <- education_contribution_year[,.(value = sum(value), value_age_adjust = sum(value_age_adjust)),by=.(year)]
 
-education_age_year <- education_contribution_year[,.(value = sum(value), value_age_adjust = sum(value_age_adjust)),by=.(year)]
+education_contribution_year[,value_age_adjust := value/age_factor][,value_added_demand_adjust := value/income_factor][,value_age_demand := value/(age_factor*income_factor)][,value_GDP_only := value/(age_factor*income_factor*real_unit_factor)]
 
-ggplot(melt(education_age_year, id.vars = "year"), aes(y=value,x=year,colour=variable)) + geom_line() + plab(label = c("Projection","No Ageing")) +
+education_age_year <- education_contribution_year[,.(value = sum(value), value_age_adjust = sum(value_age_adjust), value_added_demand_adjust = sum(value_added_demand_adjust), value_age_demand = sum(value_age_demand), value_GDP_only = sum(value_GDP_only)),by=.(year)]
+
+ggplot(melt(education_age_year[,.(year,value,value_age_adjust)], id.vars = "year"), aes(y=value,x=year,colour=variable)) + geom_line() + plab(label = c("Projection","No Ageing")) +
   labs_e61(title = "Education spending would rise without ageing",
            y = "% GDP",
            x =)
 
 save_e61("B61 2026/Education_age.png",res=2)
 
+ggplot(melt(education_age_year[,.(year,value,value_age_adjust,value_added_demand_adjust,value_age_demand)], id.vars = "year"), aes(y=value,x=year,colour=variable,linetype = variable)) + geom_line() + plab(label = c("Projection","No Ageing","No Added Demand","No Ageing or Demand"),x=c(2050,2045,2030,2030),y=c(4.4,4.6,3.2,3.7)) +
+  labs_e61(title = "Education Spending Drivers",
+           y = "% GDP",
+           x = "",
+           sources = c("e61 modelling","ABS", "PBO","AIHW","Treasury IGR")) + scale_linetype_manual(values = c("solid","dashed","dashed","solid")) + scale_y_continuous_e61(limits = c(3,5,0.5))
+
+save_e61("B61 2026/Edu_age_v_added_demand_long.png",res=2)
+
+education_age_year[year == 2066]
+health_age_year[year == 2066]
+
 # Decomposition - Education
-# Issue is that we put in an income elasticity AND added service growth, so need to add together
 
 education_contributions <- read_csv("B61 2026/education_per_person_contributions.csv")
 
@@ -260,7 +274,5 @@ ggplot(net_debt_health_demand,aes(x=year,y=value,colour=case)) + geom_line() +
 
 save_e61("B61 2026/Health_reform_net_debt.png",res=2)
 
-
-
-#### New education numbers (remove the cost fiddle, change education income elasticity to XXX.)
+net_debt_health_demand[year %in% c(2030,2066),.(year,value)]
 
